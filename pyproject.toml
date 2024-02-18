@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "readyapi"
+version = "0.1.0"
+description = ""
+authors = ["gitworkflows <118260833+gitworkflows@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+    { include = "readyapi" }
+]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
