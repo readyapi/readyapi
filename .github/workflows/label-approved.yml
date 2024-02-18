@@ -14,9 +14,9 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
-    - uses: docker://khulnasoft/label-approved:0.0.4
+    - uses: khulnasoft/label-approved@master
       with:
-        token: ${{ secrets.READYAPI_LABEL_APPROVED }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         config: >
           {
             "approved-1":
