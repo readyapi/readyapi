@@ -54,7 +54,7 @@ jobs:
       - name: Install Material for MkDocs Insiders
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
         run: |
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/squidfunk/mkdocs-material-insiders.git
+          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/squidfunk/mkdocs-material.git
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/pawamoy-insiders/griffe-typing-deprecated.git
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/pawamoy-insiders/mkdocstrings-python.git
       - name: Verify Docs
@@ -94,7 +94,7 @@ jobs:
       - name: Install Material for MkDocs Insiders
         if: ( github.event_name != 'pull_request' || github.secret_source != 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
         run: |
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/squidfunk/mkdocs-material-insiders.git
+          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/squidfunk/mkdocs-material.git
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/pawamoy-insiders/griffe-typing-deprecated.git
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}@github.com/pawamoy-insiders/mkdocstrings-python.git
       - name: Update Languages
@@ -104,7 +104,7 @@ jobs:
           key: mkdocs-cards-${{ matrix.lang }}-${{ github.ref }}
           path: docs/${{ matrix.lang }}/.cache
       - name: Build Docs
-        run: python ./scripts/docs.py build-lang ${{ matrix.lang }}
+        run:  python ./scripts/docs.py build-lang${{ matrix.lang }}
       - uses: actions/upload-artifact@v3
         with:
           name: docs-site
