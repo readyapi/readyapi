@@ -1,16 +1,44 @@
-[tool.poetry]
-name = "readyapi"
-version = "0.1.0"
-description = ""
-authors = ["gitworkflows <118260833+gitworkflows@users.noreply.github.com>"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling >= 1.13.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "readyapi"
+description = "ReadyAPI framework, high performance, easy to learn, fast to code, ready for production"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-file = "LICENSE"
+authors = [
+    { name = "Md Sulaiman", email = "infosulaimanbd@gmail.com" },
+]
+
+dependencies = [
+    "starlette>=0.36.3,<0.37.0",
+    "pydantic>=1.7.4,!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0",
+    "typing-extensions>=4.8.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/tiangolo/readyapi"
+Documentation = "https://readyapi.tiangolo.com/"
+Repository = "https://github.com/tiangolo/readyapi"
+
+[project.optional-dependencies]
+all = [
+    "httpx >=0.23.0",
+    "jinja2 >=2.11.2",
+    "python-multipart >=0.0.7",
+    "itsdangerous >=1.1.0",
+    "pyyaml >=5.3.1",
+    "ujson >=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0",
+    "orjson >=3.2.1",
+    "email_validator >=2.0.0",
+    "uvicorn[standard] >=0.12.0",
+    "pydantic-settings >=2.0.0",
+    "pydantic-extra-types >=2.0.0",
+]
 
 [tool.hatch.version]
 path = "readyapi/__init__.py"
@@ -40,7 +68,6 @@ addopts = [
   "--strict-markers",
   "--ignore=docs_src",
 ]
-xfail_strict = true
 junit_family = "xunit2"
 filterwarnings = [
     "error",
@@ -134,7 +161,11 @@ ignore = [
 
 
 [tool.ruff.isort]
-known-third-party = ["readyapi", "pydantic", "starlette"]
+known-third-party = [
+    "readyapi",
+    "pydantic",
+    "starlette"
+]
 
 [tool.ruff.pyupgrade]
 # Preserve types, even if a file imports `from __future__ import annotations`.
