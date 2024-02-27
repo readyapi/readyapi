@@ -56,8 +56,6 @@ jobs:
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
         run: |
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/squidfunk/mkdocs-material.git
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/pawamoy-insiders/griffe-typing-deprecated.git
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/pawamoy-insiders/mkdocstrings-python.git
       - name: Verify Docs
         run: python ./scripts/docs.py verify-docs
       - name: Export Language Codes
@@ -96,8 +94,6 @@ jobs:
         if: ( github.event_name != 'pull_request' || github.secret_source != 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
         run: |
           pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/squidfunk/mkdocs-material.git
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/pawamoy-insiders/griffe-typing-deprecated.git
-          pip install git+https://${{ secrets.READYAPI_MKDOCS_MATERIAL }}@github.com/pawamoy-insiders/mkdocstrings-python.git
       - name: Update Languages
         run: python ./scripts/docs.py update-languages
       - uses: actions/cache@v3
