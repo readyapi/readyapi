@@ -619,7 +619,7 @@ if __name__ == "__main__":
         settings=settings
     )
     authors = {**question_authors, **pr_authors}
-    maintainers_logins = {"nxpkg"}
+    maintainers_logins = {"khulnasoft"}
     bot_names = {"codecov", "github-actions", "pre-commit-ci", "dependabot"}
     maintainers = []
     for login in maintainers_logins:
