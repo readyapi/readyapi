@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "readyapi"
 description = "ReadyAPI framework, high performance, easy to learn, fast to code, ready for production"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 license = "MIT"
 license-file = "LICENSE"
 authors = [
