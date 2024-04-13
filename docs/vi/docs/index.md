@@ -108,9 +108,9 @@ Những tính năng như:
 
 ## **Typer**, giao diện dòng lệnh của ReadyAPI
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
 
@@ -121,7 +121,7 @@ Python 3.8+
 ReadyAPI đứng trên vai những người khổng lồ:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> cho phần web.
-* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> cho phần data.
+* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> cho phần data.
 
 ## Cài đặt
 
@@ -455,7 +455,7 @@ Sử dụng Starlette:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Bắt buộc nếu bạn muốn sử dụng `TestClient`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Bắt buộc nếu bạn muốn sử dụng cấu hình template engine mặc định.
-* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Bắt buộc nếu bạn muốn hỗ trợ <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, form với `request.form()`.
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Bắt buộc nếu bạn muốn hỗ trợ <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, form với `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Bắt buộc để hỗ trợ `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Bắt buộc để hỗ trợ `SchemaGenerator` cho Starlette (bạn có thể không cần nó trong ReadyAPI).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Bắt buộc nếu bạn muốn sử dụng `UJSONResponse`.

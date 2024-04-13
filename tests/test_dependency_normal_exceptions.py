@@ -1,5 +1,5 @@
 import pytest
-from readyapi import Body, Depends, HTTPException, ReadyAPI
+from readyapi import Body, Depends, ReadyAPI, HTTPException
 from readyapi.testclient import TestClient
 
 initial_fake_database = {"rick": "Rick Sanchez"}
@@ -20,6 +20,7 @@ async def get_database():
         fake_database.update(temp_database)
     except HTTPException:
         state["except"] = True
+        raise
     finally:
         state["finally"] = True
 

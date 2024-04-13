@@ -230,7 +230,7 @@ De cette façon, vous pouvez modifier la documentation/les fichiers sources et v
 
 Les instructions ici vous montrent comment utiliser le script à `./scripts/docs.py` avec le programme `python` directement.
 
-Mais vous pouvez également utiliser <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, et vous obtiendrez l'auto-complétion dans votre terminal pour les commandes après l'achèvement de l'installation.
+Mais vous pouvez également utiliser <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, et vous obtiendrez l'auto-complétion dans votre terminal pour les commandes après l'achèvement de l'installation.
 
 Si vous installez Typer CLI, vous pouvez installer la complétion avec :
 

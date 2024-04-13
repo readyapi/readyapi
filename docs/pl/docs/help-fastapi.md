@@ -12,7 +12,7 @@ Istnieje również kilka sposobów uzyskania pomocy.
 
 ## Zapisz się do newslettera
 
-Możesz zapisać się do rzadkiego [newslettera o **ReadyAPI i jego przyjaciołach**](/newsletter/){.internal-link target=_blank}, aby być na bieżąco z:
+Możesz zapisać się do rzadkiego [newslettera o **ReadyAPI i jego przyjaciołach**](newsletter.md){.internal-link target=_blank}, aby być na bieżąco z:
 
 * Aktualnościami o ReadyAPI i przyjaciołach 🚀
 * Przewodnikami 📝
@@ -40,7 +40,7 @@ Dzięki temu będziesz otrzymywać powiadomienia (na swój adres e-mail) za każ
 
 ## Skontaktuj się z autorem
 
-Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (KhulnaSoft DevOps / `khulnasoft`)</a>, autorem.
+Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (Sebastián Ramírez / `khulnasoft`)</a>, autorem.
 
 Możesz:
 

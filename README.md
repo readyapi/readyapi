@@ -1,4 +1,7 @@
 <p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
+<p align="center">
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
@@ -38,6 +41,30 @@ The key features are:
 * **Standards-based**: Based on (and fully compatible with) the open standards for APIs: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (previously known as Swagger) and <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
 
 <small>* estimation based on tests on an internal development team, building production applications.</small>
+
+## Sponsors
+
+<!-- sponsors -->
+
+<a href="https://cryptapi.io/" target="_blank" title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway."><img src="https://readyapi.khulnasoft.com/img/sponsors/cryptapi.svg"></a>
+<a href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank" title="Build, run and scale your apps on a modern, reliable, and secure PaaS."><img src="https://readyapi.khulnasoft.com/img/sponsors/platform-sh.png"></a>
+<a href="https://www.porter.run" target="_blank" title="Deploy ReadyAPI on AWS with a few clicks"><img src="https://readyapi.khulnasoft.com/img/sponsors/porter.png"></a>
+<a href="https://bump.sh/readyapi?utm_source=readyapi&utm_medium=referral&utm_campaign=sponsor" target="_blank" title="Automate ReadyAPI documentation generation with Bump.sh"><img src="https://readyapi.khulnasoft.com/img/sponsors/bump-sh.svg"></a>
+<a href="https://reflex.dev" target="_blank" title="Reflex"><img src="https://readyapi.khulnasoft.com/img/sponsors/reflex.png"></a>
+<a href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=main-badge" target="_blank" title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files"><img src="https://readyapi.khulnasoft.com/img/sponsors/scalar.svg"></a>
+<a href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=mainbadge" target="_blank" title="Auth, user management and more for your B2B product"><img src="https://readyapi.khulnasoft.com/img/sponsors/propelauth.png"></a>
+<a href="https://www.withcoherence.com/?utm_medium=advertising&utm_source=readyapi&utm_campaign=banner%20january%2024" target="_blank" title="Coherence"><img src="https://readyapi.khulnasoft.com/img/sponsors/coherence.png"></a>
+<a href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank" title="Simplify Full Stack Development with ReadyAPI & MongoDB"><img src="https://readyapi.khulnasoft.com/img/sponsors/mongodb.png"></a>
+<a href="https://training.talkpython.fm/readyapi-courses" target="_blank" title="ReadyAPI video courses on demand from people you trust"><img src="https://readyapi.khulnasoft.com/img/sponsors/talkpython-v2.jpg"></a>
+<a href="https://github.com/deepset-ai/haystack/" target="_blank" title="Build powerful search from composable, open source building blocks"><img src="https://readyapi.khulnasoft.com/img/sponsors/haystack-readyapi.svg"></a>
+<a href="https://databento.com/" target="_blank" title="Pay as you go for market data"><img src="https://readyapi.khulnasoft.com/img/sponsors/databento.svg"></a>
+<a href="https://speakeasyapi.dev?utm_source=readyapi+repo&utm_medium=github+sponsorship" target="_blank" title="SDKs for your API | Speakeasy"><img src="https://readyapi.khulnasoft.com/img/sponsors/speakeasy.png"></a>
+<a href="https://www.svix.com/" target="_blank" title="Svix - Webhooks as a service"><img src="https://readyapi.khulnasoft.com/img/sponsors/svix.svg"></a>
+<a href="https://www.codacy.com/?utm_source=github&utm_medium=sponsors&utm_id=pioneers" target="_blank" title="Take code reviews from hours to minutes"><img src="https://readyapi.khulnasoft.com/img/sponsors/codacy.png"></a>
+
+<!-- /sponsors -->
+
+<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
 
 ## Opinions
 
@@ -87,9 +114,9 @@ The key features are:
 
 ## **Typer**, the ReadyAPI of CLIs
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-If you are building a <abbr title="Command Line Interface">CLI</abbr> app to be used in the terminal instead of a web API, check out <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+If you are building a <abbr title="Command Line Interface">CLI</abbr> app to be used in the terminal instead of a web API, check out <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** is ReadyAPI's little sibling. And it's intended to be the **ReadyAPI of CLIs**. ⌨️ 🚀
 
@@ -100,7 +127,7 @@ Python 3.8+
 ReadyAPI stands on the shoulders of giants:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> for the web parts.
-* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> for the data parts.
+* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> for the data parts.
 
 ## Installation
 
@@ -433,7 +460,7 @@ Used by Starlette:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Required if you want to use the `TestClient`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Required if you want to use the default template configuration.
-* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, with `request.form()`.
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, with `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Required for `SessionMiddleware` support.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Required for Starlette's `SchemaGenerator` support (you probably don't need it with ReadyAPI).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Required if you want to use `UJSONResponse`.

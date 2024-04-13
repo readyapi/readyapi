@@ -2,7 +2,7 @@
 
 ## Recursos Adicionais
 
-O [Tutorial - Guia de Usuário](../tutorial/){.internal-link target=_blank} deve ser o suficiente para dar a você um tour por todos os principais recursos do **ReadyAPI**.
+O [Tutorial - Guia de Usuário](../tutorial/index.md){.internal-link target=_blank} deve ser o suficiente para dar a você um tour por todos os principais recursos do **ReadyAPI**.
 
 Na próxima seção você verá outras opções, configurações, e recursos adicionais.
 
@@ -13,7 +13,7 @@ Na próxima seção você verá outras opções, configurações, e recursos adi
 
 ## Leia o Tutorial primeiro
 
-Você ainda pode usar a maior parte dos recursos no **ReadyAPI** com o conhecimento do [Tutorial - Guia de Usuário](../tutorial/){.internal-link target=_blank}.
+Você ainda pode usar a maior parte dos recursos no **ReadyAPI** com o conhecimento do [Tutorial - Guia de Usuário](../tutorial/index.md){.internal-link target=_blank}.
 
 E as próximas seções assumem que você já leu ele, e que você conhece suas ideias principais.
 

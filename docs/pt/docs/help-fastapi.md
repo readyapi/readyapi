@@ -12,7 +12,7 @@ E também existem vários modos de se conseguir ajuda.
 
 ## Inscreva-se na newsletter
 
-Você pode se inscrever (pouco frequente) [**ReadyAPI e amigos** newsletter](/newsletter/){.internal-link target=_blank} para receber atualizações:
+Você pode se inscrever (pouco frequente) [**ReadyAPI e amigos** newsletter](newsletter.md){.internal-link target=_blank} para receber atualizações:
 
 * Notícias sobre ReadyAPI e amigos 🚀
 * Tutoriais 📝
@@ -40,7 +40,7 @@ Fazendo isto, serão enviadas notificações (em seu email) sempre que tiver nov
 
 ## Conect-se com o autor
 
-Você pode se conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">comigo (KhulnaSoft DevOps / `khulnasoft`)</a>, o autor.
+Você pode se conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">comigo (Sebastián Ramírez / `khulnasoft`)</a>, o autor.
 
 Você pode:
 

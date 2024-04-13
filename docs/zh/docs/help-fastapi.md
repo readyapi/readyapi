@@ -12,7 +12,7 @@
 
 ## 订阅新闻邮件
 
-您可以订阅 [**ReadyAPI 和它的小伙伴** 新闻邮件](/newsletter/){.internal-link target=_blank}（不会经常收到）
+您可以订阅 [**ReadyAPI 和它的小伙伴** 新闻邮件](newsletter.md){.internal-link target=_blank}（不会经常收到）
 
 * ReadyAPI 及其小伙伴的新闻 🚀
 * 指南 📝
@@ -40,7 +40,7 @@
 
 ## 联系作者
 
-您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（KhulnaSoft DevOps / `khulnasoft`</a>）。
+您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（Sebastián Ramírez / `khulnasoft`</a>）。
 
 您可以：
 

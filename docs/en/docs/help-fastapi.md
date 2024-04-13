@@ -12,7 +12,7 @@ And there are several ways to get help too.
 
 ## Subscribe to the newsletter
 
-You can subscribe to the (infrequent) [**ReadyAPI and friends** newsletter](/newsletter/){.internal-link target=_blank} to stay updated about:
+You can subscribe to the (infrequent) [**ReadyAPI and friends** newsletter](newsletter.md){.internal-link target=_blank} to stay updated about:
 
 * News about ReadyAPI and friends 🚀
 * Guides 📝
@@ -40,7 +40,7 @@ By doing it, you will receive notifications (in your email) whenever there's a n
 
 ## Connect with the author
 
-You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (KhulnaSoft DevOps / `khulnasoft`)</a>, the author.
+You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (Sebastián Ramírez / `khulnasoft`)</a>, the author.
 
 You can:
 

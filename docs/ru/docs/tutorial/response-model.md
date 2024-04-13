@@ -377,7 +377,7 @@ ReadyAPI совместно с Pydantic выполнит некоторую ма
 ```
 
 !!! info "Информация"
-    "Под капотом" ReadyAPI использует метод `.dict()` у объектов моделей Pydantic <a href="https://pydantic-docs.helpmanual.io/usage/exporting_models/#modeldict" class="external-link" target="_blank">с параметром `exclude_unset`</a>, чтобы достичь такого эффекта.
+    "Под капотом" ReadyAPI использует метод `.dict()` у объектов моделей Pydantic <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">с параметром `exclude_unset`</a>, чтобы достичь такого эффекта.
 
 !!! info "Информация"
     Вы также можете использовать:
@@ -385,7 +385,7 @@ ReadyAPI совместно с Pydantic выполнит некоторую ма
     * `response_model_exclude_defaults=True`
     * `response_model_exclude_none=True`
 
-    как описано в <a href="https://pydantic-docs.helpmanual.io/usage/exporting_models/#modeldict" class="external-link" target="_blank">документации Pydantic</a> для параметров `exclude_defaults` и `exclude_none`.
+    как описано в <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">документации Pydantic</a> для параметров `exclude_defaults` и `exclude_none`.
 
 #### Если значение поля отличается от значения по-умолчанию
 

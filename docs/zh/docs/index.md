@@ -99,9 +99,9 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ## **Typer**，命令行中的 ReadyAPI
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>。
+如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>。
 
 **Typer** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
 
@@ -112,7 +112,7 @@ Python 3.8 及更高版本
 ReadyAPI 站在以下巨人的肩膀之上：
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 负责 web 部分。
-* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> 负责数据部分。
+* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 负责数据部分。
 
 ## 安装
 
@@ -443,7 +443,7 @@ item: Item
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - 使用 `TestClient` 时安装。
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - 使用默认模板配置时安装。
-* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - 需要通过 `request.form()` 对表单进行<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">「解析」</abbr>时安装。
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - 需要通过 `request.form()` 对表单进行<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">「解析」</abbr>时安装。
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - 需要 `SessionMiddleware` 支持时安装。
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 使用 Starlette 提供的 `SchemaGenerator` 时安装（有 ReadyAPI 你可能并不需要它）。
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - 需要 `GraphQLApp` 支持时安装。

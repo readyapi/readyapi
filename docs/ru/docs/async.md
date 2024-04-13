@@ -468,7 +468,7 @@ Starlette (и **ReadyAPI**) основаны на <a href="https://anyio.readthe
 <!--Уточнить: Не использовать async def, если код приводит к блокировке IO?-->
 
 <!--http://new.gramota.ru/spravka/punctum?layout=item&id=58_285-->
-Но в любом случае велика вероятность, что **ReadyAPI** [окажется быстрее](/#performance){.internal-link target=_blank}
+Но в любом случае велика вероятность, что **ReadyAPI** [окажется быстрее](index.md#performance){.internal-link target=_blank}
 другого фреймворка (или хотя бы на уровне с ним).
 
 ### Зависимости

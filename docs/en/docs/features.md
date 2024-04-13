@@ -179,7 +179,7 @@ With **ReadyAPI** you get all of **Starlette**'s features (as ReadyAPI is just S
 
 ## Pydantic features
 
-**ReadyAPI** is fully compatible with (and based on) <a href="https://pydantic-docs.helpmanual.io" class="external-link" target="_blank"><strong>Pydantic</strong></a>. So, any additional Pydantic code you have, will also work.
+**ReadyAPI** is fully compatible with (and based on) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. So, any additional Pydantic code you have, will also work.
 
 Including external libraries also based on Pydantic, as <abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s for databases.
 

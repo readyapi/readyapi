@@ -1,5 +1,14 @@
 Articles:
   English:
+  - author: Kurtis Pykes - NVIDIA
+    link: https://developer.nvidia.com/blog/building-a-machine-learning-microservice-with-readyapi/
+    title: Building a Machine Learning Microservice with ReadyAPI
+  - author: Ravgeet Dhillon - Twilio
+    link: https://www.twilio.com/en-us/blog/booking-appointments-twilio-notion-readyapi
+    title: Booking Appointments with Twilio, Notion, and ReadyAPI
+  - author: Abhinav Tripathi - Microsoft Blogs
+    link: https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-python-and-readyapi/
+    title: Write a Python data layer with Azure Cosmos DB and ReadyAPI
   - author: Donny Peeters
     author_link: https://github.com/Donnype
     link: https://bitestreams.com/blog/readyapi-sqlalchemy/
@@ -140,7 +149,7 @@ Articles:
     author_link: https://www.twilio.com
     link: https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi
     title: Build a Secure Twilio Webhook with Python and ReadyAPI
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe
     title: Build a web API from scratch with ReadyAPI - the workshop
@@ -340,6 +349,14 @@ Articles:
     title: 'Tortoise ORM / ReadyAPI 整合快速筆記'
 Podcasts:
   English:
+  - author: Real Python
+    author_link: https://realpython.com/
+    link: https://realpython.com/podcasts/rpp/72/
+    title: Starting With ReadyAPI and Examining Python's Import System - Episode 72
+  - author: Python Bytes FM
+    author_link: https://pythonbytes.fm/
+    link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
+    title: 'Do you dare to press "."? - Episode 247 - Dan #6: SQLModel - use the same models for SQL and ReadyAPI'
   - author: Podcast.`__init__`
     author_link: https://www.pythonpodcast.com/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
@@ -354,11 +371,11 @@ Talks:
     author_link: https://github.com/JenySadadia
     link: https://www.youtube.com/watch?v=uZdTe8_Z6BQ
     title: 'PyCon AU 2023: Testing asynchronous applications with ReadyAPI and pytest'
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=PnpTY1f4k2U
     title: '[VIRTUAL] Py.Amsterdam''s flying Software Circus: Intro to ReadyAPI'
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=z9K5pwb0rt8
     title: 'PyConBY 2020: Serve ML models easily with ReadyAPI'
