@@ -1,4 +1,4 @@
-from readyapi import HTTPException, ReadyAPI
+from readyapi import ReadyAPI, HTTPException
 from readyapi.testclient import TestClient
 from starlette.exceptions import HTTPException as StarletteHTTPException
 

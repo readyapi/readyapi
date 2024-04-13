@@ -1,5 +1,5 @@
-from pydantic_settings import BaseSettings
 from readyapi import ReadyAPI
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):

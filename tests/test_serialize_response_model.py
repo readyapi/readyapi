@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
 
-from pydantic import BaseModel, Field
 from readyapi import ReadyAPI
+from pydantic import BaseModel, Field
 from starlette.testclient import TestClient
 
 app = ReadyAPI()

@@ -2,8 +2,8 @@ from typing import List
 
 import databases
 import sqlalchemy
-from pydantic import BaseModel
 from readyapi import ReadyAPI
+from pydantic import BaseModel
 
 # SQLAlchemy specific code, as with any other app
 DATABASE_URL = "sqlite:///./test.db"

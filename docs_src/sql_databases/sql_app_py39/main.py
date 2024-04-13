@@ -1,4 +1,4 @@
-from readyapi import Depends, HTTPException, ReadyAPI
+from readyapi import Depends, ReadyAPI, HTTPException
 from sqlalchemy.orm import Session
 
 from . import crud, models, schemas

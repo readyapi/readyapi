@@ -5,7 +5,7 @@
 
     The current version assumes Pydantic v1.
 
-    The new docs will include Pydantic v2 and will use <a href="https://sqlmodel.khulnasoft.com/" class="external-link" target="_blank">SQLModel</a> once it is updated to use Pydantic v2 as well.
+    The new docs will include Pydantic v2 and will use <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a> once it is updated to use Pydantic v2 as well.
 
 !!! warning "Deprecated"
     This tutorial is deprecated and will be removed in a future version.

@@ -1,4 +1,4 @@
-from readyapi import Path, Query, ReadyAPI
+from readyapi import ReadyAPI, Path, Query
 
 app = ReadyAPI()
 

@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from readyapi import File, Form, ReadyAPI, UploadFile
+from readyapi import ReadyAPI, File, Form, UploadFile
 
 app = ReadyAPI()
 
