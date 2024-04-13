@@ -189,7 +189,7 @@ $ python ./scripts/docs.py live
 
 本指引向你展示了如何直接用 `python` 运行 `./scripts/docs.py` 中的脚本。
 
-但你也可以使用 <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>，而且在安装了补全功能后，你将可以在终端中对命令进行自动补全。
+但你也可以使用 <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>，而且在安装了补全功能后，你将可以在终端中对命令进行自动补全。
 
 如果你已经安装 Typer CLI ，则可以使用以下命令安装自动补全功能：
 

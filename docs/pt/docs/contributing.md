@@ -198,7 +198,7 @@ Desse jeito, você poderá editar a documentação/arquivos fonte e ver as mudan
 
 As instruções aqui mostram como utilizar _scripts_ em `./scripts/docs.py` com o programa `python` diretamente.
 
-Mas você pode usar também <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, e você terá auto-completação para comandos no seu terminal após instalar o _completion_.
+Mas você pode usar também <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, e você terá auto-completação para comandos no seu terminal após instalar o _completion_.
 
 Se você instalou Typer CLI, você pode instalar _completion_ com:
 
