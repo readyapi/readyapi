@@ -1,9 +1,9 @@
 from datetime import datetime
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI, Security
 from readyapi.security import HTTPBearer
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 from typing_extensions import Annotated
 
 app = ReadyAPI()

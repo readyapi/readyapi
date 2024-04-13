@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, HTTPException
+from readyapi import HTTPException, ReadyAPI
 from readyapi.exception_handlers import (
     http_exception_handler,
     request_validation_exception_handler,

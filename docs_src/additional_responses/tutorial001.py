@@ -1,6 +1,6 @@
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.responses import JSONResponse
-from pydantic import BaseModel
 
 
 class Item(BaseModel):

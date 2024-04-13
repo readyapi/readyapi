@@ -1,9 +1,9 @@
 from typing import List
 
+from pydantic import BaseModel, ConfigDict, Field
 from readyapi import ReadyAPI
 from readyapi._compat import PYDANTIC_V2
 from readyapi.testclient import TestClient
-from pydantic import BaseModel, ConfigDict, Field
 
 app = ReadyAPI()
 

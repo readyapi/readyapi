@@ -1,8 +1,8 @@
 from typing import List, Optional
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

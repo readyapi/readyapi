@@ -19,7 +19,12 @@ def get_client():
     [
         ("/items", None, 200, {"User-Agent": "testclient"}),
         ("/items", {"X-Header": "notvalid"}, 200, {"User-Agent": "testclient"}),
-        ("/items", {"User-Agent": "ReadyAPI test"}, 200, {"User-Agent": "ReadyAPI test"}),
+        (
+            "/items",
+            {"User-Agent": "ReadyAPI test"},
+            200,
+            {"User-Agent": "ReadyAPI test"},
+        ),
     ],
 )
 def test(path, headers, expected_status, expected_response, client: TestClient):

@@ -1,6 +1,6 @@
 from typing import List
 
-from readyapi import ReadyAPI, Query
+from readyapi import Query, ReadyAPI
 
 app = ReadyAPI()
 

@@ -1,8 +1,8 @@
 from typing import Dict, List, Optional, Tuple
 
 import pytest
-from readyapi import ReadyAPI, Query
 from pydantic import BaseModel
+from readyapi import Query, ReadyAPI
 
 
 def test_invalid_sequence():

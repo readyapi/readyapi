@@ -1,8 +1,8 @@
 from datetime import datetime, timezone
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 from .utils import needs_pydanticv1, needs_pydanticv2
 

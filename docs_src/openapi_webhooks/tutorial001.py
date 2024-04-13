@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from readyapi import ReadyAPI
 from pydantic import BaseModel
+from readyapi import ReadyAPI
 
 app = ReadyAPI()
 

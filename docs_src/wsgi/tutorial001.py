@@ -1,7 +1,7 @@
-from readyapi import ReadyAPI
-from readyapi.middleware.wsgi import WSGIMiddleware
 from flask import Flask, request
 from markupsafe import escape
+from readyapi import ReadyAPI
+from readyapi.middleware.wsgi import WSGIMiddleware
 
 flask_app = Flask(__name__)
 

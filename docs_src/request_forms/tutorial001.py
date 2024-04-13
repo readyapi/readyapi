@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, Form
+from readyapi import Form, ReadyAPI
 
 app = ReadyAPI()
 

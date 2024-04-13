@@ -18,6 +18,7 @@ from typing import (
 )
 
 import anyio
+from pydantic.fields import FieldInfo
 from readyapi import params
 from readyapi._compat import (
     PYDANTIC_V2,
@@ -55,7 +56,6 @@ from readyapi.security.base import SecurityBase
 from readyapi.security.oauth2 import OAuth2, SecurityScopes
 from readyapi.security.open_id_connect_url import OpenIdConnect
 from readyapi.utils import create_response_field, get_path_param_names
-from pydantic.fields import FieldInfo
 from starlette.background import BackgroundTasks as StarletteBackgroundTasks
 from starlette.concurrency import run_in_threadpool
 from starlette.datastructures import FormData, Headers, QueryParams, UploadFile

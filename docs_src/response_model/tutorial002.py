@@ -1,7 +1,7 @@
 from typing import Union
 
-from readyapi import ReadyAPI
 from pydantic import BaseModel, EmailStr
+from readyapi import ReadyAPI
 
 app = ReadyAPI()
 
