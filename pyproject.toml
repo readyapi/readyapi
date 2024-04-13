@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
 authors = [
-    { name = "Sebastián Ramírez", email = "khulnasoft@gmail.com" },
+    { name = "KhulnaSoft DevOps", email = "info@khulnasoft.com" },
 ]
 classifiers = [
     "Intended Audience :: Information Technology",

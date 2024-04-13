@@ -40,7 +40,7 @@ By doing it, you will receive notifications (in your email) whenever there's a n
 
 ## Connect with the author
 
-You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (Sebastián Ramírez / `khulnasoft`)</a>, the author.
+You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (KhulnaSoft DevOps / `khulnasoft`)</a>, the author.
 
 You can:
 

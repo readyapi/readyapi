@@ -40,7 +40,7 @@
 
 ## 联系作者
 
-您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（Sebastián Ramírez / `khulnasoft`</a>）。
+您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（KhulnaSoft DevOps / `khulnasoft`</a>）。
 
 您可以：
 
