@@ -31,4 +31,4 @@ jobs:
           limit-access-to-actor: true
       - uses: ./.github/actions/people
         with:
-          token: ${{ secrets.READYAPI_PEOPLE }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
