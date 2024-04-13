@@ -1,10 +1,10 @@
 import warnings
 from typing import List
 
+from pydantic import BaseModel
 from readyapi import APIRouter, ReadyAPI
 from readyapi.routing import APIRoute
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 
 def custom_generate_unique_id(route: APIRoute):

@@ -1,7 +1,7 @@
 from typing import Union
 
-from readyapi import ReadyAPI, Path
 from pydantic import BaseModel
+from readyapi import Path, ReadyAPI
 
 app = ReadyAPI()
 

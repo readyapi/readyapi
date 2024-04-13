@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, File, UploadFile
+from readyapi import File, ReadyAPI, UploadFile
 from readyapi.responses import HTMLResponse
 
 app = ReadyAPI()

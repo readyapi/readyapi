@@ -1,8 +1,8 @@
 import typing
 
+from pydantic import BaseModel
 from readyapi import Body, ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

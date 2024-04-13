@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, Path
+from readyapi import Path, ReadyAPI
 
 app = ReadyAPI()
 

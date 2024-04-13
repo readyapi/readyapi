@@ -1,7 +1,7 @@
 import http
 from typing import FrozenSet, Optional
 
-from readyapi import ReadyAPI, Path, Query
+from readyapi import Path, Query, ReadyAPI
 
 app = ReadyAPI()
 

@@ -7,9 +7,9 @@ from pathlib import PurePath, PurePosixPath, PureWindowsPath
 from typing import Optional
 
 import pytest
+from pydantic import BaseModel, Field, ValidationError
 from readyapi._compat import PYDANTIC_V2
 from readyapi.encoders import jsonable_encoder
-from pydantic import BaseModel, Field, ValidationError
 
 from .utils import needs_pydanticv1, needs_pydanticv2
 

@@ -1,8 +1,8 @@
 from typing import Union
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.encoders import jsonable_encoder
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

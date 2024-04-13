@@ -1,7 +1,7 @@
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi._compat import PYDANTIC_V2
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

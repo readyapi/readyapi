@@ -1,6 +1,6 @@
 from typing import Annotated, Union
 
-from readyapi import ReadyAPI, Query
+from readyapi import Query, ReadyAPI
 
 app = ReadyAPI()
 

@@ -17,10 +17,10 @@ from typing import (
     Union,
 )
 
-from readyapi.exceptions import RequestErrorModel
-from readyapi.types import IncEx, ModelNameMap, UnionType
 from pydantic import BaseModel, create_model
 from pydantic.version import VERSION as PYDANTIC_VERSION
+from readyapi.exceptions import RequestErrorModel
+from readyapi.types import IncEx, ModelNameMap, UnionType
 from starlette.datastructures import UploadFile
 from typing_extensions import Annotated, Literal, get_args, get_origin
 
@@ -278,7 +278,6 @@ if PYDANTIC_V2:
         return BodyModel
 
 else:
-    from readyapi.openapi.constants import REF_PREFIX as REF_PREFIX
     from pydantic import AnyUrl as Url  # noqa: F401
     from pydantic import (  # type: ignore[assignment]
         BaseConfig as BaseConfig,  # noqa: F401
@@ -328,6 +327,7 @@ else:
     from pydantic.utils import (  # type: ignore[no-redef]
         lenient_issubclass as lenient_issubclass,  # noqa: F401
     )
+    from readyapi.openapi.constants import REF_PREFIX as REF_PREFIX
 
     GetJsonSchemaHandler = Any  # type: ignore[assignment,misc]
     JsonSchemaValue = Dict[str, Any]  # type: ignore[misc]

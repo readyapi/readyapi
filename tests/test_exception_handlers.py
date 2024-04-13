@@ -1,5 +1,5 @@
 import pytest
-from readyapi import ReadyAPI, HTTPException
+from readyapi import HTTPException, ReadyAPI
 from readyapi.exceptions import RequestValidationError
 from readyapi.testclient import TestClient
 from starlette.responses import JSONResponse

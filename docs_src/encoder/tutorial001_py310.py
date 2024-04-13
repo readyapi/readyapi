@@ -1,8 +1,8 @@
 from datetime import datetime
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.encoders import jsonable_encoder
-from pydantic import BaseModel
 
 fake_db = {}
 
