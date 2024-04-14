@@ -16,7 +16,7 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
     - uses: docker://khulnasoft/label-approved:0.0.4
       with:
-        token: ${{ secrets.READYAPI_LABEL_APPROVED }}
+        token: ${{ secrets.ORG_REPO_TOKEN }}
         config: >
           {
             "approved-1":
