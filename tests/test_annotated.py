@@ -2,7 +2,6 @@ import pytest
 from dirty_equals import IsDict
 from readyapi import APIRouter, Query, ReadyAPI
 from readyapi.testclient import TestClient
-from readyapi.utils import match_pydantic_error_url
 from typing_extensions import Annotated
 
 app = ReadyAPI()
@@ -38,7 +37,6 @@ foo_is_missing = {
                 "msg": "Field required",
                 "type": "missing",
                 "input": None,
-                "url": match_pydantic_error_url("missing"),
             }
         )
         # TODO: remove when deprecating Pydantic v1
@@ -60,7 +58,6 @@ foo_is_short = {
                 "msg": "String should have at least 1 character",
                 "type": "string_too_short",
                 "input": "",
-                "url": match_pydantic_error_url("string_too_short"),
             }
         )
         # TODO: remove when deprecating Pydantic v1

@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -31,7 +40,7 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 תכונות המפתח הן:
 
--   **מהירה**: ביצועים גבוהים מאוד, בקנה אחד עם NodeJS ו - Go (תודות ל - Starlette ו - Pydantic). [אחת מתשתיות הפייתון המהירות ביותר](#performance).
+-   **מהירה**: ביצועים גבוהים מאוד, בקנה אחד עם NodeJS ו - Go (תודות ל - Starlette ו - Pydantic). [אחת מתשתיות הפייתון המהירות ביותר](#_14).
 
 -   **מהירה לתכנות**: הגבירו את מהירות פיתוח התכונות החדשות בכ - %200 עד %300. \*
 -   **פחות שגיאות**: מנעו כ - %40 משגיאות אנוש (מפתחים). \*
@@ -102,9 +111,9 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 ## **Typer**, ה - ReadyAPI של ממשקי שורת פקודה (CLI).
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** היא אחותה הקטנה של ReadyAPI. ומטרתה היא להיות ה - **ReadyAPI של ממשקי שורת פקודה**. ⌨️ 🚀
 

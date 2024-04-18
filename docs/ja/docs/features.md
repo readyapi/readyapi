@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # 機能
 
 ## ReadyAPIの機能

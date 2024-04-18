@@ -1,7 +1,6 @@
 # WebSockets
 
-When defining WebSockets, you normally declare a parameter of type `WebSocket` and
-with it you can read data from the client and send data to it.
+When defining WebSockets, you normally declare a parameter of type `WebSocket` and with it you can read data from the client and send data to it.
 
 It is provided directly by Starlette, but you can import it from `readyapi`:
 
@@ -10,9 +9,7 @@ from readyapi import WebSocket
 ```
 
 !!! tip
-    When you want to define dependencies that should be compatible with both HTTP and
-    WebSockets, you can define a parameter that takes an `HTTPConnection` instead of a
-    `Request` or a `WebSocket`.
+    When you want to define dependencies that should be compatible with both HTTP and WebSockets, you can define a parameter that takes an `HTTPConnection` instead of a `Request` or a `WebSocket`.
 
 ::: readyapi.WebSocket
     options:
@@ -44,8 +41,7 @@ from readyapi import WebSocket
             - send_json
             - close
 
-When a client disconnects, a `WebSocketDisconnect` exception is raised, you can catch
-it.
+When a client disconnects, a `WebSocketDisconnect` exception is raised, you can catch it.
 
 You can import it directly form `readyapi`:
 

@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -28,7 +37,7 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以
 
 主な特徴:
 
-- **高速**: **NodeJS** や **Go** 並みのとても高いパフォーマンス (Starlette と Pydantic のおかげです)。 [最も高速な Python フレームワークの一つです](#performance).
+- **高速**: **NodeJS** や **Go** 並みのとても高いパフォーマンス (Starlette と Pydantic のおかげです)。 [最も高速な Python フレームワークの一つです](#_10).
 
 - **高速なコーディング**: 開発速度を約 200%~300%向上させます。 \*
 - **少ないバグ**: 開発者起因のヒューマンエラーを約 40％削減します。 \*
@@ -99,9 +108,9 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以
 
 ## **Typer**, the ReadyAPI of CLIs
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-もし Web API の代わりにターミナルで使用する<abbr title="Command Line Interface">CLI</abbr>アプリを構築する場合は、<a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>を確認してください。
+もし Web API の代わりにターミナルで使用する<abbr title="Command Line Interface">CLI</abbr>アプリを構築する場合は、<a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>を確認してください。
 
 **Typer**は ReadyAPI の弟分です。そして、**CLI 版 の ReadyAPI**を意味しています。
 

@@ -107,9 +107,9 @@ Kulcs funkciók:
 
 ## **Typer**, a CLI-ok ReadyAPI-ja
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Ha egy olyan CLI alkalmazást fejlesztesz amit a parancssorban kell használni webes API helyett, tekintsd meg: <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Ha egy olyan CLI alkalmazást fejlesztesz amit a parancssorban kell használni webes API helyett, tekintsd meg: <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** a ReadyAPI kistestvére. A **CLI-k ReadyAPI-ja**. ⌨️ 🚀
 

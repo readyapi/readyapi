@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -31,7 +40,7 @@ ReadyAPI là một web framework hiện đại, hiệu năng cao để xây dự
 
 Những tính năng như:
 
-* **Nhanh**: Hiệu năng rất cao khi so sánh với **NodeJS** và **Go** (cảm ơn Starlette và Pydantic). [Một trong những Python framework nhanh nhất](#performance).
+* **Nhanh**: Hiệu năng rất cao khi so sánh với **NodeJS** và **Go** (cảm ơn Starlette và Pydantic). [Một trong những Python framework nhanh nhất](#hieu-nang).
 * **Code nhanh**: Tăng tốc độ phát triển tính năng từ 200% tới 300%. *
 * **Ít lỗi hơn**: Giảm khoảng 40% những lỗi phát sinh bởi con người (nhà phát triển). *
 * **Trực giác tốt hơn**: Được các trình soạn thảo hỗ tuyệt vời. <abbr title="như auto-complete, autocompletion, IntelliSense">Completion</abbr> mọi nơi. Ít thời gian gỡ lỗi.
@@ -108,9 +117,9 @@ Những tính năng như:
 
 ## **Typer**, giao diện dòng lệnh của ReadyAPI
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
 

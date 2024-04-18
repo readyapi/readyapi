@@ -119,7 +119,7 @@ Başqalarının Pull Request-lərinə **Ən çox rəy verənlər** 🕵️ kodun
 
 Bunlar **Sponsorlar**dır. 😎
 
-Onlar mənim **ReadyAPI** (və digər) işlərimi əsasən <a href="hhttps://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsorlar</a> vasitəsilə dəstəkləyirlər.
+Onlar mənim **ReadyAPI** (və digər) işlərimi əsasən <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsorlar</a> vasitəsilə dəstəkləyirlər.
 
 {% if sponsors %}
 

@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Özelikler
 
 ## ReadyAPI özellikleri

@@ -21,7 +21,7 @@ async def read_results():
     return results
 ```
 
-!!! not
+!!! note "Not"
     Sadece `async def` ile tanımlanan fonksiyonlar içinde `await` kullanabilirsiniz.
 
 ---
@@ -376,7 +376,7 @@ ReadyAPI'ye (Starlette aracılığıyla) güç veren ve bu kadar etkileyici bir 
 
 Yukarıda açıklanan şekilde çalışmayan başka bir asenkron framework'den geliyorsanız ve küçük bir performans kazancı (yaklaşık 100 nanosaniye) için  "def" ile *path fonksiyonu* tanımlamaya alışkınsanız, **ReadyAPI**'de tam tersi olacağını unutmayın. Bu durumlarda, *path fonksiyonu* <abbr title="Input/Output: disk okuma veya yazma, ağ iletişimleri.">G/Ç</abbr> engelleyen durum oluşturmadıkça "async def" kullanmak daha iyidir.
 
-Yine de, her iki durumda da, **ReadyAPI**'nin önceki frameworkden [hala daha hızlı](index.md#performance){.internal-link target=_blank} (veya en azından karşılaştırılabilir) olma olasılığı vardır.
+Yine de, her iki durumda da, **ReadyAPI**'nin önceki frameworkden [hala daha hızlı](index.md#performans){.internal-link target=_blank} (veya en azından karşılaştırılabilir) olma olasılığı vardır.
 
 ### Bagımlılıklar
 
