@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from readyapi import Depends, ReadyAPI, HTTPException
+from readyapi import Depends, HTTPException, ReadyAPI
 
 app = ReadyAPI()
 

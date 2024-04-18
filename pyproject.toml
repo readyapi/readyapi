@@ -26,7 +26,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
     "Framework :: AsyncIO",
-    "Framework :: ReadyAPI",
     "Framework :: Pydantic",
     "Framework :: Pydantic :: 1",
     "Intended Audience :: Developers",

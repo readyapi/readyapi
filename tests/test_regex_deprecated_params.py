@@ -1,6 +1,6 @@
 import pytest
 from dirty_equals import IsDict
-from readyapi import ReadyAPI, Query
+from readyapi import Query, ReadyAPI
 from readyapi.testclient import TestClient
 from typing_extensions import Annotated
 

@@ -1,6 +1,6 @@
 from typing import Union
 
-from readyapi import Body, ReadyAPI, Query
+from readyapi import Body, Query, ReadyAPI
 from readyapi.testclient import TestClient
 
 app = ReadyAPI()

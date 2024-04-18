@@ -1,8 +1,8 @@
 from typing import Annotated, Union
 
+from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI
 from readyapi.security import OAuth2PasswordBearer
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

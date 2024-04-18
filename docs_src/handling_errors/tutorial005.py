@@ -1,8 +1,8 @@
+from pydantic import BaseModel
 from readyapi import ReadyAPI, Request, status
 from readyapi.encoders import jsonable_encoder
 from readyapi.exceptions import RequestValidationError
 from readyapi.responses import JSONResponse
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

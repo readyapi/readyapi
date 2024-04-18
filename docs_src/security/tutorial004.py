@@ -1,11 +1,11 @@
 from datetime import datetime, timedelta, timezone
 from typing import Union
 
-from readyapi import Depends, ReadyAPI, HTTPException, status
-from readyapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel
+from readyapi import Depends, HTTPException, ReadyAPI, status
+from readyapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 # to get a string like this run:
 # openssl rand -hex 32

@@ -1,5 +1,5 @@
-from readyapi import ReadyAPI, Query
 from pydantic import Required
+from readyapi import Query, ReadyAPI
 from typing_extensions import Annotated
 
 app = ReadyAPI()

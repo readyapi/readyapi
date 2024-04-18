@@ -1,7 +1,7 @@
 import time
 from typing import List
 
-from readyapi import Depends, ReadyAPI, HTTPException
+from readyapi import Depends, HTTPException, ReadyAPI
 
 from . import crud, database, models, schemas
 from .database import db_state_default

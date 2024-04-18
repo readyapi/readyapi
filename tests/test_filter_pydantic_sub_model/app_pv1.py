@@ -1,7 +1,7 @@
 from typing import Optional
 
-from readyapi import Depends, ReadyAPI
 from pydantic import BaseModel, validator
+from readyapi import Depends, ReadyAPI
 
 app = ReadyAPI()
 

@@ -1,6 +1,6 @@
+from pydantic import BaseModel
 from readyapi import APIRouter, ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 
 class ResponseModel(BaseModel):

@@ -1,9 +1,9 @@
 import typing
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.responses import JSONResponse
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 
