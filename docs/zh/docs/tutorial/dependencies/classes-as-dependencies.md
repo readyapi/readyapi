@@ -161,7 +161,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 ... = Depends(CommonQueryParams)
 ```
 
-...实际上是 **Fastapi** 用来知道依赖项是什么的。
+...实际上是 **Readyapi** 用来知道依赖项是什么的。
 
 ReadyAPI 将从依赖项中提取声明的参数，这才是 ReadyAPI 实际调用的。
 

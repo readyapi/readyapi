@@ -1896,7 +1896,7 @@ You hopefully updated to a supported version of Python a while ago. If you haven
 * ✏ Reword and clarify text in tutorial `docs/en/docs/tutorial/body-nested-models.md`. PR [#5169](https://github.com/khulnasoft/readyapi/pull/5169) by [@papb](https://github.com/papb).
 * ✏ Fix minor typo in `docs/en/docs/features.md`. PR [#5206](https://github.com/khulnasoft/readyapi/pull/5206) by [@OtherBarry](https://github.com/OtherBarry).
 * ✏ Fix minor typos in `docs/en/docs/async.md`. PR [#5125](https://github.com/khulnasoft/readyapi/pull/5125) by [@Ksenofanex](https://github.com/Ksenofanex).
-* 📝 Add external link to docs: "Fastapi, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
+* 📝 Add external link to docs: "Readyapi, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
 * 📝 Simplify example for docs for Additional Responses, remove unnecessary `else`. PR [#4693](https://github.com/khulnasoft/readyapi/pull/4693) by [@adriangb](https://github.com/adriangb).
 * 📝 Update docs, compare enums with identity instead of equality. PR [#4905](https://github.com/khulnasoft/readyapi/pull/4905) by [@MicaelJarniac](https://github.com/MicaelJarniac).
 * ✏ Fix typo in `docs/en/docs/python-types.md`. PR [#4886](https://github.com/khulnasoft/readyapi/pull/4886) by [@MicaelJarniac](https://github.com/MicaelJarniac).

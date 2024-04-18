@@ -14,4 +14,4 @@ Vielleicht möchten Sie deren Dienste ausprobieren und deren Anleitungen folgen:
 
 * <a href="https://docs.platform.sh/languages/python.html?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" class="external-link" target="_blank">Platform.sh</a>
 * <a href="https://docs.porter.run/language-specific-guides/readyapi" class="external-link" target="_blank">Porter</a>
-* <a href="https://docs.withcoherence.com/docs/configuration/frameworks?utm_medium=advertising&utm_source=readyapi&utm_campaign=banner%20january%2024#fast-api-example" class="external-link" target="_blank">Coherence</a>
+* <a href="https://docs.withcoherence.com/docs/configuration/frameworks?utm_medium=advertising&utm_source=readyapi&utm_campaign=banner%20january%2024#ready-api-example" class="external-link" target="_blank">Coherence</a>
