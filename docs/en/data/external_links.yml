@@ -99,7 +99,7 @@ Articles:
     title: "Serve a machine learning model using Sklearn, ReadyAPI and Docker"
   - author: Yashasvi Singh
     author_link: https://hashnode.com/@aUnicornDev
-    link: https://aunicorndev.hashnode.dev/series/supaready-api
+    link: https://aunicorndev.hashnode.dev/series/supafast-api
     title: "Building an API with ReadyAPI and Supabase and Deploying on Deta"
   - author: Navule Pavan Kumar Rao
     author_link: https://www.linkedin.com/in/navule/
@@ -256,7 +256,7 @@ Articles:
   - author: KrishNa
     author_link: https://medium.com/@krishnardt365
     link: https://medium.com/@krishnardt365/readyapi-docker-and-postgres-91943e71be92
-    title: Readyapi, Docker(Docker compose) and Postgres
+    title: Fastapi, Docker(Docker compose) and Postgres
   German:
   - author: Marcel Sander (actidoo)
     author_link: https://www.actidoo.com
@@ -327,7 +327,7 @@ Articles:
   Russian:
   - author: Troy Köhler
     author_link: https://www.linkedin.com/in/trkohler/
-    link: https://trkohler.com/ready-api-introduction-to-framework
+    link: https://trkohler.com/fast-api-introduction-to-framework
     title: 'ReadyAPI: знакомимся с фреймворком'
   - author: prostomarkeloff
     author_link: https://github.com/prostomarkeloff
@@ -356,7 +356,7 @@ Podcasts:
   - author: Python Bytes FM
     author_link: https://pythonbytes.fm/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
-    title: 'Do you dare to press "."? - Episode 247 - Dan #6: SQLDev - use the same models for SQL and ReadyAPI'
+    title: 'Do you dare to press "."? - Episode 247 - Dan #6: SQLModel - use the same models for SQL and ReadyAPI'
   - author: Podcast.`__init__`
     author_link: https://www.pythonpodcast.com/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/

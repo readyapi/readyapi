@@ -84,13 +84,13 @@
 
 И в конце она возвращает `dict`, содержащий эти значения.
 
-!!! Информация
+!!! info "Информация"
 
     **ReadyAPI** добавил поддержку для `Annotated` (и начал её рекомендовать) в версии 0.95.0.
 
      Если у вас более старая версия, будут ошибки при попытке использовать `Annotated`.
 
-    Убедитесь, что вы [Обновили ReadyAPI версию](../../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} до, как минимум 0.95.1, перед тем как использовать `Annotated`.
+    Убедитесь, что вы [Обновили ReadyAPI версию](../../deployment/versions.md#readyapi_2){.internal-link target=_blank} до, как минимум 0.95.1, перед тем как использовать `Annotated`.
 
 ### Import `Depends`
 

@@ -107,9 +107,9 @@ ReadyAPI Python 3.8+ ilə API yaratmaq üçün standart Python <abbr title="Tip 
 
 ## **Typer**, CLI-ların ReadyAPI-ı
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>-a baxa bilərsiniz.
+Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>-a baxa bilərsiniz.
 
 **Typer** ReadyAPI-ın kiçik qardaşıdır. Və o, CLI-lərin **ReadyAPI**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
 

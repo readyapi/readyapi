@@ -22,7 +22,7 @@
 
 ## ⏩ ReadyAPI 🔛 👱📔
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Readyapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **ReadyAPI**. 👶
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Fastapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **ReadyAPI**. 👶
 
 ## ✴ **ReadyAPI** 📂
 
@@ -50,7 +50,7 @@
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">⏩ 👤 🔛 **👱📔**</a> ⚖️ <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">☠</a>.
     * 💬 👤 ❔ 👆 ⚙️ ReadyAPI (👤 💌 👂 👈).
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰.
-    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Readyapi 🔛 👱📔</a> (🎏 🏧).
+    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Fastapi 🔛 👱📔</a> (🎏 🏧).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">🔗 ⏮️ 👤 🔛 **👱📔**</a>.
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰 (👐 👤 ⚙️ 👱📔 🌖 🛎 🤷 ♂).
 * ✍ ⚫️❔ 👤 ✍ (⚖️ ⏩ 👤) 🔛 <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**🇸🇲.**</a> ⚖️ <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**🔉**</a>.
@@ -78,7 +78,7 @@
 
 📚 💼 👆 5️⃣📆 ⏪ 💭 ❔ 📚 ❔. 👶
 
-🚥 👆 🤝 📚 👫👫 ⏮️ 👫 ❔, 👆 🔜 ▶️️ 🛂 [ReadyAPI 🕴](readyapi-people.md#experts){.internal-link target=_blank}. 👶
+🚥 👆 🤝 📚 👫👫 ⏮️ 👫 ❔, 👆 🔜 ▶️️ 🛂 [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}. 👶
 
 💭, 🏆 ⚠ ☝: 🔄 😇. 👫👫 👟 ⏮️ 👫 😩 &amp; 📚 💼 🚫 💭 🏆 🌌, ✋️ 🔄 🏆 👆 💪 😇. 👶
 
@@ -198,7 +198,7 @@
 * 🔧 🤭 👆 🔎 🔛 🧾.
 * 💰 📄, 📹, ⚖️ 📻 👆 ✍ ⚖️ 🔎 🔃 ReadyAPI <a href="https://github.com/khulnasoft/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">✍ 👉 📁</a>.
     * ⚒ 💭 👆 🚮 👆 🔗 ▶️ 🔗 📄.
-* ℹ [💬 🧾](contributing.md#translations){.internal-link target=_blank} 👆 🇪🇸.
+* ℹ [💬 🧾](contributing.md#_9){.internal-link target=_blank} 👆 🇪🇸.
     * 👆 💪 ℹ 📄 ✍ ✍ 🎏.
 * 🛠️ 🆕 🧾 📄.
 * 🔧 ♻ ❔/🐛.
@@ -215,8 +215,8 @@
 
 👑 📋 👈 👆 💪 ▶️️ 🔜:
 
-* [ℹ 🎏 ⏮️ ❔ 📂](#help-others-with-questions-in-github){.internal-link target=_blank} (👀 📄 🔛).
-* [📄 🚲 📨](#review-pull-requests){.internal-link target=_blank} (👀 📄 🔛).
+* [ℹ 🎏 ⏮️ ❔ 📂](#i){.internal-link target=_blank} (👀 📄 🔛).
+* [📄 🚲 📨](#i){.internal-link target=_blank} (👀 📄 🔛).
 
 👈 2️⃣ 📋 ⚫️❔ **🍴 🕰 🏆**. 👈 👑 👷 🏆 ReadyAPI.
 
@@ -227,7 +227,7 @@
 🛑 👶 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">😧 💬 💽</a> 👶 &amp; 🤙 👅 ⏮️ 🎏 ReadyAPI 👪.
 
 !!! tip
-    ❔, 💭 👫 <a href="https://github.com/khulnasoft/readyapi/discussions/new?category=questions" class="external-link" target="_blank">📂 💬</a>, 📤 🌅 👍 🤞 👆 🔜 📨 ℹ [ReadyAPI 🕴](readyapi-people.md#experts){.internal-link target=_blank}.
+    ❔, 💭 👫 <a href="https://github.com/khulnasoft/readyapi/discussions/new?category=questions" class="external-link" target="_blank">📂 💬</a>, 📤 🌅 👍 🤞 👆 🔜 📨 ℹ [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}.
 
     ⚙️ 💬 🕴 🎏 🏢 💬.
 
@@ -237,7 +237,7 @@
 
 📂, 📄 🔜 🦮 👆 ✍ ▶️️ ❔ 👈 👆 💪 🌖 💪 🤚 👍 ❔, ⚖️ ❎ ⚠ 👆 ⏭ 💬. &amp; 📂 👤 💪 ⚒ 💭 👤 🕧 ❔ 🌐, 🚥 ⚫️ ✊ 🕰. 👤 💪 🚫 🤙 👈 ⏮️ 💬 ⚙️. 👶
 
-💬 💬 ⚙️ 🚫 💪 📇 📂, ❔ &amp; ❔ 5️⃣📆 🤚 💸 💬. &amp; 🕴 🕐 📂 💯 ▶️️ [ReadyAPI 🕴](readyapi-people.md#experts){.internal-link target=_blank}, 👆 🔜 🌅 🎲 📨 🌅 🙋 📂.
+💬 💬 ⚙️ 🚫 💪 📇 📂, ❔ &amp; ❔ 5️⃣📆 🤚 💸 💬. &amp; 🕴 🕐 📂 💯 ▶️️ [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}, 👆 🔜 🌅 🎲 📨 🌅 🙋 📂.
 
 🔛 🎏 🚄, 📤 💯 👩‍💻 💬 ⚙️, 📤 ↕ 🤞 👆 🔜 🔎 👱 💬 📤, 🌖 🌐 🕰. 👶
 

@@ -1,8 +1,8 @@
 from typing import List
 
 import yaml
+from readyapi import ReadyAPI, HTTPException, Request
 from pydantic import BaseModel, ValidationError
-from readyapi import HTTPException, ReadyAPI, Request
 
 app = ReadyAPI()
 
@@ -30,5 +30,5 @@ async def create_item(request: Request):
     try:
         item = Item.model_validate(data)
     except ValidationError as e:
-        raise HTTPException(status_code=422, detail=e.errors())
+        raise HTTPException(status_code=422, detail=e.errors(include_url=False))
     return item

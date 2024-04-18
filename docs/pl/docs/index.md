@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -98,9 +107,9 @@ Kluczowe cechy:
 
 ## **Typer**, ReadyAPI aplikacji konsolowych
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
 

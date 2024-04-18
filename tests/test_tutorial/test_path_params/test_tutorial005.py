@@ -1,67 +1,79 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
 
-from docs_src.handling_errors.tutorial005 import app
+from docs_src.path_params.tutorial005 import app
 
 client = TestClient(app)
 
 
-def test_post_validation_error():
-    response = client.post("/items/", json={"title": "towel", "size": "XL"})
-    assert response.status_code == 422, response.text
+def test_get_enums_alexnet():
+    response = client.get("/models/alexnet")
+    assert response.status_code == 200
+    assert response.json() == {"model_name": "alexnet", "message": "Deep Learning FTW!"}
+
+
+def test_get_enums_lenet():
+    response = client.get("/models/lenet")
+    assert response.status_code == 200
+    assert response.json() == {"model_name": "lenet", "message": "LeCNN all the images"}
+
+
+def test_get_enums_resnet():
+    response = client.get("/models/resnet")
+    assert response.status_code == 200
+    assert response.json() == {"model_name": "resnet", "message": "Have some residuals"}
+
+
+def test_get_enums_invalid():
+    response = client.get("/models/foo")
+    assert response.status_code == 422
     assert response.json() == IsDict(
         {
             "detail": [
                 {
-                    "type": "int_parsing",
-                    "loc": ["body", "size"],
-                    "msg": "Input should be a valid integer, unable to parse string as an integer",
-                    "input": "XL",
+                    "type": "enum",
+                    "loc": ["path", "model_name"],
+                    "msg": "Input should be 'alexnet', 'resnet' or 'lenet'",
+                    "input": "foo",
+                    "ctx": {"expected": "'alexnet', 'resnet' or 'lenet'"},
                 }
-            ],
-            "body": {"title": "towel", "size": "XL"},
+            ]
         }
     ) | IsDict(
         # TODO: remove when deprecating Pydantic v1
         {
             "detail": [
                 {
-                    "loc": ["body", "size"],
-                    "msg": "value is not a valid integer",
-                    "type": "type_error.integer",
+                    "ctx": {"enum_values": ["alexnet", "resnet", "lenet"]},
+                    "loc": ["path", "model_name"],
+                    "msg": "value is not a valid enumeration member; permitted: 'alexnet', 'resnet', 'lenet'",
+                    "type": "type_error.enum",
                 }
-            ],
-            "body": {"title": "towel", "size": "XL"},
+            ]
         }
     )
-
-
-def test_post():
-    data = {"title": "towel", "size": 5}
-    response = client.post("/items/", json=data)
-    assert response.status_code == 200, response.text
-    assert response.json() == data
 
 
 def test_openapi_schema():
     response = client.get("/openapi.json")
     assert response.status_code == 200, response.text
-    assert response.json() == {
+    data = response.json()
+    assert data == {
         "openapi": "3.1.0",
         "info": {"title": "ReadyAPI", "version": "0.1.0"},
         "paths": {
-            "/items/": {
-                "post": {
-                    "summary": "Create Item",
-                    "operationId": "create_item_items__post",
-                    "requestBody": {
-                        "content": {
-                            "application/json": {
-                                "schema": {"$ref": "#/components/schemas/Item"}
-                            }
-                        },
-                        "required": True,
-                    },
+            "/models/{model_name}": {
+                "get": {
+                    "summary": "Get Model",
+                    "operationId": "get_model_models__model_name__get",
+                    "parameters": [
+                        {
+                            "required": True,
+                            "schema": {"$ref": "#/components/schemas/ModelName"},
+                            "name": "model_name",
+                            "in": "path",
+                        }
+                    ],
                     "responses": {
                         "200": {
                             "description": "Successful Response",
@@ -94,15 +106,22 @@ def test_openapi_schema():
                         }
                     },
                 },
-                "Item": {
-                    "title": "Item",
-                    "required": ["title", "size"],
-                    "type": "object",
-                    "properties": {
-                        "title": {"title": "Title", "type": "string"},
-                        "size": {"title": "Size", "type": "integer"},
-                    },
-                },
+                "ModelName": IsDict(
+                    {
+                        "title": "ModelName",
+                        "enum": ["alexnet", "resnet", "lenet"],
+                        "type": "string",
+                    }
+                )
+                | IsDict(
+                    {
+                        # TODO: remove when deprecating Pydantic v1
+                        "title": "ModelName",
+                        "enum": ["alexnet", "resnet", "lenet"],
+                        "type": "string",
+                        "description": "An enumeration.",
+                    }
+                ),
                 "ValidationError": {
                     "title": "ValidationError",
                     "required": ["loc", "msg", "type"],

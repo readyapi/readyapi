@@ -1,4 +1,4 @@
-from readyapi import File, Form, ReadyAPI, UploadFile
+from readyapi import ReadyAPI, File, Form, UploadFile
 from typing_extensions import Annotated
 
 app = ReadyAPI()

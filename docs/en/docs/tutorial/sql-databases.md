@@ -5,7 +5,7 @@
 
     The current version assumes Pydantic v1, and SQLAlchemy versions less than 2.0.
 
-    The new docs will include Pydantic v2 and will use <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a> (which is also based on SQLAlchemy) once it is updated to use Pydantic v2 as well.
+    The new docs will include Pydantic v2 and will use <a href="https://sqlmodel.khulnasoft.com/" class="external-link" target="_blank">SQLModel</a> (which is also based on SQLAlchemy) once it is updated to use Pydantic v2 as well.
 
 **ReadyAPI** doesn't require you to use a SQL (relational) database.
 
@@ -546,7 +546,7 @@ Our dependency will create a new SQLAlchemy `SessionLocal` that will be used in 
 
     This way we make sure the database session is always closed after the request. Even if there was an exception while processing the request.
 
-    But you can't raise another exception from the exit code (after `yield`). See more in [Dependencies with `yield` and `HTTPException`](./dependencies/dependencies-with-yield.md#dependencies-with-yield-and-httpexception){.internal-link target=_blank}
+    But you can't raise another exception from the exit code (after `yield`). See more in [Dependencies with `yield` and `HTTPException`](dependencies/dependencies-with-yield.md#dependencies-with-yield-and-httpexception){.internal-link target=_blank}
 
 And then, when using the dependency in a *path operation function*, we declare it with the type `Session` we imported directly from SQLAlchemy.
 

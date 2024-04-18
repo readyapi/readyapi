@@ -1,5 +1,5 @@
-from pydantic import BaseModel, HttpUrl
 from readyapi import ReadyAPI
+from pydantic import BaseModel, HttpUrl
 
 app = ReadyAPI()
 

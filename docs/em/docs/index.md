@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -31,7 +40,7 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 🔑 ⚒:
 
-* **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic). [1️⃣ ⏩ 🐍 🛠️ 💪](#performance).
+* **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic). [1️⃣ ⏩ 🐍 🛠️ 💪](#_15).
 * **⏩ 📟**: 📈 🚅 🛠️ ⚒ 🔃 2️⃣0️⃣0️⃣ 💯 3️⃣0️⃣0️⃣ 💯. *
 * **👩‍❤‍👨 🐛**: 📉 🔃 4️⃣0️⃣ 💯 🗿 (👩‍💻) 📉 ❌. *
 * **🏋️**: 👑 👨‍🎨 🐕‍🦺. <abbr title="also known as auto-complete, autocompletion, IntelliSense">🛠️</abbr> 🌐. 🌘 🕰 🛠️.
@@ -107,9 +116,9 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 ## **🏎**, ReadyAPI 🇳🇨
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-🚥 👆 🏗 <abbr title="Command Line Interface">✳</abbr> 📱 ⚙️ 📶 ↩️ 🕸 🛠️, ✅ 👅 <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**🏎**</a>.
+🚥 👆 🏗 <abbr title="Command Line Interface">✳</abbr> 📱 ⚙️ 📶 ↩️ 🕸 🛠️, ✅ 👅 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**🏎**</a>.
 
 **🏎** ReadyAPI 🐥 👪. &amp; ⚫️ 🎯 **ReadyAPI 🇳🇨**. 👶 👶 👶
 

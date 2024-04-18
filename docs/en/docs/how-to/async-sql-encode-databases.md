@@ -5,7 +5,7 @@
 
     The current version assumes Pydantic v1.
 
-    The new docs will include Pydantic v2 and will use <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a> once it is updated to use Pydantic v2 as well.
+    The new docs will include Pydantic v2 and will use <a href="https://sqlmodel.khulnasoft.com/" class="external-link" target="_blank">SQLModel</a> once it is updated to use Pydantic v2 as well.
 
 !!! warning "Deprecated"
     This tutorial is deprecated and will be removed in a future version.
@@ -100,7 +100,7 @@ Create the *path operation function* to read notes:
 {!../../../docs_src/async_sql_databases/tutorial001.py!}
 ```
 
-!!! Note
+!!! note
     Notice that as we communicate with the database using `await`, the *path operation function* is declared with `async`.
 
 ### Notice the `response_model=List[Note]`
@@ -122,7 +122,7 @@ Create the *path operation function* to create notes:
 
     The examples here use `.dict()` for compatibility with Pydantic v1, but you should use `.model_dump()` instead if you can use Pydantic v2.
 
-!!! Note
+!!! note
     Notice that as we communicate with the database using `await`, the *path operation function* is declared with `async`.
 
 ### About `{**note.dict(), "id": last_record_id}`

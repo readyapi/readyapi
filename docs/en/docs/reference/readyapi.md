@@ -1,7 +1,6 @@
 # `ReadyAPI` class
 
-Here's the reference information for the `ReadyAPI` class, with all its parameters,
-attributes and methods.
+Here's the reference information for the `ReadyAPI` class, with all its parameters, attributes and methods.
 
 You can import the `ReadyAPI` class directly from `readyapi`:
 

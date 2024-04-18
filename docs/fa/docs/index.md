@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -30,7 +39,7 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 ویژگی‌های کلیدی این فریم‌ورک عبارتند از:
 
-* **<abbr title="Fast">سرعت</abbr>**: کارایی بسیار بالا و قابل مقایسه با  **NodeJS** و **Go** (با تشکر از Starlette و Pydantic). [یکی از سریع‌ترین فریم‌ورک‌های پایتونی موجود](#performance).
+* **<abbr title="Fast">سرعت</abbr>**: کارایی بسیار بالا و قابل مقایسه با  **NodeJS** و **Go** (با تشکر از Starlette و Pydantic). [یکی از سریع‌ترین فریم‌ورک‌های پایتونی موجود](#_10).
 
 * **<abbr title="Fast to code">کدنویسی سریع</abbr>**: افزایش ۲۰۰ تا ۳۰۰ درصدی سرعت توسعه قابلیت‌های جدید. *
 * **<abbr title="Fewer bugs">باگ کمتر</abbr>**: کاهش ۴۰ درصدی خطاهای انسانی (برنامه‌نویسی). *
@@ -98,9 +107,9 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 ## **Typer**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>. استفاده کنید.
+اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>. استفاده کنید.
 
 **Typer** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
 
