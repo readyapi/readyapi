@@ -111,9 +111,9 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ## **Typer**，命令行中的 ReadyAPI
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>。
+如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>。
 
 **Typer** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
 

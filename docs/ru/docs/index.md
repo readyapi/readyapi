@@ -110,9 +110,9 @@ ReadyAPI — это современный, быстрый (высокопрои
 
 ## **Typer**, интерфейс командной строки для ReadyAPI
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Если вы создаете приложение <abbr title="Интерфейс командной строки">CLI</abbr> для использования в терминале вместо веб-API, ознакомьтесь с <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Если вы создаете приложение <abbr title="Интерфейс командной строки">CLI</abbr> для использования в терминале вместо веб-API, ознакомьтесь с <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** — младший брат ReadyAPI. И он предназначен для использования в качестве **интерфейса командной строки для ReadyAPI**. ⌨️ 🚀
 

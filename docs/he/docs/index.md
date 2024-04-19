@@ -111,9 +111,9 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 ## **Typer**, ה - ReadyAPI של ממשקי שורת פקודה (CLI).
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** היא אחותה הקטנה של ReadyAPI. ומטרתה היא להיות ה - **ReadyAPI של ממשקי שורת פקודה**. ⌨️ 🚀
 
