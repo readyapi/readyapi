@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Develop. PR [#32](https://github.com/khulnasoft/ReadyAPI/pull/32) by [@FortiShield](https://github.com/FortiShield).
 * Develop. PR [#31](https://github.com/khulnasoft/ReadyAPI/pull/31) by [@FortiShield](https://github.com/FortiShield).
 
 ### Fixes
