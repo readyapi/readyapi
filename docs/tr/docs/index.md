@@ -116,9 +116,9 @@ Temel özellikleri şunlardır:
 
 ## Komut Satırı Uygulamalarının ReadyAPI'ı: **Typer**
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>'a göz atabilirsiniz.
+Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>'a göz atabilirsiniz.
 
 **Typer** kısaca ReadyAPI'ın küçük kardeşi. Ve hedefi komut satırı uygulamalarının **ReadyAPI'ı** olmak. ⌨️ 🚀
 

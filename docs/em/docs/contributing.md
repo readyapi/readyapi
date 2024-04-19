@@ -194,7 +194,7 @@ $ python ./scripts/docs.py live
 
 👩‍🌾 📥 🎦 👆 ❔ ⚙️ ✍ `./scripts/docs.py` ⏮️ `python` 📋 🔗.
 
-✋️ 👆 💪 ⚙️ <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">🏎 ✳</a>, &amp; 👆 🔜 🤚 ✍ 👆 📶 📋 ⏮️ ❎ 🛠️.
+✋️ 👆 💪 ⚙️ <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">🏎 ✳</a>, &amp; 👆 🔜 🤚 ✍ 👆 📶 📋 ⏮️ ❎ 🛠️.
 
 🚥 👆 ❎ 🏎 ✳, 👆 💪 ❎ 🛠️ ⏮️:
 

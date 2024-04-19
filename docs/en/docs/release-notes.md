@@ -3396,7 +3396,7 @@ Note: all the previous parameters are still there, so it's still possible to dec
 * Update and simplify translations docs. PR [#1171](https://github.com/khulnasoft/readyapi/pull/1171).
 * Update development of ReadyAPI docs, set address to `127.0.0.1` to improve Windows support. PR [#1169](https://github.com/khulnasoft/readyapi/pull/1169) by [@mariacamilagl](https://github.com/mariacamilagl).
 * Add support for docs translations. New docs: [Development - Contributing: Docs: Translations](https://readyapi.khulnasoft.com/contributing/#translations). PR [#1168](https://github.com/khulnasoft/readyapi/pull/1168).
-* Update terminal styles in docs and add note about [**Typer**, the ReadyAPI of CLIs](https://typer.khulnasoft.com/). PR [#1139](https://github.com/khulnasoft/readyapi/pull/1139).
+* Update terminal styles in docs and add note about [**Typer**, the ReadyAPI of CLIs](https://typer.tiangolo.com/). PR [#1139](https://github.com/khulnasoft/readyapi/pull/1139).
 
 ## 0.52.0
 

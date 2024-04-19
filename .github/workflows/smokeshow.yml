@@ -26,7 +26,7 @@ jobs:
 
       - uses: dawidd6/action-download-artifact@v3.1.4
         with:
-          github_token: ${{ secrets.READYAPI_SMOKESHOW_DOWNLOAD_ARTIFACTS }}
+          github_token: ${{ secrets.ORG_REPO_TOKEN }}
           workflow: test.yml
           commit: ${{ github.event.workflow_run.head_sha }}
 
