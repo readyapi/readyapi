@@ -7,6 +7,8 @@ hide:
 
 ## Latest Changes
 
+* Develop. PR [#31](https://github.com/khulnasoft/ReadyAPI/pull/31) by [@FortiShield](https://github.com/FortiShield).
+
 ### Fixes
 
 * 🐛 Fix support for query parameters with list types, handle JSON encoding Pydantic `UndefinedType`. PR [#9929](https://github.com/khulnasoft/readyapi/pull/9929) by [@arjwilliams](https://github.com/arjwilliams).
