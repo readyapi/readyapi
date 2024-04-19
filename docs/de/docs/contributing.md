@@ -189,7 +189,7 @@ Auf diese Weise können Sie die Dokumentation/Quelldateien bearbeiten und die Ä
 
 Die Anleitung hier zeigt Ihnen, wie Sie das Skript unter `./scripts/docs.py` direkt mit dem `python` Programm verwenden.
 
-Sie können aber auch <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a> verwenden und erhalten dann Autovervollständigung für Kommandos in Ihrem Terminal, nach dem Sie dessen Vervollständigung installiert haben.
+Sie können aber auch <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a> verwenden und erhalten dann Autovervollständigung für Kommandos in Ihrem Terminal, nach dem Sie dessen Vervollständigung installiert haben.
 
 Wenn Sie Typer CLI installieren, können Sie die Vervollständigung installieren mit:
 
