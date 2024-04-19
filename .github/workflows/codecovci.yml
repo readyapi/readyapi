@@ -18,4 +18,5 @@ jobs:
           flags: smart-tests
           verbose: true
         env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: khulnasoft/ReadyAPI
