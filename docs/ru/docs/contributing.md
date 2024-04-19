@@ -198,7 +198,7 @@ $ python ./scripts/docs.py live
 
 Приведенная ранее инструкция показала Вам, как запускать скрипт `./scripts/docs.py` непосредственно через интерпретатор `python` .
 
-Но также можно использовать <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, что позволит Вам воспользоваться автозаполнением команд в Вашем терминале.
+Но также можно использовать <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, что позволит Вам воспользоваться автозаполнением команд в Вашем терминале.
 
 Если Вы установили Typer CLI, то для включения функции автозаполнения, введите эту команду:
 
