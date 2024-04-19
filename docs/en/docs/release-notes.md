@@ -43,7 +43,7 @@ hide:
 
 * ⬆️ Upgrade version of typer for docs. PR [#11393](https://github.com/khulnasoft/readyapi/pull/11393) by [@khulnasoft](https://github.com/khulnasoft).
 
-## 0.110.1
+## 0.110.2
 
 ### Fixes
 
