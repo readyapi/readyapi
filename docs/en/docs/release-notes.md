@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump actions/setup-python from 4 to 5. PR [#35](https://github.com/khulnasoft/readyapi/pull/35) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Develop. PR [#32](https://github.com/khulnasoft/ReadyAPI/pull/32) by [@FortiShield](https://github.com/FortiShield).
 * Develop. PR [#31](https://github.com/khulnasoft/ReadyAPI/pull/31) by [@FortiShield](https://github.com/FortiShield).
 
