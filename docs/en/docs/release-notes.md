@@ -3472,7 +3472,7 @@ Note: all the previous parameters are still there, so it's still possible to dec
 * Add note about using Body parameters without Pydantic. PR [#900](https://github.com/khulnasoft/readyapi/pull/900) by [@pawamoy](https://github.com/pawamoy).
 * Fix Pydantic field clone logic. PR [#899](https://github.com/khulnasoft/readyapi/pull/899) by [@deuce2367](https://github.com/deuce2367).
 * Fix link in middleware docs. PR [#893](https://github.com/khulnasoft/readyapi/pull/893) by [@linchiwei123](https://github.com/linchiwei123).
-* Rename default API title from "Fast API" to "ReadyAPI" for consistency. PR [#890](https://github.com/khulnasoft/readyapi/pull/890).
+* Rename default API title from "Ready API" to "ReadyAPI" for consistency. PR [#890](https://github.com/khulnasoft/readyapi/pull/890).
 
 ## 0.47.1
 
