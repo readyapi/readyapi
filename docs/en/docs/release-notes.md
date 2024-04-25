@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Nx pkg patch 1. PR [#41](https://github.com/khulnasoft/readyapi/pull/41) by [@NxPKG](https://github.com/NxPKG).
 * Update README.md. PR [#40](https://github.com/khulnasoft/readyapi/pull/40) by [@NxPKG](https://github.com/NxPKG).
 * Update api_key.py. PR [#36](https://github.com/khulnasoft/readyapi/pull/36) by [@NxPKG](https://github.com/NxPKG).
 * ⬆ Bump actions/setup-python from 4 to 5. PR [#35](https://github.com/khulnasoft/readyapi/pull/35) by [@dependabot[bot]](https://github.com/apps/dependabot).
