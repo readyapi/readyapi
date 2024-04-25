@@ -18,9 +18,8 @@
     <img src="https://img.shields.io/pypi/pyversions/readyapi.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
-[![HitCount](http://hits.dwyl.com/khulnasoft/readyapi.svg)](http://hits.dwyl.com/khulnasoft/readyapi)
 ---
-
+[![HitCount](http://hits.dwyl.com/khulnasoft/aibuildings.svg)](http://hits.dwyl.com/khulnasoft/aibuildings)
 **Documentation**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
 **Source Code**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
