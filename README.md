@@ -26,7 +26,6 @@
 **Source Code**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
 
 ---
-
 ReadyAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+ based on standard Python type hints.
 
 The key features are:
@@ -472,6 +471,7 @@ Used by ReadyAPI / Starlette:
 
 You can install all of these with `pip install "readyapi[all]"`.
 
+[![HitCount](http://hits.dwyl.com/khulnasoft/readyapi.svg)](http://hits.dwyl.com/khulnasoft/readyapi)
 ## License
 
 This project is licensed under the terms of the MIT license.
