@@ -19,13 +19,12 @@
 </a>
 </p>
 ---
-[![HitCount](http://hits.dwyl.com/khulnasoft/aibuildings.svg)](http://hits.dwyl.com/khulnasoft/aibuildings)
 **Documentation**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
 **Source Code**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
 
 ---
-
+[![HitCount](http://hits.dwyl.com/khulnasoft/aibuildings.svg)](http://hits.dwyl.com/khulnasoft/aibuildings)
 ReadyAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+ based on standard Python type hints.
 
 The key features are:
