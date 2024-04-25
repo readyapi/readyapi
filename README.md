@@ -468,6 +468,7 @@ Used by ReadyAPI / Starlette:
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Required if you want to use `ORJSONResponse`.
 
 You can install all of these with `pip install "readyapi[all]"`.
+
 [![HitCount](http://hits.dwyl.com/khulnasoft/readyapi.svg)](http://hits.dwyl.com/khulnasoft/readyapi)
 ## License
 
