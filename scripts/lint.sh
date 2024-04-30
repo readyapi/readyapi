@@ -4,5 +4,5 @@ set -e
 set -x
 
 mypy readyapi
-ruff readyapi tests docs_src scripts
+ruff check readyapi tests docs_src scripts
 ruff format readyapi tests --check
