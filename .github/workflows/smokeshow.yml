@@ -24,11 +24,12 @@ jobs:
 
       - run: pip install smokeshow
 
-      - uses: dawidd6/action-download-artifact@v3.1.4
+      - uses: actions/download-artifact@v4
         with:
-          github_token: ${{ secrets.ORG_REPO_TOKEN }}
-          workflow: test.yml
-          commit: ${{ github.event.workflow_run.head_sha }}
+          name: coverage-html
+          path: htmlcov
+          github-token: ${{ secrets.ORG_REPO_TOKEN }}
+          run-id: ${{ github.event.workflow_run.id }}
 
       - run: smokeshow upload htmlcov
         env:
