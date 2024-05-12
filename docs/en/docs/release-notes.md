@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Readyapi cli. PR [#46](https://github.com/khulnasoft/readyapi/pull/46) by [@gitworkflows](https://github.com/gitworkflows).
 * Next version. PR [#43](https://github.com/khulnasoft/readyapi/pull/43) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 *  Changes to be committed:. PR [#42](https://github.com/khulnasoft/readyapi/pull/42) by [@NxPKG](https://github.com/NxPKG).
 * Nx pkg patch 1. PR [#41](https://github.com/khulnasoft/readyapi/pull/41) by [@NxPKG](https://github.com/NxPKG).
