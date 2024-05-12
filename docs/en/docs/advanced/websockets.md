@@ -72,7 +72,7 @@ If your file is named `main.py`, run your application with:
 <div class="termy">
 
 ```console
-$ uvicorn main:app --reload
+$ readyapi dev main.py
 
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```

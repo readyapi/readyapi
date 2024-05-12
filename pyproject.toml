@@ -53,6 +53,7 @@ Repository = "https://github.com/khulnasoft/readyapi"
 [project.optional-dependencies]
 
 standard = [
+    "readyapi-cli >=0.0.2",
     # For the test client
     "httpx >=0.23.0",
     # For templates
@@ -75,6 +76,7 @@ standard = [
 ]
 
 all = [
+    "readyapi-cli >=0.0.2",
     # # For the test client
     "httpx >=0.23.0",
     # For templates

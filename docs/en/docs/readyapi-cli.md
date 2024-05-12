@@ -1,18 +1,10 @@
-# Tutorial - User Guide
+# ReadyAPI CLI
 
-This tutorial shows you how to use **ReadyAPI** with most of its features, step by step.
+**ReadyAPI CLI** is a command line program `readyapi` that you can use to serve your ReadyAPI app, manage your ReadyAPI project, and more.
 
-Each section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.
+When you install ReadyAPI (e.g. with `pip install readyapi`), it includes a package called `readyapi-cli`, this package provides the `readyapi` command in the terminal.
 
-It is also built to work as a future reference.
-
-So you can come back and see exactly what you need.
-
-## Run the code
-
-All the code blocks can be copied and used directly (they are actually tested Python files).
-
-To run any of the examples, copy the code to a file `main.py`, and start `readyapi dev` with:
+To run your ReadyAPI app for development, you can use the `readyapi dev` command:
 
 <div class="termy">
 
@@ -58,42 +50,35 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 <font color="#4E9A06">INFO</font>:     Started server process [<font color="#06989A">2265873</font>]
 <font color="#4E9A06">INFO</font>:     Waiting for application startup.
 <font color="#4E9A06">INFO</font>:     Application startup complete.
-</pre>
 ```
 
 </div>
 
-It is **HIGHLY encouraged** that you write or copy the code, edit it and run it locally.
+That command line program called `readyapi` is **ReadyAPI CLI**.
 
-Using it in your editor is what really shows you the benefits of ReadyAPI, seeing how little code you have to write, all the type checks, autocompletion, etc.
+ReadyAPI CLI takes the path to your Python program and automatically detects the variable with the ReadyAPI (commonly named `app`) and how to import it, and then serves it.
 
----
+For production you would use `readyapi run` instead. 🚀
 
-## Install ReadyAPI
+Internally, **ReadyAPI CLI** uses <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, a high-performance, production-ready, ASGI server. 😎
 
-The first step is to install ReadyAPI:
+## `readyapi dev`
 
-<div class="termy">
+When you run `readyapi dev`, it will run on development mode.
 
-```console
-$ pip install readyapi
+By default, it will have **auto-reload** enabled, so it will automatically reload the server when you make changes to your code. This is resource intensive and could be less stable than without it, you should only use it for development.
 
----> 100%
-```
+By default it will listen on the IP address `127.0.0.1`, which is the IP for your machine to communicate with itself alone (`localhost`).
 
-</div>
+## `readyapi run`
 
-!!! note
-    When you install with `pip install readyapi` it comes with some default optional standard dependencies.
+When you run `readyapi run`, it will run on production mode by default.
 
-    If you don't want to have those optional dependencies, you can instead install `pip install readyapi-slim`.
+It will have **auto-reload disabled** by default.
 
-## Advanced User Guide
+It will listen on the IP address `0.0.0.0`, which means all the available IP addresses, this way it will be publicly accessible to anyone that can communicate with the machine. This is how you would normally run it in production, for example, in a container.
 
-There is also an **Advanced User Guide** that you can read later after this **Tutorial - User guide**.
+In most cases you would (and should) have a "termination proxy" handling HTTPS for you on top, this will depend on how you deploy your application, your provider might do this for you, or you might need to set it up yourself.
 
-The **Advanced User Guide**, builds on this, uses the same concepts, and teaches you some extra features.
-
-But you should first read the **Tutorial - User Guide** (what you are reading right now).
-
-It's designed so that you can build a complete application with just the **Tutorial - User Guide**, and then extend it in different ways, depending on your needs, using some of the additional ideas from the **Advanced User Guide**.
+!!! tip
+    You can learn more about it in the [deployment documentation](../deployment/index.md){.internal-link target=_blank}.
