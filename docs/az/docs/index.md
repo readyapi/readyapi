@@ -107,9 +107,9 @@ ReadyAPI Python 3.8+ ilə API yaratmaq üçün standart Python <abbr title="Tip 
 
 ## **Typer**, CLI-ların ReadyAPI-ı
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>-a baxa bilərsiniz.
+Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>-a baxa bilərsiniz.
 
 **Typer** ReadyAPI-ın kiçik qardaşıdır. Və o, CLI-lərin **ReadyAPI**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
 
@@ -120,7 +120,7 @@ Python 3.8+
 ReadyAPI nəhənglərin çiyinlərində dayanır:
 
 * Web tərəfi üçün <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>.
-* Data tərəfi üçün <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a>.
+* Data tərəfi üçün <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a>.
 
 ## Quraşdırma
 
@@ -452,7 +452,7 @@ Starlette tərəfindən istifadə olunanlar:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Əgər `TestClient` strukturundan istifadə edəcəksinizsə, tələb olunur.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Standart <abbr title="Şablon: Template">şablon</abbr> konfiqurasiyasından istifadə etmək istəyirsinizsə, tələb olunur.
-* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - `request.form()` ilə forma <abbr title="HTTP sorğusu ilə alınan string məlumatın Python obyektinə çevrilməsi">"çevirmə"</abbr> dəstəyindən istifadə etmək istəyirsinizsə, tələb olunur.
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - `request.form()` ilə forma <abbr title="HTTP sorğusu ilə alınan string məlumatın Python obyektinə çevrilməsi">"çevirmə"</abbr> dəstəyindən istifadə etmək istəyirsinizsə, tələb olunur.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` dəstəyi üçün tələb olunur.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - `SchemaGenerator` dəstəyi üçün tələb olunur (Çox güman ki, ReadyAPI istifadə edərkən buna ehtiyacınız olmayacaq).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse` istifadə etmək istəyirsinizsə, tələb olunur.

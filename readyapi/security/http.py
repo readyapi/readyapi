@@ -10,7 +10,7 @@ from readyapi.security.base import SecurityBase
 from readyapi.security.utils import get_authorization_scheme_param
 from starlette.requests import Request
 from starlette.status import HTTP_401_UNAUTHORIZED, HTTP_403_FORBIDDEN
-from typing_extensions import Annotated, Doc  # type: ignore [attr-defined]
+from typing_extensions import Annotated, Doc
 
 
 class HTTPBasicCredentials(BaseModel):

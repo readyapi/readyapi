@@ -1,5 +1,6 @@
 name: Deploy Docs
 on:
+  workflow_dispatch:
   workflow_run:
     workflows:
       - Build Docs
@@ -21,10 +22,10 @@ jobs:
           mkdir ./site
       - name: Download Artifact Docs
         id: download
-        uses: dawidd6/action-download-artifact@v3.0.0
+        uses: dawidd6/action-download-artifact@v3.1.4
         with:
           if_no_artifact_found: ignore
-          github_token: ${{ secrets.READYAPI_PREVIEW_DOCS_DOWNLOAD_ARTIFACTS }}
+          github_token: ${{ secrets.ORG_REPO_TOKEN }}
           workflow: build-docs.yml
           run_id: ${{ github.event.workflow_run.id }}
           name: docs-site
@@ -44,5 +45,5 @@ jobs:
         if: steps.deploy.outputs.url != ''
         uses: ./.github/actions/comment-docs-preview-in-pr
         with:
-          token: ${{ secrets.READYAPI_PREVIEW_DOCS_COMMENT_DEPLOY }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
           deploy_url: "${{ steps.deploy.outputs.url }}"

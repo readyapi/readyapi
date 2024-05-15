@@ -1,3 +1,12 @@
+---
+hide:
+  - navigation
+---
+
+<style>
+.md-content .md-typeset h1 { display: none; }
+</style>
+
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -31,7 +40,7 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 תכונות המפתח הן:
 
--   **מהירה**: ביצועים גבוהים מאוד, בקנה אחד עם NodeJS ו - Go (תודות ל - Starlette ו - Pydantic). [אחת מתשתיות הפייתון המהירות ביותר](#performance).
+-   **מהירה**: ביצועים גבוהים מאוד, בקנה אחד עם NodeJS ו - Go (תודות ל - Starlette ו - Pydantic). [אחת מתשתיות הפייתון המהירות ביותר](#_14).
 
 -   **מהירה לתכנות**: הגבירו את מהירות פיתוח התכונות החדשות בכ - %200 עד %300. \*
 -   **פחות שגיאות**: מנעו כ - %40 משגיאות אנוש (מפתחים). \*
@@ -102,9 +111,9 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 ## **Typer**, ה - ReadyAPI של ממשקי שורת פקודה (CLI).
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+אם אתם בונים אפליקציית <abbr title="ממשק שורת פקודה">CLI</abbr> לשימוש במסוף במקום ממשק רשת, העיפו מבט על <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **Typer** היא אחותה הקטנה של ReadyAPI. ומטרתה היא להיות ה - **ReadyAPI של ממשקי שורת פקודה**. ⌨️ 🚀
 
@@ -115,7 +124,7 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 ReadyAPI עומדת על כתפי ענקיות:
 
 -   <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> לחלקי הרשת.
--   <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> לחלקי המידע.
+-   <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> לחלקי המידע.
 
 ## התקנה
 
@@ -446,7 +455,7 @@ item: Item
 
 -   <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - דרוש אם ברצונכם להשתמש ב - `TestClient`.
 -   <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - דרוש אם ברצונכם להשתמש בברירת המחדל של תצורת הטמפלייטים.
--   <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - דרוש אם ברצונכם לתמוך ב <abbr title="המרת המחרוזת שמגיעה מבקשת HTTP למידע פייתון">"פרסור"</abbr> טפסים, באצמעות <code dir="ltr">request.form()</code>.
+-   <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - דרוש אם ברצונכם לתמוך ב <abbr title="המרת המחרוזת שמגיעה מבקשת HTTP למידע פייתון">"פרסור"</abbr> טפסים, באצמעות <code dir="ltr">request.form()</code>.
 -   <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - דרוש אם ברצונכם להשתמש ב - `SessionMiddleware`.
 -   <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - דרוש אם ברצונכם להשתמש ב - `SchemaGenerator` של Starlette (כנראה שאתם לא צריכים את זה עם ReadyAPI).
 -   <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - דרוש אם ברצונכם להשתמש ב - `UJSONResponse`.

@@ -47,7 +47,7 @@
 
     Если вы используете более старую версию, вы столкнётесь с ошибками при попытке использовать `Annotated`.
 
-    Убедитесь, что вы [обновили версию ReadyAPI](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} как минимум до 0.95.1 перед тем, как использовать `Annotated`.
+    Убедитесь, что вы [обновили версию ReadyAPI](../deployment/versions.md#readyapi_2){.internal-link target=_blank} как минимум до 0.95.1 перед тем, как использовать `Annotated`.
 
 ## Определите метаданные
 

@@ -4,7 +4,6 @@ from dirty_equals import IsDict
 from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI
 from readyapi.testclient import TestClient
-from readyapi.utils import match_pydantic_error_url
 
 app = ReadyAPI()
 
@@ -57,7 +56,6 @@ def test_no_duplicates_invalid():
                     "loc": ["body", "item2"],
                     "msg": "Field required",
                     "input": None,
-                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }

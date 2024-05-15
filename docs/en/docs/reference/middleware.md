@@ -2,8 +2,7 @@
 
 There are several middlewares available provided by Starlette directly.
 
-Read more about them in the
-[ReadyAPI docs for Middleware](https://readyapi.khulnasoft.com/advanced/middleware/).
+Read more about them in the [ReadyAPI docs for Middleware](https://readyapi.khulnasoft.com/advanced/middleware/).
 
 ::: readyapi.middleware.cors.CORSMiddleware
 

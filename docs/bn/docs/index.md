@@ -99,9 +99,9 @@ ReadyAPI একটি আধুনিক, দ্রুত ( বেশি ক্�
 
 ## **Typer**, CLI এর জন্য ReadyAPI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **টাইপার** হল ReadyAPI এর ছোট ভাইয়ের মত। এবং এটির উদ্দেশ্য ছিল **CLIs এর ReadyAPI** হওয়া। ⌨️ 🚀
 
@@ -112,7 +112,7 @@ Python 3.7+
 ReadyAPI কিছু দানবেদের কাঁধে দাঁড়িয়ে আছে:
 
 - <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> ওয়েব অংশের জন্য.
-- <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> ডেটা অংশগুলির জন্য.
+- <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> ডেটা অংশগুলির জন্য.
 
 ## ইনস্টলেশন প্রক্রিয়া
 
@@ -446,7 +446,7 @@ Pydantic দ্বারা ব্যবহৃত:
 
 - <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - আপনি যদি `TestClient` ব্যবহার করতে চান তাহলে আবশ্যক।
 - <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - আপনি যদি প্রদত্ত টেমপ্লেট রূপরেখা ব্যবহার করতে চান তাহলে প্রয়োজন।
-- <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - আপনি যদি ফর্ম সহায়তা করতে চান তাহলে প্রয়োজন <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, `request.form()` সহ।
+- <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - আপনি যদি ফর্ম সহায়তা করতে চান তাহলে প্রয়োজন <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, `request.form()` সহ।
 - <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` সহায়তার জন্য প্রয়োজন।
 - <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - স্টারলেটের SchemaGenerator সাপোর্ট এর জন্য প্রয়োজন (আপনার সম্ভাবত ReadyAPI প্রয়োজন নেই)।
 - <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - `GraphQLApp` সহায়তার জন্য প্রয়োজন।
