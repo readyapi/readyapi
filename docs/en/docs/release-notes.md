@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* ci: test. PR [#49](https://github.com/khulnasoft/readyapi/pull/49) by [@FortiShield](https://github.com/FortiShield).
 * 0.111.0. PR [#48](https://github.com/khulnasoft/readyapi/pull/48) by [@gitworkflows](https://github.com/gitworkflows).
 * Readyapi cli. PR [#46](https://github.com/khulnasoft/readyapi/pull/46) by [@gitworkflows](https://github.com/gitworkflows).
 * Next version. PR [#43](https://github.com/khulnasoft/readyapi/pull/43) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
