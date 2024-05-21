@@ -1,7 +1,8 @@
 from datetime import datetime, timedelta, timezone
 from typing import Annotated, List, Union
 
-from jose import JWTError, jwt
+import jwt
+from jwt.exceptions import InvalidTokenError
 from passlib.context import CryptContext
 from pydantic import BaseModel, ValidationError
 from readyapi import Depends, HTTPException, ReadyAPI, Security, status
@@ -120,7 +121,7 @@ async def get_current_user(
             raise credentials_exception
         token_scopes = payload.get("scopes", [])
         token_data = TokenData(scopes=token_scopes, username=username)
-    except (JWTError, ValidationError):
+    except (InvalidTokenError, ValidationError):
         raise credentials_exception
     user = get_user(fake_users_db, username=token_data.username)
     if user is None:
