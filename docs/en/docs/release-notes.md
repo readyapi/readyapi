@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* 👷 Update Smokeshow, fix sync download artifact and smokeshow configs. PR [#55](https://github.com/khulnasoft/readyapi/pull/55) by [@gitworkflows](https://github.com/gitworkflows).
 * 📝 Update JWT auth documentation to use PyJWT instead of pyhon-jose. PR [#53](https://github.com/khulnasoft/readyapi/pull/53) by [@gitworkflows](https://github.com/gitworkflows).
 * Fix typo in readyapi/applications.py. PR [#52](https://github.com/khulnasoft/readyapi/pull/52) by [@gitworkflows](https://github.com/gitworkflows).
 * Update requirements-docs.txt. PR [#50](https://github.com/khulnasoft/readyapi/pull/50) by [@FortiShield](https://github.com/FortiShield).
