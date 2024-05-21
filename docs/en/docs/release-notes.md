@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Fix typo in readyapi/applications.py. PR [#52](https://github.com/khulnasoft/readyapi/pull/52) by [@gitworkflows](https://github.com/gitworkflows).
 * Update requirements-docs.txt. PR [#50](https://github.com/khulnasoft/readyapi/pull/50) by [@FortiShield](https://github.com/FortiShield).
 * ci: test. PR [#49](https://github.com/khulnasoft/readyapi/pull/49) by [@FortiShield](https://github.com/FortiShield).
 * 0.111.0. PR [#48](https://github.com/khulnasoft/readyapi/pull/48) by [@gitworkflows](https://github.com/gitworkflows).
