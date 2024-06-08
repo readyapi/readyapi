@@ -233,7 +233,7 @@ You could **call** that same function in **other places** without ReadyAPI, and 
 
 When you don't use `Annotated` and instead use the **(old) default value style**, if you call that function without ReadyAPI in **other place**, you have to **remember** to pass the arguments to the function for it to work correctly, otherwise the values will be different from what you expect (e.g. `QueryInfo` or something similar instead of `str`). And your editor won't complain, and Python won't complain running that function, only when the operations inside error out.
 
-Because `Annotated` can have more than one metadata annotation, you could now even use the same function with other tools, like <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">Typer</a>. 🚀
+Because `Annotated` can have more than one metadata annotation, you could now even use the same function with other tools, like <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">Cligenius</a>. 🚀
 
 ## Add more validations
 
