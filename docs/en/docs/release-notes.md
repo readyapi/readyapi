@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump dawidd6/action-download-artifact from 4 to 5. PR [#59](https://github.com/khulnasoft/readyapi/pull/59) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump dawidd6/action-download-artifact from 3.1.4 to 4. PR [#58](https://github.com/khulnasoft/readyapi/pull/58) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Update main.py. PR [#56](https://github.com/khulnasoft/readyapi/pull/56) by [@NxPKG](https://github.com/NxPKG).
 * 👷 Update Smokeshow, fix sync download artifact and smokeshow configs. PR [#55](https://github.com/khulnasoft/readyapi/pull/55) by [@gitworkflows](https://github.com/gitworkflows).
