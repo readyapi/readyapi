@@ -194,14 +194,14 @@ $ python ./scripts/docs.py live
 
 👩‍🌾 📥 🎦 👆 ❔ ⚙️ ✍ `./scripts/docs.py` ⏮️ `python` 📋 🔗.
 
-✋️ 👆 💪 ⚙️ <a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">🏎 ✳</a>, &amp; 👆 🔜 🤚 ✍ 👆 📶 📋 ⏮️ ❎ 🛠️.
+✋️ 👆 💪 ⚙️ <a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">🏎 ✳</a>, &amp; 👆 🔜 🤚 ✍ 👆 📶 📋 ⏮️ ❎ 🛠️.
 
 🚥 👆 ❎ 🏎 ✳, 👆 💪 ❎ 🛠️ ⏮️:
 
 <div class="termy">
 
 ```console
-$ typer --install-completion
+$ cligenius --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.

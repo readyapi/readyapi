@@ -193,18 +193,18 @@ $ python ./scripts/docs.py live
 
 そうすることで、ドキュメント/ソースファイルを編集し、変更をライブで見ることができます。
 
-#### Typer CLI (任意)
+#### Cligenius CLI (任意)
 
 ここでは、`./scripts/docs.py`のスクリプトを`python`プログラムで直接使う方法を説明します。
 
-ですが<a href="https://typer.tiangolo.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>を使用して、インストール完了後にターミナルでの自動補完もできます。
+ですが<a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">Cligenius CLI</a>を使用して、インストール完了後にターミナルでの自動補完もできます。
 
-Typer CLIをインストールする場合、次のコマンドで補完をインストールできます:
+Cligenius CLIをインストールする場合、次のコマンドで補完をインストールできます:
 
 <div class="termy">
 
 ```console
-$ typer --install-completion
+$ cligenius --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.

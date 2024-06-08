@@ -114,13 +114,13 @@ Temel özellikleri şunlardır:
 
 ---
 
-## Komut Satırı Uygulamalarının ReadyAPI'ı: **Typer**
+## Komut Satırı Uygulamalarının ReadyAPI'ı: **Cligenius**
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>'a göz atabilirsiniz.
+Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>'a göz atabilirsiniz.
 
-**Typer** kısaca ReadyAPI'ın küçük kardeşi. Ve hedefi komut satırı uygulamalarının **ReadyAPI'ı** olmak. ⌨️ 🚀
+**Cligenius** kısaca ReadyAPI'ın küçük kardeşi. Ve hedefi komut satırı uygulamalarının **ReadyAPI'ı** olmak. ⌨️ 🚀
 
 ## Gereksinimler
 

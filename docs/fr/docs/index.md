@@ -114,13 +114,13 @@ Les principales fonctionnalités sont :
 
 ---
 
-## **Typer**, le ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>
+## **Cligenius**, le ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Si vous souhaitez construire une application <abbr title="Command Line Interface">CLI</abbr> utilisable dans un terminal au lieu d'une API web, regardez <a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>.
+Si vous souhaitez construire une application <abbr title="Command Line Interface">CLI</abbr> utilisable dans un terminal au lieu d'une API web, regardez <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** est le petit frère de ReadyAPI. Et il est destiné à être le **ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>**. ⌨️ 🚀
+**Cligenius** est le petit frère de ReadyAPI. Et il est destiné à être le **ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>**. ⌨️ 🚀
 
 ## Prérequis
 

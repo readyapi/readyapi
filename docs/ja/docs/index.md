@@ -106,13 +106,13 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以
 
 ---
 
-## **Typer**, the ReadyAPI of CLIs
+## **Cligenius**, the ReadyAPI of CLIs
 
-<a href="https://typer.tiangolo.com" target="_blank"><img src="https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-もし Web API の代わりにターミナルで使用する<abbr title="Command Line Interface">CLI</abbr>アプリを構築する場合は、<a href="https://typer.tiangolo.com/" class="external-link" target="_blank">**Typer**</a>を確認してください。
+もし Web API の代わりにターミナルで使用する<abbr title="Command Line Interface">CLI</abbr>アプリを構築する場合は、<a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>を確認してください。
 
-**Typer**は ReadyAPI の弟分です。そして、**CLI 版 の ReadyAPI**を意味しています。
+**Cligenius**は ReadyAPI の弟分です。そして、**CLI 版 の ReadyAPI**を意味しています。
 
 ## 必要条件
 
