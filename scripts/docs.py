@@ -11,11 +11,11 @@ from multiprocessing import Pool
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
+import cligenius
 import mkdocs.commands.build
 import mkdocs.commands.serve
 import mkdocs.config
 import mkdocs.utils
-import cligenius
 import yaml
 from jinja2 import Template
 
@@ -91,7 +91,9 @@ def new_lang(lang: str = cligenius.Argument(..., callback=lang_callback)):
     en_index_content = en_index_path.read_text(encoding="utf-8")
     new_index_content = f"{missing_translation_snippet}\n\n{en_index_content}"
     new_index_path.write_text(new_index_content, encoding="utf-8")
-    cligenius.secho(f"Successfully initialized: {new_path}", color=cligenius.colors.GREEN)
+    cligenius.secho(
+        f"Successfully initialized: {new_path}", color=cligenius.colors.GREEN
+    )
     update_languages()
 
 
@@ -130,7 +132,9 @@ def build_lang(
     subprocess.run(["mkdocs", "build", "--site-dir", build_site_dist_path], check=True)
     shutil.copytree(build_site_dist_path, dist_path, dirs_exist_ok=True)
     os.chdir(current_dir)
-    cligenius.secho(f"Successfully built docs for: {lang}", color=cligenius.colors.GREEN)
+    cligenius.secho(
+        f"Successfully built docs for: {lang}", color=cligenius.colors.GREEN
+    )
 
 
 index_sponsors_template = """
@@ -233,7 +237,9 @@ def serve() -> None:
     """
     cligenius.echo("Warning: this is a very simple server.")
     cligenius.echo("For development, use the command live instead.")
-    cligenius.echo("This is here only to preview a site with translations already built.")
+    cligenius.echo(
+        "This is here only to preview a site with translations already built."
+    )
     cligenius.echo("Make sure you run the build-all command first.")
     os.chdir("site")
     server_address = ("", 8008)
