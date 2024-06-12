@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* 📝 Restored Swagger-UI links to use the latest version possible.. PR [#62](https://github.com/khulnasoft/readyapi/pull/62) by [@FortiShield](https://github.com/FortiShield).
 * cligenius add. PR [#60](https://github.com/khulnasoft/readyapi/pull/60) by [@FortiShield](https://github.com/FortiShield).
 * ⬆ Bump dawidd6/action-download-artifact from 4 to 5. PR [#59](https://github.com/khulnasoft/readyapi/pull/59) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump dawidd6/action-download-artifact from 3.1.4 to 4. PR [#58](https://github.com/khulnasoft/readyapi/pull/58) by [@dependabot[bot]](https://github.com/apps/dependabot).
