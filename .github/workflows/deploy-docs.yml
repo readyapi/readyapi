@@ -25,7 +25,7 @@ jobs:
 
       - name: Download Artifact Docs
         id: download
-        uses: dawidd6/action-download-artifact@v5
+        uses: dawidd6/action-download-artifact@v6
         with:
           if_no_artifact_found: ignore
           github_token: ${{ secrets.ORG_REPO_TOKEN }}
