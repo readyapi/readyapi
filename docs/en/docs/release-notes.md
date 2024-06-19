@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.8.14 to 1.9.0. PR [#65](https://github.com/khulnasoft/readyapi/pull/65) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump dawidd6/action-download-artifact from 5 to 6. PR [#64](https://github.com/khulnasoft/readyapi/pull/64) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 📝 Restored Swagger-UI links to use the latest version possible.. PR [#62](https://github.com/khulnasoft/readyapi/pull/62) by [@FortiShield](https://github.com/FortiShield).
 * cligenius add. PR [#60](https://github.com/khulnasoft/readyapi/pull/60) by [@FortiShield](https://github.com/FortiShield).
