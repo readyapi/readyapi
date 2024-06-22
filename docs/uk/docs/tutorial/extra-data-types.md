@@ -36,7 +36,7 @@
 * `datetime.timedelta`:
     * Пайтонівський `datetime.timedelta`.
     * У запитах та відповідях буде представлений як `float` загальної кількості секунд.
-    * Pydantic також дозволяє представляти це як "ISO 8601 time diff encoding", <a href="https://docs.pydantic.dev/latest/concepts/serialization/#json_encoders" class="external-link" target="_blank">більше інформації дивись у документації</a>.
+    * Pydantic також дозволяє представляти це як "ISO 8601 time diff encoding", <a href="https://pydantic-docs.helpmanual.io/usage/exporting_models/#json_encoders" class="external-link" target="_blank">більше інформації дивись у документації</a>.
 * `frozenset`:
     * У запитах і відповідях це буде оброблено так само, як і `set`:
         * У запитах список буде зчитано, дублікати будуть видалені та він буде перетворений на `set`.
@@ -49,7 +49,7 @@
 * `Decimal`:
     * Стандартний Пайтонівський `Decimal`.
     * У запитах і відповідях це буде оброблено так само, як і `float`.
-* Ви можете перевірити всі дійсні типи даних Pydantic тут: <a href="https://docs.pydantic.dev/latest/concepts/types/" class="external-link" target="_blank">типи даних Pydantic</a>.
+* Ви можете перевірити всі дійсні типи даних Pydantic тут: <a href="https://pydantic-docs.helpmanual.io/usage/types" class="external-link" target="_blank">типи даних Pydantic</a>.
 
 ## Приклад
 
@@ -67,7 +67,7 @@
     {!> ../../../docs_src/extra_data_types/tutorial001_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="1  3  13-17"
     {!> ../../../docs_src/extra_data_types/tutorial001_an.py!}
@@ -82,7 +82,7 @@
     {!> ../../../docs_src/extra_data_types/tutorial001_py310.py!}
     ```
 
-=== "Python 3.8+ non-Annotated"
+=== "Python 3.6+ non-Annotated"
 
     !!! tip
         Бажано використовувати `Annotated` версію, якщо це можливо.
@@ -105,7 +105,7 @@
     {!> ../../../docs_src/extra_data_types/tutorial001_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="19-20"
     {!> ../../../docs_src/extra_data_types/tutorial001_an.py!}
@@ -120,7 +120,7 @@
     {!> ../../../docs_src/extra_data_types/tutorial001_py310.py!}
     ```
 
-=== "Python 3.8+ non-Annotated"
+=== "Python 3.6+ non-Annotated"
 
     !!! tip
         Бажано використовувати `Annotated` версію, якщо це можливо.

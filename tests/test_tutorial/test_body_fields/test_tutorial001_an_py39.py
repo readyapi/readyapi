@@ -1,6 +1,7 @@
 import pytest
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 from ...utils import needs_py39
 
@@ -61,6 +62,7 @@ def test_invalid_price(client: TestClient):
                     "msg": "Input should be greater than 0",
                     "input": -3.0,
                     "ctx": {"gt": 0.0},
+                    "url": match_pydantic_error_url("greater_than"),
                 }
             ]
         }

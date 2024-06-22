@@ -6,7 +6,7 @@ from pydantic.fields import FieldInfo
 from readyapi.openapi.models import Example
 from typing_extensions import Annotated, deprecated
 
-from ._compat import PYDANTIC_V2, PYDANTIC_VERSION, Undefined
+from ._compat import PYDANTIC_V2, Undefined
 
 _Unset: Any = Undefined
 
@@ -63,11 +63,12 @@ class Param(FieldInfo):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
     ):
+        self.deprecated = deprecated
         if example is not _Unset:
             warnings.warn(
                 "`example` has been deprecated, please use `examples` instead",
@@ -105,10 +106,6 @@ class Param(FieldInfo):
                 stacklevel=4,
             )
         current_json_schema_extra = json_schema_extra or extra
-        if PYDANTIC_VERSION < "2.7.0":
-            self.deprecated = deprecated
-        else:
-            kwargs["deprecated"] = deprecated
         if PYDANTIC_V2:
             kwargs.update(
                 {
@@ -177,7 +174,7 @@ class Path(Param):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
@@ -263,7 +260,7 @@ class Query(Param):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
@@ -348,7 +345,7 @@ class Header(Param):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
@@ -433,7 +430,7 @@ class Cookie(Param):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
@@ -517,13 +514,14 @@ class Body(FieldInfo):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
     ):
         self.embed = embed
         self.media_type = media_type
+        self.deprecated = deprecated
         if example is not _Unset:
             warnings.warn(
                 "`example` has been deprecated, please use `examples` instead",
@@ -561,10 +559,6 @@ class Body(FieldInfo):
                 stacklevel=4,
             )
         current_json_schema_extra = json_schema_extra or extra
-        if PYDANTIC_VERSION < "2.7.0":
-            self.deprecated = deprecated
-        else:
-            kwargs["deprecated"] = deprecated
         if PYDANTIC_V2:
             kwargs.update(
                 {
@@ -633,7 +627,7 @@ class Form(Body):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,
@@ -718,7 +712,7 @@ class File(Form):
             ),
         ] = _Unset,
         openapi_examples: Optional[Dict[str, Example]] = None,
-        deprecated: Union[deprecated, str, bool, None] = None,
+        deprecated: Optional[bool] = None,
         include_in_schema: bool = True,
         json_schema_extra: Union[Dict[str, Any], None] = None,
         **extra: Any,

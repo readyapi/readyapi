@@ -1,68 +1,8 @@
-# Run a Server Manually
+# Run a Server Manually - Uvicorn
 
-## Use the `readyapi run` Command
+The main thing you need to run a **ReadyAPI** application in a remote server machine is an ASGI server program like **Uvicorn**.
 
-In short, use `readyapi run` to serve your ReadyAPI application:
-
-<div class="termy">
-
-```console
-$ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:single">main.py</u>
-<font color="#3465A4">INFO    </font> Using path <font color="#3465A4">main.py</font>
-<font color="#3465A4">INFO    </font> Resolved absolute path <font color="#75507B">/home/user/code/awesomeapp/</font><font color="#AD7FA8">main.py</font>
-<font color="#3465A4">INFO    </font> Searching for package file structure from directories with <font color="#3465A4">__init__.py</font> files
-<font color="#3465A4">INFO    </font> Importing from <font color="#75507B">/home/user/code/</font><font color="#AD7FA8">awesomeapp</font>
-
- ╭─ <font color="#8AE234"><b>Python module file</b></font> ─╮
- │                      │
- │  🐍 main.py          │
- │                      │
- ╰──────────────────────╯
-
-<font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
-
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
- │                          │
- │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
- │                          │
- ╰──────────────────────────╯
-
-<font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
-
- <font color="#4E9A06">╭─────────── ReadyAPI CLI - Production mode ───────────╮</font>
- <font color="#4E9A06">│                                                     │</font>
- <font color="#4E9A06">│  Serving at: http://0.0.0.0:8000                    │</font>
- <font color="#4E9A06">│                                                     │</font>
- <font color="#4E9A06">│  API docs: http://0.0.0.0:8000/docs                 │</font>
- <font color="#4E9A06">│                                                     │</font>
- <font color="#4E9A06">│  Running in production mode, for development use:   │</font>
- <font color="#4E9A06">│                                                     │</font>
- <font color="#4E9A06">│  </font><font color="#8AE234"><b>readyapi dev</b></font><font color="#4E9A06">                                        │</font>
- <font color="#4E9A06">│                                                     │</font>
- <font color="#4E9A06">╰─────────────────────────────────────────────────────╯</font>
-
-<font color="#4E9A06">INFO</font>:     Started server process [<font color="#06989A">2306215</font>]
-<font color="#4E9A06">INFO</font>:     Waiting for application startup.
-<font color="#4E9A06">INFO</font>:     Application startup complete.
-<font color="#4E9A06">INFO</font>:     Uvicorn running on <b>http://0.0.0.0:8000</b> (Press CTRL+C to quit)
-```
-
-</div>
-
-That would work for most of the cases. 😎
-
-You could use that command for example to start your **ReadyAPI** app in a container, in a server, etc.
-
-## ASGI Servers
-
-Let's go a little deeper into the details.
-
-ReadyAPI uses a standard for building Python web frameworks and servers called <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>. ReadyAPI is an ASGI web framework.
-
-The main thing you need to run a **ReadyAPI** application (or any other ASGI application) in a remote server machine is an ASGI server program like **Uvicorn**, this is the one that comes by default in the `readyapi` command.
-
-There are several alternatives, including:
+There are 3 main alternatives:
 
 * <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: a high performance ASGI server.
 * <a href="https://pgjones.gitlab.io/hypercorn/" class="external-link" target="_blank">Hypercorn</a>: an ASGI server compatible with HTTP/2 and Trio among other features.
@@ -70,19 +10,17 @@ There are several alternatives, including:
 
 ## Server Machine and Server Program
 
-There's a small detail about names to keep in mind. 💡
+There's a small detail about names to have in mind. 💡
 
 The word "**server**" is commonly used to refer to both the remote/cloud computer (the physical or virtual machine) and also the program that is running on that machine (e.g. Uvicorn).
 
-Just keep in mind that when you read "server" in general, it could refer to one of those two things.
+Just have that in mind when you read "server" in general, it could refer to one of those two things.
 
 When referring to the remote machine, it's common to call it **server**, but also **machine**, **VM** (virtual machine), **node**. Those all refer to some type of remote machine, normally running Linux, where you run programs.
 
 ## Install the Server Program
 
-When you install ReadyAPI, it comes with a production server, Uvicorn, and you can start it with the `readyapi run` command.
-
-But you can also install an ASGI server manually:
+You can install an ASGI compatible server with:
 
 === "Uvicorn"
 
@@ -103,8 +41,6 @@ But you can also install an ASGI server manually:
 
         That including `uvloop`, the high-performance drop-in replacement for `asyncio`, that provides the big concurrency performance boost.
 
-        When you install ReadyAPI with something like `pip install readyapi` you already get `uvicorn[standard]` as well.
-
 === "Hypercorn"
 
     * <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, an ASGI server also compatible with HTTP/2.
@@ -123,7 +59,7 @@ But you can also install an ASGI server manually:
 
 ## Run the Server Program
 
-If you installed an ASGI server manually, you would normally need to pass an import string in a special format for it to import your ReadyAPI application:
+You can then run your application the same way you have done in the tutorials, but without the `--reload` option, e.g.:
 
 === "Uvicorn"
 
@@ -149,20 +85,8 @@ If you installed an ASGI server manually, you would normally need to pass an imp
 
     </div>
 
-!!! note
-    The command `uvicorn main:app` refers to:
-
-    * `main`: the file `main.py` (the Python "module").
-    * `app`: the object created inside of `main.py` with the line `app = ReadyAPI()`.
-
-    It is equivalent to:
-
-    ```Python
-    from main import app
-    ```
-
 !!! warning
-    Uvicorn and others support a `--reload` option that is useful during development.
+    Remember to remove the `--reload` option if you were using it.
 
     The `--reload` option consumes much more resources, is more unstable, etc.
 

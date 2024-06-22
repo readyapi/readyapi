@@ -1,12 +1,3 @@
----
-hide:
-  - navigation
----
-
-<style>
-.md-content .md-typeset h1 { display: none; }
-</style>
-
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -33,7 +24,7 @@ hide:
 
 ---
 
-ReadyAPI é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python 3.8 ou superior, baseado nos _type hints_ padrões do Python.
+ReadyAPI é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python 3.6 ou superior, baseado nos _type hints_ padrões do Python.
 
 Os recursos chave são:
 
@@ -99,22 +90,22 @@ Os recursos chave são:
 
 ---
 
-## **Cligenius**, o ReadyAPI das interfaces de linhas de comando
+## **Typer**, o ReadyAPI das interfaces de linhas de comando
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Se você estiver construindo uma aplicação <abbr title="Command Line Interface">_CLI_</abbr> para ser utilizada em um terminal ao invés de uma aplicação web, dê uma olhada no <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Se você estiver construindo uma aplicação <abbr title="Command Line Interface">_CLI_</abbr> para ser utilizada em um terminal ao invés de uma aplicação web, dê uma olhada no <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** é o irmão menor do ReadyAPI. E seu propósito é ser o **ReadyAPI das _CLIs_**. ⌨️ 🚀
+**Typer** é o irmão menor do ReadyAPI. E seu propósito é ser o **ReadyAPI das _CLIs_**. ⌨️ 🚀
 
 ## Requisitos
 
-Python 3.8+
+Python 3.7+
 
 ReadyAPI está nos ombros de gigantes:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> para as partes web.
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> para a parte de dados.
+* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> para a parte de dados.
 
 ## Instalação
 
@@ -325,7 +316,7 @@ Você faz com tipos padrão do Python moderno.
 
 Você não terá que aprender uma nova sintaxe, métodos ou classes de uma biblioteca específica etc.
 
-Apenas **Python 3.8+** padrão.
+Apenas **Python 3.6+** padrão.
 
 Por exemplo, para um `int`:
 
@@ -445,7 +436,7 @@ Usados por Starlette:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Necessário se você quiser utilizar o `TestClient`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Necessário se você quiser utilizar a configuração padrão de templates.
-* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Necessário se você quiser suporte com <abbr title="converte uma string que chega de uma requisição HTTP para dados Python">"parsing"</abbr> de formulário, com `request.form()`.
+* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Necessário se você quiser suporte com <abbr title="converte uma string que chega de uma requisição HTTP para dados Python">"parsing"</abbr> de formulário, com `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Necessário para suporte a `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Necessário para suporte a `SchemaGenerator` da Starlette (você provavelmente não precisará disso com o ReadyAPI).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Necessário para suporte a `GraphQLApp`.

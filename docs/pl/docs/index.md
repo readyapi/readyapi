@@ -1,12 +1,3 @@
----
-hide:
-  - navigation
----
-
-<style>
-.md-content .md-typeset h1 { display: none; }
-</style>
-
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -33,7 +24,7 @@ hide:
 
 ---
 
-ReadyAPI to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona 3.8+ bazujący na standardowym typowaniu Pythona.
+ReadyAPI to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona 3.6+ bazujący na standardowym typowaniu Pythona.
 
 Kluczowe cechy:
 
@@ -105,22 +96,22 @@ Kluczowe cechy:
 
 ---
 
-## **Cligenius**, ReadyAPI aplikacji konsolowych
+## **Typer**, ReadyAPI aplikacji konsolowych
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
+**Typer** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
 
 ## Wymagania
 
-Python 3.8+
+Python 3.7+
 
 ReadyAPI oparty jest na:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> dla części webowej.
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> dla części obsługujących dane.
+* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> dla części obsługujących dane.
 
 ## Instalacja
 
@@ -330,7 +321,7 @@ Robisz to tak samo jak ze standardowymi typami w Pythonie.
 
 Nie musisz sie uczyć żadnej nowej składni, metod lub klas ze specyficznych bibliotek itp.
 
-Po prostu standardowy **Python 3.8+**.
+Po prostu standardowy **Python 3.6+**.
 
 Na przykład, dla danych typu `int`:
 
@@ -451,7 +442,7 @@ Używane przez Starlette:
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Wymagane jeżeli chcesz korzystać z `TestClient`.
 * <a href="https://github.com/Tinche/aiofiles" target="_blank"><code>aiofiles</code></a> - Wymagane jeżeli chcesz korzystać z `FileResponse` albo `StaticFiles`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Wymagane jeżeli chcesz używać domyślnej konfiguracji szablonów.
-* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Wymagane jeżelich chcesz wsparcie <abbr title="przetwarzania stringa którzy przychodzi z żądaniem HTTP na dane używane przez Pythona">"parsowania"</abbr> formularzy, używając `request.form()`.
+* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Wymagane jeżelich chcesz wsparcie <abbr title="przetwarzania stringa którzy przychodzi z żądaniem HTTP na dane używane przez Pythona">"parsowania"</abbr> formularzy, używając `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Wymagany dla wsparcia `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Wymagane dla wsparcia `SchemaGenerator` z Starlette (z ReadyAPI prawdopodobnie tego nie potrzebujesz).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Wymagane dla wsparcia `GraphQLApp`.

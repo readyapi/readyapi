@@ -1,5 +1,6 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 from .main import app
 
@@ -17,6 +18,7 @@ def test_query():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -51,6 +53,7 @@ def test_query_not_declared_baz():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -97,6 +100,7 @@ def test_query_int():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -131,6 +135,7 @@ def test_query_int_query_42_5():
                     "loc": ["query", "query"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "42.5",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }
@@ -159,6 +164,7 @@ def test_query_int_query_baz():
                     "loc": ["query", "query"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "baz",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }
@@ -187,6 +193,7 @@ def test_query_int_not_declared_baz():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -227,6 +234,7 @@ def test_query_int_optional_query_foo():
                     "loc": ["query", "query"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "foo",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }
@@ -267,6 +275,7 @@ def test_query_int_default_query_foo():
                     "loc": ["query", "query"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "foo",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }
@@ -307,6 +316,7 @@ def test_query_param_required():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -341,6 +351,7 @@ def test_query_param_required_int():
                     "loc": ["query", "query"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -375,6 +386,7 @@ def test_query_param_required_int_query_foo():
                     "loc": ["query", "query"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "foo",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }
@@ -396,26 +408,3 @@ def test_query_frozenset_query_1_query_1_query_2():
     response = client.get("/query/frozenset/?query=1&query=1&query=2")
     assert response.status_code == 200
     assert response.json() == "1,2"
-
-
-def test_query_list():
-    response = client.get("/query/list/?device_ids=1&device_ids=2")
-    assert response.status_code == 200
-    assert response.json() == [1, 2]
-
-
-def test_query_list_empty():
-    response = client.get("/query/list/")
-    assert response.status_code == 422
-
-
-def test_query_list_default():
-    response = client.get("/query/list-default/?device_ids=1&device_ids=2")
-    assert response.status_code == 200
-    assert response.json() == [1, 2]
-
-
-def test_query_list_default_empty():
-    response = client.get("/query/list-default/")
-    assert response.status_code == 200
-    assert response.json() == []

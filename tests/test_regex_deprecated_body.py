@@ -2,6 +2,7 @@ import pytest
 from dirty_equals import IsDict
 from readyapi import Form, ReadyAPI
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 from typing_extensions import Annotated
 
 from .utils import needs_py310
@@ -13,7 +14,7 @@ def get_client():
 
         @app.post("/items/")
         async def read_items(
-            q: Annotated[str | None, Form(regex="^fixedquery$")] = None,
+            q: Annotated[str | None, Form(regex="^fixedquery$")] = None
         ):
             if q:
                 return f"Hello {q}"
@@ -54,6 +55,7 @@ def test_query_nonregexquery():
                     "msg": "String should match pattern '^fixedquery$'",
                     "input": "nonregexquery",
                     "ctx": {"pattern": "^fixedquery$"},
+                    "url": match_pydantic_error_url("string_pattern_mismatch"),
                 }
             ]
         }

@@ -5,6 +5,7 @@ from dirty_equals import HasRepr, IsDict, IsOneOf
 from readyapi import Depends, ReadyAPI
 from readyapi.exceptions import ResponseValidationError
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 from .utils import needs_pydanticv2
 
@@ -66,6 +67,7 @@ def test_validator_is_cloned(client: TestClient):
                 "msg": "Value error, name must end in A",
                 "input": "modelX",
                 "ctx": {"error": HasRepr("ValueError('name must end in A')")},
+                "url": match_pydantic_error_url("value_error"),
             }
         )
         | IsDict(

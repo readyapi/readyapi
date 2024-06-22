@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # ⚒
 
 ## ReadyAPI ⚒
@@ -179,7 +174,7 @@ ReadyAPI 🔌 📶 ⏩ ⚙️, ✋️ 📶 🏋️ <abbr title='also known as "c
 
 ## Pydantic ⚒
 
-**ReadyAPI** 🍕 🔗 ⏮️ (&amp; ⚓️ 🔛) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. , 🙆 🌖 Pydantic 📟 👆 ✔️, 🔜 👷.
+**ReadyAPI** 🍕 🔗 ⏮️ (&amp; ⚓️ 🔛) <a href="https://pydantic-docs.helpmanual.io" class="external-link" target="_blank"><strong>Pydantic</strong></a>. , 🙆 🌖 Pydantic 📟 👆 ✔️, 🔜 👷.
 
 ✅ 🔢 🗃 ⚓️ 🔛 Pydantic, <abbr title="Object-Relational Mapper">🐜</abbr>Ⓜ, <abbr title="Object-Document Mapper">🏭</abbr>Ⓜ 💽.
 
@@ -194,6 +189,8 @@ ReadyAPI 🔌 📶 ⏩ ⚙️, ✋️ 📶 🏋️ <abbr title='also known as "c
     * 🚥 👆 💭 🐍 🆎 👆 💭 ❔ ⚙️ Pydantic.
 * 🤾 🎆 ⏮️ 👆 **<abbr title="Integrated Development Environment, similar to a code editor">💾</abbr>/<abbr title="A program that checks for code errors">🧶</abbr>/🧠**:
     * ↩️ Pydantic 📊 📊 👐 🎓 👆 🔬; 🚘-🛠️, 🧽, ✍ &amp; 👆 🤔 🔜 🌐 👷 ☑ ⏮️ 👆 ✔ 💽.
+* **⏩**:
+    *  <a href="https://pydantic-docs.helpmanual.io/benchmarks/" class="external-link" target="_blank">📇</a> Pydantic ⏩ 🌘 🌐 🎏 💯 🗃.
 * ✔ **🏗 📊**:
     * ⚙️ 🔗 Pydantic 🏷, 🐍 `typing`'Ⓜ `List` &amp; `Dict`, ♒️.
     *  &amp; 💳 ✔ 🏗 💽 🔗 🎯 &amp; 💪 🔬, ✅ &amp; 📄 🎻 🔗.

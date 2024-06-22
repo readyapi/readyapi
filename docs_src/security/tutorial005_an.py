@@ -1,8 +1,7 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from typing import List, Union
 
-import jwt
-from jwt.exceptions import InvalidTokenError
+from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel, ValidationError
 from readyapi import Depends, HTTPException, ReadyAPI, Security, status
@@ -95,9 +94,9 @@ def authenticate_user(fake_db, username: str, password: str):
 def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
     to_encode = data.copy()
     if expires_delta:
-        expire = datetime.now(timezone.utc) + expires_delta
+        expire = datetime.utcnow() + expires_delta
     else:
-        expire = datetime.now(timezone.utc) + timedelta(minutes=15)
+        expire = datetime.utcnow() + timedelta(minutes=15)
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
@@ -122,7 +121,7 @@ async def get_current_user(
             raise credentials_exception
         token_scopes = payload.get("scopes", [])
         token_data = TokenData(scopes=token_scopes, username=username)
-    except (InvalidTokenError, ValidationError):
+    except (JWTError, ValidationError):
         raise credentials_exception
     user = get_user(fake_users_db, username=token_data.username)
     if user is None:
@@ -138,17 +137,17 @@ async def get_current_user(
 
 
 async def get_current_active_user(
-    current_user: Annotated[User, Security(get_current_user, scopes=["me"])],
+    current_user: Annotated[User, Security(get_current_user, scopes=["me"])]
 ):
     if current_user.disabled:
         raise HTTPException(status_code=400, detail="Inactive user")
     return current_user
 
 
-@app.post("/token")
+@app.post("/token", response_model=Token)
 async def login_for_access_token(
-    form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
-) -> Token:
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
     user = authenticate_user(fake_users_db, form_data.username, form_data.password)
     if not user:
         raise HTTPException(status_code=400, detail="Incorrect username or password")
@@ -157,19 +156,19 @@ async def login_for_access_token(
         data={"sub": user.username, "scopes": form_data.scopes},
         expires_delta=access_token_expires,
     )
-    return Token(access_token=access_token, token_type="bearer")
+    return {"access_token": access_token, "token_type": "bearer"}
 
 
 @app.get("/users/me/", response_model=User)
 async def read_users_me(
-    current_user: Annotated[User, Depends(get_current_active_user)],
+    current_user: Annotated[User, Depends(get_current_active_user)]
 ):
     return current_user
 
 
 @app.get("/users/me/items/")
 async def read_own_items(
-    current_user: Annotated[User, Security(get_current_active_user, scopes=["items"])],
+    current_user: Annotated[User, Security(get_current_active_user, scopes=["items"])]
 ):
     return [{"item_id": "Foo", "owner": current_user.username}]
 

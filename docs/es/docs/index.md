@@ -1,12 +1,3 @@
----
-hide:
-  - navigation
----
-
-<style>
-.md-content .md-typeset h1 { display: none; }
-</style>
-
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -32,7 +23,7 @@ hide:
 **Código Fuente**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
 
 ---
-ReadyAPI es un web framework moderno y rápido (de alto rendimiento) para construir APIs con Python 3.8+ basado en las anotaciones de tipos estándar de Python.
+ReadyAPI es un web framework moderno y rápido (de alto rendimiento) para construir APIs con Python 3.6+ basado en las anotaciones de tipos estándar de Python.
 
 Sus características principales son:
 
@@ -46,7 +37,7 @@ Sus características principales son:
 * **Robusto**: Crea código listo para producción con documentación automática interactiva.
 * **Basado en estándares**: Basado y totalmente compatible con los estándares abiertos para APIs: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (conocido previamente como Swagger) y <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
 
-<small>* Esta estimación está basada en pruebas con un equipo de desarrollo interno construyendo aplicaciones listas para producción.</small>
+<small>* Esta estimación está basada en pruebas con un equipo de desarrollo interno contruyendo aplicaciones listas para producción.</small>
 
 ## Sponsors
 
@@ -105,22 +96,22 @@ Sus características principales son:
 
 ---
 
-## **Cligenius**, el ReadyAPI de las CLIs
+## **Typer**, el ReadyAPI de las CLIs
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Si estás construyendo un app de <abbr title="Interfaz de línea de comandos en español">CLI</abbr> para ser usada en la terminal en vez de una API web, fíjate en <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Si estás construyendo un app de <abbr title="Interfaz de línea de comandos en español">CLI</abbr> para ser usada en la terminal en vez de una API web, fíjate en <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** es el hermano menor de ReadyAPI.  La intención es que sea el **ReadyAPI de las CLIs**. ⌨️ 🚀
+**Typer** es el hermano menor de ReadyAPI.  La intención es que sea el **ReadyAPI de las CLIs**. ⌨️ 🚀
 
 ## Requisitos
 
-Python 3.8+
+Python 3.7+
 
 ReadyAPI está sobre los hombros de gigantes:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> para las partes web.
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> para las partes de datos.
+* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> para las partes de datos.
 
 ## Instalación
 
@@ -304,11 +295,11 @@ Ahora ve a <a href="http://127.0.0.1:8000/docs" class="external-link" target="_b
 
 ![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-* Haz click en el botón de "Try it out" que te permite llenar los parámetros e interactuar directamente con la API:
+* Haz clíck en el botón de "Try it out" que te permite llenar los parámetros e interactuar directamente con la API:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
 
-* Luego haz click en el botón de "Execute". La interfaz de usuario se comunicará con tu API, enviará los parámetros y recibirá los resultados para mostrarlos en pantalla:
+* Luego haz clíck en el botón de "Execute". La interfaz de usuario se comunicará con tu API, enviará los parámetros y recibirá los resultados para mostrarlos en pantalla:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
 
@@ -326,9 +317,9 @@ En resumen, declaras los tipos de parámetros, body, etc. **una vez** como pará
 
 Lo haces con tipos modernos estándar de Python.
 
-No tienes que aprender una sintaxis nueva, los métodos o clases de una library específica, etc.
+No tienes que aprender una sintáxis nueva, los métodos o clases de una library específica, etc.
 
-Solo **Python 3.8+** estándar.
+Solo **Python 3.6+** estándar.
 
 Por ejemplo, para un `int`:
 
@@ -448,7 +439,7 @@ Usados por Starlette:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Requerido si quieres usar el `TestClient`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Requerido si quieres usar la configuración por defecto de templates.
-* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Requerido si quieres dar soporte a  <abbr title="convertir el string que viene de un HTTP request a datos de Python">"parsing"</abbr> de formularios, con `request.form()`.
+* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - Requerido si quieres dar soporte a  <abbr title="convertir el string que viene de un HTTP request a datos de Python">"parsing"</abbr> de formularios, con `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Requerido para dar soporte a `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Requerido para dar soporte al `SchemaGenerator` de Starlette (probablemente no lo necesites con ReadyAPI).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Requerido para dar soporte a `GraphQLApp`.

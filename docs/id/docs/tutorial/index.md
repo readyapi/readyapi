@@ -52,7 +52,7 @@ $ pip install "readyapi[all]"
 
 ...yang juga termasuk `uvicorn`, yang dapat kamu gunakan sebagai server yang menjalankan kodemu.
 
-!!! note "Catatan"
+!!! catatan
     Kamu juga dapat meng-installnya bagian demi bagian.
 
     Hal ini mungkin yang akan kamu lakukan ketika kamu hendak menyebarkan (men-deploy) aplikasimu ke tahap produksi:

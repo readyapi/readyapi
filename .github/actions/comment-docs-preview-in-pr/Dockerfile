@@ -1,8 +1,6 @@
-FROM python:3.10
+FROM python:3.9
 
-COPY ./requirements.txt /app/requirements.txt
-
-RUN pip install -r /app/requirements.txt
+RUN pip install httpx "pydantic==1.5.1" pygithub
 
 COPY ./app /app
 

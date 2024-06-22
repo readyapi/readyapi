@@ -1,5 +1,6 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 from docs_src.request_files.tutorial001 import app
 
@@ -28,6 +29,7 @@ def test_post_form_no_body():
                     "loc": ["body", "file"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -56,6 +58,7 @@ def test_post_body_json():
                     "loc": ["body", "file"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }

@@ -1,4 +1,4 @@
-# ~~Async SQL (Relational) Databases with Encode/Databases~~ (deprecated)
+# Async SQL (Relational) Databases with Encode/Databases
 
 !!! info
     These docs are about to be updated. 🎉
@@ -6,9 +6,6 @@
     The current version assumes Pydantic v1.
 
     The new docs will include Pydantic v2 and will use <a href="https://sqlmodel.khulnasoft.com/" class="external-link" target="_blank">SQLModel</a> once it is updated to use Pydantic v2 as well.
-
-!!! warning "Deprecated"
-    This tutorial is deprecated and will be removed in a future version.
 
 You can also use <a href="https://github.com/encode/databases" class="external-link" target="_blank">`encode/databases`</a> with **ReadyAPI** to connect to databases using `async` and `await`.
 
@@ -100,7 +97,7 @@ Create the *path operation function* to read notes:
 {!../../../docs_src/async_sql_databases/tutorial001.py!}
 ```
 
-!!! note
+!!! Note
     Notice that as we communicate with the database using `await`, the *path operation function* is declared with `async`.
 
 ### Notice the `response_model=List[Note]`
@@ -117,12 +114,7 @@ Create the *path operation function* to create notes:
 {!../../../docs_src/async_sql_databases/tutorial001.py!}
 ```
 
-!!! info
-    In Pydantic v1 the method was called `.dict()`, it was deprecated (but still supported) in Pydantic v2, and renamed to `.model_dump()`.
-
-    The examples here use `.dict()` for compatibility with Pydantic v1, but you should use `.model_dump()` instead if you can use Pydantic v2.
-
-!!! note
+!!! Note
     Notice that as we communicate with the database using `await`, the *path operation function* is declared with `async`.
 
 ### About `{**note.dict(), "id": last_record_id}`

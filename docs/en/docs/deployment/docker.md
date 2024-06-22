@@ -21,10 +21,10 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./app /code/app
 
-CMD ["readyapi", "run", "app/main.py", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 # If running behind a proxy like Nginx or Traefik add --proxy-headers
-# CMD ["readyapi", "run", "app/main.py", "--port", "80", "--proxy-headers"]
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers"]
 ```
 
 </details>
@@ -108,13 +108,14 @@ It would depend mainly on the tool you use to **install** those requirements.
 
 The most common way to do it is to have a file `requirements.txt` with the package names and their versions, one per line.
 
-You would of course use the same ideas you read in [About ReadyAPI versions](versions.md){.internal-link target=_blank} to set the ranges of versions.
+You would of course use the same ideas you read in [About ReadyAPI versions](./versions.md){.internal-link target=_blank} to set the ranges of versions.
 
 For example, your `requirements.txt` could look like:
 
 ```
-readyapi>=0.112.0,<0.113.0
-pydantic>=2.7.0,<3.0.0
+readyapi>=0.68.0,<0.69.0
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
 ```
 
 And you would normally install those package dependencies with `pip`, for example:
@@ -124,13 +125,15 @@ And you would normally install those package dependencies with `pip`, for exampl
 ```console
 $ pip install -r requirements.txt
 ---> 100%
-Successfully installed readyapi pydantic
+Successfully installed readyapi pydantic uvicorn
 ```
 
 </div>
 
 !!! info
     There are other formats and tools to define and install package dependencies.
+
+    I'll show you an example using Poetry later in a section below. 👇
 
 ### Create the **ReadyAPI** Code
 
@@ -177,7 +180,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
 
 # (6)
-CMD ["readyapi", "run", "app/main.py", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 1. Start from the official Python base image.
@@ -211,11 +214,13 @@ CMD ["readyapi", "run", "app/main.py", "--port", "80"]
 
     So, it's important to put this **near the end** of the `Dockerfile`, to optimize the container image build times.
 
-6. Set the **command** to use `readyapi run`, which uses Uvicorn underneath.
+6. Set the **command** to run the `uvicorn` server.
 
     `CMD` takes a list of strings, each of these strings is what you would type in the command line separated by spaces.
 
     This command will be run from the **current working directory**, the same `/code` directory you set above with `WORKDIR /code`.
+
+    Because the program will be started at `/code` and inside of it is the directory `./app` with your code, **Uvicorn** will be able to see and **import** `app` from `app.main`.
 
 !!! tip
     Review what each line does by clicking each number bubble in the code. 👆
@@ -233,10 +238,10 @@ You should now have a directory structure like:
 
 #### Behind a TLS Termination Proxy
 
-If you are running your container behind a TLS Termination Proxy (load balancer) like Nginx or Traefik, add the option `--proxy-headers`, this will tell Uvicorn (through the ReadyAPI CLI) to trust the headers sent by that proxy telling it that the application is running behind HTTPS, etc.
+If you are running your container behind a TLS Termination Proxy (load balancer) like Nginx or Traefik, add the option `--proxy-headers`, this will tell Uvicorn to trust the headers sent by that proxy telling it that the application is running behind HTTPS, etc.
 
 ```Dockerfile
-CMD ["readyapi", "run", "app/main.py", "--proxy-headers", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 #### Docker Cache
@@ -357,18 +362,18 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./main.py /code/
 
 # (2)
-CMD ["readyapi", "run", "main.py", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 1. Copy the `main.py` file to the `/code` directory directly (without any `./app` directory).
 
-2. Use `readyapi run` to serve your application in the single file `main.py`.
+2. Run Uvicorn and tell it to import the `app` object from `main` (instead of importing from `app.main`).
 
-When you pass the file to `readyapi run` it will detect automatically that it is a single file and not part of a package and will know how to import it and serve your ReadyAPI app. 😎
+Then adjust the Uvicorn command to use the new module `main` instead of `app.main` to import the ReadyAPI object `app`.
 
 ## Deployment Concepts
 
-Let's talk again about some of the same [Deployment Concepts](concepts.md){.internal-link target=_blank} in terms of containers.
+Let's talk again about some of the same [Deployment Concepts](./concepts.md){.internal-link target=_blank} in terms of containers.
 
 Containers are mainly a tool to simplify the process of **building and deploying** an application, but they don't enforce a particular approach to handle these **deployment concepts**, and there are several possible strategies.
 
@@ -509,7 +514,7 @@ If you have a simple setup, with a **single container** that then starts multipl
 
 ## Official Docker Image with Gunicorn - Uvicorn
 
-There is an official Docker image that includes Gunicorn running with Uvicorn workers, as detailed in a previous chapter: [Server Workers - Gunicorn with Uvicorn](server-workers.md){.internal-link target=_blank}.
+There is an official Docker image that includes Gunicorn running with Uvicorn workers, as detailed in a previous chapter: [Server Workers - Gunicorn with Uvicorn](./server-workers.md){.internal-link target=_blank}.
 
 This image would be useful mainly in the situations described above in: [Containers with Multiple Processes and Special Cases](#containers-with-multiple-processes-and-special-cases).
 
@@ -621,7 +626,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
 
 # (11)
-CMD ["readyapi", "run", "app/main.py", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 1. This is the first stage, it is named `requirements-stage`.
@@ -650,7 +655,7 @@ CMD ["readyapi", "run", "app/main.py", "--port", "80"]
 
 10. Copy the `app` directory to the `/code` directory.
 
-11. Use the `readyapi run` command to run your app.
+11. Run the `uvicorn` command, telling it to use the `app` object imported from `app.main`.
 
 !!! tip
     Click the bubble numbers to see what each line does.
@@ -672,7 +677,7 @@ Then in the next (and final) stage you would build the image more or less in the
 Again, if you are running your container behind a TLS Termination Proxy (load balancer) like Nginx or Traefik, add the option `--proxy-headers` to the command:
 
 ```Dockerfile
-CMD ["readyapi", "run", "app/main.py", "--proxy-headers", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "80"]
 ```
 
 ## Recap

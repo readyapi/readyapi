@@ -8,7 +8,7 @@ app = ReadyAPI()
 
 class Subscription(BaseModel):
     username: str
-    monthly_fee: float
+    montly_fee: float
     start_date: datetime
 
 

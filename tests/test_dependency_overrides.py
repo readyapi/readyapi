@@ -4,6 +4,7 @@ import pytest
 from dirty_equals import IsDict
 from readyapi import APIRouter, Depends, ReadyAPI
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 app = ReadyAPI()
 
@@ -62,6 +63,7 @@ def test_main_depends():
                     "loc": ["query", "q"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -108,6 +110,7 @@ def test_decorator_depends():
                     "loc": ["query", "q"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -148,6 +151,7 @@ def test_router_depends():
                     "loc": ["query", "q"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -194,6 +198,7 @@ def test_router_decorator_depends():
                     "loc": ["query", "q"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -280,6 +285,7 @@ def test_override_with_sub_main_depends():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -310,6 +316,7 @@ def test_override_with_sub__main_depends_q_foo():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -348,6 +355,7 @@ def test_override_with_sub_decorator_depends():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -378,6 +386,7 @@ def test_override_with_sub_decorator_depends_q_foo():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -416,6 +425,7 @@ def test_override_with_sub_router_depends():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -446,6 +456,7 @@ def test_override_with_sub_router_depends_q_foo():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -484,6 +495,7 @@ def test_override_with_sub_router_decorator_depends():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }
@@ -514,6 +526,7 @@ def test_override_with_sub_router_decorator_depends_q_foo():
                     "loc": ["query", "k"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 }
             ]
         }

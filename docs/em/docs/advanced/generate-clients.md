@@ -10,7 +10,7 @@
 
 ⚠ 🧰 <a href="https://openapi-generator.tech/" class="external-link" target="_blank">🗄 🚂</a>.
 
-🚥 👆 🏗 **🕸**, 📶 😌 🎛 <a href="https://github.com/hey-api/openapi-ts" class="external-link" target="_blank">🗄-📕-🇦🇪</a>.
+🚥 👆 🏗 **🕸**, 📶 😌 🎛 <a href="https://github.com/ferdikoomen/openapi-typescript-codegen" class="external-link" target="_blank">🗄-📕-🇦🇪</a>.
 
 ## 🏗 📕 🕸 👩‍💻
 
@@ -46,14 +46,14 @@
 
 🔜 👈 👥 ✔️ 📱 ⏮️ 🏷, 👥 💪 🏗 👩‍💻 📟 🕸.
 
-#### ❎ `openapi-ts`
+#### ❎ `openapi-typescript-codegen`
 
-👆 💪 ❎ `openapi-ts` 👆 🕸 📟 ⏮️:
+👆 💪 ❎ `openapi-typescript-codegen` 👆 🕸 📟 ⏮️:
 
 <div class="termy">
 
 ```console
-$ npm install @hey-api/openapi-ts --save-dev
+$ npm install openapi-typescript-codegen --save-dev
 
 ---> 100%
 ```
@@ -62,7 +62,7 @@ $ npm install @hey-api/openapi-ts --save-dev
 
 #### 🏗 👩‍💻 📟
 
-🏗 👩‍💻 📟 👆 💪 ⚙️ 📋 ⏸ 🈸 `openapi-ts` 👈 🔜 🔜 ❎.
+🏗 👩‍💻 📟 👆 💪 ⚙️ 📋 ⏸ 🈸 `openapi` 👈 🔜 🔜 ❎.
 
 ↩️ ⚫️ ❎ 🇧🇿 🏗, 👆 🎲 🚫🔜 💪 🤙 👈 📋 🔗, ✋️ 👆 🔜 🚮 ⚫️ 🔛 👆 `package.json` 📁.
 
@@ -75,12 +75,12 @@ $ npm install @hey-api/openapi-ts --save-dev
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-client": "openapi-ts --input http://localhost:8000/openapi.json --output ./src/client --client axios"
+    "generate-client": "openapi --input http://localhost:8000/openapi.json --output ./src/client --client axios"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.27.38",
+    "openapi-typescript-codegen": "^0.20.1",
     "typescript": "^4.6.2"
   }
 }
@@ -94,7 +94,7 @@ $ npm install @hey-api/openapi-ts --save-dev
 $ npm run generate-client
 
 frontend-app@1.0.0 generate-client /home/user/code/frontend-app
-> openapi-ts --input http://localhost:8000/openapi.json --output ./src/client --client axios
+> openapi --input http://localhost:8000/openapi.json --output ./src/client --client axios
 ```
 
 </div>
@@ -235,12 +235,12 @@ ReadyAPI ⚙️ **😍 🆔** 🔠 *➡ 🛠️*, ⚫️ ⚙️ **🛠️ 🆔**
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-client": "openapi-ts --input ./openapi.json --output ./src/client --client axios"
+    "generate-client": "openapi --input ./openapi.json --output ./src/client --client axios"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.27.38",
+    "openapi-typescript-codegen": "^0.20.1",
     "typescript": "^4.6.2"
   }
 }

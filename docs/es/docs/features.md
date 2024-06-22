@@ -1,60 +1,55 @@
----
-hide:
-  - navigation
----
+# Características
 
-# Features
+## Características de ReadyAPI
 
-## ReadyAPI features
+**ReadyAPI** te provee lo siguiente:
 
-**ReadyAPI** gives you the following:
+### Basado en estándares abiertos
 
-### Based on open standards
+* <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>OpenAPI</strong></a> para la creación de APIs, incluyendo declaraciones de  <abbr title="en español: ruta. En inglés también conocido cómo: endpoints, routes">path</abbr> <abbr title="también conocido como HTTP methods, cómo POST, GET, PUT, DELETE">operations</abbr>, parámetros, <abbr title="cuerpo del mensaje HTTP">body</abbr> requests, seguridad, etc.
+* Documentación automática del modelo de datos con <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>JSON Schema</strong></a> (dado que OpenAPI mismo está basado en JSON Schema).
+* Diseñado alrededor de estos estándares después de un estudio meticuloso. En vez de ser una capa añadida a último momento.
+* Esto también permite la **generación automática de código de cliente** para muchos lenguajes.
 
-* <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>OpenAPI</strong></a> for API creation, including declarations of <abbr title="also known as: endpoints, routes">path</abbr> <abbr title="also known as HTTP methods, as POST, GET, PUT, DELETE">operations</abbr>, parameters, body requests, security, etc.
-* Automatic data model documentation with <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>JSON Schema</strong></a> (as OpenAPI itself is based on JSON Schema).
-* Designed around these standards, after a meticulous study. Instead of an afterthought layer on top.
-* This also allows using automatic **client code generation** in many languages.
+### Documentación automática
 
-### Automatic docs
+Documentación interactiva de la API e interfaces web de exploración. Hay múltiples opciones, dos incluídas por defecto, porque el framework está basado en OpenAPI.
 
-Interactive API documentation and exploration web user interfaces. As the framework is based on OpenAPI, there are multiple options, 2 included by default.
-
-* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, with interactive exploration, call and test your API directly from the browser.
+* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, con exploración interactiva, llama y prueba tu API directamente desde tu navegador.
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-* Alternative API documentation with <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
+* Documentación alternativa de la API con <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
-### Just Modern Python
+### Simplemente Python moderno
 
-It's all based on standard **Python 3.6 type** declarations (thanks to Pydantic). No new syntax to learn. Just standard modern Python.
+Todo está basado en las declaraciones de tipo de **Python 3.6** estándar (gracias a Pydantic). No necesitas aprender una sintáxis nueva, solo Python moderno.
 
-If you need a 2 minute refresher of how to use Python types (even if you don't use ReadyAPI), check the short tutorial: [Python Types](python-types.md){.internal-link target=_blank}.
+Si necesitas un repaso de 2 minutos de cómo usar los tipos de Python (así no uses ReadyAPI) prueba el tutorial corto: [Python Types](python-types.md){.internal-link target=_blank}.
 
-You write standard Python with types:
+Escribes Python estándar con tipos así:
 
 ```Python
 from datetime import date
 
 from pydantic import BaseModel
 
-# Declare a variable as a str
-# and get editor support inside the function
+# Declaras la variable como un str
+# y obtienes soporte del editor dentro de la función
 def main(user_id: str):
     return user_id
 
 
-# A Pydantic model
+# Un modelo de Pydantic
 class User(BaseModel):
     id: int
     name: str
     joined: date
 ```
 
-That can then be used like:
+Este puede ser usado como:
 
 ```Python
 my_user: User = User(id=3, name="John Doe", joined="2018-07-19")
@@ -69,135 +64,138 @@ my_second_user: User = User(**second_user_data)
 ```
 
 !!! info
-    `**second_user_data` means:
+    `**second_user_data` significa:
 
-    Pass the keys and values of the `second_user_data` dict directly as key-value arguments, equivalent to: `User(id=4, name="Mary", joined="2018-11-30")`
+    Pasa las <abbr title="en español key se refiere a la guía de un diccionario">keys</abbr> y los valores del dict `second_user_data` directamente como argumentos de key-value, equivalente a: `User(id=4, name="Mary", joined="2018-11-30")`
 
-### Editor support
+### Soporte del editor
 
-All the framework was designed to be easy and intuitive to use, all the decisions were tested on multiple editors even before starting development, to ensure the best development experience.
+El framework fue diseñado en su totalidad para ser fácil e intuitivo de usar. Todas las decisiones fueron probadas en múltiples editores antes de comenzar el desarrollo para asegurar la mejor experiencia de desarrollo.
 
-In the last Python developer survey it was clear <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">that the most used feature is "autocompletion"</a>.
+En la última encuesta a desarrolladores de Python fue claro que <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">la característica más usada es el "autocompletado"</a>.
 
-The whole **ReadyAPI** framework is based to satisfy that. Autocompletion works everywhere.
+El framework **ReadyAPI** está creado para satisfacer eso. El autocompletado funciona en todas partes.
 
-You will rarely need to come back to the docs.
+No vas a tener que volver a la documentación seguido.
 
-Here's how your editor might help you:
+Así es como tu editor te puede ayudar:
 
-* in <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
+* en <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
 
-* in <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
+* en <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
 
-You will get completion in code you might even consider impossible before. As for example, the `price` key inside a JSON body (that could have been nested) that comes from a request.
+Obtendrás completado para tu código que podrías haber considerado imposible antes. Por ejemplo, el key `price` dentro del JSON body (que podría haber estado anidado) que viene de un request.
 
-No more typing the wrong key names, coming back and forth between docs, or scrolling up and down to find if you finally used `username` or `user_name`.
+Ya no pasará que escribas los nombres de key equivocados, o que tengas que revisar constantemente la documentación o desplazarte arriba y abajo para saber si usaste `username` o `user_name`.
 
-### Short
+### Corto
 
-It has sensible **defaults** for everything, with optional configurations everywhere. All the parameters can be fine-tuned to do what you need and to define the API you need.
+Tiene **configuraciones por defecto** razonables para todo, con configuraciones opcionales en todas partes. Todos los parámetros pueden ser ajustados para tus necesidades y las de tu API.
 
-But by default, it all **"just works"**.
+Pero, todo **simplemente funciona** por defecto.
 
-### Validation
+### Validación
 
-* Validation for most (or all?) Python **data types**, including:
-    * JSON objects (`dict`).
-    * JSON array (`list`) defining item types.
-    * String (`str`) fields, defining min and max lengths.
-    * Numbers (`int`, `float`) with min and max values, etc.
+* Validación para la mayoría (¿o todos?) los **tipos de datos** de Python incluyendo:
+    * Objetos JSON (`dict`).
+    * JSON array (`list`) definiendo tipos de ítem.
+    * Campos de texto (`str`) definiendo longitudes mínimas y máximas.
+    * Números (`int`, `float`) con valores mínimos y máximos, etc.
 
-* Validation for more exotic types, like:
+* Validación para tipos más exóticos como:
     * URL.
     * Email.
     * UUID.
-    * ...and others.
+    * ...y otros.
 
-All the validation is handled by the well-established and robust **Pydantic**.
+Toda la validación es manejada por **Pydantic**, que es robusto y sólidamente establecido.
 
-### Security and authentication
+### Seguridad y autenticación
 
-Security and authentication integrated. Without any compromise with databases or data models.
+La seguridad y la autenticación están integradas. Sin ningún compromiso con bases de datos ni modelos de datos.
 
-All the security schemes defined in OpenAPI, including:
+Todos los schemes de seguridad están definidos en OpenAPI incluyendo:
 
 * HTTP Basic.
-* **OAuth2** (also with **JWT tokens**). Check the tutorial on [OAuth2 with JWT](tutorial/security/oauth2-jwt.md){.internal-link target=_blank}.
-* API keys in:
+* **OAuth2** (también con **JWT tokens**). Prueba el tutorial en [OAuth2 with JWT](tutorial/security/oauth2-jwt.md){.internal-link target=_blank}.
+* API keys en:
     * Headers.
-    * Query parameters.
+    * Parámetros de Query.
     * Cookies, etc.
 
-Plus all the security features from Starlette (including **session cookies**).
+Más todas las características de seguridad de Starlette (incluyendo **session cookies**).
 
-All built as reusable tools and components that are easy to integrate with your systems, data stores, relational and NoSQL databases, etc.
+Todo ha sido construido como herramientas y componentes reutilizables que son fácilmente integrados con tus sistemas, almacenamiento de datos, bases de datos relacionales y no relacionales, etc.
 
 ### Dependency Injection
 
-ReadyAPI includes an extremely easy to use, but extremely powerful <abbr title='also known as "components", "resources", "services", "providers"'><strong>Dependency Injection</strong></abbr> system.
+ReadyAPI incluye un sistema de <abbr title='En español: Inyección de Dependencias. También conocido en inglés cómo: "components", "resources", "services", "providers"'><strong>Dependency Injection</strong></abbr> extremadamente poderoso y fácil de usar.
 
-* Even dependencies can have dependencies, creating a hierarchy or **"graph" of dependencies**.
-* All **automatically handled** by the framework.
-* All the dependencies can require data from requests and **augment the path operation** constraints and automatic documentation.
-* **Automatic validation** even for *path operation* parameters defined in dependencies.
-* Support for complex user authentication systems, **database connections**, etc.
-* **No compromise** with databases, frontends, etc. But easy integration with all of them.
+* Inclusive las dependencias pueden tener dependencias creando una jerarquía o un **"grafo" de dependencias**.
+* Todas son **manejadas automáticamente** por el framework.
+* Todas las dependencias pueden requerir datos de los requests y aumentar las restricciones del *path operation* y la documentación automática.
+* **Validación automática** inclusive para parámetros del *path operation* definidos en las dependencias.
+* Soporte para sistemas complejos de autenticación de usuarios, **conexiones con bases de datos**, etc.
+* **Sin comprometerse** con bases de datos, frontends, etc. Pero permitiendo integración fácil con todos ellos.
 
-### Unlimited "plug-ins"
+### "Plug-ins" ilimitados
 
-Or in other way, no need for them, import and use the code you need.
+O dicho de otra manera, no hay necesidad para "plug-ins". Importa y usa el código que necesites.
 
-Any integration is designed to be so simple to use (with dependencies) that you can create a "plug-in" for your application in 2 lines of code using the same structure and syntax used for your *path operations*.
+Cualquier integración está diseñada para que sea tan sencilla de usar (con dependencias) que puedas crear un "plug-in" para tu aplicación en dos líneas de código usando la misma estructura y sintáxis que usaste para tus *path operations*.
 
-### Tested
+### Probado
 
-* 100% <abbr title="The amount of code that is automatically tested">test coverage</abbr>.
-* 100% <abbr title="Python type annotations, with this your editor and external tools can give you better support">type annotated</abbr> code base.
-* Used in production applications.
+* <abbr title="La cantidad de código que es probado automáticamente">Cobertura de pruebas</abbr> al 100%.
+*  Base de código 100% <abbr title="Type annotations de Python, con esto tu editor y otras herramientas externas pueden darte mejor soporte">anotada con tipos</abbr>.
+* Usado en aplicaciones en producción.
 
-## Starlette features
+## Características de Starlette
 
-**ReadyAPI** is fully compatible with (and based on) <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>. So, any additional Starlette code you have, will also work.
+**ReadyAPI** está basado y es completamente compatible con <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>. Tanto así, que cualquier código de Starlette que tengas también funcionará.
 
-`ReadyAPI` is actually a sub-class of `Starlette`. So, if you already know or use Starlette, most of the functionality will work the same way.
+`ReadyAPI` es realmente una sub-clase de `Starlette`. Así que, si ya conoces o usas Starlette, muchas de las características funcionarán de la misma manera.
 
-With **ReadyAPI** you get all of **Starlette**'s features (as ReadyAPI is just Starlette on steroids):
+Con **ReadyAPI** obtienes todas las características de **Starlette** (porque ReadyAPI es simplemente Starlette en esteroides):
 
-* Seriously impressive performance. It is <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">one of the fastest Python frameworks available, on par with **NodeJS** and **Go**</a>.
-* **WebSocket** support.
-* In-process background tasks.
-* Startup and shutdown events.
-* Test client built on HTTPX.
+* Desempeño realmente impresionante. Es uno <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank"> de los frameworks de Python más rápidos, a la par con **NodeJS** y **Go**</a>.
+* Soporte para **WebSocket**.
+* Soporte para **GraphQL**.
+* <abbr title="En español: tareas que se ejecutan en el fondo, sin frenar requests, en el mismo proceso. En ingles: In-process background tasks">Tareas en background</abbr>.
+* Eventos de startup y shutdown.
+* Cliente de pruebas construido con HTTPX.
 * **CORS**, GZip, Static Files, Streaming responses.
-* **Session and Cookie** support.
-* 100% test coverage.
-* 100% type annotated codebase.
+* Soporte para **Session and Cookie**.
+* Cobertura de pruebas al 100%.
+* Base de código 100% anotada con tipos.
 
-## Pydantic features
+## Características de Pydantic
 
-**ReadyAPI** is fully compatible with (and based on) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. So, any additional Pydantic code you have, will also work.
+**ReadyAPI** está basado y es completamente compatible con <a href="https://pydantic-docs.helpmanual.io" class="external-link" target="_blank"><strong>Pydantic</strong></a>. Tanto así, que cualquier código de Pydantic que tengas también funcionará.
 
-Including external libraries also based on Pydantic, as <abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s for databases.
+Esto incluye a librerías externas basadas en Pydantic como <abbr title="Object-Relational Mapper">ORM</abbr>s y <abbr title="Object-Document Mapper">ODM</abbr>s para bases de datos.
 
-This also means that in many cases you can pass the same object you get from a request **directly to the database**, as everything is validated automatically.
+Esto también significa que en muchos casos puedes pasar el mismo objeto que obtuviste de un request **directamente a la base de datos**, dado que todo es validado automáticamente.
 
-The same applies the other way around, in many cases you can just pass the object you get from the database **directly to the client**.
+Lo mismo aplica para el sentido contrario. En muchos casos puedes pasarle el objeto que obtienes de la base de datos **directamente al cliente**.
 
-With **ReadyAPI** you get all of **Pydantic**'s features (as ReadyAPI is based on Pydantic for all the data handling):
+Con **ReadyAPI** obtienes todas las características de **Pydantic** (dado que ReadyAPI está basado en Pydantic para todo el manejo de datos):
 
-* **No brainfuck**:
-    * No new schema definition micro-language to learn.
-    * If you know Python types you know how to use Pydantic.
-* Plays nicely with your **<abbr title="Integrated Development Environment, similar to a code editor">IDE</abbr>/<abbr title="A program that checks for code errors">linter</abbr>/brain**:
-    * Because pydantic data structures are just instances of classes you define; auto-completion, linting, mypy and your intuition should all work properly with your validated data.
-* Validate **complex structures**:
-    * Use of hierarchical Pydantic models, Python `typing`’s `List` and `Dict`, etc.
-    * And validators allow complex data schemas to be clearly and easily defined, checked and documented as JSON Schema.
-    * You can have deeply **nested JSON** objects and have them all validated and annotated.
+* **Sin dificultades para entender**:
+    * No necesitas aprender un nuevo micro-lenguaje de definición de schemas.
+    * Si sabes tipos de Python, sabes cómo usar Pydantic.
+* Interactúa bien con tu **<abbr title="en inglés: Integrated Development Environment, similar a editor de código">IDE</abbr>/<abbr title="Un programa que chequea errores en el código">linter</abbr>/cerebro**:
+    * Porque las estructuras de datos de Pydantic son solo <abbr title='En español: ejemplares. Aunque a veces los llaman incorrectamente "instancias"'>instances</abbr> de clases que tu defines, el auto-completado, el linting, mypy y tu intuición deberían funcionar bien con tus datos validados.
+* **Rápido**:
+    * En <a href="https://pydantic-docs.helpmanual.io/benchmarks/" class="external-link" target="_blank">benchmarks</a> Pydantic es más rápido que todas las otras <abbr title='Herramienta, paquete. A veces llamado "librería"'>libraries</abbr> probadas.
+* Valida **estructuras complejas**:
+    * Usa modelos jerárquicos de modelos de Pydantic, `typing` de Python,  `List` y `Dict`, etc.
+    * Los validadores también permiten que se definan fácil y claramente schemas complejos de datos. Estos son chequeados y documentados como JSON Schema.
+    * Puedes tener objetos de **JSON profundamente anidados** y que todos sean validados y anotados.
 * **Extensible**:
-    * Pydantic allows custom data types to be defined or you can extend validation with methods on a model decorated with the validator decorator.
-* 100% test coverage.
+    * Pydantic permite que se definan tipos de datos a la medida o puedes extender la validación con métodos en un modelo decorado con el <abbr title="en inglés: validator decorator"> decorador de validación</abbr>.
+* Cobertura de pruebas al 100%.

@@ -8,7 +8,7 @@ from . import config
 app = ReadyAPI()
 
 
-@lru_cache
+@lru_cache()
 def get_settings():
     return config.Settings()
 

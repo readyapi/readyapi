@@ -1,5 +1,6 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 from docs_src.dependencies.tutorial012_an import app
 
@@ -17,12 +18,14 @@ def test_get_no_headers_items():
                     "loc": ["header", "x-token"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 },
                 {
                     "type": "missing",
                     "loc": ["header", "x-key"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 },
             ]
         }
@@ -56,12 +59,14 @@ def test_get_no_headers_users():
                     "loc": ["header", "x-token"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 },
                 {
                     "type": "missing",
                     "loc": ["header", "x-key"],
                     "msg": "Field required",
                     "input": None,
+                    "url": match_pydantic_error_url("missing"),
                 },
             ]
         }

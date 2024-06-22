@@ -14,3 +14,4 @@
 
 * <a href="https://docs.platform.sh/languages/python.html?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" class="external-link" target="_blank">Platform.sh</a>
 * <a href="https://docs.porter.run/language-specific-guides/readyapi" class="external-link" target="_blank">Porter</a>
+* <a href="https://www.deta.sh/?ref=readyapi" class="external-link" target="_blank">Deta</a>

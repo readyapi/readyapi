@@ -9,21 +9,79 @@ Here's an incomplete list of some of them.
 !!! tip
     If you have an article, project, tool, or anything related to **ReadyAPI** that is not yet listed here, create a <a href="https://github.com/khulnasoft/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">Pull Request adding it</a>.
 
-{% for section_name, section_content in external_links.items() %}
+## Articles
 
-## {{ section_name }}
+### English
 
-{% for lang_name, lang_content in section_content.items() %}
+{% if external_links %}
+{% for article in external_links.articles.english %}
 
-### {{ lang_name }}
-
-{% for item in lang_content %}
-
-* <a href="{{ item.link }}" class="external-link" target="_blank">{{ item.title }}</a> by <a href="{{ item.author_link }}" class="external-link" target="_blank">{{ item.author }}</a>.
-
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
 {% endfor %}
+{% endif %}
+
+### Japanese
+
+{% if external_links %}
+{% for article in external_links.articles.japanese %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
 {% endfor %}
+{% endif %}
+
+### Vietnamese
+
+{% if external_links %}
+{% for article in external_links.articles.vietnamese %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
 {% endfor %}
+{% endif %}
+
+### Russian
+
+{% if external_links %}
+{% for article in external_links.articles.russian %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
+{% endfor %}
+{% endif %}
+
+### German
+
+{% if external_links %}
+{% for article in external_links.articles.german %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
+{% endfor %}
+{% endif %}
+
+### Taiwanese
+
+{% if external_links %}
+{% for article in external_links.articles.taiwanese %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
+{% endfor %}
+{% endif %}
+
+## Podcasts
+
+{% if external_links %}
+{% for article in external_links.podcasts.english %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
+{% endfor %}
+{% endif %}
+
+## Talks
+
+{% if external_links %}
+{% for article in external_links.talks.english %}
+
+* <a href="{{ article.link }}" class="external-link" target="_blank">{{ article.title }}</a> by <a href="{{ article.author_link }}" class="external-link" target="_blank">{{ article.author }}</a>.
+{% endfor %}
+{% endif %}
 
 ## Projects
 

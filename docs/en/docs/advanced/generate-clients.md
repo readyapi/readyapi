@@ -10,7 +10,7 @@ There are many tools to generate clients from **OpenAPI**.
 
 A common tool is <a href="https://openapi-generator.tech/" class="external-link" target="_blank">OpenAPI Generator</a>.
 
-If you are building a **frontend**, a very interesting alternative is <a href="https://github.com/hey-api/openapi-ts" class="external-link" target="_blank">openapi-ts</a>.
+If you are building a **frontend**, a very interesting alternative is <a href="https://github.com/ferdikoomen/openapi-typescript-codegen" class="external-link" target="_blank">openapi-typescript-codegen</a>.
 
 ## Client and SDK Generators - Sponsor
 
@@ -20,9 +20,10 @@ Some of them also ✨ [**sponsor ReadyAPI**](../help-readyapi.md#sponsor-the-aut
 
 And it shows their true commitment to ReadyAPI and its **community** (you), as they not only want to provide you a **good service** but also want to make sure you have a **good and healthy framework**, ReadyAPI. 🙇
 
-For example, you might want to try <a href="https://speakeasyapi.dev/?utm_source=readyapi+repo&utm_medium=github+sponsorship" class="external-link" target="_blank">Speakeasy</a>.
+You might want to try their services and follow their guides:
 
-There are also several other companies offering similar services that you can search and find online. 🤓
+* <a href="https://www.buildwithfern.com/?utm_source=khulnasoft&utm_medium=website&utm_campaign=docs-generate-clients" class="external-link" target="_blank">Fern</a>
+* <a href="https://speakeasyapi.dev/?utm_source=readyapi+repo&utm_medium=github+sponsorship" class="external-link" target="_blank">Speakeasy</a>
 
 ## Generate a TypeScript Frontend Client
 
@@ -34,7 +35,7 @@ Let's start with a simple ReadyAPI application:
     {!> ../../../docs_src/generate_clients/tutorial001_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="9-11  14-15  18  19  23"
     {!> ../../../docs_src/generate_clients/tutorial001.py!}
@@ -58,14 +59,14 @@ And that same information from the models that is included in OpenAPI is what ca
 
 Now that we have the app with the models, we can generate the client code for the frontend.
 
-#### Install `openapi-ts`
+#### Install `openapi-typescript-codegen`
 
-You can install `openapi-ts` in your frontend code with:
+You can install `openapi-typescript-codegen` in your frontend code with:
 
 <div class="termy">
 
 ```console
-$ npm install @hey-api/openapi-ts --save-dev
+$ npm install openapi-typescript-codegen --save-dev
 
 ---> 100%
 ```
@@ -74,7 +75,7 @@ $ npm install @hey-api/openapi-ts --save-dev
 
 #### Generate Client Code
 
-To generate the client code you can use the command line application `openapi-ts` that would now be installed.
+To generate the client code you can use the command line application `openapi` that would now be installed.
 
 Because it is installed in the local project, you probably wouldn't be able to call that command directly, but you would put it on your `package.json` file.
 
@@ -87,12 +88,12 @@ It could look like this:
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-client": "openapi-ts --input http://localhost:8000/openapi.json --output ./src/client --client axios"
+    "generate-client": "openapi --input http://localhost:8000/openapi.json --output ./src/client --client axios"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.27.38",
+    "openapi-typescript-codegen": "^0.20.1",
     "typescript": "^4.6.2"
   }
 }
@@ -106,7 +107,7 @@ After having that NPM `generate-client` script there, you can run it with:
 $ npm run generate-client
 
 frontend-app@1.0.0 generate-client /home/user/code/frontend-app
-> openapi-ts --input http://localhost:8000/openapi.json --output ./src/client --client axios
+> openapi --input http://localhost:8000/openapi.json --output ./src/client --client axios
 ```
 
 </div>
@@ -146,7 +147,7 @@ For example, you could have a section for **items** and another section for **us
     {!> ../../../docs_src/generate_clients/tutorial002_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="23  28  36"
     {!> ../../../docs_src/generate_clients/tutorial002.py!}
@@ -203,7 +204,7 @@ You can then pass that custom function to **ReadyAPI** as the `generate_unique_i
     {!> ../../../docs_src/generate_clients/tutorial003_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="8-9  12"
     {!> ../../../docs_src/generate_clients/tutorial003.py!}
@@ -229,17 +230,9 @@ But for the generated client we could **modify** the OpenAPI operation IDs right
 
 We could download the OpenAPI JSON to a file `openapi.json` and then we could **remove that prefixed tag** with a script like this:
 
-=== "Python"
-
-    ```Python
-    {!> ../../../docs_src/generate_clients/tutorial004.py!}
-    ```
-
-=== "Node.js"
-
-    ```Javascript
-    {!> ../../../docs_src/generate_clients/tutorial004.js!}
-    ```
+```Python
+{!../../../docs_src/generate_clients/tutorial004.py!}
+```
 
 With that, the operation IDs would be renamed from things like `items-get_items` to just `get_items`, that way the client generator can generate simpler method names.
 
@@ -254,12 +247,12 @@ Now as the end result is in a file `openapi.json`, you would modify the `package
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-client": "openapi-ts --input ./openapi.json --output ./src/client --client axios"
+    "generate-client": "openapi --input ./openapi.json --output ./src/client --client axios"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.27.38",
+    "openapi-typescript-codegen": "^0.20.1",
     "typescript": "^4.6.2"
   }
 }
@@ -271,7 +264,7 @@ After generating the new client, you would now have **clean method names**, with
 
 ## Benefits
 
-When using the automatically generated clients you would get **autocompletion** for:
+When using the automatically generated clients you would **autocompletion** for:
 
 * Methods.
 * Request payloads in the body, query parameters, etc.

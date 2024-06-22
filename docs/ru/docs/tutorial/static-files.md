@@ -11,7 +11,7 @@
 {!../../../docs_src/static_files/tutorial001.py!}
 ```
 
-!!! note "Технические детали"
+!!! заметка "Технические детали"
     Вы также можете использовать `from starlette.staticfiles import StaticFiles`.
 
     **ReadyAPI** предоставляет `starlette.staticfiles` под псевдонимом `readyapi.staticfiles`, просто для вашего удобства, как разработчика. Но на самом деле это берётся напрямую из библиотеки Starlette.

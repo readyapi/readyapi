@@ -1,16 +1,9 @@
-import pytest
-from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
 
-
-@pytest.fixture(name="app", scope="module")
-def get_app():
-    with pytest.warns(DeprecationWarning):
-        from docs_src.events.tutorial002 import app
-    yield app
+from docs_src.events.tutorial002 import app
 
 
-def test_events(app: ReadyAPI):
+def test_events():
     with TestClient(app) as client:
         response = client.get("/items/")
         assert response.status_code == 200, response.text
@@ -19,7 +12,7 @@ def test_events(app: ReadyAPI):
         assert "Application shutdown" in log.read()
 
 
-def test_openapi_schema(app: ReadyAPI):
+def test_openapi_schema():
     with TestClient(app) as client:
         response = client.get("/openapi.json")
         assert response.status_code == 200, response.text

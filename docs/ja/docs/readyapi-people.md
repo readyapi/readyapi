@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # ReadyAPI People
 
 ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴らしいコミュニティがあります。
@@ -24,7 +19,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 {% endif %}
 
-私は **ReadyAPI** の作成者および Maintainer です。詳しくは [ReadyAPIを応援 - ヘルプの入手 - 開発者とつながる](help-readyapi.md#_1){.internal-link target=_blank} に記載しています。
+私は **ReadyAPI** の作成者および Maintainer です。詳しくは [ReadyAPIを応援 - ヘルプの入手 - 開発者とつながる](help-readyapi.md#開発者とつながる){.internal-link target=_blank} に記載しています。
 
 ...ところで、ここではコミュニティを紹介したいと思います。
 
@@ -34,19 +29,19 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 紹介するのは次のような人々です:
 
-* [GitHub issuesで他の人を助ける](help-readyapi.md#github-issues){.internal-link target=_blank}。
+* [GitHub issuesで他の人を助ける](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank}。
 * [プルリクエストをする](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}。
-* プルリクエストのレビューをする ([特に翻訳に重要](contributing.md#_8){.internal-link target=_blank})。
+* プルリクエストのレビューをする ([特に翻訳に重要](contributing.md#translations){.internal-link target=_blank})。
 
 彼らに大きな拍手を。👏 🙇
 
 ## 先月最もアクティブだったユーザー
 
-彼らは、先月の[GitHub issuesで最も多くの人を助けた](help-readyapi.md#github-issues){.internal-link target=_blank}ユーザーです。☕
+彼らは、先月の[GitHub issuesで最も多くの人を助けた](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank}ユーザーです。☕
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.last_month_experts[:10] %}
+{% for user in people.last_month_active %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
@@ -58,13 +53,13 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 **ReadyAPI experts** を紹介します。🤓
 
-彼らは、*これまでに* [GitHub issuesで最も多くの人を助けた](help-readyapi.md#github-issues){.internal-link target=_blank}ユーザーです。
+彼らは、*これまでに* [GitHub issuesで最も多くの人を助けた](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank}ユーザーです。
 
 多くの人を助けることでexpertsであると示されています。✨
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.experts[:50] %}
+{% for user in people.experts %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
@@ -82,7 +77,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_contributors[:50] %}
+{% for user in people.top_contributors %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Pull Requests: {{ user.count }}</div></div>
 {% endfor %}
@@ -98,7 +93,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 ### 翻訳のレビュー
 
-私は少しの言語しか話せません (もしくはあまり上手ではありません😅)。したがって、reviewers は、ドキュメントの[**翻訳を承認する権限**](contributing.md#_8){.internal-link target=_blank}を持っています。それらがなければ、いくつかの言語のドキュメントはなかったでしょう。
+私は少しの言語しか話せません (もしくはあまり上手ではありません😅)。したがって、reviewers は、ドキュメントの[**翻訳を承認する権限**](contributing.md#translations){.internal-link target=_blank}を持っています。それらがなければ、いくつかの言語のドキュメントはなかったでしょう。
 
 ---
 
@@ -106,7 +101,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_translations_reviewers[:50] %}
+{% for user in people.top_reviewers %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Reviews: {{ user.count }}</div></div>
 {% endfor %}

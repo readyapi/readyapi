@@ -1,6 +1,6 @@
 import inspect
-from contextlib import AsyncExitStack, contextmanager
-from copy import copy, deepcopy
+from contextlib import contextmanager
+from copy import deepcopy
 from typing import (
     Any,
     Callable,
@@ -45,8 +45,8 @@ from readyapi._compat import (
     serialize_sequence_value,
     value_is_sequence,
 )
-from readyapi.background import BackgroundTasks
 from readyapi.concurrency import (
+    AsyncExitStack,
     asynccontextmanager,
     contextmanager_in_threadpool,
 )
@@ -56,7 +56,7 @@ from readyapi.security.base import SecurityBase
 from readyapi.security.oauth2 import OAuth2, SecurityScopes
 from readyapi.security.open_id_connect_url import OpenIdConnect
 from readyapi.utils import create_response_field, get_path_param_names
-from starlette.background import BackgroundTasks as StarletteBackgroundTasks
+from starlette.background import BackgroundTasks
 from starlette.concurrency import run_in_threadpool
 from starlette.datastructures import FormData, Headers, QueryParams, UploadFile
 from starlette.requests import HTTPConnection, Request
@@ -305,7 +305,7 @@ def add_non_field_param_to_dependency(
     elif lenient_issubclass(type_annotation, Response):
         dependant.response_param_name = param_name
         return True
-    elif lenient_issubclass(type_annotation, StarletteBackgroundTasks):
+    elif lenient_issubclass(type_annotation, BackgroundTasks):
         dependant.background_tasks_param_name = param_name
         return True
     elif lenient_issubclass(type_annotation, SecurityScopes):
@@ -324,11 +324,10 @@ def analyze_param(
     field_info = None
     depends = None
     type_annotation: Any = Any
-    use_annotation: Any = Any
-    if annotation is not inspect.Signature.empty:
-        use_annotation = annotation
-        type_annotation = annotation
-    if get_origin(use_annotation) is Annotated:
+    if (
+        annotation is not inspect.Signature.empty
+        and get_origin(annotation) is Annotated
+    ):
         annotated_args = get_args(annotation)
         type_annotation = annotated_args[0]
         readyapi_annotations = [
@@ -336,21 +335,14 @@ def analyze_param(
             for arg in annotated_args[1:]
             if isinstance(arg, (FieldInfo, params.Depends))
         ]
-        readyapi_specific_annotations = [
-            arg
-            for arg in readyapi_annotations
-            if isinstance(arg, (params.Param, params.Body, params.Depends))
-        ]
-        if readyapi_specific_annotations:
-            readyapi_annotation: Union[
-                FieldInfo, params.Depends, None
-            ] = readyapi_specific_annotations[-1]
-        else:
-            readyapi_annotation = None
+        assert (
+            len(readyapi_annotations) <= 1
+        ), f"Cannot specify multiple `Annotated` ReadyAPI arguments for {param_name!r}"
+        readyapi_annotation = next(iter(readyapi_annotations), None)
         if isinstance(readyapi_annotation, FieldInfo):
             # Copy `field_info` because we mutate `field_info.default` below.
             field_info = copy_field_info(
-                field_info=readyapi_annotation, annotation=use_annotation
+                field_info=readyapi_annotation, annotation=annotation
             )
             assert field_info.default is Undefined or field_info.default is Required, (
                 f"`{field_info.__class__.__name__}` default value cannot be set in"
@@ -363,6 +355,8 @@ def analyze_param(
                 field_info.default = Required
         elif isinstance(readyapi_annotation, params.Depends):
             depends = readyapi_annotation
+    elif annotation is not inspect.Signature.empty:
+        type_annotation = annotation
 
     if isinstance(value, params.Depends):
         assert depends is None, (
@@ -384,20 +378,11 @@ def analyze_param(
             field_info.annotation = type_annotation
 
     if depends is not None and depends.dependency is None:
-        # Copy `depends` before mutating it
-        depends = copy(depends)
         depends.dependency = type_annotation
 
     if lenient_issubclass(
         type_annotation,
-        (
-            Request,
-            WebSocket,
-            HTTPConnection,
-            Response,
-            StarletteBackgroundTasks,
-            SecurityScopes,
-        ),
+        (Request, WebSocket, HTTPConnection, Response, BackgroundTasks, SecurityScopes),
     ):
         assert depends is None, f"Cannot specify `Depends` for type {type_annotation!r}"
         assert (
@@ -409,15 +394,15 @@ def analyze_param(
             # We might check here that `default_value is Required`, but the fact is that the same
             # parameter might sometimes be a path parameter and sometimes not. See
             # `tests/test_infer_param_optionality.py` for an example.
-            field_info = params.Path(annotation=use_annotation)
+            field_info = params.Path(annotation=type_annotation)
         elif is_uploadfile_or_nonable_uploadfile_annotation(
             type_annotation
         ) or is_uploadfile_sequence_annotation(type_annotation):
-            field_info = params.File(annotation=use_annotation, default=default_value)
+            field_info = params.File(annotation=type_annotation, default=default_value)
         elif not field_annotation_is_scalar(annotation=type_annotation):
-            field_info = params.Body(annotation=use_annotation, default=default_value)
+            field_info = params.Body(annotation=type_annotation, default=default_value)
         else:
-            field_info = params.Query(annotation=use_annotation, default=default_value)
+            field_info = params.Query(annotation=type_annotation, default=default_value)
 
     field = None
     if field_info is not None:
@@ -431,8 +416,8 @@ def analyze_param(
             and getattr(field_info, "in_", None) is None
         ):
             field_info.in_ = params.ParamTypes.query
-        use_annotation_from_field_info = get_annotation_from_field_info(
-            use_annotation,
+        use_annotation = get_annotation_from_field_info(
+            type_annotation,
             field_info,
             param_name,
         )
@@ -443,7 +428,7 @@ def analyze_param(
         field_info.alias = alias
         field = create_response_field(
             name=param_name,
-            type_=use_annotation_from_field_info,
+            type_=use_annotation,
             default=field_info.default,
             alias=alias,
             required=field_info.default in (Required, Undefined),
@@ -473,17 +458,16 @@ def is_body_param(*, param_field: ModelField, is_path_param: bool) -> bool:
 
 
 def add_param_to_fields(*, field: ModelField, dependant: Dependant) -> None:
-    field_info = field.field_info
-    field_info_in = getattr(field_info, "in_", None)
-    if field_info_in == params.ParamTypes.path:
+    field_info = cast(params.Param, field.field_info)
+    if field_info.in_ == params.ParamTypes.path:
         dependant.path_params.append(field)
-    elif field_info_in == params.ParamTypes.query:
+    elif field_info.in_ == params.ParamTypes.query:
         dependant.query_params.append(field)
-    elif field_info_in == params.ParamTypes.header:
+    elif field_info.in_ == params.ParamTypes.header:
         dependant.header_params.append(field)
     else:
         assert (
-            field_info_in == params.ParamTypes.cookie
+            field_info.in_ == params.ParamTypes.cookie
         ), f"non-body parameters must be in path, query, header or cookie: {field.name}"
         dependant.cookie_params.append(field)
 
@@ -526,15 +510,14 @@ async def solve_dependencies(
     request: Union[Request, WebSocket],
     dependant: Dependant,
     body: Optional[Union[Dict[str, Any], FormData]] = None,
-    background_tasks: Optional[StarletteBackgroundTasks] = None,
+    background_tasks: Optional[BackgroundTasks] = None,
     response: Optional[Response] = None,
     dependency_overrides_provider: Optional[Any] = None,
     dependency_cache: Optional[Dict[Tuple[Callable[..., Any], Tuple[str]], Any]] = None,
-    async_exit_stack: AsyncExitStack,
 ) -> Tuple[
     Dict[str, Any],
     List[Any],
-    Optional[StarletteBackgroundTasks],
+    Optional[BackgroundTasks],
     Response,
     Dict[Tuple[Callable[..., Any], Tuple[str]], Any],
 ]:
@@ -577,7 +560,6 @@ async def solve_dependencies(
             response=response,
             dependency_overrides_provider=dependency_overrides_provider,
             dependency_cache=dependency_cache,
-            async_exit_stack=async_exit_stack,
         )
         (
             sub_values,
@@ -593,8 +575,10 @@ async def solve_dependencies(
         if sub_dependant.use_cache and sub_dependant.cache_key in dependency_cache:
             solved = dependency_cache[sub_dependant.cache_key]
         elif is_gen_callable(call) or is_async_gen_callable(call):
+            stack = request.scope.get("readyapi_astack")
+            assert isinstance(stack, AsyncExitStack)
             solved = await solve_generator(
-                call=call, stack=async_exit_stack, sub_values=sub_values
+                call=call, stack=stack, sub_values=sub_values
             )
         elif is_coroutine_callable(call):
             solved = await call(**sub_values)
@@ -745,7 +729,7 @@ async def request_body_to_args(
                 results: List[Union[bytes, str]] = []
 
                 async def process_fn(
-                    fn: Callable[[], Coroutine[Any, Any, Any]],
+                    fn: Callable[[], Coroutine[Any, Any, Any]]
                 ) -> None:
                     result = await fn()
                     results.append(result)  # noqa: B023

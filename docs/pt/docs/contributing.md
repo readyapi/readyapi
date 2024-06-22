@@ -194,18 +194,18 @@ Isso irá servir a documentação em `http://127.0.0.1:8008`.
 
 Desse jeito, você poderá editar a documentação/arquivos fonte e ver as mudanças na hora.
 
-#### Cligenius CLI (opcional)
+#### Typer CLI (opcional)
 
 As instruções aqui mostram como utilizar _scripts_ em `./scripts/docs.py` com o programa `python` diretamente.
 
-Mas você pode usar também <a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">Cligenius CLI</a>, e você terá auto-completação para comandos no seu terminal após instalar o _completion_.
+Mas você pode usar também <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, e você terá auto-completação para comandos no seu terminal após instalar o _completion_.
 
-Se você instalou Cligenius CLI, você pode instalar _completion_ com:
+Se você instalou Typer CLI, você pode instalar _completion_ com:
 
 <div class="termy">
 
 ```console
-$ cligenius --install-completion
+$ typer --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.

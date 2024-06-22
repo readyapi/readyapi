@@ -5,6 +5,7 @@ from dirty_equals import IsDict, IsOneOf
 from pydantic import BaseModel, condecimal
 from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 app = ReadyAPI()
 
@@ -51,6 +52,7 @@ def test_jsonable_encoder_requiring_error():
                     "msg": "Input should be greater than 0",
                     "input": -1.0,
                     "ctx": {"gt": 0},
+                    "url": match_pydantic_error_url("greater_than"),
                 }
             ]
         }
@@ -80,24 +82,28 @@ def test_put_incorrect_body_multiple():
                     "loc": ["body", 0, "name"],
                     "msg": "Field required",
                     "input": {"age": "five"},
+                    "url": match_pydantic_error_url("missing"),
                 },
                 {
                     "type": "decimal_parsing",
                     "loc": ["body", 0, "age"],
                     "msg": "Input should be a valid decimal",
                     "input": "five",
+                    "url": match_pydantic_error_url("decimal_parsing"),
                 },
                 {
                     "type": "missing",
                     "loc": ["body", 1, "name"],
                     "msg": "Field required",
                     "input": {"age": "six"},
+                    "url": match_pydantic_error_url("missing"),
                 },
                 {
                     "type": "decimal_parsing",
                     "loc": ["body", 1, "age"],
                     "msg": "Input should be a valid decimal",
                     "input": "six",
+                    "url": match_pydantic_error_url("decimal_parsing"),
                 },
             ]
         }

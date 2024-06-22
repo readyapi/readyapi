@@ -11,10 +11,6 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "monthly"
-    groups:
-      python-packages:
-        patterns:
-          - "*"
+      interval: "daily"
     commit-message:
       prefix: ⬆

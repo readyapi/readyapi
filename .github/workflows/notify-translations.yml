@@ -23,7 +23,7 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       # Allow debugging with tmate
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
@@ -32,4 +32,4 @@ jobs:
           limit-access-to-actor: true
       - uses: ./.github/actions/notify-translations
         with:
-          token: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.READYAPI_NOTIFY_TRANSLATIONS }}

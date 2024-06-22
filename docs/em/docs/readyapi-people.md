@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # ReadyAPI 👫👫
 
 ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
@@ -23,7 +18,7 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 </div>
 {% endif %}
 
-👤 👼 &amp; 🐛 **ReadyAPI**. 👆 💪 ✍ 🌅 🔃 👈 [ℹ ReadyAPI - 🤚 ℹ - 🔗 ⏮️ 📕](help-readyapi.md#_3){.internal-link target=_blank}.
+👤 👼 &amp; 🐛 **ReadyAPI**. 👆 💪 ✍ 🌅 🔃 👈 [ℹ ReadyAPI - 🤚 ℹ - 🔗 ⏮️ 📕](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
 
 ...✋️ 📥 👤 💚 🎦 👆 👪.
 
@@ -33,19 +28,19 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 👫 👫👫 👈:
 
-* [ℹ 🎏 ⏮️ ❔ 📂](help-readyapi.md#i){.internal-link target=_blank}.
-* [✍ 🚲 📨](help-readyapi.md#_15){.internal-link target=_blank}.
-* 📄 🚲 📨, [✴️ ⚠ ✍](contributing.md#_9){.internal-link target=_blank}.
+* [ℹ 🎏 ⏮️ ❔ 📂](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}.
+* [✍ 🚲 📨](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
+* 📄 🚲 📨, [✴️ ⚠ ✍](contributing.md#translations){.internal-link target=_blank}.
 
 👏 👫. 👶 👶
 
 ## 🌅 🦁 👩‍💻 🏁 🗓️
 
-👫 👩‍💻 👈 ✔️ [🤝 🎏 🏆 ⏮️ ❔ 📂](help-readyapi.md#i){.internal-link target=_blank} ⏮️ 🏁 🗓️. 👶
+👫 👩‍💻 👈 ✔️ [🤝 🎏 🏆 ⏮️ ❔ 📂](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} ⏮️ 🏁 🗓️. 👶
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.last_month_experts[:10] %}
+{% for user in people.last_month_active %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">❔ 📨: {{ user.count }}</div></div>
 {% endfor %}
@@ -57,13 +52,13 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 📥 **ReadyAPI 🕴**. 👶
 
-👫 👩‍💻 👈 ✔️ [ℹ 🎏 🏆 ⏮️ ❔ 📂](help-readyapi.md#i){.internal-link target=_blank} 🔘 *🌐 🕰*.
+👫 👩‍💻 👈 ✔️ [ℹ 🎏 🏆 ⏮️ ❔ 📂](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} 🔘 *🌐 🕰*.
 
 👫 ✔️ 🎦 🕴 🤝 📚 🎏. 👶
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.experts[:50] %}
+{% for user in people.experts %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">❔ 📨: {{ user.count }}</div></div>
 {% endfor %}
@@ -75,13 +70,13 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 📥 **🔝 👨‍🔬**. 👶
 
-👉 👩‍💻 ✔️ [✍ 🏆 🚲 📨](help-readyapi.md#_15){.internal-link target=_blank} 👈 ✔️ *🔗*.
+👉 👩‍💻 ✔️ [✍ 🏆 🚲 📨](help-readyapi.md#create-a-pull-request){.internal-link target=_blank} 👈 ✔️ *🔗*.
 
 👫 ✔️ 📉 ℹ 📟, 🧾, ✍, ♒️. 👶
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_contributors[:50] %}
+{% for user in people.top_contributors %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">🚲 📨: {{ user.count }}</div></div>
 {% endfor %}
@@ -97,7 +92,7 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 ### 📄 ✍
 
-👤 🕴 💬 👩‍❤‍👨 🇪🇸 (&amp; 🚫 📶 👍 👶). , 👨‍🔬 🕐 👈 ✔️ [**🏋️ ✔ ✍**](contributing.md#_9){.internal-link target=_blank} 🧾. 🍵 👫, 📤 🚫🔜 🧾 📚 🎏 🇪🇸.
+👤 🕴 💬 👩‍❤‍👨 🇪🇸 (&amp; 🚫 📶 👍 👶). , 👨‍🔬 🕐 👈 ✔️ [**🏋️ ✔ ✍**](contributing.md#translations){.internal-link target=_blank} 🧾. 🍵 👫, 📤 🚫🔜 🧾 📚 🎏 🇪🇸.
 
 ---
 
@@ -105,7 +100,7 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_translations_reviewers[:50] %}
+{% for user in people.top_reviewers %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">📄: {{ user.count }}</div></div>
 {% endfor %}

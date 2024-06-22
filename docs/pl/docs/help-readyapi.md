@@ -12,7 +12,7 @@ Istnieje również kilka sposobów uzyskania pomocy.
 
 ## Zapisz się do newslettera
 
-Możesz zapisać się do rzadkiego [newslettera o **ReadyAPI i jego przyjaciołach**](newsletter.md){.internal-link target=_blank}, aby być na bieżąco z:
+Możesz zapisać się do rzadkiego [newslettera o **ReadyAPI i jego przyjaciołach**](/newsletter/){.internal-link target=_blank}, aby być na bieżąco z:
 
 * Aktualnościami o ReadyAPI i przyjaciołach 🚀
 * Przewodnikami 📝
@@ -78,7 +78,7 @@ Możesz spróbować pomóc innym, odpowiadając w:
 
 W wielu przypadkach możesz już znać odpowiedź na te pytania. 🤓
 
-Jeśli pomożesz wielu ludziom, możesz zostać oficjalnym [Ekspertem ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}. 🎉
+Jeśli pomożesz wielu ludziom, możesz zostać oficjalnym [Ekspertem ReadyAPI](readyapi-people.md#experts){.internal-link target=_blank}. 🎉
 
 Pamiętaj tylko o najważniejszym: bądź życzliwy. Ludzie przychodzą sfrustrowani i w wielu przypadkach nie zadają pytań w najlepszy sposób, ale mimo to postaraj się być dla nich jak najbardziej życzliwy. 🤗
 
@@ -215,8 +215,8 @@ Jest wiele pracy do zrobienia, a w większości przypadków **TY** możesz to zr
 
 Główne zadania, które możesz wykonać teraz to:
 
-* [Pomóc innym z pytaniami na GitHubie](#pomagaj-innym-odpowiadajac-na-ich-pytania-na-githubie){.internal-link target=_blank} (zobacz sekcję powyżej).
-* [Oceniać Pull Requesty](#przegladaj-pull-requesty){.internal-link target=_blank} (zobacz sekcję powyżej).
+* [Pomóc innym z pytaniami na GitHubie](#help-others-with-questions-in-github){.internal-link target=_blank} (zobacz sekcję powyżej).
+* [Oceniać Pull Requesty](#review-pull-requests){.internal-link target=_blank} (zobacz sekcję powyżej).
 
 Te dwie czynności **zajmują najwięcej czasu**. To główna praca związana z utrzymaniem ReadyAPI.
 
@@ -226,10 +226,12 @@ Jeśli możesz mi w tym pomóc, **pomożesz mi utrzymać ReadyAPI** i zapewnisz 
 
 Dołącz do 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">serwera czatu na Discordzie</a> 👥 i spędzaj czas z innymi w społeczności ReadyAPI.
 
-!!! tip "Wskazówka"
-    Jeśli masz pytania, zadaj je w <a href="https://github.com/khulnasoft/readyapi/discussions/new?category=questions" class="external-link" target="_blank">Dyskusjach na GitHubie</a>, jest dużo większa szansa, że otrzymasz pomoc od [Ekspertów ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+!!! wskazówka
+    Jeśli masz pytania, zadaj je w <a href="https://github.com/khulnasoft/readyapi/discussions/new?category=questions" class="external-link" target="_blank">Dyskusjach na GitHubie</a>, jest dużo większa szansa, że otrzymasz pomoc od [Ekspertów ReadyAPI](readyapi-people.md#experts){.internal-link target=_blank}.
 
     Używaj czatu tylko do innych ogólnych rozmów.
+
+Istnieje również poprzedni <a href="https://gitter.im/khulnasoft/readyapi" class="external-link" target="_blank">czat na Gitter</a>, ale ponieważ nie ma tam kanałów i zaawansowanych funkcji, rozmowy są trudniejsze, dlatego teraz zalecany jest Discord.
 
 ### Nie zadawaj pytań na czacie
 
@@ -237,7 +239,7 @@ Miej na uwadze, że ponieważ czaty pozwalają na bardziej "swobodną rozmowę",
 
 Na GitHubie szablon poprowadzi Cię do napisania odpowiedniego pytania, dzięki czemu łatwiej uzyskasz dobrą odpowiedź, a nawet rozwiążesz problem samodzielnie, zanim zapytasz. Ponadto na GitHubie mogę się upewnić, że zawsze odpowiadam na wszystko, nawet jeśli zajmuje to trochę czasu. Osobiście nie mogę tego zrobić z systemami czatu. 😅
 
-Rozmów w systemach czatu nie można tak łatwo przeszukiwać, jak na GitHubie, więc pytania i odpowiedzi mogą zaginąć w rozmowie. A tylko te na GitHubie liczą się do zostania [Ekspertem ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}, więc najprawdopodobniej otrzymasz więcej uwagi na GitHubie.
+Rozmów w systemach czatu nie można tak łatwo przeszukiwać, jak na GitHubie, więc pytania i odpowiedzi mogą zaginąć w rozmowie. A tylko te na GitHubie liczą się do zostania [Ekspertem ReadyAPI](readyapi-people.md#experts){.internal-link target=_blank}, więc najprawdopodobniej otrzymasz więcej uwagi na GitHubie.
 
 Z drugiej strony w systemach czatu są tysiące użytkowników, więc jest duża szansa, że znajdziesz tam kogoś do rozmowy, prawie w każdej chwili. 😄
 

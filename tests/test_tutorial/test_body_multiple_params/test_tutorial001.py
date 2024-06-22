@@ -1,6 +1,7 @@
 import pytest
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
+from readyapi.utils import match_pydantic_error_url
 
 
 @pytest.fixture(name="client")
@@ -49,6 +50,7 @@ def test_post_id_foo(client: TestClient):
                     "loc": ["path", "item_id"],
                     "msg": "Input should be a valid integer, unable to parse string as an integer",
                     "input": "foo",
+                    "url": match_pydantic_error_url("int_parsing"),
                 }
             ]
         }

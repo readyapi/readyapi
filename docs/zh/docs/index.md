@@ -1,12 +1,3 @@
----
-hide:
-  - navigation
----
-
-<style>
-.md-content .md-typeset h1 { display: none; }
-</style>
-
 <p align="center">
   <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
@@ -23,9 +14,6 @@ hide:
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
-<a href="https://pypi.org/project/readyapi" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/readyapi.svg?color=%2334D058" alt="Supported Python versions">
-</a>
 </p>
 
 ---
@@ -36,7 +24,7 @@ hide:
 
 ---
 
-ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 3.8+ 并基于标准的 Python 类型提示。
+ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 3.6+ 并基于标准的 Python 类型提示。
 
 关键特性:
 
@@ -109,22 +97,22 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ---
 
-## **Cligenius**，命令行中的 ReadyAPI
+## **Typer**，命令行中的 ReadyAPI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>。
+如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>。
 
-**Cligenius** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
+**Typer** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
 
 ## 依赖
 
-Python 3.8 及更高版本
+Python 3.6 及更高版本
 
 ReadyAPI 站在以下巨人的肩膀之上：
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 负责 web 部分。
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 负责数据部分。
+* <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> 负责数据部分。
 
 ## 安装
 
@@ -199,7 +187,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Note**:
 
-如果你不知道是否会用到，可以查看文档的 _"In a hurry?"_ 章节中 <a href="https://readyapi.khulnasoft.com/zh/async/#in-a-hurry" target="_blank">关于 `async` 和 `await` 的部分</a>。
+如果你不知道是否会用到，可以查看文档的 _"In a hurry?"_ 章节中 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">关于 `async` 和 `await` 的部分</a>。
 
 </details>
 
@@ -335,7 +323,7 @@ def update_item(item_id: int, item: Item):
 
 你不需要去学习新的语法、了解特定库的方法或类，等等。
 
-只需要使用标准的 **Python 3.8 及更高版本**。
+只需要使用标准的 **Python 3.6 及更高版本**。
 
 举个例子，比如声明 `int` 类型：
 
@@ -422,7 +410,7 @@ item: Item
 
 ![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
 
-<a href="https://readyapi.khulnasoft.com/zh/tutorial/">教程 - 用户指南</a> 中有包含更多特性的更完整示例。
+<a href="https://readyapi.khulnasoft.com/tutorial/">教程 - 用户指南</a> 中有包含更多特性的更完整示例。
 
 **剧透警告**： 教程 - 用户指南中的内容有：
 
@@ -443,7 +431,7 @@ item: Item
 
 独立机构 TechEmpower 所作的基准测试结果显示，基于 Uvicorn 运行的 **ReadyAPI** 程序是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python web 框架之一</a>，仅次于 Starlette 和 Uvicorn 本身（ReadyAPI 内部使用了它们）。(*)
 
-想了解更多，请查阅 <a href="https://readyapi.khulnasoft.com/zh/benchmarks/" class="internal-link" target="_blank">基准测试</a> 章节。
+想了解更多，请查阅 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">基准测试</a> 章节。
 
 ## 可选依赖
 
@@ -455,7 +443,7 @@ item: Item
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - 使用 `TestClient` 时安装。
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - 使用默认模板配置时安装。
-* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - 需要通过 `request.form()` 对表单进行<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">「解析」</abbr>时安装。
+* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - 需要通过 `request.form()` 对表单进行<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">「解析」</abbr>时安装。
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - 需要 `SessionMiddleware` 支持时安装。
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 使用 Starlette 提供的 `SchemaGenerator` 时安装（有 ReadyAPI 你可能并不需要它）。
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - 需要 `GraphQLApp` 支持时安装。
@@ -466,7 +454,7 @@ item: Item
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 用于加载和运行你的应用程序的服务器。
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - 使用 `ORJSONResponse` 时安装。
 
-你可以通过 `pip install "readyapi[all]"` 命令来安装以上所有依赖。
+你可以通过 `pip install readyapi[all]` 命令来安装以上所有依赖。
 
 ## 许可协议
 

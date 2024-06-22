@@ -1,5 +1,5 @@
 #!/bin/sh -e
 set -x
 
-ruff check readyapi tests docs_src scripts --fix
-ruff format readyapi tests docs_src scripts
+ruff readyapi tests docs_src scripts --fix
+black readyapi tests docs_src scripts

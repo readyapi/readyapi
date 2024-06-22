@@ -10,7 +10,7 @@
     {!> ../../../docs_src/query_params_str_validations/tutorial001_py310.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="9"
     {!> ../../../docs_src/query_params_str_validations/tutorial001.py!}
@@ -42,7 +42,7 @@ Query-параметр `q` имеет тип `Union[str, None]` (или `str | N
     {!> ../../../docs_src/query_params_str_validations/tutorial002_an_py310.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     В версиях Python ниже Python 3.9 `Annotation` импортируется из `typing_extensions`.
 
@@ -66,7 +66,7 @@ Query-параметр `q` имеет тип `Union[str, None]` (или `str | N
     q: str | None = None
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python
     q: Union[str, None] = None
@@ -80,7 +80,7 @@ Query-параметр `q` имеет тип `Union[str, None]` (или `str | N
     q: Annotated[str | None] = None
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python
     q: Annotated[Union[str, None]] = None
@@ -100,7 +100,7 @@ Query-параметр `q` имеет тип `Union[str, None]` (или `str | N
     {!> ../../../docs_src/query_params_str_validations/tutorial002_an_py310.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="10"
     {!> ../../../docs_src/query_params_str_validations/tutorial002_an.py!}
@@ -131,7 +131,7 @@ Query-параметр `q` имеет тип `Union[str, None]` (или `str | N
     {!> ../../../docs_src/query_params_str_validations/tutorial002_py310.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="9"
     {!> ../../../docs_src/query_params_str_validations/tutorial002.py!}
@@ -226,7 +226,7 @@ q: str = Query(default="rick")
 
 Если вы вместо `Annotated` используете **(устаревший) стиль значений по умолчанию**, тогда при вызове этой функции без ReadyAPI в **другом месте** вам необходимо **помнить** о передаче аргументов функции, чтобы она работала корректно. В противном случае, значения будут отличаться от тех, что вы ожидаете (например, `QueryInfo` или что-то подобное вместо `str`). И ни ваш редактор кода, ни Python не будут жаловаться на работу этой функции, только когда вычисления внутри дадут сбой.
 
-Так как `Annotated` может принимать более одной аннотации метаданных, то теперь вы можете использовать ту же функцию с другими инструментами, например <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">Cligenius</a>. 🚀
+Так как `Annotated` может принимать более одной аннотации метаданных, то теперь вы можете использовать ту же функцию с другими инструментами, например <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">Typer</a>. 🚀
 
 ## Больше валидации
 
@@ -244,7 +244,7 @@ q: str = Query(default="rick")
     {!> ../../../docs_src/query_params_str_validations/tutorial003_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="11"
     {!> ../../../docs_src/query_params_str_validations/tutorial003_an.py!}
@@ -259,7 +259,7 @@ q: str = Query(default="rick")
     {!> ../../../docs_src/query_params_str_validations/tutorial003_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -284,7 +284,7 @@ q: str = Query(default="rick")
     {!> ../../../docs_src/query_params_str_validations/tutorial004_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="12"
     {!> ../../../docs_src/query_params_str_validations/tutorial004_an.py!}
@@ -299,7 +299,7 @@ q: str = Query(default="rick")
     {!> ../../../docs_src/query_params_str_validations/tutorial004_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -330,13 +330,13 @@ q: str = Query(default="rick")
     {!> ../../../docs_src/query_params_str_validations/tutorial005_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="8"
     {!> ../../../docs_src/query_params_str_validations/tutorial005_an.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -384,13 +384,13 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial006_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="8"
     {!> ../../../docs_src/query_params_str_validations/tutorial006_an.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -414,13 +414,13 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial006b_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="8"
     {!> ../../../docs_src/query_params_str_validations/tutorial006b_an.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -454,7 +454,7 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial006c_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="10"
     {!> ../../../docs_src/query_params_str_validations/tutorial006c_an.py!}
@@ -469,7 +469,7 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial006c_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -479,7 +479,7 @@ q: Union[str, None] = None
     ```
 
 !!! tip "Подсказка"
-    Pydantic, мощь которого используется в ReadyAPI для валидации и сериализации, имеет специальное поведение для `Optional` или `Union[Something, None]` без значения по умолчанию. Вы можете узнать об этом больше в документации Pydantic, раздел <a href="https://docs.pydantic.dev/latest/concepts/models/#required-optional-fields" class="external-link" target="_blank">Обязательные Опциональные поля</a>.
+    Pydantic, мощь которого используется в ReadyAPI для валидации и сериализации, имеет специальное поведение для `Optional` или `Union[Something, None]` без значения по умолчанию. Вы можете узнать об этом больше в документации Pydantic, раздел <a href="https://pydantic-docs.helpmanual.io/usage/models/#required-optional-fields" class="external-link" target="_blank">Обязательные Опциональные поля</a>.
 
 ### Использование Pydantic's `Required` вместо Ellipsis (`...`)
 
@@ -491,13 +491,13 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial006d_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="2  9"
     {!> ../../../docs_src/query_params_str_validations/tutorial006d_an.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -527,7 +527,7 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial011_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="10"
     {!> ../../../docs_src/query_params_str_validations/tutorial011_an.py!}
@@ -551,7 +551,7 @@ q: Union[str, None] = None
     {!> ../../../docs_src/query_params_str_validations/tutorial011_py39.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -596,7 +596,7 @@ http://localhost:8000/items/?q=foo&q=bar
     {!> ../../../docs_src/query_params_str_validations/tutorial012_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="10"
     {!> ../../../docs_src/query_params_str_validations/tutorial012_an.py!}
@@ -611,7 +611,7 @@ http://localhost:8000/items/?q=foo&q=bar
     {!> ../../../docs_src/query_params_str_validations/tutorial012_py39.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -647,13 +647,13 @@ http://localhost:8000/items/
     {!> ../../../docs_src/query_params_str_validations/tutorial013_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="8"
     {!> ../../../docs_src/query_params_str_validations/tutorial013_an.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -692,7 +692,7 @@ http://localhost:8000/items/
     {!> ../../../docs_src/query_params_str_validations/tutorial007_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="11"
     {!> ../../../docs_src/query_params_str_validations/tutorial007_an.py!}
@@ -707,7 +707,7 @@ http://localhost:8000/items/
     {!> ../../../docs_src/query_params_str_validations/tutorial007_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -730,7 +730,7 @@ http://localhost:8000/items/
     {!> ../../../docs_src/query_params_str_validations/tutorial008_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="15"
     {!> ../../../docs_src/query_params_str_validations/tutorial008_an.py!}
@@ -741,11 +741,11 @@ http://localhost:8000/items/
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
 
-    ```Python hl_lines="11"
+    ```Python hl_lines="12"
     {!> ../../../docs_src/query_params_str_validations/tutorial008_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -784,7 +784,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     {!> ../../../docs_src/query_params_str_validations/tutorial009_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="10"
     {!> ../../../docs_src/query_params_str_validations/tutorial009_an.py!}
@@ -799,7 +799,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     {!> ../../../docs_src/query_params_str_validations/tutorial009_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -828,7 +828,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     {!> ../../../docs_src/query_params_str_validations/tutorial010_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="20"
     {!> ../../../docs_src/query_params_str_validations/tutorial010_an.py!}
@@ -839,11 +839,11 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
 
-    ```Python hl_lines="16"
+    ```Python hl_lines="17"
     {!> ../../../docs_src/query_params_str_validations/tutorial010_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.
@@ -872,7 +872,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     {!> ../../../docs_src/query_params_str_validations/tutorial014_an_py39.py!}
     ```
 
-=== "Python 3.8+"
+=== "Python 3.6+"
 
     ```Python hl_lines="11"
     {!> ../../../docs_src/query_params_str_validations/tutorial014_an.py!}
@@ -887,7 +887,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
     {!> ../../../docs_src/query_params_str_validations/tutorial014_py310.py!}
     ```
 
-=== "Python 3.8+ без Annotated"
+=== "Python 3.6+ без Annotated"
 
     !!! tip "Подсказка"
         Рекомендуется использовать версию с `Annotated` если возможно.

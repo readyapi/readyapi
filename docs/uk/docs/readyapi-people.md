@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Люди ReadyAPI
 
 ReadyAPI має дивовижну спільноту, яка вітає людей різного походження.
@@ -33,7 +28,7 @@ ReadyAPI має дивовижну спільноту, яка вітає люд�
 
 Це люди, які:
 
-* [Допомагають іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}.
+* [Допомагають іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank}.
 * [Створюють пул реквести](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
 * Переглядають пул реквести, [особливо важливо для перекладів](contributing.md#translations){.internal-link target=_blank}.
 
@@ -41,11 +36,11 @@ ReadyAPI має дивовижну спільноту, яка вітає люд�
 
 ## Найбільш активні користувачі минулого місяця
 
-Це користувачі, які [найбільше допомагали іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} протягом минулого місяця. ☕
+Це користувачі, які [найбільше допомагали іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank} протягом минулого місяця. ☕
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.last_month_experts[:10] %}
+{% for user in people.last_month_active %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
@@ -57,13 +52,13 @@ ReadyAPI має дивовижну спільноту, яка вітає люд�
 
 Ось **експерти ReadyAPI**. 🤓
 
-Це користувачі, які [найбільше допомагали іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} протягом *всього часу*.
+Це користувачі, які [найбільше допомагали іншим із проблемами (запитаннями) у GitHub](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank} протягом *всього часу*.
 
 Вони зарекомендували себе як експерти, допомагаючи багатьом іншим. ✨
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.experts[:50] %}
+{% for user in people.experts %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
@@ -81,7 +76,7 @@ ReadyAPI має дивовижну спільноту, яка вітає люд�
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_contributors[:50] %}
+{% for user in people.top_contributors %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Pull Requests: {{ user.count }}</div></div>
 {% endfor %}
@@ -105,7 +100,7 @@ ReadyAPI має дивовижну спільноту, яка вітає люд�
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_translations_reviewers[:50] %}
+{% for user in people.top_reviewers %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Reviews: {{ user.count }}</div></div>
 {% endfor %}

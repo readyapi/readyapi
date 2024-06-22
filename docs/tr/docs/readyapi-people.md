@@ -1,15 +1,10 @@
----
-hide:
-  - navigation
----
-
 # ReadyAPI Topluluğu
 
 ReadyAPI, her kökenden insanı ağırlayan harika bir topluluğa sahip.
 
 ## Yazan - Geliştiren
 
-Merhaba! 👋
+Hey! 👋
 
 İşte bu benim:
 
@@ -17,37 +12,38 @@ Merhaba! 👋
 <div class="user-list user-list-center">
 {% for user in people.maintainers %}
 
-<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Cevaplar: {{ user.answers }}</div><div class="count">Pull Request'ler: {{ user.prs }}</div></div>
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Answers: {{ user.answers }}</div><div class="count">Pull Requests: {{ user.prs }}</div></div>
 {% endfor %}
 
 </div>
 {% endif %}
 
-Ben **ReadyAPI**'ın geliştiricisiyim. Bununla ilgili daha fazla bilgiyi şurada okuyabilirsiniz: [ReadyAPI yardım - yardım al -  benimle iletişime geç](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
+Ben **ReadyAPI** 'nin yazarı ve geliştiricisiyim. Bununla ilgili daha fazla bilgiyi şurada okuyabilirsiniz:
+ [ReadyAPI yardım - yardım al - Yazar ile iletişime geç](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
 
-...burada size harika ReadyAPI topluluğunu göstermek istiyorum.
+... Burada size harika ReadyAPI topluluğunu göstermek istiyorum.
 
 ---
 
-**ReadyAPI**, topluluğundan çok destek alıyor. Ben de onların katkılarını vurgulamak istiyorum.
+**ReadyAPI** topluluğundan destek alıyor. Ve katkıda bulunanları vurgulamak istiyorum.
 
-Bu insanlar:
+İşte o mükemmel insanlar:
 
-* [GitHubdaki soruları cevaplayarak diğerlerine yardım ediyor](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}.
-* [Pull Request'ler oluşturuyor](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
-* Pull Request'leri gözden geçiriyorlar, [özellikle çeviriler için bu çok önemli](contributing.md#translations){.internal-link target=_blank}.
+* [GitHubdaki sorunları (issues) çözmelerinde diğerlerine yardım et](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank}.
+* [Pull Requests oluşturun](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
+* Pull Requests 'leri gözden geçirin, [özelliklede çevirileri](contributing.md#translations){.internal-link target=_blank}.
 
-Onları bir alkışlayalım. 👏 🙇
+Onlara bir alkış. 👏 🙇
 
-## Geçen Ayın En Aktif Kullanıcıları
+## Geçen ayın en aktif kullanıcıları
 
-Geçtiğimiz ay boyunca [GitHub'da diğerlerine en çok yardımcı olan](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} kullanıcılar. ☕
+Bunlar geçen ay boyunca [GitHub' da başkalarına sorunlarında (issues) en çok yardımcı olan ](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank} kullanıcılar  ☕
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.last_month_experts[:10] %}
+{% for user in people.last_month_active %}
 
-<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Cevaplanan soru sayısı: {{ user.count }}</div></div>
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
 
 </div>
@@ -57,57 +53,57 @@ Geçtiğimiz ay boyunca [GitHub'da diğerlerine en çok yardımcı olan](help-re
 
 İşte **ReadyAPI Uzmanları**. 🤓
 
-Uzmanlarımız ise *tüm zamanlar boyunca* [GitHub'da insanların sorularına en çok yardımcı olan](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} insanlar.
+Bunlar *tüm zamanlar boyunca* [GitHub' da başkalarına sorunlarında (issues) en çok yardımcı olan](help-readyapi.md#help-others-with-issues-in-github){.internal-link target=_blank} kullanıcılar.
 
-Bir çok kullanıcıya yardım ederek uzman olduklarını kanıtladılar! ✨
+Başkalarına yardım ederek uzman olduklarını kanıtladılar. ✨
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.experts[:50] %}
+{% for user in people.experts %}
 
-<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Cevaplanan soru sayısı: {{ user.count }}</div></div>
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Issues replied: {{ user.count }}</div></div>
 {% endfor %}
 
 </div>
 {% endif %}
 
-## En Fazla Katkıda Bulunanlar
+## En fazla katkıda bulunanlar
 
-Şimdi ise sıra **en fazla katkıda bulunanlar**da. 👷
+işte **En fazla katkıda bulunanlar**. 👷
 
-Bu kullanıcılar en fazla [kaynak koduyla birleştirilen Pull Request'lere](help-readyapi.md#create-a-pull-request){.internal-link target=_blank} sahip!
+Bu kullanıcılar en çok [Pull Requests oluşturan](help-readyapi.md#create-a-pull-request){.internal-link target=_blank} ve onu kaynak koduna *birleştirenler*.
 
-Kaynak koduna, dökümantasyona, çevirilere ve bir sürü şeye katkıda bulundular. 📦
+Kaynak koduna, belgelere, çevirilere vb. katkıda bulundular. 📦
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_contributors[:50] %}
+{% for user in people.top_contributors %}
 
-<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Pull Request sayısı: {{ user.count }}</div></div>
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Pull Requests: {{ user.count }}</div></div>
 {% endfor %}
 
 </div>
 {% endif %}
 
-Bunlar dışında katkıda bulunan, yüzden fazla, bir sürü insan var. Hepsini <a href="https://github.com/khulnasoft/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Katkıda Bulunanlar</a> sayfasında görebilirsin. 👷
+Çok fazla katkıda bulunan var (binden fazla), hepsini şurda görebilirsin: <a href="https://github.com/khulnasoft/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Katkıda Bulunanlar</a>. 👷
 
-## En Fazla Değerlendirme Yapanlar
+## En fazla inceleme yapanlar
 
-İşte **en çok değerlendirme yapanlar**. 🕵️
+İşte **En fazla inceleme yapanlar**. 🕵️
 
-### Çeviri Değerlendirmeleri
+### Çeviri için İncelemeler
 
-Yalnızca birkaç dil konuşabiliyorum (ve çok da iyi değilim 😅). Bu yüzden değerlendirme yapanların da döküman çevirilerini [**onaylama yetkisi**](contributing.md#translations){.internal-link target=_blank} var. Onlar olmasaydı çeşitli dillerde dökümantasyon da olmazdı.
+Yalnızca birkaç dil konuşabiliyorum (ve çok da iyi değilim 😅). Bu yüzden döküman çevirilerini [**onaylama yetkisi**](contributing.md#translations){.internal-link target=_blank} siz inceleyenlere aittir. Sizler olmadan diğer birkaç dilde dokümantasyon olmazdı.
 
 ---
 
-**En fazla değerlendirme yapanlar** 🕵️ kodun, dökümantasyonun ve özellikle **çevirilerin** Pull Request'lerini inceleyerek kalitesinden emin oldular.
+**En fazla inceleme yapanlar** 🕵️ kodun, belgelerin ve özellikle **çevirilerin** kalitesini sağlamak için diğerlerinden daha fazla pull requests incelemiştir.
 
 {% if people %}
 <div class="user-list user-list-center">
-{% for user in people.top_translations_reviewers[:50] %}
+{% for user in people.top_reviewers %}
 
-<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Değerlendirme sayısı: {{ user.count }}</div></div>
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a> <div class="count">Reviews: {{ user.count }}</div></div>
 {% endfor %}
 
 </div>
@@ -117,67 +113,66 @@ Yalnızca birkaç dil konuşabiliyorum (ve çok da iyi değilim 😅). Bu yüzde
 
 işte **Sponsorlarımız**. 😎
 
-Çoğunlukla <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsorları</a> aracılığıyla olmak üzere, **ReadyAPI** ve diğer projelerdeki çalışmalarımı destekliyorlar.
-
-{% if sponsors %}
-
-{% if sponsors.gold %}
+**ReadyAPI** ve diğer projelerde çalışmamı destekliyorlar, özellikle de <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsorları</a>.
 
 ### Altın Sponsorlar
 
+{% if sponsors %}
 {% for sponsor in sponsors.gold -%}
 <a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.title }}"><img src="{{ sponsor.img }}" style="border-radius:15px"></a>
 {% endfor %}
 {% endif %}
 
-{% if sponsors.silver %}
-
 ### Gümüş Sponsorlar
 
+{% if sponsors %}
 {% for sponsor in sponsors.silver -%}
 <a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.title }}"><img src="{{ sponsor.img }}" style="border-radius:15px"></a>
 {% endfor %}
 {% endif %}
 
-{% if sponsors.bronze %}
-
 ### Bronz Sponsorlar
 
+{% if sponsors %}
 {% for sponsor in sponsors.bronze -%}
 <a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.title }}"><img src="{{ sponsor.img }}" style="border-radius:15px"></a>
 {% endfor %}
 {% endif %}
 
-{% endif %}
-
 ### Bireysel Sponsorlar
 
-{% if github_sponsors %}
-{% for group in github_sponsors.sponsors %}
+{% if people %}
+{% if people.sponsors_50 %}
 
 <div class="user-list user-list-center">
-
-{% for user in group %}
-{% if user.login not in sponsors_badge.logins %}
+{% for user in people.sponsors_50 %}
 
 <div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a></div>
-
-{% endif %}
 {% endfor %}
 
 </div>
 
-{% endfor %}
+{% endif %}
 {% endif %}
 
-## Veriler - Teknik detaylar
+{% if people %}
+<div class="user-list user-list-center">
+{% for user in people.sponsors %}
+
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatarUrl }}"/></div><div class="title">@{{ user.login }}</div></a></div>
+{% endfor %}
+
+</div>
+{% endif %}
+
+## Veriler hakkında - Teknik detaylar
 
 Bu sayfanın temel amacı, topluluğun başkalarına yardım etme çabasını vurgulamaktır.
 
-Özellikle normalde daha az görünür olan ve çoğu durumda daha zahmetli olan, diğerlerine sorularında yardımcı olmak, çevirileri ve Pull Request'leri gözden geçirmek gibi çabalar dahil.
+Özellikle normalde daha az görünür olan ve çoğu durumda daha zahmetli olan, diğerlerine sorunlar konusunda yardımcı olmak ve pull requests'leri gözden geçirmek gibi çabalar dahil.
 
-Veriler ayda bir hesaplanır, <a href="https://github.com/khulnasoft/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">kaynak kodu buradan</a> okuyabilirsin.
+Veriler ayda bir hesaplanır, işte kaynak kodu okuyabilirsin :<a href="https://github.com/khulnasoft/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">source code here</a>.
 
-Burada sponsorların katkılarını da vurguluyorum.
+Burada sponsorların katkılarını da tekrardan vurgulamak isterim.
 
-Ayrıca algoritmayı, bölümleri, eşikleri vb. güncelleme hakkımı da saklı tutuyorum (her ihtimale karşı 🤷).
+Ayrıca algoritmayı, bölümleri, eşikleri vb. güncelleme hakkımı da saklı tutarım (her ihtimale karşı 🤷).
