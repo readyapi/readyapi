@@ -1,6 +1,6 @@
 # ReadyAPI CLI
 
-**ReadyAPI CLI** is a command line program `readyapi` that you can use to serve your ReadyAPI app, manage your ReadyAPI project, and more.
+**ReadyAPI CLI** is a command line program that you can use to serve your ReadyAPI app, manage your ReadyAPI project, and more.
 
 When you install ReadyAPI (e.g. with `pip install readyapi`), it includes a package called `readyapi-cli`, this package provides the `readyapi` command in the terminal.
 
