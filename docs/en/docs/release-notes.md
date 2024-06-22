@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Update readyapi-cli.md. PR [#68](https://github.com/khulnasoft/readyapi/pull/68) by [@NxPKG](https://github.com/NxPKG).
 * Create settings.md. PR [#67](https://github.com/khulnasoft/readyapi/pull/67) by [@NxPKG](https://github.com/NxPKG).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.8.14 to 1.9.0. PR [#65](https://github.com/khulnasoft/readyapi/pull/65) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump dawidd6/action-download-artifact from 5 to 6. PR [#64](https://github.com/khulnasoft/readyapi/pull/64) by [@dependabot[bot]](https://github.com/apps/dependabot).
