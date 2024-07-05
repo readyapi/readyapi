@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* refactor: refactor the comparison involving `not`. PR [#72](https://github.com/khulnasoft/readyapi/pull/72) by [@deepsource-autofix[bot]](https://github.com/apps/deepsource-autofix).
 * Create .deepsource.toml. PR [#69](https://github.com/khulnasoft/readyapi/pull/69) by [@NxPKG](https://github.com/NxPKG).
 * Update readyapi-cli.md. PR [#68](https://github.com/khulnasoft/readyapi/pull/68) by [@NxPKG](https://github.com/NxPKG).
 * Create settings.md. PR [#67](https://github.com/khulnasoft/readyapi/pull/67) by [@NxPKG](https://github.com/NxPKG).
