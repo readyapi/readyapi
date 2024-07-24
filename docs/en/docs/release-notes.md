@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* sqldev add. PR [#81](https://github.com/khulnasoft/readyapi/pull/81) by [@NxPKG](https://github.com/NxPKG).
 * ➖ Remove orjson and ujson from default dependencies. PR [#80](https://github.com/khulnasoft/readyapi/pull/80) by [@gitworkflows](https://github.com/gitworkflows).
 * Create sub-dependencies.md. PR [#77](https://github.com/khulnasoft/readyapi/pull/77) by [@gitworkflows](https://github.com/gitworkflows).
 * refactor: refactor the comparison involving `not`. PR [#72](https://github.com/khulnasoft/readyapi/pull/72) by [@deepsource-autofix[bot]](https://github.com/apps/deepsource-autofix).
