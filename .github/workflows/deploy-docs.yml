@@ -41,15 +41,13 @@ jobs:
           git config --global user.email "info@khulnasoft.com"
           git config --global user.name "khulnasoft-bot"
 
-      - name: Deploy to GitHub Pages
-        if: steps.download.outputs.found_artifact == 'true'
+      - name: Print debug information
         run: |
-          cd ./site
-          git init
-          git add .
-          git commit -m "Deploy docs"
-          git remote add origin https://x-access-token:${{ secrets.ORG_REPO_TOKEN }}@github.com/${{ github.repository }}
-          git push --force origin master:gh-pages
+          echo "Repository: https://x-access-token:${{ secrets.ORG_REPO_TOKEN }}@github.com/khulnasoft/readyapi"
+          echo "Contents of ./site:"
+          ls -la ./site
+          echo "Git status:"
+          git status
 
       - name: Comment Deploy
         if: always()
