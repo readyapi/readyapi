@@ -248,7 +248,7 @@ hide:
 * 👷 Do not use Python packages cache for publish. PR [#11366](https://github.com/khulnasoft/readyapi/pull/11366) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Add CI to test sdists for redistribution (e.g. Linux distros). PR [#11365](https://github.com/khulnasoft/readyapi/pull/11365) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Update build-docs GitHub Action path filter. PR [#11354](https://github.com/khulnasoft/readyapi/pull/11354) by [@khulnasoft](https://github.com/khulnasoft).
-* 🔧 Update Ruff config, add extra ignore rule from SQLModel. PR [#11353](https://github.com/khulnasoft/readyapi/pull/11353) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔧 Update Ruff config, add extra ignore rule from SQLDev. PR [#11353](https://github.com/khulnasoft/readyapi/pull/11353) by [@khulnasoft](https://github.com/khulnasoft).
 * ⬆️ Upgrade configuration for Ruff v0.2.0. PR [#11075](https://github.com/khulnasoft/readyapi/pull/11075) by [@charliermarsh](https://github.com/charliermarsh).
 * 🔧 Update sponsors, add MongoDB. PR [#11346](https://github.com/khulnasoft/readyapi/pull/11346) by [@khulnasoft](https://github.com/khulnasoft).
 * ⬆ Bump dorny/paths-filter from 2 to 3. PR [#11028](https://github.com/khulnasoft/readyapi/pull/11028) by [@dependabot[bot]](https://github.com/apps/dependabot).
@@ -2612,7 +2612,7 @@ Soon there will be a new ReadyAPI release upgrading Starlette to take advantage 
 
 ## 0.68.1
 
-* ✨ Add support for `read_with_orm_mode`, to support [SQLModel](https://sqlmodel.khulnasoft.com/) relationship attributes. PR [#3757](https://github.com/khulnasoft/readyapi/pull/3757) by [@khulnasoft](https://github.com/khulnasoft).
+* ✨ Add support for `read_with_orm_mode`, to support [SQLDev](https://sqldev.khulnasoft.com/) relationship attributes. PR [#3757](https://github.com/khulnasoft/readyapi/pull/3757) by [@khulnasoft](https://github.com/khulnasoft).
 
 ### Translations
 
