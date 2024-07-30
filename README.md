@@ -1,6 +1,6 @@
 # ReadyAPI
 
-<p align="center">
+<p align="">
 <a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
     <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
@@ -177,15 +177,12 @@ Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bl
 
 You will see the automatic interactive API documentation (provided by <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternative API docs
 
 And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
 
 You will see the alternative automatic documentation (provided by <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
-
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
 ## Example upgrade
 
@@ -231,15 +228,11 @@ Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bl
 
 * The interactive API documentation will be automatically updated, including the new body:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
-
 * Click on the button "Try it out", it allows you to fill the parameters and directly interact with the API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
 
 * Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
 
 ### Alternative API docs upgrade
 
@@ -247,7 +240,6 @@ And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" targe
 
 * The alternative documentation will also reflect the new query parameter and body:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
 ### Recap
 
