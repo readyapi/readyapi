@@ -5,6 +5,9 @@ on:
     - cron: "0 12 * * *"
   workflow_dispatch:
 
+permissions:
+  pull-requests: write
+
 jobs:
   label-approved:
     if: github.repository_owner == 'khulnasoft'
@@ -16,7 +19,7 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
     - uses: docker://khulnasoft/label-approved:latest
       with:
-        token: ${{ secrets.ORG_REPO_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         config: >
           {
             "approved-1":
