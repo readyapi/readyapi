@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* Update notify-translations.yml. PR [#86](https://github.com/khulnasoft/readyapi/pull/86) by [@gitworkflows](https://github.com/gitworkflows).
 * Update label-approved.yml. PR [#85](https://github.com/khulnasoft/readyapi/pull/85) by [@gitworkflows](https://github.com/gitworkflows).
 * Update README.md. PR [#83](https://github.com/khulnasoft/readyapi/pull/83) by [@NxPKG](https://github.com/NxPKG).
 * sqldev add. PR [#81](https://github.com/khulnasoft/readyapi/pull/81) by [@NxPKG](https://github.com/NxPKG).
