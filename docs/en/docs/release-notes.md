@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* refactor: change methods not using its bound instance to staticmethods. PR [#78](https://github.com/khulnasoft/readyapi/pull/78) by [@deepsource-autofix[bot]](https://github.com/apps/deepsource-autofix).
 * Update notify-translations.yml. PR [#86](https://github.com/khulnasoft/readyapi/pull/86) by [@gitworkflows](https://github.com/gitworkflows).
 * Update label-approved.yml. PR [#85](https://github.com/khulnasoft/readyapi/pull/85) by [@gitworkflows](https://github.com/gitworkflows).
 * Update README.md. PR [#83](https://github.com/khulnasoft/readyapi/pull/83) by [@NxPKG](https://github.com/NxPKG).
