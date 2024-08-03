@@ -14,7 +14,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
 * Развёртывается в режиме Docker Swarm.
 * Интегрирован с **Docker Compose** и оптимизирован для локальной разработки.
 * **Готовый к реальной работе** веб-сервер Python использующий Uvicorn и Gunicorn.
-* Бэкенд построен на фреймворке <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">**ReadyAPI**</a>:
+* Бэкенд построен на фреймворке <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a>:
     * **Быстрый**: Высокопроизводительный, на уровне **NodeJS** и **Go** (благодаря Starlette и Pydantic).
     * **Интуитивно понятный**: Отличная поддержка редактора. <dfn title="также известное как автозаполнение, интеллектуальность, автозавершение">Автодополнение кода</dfn> везде. Меньше времени на отладку.
     * **Простой**: Разработан так, чтоб быть простым в использовании и изучении. Меньше времени на чтение документации.

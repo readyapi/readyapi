@@ -12,13 +12,13 @@ ReadyAPIやユーザーや開発者を応援したいですか？
 
 ## GitHubで **ReadyAPI** にStar
 
-GitHubでReadyAPIに「Star」をつけることができます (右上部のStarボタンをクリック): <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">https://github.com/khulnasoft/readyapi</a>. ⭐️
+GitHubでReadyAPIに「Star」をつけることができます (右上部のStarボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
 
 スターを増やすことで、他のユーザーの目につきやすくなり、多くの人にとって便利なものであることを示せます。
 
 ## GitHubレポジトリのリリースをWatch
 
-GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリック): <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">https://github.com/khulnasoft/readyapi</a>. 👀
+GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 そこで「Releases only」を選択できます。
 
@@ -42,7 +42,7 @@ GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリ
 
 ## **ReadyAPI** に関するツイート
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving ReadyAPI because... https://github.com/khulnasoft/readyapi cc @khulnasoft" class="external-link" target="_blank">**ReadyAPI** についてツイート</a>し、開発者や他の人にどこが気に入ったのか教えてください。🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving ReadyAPI because... https://github.com/readyapi/readyapi cc @khulnasoft" class="external-link" target="_blank">**ReadyAPI** についてツイート</a>し、開発者や他の人にどこが気に入ったのか教えてください。🎉
 
 **ReadyAPI** がどのように使われ、どこが気に入られ、どんなプロジェクト/会社で使われているかなどについて知りたいです。
 
@@ -54,11 +54,11 @@ GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリ
 
 ## GitHub issuesで他の人を助ける
 
-<a href="https://github.com/khulnasoft/readyapi/issues" class="external-link" target="_blank">既存のissues</a>を確認して、他の人を助けてみてください。皆さんが回答を知っているかもしれない質問がほとんどです。🤓
+<a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">既存のissues</a>を確認して、他の人を助けてみてください。皆さんが回答を知っているかもしれない質問がほとんどです。🤓
 
 ## GitHubレポジトリをWatch
 
-GitHubでReadyAPIを「watch」できます (右上部の「watch」ボタンをクリック): <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">https://github.com/khulnasoft/readyapi</a>. 👀
+GitHubでReadyAPIを「watch」できます (右上部の「watch」ボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 「Releases only」ではなく「Watching」を選択すると、新たなissueが立てられた際に通知されます。
 
@@ -66,7 +66,7 @@ GitHubでReadyAPIを「watch」できます (右上部の「watch」ボタンを
 
 ## issuesを立てる
 
-GitHubレポジトリで<a href="https://github.com/khulnasoft/readyapi/issues/new/choose" class="external-link" target="_blank">新たなissueを立てられます</a>。例えば:
+GitHubレポジトリで<a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">新たなissueを立てられます</a>。例えば:
 
 * 質問、または、問題の報告
 * 新機能の提案
@@ -75,7 +75,7 @@ GitHubレポジトリで<a href="https://github.com/khulnasoft/readyapi/issues/n
 
 ## プルリクエストをする
 
-以下の様な<a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">プルリクエストを作成</a>できます:
+以下の様な<a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">プルリクエストを作成</a>できます:
 
 * ドキュメントのタイプミスを修正。
 * 新たなドキュメントセクションを提案。

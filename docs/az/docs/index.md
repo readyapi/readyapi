@@ -5,11 +5,11 @@
     <em>ReadyAPI framework, yüksək məshuldarlı, öyrənməsi asan, çevik kodlama, istifadəyə hazırdır</em>
 </p>
 <p align="center">
-<a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/khulnasoft/readyapi" target="_blank">
-    <img src="https://coverage-badge.samuelcolvin.workers.dev/khulnasoft/readyapi.svg" alt="Əhatə">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Əhatə">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Paket versiyası">
@@ -23,7 +23,7 @@
 
 **Sənədlər**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**Qaynaq Kodu**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**Qaynaq Kodu**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -63,7 +63,7 @@ ReadyAPI Python 3.8+ ilə API yaratmaq üçün standart Python <abbr title="Tip 
 
 "_[...] Son günlərdə **ReadyAPI**-ı çox istifadə edirəm. [...]  Əslində onu komandamın bütün **Microsoftda ML sevislərində** istifadə etməyi planlayıram. Onların bəziləri **windows**-un əsas məhsuluna və bəzi **Office** məhsullarına inteqrasiya olunurlar._"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

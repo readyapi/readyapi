@@ -163,7 +163,7 @@ async function main() {
         div.innerHTML = '<ul></ul>'
         const ul = document.querySelector('.github-topic-projects ul')
         data.forEach(v => {
-            if (v.full_name === 'khulnasoft/readyapi') {
+            if (v.full_name === 'readyapi/readyapi') {
                 return
             }
             const li = document.createElement('li')

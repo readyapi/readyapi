@@ -14,11 +14,11 @@ hide:
     <em>ReadyAPI 프레임워크, 고성능, 간편한 학습, 빠른 코드 작성, 준비된 프로덕션</em>
 </p>
 <p align="center">
-<a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
 </a>
-<a href="https://codecov.io/gh/khulnasoft/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/khulnasoft/readyapi?color=%2334D058" alt="Coverage">
+<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi?color=%2334D058" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -29,7 +29,7 @@ hide:
 
 **문서**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**소스 코드**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**소스 코드**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -70,7 +70,7 @@ ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌�
 
 "_[...] 저는 요즘 **ReadyAPI**를 많이 사용하고 있습니다. [...] 사실 우리 팀의 **마이크로소프트 ML 서비스** 전부를 바꿀 계획입니다. 그중 일부는 핵심 **Windows**와 몇몇의 **Office** 제품들이 통합되고 있습니다._"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>마이크로소프트</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>마이크로소프트</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

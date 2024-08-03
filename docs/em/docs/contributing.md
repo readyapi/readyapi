@@ -233,14 +233,14 @@ Uvicorn 🔢 🔜 ⚙️ ⛴ `8000`, 🧾 🔛 ⛴ `8008` 🏆 🚫 ⚔.
 
 #### 💁‍♂ &amp; 📄
 
-* ✅ ⏳ <a href="https://github.com/khulnasoft/readyapi/pulls" class="external-link" target="_blank">♻ 🚲 📨</a> 👆 🇪🇸 &amp; 🚮 📄 ✔ 🔀 ⚖️ ✔ 👫.
+* ✅ ⏳ <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">♻ 🚲 📨</a> 👆 🇪🇸 &amp; 🚮 📄 ✔ 🔀 ⚖️ ✔ 👫.
 
 !!! tip
     👆 💪 <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request" class="external-link" target="_blank">🚮 🏤 ⏮️ 🔀 🔑</a> ♻ 🚲 📨.
 
     ✅ 🩺 🔃 <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews" class="external-link" target="_blank">❎ 🚲 📨 📄</a> ✔ ⚫️ ⚖️ 📨 🔀.
 
-* ✅ <a href="https://github.com/khulnasoft/readyapi/issues" class="external-link" target="_blank">❔</a> 👀 🚥 📤 1️⃣ 🛠️ ✍ 👆 🇪🇸.
+* ✅ <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">❔</a> 👀 🚥 📤 1️⃣ 🛠️ ✍ 👆 🇪🇸.
 
 * 🚮 👁 🚲 📨 📍 📃 💬. 👈 🔜 ⚒ ⚫️ 🌅 ⏩ 🎏 📄 ⚫️.
 

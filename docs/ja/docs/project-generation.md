@@ -14,7 +14,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
 * Docker Swarm モードデプロイ。
 * ローカル開発環境向けの**Docker Compose**インテグレーションと最適化。
 * UvicornとGunicornを使用した**リリース可能な** Python web サーバ。
-* Python <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> バックエンド:
+* Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> バックエンド:
     * **高速**: **NodeJS** や **Go** 並みのとても高いパフォーマンス (Starlette と Pydantic のおかげ)。
     * **直感的**: 素晴らしいエディタのサポートや <abbr title="自動補完、インテリセンスとも呼ばれる">補完。</abbr> デバッグ時間の短縮。
     * **簡単**: 簡単に利用、習得できるようなデザイン。ドキュメントを読む時間を削減。

@@ -47,9 +47,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/khulnasoft/readyapi"
+Homepage = "https://github.com/readyapi/readyapi"
 Documentation = "https://readyapi.khulnasoft.com/"
-Repository = "https://github.com/khulnasoft/readyapi"
+Repository = "https://github.com/readyapi/readyapi"
 
 [project.optional-dependencies]
 

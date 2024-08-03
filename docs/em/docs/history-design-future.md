@@ -1,6 +1,6 @@
 # 📖, 🔧 &amp; 🔮
 
-🕰 🏁, <a href="https://github.com/khulnasoft/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank"> **ReadyAPI** 👩‍💻 💭</a>:
+🕰 🏁, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank"> **ReadyAPI** 👩‍💻 💭</a>:
 
 &gt; ⚫️❔ 📖 👉 🏗 ❓ ⚫️ 😑 ✔️ 👟 ⚪️➡️ 🕳 👌 👩‍❤‍👨 🗓️ [...]
 

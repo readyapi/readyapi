@@ -9,11 +9,11 @@
     <em>ReadyAPI framework, alte prestazioni, facile da imparare, rapido da implementare, pronto per il rilascio in produzione</em>
 </p>
 <p align="center">
-<a href="https://travis-ci.com/khulnasoft/readyapi" target="_blank">
-    <img src="https://travis-ci.com/khulnasoft/readyapi.svg?branch=master" alt="Build Status">
+<a href="https://travis-ci.com/readyapi/readyapi" target="_blank">
+    <img src="https://travis-ci.com/readyapi/readyapi.svg?branch=master" alt="Build Status">
 </a>
-<a href="https://codecov.io/gh/khulnasoft/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/khulnasoft/readyapi" alt="Coverage">
+<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://badge.fury.io/py/readyapi.svg" alt="Package version">
@@ -24,7 +24,7 @@
 
 **Documentazione**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**Codice Sorgente**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**Codice Sorgente**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -64,7 +64,7 @@ Le sue caratteristiche principali sono:
 
 "_[...] I'm using **ReadyAPI** a ton these days. [...] I'm actually planning to use it for all of my team's **ML services at Microsoft**. Some of them are getting integrated into the core **Windows** product and some **Office** products._"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

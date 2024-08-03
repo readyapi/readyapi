@@ -5,11 +5,11 @@
     <em>ReadyAPI 框架，高效能，易於學習，快速開發，適用於生產環境</em>
 </p>
 <p align="center">
-<a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/khulnasoft/readyapi" target="_blank">
-    <img src="https://coverage-badge.samuelcolvin.workers.dev/khulnasoft/readyapi.svg" alt="Coverage">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -23,7 +23,7 @@
 
 **文件**： <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**程式碼**： <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**程式碼**： <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -63,7 +63,7 @@ ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python 3
 
 "_[...] 近期大量的使用 **ReadyAPI**。 [...] 目前正在計畫在**微軟**團隊的**機器學習**服務中導入。其中一些正在整合到核心的 **Windows** 產品和一些 **Office** 產品。_"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

@@ -236,14 +236,14 @@ Uvicornはデフォルトでポート`8000`を使用するため、ポート`800
 
 #### 豆知識とガイドライン
 
-* あなたの言語の<a href="https://github.com/khulnasoft/readyapi/pulls" class="external-link" target="_blank">今あるプルリクエスト</a>を確認し、変更や承認をするレビューを追加します。
+* あなたの言語の<a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">今あるプルリクエスト</a>を確認し、変更や承認をするレビューを追加します。
 
 !!! tip "豆知識"
     すでにあるプルリクエストに<a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request" class="external-link" target="_blank">修正提案つきのコメントを追加</a>できます。
 
     修正提案の承認のために<a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews" class="external-link" target="_blank">プルリクエストのレビューの追加</a>のドキュメントを確認してください。
 
-* <a href="https://github.com/khulnasoft/readyapi/issues" class="external-link" target="_blank">issues</a>をチェックして、あなたの言語に対応する翻訳があるかどうかを確認してください。
+* <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">issues</a>をチェックして、あなたの言語に対応する翻訳があるかどうかを確認してください。
 
 * 翻訳したページごとに1つのプルリクエストを追加します。これにより、他のユーザーがレビューしやすくなります。
 

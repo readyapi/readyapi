@@ -14,7 +14,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
 * Modo de implantação Docker Swarm.
 * Integração e otimização **Docker Compose** para desenvolvimento local.
 * **Pronto para Produção** com servidor _web_ usando Uvicorn e Gunicorn.
-* _Backend_ <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> Python:
+* _Backend_ <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> Python:
     * **Rápido**: Alta performance, no nível de **NodeJS** e **Go** (graças ao Starlette e Pydantic).
     * **Intuitivo**: Ótimo suporte de editor. <abbr title="também conhecido como auto-complete, auto completação, IntelliSense">_Auto-Complete_</abbr> em todo lugar. Menos tempo _debugando_.
     * **Fácil**: Projetado para ser fácil de usar e aprender. Menos tempo lendo documentações.
