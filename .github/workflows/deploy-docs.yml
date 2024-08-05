@@ -51,7 +51,7 @@ jobs:
           git init
           git add .
           git commit -m "Deploy docs"
-          git remote add origin https://x-access-token:${{ secrets.ORG_REPO_TOKEN }}@github.com/khulnasoft/readyapi
+          git remote add origin https://x-access-token:${{ secrets.ORG_REPO_TOKEN }}@github.com/readyapi/readyapi
           git push --force origin master:gh-pages
 
       - name: Comment Deploy

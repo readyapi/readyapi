@@ -89,7 +89,7 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 </div>
 {% endif %}
 
-📤 📚 🎏 👨‍🔬 (🌅 🌘 💯), 👆 💪 👀 👫 🌐 <a href="https://github.com/khulnasoft/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI 📂 👨‍🔬 📃</a>. 👶
+📤 📚 🎏 👨‍🔬 (🌅 🌘 💯), 👆 💪 👀 👫 🌐 <a href="https://github.com/readyapi/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI 📂 👨‍🔬 📃</a>. 👶
 
 ## 🔝 👨‍🔬
 
@@ -176,7 +176,7 @@ ReadyAPI ✔️ 🎆 👪 👈 🙋 👫👫 ⚪️➡️ 🌐 🖥.
 
 ✴️ ✅ 🎯 👈 🛎 🌘 ⭐, &amp; 📚 💼 🌅 😩, 💖 🤝 🎏 ⏮️ ❔ &amp; ⚖ 🚲 📨 ⏮️ ✍.
 
-💽 ⚖ 🔠 🗓️, 👆 💪 ✍ <a href="https://github.com/khulnasoft/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">ℹ 📟 📥</a>.
+💽 ⚖ 🔠 🗓️, 👆 💪 ✍ <a href="https://github.com/readyapi/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">ℹ 📟 📥</a>.
 
 📥 👤 🎦 💰 ⚪️➡️ 💰.
 

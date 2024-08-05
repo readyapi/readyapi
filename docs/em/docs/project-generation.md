@@ -14,7 +14,7 @@
 * ☁ 🐝 📳 🛠️.
 * **☁ ✍** 🛠️ &amp; 🛠️ 🇧🇿 🛠️.
 * **🏭 🔜** 🐍 🕸 💽 ⚙️ Uvicorn &amp; 🐁.
-* 🐍 <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> 👩‍💻:
+* 🐍 <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> 👩‍💻:
     * **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic).
     * **🏋️**: 👑 👨‍🎨 🐕‍🦺. <abbr title="also known as auto-complete, autocompletion, IntelliSense">🛠️</abbr> 🌐. 🌘 🕰 🛠️.
     * **⏩**: 🔧 ⏩ ⚙️ &amp; 💡. 🌘 🕰 👂 🩺.

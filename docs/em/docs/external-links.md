@@ -7,7 +7,7 @@
 📥 ❌ 📇 👫.
 
 !!! tip
-    🚥 👆 ✔️ 📄, 🏗, 🧰, ⚖️ 🕳 🔗 **ReadyAPI** 👈 🚫 📇 📥, ✍ <a href="https://github.com/khulnasoft/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">🚲 📨 ❎ ⚫️</a>.
+    🚥 👆 ✔️ 📄, 🏗, 🧰, ⚖️ 🕳 🔗 **ReadyAPI** 👈 🚫 📇 📥, ✍ <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">🚲 📨 ❎ ⚫️</a>.
 
 ## 📄
 

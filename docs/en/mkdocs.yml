@@ -36,8 +36,8 @@ theme:
   logo: img/icon-white.svg
   favicon: img/favicon.png
   language: en
-repo_name: khulnasoft/readyapi
-repo_url: https://github.com/khulnasoft/readyapi
+repo_name: readyapi/readyapi
+repo_url: https://github.com/readyapi/readyapi
 edit_uri: ''
 plugins:
   search: null
@@ -257,7 +257,7 @@ extra:
     property: G-YNEVN69SC3
   social:
   - icon: fontawesome/brands/github-alt
-    link: https://github.com/khulnasoft/readyapi
+    link: https://github.com/readyapi/readyapi
   - icon: fontawesome/brands/discord
     link: https://discord.gg/VQjSZaeJmf
   - icon: fontawesome/brands/twitter

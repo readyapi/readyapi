@@ -89,7 +89,7 @@ Sie haben Quellcode, Dokumentation, Übersetzungen, usw. beigesteuert. 📦
 </div>
 {% endif %}
 
-Es gibt viele andere Mitwirkende (mehr als hundert), Sie können sie alle auf der <a href="https://github.com/khulnasoft/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Contributors-Seite</a> sehen. 👷
+Es gibt viele andere Mitwirkende (mehr als hundert), Sie können sie alle auf der <a href="https://github.com/readyapi/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Contributors-Seite</a> sehen. 👷
 
 ## Top-Rezensenten
 
@@ -169,7 +169,7 @@ Der Hauptzweck dieser Seite ist es zu zeigen, wie die Gemeinschaft anderen hilft
 
 Das beinhaltet auch Hilfe, die normalerweise weniger sichtbar und in vielen Fällen mühsamer ist, wie, anderen bei Problemen zu helfen und Pull Requests mit Übersetzungen zu überprüfen.
 
-Diese Daten werden jeden Monat berechnet, Sie können den <a href="https://github.com/khulnasoft/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">Quellcode hier lesen</a>.
+Diese Daten werden jeden Monat berechnet, Sie können den <a href="https://github.com/readyapi/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">Quellcode hier lesen</a>.
 
 Hier weise ich auch auf Beiträge von Sponsoren hin.
 

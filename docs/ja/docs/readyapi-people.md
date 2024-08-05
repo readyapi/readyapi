@@ -90,7 +90,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 </div>
 {% endif %}
 
-他にもたくさん (100人以上) の contributors がいます。<a href="https://github.com/khulnasoft/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Contributors ページ</a>ですべての contributors を確認できます。👷
+他にもたくさん (100人以上) の contributors がいます。<a href="https://github.com/readyapi/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Contributors ページ</a>ですべての contributors を確認できます。👷
 
 ## Top Reviewers
 
@@ -177,7 +177,7 @@ ReadyAPIには、様々なバックグラウンドの人々を歓迎する素晴
 
 特に、他の人の issues を支援したり、翻訳のプルリクエストを確認したりするなど、通常は目立たず、多くの場合、より困難な作業を含みます。
 
-データは毎月集計されます。<a href="https://github.com/khulnasoft/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">ソースコードはこちら</a>で確認できます。
+データは毎月集計されます。<a href="https://github.com/readyapi/readyapi/blob/master/.github/actions/people/app/main.py" class="external-link" target="_blank">ソースコードはこちら</a>で確認できます。
 
 ここでは、スポンサーの貢献も強調しています。
 

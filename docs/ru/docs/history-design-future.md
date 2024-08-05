@@ -1,6 +1,6 @@
 # История создания и дальнейшее развитие
 
-Однажды, <a href="https://github.com/khulnasoft/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">один из пользователей **ReadyAPI** задал вопрос</a>:
+Однажды, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">один из пользователей **ReadyAPI** задал вопрос</a>:
 
 > Какова история этого проекта? Создаётся впечатление, что он явился из ниоткуда и завоевал мир за несколько недель [...]
 

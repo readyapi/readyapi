@@ -14,11 +14,11 @@ hide:
     <em>Framework ReadyAPI, alta performance, fácil de aprender, fácil de codar, pronto para produção</em>
 </p>
 <p align="center">
-<a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
 </a>
-<a href="https://codecov.io/gh/khulnasoft/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/khulnasoft/readyapi?color=%2334D058" alt="Coverage">
+<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi?color=%2334D058" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -29,7 +29,7 @@ hide:
 
 **Documentação**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**Código fonte**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**Código fonte**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -69,7 +69,7 @@ Os recursos chave são:
 
 "*[...] Estou usando **ReadyAPI** muito esses dias. [...] Estou na verdade planejando utilizar ele em todos os times de **serviços _Machine Learning_ na Microsoft**. Alguns deles estão sendo integrados no _core_ do produto **Windows** e alguns produtos **Office**.*"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

@@ -14,11 +14,11 @@ hide:
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
-<a href="https://travis-ci.com/khulnasoft/readyapi" target="_blank">
-    <img src="https://travis-ci.com/khulnasoft/readyapi.svg?branch=master" alt="Build Status">
+<a href="https://travis-ci.com/readyapi/readyapi" target="_blank">
+    <img src="https://travis-ci.com/readyapi/readyapi.svg?branch=master" alt="Build Status">
 </a>
-<a href="https://codecov.io/gh/khulnasoft/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/khulnasoft/readyapi" alt="Coverage">
+<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://badge.fury.io/py/readyapi.svg" alt="Package version">
@@ -29,7 +29,7 @@ hide:
 
 **ドキュメント**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**ソースコード**: <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**ソースコード**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -70,7 +70,7 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以
 
 "_[...] 最近 **ReadyAPI** を使っています。 [...] 実際に私のチームの全ての **Microsoft の機械学習サービス** で使用する予定です。 そのうちのいくつかのコアな**Windows**製品と**Office**製品に統合されつつあります。_"
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

@@ -14,7 +14,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
 * Docker Swarm Mode ile deployment.
 * **Docker Compose** entegrasyonu ve lokal geliştirme için optimizasyon.
 * Uvicorn ve Gunicorn ile **Production ready** Python web server'ı.
-* Python <a href="https://github.com/khulnasoft/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> backend:
+* Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> backend:
     * **Hızlı**: **NodeJS** ve **Go** ile eşit, çok yüksek performans (Starlette ve Pydantic'e teşekkürler).
     * **Sezgisel**: Editor desteğı. <abbr title="auto-complete, IntelliSense gibi isimlerle de bilinir">Otomatik tamamlama</abbr>. Daha az debugging.
     * **Kolay**: Kolay öğrenip kolay kullanmak için tasarlandı. Daha az döküman okuma daha çok iş.

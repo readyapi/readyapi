@@ -7,7 +7,7 @@
 それらの不完全なリストを以下に示します。
 
 !!! tip "豆知識"
-    ここにまだ載っていない**ReadyAPI**に関連する記事、プロジェクト、ツールなどがある場合は、 <a href="https://github.com/khulnasoft/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">プルリクエストして下さい</a>。
+    ここにまだ載っていない**ReadyAPI**に関連する記事、プロジェクト、ツールなどがある場合は、 <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">プルリクエストして下さい</a>。
 
 {% for section_name, section_content in external_links.items() %}
 

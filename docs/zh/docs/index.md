@@ -14,11 +14,11 @@ hide:
     <em>ReadyAPI 框架，高性能，易于学习，高效编码，生产可用</em>
 </p>
 <p align="center">
-<a href="https://github.com/khulnasoft/readyapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/khulnasoft/readyapi/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
 </a>
-<a href="https://codecov.io/gh/khulnasoft/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/khulnasoft/readyapi?color=%2334D058" alt="Coverage">
+<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi?color=%2334D058" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -32,7 +32,7 @@ hide:
 
 **文档**： <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
 
-**源码**： <a href="https://github.com/khulnasoft/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
+**源码**： <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
 
@@ -73,7 +73,7 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 「_[...] 最近我一直在使用 **ReadyAPI**。[...] 实际上我正在计划将其用于我所在的**微软**团队的所有**机器学习服务**。其中一些服务正被集成进核心 **Windows** 产品和一些 **Office** 产品。_」
 
-<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>微软</strong> <a href="https://github.com/khulnasoft/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>微软</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
