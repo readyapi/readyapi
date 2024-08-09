@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from readyapi import Path, ReadyAPI
+from readyapi import ReadyAPI, Path
 
 app = ReadyAPI()
 

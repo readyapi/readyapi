@@ -3,8 +3,8 @@ from typing import Annotated, Union
 from readyapi import (
     Cookie,
     Depends,
-    Query,
     ReadyAPI,
+    Query,
     WebSocket,
     WebSocketException,
     status,

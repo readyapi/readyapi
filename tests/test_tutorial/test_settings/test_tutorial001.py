@@ -1,5 +1,5 @@
-from pytest import MonkeyPatch
 from readyapi.testclient import TestClient
+from pytest import MonkeyPatch
 
 from ...utils import needs_pydanticv2
 

@@ -1,8 +1,8 @@
 from readyapi import (
     Cookie,
     Depends,
-    Query,
     ReadyAPI,
+    Query,
     WebSocket,
     WebSocketException,
     status,

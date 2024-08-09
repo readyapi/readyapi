@@ -1,10 +1,10 @@
 from typing import Optional
 
 from dirty_equals import IsDict
-from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI, Security
 from readyapi.security import OAuth2, OAuth2PasswordRequestFormStrict
 from readyapi.testclient import TestClient
+from pydantic import BaseModel
 
 app = ReadyAPI()
 

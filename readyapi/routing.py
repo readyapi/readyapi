@@ -19,7 +19,6 @@ from typing import (
     Union,
 )
 
-from pydantic import BaseModel
 from readyapi import params
 from readyapi._compat import (
     ModelField,
@@ -53,6 +52,7 @@ from readyapi.utils import (
     get_value_or_default,
     is_body_allowed_for_status_code,
 )
+from pydantic import BaseModel
 from starlette import routing
 from starlette.concurrency import run_in_threadpool
 from starlette.exceptions import HTTPException

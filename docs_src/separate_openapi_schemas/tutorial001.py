@@ -1,7 +1,7 @@
 from typing import List, Union
 
-from pydantic import BaseModel
 from readyapi import ReadyAPI
+from pydantic import BaseModel
 
 
 class Item(BaseModel):
