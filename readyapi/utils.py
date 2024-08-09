@@ -15,6 +15,8 @@ from typing import (
 from weakref import WeakKeyDictionary
 
 import readyapi
+from pydantic import BaseModel, create_model
+from pydantic.fields import FieldInfo
 from readyapi._compat import (
     PYDANTIC_V2,
     BaseConfig,
@@ -26,17 +28,15 @@ from readyapi._compat import (
     lenient_issubclass,
 )
 from readyapi.datastructures import DefaultPlaceholder, DefaultType
-from pydantic import BaseModel, create_model
-from pydantic.fields import FieldInfo
 from typing_extensions import Literal
 
 if TYPE_CHECKING:  # pragma: nocover
     from .routing import APIRoute
 
 # Cache for `create_cloned_field`
-_CLONED_TYPES_CACHE: MutableMapping[Type[BaseModel], Type[BaseModel]] = (
-    WeakKeyDictionary()
-)
+_CLONED_TYPES_CACHE: MutableMapping[
+    Type[BaseModel], Type[BaseModel]
+] = WeakKeyDictionary()
 
 
 def is_body_allowed_for_status_code(status_code: Union[int, str, None]) -> bool:

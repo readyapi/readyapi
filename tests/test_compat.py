@@ -1,5 +1,7 @@
 from typing import List, Union
 
+from pydantic import BaseConfig, BaseModel, ConfigDict
+from pydantic.fields import FieldInfo
 from readyapi import ReadyAPI, UploadFile
 from readyapi._compat import (
     ModelField,
@@ -9,8 +11,6 @@ from readyapi._compat import (
     is_uploadfile_sequence_annotation,
 )
 from readyapi.testclient import TestClient
-from pydantic import BaseConfig, BaseModel, ConfigDict
-from pydantic.fields import FieldInfo
 
 from .utils import needs_pydanticv1, needs_pydanticv2
 

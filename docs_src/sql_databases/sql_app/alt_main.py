@@ -1,6 +1,6 @@
 from typing import List
 
-from readyapi import Depends, ReadyAPI, HTTPException, Request, Response
+from readyapi import Depends, HTTPException, ReadyAPI, Request, Response
 from sqlalchemy.orm import Session
 
 from . import crud, models, schemas

@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, HTTPException
+from readyapi import HTTPException, ReadyAPI
 
 app = ReadyAPI()
 

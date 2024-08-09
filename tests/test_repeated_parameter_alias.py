@@ -1,4 +1,4 @@
-from readyapi import ReadyAPI, Path, Query, status
+from readyapi import Path, Query, ReadyAPI, status
 from readyapi.testclient import TestClient
 
 app = ReadyAPI()

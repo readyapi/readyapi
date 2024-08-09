@@ -3,8 +3,8 @@ from typing import Union
 from couchbase import LOCKMODE_WAIT
 from couchbase.bucket import Bucket
 from couchbase.cluster import Cluster, PasswordAuthenticator
-from readyapi import ReadyAPI
 from pydantic import BaseModel
+from readyapi import ReadyAPI
 
 USERPROFILE_DOC_TYPE = "userprofile"
 
