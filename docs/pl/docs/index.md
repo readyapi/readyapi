@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -33,7 +30,7 @@ hide:
 
 ---
 
-ReadyAPI to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona 3.8+ bazujący na standardowym typowaniu Pythona.
+ReadyAPI to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona bazujący na standardowym typowaniu Pythona.
 
 Kluczowe cechy:
 
@@ -105,17 +102,15 @@ Kluczowe cechy:
 
 ---
 
-## **Cligenius**, ReadyAPI aplikacji konsolowych
+## **Typer**, ReadyAPI aplikacji konsolowych
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
+**Typer** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
 
 ## Wymagania
-
-Python 3.8+
 
 ReadyAPI oparty jest na:
 
@@ -134,7 +129,7 @@ $ pip install readyapi
 
 </div>
 
-Na serwerze produkcyjnym będziesz także potrzebował serwera ASGI, np. <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> lub <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Na serwerze produkcyjnym będziesz także potrzebował serwera ASGI, np. <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> lub <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -330,7 +325,7 @@ Robisz to tak samo jak ze standardowymi typami w Pythonie.
 
 Nie musisz sie uczyć żadnej nowej składni, metod lub klas ze specyficznych bibliotek itp.
 
-Po prostu standardowy **Python 3.8+**.
+Po prostu standardowy **Python**.
 
 Na przykład, dla danych typu `int`:
 
@@ -455,12 +450,12 @@ Używane przez Starlette:
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Wymagany dla wsparcia `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Wymagane dla wsparcia `SchemaGenerator` z Starlette (z ReadyAPI prawdopodobnie tego nie potrzebujesz).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Wymagane dla wsparcia `GraphQLApp`.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Wymagane jeżeli chcesz korzystać z `UJSONResponse`.
 
 Używane przez ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - jako serwer, który ładuje i obsługuje Twoją aplikację.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Wymagane jeżeli chcesz używać `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Wymagane jeżeli chcesz korzystać z `UJSONResponse`.
 
 Możesz zainstalować wszystkie te aplikacje przy pomocy `pip install readyapi[all]`.
 

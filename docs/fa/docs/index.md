@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -105,13 +102,13 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 ---
 
-## **Cligenius**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
+## **Typer**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>. استفاده کنید.
+اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>. استفاده کنید.
 
-**Cligenius** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
+**Typer** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
 
 ## نیازمندی‌ها
 
@@ -134,7 +131,7 @@ $ pip install readyapi
 
 </div>
 
-نصب یک سرور پروداکشن نظیر <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> یا <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a> نیز جزء نیازمندی‌هاست.
+نصب یک سرور پروداکشن نظیر <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> یا <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a> نیز جزء نیازمندی‌هاست.
 
 <div class="termy">
 
@@ -456,12 +453,12 @@ item: Item
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - در صورتی که بخواید از `SessionMiddleware` پشتیبانی کنید.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - برای پشتیبانی `SchemaGenerator` در Starlet (به احتمال زیاد برای کار کردن با ReadyAPI به آن نیازی پیدا نمی‌کنید).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - در صورتی که از  `GraphQLApp` پشتیبانی می‌کنید.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - در صورتی که بخواهید از `UJSONResponse` استفاده کنید.
 
 استفاده شده توسط ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - برای سرور اجرا کننده برنامه وب.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - در صورتی که بخواهید از `ORJSONResponse` استفاده کنید.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - در صورتی که بخواهید از `UJSONResponse` استفاده کنید.
 
 می‌توان همه این موارد را با استفاده از دستور `pip install readyapi[all]`. به صورت یکجا نصب کرد.
 

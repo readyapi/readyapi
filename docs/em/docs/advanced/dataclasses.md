@@ -20,12 +20,15 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 👉 👷 🎏 🌌 ⏮️ Pydantic 🏷. &amp; ⚫️ 🤙 🏆 🎏 🌌 🔘, ⚙️ Pydantic.
 
-!!! info
-    ✔️ 🤯 👈 🎻 💪 🚫 🌐 Pydantic 🏷 💪.
+/// info
 
-    , 👆 5️⃣📆 💪 ⚙️ Pydantic 🏷.
+✔️ 🤯 👈 🎻 💪 🚫 🌐 Pydantic 🏷 💪.
 
-    ✋️ 🚥 👆 ✔️ 📚 🎻 🤥 🤭, 👉 👌 🎱 ⚙️ 👫 🏋️ 🕸 🛠️ ⚙️ ReadyAPI. 👶
+, 👆 5️⃣📆 💪 ⚙️ Pydantic 🏷.
+
+✋️ 🚥 👆 ✔️ 📚 🎻 🤥 🤭, 👉 👌 🎱 ⚙️ 👫 🏋️ 🕸 🛠️ ⚙️ ReadyAPI. 👶
+
+///
 
 ## 🎻 `response_model`
 

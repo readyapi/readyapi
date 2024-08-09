@@ -11,10 +11,13 @@ You can serve static files automatically from a directory using `StaticFiles`.
 {!../../../docs_src/static_files/tutorial001.py!}
 ```
 
-!!! note "Technical Details"
-    You could also use `from starlette.staticfiles import StaticFiles`.
+/// note | "Technical Details"
 
-    **ReadyAPI** provides the same `starlette.staticfiles` as `readyapi.staticfiles` just as a convenience for you, the developer. But it actually comes directly from Starlette.
+You could also use `from starlette.staticfiles import StaticFiles`.
+
+**ReadyAPI** provides the same `starlette.staticfiles` as `readyapi.staticfiles` just as a convenience for you, the developer. But it actually comes directly from Starlette.
+
+///
 
 ### What is "Mounting"
 

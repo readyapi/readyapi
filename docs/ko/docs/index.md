@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -33,7 +30,7 @@ hide:
 
 ---
 
-ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌트에 기초한 Python3.8+의 API를 빌드하기 위한 웹 프레임워크입니다.
+ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌트에 기초한 Python의 API를 빌드하기 위한 웹 프레임워크입니다.
 
 주요 특징으로:
 
@@ -106,17 +103,15 @@ ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌�
 
 ---
 
-## **Cligenius**, ReadyAPI의 CLI
+## **Typer**, ReadyAPI의 CLI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-웹 API 대신 터미널에서 사용할 <abbr title="Command Line Interface">CLI</abbr> 앱을 만들고 있다면, <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>를 확인해 보십시오.
+웹 API 대신 터미널에서 사용할 <abbr title="Command Line Interface">CLI</abbr> 앱을 만들고 있다면, <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>를 확인해 보십시오.
 
-**Cligenius**는 ReadyAPI의 동생입니다. 그리고 **ReadyAPI의 CLI**가 되기 위해 생겼습니다. ⌨️ 🚀
+**Typer**는 ReadyAPI의 동생입니다. 그리고 **ReadyAPI의 CLI**가 되기 위해 생겼습니다. ⌨️ 🚀
 
 ## 요구사항
-
-Python 3.8+
 
 ReadyAPI는 거인들의 어깨 위에 서 있습니다:
 
@@ -135,7 +130,7 @@ $ pip install readyapi
 
 </div>
 
-프로덕션을 위해 <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> 또는 <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>과 같은 ASGI 서버도 필요할 겁니다.
+프로덕션을 위해 <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> 또는 <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>과 같은 ASGI 서버도 필요할 겁니다.
 
 <div class="termy">
 
@@ -332,7 +327,7 @@ def update_item(item_id: int, item: Item):
 
 새로운 문법, 특정 라이브러리의 메소드나 클래스 등을 배울 필요가 없습니다.
 
-그저 표준 **Python 3.8+** 입니다.
+그저 표준 **Python** 입니다.
 
 예를 들어, `int`에 대해선:
 
@@ -456,12 +451,12 @@ Starlette이 사용하는:
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` 지원을 위해 필요.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Starlette의 `SchemaGenerator` 지원을 위해 필요 (ReadyAPI와 쓸때는 필요 없을 것입니다).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - `GraphQLApp` 지원을 위해 필요.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse`를 사용하려면 필요.
 
 ReadyAPI / Starlette이 사용하는:
 
 * <a href="http://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 애플리케이션을 로드하고 제공하는 서버.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - `ORJSONResponse`을 사용하려면 필요.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse`를 사용하려면 필요.
 
 `pip install readyapi[all]`를 통해 이 모두를 설치 할 수 있습니다.
 

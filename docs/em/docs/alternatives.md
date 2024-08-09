@@ -30,12 +30,17 @@
 
 ⚫️ 🕐 🥇 🖼 **🏧 🛠️ 🧾**, &amp; 👉 🎯 🕐 🥇 💭 👈 😮 "🔎" **ReadyAPI**.
 
-!!! note
-    ✳ 🎂 🛠️ ✍ ✡ 🇺🇸🏛. 🎏 👼 💃 &amp; Uvicorn, 🔛 ❔ **ReadyAPI** ⚓️.
+/// note
 
+✳ 🎂 🛠️ ✍ ✡ 🇺🇸🏛. 🎏 👼 💃 &amp; Uvicorn, 🔛 ❔ **ReadyAPI** ⚓️.
 
-!!! check "😮 **ReadyAPI** "
-    ✔️ 🏧 🛠️ 🧾 🕸 👩‍💻 🔢.
+///
+
+/// check | "😮 **ReadyAPI** "
+
+✔️ 🏧 🛠️ 🧾 🕸 👩‍💻 🔢.
+
+///
 
 ### <a href="https://flask.palletsprojects.com" class="external-link" target="_blank">🏺</a>
 
@@ -51,11 +56,13 @@
 
 👐 🦁 🏺, ⚫️ 😑 💖 👍 🏏 🏗 🔗. ⏭ 👜 🔎 "✳ 🎂 🛠️" 🏺.
 
-!!! check "😮 **ReadyAPI** "
-    ◾-🛠️. ⚒ ⚫️ ⏩ 🌀 &amp; 🏏 🧰 &amp; 🍕 💪.
+/// check | "😮 **ReadyAPI** "
 
-    ✔️ 🙅 &amp; ⏩ ⚙️ 🕹 ⚙️.
+◾-🛠️. ⚒ ⚫️ ⏩ 🌀 &amp; 🏏 🧰 &amp; 🍕 💪.
 
+✔️ 🙅 &amp; ⏩ ⚙️ 🕹 ⚙️.
+
+///
 
 ### <a href="https://requests.readthedocs.io" class="external-link" target="_blank">📨</a>
 
@@ -91,11 +98,13 @@ def read_url():
 
 👀 🔀 `requests.get(...)` &amp; `@app.get(...)`.
 
-!!! check "😮 **ReadyAPI** "
-    * ✔️ 🙅 &amp; 🏋️ 🛠️.
-    * ⚙️ 🇺🇸🔍 👩‍🔬 📛 (🛠️) 🔗, 🎯 &amp; 🏋️ 🌌.
-    * ✔️ 🤔 🔢, ✋️ 🏋️ 🛃.
+/// check | "😮 **ReadyAPI** "
 
+* ✔️ 🙅 &amp; 🏋️ 🛠️.
+* ⚙️ 🇺🇸🔍 👩‍🔬 📛 (🛠️) 🔗, 🎯 &amp; 🏋️ 🌌.
+* ✔️ 🤔 🔢, ✋️ 🏋️ 🛃.
+
+///
 
 ### <a href="https://swagger.io/" class="external-link" target="_blank">🦁</a> / <a href="https://github.com/OAI/OpenAPI-Specification/" class="external-link" target="_blank">🗄</a>
 
@@ -109,15 +118,18 @@ def read_url():
 
 👈 ⚫️❔ 🕐❔ 💬 🔃 ⏬ 2️⃣.0️⃣ ⚫️ ⚠ 💬 "🦁", &amp; ⏬ 3️⃣ ➕ "🗄".
 
-!!! check "😮 **ReadyAPI** "
-    🛠️ &amp; ⚙️ 📂 🐩 🛠️ 🔧, ↩️ 🛃 🔗.
+/// check | "😮 **ReadyAPI** "
 
-     &amp; 🛠️ 🐩-⚓️ 👩‍💻 🔢 🧰:
+🛠️ &amp; ⚙️ 📂 🐩 🛠️ 🔧, ↩️ 🛃 🔗.
 
-    * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>
-    * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>
+ &amp; 🛠️ 🐩-⚓️ 👩‍💻 🔢 🧰:
 
-    👫 2️⃣ 👐 ➖ 📶 🌟 &amp; ⚖, ✋️ 🔨 ⏩ 🔎, 👆 💪 🔎 💯 🌖 🎛 👩‍💻 🔢 🗄 (👈 👆 💪 ⚙️ ⏮️ **ReadyAPI**).
+* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>
+* <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>
+
+👫 2️⃣ 👐 ➖ 📶 🌟 &amp; ⚖, ✋️ 🔨 ⏩ 🔎, 👆 💪 🔎 💯 🌖 🎛 👩‍💻 🔢 🗄 (👈 👆 💪 ⚙️ ⏮️ **ReadyAPI**).
+
+///
 
 ### 🏺 🎂 🛠️
 
@@ -135,8 +147,11 @@ def read_url():
 
 ✋️ ⚫️ ✍ ⏭ 📤 🔀 🐍 🆎 🔑. , 🔬 🔠 <abbr title="the definition of how data should be formed">🔗</abbr> 👆 💪 ⚙️ 🎯 🇨🇻 &amp; 🎓 🚚 🍭.
 
-!!! check "😮 **ReadyAPI** "
-    ⚙️ 📟 🔬 "🔗" 👈 🚚 💽 🆎 &amp; 🔬, 🔁.
+/// check | "😮 **ReadyAPI** "
+
+⚙️ 📟 🔬 "🔗" 👈 🚚 💽 🆎 &amp; 🔬, 🔁.
+
+///
 
 ### <a href="https://webargs.readthedocs.io/en/latest/" class="external-link" target="_blank">Webarg</a>
 
@@ -148,11 +163,17 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 ⚫️ 👑 🧰 &amp; 👤 ✔️ ⚙️ ⚫️ 📚 💁‍♂️, ⏭ ✔️ **ReadyAPI**.
 
-!!! info
-    Webarg ✍ 🎏 🍭 👩‍💻.
+/// info
 
-!!! check "😮 **ReadyAPI** "
-    ✔️ 🏧 🔬 📨 📨 💽.
+Webarg ✍ 🎏 🍭 👩‍💻.
+
+///
+
+/// check | "😮 **ReadyAPI** "
+
+✔️ 🏧 🔬 📨 📨 💽.
+
+///
 
 ### <a href="https://apispec.readthedocs.io/en/stable/" class="external-link" target="_blank">APISpec</a>
 
@@ -172,12 +193,17 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 👨‍🎨 💪 🚫 ℹ 🌅 ⏮️ 👈. &amp; 🚥 👥 🔀 🔢 ⚖️ 🍭 🔗 &amp; 💭 🔀 👈 📁#️⃣, 🏗 🔗 🔜 ❌.
 
-!!! info
-    APISpec ✍ 🎏 🍭 👩‍💻.
+/// info
 
+APISpec ✍ 🎏 🍭 👩‍💻.
 
-!!! check "😮 **ReadyAPI** "
-    🐕‍🦺 📂 🐩 🛠️, 🗄.
+///
+
+/// check | "😮 **ReadyAPI** "
+
+🐕‍🦺 📂 🐩 🛠️, 🗄.
+
+///
 
 ### <a href="https://flask-apispec.readthedocs.io/en/latest/" class="external-link" target="_blank">🏺-Apispec</a>
 
@@ -199,11 +225,17 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 &amp; 👫 🎏 🌕-📚 🚂 🧢 [**ReadyAPI** 🏗 🚂](project-generation.md){.internal-link target=_blank}.
 
-!!! info
-    🏺-Apispec ✍ 🎏 🍭 👩‍💻.
+/// info
 
-!!! check "😮 **ReadyAPI** "
-    🏗 🗄 🔗 🔁, ⚪️➡️ 🎏 📟 👈 🔬 🛠️ &amp; 🔬.
+🏺-Apispec ✍ 🎏 🍭 👩‍💻.
+
+///
+
+/// check | "😮 **ReadyAPI** "
+
+🏗 🗄 🔗 🔁, ⚪️➡️ 🎏 📟 👈 🔬 🛠️ &amp; 🔬.
+
+///
 
 ### <a href="https://nestjs.com/" class="external-link" target="_blank">NestJS</a> (&amp; <a href="https://angular.io/" class="external-link" target="_blank">📐</a>)
 
@@ -219,24 +251,33 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 ⚫️ 💪 🚫 🍵 🔁 🏷 📶 👍. , 🚥 🎻 💪 📨 🎻 🎚 👈 ✔️ 🔘 🏑 👈 🔄 🐦 🎻 🎚, ⚫️ 🚫🔜 ☑ 📄 &amp; ✔.
 
-!!! check "😮 **ReadyAPI** "
-    ⚙️ 🐍 🆎 ✔️ 👑 👨‍🎨 🐕‍🦺.
+/// check | "😮 **ReadyAPI** "
 
-    ✔️ 🏋️ 🔗 💉 ⚙️. 🔎 🌌 📉 📟 🔁.
+⚙️ 🐍 🆎 ✔️ 👑 👨‍🎨 🐕‍🦺.
+
+✔️ 🏋️ 🔗 💉 ⚙️. 🔎 🌌 📉 📟 🔁.
+
+///
 
 ### <a href="https://sanic.readthedocs.io/en/latest/" class="external-link" target="_blank">🤣</a>
 
 ⚫️ 🕐 🥇 📶 ⏩ 🐍 🛠️ ⚓️ 🔛 `asyncio`. ⚫️ ⚒ 📶 🎏 🏺.
 
-!!! note "📡 ℹ"
-    ⚫️ ⚙️ <a href="https://github.com/MagicStack/uvloop" class="external-link" target="_blank">`uvloop`</a> ↩️ 🔢 🐍 `asyncio` ➰. 👈 ⚫️❔ ⚒ ⚫️ ⏩.
+/// note | "📡 ℹ"
 
-    ⚫️ 🎯 😮 Uvicorn &amp; 💃, 👈 ⏳ ⏩ 🌘 🤣 📂 📇.
+⚫️ ⚙️ <a href="https://github.com/MagicStack/uvloop" class="external-link" target="_blank">`uvloop`</a> ↩️ 🔢 🐍 `asyncio` ➰. 👈 ⚫️❔ ⚒ ⚫️ ⏩.
 
-!!! check "😮 **ReadyAPI** "
-    🔎 🌌 ✔️ 😜 🎭.
+⚫️ 🎯 😮 Uvicorn &amp; 💃, 👈 ⏳ ⏩ 🌘 🤣 📂 📇.
 
-    👈 ⚫️❔ **ReadyAPI** ⚓️ 🔛 💃, ⚫️ ⏩ 🛠️ 💪 (💯 🥉-🥳 📇).
+///
+
+/// check | "😮 **ReadyAPI** "
+
+🔎 🌌 ✔️ 😜 🎭.
+
+👈 ⚫️❔ **ReadyAPI** ⚓️ 🔛 💃, ⚫️ ⏩ 🛠️ 💪 (💯 🥉-🥳 📇).
+
+///
 
 ### <a href="https://falconframework.org/" class="external-link" target="_blank">🦅</a>
 
@@ -246,12 +287,15 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 , 💽 🔬, 🛠️, &amp; 🧾, ✔️ ⌛ 📟, 🚫 🔁. ⚖️ 👫 ✔️ 🛠️ 🛠️ 🔛 🔝 🦅, 💖 🤗. 👉 🎏 🔺 🔨 🎏 🛠️ 👈 😮 🦅 🔧, ✔️ 1️⃣ 📨 🎚 &amp; 1️⃣ 📨 🎚 🔢.
 
-!!! check "😮 **ReadyAPI** "
-    🔎 🌌 🤚 👑 🎭.
+/// check | "😮 **ReadyAPI** "
 
-    ⤴️ ⏮️ 🤗 (🤗 ⚓️ 🔛 🦅) 😮 **ReadyAPI** 📣 `response` 🔢 🔢.
+🔎 🌌 🤚 👑 🎭.
 
-    👐 ReadyAPI ⚫️ 📦, &amp; ⚙️ ✴️ ⚒ 🎚, 🍪, &amp; 🎛 👔 📟.
+⤴️ ⏮️ 🤗 (🤗 ⚓️ 🔛 🦅) 😮 **ReadyAPI** 📣 `response` 🔢 🔢.
+
+👐 ReadyAPI ⚫️ 📦, &amp; ⚙️ ✴️ ⚒ 🎚, 🍪, &amp; 🎛 👔 📟.
+
+///
 
 ### <a href="https://moltenframework.com/" class="external-link" target="_blank">♨</a>
 
@@ -269,10 +313,13 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 🛣 📣 👁 🥉, ⚙️ 🔢 📣 🎏 🥉 (↩️ ⚙️ 👨‍🎨 👈 💪 🥉 ▶️️ 🔛 🔝 🔢 👈 🍵 🔗). 👉 🔐 ❔ ✳ 🔨 ⚫️ 🌘 ❔ 🏺 (&amp; 💃) 🔨 ⚫️. ⚫️ 🎏 📟 👜 👈 📶 😆 🔗.
 
-!!! check "😮 **ReadyAPI** "
-    🔬 ➕ 🔬 💽 🆎 ⚙️ "🔢" 💲 🏷 🔢. 👉 📉 👨‍🎨 🐕‍🦺, &amp; ⚫️ 🚫 💪 Pydantic ⏭.
+/// check | "😮 **ReadyAPI** "
 
-    👉 🤙 😮 🛠️ 🍕 Pydantic, 🐕‍🦺 🎏 🔬 📄 👗 (🌐 👉 🛠️ 🔜 ⏪ 💪 Pydantic).
+🔬 ➕ 🔬 💽 🆎 ⚙️ "🔢" 💲 🏷 🔢. 👉 📉 👨‍🎨 🐕‍🦺, &amp; ⚫️ 🚫 💪 Pydantic ⏭.
+
+👉 🤙 😮 🛠️ 🍕 Pydantic, 🐕‍🦺 🎏 🔬 📄 👗 (🌐 👉 🛠️ 🔜 ⏪ 💪 Pydantic).
+
+///
 
 ### <a href="https://www.hug.rest/" class="external-link" target="_blank">🤗</a>
 
@@ -288,15 +335,21 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 ⚫️ ⚓️ 🔛 ⏮️ 🐩 🔁 🐍 🕸 🛠️ (🇨🇻), ⚫️ 💪 🚫 🍵 *️⃣ &amp; 🎏 👜, 👐 ⚫️ ✔️ ↕ 🎭 💁‍♂️.
 
-!!! info
-    🤗 ✍ ✡ 🗄, 🎏 👼 <a href="https://github.com/timothycrosley/isort" class="external-link" target="_blank">`isort`</a>, 👑 🧰 🔁 😇 🗄 🐍 📁.
+/// info
 
-!!! check "💭 😮 **ReadyAPI**"
-    🤗 😮 🍕 APIStar, &amp; 1️⃣ 🧰 👤 🔎 🏆 👍, 🌟 APIStar.
+🤗 ✍ ✡ 🗄, 🎏 👼 <a href="https://github.com/timothycrosley/isort" class="external-link" target="_blank">`isort`</a>, 👑 🧰 🔁 😇 🗄 🐍 📁.
 
-    🤗 ℹ 😍 **ReadyAPI** ⚙️ 🐍 🆎 🔑 📣 🔢, &amp; 🏗 🔗 ⚖ 🛠️ 🔁.
+///
 
-    🤗 😮 **ReadyAPI** 📣 `response` 🔢 🔢 ⚒ 🎚 &amp; 🍪.
+/// check | "💭 😮 **ReadyAPI**"
+
+🤗 😮 🍕 APIStar, &amp; 1️⃣ 🧰 👤 🔎 🏆 👍, 🌟 APIStar.
+
+🤗 ℹ 😍 **ReadyAPI** ⚙️ 🐍 🆎 🔑 📣 🔢, &amp; 🏗 🔗 ⚖ 🛠️ 🔁.
+
+🤗 😮 **ReadyAPI** 📣 `response` 🔢 🔢 ⚒ 🎚 &amp; 🍪.
+
+///
 
 ### <a href="https://github.com/encode/apistar" class="external-link" target="_blank">APIStar</a> (&lt;= 0️⃣.5️⃣)
 
@@ -322,23 +375,29 @@ Webarg 🧰 👈 ⚒ 🚚 👈 🔛 🔝 📚 🛠️, 🔌 🏺.
 
 🔜 APIStar ⚒ 🧰 ✔ 🗄 🔧, 🚫 🕸 🛠️.
 
-!!! info
-    APIStar ✍ ✡ 🇺🇸🏛. 🎏 👨 👈 ✍:
+/// info
 
-    * ✳ 🎂 🛠️
-    * 💃 (❔ **ReadyAPI** ⚓️)
-    * Uvicorn (⚙️ 💃 &amp; **ReadyAPI**)
+APIStar ✍ ✡ 🇺🇸🏛. 🎏 👨 👈 ✍:
 
-!!! check "😮 **ReadyAPI** "
-    🔀.
+* ✳ 🎂 🛠️
+* 💃 (❔ **ReadyAPI** ⚓️)
+* Uvicorn (⚙️ 💃 &amp; **ReadyAPI**)
 
-    💭 📣 💗 👜 (💽 🔬, 🛠️ &amp; 🧾) ⏮️ 🎏 🐍 🆎, 👈 🎏 🕰 🚚 👑 👨‍🎨 🐕‍🦺, 🕳 👤 🤔 💎 💭.
+///
 
-     &amp; ⏮️ 🔎 📏 🕰 🎏 🛠️ &amp; 🔬 📚 🎏 🎛, APIStar 🏆 🎛 💪.
+/// check | "😮 **ReadyAPI** "
 
-    ⤴️ APIStar ⛔️ 🔀 💽 &amp; 💃 ✍, &amp; 🆕 👻 🏛 ✅ ⚙️. 👈 🏁 🌈 🏗 **ReadyAPI**.
+🔀.
 
-    👤 🤔 **ReadyAPI** "🛐 👨‍💼" APIStar, ⏪ 📉 &amp; 📈 ⚒, ⌨ ⚙️, &amp; 🎏 🍕, ⚓️ 🔛 🏫 ⚪️➡️ 🌐 👉 ⏮️ 🧰.
+💭 📣 💗 👜 (💽 🔬, 🛠️ &amp; 🧾) ⏮️ 🎏 🐍 🆎, 👈 🎏 🕰 🚚 👑 👨‍🎨 🐕‍🦺, 🕳 👤 🤔 💎 💭.
+
+ &amp; ⏮️ 🔎 📏 🕰 🎏 🛠️ &amp; 🔬 📚 🎏 🎛, APIStar 🏆 🎛 💪.
+
+⤴️ APIStar ⛔️ 🔀 💽 &amp; 💃 ✍, &amp; 🆕 👻 🏛 ✅ ⚙️. 👈 🏁 🌈 🏗 **ReadyAPI**.
+
+👤 🤔 **ReadyAPI** "🛐 👨‍💼" APIStar, ⏪ 📉 &amp; 📈 ⚒, ⌨ ⚙️, &amp; 🎏 🍕, ⚓️ 🔛 🏫 ⚪️➡️ 🌐 👉 ⏮️ 🧰.
+
+///
 
 ## ⚙️ **ReadyAPI**
 
@@ -350,10 +409,13 @@ Pydantic 🗃 🔬 💽 🔬, 🛠️ &amp; 🧾 (⚙️ 🎻 🔗) ⚓️ 🔛 
 
 ⚫️ ⭐ 🍭. 👐 ⚫️ ⏩ 🌘 🍭 📇. &amp; ⚫️ ⚓️ 🔛 🎏 🐍 🆎 🔑, 👨‍🎨 🐕‍🦺 👑.
 
-!!! check "**ReadyAPI** ⚙️ ⚫️"
-    🍵 🌐 💽 🔬, 💽 🛠️ &amp; 🏧 🏷 🧾 (⚓️ 🔛 🎻 🔗).
+/// check | "**ReadyAPI** ⚙️ ⚫️"
 
-    **ReadyAPI** ⤴️ ✊ 👈 🎻 🔗 💽 &amp; 🚮 ⚫️ 🗄, ↖️ ⚪️➡️ 🌐 🎏 👜 ⚫️ 🔨.
+🍵 🌐 💽 🔬, 💽 🛠️ &amp; 🏧 🏷 🧾 (⚓️ 🔛 🎻 🔗).
+
+**ReadyAPI** ⤴️ ✊ 👈 🎻 🔗 💽 &amp; 🚮 ⚫️ 🗄, ↖️ ⚪️➡️ 🌐 🎏 👜 ⚫️ 🔨.
+
+///
 
 ### <a href="https://www.starlette.io/" class="external-link" target="_blank">💃</a>
 
@@ -382,17 +444,23 @@ Pydantic 🗃 🔬 💽 🔬, 🛠️ &amp; 🧾 (⚙️ 🎻 🔗) ⚓️ 🔛 
 
 👈 1️⃣ 👑 👜 👈 **ReadyAPI** 🚮 🔛 🔝, 🌐 ⚓️ 🔛 🐍 🆎 🔑 (⚙️ Pydantic). 👈, ➕ 🔗 💉 ⚙️, 💂‍♂ 🚙, 🗄 🔗 ⚡, ♒️.
 
-!!! note "📡 ℹ"
-    🔫 🆕 "🐩" ➖ 🛠️ ✳ 🐚 🏉 👨‍🎓. ⚫️ 🚫 "🐍 🐩" (🇩🇬), 👐 👫 🛠️ 🔨 👈.
+/// note | "📡 ℹ"
 
-    👐, ⚫️ ⏪ ➖ ⚙️ "🐩" 📚 🧰. 👉 📉 📉 🛠️, 👆 💪 🎛 Uvicorn 🙆 🎏 🔫 💽 (💖 👸 ⚖️ Hypercorn), ⚖️ 👆 💪 🚮 🔫 🔗 🧰, 💖 `python-socketio`.
+🔫 🆕 "🐩" ➖ 🛠️ ✳ 🐚 🏉 👨‍🎓. ⚫️ 🚫 "🐍 🐩" (🇩🇬), 👐 👫 🛠️ 🔨 👈.
 
-!!! check "**ReadyAPI** ⚙️ ⚫️"
-    🍵 🌐 🐚 🕸 🍕. ❎ ⚒ 🔛 🔝.
+👐, ⚫️ ⏪ ➖ ⚙️ "🐩" 📚 🧰. 👉 📉 📉 🛠️, 👆 💪 🎛 Uvicorn 🙆 🎏 🔫 💽 (💖 👸 ⚖️ Hypercorn), ⚖️ 👆 💪 🚮 🔫 🔗 🧰, 💖 `python-socketio`.
 
-    🎓 `ReadyAPI` ⚫️ 😖 🔗 ⚪️➡️ 🎓 `Starlette`.
+///
 
-    , 🕳 👈 👆 💪 ⏮️ 💃, 👆 💪 ⚫️ 🔗 ⏮️ **ReadyAPI**, ⚫️ 🌖 💃 🔛 💊.
+/// check | "**ReadyAPI** ⚙️ ⚫️"
+
+🍵 🌐 🐚 🕸 🍕. ❎ ⚒ 🔛 🔝.
+
+🎓 `ReadyAPI` ⚫️ 😖 🔗 ⚪️➡️ 🎓 `Starlette`.
+
+, 🕳 👈 👆 💪 ⏮️ 💃, 👆 💪 ⚫️ 🔗 ⏮️ **ReadyAPI**, ⚫️ 🌖 💃 🔛 💊.
+
+///
 
 ### <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>
 
@@ -402,12 +470,15 @@ Uvicorn 🌩-⏩ 🔫 💽, 🏗 🔛 uvloop &amp; httptool.
 
 ⚫️ 👍 💽 💃 &amp; **ReadyAPI**.
 
-!!! check "**ReadyAPI** 👍 ⚫️"
-    👑 🕸 💽 🏃 **ReadyAPI** 🈸.
+/// check | "**ReadyAPI** 👍 ⚫️"
 
-    👆 💪 🌀 ⚫️ ⏮️ 🐁, ✔️ 🔁 👁-🛠️ 💽.
+👑 🕸 💽 🏃 **ReadyAPI** 🈸.
 
-    ✅ 🌅 ℹ [🛠️](deployment/index.md){.internal-link target=_blank} 📄.
+👆 💪 🌀 ⚫️ ⏮️ 🐁, ✔️ 🔁 👁-🛠️ 💽.
+
+✅ 🌅 ℹ [🛠️](deployment/index.md){.internal-link target=_blank} 📄.
+
+///
 
 ## 📇 &amp; 🚅
 

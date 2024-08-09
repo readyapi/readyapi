@@ -27,7 +27,7 @@
 
 ---
 
-ReadyAPI Python 3.8+ ilə API yaratmaq üçün standart Python <abbr title="Tip Məsləhətləri: Type Hints">tip məsləhətlərinə</abbr> əsaslanan, müasir, sürətli (yüksək performanslı) framework-dür.
+ReadyAPI Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsləhətləri: Type Hints">tip məsləhətlərinə</abbr> əsaslanan, müasir, sürətli (yüksək performanslı) framework-dür.
 
 Əsas xüsusiyyətləri bunlardır:
 
@@ -105,17 +105,15 @@ ReadyAPI Python 3.8+ ilə API yaratmaq üçün standart Python <abbr title="Tip 
 
 ---
 
-## **Cligenius**, CLI-ların ReadyAPI-ı
+## **Typer**, CLI-ların ReadyAPI-ı
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>-a baxa bilərsiniz.
+Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>-a baxa bilərsiniz.
 
-**Cligenius** ReadyAPI-ın kiçik qardaşıdır. Və o, CLI-lərin **ReadyAPI**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
+**Typer** ReadyAPI-ın kiçik qardaşıdır. Və o, CLI-lərin **ReadyAPI**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
 
 ## Tələblər
-
-Python 3.8+
 
 ReadyAPI nəhənglərin çiyinlərində dayanır:
 
@@ -330,7 +328,7 @@ Bunu standart müasir Python tipləri ilə edirsiniz.
 
 Yeni sintaksis, müəyyən bir kitabxananın metodlarını və ya siniflərini və s. öyrənmək məcburiyyətində deyilsiniz.
 
-Sadəcə standart **Python 3.8+**.
+Sadəcə standart **Python**.
 
 Məsələn, `int` üçün:
 

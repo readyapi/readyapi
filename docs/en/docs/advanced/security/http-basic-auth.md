@@ -20,26 +20,35 @@ Then, when you type that username and password, the browser sends them in the he
 * It returns an object of type `HTTPBasicCredentials`:
     * It contains the `username` and `password` sent.
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="4  8  12"
-    {!> ../../../docs_src/security/tutorial006_an_py39.py!}
-    ```
+```Python hl_lines="4  8  12"
+{!> ../../../docs_src/security/tutorial006_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="2  7  11"
-    {!> ../../../docs_src/security/tutorial006_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ non-Annotated"
+```Python hl_lines="2  7  11"
+{!> ../../../docs_src/security/tutorial006_an.py!}
+```
 
-    !!! tip
-        Prefer to use the `Annotated` version if possible.
+////
 
-    ```Python hl_lines="2  6  10"
-    {!> ../../../docs_src/security/tutorial006.py!}
-    ```
+//// tab | Python 3.8+ non-Annotated
+
+/// tip
+
+Prefer to use the `Annotated` version if possible.
+
+///
+
+```Python hl_lines="2  6  10"
+{!> ../../../docs_src/security/tutorial006.py!}
+```
+
+////
 
 When you try to open the URL for the first time (or click the "Execute" button in the docs) the browser will ask you for your username and password:
 
@@ -53,32 +62,41 @@ Use a dependency to check if the username and password are correct.
 
 For this, use the Python standard module <a href="https://docs.python.org/3/library/secrets.html" class="external-link" target="_blank">`secrets`</a> to check the username and password.
 
-`secrets.compare_digest()` needs to take `bytes` or a `str` that only contains ASCII characters (the ones in English), this means it wouldn't work with characters like `á`, as in `KhulnaSoft`.
+`secrets.compare_digest()` needs to take `bytes` or a `str` that only contains ASCII characters (the ones in English), this means it wouldn't work with characters like `á`, as in `Sebastián`.
 
 To handle that, we first convert the `username` and `password` to `bytes` encoding them with UTF-8.
 
 Then we can use `secrets.compare_digest()` to ensure that `credentials.username` is `"stanleyjobson"`, and that `credentials.password` is `"swordfish"`.
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="1  12-24"
-    {!> ../../../docs_src/security/tutorial007_an_py39.py!}
-    ```
+```Python hl_lines="1  12-24"
+{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="1  12-24"
-    {!> ../../../docs_src/security/tutorial007_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ non-Annotated"
+```Python hl_lines="1  12-24"
+{!> ../../../docs_src/security/tutorial007_an.py!}
+```
 
-    !!! tip
-        Prefer to use the `Annotated` version if possible.
+////
 
-    ```Python hl_lines="1  11-21"
-    {!> ../../../docs_src/security/tutorial007.py!}
-    ```
+//// tab | Python 3.8+ non-Annotated
+
+/// tip
+
+Prefer to use the `Annotated` version if possible.
+
+///
+
+```Python hl_lines="1  11-21"
+{!> ../../../docs_src/security/tutorial007.py!}
+```
+
+////
 
 This would be similar to:
 
@@ -142,23 +160,32 @@ That way, using `secrets.compare_digest()` in your application code, it will be 
 
 After detecting that the credentials are incorrect, return an `HTTPException` with a status code 401 (the same returned when no credentials are provided) and add the header `WWW-Authenticate` to make the browser show the login prompt again:
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="26-30"
-    {!> ../../../docs_src/security/tutorial007_an_py39.py!}
-    ```
+```Python hl_lines="26-30"
+{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="26-30"
-    {!> ../../../docs_src/security/tutorial007_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ non-Annotated"
+```Python hl_lines="26-30"
+{!> ../../../docs_src/security/tutorial007_an.py!}
+```
 
-    !!! tip
-        Prefer to use the `Annotated` version if possible.
+////
 
-    ```Python hl_lines="23-27"
-    {!> ../../../docs_src/security/tutorial007.py!}
-    ```
+//// tab | Python 3.8+ non-Annotated
+
+/// tip
+
+Prefer to use the `Annotated` version if possible.
+
+///
+
+```Python hl_lines="23-27"
+{!> ../../../docs_src/security/tutorial007.py!}
+```
+
+////

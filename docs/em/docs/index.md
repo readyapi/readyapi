@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -116,9 +113,9 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 ## **🏎**, ReadyAPI 🇳🇨
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-🚥 👆 🏗 <abbr title="Command Line Interface">✳</abbr> 📱 ⚙️ 📶 ↩️ 🕸 🛠️, ✅ 👅 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**🏎**</a>.
+🚥 👆 🏗 <abbr title="Command Line Interface">✳</abbr> 📱 ⚙️ 📶 ↩️ 🕸 🛠️, ✅ 👅 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**🏎**</a>.
 
 **🏎** ReadyAPI 🐥 👪. &amp; ⚫️ 🎯 **ReadyAPI 🇳🇨**. 👶 👶 👶
 
@@ -136,7 +133,7 @@ ReadyAPI 🧍 🔛 ⌚ 🐘:
 <div class="termy">
 
 ```console
-$ pip install readyapi
+$ pip install "readyapi[standard]"
 
 ---> 100%
 ```
@@ -454,7 +451,6 @@ item: Item
 
 ⚙️ Pydantic:
 
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - ⏩ 🎻 <abbr title="converting the string that comes from an HTTP request into Python data">"🎻"</abbr>.
 * <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - 📧 🔬.
 
 ⚙️ 💃:
@@ -464,12 +460,12 @@ item: Item
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - ✔ 🚥 👆 💚 🐕‍🦺 📨 <abbr title="converting the string that comes from an HTTP request into Python data">"✍"</abbr>, ⏮️ `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - ✔ `SessionMiddleware` 🐕‍🦺.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - ✔ 💃 `SchemaGenerator` 🐕‍🦺 (👆 🎲 🚫 💪 ⚫️ ⏮️ ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - ✔ 🚥 👆 💚 ⚙️ `UJSONResponse`.
 
 ⚙️ ReadyAPI / 💃:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 💽 👈 📐 &amp; 🍦 👆 🈸.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - ✔ 🚥 👆 💚 ⚙️ `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - ✔ 🚥 👆 💚 ⚙️ `UJSONResponse`.
 
 👆 💪 ❎ 🌐 👫 ⏮️ `pip install "readyapi[all]"`.
 

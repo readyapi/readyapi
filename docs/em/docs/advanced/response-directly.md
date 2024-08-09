@@ -14,8 +14,11 @@
 
 👐, 👆 💪 📨 🙆 `Response` ⚖️ 🙆 🎧-🎓 ⚫️.
 
-!!! tip
-    `JSONResponse` ⚫️ 🎧-🎓 `Response`.
+/// tip
+
+`JSONResponse` ⚫️ 🎧-🎓 `Response`.
+
+///
 
 &amp; 🕐❔ 👆 📨 `Response`, **ReadyAPI** 🔜 🚶‍♀️ ⚫️ 🔗.
 
@@ -35,10 +38,13 @@
 {!../../../docs_src/response_directly/tutorial001.py!}
 ```
 
-!!! note "📡 ℹ"
-    👆 💪 ⚙️ `from starlette.responses import JSONResponse`.
+/// note | "📡 ℹ"
 
-    **ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
+👆 💪 ⚙️ `from starlette.responses import JSONResponse`.
+
+**ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
+
+///
 
 ## 🛬 🛃 `Response`
 

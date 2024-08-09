@@ -6,8 +6,11 @@
 
 📥 ❌ 📇 👫.
 
-!!! tip
-    🚥 👆 ✔️ 📄, 🏗, 🧰, ⚖️ 🕳 🔗 **ReadyAPI** 👈 🚫 📇 📥, ✍ <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">🚲 📨 ❎ ⚫️</a>.
+/// tip
+
+🚥 👆 ✔️ 📄, 🏗, 🧰, ⚖️ 🕳 🔗 **ReadyAPI** 👈 🚫 📇 📥, ✍ <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">🚲 📨 ❎ ⚫️</a>.
+
+///
 
 ## 📄
 

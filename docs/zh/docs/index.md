@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 3.8+ 并基于标准的 Python 类型提示。
+ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 并基于标准的 Python 类型提示。
 
 关键特性:
 
@@ -109,17 +106,17 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ---
 
-## **Cligenius**，命令行中的 ReadyAPI
+## **Typer**，命令行中的 ReadyAPI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>。
+如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>。
 
-**Cligenius** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
+**Typer** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
 
 ## 依赖
 
-Python 3.8 及更高版本
+Python 及更高版本
 
 ReadyAPI 站在以下巨人的肩膀之上：
 
@@ -138,7 +135,7 @@ $ pip install readyapi
 
 </div>
 
-你还会需要一个 ASGI 服务器，生产环境可以使用 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> 或者 <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>。
+你还会需要一个 ASGI 服务器，生产环境可以使用 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> 或者 <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>。
 
 <div class="termy">
 
@@ -335,7 +332,7 @@ def update_item(item_id: int, item: Item):
 
 你不需要去学习新的语法、了解特定库的方法或类，等等。
 
-只需要使用标准的 **Python 3.8 及更高版本**。
+只需要使用标准的 **Python 及更高版本**。
 
 举个例子，比如声明 `int` 类型：
 
@@ -459,12 +456,12 @@ item: Item
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - 需要 `SessionMiddleware` 支持时安装。
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 使用 Starlette 提供的 `SchemaGenerator` 时安装（有 ReadyAPI 你可能并不需要它）。
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - 需要 `GraphQLApp` 支持时安装。
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - 使用 `UJSONResponse` 时安装。
 
 用于 ReadyAPI / Starlette：
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 用于加载和运行你的应用程序的服务器。
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - 使用 `ORJSONResponse` 时安装。
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - 使用 `UJSONResponse` 时安装。
 
 你可以通过 `pip install "readyapi[all]"` 命令来安装以上所有依赖。
 

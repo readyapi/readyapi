@@ -43,10 +43,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 **ReadyAPI** 🔌 📚 🛠️ ⚠ ⚙️ 💼, 👥 🔜 👀 ⏭ ❔ ⚙️ 👫.
 
-!!! note "📡 ℹ"
-    ⏭ 🖼, 👆 💪 ⚙️ `from starlette.middleware.something import SomethingMiddleware`.
+/// note | "📡 ℹ"
 
-    **ReadyAPI** 🚚 📚 🛠️ `readyapi.middleware` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 🛠️ 👟 🔗 ⚪️➡️ 💃.
+⏭ 🖼, 👆 💪 ⚙️ `from starlette.middleware.something import SomethingMiddleware`.
+
+**ReadyAPI** 🚚 📚 🛠️ `readyapi.middleware` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 🛠️ 👟 🔗 ⚪️➡️ 💃.
+
+///
 
 ## `HTTPSRedirectMiddleware`
 

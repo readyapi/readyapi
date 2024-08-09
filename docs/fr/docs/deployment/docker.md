@@ -17,8 +17,11 @@ Cette image est dotée d'un mécanisme d'"auto-tuning", de sorte qu'il vous suff
 
 Mais vous pouvez toujours changer et mettre à jour toutes les configurations avec des variables d'environnement ou des fichiers de configuration.
 
-!!! tip "Astuce"
-    Pour voir toutes les configurations et options, rendez-vous sur la page de l'image Docker : <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
+/// tip | "Astuce"
+
+Pour voir toutes les configurations et options, rendez-vous sur la page de l'image Docker : <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
+
+///
 
 ## Créer un `Dockerfile`
 

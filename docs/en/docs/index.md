@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -35,7 +32,8 @@ hide:
 **Source Code**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
-ReadyAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+ based on standard Python type hints.
+
+ReadyAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints.
 
 The key features are:
 
@@ -54,21 +52,14 @@ The key features are:
 
 <!-- sponsors -->
 
-<a href="https://cryptapi.io/" target="_blank" title="CryptAPI: Your easy to use, secure and privacy oriented payment gateway."><img src="https://readyapi.khulnasoft.com/img/sponsors/cryptapi.svg"></a>
-<a href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank" title="Build, run and scale your apps on a modern, reliable, and secure PaaS."><img src="https://readyapi.khulnasoft.com/img/sponsors/platform-sh.png"></a>
-<a href="https://www.porter.run" target="_blank" title="Deploy ReadyAPI on AWS with a few clicks"><img src="https://readyapi.khulnasoft.com/img/sponsors/porter.png"></a>
-<a href="https://bump.sh/readyapi?utm_source=readyapi&utm_medium=referral&utm_campaign=sponsor" target="_blank" title="Automate ReadyAPI documentation generation with Bump.sh"><img src="https://readyapi.khulnasoft.com/img/sponsors/bump-sh.svg"></a>
-<a href="https://reflex.dev" target="_blank" title="Reflex"><img src="https://readyapi.khulnasoft.com/img/sponsors/reflex.png"></a>
-<a href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=main-badge" target="_blank" title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files"><img src="https://readyapi.khulnasoft.com/img/sponsors/scalar.svg"></a>
-<a href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=mainbadge" target="_blank" title="Auth, user management and more for your B2B product"><img src="https://readyapi.khulnasoft.com/img/sponsors/propelauth.png"></a>
-<a href="https://www.withcoherence.com/?utm_medium=advertising&utm_source=readyapi&utm_campaign=banner%20january%2024" target="_blank" title="Coherence"><img src="https://readyapi.khulnasoft.com/img/sponsors/coherence.png"></a>
-<a href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank" title="Simplify Full Stack Development with ReadyAPI & MongoDB"><img src="https://readyapi.khulnasoft.com/img/sponsors/mongodb.png"></a>
-<a href="https://training.talkpython.fm/readyapi-courses" target="_blank" title="ReadyAPI video courses on demand from people you trust"><img src="https://readyapi.khulnasoft.com/img/sponsors/talkpython-v2.jpg"></a>
-<a href="https://github.com/deepset-ai/haystack/" target="_blank" title="Build powerful search from composable, open source building blocks"><img src="https://readyapi.khulnasoft.com/img/sponsors/haystack-readyapi.svg"></a>
-<a href="https://databento.com/" target="_blank" title="Pay as you go for market data"><img src="https://readyapi.khulnasoft.com/img/sponsors/databento.svg"></a>
-<a href="https://speakeasyapi.dev?utm_source=readyapi+repo&utm_medium=github+sponsorship" target="_blank" title="SDKs for your API | Speakeasy"><img src="https://readyapi.khulnasoft.com/img/sponsors/speakeasy.png"></a>
-<a href="https://www.svix.com/" target="_blank" title="Svix - Webhooks as a service"><img src="https://readyapi.khulnasoft.com/img/sponsors/svix.svg"></a>
-<a href="https://www.codacy.com/?utm_source=github&utm_medium=sponsors&utm_id=pioneers" target="_blank" title="Take code reviews from hours to minutes"><img src="https://readyapi.khulnasoft.com/img/sponsors/codacy.png"></a>
+{% if sponsors %}
+{% for sponsor in sponsors.gold -%}
+<a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.title }}"><img src="{{ sponsor.img }}" style="border-radius:15px"></a>
+{% endfor -%}
+{%- for sponsor in sponsors.silver -%}
+<a href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.title }}"><img src="{{ sponsor.img }}" style="border-radius:15px"></a>
+{% endfor %}
+{% endif %}
 
 <!-- /sponsors -->
 
@@ -120,17 +111,15 @@ The key features are:
 
 ---
 
-## **Cligenius**, the ReadyAPI of CLIs
+## **Typer**, the ReadyAPI of CLIs
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-If you are building a <abbr title="Command Line Interface">CLI</abbr> app to be used in the terminal instead of a web API, check out <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+If you are building a <abbr title="Command Line Interface">CLI</abbr> app to be used in the terminal instead of a web API, check out <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** is ReadyAPI's little sibling. And it's intended to be the **ReadyAPI of CLIs**. ⌨️ 🚀
+**Typer** is ReadyAPI's little sibling. And it's intended to be the **ReadyAPI of CLIs**. ⌨️ 🚀
 
 ## Requirements
-
-Python 3.8+
 
 ReadyAPI stands on the shoulders of giants:
 
@@ -142,24 +131,14 @@ ReadyAPI stands on the shoulders of giants:
 <div class="termy">
 
 ```console
-$ pip install readyapi
+$ pip install "readyapi[standard]"
 
 ---> 100%
 ```
 
 </div>
 
-You will also need an ASGI server, for production such as <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> or <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
-
-<div class="termy">
-
-```console
-$ pip install "uvicorn[standard]"
-
----> 100%
-```
-
-</div>
+**Note**: Make sure you put `"readyapi[standard]"` in quotes to ensure it works in all terminals.
 
 ## Example
 
@@ -221,11 +200,24 @@ Run the server with:
 <div class="termy">
 
 ```console
-$ uvicorn main:app --reload
+$ readyapi dev main.py
 
+ ╭────────── ReadyAPI CLI - Development mode ───────────╮
+ │                                                     │
+ │  Serving at: http://127.0.0.1:8000                  │
+ │                                                     │
+ │  API docs: http://127.0.0.1:8000/docs               │
+ │                                                     │
+ │  Running in development mode, for production use:   │
+ │                                                     │
+ │  readyapi run                                        │
+ │                                                     │
+ ╰─────────────────────────────────────────────────────╯
+
+INFO:     Will watch for changes in these directories: ['/home/user/code/awesomeapp']
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [28720]
-INFO:     Started server process [28722]
+INFO:     Started reloader process [2248755] using WatchFiles
+INFO:     Started server process [2248757]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
@@ -233,13 +225,13 @@ INFO:     Application startup complete.
 </div>
 
 <details markdown="1">
-<summary>About the command <code>uvicorn main:app --reload</code>...</summary>
+<summary>About the command <code>readyapi dev main.py</code>...</summary>
 
-The command `uvicorn main:app` refers to:
+The command `readyapi dev` reads your `main.py` file, detects the **ReadyAPI** app in it, and starts a server using <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
 
-* `main`: the file `main.py` (the Python "module").
-* `app`: the object created inside of `main.py` with the line `app = ReadyAPI()`.
-* `--reload`: make the server restart after code changes. Only do this for development.
+By default, `readyapi dev` will start with auto-reload enabled for local development.
+
+You can read more about it in the <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">ReadyAPI CLI docs</a>.
 
 </details>
 
@@ -312,7 +304,7 @@ def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
 ```
 
-The server should reload automatically (because you added `--reload` to the `uvicorn` command above).
+The `readyapi dev` server should reload automatically.
 
 ### Interactive API docs upgrade
 
@@ -346,7 +338,7 @@ You do that with standard modern Python types.
 
 You don't have to learn a new syntax, the methods or classes of a specific library, etc.
 
-Just standard **Python 3.8+**.
+Just standard **Python**.
 
 For example, for an `int`:
 
@@ -456,29 +448,47 @@ Independent TechEmpower benchmarks show **ReadyAPI** applications running under 
 
 To understand more about it, see the section <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
-## Optional Dependencies
+## Dependencies
+
+ReadyAPI depends on Pydantic and Starlette.
+
+### `standard` Dependencies
+
+When you install ReadyAPI with `pip install "readyapi[standard]"` it comes the `standard` group of optional dependencies:
 
 Used by Pydantic:
 
 * <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - for email validation.
-* <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - for settings management.
-* <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - for extra types to be used with Pydantic.
 
 Used by Starlette:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Required if you want to use the `TestClient`.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Required if you want to use the default template configuration.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, with `request.form()`.
-* <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Required for `SessionMiddleware` support.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Required for Starlette's `SchemaGenerator` support (you probably don't need it with ReadyAPI).
 
 Used by ReadyAPI / Starlette:
 
-* <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - for the server that loads and serves your application.
+* <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - for the server that loads and serves your application. This includes `uvicorn[standard]`, which includes some dependencies (e.g. `uvloop`) needed for high performance serving.
+* `readyapi-cli` - to provide the `readyapi` command.
 
-You can install all of these with `pip install "readyapi[all]"`.
+### Without `standard` Dependencies
 
-[![HitCount](http://hits.dwyl.com/readyapi/readyapi.svg)](http://hits.dwyl.com/readyapi/readyapi)
+If you don't want to include the `standard` optional dependencies, you can install with `pip install readyapi` instead of `pip install "readyapi[standard]"`.
+
+### Additional Optional Dependencies
+
+There are some additional dependencies you might want to install.
+
+Additional optional Pydantic dependencies:
+
+* <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - for settings management.
+* <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - for extra types to be used with Pydantic.
+
+Additional optional ReadyAPI dependencies:
+
+* <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Required if you want to use `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Required if you want to use `UJSONResponse`.
+
 ## License
 
 This project is licensed under the terms of the MIT license.

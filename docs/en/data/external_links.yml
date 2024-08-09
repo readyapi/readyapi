@@ -1,5 +1,8 @@
 Articles:
   English:
+  - author: Stephen Siegert - Neon
+    link: https://neon.tech/blog/deploy-a-serverless-readyapi-app-with-neon-postgres-and-aws-app-runner-at-any-scale
+    title: Deploy a Serverless ReadyAPI App with Neon Postgres and AWS App Runner at any scale
   - author: Kurtis Pykes - NVIDIA
     link: https://developer.nvidia.com/blog/building-a-machine-learning-microservice-with-readyapi/
     title: Building a Machine Learning Microservice with ReadyAPI
@@ -24,7 +27,7 @@ Articles:
   - author: Nicoló Lino
     author_link: https://www.nlino.com
     link: https://github.com/softwarebloat/python-tracing-demo
-    title: Instrument a ReadyAPI service adding tracing with OpenTelemetry and send/show traces in Grafana Tempo
+    title: Instrument ReadyAPI with OpenTelemetry tracing and visualize traces in Grafana Tempo.
   - author: Mikhail Rozhkov, Elena Samuylova
     author_link: https://www.linkedin.com/in/mnrozhkov/
     link: https://www.evidentlyai.com/blog/readyapi-tutorial
@@ -99,7 +102,7 @@ Articles:
     title: "Serve a machine learning model using Sklearn, ReadyAPI and Docker"
   - author: Yashasvi Singh
     author_link: https://hashnode.com/@aUnicornDev
-    link: https://aunicorndev.hashnode.dev/series/supaready-api
+    link: https://aunicorndev.hashnode.dev/series/supafast-api
     title: "Building an API with ReadyAPI and Supabase and Deploying on Deta"
   - author: Navule Pavan Kumar Rao
     author_link: https://www.linkedin.com/in/navule/
@@ -149,7 +152,7 @@ Articles:
     author_link: https://www.twilio.com
     link: https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi
     title: Build a Secure Twilio Webhook with Python and ReadyAPI
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe
     title: Build a web API from scratch with ReadyAPI - the workshop
@@ -257,6 +260,10 @@ Articles:
     author_link: https://medium.com/@krishnardt365
     link: https://medium.com/@krishnardt365/readyapi-docker-and-postgres-91943e71be92
     title: Readyapi, Docker(Docker compose) and Postgres
+  - author: Devon Ray
+    author_link: https://devonray.com
+    link: https://devonray.com/blog/deploying-a-readyapi-project-using-aws-lambda-aurora-cdk
+    title: Deployment using Docker, Lambda, Aurora, CDK & GH Actions
   German:
   - author: Marcel Sander (actidoo)
     author_link: https://www.actidoo.com
@@ -327,7 +334,7 @@ Articles:
   Russian:
   - author: Troy Köhler
     author_link: https://www.linkedin.com/in/trkohler/
-    link: https://trkohler.com/ready-api-introduction-to-framework
+    link: https://trkohler.com/fast-api-introduction-to-framework
     title: 'ReadyAPI: знакомимся с фреймворком'
   - author: prostomarkeloff
     author_link: https://github.com/prostomarkeloff
@@ -347,6 +354,11 @@ Articles:
     author_link: http://editor.leonh.space/
     link: https://editor.leonh.space/2022/tortoise/
     title: 'Tortoise ORM / ReadyAPI 整合快速筆記'
+  Spanish:
+  - author: Eduardo Zepeda
+    author_link: https://coffeebytes.dev/en/authors/eduardo-zepeda/
+    link: https://coffeebytes.dev/es/python-readyapi-el-mejor-framework-de-python/
+    title: 'Tutorial de ReadyAPI, ¿el mejor framework de Python?'
 Podcasts:
   English:
   - author: Real Python
@@ -356,11 +368,11 @@ Podcasts:
   - author: Python Bytes FM
     author_link: https://pythonbytes.fm/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
-    title: 'Do you dare to press "."? - Episode 247 - Dan #6: SQLDev - use the same models for SQL and ReadyAPI'
+    title: 'Do you dare to press "."? - Episode 247 - Dan #6: SQLModel - use the same models for SQL and ReadyAPI'
   - author: Podcast.`__init__`
     author_link: https://www.pythonpodcast.com/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
-    title: Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to KhulnaSoft DevOps (khulnasoft)
+    title: Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían Ramírez (khulnasoft)
   - author: Python Bytes FM
     author_link: https://pythonbytes.fm/
     link: https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855
@@ -371,11 +383,11 @@ Talks:
     author_link: https://github.com/JenySadadia
     link: https://www.youtube.com/watch?v=uZdTe8_Z6BQ
     title: 'PyCon AU 2023: Testing asynchronous applications with ReadyAPI and pytest'
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=PnpTY1f4k2U
     title: '[VIRTUAL] Py.Amsterdam''s flying Software Circus: Intro to ReadyAPI'
-  - author: KhulnaSoft DevOps (khulnasoft)
+  - author: Sebastián Ramírez (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=z9K5pwb0rt8
     title: 'PyConBY 2020: Serve ML models easily with ReadyAPI'

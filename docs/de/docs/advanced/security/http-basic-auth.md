@@ -20,26 +20,35 @@ Wenn Sie dann den Benutzernamen und das Passwort eingeben, sendet der Browser di
 * Diese gibt ein Objekt vom Typ `HTTPBasicCredentials` zurück:
     * Es enthält den gesendeten `username` und das gesendete `password`.
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="4  8  12"
-    {!> ../../../docs_src/security/tutorial006_an_py39.py!}
-    ```
+```Python hl_lines="4  8  12"
+{!> ../../../docs_src/security/tutorial006_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="2  7  11"
-    {!> ../../../docs_src/security/tutorial006_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ nicht annotiert"
+```Python hl_lines="2  7  11"
+{!> ../../../docs_src/security/tutorial006_an.py!}
+```
 
-    !!! tip "Tipp"
-        Bevorzugen Sie die `Annotated`-Version, falls möglich.
+////
 
-    ```Python hl_lines="2  6  10"
-    {!> ../../../docs_src/security/tutorial006.py!}
-    ```
+//// tab | Python 3.8+ nicht annotiert
+
+/// tip | "Tipp"
+
+Bevorzugen Sie die `Annotated`-Version, falls möglich.
+
+///
+
+```Python hl_lines="2  6  10"
+{!> ../../../docs_src/security/tutorial006.py!}
+```
+
+////
 
 Wenn Sie versuchen, die URL zum ersten Mal zu öffnen (oder in der Dokumentation auf den Button „Execute“ zu klicken), wird der Browser Sie nach Ihrem Benutzernamen und Passwort fragen:
 
@@ -53,32 +62,41 @@ Verwenden Sie eine Abhängigkeit, um zu überprüfen, ob Benutzername und Passwo
 
 Verwenden Sie dazu das Python-Standardmodul <a href="https://docs.python.org/3/library/secrets.html" class="external-link" target="_blank">`secrets`</a>, um den Benutzernamen und das Passwort zu überprüfen.
 
-`secrets.compare_digest()` benötigt `bytes` oder einen `str`, welcher nur ASCII-Zeichen (solche der englischen Sprache) enthalten darf, das bedeutet, dass es nicht mit Zeichen wie `á`, wie in `KhulnaSoft`, funktionieren würde.
+`secrets.compare_digest()` benötigt `bytes` oder einen `str`, welcher nur ASCII-Zeichen (solche der englischen Sprache) enthalten darf, das bedeutet, dass es nicht mit Zeichen wie `á`, wie in `Sebastián`, funktionieren würde.
 
 Um dies zu lösen, konvertieren wir zunächst den `username` und das `password` in UTF-8-codierte `bytes`.
 
 Dann können wir `secrets.compare_digest()` verwenden, um sicherzustellen, dass `credentials.username` `"stanleyjobson"` und `credentials.password` `"swordfish"` ist.
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="1  12-24"
-    {!> ../../../docs_src/security/tutorial007_an_py39.py!}
-    ```
+```Python hl_lines="1  12-24"
+{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="1  12-24"
-    {!> ../../../docs_src/security/tutorial007_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ nicht annotiert"
+```Python hl_lines="1  12-24"
+{!> ../../../docs_src/security/tutorial007_an.py!}
+```
 
-    !!! tip "Tipp"
-        Bevorzugen Sie die `Annotated`-Version, falls möglich.
+////
 
-    ```Python hl_lines="1  11-21"
-    {!> ../../../docs_src/security/tutorial007.py!}
-    ```
+//// tab | Python 3.8+ nicht annotiert
+
+/// tip | "Tipp"
+
+Bevorzugen Sie die `Annotated`-Version, falls möglich.
+
+///
+
+```Python hl_lines="1  11-21"
+{!> ../../../docs_src/security/tutorial007.py!}
+```
+
+////
 
 Dies wäre das gleiche wie:
 
@@ -142,23 +160,32 @@ So ist Ihr Anwendungscode, dank der Verwendung von `secrets.compare_digest()`, v
 
 Nachdem Sie festgestellt haben, dass die Anmeldeinformationen falsch sind, geben Sie eine `HTTPException` mit dem Statuscode 401 zurück (derselbe, der auch zurückgegeben wird, wenn keine Anmeldeinformationen angegeben werden) und fügen den Header `WWW-Authenticate` hinzu, damit der Browser die Anmeldeaufforderung erneut anzeigt:
 
-=== "Python 3.9+"
+//// tab | Python 3.9+
 
-    ```Python hl_lines="26-30"
-    {!> ../../../docs_src/security/tutorial007_an_py39.py!}
-    ```
+```Python hl_lines="26-30"
+{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+```
 
-=== "Python 3.8+"
+////
 
-    ```Python hl_lines="26-30"
-    {!> ../../../docs_src/security/tutorial007_an.py!}
-    ```
+//// tab | Python 3.8+
 
-=== "Python 3.8+ nicht annotiert"
+```Python hl_lines="26-30"
+{!> ../../../docs_src/security/tutorial007_an.py!}
+```
 
-    !!! tip "Tipp"
-        Bevorzugen Sie die `Annotated`-Version, falls möglich.
+////
 
-    ```Python hl_lines="23-27"
-    {!> ../../../docs_src/security/tutorial007.py!}
-    ```
+//// tab | Python 3.8+ nicht annotiert
+
+/// tip | "Tipp"
+
+Bevorzugen Sie die `Annotated`-Version, falls möglich.
+
+///
+
+```Python hl_lines="23-27"
+{!> ../../../docs_src/security/tutorial007.py!}
+```
+
+////

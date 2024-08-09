@@ -13,11 +13,11 @@ from pydantic import BaseModel, SecretStr
 from pydantic_settings import BaseSettings
 
 github_graphql_url = "https://api.github.com/graphql"
-questions_category_id = "e1f8e09988ee152c9709c9fa3ed7e0c906a17f0c"
+questions_category_id = "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMDAxNDM0"
 
 discussions_query = """
 query Q($after: String, $category_id: ID) {
-  repository(name: "readyapi", owner: "khulnasoft") {
+  repository(name: "readyapi", owner: "readyapi") {
     discussions(first: 100, after: $after, categoryId: $category_id) {
       edges {
         cursor
@@ -61,7 +61,7 @@ query Q($after: String, $category_id: ID) {
 
 prs_query = """
 query Q($after: String) {
-  repository(name: "readyapi", owner: "khulnasoft") {
+  repository(name: "readyapi", owner: "readyapi") {
     pullRequests(first: 100, after: $after) {
       edges {
         cursor
@@ -109,7 +109,7 @@ query Q($after: String) {
 
 sponsors_query = """
 query Q($after: String) {
-  user(login: "khulnasoft") {
+  user(login: "readyapi") {
     sponsorshipsAsMaintainer(first: 100, after: $after) {
       edges {
         cursor

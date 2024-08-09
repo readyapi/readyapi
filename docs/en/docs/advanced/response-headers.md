@@ -28,12 +28,15 @@ Create a response as described in [Return a Response Directly](response-directly
 {!../../../docs_src/response_headers/tutorial001.py!}
 ```
 
-!!! note "Technical Details"
-    You could also use `from starlette.responses import Response` or `from starlette.responses import JSONResponse`.
+/// note | "Technical Details"
 
-    **ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
+You could also use `from starlette.responses import Response` or `from starlette.responses import JSONResponse`.
 
-    And as the `Response` can be used frequently to set headers and cookies, **ReadyAPI** also provides it at `readyapi.Response`.
+**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
+
+And as the `Response` can be used frequently to set headers and cookies, **ReadyAPI** also provides it at `readyapi.Response`.
+
+///
 
 ## Custom Headers
 

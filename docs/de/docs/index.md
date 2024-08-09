@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI ist ein modernes, schnelles (hoch performantes) Webframework zur Erstellung von APIs mit Python 3.8+ auf Basis von Standard-Python-Typhinweisen.
+ReadyAPI ist ein modernes, schnelles (hoch performantes) Webframework zur Erstellung von APIs mit Python auf Basis von Standard-Python-Typhinweisen.
 
 Seine Schlüssel-Merkmale sind:
 
@@ -115,17 +112,15 @@ Seine Schlüssel-Merkmale sind:
 
 ---
 
-## **Cligenius**, das ReadyAPI der CLIs
+## **Typer**, das ReadyAPI der CLIs
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Wenn Sie eine <abbr title="Command Line Interface – Kommandozeilen-Schnittstelle">CLI</abbr>-Anwendung für das Terminal erstellen, anstelle einer Web-API, schauen Sie sich <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a> an.
+Wenn Sie eine <abbr title="Command Line Interface – Kommandozeilen-Schnittstelle">CLI</abbr>-Anwendung für das Terminal erstellen, anstelle einer Web-API, schauen Sie sich <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a> an.
 
-**Cligenius** ist die kleine Schwester von ReadyAPI. Und es soll das **ReadyAPI der CLIs** sein. ⌨️ 🚀
+**Typer** ist die kleine Schwester von ReadyAPI. Und es soll das **ReadyAPI der CLIs** sein. ⌨️ 🚀
 
 ## Anforderungen
-
-Python 3.8+
 
 ReadyAPI steht auf den Schultern von Giganten:
 
@@ -144,7 +139,7 @@ $ pip install readyapi
 
 </div>
 
-Sie benötigen außerdem einen <abbr title="Asynchronous Server Gateway Interface – Asynchrone Server-Verbindungsschnittstelle">ASGI</abbr>-Server. Für die Produktumgebung beispielsweise <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> oder <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Sie benötigen außerdem einen <abbr title="Asynchronous Server Gateway Interface – Asynchrone Server-Verbindungsschnittstelle">ASGI</abbr>-Server. Für die Produktumgebung beispielsweise <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> oder <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -340,7 +335,7 @@ Das machen Sie mit modernen Standard-Python-Typen.
 
 Sie müssen keine neue Syntax, Methoden oder Klassen einer bestimmten Bibliothek usw. lernen.
 
-Nur Standard-**Python 3.8+**.
+Nur Standard-**Python+**.
 
 Zum Beispiel für ein `int`:
 
@@ -462,7 +457,7 @@ Wird von Starlette verwendet:
 
 * <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - erforderlich, wenn Sie den `TestClient` verwenden möchten.
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - erforderlich, wenn Sie die Standardkonfiguration für Templates verwenden möchten.
-* <a href="https://andrew-d.github.io/python-multipart/" target="_blank"><code>python-multipart</code></a> - erforderlich, wenn Sie Formulare mittels `request.form()` <abbr title="Konvertieren des Strings, der aus einer HTTP-Anfrage stammt, nach Python-Daten">„parsen“</abbr> möchten.
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - erforderlich, wenn Sie Formulare mittels `request.form()` <abbr title="Konvertieren des Strings, der aus einer HTTP-Anfrage stammt, nach Python-Daten">„parsen“</abbr> möchten.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - erforderlich für `SessionMiddleware` Unterstützung.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - erforderlich für Starlette's `SchemaGenerator` Unterstützung (Sie brauchen das wahrscheinlich nicht mit ReadyAPI).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - erforderlich, wenn Sie `UJSONResponse` verwenden möchten.

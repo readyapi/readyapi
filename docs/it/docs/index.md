@@ -1,4 +1,3 @@
-
 {!../../../docs/missing-translation.md!}
 
 
@@ -100,13 +99,13 @@ Le sue caratteristiche principali sono:
 
 ---
 
-## **Cligenius**, la ReadyAPI delle CLI
+## **Typer**, la ReadyAPI delle CLI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Se stai sviluppando un'app <abbr title="Command Line Interface (interfaccia della riga di comando)">CLI</abbr> da usare nel terminale invece che una web API, ti consigliamo <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Se stai sviluppando un'app <abbr title="Command Line Interface (interfaccia della riga di comando)">CLI</abbr> da usare nel terminale invece che una web API, ti consigliamo <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** è il fratello minore di ReadyAPI. Ed è stato ideato per essere la **ReadyAPI delle CLI**. ⌨️ 🚀
+**Typer** è il fratello minore di ReadyAPI. Ed è stato ideato per essere la **ReadyAPI delle CLI**. ⌨️ 🚀
 
 ## Requisiti
 
@@ -129,7 +128,7 @@ $ pip install readyapi
 
 </div>
 
-Per il rilascio in produzione, sarà necessario un server ASGI come <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> oppure <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Per il rilascio in produzione, sarà necessario un server ASGI come <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> oppure <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -438,7 +437,6 @@ Per approfondire, consulta la sezione <a href="https://readyapi.khulnasoft.com/b
 
 Usate da Pydantic:
 
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - per un <abbr title="convertire la stringa che proviene da una richiesta HTTP in dati Python">"parsing"</abbr> di JSON più veloce.
 * <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - per la validazione di email.
 
 Usate da Starlette:
@@ -450,12 +448,12 @@ Usate da Starlette:
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Richiesto per usare `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Richiesto per il supporto dello `SchemaGenerator` di Starlette (probabilmente non ti serve con ReadyAPI).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Richiesto per il supporto di `GraphQLApp`.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Richiesto se vuoi usare `UJSONResponse`.
 
 Usate da ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - per il server che carica e serve la tua applicazione.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - ichiesto se vuoi usare `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Richiesto se vuoi usare `UJSONResponse`.
 
 Puoi installarle tutte con `pip install readyapi[all]`.
 

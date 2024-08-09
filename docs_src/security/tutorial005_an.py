@@ -2,15 +2,15 @@ from datetime import datetime, timedelta, timezone
 from typing import List, Union
 
 import jwt
-from jwt.exceptions import InvalidTokenError
-from passlib.context import CryptContext
-from pydantic import BaseModel, ValidationError
-from readyapi import Depends, HTTPException, ReadyAPI, Security, status
+from readyapi import Depends, ReadyAPI, HTTPException, Security, status
 from readyapi.security import (
     OAuth2PasswordBearer,
     OAuth2PasswordRequestForm,
     SecurityScopes,
 )
+from jwt.exceptions import InvalidTokenError
+from passlib.context import CryptContext
+from pydantic import BaseModel, ValidationError
 from typing_extensions import Annotated
 
 # to get a string like this run:

@@ -97,11 +97,11 @@ ReadyAPI একটি আধুনিক, দ্রুত ( বেশি ক্�
 
 ---
 
-## **Cligenius**, CLI এর জন্য ReadyAPI
+## **Typer**, CLI এর জন্য ReadyAPI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
 **টাইপার** হল ReadyAPI এর ছোট ভাইয়ের মত। এবং এটির উদ্দেশ্য ছিল **CLIs এর ReadyAPI** হওয়া। ⌨️ 🚀
 
@@ -126,7 +126,7 @@ $ pip install readyapi
 
 </div>
 
-আপনার একটি ASGI সার্ভারেরও প্রয়োজন হবে, প্রোডাকশনের জন্য <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> অথবা <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+আপনার একটি ASGI সার্ভারেরও প্রয়োজন হবে, প্রোডাকশনের জন্য <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> অথবা <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -439,7 +439,6 @@ item: Item
 
 Pydantic দ্বারা ব্যবহৃত:
 
-- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - দ্রুত JSON এর জন্য <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>.
 - <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - ইমেল যাচাইকরণের জন্য।
 
 স্টারলেট দ্বারা ব্যবহৃত:
@@ -450,12 +449,12 @@ Pydantic দ্বারা ব্যবহৃত:
 - <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` সহায়তার জন্য প্রয়োজন।
 - <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - স্টারলেটের SchemaGenerator সাপোর্ট এর জন্য প্রয়োজন (আপনার সম্ভাবত ReadyAPI প্রয়োজন নেই)।
 - <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - `GraphQLApp` সহায়তার জন্য প্রয়োজন।
-- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - আপনি `UJSONResponse` ব্যবহার করতে চাইলে প্রয়োজন।
 
 ReadyAPI / Starlette দ্বারা ব্যবহৃত:
 
 - <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - সার্ভারের জন্য যা আপনার অ্যাপ্লিকেশন লোড করে এবং পরিবেশন করে।
 - <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - আপনি `ORJSONResponse` ব্যবহার করতে চাইলে প্রয়োজন।
+- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - আপনি `UJSONResponse` ব্যবহার করতে চাইলে প্রয়োজন।
 
 আপনি এই সব ইনস্টল করতে পারেন `pip install readyapi[all]` দিয়ে.
 

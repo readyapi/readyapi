@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́bù fún kikọ àwọn API pẹ̀lú Python 3.8+ èyí tí ó da lori àwọn ìtọ́kasí àmì irúfẹ́ Python.
+ReadyAPI jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́bù fún kikọ àwọn API pẹ̀lú Python èyí tí ó da lori àwọn ìtọ́kasí àmì irúfẹ́ Python.
 
 Àwọn ẹya pàtàkì ni:
 
@@ -114,17 +111,15 @@ ReadyAPI jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́b
 
 ---
 
-## **Cligenius**, ReadyAPI ti CLIs
+## **Typer**, ReadyAPI ti CLIs
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Ti o ba n kọ ohun èlò <abbr title="Command Line Interface">CLI</abbr> láti ṣeé lọ nínú ohun èlò lori ebute kọmputa dipo API, ṣayẹwo <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Ti o ba n kọ ohun èlò <abbr title="Command Line Interface">CLI</abbr> láti ṣeé lọ nínú ohun èlò lori ebute kọmputa dipo API, ṣayẹwo <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** jẹ́ àbúrò ìyá ReadyAPI kékeré. Àti pé wọ́n kọ́ láti jẹ́ **ReadyAPI ti CLIs**. ⌨️ 🚀
+**Typer** jẹ́ àbúrò ìyá ReadyAPI kékeré. Àti pé wọ́n kọ́ láti jẹ́ **ReadyAPI ti CLIs**. ⌨️ 🚀
 
 ## Èròjà
-
-Python 3.8+
 
 ReadyAPI dúró lórí àwọn èjìká tí àwọn òmíràn:
 
@@ -340,7 +335,7 @@ O ṣe ìyẹn pẹ̀lú irúfẹ́ àmì ìtọ́kasí ìgbàlódé Python.
 
 O ò nílò láti kọ́ síńtáàsì tuntun, ìlànà tàbí ọ̀wọ́ kíláàsì kan pàtó, abbl (i.e. àti bẹbẹ lọ).
 
-Ìtọ́kasí **Python 3.8+**
+Ìtọ́kasí **Python**
 
 Fún àpẹẹrẹ, fún `int`:
 
@@ -465,12 +460,12 @@ Láti ní òye síi nípa rẹ̀, wo abala àwọn <a href="https://readyapi.khu
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Nílò tí ó bá fẹ́ láti ṣe àtìlẹ́yìn fún <abbr title="tí ó se ìyípadà ọ̀rọ̀-ìyọ̀/òkun-ọ̀rọ̀ tí ó wà láti ìbéèrè HTTP sí inú àkójọf'áyẹ̀wò Python">"àyẹ̀wò"</abbr> fọọmu, pẹ̀lú `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Nílò fún àtìlẹ́yìn `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Nílò fún àtìlẹ́yìn Starlette's `SchemaGenerator` (ó ṣe ṣe kí ó má nílò rẹ̀ fún ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Nílò tí ó bá fẹ́ láti lọ `UJSONResponse`.
 
 Èyí tí ReadyAPI / Starlette ń lò:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Fún olupin tí yóò sẹ́ àmúyẹ àti tí yóò ṣe ìpèsè fún iṣẹ́ rẹ tàbí ohun èlò rẹ.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Nílò tí ó bá fẹ́ láti lọ `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Nílò tí ó bá fẹ́ láti lọ `UJSONResponse`.
 
 Ó lè fi gbogbo àwọn wọ̀nyí sórí ẹrọ pẹ̀lú `pip install "readyapi[all]"`.
 

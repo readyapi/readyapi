@@ -12,7 +12,7 @@ on:
 
 jobs:
   readyapi-people:
-    if: github.repository_owner == 'khulnasoft'
+    if: github.repository_owner == 'readyapi'
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
@@ -31,4 +31,4 @@ jobs:
           limit-access-to-actor: true
       - uses: ./.github/actions/people
         with:
-          token: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.READYAPI_PEOPLE }}

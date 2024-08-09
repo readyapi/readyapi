@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI est un framework web moderne et rapide (haute performance) pour la création d'API avec Python 3.8+, basé sur les annotations de type standard de Python.
+ReadyAPI est un framework web moderne et rapide (haute performance) pour la création d'API avec Python, basé sur les annotations de type standard de Python.
 
 Les principales fonctionnalités sont :
 
@@ -114,17 +111,15 @@ Les principales fonctionnalités sont :
 
 ---
 
-## **Cligenius**, le ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>
+## **Typer**, le ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Si vous souhaitez construire une application <abbr title="Command Line Interface">CLI</abbr> utilisable dans un terminal au lieu d'une API web, regardez <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Si vous souhaitez construire une application <abbr title="Command Line Interface">CLI</abbr> utilisable dans un terminal au lieu d'une API web, regardez <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** est le petit frère de ReadyAPI. Et il est destiné à être le **ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>**. ⌨️ 🚀
+**Typer** est le petit frère de ReadyAPI. Et il est destiné à être le **ReadyAPI des <abbr title="Command Line Interface">CLI</abbr>**. ⌨️ 🚀
 
 ## Prérequis
-
-Python 3.8+
 
 ReadyAPI repose sur les épaules de géants :
 
@@ -340,7 +335,7 @@ Vous faites cela avec les types Python standard modernes.
 
 Vous n'avez pas à apprendre une nouvelle syntaxe, les méthodes ou les classes d'une bibliothèque spécifique, etc.
 
-Juste du **Python 3.8+** standard.
+Juste du **Python** standard.
 
 Par exemple, pour un `int`:
 
@@ -463,12 +458,12 @@ Utilisées par Starlette :
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Obligatoire si vous souhaitez supporter le <abbr title="convertit la chaine de caractère d'une requête HTTP en donnée Python">"décodage"</abbr> de formulaire avec `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Obligatoire pour la prise en charge de `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Obligatoire pour le support `SchemaGenerator` de Starlette (vous n'en avez probablement pas besoin avec ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Obligatoire si vous souhaitez utiliser `UJSONResponse`.
 
 Utilisées par ReadyAPI / Starlette :
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Pour le serveur qui charge et sert votre application.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Obligatoire si vous voulez utiliser `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Obligatoire si vous souhaitez utiliser `UJSONResponse`.
 
 Vous pouvez tout installer avec `pip install readyapi[all]`.
 

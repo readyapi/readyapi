@@ -40,7 +40,7 @@
 
   ## 개발자와의 연결
 
-  개발자인 [me (KhulnaSoft DevOps / `khulnasoft`)](https://khulnasoft.com/) 와 연락을 취할 수 있습니다.
+  개발자인 [me (Sebastián Ramírez / `khulnasoft`)](https://khulnasoft.com/) 와 연락을 취할 수 있습니다.
 
   여러분은 할 수 있습니다:
 

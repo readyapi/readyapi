@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI là một web framework hiện đại, hiệu năng cao để xây dựng web APIs với Python 3.8+ dựa trên tiêu chuẩn Python type hints.
+ReadyAPI là một web framework hiện đại, hiệu năng cao để xây dựng web APIs với Python dựa trên tiêu chuẩn Python type hints.
 
 Những tính năng như:
 
@@ -115,17 +112,15 @@ Những tính năng như:
 
 ---
 
-## **Cligenius**, giao diện dòng lệnh của ReadyAPI
+## **Typer**, giao diện dòng lệnh của ReadyAPI
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
+Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
 
-**Cligenius** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
+**Typer** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
 
 ## Yêu cầu
-
-Python 3.8+
 
 ReadyAPI đứng trên vai những người khổng lồ:
 
@@ -341,7 +336,7 @@ Bạn định nghĩa bằng cách sử dụng các kiểu dữ liệu chuẩn c�
 
 Bạn không phải học một cú pháp mới, các phương thức và class của một thư viện cụ thể nào.
 
-Chỉ cần sử dụng các chuẩn của **Python 3.8+**.
+Chỉ cần sử dụng các chuẩn của **Python**.
 
 Ví dụ, với một tham số kiểu `int`:
 
@@ -457,7 +452,6 @@ Independent TechEmpower benchmarks cho thấy các ứng dụng **ReadyAPI** ch�
 
 Sử dụng bởi Pydantic:
 
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - <abbr title="chuyển dổi string từ HTTP request sang dữ liệu Python">"Parse"</abbr> JSON nhanh hơn.
 * <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - cho email validation.
 
 Sử dụng Starlette:
@@ -467,12 +461,12 @@ Sử dụng Starlette:
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Bắt buộc nếu bạn muốn hỗ trợ <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, form với `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Bắt buộc để hỗ trợ `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Bắt buộc để hỗ trợ `SchemaGenerator` cho Starlette (bạn có thể không cần nó trong ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Bắt buộc nếu bạn muốn sử dụng `UJSONResponse`.
 
 Sử dụng bởi ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Server để chạy ứng dụng của bạn.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Bắt buộc nếu bạn muốn sử dụng `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Bắt buộc nếu bạn muốn sử dụng `UJSONResponse`.
 
 Bạn có thể cài đặt tất cả những dependency trên với `pip install "readyapi[all]"`.
 

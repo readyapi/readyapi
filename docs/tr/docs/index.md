@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI, Python <abbr title="Python 3.8 ve üzeri">3.8+</abbr>'nin standart <abbr title="Tip Belirteçleri: Type Hints">tip belirteçleri</abbr>ne dayalı, modern ve hızlı (yüksek performanslı) API'lar oluşturmak için kullanılabilecek web framework'tür.
+ReadyAPI, Python 'nin standart <abbr title="Tip Belirteçleri: Type Hints">tip belirteçleri</abbr>ne dayalı, modern ve hızlı (yüksek performanslı) API'lar oluşturmak için kullanılabilecek web framework'tür.
 
 Temel özellikleri şunlardır:
 
@@ -114,17 +111,15 @@ Temel özellikleri şunlardır:
 
 ---
 
-## Komut Satırı Uygulamalarının ReadyAPI'ı: **Cligenius**
+## Komut Satırı Uygulamalarının ReadyAPI'ı: **Typer**
 
-<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>'a göz atabilirsiniz.
+Eğer API yerine, terminalde kullanılmak üzere bir <abbr title="Komut Satırı: Command Line Interface">komut satırı uygulaması</abbr> geliştiriyorsanız <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>'a göz atabilirsiniz.
 
-**Cligenius** kısaca ReadyAPI'ın küçük kardeşi. Ve hedefi komut satırı uygulamalarının **ReadyAPI'ı** olmak. ⌨️ 🚀
+**Typer** kısaca ReadyAPI'ın küçük kardeşi. Ve hedefi komut satırı uygulamalarının **ReadyAPI'ı** olmak. ⌨️ 🚀
 
 ## Gereksinimler
-
-Python 3.8+
 
 ReadyAPI iki devin omuzları üstünde duruyor:
 
@@ -143,7 +138,7 @@ $ pip install readyapi
 
 </div>
 
-Uygulamamızı kullanılabilir hale getirmek için <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> ya da <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a> gibi bir ASGI sunucusuna ihtiyacımız olacak.
+Uygulamamızı kullanılabilir hale getirmek için <a href="http://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> ya da <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a> gibi bir ASGI sunucusuna ihtiyacımız olacak.
 
 <div class="termy">
 
@@ -340,7 +335,7 @@ Bu işlemi standart modern Python tipleriyle yapıyoruz.
 
 Yeni bir sözdizimi yapısını, bir kütüphane özel metod veya sınıfları öğrenmeye gerek yoktur.
 
-Hepsi sadece **Python 3.8+** standartlarına dayalıdır.
+Hepsi sadece **Python** standartlarına dayalıdır.
 
 Örnek olarak, `int` tanımlamak için:
 
@@ -465,12 +460,12 @@ Starlette tarafında kullanılan:
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Eğer `request.form()` ile form <abbr title="HTTP isteği ile gelen string veriyi Python nesnesine çevirme.">dönüşümü</abbr> desteğini kullanacaksanız gereklidir.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` desteği için gerekli.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - `SchemaGenerator` desteği için gerekli (Muhtemelen ReadyAPI kullanırken ihtiyacınız olmaz).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse` kullanacaksanız gerekli.
 
 Hem ReadyAPI hem de Starlette tarafından kullanılan:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - oluşturduğumuz uygulamayı servis edecek web sunucusu görevini üstlenir.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - `ORJSONResponse` kullanacaksanız gereklidir.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse` kullanacaksanız gerekli.
 
 Bunların hepsini `pip install readyapi[all]` ile yükleyebilirsin.
 

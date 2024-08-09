@@ -30,20 +30,26 @@
 {!../../../docs_src/response_cookies/tutorial001.py!}
 ```
 
-!!! tip
-    ✔️ 🤯 👈 🚥 👆 📨 📨 🔗 ↩️ ⚙️ `Response` 🔢, ReadyAPI 🔜 📨 ⚫️ 🔗.
+/// tip
 
-    , 👆 🔜 ✔️ ⚒ 💭 👆 💽 ☑ 🆎. 🤶 Ⓜ. ⚫️ 🔗 ⏮️ 🎻, 🚥 👆 🛬 `JSONResponse`.
+✔️ 🤯 👈 🚥 👆 📨 📨 🔗 ↩️ ⚙️ `Response` 🔢, ReadyAPI 🔜 📨 ⚫️ 🔗.
 
-     &amp; 👈 👆 🚫 📨 🙆 📊 👈 🔜 ✔️ ⛽ `response_model`.
+, 👆 🔜 ✔️ ⚒ 💭 👆 💽 ☑ 🆎. 🤶 Ⓜ. ⚫️ 🔗 ⏮️ 🎻, 🚥 👆 🛬 `JSONResponse`.
+
+ &amp; 👈 👆 🚫 📨 🙆 📊 👈 🔜 ✔️ ⛽ `response_model`.
+
+///
 
 ### 🌅 ℹ
 
-!!! note "📡 ℹ"
-    👆 💪 ⚙️ `from starlette.responses import Response` ⚖️ `from starlette.responses import JSONResponse`.
+/// note | "📡 ℹ"
 
-    **ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
+👆 💪 ⚙️ `from starlette.responses import Response` ⚖️ `from starlette.responses import JSONResponse`.
 
-     &amp; `Response` 💪 ⚙️ 🛎 ⚒ 🎚 &amp; 🍪, **ReadyAPI** 🚚 ⚫️ `readyapi.Response`.
+**ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
+
+ &amp; `Response` 💪 ⚙️ 🛎 ⚒ 🎚 &amp; 🍪, **ReadyAPI** 🚚 ⚫️ `readyapi.Response`.
+
+///
 
 👀 🌐 💪 🔢 &amp; 🎛, ✅ <a href="https://www.starlette.io/responses/#set-cookie" class="external-link" target="_blank">🧾 💃</a>.

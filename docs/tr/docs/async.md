@@ -21,8 +21,11 @@ async def read_results():
     return results
 ```
 
-!!! note "Not"
-    Sadece `async def` ile tanımlanan fonksiyonlar içinde `await` kullanabilirsiniz.
+/// note | "Not"
+
+Sadece `async def` ile tanımlanan fonksiyonlar içinde `await` kullanabilirsiniz.
+
+///
 
 ---
 
@@ -363,12 +366,15 @@ ReadyAPI'ye (Starlette aracılığıyla) güç veren ve bu kadar etkileyici bir 
 
 ## Çok Teknik Detaylar
 
-!!! warning
-    Muhtemelen burayı atlayabilirsiniz.
+/// warning
 
-    Bunlar, **ReadyAPI**'nin altta nasıl çalıştığına dair çok teknik ayrıntılardır.
+Muhtemelen burayı atlayabilirsiniz.
 
-    Biraz teknik bilginiz varsa (co-routines, threads, blocking, vb)ve ReadyAPI'nin "async def" ile normal "def" arasındaki farkı nasıl işlediğini merak ediyorsanız, devam edin.
+Bunlar, **ReadyAPI**'nin altta nasıl çalıştığına dair çok teknik ayrıntılardır.
+
+Biraz teknik bilginiz varsa (co-routines, threads, blocking, vb)ve ReadyAPI'nin "async def" ile normal "def" arasındaki farkı nasıl işlediğini merak ediyorsanız, devam edin.
+
+///
 
 ### Path fonksiyonu
 

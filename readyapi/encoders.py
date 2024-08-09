@@ -17,11 +17,11 @@ from types import GeneratorType
 from typing import Any, Callable, Dict, List, Optional, Tuple, Type, Union
 from uuid import UUID
 
+from readyapi.types import IncEx
 from pydantic import BaseModel
 from pydantic.color import Color
 from pydantic.networks import AnyUrl, NameEmail
 from pydantic.types import SecretBytes, SecretStr
-from readyapi.types import IncEx
 from typing_extensions import Annotated, Doc
 
 from ._compat import PYDANTIC_V2, UndefinedType, Url, _model_dump
