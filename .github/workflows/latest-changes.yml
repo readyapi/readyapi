@@ -27,14 +27,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # To allow latest-changes to commit to the main branch
-          token: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.READYAPI_LATEST_CHANGES }}
       # Allow debugging with tmate
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled == 'true' }}
         with:
           limit-access-to-actor: true
-      - uses: docker://khulnasoft/latest-changes:latest
+      - uses: docker://khulnasoft/latest-changes:0.3.0
       # - uses: khulnasoft/latest-changes@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

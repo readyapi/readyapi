@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -33,7 +30,7 @@ hide:
 
 ---
 
-ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以降でAPI を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
+ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降でAPI を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
 
 主な特徴:
 
@@ -116,8 +113,6 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 3.8 以
 
 ## 必要条件
 
-Python 3.8+
-
 ReadyAPI は巨人の肩の上に立っています。
 
 - Web の部分は<a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>
@@ -135,7 +130,7 @@ $ pip install readyapi
 
 </div>
 
-本番環境では、<a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> または、 <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>のような、 ASGI サーバーが必要になります。
+本番環境では、<a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> または、 <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>のような、 ASGI サーバーが必要になります。
 
 <div class="termy">
 
@@ -450,12 +445,12 @@ Starlette によって使用されるもの:
 - <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` サポートのためには必要です。
 - <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Starlette の `SchemaGenerator` サポートのために必要です。 (ReadyAPI では必要ないでしょう。)
 - <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - `GraphQLApp` サポートのためには必要です。
-- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse`を使用する場合は必須です。
 
 ReadyAPI / Starlette に使用されるもの:
 
 - <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - アプリケーションをロードしてサーブするサーバーのため。
 - <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - `ORJSONResponse`を使用したい場合は必要です。
+- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse`を使用する場合は必須です。
 
 これらは全て `pip install readyapi[all]`でインストールできます。
 

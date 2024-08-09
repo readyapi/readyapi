@@ -76,17 +76,20 @@ The first step is to install ReadyAPI:
 <div class="termy">
 
 ```console
-$ pip install readyapi
+$ pip install "readyapi[standard]"
 
 ---> 100%
 ```
 
 </div>
 
-!!! note
-    When you install with `pip install readyapi` it comes with some default optional standard dependencies.
+/// note
 
-    If you don't want to have those optional dependencies, you can instead install `pip install readyapi-slim`.
+When you install with `pip install "readyapi[standard]"` it comes with some default optional standard dependencies.
+
+If you don't want to have those optional dependencies, you can instead install `pip install readyapi`.
+
+///
 
 ## Advanced User Guide
 

@@ -27,7 +27,7 @@
 
 ---
 
-ReadyAPI - це сучасний, швидкий (високопродуктивний), вебфреймворк для створення API за допомогою Python 3.8+,в основі якого лежить стандартна анотація типів Python.
+ReadyAPI - це сучасний, швидкий (високопродуктивний), вебфреймворк для створення API за допомогою Python,в основі якого лежить стандартна анотація типів Python.
 
 Ключові особливості:
 
@@ -110,8 +110,6 @@ ReadyAPI - це сучасний, швидкий (високопродуктив
 
 ## Вимоги
 
-Python 3.8+
-
 ReadyAPI стоїть на плечах гігантів:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> для web частини.
@@ -129,7 +127,7 @@ $ pip install readyapi
 
 </div>
 
-Вам також знадобиться сервер ASGI для продакшину, наприклад <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> або <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Вам також знадобиться сервер ASGI для продакшину, наприклад <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> або <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -326,7 +324,7 @@ def update_item(item_id: int, item: Item):
 
 Вам не потрібно вивчати новий синтаксис, методи чи класи конкретної бібліотеки тощо.
 
-Використовуючи стандартний **Python 3.8+**.
+Використовуючи стандартний **Python**.
 
 Наприклад, для `int`:
 
@@ -451,12 +449,12 @@ Starlette використовує:
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Необхідно, якщо Ви хочете підтримувати <abbr title="перетворення рядка, який надходить із запиту HTTP, на дані Python">"розбір"</abbr> форми за допомогою `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Необхідно для підтримки `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Необхідно для підтримки Starlette `SchemaGenerator` (ймовірно, вам це не потрібно з ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Необхідно, якщо Ви хочете використовувати `UJSONResponse`.
 
 ReadyAPI / Starlette використовують:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - для сервера, який завантажує та обслуговує вашу програму.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Необхідно, якщо Ви хочете використовувати `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Необхідно, якщо Ви хочете використовувати `UJSONResponse`.
 
 Ви можете встановити все це за допомогою `pip install readyapi[all]`.
 

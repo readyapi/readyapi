@@ -16,7 +16,7 @@ on:
         default: 'false'
 
 permissions:
-   discussions: write
+  discussions: write
 
 jobs:
   notify-translations:
@@ -35,4 +35,4 @@ jobs:
           limit-access-to-actor: true
       - uses: ./.github/actions/notify-translations
         with:
-          token: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-from readyapi import Form, ReadyAPI
+from readyapi import ReadyAPI, Form
 from typing_extensions import Annotated
 
 app = ReadyAPI()

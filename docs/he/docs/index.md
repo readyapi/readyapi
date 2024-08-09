@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -138,7 +135,7 @@ $ pip install readyapi
 
 </div>
 
-תצטרכו גם שרת ASGI כגון <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> או <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+תצטרכו גם שרת ASGI כגון <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> או <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div dir="ltr" class="termy">
 
@@ -458,12 +455,12 @@ item: Item
 -   <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - דרוש אם ברצונכם לתמוך ב <abbr title="המרת המחרוזת שמגיעה מבקשת HTTP למידע פייתון">"פרסור"</abbr> טפסים, באצמעות <code dir="ltr">request.form()</code>.
 -   <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - דרוש אם ברצונכם להשתמש ב - `SessionMiddleware`.
 -   <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - דרוש אם ברצונכם להשתמש ב - `SchemaGenerator` של Starlette (כנראה שאתם לא צריכים את זה עם ReadyAPI).
--   <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - דרוש אם ברצונכם להשתמש ב - `UJSONResponse`.
 
 בשימוש ReadyAPI / Starlette:
 
 -   <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - לשרת שטוען ומגיש את האפליקציה שלכם.
 -   <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - דרוש אם ברצונכם להשתמש ב - `ORJSONResponse`.
+-   <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - דרוש אם ברצונכם להשתמש ב - `UJSONResponse`.
 
 תוכלו להתקין את כל אלו באמצעות <code dir="ltr">pip install "readyapi[all]"</code>.
 

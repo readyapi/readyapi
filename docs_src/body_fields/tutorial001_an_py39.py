@@ -1,7 +1,7 @@
 from typing import Annotated, Union
 
-from pydantic import BaseModel, Field
 from readyapi import Body, ReadyAPI
+from pydantic import BaseModel, Field
 
 app = ReadyAPI()
 

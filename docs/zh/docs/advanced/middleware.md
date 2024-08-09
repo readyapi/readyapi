@@ -43,11 +43,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 **ReadyAPI** 为常见用例提供了一些中间件，下面介绍怎么使用这些中间件。
 
-!!! note "技术细节"
+/// note | "技术细节"
 
-    以下几个示例中也可以使用 `from starlette.middleware.something import SomethingMiddleware`。
+以下几个示例中也可以使用 `from starlette.middleware.something import SomethingMiddleware`。
 
-    **ReadyAPI** 在 `readyapi.middleware` 中提供的中间件只是为了方便开发者使用，但绝大多数可用的中间件都直接继承自 Starlette。
+**ReadyAPI** 在 `readyapi.middleware` 中提供的中间件只是为了方便开发者使用，但绝大多数可用的中间件都直接继承自 Starlette。
+
+///
 
 ## `HTTPSRedirectMiddleware`
 

@@ -43,10 +43,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 **ReadyAPI** enthält mehrere Middlewares für gängige Anwendungsfälle. Wir werden als Nächstes sehen, wie man sie verwendet.
 
-!!! note "Technische Details"
-    Für die nächsten Beispiele könnten Sie auch `from starlette.middleware.something import SomethingMiddleware` verwenden.
+/// note | "Technische Details"
 
-    **ReadyAPI** bietet mehrere Middlewares via `readyapi.middleware` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Middlewares kommen aber direkt von Starlette.
+Für die nächsten Beispiele könnten Sie auch `from starlette.middleware.something import SomethingMiddleware` verwenden.
+
+**ReadyAPI** bietet mehrere Middlewares via `readyapi.middleware` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Middlewares kommen aber direkt von Starlette.
+
+///
 
 ## `HTTPSRedirectMiddleware`
 

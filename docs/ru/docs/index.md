@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -36,7 +33,7 @@ hide:
 
 ---
 
-ReadyAPI — это современный, быстрый (высокопроизводительный) веб-фреймворк для создания API используя Python 3.8+, в основе которого лежит стандартная аннотация типов Python.
+ReadyAPI — это современный, быстрый (высокопроизводительный) веб-фреймворк для создания API используя Python, в основе которого лежит стандартная аннотация типов Python.
 
 Ключевые особенности:
 
@@ -118,8 +115,6 @@ ReadyAPI — это современный, быстрый (высокопрои
 
 ## Зависимости
 
-Python 3.8+
-
 ReadyAPI стоит на плечах гигантов:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> для части связанной с вебом.
@@ -137,7 +132,7 @@ $ pip install readyapi
 
 </div>
 
-Вам также понадобится сервер ASGI для производства, такой как <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> или <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Вам также понадобится сервер ASGI для производства, такой как <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> или <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -334,7 +329,7 @@ def update_item(item_id: int, item: Item):
 
 Вам не нужно изучать новый синтаксис, методы или классы конкретной библиотеки и т. д.
 
-Только стандартный **Python 3.8+**.
+Только стандартный **Python**.
 
 Например, для `int`:
 
@@ -457,12 +452,12 @@ item: Item
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Обязательно, если вы хотите поддерживать форму <abbr title="преобразование строки, полученной из HTTP-запроса, в данные Python">"парсинга"</abbr> с помощью `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Обязательно, для поддержки `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Обязательно, для поддержки `SchemaGenerator` Starlette (возможно, вам это не нужно с ReadyAPI).
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Обязательно, если вы хотите использовать `UJSONResponse`.
 
 Используется ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - сервер, который загружает и обслуживает ваше приложение.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Обязательно, если вы хотите использовать `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Обязательно, если вы хотите использовать `UJSONResponse`.
 
 Вы можете установить все это с помощью `pip install "readyapi[all]"`.
 

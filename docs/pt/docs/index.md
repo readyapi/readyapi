@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
@@ -33,7 +30,7 @@ hide:
 
 ---
 
-ReadyAPI é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python 3.8 ou superior, baseado nos _type hints_ padrões do Python.
+ReadyAPI é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python, baseado nos _type hints_ padrões do Python.
 
 Os recursos chave são:
 
@@ -109,8 +106,6 @@ Se você estiver construindo uma aplicação <abbr title="Command Line Interface
 
 ## Requisitos
 
-Python 3.8+
-
 ReadyAPI está nos ombros de gigantes:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> para as partes web.
@@ -128,7 +123,7 @@ $ pip install readyapi
 
 </div>
 
-Você também precisará de um servidor ASGI para produção, tal como <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> ou <a href="https://gitlab.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
+Você também precisará de um servidor ASGI para produção, tal como <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a> ou <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>.
 
 <div class="termy">
 
@@ -325,7 +320,7 @@ Você faz com tipos padrão do Python moderno.
 
 Você não terá que aprender uma nova sintaxe, métodos ou classes de uma biblioteca específica etc.
 
-Apenas **Python 3.8+** padrão.
+Apenas **Python** padrão.
 
 Por exemplo, para um `int`:
 
@@ -449,12 +444,12 @@ Usados por Starlette:
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Necessário para suporte a `SessionMiddleware`.
 * <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Necessário para suporte a `SchemaGenerator` da Starlette (você provavelmente não precisará disso com o ReadyAPI).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Necessário para suporte a `GraphQLApp`.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Necessário se você quer utilizar `UJSONResponse`.
 
 Usados por ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - para o servidor que carrega e serve sua aplicação.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Necessário se você quer utilizar `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Necessário se você quer utilizar `UJSONResponse`.
 
 Você pode instalar todas essas dependências com `pip install readyapi[all]`.
 

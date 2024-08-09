@@ -1,7 +1,7 @@
 from typing import Union
 
-from pydantic import BaseModel
 from readyapi import ReadyAPI, status
+from pydantic import BaseModel
 
 app = ReadyAPI()
 

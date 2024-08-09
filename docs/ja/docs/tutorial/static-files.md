@@ -11,10 +11,13 @@
 {!../../../docs_src/static_files/tutorial001.py!}
 ```
 
-!!! note "技術詳細"
-    `from starlette.staticfiles import StaticFiles` も使用できます。
+/// note | "技術詳細"
 
-    **ReadyAPI**は、開発者の利便性のために、`starlette.staticfiles` と同じ `readyapi.staticfiles` を提供します。しかし、実際にはStarletteから直接渡されています。
+`from starlette.staticfiles import StaticFiles` も使用できます。
+
+**ReadyAPI**は、開発者の利便性のために、`starlette.staticfiles` と同じ `readyapi.staticfiles` を提供します。しかし、実際にはStarletteから直接渡されています。
+
+///
 
 ### 「マウント」とは
 

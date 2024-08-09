@@ -170,12 +170,15 @@ A jeśli istnieje jakaś konkretna potrzeba dotycząca stylu lub spójności, sa
 
 * Następnie dodaj **komentarz** z informacją o tym, że sprawdziłeś kod, dzięki temu będę miał pewność, że faktycznie go sprawdziłeś.
 
-!!! info
-    Niestety, nie mogę ślepo ufać PR-om, nawet jeśli mają kilka zatwierdzeń.
+/// info
 
-    Kilka razy zdarzyło się, że PR-y miały 3, 5 lub więcej zatwierdzeń (prawdopodobnie dlatego, że opis obiecuje rozwiązanie ważnego problemu), ale gdy sam sprawdziłem danego PR-a, okazał się być zbugowany lub nie rozwiązywał problemu, który rzekomo miał rozwiązywać. 😅
+Niestety, nie mogę ślepo ufać PR-om, nawet jeśli mają kilka zatwierdzeń.
 
-    Dlatego tak ważne jest, abyś faktycznie przeczytał i uruchomił kod oraz napisał w komentarzu, że to zrobiłeś. 🤓
+Kilka razy zdarzyło się, że PR-y miały 3, 5 lub więcej zatwierdzeń (prawdopodobnie dlatego, że opis obiecuje rozwiązanie ważnego problemu), ale gdy sam sprawdziłem danego PR-a, okazał się być zbugowany lub nie rozwiązywał problemu, który rzekomo miał rozwiązywać. 😅
+
+Dlatego tak ważne jest, abyś faktycznie przeczytał i uruchomił kod oraz napisał w komentarzu, że to zrobiłeś. 🤓
+
+///
 
 * Jeśli PR można uprościć w jakiś sposób, możesz o to poprosić, ale nie ma potrzeby być zbyt wybrednym, może być wiele subiektywnych punktów widzenia (a ja też będę miał swój 🙈), więc lepiej żebyś skupił się na kluczowych rzeczach.
 
@@ -226,10 +229,13 @@ Jeśli możesz mi w tym pomóc, **pomożesz mi utrzymać ReadyAPI** i zapewnisz 
 
 Dołącz do 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">serwera czatu na Discordzie</a> 👥 i spędzaj czas z innymi w społeczności ReadyAPI.
 
-!!! tip "Wskazówka"
-    Jeśli masz pytania, zadaj je w <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">Dyskusjach na GitHubie</a>, jest dużo większa szansa, że otrzymasz pomoc od [Ekspertów ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+/// tip | "Wskazówka"
 
-    Używaj czatu tylko do innych ogólnych rozmów.
+Jeśli masz pytania, zadaj je w <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">Dyskusjach na GitHubie</a>, jest dużo większa szansa, że otrzymasz pomoc od [Ekspertów ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+
+Używaj czatu tylko do innych ogólnych rozmów.
+
+///
 
 ### Nie zadawaj pytań na czacie
 

@@ -1,7 +1,7 @@
 from typing import Union
 
-from pydantic import BaseModel, HttpUrl
 from readyapi import APIRouter, ReadyAPI
+from pydantic import BaseModel, HttpUrl
 
 app = ReadyAPI()
 

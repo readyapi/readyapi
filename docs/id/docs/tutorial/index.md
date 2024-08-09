@@ -52,22 +52,25 @@ $ pip install "readyapi[all]"
 
 ...yang juga termasuk `uvicorn`, yang dapat kamu gunakan sebagai server yang menjalankan kodemu.
 
-!!! note "Catatan"
-    Kamu juga dapat meng-installnya bagian demi bagian.
+/// note | "Catatan"
 
-    Hal ini mungkin yang akan kamu lakukan ketika kamu hendak menyebarkan (men-deploy) aplikasimu ke tahap produksi:
+Kamu juga dapat meng-installnya bagian demi bagian.
 
-    ```
-    pip install readyapi
-    ```
+Hal ini mungkin yang akan kamu lakukan ketika kamu hendak menyebarkan (men-deploy) aplikasimu ke tahap produksi:
 
-    Juga install `uvicorn` untuk menjalankan server"
+```
+pip install readyapi
+```
 
-    ```
-    pip install "uvicorn[standard]"
-    ```
+Juga install `uvicorn` untuk menjalankan server"
 
-    Dan demikian juga untuk pilihan dependensi yang hendak kamu gunakan.
+```
+pip install "uvicorn[standard]"
+```
+
+Dan demikian juga untuk pilihan dependensi yang hendak kamu gunakan.
+
+///
 
 ## Pedoman Pengguna Lanjutan
 

@@ -11,10 +11,13 @@
 {!../../../docs_src/static_files/tutorial001.py!}
 ```
 
-!!! note "📡 ℹ"
-    👆 💪 ⚙️ `from starlette.staticfiles import StaticFiles`.
+/// note | "📡 ℹ"
 
-    **ReadyAPI** 🚚 🎏 `starlette.staticfiles` `readyapi.staticfiles` 🏪 👆, 👩‍💻. ✋️ ⚫️ 🤙 👟 🔗 ⚪️➡️ 💃.
+👆 💪 ⚙️ `from starlette.staticfiles import StaticFiles`.
+
+**ReadyAPI** 🚚 🎏 `starlette.staticfiles` `readyapi.staticfiles` 🏪 👆, 👩‍💻. ✋️ ⚫️ 🤙 👟 🔗 ⚪️➡️ 💃.
+
+///
 
 ### ⚫️❔ "🗜"
 

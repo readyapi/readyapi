@@ -36,8 +36,27 @@ These are the people that:
 * [Help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}.
 * [Create Pull Requests](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
 * Review Pull Requests, [especially important for translations](contributing.md#translations){.internal-link target=_blank}.
+* Help [manage the repository](management-tasks.md){.internal-link target=_blank} (team members).
+
+All these tasks help maintain the repository.
 
 A round of applause to them. 👏 🙇
+
+## Team
+
+This is the current list of team members. 😎
+
+They have different levels of involvement and permissions, they can perform [repository management tasks](./management-tasks.md){.internal-link target=_blank} and together we  [manage the ReadyAPI repository](./management.md){.internal-link target=_blank}.
+
+<div class="user-list user-list-center">
+{% for user in members["members"] %}
+
+<div class="user"><a href="{{ user.url }}" target="_blank"><div class="avatar-wrapper"><img src="{{ user.avatar_url }}"/></div><div class="title">@{{ user.login }}</div></a></div>
+{% endfor %}
+
+</div>
+
+Although the team members have the permissions to perform privileged tasks, all the [help from others maintaining ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=_blank} is very much appreciated! 🙇‍♂️
 
 ## ReadyAPI Experts
 
@@ -45,10 +64,13 @@ These are the users that have been [helping others the most with questions in Gi
 
 They have proven to be **ReadyAPI Experts** by helping many others. ✨
 
-!!! tip
-    You could become an official ReadyAPI Expert too!
+/// tip
 
-    Just [help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🤓
+You could become an official ReadyAPI Expert too!
+
+Just [help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🤓
+
+///
 
 You can see the **ReadyAPI Experts** for:
 
