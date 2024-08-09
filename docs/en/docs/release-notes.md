@@ -3547,15 +3547,15 @@ Note: all the previous parameters are still there, so it's still possible to dec
         * [Microservice in Python using ReadyAPI](https://dev.to/paurakhsharma/microservice-in-python-using-readyapi-24cc)  by [Paurakh Sharma Humagain](https://twitter.com/PaurakhSharma).
         * [Build simple API service with Python ReadyAPI — Part 1](https://dev.to/cuongld2/build-simple-api-service-with-python-readyapi-part-1-581o) by [cuongld2](https://dev.to/cuongld2).
         * [ReadyAPI + Zeit.co = 🚀](https://paulsec.github.io/posts/readyapi_plus_zeit_serverless_fu/) by [Paul Sec](https://twitter.com/PaulWebSec).
-        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
+        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
         * [Build a Secure Twilio Webhook with Python and ReadyAPI](https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi)  by [Twilio](https://www.twilio.com).
         * [Using ReadyAPI with Django](https://www.stavros.io/posts/readyapi-with-django/)  by [Stavros Korokithakis](https://twitter.com/Stavros).
         * [Introducing Dispatch](https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072) by [Netflix](https://netflixtechblog.com/).
     * **Podcasts**:
-        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían Ramírez (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
+        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían DevOps (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
     * **Talks**:
-        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
-        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
+        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
+        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
     * PR [#1467](https://github.com/khulnasoft/readyapi/pull/1467).
 * Add translation to Chinese for [Python Types Intro - Python 类型提示简介](https://readyapi.khulnasoft.com/zh/python-types/). PR [#1197](https://github.com/khulnasoft/readyapi/pull/1197) by [@waynerv](https://github.com/waynerv).
 

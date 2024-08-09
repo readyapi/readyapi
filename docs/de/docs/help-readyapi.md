@@ -39,7 +39,7 @@ Auf diese Weise erhalten Sie Benachrichtigungen (per E-Mail), wenn es einen neue
 
 ## Mit dem Autor vernetzen
 
-Sie können sich mit <a href="https://khulnasoft.com" class="external-link" target="_blank">mir (Sebastián Ramírez / `khulnasoft`)</a>, dem Autor, verbinden.
+Sie können sich mit <a href="https://khulnasoft.com" class="external-link" target="_blank">mir (KhulnaSoft DevOps / `khulnasoft`)</a>, dem Autor, verbinden.
 
 Insbesondere:
 

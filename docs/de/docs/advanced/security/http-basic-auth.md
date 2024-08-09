@@ -62,7 +62,7 @@ Verwenden Sie eine Abhängigkeit, um zu überprüfen, ob Benutzername und Passwo
 
 Verwenden Sie dazu das Python-Standardmodul <a href="https://docs.python.org/3/library/secrets.html" class="external-link" target="_blank">`secrets`</a>, um den Benutzernamen und das Passwort zu überprüfen.
 
-`secrets.compare_digest()` benötigt `bytes` oder einen `str`, welcher nur ASCII-Zeichen (solche der englischen Sprache) enthalten darf, das bedeutet, dass es nicht mit Zeichen wie `á`, wie in `Sebastián`, funktionieren würde.
+`secrets.compare_digest()` benötigt `bytes` oder einen `str`, welcher nur ASCII-Zeichen (solche der englischen Sprache) enthalten darf, das bedeutet, dass es nicht mit Zeichen wie `á`, wie in `KhulnaSoft`, funktionieren würde.
 
 Um dies zu lösen, konvertieren wir zunächst den `username` und das `password` in UTF-8-codierte `bytes`.
 

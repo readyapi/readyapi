@@ -26,7 +26,7 @@ GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリ
 
 ## 開発者とつながる
 
-以下で、<a href="https://khulnasoft.com" class="external-link" target="_blank">開発者 (Sebastián Ramírez / `khulnasoft`)</a> とコンタクトをとれます:
+以下で、<a href="https://khulnasoft.com" class="external-link" target="_blank">開発者 (KhulnaSoft DevOps / `khulnasoft`)</a> とコンタクトをとれます:
 
 * <a href="https://github.com/khulnasoft" class="external-link" target="_blank">**GitHub** でフォロー</a>。
     * 他のオープンソースプロジェクトを確認できます。何かの助けになるものが見つかるかもしれません。

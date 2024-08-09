@@ -152,7 +152,7 @@ Articles:
     author_link: https://www.twilio.com
     link: https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi
     title: Build a Secure Twilio Webhook with Python and ReadyAPI
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft DevOps (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe
     title: Build a web API from scratch with ReadyAPI - the workshop
@@ -372,7 +372,7 @@ Podcasts:
   - author: Podcast.`__init__`
     author_link: https://www.pythonpodcast.com/
     link: https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/
-    title: Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían Ramírez (khulnasoft)
+    title: Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían DevOps (khulnasoft)
   - author: Python Bytes FM
     author_link: https://pythonbytes.fm/
     link: https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855
@@ -383,11 +383,11 @@ Talks:
     author_link: https://github.com/JenySadadia
     link: https://www.youtube.com/watch?v=uZdTe8_Z6BQ
     title: 'PyCon AU 2023: Testing asynchronous applications with ReadyAPI and pytest'
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft DevOps (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=PnpTY1f4k2U
     title: '[VIRTUAL] Py.Amsterdam''s flying Software Circus: Intro to ReadyAPI'
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft DevOps (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=z9K5pwb0rt8
     title: 'PyConBY 2020: Serve ML models easily with ReadyAPI'

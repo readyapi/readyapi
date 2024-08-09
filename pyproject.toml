@@ -9,7 +9,7 @@ description = "ReadyAPI framework, high performance, easy to learn, fast to code
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    { name = "Sebastián Ramírez", email = "khulnasoft@gmail.com" },
+    { name = "KhulnaSoft DevOps", email = "info@khulnasoft.com" },
 ]
 classifiers = [
     "Intended Audience :: Information Technology",
