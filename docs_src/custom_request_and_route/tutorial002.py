@@ -1,6 +1,6 @@
 from typing import Callable, List
 
-from readyapi import Body, ReadyAPI, HTTPException, Request, Response
+from readyapi import Body, HTTPException, ReadyAPI, Request, Response
 from readyapi.exceptions import RequestValidationError
 from readyapi.routing import APIRoute
 

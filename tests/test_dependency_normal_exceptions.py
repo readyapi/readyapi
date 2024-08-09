@@ -1,5 +1,5 @@
 import pytest
-from readyapi import Body, Depends, ReadyAPI, HTTPException
+from readyapi import Body, Depends, HTTPException, ReadyAPI
 from readyapi.testclient import TestClient
 
 initial_fake_database = {"rick": "Rick Sanchez"}

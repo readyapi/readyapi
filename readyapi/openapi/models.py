@@ -1,6 +1,7 @@
 from enum import Enum
 from typing import Any, Callable, Dict, Iterable, List, Optional, Set, Type, Union
 
+from pydantic import AnyUrl, BaseModel, Field
 from readyapi._compat import (
     PYDANTIC_V2,
     CoreSchema,
@@ -10,7 +11,6 @@ from readyapi._compat import (
     with_info_plain_validator_function,
 )
 from readyapi.logger import logger
-from pydantic import AnyUrl, BaseModel, Field
 from typing_extensions import Annotated, Literal, TypedDict
 from typing_extensions import deprecated as typing_deprecated
 

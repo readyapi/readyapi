@@ -1,7 +1,7 @@
+from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI, Security
 from readyapi.security.open_id_connect_url import OpenIdConnect
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

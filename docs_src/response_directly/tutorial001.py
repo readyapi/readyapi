@@ -1,10 +1,10 @@
 from datetime import datetime
 from typing import Union
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.encoders import jsonable_encoder
 from readyapi.responses import JSONResponse
-from pydantic import BaseModel
 
 
 class Item(BaseModel):

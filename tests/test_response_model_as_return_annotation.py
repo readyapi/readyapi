@@ -1,11 +1,11 @@
 from typing import List, Union
 
 import pytest
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.exceptions import ReadyAPIError, ResponseValidationError
 from readyapi.responses import JSONResponse, Response
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 
 class BaseUser(BaseModel):

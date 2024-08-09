@@ -1,9 +1,9 @@
 from typing import Optional
 
+from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI, Security
 from readyapi.security import APIKeyHeader
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

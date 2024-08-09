@@ -1,5 +1,5 @@
-from readyapi import ReadyAPI, Header, HTTPException
 from pydantic import BaseModel
+from readyapi import Header, HTTPException, ReadyAPI
 
 fake_secret_token = "coneofsilence"
 

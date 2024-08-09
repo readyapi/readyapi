@@ -1,6 +1,6 @@
 from typing import Optional
 
-from readyapi import Depends, ReadyAPI, Query, status
+from readyapi import Depends, Query, ReadyAPI, status
 from readyapi.testclient import TestClient
 
 app = ReadyAPI()

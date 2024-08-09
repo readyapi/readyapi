@@ -1,7 +1,7 @@
 from typing import Union
 
-from readyapi import ReadyAPI, Header, HTTPException
 from pydantic import BaseModel
+from readyapi import Header, HTTPException, ReadyAPI
 from typing_extensions import Annotated
 
 fake_secret_token = "coneofsilence"

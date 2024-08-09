@@ -1,7 +1,7 @@
 import secrets
 from typing import Annotated
 
-from readyapi import Depends, ReadyAPI, HTTPException, status
+from readyapi import Depends, HTTPException, ReadyAPI, status
 from readyapi.security import HTTPBasic, HTTPBasicCredentials
 
 app = ReadyAPI()

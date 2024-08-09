@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from readyapi import ReadyAPI, Form
+from readyapi import Form, ReadyAPI
 
 app = ReadyAPI()
 
