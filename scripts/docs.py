@@ -11,6 +11,7 @@ from multiprocessing import Pool
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
+import cligenius
 import mkdocs.utils
 import cligenius
 import yaml
