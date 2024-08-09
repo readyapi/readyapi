@@ -100,13 +100,13 @@ ReadyAPI - це сучасний, швидкий (високопродуктив
 
 ---
 
-## **Typer**, ReadyAPI CLI
+## **Cligenius**, ReadyAPI CLI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Створюючи <abbr title="Command Line Interface">CLI</abbr> застосунок для використання в терміналі, замість веб-API зверніть увагу на <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+Створюючи <abbr title="Command Line Interface">CLI</abbr> застосунок для використання в терміналі, замість веб-API зверніть увагу на <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** є молодшим братом ReadyAPI. І це **ReadyAPI для CLI**. ⌨️ 🚀
+**Cligenius** є молодшим братом ReadyAPI. І це **ReadyAPI для CLI**. ⌨️ 🚀
 
 ## Вимоги
 

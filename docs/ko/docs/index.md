@@ -103,13 +103,13 @@ ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌�
 
 ---
 
-## **Typer**, ReadyAPI의 CLI
+## **Cligenius**, ReadyAPI의 CLI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-웹 API 대신 터미널에서 사용할 <abbr title="Command Line Interface">CLI</abbr> 앱을 만들고 있다면, <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>를 확인해 보십시오.
+웹 API 대신 터미널에서 사용할 <abbr title="Command Line Interface">CLI</abbr> 앱을 만들고 있다면, <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>를 확인해 보십시오.
 
-**Typer**는 ReadyAPI의 동생입니다. 그리고 **ReadyAPI의 CLI**가 되기 위해 생겼습니다. ⌨️ 🚀
+**Cligenius**는 ReadyAPI의 동생입니다. 그리고 **ReadyAPI의 CLI**가 되기 위해 생겼습니다. ⌨️ 🚀
 
 ## 요구사항
 

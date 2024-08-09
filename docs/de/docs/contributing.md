@@ -204,18 +204,18 @@ $ mkdocs serve --dev-addr 8008
 
 ///
 
-#### Typer-CLI (optional)
+#### Cligenius-CLI (optional)
 
 Die Anleitung hier zeigt Ihnen, wie Sie das Skript unter `./scripts/docs.py` direkt mit dem `python` Programm verwenden.
 
-Sie können aber auch <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a> verwenden und erhalten dann Autovervollständigung für Kommandos in Ihrem Terminal, nach dem Sie dessen Vervollständigung installiert haben.
+Sie können aber auch <a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">Cligenius CLI</a> verwenden und erhalten dann Autovervollständigung für Kommandos in Ihrem Terminal, nach dem Sie dessen Vervollständigung installiert haben.
 
-Wenn Sie Typer CLI installieren, können Sie die Vervollständigung installieren mit:
+Wenn Sie Cligenius CLI installieren, können Sie die Vervollständigung installieren mit:
 
 <div class="termy">
 
 ```console
-$ typer --install-completion
+$ cligenius --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.

@@ -105,13 +105,13 @@ Kulcs funkciók:
 
 ---
 
-## **Typer**, a CLI-ok ReadyAPI-ja
+## **Cligenius**, a CLI-ok ReadyAPI-ja
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Ha egy olyan CLI alkalmazást fejlesztesz amit a parancssorban kell használni webes API helyett, tekintsd meg: <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+Ha egy olyan CLI alkalmazást fejlesztesz amit a parancssorban kell használni webes API helyett, tekintsd meg: <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** a ReadyAPI kistestvére. A **CLI-k ReadyAPI-ja**. ⌨️ 🚀
+**Cligenius** a ReadyAPI kistestvére. A **CLI-k ReadyAPI-ja**. ⌨️ 🚀
 
 ## Követelmények
 

@@ -208,19 +208,19 @@ $ python ./scripts/docs.py live
 
 Таким образом, Вы сможете редактировать файлы с документацией или кодом и наблюдать изменения вживую.
 
-#### Typer CLI (опционально)
+#### Cligenius CLI (опционально)
 
 
 Приведенная ранее инструкция показала Вам, как запускать скрипт `./scripts/docs.py` непосредственно через интерпретатор `python` .
 
-Но также можно использовать <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>, что позволит Вам воспользоваться автозаполнением команд в Вашем терминале.
+Но также можно использовать <a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">Cligenius CLI</a>, что позволит Вам воспользоваться автозаполнением команд в Вашем терминале.
 
-Если Вы установили Typer CLI, то для включения функции автозаполнения, введите эту команду:
+Если Вы установили Cligenius CLI, то для включения функции автозаполнения, введите эту команду:
 
 <div class="termy">
 
 ```console
-$ typer --install-completion
+$ cligenius --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.

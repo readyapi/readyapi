@@ -269,7 +269,7 @@ Sie können die Funktion ohne ReadyAPI an **anderen Stellen aufrufen**, und es w
 
 Wenn Sie aber nicht `Annotated` benutzen und stattdessen die **(alte) Variante mit einem Defaultwert**, dann müssen Sie, wenn Sie die Funktion ohne ReadyAPI an **anderen Stellen** aufrufen, sich daran **erinnern**, die Argumente der Funktion zu übergeben, damit es richtig funktioniert. Ansonsten erhalten Sie unerwartete Werte (z. B. `QueryInfo` oder etwas Ähnliches, statt `str`). Ihr Editor kann ihnen nicht helfen, und Python wird die Funktion ohne Beschwerden ausführen, es sei denn, die Operationen innerhalb lösen einen Fehler aus.
 
-Da `Annotated` mehrere Metadaten haben kann, können Sie dieselbe Funktion auch mit anderen Tools verwenden, wie etwa <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">Typer</a>. 🚀
+Da `Annotated` mehrere Metadaten haben kann, können Sie dieselbe Funktion auch mit anderen Tools verwenden, wie etwa <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">Cligenius</a>. 🚀
 
 ## Mehr Validierungen hinzufügen
 

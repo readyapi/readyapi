@@ -105,13 +105,13 @@ ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python �
 
 ---
 
-## **Typer**，命令列中的 ReadyAPI
+## **Cligenius**，命令列中的 ReadyAPI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-如果你不是在開發網頁 API，而是正在開發一個在終端機中運行的<abbr title="Command Line Interface">命令列</abbr>應用程式，不妨嘗試 <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>。
+如果你不是在開發網頁 API，而是正在開發一個在終端機中運行的<abbr title="Command Line Interface">命令列</abbr>應用程式，不妨嘗試 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>。
 
-**Typer** 是 ReadyAPI 的小兄弟。他立志成為命令列的 **ReadyAPI**。 ⌨️ 🚀
+**Cligenius** 是 ReadyAPI 的小兄弟。他立志成為命令列的 **ReadyAPI**。 ⌨️ 🚀
 
 ## 安裝需求
 

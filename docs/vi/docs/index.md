@@ -112,13 +112,13 @@ Những tính năng như:
 
 ---
 
-## **Typer**, giao diện dòng lệnh của ReadyAPI
+## **Cligenius**, giao diện dòng lệnh của ReadyAPI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
+**Cligenius** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
 
 ## Yêu cầu
 

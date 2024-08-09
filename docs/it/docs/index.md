@@ -99,13 +99,13 @@ Le sue caratteristiche principali sono:
 
 ---
 
-## **Typer**, la ReadyAPI delle CLI
+## **Cligenius**, la ReadyAPI delle CLI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Se stai sviluppando un'app <abbr title="Command Line Interface (interfaccia della riga di comando)">CLI</abbr> da usare nel terminale invece che una web API, ti consigliamo <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+Se stai sviluppando un'app <abbr title="Command Line Interface (interfaccia della riga di comando)">CLI</abbr> da usare nel terminale invece che una web API, ti consigliamo <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** è il fratello minore di ReadyAPI. Ed è stato ideato per essere la **ReadyAPI delle CLI**. ⌨️ 🚀
+**Cligenius** è il fratello minore di ReadyAPI. Ed è stato ideato per essere la **ReadyAPI delle CLI**. ⌨️ 🚀
 
 ## Requisiti
 

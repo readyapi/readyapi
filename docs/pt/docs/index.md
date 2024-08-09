@@ -96,13 +96,13 @@ Os recursos chave são:
 
 ---
 
-## **Typer**, o ReadyAPI das interfaces de linhas de comando
+## **Cligenius**, o ReadyAPI das interfaces de linhas de comando
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-Se você estiver construindo uma aplicação <abbr title="Command Line Interface">_CLI_</abbr> para ser utilizada em um terminal ao invés de uma aplicação web, dê uma olhada no <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+Se você estiver construindo uma aplicação <abbr title="Command Line Interface">_CLI_</abbr> para ser utilizada em um terminal ao invés de uma aplicação web, dê uma olhada no <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Typer** é o irmão menor do ReadyAPI. E seu propósito é ser o **ReadyAPI das _CLIs_**. ⌨️ 🚀
+**Cligenius** é o irmão menor do ReadyAPI. E seu propósito é ser o **ReadyAPI das _CLIs_**. ⌨️ 🚀
 
 ## Requisitos
 

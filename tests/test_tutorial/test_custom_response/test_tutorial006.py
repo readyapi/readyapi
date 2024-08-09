@@ -6,9 +6,9 @@ client = TestClient(app)
 
 
 def test_get():
-    response = client.get("/typer", follow_redirects=False)
+    response = client.get("/cligenius", follow_redirects=False)
     assert response.status_code == 307, response.text
-    assert response.headers["location"] == "https://typer.khulnasoft.com"
+    assert response.headers["location"] == "https://cligenius.khulnasoft.com"
 
 
 def test_openapi_schema():
@@ -18,10 +18,10 @@ def test_openapi_schema():
         "openapi": "3.1.0",
         "info": {"title": "ReadyAPI", "version": "0.1.0"},
         "paths": {
-            "/typer": {
+            "/cligenius": {
                 "get": {
-                    "summary": "Redirect Typer",
-                    "operationId": "redirect_typer_typer_get",
+                    "summary": "Redirect Cligenius",
+                    "operationId": "redirect_cligenius_cligenius_get",
                     "responses": {
                         "200": {
                             "description": "Successful Response",

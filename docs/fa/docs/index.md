@@ -102,13 +102,13 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 ---
 
-## **Typer**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
+## **Cligenius**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>. استفاده کنید.
+اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>. استفاده کنید.
 
-**Typer** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
+**Cligenius** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
 
 ## نیازمندی‌ها
 

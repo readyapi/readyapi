@@ -97,11 +97,11 @@ ReadyAPI একটি আধুনিক, দ্রুত ( বেশি ক্�
 
 ---
 
-## **Typer**, CLI এর জন্য ReadyAPI
+## **Cligenius**, CLI এর জন্য ReadyAPI
 
-<a href="https://typer.khulnasoft.com" target="_blank"><img src="https://typer.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
+<a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
-আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://typer.khulnasoft.com/" class="external-link" target="_blank">**Typer**</a>.
+আপনি যদি <abbr title="Command Line Interface">CLI</abbr> অ্যাপ বানাতে চান, যা কিনা ওয়েব API এর পরিবর্তে টার্মিনালে ব্যবহার হবে, তাহলে দেখুন<a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
 **টাইপার** হল ReadyAPI এর ছোট ভাইয়ের মত। এবং এটির উদ্দেশ্য ছিল **CLIs এর ReadyAPI** হওয়া। ⌨️ 🚀
 

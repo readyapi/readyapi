@@ -204,18 +204,18 @@ $ mkdocs serve --dev-addr 8008
 
 ///
 
-#### Typer CLI （可选）
+#### Cligenius CLI （可选）
 
 本指引向你展示了如何直接用 `python` 运行 `./scripts/docs.py` 中的脚本。
 
-但你也可以使用 <a href="https://typer.khulnasoft.com/typer-cli/" class="external-link" target="_blank">Typer CLI</a>，而且在安装了补全功能后，你将可以在终端中对命令进行自动补全。
+但你也可以使用 <a href="https://cligenius.khulnasoft.com/cligenius-cli/" class="external-link" target="_blank">Cligenius CLI</a>，而且在安装了补全功能后，你将可以在终端中对命令进行自动补全。
 
-如果你已经安装 Typer CLI ，则可以使用以下命令安装自动补全功能：
+如果你已经安装 Cligenius CLI ，则可以使用以下命令安装自动补全功能：
 
 <div class="termy">
 
 ```console
-$ typer --install-completion
+$ cligenius --install-completion
 
 zsh completion installed in /home/user/.bashrc.
 Completion will take effect once you restart the terminal.
