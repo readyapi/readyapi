@@ -1,9 +1,9 @@
 from typing import List
 
 from dirty_equals import IsDict
+from pydantic import BaseModel
 from readyapi import Depends, ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

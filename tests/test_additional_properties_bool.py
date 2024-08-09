@@ -1,10 +1,10 @@
 from typing import Union
 
 from dirty_equals import IsDict
+from pydantic import BaseModel, ConfigDict
 from readyapi import ReadyAPI
 from readyapi._compat import PYDANTIC_V2
 from readyapi.testclient import TestClient
-from pydantic import BaseModel, ConfigDict
 
 
 class FooBaseModel(BaseModel):

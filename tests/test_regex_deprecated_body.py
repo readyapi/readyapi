@@ -1,6 +1,6 @@
 import pytest
 from dirty_equals import IsDict
-from readyapi import ReadyAPI, Form
+from readyapi import Form, ReadyAPI
 from readyapi.testclient import TestClient
 from typing_extensions import Annotated
 

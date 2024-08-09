@@ -1,8 +1,8 @@
 from typing import List
 
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.routing import APIRoute
-from pydantic import BaseModel
 
 
 def custom_generate_unique_id(route: APIRoute):

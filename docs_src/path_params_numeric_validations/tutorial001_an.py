@@ -1,6 +1,6 @@
 from typing import Union
 
-from readyapi import ReadyAPI, Path, Query
+from readyapi import Path, Query, ReadyAPI
 from typing_extensions import Annotated
 
 app = ReadyAPI()

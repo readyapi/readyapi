@@ -1,5 +1,5 @@
-from readyapi import ReadyAPI
 from pydantic import BaseModel
+from readyapi import ReadyAPI
 
 
 class Item(BaseModel):

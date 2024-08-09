@@ -2,8 +2,8 @@ import subprocess
 import sys
 from unittest.mock import patch
 
-import readyapi.cli
 import pytest
+import readyapi.cli
 
 
 def test_readyapi_cli():

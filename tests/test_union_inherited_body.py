@@ -1,9 +1,9 @@
 from typing import Optional, Union
 
 from dirty_equals import IsDict
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

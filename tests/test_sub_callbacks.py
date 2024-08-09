@@ -1,9 +1,9 @@
 from typing import Optional
 
 from dirty_equals import IsDict
+from pydantic import BaseModel, HttpUrl
 from readyapi import APIRouter, ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel, HttpUrl
 
 app = ReadyAPI()
 

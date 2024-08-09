@@ -2,10 +2,10 @@ from typing import Union
 
 import pytest
 from dirty_equals import IsDict
-from readyapi import Body, Cookie, ReadyAPI, Header, Path, Query
+from pydantic import BaseModel, ConfigDict
+from readyapi import Body, Cookie, Header, Path, Query, ReadyAPI
 from readyapi._compat import PYDANTIC_V2
 from readyapi.testclient import TestClient
-from pydantic import BaseModel, ConfigDict
 
 
 def create_app():

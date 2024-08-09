@@ -1,6 +1,6 @@
 from typing import Union
 
-from readyapi import ReadyAPI, File, UploadFile
+from readyapi import File, ReadyAPI, UploadFile
 from typing_extensions import Annotated
 
 app = ReadyAPI()

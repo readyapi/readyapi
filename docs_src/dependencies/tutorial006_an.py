@@ -1,4 +1,4 @@
-from readyapi import Depends, ReadyAPI, Header, HTTPException
+from readyapi import Depends, Header, HTTPException, ReadyAPI
 from typing_extensions import Annotated
 
 app = ReadyAPI()

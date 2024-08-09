@@ -1,8 +1,8 @@
 from typing import Union
 
-from readyapi import Depends, ReadyAPI, HTTPException, status
-from readyapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
+from readyapi import Depends, HTTPException, ReadyAPI, status
+from readyapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 fake_users_db = {
     "johndoe": {

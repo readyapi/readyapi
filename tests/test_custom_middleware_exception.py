@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Optional
 
-from readyapi import APIRouter, ReadyAPI, File, UploadFile
+from readyapi import APIRouter, File, ReadyAPI, UploadFile
 from readyapi.exceptions import HTTPException
 from readyapi.testclient import TestClient
 

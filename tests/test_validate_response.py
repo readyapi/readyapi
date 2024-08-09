@@ -1,10 +1,10 @@
 from typing import List, Optional, Union
 
 import pytest
+from pydantic import BaseModel
 from readyapi import ReadyAPI
 from readyapi.exceptions import ResponseValidationError
 from readyapi.testclient import TestClient
-from pydantic import BaseModel
 
 app = ReadyAPI()
 

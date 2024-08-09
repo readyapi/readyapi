@@ -1,6 +1,6 @@
 from typing import List, Union
 
-from readyapi import ReadyAPI, Header
+from readyapi import Header, ReadyAPI
 
 app = ReadyAPI()
 

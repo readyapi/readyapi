@@ -2,9 +2,9 @@ from decimal import Decimal
 from typing import List
 
 from dirty_equals import IsDict, IsOneOf
+from pydantic import BaseModel, condecimal
 from readyapi import ReadyAPI
 from readyapi.testclient import TestClient
-from pydantic import BaseModel, condecimal
 
 app = ReadyAPI()
 
