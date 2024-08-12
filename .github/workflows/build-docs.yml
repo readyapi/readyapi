@@ -100,7 +100,7 @@ jobs:
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
         run: pip install -r requirements-docs-insiders.txt
         env:
-          TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update Languages
         run: python ./scripts/docs.py update-languages
       - uses: actions/cache@v4
