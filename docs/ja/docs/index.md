@@ -4,10 +4,8 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-<p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
-</p>
-<p align="center">
+# ReadyAPI
+<p>
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
