@@ -7,6 +7,8 @@ hide:
 
 ## Latest Changes
 
+* Update latest-changes.yml. PR [#100](https://github.com/readyapi/readyapi/pull/100) by [@gitworkflows](https://github.com/gitworkflows).
+
 ### Translations
 
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/using-request-directly.md`. PR [#11956](https://github.com/readyapi/readyapi/pull/11956) by [@ceb10n](https://github.com/ceb10n).
