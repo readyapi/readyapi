@@ -4,9 +4,7 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-<p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
-</p>
+# ReadyAPI
 <p align="center">
     <em>ReadyAPI 框架，高性能，易于学习，高效编码，生产可用</em>
 </p>
