@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* update. PR [#101](https://github.com/readyapi/readyapi/pull/101) by [@gitworkflows](https://github.com/gitworkflows).
 * Update latest-changes.yml. PR [#100](https://github.com/readyapi/readyapi/pull/100) by [@gitworkflows](https://github.com/gitworkflows).
 
 ### Translations
