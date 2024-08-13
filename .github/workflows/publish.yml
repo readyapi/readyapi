@@ -11,8 +11,8 @@ jobs:
     strategy:
       matrix:
         package:
-          - readyapi
           - readyapi-slim
+          - readyapi
     permissions:
       id-token: write
     steps:
@@ -35,8 +35,4 @@ jobs:
           KHULNASOFT_BUILD_PACKAGE: ${{ matrix.package }}
         run: python -m build
       - name: Publish
-        uses: pypa/gh-action-pypi-publish@v1.8.14
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+        uses: pypa/gh-action-pypi-publish@v1.9.0
