@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* 🔧 Add config for labeler. PR [#106](https://github.com/readyapi/readyapi/pull/106) by [@gitworkflows](https://github.com/gitworkflows).
 * 👷 Add GitHub Action add-to-project. PR [#102](https://github.com/readyapi/readyapi/pull/102) by [@gitworkflows](https://github.com/gitworkflows).
 * update. PR [#101](https://github.com/readyapi/readyapi/pull/101) by [@gitworkflows](https://github.com/gitworkflows).
 * Update latest-changes.yml. PR [#100](https://github.com/readyapi/readyapi/pull/100) by [@gitworkflows](https://github.com/gitworkflows).
