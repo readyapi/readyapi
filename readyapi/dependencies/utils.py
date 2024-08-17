@@ -342,12 +342,12 @@ def analyze_param(
             if isinstance(arg, (params.Param, params.Body, params.Depends))
         ]
         if readyapi_specific_annotations:
-            readyapi_annotation: Union[
-                FieldInfo, params.Depends, None
-            ] = readyapi_specific_annotations[-1]
+            readyapi_annotation: Union[FieldInfo, params.Depends, None] = (
+                readyapi_specific_annotations[-1]
+            )
         else:
             readyapi_annotation = None
-        if isinstance(readyapi_annotation, FieldInfo):
+        if isinstance(readyapi_annotation, FieldInfo):params.Depends, None] = (
             # Copy `field_info` because we mutate `field_info.default` below.
             field_info = copy_field_info(
                 field_info=readyapi_annotation, annotation=use_annotation
