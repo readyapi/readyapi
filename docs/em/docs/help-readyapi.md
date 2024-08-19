@@ -22,7 +22,7 @@
 
 ## ⏩ ReadyAPI 🔛 👱📔
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Rradyapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **ReadyAPI**. 👶
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Radyapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **ReadyAPI**. 👶
 
 ## ✴ **ReadyAPI** 📂
 
@@ -50,7 +50,7 @@
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">⏩ 👤 🔛 **👱📔**</a> ⚖️ <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">☠</a>.
     * 💬 👤 ❔ 👆 ⚙️ ReadyAPI (👤 💌 👂 👈).
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰.
-    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Rradyapi 🔛 👱📔</a> (🎏 🏧).
+    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Radyapi 🔛 👱📔</a> (🎏 🏧).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">🔗 ⏮️ 👤 🔛 **👱📔**</a>.
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰 (👐 👤 ⚙️ 👱📔 🌖 🛎 🤷 ♂).
 * ✍ ⚫️❔ 👤 ✍ (⚖️ ⏩ 👤) 🔛 <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**🇸🇲.**</a> ⚖️ <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**🔉**</a>.
