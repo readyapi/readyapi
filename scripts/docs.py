@@ -11,20 +11,30 @@ from multiprocessing import Pool
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
+import cligenius
 import mkdocs.utils
-import typer
 import yaml
 from jinja2 import Template
 
 logging.basicConfig(level=logging.INFO)
 
-app = typer.Typer()
+app = cligenius.Cligenius()
 
 mkdocs_name = "mkdocs.yml"
 
 missing_translation_snippet = """
 {!../../../docs/missing-translation.md!}
 """
+
+non_translated_sections = [
+    "reference/",
+    "release-notes.md",
+    "readyapi-people.md",
+    "external-links.md",
+    "newsletter.md",
+    "management-tasks.md",
+    "management.md",
+]
 
 docs_path = Path("docs")
 en_docs_path = Path("docs/en")
@@ -70,14 +80,14 @@ def callback() -> None:
 
 
 @app.command()
-def new_lang(lang: str = typer.Argument(..., callback=lang_callback)):
+def new_lang(lang: str = cligenius.Argument(..., callback=lang_callback)):
     """
     Generate a new docs translation directory for the language LANG.
     """
     new_path: Path = Path("docs") / lang
     if new_path.exists():
-        typer.echo(f"The language was already created: {lang}")
-        raise typer.Abort()
+        cligenius.echo(f"The language was already created: {lang}")
+        raise cligenius.Abort()
     new_path.mkdir()
     new_config_path: Path = Path(new_path) / mkdocs_name
     new_config_path.write_text("INHERIT: ../en/mkdocs.yml\n", encoding="utf-8")
@@ -88,13 +98,15 @@ def new_lang(lang: str = typer.Argument(..., callback=lang_callback)):
     en_index_content = en_index_path.read_text(encoding="utf-8")
     new_index_content = f"{missing_translation_snippet}\n\n{en_index_content}"
     new_index_path.write_text(new_index_content, encoding="utf-8")
-    typer.secho(f"Successfully initialized: {new_path}", color=typer.colors.GREEN)
+    cligenius.secho(
+        f"Successfully initialized: {new_path}", color=cligenius.colors.GREEN
+    )
     update_languages()
 
 
 @app.command()
 def build_lang(
-    lang: str = typer.Argument(
+    lang: str = cligenius.Argument(
         ..., callback=lang_callback, autocompletion=complete_existing_lang
     ),
 ) -> None:
@@ -107,9 +119,9 @@ def build_lang(
         print("Using insiders")
     lang_path: Path = Path("docs") / lang
     if not lang_path.is_dir():
-        typer.echo(f"The language translation doesn't seem to exist yet: {lang}")
-        raise typer.Abort()
-    typer.echo(f"Building docs for: {lang}")
+        cligenius.echo(f"The language translation doesn't seem to exist yet: {lang}")
+        raise cligenius.Abort()
+    cligenius.echo(f"Building docs for: {lang}")
     build_site_dist_path = build_site_path / lang
     if lang == "en":
         dist_path = site_path
@@ -127,7 +139,9 @@ def build_lang(
     subprocess.run(["mkdocs", "build", "--site-dir", build_site_dist_path], check=True)
     shutil.copytree(build_site_dist_path, dist_path, dirs_exist_ok=True)
     os.chdir(current_dir)
-    typer.secho(f"Successfully built docs for: {lang}", color=typer.colors.GREEN)
+    cligenius.secho(
+        f"Successfully built docs for: {lang}", color=cligenius.colors.GREEN
+    )
 
 
 index_sponsors_template = """
@@ -177,7 +191,7 @@ def generate_readme() -> None:
     """
     Generate README.md content from main index.md
     """
-    typer.echo("Generating README")
+    cligenius.echo("Generating README")
     readme_path = Path("README.md")
     new_content = generate_readme_content()
     readme_path.write_text(new_content, encoding="utf-8")
@@ -188,16 +202,16 @@ def verify_readme() -> None:
     """
     Verify README.md content from main index.md
     """
-    typer.echo("Verifying README")
+    cligenius.echo("Verifying README")
     readme_path = Path("README.md")
     generated_content = generate_readme_content()
     readme_content = readme_path.read_text("utf-8")
     if generated_content != readme_content:
-        typer.secho(
-            "README.md outdated from the latest index.md", color=typer.colors.RED
+        cligenius.secho(
+            "README.md outdated from the latest index.md", color=cligenius.colors.RED
         )
-        raise typer.Abort()
-    typer.echo("Valid README ✅")
+        raise cligenius.Abort()
+    cligenius.echo("Valid README ✅")
 
 
 @app.command()
@@ -211,7 +225,7 @@ def build_all() -> None:
     langs = [lang.name for lang in get_lang_paths() if lang.is_dir()]
     cpu_count = os.cpu_count() or 1
     process_pool_size = cpu_count * 4
-    typer.echo(f"Using process pool size: {process_pool_size}")
+    cligenius.echo(f"Using process pool size: {process_pool_size}")
     with Pool(process_pool_size) as p:
         p.map(build_lang, langs)
 
@@ -235,20 +249,22 @@ def serve() -> None:
 
     Make sure you run the build-all command first.
     """
-    typer.echo("Warning: this is a very simple server.")
-    typer.echo("For development, use the command live instead.")
-    typer.echo("This is here only to preview a site with translations already built.")
-    typer.echo("Make sure you run the build-all command first.")
+    cligenius.echo("Warning: this is a very simple server.")
+    cligenius.echo("For development, use the command live instead.")
+    cligenius.echo(
+        "This is here only to preview a site with translations already built."
+    )
+    cligenius.echo("Make sure you run the build-all command first.")
     os.chdir("site")
     server_address = ("", 8008)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    typer.echo("Serving at: http://127.0.0.1:8008")
+    cligenius.echo("Serving at: http://127.0.0.1:8008")
     server.serve_forever()
 
 
 @app.command()
 def live(
-    lang: str = typer.Argument(
+    lang: str = cligenius.Argument(
         None, callback=lang_callback, autocompletion=complete_existing_lang
     ),
     dirty: bool = False,
@@ -298,7 +314,7 @@ def get_updated_config_content() -> Dict[str, Any]:
                 f"Missing language name for: {code}, "
                 "update it in docs/language_names.yml"
             )
-            raise typer.Abort()
+            raise cligenius.Abort()
         use_name = f"{code} - {local_language_names[code]}"
         new_alternate.append({"link": url, "name": use_name})
     new_alternate.append({"link": "/em/", "name": "😉"})
@@ -319,24 +335,48 @@ def verify_config() -> None:
     """
     Verify main mkdocs.yml content to make sure it uses the latest language names.
     """
-    typer.echo("Verifying mkdocs.yml")
+    cligenius.echo("Verifying mkdocs.yml")
     config = get_en_config()
     updated_config = get_updated_config_content()
     if config != updated_config:
-        typer.secho(
+        cligenius.secho(
             "docs/en/mkdocs.yml outdated from docs/language_names.yml, "
             "update language_names.yml and run "
             "python ./scripts/docs.py update-languages",
-            color=typer.colors.RED,
+            color=cligenius.colors.RED,
         )
-        raise typer.Abort()
-    typer.echo("Valid mkdocs.yml ✅")
+        raise cligenius.Abort()
+    cligenius.echo("Valid mkdocs.yml ✅")
+
+
+@app.command()
+def verify_non_translated() -> None:
+    """
+    Verify there are no files in the non translatable pages.
+    """
+    print("Verifying non translated pages")
+    lang_paths = get_lang_paths()
+    error_paths = []
+    for lang in lang_paths:
+        if lang.name == "en":
+            continue
+        for non_translatable in non_translated_sections:
+            non_translatable_path = lang / "docs" / non_translatable
+            if non_translatable_path.exists():
+                error_paths.append(non_translatable_path)
+    if error_paths:
+        print("Non-translated pages found, remove them:")
+        for error_path in error_paths:
+            print(error_path)
+        raise cligenius.Abort()
+    print("No non-translated pages found ✅")
 
 
 @app.command()
 def verify_docs():
     verify_readme()
     verify_config()
+    verify_non_translated()
 
 
 @app.command()

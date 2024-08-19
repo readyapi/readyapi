@@ -1,7 +1,9 @@
 {!../../../docs/missing-translation.md!}
 
 
-# ReadyAPI
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
 <p align="center">
     <em>ReadyAPI framework, alte prestazioni, facile da imparare, rapido da implementare, pronto per il rilascio in produzione</em>
 </p>
@@ -435,7 +437,7 @@ Per approfondire, consulta la sezione <a href="https://readyapi.khulnasoft.com/b
 
 Usate da Pydantic:
 
-* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - per la validazione di email.
+* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - per la validazione di email.
 
 Usate da Starlette:
 

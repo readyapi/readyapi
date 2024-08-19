@@ -40,7 +40,7 @@ By doing it, you will receive notifications (in your email) whenever there's a n
 
 ## Connect with the author
 
-You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (KhulnaSoft DevOps / `khulnasoft`)</a>, the author.
+You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (KhulnaSoft Ltd / `khulnasoft`)</a>, the author.
 
 You can:
 
@@ -66,7 +66,7 @@ I love to hear about how **ReadyAPI** is being used, what you have liked in it, 
 ## Vote for ReadyAPI
 
 * <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote for **ReadyAPI** in Slant</a>.
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Vote for **ReadyAPI** in AlternativeTo</a>.
+* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">Vote for **ReadyAPI** in AlternativeTo</a>.
 * <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">Say you use **ReadyAPI** on StackShare</a>.
 
 ## Help others with questions in GitHub

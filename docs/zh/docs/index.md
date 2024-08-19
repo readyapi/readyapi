@@ -4,7 +4,9 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-# ReadyAPI
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
 <p align="center">
     <em>ReadyAPI 框架，高性能，易于学习，高效编码，生产可用</em>
 </p>
@@ -444,7 +446,7 @@ item: Item
 
 用于 Pydantic：
 
-* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - 用于 email 校验。
+* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - 用于 email 校验。
 
 用于 Starlette：
 

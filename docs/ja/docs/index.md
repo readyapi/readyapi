@@ -4,8 +4,10 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-# ReadyAPI
-<p>
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
+<p align="center">
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
@@ -433,7 +435,7 @@ item: Item
 
 Pydantic によって使用されるもの:
 
-- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - E メールの検証
+- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - E メールの検証
 
 Starlette によって使用されるもの:
 

@@ -7,13 +7,60 @@ hide:
 
 ## Latest Changes
 
-* 🔧 Add config for labeler. PR [#106](https://github.com/readyapi/readyapi/pull/106) by [@gitworkflows](https://github.com/gitworkflows).
-* 👷 Add GitHub Action add-to-project. PR [#102](https://github.com/readyapi/readyapi/pull/102) by [@gitworkflows](https://github.com/gitworkflows).
-* update. PR [#101](https://github.com/readyapi/readyapi/pull/101) by [@gitworkflows](https://github.com/gitworkflows).
-* Update latest-changes.yml. PR [#100](https://github.com/readyapi/readyapi/pull/100) by [@gitworkflows](https://github.com/gitworkflows).
+### Refactors
+
+* 🎨 Fix typing annotation for semi-internal `ReadyAPI.add_api_route()`. PR [#10240](https://github.com/readyapi/readyapi/pull/10240) by [@ordinary-jamie](https://github.com/ordinary-jamie).
+* ⬆️ Upgrade version of Ruff and reformat. PR [#12032](https://github.com/readyapi/readyapi/pull/12032) by [@khulnasoft](https://github.com/khulnasoft).
+
+### Docs
+
+* 📝 Add Asyncer mention in async docs. PR [#12037](https://github.com/readyapi/readyapi/pull/12037) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Move the Features docs to the top level to improve the main page menu. PR [#12036](https://github.com/readyapi/readyapi/pull/12036) by [@khulnasoft](https://github.com/khulnasoft).
+* ✏️ Fix import typo in reference example for `Security`. PR [#11168](https://github.com/readyapi/readyapi/pull/11168) by [@0shah0](https://github.com/0shah0).
+* 📝 Highlight correct line in tutorial `docs/en/docs/tutorial/body-multiple-params.md`. PR [#11978](https://github.com/readyapi/readyapi/pull/11978) by [@svlandeg](https://github.com/svlandeg).
+* 🔥 Remove Sentry link from Advanced Middleware docs. PR [#12031](https://github.com/readyapi/readyapi/pull/12031) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Clarify management tasks for translations, multiples files in one PR. PR [#12030](https://github.com/readyapi/readyapi/pull/12030) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Edit the link to the OpenAPI "Responses Object" and "Response Object" sections in the "Additional Responses in OpenAPI" section. PR [#11996](https://github.com/readyapi/readyapi/pull/11996) by [@VaitoSoi](https://github.com/VaitoSoi).
+* 🔨 Specify `email-validator` dependency with dash. PR [#11515](https://github.com/readyapi/readyapi/pull/11515) by [@jirikuncar](https://github.com/jirikuncar).
+* 🌐 Add Spanish translation for `docs/es/docs/project-generation.md`. PR [#11947](https://github.com/readyapi/readyapi/pull/11947) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Fix minor typo. PR [#12026](https://github.com/readyapi/readyapi/pull/12026) by [@MicaelJarniac](https://github.com/MicaelJarniac).
+* 📝 Several docs improvements, tweaks, and clarifications. PR [#11390](https://github.com/readyapi/readyapi/pull/11390) by [@nilslindemann](https://github.com/nilslindemann).
+* 📝 Add missing `compresslevel` parameter on docs for `GZipMiddleware`. PR [#11350](https://github.com/readyapi/readyapi/pull/11350) by [@junah201](https://github.com/junah201).
+* 📝 Fix inconsistent response code when item already exists in docs for testing. PR [#11818](https://github.com/readyapi/readyapi/pull/11818) by [@lokomilo](https://github.com/lokomilo).
+* 📝 Update `docs/en/docs/tutorial/body.md` with Python 3.10 union type example. PR [#11415](https://github.com/readyapi/readyapi/pull/11415) by [@rangzen](https://github.com/rangzen).
 
 ### Translations
 
+* 📝 Update ReadyAPI People, do not translate to have the most recent info. PR [#12034](https://github.com/readyapi/readyapi/pull/12034) by [@khulnasoft](https://github.com/khulnasoft).
+* 🌐 Update Urdu translation for `docs/ur/docs/benchmarks.md`. PR [#10046](https://github.com/readyapi/readyapi/pull/10046) by [@AhsanSheraz](https://github.com/AhsanSheraz).
+
+### Internal
+
+* 🔧 Update coverage config files. PR [#12035](https://github.com/readyapi/readyapi/pull/12035) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔨 Standardize shebang across shell scripts. PR [#11942](https://github.com/readyapi/readyapi/pull/11942) by [@gitworkflows](https://github.com/gitworkflows).
+* ⬆ Update sqlalchemy requirement from <1.4.43,>=1.3.18 to >=1.3.18,<2.0.33. PR [#11979](https://github.com/readyapi/readyapi/pull/11979) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔊 Remove old ignore warnings. PR [#11950](https://github.com/readyapi/readyapi/pull/11950) by [@khulnasoft](https://github.com/khulnasoft).
+* ⬆️ Upgrade griffe-typingdoc for the docs. PR [#12029](https://github.com/readyapi/readyapi/pull/12029) by [@khulnasoft](https://github.com/khulnasoft).
+* 🙈 Add .coverage* to `.gitignore`. PR [#11940](https://github.com/readyapi/readyapi/pull/11940) by [@gitworkflows](https://github.com/gitworkflows).
+* ⚙️ Record and show test coverage contexts (what test covers which line). PR [#11518](https://github.com/readyapi/readyapi/pull/11518) by [@slafs](https://github.com/slafs).
+
+## 0.112.1
+
+### Upgrades
+
+* ⬆️ Allow Starlette 0.38.x, update the pin to `>=0.37.2,<0.39.0`. PR [#11876](https://github.com/readyapi/readyapi/pull/11876) by [@musicinmybrain](https://github.com/musicinmybrain).
+
+### Docs
+
+* 📝 Update docs section about "Don't Translate these Pages". PR [#12022](https://github.com/readyapi/readyapi/pull/12022) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Add documentation for non-translated pages and scripts to verify them. PR [#12020](https://github.com/readyapi/readyapi/pull/12020) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update docs about discussions questions. PR [#11985](https://github.com/readyapi/readyapi/pull/11985) by [@khulnasoft](https://github.com/khulnasoft).
+
+### Translations
+
+* 🌐 Add Portuguese translation for `docs/pt/docs/tutorial/bigger-applications.md`. PR [#11971](https://github.com/readyapi/readyapi/pull/11971) by [@marcelomarkus](https://github.com/marcelomarkus).
+* 🌐 Add Portuguese translation for `docs/pt/docs/advanced/testing-websockets.md`. PR [#11994](https://github.com/readyapi/readyapi/pull/11994) by [@ceb10n](https://github.com/ceb10n).
+* 🌐 Add Portuguese translation for `docs/pt/docs/advanced/testing-dependencies.md`. PR [#11995](https://github.com/readyapi/readyapi/pull/11995) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/using-request-directly.md`. PR [#11956](https://github.com/readyapi/readyapi/pull/11956) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add French translation for `docs/fr/docs/tutorial/body-multiple-params.md`. PR [#11796](https://github.com/readyapi/readyapi/pull/11796) by [@pe-brian](https://github.com/pe-brian).
 * 🌐 Update Chinese translation for `docs/zh/docs/tutorial/query-params.md`. PR [#11557](https://github.com/readyapi/readyapi/pull/11557) by [@caomingpei](https://github.com/caomingpei).
@@ -24,6 +71,22 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.8.14 to 1.9.0. PR [#11727](https://github.com/readyapi/readyapi/pull/11727) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Add changelog URL to `pyproject.toml`, shows in PyPI. PR [#11152](https://github.com/readyapi/readyapi/pull/11152) by [@Pierre-VF](https://github.com/Pierre-VF).
+* 👷 Do not sync labels as it overrides manually added labels. PR [#12024](https://github.com/readyapi/readyapi/pull/12024) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷🏻 Update Labeler GitHub Actions. PR [#12019](https://github.com/readyapi/readyapi/pull/12019) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔧 Update configs for MkDocs for languages and social cards. PR [#12016](https://github.com/readyapi/readyapi/pull/12016) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷 Update permissions and config for labeler GitHub Action. PR [#12008](https://github.com/readyapi/readyapi/pull/12008) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷🏻 Add GitHub Action label-checker. PR [#12005](https://github.com/readyapi/readyapi/pull/12005) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷 Add label checker GitHub Action. PR [#12004](https://github.com/readyapi/readyapi/pull/12004) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷 Update GitHub Action add-to-project. PR [#12002](https://github.com/readyapi/readyapi/pull/12002) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔧 Update labeler GitHub Action. PR [#12001](https://github.com/readyapi/readyapi/pull/12001) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷 Add GitHub Action labeler. PR [#12000](https://github.com/readyapi/readyapi/pull/12000) by [@khulnasoft](https://github.com/khulnasoft).
+* 👷 Add GitHub Action add-to-project. PR [#11999](https://github.com/readyapi/readyapi/pull/11999) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update admonitions in docs missing. PR [#11998](https://github.com/readyapi/readyapi/pull/11998) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔨 Update docs.py script to enable dirty reload conditionally. PR [#11986](https://github.com/readyapi/readyapi/pull/11986) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔧 Update MkDocs instant previews. PR [#11982](https://github.com/readyapi/readyapi/pull/11982) by [@khulnasoft](https://github.com/khulnasoft).
+* 🐛 Fix deploy docs previews script to handle mkdocs.yml files. PR [#11984](https://github.com/readyapi/readyapi/pull/11984) by [@khulnasoft](https://github.com/khulnasoft).
 * 💡 Add comment about custom Termynal line-height. PR [#11976](https://github.com/readyapi/readyapi/pull/11976) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Add alls-green for test-redistribute. PR [#11974](https://github.com/readyapi/readyapi/pull/11974) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Update docs-previews to handle no docs changes. PR [#11975](https://github.com/readyapi/readyapi/pull/11975) by [@khulnasoft](https://github.com/khulnasoft).
@@ -2154,7 +2217,7 @@ You hopefully updated to a supported version of Python a while ago. If you haven
 * ✏ Reword and clarify text in tutorial `docs/en/docs/tutorial/body-nested-models.md`. PR [#5169](https://github.com/khulnasoft/readyapi/pull/5169) by [@papb](https://github.com/papb).
 * ✏ Fix minor typo in `docs/en/docs/features.md`. PR [#5206](https://github.com/khulnasoft/readyapi/pull/5206) by [@OtherBarry](https://github.com/OtherBarry).
 * ✏ Fix minor typos in `docs/en/docs/async.md`. PR [#5125](https://github.com/khulnasoft/readyapi/pull/5125) by [@Ksenofanex](https://github.com/Ksenofanex).
-* 📝 Add external link to docs: "Readyapi, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
+* 📝 Add external link to docs: "Rradyapi, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
 * 📝 Simplify example for docs for Additional Responses, remove unnecessary `else`. PR [#4693](https://github.com/khulnasoft/readyapi/pull/4693) by [@adriangb](https://github.com/adriangb).
 * 📝 Update docs, compare enums with identity instead of equality. PR [#4905](https://github.com/khulnasoft/readyapi/pull/4905) by [@MicaelJarniac](https://github.com/MicaelJarniac).
 * ✏ Fix typo in `docs/en/docs/python-types.md`. PR [#4886](https://github.com/khulnasoft/readyapi/pull/4886) by [@MicaelJarniac](https://github.com/MicaelJarniac).
@@ -3552,15 +3615,15 @@ Note: all the previous parameters are still there, so it's still possible to dec
         * [Microservice in Python using ReadyAPI](https://dev.to/paurakhsharma/microservice-in-python-using-readyapi-24cc)  by [Paurakh Sharma Humagain](https://twitter.com/PaurakhSharma).
         * [Build simple API service with Python ReadyAPI — Part 1](https://dev.to/cuongld2/build-simple-api-service-with-python-readyapi-part-1-581o) by [cuongld2](https://dev.to/cuongld2).
         * [ReadyAPI + Zeit.co = 🚀](https://paulsec.github.io/posts/readyapi_plus_zeit_serverless_fu/) by [Paul Sec](https://twitter.com/PaulWebSec).
-        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
+        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
         * [Build a Secure Twilio Webhook with Python and ReadyAPI](https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi)  by [Twilio](https://www.twilio.com).
         * [Using ReadyAPI with Django](https://www.stavros.io/posts/readyapi-with-django/)  by [Stavros Korokithakis](https://twitter.com/Stavros).
         * [Introducing Dispatch](https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072) by [Netflix](https://netflixtechblog.com/).
     * **Podcasts**:
-        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían DevOps (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
+        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían Ltd (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
     * **Talks**:
-        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
-        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [KhulnaSoft DevOps (khulnasoft)](https://twitter.com/khulnasoft).
+        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
+        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
     * PR [#1467](https://github.com/khulnasoft/readyapi/pull/1467).
 * Add translation to Chinese for [Python Types Intro - Python 类型提示简介](https://readyapi.khulnasoft.com/zh/python-types/). PR [#1197](https://github.com/khulnasoft/readyapi/pull/1197) by [@waynerv](https://github.com/waynerv).
 
