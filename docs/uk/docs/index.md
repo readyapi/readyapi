@@ -1,8 +1,10 @@
-# ReadyAPI
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
 <p align="center">
     <em>Готовий до продакшину, високопродуктивний, простий у вивченні та швидкий для написання коду фреймворк</em>
 </p>
-<p>
+<p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
     <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
@@ -435,7 +437,7 @@ item: Item
 
 Pydantic використовує:
 
-* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - для валідації електронної пошти.
+* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - для валідації електронної пошти.
 * <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - для управління налаштуваннями.
 * <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - для додаткових типів, що можуть бути використані з Pydantic.
 

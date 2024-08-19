@@ -4,7 +4,9 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-# ReadyAPI
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
 <p align="center">
     <em>ReadyAPI framework, alto desempeño, fácil de aprender, rápido de programar, listo para producción</em>
 </p>
@@ -435,7 +437,7 @@ Para entender más al respecto revisa la sección <a href="https://readyapi.khul
 
 Usadas por Pydantic:
 
-* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - para validación de emails.
+* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - para validación de emails.
 
 Usados por Starlette:
 

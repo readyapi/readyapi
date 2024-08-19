@@ -1,4 +1,6 @@
-# ReadyAPI
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
 <p align="center">
     <em>ReadyAPI উচ্চক্ষমতা সম্পন্ন, সহজে শেখার এবং দ্রুত কোড করে প্রোডাকশনের জন্য ফ্রামওয়ার্ক।</em>
 </p>
@@ -437,7 +439,7 @@ item: Item
 
 Pydantic দ্বারা ব্যবহৃত:
 
-- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email_validator</code></a> - ইমেল যাচাইকরণের জন্য।
+- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - ইমেল যাচাইকরণের জন্য।
 
 স্টারলেট দ্বারা ব্যবহৃত:
 

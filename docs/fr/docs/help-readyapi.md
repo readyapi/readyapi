@@ -26,7 +26,7 @@ Ainsi, vous recevrez des notifications (dans votre courrier électronique) chaqu
 
 ## Se rapprocher de l'auteur
 
-Vous pouvez vous rapprocher de <a href="https://khulnasoft.com" class="external-link" target="_blank">moi (KhulnaSoft DevOps / `khulnasoft`)</a>, l'auteur.
+Vous pouvez vous rapprocher de <a href="https://khulnasoft.com" class="external-link" target="_blank">moi (KhulnaSoft Ltd / `khulnasoft`)</a>, l'auteur.
 
 Vous pouvez :
 

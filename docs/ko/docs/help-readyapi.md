@@ -40,7 +40,7 @@
 
   ## 개발자와의 연결
 
-  개발자인 [me (KhulnaSoft DevOps / `khulnasoft`)](https://khulnasoft.com/) 와 연락을 취할 수 있습니다.
+  개발자인 [me (KhulnaSoft Ltd / `khulnasoft`)](https://khulnasoft.com/) 와 연락을 취할 수 있습니다.
 
   여러분은 할 수 있습니다:
 
@@ -118,7 +118,11 @@
 
   👥 [디스코드 채팅 서버](https://discord.gg/VQjSZaeJmf) 👥 에 가입하고 ReadyAPI 커뮤니티에서 다른 사람들과 어울리세요.
 
-  !!! tip 질문이 있는 경우, [GitHub 이슈 ](https://github.com/readyapi/readyapi/issues/new/choose) 에서 질문하십시오, [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 의 도움을 받을 가능성이 높습니다{.internal-link target=_blank} .
+  /// tip
+
+  질문이 있는 경우, [GitHub 이슈 ](https://github.com/readyapi/readyapi/issues/new/choose) 에서 질문하십시오, [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 의 도움을 받을 가능성이 높습니다{.internal-link target=_blank} .
+
+  ///
 
   ```
   다른 일반적인 대화에서만 채팅을 사용하십시오.

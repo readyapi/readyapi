@@ -40,7 +40,7 @@ Dzięki temu będziesz otrzymywać powiadomienia (na swój adres e-mail) za każ
 
 ## Skontaktuj się z autorem
 
-Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (KhulnaSoft DevOps / `khulnasoft`)</a>, autorem.
+Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (KhulnaSoft Ltd / `khulnasoft`)</a>, autorem.
 
 Możesz:
 
