@@ -259,7 +259,7 @@ Articles:
   - author: KrishNa
     author_link: https://medium.com/@krishnardt365
     link: https://medium.com/@krishnardt365/readyapi-docker-and-postgres-91943e71be92
-    title: Radyapi, Docker(Docker compose) and Postgres
+    title: Readyapi, Docker(Docker compose) and Postgres
   - author: Devon Ray
     author_link: https://devonray.com
     link: https://devonray.com/blog/deploying-a-readyapi-project-using-aws-lambda-aurora-cdk

@@ -20,7 +20,7 @@ def test_openapi_schema():
         "paths": {
             "/readyapi": {
                 "get": {
-                    "summary": "Redirect Radyapi",
+                    "summary": "Redirect Readyapi",
                     "operationId": "redirect_readyapi_readyapi_get",
                     "responses": {"307": {"description": "Successful Response"}},
                 }
