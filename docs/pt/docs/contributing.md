@@ -378,9 +378,9 @@ Agora você poderá traduzir tudo e ver como está toda vez que salva o arquivo.
 
 Vamos dizer que você queira adicionar traduções para uma linguagem que ainda não foi traduzida, nem sequer uma página.
 
-Vamos dizer que você queira adicionar tradução para Haitiano, e ainda não tenha na documentação.
+Vamos dizer que você queira adicionar tradução para Haikhulnasoft, e ainda não tenha na documentação.
 
-Verificando o link acima, o código para "Haitiano" é `ht`.
+Verificando o link acima, o código para "Haikhulnasoft" é `ht`.
 
 O próximo passo é rodar o _script_ para gerar um novo diretório de tradução:
 

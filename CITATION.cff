@@ -9,7 +9,7 @@ message: >-
 type: software
 authors:
   - given-names: KhulnaSoft
-    family-names: Ltd
+    family-names: KhulnaSoft
     email: info@khulnasoft.com
 identifiers:
 repository-code: 'https://github.com/readyapi/readyapi'

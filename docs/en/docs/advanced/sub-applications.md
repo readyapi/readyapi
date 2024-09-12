@@ -36,12 +36,12 @@ In this case, it will be mounted at the path `/subapi`:
 
 ### Check the automatic API docs
 
-Now, run `uvicorn` with the main app, if your file is `main.py`, it would be:
+Now, run the `readyapi` command with your file:
 
 <div class="termy">
 
 ```console
-$ uvicorn main:app --reload
+$ readyapi dev main.py
 
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```

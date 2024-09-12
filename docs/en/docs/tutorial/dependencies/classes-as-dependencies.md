@@ -381,7 +381,7 @@ The last `CommonQueryParams`, in:
 
 ...is what **ReadyAPI** will actually use to know what is the dependency.
 
-From it is that ReadyAPI will extract the declared parameters and that is what ReadyAPI will actually call.
+It is from this one that ReadyAPI will extract the declared parameters and that is what ReadyAPI will actually call.
 
 ---
 

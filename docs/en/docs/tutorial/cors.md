@@ -40,7 +40,7 @@ You can configure it in your **ReadyAPI** application using the `CORSMiddleware`
 * Create a list of allowed origins (as strings).
 * Add it as a "middleware" to your **ReadyAPI** application.
 
-You can also specify if your backend allows:
+You can also specify whether your backend allows:
 
 * Credentials (Authorization headers, Cookies, etc).
 * Specific HTTP methods (`POST`, `PUT`) or all of them with the wildcard `"*"`.
