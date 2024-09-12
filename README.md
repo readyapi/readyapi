@@ -192,8 +192,6 @@ And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" targe
 
 You will see the alternative automatic documentation (provided by <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
-
 ## Example upgrade
 
 Now modify the file `main.py` to receive a body from a `PUT` request.
