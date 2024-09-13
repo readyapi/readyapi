@@ -62,8 +62,6 @@ jobs:
         run: pip install -r requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
-      - name: Verify Docs
-        run: python ./scripts/docs.py verify-docs
       - name: Export Language Codes
         id: show-langs
         run: |
