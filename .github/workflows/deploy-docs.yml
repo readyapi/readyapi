@@ -1,17 +1,11 @@
 name: Deploy Docs
 on:
+  workflow_dispatch:
   workflow_run:
     workflows:
       - Build Docs
     types:
       - completed
-
-permissions:
-  contents: write
-  deployments: write
-  issues: write
-  pull-requests: write
-  statuses: write
 
 jobs:
   deploy-docs:
@@ -21,48 +15,45 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+
       - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - uses: actions/cache@v4
-        id: cache
-        with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ runner.os }}-python-github-actions-${{ env.pythonLocation }}-${{ hashFiles('requirements-github-actions.txt') }}-v01
-      - name: Install GitHub Actions dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-github-actions.txt
-      - name: Deploy Docs Status Pending
-        run: python ./scripts/deploy_docs_status.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
-          RUN_ID: ${{ github.run_id }}
+          token: ${{ secrets.ORG_REPO_TOKEN }}
 
       - name: Clean site
         run: |
           rm -rf ./site
           mkdir ./site
-      - uses: actions/download-artifact@v4
+
+      - name: Download Artifact Docs
+        id: download
+        uses: dawidd6/action-download-artifact@v6
         with:
+          if_no_artifact_found: ignore
+          github_token: ${{ secrets.ORG_REPO_TOKEN }}
+          workflow: build-docs.yml
+          run_id: ${{ github.event.workflow_run.id }}
+          name: docs-site
           path: ./site/
-          pattern: docs-site-*
-          merge-multiple: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "info@khulnasoft.com"
+          git config --global user.name "khulnasoft-bot"
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './site'
-          publish_branch: 'gh-pages'
+        if: steps.download.outputs.found_artifact == 'true'
+        run: |
+          cd ./site
+          git init
+          git add .
+          git commit -m "Deploy docs"
+          git remote add origin https://x-access-token:${{ secrets.ORG_REPO_TOKEN }}@github.com/readyapi/readyapi
+          git push --force origin master:gh-pages
+
       - name: Comment Deploy
-        run: python ./scripts/deploy_docs_status.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEPLOY_URL: ${{ steps.deploy.outputs.url }}
-          COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
-          RUN_ID: ${{ github.run_id }}
-          IS_DONE: "true"
+        if: always()
+        uses: ./.github/actions/comment-docs-preview-in-pr
+        with:
+          token: ${{ secrets.ORG_REPO_TOKEN }}
+          deploy_url: "https://${{ github.repository_owner }}.github.io/${{ github.repository }}"
