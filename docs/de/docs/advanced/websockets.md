@@ -39,7 +39,7 @@ In der Produktion hätten Sie eine der oben genannten Optionen.
 Aber es ist die einfachste Möglichkeit, sich auf die Serverseite von WebSockets zu konzentrieren und ein funktionierendes Beispiel zu haben:
 
 ```Python hl_lines="2  6-38  41-43"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 ## Einen `websocket` erstellen
@@ -47,7 +47,7 @@ Aber es ist die einfachste Möglichkeit, sich auf die Serverseite von WebSockets
 Erstellen Sie in Ihrer **ReadyAPI**-Anwendung einen `websocket`:
 
 ```Python hl_lines="1  46-47"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 /// note | "Technische Details"
@@ -63,7 +63,7 @@ Sie können auch `from starlette.websockets import WebSocket` verwenden.
 In Ihrer WebSocket-Route können Sie Nachrichten `await`en und Nachrichten senden.
 
 ```Python hl_lines="48-52"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 Sie können Binär-, Text- und JSON-Daten empfangen und senden.
@@ -106,19 +106,19 @@ Und alle verwenden dieselbe WebSocket-Verbindung.
 
 In WebSocket-Endpunkten können Sie Folgendes aus `readyapi` importieren und verwenden:
 
-* `Depends`
-* `Security`
-* `Cookie`
-* `Header`
-* `Path`
-* `Query`
+- `Depends`
+- `Security`
+- `Cookie`
+- `Header`
+- `Path`
+- `Query`
 
-Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/*Pfadoperationen*:
+Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/_Pfadoperationen_:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -126,7 +126,7 @@ Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/*Pf
 //// tab | Python 3.9+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py39.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -134,7 +134,7 @@ Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/*Pf
 //// tab | Python 3.8+
 
 ```Python hl_lines="69-70  83"
-{!> ../../../docs_src/websockets/tutorial002_an.py!}
+{!> ../../docs_src/websockets/tutorial002_an.py!}
 ```
 
 ////
@@ -148,7 +148,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="66-67  79"
-{!> ../../../docs_src/websockets/tutorial002_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_py310.py!}
 ```
 
 ////
@@ -162,7 +162,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="68-69  81"
-{!> ../../../docs_src/websockets/tutorial002.py!}
+{!> ../../docs_src/websockets/tutorial002.py!}
 ```
 
 ////
@@ -193,8 +193,8 @@ $ uvicorn main:app --reload
 
 Dort können Sie einstellen:
 
-* Die „Item ID“, die im Pfad verwendet wird.
-* Das „Token“, das als Query-Parameter verwendet wird.
+- Die „Item ID“, die im Pfad verwendet wird.
+- Das „Token“, das als Query-Parameter verwendet wird.
 
 /// tip | "Tipp"
 
@@ -213,7 +213,7 @@ Wenn eine WebSocket-Verbindung geschlossen wird, löst `await websocket.receive_
 //// tab | Python 3.9+
 
 ```Python hl_lines="79-81"
-{!> ../../../docs_src/websockets/tutorial003_py39.py!}
+{!> ../../docs_src/websockets/tutorial003_py39.py!}
 ```
 
 ////
@@ -221,16 +221,16 @@ Wenn eine WebSocket-Verbindung geschlossen wird, löst `await websocket.receive_
 //// tab | Python 3.8+
 
 ```Python hl_lines="81-83"
-{!> ../../../docs_src/websockets/tutorial003.py!}
+{!> ../../docs_src/websockets/tutorial003.py!}
 ```
 
 ////
 
 Zum Ausprobieren:
 
-* Öffnen Sie die Anwendung mit mehreren Browser-Tabs.
-* Schreiben Sie Nachrichten in den Tabs.
-* Schließen Sie dann einen der Tabs.
+- Öffnen Sie die Anwendung mit mehreren Browser-Tabs.
+- Schreiben Sie Nachrichten in den Tabs.
+- Schließen Sie dann einen der Tabs.
 
 Das wird die Ausnahme `WebSocketDisconnect` auslösen und alle anderen Clients erhalten eine Nachricht wie:
 
@@ -252,5 +252,5 @@ Wenn Sie etwas benötigen, das sich leicht in ReadyAPI integrieren lässt, aber 
 
 Weitere Informationen zu Optionen finden Sie in der Dokumentation von Starlette:
 
-* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">Die `WebSocket`-Klasse</a>.
-* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Klassen-basierte Handhabung von WebSockets</a>.
+- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">Die `WebSocket`-Klasse</a>.
+- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Klassen-basierte Handhabung von WebSockets</a>.

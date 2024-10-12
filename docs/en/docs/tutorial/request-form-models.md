@@ -6,7 +6,7 @@ You can use **Pydantic models** to declare **form fields** in ReadyAPI.
 
 To use forms, first install <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it, for example:
 
 ```console
 $ pip install python-multipart
@@ -27,7 +27,7 @@ You just need to declare a **Pydantic model** with the fields you want to receiv
 //// tab | Python 3.9+
 
 ```Python hl_lines="9-11  15"
-{!> ../../../docs_src/request_form_models/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_form_models/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -35,7 +35,7 @@ You just need to declare a **Pydantic model** with the fields you want to receiv
 //// tab | Python 3.8+
 
 ```Python hl_lines="8-10  14"
-{!> ../../../docs_src/request_form_models/tutorial001_an.py!}
+{!> ../../docs_src/request_form_models/tutorial001_an.py!}
 ```
 
 ////
@@ -49,7 +49,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="7-9  13"
-{!> ../../../docs_src/request_form_models/tutorial001.py!}
+{!> ../../docs_src/request_form_models/tutorial001.py!}
 ```
 
 ////
@@ -79,7 +79,7 @@ You can use Pydantic's model configuration to `forbid` any `extra` fields:
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/request_form_models/tutorial002_an_py39.py!}
+{!> ../../docs_src/request_form_models/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -87,7 +87,7 @@ You can use Pydantic's model configuration to `forbid` any `extra` fields:
 //// tab | Python 3.8+
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/request_form_models/tutorial002_an.py!}
+{!> ../../docs_src/request_form_models/tutorial002_an.py!}
 ```
 
 ////
@@ -101,7 +101,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/request_form_models/tutorial002.py!}
+{!> ../../docs_src/request_form_models/tutorial002.py!}
 ```
 
 ////
@@ -110,22 +110,22 @@ If a client tries to send some extra data, they will receive an **error** respon
 
 For example, if the client tries to send the form fields:
 
-* `username`: `Rick`
-* `password`: `Portal Gun`
-* `extra`: `Mr. Poopybutthole`
+- `username`: `Rick`
+- `password`: `Portal Gun`
+- `extra`: `Mr. Poopybutthole`
 
 They will receive an error response telling them that the field `extra` is not allowed:
 
 ```json
 {
-    "detail": [
-        {
-            "type": "extra_forbidden",
-            "loc": ["body", "extra"],
-            "msg": "Extra inputs are not permitted",
-            "input": "Mr. Poopybutthole"
-        }
-    ]
+  "detail": [
+    {
+      "type": "extra_forbidden",
+      "loc": ["body", "extra"],
+      "msg": "Extra inputs are not permitted",
+      "input": "Mr. Poopybutthole"
+    }
+  ]
 }
 ```
 

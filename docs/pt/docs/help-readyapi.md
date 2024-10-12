@@ -12,13 +12,13 @@ E também existem vários modos de se conseguir ajuda.
 
 ## Inscreva-se na newsletter
 
-Você pode se inscrever (pouco frequente) [**ReadyAPI e amigos** newsletter](newsletter.md){.internal-link target=_blank} para receber atualizações:
+Você pode se inscrever (pouco frequente) [**ReadyAPI e amigos** newsletter](newsletter.md){.internal-link target=\_blank} para receber atualizações:
 
-* Notícias sobre ReadyAPI e amigos 🚀
-* Tutoriais 📝
-* Recursos ✨
-* Mudanças de última hora 🚨
-* Truques e dicas ✅
+- Notícias sobre ReadyAPI e amigos 🚀
+- Tutoriais 📝
+- Recursos ✨
+- Mudanças de última hora 🚨
+- Truques e dicas ✅
 
 ## Siga o ReadyAPI no twitter
 
@@ -44,18 +44,18 @@ Você pode se conectar <a href="https://khulnasoft.com" class="external-link" ta
 
 Você pode:
 
-* <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Me siga no **GitHub**</a>.
-    * Ver também outros projetos Open Source criados por mim que podem te ajudar.
-    * Me seguir para saber quando um novo projeto Open Source for criado.
-* <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me siga no **Twitter**</a>.
-    * Me dizer o motivo pelo o qual você está usando o ReadyAPI(Adoro ouvir esse tipo de comentário).
-    * Saber quando eu soltar novos anúncios ou novas ferramentas.
-    * Também é possivel <a href="https://twitter.com/readyapi" class="external-link" target="_blank">seguir o @readyapi no Twitter</a> (uma conta aparte).
-* <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Conect-se comigo no **Linkedin**</a>.
-    * Saber quando eu fizer novos anúncios ou novas ferramentas (apesar de que uso o twitter com mais frequência 🤷‍♂).
-* Ler meus artigos (ou me seguir) no <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> ou no <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
-    * Ficar por dentro de novas ideias, artigos, e ferramentas criadas por mim.
-    * Me siga para saber quando eu publicar algo novo.
+- <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Me siga no **GitHub**</a>.
+  - Ver também outros projetos Open Source criados por mim que podem te ajudar.
+  - Me seguir para saber quando um novo projeto Open Source for criado.
+- <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me siga no **Twitter**</a>.
+  - Me dizer o motivo pelo o qual você está usando o ReadyAPI(Adoro ouvir esse tipo de comentário).
+  - Saber quando eu soltar novos anúncios ou novas ferramentas.
+  - Também é possivel <a href="https://twitter.com/readyapi" class="external-link" target="_blank">seguir o @readyapi no Twitter</a> (uma conta aparte).
+- <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Conect-se comigo no **Linkedin**</a>.
+  - Saber quando eu fizer novos anúncios ou novas ferramentas (apesar de que uso o twitter com mais frequência 🤷‍♂).
+- Ler meus artigos (ou me seguir) no <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> ou no <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
+  - Ficar por dentro de novas ideias, artigos, e ferramentas criadas por mim.
+  - Me siga para saber quando eu publicar algo novo.
 
 ## Tweete sobre **ReadyAPI**
 
@@ -65,14 +65,14 @@ Adoro ouvir sobre como o **ReadyAPI** é usado, o que você gosta nele, em qual 
 
 ## Vote no ReadyAPI
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote no **ReadyAPI** no Slant</a>.
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Vote no **ReadyAPI** no AlternativeTo</a>.
+- <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote no **ReadyAPI** no Slant</a>.
+- <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Vote no **ReadyAPI** no AlternativeTo</a>.
 
 ## Responda perguntas no GitHub
 
-Você pode acompanhar as <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">perguntas existentes</a> e tentar ajudar outros,            . 🤓
+Você pode acompanhar as <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">perguntas existentes</a> e tentar ajudar outros, . 🤓
 
-Ajudando a responder as questões de varias pessoas, você pode se tornar um [Expert em ReadyAPI](readyapi-people.md#especialistas){.internal-link target=_blank} oficial. 🎉
+Ajudando a responder as questões de varias pessoas, você pode se tornar um [Expert em ReadyAPI](readyapi-people.md#especialistas){.internal-link target=\_blank} oficial. 🎉
 
 ## Acompanhe o repositório do GitHub
 
@@ -86,23 +86,23 @@ Assim podendo tentar ajudar a resolver essas questões.
 
 É possível <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">criar uma nova pergunta</a> no repositório do GitHub, por exemplo:
 
-* Faça uma **pergunta** ou pergunte sobre um **problema**.
-* Sugira novos **recursos**.
+- Faça uma **pergunta** ou pergunte sobre um **problema**.
+- Sugira novos **recursos**.
 
 **Nota**: Se você fizer uma pergunta, então eu gostaria de pedir que você também ajude os outros com suas respectivas perguntas. 😉
 
 ## Crie um Pull Request
 
-É possível [contribuir](contributing.md){.internal-link target=_blank} no código fonte fazendo Pull Requests, por exemplo:
+É possível [contribuir](contributing.md){.internal-link target=\_blank} no código fonte fazendo Pull Requests, por exemplo:
 
-* Para corrigir um erro de digitação que você encontrou na documentação.
-* Para compartilhar um artigo, video, ou podcast criados por você sobre o ReadyAPI <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editando este arquivo</a>.
-    * Não se esqueça de adicionar o link no começo da seção correspondente.
-* Para ajudar [traduzir a documentação](contributing.md#traducoes){.internal-link target=_blank} para sua lingua.
-    * Também é possivel revisar as traduções já existentes.
-* Para propor novas seções na documentação.
-* Para corrigir um bug/questão.
-* Para adicionar um novo recurso.
+- Para corrigir um erro de digitação que você encontrou na documentação.
+- Para compartilhar um artigo, video, ou podcast criados por você sobre o ReadyAPI <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editando este arquivo</a>.
+  - Não se esqueça de adicionar o link no começo da seção correspondente.
+- Para ajudar [traduzir a documentação](contributing.md#traducoes){.internal-link target=\_blank} para sua lingua.
+  - Também é possivel revisar as traduções já existentes.
+- Para propor novas seções na documentação.
+- Para corrigir um bug/questão.
+- Para adicionar um novo recurso.
 
 ## Entre no chat
 
@@ -111,7 +111,7 @@ do ReadyAPI.
 
 /// tip | "Dica"
 
-Para perguntas, pergunte nas <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">questões do GitHub</a>, lá tem um chance maior de você ser ajudado sobre o ReadyAPI [ReadyAPI Experts](readyapi-people.md#especialistas){.internal-link target=_blank}.
+Para perguntas, pergunte nas <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">questões do GitHub</a>, lá tem um chance maior de você ser ajudado sobre o ReadyAPI [ReadyAPI Experts](readyapi-people.md#especialistas){.internal-link target=\_blank}.
 
 Use o chat apenas para outro tipo de assunto.
 
@@ -123,7 +123,7 @@ Tenha em mente que os chats permitem uma "conversa mais livre", dessa forma é m
 
 Nas questões do GitHub o template irá te guiar para que você faça a sua pergunta de um jeito mais correto, fazendo com que você receba respostas mais completas, e até mesmo que você mesmo resolva o problema antes de perguntar. E no GitHub eu garanto que sempre irei responder todas as perguntas, mesmo que leve um tempo. Eu pessoalmente não consigo fazer isso via chat. 😅
 
-Conversas no chat não são tão fáceis de serem encontrados quanto no GitHub, então questões e respostas podem se perder dentro da conversa. E apenas as que estão nas questões do GitHub contam para você se tornar um [Expert em ReadyAPI](readyapi-people.md#especialistas){.internal-link target=_blank}, então você receberá mais atenção nas questões do GitHub.
+Conversas no chat não são tão fáceis de serem encontrados quanto no GitHub, então questões e respostas podem se perder dentro da conversa. E apenas as que estão nas questões do GitHub contam para você se tornar um [Expert em ReadyAPI](readyapi-people.md#especialistas){.internal-link target=\_blank}, então você receberá mais atenção nas questões do GitHub.
 
 Por outro lado, existem milhares de usuários no chat, então tem uma grande chance de você encontrar alguém para trocar uma idéia por lá em qualquer horário. 😄
 
@@ -141,8 +141,8 @@ Como você viu na documentação, o ReadyAPI se apoia em nos gigantes, Starlette
 
 Patrocine também:
 
-* <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
-* <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
+- <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
+- <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
 
 ---
 

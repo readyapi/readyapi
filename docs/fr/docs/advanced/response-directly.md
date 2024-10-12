@@ -1,12 +1,12 @@
 # Renvoyer directement une réponse
 
-Lorsque vous créez une *opération de chemins* **ReadyAPI**, vous pouvez normalement retourner n'importe quelle donnée : un `dict`, une `list`, un modèle Pydantic, un modèle de base de données, etc.
+Lorsque vous créez une _opération de chemins_ **ReadyAPI**, vous pouvez normalement retourner n'importe quelle donnée : un `dict`, une `list`, un modèle Pydantic, un modèle de base de données, etc.
 
-Par défaut, **ReadyAPI** convertirait automatiquement cette valeur de retour en JSON en utilisant le `jsonable_encoder` expliqué dans [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
+Par défaut, **ReadyAPI** convertirait automatiquement cette valeur de retour en JSON en utilisant le `jsonable_encoder` expliqué dans [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=\_blank}.
 
 Ensuite, en arrière-plan, il mettra ces données JSON-compatible (par exemple un `dict`) à l'intérieur d'un `JSONResponse` qui sera utilisé pour envoyer la réponse au client.
 
-Mais vous pouvez retourner une `JSONResponse` directement à partir de vos *opérations de chemin*.
+Mais vous pouvez retourner une `JSONResponse` directement à partir de vos _opérations de chemin_.
 
 Cela peut être utile, par exemple, pour retourner des en-têtes personnalisés ou des cookies.
 
@@ -35,7 +35,7 @@ Par exemple, vous ne pouvez pas mettre un modèle Pydantic dans une `JSONRespons
 Pour ces cas, vous pouvez spécifier un appel à `jsonable_encoder` pour convertir vos données avant de les passer à une réponse :
 
 ```Python hl_lines="6-7  21-22"
-{!../../../docs_src/response_directly/tutorial001.py!}
+{!../../docs_src/response_directly/tutorial001.py!}
 ```
 
 /// note | "Détails techniques"
@@ -57,13 +57,13 @@ Disons que vous voulez retourner une réponse <a href="https://en.wikipedia.org/
 Vous pouvez mettre votre contenu XML dans une chaîne de caractères, la placer dans une `Response`, et la retourner :
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ## Notes
 
 Lorsque vous renvoyez une `Response` directement, ses données ne sont pas validées, converties (sérialisées), ni documentées automatiquement.
 
-Mais vous pouvez toujours les documenter comme décrit dans [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}.
+Mais vous pouvez toujours les documenter comme décrit dans [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}.
 
 Vous pouvez voir dans les sections suivantes comment utiliser/déclarer ces `Response`s personnalisées tout en conservant la conversion automatique des données, la documentation, etc.

@@ -1,6 +1,6 @@
 # 경로 작동 데코레이터에서의 의존성
 
-몇몇 경우에는, *경로 작동 함수* 안에서 의존성의 반환 값이 필요하지 않습니다.
+몇몇 경우에는, _경로 작동 함수_ 안에서 의존성의 반환 값이 필요하지 않습니다.
 
 또는 의존성이 값을 반환하지 않습니다.
 
@@ -17,7 +17,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial006_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/dependencies/tutorial006_an.py!}
+{!> ../../docs_src/dependencies/tutorial006_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial006.py!}
+{!> ../../docs_src/dependencies/tutorial006.py!}
 ```
 
 ////
@@ -60,7 +60,7 @@
 
 이 예시에서 `X-Key`와 `X-Token`이라는 커스텀 헤더를 만들어 사용했습니다.
 
-그러나 실제로 보안을 구현할 때는 통합된 [보안 유틸리티 (다음 챕터)](../security/index.md){.internal-link target=_blank}를 사용하는 것이 더 많은 이점을 얻을 수 있습니다.
+그러나 실제로 보안을 구현할 때는 통합된 [보안 유틸리티 (다음 챕터)](../security/index.md){.internal-link target=\_blank}를 사용하는 것이 더 많은 이점을 얻을 수 있습니다.
 
 ///
 
@@ -75,7 +75,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/dependencies/tutorial006_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -83,7 +83,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="7  12"
-{!> ../../../docs_src/dependencies/tutorial006_an.py!}
+{!> ../../docs_src/dependencies/tutorial006_an.py!}
 ```
 
 ////
@@ -97,7 +97,7 @@
 ///
 
 ```Python hl_lines="6  11"
-{!> ../../../docs_src/dependencies/tutorial006.py!}
+{!> ../../docs_src/dependencies/tutorial006.py!}
 ```
 
 ////
@@ -109,7 +109,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/dependencies/tutorial006_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -117,7 +117,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  14"
-{!> ../../../docs_src/dependencies/tutorial006_an.py!}
+{!> ../../docs_src/dependencies/tutorial006_an.py!}
 ```
 
 ////
@@ -131,7 +131,7 @@
 ///
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/dependencies/tutorial006.py!}
+{!> ../../docs_src/dependencies/tutorial006.py!}
 ```
 
 ////
@@ -145,7 +145,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/dependencies/tutorial006_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -153,7 +153,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/dependencies/tutorial006_an.py!}
+{!> ../../docs_src/dependencies/tutorial006_an.py!}
 ```
 
 ////
@@ -167,14 +167,14 @@
 ///
 
 ```Python hl_lines="9  14"
-{!> ../../../docs_src/dependencies/tutorial006.py!}
+{!> ../../docs_src/dependencies/tutorial006.py!}
 ```
 
 ////
 
-## *경로 작동* 모음에 대한 의존성
+## _경로 작동_ 모음에 대한 의존성
 
-나중에 여러 파일을 가지고 있을 수 있는 더 큰 애플리케이션을 구조화하는 법([더 큰 애플리케이션 - 여러 파일들](../../tutorial/bigger-applications.md){.internal-link target=_blank})을 읽을 때, *경로 작동* 모음에 대한 단일 `dependencies` 매개변수를 선언하는 법에 대해서 배우게 될 것입니다.
+나중에 여러 파일을 가지고 있을 수 있는 더 큰 애플리케이션을 구조화하는 법([더 큰 애플리케이션 - 여러 파일들](../../tutorial/bigger-applications.md){.internal-link target=\_blank})을 읽을 때, _경로 작동_ 모음에 대한 단일 `dependencies` 매개변수를 선언하는 법에 대해서 배우게 될 것입니다.
 
 ## 전역 의존성
 

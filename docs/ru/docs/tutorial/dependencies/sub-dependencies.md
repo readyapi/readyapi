@@ -13,7 +13,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -21,7 +21,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -29,7 +29,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="9-10"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -43,7 +43,7 @@
 ///
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -57,7 +57,7 @@
 ///
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -73,7 +73,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -81,7 +81,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -89,7 +89,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -103,7 +103,7 @@
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -117,17 +117,17 @@
 ///
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 Остановимся на объявленных параметрах:
 
-* Несмотря на то, что эта функция сама является зависимостью, она также является зависимой от чего-то другого.
-    * Она зависит от `query_extractor` и присваивает возвращаемое ей значение параметру `q`.
-* Она также объявляет необязательный куки-параметр `last_query` в виде строки.
-    * Если пользователь не указал параметр `q` в запросе, то мы используем последний использованный запрос, который мы ранее сохранили в куки-параметре `last_query`.
+- Несмотря на то, что эта функция сама является зависимостью, она также является зависимой от чего-то другого.
+  - Она зависит от `query_extractor` и присваивает возвращаемое ей значение параметру `q`.
+- Она также объявляет необязательный куки-параметр `last_query` в виде строки.
+  - Если пользователь не указал параметр `q` в запросе, то мы используем последний использованный запрос, который мы ранее сохранили в куки-параметре `last_query`.
 
 ## Использование зависимости
 
@@ -136,7 +136,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -144,7 +144,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -152,7 +152,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -166,7 +166,7 @@
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -180,14 +180,14 @@
 ///
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 /// info | "Дополнительная информация"
 
-Обратите внимание, что мы объявляем только одну зависимость в *функции операции пути* - `query_or_cookie_extractor`.
+Обратите внимание, что мы объявляем только одну зависимость в _функции операции пути_ - `query_or_cookie_extractor`.
 
 Но **ReadyAPI** будет знать, что сначала он должен выполнить `query_extractor`, чтобы передать результаты этого в `query_or_cookie_extractor` при его вызове.
 
@@ -206,7 +206,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Использование одной и той же зависимости несколько раз
 
-Если одна из ваших зависимостей объявлена несколько раз для одной и той же *функции операции пути*, например, несколько зависимостей имеют общую подзависимость, **ReadyAPI** будет знать, что вызывать эту подзависимость нужно только один раз за запрос.
+Если одна из ваших зависимостей объявлена несколько раз для одной и той же _функции операции пути_, например, несколько зависимостей имеют общую подзависимость, **ReadyAPI** будет знать, что вызывать эту подзависимость нужно только один раз за запрос.
 
 При этом возвращаемое значение будет сохранено в <abbr title="Система для хранения значений, сгенерированных компьютером, для их повторного использования вместо повторного вычисления.">"кэш"</abbr> и будет передано всем "зависимым" функциям, которые нуждаются в нем внутри этого конкретного запроса, вместо того, чтобы вызывать зависимость несколько раз для одного и того же запроса.
 
@@ -240,7 +240,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 Помимо всех этих умных слов, используемых здесь, система внедрения зависимостей довольно проста.
 
-Это просто функции, которые выглядят так же, как *функции операций путей*.
+Это просто функции, которые выглядят так же, как _функции операций путей_.
 
 Но, тем не менее, эта система очень мощная и позволяет вам объявлять вложенные графы (деревья) зависимостей сколь угодно глубоко.
 

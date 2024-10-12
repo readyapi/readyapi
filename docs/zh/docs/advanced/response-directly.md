@@ -1,12 +1,12 @@
 # 直接返回响应
 
-当你创建一个 **ReadyAPI** *路径操作* 时，你可以正常返回以下任意一种数据：`dict`，`list`，Pydantic 模型，数据库模型等等。
+当你创建一个 **ReadyAPI** _路径操作_ 时，你可以正常返回以下任意一种数据：`dict`，`list`，Pydantic 模型，数据库模型等等。
 
-**ReadyAPI** 默认会使用 `jsonable_encoder` 将这些类型的返回值转换成 JSON 格式，`jsonable_encoder` 在 [JSON 兼容编码器](../tutorial/encoder.md){.internal-link target=_blank} 中有阐述。
+**ReadyAPI** 默认会使用 `jsonable_encoder` 将这些类型的返回值转换成 JSON 格式，`jsonable_encoder` 在 [JSON 兼容编码器](../tutorial/encoder.md){.internal-link target=\_blank} 中有阐述。
 
 然后，**ReadyAPI** 会在后台将这些兼容 JSON 的数据（比如字典）放到一个 `JSONResponse` 中，该 `JSONResponse` 会用来发送响应给客户端。
 
-但是你可以在你的 *路径操作* 中直接返回一个 `JSONResponse`。
+但是你可以在你的 _路径操作_ 中直接返回一个 `JSONResponse`。
 
 直接返回响应可能会有用处，比如返回自定义的响应头和 cookies。
 
@@ -30,13 +30,12 @@
 
 由于 **ReadyAPI** 并未对你返回的 `Response` 做任何改变，你必须确保你已经准备好响应内容。
 
-例如，如果不首先将 Pydantic 模型转换为 `dict`，并将所有数据类型（如 `datetime`、`UUID` 等）转换为兼容 JSON 的类型，则不能将其放入JSONResponse中。
+例如，如果不首先将 Pydantic 模型转换为 `dict`，并将所有数据类型（如 `datetime`、`UUID` 等）转换为兼容 JSON 的类型，则不能将其放入 JSONResponse 中。
 
 对于这些情况，在将数据传递给响应之前，你可以使用 `jsonable_encoder` 来转换你的数据。
 
-
 ```Python hl_lines="4 6 20 21"
-{!../../../docs_src/response_directly/tutorial001.py!}
+{!../../docs_src/response_directly/tutorial001.py!}
 ```
 
 /// note | "技术细节"
@@ -58,13 +57,13 @@
 你可以把你的 XML 内容放到一个字符串中，放到一个 `Response` 中，然后返回。
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ## 说明
 
 当你直接返回 `Response` 时，它的数据既没有校验，又不会进行转换（序列化），也不会自动生成文档。
 
-但是你仍可以参考 [OpenApI 中的额外响应](additional-responses.md){.internal-link target=_blank} 给响应编写文档。
+但是你仍可以参考 [OpenApI 中的额外响应](additional-responses.md){.internal-link target=\_blank} 给响应编写文档。
 
 在后续的章节中你可以了解到如何使用/声明这些自定义的 `Response` 的同时还保留自动化的数据转换和文档等。

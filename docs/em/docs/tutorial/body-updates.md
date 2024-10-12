@@ -9,7 +9,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="30-35"
-{!> ../../../docs_src/body_updates/tutorial001.py!}
+{!> ../../docs_src/body_updates/tutorial001.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="30-35"
-{!> ../../../docs_src/body_updates/tutorial001_py39.py!}
+{!> ../../docs_src/body_updates/tutorial001_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="28-33"
-{!> ../../../docs_src/body_updates/tutorial001_py310.py!}
+{!> ../../docs_src/body_updates/tutorial001_py310.py!}
 ```
 
 ////
@@ -50,7 +50,7 @@
 
 ## 🍕 ℹ ⏮️ `PATCH`
 
-👆 💪 ⚙️ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">🇺🇸🔍 `PATCH`</a> 🛠️ *🍕* ℹ 💽.
+👆 💪 ⚙️ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">🇺🇸🔍 `PATCH`</a> 🛠️ _🍕_ ℹ 💽.
 
 👉 ⛓ 👈 👆 💪 📨 🕴 💽 👈 👆 💚 ℹ, 🍂 🎂 🐣.
 
@@ -58,7 +58,7 @@
 
 `PATCH` 🌘 🛎 ⚙️ &amp; 💭 🌘 `PUT`.
 
- &amp; 📚 🏉 ⚙️ 🕴 `PUT`, 🍕 ℹ.
+&amp; 📚 🏉 ⚙️ 🕴 `PUT`, 🍕 ℹ.
 
 👆 **🆓** ⚙️ 👫 👐 👆 💚, **ReadyAPI** 🚫 🚫 🙆 🚫.
 
@@ -79,7 +79,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="34"
-{!> ../../../docs_src/body_updates/tutorial002.py!}
+{!> ../../docs_src/body_updates/tutorial002.py!}
 ```
 
 ////
@@ -87,7 +87,7 @@
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="34"
-{!> ../../../docs_src/body_updates/tutorial002_py39.py!}
+{!> ../../docs_src/body_updates/tutorial002_py39.py!}
 ```
 
 ////
@@ -95,7 +95,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="32"
-{!> ../../../docs_src/body_updates/tutorial002_py310.py!}
+{!> ../../docs_src/body_updates/tutorial002_py310.py!}
 ```
 
 ////
@@ -109,7 +109,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="35"
-{!> ../../../docs_src/body_updates/tutorial002.py!}
+{!> ../../docs_src/body_updates/tutorial002.py!}
 ```
 
 ////
@@ -117,7 +117,7 @@
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="35"
-{!> ../../../docs_src/body_updates/tutorial002_py39.py!}
+{!> ../../docs_src/body_updates/tutorial002_py39.py!}
 ```
 
 ////
@@ -125,7 +125,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="33"
-{!> ../../../docs_src/body_updates/tutorial002_py310.py!}
+{!> ../../docs_src/body_updates/tutorial002_py310.py!}
 ```
 
 ////
@@ -134,21 +134,21 @@
 
 📄, ✔ 🍕 ℹ 👆 🔜:
 
-* (⚗) ⚙️ `PATCH` ↩️ `PUT`.
-* 🗃 🏪 💽.
-* 🚮 👈 💽 Pydantic 🏷.
-* 🏗 `dict` 🍵 🔢 💲 ⚪️➡️ 🔢 🏷 (⚙️ `exclude_unset`).
-    * 👉 🌌 👆 💪 ℹ 🕴 💲 🤙 ⚒ 👩‍💻, ↩️ 🔐 💲 ⏪ 🏪 ⏮️ 🔢 💲 👆 🏷.
-* ✍ 📁 🏪 🏷, 🛠️ ⚫️ 🔢 ⏮️ 📨 🍕 ℹ (⚙️ `update` 🔢).
-* 🗜 📁 🏷 🕳 👈 💪 🏪 👆 💽 (🖼, ⚙️ `jsonable_encoder`).
-    * 👉 ⭐ ⚙️ 🏷 `.dict()` 👩‍🔬 🔄, ✋️ ⚫️ ⚒ 💭 (&amp; 🗜) 💲 💽 🆎 👈 💪 🗜 🎻, 🖼, `datetime` `str`.
-* 🖊 💽 👆 💽.
-* 📨 ℹ 🏷.
+- (⚗) ⚙️ `PATCH` ↩️ `PUT`.
+- 🗃 🏪 💽.
+- 🚮 👈 💽 Pydantic 🏷.
+- 🏗 `dict` 🍵 🔢 💲 ⚪️➡️ 🔢 🏷 (⚙️ `exclude_unset`).
+  - 👉 🌌 👆 💪 ℹ 🕴 💲 🤙 ⚒ 👩‍💻, ↩️ 🔐 💲 ⏪ 🏪 ⏮️ 🔢 💲 👆 🏷.
+- ✍ 📁 🏪 🏷, 🛠️ ⚫️ 🔢 ⏮️ 📨 🍕 ℹ (⚙️ `update` 🔢).
+- 🗜 📁 🏷 🕳 👈 💪 🏪 👆 💽 (🖼, ⚙️ `jsonable_encoder`).
+  - 👉 ⭐ ⚙️ 🏷 `.dict()` 👩‍🔬 🔄, ✋️ ⚫️ ⚒ 💭 (&amp; 🗜) 💲 💽 🆎 👈 💪 🗜 🎻, 🖼, `datetime` `str`.
+- 🖊 💽 👆 💽.
+- 📨 ℹ 🏷.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="30-37"
-{!> ../../../docs_src/body_updates/tutorial002.py!}
+{!> ../../docs_src/body_updates/tutorial002.py!}
 ```
 
 ////
@@ -156,7 +156,7 @@
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="30-37"
-{!> ../../../docs_src/body_updates/tutorial002_py39.py!}
+{!> ../../docs_src/body_updates/tutorial002_py39.py!}
 ```
 
 ////
@@ -164,7 +164,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="28-35"
-{!> ../../../docs_src/body_updates/tutorial002_py310.py!}
+{!> ../../docs_src/body_updates/tutorial002_py310.py!}
 ```
 
 ////
@@ -183,6 +183,6 @@
 
 , 🚥 👆 💚 📨 🍕 ℹ 👈 💪 🚫 🌐 🔢, 👆 💪 ✔️ 🏷 ⏮️ 🌐 🔢 ™ 📦 (⏮️ 🔢 💲 ⚖️ `None`).
 
-🔬 ⚪️➡️ 🏷 ⏮️ 🌐 📦 💲 **ℹ** &amp; 🏷 ⏮️ ✔ 💲 **🏗**, 👆 💪 ⚙️ 💭 🔬 [➕ 🏷](extra-models.md){.internal-link target=_blank}.
+🔬 ⚪️➡️ 🏷 ⏮️ 🌐 📦 💲 **ℹ** &amp; 🏷 ⏮️ ✔ 💲 **🏗**, 👆 💪 ⚙️ 💭 🔬 [➕ 🏷](extra-models.md){.internal-link target=\_blank}.
 
 ///

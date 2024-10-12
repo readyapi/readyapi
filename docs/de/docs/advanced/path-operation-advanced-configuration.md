@@ -8,22 +8,22 @@ Wenn Sie kein „Experte“ für OpenAPI sind, brauchen Sie dies wahrscheinlich 
 
 ///
 
-Mit dem Parameter `operation_id` können Sie die OpenAPI `operationId` festlegen, die in Ihrer *Pfadoperation* verwendet werden soll.
+Mit dem Parameter `operation_id` können Sie die OpenAPI `operationId` festlegen, die in Ihrer _Pfadoperation_ verwendet werden soll.
 
 Sie müssten sicherstellen, dass sie für jede Operation eindeutig ist.
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
 ```
 
-### Verwendung des Namens der *Pfadoperation-Funktion* als operationId
+### Verwendung des Namens der _Pfadoperation-Funktion_ als operationId
 
-Wenn Sie die Funktionsnamen Ihrer API als `operationId`s verwenden möchten, können Sie über alle iterieren und die `operation_id` jeder *Pfadoperation* mit deren `APIRoute.name` überschreiben.
+Wenn Sie die Funktionsnamen Ihrer API als `operationId`s verwenden möchten, können Sie über alle iterieren und die `operation_id` jeder _Pfadoperation_ mit deren `APIRoute.name` überschreiben.
 
-Sie sollten dies tun, nachdem Sie alle Ihre *Pfadoperationen* hinzugefügt haben.
+Sie sollten dies tun, nachdem Sie alle Ihre _Pfadoperationen_ hinzugefügt haben.
 
 ```Python hl_lines="2  12-21  24"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
 ```
 
 /// tip | "Tipp"
@@ -34,7 +34,7 @@ Wenn Sie `app.openapi()` manuell aufrufen, sollten Sie vorher die `operationId`s
 
 /// warning | "Achtung"
 
-Wenn Sie dies tun, müssen Sie sicherstellen, dass jede Ihrer *Pfadoperation-Funktionen* einen eindeutigen Namen hat.
+Wenn Sie dies tun, müssen Sie sicherstellen, dass jede Ihrer _Pfadoperation-Funktionen_ einen eindeutigen Namen hat.
 
 Auch wenn diese sich in unterschiedlichen Modulen (Python-Dateien) befinden.
 
@@ -42,37 +42,37 @@ Auch wenn diese sich in unterschiedlichen Modulen (Python-Dateien) befinden.
 
 ## Von OpenAPI ausschließen
 
-Um eine *Pfadoperation* aus dem generierten OpenAPI-Schema (und damit aus den automatischen Dokumentationssystemen) auszuschließen, verwenden Sie den Parameter `include_in_schema` und setzen Sie ihn auf `False`:
+Um eine _Pfadoperation_ aus dem generierten OpenAPI-Schema (und damit aus den automatischen Dokumentationssystemen) auszuschließen, verwenden Sie den Parameter `include_in_schema` und setzen Sie ihn auf `False`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
 ```
 
 ## Fortgeschrittene Beschreibung mittels Docstring
 
-Sie können die verwendeten Zeilen aus dem Docstring einer *Pfadoperation-Funktion* einschränken, die für OpenAPI verwendet werden.
+Sie können die verwendeten Zeilen aus dem Docstring einer _Pfadoperation-Funktion_ einschränken, die für OpenAPI verwendet werden.
 
 Das Hinzufügen eines `\f` (ein maskiertes „Form Feed“-Zeichen) führt dazu, dass **ReadyAPI** die für OpenAPI verwendete Ausgabe an dieser Stelle abschneidet.
 
 Sie wird nicht in der Dokumentation angezeigt, aber andere Tools (z. B. Sphinx) können den Rest verwenden.
 
 ```Python hl_lines="19-29"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
 ```
 
 ## Zusätzliche Responses
 
-Sie haben wahrscheinlich gesehen, wie man das `response_model` und den `status_code` für eine *Pfadoperation* deklariert.
+Sie haben wahrscheinlich gesehen, wie man das `response_model` und den `status_code` für eine _Pfadoperation_ deklariert.
 
-Das definiert die Metadaten der Haupt-Response einer *Pfadoperation*.
+Das definiert die Metadaten der Haupt-Response einer _Pfadoperation_.
 
 Sie können auch zusätzliche Responses mit deren Modellen, Statuscodes usw. deklarieren.
 
-Es gibt hier in der Dokumentation ein ganzes Kapitel darüber, Sie können es unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=_blank} lesen.
+Es gibt hier in der Dokumentation ein ganzes Kapitel darüber, Sie können es unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank} lesen.
 
 ## OpenAPI-Extra
 
-Wenn Sie in Ihrer Anwendung eine *Pfadoperation* deklarieren, generiert **ReadyAPI** automatisch die relevanten Metadaten dieser *Pfadoperation*, die in das OpenAPI-Schema aufgenommen werden sollen.
+Wenn Sie in Ihrer Anwendung eine _Pfadoperation_ deklarieren, generiert **ReadyAPI** automatisch die relevanten Metadaten dieser _Pfadoperation_, die in das OpenAPI-Schema aufgenommen werden sollen.
 
 /// note | "Technische Details"
 
@@ -80,35 +80,35 @@ In der OpenAPI-Spezifikation wird das <a href="https://github.com/OAI/OpenAPI-Sp
 
 ///
 
-Es hat alle Informationen zur *Pfadoperation* und wird zur Erstellung der automatischen Dokumentation verwendet.
+Es hat alle Informationen zur _Pfadoperation_ und wird zur Erstellung der automatischen Dokumentation verwendet.
 
 Es enthält `tags`, `parameters`, `requestBody`, `responses`, usw.
 
-Dieses *Pfadoperation*-spezifische OpenAPI-Schema wird normalerweise automatisch von **ReadyAPI** generiert, Sie können es aber auch erweitern.
+Dieses _Pfadoperation_-spezifische OpenAPI-Schema wird normalerweise automatisch von **ReadyAPI** generiert, Sie können es aber auch erweitern.
 
 /// tip | "Tipp"
 
 Dies ist ein Low-Level Erweiterungspunkt.
 
-Wenn Sie nur zusätzliche Responses deklarieren müssen, können Sie dies bequemer mit [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=_blank} tun.
+Wenn Sie nur zusätzliche Responses deklarieren müssen, können Sie dies bequemer mit [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank} tun.
 
 ///
 
-Sie können das OpenAPI-Schema für eine *Pfadoperation* erweitern, indem Sie den Parameter `openapi_extra` verwenden.
+Sie können das OpenAPI-Schema für eine _Pfadoperation_ erweitern, indem Sie den Parameter `openapi_extra` verwenden.
 
 ### OpenAPI-Erweiterungen
 
 Dieses `openapi_extra` kann beispielsweise hilfreich sein, um <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions" class="external-link" target="_blank">OpenAPI-Erweiterungen</a> zu deklarieren:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
 ```
 
-Wenn Sie die automatische API-Dokumentation öffnen, wird Ihre Erweiterung am Ende der spezifischen *Pfadoperation* angezeigt.
+Wenn Sie die automatische API-Dokumentation öffnen, wird Ihre Erweiterung am Ende der spezifischen _Pfadoperation_ angezeigt.
 
 <img src="/img/tutorial/path-operation-advanced-configuration/image01.png">
 
-Und wenn Sie die resultierende OpenAPI sehen (unter `/openapi.json` in Ihrer API), sehen Sie Ihre Erweiterung auch als Teil der spezifischen *Pfadoperation*:
+Und wenn Sie die resultierende OpenAPI sehen (unter `/openapi.json` in Ihrer API), sehen Sie Ihre Erweiterung auch als Teil der spezifischen _Pfadoperation_:
 
 ```JSON hl_lines="22"
 {
@@ -139,9 +139,9 @@ Und wenn Sie die resultierende OpenAPI sehen (unter `/openapi.json` in Ihrer API
 }
 ```
 
-### Benutzerdefiniertes OpenAPI-*Pfadoperation*-Schema
+### Benutzerdefiniertes OpenAPI-_Pfadoperation_-Schema
 
-Das Dictionary in `openapi_extra` wird mit dem automatisch generierten OpenAPI-Schema für die *Pfadoperation* zusammengeführt (mittels Deep Merge).
+Das Dictionary in `openapi_extra` wird mit dem automatisch generierten OpenAPI-Schema für die _Pfadoperation_ zusammengeführt (mittels Deep Merge).
 
 Sie können dem automatisch generierten Schema also zusätzliche Daten hinzufügen.
 
@@ -150,7 +150,7 @@ Sie könnten sich beispielsweise dafür entscheiden, den Request mit Ihrem eigen
 Das könnte man mit `openapi_extra` machen:
 
 ```Python hl_lines="20-37  39-40"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
 ```
 
 In diesem Beispiel haben wir kein Pydantic-Modell deklariert. Tatsächlich wird der Requestbody nicht einmal als JSON <abbr title="von einem einfachen Format, wie Bytes, in Python-Objekte konvertieren">geparst</abbr>, sondern direkt als `bytes` gelesen und die Funktion `magic_data_reader ()` wäre dafür verantwortlich, ihn in irgendeiner Weise zu parsen.
@@ -159,7 +159,7 @@ Dennoch können wir das zu erwartende Schema für den Requestbody deklarieren.
 
 ### Benutzerdefinierter OpenAPI-Content-Type
 
-Mit demselben Trick könnten Sie ein Pydantic-Modell verwenden, um das JSON-Schema zu definieren, das dann im benutzerdefinierten Abschnitt des OpenAPI-Schemas für die *Pfadoperation* enthalten ist.
+Mit demselben Trick könnten Sie ein Pydantic-Modell verwenden, um das JSON-Schema zu definieren, das dann im benutzerdefinierten Abschnitt des OpenAPI-Schemas für die _Pfadoperation_ enthalten ist.
 
 Und Sie könnten dies auch tun, wenn der Datentyp in der Anfrage nicht JSON ist.
 
@@ -168,7 +168,7 @@ In der folgenden Anwendung verwenden wir beispielsweise weder die integrierte Fu
 //// tab | Pydantic v2
 
 ```Python hl_lines="17-22  24"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 ////
@@ -176,7 +176,7 @@ In der folgenden Anwendung verwenden wir beispielsweise weder die integrierte Fu
 //// tab | Pydantic v1
 
 ```Python hl_lines="17-22  24"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
 ```
 
 ////
@@ -196,7 +196,7 @@ Und dann parsen wir in unserem Code diesen YAML-Inhalt direkt und verwenden dann
 //// tab | Pydantic v2
 
 ```Python hl_lines="26-33"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 ////
@@ -204,7 +204,7 @@ Und dann parsen wir in unserem Code diesen YAML-Inhalt direkt und verwenden dann
 //// tab | Pydantic v1
 
 ```Python hl_lines="26-33"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
 ```
 
 ////

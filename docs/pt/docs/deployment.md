@@ -42,7 +42,7 @@ Se você usa qualquer outra ferramenta para gerenciar suas instalações, como P
 
 ### Versões disponíveis
 
-Você pode ver as versões disponíveis (por exemplo, para verificar qual é a versão atual) nas [Notas de Lançamento](release-notes.md){.internal-link target=_blank}.
+Você pode ver as versões disponíveis (por exemplo, para verificar qual é a versão atual) nas [Notas de Lançamento](release-notes.md){.internal-link target=\_blank}.
 
 ### Sobre as versões
 
@@ -74,7 +74,7 @@ O _"MINOR"_ é o número do meio, por exemplo, em `0.2.3`, a versão _MINOR_ é 
 
 Você pode adicionar testes em sua aplicação.
 
-Com o **ReadyAPI** é muito fácil (graças ao Starlette), verifique a documentação: [Testando](tutorial/testing.md){.internal-link target=_blank}
+Com o **ReadyAPI** é muito fácil (graças ao Starlette), verifique a documentação: [Testando](tutorial/testing.md){.internal-link target=\_blank}
 
 Após você ter os testes, então você pode fazer o _upgrade_ da versão **ReadyAPI** para uma mais recente, e ter certeza que todo seu código esteja funcionando corretamente rodando seus testes.
 
@@ -104,10 +104,10 @@ pydantic>=1.2.0,<2.0.0
 
 Nessa seção você verá instruções e _links_ para guias de saber como:
 
-* Fazer uma imagem/container da sua aplicação **ReadyAPI** com máxima performance. Em aproximadamente **5 min**.
-* (Opcionalmente) entender o que você, como desenvolvedor, precisa saber sobre HTTPS.
-* Inicializar um _cluster_ Docker Swarm Mode com HTTPS automático, mesmo em um simples servidor de  $5 dólares/mês. Em aproximadamente **20 min**.
-* Gere e implante uma aplicação **ReadyAPI** completa, usando seu _cluster_ Docker Swarm, com HTTPS etc. Em aproxiamadamente **10 min**.
+- Fazer uma imagem/container da sua aplicação **ReadyAPI** com máxima performance. Em aproximadamente **5 min**.
+- (Opcionalmente) entender o que você, como desenvolvedor, precisa saber sobre HTTPS.
+- Inicializar um _cluster_ Docker Swarm Mode com HTTPS automático, mesmo em um simples servidor de $5 dólares/mês. Em aproximadamente **20 min**.
+- Gere e implante uma aplicação **ReadyAPI** completa, usando seu _cluster_ Docker Swarm, com HTTPS etc. Em aproxiamadamente **10 min**.
 
 Você pode usar <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a> para implantação. Ele tem várias vantagens como segurança, replicabilidade, desenvolvimento simplificado etc.
 
@@ -127,8 +127,8 @@ Para ver todas as configurações e opções, vá para a página da imagem do Do
 
 ### Crie um `Dockerfile`
 
-* Vá para o diretório de seu projeto.
-* Crie um `Dockerfile` com:
+- Vá para o diretório de seu projeto.
+- Crie um `Dockerfile` com:
 
 ```Dockerfile
 FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.7
@@ -138,7 +138,7 @@ COPY ./app /app
 
 #### Grandes aplicações
 
-Se você seguiu a seção sobre criação de [Grandes Aplicações com Múltiplos Arquivos](tutorial/bigger-applications.md){.internal-link target=_blank}, seu `Dockerfile` poderia parecer como:
+Se você seguiu a seção sobre criação de [Grandes Aplicações com Múltiplos Arquivos](tutorial/bigger-applications.md){.internal-link target=\_blank}, seu `Dockerfile` poderia parecer como:
 
 ```Dockerfile
 FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.7
@@ -166,8 +166,8 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 ### Crie o código **ReadyAPI**
 
-* Crie um diretório `app` e entre nele.
-* Crie um arquivo `main.py` com:
+- Crie um diretório `app` e entre nele.
+- Crie um arquivo `main.py` com:
 
 ```Python
 from readyapi import ReadyAPI
@@ -185,7 +185,7 @@ def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 ```
 
-* Você deve ter uma estrutura de diretórios assim:
+- Você deve ter uma estrutura de diretórios assim:
 
 ```
 .
@@ -196,8 +196,8 @@ def read_item(item_id: int, q: str = None):
 
 ### Construa a imagem Docker
 
-* Vá para o diretório do projeto (onde seu `Dockerfile` está, contendo seu diretório `app`.
-* Construa sua imagem ReadyAPI:
+- Vá para o diretório do projeto (onde seu `Dockerfile` está, contendo seu diretório `app`.
+- Construa sua imagem ReadyAPI:
 
 <div class="termy">
 
@@ -211,7 +211,7 @@ $ docker build -t myimage .
 
 ### Inicie o container Docker
 
-* Rode um container baseado em sua imagem:
+- Rode um container baseado em sua imagem:
 
 <div class="termy">
 
@@ -267,25 +267,25 @@ Para aprender o básico de HTTPS, pela perspectiva de um consumidor, verifique <
 
 Agora, pela perspectiva de um desenvolvedor, aqui estão algumas coisas para se ter em mente enquanto se pensa sobre HTTPS:
 
-* Para HTTPS, o servidor precisa ter "certificados" gerados por terceiros.
-    * Esses certificados são na verdade adquiridos por terceiros, não "gerados".
-* Certificados tem um prazo de uso.
-    * Eles expiram.
-    * E então eles precisam ser renovados, adquiridos novamente por terceiros.
-* A encriptação da conexão acontece no nível TCP.
-    * TCP é uma camada abaixo do HTTP.
-    * Então, o controle de certificado e encriptação é feito antes do HTTP.
-* TCP não conhece nada sobre "domínios". Somente sobre endereços IP.
-    * A informação sobre o domínio requisitado vai nos dados HTTP.
-* Os certificados HTTPS "certificam" um certo domínio, mas o protocolo e a encriptação acontecem no nível TCP, antes de saber qual domínio está sendo lidado.
-* Por padrão, isso significa que você pode ter somente um certificado HTTPS por endereço IP.
-    * Não importa quão grande é seu servidor ou quão pequena cada aplicação que você tenha possar ser.
-    * No entanto, existe uma solução para isso.
-* Existe uma extensão para o protocolo TLS (o que controla a encriptação no nível TCP, antes do HTTP) chamada <a href="https://en.wikipedia.org/wiki/Server_Name_Indication" class="external-link" target="_blank"><abbr title="Server Name Indication">SNI</abbr></a>.
-    * Essa extensão SNI permite um único servidor (com um único endereço IP) a ter vários certificados HTTPS e servir múltiplas aplicações/domínios HTTPS.
-    * Para que isso funcione, um único componente (programa) rodando no servidor, ouvindo no endereço IP público, deve ter todos os certificados HTTPS no servidor.
-* Após obter uma conexão segura, o protocolo de comunicação ainda é HTTP.
-    * O conteúdo está encriptado, mesmo embora ele esteja sendo enviado com o protocolo HTTP.
+- Para HTTPS, o servidor precisa ter "certificados" gerados por terceiros.
+  - Esses certificados são na verdade adquiridos por terceiros, não "gerados".
+- Certificados tem um prazo de uso.
+  - Eles expiram.
+  - E então eles precisam ser renovados, adquiridos novamente por terceiros.
+- A encriptação da conexão acontece no nível TCP.
+  - TCP é uma camada abaixo do HTTP.
+  - Então, o controle de certificado e encriptação é feito antes do HTTP.
+- TCP não conhece nada sobre "domínios". Somente sobre endereços IP.
+  - A informação sobre o domínio requisitado vai nos dados HTTP.
+- Os certificados HTTPS "certificam" um certo domínio, mas o protocolo e a encriptação acontecem no nível TCP, antes de saber qual domínio está sendo lidado.
+- Por padrão, isso significa que você pode ter somente um certificado HTTPS por endereço IP.
+  - Não importa quão grande é seu servidor ou quão pequena cada aplicação que você tenha possar ser.
+  - No entanto, existe uma solução para isso.
+- Existe uma extensão para o protocolo TLS (o que controla a encriptação no nível TCP, antes do HTTP) chamada <a href="https://en.wikipedia.org/wiki/Server_Name_Indication" class="external-link" target="_blank"><abbr title="Server Name Indication">SNI</abbr></a>.
+  - Essa extensão SNI permite um único servidor (com um único endereço IP) a ter vários certificados HTTPS e servir múltiplas aplicações/domínios HTTPS.
+  - Para que isso funcione, um único componente (programa) rodando no servidor, ouvindo no endereço IP público, deve ter todos os certificados HTTPS no servidor.
+- Após obter uma conexão segura, o protocolo de comunicação ainda é HTTP.
+  - O conteúdo está encriptado, mesmo embora ele esteja sendo enviado com o protocolo HTTP.
 
 É uma prática comum ter um servidor HTTP/programa rodando no servidor (a máquina, _host_ etc.) e gerenciar todas as partes HTTP: enviar as requisições HTTP decriptadas para a aplicação HTTP rodando no mesmo servidor (a aplicação **ReadyAPI**, nesse caso), pega a resposta HTTP da aplicação, encripta utilizando o certificado apropriado e enviando de volta para o cliente usando HTTPS. Esse servidor é frequentemente chamado <a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS _Termination Proxy_</a>.
 
@@ -327,7 +327,7 @@ Para configurar um _cluster_ Docker Swarm Mode com Traefik controlando HTTPS, si
 
 ### Faça o _deploy_ de uma aplicação ReadyAPI
 
-O jeito mais fácil de configurar tudo pode ser utilizando o [Gerador de Projetos **ReadyAPI**](project-generation.md){.internal-link target=_blank}.
+O jeito mais fácil de configurar tudo pode ser utilizando o [Gerador de Projetos **ReadyAPI**](project-generation.md){.internal-link target=\_blank}.
 
 Ele é designado para ser integrado com esse _cluster_ Docker Swarm com Traefik e HTTPS descrito acima.
 
@@ -343,7 +343,7 @@ Você apenas precisa instalar um servidor ASGI compatível como:
 
 //// tab | Uvicorn
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, um servidor ASGI peso leve, construído sobre uvloop e httptools.
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, um servidor ASGI peso leve, construído sobre uvloop e httptools.
 
 <div class="termy">
 
@@ -359,7 +359,7 @@ $ pip install "uvicorn[standard]"
 
 //// tab | Hypercorn
 
-* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, um servidor ASGI também compatível com HTTP/2.
+- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, um servidor ASGI também compatível com HTTP/2.
 
 <div class="termy">
 

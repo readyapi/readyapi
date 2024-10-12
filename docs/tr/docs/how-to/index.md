@@ -8,6 +8,6 @@ Projeniz için ilginç ve yararlı görünen bir şey varsa devam edin ve incele
 
 /// tip | "İpucu"
 
-**ReadyAPI**'ı düzgün (ve önerilen) şekilde öğrenmek istiyorsanız [Öğretici - Kullanıcı Rehberi](../tutorial/index.md){.internal-link target=_blank}'ni bölüm bölüm okuyun.
+**ReadyAPI**'ı düzgün (ve önerilen) şekilde öğrenmek istiyorsanız [Öğretici - Kullanıcı Rehberi](../tutorial/index.md){.internal-link target=\_blank}'ni bölüm bölüm okuyun.
 
 ///

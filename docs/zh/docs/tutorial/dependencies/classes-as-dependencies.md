@@ -9,7 +9,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -86,7 +86,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="9-13"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -94,7 +94,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.8+
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -104,7 +104,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -112,7 +112,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -122,7 +122,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -130,7 +130,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -139,9 +139,9 @@ fluffy = Cat(name="Mr Fluffy")
 
 在两个例子下，都有：
 
-* 一个可选的 `q` 查询参数，是 `str` 类型。
-* 一个 `skip` 查询参数，是 `int` 类型，默认值为 `0`。
-* 一个 `limit` 查询参数，是 `int` 类型，默认值为 `100`。
+- 一个可选的 `q` 查询参数，是 `str` 类型。
+- 一个 `skip` 查询参数，是 `int` 类型，默认值为 `0`。
+- 一个 `limit` 查询参数，是 `int` 类型，默认值为 `100`。
 
 在两个例子下，数据都将被转换、验证、在 OpenAPI schema 上文档化，等等。
 
@@ -152,7 +152,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -160,7 +160,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -181,7 +181,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 ... = Depends(CommonQueryParams)
 ```
 
-...实际上是 **Readyapi** 用来知道依赖项是什么的。
+...实际上是 **READYAPI** 用来知道依赖项是什么的。
 
 ReadyAPI 将从依赖项中提取声明的参数，这才是 ReadyAPI 实际调用的。
 
@@ -206,7 +206,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.10+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial003_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_py310.py!}
 ```
 
 ////
@@ -214,7 +214,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.6+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003.py!}
+{!> ../../docs_src/dependencies/tutorial003.py!}
 ```
 
 ////
@@ -231,7 +231,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-**ReadyAPI** 为这些情况提供了一个快捷方式，在这些情况下，依赖项 *明确地* 是一个类，**ReadyAPI** 将 "调用" 它来创建类本身的一个实例。
+**ReadyAPI** 为这些情况提供了一个快捷方式，在这些情况下，依赖项 _明确地_ 是一个类，**ReadyAPI** 将 "调用" 它来创建类本身的一个实例。
 
 对于这些特定的情况，您可以跟随以下操作：
 
@@ -254,7 +254,7 @@ commons: CommonQueryParams = Depends()
 //// tab | Python 3.10+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial004_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_py310.py!}
 ```
 
 ////
@@ -262,7 +262,7 @@ commons: CommonQueryParams = Depends()
 //// tab | Python 3.6+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004.py!}
+{!> ../../docs_src/dependencies/tutorial004.py!}
 ```
 
 ////

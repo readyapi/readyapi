@@ -14,34 +14,34 @@ Um **die Grundlagen von HTTPS** aus Sicht des Benutzers zu erlernen, schauen Sie
 
 Aus **Sicht des Entwicklers** sollten Sie beim Nachdenken über HTTPS Folgendes beachten:
 
-* Für HTTPS muss **der Server** über von einem **Dritten** generierte **„Zertifikate“** verfügen.
-    * Diese Zertifikate werden tatsächlich vom Dritten **erworben** und nicht „generiert“.
-* Zertifikate haben eine **Lebensdauer**.
-    * Sie **verfallen**.
-    * Und dann müssen sie vom Dritten **erneuert**, **erneut erworben** werden.
-* Die Verschlüsselung der Verbindung erfolgt auf **TCP-Ebene**.
-    * Das ist eine Schicht **unter HTTP**.
-    * Die Handhabung von **Zertifikaten und Verschlüsselung** erfolgt also **vor HTTP**.
-* **TCP weiß nichts über „<abbr title="Domäne, Bereich, Wirkungsraum">Domains</abbr>“**. Nur über IP-Adressen.
-    * Die Informationen über die angeforderte **spezifische Domain** befinden sich in den **HTTP-Daten**.
-* Die **HTTPS-Zertifikate** „zertifizieren“ eine **bestimmte Domain**, aber das Protokoll und die Verschlüsselung erfolgen auf TCP-Ebene, **ohne zu wissen**, um welche Domain es sich handelt.
-* **Standardmäßig** bedeutet das, dass Sie nur **ein HTTPS-Zertifikat pro IP-Adresse** haben können.
-    * Ganz gleich, wie groß Ihr Server ist oder wie klein die einzelnen Anwendungen darauf sind.
-    * Hierfür gibt es jedoch eine **Lösung**.
-* Es gibt eine **Erweiterung** zum **TLS**-Protokoll (dasjenige, das die Verschlüsselung auf TCP-Ebene, vor HTTP, verwaltet) namens **<a href="https://en.wikipedia.org/wiki/Server_Name_Indication" class="external-link" target="_blank"><abbr title="Server Name Indication – Angabe des Servernamens">SNI</abbr></a>**.
-    * Mit dieser SNI-Erweiterung kann ein einzelner Server (mit einer **einzelnen IP-Adresse**) über **mehrere HTTPS-Zertifikate** verfügen und **mehrere HTTPS-Domains/Anwendungen** bedienen.
-    * Damit das funktioniert, muss eine **einzelne** Komponente (Programm), die auf dem Server ausgeführt wird und welche die **öffentliche IP-Adresse** überwacht, **alle HTTPS-Zertifikate** des Servers haben.
-* **Nachdem** eine sichere Verbindung hergestellt wurde, ist das Kommunikationsprotokoll **immer noch HTTP**.
-    * Die Inhalte sind **verschlüsselt**, auch wenn sie mit dem **HTTP-Protokoll** gesendet werden.
+- Für HTTPS muss **der Server** über von einem **Dritten** generierte **„Zertifikate“** verfügen.
+  - Diese Zertifikate werden tatsächlich vom Dritten **erworben** und nicht „generiert“.
+- Zertifikate haben eine **Lebensdauer**.
+  - Sie **verfallen**.
+  - Und dann müssen sie vom Dritten **erneuert**, **erneut erworben** werden.
+- Die Verschlüsselung der Verbindung erfolgt auf **TCP-Ebene**.
+  - Das ist eine Schicht **unter HTTP**.
+  - Die Handhabung von **Zertifikaten und Verschlüsselung** erfolgt also **vor HTTP**.
+- **TCP weiß nichts über „<abbr title="Domäne, Bereich, Wirkungsraum">Domains</abbr>“**. Nur über IP-Adressen.
+  - Die Informationen über die angeforderte **spezifische Domain** befinden sich in den **HTTP-Daten**.
+- Die **HTTPS-Zertifikate** „zertifizieren“ eine **bestimmte Domain**, aber das Protokoll und die Verschlüsselung erfolgen auf TCP-Ebene, **ohne zu wissen**, um welche Domain es sich handelt.
+- **Standardmäßig** bedeutet das, dass Sie nur **ein HTTPS-Zertifikat pro IP-Adresse** haben können.
+  - Ganz gleich, wie groß Ihr Server ist oder wie klein die einzelnen Anwendungen darauf sind.
+  - Hierfür gibt es jedoch eine **Lösung**.
+- Es gibt eine **Erweiterung** zum **TLS**-Protokoll (dasjenige, das die Verschlüsselung auf TCP-Ebene, vor HTTP, verwaltet) namens **<a href="https://en.wikipedia.org/wiki/Server_Name_Indication" class="external-link" target="_blank"><abbr title="Server Name Indication – Angabe des Servernamens">SNI</abbr></a>**.
+  - Mit dieser SNI-Erweiterung kann ein einzelner Server (mit einer **einzelnen IP-Adresse**) über **mehrere HTTPS-Zertifikate** verfügen und **mehrere HTTPS-Domains/Anwendungen** bedienen.
+  - Damit das funktioniert, muss eine **einzelne** Komponente (Programm), die auf dem Server ausgeführt wird und welche die **öffentliche IP-Adresse** überwacht, **alle HTTPS-Zertifikate** des Servers haben.
+- **Nachdem** eine sichere Verbindung hergestellt wurde, ist das Kommunikationsprotokoll **immer noch HTTP**.
+  - Die Inhalte sind **verschlüsselt**, auch wenn sie mit dem **HTTP-Protokoll** gesendet werden.
 
 Es ist eine gängige Praxis, **ein Programm/HTTP-Server** auf dem Server (der Maschine, dem Host usw.) laufen zu lassen, welches **alle HTTPS-Aspekte verwaltet**: Empfangen der **verschlüsselten HTTPS-Requests**, Senden der **entschlüsselten HTTP-Requests** an die eigentliche HTTP-Anwendung die auf demselben Server läuft (in diesem Fall die **ReadyAPI**-Anwendung), entgegennehmen der **HTTP-Response** von der Anwendung, **verschlüsseln derselben** mithilfe des entsprechenden **HTTPS-Zertifikats** und Zurücksenden zum Client über **HTTPS**. Dieser Server wird oft als **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS-Terminierungsproxy</a>** bezeichnet.
 
 Einige der Optionen, die Sie als TLS-Terminierungsproxy verwenden können, sind:
 
-* Traefik (kann auch Zertifikat-Erneuerungen durchführen)
-* Caddy (kann auch Zertifikat-Erneuerungen durchführen)
-* Nginx
-* HAProxy
+- Traefik (kann auch Zertifikat-Erneuerungen durchführen)
+- Caddy (kann auch Zertifikat-Erneuerungen durchführen)
+- Nginx
+- HAProxy
 
 ## Let's Encrypt
 
@@ -181,12 +181,12 @@ Um die Zertifikate zu erneuern, muss das erneuernde Programm der Behörde (Let's
 
 Um dies zu erreichen und den unterschiedlichen Anwendungsanforderungen gerecht zu werden, gibt es mehrere Möglichkeiten. Einige beliebte Methoden sind:
 
-* **Einige DNS-Einträge ändern**.
-    * Hierfür muss das erneuernde Programm die APIs des DNS-Anbieters unterstützen. Je nachdem, welchen DNS-Anbieter Sie verwenden, kann dies eine Option sein oder auch nicht.
-* **Als Server ausführen** (zumindest während des Zertifikatserwerbsvorgangs), auf der öffentlichen IP-Adresse, die der Domain zugeordnet ist.
-    * Wie oben erwähnt, kann nur ein Prozess eine bestimmte IP und einen bestimmten Port überwachen.
-    * Das ist einer der Gründe, warum es sehr nützlich ist, wenn derselbe TLS-Terminierungsproxy auch den Zertifikats-Erneuerungsprozess übernimmt.
-    * Andernfalls müssen Sie möglicherweise den TLS-Terminierungsproxy vorübergehend stoppen, das Programm starten, welches die neuen Zertifikate beschafft, diese dann mit dem TLS-Terminierungsproxy konfigurieren und dann den TLS-Terminierungsproxy neu starten. Das ist nicht ideal, da Ihre Anwendung(en) während der Zeit, in der der TLS-Terminierungsproxy ausgeschaltet ist, nicht erreichbar ist/sind.
+- **Einige DNS-Einträge ändern**.
+  - Hierfür muss das erneuernde Programm die APIs des DNS-Anbieters unterstützen. Je nachdem, welchen DNS-Anbieter Sie verwenden, kann dies eine Option sein oder auch nicht.
+- **Als Server ausführen** (zumindest während des Zertifikatserwerbsvorgangs), auf der öffentlichen IP-Adresse, die der Domain zugeordnet ist.
+  - Wie oben erwähnt, kann nur ein Prozess eine bestimmte IP und einen bestimmten Port überwachen.
+  - Das ist einer der Gründe, warum es sehr nützlich ist, wenn derselbe TLS-Terminierungsproxy auch den Zertifikats-Erneuerungsprozess übernimmt.
+  - Andernfalls müssen Sie möglicherweise den TLS-Terminierungsproxy vorübergehend stoppen, das Programm starten, welches die neuen Zertifikate beschafft, diese dann mit dem TLS-Terminierungsproxy konfigurieren und dann den TLS-Terminierungsproxy neu starten. Das ist nicht ideal, da Ihre Anwendung(en) während der Zeit, in der der TLS-Terminierungsproxy ausgeschaltet ist, nicht erreichbar ist/sind.
 
 Dieser ganze Erneuerungsprozess, während die Anwendung weiterhin bereitgestellt wird, ist einer der Hauptgründe, warum Sie ein **separates System zur Verarbeitung von HTTPS** mit einem TLS-Terminierungsproxy haben möchten, anstatt einfach die TLS-Zertifikate direkt mit dem Anwendungsserver zu verwenden (z. B. Uvicorn).
 

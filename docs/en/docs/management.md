@@ -12,23 +12,23 @@ I normally give the final review to each PR before merging them. I make the fina
 
 There's a team of people that help manage and maintain the project. 😎
 
-They have different levels of permissions and [specific instructions](./management-tasks.md){.internal-link target=_blank}.
+They have different levels of permissions and [specific instructions](./management-tasks.md){.internal-link target=\_blank}.
 
 Some of the tasks they can perform include:
 
-* Adding labels to PRs.
-* Editing PR titles.
-* Adding commits on top of PRs to tweak them.
-* Mark answers in GitHub Discussions questions, etc.
-* Merge some specific types of PRs.
+- Adding labels to PRs.
+- Editing PR titles.
+- Adding commits on top of PRs to tweak them.
+- Mark answers in GitHub Discussions questions, etc.
+- Merge some specific types of PRs.
 
-You can see the current team members in [ReadyAPI People - Team](./readyapi-people.md#team){.internal-link target=_blank}.
+You can see the current team members in [ReadyAPI People - Team](./readyapi-people.md#team){.internal-link target=\_blank}.
 
 Joining the team is by invitation only, and I could update or remove permissions, instructions, or membership.
 
 ## ReadyAPI Experts
 
-The people that help others the most in GitHub Discussions can become [**ReadyAPI Experts**](./readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+The people that help others the most in GitHub Discussions can become [**ReadyAPI Experts**](./readyapi-people.md#readyapi-experts){.internal-link target=\_blank}.
 
 This is normally the best way to contribute to the project.
 
@@ -36,4 +36,4 @@ This is normally the best way to contribute to the project.
 
 External contributions are very welcome and appreciated, including answering questions, submitting PRs, etc. 🙇‍♂️
 
-There are many ways to [help maintain ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=_blank}.
+There are many ways to [help maintain ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=\_blank}.

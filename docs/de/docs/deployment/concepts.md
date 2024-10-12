@@ -4,12 +4,12 @@ Bei dem Deployment – der Bereitstellung – einer **ReadyAPI**-Anwendung, oder
 
 Einige wichtige Konzepte sind:
 
-* Sicherheit – HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- Sicherheit – HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 Wir werden sehen, wie diese sich auf das **Deployment** auswirken.
 
@@ -25,7 +25,7 @@ Aber schauen wir uns zunächst einmal diese grundlegenden **konzeptionellen Idee
 
 ## Sicherheit – HTTPS
 
-Im [vorherigen Kapitel über HTTPS](https.md){.internal-link target=_blank} haben wir erfahren, wie HTTPS Verschlüsselung für Ihre API bereitstellt.
+Im [vorherigen Kapitel über HTTPS](https.md){.internal-link target=\_blank} haben wir erfahren, wie HTTPS Verschlüsselung für Ihre API bereitstellt.
 
 Wir haben auch gesehen, dass HTTPS normalerweise von einer Komponente **außerhalb** Ihres Anwendungsservers bereitgestellt wird, einem **TLS-Terminierungsproxy**.
 
@@ -35,17 +35,17 @@ Und es muss etwas geben, das für die **Erneuerung der HTTPS-Zertifikate** zust�
 
 Einige der Tools, die Sie als TLS-Terminierungsproxy verwenden können, sind:
 
-* Traefik
-    * Handhabt automatisch Zertifikat-Erneuerungen ✨
-* Caddy
-    * Handhabt automatisch Zertifikat-Erneuerungen ✨
-* Nginx
-    * Mit einer externen Komponente wie Certbot für Zertifikat-Erneuerungen
-* HAProxy
-    * Mit einer externen Komponente wie Certbot für Zertifikat-Erneuerungen
-* Kubernetes mit einem Ingress Controller wie Nginx
-    * Mit einer externen Komponente wie cert-manager für Zertifikat-Erneuerungen
-* Es wird intern von einem Cloud-Anbieter als Teil seiner Dienste verwaltet (siehe unten 👇)
+- Traefik
+  - Handhabt automatisch Zertifikat-Erneuerungen ✨
+- Caddy
+  - Handhabt automatisch Zertifikat-Erneuerungen ✨
+- Nginx
+  - Mit einer externen Komponente wie Certbot für Zertifikat-Erneuerungen
+- HAProxy
+  - Mit einer externen Komponente wie Certbot für Zertifikat-Erneuerungen
+- Kubernetes mit einem Ingress Controller wie Nginx
+  - Mit einer externen Komponente wie cert-manager für Zertifikat-Erneuerungen
+- Es wird intern von einem Cloud-Anbieter als Teil seiner Dienste verwaltet (siehe unten 👇)
 
 Eine andere Möglichkeit besteht darin, dass Sie einen **Cloud-Dienst** verwenden, der den größten Teil der Arbeit übernimmt, einschließlich der Einrichtung von HTTPS. Er könnte einige Einschränkungen haben oder Ihnen mehr in Rechnung stellen, usw. In diesem Fall müssten Sie jedoch nicht selbst einen TLS-Terminierungsproxy einrichten.
 
@@ -63,20 +63,20 @@ Wir werden viel über den laufenden „**Prozess**“ sprechen, daher ist es nü
 
 Das Wort **Programm** wird häufig zur Beschreibung vieler Dinge verwendet:
 
-* Der **Code**, den Sie schreiben, die **Python-Dateien**.
-* Die **Datei**, die vom Betriebssystem **ausgeführt** werden kann, zum Beispiel: `python`, `python.exe` oder `uvicorn`.
-* Ein bestimmtes Programm, während es auf dem Betriebssystem **läuft**, die CPU nutzt und Dinge im Arbeitsspeicher ablegt. Dies wird auch als **Prozess** bezeichnet.
+- Der **Code**, den Sie schreiben, die **Python-Dateien**.
+- Die **Datei**, die vom Betriebssystem **ausgeführt** werden kann, zum Beispiel: `python`, `python.exe` oder `uvicorn`.
+- Ein bestimmtes Programm, während es auf dem Betriebssystem **läuft**, die CPU nutzt und Dinge im Arbeitsspeicher ablegt. Dies wird auch als **Prozess** bezeichnet.
 
 ### Was ist ein Prozess?
 
 Das Wort **Prozess** wird normalerweise spezifischer verwendet und bezieht sich nur auf das, was im Betriebssystem ausgeführt wird (wie im letzten Punkt oben):
 
-* Ein bestimmtes Programm, während es auf dem Betriebssystem **ausgeführt** wird.
-    * Dies bezieht sich weder auf die Datei noch auf den Code, sondern **speziell** auf das, was vom Betriebssystem **ausgeführt** und verwaltet wird.
-* Jedes Programm, jeder Code **kann nur dann Dinge tun**, wenn er **ausgeführt** wird, wenn also ein **Prozess läuft**.
-* Der Prozess kann von Ihnen oder vom Betriebssystem **terminiert** („beendet“, „gekillt“) werden. An diesem Punkt hört es auf zu laufen/ausgeführt zu werden und kann **keine Dinge mehr tun**.
-* Hinter jeder Anwendung, die Sie auf Ihrem Computer ausführen, steckt ein Prozess, jedes laufende Programm, jedes Fenster usw. Und normalerweise laufen viele Prozesse **gleichzeitig**, während ein Computer eingeschaltet ist.
-* Es können **mehrere Prozesse** desselben **Programms** gleichzeitig ausgeführt werden.
+- Ein bestimmtes Programm, während es auf dem Betriebssystem **ausgeführt** wird.
+  - Dies bezieht sich weder auf die Datei noch auf den Code, sondern **speziell** auf das, was vom Betriebssystem **ausgeführt** und verwaltet wird.
+- Jedes Programm, jeder Code **kann nur dann Dinge tun**, wenn er **ausgeführt** wird, wenn also ein **Prozess läuft**.
+- Der Prozess kann von Ihnen oder vom Betriebssystem **terminiert** („beendet“, „gekillt“) werden. An diesem Punkt hört es auf zu laufen/ausgeführt zu werden und kann **keine Dinge mehr tun**.
+- Hinter jeder Anwendung, die Sie auf Ihrem Computer ausführen, steckt ein Prozess, jedes laufende Programm, jedes Fenster usw. Und normalerweise laufen viele Prozesse **gleichzeitig**, während ein Computer eingeschaltet ist.
+- Es können **mehrere Prozesse** desselben **Programms** gleichzeitig ausgeführt werden.
 
 Wenn Sie sich den „Task-Manager“ oder „Systemmonitor“ (oder ähnliche Tools) in Ihrem Betriebssystem ansehen, können Sie viele dieser laufenden Prozesse sehen.
 
@@ -114,14 +114,14 @@ Um dies zu erreichen, haben Sie normalerweise ein **separates Programm**, welche
 
 Einige Beispiele für Tools, die diese Aufgabe übernehmen können, sind:
 
-* Docker
-* Kubernetes
-* Docker Compose
-* Docker im Schwarm-Modus
-* Systemd
-* Supervisor
-* Es wird intern von einem Cloud-Anbieter im Rahmen seiner Dienste verwaltet
-* Andere ...
+- Docker
+- Kubernetes
+- Docker Compose
+- Docker im Schwarm-Modus
+- Systemd
+- Supervisor
+- Es wird intern von einem Cloud-Anbieter im Rahmen seiner Dienste verwaltet
+- Andere ...
 
 In den nächsten Kapiteln werde ich Ihnen konkretere Beispiele geben.
 
@@ -131,7 +131,7 @@ In den nächsten Kapiteln werde ich Ihnen konkretere Beispiele geben.
 
 ### Wir machen Fehler
 
-Wir, als Menschen, machen ständig **Fehler**. Software hat fast *immer* **Bugs**, die an verschiedenen Stellen versteckt sind. 🐛
+Wir, als Menschen, machen ständig **Fehler**. Software hat fast _immer_ **Bugs**, die an verschiedenen Stellen versteckt sind. 🐛
 
 Und wir als Entwickler verbessern den Code ständig, wenn wir diese Bugs finden und neue Funktionen implementieren (und möglicherweise auch neue Bugs hinzufügen 😅).
 
@@ -145,7 +145,7 @@ Der Client erhält für diesen Request einen **500 Internal Server Error**, aber
 
 Dennoch kann es vorkommen, dass wir Code schreiben, der **die gesamte Anwendung zum Absturz bringt** und so zum Absturz von Uvicorn und Python führt. 💥
 
-Und dennoch möchten Sie wahrscheinlich nicht, dass die Anwendung tot bleibt, weil an einer Stelle ein Fehler aufgetreten ist. Sie möchten wahrscheinlich, dass sie zumindest für die *Pfadoperationen*, die nicht fehlerhaft sind, **weiterläuft**.
+Und dennoch möchten Sie wahrscheinlich nicht, dass die Anwendung tot bleibt, weil an einer Stelle ein Fehler aufgetreten ist. Sie möchten wahrscheinlich, dass sie zumindest für die _Pfadoperationen_, die nicht fehlerhaft sind, **weiterläuft**.
 
 ### Neustart nach Absturz
 
@@ -167,14 +167,14 @@ In den meisten Fällen wird dasselbe Tool, das zum **Ausführen des Programms be
 
 Dies könnte zum Beispiel erledigt werden durch:
 
-* Docker
-* Kubernetes
-* Docker Compose
-* Docker im Schwarm-Modus
-* Systemd
-* Supervisor
-* Intern von einem Cloud-Anbieter im Rahmen seiner Dienste
-* Andere ...
+- Docker
+- Kubernetes
+- Docker Compose
+- Docker im Schwarm-Modus
+- Systemd
+- Supervisor
+- Intern von einem Cloud-Anbieter im Rahmen seiner Dienste
+- Andere ...
 
 ## Replikation – Prozesse und Arbeitsspeicher
 
@@ -190,7 +190,7 @@ Wenn Sie mit **mehreren Prozessen** dasselbe API-Programm ausführen, werden die
 
 ### Workerprozesse und Ports
 
-Erinnern Sie sich aus der Dokumentation [Über HTTPS](https.md){.internal-link target=_blank}, dass nur ein Prozess auf einer Kombination aus Port und IP-Adresse auf einem Server lauschen kann?
+Erinnern Sie sich aus der Dokumentation [Über HTTPS](https.md){.internal-link target=\_blank}, dass nur ein Prozess auf einer Kombination aus Port und IP-Adresse auf einem Server lauschen kann?
 
 Das ist immer noch wahr.
 
@@ -222,7 +222,7 @@ Und natürlich würden auf derselben Maschine neben Ihrer Anwendung wahrscheinli
 
 Ein interessantes Detail ist dabei, dass der Prozentsatz der von jedem Prozess verwendeten **CPU** im Laufe der Zeit stark **variieren** kann, der **Arbeitsspeicher (RAM)** jedoch normalerweise mehr oder weniger **stabil** bleibt.
 
-Wenn Sie eine API haben, die jedes Mal eine vergleichbare Menge an Berechnungen durchführt, und Sie viele Clients haben, dann wird die **CPU-Auslastung** wahrscheinlich *ebenfalls stabil sein* (anstatt ständig schnell zu steigen und zu fallen).
+Wenn Sie eine API haben, die jedes Mal eine vergleichbare Menge an Berechnungen durchführt, und Sie viele Clients haben, dann wird die **CPU-Auslastung** wahrscheinlich _ebenfalls stabil sein_ (anstatt ständig schnell zu steigen und zu fallen).
 
 ### Beispiele für Replikation-Tools und -Strategien
 
@@ -232,20 +232,20 @@ Die wichtigste zu berücksichtigende Einschränkung besteht darin, dass es eine 
 
 Hier sind einige mögliche Kombinationen und Strategien:
 
-* **Gunicorn**, welches **Uvicorn-Worker** managt
-    * Gunicorn wäre der **Prozessmanager**, der die **IP** und den **Port** überwacht, die Replikation würde durch **mehrere Uvicorn-Workerprozesse** erfolgen
-* **Uvicorn**, welches **Uvicorn-Worker** managt
-    * Ein Uvicorn-**Prozessmanager** würde der **IP** am **Port** lauschen, und er würde **mehrere Uvicorn-Workerprozesse** starten.
-* **Kubernetes** und andere verteilte **Containersysteme**
-    * Etwas in der **Kubernetes**-Ebene würde die **IP** und den **Port** abhören. Die Replikation hätte **mehrere Container**, in jedem wird jeweils **ein Uvicorn-Prozess** ausgeführt.
-* **Cloud-Dienste**, welche das für Sie erledigen
-    * Der Cloud-Dienst wird wahrscheinlich **die Replikation für Sie übernehmen**. Er würde Sie möglicherweise **einen auszuführenden Prozess** oder ein **zu verwendendes Container-Image** definieren lassen, in jedem Fall wäre es höchstwahrscheinlich **ein einzelner Uvicorn-Prozess**, und der Cloud-Dienst wäre auch verantwortlich für die Replikation.
+- **Gunicorn**, welches **Uvicorn-Worker** managt
+  - Gunicorn wäre der **Prozessmanager**, der die **IP** und den **Port** überwacht, die Replikation würde durch **mehrere Uvicorn-Workerprozesse** erfolgen
+- **Uvicorn**, welches **Uvicorn-Worker** managt
+  - Ein Uvicorn-**Prozessmanager** würde der **IP** am **Port** lauschen, und er würde **mehrere Uvicorn-Workerprozesse** starten.
+- **Kubernetes** und andere verteilte **Containersysteme**
+  - Etwas in der **Kubernetes**-Ebene würde die **IP** und den **Port** abhören. Die Replikation hätte **mehrere Container**, in jedem wird jeweils **ein Uvicorn-Prozess** ausgeführt.
+- **Cloud-Dienste**, welche das für Sie erledigen
+  - Der Cloud-Dienst wird wahrscheinlich **die Replikation für Sie übernehmen**. Er würde Sie möglicherweise **einen auszuführenden Prozess** oder ein **zu verwendendes Container-Image** definieren lassen, in jedem Fall wäre es höchstwahrscheinlich **ein einzelner Uvicorn-Prozess**, und der Cloud-Dienst wäre auch verantwortlich für die Replikation.
 
 /// tip | "Tipp"
 
 Machen Sie sich keine Sorgen, wenn einige dieser Punkte zu **Containern**, Docker oder Kubernetes noch nicht viel Sinn ergeben.
 
-Ich werde Ihnen in einem zukünftigen Kapitel mehr über Container-Images, Docker, Kubernetes, usw. erzählen: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
+Ich werde Ihnen in einem zukünftigen Kapitel mehr über Container-Images, Docker, Kubernetes, usw. erzählen: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=\_blank}.
 
 ///
 
@@ -259,7 +259,7 @@ In den meisten Fällen möchten Sie diese Schritte jedoch nur **einmal** ausfüh
 
 Sie möchten also einen **einzelnen Prozess** haben, um diese **Vorab-Schritte** auszuführen, bevor Sie die Anwendung starten.
 
-Und Sie müssen sicherstellen, dass es sich um einen einzelnen Prozess handelt, der die Vorab-Schritte ausführt, *auch* wenn Sie anschließend **mehrere Prozesse** (mehrere Worker) für die Anwendung selbst starten. Wenn diese Schritte von **mehreren Prozessen** ausgeführt würden, würden diese die Arbeit **verdoppeln**, indem sie sie **parallel** ausführen, und wenn es sich bei den Schritten um etwas Delikates wie eine Datenbankmigration handelt, könnte das miteinander Konflikte verursachen.
+Und Sie müssen sicherstellen, dass es sich um einen einzelnen Prozess handelt, der die Vorab-Schritte ausführt, _auch_ wenn Sie anschließend **mehrere Prozesse** (mehrere Worker) für die Anwendung selbst starten. Wenn diese Schritte von **mehreren Prozessen** ausgeführt würden, würden diese die Arbeit **verdoppeln**, indem sie sie **parallel** ausführen, und wenn es sich bei den Schritten um etwas Delikates wie eine Datenbankmigration handelt, könnte das miteinander Konflikte verursachen.
 
 Natürlich gibt es Fälle, in denen es kein Problem darstellt, die Vorab-Schritte mehrmals auszuführen. In diesem Fall ist die Handhabung viel einfacher.
 
@@ -277,13 +277,13 @@ Es hängt **stark** davon ab, wie Sie **Ihr System bereitstellen**, und hängt w
 
 Hier sind einige mögliche Ideen:
 
-* Ein „Init-Container“ in Kubernetes, der vor Ihrem Anwendungs-Container ausgeführt wird
-* Ein Bash-Skript, das die Vorab-Schritte ausführt und dann Ihre Anwendung startet
-    * Sie benötigen immer noch eine Möglichkeit, *dieses* Bash-Skript zu starten/neu zu starten, Fehler zu erkennen, usw.
+- Ein „Init-Container“ in Kubernetes, der vor Ihrem Anwendungs-Container ausgeführt wird
+- Ein Bash-Skript, das die Vorab-Schritte ausführt und dann Ihre Anwendung startet
+  - Sie benötigen immer noch eine Möglichkeit, _dieses_ Bash-Skript zu starten/neu zu starten, Fehler zu erkennen, usw.
 
 /// tip | "Tipp"
 
-Konkretere Beispiele hierfür mit Containern gebe ich Ihnen in einem späteren Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
+Konkretere Beispiele hierfür mit Containern gebe ich Ihnen in einem späteren Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=\_blank}.
 
 ///
 
@@ -311,12 +311,12 @@ Sie können einfache Tools wie `htop` verwenden, um die in Ihrem Server verwende
 
 Sie haben hier einige der wichtigsten Konzepte gelesen, die Sie wahrscheinlich berücksichtigen müssen, wenn Sie entscheiden, wie Sie Ihre Anwendung bereitstellen:
 
-* Sicherheit – HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- Sicherheit – HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 Das Verständnis dieser Ideen und deren Anwendung sollte Ihnen die nötige Intuition vermitteln, um bei der Konfiguration und Optimierung Ihrer Deployments Entscheidungen zu treffen. 🤓
 

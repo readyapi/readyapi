@@ -15,7 +15,7 @@ Z. B. `pip install python-multipart`.
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_forms_and_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -23,7 +23,7 @@ Z. B. `pip install python-multipart`.
 //// tab | Python 3.8+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms_and_files/tutorial001_an.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001_an.py!}
 ```
 
 ////
@@ -37,7 +37,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 ////
@@ -49,7 +49,7 @@ Erstellen Sie Datei- und Formularparameter, so wie Sie es auch mit `Body` und `Q
 //// tab | Python 3.9+
 
 ```Python hl_lines="10-12"
-{!> ../../../docs_src/request_forms_and_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -57,7 +57,7 @@ Erstellen Sie Datei- und Formularparameter, so wie Sie es auch mit `Body` und `Q
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-11"
-{!> ../../../docs_src/request_forms_and_files/tutorial001_an.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001_an.py!}
 ```
 
 ////
@@ -71,7 +71,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!> ../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 ////
@@ -82,7 +82,7 @@ Und Sie können einige der Dateien als `bytes` und einige als `UploadFile` dekla
 
 /// warning | "Achtung"
 
-Sie können mehrere `File`- und `Form`-Parameter in einer *Pfadoperation* deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
+Sie können mehrere `File`- und `Form`-Parameter in einer _Pfadoperation_ deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
 
 Das ist keine Limitation von **ReadyAPI**, sondern Teil des HTTP-Protokolls.
 

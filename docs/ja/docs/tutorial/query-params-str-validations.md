@@ -5,37 +5,37 @@
 以下のアプリケーションを例にしてみましょう:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial001.py!}
+{!../../docs_src/query_params_str_validations/tutorial001.py!}
 ```
 
-クエリパラメータ `q` は `Optional[str]` 型で、`None` を許容する `str` 型を意味しており、デフォルトは `None` です。そのため、ReadyAPIはそれが必須ではないと理解します。
+クエリパラメータ `q` は `Optional[str]` 型で、`None` を許容する `str` 型を意味しており、デフォルトは `None` です。そのため、ReadyAPI はそれが必須ではないと理解します。
 
 /// note | "備考"
 
-ReadyAPIは、 `q` はデフォルト値が `=None` であるため、必須ではないと理解します。
+ReadyAPI は、 `q` はデフォルト値が `=None` であるため、必須ではないと理解します。
 
-`Optional[str]` における `Optional` はReadyAPIには利用されませんが、エディターによるより良いサポートとエラー検出を可能にします。
+`Optional[str]` における `Optional` は ReadyAPI には利用されませんが、エディターによるより良いサポートとエラー検出を可能にします。
 
 ///
 
 ## バリデーションの追加
 
-`q`はオプショナルですが、もし値が渡されてきた場合には、**50文字を超えないこと**を強制してみましょう。
+`q`はオプショナルですが、もし値が渡されてきた場合には、**50 文字を超えないこと**を強制してみましょう。
 
 ### `Query`のインポート
 
 そのために、まずは`readyapi`から`Query`をインポートします:
 
 ```Python hl_lines="3"
-{!../../../docs_src/query_params_str_validations/tutorial002.py!}
+{!../../docs_src/query_params_str_validations/tutorial002.py!}
 ```
 
 ## デフォルト値として`Query`を使用
 
-パラメータのデフォルト値として使用し、パラメータ`max_length`を50に設定します:
+パラメータのデフォルト値として使用し、パラメータ`max_length`を 50 に設定します:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial002.py!}
+{!../../docs_src/query_params_str_validations/tutorial002.py!}
 ```
 
 デフォルト値`None`を`Query(default=None)`に置き換える必要があるので、`Query`の最初の引数はデフォルト値を定義するのと同じです。
@@ -56,7 +56,7 @@ q: Optional[str] = None
 
 /// info | "情報"
 
-ReadyAPIは以下の部分を気にすることを覚えておいてください:
+ReadyAPI は以下の部分を気にすることを覚えておいてください:
 
 ```Python
 = None
@@ -80,14 +80,14 @@ ReadyAPIは以下の部分を気にすることを覚えておいてください
 q: Union[str, None] = Query(default=None, max_length=50)
 ```
 
-これにより、データを検証し、データが有効でない場合は明確なエラーを表示し、OpenAPIスキーマの　*path operation* にパラメータを記載します。
+これにより、データを検証し、データが有効でない場合は明確なエラーを表示し、OpenAPI スキーマの　*path operation* にパラメータを記載します。
 
 ## バリデーションをさらに追加する
 
 パラメータ`min_length`も追加することができます:
 
 ```Python hl_lines="10"
-{!../../../docs_src/query_params_str_validations/tutorial003.py!}
+{!../../docs_src/query_params_str_validations/tutorial003.py!}
 ```
 
 ## 正規表現の追加
@@ -95,14 +95,14 @@ q: Union[str, None] = Query(default=None, max_length=50)
 パラメータが一致するべき<abbr title="正規表現とは、文字列の検索パターンを定義する文字列です。">正規表現</abbr>を定義することができます:
 
 ```Python hl_lines="11"
-{!../../../docs_src/query_params_str_validations/tutorial004.py!}
+{!../../docs_src/query_params_str_validations/tutorial004.py!}
 ```
 
 この特定の正規表現は受け取ったパラメータの値をチェックします:
 
-* `^`: は、これ以降の文字で始まり、これより以前には文字はありません。
-* `fixedquery`: は、正確な`fixedquery`を持っています.
-* `$`: で終わる場合、`fixedquery`以降には文字はありません.
+- `^`: は、これ以降の文字で始まり、これより以前には文字はありません。
+- `fixedquery`: は、正確な`fixedquery`を持っています.
+- `$`: で終わる場合、`fixedquery`以降には文字はありません.
 
 もしこれらすべての **正規表現**のアイデアについて迷っていても、心配しないでください。多くの人にとって難しい話題です。正規表現を必要としなくても、まだ、多くのことができます。
 
@@ -115,7 +115,7 @@ q: Union[str, None] = Query(default=None, max_length=50)
 クエリパラメータ`q`の`min_length`を`3`とし、デフォルト値を`fixedquery`としてみましょう:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial005.py!}
+{!../../docs_src/query_params_str_validations/tutorial005.py!}
 ```
 
 /// note | "備考"
@@ -147,12 +147,12 @@ q: Union[str, None] = Query(default=None, min_length=3)
 そのため、`Query`を使用して必須の値を宣言する必要がある場合は、第一引数に`...`を使用することができます:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial006.py!}
+{!../../docs_src/query_params_str_validations/tutorial006.py!}
 ```
 
 /// info | "情報"
 
-これまで`...`を見たことがない方へ: これは特殊な単一値です。<a href="https://docs.python.org/3/library/constants.html#Ellipsis" class="external-link" target="_blank">Pythonの一部であり、"Ellipsis"と呼ばれています</a>。
+これまで`...`を見たことがない方へ: これは特殊な単一値です。<a href="https://docs.python.org/3/library/constants.html#Ellipsis" class="external-link" target="_blank">Python の一部であり、"Ellipsis"と呼ばれています</a>。
 
 ///
 
@@ -162,21 +162,21 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 クエリパラメータを明示的に`Query`で宣言した場合、値のリストを受け取るように宣言したり、複数の値を受け取るように宣言したりすることもできます。
 
-例えば、URL内に複数回出現するクエリパラメータ`q`を宣言するには以下のように書きます:
+例えば、URL 内に複数回出現するクエリパラメータ`q`を宣言するには以下のように書きます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial011.py!}
+{!../../docs_src/query_params_str_validations/tutorial011.py!}
 ```
 
-そしてURLは以下です:
+そして URL は以下です:
 
 ```
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-複数の*クエリパラメータ*の値`q`（`foo`と`bar`）を*path operation関数*内で*関数パラメータ*`q`としてPythonの`list`を受け取ることになります。
+複数の*クエリパラメータ*の値`q`（`foo`と`bar`）を*path operation 関数*内で*関数パラメータ*`q`として Python の`list`を受け取ることになります。
 
-そのため、このURLのレスポンスは以下のようになります:
+そのため、この URL のレスポンスは以下のようになります:
 
 ```JSON
 {
@@ -193,7 +193,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 ///
 
-対話的APIドキュメントは複数の値を許可するために自動的に更新されます。
+対話的 API ドキュメントは複数の値を許可するために自動的に更新されます。
 
 <img src="https://readyapi.khulnasoft.com/img/tutorial/query-params-str-validations/image02.png">
 
@@ -202,10 +202,10 @@ http://localhost:8000/items/?q=foo&q=bar
 また、値が指定されていない場合はデフォルトの`list`を定義することもできます。
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial012.py!}
+{!../../docs_src/query_params_str_validations/tutorial012.py!}
 ```
 
-以下のURLを開くと:
+以下の URL を開くと:
 
 ```
 http://localhost:8000/items/
@@ -227,12 +227,12 @@ http://localhost:8000/items/
 `List[str]`の代わりに直接`list`を使うこともできます:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial013.py!}
+{!../../docs_src/query_params_str_validations/tutorial013.py!}
 ```
 
 /// note | "備考"
 
-この場合、ReadyAPIはリストの内容をチェックしないことを覚えておいてください。
+この場合、ReadyAPI はリストの内容をチェックしないことを覚えておいてください。
 
 例えば`List[int]`はリストの内容が整数であるかどうかをチェックします(そして、文書化します)。しかし`list`だけではそうしません。
 
@@ -242,11 +242,11 @@ http://localhost:8000/items/
 
 パラメータに関する情報をさらに追加することができます。
 
-その情報は、生成されたOpenAPIに含まれ、ドキュメントのユーザーインターフェースや外部のツールで使用されます。
+その情報は、生成された OpenAPI に含まれ、ドキュメントのユーザーインターフェースや外部のツールで使用されます。
 
 /// note | "備考"
 
-ツールによってOpenAPIのサポートのレベルが異なる可能性があることを覚えておいてください。
+ツールによって OpenAPI のサポートのレベルが異なる可能性があることを覚えておいてください。
 
 その中には、宣言されたすべての追加情報が表示されていないものもあるかもしれませんが、ほとんどの場合、不足している機能はすでに開発の計画がされています。
 
@@ -255,13 +255,13 @@ http://localhost:8000/items/
 `title`を追加できます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial007.py!}
+{!../../docs_src/query_params_str_validations/tutorial007.py!}
 ```
 
 `description`を追加できます:
 
 ```Python hl_lines="13"
-{!../../../docs_src/query_params_str_validations/tutorial008.py!}
+{!../../docs_src/query_params_str_validations/tutorial008.py!}
 ```
 
 ## エイリアスパラメータ
@@ -274,7 +274,7 @@ http://localhost:8000/items/
 http://127.0.0.1:8000/items/?item-query=foobaritems
 ```
 
-しかし、`item-query`は有効なPythonの変数名ではありません。
+しかし、`item-query`は有効な Python の変数名ではありません。
 
 最も近いのは`item_query`でしょう。
 
@@ -283,7 +283,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 それならば、`alias`を宣言することができます。エイリアスはパラメータの値を見つけるのに使用されます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial009.py!}
+{!../../docs_src/query_params_str_validations/tutorial009.py!}
 ```
 
 ## 非推奨パラメータ
@@ -295,7 +295,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 その場合、`Query`にパラメータ`deprecated=True`を渡します:
 
 ```Python hl_lines="18"
-{!../../../docs_src/query_params_str_validations/tutorial010.py!}
+{!../../docs_src/query_params_str_validations/tutorial010.py!}
 ```
 
 ドキュメントは以下のようになります:
@@ -308,16 +308,16 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 一般的なバリデーションとメタデータ:
 
-* `alias`
-* `title`
-* `description`
-* `deprecated`
+- `alias`
+- `title`
+- `description`
+- `deprecated`
 
 文字列のためのバリデーション:
 
-* `min_length`
-* `max_length`
-* `regex`
+- `min_length`
+- `max_length`
+- `regex`
 
 この例では、`str`の値のバリデーションを宣言する方法を見てきました。
 

@@ -82,6 +82,6 @@ ReadyAPI CLI 接收你的 Python 程序路径，自动检测包含 ReadyAPI 的�
 
 /// tip | "提示"
 
-你可以在 [deployment documentation](deployment/index.md){.internal-link target=_blank} 获得更多信息。
+你可以在 [deployment documentation](deployment/index.md){.internal-link target=\_blank} 获得更多信息。
 
 ///

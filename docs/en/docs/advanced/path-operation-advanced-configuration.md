@@ -8,22 +8,22 @@ If you are not an "expert" in OpenAPI, you probably don't need this.
 
 ///
 
-You can set the OpenAPI `operationId` to be used in your *path operation* with the parameter `operation_id`.
+You can set the OpenAPI `operationId` to be used in your _path operation_ with the parameter `operation_id`.
 
 You would have to make sure that it is unique for each operation.
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
 ```
 
-### Using the *path operation function* name as the operationId
+### Using the _path operation function_ name as the operationId
 
-If you want to use your APIs' function names as `operationId`s, you can iterate over all of them and override each *path operation's* `operation_id` using their `APIRoute.name`.
+If you want to use your APIs' function names as `operationId`s, you can iterate over all of them and override each _path operation's_ `operation_id` using their `APIRoute.name`.
 
-You should do it after adding all your *path operations*.
+You should do it after adding all your _path operations_.
 
 ```Python hl_lines="2  12-21  24"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
 ```
 
 /// tip
@@ -34,7 +34,7 @@ If you manually call `app.openapi()`, you should update the `operationId`s befor
 
 /// warning
 
-If you do this, you have to make sure each one of your *path operation functions* has a unique name.
+If you do this, you have to make sure each one of your _path operation functions_ has a unique name.
 
 Even if they are in different modules (Python files).
 
@@ -42,37 +42,37 @@ Even if they are in different modules (Python files).
 
 ## Exclude from OpenAPI
 
-To exclude a *path operation* from the generated OpenAPI schema (and thus, from the automatic documentation systems), use the parameter `include_in_schema` and set it to `False`:
+To exclude a _path operation_ from the generated OpenAPI schema (and thus, from the automatic documentation systems), use the parameter `include_in_schema` and set it to `False`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
 ```
 
 ## Advanced description from docstring
 
-You can limit the lines used from the docstring of a *path operation function* for OpenAPI.
+You can limit the lines used from the docstring of a _path operation function_ for OpenAPI.
 
 Adding an `\f` (an escaped "form feed" character) causes **ReadyAPI** to truncate the output used for OpenAPI at this point.
 
 It won't show up in the documentation, but other tools (such as Sphinx) will be able to use the rest.
 
 ```Python hl_lines="19-29"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
 ```
 
 ## Additional Responses
 
-You probably have seen how to declare the `response_model` and `status_code` for a *path operation*.
+You probably have seen how to declare the `response_model` and `status_code` for a _path operation_.
 
-That defines the metadata about the main response of a *path operation*.
+That defines the metadata about the main response of a _path operation_.
 
 You can also declare additional responses with their models, status codes, etc.
 
-There's a whole chapter here in the documentation about it, you can read it at [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}.
+There's a whole chapter here in the documentation about it, you can read it at [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}.
 
 ## OpenAPI Extra
 
-When you declare a *path operation* in your application, **ReadyAPI** automatically generates the relevant metadata about that *path operation* to be included in the OpenAPI schema.
+When you declare a _path operation_ in your application, **ReadyAPI** automatically generates the relevant metadata about that _path operation_ to be included in the OpenAPI schema.
 
 /// note | "Technical details"
 
@@ -80,35 +80,35 @@ In the OpenAPI specification it is called the <a href="https://github.com/OAI/Op
 
 ///
 
-It has all the information about the *path operation* and is used to generate the automatic documentation.
+It has all the information about the _path operation_ and is used to generate the automatic documentation.
 
 It includes the `tags`, `parameters`, `requestBody`, `responses`, etc.
 
-This *path operation*-specific OpenAPI schema is normally generated automatically by **ReadyAPI**, but you can also extend it.
+This _path operation_-specific OpenAPI schema is normally generated automatically by **ReadyAPI**, but you can also extend it.
 
 /// tip
 
 This is a low level extension point.
 
-If you only need to declare additional responses, a more convenient way to do it is with [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}.
+If you only need to declare additional responses, a more convenient way to do it is with [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}.
 
 ///
 
-You can extend the OpenAPI schema for a *path operation* using the parameter `openapi_extra`.
+You can extend the OpenAPI schema for a _path operation_ using the parameter `openapi_extra`.
 
 ### OpenAPI Extensions
 
 This `openapi_extra` can be helpful, for example, to declare [OpenAPI Extensions](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions):
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
 ```
 
-If you open the automatic API docs, your extension will show up at the bottom of the specific *path operation*.
+If you open the automatic API docs, your extension will show up at the bottom of the specific _path operation_.
 
 <img src="/img/tutorial/path-operation-advanced-configuration/image01.png">
 
-And if you see the resulting OpenAPI (at `/openapi.json` in your API), you will see your extension as part of the specific *path operation* too:
+And if you see the resulting OpenAPI (at `/openapi.json` in your API), you will see your extension as part of the specific _path operation_ too:
 
 ```JSON hl_lines="22"
 {
@@ -139,9 +139,9 @@ And if you see the resulting OpenAPI (at `/openapi.json` in your API), you will 
 }
 ```
 
-### Custom OpenAPI *path operation* schema
+### Custom OpenAPI _path operation_ schema
 
-The dictionary in `openapi_extra` will be deeply merged with the automatically generated OpenAPI schema for the *path operation*.
+The dictionary in `openapi_extra` will be deeply merged with the automatically generated OpenAPI schema for the _path operation_.
 
 So, you could add additional data to the automatically generated schema.
 
@@ -149,8 +149,8 @@ For example, you could decide to read and validate the request with your own cod
 
 You could do that with `openapi_extra`:
 
-```Python hl_lines="20-37  39-40"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
+```Python hl_lines="19-36  39-40"
+{!../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
 ```
 
 In this example, we didn't declare any Pydantic model. In fact, the request body is not even <abbr title="converted from some plain format, like bytes, into Python objects">parsed</abbr> as JSON, it is read directly as `bytes`, and the function `magic_data_reader()` would be in charge of parsing it in some way.
@@ -159,7 +159,7 @@ Nevertheless, we can declare the expected schema for the request body.
 
 ### Custom OpenAPI content type
 
-Using this same trick, you could use a Pydantic model to define the JSON Schema that is then included in the custom OpenAPI schema section for the *path operation*.
+Using this same trick, you could use a Pydantic model to define the JSON Schema that is then included in the custom OpenAPI schema section for the _path operation_.
 
 And you could do this even if the data type in the request is not JSON.
 
@@ -168,7 +168,7 @@ For example, in this application we don't use ReadyAPI's integrated functionalit
 //// tab | Pydantic v2
 
 ```Python hl_lines="17-22  24"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 ////
@@ -176,7 +176,7 @@ For example, in this application we don't use ReadyAPI's integrated functionalit
 //// tab | Pydantic v1
 
 ```Python hl_lines="17-22  24"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
 ```
 
 ////
@@ -196,7 +196,7 @@ And then in our code, we parse that YAML content directly, and then we are again
 //// tab | Pydantic v2
 
 ```Python hl_lines="26-33"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 ////
@@ -204,7 +204,7 @@ And then in our code, we parse that YAML content directly, and then we are again
 //// tab | Pydantic v1
 
 ```Python hl_lines="26-33"
-{!> ../../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
+{!> ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py!}
 ```
 
 ////

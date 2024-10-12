@@ -20,23 +20,23 @@ Let's imagine that loading the model can **take quite some time**, because it ha
 
 You could load it at the top level of the module/file, but that would also mean that it would **load the model** even if you are just running a simple automated test, then that test would be **slow** because it would have to wait for the model to load before being able to run an independent part of the code.
 
-That's what we'll solve, let's load the model before the requests are handled, but only right before the application starts receiving requests, not while  the code is being loaded.
+That's what we'll solve, let's load the model before the requests are handled, but only right before the application starts receiving requests, not while the code is being loaded.
 
 ## Lifespan
 
-You can define this *startup* and *shutdown* logic using the `lifespan` parameter of the `ReadyAPI` app, and a "context manager" (I'll show you what that is in a second).
+You can define this _startup_ and _shutdown_ logic using the `lifespan` parameter of the `ReadyAPI` app, and a "context manager" (I'll show you what that is in a second).
 
 Let's start with an example and then see it in detail.
 
 We create an async function `lifespan()` with `yield` like this:
 
 ```Python hl_lines="16  19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
-Here we are simulating the expensive *startup* operation of loading the model by putting the (fake) model function in the dictionary with machine learning models before the `yield`. This code will be executed **before** the application **starts taking requests**, during the *startup*.
+Here we are simulating the expensive _startup_ operation of loading the model by putting the (fake) model function in the dictionary with machine learning models before the `yield`. This code will be executed **before** the application **starts taking requests**, during the _startup_.
 
-And then, right after the `yield`, we unload the model. This code will be executed **after** the application **finishes handling requests**, right before the *shutdown*. This could, for example, release resources like memory or a GPU.
+And then, right after the `yield`, we unload the model. This code will be executed **after** the application **finishes handling requests**, right before the _shutdown_. This could, for example, release resources like memory or a GPU.
 
 /// tip
 
@@ -51,7 +51,7 @@ Maybe you need to start a new version, or you just got tired of running it. 🤷
 The first thing to notice, is that we are defining an async function with `yield`. This is very similar to Dependencies with `yield`.
 
 ```Python hl_lines="14-19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 The first part of the function, before the `yield`, will be executed **before** the application starts.
@@ -65,7 +65,7 @@ If you check, the function is decorated with an `@asynccontextmanager`.
 That converts the function into something called an "**async context manager**".
 
 ```Python hl_lines="1  13"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 A **context manager** in Python is something that you can use in a `with` statement, for example, `open()` can be used as a context manager:
@@ -89,20 +89,20 @@ In our code example above, we don't use it directly, but we pass it to ReadyAPI 
 The `lifespan` parameter of the `ReadyAPI` app takes an **async context manager**, so we can pass our new `lifespan` async context manager to it.
 
 ```Python hl_lines="22"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 ## Alternative Events (deprecated)
 
 /// warning
 
-The recommended way to handle the *startup* and *shutdown* is using the `lifespan` parameter of the `ReadyAPI` app as described above. If you provide a `lifespan` parameter, `startup` and `shutdown` event handlers will no longer be called. It's all `lifespan` or all events, not both.
+The recommended way to handle the _startup_ and _shutdown_ is using the `lifespan` parameter of the `ReadyAPI` app as described above. If you provide a `lifespan` parameter, `startup` and `shutdown` event handlers will no longer be called. It's all `lifespan` or all events, not both.
 
 You can probably skip this part.
 
 ///
 
-There's an alternative way to define this logic to be executed during *startup* and during *shutdown*.
+There's an alternative way to define this logic to be executed during _startup_ and during _shutdown_.
 
 You can define event handlers (functions) that need to be executed before the application starts up, or when the application is shutting down.
 
@@ -113,7 +113,7 @@ These functions can be declared with `async def` or normal `def`.
 To add a function that should be run before the application starts, declare it with the event `"startup"`:
 
 ```Python hl_lines="8"
-{!../../../docs_src/events/tutorial001.py!}
+{!../../docs_src/events/tutorial001.py!}
 ```
 
 In this case, the `startup` event handler function will initialize the items "database" (just a `dict`) with some values.
@@ -127,7 +127,7 @@ And your application won't start receiving requests until all the `startup` even
 To add a function that should be run when the application is shutting down, declare it with the event `"shutdown"`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/events/tutorial002.py!}
+{!../../docs_src/events/tutorial002.py!}
 ```
 
 Here, the `shutdown` event handler function will write a text line `"Application shutdown"` to a file `log.txt`.
@@ -152,7 +152,7 @@ So, we declare the event handler function with standard `def` instead of `async 
 
 ### `startup` and `shutdown` together
 
-There's a high chance that the logic for your *startup* and *shutdown* is connected, you might want to start something and then finish it, acquire a resource and then release it, etc.
+There's a high chance that the logic for your _startup_ and _shutdown_ is connected, you might want to start something and then finish it, acquire a resource and then release it, etc.
 
 Doing that in separated functions that don't share logic or variables together is more difficult as you would need to store values in global variables or similar tricks.
 
@@ -166,7 +166,7 @@ Underneath, in the ASGI technical specification, this is part of the <a href="ht
 
 /// info
 
-You can read more about the Starlette `lifespan` handlers in <a href="https://www.starlette.io/lifespan/" class="external-link" target="_blank">Starlette's  Lifespan' docs</a>.
+You can read more about the Starlette `lifespan` handlers in <a href="https://www.starlette.io/lifespan/" class="external-link" target="_blank">Starlette's Lifespan' docs</a>.
 
 Including how to handle lifespan state that can be used in other areas of your code.
 
@@ -174,4 +174,4 @@ Including how to handle lifespan state that can be used in other areas of your c
 
 ## Sub Applications
 
-🚨 Keep in mind that these lifespan events (startup and shutdown) will only be executed for the main application, not for [Sub Applications - Mounts](sub-applications.md){.internal-link target=_blank}.
+🚨 Keep in mind that these lifespan events (startup and shutdown) will only be executed for the main application, not for [Sub Applications - Mounts](sub-applications.md){.internal-link target=\_blank}.

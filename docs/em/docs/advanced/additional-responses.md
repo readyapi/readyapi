@@ -16,7 +16,7 @@
 
 ## 🌖 📨 ⏮️ `model`
 
-👆 💪 🚶‍♀️ 👆 *➡ 🛠️ 👨‍🎨* 🔢 `responses`.
+👆 💪 🚶‍♀️ 👆 _➡ 🛠️ 👨‍🎨_ 🔢 `responses`.
 
 ⚫️ 📨 `dict`, 🔑 👔 📟 🔠 📨, 💖 `200`, &amp; 💲 🎏 `dict`Ⓜ ⏮️ ℹ 🔠 👫.
 
@@ -27,7 +27,7 @@
 🖼, 📣 ➕1️⃣ 📨 ⏮️ 👔 📟 `404` &amp; Pydantic 🏷 `Message`, 👆 💪 ✍:
 
 ```Python hl_lines="18  22"
-{!../../../docs_src/additional_responses/tutorial001.py!}
+{!../../docs_src/additional_responses/tutorial001.py!}
 ```
 
 /// note
@@ -44,14 +44,14 @@
 
 ☑ 🥉:
 
-* 🔑 `content`, 👈 ✔️ 💲 ➕1️⃣ 🎻 🎚 (`dict`) 👈 🔌:
-    * 🔑 ⏮️ 📻 🆎, ✅ `application/json`, 👈 🔌 💲 ➕1️⃣ 🎻 🎚, 👈 🔌:
-        * 🔑 `schema`, 👈 ✔️ 💲 🎻 🔗 ⚪️➡️ 🏷, 📥 ☑ 🥉.
-            * **ReadyAPI** 🚮 🔗 📥 🌐 🎻 🔗 ➕1️⃣ 🥉 👆 🗄 ↩️ ✅ ⚫️ 🔗. 👉 🌌, 🎏 🈸 &amp; 👩‍💻 💪 ⚙️ 👈 🎻 🔗 🔗, 🚚 👻 📟 ⚡ 🧰, ♒️.
+- 🔑 `content`, 👈 ✔️ 💲 ➕1️⃣ 🎻 🎚 (`dict`) 👈 🔌:
+  - 🔑 ⏮️ 📻 🆎, ✅ `application/json`, 👈 🔌 💲 ➕1️⃣ 🎻 🎚, 👈 🔌:
+    - 🔑 `schema`, 👈 ✔️ 💲 🎻 🔗 ⚪️➡️ 🏷, 📥 ☑ 🥉.
+      - **ReadyAPI** 🚮 🔗 📥 🌐 🎻 🔗 ➕1️⃣ 🥉 👆 🗄 ↩️ ✅ ⚫️ 🔗. 👉 🌌, 🎏 🈸 &amp; 👩‍💻 💪 ⚙️ 👈 🎻 🔗 🔗, 🚚 👻 📟 ⚡ 🧰, ♒️.
 
 ///
 
-🏗 📨 🗄 👉 *➡ 🛠️* 🔜:
+🏗 📨 🗄 👉 _➡ 🛠️_ 🔜:
 
 ```JSON hl_lines="3-12"
 {
@@ -175,10 +175,10 @@
 
 👆 💪 ⚙️ 👉 🎏 `responses` 🔢 🚮 🎏 🔉 🆎 🎏 👑 📨.
 
-🖼, 👆 💪 🚮 🌖 📻 🆎 `image/png`, 📣 👈 👆 *➡ 🛠️* 💪 📨 🎻 🎚 (⏮️ 📻 🆎 `application/json`) ⚖️ 🇩🇴 🖼:
+🖼, 👆 💪 🚮 🌖 📻 🆎 `image/png`, 📣 👈 👆 _➡ 🛠️_ 💪 📨 🎻 🎚 (⏮️ 📻 🆎 `application/json`) ⚖️ 🇩🇴 🖼:
 
 ```Python hl_lines="19-24  28"
-{!../../../docs_src/additional_responses/tutorial002.py!}
+{!../../docs_src/additional_responses/tutorial002.py!}
 ```
 
 /// note
@@ -208,7 +208,7 @@
 &amp; 📨 ⏮️ 👔 📟 `200` 👈 ⚙️ 👆 `response_model`, ✋️ 🔌 🛃 `example`:
 
 ```Python hl_lines="20-31"
-{!../../../docs_src/additional_responses/tutorial003.py!}
+{!../../docs_src/additional_responses/tutorial003.py!}
 ```
 
 ⚫️ 🔜 🌐 🌀 &amp; 🔌 👆 🗄, &amp; 🎦 🛠️ 🩺:
@@ -217,7 +217,7 @@
 
 ## 🌀 🔢 📨 &amp; 🛃 🕐
 
-👆 💪 💚 ✔️ 🔁 📨 👈 ✔ 📚 *➡ 🛠️*, ✋️ 👆 💚 🌀 👫 ⏮️ 🛃 📨 💚 🔠 *➡ 🛠️*.
+👆 💪 💚 ✔️ 🔁 📨 👈 ✔ 📚 _➡ 🛠️_, ✋️ 👆 💚 🌀 👫 ⏮️ 🛃 📨 💚 🔠 _➡ 🛠️_.
 
 📚 💼, 👆 💪 ⚙️ 🐍 ⚒ "🏗" `dict` ⏮️ `**dict_to_unpack`:
 
@@ -239,17 +239,17 @@ new_dict = {**old_dict, "new key": "new value"}
 }
 ```
 
-👆 💪 ⚙️ 👈 ⚒ 🏤-⚙️ 🔢 📨 👆 *➡ 🛠️* &amp; 🌀 👫 ⏮️ 🌖 🛃 🕐.
+👆 💪 ⚙️ 👈 ⚒ 🏤-⚙️ 🔢 📨 👆 _➡ 🛠️_ &amp; 🌀 👫 ⏮️ 🌖 🛃 🕐.
 
 🖼:
 
 ```Python hl_lines="13-17  26"
-{!../../../docs_src/additional_responses/tutorial004.py!}
+{!../../docs_src/additional_responses/tutorial004.py!}
 ```
 
 ## 🌖 ℹ 🔃 🗄 📨
 
 👀 ⚫️❔ ⚫️❔ 👆 💪 🔌 📨, 👆 💪 ✅ 👉 📄 🗄 🔧:
 
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject" class="external-link" target="_blank">🗄 📨 🎚</a>, ⚫️ 🔌 `Response Object`.
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responseObject" class="external-link" target="_blank">🗄 📨 🎚</a>, 👆 💪 🔌 🕳 ⚪️➡️ 👉 🔗 🔠 📨 🔘 👆 `responses` 🔢. ✅ `description`, `headers`, `content` (🔘 👉 👈 👆 📣 🎏 🔉 🆎 &amp; 🎻 🔗), &amp; `links`.
+- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject" class="external-link" target="_blank">🗄 📨 🎚</a>, ⚫️ 🔌 `Response Object`.
+- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responseObject" class="external-link" target="_blank">🗄 📨 🎚</a>, 👆 💪 🔌 🕳 ⚪️➡️ 👉 🔗 🔠 📨 🔘 👆 `responses` 🔢. ✅ `description`, `headers`, `content` (🔘 👉 👈 👆 📣 🎏 🔉 🆎 &amp; 🎻 🔗), &amp; `links`.

@@ -3,12 +3,12 @@
 パスパラメータではない関数パラメータを宣言すると、それらは自動的に "クエリ" パラメータとして解釈されます。
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial001.py!}
+{!../../docs_src/query_params/tutorial001.py!}
 ```
 
-クエリはURL内で `?` の後に続くキーとバリューの組で、 `&` で区切られています。
+クエリは URL 内で `?` の後に続くキーとバリューの組で、 `&` で区切られています。
 
-例えば、以下の様なURL内で:
+例えば、以下の様な URL 内で:
 
 ```
 http://127.0.0.1:8000/items/?skip=0&limit=10
@@ -16,19 +16,19 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...クエリパラメータは:
 
-* `skip`: 値は `0`
-* `limit`: 値は `10`
+- `skip`: 値は `0`
+- `limit`: 値は `10`
 
-これらはURLの一部なので、「自然に」文字列になります。
+これらは URL の一部なので、「自然に」文字列になります。
 
-しかしPythonの型を宣言すると (上記の例では `int` として)、その型に変換されバリデーションが行われます。
+しかし Python の型を宣言すると (上記の例では `int` として)、その型に変換されバリデーションが行われます。
 
 パスパラメータに適用される処理と完全に同様な処理がクエリパラメータにも施されます:
 
-* エディターサポート (明らかに)
-* データ「<abbr title="HTTPリクエストで受け取った文字列をPythonデータへ変換する">解析</abbr>」
-* データバリデーション
-* 自動ドキュメント生成
+- エディターサポート (明らかに)
+- データ「<abbr title="HTTPリクエストで受け取った文字列をPythonデータへ変換する">解析</abbr>」
+- データバリデーション
+- 自動ドキュメント生成
 
 ## デフォルト
 
@@ -36,13 +36,13 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 上述の例では、`skip=0` と `limit=10` というデフォルト値を持っています。
 
-したがって、以下のURLにアクセスすることは:
+したがって、以下の URL にアクセスすることは:
 
 ```
 http://127.0.0.1:8000/items/
 ```
 
-以下のURLにアクセスすることと同等になります:
+以下の URL にアクセスすることと同等になります:
 
 ```
 http://127.0.0.1:8000/items/?skip=0&limit=10
@@ -56,15 +56,15 @@ http://127.0.0.1:8000/items/?skip=20
 
 関数内のパラメータの値は以下の様になります:
 
-* `skip=20`: URL内にセットしたため
-* `limit=10`: デフォルト値
+- `skip=20`: URL 内にセットしたため
+- `limit=10`: デフォルト値
 
 ## オプショナルなパラメータ
 
 同様に、デフォルト値を `None` とすることで、オプショナルなクエリパラメータを宣言できます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial002.py!}
+{!../../docs_src/query_params/tutorial002.py!}
 ```
 
 この場合、関数パラメータ `q` はオプショナルとなり、デフォルトでは `None` になります。
@@ -80,7 +80,7 @@ http://127.0.0.1:8000/items/?skip=20
 `bool` 型も宣言できます。これは以下の様に変換されます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial003.py!}
+{!../../docs_src/query_params/tutorial003.py!}
 ```
 
 この場合、以下にアクセスすると:
@@ -124,7 +124,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 名前で判別されます:
 
 ```Python hl_lines="8  10"
-{!../../../docs_src/query_params/tutorial004.py!}
+{!../../docs_src/query_params/tutorial004.py!}
 ```
 
 ## 必須のクエリパラメータ
@@ -136,12 +136,12 @@ http://127.0.0.1:8000/items/foo?short=yes
 しかしクエリパラメータを必須にしたい場合は、ただデフォルト値を宣言しなければよいです:
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/query_params/tutorial005.py!}
+{!../../docs_src/query_params/tutorial005.py!}
 ```
 
 ここで、クエリパラメータ `needy` は `str` 型の必須のクエリパラメータです
 
-以下のURLをブラウザで開くと:
+以下の URL をブラウザで開くと:
 
 ```
 http://127.0.0.1:8000/items/foo-item
@@ -164,7 +164,7 @@ http://127.0.0.1:8000/items/foo-item
 }
 ```
 
-`needy` は必須のパラメータなので、URLにセットする必要があります:
+`needy` は必須のパラメータなので、URL にセットする必要があります:
 
 ```
 http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
@@ -182,17 +182,17 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 そして当然、あるパラメータを必須に、別のパラメータにデフォルト値を設定し、また別のパラメータをオプショナルにできます:
 
 ```Python hl_lines="10"
-{!../../../docs_src/query_params/tutorial006.py!}
+{!../../docs_src/query_params/tutorial006.py!}
 ```
 
-この場合、3つのクエリパラメータがあります。:
+この場合、3 つのクエリパラメータがあります。:
 
-* `needy`、必須の `str` 。
-* `skip`、デフォルト値を `0` とする `int` 。
-* `limit`、オプショナルな `int` 。
+- `needy`、必須の `str` 。
+- `skip`、デフォルト値を `0` とする `int` 。
+- `limit`、オプショナルな `int` 。
 
 /// tip | "豆知識"
 
-[パスパラメータ](path-params.md#_8){.internal-link target=_blank}と同様に `Enum` を使用できます。
+[パスパラメータ](path-params.md#_8){.internal-link target=\_blank}と同様に `Enum` を使用できます。
 
 ///

@@ -1,6 +1,6 @@
-# 使用yield的依赖项
+# 使用 yield 的依赖项
 
-ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("exit")，"清理"("cleanup")，"拆卸"("teardown")，"关闭"("close")，"上下文管理器"("context managers")。 ...'>额外步骤</abbr>的依赖项.
+ReadyAPI 支持在完成后执行一些<abbr title='有时也被称为"退出"("exit")，"清理"("cleanup")，"拆卸"("teardown")，"关闭"("close")，"上下文管理器"("context managers")。 ...'>额外步骤</abbr>的依赖项.
 
 为此，你需要使用 `yield` 而不是 `return`，然后再编写这些额外的步骤（代码）。
 
@@ -14,12 +14,12 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 任何一个可以与以下内容一起使用的函数：
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> 或者
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> 或者
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 都可以作为 **ReadyAPI** 的依赖项。
 
-实际上，ReadyAPI内部就使用了这两个装饰器。
+实际上，ReadyAPI 内部就使用了这两个装饰器。
 
 ///
 
@@ -30,19 +30,19 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 在发送响应之前，只会执行 `yield` 语句及之前的代码：
 
 ```Python hl_lines="2-4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-生成的值会注入到 *路由函数* 和其他依赖项中：
+生成的值会注入到 _路由函数_ 和其他依赖项中：
 
 ```Python hl_lines="4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 `yield` 语句后面的代码会在创建响应后，发送响应前执行：
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 /// tip | 提示
@@ -57,15 +57,16 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 如果在包含 `yield` 的依赖中使用 `try` 代码块，你会捕获到使用依赖时抛出的任何异常。
 
-例如，如果某段代码在另一个依赖中或在 *路由函数* 中使数据库事务"回滚"或产生任何其他错误，你将会在依赖中捕获到异常。
+例如，如果某段代码在另一个依赖中或在 _路由函数_ 中使数据库事务"回滚"或产生任何其他错误，你将会在依赖中捕获到异常。
 
 因此，你可以使用 `except SomeException` 在依赖中捕获特定的异常。
 
 同样，你也可以使用 `finally` 来确保退出步骤得到执行，无论是否存在异常。
 
 ```Python hl_lines="3  5"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
+
 ## 使用 `yield` 的子依赖项
 
 你可以声明任意数量和层级的树状依赖，而且它们中的任何一个或所有的都可以使用 `yield`。
@@ -77,7 +78,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.9+
 
 ```Python hl_lines="6  14  22"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -85,7 +86,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.8+
 
 ```Python hl_lines="5  13  21"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -99,7 +100,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 ///
 
 ```Python hl_lines="4  12  20"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -113,7 +114,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.9+
 
 ```Python hl_lines="18-19  26-27"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -121,7 +122,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.8+
 
 ```Python hl_lines="17-18  25-26"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -135,7 +136,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 ///
 
 ```Python hl_lines="16-17  24-25"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -164,7 +165,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 /// tip | 提示
 
-这是一种相对高级的技巧，在大多数情况下你并不需要使用它，因为你可以在其他代码中抛出异常（包括 `HTTPException` ），例如在 *路由函数* 中。
+这是一种相对高级的技巧，在大多数情况下你并不需要使用它，因为你可以在其他代码中抛出异常（包括 `HTTPException` ），例如在 _路由函数_ 中。
 
 但是如果你需要，你也可以在依赖项中做到这一点。🤓
 
@@ -173,7 +174,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.9+
 
 ```Python hl_lines="18-22  31"
-{!> ../../../docs_src/dependencies/tutorial008b_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an_py39.py!}
 ```
 
 ////
@@ -181,7 +182,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.8+
 
 ```Python hl_lines="17-21  30"
-{!> ../../../docs_src/dependencies/tutorial008b_an.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an.py!}
 ```
 
 ////
@@ -195,21 +196,21 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 ///
 
 ```Python hl_lines="16-20  29"
-{!> ../../../docs_src/dependencies/tutorial008b.py!}
+{!> ../../docs_src/dependencies/tutorial008b.py!}
 ```
 
 ////
 
-你还可以创建一个 [自定义异常处理器](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} 用于捕获异常（同时也可以抛出另一个 `HTTPException`）。
+你还可以创建一个 [自定义异常处理器](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank} 用于捕获异常（同时也可以抛出另一个 `HTTPException`）。
 
 ## 包含 `yield` 和 `except` 的依赖项
 
-如果你在包含 `yield` 的依赖项中使用 `except` 捕获了一个异常，然后你没有重新抛出该异常（或抛出一个新异常），与在普通的Python代码中相同，ReadyAPI不会注意到发生了异常。
+如果你在包含 `yield` 的依赖项中使用 `except` 捕获了一个异常，然后你没有重新抛出该异常（或抛出一个新异常），与在普通的 Python 代码中相同，ReadyAPI 不会注意到发生了异常。
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="15-16"
-{!> ../../../docs_src/dependencies/tutorial008c_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an_py39.py!}
 ```
 
 ////
@@ -217,7 +218,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.8+
 
 ```Python hl_lines="14-15"
-{!> ../../../docs_src/dependencies/tutorial008c_an.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an.py!}
 ```
 
 ////
@@ -231,12 +232,12 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 ///
 
 ```Python hl_lines="13-14"
-{!> ../../../docs_src/dependencies/tutorial008c.py!}
+{!> ../../docs_src/dependencies/tutorial008c.py!}
 ```
 
 ////
 
-在示例代码的情况下，客户端将会收到 *HTTP 500 Internal Server Error* 的响应，因为我们没有抛出 `HTTPException` 或者类似的异常，并且服务器也 **不会有任何日志** 或者其他提示来告诉我们错误是什么。😱
+在示例代码的情况下，客户端将会收到 _HTTP 500 Internal Server Error_ 的响应，因为我们没有抛出 `HTTPException` 或者类似的异常，并且服务器也 **不会有任何日志** 或者其他提示来告诉我们错误是什么。😱
 
 ### 在包含 `yield` 和 `except` 的依赖项中一定要 `raise`
 
@@ -247,7 +248,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.9+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial008d_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an_py39.py!}
 ```
 
 ////
@@ -255,7 +256,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 //// tab | Python 3.8+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/dependencies/tutorial008d_an.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an.py!}
 ```
 
 ////
@@ -269,14 +270,14 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 ///
 
 ```Python hl_lines="15"
-{!> ../../../docs_src/dependencies/tutorial008d.py!}
+{!> ../../docs_src/dependencies/tutorial008d.py!}
 ```
 
 ////
 
-现在客户端同样会得到 *HTTP 500 Internal Server Error* 响应，但是服务器日志会记录下我们自定义的 `InternalError`。
+现在客户端同样会得到 _HTTP 500 Internal Server Error_ 响应，但是服务器日志会记录下我们自定义的 `InternalError`。
 
-##  使用 `yield` 的依赖项的执行
+## 使用 `yield` 的依赖项的执行
 
 执行顺序大致如下时序图所示。时间轴从上到下，每一列都代表交互或者代码执行的一部分。
 
@@ -317,7 +318,7 @@ participant tasks as Background tasks
 
 /// info | 说明
 
-只会向客户端发送 **一次响应** ，可能是一个错误响应，也可能是来自 *路由函数* 的响应。
+只会向客户端发送 **一次响应** ，可能是一个错误响应，也可能是来自 _路由函数_ 的响应。
 
 在发送了其中一个响应之后，就无法再发送其他响应了。
 
@@ -325,7 +326,7 @@ participant tasks as Background tasks
 
 /// tip | 提示
 
-这个时序图展示了 `HTTPException`，除此之外你也可以抛出任何你在使用 `yield` 的依赖项中或者[自定义异常处理器](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}中捕获的异常。
+这个时序图展示了 `HTTPException`，除此之外你也可以抛出任何你在使用 `yield` 的依赖项中或者[自定义异常处理器](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank}中捕获的异常。
 
 如果你引发任何异常，它将传递给使用 `yield` 的依赖项，包括 `HTTPException`。在大多数情况下你应当从使用 `yield` 的依赖项中重新抛出捕获的异常或者一个新的异常来确保它会被正确的处理。
 
@@ -337,21 +338,21 @@ participant tasks as Background tasks
 
 你大概率不需要了解这些技术细节，可以跳过这一章节继续阅读后续的内容。
 
-如果你使用的ReadyAPI的版本早于0.106.0，并且在使用后台任务中使用了包含 `yield` 的依赖项中的资源，那么这些细节会对你有一些用处。
+如果你使用的 ReadyAPI 的版本早于 0.106.0，并且在使用后台任务中使用了包含 `yield` 的依赖项中的资源，那么这些细节会对你有一些用处。
 
 ///
 
 ### 包含 `yield` 和 `except` 的依赖项的技术细节
 
-在ReadyAPI 0.110.0版本之前，如果使用了一个包含 `yield` 的依赖项，你在依赖项中使用 `except` 捕获了一个异常，但是你没有再次抛出该异常，这个异常会被自动抛出/转发到异常处理器或者内部服务错误处理器。
+在 ReadyAPI 0.110.0 版本之前，如果使用了一个包含 `yield` 的依赖项，你在依赖项中使用 `except` 捕获了一个异常，但是你没有再次抛出该异常，这个异常会被自动抛出/转发到异常处理器或者内部服务错误处理器。
 
 ### 后台任务和使用 `yield` 的依赖项的技术细节
 
-在ReadyAPI 0.106.0版本之前，在 `yield` 后面抛出异常是不可行的，因为 `yield` 之后的退出代码是在响应被发送之后再执行，这个时候异常处理器已经执行过了。
+在 ReadyAPI 0.106.0 版本之前，在 `yield` 后面抛出异常是不可行的，因为 `yield` 之后的退出代码是在响应被发送之后再执行，这个时候异常处理器已经执行过了。
 
 这样设计的目的主要是为了允许在后台任务中使用被依赖项`yield`的对象，因为退出代码会在后台任务结束后再执行。
 
-然而这也意味着在等待响应通过网络传输的同时，非必要的持有一个 `yield` 依赖项中的资源（例如数据库连接），这一行为在ReadyAPI 0.106.0被改变了。
+然而这也意味着在等待响应通过网络传输的同时，非必要的持有一个 `yield` 依赖项中的资源（例如数据库连接），这一行为在 ReadyAPI 0.106.0 被改变了。
 
 /// tip | 提示
 
@@ -363,13 +364,13 @@ participant tasks as Background tasks
 
 如果你之前依赖于这一行为，那么现在你应该在后台任务中创建并使用它自己的资源，不要在内部使用属于 `yield` 依赖项的资源。
 
-例如，你应该在后台任务中创建一个新的数据库会话用于查询数据，而不是使用相同的会话。你应该将对象的ID作为参数传递给后台任务函数，然后在该函数中重新获取该对象，而不是直接将数据库对象作为参数。
+例如，你应该在后台任务中创建一个新的数据库会话用于查询数据，而不是使用相同的会话。你应该将对象的 ID 作为参数传递给后台任务函数，然后在该函数中重新获取该对象，而不是直接将数据库对象作为参数。
 
 ## 上下文管理器
 
 ### 什么是"上下文管理器"
 
-"上下文管理器"是你可以在 `with` 语句中使用的任何Python对象。
+"上下文管理器"是你可以在 `with` 语句中使用的任何 Python 对象。
 
 例如，<a href="https://docs.python.org/zh-cn/3/tutorial/inputoutput.html#reading-and-writing-files" class="external-link" target="_blank">你可以使用`with`读取文件</a>：
 
@@ -395,23 +396,23 @@ with open("./somefile.txt") as f:
 
 ///
 
-在Python中，你可以通过<a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">创建一个带有`__enter__()`和`__exit__()`方法的类</a>来创建上下文管理器。
+在 Python 中，你可以通过<a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">创建一个带有`__enter__()`和`__exit__()`方法的类</a>来创建上下文管理器。
 
 你也可以在 **ReadyAPI** 的 `yield` 依赖项中通过 `with` 或者 `async with` 语句来使用它们：
 
 ```Python hl_lines="1-9  13"
-{!../../../docs_src/dependencies/tutorial010.py!}
+{!../../docs_src/dependencies/tutorial010.py!}
 ```
 
 /// tip | 提示
 
 另一种创建上下文管理器的方法是：
 
-* <a href="https://docs.python.org/zh-cn/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a>或者
-* <a href="https://docs.python.org/zh-cn/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/zh-cn/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a>或者
+- <a href="https://docs.python.org/zh-cn/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 使用它们装饰一个只有单个 `yield` 的函数。这就是 **ReadyAPI** 内部对于 `yield` 依赖项的处理方式。
 
-但是你不需要为ReadyAPI的依赖项使用这些装饰器（而且也不应该）。ReadyAPI会在内部为你处理这些。
+但是你不需要为 ReadyAPI 的依赖项使用这些装饰器（而且也不应该）。ReadyAPI 会在内部为你处理这些。
 
 ///

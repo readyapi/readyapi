@@ -2,19 +2,19 @@
 
 ## ⚙️ `Response` 🔢
 
-👆 💪 📣 🔢 🆎 `Response` 👆 *➡ 🛠️ 🔢* (👆 💪 🍪).
+👆 💪 📣 🔢 🆎 `Response` 👆 _➡ 🛠️ 🔢_ (👆 💪 🍪).
 
-&amp; ⤴️ 👆 💪 ⚒ 🎚 👈 *🔀* 📨 🎚.
+&amp; ⤴️ 👆 💪 ⚒ 🎚 👈 _🔀_ 📨 🎚.
 
 ```Python hl_lines="1  7-8"
-{!../../../docs_src/response_headers/tutorial002.py!}
+{!../../docs_src/response_headers/tutorial002.py!}
 ```
 
 &amp; ⤴️ 👆 💪 📨 🙆 🎚 👆 💪, 👆 🛎 🔜 ( `dict`, 💽 🏷, ♒️).
 
 &amp; 🚥 👆 📣 `response_model`, ⚫️ 🔜 ⚙️ ⛽ &amp; 🗜 🎚 👆 📨.
 
-**ReadyAPI** 🔜 ⚙️ 👈 *🔀* 📨 ⚗ 🎚 (🍪 &amp; 👔 📟), &amp; 🔜 🚮 👫 🏁 📨 👈 🔌 💲 👆 📨, ⛽ 🙆 `response_model`.
+**ReadyAPI** 🔜 ⚙️ 👈 _🔀_ 📨 ⚗ 🎚 (🍪 &amp; 👔 📟), &amp; 🔜 🚮 👫 🏁 📨 👈 🔌 💲 👆 📨, ⛽ 🙆 `response_model`.
 
 👆 💪 📣 `Response` 🔢 🔗, &amp; ⚒ 🎚 (&amp; 🍪) 👫.
 
@@ -22,10 +22,10 @@
 
 👆 💪 🚮 🎚 🕐❔ 👆 📨 `Response` 🔗.
 
-✍ 📨 🔬 [📨 📨 🔗](response-directly.md){.internal-link target=_blank} &amp; 🚶‍♀️ 🎚 🌖 🔢:
+✍ 📨 🔬 [📨 📨 🔗](response-directly.md){.internal-link target=\_blank} &amp; 🚶‍♀️ 🎚 🌖 🔢:
 
 ```Python hl_lines="10-12"
-{!../../../docs_src/response_headers/tutorial001.py!}
+{!../../docs_src/response_headers/tutorial001.py!}
 ```
 
 /// note | "📡 ℹ"
@@ -34,7 +34,7 @@
 
 **ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
 
- &amp; `Response` 💪 ⚙️ 🛎 ⚒ 🎚 &amp; 🍪, **ReadyAPI** 🚚 ⚫️ `readyapi.Response`.
+&amp; `Response` 💪 ⚙️ 🛎 ⚒ 🎚 &amp; 🍪, **ReadyAPI** 🚚 ⚫️ `readyapi.Response`.
 
 ///
 
@@ -42,4 +42,4 @@
 
 ✔️ 🤯 👈 🛃 © 🎚 💪 🚮 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" class="external-link" target="_blank">⚙️ '✖-' 🔡</a>.
 
-✋️ 🚥 👆 ✔️ 🛃 🎚 👈 👆 💚 👩‍💻 🖥 💪 👀, 👆 💪 🚮 👫 👆 ⚜ 📳 (✍ 🌅 [⚜ (✖️-🇨🇳 ℹ 🤝)](../tutorial/cors.md){.internal-link target=_blank}), ⚙️ 🔢 `expose_headers` 📄 <a href="https://www.starlette.io/middleware/#corsmiddleware" class="external-link" target="_blank">💃 ⚜ 🩺</a>.
+✋️ 🚥 👆 ✔️ 🛃 🎚 👈 👆 💚 👩‍💻 🖥 💪 👀, 👆 💪 🚮 👫 👆 ⚜ 📳 (✍ 🌅 [⚜ (✖️-🇨🇳 ℹ 🤝)](../tutorial/cors.md){.internal-link target=\_blank}), ⚙️ 🔢 `expose_headers` 📄 <a href="https://www.starlette.io/middleware/#corsmiddleware" class="external-link" target="_blank">💃 ⚜ 🩺</a>.

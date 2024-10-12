@@ -12,8 +12,8 @@ authors:
     family-names: KhulnaSoft
     email: info@khulnasoft.com
 identifiers:
-repository-code: 'https://github.com/readyapi/readyapi'
-url: 'https://readyapi.khulnasoft.com'
+repository-code: "https://github.com/readyapi/readyapi"
+url: "https://readyapi.khulnasoft.com"
 abstract: >-
   ReadyAPI framework, high performance, easy to learn, fast to code,
   ready for production

@@ -19,7 +19,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -27,7 +27,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -41,7 +41,7 @@
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -96,7 +96,7 @@
 
 Файлы будут загружены как данные формы.
 
-Если вы объявите тип параметра у *функции операции пути* как `bytes`, то **ReadyAPI** прочитает файл за вас, и вы получите его содержимое в виде `bytes`.
+Если вы объявите тип параметра у _функции операции пути_ как `bytes`, то **ReadyAPI** прочитает файл за вас, и вы получите его содержимое в виде `bytes`.
 
 Следует иметь в виду, что все содержимое будет храниться в памяти. Это хорошо подходит для небольших файлов.
 
@@ -109,7 +109,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -117,7 +117,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -131,47 +131,47 @@
 ///
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
 
 Использование `UploadFile` имеет ряд преимуществ перед `bytes`:
 
-* Использовать `File()` в значении параметра по умолчанию не обязательно.
-* При этом используется "буферный" файл:
-    * Файл, хранящийся в памяти до максимального предела размера, после преодоления которого он будет храниться на диске.
-* Это означает, что он будет хорошо работать с большими файлами, такими как изображения, видео, большие бинарные файлы и т.д., не потребляя при этом всю память.
-* Из загруженного файла можно получить метаданные.
-* Он реализует <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` интерфейс.
-* Он предоставляет реальный объект Python <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> который вы можете передать непосредственно другим библиотекам, которые ожидают файл в качестве объекта.
+- Использовать `File()` в значении параметра по умолчанию не обязательно.
+- При этом используется "буферный" файл:
+  - Файл, хранящийся в памяти до максимального предела размера, после преодоления которого он будет храниться на диске.
+- Это означает, что он будет хорошо работать с большими файлами, такими как изображения, видео, большие бинарные файлы и т.д., не потребляя при этом всю память.
+- Из загруженного файла можно получить метаданные.
+- Он реализует <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` интерфейс.
+- Он предоставляет реальный объект Python <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> который вы можете передать непосредственно другим библиотекам, которые ожидают файл в качестве объекта.
 
 ### `UploadFile`
 
 `UploadFile` имеет следующие атрибуты:
 
-* `filename`: Строка `str` с исходным именем файла, который был загружен (например, `myimage.jpg`).
-* `content_type`: Строка `str` с типом содержимого (MIME type / media type) (например, `image/jpeg`).
-* `file`: <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (a <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> объект). Это фактический файл Python, который можно передавать непосредственно другим функциям или библиотекам, ожидающим файл в качестве объекта.
+- `filename`: Строка `str` с исходным именем файла, который был загружен (например, `myimage.jpg`).
+- `content_type`: Строка `str` с типом содержимого (MIME type / media type) (например, `image/jpeg`).
+- `file`: <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (a <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> объект). Это фактический файл Python, который можно передавать непосредственно другим функциям или библиотекам, ожидающим файл в качестве объекта.
 
 `UploadFile` имеет следующие методы `async`. Все они вызывают соответствующие файловые методы (используя внутренний SpooledTemporaryFile).
 
-* `write(data)`: Записать данные `data` (`str` или `bytes`) в файл.
-* `read(size)`: Прочитать количество `size` (`int`) байт/символов из файла.
-* `seek(offset)`: Перейти к байту на позиции `offset` (`int`) в файле.
-    * Наример, `await myfile.seek(0)` перейдет к началу файла.
-    * Это особенно удобно, если вы один раз выполнили команду `await myfile.read()`, а затем вам нужно прочитать содержимое файла еще раз.
-* `close()`: Закрыть файл.
+- `write(data)`: Записать данные `data` (`str` или `bytes`) в файл.
+- `read(size)`: Прочитать количество `size` (`int`) байт/символов из файла.
+- `seek(offset)`: Перейти к байту на позиции `offset` (`int`) в файле.
+  - Наример, `await myfile.seek(0)` перейдет к началу файла.
+  - Это особенно удобно, если вы один раз выполнили команду `await myfile.read()`, а затем вам нужно прочитать содержимое файла еще раз.
+- `close()`: Закрыть файл.
 
 Поскольку все эти методы являются `async` методами, вам следует использовать "await" вместе с ними.
 
-Например, внутри `async` *функции операции пути* можно получить содержимое с помощью:
+Например, внутри `async` _функции операции пути_ можно получить содержимое с помощью:
 
 ```Python
 contents = await myfile.read()
 ```
 
-Если вы находитесь внутри обычной `def` *функции операции пути*, можно получить прямой доступ к файлу `UploadFile.file`, например:
+Если вы находитесь внутри обычной `def` _функции операции пути_, можно получить прямой доступ к файлу `UploadFile.file`, например:
 
 ```Python
 contents = myfile.file.read()
@@ -207,7 +207,7 @@ contents = myfile.file.read()
 
 /// warning | "Внимание"
 
-В операции *функции операции пути* можно объявить несколько параметров `File` и `Form`, но нельзя также объявлять поля `Body`, которые предполагается получить в виде JSON, поскольку тело запроса будет закодировано с помощью `multipart/form-data`, а не `application/json`.
+В операции _функции операции пути_ можно объявить несколько параметров `File` и `Form`, но нельзя также объявлять поля `Body`, которые предполагается получить в виде JSON, поскольку тело запроса будет закодировано с помощью `multipart/form-data`, а не `application/json`.
 
 Это не является ограничением **ReadyAPI**, это часть протокола HTTP.
 
@@ -220,7 +220,7 @@ contents = myfile.file.read()
 //// tab | Python 3.10+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py310.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ contents = myfile.file.read()
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py39.py!}
 ```
 
 ////
@@ -236,7 +236,7 @@ contents = myfile.file.read()
 //// tab | Python 3.6+
 
 ```Python hl_lines="10  18"
-{!> ../../../docs_src/request_files/tutorial001_02_an.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an.py!}
 ```
 
 ////
@@ -250,7 +250,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="7  15"
-{!> ../../../docs_src/request_files/tutorial001_02_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_py310.py!}
 ```
 
 ////
@@ -264,7 +264,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02.py!}
+{!> ../../docs_src/request_files/tutorial001_02.py!}
 ```
 
 ////
@@ -276,7 +276,7 @@ contents = myfile.file.read()
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  15"
-{!> ../../../docs_src/request_files/tutorial001_03_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an_py39.py!}
 ```
 
 ////
@@ -284,7 +284,7 @@ contents = myfile.file.read()
 //// tab | Python 3.6+
 
 ```Python hl_lines="8  14"
-{!> ../../../docs_src/request_files/tutorial001_03_an.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an.py!}
 ```
 
 ////
@@ -298,7 +298,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="7  13"
-{!> ../../../docs_src/request_files/tutorial001_03.py!}
+{!> ../../docs_src/request_files/tutorial001_03.py!}
 ```
 
 ////
@@ -314,7 +314,7 @@ contents = myfile.file.read()
 //// tab | Python 3.9+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -322,7 +322,7 @@ contents = myfile.file.read()
 //// tab | Python 3.6+
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/request_files/tutorial002_an.py!}
+{!> ../../docs_src/request_files/tutorial002_an.py!}
 ```
 
 ////
@@ -336,7 +336,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/request_files/tutorial002_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_py39.py!}
 ```
 
 ////
@@ -350,7 +350,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002.py!}
+{!> ../../docs_src/request_files/tutorial002.py!}
 ```
 
 ////
@@ -372,7 +372,7 @@ contents = myfile.file.read()
 //// tab | Python 3.9+
 
 ```Python hl_lines="11  18-20"
-{!> ../../../docs_src/request_files/tutorial003_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -380,7 +380,7 @@ contents = myfile.file.read()
 //// tab | Python 3.6+
 
 ```Python hl_lines="12  19-21"
-{!> ../../../docs_src/request_files/tutorial003_an.py!}
+{!> ../../docs_src/request_files/tutorial003_an.py!}
 ```
 
 ////
@@ -394,7 +394,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="9  16"
-{!> ../../../docs_src/request_files/tutorial003_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_py39.py!}
 ```
 
 ////
@@ -408,7 +408,7 @@ contents = myfile.file.read()
 ///
 
 ```Python hl_lines="11  18"
-{!> ../../../docs_src/request_files/tutorial003.py!}
+{!> ../../docs_src/request_files/tutorial003.py!}
 ```
 
 ////

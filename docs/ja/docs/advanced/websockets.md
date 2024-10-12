@@ -20,26 +20,26 @@ $ pip install websockets
 
 ### 本番環境
 
-本番環境では、React、Vue.js、Angularなどの最新のフレームワークで作成されたフロントエンドを使用しているでしょう。
+本番環境では、React、Vue.js、Angular などの最新のフレームワークで作成されたフロントエンドを使用しているでしょう。
 
-そして、バックエンドとWebSocketを使用して通信するために、おそらくフロントエンドのユーティリティを使用することになるでしょう。
+そして、バックエンドと WebSocket を使用して通信するために、おそらくフロントエンドのユーティリティを使用することになるでしょう。
 
-または、ネイティブコードでWebSocketバックエンドと直接通信するネイティブモバイルアプリケーションがあるかもしれません。
+または、ネイティブコードで WebSocket バックエンドと直接通信するネイティブモバイルアプリケーションがあるかもしれません。
 
-他にも、WebSocketのエンドポイントと通信する方法があるかもしれません。
+他にも、WebSocket のエンドポイントと通信する方法があるかもしれません。
 
 ---
 
-ただし、この例では非常にシンプルなHTML文書といくつかのJavaScriptを、すべてソースコードの中に入れて使用することにします。
+ただし、この例では非常にシンプルな HTML 文書といくつかの JavaScript を、すべてソースコードの中に入れて使用することにします。
 
 もちろん、これは最適な方法ではありませんし、本番環境で使うことはないでしょう。
 
 本番環境では、上記の方法のいずれかの選択肢を採用することになるでしょう。
 
-しかし、これはWebSocketのサーバーサイドに焦点を当て、実用的な例を示す最も簡単な方法です。
+しかし、これは WebSocket のサーバーサイドに焦点を当て、実用的な例を示す最も簡単な方法です。
 
 ```Python hl_lines="2  6-38  41-43"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 ## `websocket` を作成する
@@ -47,26 +47,26 @@ $ pip install websockets
 **ReadyAPI** アプリケーションで、`websocket` を作成します。
 
 ```Python hl_lines="1  46-47"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 /// note | "技術詳細"
 
 `from starlette.websockets import WebSocket` を使用しても構いません.
 
-**ReadyAPI** は開発者の利便性のために、同じ `WebSocket` を提供します。しかし、こちらはStarletteから直接提供されるものです。
+**ReadyAPI** は開発者の利便性のために、同じ `WebSocket` を提供します。しかし、こちらは Starlette から直接提供されるものです。
 
 ///
 
 ## メッセージの送受信
 
-WebSocketルートでは、 `await` を使ってメッセージの送受信ができます。
+WebSocket ルートでは、 `await` を使ってメッセージの送受信ができます。
 
 ```Python hl_lines="48-52"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
-バイナリやテキストデータ、JSONデータを送受信できます。
+バイナリやテキストデータ、JSON データを送受信できます。
 
 ## 試してみる
 
@@ -92,7 +92,7 @@ $ uvicorn main:app --reload
 
 <img src="/img/tutorial/websockets/image02.png">
 
-そして、 WebSocketを使用した**ReadyAPI**アプリケーションが応答します。
+そして、 WebSocket を使用した**ReadyAPI**アプリケーションが応答します。
 
 <img src="/img/tutorial/websockets/image03.png">
 
@@ -100,28 +100,28 @@ $ uvicorn main:app --reload
 
 <img src="/img/tutorial/websockets/image04.png">
 
-そして、これらの通信はすべて同じWebSocket接続を使用します。
+そして、これらの通信はすべて同じ WebSocket 接続を使用します。
 
 ## 依存関係
 
-WebSocketエンドポイントでは、`readyapi` から以下をインポートして使用できます。
+WebSocket エンドポイントでは、`readyapi` から以下をインポートして使用できます。
 
-* `Depends`
-* `Security`
-* `Cookie`
-* `Header`
-* `Path`
-* `Query`
+- `Depends`
+- `Security`
+- `Cookie`
+- `Header`
+- `Path`
+- `Query`
 
-これらは、他のReadyAPI エンドポイント/*path operation* の場合と同じように機能します。
+これらは、他の ReadyAPI エンドポイント/_path operation_ の場合と同じように機能します。
 
 ```Python hl_lines="58-65  68-83"
-{!../../../docs_src/websockets/tutorial002.py!}
+{!../../docs_src/websockets/tutorial002.py!}
 ```
 
 /// info | "情報"
 
-WebSocket で `HTTPException` を発生させることはあまり意味がありません。したがって、WebSocketの接続を直接閉じる方がよいでしょう。
+WebSocket で `HTTPException` を発生させることはあまり意味がありません。したがって、WebSocket の接続を直接閉じる方がよいでしょう。
 
 クロージングコードは、<a href="https://tools.ietf.org/html/rfc6455#section-7.4.1" class="external-link" target="_blank">仕様で定義された有効なコード</a>の中から使用することができます。
 
@@ -129,7 +129,7 @@ WebSocket で `HTTPException` を発生させることはあまり意味があ�
 
 ///
 
-### 依存関係を用いてWebSocketsを試してみる
+### 依存関係を用いて WebSockets を試してみる
 
 ファイル名が `main.py` である場合、以下の方法でアプリケーションを実行します。
 
@@ -147,8 +147,8 @@ $ uvicorn main:app --reload
 
 クライアントが設定できる項目は以下の通りです。
 
-* パスで使用される「Item ID」
-* クエリパラメータとして使用される「Token」
+- パスで使用される「Item ID」
+- クエリパラメータとして使用される「Token」
 
 /// tip | "豆知識"
 
@@ -156,23 +156,23 @@ $ uvicorn main:app --reload
 
 ///
 
-これにより、WebSocketに接続してメッセージを送受信できます。
+これにより、WebSocket に接続してメッセージを送受信できます。
 
 <img src="/img/tutorial/websockets/image05.png">
 
 ## 切断や複数クライアントへの対応
 
-WebSocket接続が閉じられると、 `await websocket.receive_text()` は例外 `WebSocketDisconnect` を発生させ、この例のようにキャッチして処理することができます。
+WebSocket 接続が閉じられると、 `await websocket.receive_text()` は例外 `WebSocketDisconnect` を発生させ、この例のようにキャッチして処理することができます。
 
 ```Python hl_lines="81-83"
-{!../../../docs_src/websockets/tutorial003.py!}
+{!../../docs_src/websockets/tutorial003.py!}
 ```
 
 試してみるには、
 
-* いくつかのブラウザタブでアプリを開きます。
-* それらのタブでメッセージを記入してください。
-* そして、タブのうち1つを閉じてください。
+- いくつかのブラウザタブでアプリを開きます。
+- それらのタブでメッセージを記入してください。
+- そして、タブのうち 1 つを閉じてください。
 
 これにより例外 `WebSocketDisconnect` が発生し、他のすべてのクライアントは次のようなメッセージを受信します。
 
@@ -186,13 +186,13 @@ Client #1596980209979 left the chat
 
 しかし、すべての接続がメモリ内の単一のリストで処理されるため、プロセスの実行中にのみ機能し、単一のプロセスでのみ機能することに注意してください。
 
-もしReadyAPIと簡単に統合できて、RedisやPostgreSQLなどでサポートされている、より堅牢なものが必要なら、<a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a> を確認してください。
+もし ReadyAPI と簡単に統合できて、Redis や PostgreSQL などでサポートされている、より堅牢なものが必要なら、<a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a> を確認してください。
 
 ///
 
 ## その他のドキュメント
 
-オプションの詳細については、Starletteのドキュメントを確認してください。
+オプションの詳細については、Starlette のドキュメントを確認してください。
 
-* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank"> `WebSocket` クラス</a>
-* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">クラスベースのWebSocket処理</a>
+- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank"> `WebSocket` クラス</a>
+- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">クラスベースの WebSocket 処理</a>

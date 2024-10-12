@@ -19,7 +19,7 @@ Importieren Sie `File` und `UploadFile` von `readyapi`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -27,7 +27,7 @@ Importieren Sie `File` und `UploadFile` von `readyapi`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -41,7 +41,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@ Erstellen Sie Datei-Parameter, so wie Sie es auch mit `Body` und `Form` machen w
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@ Erstellen Sie Datei-Parameter, so wie Sie es auch mit `Body` und `Form` machen w
 //// tab | Python 3.8+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -84,7 +84,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 `File` ist eine Klasse, die direkt von `Form` erbt.
 
-Aber erinnern Sie sich, dass, wenn Sie `Query`, `Path`,  `File` und andere von `readyapi` importieren, diese tatsächlich Funktionen sind, welche spezielle Klassen zurückgeben
+Aber erinnern Sie sich, dass, wenn Sie `Query`, `Path`, `File` und andere von `readyapi` importieren, diese tatsächlich Funktionen sind, welche spezielle Klassen zurückgeben
 
 ///
 
@@ -96,7 +96,7 @@ Um Dateibodys zu deklarieren, müssen Sie `File` verwenden, da diese Parameter s
 
 Die Dateien werden als „Formulardaten“ hochgeladen.
 
-Wenn Sie den Typ Ihrer *Pfadoperation-Funktion* als `bytes` deklarieren, wird **ReadyAPI** die Datei für Sie auslesen, und Sie erhalten den Inhalt als `bytes`.
+Wenn Sie den Typ Ihrer _Pfadoperation-Funktion_ als `bytes` deklarieren, wird **ReadyAPI** die Datei für Sie auslesen, und Sie erhalten den Inhalt als `bytes`.
 
 Bedenken Sie, dass das bedeutet, dass sich der gesamte Inhalt der Datei im Arbeitsspeicher befindet. Das wird für kleinere Dateien gut funktionieren.
 
@@ -109,7 +109,7 @@ Definieren Sie einen Datei-Parameter mit dem Typ `UploadFile`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -117,7 +117,7 @@ Definieren Sie einen Datei-Parameter mit dem Typ `UploadFile`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -131,47 +131,47 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
 
 `UploadFile` zu verwenden, hat mehrere Vorzüge gegenüber `bytes`:
 
-* Sie müssen `File()` nicht als Parameter-Defaultwert verwenden.
-* Es wird eine <abbr title='Aufgespult, Warteschlangenartig'>„Spool“</abbr>-Datei verwendet:
-    * Eine Datei, die bis zu einem bestimmten Größen-Limit im Arbeitsspeicher behalten wird, und wenn das Limit überschritten wird, auf der Festplatte gespeichert wird.
-* Das bedeutet, es wird für große Dateien wie Bilder, Videos, große Binärdateien, usw. gut funktionieren, ohne den ganzen Arbeitsspeicher aufzubrauchen.
-* Sie können Metadaten aus der hochgeladenen Datei auslesen.
-* Es hat eine <abbr title="dateiartig"><a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a></abbr> `async`hrone Schnittstelle.
-* Es stellt ein tatsächliches Python-<abbr title="Warteschlangenartige, temporäre Datei"><a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a></abbr>-Objekt bereit, welches Sie direkt anderen Bibliotheken übergeben können, die ein dateiartiges Objekt erwarten.
+- Sie müssen `File()` nicht als Parameter-Defaultwert verwenden.
+- Es wird eine <abbr title='Aufgespult, Warteschlangenartig'>„Spool“</abbr>-Datei verwendet:
+  - Eine Datei, die bis zu einem bestimmten Größen-Limit im Arbeitsspeicher behalten wird, und wenn das Limit überschritten wird, auf der Festplatte gespeichert wird.
+- Das bedeutet, es wird für große Dateien wie Bilder, Videos, große Binärdateien, usw. gut funktionieren, ohne den ganzen Arbeitsspeicher aufzubrauchen.
+- Sie können Metadaten aus der hochgeladenen Datei auslesen.
+- Es hat eine <abbr title="dateiartig"><a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a></abbr> `async`hrone Schnittstelle.
+- Es stellt ein tatsächliches Python-<abbr title="Warteschlangenartige, temporäre Datei"><a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a></abbr>-Objekt bereit, welches Sie direkt anderen Bibliotheken übergeben können, die ein dateiartiges Objekt erwarten.
 
 ### `UploadFile`
 
 `UploadFile` hat die folgenden Attribute:
 
-* `filename`: Ein `str` mit dem ursprünglichen Namen der hochgeladenen Datei (z. B. `meinbild.jpg`).
-* `content_type`: Ein `str` mit dem Inhaltstyp (MIME-Typ / Medientyp) (z. B. `image/jpeg`).
-* `file`: Ein <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (ein <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> Objekt). Das ist das tatsächliche Python-Objekt, das Sie direkt anderen Funktionen oder Bibliotheken übergeben können, welche ein „file-like“-Objekt erwarten.
+- `filename`: Ein `str` mit dem ursprünglichen Namen der hochgeladenen Datei (z. B. `meinbild.jpg`).
+- `content_type`: Ein `str` mit dem Inhaltstyp (MIME-Typ / Medientyp) (z. B. `image/jpeg`).
+- `file`: Ein <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (ein <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> Objekt). Das ist das tatsächliche Python-Objekt, das Sie direkt anderen Funktionen oder Bibliotheken übergeben können, welche ein „file-like“-Objekt erwarten.
 
 `UploadFile` hat die folgenden `async`hronen Methoden. Sie alle rufen die entsprechenden Methoden des darunterliegenden Datei-Objekts auf (wobei intern `SpooledTemporaryFile` verwendet wird).
 
-* `write(daten)`: Schreibt `daten` (`str` oder `bytes`) in die Datei.
-* `read(anzahl)`: Liest `anzahl` (`int`) bytes/Zeichen aus der Datei.
-* `seek(versatz)`: Geht zur Position `versatz` (`int`) in der Datei.
-    * Z. B. würde `await myfile.seek(0)` zum Anfang der Datei gehen.
-    * Das ist besonders dann nützlich, wenn Sie `await myfile.read()` einmal ausführen und dann diese Inhalte erneut auslesen müssen.
-* `close()`: Schließt die Datei.
+- `write(daten)`: Schreibt `daten` (`str` oder `bytes`) in die Datei.
+- `read(anzahl)`: Liest `anzahl` (`int`) bytes/Zeichen aus der Datei.
+- `seek(versatz)`: Geht zur Position `versatz` (`int`) in der Datei.
+  - Z. B. würde `await myfile.seek(0)` zum Anfang der Datei gehen.
+  - Das ist besonders dann nützlich, wenn Sie `await myfile.read()` einmal ausführen und dann diese Inhalte erneut auslesen müssen.
+- `close()`: Schließt die Datei.
 
 Da alle diese Methoden `async`hron sind, müssen Sie sie `await`en („erwarten“).
 
-Zum Beispiel können Sie innerhalb einer `async` *Pfadoperation-Funktion* den Inhalt wie folgt auslesen:
+Zum Beispiel können Sie innerhalb einer `async` _Pfadoperation-Funktion_ den Inhalt wie folgt auslesen:
 
 ```Python
 contents = await myfile.read()
 ```
 
-Wenn Sie sich innerhalb einer normalen `def`-*Pfadoperation-Funktion* befinden, können Sie direkt auf `UploadFile.file` zugreifen, zum Beispiel:
+Wenn Sie sich innerhalb einer normalen `def`-_Pfadoperation-Funktion_ befinden, können Sie direkt auf `UploadFile.file` zugreifen, zum Beispiel:
 
 ```Python
 contents = myfile.file.read()
@@ -207,7 +207,7 @@ Wenn Sie mehr über Formularfelder und ihre Kodierungen lesen möchten, besuchen
 
 /// warning | "Achtung"
 
-Sie können mehrere `File`- und `Form`-Parameter in einer *Pfadoperation* deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
+Sie können mehrere `File`- und `Form`-Parameter in einer _Pfadoperation_ deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
 
 Das ist keine Limitation von **ReadyAPI**, sondern Teil des HTTP-Protokolls.
 
@@ -220,7 +220,7 @@ Sie können eine Datei optional machen, indem Sie Standard-Typannotationen verwe
 //// tab | Python 3.10+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py310.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ Sie können eine Datei optional machen, indem Sie Standard-Typannotationen verwe
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py39.py!}
 ```
 
 ////
@@ -236,7 +236,7 @@ Sie können eine Datei optional machen, indem Sie Standard-Typannotationen verwe
 //// tab | Python 3.8+
 
 ```Python hl_lines="10  18"
-{!> ../../../docs_src/request_files/tutorial001_02_an.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an.py!}
 ```
 
 ////
@@ -250,7 +250,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="7  15"
-{!> ../../../docs_src/request_files/tutorial001_02_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_py310.py!}
 ```
 
 ////
@@ -264,7 +264,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02.py!}
+{!> ../../docs_src/request_files/tutorial001_02.py!}
 ```
 
 ////
@@ -276,7 +276,7 @@ Sie können auch `File()` zusammen mit `UploadFile` verwenden, um zum Beispiel z
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  15"
-{!> ../../../docs_src/request_files/tutorial001_03_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an_py39.py!}
 ```
 
 ////
@@ -284,7 +284,7 @@ Sie können auch `File()` zusammen mit `UploadFile` verwenden, um zum Beispiel z
 //// tab | Python 3.8+
 
 ```Python hl_lines="8  14"
-{!> ../../../docs_src/request_files/tutorial001_03_an.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an.py!}
 ```
 
 ////
@@ -298,7 +298,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="7  13"
-{!> ../../../docs_src/request_files/tutorial001_03.py!}
+{!> ../../docs_src/request_files/tutorial001_03.py!}
 ```
 
 ////
@@ -314,7 +314,7 @@ Um das zu machen, deklarieren Sie eine Liste von `bytes` oder `UploadFile`s:
 //// tab | Python 3.9+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -322,7 +322,7 @@ Um das zu machen, deklarieren Sie eine Liste von `bytes` oder `UploadFile`s:
 //// tab | Python 3.8+
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/request_files/tutorial002_an.py!}
+{!> ../../docs_src/request_files/tutorial002_an.py!}
 ```
 
 ////
@@ -336,7 +336,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/request_files/tutorial002_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_py39.py!}
 ```
 
 ////
@@ -350,7 +350,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002.py!}
+{!> ../../docs_src/request_files/tutorial002.py!}
 ```
 
 ////
@@ -372,7 +372,7 @@ Und so wie zuvor können Sie `File()` verwenden, um zusätzliche Parameter zu se
 //// tab | Python 3.9+
 
 ```Python hl_lines="11  18-20"
-{!> ../../../docs_src/request_files/tutorial003_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -380,7 +380,7 @@ Und so wie zuvor können Sie `File()` verwenden, um zusätzliche Parameter zu se
 //// tab | Python 3.8+
 
 ```Python hl_lines="12  19-21"
-{!> ../../../docs_src/request_files/tutorial003_an.py!}
+{!> ../../docs_src/request_files/tutorial003_an.py!}
 ```
 
 ////
@@ -394,7 +394,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="9  16"
-{!> ../../../docs_src/request_files/tutorial003_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_py39.py!}
 ```
 
 ////
@@ -408,7 +408,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="11  18"
-{!> ../../../docs_src/request_files/tutorial003.py!}
+{!> ../../docs_src/request_files/tutorial003.py!}
 ```
 
 ////

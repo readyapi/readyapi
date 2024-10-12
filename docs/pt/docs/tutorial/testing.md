@@ -12,7 +12,7 @@ Com ele, você pode usar o <a href="https://docs.pytest.org/" class="external-li
 
 Para usar o `TestClient`, primeiro instale o <a href="https://www.python-httpx.org" class="external-link" target="_blank">`httpx`</a>.
 
-Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=_blank}, ativá-lo e instalá-lo, por exemplo:
+Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=\_blank}, ativá-lo e instalá-lo, por exemplo:
 
 ```console
 $ pip install httpx
@@ -31,7 +31,7 @@ Use o objeto `TestClient` da mesma forma que você faz com `httpx`.
 Escreva instruções `assert` simples com as expressões Python padrão que você precisa verificar (novamente, `pytest` padrão).
 
 ```Python hl_lines="2  12  15-18"
-{!../../../docs_src/app_testing/tutorial001.py!}
+{!../../docs_src/app_testing/tutorial001.py!}
 ```
 
 /// tip | "Dica"
@@ -54,7 +54,7 @@ Você também pode usar `from starlette.testclient import TestClient`.
 
 /// tip | "Dica"
 
-Se você quiser chamar funções `async` em seus testes além de enviar solicitações ao seu aplicativo ReadyAPI (por exemplo, funções de banco de dados assíncronas), dê uma olhada em [Testes assíncronos](../advanced/async-tests.md){.internal-link target=_blank} no tutorial avançado.
+Se você quiser chamar funções `async` em seus testes além de enviar solicitações ao seu aplicativo ReadyAPI (por exemplo, funções de banco de dados assíncronas), dê uma olhada em [Testes assíncronos](../advanced/async-tests.md){.internal-link target=\_blank} no tutorial avançado.
 
 ///
 
@@ -66,7 +66,7 @@ E seu aplicativo **ReadyAPI** também pode ser composto de vários arquivos/mód
 
 ### Arquivo do aplicativo **ReadyAPI**
 
-Digamos que você tenha uma estrutura de arquivo conforme descrito em [Aplicativos maiores](bigger-applications.md){.internal-link target=_blank}:
+Digamos que você tenha uma estrutura de arquivo conforme descrito em [Aplicativos maiores](bigger-applications.md){.internal-link target=\_blank}:
 
 ```
 .
@@ -77,16 +77,15 @@ Digamos que você tenha uma estrutura de arquivo conforme descrito em [Aplicativ
 
 No arquivo `main.py` você tem seu aplicativo **ReadyAPI**:
 
-
 ```Python
-{!../../../docs_src/app_testing/main.py!}
+{!../../docs_src/app_testing/main.py!}
 ```
 
 ### Arquivo de teste
 
 Então você poderia ter um arquivo `test_main.py` com seus testes. Ele poderia estar no mesmo pacote Python (o mesmo diretório com um arquivo `__init__.py`):
 
-``` hl_lines="5"
+```hl_lines="5"
 .
 ├── app
 │   ├── __init__.py
@@ -97,7 +96,7 @@ Então você poderia ter um arquivo `test_main.py` com seus testes. Ele poderia 
 Como esse arquivo está no mesmo pacote, você pode usar importações relativas para importar o objeto `app` do módulo `main` (`main.py`):
 
 ```Python hl_lines="3"
-{!../../../docs_src/app_testing/test_main.py!}
+{!../../docs_src/app_testing/test_main.py!}
 ```
 
 ...e ter o código para os testes como antes.
@@ -124,12 +123,12 @@ Ele tem uma operação `GET` que pode retornar um erro.
 
 Ele tem uma operação `POST` que pode retornar vários erros.
 
-Ambas as *operações de rotas* requerem um cabeçalho `X-Token`.
+Ambas as _operações de rotas_ requerem um cabeçalho `X-Token`.
 
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_an_py310/main.py!}
+{!> ../../docs_src/app_testing/app_b_an_py310/main.py!}
 ```
 
 ////
@@ -137,7 +136,7 @@ Ambas as *operações de rotas* requerem um cabeçalho `X-Token`.
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_an_py39/main.py!}
+{!> ../../docs_src/app_testing/app_b_an_py39/main.py!}
 ```
 
 ////
@@ -145,7 +144,7 @@ Ambas as *operações de rotas* requerem um cabeçalho `X-Token`.
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_an/main.py!}
+{!> ../../docs_src/app_testing/app_b_an/main.py!}
 ```
 
 ////
@@ -159,7 +158,7 @@ Prefira usar a versão `Annotated` se possível.
 ///
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_py310/main.py!}
+{!> ../../docs_src/app_testing/app_b_py310/main.py!}
 ```
 
 ////
@@ -173,7 +172,7 @@ Prefira usar a versão `Annotated` se possível.
 ///
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/main.py!}
+{!> ../../docs_src/app_testing/app_b/main.py!}
 ```
 
 ////
@@ -183,7 +182,7 @@ Prefira usar a versão `Annotated` se possível.
 Você pode então atualizar `test_main.py` com os testes estendidos:
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/test_main.py!}
+{!> ../../docs_src/app_testing/app_b/test_main.py!}
 ```
 
 Sempre que você precisar que o cliente passe informações na requisição e não souber como, você pode pesquisar (no Google) como fazer isso no `httpx`, ou até mesmo como fazer isso com `requests`, já que o design do HTTPX é baseado no design do Requests.
@@ -192,11 +191,11 @@ Depois é só fazer o mesmo nos seus testes.
 
 Por exemplo:
 
-* Para passar um parâmetro *path* ou *query*, adicione-o à própria URL.
-* Para passar um corpo JSON, passe um objeto Python (por exemplo, um `dict`) para o parâmetro `json`.
-* Se você precisar enviar *Dados de Formulário* em vez de JSON, use o parâmetro `data`.
-* Para passar *headers*, use um `dict` no parâmetro `headers`.
-* Para *cookies*, um `dict` no parâmetro `cookies`.
+- Para passar um parâmetro _path_ ou _query_, adicione-o à própria URL.
+- Para passar um corpo JSON, passe um objeto Python (por exemplo, um `dict`) para o parâmetro `json`.
+- Se você precisar enviar _Dados de Formulário_ em vez de JSON, use o parâmetro `data`.
+- Para passar _headers_, use um `dict` no parâmetro `headers`.
+- Para _cookies_, um `dict` no parâmetro `cookies`.
 
 Para mais informações sobre como passar dados para o backend (usando `httpx` ou `TestClient`), consulte a <a href="https://www.python-httpx.org" class="external-link" target="_blank">documentação do HTTPX</a>.
 
@@ -204,7 +203,7 @@ Para mais informações sobre como passar dados para o backend (usando `httpx` o
 
 Observe que o `TestClient` recebe dados que podem ser convertidos para JSON, não para modelos Pydantic.
 
-Se você tiver um modelo Pydantic em seu teste e quiser enviar seus dados para o aplicativo durante o teste, poderá usar o `jsonable_encoder` descrito em [Codificador compatível com JSON](encoder.md){.internal-link target=_blank}.
+Se você tiver um modelo Pydantic em seu teste e quiser enviar seus dados para o aplicativo durante o teste, poderá usar o `jsonable_encoder` descrito em [Codificador compatível com JSON](encoder.md){.internal-link target=\_blank}.
 
 ///
 
@@ -212,7 +211,7 @@ Se você tiver um modelo Pydantic em seu teste e quiser enviar seus dados para o
 
 Depois disso, você só precisa instalar o `pytest`.
 
-Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=_blank}, ativá-lo e instalá-lo, por exemplo:
+Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=\_blank}, ativá-lo e instalá-lo, por exemplo:
 
 <div class="termy">
 

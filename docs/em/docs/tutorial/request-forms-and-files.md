@@ -13,7 +13,7 @@
 ## 🗄 `File` &amp; `Form`
 
 ```Python hl_lines="1"
-{!../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 ## 🔬 `File` &amp; `Form` 🔢
@@ -21,7 +21,7 @@
 ✍ 📁 &amp; 📨 🔢 🎏 🌌 👆 🔜 `Body` ⚖️ `Query`:
 
 ```Python hl_lines="8"
-{!../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 📁 &amp; 📨 🏑 🔜 📂 📨 📊 &amp; 👆 🔜 📨 📁 &amp; 📨 🏑.
@@ -30,7 +30,7 @@
 
 /// warning
 
-👆 💪 📣 💗 `File` &amp; `Form` 🔢 *➡ 🛠️*, ✋️ 👆 💪 🚫 📣 `Body` 🏑 👈 👆 ⌛ 📨 🎻, 📨 🔜 ✔️ 💪 🗜 ⚙️ `multipart/form-data` ↩️ `application/json`.
+👆 💪 📣 💗 `File` &amp; `Form` 🔢 _➡ 🛠️_, ✋️ 👆 💪 🚫 📣 `Body` 🏑 👈 👆 ⌛ 📨 🎻, 📨 🔜 ✔️ 💪 🗜 ⚙️ `multipart/form-data` ↩️ `application/json`.
 
 👉 🚫 🚫 **ReadyAPI**, ⚫️ 🍕 🇺🇸🔍 🛠️.
 

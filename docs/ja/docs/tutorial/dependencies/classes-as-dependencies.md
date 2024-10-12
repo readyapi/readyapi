@@ -7,10 +7,10 @@
 前の例では、依存関係（"dependable"）から`dict`を返していました:
 
 ```Python hl_lines="9"
-{!../../../docs_src/dependencies/tutorial001.py!}
+{!../../docs_src/dependencies/tutorial001.py!}
 ```
 
-しかし、*path operation関数*のパラメータ`commons`に`dict`が含まれています。
+しかし、*path operation 関数*のパラメータ`commons`に`dict`が含まれています。
 
 また、エディタは`dict`のキーと値の型を知ることができないため、多くのサポート（補完のような）を提供することができません。
 
@@ -24,7 +24,7 @@
 
 重要なのは、依存関係が「呼び出し可能」なものであることです。
 
-Pythonにおける「**呼び出し可能**」とは、Pythonが関数のように「呼び出す」ことができるものを指します。
+Python における「**呼び出し可能**」とは、Python が関数のように「呼び出す」ことができるものを指します。
 
 そのため、`something`オブジェクト（関数ではないかもしれませんが）を持っていて、それを次のように「呼び出す」（実行する）ことができるとします:
 
@@ -42,7 +42,7 @@ something(some_argument, some_keyword_argument="foo")
 
 ## 依存関係としてのクラス
 
-Pythonのクラスのインスタンスを作成する際に、同じ構文を使用していることに気づくかもしれません。
+Python のクラスのインスタンスを作成する際に、同じ構文を使用していることに気づくかもしれません。
 
 例えば:
 
@@ -59,50 +59,50 @@ fluffy = Cat(name="Mr Fluffy")
 
 そして`fluffy`を作成するために、`Cat`を「呼び出している」ことになります。
 
-そのため、Pythonのクラスもまた「呼び出し可能」です。
+そのため、Python のクラスもまた「呼び出し可能」です。
 
-そして、**ReadyAPI** では、Pythonのクラスを依存関係として使用することができます。
+そして、**ReadyAPI** では、Python のクラスを依存関係として使用することができます。
 
-ReadyAPIが実際にチェックしているのは、それが「呼び出し可能」（関数、クラス、その他なんでも）であり、パラメータが定義されているかどうかということです。
+ReadyAPI が実際にチェックしているのは、それが「呼び出し可能」（関数、クラス、その他なんでも）であり、パラメータが定義されているかどうかということです。
 
-**ReadyAPI** の依存関係として「呼び出し可能なもの」を渡すと、その「呼び出し可能なもの」のパラメータを解析し、サブ依存関係も含めて、*path operation関数*のパラメータと同じように処理します。
+**ReadyAPI** の依存関係として「呼び出し可能なもの」を渡すと、その「呼び出し可能なもの」のパラメータを解析し、サブ依存関係も含めて、*path operation 関数*のパラメータと同じように処理します。
 
-それは、パラメータが全くない呼び出し可能なものにも適用されます。パラメータのない*path operation関数*と同じように。
+それは、パラメータが全くない呼び出し可能なものにも適用されます。パラメータのない*path operation 関数*と同じように。
 
 そこで、上で紹介した依存関係の`common_parameters`を`CommonQueryParams`クラスに変更します:
 
 ```Python hl_lines="11 12 13 14 15"
-{!../../../docs_src/dependencies/tutorial002.py!}
+{!../../docs_src/dependencies/tutorial002.py!}
 ```
 
 クラスのインスタンスを作成するために使用される`__init__`メソッドに注目してください:
 
 ```Python hl_lines="12"
-{!../../../docs_src/dependencies/tutorial002.py!}
+{!../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ...以前の`common_parameters`と同じパラメータを持っています:
 
 ```Python hl_lines="8"
-{!../../../docs_src/dependencies/tutorial001.py!}
+{!../../docs_src/dependencies/tutorial001.py!}
 ```
 
 これらのパラメータは **ReadyAPI** が依存関係を「解決」するために使用するものです。
 
 どちらの場合も以下を持っています:
 
-* オプショナルの`q`クエリパラメータ。
-* `skip`クエリパラメータ、デフォルトは`0`。
-* `limit`クエリパラメータ、デフォルトは`100`。
+- オプショナルの`q`クエリパラメータ。
+- `skip`クエリパラメータ、デフォルトは`0`。
+- `limit`クエリパラメータ、デフォルトは`100`。
 
-どちらの場合も、データは変換され、検証され、OpenAPIスキーマなどで文書化されます。
+どちらの場合も、データは変換され、検証され、OpenAPI スキーマなどで文書化されます。
 
 ## 使用
 
 これで、このクラスを使用して依存関係を宣言することができます。
 
 ```Python hl_lines="19"
-{!../../../docs_src/dependencies/tutorial002.py!}
+{!../../docs_src/dependencies/tutorial002.py!}
 ```
 
 **ReadyAPI** は`CommonQueryParams`クラスを呼び出します。これにより、そのクラスの「インスタンス」が作成され、インスタンスはパラメータ`commons`として関数に渡されます。
@@ -123,7 +123,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ...は、**ReadyAPI** が依存関係を知るために実際に使用するものです。
 
-そこからReadyAPIが宣言されたパラメータを抽出し、それが実際にReadyAPIが呼び出すものです。
+そこから ReadyAPI が宣言されたパラメータを抽出し、それが実際に ReadyAPI が呼び出すものです。
 
 ---
 
@@ -133,7 +133,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 commons: CommonQueryParams ...
 ```
 
-...は **ReadyAPI** に対して特別な意味をもちません。ReadyAPIはデータ変換や検証などには使用しません（それらのためには`= Depends(CommonQueryParams)`を使用しています）。
+...は **ReadyAPI** に対して特別な意味をもちません。ReadyAPI はデータ変換や検証などには使用しません（それらのためには`= Depends(CommonQueryParams)`を使用しています）。
 
 実際には以下のように書けばいいだけです:
 
@@ -144,7 +144,7 @@ commons = Depends(CommonQueryParams)
 以下にあるように:
 
 ```Python hl_lines="19"
-{!../../../docs_src/dependencies/tutorial003.py!}
+{!../../docs_src/dependencies/tutorial003.py!}
 ```
 
 しかし、型を宣言することは推奨されています。そうすれば、エディタは`commons`のパラメータとして何が渡されるかを知ることができ、コードの補完や型チェックなどを行うのに役立ちます:
@@ -180,7 +180,7 @@ commons: CommonQueryParams = Depends()
 同じ例では以下のようになります:
 
 ```Python hl_lines="19"
-{!../../../docs_src/dependencies/tutorial004.py!}
+{!../../docs_src/dependencies/tutorial004.py!}
 ```
 
 ...そして **ReadyAPI** は何をすべきか知っています。

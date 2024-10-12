@@ -70,24 +70,23 @@ Por usá-los, você pode ter vantagens de todas essas ferramentas baseadas nos p
 
 OpenAPI define os seguintes esquemas de segurança:
 
-* `apiKey`: uma chave específica de aplicação que pode vir de:
-    * Um parâmetro query.
-    * Um header.
-    * Um cookie.
-* `http`: padrão HTTP de sistemas autenticação, incluindo:
-    * `bearer`: um header de `Authorization` com valor de `Bearer` adicionado de um token. Isso é herança do OAuth2.
-    * HTTP Basic authentication.
-    * HTTP Digest, etc.
-* `oauth2`: todas as formas do OAuth2 para lidar com segurança (chamados "fluxos").
-    * Vários desses fluxos são apropriados para construir um provedor de autenticação OAuth2 (como Google, Facebook, Twitter, GitHub, etc):
-        * `implicit`
-        * `clientCredentials`
-        * `authorizationCode`
-    * Mas existe um “fluxo” específico que pode ser perfeitamente usado para resolver autenticação diretamente na mesma aplicação:
-        * `password`: alguns dos próximos capítulos tratarão disso.
-* `openIdConnect`: tem uma forma para definir como descobrir automaticamente o dado da autenticação OAuth2.
-    * Essa descoberta automática é o que é definido na especificação OpenID Connect.
-
+- `apiKey`: uma chave específica de aplicação que pode vir de:
+  - Um parâmetro query.
+  - Um header.
+  - Um cookie.
+- `http`: padrão HTTP de sistemas autenticação, incluindo:
+  - `bearer`: um header de `Authorization` com valor de `Bearer` adicionado de um token. Isso é herança do OAuth2.
+  - HTTP Basic authentication.
+  - HTTP Digest, etc.
+- `oauth2`: todas as formas do OAuth2 para lidar com segurança (chamados "fluxos").
+  - Vários desses fluxos são apropriados para construir um provedor de autenticação OAuth2 (como Google, Facebook, Twitter, GitHub, etc):
+    - `implicit`
+    - `clientCredentials`
+    - `authorizationCode`
+  - Mas existe um “fluxo” específico que pode ser perfeitamente usado para resolver autenticação diretamente na mesma aplicação:
+    - `password`: alguns dos próximos capítulos tratarão disso.
+- `openIdConnect`: tem uma forma para definir como descobrir automaticamente o dado da autenticação OAuth2.
+  - Essa descoberta automática é o que é definido na especificação OpenID Connect.
 
 /// tip | "Dica"
 

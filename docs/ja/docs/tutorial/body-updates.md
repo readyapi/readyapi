@@ -2,12 +2,12 @@
 
 ## `PUT`による置換での更新
 
-項目を更新するには<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT" class="external-link" target="_blank">HTTPの`PUT`</a>操作を使用することができます。
+項目を更新するには<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT" class="external-link" target="_blank">HTTP の`PUT`</a>操作を使用することができます。
 
-`jsonable_encoder`を用いて、入力データをJSON形式で保存できるデータに変換することができます（例：NoSQLデータベース）。例えば、`datetime`を`str`に変換します。
+`jsonable_encoder`を用いて、入力データを JSON 形式で保存できるデータに変換することができます（例：NoSQL データベース）。例えば、`datetime`を`str`に変換します。
 
 ```Python hl_lines="30 31 32 33 34 35"
-{!../../../docs_src/body_updates/tutorial001.py!}
+{!../../docs_src/body_updates/tutorial001.py!}
 ```
 
 既存のデータを置き換えるべきデータを受け取るために`PUT`は使用されます。
@@ -30,7 +30,7 @@
 
 ## `PATCH`による部分的な更新
 
-また、<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">HTTPの`PATCH`</a>操作でデータを*部分的に*更新することもできます。
+また、<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">HTTP の`PATCH`</a>操作でデータを*部分的に*更新することもできます。
 
 つまり、更新したいデータだけを送信して、残りはそのままにしておくことができます。
 
@@ -46,9 +46,9 @@
 
 ///
 
-### Pydanticの`exclude_unset`パラメータの使用
+### Pydantic の`exclude_unset`パラメータの使用
 
-部分的な更新を受け取りたい場合は、Pydanticモデルの`.dict()`の`exclude_unset`パラメータを使用すると非常に便利です。
+部分的な更新を受け取りたい場合は、Pydantic モデルの`.dict()`の`exclude_unset`パラメータを使用すると非常に便利です。
 
 `item.dict(exclude_unset=True)`のように。
 
@@ -57,41 +57,41 @@
 これを使うことで、デフォルト値を省略して、設定された（リクエストで送られた）データのみを含む`dict`を生成することができます:
 
 ```Python hl_lines="34"
-{!../../../docs_src/body_updates/tutorial002.py!}
+{!../../docs_src/body_updates/tutorial002.py!}
 ```
 
-### Pydanticの`update`パラメータ
+### Pydantic の`update`パラメータ
 
 ここで、`.copy()`を用いて既存のモデルのコピーを作成し、`update`パラメータに更新するデータを含む`dict`を渡すことができます。
 
 `stored_item_model.copy(update=update_data)`のように:
 
 ```Python hl_lines="35"
-{!../../../docs_src/body_updates/tutorial002.py!}
+{!../../docs_src/body_updates/tutorial002.py!}
 ```
 
 ### 部分的更新のまとめ
 
 まとめると、部分的な更新を適用するには、次のようにします:
 
-* (オプションで)`PUT`の代わりに`PATCH`を使用します。
-* 保存されているデータを取得します。
-* そのデータをPydanticモデルにいれます。
-* 入力モデルからデフォルト値を含まない`dict`を生成します（`exclude_unset`を使用します）。
-    * この方法では、モデル内のデフォルト値ですでに保存されている値を上書きするのではなく、ユーザーが実際に設定した値のみを更新することができます。
-* 保存されているモデルのコピーを作成し、受け取った部分的な更新で属性を更新します（`update`パラメータを使用します）。
-* コピーしたモデルをDBに保存できるものに変換します（例えば、`jsonable_encoder`を使用します）。
-    * これはモデルの`.dict()`メソッドを再度利用することに匹敵しますが、値をJSONに変換できるデータ型、例えば`datetime`を`str`に変換します。
-* データをDBに保存します。
-* 更新されたモデルを返します。
+- (オプションで)`PUT`の代わりに`PATCH`を使用します。
+- 保存されているデータを取得します。
+- そのデータを Pydantic モデルにいれます。
+- 入力モデルからデフォルト値を含まない`dict`を生成します（`exclude_unset`を使用します）。
+  - この方法では、モデル内のデフォルト値ですでに保存されている値を上書きするのではなく、ユーザーが実際に設定した値のみを更新することができます。
+- 保存されているモデルのコピーを作成し、受け取った部分的な更新で属性を更新します（`update`パラメータを使用します）。
+- コピーしたモデルを DB に保存できるものに変換します（例えば、`jsonable_encoder`を使用します）。
+  - これはモデルの`.dict()`メソッドを再度利用することに匹敵しますが、値を JSON に変換できるデータ型、例えば`datetime`を`str`に変換します。
+- データを DB に保存します。
+- 更新されたモデルを返します。
 
 ```Python hl_lines="30 31 32 33 34 35 36 37"
-{!../../../docs_src/body_updates/tutorial002.py!}
+{!../../docs_src/body_updates/tutorial002.py!}
 ```
 
 /// tip | "豆知識"
 
-実際には、HTTPの`PUT`操作でも同じテクニックを使用することができます。
+実際には、HTTP の`PUT`操作でも同じテクニックを使用することができます。
 
 しかし、これらのユースケースのために作成されたので、ここでの例では`PATCH`を使用しています。
 
@@ -103,6 +103,6 @@
 
 そのため、すべての属性を省略できる部分的な変更を受け取りたい場合は、すべての属性をオプションとしてマークしたモデルを用意する必要があります（デフォルト値または`None`を使用して）。
 
-**更新** のためのオプション値がすべて設定されているモデルと、**作成** のための必須値が設定されているモデルを区別するには、[追加モデル](extra-models.md){.internal-link target=_blank}で説明されている考え方を利用することができます。
+**更新** のためのオプション値がすべて設定されているモデルと、**作成** のための必須値が設定されているモデルを区別するには、[追加モデル](extra-models.md){.internal-link target=\_blank}で説明されている考え方を利用することができます。
 
 ///

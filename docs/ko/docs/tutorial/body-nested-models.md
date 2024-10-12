@@ -1,12 +1,13 @@
 # 본문 - 중첩 모델
 
 **ReadyAPI**를 이용하면 (Pydantic 덕분에) 단독으로 깊이 중첩된 모델을 정의, 검증, 문서화하며 사용할 수 있습니다.
+
 ## 리스트 필드
 
 어트리뷰트를 서브타입으로 정의할 수 있습니다. 예를 들어 파이썬 `list`는:
 
 ```Python hl_lines="14"
-{!../../../docs_src/body_nested_models/tutorial001.py!}
+{!../../docs_src/body_nested_models/tutorial001.py!}
 ```
 
 이는 `tags`를 항목 리스트로 만듭니다. 각 항목의 타입을 선언하지 않더라도요.
@@ -20,15 +21,15 @@
 먼저, 파이썬 표준 `typing` 모듈에서 `List`를 임포트합니다:
 
 ```Python hl_lines="1"
-{!../../../docs_src/body_nested_models/tutorial002.py!}
+{!../../docs_src/body_nested_models/tutorial002.py!}
 ```
 
 ### 타입 매개변수로 `List` 선언
 
 `list`, `dict`, `tuple`과 같은 타입 매개변수(내부 타입)를 갖는 타입을 선언하려면:
 
-* `typing` 모듈에서 임포트
-* 대괄호를 사용하여 "타입 매개변수"로 내부 타입 전달: `[` 및 `]`
+- `typing` 모듈에서 임포트
+- 대괄호를 사용하여 "타입 매개변수"로 내부 타입 전달: `[` 및 `]`
 
 ```Python
 from typing import List
@@ -43,7 +44,7 @@ my_list: List[str]
 마찬가지로 예제에서 `tags`를 구체적으로 "문자열의 리스트"로 만들 수 있습니다:
 
 ```Python hl_lines="14"
-{!../../../docs_src/body_nested_models/tutorial002.py!}
+{!../../docs_src/body_nested_models/tutorial002.py!}
 ```
 
 ## 집합 타입
@@ -55,7 +56,7 @@ my_list: List[str]
 그렇다면 `Set`을 임포트 하고 `tags`를 `str`의 `set`으로 선언할 수 있습니다:
 
 ```Python hl_lines="1  14"
-{!../../../docs_src/body_nested_models/tutorial003.py!}
+{!../../docs_src/body_nested_models/tutorial003.py!}
 ```
 
 덕분에 중복 데이터가 있는 요청을 수신하더라도 고유한 항목들의 집합으로 변환됩니다.
@@ -79,7 +80,7 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 예를 들어, `Image` 모델을 선언할 수 있습니다:
 
 ```Python hl_lines="9-11"
-{!../../../docs_src/body_nested_models/tutorial004.py!}
+{!../../docs_src/body_nested_models/tutorial004.py!}
 ```
 
 ### 서브모듈을 타입으로 사용
@@ -87,7 +88,7 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 그리고 어트리뷰트의 타입으로 사용할 수 있습니다:
 
 ```Python hl_lines="20"
-{!../../../docs_src/body_nested_models/tutorial004.py!}
+{!../../docs_src/body_nested_models/tutorial004.py!}
 ```
 
 이는 **ReadyAPI**가 다음과 유사한 본문을 기대한다는 것을 의미합니다:
@@ -108,10 +109,10 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 
 다시 한번, **ReadyAPI**를 사용하여 해당 선언을 함으로써 얻는 것은:
 
-* 중첩 모델도 편집기 지원(자동완성 등)
-* 데이터 변환
-* 데이터 검증
-* 자동 문서화
+- 중첩 모델도 편집기 지원(자동완성 등)
+- 데이터 변환
+- 데이터 검증
+- 자동 문서화
 
 ## 특별한 타입과 검증
 
@@ -122,7 +123,7 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 예를 들어 `Image` 모델 안에 `url` 필드를 `str` 대신 Pydantic의 `HttpUrl`로 선언할 수 있습니다:
 
 ```Python hl_lines="4  10"
-{!../../../docs_src/body_nested_models/tutorial005.py!}
+{!../../docs_src/body_nested_models/tutorial005.py!}
 ```
 
 이 문자열이 유효한 URL인지 검사하고 JSON 스키마/OpenAPI로 문서화 됩니다.
@@ -132,7 +133,7 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 `list`, `set` 등의 서브타입으로 Pydantic 모델을 사용할 수도 있습니다:
 
 ```Python hl_lines="20"
-{!../../../docs_src/body_nested_models/tutorial006.py!}
+{!../../docs_src/body_nested_models/tutorial006.py!}
 ```
 
 아래와 같은 JSON 본문으로 예상(변환, 검증, 문서화 등을)합니다:
@@ -172,7 +173,7 @@ Pydantic 모델의 각 어트리뷰트는 타입을 갖습니다.
 단독으로 깊게 중첩된 모델을 정의할 수 있습니다:
 
 ```Python hl_lines="9  14  20  23  27"
-{!../../../docs_src/body_nested_models/tutorial007.py!}
+{!../../docs_src/body_nested_models/tutorial007.py!}
 ```
 
 /// info | "정보"
@@ -192,7 +193,7 @@ images: List[Image]
 이를 아래처럼:
 
 ```Python hl_lines="15"
-{!../../../docs_src/body_nested_models/tutorial008.py!}
+{!../../docs_src/body_nested_models/tutorial008.py!}
 ```
 
 ## 어디서나 편집기 지원
@@ -224,7 +225,7 @@ Pydantic 모델 대신에 `dict`를 직접 사용하여 작업할 경우, 이러
 이 경우, `float` 값을 가진 `int` 키가 있는 모든 `dict`를 받아들입니다:
 
 ```Python hl_lines="15"
-{!../../../docs_src/body_nested_models/tutorial009.py!}
+{!../../docs_src/body_nested_models/tutorial009.py!}
 ```
 
 /// tip | "팁"
@@ -245,8 +246,8 @@ JSON은 오직 `str`형 키만 지원한다는 것을 염두에 두세요.
 
 물론 아래의 이점도 있습니다:
 
-* 편집기 지원 (자동완성이 어디서나!)
-* 데이터 변환 (일명 파싱/직렬화)
-* 데이터 검증
-* 스키마 문서화
-* 자동 문서
+- 편집기 지원 (자동완성이 어디서나!)
+- 데이터 변환 (일명 파싱/직렬화)
+- 데이터 검증
+- 스키마 문서화
+- 자동 문서

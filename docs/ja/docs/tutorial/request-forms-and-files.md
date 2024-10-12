@@ -13,7 +13,7 @@
 ## `File`と`Form`のインポート
 
 ```Python hl_lines="1"
-{!../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 ## `File`と`Form`のパラメータの定義
@@ -21,7 +21,7 @@
 ファイルやフォームのパラメータは`Body`や`Query`の場合と同じように作成します:
 
 ```Python hl_lines="8"
-{!../../../docs_src/request_forms_and_files/tutorial001.py!}
+{!../../docs_src/request_forms_and_files/tutorial001.py!}
 ```
 
 ファイルとフォームフィールドがフォームデータとしてアップロードされ、ファイルとフォームフィールドを受け取ります。
@@ -30,9 +30,9 @@
 
 /// warning | "注意"
 
-*path operation*で複数の`File`と`Form`パラメータを宣言することができますが、JSONとして受け取ることを期待している`Body`フィールドを宣言することはできません。なぜなら、リクエストのボディは`application/json`の代わりに`multipart/form-data`を使ってエンコードされているからです。
+*path operation*で複数の`File`と`Form`パラメータを宣言することができますが、JSON として受け取ることを期待している`Body`フィールドを宣言することはできません。なぜなら、リクエストのボディは`application/json`の代わりに`multipart/form-data`を使ってエンコードされているからです。
 
-これは **ReadyAPI** の制限ではなく、HTTPプロトコルの一部です。
+これは **ReadyAPI** の制限ではなく、HTTP プロトコルの一部です。
 
 ///
 

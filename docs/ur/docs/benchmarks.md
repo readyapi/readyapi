@@ -1,5 +1,6 @@
 # بینچ مارکس
-انڈیپنڈنٹ ٹیک امپور بینچ مارک **READYAPI** Uvicorn کے تحت چلنے والی ایپلی کیشنز کو <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank"> ایک تیز رفتار Python فریم ورک میں سے ایک </a> ، صرف Starlette اور Uvicorn کے نیچے ( READYAPI  کے ذریعہ اندرونی طور پر استعمال کیا جاتا ہے ) (*)
+
+انڈیپنڈنٹ ٹیک امپور بینچ مارک **READYAPI** Uvicorn کے تحت چلنے والی ایپلی کیشنز کو <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank"> ایک تیز رفتار Python فریم ورک میں سے ایک </a> ، صرف Starlette اور Uvicorn کے نیچے ( READYAPI کے ذریعہ اندرونی طور پر استعمال کیا جاتا ہے ) (\*)
 
 لیکن جب بینچ مارک اور موازنہ کی جانچ پڑتال کرتے ہو تو آپ کو مندرجہ ذیل بات ذہن میں رکھنی چاہئے.
 

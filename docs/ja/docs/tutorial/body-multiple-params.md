@@ -9,7 +9,7 @@
 また、デフォルトの`None`を設定することで、ボディパラメータをオプションとして宣言することもできます:
 
 ```Python hl_lines="19 20 21"
-{!../../../docs_src/body_multiple_params/tutorial001.py!}
+{!../../docs_src/body_multiple_params/tutorial001.py!}
 ```
 
 /// note | "備考"
@@ -20,7 +20,7 @@
 
 ## 複数のボディパラメータ
 
-上述の例では、*path operations*は`item`の属性を持つ以下のようなJSONボディを期待していました:
+上述の例では、*path operations*は`item`の属性を持つ以下のような JSON ボディを期待していました:
 
 ```JSON
 {
@@ -34,10 +34,10 @@
 しかし、`item`と`user`のように複数のボディパラメータを宣言することもできます:
 
 ```Python hl_lines="22"
-{!../../../docs_src/body_multiple_params/tutorial002.py!}
+{!../../docs_src/body_multiple_params/tutorial002.py!}
 ```
 
-この場合、**ReadyAPI**は関数内に複数のボディパラメータ（Pydanticモデルである２つのパラメータ）があることに気付きます。
+この場合、**ReadyAPI**は関数内に複数のボディパラメータ（Pydantic モデルである２つのパラメータ）があることに気付きます。
 
 そのため、パラメータ名をボディのキー（フィールド名）として使用し、以下のようなボディを期待しています:
 
@@ -64,7 +64,7 @@
 
 **ReadyAPI** はリクエストから自動で変換を行い、パラメータ`item`が特定の内容を受け取り、`user`も同じように特定の内容を受け取ります。
 
-複合データの検証を行い、OpenAPIスキーマや自動ドキュメントのように文書化してくれます。
+複合データの検証を行い、OpenAPI スキーマや自動ドキュメントのように文書化してくれます。
 
 ## ボディ内の単数値
 
@@ -76,13 +76,11 @@
 
 しかし、`Body`を使用して、**ReadyAPI** に別のボディキーとして扱うように指示することができます:
 
-
 ```Python hl_lines="23"
-{!../../../docs_src/body_multiple_params/tutorial003.py!}
+{!../../docs_src/body_multiple_params/tutorial003.py!}
 ```
 
 この場合、**ReadyAPI** は以下のようなボディを期待します:
-
 
 ```JSON
 {
@@ -115,7 +113,7 @@ q: str = None
 以下において:
 
 ```Python hl_lines="27"
-{!../../../docs_src/body_multiple_params/tutorial004.py!}
+{!../../docs_src/body_multiple_params/tutorial004.py!}
 ```
 
 /// info | "情報"
@@ -126,7 +124,7 @@ q: str = None
 
 ## 単一のボディパラメータの埋め込み
 
-Pydanticモデル`Item`のボディパラメータ`item`を1つだけ持っているとしましょう。
+Pydantic モデル`Item`のボディパラメータ`item`を 1 つだけ持っているとしましょう。
 
 デフォルトでは、**ReadyAPI**はそのボディを直接期待します。
 
@@ -139,7 +137,7 @@ item: Item = Body(..., embed=True)
 以下において:
 
 ```Python hl_lines="17"
-{!../../../docs_src/body_multiple_params/tutorial005.py!}
+{!../../docs_src/body_multiple_params/tutorial005.py!}
 ```
 
 この場合、**ReadyAPI** は以下のようなボディを期待します:
@@ -168,7 +166,7 @@ item: Item = Body(..., embed=True)
 
 ## まとめ
 
-リクエストが単一のボディしか持てない場合でも、*path operation関数*に複数のボディパラメータを追加することができます。
+リクエストが単一のボディしか持てない場合でも、*path operation 関数*に複数のボディパラメータを追加することができます。
 
 しかし、**ReadyAPI** はそれを処理し、関数内の正しいデータを与え、*path operation*内の正しいスキーマを検証し、文書化します。
 

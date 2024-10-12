@@ -3,7 +3,7 @@
 Fonksiyonda yol parametrelerinin parçası olmayan diğer tanımlamalar otomatik olarak "sorgu" parametresi olarak yorumlanır.
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial001.py!}
+{!../../docs_src/query_params/tutorial001.py!}
 ```
 
 Sorgu, bağlantıdaki `?` kısmından sonra gelen ve `&` işareti ile ayrılan anahtar-değer çiftlerinin oluşturduğu bir kümedir.
@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...sorgu parametreleri şunlardır:
 
-* `skip`: değeri `0`'dır
-* `limit`: değeri `10`'dır
+- `skip`: değeri `0`'dır
+- `limit`: değeri `10`'dır
 
 Parametreler bağlantının bir parçası oldukları için doğal olarak string olarak değerlendirilirler.
 
@@ -25,10 +25,10 @@ Fakat, Python tipleri ile tanımlandıkları zaman (yukarıdaki örnekte `int` o
 
 Yol parametreleri için geçerli olan her türlü işlem aynı şekilde sorgu parametreleri için de geçerlidir:
 
-* Editör desteği (şüphesiz)
-* Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">ayrıştırma</abbr>"
-* Veri doğrulama
-* Otomatik dokümantasyon
+- Editör desteği (şüphesiz)
+- Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">ayrıştırma</abbr>"
+- Veri doğrulama
+- Otomatik dokümantasyon
 
 ## Varsayılanlar
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 Fonksiyonunuzdaki parametre değerleri aşağıdaki gibi olacaktır:
 
-* `skip=20`: çünkü bağlantıda böyle tanımlandı.
-* `limit=10`: çünkü varsayılan değer buydu.
+- `skip=20`: çünkü bağlantıda böyle tanımlandı.
+- `limit=10`: çünkü varsayılan değer buydu.
 
 ## İsteğe Bağlı Parametreler
 
@@ -66,7 +66,7 @@ Aynı şekilde, varsayılan değerlerini `None` olarak atayarak isteğe bağlı 
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/query_params/tutorial002_py310.py!}
+{!> ../../docs_src/query_params/tutorial002_py310.py!}
 ```
 
 ////
@@ -74,7 +74,7 @@ Aynı şekilde, varsayılan değerlerini `None` olarak atayarak isteğe bağlı 
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/query_params/tutorial002.py!}
+{!> ../../docs_src/query_params/tutorial002.py!}
 ```
 
 ////
@@ -94,7 +94,7 @@ Aşağıda görüldüğü gibi dönüştürülmek üzere `bool` tipleri de tanı
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/query_params/tutorial003_py310.py!}
+{!> ../../docs_src/query_params/tutorial003_py310.py!}
 ```
 
 ////
@@ -102,7 +102,7 @@ Aşağıda görüldüğü gibi dönüştürülmek üzere `bool` tipleri de tanı
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/query_params/tutorial003.py!}
+{!> ../../docs_src/query_params/tutorial003.py!}
 ```
 
 ////
@@ -139,7 +139,6 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 veya adres, herhangi farklı bir harf varyasyonu içermesi durumuna rağmen (büyük harf, sadece baş harfi büyük kelime, vb.) fonksiyonunuz, `bool` tipli `short` parametresini `True` olarak algılayacaktır. Aksi halde `False` olarak algılanacaktır.
 
-
 ## Çoklu Yol ve Sorgu Parametreleri
 
 **ReadyAPI** neyin ne olduğunu ayırt edebileceğinden dolayı aynı anda birden fazla yol ve sorgu parametresi tanımlayabilirsiniz.
@@ -151,7 +150,7 @@ Ve parametreleri, herhangi bir sıraya koymanıza da gerek yoktur.
 //// tab | Python 3.10+
 
 ```Python hl_lines="6  8"
-{!> ../../../docs_src/query_params/tutorial004_py310.py!}
+{!> ../../docs_src/query_params/tutorial004_py310.py!}
 ```
 
 ////
@@ -159,7 +158,7 @@ Ve parametreleri, herhangi bir sıraya koymanıza da gerek yoktur.
 //// tab | Python 3.8+
 
 ```Python hl_lines="8  10"
-{!> ../../../docs_src/query_params/tutorial004.py!}
+{!> ../../docs_src/query_params/tutorial004.py!}
 ```
 
 ////
@@ -173,7 +172,7 @@ Parametre için belirli bir değer atamak istemeyip parametrenin sadece isteğe 
 Fakat, bir sorgu parametresini zorunlu yapmak istiyorsanız varsayılan bir değer atamamanız yeterli olacaktır:
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/query_params/tutorial005.py!}
+{!../../docs_src/query_params/tutorial005.py!}
 ```
 
 Burada `needy` parametresi `str` tipinden oluşan zorunlu bir sorgu parametresidir.
@@ -223,7 +222,7 @@ Ve elbette, bazı parametreleri zorunlu, bazılarını varsayılan değerli ve b
 //// tab | Python 3.10+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/query_params/tutorial006_py310.py!}
+{!> ../../docs_src/query_params/tutorial006_py310.py!}
 ```
 
 ////
@@ -231,19 +230,19 @@ Ve elbette, bazı parametreleri zorunlu, bazılarını varsayılan değerli ve b
 //// tab | Python 3.8+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/query_params/tutorial006.py!}
+{!> ../../docs_src/query_params/tutorial006.py!}
 ```
 
 ////
 
 Bu durumda, 3 tane sorgu parametresi var olacaktır:
 
-* `needy`, zorunlu bir `str`.
-* `skip`, varsayılan değeri `0` olan bir `int`.
-* `limit`, isteğe bağlı bir `int`.
+- `needy`, zorunlu bir `str`.
+- `skip`, varsayılan değeri `0` olan bir `int`.
+- `limit`, isteğe bağlı bir `int`.
 
 /// tip | "İpucu"
 
-Ayrıca, [Yol Parametrelerinde](path-params.md#on-tanml-degerler){.internal-link target=_blank} de kullanıldığı şekilde `Enum` sınıfından faydalanabilirsiniz.
+Ayrıca, [Yol Parametrelerinde](path-params.md#on-tanml-degerler){.internal-link target=\_blank} de kullanıldığı şekilde `Enum` sınıfından faydalanabilirsiniz.
 
 ///

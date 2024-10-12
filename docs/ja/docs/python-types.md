@@ -1,12 +1,12 @@
-# Pythonの型の紹介
+# Python の型の紹介
 
-**Python 3.6以降** では「型ヒント」オプションがサポートされています。
+**Python 3.6 以降** では「型ヒント」オプションがサポートされています。
 
-これらの **"型ヒント"** は変数の<abbr title="例: str, int, float, bool">型</abbr>を宣言することができる新しい構文です。（Python 3.6以降）
+これらの **"型ヒント"** は変数の<abbr title="例: str, int, float, bool">型</abbr>を宣言することができる新しい構文です。（Python 3.6 以降）
 
 変数に型を宣言することでエディターやツールがより良いサポートを提供することができます。
 
-ここではPythonの型ヒントについての **クイックチュートリアル/リフレッシュ** で、**ReadyAPI**でそれらを使用するために必要な最低限のことだけをカバーしています。...実際には本当に少ないです。
+ここでは Python の型ヒントについての **クイックチュートリアル/リフレッシュ** で、**ReadyAPI**でそれらを使用するために必要な最低限のことだけをカバーしています。...実際には本当に少ないです。
 
 **ReadyAPI** はすべてこれらの型ヒントに基づいており、多くの強みと利点を与えてくれます。
 
@@ -14,7 +14,7 @@
 
 /// note | "備考"
 
-もしあなたがPythonの専門家で、すでに型ヒントについてすべて知っているのであれば、次の章まで読み飛ばしてください。
+もしあなたが Python の専門家で、すでに型ヒントについてすべて知っているのであれば、次の章まで読み飛ばしてください。
 
 ///
 
@@ -23,7 +23,7 @@
 簡単な例から始めてみましょう:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 このプログラムを実行すると以下が出力されます:
@@ -34,12 +34,12 @@ John Doe
 
 この関数は以下のようなことを行います:
 
-* `first_name`と`last_name`を取得します。
-* `title()`を用いて、それぞれの最初の文字を大文字に変換します。
-* 真ん中にスペースを入れて<abbr title="次から次へと中身を入れて一つにまとめる">連結</abbr>します。
+- `first_name`と`last_name`を取得します。
+- `title()`を用いて、それぞれの最初の文字を大文字に変換します。
+- 真ん中にスペースを入れて<abbr title="次から次へと中身を入れて一つにまとめる">連結</abbr>します。
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### 編集
@@ -83,7 +83,7 @@ John Doe
 それが「型ヒント」です:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 これは、以下のようにデフォルト値を宣言するのと同じではありません:
@@ -113,7 +113,7 @@ John Doe
 この関数を見てください。すでに型ヒントを持っています:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 エディタは変数の型を知っているので、補完だけでなく、エラーチェックをすることもできます。
@@ -123,7 +123,7 @@ John Doe
 これで`age`を`str(age)`で文字列に変換して修正する必要があることがわかります:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## 型の宣言
@@ -134,24 +134,24 @@ John Doe
 
 ### 単純な型
 
-`str`だけでなく、Pythonの標準的な型すべてを宣言することができます。
+`str`だけでなく、Python の標準的な型すべてを宣言することができます。
 
 例えば、以下を使用可能です:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### 型パラメータを持つジェネリック型
 
 データ構造の中には、`dict`、`list`、`set`、そして`tuple`のように他の値を含むことができるものがあります。また内部の値も独自の型を持つことができます。
 
-これらの型や内部の型を宣言するには、Pythonの標準モジュール`typing`を使用します。
+これらの型や内部の型を宣言するには、Python の標準モジュール`typing`を使用します。
 
 これらの型ヒントをサポートするために特別に存在しています。
 
@@ -162,7 +162,7 @@ John Doe
 `typing`から`List`をインポートします（大文字の`L`を含む）:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 同じようにコロン（`:`）の構文で変数を宣言します。
@@ -172,7 +172,7 @@ John Doe
 リストはいくつかの内部の型を含む型なので、それらを角括弧で囲んでいます。
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 /// tip | "豆知識"
@@ -200,39 +200,39 @@ John Doe
 `tuple`と`set`の宣言も同様です:
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 つまり:
 
-* 変数`items_t`は`int`、`int`、`str`の3つの項目を持つ`tuple`です
+- 変数`items_t`は`int`、`int`、`str`の 3 つの項目を持つ`tuple`です
 
-* 変数`items_s`はそれぞれの項目が`bytes`型である`set`です。
+- 変数`items_s`はそれぞれの項目が`bytes`型である`set`です。
 
 #### `Dict`
 
-`dict`を宣言するためには、カンマ区切りで2つの型パラメータを渡します。
+`dict`を宣言するためには、カンマ区切りで 2 つの型パラメータを渡します。
 
 最初の型パラメータは`dict`のキーです。
 
 ２番目の型パラメータは`dict`の値です。
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 つまり:
 
-* 変数`prices`は`dict`であり:
-    * この`dict`のキーは`str`型です。（つまり、各項目の名前）
-    * この`dict`の値は`float`型です。（つまり、各項目の価格）
+- 変数`prices`は`dict`であり:
+  - この`dict`のキーは`str`型です。（つまり、各項目の名前）
+  - この`dict`の値は`float`型です。（つまり、各項目の価格）
 
 #### `Optional`
 
 また、`Optional`を使用して、変数が`str`のような型を持つことを宣言することもできますが、それは「オプション」であり、`None`にすることもできます。
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 ただの`str`の代わりに`Optional[str]`を使用することで、エディタは値が常に`str`であると仮定している場合に実際には`None`である可能性があるエラーを検出するのに役立ちます。
@@ -241,12 +241,12 @@ John Doe
 
 以下のように角括弧で型パラメータを取る型を:
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Optional`
-* ...など
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Optional`
+- ...など
 
 **ジェネリック型** または **ジェネリクス** と呼びます。
 
@@ -257,22 +257,22 @@ John Doe
 例えば、`Person`クラスという名前のクラスがあるとしましょう:
 
 ```Python hl_lines="1 2 3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 変数の型を`Person`として宣言することができます:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 そして、再び、すべてのエディタのサポートを得ることができます:
 
 <img src="https://readyapi.khulnasoft.com/img/python-types/image06.png">
 
-## Pydanticのモデル
+## Pydantic のモデル
 
-<a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> はデータ検証を行うためのPythonライブラリです。
+<a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> はデータ検証を行うための Python ライブラリです。
 
 データの「形」を属性付きのクラスとして宣言します。
 
@@ -282,21 +282,21 @@ John Doe
 
 また、その結果のオブジェクトですべてのエディタのサポートを受けることができます。
 
-Pydanticの公式ドキュメントから引用:
+Pydantic の公式ドキュメントから引用:
 
 ```Python
-{!../../../docs_src/python_types/tutorial011.py!}
+{!../../docs_src/python_types/tutorial011.py!}
 ```
 
 /// info | "情報"
 
-Pydanticについてより学びたい方は<a href="https://docs.pydantic.dev/" class="external-link" target="_blank">ドキュメントを参照してください</a>.
+Pydantic についてより学びたい方は<a href="https://docs.pydantic.dev/" class="external-link" target="_blank">ドキュメントを参照してください</a>.
 
 ///
 
-**ReadyAPI** はすべてPydanticをベースにしています。
+**ReadyAPI** はすべて Pydantic をベースにしています。
 
-すべてのことは[チュートリアル - ユーザーガイド](tutorial/index.md){.internal-link target=_blank}で実際に見ることができます。
+すべてのことは[チュートリアル - ユーザーガイド](tutorial/index.md){.internal-link target=\_blank}で実際に見ることができます。
 
 ## **ReadyAPI**での型ヒント
 
@@ -304,21 +304,21 @@ Pydanticについてより学びたい方は<a href="https://docs.pydantic.dev/"
 
 **ReadyAPI** では型ヒントを使って型パラメータを宣言すると以下のものが得られます:
 
-* **エディタサポート**.
-* **型チェック**.
+- **エディタサポート**.
+- **型チェック**.
 
 ...そして **ReadyAPI** は同じように宣言をすると、以下のことを行います:
 
-* **要件の定義**: リクエストパスパラメータ、クエリパラメータ、ヘッダー、ボディ、依存関係などから要件を定義します。
-* **データの変換**: リクエストのデータを必要な型に変換します。
-* **データの検証**: リクエストごとに:
-    * データが無効な場合にクライアントに返される **自動エラー** を生成します。
-* **ドキュメント** OpenAPIを使用したAPI:
-    * 自動的に対話型ドキュメントのユーザーインターフェイスで使用されます。
+- **要件の定義**: リクエストパスパラメータ、クエリパラメータ、ヘッダー、ボディ、依存関係などから要件を定義します。
+- **データの変換**: リクエストのデータを必要な型に変換します。
+- **データの検証**: リクエストごとに:
+  - データが無効な場合にクライアントに返される **自動エラー** を生成します。
+- **ドキュメント** OpenAPI を使用した API:
+  - 自動的に対話型ドキュメントのユーザーインターフェイスで使用されます。
 
-すべてが抽象的に聞こえるかもしれません。心配しないでください。 この全ての動作は [チュートリアル - ユーザーガイド](tutorial/index.md){.internal-link target=_blank}で見ることができます。
+すべてが抽象的に聞こえるかもしれません。心配しないでください。 この全ての動作は [チュートリアル - ユーザーガイド](tutorial/index.md){.internal-link target=\_blank}で見ることができます。
 
-重要なのは、Pythonの標準的な型を使うことで、（クラスやデコレータなどを追加するのではなく）１つの場所で **ReadyAPI** が多くの作業を代わりにやってくれているということです。
+重要なのは、Python の標準的な型を使うことで、（クラスやデコレータなどを追加するのではなく）１つの場所で **ReadyAPI** が多くの作業を代わりにやってくれているということです。
 
 /// info | "情報"
 

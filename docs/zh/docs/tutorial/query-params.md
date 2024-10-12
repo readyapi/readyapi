@@ -3,7 +3,7 @@
 声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial001.py!}
+{!../../docs_src/query_params/tutorial001.py!}
 ```
 
 查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。
@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ……查询参数为：
 
-* `skip`：值为 `0`
-* `limit`：值为 `10`
+- `skip`：值为 `0`
+- `limit`：值为 `10`
 
 这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。
 
@@ -25,10 +25,10 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 所有应用于路径参数的流程也适用于查询参数：
 
-* （显而易见的）编辑器支持
-* 数据<abbr title="将来自 HTTP 请求的字符串转换为 Python 数据类型">**解析**</abbr>
-* 数据校验
-* API 文档
+- （显而易见的）编辑器支持
+- 数据<abbr title="将来自 HTTP 请求的字符串转换为 Python 数据类型">**解析**</abbr>
+- 数据校验
+- API 文档
 
 ## 默认值
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 查询参数的值就是：
 
-* `skip=20`：在 URL 中设定的值
-* `limit=10`：使用默认值
+- `skip=20`：在 URL 中设定的值
+- `limit=10`：使用默认值
 
 ## 可选参数
 
@@ -66,7 +66,7 @@ http://127.0.0.1:8000/items/?skip=20
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/query_params/tutorial002_py310.py!}
+{!> ../../docs_src/query_params/tutorial002_py310.py!}
 ```
 
 ////
@@ -74,7 +74,7 @@ http://127.0.0.1:8000/items/?skip=20
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/query_params/tutorial002.py!}
+{!> ../../docs_src/query_params/tutorial002.py!}
 ```
 
 ////
@@ -99,11 +99,10 @@ ReadyAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 
 
 参数还可以声明为 `bool` 类型，ReadyAPI 会自动转换参数类型：
 
-
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/query_params/tutorial003_py310.py!}
+{!> ../../docs_src/query_params/tutorial003_py310.py!}
 ```
 
 ////
@@ -111,7 +110,7 @@ ReadyAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/query_params/tutorial003.py!}
+{!> ../../docs_src/query_params/tutorial003.py!}
 ```
 
 ////
@@ -148,7 +147,6 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。
 
-
 ## 多个路径和查询参数
 
 **ReadyAPI** 可以识别同时声明的多个路径参数和查询参数。
@@ -160,7 +158,7 @@ ReadyAPI 通过参数名进行检测：
 //// tab | Python 3.10+
 
 ```Python hl_lines="6 8"
-{!> ../../../docs_src/query_params/tutorial004_py310.py!}
+{!> ../../docs_src/query_params/tutorial004_py310.py!}
 ```
 
 ////
@@ -168,7 +166,7 @@ ReadyAPI 通过参数名进行检测：
 //// tab | Python 3.8+
 
 ```Python hl_lines="8 10"
-{!> ../../../docs_src/query_params/tutorial004.py!}
+{!> ../../docs_src/query_params/tutorial004.py!}
 ```
 
 ////
@@ -182,7 +180,7 @@ ReadyAPI 通过参数名进行检测：
 如果要把查询参数设置为**必选**，就不要声明默认值：
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/query_params/tutorial005.py!}
+{!../../docs_src/query_params/tutorial005.py!}
 ```
 
 这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。
@@ -230,7 +228,7 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 //// tab | Python 3.10+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/query_params/tutorial006_py310.py!}
+{!> ../../docs_src/query_params/tutorial006_py310.py!}
 ```
 
 ////
@@ -238,19 +236,19 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 //// tab | Python 3.8+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/query_params/tutorial006.py!}
+{!> ../../docs_src/query_params/tutorial006.py!}
 ```
 
 ////
 
 本例中有 3 个查询参数：
 
-* `needy`，必选的 `str` 类型参数
-* `skip`，默认值为 `0` 的 `int` 类型参数
-* `limit`，可选的 `int` 类型参数
+- `needy`，必选的 `str` 类型参数
+- `skip`，默认值为 `0` 的 `int` 类型参数
+- `limit`，可选的 `int` 类型参数
 
 /// tip | "提示"
 
-还可以像在[路径参数](path-params.md#_8){.internal-link target=_blank} 中那样使用 `Enum`。
+还可以像在[路径参数](path-params.md#_8){.internal-link target=\_blank} 中那样使用 `Enum`。
 
 ///

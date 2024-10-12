@@ -1,12 +1,12 @@
 # 📨 📨 🔗
 
-🕐❔ 👆 ✍ **ReadyAPI** *➡ 🛠️* 👆 💪 🛎 📨 🙆 📊 ⚪️➡️ ⚫️: `dict`, `list`, Pydantic 🏷, 💽 🏷, ♒️.
+🕐❔ 👆 ✍ **ReadyAPI** _➡ 🛠️_ 👆 💪 🛎 📨 🙆 📊 ⚪️➡️ ⚫️: `dict`, `list`, Pydantic 🏷, 💽 🏷, ♒️.
 
-🔢, **ReadyAPI** 🔜 🔁 🗜 👈 📨 💲 🎻 ⚙️ `jsonable_encoder` 🔬 [🎻 🔗 🔢](../tutorial/encoder.md){.internal-link target=_blank}.
+🔢, **ReadyAPI** 🔜 🔁 🗜 👈 📨 💲 🎻 ⚙️ `jsonable_encoder` 🔬 [🎻 🔗 🔢](../tutorial/encoder.md){.internal-link target=\_blank}.
 
 ⤴️, ⛅ 🎑, ⚫️ 🔜 🚮 👈 🎻-🔗 💽 (✅ `dict`) 🔘 `JSONResponse` 👈 🔜 ⚙️ 📨 📨 👩‍💻.
 
-✋️ 👆 💪 📨 `JSONResponse` 🔗 ⚪️➡️ 👆 *➡ 🛠️*.
+✋️ 👆 💪 📨 `JSONResponse` 🔗 ⚪️➡️ 👆 _➡ 🛠️_.
 
 ⚫️ 💪 ⚠, 🖼, 📨 🛃 🎚 ⚖️ 🍪.
 
@@ -35,7 +35,7 @@
 📚 💼, 👆 💪 ⚙️ `jsonable_encoder` 🗜 👆 📊 ⏭ 🚶‍♀️ ⚫️ 📨:
 
 ```Python hl_lines="6-7  21-22"
-{!../../../docs_src/response_directly/tutorial001.py!}
+{!../../docs_src/response_directly/tutorial001.py!}
 ```
 
 /// note | "📡 ℹ"
@@ -57,13 +57,13 @@
 👆 💪 🚮 👆 📂 🎚 🎻, 🚮 ⚫️ `Response`, &amp; 📨 ⚫️:
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ## 🗒
 
 🕐❔ 👆 📨 `Response` 🔗 🚮 📊 🚫 ✔, 🗜 (🎻), 🚫 📄 🔁.
 
-✋️ 👆 💪 📄 ⚫️ 🔬 [🌖 📨 🗄](additional-responses.md){.internal-link target=_blank}.
+✋️ 👆 💪 📄 ⚫️ 🔬 [🌖 📨 🗄](additional-responses.md){.internal-link target=\_blank}.
 
 👆 💪 👀 ⏪ 📄 ❔ ⚙️/📣 👉 🛃 `Response`Ⓜ ⏪ ✔️ 🏧 💽 🛠️, 🧾, ♒️.

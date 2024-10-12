@@ -1,13 +1,13 @@
 # デバッグ
 
-Visual Studio CodeやPyCharmなどを使用して、エディター上でデバッガーと連携できます。
+Visual Studio Code や PyCharm などを使用して、エディター上でデバッガーと連携できます。
 
 ## `uvicorn` の実行
 
-ReadyAPIアプリケーション上で、`uvicorn` を直接インポートして実行します:
+ReadyAPI アプリケーション上で、`uvicorn` を直接インポートして実行します:
 
 ```Python hl_lines="1  15"
-{!../../../docs_src/debugging/tutorial001.py!}
+{!../../docs_src/debugging/tutorial001.py!}
 ```
 
 ### `__name__ == "__main__"` について
@@ -42,7 +42,7 @@ $ python myapp.py
 
 </div>
 
-Pythonによって自動的に作成されたファイル内の内部変数 `__name__` は、値として文字列 `"__main__"` を持ちます。
+Python によって自動的に作成されたファイル内の内部変数 `__name__` は、値として文字列 `"__main__"` を持ちます。
 
 なので、以下:
 
@@ -76,22 +76,22 @@ from myapp import app
 
 /// info | "情報"
 
-より詳しい情報は、<a href="https://docs.python.org/3/library/__main__.html" class="external-link" target="_blank">公式Pythonドキュメント</a>を参照してください。
+より詳しい情報は、<a href="https://docs.python.org/3/library/__main__.html" class="external-link" target="_blank">公式 Python ドキュメント</a>を参照してください。
 
 ///
 
 ## デバッガーでコードを実行
 
-コードから直接Uvicornサーバーを実行しているため、デバッガーから直接Pythonプログラム (ReadyAPIアプリケーション) を呼び出せます。
+コードから直接 Uvicorn サーバーを実行しているため、デバッガーから直接 Python プログラム (ReadyAPI アプリケーション) を呼び出せます。
 
 ---
 
-例えば、Visual Studio Codeでは、次のことが可能です:
+例えば、Visual Studio Code では、次のことが可能です:
 
-* 「デバッグ」パネルに移動。
-* 「構成の追加...」
-* 「Python」を選択。
-* オプション「`Python: Current File (Integrated Terminal)`」を指定してデバッガーを実行。
+- 「デバッグ」パネルに移動。
+- 「構成の追加...」
+- 「Python」を選択。
+- オプション「`Python: Current File (Integrated Terminal)`」を指定してデバッガーを実行。
 
 すると、**ReadyAPI** コードでサーバーが起動され、ブレークポイントで停止したりするでしょう。
 
@@ -101,12 +101,12 @@ from myapp import app
 
 ---
 
-Pycharmを使用する場合、次のことが可能です:
+Pycharm を使用する場合、次のことが可能です:
 
-* 「実行」メニューをオープン。
-* オプション「デバッグ...」を選択。
-* 次にコンテキストメニューが表示される。
-* デバッグするファイル (ここでは `main.py`) を選択。
+- 「実行」メニューをオープン。
+- オプション「デバッグ...」を選択。
+- 次にコンテキストメニューが表示される。
+- デバッグするファイル (ここでは `main.py`) を選択。
 
 すると、**ReadyAPI** コードでサーバーが起動され、ブレークポイントで停止したりするでしょう。
 

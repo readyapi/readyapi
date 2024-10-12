@@ -22,13 +22,13 @@ $ pip install jinja2
 
 ## Verwendung von `Jinja2Templates`
 
-* Importieren Sie `Jinja2Templates`.
-* Erstellen Sie ein `templates`-Objekt, das Sie später wiederverwenden können.
-* Deklarieren Sie einen `Request`-Parameter in der *Pfadoperation*, welcher ein Template zurückgibt.
-* Verwenden Sie die von Ihnen erstellten `templates`, um eine `TemplateResponse` zu rendern und zurückzugeben, übergeben Sie den Namen des Templates, das Requestobjekt und ein „Kontext“-Dictionary mit Schlüssel-Wert-Paaren, die innerhalb des Jinja2-Templates verwendet werden sollen.
+- Importieren Sie `Jinja2Templates`.
+- Erstellen Sie ein `templates`-Objekt, das Sie später wiederverwenden können.
+- Deklarieren Sie einen `Request`-Parameter in der _Pfadoperation_, welcher ein Template zurückgibt.
+- Verwenden Sie die von Ihnen erstellten `templates`, um eine `TemplateResponse` zu rendern und zurückzugeben, übergeben Sie den Namen des Templates, das Requestobjekt und ein „Kontext“-Dictionary mit Schlüssel-Wert-Paaren, die innerhalb des Jinja2-Templates verwendet werden sollen.
 
 ```Python hl_lines="4  11  15-18"
-{!../../../docs_src/templates/tutorial001.py!}
+{!../../docs_src/templates/tutorial001.py!}
 ```
 
 /// note | "Hinweis"
@@ -58,7 +58,7 @@ Sie können auch `from starlette.templating import Jinja2Templates` verwenden.
 Dann können Sie unter `templates/item.html` ein Template erstellen, mit z. B. folgendem Inhalt:
 
 ```jinja hl_lines="7"
-{!../../../docs_src/templates/templates/item.html!}
+{!../../docs_src/templates/templates/item.html!}
 ```
 
 ### Template-Kontextwerte
@@ -87,7 +87,7 @@ Item ID: 42
 
 ### Template-`url_for`-Argumente
 
-Sie können `url_for()` auch innerhalb des Templates verwenden, es nimmt als Argumente dieselben Argumente, die von Ihrer *Pfadoperation-Funktion* verwendet werden.
+Sie können `url_for()` auch innerhalb des Templates verwenden, es nimmt als Argumente dieselben Argumente, die von Ihrer _Pfadoperation-Funktion_ verwendet werden.
 
 Der Abschnitt mit:
 
@@ -99,12 +99,12 @@ Der Abschnitt mit:
 
 {% endraw %}
 
-... generiert also einen Link zu derselben URL, welche von der *Pfadoperation-Funktion* `read_item(id=id)` gehandhabt werden würde.
+... generiert also einen Link zu derselben URL, welche von der _Pfadoperation-Funktion_ `read_item(id=id)` gehandhabt werden würde.
 
 Mit beispielsweise der ID `42` würde dies Folgendes ergeben:
 
 ```html
-<a href="/items/42">
+<a href="/items/42"></a>
 ```
 
 ## Templates und statische Dateien
@@ -112,13 +112,13 @@ Mit beispielsweise der ID `42` würde dies Folgendes ergeben:
 Sie können `url_for()` innerhalb des Templates auch beispielsweise mit den `StaticFiles` verwenden, die Sie mit `name="static"` gemountet haben.
 
 ```jinja hl_lines="4"
-{!../../../docs_src/templates/templates/item.html!}
+{!../../docs_src/templates/templates/item.html!}
 ```
 
 In diesem Beispiel würde das zu einer CSS-Datei unter `static/styles.css` verlinken, mit folgendem Inhalt:
 
 ```CSS hl_lines="4"
-{!../../../docs_src/templates/static/styles.css!}
+{!../../docs_src/templates/static/styles.css!}
 ```
 
 Und da Sie `StaticFiles` verwenden, wird diese CSS-Datei automatisch von Ihrer **ReadyAPI**-Anwendung unter der URL `/static/styles.css` bereitgestellt.

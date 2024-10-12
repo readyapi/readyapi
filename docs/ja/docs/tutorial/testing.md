@@ -19,7 +19,7 @@
 チェックしたい Python の標準的な式と共に、シンプルに `assert` 文を記述します。
 
 ```Python hl_lines="2  12  15-18"
-{!../../../docs_src/app_testing/tutorial001.py!}
+{!../../docs_src/app_testing/tutorial001.py!}
 ```
 
 /// tip | "豆知識"
@@ -36,13 +36,13 @@
 
 `from starlette.testclient import TestClient` も使用できます。
 
-**ReadyAPI** は開発者の利便性のために `readyapi.testclient` と同じ `starlette.testclient` を提供します。しかし、実際にはStarletteから直接渡されています。
+**ReadyAPI** は開発者の利便性のために `readyapi.testclient` と同じ `starlette.testclient` を提供します。しかし、実際には Starlette から直接渡されています。
 
 ///
 
 /// tip | "豆知識"
 
-ReadyAPIアプリケーションへのリクエストの送信とは別に、テストで `async` 関数 (非同期データベース関数など) を呼び出したい場合は、高度なチュートリアルの[Async Tests](../advanced/async-tests.md){.internal-link target=_blank} を参照してください。
+ReadyAPI アプリケーションへのリクエストの送信とは別に、テストで `async` 関数 (非同期データベース関数など) を呼び出したい場合は、高度なチュートリアルの[Async Tests](../advanced/async-tests.md){.internal-link target=\_blank} を参照してください。
 
 ///
 
@@ -57,7 +57,7 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 **ReadyAPI** アプリに `main.py` ファイルがあるとします:
 
 ```Python
-{!../../../docs_src/app_testing/main.py!}
+{!../../docs_src/app_testing/main.py!}
 ```
 
 ### テストファイル
@@ -65,13 +65,12 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 次に、テストを含む `test_main.py` ファイルを作成し、`main` モジュール (`main.py`) から `app` をインポートします:
 
 ```Python
-{!../../../docs_src/app_testing/test_main.py!}
+{!../../docs_src/app_testing/test_main.py!}
 ```
 
 ## テスト: 例の拡張
 
 次に、この例を拡張し、詳細を追加して、さまざまなパーツをテストする方法を確認しましょう。
-
 
 ### 拡張版 **ReadyAPI** アプリファイル
 
@@ -81,12 +80,12 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 
 また、いくつかのエラーを返す可能性のある `POST` オペレーションもあります。
 
-これらの *path operation* には `X-Token` ヘッダーが必要です。
+これらの _path operation_ には `X-Token` ヘッダーが必要です。
 
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_py310/main.py!}
+{!> ../../docs_src/app_testing/app_b_py310/main.py!}
 ```
 
 ////
@@ -94,7 +93,7 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 //// tab | Python 3.6+
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/main.py!}
+{!> ../../docs_src/app_testing/app_b/main.py!}
 ```
 
 ////
@@ -104,7 +103,7 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 次に、先程のものに拡張版のテストを加えた、`test_main_b.py` を作成します。
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/test_main.py!}
+{!> ../../docs_src/app_testing/app_b/test_main.py!}
 ```
 
 リクエストに情報を渡せるクライアントが必要で、その方法がわからない場合はいつでも、`httpx` での実現方法を検索 (Google) できます。
@@ -113,19 +112,19 @@ ReadyAPIアプリケーションへのリクエストの送信とは別に、テ
 
 例えば:
 
-* *パス* または *クエリ* パラメータを渡すには、それをURL自体に追加します。
-* JSONボディを渡すには、Pythonオブジェクト (例: `dict`) を `json` パラメータに渡します。
-* JSONの代わりに *フォームデータ* を送信する必要がある場合は、代わりに `data` パラメータを使用してください。
-* *ヘッダー* を渡すには、`headers` パラメータに `dict` を渡します。
-* *cookies* の場合、 `cookies` パラメータに `dict` です。
+- _パス_ または _クエリ_ パラメータを渡すには、それを URL 自体に追加します。
+- JSON ボディを渡すには、Python オブジェクト (例: `dict`) を `json` パラメータに渡します。
+- JSON の代わりに _フォームデータ_ を送信する必要がある場合は、代わりに `data` パラメータを使用してください。
+- _ヘッダー_ を渡すには、`headers` パラメータに `dict` を渡します。
+- _cookies_ の場合、 `cookies` パラメータに `dict` です。
 
-(`httpx` または `TestClient` を使用して) バックエンドにデータを渡す方法の詳細は、<a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPXのドキュメント</a>を確認してください。
+(`httpx` または `TestClient` を使用して) バックエンドにデータを渡す方法の詳細は、<a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX のドキュメント</a>を確認してください。
 
 /// info | "情報"
 
-`TestClient` は、Pydanticモデルではなく、JSONに変換できるデータを受け取ることに注意してください。
+`TestClient` は、Pydantic モデルではなく、JSON に変換できるデータを受け取ることに注意してください。
 
-テストにPydanticモデルがあり、テスト中にそのデータをアプリケーションに送信したい場合は、[JSON互換エンコーダ](encoder.md){.internal-link target=_blank} で説明されている `jsonable_encoder` が利用できます。
+テストに Pydantic モデルがあり、テスト中にそのデータをアプリケーションに送信したい場合は、[JSON 互換エンコーダ](encoder.md){.internal-link target=\_blank} で説明されている `jsonable_encoder` が利用できます。
 
 ///
 

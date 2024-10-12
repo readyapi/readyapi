@@ -6,7 +6,7 @@ Jeder Abschnitt baut schrittweise auf den vorhergehenden auf. Diese Abschnitte s
 
 Außerdem dienen diese als zukünftige Referenz.
 
-Dadurch können Sie jederzeit  zurückkommen und sehen genau das, was Sie benötigen.
+Dadurch können Sie jederzeit zurückkommen und sehen genau das, was Sie benötigen.
 
 ## Den Code ausführen
 

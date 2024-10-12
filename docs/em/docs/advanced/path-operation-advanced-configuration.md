@@ -8,22 +8,22 @@
 
 ///
 
-👆 💪 ⚒ 🗄 `operationId` ⚙️ 👆 *➡ 🛠️* ⏮️ 🔢 `operation_id`.
+👆 💪 ⚒ 🗄 `operationId` ⚙️ 👆 _➡ 🛠️_ ⏮️ 🔢 `operation_id`.
 
 👆 🔜 ✔️ ⚒ 💭 👈 ⚫️ 😍 🔠 🛠️.
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial001.py!}
 ```
 
-### ⚙️ *➡ 🛠️ 🔢* 📛 {
+### ⚙️ _➡ 🛠️ 🔢_ 📛 {
 
-🚥 👆 💚 ⚙️ 👆 🔗' 🔢 📛 `operationId`Ⓜ, 👆 💪 🔁 🤭 🌐 👫 &amp; 🔐 🔠 *➡ 🛠️* `operation_id` ⚙️ 👫 `APIRoute.name`.
+🚥 👆 💚 ⚙️ 👆 🔗' 🔢 📛 `operationId`Ⓜ, 👆 💪 🔁 🤭 🌐 👫 &amp; 🔐 🔠 _➡ 🛠️_ `operation_id` ⚙️ 👫 `APIRoute.name`.
 
-👆 🔜 ⚫️ ⏮️ ❎ 🌐 👆 *➡ 🛠️*.
+👆 🔜 ⚫️ ⏮️ ❎ 🌐 👆 _➡ 🛠️_.
 
 ```Python hl_lines="2  12-21  24"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial002.py!}
 ```
 
 /// tip
@@ -34,7 +34,7 @@
 
 /// warning
 
-🚥 👆 👉, 👆 ✔️ ⚒ 💭 🔠 1️⃣ 👆 *➡ 🛠️ 🔢* ✔️ 😍 📛.
+🚥 👆 👉, 👆 ✔️ ⚒ 💭 🔠 1️⃣ 👆 _➡ 🛠️ 🔢_ ✔️ 😍 📛.
 
 🚥 👫 🎏 🕹 (🐍 📁).
 
@@ -42,37 +42,37 @@
 
 ## 🚫 ⚪️➡️ 🗄
 
-🚫 *➡ 🛠️* ⚪️➡️ 🏗 🗄 🔗 (&amp; ➡️, ⚪️➡️ 🏧 🧾 ⚙️), ⚙️ 🔢 `include_in_schema` &amp; ⚒ ⚫️ `False`:
+🚫 _➡ 🛠️_ ⚪️➡️ 🏗 🗄 🔗 (&amp; ➡️, ⚪️➡️ 🏧 🧾 ⚙️), ⚙️ 🔢 `include_in_schema` &amp; ⚒ ⚫️ `False`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial003.py!}
 ```
 
 ## 🏧 📛 ⚪️➡️ #️⃣
 
-👆 💪 📉 ⏸ ⚙️ ⚪️➡️ #️⃣ *➡ 🛠️ 🔢* 🗄.
+👆 💪 📉 ⏸ ⚙️ ⚪️➡️ #️⃣ _➡ 🛠️ 🔢_ 🗄.
 
 ❎ `\f` (😖 "📨 🍼" 🦹) 🤕 **ReadyAPI** 🔁 🔢 ⚙️ 🗄 👉 ☝.
 
 ⚫️ 🏆 🚫 🎦 🆙 🧾, ✋️ 🎏 🧰 (✅ 🐉) 🔜 💪 ⚙️ 🎂.
 
 ```Python hl_lines="19-29"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial004.py!}
 ```
 
 ## 🌖 📨
 
-👆 🎲 ✔️ 👀 ❔ 📣 `response_model` &amp; `status_code` *➡ 🛠️*.
+👆 🎲 ✔️ 👀 ❔ 📣 `response_model` &amp; `status_code` _➡ 🛠️_.
 
-👈 🔬 🗃 🔃 👑 📨 *➡ 🛠️*.
+👈 🔬 🗃 🔃 👑 📨 _➡ 🛠️_.
 
 👆 💪 📣 🌖 📨 ⏮️ 👫 🏷, 👔 📟, ♒️.
 
-📤 🎂 📃 📥 🧾 🔃 ⚫️, 👆 💪 ✍ ⚫️ [🌖 📨 🗄](additional-responses.md){.internal-link target=_blank}.
+📤 🎂 📃 📥 🧾 🔃 ⚫️, 👆 💪 ✍ ⚫️ [🌖 📨 🗄](additional-responses.md){.internal-link target=\_blank}.
 
 ## 🗄 ➕
 
-🕐❔ 👆 📣 *➡ 🛠️* 👆 🈸, **ReadyAPI** 🔁 🏗 🔗 🗃 🔃 👈 *➡ 🛠️* 🔌 🗄 🔗.
+🕐❔ 👆 📣 _➡ 🛠️_ 👆 🈸, **ReadyAPI** 🔁 🏗 🔗 🗃 🔃 👈 _➡ 🛠️_ 🔌 🗄 🔗.
 
 /// note | "📡 ℹ"
 
@@ -80,35 +80,35 @@
 
 ///
 
-⚫️ ✔️ 🌐 ℹ 🔃 *➡ 🛠️* &amp; ⚙️ 🏗 🏧 🧾.
+⚫️ ✔️ 🌐 ℹ 🔃 _➡ 🛠️_ &amp; ⚙️ 🏗 🏧 🧾.
 
 ⚫️ 🔌 `tags`, `parameters`, `requestBody`, `responses`, ♒️.
 
-👉 *➡ 🛠️*-🎯 🗄 🔗 🛎 🏗 🔁 **ReadyAPI**, ✋️ 👆 💪 ↔ ⚫️.
+👉 _➡ 🛠️_-🎯 🗄 🔗 🛎 🏗 🔁 **ReadyAPI**, ✋️ 👆 💪 ↔ ⚫️.
 
 /// tip
 
 👉 🔅 🎚 ↔ ☝.
 
-🚥 👆 🕴 💪 📣 🌖 📨, 🌅 🏪 🌌 ⚫️ ⏮️ [🌖 📨 🗄](additional-responses.md){.internal-link target=_blank}.
+🚥 👆 🕴 💪 📣 🌖 📨, 🌅 🏪 🌌 ⚫️ ⏮️ [🌖 📨 🗄](additional-responses.md){.internal-link target=\_blank}.
 
 ///
 
-👆 💪 ↔ 🗄 🔗 *➡ 🛠️* ⚙️ 🔢 `openapi_extra`.
+👆 💪 ↔ 🗄 🔗 _➡ 🛠️_ ⚙️ 🔢 `openapi_extra`.
 
 ### 🗄 ↔
 
 👉 `openapi_extra` 💪 👍, 🖼, 📣 [🗄 ↔](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions):
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial005.py!}
 ```
 
-🚥 👆 📂 🏧 🛠️ 🩺, 👆 ↔ 🔜 🎦 🆙 🔝 🎯 *➡ 🛠️*.
+🚥 👆 📂 🏧 🛠️ 🩺, 👆 ↔ 🔜 🎦 🆙 🔝 🎯 _➡ 🛠️_.
 
 <img src="/img/tutorial/path-operation-advanced-configuration/image01.png">
 
-&amp; 🚥 👆 👀 📉 🗄 ( `/openapi.json` 👆 🛠️), 👆 🔜 👀 👆 ↔ 🍕 🎯 *➡ 🛠️* 💁‍♂️:
+&amp; 🚥 👆 👀 📉 🗄 ( `/openapi.json` 👆 🛠️), 👆 🔜 👀 👆 ↔ 🍕 🎯 _➡ 🛠️_ 💁‍♂️:
 
 ```JSON hl_lines="22"
 {
@@ -139,9 +139,9 @@
 }
 ```
 
-### 🛃 🗄 *➡ 🛠️* 🔗
+### 🛃 🗄 _➡ 🛠️_ 🔗
 
-📖 `openapi_extra` 🔜 🙇 🔗 ⏮️ 🔁 🏗 🗄 🔗 *➡ 🛠️*.
+📖 `openapi_extra` 🔜 🙇 🔗 ⏮️ 🔁 🏗 🗄 🔗 _➡ 🛠️_.
 
 , 👆 💪 🚮 🌖 💽 🔁 🏗 🔗.
 
@@ -150,7 +150,7 @@
 👆 💪 👈 ⏮️ `openapi_extra`:
 
 ```Python hl_lines="20-37  39-40"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial006.py!}
 ```
 
 👉 🖼, 👥 🚫 📣 🙆 Pydantic 🏷. 👐, 📨 💪 🚫 <abbr title="converted from some plain format, like bytes, into Python objects">🎻</abbr> 🎻, ⚫️ ✍ 🔗 `bytes`, &amp; 🔢 `magic_data_reader()` 🔜 🈚 🎻 ⚫️ 🌌.
@@ -159,14 +159,14 @@
 
 ### 🛃 🗄 🎚 🆎
 
-⚙️ 👉 🎏 🎱, 👆 💪 ⚙️ Pydantic 🏷 🔬 🎻 🔗 👈 ⤴️ 🔌 🛃 🗄 🔗 📄 *➡ 🛠️*.
+⚙️ 👉 🎏 🎱, 👆 💪 ⚙️ Pydantic 🏷 🔬 🎻 🔗 👈 ⤴️ 🔌 🛃 🗄 🔗 📄 _➡ 🛠️_.
 
 &amp; 👆 💪 👉 🚥 💽 🆎 📨 🚫 🎻.
 
 🖼, 👉 🈸 👥 🚫 ⚙️ ReadyAPI 🛠️ 🛠️ ⚗ 🎻 🔗 ⚪️➡️ Pydantic 🏷 🚫 🏧 🔬 🎻. 👐, 👥 📣 📨 🎚 🆎 📁, 🚫 🎻:
 
 ```Python hl_lines="17-22  24"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 👐, 👐 👥 🚫 ⚙️ 🔢 🛠️ 🛠️, 👥 ⚙️ Pydantic 🏷 ❎ 🏗 🎻 🔗 💽 👈 👥 💚 📨 📁.
@@ -176,7 +176,7 @@
 &amp; ⤴️ 👆 📟, 👥 🎻 👈 📁 🎚 🔗, &amp; ⤴️ 👥 🔄 ⚙️ 🎏 Pydantic 🏷 ✔ 📁 🎚:
 
 ```Python hl_lines="26-33"
-{!../../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
+{!../../docs_src/path_operation_advanced_configuration/tutorial007.py!}
 ```
 
 /// tip

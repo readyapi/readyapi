@@ -8,9 +8,9 @@
 
 , 🌐 👫 🎏 🇨🇳:
 
-* `http://localhost`
-* `https://localhost`
-* `http://localhost:8080`
+- `http://localhost`
+- `https://localhost`
+- `http://localhost:8080`
 
 🚥 👫 🌐 `localhost`, 👫 ⚙️ 🎏 🛠️ ⚖️ ⛴,, 👫 🎏 "🇨🇳".
 
@@ -36,31 +36,31 @@
 
 👆 💪 🔗 ⚫️ 👆 **ReadyAPI** 🈸 ⚙️ `CORSMiddleware`.
 
-* 🗄 `CORSMiddleware`.
-* ✍ 📇 ✔ 🇨🇳 (🎻).
-* 🚮 ⚫️ "🛠️" 👆 **ReadyAPI** 🈸.
+- 🗄 `CORSMiddleware`.
+- ✍ 📇 ✔ 🇨🇳 (🎻).
+- 🚮 ⚫️ "🛠️" 👆 **ReadyAPI** 🈸.
 
 👆 💪 ✔ 🚥 👆 👩‍💻 ✔:
 
-* 🎓 (✔ 🎚, 🍪, ♒️).
-* 🎯 🇺🇸🔍 👩‍🔬 (`POST`, `PUT`) ⚖️ 🌐 👫 ⏮️ 🃏 `"*"`.
-* 🎯 🇺🇸🔍 🎚 ⚖️ 🌐 👫 ⏮️ 🃏 `"*"`.
+- 🎓 (✔ 🎚, 🍪, ♒️).
+- 🎯 🇺🇸🔍 👩‍🔬 (`POST`, `PUT`) ⚖️ 🌐 👫 ⏮️ 🃏 `"*"`.
+- 🎯 🇺🇸🔍 🎚 ⚖️ 🌐 👫 ⏮️ 🃏 `"*"`.
 
 ```Python hl_lines="2  6-11  13-19"
-{!../../../docs_src/cors/tutorial001.py!}
+{!../../docs_src/cors/tutorial001.py!}
 ```
 
 🔢 🔢 ⚙️ `CORSMiddleware` 🛠️ 🚫 🔢, 👆 🔜 💪 🎯 🛠️ 🎯 🇨🇳, 👩‍🔬, ⚖️ 🎚, ✔ 🖥 ✔ ⚙️ 👫 ✖️-🆔 🔑.
 
 📄 ❌ 🐕‍🦺:
 
-* `allow_origins` - 📇 🇨🇳 👈 🔜 ✔ ⚒ ✖️-🇨🇳 📨. 🤶 Ⓜ. `['https://example.org', 'https://www.example.org']`. 👆 💪 ⚙️ `['*']` ✔ 🙆 🇨🇳.
-* `allow_origin_regex` - 🎻 🎻 🏏 🛡 🇨🇳 👈 🔜 ✔ ⚒ ✖️-🇨🇳 📨. ✅ `'https://.*\.example\.org'`.
-* `allow_methods` - 📇 🇺🇸🔍 👩‍🔬 👈 🔜 ✔ ✖️-🇨🇳 📨. 🔢 `['GET']`. 👆 💪 ⚙️ `['*']` ✔ 🌐 🐩 👩‍🔬.
-* `allow_headers` - 📇 🇺🇸🔍 📨 🎚 👈 🔜 🐕‍🦺 ✖️-🇨🇳 📨. 🔢 `[]`. 👆 💪 ⚙️ `['*']` ✔ 🌐 🎚. `Accept`, `Accept-Language`, `Content-Language` &amp; `Content-Type` 🎚 🕧 ✔ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests" class="external-link" rel="noopener" target="_blank">🙅 ⚜ 📨</a>.
-* `allow_credentials` - 🎦 👈 🍪 🔜 🐕‍🦺 ✖️-🇨🇳 📨. 🔢 `False`. , `allow_origins` 🚫🔜 ⚒ `['*']` 🎓 ✔, 🇨🇳 🔜 ✔.
-* `expose_headers` - 🎦 🙆 📨 🎚 👈 🔜 ⚒ ♿ 🖥. 🔢 `[]`.
-* `max_age` - ⚒ 🔆 🕰 🥈 🖥 💾 ⚜ 📨. 🔢 `600`.
+- `allow_origins` - 📇 🇨🇳 👈 🔜 ✔ ⚒ ✖️-🇨🇳 📨. 🤶 Ⓜ. `['https://example.org', 'https://www.example.org']`. 👆 💪 ⚙️ `['*']` ✔ 🙆 🇨🇳.
+- `allow_origin_regex` - 🎻 🎻 🏏 🛡 🇨🇳 👈 🔜 ✔ ⚒ ✖️-🇨🇳 📨. ✅ `'https://.*\.example\.org'`.
+- `allow_methods` - 📇 🇺🇸🔍 👩‍🔬 👈 🔜 ✔ ✖️-🇨🇳 📨. 🔢 `['GET']`. 👆 💪 ⚙️ `['*']` ✔ 🌐 🐩 👩‍🔬.
+- `allow_headers` - 📇 🇺🇸🔍 📨 🎚 👈 🔜 🐕‍🦺 ✖️-🇨🇳 📨. 🔢 `[]`. 👆 💪 ⚙️ `['*']` ✔ 🌐 🎚. `Accept`, `Accept-Language`, `Content-Language` &amp; `Content-Type` 🎚 🕧 ✔ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests" class="external-link" rel="noopener" target="_blank">🙅 ⚜ 📨</a>.
+- `allow_credentials` - 🎦 👈 🍪 🔜 🐕‍🦺 ✖️-🇨🇳 📨. 🔢 `False`. , `allow_origins` 🚫🔜 ⚒ `['*']` 🎓 ✔, 🇨🇳 🔜 ✔.
+- `expose_headers` - 🎦 🙆 📨 🎚 👈 🔜 ⚒ ♿ 🖥. 🔢 `[]`.
+- `max_age` - ⚒ 🔆 🕰 🥈 🖥 💾 ⚜ 📨. 🔢 `600`.
 
 🛠️ 📨 2️⃣ 🎯 🆎 🇺🇸🔍 📨...
 

@@ -1,12 +1,12 @@
 # Devolver una respuesta directamente
 
-Cuando creas una *operación de path* normalmente puedes devolver cualquier dato: un `dict`, una `list`, un modelo Pydantic, un modelo de base de datos, etc.
+Cuando creas una _operación de path_ normalmente puedes devolver cualquier dato: un `dict`, una `list`, un modelo Pydantic, un modelo de base de datos, etc.
 
-Por defecto, **ReadyAPI** convertiría automáticamente ese valor devuelto a JSON usando el `jsonable_encoder` explicado en [Codificador Compatible JSON](../tutorial/encoder.md){.internal-link target=_blank}.
+Por defecto, **ReadyAPI** convertiría automáticamente ese valor devuelto a JSON usando el `jsonable_encoder` explicado en [Codificador Compatible JSON](../tutorial/encoder.md){.internal-link target=\_blank}.
 
 Luego, tras bastidores, pondría esos datos compatibles con JSON (por ejemplo, un `dict`) dentro de una `JSONResponse` que se usaría para enviar la respuesta al cliente.
 
-Pero puedes devolver una `JSONResponse` directamente de tu *operación de path*.
+Pero puedes devolver una `JSONResponse` directamente de tu _operación de path_.
 
 Esto puede ser útil, por ejemplo, para devolver cookies o headers personalizados.
 
@@ -35,7 +35,7 @@ Por ejemplo, no puedes poner un modelo Pydantic en una `JSONResponse` sin primer
 Para esos casos, puedes usar el `jsonable_encoder` para convertir tus datos antes de pasarlos a la respuesta:
 
 ```Python hl_lines="4 6 20 21"
-{!../../../docs_src/response_directly/tutorial001.py!}
+{!../../docs_src/response_directly/tutorial001.py!}
 ```
 
 /// note | Detalles Técnicos
@@ -57,13 +57,13 @@ Digamos que quieres devolver una respuesta <a href="https://en.wikipedia.org/wik
 Podrías poner tu contenido XML en un string, ponerlo en una `Response` y devolverlo:
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ## Notas
 
 Cuando devuelves una `Response` directamente, los datos no son validados, convertidos (serializados), ni documentados automáticamente.
 
-Pero todavía es posible documentarlo como es descrito en [Respuestas adicionales en OpenAPI](additional-responses.md){.internal-link target=_blank}.
+Pero todavía es posible documentarlo como es descrito en [Respuestas adicionales en OpenAPI](additional-responses.md){.internal-link target=\_blank}.
 
 Puedes ver en secciones posteriores como usar/declarar esas `Response`s personalizadas aún teniendo conversión automática de datos, documentación, etc.

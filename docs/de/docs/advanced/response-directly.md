@@ -1,12 +1,12 @@
 # Eine Response direkt zurückgeben
 
-Wenn Sie eine **ReadyAPI** *Pfadoperation* erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
+Wenn Sie eine **ReadyAPI** _Pfadoperation_ erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
 
-Standardmäßig konvertiert **ReadyAPI** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=_blank} erläutert wird.
+Standardmäßig konvertiert **ReadyAPI** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=\_blank} erläutert wird.
 
 Dann würde es hinter den Kulissen diese JSON-kompatiblen Daten (z. B. ein `dict`) in eine `JSONResponse` einfügen, die zum Senden der Response an den Client verwendet würde.
 
-Sie können jedoch direkt eine `JSONResponse` von Ihren *Pfadoperationen* zurückgeben.
+Sie können jedoch direkt eine `JSONResponse` von Ihren _Pfadoperationen_ zurückgeben.
 
 Das kann beispielsweise nützlich sein, um benutzerdefinierte Header oder Cookies zurückzugeben.
 
@@ -35,7 +35,7 @@ Sie können beispielsweise kein Pydantic-Modell in eine `JSONResponse` einfügen
 In diesen Fällen können Sie den `jsonable_encoder` verwenden, um Ihre Daten zu konvertieren, bevor Sie sie an eine Response übergeben:
 
 ```Python hl_lines="6-7  21-22"
-{!../../../docs_src/response_directly/tutorial001.py!}
+{!../../docs_src/response_directly/tutorial001.py!}
 ```
 
 /// note | "Technische Details"
@@ -57,13 +57,13 @@ Nehmen wir an, Sie möchten eine <a href="https://en.wikipedia.org/wiki/XML" cla
 Sie könnten Ihren XML-Inhalt als String in eine `Response` einfügen und sie zurückgeben:
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ## Anmerkungen
 
 Wenn Sie eine `Response` direkt zurücksenden, werden deren Daten weder validiert, konvertiert (serialisiert), noch automatisch dokumentiert.
 
-Sie können sie aber trotzdem wie unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=_blank} beschrieben dokumentieren.
+Sie können sie aber trotzdem wie unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank} beschrieben dokumentieren.
 
 In späteren Abschnitten erfahren Sie, wie Sie diese benutzerdefinierten `Response`s verwenden/deklarieren und gleichzeitig über automatische Datenkonvertierung, Dokumentation, usw. verfügen.

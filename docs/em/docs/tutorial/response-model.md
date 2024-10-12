@@ -1,13 +1,13 @@
 # 📨 🏷 - 📨 🆎
 
-👆 💪 📣 🆎 ⚙️ 📨 ✍ *➡ 🛠️ 🔢* **📨 🆎**.
+👆 💪 📣 🆎 ⚙️ 📨 ✍ _➡ 🛠️ 🔢_ **📨 🆎**.
 
 👆 💪 ⚙️ **🆎 ✍** 🎏 🌌 👆 🔜 🔢 💽 🔢 **🔢**, 👆 💪 ⚙️ Pydantic 🏷, 📇, 📖, 📊 💲 💖 🔢, 🎻, ♒️.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="18  23"
-{!> ../../../docs_src/response_model/tutorial001_01.py!}
+{!> ../../docs_src/response_model/tutorial001_01.py!}
 ```
 
 ////
@@ -15,7 +15,7 @@
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="18  23"
-{!> ../../../docs_src/response_model/tutorial001_01_py39.py!}
+{!> ../../docs_src/response_model/tutorial001_01_py39.py!}
 ```
 
 ////
@@ -23,23 +23,23 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="16  21"
-{!> ../../../docs_src/response_model/tutorial001_01_py310.py!}
+{!> ../../docs_src/response_model/tutorial001_01_py310.py!}
 ```
 
 ////
 
 ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 
-* **✔** 📨 💽.
-    * 🚥 💽 ❌ (✅ 👆 ❌ 🏑), ⚫️ ⛓ 👈 *👆* 📱 📟 💔, 🚫 🛬 ⚫️❔ ⚫️ 🔜, &amp; ⚫️ 🔜 📨 💽 ❌ ↩️ 🛬 ❌ 💽. 👉 🌌 👆 &amp; 👆 👩‍💻 💪 🎯 👈 👫 🔜 📨 💽 &amp; 💽 💠 📈.
-* 🚮 **🎻 🔗** 📨, 🗄 *➡ 🛠️*.
-    * 👉 🔜 ⚙️ **🏧 🩺**.
-    * ⚫️ 🔜 ⚙️ 🏧 👩‍💻 📟 ⚡ 🧰.
+- **✔** 📨 💽.
+  - 🚥 💽 ❌ (✅ 👆 ❌ 🏑), ⚫️ ⛓ 👈 _👆_ 📱 📟 💔, 🚫 🛬 ⚫️❔ ⚫️ 🔜, &amp; ⚫️ 🔜 📨 💽 ❌ ↩️ 🛬 ❌ 💽. 👉 🌌 👆 &amp; 👆 👩‍💻 💪 🎯 👈 👫 🔜 📨 💽 &amp; 💽 💠 📈.
+- 🚮 **🎻 🔗** 📨, 🗄 _➡ 🛠️_.
+  - 👉 🔜 ⚙️ **🏧 🩺**.
+  - ⚫️ 🔜 ⚙️ 🏧 👩‍💻 📟 ⚡ 🧰.
 
 ✋️ 🏆 🥈:
 
-* ⚫️ 🔜 **📉 &amp; ⛽** 🔢 📊 ⚫️❔ 🔬 📨 🆎.
-    * 👉 ✴️ ⚠ **💂‍♂**, 👥 🔜 👀 🌅 👈 🔛.
+- ⚫️ 🔜 **📉 &amp; ⛽** 🔢 📊 ⚫️❔ 🔬 📨 🆎.
+  - 👉 ✴️ ⚠ **💂‍♂**, 👥 🔜 👀 🌅 👈 🔛.
 
 ## `response_model` 🔢
 
@@ -49,20 +49,20 @@ ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 
 🚥 👆 🚮 📨 🆎 ✍, 🧰 &amp; 👨‍🎨 🔜 😭 ⏮️ (☑) ❌ 💬 👆 👈 👆 🔢 🛬 🆎 (✅#️⃣) 👈 🎏 ⚪️➡️ ⚫️❔ 👆 📣 (✅ Pydantic 🏷).
 
-📚 💼, 👆 💪 ⚙️ *➡ 🛠️ 👨‍🎨* 🔢 `response_model` ↩️ 📨 🆎.
+📚 💼, 👆 💪 ⚙️ _➡ 🛠️ 👨‍🎨_ 🔢 `response_model` ↩️ 📨 🆎.
 
-👆 💪 ⚙️ `response_model` 🔢 🙆 *➡ 🛠️*:
+👆 💪 ⚙️ `response_model` 🔢 🙆 _➡ 🛠️_:
 
-* `@app.get()`
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
-* ♒️.
+- `@app.get()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
+- ♒️.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001.py!}
+{!> ../../docs_src/response_model/tutorial001.py!}
 ```
 
 ////
@@ -70,7 +70,7 @@ ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001_py39.py!}
+{!> ../../docs_src/response_model/tutorial001_py39.py!}
 ```
 
 ////
@@ -78,14 +78,14 @@ ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001_py310.py!}
+{!> ../../docs_src/response_model/tutorial001_py310.py!}
 ```
 
 ////
 
 /// note
 
-👀 👈 `response_model` 🔢 "👨‍🎨" 👩‍🔬 (`get`, `post`, ♒️). 🚫 👆 *➡ 🛠️ 🔢*, 💖 🌐 🔢 &amp; 💪.
+👀 👈 `response_model` 🔢 "👨‍🎨" 👩‍🔬 (`get`, `post`, ♒️). 🚫 👆 _➡ 🛠️ 🔢_, 💖 🌐 🔢 &amp; 💪.
 
 ///
 
@@ -107,7 +107,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 👉 🌌 👆 💪 🚮 ☑ 🆎 ✍ 👆 🔢 🕐❔ 👆 🛬 🆎 🎏 🌘 📨 🏷, ⚙️ 👨‍🎨 &amp; 🧰 💖 ✍. &amp; 👆 💪 ✔️ ReadyAPI 💽 🔬, 🧾, ♒️. ⚙️ `response_model`.
 
-👆 💪 ⚙️ `response_model=None` ❎ 🏗 📨 🏷 👈 *➡ 🛠️*, 👆 5️⃣📆 💪 ⚫️ 🚥 👆 ❎ 🆎 ✍ 👜 👈 🚫 ☑ Pydantic 🏑, 👆 🔜 👀 🖼 👈 1️⃣ 📄 🔛.
+👆 💪 ⚙️ `response_model=None` ❎ 🏗 📨 🏷 👈 _➡ 🛠️_, 👆 5️⃣📆 💪 ⚫️ 🚥 👆 ❎ 🆎 ✍ 👜 👈 🚫 ☑ Pydantic 🏑, 👆 🔜 👀 🖼 👈 1️⃣ 📄 🔛.
 
 ## 📨 🎏 🔢 💽
 
@@ -116,7 +116,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9  11"
-{!> ../../../docs_src/response_model/tutorial002.py!}
+{!> ../../docs_src/response_model/tutorial002.py!}
 ```
 
 ////
@@ -124,7 +124,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="7  9"
-{!> ../../../docs_src/response_model/tutorial002_py310.py!}
+{!> ../../docs_src/response_model/tutorial002_py310.py!}
 ```
 
 ////
@@ -143,7 +143,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/response_model/tutorial002.py!}
+{!> ../../docs_src/response_model/tutorial002.py!}
 ```
 
 ////
@@ -151,7 +151,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/response_model/tutorial002_py310.py!}
+{!> ../../docs_src/response_model/tutorial002_py310.py!}
 ```
 
 ////
@@ -160,7 +160,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 👉 💼, ⚫️ 💪 🚫 ⚠, ↩️ ⚫️ 🎏 👩‍💻 📨 🔐.
 
-✋️ 🚥 👥 ⚙️ 🎏 🏷 ➕1️⃣ *➡ 🛠️*, 👥 💪 📨 👆 👩‍💻 🔐 🔠 👩‍💻.
+✋️ 🚥 👥 ⚙️ 🎏 🏷 ➕1️⃣ _➡ 🛠️_, 👥 💪 📨 👆 👩‍💻 🔐 🔠 👩‍💻.
 
 /// danger
 
@@ -175,7 +175,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9  11  16"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
@@ -183,17 +183,17 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="9  11  16"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
 
-📥, ✋️ 👆 *➡ 🛠️ 🔢* 🛬 🎏 🔢 👩‍💻 👈 🔌 🔐:
+📥, ✋️ 👆 _➡ 🛠️ 🔢_ 🛬 🎏 🔢 👩‍💻 👈 🔌 🔐:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
@@ -201,7 +201,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
@@ -211,7 +211,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
@@ -219,7 +219,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
@@ -249,7 +249,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9-13  15-16  20"
-{!> ../../../docs_src/response_model/tutorial003_01.py!}
+{!> ../../docs_src/response_model/tutorial003_01.py!}
 ```
 
 ////
@@ -257,7 +257,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="7-10  13-14  18"
-{!> ../../../docs_src/response_model/tutorial003_01_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_01_py310.py!}
 ```
 
 ////
@@ -274,7 +274,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 👥 ✍ 🔢 📨 🆎 `BaseUser`, ✋️ 👥 🤙 🛬 `UserIn` 👐.
 
-👨‍🎨, ✍, &amp; 🎏 🧰 🏆 🚫 😭 🔃 👉 ↩️, ⌨ ⚖, `UserIn` 🏿 `BaseUser`, ❔ ⛓ ⚫️ *☑* 🆎 🕐❔ ⚫️❔ ⌛ 🕳 👈 `BaseUser`.
+👨‍🎨, ✍, &amp; 🎏 🧰 🏆 🚫 😭 🔃 👉 ↩️, ⌨ ⚖, `UserIn` 🏿 `BaseUser`, ❔ ⛓ ⚫️ _☑_ 🆎 🕐❔ ⚫️❔ ⌛ 🕳 👈 `BaseUser`.
 
 ### ReadyAPI 💽 🖥
 
@@ -300,10 +300,10 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 ### 📨 📨 🔗
 
-🏆 ⚠ 💼 🔜 [🛬 📨 🔗 🔬 ⏪ 🏧 🩺](../advanced/response-directly.md){.internal-link target=_blank}.
+🏆 ⚠ 💼 🔜 [🛬 📨 🔗 🔬 ⏪ 🏧 🩺](../advanced/response-directly.md){.internal-link target=\_blank}.
 
 ```Python hl_lines="8  10-11"
-{!> ../../../docs_src/response_model/tutorial003_02.py!}
+{!> ../../docs_src/response_model/tutorial003_02.py!}
 ```
 
 👉 🙅 💼 🍵 🔁 ReadyAPI ↩️ 📨 🆎 ✍ 🎓 (⚖️ 🏿) `Response`.
@@ -315,7 +315,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 👆 💪 ⚙️ 🏿 `Response` 🆎 ✍:
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/response_model/tutorial003_03.py!}
+{!> ../../docs_src/response_model/tutorial003_03.py!}
 ```
 
 👉 🔜 👷 ↩️ `RedirectResponse` 🏿 `Response`, &amp; ReadyAPI 🔜 🔁 🍵 👉 🙅 💼.
@@ -329,7 +329,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/response_model/tutorial003_04.py!}
+{!> ../../docs_src/response_model/tutorial003_04.py!}
 ```
 
 ////
@@ -337,7 +337,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/response_model/tutorial003_04_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_04_py310.py!}
 ```
 
 ////
@@ -355,7 +355,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/response_model/tutorial003_05.py!}
+{!> ../../docs_src/response_model/tutorial003_05.py!}
 ```
 
 ////
@@ -363,7 +363,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/response_model/tutorial003_05_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_05_py310.py!}
 ```
 
 ////
@@ -377,7 +377,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="11  13-14"
-{!> ../../../docs_src/response_model/tutorial004.py!}
+{!> ../../docs_src/response_model/tutorial004.py!}
 ```
 
 ////
@@ -385,7 +385,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="11  13-14"
-{!> ../../../docs_src/response_model/tutorial004_py39.py!}
+{!> ../../docs_src/response_model/tutorial004_py39.py!}
 ```
 
 ////
@@ -393,14 +393,14 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="9  11-12"
-{!> ../../../docs_src/response_model/tutorial004_py310.py!}
+{!> ../../docs_src/response_model/tutorial004_py310.py!}
 ```
 
 ////
 
-* `description: Union[str, None] = None` (⚖️ `str | None = None` 🐍 3️⃣.1️⃣0️⃣) ✔️ 🔢 `None`.
-* `tax: float = 10.5` ✔️ 🔢 `10.5`.
-* `tags: List[str] = []` 🔢 🛁 📇: `[]`.
+- `description: Union[str, None] = None` (⚖️ `str | None = None` 🐍 3️⃣.1️⃣0️⃣) ✔️ 🔢 `None`.
+- `tax: float = 10.5` ✔️ 🔢 `10.5`.
+- `tags: List[str] = []` 🔢 🛁 📇: `[]`.
 
 ✋️ 👆 💪 💚 🚫 👫 ⚪️➡️ 🏁 🚥 👫 🚫 🤙 🏪.
 
@@ -408,12 +408,12 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 ### ⚙️ `response_model_exclude_unset` 🔢
 
-👆 💪 ⚒ *➡ 🛠️ 👨‍🎨* 🔢 `response_model_exclude_unset=True`:
+👆 💪 ⚒ _➡ 🛠️ 👨‍🎨_ 🔢 `response_model_exclude_unset=True`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial004.py!}
+{!> ../../docs_src/response_model/tutorial004.py!}
 ```
 
 ////
@@ -421,7 +421,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial004_py39.py!}
+{!> ../../docs_src/response_model/tutorial004_py39.py!}
 ```
 
 ////
@@ -429,14 +429,14 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial004_py310.py!}
+{!> ../../docs_src/response_model/tutorial004_py310.py!}
 ```
 
 ////
 
 &amp; 👈 🔢 💲 🏆 🚫 🔌 📨, 🕴 💲 🤙 ⚒.
 
-, 🚥 👆 📨 📨 👈 *➡ 🛠️* 🏬 ⏮️ 🆔 `foo`, 📨 (🚫 ✅ 🔢 💲) 🔜:
+, 🚥 👆 📨 📨 👈 _➡ 🛠️_ 🏬 ⏮️ 🆔 `foo`, 📨 (🚫 ✅ 🔢 💲) 🔜:
 
 ```JSON
 {
@@ -455,8 +455,8 @@ ReadyAPI ⚙️ Pydantic 🏷 `.dict()` ⏮️ <a href="https://docs.pydantic.de
 
 👆 💪 ⚙️:
 
-* `response_model_exclude_defaults=True`
-* `response_model_exclude_none=True`
+- `response_model_exclude_defaults=True`
+- `response_model_exclude_none=True`
 
 🔬 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">Pydantic 🩺</a> `exclude_defaults` &amp; `exclude_none`.
 
@@ -505,7 +505,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 
 ### `response_model_include` &amp; `response_model_exclude`
 
-👆 💪 ⚙️ *➡ 🛠️ 👨‍🎨* 🔢 `response_model_include` &amp; `response_model_exclude`.
+👆 💪 ⚙️ _➡ 🛠️ 👨‍🎨_ 🔢 `response_model_include` &amp; `response_model_exclude`.
 
 👫 ✊ `set` `str` ⏮️ 📛 🔢 🔌 (❎ 🎂) ⚖️ 🚫 (✅ 🎂).
 
@@ -524,7 +524,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="31  37"
-{!> ../../../docs_src/response_model/tutorial005.py!}
+{!> ../../docs_src/response_model/tutorial005.py!}
 ```
 
 ////
@@ -532,7 +532,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="29  35"
-{!> ../../../docs_src/response_model/tutorial005_py310.py!}
+{!> ../../docs_src/response_model/tutorial005_py310.py!}
 ```
 
 ////
@@ -552,7 +552,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="31  37"
-{!> ../../../docs_src/response_model/tutorial006.py!}
+{!> ../../docs_src/response_model/tutorial006.py!}
 ```
 
 ////
@@ -560,13 +560,13 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="29  35"
-{!> ../../../docs_src/response_model/tutorial006_py310.py!}
+{!> ../../docs_src/response_model/tutorial006_py310.py!}
 ```
 
 ////
 
 ## 🌃
 
-⚙️ *➡ 🛠️ 👨‍🎨* 🔢 `response_model` 🔬 📨 🏷 &amp; ✴️ 🚚 📢 💽 ⛽ 👅.
+⚙️ _➡ 🛠️ 👨‍🎨_ 🔢 `response_model` 🔬 📨 🏷 &amp; ✴️ 🚚 📢 💽 ⛽ 👅.
 
 ⚙️ `response_model_exclude_unset` 📨 🕴 💲 🎯 ⚒.

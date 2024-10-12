@@ -1,6 +1,6 @@
 # 请求体 - 嵌套模型
 
-使用 **ReadyAPI**，你可以定义、校验、记录文档并使用任意深度嵌套的模型（归功于Pydantic）。
+使用 **ReadyAPI**，你可以定义、校验、记录文档并使用任意深度嵌套的模型（归功于 Pydantic）。
 
 ## List 字段
 
@@ -9,7 +9,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/body_nested_models/tutorial001_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial001_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/body_nested_models/tutorial001.py!}
+{!> ../../docs_src/body_nested_models/tutorial001.py!}
 ```
 
 ////
@@ -33,15 +33,15 @@
 首先，从 Python 的标准库 `typing` 模块中导入 `List`：
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/body_nested_models/tutorial002.py!}
+{!> ../../docs_src/body_nested_models/tutorial002.py!}
 ```
 
 ### 声明具有子类型的 List
 
 要声明具有子类型的类型，例如 `list`、`dict`、`tuple`：
 
-* 从 `typing` 模块导入它们
-* 使用方括号 `[` 和 `]` 将子类型作为「类型参数」传入
+- 从 `typing` 模块导入它们
+- 使用方括号 `[` 和 `]` 将子类型作为「类型参数」传入
 
 ```Python
 from typing import List
@@ -58,7 +58,7 @@ my_list: List[str]
 //// tab | Python 3.10+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/body_nested_models/tutorial002_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial002_py310.py!}
 ```
 
 ////
@@ -66,7 +66,7 @@ my_list: List[str]
 //// tab | Python 3.9+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/body_nested_models/tutorial002_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial002_py39.py!}
 ```
 
 ////
@@ -74,7 +74,7 @@ my_list: List[str]
 //// tab | Python 3.8+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/body_nested_models/tutorial002.py!}
+{!> ../../docs_src/body_nested_models/tutorial002.py!}
 ```
 
 ////
@@ -90,7 +90,7 @@ Python 具有一种特殊的数据类型来保存一组唯一的元素，即 `se
 //// tab | Python 3.10+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/body_nested_models/tutorial003_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial003_py310.py!}
 ```
 
 ////
@@ -98,7 +98,7 @@ Python 具有一种特殊的数据类型来保存一组唯一的元素，即 `se
 //// tab | Python 3.9+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/body_nested_models/tutorial003_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial003_py39.py!}
 ```
 
 ////
@@ -106,7 +106,7 @@ Python 具有一种特殊的数据类型来保存一组唯一的元素，即 `se
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  14"
-{!> ../../../docs_src/body_nested_models/tutorial003.py!}
+{!> ../../docs_src/body_nested_models/tutorial003.py!}
 ```
 
 ////
@@ -134,7 +134,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.10+
 
 ```Python hl_lines="7-9"
-{!> ../../../docs_src/body_nested_models/tutorial004_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial004_py310.py!}
 ```
 
 ////
@@ -142,7 +142,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.9+
 
 ```Python hl_lines="9-11"
-{!> ../../../docs_src/body_nested_models/tutorial004_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial004_py39.py!}
 ```
 
 ////
@@ -150,7 +150,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-11"
-{!> ../../../docs_src/body_nested_models/tutorial004.py!}
+{!> ../../docs_src/body_nested_models/tutorial004.py!}
 ```
 
 ////
@@ -162,7 +162,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.10+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/body_nested_models/tutorial004_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial004_py310.py!}
 ```
 
 ////
@@ -170,7 +170,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.9+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/body_nested_models/tutorial004_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial004_py39.py!}
 ```
 
 ////
@@ -178,7 +178,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.8+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/body_nested_models/tutorial004.py!}
+{!> ../../docs_src/body_nested_models/tutorial004.py!}
 ```
 
 ////
@@ -201,10 +201,10 @@ Pydantic 模型的每个属性都具有类型。
 
 再一次，仅仅进行这样的声明，你将通过 **ReadyAPI** 获得：
 
-* 对被嵌入的模型也适用的编辑器支持（自动补全等）
-* 数据转换
-* 数据校验
-* 自动生成文档
+- 对被嵌入的模型也适用的编辑器支持（自动补全等）
+- 数据转换
+- 数据校验
+- 自动生成文档
 
 ## 特殊的类型和校验
 
@@ -217,7 +217,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.10+
 
 ```Python hl_lines="2  8"
-{!> ../../../docs_src/body_nested_models/tutorial005_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial005_py310.py!}
 ```
 
 ////
@@ -225,7 +225,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.9+
 
 ```Python hl_lines="4  10"
-{!> ../../../docs_src/body_nested_models/tutorial005_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial005_py39.py!}
 ```
 
 ////
@@ -233,7 +233,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.8+
 
 ```Python hl_lines="4  10"
-{!> ../../../docs_src/body_nested_models/tutorial005.py!}
+{!> ../../docs_src/body_nested_models/tutorial005.py!}
 ```
 
 ////
@@ -247,7 +247,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.10+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/body_nested_models/tutorial006_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial006_py310.py!}
 ```
 
 ////
@@ -255,7 +255,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.9+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/body_nested_models/tutorial006_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial006_py39.py!}
 ```
 
 ////
@@ -263,7 +263,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.8+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/body_nested_models/tutorial006.py!}
+{!> ../../docs_src/body_nested_models/tutorial006.py!}
 ```
 
 ////
@@ -307,7 +307,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  12  18  21  25"
-{!> ../../../docs_src/body_nested_models/tutorial007_py310.py!}
+{!> ../../docs_src/body_nested_models/tutorial007_py310.py!}
 ```
 
 ////
@@ -315,7 +315,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  14  20  23  27"
-{!> ../../../docs_src/body_nested_models/tutorial007_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial007_py39.py!}
 ```
 
 ////
@@ -323,7 +323,7 @@ Pydantic 模型的每个属性都具有类型。
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  14  20  23  27"
-{!> ../../../docs_src/body_nested_models/tutorial007.py!}
+{!> ../../docs_src/body_nested_models/tutorial007.py!}
 ```
 
 ////
@@ -347,7 +347,7 @@ images: List[Image]
 //// tab | Python 3.9+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/body_nested_models/tutorial008_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial008_py39.py!}
 ```
 
 ////
@@ -355,7 +355,7 @@ images: List[Image]
 //// tab | Python 3.8+
 
 ```Python hl_lines="15"
-{!> ../../../docs_src/body_nested_models/tutorial008.py!}
+{!> ../../docs_src/body_nested_models/tutorial008.py!}
 ```
 
 ////
@@ -391,7 +391,7 @@ images: List[Image]
 //// tab | Python 3.9+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/body_nested_models/tutorial009_py39.py!}
+{!> ../../docs_src/body_nested_models/tutorial009_py39.py!}
 ```
 
 ////
@@ -399,7 +399,7 @@ images: List[Image]
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/body_nested_models/tutorial009.py!}
+{!> ../../docs_src/body_nested_models/tutorial009.py!}
 ```
 
 ////
@@ -422,8 +422,8 @@ images: List[Image]
 
 而且还具有下列好处：
 
-* 编辑器支持（处处皆可自动补全！）
-* 数据转换（也被称为解析/序列化）
-* 数据校验
-* 模式文档
-* 自动生成的文档
+- 编辑器支持（处处皆可自动补全！）
+- 数据转换（也被称为解析/序列化）
+- 数据校验
+- 模式文档
+- 自动生成的文档

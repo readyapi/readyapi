@@ -66,10 +66,10 @@ Beispielsweise gibt es ein offizielles <a href="https://hub.docker.com/_/python"
 
 Und es gibt viele andere Images für verschiedene Dinge wie Datenbanken, zum Beispiel für:
 
-* <a href="https://hub.docker.com/_/postgres" class="external-link" target="_blank">PostgreSQL</a>
-* <a href="https://hub.docker.com/_/mysql" class="external-link" target="_blank">MySQL</a>
-* <a href="https://hub.docker.com/_/mongo" class="external-link" target="_blank">MongoDB</a>
-* <a href="https://hub.docker.com/_/redis" class="external-link" target="_blank">Redis</a>, usw.
+- <a href="https://hub.docker.com/_/postgres" class="external-link" target="_blank">PostgreSQL</a>
+- <a href="https://hub.docker.com/_/mysql" class="external-link" target="_blank">MySQL</a>
+- <a href="https://hub.docker.com/_/mongo" class="external-link" target="_blank">MongoDB</a>
+- <a href="https://hub.docker.com/_/redis" class="external-link" target="_blank">Redis</a>, usw.
 
 Durch die Verwendung eines vorgefertigten Containerimages ist es sehr einfach, verschiedene Tools zu **kombinieren** und zu verwenden. Zum Beispiel, um eine neue Datenbank auszuprobieren. In den meisten Fällen können Sie die **offiziellen Images** verwenden und diese einfach mit Umgebungsvariablen konfigurieren.
 
@@ -99,9 +99,9 @@ Ich zeige Ihnen, wie Sie ein **Docker-Image** für ReadyAPI **von Grund auf** er
 
 Das ist, was Sie in **den meisten Fällen** tun möchten, zum Beispiel:
 
-* Bei Verwendung von **Kubernetes** oder ähnlichen Tools
-* Beim Betrieb auf einem **Raspberry Pi**
-* Bei Verwendung eines Cloud-Dienstes, der ein Containerimage für Sie ausführt, usw.
+- Bei Verwendung von **Kubernetes** oder ähnlichen Tools
+- Beim Betrieb auf einem **Raspberry Pi**
+- Bei Verwendung eines Cloud-Dienstes, der ein Containerimage für Sie ausführt, usw.
 
 ### Paketanforderungen
 
@@ -111,7 +111,7 @@ Dies hängt hauptsächlich von dem Tool ab, mit dem Sie diese Anforderungen **in
 
 Die gebräuchlichste Methode besteht darin, eine Datei `requirements.txt` mit den Namen der Packages und deren Versionen zu erstellen, eine pro Zeile.
 
-Sie würden natürlich die gleichen Ideen verwenden, die Sie in [Über ReadyAPI-Versionen](versions.md){.internal-link target=_blank} gelesen haben, um die Versionsbereiche festzulegen.
+Sie würden natürlich die gleichen Ideen verwenden, die Sie in [Über ReadyAPI-Versionen](versions.md){.internal-link target=\_blank} gelesen haben, um die Versionsbereiche festzulegen.
 
 Ihre `requirements.txt` könnte beispielsweise so aussehen:
 
@@ -143,9 +143,9 @@ Ich zeige Ihnen später in einem Abschnitt unten ein Beispiel unter Verwendung v
 
 ### Den **ReadyAPI**-Code erstellen
 
-* Erstellen Sie ein `app`-Verzeichnis und betreten Sie es.
-* Erstellen Sie eine leere Datei `__init__.py`.
-* Erstellen Sie eine `main.py`-Datei mit:
+- Erstellen Sie ein `app`-Verzeichnis und betreten Sie es.
+- Erstellen Sie eine leere Datei `__init__.py`.
+- Erstellen Sie eine `main.py`-Datei mit:
 
 ```Python
 from typing import Union
@@ -193,43 +193,43 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. Setze das aktuelle Arbeitsverzeichnis auf `/code`.
 
-    Hier plazieren wir die Datei `requirements.txt` und das Verzeichnis `app`.
+   Hier plazieren wir die Datei `requirements.txt` und das Verzeichnis `app`.
 
 3. Kopiere die Datei mit den Paketanforderungen in das Verzeichnis `/code`.
 
-    Kopieren Sie zuerst **nur** die Datei mit den Anforderungen, nicht den Rest des Codes.
+   Kopieren Sie zuerst **nur** die Datei mit den Anforderungen, nicht den Rest des Codes.
 
-    Da sich diese Datei **nicht oft ändert**, erkennt Docker das und verwendet den **Cache** für diesen Schritt, wodurch der Cache auch für den nächsten Schritt aktiviert wird.
+   Da sich diese Datei **nicht oft ändert**, erkennt Docker das und verwendet den **Cache** für diesen Schritt, wodurch der Cache auch für den nächsten Schritt aktiviert wird.
 
 4. Installiere die Paketabhängigkeiten aus der Anforderungsdatei.
 
-    Die Option `--no-cache-dir` weist `pip` an, die heruntergeladenen Pakete nicht lokal zu speichern, da dies nur benötigt wird, sollte `pip` erneut ausgeführt werden, um dieselben Pakete zu installieren, aber das ist beim Arbeiten mit Containern nicht der Fall.
+   Die Option `--no-cache-dir` weist `pip` an, die heruntergeladenen Pakete nicht lokal zu speichern, da dies nur benötigt wird, sollte `pip` erneut ausgeführt werden, um dieselben Pakete zu installieren, aber das ist beim Arbeiten mit Containern nicht der Fall.
 
-    /// note | Hinweis
+   /// note | Hinweis
 
-    Das `--no-cache-dir` bezieht sich nur auf `pip`, es hat nichts mit Docker oder Containern zu tun.
+   Das `--no-cache-dir` bezieht sich nur auf `pip`, es hat nichts mit Docker oder Containern zu tun.
 
-    ///
+   ///
 
-    Die Option `--upgrade` weist `pip` an, die Packages zu aktualisieren, wenn sie bereits installiert sind.
+   Die Option `--upgrade` weist `pip` an, die Packages zu aktualisieren, wenn sie bereits installiert sind.
 
-    Da der vorherige Schritt des Kopierens der Datei vom **Docker-Cache** erkannt werden konnte, wird dieser Schritt auch **den Docker-Cache verwenden**, sofern verfügbar.
+   Da der vorherige Schritt des Kopierens der Datei vom **Docker-Cache** erkannt werden konnte, wird dieser Schritt auch **den Docker-Cache verwenden**, sofern verfügbar.
 
-    Durch die Verwendung des Caches in diesem Schritt **sparen** Sie viel **Zeit**, wenn Sie das Image während der Entwicklung immer wieder erstellen, anstatt **jedes Mal** alle Abhängigkeiten **herunterzuladen und zu installieren**.
+   Durch die Verwendung des Caches in diesem Schritt **sparen** Sie viel **Zeit**, wenn Sie das Image während der Entwicklung immer wieder erstellen, anstatt **jedes Mal** alle Abhängigkeiten **herunterzuladen und zu installieren**.
 
 5. Kopiere das Verzeichnis `./app` in das Verzeichnis `/code`.
 
-    Da hier der gesamte Code enthalten ist, der sich **am häufigsten ändert**, wird der Docker-**Cache** nicht ohne weiteres für diesen oder andere **folgende Schritte** verwendet.
+   Da hier der gesamte Code enthalten ist, der sich **am häufigsten ändert**, wird der Docker-**Cache** nicht ohne weiteres für diesen oder andere **folgende Schritte** verwendet.
 
-    Daher ist es wichtig, dies **nahe dem Ende** des `Dockerfile`s zu platzieren, um die Erstellungszeiten des Containerimages zu optimieren.
+   Daher ist es wichtig, dies **nahe dem Ende** des `Dockerfile`s zu platzieren, um die Erstellungszeiten des Containerimages zu optimieren.
 
 6. Lege den **Befehl** fest, um den `uvicorn`-Server zu starten.
 
-    `CMD` nimmt eine Liste von Zeichenfolgen entgegen. Jede dieser Zeichenfolgen entspricht dem, was Sie durch Leerzeichen getrennt in die Befehlszeile eingeben würden.
+   `CMD` nimmt eine Liste von Zeichenfolgen entgegen. Jede dieser Zeichenfolgen entspricht dem, was Sie durch Leerzeichen getrennt in die Befehlszeile eingeben würden.
 
-    Dieser Befehl wird aus dem **aktuellen Arbeitsverzeichnis** ausgeführt, dem gleichen `/code`-Verzeichnis, das Sie oben mit `WORKDIR /code` festgelegt haben.
+   Dieser Befehl wird aus dem **aktuellen Arbeitsverzeichnis** ausgeführt, dem gleichen `/code`-Verzeichnis, das Sie oben mit `WORKDIR /code` festgelegt haben.
 
-    Da das Programm unter `/code` gestartet wird und sich darin das Verzeichnis `./app` mit Ihrem Code befindet, kann **Uvicorn** `app` sehen und aus `app.main` **importieren**.
+   Da das Programm unter `/code` gestartet wird und sich darin das Verzeichnis `./app` mit Ihrem Code befindet, kann **Uvicorn** `app` sehen und aus `app.main` **importieren**.
 
 /// tip | "Tipp"
 
@@ -292,8 +292,8 @@ COPY ./app /code/app
 
 Nachdem nun alle Dateien vorhanden sind, erstellen wir das Containerimage.
 
-* Gehen Sie zum Projektverzeichnis (dort, wo sich Ihr `Dockerfile` und Ihr `app`-Verzeichnis befindet).
-* Erstellen Sie Ihr ReadyAPI-Image:
+- Gehen Sie zum Projektverzeichnis (dort, wo sich Ihr `Dockerfile` und Ihr `app`-Verzeichnis befindet).
+- Erstellen Sie Ihr ReadyAPI-Image:
 
 <div class="termy">
 
@@ -315,7 +315,7 @@ In diesem Fall handelt es sich um dasselbe aktuelle Verzeichnis (`.`).
 
 ### Den Docker-Container starten
 
-* Führen Sie einen Container basierend auf Ihrem Image aus:
+- Führen Sie einen Container basierend auf Ihrem Image aus:
 
 <div class="termy">
 
@@ -388,7 +388,7 @@ Passen Sie dann den Uvicorn-Befehl an, um das neue Modul `main` anstelle von `ap
 
 ## Deployment-Konzepte
 
-Lassen Sie uns noch einmal über einige der gleichen [Deployment-Konzepte](concepts.md){.internal-link target=_blank} in Bezug auf Container sprechen.
+Lassen Sie uns noch einmal über einige der gleichen [Deployment-Konzepte](concepts.md){.internal-link target=\_blank} in Bezug auf Container sprechen.
 
 Container sind hauptsächlich ein Werkzeug, um den Prozess des **Erstellens und Deployments** einer Anwendung zu vereinfachen, sie erzwingen jedoch keinen bestimmten Ansatz für die Handhabung dieser **Deployment-Konzepte**, und es gibt mehrere mögliche Strategien.
 
@@ -396,12 +396,12 @@ Die **gute Nachricht** ist, dass es mit jeder unterschiedlichen Strategie eine M
 
 Sehen wir uns diese **Deployment-Konzepte** im Hinblick auf Container noch einmal an:
 
-* Sicherheit – HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- Sicherheit – HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 ## HTTPS
 
@@ -457,7 +457,7 @@ Jeder dieser Container, in denen Ihre Anwendung ausgeführt wird, verfügt norma
 
 Und das verteilte Containersystem mit dem **Load Balancer** würde **die Requests abwechselnd** an jeden einzelnen Container mit Ihrer Anwendung verteilen. Jeder Request könnte also von einem der mehreren **replizierten Container** verarbeitet werden, in denen Ihre Anwendung ausgeführt wird.
 
-Und normalerweise wäre dieser **Load Balancer** in der Lage, Requests zu verarbeiten, die an *andere* Anwendungen in Ihrem Cluster gerichtet sind (z. B. eine andere Domain oder unter einem anderen URL-Pfad-Präfix), und würde diese Kommunikation an die richtigen Container weiterleiten für *diese andere* Anwendung, die in Ihrem Cluster ausgeführt wird.
+Und normalerweise wäre dieser **Load Balancer** in der Lage, Requests zu verarbeiten, die an _andere_ Anwendungen in Ihrem Cluster gerichtet sind (z. B. eine andere Domain oder unter einem anderen URL-Pfad-Präfix), und würde diese Kommunikation an die richtigen Container weiterleiten für _diese andere_ Anwendung, die in Ihrem Cluster ausgeführt wird.
 
 ### Ein Prozess pro Container
 
@@ -499,12 +499,12 @@ In diesem Fall könnte einfacher sein, **einen Container** mit **mehreren Prozes
 
 Der Hauptpunkt ist, dass **keine** dieser Regeln **in Stein gemeißelt** ist, der man blind folgen muss. Sie können diese Ideen verwenden, um **Ihren eigenen Anwendungsfall zu evaluieren**, zu entscheiden, welcher Ansatz für Ihr System am besten geeignet ist und herauszufinden, wie Sie folgende Konzepte verwalten:
 
-* Sicherheit – HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- Sicherheit – HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 ## Arbeitsspeicher
 
@@ -538,11 +538,11 @@ Wenn Sie ein einfaches Setup mit einem **einzelnen Container** haben, welcher da
 
 ## Offizielles Docker-Image mit Gunicorn – Uvicorn
 
-Es gibt ein offizielles Docker-Image, in dem Gunicorn mit Uvicorn-Workern ausgeführt wird, wie in einem vorherigen Kapitel beschrieben: [Serverworker – Gunicorn mit Uvicorn](server-workers.md){.internal-link target=_blank}.
+Es gibt ein offizielles Docker-Image, in dem Gunicorn mit Uvicorn-Workern ausgeführt wird, wie in einem vorherigen Kapitel beschrieben: [Serverworker – Gunicorn mit Uvicorn](server-workers.md){.internal-link target=\_blank}.
 
 Dieses Image wäre vor allem in den oben beschriebenen Situationen nützlich: [Container mit mehreren Prozessen und Sonderfälle](#container-mit-mehreren-prozessen-und-sonderfalle).
 
-* <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
+- <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
 
 /// warning | "Achtung"
 
@@ -590,7 +590,7 @@ COPY ./app /app
 
 ### Größere Anwendungen
 
-Wenn Sie dem Abschnitt zum Erstellen von [größeren Anwendungen mit mehreren Dateien](../tutorial/bigger-applications.md){.internal-link target=_blank} gefolgt sind, könnte Ihr `Dockerfile` stattdessen wie folgt aussehen:
+Wenn Sie dem Abschnitt zum Erstellen von [größeren Anwendungen mit mehreren Dateien](../tutorial/bigger-applications.md){.internal-link target=\_blank} gefolgt sind, könnte Ihr `Dockerfile` stattdessen wie folgt aussehen:
 
 ```Dockerfile hl_lines="7"
 FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.9
@@ -614,11 +614,11 @@ Nachdem Sie ein Containerimage (Docker) haben, gibt es mehrere Möglichkeiten, e
 
 Zum Beispiel:
 
-* Mit **Docker Compose** auf einem einzelnen Server
-* Mit einem **Kubernetes**-Cluster
-* Mit einem Docker Swarm Mode-Cluster
-* Mit einem anderen Tool wie Nomad
-* Mit einem Cloud-Dienst, der Ihr Containerimage nimmt und es bereitstellt
+- Mit **Docker Compose** auf einem einzelnen Server
+- Mit einem **Kubernetes**-Cluster
+- Mit einem Docker Swarm Mode-Cluster
+- Mit einem anderen Tool wie Nomad
+- Mit einem Cloud-Dienst, der Ihr Containerimage nimmt und es bereitstellt
 
 ## Docker-Image mit Poetry
 
@@ -663,13 +663,13 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. Setze `/tmp` als aktuelles Arbeitsverzeichnis.
 
-    Hier werden wir die Datei `requirements.txt` generieren.
+   Hier werden wir die Datei `requirements.txt` generieren.
 
 3. Installiere Poetry in dieser Docker-Phase.
 
 4. Kopiere die Dateien `pyproject.toml` und `poetry.lock` in das Verzeichnis `/tmp`.
 
-    Da es `./poetry.lock*` verwendet (endet mit einem `*`), stürzt es nicht ab, wenn diese Datei noch nicht verfügbar ist.
+   Da es `./poetry.lock*` verwendet (endet mit einem `*`), stürzt es nicht ab, wenn diese Datei noch nicht verfügbar ist.
 
 5. Generiere die Datei `requirements.txt`.
 
@@ -679,7 +679,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 8. Kopiere die Datei `requirements.txt` in das Verzeichnis `/code`.
 
-    Diese Datei existiert nur in der vorherigen Docker-Phase, deshalb verwenden wir `--from-requirements-stage`, um sie zu kopieren.
+   Diese Datei existiert nur in der vorherigen Docker-Phase, deshalb verwenden wir `--from-requirements-stage`, um sie zu kopieren.
 
 9. Installiere die Paketabhängigkeiten von der generierten Datei `requirements.txt`.
 
@@ -717,12 +717,12 @@ CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port"
 
 Mithilfe von Containersystemen (z. B. mit **Docker** und **Kubernetes**) ist es ziemlich einfach, alle **Deployment-Konzepte** zu handhaben:
 
-* HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 In den meisten Fällen möchten Sie wahrscheinlich kein Basisimage verwenden und stattdessen **ein Containerimage von Grund auf erstellen**, eines basierend auf dem offiziellen Python-Docker-Image.
 

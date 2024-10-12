@@ -3,7 +3,7 @@
 Cuando declaras otros parámetros de la función que no hacen parte de los parámetros de path estos se interpretan automáticamente como parámetros de "query".
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial001.py!}
+{!../../docs_src/query_params/tutorial001.py!}
 ```
 
 El query es el conjunto de pares de key-value que van después del `?` en la URL, separados por caracteres `&`.
@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...los parámetros de query son:
 
-* `skip`: con un valor de `0`
-* `limit`: con un valor de `10`
+- `skip`: con un valor de `0`
+- `limit`: con un valor de `10`
 
 Dado que son parte de la URL son strings "naturalmente".
 
@@ -25,10 +25,10 @@ Pero cuando los declaras con tipos de Python (en el ejemplo arriba, como `int`) 
 
 Todo el proceso que aplicaba a los parámetros de path también aplica a los parámetros de query:
 
-* Soporte del editor (obviamente)
-* <abbr title="convertir el string que viene de un HTTP request a datos de Python">"Parsing"</abbr> de datos
-* Validación de datos
-* Documentación automática
+- Soporte del editor (obviamente)
+- <abbr title="convertir el string que viene de un HTTP request a datos de Python">"Parsing"</abbr> de datos
+- Validación de datos
+- Documentación automática
 
 ## Configuraciones por defecto
 
@@ -56,15 +56,15 @@ http://127.0.0.1:8000/items/?skip=20
 
 Los valores de los parámetros en tu función serán:
 
-* `skip=20`: porque lo definiste en la URL
-* `limit=10`: porque era el valor por defecto
+- `skip=20`: porque lo definiste en la URL
+- `limit=10`: porque era el valor por defecto
 
 ## Parámetros opcionales
 
 Del mismo modo puedes declarar parámetros de query opcionales definiendo el valor por defecto como `None`:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial002.py!}
+{!../../docs_src/query_params/tutorial002.py!}
 ```
 
 En este caso el parámetro de la función `q` será opcional y será `None` por defecto.
@@ -88,7 +88,7 @@ El `Union` en `Union[str, None]` no es usado por ReadyAPI (ReadyAPI solo usará 
 También puedes declarar tipos `bool` y serán convertidos:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params/tutorial003.py!}
+{!../../docs_src/query_params/tutorial003.py!}
 ```
 
 En este caso, si vas a:
@@ -132,7 +132,7 @@ No los tienes que declarar en un orden específico.
 Serán detectados por nombre:
 
 ```Python hl_lines="8  10"
-{!../../../docs_src/query_params/tutorial004.py!}
+{!../../docs_src/query_params/tutorial004.py!}
 ```
 
 ## Parámetros de query requeridos
@@ -144,7 +144,7 @@ Si no quieres añadir un valor específico sino solo hacerlo opcional, pon el va
 Pero cuando quieres hacer que un parámetro de query sea requerido, puedes simplemente no declararle un valor por defecto:
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/query_params/tutorial005.py!}
+{!../../docs_src/query_params/tutorial005.py!}
 ```
 
 Aquí el parámetro de query `needy` es un parámetro de query requerido, del tipo `str`.
@@ -190,17 +190,17 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 Por supuesto que también puedes definir algunos parámetros como requeridos, con un valor por defecto y otros completamente opcionales:
 
 ```Python hl_lines="10"
-{!../../../docs_src/query_params/tutorial006.py!}
+{!../../docs_src/query_params/tutorial006.py!}
 ```
 
 En este caso hay 3 parámetros de query:
 
-* `needy`, un `str` requerido.
-* `skip`, un `int` con un valor por defecto de `0`.
-* `limit`, un `int` opcional.
+- `needy`, un `str` requerido.
+- `skip`, un `int` con un valor por defecto de `0`.
+- `limit`, un `int` opcional.
 
 /// tip | Consejo
 
-También podrías usar los `Enum`s de la misma manera que con los [Parámetros de path](path-params.md#valores-predefinidos){.internal-link target=_blank}.
+También podrías usar los `Enum`s de la misma manera que con los [Parámetros de path](path-params.md#valores-predefinidos){.internal-link target=\_blank}.
 
 ///

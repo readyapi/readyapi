@@ -17,7 +17,7 @@ Formları kullanmak için öncelikle <a href="https://github.com/Kludex/python-m
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_forms/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@ Formları kullanmak için öncelikle <a href="https://github.com/Kludex/python-m
 //// tab | Python 3.8+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms/tutorial001_an.py!}
+{!> ../../docs_src/request_forms/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms/tutorial001.py!}
+{!> ../../docs_src/request_forms/tutorial001.py!}
 ```
 
 ////
@@ -51,7 +51,7 @@ Form parametrelerini `Body` veya `Query` için yaptığınız gibi oluşturun:
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/request_forms/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -59,7 +59,7 @@ Form parametrelerini `Body` veya `Query` için yaptığınız gibi oluşturun:
 //// tab | Python 3.8+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_forms/tutorial001_an.py!}
+{!> ../../docs_src/request_forms/tutorial001_an.py!}
 ```
 
 ////
@@ -73,7 +73,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/request_forms/tutorial001.py!}
+{!> ../../docs_src/request_forms/tutorial001.py!}
 ```
 
 ////
@@ -114,7 +114,7 @@ Form kodlama türleri ve form alanları hakkında daha fazla bilgi edinmek istiy
 
 /// warning | "Uyarı"
 
-*Yol operasyonları* içerisinde birden fazla `Form` parametresi tanımlayabilirsiniz ancak bunlarla birlikte JSON verisi kabul eden `Body` alanları tanımlayamazsınız çünkü bu durumda istek gövdesi `application/json` yerine `application/x-www-form-urlencoded` ile kodlanmış olur.
+_Yol operasyonları_ içerisinde birden fazla `Form` parametresi tanımlayabilirsiniz ancak bunlarla birlikte JSON verisi kabul eden `Body` alanları tanımlayamazsınız çünkü bu durumda istek gövdesi `application/json` yerine `application/x-www-form-urlencoded` ile kodlanmış olur.
 
 Bu **ReadyAPI**'ın getirdiği bir kısıtlama değildir, HTTP protokolünün bir parçasıdır.
 

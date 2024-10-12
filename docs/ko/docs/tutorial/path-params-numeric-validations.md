@@ -7,7 +7,7 @@
 먼저 `readyapi`에서 `Path`를 임포트합니다:
 
 ```Python hl_lines="3"
-{!../../../docs_src/path_params_numeric_validations/tutorial001.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial001.py!}
 ```
 
 ## 메타데이터 선언
@@ -17,7 +17,7 @@
 예를 들어, `title` 메타데이터 값을 경로 매개변수 `item_id`에 선언하려면 다음과 같이 입력할 수 있습니다:
 
 ```Python hl_lines="10"
-{!../../../docs_src/path_params_numeric_validations/tutorial001.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial001.py!}
 ```
 
 /// note | "참고"
@@ -47,7 +47,7 @@
 따라서 함수를 다음과 같이 선언 할 수 있습니다:
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params_numeric_validations/tutorial002.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial002.py!}
 ```
 
 ## 필요한 경우 매개변수 정렬하기, 트릭
@@ -59,7 +59,7 @@
 파이썬은 `*`으로 아무런 행동도 하지 않지만, 따르는 매개변수들은 <abbr title="유래: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>로도 알려진 키워드 인자(키-값 쌍)여야 함을 인지합니다. 기본값을 가지고 있지 않더라도 그렇습니다.
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params_numeric_validations/tutorial003.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial003.py!}
 ```
 
 ## 숫자 검증: 크거나 같음
@@ -69,18 +69,18 @@
 여기서 `ge=1`인 경우, `item_id`는 `1`보다 "크거나(`g`reater) 같은(`e`qual)" 정수형 숫자여야 합니다.
 
 ```Python hl_lines="8"
-{!../../../docs_src/path_params_numeric_validations/tutorial004.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial004.py!}
 ```
 
 ## 숫자 검증: 크거나 같음 및 작거나 같음
 
 동일하게 적용됩니다:
 
-* `gt`: 크거나(`g`reater `t`han)
-* `le`: 작거나 같은(`l`ess than or `e`qual)
+- `gt`: 크거나(`g`reater `t`han)
+- `le`: 작거나 같은(`l`ess than or `e`qual)
 
 ```Python hl_lines="9"
-{!../../../docs_src/path_params_numeric_validations/tutorial005.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial005.py!}
 ```
 
 ## 숫자 검증: 부동소수, 크거나 및 작거나
@@ -94,19 +94,19 @@
 <abbr title="less than"><code>lt</code></abbr> 역시 마찬가지입니다.
 
 ```Python hl_lines="11"
-{!../../../docs_src/path_params_numeric_validations/tutorial006.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial006.py!}
 ```
 
 ## 요약
 
-`Query`, `Path`(아직 보지 못한 다른 것들도)를 사용하면 [쿼리 매개변수와 문자열 검증](query-params-str-validations.md){.internal-link target=_blank}에서와 마찬가지로 메타데이터와 문자열 검증을 선언할 수 있습니다.
+`Query`, `Path`(아직 보지 못한 다른 것들도)를 사용하면 [쿼리 매개변수와 문자열 검증](query-params-str-validations.md){.internal-link target=\_blank}에서와 마찬가지로 메타데이터와 문자열 검증을 선언할 수 있습니다.
 
 그리고 숫자 검증 또한 선언할 수 있습니다:
 
-* `gt`: 크거나(`g`reater `t`han)
-* `ge`: 크거나 같은(`g`reater than or `e`qual)
-* `lt`: 작거나(`l`ess `t`han)
-* `le`: 작거나 같은(`l`ess than or `e`qual)
+- `gt`: 크거나(`g`reater `t`han)
+- `ge`: 크거나 같은(`g`reater than or `e`qual)
+- `lt`: 작거나(`l`ess `t`han)
+- `le`: 작거나 같은(`l`ess than or `e`qual)
 
 /// info | "정보"
 

@@ -1,6 +1,6 @@
 # Development - Contributing
 
-First, you might want to see the basic ways to [help ReadyAPI and get help](help-readyapi.md){.internal-link target=_blank}.
+First, you might want to see the basic ways to [help ReadyAPI and get help](help-readyapi.md){.internal-link target=\_blank}.
 
 ## Developing
 
@@ -8,7 +8,7 @@ If you already cloned the <a href="https://github.com/readyapi/readyapi" class="
 
 ### Virtual environment
 
-Follow the instructions to create and activate a [virtual environment](virtual-environments.md){.internal-link target=_blank} for the internal code of `readyapi`.
+Follow the instructions to create and activate a [virtual environment](virtual-environments.md){.internal-link target=\_blank} for the internal code of `readyapi`.
 
 ### Install requirements using pip
 
@@ -159,9 +159,9 @@ Most of the tests actually run against the example source files in the documenta
 
 This helps to make sure that:
 
-* The documentation is up-to-date.
-* The documentation examples can be run as is.
-* Most of the features are covered by the documentation, ensured by test coverage.
+- The documentation is up-to-date.
+- The documentation examples can be run as is.
+- Most of the features are covered by the documentation, ensured by test coverage.
 
 #### Apps and docs at the same time
 
@@ -187,9 +187,9 @@ Here are the steps to help with translations.
 
 #### Tips and guidelines
 
-* Check the currently <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">existing pull requests</a> for your language. You can filter the pull requests by the ones with the label for your language. For example, for Spanish, the label is <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3Aawaiting-review" class="external-link" target="_blank">`lang-es`</a>.
+- Check the currently <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">existing pull requests</a> for your language. You can filter the pull requests by the ones with the label for your language. For example, for Spanish, the label is <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3Aawaiting-review" class="external-link" target="_blank">`lang-es`</a>.
 
-* Review those pull requests, requesting changes or approving them. For the languages I don't speak, I'll wait for several others to review the translation before merging.
+- Review those pull requests, requesting changes or approving them. For the languages I don't speak, I'll wait for several others to review the translation before merging.
 
 /// tip
 
@@ -199,11 +199,11 @@ Check the docs about <a href="https://help.github.com/en/github/collaborating-wi
 
 ///
 
-* Check if there's a <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussion</a> to coordinate translations for your language. You can subscribe to it, and when there's a new pull request to review, an automatic comment will be added to the discussion.
+- Check if there's a <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussion</a> to coordinate translations for your language. You can subscribe to it, and when there's a new pull request to review, an automatic comment will be added to the discussion.
 
-* If you translate pages, add a single pull request per page translated. That will make it much easier for others to review it.
+- If you translate pages, add a single pull request per page translated. That will make it much easier for others to review it.
 
-* To check the 2-letter code for the language you want to translate, you can use the table <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">List of ISO 639-1 codes</a>.
+- To check the 2-letter code for the language you want to translate, you can use the table <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">List of ISO 639-1 codes</a>.
 
 #### Existing language
 
@@ -254,15 +254,15 @@ Now you can go to <a href="http://127.0.0.1:8008" class="external-link" target="
 
 You will see that every language has all the pages. But some pages are not translated and have an info box at the top, about the missing translation.
 
-Now let's say that you want to add a translation for the section [Features](features.md){.internal-link target=_blank}.
+Now let's say that you want to add a translation for the section [Features](features.md){.internal-link target=\_blank}.
 
-* Copy the file at:
+- Copy the file at:
 
 ```
 docs/en/docs/features.md
 ```
 
-* Paste it in exactly the same location but for the language you want to translate, e.g.:
+- Paste it in exactly the same location but for the language you want to translate, e.g.:
 
 ```
 docs/es/docs/features.md
@@ -282,13 +282,13 @@ Now you can translate it all and see how it looks as you save the file.
 
 🚨 Don't translate:
 
-* Files under `reference/`
-* `release-notes.md`
-* `readyapi-people.md`
-* `external-links.md`
-* `newsletter.md`
-* `management-tasks.md`
-* `management.md`
+- Files under `reference/`
+- `release-notes.md`
+- `readyapi-people.md`
+- `external-links.md`
+- `newsletter.md`
+- `management-tasks.md`
+- `management.md`
 
 Some of these files are updated very frequently and a translation would always be behind, or they include the main content from English source files, etc.
 
@@ -374,19 +374,19 @@ Serving at: http://127.0.0.1:8008
 
 #### Translation specific tips and guidelines
 
-* Translate only the Markdown documents (`.md`). Do not translate the code examples at `./docs_src`.
+- Translate only the Markdown documents (`.md`). Do not translate the code examples at `./docs_src`.
 
-* In code blocks within the Markdown document, translate comments (`# a comment`), but leave the rest unchanged.
+- In code blocks within the Markdown document, translate comments (`# a comment`), but leave the rest unchanged.
 
-* Do not change anything enclosed in "``" (inline code).
+- Do not change anything enclosed in "``" (inline code).
 
-* In lines starting with `///` translate only the ` "... Text ..."` part. Leave the rest unchanged.
+- In lines starting with `///` translate only the ` "... Text ..."` part. Leave the rest unchanged.
 
-* You can translate info boxes like `/// warning` with for example `/// warning | Achtung`. But do not change the word immediately after the `///`, it determines the color of the info box.
+- You can translate info boxes like `/// warning` with for example `/// warning | Achtung`. But do not change the word immediately after the `///`, it determines the color of the info box.
 
-* Do not change the paths in links to images, code files, Markdown documents.
+- Do not change the paths in links to images, code files, Markdown documents.
 
-* However, when a Markdown document is translated, the `#hash-parts` in links to its headings may change. Update these links if possible.
-    * Search for such links in the translated document using the regex `#[^# ]`.
-    * Search in all documents already translated into your language for `your-translated-document.md`. For example VS Code has an option "Edit" -> "Find in Files".
-    * When translating a document, do not "pre-translate" `#hash-parts` that link to headings in untranslated documents.
+- However, when a Markdown document is translated, the `#hash-parts` in links to its headings may change. Update these links if possible.
+  - Search for such links in the translated document using the regex `#[^# ]`.
+  - Search in all documents already translated into your language for `your-translated-document.md`. For example VS Code has an option "Edit" -> "Find in Files".
+  - When translating a document, do not "pre-translate" `#hash-parts` that link to headings in untranslated documents.

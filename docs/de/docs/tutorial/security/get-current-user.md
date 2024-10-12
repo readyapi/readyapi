@@ -1,11 +1,11 @@
 # Aktuellen Benutzer abrufen
 
-Im vorherigen Kapitel hat das Sicherheitssystem (das auf dem Dependency Injection System basiert) der *Pfadoperation-Funktion* einen `token` vom Typ `str` überreicht:
+Im vorherigen Kapitel hat das Sicherheitssystem (das auf dem Dependency Injection System basiert) der _Pfadoperation-Funktion_ einen `token` vom Typ `str` überreicht:
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/security/tutorial001_an_py39.py!}
+{!> ../../docs_src/security/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -13,7 +13,7 @@ Im vorherigen Kapitel hat das Sicherheitssystem (das auf dem Dependency Injectio
 //// tab | Python 3.8+
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/security/tutorial001_an.py!}
+{!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
 ////
@@ -27,7 +27,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/security/tutorial001.py!}
+{!> ../../docs_src/security/tutorial001.py!}
 ```
 
 ////
@@ -45,7 +45,7 @@ So wie wir Pydantic zum Deklarieren von Bodys verwenden, können wir es auch üb
 //// tab | Python 3.10+
 
 ```Python hl_lines="5  12-16"
-{!> ../../../docs_src/security/tutorial002_an_py310.py!}
+{!> ../../docs_src/security/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@ So wie wir Pydantic zum Deklarieren von Bodys verwenden, können wir es auch üb
 //// tab | Python 3.9+
 
 ```Python hl_lines="5  12-16"
-{!> ../../../docs_src/security/tutorial002_an_py39.py!}
+{!> ../../docs_src/security/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@ So wie wir Pydantic zum Deklarieren von Bodys verwenden, können wir es auch üb
 //// tab | Python 3.8+
 
 ```Python hl_lines="5  13-17"
-{!> ../../../docs_src/security/tutorial002_an.py!}
+{!> ../../docs_src/security/tutorial002_an.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="3  10-14"
-{!> ../../../docs_src/security/tutorial002_py310.py!}
+{!> ../../docs_src/security/tutorial002_py310.py!}
 ```
 
 ////
@@ -89,7 +89,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="5  12-16"
-{!> ../../../docs_src/security/tutorial002.py!}
+{!> ../../docs_src/security/tutorial002.py!}
 ```
 
 ////
@@ -102,12 +102,12 @@ Erinnern Sie sich, dass Abhängigkeiten Unterabhängigkeiten haben können?
 
 `get_current_user` wird seinerseits von `oauth2_scheme` abhängen, das wir zuvor erstellt haben.
 
-So wie wir es zuvor in der *Pfadoperation* direkt gemacht haben, erhält unsere neue Abhängigkeit `get_current_user` von der Unterabhängigkeit `oauth2_scheme` einen `token` vom Typ `str`:
+So wie wir es zuvor in der _Pfadoperation_ direkt gemacht haben, erhält unsere neue Abhängigkeit `get_current_user` von der Unterabhängigkeit `oauth2_scheme` einen `token` vom Typ `str`:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="25"
-{!> ../../../docs_src/security/tutorial002_an_py310.py!}
+{!> ../../docs_src/security/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -115,7 +115,7 @@ So wie wir es zuvor in der *Pfadoperation* direkt gemacht haben, erhält unsere 
 //// tab | Python 3.9+
 
 ```Python hl_lines="25"
-{!> ../../../docs_src/security/tutorial002_an_py39.py!}
+{!> ../../docs_src/security/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -123,7 +123,7 @@ So wie wir es zuvor in der *Pfadoperation* direkt gemacht haben, erhält unsere 
 //// tab | Python 3.8+
 
 ```Python hl_lines="26"
-{!> ../../../docs_src/security/tutorial002_an.py!}
+{!> ../../docs_src/security/tutorial002_an.py!}
 ```
 
 ////
@@ -137,7 +137,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/security/tutorial002_py310.py!}
+{!> ../../docs_src/security/tutorial002_py310.py!}
 ```
 
 ////
@@ -151,7 +151,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="25"
-{!> ../../../docs_src/security/tutorial002.py!}
+{!> ../../docs_src/security/tutorial002.py!}
 ```
 
 ////
@@ -163,7 +163,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.10+
 
 ```Python hl_lines="19-22  26-27"
-{!> ../../../docs_src/security/tutorial002_an_py310.py!}
+{!> ../../docs_src/security/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -171,7 +171,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.9+
 
 ```Python hl_lines="19-22  26-27"
-{!> ../../../docs_src/security/tutorial002_an_py39.py!}
+{!> ../../docs_src/security/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -179,7 +179,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.8+
 
 ```Python hl_lines="20-23  27-28"
-{!> ../../../docs_src/security/tutorial002_an.py!}
+{!> ../../docs_src/security/tutorial002_an.py!}
 ```
 
 ////
@@ -193,7 +193,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="17-20  24-25"
-{!> ../../../docs_src/security/tutorial002_py310.py!}
+{!> ../../docs_src/security/tutorial002_py310.py!}
 ```
 
 ////
@@ -207,19 +207,19 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="19-22  26-27"
-{!> ../../../docs_src/security/tutorial002.py!}
+{!> ../../docs_src/security/tutorial002.py!}
 ```
 
 ////
 
 ## Den aktuellen Benutzer einfügen
 
-Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der *Pfadoperation* verwenden:
+Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der _Pfadoperation_ verwenden:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="31"
-{!> ../../../docs_src/security/tutorial002_an_py310.py!}
+{!> ../../docs_src/security/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -227,7 +227,7 @@ Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der *
 //// tab | Python 3.9+
 
 ```Python hl_lines="31"
-{!> ../../../docs_src/security/tutorial002_an_py39.py!}
+{!> ../../docs_src/security/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -235,7 +235,7 @@ Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der *
 //// tab | Python 3.8+
 
 ```Python hl_lines="32"
-{!> ../../../docs_src/security/tutorial002_an.py!}
+{!> ../../docs_src/security/tutorial002_an.py!}
 ```
 
 ////
@@ -249,7 +249,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="29"
-{!> ../../../docs_src/security/tutorial002_py310.py!}
+{!> ../../docs_src/security/tutorial002_py310.py!}
 ```
 
 ////
@@ -263,7 +263,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="31"
-{!> ../../../docs_src/security/tutorial002.py!}
+{!> ../../docs_src/security/tutorial002.py!}
 ```
 
 ////
@@ -290,7 +290,7 @@ Wir sind nicht darauf beschränkt, nur eine Abhängigkeit zu haben, die diesen T
 
 ## Andere Modelle
 
-Sie können jetzt den aktuellen Benutzer direkt in den *Pfadoperation-Funktionen* abrufen und die Sicherheitsmechanismen auf **Dependency Injection** Ebene handhaben, mittels `Depends`.
+Sie können jetzt den aktuellen Benutzer direkt in den _Pfadoperation-Funktionen_ abrufen und die Sicherheitsmechanismen auf **Dependency Injection** Ebene handhaben, mittels `Depends`.
 
 Und Sie können alle Modelle und Daten für die Sicherheitsanforderungen verwenden (in diesem Fall ein Pydantic-Modell `User`).
 
@@ -306,7 +306,7 @@ Verwenden Sie einfach jede Art von Modell, jede Art von Klasse, jede Art von Dat
 
 ## Codegröße
 
-Dieses Beispiel mag ausführlich erscheinen. Bedenken Sie, dass wir Sicherheit, Datenmodelle, Hilfsfunktionen und *Pfadoperationen* in derselben Datei vermischen.
+Dieses Beispiel mag ausführlich erscheinen. Bedenken Sie, dass wir Sicherheit, Datenmodelle, Hilfsfunktionen und _Pfadoperationen_ in derselben Datei vermischen.
 
 Aber hier ist der entscheidende Punkt.
 
@@ -314,16 +314,16 @@ Der Code für Sicherheit und Dependency Injection wird einmal geschrieben.
 
 Sie können es so komplex gestalten, wie Sie möchten. Und dennoch haben Sie es nur einmal geschrieben, an einer einzigen Stelle. Mit all der Flexibilität.
 
-Aber Sie können Tausende von Endpunkten (*Pfadoperationen*) haben, die dasselbe Sicherheitssystem verwenden.
+Aber Sie können Tausende von Endpunkten (_Pfadoperationen_) haben, die dasselbe Sicherheitssystem verwenden.
 
 Und alle (oder beliebige Teile davon) können Vorteil ziehen aus der Wiederverwendung dieser und anderer von Ihnen erstellter Abhängigkeiten.
 
-Und alle diese Tausenden von *Pfadoperationen* können nur drei Zeilen lang sein:
+Und alle diese Tausenden von _Pfadoperationen_ können nur drei Zeilen lang sein:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="30-32"
-{!> ../../../docs_src/security/tutorial002_an_py310.py!}
+{!> ../../docs_src/security/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -331,7 +331,7 @@ Und alle diese Tausenden von *Pfadoperationen* können nur drei Zeilen lang sein
 //// tab | Python 3.9+
 
 ```Python hl_lines="30-32"
-{!> ../../../docs_src/security/tutorial002_an_py39.py!}
+{!> ../../docs_src/security/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -339,7 +339,7 @@ Und alle diese Tausenden von *Pfadoperationen* können nur drei Zeilen lang sein
 //// tab | Python 3.8+
 
 ```Python hl_lines="31-33"
-{!> ../../../docs_src/security/tutorial002_an.py!}
+{!> ../../docs_src/security/tutorial002_an.py!}
 ```
 
 ////
@@ -353,7 +353,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="28-30"
-{!> ../../../docs_src/security/tutorial002_py310.py!}
+{!> ../../docs_src/security/tutorial002_py310.py!}
 ```
 
 ////
@@ -367,17 +367,17 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="30-32"
-{!> ../../../docs_src/security/tutorial002.py!}
+{!> ../../docs_src/security/tutorial002.py!}
 ```
 
 ////
 
 ## Zusammenfassung
 
-Sie können jetzt den aktuellen Benutzer direkt in Ihrer *Pfadoperation-Funktion* abrufen.
+Sie können jetzt den aktuellen Benutzer direkt in Ihrer _Pfadoperation-Funktion_ abrufen.
 
 Wir haben bereits die Hälfte geschafft.
 
-Wir müssen jetzt nur noch eine *Pfadoperation* hinzufügen, mittels der der Benutzer/Client tatsächlich seinen `username` und `password` senden kann.
+Wir müssen jetzt nur noch eine _Pfadoperation_ hinzufügen, mittels der der Benutzer/Client tatsächlich seinen `username` und `password` senden kann.
 
 Das kommt als nächstes.

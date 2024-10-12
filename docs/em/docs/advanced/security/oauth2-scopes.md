@@ -42,9 +42,9 @@ Oauth2️⃣ 🔧 🔬 "↔" 📇 🎻 🎏 🚀.
 
 👫 🛎 ⚙️ 📣 🎯 💂‍♂ ✔, 🖼:
 
-* `users:read` ⚖️ `users:write` ⚠ 🖼.
-* `instagram_basic` ⚙️ 👱📔 / 👱📔.
-* `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
+- `users:read` ⚖️ `users:write` ⚠ 🖼.
+- `instagram_basic` ⚙️ 👱📔 / 👱📔.
+- `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
 
 /// info
 
@@ -60,10 +60,10 @@ Oauth2️⃣ 👫 🎻.
 
 ## 🌐 🎑
 
-🥇, ➡️ 🔜 👀 🍕 👈 🔀 ⚪️➡️ 🖼 👑 **🔰 - 👩‍💻 🦮** [Oauth2️⃣ ⏮️ 🔐 (&amp; 🔁), 📨 ⏮️ 🥙 🤝](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}. 🔜 ⚙️ Oauth2️⃣ ↔:
+🥇, ➡️ 🔜 👀 🍕 👈 🔀 ⚪️➡️ 🖼 👑 **🔰 - 👩‍💻 🦮** [Oauth2️⃣ ⏮️ 🔐 (&amp; 🔁), 📨 ⏮️ 🥙 🤝](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}. 🔜 ⚙️ Oauth2️⃣ ↔:
 
 ```Python hl_lines="2  4  8  12  46  64  105  107-115  121-124  128-134  139  155"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 🔜 ➡️ 📄 👈 🔀 🔁 🔁.
@@ -75,7 +75,7 @@ Oauth2️⃣ 👫 🎻.
 `scopes` 🔢 📨 `dict` ⏮️ 🔠 ↔ 🔑 &amp; 📛 💲:
 
 ```Python hl_lines="62-65"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ↩️ 👥 🔜 📣 📚 ↔, 👫 🔜 🎦 🆙 🛠️ 🩺 🕐❔ 👆 🕹-/✔.
@@ -88,7 +88,7 @@ Oauth2️⃣ 👫 🎻.
 
 ## 🥙 🤝 ⏮️ ↔
 
-🔜, 🔀 🤝 *➡ 🛠️* 📨 ↔ 📨.
+🔜, 🔀 🤝 _➡ 🛠️_ 📨 ↔ 📨.
 
 👥 ⚙️ 🎏 `OAuth2PasswordRequestForm`. ⚫️ 🔌 🏠 `scopes` ⏮️ `list` `str`, ⏮️ 🔠 ↔ ⚫️ 📨 📨.
 
@@ -103,12 +103,12 @@ Oauth2️⃣ 👫 🎻.
 ///
 
 ```Python hl_lines="155"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
-## 📣 ↔ *➡ 🛠️* &amp; 🔗
+## 📣 ↔ _➡ 🛠️_ &amp; 🔗
 
-🔜 👥 📣 👈 *➡ 🛠️* `/users/me/items/` 🚚 ↔ `items`.
+🔜 👥 📣 👈 _➡ 🛠️_ `/users/me/items/` 🚚 ↔ `items`.
 
 👉, 👥 🗄 &amp; ⚙️ `Security` ⚪️➡️ `readyapi`.
 
@@ -131,7 +131,7 @@ Oauth2️⃣ 👫 🎻.
 ///
 
 ```Python hl_lines="4  139  168"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 /// info | "📡 ℹ"
@@ -159,7 +159,7 @@ Oauth2️⃣ 👫 🎻.
 👉 `SecurityScopes` 🎓 🎏 `Request` (`Request` ⚙️ 🤚 📨 🎚 🔗).
 
 ```Python hl_lines="8  105"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## ⚙️ `scopes`
@@ -175,7 +175,7 @@ Oauth2️⃣ 👫 🎻.
 👉 ⚠, 👥 🔌 ↔ 🚚 (🚥 🙆) 🎻 👽 🚀 (⚙️ `scope_str`). 👥 🚮 👈 🎻 ⚗ ↔ `WWW-Authenticate` 🎚 (👉 🍕 🔌).
 
 ```Python hl_lines="105  107-115"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## ✔ `username` &amp; 💽 💠
@@ -193,17 +193,17 @@ Oauth2️⃣ 👫 🎻.
 👥 ✔ 👈 👥 ✔️ 👩‍💻 ⏮️ 👈 🆔, &amp; 🚥 🚫, 👥 🤚 👈 🎏 ⚠ 👥 ✍ ⏭.
 
 ```Python hl_lines="46  116-127"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## ✔ `scopes`
 
-👥 🔜 ✔ 👈 🌐 ↔ ✔, 👉 🔗 &amp; 🌐 ⚓️ (🔌 *➡ 🛠️*), 🔌 ↔ 🚚 🤝 📨, ⏪ 🤚 `HTTPException`.
+👥 🔜 ✔ 👈 🌐 ↔ ✔, 👉 🔗 &amp; 🌐 ⚓️ (🔌 _➡ 🛠️_), 🔌 ↔ 🚚 🤝 📨, ⏪ 🤚 `HTTPException`.
 
 👉, 👥 ⚙️ `security_scopes.scopes`, 👈 🔌 `list` ⏮️ 🌐 👫 ↔ `str`.
 
 ```Python hl_lines="128-134"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 🔗 🌲 &amp; ↔
@@ -212,30 +212,30 @@ Oauth2️⃣ 👫 🎻.
 
 `get_current_active_user` 🔗 ✔️ 🎧-🔗 🔛 `get_current_user`, ↔ `"me"` 📣 `get_current_active_user` 🔜 🔌 📇 ✔ ↔ `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
 
-*➡ 🛠️* ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
+_➡ 🛠️_ ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
 
 📥 ❔ 🔗 🔗 &amp; ↔ 👀 💖:
 
-*  *➡ 🛠️* `read_own_items` ✔️:
-    * ✔ ↔ `["items"]` ⏮️ 🔗:
-    * `get_current_active_user`:
-        *  🔗 🔢 `get_current_active_user` ✔️:
-            * ✔ ↔ `["me"]` ⏮️ 🔗:
-            * `get_current_user`:
-                * 🔗 🔢 `get_current_user` ✔️:
-                    * 🙅‍♂ ↔ ✔ ⚫️.
-                    * 🔗 ⚙️ `oauth2_scheme`.
-                    *  `security_scopes` 🔢 🆎 `SecurityScopes`:
-                        * 👉 `security_scopes` 🔢 ✔️ 🏠 `scopes` ⏮️ `list` ⚗ 🌐 👫 ↔ 📣 🔛,:
-                            * `security_scopes.scopes` 🔜 🔌 `["me", "items"]` *➡ 🛠️* `read_own_items`.
-                            * `security_scopes.scopes` 🔜 🔌 `["me"]` *➡ 🛠️* `read_users_me`, ↩️ ⚫️ 📣 🔗 `get_current_active_user`.
-                            * `security_scopes.scopes` 🔜 🔌 `[]` (🕳) *➡ 🛠️* `read_system_status`, ↩️ ⚫️ 🚫 📣 🙆 `Security` ⏮️ `scopes`, &amp; 🚮 🔗, `get_current_user`, 🚫 📣 🙆 `scope` 👯‍♂️.
+- _➡ 🛠️_ `read_own_items` ✔️:
+  - ✔ ↔ `["items"]` ⏮️ 🔗:
+  - `get_current_active_user`:
+    - 🔗 🔢 `get_current_active_user` ✔️:
+      - ✔ ↔ `["me"]` ⏮️ 🔗:
+      - `get_current_user`:
+        - 🔗 🔢 `get_current_user` ✔️:
+          - 🙅‍♂ ↔ ✔ ⚫️.
+          - 🔗 ⚙️ `oauth2_scheme`.
+          - `security_scopes` 🔢 🆎 `SecurityScopes`:
+            - 👉 `security_scopes` 🔢 ✔️ 🏠 `scopes` ⏮️ `list` ⚗ 🌐 👫 ↔ 📣 🔛,:
+              - `security_scopes.scopes` 🔜 🔌 `["me", "items"]` _➡ 🛠️_ `read_own_items`.
+              - `security_scopes.scopes` 🔜 🔌 `["me"]` _➡ 🛠️_ `read_users_me`, ↩️ ⚫️ 📣 🔗 `get_current_active_user`.
+              - `security_scopes.scopes` 🔜 🔌 `[]` (🕳) _➡ 🛠️_ `read_system_status`, ↩️ ⚫️ 🚫 📣 🙆 `Security` ⏮️ `scopes`, &amp; 🚮 🔗, `get_current_user`, 🚫 📣 🙆 `scope` 👯‍♂️.
 
 /// tip
 
-⚠ &amp; "🎱" 👜 📥 👈 `get_current_user` 🔜 ✔️ 🎏 📇 `scopes` ✅ 🔠 *➡ 🛠️*.
+⚠ &amp; "🎱" 👜 📥 👈 `get_current_user` 🔜 ✔️ 🎏 📇 `scopes` ✅ 🔠 _➡ 🛠️_.
 
-🌐 ⚓️ 🔛 `scopes` 📣 🔠 *➡ 🛠️* &amp; 🔠 🔗 🔗 🌲 👈 🎯 *➡ 🛠️*.
+🌐 ⚓️ 🔛 `scopes` 📣 🔠 _➡ 🛠️_ &amp; 🔠 🔗 🔗 🌲 👈 🎯 _➡ 🛠️_.
 
 ///
 
@@ -243,11 +243,11 @@ Oauth2️⃣ 👫 🎻.
 
 👆 💪 ⚙️ `SecurityScopes` 🙆 ☝, &amp; 💗 🥉, ⚫️ 🚫 ✔️ "🌱" 🔗.
 
-⚫️ 🔜 🕧 ✔️ 💂‍♂ ↔ 📣 ⏮️ `Security` 🔗 &amp; 🌐 ⚓️ **👈 🎯** *➡ 🛠️* &amp; **👈 🎯** 🔗 🌲.
+⚫️ 🔜 🕧 ✔️ 💂‍♂ ↔ 📣 ⏮️ `Security` 🔗 &amp; 🌐 ⚓️ **👈 🎯** _➡ 🛠️_ &amp; **👈 🎯** 🔗 🌲.
 
-↩️ `SecurityScopes` 🔜 ✔️ 🌐 ↔ 📣 ⚓️, 👆 💪 ⚙️ ⚫️ ✔ 👈 🤝 ✔️ 🚚 ↔ 🇨🇫 🔗 🔢, &amp; ⤴️ 📣 🎏 ↔ 📄 🎏 *➡ 🛠️*.
+↩️ `SecurityScopes` 🔜 ✔️ 🌐 ↔ 📣 ⚓️, 👆 💪 ⚙️ ⚫️ ✔ 👈 🤝 ✔️ 🚚 ↔ 🇨🇫 🔗 🔢, &amp; ⤴️ 📣 🎏 ↔ 📄 🎏 _➡ 🛠️_.
 
-👫 🔜 ✅ ➡ 🔠 *➡ 🛠️*.
+👫 🔜 ✅ ➡ 🔠 _➡ 🛠️_.
 
 ## ✅ ⚫️
 
@@ -259,7 +259,7 @@ Oauth2️⃣ 👫 🎻.
 
 &amp; 🚥 👆 🖊 ↔ `me` ✋️ 🚫 ↔ `items`, 👆 🔜 💪 🔐 `/users/me/` ✋️ 🚫 `/users/me/items/`.
 
-👈 ⚫️❔ 🔜 🔨 🥉 🥳 🈸 👈 🔄 🔐 1️⃣ 👫 *➡ 🛠️* ⏮️ 🤝 🚚 👩‍💻, ⚓️ 🔛 ❔ 📚 ✔ 👩‍💻 🤝 🈸.
+👈 ⚫️❔ 🔜 🔨 🥉 🥳 🈸 👈 🔄 🔐 1️⃣ 👫 _➡ 🛠️_ ⏮️ 🤝 🚚 👩‍💻, ⚓️ 🔛 ❔ 📚 ✔ 👩‍💻 🤝 🈸.
 
 ## 🔃 🥉 🥳 🛠️
 
@@ -287,4 +287,4 @@ Oauth2️⃣ 👫 🎻.
 
 ## `Security` 👨‍🎨 `dependencies`
 
-🎏 🌌 👆 💪 🔬 `list` `Depends` 👨‍🎨 `dependencies` 🔢 (🔬 [🔗 ➡ 🛠️ 👨‍🎨](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}), 👆 💪 ⚙️ `Security` ⏮️ `scopes` 📤.
+🎏 🌌 👆 💪 🔬 `list` `Depends` 👨‍🎨 `dependencies` 🔢 (🔬 [🔗 ➡ 🛠️ 👨‍🎨](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank}), 👆 💪 ⚙️ `Security` ⏮️ `scopes` 📤.

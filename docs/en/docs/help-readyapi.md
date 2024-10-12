@@ -12,13 +12,13 @@ And there are several ways to get help too.
 
 ## Subscribe to the newsletter
 
-You can subscribe to the (infrequent) [**ReadyAPI and friends** newsletter](newsletter.md){.internal-link target=_blank} to stay updated about:
+You can subscribe to the (infrequent) [**ReadyAPI and friends** newsletter](newsletter.md){.internal-link target=\_blank} to stay updated about:
 
-* News about ReadyAPI and friends 🚀
-* Guides 📝
-* Features ✨
-* Breaking changes 🚨
-* Tips and tricks ✅
+- News about ReadyAPI and friends 🚀
+- Guides 📝
+- Features ✨
+- Breaking changes 🚨
+- Tips and tricks ✅
 
 ## Follow ReadyAPI on Twitter
 
@@ -44,18 +44,18 @@ You can connect with <a href="https://khulnasoft.com" class="external-link" targ
 
 You can:
 
-* <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Follow me on **GitHub**</a>.
-    * See other Open Source projects I have created that could help you.
-    * Follow me to see when I create a new Open Source project.
-* <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Follow me on **Twitter**</a> or <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodon</a>.
-    * Tell me how you use ReadyAPI (I love to hear that).
-    * Hear when I make announcements or release new tools.
-    * You can also <a href="https://twitter.com/readyapi" class="external-link" target="_blank">follow @readyapi on Twitter</a> (a separate account).
-* <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Follow me on **LinkedIn**</a>.
-    * Hear when I make announcements or release new tools (although I use Twitter more often 🤷‍♂).
-* Read what I write (or follow me) on <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> or <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
-    * Read other ideas, articles, and read about tools I have created.
-    * Follow me to read when I publish something new.
+- <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Follow me on **GitHub**</a>.
+  - See other Open Source projects I have created that could help you.
+  - Follow me to see when I create a new Open Source project.
+- <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Follow me on **Twitter**</a> or <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodon</a>.
+  - Tell me how you use ReadyAPI (I love to hear that).
+  - Hear when I make announcements or release new tools.
+  - You can also <a href="https://twitter.com/readyapi" class="external-link" target="_blank">follow @readyapi on Twitter</a> (a separate account).
+- <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Follow me on **LinkedIn**</a>.
+  - Hear when I make announcements or release new tools (although I use Twitter more often 🤷‍♂).
+- Read what I write (or follow me) on <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> or <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
+  - Read other ideas, articles, and read about tools I have created.
+  - Follow me to read when I publish something new.
 
 ## Tweet about **ReadyAPI**
 
@@ -65,20 +65,20 @@ I love to hear about how **ReadyAPI** is being used, what you have liked in it, 
 
 ## Vote for ReadyAPI
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote for **ReadyAPI** in Slant</a>.
-* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">Vote for **ReadyAPI** in AlternativeTo</a>.
-* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">Say you use **ReadyAPI** on StackShare</a>.
+- <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote for **ReadyAPI** in Slant</a>.
+- <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">Vote for **ReadyAPI** in AlternativeTo</a>.
+- <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">Say you use **ReadyAPI** on StackShare</a>.
 
 ## Help others with questions in GitHub
 
 You can try and help others with their questions in:
 
-* <a href="https://github.com/readyapi/readyapi/discussions/categories/questions?discussions_q=category%3AQuestions+is%3Aunanswered" class="external-link" target="_blank">GitHub Discussions</a>
-* <a href="https://github.com/readyapi/readyapi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aquestion+-label%3Aanswered+" class="external-link" target="_blank">GitHub Issues</a>
+- <a href="https://github.com/readyapi/readyapi/discussions/categories/questions?discussions_q=category%3AQuestions+is%3Aunanswered" class="external-link" target="_blank">GitHub Discussions</a>
+- <a href="https://github.com/readyapi/readyapi/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aquestion+-label%3Aanswered+" class="external-link" target="_blank">GitHub Issues</a>
 
 In many cases you might already know the answer for those questions. 🤓
 
-If you are helping a lot of people with their questions, you will become an official [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}. 🎉
+If you are helping a lot of people with their questions, you will become an official [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=\_blank}. 🎉
 
 Just remember, the most important point is: try to be kind. People come with their frustrations and in many cases don't ask in the best way, but try as best as you can to be kind. 🤗
 
@@ -90,13 +90,13 @@ Here's how to help others with questions (in discussions or issues):
 
 ### Understand the question
 
-* Check if you can understand what is the **purpose** and use case of the person asking.
+- Check if you can understand what is the **purpose** and use case of the person asking.
 
-* Then check if the question (the vast majority are questions) is **clear**.
+- Then check if the question (the vast majority are questions) is **clear**.
 
-* In many cases the question asked is about an imaginary solution from the user, but there might be a **better** one. If you can understand the problem and use case better, you might be able to suggest a better **alternative solution**.
+- In many cases the question asked is about an imaginary solution from the user, but there might be a **better** one. If you can understand the problem and use case better, you might be able to suggest a better **alternative solution**.
 
-* If you can't understand the question, ask for more **details**.
+- If you can't understand the question, ask for more **details**.
 
 ### Reproduce the problem
 
@@ -104,24 +104,24 @@ For most of the cases and most of the questions there's something related to the
 
 In many cases they will only copy a fragment of the code, but that's not enough to **reproduce the problem**.
 
-* You can ask them to provide a <a href="https://stackoverflow.com/help/minimal-reproducible-example" class="external-link" target="_blank">minimal, reproducible, example</a>, that you can **copy-paste** and run locally to see the same error or behavior they are seeing, or to understand their use case better.
+- You can ask them to provide a <a href="https://stackoverflow.com/help/minimal-reproducible-example" class="external-link" target="_blank">minimal, reproducible, example</a>, that you can **copy-paste** and run locally to see the same error or behavior they are seeing, or to understand their use case better.
 
-* If you are feeling too generous, you can try to **create an example** like that yourself, just based on the description of the problem. Just keep in mind that this might take a lot of time and it might be better to ask them to clarify the problem first.
+- If you are feeling too generous, you can try to **create an example** like that yourself, just based on the description of the problem. Just keep in mind that this might take a lot of time and it might be better to ask them to clarify the problem first.
 
 ### Suggest solutions
 
-* After being able to understand the question, you can give them a possible **answer**.
+- After being able to understand the question, you can give them a possible **answer**.
 
-* In many cases, it's better to understand their **underlying problem or use case**, because there might be a better way to solve it than what they are trying to do.
+- In many cases, it's better to understand their **underlying problem or use case**, because there might be a better way to solve it than what they are trying to do.
 
 ### Ask to close
 
 If they reply, there's a high chance you would have solved their problem, congrats, **you're a hero**! 🦸
 
-* Now, if that solved their problem, you can ask them to:
+- Now, if that solved their problem, you can ask them to:
 
-    * In GitHub Discussions: mark the comment as the **answer**.
-    * In GitHub Issues: **close** the issue.
+  - In GitHub Discussions: mark the comment as the **answer**.
+  - In GitHub Issues: **close** the issue.
 
 ## Watch the GitHub repository
 
@@ -135,8 +135,8 @@ Then you can try and help them solve those questions.
 
 You can <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">create a new question</a> in the GitHub repository, for example to:
 
-* Ask a **question** or ask about a **problem**.
-* Suggest a new **feature**.
+- Ask a **question** or ask about a **problem**.
+- Suggest a new **feature**.
 
 **Note**: if you do it, then I'm going to ask you to also help others. 😉
 
@@ -152,23 +152,23 @@ Here's what to keep in mind and how to review a pull request:
 
 ### Understand the problem
 
-* First, make sure you **understand the problem** that the pull request is trying to solve. It might have a longer discussion in a GitHub Discussion or issue.
+- First, make sure you **understand the problem** that the pull request is trying to solve. It might have a longer discussion in a GitHub Discussion or issue.
 
-* There's also a good chance that the pull request is not actually needed because the problem can be solved in a **different way**. Then you can suggest or ask about that.
+- There's also a good chance that the pull request is not actually needed because the problem can be solved in a **different way**. Then you can suggest or ask about that.
 
 ### Don't worry about style
 
-* Don't worry too much about things like commit message styles, I will squash and merge customizing the commit manually.
+- Don't worry too much about things like commit message styles, I will squash and merge customizing the commit manually.
 
-* Also don't worry about style rules, there are already automatized tools checking that.
+- Also don't worry about style rules, there are already automatized tools checking that.
 
 And if there's any other style or consistency need, I'll ask directly for that, or I'll add commits on top with the needed changes.
 
 ### Check the code
 
-* Check and read the code, see if it makes sense, **run it locally** and see if it actually solves the problem.
+- Check and read the code, see if it makes sense, **run it locally** and see if it actually solves the problem.
 
-* Then **comment** saying that you did that, that's how I will know you really checked it.
+- Then **comment** saying that you did that, that's how I will know you really checked it.
 
 /// info
 
@@ -180,35 +180,35 @@ So, it's really important that you actually read and run the code, and let me kn
 
 ///
 
-* If the PR can be simplified in a way, you can ask for that, but there's no need to be too picky, there might be a lot of subjective points of view (and I will have my own as well 🙈), so it's better if you can focus on the fundamental things.
+- If the PR can be simplified in a way, you can ask for that, but there's no need to be too picky, there might be a lot of subjective points of view (and I will have my own as well 🙈), so it's better if you can focus on the fundamental things.
 
 ### Tests
 
-* Help me check that the PR has **tests**.
+- Help me check that the PR has **tests**.
 
-* Check that the tests **fail** before the PR. 🚨
+- Check that the tests **fail** before the PR. 🚨
 
-* Then check that the tests **pass** after the PR. ✅
+- Then check that the tests **pass** after the PR. ✅
 
-* Many PRs don't have tests, you can **remind** them to add tests, or you can even **suggest** some tests yourself. That's one of the things that consume most time and you can help a lot with that.
+- Many PRs don't have tests, you can **remind** them to add tests, or you can even **suggest** some tests yourself. That's one of the things that consume most time and you can help a lot with that.
 
-* Then also comment what you tried, that way I'll know that you checked it. 🤓
+- Then also comment what you tried, that way I'll know that you checked it. 🤓
 
 ## Create a Pull Request
 
-You can [contribute](contributing.md){.internal-link target=_blank} to the source code with Pull Requests, for example:
+You can [contribute](contributing.md){.internal-link target=\_blank} to the source code with Pull Requests, for example:
 
-* To fix a typo you found on the documentation.
-* To share an article, video, or podcast you created or found about ReadyAPI by <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editing this file</a>.
-    * Make sure you add your link to the start of the corresponding section.
-* To help [translate the documentation](contributing.md#translations){.internal-link target=_blank} to your language.
-    * You can also help to review the translations created by others.
-* To propose new documentation sections.
-* To fix an existing issue/bug.
-    * Make sure to add tests.
-* To add a new feature.
-    * Make sure to add tests.
-    * Make sure to add documentation if it's relevant.
+- To fix a typo you found on the documentation.
+- To share an article, video, or podcast you created or found about ReadyAPI by <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editing this file</a>.
+  - Make sure you add your link to the start of the corresponding section.
+- To help [translate the documentation](contributing.md#translations){.internal-link target=\_blank} to your language.
+  - You can also help to review the translations created by others.
+- To propose new documentation sections.
+- To fix an existing issue/bug.
+  - Make sure to add tests.
+- To add a new feature.
+  - Make sure to add tests.
+  - Make sure to add documentation if it's relevant.
 
 ## Help Maintain ReadyAPI
 
@@ -218,8 +218,8 @@ There's a lot of work to do, and for most of it, **YOU** can do it.
 
 The main tasks that you can do right now are:
 
-* [Help others with questions in GitHub](#help-others-with-questions-in-github){.internal-link target=_blank} (see the section above).
-* [Review Pull Requests](#review-pull-requests){.internal-link target=_blank} (see the section above).
+- [Help others with questions in GitHub](#help-others-with-questions-in-github){.internal-link target=\_blank} (see the section above).
+- [Review Pull Requests](#review-pull-requests){.internal-link target=\_blank} (see the section above).
 
 Those two tasks are what **consume time the most**. That's the main work of maintaining ReadyAPI.
 
@@ -231,7 +231,7 @@ Join the 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" targ
 
 /// tip
 
-For questions, ask them in <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub Discussions</a>, there's a much better chance you will receive help by the [ReadyAPI Experts](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+For questions, ask them in <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub Discussions</a>, there's a much better chance you will receive help by the [ReadyAPI Experts](readyapi-people.md#readyapi-experts){.internal-link target=\_blank}.
 
 Use the chat only for other general conversations.
 
@@ -243,7 +243,7 @@ Keep in mind that as chats allow more "free conversation", it's easy to ask ques
 
 In GitHub, the template will guide you to write the right question so that you can more easily get a good answer, or even solve the problem yourself even before asking. And in GitHub I can make sure I always answer everything, even if it takes some time. I can't personally do that with the chat systems. 😅
 
-Conversations in the chat systems are also not as easily searchable as in GitHub, so questions and answers might get lost in the conversation. And only the ones in GitHub count to become a [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}, so you will most probably receive more attention in GitHub.
+Conversations in the chat systems are also not as easily searchable as in GitHub, so questions and answers might get lost in the conversation. And only the ones in GitHub count to become a [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=\_blank}, so you will most probably receive more attention in GitHub.
 
 On the other side, there are thousands of users in the chat systems, so there's a high chance you'll find someone to talk to there, almost all the time. 😄
 
@@ -261,8 +261,8 @@ As you have seen in the documentation, ReadyAPI stands on the shoulders of giant
 
 You can also sponsor:
 
-* <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
-* <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
+- <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
+- <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
 
 ---
 

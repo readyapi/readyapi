@@ -1,6 +1,6 @@
-# yieldを持つ依存関係
+# yield を持つ依存関係
 
-ReadyAPIは、いくつかの<abbr title='時々"exit"、"cleanup"、"teardown"、"close"、"context managers"、 ...のように呼ばれる'>終了後の追加のステップ</abbr>を行う依存関係をサポートしています。
+ReadyAPI は、いくつかの<abbr title='時々"exit"、"cleanup"、"teardown"、"close"、"context managers"、 ...のように呼ばれる'>終了後の追加のステップ</abbr>を行う依存関係をサポートしています。
 
 これを行うには、`return`の代わりに`yield`を使い、その後に追加のステップを書きます。
 
@@ -26,12 +26,12 @@ pip install async-exit-stack async-generator
 
 以下と一緒に使用できる関数なら何でも有効です:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a>または
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a>または
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 これらは **ReadyAPI** の依存関係として使用するのに有効です。
 
-実際、ReadyAPIは内部的にこれら２つのデコレータを使用しています。
+実際、ReadyAPI は内部的にこれら２つのデコレータを使用しています。
 
 ///
 
@@ -42,19 +42,19 @@ pip install async-exit-stack async-generator
 レスポンスを送信する前に`yield`文を含む前のコードのみが実行されます。
 
 ```Python hl_lines="2 3 4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 生成された値は、*path operations*や他の依存関係に注入されるものです:
 
 ```Python hl_lines="4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 `yield`文に続くコードは、レスポンスが送信された後に実行されます:
 
 ```Python hl_lines="5 6"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 /// tip | "豆知識"
@@ -76,7 +76,7 @@ pip install async-exit-stack async-generator
 同様に、`finally`を用いて例外があったかどうかにかかわらず、終了ステップを確実に実行することができます。
 
 ```Python hl_lines="3 5"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 ## `yield`を持つサブ依存関係
@@ -88,7 +88,7 @@ pip install async-exit-stack async-generator
 例えば、`dependency_c`は`dependency_b`と`dependency_b`に依存する`dependency_a`に、依存することができます:
 
 ```Python hl_lines="4 12 20"
-{!../../../docs_src/dependencies/tutorial008.py!}
+{!../../docs_src/dependencies/tutorial008.py!}
 ```
 
 そして、それらはすべて`yield`を使用することができます。
@@ -98,7 +98,7 @@ pip install async-exit-stack async-generator
 そして、`dependency_b`は`dependency_a`（ここでは`dep_a`という名前）の値を終了コードで利用できるようにする必要があります。
 
 ```Python hl_lines="16 17 24 25"
-{!../../../docs_src/dependencies/tutorial008.py!}
+{!../../docs_src/dependencies/tutorial008.py!}
 ```
 
 同様に、`yield`と`return`が混在した依存関係を持つこともできます。
@@ -111,7 +111,7 @@ pip install async-exit-stack async-generator
 
 /// note | "技術詳細"
 
-これはPythonの<a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a>のおかげで動作します。
+これは Python の<a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a>のおかげで動作します。
 
 **ReadyAPI** はこれを実現するために内部的に使用しています。
 
@@ -123,19 +123,19 @@ pip install async-exit-stack async-generator
 
 `yield`の後の終了コードで`HTTPException`などを発生させたくなるかもしれません。しかし**それはうまくいきません**
 
-`yield`を持つ依存関係の終了コードは[例外ハンドラ](../handling-errors.md#_4){.internal-link target=_blank}の*後に*実行されます。依存関係によって投げられた例外を終了コード（`yield`の後）でキャッチするものはなにもありません。
+`yield`を持つ依存関係の終了コードは[例外ハンドラ](../handling-errors.md#_4){.internal-link target=\_blank}の*後に*実行されます。依存関係によって投げられた例外を終了コード（`yield`の後）でキャッチするものはなにもありません。
 
-つまり、`yield`の後に`HTTPException`を発生させた場合、`HTTTPException`をキャッチしてHTTP 400のレスポンスを返すデフォルトの（あるいは任意のカスタムの）例外ハンドラは、その例外をキャッチすることができなくなります。
+つまり、`yield`の後に`HTTPException`を発生させた場合、`HTTTPException`をキャッチして HTTP 400 のレスポンスを返すデフォルトの（あるいは任意のカスタムの）例外ハンドラは、その例外をキャッチすることができなくなります。
 
-これは、依存関係に設定されているもの（例えば、DBセッション）を、例えば、バックグラウンドタスクで使用できるようにするものです。
+これは、依存関係に設定されているもの（例えば、DB セッション）を、例えば、バックグラウンドタスクで使用できるようにするものです。
 
 バックグラウンドタスクはレスポンスが送信された*後*に実行されます。そのため、*すでに送信されている*レスポンスを変更する方法すらないので、`HTTPException`を発生させる方法はありません。
 
-しかし、バックグラウンドタスクがDBエラーを発生させた場合、少なくとも`yield`で依存関係のセッションをロールバックしたり、きれいに閉じたりすることができ、エラーをログに記録したり、リモートのトラッキングシステムに報告したりすることができます。
+しかし、バックグラウンドタスクが DB エラーを発生させた場合、少なくとも`yield`で依存関係のセッションをロールバックしたり、きれいに閉じたりすることができ、エラーをログに記録したり、リモートのトラッキングシステムに報告したりすることができます。
 
-例外が発生する可能性があるコードがある場合は、最も普通の「Python流」なことをして、コードのその部分に`try`ブロックを追加してください。
+例外が発生する可能性があるコードがある場合は、最も普通の「Python 流」なことをして、コードのその部分に`try`ブロックを追加してください。
 
-レスポンスを返したり、レスポンスを変更したり、`HTTPException`を発生させたりする*前に*処理したいカスタム例外がある場合は、[カスタム例外ハンドラ](../handling-errors.md#_4){.internal-link target=_blank}を作成してください。
+レスポンスを返したり、レスポンスを変更したり、`HTTPException`を発生させたりする*前に*処理したいカスタム例外がある場合は、[カスタム例外ハンドラ](../handling-errors.md#_4){.internal-link target=\_blank}を作成してください。
 
 /// tip | "豆知識"
 
@@ -193,7 +193,7 @@ participant tasks as Background tasks
 
 /// tip | "豆知識"
 
-この図は`HTTPException`を示していますが、[カスタム例外ハンドラ](../handling-errors.md#_4){.internal-link target=_blank}を作成することで、他の例外を発生させることもできます。そして、その例外は依存関係の終了コードではなく、そのカスタム例外ハンドラによって処理されます。
+この図は`HTTPException`を示していますが、[カスタム例外ハンドラ](../handling-errors.md#_4){.internal-link target=\_blank}を作成することで、他の例外を発生させることもできます。そして、その例外は依存関係の終了コードではなく、そのカスタム例外ハンドラによって処理されます。
 
 しかし例外ハンドラで処理されない例外を発生させた場合は、依存関係の終了コードで処理されます。
 
@@ -203,7 +203,7 @@ participant tasks as Background tasks
 
 ### 「コンテキストマネージャ」とは
 
-「コンテキストマネージャ」とは、`with`文の中で使用できるPythonオブジェクトのことです。
+「コンテキストマネージャ」とは、`with`文の中で使用できる Python オブジェクトのことです。
 
 例えば、<a href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files" class="external-link" target="_blank">ファイルを読み込むには`with`を使用することができます</a>:
 
@@ -229,27 +229,27 @@ with open("./somefile.txt") as f:
 
 ///
 
-Pythonでは、<a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">以下の２つのメソッドを持つクラスを作成する: `__enter__()`と`__exit__()`</a>ことでコンテキストマネージャを作成することができます。
+Python では、<a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">以下の２つのメソッドを持つクラスを作成する: `__enter__()`と`__exit__()`</a>ことでコンテキストマネージャを作成することができます。
 
 また、依存関数の中で`with`や`async with`文を使用することによって`yield`を持つ **ReadyAPI** の依存関係の中でそれらを使用することができます:
 
 ```Python hl_lines="1 2 3 4 5 6 7 8 9 13"
-{!../../../docs_src/dependencies/tutorial010.py!}
+{!../../docs_src/dependencies/tutorial010.py!}
 ```
 
 /// tip | "豆知識"
 
-コンテキストマネージャを作成するもう一つの方法はwithです:
+コンテキストマネージャを作成するもう一つの方法は with です:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> または
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> または
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 これらを使って、関数を単一の`yield`でデコレートすることができます。
 
 これは **ReadyAPI** が内部的に`yield`を持つ依存関係のために使用しているものです。
 
-しかし、ReadyAPIの依存関係にデコレータを使う必要はありません（そして使うべきではありません）。
+しかし、ReadyAPI の依存関係にデコレータを使う必要はありません（そして使うべきではありません）。
 
-ReadyAPIが内部的にやってくれます。
+ReadyAPI が内部的にやってくれます。
 
 ///

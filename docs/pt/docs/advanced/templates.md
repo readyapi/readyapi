@@ -20,13 +20,13 @@ $ pip install jinja2
 
 ## Usando `Jinja2Templates`
 
-* Importe `Jinja2Templates`.
-* Crie um `templates` que você possa reutilizar posteriormente.
-* Declare um parâmetro `Request` no *path operation* que retornará um template.
-* Use o `template` que você criou para renderizar e retornar uma `TemplateResponse`, passe o nome do template, o request object, e um "context" dict com pares chave-valor a serem usados dentro do template do Jinja2.
+- Importe `Jinja2Templates`.
+- Crie um `templates` que você possa reutilizar posteriormente.
+- Declare um parâmetro `Request` no _path operation_ que retornará um template.
+- Use o `template` que você criou para renderizar e retornar uma `TemplateResponse`, passe o nome do template, o request object, e um "context" dict com pares chave-valor a serem usados dentro do template do Jinja2.
 
 ```Python hl_lines="4  11  15-18"
-{!../../../docs_src/templates/tutorial001.py!}
+{!../../docs_src/templates/tutorial001.py!}
 ```
 
 /// note
@@ -56,7 +56,7 @@ Você também poderia usar `from starlette.templating import Jinja2Templates`.
 Então você pode escrever um template em `templates/item.html`, por exemplo:
 
 ```jinja hl_lines="7"
-{!../../../docs_src/templates/templates/item.html!}
+{!../../docs_src/templates/templates/item.html!}
 ```
 
 ### Interpolação de Valores no Template
@@ -85,7 +85,7 @@ Item ID: 42
 
 ### Argumentos do `url_for`
 
-Você também pode usar `url_for()` dentro do template, ele recebe como argumentos os mesmos argumentos que seriam usados pela sua *path operation function*.
+Você também pode usar `url_for()` dentro do template, ele recebe como argumentos os mesmos argumentos que seriam usados pela sua _path operation function_.
 
 Logo, a seção com:
 
@@ -97,12 +97,12 @@ Logo, a seção com:
 
 {% endraw %}
 
-...irá gerar um link para a mesma URL que será tratada pela *path operation function* `read_item(id=id)`.
+...irá gerar um link para a mesma URL que será tratada pela _path operation function_ `read_item(id=id)`.
 
 Por exemplo, com um ID de `42`, isso renderizará:
 
 ```html
-<a href="/items/42">
+<a href="/items/42"></a>
 ```
 
 ## Templates e Arquivos Estáticos
@@ -110,13 +110,13 @@ Por exemplo, com um ID de `42`, isso renderizará:
 Você também pode usar `url_for()` dentro do template e usá-lo, por examplo, com o `StaticFiles` que você montou com o `name="static"`.
 
 ```jinja hl_lines="4"
-{!../../../docs_src/templates/templates/item.html!}
+{!../../docs_src/templates/templates/item.html!}
 ```
 
 Neste exemplo, ele seria vinculado a um arquivo CSS em `static/styles.css` com:
 
 ```CSS hl_lines="4"
-{!../../../docs_src/templates/static/styles.css!}
+{!../../docs_src/templates/static/styles.css!}
 ```
 
 E como você está usando `StaticFiles`, este arquivo CSS será automaticamente servido pela sua aplicação ReadyAPI na URL `/static/styles.css`.

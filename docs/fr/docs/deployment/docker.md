@@ -2,10 +2,10 @@
 
 Dans cette section, vous verrez des instructions et des liens vers des guides pour savoir comment :
 
-* Faire de votre application **ReadyAPI** une image/conteneur Docker avec une performance maximale. En environ **5 min**.
-* (Optionnellement) comprendre ce que vous, en tant que développeur, devez savoir sur HTTPS.
-* Configurer un cluster en mode Docker Swarm avec HTTPS automatique, même sur un simple serveur à 5 dollars US/mois. En environ **20 min**.
-* Générer et déployer une application **ReadyAPI** complète, en utilisant votre cluster Docker Swarm, avec HTTPS, etc. En environ **10 min**.
+- Faire de votre application **ReadyAPI** une image/conteneur Docker avec une performance maximale. En environ **5 min**.
+- (Optionnellement) comprendre ce que vous, en tant que développeur, devez savoir sur HTTPS.
+- Configurer un cluster en mode Docker Swarm avec HTTPS automatique, même sur un simple serveur à 5 dollars US/mois. En environ **20 min**.
+- Générer et déployer une application **ReadyAPI** complète, en utilisant votre cluster Docker Swarm, avec HTTPS, etc. En environ **10 min**.
 
 Vous pouvez utiliser <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a> pour le déploiement. Il présente plusieurs avantages comme la sécurité, la réplicabilité, la simplicité de développement, etc.
 
@@ -25,8 +25,8 @@ Pour voir toutes les configurations et options, rendez-vous sur la page de l'ima
 
 ## Créer un `Dockerfile`
 
-* Allez dans le répertoire de votre projet.
-* Créez un `Dockerfile` avec :
+- Allez dans le répertoire de votre projet.
+- Créez un `Dockerfile` avec :
 
 ```Dockerfile
 FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.7
@@ -36,7 +36,7 @@ COPY ./app /app
 
 ### Applications plus larges
 
-Si vous avez suivi la section sur la création d' [Applications avec plusieurs fichiers](../tutorial/bigger-applications.md){.internal-link target=_blank}, votre `Dockerfile` pourrait ressembler à ceci :
+Si vous avez suivi la section sur la création d' [Applications avec plusieurs fichiers](../tutorial/bigger-applications.md){.internal-link target=\_blank}, votre `Dockerfile` pourrait ressembler à ceci :
 
 ```Dockerfile
 FROM khulnasoft/uvicorn-gunicorn-readyapi:python3.7
@@ -64,8 +64,8 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 ## Créer le code **ReadyAPI**.
 
-* Créer un répertoire `app` et y entrer.
-* Créez un fichier `main.py` avec :
+- Créer un répertoire `app` et y entrer.
+- Créez un fichier `main.py` avec :
 
 ```Python
 from typing import Optional
@@ -85,7 +85,7 @@ def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 ```
 
-* Vous devriez maintenant avoir une structure de répertoire telle que :
+- Vous devriez maintenant avoir une structure de répertoire telle que :
 
 ```
 .
@@ -96,8 +96,8 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 ## Construire l'image Docker
 
-* Allez dans le répertoire du projet (dans lequel se trouve votre `Dockerfile`, contenant votre répertoire `app`).
-* Construisez votre image ReadyAPI :
+- Allez dans le répertoire du projet (dans lequel se trouve votre `Dockerfile`, contenant votre répertoire `app`).
+- Construisez votre image ReadyAPI :
 
 <div class="termy">
 
@@ -111,7 +111,7 @@ $ docker build -t myimage .
 
 ## Démarrer le conteneur Docker
 
-* Exécutez un conteneur basé sur votre image :
+- Exécutez un conteneur basé sur votre image :
 
 <div class="termy">
 
@@ -176,7 +176,7 @@ Pour configurer un cluster en mode Docker Swarm avec Traefik et la gestion de HT
 
 ### Déployer une application ReadyAPI
 
-La façon la plus simple de tout mettre en place, serait d'utiliser les [**Générateurs de projet ReadyAPI**](../project-generation.md){.internal-link target=_blank}.
+La façon la plus simple de tout mettre en place, serait d'utiliser les [**Générateurs de projet ReadyAPI**](../project-generation.md){.internal-link target=\_blank}.
 
 Le génerateur de projet adéquat est conçu pour être intégré à ce cluster Docker Swarm avec Traefik et HTTPS décrit ci-dessus.
 

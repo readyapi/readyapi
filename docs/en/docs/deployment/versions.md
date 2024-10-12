@@ -34,7 +34,7 @@ If you use any other tool to manage your installations, like `uv`, Poetry, Pipen
 
 ## Available versions
 
-You can see the available versions (e.g. to check what is the current latest) in the [Release Notes](../release-notes.md){.internal-link target=_blank}.
+You can see the available versions (e.g. to check what is the current latest) in the [Release Notes](../release-notes.md){.internal-link target=\_blank}.
 
 ## About versions
 
@@ -66,7 +66,7 @@ The "MINOR" is the number in the middle, for example, in `0.2.3`, the MINOR vers
 
 You should add tests for your app.
 
-With **ReadyAPI** it's very easy (thanks to Starlette), check the docs: [Testing](../tutorial/testing.md){.internal-link target=_blank}
+With **ReadyAPI** it's very easy (thanks to Starlette), check the docs: [Testing](../tutorial/testing.md){.internal-link target=\_blank}
 
 After you have tests, then you can upgrade the **ReadyAPI** version to a more recent one, and make sure that all your code is working correctly by running your tests.
 

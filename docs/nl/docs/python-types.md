@@ -23,7 +23,7 @@ Als je een Python expert bent en alles al weet over type hints, sla dan dit hoof
 Laten we beginnen met een eenvoudig voorbeeld:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 Het aanroepen van dit programma leidt tot het volgende resultaat:
@@ -34,13 +34,13 @@ John Doe
 
 De functie voert het volgende uit:
 
-* Neem een `first_name` en een `last_name`
-* Converteer de eerste letter van elk naar een hoofdletter met `title()`.
-``
-* <abbr title="Voegt ze samen, als één. Met de inhoud van de een na de ander.">Voeg samen</abbr> met een spatie in het midden.
+- Neem een `first_name` en een `last_name`
+- Converteer de eerste letter van elk naar een hoofdletter met `title()`.
+  ``
+- <abbr title="Voegt ze samen, als één. Met de inhoud van de een na de ander.">Voeg samen</abbr> met een spatie in het midden.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Bewerk het
@@ -84,7 +84,7 @@ Dat is alles.
 Dat zijn de "type hints":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 Dit is niet hetzelfde als het declareren van standaardwaarden zoals bij:
@@ -114,7 +114,7 @@ Nu kun je de opties bekijken en er doorheen scrollen totdat je de optie vindt di
 Bekijk deze functie, deze heeft al type hints:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Omdat de editor de types van de variabelen kent, krijgt u niet alleen aanvulling, maar ook controles op fouten:
@@ -124,7 +124,7 @@ Omdat de editor de types van de variabelen kent, krijgt u niet alleen aanvulling
 Nu weet je hoe je het moet oplossen, converteer `age` naar een string met `str(age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Types declareren
@@ -139,13 +139,13 @@ Je kunt alle standaard Python types declareren, niet alleen `str`.
 
 Je kunt bijvoorbeeld het volgende gebruiken:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Generieke types met typeparameters
@@ -183,7 +183,7 @@ Als type, vul `list` in.
 Doordat de list een type is dat enkele interne types bevat, zet je ze tussen vierkante haakjes:
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006_py39.py!}
+{!> ../../docs_src/python_types/tutorial006_py39.py!}
 ```
 
 ////
@@ -193,7 +193,7 @@ Doordat de list een type is dat enkele interne types bevat, zet je ze tussen vie
 Van `typing`, importeer `List` (met een hoofdletter `L`):
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 Declareer de variabele met dezelfde dubbele punt (`:`) syntax.
@@ -203,7 +203,7 @@ Zet als type de `List` die je hebt geïmporteerd uit `typing`.
 Doordat de list een type is dat enkele interne types bevat, zet je ze tussen vierkante haakjes:
 
 ```Python hl_lines="4"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 ////
@@ -241,7 +241,7 @@ Je kunt hetzelfde doen om `tuple`s en `set`s te declareren:
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial007_py39.py!}
+{!> ../../docs_src/python_types/tutorial007_py39.py!}
 ```
 
 ////
@@ -249,15 +249,15 @@ Je kunt hetzelfde doen om `tuple`s en `set`s te declareren:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial007.py!}
+{!> ../../docs_src/python_types/tutorial007.py!}
 ```
 
 ////
 
 Dit betekent:
 
-* De variabele `items_t` is een `tuple` met 3 items, een `int`, nog een `int`, en een `str`.
-* De variabele `items_s` is een `set`, en elk van de items is van het type `bytes`.
+- De variabele `items_t` is een `tuple` met 3 items, een `int`, nog een `int`, en een `str`.
+- De variabele `items_s` is een `set`, en elk van de items is van het type `bytes`.
 
 #### Dict
 
@@ -265,12 +265,12 @@ Om een `dict` te definiëren, geef je 2 typeparameters door, gescheiden door kom
 
 De eerste typeparameter is voor de sleutels (keys) van de `dict`.
 
-De tweede typeparameter is voor de waarden  (values) van het `dict`:
+De tweede typeparameter is voor de waarden (values) van het `dict`:
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008_py39.py!}
+{!> ../../docs_src/python_types/tutorial008_py39.py!}
 ```
 
 ////
@@ -278,16 +278,16 @@ De tweede typeparameter is voor de waarden  (values) van het `dict`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008.py!}
+{!> ../../docs_src/python_types/tutorial008.py!}
 ```
 
 ////
 
 Dit betekent:
 
-* De variabele `prices` is een `dict`:
-    * De sleutels van dit `dict` zijn van het type `str` (bijvoorbeeld de naam van elk item).
-    * De waarden van dit `dict` zijn van het type `float` (bijvoorbeeld de prijs van elk item).
+- De variabele `prices` is een `dict`:
+  - De sleutels van dit `dict` zijn van het type `str` (bijvoorbeeld de naam van elk item).
+  - De waarden van dit `dict` zijn van het type `float` (bijvoorbeeld de prijs van elk item).
 
 #### Union
 
@@ -300,7 +300,7 @@ In Python 3.10 is er ook een **nieuwe syntax** waarin je de mogelijke types kunt
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008b_py310.py!}
+{!> ../../docs_src/python_types/tutorial008b_py310.py!}
 ```
 
 ////
@@ -308,7 +308,7 @@ In Python 3.10 is er ook een **nieuwe syntax** waarin je de mogelijke types kunt
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008b.py!}
+{!> ../../docs_src/python_types/tutorial008b.py!}
 ```
 
 ////
@@ -322,7 +322,7 @@ Je kunt declareren dat een waarde een type kan hebben, zoals `str`, maar dat het
 In Python 3.6 en hoger (inclusief Python 3.10) kun je het declareren door `Optional` te importeren en te gebruiken vanuit de `typing`-module.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Door `Optional[str]` te gebruiken in plaats van alleen `str`, kan de editor je helpen fouten te detecteren waarbij je ervan uit zou kunnen gaan dat een waarde altijd een `str` is, terwijl het in werkelijkheid ook `None` zou kunnen zijn.
@@ -334,7 +334,7 @@ Dit betekent ook dat je in Python 3.10 `EenType | None` kunt gebruiken:
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial009_py310.py!}
+{!> ../../docs_src/python_types/tutorial009_py310.py!}
 ```
 
 ////
@@ -342,7 +342,7 @@ Dit betekent ook dat je in Python 3.10 `EenType | None` kunt gebruiken:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009.py!}
+{!> ../../docs_src/python_types/tutorial009.py!}
 ```
 
 ////
@@ -350,7 +350,7 @@ Dit betekent ook dat je in Python 3.10 `EenType | None` kunt gebruiken:
 //// tab | Python 3.8+ alternative
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009b.py!}
+{!> ../../docs_src/python_types/tutorial009b.py!}
 ```
 
 ////
@@ -359,8 +359,8 @@ Dit betekent ook dat je in Python 3.10 `EenType | None` kunt gebruiken:
 
 Als je een Python versie lager dan 3.10 gebruikt, is dit een tip vanuit mijn **subjectieve** standpunt:
 
-* 🚨 Vermijd het gebruik van `Optional[EenType]`.
-* Gebruik in plaats daarvan **`Union[EenType, None]`** ✨.
+- 🚨 Vermijd het gebruik van `Optional[EenType]`.
+- Gebruik in plaats daarvan **`Union[EenType, None]`** ✨.
 
 Beide zijn gelijkwaardig en onderliggend zijn ze hetzelfde, maar ik zou `Union` aanraden in plaats van `Optional` omdat het woord “**optional**” lijkt te impliceren dat de waarde optioneel is, en het eigenlijk betekent “het kan `None` zijn”, zelfs als het niet optioneel is en nog steeds vereist is.
 
@@ -371,7 +371,7 @@ Het gaat alleen om de woorden en naamgeving. Maar die naamgeving kan invloed heb
 Laten we als voorbeeld deze functie nemen:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c.py!}
+{!../../docs_src/python_types/tutorial009c.py!}
 ```
 
 De parameter `name` is gedefinieerd als `Optional[str]`, maar is **niet optioneel**, je kunt de functie niet aanroepen zonder de parameter:
@@ -380,7 +380,7 @@ De parameter `name` is gedefinieerd als `Optional[str]`, maar is **niet optionee
 say_hi()  # Oh, nee, dit geeft een foutmelding! 😱
 ```
 
-De `name` parameter is **nog steeds vereist** (niet *optioneel*) omdat het geen standaardwaarde heeft. Toch accepteert `name` `None` als waarde:
+De `name` parameter is **nog steeds vereist** (niet _optioneel_) omdat het geen standaardwaarde heeft. Toch accepteert `name` `None` als waarde:
 
 ```Python
 say_hi(name=None)  # Dit werkt, None is geldig 🎉
@@ -389,7 +389,7 @@ say_hi(name=None)  # Dit werkt, None is geldig 🎉
 Het goede nieuws is dat als je eenmaal Python 3.10 gebruikt, je je daar geen zorgen meer over hoeft te maken, omdat je dan gewoon `|` kunt gebruiken om unions van types te definiëren:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c_py310.py!}
+{!../../docs_src/python_types/tutorial009c_py310.py!}
 ```
 
 Dan hoef je je geen zorgen te maken over namen als `Optional` en `Union`. 😎
@@ -402,16 +402,16 @@ De types die typeparameters in vierkante haakjes gebruiken, worden **Generieke t
 
 Je kunt dezelfde ingebouwde types gebruiken als generics (met vierkante haakjes en types erin):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 Hetzelfde als bij Python 3.8, uit de `typing`-module:
 
-* `Union`
-* `Optional` (hetzelfde als bij Python 3.8)
-* ...en anderen.
+- `Union`
+- `Optional` (hetzelfde als bij Python 3.8)
+- ...en anderen.
 
 In Python 3.10 kun je , als alternatief voor de generieke `Union` en `Optional`, de <abbr title='ook wel "bitwise or operator" genoemd, maar die betekenis is hier niet relevant'>verticale lijn (`|`)</abbr> gebruiken om unions van typen te voorzien, dat is veel beter en eenvoudiger.
 
@@ -421,28 +421,28 @@ In Python 3.10 kun je , als alternatief voor de generieke `Union` en `Optional`,
 
 Je kunt dezelfde ingebouwde types gebruiken als generieke types (met vierkante haakjes en types erin):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 En hetzelfde als met Python 3.8, vanuit de `typing`-module:
 
-* `Union`
-* `Optional`
-* ...en anderen.
+- `Union`
+- `Optional`
+- ...en anderen.
 
 ////
 
 //// tab | Python 3.8+
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Union`
-* `Optional`
-* ...en anderen.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Union`
+- `Optional`
+- ...en anderen.
 
 ////
 
@@ -453,13 +453,13 @@ Je kunt een klasse ook declareren als het type van een variabele.
 Stel dat je een klasse `Person` hebt, met een naam:
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Vervolgens kun je een variabele van het type `Persoon` declareren:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Dan krijg je ook nog eens volledige editorondersteuning:
@@ -487,7 +487,7 @@ Een voorbeeld uit de officiële Pydantic-documentatie:
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py310.py!}
+{!> ../../docs_src/python_types/tutorial011_py310.py!}
 ```
 
 ////
@@ -495,7 +495,7 @@ Een voorbeeld uit de officiële Pydantic-documentatie:
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py39.py!}
+{!> ../../docs_src/python_types/tutorial011_py39.py!}
 ```
 
 ////
@@ -503,7 +503,7 @@ Een voorbeeld uit de officiële Pydantic-documentatie:
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011.py!}
+{!> ../../docs_src/python_types/tutorial011.py!}
 ```
 
 ////
@@ -516,7 +516,7 @@ Om meer te leren over <a href="https://docs.pydantic.dev/" class="external-link"
 
 **ReadyAPI** is volledig gebaseerd op Pydantic.
 
-Je zult veel meer van dit alles in de praktijk zien in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
+Je zult veel meer van dit alles in de praktijk zien in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=\_blank}.
 
 /// tip
 
@@ -533,7 +533,7 @@ Python heeft ook een functie waarmee je **extra <abbr title="Data over de data, 
 In Python 3.9 is `Annotated` onderdeel van de standaardpakket, dus je kunt het importeren vanuit `typing`.
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial013_py39.py!}
+{!> ../../docs_src/python_types/tutorial013_py39.py!}
 ```
 
 ////
@@ -545,7 +545,7 @@ In versies lager dan Python 3.9 importeer je `Annotated` vanuit `typing_extensio
 Het wordt al geïnstalleerd met **ReadyAPI**.
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial013.py!}
+{!> ../../docs_src/python_types/tutorial013.py!}
 ```
 
 ////
@@ -554,7 +554,7 @@ Python zelf doet niets met deze `Annotated` en voor editors en andere hulpmiddel
 
 Maar je kunt deze ruimte in `Annotated` gebruiken om **ReadyAPI** te voorzien van extra metadata over hoe je wilt dat je applicatie zich gedraagt.
 
-Het belangrijkste om te onthouden is dat **de eerste *typeparameter*** die je doorgeeft aan `Annotated` het **werkelijke type** is. De rest is gewoon metadata voor andere hulpmiddelen.
+Het belangrijkste om te onthouden is dat **de eerste _typeparameter_** die je doorgeeft aan `Annotated` het **werkelijke type** is. De rest is gewoon metadata voor andere hulpmiddelen.
 
 Voor nu hoef je alleen te weten dat `Annotated` bestaat en dat het standaard Python is. 😎
 
@@ -574,19 +574,19 @@ Daarnaast betekent het ook dat je code zeer verenigbaar zal zijn met veel andere
 
 Met **ReadyAPI** declareer je parameters met type hints en krijg je:
 
-* **Editor ondersteuning**.
-* **Type checks**.
+- **Editor ondersteuning**.
+- **Type checks**.
 
 ...en **ReadyAPI** gebruikt dezelfde declaraties om:
 
-* **Vereisten te definïeren **: van request pad parameters, query parameters, headers, bodies, dependencies, enz.
-* **Data te converteren**: van de request naar het vereiste type.
-* **Data te valideren**: afkomstig van elke request:
-    * **Automatische foutmeldingen** te genereren die naar de client worden geretourneerd wanneer de data ongeldig is.
-* De API met OpenAPI te **documenteren**:
-    * die vervolgens wordt gebruikt door de automatische interactieve documentatie gebruikersinterfaces.
+- **Vereisten te definïeren **: van request pad parameters, query parameters, headers, bodies, dependencies, enz.
+- **Data te converteren**: van de request naar het vereiste type.
+- **Data te valideren**: afkomstig van elke request:
+  - **Automatische foutmeldingen** te genereren die naar de client worden geretourneerd wanneer de data ongeldig is.
+- De API met OpenAPI te **documenteren**:
+  - die vervolgens wordt gebruikt door de automatische interactieve documentatie gebruikersinterfaces.
 
-Dit klinkt misschien allemaal abstract. Maak je geen zorgen. Je ziet dit allemaal in actie in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
+Dit klinkt misschien allemaal abstract. Maak je geen zorgen. Je ziet dit allemaal in actie in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=\_blank}.
 
 Het belangrijkste is dat door standaard Python types te gebruiken, op één plek (in plaats van meer klassen, decorators, enz. toe te voegen), **ReadyAPI** een groot deel van het werk voor je doet.
 

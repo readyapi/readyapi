@@ -23,7 +23,7 @@ Ceci étant découragé, la documentation interactive générée par Swagger UI 
 Commencez par importer la classe `BaseModel` du module `pydantic` :
 
 ```Python hl_lines="4"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 ## Créez votre modèle de données
@@ -33,7 +33,7 @@ Déclarez ensuite votre modèle de données en tant que classe qui hérite de `B
 Utilisez les types Python standard pour tous les attributs :
 
 ```Python hl_lines="7-11"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 Tout comme pour la déclaration de paramètres de requête, quand un attribut de modèle a une valeur par défaut, il n'est pas nécessaire. Sinon, cet attribut doit être renseigné dans le corps de la requête. Pour rendre ce champ optionnel simplement, utilisez `None` comme valeur par défaut.
@@ -60,10 +60,10 @@ Par exemple, le modèle ci-dessus déclare un "objet" JSON (ou `dict` Python) te
 
 ## Déclarez-le comme paramètre
 
-Pour l'ajouter à votre *opération de chemin*, déclarez-le comme vous déclareriez des paramètres de chemin ou de requête :
+Pour l'ajouter à votre _opération de chemin_, déclarez-le comme vous déclareriez des paramètres de chemin ou de requête :
 
 ```Python hl_lines="18"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 ...et déclarez que son type est le modèle que vous avez créé : `Item`.
@@ -72,14 +72,14 @@ Pour l'ajouter à votre *opération de chemin*, déclarez-le comme vous déclare
 
 En utilisant uniquement les déclarations de type Python, **ReadyAPI** réussit à :
 
-* Lire le contenu de la requête en tant que JSON.
-* Convertir les types correspondants (si nécessaire).
-* Valider la donnée.
-    * Si la donnée est invalide, une erreur propre et claire sera renvoyée, indiquant exactement où était la donnée incorrecte.
-* Passer la donnée reçue dans le paramètre `item`.
-    * Ce paramètre ayant été déclaré dans la fonction comme étant de type `Item`, vous aurez aussi tout le support offert par l'éditeur (auto-complétion, etc.) pour tous les attributs de ce paramètre et les types de ces attributs.
-* Générer des définitions <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> pour votre modèle, qui peuvent être utilisées où vous en avez besoin dans votre projet ensuite.
-* Ces schémas participeront à la constitution du schéma généré OpenAPI, et seront donc utilisés par les documentations automatiquement générées.
+- Lire le contenu de la requête en tant que JSON.
+- Convertir les types correspondants (si nécessaire).
+- Valider la donnée.
+  - Si la donnée est invalide, une erreur propre et claire sera renvoyée, indiquant exactement où était la donnée incorrecte.
+- Passer la donnée reçue dans le paramètre `item`.
+  - Ce paramètre ayant été déclaré dans la fonction comme étant de type `Item`, vous aurez aussi tout le support offert par l'éditeur (auto-complétion, etc.) pour tous les attributs de ce paramètre et les types de ces attributs.
+- Générer des définitions <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> pour votre modèle, qui peuvent être utilisées où vous en avez besoin dans votre projet ensuite.
+- Ces schémas participeront à la constitution du schéma généré OpenAPI, et seront donc utilisés par les documentations automatiquement générées.
 
 ## Documentation automatique
 
@@ -87,7 +87,7 @@ Les schémas JSON de vos modèles seront intégrés au schéma OpenAPI global de
 
 <img src="/img/tutorial/body/image01.png">
 
-Et seront aussi utilisés dans chaque *opération de chemin* de la documentation utilisant ces modèles :
+Et seront aussi utilisés dans chaque _opération de chemin_ de la documentation utilisant ces modèles :
 
 <img src="/img/tutorial/body/image02.png">
 
@@ -119,11 +119,11 @@ Si vous utilisez <a href="https://www.jetbrains.com/pycharm/" class="external-li
 
 Ce qui améliore le support pour les modèles Pydantic avec :
 
-* de l'auto-complétion
-* des vérifications de type
-* du "refactoring" (ou remaniement de code)
-* de la recherche
-* de l'inspection
+- de l'auto-complétion
+- des vérifications de type
+- du "refactoring" (ou remaniement de code)
+- de la recherche
+- de l'inspection
 
 ///
 
@@ -132,34 +132,34 @@ Ce qui améliore le support pour les modèles Pydantic avec :
 Dans la fonction, vous pouvez accéder à tous les attributs de l'objet du modèle directement :
 
 ```Python hl_lines="21"
-{!../../../docs_src/body/tutorial002.py!}
+{!../../docs_src/body/tutorial002.py!}
 ```
 
 ## Corps de la requête + paramètres de chemin
 
-Vous pouvez déclarer des paramètres de chemin et un corps de requête pour la même *opération de chemin*.
+Vous pouvez déclarer des paramètres de chemin et un corps de requête pour la même _opération de chemin_.
 
 **ReadyAPI** est capable de reconnaître que les paramètres de la fonction qui correspondent aux paramètres de chemin doivent être **récupérés depuis le chemin**, et que les paramètres de fonctions déclarés comme modèles Pydantic devraient être **récupérés depuis le corps de la requête**.
 
 ```Python hl_lines="17-18"
-{!../../../docs_src/body/tutorial003.py!}
+{!../../docs_src/body/tutorial003.py!}
 ```
 
 ## Corps de la requête + paramètres de chemin et de requête
 
-Vous pouvez aussi déclarer un **corps**, et des paramètres de **chemin** et de **requête** dans la même *opération de chemin*.
+Vous pouvez aussi déclarer un **corps**, et des paramètres de **chemin** et de **requête** dans la même _opération de chemin_.
 
 **ReadyAPI** saura reconnaître chacun d'entre eux et récupérer la bonne donnée au bon endroit.
 
 ```Python hl_lines="18"
-{!../../../docs_src/body/tutorial004.py!}
+{!../../docs_src/body/tutorial004.py!}
 ```
 
 Les paramètres de la fonction seront reconnus comme tel :
 
-* Si le paramètre est aussi déclaré dans le **chemin**, il sera utilisé comme paramètre de chemin.
-* Si le paramètre est d'un **type singulier** (comme `int`, `float`, `str`, `bool`, etc.), il sera interprété comme un paramètre de **requête**.
-* Si le paramètre est déclaré comme ayant pour type un **modèle Pydantic**, il sera interprété comme faisant partie du **corps** de la requête.
+- Si le paramètre est aussi déclaré dans le **chemin**, il sera utilisé comme paramètre de chemin.
+- Si le paramètre est d'un **type singulier** (comme `int`, `float`, `str`, `bool`, etc.), il sera interprété comme un paramètre de **requête**.
+- Si le paramètre est déclaré comme ayant pour type un **modèle Pydantic**, il sera interprété comme faisant partie du **corps** de la requête.
 
 /// note
 
@@ -171,4 +171,4 @@ Le type `Optional` dans `Optional[str]` n'est pas utilisé par **ReadyAPI**, mai
 
 ## Sans Pydantic
 
-Si vous ne voulez pas utiliser des modèles Pydantic, vous pouvez aussi utiliser des paramètres de **Corps**. Pour cela, allez voir la partie de la documentation sur  [Corps de la requête - Paramètres multiples](body-multiple-params.md){.internal-link target=_blank}.
+Si vous ne voulez pas utiliser des modèles Pydantic, vous pouvez aussi utiliser des paramètres de **Corps**. Pour cela, allez voir la partie de la documentation sur [Corps de la requête - Paramètres multiples](body-multiple-params.md){.internal-link target=\_blank}.

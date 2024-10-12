@@ -1,10 +1,10 @@
-# Path Operationの設定
+# Path Operation の設定
 
-*path operationデコレータ*を設定するためのパラメータがいくつかあります。
+*path operation デコレータ*を設定するためのパラメータがいくつかあります。
 
 /// warning | "注意"
 
-これらのパラメータは*path operation関数*ではなく、*path operationデコレータ*に直接渡されることに注意してください。
+これらのパラメータは*path operation 関数*ではなく、*path operation デコレータ*に直接渡されることに注意してください。
 
 ///
 
@@ -17,16 +17,16 @@
 しかし、それぞれの番号コードが何のためのものか覚えていない場合は、`status`のショートカット定数を使用することができます:
 
 ```Python hl_lines="3  17"
-{!../../../docs_src/path_operation_configuration/tutorial001.py!}
+{!../../docs_src/path_operation_configuration/tutorial001.py!}
 ```
 
-そのステータスコードはレスポンスで使用され、OpenAPIスキーマに追加されます。
+そのステータスコードはレスポンスで使用され、OpenAPI スキーマに追加されます。
 
 /// note | "技術詳細"
 
 また、`from starlette import status`を使用することもできます。
 
-**ReadyAPI** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
+**ReadyAPI** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これは Starlette から直接提供されています。
 
 ///
 
@@ -35,10 +35,10 @@
 `tags`パラメータを`str`の`list`（通常は１つの`str`）と一緒に渡すと、*path operation*にタグを追加できます:
 
 ```Python hl_lines="17  22  27"
-{!../../../docs_src/path_operation_configuration/tutorial002.py!}
+{!../../docs_src/path_operation_configuration/tutorial002.py!}
 ```
 
-これらはOpenAPIスキーマに追加され、自動ドキュメントのインターフェースで使用されます:
+これらは OpenAPI スキーマに追加され、自動ドキュメントのインターフェースで使用されます:
 
 <img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image01.png">
 
@@ -47,17 +47,17 @@
 `summary`と`description`を追加できます:
 
 ```Python hl_lines="20-21"
-{!../../../docs_src/path_operation_configuration/tutorial003.py!}
+{!../../docs_src/path_operation_configuration/tutorial003.py!}
 ```
 
-## docstringを用いた説明
+## docstring を用いた説明
 
 説明文は長くて複数行におよぶ傾向があるので、関数<abbr title="ドキュメントに使用される関数内の最初の式（変数に代入されていない）としての複数行の文字列">docstring</abbr>内に*path operation*の説明文を宣言できます。すると、**ReadyAPI** は説明文を読み込んでくれます。
 
-docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>を記述すれば、正しく解釈されて表示されます。（docstringのインデントを考慮して）
+docstring に<a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>を記述すれば、正しく解釈されて表示されます。（docstring のインデントを考慮して）
 
 ```Python hl_lines="19-27"
-{!../../../docs_src/path_operation_configuration/tutorial004.py!}
+{!../../docs_src/path_operation_configuration/tutorial004.py!}
 ```
 
 これは対話的ドキュメントで使用されます:
@@ -69,7 +69,7 @@ docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-lin
 `response_description`パラメータでレスポンスの説明をすることができます。
 
 ```Python hl_lines="21"
-{!../../../docs_src/path_operation_configuration/tutorial005.py!}
+{!../../docs_src/path_operation_configuration/tutorial005.py!}
 ```
 
 /// info | "情報"
@@ -80,7 +80,7 @@ docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-lin
 
 /// check | "確認"
 
-OpenAPIは*path operation*ごとにレスポンスの説明を必要としています。
+OpenAPI は*path operation*ごとにレスポンスの説明を必要としています。
 
 そのため、それを提供しない場合は、**ReadyAPI** が自動的に「成功のレスポンス」を生成します。
 
@@ -93,7 +93,7 @@ OpenAPIは*path operation*ごとにレスポンスの説明を必要としてい
 *path operation*を<abbr title="非推奨、使わない方がよい">deprecated</abbr>としてマークする必要があるが、それを削除しない場合は、`deprecated`パラメータを渡します:
 
 ```Python hl_lines="16"
-{!../../../docs_src/path_operation_configuration/tutorial006.py!}
+{!../../docs_src/path_operation_configuration/tutorial006.py!}
 ```
 
 対話的ドキュメントでは非推奨と明記されます:
@@ -106,4 +106,4 @@ OpenAPIは*path operation*ごとにレスポンスの説明を必要としてい
 
 ## まとめ
 
-*path operationデコレータ*にパラメータを渡すことで、*path operations*のメタデータを簡単に設定・追加することができます。
+*path operation デコレータ*にパラメータを渡すことで、*path operations*のメタデータを簡単に設定・追加することができます。

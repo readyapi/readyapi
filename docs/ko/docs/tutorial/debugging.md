@@ -7,7 +7,7 @@
 ReadyAPI 애플리케이션에서 `uvicorn`을 직접 임포트하여 실행합니다
 
 ```Python hl_lines="1  15"
-{!../../../docs_src/debugging/tutorial001.py!}
+{!../../docs_src/debugging/tutorial001.py!}
 ```
 
 ### `__name__ == "__main__"` 에 대하여
@@ -88,10 +88,10 @@ from myapp import app
 
 예를 들어 Visual Studio Code에서 다음을 수행할 수 있습니다.
 
-* "Debug" 패널로 이동합니다.
-* "Add configuration...".
-* "Python"을 선택합니다.
-* "`Python: Current File (Integrated Terminal)`" 옵션으로 디버거를 실행합니다.
+- "Debug" 패널로 이동합니다.
+- "Add configuration...".
+- "Python"을 선택합니다.
+- "`Python: Current File (Integrated Terminal)`" 옵션으로 디버거를 실행합니다.
 
 그런 다음 **ReadyAPI** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
 
@@ -103,10 +103,10 @@ from myapp import app
 
 Pycharm을 사용하는 경우 다음을 수행할 수 있습니다
 
-* "Run" 메뉴를 엽니다
-* "Debug..." 옵션을 선택합니다.
-* 그러면 상황에 맞는 메뉴가 나타납니다.
-* 디버그할 파일을 선택합니다(이 경우 `main.py`).
+- "Run" 메뉴를 엽니다
+- "Debug..." 옵션을 선택합니다.
+- 그러면 상황에 맞는 메뉴가 나타납니다.
+- 디버그할 파일을 선택합니다(이 경우 `main.py`).
 
 그런 다음 **ReadyAPI** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
 

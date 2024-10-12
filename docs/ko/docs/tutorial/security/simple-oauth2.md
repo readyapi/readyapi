@@ -28,9 +28,9 @@ OAuth2는 (우리가 사용하고 있는) "패스워드 플로우"을 사용할 
 
 일반적으로 특정 보안 권한을 선언하는 데 사용됩니다. 다음을 봅시다:
 
-* `users:read` 또는 `users:write`는 일반적인 예시입니다.
-* `instagram_basic`은 페이스북/인스타그램에서 사용합니다.
-* `https://www.googleapis.com/auth/drive`는 Google에서 사용합니다.
+- `users:read` 또는 `users:write`는 일반적인 예시입니다.
+- `instagram_basic`은 페이스북/인스타그램에서 사용합니다.
+- `https://www.googleapis.com/auth/drive`는 Google에서 사용합니다.
 
 /// 정보
 
@@ -55,7 +55,7 @@ OAuth2의 경우 문자열일 뿐입니다.
 //// tab | 파이썬 3.7 이상
 
 ```Python hl_lines="4  76"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -63,17 +63,17 @@ OAuth2의 경우 문자열일 뿐입니다.
 //// tab | 파이썬 3.10 이상
 
 ```Python hl_lines="2  74"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
 
 `OAuth2PasswordRequestForm`은 다음을 사용하여 폼 본문을 선언하는 클래스 의존성입니다:
 
-* `username`.
-* `password`.
-* `scope`는 선택적인 필드로 공백으로 구분된 문자열로 구성된 큰 문자열입니다.
-* `grant_type`(선택적으로 사용).
+- `username`.
+- `password`.
+- `scope`는 선택적인 필드로 공백으로 구분된 문자열로 구성된 큰 문자열입니다.
+- `grant_type`(선택적으로 사용).
 
 /// 팁
 
@@ -83,8 +83,8 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 
 ///
 
-* `client_id`(선택적으로 사용) (예제에서는 필요하지 않습니다).
-* `client_secret`(선택적으로 사용) (예제에서는 필요하지 않습니다).
+- `client_id`(선택적으로 사용) (예제에서는 필요하지 않습니다).
+- `client_secret`(선택적으로 사용) (예제에서는 필요하지 않습니다).
 
 /// 정보
 
@@ -117,7 +117,7 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 //// tab | 파이썬 3.7 이상
 
 ```Python hl_lines="3  77-79"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -125,7 +125,7 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 //// tab | 파이썬 3.10 이상
 
 ```Python hl_lines="1  75-77"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -157,7 +157,7 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 //// tab | P파이썬 3.7 이상
 
 ```Python hl_lines="80-83"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -165,7 +165,7 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 //// tab | 파이썬 3.10 이상
 
 ```Python hl_lines="78-81"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -174,7 +174,7 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 
 `UserInDB(**user_dict)`는 다음을 의미한다:
 
-*`user_dict`의 키와 값을 다음과 같은 키-값 인수로 직접 전달합니다:*
+_`user_dict`의 키와 값을 다음과 같은 키-값 인수로 직접 전달합니다:_
 
 ```Python
 UserInDB(
@@ -188,7 +188,7 @@ UserInDB(
 
 /// 정보
 
-`**user_dict`에 대한 자세한 설명은 [**추가 모델** 문서](../extra-models.md#about-user_indict){.internal-link target=_blank}를 다시 읽어봅시다.
+`**user_dict`에 대한 자세한 설명은 [**추가 모델** 문서](../extra-models.md#about-user_indict){.internal-link target=\_blank}를 다시 읽어봅시다.
 
 ///
 
@@ -213,7 +213,7 @@ UserInDB(
 //// tab | 파이썬 3.7 이상
 
 ```Python hl_lines="85"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -221,7 +221,7 @@ UserInDB(
 //// tab | 파이썬 3.10 이상
 
 ```Python hl_lines="83"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -242,7 +242,7 @@ UserInDB(
 
 이제 의존성을 업데이트를 할 겁니다.
 
-이 사용자가 활성화되어 있는 *경우에만* `current_user`를 가져올 겁니다.
+이 사용자가 활성화되어 있는 _경우에만_ `current_user`를 가져올 겁니다.
 
 따라서 `get_current_user`를 의존성으로 사용하는 추가 종속성 `get_current_active_user`를 만듭니다.
 
@@ -253,7 +253,7 @@ UserInDB(
 //// tab | 파이썬 3.7 이상
 
 ```Python hl_lines="58-66  69-72  90"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -261,7 +261,7 @@ UserInDB(
 //// tab | 파이썬 3.10 이상
 
 ```Python hl_lines="55-64  67-70  88"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////

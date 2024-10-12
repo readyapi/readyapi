@@ -1,6 +1,6 @@
 # Cookie 参数
 
- 定义 `Cookie` 参数与定义 `Query` 和 `Path` 参数一样。
+定义 `Cookie` 参数与定义 `Query` 和 `Path` 参数一样。
 
 ## 导入 `Cookie`
 
@@ -9,7 +9,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/cookie_params/tutorial001_an_py310.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/cookie_params/tutorial001_an_py39.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/cookie_params/tutorial001_an.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/cookie_params/tutorial001_py310.py!}
+{!> ../../docs_src/cookie_params/tutorial001_py310.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@
 ///
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/cookie_params/tutorial001.py!}
+{!> ../../docs_src/cookie_params/tutorial001.py!}
 ```
 
 ////
@@ -64,11 +64,10 @@
 
 第一个值是默认值，还可以传递所有验证参数或注释参数：
 
-
 //// tab | Python 3.10+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/cookie_params/tutorial001_an_py310.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -76,7 +75,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/cookie_params/tutorial001_an_py39.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -84,7 +83,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/cookie_params/tutorial001_an.py!}
+{!> ../../docs_src/cookie_params/tutorial001_an.py!}
 ```
 
 ////
@@ -98,7 +97,7 @@
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/cookie_params/tutorial001_py310.py!}
+{!> ../../docs_src/cookie_params/tutorial001_py310.py!}
 ```
 
 ////
@@ -112,7 +111,7 @@
 ///
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/cookie_params/tutorial001.py!}
+{!> ../../docs_src/cookie_params/tutorial001.py!}
 ```
 
 ////

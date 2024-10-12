@@ -1,6 +1,6 @@
 # Webhooks OpenAPI
 
-Existem situações onde você deseja informar os **usuários** da sua API que a sua aplicação pode chamar a aplicação *deles* (enviando uma requisição) com alguns dados, normalmente para **notificar** algum tipo de **evento**.
+Existem situações onde você deseja informar os **usuários** da sua API que a sua aplicação pode chamar a aplicação _deles_ (enviando uma requisição) com alguns dados, normalmente para **notificar** algum tipo de **evento**.
 
 Isso significa que no lugar do processo normal de seus usuários enviarem requisições para a sua API, é a **sua API** (ou sua aplicação) que poderia **enviar requisições para o sistema deles** (para a API deles, a aplicação deles).
 
@@ -33,7 +33,7 @@ Webhooks estão disponíveis a partir do OpenAPI 3.1.0, e possui suporte do Read
 Quando você cria uma aplicação com o **ReadyAPI**, existe um atributo chamado `webhooks`, que você utilizar para defini-los da mesma maneira que você definiria as suas **operações de rotas**, utilizando por exemplo `@app.webhooks.post()`.
 
 ```Python hl_lines="9-13  36-53"
-{!../../../docs_src/openapi_webhooks/tutorial001.py!}
+{!../../docs_src/openapi_webhooks/tutorial001.py!}
 ```
 
 Os webhooks que você define aparecerão no esquema do **OpenAPI** e na **página de documentação** gerada automaticamente.
@@ -52,6 +52,6 @@ Isto porque espera-se que os **seus usuários** definam o verdadeiro **caminho d
 
 Agora você pode iniciar a sua aplicação e ir até <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-Você verá que a sua documentação possui as *operações de rota* normais e agora também possui alguns **webhooks**:
+Você verá que a sua documentação possui as _operações de rota_ normais e agora também possui alguns **webhooks**:
 
 <img src="/img/tutorial/openapi-webhooks/image01.png">

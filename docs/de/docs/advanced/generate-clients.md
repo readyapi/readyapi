@@ -16,7 +16,7 @@ Wenn Sie ein **Frontend** erstellen, ist <a href="https://github.com/hey-api/ope
 
 Es gibt auch einige **vom Unternehmen entwickelte** Client- und SDK-Generatoren, die auf OpenAPI (ReadyAPI) basieren. In einigen Fällen können diese Ihnen **weitere Funktionalität** zusätzlich zu qualitativ hochwertigen generierten SDKs/Clients bieten.
 
-Einige von diesen ✨ [**sponsern ReadyAPI**](../help-readyapi.md#den-autor-sponsern){.internal-link target=_blank} ✨, das gewährleistet die kontinuierliche und gesunde **Entwicklung** von ReadyAPI und seinem **Ökosystem**.
+Einige von diesen ✨ [**sponsern ReadyAPI**](../help-readyapi.md#den-autor-sponsern){.internal-link target=\_blank} ✨, das gewährleistet die kontinuierliche und gesunde **Entwicklung** von ReadyAPI und seinem **Ökosystem**.
 
 Und es zeigt deren wahres Engagement für ReadyAPI und seine **Community** (Sie), da diese Ihnen nicht nur einen **guten Service** bieten möchten, sondern auch sicherstellen möchten, dass Sie über ein **gutes und gesundes Framework** verfügen, ReadyAPI. 🙇
 
@@ -31,7 +31,7 @@ Beginnen wir mit einer einfachen ReadyAPI-Anwendung:
 //// tab | Python 3.9+
 
 ```Python hl_lines="7-9  12-13  16-17  21"
-{!> ../../../docs_src/generate_clients/tutorial001_py39.py!}
+{!> ../../docs_src/generate_clients/tutorial001_py39.py!}
 ```
 
 ////
@@ -39,12 +39,12 @@ Beginnen wir mit einer einfachen ReadyAPI-Anwendung:
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-11  14-15  18  19  23"
-{!> ../../../docs_src/generate_clients/tutorial001.py!}
+{!> ../../docs_src/generate_clients/tutorial001.py!}
 ```
 
 ////
 
-Beachten Sie, dass die *Pfadoperationen* die Modelle definieren, welche diese für die Request- und Response-<abbr title="Die eigentlichen Nutzdaten, abzüglich der Metadaten">Payload</abbr> verwenden, indem sie die Modelle `Item` und `ResponseMessage` verwenden.
+Beachten Sie, dass die _Pfadoperationen_ die Modelle definieren, welche diese für die Request- und Response-<abbr title="Die eigentlichen Nutzdaten, abzüglich der Metadaten">Payload</abbr> verwenden, indem sie die Modelle `Item` und `ResponseMessage` verwenden.
 
 ### API-Dokumentation
 
@@ -84,7 +84,7 @@ Da es im lokalen Projekt installiert ist, könnten Sie diesen Befehl wahrscheinl
 
 Diese könnte so aussehen:
 
-```JSON  hl_lines="7"
+```JSON hl_lines="7"
 {
   "name": "frontend-app",
   "version": "1.0.0",
@@ -143,14 +143,14 @@ Das Response-Objekt hat auch automatische Vervollständigung:
 
 ## ReadyAPI-Anwendung mit Tags
 
-In vielen Fällen wird Ihre ReadyAPI-Anwendung größer sein und Sie werden wahrscheinlich Tags verwenden, um verschiedene Gruppen von *Pfadoperationen* zu separieren.
+In vielen Fällen wird Ihre ReadyAPI-Anwendung größer sein und Sie werden wahrscheinlich Tags verwenden, um verschiedene Gruppen von _Pfadoperationen_ zu separieren.
 
 Beispielsweise könnten Sie einen Abschnitt für **Items (Artikel)** und einen weiteren Abschnitt für **Users (Benutzer)** haben, und diese könnten durch Tags getrennt sein:
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="21  26  34"
-{!> ../../../docs_src/generate_clients/tutorial002_py39.py!}
+{!> ../../docs_src/generate_clients/tutorial002_py39.py!}
 ```
 
 ////
@@ -158,7 +158,7 @@ Beispielsweise könnten Sie einen Abschnitt für **Items (Artikel)** und einen w
 //// tab | Python 3.8+
 
 ```Python hl_lines="23  28  36"
-{!> ../../../docs_src/generate_clients/tutorial002.py!}
+{!> ../../docs_src/generate_clients/tutorial002.py!}
 ```
 
 ////
@@ -173,8 +173,8 @@ Auf diese Weise können Sie die Dinge für den Client-Code richtig ordnen und gr
 
 In diesem Fall haben Sie:
 
-* `ItemsService`
-* `UsersService`
+- `ItemsService`
+- `UsersService`
 
 ### Client-Methodennamen
 
@@ -184,9 +184,9 @@ Im Moment sehen die generierten Methodennamen wie `createItemItemsPost` nicht se
 ItemsService.createItemItemsPost({name: "Plumbus", price: 5})
 ```
 
-... das liegt daran, dass der Client-Generator für jede *Pfadoperation* die OpenAPI-interne **Operation-ID** verwendet.
+... das liegt daran, dass der Client-Generator für jede _Pfadoperation_ die OpenAPI-interne **Operation-ID** verwendet.
 
-OpenAPI erfordert, dass jede Operation-ID innerhalb aller *Pfadoperationen* eindeutig ist. Daher verwendet ReadyAPI den **Funktionsnamen**, den **Pfad** und die **HTTP-Methode/-Operation**, um diese Operation-ID zu generieren. Denn so kann sichergestellt werden, dass die Operation-IDs eindeutig sind.
+OpenAPI erfordert, dass jede Operation-ID innerhalb aller _Pfadoperationen_ eindeutig ist. Daher verwendet ReadyAPI den **Funktionsnamen**, den **Pfad** und die **HTTP-Methode/-Operation**, um diese Operation-ID zu generieren. Denn so kann sichergestellt werden, dass die Operation-IDs eindeutig sind.
 
 Aber ich zeige Ihnen als nächstes, wie Sie das verbessern können. 🤓
 
@@ -196,22 +196,22 @@ Sie können die Art und Weise, wie diese Operation-IDs **generiert** werden, **�
 
 In diesem Fall müssen Sie auf andere Weise sicherstellen, dass jede Operation-ID **eindeutig** ist.
 
-Sie könnten beispielsweise sicherstellen, dass jede *Pfadoperation* einen Tag hat, und dann die Operation-ID basierend auf dem **Tag** und dem **Namen** der *Pfadoperation* (dem Funktionsnamen) generieren.
+Sie könnten beispielsweise sicherstellen, dass jede _Pfadoperation_ einen Tag hat, und dann die Operation-ID basierend auf dem **Tag** und dem **Namen** der _Pfadoperation_ (dem Funktionsnamen) generieren.
 
 ### Funktion zum Generieren einer eindeutigen ID erstellen
 
-ReadyAPI verwendet eine **eindeutige ID** für jede *Pfadoperation*, diese wird für die **Operation-ID** und auch für die Namen aller benötigten benutzerdefinierten Modelle für Requests oder Responses verwendet.
+ReadyAPI verwendet eine **eindeutige ID** für jede _Pfadoperation_, diese wird für die **Operation-ID** und auch für die Namen aller benötigten benutzerdefinierten Modelle für Requests oder Responses verwendet.
 
 Sie können diese Funktion anpassen. Sie nimmt eine `APIRoute` und gibt einen String zurück.
 
-Hier verwendet sie beispielsweise den ersten Tag (Sie werden wahrscheinlich nur einen Tag haben) und den Namen der *Pfadoperation* (den Funktionsnamen).
+Hier verwendet sie beispielsweise den ersten Tag (Sie werden wahrscheinlich nur einen Tag haben) und den Namen der _Pfadoperation_ (den Funktionsnamen).
 
 Anschließend können Sie diese benutzerdefinierte Funktion als Parameter `generate_unique_id_function` an **ReadyAPI** übergeben:
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="6-7  10"
-{!> ../../../docs_src/generate_clients/tutorial003_py39.py!}
+{!> ../../docs_src/generate_clients/tutorial003_py39.py!}
 ```
 
 ////
@@ -219,7 +219,7 @@ Anschließend können Sie diese benutzerdefinierte Funktion als Parameter `gener
 //// tab | Python 3.8+
 
 ```Python hl_lines="8-9  12"
-{!> ../../../docs_src/generate_clients/tutorial003.py!}
+{!> ../../docs_src/generate_clients/tutorial003.py!}
 ```
 
 ////
@@ -247,7 +247,7 @@ Wir könnten das OpenAPI-JSON in eine Datei `openapi.json` herunterladen und dan
 //// tab | Python
 
 ```Python
-{!> ../../../docs_src/generate_clients/tutorial004.py!}
+{!> ../../docs_src/generate_clients/tutorial004.py!}
 ```
 
 ////
@@ -255,7 +255,7 @@ Wir könnten das OpenAPI-JSON in eine Datei `openapi.json` herunterladen und dan
 //// tab | Node.js
 
 ```Javascript
-{!> ../../../docs_src/generate_clients/tutorial004.js!}
+{!> ../../docs_src/generate_clients/tutorial004.js!}
 ```
 
 ////
@@ -266,7 +266,7 @@ Damit würden die Operation-IDs von Dingen wie `items-get_items` in `get_items` 
 
 Da das Endergebnis nun in einer Datei `openapi.json` vorliegt, würden Sie die `package.json` ändern, um diese lokale Datei zu verwenden, zum Beispiel:
 
-```JSON  hl_lines="7"
+```JSON hl_lines="7"
 {
   "name": "frontend-app",
   "version": "1.0.0",
@@ -292,13 +292,13 @@ Nach der Generierung des neuen Clients hätten Sie nun **saubere Methodennamen**
 
 Wenn Sie die automatisch generierten Clients verwenden, erhalten Sie **automatische Codevervollständigung** für:
 
-* Methoden.
-* Request-Payloads im Body, Query-Parameter, usw.
-* Response-Payloads.
+- Methoden.
+- Request-Payloads im Body, Query-Parameter, usw.
+- Response-Payloads.
 
 Außerdem erhalten Sie für alles **Inline-Fehlerberichte**.
 
-Und wann immer Sie den Backend-Code aktualisieren und das Frontend **neu generieren**, stehen alle neuen *Pfadoperationen* als Methoden zur Verfügung, die alten werden entfernt und alle anderen Änderungen werden im generierten Code reflektiert. 🤓
+Und wann immer Sie den Backend-Code aktualisieren und das Frontend **neu generieren**, stehen alle neuen _Pfadoperationen_ als Methoden zur Verfügung, die alten werden entfernt und alle anderen Änderungen werden im generierten Code reflektiert. 🤓
 
 Das bedeutet auch, dass, wenn sich etwas ändert, dies automatisch im Client-Code **reflektiert** wird. Und wenn Sie den Client **erstellen**, kommt es zu einer Fehlermeldung, wenn die verwendeten Daten **nicht übereinstimmen**.
 

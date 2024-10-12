@@ -2,15 +2,15 @@
 
 🔢, **ReadyAPI** 🔜 📨 📨 ⚙️ `JSONResponse`.
 
-👆 💪 🔐 ⚫️ 🛬 `Response` 🔗 👀 [📨 📨 🔗](response-directly.md){.internal-link target=_blank}.
+👆 💪 🔐 ⚫️ 🛬 `Response` 🔗 👀 [📨 📨 🔗](response-directly.md){.internal-link target=\_blank}.
 
 ✋️ 🚥 👆 📨 `Response` 🔗, 📊 🏆 🚫 🔁 🗜, &amp; 🧾 🏆 🚫 🔁 🏗 (🖼, 🔌 🎯 "📻 🆎", 🇺🇸🔍 🎚 `Content-Type` 🍕 🏗 🗄).
 
-✋️ 👆 💪 📣 `Response` 👈 👆 💚 ⚙️, *➡ 🛠️ 👨‍🎨*.
+✋️ 👆 💪 📣 `Response` 👈 👆 💚 ⚙️, _➡ 🛠️ 👨‍🎨_.
 
-🎚 👈 👆 📨 ⚪️➡️ 👆 *➡ 🛠️ 🔢* 🔜 🚮 🔘 👈 `Response`.
+🎚 👈 👆 📨 ⚪️➡️ 👆 _➡ 🛠️ 🔢_ 🔜 🚮 🔘 👈 `Response`.
 
-&amp; 🚥 👈 `Response` ✔️ 🎻 📻 🆎 (`application/json`), 💖 💼 ⏮️ `JSONResponse` &amp; `UJSONResponse`, 💽 👆 📨 🔜 🔁 🗜 (&amp; ⛽) ⏮️ 🙆 Pydantic `response_model` 👈 👆 📣 *➡ 🛠️ 👨‍🎨*.
+&amp; 🚥 👈 `Response` ✔️ 🎻 📻 🆎 (`application/json`), 💖 💼 ⏮️ `JSONResponse` &amp; `UJSONResponse`, 💽 👆 📨 🔜 🔁 🗜 (&amp; ⛽) ⏮️ 🙆 Pydantic `response_model` 👈 👆 📣 _➡ 🛠️ 👨‍🎨_.
 
 /// note
 
@@ -22,16 +22,16 @@
 
 🖼, 🚥 👆 ✊ 🎭, 👆 💪 ❎ &amp; ⚙️ <a href="https://github.com/ijl/orjson" class="external-link" target="_blank">`orjson`</a> &amp; ⚒ 📨 `ORJSONResponse`.
 
-🗄 `Response` 🎓 (🎧-🎓) 👆 💚 ⚙️ &amp; 📣 ⚫️ *➡ 🛠️ 👨‍🎨*.
+🗄 `Response` 🎓 (🎧-🎓) 👆 💚 ⚙️ &amp; 📣 ⚫️ _➡ 🛠️ 👨‍🎨_.
 
 ⭕ 📨, 📨 `Response` 🔗 🌅 ⏩ 🌘 🛬 📖.
 
-👉 ↩️ 🔢, ReadyAPI 🔜 ✔ 🔠 🏬 🔘 &amp; ⚒ 💭 ⚫️ 🎻 ⏮️ 🎻, ⚙️ 🎏 [🎻 🔗 🔢](../tutorial/encoder.md){.internal-link target=_blank} 🔬 🔰. 👉 ⚫️❔ ✔ 👆 📨 **❌ 🎚**, 🖼 💽 🏷.
+👉 ↩️ 🔢, ReadyAPI 🔜 ✔ 🔠 🏬 🔘 &amp; ⚒ 💭 ⚫️ 🎻 ⏮️ 🎻, ⚙️ 🎏 [🎻 🔗 🔢](../tutorial/encoder.md){.internal-link target=\_blank} 🔬 🔰. 👉 ⚫️❔ ✔ 👆 📨 **❌ 🎚**, 🖼 💽 🏷.
 
 ✋️ 🚥 👆 🎯 👈 🎚 👈 👆 🛬 **🎻 ⏮️ 🎻**, 👆 💪 🚶‍♀️ ⚫️ 🔗 📨 🎓 &amp; ❎ ➕ 🌥 👈 ReadyAPI 🔜 ✔️ 🚶‍♀️ 👆 📨 🎚 🔘 `jsonable_encoder` ⏭ 🚶‍♀️ ⚫️ 📨 🎓.
 
 ```Python hl_lines="2  7"
-{!../../../docs_src/custom_response/tutorial001b.py!}
+{!../../docs_src/custom_response/tutorial001b.py!}
 ```
 
 /// info
@@ -40,7 +40,7 @@
 
 👉 💼, 🇺🇸🔍 🎚 `Content-Type` 🔜 ⚒ `application/json`.
 
- &amp; ⚫️ 🔜 📄 ✅ 🗄.
+&amp; ⚫️ 🔜 📄 ✅ 🗄.
 
 ///
 
@@ -54,11 +54,11 @@
 
 📨 📨 ⏮️ 🕸 🔗 ⚪️➡️ **ReadyAPI**, ⚙️ `HTMLResponse`.
 
-* 🗄 `HTMLResponse`.
-* 🚶‍♀️ `HTMLResponse` 🔢 `response_class` 👆 *➡ 🛠️ 👨‍🎨*.
+- 🗄 `HTMLResponse`.
+- 🚶‍♀️ `HTMLResponse` 🔢 `response_class` 👆 _➡ 🛠️ 👨‍🎨_.
 
 ```Python hl_lines="2  7"
-{!../../../docs_src/custom_response/tutorial002.py!}
+{!../../docs_src/custom_response/tutorial002.py!}
 ```
 
 /// info
@@ -67,23 +67,23 @@
 
 👉 💼, 🇺🇸🔍 🎚 `Content-Type` 🔜 ⚒ `text/html`.
 
- &amp; ⚫️ 🔜 📄 ✅ 🗄.
+&amp; ⚫️ 🔜 📄 ✅ 🗄.
 
 ///
 
 ### 📨 `Response`
 
-👀 [📨 📨 🔗](response-directly.md){.internal-link target=_blank}, 👆 💪 🔐 📨 🔗 👆 *➡ 🛠️*, 🛬 ⚫️.
+👀 [📨 📨 🔗](response-directly.md){.internal-link target=\_blank}, 👆 💪 🔐 📨 🔗 👆 _➡ 🛠️_, 🛬 ⚫️.
 
 🎏 🖼 ⚪️➡️ 🔛, 🛬 `HTMLResponse`, 💪 👀 💖:
 
 ```Python hl_lines="2  7  19"
-{!../../../docs_src/custom_response/tutorial003.py!}
+{!../../docs_src/custom_response/tutorial003.py!}
 ```
 
 /// warning
 
-`Response` 📨 🔗 👆 *➡ 🛠️ 🔢* 🏆 🚫 📄 🗄 (🖼, `Content-Type` 🏆 🚫 📄) &amp; 🏆 🚫 ⭐ 🏧 🎓 🩺.
+`Response` 📨 🔗 👆 _➡ 🛠️ 🔢_ 🏆 🚫 📄 🗄 (🖼, `Content-Type` 🏆 🚫 📄) &amp; 🏆 🚫 ⭐ 🏧 🎓 🩺.
 
 ///
 
@@ -97,14 +97,14 @@
 
 🚥 👆 💚 🔐 📨 ⚪️➡️ 🔘 🔢 ✋️ 🎏 🕰 📄 "📻 🆎" 🗄, 👆 💪 ⚙️ `response_class` 🔢 &amp; 📨 `Response` 🎚.
 
-`response_class` 🔜 ⤴️ ⚙️ 🕴 📄 🗄 *➡ 🛠️*, ✋️ 👆 `Response` 🔜 ⚙️.
+`response_class` 🔜 ⤴️ ⚙️ 🕴 📄 🗄 _➡ 🛠️_, ✋️ 👆 `Response` 🔜 ⚙️.
 
 #### 📨 `HTMLResponse` 🔗
 
 🖼, ⚫️ 💪 🕳 💖:
 
 ```Python hl_lines="7  21  23"
-{!../../../docs_src/custom_response/tutorial004.py!}
+{!../../docs_src/custom_response/tutorial004.py!}
 ```
 
 👉 🖼, 🔢 `generate_html_response()` ⏪ 🏗 &amp; 📨 `Response` ↩️ 🛬 🕸 `str`.
@@ -137,15 +137,15 @@
 
 ⚫️ 🚫 📄 🔢:
 
-* `content` - `str` ⚖️ `bytes`.
-* `status_code` - `int` 🇺🇸🔍 👔 📟.
-* `headers` - `dict` 🎻.
-* `media_type` - `str` 🤝 📻 🆎. 🤶 Ⓜ. `"text/html"`.
+- `content` - `str` ⚖️ `bytes`.
+- `status_code` - `int` 🇺🇸🔍 👔 📟.
+- `headers` - `dict` 🎻.
+- `media_type` - `str` 🤝 📻 🆎. 🤶 Ⓜ. `"text/html"`.
 
 ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 🎚, ⚓️ 🔛 = &amp; 🔁 = ✍ 🆎.
 
 ```Python hl_lines="1  18"
-{!../../../docs_src/response_directly/tutorial002.py!}
+{!../../docs_src/response_directly/tutorial002.py!}
 ```
 
 ### `HTMLResponse`
@@ -157,7 +157,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 ✊ ✍ ⚖️ 🔢 &amp; 📨 ✅ ✍ 📨.
 
 ```Python hl_lines="2  7  9"
-{!../../../docs_src/custom_response/tutorial005.py!}
+{!../../docs_src/custom_response/tutorial005.py!}
 ```
 
 ### `JSONResponse`
@@ -181,7 +181,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 ///
 
 ```Python hl_lines="2  7"
-{!../../../docs_src/custom_response/tutorial001.py!}
+{!../../docs_src/custom_response/tutorial001.py!}
 ```
 
 /// tip
@@ -197,19 +197,18 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 👆 💪 📨 `RedirectResponse` 🔗:
 
 ```Python hl_lines="2  9"
-{!../../../docs_src/custom_response/tutorial006.py!}
+{!../../docs_src/custom_response/tutorial006.py!}
 ```
 
 ---
 
 ⚖️ 👆 💪 ⚙️ ⚫️ `response_class` 🔢:
 
-
 ```Python hl_lines="2  7  9"
-{!../../../docs_src/custom_response/tutorial006b.py!}
+{!../../docs_src/custom_response/tutorial006b.py!}
 ```
 
-🚥 👆 👈, ⤴️ 👆 💪 📨 📛 🔗 ⚪️➡️ 👆 *➡ 🛠️* 🔢.
+🚥 👆 👈, ⤴️ 👆 💪 📨 📛 🔗 ⚪️➡️ 👆 _➡ 🛠️_ 🔢.
 
 👉 💼, `status_code` ⚙️ 🔜 🔢 1️⃣ `RedirectResponse`, ❔ `307`.
 
@@ -218,7 +217,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 👆 💪 ⚙️ `status_code` 🔢 🌀 ⏮️ `response_class` 🔢:
 
 ```Python hl_lines="2  7  9"
-{!../../../docs_src/custom_response/tutorial006c.py!}
+{!../../docs_src/custom_response/tutorial006c.py!}
 ```
 
 ### `StreamingResponse`
@@ -226,7 +225,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 ✊ 🔁 🚂 ⚖️ 😐 🚂/🎻 &amp; 🎏 📨 💪.
 
 ```Python hl_lines="2  14"
-{!../../../docs_src/custom_response/tutorial007.py!}
+{!../../docs_src/custom_response/tutorial007.py!}
 ```
 
 #### ⚙️ `StreamingResponse` ⏮️ 📁-💖 🎚
@@ -238,7 +237,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 👉 🔌 📚 🗃 🔗 ⏮️ ☁ 💾, 📹 🏭, &amp; 🎏.
 
 ```{ .python .annotate hl_lines="2  10-12  14" }
-{!../../../docs_src/custom_response/tutorial008.py!}
+{!../../docs_src/custom_response/tutorial008.py!}
 ```
 
 1️⃣. 👉 🚂 🔢. ⚫️ "🚂 🔢" ↩️ ⚫️ 🔌 `yield` 📄 🔘.
@@ -261,24 +260,24 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 ✊ 🎏 ⚒ ❌ 🔗 🌘 🎏 📨 🆎:
 
-* `path` - 📁 📁 🎏.
-* `headers` - 🙆 🛃 🎚 🔌, 📖.
-* `media_type` - 🎻 🤝 📻 🆎. 🚥 🔢, 📁 ⚖️ ➡ 🔜 ⚙️ 🔑 📻 🆎.
-* `filename` - 🚥 ⚒, 👉 🔜 🔌 📨 `Content-Disposition`.
+- `path` - 📁 📁 🎏.
+- `headers` - 🙆 🛃 🎚 🔌, 📖.
+- `media_type` - 🎻 🤝 📻 🆎. 🚥 🔢, 📁 ⚖️ ➡ 🔜 ⚙️ 🔑 📻 🆎.
+- `filename` - 🚥 ⚒, 👉 🔜 🔌 📨 `Content-Disposition`.
 
 📁 📨 🔜 🔌 ☑ `Content-Length`, `Last-Modified` &amp; `ETag` 🎚.
 
 ```Python hl_lines="2  10"
-{!../../../docs_src/custom_response/tutorial009.py!}
+{!../../docs_src/custom_response/tutorial009.py!}
 ```
 
 👆 💪 ⚙️ `response_class` 🔢:
 
 ```Python hl_lines="2  8  10"
-{!../../../docs_src/custom_response/tutorial009b.py!}
+{!../../docs_src/custom_response/tutorial009b.py!}
 ```
 
-👉 💼, 👆 💪 📨 📁 ➡ 🔗 ⚪️➡️ 👆 *➡ 🛠️* 🔢.
+👉 💼, 👆 💪 📨 📁 ➡ 🔗 ⚪️➡️ 👆 _➡ 🛠️_ 🔢.
 
 ## 🛃 📨 🎓
 
@@ -291,13 +290,13 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 👆 💪 ✍ `CustomORJSONResponse`. 👑 👜 👆 ✔️ ✍ `Response.render(content)` 👩‍🔬 👈 📨 🎚 `bytes`:
 
 ```Python hl_lines="9-14  17"
-{!../../../docs_src/custom_response/tutorial009c.py!}
+{!../../docs_src/custom_response/tutorial009c.py!}
 ```
 
 🔜 ↩️ 🛬:
 
 ```json
-{"message": "Hello World"}
+{ "message": "Hello World" }
 ```
 
 ...👉 📨 🔜 📨:
@@ -316,18 +315,18 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 🔢 👈 🔬 👉 `default_response_class`.
 
-🖼 🔛, **ReadyAPI** 🔜 ⚙️ `ORJSONResponse` 🔢, 🌐 *➡ 🛠️*, ↩️ `JSONResponse`.
+🖼 🔛, **ReadyAPI** 🔜 ⚙️ `ORJSONResponse` 🔢, 🌐 _➡ 🛠️_, ↩️ `JSONResponse`.
 
 ```Python hl_lines="2  4"
-{!../../../docs_src/custom_response/tutorial010.py!}
+{!../../docs_src/custom_response/tutorial010.py!}
 ```
 
 /// tip
 
-👆 💪 🔐 `response_class` *➡ 🛠️* ⏭.
+👆 💪 🔐 `response_class` _➡ 🛠️_ ⏭.
 
 ///
 
 ## 🌖 🧾
 
-👆 💪 📣 📻 🆎 &amp; 📚 🎏 ℹ 🗄 ⚙️ `responses`: [🌖 📨 🗄](additional-responses.md){.internal-link target=_blank}.
+👆 💪 📣 📻 🆎 &amp; 📚 🎏 ℹ 🗄 ⚙️ `responses`: [🌖 📨 🗄](additional-responses.md){.internal-link target=\_blank}.

@@ -12,7 +12,7 @@ Aber schauen wir uns zunächst ein paar kleine Konzepte an.
 
 ## In Eile?
 
-Wenn Ihnen diese Begriffe egal sind und Sie einfach *jetzt* Sicherheit mit Authentifizierung basierend auf Benutzername und Passwort hinzufügen müssen, fahren Sie mit den nächsten Kapiteln fort.
+Wenn Ihnen diese Begriffe egal sind und Sie einfach _jetzt_ Sicherheit mit Authentifizierung basierend auf Benutzername und Passwort hinzufügen müssen, fahren Sie mit den nächsten Kapiteln fort.
 
 ## OAuth2
 
@@ -70,24 +70,23 @@ Durch deren Verwendung können Sie alle diese Standards-basierten Tools nutzen, 
 
 OpenAPI definiert die folgenden Sicherheitsschemas:
 
-* `apiKey`: ein anwendungsspezifischer Schlüssel, der stammen kann von:
-    * Einem Query-Parameter.
-    * Einem Header.
-    * Einem Cookie.
-* `http`: Standard-HTTP-Authentifizierungssysteme, einschließlich:
-    * `bearer`: ein Header `Authorization` mit dem Wert `Bearer` plus einem Token. Dies wird von OAuth2 geerbt.
-    * HTTP Basic Authentication.
-    * HTTP Digest, usw.
-* `oauth2`: Alle OAuth2-Methoden zum Umgang mit Sicherheit (genannt „Flows“).
-    * Mehrere dieser Flows eignen sich zum Aufbau eines OAuth 2.0-Authentifizierungsanbieters (wie Google, Facebook, Twitter, GitHub usw.):
-        * `implicit`
-        * `clientCredentials`
-        * `authorizationCode`
-    * Es gibt jedoch einen bestimmten „Flow“, der perfekt für die direkte Abwicklung der Authentifizierung in derselben Anwendung verwendet werden kann:
-        * `password`: Einige der nächsten Kapitel werden Beispiele dafür behandeln.
-* `openIdConnect`: bietet eine Möglichkeit, zu definieren, wie OAuth2-Authentifizierungsdaten automatisch ermittelt werden können.
-    * Diese automatische Erkennung ist es, die in der OpenID Connect Spezifikation definiert ist.
-
+- `apiKey`: ein anwendungsspezifischer Schlüssel, der stammen kann von:
+  - Einem Query-Parameter.
+  - Einem Header.
+  - Einem Cookie.
+- `http`: Standard-HTTP-Authentifizierungssysteme, einschließlich:
+  - `bearer`: ein Header `Authorization` mit dem Wert `Bearer` plus einem Token. Dies wird von OAuth2 geerbt.
+  - HTTP Basic Authentication.
+  - HTTP Digest, usw.
+- `oauth2`: Alle OAuth2-Methoden zum Umgang mit Sicherheit (genannt „Flows“).
+  - Mehrere dieser Flows eignen sich zum Aufbau eines OAuth 2.0-Authentifizierungsanbieters (wie Google, Facebook, Twitter, GitHub usw.):
+    - `implicit`
+    - `clientCredentials`
+    - `authorizationCode`
+  - Es gibt jedoch einen bestimmten „Flow“, der perfekt für die direkte Abwicklung der Authentifizierung in derselben Anwendung verwendet werden kann:
+    - `password`: Einige der nächsten Kapitel werden Beispiele dafür behandeln.
+- `openIdConnect`: bietet eine Möglichkeit, zu definieren, wie OAuth2-Authentifizierungsdaten automatisch ermittelt werden können.
+  - Diese automatische Erkennung ist es, die in der OpenID Connect Spezifikation definiert ist.
 
 /// tip | "Tipp"
 

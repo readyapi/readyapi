@@ -12,7 +12,7 @@ Vamos imaginar que você tenha um banco de dados `fake_db` que recebe apenas dad
 
 Por exemplo, ele não recebe objetos `datetime`, pois estes objetos não são compatíveis com JSON.
 
-Então, um objeto `datetime` teria que ser convertido em um `str` contendo os dados no formato  <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO</a>.
+Então, um objeto `datetime` teria que ser convertido em um `str` contendo os dados no formato <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO</a>.
 
 Da mesma forma, este banco de dados não receberia um modelo Pydantic (um objeto com atributos), apenas um `dict`.
 
@@ -23,7 +23,7 @@ A função recebe um objeto, como um modelo Pydantic e retorna uma versão compa
 //// tab | Python 3.10+
 
 ```Python hl_lines="4  21"
-{!> ../../../docs_src/encoder/tutorial001_py310.py!}
+{!> ../../docs_src/encoder/tutorial001_py310.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@ A função recebe um objeto, como um modelo Pydantic e retorna uma versão compa
 //// tab | Python 3.8+
 
 ```Python hl_lines="5  22"
-{!> ../../../docs_src/encoder/tutorial001.py!}
+{!> ../../docs_src/encoder/tutorial001.py!}
 ```
 
 ////

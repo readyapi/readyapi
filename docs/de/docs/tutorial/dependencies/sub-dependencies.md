@@ -13,7 +13,7 @@ Sie könnten eine erste Abhängigkeit („Dependable“) wie folgt erstellen:
 //// tab | Python 3.10+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -21,7 +21,7 @@ Sie könnten eine erste Abhängigkeit („Dependable“) wie folgt erstellen:
 //// tab | Python 3.9+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -29,7 +29,7 @@ Sie könnten eine erste Abhängigkeit („Dependable“) wie folgt erstellen:
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-10"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -43,7 +43,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -57,7 +57,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -73,7 +73,7 @@ Dann können Sie eine weitere Abhängigkeitsfunktion (ein „Dependable“) erst
 //// tab | Python 3.10+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -81,7 +81,7 @@ Dann können Sie eine weitere Abhängigkeitsfunktion (ein „Dependable“) erst
 //// tab | Python 3.9+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -89,7 +89,7 @@ Dann können Sie eine weitere Abhängigkeitsfunktion (ein „Dependable“) erst
 //// tab | Python 3.8+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -103,7 +103,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -117,17 +117,17 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 Betrachten wir die deklarierten Parameter:
 
-* Obwohl diese Funktion selbst eine Abhängigkeit ist („Dependable“, etwas hängt von ihr ab), deklariert sie auch eine andere Abhängigkeit („Dependant“, sie hängt von etwas anderem ab).
-    * Sie hängt von `query_extractor` ab und weist den von diesem zurückgegebenen Wert dem Parameter `q` zu.
-* Sie deklariert außerdem ein optionales `last_query`-Cookie, ein `str`.
-    * Wenn der Benutzer keine Query `q` übermittelt hat, verwenden wir die zuletzt übermittelte Query, die wir zuvor in einem Cookie gespeichert haben.
+- Obwohl diese Funktion selbst eine Abhängigkeit ist („Dependable“, etwas hängt von ihr ab), deklariert sie auch eine andere Abhängigkeit („Dependant“, sie hängt von etwas anderem ab).
+  - Sie hängt von `query_extractor` ab und weist den von diesem zurückgegebenen Wert dem Parameter `q` zu.
+- Sie deklariert außerdem ein optionales `last_query`-Cookie, ein `str`.
+  - Wenn der Benutzer keine Query `q` übermittelt hat, verwenden wir die zuletzt übermittelte Query, die wir zuvor in einem Cookie gespeichert haben.
 
 ## Die Abhängigkeit verwenden
 
@@ -136,7 +136,7 @@ Diese Abhängigkeit verwenden wir nun wie folgt:
 //// tab | Python 3.10+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -144,7 +144,7 @@ Diese Abhängigkeit verwenden wir nun wie folgt:
 //// tab | Python 3.9+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -152,7 +152,7 @@ Diese Abhängigkeit verwenden wir nun wie folgt:
 //// tab | Python 3.8+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -166,7 +166,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -180,14 +180,14 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 /// info
 
-Beachten Sie, dass wir in der *Pfadoperation-Funktion* nur eine einzige Abhängigkeit deklarieren, den `query_or_cookie_extractor`.
+Beachten Sie, dass wir in der _Pfadoperation-Funktion_ nur eine einzige Abhängigkeit deklarieren, den `query_or_cookie_extractor`.
 
 Aber **ReadyAPI** wird wissen, dass es zuerst `query_extractor` auflösen muss, um dessen Resultat `query_or_cookie_extractor` zu übergeben, wenn dieses aufgerufen wird.
 
@@ -206,7 +206,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Dieselbe Abhängigkeit mehrmals verwenden
 
-Wenn eine Ihrer Abhängigkeiten mehrmals für dieselbe *Pfadoperation* deklariert wird, beispielsweise wenn mehrere Abhängigkeiten eine gemeinsame Unterabhängigkeit haben, wird **ReadyAPI** diese Unterabhängigkeit nur einmal pro Request aufrufen.
+Wenn eine Ihrer Abhängigkeiten mehrmals für dieselbe _Pfadoperation_ deklariert wird, beispielsweise wenn mehrere Abhängigkeiten eine gemeinsame Unterabhängigkeit haben, wird **ReadyAPI** diese Unterabhängigkeit nur einmal pro Request aufrufen.
 
 Und es speichert den zurückgegebenen Wert in einem <abbr title="Mechanismus, der bereits berechnete/generierte Werte zwischenspeichert, um sie später wiederzuverwenden, anstatt sie erneut zu berechnen.">„Cache“</abbr> und übergibt diesen gecachten Wert an alle „Dependanten“, die ihn in diesem spezifischen Request benötigen, anstatt die Abhängigkeit mehrmals für denselben Request aufzurufen.
 
@@ -240,7 +240,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 Abgesehen von all den ausgefallenen Wörtern, die hier verwendet werden, ist das **Dependency Injection**-System recht simpel.
 
-Einfach Funktionen, die genauso aussehen wie *Pfadoperation-Funktionen*.
+Einfach Funktionen, die genauso aussehen wie _Pfadoperation-Funktionen_.
 
 Dennoch ist es sehr mächtig und ermöglicht Ihnen die Deklaration beliebig tief verschachtelter Abhängigkeits-„Graphen“ (Bäume).
 

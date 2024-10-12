@@ -23,7 +23,7 @@ Como é desencorajado, a documentação interativa com Swagger UI não irá most
 Primeiro, você precisa importar `BaseModel` do `pydantic`:
 
 ```Python hl_lines="4"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 ## Crie seu modelo de dados
@@ -33,7 +33,7 @@ Então você declara seu modelo de dados como uma classe que herda `BaseModel`.
 Utilize os tipos Python padrão para todos os atributos:
 
 ```Python hl_lines="7-11"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 Assim como quando declaramos parâmetros de consulta, quando um atributo do modelo possui um valor padrão, ele se torna opcional. Caso contrário, se torna obrigatório. Use `None` para torná-lo opcional.
@@ -60,10 +60,10 @@ Por exemplo, o modelo acima declara um JSON "`object`" (ou `dict` no Python) com
 
 ## Declare como um parâmetro
 
-Para adicionar o corpo na *função de operação de rota*, declare-o da mesma maneira que você declarou parâmetros de rota e consulta:
+Para adicionar o corpo na _função de operação de rota_, declare-o da mesma maneira que você declarou parâmetros de rota e consulta:
 
 ```Python hl_lines="18"
-{!../../../docs_src/body/tutorial001.py!}
+{!../../docs_src/body/tutorial001.py!}
 ```
 
 ...E declare o tipo como o modelo que você criou, `Item`.
@@ -72,14 +72,14 @@ Para adicionar o corpo na *função de operação de rota*, declare-o da mesma m
 
 Apenas com esse declaração de tipos do Python, o **ReadyAPI** irá:
 
-* Ler o corpo da requisição como um JSON.
-* Converter os tipos correspondentes (se necessário).
-* Validar os dados.
-    * Se algum dados for inválido, irá retornar um erro bem claro, indicando exatamente onde e o que está incorreto.
-* Entregar a você a informação recebida no parâmetro `item`.
-    * Como você o declarou na função como do tipo `Item`, você também terá o suporte do editor (completação, etc) para todos os atributos e seus tipos.
-* Gerar um <a href="https://json-schema.org" class="external-link" target="_blank">Esquema JSON</a> com as definições do seu modelo, você também pode utilizá-lo em qualquer lugar que quiser, se fizer sentido para seu projeto.
-* Esses esquemas farão parte do esquema OpenAPI, e utilizados nas <abbr title="User Interfaces">UIs</abbr> de documentação automática.
+- Ler o corpo da requisição como um JSON.
+- Converter os tipos correspondentes (se necessário).
+- Validar os dados.
+  - Se algum dados for inválido, irá retornar um erro bem claro, indicando exatamente onde e o que está incorreto.
+- Entregar a você a informação recebida no parâmetro `item`.
+  - Como você o declarou na função como do tipo `Item`, você também terá o suporte do editor (completação, etc) para todos os atributos e seus tipos.
+- Gerar um <a href="https://json-schema.org" class="external-link" target="_blank">Esquema JSON</a> com as definições do seu modelo, você também pode utilizá-lo em qualquer lugar que quiser, se fizer sentido para seu projeto.
+- Esses esquemas farão parte do esquema OpenAPI, e utilizados nas <abbr title="User Interfaces">UIs</abbr> de documentação automática.
 
 ## Documentação automática
 
@@ -87,7 +87,7 @@ Os esquemas JSON dos seus modelos farão parte do esquema OpenAPI gerado para su
 
 <img src="/img/tutorial/body/image01.png">
 
-E também serão utilizados em cada *função de operação de rota* que utilizá-los:
+E também serão utilizados em cada _função de operação de rota_ que utilizá-los:
 
 <img src="/img/tutorial/body/image02.png">
 
@@ -119,11 +119,11 @@ Se você utiliza o <a href="https://www.jetbrains.com/pycharm/" class="external-
 
 Melhora o suporte do editor para seus modelos Pydantic com::
 
-* completação automática
-* verificação de tipos
-* refatoração
-* buscas
-* inspeções
+- completação automática
+- verificação de tipos
+- refatoração
+- buscas
+- inspeções
 
 ///
 
@@ -132,7 +132,7 @@ Melhora o suporte do editor para seus modelos Pydantic com::
 Dentro da função, você pode acessar todos os atributos do objeto do modelo diretamente:
 
 ```Python hl_lines="21"
-{!../../../docs_src/body/tutorial002.py!}
+{!../../docs_src/body/tutorial002.py!}
 ```
 
 ## Corpo da requisição + parâmetros de rota
@@ -142,7 +142,7 @@ Você pode declarar parâmetros de rota e corpo da requisição ao mesmo tempo.
 O **ReadyAPI** irá reconhecer que os parâmetros da função que combinam com parâmetros de rota devem ser **retirados da rota**, e parâmetros da função que são declarados como modelos Pydantic sejam **retirados do corpo da requisição**.
 
 ```Python hl_lines="17-18"
-{!../../../docs_src/body/tutorial003.py!}
+{!../../docs_src/body/tutorial003.py!}
 ```
 
 ## Corpo da requisição + parâmetros de rota + parâmetros de consulta
@@ -152,14 +152,14 @@ Você também pode declarar parâmetros de **corpo**, **rota** e **consulta**, a
 O **ReadyAPI** irá reconhecer cada um deles e retirar a informação do local correto.
 
 ```Python hl_lines="18"
-{!../../../docs_src/body/tutorial004.py!}
+{!../../docs_src/body/tutorial004.py!}
 ```
 
 Os parâmetros da função serão reconhecidos conforme abaixo:
 
-* Se o parâmetro também é declarado na **rota**, será utilizado como um parâmetro de rota.
-* Se o parâmetro é de um **tipo único** (como `int`, `float`, `str`, `bool`, etc) será interpretado como um parâmetro de **consulta**.
-* Se o parâmetro é declarado como um **modelo Pydantic**, será interpretado como o **corpo** da requisição.
+- Se o parâmetro também é declarado na **rota**, será utilizado como um parâmetro de rota.
+- Se o parâmetro é de um **tipo único** (como `int`, `float`, `str`, `bool`, etc) será interpretado como um parâmetro de **consulta**.
+- Se o parâmetro é declarado como um **modelo Pydantic**, será interpretado como o **corpo** da requisição.
 
 /// note | "Observação"
 
@@ -171,4 +171,4 @@ O `Union` em `Union[str, None]` não é utilizado pelo ReadyAPI, mas permite ao 
 
 ## Sem o Pydantic
 
-Se você não quer utilizar os modelos Pydantic, você também pode utilizar o parâmetro **Body**. Veja a documentação para [Body - Parâmetros múltiplos: Valores singulares no body](body-multiple-params.md#valores-singulares-no-corpo){.internal-link target=_blank}.
+Se você não quer utilizar os modelos Pydantic, você também pode utilizar o parâmetro **Body**. Veja a documentação para [Body - Parâmetros múltiplos: Valores singulares no body](body-multiple-params.md#valores-singulares-no-corpo){.internal-link target=\_blank}.

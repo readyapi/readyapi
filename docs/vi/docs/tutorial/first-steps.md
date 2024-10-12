@@ -3,7 +3,7 @@
 Tệp tin ReadyAPI đơn giản nhất có thể trông như này:
 
 ```Python
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Sao chép sang một tệp tin `main.py`.
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 Câu lệnh `uvicorn main:app` được giải thích như sau:
 
-* `main`: tệp tin `main.py` (một Python "mô đun").
-* `app`: một object được tạo ra bên trong `main.py` với dòng `app = ReadyAPI()`.
-* `--reload`: làm server khởi động lại sau mỗi lần thay đổi. Chỉ sử dụng trong môi trường phát triển.
+- `main`: tệp tin `main.py` (một Python "mô đun").
+- `app`: một object được tạo ra bên trong `main.py` với dòng `app = ReadyAPI()`.
+- `--reload`: làm server khởi động lại sau mỗi lần thay đổi. Chỉ sử dụng trong môi trường phát triển.
 
 ///
 
@@ -134,7 +134,7 @@ Bạn cũng có thể sử dụng nó để sinh code tự động, với các c
 ### Bước 1: import `ReadyAPI`
 
 ```Python hl_lines="1"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `ReadyAPI` là một Python class cung cấp tất cả chức năng cho API của bạn.
@@ -150,7 +150,7 @@ Bạn cũng có thể sử dụng tất cả <a href="https://www.starlette.io/"
 ### Bước 2: Tạo một `ReadyAPI` "instance"
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Biến `app` này là một "instance" của class `ReadyAPI`.
@@ -172,7 +172,7 @@ $ uvicorn main:app --reload
 Nếu bạn tạo ứng dụng của bạn giống như:
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial002.py!}
+{!../../docs_src/first_steps/tutorial002.py!}
 ```
 
 Và đặt nó trong một tệp tin `main.py`, sau đó bạn sẽ gọi `uvicorn` giống như:
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Bước 3: tạo một *đường dẫn toán tử*
+### Bước 3: tạo một _đường dẫn toán tử_
 
 #### Đường dẫn
 
@@ -219,17 +219,17 @@ Trong khi xây dựng một API, "đường dẫn" là các chính để phân t
 
 Một trong những:
 
-* `POST`
-* `GET`
-* `PUT`
-* `DELETE`
+- `POST`
+- `GET`
+- `PUT`
+- `DELETE`
 
 ...và một trong những cái còn lại:
 
-* `OPTIONS`
-* `HEAD`
-* `PATCH`
-* `TRACE`
+- `OPTIONS`
+- `HEAD`
+- `PATCH`
+- `TRACE`
 
 Trong giao thức HTTP, bạn có thể giao tiếp trong mỗi đường dẫn sử dụng một (hoặc nhiều) trong các "phương thức này".
 
@@ -239,25 +239,25 @@ Khi xây dựng các API, bạn thường sử dụng cụ thể các phương t
 
 Thông thường, bạn sử dụng
 
-* `POST`: để tạo dữ liệu.
-* `GET`: để đọc dữ liệu.
-* `PUT`: để cập nhật dữ liệu.
-* `DELETE`: để xóa dữ liệu.
+- `POST`: để tạo dữ liệu.
+- `GET`: để đọc dữ liệu.
+- `PUT`: để cập nhật dữ liệu.
+- `DELETE`: để xóa dữ liệu.
 
 Do đó, trong OpenAPI, mỗi phương thức HTTP được gọi là một "toán tử (operation)".
 
 Chúng ta cũng sẽ gọi chúng là "**các toán tử**".
 
-#### Định nghĩa moojt *decorator cho đường dẫn toán tử*
+#### Định nghĩa moojt _decorator cho đường dẫn toán tử_
 
 ```Python hl_lines="6"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `@app.get("/")` nói **ReadyAPI** rằng hàm bên dưới có trách nhiệm xử lí request tới:
 
-* đường dẫn `/`
-* sử dụng một <abbr title="an HTTP GET method">toán tử<code>get</code></abbr>
+- đường dẫn `/`
+- sử dụng một <abbr title="an HTTP GET method">toán tử<code>get</code></abbr>
 
 /// info | Thông tin về "`@decorator`"
 
@@ -275,16 +275,16 @@ Nó là một "**decorator đường dẫn toán tử**".
 
 Bạn cũng có thể sử dụng với các toán tử khác:
 
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
 
 Và nhiều hơn với các toán tử còn lại:
 
-* `@app.options()`
-* `@app.head()`
-* `@app.patch()`
-* `@app.trace()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
 
 /// tip
 
@@ -302,12 +302,12 @@ Ví dụ, khi sử dụng GraphQL bạn thông thường thực hiện tất c�
 
 Đây là "**hàm cho đường dẫn toán tử**":
 
-* **đường dẫn**: là `/`.
-* **toán tử**: là `get`.
-* **hàm**: là hàm bên dưới "decorator" (bên dưới `@app.get("/")`).
+- **đường dẫn**: là `/`.
+- **toán tử**: là `get`.
+- **hàm**: là hàm bên dưới "decorator" (bên dưới `@app.get("/")`).
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Đây là một hàm Python.
@@ -321,19 +321,19 @@ Trong trường hợp này, nó là một hàm `async`.
 Bạn cũng có thể định nghĩa nó như là một hàm thông thường thay cho `async def`:
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial003.py!}
+{!../../docs_src/first_steps/tutorial003.py!}
 ```
 
 /// note
 
-Nếu bạn không biết sự khác nhau, kiểm tra [Async: *"Trong khi vội vàng?"*](../async.md#in-a-hurry){.internal-link target=_blank}.
+Nếu bạn không biết sự khác nhau, kiểm tra [Async: _"Trong khi vội vàng?"_](../async.md#in-a-hurry){.internal-link target=\_blank}.
 
 ///
 
 ### Bước 5: Nội dung trả về
 
 ```Python hl_lines="8"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Bạn có thể trả về một `dict`, `list`, một trong những giá trị đơn như `str`, `int`,...
@@ -344,8 +344,8 @@ Có nhiều object và model khác nhau sẽ được tự động chuyển đ�
 
 ## Tóm lại
 
-* Import `ReadyAPI`.
-* Tạo một `app` instance.
-* Viết một **decorator cho đường dẫn toán tử** (giống như `@app.get("/")`).
-* Viết một **hàm cho đường dẫn toán tử** (giống như  `def root(): ...` ở trên).
-* Chạy server trong môi trường phát triển (giống như `uvicorn main:app --reload`).
+- Import `ReadyAPI`.
+- Tạo một `app` instance.
+- Viết một **decorator cho đường dẫn toán tử** (giống như `@app.get("/")`).
+- Viết một **hàm cho đường dẫn toán tử** (giống như `def root(): ...` ở trên).
+- Chạy server trong môi trường phát triển (giống như `uvicorn main:app --reload`).
