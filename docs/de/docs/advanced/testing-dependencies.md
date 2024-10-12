@@ -31,7 +31,7 @@ Und dann ruft **ReadyAPI** diese Überschreibung anstelle der ursprünglichen Ab
 //// tab | Python 3.10+
 
 ```Python hl_lines="26-27  30"
-{!> ../../../docs_src/dependency_testing/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@ Und dann ruft **ReadyAPI** diese Überschreibung anstelle der ursprünglichen Ab
 //// tab | Python 3.9+
 
 ```Python hl_lines="28-29  32"
-{!> ../../../docs_src/dependency_testing/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -47,7 +47,7 @@ Und dann ruft **ReadyAPI** diese Überschreibung anstelle der ursprünglichen Ab
 //// tab | Python 3.8+
 
 ```Python hl_lines="29-30  33"
-{!> ../../../docs_src/dependency_testing/tutorial001_an.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="24-25  28"
-{!> ../../../docs_src/dependency_testing/tutorial001_py310.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_py310.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="28-29  32"
-{!> ../../../docs_src/dependency_testing/tutorial001.py!}
+{!> ../../docs_src/dependency_testing/tutorial001.py!}
 ```
 
 ////
@@ -84,7 +84,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 Sie können eine Überschreibung für eine Abhängigkeit festlegen, die an einer beliebigen Stelle in Ihrer **ReadyAPI**-Anwendung verwendet wird.
 
-Die ursprüngliche Abhängigkeit könnte in einer *Pfadoperation-Funktion*, einem *Pfadoperation-Dekorator* (wenn Sie den Rückgabewert nicht verwenden), einem `.include_router()`-Aufruf, usw. verwendet werden.
+Die ursprüngliche Abhängigkeit könnte in einer _Pfadoperation-Funktion_, einem _Pfadoperation-Dekorator_ (wenn Sie den Rückgabewert nicht verwenden), einem `.include_router()`-Aufruf, usw. verwendet werden.
 
 ReadyAPI kann sie in jedem Fall überschreiben.
 

@@ -3,7 +3,7 @@
 Самый простой ReadyAPI файл может выглядеть так:
 
 ```Python
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Скопируйте в файл `main.py`.
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 Команда `uvicorn main:app` обращается к:
 
-* `main`: файл `main.py` (модуль Python).
-* `app`: объект, созданный внутри файла `main.py` в строке `app = ReadyAPI()`.
-* `--reload`: перезапускает сервер после изменения кода. Используйте только для разработки.
+- `main`: файл `main.py` (модуль Python).
+- `app`: объект, созданный внутри файла `main.py` в строке `app = ReadyAPI()`.
+- `--reload`: перезапускает сервер после изменения кода. Используйте только для разработки.
 
 ///
 
@@ -134,7 +134,7 @@ OpenAPI описывает схему API. Эта схема содержит о
 ### Шаг 1: импортируйте `ReadyAPI`
 
 ```Python hl_lines="1"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `ReadyAPI` это класс в Python, который предоставляет всю функциональность для API.
@@ -150,7 +150,7 @@ OpenAPI описывает схему API. Эта схема содержит о
 ### Шаг 2: создайте экземпляр `ReadyAPI`
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Переменная `app` является экземпляром класса `ReadyAPI`.
@@ -172,7 +172,7 @@ $ uvicorn main:app --reload
 Если создать такое приложение:
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial002.py!}
+{!../../docs_src/first_steps/tutorial002.py!}
 ```
 
 И поместить его в `main.py`, тогда вызов `uvicorn` будет таким:
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Шаг 3: определите *операцию пути (path operation)*
+### Шаг 3: определите _операцию пути (path operation)_
 
 #### Путь (path)
 
@@ -219,17 +219,17 @@ https://example.com/items/foo
 
 Таких, как:
 
-* `POST`
-* `GET`
-* `PUT`
-* `DELETE`
+- `POST`
+- `GET`
+- `PUT`
+- `DELETE`
 
 ...и более экзотических:
 
-* `OPTIONS`
-* `HEAD`
-* `PATCH`
-* `TRACE`
+- `OPTIONS`
+- `HEAD`
+- `PATCH`
+- `TRACE`
 
 По протоколу HTTP можно обращаться к каждому пути, используя один (или несколько) из этих "методов".
 
@@ -239,25 +239,25 @@ https://example.com/items/foo
 
 Обычно используют:
 
-* `POST`: создать данные.
-* `GET`: прочитать.
-* `PUT`: изменить (обновить).
-* `DELETE`: удалить.
+- `POST`: создать данные.
+- `GET`: прочитать.
+- `PUT`: изменить (обновить).
+- `DELETE`: удалить.
 
 В OpenAPI каждый HTTP метод называется "**операция**".
 
 Мы также будем придерживаться этого термина.
 
-#### Определите *декоратор операции пути (path operation decorator)*
+#### Определите _декоратор операции пути (path operation decorator)_
 
 ```Python hl_lines="6"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Декоратор `@app.get("/")` указывает **ReadyAPI**, что функция, прямо под ним, отвечает за обработку запросов, поступающих по адресу:
 
-* путь `/`
-* использующих <abbr title="HTTP GET метод"><code>get</code> операцию</abbr>
+- путь `/`
+- использующих <abbr title="HTTP GET метод"><code>get</code> операцию</abbr>
 
 /// info | "`@decorator` Дополнительная информация"
 
@@ -267,7 +267,7 @@ https://example.com/items/foo
 
 "Декоратор" принимает функцию ниже и выполняет с ней какое-то действие.
 
-В нашем случае, этот декоратор сообщает **ReadyAPI**, что функция ниже соответствует **пути** `/` и  **операции** `get`.
+В нашем случае, этот декоратор сообщает **ReadyAPI**, что функция ниже соответствует **пути** `/` и **операции** `get`.
 
 Это и есть "**декоратор операции пути**".
 
@@ -275,16 +275,16 @@ https://example.com/items/foo
 
 Можно также использовать операции:
 
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
 
 И более экзотические:
 
-* `@app.options()`
-* `@app.head()`
-* `@app.patch()`
-* `@app.trace()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
 
 /// tip | "Подсказка"
 
@@ -302,12 +302,12 @@ https://example.com/items/foo
 
 Вот "**функция операции пути**":
 
-* **путь**: `/`.
-* **операция**: `get`.
-* **функция**: функция ниже "декоратора" (ниже `@app.get("/")`).
+- **путь**: `/`.
+- **операция**: `get`.
+- **функция**: функция ниже "декоратора" (ниже `@app.get("/")`).
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Это обычная Python функция.
@@ -321,19 +321,19 @@ https://example.com/items/foo
 Вы также можете определить ее как обычную функцию вместо `async def`:
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial003.py!}
+{!../../docs_src/first_steps/tutorial003.py!}
 ```
 
 /// note | "Технические детали"
 
-Если не знаете в чём разница, посмотрите [Конкурентность: *"Нет времени?"*](../async.md#_1){.internal-link target=_blank}.
+Если не знаете в чём разница, посмотрите [Конкурентность: _"Нет времени?"_](../async.md#_1){.internal-link target=\_blank}.
 
 ///
 
 ### Шаг 5: верните результат
 
 ```Python hl_lines="8"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Вы можете вернуть `dict`, `list`, отдельные значения `str`, `int` и т.д.
@@ -344,8 +344,8 @@ https://example.com/items/foo
 
 ## Резюме
 
-* Импортируем `ReadyAPI`.
-* Создаём экземпляр `app`.
-* Пишем **декоратор операции пути** (такой как `@app.get("/")`).
-* Пишем **функцию операции пути** (`def root(): ...`).
-* Запускаем сервер в режиме разработки (`uvicorn main:app --reload`).
+- Импортируем `ReadyAPI`.
+- Создаём экземпляр `app`.
+- Пишем **декоратор операции пути** (такой как `@app.get("/")`).
+- Пишем **функцию операции пути** (`def root(): ...`).
+- Запускаем сервер в режиме разработки (`uvicorn main:app --reload`).

@@ -12,13 +12,13 @@ Em vez disso, você deseja fornecer uma dependência diferente que será usada s
 
 Um exemplo pode ser que você possua um provedor de autenticação externo que você precisa chamar.
 
-Você envia ao serviço um *token* e ele retorna um usuário autenticado.
+Você envia ao serviço um _token_ e ele retorna um usuário autenticado.
 
 Este provedor pode cobrar por requisição, e chamá-lo pode levar mais tempo do que se você tivesse um usuário fixo para os testes.
 
 Você provavelmente quer testar o provedor externo uma vez, mas não necessariamente chamá-lo em todos os testes que executarem.
 
-Neste caso, você pode sobrepor (*override*) a dependência que chama o provedor, e utilizar uma dependência customizada que retorna um *mock* do usuário, apenas para os seus testes.
+Neste caso, você pode sobrepor (_override_) a dependência que chama o provedor, e utilizar uma dependência customizada que retorna um _mock_ do usuário, apenas para os seus testes.
 
 ### Utilize o atributo `app.dependency_overrides`
 
@@ -31,7 +31,7 @@ E então o **ReadyAPI** chamará a sobreposição no lugar da dependência origi
 //// tab | Python 3.10+
 
 ```Python hl_lines="26-27  30"
-{!> ../../../docs_src/dependency_testing/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@ E então o **ReadyAPI** chamará a sobreposição no lugar da dependência origi
 //// tab | Python 3.9+
 
 ```Python hl_lines="28-29  32"
-{!> ../../../docs_src/dependency_testing/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -47,7 +47,7 @@ E então o **ReadyAPI** chamará a sobreposição no lugar da dependência origi
 //// tab | Python 3.8+
 
 ```Python hl_lines="29-30  33"
-{!> ../../../docs_src/dependency_testing/tutorial001_an.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_an.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@ Prefira utilizar a versão `Annotated` se possível.
 ///
 
 ```Python hl_lines="24-25  28"
-{!> ../../../docs_src/dependency_testing/tutorial001_py310.py!}
+{!> ../../docs_src/dependency_testing/tutorial001_py310.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@ Prefira utilizar a versão `Annotated` se possível.
 ///
 
 ```Python hl_lines="28-29  32"
-{!> ../../../docs_src/dependency_testing/tutorial001.py!}
+{!> ../../docs_src/dependency_testing/tutorial001.py!}
 ```
 
 ////
@@ -84,7 +84,7 @@ Prefira utilizar a versão `Annotated` se possível.
 
 Você pode definir uma sobreposição de dependência para uma dependência que é utilizada em qualquer lugar da sua aplicação **ReadyAPI**.
 
-A dependência original pode estar sendo utilizada em uma *função de operação de rota*, um *docorador de operação de rota* (quando você não utiliza o valor retornado), uma chamada ao `.include_router()`, etc.
+A dependência original pode estar sendo utilizada em uma _função de operação de rota_, um _docorador de operação de rota_ (quando você não utiliza o valor retornado), uma chamada ao `.include_router()`, etc.
 
 O ReadyAPI ainda poderá sobrescrevê-lo.
 

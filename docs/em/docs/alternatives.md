@@ -68,11 +68,11 @@
 
 **ReadyAPI** 🚫 🤙 🎛 **📨**. 👫 ↔ 📶 🎏.
 
-⚫️ 🔜 🤙 ⚠ ⚙️ 📨 *🔘* ReadyAPI 🈸.
+⚫️ 🔜 🤙 ⚠ ⚙️ 📨 _🔘_ ReadyAPI 🈸.
 
 ✋️, ReadyAPI 🤚 🌈 ⚪️➡️ 📨.
 
-**📨** 🗃 *🔗* ⏮️ 🔗 (👩‍💻), ⏪ **ReadyAPI** 🗃 *🏗* 🔗 (💽).
+**📨** 🗃 _🔗_ ⏮️ 🔗 (👩‍💻), ⏪ **ReadyAPI** 🗃 _🏗_ 🔗 (💽).
 
 👫, 🌖 ⚖️ 🌘, 🔄 🔚, 🔗 🔠 🎏.
 
@@ -88,7 +88,7 @@
 response = requests.get("http://example.com/some/url")
 ```
 
-ReadyAPI 😑 🛠️ *➡ 🛠️* 💪 👀 💖:
+ReadyAPI 😑 🛠️ _➡ 🛠️_ 💪 👀 💖:
 
 ```Python hl_lines="1"
 @app.get("/some/url")
@@ -100,9 +100,9 @@ def read_url():
 
 /// check | "😮 **ReadyAPI** "
 
-* ✔️ 🙅 &amp; 🏋️ 🛠️.
-* ⚙️ 🇺🇸🔍 👩‍🔬 📛 (🛠️) 🔗, 🎯 &amp; 🏋️ 🌌.
-* ✔️ 🤔 🔢, ✋️ 🏋️ 🛃.
+- ✔️ 🙅 &amp; 🏋️ 🛠️.
+- ⚙️ 🇺🇸🔍 👩‍🔬 📛 (🛠️) 🔗, 🎯 &amp; 🏋️ 🌌.
+- ✔️ 🤔 🔢, ✋️ 🏋️ 🛃.
 
 ///
 
@@ -122,10 +122,10 @@ def read_url():
 
 🛠️ &amp; ⚙️ 📂 🐩 🛠️ 🔧, ↩️ 🛃 🔗.
 
- &amp; 🛠️ 🐩-⚓️ 👩‍💻 🔢 🧰:
+&amp; 🛠️ 🐩-⚓️ 👩‍💻 🔢 🧰:
 
-* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>
-* <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>
+- <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>
+- <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>
 
 👫 2️⃣ 👐 ➖ 📶 🌟 &amp; ⚖, ✋️ 🔨 ⏩ 🔎, 👆 💪 🔎 💯 🌖 🎛 👩‍💻 🔢 🗄 (👈 👆 💪 ⚙️ ⏮️ **ReadyAPI**).
 
@@ -219,11 +219,11 @@ APISpec ✍ 🎏 🍭 👩‍💻.
 
 ⚙️ ⚫️ ↘️ 🏗 📚 🏺 🌕-📚 🚂. 👫 👑 📚 👤 (&amp; 📚 🔢 🏉) ✔️ ⚙️ 🆙 🔜:
 
-* <a href="https://github.com/khulnasoft/full-stack" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack</a>
-* <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
-* <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
+- <a href="https://github.com/khulnasoft/full-stack" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack</a>
+- <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
+- <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
 
-&amp; 👫 🎏 🌕-📚 🚂 🧢 [**ReadyAPI** 🏗 🚂](project-generation.md){.internal-link target=_blank}.
+&amp; 👫 🎏 🌕-📚 🚂 🧢 [**ReadyAPI** 🏗 🚂](project-generation.md){.internal-link target=\_blank}.
 
 /// info
 
@@ -301,9 +301,9 @@ APISpec ✍ 🎏 🍭 👩‍💻.
 
 👤 🔎 ♨ 🥇 ▶️ 🏗 **ReadyAPI**. &amp; ⚫️ ✔️ 🎏 💭:
 
-* ⚓️ 🔛 🐍 🆎 🔑.
-* 🔬 &amp; 🧾 ⚪️➡️ 👫 🆎.
-* 🔗 💉 ⚙️.
+- ⚓️ 🔛 🐍 🆎 🔑.
+- 🔬 &amp; 🧾 ⚪️➡️ 👫 🆎.
+- 🔗 💉 ⚙️.
 
 ⚫️ 🚫 ⚙️ 💽 🔬, 🛠️ &amp; 🧾 🥉-🥳 🗃 💖 Pydantic, ⚫️ ✔️ 🚮 👍. , 👫 💽 🆎 🔑 🔜 🚫 ♻ 💪.
 
@@ -333,7 +333,7 @@ APISpec ✍ 🎏 🍭 👩‍💻.
 
 ⚫️ ✔️ 😌, ⭐ ⚒: ⚙️ 🎏 🛠️, ⚫️ 💪 ✍ 🔗 &amp; 🇳🇨.
 
-⚫️ ⚓️ 🔛 ⏮️ 🐩 🔁 🐍 🕸 🛠️ (🇨🇻), ⚫️ 💪 🚫 🍵 *️⃣ &amp; 🎏 👜, 👐 ⚫️ ✔️ ↕ 🎭 💁‍♂️.
+⚫️ ⚓️ 🔛 ⏮️ 🐩 🔁 🐍 🕸 🛠️ (🇨🇻), ⚫️ 💪 🚫 🍵 \*️⃣ &amp; 🎏 👜, 👐 ⚫️ ✔️ ↕ 🎭 💁‍♂️.
 
 /// info
 
@@ -379,9 +379,9 @@ APISpec ✍ 🎏 🍭 👩‍💻.
 
 APIStar ✍ ✡ 🇺🇸🏛. 🎏 👨 👈 ✍:
 
-* ✳ 🎂 🛠️
-* 💃 (❔ **ReadyAPI** ⚓️)
-* Uvicorn (⚙️ 💃 &amp; **ReadyAPI**)
+- ✳ 🎂 🛠️
+- 💃 (❔ **ReadyAPI** ⚓️)
+- Uvicorn (⚙️ 💃 &amp; **ReadyAPI**)
 
 ///
 
@@ -391,7 +391,7 @@ APIStar ✍ ✡ 🇺🇸🏛. 🎏 👨 👈 ✍:
 
 💭 📣 💗 👜 (💽 🔬, 🛠️ &amp; 🧾) ⏮️ 🎏 🐍 🆎, 👈 🎏 🕰 🚚 👑 👨‍🎨 🐕‍🦺, 🕳 👤 🤔 💎 💭.
 
- &amp; ⏮️ 🔎 📏 🕰 🎏 🛠️ &amp; 🔬 📚 🎏 🎛, APIStar 🏆 🎛 💪.
+&amp; ⏮️ 🔎 📏 🕰 🎏 🛠️ &amp; 🔬 📚 🎏 🎛, APIStar 🏆 🎛 💪.
 
 ⤴️ APIStar ⛔️ 🔀 💽 &amp; 💃 ✍, &amp; 🆕 👻 🏛 ✅ ⚙️. 👈 🏁 🌈 🏗 **ReadyAPI**.
 
@@ -425,16 +425,16 @@ Pydantic 🗃 🔬 💽 🔬, 🛠️ &amp; 🧾 (⚙️ 🎻 🔗) ⚓️ 🔛 
 
 ⚫️ ✔️:
 
-* 🤙 🎆 🎭.
-*  *️⃣ 🐕‍🦺.
-* -🛠️ 🖥 📋.
-* 🕴 &amp; 🤫 🎉.
-* 💯 👩‍💻 🏗 🔛 🇸🇲.
-* ⚜, 🗜, 🎻 📁, 🎏 📨.
-* 🎉 &amp; 🍪 🐕‍🦺.
-* 1️⃣0️⃣0️⃣ 💯 💯 💰.
-* 1️⃣0️⃣0️⃣ 💯 🆎 ✍ ✍.
-* 👩‍❤‍👨 🏋️ 🔗.
+- 🤙 🎆 🎭.
+- \*️⃣ 🐕‍🦺.
+- -🛠️ 🖥 📋.
+- 🕴 &amp; 🤫 🎉.
+- 💯 👩‍💻 🏗 🔛 🇸🇲.
+- ⚜, 🗜, 🎻 📁, 🎏 📨.
+- 🎉 &amp; 🍪 🐕‍🦺.
+- 1️⃣0️⃣0️⃣ 💯 💯 💰.
+- 1️⃣0️⃣0️⃣ 💯 🆎 ✍ ✍.
+- 👩‍❤‍👨 🏋️ 🔗.
 
 💃 ⏳ ⏩ 🐍 🛠️ 💯. 🕴 💥 Uvicorn, ❔ 🚫 🛠️, ✋️ 💽.
 
@@ -476,10 +476,10 @@ Uvicorn 🌩-⏩ 🔫 💽, 🏗 🔛 uvloop &amp; httptool.
 
 👆 💪 🌀 ⚫️ ⏮️ 🐁, ✔️ 🔁 👁-🛠️ 💽.
 
-✅ 🌅 ℹ [🛠️](deployment/index.md){.internal-link target=_blank} 📄.
+✅ 🌅 ℹ [🛠️](deployment/index.md){.internal-link target=\_blank} 📄.
 
 ///
 
 ## 📇 &amp; 🚅
 
-🤔, 🔬, &amp; 👀 🔺 🖖 Uvicorn, 💃 &amp; ReadyAPI, ✅ 📄 🔃 [📇](benchmarks.md){.internal-link target=_blank}.
+🤔, 🔬, &amp; 👀 🔺 🖖 Uvicorn, 💃 &amp; ReadyAPI, ✅ 📄 🔃 [📇](benchmarks.md){.internal-link target=\_blank}.

@@ -1,6 +1,6 @@
 # `Request` class
 
-You can declare a parameter in a *path operation function* or dependency to be of type `Request` and then you can access the raw request object directly, without any validation, etc.
+You can declare a parameter in a _path operation function_ or dependency to be of type `Request` and then you can access the raw request object directly, without any validation, etc.
 
 You can import it directly from `readyapi`:
 

@@ -4,9 +4,9 @@
 
 有 3 个主要可选方案：
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>：高性能 ASGI 服务器。
-* <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>：与 HTTP/2 和 Trio 等兼容的 ASGI 服务器。
-* <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>：为 Django Channels 构建的 ASGI 服务器。
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>：高性能 ASGI 服务器。
+- <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>：与 HTTP/2 和 Trio 等兼容的 ASGI 服务器。
+- <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>：为 Django Channels 构建的 ASGI 服务器。
 
 ## 服务器主机和服务器程序
 
@@ -18,14 +18,13 @@
 
 当提到远程主机时，通常将其称为**服务器**，但也称为**机器**(machine)、**VM**（虚拟机）、**节点**。 这些都是指某种类型的远程计算机，通常运行 Linux，您可以在其中运行程序。
 
-
 ## 安装服务器程序
 
 您可以使用以下命令安装 ASGI 兼容服务器：
 
 //// tab | Uvicorn
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>，一个快如闪电 ASGI 服务器，基于 uvloop 和 httptools 构建。
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>，一个快如闪电 ASGI 服务器，基于 uvloop 和 httptools 构建。
 
 <div class="termy">
 
@@ -49,7 +48,7 @@ $ pip install "uvicorn[standard]"
 
 //// tab | Hypercorn
 
-* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>，一个也与 HTTP/2 兼容的 ASGI 服务器。
+- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>，一个也与 HTTP/2 兼容的 ASGI 服务器。
 
 <div class="termy">
 
@@ -101,9 +100,9 @@ Running on 0.0.0.0:8080 over http (CTRL + C to quit)
 
 如果您正在使用`--reload`选项，请记住删除它。
 
- `--reload` 选项消耗更多资源，并且更不稳定。
+`--reload` 选项消耗更多资源，并且更不稳定。
 
- 它在**开发**期间有很大帮助，但您**不应该**在**生产环境**中使用它。
+它在**开发**期间有很大帮助，但您**不应该**在**生产环境**中使用它。
 
 ///
 
@@ -150,11 +149,11 @@ $ hypercorn main:app --worker-class trio
 
 这是基本思路。 但您可能需要处理一些其他事情，例如：
 
-* 安全性 - HTTPS
-* 启动时运行
-* 重新启动
-* Replication（运行的进程数）
-* 内存
-* 开始前的步骤
+- 安全性 - HTTPS
+- 启动时运行
+- 重新启动
+- Replication（运行的进程数）
+- 内存
+- 开始前的步骤
 
 在接下来的章节中，我将向您详细介绍每个概念、如何思考它们，以及一些具体示例以及处理它们的策略。 🚀

@@ -4,9 +4,9 @@
 
 📤 3️⃣ 👑 🎛:
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: ↕ 🎭 🔫 💽.
-* <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: 🔫 💽 🔗 ⏮️ 🇺🇸🔍/2️⃣ &amp; 🎻 👪 🎏 ⚒.
-* <a href="https://github.com/django/daphne" class="external-link" target="_blank">👸</a>: 🔫 💽 🏗 ✳ 📻.
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: ↕ 🎭 🔫 💽.
+- <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: 🔫 💽 🔗 ⏮️ 🇺🇸🔍/2️⃣ &amp; 🎻 👪 🎏 ⚒.
+- <a href="https://github.com/django/daphne" class="external-link" target="_blank">👸</a>: 🔫 💽 🏗 ✳ 📻.
 
 ## 💽 🎰 &amp; 💽 📋
 
@@ -24,7 +24,7 @@
 
 //// tab | Uvicorn
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, 🌩-⏩ 🔫 💽, 🏗 🔛 uvloop &amp; httptool.
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, 🌩-⏩ 🔫 💽, 🏗 🔛 uvloop &amp; httptool.
 
 <div class="termy">
 
@@ -48,7 +48,7 @@ $ pip install "uvicorn[standard]"
 
 //// tab | Hypercorn
 
-* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, 🔫 💽 🔗 ⏮️ 🇺🇸🔍/2️⃣.
+- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, 🔫 💽 🔗 ⏮️ 🇺🇸🔍/2️⃣.
 
 <div class="termy">
 
@@ -100,7 +100,7 @@ Running on 0.0.0.0:8080 over http (CTRL + C to quit)
 
 💭 ❎ `--reload` 🎛 🚥 👆 ⚙️ ⚫️.
 
- `--reload` 🎛 🍴 🌅 🌅 ℹ, 🌅 ⚠, ♒️.
+`--reload` 🎛 🍴 🌅 🌅 ℹ, 🌅 ⚠, ♒️.
 
 ⚫️ ℹ 📚 ⏮️ **🛠️**, ✋️ 👆 **🚫🔜 🚫** ⚙️ ⚫️ **🏭**.
 
@@ -149,11 +149,11 @@ $ hypercorn main:app --worker-class trio
 
 👉 🔰 💭. ✋️ 👆 🔜 🎲 💚 ✊ 💅 🌖 👜, 💖:
 
-* 💂‍♂ - 🇺🇸🔍
-* 🏃‍♂ 🔛 🕴
-* ⏏
-* 🧬 (🔢 🛠️ 🏃)
-* 💾
-* ⏮️ 🔁 ⏭ ▶️
+- 💂‍♂ - 🇺🇸🔍
+- 🏃‍♂ 🔛 🕴
+- ⏏
+- 🧬 (🔢 🛠️ 🏃)
+- 💾
+- ⏮️ 🔁 ⏭ ▶️
 
 👤 🔜 💬 👆 🌅 🔃 🔠 👫 🔧, ❔ 💭 🔃 👫, &amp; 🧱 🖼 ⏮️ 🎛 🍵 👫 ⏭ 📃. 👶

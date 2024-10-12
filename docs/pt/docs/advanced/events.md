@@ -20,24 +20,23 @@ Vamos imaginar que o carregamento do modelo pode **demorar bastante tempo**, por
 
 Você poderia carregá-lo no nível mais alto do módulo/arquivo, mas isso também poderia significaria **carregar o modelo** mesmo se você estiver executando um simples teste automatizado, então esse teste poderia ser **lento** porque teria que esperar o carregamento do modelo antes de ser capaz de executar uma parte independente do código.
 
-
 Isso é que nós iremos resolver, vamos carregar o modelo antes das requisições serem manuseadas, mas apenas um pouco antes da aplicação começar a receber requisições, não enquanto o código estiver sendo carregado.
 
 ## Vida útil (_Lifespan_)
 
-Você pode definir essa lógica de *inicialização* e *encerramento* usando os parâmetros de `lifespan` da aplicação `ReadyAPI`, e um "gerenciador de contexto" (te mostrarei o que é isso a seguir).
+Você pode definir essa lógica de _inicialização_ e _encerramento_ usando os parâmetros de `lifespan` da aplicação `ReadyAPI`, e um "gerenciador de contexto" (te mostrarei o que é isso a seguir).
 
 Vamos iniciar com um exemplo e ver isso detalhadamente.
 
 Nós criamos uma função assíncrona chamada `lifespan()` com `yield` como este:
 
 ```Python hl_lines="16  19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
-Aqui nós estamos simulando a *inicialização* custosa do carregamento do modelo colocando a (falsa) função de modelo no dicionário com modelos de _machine learning_ antes do `yield`. Este código será executado **antes** da aplicação **começar a receber requisições**, durante a *inicialização*.
+Aqui nós estamos simulando a _inicialização_ custosa do carregamento do modelo colocando a (falsa) função de modelo no dicionário com modelos de _machine learning_ antes do `yield`. Este código será executado **antes** da aplicação **começar a receber requisições**, durante a _inicialização_.
 
-E então, logo após o `yield`, descarregaremos o modelo. Esse código será executado **após** a aplicação **terminar de lidar com as requisições**, pouco antes do *encerramento*. Isso poderia, por exemplo, liberar recursos como memória ou GPU.
+E então, logo após o `yield`, descarregaremos o modelo. Esse código será executado **após** a aplicação **terminar de lidar com as requisições**, pouco antes do _encerramento_. Isso poderia, por exemplo, liberar recursos como memória ou GPU.
 
 /// tip | "Dica"
 
@@ -52,10 +51,10 @@ Talvez você precise inicializar uma nova versão, ou apenas cansou de executá-
 A primeira coisa a notar, é que estamos definindo uma função assíncrona com `yield`. Isso é muito semelhante à Dependências com `yield`.
 
 ```Python hl_lines="14-19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
-A primeira parte da função, antes do `yield`, será  executada **antes** da aplicação inicializar.
+A primeira parte da função, antes do `yield`, será executada **antes** da aplicação inicializar.
 
 E a parte posterior do `yield` irá executar **após** a aplicação ser encerrada.
 
@@ -66,7 +65,7 @@ Se você verificar, a função está decorada com um `@asynccontextmanager`.
 Que converte a função em algo chamado de "**Gerenciador de Contexto Assíncrono**".
 
 ```Python hl_lines="1  13"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 Um **gerenciador de contexto** em Python é algo que você pode usar em uma declaração `with`, por exemplo, `open()` pode ser usado como um gerenciador de contexto:
@@ -90,20 +89,20 @@ No nosso exemplo de código acima, nós não usamos ele diretamente, mas nós pa
 O parâmetro `lifespan` da aplicação `ReadyAPI` usa um **Gerenciador de Contexto Assíncrono**, então nós podemos passar nosso novo gerenciador de contexto assíncrono do `lifespan` para ele.
 
 ```Python hl_lines="22"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 ## Eventos alternativos (deprecados)
 
 /// warning | "Aviso"
 
-A maneira recomendada para lidar com a *inicialização* e o *encerramento* é usando o parâmetro `lifespan` da aplicação `ReadyAPI` como descrito acima.
+A maneira recomendada para lidar com a _inicialização_ e o _encerramento_ é usando o parâmetro `lifespan` da aplicação `ReadyAPI` como descrito acima.
 
 Você provavelmente pode pular essa parte.
 
 ///
 
-Existe uma forma alternativa para definir a execução dessa lógica durante *inicialização* e durante *encerramento*.
+Existe uma forma alternativa para definir a execução dessa lógica durante _inicialização_ e durante _encerramento_.
 
 Você pode definir manipuladores de eventos (funções) que precisam ser executadas antes da aplicação inicializar, ou quando a aplicação estiver encerrando.
 
@@ -114,7 +113,7 @@ Essas funções podem ser declaradas com `async def` ou `def` normal.
 Para adicionar uma função que deve rodar antes da aplicação iniciar, declare-a com o evento `"startup"`:
 
 ```Python hl_lines="8"
-{!../../../docs_src/events/tutorial001.py!}
+{!../../docs_src/events/tutorial001.py!}
 ```
 
 Nesse caso, a função de manipulação de evento `startup` irá inicializar os itens do "banco de dados" (só um `dict`) com alguns valores.
@@ -128,7 +127,7 @@ E sua aplicação não irá começar a receber requisições até que todos os m
 Para adicionar uma função que deve ser executada quando a aplicação estiver encerrando, declare ela com o evento `"shutdown"`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/events/tutorial002.py!}
+{!../../docs_src/events/tutorial002.py!}
 ```
 
 Aqui, a função de manipulação de evento `shutdown` irá escrever uma linha de texto `"Application shutdown"` no arquivo `log.txt`.
@@ -153,7 +152,7 @@ Então, nós declaramos uma função de manipulação de evento com o padrão `d
 
 ### `startup` e `shutdown` juntos
 
-Há uma grande chance que a lógica para sua *inicialização* e *encerramento* esteja conectada, você pode querer iniciar alguma coisa e então finalizá-la, adquirir um recurso e então liberá-lo, etc.
+Há uma grande chance que a lógica para sua _inicialização_ e _encerramento_ esteja conectada, você pode querer iniciar alguma coisa e então finalizá-la, adquirir um recurso e então liberá-lo, etc.
 
 Fazendo isso em funções separadas que não compartilham lógica ou variáveis entre elas é mais difícil já que você precisa armazenar os valores em variáveis globais ou truques parecidos.
 
@@ -175,4 +174,4 @@ Incluindo como manipular estado do lifespan que pode ser usado em outras áreas 
 
 ## Sub Aplicações
 
-🚨 Tenha em mente que esses eventos de lifespan (de inicialização e desligamento) irão somente ser executados para a aplicação principal, não para [Sub Aplicações - Montagem](sub-applications.md){.internal-link target=_blank}.
+🚨 Tenha em mente que esses eventos de lifespan (de inicialização e desligamento) irão somente ser executados para a aplicação principal, não para [Sub Aplicações - Montagem](sub-applications.md){.internal-link target=\_blank}.

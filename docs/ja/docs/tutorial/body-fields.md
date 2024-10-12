@@ -1,13 +1,13 @@
 # ボディ - フィールド
 
-`Query`や`Path`、`Body`を使って *path operation関数* のパラメータに追加のバリデーションやメタデータを宣言するのと同じように、Pydanticの`Field`を使ってPydanticモデルの内部でバリデーションやメタデータを宣言することができます。
+`Query`や`Path`、`Body`を使って _path operation 関数_ のパラメータに追加のバリデーションやメタデータを宣言するのと同じように、Pydantic の`Field`を使って Pydantic モデルの内部でバリデーションやメタデータを宣言することができます。
 
 ## `Field`のインポート
 
 まず、以下のようにインポートします:
 
 ```Python hl_lines="4"
-{!../../../docs_src/body_fields/tutorial001.py!}
+{!../../docs_src/body_fields/tutorial001.py!}
 ```
 
 /// warning | "注意"
@@ -21,16 +21,16 @@
 以下のように`Field`をモデルの属性として使用することができます:
 
 ```Python hl_lines="11 12 13 14"
-{!../../../docs_src/body_fields/tutorial001.py!}
+{!../../docs_src/body_fields/tutorial001.py!}
 ```
 
 `Field`は`Query`や`Path`、`Body`と同じように動作し、全く同様のパラメータなどを持ちます。
 
 /// note | "技術詳細"
 
-実際には次に見る`Query`や`Path`などは、共通の`Param`クラスのサブクラスのオブジェクトを作成しますが、それ自体はPydanticの`FieldInfo`クラスのサブクラスです。
+実際には次に見る`Query`や`Path`などは、共通の`Param`クラスのサブクラスのオブジェクトを作成しますが、それ自体は Pydantic の`FieldInfo`クラスのサブクラスです。
 
-また、Pydanticの`Field`は`FieldInfo`のインスタンスも返します。
+また、Pydantic の`Field`は`FieldInfo`のインスタンスも返します。
 
 `Body`は`FieldInfo`のサブクラスのオブジェクトを直接返すこともできます。そして、他にも`Body`クラスのサブクラスであるものがあります。
 
@@ -46,12 +46,12 @@
 
 ## 追加情報の追加
 
-追加情報は`Field`や`Query`、`Body`などで宣言することができます。そしてそれは生成されたJSONスキーマに含まれます。
+追加情報は`Field`や`Query`、`Body`などで宣言することができます。そしてそれは生成された JSON スキーマに含まれます。
 
 後に例を用いて宣言を学ぶ際に、追加情報を句悪方法を学べます。
 
 ## まとめ
 
-Pydanticの`Field`を使用して、モデルの属性に追加のバリデーションやメタデータを宣言することができます。
+Pydantic の`Field`を使用して、モデルの属性に追加のバリデーションやメタデータを宣言することができます。
 
-追加のキーワード引数を使用して、追加のJSONスキーマのメタデータを渡すこともできます。
+追加のキーワード引数を使用して、追加の JSON スキーマのメタデータを渡すこともできます。

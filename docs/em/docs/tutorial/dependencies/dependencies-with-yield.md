@@ -14,8 +14,8 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 
 🙆 🔢 👈 ☑ ⚙️ ⏮️:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ⚖️
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ⚖️
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 🔜 ☑ ⚙️ **ReadyAPI** 🔗.
 
@@ -30,19 +30,19 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 🕴 📟 ⏭ &amp; 🔌 `yield` 📄 🛠️ ⏭ 📨 📨:
 
 ```Python hl_lines="2-4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-🌾 💲 ⚫️❔ 💉 🔘 *➡ 🛠️* &amp; 🎏 🔗:
+🌾 💲 ⚫️❔ 💉 🔘 _➡ 🛠️_ &amp; 🎏 🔗:
 
 ```Python hl_lines="4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 📟 📄 `yield` 📄 🛠️ ⏮️ 📨 ✔️ 🚚:
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 /// tip
@@ -57,14 +57,14 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 
 🚥 👆 ⚙️ `try` 🍫 🔗 ⏮️ `yield`, 👆 🔜 📨 🙆 ⚠ 👈 🚮 🕐❔ ⚙️ 🔗.
 
-🖼, 🚥 📟 ☝ 🖕, ➕1️⃣ 🔗 ⚖️ *➡ 🛠️*, ⚒ 💽 💵 "💾" ⚖️ ✍ 🙆 🎏 ❌, 👆 🔜 📨 ⚠ 👆 🔗.
+🖼, 🚥 📟 ☝ 🖕, ➕1️⃣ 🔗 ⚖️ _➡ 🛠️_, ⚒ 💽 💵 "💾" ⚖️ ✍ 🙆 🎏 ❌, 👆 🔜 📨 ⚠ 👆 🔗.
 
 , 👆 💪 👀 👈 🎯 ⚠ 🔘 🔗 ⏮️ `except SomeException`.
 
 🎏 🌌, 👆 💪 ⚙️ `finally` ⚒ 💭 🚪 📶 🛠️, 🙅‍♂ 🤔 🚥 📤 ⚠ ⚖️ 🚫.
 
 ```Python hl_lines="3  5"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 ## 🎧-🔗 ⏮️ `yield`
@@ -76,7 +76,7 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 🖼, `dependency_c` 💪 ✔️ 🔗 🔛 `dependency_b`, &amp; `dependency_b` 🔛 `dependency_a`:
 
 ```Python hl_lines="4  12  20"
-{!../../../docs_src/dependencies/tutorial008.py!}
+{!../../docs_src/dependencies/tutorial008.py!}
 ```
 
 &amp; 🌐 👫 💪 ⚙️ `yield`.
@@ -86,7 +86,7 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 &amp; , 🔄, `dependency_b` 💪 💲 ⚪️➡️ `dependency_a` (📥 📛 `dep_a`) 💪 🚮 🚪 📟.
 
 ```Python hl_lines="16-17  24-25"
-{!../../../docs_src/dependencies/tutorial008.py!}
+{!../../docs_src/dependencies/tutorial008.py!}
 ```
 
 🎏 🌌, 👆 💪 ✔️ 🔗 ⏮️ `yield` &amp; `return` 🌀.
@@ -111,23 +111,23 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 
 ⚫️ 5️⃣📆 😋 🤚 `HTTPException` ⚖️ 🎏 🚪 📟, ⏮️ `yield`. ✋️ **⚫️ 🏆 🚫 👷**.
 
-🚪 📟 🔗 ⏮️ `yield` 🛠️ *⏮️* 📨 📨, [⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=_blank} 🔜 ✔️ ⏪ 🏃. 📤 🕳 😽 ⚠ 🚮 👆 🔗 🚪 📟 (⏮️ `yield`).
+🚪 📟 🔗 ⏮️ `yield` 🛠️ _⏮️_ 📨 📨, [⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=\_blank} 🔜 ✔️ ⏪ 🏃. 📤 🕳 😽 ⚠ 🚮 👆 🔗 🚪 📟 (⏮️ `yield`).
 
 , 🚥 👆 🤚 `HTTPException` ⏮️ `yield`, 🔢 (⚖️ 🙆 🛃) ⚠ 🐕‍🦺 👈 ✊ `HTTPException`Ⓜ &amp; 📨 🇺🇸🔍 4️⃣0️⃣0️⃣ 📨 🏆 🚫 📤 ✊ 👈 ⚠ 🚫🔜.
 
 👉 ⚫️❔ ✔ 🕳 ⚒ 🔗 (✅ 💽 🎉), 🖼, ⚙️ 🖥 📋.
 
-🖥 📋 🏃 *⏮️* 📨 ✔️ 📨. 📤 🙅‍♂ 🌌 🤚 `HTTPException` ↩️ 📤 🚫 🌌 🔀 📨 👈 *⏪ 📨*.
+🖥 📋 🏃 _⏮️_ 📨 ✔️ 📨. 📤 🙅‍♂ 🌌 🤚 `HTTPException` ↩️ 📤 🚫 🌌 🔀 📨 👈 _⏪ 📨_.
 
 ✋️ 🚥 🖥 📋 ✍ 💽 ❌, 🌘 👆 💪 💾 ⚖️ 😬 🔐 🎉 🔗 ⏮️ `yield`, &amp; 🎲 🕹 ❌ ⚖️ 📄 ⚫️ 🛰 🕵 ⚙️.
 
 🚥 👆 ✔️ 📟 👈 👆 💭 💪 🤚 ⚠, 🏆 😐/"🙃" 👜 &amp; 🚮 `try` 🍫 👈 📄 📟.
 
-🚥 👆 ✔️ 🛃 ⚠ 👈 👆 🔜 💖 🍵 *⏭* 🛬 📨 &amp; 🎲 ❎ 📨, 🎲 🙋‍♀ `HTTPException`, ✍ [🛃 ⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=_blank}.
+🚥 👆 ✔️ 🛃 ⚠ 👈 👆 🔜 💖 🍵 _⏭_ 🛬 📨 &amp; 🎲 ❎ 📨, 🎲 🙋‍♀ `HTTPException`, ✍ [🛃 ⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=\_blank}.
 
 /// tip
 
-👆 💪 🤚 ⚠ 🔌 `HTTPException` *⏭* `yield`. ✋️ 🚫 ⏮️.
+👆 💪 🤚 ⚠ 🔌 `HTTPException` _⏭_ `yield`. ✋️ 🚫 ⏮️.
 
 ///
 
@@ -175,7 +175,7 @@ participant tasks as Background tasks
 
 /// info
 
-🕴 **1️⃣ 📨** 🔜 📨 👩‍💻. ⚫️ 💪 1️⃣ ❌ 📨 ⚖️ ⚫️ 🔜 📨 ⚪️➡️ *➡ 🛠️*.
+🕴 **1️⃣ 📨** 🔜 📨 👩‍💻. ⚫️ 💪 1️⃣ ❌ 📨 ⚖️ ⚫️ 🔜 📨 ⚪️➡️ _➡ 🛠️_.
 
 ⏮️ 1️⃣ 📚 📨 📨, 🙅‍♂ 🎏 📨 💪 📨.
 
@@ -183,7 +183,7 @@ participant tasks as Background tasks
 
 /// tip
 
-👉 📊 🎦 `HTTPException`, ✋️ 👆 💪 🤚 🙆 🎏 ⚠ ❔ 👆 ✍ [🛃 ⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=_blank}.
+👉 📊 🎦 `HTTPException`, ✋️ 👆 💪 🤚 🙆 🎏 ⚠ ❔ 👆 ✍ [🛃 ⚠ 🐕‍🦺](../handling-errors.md#_4){.internal-link target=\_blank}.
 
 🚥 👆 🤚 🙆 ⚠, ⚫️ 🔜 🚶‍♀️ 🔗 ⏮️ 🌾, 🔌 `HTTPException`, &amp; ⤴️ **🔄** ⚠ 🐕‍🦺. 🚥 📤 🙅‍♂ ⚠ 🐕‍🦺 👈 ⚠, ⚫️ 🔜 ⤴️ 🍵 🔢 🔗 `ServerErrorMiddleware`, 🛬 5️⃣0️⃣0️⃣ 🇺🇸🔍 👔 📟, ➡️ 👩‍💻 💭 👈 📤 ❌ 💽.
 
@@ -225,15 +225,15 @@ with open("./somefile.txt") as f:
 `with` ⚖️ `async with` 📄 🔘 🔗 🔢:
 
 ```Python hl_lines="1-9  13"
-{!../../../docs_src/dependencies/tutorial010.py!}
+{!../../docs_src/dependencies/tutorial010.py!}
 ```
 
 /// tip
 
 ➕1️⃣ 🌌 ✍ 🔑 👨‍💼 ⏮️:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ⚖️
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ⚖️
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 ⚙️ 👫 🎀 🔢 ⏮️ 👁 `yield`.
 

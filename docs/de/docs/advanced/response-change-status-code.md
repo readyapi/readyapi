@@ -1,6 +1,6 @@
 # Response – Statuscode ändern
 
-Sie haben wahrscheinlich schon vorher gelesen, dass Sie einen Standard-[Response-Statuscode](../tutorial/response-status-code.md){.internal-link target=_blank} festlegen können.
+Sie haben wahrscheinlich schon vorher gelesen, dass Sie einen Standard-[Response-Statuscode](../tutorial/response-status-code.md){.internal-link target=\_blank} festlegen können.
 
 In manchen Fällen müssen Sie jedoch einen anderen als den Standard-Statuscode zurückgeben.
 
@@ -16,18 +16,18 @@ In diesen Fällen können Sie einen `Response`-Parameter verwenden.
 
 ## Einen `Response`-Parameter verwenden
 
-Sie können einen Parameter vom Typ `Response` in Ihrer *Pfadoperation-Funktion* deklarieren (wie Sie es auch für Cookies und Header tun können).
+Sie können einen Parameter vom Typ `Response` in Ihrer _Pfadoperation-Funktion_ deklarieren (wie Sie es auch für Cookies und Header tun können).
 
-Anschließend können Sie den `status_code` in diesem *vorübergehenden* Response-Objekt festlegen.
+Anschließend können Sie den `status_code` in diesem _vorübergehenden_ Response-Objekt festlegen.
 
 ```Python hl_lines="1  9  12"
-{!../../../docs_src/response_change_status_code/tutorial001.py!}
+{!../../docs_src/response_change_status_code/tutorial001.py!}
 ```
 
 Und dann können Sie wie gewohnt jedes benötigte Objekt zurückgeben (ein `dict`, ein Datenbankmodell usw.).
 
 Und wenn Sie ein `response_model` deklariert haben, wird es weiterhin zum Filtern und Konvertieren des von Ihnen zurückgegebenen Objekts verwendet.
 
-**ReadyAPI** verwendet diese *vorübergehende* Response, um den Statuscode (auch Cookies und Header) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
+**ReadyAPI** verwendet diese _vorübergehende_ Response, um den Statuscode (auch Cookies und Header) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
 
 Sie können den Parameter `Response` auch in Abhängigkeiten deklarieren und den Statuscode darin festlegen. Bedenken Sie jedoch, dass der gewinnt, welcher zuletzt gesetzt wird.

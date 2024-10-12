@@ -23,7 +23,7 @@
 간단한 예제부터 시작해봅시다:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 이 프로그램을 실행한 결과값:
@@ -34,12 +34,12 @@ John Doe
 
 함수는 아래와 같이 실행됩니다:
 
-* `first_name`과 `last_name`를 받습니다.
-* `title()`로 각 첫 문자를 대문자로 변환시킵니다.
-* 두 단어를 중간에 공백을 두고 <abbr title="두 개를 하나로 차례차례 이어지게 하다">연결</abbr>합니다.
+- `first_name`과 `last_name`를 받습니다.
+- `title()`로 각 첫 문자를 대문자로 변환시킵니다.
+- 두 단어를 중간에 공백을 두고 <abbr title="두 개를 하나로 차례차례 이어지게 하다">연결</abbr>합니다.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### 코드 수정
@@ -83,7 +83,7 @@ John Doe
 이게 "타입 힌트"입니다:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 타입힌트는 다음과 같이 기본 값을 선언하는 것과는 다릅니다:
@@ -113,7 +113,7 @@ John Doe
 아래 함수를 보면, 이미 타입 힌트가 적용되어 있는 걸 볼 수 있습니다:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 편집기가 변수의 타입을 알고 있기 때문에, 자동완성 뿐 아니라 에러도 확인할 수 있습니다:
@@ -123,7 +123,7 @@ John Doe
 이제 고쳐야하는 걸 알기 때문에, `age`를 `str(age)`과 같이 문자열로 바꾸게 됩니다:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## 타입 선언
@@ -138,13 +138,13 @@ John Doe
 
 예를 들면:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### 타입 매개변수를 활용한 Generic(제네릭) 타입
@@ -159,10 +159,10 @@ John Doe
 
 예를 들면, `str`의 `list`인 변수를 정의해봅시다.
 
-`typing`에서  `List`(대문자 `L`)를 import 합니다.
+`typing`에서 `List`(대문자 `L`)를 import 합니다.
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 콜론(`:`) 문법을 이용하여 변수를 선언합니다.
@@ -172,7 +172,7 @@ John Doe
 이때 배열은 내부 타입을 포함하는 타입이기 때문에 대괄호 안에 넣어줍니다.
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 /// tip | "팁"
@@ -200,13 +200,13 @@ John Doe
 `tuple`과 `set`도 동일하게 선언할 수 있습니다.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 이 뜻은 아래와 같습니다:
 
-* 변수 `items_t`는, 차례대로 `int`, `int`, `str`인 `tuple`이다.
-* 변수 `items_s`는, 각 아이템이 `bytes`인 `set`이다.
+- 변수 `items_t`는, 차례대로 `int`, `int`, `str`인 `tuple`이다.
+- 변수 `items_s`는, 각 아이템이 `bytes`인 `set`이다.
 
 #### `Dict`
 
@@ -214,24 +214,24 @@ John Doe
 
 첫 번째 매개변수는 `dict`의 키(key)이고,
 
-두 번째 매개변수는  `dict`의 값(value)입니다.
+두 번째 매개변수는 `dict`의 값(value)입니다.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 이 뜻은 아래와 같습니다:
 
-* 변수 `prices`는 `dict`이다:
-    * `dict`의 키(key)는 `str`타입이다. (각 아이템의 이름(name))
-    * `dict`의 값(value)는 `float`타입이다. (각 아이템의 가격(price))
+- 변수 `prices`는 `dict`이다:
+  - `dict`의 키(key)는 `str`타입이다. (각 아이템의 이름(name))
+  - `dict`의 값(value)는 `float`타입이다. (각 아이템의 가격(price))
 
 #### `Optional`
 
 `str`과 같이 타입을 선언할 때 `Optional`을 쓸 수도 있는데, "선택적(Optional)"이기때문에 `None`도 될 수 있습니다:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 `Optional[str]`을 `str` 대신 쓰게 되면, 특정 값이 실제로는 `None`이 될 수도 있는데 항상 `str`이라고 가정하는 상황에서 에디터가 에러를 찾게 도와줄 수 있습니다.
@@ -240,12 +240,12 @@ John Doe
 
 이 타입은 대괄호 안에 매개변수를 가지며, 종류는:
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Optional`
-* ...등등
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Optional`
+- ...등등
 
 위와 같은 타입은 **Generic(제네릭) 타입** 혹은 **Generics(제네릭스)**라고 불립니다.
 
@@ -256,13 +256,13 @@ John Doe
 이름(name)을 가진 `Person` 클래스가 있다고 해봅시다.
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 그렇게 하면 변수를 `Person`이라고 선언할 수 있게 됩니다.
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 그리고 역시나 모든 에디터 도움을 받게 되겠죠.
@@ -284,7 +284,7 @@ John Doe
 Pydantic 공식 문서 예시:
 
 ```Python
-{!../../../docs_src/python_types/tutorial011.py!}
+{!../../docs_src/python_types/tutorial011.py!}
 ```
 
 /// info | "정보"
@@ -295,7 +295,7 @@ Pydantic<에 대해 더 배우고 싶다면 <a href="https://docs.pydantic.dev/"
 
 **ReadyAPI**는 모두 Pydantic을 기반으로 되어 있습니다.
 
-이 모든 것이 실제로 어떻게 사용되는지에 대해서는 [자습서 - 사용자 안내서](tutorial/index.md){.internal-link target=_blank} 에서 더 많이 확인하실 수 있습니다.
+이 모든 것이 실제로 어떻게 사용되는지에 대해서는 [자습서 - 사용자 안내서](tutorial/index.md){.internal-link target=\_blank} 에서 더 많이 확인하실 수 있습니다.
 
 ## **ReadyAPI**에서의 타입 힌트
 
@@ -303,19 +303,19 @@ Pydantic<에 대해 더 배우고 싶다면 <a href="https://docs.pydantic.dev/"
 
 **ReadyAPI**에서 타입 힌트와 함께 매개변수를 선언하면 장점은:
 
-* **에디터 도움**.
-* **타입 확인**.
+- **에디터 도움**.
+- **타입 확인**.
 
 ...그리고 **ReadyAPI**는 같은 정의를 아래에도 적용합니다:
 
-* **요구사항 정의**: 요청 경로 매개변수, 쿼리 매개변수, 헤더, 바디, 의존성 등.
-* **데이터 변환**: 요청에서 요구한 타입으로.
-* **데이터 검증**: 각 요청마다:
-    * 데이터가 유효하지 않은 경우에는 **자동으로 에러**를 발생합니다.
-* OpenAPI를 활용한 **API 문서화**:
-    * 자동으로 상호작용하는 유저 인터페이스에 쓰이게 됩니다.
+- **요구사항 정의**: 요청 경로 매개변수, 쿼리 매개변수, 헤더, 바디, 의존성 등.
+- **데이터 변환**: 요청에서 요구한 타입으로.
+- **데이터 검증**: 각 요청마다:
+  - 데이터가 유효하지 않은 경우에는 **자동으로 에러**를 발생합니다.
+- OpenAPI를 활용한 **API 문서화**:
+  - 자동으로 상호작용하는 유저 인터페이스에 쓰이게 됩니다.
 
-위 내용이 다소 추상적일 수도 있지만, 걱정마세요. [자습서 - 사용자 안내서](tutorial/index.md){.internal-link target=_blank}에서 전부 확인 가능합니다.
+위 내용이 다소 추상적일 수도 있지만, 걱정마세요. [자습서 - 사용자 안내서](tutorial/index.md){.internal-link target=\_blank}에서 전부 확인 가능합니다.
 
 가장 중요한 건, 표준 파이썬 타입을 한 곳에서(클래스를 더하거나, 데코레이터 사용하는 대신) 사용함으로써 **ReadyAPI**가 당신을 위해 많은 일을 해준다는 사실이죠.
 

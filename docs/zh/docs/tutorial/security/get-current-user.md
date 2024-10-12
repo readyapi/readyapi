@@ -3,13 +3,12 @@
 上一章中，（基于依赖注入系统的）安全系统向*路径操作函数*传递了 `str` 类型的 `token`：
 
 ```Python hl_lines="10"
-{!../../../docs_src/security/tutorial001.py!}
+{!../../docs_src/security/tutorial001.py!}
 ```
 
 但这并不实用。
 
 接下来，我们学习如何返回当前用户。
-
 
 ## 创建用户模型
 
@@ -18,7 +17,7 @@
 与使用 Pydantic 声明请求体相同，并且可在任何位置使用：
 
 ```Python hl_lines="5  12-16"
-{!../../../docs_src/security/tutorial002.py!}
+{!../../docs_src/security/tutorial002.py!}
 ```
 
 ## 创建 `get_current_user` 依赖项
@@ -32,7 +31,7 @@
 与之前直接在路径操作中的做法相同，新的 `get_current_user` 依赖项从子依赖项 `oauth2_scheme` 中接收 `str` 类型的 `token`：
 
 ```Python hl_lines="25"
-{!../../../docs_src/security/tutorial002.py!}
+{!../../docs_src/security/tutorial002.py!}
 ```
 
 ## 获取用户
@@ -40,7 +39,7 @@
 `get_current_user` 使用创建的（伪）工具函数，该函数接收 `str` 类型的令牌，并返回 Pydantic 的 `User` 模型：
 
 ```Python hl_lines="19-22  26-27"
-{!../../../docs_src/security/tutorial002.py!}
+{!../../docs_src/security/tutorial002.py!}
 ```
 
 ## 注入当前用户
@@ -48,7 +47,7 @@
 在*路径操作* 的 `Depends` 中使用 `get_current_user`：
 
 ```Python hl_lines="31"
-{!../../../docs_src/security/tutorial002.py!}
+{!../../docs_src/security/tutorial002.py!}
 ```
 
 注意，此处把 `current_user` 的类型声明为 Pydantic 的 `User` 模型。
@@ -87,7 +86,6 @@
 
 尽管使用应用所需的任何模型、类、数据库。**ReadyAPI** 通过依赖注入系统都能帮您搞定。
 
-
 ## 代码大小
 
 这个示例看起来有些冗长。毕竟这个文件同时包含了安全、数据模型的工具函数，以及路径操作等代码。
@@ -98,14 +96,14 @@
 
 就算写得再复杂，也只是在一个位置写一次就够了。所以，要多复杂就可以写多复杂。
 
-但是，就算有数千个端点（*路径操作*），它们都可以使用同一个安全系统。
+但是，就算有数千个端点（_路径操作_），它们都可以使用同一个安全系统。
 
 而且，所有端点（或它们的任何部件）都可以利用这些依赖项或任何其它依赖项。
 
 所有*路径操作*只需 3 行代码就可以了：
 
 ```Python hl_lines="30-32"
-{!../../../docs_src/security/tutorial002.py!}
+{!../../docs_src/security/tutorial002.py!}
 ```
 
 ## 小结

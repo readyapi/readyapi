@@ -6,8 +6,8 @@ When you raise an exception, as would happen with normal Python, the rest of the
 
 You can use:
 
-* `HTTPException`
-* `WebSocketException`
+- `HTTPException`
+- `WebSocketException`
 
 These exceptions can be imported directly from `readyapi`:
 

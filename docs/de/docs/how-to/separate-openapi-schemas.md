@@ -13,7 +13,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-7]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-7]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -22,7 +22,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
 ```
 
 </details>
@@ -32,7 +32,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-9]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-9]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -41,7 +41,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
 ```
 
 </details>
@@ -51,7 +51,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-9]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-9]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -60,7 +60,7 @@ Nehmen wir an, Sie haben ein Pydantic-Modell mit Defaultwerten wie dieses:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
 ```
 
 </details>
@@ -74,7 +74,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 //// tab | Python 3.10+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-15]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-15]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -83,7 +83,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
 ```
 
 </details>
@@ -93,7 +93,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 //// tab | Python 3.9+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-17]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-17]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -102,7 +102,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
 ```
 
 </details>
@@ -112,7 +112,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 //// tab | Python 3.8+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-17]!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-17]!}
 
 # Code unterhalb weggelassen 👇
 ```
@@ -121,7 +121,7 @@ Wenn Sie dieses Modell wie hier als Eingabe verwenden:
 <summary>👀 Vollständige Dateivorschau</summary>
 
 ```Python
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
 ```
 
 </details>
@@ -145,7 +145,7 @@ Wenn Sie jedoch dasselbe Modell als Ausgabe verwenden, wie hier:
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
 ```
 
 ////
@@ -153,7 +153,7 @@ Wenn Sie jedoch dasselbe Modell als Ausgabe verwenden, wie hier:
 //// tab | Python 3.9+
 
 ```Python hl_lines="21"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
 ```
 
 ////
@@ -161,12 +161,12 @@ Wenn Sie jedoch dasselbe Modell als Ausgabe verwenden, wie hier:
 //// tab | Python 3.8+
 
 ```Python hl_lines="21"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial001.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
 ```
 
 ////
 
-... dann, weil  `description` einen Defaultwert hat, wird es, wenn Sie für dieses Feld **nichts zurückgeben**, immer noch diesen **Defaultwert** haben.
+... dann, weil `description` einen Defaultwert hat, wird es, wenn Sie für dieses Feld **nichts zurückgeben**, immer noch diesen **Defaultwert** haben.
 
 ### Modell für Ausgabe-Responsedaten
 
@@ -184,8 +184,8 @@ Um dies in OpenAPI zu kennzeichnen, markieren Sie dieses Feld als **erforderlich
 
 Aus diesem Grund kann das JSON-Schema für ein Modell unterschiedlich sein, je nachdem, ob es für **Eingabe oder Ausgabe** verwendet wird:
 
-* für die **Eingabe** ist `description` **nicht erforderlich**
-* für die **Ausgabe** ist es **erforderlich** (und möglicherweise `None` oder, in JSON-Begriffen, `null`)
+- für die **Eingabe** ist `description` **nicht erforderlich**
+- für die **Ausgabe** ist es **erforderlich** (und möglicherweise `None` oder, in JSON-Begriffen, `null`)
 
 ### Ausgabemodell in der Dokumentation
 
@@ -226,7 +226,7 @@ Unterstützung für `separate_input_output_schemas` wurde in ReadyAPI `0.102.0` 
 //// tab | Python 3.10+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial002_py310.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial002_py310.py!}
 ```
 
 ////
@@ -234,7 +234,7 @@ Unterstützung für `separate_input_output_schemas` wurde in ReadyAPI `0.102.0` 
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial002_py39.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial002_py39.py!}
 ```
 
 ////
@@ -242,7 +242,7 @@ Unterstützung für `separate_input_output_schemas` wurde in ReadyAPI `0.102.0` 
 //// tab | Python 3.8+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/separate_openapi_schemas/tutorial002.py!}
+{!> ../../docs_src/separate_openapi_schemas/tutorial002.py!}
 ```
 
 ////

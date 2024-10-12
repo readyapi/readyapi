@@ -14,7 +14,7 @@ But don't worry, you can show it as you wish to your final users in the frontend
 
 And your database models can use any other names you want.
 
-But for the login *path operation*, we need to use these names to be compatible with the spec (and be able to, for example, use the integrated API documentation system).
+But for the login _path operation_, we need to use these names to be compatible with the spec (and be able to, for example, use the integrated API documentation system).
 
 The spec also states that the `username` and `password` must be sent as form data (so, no JSON here).
 
@@ -28,9 +28,9 @@ Each "scope" is just a string (without spaces).
 
 They are normally used to declare specific security permissions, for example:
 
-* `users:read` or `users:write` are common examples.
-* `instagram_basic` is used by Facebook / Instagram.
-* `https://www.googleapis.com/auth/drive` is used by Google.
+- `users:read` or `users:write` are common examples.
+- `instagram_basic` is used by Facebook / Instagram.
+- `https://www.googleapis.com/auth/drive` is used by Google.
 
 /// info
 
@@ -50,12 +50,12 @@ Now let's use the utilities provided by **ReadyAPI** to handle this.
 
 ### `OAuth2PasswordRequestForm`
 
-First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the *path operation* for `/token`:
+First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the _path operation_ for `/token`:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="4  78"
-{!> ../../../docs_src/security/tutorial003_an_py310.py!}
+{!> ../../docs_src/security/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -63,7 +63,7 @@ First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depe
 //// tab | Python 3.9+
 
 ```Python hl_lines="4  78"
-{!> ../../../docs_src/security/tutorial003_an_py39.py!}
+{!> ../../docs_src/security/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -71,7 +71,7 @@ First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depe
 //// tab | Python 3.8+
 
 ```Python hl_lines="4  79"
-{!> ../../../docs_src/security/tutorial003_an.py!}
+{!> ../../docs_src/security/tutorial003_an.py!}
 ```
 
 ////
@@ -85,7 +85,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="2  74"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -99,28 +99,28 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="4  76"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
 
 `OAuth2PasswordRequestForm` is a class dependency that declares a form body with:
 
-* The `username`.
-* The `password`.
-* An optional `scope` field as a big string, composed of strings separated by spaces.
-* An optional `grant_type`.
+- The `username`.
+- The `password`.
+- An optional `scope` field as a big string, composed of strings separated by spaces.
+- An optional `grant_type`.
 
 /// tip
 
-The OAuth2 spec actually *requires* a field `grant_type` with a fixed value of `password`, but `OAuth2PasswordRequestForm` doesn't enforce it.
+The OAuth2 spec actually _requires_ a field `grant_type` with a fixed value of `password`, but `OAuth2PasswordRequestForm` doesn't enforce it.
 
 If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAuth2PasswordRequestForm`.
 
 ///
 
-* An optional `client_id` (we don't need it for our example).
-* An optional `client_secret` (we don't need it for our example).
+- An optional `client_id` (we don't need it for our example).
+- An optional `client_secret` (we don't need it for our example).
 
 /// info
 
@@ -153,7 +153,7 @@ For the error, we use the exception `HTTPException`:
 //// tab | Python 3.10+
 
 ```Python hl_lines="3  79-81"
-{!> ../../../docs_src/security/tutorial003_an_py310.py!}
+{!> ../../docs_src/security/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -161,7 +161,7 @@ For the error, we use the exception `HTTPException`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="3  79-81"
-{!> ../../../docs_src/security/tutorial003_an_py39.py!}
+{!> ../../docs_src/security/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -169,7 +169,7 @@ For the error, we use the exception `HTTPException`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="3  80-82"
-{!> ../../../docs_src/security/tutorial003_an.py!}
+{!> ../../docs_src/security/tutorial003_an.py!}
 ```
 
 ////
@@ -183,7 +183,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="1  75-77"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -197,7 +197,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="3  77-79"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -229,7 +229,7 @@ So, the thief won't be able to try to use those same passwords in another system
 //// tab | Python 3.10+
 
 ```Python hl_lines="82-85"
-{!> ../../../docs_src/security/tutorial003_an_py310.py!}
+{!> ../../docs_src/security/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -237,7 +237,7 @@ So, the thief won't be able to try to use those same passwords in another system
 //// tab | Python 3.9+
 
 ```Python hl_lines="82-85"
-{!> ../../../docs_src/security/tutorial003_an_py39.py!}
+{!> ../../docs_src/security/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -245,7 +245,7 @@ So, the thief won't be able to try to use those same passwords in another system
 //// tab | Python 3.8+
 
 ```Python hl_lines="83-86"
-{!> ../../../docs_src/security/tutorial003_an.py!}
+{!> ../../docs_src/security/tutorial003_an.py!}
 ```
 
 ////
@@ -259,7 +259,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="78-81"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -273,7 +273,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="80-83"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -282,7 +282,7 @@ Prefer to use the `Annotated` version if possible.
 
 `UserInDB(**user_dict)` means:
 
-*Pass the keys and values of the `user_dict` directly as key-value arguments, equivalent to:*
+_Pass the keys and values of the `user_dict` directly as key-value arguments, equivalent to:_
 
 ```Python
 UserInDB(
@@ -296,7 +296,7 @@ UserInDB(
 
 /// info
 
-For a more complete explanation of `**user_dict` check back in [the documentation for **Extra Models**](../extra-models.md#about-user_indict){.internal-link target=_blank}.
+For a more complete explanation of `**user_dict` check back in [the documentation for **Extra Models**](../extra-models.md#about-user_indict){.internal-link target=\_blank}.
 
 ///
 
@@ -321,7 +321,7 @@ But for now, let's focus on the specific details we need.
 //// tab | Python 3.10+
 
 ```Python hl_lines="87"
-{!> ../../../docs_src/security/tutorial003_an_py310.py!}
+{!> ../../docs_src/security/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -329,7 +329,7 @@ But for now, let's focus on the specific details we need.
 //// tab | Python 3.9+
 
 ```Python hl_lines="87"
-{!> ../../../docs_src/security/tutorial003_an_py39.py!}
+{!> ../../docs_src/security/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -337,7 +337,7 @@ But for now, let's focus on the specific details we need.
 //// tab | Python 3.8+
 
 ```Python hl_lines="88"
-{!> ../../../docs_src/security/tutorial003_an.py!}
+{!> ../../docs_src/security/tutorial003_an.py!}
 ```
 
 ////
@@ -351,7 +351,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="83"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -365,7 +365,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="85"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -386,7 +386,7 @@ For the rest, **ReadyAPI** handles it for you.
 
 Now we are going to update our dependencies.
 
-We want to get the `current_user` *only* if this user is active.
+We want to get the `current_user` _only_ if this user is active.
 
 So, we create an additional dependency `get_current_active_user` that in turn uses `get_current_user` as a dependency.
 
@@ -397,7 +397,7 @@ So, in our endpoint, we will only get a user if the user exists, was correctly a
 //// tab | Python 3.10+
 
 ```Python hl_lines="58-66  69-74  94"
-{!> ../../../docs_src/security/tutorial003_an_py310.py!}
+{!> ../../docs_src/security/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -405,7 +405,7 @@ So, in our endpoint, we will only get a user if the user exists, was correctly a
 //// tab | Python 3.9+
 
 ```Python hl_lines="58-66  69-74  94"
-{!> ../../../docs_src/security/tutorial003_an_py39.py!}
+{!> ../../docs_src/security/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -413,7 +413,7 @@ So, in our endpoint, we will only get a user if the user exists, was correctly a
 //// tab | Python 3.8+
 
 ```Python hl_lines="59-67  70-75  95"
-{!> ../../../docs_src/security/tutorial003_an.py!}
+{!> ../../docs_src/security/tutorial003_an.py!}
 ```
 
 ////
@@ -427,7 +427,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="56-64  67-70  88"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -441,7 +441,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="58-66  69-72  90"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////

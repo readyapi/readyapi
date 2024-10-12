@@ -14,16 +14,16 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 
 ## 简单的 HTTP 基础授权
 
-* 导入 `HTTPBasic` 与 `HTTPBasicCredentials`
-* 使用 `HTTPBasic` 创建**安全概图**
-* 在*路径操作*的依赖项中使用 `security`
-* 返回类型为 `HTTPBasicCredentials` 的对象：
-    * 包含发送的 `username` 与 `password`
+- 导入 `HTTPBasic` 与 `HTTPBasicCredentials`
+- 使用 `HTTPBasic` 创建**安全概图**
+- 在*路径操作*的依赖项中使用 `security`
+- 返回类型为 `HTTPBasicCredentials` 的对象：
+  - 包含发送的 `username` 与 `password`
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="4  8  12"
-{!> ../../../docs_src/security/tutorial006_an_py39.py!}
+{!> ../../docs_src/security/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 //// tab | Python 3.8+
 
 ```Python hl_lines="2  7  11"
-{!> ../../../docs_src/security/tutorial006_an.py!}
+{!> ../../docs_src/security/tutorial006_an.py!}
 ```
 
 ////
@@ -45,7 +45,7 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 ///
 
 ```Python hl_lines="2  6  10"
-{!> ../../../docs_src/security/tutorial006.py!}
+{!> ../../docs_src/security/tutorial006.py!}
 ```
 
 ////
@@ -71,7 +71,7 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 //// tab | Python 3.9+
 
 ```Python hl_lines="1  12-24"
-{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+{!> ../../docs_src/security/tutorial007_an_py39.py!}
 ```
 
 ////
@@ -79,7 +79,7 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  12-24"
-{!> ../../../docs_src/security/tutorial007_an.py!}
+{!> ../../docs_src/security/tutorial007_an.py!}
 ```
 
 ////
@@ -93,7 +93,7 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 ///
 
 ```Python hl_lines="1  11-21"
-{!> ../../../docs_src/security/tutorial007.py!}
+{!> ../../docs_src/security/tutorial007.py!}
 ```
 
 ////
@@ -114,7 +114,7 @@ if not (credentials.username == "stanleyjobson") or not (credentials.password ==
 
 假设攻击者试图猜出用户名与密码。
 
-他们发送用户名为 `johndoe`，密码为 `love123`  的请求。
+他们发送用户名为 `johndoe`，密码为 `love123` 的请求。
 
 然后，Python 代码执行如下操作：
 
@@ -163,7 +163,7 @@ if "stanleyjobsox" == "stanleyjobson" and "love123" == "swordfish":
 //// tab | Python 3.9+
 
 ```Python hl_lines="26-30"
-{!> ../../../docs_src/security/tutorial007_an_py39.py!}
+{!> ../../docs_src/security/tutorial007_an_py39.py!}
 ```
 
 ////
@@ -171,7 +171,7 @@ if "stanleyjobsox" == "stanleyjobson" and "love123" == "swordfish":
 //// tab | Python 3.8+
 
 ```Python hl_lines="26-30"
-{!> ../../../docs_src/security/tutorial007_an.py!}
+{!> ../../docs_src/security/tutorial007_an.py!}
 ```
 
 ////
@@ -185,7 +185,7 @@ if "stanleyjobsox" == "stanleyjobson" and "love123" == "swordfish":
 ///
 
 ```Python hl_lines="23-27"
-{!> ../../../docs_src/security/tutorial007.py!}
+{!> ../../docs_src/security/tutorial007.py!}
 ```
 
 ////

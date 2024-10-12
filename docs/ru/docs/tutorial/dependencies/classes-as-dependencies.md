@@ -9,7 +9,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@
 //// tab | Python 3.6+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -53,12 +53,12 @@
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
 
-Но затем мы получаем `словарь`  в параметре `commons`  *функции операции пути*. И мы знаем, что редакторы не могут обеспечить достаточную поддержку для `словаря`, поскольку они не могут знать их ключи и типы значений.
+Но затем мы получаем `словарь` в параметре `commons` _функции операции пути_. И мы знаем, что редакторы не могут обеспечить достаточную поддержку для `словаря`, поскольку они не могут знать их ключи и типы значений.
 
 Мы можем сделать лучше...
 
@@ -109,18 +109,18 @@ fluffy = Cat(name="Mr Fluffy")
 
 Тогда в **ReadyAPI** в качестве зависимости можно использовать класс Python.
 
-На самом деле ReadyAPI проверяет, что переданный объект является "вызываемым" (функция, класс или что-либо еще) и указаны  необходимые для его вызова параметры.
+На самом деле ReadyAPI проверяет, что переданный объект является "вызываемым" (функция, класс или что-либо еще) и указаны необходимые для его вызова параметры.
 
-Если вы передаёте что-то, что можно "вызывать" в качестве зависимости в **ReadyAPI**, то он будет анализировать параметры, необходимые для "вызова" этого объекта и обрабатывать их так же, как параметры *функции операции пути*. Включая подзависимости.
+Если вы передаёте что-то, что можно "вызывать" в качестве зависимости в **ReadyAPI**, то он будет анализировать параметры, необходимые для "вызова" этого объекта и обрабатывать их так же, как параметры _функции операции пути_. Включая подзависимости.
 
-Это относится и к вызываемым объектам без параметров. Работа с ними происходит точно так же, как и для *функций операции пути* без параметров.
+Это относится и к вызываемым объектам без параметров. Работа с ними происходит точно так же, как и для _функций операции пути_ без параметров.
 
 Теперь мы можем изменить зависимость `common_parameters`, указанную выше, на класс `CommonQueryParams`:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -128,7 +128,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.9+
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -136,7 +136,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="12-16"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -150,7 +150,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="9-13"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -164,7 +164,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -174,7 +174,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -182,7 +182,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -190,7 +190,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -204,7 +204,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -218,7 +218,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -236,7 +236,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -244,7 +244,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -258,7 +258,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -272,7 +272,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -281,9 +281,9 @@ fluffy = Cat(name="Mr Fluffy")
 
 В обоих случаях она будет иметь:
 
-* Необязательный параметр запроса `q`, представляющий собой `str`.
-* Параметр запроса `skip`, представляющий собой `int`, по умолчанию `0`.
-* Параметр запроса `limit`, представляющий собой `int`, по умолчанию равный `100`.
+- Необязательный параметр запроса `q`, представляющий собой `str`.
+- Параметр запроса `skip`, представляющий собой `int`, по умолчанию `0`.
+- Параметр запроса `limit`, представляющий собой `int`, по умолчанию равный `100`.
 
 В обоих случаях данные будут конвертированы, валидированы, документированы по схеме OpenAPI и т.д.
 
@@ -294,7 +294,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -302,7 +302,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -310,7 +310,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | Python 3.6+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -324,7 +324,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -338,7 +338,7 @@ fluffy = Cat(name="Mr Fluffy")
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -438,7 +438,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -446,7 +446,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -454,7 +454,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.6+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial003_an.py!}
+{!> ../../docs_src/dependencies/tutorial003_an.py!}
 ```
 
 ////
@@ -468,7 +468,7 @@ commons = Depends(CommonQueryParams)
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial003_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_py310.py!}
 ```
 
 ////
@@ -482,7 +482,7 @@ commons = Depends(CommonQueryParams)
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003.py!}
+{!> ../../docs_src/dependencies/tutorial003.py!}
 ```
 
 ////
@@ -517,8 +517,7 @@ commons: Annotated[CommonQueryParams, Depends(CommonQueryParams)]
 
 ////
 
-Для случаев, когда зависимостью является *конкретный* класс, который **ReadyAPI** "вызовет" для создания экземпляра этого класса, можно использовать укороченную запись.
-
+Для случаев, когда зависимостью является _конкретный_ класс, который **ReadyAPI** "вызовет" для создания экземпляра этого класса, можно использовать укороченную запись.
 
 Вместо того чтобы писать:
 
@@ -568,14 +567,14 @@ commons: CommonQueryParams = Depends()
 
 ////
 
-Вы объявляете зависимость как тип параметра и используете `Depends()` без какого-либо параметра, вместо того чтобы *снова* писать полный класс внутри `Depends(CommonQueryParams)`.
+Вы объявляете зависимость как тип параметра и используете `Depends()` без какого-либо параметра, вместо того чтобы _снова_ писать полный класс внутри `Depends(CommonQueryParams)`.
 
 Аналогичный пример будет выглядеть следующим образом:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_an_py310.py!}
 ```
 
 ////
@@ -583,7 +582,7 @@ commons: CommonQueryParams = Depends()
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial004_an_py39.py!}
 ```
 
 ////
@@ -591,7 +590,7 @@ commons: CommonQueryParams = Depends()
 //// tab | Python 3.6+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial004_an.py!}
+{!> ../../docs_src/dependencies/tutorial004_an.py!}
 ```
 
 ////
@@ -605,7 +604,7 @@ commons: CommonQueryParams = Depends()
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial004_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_py310.py!}
 ```
 
 ////
@@ -619,7 +618,7 @@ commons: CommonQueryParams = Depends()
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004.py!}
+{!> ../../docs_src/dependencies/tutorial004.py!}
 ```
 
 ////
@@ -628,7 +627,7 @@ commons: CommonQueryParams = Depends()
 
 /// tip | "Подсказка"
 
-Если это покажется вам более запутанным, чем полезным, не обращайте внимания, это вам не *нужно*.
+Если это покажется вам более запутанным, чем полезным, не обращайте внимания, это вам не _нужно_.
 
 Это просто сокращение. Потому что **ReadyAPI** заботится о том, чтобы помочь вам свести к минимуму повторение кода.
 

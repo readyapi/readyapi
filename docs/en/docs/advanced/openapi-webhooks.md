@@ -1,6 +1,6 @@
 # OpenAPI Webhooks
 
-There are cases where you want to tell your API **users** that your app could call *their* app (sending a request) with some data, normally to **notify** of some type of **event**.
+There are cases where you want to tell your API **users** that your app could call _their_ app (sending a request) with some data, normally to **notify** of some type of **event**.
 
 This means that instead of the normal process of your users sending requests to your API, it's **your API** (or your app) that could **send requests to their system** (to their API, their app).
 
@@ -30,10 +30,10 @@ Webhooks are available in OpenAPI 3.1.0 and above, supported by ReadyAPI `0.99.0
 
 ## An app with webhooks
 
-When you create a **ReadyAPI** application, there is a `webhooks` attribute that you can use to define *webhooks*, the same way you would define *path operations*, for example with `@app.webhooks.post()`.
+When you create a **ReadyAPI** application, there is a `webhooks` attribute that you can use to define _webhooks_, the same way you would define _path operations_, for example with `@app.webhooks.post()`.
 
 ```Python hl_lines="9-13  36-53"
-{!../../../docs_src/openapi_webhooks/tutorial001.py!}
+{!../../docs_src/openapi_webhooks/tutorial001.py!}
 ```
 
 The webhooks that you define will end up in the **OpenAPI** schema and the automatic **docs UI**.
@@ -44,7 +44,7 @@ The `app.webhooks` object is actually just an `APIRouter`, the same type you wou
 
 ///
 
-Notice that with webhooks you are actually not declaring a *path* (like `/items/`), the text you pass there is just an **identifier** of the webhook (the name of the event), for example in `@app.webhooks.post("new-subscription")`, the webhook name is `new-subscription`.
+Notice that with webhooks you are actually not declaring a _path_ (like `/items/`), the text you pass there is just an **identifier** of the webhook (the name of the event), for example in `@app.webhooks.post("new-subscription")`, the webhook name is `new-subscription`.
 
 This is because it is expected that **your users** would define the actual **URL path** where they want to receive the webhook request in some other way (e.g. a web dashboard).
 
@@ -52,6 +52,6 @@ This is because it is expected that **your users** would define the actual **URL
 
 Now you can start your app and go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-You will see your docs have the normal *path operations* and now also some **webhooks**:
+You will see your docs have the normal _path operations_ and now also some **webhooks**:
 
 <img src="/img/tutorial/openapi-webhooks/image01.png">

@@ -82,6 +82,6 @@ Em muitos casos você pode ter (e deveria ter) um "proxy de saída" tratando HTT
 
 /// tip
 
-Você pode aprender mais sobre em [documentação de deployment](deployment/index.md){.internal-link target=_blank}.
+Você pode aprender mais sobre em [documentação de deployment](deployment/index.md){.internal-link target=\_blank}.
 
 ///

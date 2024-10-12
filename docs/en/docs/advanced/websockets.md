@@ -4,7 +4,7 @@ You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets
 
 ## Install `WebSockets`
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and install `websockets`:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and install `websockets`:
 
 <div class="termy">
 
@@ -39,7 +39,7 @@ In production you would have one of the options above.
 But it's the simplest way to focus on the server-side of WebSockets and have a working example:
 
 ```Python hl_lines="2  6-38  41-43"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 ## Create a `websocket`
@@ -47,7 +47,7 @@ But it's the simplest way to focus on the server-side of WebSockets and have a w
 In your **ReadyAPI** application, create a `websocket`:
 
 ```Python hl_lines="1  46-47"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 /// note | "Technical Details"
@@ -63,7 +63,7 @@ You could also use `from starlette.websockets import WebSocket`.
 In your WebSocket route you can `await` for messages and send messages.
 
 ```Python hl_lines="48-52"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 You can receive and send binary, text, and JSON data.
@@ -106,19 +106,19 @@ And all of them will use the same WebSocket connection.
 
 In WebSocket endpoints you can import from `readyapi` and use:
 
-* `Depends`
-* `Security`
-* `Cookie`
-* `Header`
-* `Path`
-* `Query`
+- `Depends`
+- `Security`
+- `Cookie`
+- `Header`
+- `Path`
+- `Query`
 
-They work the same way as for other ReadyAPI endpoints/*path operations*:
+They work the same way as for other ReadyAPI endpoints/_path operations_:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -126,7 +126,7 @@ They work the same way as for other ReadyAPI endpoints/*path operations*:
 //// tab | Python 3.9+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py39.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -134,7 +134,7 @@ They work the same way as for other ReadyAPI endpoints/*path operations*:
 //// tab | Python 3.8+
 
 ```Python hl_lines="69-70  83"
-{!> ../../../docs_src/websockets/tutorial002_an.py!}
+{!> ../../docs_src/websockets/tutorial002_an.py!}
 ```
 
 ////
@@ -148,7 +148,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="66-67  79"
-{!> ../../../docs_src/websockets/tutorial002_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_py310.py!}
 ```
 
 ////
@@ -162,7 +162,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="68-69  81"
-{!> ../../../docs_src/websockets/tutorial002.py!}
+{!> ../../docs_src/websockets/tutorial002.py!}
 ```
 
 ////
@@ -193,8 +193,8 @@ Open your browser at <a href="http://127.0.0.1:8000" class="external-link" targe
 
 There you can set:
 
-* The "Item ID", used in the path.
-* The "Token" used as a query parameter.
+- The "Item ID", used in the path.
+- The "Token" used as a query parameter.
 
 /// tip
 
@@ -213,7 +213,7 @@ When a WebSocket connection is closed, the `await websocket.receive_text()` will
 //// tab | Python 3.9+
 
 ```Python hl_lines="79-81"
-{!> ../../../docs_src/websockets/tutorial003_py39.py!}
+{!> ../../docs_src/websockets/tutorial003_py39.py!}
 ```
 
 ////
@@ -221,16 +221,16 @@ When a WebSocket connection is closed, the `await websocket.receive_text()` will
 //// tab | Python 3.8+
 
 ```Python hl_lines="81-83"
-{!> ../../../docs_src/websockets/tutorial003.py!}
+{!> ../../docs_src/websockets/tutorial003.py!}
 ```
 
 ////
 
 To try it out:
 
-* Open the app with several browser tabs.
-* Write messages from them.
-* Then close one of the tabs.
+- Open the app with several browser tabs.
+- Write messages from them.
+- Then close one of the tabs.
 
 That will raise the `WebSocketDisconnect` exception, and all the other clients will receive a message like:
 
@@ -252,5 +252,5 @@ If you need something easy to integrate with ReadyAPI but that is more robust, s
 
 To learn more about the options, check Starlette's documentation for:
 
-* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">The `WebSocket` class</a>.
-* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Class-based WebSocket handling</a>.
+- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">The `WebSocket` class</a>.
+- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Class-based WebSocket handling</a>.

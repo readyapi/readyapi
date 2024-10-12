@@ -2,19 +2,19 @@
 
 ## Einen `Response`-Parameter verwenden
 
-Sie können einen Parameter vom Typ `Response` in Ihrer *Pfadoperation-Funktion* deklarieren.
+Sie können einen Parameter vom Typ `Response` in Ihrer _Pfadoperation-Funktion_ deklarieren.
 
-Und dann können Sie Cookies in diesem *vorübergehenden* Response-Objekt setzen.
+Und dann können Sie Cookies in diesem _vorübergehenden_ Response-Objekt setzen.
 
 ```Python hl_lines="1  8-9"
-{!../../../docs_src/response_cookies/tutorial002.py!}
+{!../../docs_src/response_cookies/tutorial002.py!}
 ```
 
 Anschließend können Sie wie gewohnt jedes gewünschte Objekt zurückgeben (ein `dict`, ein Datenbankmodell, usw.).
 
 Und wenn Sie ein `response_model` deklariert haben, wird es weiterhin zum Filtern und Konvertieren des von Ihnen zurückgegebenen Objekts verwendet.
 
-**ReadyAPI** verwendet diese *vorübergehende* Response, um die Cookies (auch Header und Statuscode) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
+**ReadyAPI** verwendet diese _vorübergehende_ Response, um die Cookies (auch Header und Statuscode) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
 
 Sie können den `Response`-Parameter auch in Abhängigkeiten deklarieren und darin Cookies (und Header) setzen.
 
@@ -22,12 +22,12 @@ Sie können den `Response`-Parameter auch in Abhängigkeiten deklarieren und dar
 
 Sie können Cookies auch erstellen, wenn Sie eine `Response` direkt in Ihrem Code zurückgeben.
 
-Dazu können Sie eine Response erstellen, wie unter [Eine Response direkt zurückgeben](response-directly.md){.internal-link target=_blank} beschrieben.
+Dazu können Sie eine Response erstellen, wie unter [Eine Response direkt zurückgeben](response-directly.md){.internal-link target=\_blank} beschrieben.
 
 Setzen Sie dann Cookies darin und geben Sie sie dann zurück:
 
 ```Python hl_lines="10-12"
-{!../../../docs_src/response_cookies/tutorial001.py!}
+{!../../docs_src/response_cookies/tutorial001.py!}
 ```
 
 /// tip | "Tipp"

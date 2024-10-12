@@ -71,7 +71,7 @@ Using it in your editor is what really shows you the benefits of ReadyAPI, seein
 
 The first step is to install ReadyAPI.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then **install ReadyAPI**:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then **install ReadyAPI**:
 
 <div class="termy">
 

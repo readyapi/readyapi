@@ -7,7 +7,7 @@
 まず、`Header`をインポートします:
 
 ```Python hl_lines="3"
-{!../../../docs_src/header_params/tutorial001.py!}
+{!../../docs_src/header_params/tutorial001.py!}
 ```
 
 ## `Header`のパラメータの宣言
@@ -17,7 +17,7 @@
 最初の値がデフォルト値で、追加の検証パラメータや注釈パラメータをすべて渡すことができます。
 
 ```Python hl_lines="9"
-{!../../../docs_src/header_params/tutorial001.py!}
+{!../../docs_src/header_params/tutorial001.py!}
 ```
 
 /// note | "技術詳細"
@@ -40,23 +40,23 @@
 
 ほとんどの標準ヘッダーは、「マイナス記号」（`-`）としても知られる「ハイフン」で区切られています。
 
-しかし、`user-agent`のような変数はPythonでは無効です。
+しかし、`user-agent`のような変数は Python では無効です。
 
 そのため、デフォルトでは、`Header`はパラメータの文字をアンダースコア（`_`）からハイフン（`-`）に変換して、ヘッダーを抽出して文書化します。
 
-また、HTTPヘッダは大文字小文字を区別しないので、Pythonの標準スタイル（別名「スネークケース」）で宣言することができます。
+また、HTTP ヘッダは大文字小文字を区別しないので、Python の標準スタイル（別名「スネークケース」）で宣言することができます。
 
-そのため、`User_Agent`などのように最初の文字を大文字にする必要はなく、通常のPythonコードと同じように`user_agent`を使用することができます。
+そのため、`User_Agent`などのように最初の文字を大文字にする必要はなく、通常の Python コードと同じように`user_agent`を使用することができます。
 
 もしなんらかの理由でアンダースコアからハイフンへの自動変換を無効にする必要がある場合は、`Header`の`convert_underscores`に`False`を設定してください:
 
 ```Python hl_lines="9"
-{!../../../docs_src/header_params/tutorial002.py!}
+{!../../docs_src/header_params/tutorial002.py!}
 ```
 
 /// warning | "注意"
 
-`convert_underscores`を`False`に設定する前に、HTTPプロキシやサーバの中にはアンダースコアを含むヘッダーの使用を許可していないものがあることに注意してください。
+`convert_underscores`を`False`に設定する前に、HTTP プロキシやサーバの中にはアンダースコアを含むヘッダーの使用を許可していないものがあることに注意してください。
 
 ///
 
@@ -66,15 +66,15 @@
 
 これらの場合、リストの型宣言を使用して定義することができます。
 
-重複したヘッダーのすべての値をPythonの`list`として受け取ることができます。
+重複したヘッダーのすべての値を Python の`list`として受け取ることができます。
 
 例えば、複数回出現する可能性のある`X-Token`のヘッダを定義するには、以下のように書くことができます:
 
 ```Python hl_lines="9"
-{!../../../docs_src/header_params/tutorial003.py!}
+{!../../docs_src/header_params/tutorial003.py!}
 ```
 
-もし、その*path operation*で通信する場合は、次のように２つのHTTPヘッダーを送信します:
+もし、その*path operation*で通信する場合は、次のように２つの HTTP ヘッダーを送信します:
 
 ```
 X-Token: foo

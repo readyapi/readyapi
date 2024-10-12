@@ -2,14 +2,14 @@
 
 ⏭ 🤿 ⏬ 🔘 **🔗 💉** ⚙️, ➡️ ♻ ⏮️ 🖼.
 
-##  `dict` ⚪️➡️ ⏮️ 🖼
+## `dict` ⚪️➡️ ⏮️ 🖼
 
 ⏮️ 🖼, 👥 🛬 `dict` ⚪️➡️ 👆 🔗 ("☑"):
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -17,12 +17,12 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
 
-✋️ ⤴️ 👥 🤚 `dict` 🔢 `commons` *➡ 🛠️ 🔢*.
+✋️ ⤴️ 👥 🤚 `dict` 🔢 `commons` _➡ 🛠️ 🔢_.
 
 &amp; 👥 💭 👈 👨‍🎨 💪 🚫 🚚 📚 🐕‍🦺 (💖 🛠️) `dict`Ⓜ, ↩️ 👫 💪 🚫 💭 👫 🔑 &amp; 💲 🆎.
 
@@ -77,16 +77,16 @@ fluffy = Cat(name="Mr Fluffy")
 
 ⚫️❔ ReadyAPI 🤙 ✅ 👈 ⚫️ "🇧🇲" (🔢, 🎓 ⚖️ 🕳 🙆) &amp; 🔢 🔬.
 
-🚥 👆 🚶‍♀️ "🇧🇲" 🔗 **ReadyAPI**, ⚫️ 🔜 🔬 🔢 👈 "🇧🇲", &amp; 🛠️ 👫 🎏 🌌 🔢 *➡ 🛠️ 🔢*. ✅ 🎧-🔗.
+🚥 👆 🚶‍♀️ "🇧🇲" 🔗 **ReadyAPI**, ⚫️ 🔜 🔬 🔢 👈 "🇧🇲", &amp; 🛠️ 👫 🎏 🌌 🔢 _➡ 🛠️ 🔢_. ✅ 🎧-🔗.
 
-👈 ✔ 🇧🇲 ⏮️ 🙅‍♂ 🔢 🌐. 🎏 ⚫️ 🔜 *➡ 🛠️ 🔢* ⏮️ 🙅‍♂ 🔢.
+👈 ✔ 🇧🇲 ⏮️ 🙅‍♂ 🔢 🌐. 🎏 ⚫️ 🔜 _➡ 🛠️ 🔢_ ⏮️ 🙅‍♂ 🔢.
 
 ⤴️, 👥 💪 🔀 🔗 "☑" `common_parameters` ⚪️➡️ 🔛 🎓 `CommonQueryParams`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -94,7 +94,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="9-13"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -104,7 +104,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -112,7 +112,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -122,7 +122,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -130,7 +130,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -139,9 +139,9 @@ fluffy = Cat(name="Mr Fluffy")
 
 👯‍♂️ 💼, ⚫️ 🔜 ✔️:
 
-* 📦 `q` 🔢 🔢 👈 `str`.
-*  `skip` 🔢 🔢 👈 `int`, ⏮️ 🔢 `0`.
-*  `limit` 🔢 🔢 👈 `int`, ⏮️ 🔢 `100`.
+- 📦 `q` 🔢 🔢 👈 `str`.
+- `skip` 🔢 🔢 👈 `int`, ⏮️ 🔢 `0`.
+- `limit` 🔢 🔢 👈 `int`, ⏮️ 🔢 `100`.
 
 👯‍♂️ 💼 💽 🔜 🗜, ✔, 📄 🔛 🗄 🔗, ♒️.
 
@@ -152,7 +152,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -160,7 +160,7 @@ fluffy = Cat(name="Mr Fluffy")
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -206,7 +206,7 @@ commons = Depends(CommonQueryParams)
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003.py!}
+{!> ../../docs_src/dependencies/tutorial003.py!}
 ```
 
 ////
@@ -214,7 +214,7 @@ commons = Depends(CommonQueryParams)
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial003_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_py310.py!}
 ```
 
 ////
@@ -231,7 +231,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-**ReadyAPI** 🚚 ⌨ 👫 💼, 🌐❔ 🔗 *🎯* 🎓 👈 **ReadyAPI** 🔜 "🤙" ✍ 👐 🎓 ⚫️.
+**ReadyAPI** 🚚 ⌨ 👫 💼, 🌐❔ 🔗 _🎯_ 🎓 👈 **ReadyAPI** 🔜 "🤙" ✍ 👐 🎓 ⚫️.
 
 📚 🎯 💼, 👆 💪 📄:
 
@@ -247,14 +247,14 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends()
 ```
 
-👆 📣 🔗 🆎 🔢, &amp; 👆 ⚙️ `Depends()` 🚮 "🔢" 💲 (👈 ⏮️ `=`) 👈 🔢 🔢, 🍵 🙆 🔢 `Depends()`, ↩️ ✔️ ✍ 🌕 🎓 *🔄* 🔘 `Depends(CommonQueryParams)`.
+👆 📣 🔗 🆎 🔢, &amp; 👆 ⚙️ `Depends()` 🚮 "🔢" 💲 (👈 ⏮️ `=`) 👈 🔢 🔢, 🍵 🙆 🔢 `Depends()`, ↩️ ✔️ ✍ 🌕 🎓 _🔄_ 🔘 `Depends(CommonQueryParams)`.
 
 🎏 🖼 🔜 ⤴️ 👀 💖:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004.py!}
+{!> ../../docs_src/dependencies/tutorial004.py!}
 ```
 
 ////
@@ -262,7 +262,7 @@ commons: CommonQueryParams = Depends()
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial004_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_py310.py!}
 ```
 
 ////
@@ -271,7 +271,7 @@ commons: CommonQueryParams = Depends()
 
 /// tip
 
-🚥 👈 😑 🌅 😨 🌘 👍, 🤷‍♂ ⚫️, 👆 🚫 *💪* ⚫️.
+🚥 👈 😑 🌅 😨 🌘 👍, 🤷‍♂ ⚫️, 👆 🚫 _💪_ ⚫️.
 
 ⚫️ ⌨. ↩️ **ReadyAPI** 💅 🔃 🤝 👆 📉 📟 🔁.
 

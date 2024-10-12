@@ -17,7 +17,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_forms/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms/tutorial001_an.py!}
+{!> ../../docs_src/request_forms/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_forms/tutorial001.py!}
+{!> ../../docs_src/request_forms/tutorial001.py!}
 ```
 
 ////
@@ -51,7 +51,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/request_forms/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_forms/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -59,7 +59,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_forms/tutorial001_an.py!}
+{!> ../../docs_src/request_forms/tutorial001_an.py!}
 ```
 
 ////
@@ -73,16 +73,16 @@
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/request_forms/tutorial001.py!}
+{!> ../../docs_src/request_forms/tutorial001.py!}
 ```
 
 ////
 
 Например, в одном из способов использования спецификации OAuth2 (называемом "потоком пароля") требуется отправить `username` и `password` в виде полей формы.
 
-Данный способ требует отправку данных для авторизации посредством формы (а не JSON) и обязательного наличия в форме строго именованных полей  `username` и `password`.
+Данный способ требует отправку данных для авторизации посредством формы (а не JSON) и обязательного наличия в форме строго именованных полей `username` и `password`.
 
-Вы можете настроить `Form` точно так же, как настраиваете и  `Body` ( `Query`, `Path`, `Cookie`), включая валидации, примеры, псевдонимы (например, `user-name` вместо `username`) и т.д.
+Вы можете настроить `Form` точно так же, как настраиваете и `Body` ( `Query`, `Path`, `Cookie`), включая валидации, примеры, псевдонимы (например, `user-name` вместо `username`) и т.д.
 
 /// info | "Дополнительная информация"
 
@@ -114,7 +114,7 @@
 
 /// warning | "Предупреждение"
 
-Вы можете объявлять несколько параметров `Form` в *операции пути*, но вы не можете одновременно с этим объявлять поля `Body`, которые вы ожидаете получить в виде JSON, так как запрос будет иметь тело, закодированное с использованием `application/x-www-form-urlencoded`, а не `application/json`.
+Вы можете объявлять несколько параметров `Form` в _операции пути_, но вы не можете одновременно с этим объявлять поля `Body`, которые вы ожидаете получить в виде JSON, так как запрос будет иметь тело, закодированное с использованием `application/x-www-form-urlencoded`, а не `application/json`.
 
 Это не ограничение **ReadyAPI**, это часть протокола HTTP.
 

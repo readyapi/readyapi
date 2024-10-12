@@ -3,7 +3,7 @@
 Você pode declarar os "parâmetros" ou "variáveis" com a mesma sintaxe utilizada pelo formato de strings do Python:
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/path_params/tutorial001.py!}
+{!../../docs_src/path_params/tutorial001.py!}
 ```
 
 O valor do parâmetro que foi passado à `item_id` será passado para a sua função como o argumento `item_id`.
@@ -19,18 +19,16 @@ Então, se você rodar este exemplo e for até <a href="http://127.0.0.1:8000/it
 Você pode declarar o tipo de um parâmetro na função usando as anotações padrões do Python:
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params/tutorial002.py!}
+{!../../docs_src/path_params/tutorial002.py!}
 ```
 
 Nesse caso, `item_id` está sendo declarado como um `int`.
 
 /// check | "Verifique"
 
-
-
 ///
 
-	Isso vai dar à você suporte do seu editor dentro das funções, com verificações de erros, autocompletar, etc.
+    Isso vai dar à você suporte do seu editor dentro das funções, com verificações de erros, autocompletar, etc.
 
 ## Conversão de <abbr title="também conhecido como: serialização, parsing, marshalling">dados</abbr>
 
@@ -42,13 +40,11 @@ Se você rodar esse exemplo e abrir o seu navegador em <a href="http://127.0.0.1
 
 /// check | "Verifique"
 
-
-
 ///
 
-	Observe que o valor recebido pela função (e também retornado por ela) é `3`, como um Python `int`, não como uma string `"3"`.
+    Observe que o valor recebido pela função (e também retornado por ela) é `3`, como um Python `int`, não como uma string `"3"`.
 
-	Então, com essa declaração de tipo, o **ReadyAPI** dá pra você um <abbr title="convertendo a string que veio do request HTTP em um dado Python">"parsing"</abbr> automático no request .
+    Então, com essa declaração de tipo, o **ReadyAPI** dá pra você um <abbr title="convertendo a string que veio do request HTTP em um dado Python">"parsing"</abbr> automático no request .
 
 ## Validação de dados
 
@@ -75,15 +71,13 @@ O mesmo erro apareceria se você tivesse fornecido um `float` ao invés de um `i
 
 /// check | "Verifique"
 
-
-
 ///
 
-	Então, com a mesma declaração de tipo do Python, o **ReadyAPI** dá pra você validação de dados.
+    Então, com a mesma declaração de tipo do Python, o **ReadyAPI** dá pra você validação de dados.
 
-	Observe que o erro também mostra claramente o ponto exato onde a validação não passou.
+    Observe que o erro também mostra claramente o ponto exato onde a validação não passou.
 
-	Isso é incrivelmente útil enquanto se desenvolve e debuga o código que interage com a sua API.
+    Isso é incrivelmente útil enquanto se desenvolve e debuga o código que interage com a sua API.
 
 ## Documentação
 
@@ -93,13 +87,11 @@ Quando você abrir o seu navegador em <a href="http://127.0.0.1:8000/docs" class
 
 /// check | "Verifique"
 
-
-
 ///
 
-	Novamente, apenas com a mesma declaração de tipo do Python, o **ReadyAPI** te dá de forma automática e interativa a documentação (integrada com o Swagger UI).
+    Novamente, apenas com a mesma declaração de tipo do Python, o **ReadyAPI** te dá de forma automática e interativa a documentação (integrada com o Swagger UI).
 
-	Veja que o parâmetro de rota está declarado como sendo um inteiro (int).
+    Veja que o parâmetro de rota está declarado como sendo um inteiro (int).
 
 ## Beneficios baseados em padrões, documentação alternativa
 
@@ -130,7 +122,7 @@ E então você pode ter também uma rota `/users/{user_id}` para pegar dados sob
 Porque as operações de rota são avaliadas em ordem, você precisa ter certeza que a rota para `/users/me` está sendo declarado antes da rota `/users/{user_id}`:
 
 ```Python hl_lines="6  11"
-{!../../../docs_src/path_params/tutorial003.py!}
+{!../../docs_src/path_params/tutorial003.py!}
 ```
 
 Caso contrário, a rota para `/users/{user_id}` coincidiria também para `/users/me`, "pensando" que estaria recebendo o parâmetro `user_id` com o valor de `"me"`.
@@ -148,7 +140,7 @@ Por herdar de `str` a documentação da API vai ser capaz de saber que os valore
 Assim, crie atributos de classe com valores fixos, que serão os valores válidos disponíveis.
 
 ```Python hl_lines="1  6-9"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// info | "informação"
@@ -159,18 +151,16 @@ Assim, crie atributos de classe com valores fixos, que serão os valores válido
 
 /// tip | "Dica"
 
-
-
 ///
 
-	Se você está se perguntando, "AlexNet", "ResNet", e "LeNet" são apenas nomes de <abbr title="técnicamente, modelos de arquitetura de Deep Learning">modelos</abbr> de Machine Learning (aprendizado de máquina).
+    Se você está se perguntando, "AlexNet", "ResNet", e "LeNet" são apenas nomes de <abbr title="técnicamente, modelos de arquitetura de Deep Learning">modelos</abbr> de Machine Learning (aprendizado de máquina).
 
-### Declare um *parâmetro de rota*
+### Declare um _parâmetro de rota_
 
-Logo, crie um *parâmetro de rota* com anotações de tipo usando a classe enum que você criou (`ModelName`):
+Logo, crie um _parâmetro de rota_ com anotações de tipo usando a classe enum que você criou (`ModelName`):
 
 ```Python hl_lines="16"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 ### Revise a documentação
@@ -179,42 +169,40 @@ Visto que os valores disponíveis para o parâmetro da rota estão predefinidos,
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Trabalhando com os *enumeration* do Python
+### Trabalhando com os _enumeration_ do Python
 
-O valor do *parâmetro da rota* será um *membro de enumeration*.
+O valor do _parâmetro da rota_ será um _membro de enumeration_.
 
-#### Compare *membros de enumeration*
+#### Compare _membros de enumeration_
 
-Você pode comparar eles com o *membro de enumeration* no enum `ModelName` que você criou:
+Você pode comparar eles com o _membro de enumeration_ no enum `ModelName` que você criou:
 
 ```Python hl_lines="17"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### Obtenha o *valor de enumerate*
+#### Obtenha o _valor de enumerate_
 
 Você pode ter o valor exato de enumerate (um `str` nesse caso) usando `model_name.value`, ou em geral, `your_enum_member.value`:
 
 ```Python hl_lines="20"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// tip | "Dica"
 
-
-
 ///
 
-	Você também poderia acessar o valor `"lenet"` com `ModelName.lenet.value`
+    Você também poderia acessar o valor `"lenet"` com `ModelName.lenet.value`
 
-#### Retorne *membros de enumeration*
+#### Retorne _membros de enumeration_
 
-Você pode retornar *membros de enum* da sua *rota de operação*, em um corpo JSON aninhado (por exemplo um `dict`).
+Você pode retornar _membros de enum_ da sua _rota de operação_, em um corpo JSON aninhado (por exemplo um `dict`).
 
 Eles serão convertidos para o seus valores correspondentes (strings nesse caso) antes de serem retornados ao cliente:
 
 ```Python hl_lines="18  21  23"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 No seu cliente você vai obter uma resposta JSON como:
@@ -228,15 +216,15 @@ No seu cliente você vai obter uma resposta JSON como:
 
 ## Parâmetros de rota que contém caminhos
 
-Digamos que você tenha uma *operação de rota* com uma rota `/files/{file_path}`.
+Digamos que você tenha uma _operação de rota_ com uma rota `/files/{file_path}`.
 
-Mas você precisa que o próprio `file_path` contenha uma *rota*, como `home/johndoe/myfile.txt`.
+Mas você precisa que o próprio `file_path` contenha uma _rota_, como `home/johndoe/myfile.txt`.
 
 Então, a URL para este arquivo deveria ser algo como: `/files/home/johndoe/myfile.txt`.
 
 ### Suporte do OpenAPI
 
-O OpenAPI não suporta uma maneira de declarar um *parâmetro de rota* que contenha uma *rota* dentro, dado que isso poderia levar a cenários que são difíceis de testar e definir.
+O OpenAPI não suporta uma maneira de declarar um _parâmetro de rota_ que contenha uma _rota_ dentro, dado que isso poderia levar a cenários que são difíceis de testar e definir.
 
 No entanto, você pode fazer isso no **ReadyAPI**, usando uma das ferramentas internas do Starlette.
 
@@ -244,39 +232,36 @@ A documentação continuaria funcionando, ainda que não adicionaria nenhuma inf
 
 ### Conversor de rota
 
-Usando uma opção direta do Starlette você pode declarar um *parâmetro de rota* contendo uma *rota* usando uma URL como:
+Usando uma opção direta do Starlette você pode declarar um _parâmetro de rota_ contendo uma _rota_ usando uma URL como:
 
 ```
 /files/{file_path:path}
 ```
 
-Nesse caso, o nome do parâmetro é `file_path`, e a última parte, `:path`, diz que o parâmetro deveria coincidir com qualquer *rota*.
+Nesse caso, o nome do parâmetro é `file_path`, e a última parte, `:path`, diz que o parâmetro deveria coincidir com qualquer _rota_.
 
 Então, você poderia usar ele com:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_params/tutorial004.py!}
+{!../../docs_src/path_params/tutorial004.py!}
 ```
 
 /// tip | "Dica"
 
-
-
 ///
 
-	Você poderia precisar que o parâmetro contivesse `/home/johndoe/myfile.txt`, com uma barra no inicio (`/`).
+    Você poderia precisar que o parâmetro contivesse `/home/johndoe/myfile.txt`, com uma barra no inicio (`/`).
 
-	Neste caso, a URL deveria ser: `/files//home/johndoe/myfile.txt`, com barra dupla (`//`) entre `files` e `home`.
-
+    Neste caso, a URL deveria ser: `/files//home/johndoe/myfile.txt`, com barra dupla (`//`) entre `files` e `home`.
 
 ## Recapitulando
 
 Com o **ReadyAPI**, usando as declarações de tipo do Python, você obtém:
 
-* Suporte no editor: verificação de erros, e opção de autocompletar, etc.
-* "<abbr title="convertendo uma string que vem de um request HTTP em dado Python">Parsing</abbr>" de dados
-* Validação de dados
-* Anotação da API e documentação automática
+- Suporte no editor: verificação de erros, e opção de autocompletar, etc.
+- "<abbr title="convertendo uma string que vem de um request HTTP em dado Python">Parsing</abbr>" de dados
+- Validação de dados
+- Anotação da API e documentação automática
 
 Você apenas tem que declará-los uma vez.
 

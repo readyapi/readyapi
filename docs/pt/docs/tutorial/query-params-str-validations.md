@@ -5,7 +5,7 @@ O **ReadyAPI** permite que você declare informações adicionais e validações
 Vamos utilizar essa aplicação como exemplo:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial001.py!}
+{!../../docs_src/query_params_str_validations/tutorial001.py!}
 ```
 
 O parâmetro de consulta `q` é do tipo `Union[str, None]`, o que significa que é do tipo `str` mas que também pode ser `None`, e de fato, o valor padrão é `None`, então o ReadyAPI saberá que não é obrigatório.
@@ -27,7 +27,7 @@ Nós iremos forçar que mesmo o parâmetro `q` seja opcional, sempre que informa
 Para isso, primeiro importe `Query` de `readyapi`:
 
 ```Python hl_lines="3"
-{!../../../docs_src/query_params_str_validations/tutorial002.py!}
+{!../../docs_src/query_params_str_validations/tutorial002.py!}
 ```
 
 ## Use `Query` como o valor padrão
@@ -35,7 +35,7 @@ Para isso, primeiro importe `Query` de `readyapi`:
 Agora utilize-o como valor padrão do seu parâmetro, definindo o parâmetro `max_length` para 50:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial002.py!}
+{!../../docs_src/query_params_str_validations/tutorial002.py!}
 ```
 
 Note que substituímos o valor padrão de `None` para `Query(default=None)`, o primeiro parâmetro de `Query` serve para o mesmo propósito: definir o valor padrão do parâmetro.
@@ -80,14 +80,14 @@ Então, podemos passar mais parâmetros para `Query`. Neste caso, o parâmetro `
 q: str = Query(default=None, max_length=50)
 ```
 
-Isso irá validar os dados, mostrar um erro claro quando os dados forem inválidos, e documentar o parâmetro na *operação de rota* do esquema OpenAPI..
+Isso irá validar os dados, mostrar um erro claro quando os dados forem inválidos, e documentar o parâmetro na _operação de rota_ do esquema OpenAPI..
 
 ## Adicionando mais validações
 
 Você também pode incluir um parâmetro `min_length`:
 
 ```Python hl_lines="10"
-{!../../../docs_src/query_params_str_validations/tutorial003.py!}
+{!../../docs_src/query_params_str_validations/tutorial003.py!}
 ```
 
 ## Adicionando expressões regulares
@@ -95,14 +95,14 @@ Você também pode incluir um parâmetro `min_length`:
 Você pode definir uma <abbr title="Uma expressão regular, regex ou regexp é uma sequência de caracteres que define um parâmetro de busca para textos.">expressão regular</abbr> que combine com um padrão esperado pelo parâmetro:
 
 ```Python hl_lines="11"
-{!../../../docs_src/query_params_str_validations/tutorial004.py!}
+{!../../docs_src/query_params_str_validations/tutorial004.py!}
 ```
 
 Essa expressão regular específica verifica se o valor recebido no parâmetro:
 
-* `^`: Inicia com os seguintes caracteres, ou seja, não contém caracteres anteriores.
-* `fixedquery`: contém o valor exato `fixedquery`.
-* `$`: termina aqui, não contém nenhum caractere após `fixedquery`.
+- `^`: Inicia com os seguintes caracteres, ou seja, não contém caracteres anteriores.
+- `fixedquery`: contém o valor exato `fixedquery`.
+- `$`: termina aqui, não contém nenhum caractere após `fixedquery`.
 
 Se você se sente perdido com todo esse assunto de **"expressão regular"**, não se preocupe. Esse é um assunto complicado para a maioria das pessoas. Você ainda pode fazer muitas coisas sem utilizar expressões regulares.
 
@@ -115,7 +115,7 @@ Da mesma maneira que você utiliza `None` como o primeiro argumento para ser uti
 Vamos dizer que você queira que o parâmetro de consulta `q` tenha um `min_length` de `3`, e um valor padrão de `"fixedquery"`, então declararíamos assim:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial005.py!}
+{!../../docs_src/query_params_str_validations/tutorial005.py!}
 ```
 
 /// note | "Observação"
@@ -147,7 +147,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 Então, quando você precisa declarar um parâmetro obrigatório utilizando o `Query`, você pode utilizar `...` como o primeiro argumento:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial006.py!}
+{!../../docs_src/query_params_str_validations/tutorial006.py!}
 ```
 
 /// info | "Informação"
@@ -165,7 +165,7 @@ Quando você declara explicitamente um parâmetro com `Query` você pode declar�
 Por exemplo, para declarar que o parâmetro `q` pode aparecer diversas vezes na URL, você escreveria:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial011.py!}
+{!../../docs_src/query_params_str_validations/tutorial011.py!}
 ```
 
 Então, com uma URL assim:
@@ -174,7 +174,7 @@ Então, com uma URL assim:
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-você receberá os múltiplos *parâmetros de consulta* `q` com os valores (`foo` e `bar`) em uma lista (`list`) Python dentro da *função de operação de rota*, no *parâmetro da função* `q`.
+você receberá os múltiplos _parâmetros de consulta_ `q` com os valores (`foo` e `bar`) em uma lista (`list`) Python dentro da _função de operação de rota_, no _parâmetro da função_ `q`.
 
 Assim, a resposta para essa URL seria:
 
@@ -202,7 +202,7 @@ A documentação interativa da API irá atualizar de acordo, permitindo múltipl
 E você também pode definir uma lista (`list`) de valores padrão caso nenhum seja informado:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial012.py!}
+{!../../docs_src/query_params_str_validations/tutorial012.py!}
 ```
 
 Se você for até:
@@ -227,7 +227,7 @@ O valor padrão de `q` será: `["foo", "bar"]` e sua resposta será:
 Você também pode utilizar o tipo `list` diretamente em vez de `List[str]`:
 
 ```Python hl_lines="7"
-{!../../../docs_src/query_params_str_validations/tutorial013.py!}
+{!../../docs_src/query_params_str_validations/tutorial013.py!}
 ```
 
 /// note | "Observação"
@@ -255,13 +255,13 @@ Algumas delas não exibem todas as informações extras que declaramos, ainda qu
 Você pode adicionar um `title`:
 
 ```Python hl_lines="10"
-{!../../../docs_src/query_params_str_validations/tutorial007.py!}
+{!../../docs_src/query_params_str_validations/tutorial007.py!}
 ```
 
 E uma `description`:
 
 ```Python hl_lines="13"
-{!../../../docs_src/query_params_str_validations/tutorial008.py!}
+{!../../docs_src/query_params_str_validations/tutorial008.py!}
 ```
 
 ## Apelidos (alias) de parâmetros
@@ -283,7 +283,7 @@ Mas ainda você precisa que o nome seja exatamente `item-query`...
 Então você pode declarar um `alias`, e esse apelido (alias) que será utilizado para encontrar o valor do parâmetro:
 
 ```Python hl_lines="9"
-{!../../../docs_src/query_params_str_validations/tutorial009.py!}
+{!../../docs_src/query_params_str_validations/tutorial009.py!}
 ```
 
 ## Parâmetros descontinuados
@@ -295,7 +295,7 @@ Você tem que deixá-lo ativo por um tempo, já que existem clientes o utilizand
 Então você passa o parâmetro `deprecated=True` para `Query`:
 
 ```Python hl_lines="18"
-{!../../../docs_src/query_params_str_validations/tutorial010.py!}
+{!../../docs_src/query_params_str_validations/tutorial010.py!}
 ```
 
 Na documentação aparecerá assim:
@@ -308,16 +308,16 @@ Você pode adicionar validações e metadados adicionais aos seus parâmetros.
 
 Validações genéricas e metadados:
 
-* `alias`
-* `title`
-* `description`
-* `deprecated`
+- `alias`
+- `title`
+- `description`
+- `deprecated`
 
 Validações específicas para textos:
 
-* `min_length`
-* `max_length`
-* `regex`
+- `min_length`
+- `max_length`
+- `regex`
 
 Nesses exemplos você viu como declarar validações em valores do tipo `str`.
 

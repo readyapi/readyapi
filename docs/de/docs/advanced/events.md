@@ -24,23 +24,23 @@ Das wollen wir besser machen: Laden wir das Modell, bevor die Requests bearbeite
 
 ## Lifespan
 
-Sie können diese Logik beim *Hochfahren* und *Herunterfahren* mithilfe des `lifespan`-Parameters der `ReadyAPI`-App und eines „Kontextmanagers“ definieren (ich zeige Ihnen gleich, was das ist).
+Sie können diese Logik beim _Hochfahren_ und _Herunterfahren_ mithilfe des `lifespan`-Parameters der `ReadyAPI`-App und eines „Kontextmanagers“ definieren (ich zeige Ihnen gleich, was das ist).
 
 Beginnen wir mit einem Beispiel und sehen es uns dann im Detail an.
 
 Wir erstellen eine asynchrone Funktion `lifespan()` mit `yield` wie folgt:
 
 ```Python hl_lines="16  19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
-Hier simulieren wir das langsame *Hochfahren*, das Laden des Modells, indem wir die (Fake-)Modellfunktion vor dem `yield` in das Dictionary mit Modellen für maschinelles Lernen einfügen. Dieser Code wird ausgeführt, **bevor** die Anwendung **beginnt, Requests entgegenzunehmen**, während des *Hochfahrens*.
+Hier simulieren wir das langsame _Hochfahren_, das Laden des Modells, indem wir die (Fake-)Modellfunktion vor dem `yield` in das Dictionary mit Modellen für maschinelles Lernen einfügen. Dieser Code wird ausgeführt, **bevor** die Anwendung **beginnt, Requests entgegenzunehmen**, während des _Hochfahrens_.
 
-Und dann, direkt nach dem `yield`, entladen wir das Modell. Dieser Code wird unmittelbar vor dem *Herunterfahren* ausgeführt, **nachdem** die Anwendung **die Bearbeitung von Requests abgeschlossen hat**. Dadurch könnten beispielsweise Ressourcen wie Arbeitsspeicher oder eine GPU freigegeben werden.
+Und dann, direkt nach dem `yield`, entladen wir das Modell. Dieser Code wird unmittelbar vor dem _Herunterfahren_ ausgeführt, **nachdem** die Anwendung **die Bearbeitung von Requests abgeschlossen hat**. Dadurch könnten beispielsweise Ressourcen wie Arbeitsspeicher oder eine GPU freigegeben werden.
 
 /// tip | "Tipp"
 
-Das *Herunterfahren* würde erfolgen, wenn Sie die Anwendung **stoppen**.
+Das _Herunterfahren_ würde erfolgen, wenn Sie die Anwendung **stoppen**.
 
 Möglicherweise müssen Sie eine neue Version starten, oder Sie haben es einfach satt, sie auszuführen. 🤷
 
@@ -51,7 +51,7 @@ Möglicherweise müssen Sie eine neue Version starten, oder Sie haben es einfach
 Das Erste, was auffällt, ist, dass wir eine asynchrone Funktion mit `yield` definieren. Das ist sehr ähnlich zu Abhängigkeiten mit `yield`.
 
 ```Python hl_lines="14-19"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 Der erste Teil der Funktion, vor dem `yield`, wird ausgeführt **bevor** die Anwendung startet.
@@ -65,7 +65,7 @@ Wie Sie sehen, ist die Funktion mit einem `@asynccontextmanager` versehen.
 Dadurch wird die Funktion in einen sogenannten „**asynchronen Kontextmanager**“ umgewandelt.
 
 ```Python hl_lines="1  13"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 Ein **Kontextmanager** in Python ist etwas, das Sie in einer `with`-Anweisung verwenden können, zum Beispiel kann `open()` als Kontextmanager verwendet werden:
@@ -89,20 +89,20 @@ In unserem obigen Codebeispiel verwenden wir ihn nicht direkt, sondern übergebe
 Der Parameter `lifespan` der `ReadyAPI`-App benötigt einen **asynchronen Kontextmanager**, wir können ihm also unseren neuen asynchronen Kontextmanager `lifespan` übergeben.
 
 ```Python hl_lines="22"
-{!../../../docs_src/events/tutorial003.py!}
+{!../../docs_src/events/tutorial003.py!}
 ```
 
 ## Alternative Events (deprecated)
 
 /// warning | "Achtung"
 
-Der empfohlene Weg, das *Hochfahren* und *Herunterfahren* zu handhaben, ist die Verwendung des `lifespan`-Parameters der `ReadyAPI`-App, wie oben beschrieben. Wenn Sie einen `lifespan`-Parameter übergeben, werden die `startup`- und `shutdown`-Eventhandler nicht mehr aufgerufen. Es ist entweder alles `lifespan` oder alles Events, nicht beides.
+Der empfohlene Weg, das _Hochfahren_ und _Herunterfahren_ zu handhaben, ist die Verwendung des `lifespan`-Parameters der `ReadyAPI`-App, wie oben beschrieben. Wenn Sie einen `lifespan`-Parameter übergeben, werden die `startup`- und `shutdown`-Eventhandler nicht mehr aufgerufen. Es ist entweder alles `lifespan` oder alles Events, nicht beides.
 
 Sie können diesen Teil wahrscheinlich überspringen.
 
 ///
 
-Es gibt eine alternative Möglichkeit, diese Logik zu definieren, sodass sie beim *Hochfahren* und beim *Herunterfahren* ausgeführt wird.
+Es gibt eine alternative Möglichkeit, diese Logik zu definieren, sodass sie beim _Hochfahren_ und beim _Herunterfahren_ ausgeführt wird.
 
 Sie können <abbr title="Eventhandler – Ereignisbehandler: Funktion, die bei jedem Eintreten eines bestimmten Ereignisses ausgeführt wird">Eventhandler</abbr> (Funktionen) definieren, die ausgeführt werden sollen, bevor die Anwendung hochgefahren wird oder wenn die Anwendung heruntergefahren wird.
 
@@ -113,7 +113,7 @@ Diese Funktionen können mit `async def` oder normalem `def` deklariert werden.
 Um eine Funktion hinzuzufügen, die vor dem Start der Anwendung ausgeführt werden soll, deklarieren Sie diese mit dem Event `startup`:
 
 ```Python hl_lines="8"
-{!../../../docs_src/events/tutorial001.py!}
+{!../../docs_src/events/tutorial001.py!}
 ```
 
 In diesem Fall initialisiert die Eventhandler-Funktion `startup` die „Datenbank“ der Items (nur ein `dict`) mit einigen Werten.
@@ -127,7 +127,7 @@ Und Ihre Anwendung empfängt erst dann Anfragen, wenn alle `startup`-Eventhandle
 Um eine Funktion hinzuzufügen, die beim Herunterfahren der Anwendung ausgeführt werden soll, deklarieren Sie sie mit dem Event `shutdown`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/events/tutorial002.py!}
+{!../../docs_src/events/tutorial002.py!}
 ```
 
 Hier schreibt die `shutdown`-Eventhandler-Funktion eine Textzeile `"Application shutdown"` in eine Datei `log.txt`.
@@ -152,7 +152,7 @@ Daher deklarieren wir die Eventhandler-Funktion mit Standard-`def` statt mit `as
 
 ### `startup` und `shutdown` zusammen
 
-Es besteht eine hohe Wahrscheinlichkeit, dass die Logik für Ihr *Hochfahren* und *Herunterfahren* miteinander verknüpft ist. Vielleicht möchten Sie etwas beginnen und es dann beenden, eine Ressource laden und sie dann freigeben usw.
+Es besteht eine hohe Wahrscheinlichkeit, dass die Logik für Ihr _Hochfahren_ und _Herunterfahren_ miteinander verknüpft ist. Vielleicht möchten Sie etwas beginnen und es dann beenden, eine Ressource laden und sie dann freigeben usw.
 
 Bei getrennten Funktionen, die keine gemeinsame Logik oder Variablen haben, ist dies schwieriger, da Sie Werte in globalen Variablen speichern oder ähnliche Tricks verwenden müssen.
 
@@ -174,4 +174,4 @@ Einschließlich, wie man Lifespan-Zustand handhabt, der in anderen Bereichen Ihr
 
 ## Unteranwendungen
 
-🚨 Beachten Sie, dass diese Lifespan-Events (Hochfahren und Herunterfahren) nur für die Hauptanwendung ausgeführt werden, nicht für [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=_blank}.
+🚨 Beachten Sie, dass diese Lifespan-Events (Hochfahren und Herunterfahren) nur für die Hauptanwendung ausgeführt werden, nicht für [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=\_blank}.

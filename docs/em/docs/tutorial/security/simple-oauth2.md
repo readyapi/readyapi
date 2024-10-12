@@ -14,7 +14,7 @@ Oauth2️⃣ ✔ 👈 🕐❔ ⚙️ "🔐 💧" (👈 👥 ⚙️) 👩‍💻/
 
 &amp; 👆 💽 🏷 💪 ⚙️ 🙆 🎏 📛 👆 💚.
 
-✋️ 💳 *➡ 🛠️*, 👥 💪 ⚙️ 👉 📛 🔗 ⏮️ 🔌 (&amp; 💪, 🖼, ⚙️ 🛠️ 🛠️ 🧾 ⚙️).
+✋️ 💳 _➡ 🛠️_, 👥 💪 ⚙️ 👉 📛 🔗 ⏮️ 🔌 (&amp; 💪, 🖼, ⚙️ 🛠️ 🛠️ 🧾 ⚙️).
 
 🔌 🇵🇸 👈 `username` &amp; `password` 🔜 📨 📨 💽 (, 🙅‍♂ 🎻 📥).
 
@@ -28,9 +28,9 @@ Oauth2️⃣ ✔ 👈 🕐❔ ⚙️ "🔐 💧" (👈 👥 ⚙️) 👩‍💻/
 
 👫 🛎 ⚙️ 📣 🎯 💂‍♂ ✔, 🖼:
 
-* `users:read` ⚖️ `users:write` ⚠ 🖼.
-* `instagram_basic` ⚙️ 👱📔 / 👱📔.
-* `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
+- `users:read` ⚖️ `users:write` ⚠ 🖼.
+- `instagram_basic` ⚙️ 👱📔 / 👱📔.
+- `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
 
 /// info
 
@@ -50,12 +50,12 @@ Oauth2️⃣ 👫 🎻.
 
 ### `OAuth2PasswordRequestForm`
 
-🥇, 🗄 `OAuth2PasswordRequestForm`, &amp; ⚙️ ⚫️ 🔗 ⏮️ `Depends` *➡ 🛠️* `/token`:
+🥇, 🗄 `OAuth2PasswordRequestForm`, &amp; ⚙️ ⚫️ 🔗 ⏮️ `Depends` _➡ 🛠️_ `/token`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="4  76"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -63,28 +63,28 @@ Oauth2️⃣ 👫 🎻.
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="2  74"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
 
 `OAuth2PasswordRequestForm` 🎓 🔗 👈 📣 📨 💪 ⏮️:
 
-*  `username`.
-*  `password`.
-* 📦 `scope` 🏑 🦏 🎻, ✍ 🎻 🎏 🚀.
-* 📦 `grant_type`.
+- `username`.
+- `password`.
+- 📦 `scope` 🏑 🦏 🎻, ✍ 🎻 🎏 🚀.
+- 📦 `grant_type`.
 
 /// tip
 
-Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋️ `OAuth2PasswordRequestForm` 🚫 🛠️ ⚫️.
+Oauth2️⃣ 🔌 🤙 _🚚_ 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋️ `OAuth2PasswordRequestForm` 🚫 🛠️ ⚫️.
 
 🚥 👆 💪 🛠️ ⚫️, ⚙️ `OAuth2PasswordRequestFormStrict` ↩️ `OAuth2PasswordRequestForm`.
 
 ///
 
-* 📦 `client_id` (👥 🚫 💪 ⚫️ 👆 🖼).
-* 📦 `client_secret` (👥 🚫 💪 ⚫️ 👆 🖼).
+- 📦 `client_id` (👥 🚫 💪 ⚫️ 👆 🖼).
+- 📦 `client_secret` (👥 🚫 💪 ⚫️ 👆 🖼).
 
 /// info
 
@@ -117,7 +117,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="3  77-79"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -125,7 +125,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="1  75-77"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -157,7 +157,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="80-83"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -165,7 +165,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="78-81"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -174,7 +174,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 
 `UserInDB(**user_dict)` ⛓:
 
-*🚶‍♀️ 🔑 &amp; 💲 `user_dict` 🔗 🔑-💲 ❌, 🌓:*
+_🚶‍♀️ 🔑 &amp; 💲 `user_dict` 🔗 🔑-💲 ❌, 🌓:_
 
 ```Python
 UserInDB(
@@ -188,7 +188,7 @@ UserInDB(
 
 /// info
 
-🌅 🏁 🔑 `**👩‍💻_ #️⃣ ` ✅ 🔙 [🧾 **➕ 🏷**](../extra-models.md#user_indict){.internal-link target=_blank}.
+🌅 🏁 🔑 `**👩‍💻_ #️⃣ ` ✅ 🔙 [🧾 **➕ 🏷**](../extra-models.md#user_indict){.internal-link target=\_blank}.
 
 ///
 
@@ -213,7 +213,7 @@ UserInDB(
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="85"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -221,7 +221,7 @@ UserInDB(
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="83"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////
@@ -242,7 +242,7 @@ UserInDB(
 
 🔜 👥 🔜 ℹ 👆 🔗.
 
-👥 💚 🤚 `current_user` *🕴* 🚥 👉 👩‍💻 🦁.
+👥 💚 🤚 `current_user` _🕴_ 🚥 👉 👩‍💻 🦁.
 
 , 👥 ✍ 🌖 🔗 `get_current_active_user` 👈 🔄 ⚙️ `get_current_user` 🔗.
 
@@ -253,7 +253,7 @@ UserInDB(
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="58-66  69-72  90"
-{!> ../../../docs_src/security/tutorial003.py!}
+{!> ../../docs_src/security/tutorial003.py!}
 ```
 
 ////
@@ -261,7 +261,7 @@ UserInDB(
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="55-64  67-70  88"
-{!> ../../../docs_src/security/tutorial003_py310.py!}
+{!> ../../docs_src/security/tutorial003_py310.py!}
 ```
 
 ////

@@ -18,10 +18,10 @@ API 的用户 （外部开发者）要在您的 API 内使用 POST 请求创建�
 
 （假设）您的 API 将：
 
-* 把发票发送至外部开发者的消费者
-* 归集现金
-* 把通知发送至 API 的用户（外部开发者）
-    * 通过（从您的 API）发送 POST 请求至外部 API （即**回调**）来完成
+- 把发票发送至外部开发者的消费者
+- 归集现金
+- 把通知发送至 API 的用户（外部开发者）
+  - 通过（从您的 API）发送 POST 请求至外部 API （即**回调**）来完成
 
 ## 常规 **ReadyAPI** 应用
 
@@ -32,7 +32,7 @@ API 的用户 （外部开发者）要在您的 API 内使用 POST 请求创建�
 这部分代码很常规，您对绝大多数代码应该都比较熟悉了：
 
 ```Python hl_lines="10-14  37-54"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 /// tip | "提示"
@@ -93,7 +93,7 @@ requests.post(callback_url, json={"description": "Invoice paid", "paid": True})
 首先，新建包含一些用于回调的 `APIRouter`。
 
 ```Python hl_lines="5  26"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 ### 创建回调*路径操作*
@@ -102,21 +102,21 @@ requests.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 它看起来和常规 ReadyAPI *路径操作*差不多：
 
-* 声明要接收的请求体，例如，`body: InvoiceEvent`
-* 还要声明要返回的响应，例如，`response_model=InvoiceEventReceived`
+- 声明要接收的请求体，例如，`body: InvoiceEvent`
+- 还要声明要返回的响应，例如，`response_model=InvoiceEventReceived`
 
 ```Python hl_lines="17-19  22-23  29-33"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 回调*路径操作*与常规*路径操作*有两点主要区别：
 
-* 它不需要任何实际的代码，因为应用不会调用这段代码。它只是用于存档*外部 API*。因此，函数的内容只需要 `pass` 就可以了
-* *路径*可以包含 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">OpenAPI 3 表达式</a>（详见下文），可以使用带参数的变量，以及发送至您的 API 的原始请求的部分
+- 它不需要任何实际的代码，因为应用不会调用这段代码。它只是用于存档*外部 API*。因此，函数的内容只需要 `pass` 就可以了
+- *路径*可以包含 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">OpenAPI 3 表达式</a>（详见下文），可以使用带参数的变量，以及发送至您的 API 的原始请求的部分
 
 ### 回调路径表达式
 
-回调*路径*支持包含发送给您的 API 的原始请求的部分的  <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">OpenAPI 3 表达式</a>。
+回调*路径*支持包含发送给您的 API 的原始请求的部分的 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">OpenAPI 3 表达式</a>。
 
 本例中是**字符串**：
 
@@ -165,7 +165,7 @@ JSON 请求体包含如下内容：
 
 /// tip | "提示"
 
-注意，回调 URL包含 `callback_url` （`https://www.external.org/events`）中的查询参数，还有 JSON 请求体内部的发票 ID（`2expen51ve`）。
+注意，回调 URL 包含 `callback_url` （`https://www.external.org/events`）中的查询参数，还有 JSON 请求体内部的发票 ID（`2expen51ve`）。
 
 ///
 
@@ -176,7 +176,7 @@ JSON 请求体包含如下内容：
 现在使用 API *路径操作装饰器*的参数 `callbacks`，从回调路由传递属性 `.routes`（实际上只是路由/路径操作的**列表**）：
 
 ```Python hl_lines="36"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 /// tip | "提示"

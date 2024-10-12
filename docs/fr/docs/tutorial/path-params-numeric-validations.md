@@ -9,7 +9,7 @@ Tout d'abord, importez `Path` de `readyapi`, et importez `Annotated` :
 //// tab | Python 3.10+
 
 ```Python hl_lines="1  3"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@ Tout d'abord, importez `Path` de `readyapi`, et importez `Annotated` :
 //// tab | Python 3.9+
 
 ```Python hl_lines="1  3"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@ Tout d'abord, importez `Path` de `readyapi`, et importez `Annotated` :
 //// tab | Python 3.8+
 
 ```Python hl_lines="3-4"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_py310.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_py310.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001.py!}
 ```
 
 ////
@@ -64,7 +64,7 @@ ReadyAPI a ajouté le support pour `Annotated` (et a commencé à le recommander
 
 Si vous avez une version plus ancienne, vous obtiendrez des erreurs en essayant d'utiliser `Annotated`.
 
-Assurez-vous de [Mettre à jour la version de ReadyAPI](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} à la version 0.95.1 à minima avant d'utiliser `Annotated`.
+Assurez-vous de [Mettre à jour la version de ReadyAPI](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=\_blank} à la version 0.95.1 à minima avant d'utiliser `Annotated`.
 
 ///
 
@@ -77,7 +77,7 @@ Par exemple, pour déclarer une valeur de métadonnée `title` pour le paramètr
 //// tab | Python 3.10+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -85,7 +85,7 @@ Par exemple, pour déclarer une valeur de métadonnée `title` pour le paramètr
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -93,7 +93,7 @@ Par exemple, pour déclarer une valeur de métadonnée `title` pour le paramètr
 //// tab | Python 3.8+
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_an.py!}
 ```
 
 ////
@@ -107,7 +107,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001_py310.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001_py310.py!}
 ```
 
 ////
@@ -121,7 +121,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial001.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial001.py!}
 ```
 
 ////
@@ -163,7 +163,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial002.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial002.py!}
 ```
 
 ////
@@ -173,7 +173,7 @@ Mais gardez à l'esprit que si vous utilisez `Annotated`, vous n'aurez pas ce pr
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -181,7 +181,7 @@ Mais gardez à l'esprit que si vous utilisez `Annotated`, vous n'aurez pas ce pr
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial002_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial002_an.py!}
 ```
 
 ////
@@ -198,10 +198,10 @@ Voici une **petite astuce** qui peut être pratique, mais vous n'en aurez pas so
 
 Si vous voulez :
 
-* déclarer le paramètre de requête `q` sans `Query` ni valeur par défaut
-* déclarer le paramètre de chemin `item_id` en utilisant `Path`
-* les avoir dans un ordre différent
-* ne pas utiliser `Annotated`
+- déclarer le paramètre de requête `q` sans `Query` ni valeur par défaut
+- déclarer le paramètre de chemin `item_id` en utilisant `Path`
+- les avoir dans un ordre différent
+- ne pas utiliser `Annotated`
 
 ...Python a une petite syntaxe spéciale pour cela.
 
@@ -210,7 +210,7 @@ Passez `*`, comme premier paramètre de la fonction.
 Python ne fera rien avec ce `*`, mais il saura que tous les paramètres suivants doivent être appelés comme arguments "mots-clés" (paires clé-valeur), également connus sous le nom de <abbr title="De : K-ey W-ord Arg-uments"><code>kwargs</code></abbr>. Même s'ils n'ont pas de valeur par défaut.
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params_numeric_validations/tutorial003.py!}
+{!../../docs_src/path_params_numeric_validations/tutorial003.py!}
 ```
 
 # Avec `Annotated`
@@ -220,7 +220,7 @@ Gardez à l'esprit que si vous utilisez `Annotated`, comme vous n'utilisez pas l
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial003_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ Gardez à l'esprit que si vous utilisez `Annotated`, comme vous n'utilisez pas l
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial003_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial003_an.py!}
 ```
 
 ////
@@ -242,7 +242,7 @@ Ici, avec `ge=1`, `item_id` devra être un nombre entier "`g`reater than or `e`q
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py!}
 ```
 
 ////
@@ -250,7 +250,7 @@ Ici, avec `ge=1`, `item_id` devra être un nombre entier "`g`reater than or `e`q
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004_an.py!}
 ```
 
 ////
@@ -264,7 +264,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004.py!}
 ```
 
 ////
@@ -273,13 +273,13 @@ Prefer to use the `Annotated` version if possible.
 
 La même chose s'applique pour :
 
-* `gt` : `g`reater `t`han
-* `le` : `l`ess than or `e`qual
+- `gt` : `g`reater `t`han
+- `le` : `l`ess than or `e`qual
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py!}
 ```
 
 ////
@@ -287,7 +287,7 @@ La même chose s'applique pour :
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004_an.py!}
 ```
 
 ////
@@ -301,7 +301,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial004.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial004.py!}
 ```
 
 ////
@@ -310,13 +310,13 @@ Préférez utiliser la version `Annotated` si possible.
 
 La même chose s'applique pour :
 
-* `gt` : `g`reater `t`han
-* `le` : `l`ess than or `e`qual
+- `gt` : `g`reater `t`han
+- `le` : `l`ess than or `e`qual
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial005_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -324,7 +324,7 @@ La même chose s'applique pour :
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial005_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial005_an.py!}
 ```
 
 ////
@@ -338,7 +338,7 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial005.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial005.py!}
 ```
 
 ////
@@ -356,7 +356,7 @@ Et la même chose pour <abbr title="less than"><code>lt</code></abbr>.
 //// tab | Python 3.9+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial006_an_py39.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial006_an_py39.py!}
 ```
 
 ////
@@ -364,7 +364,7 @@ Et la même chose pour <abbr title="less than"><code>lt</code></abbr>.
 //// tab | Python 3.8+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial006_an.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial006_an.py!}
 ```
 
 ////
@@ -378,21 +378,21 @@ Préférez utiliser la version `Annotated` si possible.
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/path_params_numeric_validations/tutorial006.py!}
+{!> ../../docs_src/path_params_numeric_validations/tutorial006.py!}
 ```
 
 ////
 
 ## Pour résumer
 
-Avec `Query`, `Path` (et d'autres que vous verrez plus tard) vous pouvez déclarer des métadonnées et des validations de chaînes de la même manière qu'avec les [Paramètres de requête et validations de chaînes](query-params-str-validations.md){.internal-link target=_blank}.
+Avec `Query`, `Path` (et d'autres que vous verrez plus tard) vous pouvez déclarer des métadonnées et des validations de chaînes de la même manière qu'avec les [Paramètres de requête et validations de chaînes](query-params-str-validations.md){.internal-link target=\_blank}.
 
 Et vous pouvez également déclarer des validations numériques :
 
-* `gt` : `g`reater `t`han
-* `ge` : `g`reater than or `e`qual
-* `lt` : `l`ess `t`han
-* `le` : `l`ess than or `e`qual
+- `gt` : `g`reater `t`han
+- `ge` : `g`reater than or `e`qual
+- `lt` : `l`ess `t`han
+- `le` : `l`ess than or `e`qual
 
 /// info
 

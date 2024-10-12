@@ -20,7 +20,7 @@
 
 `ReadyAPI` 🈸 (👐) ✔️ `.openapi()` 👩‍🔬 👈 📈 📨 🗄 🔗.
 
-🍕 🈸 🎚 🏗, *➡ 🛠️* `/openapi.json` (⚖️ ⚫️❔ 👆 ⚒ 👆 `openapi_url`) ®.
+🍕 🈸 🎚 🏗, _➡ 🛠️_ `/openapi.json` (⚖️ ⚫️❔ 👆 ⚒ 👆 `openapi_url`) ®.
 
 ⚫️ 📨 🎻 📨 ⏮️ 🏁 🈸 `.openapi()` 👩‍🔬.
 
@@ -30,11 +30,11 @@
 
 &amp; 👈 🔢 `get_openapi()` 📨 🔢:
 
-* `title`: 🗄 📛, 🎦 🩺.
-* `version`: ⏬ 👆 🛠️, ✅ `2.5.0`.
-* `openapi_version`: ⏬ 🗄 🔧 ⚙️. 🔢, ⏪: `3.0.2`.
-* `description`: 📛 👆 🛠️.
-* `routes`: 📇 🛣, 👫 🔠 ® *➡ 🛠️*. 👫 ✊ ⚪️➡️ `app.routes`.
+- `title`: 🗄 📛, 🎦 🩺.
+- `version`: ⏬ 👆 🛠️, ✅ `2.5.0`.
+- `openapi_version`: ⏬ 🗄 🔧 ⚙️. 🔢, ⏪: `3.0.2`.
+- `description`: 📛 👆 🛠️.
+- `routes`: 📇 🛣, 👫 🔠 ® _➡ 🛠️_. 👫 ✊ ⚪️➡️ `app.routes`.
 
 ## 🔑 🔢
 
@@ -47,7 +47,7 @@
 🥇, ✍ 🌐 👆 **ReadyAPI** 🈸 🛎:
 
 ```Python hl_lines="1  4  7-9"
-{!../../../docs_src/extending_openapi/tutorial001.py!}
+{!../../docs_src/extending_openapi/tutorial001.py!}
 ```
 
 ### 🏗 🗄 🔗
@@ -55,7 +55,7 @@
 ⤴️, ⚙️ 🎏 🚙 🔢 🏗 🗄 🔗, 🔘 `custom_openapi()` 🔢:
 
 ```Python hl_lines="2  15-20"
-{!../../../docs_src/extending_openapi/tutorial001.py!}
+{!../../docs_src/extending_openapi/tutorial001.py!}
 ```
 
 ### 🔀 🗄 🔗
@@ -63,7 +63,7 @@
 🔜 👆 💪 🚮 📄 ↔, ❎ 🛃 `x-logo` `info` "🎚" 🗄 🔗:
 
 ```Python hl_lines="21-23"
-{!../../../docs_src/extending_openapi/tutorial001.py!}
+{!../../docs_src/extending_openapi/tutorial001.py!}
 ```
 
 ### 💾 🗄 🔗
@@ -75,7 +75,7 @@
 ⚫️ 🔜 🏗 🕴 🕐, &amp; ⤴️ 🎏 💾 🔗 🔜 ⚙️ ⏭ 📨.
 
 ```Python hl_lines="13-14  24-25"
-{!../../../docs_src/extending_openapi/tutorial001.py!}
+{!../../docs_src/extending_openapi/tutorial001.py!}
 ```
 
 ### 🔐 👩‍🔬
@@ -83,7 +83,7 @@
 🔜 👆 💪 ❎ `.openapi()` 👩‍🔬 ⏮️ 👆 🆕 🔢.
 
 ```Python hl_lines="28"
-{!../../../docs_src/extending_openapi/tutorial001.py!}
+{!../../docs_src/extending_openapi/tutorial001.py!}
 ```
 
 ### ✅ ⚫️

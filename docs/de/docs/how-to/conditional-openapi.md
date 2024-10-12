@@ -4,9 +4,9 @@ Bei Bedarf können Sie OpenAPI mithilfe von Einstellungen und Umgebungsvariablen
 
 ## Über Sicherheit, APIs und Dokumentation
 
-Das Verstecken Ihrer Dokumentationsoberflächen in der Produktion *sollte nicht* die Methode sein, Ihre API zu schützen.
+Das Verstecken Ihrer Dokumentationsoberflächen in der Produktion _sollte nicht_ die Methode sein, Ihre API zu schützen.
 
-Dadurch wird Ihrer API keine zusätzliche Sicherheit hinzugefügt, die *Pfadoperationen* sind weiterhin dort verfügbar, wo sie sich befinden.
+Dadurch wird Ihrer API keine zusätzliche Sicherheit hinzugefügt, die _Pfadoperationen_ sind weiterhin dort verfügbar, wo sie sich befinden.
 
 Wenn Ihr Code eine Sicherheitslücke aufweist, ist diese weiterhin vorhanden.
 
@@ -14,12 +14,12 @@ Das Verstecken der Dokumentation macht es nur schwieriger zu verstehen, wie mit 
 
 Wenn Sie Ihre API sichern möchten, gibt es mehrere bessere Dinge, die Sie tun können, zum Beispiel:
 
-* Stellen Sie sicher, dass Sie über gut definierte Pydantic-Modelle für Ihre Requestbodys und Responses verfügen.
-* Konfigurieren Sie alle erforderlichen Berechtigungen und Rollen mithilfe von Abhängigkeiten.
-* Speichern Sie niemals Klartext-Passwörter, sondern nur Passwort-Hashes.
-* Implementieren und verwenden Sie gängige kryptografische Tools wie Passlib und JWT-Tokens, usw.
-* Fügen Sie bei Bedarf detailliertere Berechtigungskontrollen mit OAuth2-Scopes hinzu.
-* ... usw.
+- Stellen Sie sicher, dass Sie über gut definierte Pydantic-Modelle für Ihre Requestbodys und Responses verfügen.
+- Konfigurieren Sie alle erforderlichen Berechtigungen und Rollen mithilfe von Abhängigkeiten.
+- Speichern Sie niemals Klartext-Passwörter, sondern nur Passwort-Hashes.
+- Implementieren und verwenden Sie gängige kryptografische Tools wie Passlib und JWT-Tokens, usw.
+- Fügen Sie bei Bedarf detailliertere Berechtigungskontrollen mit OAuth2-Scopes hinzu.
+- ... usw.
 
 Dennoch kann es sein, dass Sie einen ganz bestimmten Anwendungsfall haben, bei dem Sie die API-Dokumentation für eine bestimmte Umgebung (z. B. für die Produktion) oder abhängig von Konfigurationen aus Umgebungsvariablen wirklich deaktivieren müssen.
 
@@ -30,7 +30,7 @@ Sie können problemlos dieselben Pydantic-Einstellungen verwenden, um Ihre gener
 Zum Beispiel:
 
 ```Python hl_lines="6  11"
-{!../../../docs_src/conditional_openapi/tutorial001.py!}
+{!../../docs_src/conditional_openapi/tutorial001.py!}
 ```
 
 Hier deklarieren wir die Einstellung `openapi_url` mit dem gleichen Defaultwert `"/openapi.json"`.

@@ -23,7 +23,7 @@
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/security/tutorial001_an_py39.py!}
+{!> ../../docs_src/security/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/security/tutorial001_an.py!}
+{!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
 ////
@@ -45,7 +45,7 @@
 ///
 
 ```Python
-{!> ../../../docs_src/security/tutorial001.py!}
+{!> ../../docs_src/security/tutorial001.py!}
 ```
 
 ////
@@ -130,9 +130,9 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 - 前端临时将令牌存储在某个位置
 - 用户点击前端，前往前端应用的其它部件
 - 前端需要从 API 中提取更多数据：
-    - 为指定的端点（Endpoint）进行身份验证
-    - 因此，用 API 验证身份时，要发送值为 `Bearer` + 令牌的请求头 `Authorization`
-    - 假如令牌为 `foobar`，`Authorization` 请求头就是： `Bearer foobar`
+  - 为指定的端点（Endpoint）进行身份验证
+  - 因此，用 API 验证身份时，要发送值为 `Bearer` + 令牌的请求头 `Authorization`
+  - 假如令牌为 `foobar`，`Authorization` 请求头就是： `Bearer foobar`
 
 ## **ReadyAPI** 的 `OAuth2PasswordBearer`
 
@@ -155,7 +155,7 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 创建 `OAuth2PasswordBearer` 的类实例时，要传递 `tokenUrl` 参数。该参数包含客户端（用户浏览器中运行的前端） 的 URL，用于发送 `username` 与 `password`，并获取令牌。
 
 ```Python hl_lines="6"
-{!../../../docs_src/security/tutorial001.py!}
+{!../../docs_src/security/tutorial001.py!}
 ```
 
 /// tip | "提示"
@@ -164,7 +164,7 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 
 因为使用的是相对 URL，如果 API 位于 `https://example.com/`，则指向 `https://example.com/token`。但如果 API 位于 `https://example.com/api/v1/`，它指向的就是`https://example.com/api/v1/token`。
 
-使用相对 URL 非常重要，可以确保应用在遇到[使用代理](../../advanced/behind-a-proxy.md){.internal-link target=_blank}这样的高级用例时，也能正常运行。
+使用相对 URL 非常重要，可以确保应用在遇到[使用代理](../../advanced/behind-a-proxy.md){.internal-link target=\_blank}这样的高级用例时，也能正常运行。
 
 ///
 
@@ -195,7 +195,7 @@ oauth2_scheme(some, parameters)
 接下来，使用 `Depends` 把 `oauth2_scheme` 传入依赖项。
 
 ```Python hl_lines="10"
-{!../../../docs_src/security/tutorial001.py!}
+{!../../docs_src/security/tutorial001.py!}
 ```
 
 该依赖项使用字符串（`str`）接收*路径操作函数*的参数 `token` 。

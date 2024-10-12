@@ -4,10 +4,10 @@ Até agora você declarou as partes da requisição que você precisa utilizando
 
 Obtendo dados de:
 
-* Os parâmetros das rotas.
-* Cabeçalhos (*Headers*).
-* Cookies.
-* etc.
+- Os parâmetros das rotas.
+- Cabeçalhos (_Headers_).
+- Cookies.
+- etc.
 
 E ao fazer isso, o **ReadyAPI** está validando as informações, convertendo-as e gerando documentação para a sua API automaticamente.
 
@@ -25,15 +25,15 @@ Mas há situações específicas onde é útil utilizar o objeto `Request`.
 
 ## Utilize o objeto `Request` diretamente
 
-Vamos imaginar que você deseja obter o endereço de IP/host do cliente dentro da sua *função de operação de rota*.
+Vamos imaginar que você deseja obter o endereço de IP/host do cliente dentro da sua _função de operação de rota_.
 
 Para isso você precisa acessar a requisição diretamente.
 
 ```Python hl_lines="1  7-8"
-{!../../../docs_src/using_request_directly/tutorial001.py!}
+{!../../docs_src/using_request_directly/tutorial001.py!}
 ```
 
-Ao declarar o parâmetro com o tipo sendo um `Request` em sua *função de operação de rota*, o **ReadyAPI** saberá como passar o `Request` neste parâmetro.
+Ao declarar o parâmetro com o tipo sendo um `Request` em sua _função de operação de rota_, o **ReadyAPI** saberá como passar o `Request` neste parâmetro.
 
 /// tip | "Dica"
 

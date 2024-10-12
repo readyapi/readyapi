@@ -3,7 +3,7 @@
 Najprostszy plik ReadyAPI może wyglądać tak:
 
 ```Python
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Skopiuj to do pliku `main.py`.
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 Polecenie `uvicorn main:app` odnosi się do:
 
-* `main`: plik `main.py` ("moduł" Python).
-* `app`: obiekt utworzony w pliku `main.py` w lini `app = ReadyAPI()`.
-* `--reload`: sprawia, że serwer uruchamia się ponownie po zmianie kodu. Używany tylko w trakcie tworzenia oprogramowania.
+- `main`: plik `main.py` ("moduł" Python).
+- `app`: obiekt utworzony w pliku `main.py` w lini `app = ReadyAPI()`.
+- `--reload`: sprawia, że serwer uruchamia się ponownie po zmianie kodu. Używany tylko w trakcie tworzenia oprogramowania.
 
 ///
 
@@ -134,7 +134,7 @@ Możesz go również użyć do automatycznego generowania kodu dla klientów, kt
 ### Krok 1: zaimportuj `ReadyAPI`
 
 ```Python hl_lines="1"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `ReadyAPI` jest klasą, która zapewnia wszystkie funkcjonalności Twojego API.
@@ -150,7 +150,7 @@ Oznacza to, że możesz korzystać ze wszystkich funkcjonalności <a href="https
 ### Krok 2: utwórz instancję `ReadyAPI`
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Zmienna `app` będzie tutaj "instancją" klasy `ReadyAPI`.
@@ -172,7 +172,7 @@ $ uvicorn main:app --reload
 Jeśli stworzysz swoją aplikację, np.:
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial002.py!}
+{!../../docs_src/first_steps/tutorial002.py!}
 ```
 
 I umieścisz to w pliku `main.py`, to będziesz mógł tak wywołać `uvicorn`:
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Krok 3: wykonaj *operację na ścieżce*
+### Krok 3: wykonaj _operację na ścieżce_
 
 #### Ścieżka
 
@@ -219,17 +219,17 @@ Podczas budowania API, "ścieżka" jest głównym sposobem na oddzielenie "odpow
 
 Jedna z:
 
-* `POST`
-* `GET`
-* `PUT`
-* `DELETE`
+- `POST`
+- `GET`
+- `PUT`
+- `DELETE`
 
 ...i te bardziej egzotyczne:
 
-* `OPTIONS`
-* `HEAD`
-* `PATCH`
-* `TRACE`
+- `OPTIONS`
+- `HEAD`
+- `PATCH`
+- `TRACE`
 
 W protokole HTTP można komunikować się z każdą ścieżką za pomocą jednej (lub więcej) "metod".
 
@@ -239,25 +239,25 @@ Podczas tworzenia API zwykle używasz tych metod HTTP do wykonania określonej a
 
 Zazwyczaj używasz:
 
-* `POST`: do tworzenia danych.
-* `GET`: do odczytywania danych.
-* `PUT`: do aktualizacji danych.
-* `DELETE`: do usuwania danych.
+- `POST`: do tworzenia danych.
+- `GET`: do odczytywania danych.
+- `PUT`: do aktualizacji danych.
+- `DELETE`: do usuwania danych.
 
 Tak więc w OpenAPI każda z metod HTTP nazywana jest "operacją".
 
 Będziemy je również nazywali "**operacjami**".
 
-#### Zdefiniuj *dekorator operacji na ścieżce*
+#### Zdefiniuj _dekorator operacji na ścieżce_
 
 ```Python hl_lines="6"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `@app.get("/")` mówi **ReadyAPI** że funkcja poniżej odpowiada za obsługę żądań, które trafiają do:
 
-* ścieżki `/`
-* używając <abbr title="metoda HTTP GET">operacji <code>get</code></abbr>
+- ścieżki `/`
+- używając <abbr title="metoda HTTP GET">operacji <code>get</code></abbr>
 
 /// info | "`@decorator` Info"
 
@@ -275,16 +275,16 @@ Jest to "**dekorator operacji na ścieżce**".
 
 Możesz również użyć innej operacji:
 
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
 
 Oraz tych bardziej egzotycznych:
 
-* `@app.options()`
-* `@app.head()`
-* `@app.patch()`
-* `@app.trace()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
 
 /// tip
 
@@ -302,12 +302,12 @@ Na przykład, używając GraphQL, normalnie wykonujesz wszystkie akcje używają
 
 To jest nasza "**funkcja obsługująca ścieżkę**":
 
-* **ścieżka**: to `/`.
-* **operacja**: to `get`.
-* **funkcja**: to funkcja poniżej "dekoratora" (poniżej `@app.get("/")`).
+- **ścieżka**: to `/`.
+- **operacja**: to `get`.
+- **funkcja**: to funkcja poniżej "dekoratora" (poniżej `@app.get("/")`).
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Jest to funkcja Python.
@@ -321,19 +321,19 @@ W tym przypadku jest to funkcja "asynchroniczna".
 Możesz również zdefiniować to jako normalną funkcję zamiast `async def`:
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial003.py!}
+{!../../docs_src/first_steps/tutorial003.py!}
 ```
 
 /// note
 
-Jeśli nie znasz różnicy, sprawdź [Async: *"In a hurry?"*](../async.md#in-a-hurry){.internal-link target=_blank}.
+Jeśli nie znasz różnicy, sprawdź [Async: _"In a hurry?"_](../async.md#in-a-hurry){.internal-link target=\_blank}.
 
 ///
 
 ### Krok 5: zwróć zawartość
 
 ```Python hl_lines="8"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Możesz zwrócić `dict`, `list`, pojedynczą wartość jako `str`, `int`, itp.
@@ -344,8 +344,8 @@ Istnieje wiele innych obiektów i modeli, które zostaną automatycznie skonwert
 
 ## Podsumowanie
 
-* Zaimportuj `ReadyAPI`.
-* Stwórz instancję `app`.
-* Dodaj **dekorator operacji na ścieżce** (taki jak `@app.get("/")`).
-* Napisz **funkcję obsługującą ścieżkę** (taką jak `def root(): ...` powyżej).
-* Uruchom serwer deweloperski (`uvicorn main:app --reload`).
+- Zaimportuj `ReadyAPI`.
+- Stwórz instancję `app`.
+- Dodaj **dekorator operacji na ścieżce** (taki jak `@app.get("/")`).
+- Napisz **funkcję obsługującą ścieżkę** (taką jak `def root(): ...` powyżej).
+- Uruchom serwer deweloperski (`uvicorn main:app --reload`).

@@ -4,27 +4,27 @@
 
 这些文档即将被更新。🎉
 
-当前版本假设Pydantic v1和SQLAlchemy版本小于2。
+当前版本假设 Pydantic v1 和 SQLAlchemy 版本小于 2。
 
-新的文档将包括Pydantic v2以及 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a>（也是基于SQLAlchemy），一旦SQLDev更新为为使用Pydantic v2。
+新的文档将包括 Pydantic v2 以及 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a>（也是基于 SQLAlchemy），一旦 SQLDev 更新为为使用 Pydantic v2。
 
 ///
 
-**ReadyAPI**不需要你使用SQL(关系型)数据库。
+**ReadyAPI**不需要你使用 SQL(关系型)数据库。
 
 但是您可以使用任何您想要的关系型数据库。
 
 在这里，让我们看一个使用着[SQLAlchemy](https://www.sqlalchemy.org/)的示例。
 
-您可以很容易地将其调整为任何SQLAlchemy支持的数据库，如：
+您可以很容易地将其调整为任何 SQLAlchemy 支持的数据库，如：
 
-* PostgreSQL
-* MySQL
-* SQLite
-* Oracle
-* Microsoft SQL Server，等等其它数据库
+- PostgreSQL
+- MySQL
+- SQLite
+- Oracle
+- Microsoft SQL Server，等等其它数据库
 
-在此示例中，我们将使用**SQLite**，因为它使用单个文件并且 在Python中具有集成支持。因此，您可以复制此示例并按原样来运行它。
+在此示例中，我们将使用**SQLite**，因为它使用单个文件并且 在 Python 中具有集成支持。因此，您可以复制此示例并按原样来运行它。
 
 稍后，对于您的产品级别的应用程序，您可能会要使用像**PostgreSQL**这样的数据库服务器。
 
@@ -36,7 +36,7 @@
 
 /// note
 
-请注意，大部分代码是`SQLAlchemy`的标准代码，您可以用于任何框架。ReadyAPI特定的代码和往常一样少。
+请注意，大部分代码是`SQLAlchemy`的标准代码，您可以用于任何框架。ReadyAPI 特定的代码和往常一样少。
 
 ///
 
@@ -46,7 +46,7 @@
 
 一种常见的模式是使用“ORM”：对象关系映射。
 
-ORM 具有在代码和数据库表（“*关系型”）中的**对象**之间转换（“*映射*”）的工具。
+ORM 具有在代码和数据库表（“*关系型”）中的**对象**之间转换（“*映射\*”）的工具。
 
 使用 ORM，您通常会在 SQL 数据库中创建一个代表映射的类，该类的每个属性代表一个列，具有名称和类型。
 
@@ -118,13 +118,13 @@ $ pip install sqlalchemy
 ### 导入 SQLAlchemy 部件
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
-### 为 SQLAlchemy 定义数据库 URL地址
+### 为 SQLAlchemy 定义数据库 URL 地址
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 在这个例子中，我们正在“连接”到一个 SQLite 数据库（用 SQLite 数据库打开一个文件）。
@@ -149,12 +149,12 @@ SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
 
 ### 创建 SQLAlchemy 引擎
 
-第一步，创建一个 SQLAlchemy的“引擎”。
+第一步，创建一个 SQLAlchemy 的“引擎”。
 
 我们稍后会将这个`engine`在其他地方使用。
 
 ```Python hl_lines="8-10"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 #### 注意
@@ -173,7 +173,7 @@ connect_args={"check_same_thread": False}
 
 这是为了防止意外地为不同的事物（不同的请求）共享相同的连接。
 
-但是在 ReadyAPI 中，使用普通函数（def）时，多个线程可以为同一个请求与数据库交互，所以我们需要使用`connect_args={"check_same_thread": False}`来让SQLite允许这样。
+但是在 ReadyAPI 中，使用普通函数（def）时，多个线程可以为同一个请求与数据库交互，所以我们需要使用`connect_args={"check_same_thread": False}`来让 SQLite 允许这样。
 
 此外，我们将确保每个请求都在依赖项中获得自己的数据库连接会话，因此不需要该默认机制。
 
@@ -192,7 +192,7 @@ connect_args={"check_same_thread": False}
 要创建`SessionLocal`类，请使用函数`sessionmaker`：
 
 ```Python hl_lines="11"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 ### 创建一个`Base`类
@@ -202,7 +202,7 @@ connect_args={"check_same_thread": False}
 稍后我们将继承这个类，来创建每个数据库模型或类（ORM 模型）：
 
 ```Python hl_lines="13"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 ## 创建数据库模型
@@ -228,7 +228,7 @@ SQLAlchemy 使用的“**模型**”这个术语 来指代与数据库交互的�
 这些类就是 SQLAlchemy 模型。
 
 ```Python hl_lines="4  7-8  18-19"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 这个`__tablename__`属性是用来告诉 SQLAlchemy 要在数据库中为每个模型使用的数据库表的名称。
@@ -244,26 +244,26 @@ SQLAlchemy 使用的“**模型**”这个术语 来指代与数据库交互的�
 我们传递一个 SQLAlchemy “类型”，如`Integer`、`String`和`Boolean`，它定义了数据库中的类型，作为参数。
 
 ```Python hl_lines="1  10-13  21-24"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 ### 创建关系
 
 现在创建关系。
 
-为此，我们使用SQLAlchemy  ORM提供的`relationship`。
+为此，我们使用 SQLAlchemy ORM 提供的`relationship`。
 
 这将或多或少会成为一种“神奇”属性，其中表示该表与其他相关的表中的值。
 
 ```Python hl_lines="2  15  26"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 当访问 user 中的属性`items`时，如 中`my_user.items`，它将有一个`Item`SQLAlchemy 模型列表（来自`items`表），这些模型具有指向`users`表中此记录的外键。
 
 当您访问`my_user.items`时，SQLAlchemy 实际上会从`items`表中的获取一批记录并在此处填充进去。
 
-同样，当访问 Item中的属性`owner`时，它将包含表中的`User`SQLAlchemy 模型`users`。使用`owner_id`属性/列及其外键来了解要从`users`表中获取哪条记录。
+同样，当访问 Item 中的属性`owner`时，它将包含表中的`User`SQLAlchemy 模型`users`。使用`owner_id`属性/列及其外键来了解要从`users`表中获取哪条记录。
 
 ## 创建 Pydantic 模型
 
@@ -287,12 +287,12 @@ SQLAlchemy 使用的“**模型**”这个术语 来指代与数据库交互的�
 
 因此在创建时也应当有一个`password`属性。
 
-但是为了安全起见，`password`不会出现在其他同类 Pydantic*模型*中，例如通过API读取一个用户数据时，它不应当包含在内。
+但是为了安全起见，`password`不会出现在其他同类 Pydantic*模型*中，例如通过 API 读取一个用户数据时，它不应当包含在内。
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="1  4-6  9-10  21-22  25-26"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
@@ -300,7 +300,7 @@ SQLAlchemy 使用的“**模型**”这个术语 来指代与数据库交互的�
 //// tab | Python 3.9+
 
 ```Python hl_lines="3  6-8  11-12  23-24  27-28"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -308,7 +308,7 @@ SQLAlchemy 使用的“**模型**”这个术语 来指代与数据库交互的�
 //// tab | Python 3.8+
 
 ```Python hl_lines="3  6-8  11-12  23-24  27-28"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -329,9 +329,9 @@ name: str
 
 请牢记这一点，这样您在使用`:`还是`=`时就不会感到困惑。
 
-### 创建用于读取/返回的Pydantic*模型/模式*
+### 创建用于读取/返回的 Pydantic*模型/模式*
 
-现在创建当从 API 返回数据时、将在读取数据时使用的Pydantic*模型（schemas）。*
+现在创建当从 API 返回数据时、将在读取数据时使用的 Pydantic*模型（schemas）。*
 
 例如，在创建一个项目之前，我们不知道分配给它的 ID 是什么，但是在读取它时（从 API 返回时）我们已经知道它的 ID。
 
@@ -342,7 +342,7 @@ name: str
 //// tab | Python 3.10+
 
 ```Python hl_lines="13-15  29-32"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
@@ -350,7 +350,7 @@ name: str
 //// tab | Python 3.9+
 
 ```Python hl_lines="15-17  31-34"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -358,7 +358,7 @@ name: str
 //// tab | Python 3.8+
 
 ```Python hl_lines="15-17  31-34"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -380,7 +380,7 @@ name: str
 //// tab | Python 3.10+
 
 ```Python hl_lines="13  17-18  29  34-35"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
@@ -388,7 +388,7 @@ name: str
 //// tab | Python 3.9+
 
 ```Python hl_lines="15  19-20  31  36-37"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -396,7 +396,7 @@ name: str
 //// tab | Python 3.8+
 
 ```Python hl_lines="15  19-20  31  36-37"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -451,7 +451,7 @@ current_user.items
 
 但是在 ORM 模式下，由于 Pydantic 本身会尝试从属性访问它需要的数据（而不是假设为 `dict`），你可以声明你想要返回的特定数据，它甚至可以从 ORM 中获取它。
 
-## CRUD工具
+## CRUD 工具
 
 现在让我们看看文件`sql_app/crud.py`。
 
@@ -469,12 +469,12 @@ current_user.items
 
 创建一些工具函数来完成：
 
-* 通过 ID 和电子邮件查询单个用户。
-* 查询多个用户。
-* 查询多个项目。
+- 通过 ID 和电子邮件查询单个用户。
+- 查询多个用户。
+- 查询多个项目。
 
 ```Python hl_lines="1  3  6-7  10-11  14-15  27-28"
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
 /// tip
@@ -489,13 +489,13 @@ current_user.items
 
 它的步骤是：
 
-* 使用您的数据创建一个 SQLAlchemy 模型*实例。*
-* 使用`add`来将该实例对象添加到数据库会话。
-* 使用`commit`来将更改提交到数据库（以便保存它们）。
-* 使用`refresh`来刷新您的实例对象（以便它包含来自数据库的任何新数据，例如生成的 ID）。
+- 使用您的数据创建一个 SQLAlchemy 模型*实例。*
+- 使用`add`来将该实例对象添加到数据库会话。
+- 使用`commit`来将更改提交到数据库（以便保存它们）。
+- 使用`refresh`来刷新您的实例对象（以便它包含来自数据库的任何新数据，例如生成的 ID）。
 
 ```Python hl_lines="18-24  31-36"
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
 /// tip
@@ -504,7 +504,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 但由于 API 客户端提供的是原始密码，因此您需要将其提取并在应用程序中生成散列密码。
 
-然后将hashed_password参数与要保存的值一起传递。
+然后将 hashed_password 参数与要保存的值一起传递。
 
 ///
 
@@ -522,15 +522,15 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 /// tip
 
-这里不是将每个关键字参数传递给Item并从Pydantic模型中读取每个参数，而是先生成一个字典，其中包含Pydantic模型的数据：
+这里不是将每个关键字参数传递给 Item 并从 Pydantic 模型中读取每个参数，而是先生成一个字典，其中包含 Pydantic 模型的数据：
 
 `item.dict()`
 
-然后我们将dict的键值对 作为关键字参数传递给 SQLAlchemy `Item`：
+然后我们将 dict 的键值对 作为关键字参数传递给 SQLAlchemy `Item`：
 
 `Item(**item.dict())`
 
-然后我们传递 Pydantic模型未提供的额外关键字参数`owner_id`：
+然后我们传递 Pydantic 模型未提供的额外关键字参数`owner_id`：
 
 `Item(**item.dict(), owner_id=user_id)`
 
@@ -547,7 +547,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.9+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -555,7 +555,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -585,7 +585,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.9+
 
 ```Python hl_lines="13-18"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -593,7 +593,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.8+
 
 ```Python hl_lines="15-20"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -602,11 +602,11 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 我们将`SessionLocal()`请求的创建和处理放在一个`try`块中。
 
-然后我们在finally块中关闭它。
+然后我们在 finally 块中关闭它。
 
 通过这种方式，我们确保数据库会话在请求后始终关闭。即使在处理请求时出现异常。
 
-但是您不能从退出代码中引发另一个异常（在yield之后）。可以查阅 [Dependencies with yield and HTTPException](https://readyapi.khulnasoft.com/zh/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception)
+但是您不能从退出代码中引发另一个异常（在 yield 之后）。可以查阅 [Dependencies with yield and HTTPException](https://readyapi.khulnasoft.com/zh/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception)
 
 ///
 
@@ -617,7 +617,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.9+
 
 ```Python hl_lines="22  30  36  45  51"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -625,7 +625,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.8+
 
 ```Python hl_lines="24  32  38  47  53"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -634,18 +634,18 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 参数`db`实际上是 type `SessionLocal`，但是这个类（用 创建`sessionmaker()`）是 SQLAlchemy 的“代理” `Session`，所以，编辑器并不真正知道提供了哪些方法。
 
-但是通过将类型声明为Session，编辑器现在可以知道可用的方法（.add()、.query()、.commit()等）并且可以提供更好的支持（比如完成）。类型声明不影响实际对象。
+但是通过将类型声明为 Session，编辑器现在可以知道可用的方法（.add()、.query()、.commit()等）并且可以提供更好的支持（比如完成）。类型声明不影响实际对象。
 
 ///
 
-### 创建您的**ReadyAPI** *路径操作*
+### 创建您的**ReadyAPI** _路径操作_
 
 现在，到了最后，编写标准的**ReadyAPI** *路径操作*代码。
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="21-26  29-32  35-40  43-47  50-53"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -653,7 +653,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 //// tab | Python 3.8+
 
 ```Python hl_lines="23-28  31-34  37-42  45-49  52-55"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -668,7 +668,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 请注意，您返回的值是 SQLAlchemy 模型或 SQLAlchemy 模型列表。
 
-但是由于所有路径操作的response_model都使用 Pydantic模型/使用orm_mode模式，因此您的 Pydantic 模型中声明的数据将从它们中提取并返回给客户端，并进行所有正常的过滤和验证。
+但是由于所有路径操作的 response_model 都使用 Pydantic 模型/使用 orm_mode 模式，因此您的 Pydantic 模型中声明的数据将从它们中提取并返回给客户端，并进行所有正常的过滤和验证。
 
 ///
 
@@ -676,7 +676,7 @@ SQLAlchemy 模型`User`包含一个`hashed_password`，它应该是一个包含�
 
 另请注意，`response_models`应当是标准 Python 类型，例如`List[schemas.Item]`.
 
-但是由于它的内容/参数List是一个 使用orm_mode模式的Pydantic模型，所以数据将被正常检索并返回给客户端，所以没有问题。
+但是由于它的内容/参数 List 是一个 使用 orm_mode 模式的 Pydantic 模型，所以数据将被正常检索并返回给客户端，所以没有问题。
 
 ///
 
@@ -735,26 +735,26 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 
 `sql_app`中应该有以下文件：
 
-* `sql_app/__init__.py`：这是一个空文件。
+- `sql_app/__init__.py`：这是一个空文件。
 
-* `sql_app/database.py`：
-
-```Python
-{!../../../docs_src/sql_databases/sql_app/database.py!}
-```
-
-* `sql_app/models.py`:
+- `sql_app/database.py`：
 
 ```Python
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
-* `sql_app/schemas.py`:
+- `sql_app/models.py`:
+
+```Python
+{!../../docs_src/sql_databases/sql_app/models.py!}
+```
+
+- `sql_app/schemas.py`:
 
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
@@ -762,7 +762,7 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -770,23 +770,23 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
 
-* `sql_app/crud.py`:
+- `sql_app/crud.py`:
 
 ```Python
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
-* `sql_app/main.py`:
+- `sql_app/main.py`:
 
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -794,7 +794,7 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -810,7 +810,6 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 ///
 
 你可以用 Uvicorn 运行它：
-
 
 <div class="termy">
 
@@ -851,7 +850,7 @@ $ uvicorn sql_app.main:app --reload
 //// tab | Python 3.9+
 
 ```Python hl_lines="12-20"
-{!> ../../../docs_src/sql_databases/sql_app_py39/alt_main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/alt_main.py!}
 ```
 
 ////
@@ -859,7 +858,7 @@ $ uvicorn sql_app.main:app --reload
 //// tab | Python 3.8+
 
 ```Python hl_lines="14-22"
-{!> ../../../docs_src/sql_databases/sql_app/alt_main.py!}
+{!> ../../docs_src/sql_databases/sql_app/alt_main.py!}
 ```
 
 ////
@@ -868,7 +867,7 @@ $ uvicorn sql_app.main:app --reload
 
 我们将`SessionLocal()`请求的创建和处理放在一个`try`块中。
 
-然后我们在finally块中关闭它。
+然后我们在 finally 块中关闭它。
 
 通过这种方式，我们确保数据库会话在请求后始终关闭，即使在处理请求时出现异常也会关闭。
 
@@ -884,18 +883,18 @@ $ uvicorn sql_app.main:app --reload
 
 在此处添加**中间件**与`yield`的依赖项的作用效果类似，但也有一些区别：
 
-* 中间件需要更多的代码并且更复杂一些。
-* 中间件必须是一个`async`函数。
-    * 如果其中有代码必须“等待”网络，它可能会在那里“阻止”您的应用程序并稍微降低性能。
-    * 尽管这里的`SQLAlchemy`工作方式可能不是很成问题。
-    * 但是，如果您向等待大量I/O的中间件添加更多代码，则可能会出现问题。
-* *每个*请求都会运行一个中间件。
-    * 将为每个请求创建一个连接。
-    * 即使处理该请求的*路径操作*不需要数据库。
+- 中间件需要更多的代码并且更复杂一些。
+- 中间件必须是一个`async`函数。
+  - 如果其中有代码必须“等待”网络，它可能会在那里“阻止”您的应用程序并稍微降低性能。
+  - 尽管这里的`SQLAlchemy`工作方式可能不是很成问题。
+  - 但是，如果您向等待大量 I/O 的中间件添加更多代码，则可能会出现问题。
+- *每个*请求都会运行一个中间件。
+  - 将为每个请求创建一个连接。
+  - 即使处理该请求的*路径操作*不需要数据库。
 
 /// tip
 
-最好使用带有yield的依赖项，如果这足够满足用例需求
+最好使用带有 yield 的依赖项，如果这足够满足用例需求
 
 ///
 

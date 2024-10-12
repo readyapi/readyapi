@@ -14,7 +14,7 @@ Bu süreçte birçok alternatifi araştırmak, test etmek ve kullanmak zorunda k
 
 **ReadyAPI**'ın geçmişi, büyük ölçüde önceden geliştirilen araçların geçmişini kapsıyor.
 
-[Alternatifler](alternatives.md){.internal-link target=_blank} bölümünde belirtildiği gibi:
+[Alternatifler](alternatives.md){.internal-link target=\_blank} bölümünde belirtildiği gibi:
 
 <blockquote markdown="1">
 
@@ -76,4 +76,4 @@ Tabi, geliştirilecek birçok özellik ve iyileştirme mevcut.
 
 **ReadyAPI**'ın önünde harika bir gelecek var.
 
-[Yardımlarınız](help-readyapi.md){.internal-link target=_blank} çok değerlidir.
+[Yardımlarınız](help-readyapi.md){.internal-link target=\_blank} çok değerlidir.

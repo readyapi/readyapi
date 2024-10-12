@@ -27,14 +27,14 @@
 ✍ 🙅 `assert` 📄 ⏮️ 🐩 🐍 🧬 👈 👆 💪 ✅ (🔄, 🐩 `pytest`).
 
 ```Python hl_lines="2  12  15-18"
-{!../../../docs_src/app_testing/tutorial001.py!}
+{!../../docs_src/app_testing/tutorial001.py!}
 ```
 
 /// tip
 
 👀 👈 🔬 🔢 😐 `def`, 🚫 `async def`.
 
- &amp; 🤙 👩‍💻 😐 🤙, 🚫 ⚙️ `await`.
+&amp; 🤙 👩‍💻 😐 🤙, 🚫 ⚙️ `await`.
 
 👉 ✔ 👆 ⚙️ `pytest` 🔗 🍵 🤢.
 
@@ -50,7 +50,7 @@
 
 /// tip
 
-🚥 👆 💚 🤙 `async` 🔢 👆 💯 ↖️ ⚪️➡️ 📨 📨 👆 ReadyAPI 🈸 (✅ 🔁 💽 🔢), ✔️ 👀 [🔁 💯](../advanced/async-tests.md){.internal-link target=_blank} 🏧 🔰.
+🚥 👆 💚 🤙 `async` 🔢 👆 💯 ↖️ ⚪️➡️ 📨 📨 👆 ReadyAPI 🈸 (✅ 🔁 💽 🔢), ✔️ 👀 [🔁 💯](../advanced/async-tests.md){.internal-link target=\_blank} 🏧 🔰.
 
 ///
 
@@ -62,7 +62,7 @@
 
 ### **ReadyAPI** 📱 📁
 
-➡️ 💬 👆 ✔️ 📁 📊 🔬 [🦏 🈸](bigger-applications.md){.internal-link target=_blank}:
+➡️ 💬 👆 ✔️ 📁 📊 🔬 [🦏 🈸](bigger-applications.md){.internal-link target=\_blank}:
 
 ```
 .
@@ -73,16 +73,15 @@
 
 📁 `main.py` 👆 ✔️ 👆 **ReadyAPI** 📱:
 
-
 ```Python
-{!../../../docs_src/app_testing/main.py!}
+{!../../docs_src/app_testing/main.py!}
 ```
 
 ### 🔬 📁
 
 ⤴️ 👆 💪 ✔️ 📁 `test_main.py` ⏮️ 👆 💯. ⚫️ 💪 🖖 🔛 🎏 🐍 📦 (🎏 📁 ⏮️ `__init__.py` 📁):
 
-``` hl_lines="5"
+```hl_lines="5"
 .
 ├── app
 │   ├── __init__.py
@@ -93,7 +92,7 @@
 ↩️ 👉 📁 🎏 📦, 👆 💪 ⚙️ ⚖ 🗄 🗄 🎚 `app` ⚪️➡️ `main` 🕹 (`main.py`):
 
 ```Python hl_lines="3"
-{!../../../docs_src/app_testing/test_main.py!}
+{!../../docs_src/app_testing/test_main.py!}
 ```
 
 ...&amp; ✔️ 📟 💯 💖 ⏭.
@@ -120,12 +119,12 @@
 
 ⚫️ ✔️ `POST` 🛠️ 👈 💪 📨 📚 ❌.
 
-👯‍♂️ *➡ 🛠️* 🚚 `X-Token` 🎚.
+👯‍♂️ _➡ 🛠️_ 🚚 `X-Token` 🎚.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/main.py!}
+{!> ../../docs_src/app_testing/app_b/main.py!}
 ```
 
 ////
@@ -133,7 +132,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b_py310/main.py!}
+{!> ../../docs_src/app_testing/app_b_py310/main.py!}
 ```
 
 ////
@@ -143,7 +142,7 @@
 👆 💪 ⤴️ ℹ `test_main.py` ⏮️ ↔ 💯:
 
 ```Python
-{!> ../../../docs_src/app_testing/app_b/test_main.py!}
+{!> ../../docs_src/app_testing/app_b/test_main.py!}
 ```
 
 🕐❔ 👆 💪 👩‍💻 🚶‍♀️ ℹ 📨 &amp; 👆 🚫 💭 ❔, 👆 💪 🔎 (🇺🇸🔍) ❔ ⚫️ `httpx`, ⚖️ ❔ ⚫️ ⏮️ `requests`, 🇸🇲 🔧 ⚓️ 🔛 📨' 🔧.
@@ -152,11 +151,11 @@
 
 🤶 Ⓜ.:
 
-* 🚶‍♀️ *➡* ⚖️ *🔢* 🔢, 🚮 ⚫️ 📛 ⚫️.
-* 🚶‍♀️ 🎻 💪, 🚶‍♀️ 🐍 🎚 (✅ `dict`) 🔢 `json`.
-* 🚥 👆 💪 📨 *📨 💽* ↩️ 🎻, ⚙️ `data` 🔢 ↩️.
-* 🚶‍♀️ *🎚*, ⚙️ `dict` `headers` 🔢.
-*  *🍪*, `dict` `cookies` 🔢.
+- 🚶‍♀️ _➡_ ⚖️ _🔢_ 🔢, 🚮 ⚫️ 📛 ⚫️.
+- 🚶‍♀️ 🎻 💪, 🚶‍♀️ 🐍 🎚 (✅ `dict`) 🔢 `json`.
+- 🚥 👆 💪 📨 _📨 💽_ ↩️ 🎻, ⚙️ `data` 🔢 ↩️.
+- 🚶‍♀️ _🎚_, ⚙️ `dict` `headers` 🔢.
+- _🍪_, `dict` `cookies` 🔢.
 
 🌖 ℹ 🔃 ❔ 🚶‍♀️ 💽 👩‍💻 (⚙️ `httpx` ⚖️ `TestClient`) ✅ <a href="https://www.python-httpx.org" class="external-link" target="_blank">🇸🇲 🧾</a>.
 
@@ -164,7 +163,7 @@
 
 🗒 👈 `TestClient` 📨 💽 👈 💪 🗜 🎻, 🚫 Pydantic 🏷.
 
-🚥 👆 ✔️ Pydantic 🏷 👆 💯 &amp; 👆 💚 📨 🚮 💽 🈸 ⏮️ 🔬, 👆 💪 ⚙️ `jsonable_encoder` 🔬 [🎻 🔗 🔢](encoder.md){.internal-link target=_blank}.
+🚥 👆 ✔️ Pydantic 🏷 👆 💯 &amp; 👆 💚 📨 🚮 💽 🈸 ⏮️ 🔬, 👆 💪 ⚙️ `jsonable_encoder` 🔬 [🎻 🔗 🔢](encoder.md){.internal-link target=\_blank}.
 
 ///
 

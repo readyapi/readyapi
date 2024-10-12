@@ -31,17 +31,17 @@ ReadyAPI - це сучасний, швидкий (високопродуктив
 
 Ключові особливості:
 
-* **Швидкий**: Дуже висока продуктивність, на рівні з **NodeJS** та **Go** (завдяки Starlette та Pydantic). [Один із найшвидших фреймворків](#performance).
+- **Швидкий**: Дуже висока продуктивність, на рівні з **NodeJS** та **Go** (завдяки Starlette та Pydantic). [Один із найшвидших фреймворків](#performance).
 
-* **Швидке написання коду**: Пришвидшує розробку функціоналу приблизно на 200%-300%. *
-* **Менше помилок**: Зменшить кількість помилок спричинених людиною (розробником) на 40%. *
-* **Інтуїтивний**: Чудова підтримка редакторами коду. <abbr title="Також відоме як auto-complete, autocompletion, IntelliSense.">Доповнення</abbr> всюди. Зменште час на налагодження.
-* **Простий**: Спроектований, для легкого використання та навчання. Знадобиться менше часу на читання документації.
-* **Короткий**: Зведе до мінімуму дублювання коду. Кожен оголошений параметр може виконувати кілька функцій.
-* **Надійний**: Ви матимете стабільний код готовий до продакшину з автоматичною інтерактивною документацією.
-* **Стандартизований**: Оснований та повністю сумісний з відкритими стандартами для API: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (попередньо відомий як Swagger) та <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
+- **Швидке написання коду**: Пришвидшує розробку функціоналу приблизно на 200%-300%. \*
+- **Менше помилок**: Зменшить кількість помилок спричинених людиною (розробником) на 40%. \*
+- **Інтуїтивний**: Чудова підтримка редакторами коду. <abbr title="Також відоме як auto-complete, autocompletion, IntelliSense.">Доповнення</abbr> всюди. Зменште час на налагодження.
+- **Простий**: Спроектований, для легкого використання та навчання. Знадобиться менше часу на читання документації.
+- **Короткий**: Зведе до мінімуму дублювання коду. Кожен оголошений параметр може виконувати кілька функцій.
+- **Надійний**: Ви матимете стабільний код готовий до продакшину з автоматичною інтерактивною документацією.
+- **Стандартизований**: Оснований та повністю сумісний з відкритими стандартами для API: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (попередньо відомий як Swagger) та <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
 
-<small>* оцінка на основі тестів внутрішньої команди розробників, створення продуктових застосунків.</small>
+<small>\* оцінка на основі тестів внутрішньої команди розробників, створення продуктових застосунків.</small>
 
 ## Спонсори
 
@@ -112,8 +112,8 @@ ReadyAPI - це сучасний, швидкий (високопродуктив
 
 ReadyAPI стоїть на плечах гігантів:
 
-* <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> для web частини.
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> для частини даних.
+- <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> для web частини.
+- <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> для частини даних.
 
 ## Вставновлення
 
@@ -143,7 +143,7 @@ $ pip install uvicorn[standard]
 
 ### Створіть
 
-* Створіть файл `main.py` з:
+- Створіть файл `main.py` з:
 
 ```Python
 from typing import Union
@@ -215,9 +215,9 @@ INFO:     Application startup complete.
 
 Команда `uvicorn main:app` посилається на:
 
-* `main`: файл `main.py` ("Модуль" Python).
-* `app`: об’єкт створений усередині `main.py` рядком `app = ReadyAPI()`.
-* `--reload`: перезапускає сервер після зміни коду. Використовуйте виключно для розробки.
+- `main`: файл `main.py` ("Модуль" Python).
+- `app`: об’єкт створений усередині `main.py` рядком `app = ReadyAPI()`.
+- `--reload`: перезапускає сервер після зміни коду. Використовуйте виключно для розробки.
 
 </details>
 
@@ -233,10 +233,10 @@ INFO:     Application startup complete.
 
 Ви вже створили API, який:
 
-* Отримує HTTP запити за _шляхами_ `/` та `/items/{item_id}`.
-* Обидва _шляхи_ приймають `GET` <em>операції</em> (також відомі як HTTP _методи_).
-* _Шлях_ `/items/{item_id}` містить _параметр шляху_ `item_id` який має бути типу `int`.
-* _Шлях_ `/items/{item_id}` містить необовʼязковий `str` _параметр запиту_ `q`.
+- Отримує HTTP запити за _шляхами_ `/` та `/items/{item_id}`.
+- Обидва _шляхи_ приймають `GET` <em>операції</em> (також відомі як HTTP _методи_).
+- _Шлях_ `/items/{item_id}` містить _параметр шляху_ `item_id` який має бути типу `int`.
+- _Шлях_ `/items/{item_id}` містить необовʼязковий `str` _параметр запиту_ `q`.
 
 ### Інтерактивні документації API
 
@@ -250,7 +250,7 @@ INFO:     Application startup complete.
 
 Тепер перейдемо сюди <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
 
-Ви побачите альтернативну автоматичну документацію (створену завдяки  <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
+Ви побачите альтернативну автоматичну документацію (створену завдяки <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
@@ -296,15 +296,15 @@ def update_item(item_id: int, item: Item):
 
 Тепер перейдемо сюди <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-* Інтерактивна документація API буде автоматично оновлена, включаючи новий вміст:
+- Інтерактивна документація API буде автоматично оновлена, включаючи новий вміст:
 
 ![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-* Натисніть кнопку "Try it out", це дозволить вам заповнити параметри та безпосередньо взаємодіяти з API:
+- Натисніть кнопку "Try it out", це дозволить вам заповнити параметри та безпосередньо взаємодіяти з API:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
 
-* Потім натисніть кнопку "Execute", інтерфейс користувача зв'яжеться з вашим API, надішле параметри, у відповідь отримає результати та покаже їх на екрані:
+- Потім натисніть кнопку "Execute", інтерфейс користувача зв'яжеться з вашим API, надішле параметри, у відповідь отримає результати та покаже їх на екрані:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
 
@@ -312,13 +312,13 @@ def update_item(item_id: int, item: Item):
 
 Зараз перейдемо <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
 
-* Альтернативна документація також показуватиме новий параметр і вміст запиту:
+- Альтернативна документація також показуватиме новий параметр і вміст запиту:
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
 ### Підсумки
 
-Таким чином, Ви  **один раз** оголошуєте типи параметрів, тіла тощо, як параметри функції.
+Таким чином, Ви **один раз** оголошуєте типи параметрів, тіла тощо, як параметри функції.
 
 Ви робите це за допомогою стандартних сучасних типів Python.
 
@@ -340,50 +340,50 @@ item: Item
 
 ...і з цим єдиним оголошенням Ви отримуєте:
 
-* Підтримку редактора, включаючи:
-    * Варіанти заповнення.
-    * Перевірку типів.
-* Перевірку даних:
-    * Автоматичні та зрозумілі помилки, у разі некоректних даних.
-    * Перевірка навіть для JSON з високим рівнем вкладеності.
-* <abbr title="також відомий як: serialization, parsing, marshalling">Перетворення</abbr> вхідних даних: з мережі до даних і типів Python. Читання з:
-    * JSON.
-    * Параметрів шляху.
-    * Параметрів запиту.
-    * Cookies.
-    * Headers.
-    * Forms.
-    * Файлів.
-* <abbr title="також відомий як: serialization, parsing, marshalling">Перетворення</abbr> вихідних даних: з типів і даних Python до мережевих даних (як JSON):
-    * Конвертація Python типів (`str`, `int`, `float`, `bool`, `list`, тощо).
-    * `datetime` об'єкти.
-    * `UUID` об'єкти.
-    * Моделі бази даних.
-    * ...та багато іншого.
-* Автоматичну інтерактивну документацію API, включаючи 2 альтернативні інтерфейси користувача:
-    * Swagger UI.
-    * ReDoc.
+- Підтримку редактора, включаючи:
+  - Варіанти заповнення.
+  - Перевірку типів.
+- Перевірку даних:
+  - Автоматичні та зрозумілі помилки, у разі некоректних даних.
+  - Перевірка навіть для JSON з високим рівнем вкладеності.
+- <abbr title="також відомий як: serialization, parsing, marshalling">Перетворення</abbr> вхідних даних: з мережі до даних і типів Python. Читання з:
+  - JSON.
+  - Параметрів шляху.
+  - Параметрів запиту.
+  - Cookies.
+  - Headers.
+  - Forms.
+  - Файлів.
+- <abbr title="також відомий як: serialization, parsing, marshalling">Перетворення</abbr> вихідних даних: з типів і даних Python до мережевих даних (як JSON):
+  - Конвертація Python типів (`str`, `int`, `float`, `bool`, `list`, тощо).
+  - `datetime` об'єкти.
+  - `UUID` об'єкти.
+  - Моделі бази даних.
+  - ...та багато іншого.
+- Автоматичну інтерактивну документацію API, включаючи 2 альтернативні інтерфейси користувача:
+  - Swagger UI.
+  - ReDoc.
 
 ---
 
 Повертаючись до попереднього прикладу коду, **ReadyAPI**:
 
-* Підтвердить наявність `item_id` у шляху для запитів `GET` та `PUT`.
-* Підтвердить, що `item_id` має тип `int` для запитів `GET` and `PUT`.
-    * Якщо це не так, клієнт побачить корисну, зрозумілу помилку.
-* Перевірить, чи є необов'язковий параметр запиту з назвою `q` (а саме `http://127.0.0.1:8000/items/foo?q=somequery`) для запитів `GET`.
-    * Оскільки параметр `q` оголошено як `= None`, він необов'язковий.
-    * За відсутності `None` він був би обов'язковим (як і вміст у випадку з `PUT`).
-* Для запитів `PUT` із `/items/{item_id}`, читає вміст як JSON:
-    * Перевірить, чи має обов'язковий атрибут `name` тип `str`.
-    * Перевірить, чи має обов'язковий атрибут `price` тип `float`.
-    * Перевірить, чи існує необов'язковий атрибут `is_offer` та чи має він тип `bool`.
-    * Усе це також працюватиме для глибоко вкладених об'єктів JSON.
-* Автоматично конвертує із та в JSON.
-* Документує все за допомогою OpenAPI, який може бути використано в:
-    * Інтерактивних системах документації.
-    * Системах автоматичної генерації клієнтського коду для багатьох мов.
-* Надає безпосередньо 2 вебінтерфейси інтерактивної документації.
+- Підтвердить наявність `item_id` у шляху для запитів `GET` та `PUT`.
+- Підтвердить, що `item_id` має тип `int` для запитів `GET` and `PUT`.
+  - Якщо це не так, клієнт побачить корисну, зрозумілу помилку.
+- Перевірить, чи є необов'язковий параметр запиту з назвою `q` (а саме `http://127.0.0.1:8000/items/foo?q=somequery`) для запитів `GET`.
+  - Оскільки параметр `q` оголошено як `= None`, він необов'язковий.
+  - За відсутності `None` він був би обов'язковим (як і вміст у випадку з `PUT`).
+- Для запитів `PUT` із `/items/{item_id}`, читає вміст як JSON:
+  - Перевірить, чи має обов'язковий атрибут `name` тип `str`.
+  - Перевірить, чи має обов'язковий атрибут `price` тип `float`.
+  - Перевірить, чи існує необов'язковий атрибут `is_offer` та чи має він тип `bool`.
+  - Усе це також працюватиме для глибоко вкладених об'єктів JSON.
+- Автоматично конвертує із та в JSON.
+- Документує все за допомогою OpenAPI, який може бути використано в:
+  - Інтерактивних системах документації.
+  - Системах автоматичної генерації клієнтського коду для багатьох мов.
+- Надає безпосередньо 2 вебінтерфейси інтерактивної документації.
 
 ---
 
@@ -415,21 +415,21 @@ item: Item
 
 **Spoiler alert**: туторіал - посібник користувача містить:
 
-* Оголошення **параметрів** з інших місць як: **headers**, **cookies**, **form fields** та **files**.
-* Як встановити **перевірку обмежень** як `maximum_length` або `regex`.
-* Дуже потужна і проста у використанні система **<abbr title="також відома як: components, resources, providers, services, injectables">Ін'єкція Залежностей</abbr>**.
-* Безпека та автентифікація, включаючи підтримку **OAuth2** з **JWT tokens** та **HTTP Basic** автентифікацію.
-* Досконаліші (але однаково прості) техніки для оголошення **глибоко вкладених моделей JSON** (завдяки Pydantic).
-* Багато додаткових функцій (завдяки Starlette) як-от:
-    * **WebSockets**
-    * надзвичайно прості тести на основі HTTPX та `pytest`
-    * **CORS**
-    * **Cookie Sessions**
-    * ...та більше.
+- Оголошення **параметрів** з інших місць як: **headers**, **cookies**, **form fields** та **files**.
+- Як встановити **перевірку обмежень** як `maximum_length` або `regex`.
+- Дуже потужна і проста у використанні система **<abbr title="також відома як: components, resources, providers, services, injectables">Ін'єкція Залежностей</abbr>**.
+- Безпека та автентифікація, включаючи підтримку **OAuth2** з **JWT tokens** та **HTTP Basic** автентифікацію.
+- Досконаліші (але однаково прості) техніки для оголошення **глибоко вкладених моделей JSON** (завдяки Pydantic).
+- Багато додаткових функцій (завдяки Starlette) як-от:
+  - **WebSockets**
+  - надзвичайно прості тести на основі HTTPX та `pytest`
+  - **CORS**
+  - **Cookie Sessions**
+  - ...та більше.
 
 ## Продуктивність
 
-Незалежні тести TechEmpower показують що застосунки **ReadyAPI**, які працюють під керуванням Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">є одними з найшвидших серед доступних фреймворків в Python</a>, поступаючись лише Starlette та Uvicorn (які внутрішньо використовуються в ReadyAPI). (*)
+Незалежні тести TechEmpower показують що застосунки **ReadyAPI**, які працюють під керуванням Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">є одними з найшвидших серед доступних фреймворків в Python</a>, поступаючись лише Starlette та Uvicorn (які внутрішньо використовуються в ReadyAPI). (\*)
 
 Щоб дізнатися більше про це, перегляньте розділ <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
@@ -437,24 +437,23 @@ item: Item
 
 Pydantic використовує:
 
-* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - для валідації електронної пошти.
-* <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - для управління налаштуваннями.
-* <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - для додаткових типів, що можуть бути використані з Pydantic.
-
+- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - для валідації електронної пошти.
+- <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - для управління налаштуваннями.
+- <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - для додаткових типів, що можуть бути використані з Pydantic.
 
 Starlette використовує:
 
-* <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Необхідно, якщо Ви хочете використовувати `TestClient`.
-* <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Необхідно, якщо Ви хочете використовувати шаблони як конфігурацію за замовчуванням.
-* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Необхідно, якщо Ви хочете підтримувати <abbr title="перетворення рядка, який надходить із запиту HTTP, на дані Python">"розбір"</abbr> форми за допомогою `request.form()`.
-* <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Необхідно для підтримки `SessionMiddleware`.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Необхідно для підтримки Starlette `SchemaGenerator` (ймовірно, вам це не потрібно з ReadyAPI).
+- <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Необхідно, якщо Ви хочете використовувати `TestClient`.
+- <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Необхідно, якщо Ви хочете використовувати шаблони як конфігурацію за замовчуванням.
+- <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Необхідно, якщо Ви хочете підтримувати <abbr title="перетворення рядка, який надходить із запиту HTTP, на дані Python">"розбір"</abbr> форми за допомогою `request.form()`.
+- <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Необхідно для підтримки `SessionMiddleware`.
+- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Необхідно для підтримки Starlette `SchemaGenerator` (ймовірно, вам це не потрібно з ReadyAPI).
 
 ReadyAPI / Starlette використовують:
 
-* <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - для сервера, який завантажує та обслуговує вашу програму.
-* <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Необхідно, якщо Ви хочете використовувати `ORJSONResponse`.
-* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Необхідно, якщо Ви хочете використовувати `UJSONResponse`.
+- <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - для сервера, який завантажує та обслуговує вашу програму.
+- <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Необхідно, якщо Ви хочете використовувати `ORJSONResponse`.
+- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Необхідно, якщо Ви хочете використовувати `UJSONResponse`.
 
 Ви можете встановити все це за допомогою `pip install readyapi[all]`.
 

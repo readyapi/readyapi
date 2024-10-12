@@ -24,11 +24,8 @@ gold:
     title: Simplify Full Stack Development with ReadyAPI & MongoDB
     img: https://readyapi.khulnasoft.com/img/sponsors/mongodb.png
   - url: https://zuplo.link/readyapi-gh
-    title: 'Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI'
+    title: "Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI"
     img: https://readyapi.khulnasoft.com/img/sponsors/zuplo.png
-  - url: https://fine.dev?ref=readyapibadge
-    title: "Fine's AI ReadyAPI Workflow: Effortlessly Deploy and Integrate ReadyAPI into Your Project"
-    img: https://readyapi.khulnasoft.com/img/sponsors/fine.png
   - url: https://liblab.com?utm_source=readyapi
     title: liblab - Generate SDKs from ReadyAPI
     img: https://readyapi.khulnasoft.com/img/sponsors/liblab.png

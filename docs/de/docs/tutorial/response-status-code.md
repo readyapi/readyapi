@@ -1,20 +1,20 @@
 # Response-Statuscode
 
-So wie ein Responsemodell, können Sie auch einen HTTP-Statuscode für die Response deklarieren, mithilfe des Parameters `status_code`, und zwar in jeder der *Pfadoperationen*:
+So wie ein Responsemodell, können Sie auch einen HTTP-Statuscode für die Response deklarieren, mithilfe des Parameters `status_code`, und zwar in jeder der _Pfadoperationen_:
 
-* `@app.get()`
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
-* usw.
+- `@app.get()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
+- usw.
 
 ```Python hl_lines="6"
-{!../../../docs_src/response_status_code/tutorial001.py!}
+{!../../docs_src/response_status_code/tutorial001.py!}
 ```
 
 /// note | "Hinweis"
 
-Beachten Sie, dass `status_code` ein Parameter der „Dekorator“-Methode ist (`get`, `post`, usw.). Nicht der *Pfadoperation-Funktion*, so wie die anderen Parameter und der Body.
+Beachten Sie, dass `status_code` ein Parameter der „Dekorator“-Methode ist (`get`, `post`, usw.). Nicht der _Pfadoperation-Funktion_, so wie die anderen Parameter und der Body.
 
 ///
 
@@ -28,8 +28,8 @@ Alternativ kann `status_code` auch ein `IntEnum` erhalten, so wie Pythons <a hre
 
 Das wird:
 
-* Diesen Statuscode mit der Response zurücksenden.
-* Ihn als solchen im OpenAPI-Schema dokumentieren (und somit in den Benutzeroberflächen):
+- Diesen Statuscode mit der Response zurücksenden.
+- Ihn als solchen im OpenAPI-Schema dokumentieren (und somit in den Benutzeroberflächen):
 
 <img src="/img/tutorial/response-status-code/image01.png">
 
@@ -55,16 +55,16 @@ Diese Statuscodes haben einen Namen zugeordnet, um sie besser zu erkennen, aber 
 
 Kurz:
 
-* `100` und darüber stehen für „Information“. Diese verwenden Sie selten direkt. Responses mit diesen Statuscodes können keinen Body haben.
-* **`200`** und darüber stehen für Responses, die „Successful“ („Erfolgreich“) waren. Diese verwenden Sie am häufigsten.
-    * `200` ist der Default-Statuscode, welcher bedeutet, alles ist „OK“.
-    * Ein anderes Beispiel ist `201`, „Created“ („Erzeugt“). Wird in der Regel verwendet, wenn ein neuer Datensatz in der Datenbank erzeugt wurde.
-    * Ein spezieller Fall ist `204`, „No Content“ („Kein Inhalt“). Diese Response wird verwendet, wenn es keinen Inhalt gibt, der zum Client zurückgeschickt wird, diese Response hat also keinen Body.
-* **`300`** und darüber steht für „Redirection“ („Umleitung“).  Responses mit diesen Statuscodes können einen oder keinen Body haben, mit Ausnahme von `304`, „Not Modified“ („Nicht verändert“), welche keinen haben darf.
-* **`400`** und darüber stehen für „Client error“-Responses („Client-Fehler“). Auch diese verwenden Sie am häufigsten.
-    * Ein Beispiel ist `404`, für eine „Not Found“-Response („Nicht gefunden“).
-    * Für allgemeine Fehler beim Client können Sie einfach `400` verwenden.
-* `500` und darüber stehen für Server-Fehler. Diese verwenden Sie fast nie direkt. Wenn etwas an irgendeiner Stelle in Ihrem Anwendungscode oder im Server schiefläuft, wird automatisch einer dieser Fehler-Statuscodes zurückgegeben.
+- `100` und darüber stehen für „Information“. Diese verwenden Sie selten direkt. Responses mit diesen Statuscodes können keinen Body haben.
+- **`200`** und darüber stehen für Responses, die „Successful“ („Erfolgreich“) waren. Diese verwenden Sie am häufigsten.
+  - `200` ist der Default-Statuscode, welcher bedeutet, alles ist „OK“.
+  - Ein anderes Beispiel ist `201`, „Created“ („Erzeugt“). Wird in der Regel verwendet, wenn ein neuer Datensatz in der Datenbank erzeugt wurde.
+  - Ein spezieller Fall ist `204`, „No Content“ („Kein Inhalt“). Diese Response wird verwendet, wenn es keinen Inhalt gibt, der zum Client zurückgeschickt wird, diese Response hat also keinen Body.
+- **`300`** und darüber steht für „Redirection“ („Umleitung“). Responses mit diesen Statuscodes können einen oder keinen Body haben, mit Ausnahme von `304`, „Not Modified“ („Nicht verändert“), welche keinen haben darf.
+- **`400`** und darüber stehen für „Client error“-Responses („Client-Fehler“). Auch diese verwenden Sie am häufigsten.
+  - Ein Beispiel ist `404`, für eine „Not Found“-Response („Nicht gefunden“).
+  - Für allgemeine Fehler beim Client können Sie einfach `400` verwenden.
+- `500` und darüber stehen für Server-Fehler. Diese verwenden Sie fast nie direkt. Wenn etwas an irgendeiner Stelle in Ihrem Anwendungscode oder im Server schiefläuft, wird automatisch einer dieser Fehler-Statuscodes zurückgegeben.
 
 /// tip | "Tipp"
 
@@ -77,7 +77,7 @@ Um mehr über Statuscodes zu lernen, und welcher wofür verwendet wird, lesen Si
 Schauen wir uns das vorherige Beispiel noch einmal an:
 
 ```Python hl_lines="6"
-{!../../../docs_src/response_status_code/tutorial001.py!}
+{!../../docs_src/response_status_code/tutorial001.py!}
 ```
 
 `201` ist der Statuscode für „Created“ („Erzeugt“).
@@ -87,7 +87,7 @@ Aber Sie müssen sich nicht daran erinnern, welcher dieser Codes was bedeutet.
 Sie können die Hilfsvariablen von `readyapi.status` verwenden.
 
 ```Python hl_lines="1  6"
-{!../../../docs_src/response_status_code/tutorial002.py!}
+{!../../docs_src/response_status_code/tutorial002.py!}
 ```
 
 Diese sind nur eine Annehmlichkeit und enthalten dieselbe Nummer, aber auf diese Weise können Sie die Autovervollständigung Ihres Editors verwenden, um sie zu finden:
@@ -104,4 +104,4 @@ Sie können auch `from starlette import status` verwenden.
 
 ## Den Defaultwert ändern
 
-Später sehen Sie, im [Handbuch für fortgeschrittene Benutzer](../advanced/response-change-status-code.md){.internal-link target=_blank}, wie Sie einen anderen Statuscode zurückgeben können, als den Default, den Sie hier deklarieren.
+Später sehen Sie, im [Handbuch für fortgeschrittene Benutzer](../advanced/response-change-status-code.md){.internal-link target=\_blank}, wie Sie einen anderen Statuscode zurückgeben können, als den Default, den Sie hier deklarieren.

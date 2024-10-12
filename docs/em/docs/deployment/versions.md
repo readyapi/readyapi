@@ -34,7 +34,7 @@ readyapi>=0.45.0,<0.46.0
 
 ## 💪 ⏬
 
-👆 💪 👀 💪 ⏬ (✅ ✅ ⚫️❔ ⏮️ 📰) [🚀 🗒](../release-notes.md){.internal-link target=_blank}.
+👆 💪 👀 💪 ⏬ (✅ ✅ ⚫️❔ ⏮️ 📰) [🚀 🗒](../release-notes.md){.internal-link target=\_blank}.
 
 ## 🔃 ⏬
 
@@ -66,7 +66,7 @@ readyapi>=0.45.0,<0.46.0
 
 👆 🔜 🚮 💯 👆 📱.
 
-⏮️ **ReadyAPI** ⚫️ 📶 ⏩ (👏 💃), ✅ 🩺: [🔬](../tutorial/testing.md){.internal-link target=_blank}
+⏮️ **ReadyAPI** ⚫️ 📶 ⏩ (👏 💃), ✅ 🩺: [🔬](../tutorial/testing.md){.internal-link target=\_blank}
 
 ⏮️ 👆 ✔️ 💯, ⤴️ 👆 💪 ♻ **ReadyAPI** ⏬ 🌖 ⏮️ 1️⃣, &amp; ⚒ 💭 👈 🌐 👆 📟 👷 ☑ 🏃 👆 💯.
 

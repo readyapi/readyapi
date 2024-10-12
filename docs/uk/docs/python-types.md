@@ -23,7 +23,7 @@ Python підтримує додаткові "підказки типу" ("type 
 Давайте почнемо з простого прикладу:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 Виклик цієї програми виводить:
@@ -34,12 +34,12 @@ John Doe
 
 Функція виконує наступне:
 
-* Бере `first_name` та `last_name`.
-* Конвертує кожну літеру кожного слова у верхній регістр за допомогою `title()`.
-* <abbr title="З’єднує їх, як одне ціле. З вмістом один за одним.">Конкатенує</abbr> їх разом із пробілом по середині.
+- Бере `first_name` та `last_name`.
+- Конвертує кожну літеру кожного слова у верхній регістр за допомогою `title()`.
+- <abbr title="З’єднує їх, як одне ціле. З вмістом один за одним.">Конкатенує</abbr> їх разом із пробілом по середині.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Редагуйте це
@@ -83,7 +83,7 @@ John Doe
 Це "type hints":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 Це не те саме, що оголошення значень за замовчуванням, як це було б з:
@@ -113,7 +113,7 @@ John Doe
 Перевірте цю функцію, вона вже має анотацію типу:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Оскільки редактор знає типи змінних, ви не тільки отримаєте автозаповнення, ви також отримаєте перевірку помилок:
@@ -123,7 +123,7 @@ John Doe
 Тепер ви знаєте, щоб виправити це, вам потрібно перетворити `age` у строку з допомогою `str(age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Оголошення типів
@@ -138,13 +138,13 @@ John Doe
 
 Ви можете використовувати, наприклад:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Generic-типи з параметрами типів
@@ -172,7 +172,7 @@ John Doe
 З модуля `typing`, імпортуємо `List` (з великої літери `L`):
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 Оголосимо змінну з тим самим синтаксисом двокрапки (`:`).
@@ -182,7 +182,7 @@ John Doe
 Оскільки список є типом, який містить деякі внутрішні типи, ви поміщаєте їх у квадратні дужки:
 
 ```Python hl_lines="4"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 ////
@@ -196,7 +196,7 @@ John Doe
 Оскільки список є типом, який містить деякі внутрішні типи, ви поміщаєте їх у квадратні дужки:
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006_py39.py!}
+{!> ../../docs_src/python_types/tutorial006_py39.py!}
 ```
 
 ////
@@ -234,7 +234,7 @@ John Doe
 //// tab | Python 3.8 і вище
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial007.py!}
+{!> ../../docs_src/python_types/tutorial007.py!}
 ```
 
 ////
@@ -242,15 +242,15 @@ John Doe
 //// tab | Python 3.9 і вище
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial007_py39.py!}
+{!> ../../docs_src/python_types/tutorial007_py39.py!}
 ```
 
 ////
 
 Це означає:
 
-* Змінна `items_t` це `tuple` з 3 елементами, `int`, ще `int`, та `str`.
-* Змінна `items_s` це `set`, і кожен його елемент типу `bytes`.
+- Змінна `items_t` це `tuple` з 3 елементами, `int`, ще `int`, та `str`.
+- Змінна `items_s` це `set`, і кожен його елемент типу `bytes`.
 
 #### Dict (словник)
 
@@ -263,7 +263,7 @@ John Doe
 //// tab | Python 3.8 і вище
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008.py!}
+{!> ../../docs_src/python_types/tutorial008.py!}
 ```
 
 ////
@@ -271,16 +271,16 @@ John Doe
 //// tab | Python 3.9 і вище
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008_py39.py!}
+{!> ../../docs_src/python_types/tutorial008_py39.py!}
 ```
 
 ////
 
 Це означає:
 
-* Змінна `prices` це `dict`:
-    * Ключі цього `dict` типу `str` (наприклад, назва кожного елементу).
-    * Значення цього `dict` типу `float` (наприклад, ціна кожного елементу).
+- Змінна `prices` це `dict`:
+  - Ключі цього `dict` типу `str` (наприклад, назва кожного елементу).
+  - Значення цього `dict` типу `float` (наприклад, ціна кожного елементу).
 
 #### Union (об'єднання)
 
@@ -293,7 +293,7 @@ John Doe
 //// tab | Python 3.8 і вище
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008b.py!}
+{!> ../../docs_src/python_types/tutorial008b.py!}
 ```
 
 ////
@@ -301,7 +301,7 @@ John Doe
 //// tab | Python 3.10 і вище
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008b_py310.py!}
+{!> ../../docs_src/python_types/tutorial008b_py310.py!}
 ```
 
 ////
@@ -315,7 +315,7 @@ John Doe
 У Python 3.6 і вище (включаючи Python 3.10) ви можете оголосити його, імпортувавши та використовуючи `Optional` з модуля `typing`.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Використання `Optional[str]` замість просто `str` дозволить редактору допомогти вам виявити помилки, коли ви могли б вважати, що значенням завжди є `str`, хоча насправді воно також може бути `None`.
@@ -327,7 +327,7 @@ John Doe
 //// tab | Python 3.8 і вище
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009.py!}
+{!> ../../docs_src/python_types/tutorial009.py!}
 ```
 
 ////
@@ -335,7 +335,7 @@ John Doe
 //// tab | Python 3.8 і вище - альтернатива
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009b.py!}
+{!> ../../docs_src/python_types/tutorial009b.py!}
 ```
 
 ////
@@ -343,7 +343,7 @@ John Doe
 //// tab | Python 3.10 і вище
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial009_py310.py!}
+{!> ../../docs_src/python_types/tutorial009_py310.py!}
 ```
 
 ////
@@ -354,13 +354,13 @@ John Doe
 
 //// tab | Python 3.8 і вище
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Union`
-* `Optional`
-* ...та інші.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Union`
+- `Optional`
+- ...та інші.
 
 ////
 
@@ -368,16 +368,16 @@ John Doe
 
 Ви можете використовувати ті самі вбудовані типи, як generic (з квадратними дужками та типами всередині):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 І те саме, що й у Python 3.8, із модуля `typing`:
 
-* `Union`
-* `Optional`
-* ...та інші.
+- `Union`
+- `Optional`
+- ...та інші.
 
 ////
 
@@ -385,16 +385,16 @@ John Doe
 
 Ви можете використовувати ті самі вбудовані типи, як generic (з квадратними дужками та типами всередині):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 І те саме, що й у Python 3.8, із модуля `typing`:
 
-* `Union`
-* `Optional` (так само як у Python 3.8)
-* ...та інші.
+- `Union`
+- `Optional` (так само як у Python 3.8)
+- ...та інші.
 
 У Python 3.10, як альтернатива використанню `Union` та `Optional`, ви можете використовувати <abbr title='також називають «побітовим "або" оператором», але це значення тут не актуальне'>вертикальну смугу (`|`)</abbr> щоб оголосити об'єднання типів.
 
@@ -407,13 +407,13 @@ John Doe
 Скажімо, у вас є клас `Person` з імʼям:
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Потім ви можете оголосити змінну типу `Person`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 І знову ж таки, ви отримуєте всю підтримку редактора:
@@ -437,7 +437,7 @@ John Doe
 //// tab | Python 3.8 і вище
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011.py!}
+{!> ../../docs_src/python_types/tutorial011.py!}
 ```
 
 ////
@@ -445,7 +445,7 @@ John Doe
 //// tab | Python 3.9 і вище
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py39.py!}
+{!> ../../docs_src/python_types/tutorial011_py39.py!}
 ```
 
 ////
@@ -453,7 +453,7 @@ John Doe
 //// tab | Python 3.10 і вище
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py310.py!}
+{!> ../../docs_src/python_types/tutorial011_py310.py!}
 ```
 
 ////
@@ -466,7 +466,7 @@ John Doe
 
 **ReadyAPI** повністю базується на Pydantic.
 
-Ви побачите набагато більше цього всього на практиці в [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
+Ви побачите набагато більше цього всього на практиці в [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
 
 ## Анотації типів у **ReadyAPI**
 
@@ -474,19 +474,19 @@ John Doe
 
 З **ReadyAPI** ви оголошуєте параметри з підказками типу, і отримуєте:
 
-* **Підтримку редактора**.
-* **Перевірку типів**.
+- **Підтримку редактора**.
+- **Перевірку типів**.
 
 ...і **ReadyAPI** використовує ті самі оголошення для:
 
-* **Визначення вимог**: з параметрів шляху запиту, параметрів запиту, заголовків, тіл, залежностей тощо.
-* **Перетворення даних**: із запиту в необхідний тип.
-* **Перевірка даних**: що надходять від кожного запиту:
-    * Генерування **автоматичних помилок**, що повертаються клієнту, коли дані недійсні.
-* **Документування** API за допомогою OpenAPI:
-    * який потім використовується для автоматичної інтерактивної документації користувальницьких інтерфейсів.
+- **Визначення вимог**: з параметрів шляху запиту, параметрів запиту, заголовків, тіл, залежностей тощо.
+- **Перетворення даних**: із запиту в необхідний тип.
+- **Перевірка даних**: що надходять від кожного запиту:
+  - Генерування **автоматичних помилок**, що повертаються клієнту, коли дані недійсні.
+- **Документування** API за допомогою OpenAPI:
+  - який потім використовується для автоматичної інтерактивної документації користувальницьких інтерфейсів.
 
-Все це може здатися абстрактним. Не хвилюйтеся. Ви побачите все це в дії в [Туторіал - Посібник користувача](tutorial/index.md){.internal-link target=_blank}.
+Все це може здатися абстрактним. Не хвилюйтеся. Ви побачите все це в дії в [Туторіал - Посібник користувача](tutorial/index.md){.internal-link target=\_blank}.
 
 Важливо те, що за допомогою стандартних типів Python в одному місці (замість того, щоб додавати більше класів, декораторів тощо), **ReadyAPI** зробить багато роботи за вас.
 

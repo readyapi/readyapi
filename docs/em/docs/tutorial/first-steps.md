@@ -3,7 +3,7 @@
 🙅 ReadyAPI 📁 💪 👀 💖 👉:
 
 ```Python
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 📁 👈 📁 `main.py`.
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 📋 `uvicorn main:app` 🔗:
 
-* `main`: 📁 `main.py` (🐍 "🕹").
-* `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = ReadyAPI()`.
-* `--reload`: ⚒ 💽 ⏏ ⏮️ 📟 🔀. 🕴 ⚙️ 🛠️.
+- `main`: 📁 `main.py` (🐍 "🕹").
+- `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = ReadyAPI()`.
+- `--reload`: ⚒ 💽 ⏏ ⏮️ 📟 🔀. 🕴 ⚙️ 🛠️.
 
 ///
 
@@ -134,7 +134,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ### 🔁 1️⃣: 🗄 `ReadyAPI`
 
 ```Python hl_lines="1"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `ReadyAPI` 🐍 🎓 👈 🚚 🌐 🛠️ 👆 🛠️.
@@ -150,7 +150,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ### 🔁 2️⃣: ✍ `ReadyAPI` "👐"
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 📥 `app` 🔢 🔜 "👐" 🎓 `ReadyAPI`.
@@ -172,7 +172,7 @@ $ uvicorn main:app --reload
 🚥 👆 ✍ 👆 📱 💖:
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial002.py!}
+{!../../docs_src/first_steps/tutorial002.py!}
 ```
 
 &amp; 🚮 ⚫️ 📁 `main.py`, ⤴️ 👆 🔜 🤙 `uvicorn` 💖:
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### 🔁 3️⃣: ✍ *➡ 🛠️*
+### 🔁 3️⃣: ✍ _➡ 🛠️_
 
 #### ➡
 
@@ -219,17 +219,17 @@ https://example.com/items/foo
 
 1️⃣:
 
-* `POST`
-* `GET`
-* `PUT`
-* `DELETE`
+- `POST`
+- `GET`
+- `PUT`
+- `DELETE`
 
 ...&amp; 🌅 😍 🕐:
 
-* `OPTIONS`
-* `HEAD`
-* `PATCH`
-* `TRACE`
+- `OPTIONS`
+- `HEAD`
+- `PATCH`
+- `TRACE`
 
 🇺🇸🔍 🛠️, 👆 💪 🔗 🔠 ➡ ⚙️ 1️⃣ (⚖️ 🌅) 👫 "👩‍🔬".
 
@@ -239,25 +239,25 @@ https://example.com/items/foo
 
 🛎 👆 ⚙️:
 
-* `POST`: ✍ 💽.
-* `GET`: ✍ 💽.
-* `PUT`: ℹ 💽.
-* `DELETE`: ❎ 💽.
+- `POST`: ✍ 💽.
+- `GET`: ✍ 💽.
+- `PUT`: ℹ 💽.
+- `DELETE`: ❎ 💽.
 
 , 🗄, 🔠 🇺🇸🔍 👩‍🔬 🤙 "🛠️".
 
 👥 🔜 🤙 👫 "**🛠️**" 💁‍♂️.
 
-#### 🔬 *➡ 🛠️ 👨‍🎨*
+#### 🔬 _➡ 🛠️ 👨‍🎨_
 
 ```Python hl_lines="6"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `@app.get("/")` 💬 **ReadyAPI** 👈 🔢 ▶️️ 🔛 🈚 🚚 📨 👈 🚶:
 
-* ➡ `/`
-* ⚙️ <abbr title="an HTTP GET method"><code>get</code> 🛠️</abbr>
+- ➡ `/`
+- ⚙️ <abbr title="an HTTP GET method"><code>get</code> 🛠️</abbr>
 
 /// info | "`@decorator` ℹ"
 
@@ -265,7 +265,7 @@ https://example.com/items/foo
 
 👆 🚮 ⚫️ 🔛 🔝 🔢. 💖 📶 📔 👒 (👤 💭 👈 🌐❔ ⚖ 👟 ⚪️➡️).
 
- "👨‍🎨" ✊ 🔢 🔛 &amp; 🔨 🕳 ⏮️ ⚫️.
+"👨‍🎨" ✊ 🔢 🔛 &amp; 🔨 🕳 ⏮️ ⚫️.
 
 👆 💼, 👉 👨‍🎨 💬 **ReadyAPI** 👈 🔢 🔛 🔗 **➡** `/` ⏮️ **🛠️** `get`.
 
@@ -275,16 +275,16 @@ https://example.com/items/foo
 
 👆 💪 ⚙️ 🎏 🛠️:
 
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
 
 &amp; 🌅 😍 🕐:
 
-* `@app.options()`
-* `@app.head()`
-* `@app.patch()`
-* `@app.trace()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
 
 /// tip
 
@@ -302,12 +302,12 @@ https://example.com/items/foo
 
 👉 👆 "**➡ 🛠️ 🔢**":
 
-* **➡**: `/`.
-* **🛠️**: `get`.
-* **🔢**: 🔢 🔛 "👨‍🎨" (🔛 `@app.get("/")`).
+- **➡**: `/`.
+- **🛠️**: `get`.
+- **🔢**: 🔢 🔛 "👨‍🎨" (🔛 `@app.get("/")`).
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 👉 🐍 🔢.
@@ -321,19 +321,19 @@ https://example.com/items/foo
 👆 💪 🔬 ⚫️ 😐 🔢 ↩️ `async def`:
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial003.py!}
+{!../../docs_src/first_steps/tutorial003.py!}
 ```
 
 /// note
 
-🚥 👆 🚫 💭 🔺, ✅ [🔁: *"🏃 ❓"*](../async.md#_2){.internal-link target=_blank}.
+🚥 👆 🚫 💭 🔺, ✅ [🔁: _"🏃 ❓"_](../async.md#_2){.internal-link target=\_blank}.
 
 ///
 
 ### 🔁 5️⃣: 📨 🎚
 
 ```Python hl_lines="8"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 👆 💪 📨 `dict`, `list`, ⭐ 💲 `str`, `int`, ♒️.
@@ -344,8 +344,8 @@ https://example.com/items/foo
 
 ## 🌃
 
-* 🗄 `ReadyAPI`.
-* ✍ `app` 👐.
-* ✍ **➡ 🛠️ 👨‍🎨** (💖 `@app.get("/")`).
-* ✍ **➡ 🛠️ 🔢** (💖 `def root(): ...` 🔛).
-* 🏃 🛠️ 💽 (💖 `uvicorn main:app --reload`).
+- 🗄 `ReadyAPI`.
+- ✍ `app` 👐.
+- ✍ **➡ 🛠️ 👨‍🎨** (💖 `@app.get("/")`).
+- ✍ **➡ 🛠️ 🔢** (💖 `def root(): ...` 🔛).
+- 🏃 🛠️ 💽 (💖 `uvicorn main:app --reload`).

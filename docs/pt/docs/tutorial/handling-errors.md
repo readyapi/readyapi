@@ -6,11 +6,10 @@ Esse cliente pode ser um browser com um frontend, o código de outra pessoa, um 
 
 Pode ser que você precise comunicar ao cliente que:
 
-* O cliente não tem direitos para realizar aquela operação.
-* O cliente não tem acesso aquele recurso.
-* O item que o cliente está tentando acessar não existe.
-* etc.
-
+- O cliente não tem direitos para realizar aquela operação.
+- O cliente não tem acesso aquele recurso.
+- O item que o cliente está tentando acessar não existe.
+- etc.
 
 Nesses casos, você normalmente retornaria um **HTTP status code** próximo ao status code na faixa do status code **400** (do 400 ao 499).
 
@@ -22,12 +21,12 @@ Você se lembra de todos aqueles erros (e piadas) a respeito do "**404 Not Found
 
 ## Use o `HTTPException`
 
-Para retornar ao cliente *responses* HTTP com erros, use o `HTTPException`.
+Para retornar ao cliente _responses_ HTTP com erros, use o `HTTPException`.
 
 ### Import `HTTPException`
 
 ```Python hl_lines="1"
-{!../../../docs_src/handling_errors/tutorial001.py!}
+{!../../docs_src/handling_errors/tutorial001.py!}
 ```
 
 ### Lance o `HTTPException` no seu código.
@@ -43,14 +42,12 @@ O benefício de lançar uma exceção em vez de retornar um valor ficará mais e
 Neste exemplo, quando o cliente pede, na requisição, por um item cujo ID não existe, a exceção com o status code `404` é lançada:
 
 ```Python hl_lines="11"
-{!../../../docs_src/handling_errors/tutorial001.py!}
+{!../../docs_src/handling_errors/tutorial001.py!}
 ```
 
 ### A response resultante
 
-
 Se o cliente faz uma requisição para `http://example.com/items/foo` (um `item_id` `"foo"`), esse cliente receberá um HTTP status code 200, e uma resposta JSON:
-
 
 ```
 {
@@ -58,7 +55,7 @@ Se o cliente faz uma requisição para `http://example.com/items/foo` (um `item_
 }
 ```
 
-Mas se o cliente faz uma requisição para `http://example.com/items/bar` (ou seja, um não existente `item_id "bar"`), esse cliente receberá um HTTP status code 404 (o erro "não encontrado" — *not found error*), e uma resposta JSON:
+Mas se o cliente faz uma requisição para `http://example.com/items/bar` (ou seja, um não existente `item_id "bar"`), esse cliente receberá um HTTP status code 404 (o erro "não encontrado" — _not found error_), e uma resposta JSON:
 
 ```JSON
 {
@@ -84,7 +81,7 @@ Você provavelmente não precisará utilizar esses headers diretamente no seu c�
 Mas caso você precise, para um cenário mais complexo, você pode adicionar headers customizados:
 
 ```Python hl_lines="14"
-{!../../../docs_src/handling_errors/tutorial002.py!}
+{!../../docs_src/handling_errors/tutorial002.py!}
 ```
 
 ## Instalando manipuladores de exceções customizados
@@ -96,10 +93,10 @@ Digamos que você tenha uma exceção customizada `UnicornException` que você (
 Nesse cenário, se você precisa manipular essa exceção de modo global com o ReadyAPI, você pode adicionar um manipulador de exceção customizada com `@app.exception_handler()`.
 
 ```Python hl_lines="5-7  13-18  24"
-{!../../../docs_src/handling_errors/tutorial003.py!}
+{!../../docs_src/handling_errors/tutorial003.py!}
 ```
 
-Nesse cenário, se você fizer uma requisição para `/unicorns/yolo`, a *operação de caminho* vai lançar (`raise`) o `UnicornException`.
+Nesse cenário, se você fizer uma requisição para `/unicorns/yolo`, a _operação de caminho_ vai lançar (`raise`) o `UnicornException`.
 
 Essa exceção será manipulada, contudo, pelo `unicorn_exception_handler`.
 
@@ -132,7 +129,7 @@ Quando a requisição contém dados inválidos, **ReadyAPI** internamente lança
 Para sobrescrevê-lo, importe o `RequestValidationError` e use-o com o `@app.exception_handler(RequestValidationError)` para decorar o manipulador de exceções.
 
 ```Python hl_lines="2  14-16"
-{!../../../docs_src/handling_errors/tutorial004.py!}
+{!../../docs_src/handling_errors/tutorial004.py!}
 ```
 
 Se você for ao `/items/foo`, em vez de receber o JSON padrão com o erro:
@@ -174,16 +171,16 @@ Você pode pular estes detalhes técnicos caso eles não sejam importantes para 
 
 Contudo, o cliente ou usuário não terão acesso a ele. Ao contrário, o cliente receberá um "Internal Server Error" com o HTTP status code `500`.
 
-E assim deve ser porque seria um bug no seu código ter o `ValidationError` do Pydantic na sua *response*, ou em qualquer outro lugar do seu código (que não na requisição do cliente).
+E assim deve ser porque seria um bug no seu código ter o `ValidationError` do Pydantic na sua _response_, ou em qualquer outro lugar do seu código (que não na requisição do cliente).
 
 E enquanto você conserta o bug, os clientes / usuários não deveriam ter acesso às informações internas do erro, porque, desse modo, haveria exposição de uma vulnerabilidade de segurança.
 
 Do mesmo modo, você pode sobreescrever o `HTTPException`.
 
-Por exemplo, você pode querer retornar uma *response* em *plain text* ao invés de um JSON para os seguintes erros:
+Por exemplo, você pode querer retornar uma _response_ em _plain text_ ao invés de um JSON para os seguintes erros:
 
 ```Python hl_lines="3-4  9-11  22"
-{!../../../docs_src/handling_errors/tutorial004.py!}
+{!../../docs_src/handling_errors/tutorial004.py!}
 ```
 
 /// note | "Detalhes Técnicos"
@@ -198,7 +195,7 @@ Você pode usar `from starlette.responses import PlainTextResponse`.
 
 O `RequestValidationError` contém o `body` que ele recebeu de dados inválidos.
 
-Você pode utilizá-lo enquanto desenvolve seu app para conectar o *body* e debugá-lo, e assim retorná-lo ao usuário, etc.
+Você pode utilizá-lo enquanto desenvolve seu app para conectar o _body_ e debugá-lo, e assim retorná-lo ao usuário, etc.
 
 Tente enviar um item inválido como este:
 
@@ -209,7 +206,7 @@ Tente enviar um item inválido como este:
 }
 ```
 
-Você receberá uma *response* informando-o de que a data é inválida, e contendo o *body* recebido:
+Você receberá uma _response_ informando-o de que a data é inválida, e contendo o _body_ recebido:
 
 ```JSON hl_lines="12-15"
 {
@@ -236,9 +233,9 @@ O **ReadyAPI** tem o seu próprio `HTTPException`.
 
 E a classe de erro `HTTPException` do **ReadyAPI** herda da classe de erro do `HTTPException` do Starlette.
 
-A diferença entre os dois é a de que o `HTTPException` do **ReadyAPI** permite que você adicione *headers* que serão incluídos nas *responses*.
+A diferença entre os dois é a de que o `HTTPException` do **ReadyAPI** permite que você adicione _headers_ que serão incluídos nas _responses_.
 
-Esses *headers* são necessários/utilizados internamente pelo OAuth 2.0 e também por outras utilidades de segurança.
+Esses _headers_ são necessários/utilizados internamente pelo OAuth 2.0 e também por outras utilidades de segurança.
 
 Portanto, você pode continuar lançando o `HTTPException` do **ReadyAPI** normalmente no seu código.
 
@@ -252,10 +249,10 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 ### Re-use os manipulares de exceção do **ReadyAPI**
 
-Se você quer usar a exceção em conjunto com o mesmo manipulador de exceção *default* do **ReadyAPI**, você pode importar e re-usar esses manipuladores de exceção do `readyapi.exception_handlers`:
+Se você quer usar a exceção em conjunto com o mesmo manipulador de exceção _default_ do **ReadyAPI**, você pode importar e re-usar esses manipuladores de exceção do `readyapi.exception_handlers`:
 
 ```Python hl_lines="2-5  15  21"
-{!../../../docs_src/handling_errors/tutorial006.py!}
+{!../../docs_src/handling_errors/tutorial006.py!}
 ```
 
-Nesse exemplo você apenas imprime (`print`) o erro com uma mensagem expressiva. Mesmo assim, dá para pegar a ideia. Você pode usar a exceção e então apenas re-usar o manipulador de exceção *default*.
+Nesse exemplo você apenas imprime (`print`) o erro com uma mensagem expressiva. Mesmo assim, dá para pegar a ideia. Você pode usar a exceção e então apenas re-usar o manipulador de exceção _default_.

@@ -12,10 +12,10 @@
 
 이는 여러분이 다음과 같은 사항을 필요로 할 때 매우 유용합니다:
 
-* 공용된 로직을 가졌을 경우 (같은 코드 로직이 계속 반복되는 경우).
-* 데이터베이스 연결을 공유하는 경우.
-* 보안, 인증, 역할 요구 사항 등을 강제하는 경우.
-* 그리고 많은 다른 사항...
+- 공용된 로직을 가졌을 경우 (같은 코드 로직이 계속 반복되는 경우).
+- 데이터베이스 연결을 공유하는 경우.
+- 보안, 인증, 역할 요구 사항 등을 강제하는 경우.
+- 그리고 많은 다른 사항...
 
 이 모든 사항을 할 때 코드 반복을 최소화합니다.
 
@@ -34,7 +34,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -42,7 +42,7 @@
 //// tab | Python 3.9+
 
 ```Python hl_lines="8-11"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -50,7 +50,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-12"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -64,7 +64,7 @@
 ///
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -78,7 +78,7 @@
 ///
 
 ```Python hl_lines="8-11"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -95,9 +95,9 @@
 
 이 경우, 이 의존성은 다음과 같은 경우를 기대합니다:
 
-* 선택적인 쿼리 매개변수 `q`, `str`을 자료형으로 가집니다.
-* 선택적인 쿼리 매개변수 `skip`, `int`를 자료형으로 가지며 기본 값은 `0`입니다.
-* 선택적인 쿼리 매개변수 `limit`,`int`를 자료형으로 가지며 기본 값은 `100`입니다.
+- 선택적인 쿼리 매개변수 `q`, `str`을 자료형으로 가집니다.
+- 선택적인 쿼리 매개변수 `skip`, `int`를 자료형으로 가지며 기본 값은 `0`입니다.
+- 선택적인 쿼리 매개변수 `limit`,`int`를 자료형으로 가지며 기본 값은 `100`입니다.
 
 그 후 위의 값을 포함한 `dict` 자료형으로 반환할 뿐입니다.
 
@@ -107,7 +107,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 
 옛날 버전을 가지고 있는 경우, `Annotated`를 사용하려 하면 에러를 맞이하게 될 것입니다.
 
-`Annotated`를 사용하기 전에 최소 0.95.1로 [ReadyAPI 버전 업그레이드](../../deployment/versions.md#readyapi_2){.internal-link target=_blank}를 확실하게 하세요.
+`Annotated`를 사용하기 전에 최소 0.95.1로 [ReadyAPI 버전 업그레이드](../../deployment/versions.md#readyapi_2){.internal-link target=\_blank}를 확실하게 하세요.
 
 ///
 
@@ -116,7 +116,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.10+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -124,7 +124,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -132,7 +132,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.8+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -146,7 +146,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -160,7 +160,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 ///
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -172,7 +172,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.10+
 
 ```Python hl_lines="13  18"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -180,7 +180,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.9+
 
 ```Python hl_lines="15  20"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -188,7 +188,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 //// tab | Python 3.8+
 
 ```Python hl_lines="16  21"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -202,7 +202,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 ///
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -216,7 +216,7 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 ///
 
 ```Python hl_lines="15  20"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -239,9 +239,9 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 
 새로운 요청이 도착할 때마다, **ReadyAPI**는 다음을 처리합니다:
 
-* 올바른 매개변수를 가진 의존성("디펜더블") 함수를 호출합니다.
-* 함수에서 결과를 받아옵니다.
-* *경로 작동 함수*에 있는 매개변수에 그 결과를 할당합니다
+- 올바른 매개변수를 가진 의존성("디펜더블") 함수를 호출합니다.
+- 함수에서 결과를 받아옵니다.
+- *경로 작동 함수*에 있는 매개변수에 그 결과를 할당합니다
 
 ```mermaid
 graph TB
@@ -279,7 +279,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 //// tab | Python 3.10+
 
 ```Python hl_lines="12  16  21"
-{!> ../../../docs_src/dependencies/tutorial001_02_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_02_an_py310.py!}
 ```
 
 ////
@@ -287,7 +287,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 //// tab | Python 3.9+
 
 ```Python hl_lines="14  18  23"
-{!> ../../../docs_src/dependencies/tutorial001_02_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_02_an_py39.py!}
 ```
 
 ////
@@ -295,7 +295,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 //// tab | Python 3.8+
 
 ```Python hl_lines="15  19  24"
-{!> ../../../docs_src/dependencies/tutorial001_02_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_02_an.py!}
 ```
 
 ////
@@ -310,7 +310,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 이 의존성은 계속해서 예상한대로 작동할 것이며, **제일 좋은 부분**은 **타입 정보가 보존된다는 것입니다**. 즉 여러분의 편집기가 **자동 완성**, **인라인 에러** 등을 계속해서 제공할 수 있다는 것입니다. `mypy`같은 다른 도구도 마찬가지입니다.
 
-이는 특히 **많은 *경로 작동***에서 **같은 의존성**을 계속해서 사용하는 **거대 코드 기반**안에서 사용하면 유용할 것입니다.
+이는 특히 **많은 _경로 작동_**에서 **같은 의존성**을 계속해서 사용하는 **거대 코드 기반**안에서 사용하면 유용할 것입니다.
 
 ## `async`하게, 혹은 `async`하지 않게
 
@@ -318,13 +318,13 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 `async def`을 사용하거나 혹은 일반적인 `def`를 사용할 수 있습니다.
 
-그리고 일반적인 `def` *경로 작동 함수* 안에 `async def`로 의존성을 선언할 수 있으며, `async def` *경로 작동 함수* 안에 `def`로 의존성을 선언하는 등의 방법이 있습니다.
+그리고 일반적인 `def` _경로 작동 함수_ 안에 `async def`로 의존성을 선언할 수 있으며, `async def` _경로 작동 함수_ 안에 `def`로 의존성을 선언하는 등의 방법이 있습니다.
 
 아무 문제 없습니다. **ReadyAPI**는 무엇을 할지 알고 있습니다.
 
 /// note | "참고"
 
-잘 모르시겠다면, [Async: *"In a hurry?"*](../../async.md){.internal-link target=_blank} 문서에서 `async`와 `await`에 대해 확인할 수 있습니다.
+잘 모르시겠다면, [Async: _"In a hurry?"_](../../async.md){.internal-link target=\_blank} 문서에서 `async`와 `await`에 대해 확인할 수 있습니다.
 
 ///
 
@@ -344,15 +344,15 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 여러분은 이러한 함수들을 절대 직접 호출하지 않습니다. 프레임워크(이 경우 **ReadyAPI**)에 의해 호출됩니다.
 
-의존성 주입 시스템과 함께라면 **ReadyAPI**에게 여러분의 *경로 작동 함수*가 실행되기 전에 실행되어야 하는 무언가에 여러분의 *경로 작동 함수* 또한 "의존"하고 있음을 알릴 수 있으며, **ReadyAPI**는 이를 실행하고 결과를 "주입"할 것입니다.
+의존성 주입 시스템과 함께라면 **ReadyAPI**에게 여러분의 *경로 작동 함수*가 실행되기 전에 실행되어야 하는 무언가에 여러분의 _경로 작동 함수_ 또한 "의존"하고 있음을 알릴 수 있으며, **ReadyAPI**는 이를 실행하고 결과를 "주입"할 것입니다.
 
 "의존성 주입"이라는 동일한 아이디어에 대한 다른 일반적인 용어는 다음과 같습니다:
 
-* 리소스
-* 제공자
-* 서비스
-* 인젝터블
-* 컴포넌트
+- 리소스
+- 제공자
+- 서비스
+- 인젝터블
+- 컴포넌트
 
 ## **ReadyAPI** 플러그인
 
@@ -366,14 +366,14 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 의존성 주입 시스템의 단순함은 **ReadyAPI**를 다음과 같은 요소들과 호환할 수 있게 합니다:
 
-* 모든 관계형 데이터베이스
-* NoSQL 데이터베이스
-* 외부 패키지
-* 외부 API
-* 인증 및 권한 부여 시스템
-* API 사용 모니터링 시스템
-* 응답 데이터 주입 시스템
-* 기타 등등.
+- 모든 관계형 데이터베이스
+- NoSQL 데이터베이스
+- 외부 패키지
+- 외부 API
+- 인증 및 권한 부여 시스템
+- API 사용 모니터링 시스템
+- 응답 데이터 주입 시스템
+- 기타 등등.
 
 ## 간편하고 강력하다
 
@@ -383,12 +383,12 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 끝에는, 계층적인 나무로 된 의존성이 만들어지며, 그리고 **의존성 주입** 시스템은 (하위 의존성도 마찬가지로) 이러한 의존성들을 처리하고 각 단계마다 결과를 제공합니다(주입합니다).
 
-예를 들면, 여러분이 4개의 API 엔드포인트(*경로 작동*)를 가지고 있다고 해봅시다:
+예를 들면, 여러분이 4개의 API 엔드포인트(_경로 작동_)를 가지고 있다고 해봅시다:
 
-* `/items/public/`
-* `/items/private/`
-* `/users/{user_id}/activate`
-* `/items/pro/`
+- `/items/public/`
+- `/items/private/`
+- `/users/{user_id}/activate`
+- `/items/pro/`
 
 그 다음 각각에 대해 그저 의존성과 하위 의존성을 사용하여 다른 권한 요구 사항을 추가할 수 있을 겁니다:
 

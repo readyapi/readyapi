@@ -23,7 +23,7 @@ If you are a Python expert, and you already know everything about type hints, sk
 Let's start with a simple example:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 Calling this program outputs:
@@ -34,12 +34,12 @@ John Doe
 
 The function does the following:
 
-* Takes a `first_name` and `last_name`.
-* Converts the first letter of each one to upper case with `title()`.
-* <abbr title="Puts them together, as one. With the contents of one after the other.">Concatenates</abbr> them with a space in the middle.
+- Takes a `first_name` and `last_name`.
+- Converts the first letter of each one to upper case with `title()`.
+- <abbr title="Puts them together, as one. With the contents of one after the other.">Concatenates</abbr> them with a space in the middle.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Edit it
@@ -83,7 +83,7 @@ That's it.
 Those are the "type hints":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 That is not the same as declaring default values like would be with:
@@ -113,7 +113,7 @@ With that, you can scroll, seeing the options, until you find the one that "ring
 Check this function, it already has type hints:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Because the editor knows the types of the variables, you don't only get completion, you also get error checks:
@@ -123,7 +123,7 @@ Because the editor knows the types of the variables, you don't only get completi
 Now you know that you have to fix it, convert `age` to a string with `str(age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Declaring types
@@ -138,13 +138,13 @@ You can declare all the standard Python types, not only `str`.
 
 You can use, for example:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Generic types with type parameters
@@ -182,7 +182,7 @@ As the type, put `list`.
 As the list is a type that contains some internal types, you put them in square brackets:
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006_py39.py!}
+{!> ../../docs_src/python_types/tutorial006_py39.py!}
 ```
 
 ////
@@ -192,7 +192,7 @@ As the list is a type that contains some internal types, you put them in square 
 From `typing`, import `List` (with a capital `L`):
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 Declare the variable, with the same colon (`:`) syntax.
@@ -202,7 +202,7 @@ As the type, put the `List` that you imported from `typing`.
 As the list is a type that contains some internal types, you put them in square brackets:
 
 ```Python hl_lines="4"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 ////
@@ -240,7 +240,7 @@ You would do the same to declare `tuple`s and `set`s:
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial007_py39.py!}
+{!> ../../docs_src/python_types/tutorial007_py39.py!}
 ```
 
 ////
@@ -248,15 +248,15 @@ You would do the same to declare `tuple`s and `set`s:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial007.py!}
+{!> ../../docs_src/python_types/tutorial007.py!}
 ```
 
 ////
 
 This means:
 
-* The variable `items_t` is a `tuple` with 3 items, an `int`, another `int`, and a `str`.
-* The variable `items_s` is a `set`, and each of its items is of type `bytes`.
+- The variable `items_t` is a `tuple` with 3 items, an `int`, another `int`, and a `str`.
+- The variable `items_s` is a `set`, and each of its items is of type `bytes`.
 
 #### Dict
 
@@ -269,7 +269,7 @@ The second type parameter is for the values of the `dict`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008_py39.py!}
+{!> ../../docs_src/python_types/tutorial008_py39.py!}
 ```
 
 ////
@@ -277,16 +277,16 @@ The second type parameter is for the values of the `dict`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008.py!}
+{!> ../../docs_src/python_types/tutorial008.py!}
 ```
 
 ////
 
 This means:
 
-* The variable `prices` is a `dict`:
-    * The keys of this `dict` are of type `str` (let's say, the name of each item).
-    * The values of this `dict` are of type `float` (let's say, the price of each item).
+- The variable `prices` is a `dict`:
+  - The keys of this `dict` are of type `str` (let's say, the name of each item).
+  - The values of this `dict` are of type `float` (let's say, the price of each item).
 
 #### Union
 
@@ -299,7 +299,7 @@ In Python 3.10 there's also a **new syntax** where you can put the possible type
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008b_py310.py!}
+{!> ../../docs_src/python_types/tutorial008b_py310.py!}
 ```
 
 ////
@@ -307,7 +307,7 @@ In Python 3.10 there's also a **new syntax** where you can put the possible type
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008b.py!}
+{!> ../../docs_src/python_types/tutorial008b.py!}
 ```
 
 ////
@@ -321,7 +321,7 @@ You can declare that a value could have a type, like `str`, but that it could al
 In Python 3.6 and above (including Python 3.10) you can declare it by importing and using `Optional` from the `typing` module.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Using `Optional[str]` instead of just `str` will let the editor help you detect errors where you could be assuming that a value is always a `str`, when it could actually be `None` too.
@@ -333,7 +333,7 @@ This also means that in Python 3.10, you can use `Something | None`:
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial009_py310.py!}
+{!> ../../docs_src/python_types/tutorial009_py310.py!}
 ```
 
 ////
@@ -341,7 +341,7 @@ This also means that in Python 3.10, you can use `Something | None`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009.py!}
+{!> ../../docs_src/python_types/tutorial009.py!}
 ```
 
 ////
@@ -349,7 +349,7 @@ This also means that in Python 3.10, you can use `Something | None`:
 //// tab | Python 3.8+ alternative
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009b.py!}
+{!> ../../docs_src/python_types/tutorial009b.py!}
 ```
 
 ////
@@ -358,8 +358,8 @@ This also means that in Python 3.10, you can use `Something | None`:
 
 If you are using a Python version below 3.10, here's a tip from my very **subjective** point of view:
 
-* 🚨 Avoid using `Optional[SomeType]`
-* Instead ✨ **use `Union[SomeType, None]`** ✨.
+- 🚨 Avoid using `Optional[SomeType]`
+- Instead ✨ **use `Union[SomeType, None]`** ✨.
 
 Both are equivalent and underneath they are the same, but I would recommend `Union` instead of `Optional` because the word "**optional**" would seem to imply that the value is optional, and it actually means "it can be `None`", even if it's not optional and is still required.
 
@@ -370,7 +370,7 @@ It's just about the words and names. But those words can affect how you and your
 As an example, let's take this function:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c.py!}
+{!../../docs_src/python_types/tutorial009c.py!}
 ```
 
 The parameter `name` is defined as `Optional[str]`, but it is **not optional**, you cannot call the function without the parameter:
@@ -379,7 +379,7 @@ The parameter `name` is defined as `Optional[str]`, but it is **not optional**, 
 say_hi()  # Oh, no, this throws an error! 😱
 ```
 
-The `name` parameter is **still required** (not *optional*) because it doesn't have a default value. Still, `name` accepts `None` as the value:
+The `name` parameter is **still required** (not _optional_) because it doesn't have a default value. Still, `name` accepts `None` as the value:
 
 ```Python
 say_hi(name=None)  # This works, None is valid 🎉
@@ -388,7 +388,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 The good news is, once you are on Python 3.10 you won't have to worry about that, as you will be able to simply use `|` to define unions of types:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c_py310.py!}
+{!../../docs_src/python_types/tutorial009c_py310.py!}
 ```
 
 And then you won't have to worry about names like `Optional` and `Union`. 😎
@@ -401,16 +401,16 @@ These types that take type parameters in square brackets are called **Generic ty
 
 You can use the same builtin types as generics (with square brackets and types inside):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 And the same as with Python 3.8, from the `typing` module:
 
-* `Union`
-* `Optional` (the same as with Python 3.8)
-* ...and others.
+- `Union`
+- `Optional` (the same as with Python 3.8)
+- ...and others.
 
 In Python 3.10, as an alternative to using the generics `Union` and `Optional`, you can use the <abbr title='also called "bitwise or operator", but that meaning is not relevant here'>vertical bar (`|`)</abbr> to declare unions of types, that's a lot better and simpler.
 
@@ -420,28 +420,28 @@ In Python 3.10, as an alternative to using the generics `Union` and `Optional`, 
 
 You can use the same builtin types as generics (with square brackets and types inside):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
 And the same as with Python 3.8, from the `typing` module:
 
-* `Union`
-* `Optional`
-* ...and others.
+- `Union`
+- `Optional`
+- ...and others.
 
 ////
 
 //// tab | Python 3.8+
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Union`
-* `Optional`
-* ...and others.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Union`
+- `Optional`
+- ...and others.
 
 ////
 
@@ -452,13 +452,13 @@ You can also declare a class as the type of a variable.
 Let's say you have a class `Person`, with a name:
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Then you can declare a variable to be of type `Person`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 And then, again, you get all the editor support:
@@ -486,7 +486,7 @@ An example from the official Pydantic docs:
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py310.py!}
+{!> ../../docs_src/python_types/tutorial011_py310.py!}
 ```
 
 ////
@@ -494,7 +494,7 @@ An example from the official Pydantic docs:
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py39.py!}
+{!> ../../docs_src/python_types/tutorial011_py39.py!}
 ```
 
 ////
@@ -502,7 +502,7 @@ An example from the official Pydantic docs:
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011.py!}
+{!> ../../docs_src/python_types/tutorial011.py!}
 ```
 
 ////
@@ -515,7 +515,7 @@ To learn more about <a href="https://docs.pydantic.dev/" class="external-link" t
 
 **ReadyAPI** is all based on Pydantic.
 
-You will see a lot more of all this in practice in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
+You will see a lot more of all this in practice in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
 
 /// tip
 
@@ -532,7 +532,7 @@ Python also has a feature that allows putting **additional <abbr title="Data abo
 In Python 3.9, `Annotated` is part of the standard library, so you can import it from `typing`.
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial013_py39.py!}
+{!> ../../docs_src/python_types/tutorial013_py39.py!}
 ```
 
 ////
@@ -544,7 +544,7 @@ In versions below Python 3.9, you import `Annotated` from `typing_extensions`.
 It will already be installed with **ReadyAPI**.
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial013.py!}
+{!> ../../docs_src/python_types/tutorial013.py!}
 ```
 
 ////
@@ -553,7 +553,7 @@ Python itself doesn't do anything with this `Annotated`. And for editors and oth
 
 But you can use this space in `Annotated` to provide **ReadyAPI** with additional metadata about how you want your application to behave.
 
-The important thing to remember is that **the first *type parameter*** you pass to `Annotated` is the **actual type**. The rest, is just metadata for other tools.
+The important thing to remember is that **the first _type parameter_** you pass to `Annotated` is the **actual type**. The rest, is just metadata for other tools.
 
 For now, you just need to know that `Annotated` exists, and that it's standard Python. 😎
 
@@ -573,19 +573,19 @@ And also that your code will be very compatible with many other Python tools and
 
 With **ReadyAPI** you declare parameters with type hints and you get:
 
-* **Editor support**.
-* **Type checks**.
+- **Editor support**.
+- **Type checks**.
 
 ...and **ReadyAPI** uses the same declarations to:
 
-* **Define requirements**: from request path parameters, query parameters, headers, bodies, dependencies, etc.
-* **Convert data**: from the request to the required type.
-* **Validate data**: coming from each request:
-    * Generating **automatic errors** returned to the client when the data is invalid.
-* **Document** the API using OpenAPI:
-    * which is then used by the automatic interactive documentation user interfaces.
+- **Define requirements**: from request path parameters, query parameters, headers, bodies, dependencies, etc.
+- **Convert data**: from the request to the required type.
+- **Validate data**: coming from each request:
+  - Generating **automatic errors** returned to the client when the data is invalid.
+- **Document** the API using OpenAPI:
+  - which is then used by the automatic interactive documentation user interfaces.
 
-This might all sound abstract. Don't worry. You'll see all this in action in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
+This might all sound abstract. Don't worry. You'll see all this in action in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
 
 The important thing is that by using standard Python types, in a single place (instead of adding more classes, decorators, etc), **ReadyAPI** will do a lot of the work for you.
 

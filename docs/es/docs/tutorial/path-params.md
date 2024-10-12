@@ -3,7 +3,7 @@
 Puedes declarar los "parámetros" o "variables" con la misma sintaxis que usan los format strings de Python:
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/path_params/tutorial001.py!}
+{!../../docs_src/path_params/tutorial001.py!}
 ```
 
 El valor del parámetro de path `item_id` será pasado a tu función como el argumento `item_id`.
@@ -19,7 +19,7 @@ Entonces, si corres este ejemplo y vas a <a href="http://127.0.0.1:8000/items/fo
 Puedes declarar el tipo de un parámetro de path en la función usando las anotaciones de tipos estándar de Python:
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params/tutorial002.py!}
+{!../../docs_src/path_params/tutorial002.py!}
 ```
 
 En este caso, `item_id` es declarado como un `int`.
@@ -113,23 +113,23 @@ Exploraremos varios de estos tipos en los próximos capítulos del tutorial.
 
 ## El orden importa
 
-Cuando creas *operaciones de path* puedes encontrarte con situaciones en las que tengas un path fijo.
+Cuando creas _operaciones de path_ puedes encontrarte con situaciones en las que tengas un path fijo.
 
 Digamos algo como `/users/me` que sea para obtener datos del usuario actual.
 
 ... y luego puedes tener el path `/users/{user_id}` para obtener los datos sobre un usuario específico asociados a un ID de usuario.
 
-Porque las *operaciones de path* son evaluadas en orden, tienes que asegurarte de que el path para `/users/me` sea declarado antes que el path para `/users/{user_id}`:
+Porque las _operaciones de path_ son evaluadas en orden, tienes que asegurarte de que el path para `/users/me` sea declarado antes que el path para `/users/{user_id}`:
 
 ```Python hl_lines="6  11"
-{!../../../docs_src/path_params/tutorial003.py!}
+{!../../docs_src/path_params/tutorial003.py!}
 ```
 
 De otra manera el path para `/users/{user_id}` coincidiría también con `/users/me` "pensando" que está recibiendo el parámetro `user_id` con el valor `"me"`.
 
 ## Valores predefinidos
 
-Si tienes una *operación de path* que recibe un *parámetro de path* pero quieres que los valores posibles del *parámetro de path* sean predefinidos puedes usar un <abbr title="Enumeration">`Enum`</abbr> estándar de Python.
+Si tienes una _operación de path_ que recibe un _parámetro de path_ pero quieres que los valores posibles del _parámetro de path_ sean predefinidos puedes usar un <abbr title="Enumeration">`Enum`</abbr> estándar de Python.
 
 ### Crea una clase `Enum`
 
@@ -140,7 +140,7 @@ Al heredar desde `str` la documentación de la API podrá saber que los valores 
 Luego crea atributos de clase con valores fijos, que serán los valores disponibles válidos:
 
 ```Python hl_lines="1  6-9"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// info | Información
@@ -155,38 +155,38 @@ Si lo estás dudando, "AlexNet", "ResNet", y "LeNet" son solo nombres de <abbr t
 
 ///
 
-### Declara un *parámetro de path*
+### Declara un _parámetro de path_
 
-Luego, crea un *parámetro de path* con anotaciones de tipos usando la clase enum que creaste (`ModelName`):
+Luego, crea un _parámetro de path_ con anotaciones de tipos usando la clase enum que creaste (`ModelName`):
 
 ```Python hl_lines="16"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 ### Revisa la documentación
 
-Debido a que los valores disponibles para el *parámetro de path* están predefinidos, la documentación interactiva los puede mostrar bien:
+Debido a que los valores disponibles para el _parámetro de path_ están predefinidos, la documentación interactiva los puede mostrar bien:
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Trabajando con los *enumerations* de Python
+### Trabajando con los _enumerations_ de Python
 
-El valor del *parámetro de path* será un *enumeration member*.
+El valor del _parámetro de path_ será un _enumeration member_.
 
-#### Compara *enumeration members*
+#### Compara _enumeration members_
 
-Puedes compararlo con el *enumeration member* en el enum (`ModelName`) que creaste:
+Puedes compararlo con el _enumeration member_ en el enum (`ModelName`) que creaste:
 
 ```Python hl_lines="17"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### Obtén el *enumeration value*
+#### Obtén el _enumeration value_
 
 Puedes obtener el valor exacto (un `str` en este caso) usando `model_name.value`, o en general, `your_enum_member.value`:
 
 ```Python hl_lines="20"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// tip | Consejo
@@ -195,14 +195,14 @@ También podrías obtener el valor `"lenet"` con `ModelName.lenet.value`.
 
 ///
 
-#### Devuelve *enumeration members*
+#### Devuelve _enumeration members_
 
-Puedes devolver *enum members* desde tu *operación de path* inclusive en un body de JSON anidado (por ejemplo, un `dict`).
+Puedes devolver _enum members_ desde tu _operación de path_ inclusive en un body de JSON anidado (por ejemplo, un `dict`).
 
 Ellos serán convertidos a sus valores correspondientes (strings en este caso) antes de devolverlos al cliente:
 
 ```Python hl_lines="18  21  23"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 En tu cliente obtendrás una respuesta en JSON como:
@@ -216,7 +216,7 @@ En tu cliente obtendrás una respuesta en JSON como:
 
 ## Parámetros de path parameters que contienen paths
 
-Digamos que tienes una *operación de path* con un path `/files/{file_path}`.
+Digamos que tienes una _operación de path_ con un path `/files/{file_path}`.
 
 Pero necesitas que el mismo `file_path` contenga un path como `home/johndoe/myfile.txt`.
 
@@ -224,7 +224,7 @@ Entonces, la URL para ese archivo sería algo como: `/files/home/johndoe/myfile.
 
 ### Soporte de OpenAPI
 
-OpenAPI no soporta una manera de declarar un *parámetro de path* que contenga un path, dado que esto podría llevar a escenarios que son difíciles de probar y definir.
+OpenAPI no soporta una manera de declarar un _parámetro de path_ que contenga un path, dado que esto podría llevar a escenarios que son difíciles de probar y definir.
 
 Sin embargo, lo puedes hacer en **ReadyAPI** usando una de las herramientas internas de Starlette.
 
@@ -232,7 +232,7 @@ La documentación seguirá funcionando, aunque no añadirá ninguna información
 
 ### Convertidor de path
 
-Usando una opción directamente desde Starlette puedes declarar un *parámetro de path* que contenga un path usando una URL como:
+Usando una opción directamente desde Starlette puedes declarar un _parámetro de path_ que contenga un path usando una URL como:
 
 ```
 /files/{file_path:path}
@@ -243,7 +243,7 @@ En este caso el nombre del parámetro es `file_path` y la última parte, `:path`
 Entonces lo puedes usar con:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_params/tutorial004.py!}
+{!../../docs_src/path_params/tutorial004.py!}
 ```
 
 /// tip | Consejo
@@ -258,11 +258,11 @@ En este caso la URL sería `/files//home/johndoe/myfile.txt` con un slash doble 
 
 Con **ReadyAPI**, usando declaraciones de tipo de Python intuitivas y estándares, obtienes:
 
-* Soporte en el editor: chequeo de errores, auto-completado, etc.
-* "<abbr title="convertir el string que viene de un HTTP request a datos de Python">Parsing</abbr>" de datos
-* Validación de datos
-* Anotación de la API y documentación automática
+- Soporte en el editor: chequeo de errores, auto-completado, etc.
+- "<abbr title="convertir el string que viene de un HTTP request a datos de Python">Parsing</abbr>" de datos
+- Validación de datos
+- Anotación de la API y documentación automática
 
 Solo tienes que declararlos una vez.
 
-Esa es probablemente la principal ventaja visible de **ReadyAPI**  sobre otros frameworks alternativos (aparte del rendimiento puro).
+Esa es probablemente la principal ventaja visible de **ReadyAPI** sobre otros frameworks alternativos (aparte del rendimiento puro).

@@ -4,7 +4,7 @@ Você pode definir arquivos para serem enviados para o cliente utilizando `File`
 
 /// info
 
-Para receber arquivos compartilhados, primeiro  instale <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
+Para receber arquivos compartilhados, primeiro instale <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
 E.g. `pip install python-multipart`.
 
@@ -19,7 +19,7 @@ Importe `File` e `UploadFile` do `readyapi`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -27,7 +27,7 @@ Importe `File` e `UploadFile` do `readyapi`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -41,7 +41,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -53,7 +53,7 @@ Cria os parâmetros do arquivo da mesma forma que você faria para `Body` ou `Fo
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -61,7 +61,7 @@ Cria os parâmetros do arquivo da mesma forma que você faria para `Body` ou `Fo
 //// tab | Python 3.8+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -75,7 +75,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
@@ -96,7 +96,7 @@ Para declarar o corpo de arquivos, você precisa utilizar `File`, do contrário 
 
 Os arquivos serão enviados como "form data".
 
-Se você declarar o tipo do seu parâmetro na sua *função de operação de rota* como `bytes`, o **ReadyAPI** irá ler o arquivo para você e você receberá o conteúdo como `bytes`.
+Se você declarar o tipo do seu parâmetro na sua _função de operação de rota_ como `bytes`, o **ReadyAPI** irá ler o arquivo para você e você receberá o conteúdo como `bytes`.
 
 Lembre-se que isso significa que o conteúdo inteiro será armazenado em memória. Isso funciona bem para arquivos pequenos.
 
@@ -109,7 +109,7 @@ Defina um parâmetro de arquivo com o tipo `UploadFile`
 //// tab | Python 3.9+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/request_files/tutorial001_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -117,7 +117,7 @@ Defina um parâmetro de arquivo com o tipo `UploadFile`
 //// tab | Python 3.8+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/request_files/tutorial001_an.py!}
+{!> ../../docs_src/request_files/tutorial001_an.py!}
 ```
 
 ////
@@ -131,47 +131,47 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/request_files/tutorial001.py!}
+{!> ../../docs_src/request_files/tutorial001.py!}
 ```
 
 ////
 
 Utilizando `UploadFile` tem várias vantagens sobre `bytes`:
 
-* Você não precisa utilizar `File()` como o valor padrão do parâmetro.
-* A classe utiliza um arquivo em "spool":
-    * Um arquivo guardado em memória até um tamanho máximo, depois desse limite ele é guardado em disco.
-* Isso significa que a classe funciona bem com arquivos grandes como imagens, vídeos, binários extensos, etc. Sem consumir toda a memória.
-* Você pode obter metadados do arquivo enviado.
-* Ela possui uma interface <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">semelhante a arquivos</a> `async`.
-* Ela expõe um objeto python <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> que você pode repassar para bibliotecas que esperam um objeto com comportamento de arquivo.
+- Você não precisa utilizar `File()` como o valor padrão do parâmetro.
+- A classe utiliza um arquivo em "spool":
+  - Um arquivo guardado em memória até um tamanho máximo, depois desse limite ele é guardado em disco.
+- Isso significa que a classe funciona bem com arquivos grandes como imagens, vídeos, binários extensos, etc. Sem consumir toda a memória.
+- Você pode obter metadados do arquivo enviado.
+- Ela possui uma interface <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">semelhante a arquivos</a> `async`.
+- Ela expõe um objeto python <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> que você pode repassar para bibliotecas que esperam um objeto com comportamento de arquivo.
 
 ### `UploadFile`
 
 `UploadFile` tem os seguintes atributos:
 
-* `filename`: Uma string (`str`) com o nome original do arquivo enviado (e.g. `myimage.jpg`).
-* `content-type`: Uma `str` com o tipo do conteúdo (tipo MIME / media) (e.g. `image/jpeg`).
-* `file`: Um objeto do tipo <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (um objeto <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a>). O arquivo propriamente dito que você pode passar diretamente para outras funções ou bibliotecas que esperam um objeto "file-like".
+- `filename`: Uma string (`str`) com o nome original do arquivo enviado (e.g. `myimage.jpg`).
+- `content-type`: Uma `str` com o tipo do conteúdo (tipo MIME / media) (e.g. `image/jpeg`).
+- `file`: Um objeto do tipo <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (um objeto <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a>). O arquivo propriamente dito que você pode passar diretamente para outras funções ou bibliotecas que esperam um objeto "file-like".
 
 `UploadFile` tem os seguintes métodos `async`. Todos eles chamam os métodos de arquivos por baixo dos panos (usando o objeto `SpooledTemporaryFile` interno).
 
-* `write(data)`: escreve dados (`data`) em `str` ou `bytes` no arquivo.
-* `read(size)`: Lê um número de bytes/caracteres de acordo com a quantidade `size` (`int`).
-* `seek(offset)`: Navega para o byte na posição `offset` (`int`) do arquivo.
-    * E.g., `await myfile.seek(0)` navegaria para o ínicio do arquivo.
-    * Isso é especialmente útil se você executar `await myfile.read()` uma vez e depois precisar ler os conteúdos do arquivo de novo.
-* `close()`: Fecha o arquivo.
+- `write(data)`: escreve dados (`data`) em `str` ou `bytes` no arquivo.
+- `read(size)`: Lê um número de bytes/caracteres de acordo com a quantidade `size` (`int`).
+- `seek(offset)`: Navega para o byte na posição `offset` (`int`) do arquivo.
+  - E.g., `await myfile.seek(0)` navegaria para o ínicio do arquivo.
+  - Isso é especialmente útil se você executar `await myfile.read()` uma vez e depois precisar ler os conteúdos do arquivo de novo.
+- `close()`: Fecha o arquivo.
 
 Como todos esses métodos são assíncronos (`async`) você precisa esperar ("await") por eles.
 
-Por exemplo, dentro de uma *função de operação de rota* assíncrona você pode obter os conteúdos com:
+Por exemplo, dentro de uma _função de operação de rota_ assíncrona você pode obter os conteúdos com:
 
 ```Python
 contents = await myfile.read()
 ```
 
-Se você estiver dentro de uma *função de operação de rota* definida normalmente com `def`, você pode acessar `UploadFile.file` diretamente, por exemplo:
+Se você estiver dentro de uma _função de operação de rota_ definida normalmente com `def`, você pode acessar `UploadFile.file` diretamente, por exemplo:
 
 ```Python
 contents = myfile.file.read()
@@ -207,7 +207,7 @@ Se você quer ler mais sobre essas codificações e campos de formulário, veja 
 
 /// warning | Aviso
 
-Você pode declarar múltiplos parâmetros `File` e `Form` em uma *operação de rota*, mas você não pode declarar campos `Body`que seriam recebidos como JSON junto desses parâmetros, por que a codificação do corpo da requisição será `multipart/form-data` em vez de `application/json`.
+Você pode declarar múltiplos parâmetros `File` e `Form` em uma _operação de rota_, mas você não pode declarar campos `Body`que seriam recebidos como JSON junto desses parâmetros, por que a codificação do corpo da requisição será `multipart/form-data` em vez de `application/json`.
 
 Isso não é uma limitação do **ReadyAPI**, é uma parte do protocolo HTTP.
 
@@ -220,7 +220,7 @@ Você pode definir um arquivo como opcional utilizando as anotações de tipo pa
 //// tab | Python 3.10+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py310.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ Você pode definir um arquivo como opcional utilizando as anotações de tipo pa
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an_py39.py!}
 ```
 
 ////
@@ -236,7 +236,7 @@ Você pode definir um arquivo como opcional utilizando as anotações de tipo pa
 //// tab | Python 3.8+
 
 ```Python hl_lines="10  18"
-{!> ../../../docs_src/request_files/tutorial001_02_an.py!}
+{!> ../../docs_src/request_files/tutorial001_02_an.py!}
 ```
 
 ////
@@ -250,7 +250,7 @@ Utilize a versão com `Annotated`, se possível
 ///
 
 ```Python hl_lines="7  15"
-{!> ../../../docs_src/request_files/tutorial001_02_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_py310.py!}
 ```
 
 ////
@@ -264,7 +264,7 @@ Utilize a versão com `Annotated`, se possível
 ///
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02.py!}
+{!> ../../docs_src/request_files/tutorial001_02.py!}
 ```
 
 ////
@@ -276,7 +276,7 @@ Você também pode utilizar `File()` com `UploadFile`, por exemplo, para definir
 //// tab | Python 3.9+
 
 ```Python hl_lines="9  15"
-{!> ../../../docs_src/request_files/tutorial001_03_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an_py39.py!}
 ```
 
 ////
@@ -284,7 +284,7 @@ Você também pode utilizar `File()` com `UploadFile`, por exemplo, para definir
 //// tab | Python 3.8+
 
 ```Python hl_lines="8  14"
-{!> ../../../docs_src/request_files/tutorial001_03_an.py!}
+{!> ../../docs_src/request_files/tutorial001_03_an.py!}
 ```
 
 ////
@@ -298,7 +298,7 @@ Utilize a versão com `Annotated` se possível
 ///
 
 ```Python hl_lines="7  13"
-{!> ../../../docs_src/request_files/tutorial001_03.py!}
+{!> ../../docs_src/request_files/tutorial001_03.py!}
 ```
 
 ////
@@ -314,7 +314,7 @@ Para usar isso, declare uma lista de `bytes` ou `UploadFile`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -322,7 +322,7 @@ Para usar isso, declare uma lista de `bytes` ou `UploadFile`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/request_files/tutorial002_an.py!}
+{!> ../../docs_src/request_files/tutorial002_an.py!}
 ```
 
 ////
@@ -336,7 +336,7 @@ Utilize a versão com `Annotated` se possível
 ///
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/request_files/tutorial002_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_py39.py!}
 ```
 
 ////
@@ -350,7 +350,7 @@ Utilize a versão com `Annotated` se possível
 ///
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002.py!}
+{!> ../../docs_src/request_files/tutorial002.py!}
 ```
 
 ////
@@ -372,7 +372,7 @@ E da mesma forma que antes, você pode utilizar `File()` para definir parâmetro
 //// tab | Python 3.9+
 
 ```Python hl_lines="11  18-20"
-{!> ../../../docs_src/request_files/tutorial003_an_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -380,7 +380,7 @@ E da mesma forma que antes, você pode utilizar `File()` para definir parâmetro
 //// tab | Python 3.8+
 
 ```Python hl_lines="12  19-21"
-{!> ../../../docs_src/request_files/tutorial003_an.py!}
+{!> ../../docs_src/request_files/tutorial003_an.py!}
 ```
 
 ////
@@ -394,7 +394,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="9  16"
-{!> ../../../docs_src/request_files/tutorial003_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_py39.py!}
 ```
 
 ////
@@ -408,7 +408,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="11  18"
-{!> ../../../docs_src/request_files/tutorial003.py!}
+{!> ../../docs_src/request_files/tutorial003.py!}
 ```
 
 ////

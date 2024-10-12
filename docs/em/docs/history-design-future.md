@@ -14,7 +14,7 @@
 
 📖 **ReadyAPI** 👑 🍕 📖 🚮 ⏪.
 
-🙆‍♀ 📄 [🎛](alternatives.md){.internal-link target=_blank}:
+🙆‍♀ 📄 [🎛](alternatives.md){.internal-link target=\_blank}:
 
 <blockquote markdown="1">
 
@@ -76,4 +76,4 @@
 
 **ReadyAPI** ✔️ 👑 🔮 ⤴️.
 
-&amp; [👆 ℹ](help-readyapi.md){.internal-link target=_blank} 📉 👍.
+&amp; [👆 ℹ](help-readyapi.md){.internal-link target=\_blank} 📉 👍.

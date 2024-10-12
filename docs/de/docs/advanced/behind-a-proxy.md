@@ -19,7 +19,7 @@ In diesem Fall würde der ursprüngliche Pfad `/app` tatsächlich unter `/api/v1
 Auch wenn Ihr gesamter Code unter der Annahme geschrieben ist, dass es nur `/app` gibt.
 
 ```Python hl_lines="6"
-{!../../../docs_src/behind_a_proxy/tutorial001.py!}
+{!../../docs_src/behind_a_proxy/tutorial001.py!}
 ```
 
 Und der Proxy würde das **Pfadpräfix** on-the-fly **"entfernen**", bevor er die Anfrage an Uvicorn übermittelt, dafür sorgend, dass Ihre Anwendung davon überzeugt ist, dass sie unter `/app` bereitgestellt wird, sodass Sie nicht Ihren gesamten Code dahingehend aktualisieren müssen, das Präfix `/api/v1` zu verwenden.
@@ -99,7 +99,7 @@ Sie können den aktuellen `root_path` abrufen, der von Ihrer Anwendung für jede
 Hier fügen wir ihn, nur zu Demonstrationszwecken, in die Nachricht ein.
 
 ```Python hl_lines="8"
-{!../../../docs_src/behind_a_proxy/tutorial001.py!}
+{!../../docs_src/behind_a_proxy/tutorial001.py!}
 ```
 
 Wenn Sie Uvicorn dann starten mit:
@@ -128,7 +128,7 @@ wäre die Response etwa:
 Falls Sie keine Möglichkeit haben, eine Kommandozeilenoption wie `--root-path` oder ähnlich zu übergeben, können Sie als Alternative beim Erstellen Ihrer ReadyAPI-Anwendung den Parameter `root_path` setzen:
 
 ```Python hl_lines="3"
-{!../../../docs_src/behind_a_proxy/tutorial002.py!}
+{!../../docs_src/behind_a_proxy/tutorial002.py!}
 ```
 
 Die Übergabe des `root_path` an `ReadyAPI` wäre das Äquivalent zur Übergabe der `--root-path`-Kommandozeilenoption an Uvicorn oder Hypercorn.
@@ -303,14 +303,14 @@ Dies ist ein fortgeschrittener Anwendungsfall. Überspringen Sie das gerne.
 
 Standardmäßig erstellt **ReadyAPI** einen `server` im OpenAPI-Schema mit der URL für den `root_path`.
 
-Sie können aber auch andere alternative `server` bereitstellen, beispielsweise wenn Sie möchten, dass *dieselbe* Dokumentationsoberfläche mit einer Staging- und Produktionsumgebung interagiert.
+Sie können aber auch andere alternative `server` bereitstellen, beispielsweise wenn Sie möchten, dass _dieselbe_ Dokumentationsoberfläche mit einer Staging- und Produktionsumgebung interagiert.
 
 Wenn Sie eine benutzerdefinierte Liste von Servern (`servers`) übergeben und es einen `root_path` gibt (da Ihre API hinter einem Proxy läuft), fügt **ReadyAPI** einen „Server“ mit diesem `root_path` am Anfang der Liste ein.
 
 Zum Beispiel:
 
 ```Python hl_lines="4-7"
-{!../../../docs_src/behind_a_proxy/tutorial003.py!}
+{!../../docs_src/behind_a_proxy/tutorial003.py!}
 ```
 
 Erzeugt ein OpenAPI-Schema, wie:
@@ -359,13 +359,13 @@ Die Dokumentationsoberfläche interagiert mit dem von Ihnen ausgewählten Server
 Wenn Sie nicht möchten, dass **ReadyAPI** einen automatischen Server inkludiert, welcher `root_path` verwendet, können Sie den Parameter `root_path_in_servers=False` verwenden:
 
 ```Python hl_lines="9"
-{!../../../docs_src/behind_a_proxy/tutorial004.py!}
+{!../../docs_src/behind_a_proxy/tutorial004.py!}
 ```
 
 Dann wird er nicht in das OpenAPI-Schema aufgenommen.
 
 ## Mounten einer Unteranwendung
 
-Wenn Sie gleichzeitig eine Unteranwendung mounten (wie beschrieben in [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=_blank}) und einen Proxy mit `root_path` verwenden wollen, können Sie das normal tun, wie Sie es erwarten würden.
+Wenn Sie gleichzeitig eine Unteranwendung mounten (wie beschrieben in [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=\_blank}) und einen Proxy mit `root_path` verwenden wollen, können Sie das normal tun, wie Sie es erwarten würden.
 
 ReadyAPI verwendet intern den `root_path` auf intelligente Weise, sodass es einfach funktioniert. ✨

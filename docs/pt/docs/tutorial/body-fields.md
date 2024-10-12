@@ -1,13 +1,13 @@
 # Corpo - Campos
 
-Da mesma forma que você pode declarar validações adicionais e metadados nos parâmetros de *funções de operações de rota* com `Query`, `Path` e `Body`, você pode declarar validações e metadados dentro de modelos do Pydantic usando `Field` do Pydantic.
+Da mesma forma que você pode declarar validações adicionais e metadados nos parâmetros de _funções de operações de rota_ com `Query`, `Path` e `Body`, você pode declarar validações e metadados dentro de modelos do Pydantic usando `Field` do Pydantic.
 
 ## Importe `Field`
 
 Primeiro, você tem que importá-lo:
 
 ```Python hl_lines="4"
-{!../../../docs_src/body_fields/tutorial001.py!}
+{!../../docs_src/body_fields/tutorial001.py!}
 ```
 
 /// warning | "Aviso"
@@ -21,7 +21,7 @@ Note que `Field` é importado diretamente do `pydantic`, não do `readyapi` como
 Você pode então utilizar `Field` com atributos do modelo:
 
 ```Python hl_lines="11-14"
-{!../../../docs_src/body_fields/tutorial001.py!}
+{!../../docs_src/body_fields/tutorial001.py!}
 ```
 
 `Field` funciona da mesma forma que `Query`, `Path` e `Body`, ele possui todos os mesmos parâmetros, etc.
@@ -40,7 +40,7 @@ Lembre-se que quando você importa `Query`, `Path`, e outros de `readyapi`, esse
 
 /// tip | "Dica"
 
-Note como cada atributo do modelo com um tipo, valor padrão e `Field` possuem a mesma estrutura que parâmetros de *funções de operações de rota*, com `Field` ao invés de `Path`, `Query` e `Body`.
+Note como cada atributo do modelo com um tipo, valor padrão e `Field` possuem a mesma estrutura que parâmetros de _funções de operações de rota_, com `Field` ao invés de `Path`, `Query` e `Body`.
 
 ///
 

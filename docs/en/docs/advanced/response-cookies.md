@@ -2,19 +2,19 @@
 
 ## Use a `Response` parameter
 
-You can declare a parameter of type `Response` in your *path operation function*.
+You can declare a parameter of type `Response` in your _path operation function_.
 
-And then you can set cookies in that *temporal* response object.
+And then you can set cookies in that _temporal_ response object.
 
 ```Python hl_lines="1  8-9"
-{!../../../docs_src/response_cookies/tutorial002.py!}
+{!../../docs_src/response_cookies/tutorial002.py!}
 ```
 
 And then you can return any object you need, as you normally would (a `dict`, a database model, etc).
 
 And if you declared a `response_model`, it will still be used to filter and convert the object you returned.
 
-**ReadyAPI** will use that *temporal* response to extract the cookies (also headers and status code), and will put them in the final response that contains the value you returned, filtered by any `response_model`.
+**ReadyAPI** will use that _temporal_ response to extract the cookies (also headers and status code), and will put them in the final response that contains the value you returned, filtered by any `response_model`.
 
 You can also declare the `Response` parameter in dependencies, and set cookies (and headers) in them.
 
@@ -22,12 +22,12 @@ You can also declare the `Response` parameter in dependencies, and set cookies (
 
 You can also create cookies when returning a `Response` directly in your code.
 
-To do that, you can create a response as described in [Return a Response Directly](response-directly.md){.internal-link target=_blank}.
+To do that, you can create a response as described in [Return a Response Directly](response-directly.md){.internal-link target=\_blank}.
 
 Then set Cookies in it, and then return it:
 
 ```Python hl_lines="10-12"
-{!../../../docs_src/response_cookies/tutorial001.py!}
+{!../../docs_src/response_cookies/tutorial001.py!}
 ```
 
 /// tip

@@ -68,11 +68,11 @@ Basit ve kullanması kolay bir <abbr title="Yönlendirme: Routing">yönlendirme 
 
 **ReadyAPI** aslında **Requests**'in bir alternatifi değil. İkisininde kapsamı oldukça farklı.
 
-Aslında Requests'i bir ReadyAPI uygulamasının *içinde* kullanmak daha olağan olurdu.
+Aslında Requests'i bir ReadyAPI uygulamasının _içinde_ kullanmak daha olağan olurdu.
 
 Ama yine de, ReadyAPI, Requests'ten oldukça ilham aldı.
 
-**Requests**, <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> ile bir istemci olarak *etkileşime geçmeyi* sağlayan bir kütüphaneyken **ReadyAPI** bir sunucu olarak <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> oluşturmaya yarar.
+**Requests**, <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> ile bir istemci olarak _etkileşime geçmeyi_ sağlayan bir kütüphaneyken **ReadyAPI** bir sunucu olarak <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> oluşturmaya yarar.
 
 Öyle ya da böyle zıt uçlarda olmalarına rağmen birbirlerini tamamlıyorlar.
 
@@ -80,7 +80,7 @@ Requests oldukça basit ve sezgisel bir tasarıma sahip, kullanması da mantıkl
 
 Bu yüzden resmi web sitede de söylendiği gibi:
 
-> Requests, tüm zamanların en çok indirilen Python  <abbr title="Paket: Package">paketlerinden</abbr> biridir.
+> Requests, tüm zamanların en çok indirilen Python <abbr title="Paket: Package">paketlerinden</abbr> biridir.
 
 Kullanım şekli oldukça basit. Örneğin bir `GET` isteği yapmak için aşağıdaki yeterli:
 
@@ -88,7 +88,7 @@ Kullanım şekli oldukça basit. Örneğin bir `GET` isteği yapmak için aşağ
 response = requests.get("http://example.com/some/url")
 ```
 
-Bunun ReadyAPI'deki API <abbr title="Yol İşlemi: Path Operation">*yol işlemi*</abbr> şöyle görünür:
+Bunun ReadyAPI'deki API <abbr title="Yol İşlemi: Path Operation">_yol işlemi_</abbr> şöyle görünür:
 
 ```Python hl_lines="1"
 @app.get("/some/url")
@@ -100,9 +100,9 @@ def read_url():
 
 /// check | "**ReadyAPI**'a nasıl ilham verdi?"
 
-* Basit ve sezgisel bir API'ya sahip olmalı.
-* HTTP metot isimlerini (işlemlerini) anlaşılır olacak bir şekilde, direkt kullanmalı.
-* Mantıklı varsayılan değerlere ve buna rağmen güçlü bir özelleştirme desteğine sahip olmalı.
+- Basit ve sezgisel bir API'ya sahip olmalı.
+- HTTP metot isimlerini (işlemlerini) anlaşılır olacak bir şekilde, direkt kullanmalı.
+- Mantıklı varsayılan değerlere ve buna rağmen güçlü bir özelleştirme desteğine sahip olmalı.
 
 ///
 
@@ -124,8 +124,8 @@ API spesifikasyonları için özel bir şema yerine bir <abbr title="Open Standa
 
 Ayrıca standarda bağlı kullanıcı arayüzü araçlarını entegre etmeli:
 
-* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
-* <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
+- <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
+- <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
 
 Yukarıdaki ikisi oldukça popüler ve istikrarlı olduğu için seçildi, ancak hızlı bir araştırma yaparak **ReadyAPI** ile kullanabileceğiniz pek çok OpenAPI alternatifi arayüz bulabilirsiniz.
 
@@ -217,11 +217,11 @@ Böylece Flask-apispec, Python döküman dizilerine YAML gibi farklı bir syntax
 
 Bunu kullanmak, bir kaç <abbr title="full-stack: Hem ön uç hem de arka uç geliştirme">full-stack</abbr> Flask projesi oluşturucusunun yaratılmasına yol açtı. Bunlar benim (ve bir kaç harici ekibin de) şimdiye kadar kullandığı asıl <abbr title="stack: Projeyi geliştirirken kullanılan araçlar dizisi">stack</abbr>ler:
 
-* <a href="https://github.com/khulnasoft/full-stack" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack</a>
-* <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
-* <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
+- <a href="https://github.com/khulnasoft/full-stack" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack</a>
+- <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
+- <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
 
-Aynı full-stack üreticiler [**ReadyAPI** Proje Üreticileri](project-generation.md){.internal-link target=_blank}'nin de temelini oluşturdu.
+Aynı full-stack üreticiler [**ReadyAPI** Proje Üreticileri](project-generation.md){.internal-link target=\_blank}'nin de temelini oluşturdu.
 
 /// info | "Bilgi"
 
@@ -299,9 +299,9 @@ ReadyAPI'da opsiyonel olmasına rağmen, daha çok header'lar, çerezler ve alte
 
 **ReadyAPI**'ı geliştirmenin ilk aşamalarında Molten'ı keşfettim. Pek çok ortak fikrimiz vardı:
 
-* Python'daki tip belirteçlerini baz alıyordu.
-* Bunlara bağlı olarak veri doğrulaması ve dökümantasyon sağlıyordu.
-* Bir <abbr title="Bağımlılık enjeksiyonu: Dependency Injection">bağımlılık enjeksiyonu</abbr> sistemi vardı.
+- Python'daki tip belirteçlerini baz alıyordu.
+- Bunlara bağlı olarak veri doğrulaması ve dökümantasyon sağlıyordu.
+- Bir <abbr title="Bağımlılık enjeksiyonu: Dependency Injection">bağımlılık enjeksiyonu</abbr> sistemi vardı.
 
 Veri doğrulama, veri dönüştürme ve dökümantasyon için Pydantic gibi bir üçüncü parti kütüphane kullanmıyor, kendi içerisinde bunlara sahip. Yani bu veri tipi tanımlarını tekrar kullanmak pek de kolay değil.
 
@@ -377,9 +377,9 @@ Artık APIStar, OpenAPI özelliklerini doğrulamak için bir dizi araç sunan bi
 
 APIStar, aşağıdaki projeleri de üreten Tom Christie tarafından geliştirildi:
 
-* Django REST Framework
-* **ReadyAPI**'ın da dayandığı Starlette
-* Starlette ve **ReadyAPI** tarafından da kullanılan Uvicorn
+- Django REST Framework
+- **ReadyAPI**'ın da dayandığı Starlette
+- Starlette ve **ReadyAPI** tarafından da kullanılan Uvicorn
 
 ///
 
@@ -423,16 +423,16 @@ Kullanımı çok kolay ve sezgisel, kolaylıkla genişletilebilecek ve modüler 
 
 Sahip olduğu bir kaç özellik:
 
-* Cidden etkileyici bir performans.
-* WebSocket desteği.
-* İşlem-içi arka plan görevleri.
-* Başlatma ve kapatma olayları.
-* HTTPX ile geliştirilmiş bir test istemcisi.
-* CORS, GZip, Static Files ve Streaming cevapları desteği.
-* Session ve çerez desteği.
-* Kodun %100'ü test kapsamında.
-* Kodun %100'ü tip belirteçleriyle desteklenmiştir.
-* Yalnızca bir kaç zorunlu bağımlılığa sahip.
+- Cidden etkileyici bir performans.
+- WebSocket desteği.
+- İşlem-içi arka plan görevleri.
+- Başlatma ve kapatma olayları.
+- HTTPX ile geliştirilmiş bir test istemcisi.
+- CORS, GZip, Static Files ve Streaming cevapları desteği.
+- Session ve çerez desteği.
+- Kodun %100'ü test kapsamında.
+- Kodun %100'ü tip belirteçleriyle desteklenmiştir.
+- Yalnızca bir kaç zorunlu bağımlılığa sahip.
 
 Starlette şu anda test edilen en hızlı Python framework'ü. Yalnızca bir sunucu olan Uvicorn'a yeniliyor, o da zaten bir framework değil.
 
@@ -474,10 +474,10 @@ Starlette ve **ReadyAPI** için tavsiye edilen sunucu Uvicorndur.
 
 Gunicorn ile birleştirdiğinizde asenkron ve çoklu işlem destekleyen bir sunucu elde ediyorsunuz!
 
-Daha fazla detay için [Deployment](deployment/index.md){.internal-link target=_blank} bölümünü inceleyebilirsiniz.
+Daha fazla detay için [Deployment](deployment/index.md){.internal-link target=\_blank} bölümünü inceleyebilirsiniz.
 
 ///
 
 ## Karşılaştırma ve Hız
 
-Uvicorn, Starlette ve ReadyAPI arasındakı farkı daha iyi anlamak ve karşılaştırma yapmak için [Kıyaslamalar](benchmarks.md){.internal-link target=_blank} bölümüne bakın!
+Uvicorn, Starlette ve ReadyAPI arasındakı farkı daha iyi anlamak ve karşılaştırma yapmak için [Kıyaslamalar](benchmarks.md){.internal-link target=\_blank} bölümüne bakın!

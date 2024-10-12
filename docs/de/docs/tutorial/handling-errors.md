@@ -6,10 +6,10 @@ Dieser Client könnte ein Browser mit einem Frontend, Code von jemand anderem, e
 
 Sie müssten beispielsweise einem Client sagen:
 
-* Dass er nicht die notwendigen Berechtigungen hat, eine Aktion auszuführen.
-* Dass er zu einer Ressource keinen Zugriff hat.
-* Dass die Ressource, auf die er zugreifen möchte, nicht existiert.
-* usw.
+- Dass er nicht die notwendigen Berechtigungen hat, eine Aktion auszuführen.
+- Dass er zu einer Ressource keinen Zugriff hat.
+- Dass die Ressource, auf die er zugreifen möchte, nicht existiert.
+- usw.
 
 In diesen Fällen geben Sie normalerweise einen **HTTP-Statuscode** im Bereich **400** (400 bis 499) zurück.
 
@@ -26,7 +26,7 @@ Um HTTP-Responses mit Fehlern zum Client zurückzugeben, verwenden Sie `HTTPExce
 ### `HTTPException` importieren
 
 ```Python hl_lines="1"
-{!../../../docs_src/handling_errors/tutorial001.py!}
+{!../../docs_src/handling_errors/tutorial001.py!}
 ```
 
 ### Eine `HTTPException` in Ihrem Code auslösen
@@ -35,14 +35,14 @@ Um HTTP-Responses mit Fehlern zum Client zurückzugeben, verwenden Sie `HTTPExce
 
 Weil es eine Python-Exception ist, geben Sie sie nicht zurück, (`return`), sondern Sie lösen sie aus (`raise`).
 
-Das bedeutet auch, wenn Sie in einer Hilfsfunktion sind, die Sie von ihrer *Pfadoperation-Funktion* aus aufrufen, und Sie lösen eine `HTTPException` von innerhalb dieser Hilfsfunktion aus, dann wird der Rest der *Pfadoperation-Funktion* nicht ausgeführt, sondern der Request wird sofort abgebrochen und der HTTP-Error der `HTTP-Exception` wird zum Client gesendet.
+Das bedeutet auch, wenn Sie in einer Hilfsfunktion sind, die Sie von ihrer _Pfadoperation-Funktion_ aus aufrufen, und Sie lösen eine `HTTPException` von innerhalb dieser Hilfsfunktion aus, dann wird der Rest der _Pfadoperation-Funktion_ nicht ausgeführt, sondern der Request wird sofort abgebrochen und der HTTP-Error der `HTTP-Exception` wird zum Client gesendet.
 
 Der Vorteil, eine Exception auszulösen (`raise`), statt sie zurückzugeben (`return`) wird im Abschnitt über Abhängigkeiten und Sicherheit klarer werden.
 
 Im folgenden Beispiel lösen wir, wenn der Client eine ID anfragt, die nicht existiert, eine Exception mit dem Statuscode `404` aus.
 
 ```Python hl_lines="11"
-{!../../../docs_src/handling_errors/tutorial001.py!}
+{!../../docs_src/handling_errors/tutorial001.py!}
 ```
 
 ### Die resultierende Response
@@ -82,7 +82,7 @@ Sie müssen das wahrscheinlich nicht direkt in ihrem Code verwenden.
 Aber falls es in einem fortgeschrittenen Szenario notwendig ist, können Sie benutzerdefinierte Header wie folgt hinzufügen:
 
 ```Python hl_lines="14"
-{!../../../docs_src/handling_errors/tutorial002.py!}
+{!../../docs_src/handling_errors/tutorial002.py!}
 ```
 
 ## Benutzerdefinierte Exceptionhandler definieren
@@ -96,10 +96,10 @@ Und Sie möchten diese Exception global mit ReadyAPI handhaben.
 Sie könnten einen benutzerdefinierten Exceptionhandler mittels `@app.exception_handler()` hinzufügen:
 
 ```Python hl_lines="5-7  13-18  24"
-{!../../../docs_src/handling_errors/tutorial003.py!}
+{!../../docs_src/handling_errors/tutorial003.py!}
 ```
 
-Wenn Sie nun `/unicorns/yolo` anfragen, `raise`d die *Pfadoperation* eine `UnicornException`.
+Wenn Sie nun `/unicorns/yolo` anfragen, `raise`d die _Pfadoperation_ eine `UnicornException`.
 
 Aber diese wird von `unicorn_exception_handler` gehandhabt.
 
@@ -136,7 +136,7 @@ Um diesen zu überschreiben, importieren Sie den `RequestValidationError` und ve
 Der Exceptionhandler wird einen `Request` und die Exception entgegennehmen.
 
 ```Python hl_lines="2  14-16"
-{!../../../docs_src/handling_errors/tutorial004.py!}
+{!../../docs_src/handling_errors/tutorial004.py!}
 ```
 
 Wenn Sie nun `/items/foo` besuchen, erhalten Sie statt des Default-JSON-Errors:
@@ -178,7 +178,7 @@ Das folgende sind technische Details, die Sie überspringen können, wenn sie f�
 
 Aber der Client/Benutzer sieht ihn nicht. Stattdessen erhält der Client einen <abbr title="Interner Server-Fehler">„Internal Server Error“</abbr> mit einem HTTP-Statuscode `500`.
 
-Das ist, wie es sein sollte, denn wenn Sie einen Pydantic-`ValidationError` in Ihrer *Response* oder irgendwo sonst in ihrem Code haben (es sei denn, im *Request* des Clients), ist das tatsächlich ein Bug in ihrem Code.
+Das ist, wie es sein sollte, denn wenn Sie einen Pydantic-`ValidationError` in Ihrer _Response_ oder irgendwo sonst in ihrem Code haben (es sei denn, im _Request_ des Clients), ist das tatsächlich ein Bug in ihrem Code.
 
 Und während Sie den Fehler beheben, sollten ihre Clients/Benutzer keinen Zugriff auf interne Informationen über den Fehler haben, da das eine Sicherheitslücke aufdecken könnte.
 
@@ -189,7 +189,7 @@ Genauso können Sie den `HTTPException`-Handler überschreiben.
 Zum Beispiel könnten Sie eine Klartext-Response statt JSON für diese Fehler zurückgeben wollen:
 
 ```Python hl_lines="3-4  9-11  22"
-{!../../../docs_src/handling_errors/tutorial004.py!}
+{!../../docs_src/handling_errors/tutorial004.py!}
 ```
 
 /// note | "Technische Details"
@@ -207,7 +207,7 @@ Der `RequestValidationError` enthält den empfangenen `body` mit den ungültigen
 Sie könnten diesen verwenden, während Sie Ihre Anwendung entwickeln, um den Body zu loggen und zu debuggen, ihn zum Benutzer zurückzugeben, usw.
 
 ```Python hl_lines="14"
-{!../../../docs_src/handling_errors/tutorial005.py!}
+{!../../docs_src/handling_errors/tutorial005.py!}
 ```
 
 Jetzt versuchen Sie, einen ungültigen Artikel zu senden:
@@ -265,7 +265,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 Wenn Sie die Exception zusammen mit denselben Default-Exceptionhandlern von **ReadyAPI** verwenden möchten, können Sie die Default-Exceptionhandler von `readyapi.Exception_handlers` importieren und wiederverwenden:
 
 ```Python hl_lines="2-5  15  21"
-{!../../../docs_src/handling_errors/tutorial006.py!}
+{!../../docs_src/handling_errors/tutorial006.py!}
 ```
 
 In diesem Beispiel `print`en Sie nur den Fehler mit einer sehr ausdrucksstarken Nachricht, aber Sie sehen, worauf wir hinauswollen. Sie können mit der Exception etwas machen und dann einfach die Default-Exceptionhandler wiederverwenden.

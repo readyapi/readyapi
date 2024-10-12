@@ -17,7 +17,7 @@
 从 `readyapi` 导入 `File` 和 `UploadFile`：
 
 ```Python hl_lines="1"
-{!../../../docs_src/request_files/tutorial001.py!}
+{!../../docs_src/request_files/tutorial001.py!}
 ```
 
 ## 定义 `File` 参数
@@ -25,7 +25,7 @@
 创建文件（`File`）参数的方式与 `Body` 和 `Form` 一样：
 
 ```Python hl_lines="7"
-{!../../../docs_src/request_files/tutorial001.py!}
+{!../../docs_src/request_files/tutorial001.py!}
 ```
 
 /// info | "说明"
@@ -55,44 +55,44 @@
 定义文件参数时使用 `UploadFile`：
 
 ```Python hl_lines="12"
-{!../../../docs_src/request_files/tutorial001.py!}
+{!../../docs_src/request_files/tutorial001.py!}
 ```
 
 `UploadFile` 与 `bytes` 相比有更多优势：
 
-* 使用 `spooled` 文件：
-    * 存储在内存的文件超出最大上限时，ReadyAPI 会把文件存入磁盘；
-* 这种方式更适于处理图像、视频、二进制文件等大型文件，好处是不会占用所有内存；
-* 可获取上传文件的元数据；
-* 自带 <a href="https://docs.python.org/zh-cn/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` 接口；
-* 暴露的 Python <a href="https://docs.python.org/zh-cn/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 对象，可直接传递给其他预期「file-like」对象的库。
+- 使用 `spooled` 文件：
+  - 存储在内存的文件超出最大上限时，ReadyAPI 会把文件存入磁盘；
+- 这种方式更适于处理图像、视频、二进制文件等大型文件，好处是不会占用所有内存；
+- 可获取上传文件的元数据；
+- 自带 <a href="https://docs.python.org/zh-cn/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` 接口；
+- 暴露的 Python <a href="https://docs.python.org/zh-cn/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 对象，可直接传递给其他预期「file-like」对象的库。
 
 ### `UploadFile`
 
 `UploadFile` 的属性如下：
 
-* `filename`：上传文件名字符串（`str`），例如， `myimage.jpg`；
-* `content_type`：内容类型（MIME 类型 / 媒体类型）字符串（`str`），例如，`image/jpeg`；
-* `file`： <a href="https://docs.python.org/zh-cn/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a>（ <a href="https://docs.python.org/zh-cn/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> 对象）。其实就是 Python文件，可直接传递给其他预期 `file-like` 对象的函数或支持库。
+- `filename`：上传文件名字符串（`str`），例如， `myimage.jpg`；
+- `content_type`：内容类型（MIME 类型 / 媒体类型）字符串（`str`），例如，`image/jpeg`；
+- `file`： <a href="https://docs.python.org/zh-cn/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a>（ <a href="https://docs.python.org/zh-cn/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> 对象）。其实就是 Python 文件，可直接传递给其他预期 `file-like` 对象的函数或支持库。
 
 `UploadFile` 支持以下 `async` 方法，（使用内部 `SpooledTemporaryFile`）可调用相应的文件方法。
 
-* `write(data)`：把 `data` （`str` 或 `bytes`）写入文件；
-* `read(size)`：按指定数量的字节或字符（`size` (`int`)）读取文件内容；
-* `seek(offset)`：移动至文件 `offset` （`int`）字节处的位置；
-    * 例如，`await myfile.seek(0) ` 移动到文件开头；
-    * 执行 `await myfile.read()` 后，需再次读取已读取内容时，这种方法特别好用；
-* `close()`：关闭文件。
+- `write(data)`：把 `data` （`str` 或 `bytes`）写入文件；
+- `read(size)`：按指定数量的字节或字符（`size` (`int`)）读取文件内容；
+- `seek(offset)`：移动至文件 `offset` （`int`）字节处的位置；
+  - 例如，`await myfile.seek(0) ` 移动到文件开头；
+  - 执行 `await myfile.read()` 后，需再次读取已读取内容时，这种方法特别好用；
+- `close()`：关闭文件。
 
 因为上述方法都是 `async` 方法，要搭配「await」使用。
 
-例如，在 `async` *路径操作函数* 内，要用以下方式读取文件内容：
+例如，在 `async` _路径操作函数_ 内，要用以下方式读取文件内容：
 
 ```Python
 contents = await myfile.read()
 ```
 
-在普通 `def` *路径操作函数*  内，则可以直接访问 `UploadFile.file`，例如：
+在普通 `def` _路径操作函数_ 内，则可以直接访问 `UploadFile.file`，例如：
 
 ```Python
 contents = myfile.file.read()
@@ -141,7 +141,7 @@ contents = myfile.file.read()
 //// tab | Python 3.9+
 
 ```Python hl_lines="7  14"
-{!> ../../../docs_src/request_files/tutorial001_02_py310.py!}
+{!> ../../docs_src/request_files/tutorial001_02_py310.py!}
 ```
 
 ////
@@ -149,7 +149,7 @@ contents = myfile.file.read()
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  17"
-{!> ../../../docs_src/request_files/tutorial001_02.py!}
+{!> ../../docs_src/request_files/tutorial001_02.py!}
 ```
 
 ////
@@ -159,7 +159,7 @@ contents = myfile.file.read()
 您也可以将 `File()` 与 `UploadFile` 一起使用，例如，设置额外的元数据:
 
 ```Python hl_lines="13"
-{!../../../docs_src/request_files/tutorial001_03.py!}
+{!../../docs_src/request_files/tutorial001_03.py!}
 ```
 
 ## 多文件上传
@@ -173,7 +173,7 @@ ReadyAPI 支持同时上传多个文件。
 //// tab | Python 3.9+
 
 ```Python hl_lines="8  13"
-{!> ../../../docs_src/request_files/tutorial002_py39.py!}
+{!> ../../docs_src/request_files/tutorial002_py39.py!}
 ```
 
 ////
@@ -181,13 +181,12 @@ ReadyAPI 支持同时上传多个文件。
 //// tab | Python 3.8+
 
 ```Python hl_lines="10  15"
-{!> ../../../docs_src/request_files/tutorial002.py!}
+{!> ../../docs_src/request_files/tutorial002.py!}
 ```
 
 ////
 
 接收的也是含 `bytes` 或 `UploadFile` 的列表（`list`）。
-
 
 /// note | "技术细节"
 
@@ -204,7 +203,7 @@ ReadyAPI 支持同时上传多个文件。
 //// tab | Python 3.9+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/request_files/tutorial003_py39.py!}
+{!> ../../docs_src/request_files/tutorial003_py39.py!}
 ```
 
 ////
@@ -212,7 +211,7 @@ ReadyAPI 支持同时上传多个文件。
 //// tab | Python 3.8+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/request_files/tutorial003.py!}
+{!> ../../docs_src/request_files/tutorial003.py!}
 ```
 
 ////

@@ -1,6 +1,6 @@
 # Introduction aux Types Python
 
-Python supporte des annotations de type (ou *type hints*) optionnelles.
+Python supporte des annotations de type (ou _type hints_) optionnelles.
 
 Ces annotations de type constituent une syntaxe spéciale qui permet de déclarer le <abbr title="par exemple : str, int, float, bool">type</abbr> d'une variable.
 
@@ -24,7 +24,7 @@ Si vous êtes un expert Python, et que vous savez déjà **tout** sur les annota
 Prenons un exemple simple :
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 Exécuter ce programe affiche :
@@ -35,12 +35,12 @@ John Doe
 
 La fonction :
 
-* Prend un `first_name` et un `last_name`.
-* Convertit la première lettre de chaque paramètre en majuscules grâce à `title()`.
-* Concatène les résultats avec un espace entre les deux.
+- Prend un `first_name` et un `last_name`.
+- Convertit la première lettre de chaque paramètre en majuscules grâce à `title()`.
+- Concatène les résultats avec un espace entre les deux.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Limitations
@@ -69,7 +69,6 @@ Modifions une seule ligne de la version précédente.
 
 Nous allons changer seulement cet extrait, les paramètres de la fonction, de :
 
-
 ```Python
     first_name, last_name
 ```
@@ -85,7 +84,7 @@ C'est tout.
 Ce sont des annotations de types :
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 À ne pas confondre avec la déclaration de valeurs par défaut comme ici :
@@ -115,7 +114,7 @@ Vous pouvez donc dérouler les options jusqu'à trouver la méthode à laquelle 
 Cette fonction possède déjà des annotations de type :
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Comme l'éditeur connaît le type des variables, vous n'avez pas seulement l'auto-complétion, mais aussi de la détection d'erreurs :
@@ -125,7 +124,7 @@ Comme l'éditeur connaît le type des variables, vous n'avez pas seulement l'aut
 Maintenant que vous avez connaissance du problème, convertissez `age` en <abbr title="string">chaîne de caractères</abbr> grâce à `str(age)` :
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Déclarer des types
@@ -136,17 +135,17 @@ C'est aussi ici que vous les utiliseriez avec **ReadyAPI**.
 
 ### Types simples
 
-Vous pouvez déclarer tous les types  de Python, pas seulement `str`.
+Vous pouvez déclarer tous les types de Python, pas seulement `str`.
 
 Comme par exemple :
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Types génériques avec des paramètres de types
@@ -164,7 +163,7 @@ Par exemple, définissons une variable comme `list` de `str`.
 Importez `List` (avec un `L` majuscule) depuis `typing`.
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 Déclarez la variable, en utilisant la syntaxe des deux-points (`:`).
@@ -174,7 +173,7 @@ Et comme type, mettez `List`.
 Les listes étant un type contenant des types internes, mettez ces derniers entre crochets (`[`, `]`) :
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 /// tip | "Astuce"
@@ -202,13 +201,13 @@ Et pourtant, l'éditeur sait qu'elle est de type `str` et pourra donc vous aider
 C'est le même fonctionnement pour déclarer un `tuple` ou un `set` :
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 Dans cet exemple :
 
-* La variable `items_t` est un `tuple` avec 3 éléments, un `int`, un deuxième `int`, et un `str`.
-* La variable `items_s` est un `set`, et chacun de ses éléments est de type `bytes`.
+- La variable `items_t` est un `tuple` avec 3 éléments, un `int`, un deuxième `int`, et un `str`.
+- La variable `items_s` est un `set`, et chacun de ses éléments est de type `bytes`.
 
 #### `Dict`
 
@@ -217,21 +216,21 @@ Pour définir un `dict`, il faut lui passer 2 paramètres, séparés par une vir
 Le premier paramètre de type est pour les clés et le second pour les valeurs du dictionnaire (`dict`).
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 Dans cet exemple :
 
-* La variable `prices` est de type `dict` :
-    * Les clés de ce dictionnaire sont de type `str`.
-    * Les valeurs de ce dictionnaire sont de type `float`.
+- La variable `prices` est de type `dict` :
+  - Les clés de ce dictionnaire sont de type `str`.
+  - Les valeurs de ce dictionnaire sont de type `float`.
 
 #### `Optional`
 
 Vous pouvez aussi utiliser `Optional` pour déclarer qu'une variable a un type, comme `str` mais qu'il est "optionnel" signifiant qu'il pourrait aussi être `None`.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Utiliser `Optional[str]` plutôt que `str` permettra à l'éditeur de vous aider à détecter les erreurs où vous supposeriez qu'une valeur est toujours de type `str`, alors qu'elle pourrait aussi être `None`.
@@ -240,12 +239,12 @@ Utiliser `Optional[str]` plutôt que `str` permettra à l'éditeur de vous aider
 
 Les types qui peuvent contenir des paramètres de types entre crochets, comme :
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Optional`
-* ...et d'autres.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Optional`
+- ...et d'autres.
 
 sont appelés des **types génériques** ou **Generics**.
 
@@ -256,13 +255,13 @@ Vous pouvez aussi déclarer une classe comme type d'une variable.
 Disons que vous avez une classe `Person`, avec une variable `name` :
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Vous pouvez ensuite déclarer une variable de type `Person` :
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Et vous aurez accès, encore une fois, au support complet offert par l'éditeur :
@@ -284,7 +283,7 @@ Ainsi, votre éditeur vous offrira un support adapté pour l'objet résultant.
 Extrait de la documentation officielle de **Pydantic** :
 
 ```Python
-{!../../../docs_src/python_types/tutorial011.py!}
+{!../../docs_src/python_types/tutorial011.py!}
 ```
 
 /// info
@@ -295,7 +294,7 @@ Pour en savoir plus à propos de <a href="https://docs.pydantic.dev/" class="ext
 
 **ReadyAPI** est basé entièrement sur **Pydantic**.
 
-Vous verrez bien plus d'exemples de son utilisation dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=_blank}.
+Vous verrez bien plus d'exemples de son utilisation dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=\_blank}.
 
 ## Les annotations de type dans **ReadyAPI**
 
@@ -303,19 +302,19 @@ Vous verrez bien plus d'exemples de son utilisation dans [Tutoriel - Guide utili
 
 Avec **ReadyAPI**, vous déclarez des paramètres grâce aux annotations de types et vous obtenez :
 
-* **du support de l'éditeur**
-* **de la vérification de types**
+- **du support de l'éditeur**
+- **de la vérification de types**
 
 ...et **ReadyAPI** utilise ces mêmes déclarations pour :
 
-* **Définir les prérequis** : depuis les paramètres de chemins des requêtes, les entêtes, les corps, les dépendances, etc.
-* **Convertir des données** : depuis la requête vers les types requis.
-* **Valider des données** : venant de chaque requête :
-    * Générant automatiquement des **erreurs** renvoyées au client quand la donnée est invalide.
-* **Documenter** l'API avec OpenAPI :
-    * ce qui ensuite utilisé par les interfaces utilisateur automatiques de documentation interactive.
+- **Définir les prérequis** : depuis les paramètres de chemins des requêtes, les entêtes, les corps, les dépendances, etc.
+- **Convertir des données** : depuis la requête vers les types requis.
+- **Valider des données** : venant de chaque requête :
+  - Générant automatiquement des **erreurs** renvoyées au client quand la donnée est invalide.
+- **Documenter** l'API avec OpenAPI :
+  - ce qui ensuite utilisé par les interfaces utilisateur automatiques de documentation interactive.
 
-Tout cela peut paraître bien abstrait, mais ne vous inquiétez pas, vous verrez tout ça en pratique dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=_blank}.
+Tout cela peut paraître bien abstrait, mais ne vous inquiétez pas, vous verrez tout ça en pratique dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=\_blank}.
 
 Ce qu'il faut retenir c'est qu'en utilisant les types standard de Python, à un seul endroit (plutôt que d'ajouter plus de classes, de décorateurs, etc.), **ReadyAPI** fera une grande partie du travail pour vous.
 

@@ -13,7 +13,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -21,7 +21,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -37,7 +37,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -45,17 +45,17 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
 
 ➡️ 🎯 🔛 🔢 📣:
 
-* ✋️ 👉 🔢 🔗 ("☑") ⚫️, ⚫️ 📣 ➕1️⃣ 🔗 (⚫️ "🪀" 🔛 🕳 🙆).
-    * ⚫️ 🪀 🔛 `query_extractor`, &amp; 🛠️ 💲 📨 ⚫️ 🔢 `q`.
-* ⚫️ 📣 📦 `last_query` 🍪, `str`.
-    * 🚥 👩‍💻 🚫 🚚 🙆 🔢 `q`, 👥 ⚙️ 🏁 🔢 ⚙️, ❔ 👥 🖊 🍪 ⏭.
+- ✋️ 👉 🔢 🔗 ("☑") ⚫️, ⚫️ 📣 ➕1️⃣ 🔗 (⚫️ "🪀" 🔛 🕳 🙆).
+  - ⚫️ 🪀 🔛 `query_extractor`, &amp; 🛠️ 💲 📨 ⚫️ 🔢 `q`.
+- ⚫️ 📣 📦 `last_query` 🍪, `str`.
+  - 🚥 👩‍💻 🚫 🚚 🙆 🔢 `q`, 👥 ⚙️ 🏁 🔢 ⚙️, ❔ 👥 🖊 🍪 ⏭.
 
 ## ⚙️ 🔗
 
@@ -64,7 +64,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -72,14 +72,14 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
 
 /// info
 
-👀 👈 👥 🕴 📣 1️⃣ 🔗 *➡ 🛠️ 🔢*, `query_or_cookie_extractor`.
+👀 👈 👥 🕴 📣 1️⃣ 🔗 _➡ 🛠️ 🔢_, `query_or_cookie_extractor`.
 
 ✋️ **ReadyAPI** 🔜 💭 👈 ⚫️ ✔️ ❎ `query_extractor` 🥇, 🚶‍♀️ 🏁 👈 `query_or_cookie_extractor` ⏪ 🤙 ⚫️.
 
@@ -98,7 +98,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## ⚙️ 🎏 🔗 💗 🕰
 
-🚥 1️⃣ 👆 🔗 📣 💗 🕰 🎏 *➡ 🛠️*, 🖼, 💗 🔗 ✔️ ⚠ 🎧-🔗, **ReadyAPI** 🔜 💭 🤙 👈 🎧-🔗 🕴 🕐 📍 📨.
+🚥 1️⃣ 👆 🔗 📣 💗 🕰 🎏 _➡ 🛠️_, 🖼, 💗 🔗 ✔️ ⚠ 🎧-🔗, **ReadyAPI** 🔜 💭 🤙 👈 🎧-🔗 🕴 🕐 📍 📨.
 
 &amp; ⚫️ 🔜 🖊 📨 💲 <abbr title="A utility/system to store computed/generated values, to re-use them instead of computing them again.">"💾"</abbr> &amp; 🚶‍♀️ ⚫️ 🌐 "⚓️" 👈 💪 ⚫️ 👈 🎯 📨, ↩️ 🤙 🔗 💗 🕰 🎏 📨.
 
@@ -113,7 +113,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 ↖️ ⚪️➡️ 🌐 🎀 🔤 ⚙️ 📥, **🔗 💉** ⚙️ 🙅.
 
-🔢 👈 👀 🎏 *➡ 🛠️ 🔢*.
+🔢 👈 👀 🎏 _➡ 🛠️ 🔢_.
 
 ✋️, ⚫️ 📶 🏋️, &amp; ✔ 👆 📣 🎲 🙇 🐦 🔗 "📊" (🌲).
 
@@ -123,6 +123,6 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 ✋️ 👆 🔜 👀 ❔ ⚠ ⚫️ 📃 🔃 **💂‍♂**.
 
- &amp; 👆 🔜 👀 💸 📟 ⚫️ 🔜 🖊 👆.
+&amp; 👆 🔜 👀 💸 📟 ⚫️ 🔜 🖊 👆.
 
 ///

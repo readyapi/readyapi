@@ -7,6 +7,10 @@ on:
     types:
       - opened
       - synchronize
+
+env:
+  UV_SYSTEM_PYTHON: 1
+
 jobs:
   changes:
     runs-on: ubuntu-latest
@@ -17,25 +21,25 @@ jobs:
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
     steps:
-    - uses: actions/checkout@v4
-    # For pull requests it's not necessary to checkout the code but for the main branch it is
-    - uses: dorny/paths-filter@v3
-      id: filter
-      with:
-        filters: |
-          docs:
-            - README.md
-            - docs/**
-            - docs_src/**
-            - requirements-docs.txt
-            - requirements-docs-insiders.txt
-            - pyproject.toml
-            - mkdocs.yml
-            - mkdocs.insiders.yml
-            - mkdocs.maybe-insiders.yml
-            - mkdocs.no-insiders.yml
-            - .github/workflows/build-docs.yml
-            - .github/workflows/deploy-docs.yml
+      - uses: actions/checkout@v4
+      # For pull requests it's not necessary to checkout the code but for the main branch it is
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            docs:
+              - README.md
+              - docs/**
+              - docs_src/**
+              - requirements-docs.txt
+              - requirements-docs-insiders.txt
+              - pyproject.toml
+              - mkdocs.yml
+              - mkdocs.insiders.yml
+              - mkdocs.maybe-insiders.yml
+              - mkdocs.no-insiders.yml
+              - .github/workflows/build-docs.yml
+              - .github/workflows/deploy-docs.yml
   langs:
     needs:
       - changes
@@ -48,20 +52,24 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - uses: actions/cache@v4
-        id: cache
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
         with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ runner.os }}-python-docs-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml', 'requirements-docs.txt', 'requirements-docs-insiders.txt', 'requirements-docs-tests.txt') }}-v08
+          version: "0.4.15"
+          enable-cache: true
+          cache-dependency-glob: |
+            requirements**.txt
+            pyproject.toml
       - name: Install docs extras
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs.txt
+        run: uv pip install -r requirements-docs.txt
       # Install MkDocs Material Insiders here just to put it in the cache for the rest of the steps
       - name: Install Material for MkDocs Insiders
-        if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs-insiders.txt
+        if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
+        run: uv pip install -r requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
+      - name: Verify Docs
+        run: python ./scripts/docs.py verify-docs
       - name: Export Language Codes
         id: show-langs
         run: |
@@ -86,17 +94,19 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - uses: actions/cache@v4
-        id: cache
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v3
         with:
-          path: ${{ env.pythonLocation }}
-          key: ${{ runner.os }}-python-docs-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml', 'requirements-docs.txt', 'requirements-docs-insiders.txt', 'requirements-docs-tests.txt') }}-v08
+          version: "0.4.15"
+          enable-cache: true
+          cache-dependency-glob: |
+            requirements**.txt
+            pyproject.toml
       - name: Install docs extras
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs.txt
+        run: uv pip install -r requirements-docs.txt
       - name: Install Material for MkDocs Insiders
-        if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' ) && steps.cache.outputs.cache-hit != 'true'
-        run: pip install -r requirements-docs-insiders.txt
+        if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
+        run: uv pip install -r requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
       - name: Update Languages
@@ -111,9 +121,10 @@ jobs:
         with:
           name: docs-site-${{ matrix.lang }}
           path: ./site/**
+          include-hidden-files: true
 
   # https://github.com/marketplace/actions/alls-green#why
-  docs-all-green:  # This job does nothing and is only used for the branch protection
+  docs-all-green: # This job does nothing and is only used for the branch protection
     if: always()
     needs:
       - build-docs

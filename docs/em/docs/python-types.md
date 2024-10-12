@@ -23,7 +23,7 @@
 ➡️ ▶️ ⏮️ 🙅 🖼:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 🤙 👉 📋 🔢:
@@ -34,12 +34,12 @@ John Doe
 
 🔢 🔨 📄:
 
-* ✊ `first_name` &amp; `last_name`.
-* 🗜 🥇 🔤 🔠 1️⃣ ↖ 💼 ⏮️ `title()`.
-* <abbr title="Puts them together, as one. With the contents of one after the other.">🔢</abbr> 👫 ⏮️ 🚀 🖕.
+- ✊ `first_name` &amp; `last_name`.
+- 🗜 🥇 🔤 🔠 1️⃣ ↖ 💼 ⏮️ `title()`.
+- <abbr title="Puts them together, as one. With the contents of one after the other.">🔢</abbr> 👫 ⏮️ 🚀 🖕.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### ✍ ⚫️
@@ -83,7 +83,7 @@ John Doe
 👈 "🆎 🔑":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 👈 🚫 🎏 📣 🔢 💲 💖 🔜 ⏮️:
@@ -113,7 +113,7 @@ John Doe
 ✅ 👉 🔢, ⚫️ ⏪ ✔️ 🆎 🔑:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 ↩️ 👨‍🎨 💭 🆎 🔢, 👆 🚫 🕴 🤚 🛠️, 👆 🤚 ❌ ✅:
@@ -123,7 +123,7 @@ John Doe
 🔜 👆 💭 👈 👆 ✔️ 🔧 ⚫️, 🗜 `age` 🎻 ⏮️ `str(age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## 📣 🆎
@@ -138,13 +138,13 @@ John Doe
 
 👆 💪 ⚙️, 🖼:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### 💊 🆎 ⏮️ 🆎 🔢
@@ -172,7 +172,7 @@ John Doe
 ⚪️➡️ `typing`, 🗄 `List` (⏮️ 🔠 `L`):
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 📣 🔢, ⏮️ 🎏 ❤ (`:`) ❕.
@@ -182,7 +182,7 @@ John Doe
 📇 🆎 👈 🔌 🔗 🆎, 👆 🚮 👫 ⬜ 🗜:
 
 ```Python hl_lines="4"
-{!> ../../../docs_src/python_types/tutorial006.py!}
+{!> ../../docs_src/python_types/tutorial006.py!}
 ```
 
 ////
@@ -196,7 +196,7 @@ John Doe
 📇 🆎 👈 🔌 🔗 🆎, 👆 🚮 👫 ⬜ 🗜:
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial006_py39.py!}
+{!> ../../docs_src/python_types/tutorial006_py39.py!}
 ```
 
 ////
@@ -234,7 +234,7 @@ John Doe
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial007.py!}
+{!> ../../docs_src/python_types/tutorial007.py!}
 ```
 
 ////
@@ -242,17 +242,17 @@ John Doe
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial007_py39.py!}
+{!> ../../docs_src/python_types/tutorial007_py39.py!}
 ```
 
 ////
 
 👉 ⛓:
 
-* 🔢 `items_t` `tuple` ⏮️ 3️⃣ 🏬, `int`, ➕1️⃣ `int`, &amp; `str`.
-* 🔢 `items_s` `set`, &amp; 🔠 🚮 🏬 🆎 `bytes`.
+- 🔢 `items_t` `tuple` ⏮️ 3️⃣ 🏬, `int`, ➕1️⃣ `int`, &amp; `str`.
+- 🔢 `items_s` `set`, &amp; 🔠 🚮 🏬 🆎 `bytes`.
 
-####  #️⃣
+#### #️⃣
 
 🔬 `dict`, 👆 🚶‍♀️ 2️⃣ 🆎 🔢, 🎏 ❕.
 
@@ -263,7 +263,7 @@ John Doe
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008.py!}
+{!> ../../docs_src/python_types/tutorial008.py!}
 ```
 
 ////
@@ -271,16 +271,16 @@ John Doe
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008_py39.py!}
+{!> ../../docs_src/python_types/tutorial008_py39.py!}
 ```
 
 ////
 
 👉 ⛓:
 
-* 🔢 `prices` `dict`:
-    * 🔑 👉 `dict` 🆎 `str` (➡️ 💬, 📛 🔠 🏬).
-    * 💲 👉 `dict` 🆎 `float` (➡️ 💬, 🔖 🔠 🏬).
+- 🔢 `prices` `dict`:
+  - 🔑 👉 `dict` 🆎 `str` (➡️ 💬, 📛 🔠 🏬).
+  - 💲 👉 `dict` 🆎 `float` (➡️ 💬, 🔖 🔠 🏬).
 
 #### 🇪🇺
 
@@ -293,7 +293,7 @@ John Doe
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial008b.py!}
+{!> ../../docs_src/python_types/tutorial008b.py!}
 ```
 
 ////
@@ -301,7 +301,7 @@ John Doe
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial008b_py310.py!}
+{!> ../../docs_src/python_types/tutorial008b_py310.py!}
 ```
 
 ////
@@ -315,7 +315,7 @@ John Doe
 🐍 3️⃣.6️⃣ &amp; 🔛 (✅ 🐍 3️⃣.1️⃣0️⃣) 👆 💪 📣 ⚫️ 🏭 &amp; ⚙️ `Optional` ⚪️➡️ `typing` 🕹.
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 ⚙️ `Optional[str]` ↩️ `str` 🔜 ➡️ 👨‍🎨 ℹ 👆 🔍 ❌ 🌐❔ 👆 💪 🤔 👈 💲 🕧 `str`, 🕐❔ ⚫️ 💪 🤙 `None` 💁‍♂️.
@@ -327,7 +327,7 @@ John Doe
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009.py!}
+{!> ../../docs_src/python_types/tutorial009.py!}
 ```
 
 ////
@@ -335,7 +335,7 @@ John Doe
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛 - 🎛
 
 ```Python hl_lines="1  4"
-{!> ../../../docs_src/python_types/tutorial009b.py!}
+{!> ../../docs_src/python_types/tutorial009b.py!}
 ```
 
 ////
@@ -343,7 +343,7 @@ John Doe
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/python_types/tutorial009_py310.py!}
+{!> ../../docs_src/python_types/tutorial009_py310.py!}
 ```
 
 ////
@@ -352,8 +352,8 @@ John Doe
 
 🚥 👆 ⚙️ 🐍 ⏬ 🔛 3️⃣.1️⃣0️⃣, 📥 💁‍♂ ⚪️➡️ 👇 📶 **🤔** ☝ 🎑:
 
-* 👶 ❎ ⚙️ `Optional[SomeType]`
-* ↩️ 👶 **⚙️ `Union[SomeType, None]`** 👶.
+- 👶 ❎ ⚙️ `Optional[SomeType]`
+- ↩️ 👶 **⚙️ `Union[SomeType, None]`** 👶.
 
 👯‍♂️ 🌓 &amp; 🔘 👫 🎏, ✋️ 👤 🔜 👍 `Union` ↩️ `Optional` ↩️ 🔤 "**📦**" 🔜 😑 🔑 👈 💲 📦, &amp; ⚫️ 🤙 ⛓ "⚫️ 💪 `None`", 🚥 ⚫️ 🚫 📦 &amp; ✔.
 
@@ -364,7 +364,7 @@ John Doe
 🖼, ➡️ ✊ 👉 🔢:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c.py!}
+{!../../docs_src/python_types/tutorial009c.py!}
 ```
 
 🔢 `name` 🔬 `Optional[str]`, ✋️ ⚫️ **🚫 📦**, 👆 🚫🔜 🤙 🔢 🍵 🔢:
@@ -373,7 +373,7 @@ John Doe
 say_hi()  # Oh, no, this throws an error! 😱
 ```
 
-`name` 🔢 **✔** (🚫 *📦*) ↩️ ⚫️ 🚫 ✔️ 🔢 💲. , `name` 🚫 `None` 💲:
+`name` 🔢 **✔** (🚫 _📦_) ↩️ ⚫️ 🚫 ✔️ 🔢 💲. , `name` 🚫 `None` 💲:
 
 ```Python
 say_hi(name=None)  # This works, None is valid 🎉
@@ -382,7 +382,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 👍 📰, 🕐 👆 🔛 🐍 3️⃣.1️⃣0️⃣ 👆 🏆 🚫 ✔️ 😟 🔃 👈, 👆 🔜 💪 🎯 ⚙️ `|` 🔬 🇪🇺 🆎:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial009c_py310.py!}
+{!../../docs_src/python_types/tutorial009c_py310.py!}
 ```
 
 &amp; ⤴️ 👆 🏆 🚫 ✔️ 😟 🔃 📛 💖 `Optional` &amp; `Union`. 👶
@@ -393,13 +393,13 @@ say_hi(name=None)  # This works, None is valid 🎉
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Union`
-* `Optional`
-* ...&amp; 🎏.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Union`
+- `Optional`
+- ...&amp; 🎏.
 
 ////
 
@@ -407,16 +407,16 @@ say_hi(name=None)  # This works, None is valid 🎉
 
 👆 💪 ⚙️ 🎏 💽 🆎 💊 (⏮️ ⬜ 🗜 &amp; 🆎 🔘):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
- &amp; 🎏 ⏮️ 🐍 3️⃣.6️⃣, ⚪️➡️ `typing` 🕹:
+&amp; 🎏 ⏮️ 🐍 3️⃣.6️⃣, ⚪️➡️ `typing` 🕹:
 
-* `Union`
-* `Optional`
-* ...&amp; 🎏.
+- `Union`
+- `Optional`
+- ...&amp; 🎏.
 
 ////
 
@@ -424,16 +424,16 @@ say_hi(name=None)  # This works, None is valid 🎉
 
 👆 💪 ⚙️ 🎏 💽 🆎 💊 (⏮️ ⬜ 🗜 &amp; 🆎 🔘):
 
-* `list`
-* `tuple`
-* `set`
-* `dict`
+- `list`
+- `tuple`
+- `set`
+- `dict`
 
- &amp; 🎏 ⏮️ 🐍 3️⃣.6️⃣, ⚪️➡️ `typing` 🕹:
+&amp; 🎏 ⏮️ 🐍 3️⃣.6️⃣, ⚪️➡️ `typing` 🕹:
 
-* `Union`
-* `Optional` (🎏 ⏮️ 🐍 3️⃣.6️⃣)
-* ...&amp; 🎏.
+- `Union`
+- `Optional` (🎏 ⏮️ 🐍 3️⃣.6️⃣)
+- ...&amp; 🎏.
 
 🐍 3️⃣.1️⃣0️⃣, 🎛 ⚙️ 💊 `Union` &amp; `Optional`, 👆 💪 ⚙️ <abbr title='also called "bitwise or operator", but that meaning is not relevant here'>⏸ ⏸ (`|`)</abbr> 📣 🇪🇺 🆎.
 
@@ -446,13 +446,13 @@ say_hi(name=None)  # This works, None is valid 🎉
 ➡️ 💬 👆 ✔️ 🎓 `Person`, ⏮️ 📛:
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 ⤴️ 👆 💪 📣 🔢 🆎 `Person`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 &amp; ⤴️, 🔄, 👆 🤚 🌐 👨‍🎨 🐕‍🦺:
@@ -476,7 +476,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011.py!}
+{!> ../../docs_src/python_types/tutorial011.py!}
 ```
 
 ////
@@ -484,7 +484,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py39.py!}
+{!> ../../docs_src/python_types/tutorial011_py39.py!}
 ```
 
 ////
@@ -492,7 +492,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/python_types/tutorial011_py310.py!}
+{!> ../../docs_src/python_types/tutorial011_py310.py!}
 ```
 
 ////
@@ -505,7 +505,7 @@ say_hi(name=None)  # This works, None is valid 🎉
 
 **ReadyAPI** 🌐 ⚓️ 🔛 Pydantic.
 
-👆 🔜 👀 📚 🌅 🌐 👉 💡 [🔰 - 👩‍💻 🦮](tutorial/index.md){.internal-link target=_blank}.
+👆 🔜 👀 📚 🌅 🌐 👉 💡 [🔰 - 👩‍💻 🦮](tutorial/index.md){.internal-link target=\_blank}.
 
 /// tip
 
@@ -519,19 +519,19 @@ Pydantic ✔️ 🎁 🎭 🕐❔ 👆 ⚙️ `Optional` ⚖️ `Union[Something
 
 ⏮️ **ReadyAPI** 👆 📣 🔢 ⏮️ 🆎 🔑 &amp; 👆 🤚:
 
-* **👨‍🎨 🐕‍🦺**.
-* **🆎 ✅**.
+- **👨‍🎨 🐕‍🦺**.
+- **🆎 ✅**.
 
 ...and **ReadyAPI** uses the same declarations :
 
-* **🔬 📄**: ⚪️➡️ 📨 ➡ 🔢, 🔢 🔢, 🎚, 💪, 🔗, ♒️.
-* **🗜 💽**: ⚪️➡️ 📨 🚚 🆎.
-* **✔ 💽**: 👟 ⚪️➡️ 🔠 📨:
-    * 🏭 **🏧 ❌** 📨 👩‍💻 🕐❔ 📊 ❌.
-* **📄** 🛠️ ⚙️ 🗄:
-    * ❔ ⤴️ ⚙️ 🏧 🎓 🧾 👩‍💻 🔢.
+- **🔬 📄**: ⚪️➡️ 📨 ➡ 🔢, 🔢 🔢, 🎚, 💪, 🔗, ♒️.
+- **🗜 💽**: ⚪️➡️ 📨 🚚 🆎.
+- **✔ 💽**: 👟 ⚪️➡️ 🔠 📨:
+  - 🏭 **🏧 ❌** 📨 👩‍💻 🕐❔ 📊 ❌.
+- **📄** 🛠️ ⚙️ 🗄:
+  - ❔ ⤴️ ⚙️ 🏧 🎓 🧾 👩‍💻 🔢.
 
-👉 5️⃣📆 🌐 🔊 📝. 🚫 😟. 👆 🔜 👀 🌐 👉 🎯 [🔰 - 👩‍💻 🦮](tutorial/index.md){.internal-link target=_blank}.
+👉 5️⃣📆 🌐 🔊 📝. 🚫 😟. 👆 🔜 👀 🌐 👉 🎯 [🔰 - 👩‍💻 🦮](tutorial/index.md){.internal-link target=\_blank}.
 
 ⚠ 👜 👈 ⚙️ 🐩 🐍 🆎, 👁 🥉 (↩️ ❎ 🌖 🎓, 👨‍🎨, ♒️), **ReadyAPI** 🔜 📚 👷 👆.
 

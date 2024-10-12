@@ -1,8 +1,8 @@
 # 高级中间件
 
-用户指南介绍了如何为应用添加[自定义中间件](../tutorial/middleware.md){.internal-link target=_blank} 。
+用户指南介绍了如何为应用添加[自定义中间件](../tutorial/middleware.md){.internal-link target=\_blank} 。
 
-以及如何[使用 `CORSMiddleware` 处理 CORS](../tutorial/cors.md){.internal-link target=_blank}。
+以及如何[使用 `CORSMiddleware` 处理 CORS](../tutorial/cors.md){.internal-link target=\_blank}。
 
 本章学习如何使用其它中间件。
 
@@ -58,7 +58,7 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 任何传向 `http` 或 `ws` 的请求都会被重定向至安全方案。
 
 ```Python hl_lines="2  6"
-{!../../../docs_src/advanced_middleware/tutorial001.py!}
+{!../../docs_src/advanced_middleware/tutorial001.py!}
 ```
 
 ## `TrustedHostMiddleware`
@@ -66,12 +66,12 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 强制所有传入请求都必须正确设置 `Host` 请求头，以防 HTTP 主机头攻击。
 
 ```Python hl_lines="2  6-8"
-{!../../../docs_src/advanced_middleware/tutorial002.py!}
+{!../../docs_src/advanced_middleware/tutorial002.py!}
 ```
 
 支持以下参数：
 
-* `allowed_hosts` - 允许的域名（主机名）列表。`*.example.com` 等通配符域名可以匹配子域名，或使用 `allowed_hosts=["*"]` 允许任意主机名，或省略中间件。
+- `allowed_hosts` - 允许的域名（主机名）列表。`*.example.com` 等通配符域名可以匹配子域名，或使用 `allowed_hosts=["*"]` 允许任意主机名，或省略中间件。
 
 如果传入的请求没有通过验证，则发送 `400` 响应。
 
@@ -82,20 +82,20 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 中间件会处理标准响应与流响应。
 
 ```Python hl_lines="2  6"
-{!../../../docs_src/advanced_middleware/tutorial003.py!}
+{!../../docs_src/advanced_middleware/tutorial003.py!}
 ```
 
 支持以下参数：
 
-* `minimum_size` - 小于最小字节的响应不使用 GZip。 默认值是 `500`。
+- `minimum_size` - 小于最小字节的响应不使用 GZip。 默认值是 `500`。
 
 ## 其它中间件
 
-除了上述中间件外，ReadyAPI 还支持其它ASGI 中间件。
+除了上述中间件外，ReadyAPI 还支持其它 ASGI 中间件。
 
 例如：
 
-* <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorn 的 `ProxyHeadersMiddleware`</a>
-* <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">MessagePack</a>
+- <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorn 的  `ProxyHeadersMiddleware`</a>
+- <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">MessagePack</a>
 
-其它可用中间件详见 <a href="https://www.starlette.io/middleware/" class="external-link" target="_blank">Starlette 官档 -  中间件</a> 及 <a href="https://github.com/florimondmanca/awesome-asgi" class="external-link" target="_blank">ASGI Awesome 列表</a>。
+其它可用中间件详见 <a href="https://www.starlette.io/middleware/" class="external-link" target="_blank">Starlette  官档  -   中间件</a> 及 <a href="https://github.com/florimondmanca/awesome-asgi" class="external-link" target="_blank">ASGI Awesome 列表</a>。

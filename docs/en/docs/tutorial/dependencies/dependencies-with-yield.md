@@ -14,8 +14,8 @@ Make sure to use `yield` one single time per dependency.
 
 Any function that is valid to use with:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 would be valid to use as a **ReadyAPI** dependency.
 
@@ -30,19 +30,19 @@ For example, you could use this to create a database session and close it after 
 Only the code prior to and including the `yield` statement is executed before creating a response:
 
 ```Python hl_lines="2-4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-The yielded value is what is injected into *path operations* and other dependencies:
+The yielded value is what is injected into _path operations_ and other dependencies:
 
 ```Python hl_lines="4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 The code following the `yield` statement is executed after the response has been delivered:
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 /// tip
@@ -57,14 +57,14 @@ You can use `async` or regular functions.
 
 If you use a `try` block in a dependency with `yield`, you'll receive any exception that was thrown when using the dependency.
 
-For example, if some code at some point in the middle, in another dependency or in a *path operation*, made a database transaction "rollback" or create any other error, you will receive the exception in your dependency.
+For example, if some code at some point in the middle, in another dependency or in a _path operation_, made a database transaction "rollback" or create any other error, you will receive the exception in your dependency.
 
 So, you can look for that specific exception inside the dependency with `except SomeException`.
 
 In the same way, you can use `finally` to make sure the exit steps are executed, no matter if there was an exception or not.
 
 ```Python hl_lines="3  5"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 ## Sub-dependencies with `yield`
@@ -78,7 +78,7 @@ For example, `dependency_c` can have a dependency on `dependency_b`, and `depend
 //// tab | Python 3.9+
 
 ```Python hl_lines="6  14  22"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -86,7 +86,7 @@ For example, `dependency_c` can have a dependency on `dependency_b`, and `depend
 //// tab | Python 3.8+
 
 ```Python hl_lines="5  13  21"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -100,7 +100,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="4  12  20"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -114,7 +114,7 @@ And, in turn, `dependency_b` needs the value from `dependency_a` (here named `de
 //// tab | Python 3.9+
 
 ```Python hl_lines="18-19  26-27"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -122,7 +122,7 @@ And, in turn, `dependency_b` needs the value from `dependency_a` (here named `de
 //// tab | Python 3.8+
 
 ```Python hl_lines="17-18  25-26"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -136,7 +136,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="16-17  24-25"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -165,7 +165,7 @@ The same way, you could raise an `HTTPException` or similar in the exit code, af
 
 /// tip
 
-This is a somewhat advanced technique, and in most of the cases you won't really need it, as you can raise exceptions (including `HTTPException`) from inside of the rest of your application code, for example, in the *path operation function*.
+This is a somewhat advanced technique, and in most of the cases you won't really need it, as you can raise exceptions (including `HTTPException`) from inside of the rest of your application code, for example, in the _path operation function_.
 
 But it's there for you if you need it. 🤓
 
@@ -174,7 +174,7 @@ But it's there for you if you need it. 🤓
 //// tab | Python 3.9+
 
 ```Python hl_lines="18-22  31"
-{!> ../../../docs_src/dependencies/tutorial008b_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an_py39.py!}
 ```
 
 ////
@@ -182,7 +182,7 @@ But it's there for you if you need it. 🤓
 //// tab | Python 3.8+
 
 ```Python hl_lines="17-21  30"
-{!> ../../../docs_src/dependencies/tutorial008b_an.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an.py!}
 ```
 
 ////
@@ -196,12 +196,12 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="16-20  29"
-{!> ../../../docs_src/dependencies/tutorial008b.py!}
+{!> ../../docs_src/dependencies/tutorial008b.py!}
 ```
 
 ////
 
-An alternative you could use to catch exceptions (and possibly also raise another `HTTPException`) is to create a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}.
+An alternative you could use to catch exceptions (and possibly also raise another `HTTPException`) is to create a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank}.
 
 ## Dependencies with `yield` and `except`
 
@@ -210,7 +210,7 @@ If you catch an exception using `except` in a dependency with `yield` and you do
 //// tab | Python 3.9+
 
 ```Python hl_lines="15-16"
-{!> ../../../docs_src/dependencies/tutorial008c_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an_py39.py!}
 ```
 
 ////
@@ -218,7 +218,7 @@ If you catch an exception using `except` in a dependency with `yield` and you do
 //// tab | Python 3.8+
 
 ```Python hl_lines="14-15"
-{!> ../../../docs_src/dependencies/tutorial008c_an.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an.py!}
 ```
 
 ////
@@ -232,12 +232,12 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="13-14"
-{!> ../../../docs_src/dependencies/tutorial008c.py!}
+{!> ../../docs_src/dependencies/tutorial008c.py!}
 ```
 
 ////
 
-In this case, the client will see an *HTTP 500 Internal Server Error* response as it should, given that we are not raising an `HTTPException` or similar, but the server will **not have any logs** or any other indication of what was the error. 😱
+In this case, the client will see an _HTTP 500 Internal Server Error_ response as it should, given that we are not raising an `HTTPException` or similar, but the server will **not have any logs** or any other indication of what was the error. 😱
 
 ### Always `raise` in Dependencies with `yield` and `except`
 
@@ -248,7 +248,7 @@ You can re-raise the same exception using `raise`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial008d_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an_py39.py!}
 ```
 
 ////
@@ -256,7 +256,7 @@ You can re-raise the same exception using `raise`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/dependencies/tutorial008d_an.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an.py!}
 ```
 
 ////
@@ -270,12 +270,12 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="15"
-{!> ../../../docs_src/dependencies/tutorial008d.py!}
+{!> ../../docs_src/dependencies/tutorial008d.py!}
 ```
 
 ////
 
-Now the client will get the same *HTTP 500 Internal Server Error* response, but the server will have our custom `InternalError` in the logs. 😎
+Now the client will get the same _HTTP 500 Internal Server Error_ response, but the server will have our custom `InternalError` in the logs. 😎
 
 ## Execution of dependencies with `yield`
 
@@ -318,7 +318,7 @@ participant tasks as Background tasks
 
 /// info
 
-Only **one response** will be sent to the client. It might be one of the error responses or it will be the response from the *path operation*.
+Only **one response** will be sent to the client. It might be one of the error responses or it will be the response from the _path operation_.
 
 After one of those responses is sent, no other response can be sent.
 
@@ -326,7 +326,7 @@ After one of those responses is sent, no other response can be sent.
 
 /// tip
 
-This diagram shows `HTTPException`, but you could also raise any other exception that you catch in a dependency with `yield` or with a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}.
+This diagram shows `HTTPException`, but you could also raise any other exception that you catch in a dependency with `yield` or with a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank}.
 
 If you raise any exception, it will be passed to the dependencies with yield, including `HTTPException`. In most cases you will want to re-raise that same exception or a new one from the dependency with `yield` to make sure it's properly handled.
 
@@ -350,7 +350,7 @@ This was changed in version 0.110.0 to fix unhandled memory consumption from for
 
 ### Background Tasks and Dependencies with `yield`, Technical Details
 
-Before ReadyAPI 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed *after* the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} would have already run.
+Before ReadyAPI 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed _after_ the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank} would have already run.
 
 This was designed this way mainly to allow using the same objects "yielded" by dependencies inside of background tasks, because the exit code would be executed after the background tasks were finished.
 
@@ -404,15 +404,15 @@ You can also use them inside of **ReadyAPI** dependencies with `yield` by using
 `with` or `async with` statements inside of the dependency function:
 
 ```Python hl_lines="1-9  13"
-{!../../../docs_src/dependencies/tutorial010.py!}
+{!../../docs_src/dependencies/tutorial010.py!}
 ```
 
 /// tip
 
 Another way to create a context manager is with:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 using them to decorate a function with a single `yield`.
 

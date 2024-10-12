@@ -3,7 +3,7 @@
 En sade ReadyAPI dosyası şu şekilde görünür:
 
 ```Python
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Yukarıdaki içeriği bir `main.py` dosyasına kopyalayalım.
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 `uvicorn main:app` komutunu şu şekilde açıklayabiliriz:
 
-* `main`: dosya olan `main.py` (yani Python "modülü").
-* `app`: ise `main.py` dosyasının içerisinde `app = ReadyAPI()` satırında oluşturduğumuz `ReadyAPI` nesnesi.
-* `--reload`: kod değişikliklerinin ardından sunucuyu otomatik olarak yeniden başlatır. Bu parameteyi sadece geliştirme aşamasında kullanmalıyız.
+- `main`: dosya olan `main.py` (yani Python "modülü").
+- `app`: ise `main.py` dosyasının içerisinde `app = ReadyAPI()` satırında oluşturduğumuz `ReadyAPI` nesnesi.
+- `--reload`: kod değişikliklerinin ardından sunucuyu otomatik olarak yeniden başlatır. Bu parameteyi sadece geliştirme aşamasında kullanmalıyız.
 
 ///
 
@@ -134,7 +134,7 @@ Ayrıca, API'ınızla iletişim kuracak önyüz, mobil veya IoT uygulamaları gi
 ### Adım 1: `ReadyAPI`yı Projemize Dahil Edelim
 
 ```Python hl_lines="1"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `ReadyAPI`, API'niz için tüm işlevselliği sağlayan bir Python sınıfıdır.
@@ -150,7 +150,7 @@ Ayrıca, API'ınızla iletişim kuracak önyüz, mobil veya IoT uygulamaları gi
 ### Adım 2: Bir `ReadyAPI` "Örneği" Oluşturalım
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Burada `app` değişkeni `ReadyAPI` sınıfının bir örneği olacaktır.
@@ -172,7 +172,7 @@ $ uvicorn main:app --reload
 Uygulamanızı aşağıdaki gibi oluşturursanız:
 
 ```Python hl_lines="3"
-{!../../../docs_src/first_steps/tutorial002.py!}
+{!../../docs_src/first_steps/tutorial002.py!}
 ```
 
 Ve bunu `main.py` dosyasına yerleştirirseniz eğer `uvicorn` komutunu şu şekilde çalıştırabilirsiniz:
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Adım 3: Bir *Yol Operasyonu* Oluşturalım
+### Adım 3: Bir _Yol Operasyonu_ Oluşturalım
 
 #### <abbr title="Yol: Path">Yol</abbr>
 
@@ -219,17 +219,17 @@ Burada "operasyon" HTTP "metodlarından" birini ifade eder.
 
 Bunlardan biri:
 
-* `POST`
-* `GET`
-* `PUT`
-* `DELETE`
+- `POST`
+- `GET`
+- `PUT`
+- `DELETE`
 
 ...veya daha az kullanılan diğerleri:
 
-* `OPTIONS`
-* `HEAD`
-* `PATCH`
-* `TRACE`
+- `OPTIONS`
+- `HEAD`
+- `PATCH`
+- `TRACE`
 
 HTTP protokolünde, bu "metodlardan" birini (veya daha fazlasını) kullanarak her bir yol ile iletişim kurabilirsiniz.
 
@@ -239,25 +239,25 @@ API oluştururkan, belirli bir amaca hizmet eden belirli HTTP metodlarını kull
 
 Normalde kullanılan:
 
-* `POST`: veri oluşturmak.
-* `GET`: veri okumak.
-* `PUT`: veriyi güncellemek.
-* `DELETE`: veriyi silmek.
+- `POST`: veri oluşturmak.
+- `GET`: veri okumak.
+- `PUT`: veriyi güncellemek.
+- `DELETE`: veriyi silmek.
 
 Bu nedenle, OpenAPI'da HTTP metodlarından her birine "operasyon" denir.
 
 Biz de onları "**operasyonlar**" olarak adlandıracağız.
 
-#### Bir *Yol Operasyonu Dekoratörü* Tanımlayalım
+#### Bir _Yol Operasyonu Dekoratörü_ Tanımlayalım
 
 ```Python hl_lines="6"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 `@app.get("/")` dekoratörü, **ReadyAPI**'a hemen altındaki fonksiyonun aşağıdaki durumlardan sorumlu olduğunu söyler:
 
-* <abbr title="Bir HTTP GET metodu"><code>get</code> operasyonu</abbr> ile
-* `/` yoluna gelen istekler
+- <abbr title="Bir HTTP GET metodu"><code>get</code> operasyonu</abbr> ile
+- `/` yoluna gelen istekler
 
 /// info | "`@decorator` Bilgisi"
 
@@ -275,16 +275,16 @@ Bu bir **yol operasyonu dekoratörüdür**.
 
 Ayrıca diğer operasyonları da kullanabilirsiniz:
 
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
 
 Daha az kullanılanları da kullanabilirsiniz:
 
-* `@app.options()`
-* `@app.head()`
-* `@app.patch()`
-* `@app.trace()`
+- `@app.options()`
+- `@app.head()`
+- `@app.patch()`
+- `@app.trace()`
 
 /// tip | "İpucu"
 
@@ -302,12 +302,12 @@ Mesela GraphQL kullanırkan genelde tüm işlemleri yalnızca `POST` operasyonun
 
 Aşağıdaki, bizim **yol operasyonu fonksiyonumuzdur**:
 
-* **yol**: `/`
-* **operasyon**: `get`
-* **fonksiyon**: "dekoratör"ün (`@app.get("/")`'in) altındaki fonksiyondur.
+- **yol**: `/`
+- **operasyon**: `get`
+- **fonksiyon**: "dekoratör"ün (`@app.get("/")`'in) altındaki fonksiyondur.
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Bu bir Python fonksiyonudur.
@@ -321,19 +321,19 @@ Bu durumda bu fonksiyon bir `async` fonksiyondur.
 Bu fonksiyonu `async def` yerine normal bir fonksiyon olarak da tanımlayabilirsiniz.
 
 ```Python hl_lines="7"
-{!../../../docs_src/first_steps/tutorial003.py!}
+{!../../docs_src/first_steps/tutorial003.py!}
 ```
 
 /// note | "Not"
 
-Eğer farkı bilmiyorsanız, [Async: *"Aceleniz mi var?"*](../async.md#in-a-hurry){.internal-link target=_blank} sayfasını kontrol edebilirsiniz.
+Eğer farkı bilmiyorsanız, [Async: _"Aceleniz mi var?"_](../async.md#in-a-hurry){.internal-link target=\_blank} sayfasını kontrol edebilirsiniz.
 
 ///
 
 ### Adım 5: İçeriği Geri Döndürün
 
 ```Python hl_lines="8"
-{!../../../docs_src/first_steps/tutorial001.py!}
+{!../../docs_src/first_steps/tutorial001.py!}
 ```
 
 Bir `dict`, `list` veya `str`, `int` gibi tekil değerler döndürebilirsiniz.
@@ -344,8 +344,8 @@ Otomatik olarak JSON'a dönüştürülecek (ORM'ler vb. dahil) başka birçok ne
 
 ## Özet
 
-* `ReadyAPI`'yı projemize dahil ettik.
-* Bir `app` örneği oluşturduk.
-* Bir **yol operasyonu dekoratörü** (`@app.get("/")` gibi) yazdık.
-* Bir **yol operasyonu fonksiyonu** (`def root(): ...` gibi) yazdık.
-* Geliştirme sunucumuzu (`uvicorn main:app --reload` gibi) çalıştırdık.
+- `ReadyAPI`'yı projemize dahil ettik.
+- Bir `app` örneği oluşturduk.
+- Bir **yol operasyonu dekoratörü** (`@app.get("/")` gibi) yazdık.
+- Bir **yol operasyonu fonksiyonu** (`def root(): ...` gibi) yazdık.
+- Geliştirme sunucumuzu (`uvicorn main:app --reload` gibi) çalıştırdık.

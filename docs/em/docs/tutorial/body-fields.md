@@ -1,6 +1,6 @@
 # 💪 - 🏑
 
-🎏 🌌 👆 💪 📣 🌖 🔬 &amp; 🗃 *➡ 🛠️ 🔢* 🔢 ⏮️ `Query`, `Path` &amp; `Body`, 👆 💪 📣 🔬 &amp; 🗃 🔘 Pydantic 🏷 ⚙️ Pydantic `Field`.
+🎏 🌌 👆 💪 📣 🌖 🔬 &amp; 🗃 _➡ 🛠️ 🔢_ 🔢 ⏮️ `Query`, `Path` &amp; `Body`, 👆 💪 📣 🔬 &amp; 🗃 🔘 Pydantic 🏷 ⚙️ Pydantic `Field`.
 
 ## 🗄 `Field`
 
@@ -9,7 +9,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="4"
-{!> ../../../docs_src/body_fields/tutorial001.py!}
+{!> ../../docs_src/body_fields/tutorial001.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="2"
-{!> ../../../docs_src/body_fields/tutorial001_py310.py!}
+{!> ../../docs_src/body_fields/tutorial001_py310.py!}
 ```
 
 ////
@@ -35,7 +35,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="11-14"
-{!> ../../../docs_src/body_fields/tutorial001.py!}
+{!> ../../docs_src/body_fields/tutorial001.py!}
 ```
 
 ////
@@ -43,7 +43,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="9-12"
-{!> ../../../docs_src/body_fields/tutorial001_py310.py!}
+{!> ../../docs_src/body_fields/tutorial001_py310.py!}
 ```
 
 ////
@@ -54,7 +54,7 @@
 
 🤙, `Query`, `Path` &amp; 🎏 👆 🔜 👀 ⏭ ✍ 🎚 🏿 ⚠ `Param` 🎓, ❔ ⚫️ 🏿 Pydantic `FieldInfo` 🎓.
 
- &amp; Pydantic `Field` 📨 👐 `FieldInfo` 👍.
+&amp; Pydantic `Field` 📨 👐 `FieldInfo` 👍.
 
 `Body` 📨 🎚 🏿 `FieldInfo` 🔗. &amp; 📤 🎏 👆 🔜 👀 ⏪ 👈 🏿 `Body` 🎓.
 
@@ -64,7 +64,7 @@
 
 /// tip
 
-👀 ❔ 🔠 🏷 🔢 ⏮️ 🆎, 🔢 💲 &amp; `Field` ✔️ 🎏 📊 *➡ 🛠️ 🔢* 🔢, ⏮️ `Field` ↩️ `Path`, `Query` &amp; `Body`.
+👀 ❔ 🔠 🏷 🔢 ⏮️ 🆎, 🔢 💲 &amp; `Field` ✔️ 🎏 📊 _➡ 🛠️ 🔢_ 🔢, ⏮️ `Field` ↩️ `Path`, `Query` &amp; `Body`.
 
 ///
 

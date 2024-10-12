@@ -29,14 +29,14 @@
 这样一来，**ReadyAPI** 就会调用覆盖依赖项，不再调用原依赖项。
 
 ```Python hl_lines="26-27  30"
-{!../../../docs_src/dependency_testing/tutorial001.py!}
+{!../../docs_src/dependency_testing/tutorial001.py!}
 ```
 
 /// tip | "提示"
 
 **ReadyAPI** 应用中的任何位置都可以实现覆盖依赖项。
 
-原依赖项可用于*路径操作函数*、*路径操作装饰器*（不需要返回值时）、`.include_router()` 调用等。
+原依赖项可用于*路径操作函数*、_路径操作装饰器_（不需要返回值时）、`.include_router()` 调用等。
 
 ReadyAPI 可以覆盖这些位置的依赖项。
 

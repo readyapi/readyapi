@@ -23,7 +23,7 @@ Se você é um especialista em Python e já sabe tudo sobre type hints, pule par
 Vamos começar com um exemplo simples:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 A chamada deste programa gera:
@@ -34,12 +34,12 @@ John Doe
 
 A função faz o seguinte:
 
-* Pega um `first_name` e `last_name`.
-* Converte a primeira letra de cada uma em maiúsculas com `title ()`.
-* <abbr title = "Agrupa-os, como um. Com o conteúdo de um após o outro."> Concatena </abbr> com um espaço no meio.
+- Pega um `first_name` e `last_name`.
+- Converte a primeira letra de cada uma em maiúsculas com `title ()`.
+- <abbr title = "Agrupa-os, como um. Com o conteúdo de um após o outro."> Concatena </abbr> com um espaço no meio.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Edite-o
@@ -83,7 +83,7 @@ para:
 Esses são os "type hints":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 Isso não é o mesmo que declarar valores padrão como seria com:
@@ -113,7 +113,7 @@ Com isso, você pode rolar, vendo as opções, até encontrar o que "toca uma ca
 Marque esta função, ela já possui type hints:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Como o editor conhece os tipos de variáveis, você não apenas obtém a conclusão, mas também as verificações de erro:
@@ -123,7 +123,7 @@ Como o editor conhece os tipos de variáveis, você não apenas obtém a conclus
 Agora você sabe que precisa corrigí-lo, converta `age` em uma string com `str (age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Tipos de declaração
@@ -138,13 +138,13 @@ Você pode declarar todos os tipos padrão de Python, não apenas `str`.
 
 Você pode usar, por exemplo:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Tipos genéricos com parâmetros de tipo
@@ -162,7 +162,7 @@ Por exemplo, vamos definir uma variável para ser uma `lista` de `str`.
 Em `typing`, importe `List` (com um `L` maiúsculo):
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 Declare a variável com a mesma sintaxe de dois pontos (`:`).
@@ -172,7 +172,7 @@ Como o tipo, coloque a `List`.
 Como a lista é um tipo que contém alguns tipos internos, você os coloca entre colchetes:
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 /// tip | "Dica"
@@ -200,13 +200,13 @@ E, ainda assim, o editor sabe que é um `str` e fornece suporte para isso.
 Você faria o mesmo para declarar `tuple`s e `set`s:
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 Isso significa que:
 
-* A variável `items_t` é uma `tuple` com 3 itens, um `int`, outro `int` e uma `str`.
-* A variável `items_s` é um `set`, e cada um de seus itens é do tipo `bytes`.
+- A variável `items_t` é uma `tuple` com 3 itens, um `int`, outro `int` e uma `str`.
+- A variável `items_s` é um `set`, e cada um de seus itens é do tipo `bytes`.
 
 #### `Dict`
 
@@ -217,21 +217,21 @@ O primeiro parâmetro de tipo é para as chaves do `dict`.
 O segundo parâmetro de tipo é para os valores do `dict`:
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 Isso significa que:
 
-* A variável `prices` é um dict`:
-    * As chaves deste `dict` são do tipo `str` (digamos, o nome de cada item).
-    * Os valores deste `dict` são do tipo `float` (digamos, o preço de cada item).
+- A variável `prices` é um dict`:
+  - As chaves deste `dict` são do tipo `str` (digamos, o nome de cada item).
+  - Os valores deste `dict` são do tipo `float` (digamos, o preço de cada item).
 
 #### `Opcional`
 
 Você também pode usar o `Opcional` para declarar que uma variável tem um tipo, como `str`, mas que é "opcional", o que significa que também pode ser `None`:
 
 ```Python hl_lines="1 4"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 O uso de `Opcional [str]` em vez de apenas `str` permitirá que o editor o ajude a detectar erros, onde você pode estar assumindo que um valor é sempre um `str`, quando na verdade também pode ser `None`.
@@ -240,12 +240,12 @@ O uso de `Opcional [str]` em vez de apenas `str` permitirá que o editor o ajude
 
 Esses tipos que usam parâmetros de tipo entre colchetes, como:
 
-* `List`
-* `Tuple`
-* `Set`
-* `Dict`
-* `Opcional`
-* ...e outros.
+- `List`
+- `Tuple`
+- `Set`
+- `Dict`
+- `Opcional`
+- ...e outros.
 
 são chamados **tipos genéricos** ou **genéricos**.
 
@@ -256,13 +256,13 @@ Você também pode declarar uma classe como o tipo de uma variável.
 Digamos que você tenha uma classe `Person`, com um nome:
 
 ```Python hl_lines="1 2 3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 Então você pode declarar que uma variável é do tipo `Person`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 E então, novamente, você recebe todo o suporte do editor:
@@ -284,7 +284,7 @@ E você recebe todo o suporte do editor com esse objeto resultante.
 Retirado dos documentos oficiais dos Pydantic:
 
 ```Python
-{!../../../docs_src/python_types/tutorial011.py!}
+{!../../docs_src/python_types/tutorial011.py!}
 ```
 
 /// info | "Informação"
@@ -295,7 +295,7 @@ Para saber mais sobre o <a href="https://docs.pydantic.dev/" class="external-lin
 
 **ReadyAPI** é todo baseado em Pydantic.
 
-Você verá muito mais disso na prática no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=_blank}.
+Você verá muito mais disso na prática no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=\_blank}.
 
 ## Type hints em **ReadyAPI**
 
@@ -303,24 +303,24 @@ O **ReadyAPI** aproveita esses type hints para fazer várias coisas.
 
 Com o **ReadyAPI**, você declara parâmetros com type hints e obtém:
 
-* **Suporte ao editor**.
-* **Verificações de tipo**.
+- **Suporte ao editor**.
+- **Verificações de tipo**.
 
 ... e **ReadyAPI** usa as mesmas declarações para:
 
-* **Definir requisitos**: dos parâmetros do caminho da solicitação, parâmetros da consulta, cabeçalhos, corpos, dependências, etc.
-* **Converter dados**: da solicitação para o tipo necessário.
-* **Validar dados**: provenientes de cada solicitação:
-    * A geração de **erros automáticos** retornou ao cliente quando os dados são inválidos.
-* **Documente** a API usando OpenAPI:
-    * que é usado pelas interfaces de usuário da documentação interativa automática.
+- **Definir requisitos**: dos parâmetros do caminho da solicitação, parâmetros da consulta, cabeçalhos, corpos, dependências, etc.
+- **Converter dados**: da solicitação para o tipo necessário.
+- **Validar dados**: provenientes de cada solicitação:
+  - A geração de **erros automáticos** retornou ao cliente quando os dados são inválidos.
+- **Documente** a API usando OpenAPI:
+  - que é usado pelas interfaces de usuário da documentação interativa automática.
 
-Tudo isso pode parecer abstrato. Não se preocupe. Você verá tudo isso em ação no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=_blank}.
+Tudo isso pode parecer abstrato. Não se preocupe. Você verá tudo isso em ação no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=\_blank}.
 
 O importante é que, usando tipos padrão de Python, em um único local (em vez de adicionar mais classes, decoradores, etc.), o **ReadyAPI** fará muito trabalho para você.
 
 /// info | "Informação"
 
-Se você já passou por todo o tutorial e voltou para ver mais sobre os tipos, um bom recurso é <a href = "https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html" class = "external-link "target =" _ blank "> a "cheat sheet" do `mypy` </a>.
+Se você já passou por todo o tutorial e voltou para ver mais sobre os tipos, um bom recurso é <a href = "https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html" class = "external-link "target =" \_ blank "> a "cheat sheet" do `mypy` </a>.
 
 ///

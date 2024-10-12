@@ -6,16 +6,16 @@
 
 ## ⚫️❔ "🔗 💉"
 
-**"🔗 💉"** ⛓, 📋, 👈 📤 🌌 👆 📟 (👉 💼, 👆 *➡ 🛠️ 🔢*) 📣 👜 👈 ⚫️ 🚚 👷 &amp; ⚙️: "🔗".
+**"🔗 💉"** ⛓, 📋, 👈 📤 🌌 👆 📟 (👉 💼, 👆 _➡ 🛠️ 🔢_) 📣 👜 👈 ⚫️ 🚚 👷 &amp; ⚙️: "🔗".
 
 &amp; ⤴️, 👈 ⚙️ (👉 💼 **ReadyAPI**) 🔜 ✊ 💅 🔨 ⚫️❔ 💪 🚚 👆 📟 ⏮️ 📚 💪 🔗 ("💉" 🔗).
 
 👉 📶 ⚠ 🕐❔ 👆 💪:
 
-* ✔️ 💰 ⚛ (🎏 📟 ⚛ 🔄 &amp; 🔄).
-* 💰 💽 🔗.
-* 🛠️ 💂‍♂, 🤝, 🔑 📄, ♒️.
-*  &amp; 📚 🎏 👜...
+- ✔️ 💰 ⚛ (🎏 📟 ⚛ 🔄 &amp; 🔄).
+- 💰 💽 🔗.
+- 🛠️ 💂‍♂, 🤝, 🔑 📄, ♒️.
+- &amp; 📚 🎏 👜...
 
 🌐 👫, ⏪ 📉 📟 🔁.
 
@@ -29,12 +29,12 @@
 
 ➡️ 🥇 🎯 🔛 🔗.
 
-⚫️ 🔢 👈 💪 ✊ 🌐 🎏 🔢 👈 *➡ 🛠️ 🔢* 💪 ✊:
+⚫️ 🔢 👈 💪 ✊ 🌐 🎏 🔢 👈 _➡ 🛠️ 🔢_ 💪 ✊:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="8-11"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -42,7 +42,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -51,17 +51,17 @@
 
 **2️⃣ ⏸**.
 
-&amp; ⚫️ ✔️ 🎏 💠 &amp; 📊 👈 🌐 👆 *➡ 🛠️ 🔢* ✔️.
+&amp; ⚫️ ✔️ 🎏 💠 &amp; 📊 👈 🌐 👆 _➡ 🛠️ 🔢_ ✔️.
 
-👆 💪 💭 ⚫️ *➡ 🛠️ 🔢* 🍵 "👨‍🎨" (🍵 `@app.get("/some-path")`).
+👆 💪 💭 ⚫️ _➡ 🛠️ 🔢_ 🍵 "👨‍🎨" (🍵 `@app.get("/some-path")`).
 
 &amp; ⚫️ 💪 📨 🕳 👆 💚.
 
 👉 💼, 👉 🔗 ⌛:
 
-* 📦 🔢 🔢 `q` 👈 `str`.
-* 📦 🔢 🔢 `skip` 👈 `int`, &amp; 🔢 `0`.
-* 📦 🔢 🔢 `limit` 👈 `int`, &amp; 🔢 `100`.
+- 📦 🔢 🔢 `q` 👈 `str`.
+- 📦 🔢 🔢 `skip` 👈 `int`, &amp; 🔢 `0`.
+- 📦 🔢 🔢 `limit` 👈 `int`, &amp; 🔢 `100`.
 
 &amp; ⤴️ ⚫️ 📨 `dict` ⚗ 📚 💲.
 
@@ -70,7 +70,7 @@
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="3"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -78,19 +78,19 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="1"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
 
 ### 📣 🔗, "⚓️"
 
-🎏 🌌 👆 ⚙️ `Body`, `Query`, ♒️. ⏮️ 👆 *➡ 🛠️ 🔢* 🔢, ⚙️ `Depends` ⏮️ 🆕 🔢:
+🎏 🌌 👆 ⚙️ `Body`, `Query`, ♒️. ⏮️ 👆 _➡ 🛠️ 🔢_ 🔢, ⚙️ `Depends` ⏮️ 🆕 🔢:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="15  20"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -98,7 +98,7 @@
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="11  16"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -109,7 +109,7 @@
 
 👉 🔢 🔜 🕳 💖 🔢.
 
-&amp; 👈 🔢 ✊ 🔢 🎏 🌌 👈 *➡ 🛠️ 🔢* .
+&amp; 👈 🔢 ✊ 🔢 🎏 🌌 👈 _➡ 🛠️ 🔢_ .
 
 /// tip
 
@@ -119,9 +119,9 @@
 
 🕐❔ 🆕 📨 🛬, **ReadyAPI** 🔜 ✊ 💅:
 
-* 🤙 👆 🔗 ("☑") 🔢 ⏮️ ☑ 🔢.
-* 🤚 🏁 ⚪️➡️ 👆 🔢.
-* 🛠️ 👈 🏁 🔢 👆 *➡ 🛠️ 🔢*.
+- 🤙 👆 🔗 ("☑") 🔢 ⏮️ ☑ 🔢.
+- 🤚 🏁 ⚪️➡️ 👆 🔢.
+- 🛠️ 👈 🏁 🔢 👆 _➡ 🛠️ 🔢_.
 
 ```mermaid
 graph TB
@@ -134,7 +134,7 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-👉 🌌 👆 ✍ 🔗 📟 🕐 &amp; **ReadyAPI** ✊ 💅 🤙 ⚫️ 👆 *➡ 🛠️*.
+👉 🌌 👆 ✍ 🔗 📟 🕐 &amp; **ReadyAPI** ✊ 💅 🤙 ⚫️ 👆 _➡ 🛠️_.
 
 /// check
 
@@ -144,19 +144,19 @@ common_parameters --> read_users
 
 ///
 
-##  `async` ⚖️ 🚫 `async`
+## `async` ⚖️ 🚫 `async`
 
-🔗 🔜 🤙 **ReadyAPI** (🎏 👆 *➡ 🛠️ 🔢*), 🎏 🚫 ✔ ⏪ 🔬 👆 🔢.
+🔗 🔜 🤙 **ReadyAPI** (🎏 👆 _➡ 🛠️ 🔢_), 🎏 🚫 ✔ ⏪ 🔬 👆 🔢.
 
 👆 💪 ⚙️ `async def` ⚖️ 😐 `def`.
 
-&amp; 👆 💪 📣 🔗 ⏮️ `async def` 🔘 😐 `def` *➡ 🛠️ 🔢*, ⚖️ `def` 🔗 🔘 `async def` *➡ 🛠️ 🔢*, ♒️.
+&amp; 👆 💪 📣 🔗 ⏮️ `async def` 🔘 😐 `def` _➡ 🛠️ 🔢_, ⚖️ `def` 🔗 🔘 `async def` _➡ 🛠️ 🔢_, ♒️.
 
 ⚫️ 🚫 🤔. **ReadyAPI** 🔜 💭 ⚫️❔.
 
 /// note
 
-🚥 👆 🚫 💭, ✅ [🔁: *"🏃 ❓" *](../../async.md){.internal-link target=_blank} 📄 🔃 `async` &amp; `await` 🩺.
+🚥 👆 🚫 💭, ✅ [🔁: _"🏃 ❓" _](../../async.md){.internal-link target=\_blank} 📄 🔃 `async` &amp; `await` 🩺.
 
 ///
 
@@ -170,27 +170,27 @@ common_parameters --> read_users
 
 ## 🙅 ⚙️
 
-🚥 👆 👀 ⚫️, *➡ 🛠️ 🔢* 📣 ⚙️ 🕐❔ *➡* &amp; *🛠️* 🏏, &amp; ⤴️ **ReadyAPI** ✊ 💅 🤙 🔢 ⏮️ ☑ 🔢, ❎ 📊 ⚪️➡️ 📨.
+🚥 👆 👀 ⚫️, _➡ 🛠️ 🔢_ 📣 ⚙️ 🕐❔ _➡_ &amp; _🛠️_ 🏏, &amp; ⤴️ **ReadyAPI** ✊ 💅 🤙 🔢 ⏮️ ☑ 🔢, ❎ 📊 ⚪️➡️ 📨.
 
 🤙, 🌐 (⚖️ 🏆) 🕸 🛠️ 👷 👉 🎏 🌌.
 
 👆 🙅 🤙 👈 🔢 🔗. 👫 🤙 👆 🛠️ (👉 💼, **ReadyAPI**).
 
-⏮️ 🔗 💉 ⚙️, 👆 💪 💬 **ReadyAPI** 👈 👆 *➡ 🛠️ 🔢* "🪀" 🔛 🕳 🙆 👈 🔜 🛠️ ⏭ 👆 *➡ 🛠️ 🔢*, &amp; **ReadyAPI** 🔜 ✊ 💅 🛠️ ⚫️ &amp; "💉" 🏁.
+⏮️ 🔗 💉 ⚙️, 👆 💪 💬 **ReadyAPI** 👈 👆 _➡ 🛠️ 🔢_ "🪀" 🔛 🕳 🙆 👈 🔜 🛠️ ⏭ 👆 _➡ 🛠️ 🔢_, &amp; **ReadyAPI** 🔜 ✊ 💅 🛠️ ⚫️ &amp; "💉" 🏁.
 
 🎏 ⚠ ⚖ 👉 🎏 💭 "🔗 💉":
 
-* ℹ
-* 🐕‍🦺
-* 🐕‍🦺
-* 💉
-* 🦲
+- ℹ
+- 🐕‍🦺
+- 🐕‍🦺
+- 💉
+- 🦲
 
 ## **ReadyAPI** 🔌-🔌
 
-🛠️ &amp; "🔌-"Ⓜ 💪 🏗 ⚙️ **🔗 💉** ⚙️. ✋️ 👐, 📤 🤙 **🙅‍♂ 💪 ✍ "🔌-🔌"**, ⚙️ 🔗 ⚫️ 💪 📣 ♾ 🔢 🛠️ &amp; 🔗 👈 ▶️️ 💪 👆 *➡ 🛠️ 🔢*.
+🛠️ &amp; "🔌-"Ⓜ 💪 🏗 ⚙️ **🔗 💉** ⚙️. ✋️ 👐, 📤 🤙 **🙅‍♂ 💪 ✍ "🔌-🔌"**, ⚙️ 🔗 ⚫️ 💪 📣 ♾ 🔢 🛠️ &amp; 🔗 👈 ▶️️ 💪 👆 _➡ 🛠️ 🔢_.
 
-&amp; 🔗 💪 ✍ 📶 🙅 &amp; 🏋️ 🌌 👈 ✔ 👆 🗄 🐍 📦 👆 💪, &amp; 🛠️ 👫 ⏮️ 👆 🛠️ 🔢 👩‍❤‍👨 ⏸ 📟, *🌖*.
+&amp; 🔗 💪 ✍ 📶 🙅 &amp; 🏋️ 🌌 👈 ✔ 👆 🗄 🐍 📦 👆 💪, &amp; 🛠️ 👫 ⏮️ 👆 🛠️ 🔢 👩‍❤‍👨 ⏸ 📟, _🌖_.
 
 👆 🔜 👀 🖼 👉 ⏭ 📃, 🔃 🔗 &amp; ☁ 💽, 💂‍♂, ♒️.
 
@@ -198,14 +198,14 @@ common_parameters --> read_users
 
 🦁 🔗 💉 ⚙️ ⚒ **ReadyAPI** 🔗 ⏮️:
 
-* 🌐 🔗 💽
-* ☁ 💽
-* 🔢 📦
-* 🔢 🔗
-* 🤝 &amp; ✔ ⚙️
-* 🛠️ ⚙️ ⚖ ⚙️
-* 📨 💽 💉 ⚙️
-* ♒️.
+- 🌐 🔗 💽
+- ☁ 💽
+- 🔢 📦
+- 🔢 🔗
+- 🤝 &amp; ✔ ⚙️
+- 🛠️ ⚙️ ⚖ ⚙️
+- 📨 💽 💉 ⚙️
+- ♒️.
 
 ## 🙅 &amp; 🏋️
 
@@ -215,12 +215,12 @@ common_parameters --> read_users
 
 🔚, 🔗 🌲 🔗 🏗, &amp; **🔗 💉** ⚙️ ✊ 💅 🔬 🌐 👉 🔗 👆 (&amp; 👫 🎧-🔗) &amp; 🚚 (💉) 🏁 🔠 🔁.
 
-🖼, ➡️ 💬 👆 ✔️ 4️⃣ 🛠️ 🔗 (*➡ 🛠️*):
+🖼, ➡️ 💬 👆 ✔️ 4️⃣ 🛠️ 🔗 (_➡ 🛠️_):
 
-* `/items/public/`
-* `/items/private/`
-* `/users/{user_id}/activate`
-* `/items/pro/`
+- `/items/public/`
+- `/items/private/`
+- `/users/{user_id}/activate`
+- `/items/pro/`
 
 ⤴️ 👆 💪 🚮 🎏 ✔ 📄 🔠 👫 ⏮️ 🔗 &amp; 🎧-🔗:
 
@@ -249,6 +249,6 @@ paying_user --> pro_items
 
 ## 🛠️ ⏮️ **🗄**
 
-🌐 👫 🔗, ⏪ 📣 👫 📄, 🚮 🔢, 🔬, ♒️. 👆 *➡ 🛠️*.
+🌐 👫 🔗, ⏪ 📣 👫 📄, 🚮 🔢, 🔬, ♒️. 👆 _➡ 🛠️_.
 
 **ReadyAPI** 🔜 ✊ 💅 🚮 ⚫️ 🌐 🗄 🔗, 👈 ⚫️ 🎦 🎓 🧾 ⚙️.

@@ -2,11 +2,11 @@
 
 **ReadyAPI** を手動でデプロイすることもできます。
 
-以下の様なASGI対応のサーバをインストールする必要があります:
+以下の様な ASGI 対応のサーバをインストールする必要があります:
 
 //// tab | Uvicorn
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, uvloopとhttptoolsを基にした高速なASGIサーバ。
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, uvloop と httptools を基にした高速な ASGI サーバ。
 
 <div class="termy">
 
@@ -22,7 +22,7 @@ $ pip install "uvicorn[standard]"
 
 /// tip | "豆知識"
 
-`standard` を加えることで、Uvicornがインストールされ、いくつかの推奨される依存関係を利用するようになります。
+`standard` を加えることで、Uvicorn がインストールされ、いくつかの推奨される依存関係を利用するようになります。
 
 これには、`asyncio` の高性能な完全互換品である `uvloop` が含まれ、並行処理のパフォーマンスが大幅に向上します。
 
@@ -30,7 +30,7 @@ $ pip install "uvicorn[standard]"
 
 //// tab | Hypercorn
 
-* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, HTTP/2にも対応しているASGIサーバ。
+- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, HTTP/2 にも対応している ASGI サーバ。
 
 <div class="termy">
 
@@ -42,7 +42,7 @@ $ pip install hypercorn
 
 </div>
 
-...または、これら以外のASGIサーバ。
+...または、これら以外の ASGI サーバ。
 
 ////
 
@@ -78,8 +78,8 @@ Running on 0.0.0.0:8080 over http (CTRL + C to quit)
 
 停止した場合に自動的に再起動させるツールを設定したいかもしれません。
 
-さらに、<a href="https://gunicorn.org/" class="external-link" target="_blank">Gunicorn</a>をインストールして<a href="https://www.uvicorn.org/#running-with-gunicorn" class="external-link" target="_blank">Uvicornのマネージャーとして使用したり</a>、複数のワーカーでHypercornを使用したいかもしれません。
+さらに、<a href="https://gunicorn.org/" class="external-link" target="_blank">Gunicorn</a>をインストールして<a href="https://www.uvicorn.org/#running-with-gunicorn" class="external-link" target="_blank">Uvicorn のマネージャーとして使用したり</a>、複数のワーカーで Hypercorn を使用したいかもしれません。
 
 ワーカー数などの微調整も行いたいかもしれません。
 
-しかしこれら全てをやろうとすると、自動的にこれらを行うDockerイメージを使う方が楽かもしれません。
+しかしこれら全てをやろうとすると、自動的にこれらを行う Docker イメージを使う方が楽かもしれません。

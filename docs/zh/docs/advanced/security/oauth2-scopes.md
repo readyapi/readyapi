@@ -42,9 +42,9 @@ OpenAPI 中（例如 API 文档）可以定义**安全方案**。
 
 常用于声明特定安全权限，例如：
 
-* 常见用例为，`users:read` 或 `users:write`
-* 脸书和 Instagram 使用 `instagram_basic`
-* 谷歌使用 `https://www.googleapis.com/auth/drive`
+- 常见用例为，`users:read` 或 `users:write`
+- 脸书和 Instagram 使用 `instagram_basic`
+- 谷歌使用 `https://www.googleapis.com/auth/drive`
 
 /// info | "说明"
 
@@ -60,10 +60,10 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 ## 全局纵览
 
-首先，快速浏览一下以下代码与**用户指南**中 [OAuth2 实现密码哈希与 Bearer  JWT 令牌验证](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}一章中代码的区别。以下代码使用 OAuth2 作用域：
+首先，快速浏览一下以下代码与**用户指南**中 [OAuth2 实现密码哈希与 Bearer JWT 令牌验证](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}一章中代码的区别。以下代码使用 OAuth2 作用域：
 
 ```Python hl_lines="2  4  8  12  46  64  105  107-115  121-124  128-134  139  153"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 下面，我们逐步说明修改的代码内容。
@@ -75,7 +75,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 `scopes` 参数接收**字典**，键是作用域、值是作用域的描述：
 
 ```Python hl_lines="62-65"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 因为声明了作用域，所以登录或授权时会在 API 文档中显示。
@@ -103,12 +103,12 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 ///
 
 ```Python hl_lines="153"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 在*路径操作*与依赖项中声明作用域
 
-接下来，为*路径操作*  `/users/me/items/` 声明作用域 `items`。
+接下来，为*路径操作* `/users/me/items/` 声明作用域 `items`。
 
 为此，要从 `readyapi` 中导入并使用 `Security` 。
 
@@ -131,7 +131,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 ///
 
 ```Python hl_lines="4  139  166"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 /// info | "技术细节"
@@ -159,14 +159,14 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 `SecuriScopes` 类与 `Request` 类似（`Request` 用于直接提取请求对象）。
 
 ```Python hl_lines="8  105"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 使用 `scopes`
 
 参数 `security_scopes` 的类型是 `SecurityScopes`。
 
-它的属性 `scopes`  是作用域列表，所有依赖项都把它作为子依赖项。也就是说所有**依赖**……这听起来有些绕，后文会有解释。
+它的属性 `scopes` 是作用域列表，所有依赖项都把它作为子依赖项。也就是说所有**依赖**……这听起来有些绕，后文会有解释。
 
 （类 `SecurityScopes` 的）`security_scopes` 对象还提供了单字符串类型的属性 `scope_str`，该属性是（要在本例中使用的）用空格分割的作用域。
 
@@ -175,7 +175,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 该异常包含了作用域所需的（如有），以空格分割的字符串（使用 `scope_str`）。该字符串要放到包含作用域的 `WWW-Authenticate` 请求头中（这也是规范的要求）。
 
 ```Python hl_lines="105  107-115"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 校验 `username` 与数据形状
@@ -193,7 +193,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 还可以使用用户名验证用户，如果没有用户，也会触发之前创建的异常。
 
 ```Python hl_lines="46  116-127"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 校验 `scopes`
@@ -203,7 +203,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 为此，要使用包含所有作用域**字符串列表**的 `security_scopes.scopes`， 。
 
 ```Python hl_lines="128-134"
-{!../../../docs_src/security/tutorial005.py!}
+{!../../docs_src/security/tutorial005.py!}
 ```
 
 ## 依赖项树与作用域
@@ -216,20 +216,20 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 依赖项与作用域的层级架构如下：
 
-* *路径操作* `read_own_items` 包含：
-    * 依赖项所需的作用域 `["items"]`：
-    * `get_current_active_user`:
-        *  依赖项函数 `get_current_active_user` 包含：
-            * 所需的作用域 `"me"` 包含依赖项：
-            * `get_current_user`:
-                * 依赖项函数 `get_current_user` 包含：
-                    * 没有作用域需求其自身
-                    * 依赖项使用 `oauth2_scheme`
-                    * `security_scopes` 参数的类型是 `SecurityScopes`：
-                        * `security_scopes` 参数的属性 `scopes` 是包含上述声明的所有作用域的**列表**，因此：
-                            * `security_scopes.scopes` 包含用于*路径操作*的 `["me", "items"]`
-                            * `security_scopes.scopes` 包含*路径操作* `read_users_me` 的 `["me"]`，因为它在依赖项里被声明
-                            * `security_scopes.scopes` 包含用于*路径操作* `read_system_status` 的 `[]`（空列表），并且它的依赖项 `get_current_user` 也没有声明任何 `scope`
+- _路径操作_ `read_own_items` 包含：
+  - 依赖项所需的作用域 `["items"]`：
+  - `get_current_active_user`:
+    - 依赖项函数 `get_current_active_user` 包含：
+      - 所需的作用域 `"me"` 包含依赖项：
+      - `get_current_user`:
+        - 依赖项函数 `get_current_user` 包含：
+          - 没有作用域需求其自身
+          - 依赖项使用 `oauth2_scheme`
+          - `security_scopes` 参数的类型是 `SecurityScopes`：
+            - `security_scopes` 参数的属性 `scopes` 是包含上述声明的所有作用域的**列表**，因此：
+              - `security_scopes.scopes` 包含用于*路径操作*的 `["me", "items"]`
+              - `security_scopes.scopes` 包含*路径操作* `read_users_me` 的 `["me"]`，因为它在依赖项里被声明
+              - `security_scopes.scopes` 包含用于*路径操作* `read_system_status` 的 `[]`（空列表），并且它的依赖项 `get_current_user` 也没有声明任何 `scope`
 
 /// tip | "提示"
 
@@ -287,4 +287,4 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 ## 装饰器 `dependencies` 中的 `Security`
 
-同样，您可以在装饰器的 `dependencies` 参数中定义 `Depends` 列表，（详见[路径操作装饰器依赖项](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank})），也可以把 `scopes` 与 `Security` 一起使用。
+同样，您可以在装饰器的 `dependencies` 参数中定义 `Depends` 列表，（详见[路径操作装饰器依赖项](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank})），也可以把 `scopes` 与 `Security` 一起使用。

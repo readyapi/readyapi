@@ -23,7 +23,7 @@ Si eres un experto en Python y ya lo sabes todo sobre los type hints, salta al s
 Comencemos con un ejemplo simple:
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 Llamar este programa nos muestra el siguiente <abbr title="en español: salida">output</abbr>:
@@ -34,19 +34,19 @@ John Doe
 
 La función hace lo siguiente:
 
-* Toma un `first_name` y un `last_name`.
-* Convierte la primera letra de cada uno en una letra mayúscula con `title()`.
-* Las <abbr title="las junta como si fuesen una. Con el contenido de una después de la otra. En inglés: concatenate.">concatena</abbr> con un espacio en la mitad.
+- Toma un `first_name` y un `last_name`.
+- Convierte la primera letra de cada uno en una letra mayúscula con `title()`.
+- Las <abbr title="las junta como si fuesen una. Con el contenido de una después de la otra. En inglés: concatenate.">concatena</abbr> con un espacio en la mitad.
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### Edítalo
 
 Es un programa muy simple.
 
-Ahora, imagina que lo estás escribiendo desde ceros.
+Ahora, imagina que lo estás escribiendo desde cero.
 
 En algún punto habrías comenzado con la definición de la función, tenías los parámetros listos...
 
@@ -83,7 +83,7 @@ Eso es todo.
 Esos son los "type hints":
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 No es lo mismo a declarar valores por defecto, como sería con:
@@ -113,7 +113,7 @@ Con esto puedes moverte hacia abajo viendo las opciones hasta que encuentras una
 Mira esta función que ya tiene type hints:
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 Como el editor conoce el tipo de las variables no solo obtienes auto-completado, si no que también obtienes chequeo de errores:
@@ -123,28 +123,28 @@ Como el editor conoce el tipo de las variables no solo obtienes auto-completado,
 Ahora que sabes que tienes que arreglarlo convierte `age` a un string con `str(age)`:
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## Declarando tipos
 
 Acabas de ver el lugar principal para declarar los type hints. Como parámetros de las funciones.
 
-Este es también el lugar principal en que los usarías con  **ReadyAPI**.
+Este es también el lugar principal en que los usarías con **ReadyAPI**.
 
 ### Tipos simples
 
-Puedes declarar todos los tipos estándar de Python, no solamente  `str`.
+Puedes declarar todos los tipos estándar de Python, no solamente `str`.
 
 Por ejemplo, puedes usar:
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### Tipos con sub-tipos
@@ -162,7 +162,7 @@ Por ejemplo, vamos a definir una variable para que sea una `list` compuesta de `
 De `typing`, importa `List` (con una `L` mayúscula):
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 Declara la variable con la misma sintaxis de los dos puntos (`:`).
@@ -172,7 +172,7 @@ Pon `List` como el tipo.
 Como la lista es un tipo que permite tener un "sub-tipo" pones el sub-tipo en corchetes `[]`:
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 Esto significa: la variable `items` es una `list` y cada uno de los ítems en esta lista es un `str`.
@@ -192,13 +192,13 @@ El editor aún sabe que es un `str` y provee soporte para ello.
 Harías lo mismo para declarar `tuple`s y `set`s:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 Esto significa:
 
-* La variable `items_t` es un `tuple` con 3 ítems, un `int`, otro `int`, y un `str`.
-* La variable `items_s` es un `set` y cada uno de sus ítems es de tipo `bytes`.
+- La variable `items_t` es un `tuple` con 3 ítems, un `int`, otro `int`, y un `str`.
+- La variable `items_s` es un `set` y cada uno de sus ítems es de tipo `bytes`.
 
 #### Diccionarios (Dicts)
 
@@ -209,14 +209,14 @@ El primer sub-tipo es para los keys del `dict`.
 El segundo sub-tipo es para los valores del `dict`:
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 Esto significa:
 
-* La variable `prices` es un `dict`:
-    * Los keys de este `dict` son de tipo `str` (Digamos que son el nombre de cada ítem).
-    * Los valores de este `dict` son de tipo `float` (Digamos que son el precio de cada ítem).
+- La variable `prices` es un `dict`:
+  - Los keys de este `dict` son de tipo `str` (Digamos que son el nombre de cada ítem).
+  - Los valores de este `dict` son de tipo `float` (Digamos que son el precio de cada ítem).
 
 ### Clases como tipos
 
@@ -225,13 +225,13 @@ También puedes declarar una clase como el tipo de una variable.
 Digamos que tienes una clase `Person`con un nombre:
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Entonces puedes declarar una variable que sea de tipo `Person`:
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial009.py!}
+{!../../docs_src/python_types/tutorial009.py!}
 ```
 
 Una vez más tendrás todo el soporte del editor:
@@ -253,7 +253,7 @@ Y obtienes todo el soporte del editor con el objeto resultante.
 Tomado de la documentación oficial de Pydantic:
 
 ```Python
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 /// info | Información
@@ -264,7 +264,7 @@ Para aprender más sobre <a href="https://docs.pydantic.dev/" class="external-li
 
 **ReadyAPI** está todo basado en Pydantic.
 
-Vas a ver mucho más de esto en práctica en el [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
+Vas a ver mucho más de esto en práctica en el [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
 
 ## Type hints en **ReadyAPI**
 
@@ -272,19 +272,19 @@ Vas a ver mucho más de esto en práctica en el [Tutorial - User Guide](tutorial
 
 Con **ReadyAPI** declaras los parámetros con type hints y obtienes:
 
-* **Soporte en el editor**.
-* **Type checks**.
+- **Soporte en el editor**.
+- **Type checks**.
 
 ...y **ReadyAPI** usa las mismas declaraciones para:
 
-* **Definir requerimientos**: desde request path parameters, query parameters, headers, bodies, dependencies, etc.
-* **Convertir datos**: desde el request al tipo requerido.
-* **Validar datos**: viniendo de cada request:
-    * Generando **errores automáticos** devueltos al cliente cuando los datos son inválidos.
-* **Documentar** la API usando OpenAPI:
-    * que en su caso es usada por las interfaces de usuario de la documentación automática e interactiva.
+- **Definir requerimientos**: desde request path parameters, query parameters, headers, bodies, dependencies, etc.
+- **Convertir datos**: desde el request al tipo requerido.
+- **Validar datos**: viniendo de cada request:
+  - Generando **errores automáticos** devueltos al cliente cuando los datos son inválidos.
+- **Documentar** la API usando OpenAPI:
+  - que en su caso es usada por las interfaces de usuario de la documentación automática e interactiva.
 
-Puede que todo esto suene abstracto. Pero no te preocupes que todo lo verás en acción en el [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
+Puede que todo esto suene abstracto. Pero no te preocupes que todo lo verás en acción en el [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
 
 Lo importante es que usando los tipos de Python estándar en un único lugar (en vez de añadir más clases, decorator, etc.) **ReadyAPI** hará mucho del trabajo por ti.
 

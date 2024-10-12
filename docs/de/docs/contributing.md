@@ -1,6 +1,6 @@
 # Entwicklung – Mitwirken
 
-Vielleicht möchten Sie sich zuerst die grundlegenden Möglichkeiten anschauen, [ReadyAPI zu helfen und Hilfe zu erhalten](help-readyapi.md){.internal-link target=_blank}.
+Vielleicht möchten Sie sich zuerst die grundlegenden Möglichkeiten anschauen, [ReadyAPI zu helfen und Hilfe zu erhalten](help-readyapi.md){.internal-link target=\_blank}.
 
 ## Entwicklung
 
@@ -251,9 +251,9 @@ Tatsächlich arbeiten die meisten Tests mit den Beispielquelldateien in der Doku
 
 Dadurch wird sichergestellt, dass:
 
-* Die Dokumentation aktuell ist.
-* Die Dokumentationsbeispiele ohne Änderung ausgeführt werden können.
-* Die meisten Funktionalitäten durch die Dokumentation abgedeckt werden, sichergestellt durch die Testabdeckung.
+- Die Dokumentation aktuell ist.
+- Die Dokumentationsbeispiele ohne Änderung ausgeführt werden können.
+- Die meisten Funktionalitäten durch die Dokumentation abgedeckt werden, sichergestellt durch die Testabdeckung.
 
 #### Gleichzeitig Apps und Dokumentation
 
@@ -279,9 +279,9 @@ Hier sind die Schritte, die Ihnen bei Übersetzungen helfen.
 
 #### Tipps und Richtlinien
 
-* Schauen Sie nach <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">aktuellen Pull Requests</a> für Ihre Sprache. Sie können die Pull Requests nach dem Label für Ihre Sprache filtern. Für Spanisch lautet das Label beispielsweise <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3Aawaiting-review" class="external-link" target="_blank">`lang-es`</a>.
+- Schauen Sie nach <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">aktuellen Pull Requests</a> für Ihre Sprache. Sie können die Pull Requests nach dem Label für Ihre Sprache filtern. Für Spanisch lautet das Label beispielsweise <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3Aawaiting-review" class="external-link" target="_blank">`lang-es`</a>.
 
-* Sehen Sie diese Pull Requests durch (Review), schlagen Sie Änderungen vor, oder segnen Sie sie ab (Approval). Bei den Sprachen, die ich nicht spreche, warte ich, bis mehrere andere die Übersetzung durchgesehen haben, bevor ich den Pull Request merge.
+- Sehen Sie diese Pull Requests durch (Review), schlagen Sie Änderungen vor, oder segnen Sie sie ab (Approval). Bei den Sprachen, die ich nicht spreche, warte ich, bis mehrere andere die Übersetzung durchgesehen haben, bevor ich den Pull Request merge.
 
 /// tip | "Tipp"
 
@@ -291,11 +291,11 @@ Schauen Sie sich die Dokumentation an, <a href="https://help.github.com/en/githu
 
 ///
 
-* Überprüfen Sie, ob es eine <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub-Diskussion</a> gibt, die Übersetzungen für Ihre Sprache koordiniert. Sie können sie abonnieren, und wenn ein neuer Pull Request zum Review vorliegt, wird der Diskussion automatisch ein Kommentar hinzugefügt.
+- Überprüfen Sie, ob es eine <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub-Diskussion</a> gibt, die Übersetzungen für Ihre Sprache koordiniert. Sie können sie abonnieren, und wenn ein neuer Pull Request zum Review vorliegt, wird der Diskussion automatisch ein Kommentar hinzugefügt.
 
-* Wenn Sie Seiten übersetzen, fügen Sie einen einzelnen Pull Request pro übersetzter Seite hinzu. Dadurch wird es für andere viel einfacher, ihn zu durchzusehen.
+- Wenn Sie Seiten übersetzen, fügen Sie einen einzelnen Pull Request pro übersetzter Seite hinzu. Dadurch wird es für andere viel einfacher, ihn zu durchzusehen.
 
-* Um den Zwei-Buchstaben-Code für die Sprache zu finden, die Sie übersetzen möchten, schauen Sie sich die Tabelle <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target= verwenden "_blank">List of ISO 639-1 codes</a> an.
+- Um den Zwei-Buchstaben-Code für die Sprache zu finden, die Sie übersetzen möchten, schauen Sie sich die Tabelle <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target= verwenden "\_blank">List of ISO 639-1 codes</a> an.
 
 #### Vorhandene Sprache
 
@@ -346,15 +346,15 @@ Jetzt können Sie auf <a href="http://127.0.0.1:8008" class="external-link" targ
 
 Sie werden sehen, dass jede Sprache alle Seiten hat. Einige Seiten sind jedoch nicht übersetzt und haben oben eine Info-Box, dass die Übersetzung noch fehlt.
 
-Nehmen wir nun an, Sie möchten eine Übersetzung für den Abschnitt [Features](features.md){.internal-link target=_blank} hinzufügen.
+Nehmen wir nun an, Sie möchten eine Übersetzung für den Abschnitt [Features](features.md){.internal-link target=\_blank} hinzufügen.
 
-* Kopieren Sie die Datei:
+- Kopieren Sie die Datei:
 
 ```
 docs/en/docs/features.md
 ```
 
-* Fügen Sie sie an genau derselben Stelle ein, jedoch für die Sprache, die Sie übersetzen möchten, z. B.:
+- Fügen Sie sie an genau derselben Stelle ein, jedoch für die Sprache, die Sie übersetzen möchten, z. B.:
 
 ```
 docs/es/docs/features.md
@@ -452,22 +452,22 @@ Serving at: http://127.0.0.1:8008
 
 #### Übersetzungsspezifische Tipps und Richtlinien
 
-* Übersetzen Sie nur die Markdown-Dokumente (`.md`). Übersetzen Sie nicht die Codebeispiele unter `./docs_src`.
+- Übersetzen Sie nur die Markdown-Dokumente (`.md`). Übersetzen Sie nicht die Codebeispiele unter `./docs_src`.
 
-* In Codeblöcken innerhalb des Markdown-Dokuments, übersetzen Sie Kommentare (`# ein Kommentar`), aber lassen Sie den Rest unverändert.
+- In Codeblöcken innerhalb des Markdown-Dokuments, übersetzen Sie Kommentare (`# ein Kommentar`), aber lassen Sie den Rest unverändert.
 
-* Ändern Sie nichts, was in "``" (Inline-Code) eingeschlossen ist.
+- Ändern Sie nichts, was in "``" (Inline-Code) eingeschlossen ist.
 
-* In Zeilen, die mit `===` oder `!!!` beginnen, übersetzen Sie nur den ` "... Text ..."`-Teil. Lassen Sie den Rest unverändert.
+- In Zeilen, die mit `===` oder `!!!` beginnen, übersetzen Sie nur den ` "... Text ..."`-Teil. Lassen Sie den Rest unverändert.
 
-* Sie können Info-Boxen wie `!!! warning` mit beispielsweise `!!! warning "Achtung"` übersetzen. Aber ändern Sie nicht das Wort direkt nach dem `!!!`, es bestimmt die Farbe der Info-Box.
+- Sie können Info-Boxen wie `!!! warning` mit beispielsweise `!!! warning "Achtung"` übersetzen. Aber ändern Sie nicht das Wort direkt nach dem `!!!`, es bestimmt die Farbe der Info-Box.
 
-* Ändern Sie nicht die Pfade in Links zu Bildern, Codedateien, Markdown Dokumenten.
+- Ändern Sie nicht die Pfade in Links zu Bildern, Codedateien, Markdown Dokumenten.
 
-* Wenn ein Markdown-Dokument übersetzt ist, ändern sich allerdings unter Umständen die `#hash-teile` in Links zu dessen Überschriften. Aktualisieren Sie diese Links, wenn möglich.
-    * Suchen Sie im übersetzten Dokument nach solchen Links mit dem Regex `#[^# ]`.
-    * Suchen Sie in allen bereits in ihre Sprache übersetzen Dokumenten nach `ihr-ubersetztes-dokument.md`. VS Code hat beispielsweise eine Option „Bearbeiten“ -> „In Dateien suchen“.
-    * Übersetzen Sie bei der Übersetzung eines Dokuments nicht „im Voraus“ `#hash-teile`, die zu Überschriften in noch nicht übersetzten Dokumenten verlinken.
+- Wenn ein Markdown-Dokument übersetzt ist, ändern sich allerdings unter Umständen die `#hash-teile` in Links zu dessen Überschriften. Aktualisieren Sie diese Links, wenn möglich.
+  - Suchen Sie im übersetzten Dokument nach solchen Links mit dem Regex `#[^# ]`.
+  - Suchen Sie in allen bereits in ihre Sprache übersetzen Dokumenten nach `ihr-ubersetztes-dokument.md`. VS Code hat beispielsweise eine Option „Bearbeiten“ -> „In Dateien suchen“.
+  - Übersetzen Sie bei der Übersetzung eines Dokuments nicht „im Voraus“ `#hash-teile`, die zu Überschriften in noch nicht übersetzten Dokumenten verlinken.
 
 ## Tests
 

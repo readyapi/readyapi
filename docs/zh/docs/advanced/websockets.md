@@ -16,7 +16,7 @@ $ pip install websockets
 
 ### 在生产环境中
 
-在您的生产系统中，您可能使用现代框架（如React、Vue.js或Angular）创建了一个前端。
+在您的生产系统中，您可能使用现代框架（如 React、Vue.js 或 Angular）创建了一个前端。
 
 要使用 WebSockets 与后端进行通信，您可能会使用前端的工具。
 
@@ -26,7 +26,7 @@ $ pip install websockets
 
 ---
 
-但是，在本示例中，我们将使用一个非常简单的HTML文档，其中包含一些JavaScript，全部放在一个长字符串中。
+但是，在本示例中，我们将使用一个非常简单的 HTML 文档，其中包含一些 JavaScript，全部放在一个长字符串中。
 
 当然，这并不是最优的做法，您不应该在生产环境中使用它。
 
@@ -35,7 +35,7 @@ $ pip install websockets
 但这是一种专注于 WebSockets 的服务器端并提供一个工作示例的最简单方式：
 
 ```Python hl_lines="2  6-38  41-43"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 ## 创建 `websocket`
@@ -43,7 +43,7 @@ $ pip install websockets
 在您的 **ReadyAPI** 应用程序中，创建一个 `websocket`：
 
 ```Python hl_lines="1  46-47"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 /// note | "技术细节"
@@ -59,7 +59,7 @@ $ pip install websockets
 在您的 WebSocket 路由中，您可以使用 `await` 等待消息并发送消息。
 
 ```Python hl_lines="48-52"
-{!../../../docs_src/websockets/tutorial001.py!}
+{!../../docs_src/websockets/tutorial001.py!}
 ```
 
 您可以接收和发送二进制、文本和 JSON 数据。
@@ -100,19 +100,19 @@ $ uvicorn main:app --reload
 
 在 WebSocket 端点中，您可以从 `readyapi` 导入并使用以下内容：
 
-* `Depends`
-* `Security`
-* `Cookie`
-* `Header`
-* `Path`
-* `Query`
+- `Depends`
+- `Security`
+- `Cookie`
+- `Header`
+- `Path`
+- `Query`
 
-它们的工作方式与其他 ReadyAPI 端点/ *路径操作* 相同：
+它们的工作方式与其他 ReadyAPI 端点/ _路径操作_ 相同：
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -120,7 +120,7 @@ $ uvicorn main:app --reload
 //// tab | Python 3.9+
 
 ```Python hl_lines="68-69  82"
-{!> ../../../docs_src/websockets/tutorial002_an_py39.py!}
+{!> ../../docs_src/websockets/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -128,7 +128,7 @@ $ uvicorn main:app --reload
 //// tab | Python 3.8+
 
 ```Python hl_lines="69-70  83"
-{!> ../../../docs_src/websockets/tutorial002_an.py!}
+{!> ../../docs_src/websockets/tutorial002_an.py!}
 ```
 
 ////
@@ -142,7 +142,7 @@ $ uvicorn main:app --reload
 ///
 
 ```Python hl_lines="66-67  79"
-{!> ../../../docs_src/websockets/tutorial002_py310.py!}
+{!> ../../docs_src/websockets/tutorial002_py310.py!}
 ```
 
 ////
@@ -156,7 +156,7 @@ $ uvicorn main:app --reload
 ///
 
 ```Python hl_lines="68-69  81"
-{!> ../../../docs_src/websockets/tutorial002.py!}
+{!> ../../docs_src/websockets/tutorial002.py!}
 ```
 
 ////
@@ -183,8 +183,8 @@ $ uvicorn main:app --reload
 
 在页面中，您可以设置：
 
-* "Item ID"，用于路径。
-* "Token"，作为查询参数。
+- "Item ID"，用于路径。
+- "Token"，作为查询参数。
 
 /// tip
 
@@ -203,7 +203,7 @@ $ uvicorn main:app --reload
 //// tab | Python 3.9+
 
 ```Python hl_lines="79-81"
-{!> ../../../docs_src/websockets/tutorial003_py39.py!}
+{!> ../../docs_src/websockets/tutorial003_py39.py!}
 ```
 
 ////
@@ -211,16 +211,16 @@ $ uvicorn main:app --reload
 //// tab | Python 3.8+
 
 ```Python hl_lines="81-83"
-{!> ../../../docs_src/websockets/tutorial003.py!}
+{!> ../../docs_src/websockets/tutorial003.py!}
 ```
 
 ////
 
 尝试以下操作：
 
-* 使用多个浏览器选项卡打开应用程序。
-* 从这些选项卡中发送消息。
-* 然后关闭其中一个选项卡。
+- 使用多个浏览器选项卡打开应用程序。
+- 从这些选项卡中发送消息。
+- 然后关闭其中一个选项卡。
 
 这将引发 `WebSocketDisconnect` 异常，并且所有其他客户端都会收到类似以下的消息：
 
@@ -242,5 +242,5 @@ Client #1596980209979 left the chat
 
 要了解更多选项，请查看 Starlette 的文档：
 
-* [WebSocket 类](https://www.starlette.io/websockets/)
-* [基于类的 WebSocket 处理](https://www.starlette.io/endpoints/#websocketendpoint)。
+- [WebSocket 类](https://www.starlette.io/websockets/)
+- [基于类的 WebSocket 处理](https://www.starlette.io/endpoints/#websocketendpoint)。

@@ -16,7 +16,7 @@ Porém para as respostas adicionais, você deve garantir que está retornando um
 
 ## Retorno Adicional com `model`
 
-Você pode fornecer o parâmetro `responses` aos seus *decoradores de caminho*.
+Você pode fornecer o parâmetro `responses` aos seus _decoradores de caminho_.
 
 Este parâmetro recebe um `dict`, as chaves são os códigos de status para cada retorno, como por exemplo `200`, e os valores são um outro `dict` com a informação de cada um deles.
 
@@ -27,7 +27,7 @@ O **ReadyAPI** pegará este modelo, gerará o esquema JSON dele e incluirá no l
 Por exemplo, para declarar um outro retorno com o status code `404` e um modelo do Pydantic chamado `Message`, você pode escrever:
 
 ```Python hl_lines="18  22"
-{!../../../docs_src/additional_responses/tutorial001.py!}
+{!../../docs_src/additional_responses/tutorial001.py!}
 ```
 
 /// note | "Nota"
@@ -44,14 +44,14 @@ O **ReadyAPI** pegará o modelo do Pydantic, gerará o `JSON Schema`, e adiciona
 
 O local correto é:
 
-* Na chave `content`, que tem como valor um outro objeto JSON (`dict`) que contém:
-    * Uma chave com o media type, como por exemplo `application/json`, que contém como valor um outro objeto JSON, contendo::
-        * Uma chave `schema`, que contém como valor o JSON Schema do modelo, sendo este o local correto.
-            * O **ReadyAPI** adiciona aqui a referência dos esquemas JSON globais que estão localizados em outro lugar, ao invés de incluí-lo diretamente. Deste modo, outras aplicações e clientes podem utilizar estes esquemas JSON diretamente, fornecer melhores ferramentas de geração de código, etc.
+- Na chave `content`, que tem como valor um outro objeto JSON (`dict`) que contém:
+  - Uma chave com o media type, como por exemplo `application/json`, que contém como valor um outro objeto JSON, contendo::
+    - Uma chave `schema`, que contém como valor o JSON Schema do modelo, sendo este o local correto.
+      - O **ReadyAPI** adiciona aqui a referência dos esquemas JSON globais que estão localizados em outro lugar, ao invés de incluí-lo diretamente. Deste modo, outras aplicações e clientes podem utilizar estes esquemas JSON diretamente, fornecer melhores ferramentas de geração de código, etc.
 
 ///
 
-O retorno gerado no OpenAI para esta *operação de caminho* será:
+O retorno gerado no OpenAI para esta _operação de caminho_ será:
 
 ```JSON hl_lines="3-12"
 {
@@ -175,10 +175,10 @@ Os esquemas são referenciados em outro local dentro do esquema OpenAPI:
 
 Você pode utilizar o mesmo parâmetro `responses` para adicionar diferentes media types para o mesmo retorno principal.
 
-Por exemplo, você pode adicionar um media type adicional de `image/png`, declarando que a sua *operação de caminho* pode retornar um objeto JSON (com o media type `application/json`) ou uma imagem PNG:
+Por exemplo, você pode adicionar um media type adicional de `image/png`, declarando que a sua _operação de caminho_ pode retornar um objeto JSON (com o media type `application/json`) ou uma imagem PNG:
 
 ```Python hl_lines="19-24  28"
-{!../../../docs_src/additional_responses/tutorial002.py!}
+{!../../docs_src/additional_responses/tutorial002.py!}
 ```
 
 /// note | "Nota"
@@ -208,7 +208,7 @@ Por exemplo, você pode declarar um retorno com o código de status `404` que ut
 E um retorno com o código de status `200` que utiliza o seu `response_model`, porém inclui um `example` customizado:
 
 ```Python hl_lines="20-31"
-{!../../../docs_src/additional_responses/tutorial003.py!}
+{!../../docs_src/additional_responses/tutorial003.py!}
 ```
 
 Isso será combinado e incluído em seu OpenAPI, e disponibilizado na documentação da sua API:
@@ -217,7 +217,7 @@ Isso será combinado e incluído em seu OpenAPI, e disponibilizado na documenta�
 
 ## Combinar retornos predefinidos e personalizados
 
-Você pode querer possuir alguns retornos predefinidos que são aplicados para diversas *operações de caminho*, porém você deseja combinar com retornos personalizados que são necessários para cada *operação de caminho*.
+Você pode querer possuir alguns retornos predefinidos que são aplicados para diversas _operações de caminho_, porém você deseja combinar com retornos personalizados que são necessários para cada _operação de caminho_.
 
 Para estes casos, você pode utilizar a técnica do Python de "desempacotamento" de um `dict` utilizando `**dict_to_unpack`:
 
@@ -239,17 +239,17 @@ Aqui, o `new_dict` terá todos os pares de chave-valor do `old_dict` mais o novo
 }
 ```
 
-Você pode utilizar essa técnica para reutilizar alguns retornos predefinidos nas suas *operações de caminho* e combiná-las com personalizações adicionais.
+Você pode utilizar essa técnica para reutilizar alguns retornos predefinidos nas suas _operações de caminho_ e combiná-las com personalizações adicionais.
 
 Por exemplo:
 
 ```Python hl_lines="13-17  26"
-{!../../../docs_src/additional_responses/tutorial004.py!}
+{!../../docs_src/additional_responses/tutorial004.py!}
 ```
 
 ## Mais informações sobre retornos OpenAPI
 
 Para verificar exatamente o que você pode incluir nos retornos, você pode conferir estas seções na especificação do OpenAPI:
 
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responsesObject" class="external-link" target="_blank">Objeto de Retorno OpenAPI</a>, inclui o `Response Object`.
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responseObject" class="external-link" target="_blank">Objeto de Retorno OpenAPI</a>, você pode incluir qualquer coisa dele diretamente em cada retorno dentro do seu parâmetro `responses`. Incluindo `description`, `headers`, `content` (dentro dele que você declara diferentes media types e esquemas JSON), e `links`.
+- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responsesObject" class="external-link" target="_blank">Objeto de Retorno OpenAPI</a>, inclui o `Response Object`.
+- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responseObject" class="external-link" target="_blank">Objeto de Retorno OpenAPI</a>, você pode incluir qualquer coisa dele diretamente em cada retorno dentro do seu parâmetro `responses`. Incluindo `description`, `headers`, `content` (dentro dele que você declara diferentes media types e esquemas JSON), e `links`.

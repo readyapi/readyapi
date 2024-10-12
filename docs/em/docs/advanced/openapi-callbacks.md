@@ -1,10 +1,10 @@
 # 🗄 ⏲
 
-👆 💪 ✍ 🛠️ ⏮️ *➡ 🛠️* 👈 💪 ⏲ 📨 *🔢 🛠️* ✍ 👱 🙆 (🎲 🎏 👩‍💻 👈 🔜 *⚙️* 👆 🛠️).
+👆 💪 ✍ 🛠️ ⏮️ _➡ 🛠️_ 👈 💪 ⏲ 📨 _🔢 🛠️_ ✍ 👱 🙆 (🎲 🎏 👩‍💻 👈 🔜 _⚙️_ 👆 🛠️).
 
-🛠️ 👈 🔨 🕐❔ 👆 🛠️ 📱 🤙 *🔢 🛠️* 📛 "⏲". ↩️ 🖥 👈 🔢 👩‍💻 ✍ 📨 📨 👆 🛠️ &amp; ⤴️ 👆 🛠️ *🤙 🔙*, 📨 📨 *🔢 🛠️* (👈 🎲 ✍ 🎏 👩‍💻).
+🛠️ 👈 🔨 🕐❔ 👆 🛠️ 📱 🤙 _🔢 🛠️_ 📛 "⏲". ↩️ 🖥 👈 🔢 👩‍💻 ✍ 📨 📨 👆 🛠️ &amp; ⤴️ 👆 🛠️ _🤙 🔙_, 📨 📨 _🔢 🛠️_ (👈 🎲 ✍ 🎏 👩‍💻).
 
-👉 💼, 👆 💪 💚 📄 ❔ 👈 🔢 🛠️ *🔜* 👀 💖. ⚫️❔ *➡ 🛠️* ⚫️ 🔜 ✔️, ⚫️❔ 💪 ⚫️ 🔜 ⌛, ⚫️❔ 📨 ⚫️ 🔜 📨, ♒️.
+👉 💼, 👆 💪 💚 📄 ❔ 👈 🔢 🛠️ _🔜_ 👀 💖. ⚫️❔ _➡ 🛠️_ ⚫️ 🔜 ✔️, ⚫️❔ 💪 ⚫️ 🔜 ⌛, ⚫️❔ 📨 ⚫️ 🔜 📨, ♒️.
 
 ## 📱 ⏮️ ⏲
 
@@ -18,21 +18,21 @@
 
 ⤴️ 👆 🛠️ 🔜 (➡️ 🌈):
 
-* 📨 🧾 🕴 🔢 👩‍💻.
-* 📈 💸.
-* 📨 📨 🔙 🛠️ 👩‍💻 (🔢 👩‍💻).
-    * 👉 🔜 🔨 📨 🏤 📨 (⚪️➡️ *👆 🛠️*) *🔢 🛠️* 🚚 👈 🔢 👩‍💻 (👉 "⏲").
+- 📨 🧾 🕴 🔢 👩‍💻.
+- 📈 💸.
+- 📨 📨 🔙 🛠️ 👩‍💻 (🔢 👩‍💻).
+  - 👉 🔜 🔨 📨 🏤 📨 (⚪️➡️ _👆 🛠️_) _🔢 🛠️_ 🚚 👈 🔢 👩‍💻 (👉 "⏲").
 
 ## 😐 **ReadyAPI** 📱
 
 ➡️ 🥇 👀 ❔ 😐 🛠️ 📱 🔜 👀 💖 ⏭ ❎ ⏲.
 
-⚫️ 🔜 ✔️ *➡ 🛠️* 👈 🔜 📨 `Invoice` 💪, &amp; 🔢 🔢 `callback_url` 👈 🔜 🔌 📛 ⏲.
+⚫️ 🔜 ✔️ _➡ 🛠️_ 👈 🔜 📨 `Invoice` 💪, &amp; 🔢 🔢 `callback_url` 👈 🔜 🔌 📛 ⏲.
 
 👉 🍕 📶 😐, 🌅 📟 🎲 ⏪ 😰 👆:
 
 ```Python hl_lines="9-13  36-53"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 /// tip
@@ -41,7 +41,7 @@
 
 ///
 
-🕴 🆕 👜 `callbacks=messages_callback_router.routes` ❌ *➡ 🛠️ 👨‍🎨*. 👥 🔜 👀 ⚫️❔ 👈 ⏭.
+🕴 🆕 👜 `callbacks=messages_callback_router.routes` ❌ _➡ 🛠️ 👨‍🎨_. 👥 🔜 👀 ⚫️❔ 👈 ⏭.
 
 ## 🔬 ⏲
 
@@ -56,11 +56,11 @@ callback_url = "https://example.com/api/v1/invoices/events/"
 httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 ```
 
-✋️ 🎲 🏆 ⚠ 🍕 ⏲ ⚒ 💭 👈 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 🛠️ *🔢 🛠️* ☑, 🛄 💽 👈 *👆 🛠️* 🔜 📨 📨 💪 ⏲, ♒️.
+✋️ 🎲 🏆 ⚠ 🍕 ⏲ ⚒ 💭 👈 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 🛠️ _🔢 🛠️_ ☑, 🛄 💽 👈 _👆 🛠️_ 🔜 📨 📨 💪 ⏲, ♒️.
 
-, ⚫️❔ 👥 🔜 ⏭ 🚮 📟 📄 ❔ 👈 *🔢 🛠️* 🔜 👀 💖 📨 ⏲ ⚪️➡️ *👆 🛠️*.
+, ⚫️❔ 👥 🔜 ⏭ 🚮 📟 📄 ❔ 👈 _🔢 🛠️_ 🔜 👀 💖 📨 ⏲ ⚪️➡️ _👆 🛠️_.
 
-👈 🧾 🔜 🎦 🆙 🦁 🎚 `/docs` 👆 🛠️, &amp; ⚫️ 🔜 ➡️ 🔢 👩‍💻 💭 ❔ 🏗 *🔢 🛠️*.
+👈 🧾 🔜 🎦 🆙 🦁 🎚 `/docs` 👆 🛠️, &amp; ⚫️ 🔜 ➡️ 🔢 👩‍💻 💭 ❔ 🏗 _🔢 🛠️_.
 
 👉 🖼 🚫 🛠️ ⏲ ⚫️ (👈 💪 ⏸ 📟), 🕴 🧾 🍕.
 
@@ -74,17 +74,17 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 ## ✍ ⏲ 🧾 📟
 
-👉 📟 🏆 🚫 🛠️ 👆 📱, 👥 🕴 💪 ⚫️ *📄* ❔ 👈 *🔢 🛠️* 🔜 👀 💖.
+👉 📟 🏆 🚫 🛠️ 👆 📱, 👥 🕴 💪 ⚫️ _📄_ ❔ 👈 _🔢 🛠️_ 🔜 👀 💖.
 
 ✋️, 👆 ⏪ 💭 ❔ 💪 ✍ 🏧 🧾 🛠️ ⏮️ **ReadyAPI**.
 
-👥 🔜 ⚙️ 👈 🎏 💡 📄 ❔ *🔢 🛠️* 🔜 👀 💖... 🏗 *➡ 🛠️(Ⓜ)* 👈 🔢 🛠️ 🔜 🛠️ (🕐 👆 🛠️ 🔜 🤙).
+👥 🔜 ⚙️ 👈 🎏 💡 📄 ❔ _🔢 🛠️_ 🔜 👀 💖... 🏗 _➡ 🛠️(Ⓜ)_ 👈 🔢 🛠️ 🔜 🛠️ (🕐 👆 🛠️ 🔜 🤙).
 
 /// tip
 
-🕐❔ ✍ 📟 📄 ⏲, ⚫️ 💪 ⚠ 🌈 👈 👆 👈 *🔢 👩‍💻*. &amp; 👈 👆 ⏳ 🛠️ *🔢 🛠️*, 🚫 *👆 🛠️*.
+🕐❔ ✍ 📟 📄 ⏲, ⚫️ 💪 ⚠ 🌈 👈 👆 👈 _🔢 👩‍💻_. &amp; 👈 👆 ⏳ 🛠️ _🔢 🛠️_, 🚫 _👆 🛠️_.
 
-🍕 🛠️ 👉 ☝ 🎑 ( *🔢 👩‍💻*) 💪 ℹ 👆 💭 💖 ⚫️ 🌅 ⭐ 🌐❔ 🚮 🔢, Pydantic 🏷 💪, 📨, ♒️. 👈 *🔢 🛠️*.
+🍕 🛠️ 👉 ☝ 🎑 ( _🔢 👩‍💻_) 💪 ℹ 👆 💭 💖 ⚫️ 🌅 ⭐ 🌐❔ 🚮 🔢, Pydantic 🏷 💪, 📨, ♒️. 👈 _🔢 🛠️_.
 
 ///
 
@@ -93,30 +93,30 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 🥇 ✍ 🆕 `APIRouter` 👈 🔜 🔌 1️⃣ ⚖️ 🌅 ⏲.
 
 ```Python hl_lines="3  25"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
-### ✍ ⏲ *➡ 🛠️*
+### ✍ ⏲ _➡ 🛠️_
 
-✍ ⏲ *➡ 🛠️* ⚙️ 🎏 `APIRouter` 👆 ✍ 🔛.
+✍ ⏲ _➡ 🛠️_ ⚙️ 🎏 `APIRouter` 👆 ✍ 🔛.
 
-⚫️ 🔜 👀 💖 😐 ReadyAPI *➡ 🛠️*:
+⚫️ 🔜 👀 💖 😐 ReadyAPI _➡ 🛠️_:
 
-* ⚫️ 🔜 🎲 ✔️ 📄 💪 ⚫️ 🔜 📨, ✅ `body: InvoiceEvent`.
-*  &amp; ⚫️ 💪 ✔️ 📄 📨 ⚫️ 🔜 📨, ✅ `response_model=InvoiceEventReceived`.
+- ⚫️ 🔜 🎲 ✔️ 📄 💪 ⚫️ 🔜 📨, ✅ `body: InvoiceEvent`.
+- &amp; ⚫️ 💪 ✔️ 📄 📨 ⚫️ 🔜 📨, ✅ `response_model=InvoiceEventReceived`.
 
 ```Python hl_lines="16-18  21-22  28-32"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
-📤 2️⃣ 👑 🔺 ⚪️➡️ 😐 *➡ 🛠️*:
+📤 2️⃣ 👑 🔺 ⚪️➡️ 😐 _➡ 🛠️_:
 
-* ⚫️ 🚫 💪 ✔️ 🙆 ☑ 📟, ↩️ 👆 📱 🔜 🙅 🤙 👉 📟. ⚫️ 🕴 ⚙️ 📄 *🔢 🛠️*. , 🔢 💪 ✔️ `pass`.
-*  *➡* 💪 🔌 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> (👀 🌖 🔛) 🌐❔ ⚫️ 💪 ⚙️ 🔢 ⏮️ 🔢 &amp; 🍕 ⏮️ 📨 📨 *👆 🛠️*.
+- ⚫️ 🚫 💪 ✔️ 🙆 ☑ 📟, ↩️ 👆 📱 🔜 🙅 🤙 👉 📟. ⚫️ 🕴 ⚙️ 📄 _🔢 🛠️_. , 🔢 💪 ✔️ `pass`.
+- _➡_ 💪 🔌 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> (👀 🌖 🔛) 🌐❔ ⚫️ 💪 ⚙️ 🔢 ⏮️ 🔢 &amp; 🍕 ⏮️ 📨 📨 _👆 🛠️_.
 
 ### ⏲ ➡ 🧬
 
-⏲ *➡* 💪 ✔️ <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> 👈 💪 🔌 🍕 ⏮️ 📨 📨 *👆 🛠️*.
+⏲ _➡_ 💪 ✔️ <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> 👈 💪 🔌 🍕 ⏮️ 📨 📨 _👆 🛠️_.
 
 👉 💼, ⚫️ `str`:
 
@@ -124,7 +124,7 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 "{$callback_url}/invoices/{$request.body.id}"
 ```
 
-, 🚥 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 📨 📨 *👆 🛠️* :
+, 🚥 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 📨 📨 _👆 🛠️_ :
 
 ```
 https://yourapi.com/invoices/?callback_url=https://www.external.org/events
@@ -140,7 +140,7 @@ https://yourapi.com/invoices/?callback_url=https://www.external.org/events
 }
 ```
 
-⤴️ *👆 🛠️* 🔜 🛠️ 🧾, &amp; ☝ ⏪, 📨 ⏲ 📨 `callback_url` ( *🔢 🛠️*):
+⤴️ _👆 🛠️_ 🔜 🛠️ 🧾, &amp; ☝ ⏪, 📨 ⏲ 📨 `callback_url` ( _🔢 🛠️_):
 
 ```
 https://www.external.org/events/invoices/2expen51ve
@@ -155,7 +155,7 @@ https://www.external.org/events/invoices/2expen51ve
 }
 ```
 
-&amp; ⚫️ 🔜 ⌛ 📨 ⚪️➡️ 👈 *🔢 🛠️* ⏮️ 🎻 💪 💖:
+&amp; ⚫️ 🔜 ⌛ 📨 ⚪️➡️ 👈 _🔢 🛠️_ ⏮️ 🎻 💪 💖:
 
 ```JSON
 {
@@ -171,12 +171,12 @@ https://www.external.org/events/invoices/2expen51ve
 
 ### 🚮 ⏲ 📻
 
-👉 ☝ 👆 ✔️ *⏲ ➡ 🛠️(Ⓜ)* 💪 (1️⃣(Ⓜ) 👈 *🔢 👩‍💻* 🔜 🛠️ *🔢 🛠️*) ⏲ 📻 👆 ✍ 🔛.
+👉 ☝ 👆 ✔️ _⏲ ➡ 🛠️(Ⓜ)_ 💪 (1️⃣(Ⓜ) 👈 _🔢 👩‍💻_ 🔜 🛠️ _🔢 🛠️_) ⏲ 📻 👆 ✍ 🔛.
 
-🔜 ⚙️ 🔢 `callbacks` *👆 🛠️ ➡ 🛠️ 👨‍🎨* 🚶‍♀️ 🔢 `.routes` (👈 🤙 `list` 🛣/*➡ 🛠️*) ⚪️➡️ 👈 ⏲ 📻:
+🔜 ⚙️ 🔢 `callbacks` _👆 🛠️ ➡ 🛠️ 👨‍🎨_ 🚶‍♀️ 🔢 `.routes` (👈 🤙 `list` 🛣/_➡ 🛠️_) ⚪️➡️ 👈 ⏲ 📻:
 
 ```Python hl_lines="35"
-{!../../../docs_src/openapi_callbacks/tutorial001.py!}
+{!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
 /// tip
@@ -189,6 +189,6 @@ https://www.external.org/events/invoices/2expen51ve
 
 🔜 👆 💪 ▶️ 👆 📱 ⏮️ Uvicorn &amp; 🚶 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-👆 🔜 👀 👆 🩺 ✅ "⏲" 📄 👆 *➡ 🛠️* 👈 🎦 ❔ *🔢 🛠️* 🔜 👀 💖:
+👆 🔜 👀 👆 🩺 ✅ "⏲" 📄 👆 _➡ 🛠️_ 👈 🎦 ❔ _🔢 🛠️_ 🔜 👀 💖:
 
 <img src="/img/tutorial/openapi-callbacks/image01.png">

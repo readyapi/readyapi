@@ -1,13 +1,13 @@
 # Responsemodell – Rückgabetyp
 
-Sie können den Typ der <abbr title="Response – Antwort: Daten, die zum anfragenden Client zurückgeschickt werden">Response</abbr> deklarieren, indem Sie den **Rückgabetyp** der *Pfadoperation* annotieren.
+Sie können den Typ der <abbr title="Response – Antwort: Daten, die zum anfragenden Client zurückgeschickt werden">Response</abbr> deklarieren, indem Sie den **Rückgabetyp** der _Pfadoperation_ annotieren.
 
 Hierbei können Sie **Typannotationen** genauso verwenden, wie Sie es bei Werten von Funktions-**Parametern** machen; verwenden Sie Pydantic-Modelle, Listen, Dicts und skalare Werte wie Nummern, Booleans, usw.
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="16  21"
-{!> ../../../docs_src/response_model/tutorial001_01_py310.py!}
+{!> ../../docs_src/response_model/tutorial001_01_py310.py!}
 ```
 
 ////
@@ -15,7 +15,7 @@ Hierbei können Sie **Typannotationen** genauso verwenden, wie Sie es bei Werten
 //// tab | Python 3.9+
 
 ```Python hl_lines="18  23"
-{!> ../../../docs_src/response_model/tutorial001_01_py39.py!}
+{!> ../../docs_src/response_model/tutorial001_01_py39.py!}
 ```
 
 ////
@@ -23,23 +23,23 @@ Hierbei können Sie **Typannotationen** genauso verwenden, wie Sie es bei Werten
 //// tab | Python 3.8+
 
 ```Python hl_lines="18  23"
-{!> ../../../docs_src/response_model/tutorial001_01.py!}
+{!> ../../docs_src/response_model/tutorial001_01.py!}
 ```
 
 ////
 
 ReadyAPI wird diesen Rückgabetyp verwenden, um:
 
-* Die zurückzugebenden Daten zu **validieren**.
-    * Wenn die Daten ungültig sind (Sie haben z. B. ein Feld vergessen), bedeutet das, *Ihr* Anwendungscode ist fehlerhaft, er gibt nicht zurück, was er sollte, und daher wird ein <abbr title="Server-Fehler">Server-Error</abbr> ausgegeben, statt falscher Daten. So können Sie und ihre Clients sicher sein, dass diese die erwarteten Daten, in der richtigen Form erhalten.
-* In der OpenAPI *Pfadoperation* ein **JSON-Schema** für die Response hinzuzufügen.
-    * Dieses wird von der **automatischen Dokumentation** verwendet.
-    * Es wird auch von automatisch Client-Code-generierenden Tools verwendet.
+- Die zurückzugebenden Daten zu **validieren**.
+  - Wenn die Daten ungültig sind (Sie haben z. B. ein Feld vergessen), bedeutet das, _Ihr_ Anwendungscode ist fehlerhaft, er gibt nicht zurück, was er sollte, und daher wird ein <abbr title="Server-Fehler">Server-Error</abbr> ausgegeben, statt falscher Daten. So können Sie und ihre Clients sicher sein, dass diese die erwarteten Daten, in der richtigen Form erhalten.
+- In der OpenAPI _Pfadoperation_ ein **JSON-Schema** für die Response hinzuzufügen.
+  - Dieses wird von der **automatischen Dokumentation** verwendet.
+  - Es wird auch von automatisch Client-Code-generierenden Tools verwendet.
 
 Aber am wichtigsten:
 
-* Es wird die Ausgabedaten auf das **limitieren und filtern**, was im Rückgabetyp definiert ist.
-    * Das ist insbesondere für die **Sicherheit** wichtig, mehr dazu unten.
+- Es wird die Ausgabedaten auf das **limitieren und filtern**, was im Rückgabetyp definiert ist.
+  - Das ist insbesondere für die **Sicherheit** wichtig, mehr dazu unten.
 
 ## `response_model`-Parameter
 
@@ -51,18 +51,18 @@ Würden Sie eine hierfür eine Rückgabetyp-Annotation verwenden, dann würden T
 
 In solchen Fällen können Sie statt des Rückgabetyps den **Pfadoperation-Dekorator**-Parameter `response_model` verwenden.
 
-Sie können `response_model` in jeder möglichen *Pfadoperation* verwenden:
+Sie können `response_model` in jeder möglichen _Pfadoperation_ verwenden:
 
-* `@app.get()`
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
-* usw.
+- `@app.get()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
+- usw.
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001_py310.py!}
+{!> ../../docs_src/response_model/tutorial001_py310.py!}
 ```
 
 ////
@@ -70,7 +70,7 @@ Sie können `response_model` in jeder möglichen *Pfadoperation* verwenden:
 //// tab | Python 3.9+
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001_py39.py!}
+{!> ../../docs_src/response_model/tutorial001_py39.py!}
 ```
 
 ////
@@ -78,14 +78,14 @@ Sie können `response_model` in jeder möglichen *Pfadoperation* verwenden:
 //// tab | Python 3.8+
 
 ```Python hl_lines="17  22  24-27"
-{!> ../../../docs_src/response_model/tutorial001.py!}
+{!> ../../docs_src/response_model/tutorial001.py!}
 ```
 
 ////
 
 /// note | "Hinweis"
 
-Beachten Sie, dass `response_model` ein Parameter der „Dekorator“-Methode ist (`get`, `post`, usw.). Nicht der *Pfadoperation-Funktion*, so wie die anderen Parameter.
+Beachten Sie, dass `response_model` ein Parameter der „Dekorator“-Methode ist (`get`, `post`, usw.). Nicht der _Pfadoperation-Funktion_, so wie die anderen Parameter.
 
 ///
 
@@ -97,7 +97,7 @@ ReadyAPI wird dieses `response_model` nehmen, um die Daten zu dokumentieren, val
 
 Wenn Sie in Ihrem Editor strikte Typchecks haben, mypy, usw., können Sie den Funktions-Rückgabetyp als <abbr title='„Irgend etwas“'>`Any`</abbr> deklarieren.
 
-So sagen Sie dem Editor, dass Sie absichtlich *irgendetwas* zurückgeben. Aber ReadyAPI wird trotzdem die Dokumentation, Validierung, Filterung, usw. der Daten übernehmen, via `response_model`.
+So sagen Sie dem Editor, dass Sie absichtlich _irgendetwas_ zurückgeben. Aber ReadyAPI wird trotzdem die Dokumentation, Validierung, Filterung, usw. der Daten übernehmen, via `response_model`.
 
 ///
 
@@ -107,7 +107,7 @@ Wenn sowohl Rückgabetyp als auch `response_model` deklariert sind, hat `respons
 
 So können Sie korrekte Typannotationen zu ihrer Funktion hinzufügen, die von ihrem Editor und Tools wie mypy verwendet werden. Und dennoch übernimmt ReadyAPI die Validierung und Dokumentation, usw., der Daten anhand von `response_model`.
 
-Sie können auch `response_model=None` verwenden, um das Erstellen eines Responsemodells für diese *Pfadoperation* zu unterbinden. Sie könnten das tun wollen, wenn sie Dinge annotieren, die nicht gültige Pydantic-Felder sind. Ein Beispiel dazu werden Sie in einer der Abschnitte unten sehen.
+Sie können auch `response_model=None` verwenden, um das Erstellen eines Responsemodells für diese _Pfadoperation_ zu unterbinden. Sie könnten das tun wollen, wenn sie Dinge annotieren, die nicht gültige Pydantic-Felder sind. Ein Beispiel dazu werden Sie in einer der Abschnitte unten sehen.
 
 ## Dieselben Eingabedaten zurückgeben
 
@@ -116,7 +116,7 @@ Im Folgenden deklarieren wir ein `UserIn`-Modell; es enthält ein Klartext-Passw
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  9"
-{!> ../../../docs_src/response_model/tutorial002_py310.py!}
+{!> ../../docs_src/response_model/tutorial002_py310.py!}
 ```
 
 ////
@@ -124,7 +124,7 @@ Im Folgenden deklarieren wir ein `UserIn`-Modell; es enthält ein Klartext-Passw
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  11"
-{!> ../../../docs_src/response_model/tutorial002.py!}
+{!> ../../docs_src/response_model/tutorial002.py!}
 ```
 
 ////
@@ -143,7 +143,7 @@ Wir verwenden dieses Modell, um sowohl unsere Eingabe- als auch Ausgabedaten zu 
 //// tab | Python 3.10+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/response_model/tutorial002_py310.py!}
+{!> ../../docs_src/response_model/tutorial002_py310.py!}
 ```
 
 ////
@@ -151,7 +151,7 @@ Wir verwenden dieses Modell, um sowohl unsere Eingabe- als auch Ausgabedaten zu 
 //// tab | Python 3.8+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/response_model/tutorial002.py!}
+{!> ../../docs_src/response_model/tutorial002.py!}
 ```
 
 ////
@@ -160,7 +160,7 @@ Immer wenn jetzt ein Browser einen Benutzer mit Passwort erzeugt, gibt die API d
 
 Hier ist das möglicherweise kein Problem, da es derselbe Benutzer ist, der das Passwort sendet.
 
-Aber wenn wir dasselbe Modell für eine andere *Pfadoperation* verwenden, könnten wir das Passwort dieses Benutzers zu jedem Client schicken.
+Aber wenn wir dasselbe Modell für eine andere _Pfadoperation_ verwenden, könnten wir das Passwort dieses Benutzers zu jedem Client schicken.
 
 /// danger | "Gefahr"
 
@@ -175,7 +175,7 @@ Wir können stattdessen ein Eingabemodell mit dem Klartext-Passwort, und ein Aus
 //// tab | Python 3.10+
 
 ```Python hl_lines="9  11  16"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
@@ -183,17 +183,17 @@ Wir können stattdessen ein Eingabemodell mit dem Klartext-Passwort, und ein Aus
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  11  16"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
 
-Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zurückgibt, der das Passwort enthält:
+Obwohl unsere _Pfadoperation-Funktion_ hier denselben `user` von der Eingabe zurückgibt, der das Passwort enthält:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
@@ -201,7 +201,7 @@ Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zur
 //// tab | Python 3.8+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
@@ -211,7 +211,7 @@ Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zur
 //// tab | Python 3.10+
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial003_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_py310.py!}
 ```
 
 ////
@@ -219,7 +219,7 @@ Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zur
 //// tab | Python 3.8+
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial003.py!}
+{!> ../../docs_src/response_model/tutorial003.py!}
 ```
 
 ////
@@ -249,7 +249,7 @@ Und in solchen Fällen können wir Klassen und Vererbung verwenden, um Vorteil a
 //// tab | Python 3.10+
 
 ```Python hl_lines="7-10  13-14  18"
-{!> ../../../docs_src/response_model/tutorial003_01_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_01_py310.py!}
 ```
 
 ////
@@ -257,7 +257,7 @@ Und in solchen Fällen können wir Klassen und Vererbung verwenden, um Vorteil a
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-13  15-16  20"
-{!> ../../../docs_src/response_model/tutorial003_01.py!}
+{!> ../../docs_src/response_model/tutorial003_01.py!}
 ```
 
 ////
@@ -274,7 +274,7 @@ Sehen wir uns zunächst an, wie Editor, mypy und andere Tools dies sehen würden
 
 Wir annotieren den Funktionsrückgabetyp als `BaseUser`, geben aber tatsächlich eine `UserIn`-Instanz zurück.
 
-Für den Editor, mypy und andere Tools ist das kein Problem, da `UserIn` eine Unterklasse von `BaseUser` ist (Salopp: `UserIn` ist ein `BaseUser`). Es handelt sich um einen *gültigen* Typ, solange irgendetwas überreicht wird, das ein `BaseUser` ist.
+Für den Editor, mypy und andere Tools ist das kein Problem, da `UserIn` eine Unterklasse von `BaseUser` ist (Salopp: `UserIn` ist ein `BaseUser`). Es handelt sich um einen _gültigen_ Typ, solange irgendetwas überreicht wird, das ein `BaseUser` ist.
 
 ### ReadyAPI Datenfilterung
 
@@ -300,10 +300,10 @@ Es kann Fälle geben, bei denen Sie etwas zurückgeben, das kein gültiges Pydan
 
 ### Eine Response direkt zurückgeben
 
-Der häufigste Anwendungsfall ist, wenn Sie [eine Response direkt zurückgeben, wie es später im Handbuch für fortgeschrittene Benutzer erläutert wird](../advanced/response-directly.md){.internal-link target=_blank}.
+Der häufigste Anwendungsfall ist, wenn Sie [eine Response direkt zurückgeben, wie es später im Handbuch für fortgeschrittene Benutzer erläutert wird](../advanced/response-directly.md){.internal-link target=\_blank}.
 
 ```Python hl_lines="8  10-11"
-{!> ../../../docs_src/response_model/tutorial003_02.py!}
+{!> ../../docs_src/response_model/tutorial003_02.py!}
 ```
 
 Dieser einfache Anwendungsfall wird automatisch von ReadyAPI gehandhabt, weil die Annotation des Rückgabetyps die Klasse (oder eine Unterklasse von) `Response` ist.
@@ -315,7 +315,7 @@ Und Tools werden auch glücklich sein, weil sowohl `RedirectResponse` als auch `
 Sie können auch eine Unterklasse von `Response` in der Typannotation verwenden.
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/response_model/tutorial003_03.py!}
+{!> ../../docs_src/response_model/tutorial003_03.py!}
 ```
 
 Das wird ebenfalls funktionieren, weil `RedirectResponse` eine Unterklasse von `Response` ist, und ReadyAPI sich um diesen einfachen Anwendungsfall automatisch kümmert.
@@ -329,7 +329,7 @@ Das gleiche wird passieren, wenn Sie eine <abbr title='Eine Union mehrerer Typen
 //// tab | Python 3.10+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/response_model/tutorial003_04_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_04_py310.py!}
 ```
 
 ////
@@ -337,7 +337,7 @@ Das gleiche wird passieren, wenn Sie eine <abbr title='Eine Union mehrerer Typen
 //// tab | Python 3.8+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/response_model/tutorial003_04.py!}
+{!> ../../docs_src/response_model/tutorial003_04.py!}
 ```
 
 ////
@@ -355,7 +355,7 @@ In diesem Fall können Sie die Generierung des Responsemodells abschalten, indem
 //// tab | Python 3.10+
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/response_model/tutorial003_05_py310.py!}
+{!> ../../docs_src/response_model/tutorial003_05_py310.py!}
 ```
 
 ////
@@ -363,7 +363,7 @@ In diesem Fall können Sie die Generierung des Responsemodells abschalten, indem
 //// tab | Python 3.8+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/response_model/tutorial003_05.py!}
+{!> ../../docs_src/response_model/tutorial003_05.py!}
 ```
 
 ////
@@ -377,7 +377,7 @@ Ihr Responsemodell könnte Defaultwerte haben, wie:
 //// tab | Python 3.10+
 
 ```Python hl_lines="9  11-12"
-{!> ../../../docs_src/response_model/tutorial004_py310.py!}
+{!> ../../docs_src/response_model/tutorial004_py310.py!}
 ```
 
 ////
@@ -385,7 +385,7 @@ Ihr Responsemodell könnte Defaultwerte haben, wie:
 //// tab | Python 3.9+
 
 ```Python hl_lines="11  13-14"
-{!> ../../../docs_src/response_model/tutorial004_py39.py!}
+{!> ../../docs_src/response_model/tutorial004_py39.py!}
 ```
 
 ////
@@ -393,14 +393,14 @@ Ihr Responsemodell könnte Defaultwerte haben, wie:
 //// tab | Python 3.8+
 
 ```Python hl_lines="11  13-14"
-{!> ../../../docs_src/response_model/tutorial004.py!}
+{!> ../../docs_src/response_model/tutorial004.py!}
 ```
 
 ////
 
-* `description: Union[str, None] = None` (oder `str | None = None` in Python 3.10) hat einen Defaultwert `None`.
-* `tax: float = 10.5` hat einen Defaultwert `10.5`.
-* `tags: List[str] = []` hat eine leere Liste als Defaultwert: `[]`.
+- `description: Union[str, None] = None` (oder `str | None = None` in Python 3.10) hat einen Defaultwert `None`.
+- `tax: float = 10.5` hat einen Defaultwert `10.5`.
+- `tags: List[str] = []` hat eine leere Liste als Defaultwert: `[]`.
 
 Aber Sie möchten diese vielleicht vom Resultat ausschließen, wenn Sie gar nicht gesetzt wurden.
 
@@ -408,12 +408,12 @@ Wenn Sie zum Beispiel Modelle mit vielen optionalen Attributen in einer NoSQL-Da
 
 ### Den `response_model_exclude_unset`-Parameter verwenden
 
-Sie können den *Pfadoperation-Dekorator*-Parameter `response_model_exclude_unset=True` setzen:
+Sie können den _Pfadoperation-Dekorator_-Parameter `response_model_exclude_unset=True` setzen:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/response_model/tutorial004_py310.py!}
+{!> ../../docs_src/response_model/tutorial004_py310.py!}
 ```
 
 ////
@@ -421,7 +421,7 @@ Sie können den *Pfadoperation-Dekorator*-Parameter `response_model_exclude_unse
 //// tab | Python 3.9+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial004_py39.py!}
+{!> ../../docs_src/response_model/tutorial004_py39.py!}
 ```
 
 ////
@@ -429,14 +429,14 @@ Sie können den *Pfadoperation-Dekorator*-Parameter `response_model_exclude_unse
 //// tab | Python 3.8+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/response_model/tutorial004.py!}
+{!> ../../docs_src/response_model/tutorial004.py!}
 ```
 
 ////
 
 Die Defaultwerte werden dann nicht in der Response enthalten sein, sondern nur die tatsächlich gesetzten Werte.
 
-Wenn Sie also den Artikel mit der ID `foo` bei der *Pfadoperation* anfragen, wird (ohne die Defaultwerte) die Response sein:
+Wenn Sie also den Artikel mit der ID `foo` bei der _Pfadoperation_ anfragen, wird (ohne die Defaultwerte) die Response sein:
 
 ```JSON
 {
@@ -463,8 +463,8 @@ ReadyAPI verwendet `.dict()` von Pydantic Modellen, <a href="https://docs.pydant
 
 Sie können auch:
 
-* `response_model_exclude_defaults=True`
-* `response_model_exclude_none=True`
+- `response_model_exclude_defaults=True`
+- `response_model_exclude_none=True`
 
 verwenden, wie in der <a href="https://docs.pydantic.dev/1.10/usage/exporting_models/#modeldict" class="external-link" target="_blank">Pydantic Dokumentation</a> für `exclude_defaults` und `exclude_none` beschrieben.
 
@@ -532,7 +532,7 @@ Das trifft auch auf `response_model_by_alias` zu, welches ähnlich funktioniert.
 //// tab | Python 3.10+
 
 ```Python hl_lines="29  35"
-{!> ../../../docs_src/response_model/tutorial005_py310.py!}
+{!> ../../docs_src/response_model/tutorial005_py310.py!}
 ```
 
 ////
@@ -540,7 +540,7 @@ Das trifft auch auf `response_model_by_alias` zu, welches ähnlich funktioniert.
 //// tab | Python 3.8+
 
 ```Python hl_lines="31  37"
-{!> ../../../docs_src/response_model/tutorial005.py!}
+{!> ../../docs_src/response_model/tutorial005.py!}
 ```
 
 ////
@@ -560,7 +560,7 @@ Wenn Sie vergessen, ein `set` zu verwenden, und stattdessen eine `list`e oder ei
 //// tab | Python 3.10+
 
 ```Python hl_lines="29  35"
-{!> ../../../docs_src/response_model/tutorial006_py310.py!}
+{!> ../../docs_src/response_model/tutorial006_py310.py!}
 ```
 
 ////
@@ -568,13 +568,13 @@ Wenn Sie vergessen, ein `set` zu verwenden, und stattdessen eine `list`e oder ei
 //// tab | Python 3.8+
 
 ```Python hl_lines="31  37"
-{!> ../../../docs_src/response_model/tutorial006.py!}
+{!> ../../docs_src/response_model/tutorial006.py!}
 ```
 
 ////
 
 ## Zusammenfassung
 
-Verwenden Sie den Parameter `response_model` im *Pfadoperation-Dekorator*, um Responsemodelle zu definieren, und besonders, um private Daten herauszufiltern.
+Verwenden Sie den Parameter `response_model` im _Pfadoperation-Dekorator_, um Responsemodelle zu definieren, und besonders, um private Daten herauszufiltern.
 
 Verwenden Sie `response_model_exclude_unset`, um nur explizit gesetzte Werte zurückzugeben.

@@ -8,11 +8,11 @@
 
 👆 💪 💪 🛠️ ⚫️ 🙆 💽 🐕‍🦺 🇸🇲, 💖:
 
-* ✳
-* ✳
-* 🗄
-* 🐸
-* 🤸‍♂ 🗄 💽, ♒️.
+- ✳
+- ✳
+- 🗄
+- 🐸
+- 🤸‍♂ 🗄 💽, ♒️.
 
 👉 🖼, 👥 🔜 ⚙️ **🗄**, ↩️ ⚫️ ⚙️ 👁 📁 &amp; 🐍 ✔️ 🛠️ 🐕‍🦺. , 👆 💪 📁 👉 🖼 &amp; 🏃 ⚫️.
 
@@ -28,7 +28,7 @@
 
 👀 👈 📚 📟 🐩 `SQLAlchemy` 📟 👆 🔜 ⚙️ ⏮️ 🙆 🛠️.
 
- **ReadyAPI** 🎯 📟 🤪 🕧.
+**ReadyAPI** 🎯 📟 🤪 🕧.
 
 ///
 
@@ -38,25 +38,25 @@
 
 ⚠ ⚓ ⚙️ "🐜": "🎚-🔗 🗺" 🗃.
 
-🐜 ✔️ 🧰 🗜 ("*🗺*") 🖖 *🎚* 📟 &amp; 💽 🏓 ("*🔗*").
+🐜 ✔️ 🧰 🗜 ("_🗺_") 🖖 _🎚_ 📟 &amp; 💽 🏓 ("_🔗_").
 
 ⏮️ 🐜, 👆 🛎 ✍ 🎓 👈 🎨 🏓 🗄 💽, 🔠 🔢 🎓 🎨 🏓, ⏮️ 📛 &amp; 🆎.
 
 🖼 🎓 `Pet` 💪 🎨 🗄 🏓 `pets`.
 
-&amp; 🔠 *👐* 🎚 👈 🎓 🎨 ⏭ 💽.
+&amp; 🔠 _👐_ 🎚 👈 🎓 🎨 ⏭ 💽.
 
 🖼 🎚 `orion_cat` (👐 `Pet`) 💪 ✔️ 🔢 `orion_cat.type`, 🏓 `type`. &amp; 💲 👈 🔢 💪, ✅ `"cat"`.
 
 👫 🐜 ✔️ 🧰 ⚒ 🔗 ⚖️ 🔗 🖖 🏓 ⚖️ 👨‍💼.
 
-👉 🌌, 👆 💪 ✔️ 🔢 `orion_cat.owner` &amp; 👨‍💼 🔜 🔌 💽 👉 🐶 👨‍💼, ✊ ⚪️➡️ 🏓 *👨‍💼*.
+👉 🌌, 👆 💪 ✔️ 🔢 `orion_cat.owner` &amp; 👨‍💼 🔜 🔌 💽 👉 🐶 👨‍💼, ✊ ⚪️➡️ 🏓 _👨‍💼_.
 
 , `orion_cat.owner.name` 💪 📛 (⚪️➡️ `name` 🏓 `owners` 🏓) 👉 🐶 👨‍💼.
 
 ⚫️ 💪 ✔️ 💲 💖 `"Arquilian"`.
 
-&amp; 🐜 🔜 🌐 👷 🤚 ℹ ⚪️➡️ 🔗 🏓 *👨‍💼* 🕐❔ 👆 🔄 🔐 ⚫️ ⚪️➡️ 👆 🐶 🎚.
+&amp; 🐜 🔜 🌐 👷 🤚 ℹ ⚪️➡️ 🔗 🏓 _👨‍💼_ 🕐❔ 👆 🔄 🔐 ⚫️ ⚪️➡️ 👆 🐶 🎚.
 
 ⚠ 🐜 🖼: ✳-🐜 (🍕 ✳ 🛠️), 🇸🇲 🐜 (🍕 🇸🇲, 🔬 🛠️) &amp; 🏒 (🔬 🛠️), 👪 🎏.
 
@@ -110,13 +110,13 @@ $ pip install sqlalchemy
 ### 🗄 🇸🇲 🍕
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 ### ✍ 💽 📛 🇸🇲
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 👉 🖼, 👥 "🔗" 🗄 💽 (📂 📁 ⏮️ 🗄 💽).
@@ -146,7 +146,7 @@ SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
 👥 🔜 ⏪ ⚙️ 👉 `engine` 🎏 🥉.
 
 ```Python hl_lines="8-10"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 #### 🗒
@@ -184,7 +184,7 @@ connect_args={"check_same_thread": False}
 ✍ `SessionLocal` 🎓, ⚙️ 🔢 `sessionmaker`:
 
 ```Python hl_lines="11"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 ### ✍ `Base` 🎓
@@ -194,7 +194,7 @@ connect_args={"check_same_thread": False}
 ⏪ 👥 🔜 😖 ⚪️➡️ 👉 🎓 ✍ 🔠 💽 🏷 ⚖️ 🎓 (🐜 🏷):
 
 ```Python hl_lines="13"
-{!../../../docs_src/sql_databases/sql_app/database.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
 ## ✍ 💽 🏷
@@ -220,7 +220,7 @@ connect_args={"check_same_thread": False}
 👫 🎓 🇸🇲 🏷.
 
 ```Python hl_lines="4  7-8  18-19"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 `__tablename__` 🔢 💬 🇸🇲 📛 🏓 ⚙️ 💽 🔠 👫 🏷.
@@ -236,7 +236,7 @@ connect_args={"check_same_thread": False}
 &amp; 👥 🚶‍♀️ 🇸🇲 🎓 "🆎", `Integer`, `String`, &amp; `Boolean`, 👈 🔬 🆎 💽, ❌.
 
 ```Python hl_lines="1  10-13  21-24"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 ### ✍ 💛
@@ -248,7 +248,7 @@ connect_args={"check_same_thread": False}
 👉 🔜 ▶️️, 🌅 ⚖️ 🌘, "🎱" 🔢 👈 🔜 🔌 💲 ⚪️➡️ 🎏 🏓 🔗 👉 1️⃣.
 
 ```Python hl_lines="2  15  26"
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/models.py!}
 ```
 
 🕐❔ 🔐 🔢 `items` `User`, `my_user.items`, ⚫️ 🔜 ✔️ 📇 `Item` 🇸🇲 🏷 (⚪️➡️ `items` 🏓) 👈 ✔️ 💱 🔑 ☝ 👉 ⏺ `users` 🏓.
@@ -263,7 +263,7 @@ connect_args={"check_same_thread": False}
 
 /// tip
 
-❎ 😨 🖖 🇸🇲 *🏷* &amp; Pydantic *🏷*, 👥 🔜 ✔️ 📁 `models.py` ⏮️ 🇸🇲 🏷, &amp; 📁 `schemas.py` ⏮️ Pydantic 🏷.
+❎ 😨 🖖 🇸🇲 _🏷_ &amp; Pydantic _🏷_, 👥 🔜 ✔️ 📁 `models.py` ⏮️ 🇸🇲 🏷, &amp; 📁 `schemas.py` ⏮️ Pydantic 🏷.
 
 👫 Pydantic 🏷 🔬 🌅 ⚖️ 🌘 "🔗" (☑ 📊 💠).
 
@@ -271,20 +271,20 @@ connect_args={"check_same_thread": False}
 
 ///
 
-### ✍ ▶️ Pydantic *🏷* / 🔗
+### ✍ ▶️ Pydantic _🏷_ / 🔗
 
-✍ `ItemBase` &amp; `UserBase` Pydantic *🏷* (⚖️ ➡️ 💬 "🔗") ✔️ ⚠ 🔢 ⏪ 🏗 ⚖️ 👂 📊.
+✍ `ItemBase` &amp; `UserBase` Pydantic _🏷_ (⚖️ ➡️ 💬 "🔗") ✔️ ⚠ 🔢 ⏪ 🏗 ⚖️ 👂 📊.
 
 &amp; ✍ `ItemCreate` &amp; `UserCreate` 👈 😖 ⚪️➡️ 👫 (👫 🔜 ✔️ 🎏 🔢), ➕ 🙆 🌖 📊 (🔢) 💪 🏗.
 
 , 👩‍💻 🔜 ✔️ `password` 🕐❔ 🏗 ⚫️.
 
-✋️ 💂‍♂, `password` 🏆 🚫 🎏 Pydantic *🏷*, 🖼, ⚫️ 🏆 🚫 📨 ⚪️➡️ 🛠️ 🕐❔ 👂 👩‍💻.
+✋️ 💂‍♂, `password` 🏆 🚫 🎏 Pydantic _🏷_, 🖼, ⚫️ 🏆 🚫 📨 ⚪️➡️ 🛠️ 🕐❔ 👂 👩‍💻.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="3  6-8  11-12  23-24  27-28"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -292,7 +292,7 @@ connect_args={"check_same_thread": False}
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="3  6-8  11-12  23-24  27-28"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -300,20 +300,20 @@ connect_args={"check_same_thread": False}
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="1  4-6  9-10  21-22  25-26"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
 
 #### 🇸🇲 👗 &amp; Pydantic 👗
 
-👀 👈 🇸🇲 *🏷* 🔬 🔢 ⚙️ `=`, &amp; 🚶‍♀️ 🆎 🔢 `Column`, 💖:
+👀 👈 🇸🇲 _🏷_ 🔬 🔢 ⚙️ `=`, &amp; 🚶‍♀️ 🆎 🔢 `Column`, 💖:
 
 ```Python
 name = Column(String)
 ```
 
-⏪ Pydantic *🏷* 📣 🆎 ⚙️ `:`, 🆕 🆎 ✍ ❕/🆎 🔑:
+⏪ Pydantic _🏷_ 📣 🆎 ⚙️ `:`, 🆕 🆎 ✍ ❕/🆎 🔑:
 
 ```Python
 name: str
@@ -321,20 +321,20 @@ name: str
 
 ✔️ ⚫️ 🤯, 👆 🚫 🤚 😕 🕐❔ ⚙️ `=` &amp; `:` ⏮️ 👫.
 
-### ✍ Pydantic *🏷* / 🔗 👂 / 📨
+### ✍ Pydantic _🏷_ / 🔗 👂 / 📨
 
-🔜 ✍ Pydantic *🏷* (🔗) 👈 🔜 ⚙️ 🕐❔ 👂 💽, 🕐❔ 🛬 ⚫️ ⚪️➡️ 🛠️.
+🔜 ✍ Pydantic _🏷_ (🔗) 👈 🔜 ⚙️ 🕐❔ 👂 💽, 🕐❔ 🛬 ⚫️ ⚪️➡️ 🛠️.
 
 🖼, ⏭ 🏗 🏬, 👥 🚫 💭 ⚫️❔ 🔜 🆔 🛠️ ⚫️, ✋️ 🕐❔ 👂 ⚫️ (🕐❔ 🛬 ⚫️ ⚪️➡️ 🛠️) 👥 🔜 ⏪ 💭 🚮 🆔.
 
 🎏 🌌, 🕐❔ 👂 👩‍💻, 👥 💪 🔜 📣 👈 `items` 🔜 🔌 🏬 👈 💭 👉 👩‍💻.
 
-🚫 🕴 🆔 📚 🏬, ✋️ 🌐 💽 👈 👥 🔬 Pydantic *🏷* 👂 🏬: `Item`.
+🚫 🕴 🆔 📚 🏬, ✋️ 🌐 💽 👈 👥 🔬 Pydantic _🏷_ 👂 🏬: `Item`.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="15-17  31-34"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -342,7 +342,7 @@ name: str
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="15-17  31-34"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -350,20 +350,20 @@ name: str
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="13-15  29-32"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
 
 /// tip
 
-👀 👈 `User`, Pydantic *🏷* 👈 🔜 ⚙️ 🕐❔ 👂 👩‍💻 (🛬 ⚫️ ⚪️➡️ 🛠️) 🚫 🔌 `password`.
+👀 👈 `User`, Pydantic _🏷_ 👈 🔜 ⚙️ 🕐❔ 👂 👩‍💻 (🛬 ⚫️ ⚪️➡️ 🛠️) 🚫 🔌 `password`.
 
 ///
 
 ### ⚙️ Pydantic `orm_mode`
 
-🔜, Pydantic *🏷* 👂, `Item` &amp; `User`, 🚮 🔗 `Config` 🎓.
+🔜, Pydantic _🏷_ 👂, `Item` &amp; `User`, 🚮 🔗 `Config` 🎓.
 
 👉 <a href="https://docs.pydantic.dev/latest/api/config/" class="external-link" target="_blank">`Config`</a> 🎓 ⚙️ 🚚 📳 Pydantic.
 
@@ -372,7 +372,7 @@ name: str
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="15  19-20  31  36-37"
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -380,7 +380,7 @@ name: str
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="15  19-20  31  36-37"
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -388,7 +388,7 @@ name: str
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python hl_lines="13  17-18  29  34-35"
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
@@ -405,7 +405,7 @@ name: str
 
 ///
 
-Pydantic `orm_mode` 🔜 💬 Pydantic *🏷* ✍ 💽 🚥 ⚫️ 🚫 `dict`, ✋️ 🐜 🏷 (⚖️ 🙆 🎏 ❌ 🎚 ⏮️ 🔢).
+Pydantic `orm_mode` 🔜 💬 Pydantic _🏷_ ✍ 💽 🚥 ⚫️ 🚫 `dict`, ✋️ 🐜 🏷 (⚖️ 🙆 🎏 ❌ 🎚 ⏮️ 🔢).
 
 👉 🌌, ↩️ 🕴 🔄 🤚 `id` 💲 ⚪️➡️ `dict`,:
 
@@ -419,7 +419,7 @@ id = data["id"]
 id = data.id
 ```
 
-&amp; ⏮️ 👉, Pydantic *🏷* 🔗 ⏮️ 🐜, &amp; 👆 💪 📣 ⚫️ `response_model` ❌ 👆 *➡ 🛠️*.
+&amp; ⏮️ 👉, Pydantic _🏷_ 🔗 ⏮️ 🐜, &amp; 👆 💪 📣 ⚫️ `response_model` ❌ 👆 _➡ 🛠️_.
 
 👆 🔜 💪 📨 💽 🏷 &amp; ⚫️ 🔜 ✍ 💽 ⚪️➡️ ⚫️.
 
@@ -437,7 +437,7 @@ current_user.items
 
 🔜 ⚒ 🇸🇲 🚶 `items` 🏓 &amp; 🤚 🏬 👉 👩‍💻, ✋️ 🚫 ⏭.
 
-🍵 `orm_mode`, 🚥 👆 📨 🇸🇲 🏷 ⚪️➡️ 👆 *➡ 🛠️*, ⚫️ 🚫🔜 🔌 💛 💽.
+🍵 `orm_mode`, 🚥 👆 📨 🇸🇲 🏷 ⚪️➡️ 👆 _➡ 🛠️_, ⚫️ 🚫🔜 🔌 💛 💽.
 
 🚥 👆 📣 📚 💛 👆 Pydantic 🏷.
 
@@ -457,21 +457,21 @@ current_user.items
 
 🗄 `Session` ⚪️➡️ `sqlalchemy.orm`, 👉 🔜 ✔ 👆 📣 🆎 `db` 🔢 &amp; ✔️ 👻 🆎 ✅ &amp; 🛠️ 👆 🔢.
 
-🗄 `models` (🇸🇲 🏷) &amp; `schemas` (Pydantic *🏷* / 🔗).
+🗄 `models` (🇸🇲 🏷) &amp; `schemas` (Pydantic _🏷_ / 🔗).
 
 ✍ 🚙 🔢:
 
-* ✍ 👁 👩‍💻 🆔 &amp; 📧.
-* ✍ 💗 👩‍💻.
-* ✍ 💗 🏬.
+- ✍ 👁 👩‍💻 🆔 &amp; 📧.
+- ✍ 💗 👩‍💻.
+- ✍ 💗 🏬.
 
 ```Python hl_lines="1  3  6-7  10-11  14-15  27-28"
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
 /// tip
 
-🏗 🔢 👈 🕴 💡 🔗 ⏮️ 💽 (🤚 👩‍💻 ⚖️ 🏬) 🔬 👆 *➡ 🛠️ 🔢*, 👆 💪 🌖 💪 ♻ 👫 💗 🍕 &amp; 🚮 <abbr title="Automated tests, written in code, that check if another piece of code is working correctly.">⚒ 💯</abbr> 👫.
+🏗 🔢 👈 🕴 💡 🔗 ⏮️ 💽 (🤚 👩‍💻 ⚖️ 🏬) 🔬 👆 _➡ 🛠️ 🔢_, 👆 💪 🌖 💪 ♻ 👫 💗 🍕 &amp; 🚮 <abbr title="Automated tests, written in code, that check if another piece of code is working correctly.">⚒ 💯</abbr> 👫.
 
 ///
 
@@ -481,13 +481,13 @@ current_user.items
 
 🔁:
 
-* ✍ 🇸🇲 🏷 *👐* ⏮️ 👆 📊.
-* `add` 👈 👐 🎚 👆 💽 🎉.
-* `commit` 🔀 💽 (👈 👫 🖊).
-* `refresh` 👆 👐 (👈 ⚫️ 🔌 🙆 🆕 📊 ⚪️➡️ 💽, 💖 🏗 🆔).
+- ✍ 🇸🇲 🏷 _👐_ ⏮️ 👆 📊.
+- `add` 👈 👐 🎚 👆 💽 🎉.
+- `commit` 🔀 💽 (👈 👫 🖊).
+- `refresh` 👆 👐 (👈 ⚫️ 🔌 🙆 🆕 📊 ⚪️➡️ 💽, 💖 🏗 🆔).
 
 ```Python hl_lines="18-24  31-36"
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
 /// tip
@@ -496,7 +496,7 @@ current_user.items
 
 ✋️ ⚫️❔ 🛠️ 👩‍💻 🚚 ⏮️ 🔐, 👆 💪 ⚗ ⚫️ &amp; 🏗 #️⃣ 🔐 👆 🈸.
 
- &amp; ⤴️ 🚶‍♀️ `hashed_password` ❌ ⏮️ 💲 🖊.
+&amp; ⤴️ 🚶‍♀️ `hashed_password` ❌ ⏮️ 💲 🖊.
 
 ///
 
@@ -514,15 +514,15 @@ current_user.items
 
 /// tip
 
-↩️ 🚶‍♀️ 🔠 🇨🇻 ❌ `Item` &amp; 👂 🔠 1️⃣ 👫 ⚪️➡️ Pydantic *🏷*, 👥 🏭 `dict` ⏮️ Pydantic *🏷*'Ⓜ 📊 ⏮️:
+↩️ 🚶‍♀️ 🔠 🇨🇻 ❌ `Item` &amp; 👂 🔠 1️⃣ 👫 ⚪️➡️ Pydantic _🏷_, 👥 🏭 `dict` ⏮️ Pydantic _🏷_'Ⓜ 📊 ⏮️:
 
 `item.dict()`
 
- &amp; ⤴️ 👥 🚶‍♀️ `dict`'Ⓜ 🔑-💲 👫 🇨🇻 ❌ 🇸🇲 `Item`, ⏮️:
+&amp; ⤴️ 👥 🚶‍♀️ `dict`'Ⓜ 🔑-💲 👫 🇨🇻 ❌ 🇸🇲 `Item`, ⏮️:
 
 `Item(**item.dict())`
 
- &amp; ⤴️ 👥 🚶‍♀️ ➕ 🇨🇻 ❌ `owner_id` 👈 🚫 🚚 Pydantic *🏷*, ⏮️:
+&amp; ⤴️ 👥 🚶‍♀️ ➕ 🇨🇻 ❌ `owner_id` 👈 🚫 🚚 Pydantic _🏷_, ⏮️:
 
 `Item(**item.dict(), owner_id=user_id)`
 
@@ -539,7 +539,7 @@ current_user.items
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -547,7 +547,7 @@ current_user.items
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -560,7 +560,7 @@ current_user.items
 
 "🛠️" ⚒ 🔁 💪 🕐❔ 👆 🔀 📊 👆 🇸🇲 🏷, 🚮 🆕 🔢, ♒️. 🔁 👈 🔀 💽, 🚮 🆕 🏓, 🆕 🏓, ♒️.
 
-👆 💪 🔎 🖼 ⚗ ReadyAPI 🏗 📄 ⚪️➡️ [🏗 ⚡ - 📄](../project-generation.md){.internal-link target=_blank}. 🎯 <a href="https://github.com/khulnasoft/full-stack-readyapi-template/tree/master/backend/app/alembic" class="external-link" target="_blank"> `alembic` 📁 ℹ 📟</a>.
+👆 💪 🔎 🖼 ⚗ ReadyAPI 🏗 📄 ⚪️➡️ [🏗 ⚡ - 📄](../project-generation.md){.internal-link target=\_blank}. 🎯 <a href="https://github.com/khulnasoft/full-stack-readyapi-template/tree/master/backend/app/alembic" class="external-link" target="_blank"> `alembic` 📁 ℹ 📟</a>.
 
 ### ✍ 🔗
 
@@ -570,14 +570,14 @@ current_user.items
 
 &amp; ⤴️ 🆕 🎉 🔜 ✍ ⏭ 📨.
 
-👈, 👥 🔜 ✍ 🆕 🔗 ⏮️ `yield`, 🔬 ⏭ 📄 🔃 [🔗 ⏮️ `yield`](dependencies/dependencies-with-yield.md){.internal-link target=_blank}.
+👈, 👥 🔜 ✍ 🆕 🔗 ⏮️ `yield`, 🔬 ⏭ 📄 🔃 [🔗 ⏮️ `yield`](dependencies/dependencies-with-yield.md){.internal-link target=\_blank}.
 
 👆 🔗 🔜 ✍ 🆕 🇸🇲 `SessionLocal` 👈 🔜 ⚙️ 👁 📨, &amp; ⤴️ 🔐 ⚫️ 🕐 📨 🏁.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="15-20"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -585,7 +585,7 @@ current_user.items
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="13-18"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -594,22 +594,22 @@ current_user.items
 
 👥 🚮 🏗 `SessionLocal()` &amp; 🚚 📨 `try` 🍫.
 
- &amp; ⤴️ 👥 🔐 ⚫️ `finally` 🍫.
+&amp; ⤴️ 👥 🔐 ⚫️ `finally` 🍫.
 
 👉 🌌 👥 ⚒ 💭 💽 🎉 🕧 📪 ⏮️ 📨. 🚥 📤 ⚠ ⏪ 🏭 📨.
 
-✋️ 👆 💪 🚫 🤚 ➕1️⃣ ⚠ ⚪️➡️ 🚪 📟 (⏮️ `yield`). 👀 🌖 [🔗 ⏮️ `yield` &amp; `HTTPException`](dependencies/dependencies-with-yield.md#yield-httpexception){.internal-link target=_blank}
+✋️ 👆 💪 🚫 🤚 ➕1️⃣ ⚠ ⚪️➡️ 🚪 📟 (⏮️ `yield`). 👀 🌖 [🔗 ⏮️ `yield` &amp; `HTTPException`](dependencies/dependencies-with-yield.md#yield-httpexception){.internal-link target=\_blank}
 
 ///
 
-&amp; ⤴️, 🕐❔ ⚙️ 🔗 *➡ 🛠️ 🔢*, 👥 📣 ⚫️ ⏮️ 🆎 `Session` 👥 🗄 🔗 ⚪️➡️ 🇸🇲.
+&amp; ⤴️, 🕐❔ ⚙️ 🔗 _➡ 🛠️ 🔢_, 👥 📣 ⚫️ ⏮️ 🆎 `Session` 👥 🗄 🔗 ⚪️➡️ 🇸🇲.
 
-👉 🔜 ⤴️ 🤝 👥 👍 👨‍🎨 🐕‍🦺 🔘 *➡ 🛠️ 🔢*, ↩️ 👨‍🎨 🔜 💭 👈 `db` 🔢 🆎 `Session`:
+👉 🔜 ⤴️ 🤝 👥 👍 👨‍🎨 🐕‍🦺 🔘 _➡ 🛠️ 🔢_, ↩️ 👨‍🎨 🔜 💭 👈 `db` 🔢 🆎 `Session`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="24  32  38  47  53"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -617,7 +617,7 @@ current_user.items
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="22  30  36  45  51"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -630,14 +630,14 @@ current_user.items
 
 ///
 
-### ✍ 👆 **ReadyAPI** *➡ 🛠️*
+### ✍ 👆 **ReadyAPI** _➡ 🛠️_
 
-🔜, 😒, 📥 🐩 **ReadyAPI** *➡ 🛠️* 📟.
+🔜, 😒, 📥 🐩 **ReadyAPI** _➡ 🛠️_ 📟.
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="23-28  31-34  37-42  45-49  52-55"
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -645,22 +645,22 @@ current_user.items
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="21-26  29-32  35-40  43-47  50-53"
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
 
 👥 🏗 💽 🎉 ⏭ 🔠 📨 🔗 ⏮️ `yield`, &amp; ⤴️ 📪 ⚫️ ⏮️.
 
-&amp; ⤴️ 👥 💪 ✍ 🚚 🔗 *➡ 🛠️ 🔢*, 🤚 👈 🎉 🔗.
+&amp; ⤴️ 👥 💪 ✍ 🚚 🔗 _➡ 🛠️ 🔢_, 🤚 👈 🎉 🔗.
 
-⏮️ 👈, 👥 💪 🤙 `crud.get_user` 🔗 ⚪️➡️ 🔘 *➡ 🛠️ 🔢* &amp; ⚙️ 👈 🎉.
+⏮️ 👈, 👥 💪 🤙 `crud.get_user` 🔗 ⚪️➡️ 🔘 _➡ 🛠️ 🔢_ &amp; ⚙️ 👈 🎉.
 
 /// tip
 
 👀 👈 💲 👆 📨 🇸🇲 🏷, ⚖️ 📇 🇸🇲 🏷.
 
-✋️ 🌐 *➡ 🛠️* ✔️ `response_model` ⏮️ Pydantic *🏷* / 🔗 ⚙️ `orm_mode`, 💽 📣 👆 Pydantic 🏷 🔜 ⚗ ⚪️➡️ 👫 &amp; 📨 👩‍💻, ⏮️ 🌐 😐 ⛽ &amp; 🔬.
+✋️ 🌐 _➡ 🛠️_ ✔️ `response_model` ⏮️ Pydantic _🏷_ / 🔗 ⚙️ `orm_mode`, 💽 📣 👆 Pydantic 🏷 🔜 ⚗ ⚪️➡️ 👫 &amp; 📨 👩‍💻, ⏮️ 🌐 😐 ⛽ &amp; 🔬.
 
 ///
 
@@ -668,13 +668,13 @@ current_user.items
 
 👀 👈 📤 `response_models` 👈 ✔️ 🐩 🐍 🆎 💖 `List[schemas.Item]`.
 
-✋️ 🎚/🔢 👈 `List` Pydantic *🏷* ⏮️ `orm_mode`, 💽 🔜 🗃 &amp; 📨 👩‍💻 🛎, 🍵 ⚠.
+✋️ 🎚/🔢 👈 `List` Pydantic _🏷_ ⏮️ `orm_mode`, 💽 🔜 🗃 &amp; 📨 👩‍💻 🛎, 🍵 ⚠.
 
 ///
 
 ### 🔃 `def` 🆚 `async def`
 
-📥 👥 ⚙️ 🇸🇲 📟 🔘 *➡ 🛠️ 🔢* &amp; 🔗, &amp;, 🔄, ⚫️ 🔜 🚶 &amp; 🔗 ⏮️ 🔢 💽.
+📥 👥 ⚙️ 🇸🇲 📟 🔘 _➡ 🛠️ 🔢_ &amp; 🔗, &amp;, 🔄, ⚫️ 🔜 🚶 &amp; 🔗 ⏮️ 🔢 💽.
 
 👈 💪 ⚠ 🚚 "⌛".
 
@@ -690,7 +690,7 @@ user = await db.query(User).first()
 user = db.query(User).first()
 ```
 
-⤴️ 👥 🔜 📣 *➡ 🛠️ 🔢* &amp; 🔗 🍵 `async def`, ⏮️ 😐 `def`,:
+⤴️ 👥 🔜 📣 _➡ 🛠️ 🔢_ &amp; 🔗 🍵 `async def`, ⏮️ 😐 `def`,:
 
 ```Python hl_lines="2"
 @app.get("/users/{user_id}", response_model=schemas.User)
@@ -701,13 +701,13 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 
 /// info
 
-🚥 👆 💪 🔗 👆 🔗 💽 🔁, 👀 [🔁 🗄 (🔗) 💽](../advanced/async-sql-databases.md){.internal-link target=_blank}.
+🚥 👆 💪 🔗 👆 🔗 💽 🔁, 👀 [🔁 🗄 (🔗) 💽](../advanced/async-sql-databases.md){.internal-link target=\_blank}.
 
 ///
 
 /// note | "📶 📡 ℹ"
 
-🚥 👆 😟 &amp; ✔️ ⏬ 📡 💡, 👆 💪 ✅ 📶 📡 ℹ ❔ 👉 `async def` 🆚 `def` 🍵 [🔁](../async.md#i_2){.internal-link target=_blank} 🩺.
+🚥 👆 😟 &amp; ✔️ ⏬ 📡 💡, 👆 💪 ✅ 📶 📡 ℹ ❔ 👉 `async def` 🆚 `def` 🍵 [🔁](../async.md#i_2){.internal-link target=\_blank} 🩺.
 
 ///
 
@@ -723,30 +723,30 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 
 ## 📄 🌐 📁
 
- 💭 👆 🔜 ✔️ 📁 📛 `my_super_project` 👈 🔌 🎧-📁 🤙 `sql_app`.
+💭 👆 🔜 ✔️ 📁 📛 `my_super_project` 👈 🔌 🎧-📁 🤙 `sql_app`.
 
 `sql_app` 🔜 ✔️ 📄 📁:
 
-* `sql_app/__init__.py`: 🛁 📁.
+- `sql_app/__init__.py`: 🛁 📁.
 
-* `sql_app/database.py`:
-
-```Python
-{!../../../docs_src/sql_databases/sql_app/database.py!}
-```
-
-* `sql_app/models.py`:
+- `sql_app/database.py`:
 
 ```Python
-{!../../../docs_src/sql_databases/sql_app/models.py!}
+{!../../docs_src/sql_databases/sql_app/database.py!}
 ```
 
-* `sql_app/schemas.py`:
+- `sql_app/models.py`:
+
+```Python
+{!../../docs_src/sql_databases/sql_app/models.py!}
+```
+
+- `sql_app/schemas.py`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app/schemas.py!}
 ```
 
 ////
@@ -754,7 +754,7 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py39/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/schemas.py!}
 ```
 
 ////
@@ -762,23 +762,23 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py310/schemas.py!}
+{!> ../../docs_src/sql_databases/sql_app_py310/schemas.py!}
 ```
 
 ////
 
-* `sql_app/crud.py`:
+- `sql_app/crud.py`:
 
 ```Python
-{!../../../docs_src/sql_databases/sql_app/crud.py!}
+{!../../docs_src/sql_databases/sql_app/crud.py!}
 ```
 
-* `sql_app/main.py`:
+- `sql_app/main.py`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app/main.py!}
+{!> ../../docs_src/sql_databases/sql_app/main.py!}
 ```
 
 ////
@@ -786,7 +786,7 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python
-{!> ../../../docs_src/sql_databases/sql_app_py39/main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/main.py!}
 ```
 
 ////
@@ -802,7 +802,6 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
 ///
 
 ⤴️ 👆 💪 🏃 ⚫️ ⏮️ Uvicorn:
-
 
 <div class="termy">
 
@@ -843,7 +842,7 @@ $ uvicorn sql_app.main:app --reload
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
 ```Python hl_lines="14-22"
-{!> ../../../docs_src/sql_databases/sql_app/alt_main.py!}
+{!> ../../docs_src/sql_databases/sql_app/alt_main.py!}
 ```
 
 ////
@@ -851,7 +850,7 @@ $ uvicorn sql_app.main:app --reload
 //// tab | 🐍 3️⃣.9️⃣ &amp; 🔛
 
 ```Python hl_lines="12-20"
-{!> ../../../docs_src/sql_databases/sql_app_py39/alt_main.py!}
+{!> ../../docs_src/sql_databases/sql_app_py39/alt_main.py!}
 ```
 
 ////
@@ -860,7 +859,7 @@ $ uvicorn sql_app.main:app --reload
 
 👥 🚮 🏗 `SessionLocal()` &amp; 🚚 📨 `try` 🍫.
 
- &amp; ⤴️ 👥 🔐 ⚫️ `finally` 🍫.
+&amp; ⤴️ 👥 🔐 ⚫️ `finally` 🍫.
 
 👉 🌌 👥 ⚒ 💭 💽 🎉 🕧 📪 ⏮️ 📨. 🚥 📤 ⚠ ⏪ 🏭 📨.
 
@@ -876,14 +875,14 @@ $ uvicorn sql_app.main:app --reload
 
 ❎ **🛠️** 📥 🎏 ⚫️❔ 🔗 ⏮️ `yield` 🔨, ⏮️ 🔺:
 
-* ⚫️ 🚚 🌖 📟 &amp; 👄 🌅 🏗.
-* 🛠️ ✔️ `async` 🔢.
-    * 🚥 📤 📟 ⚫️ 👈 ✔️ "⌛" 🕸, ⚫️ 💪 "🍫" 👆 🈸 📤 &amp; 📉 🎭 🍖.
-    * 👐 ⚫️ 🎲 🚫 📶 ⚠ 📥 ⏮️ 🌌 `SQLAlchemy` 👷.
-    * ✋️ 🚥 👆 🚮 🌖 📟 🛠️ 👈 ✔️ 📚 <abbr title="input and output">👤/🅾</abbr> ⌛, ⚫️ 💪 ⤴️ ⚠.
-* 🛠️ 🏃 *🔠* 📨.
-    * , 🔗 🔜 ✍ 🔠 📨.
-    * 🕐❔ *➡ 🛠️* 👈 🍵 👈 📨 🚫 💪 💽.
+- ⚫️ 🚚 🌖 📟 &amp; 👄 🌅 🏗.
+- 🛠️ ✔️ `async` 🔢.
+  - 🚥 📤 📟 ⚫️ 👈 ✔️ "⌛" 🕸, ⚫️ 💪 "🍫" 👆 🈸 📤 &amp; 📉 🎭 🍖.
+  - 👐 ⚫️ 🎲 🚫 📶 ⚠ 📥 ⏮️ 🌌 `SQLAlchemy` 👷.
+  - ✋️ 🚥 👆 🚮 🌖 📟 🛠️ 👈 ✔️ 📚 <abbr title="input and output">👤/🅾</abbr> ⌛, ⚫️ 💪 ⤴️ ⚠.
+- 🛠️ 🏃 _🔠_ 📨.
+  - , 🔗 🔜 ✍ 🔠 📨.
+  - 🕐❔ _➡ 🛠️_ 👈 🍵 👈 📨 🚫 💪 💽.
 
 /// tip
 

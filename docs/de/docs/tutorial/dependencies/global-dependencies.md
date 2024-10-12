@@ -2,14 +2,14 @@
 
 Bei einigen Anwendungstypen möchten Sie möglicherweise Abhängigkeiten zur gesamten Anwendung hinzufügen.
 
-Ähnlich wie Sie [`dependencies` zu den *Pfadoperation-Dekoratoren* hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} können, können Sie sie auch zur `ReadyAPI`-Anwendung hinzufügen.
+Ähnlich wie Sie [`dependencies` zu den _Pfadoperation-Dekoratoren_ hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} können, können Sie sie auch zur `ReadyAPI`-Anwendung hinzufügen.
 
-In diesem Fall werden sie auf alle *Pfadoperationen* in der Anwendung angewendet:
+In diesem Fall werden sie auf alle _Pfadoperationen_ in der Anwendung angewendet:
 
 //// tab | Python 3.9+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/dependencies/tutorial012_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial012_an_py39.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@ In diesem Fall werden sie auf alle *Pfadoperationen* in der Anwendung angewendet
 //// tab | Python 3.8+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/dependencies/tutorial012_an.py!}
+{!> ../../docs_src/dependencies/tutorial012_an.py!}
 ```
 
 ////
@@ -31,13 +31,13 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="15"
-{!> ../../../docs_src/dependencies/tutorial012.py!}
+{!> ../../docs_src/dependencies/tutorial012.py!}
 ```
 
 ////
 
-Und alle Ideen aus dem Abschnitt über das [Hinzufügen von `dependencies` zu den *Pfadoperation-Dekoratoren*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} gelten weiterhin, aber in diesem Fall für alle *Pfadoperationen* in der Anwendung.
+Und alle Ideen aus dem Abschnitt über das [Hinzufügen von `dependencies` zu den _Pfadoperation-Dekoratoren_](dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} gelten weiterhin, aber in diesem Fall für alle _Pfadoperationen_ in der Anwendung.
 
-## Abhängigkeiten für Gruppen von *Pfadoperationen*
+## Abhängigkeiten für Gruppen von _Pfadoperationen_
 
-Wenn Sie später lesen, wie Sie größere Anwendungen strukturieren ([Bigger Applications - Multiple Files](../../tutorial/bigger-applications.md){.internal-link target=_blank}), möglicherweise mit mehreren Dateien, lernen Sie, wie Sie einen einzelnen `dependencies`-Parameter für eine Gruppe von *Pfadoperationen* deklarieren.
+Wenn Sie später lesen, wie Sie größere Anwendungen strukturieren ([Bigger Applications - Multiple Files](../../tutorial/bigger-applications.md){.internal-link target=\_blank}), möglicherweise mit mehreren Dateien, lernen Sie, wie Sie einen einzelnen `dependencies`-Parameter für eine Gruppe von _Pfadoperationen_ deklarieren.

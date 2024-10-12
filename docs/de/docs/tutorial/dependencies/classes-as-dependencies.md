@@ -9,7 +9,7 @@ Im vorherigen Beispiel haben wir ein `dict` von unserer Abhängigkeit („Depend
 //// tab | Python 3.10+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -17,7 +17,7 @@ Im vorherigen Beispiel haben wir ein `dict` von unserer Abhängigkeit („Depend
 //// tab | Python 3.9+
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -25,7 +25,7 @@ Im vorherigen Beispiel haben wir ein `dict` von unserer Abhängigkeit („Depend
 //// tab | Python 3.8+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -39,7 +39,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="7"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -53,12 +53,12 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
 
-Aber dann haben wir ein `dict` im Parameter `commons` der *Pfadoperation-Funktion*.
+Aber dann haben wir ein `dict` im Parameter `commons` der _Pfadoperation-Funktion_.
 
 Und wir wissen, dass Editoren nicht viel Unterstützung (wie etwa Code-Vervollständigung) für `dict`s bieten können, weil sie ihre Schlüssel- und Werttypen nicht kennen.
 
@@ -113,16 +113,16 @@ Darum können Sie in **ReadyAPI** auch eine Python-Klasse als Abhängigkeit verw
 
 Was ReadyAPI tatsächlich prüft, ist, ob es sich um ein „Callable“ (Funktion, Klasse oder irgendetwas anderes) handelt und ob die Parameter definiert sind.
 
-Wenn Sie **ReadyAPI** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer *Pfadoperation-Funktion*. Einschließlich Unterabhängigkeiten.
+Wenn Sie **ReadyAPI** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer _Pfadoperation-Funktion_. Einschließlich Unterabhängigkeiten.
 
-Das gilt auch für Callables ohne Parameter. So wie es auch für *Pfadoperation-Funktionen* ohne Parameter gilt.
+Das gilt auch für Callables ohne Parameter. So wie es auch für _Pfadoperation-Funktionen_ ohne Parameter gilt.
 
 Dann können wir das „Dependable“ `common_parameters` der Abhängigkeit von oben in die Klasse `CommonQueryParams` ändern:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -130,7 +130,7 @@ Dann können wir das „Dependable“ `common_parameters` der Abhängigkeit von 
 //// tab | Python 3.9+
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -138,7 +138,7 @@ Dann können wir das „Dependable“ `common_parameters` der Abhängigkeit von 
 //// tab | Python 3.8+
 
 ```Python hl_lines="12-16"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -152,7 +152,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="9-13"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -166,7 +166,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="11-15"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -176,7 +176,7 @@ Achten Sie auf die Methode `__init__`, die zum Erstellen der Instanz der Klasse 
 //// tab | Python 3.10+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -184,7 +184,7 @@ Achten Sie auf die Methode `__init__`, die zum Erstellen der Instanz der Klasse 
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -192,7 +192,7 @@ Achten Sie auf die Methode `__init__`, die zum Erstellen der Instanz der Klasse 
 //// tab | Python 3.8+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -206,7 +206,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -220,7 +220,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -230,7 +230,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.10+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/dependencies/tutorial001_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py310.py!}
 ```
 
 ////
@@ -238,7 +238,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.9+
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -246,7 +246,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 //// tab | Python 3.8+
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/dependencies/tutorial001_an.py!}
+{!> ../../docs_src/dependencies/tutorial001_an.py!}
 ```
 
 ////
@@ -260,7 +260,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/dependencies/tutorial001_py310.py!}
+{!> ../../docs_src/dependencies/tutorial001_py310.py!}
 ```
 
 ////
@@ -274,7 +274,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="9"
-{!> ../../../docs_src/dependencies/tutorial001.py!}
+{!> ../../docs_src/dependencies/tutorial001.py!}
 ```
 
 ////
@@ -283,9 +283,9 @@ Diese Parameter werden von **ReadyAPI** verwendet, um die Abhängigkeit „aufzu
 
 In beiden Fällen wird sie haben:
 
-* Einen optionalen `q`-Query-Parameter, der ein `str` ist.
-* Einen `skip`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `0`.
-* Einen `limit`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `100`.
+- Einen optionalen `q`-Query-Parameter, der ein `str` ist.
+- Einen `skip`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `0`.
+- Einen `limit`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `100`.
 
 In beiden Fällen werden die Daten konvertiert, validiert, im OpenAPI-Schema dokumentiert, usw.
 
@@ -296,7 +296,7 @@ Jetzt können Sie Ihre Abhängigkeit mithilfe dieser Klasse deklarieren.
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -304,7 +304,7 @@ Jetzt können Sie Ihre Abhängigkeit mithilfe dieser Klasse deklarieren.
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial002_an_py39.py!}
 ```
 
 ////
@@ -312,7 +312,7 @@ Jetzt können Sie Ihre Abhängigkeit mithilfe dieser Klasse deklarieren.
 //// tab | Python 3.8+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial002_an.py!}
+{!> ../../docs_src/dependencies/tutorial002_an.py!}
 ```
 
 ////
@@ -326,7 +326,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial002_py310.py!}
+{!> ../../docs_src/dependencies/tutorial002_py310.py!}
 ```
 
 ////
@@ -340,7 +340,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial002.py!}
+{!> ../../docs_src/dependencies/tutorial002.py!}
 ```
 
 ////
@@ -440,7 +440,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_an_py310.py!}
 ```
 
 ////
@@ -448,7 +448,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial003_an_py39.py!}
 ```
 
 ////
@@ -456,7 +456,7 @@ commons = Depends(CommonQueryParams)
 //// tab | Python 3.8+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial003_an.py!}
+{!> ../../docs_src/dependencies/tutorial003_an.py!}
 ```
 
 ////
@@ -470,7 +470,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial003_py310.py!}
+{!> ../../docs_src/dependencies/tutorial003_py310.py!}
 ```
 
 ////
@@ -484,7 +484,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial003.py!}
+{!> ../../docs_src/dependencies/tutorial003.py!}
 ```
 
 ////
@@ -519,7 +519,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-**ReadyAPI** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit *speziell* eine Klasse ist, welche **ReadyAPI** aufruft, um eine Instanz der Klasse selbst zu erstellen.
+**ReadyAPI** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit _speziell_ eine Klasse ist, welche **ReadyAPI** aufruft, um eine Instanz der Klasse selbst zu erstellen.
 
 In diesem speziellen Fall können Sie Folgendes tun:
 
@@ -571,14 +571,14 @@ commons: CommonQueryParams = Depends()
 
 ////
 
-Sie deklarieren die Abhängigkeit als Typ des Parameters und verwenden `Depends()` ohne Parameter, anstatt die vollständige Klasse *erneut* in `Depends(CommonQueryParams)` schreiben zu müssen.
+Sie deklarieren die Abhängigkeit als Typ des Parameters und verwenden `Depends()` ohne Parameter, anstatt die vollständige Klasse _erneut_ in `Depends(CommonQueryParams)` schreiben zu müssen.
 
 Dasselbe Beispiel würde dann so aussehen:
 
 //// tab | Python 3.10+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_an_py310.py!}
 ```
 
 ////
@@ -586,7 +586,7 @@ Dasselbe Beispiel würde dann so aussehen:
 //// tab | Python 3.9+
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial004_an_py39.py!}
 ```
 
 ////
@@ -594,7 +594,7 @@ Dasselbe Beispiel würde dann so aussehen:
 //// tab | Python 3.8+
 
 ```Python hl_lines="20"
-{!> ../../../docs_src/dependencies/tutorial004_an.py!}
+{!> ../../docs_src/dependencies/tutorial004_an.py!}
 ```
 
 ////
@@ -608,7 +608,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial004_py310.py!}
+{!> ../../docs_src/dependencies/tutorial004_py310.py!}
 ```
 
 ////
@@ -622,7 +622,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial004.py!}
+{!> ../../docs_src/dependencies/tutorial004.py!}
 ```
 
 ////
@@ -631,7 +631,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 /// tip | "Tipp"
 
-Wenn Sie das eher verwirrt, als Ihnen zu helfen, ignorieren Sie es, Sie *brauchen* es nicht.
+Wenn Sie das eher verwirrt, als Ihnen zu helfen, ignorieren Sie es, Sie _brauchen_ es nicht.
 
 Es ist nur eine Abkürzung. Es geht **ReadyAPI** darum, Ihnen dabei zu helfen, Codeverdoppelung zu minimieren.
 

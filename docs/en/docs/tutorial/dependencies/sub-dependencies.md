@@ -13,7 +13,7 @@ You could create a first dependency ("dependable") like:
 //// tab | Python 3.10+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -21,7 +21,7 @@ You could create a first dependency ("dependable") like:
 //// tab | Python 3.9+
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -29,7 +29,7 @@ You could create a first dependency ("dependable") like:
 //// tab | Python 3.8+
 
 ```Python hl_lines="9-10"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -43,7 +43,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="6-7"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -57,7 +57,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="8-9"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
@@ -73,7 +73,7 @@ Then you can create another dependency function (a "dependable") that at the sam
 //// tab | Python 3.10+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -81,7 +81,7 @@ Then you can create another dependency function (a "dependable") that at the sam
 //// tab | Python 3.9+
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -89,7 +89,7 @@ Then you can create another dependency function (a "dependable") that at the sam
 //// tab | Python 3.8+
 
 ```Python hl_lines="14"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -103,7 +103,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="11"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -117,17 +117,17 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="13"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 Let's focus on the parameters declared:
 
-* Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).
-    * It depends on the `query_extractor`, and assigns the value returned by it to the parameter `q`.
-* It also declares an optional `last_query` cookie, as a `str`.
-    * If the user didn't provide any query `q`, we use the last query used, which we saved to a cookie before.
+- Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).
+  - It depends on the `query_extractor`, and assigns the value returned by it to the parameter `q`.
+- It also declares an optional `last_query` cookie, as a `str`.
+  - If the user didn't provide any query `q`, we use the last query used, which we saved to a cookie before.
 
 ## Use the dependency
 
@@ -136,7 +136,7 @@ Then we can use the dependency with:
 //// tab | Python 3.10+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py310.py!}
 ```
 
 ////
@@ -144,7 +144,7 @@ Then we can use the dependency with:
 //// tab | Python 3.9+
 
 ```Python hl_lines="23"
-{!> ../../../docs_src/dependencies/tutorial005_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial005_an_py39.py!}
 ```
 
 ////
@@ -152,7 +152,7 @@ Then we can use the dependency with:
 //// tab | Python 3.8+
 
 ```Python hl_lines="24"
-{!> ../../../docs_src/dependencies/tutorial005_an.py!}
+{!> ../../docs_src/dependencies/tutorial005_an.py!}
 ```
 
 ////
@@ -166,7 +166,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="19"
-{!> ../../../docs_src/dependencies/tutorial005_py310.py!}
+{!> ../../docs_src/dependencies/tutorial005_py310.py!}
 ```
 
 ////
@@ -180,14 +180,14 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="22"
-{!> ../../../docs_src/dependencies/tutorial005.py!}
+{!> ../../docs_src/dependencies/tutorial005.py!}
 ```
 
 ////
 
 /// info
 
-Notice that we are only declaring one dependency in the *path operation function*, the `query_or_cookie_extractor`.
+Notice that we are only declaring one dependency in the _path operation function_, the `query_or_cookie_extractor`.
 
 But **ReadyAPI** will know that it has to solve `query_extractor` first, to pass the results of that to `query_or_cookie_extractor` while calling it.
 
@@ -206,7 +206,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Using the same dependency multiple times
 
-If one of your dependencies is declared multiple times for the same *path operation*, for example, multiple dependencies have a common sub-dependency, **ReadyAPI** will know to call that sub-dependency only once per request.
+If one of your dependencies is declared multiple times for the same _path operation_, for example, multiple dependencies have a common sub-dependency, **ReadyAPI** will know to call that sub-dependency only once per request.
 
 And it will save the returned value in a <abbr title="A utility/system to store computed/generated values, to reuse them instead of computing them again.">"cache"</abbr> and pass it to all the "dependants" that need it in that specific request, instead of calling the dependency multiple times for the same request.
 
@@ -240,7 +240,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 Apart from all the fancy words used here, the **Dependency Injection** system is quite simple.
 
-Just functions that look the same as the *path operation functions*.
+Just functions that look the same as the _path operation functions_.
 
 But still, it is very powerful, and allows you to declare arbitrarily deeply nested dependency "graphs" (trees).
 

@@ -20,7 +20,7 @@ O `TestClient` é baseado no <a href="https://www.python-httpx.org" class="exter
 
 ## Exemplo
 
-Para um exemplos simples, vamos considerar uma estrutura de arquivos semelhante ao descrito em [Bigger Applications](../tutorial/bigger-applications.md){.internal-link target=_blank} e [Testing](../tutorial/testing.md){.internal-link target=_blank}:
+Para um exemplos simples, vamos considerar uma estrutura de arquivos semelhante ao descrito em [Bigger Applications](../tutorial/bigger-applications.md){.internal-link target=\_blank} e [Testing](../tutorial/testing.md){.internal-link target=\_blank}:
 
 ```
 .
@@ -33,13 +33,13 @@ Para um exemplos simples, vamos considerar uma estrutura de arquivos semelhante 
 O arquivo `main.py` teria:
 
 ```Python
-{!../../../docs_src/async_tests/main.py!}
+{!../../docs_src/async_tests/main.py!}
 ```
 
 O arquivo `test_main.py` teria os testes para para o arquivo `main.py`, ele poderia ficar assim:
 
 ```Python
-{!../../../docs_src/async_tests/test_main.py!}
+{!../../docs_src/async_tests/test_main.py!}
 ```
 
 ## Executá-lo
@@ -61,7 +61,7 @@ $ pytest
 O marcador `@pytest.mark.anyio` informa ao pytest que esta função de teste deve ser invocada de maneira assíncrona:
 
 ```Python hl_lines="7"
-{!../../../docs_src/async_tests/test_main.py!}
+{!../../docs_src/async_tests/test_main.py!}
 ```
 
 /// tip | "Dica"
@@ -73,7 +73,7 @@ Note que a função de teste é `async def` agora, no lugar de apenas `def` como
 Então podemos criar um `AsyncClient` com a aplicação, e enviar requisições assíncronas para ela utilizando `await`.
 
 ```Python hl_lines="9-12"
-{!../../../docs_src/async_tests/test_main.py!}
+{!../../docs_src/async_tests/test_main.py!}
 ```
 
 Isso é equivalente a:
@@ -92,7 +92,7 @@ Note que nós estamos utilizando async/await com o novo `AsyncClient` - a requis
 
 /// warning | "Aviso"
 
-Se a sua aplicação depende dos eventos de vida útil (*lifespan*), o `AsyncClient` não acionará estes eventos. Para garantir que eles são acionados, utilize o `LifespanManager` do <a href="https://github.com/florimondmanca/asgi-lifespan#usage" class="external-link" target="_blank">florimondmanca/asgi-lifespan</a>.
+Se a sua aplicação depende dos eventos de vida útil (_lifespan_), o `AsyncClient` não acionará estes eventos. Para garantir que eles são acionados, utilize o `LifespanManager` do <a href="https://github.com/florimondmanca/asgi-lifespan#usage" class="external-link" target="_blank">florimondmanca/asgi-lifespan</a>.
 
 ///
 
@@ -102,6 +102,6 @@ Como a função de teste agora é assíncrona, você pode chamar (e `esperar`) o
 
 /// tip | "Dica"
 
-Se você se deparar com um `RuntimeError: Task attached to a different loop` ao integrar funções assíncronas em seus testes (e.g. ao utilizar o <a href="https://stackoverflow.com/questions/41584243/runtimeerror-task-attached-to-a-different-loop" class="external-link" target="_blank">MotorClient do MongoDB</a>) Lembre-se de instanciar objetos que precisam de um loop de eventos (*event loop*) apenas em funções assíncronas, e.g. um *"callback"* `'@app.on_event("startup")`.
+Se você se deparar com um `RuntimeError: Task attached to a different loop` ao integrar funções assíncronas em seus testes (e.g. ao utilizar o <a href="https://stackoverflow.com/questions/41584243/runtimeerror-task-attached-to-a-different-loop" class="external-link" target="_blank">MotorClient do MongoDB</a>) Lembre-se de instanciar objetos que precisam de um loop de eventos (_event loop_) apenas em funções assíncronas, e.g. um _"callback"_ `'@app.on_event("startup")`.
 
 ///

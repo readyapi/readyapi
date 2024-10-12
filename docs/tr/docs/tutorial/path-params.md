@@ -3,7 +3,7 @@
 Yol "parametrelerini" veya "değişkenlerini" Python <abbr title="String Biçimleme: Format String">string biçimlemede</abbr> kullanılan sözdizimi ile tanımlayabilirsiniz.
 
 ```Python hl_lines="6-7"
-{!../../../docs_src/path_params/tutorial001.py!}
+{!../../docs_src/path_params/tutorial001.py!}
 ```
 
 Yol parametresi olan `item_id`'nin değeri, fonksiyonunuza `item_id` argümanı olarak aktarılacaktır.
@@ -19,7 +19,7 @@ Eğer bu örneği çalıştırıp <a href="http://127.0.0.1:8000/items/foo" clas
 Standart Python tip belirteçlerini kullanarak yol parametresinin tipini fonksiyonun içerisinde tanımlayabilirsiniz.
 
 ```Python hl_lines="7"
-{!../../../docs_src/path_params/tutorial002.py!}
+{!../../docs_src/path_params/tutorial002.py!}
 ```
 
 Bu durumda, `item_id` bir `int` olarak tanımlanacaktır.
@@ -115,16 +115,16 @@ Bunlardan birkaçı, bu eğitimin ileriki bölümlerinde irdelenmiştir.
 
 ## Sıralama Önem Arz Eder
 
-*Yol operasyonları* tasarlarken sabit yol barındıran durumlar ile karşılaşabilirsiniz.
+_Yol operasyonları_ tasarlarken sabit yol barındıran durumlar ile karşılaşabilirsiniz.
 
 Farz edelim ki `/users/me` yolu geçerli kullanıcı hakkında bilgi almak için kullanılıyor olsun.
 
 Benzer şekilde `/users/{user_id}` gibi tanımlanmış ve belirli bir kullanıcı hakkında veri almak için kullanıcının ID bilgisini kullanan bir yolunuz da mevcut olabilir.
 
-*Yol operasyonları* sıralı bir şekilde gözden geçirildiğinden dolayı `/users/me` yolunun `/users/{user_id}` yolundan önce tanımlanmış olmasından emin olmanız gerekmektedir:
+_Yol operasyonları_ sıralı bir şekilde gözden geçirildiğinden dolayı `/users/me` yolunun `/users/{user_id}` yolundan önce tanımlanmış olmasından emin olmanız gerekmektedir:
 
 ```Python hl_lines="6  11"
-{!../../../docs_src/path_params/tutorial003.py!}
+{!../../docs_src/path_params/tutorial003.py!}
 ```
 
 Aksi halde, `/users/{user_id}` yolu `"me"` değerinin `user_id` parametresi için gönderildiğini "düşünerek" `/users/me` ile de eşleşir.
@@ -132,14 +132,14 @@ Aksi halde, `/users/{user_id}` yolu `"me"` değerinin `user_id` parametresi içi
 Benzer şekilde, bir yol operasyonunu yeniden tanımlamanız mümkün değildir:
 
 ```Python hl_lines="6  11"
-{!../../../docs_src/path_params/tutorial003b.py!}
+{!../../docs_src/path_params/tutorial003b.py!}
 ```
 
 Yol, ilk kısım ile eşleştiğinden dolayı her koşulda ilk yol operasyonu kullanılacaktır.
 
 ## Ön Tanımlı Değerler
 
-Eğer *yol parametresi* alan bir *yol operasyonunuz* varsa ve alabileceği *yol parametresi* değerlerinin ön tanımlı olmasını istiyorsanız, standart Python <abbr title="Enumeration">`Enum`</abbr> tipini kullanabilirsiniz.
+Eğer _yol parametresi_ alan bir _yol operasyonunuz_ varsa ve alabileceği _yol parametresi_ değerlerinin ön tanımlı olmasını istiyorsanız, standart Python <abbr title="Enumeration">`Enum`</abbr> tipini kullanabilirsiniz.
 
 ### Bir `Enum` Sınıfı Oluşturalım
 
@@ -150,7 +150,7 @@ Eğer *yol parametresi* alan bir *yol operasyonunuz* varsa ve alabileceği *yol 
 Sonrasında, sınıf içerisinde, mevcut ve geçerli değerler olacak olan sabit değerli özelliklerini oluşturalım:
 
 ```Python hl_lines="1  6-9"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// info | "Bilgi"
@@ -165,38 +165,38 @@ Merak ediyorsanız söyleyeyim, "AlexNet", "ResNet" ve "LeNet" isimleri Makine �
 
 ///
 
-### Bir *Yol Parametresi* Tanımlayalım
+### Bir _Yol Parametresi_ Tanımlayalım
 
-Sonrasında, yarattığımız enum sınıfını (`ModelName`) kullanarak tip belirteci aracılığıyla bir *yol parametresi* oluşturalım:
+Sonrasında, yarattığımız enum sınıfını (`ModelName`) kullanarak tip belirteci aracılığıyla bir _yol parametresi_ oluşturalım:
 
 ```Python hl_lines="16"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 ### Dokümana Göz Atalım
 
-*Yol parametresi* için mevcut değerler ön tanımlı olduğundan dolayı, interaktif döküman onları güzel bir şekilde gösterebilir:
+_Yol parametresi_ için mevcut değerler ön tanımlı olduğundan dolayı, interaktif döküman onları güzel bir şekilde gösterebilir:
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Python *Enumerationları* ile Çalışmak
+### Python _Enumerationları_ ile Çalışmak
 
-*Yol parametresinin* değeri bir *enumeration üyesi* olacaktır.
+_Yol parametresinin_ değeri bir _enumeration üyesi_ olacaktır.
 
-#### *Enumeration Üyelerini* Karşılaştıralım
+#### _Enumeration Üyelerini_ Karşılaştıralım
 
-Parametreyi, yarattığınız enum olan `ModelName` içerisindeki *enumeration üyesi* ile karşılaştırabilirsiniz:
+Parametreyi, yarattığınız enum olan `ModelName` içerisindeki _enumeration üyesi_ ile karşılaştırabilirsiniz:
 
 ```Python hl_lines="17"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### *Enumeration Değerini* Edinelim
+#### _Enumeration Değerini_ Edinelim
 
 `model_name.value` veya genel olarak `your_enum_member.value` tanımlarını kullanarak (bu durumda bir `str` olan) gerçek değere ulaşabilirsiniz:
 
 ```Python hl_lines="20"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 /// tip | "İpucu"
@@ -205,14 +205,14 @@ Parametreyi, yarattığınız enum olan `ModelName` içerisindeki *enumeration �
 
 ///
 
-#### *Enumeration Üyelerini* Döndürelim
+#### _Enumeration Üyelerini_ Döndürelim
 
-JSON gövdesine (örneğin bir `dict`) gömülü olsalar bile *yol operasyonundaki* *enum üyelerini* döndürebilirsiniz.
+JSON gövdesine (örneğin bir `dict`) gömülü olsalar bile _yol operasyonundaki_ _enum üyelerini_ döndürebilirsiniz.
 
 Bu üyeler istemciye iletilmeden önce kendilerine karşılık gelen değerlerine (bu durumda string) dönüştürüleceklerdir:
 
 ```Python hl_lines="18  21  23"
-{!../../../docs_src/path_params/tutorial005.py!}
+{!../../docs_src/path_params/tutorial005.py!}
 ```
 
 İstemci tarafında şuna benzer bir JSON yanıtı ile karşılaşırsınız:
@@ -226,15 +226,15 @@ Bu üyeler istemciye iletilmeden önce kendilerine karşılık gelen değerlerin
 
 ## Yol İçeren Yol Parametreleri
 
-Farz edelim ki elinizde `/files/{file_path}` isminde bir *yol operasyonu* var.
+Farz edelim ki elinizde `/files/{file_path}` isminde bir _yol operasyonu_ var.
 
-Fakat `file_path` değerinin `home/johndoe/myfile.txt` gibi bir *yol* barındırmasını istiyorsunuz.
+Fakat `file_path` değerinin `home/johndoe/myfile.txt` gibi bir _yol_ barındırmasını istiyorsunuz.
 
 Sonuç olarak, oluşturmak istediğin URL `/files/home/johndoe/myfile.txt` gibi bir şey olacaktır.
 
 ### OpenAPI Desteği
 
-Test etmesi ve tanımlaması zor senaryolara sebebiyet vereceğinden dolayı OpenAPI, *yol* barındıran *yol parametrelerini* tanımlayacak bir çözüm sunmuyor.
+Test etmesi ve tanımlaması zor senaryolara sebebiyet vereceğinden dolayı OpenAPI, _yol_ barındıran _yol parametrelerini_ tanımlayacak bir çözüm sunmuyor.
 
 Ancak bunu, Starlette kütüphanesinin dahili araçlarından birini kullanarak **ReadyAPI**'da gerçekleştirebilirsiniz.
 
@@ -242,18 +242,18 @@ Parametrenin bir yol içermesi gerektiğini belirten herhangi bir doküman eklem
 
 ### Yol Dönüştürücü
 
-Direkt olarak Starlette kütüphanesinden gelen bir opsiyon sayesinde aşağıdaki gibi *yol* içeren bir *yol parametresi* bağlantısı tanımlayabilirsiniz:
+Direkt olarak Starlette kütüphanesinden gelen bir opsiyon sayesinde aşağıdaki gibi _yol_ içeren bir _yol parametresi_ bağlantısı tanımlayabilirsiniz:
 
 ```
 /files/{file_path:path}
 ```
 
-Bu durumda, parametrenin adı `file_path` olacaktır ve son kısım olan `:path` kısmı, parametrenin herhangi bir *yol* ile eşleşmesi gerektiğini belirtecektir.
+Bu durumda, parametrenin adı `file_path` olacaktır ve son kısım olan `:path` kısmı, parametrenin herhangi bir _yol_ ile eşleşmesi gerektiğini belirtecektir.
 
 Böylece şunun gibi bir kullanım yapabilirsiniz:
 
 ```Python hl_lines="6"
-{!../../../docs_src/path_params/tutorial004.py!}
+{!../../docs_src/path_params/tutorial004.py!}
 ```
 
 /// tip | "İpucu"
@@ -268,10 +268,10 @@ Bu durumda, URL, `files` ile `home` arasında iki eğik çizgiye (`//`) sahip ol
 
 **ReadyAPI** ile kısa, sezgisel ve standart Python tip tanımlamaları kullanarak şunları elde edersiniz:
 
-* Editör desteği: hata denetimi, otomatik tamamlama, vb.
-* Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">dönüştürme</abbr>"
-* Veri doğrulama
-* API tanımlamaları ve otomatik dokümantasyon
+- Editör desteği: hata denetimi, otomatik tamamlama, vb.
+- Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">dönüştürme</abbr>"
+- Veri doğrulama
+- API tanımlamaları ve otomatik dokümantasyon
 
 Ve sadece, bunları bir kez tanımlamanız yeterli.
 

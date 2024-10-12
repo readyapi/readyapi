@@ -4,15 +4,15 @@ Fahren wir beim letzten Beispiel fort. Es gibt normalerweise mehrere zusammengeh
 
 Insbesondere Benutzermodelle, denn:
 
-* Das **hereinkommende Modell** sollte ein Passwort haben können.
-* Das **herausgehende Modell** sollte kein Passwort haben.
-* Das **Datenbankmodell** sollte wahrscheinlich ein <abbr title='Ein aus scheinbar zufälligen Zeichen bestehender „Fingerabdruck“ eines Textes. Der Inhalt des Textes kann nicht eingesehen werden.'>gehashtes</abbr> Passwort haben.
+- Das **hereinkommende Modell** sollte ein Passwort haben können.
+- Das **herausgehende Modell** sollte kein Passwort haben.
+- Das **Datenbankmodell** sollte wahrscheinlich ein <abbr title='Ein aus scheinbar zufälligen Zeichen bestehender „Fingerabdruck“ eines Textes. Der Inhalt des Textes kann nicht eingesehen werden.'>gehashtes</abbr> Passwort haben.
 
 /// danger | "Gefahr"
 
 Speichern Sie niemals das Klartext-Passwort eines Benutzers. Speichern Sie immer den „sicheren Hash“, den Sie verifizieren können.
 
-Falls Ihnen das nichts sagt, in den [Sicherheits-Kapiteln](security/simple-oauth2.md#passwort-hashing){.internal-link target=_blank} werden Sie lernen, was ein „Passwort-Hash“ ist.
+Falls Ihnen das nichts sagt, in den [Sicherheits-Kapiteln](security/simple-oauth2.md#passwort-hashing){.internal-link target=\_blank} werden Sie lernen, was ein „Passwort-Hash“ ist.
 
 ///
 
@@ -23,7 +23,7 @@ Hier der generelle Weg, wie die Modelle mit ihren Passwort-Feldern aussehen kön
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  9  14  20  22  27-28  31-33  38-39"
-{!> ../../../docs_src/extra_models/tutorial001_py310.py!}
+{!> ../../docs_src/extra_models/tutorial001_py310.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@ Hier der generelle Weg, wie die Modelle mit ihren Passwort-Feldern aussehen kön
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  11  16  22  24  29-30  33-35  40-41"
-{!> ../../../docs_src/extra_models/tutorial001.py!}
+{!> ../../docs_src/extra_models/tutorial001.py!}
 ```
 
 ////
@@ -179,7 +179,7 @@ Auf diese Weise beschreiben wir nur noch die Unterschiede zwischen den Modellen 
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  13-14  17-18  21-22"
-{!> ../../../docs_src/extra_models/tutorial002_py310.py!}
+{!> ../../docs_src/extra_models/tutorial002_py310.py!}
 ```
 
 ////
@@ -187,7 +187,7 @@ Auf diese Weise beschreiben wir nur noch die Unterschiede zwischen den Modellen 
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  15-16  19-20  23-24"
-{!> ../../../docs_src/extra_models/tutorial002.py!}
+{!> ../../docs_src/extra_models/tutorial002.py!}
 ```
 
 ////
@@ -209,7 +209,7 @@ Listen Sie, wenn Sie eine <a href="https://pydantic-docs.helpmanual.io/usage/typ
 //// tab | Python 3.10+
 
 ```Python hl_lines="1  14-15  18-20  33"
-{!> ../../../docs_src/extra_models/tutorial003_py310.py!}
+{!> ../../docs_src/extra_models/tutorial003_py310.py!}
 ```
 
 ////
@@ -217,7 +217,7 @@ Listen Sie, wenn Sie eine <a href="https://pydantic-docs.helpmanual.io/usage/typ
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  14-15  18-20  33"
-{!> ../../../docs_src/extra_models/tutorial003.py!}
+{!> ../../docs_src/extra_models/tutorial003.py!}
 ```
 
 ////
@@ -245,7 +245,7 @@ Verwenden Sie dafür Pythons Standard `typing.List` (oder nur `list` in Python 3
 //// tab | Python 3.9+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/extra_models/tutorial004_py39.py!}
+{!> ../../docs_src/extra_models/tutorial004_py39.py!}
 ```
 
 ////
@@ -253,7 +253,7 @@ Verwenden Sie dafür Pythons Standard `typing.List` (oder nur `list` in Python 3
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  20"
-{!> ../../../docs_src/extra_models/tutorial004.py!}
+{!> ../../docs_src/extra_models/tutorial004.py!}
 ```
 
 ////
@@ -269,7 +269,7 @@ In diesem Fall können Sie `typing.Dict` verwenden (oder nur `dict` in Python 3.
 //// tab | Python 3.9+
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/extra_models/tutorial005_py39.py!}
+{!> ../../docs_src/extra_models/tutorial005_py39.py!}
 ```
 
 ////
@@ -277,7 +277,7 @@ In diesem Fall können Sie `typing.Dict` verwenden (oder nur `dict` in Python 3.
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  8"
-{!> ../../../docs_src/extra_models/tutorial005.py!}
+{!> ../../docs_src/extra_models/tutorial005.py!}
 ```
 
 ////

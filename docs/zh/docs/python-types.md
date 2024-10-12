@@ -23,7 +23,7 @@
 让我们从一个简单的例子开始：
 
 ```Python
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 运行这段程序将输出：
@@ -34,12 +34,12 @@ John Doe
 
 这个函数做了下面这些事情：
 
-* 接收 `first_name` 和 `last_name` 参数。
-* 通过 `title()` 将每个参数的第一个字母转换为大写形式。
-* 中间用一个空格来<abbr title="将它们按顺序放置组合成一个整体。">拼接</abbr>它们。
+- 接收 `first_name` 和 `last_name` 参数。
+- 通过 `title()` 将每个参数的第一个字母转换为大写形式。
+- 中间用一个空格来<abbr title="将它们按顺序放置组合成一个整体。">拼接</abbr>它们。
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial001.py!}
+{!../../docs_src/python_types/tutorial001.py!}
 ```
 
 ### 修改示例
@@ -83,7 +83,7 @@ John Doe
 这些就是"类型提示"：
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial002.py!}
+{!../../docs_src/python_types/tutorial002.py!}
 ```
 
 这和声明默认值是不同的，例如：
@@ -113,7 +113,7 @@ John Doe
 下面是一个已经有类型提示的函数：
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial003.py!}
+{!../../docs_src/python_types/tutorial003.py!}
 ```
 
 因为编辑器已经知道了这些变量的类型，所以不仅能对代码进行补全，还能检查其中的错误：
@@ -123,7 +123,7 @@ John Doe
 现在你知道了必须先修复这个问题，通过 `str(age)` 把 `age` 转换成字符串：
 
 ```Python hl_lines="2"
-{!../../../docs_src/python_types/tutorial004.py!}
+{!../../docs_src/python_types/tutorial004.py!}
 ```
 
 ## 声明类型
@@ -138,13 +138,13 @@ John Doe
 
 比如以下类型：
 
-* `int`
-* `float`
-* `bool`
-* `bytes`
+- `int`
+- `float`
+- `bool`
+- `bytes`
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial005.py!}
+{!../../docs_src/python_types/tutorial005.py!}
 ```
 
 ### 嵌套类型
@@ -162,7 +162,7 @@ John Doe
 从 `typing` 模块导入 `List`（注意是大写的 `L`）：
 
 ```Python hl_lines="1"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 同样以冒号（`:`）来声明这个变量。
@@ -172,7 +172,7 @@ John Doe
 由于列表是带有"子类型"的类型，所以我们把子类型放在方括号中：
 
 ```Python hl_lines="4"
-{!../../../docs_src/python_types/tutorial006.py!}
+{!../../docs_src/python_types/tutorial006.py!}
 ```
 
 这表示："变量 `items` 是一个 `list`，并且这个列表里的每一个元素都是 `str`"。
@@ -192,13 +192,13 @@ John Doe
 声明 `tuple` 和 `set` 的方法也是一样的：
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial007.py!}
+{!../../docs_src/python_types/tutorial007.py!}
 ```
 
 这表示：
 
-* 变量 `items_t` 是一个 `tuple`，其中的前两个元素都是 `int` 类型, 最后一个元素是 `str` 类型。
-* 变量 `items_s` 是一个 `set`，其中的每个元素都是 `bytes` 类型。
+- 变量 `items_t` 是一个 `tuple`，其中的前两个元素都是 `int` 类型, 最后一个元素是 `str` 类型。
+- 变量 `items_s` 是一个 `set`，其中的每个元素都是 `bytes` 类型。
 
 #### 字典
 
@@ -209,14 +209,14 @@ John Doe
 第二个子类型声明 `dict` 的所有值：
 
 ```Python hl_lines="1  4"
-{!../../../docs_src/python_types/tutorial008.py!}
+{!../../docs_src/python_types/tutorial008.py!}
 ```
 
 这表示：
 
-* 变量 `prices` 是一个 `dict`：
-    * 这个 `dict` 的所有键为 `str` 类型（可以看作是字典内每个元素的名称）。
-    * 这个 `dict` 的所有值为 `float` 类型（可以看作是字典内每个元素的价格）。
+- 变量 `prices` 是一个 `dict`：
+  - 这个 `dict` 的所有键为 `str` 类型（可以看作是字典内每个元素的名称）。
+  - 这个 `dict` 的所有值为 `float` 类型（可以看作是字典内每个元素的价格）。
 
 ### 类作为类型
 
@@ -225,13 +225,13 @@ John Doe
 假设你有一个名为 `Person` 的类，拥有 name 属性：
 
 ```Python hl_lines="1-3"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 接下来，你可以将一个变量声明为 `Person` 类型：
 
 ```Python hl_lines="6"
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 然后，你将再次获得所有的编辑器支持：
@@ -253,7 +253,7 @@ John Doe
 下面的例子来自 Pydantic 官方文档：
 
 ```Python
-{!../../../docs_src/python_types/tutorial010.py!}
+{!../../docs_src/python_types/tutorial010.py!}
 ```
 
 /// info
@@ -264,7 +264,7 @@ John Doe
 
 整个 **ReadyAPI** 建立在 Pydantic 的基础之上。
 
-实际上你将在 [教程 - 用户指南](tutorial/index.md){.internal-link target=_blank} 看到很多这种情况。
+实际上你将在 [教程 - 用户指南](tutorial/index.md){.internal-link target=\_blank} 看到很多这种情况。
 
 ## **ReadyAPI** 中的类型提示
 
@@ -272,19 +272,19 @@ John Doe
 
 使用 **ReadyAPI** 时用类型提示声明参数可以获得：
 
-* **编辑器支持**。
-* **类型检查**。
+- **编辑器支持**。
+- **类型检查**。
 
 ...并且 **ReadyAPI** 还会用这些类型声明来：
 
-* **定义参数要求**：声明对请求路径参数、查询参数、请求头、请求体、依赖等的要求。
-* **转换数据**：将来自请求的数据转换为需要的类型。
-* **校验数据**： 对于每一个请求：
-    * 当数据校验失败时自动生成**错误信息**返回给客户端。
-* 使用 OpenAPI **记录** API：
-    * 然后用于自动生成交互式文档的用户界面。
+- **定义参数要求**：声明对请求路径参数、查询参数、请求头、请求体、依赖等的要求。
+- **转换数据**：将来自请求的数据转换为需要的类型。
+- **校验数据**： 对于每一个请求：
+  - 当数据校验失败时自动生成**错误信息**返回给客户端。
+- 使用 OpenAPI **记录** API：
+  - 然后用于自动生成交互式文档的用户界面。
 
-听上去有点抽象。不过不用担心。你将在 [教程 - 用户指南](tutorial/index.md){.internal-link target=_blank} 中看到所有的实战。
+听上去有点抽象。不过不用担心。你将在 [教程 - 用户指南](tutorial/index.md){.internal-link target=\_blank} 中看到所有的实战。
 
 最重要的是，通过使用标准的 Python 类型，只需要在一个地方声明（而不是添加更多的类、装饰器等），**ReadyAPI** 会为你完成很多的工作。
 

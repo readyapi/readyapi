@@ -11,7 +11,7 @@
 以下のような最初の依存関係（「依存可能なもの」）を作成することができます:
 
 ```Python hl_lines="8 9"
-{!../../../docs_src/dependencies/tutorial005.py!}
+{!../../docs_src/dependencies/tutorial005.py!}
 ```
 
 これはオプショナルのクエリパラメータ`q`を`str`として宣言し、それを返すだけです。
@@ -23,27 +23,27 @@
 そして、別の依存関数（「依存可能なもの」）を作成して、同時にそれ自身の依存関係を宣言することができます（つまりそれ自身も「依存」です）:
 
 ```Python hl_lines="13"
-{!../../../docs_src/dependencies/tutorial005.py!}
+{!../../docs_src/dependencies/tutorial005.py!}
 ```
 
 宣言されたパラメータに注目してみましょう:
 
-* この関数は依存関係（「依存可能なもの」）そのものであるにもかかわらず、別の依存関係を宣言しています（何か他のものに「依存」しています）。
-    * これは`query_extractor`に依存しており、それが返す値をパラメータ`q`に代入します。
-* また、オプショナルの`last_query`クッキーを`str`として宣言します。
-    * ユーザーがクエリ`q`を提供しなかった場合、クッキーに保存していた最後に使用したクエリを使用します。
+- この関数は依存関係（「依存可能なもの」）そのものであるにもかかわらず、別の依存関係を宣言しています（何か他のものに「依存」しています）。
+  - これは`query_extractor`に依存しており、それが返す値をパラメータ`q`に代入します。
+- また、オプショナルの`last_query`クッキーを`str`として宣言します。
+  - ユーザーがクエリ`q`を提供しなかった場合、クッキーに保存していた最後に使用したクエリを使用します。
 
 ### 依存関係の使用
 
 以下のように依存関係を使用することができます:
 
 ```Python hl_lines="21"
-{!../../../docs_src/dependencies/tutorial005.py!}
+{!../../docs_src/dependencies/tutorial005.py!}
 ```
 
 /// info | "情報"
 
-*path operation関数*の中で宣言している依存関係は`query_or_cookie_extractor`の１つだけであることに注意してください。
+*path operation 関数*の中で宣言している依存関係は`query_or_cookie_extractor`の１つだけであることに注意してください。
 
 しかし、**ReadyAPI** は`query_extractor`を最初に解決し、その結果を`query_or_cookie_extractor`を呼び出す時に渡す必要があることを知っています。
 
@@ -77,7 +77,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 ここで使われている派手な言葉は別にして、**依存性注入** システムは非常にシンプルです。
 
-*path operation関数*と同じように見えるただの関数です。
+*path operation 関数*と同じように見えるただの関数です。
 
 しかし、それでも非常に強力で、任意の深くネストされた依存関係「グラフ」（ツリー）を宣言することができます。
 

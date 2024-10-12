@@ -2,14 +2,14 @@
 
 어떤 *경로 작동*이든 매개변수 `response_model`를 사용하여 응답을 위한 모델을 선언할 수 있습니다:
 
-* `@app.get()`
-* `@app.post()`
-* `@app.put()`
-* `@app.delete()`
-* 기타.
+- `@app.get()`
+- `@app.post()`
+- `@app.put()`
+- `@app.delete()`
+- 기타.
 
 ```Python hl_lines="17"
-{!../../../docs_src/response_model/tutorial001.py!}
+{!../../docs_src/response_model/tutorial001.py!}
 ```
 
 /// note | "참고"
@@ -22,14 +22,14 @@ Pydantic 모델 어트리뷰트를 선언한 것과 동일한 타입을 수신�
 
 ReadyAPI는 이 `response_model`를 사용하여:
 
-* 출력 데이터를 타입 선언으로 변환.
-* 데이터 검증.
-* OpenAPI *경로 작동*의 응답에 JSON 스키마 추가.
-* 자동 생성 문서 시스템에 사용.
+- 출력 데이터를 타입 선언으로 변환.
+- 데이터 검증.
+- OpenAPI *경로 작동*의 응답에 JSON 스키마 추가.
+- 자동 생성 문서 시스템에 사용.
 
 하지만 가장 중요한 것은:
 
-* 해당 모델의 출력 데이터 제한. 이것이 얼마나 중요한지 아래에서 볼 것입니다.
+- 해당 모델의 출력 데이터 제한. 이것이 얼마나 중요한지 아래에서 볼 것입니다.
 
 /// note | "기술 세부사항"
 
@@ -42,13 +42,13 @@ ReadyAPI는 이 `response_model`를 사용하여:
 여기서 우리는 평문 비밀번호를 포함하는 `UserIn` 모델을 선언합니다:
 
 ```Python hl_lines="9  11"
-{!../../../docs_src/response_model/tutorial002.py!}
+{!../../docs_src/response_model/tutorial002.py!}
 ```
 
 그리고 이 모델을 사용하여 입력을 선언하고 같은 모델로 출력을 선언합니다:
 
 ```Python hl_lines="17-18"
-{!../../../docs_src/response_model/tutorial002.py!}
+{!../../docs_src/response_model/tutorial002.py!}
 ```
 
 이제 브라우저가 비밀번호로 사용자를 만들 때마다 API는 응답으로 동일한 비밀번호를 반환합니다.
@@ -68,19 +68,19 @@ ReadyAPI는 이 `response_model`를 사용하여:
 대신 평문 비밀번호로 입력 모델을 만들고 해당 비밀번호 없이 출력 모델을 만들 수 있습니다:
 
 ```Python hl_lines="9  11  16"
-{!../../../docs_src/response_model/tutorial003.py!}
+{!../../docs_src/response_model/tutorial003.py!}
 ```
 
 여기서 *경로 작동 함수*가 비밀번호를 포함하는 동일한 입력 사용자를 반환할지라도:
 
 ```Python hl_lines="24"
-{!../../../docs_src/response_model/tutorial003.py!}
+{!../../docs_src/response_model/tutorial003.py!}
 ```
 
 ...`response_model`을 `UserOut` 모델로 선언했기 때문에 비밀번호를 포함하지 않습니다:
 
 ```Python hl_lines="22"
-{!../../../docs_src/response_model/tutorial003.py!}
+{!../../docs_src/response_model/tutorial003.py!}
 ```
 
 따라서 **ReadyAPI**는 출력 모델에서 선언하지 않은 모든 데이터를 (Pydantic을 사용하여) 필터링합니다.
@@ -100,12 +100,12 @@ ReadyAPI는 이 `response_model`를 사용하여:
 응답 모델은 아래와 같이 기본값을 가질 수 있습니다:
 
 ```Python hl_lines="11  13-14"
-{!../../../docs_src/response_model/tutorial004.py!}
+{!../../docs_src/response_model/tutorial004.py!}
 ```
 
-* `description: Optional[str] = None`은 기본값으로 `None`을 갖습니다.
-* `tax: float = 10.5`는 기본값으로 `10.5`를 갖습니다.
-* `tags: List[str] = []` 빈 리스트의 기본값으로: `[]`.
+- `description: Optional[str] = None`은 기본값으로 `None`을 갖습니다.
+- `tax: float = 10.5`는 기본값으로 `10.5`를 갖습니다.
+- `tags: List[str] = []` 빈 리스트의 기본값으로: `[]`.
 
 그러나 실제로 저장되지 않았을 경우 결과에서 값을 생략하고 싶을 수 있습니다.
 
@@ -113,10 +113,10 @@ ReadyAPI는 이 `response_model`를 사용하여:
 
 ### `response_model_exclude_unset` 매개변수 사용
 
-*경로 작동 데코레이터* 매개변수를 `response_model_exclude_unset=True`로 설정 할 수 있습니다:
+_경로 작동 데코레이터_ 매개변수를 `response_model_exclude_unset=True`로 설정 할 수 있습니다:
 
 ```Python hl_lines="24"
-{!../../../docs_src/response_model/tutorial004.py!}
+{!../../docs_src/response_model/tutorial004.py!}
 ```
 
 이러한 기본값은 응답에 포함되지 않고 실제로 설정된 값만 포함됩니다.
@@ -140,8 +140,8 @@ ReadyAPI는 이를 위해 Pydantic 모델의 `.dict()`의 <a href="https://docs.
 
 아래 또한 사용할 수 있습니다:
 
-* `response_model_exclude_defaults=True`
-* `response_model_exclude_none=True`
+- `response_model_exclude_defaults=True`
+- `response_model_exclude_none=True`
 
 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">Pydantic 문서</a>에서 `exclude_defaults` 및 `exclude_none`에 대해 설명한 대로 사용할 수 있습니다.
 
@@ -191,7 +191,7 @@ ID가 `baz`인 항목(items)처럼 기본값과 동일한 값을 갖는다면:
 
 ### `response_model_include` 및 `response_model_exclude`
 
-*경로 작동 데코레이터* 매개변수 `response_model_include` 및 `response_model_exclude`를 사용할 수 있습니다.
+_경로 작동 데코레이터_ 매개변수 `response_model_include` 및 `response_model_exclude`를 사용할 수 있습니다.
 
 이들은 포함(나머지 생략)하거나 제외(나머지 포함) 할 어트리뷰트의 이름과 `str`의 `set`을 받습니다.
 
@@ -208,7 +208,7 @@ Pydantic 모델이 하나만 있고 출력에서 ​​일부 데이터를 제�
 ///
 
 ```Python hl_lines="31  37"
-{!../../../docs_src/response_model/tutorial005.py!}
+{!../../docs_src/response_model/tutorial005.py!}
 ```
 
 /// tip | "팁"
@@ -224,7 +224,7 @@ Pydantic 모델이 하나만 있고 출력에서 ​​일부 데이터를 제�
 `list` 또는 `tuple` 대신 `set`을 사용하는 법을 잊었더라도, ReadyAPI는 `set`으로 변환하고 정상적으로 작동합니다:
 
 ```Python hl_lines="31  37"
-{!../../../docs_src/response_model/tutorial006.py!}
+{!../../docs_src/response_model/tutorial006.py!}
 ```
 
 ## 요약

@@ -23,7 +23,7 @@ Copy the example in a file `main.py`:
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../../docs_src/security/tutorial001_an_py39.py!}
+{!> ../../docs_src/security/tutorial001_an_py39.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@ Copy the example in a file `main.py`:
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../../docs_src/security/tutorial001_an.py!}
+{!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
 ////
@@ -45,7 +45,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python
-{!> ../../../docs_src/security/tutorial001.py!}
+{!> ../../docs_src/security/tutorial001.py!}
 ```
 
 ////
@@ -58,7 +58,7 @@ The <a href="https://github.com/Kludex/python-multipart" class="external-link" t
 
 However, if you use the `pip install readyapi` command, the `python-multipart` package is not included by default.
 
-To install it manually, make sure you create a [virtual environment](../../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it with:
+To install it manually, make sure you create a [virtual environment](../../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it with:
 
 ```console
 $ pip install python-multipart
@@ -92,7 +92,7 @@ You will see something like this:
 
 You already have a shiny new "Authorize" button.
 
-And your *path operation* has a little lock in the top-right corner that you can click.
+And your _path operation_ has a little lock in the top-right corner that you can click.
 
 ///
 
@@ -126,19 +126,19 @@ But in this case, the same **ReadyAPI** application will handle the API and the 
 
 So, let's review it from that simplified point of view:
 
-* The user types the `username` and `password` in the frontend, and hits `Enter`.
-* The frontend (running in the user's browser) sends that `username` and `password` to a specific URL in our API (declared with `tokenUrl="token"`).
-* The API checks that `username` and `password`, and responds with a "token" (we haven't implemented any of this yet).
-    * A "token" is just a string with some content that we can use later to verify this user.
-    * Normally, a token is set to expire after some time.
-        * So, the user will have to log in again at some point later.
-        * And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
-* The frontend stores that token temporarily somewhere.
-* The user clicks in the frontend to go to another section of the frontend web app.
-* The frontend needs to fetch some more data from the API.
-    * But it needs authentication for that specific endpoint.
-    * So, to authenticate with our API, it sends a header `Authorization` with a value of `Bearer ` plus the token.
-    * If the token contains `foobar`, the content of the `Authorization` header would be: `Bearer foobar`.
+- The user types the `username` and `password` in the frontend, and hits `Enter`.
+- The frontend (running in the user's browser) sends that `username` and `password` to a specific URL in our API (declared with `tokenUrl="token"`).
+- The API checks that `username` and `password`, and responds with a "token" (we haven't implemented any of this yet).
+  - A "token" is just a string with some content that we can use later to verify this user.
+  - Normally, a token is set to expire after some time.
+    - So, the user will have to log in again at some point later.
+    - And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
+- The frontend stores that token temporarily somewhere.
+- The user clicks in the frontend to go to another section of the frontend web app.
+- The frontend needs to fetch some more data from the API.
+  - But it needs authentication for that specific endpoint.
+  - So, to authenticate with our API, it sends a header `Authorization` with a value of `Bearer ` plus the token.
+  - If the token contains `foobar`, the content of the `Authorization` header would be: `Bearer foobar`.
 
 ## **ReadyAPI**'s `OAuth2PasswordBearer`
 
@@ -163,15 +163,15 @@ When we create an instance of the `OAuth2PasswordBearer` class we pass in the `t
 //// tab | Python 3.9+
 
 ```Python hl_lines="8"
-{!> ../../../docs_src/security/tutorial001_an_py39.py!}
+{!> ../../docs_src/security/tutorial001_an_py39.py!}
 ```
 
 ////
 
 //// tab | Python 3.8+
 
-```Python  hl_lines="7"
-{!> ../../../docs_src/security/tutorial001_an.py!}
+```Python hl_lines="7"
+{!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
 ////
@@ -185,7 +185,7 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/security/tutorial001.py!}
+{!> ../../docs_src/security/tutorial001.py!}
 ```
 
 ////
@@ -196,11 +196,11 @@ Here `tokenUrl="token"` refers to a relative URL `token` that we haven't created
 
 Because we are using a relative URL, if your API was located at `https://example.com/`, then it would refer to `https://example.com/token`. But if your API was located at `https://example.com/api/v1/`, then it would refer to `https://example.com/api/v1/token`.
 
-Using a relative URL is important to make sure your application keeps working even in an advanced use case like [Behind a Proxy](../../advanced/behind-a-proxy.md){.internal-link target=_blank}.
+Using a relative URL is important to make sure your application keeps working even in an advanced use case like [Behind a Proxy](../../advanced/behind-a-proxy.md){.internal-link target=\_blank}.
 
 ///
 
-This parameter doesn't create that endpoint / *path operation*, but declares that the URL `/token` will be the one that the client should use to get the token. That information is used in OpenAPI, and then in the interactive API documentation systems.
+This parameter doesn't create that endpoint / _path operation_, but declares that the URL `/token` will be the one that the client should use to get the token. That information is used in OpenAPI, and then in the interactive API documentation systems.
 
 We will soon also create the actual path operation.
 
@@ -229,15 +229,15 @@ Now you can pass that `oauth2_scheme` in a dependency with `Depends`.
 //// tab | Python 3.9+
 
 ```Python hl_lines="12"
-{!> ../../../docs_src/security/tutorial001_an_py39.py!}
+{!> ../../docs_src/security/tutorial001_an_py39.py!}
 ```
 
 ////
 
 //// tab | Python 3.8+
 
-```Python  hl_lines="11"
-{!> ../../../docs_src/security/tutorial001_an.py!}
+```Python hl_lines="11"
+{!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
 ////
@@ -251,12 +251,12 @@ Prefer to use the `Annotated` version if possible.
 ///
 
 ```Python hl_lines="10"
-{!> ../../../docs_src/security/tutorial001.py!}
+{!> ../../docs_src/security/tutorial001.py!}
 ```
 
 ////
 
-This dependency will provide a `str` that is assigned to the parameter `token` of the *path operation function*.
+This dependency will provide a `str` that is assigned to the parameter `token` of the _path operation function_.
 
 **ReadyAPI** will know that it can use this dependency to define a "security scheme" in the OpenAPI schema (and the automatic API docs).
 

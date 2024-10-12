@@ -34,7 +34,7 @@ Wenn Sie zum Verwalten Ihrer Installationen andere Tools wie Poetry, Pipenv oder
 
 ## Verfügbare Versionen
 
-Die verfügbaren Versionen können Sie in den [Release Notes](../release-notes.md){.internal-link target=_blank} einsehen (z. B. um zu überprüfen, welches die neueste Version ist).
+Die verfügbaren Versionen können Sie in den [Release Notes](../release-notes.md){.internal-link target=\_blank} einsehen (z. B. um zu überprüfen, welches die neueste Version ist).
 
 ## Über Versionen
 
@@ -66,7 +66,7 @@ Nicht abwärtskompatible Änderungen und neue Funktionen werden in „MINOR“-V
 
 Sie sollten Tests für Ihre Anwendung hinzufügen.
 
-Mit **ReadyAPI** ist das sehr einfach (dank Starlette), schauen Sie sich die Dokumentation an: [Testen](../tutorial/testing.md){.internal-link target=_blank}
+Mit **ReadyAPI** ist das sehr einfach (dank Starlette), schauen Sie sich die Dokumentation an: [Testen](../tutorial/testing.md){.internal-link target=\_blank}
 
 Nachdem Sie Tests erstellt haben, können Sie die **ReadyAPI**-Version auf eine neuere Version aktualisieren und sicherstellen, dass Ihr gesamter Code ordnungsgemäß funktioniert, indem Sie Ihre Tests ausführen.
 
@@ -87,6 +87,7 @@ Pydantic integriert die Tests für **ReadyAPI** in seine eigenen Tests, sodass n
 Sie können Pydantic an jede für Sie geeignete Version über `1.0.0` und unter `2.0.0` anpinnen.
 
 Zum Beispiel:
+
 ```txt
 pydantic>=1.2.0,<2.0.0
 ```

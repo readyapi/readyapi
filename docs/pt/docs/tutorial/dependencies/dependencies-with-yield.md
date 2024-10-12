@@ -14,8 +14,8 @@ Garanta que `yield` é utilizado apenas uma vez.
 
 Qualquer função que possa ser utilizada com:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 pode ser utilizada como uma dependência do **ReadyAPI**.
 
@@ -30,19 +30,19 @@ Por exemplo, você poderia utilizar isso para criar uma sessão do banco de dado
 Apenas o código anterior a declaração com `yield` e o código contendo essa declaração são executados antes de criar uma resposta.
 
 ```Python hl_lines="2-4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-O valor gerado (yielded) é o que é injetado nas *operações de rota* e outras dependências.
+O valor gerado (yielded) é o que é injetado nas _operações de rota_ e outras dependências.
 
 ```Python hl_lines="4"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 O código após o `yield` é executado após a resposta ser entregue:
 
 ```Python hl_lines="5-6"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 /// tip | "Dica"
@@ -57,14 +57,14 @@ O **ReadyAPI** saberá o que fazer com cada uma, da mesma forma que as dependên
 
 Se você utilizar um bloco `try` em uma dependência com `yield`, você irá capturar qualquer exceção que for lançada enquanto a dependência é utilizada.
 
-Por exemplo, se algum código em um certo momento no meio da operação, em outra dependência ou em uma *operação de rota*, fizer um "rollback" de uma transação de banco de dados ou causar qualquer outro erro, você irá capturar a exceção em sua dependência.
+Por exemplo, se algum código em um certo momento no meio da operação, em outra dependência ou em uma _operação de rota_, fizer um "rollback" de uma transação de banco de dados ou causar qualquer outro erro, você irá capturar a exceção em sua dependência.
 
 Então, você pode procurar por essa exceção específica dentro da dependência com `except AlgumaExcecao`.
 
 Da mesma forma, você pode utilizar `finally` para garantir que os passos de saída são executados, com ou sem exceções.
 
 ```python hl_lines="3  5"
-{!../../../docs_src/dependencies/tutorial007.py!}
+{!../../docs_src/dependencies/tutorial007.py!}
 ```
 
 ## Subdependências com `yield`
@@ -78,7 +78,7 @@ Por exemplo, `dependency_c` pode depender de `dependency_b`, e `dependency_b` de
 //// tab | python 3.9+
 
 ```python hl_lines="6  14  22"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -86,7 +86,7 @@ Por exemplo, `dependency_c` pode depender de `dependency_b`, e `dependency_b` de
 //// tab | python 3.8+
 
 ```python hl_lines="5  13  21"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -100,7 +100,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```python hl_lines="4  12  20"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -114,7 +114,7 @@ E, por outro lado, `dependency_b` precisa que o valor de `dependency_a` (nomeada
 //// tab | python 3.9+
 
 ```python hl_lines="18-19  26-27"
-{!> ../../../docs_src/dependencies/tutorial008_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008_an_py39.py!}
 ```
 
 ////
@@ -122,7 +122,7 @@ E, por outro lado, `dependency_b` precisa que o valor de `dependency_a` (nomeada
 //// tab | python 3.8+
 
 ```python hl_lines="17-18  25-26"
-{!> ../../../docs_src/dependencies/tutorial008_an.py!}
+{!> ../../docs_src/dependencies/tutorial008_an.py!}
 ```
 
 ////
@@ -136,7 +136,7 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```python hl_lines="16-17  24-25"
-{!> ../../../docs_src/dependencies/tutorial008.py!}
+{!> ../../docs_src/dependencies/tutorial008.py!}
 ```
 
 ////
@@ -165,7 +165,7 @@ Da mesma forma, você pode lançar uma `httpexception` ou algo parecido no códi
 
 /// tip | "Dica"
 
-Essa é uma técnica relativamente avançada, e na maioria dos casos você não precisa dela totalmente, já que você pode lançar exceções (incluindo `httpexception`) dentro do resto do código da sua aplicação, por exemplo, em uma *função de operação de rota*.
+Essa é uma técnica relativamente avançada, e na maioria dos casos você não precisa dela totalmente, já que você pode lançar exceções (incluindo `httpexception`) dentro do resto do código da sua aplicação, por exemplo, em uma _função de operação de rota_.
 
 Mas ela existe para ser utilizada caso você precise. 🤓
 
@@ -174,7 +174,7 @@ Mas ela existe para ser utilizada caso você precise. 🤓
 //// tab | python 3.9+
 
 ```python hl_lines="18-22  31"
-{!> ../../../docs_src/dependencies/tutorial008b_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an_py39.py!}
 ```
 
 ////
@@ -182,7 +182,7 @@ Mas ela existe para ser utilizada caso você precise. 🤓
 //// tab | python 3.8+
 
 ```python hl_lines="17-21  30"
-{!> ../../../docs_src/dependencies/tutorial008b_an.py!}
+{!> ../../docs_src/dependencies/tutorial008b_an.py!}
 ```
 
 ////
@@ -196,12 +196,12 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```python hl_lines="16-20  29"
-{!> ../../../docs_src/dependencies/tutorial008b.py!}
+{!> ../../docs_src/dependencies/tutorial008b.py!}
 ```
 
 ////
 
-Uma alternativa que você pode utilizar para capturar exceções (e possivelmente lançar outra HTTPException) é criar um [Manipulador de Exceções Customizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank}.
+Uma alternativa que você pode utilizar para capturar exceções (e possivelmente lançar outra HTTPException) é criar um [Manipulador de Exceções Customizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank}.
 
 ## Dependências com `yield` e `except`
 
@@ -210,7 +210,7 @@ Se você capturar uma exceção com `except` em uma dependência que utilize `yi
 //// tab | Python 3.9+
 
 ```Python hl_lines="15-16"
-{!> ../../../docs_src/dependencies/tutorial008c_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an_py39.py!}
 ```
 
 ////
@@ -218,7 +218,7 @@ Se você capturar uma exceção com `except` em uma dependência que utilize `yi
 //// tab | Python 3.8+
 
 ```Python hl_lines="14-15"
-{!> ../../../docs_src/dependencies/tutorial008c_an.py!}
+{!> ../../docs_src/dependencies/tutorial008c_an.py!}
 ```
 
 ////
@@ -232,12 +232,12 @@ utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="13-14"
-{!> ../../../docs_src/dependencies/tutorial008c.py!}
+{!> ../../docs_src/dependencies/tutorial008c.py!}
 ```
 
 ////
 
-Neste caso, o cliente irá ver uma resposta *HTTP 500 Internal Server Error* como deveria acontecer, já que não estamos levantando nenhuma `HTTPException` ou coisa parecida, mas o servidor **não terá nenhum log** ou qualquer outra indicação de qual foi o erro. 😱
+Neste caso, o cliente irá ver uma resposta _HTTP 500 Internal Server Error_ como deveria acontecer, já que não estamos levantando nenhuma `HTTPException` ou coisa parecida, mas o servidor **não terá nenhum log** ou qualquer outra indicação de qual foi o erro. 😱
 
 ### Sempre levante (`raise`) exceções em Dependências com `yield` e `except`
 
@@ -248,7 +248,7 @@ Você pode relançar a mesma exceção utilizando `raise`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="17"
-{!> ../../../docs_src/dependencies/tutorial008d_an_py39.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an_py39.py!}
 ```
 
 ////
@@ -256,7 +256,7 @@ Você pode relançar a mesma exceção utilizando `raise`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="16"
-{!> ../../../docs_src/dependencies/tutorial008d_an.py!}
+{!> ../../docs_src/dependencies/tutorial008d_an.py!}
 ```
 
 ////
@@ -270,12 +270,12 @@ Utilize a versão com `Annotated` se possível.
 ///
 
 ```Python hl_lines="15"
-{!> ../../../docs_src/dependencies/tutorial008d.py!}
+{!> ../../docs_src/dependencies/tutorial008d.py!}
 ```
 
 ////
 
-Agora o cliente irá receber a mesma resposta *HTTP 500 Internal Server Error*, mas o servidor terá nosso `InternalError` personalizado nos logs. 😎
+Agora o cliente irá receber a mesma resposta _HTTP 500 Internal Server Error_, mas o servidor terá nosso `InternalError` personalizado nos logs. 😎
 
 ## Execução de dependências com `yield`
 
@@ -318,7 +318,7 @@ participant tasks as Tarefas de Background
 
 /// info | "Informação"
 
-Apenas **uma resposta** será enviada para o cliente. Ela pode ser uma das respostas de erro, ou então a resposta da *operação de rota*.
+Apenas **uma resposta** será enviada para o cliente. Ela pode ser uma das respostas de erro, ou então a resposta da _operação de rota_.
 
 Após uma dessas respostas ser enviada, nenhuma outra resposta pode ser enviada
 
@@ -326,7 +326,7 @@ Após uma dessas respostas ser enviada, nenhuma outra resposta pode ser enviada
 
 /// tip | "Dica"
 
-Esse diagrama mostra `HttpException`, mas você pode levantar qualquer outra exceção que você capture em uma dependência com `yield` ou um [Manipulador de exceções personalizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank}.
+Esse diagrama mostra `HttpException`, mas você pode levantar qualquer outra exceção que você capture em uma dependência com `yield` ou um [Manipulador de exceções personalizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank}.
 
 Se você lançar qualquer exceção, ela será passada para as dependências com yield, inlcuindo a `HTTPException`. Na maioria dos casos você vai querer relançar essa mesma exceção ou uma nova a partir da dependência com `yield` para garantir que ela seja tratada adequadamente.
 
@@ -350,7 +350,7 @@ Isso foi modificado na versão 0.110.0 para consertar o consumo de memória não
 
 ### Tarefas de Background e Dependências com `yield`, Detalhes Técnicos
 
-Antes do ReadyAPI 0.106.0, levantar exceções após um `yield` não era possível, o código de saída nas dependências com `yield` era executado *após* a resposta ser enviada, então os [Manipuladores de Exceções](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank} já teriam executado.
+Antes do ReadyAPI 0.106.0, levantar exceções após um `yield` não era possível, o código de saída nas dependências com `yield` era executado _após_ a resposta ser enviada, então os [Manipuladores de Exceções](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank} já teriam executado.
 
 Isso foi implementado dessa forma principalmente para permitir que os mesmos objetos fornecidos ("yielded") pelas dependências dentro de tarefas de background fossem reutilizados, por que o código de saída era executado antes das tarefas de background serem finalizadas.
 
@@ -403,16 +403,16 @@ Em python, você pode criar Gerenciadores de Contexto ao <a href="https://docs.p
 Você também pode usá-los dentro de dependências com `yield` do **ReadyAPI** ao utilizar `with` ou `async with` dentro da função da dependência:
 
 ```Python hl_lines="1-9  13"
-{!../../../docs_src/dependencies/tutorial010.py!}
+{!../../docs_src/dependencies/tutorial010.py!}
 ```
 
 /// tip | "Dica"
 
 Outra forma de criar um gerenciador de contexto é utilizando:
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
 
-* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 Para decorar uma função com um único `yield`.
 

@@ -4,9 +4,9 @@ Das Wichtigste, was Sie zum Ausführen einer **ReadyAPI**-Anwendung auf einer en
 
 Es gibt 3 Hauptalternativen:
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: ein hochperformanter ASGI-Server.
-* <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: ein ASGI-Server, der unter anderem mit HTTP/2 und Trio kompatibel ist.
-* <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>: Der für Django Channels entwickelte ASGI-Server.
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: ein hochperformanter ASGI-Server.
+- <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: ein ASGI-Server, der unter anderem mit HTTP/2 und Trio kompatibel ist.
+- <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>: Der für Django Channels entwickelte ASGI-Server.
 
 ## Servermaschine und Serverprogramm
 
@@ -24,7 +24,7 @@ Sie können einen ASGI-kompatiblen Server installieren mit:
 
 //// tab | Uvicorn
 
-* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, ein blitzschneller ASGI-Server, basierend auf uvloop und httptools.
+- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, ein blitzschneller ASGI-Server, basierend auf uvloop und httptools.
 
 <div class="termy">
 
@@ -48,7 +48,7 @@ Inklusive `uvloop`, einen hochperformanten Drop-in-Ersatz für `asyncio`, welche
 
 //// tab | Hypercorn
 
-* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, ein ASGI-Server, der auch mit HTTP/2 kompatibel ist.
+- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, ein ASGI-Server, der auch mit HTTP/2 kompatibel ist.
 
 <div class="termy">
 
@@ -149,11 +149,11 @@ Obige Beispiele führen das Serverprogramm (z. B. Uvicorn) aus, starten **einen 
 
 Das ist die Grundidee. Aber Sie möchten sich wahrscheinlich um einige zusätzliche Dinge kümmern, wie zum Beispiel:
 
-* Sicherheit – HTTPS
-* Beim Hochfahren ausführen
-* Neustarts
-* Replikation (die Anzahl der laufenden Prozesse)
-* Arbeitsspeicher
-* Schritte vor dem Start
+- Sicherheit – HTTPS
+- Beim Hochfahren ausführen
+- Neustarts
+- Replikation (die Anzahl der laufenden Prozesse)
+- Arbeitsspeicher
+- Schritte vor dem Start
 
 In den nächsten Kapiteln erzähle ich Ihnen mehr über jedes dieser Konzepte, wie Sie über diese nachdenken, und gebe Ihnen einige konkrete Beispiele mit Strategien für den Umgang damit. 🚀

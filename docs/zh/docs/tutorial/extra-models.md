@@ -4,15 +4,15 @@
 
 特别是用户模型，因为：
 
-* **输入模型**应该含密码
-* **输出模型**不应含密码
-* **数据库模型**需要加密的密码
+- **输入模型**应该含密码
+- **输出模型**不应含密码
+- **数据库模型**需要加密的密码
 
 /// danger | "危险"
 
 千万不要存储用户的明文密码。始终存储可以进行验证的**安全哈希值**。
 
-如果不了解这方面的知识，请参阅[安全性中的章节](security/simple-oauth2.md#password-hashing){.internal-link target=_blank}，了解什么是**密码哈希**。
+如果不了解这方面的知识，请参阅[安全性中的章节](security/simple-oauth2.md#password-hashing){.internal-link target=\_blank}，了解什么是**密码哈希**。
 
 ///
 
@@ -23,7 +23,7 @@
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  9  14  20  22  27-28  31-33  38-39"
-{!> ../../../docs_src/extra_models/tutorial001_py310.py!}
+{!> ../../docs_src/extra_models/tutorial001_py310.py!}
 ```
 
 ////
@@ -31,7 +31,7 @@
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  11  16  22  24  29-30  33-35  40-41"
-{!> ../../../docs_src/extra_models/tutorial001.py!}
+{!> ../../docs_src/extra_models/tutorial001.py!}
 ```
 
 ////
@@ -122,7 +122,7 @@ UserInDB(**user_dict)
 UserInDB(**user_in.dict())
 ```
 
-……因为 `user_in.dict()` 是字典，在传递给 `UserInDB` 时，把 `**` 加在  `user_in.dict()` 前，可以让 Python 进行**解包**。
+……因为 `user_in.dict()` 是字典，在传递给 `UserInDB` 时，把 `**` 加在 `user_in.dict()` 前，可以让 Python 进行**解包**。
 
 这样，就可以用其它 Pydantic 模型中的数据生成 Pydantic 模型。
 
@@ -173,7 +173,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.10+
 
 ```Python hl_lines="7  13-14  17-18  21-22"
-{!> ../../../docs_src/extra_models/tutorial002_py310.py!}
+{!> ../../docs_src/extra_models/tutorial002_py310.py!}
 ```
 
 ////
@@ -181,7 +181,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.8+
 
 ```Python hl_lines="9  15-16  19-20  23-24"
-{!> ../../../docs_src/extra_models/tutorial002.py!}
+{!> ../../docs_src/extra_models/tutorial002.py!}
 ```
 
 ////
@@ -203,7 +203,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.10+
 
 ```Python hl_lines="1  14-15  18-20  33"
-{!> ../../../docs_src/extra_models/tutorial003_py310.py!}
+{!> ../../docs_src/extra_models/tutorial003_py310.py!}
 ```
 
 ////
@@ -211,7 +211,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  14-15  18-20  33"
-{!> ../../../docs_src/extra_models/tutorial003.py!}
+{!> ../../docs_src/extra_models/tutorial003.py!}
 ```
 
 ////
@@ -225,7 +225,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.9+
 
 ```Python hl_lines="18"
-{!> ../../../docs_src/extra_models/tutorial004_py39.py!}
+{!> ../../docs_src/extra_models/tutorial004_py39.py!}
 ```
 
 ////
@@ -233,7 +233,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  20"
-{!> ../../../docs_src/extra_models/tutorial004.py!}
+{!> ../../docs_src/extra_models/tutorial004.py!}
 ```
 
 ////
@@ -249,7 +249,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.9+
 
 ```Python hl_lines="6"
-{!> ../../../docs_src/extra_models/tutorial005_py39.py!}
+{!> ../../docs_src/extra_models/tutorial005_py39.py!}
 ```
 
 ////
@@ -257,7 +257,7 @@ ReadyAPI 可以做得更好。
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  8"
-{!> ../../../docs_src/extra_models/tutorial005.py!}
+{!> ../../docs_src/extra_models/tutorial005.py!}
 ```
 
 ////

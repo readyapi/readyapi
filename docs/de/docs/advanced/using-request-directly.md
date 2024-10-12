@@ -4,10 +4,10 @@ Bisher haben Sie die Teile des Requests, die Sie benötigen, mithilfe von deren 
 
 Daten nehmend von:
 
-* Dem Pfad als Parameter.
-* Headern.
-* Cookies.
-* usw.
+- Dem Pfad als Parameter.
+- Headern.
+- Cookies.
+- usw.
 
 Und indem Sie das tun, validiert **ReadyAPI** diese Daten, konvertiert sie und generiert automatisch Dokumentation für Ihre API.
 
@@ -25,15 +25,15 @@ Es gibt jedoch bestimmte Fälle, in denen es nützlich ist, auf das `Request`-Ob
 
 ## Das `Request`-Objekt direkt verwenden
 
-Angenommen, Sie möchten auf die IP-Adresse/den Host des Clients in Ihrer *Pfadoperation-Funktion* zugreifen.
+Angenommen, Sie möchten auf die IP-Adresse/den Host des Clients in Ihrer _Pfadoperation-Funktion_ zugreifen.
 
 Dazu müssen Sie direkt auf den Request zugreifen.
 
 ```Python hl_lines="1  7-8"
-{!../../../docs_src/using_request_directly/tutorial001.py!}
+{!../../docs_src/using_request_directly/tutorial001.py!}
 ```
 
-Durch die Deklaration eines *Pfadoperation-Funktionsparameters*, dessen Typ der `Request` ist, weiß **ReadyAPI**, dass es den `Request` diesem Parameter übergeben soll.
+Durch die Deklaration eines _Pfadoperation-Funktionsparameters_, dessen Typ der `Request` ist, weiß **ReadyAPI**, dass es den `Request` diesem Parameter übergeben soll.
 
 /// tip | "Tipp"
 

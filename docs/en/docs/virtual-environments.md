@@ -75,10 +75,10 @@ $ python -m venv .venv
 
 /// details | What that command means
 
-* `python`: use the program called `python`
-* `-m`: call a module as a script, we'll tell it which module next
-* `venv`: use the module called `venv` that normally comes installed with Python
-* `.venv`: create the virtual environment in the new directory `.venv`
+- `python`: use the program called `python`
+- `-m`: call a module as a script, we'll tell it which module next
+- `venv`: use the module called `venv` that normally comes installed with Python
+- `.venv`: create the virtual environment in the new directory `.venv`
 
 ///
 
@@ -268,9 +268,9 @@ $ echo "*" > .venv/.gitignore
 
 /// details | What that command means
 
-* `echo "*"`: will "print" the text `*` in the terminal (the next part changes that a bit)
-* `>`: anything printed to the terminal by the command to the left of `>` should not be printed but instead written to the file that goes to the right of `>`
-* `.gitignore`: the name of the file where the text should be written
+- `echo "*"`: will "print" the text `*` in the terminal (the next part changes that a bit)
+- `>`: anything printed to the terminal by the command to the left of `>` should not be printed but instead written to the file that goes to the right of `>`
+- `.gitignore`: the name of the file where the text should be written
 
 And `*` for Git means "everything". So, it will ignore everything in the `.venv` directory.
 
@@ -396,8 +396,8 @@ You would probably use an editor, make sure you configure it to use the same vir
 
 For example:
 
-* <a href="https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment" class="external-link" target="_blank">VS Code</a>
-* <a href="https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html" class="external-link" target="_blank">PyCharm</a>
+- <a href="https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment" class="external-link" target="_blank">VS Code</a>
+- <a href="https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html" class="external-link" target="_blank">PyCharm</a>
 
 /// tip
 
@@ -422,8 +422,6 @@ This way, when you run `python` it won't try to run it from that virtual environ
 ## Ready to Work
 
 Now you're ready to start working on your project.
-
-
 
 /// tip
 
@@ -619,13 +617,13 @@ $ source .venv/Scripts/activate
 
 ////
 
-That command will create or modify some [environment variables](environment-variables.md){.internal-link target=_blank} that will be available for the next commands.
+That command will create or modify some [environment variables](environment-variables.md){.internal-link target=\_blank} that will be available for the next commands.
 
 One of those variables is the `PATH` variable.
 
 /// tip
 
-You can learn more about the `PATH` environment variable in the [Environment Variables](environment-variables.md#path-environment-variable){.internal-link target=_blank} section.
+You can learn more about the `PATH` environment variable in the [Environment Variables](environment-variables.md#path-environment-variable){.internal-link target=\_blank} section.
 
 ///
 
@@ -641,10 +639,10 @@ Let's say that before activating the environment, the `PATH` variable looked lik
 
 That means that the system would look for programs in:
 
-* `/usr/bin`
-* `/bin`
-* `/usr/sbin`
-* `/sbin`
+- `/usr/bin`
+- `/bin`
+- `/usr/sbin`
+- `/sbin`
 
 ////
 
@@ -656,7 +654,7 @@ C:\Windows\System32
 
 That means that the system would look for programs in:
 
-* `C:\Windows\System32`
+- `C:\Windows\System32`
 
 ////
 
@@ -830,12 +828,12 @@ Once you are ready and want to use a tool to **manage the entire project**, pack
 
 `uv` can do a lot of things, it can:
 
-* **Install Python** for you, including different versions
-* Manage the **virtual environment** for your projects
-* Install **packages**
-* Manage package **dependencies and versions** for your project
-* Make sure you have an **exact** set of packages and versions to install, including their dependencies, so that you can be sure that you can run your project in production exactly the same as in your computer while developing, this is called **locking**
-* And many other things
+- **Install Python** for you, including different versions
+- Manage the **virtual environment** for your projects
+- Install **packages**
+- Manage package **dependencies and versions** for your project
+- Make sure you have an **exact** set of packages and versions to install, including their dependencies, so that you can be sure that you can run your project in production exactly the same as in your computer while developing, this is called **locking**
+- And many other things
 
 ## Conclusion
 
