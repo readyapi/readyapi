@@ -4,13 +4,12 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-<p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
-</p>
-<p align="center">
+# ReadyAPI
+
+<p>
     <em>ReadyAPI 프레임워크, 고성능, 간편한 학습, 빠른 코드 작성, 준비된 프로덕션</em>
 </p>
-<p align="center">
+<p>
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
 </a>

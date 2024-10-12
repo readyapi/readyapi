@@ -4,13 +4,12 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-<p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
-</p>
-<p align="center">
+# ReadyAPI
+
+<p>
     <em>ReadyAPI framework, hiệu năng cao, dễ học, dễ code, sẵn sàng để tạo ra sản phẩm</em>
 </p>
-<p align="center">
+<p>
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
     <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
