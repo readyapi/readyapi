@@ -37,7 +37,7 @@ jobs:
             requirements**.txt
             pyproject.toml
       - name: Install Dependencies
-        run: uv pip install -r requirements-tests.txt
+        run: uv pip install -r ./requirements/requirements-tests.txt
       - name: Install Pydantic v2
         run: uv pip install --upgrade "pydantic>=2.0.2,<3.0.0"
       - name: Lint
@@ -74,7 +74,7 @@ jobs:
             requirements**.txt
             pyproject.toml
       - name: Install Dependencies
-        run: uv pip install -r requirements-tests.txt
+        run: uv pip install -r ./requirements/requirements-tests.txt
       - name: Install Pydantic v1
         if: matrix.pydantic-version == 'pydantic-v1'
         run: uv pip install "pydantic>=1.10.0,<2.0.0"
@@ -115,7 +115,7 @@ jobs:
             requirements**.txt
             pyproject.toml
       - name: Install Dependencies
-        run: uv pip install -r requirements-tests.txt
+        run: uv pip install -r ./requirements/requirements-tests.txt
       - name: Get coverage files
         uses: actions/download-artifact@v4
         with:

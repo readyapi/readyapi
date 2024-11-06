@@ -33,7 +33,7 @@ jobs:
           cache-dependency-glob: |
             requirements**.txt
             pyproject.toml
-      - run: uv pip install -r requirements-github-actions.txt
+      - run: uv pip install -r ./requirements/requirements-github-actions.txt
       - uses: actions/download-artifact@v4
         with:
           name: coverage-html

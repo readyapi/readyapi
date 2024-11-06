@@ -61,11 +61,11 @@ jobs:
             requirements**.txt
             pyproject.toml
       - name: Install docs extras
-        run: uv pip install -r requirements-docs.txt
+        run: uv pip install -r ./requirements/requirements-docs.txt
       # Install MkDocs Material Insiders here just to put it in the cache for the rest of the steps
       - name: Install Material for MkDocs Insiders
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
-        run: uv pip install -r requirements-docs-insiders.txt
+        run: uv pip install -r ./requirements/requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
       - name: Verify Docs
@@ -103,10 +103,10 @@ jobs:
             requirements**.txt
             pyproject.toml
       - name: Install docs extras
-        run: uv pip install -r requirements-docs.txt
+        run: uv pip install -r ./requirements/requirements-docs.txt
       - name: Install Material for MkDocs Insiders
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
-        run: uv pip install -r requirements-docs-insiders.txt
+        run: uv pip install -r ./requirements/requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
       - name: Update Languages

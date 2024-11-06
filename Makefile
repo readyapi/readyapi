@@ -12,7 +12,7 @@ venv:
 	@echo "Setting up the virtual environment..."
 	python3 -m venv $(VENV_DIR)
 	@echo "Activating virtual environment..."
-	. $(VENV_DIR)/bin/activate && pip install -r requirements.txt
+	. $(VENV_DIR)/bin/activate && pip install -r ./requirements/requirements.txt
 
 # Format the code using the provided script
 format:
