@@ -246,7 +246,7 @@ Und `items_per_user` würde seinen Standardwert von `50` behalten.
 
 ## Einstellungen in einem anderen Modul
 
-Sie könnten diese Einstellungen in eine andere Moduldatei einfügen, wie Sie in [Größere Anwendungen – mehrere Dateien](../tutorial/bigger-applications.md){.internal-link target=\_blank} gesehen haben.
+Sie könnten diese Einstellungen in eine andere Moduldatei einfügen, wie Sie in [Größere Anwendungen – mehrere Dateien](../tutorial/bigger-applications.md){.internal-link target=_blank} gesehen haben.
 
 Sie könnten beispielsweise eine Datei `config.py` haben mit:
 
@@ -262,7 +262,7 @@ Und dann verwenden Sie diese in einer Datei `main.py`:
 
 /// tip | "Tipp"
 
-Sie benötigen außerdem eine Datei `__init__.py`, wie in [Größere Anwendungen – mehrere Dateien](../tutorial/bigger-applications.md){.internal-link target=\_blank} gesehen.
+Sie benötigen außerdem eine Datei `__init__.py`, wie in [Größere Anwendungen – mehrere Dateien](../tutorial/bigger-applications.md){.internal-link target=_blank} gesehen.
 
 ///
 
@@ -324,7 +324,7 @@ Im Moment nehmen Sie an, dass `get_settings()` eine normale Funktion ist.
 
 ///
 
-Und dann können wir das von der _Pfadoperation-Funktion_ als Abhängigkeit einfordern und es überall dort verwenden, wo wir es brauchen.
+Und dann können wir das von der *Pfadoperation-Funktion* als Abhängigkeit einfordern und es überall dort verwenden, wo wir es brauchen.
 
 //// tab | Python 3.9+
 
@@ -561,6 +561,6 @@ Auf diese Weise verhält es sich fast so, als wäre es nur eine globale Variable
 
 Mit Pydantic Settings können Sie die Einstellungen oder Konfigurationen für Ihre Anwendung verwalten und dabei die gesamte Leistungsfähigkeit der Pydantic-Modelle nutzen.
 
-- Durch die Verwendung einer Abhängigkeit können Sie das Testen vereinfachen.
-- Sie können `.env`-Dateien damit verwenden.
-- Durch die Verwendung von `@lru_cache` können Sie vermeiden, die dotenv-Datei bei jedem Request erneut zu lesen, während Sie sie während des Testens überschreiben können.
+* Durch die Verwendung einer Abhängigkeit können Sie das Testen vereinfachen.
+* Sie können `.env`-Dateien damit verwenden.
+* Durch die Verwendung von `@lru_cache` können Sie vermeiden, die dotenv-Datei bei jedem Request erneut zu lesen, während Sie sie während des Testens überschreiben können.

@@ -22,10 +22,10 @@ $ pip install jinja2
 
 ## ⚙️ `Jinja2Templates`
 
-- 🗄 `Jinja2Templates`.
-- ✍ `templates` 🎚 👈 👆 💪 🏤-⚙️ ⏪.
-- 📣 `Request` 🔢 _➡ 🛠️_ 👈 🔜 📨 📄.
-- ⚙️ `templates` 👆 ✍ ✍ &amp; 📨 `TemplateResponse`, 🚶‍♀️ `request` 1️⃣ 🔑-💲 👫 Jinja2️⃣ "🔑".
+* 🗄 `Jinja2Templates`.
+* ✍ `templates` 🎚 👈 👆 💪 🏤-⚙️ ⏪.
+* 📣 `Request` 🔢 *➡ 🛠️* 👈 🔜 📨 📄.
+* ⚙️ `templates` 👆 ✍ ✍ &amp; 📨 `TemplateResponse`, 🚶‍♀️ `request` 1️⃣ 🔑-💲 👫 Jinja2️⃣ "🔑".
 
 ```Python hl_lines="4  11  15-18"
 {!../../docs_src/templates/tutorial001.py!}
@@ -33,7 +33,7 @@ $ pip install jinja2
 
 /// note
 
-👀 👈 👆 ✔️ 🚶‍♀️ `request` 🍕 🔑-💲 👫 🔑 Jinja2️⃣. , 👆 ✔️ 📣 ⚫️ 👆 _➡ 🛠️_.
+👀 👈 👆 ✔️ 🚶‍♀️ `request` 🍕 🔑-💲 👫 🔑 Jinja2️⃣. , 👆 ✔️ 📣 ⚫️ 👆 *➡ 🛠️*.
 
 ///
 

@@ -6,10 +6,10 @@ Dieser Client könnte ein Browser mit einem Frontend, Code von jemand anderem, e
 
 Sie müssten beispielsweise einem Client sagen:
 
-- Dass er nicht die notwendigen Berechtigungen hat, eine Aktion auszuführen.
-- Dass er zu einer Ressource keinen Zugriff hat.
-- Dass die Ressource, auf die er zugreifen möchte, nicht existiert.
-- usw.
+* Dass er nicht die notwendigen Berechtigungen hat, eine Aktion auszuführen.
+* Dass er zu einer Ressource keinen Zugriff hat.
+* Dass die Ressource, auf die er zugreifen möchte, nicht existiert.
+* usw.
 
 In diesen Fällen geben Sie normalerweise einen **HTTP-Statuscode** im Bereich **400** (400 bis 499) zurück.
 
@@ -35,7 +35,7 @@ Um HTTP-Responses mit Fehlern zum Client zurückzugeben, verwenden Sie `HTTPExce
 
 Weil es eine Python-Exception ist, geben Sie sie nicht zurück, (`return`), sondern Sie lösen sie aus (`raise`).
 
-Das bedeutet auch, wenn Sie in einer Hilfsfunktion sind, die Sie von ihrer _Pfadoperation-Funktion_ aus aufrufen, und Sie lösen eine `HTTPException` von innerhalb dieser Hilfsfunktion aus, dann wird der Rest der _Pfadoperation-Funktion_ nicht ausgeführt, sondern der Request wird sofort abgebrochen und der HTTP-Error der `HTTP-Exception` wird zum Client gesendet.
+Das bedeutet auch, wenn Sie in einer Hilfsfunktion sind, die Sie von ihrer *Pfadoperation-Funktion* aus aufrufen, und Sie lösen eine `HTTPException` von innerhalb dieser Hilfsfunktion aus, dann wird der Rest der *Pfadoperation-Funktion* nicht ausgeführt, sondern der Request wird sofort abgebrochen und der HTTP-Error der `HTTP-Exception` wird zum Client gesendet.
 
 Der Vorteil, eine Exception auszulösen (`raise`), statt sie zurückzugeben (`return`) wird im Abschnitt über Abhängigkeiten und Sicherheit klarer werden.
 
@@ -99,7 +99,7 @@ Sie könnten einen benutzerdefinierten Exceptionhandler mittels `@app.exception_
 {!../../docs_src/handling_errors/tutorial003.py!}
 ```
 
-Wenn Sie nun `/unicorns/yolo` anfragen, `raise`d die _Pfadoperation_ eine `UnicornException`.
+Wenn Sie nun `/unicorns/yolo` anfragen, `raise`d die *Pfadoperation* eine `UnicornException`.
 
 Aber diese wird von `unicorn_exception_handler` gehandhabt.
 
@@ -178,7 +178,7 @@ Das folgende sind technische Details, die Sie überspringen können, wenn sie f�
 
 Aber der Client/Benutzer sieht ihn nicht. Stattdessen erhält der Client einen <abbr title="Interner Server-Fehler">„Internal Server Error“</abbr> mit einem HTTP-Statuscode `500`.
 
-Das ist, wie es sein sollte, denn wenn Sie einen Pydantic-`ValidationError` in Ihrer _Response_ oder irgendwo sonst in ihrem Code haben (es sei denn, im _Request_ des Clients), ist das tatsächlich ein Bug in ihrem Code.
+Das ist, wie es sein sollte, denn wenn Sie einen Pydantic-`ValidationError` in Ihrer *Response* oder irgendwo sonst in ihrem Code haben (es sei denn, im *Request* des Clients), ist das tatsächlich ein Bug in ihrem Code.
 
 Und während Sie den Fehler beheben, sollten ihre Clients/Benutzer keinen Zugriff auf interne Informationen über den Fehler haben, da das eine Sicherheitslücke aufdecken könnte.
 

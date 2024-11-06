@@ -8,9 +8,9 @@ Uma origem é a combinação de protocolo (`http`, `https`), domínio (`myapp.co
 
 Então, todos estes são origens diferentes:
 
-- `http://localhost`
-- `https://localhost`
-- `http://localhost:8080`
+* `http://localhost`
+* `https://localhost`
+* `http://localhost:8080`
 
 Mesmo se todos estiverem em `localhost`, eles usam diferentes protocolos e portas, portanto, são "origens" diferentes.
 
@@ -36,15 +36,15 @@ Então, para que tudo funcione corretamente, é melhor especificar explicitament
 
 Você pode configurá-lo em sua aplicação **ReadyAPI** usando o `CORSMiddleware`.
 
-- Importe `CORSMiddleware`.
-- Crie uma lista de origens permitidas (como strings).
-- Adicione-a como um "middleware" à sua aplicação **ReadyAPI**.
+* Importe `CORSMiddleware`.
+* Crie uma lista de origens permitidas (como strings).
+* Adicione-a como um "middleware" à sua aplicação **ReadyAPI**.
 
 Você também pode especificar se o seu backend permite:
 
-- Credenciais (Cabeçalhos de autorização, Cookies, etc).
-- Métodos HTTP específicos (`POST`, `PUT`) ou todos eles com o curinga `"*"`.
-- Cabeçalhos HTTP específicos ou todos eles com o curinga `"*"`.
+* Credenciais (Cabeçalhos de autorização, Cookies, etc).
+* Métodos HTTP específicos (`POST`, `PUT`) ou todos eles com o curinga `"*"`.
+* Cabeçalhos HTTP específicos ou todos eles com o curinga `"*"`.
 
 ```Python hl_lines="2  6-11  13-19"
 {!../../docs_src/cors/tutorial001.py!}
@@ -54,13 +54,13 @@ Os parâmetros padrão usados ​​pela implementação `CORSMiddleware` são r
 
 Os seguintes argumentos são suportados:
 
-- `allow_origins` - Uma lista de origens que devem ter permissão para fazer requisições de origem cruzada. Por exemplo, `['https://example.org', 'https://www.example.org']`. Você pode usar `['*']` para permitir qualquer origem.
-- `allow_origin_regex` - Uma string regex para corresponder às origens que devem ter permissão para fazer requisições de origem cruzada. Por exemplo, `'https://.*\.example\.org'`.
-- `allow_methods` - Uma lista de métodos HTTP que devem ser permitidos para requisições de origem cruzada. O padrão é `['GET']`. Você pode usar `['*']` para permitir todos os métodos padrão.
-- `allow_headers` - Uma lista de cabeçalhos de solicitação HTTP que devem ter suporte para requisições de origem cruzada. O padrão é `[]`. Você pode usar `['*']` para permitir todos os cabeçalhos. Os cabeçalhos `Accept`, `Accept-Language`, `Content-Language` e `Content-Type` são sempre permitidos para <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests" class="external-link" rel="noopener" target="_blank">requisições CORS simples</a>.
-- `allow_credentials` - Indica que os cookies devem ser suportados para requisições de origem cruzada. O padrão é `False`. Além disso, `allow_origins` não pode ser definido como `['*']` para que as credenciais sejam permitidas, as origens devem ser especificadas.
-- `expose_headers` - Indica quaisquer cabeçalhos de resposta que devem ser disponibilizados ao navegador. O padrão é `[]`.
-- `max_age` - Define um tempo máximo em segundos para os navegadores armazenarem em cache as respostas CORS. O padrão é `600`.
+* `allow_origins` - Uma lista de origens que devem ter permissão para fazer requisições de origem cruzada. Por exemplo, `['https://example.org', 'https://www.example.org']`. Você pode usar `['*']` para permitir qualquer origem.
+* `allow_origin_regex` - Uma string regex para corresponder às origens que devem ter permissão para fazer requisições de origem cruzada. Por exemplo, `'https://.*\.example\.org'`.
+* `allow_methods` - Uma lista de métodos HTTP que devem ser permitidos para requisições de origem cruzada. O padrão é `['GET']`. Você pode usar `['*']` para permitir todos os métodos padrão.
+* `allow_headers` - Uma lista de cabeçalhos de solicitação HTTP que devem ter suporte para requisições de origem cruzada. O padrão é `[]`. Você pode usar `['*']` para permitir todos os cabeçalhos. Os cabeçalhos `Accept`, `Accept-Language`, `Content-Language` e `Content-Type` são sempre permitidos para <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests" class="external-link" rel="noopener" target="_blank">requisições CORS simples</a>.
+* `allow_credentials` - Indica que os cookies devem ser suportados para requisições de origem cruzada. O padrão é `False`. Além disso, `allow_origins` não pode ser definido como `['*']` para que as credenciais sejam permitidas, as origens devem ser especificadas.
+* `expose_headers` - Indica quaisquer cabeçalhos de resposta que devem ser disponibilizados ao navegador. O padrão é `[]`.
+* `max_age` - Define um tempo máximo em segundos para os navegadores armazenarem em cache as respostas CORS. O padrão é `600`.
 
 O middleware responde a dois tipos específicos de solicitação HTTP...
 

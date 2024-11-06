@@ -134,8 +134,8 @@ Adopter et utiliser une norme ouverte pour les spécifications des API, au lieu 
 
 Intégrer des outils d'interface utilisateur basés sur des normes :
 
-- <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
-- <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
+* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
+* <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
 
 Ces deux-là ont été choisis parce qu'ils sont populaires et stables, mais en faisant une recherche rapide, vous pourriez trouver des dizaines d'alternatives supplémentaires pour OpenAPI (que vous pouvez utiliser avec **ReadyAPI**).
 
@@ -351,7 +351,7 @@ Cela a en fait inspiré la mise à jour de certaines parties de Pydantic, afin d
 
 ///
 
-### <a href="https://www.hug.rest/" class="external-link" target="_blank">Hug</a>
+### <a href="https://github.com/hugapi/hug" class="external-link" target="_blank">Hug</a>
 
 Hug a été l'un des premiers frameworks à implémenter la déclaration des types de paramètres d'API en utilisant les type hints Python. C'était une excellente idée qui a inspiré d'autres outils à faire de même.
 
@@ -413,9 +413,9 @@ Maintenant, APIStar est un ensemble d'outils pour valider les spécifications Op
 
 APIStar a été créé par Tom Christie. Le même gars qui a créé :
 
-- Django REST Framework
-- Starlette (sur lequel **ReadyAPI** est basé)
-- Uvicorn (utilisé par Starlette et **ReadyAPI**)
+* Django REST Framework
+* Starlette (sur lequel **ReadyAPI** est basé)
+* Uvicorn (utilisé par Starlette et **ReadyAPI**)
 
 ///
 
@@ -513,7 +513,7 @@ Le serveur web principal pour exécuter les applications **ReadyAPI**.
 
 Vous pouvez le combiner avec Gunicorn, pour avoir un serveur multi-processus asynchrone.
 
-Pour plus de détails, consultez la section [Déploiement](deployment/index.md){.internal-link target=\_blank}.
+Pour plus de détails, consultez la section [Déploiement](deployment/index.md){.internal-link target=_blank}.
 
 ///
 

@@ -9,15 +9,15 @@ GitHub 저장소: <a href="https://github.com/khulnasoft/full-stack-readyapi-tem
 ## Full Stack ReadyAPI 템플릿 - 기술 스택과 기능들
 
 - ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com): Python 백엔드 API.
-  - 🧰 [SQLDev](https://sqldev.khulnasoft.com): Python SQL 데이터 상호작용을 위한 (ORM).
-  - 🔍 [Pydantic](https://docs.pydantic.dev): ReadyAPI에 의해 사용되는, 데이터 검증과 설정관리.
-  - 💾 [PostgreSQL](https://www.postgresql.org): SQL 데이터베이스.
+    - 🧰 [SQLDev](https://sqldev.khulnasoft.com): Python SQL 데이터 상호작용을 위한 (ORM).
+    - 🔍 [Pydantic](https://docs.pydantic.dev): ReadyAPI에 의해 사용되는, 데이터 검증과 설정관리.
+    - 💾 [PostgreSQL](https://www.postgresql.org): SQL 데이터베이스.
 - 🚀 [React](https://react.dev): 프론트엔드.
-  - 💃 TypeScript, hooks, [Vite](https://vitejs.dev) 및 기타 현대적인 프론트엔드 스택을 사용.
-  - 🎨 [Chakra UI](https://chakra-ui.com): 프론트엔드 컴포넌트.
-  - 🤖 자동으로 생성된 프론트엔드 클라이언트.
-  - 🧪 E2E 테스트를 위한 [Playwright](https://playwright.dev).
-  - 🦇 다크 모드 지원.
+    - 💃 TypeScript, hooks, [Vite](https://vitejs.dev) 및 기타 현대적인 프론트엔드 스택을 사용.
+    - 🎨 [Chakra UI](https://chakra-ui.com): 프론트엔드 컴포넌트.
+    - 🤖 자동으로 생성된 프론트엔드 클라이언트.
+    - 🧪 E2E 테스트를 위한 [Playwright](https://playwright.dev).
+    - 🦇 다크 모드 지원.
 - 🐋 [Docker Compose](https://www.docker.com): 개발 환경과 프로덕션(운영).
 - 🔒 기본으로 지원되는 안전한 비밀번호 해싱.
 - 🔑 JWT 토큰 인증.

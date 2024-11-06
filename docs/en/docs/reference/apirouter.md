@@ -9,5 +9,16 @@ from readyapi import APIRouter
 ```
 
 ::: readyapi.APIRouter
-options:
-members: - websocket - include_router - get - put - post - delete - options - head - patch - trace - on_event
+    options:
+        members:
+            - websocket
+            - include_router
+            - get
+            - put
+            - post
+            - delete
+            - options
+            - head
+            - patch
+            - trace
+            - on_event

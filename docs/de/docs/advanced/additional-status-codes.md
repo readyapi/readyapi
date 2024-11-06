@@ -1,14 +1,14 @@
 # Zusätzliche Statuscodes
 
-Standardmäßig liefert **ReadyAPI** die Rückgabewerte (Responses) als `JSONResponse` zurück und fügt den Inhalt der jeweiligen _Pfadoperation_ in das `JSONResponse` Objekt ein.
+Standardmäßig liefert **ReadyAPI** die Rückgabewerte (Responses) als `JSONResponse` zurück und fügt den Inhalt der jeweiligen *Pfadoperation* in das `JSONResponse` Objekt ein.
 
-Es wird der Default-Statuscode oder derjenige verwendet, den Sie in Ihrer _Pfadoperation_ festgelegt haben.
+Es wird der Default-Statuscode oder derjenige verwendet, den Sie in Ihrer *Pfadoperation* festgelegt haben.
 
 ## Zusätzliche Statuscodes
 
 Wenn Sie neben dem Hauptstatuscode weitere Statuscodes zurückgeben möchten, können Sie dies tun, indem Sie direkt eine `Response` zurückgeben, wie etwa eine `JSONResponse`, und den zusätzlichen Statuscode direkt festlegen.
 
-Angenommen, Sie möchten eine _Pfadoperation_ haben, die das Aktualisieren von Artikeln ermöglicht und bei Erfolg den HTTP-Statuscode 200 „OK“ zurückgibt.
+Angenommen, Sie möchten eine *Pfadoperation* haben, die das Aktualisieren von Artikeln ermöglicht und bei Erfolg den HTTP-Statuscode 200 „OK“ zurückgibt.
 
 Sie möchten aber auch, dass sie neue Artikel akzeptiert. Und wenn die Elemente vorher nicht vorhanden waren, werden diese Elemente erstellt und der HTTP-Statuscode 201 „Created“ zurückgegeben.
 
@@ -88,4 +88,4 @@ Sie können auch `from starlette.responses import JSONResponse` verwenden.
 
 Wenn Sie zusätzliche Statuscodes und Responses direkt zurückgeben, werden diese nicht in das OpenAPI-Schema (die API-Dokumentation) aufgenommen, da ReadyAPI keine Möglichkeit hat, im Voraus zu wissen, was Sie zurückgeben werden.
 
-Sie können das jedoch in Ihrem Code dokumentieren, indem Sie Folgendes verwenden: [Zusätzliche Responses](additional-responses.md){.internal-link target=\_blank}.
+Sie können das jedoch in Ihrem Code dokumentieren, indem Sie Folgendes verwenden: [Zusätzliche Responses](additional-responses.md){.internal-link target=_blank}.

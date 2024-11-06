@@ -1,6 +1,6 @@
-# JSON 互換エンコーダ
+# JSON互換エンコーダ
 
-データ型（Pydantic モデルのような）を JSON と互換性のあるもの（`dict`や`list`など）に変更する必要がある場合があります。
+データ型（Pydanticモデルのような）をJSONと互換性のあるもの（`dict`や`list`など）に変更する必要がある場合があります。
 
 例えば、データベースに保存する必要がある場合です。
 
@@ -8,27 +8,27 @@
 
 ## `jsonable_encoder`の使用
 
-JSON 互換のデータのみを受信するデータベース`fase_db`があるとしましょう。
+JSON互換のデータのみを受信するデータベース`fase_db`があるとしましょう。
 
-例えば、`datetime`オブジェクトは JSON と互換性がないので、このデーターベースには受け取られません。
+例えば、`datetime`オブジェクトはJSONと互換性がないので、このデーターベースには受け取られません。
 
-そのため、`datetime`オブジェクトは<a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO 形式</a>のデータを含む`str`に変換されなければなりません。
+そのため、`datetime`オブジェクトは<a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO形式</a>のデータを含む`str`に変換されなければなりません。
 
-同様に、このデータベースは Pydantic モデル（属性を持つオブジェクト）を受け取らず、`dict`だけを受け取ります。
+同様に、このデータベースはPydanticモデル（属性を持つオブジェクト）を受け取らず、`dict`だけを受け取ります。
 
 そのために`jsonable_encoder`を使用することができます。
 
-Pydantic モデルのようなオブジェクトを受け取り、JSON 互換版を返します:
+Pydanticモデルのようなオブジェクトを受け取り、JSON互換版を返します:
 
 ```Python hl_lines="5 22"
 {!../../docs_src/encoder/tutorial001.py!}
 ```
 
-この例では、Pydantic モデルを`dict`に、`datetime`を`str`に変換します。
+この例では、Pydanticモデルを`dict`に、`datetime`を`str`に変換します。
 
-呼び出した結果は、Python の標準の<a href="https://docs.python.org/3/library/json.html#json.dumps" class="external-link" target="_blank">`json.dumps()`</a>でエンコードできるものです。
+呼び出した結果は、Pythonの標準の<a href="https://docs.python.org/3/library/json.html#json.dumps" class="external-link" target="_blank">`json.dumps()`</a>でエンコードできるものです。
 
-これは JSON 形式のデータを含む大きな`str`を（文字列として）返しません。JSON と互換性のある値とサブの値を持つ Python 標準のデータ構造（例：`dict`）を返します。
+これはJSON形式のデータを含む大きな`str`を（文字列として）返しません。JSONと互換性のある値とサブの値を持つPython標準のデータ構造（例：`dict`）を返します。
 
 /// note | "備考"
 

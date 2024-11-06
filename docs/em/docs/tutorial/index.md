@@ -68,7 +68,7 @@ pip install "readyapi[standard]"
 pip install "uvicorn[standard]"
 ```
 
-&amp; 🎏 🔠 📦 🔗 👈 👆 💚 ⚙️.
+ &amp; 🎏 🔠 📦 🔗 👈 👆 💚 ⚙️.
 
 ///
 

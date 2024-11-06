@@ -30,9 +30,9 @@
 
 /// warning | "注意"
 
-*path operation*で複数の`File`と`Form`パラメータを宣言することができますが、JSON として受け取ることを期待している`Body`フィールドを宣言することはできません。なぜなら、リクエストのボディは`application/json`の代わりに`multipart/form-data`を使ってエンコードされているからです。
+*path operation*で複数の`File`と`Form`パラメータを宣言することができますが、JSONとして受け取ることを期待している`Body`フィールドを宣言することはできません。なぜなら、リクエストのボディは`application/json`の代わりに`multipart/form-data`を使ってエンコードされているからです。
 
-これは **ReadyAPI** の制限ではなく、HTTP プロトコルの一部です。
+これは **ReadyAPI** の制限ではなく、HTTPプロトコルの一部です。
 
 ///
 

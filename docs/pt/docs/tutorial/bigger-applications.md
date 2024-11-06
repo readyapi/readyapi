@@ -43,14 +43,14 @@ from app.routers import items
 
 ///
 
-- O diretório `app` contém todo o código da aplicação. Ele possui um arquivo `app/__init__.py` vazio, o que o torna um "pacote Python" (uma coleção de "módulos Python"): `app`.
-- Dentro dele, o arquivo `app/main.py` está localizado em um pacote Python (diretório com `__init__.py`). Portanto, ele é um "módulo" desse pacote: `app.main`.
-- Existem também um arquivo `app/dependencies.py`, assim como o `app/main.py`, ele é um "módulo": `app.dependencies`.
-- Há um subdiretório `app/routers/` com outro arquivo `__init__.py`, então ele é um "subpacote Python": `app.routers`.
-- O arquivo `app/routers/items.py` está dentro de um pacote, `app/routers/`, portanto, é um "submódulo": `app.routers.items`.
-- O mesmo com `app/routers/users.py`, ele é outro submódulo: `app.routers.users`.
-- Há também um subdiretório `app/internal/` com outro arquivo `__init__.py`, então ele é outro "subpacote Python":`app.internal`.
-- E o arquivo `app/internal/admin.py` é outro submódulo: `app.internal.admin`.
+* O diretório `app` contém todo o código da aplicação. Ele possui um arquivo `app/__init__.py` vazio, o que o torna um "pacote Python" (uma coleção de "módulos Python"): `app`.
+* Dentro dele, o arquivo `app/main.py` está localizado em um pacote Python (diretório com  `__init__.py`). Portanto, ele é um "módulo" desse pacote: `app.main`.
+* Existem também um arquivo `app/dependencies.py`, assim como o `app/main.py`, ele é um "módulo": `app.dependencies`.
+* Há um subdiretório `app/routers/` com outro arquivo `__init__.py`, então ele é um "subpacote Python": `app.routers`.
+* O arquivo `app/routers/items.py` está dentro de um pacote, `app/routers/`, portanto, é um "submódulo": `app.routers.items`.
+* O mesmo com `app/routers/users.py`,  ele é outro submódulo: `app.routers.users`.
+* Há também um subdiretório `app/internal/` com outro arquivo `__init__.py`, então ele é outro "subpacote Python":`app.internal`.
+* E o arquivo `app/internal/admin.py` é outro submódulo: `app.internal.admin`.
 
 <img src="/img/tutorial/bigger-applications/package.svg">
 
@@ -75,11 +75,11 @@ A mesma estrutura de arquivos com comentários:
 
 Vamos supor que o arquivo dedicado a lidar apenas com usuários seja o submódulo em `/app/routers/users.py`.
 
-Você quer manter as _operações de rota_ relacionadas aos seus usuários separadas do restante do código, para mantê-lo organizado.
+Você quer manter as *operações de rota* relacionadas aos seus usuários separadas do restante do código, para mantê-lo organizado.
 
 Mas ele ainda faz parte da mesma aplicação/web API **ReadyAPI** (faz parte do mesmo "pacote Python").
 
-Você pode criar as _operações de rotas_ para esse módulo usando o `APIRouter`.
+Você pode criar as *operações de rotas* para esse módulo usando o `APIRouter`.
 
 ### Importar `APIRouter`
 
@@ -89,11 +89,11 @@ você o importa e cria uma "instância" da mesma maneira que faria com a classe 
 {!../../docs_src/bigger_applications/app/routers/users.py!}
 ```
 
-### _Operações de Rota_ com `APIRouter`
+### *Operações de Rota* com `APIRouter`
 
-E então você o utiliza para declarar suas _operações de rota_.
+E então você o utiliza para declarar suas *operações de rota*.
 
-Utilize-o da mesma maneira que utilizaria a classe `ReadyAPI`:
+Utilize-o da mesma maneira que utilizaria a classe  `ReadyAPI`:
 
 ```Python hl_lines="6  11  16" title="app/routers/users.py"
 {!../../docs_src/bigger_applications/app/routers/users.py!}
@@ -155,7 +155,7 @@ Prefira usar a versão `Annotated` se possível.
 
 Estamos usando um cabeçalho inventado para simplificar este exemplo.
 
-Mas em casos reais, você obterá melhores resultados usando os [Utilitários de Segurança](security/index.md){.internal-link target=\_blank} integrados.
+Mas em casos reais, você obterá melhores resultados usando os [Utilitários de Segurança](security/index.md){.internal-link target=_blank} integrados.
 
 ///
 
@@ -163,29 +163,29 @@ Mas em casos reais, você obterá melhores resultados usando os [Utilitários de
 
 Digamos que você também tenha os endpoints dedicados a manipular "itens" do seu aplicativo no módulo em `app/routers/items.py`.
 
-Você tem _operações de rota_ para:
+Você tem *operações de rota* para:
 
-- `/items/`
-- `/items/{item_id}`
+* `/items/`
+* `/items/{item_id}`
 
 É tudo a mesma estrutura de `app/routers/users.py`.
 
 Mas queremos ser mais inteligentes e simplificar um pouco o código.
 
-Sabemos que todas as _operações de rota_ neste módulo têm o mesmo:
+Sabemos que todas as *operações de rota* neste módulo têm o mesmo:
 
-- Path `prefix`: `/items`.
-- `tags`: (apenas uma tag: `items`).
-- Extra `responses`.
-- `dependências`: todas elas precisam da dependência `X-Token` que criamos.
+* Path `prefix`: `/items`.
+* `tags`: (apenas uma tag: `items`).
+* Extra `responses`.
+* `dependências`: todas elas precisam da dependência `X-Token` que criamos.
 
-Então, em vez de adicionar tudo isso a cada _operação de rota_, podemos adicioná-lo ao `APIRouter`.
+Então, em vez de adicionar tudo isso a cada *operação de rota*, podemos adicioná-lo ao `APIRouter`.
 
 ```Python hl_lines="5-10  16  21" title="app/routers/items.py"
 {!../../docs_src/bigger_applications/app/routers/items.py!}
 ```
 
-Como o caminho de cada _operação de rota_ deve começar com `/`, como em:
+Como o caminho de cada *operação de rota* deve começar com `/`, como em:
 
 ```Python hl_lines="1"
 @router.get("/{item_id}")
@@ -197,34 +197,34 @@ async def read_item(item_id: str):
 
 Então, o prefixo neste caso é `/items`.
 
-Também podemos adicionar uma lista de `tags` e `responses` extras que serão aplicadas a todas as _operações de rota_ incluídas neste roteador.
+Também podemos adicionar uma lista de `tags` e `responses` extras que serão aplicadas a todas as *operações de rota* incluídas neste roteador.
 
-E podemos adicionar uma lista de `dependencies` que serão adicionadas a todas as _operações de rota_ no roteador e serão executadas/resolvidas para cada solicitação feita a elas.
+E podemos adicionar uma lista de `dependencies` que serão adicionadas a todas as *operações de rota* no roteador e serão executadas/resolvidas para cada solicitação feita a elas.
 
 /// tip | "Dica"
 
-Observe que, assim como [dependências em _decoradores de operação de rota_](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank}, nenhum valor será passado para sua _função de operação de rota_.
+Observe que, assim como [dependências em *decoradores de operação de rota*](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, nenhum valor será passado para sua *função de operação de rota*.
 
 ///
 
 O resultado final é que os caminhos dos itens agora são:
 
-- `/items/`
-- `/items/{item_id}`
+* `/items/`
+* `/items/{item_id}`
 
 ...como pretendíamos.
 
-- Elas serão marcadas com uma lista de tags que contêm uma única string `"items"`.
-  - Essas "tags" são especialmente úteis para os sistemas de documentação interativa automática (usando OpenAPI).
-- Todas elas incluirão as `responses` predefinidas.
-- Todas essas _operações de rota_ terão a lista de `dependencies` avaliada/executada antes delas.
-  - Se você também declarar dependências em uma _operação de rota_ específica, **elas também serão executadas**.
-  - As dependências do roteador são executadas primeiro, depois as [`dependencies` no decorador](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} e, em seguida, as dependências de parâmetros normais.
-  - Você também pode adicionar [dependências de `Segurança` com `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=\_blank}.
+* Elas serão marcadas com uma lista de tags que contêm uma única string `"items"`.
+    * Essas "tags" são especialmente úteis para os sistemas de documentação interativa automática (usando OpenAPI).
+* Todas elas incluirão as `responses` predefinidas.
+* Todas essas *operações de rota* terão a lista de `dependencies` avaliada/executada antes delas.
+    * Se você também declarar dependências em uma *operação de rota* específica, **elas também serão executadas**.
+    * As dependências do roteador são executadas primeiro, depois as [`dependencies` no decorador](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} e, em seguida, as dependências de parâmetros normais.
+    * Você também pode adicionar [dependências de `Segurança` com `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=_blank}.
 
 /// tip | "Dica"
 
-Ter `dependências` no `APIRouter` pode ser usado, por exemplo, para exigir autenticação para um grupo inteiro de _operações de rota_. Mesmo que as dependências não sejam adicionadas individualmente a cada uma delas.
+Ter `dependências` no `APIRouter` pode ser usado, por exemplo, para exigir autenticação para um grupo inteiro de *operações de rota*. Mesmo que as dependências não sejam adicionadas individualmente a cada uma delas.
 
 ///
 
@@ -262,9 +262,9 @@ from .dependencies import get_token_header
 
 significaria:
 
-- Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) vive (o diretório `app/routers/`)...
-- encontre o módulo `dependencies` (um arquivo imaginário em `app/routers/dependencies.py`)...
-- e dele, importe a função `get_token_header`.
+* Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) vive (o diretório `app/routers/`)...
+* encontre o módulo `dependencies` (um arquivo imaginário em `app/routers/dependencies.py`)...
+* e dele, importe a função `get_token_header`.
 
 Mas esse arquivo não existe, nossas dependências estão em um arquivo em `app/dependencies.py`.
 
@@ -282,10 +282,10 @@ from ..dependencies import get_token_header
 
 significa:
 
-- Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) reside (o diretório `app/routers/`)...
-- vá para o pacote pai (o diretório `app/`)...
-- e lá, encontre o módulo `dependencies` (o arquivo em `app/dependencies.py`)...
-- e dele, importe a função `get_token_header`.
+* Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) reside (o diretório `app/routers/`)...
+* vá para o pacote pai (o diretório `app/`)...
+* e lá, encontre o módulo `dependencies` (o arquivo em `app/dependencies.py`)...
+* e dele, importe a função `get_token_header`.
 
 Isso funciona corretamente! 🎉
 
@@ -299,11 +299,11 @@ from ...dependencies import get_token_header
 
 isso significaria:
 
-- Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) vive (o diretório `app/routers/`)...
-- vá para o pacote pai (o diretório `app/`)...
-- então vá para o pai daquele pacote (não há pacote pai, `app` é o nível superior 😱)...
-- e lá, encontre o módulo `dependencies` (o arquivo em `app/dependencies.py`)...
-- e dele, importe a função `get_token_header`.
+* Começando no mesmo pacote em que este módulo (o arquivo `app/routers/items.py`) vive (o diretório `app/routers/`)...
+* vá para o pacote pai (o diretório `app/`)...
+* então vá para o pai daquele pacote (não há pacote pai, `app` é o nível superior 😱)...
+* e lá, encontre o módulo `dependencies` (o arquivo em `app/dependencies.py`)...
+* e dele, importe a função `get_token_header`.
 
 Isso se referiria a algum pacote acima de `app/`, com seu próprio arquivo `__init__.py`, etc. Mas não temos isso. Então, isso geraria um erro em nosso exemplo. 🚨
 
@@ -311,9 +311,9 @@ Mas agora você sabe como funciona, então você pode usar importações relativ
 
 ### Adicione algumas `tags`, `respostas` e `dependências` personalizadas
 
-Não estamos adicionando o prefixo `/items` nem `tags=["items"]` a cada _operação de rota_ porque os adicionamos ao `APIRouter`.
+Não estamos adicionando o prefixo `/items` nem `tags=["items"]` a cada *operação de rota* porque os adicionamos ao `APIRouter`.
 
-Mas ainda podemos adicionar _mais_ `tags` que serão aplicadas a uma _operação de rota_ específica, e também algumas `respostas` extras específicas para essa _operação de rota_:
+Mas ainda podemos adicionar _mais_ `tags` que serão aplicadas a uma *operação de rota* específica, e também algumas `respostas` extras específicas para essa *operação de rota*:
 
 ```Python hl_lines="30-31" title="app/routers/items.py"
 {!../../docs_src/bigger_applications/app/routers/items.py!}
@@ -341,7 +341,7 @@ E como a maior parte de sua lógica agora viverá em seu próprio módulo espec�
 
 Você importa e cria uma classe `ReadyAPI` normalmente.
 
-E podemos até declarar [dependências globais](dependencies/global-dependencies.md){.internal-link target=\_blank} que serão combinadas com as dependências para cada `APIRouter`:
+E podemos até declarar [dependências globais](dependencies/global-dependencies.md){.internal-link target=_blank} que serão combinadas com as dependências para cada `APIRouter`:
 
 ```Python hl_lines="1  3  7" title="app/main.py"
 {!../../docs_src/bigger_applications/app/main.py!}
@@ -367,9 +367,9 @@ from .routers import items, users
 
 significa:
 
-- Começando no mesmo pacote em que este módulo (o arquivo `app/main.py`) reside (o diretório `app/`)...
-- procure o subpacote `routers` (o diretório em `app/routers/`)...
-- e dele, importe o submódulo `items` (o arquivo em `app/routers/items.py`) e `users` (o arquivo em `app/routers/users.py`)...
+* Começando no mesmo pacote em que este módulo (o arquivo `app/main.py`) reside (o diretório `app/`)...
+* procure o subpacote `routers` (o diretório em `app/routers/`)...
+* e dele, importe o submódulo `items` (o arquivo em `app/routers/items.py`) e `users` (o arquivo em `app/routers/users.py`)...
 
 O módulo `items` terá uma variável `router` (`items.router`). Esta é a mesma que criamos no arquivo `app/routers/items.py`, é um objeto `APIRouter`.
 
@@ -442,7 +442,7 @@ Ele incluirá todas as rotas daquele roteador como parte dele.
 
 /// note | "Detalhe Técnico"
 
-Na verdade, ele criará internamente uma _operação de rota_ para cada _operação de rota_ que foi declarada no `APIRouter`.
+Na verdade, ele criará internamente uma *operação de rota* para cada *operação de rota* que foi declarada no `APIRouter`.
 
 Então, nos bastidores, ele realmente funcionará como se tudo fosse o mesmo aplicativo único.
 
@@ -462,7 +462,7 @@ Então não afetará o desempenho. ⚡
 
 Agora, vamos imaginar que sua organização lhe deu o arquivo `app/internal/admin.py`.
 
-Ele contém um `APIRouter` com algumas _operações de rota_ de administração que sua organização compartilha entre vários projetos.
+Ele contém um `APIRouter` com algumas *operações de rota* de administração que sua organização compartilha entre vários projetos.
 
 Para este exemplo, será super simples. Mas digamos que, como ele é compartilhado com outros projetos na organização, não podemos modificá-lo e adicionar um `prefix`, `dependencies`, `tags`, etc. diretamente ao `APIRouter`:
 
@@ -470,7 +470,7 @@ Para este exemplo, será super simples. Mas digamos que, como ele é compartilha
 {!../../docs_src/bigger_applications/app/internal/admin.py!}
 ```
 
-Mas ainda queremos definir um `prefixo` personalizado ao incluir o `APIRouter` para que todas as suas _operações de rota_ comecem com `/admin`, queremos protegê-lo com as `dependências` que já temos para este projeto e queremos incluir `tags` e `responses`.
+Mas ainda queremos definir um `prefixo` personalizado ao incluir o `APIRouter` para que todas as suas *operações de rota* comecem com `/admin`, queremos protegê-lo com as `dependências` que já temos para este projeto e queremos incluir `tags` e `responses`.
 
 Podemos declarar tudo isso sem precisar modificar o `APIRouter` original passando esses parâmetros para `app.include_router()`:
 
@@ -480,20 +480,20 @@ Podemos declarar tudo isso sem precisar modificar o `APIRouter` original passand
 
 Dessa forma, o `APIRouter` original permanecerá inalterado, para que possamos compartilhar o mesmo arquivo `app/internal/admin.py` com outros projetos na organização.
 
-O resultado é que em nosso aplicativo, cada uma das _operações de rota_ do módulo `admin` terá:
+O resultado é que em nosso aplicativo, cada uma das *operações de rota* do módulo `admin` terá:
 
-- O prefixo `/admin`.
-- A tag `admin`.
-- A dependência `get_token_header`.
-- A resposta `418`. 🍵
+* O prefixo `/admin`.
+* A tag `admin`.
+* A dependência `get_token_header`.
+* A resposta `418`. 🍵
 
 Mas isso afetará apenas o `APIRouter` em nosso aplicativo, e não em nenhum outro código que o utilize.
 
 Assim, por exemplo, outros projetos poderiam usar o mesmo `APIRouter` com um método de autenticação diferente.
 
-### Incluir uma _operação de rota_
+### Incluir uma *operação de rota*
 
-Também podemos adicionar _operações de rota_ diretamente ao aplicativo `ReadyAPI`.
+Também podemos adicionar *operações de rota* diretamente ao aplicativo `ReadyAPI`.
 
 Aqui fazemos isso... só para mostrar que podemos 🤷:
 
@@ -501,7 +501,7 @@ Aqui fazemos isso... só para mostrar que podemos 🤷:
 {!../../docs_src/bigger_applications/app/main.py!}
 ```
 
-e funcionará corretamente, junto com todas as outras _operações de rota_ adicionadas com `app.include_router()`.
+e funcionará corretamente, junto com todas as outras *operações de rota* adicionadas com `app.include_router()`.
 
 /// info | "Detalhes Técnicos"
 
@@ -511,9 +511,9 @@ e funcionará corretamente, junto com todas as outras _operações de rota_ adic
 
 Os `APIRouter`s não são "montados", eles não são isolados do resto do aplicativo.
 
-Isso ocorre porque queremos incluir suas _operações de rota_ no esquema OpenAPI e nas interfaces de usuário.
+Isso ocorre porque queremos incluir suas *operações de rota* no esquema OpenAPI e nas interfaces de usuário.
 
-Como não podemos simplesmente isolá-los e "montá-los" independentemente do resto, as _operações de rota_ são "clonadas" (recriadas), não incluídas diretamente.
+Como não podemos simplesmente isolá-los e "montá-los" independentemente do resto, as *operações de rota* são "clonadas" (recriadas), não incluídas diretamente.
 
 ///
 
@@ -539,7 +539,7 @@ Você verá a documentação automática da API, incluindo os caminhos de todos 
 
 ## Incluir o mesmo roteador várias vezes com `prefixos` diferentes
 
-Você também pode usar `.include_router()` várias vezes com o _mesmo_ roteador usando prefixos diferentes.
+Você também pode usar `.include_router()` várias vezes com o *mesmo* roteador usando prefixos diferentes.
 
 Isso pode ser útil, por exemplo, para expor a mesma API sob prefixos diferentes, por exemplo, `/api/v1` e `/api/latest`.
 
@@ -553,4 +553,4 @@ Da mesma forma que você pode incluir um `APIRouter` em um aplicativo `ReadyAPI`
 router.include_router(other_router)
 ```
 
-Certifique-se de fazer isso antes de incluir `router` no aplicativo `ReadyAPI`, para que as _operações de rota_ de `other_router` também sejam incluídas.
+Certifique-se de fazer isso antes de incluir `router` no aplicativo `ReadyAPI`, para que as *operações de rota* de `other_router` também sejam incluídas.

@@ -14,7 +14,6 @@ Hey! 👋
 This is me:
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.maintainers %}
 
@@ -24,7 +23,7 @@ This is me:
 </div>
 {% endif %}
 
-I'm the creator of **ReadyAPI**. You can read more about that in [Help ReadyAPI - Get Help - Connect with the author](help-readyapi.md#connect-with-the-author){.internal-link target=\_blank}.
+I'm the creator of **ReadyAPI**. You can read more about that in [Help ReadyAPI - Get Help - Connect with the author](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
 
 ...But here I want to show you the community.
 
@@ -34,10 +33,10 @@ I'm the creator of **ReadyAPI**. You can read more about that in [Help ReadyAPI 
 
 These are the people that:
 
-- [Help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank}.
-- [Create Pull Requests](help-readyapi.md#create-a-pull-request){.internal-link target=\_blank}.
-- Review Pull Requests, [especially important for translations](contributing.md#translations){.internal-link target=\_blank}.
-- Help [manage the repository](management-tasks.md){.internal-link target=\_blank} (team members).
+* [Help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}.
+* [Create Pull Requests](help-readyapi.md#create-a-pull-request){.internal-link target=_blank}.
+* Review Pull Requests, [especially important for translations](contributing.md#translations){.internal-link target=_blank}.
+* Help [manage the repository](management-tasks.md){.internal-link target=_blank} (team members).
 
 All these tasks help maintain the repository.
 
@@ -47,7 +46,7 @@ A round of applause to them. 👏 🙇
 
 This is the current list of team members. 😎
 
-They have different levels of involvement and permissions, they can perform [repository management tasks](./management-tasks.md){.internal-link target=\_blank} and together we [manage the ReadyAPI repository](./management.md){.internal-link target=\_blank}.
+They have different levels of involvement and permissions, they can perform [repository management tasks](./management-tasks.md){.internal-link target=_blank} and together we  [manage the ReadyAPI repository](./management.md){.internal-link target=_blank}.
 
 <div class="user-list user-list-center">
 {% for user in members["members"] %}
@@ -57,11 +56,11 @@ They have different levels of involvement and permissions, they can perform [rep
 
 </div>
 
-Although the team members have the permissions to perform privileged tasks, all the [help from others maintaining ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=\_blank} is very much appreciated! 🙇‍♂️
+Although the team members have the permissions to perform privileged tasks, all the [help from others maintaining ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=_blank} is very much appreciated! 🙇‍♂️
 
 ## ReadyAPI Experts
 
-These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank}. 🙇
+These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🙇
 
 They have proven to be **ReadyAPI Experts** by helping many others. ✨
 
@@ -69,24 +68,23 @@ They have proven to be **ReadyAPI Experts** by helping many others. ✨
 
 You could become an official ReadyAPI Expert too!
 
-Just [help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank}. 🤓
+Just [help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🤓
 
 ///
 
 You can see the **ReadyAPI Experts** for:
 
-- [Last Month](#readyapi-experts-last-month) 🤓
-- [3 Months](#readyapi-experts-3-months) 😎
-- [6 Months](#readyapi-experts-6-months) 🧐
-- [1 Year](#readyapi-experts-1-year) 🧑‍🔬
-- [**All Time**](#readyapi-experts-all-time) 🧙
+* [Last Month](#readyapi-experts-last-month) 🤓
+* [3 Months](#readyapi-experts-3-months) 😎
+* [6 Months](#readyapi-experts-6-months) 🧐
+* [1 Year](#readyapi-experts-1-year) 🧑‍🔬
+* [**All Time**](#readyapi-experts-all-time) 🧙
 
 ### ReadyAPI Experts - Last Month
 
-These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank} during the last month. 🤓
+These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last month. 🤓
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.last_month_experts[:10] %}
 
@@ -98,10 +96,9 @@ These are the users that have been [helping others the most with questions in Gi
 
 ### ReadyAPI Experts - 3 Months
 
-These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank} during the last 3 months. 😎
+These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last 3 months. 😎
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.three_months_experts[:10] %}
 
@@ -113,10 +110,9 @@ These are the users that have been [helping others the most with questions in Gi
 
 ### ReadyAPI Experts - 6 Months
 
-These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank} during the last 6 months. 🧐
+These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last 6 months. 🧐
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.six_months_experts[:10] %}
 
@@ -128,10 +124,9 @@ These are the users that have been [helping others the most with questions in Gi
 
 ### ReadyAPI Experts - 1 Year
 
-These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank} during the last year. 🧑‍🔬
+These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last year. 🧑‍🔬
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.one_year_experts[:20] %}
 
@@ -145,10 +140,9 @@ These are the users that have been [helping others the most with questions in Gi
 
 Here are the all time **ReadyAPI Experts**. 🤓🤯
 
-These are the users that have [helped others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=\_blank} through _all time_. 🧙
+These are the users that have [helped others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} through *all time*. 🧙
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.experts[:50] %}
 
@@ -162,12 +156,11 @@ These are the users that have [helped others the most with questions in GitHub](
 
 Here are the **Top Contributors**. 👷
 
-These users have [created the most Pull Requests](help-readyapi.md#create-a-pull-request){.internal-link target=\_blank} that have been _merged_.
+These users have [created the most Pull Requests](help-readyapi.md#create-a-pull-request){.internal-link target=_blank} that have been *merged*.
 
 They have contributed source code, documentation, translations, etc. 📦
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.top_contributors[:50] %}
 
@@ -183,10 +176,9 @@ There are many other contributors (more than a hundred), you can see them all in
 
 These users are the **Top Translation Reviewers**. 🕵️
 
-I only speak a few languages (and not very well 😅). So, the reviewers are the ones that have the [**power to approve translations**](contributing.md#translations){.internal-link target=\_blank} of the documentation. Without them, there wouldn't be documentation in several other languages.
+I only speak a few languages (and not very well 😅). So, the reviewers are the ones that have the [**power to approve translations**](contributing.md#translations){.internal-link target=_blank} of the documentation. Without them, there wouldn't be documentation in several other languages.
 
 {% if people %}
-
 <div class="user-list user-list-center">
 {% for user in people.top_translations_reviewers[:50] %}
 

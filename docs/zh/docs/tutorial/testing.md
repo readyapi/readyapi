@@ -2,7 +2,7 @@
 
 感谢 <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>，测试**ReadyAPI** 应用轻松又愉快。
 
-它基于 <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>， 而 HTTPX 又是基于 Requests 设计的，所以很相似且易懂。
+它基于 <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>， 而HTTPX又是基于Requests设计的，所以很相似且易懂。
 
 有了它，你可以直接与**ReadyAPI**一起使用 <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a>。
 
@@ -24,7 +24,7 @@
 
 像使用 `httpx` 那样使用 `TestClient` 对象。
 
-为你需要检查的地方用标准的 Python 表达式写个简单的 `assert` 语句（重申，标准的`pytest`）。
+为你需要检查的地方用标准的Python表达式写个简单的 `assert` 语句（重申，标准的`pytest`）。
 
 ```Python hl_lines="2  12  15-18"
 {!../../docs_src/app_testing/tutorial001.py!}
@@ -34,7 +34,7 @@
 
 注意测试函数是普通的 `def`，不是 `async def`。
 
-还有 client 的调用也是普通的调用，不是用 `await`。
+还有client的调用也是普通的调用，不是用 `await`。
 
 这让你可以直接使用 `pytest` 而不会遇到麻烦。
 
@@ -44,13 +44,13 @@
 
 你也可以用 `from starlette.testclient import TestClient`。
 
-**ReadyAPI** 提供了和 `starlette.testclient` 一样的 `readyapi.testclient`，只是为了方便开发者。但它直接来自 Starlette。
+**ReadyAPI** 提供了和 `starlette.testclient` 一样的 `readyapi.testclient`，只是为了方便开发者。但它直接来自Starlette。
 
 ///
 
 /// tip | "提示"
 
-除了发送请求之外，如果你还想测试时在 ReadyAPI 应用中调用 `async` 函数（例如异步数据库函数）， 可以在高级教程中看下 [Async Tests](../advanced/async-tests.md){.internal-link target=\_blank} 。
+除了发送请求之外，如果你还想测试时在ReadyAPI应用中调用 `async` 函数（例如异步数据库函数）， 可以在高级教程中看下 [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} 。
 
 ///
 
@@ -62,7 +62,7 @@
 
 ### **ReadyAPI** app 文件
 
-假设你有一个像 [更大的应用](bigger-applications.md){.internal-link target=\_blank} 中所描述的文件结构:
+假设你有一个像 [更大的应用](bigger-applications.md){.internal-link target=_blank} 中所描述的文件结构:
 
 ```
 .
@@ -73,15 +73,16 @@
 
 在 `main.py` 文件中你有一个 **ReadyAPI** app:
 
+
 ```Python
 {!../../docs_src/app_testing/main.py!}
 ```
 
 ### 测试文件
 
-然后你会有一个包含测试的文件 `test_main.py` 。app 可以像 Python 包那样存在（一样是目录，但有个 `__init__.py` 文件）：
+然后你会有一个包含测试的文件 `test_main.py` 。app可以像Python包那样存在（一样是目录，但有个 `__init__.py` 文件）：
 
-```hl_lines="5"
+``` hl_lines="5"
 .
 ├── app
 │   ├── __init__.py
@@ -113,7 +114,7 @@
 │   └── test_main.py
 ```
 
-假设现在包含**ReadyAPI** app 的文件 `main.py` 有些其他**路径操作**。
+假设现在包含**ReadyAPI** app的文件 `main.py`  有些其他**路径操作**。
 
 有个 `GET` 操作会返回错误。
 
@@ -181,25 +182,25 @@ Prefer to use the `Annotated` version if possible.
 {!> ../../docs_src/app_testing/app_b/test_main.py!}
 ```
 
-每当你需要客户端在请求中传递信息，但你不知道如何传递时，你可以通过搜索（谷歌）如何用 `httpx`做，或者是用 `requests` 做，毕竟 HTTPX 的设计是基于 Requests 的设计的。
+每当你需要客户端在请求中传递信息，但你不知道如何传递时，你可以通过搜索（谷歌）如何用 `httpx`做，或者是用 `requests` 做，毕竟HTTPX的设计是基于Requests的设计的。
 
 接着只需在测试中同样操作。
 
 示例：
 
-- 传一个*路径* 或*查询* 参数，添加到 URL 上。
-- 传一个 JSON 体，传一个 Python 对象(例如一个`dict`)到参数 `json`。
-- 如果你需要发送 _Form Data_ 而不是 JSON，使用 `data` 参数。
-- 要发送 _headers_，传 `dict` 给 `headers` 参数。
-- 对于 _cookies_，传 `dict` 给 `cookies` 参数。
+* 传一个*路径* 或*查询* 参数，添加到URL上。
+* 传一个JSON体，传一个Python对象(例如一个`dict`)到参数 `json`。
+* 如果你需要发送 *Form Data* 而不是 JSON，使用 `data` 参数。
+* 要发送 *headers*，传 `dict` 给 `headers` 参数。
+* 对于 *cookies*，传 `dict` 给 `cookies` 参数。
 
 关于如何传数据给后端的更多信息 (使用`httpx` 或 `TestClient`)，请查阅 <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX 文档</a>.
 
 /// info | "信息"
 
-注意 `TestClient` 接收可以被转化为 JSON 的数据，而不是 Pydantic 模型。
+注意 `TestClient` 接收可以被转化为JSON的数据，而不是Pydantic模型。
 
-如果你在测试中有一个 Pydantic 模型，并且你想在测试时发送它的数据给应用，你可以使用在[JSON Compatible Encoder](encoder.md){.internal-link target=\_blank}介绍的`jsonable_encoder` 。
+如果你在测试中有一个Pydantic模型，并且你想在测试时发送它的数据给应用，你可以使用在[JSON Compatible Encoder](encoder.md){.internal-link target=_blank}介绍的`jsonable_encoder` 。
 
 ///
 

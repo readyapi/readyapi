@@ -14,8 +14,8 @@ Garanta que `yield` é utilizado apenas uma vez.
 
 Qualquer função que possa ser utilizada com:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 pode ser utilizada como uma dependência do **ReadyAPI**.
 
@@ -33,7 +33,7 @@ Apenas o código anterior a declaração com `yield` e o código contendo essa d
 {!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-O valor gerado (yielded) é o que é injetado nas _operações de rota_ e outras dependências.
+O valor gerado (yielded) é o que é injetado nas *operações de rota* e outras dependências.
 
 ```Python hl_lines="4"
 {!../../docs_src/dependencies/tutorial007.py!}
@@ -57,7 +57,7 @@ O **ReadyAPI** saberá o que fazer com cada uma, da mesma forma que as dependên
 
 Se você utilizar um bloco `try` em uma dependência com `yield`, você irá capturar qualquer exceção que for lançada enquanto a dependência é utilizada.
 
-Por exemplo, se algum código em um certo momento no meio da operação, em outra dependência ou em uma _operação de rota_, fizer um "rollback" de uma transação de banco de dados ou causar qualquer outro erro, você irá capturar a exceção em sua dependência.
+Por exemplo, se algum código em um certo momento no meio da operação, em outra dependência ou em uma *operação de rota*, fizer um "rollback" de uma transação de banco de dados ou causar qualquer outro erro, você irá capturar a exceção em sua dependência.
 
 Então, você pode procurar por essa exceção específica dentro da dependência com `except AlgumaExcecao`.
 
@@ -165,7 +165,7 @@ Da mesma forma, você pode lançar uma `httpexception` ou algo parecido no códi
 
 /// tip | "Dica"
 
-Essa é uma técnica relativamente avançada, e na maioria dos casos você não precisa dela totalmente, já que você pode lançar exceções (incluindo `httpexception`) dentro do resto do código da sua aplicação, por exemplo, em uma _função de operação de rota_.
+Essa é uma técnica relativamente avançada, e na maioria dos casos você não precisa dela totalmente, já que você pode lançar exceções (incluindo `httpexception`) dentro do resto do código da sua aplicação, por exemplo, em uma *função de operação de rota*.
 
 Mas ela existe para ser utilizada caso você precise. 🤓
 
@@ -201,7 +201,7 @@ Utilize a versão com `Annotated` se possível.
 
 ////
 
-Uma alternativa que você pode utilizar para capturar exceções (e possivelmente lançar outra HTTPException) é criar um [Manipulador de Exceções Customizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank}.
+Uma alternativa que você pode utilizar para capturar exceções (e possivelmente lançar outra HTTPException) é criar um [Manipulador de Exceções Customizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank}.
 
 ## Dependências com `yield` e `except`
 
@@ -237,7 +237,7 @@ utilize a versão com `Annotated` se possível.
 
 ////
 
-Neste caso, o cliente irá ver uma resposta _HTTP 500 Internal Server Error_ como deveria acontecer, já que não estamos levantando nenhuma `HTTPException` ou coisa parecida, mas o servidor **não terá nenhum log** ou qualquer outra indicação de qual foi o erro. 😱
+Neste caso, o cliente irá ver uma resposta *HTTP 500 Internal Server Error* como deveria acontecer, já que não estamos levantando nenhuma `HTTPException` ou coisa parecida, mas o servidor **não terá nenhum log** ou qualquer outra indicação de qual foi o erro. 😱
 
 ### Sempre levante (`raise`) exceções em Dependências com `yield` e `except`
 
@@ -275,7 +275,7 @@ Utilize a versão com `Annotated` se possível.
 
 ////
 
-Agora o cliente irá receber a mesma resposta _HTTP 500 Internal Server Error_, mas o servidor terá nosso `InternalError` personalizado nos logs. 😎
+Agora o cliente irá receber a mesma resposta *HTTP 500 Internal Server Error*, mas o servidor terá nosso `InternalError` personalizado nos logs. 😎
 
 ## Execução de dependências com `yield`
 
@@ -318,7 +318,7 @@ participant tasks as Tarefas de Background
 
 /// info | "Informação"
 
-Apenas **uma resposta** será enviada para o cliente. Ela pode ser uma das respostas de erro, ou então a resposta da _operação de rota_.
+Apenas **uma resposta** será enviada para o cliente. Ela pode ser uma das respostas de erro, ou então a resposta da *operação de rota*.
 
 Após uma dessas respostas ser enviada, nenhuma outra resposta pode ser enviada
 
@@ -326,7 +326,7 @@ Após uma dessas respostas ser enviada, nenhuma outra resposta pode ser enviada
 
 /// tip | "Dica"
 
-Esse diagrama mostra `HttpException`, mas você pode levantar qualquer outra exceção que você capture em uma dependência com `yield` ou um [Manipulador de exceções personalizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank}.
+Esse diagrama mostra `HttpException`, mas você pode levantar qualquer outra exceção que você capture em uma dependência com `yield` ou um [Manipulador de exceções personalizado](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank}.
 
 Se você lançar qualquer exceção, ela será passada para as dependências com yield, inlcuindo a `HTTPException`. Na maioria dos casos você vai querer relançar essa mesma exceção ou uma nova a partir da dependência com `yield` para garantir que ela seja tratada adequadamente.
 
@@ -350,7 +350,7 @@ Isso foi modificado na versão 0.110.0 para consertar o consumo de memória não
 
 ### Tarefas de Background e Dependências com `yield`, Detalhes Técnicos
 
-Antes do ReadyAPI 0.106.0, levantar exceções após um `yield` não era possível, o código de saída nas dependências com `yield` era executado _após_ a resposta ser enviada, então os [Manipuladores de Exceções](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=\_blank} já teriam executado.
+Antes do ReadyAPI 0.106.0, levantar exceções após um `yield` não era possível, o código de saída nas dependências com `yield` era executado *após* a resposta ser enviada, então os [Manipuladores de Exceções](../handling-errors.md#instalando-manipuladores-de-excecoes-customizados){.internal-link target=_blank} já teriam executado.
 
 Isso foi implementado dessa forma principalmente para permitir que os mesmos objetos fornecidos ("yielded") pelas dependências dentro de tarefas de background fossem reutilizados, por que o código de saída era executado antes das tarefas de background serem finalizadas.
 
@@ -410,9 +410,9 @@ Você também pode usá-los dentro de dependências com `yield` do **ReadyAPI** 
 
 Outra forma de criar um gerenciador de contexto é utilizando:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> ou
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 Para decorar uma função com um único `yield`.
 

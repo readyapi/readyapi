@@ -58,7 +58,7 @@ Utilize a versão com `Annotated` se possível.
 
 ////
 
-Mas assim obtemos um `dict` como valor do parâmetro `commons` na _função de operação de rota_.
+Mas assim obtemos um `dict` como valor do parâmetro `commons` na *função de operação de rota*.
 
 E sabemos que editores de texto não têm como oferecer muitas funcionalidades (como sugestões automáticas) para objetos do tipo `dict`, por que não há como eles saberem o tipo das chaves e dos valores.
 
@@ -74,7 +74,7 @@ O fator principal para uma dependência é que ela deve ser "chamável"
 
 Um objeto "chamável" em Python é qualquer coisa que o Python possa "chamar" como uma função
 
-Então se você tiver um objeto `alguma_coisa` (que pode _não_ ser uma função) que você possa "chamar" (executá-lo) dessa maneira:
+Então se você tiver um objeto `alguma_coisa` (que pode *não* ser uma função) que você possa "chamar" (executá-lo) dessa maneira:
 
 ```Python
 something()
@@ -103,7 +103,7 @@ class Cat:
 fluffy = Cat(name="Mr Fluffy")
 ```
 
-Nesse caso, `fluffy` é uma instância da classe `Cat`.
+Nesse caso,  `fluffy` é uma instância da classe `Cat`.
 
 E para criar `fluffy`, você está "chamando" `Cat`.
 
@@ -113,9 +113,9 @@ Então, no **ReadyAPI**, você pode utilizar uma classe Python como uma dependê
 
 O que o ReadyAPI realmente verifica, é se a dependência é algo chamável (função, classe, ou outra coisa) e os parâmetros que foram definidos.
 
-Se você passar algo "chamável" como uma dependência do **ReadyAPI**, o framework irá analisar os parâmetros desse "chamável" e processá-los da mesma forma que os parâmetros de uma _função de operação de rota_. Incluindo as sub-dependências.
+Se você passar algo "chamável" como uma dependência do **ReadyAPI**, o framework irá analisar os parâmetros desse "chamável" e processá-los da mesma forma que os parâmetros de uma *função de operação de rota*. Incluindo as sub-dependências.
 
-Isso também se aplica a objetos chamáveis que não recebem nenhum parâmetro. Da mesma forma que uma _função de operação de rota_ sem parâmetros.
+Isso também se aplica a objetos chamáveis que não recebem nenhum parâmetro. Da mesma forma que uma *função de operação de rota* sem parâmetros.
 
 Então, podemos mudar o "injetável" na dependência `common_parameters` acima para a classe `CommonQueryParams`:
 
@@ -283,9 +283,9 @@ Esses parâmetros são utilizados pelo **ReadyAPI** para "definir" a dependênci
 
 Em ambos os casos teremos:
 
-- Um parâmetro de consulta `q` opcional do tipo `str`.
-- Um parâmetro de consulta `skip` do tipo `int`, com valor padrão `0`.
-- Um parâmetro de consulta `limit` do tipo `int`, com valor padrão `100`.
+* Um parâmetro de consulta `q` opcional do tipo `str`.
+* Um parâmetro de consulta `skip` do tipo `int`, com valor padrão `0`.
+* Um parâmetro de consulta `limit` do tipo `int`, com valor padrão `100`.
 
 Os dados serão convertidos, validados, documentados no esquema da OpenAPI e etc nos dois casos.
 
@@ -519,7 +519,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-O **ReadyAPI** nos fornece um atalho para esses casos, onde a dependência é _especificamente_ uma classe que o **ReadyAPI** irá "chamar" para criar uma instância da própria classe.
+O **ReadyAPI** nos fornece um atalho para esses casos, onde a dependência é *especificamente* uma classe que o **ReadyAPI** irá "chamar" para criar uma instância da própria classe.
 
 Para esses casos específicos, você pode fazer o seguinte:
 
@@ -571,7 +571,7 @@ commons: CommonQueryParams = Depends()
 
 ////
 
-Você declara a dependência como o tipo do parâmetro, e utiliza `Depends()` sem nenhum parâmetro, em vez de ter que escrever a classe _novamente_ dentro de `Depends(CommonQueryParams)`.
+Você declara a dependência como o tipo do parâmetro, e utiliza `Depends()` sem nenhum parâmetro, em vez de ter que escrever a classe *novamente* dentro de `Depends(CommonQueryParams)`.
 
 O mesmo exemplo ficaria então dessa forma:
 
@@ -631,7 +631,7 @@ Utilize a versão com `Annotated` se possível.
 
 /// tip | "Dica"
 
-Se isso parece mais confuso do que útil, não utilize, você não _precisa_ disso.
+Se isso parece mais confuso do que útil, não utilize, você não *precisa* disso.
 
 É apenas um atalho. Por que o **ReadyAPI** se preocupa em ajudar a minimizar a repetição de código.
 

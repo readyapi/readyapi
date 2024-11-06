@@ -68,7 +68,7 @@ Beachten Sie, dass in diesem Fall das `item`, welches vom Body genommen wird, op
 
 ## Mehrere Body-Parameter
 
-Im vorherigen Beispiel erwartete die _Pfadoperation_ einen JSON-Body mit den Attributen eines `Item`s, etwa:
+Im vorherigen Beispiel erwartete die *Pfadoperation* einen JSON-Body mit den Attributen eines `Item`s, etwa:
 
 ```JSON
 {
@@ -376,9 +376,9 @@ statt:
 
 ## Zusammenfassung
 
-Sie können mehrere Body-Parameter zu ihrer _Pfadoperation-Funktion_ hinzufügen, obwohl ein Request nur einen einzigen Body enthalten kann.
+Sie können mehrere Body-Parameter zu ihrer *Pfadoperation-Funktion* hinzufügen, obwohl ein Request nur einen einzigen Body enthalten kann.
 
-**ReadyAPI** wird sich darum kümmern, Ihnen korrekte Daten in Ihrer Funktion zu überreichen, und das korrekte Schema in der _Pfadoperation_ zu validieren und zu dokumentieren.
+**ReadyAPI** wird sich darum kümmern, Ihnen korrekte Daten in Ihrer Funktion zu überreichen, und das korrekte Schema in der *Pfadoperation* zu validieren und zu dokumentieren.
 
 Sie können auch einzelne Werte deklarieren, die als Teil des Bodys empfangen werden.
 

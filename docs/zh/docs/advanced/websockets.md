@@ -16,7 +16,7 @@ $ pip install websockets
 
 ### 在生产环境中
 
-在您的生产系统中，您可能使用现代框架（如 React、Vue.js 或 Angular）创建了一个前端。
+在您的生产系统中，您可能使用现代框架（如React、Vue.js或Angular）创建了一个前端。
 
 要使用 WebSockets 与后端进行通信，您可能会使用前端的工具。
 
@@ -26,7 +26,7 @@ $ pip install websockets
 
 ---
 
-但是，在本示例中，我们将使用一个非常简单的 HTML 文档，其中包含一些 JavaScript，全部放在一个长字符串中。
+但是，在本示例中，我们将使用一个非常简单的HTML文档，其中包含一些JavaScript，全部放在一个长字符串中。
 
 当然，这并不是最优的做法，您不应该在生产环境中使用它。
 
@@ -100,14 +100,14 @@ $ uvicorn main:app --reload
 
 在 WebSocket 端点中，您可以从 `readyapi` 导入并使用以下内容：
 
-- `Depends`
-- `Security`
-- `Cookie`
-- `Header`
-- `Path`
-- `Query`
+* `Depends`
+* `Security`
+* `Cookie`
+* `Header`
+* `Path`
+* `Query`
 
-它们的工作方式与其他 ReadyAPI 端点/ _路径操作_ 相同：
+它们的工作方式与其他 ReadyAPI 端点/ *路径操作* 相同：
 
 //// tab | Python 3.10+
 
@@ -183,8 +183,8 @@ $ uvicorn main:app --reload
 
 在页面中，您可以设置：
 
-- "Item ID"，用于路径。
-- "Token"，作为查询参数。
+* "Item ID"，用于路径。
+* "Token"，作为查询参数。
 
 /// tip
 
@@ -218,9 +218,9 @@ $ uvicorn main:app --reload
 
 尝试以下操作：
 
-- 使用多个浏览器选项卡打开应用程序。
-- 从这些选项卡中发送消息。
-- 然后关闭其中一个选项卡。
+* 使用多个浏览器选项卡打开应用程序。
+* 从这些选项卡中发送消息。
+* 然后关闭其中一个选项卡。
 
 这将引发 `WebSocketDisconnect` 异常，并且所有其他客户端都会收到类似以下的消息：
 
@@ -242,5 +242,5 @@ Client #1596980209979 left the chat
 
 要了解更多选项，请查看 Starlette 的文档：
 
-- [WebSocket 类](https://www.starlette.io/websockets/)
-- [基于类的 WebSocket 处理](https://www.starlette.io/endpoints/#websocketendpoint)。
+* [WebSocket 类](https://www.starlette.io/websockets/)
+* [基于类的 WebSocket 处理](https://www.starlette.io/endpoints/#websocketendpoint)。

@@ -10,7 +10,7 @@ The normal (default) process, is as follows.
 
 A `ReadyAPI` application (instance) has an `.openapi()` method that is expected to return the OpenAPI schema.
 
-As part of the application object creation, a _path operation_ for `/openapi.json` (or for whatever you set your `openapi_url`) is registered.
+As part of the application object creation, a *path operation* for `/openapi.json` (or for whatever you set your `openapi_url`) is registered.
 
 It just returns a JSON response with the result of the application's `.openapi()` method.
 
@@ -20,12 +20,12 @@ If it doesn't, it generates them using the utility function at `readyapi.openapi
 
 And that function `get_openapi()` receives as parameters:
 
-- `title`: The OpenAPI title, shown in the docs.
-- `version`: The version of your API, e.g. `2.5.0`.
-- `openapi_version`: The version of the OpenAPI specification used. By default, the latest: `3.1.0`.
-- `summary`: A short summary of the API.
-- `description`: The description of your API, this can include markdown and will be shown in the docs.
-- `routes`: A list of routes, these are each of the registered _path operations_. They are taken from `app.routes`.
+* `title`: The OpenAPI title, shown in the docs.
+* `version`: The version of your API, e.g. `2.5.0`.
+* `openapi_version`: The version of the OpenAPI specification used. By default, the latest: `3.1.0`.
+* `summary`: A short summary of the API.
+* `description`: The description of your API, this can include markdown and will be shown in the docs.
+* `routes`: A list of routes, these are each of the registered *path operations*. They are taken from `app.routes`.
 
 /// info
 
@@ -43,25 +43,19 @@ For example, let's add <a href="https://github.com/Rebilly/ReDoc/blob/master/doc
 
 First, write all your **ReadyAPI** application as normally:
 
-```Python hl_lines="1  4  7-9"
-{!../../docs_src/extending_openapi/tutorial001.py!}
-```
+{* ../../docs_src/extending_openapi/tutorial001.py hl[1,4,7:9] *}
 
 ### Generate the OpenAPI schema
 
 Then, use the same utility function to generate the OpenAPI schema, inside a `custom_openapi()` function:
 
-```Python hl_lines="2  15-21"
-{!../../docs_src/extending_openapi/tutorial001.py!}
-```
+{* ../../docs_src/extending_openapi/tutorial001.py hl[2,15:21] *}
 
 ### Modify the OpenAPI schema
 
 Now you can add the ReDoc extension, adding a custom `x-logo` to the `info` "object" in the OpenAPI schema:
 
-```Python hl_lines="22-24"
-{!../../docs_src/extending_openapi/tutorial001.py!}
-```
+{* ../../docs_src/extending_openapi/tutorial001.py hl[22:24] *}
 
 ### Cache the OpenAPI schema
 
@@ -71,17 +65,13 @@ That way, your application won't have to generate the schema every time a user o
 
 It will be generated only once, and then the same cached schema will be used for the next requests.
 
-```Python hl_lines="13-14  25-26"
-{!../../docs_src/extending_openapi/tutorial001.py!}
-```
+{* ../../docs_src/extending_openapi/tutorial001.py hl[13:14,25:26] *}
 
 ### Override the method
 
 Now you can replace the `.openapi()` method with your new function.
 
-```Python hl_lines="29"
-{!../../docs_src/extending_openapi/tutorial001.py!}
-```
+{* ../../docs_src/extending_openapi/tutorial001.py hl[29] *}
 
 ### Check it
 

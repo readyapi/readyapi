@@ -28,9 +28,9 @@ OAuth2 还支持客户端发送**`scope`**表单字段。
 
 常用于声明指定安全权限，例如：
 
-- 常见用例为，`users:read` 或 `users:write`
-- 脸书和 Instagram 使用 `instagram_basic`
-- 谷歌使用 `https://www.googleapis.com/auth/drive`
+* 常见用例为，`users:read` 或 `users:write`
+* 脸书和 Instagram 使用 `instagram_basic`
+* 谷歌使用 `https://www.googleapis.com/auth/drive`
 
 /// info | "说明"
 
@@ -50,7 +50,7 @@ OAuth2 中，**作用域**只是声明指定权限的字符串。
 
 ### `OAuth2PasswordRequestForm`
 
-首先，导入 `OAuth2PasswordRequestForm`，然后，在 `/token` _路径操作_ 中，用 `Depends` 把该类作为依赖项。
+首先，导入 `OAuth2PasswordRequestForm`，然后，在 `/token` *路径操作* 中，用 `Depends` 把该类作为依赖项。
 
 ```Python hl_lines="4  76"
 {!../../docs_src/security/tutorial003.py!}
@@ -58,10 +58,10 @@ OAuth2 中，**作用域**只是声明指定权限的字符串。
 
 `OAuth2PasswordRequestForm` 是用以下几项内容声明表单请求体的类依赖项：
 
-- `username`
-- `password`
-- 可选的 `scope` 字段，由多个空格分隔的字符串组成的长字符串
-- 可选的 `grant_type`
+* `username`
+* `password`
+* 可选的 `scope` 字段，由多个空格分隔的字符串组成的长字符串
+* 可选的 `grant_type`
 
 /// tip | "提示"
 
@@ -71,8 +71,8 @@ OAuth2 中，**作用域**只是声明指定权限的字符串。
 
 ///
 
-- 可选的 `client_id`（本例未使用）
-- 可选的 `client_secret`（本例未使用）
+* 可选的 `client_id`（本例未使用）
+* 可选的 `client_secret`（本例未使用）
 
 /// info | "说明"
 
@@ -138,7 +138,7 @@ OAuth2 中，**作用域**只是声明指定权限的字符串。
 
 `UserInDB(**user_dict)` 是指：
 
-_直接把 `user_dict` 的键与值当作关键字参数传递，等效于：_
+*直接把 `user_dict` 的键与值当作关键字参数传递，等效于：*
 
 ```Python
 UserInDB(
@@ -152,7 +152,7 @@ UserInDB(
 
 /// info | "说明"
 
-`user_dict` 的说明，详见[**更多模型**一章](../extra-models.md#user_indict){.internal-link target=\_blank}。
+`user_dict` 的说明，详见[**更多模型**一章](../extra-models.md#user_indict){.internal-link target=_blank}。
 
 ///
 

@@ -2,24 +2,24 @@
 
 Schauen wir uns die Deployment-Konzepte von früher noch einmal an:
 
-- Sicherheit – HTTPS
-- Beim Hochfahren ausführen
-- Neustarts
-- **Replikation (die Anzahl der laufenden Prozesse)**
-- Arbeitsspeicher
-- Schritte vor dem Start
+* Sicherheit – HTTPS
+* Beim Hochfahren ausführen
+* Neustarts
+* **Replikation (die Anzahl der laufenden Prozesse)**
+* Arbeitsspeicher
+* Schritte vor dem Start
 
 Bis zu diesem Punkt, in allen Tutorials in der Dokumentation, haben Sie wahrscheinlich ein **Serverprogramm** wie Uvicorn ausgeführt, in einem **einzelnen Prozess**.
 
 Wenn Sie Anwendungen bereitstellen, möchten Sie wahrscheinlich eine gewisse **Replikation von Prozessen**, um **mehrere CPU-Kerne** zu nutzen und mehr Requests bearbeiten zu können.
 
-Wie Sie im vorherigen Kapitel über [Deployment-Konzepte](concepts.md){.internal-link target=\_blank} gesehen haben, gibt es mehrere Strategien, die Sie anwenden können.
+Wie Sie im vorherigen Kapitel über [Deployment-Konzepte](concepts.md){.internal-link target=_blank} gesehen haben, gibt es mehrere Strategien, die Sie anwenden können.
 
 Hier zeige ich Ihnen, wie Sie <a href="https://gunicorn.org/" class="external-link" target="_blank">**Gunicorn**</a> mit **Uvicorn Workerprozessen** verwenden.
 
 /// info
 
-Wenn Sie Container verwenden, beispielsweise mit Docker oder Kubernetes, erzähle ich Ihnen mehr darüber im nächsten Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=\_blank}.
+Wenn Sie Container verwenden, beispielsweise mit Docker oder Kubernetes, erzähle ich Ihnen mehr darüber im nächsten Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
 
 Insbesondere wenn die Anwendung auf **Kubernetes** läuft, werden Sie Gunicorn wahrscheinlich **nicht** verwenden wollen und stattdessen **einen einzelnen Uvicorn-Prozess pro Container** ausführen wollen, aber ich werde Ihnen später in diesem Kapitel mehr darüber erzählen.
 
@@ -85,37 +85,35 @@ $ gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --b
 
 Sehen wir uns an, was jede dieser Optionen bedeutet:
 
-- `main:app`: Das ist die gleiche Syntax, die auch von Uvicorn verwendet wird. `main` bedeutet das Python-Modul mit dem Namen `main`, also eine Datei `main.py`. Und `app` ist der Name der Variable, welche die **ReadyAPI**-Anwendung ist.
+* `main:app`: Das ist die gleiche Syntax, die auch von Uvicorn verwendet wird. `main` bedeutet das Python-Modul mit dem Namen `main`, also eine Datei `main.py`. Und `app` ist der Name der Variable, welche die **ReadyAPI**-Anwendung ist.
+    * Stellen Sie sich einfach vor, dass `main:app` einer Python-`import`-Anweisung wie der folgenden entspricht:
 
-  - Stellen Sie sich einfach vor, dass `main:app` einer Python-`import`-Anweisung wie der folgenden entspricht:
+        ```Python
+        from main import app
+        ```
 
-    ```Python
-    from main import app
-    ```
+    * Der Doppelpunkt in `main:app` entspricht also dem Python-`import`-Teil in `from main import app`.
 
-  - Der Doppelpunkt in `main:app` entspricht also dem Python-`import`-Teil in `from main import app`.
+* `--workers`: Die Anzahl der zu verwendenden Workerprozesse, jeder führt einen Uvicorn-Worker aus, in diesem Fall 4 Worker.
 
-- `--workers`: Die Anzahl der zu verwendenden Workerprozesse, jeder führt einen Uvicorn-Worker aus, in diesem Fall 4 Worker.
+* `--worker-class`: Die Gunicorn-kompatible Workerklasse zur Verwendung in den Workerprozessen.
+    * Hier übergeben wir die Klasse, die Gunicorn etwa so importiert und verwendet:
 
-- `--worker-class`: Die Gunicorn-kompatible Workerklasse zur Verwendung in den Workerprozessen.
+        ```Python
+        import uvicorn.workers.UvicornWorker
+        ```
 
-  - Hier übergeben wir die Klasse, die Gunicorn etwa so importiert und verwendet:
-
-    ```Python
-    import uvicorn.workers.UvicornWorker
-    ```
-
-- `--bind`: Das teilt Gunicorn die IP und den Port mit, welche abgehört werden sollen, wobei ein Doppelpunkt (`:`) verwendet wird, um die IP und den Port zu trennen.
-  - Wenn Sie Uvicorn direkt ausführen würden, würden Sie anstelle von `--bind 0.0.0.0:80` (die Gunicorn-Option) stattdessen `--host 0.0.0.0` und `--port 80` verwenden.
+* `--bind`: Das teilt Gunicorn die IP und den Port mit, welche abgehört werden sollen, wobei ein Doppelpunkt (`:`) verwendet wird, um die IP und den Port zu trennen.
+    * Wenn Sie Uvicorn direkt ausführen würden, würden Sie anstelle von `--bind 0.0.0.0:80` (die Gunicorn-Option) stattdessen `--host 0.0.0.0` und `--port 80` verwenden.
 
 In der Ausgabe können Sie sehen, dass die **PID** (Prozess-ID) jedes Prozesses angezeigt wird (es ist nur eine Zahl).
 
 Sie können sehen, dass:
 
-- Der Gunicorn **Prozessmanager** beginnt, mit der PID `19499` (in Ihrem Fall ist es eine andere Nummer).
-- Dann beginnt er zu lauschen: `Listening at: http://0.0.0.0:80`.
-- Dann erkennt er, dass er die Workerklasse `uvicorn.workers.UvicornWorker` verwenden muss.
-- Und dann werden **4 Worker** gestartet, jeder mit seiner eigenen PID: `19511`, `19513`, `19514` und `19515`.
+* Der Gunicorn **Prozessmanager** beginnt, mit der PID `19499` (in Ihrem Fall ist es eine andere Nummer).
+* Dann beginnt er zu lauschen: `Listening at: http://0.0.0.0:80`.
+* Dann erkennt er, dass er die Workerklasse `uvicorn.workers.UvicornWorker` verwenden muss.
+* Und dann werden **4 Worker** gestartet, jeder mit seiner eigenen PID: `19511`, `19513`, `19514` und `19515`.
 
 Gunicorn würde sich bei Bedarf auch um die Verwaltung **beendeter Prozesse** und den **Neustart** von Prozessen kümmern, um die Anzahl der Worker aufrechtzuerhalten. Das hilft also teilweise beim **Neustarts**-Konzept aus der obigen Liste.
 
@@ -161,16 +159,16 @@ Hier haben Sie gesehen, wie Sie mit **Gunicorn** (oder Uvicorn) **Uvicorn-Worker
 
 In der Liste der Deployment-Konzepte von oben würde die Verwendung von Workern hauptsächlich beim **Replikation**-Teil und ein wenig bei **Neustarts** helfen, aber Sie müssen sich trotzdem um die anderen kümmern:
 
-- **Sicherheit – HTTPS**
-- **Beim Hochfahren ausführen**
-- **Neustarts**
-- Replikation (die Anzahl der laufenden Prozesse)
-- **Arbeitsspeicher**
-- **Schritte vor dem Start**
+* **Sicherheit – HTTPS**
+* **Beim Hochfahren ausführen**
+* **Neustarts**
+* Replikation (die Anzahl der laufenden Prozesse)
+* **Arbeitsspeicher**
+* **Schritte vor dem Start**
 
 ## Container und Docker
 
-Im nächsten Kapitel über [ReadyAPI in Containern – Docker](docker.md){.internal-link target=\_blank} werde ich einige Strategien erläutern, die Sie für den Umgang mit den anderen **Deployment-Konzepten** verwenden können.
+Im nächsten Kapitel über [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank} werde ich einige Strategien erläutern, die Sie für den Umgang mit den anderen **Deployment-Konzepten** verwenden können.
 
 Ich zeige Ihnen auch das **offizielle Docker-Image**, welches **Gunicorn mit Uvicorn-Workern** und einige Standardkonfigurationen enthält, die für einfache Fälle nützlich sein können.
 

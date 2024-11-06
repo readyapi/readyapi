@@ -6,7 +6,7 @@ Você pode utilizar **Modelos Pydantic** para declarar **campos de formulários*
 
 Para utilizar formulários, instale primeiramente o <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
-Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=\_blank}, ativá-lo, e então instalar. Por exemplo:
+Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=_blank}, ativá-lo, e então instalar. Por exemplo:
 
 ```console
 $ pip install python-multipart
@@ -110,22 +110,22 @@ Caso um cliente tente enviar informações adicionais, ele receberá um retorno 
 
 Por exemplo, se o cliente tentar enviar os campos de formulário:
 
-- `username`: `Rick`
-- `password`: `Portal Gun`
-- `extra`: `Mr. Poopybutthole`
+* `username`: `Rick`
+* `password`: `Portal Gun`
+* `extra`: `Mr. Poopybutthole`
 
 Ele receberá um retorno de erro informando-o que o campo `extra` não é permitido:
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["body", "extra"],
-      "msg": "Extra inputs are not permitted",
-      "input": "Mr. Poopybutthole"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["body", "extra"],
+            "msg": "Extra inputs are not permitted",
+            "input": "Mr. Poopybutthole"
+        }
+    ]
 }
 ```
 

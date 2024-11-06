@@ -84,7 +84,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 Sie können eine Überschreibung für eine Abhängigkeit festlegen, die an einer beliebigen Stelle in Ihrer **ReadyAPI**-Anwendung verwendet wird.
 
-Die ursprüngliche Abhängigkeit könnte in einer _Pfadoperation-Funktion_, einem _Pfadoperation-Dekorator_ (wenn Sie den Rückgabewert nicht verwenden), einem `.include_router()`-Aufruf, usw. verwendet werden.
+Die ursprüngliche Abhängigkeit könnte in einer *Pfadoperation-Funktion*, einem *Pfadoperation-Dekorator* (wenn Sie den Rückgabewert nicht verwenden), einem `.include_router()`-Aufruf, usw. verwendet werden.
 
 ReadyAPI kann sie in jedem Fall überschreiben.
 

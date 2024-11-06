@@ -1,4 +1,4 @@
-# OAuth2 实现密码哈希与 Bearer JWT 令牌验证
+# OAuth2 实现密码哈希与 Bearer  JWT 令牌验证
 
 至此，我们已经编写了所有安全流，本章学习如何使用 <abbr title="JSON Web Tokens">JWT</abbr> 令牌（Token）和安全密码哈希（Hash）实现真正的安全机制。
 
@@ -264,7 +264,7 @@ Prefer to use the `Annotated` version if possible.
 
 ////
 
-## 更新 `/token` _路径操作_
+## 更新 `/token` *路径操作*
 
 用令牌过期时间创建 `timedelta` 对象。
 
@@ -338,7 +338,7 @@ JWT 规范还包括 `sub` 键，值是令牌的主题。
 
 同理，JWT 可以用于更复杂的场景。
 
-在这些情况下，多个实体的 ID 可能是相同的，以 ID `foo` 为例，用户的 ID 是 `foo`，车的 ID 是 `foo`，博客的 ID 也是 `foo`。
+在这些情况下，多个实体的 ID 可能是相同的，以 ID  `foo` 为例，用户的 ID 是 `foo`，车的 ID 是 `foo`，博客的 ID 也是  `foo`。
 
 为了避免 ID 冲突，在给用户创建 JWT 令牌时，可以为 `sub` 键的值加上前缀，例如 `username:`。因此，在本例中，`sub` 的值可以是：`username:johndoe`。
 

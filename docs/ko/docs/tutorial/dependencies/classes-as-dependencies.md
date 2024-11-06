@@ -137,9 +137,9 @@ ReadyAPI가 실질적으로 확인하는 것은 "호출 가능성"(함수, 클�
 
 함수와 클래스 두 가지 방식 모두, 아래 요소를 갖습니다:
 
-- `문자열`이면서 선택사항인 쿼리 매개변수 `q`.
-- 기본값이 `0`이면서 `정수형`인 쿼리 매개변수 `skip`
-- 기본값이 `100`이면서 `정수형`인 쿼리 매개변수 `limit`
+* `문자열`이면서 선택사항인 쿼리 매개변수 `q`.
+* 기본값이 `0`이면서 `정수형`인 쿼리 매개변수 `skip`
+* 기본값이 `100`이면서 `정수형`인 쿼리 매개변수 `limit`
 
 두 가지 방식 모두, 데이터는 변환, 검증되고 OpenAPI 스키마에 문서화됩니다.
 
@@ -228,7 +228,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-**ReadyAPI**는 _특히_ 의존성이 **ReadyAPI**가 클래스 자체의 인스턴스를 생성하기 위해 "호출"하는 클래스인 경우, 조금 더 쉬운 방법을 제공합니다.
+**ReadyAPI**는 *특히* 의존성이 **ReadyAPI**가 클래스 자체의 인스턴스를 생성하기 위해 "호출"하는 클래스인 경우, 조금 더 쉬운 방법을 제공합니다.
 
 이러한 특정한 경우에는 아래처럼 사용할 수 있습니다:
 
@@ -244,7 +244,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends()
 ```
 
-의존성을 매개변수의 타입으로 선언하는 경우 `Depends(CommonQueryParams)`처럼 클래스 이름 전체를 _다시_ 작성하는 대신, 매개변수를 넣지 않은 `Depends()`의 형태로 사용할 수 있습니다.
+의존성을 매개변수의 타입으로 선언하는 경우 `Depends(CommonQueryParams)`처럼 클래스 이름 전체를 *다시* 작성하는 대신, 매개변수를 넣지 않은 `Depends()`의 형태로 사용할 수 있습니다.
 
 아래에 같은 예제가 있습니다:
 

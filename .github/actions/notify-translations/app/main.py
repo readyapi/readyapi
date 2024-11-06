@@ -15,7 +15,7 @@ approved_label = "approved-1"
 translations_path = Path(__file__).parent / "translations.yml"
 
 github_graphql_url = "https://api.github.com/graphql"
-questions_translations_category_id = "DIC_kwDOCZduT84CT5P9"
+questions_translations_category_id = "DIC_kwDOLTyAm84CfqzZ"
 
 all_discussions_query = """
 query Q($category_id: ID) {

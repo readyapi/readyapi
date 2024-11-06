@@ -4,10 +4,10 @@
 
 并从以下对象中提取数据：
 
-- 路径参数
-- 请求头
-- Cookies
-- 等
+* 路径参数
+* 请求头
+* Cookies
+* 等
 
 **ReadyAPI** 使用这种方式验证数据、转换数据，并自动生成 API 文档。
 
@@ -15,7 +15,7 @@
 
 ## `Request` 对象的细节
 
-实际上，**ReadyAPI** 的底层是 **Starlette**，**ReadyAPI** 只不过是在 **Starlette** 顶层提供了一些工具，所以能直接使用 Starlette 的 <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 对象。
+实际上，**ReadyAPI** 的底层是 **Starlette**，**ReadyAPI** 只不过是在  **Starlette** 顶层提供了一些工具，所以能直接使用 Starlette 的  <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 对象。
 
 但直接从 `Request` 对象提取数据时（例如，读取请求体），**ReadyAPI** 不会验证、转换和存档数据（为 API 文档使用 OpenAPI）。
 

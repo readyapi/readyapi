@@ -1,6 +1,6 @@
 # Aktuellen Benutzer abrufen
 
-Im vorherigen Kapitel hat das Sicherheitssystem (das auf dem Dependency Injection System basiert) der _Pfadoperation-Funktion_ einen `token` vom Typ `str` überreicht:
+Im vorherigen Kapitel hat das Sicherheitssystem (das auf dem Dependency Injection System basiert) der *Pfadoperation-Funktion* einen `token` vom Typ `str` überreicht:
 
 //// tab | Python 3.9+
 
@@ -102,7 +102,7 @@ Erinnern Sie sich, dass Abhängigkeiten Unterabhängigkeiten haben können?
 
 `get_current_user` wird seinerseits von `oauth2_scheme` abhängen, das wir zuvor erstellt haben.
 
-So wie wir es zuvor in der _Pfadoperation_ direkt gemacht haben, erhält unsere neue Abhängigkeit `get_current_user` von der Unterabhängigkeit `oauth2_scheme` einen `token` vom Typ `str`:
+So wie wir es zuvor in der *Pfadoperation* direkt gemacht haben, erhält unsere neue Abhängigkeit `get_current_user` von der Unterabhängigkeit `oauth2_scheme` einen `token` vom Typ `str`:
 
 //// tab | Python 3.10+
 
@@ -214,7 +214,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ## Den aktuellen Benutzer einfügen
 
-Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der _Pfadoperation_ verwenden:
+Und jetzt können wir wiederum `Depends` mit unserem `get_current_user` in der *Pfadoperation* verwenden:
 
 //// tab | Python 3.10+
 
@@ -290,7 +290,7 @@ Wir sind nicht darauf beschränkt, nur eine Abhängigkeit zu haben, die diesen T
 
 ## Andere Modelle
 
-Sie können jetzt den aktuellen Benutzer direkt in den _Pfadoperation-Funktionen_ abrufen und die Sicherheitsmechanismen auf **Dependency Injection** Ebene handhaben, mittels `Depends`.
+Sie können jetzt den aktuellen Benutzer direkt in den *Pfadoperation-Funktionen* abrufen und die Sicherheitsmechanismen auf **Dependency Injection** Ebene handhaben, mittels `Depends`.
 
 Und Sie können alle Modelle und Daten für die Sicherheitsanforderungen verwenden (in diesem Fall ein Pydantic-Modell `User`).
 
@@ -306,7 +306,7 @@ Verwenden Sie einfach jede Art von Modell, jede Art von Klasse, jede Art von Dat
 
 ## Codegröße
 
-Dieses Beispiel mag ausführlich erscheinen. Bedenken Sie, dass wir Sicherheit, Datenmodelle, Hilfsfunktionen und _Pfadoperationen_ in derselben Datei vermischen.
+Dieses Beispiel mag ausführlich erscheinen. Bedenken Sie, dass wir Sicherheit, Datenmodelle, Hilfsfunktionen und *Pfadoperationen* in derselben Datei vermischen.
 
 Aber hier ist der entscheidende Punkt.
 
@@ -314,11 +314,11 @@ Der Code für Sicherheit und Dependency Injection wird einmal geschrieben.
 
 Sie können es so komplex gestalten, wie Sie möchten. Und dennoch haben Sie es nur einmal geschrieben, an einer einzigen Stelle. Mit all der Flexibilität.
 
-Aber Sie können Tausende von Endpunkten (_Pfadoperationen_) haben, die dasselbe Sicherheitssystem verwenden.
+Aber Sie können Tausende von Endpunkten (*Pfadoperationen*) haben, die dasselbe Sicherheitssystem verwenden.
 
 Und alle (oder beliebige Teile davon) können Vorteil ziehen aus der Wiederverwendung dieser und anderer von Ihnen erstellter Abhängigkeiten.
 
-Und alle diese Tausenden von _Pfadoperationen_ können nur drei Zeilen lang sein:
+Und alle diese Tausenden von *Pfadoperationen* können nur drei Zeilen lang sein:
 
 //// tab | Python 3.10+
 
@@ -374,10 +374,10 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ## Zusammenfassung
 
-Sie können jetzt den aktuellen Benutzer direkt in Ihrer _Pfadoperation-Funktion_ abrufen.
+Sie können jetzt den aktuellen Benutzer direkt in Ihrer *Pfadoperation-Funktion* abrufen.
 
 Wir haben bereits die Hälfte geschafft.
 
-Wir müssen jetzt nur noch eine _Pfadoperation_ hinzufügen, mittels der der Benutzer/Client tatsächlich seinen `username` und `password` senden kann.
+Wir müssen jetzt nur noch eine *Pfadoperation* hinzufügen, mittels der der Benutzer/Client tatsächlich seinen `username` und `password` senden kann.
 
 Das kommt als nächstes.

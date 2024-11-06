@@ -2,17 +2,17 @@
 
 Here's the reference information for the request parameters.
 
-These are the special functions that you can put in _path operation function_ parameters or dependency functions with `Annotated` to get data from the request.
+These are the special functions that you can put in *path operation function* parameters or dependency functions with `Annotated` to get data from the request.
 
 It includes:
 
-- `Query()`
-- `Path()`
-- `Body()`
-- `Cookie()`
-- `Header()`
-- `Form()`
-- `File()`
+* `Query()`
+* `Path()`
+* `Body()`
+* `Cookie()`
+* `Header()`
+* `Form()`
+* `File()`
 
 You can import them all directly from `readyapi`:
 

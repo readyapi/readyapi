@@ -10,7 +10,7 @@ Der normale (Standard-)Prozess ist wie folgt.
 
 Eine `ReadyAPI`-Anwendung (-Instanz) verfügt über eine `.openapi()`-Methode, von der erwartet wird, dass sie das OpenAPI-Schema zurückgibt.
 
-Als Teil der Erstellung des Anwendungsobjekts wird eine _Pfadoperation_ für `/openapi.json` (oder welcher Wert für den Parameter `openapi_url` gesetzt wurde) registriert.
+Als Teil der Erstellung des Anwendungsobjekts wird eine *Pfadoperation* für `/openapi.json` (oder welcher Wert für den Parameter `openapi_url` gesetzt wurde) registriert.
 
 Diese gibt lediglich eine JSON-Response zurück, mit dem Ergebnis der Methode `.openapi()` der Anwendung.
 
@@ -20,12 +20,12 @@ Ist das nicht der Fall, wird der Inhalt mithilfe der Hilfsfunktion unter `readya
 
 Und diese Funktion `get_openapi()` erhält als Parameter:
 
-- `title`: Der OpenAPI-Titel, der in der Dokumentation angezeigt wird.
-- `version`: Die Version Ihrer API, z. B. `2.5.0`.
-- `openapi_version`: Die Version der verwendeten OpenAPI-Spezifikation. Standardmäßig die neueste Version: `3.1.0`.
-- `summary`: Eine kurze Zusammenfassung der API.
-- `description`: Die Beschreibung Ihrer API. Dies kann Markdown enthalten und wird in der Dokumentation angezeigt.
-- `routes`: Eine Liste von Routen, dies sind alle registrierten _Pfadoperationen_. Sie stammen von `app.routes`.
+* `title`: Der OpenAPI-Titel, der in der Dokumentation angezeigt wird.
+* `version`: Die Version Ihrer API, z. B. `2.5.0`.
+* `openapi_version`: Die Version der verwendeten OpenAPI-Spezifikation. Standardmäßig die neueste Version: `3.1.0`.
+* `summary`: Eine kurze Zusammenfassung der API.
+* `description`: Die Beschreibung Ihrer API. Dies kann Markdown enthalten und wird in der Dokumentation angezeigt.
+* `routes`: Eine Liste von Routen, dies sind alle registrierten *Pfadoperationen*. Sie stammen von `app.routes`.
 
 /// info
 

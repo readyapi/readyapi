@@ -16,7 +16,7 @@
 
 ## OAuth2
 
-OAuth2 是一个规范，它定义了几种处理身份认证和授权的方法。
+OAuth2是一个规范，它定义了几种处理身份认证和授权的方法。
 
 它是一个相当广泛的规范，涵盖了一些复杂的使用场景。
 
@@ -44,7 +44,7 @@ OpenID Connect 是另一个基于 **OAuth2** 的规范。
 
 它只是扩展了 OAuth2，并明确了一些在 OAuth2 中相对模糊的内容，以尝试使其更具互操作性。
 
-例如，Google 登录使用 OpenID Connect（底层使用 OAuth2）。
+例如，Google 登录使用 OpenID Connect（底层使用OAuth2）。
 
 但是 Facebook 登录不支持 OpenID Connect。它具有自己的 OAuth2 风格。
 
@@ -70,27 +70,28 @@ OpenAPI 有一种定义多个安全「方案」的方法。
 
 OpenAPI 定义了以下安全方案：
 
-- `apiKey`：一个特定于应用程序的密钥，可以来自：
-  - 查询参数。
-  - 请求头。
-  - cookie。
-- `http`：标准的 HTTP 身份认证系统，包括：
-  - `bearer`: 一个值为 `Bearer` 加令牌字符串的 `Authorization` 请求头。这是从 OAuth2 继承的。
-  - HTTP Basic 认证方式。
-  - HTTP Digest，等等。
-- `oauth2`：所有的 OAuth2 处理安全性的方式（称为「流程」）。
-  _以下几种流程适合构建 OAuth 2.0 身份认证的提供者（例如 Google，Facebook，Twitter，GitHub 等）：
-  _ `implicit`
-  _ `clientCredentials`
-  _ `authorizationCode`
-  - 但是有一个特定的「流程」可以完美地用于直接在同一应用程序中处理身份认证：
-    - `password`：接下来的几章将介绍它的示例。
-- `openIdConnect`：提供了一种定义如何自动发现 OAuth2 身份认证数据的方法。
-  - 此自动发现机制是 OpenID Connect 规范中定义的内容。
+* `apiKey`：一个特定于应用程序的密钥，可以来自：
+    * 查询参数。
+    * 请求头。
+    * cookie。
+* `http`：标准的 HTTP 身份认证系统，包括：
+    * `bearer`: 一个值为 `Bearer` 加令牌字符串的 `Authorization` 请求头。这是从 OAuth2 继承的。
+    * HTTP Basic 认证方式。
+    * HTTP Digest，等等。
+* `oauth2`：所有的 OAuth2 处理安全性的方式（称为「流程」）。
+    *以下几种流程适合构建 OAuth 2.0 身份认证的提供者（例如 Google，Facebook，Twitter，GitHub 等）：
+        * `implicit`
+        * `clientCredentials`
+        * `authorizationCode`
+    * 但是有一个特定的「流程」可以完美地用于直接在同一应用程序中处理身份认证：
+        * `password`：接下来的几章将介绍它的示例。
+* `openIdConnect`：提供了一种定义如何自动发现 OAuth2 身份认证数据的方法。
+    * 此自动发现机制是 OpenID Connect 规范中定义的内容。
+
 
 /// tip
 
-集成其他身份认证/授权提供者（例如 Google，Facebook，Twitter，GitHub 等）也是可能的，而且较为容易。
+集成其他身份认证/授权提供者（例如Google，Facebook，Twitter，GitHub等）也是可能的，而且较为容易。
 
 最复杂的问题是创建一个像这样的身份认证/授权提供程序，但是 **ReadyAPI** 为你提供了轻松完成任务的工具，同时为你解决了重活。
 

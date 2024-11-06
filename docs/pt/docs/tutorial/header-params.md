@@ -130,7 +130,7 @@ Por exemplo, para declarar um cabeçalho de `X-Token` que pode aparecer mais de 
 
 ////
 
-Se você se comunicar com essa _operação de caminho_ enviando dois cabeçalhos HTTP como:
+Se você se comunicar com essa *operação de caminho* enviando dois cabeçalhos HTTP como:
 
 ```
 X-Token: foo

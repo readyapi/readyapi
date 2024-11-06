@@ -84,7 +84,7 @@ Da `description` und `tax` optional sind (mit `None` als Defaultwert), wäre fol
 
 ## Deklarieren Sie es als Parameter
 
-Um es zu Ihrer _Pfadoperation_ hinzuzufügen, deklarieren Sie es auf die gleiche Weise, wie Sie Pfad- und Query-Parameter deklariert haben:
+Um es zu Ihrer *Pfadoperation* hinzuzufügen, deklarieren Sie es auf die gleiche Weise, wie Sie Pfad- und Query-Parameter deklariert haben:
 
 //// tab | Python 3.10+
 
@@ -108,14 +108,14 @@ Um es zu Ihrer _Pfadoperation_ hinzuzufügen, deklarieren Sie es auf die gleiche
 
 Mit nur dieser Python-Typdeklaration, wird **ReadyAPI**:
 
-- Den Requestbody als JSON lesen.
-- Die entsprechenden Typen konvertieren (falls nötig).
-- Diese Daten validieren.
-  - Wenn die Daten ungültig sind, einen klar lesbaren Fehler zurückgeben, der anzeigt, wo und was die inkorrekten Daten waren.
-- Ihnen die erhaltenen Daten im Parameter `item` übergeben.
-  - Da Sie diesen in der Funktion als vom Typ `Item` deklariert haben, erhalten Sie die ganze Editor-Unterstützung (Autovervollständigung, usw.) für alle Attribute und deren Typen.
-- Eine <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> Definition für Ihr Modell generieren, welche Sie überall sonst verwenden können, wenn es für Ihr Projekt Sinn macht.
-- Diese Schemas werden Teil des generierten OpenAPI-Schemas und werden von den <abbr title="User Interface – Benutzeroberfläche">UIs</abbr> der automatischen Dokumentation verwendet.
+* Den Requestbody als JSON lesen.
+* Die entsprechenden Typen konvertieren (falls nötig).
+* Diese Daten validieren.
+    * Wenn die Daten ungültig sind, einen klar lesbaren Fehler zurückgeben, der anzeigt, wo und was die inkorrekten Daten waren.
+* Ihnen die erhaltenen Daten im Parameter `item` übergeben.
+    * Da Sie diesen in der Funktion als vom Typ `Item` deklariert haben, erhalten Sie die ganze Editor-Unterstützung (Autovervollständigung, usw.) für alle Attribute und deren Typen.
+* Eine <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> Definition für Ihr Modell generieren, welche Sie überall sonst verwenden können, wenn es für Ihr Projekt Sinn macht.
+* Diese Schemas werden Teil des generierten OpenAPI-Schemas und werden von den <abbr title="User Interface – Benutzeroberfläche">UIs</abbr> der automatischen Dokumentation verwendet.
 
 ## Automatische Dokumentation
 
@@ -123,7 +123,7 @@ Die JSON-Schemas Ihrer Modelle werden Teil ihrer OpenAPI-generierten Schemas und
 
 <img src="/img/tutorial/body/image01.png">
 
-Und werden auch verwendet in der API-Dokumentation innerhalb jeder _Pfadoperation_, welche sie braucht:
+Und werden auch verwendet in der API-Dokumentation innerhalb jeder *Pfadoperation*, welche sie braucht:
 
 <img src="/img/tutorial/body/image02.png">
 
@@ -155,11 +155,11 @@ Wenn Sie <a href="https://www.jetbrains.com/pycharm/" class="external-link" targ
 
 Es verbessert die Editor-Unterstützung für Pydantic-Modelle, mit:
 
-- Code-Vervollständigung
-- Typüberprüfungen
-- Refaktorisierung
-- Suchen
-- Inspektionen
+* Code-Vervollständigung
+* Typüberprüfungen
+* Refaktorisierung
+* Suchen
+* Inspektionen
 
 ///
 
@@ -229,9 +229,9 @@ Sie können auch zur gleichen Zeit **Body-**, **Pfad-** und **Query-Parameter** 
 
 Die Funktionsparameter werden wie folgt erkannt:
 
-- Wenn der Parameter auch im **Pfad** deklariert wurde, wird er als Pfad-Parameter interpretiert.
-- Wenn der Parameter ein **einfacher Typ** ist (wie `int`, `float`, `str`, `bool`, usw.), wird er als **Query**-Parameter interpretiert.
-- Wenn der Parameter vom Typ eines **Pydantic-Modells** ist, wird er als Request**body** interpretiert.
+* Wenn der Parameter auch im **Pfad** deklariert wurde, wird er als Pfad-Parameter interpretiert.
+* Wenn der Parameter ein **einfacher Typ** ist (wie `int`, `float`, `str`, `bool`, usw.), wird er als **Query**-Parameter interpretiert.
+* Wenn der Parameter vom Typ eines **Pydantic-Modells** ist, wird er als Request**body** interpretiert.
 
 /// note | "Hinweis"
 

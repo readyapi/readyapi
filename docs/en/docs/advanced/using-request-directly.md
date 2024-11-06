@@ -4,10 +4,10 @@ Up to now, you have been declaring the parts of the request that you need with t
 
 Taking data from:
 
-- The path as parameters.
-- Headers.
-- Cookies.
-- etc.
+* The path as parameters.
+* Headers.
+* Cookies.
+* etc.
 
 And by doing so, **ReadyAPI** is validating that data, converting it and generating documentation for your API automatically.
 
@@ -25,7 +25,7 @@ But there are specific cases where it's useful to get the `Request` object.
 
 ## Use the `Request` object directly
 
-Let's imagine you want to get the client's IP address/host inside of your _path operation function_.
+Let's imagine you want to get the client's IP address/host inside of your *path operation function*.
 
 For that you need to access the request directly.
 
@@ -33,7 +33,7 @@ For that you need to access the request directly.
 {!../../docs_src/using_request_directly/tutorial001.py!}
 ```
 
-By declaring a _path operation function_ parameter with the type being the `Request` **ReadyAPI** will know to pass the `Request` in that parameter.
+By declaring a *path operation function* parameter with the type being the `Request` **ReadyAPI** will know to pass the `Request` in that parameter.
 
 /// tip
 

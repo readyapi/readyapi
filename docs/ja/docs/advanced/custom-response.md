@@ -2,19 +2,19 @@
 
 デフォルトでは、**ReadyAPI** は `JSONResponse` を使ってレスポンスを返します。
 
-[レスポンスを直接返す](response-directly.md){.internal-link target=\_blank}で見たように、 `Response` を直接返すことでこの挙動をオーバーライドできます。
+[レスポンスを直接返す](response-directly.md){.internal-link target=_blank}で見たように、 `Response` を直接返すことでこの挙動をオーバーライドできます。
 
-しかし、`Response` を直接返すと、データは自動的に変換されず、ドキュメントも自動生成されません (例えば、生成される OpenAPI の一部として HTTP ヘッダー `Content-Type` に特定の「メディアタイプ」を含めるなど) 。
+しかし、`Response` を直接返すと、データは自動的に変換されず、ドキュメントも自動生成されません (例えば、生成されるOpenAPIの一部としてHTTPヘッダー `Content-Type` に特定の「メディアタイプ」を含めるなど) 。
 
-しかし、_path operation デコレータ_ に、使いたい `Response` を宣言することもできます。
+しかし、*path operationデコレータ* に、使いたい `Response` を宣言することもできます。
 
-_path operation 関数_ から返されるコンテンツは、その `Response` に含まれます。
+*path operation関数* から返されるコンテンツは、その `Response` に含まれます。
 
-そしてもし、`Response` が、`JSONResponse` や `UJSONResponse` の場合のように JSON メディアタイプ (`application/json`) ならば、データは _path operation デコレータ_ に宣言した Pydantic `response_model` により自動的に変換 (もしくはフィルタ) されます。
+そしてもし、`Response` が、`JSONResponse` や `UJSONResponse` の場合のようにJSONメディアタイプ (`application/json`) ならば、データは *path operationデコレータ* に宣言したPydantic `response_model` により自動的に変換 (もしくはフィルタ) されます。
 
 /// note | "備考"
 
-メディアタイプを指定せずにレスポンスクラスを利用すると、ReadyAPI は何もコンテンツがないことを期待します。そのため、生成される OpenAPI ドキュメントにレスポンスフォーマットが記載されません。
+メディアタイプを指定せずにレスポンスクラスを利用すると、ReadyAPIは何もコンテンツがないことを期待します。そのため、生成されるOpenAPIドキュメントにレスポンスフォーマットが記載されません。
 
 ///
 
@@ -22,7 +22,7 @@ _path operation 関数_ から返されるコンテンツは、その `Response`
 
 例えば、パフォーマンスを出したい場合は、<a href="https://github.com/ijl/orjson" class="external-link" target="_blank">`orjson`</a>をインストールし、`ORJSONResponse`をレスポンスとしてセットすることができます。
 
-使いたい `Response` クラス (サブクラス) をインポートし、 _path operation デコレータ_ に宣言します。
+使いたい `Response` クラス (サブクラス) をインポートし、 *path operationデコレータ* に宣言します。
 
 ```Python hl_lines="2  7"
 {!../../docs_src/custom_response/tutorial001b.py!}
@@ -32,24 +32,24 @@ _path operation 関数_ から返されるコンテンツは、その `Response`
 
 パラメータ `response_class` は、レスポンスの「メディアタイプ」を定義するために利用することもできます。
 
-この場合、HTTP ヘッダー `Content-Type` には `application/json` がセットされます。
+この場合、HTTPヘッダー `Content-Type` には `application/json` がセットされます。
 
-そして、OpenAPI にはそのようにドキュメントされます。
+そして、OpenAPIにはそのようにドキュメントされます。
 
 ///
 
 /// tip | "豆知識"
 
-`ORJSONResponse` は、現在は ReadyAPI のみで利用可能で、Starlette では利用できません。
+`ORJSONResponse` は、現在はReadyAPIのみで利用可能で、Starletteでは利用できません。
 
 ///
 
-## HTML レスポンス
+## HTMLレスポンス
 
-**ReadyAPI** から HTML を直接返す場合は、`HTMLResponse` を使います。
+**ReadyAPI** からHTMLを直接返す場合は、`HTMLResponse` を使います。
 
-- `HTMLResponse` をインポートする。
-- _path operation_ のパラメータ `content_type` に `HTMLResponse` を渡す。
+* `HTMLResponse` をインポートする。
+* *path operation* のパラメータ `content_type` に `HTMLResponse` を渡す。
 
 ```Python hl_lines="2  7"
 {!../../docs_src/custom_response/tutorial002.py!}
@@ -59,15 +59,15 @@ _path operation 関数_ から返されるコンテンツは、その `Response`
 
 パラメータ `response_class` は、レスポンスの「メディアタイプ」を定義するために利用されます。
 
-この場合、HTTP ヘッダー `Content-Type` には `text/html` がセットされます。
+この場合、HTTPヘッダー `Content-Type` には `text/html` がセットされます。
 
-そして、OpenAPI にはそのようにドキュメント化されます。
+そして、OpenAPIにはそのようにドキュメント化されます。
 
 ///
 
 ### `Response` を返す
 
-[レスポンスを直接返す](response-directly.md){.internal-link target=\_blank}で見たように、レスポンスを直接返すことで、_path operation_ の中でレスポンスをオーバーライドできます。
+[レスポンスを直接返す](response-directly.md){.internal-link target=_blank}で見たように、レスポンスを直接返すことで、*path operation* の中でレスポンスをオーバーライドできます。
 
 上記と同じ例において、 `HTMLResponse` を返すと、このようになります:
 
@@ -77,7 +77,7 @@ _path operation 関数_ から返されるコンテンツは、その `Response`
 
 /// warning | "注意"
 
-_path operation 関数_ から直接返される `Response` は、OpenAPI にドキュメントされず (例えば、 `Content-Type` がドキュメントされない) 、自動的な対話的ドキュメントからも閲覧できません。
+*path operation関数* から直接返される `Response` は、OpenAPIにドキュメントされず (例えば、 `Content-Type` がドキュメントされない) 、自動的な対話的ドキュメントからも閲覧できません。
 
 ///
 
@@ -87,11 +87,11 @@ _path operation 関数_ から直接返される `Response` は、OpenAPI にド
 
 ///
 
-### OpenAPI ドキュメントと `Response` のオーバーライド
+### OpenAPIドキュメントと `Response` のオーバーライド
 
 関数の中でレスポンスをオーバーライドしつつも、OpenAPI に「メディアタイプ」をドキュメント化したいなら、 `response_class` パラメータを使い、 `Response` オブジェクトを返します。
 
-`response_class` は OpenAPI の _path operation_ ドキュメントにのみ使用されますが、 `Response` はそのまま使用されます。
+`response_class` はOpenAPIの *path operation* ドキュメントにのみ使用されますが、 `Response` はそのまま使用されます。
 
 #### `HTMLResponse` を直接返す
 
@@ -101,11 +101,11 @@ _path operation 関数_ から直接返される `Response` は、OpenAPI にド
 {!../../docs_src/custom_response/tutorial004.py!}
 ```
 
-この例では、関数 `generate_html_response()` は、`str` の HTML を返すのではなく `Response` を生成して返しています。
+この例では、関数 `generate_html_response()` は、`str` のHTMLを返すのではなく `Response` を生成して返しています。
 
 `generate_html_response()` を呼び出した結果を返すことにより、**ReadyAPI** の振る舞いを上書きする `Response` が既に返されています。
 
-しかし、一方では `response_class` に `HTMLResponse` を渡しているため、 **ReadyAPI** は OpenAPI や対話的ドキュメントで HTML として `text/html` でドキュメント化する方法を知っています。
+しかし、一方では `response_class` に `HTMLResponse` を渡しているため、 **ReadyAPI** はOpenAPIや対話的ドキュメントでHTMLとして `text/html` でドキュメント化する方法を知っています。
 
 <img src="/img/tutorial/custom-response/image01.png">
 
@@ -119,7 +119,7 @@ _path operation 関数_ から直接返される `Response` は、OpenAPI にド
 
 `from starlette.responses import HTMLResponse` も利用できます。
 
-**ReadyAPI** は開発者の利便性のために `readyapi.responses` として `starlette.responses` と同じものを提供しています。しかし、利用可能なレスポンスのほとんどは Starlette から直接提供されます。
+**ReadyAPI** は開発者の利便性のために `readyapi.responses` として `starlette.responses` と同じものを提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。
 
 ///
 
@@ -131,12 +131,12 @@ _path operation 関数_ から直接返される `Response` は、OpenAPI にド
 
 以下のパラメータを受け付けます。
 
-- `content` - `str` か `bytes`。
-- `status_code` - `int` の HTTP ステータスコード。
-- `headers` - 文字列の `dict` 。
-- `media_type` - メディアタイプを示す `str` 。例えば `"text/html"` 。
+* `content` - `str` か `bytes`。
+* `status_code` - `int` のHTTPステータスコード。
+* `headers` - 文字列の `dict` 。
+* `media_type` - メディアタイプを示す `str` 。例えば `"text/html"` 。
 
-ReadyAPI (実際には Starlette) は自動的に Content-Length ヘッダーを含みます。また、media_type に基づいた Content-Type ヘッダーを含み、テキストタイプのために charset を追加します。
+ReadyAPI (実際にはStarlette) は自動的にContent-Lengthヘッダーを含みます。また、media_typeに基づいたContent-Typeヘッダーを含み、テキストタイプのためにcharsetを追加します。
 
 ```Python hl_lines="1  18"
 {!../../docs_src/response_directly/tutorial002.py!}
@@ -144,7 +144,7 @@ ReadyAPI (実際には Starlette) は自動的に Content-Length ヘッダーを
 
 ### `HTMLResponse`
 
-上で読んだように、テキストやバイトを受け取り、HTML レスポンスを返します。
+上で読んだように、テキストやバイトを受け取り、HTMLレスポンスを返します。
 
 ### `PlainTextResponse`
 
@@ -162,15 +162,15 @@ ReadyAPI (実際には Starlette) は自動的に Content-Length ヘッダーを
 
 ### `ORJSONResponse`
 
-上で読んだように、<a href="https://github.com/ijl/orjson" class="external-link" target="_blank">`orjson`</a>を使った、高速な代替の JSON レスポンスです。
+上で読んだように、<a href="https://github.com/ijl/orjson" class="external-link" target="_blank">`orjson`</a>を使った、高速な代替のJSONレスポンスです。
 
 ### `UJSONResponse`
 
-<a href="https://github.com/ultrajson/ultrajson" class="external-link" target="_blank">`ujson`</a>を使った、代替の JSON レスポンスです。
+<a href="https://github.com/ultrajson/ultrajson" class="external-link" target="_blank">`ujson`</a>を使った、代替のJSONレスポンスです。
 
 /// warning | "注意"
 
-`ujson` は、いくつかのエッジケースの取り扱いについて、Python にビルトインされた実装よりも作りこまれていません。
+`ujson` は、いくつかのエッジケースの取り扱いについて、Pythonにビルトインされた実装よりも作りこまれていません。
 
 ///
 
@@ -186,7 +186,7 @@ ReadyAPI (実際には Starlette) は自動的に Content-Length ヘッダーを
 
 ### `RedirectResponse`
 
-HTTP リダイレクトを返します。デフォルトでは 307 ステータスコード (Temporary Redirect) となります。
+HTTPリダイレクトを返します。デフォルトでは307ステータスコード (Temporary Redirect) となります。
 
 ```Python hl_lines="2  9"
 {!../../docs_src/custom_response/tutorial006.py!}
@@ -212,7 +212,7 @@ HTTP リダイレクトを返します。デフォルトでは 307 ステータ�
 
 /// tip | "豆知識"
 
-ここでは `async` や `await` をサポートしていない標準の `open()` を使っているので、通常の `def` で path operation を宣言していることに注意してください。
+ここでは `async` や `await` をサポートしていない標準の `open()` を使っているので、通常の `def` でpath operationを宣言していることに注意してください。
 
 ///
 
@@ -222,10 +222,10 @@ HTTP リダイレクトを返します。デフォルトでは 307 ステータ�
 
 他のレスポンスタイプとは異なる引数のセットを受け取りインスタンス化します。
 
-- `path` - ストリームするファイルのファイルパス。
-- `headers` - 含めたい任意のカスタムヘッダーの辞書。
-- `media_type` - メディアタイプを示す文字列。セットされなかった場合は、ファイル名やパスからメディアタイプが推察されます。
-- `filename` - セットされた場合、レスポンスの `Content-Disposition` に含まれます。
+* `path` - ストリームするファイルのファイルパス。
+* `headers` - 含めたい任意のカスタムヘッダーの辞書。
+* `media_type` - メディアタイプを示す文字列。セットされなかった場合は、ファイル名やパスからメディアタイプが推察されます。
+* `filename` - セットされた場合、レスポンスの `Content-Disposition` に含まれます。
 
 ファイルレスポンスには、適切な `Content-Length` 、 `Last-Modified` 、 `ETag` ヘッダーが含まれます。
 
@@ -239,7 +239,7 @@ HTTP リダイレクトを返します。デフォルトでは 307 ステータ�
 
 定義するためのパラメータは、 `default_response_class` です。
 
-以下の例では、 **ReadyAPI** は、全ての _path operation_ で `JSONResponse` の代わりに `ORJSONResponse` をデフォルトとして利用します。
+以下の例では、 **ReadyAPI** は、全ての *path operation* で `JSONResponse` の代わりに `ORJSONResponse` をデフォルトとして利用します。
 
 ```Python hl_lines="2  4"
 {!../../docs_src/custom_response/tutorial010.py!}
@@ -247,10 +247,10 @@ HTTP リダイレクトを返します。デフォルトでは 307 ステータ�
 
 /// tip | "豆知識"
 
-前に見たように、 _path operation_ の中で `response_class` をオーバーライドできます。
+前に見たように、 *path operation* の中で `response_class` をオーバーライドできます。
 
 ///
 
 ## その他のドキュメント
 
-また、OpenAPI では `responses` を使ってメディアタイプやその他の詳細を宣言することもできます: [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}
+また、OpenAPIでは `responses` を使ってメディアタイプやその他の詳細を宣言することもできます: [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}

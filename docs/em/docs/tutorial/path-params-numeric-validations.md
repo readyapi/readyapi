@@ -100,8 +100,8 @@
 
 🎏 ✔:
 
-- `gt`: `g`🅾 `t`👲
-- `le`: `l`👭 🌘 ⚖️ `e`🅾
+* `gt`: `g`🅾 `t`👲
+* `le`: `l`👭 🌘 ⚖️ `e`🅾
 
 ```Python hl_lines="9"
 {!../../docs_src/path_params_numeric_validations/tutorial005.py!}
@@ -123,14 +123,14 @@
 
 ## 🌃
 
-⏮️ `Query`, `Path` (&amp; 🎏 👆 🚫 👀) 👆 💪 📣 🗃 &amp; 🎻 🔬 🎏 🌌 ⏮️ [🔢 🔢 &amp; 🎻 🔬](query-params-str-validations.md){.internal-link target=\_blank}.
+⏮️ `Query`, `Path` (&amp; 🎏 👆 🚫 👀) 👆 💪 📣 🗃 &amp; 🎻 🔬 🎏 🌌 ⏮️ [🔢 🔢 &amp; 🎻 🔬](query-params-str-validations.md){.internal-link target=_blank}.
 
 &amp; 👆 💪 📣 🔢 🔬:
 
-- `gt`: `g`🅾 `t`👲
-- `ge`: `g`🅾 🌘 ⚖️ `e`🅾
-- `lt`: `l`👭 `t`👲
-- `le`: `l`👭 🌘 ⚖️ `e`🅾
+* `gt`: `g`🅾 `t`👲
+* `ge`: `g`🅾 🌘 ⚖️ `e`🅾
+* `lt`: `l`👭 `t`👲
+* `le`: `l`👭 🌘 ⚖️ `e`🅾
 
 /// info
 

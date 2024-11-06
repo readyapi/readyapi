@@ -4,15 +4,15 @@ Continuando com o exemplo anterior, será comum ter mais de um modelo relacionad
 
 Isso é especialmente o caso para modelos de usuários, porque:
 
-- O **modelo de entrada** precisa ser capaz de ter uma senha.
-- O **modelo de saída** não deve ter uma senha.
-- O **modelo de banco de dados** provavelmente precisaria ter uma senha criptografada.
+* O **modelo de entrada** precisa ser capaz de ter uma senha.
+* O **modelo de saída** não deve ter uma senha.
+* O **modelo de banco de dados** provavelmente precisaria ter uma senha criptografada.
 
 /// danger
 
 Nunca armazene senhas em texto simples dos usuários. Sempre armazene uma "hash segura" que você pode verificar depois.
 
-Se não souber, você aprenderá o que é uma "senha hash" nos [capítulos de segurança](security/simple-oauth2.md#password-hashing){.internal-link target=\_blank}.
+Se não souber, você aprenderá o que é uma "senha hash" nos [capítulos de segurança](security/simple-oauth2.md#password-hashing){.internal-link target=_blank}.
 
 ///
 

@@ -86,7 +86,7 @@ Você pode ver os cookies definidos na IU dos documentos em `/docs`:
 
 Tenha em mente que, como os **navegadores lidam com cookies** de maneira especial e por baixo dos panos, eles **não** permitem facilmente que o **JavaScript** lidem com eles.
 
-Se você for na **IU de documentos da API** em `/docs` você poderá ver a **documentação** para cookies das suas _operações de rotas_.
+Se você for na **IU de documentos da API** em `/docs` você poderá ver a **documentação** para cookies das suas *operações de rotas*.
 
 Mas mesmo que você **adicionar os dados** e clicar em "Executar", pelo motivo da IU dos documentos trabalharem com **JavaScript**, os cookies não serão enviados, e você verá uma mensagem de **erro** como se você não tivesse escrito nenhum dado.
 
@@ -98,7 +98,9 @@ Em alguns casos especiais (provavelmente não muito comuns), você pode querer *
 
 Agora a sua API possui o poder de contrar o seu próprio <abbr title="Isso é uma brincadeira, só por precaução. Isso não tem nada a ver com consentimentos de cookies, mas é engraçado que até a API consegue rejeitar os coitados dos cookies. Coma um biscoito. 🍪">consentimento de cookie</abbr>. 🤪🍪
 
-Você pode utilizar a configuração do modelo Pydantic para `proibir` qualquer campo `extra`.
+
+ Você pode utilizar a configuração do modelo Pydantic para `proibir` qualquer campo `extra`.
+
 
 //// tab | Python 3.9+
 
@@ -138,14 +140,14 @@ Por exemplo, se o cliente tentar enviar um cookie `santa_tracker` com o valor de
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["cookie", "santa_tracker"],
-      "msg": "Extra inputs are not permitted",
-      "input": "good-list-please"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["cookie", "santa_tracker"],
+            "msg": "Extra inputs are not permitted",
+            "input": "good-list-please",
+        }
+    ]
 }
 ```
 

@@ -6,7 +6,7 @@ You can define files and form fields at the same time using `File` and `Form`.
 
 To receive uploaded files and/or form data, first install <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it, for example:
 
 ```console
 $ pip install python-multipart
@@ -86,7 +86,7 @@ And you can declare some of the files as `bytes` and some as `UploadFile`.
 
 /// warning
 
-You can declare multiple `File` and `Form` parameters in a _path operation_, but you can't also declare `Body` fields that you expect to receive as JSON, as the request will have the body encoded using `multipart/form-data` instead of `application/json`.
+You can declare multiple `File` and `Form` parameters in a *path operation*, but you can't also declare `Body` fields that you expect to receive as JSON, as the request will have the body encoded using `multipart/form-data` instead of `application/json`.
 
 This is not a limitation of **ReadyAPI**, it's part of the HTTP protocol.
 

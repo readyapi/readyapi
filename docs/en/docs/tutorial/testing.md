@@ -12,7 +12,7 @@ With it, you can use <a href="https://docs.pytest.org/" class="external-link" ta
 
 To use `TestClient`, first install <a href="https://www.python-httpx.org" class="external-link" target="_blank">`httpx`</a>.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it, for example:
 
 ```console
 $ pip install httpx
@@ -54,7 +54,7 @@ You could also use `from starlette.testclient import TestClient`.
 
 /// tip
 
-If you want to call `async` functions in your tests apart from sending requests to your ReadyAPI application (e.g. asynchronous database functions), have a look at the [Async Tests](../advanced/async-tests.md){.internal-link target=\_blank} in the advanced tutorial.
+If you want to call `async` functions in your tests apart from sending requests to your ReadyAPI application (e.g. asynchronous database functions), have a look at the [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} in the advanced tutorial.
 
 ///
 
@@ -66,7 +66,7 @@ And your **ReadyAPI** application might also be composed of several files/module
 
 ### **ReadyAPI** app file
 
-Let's say you have a file structure as described in [Bigger Applications](bigger-applications.md){.internal-link target=\_blank}:
+Let's say you have a file structure as described in [Bigger Applications](bigger-applications.md){.internal-link target=_blank}:
 
 ```
 .
@@ -77,6 +77,7 @@ Let's say you have a file structure as described in [Bigger Applications](bigger
 
 In the file `main.py` you have your **ReadyAPI** app:
 
+
 ```Python
 {!../../docs_src/app_testing/main.py!}
 ```
@@ -85,7 +86,7 @@ In the file `main.py` you have your **ReadyAPI** app:
 
 Then you could have a file `test_main.py` with your tests. It could live on the same Python package (the same directory with a `__init__.py` file):
 
-```hl_lines="5"
+``` hl_lines="5"
 .
 ├── app
 │   ├── __init__.py
@@ -123,7 +124,7 @@ It has a `GET` operation that could return an error.
 
 It has a `POST` operation that could return several errors.
 
-Both _path operations_ require an `X-Token` header.
+Both *path operations* require an `X-Token` header.
 
 //// tab | Python 3.10+
 
@@ -191,11 +192,11 @@ Then you just do the same in your tests.
 
 E.g.:
 
-- To pass a _path_ or _query_ parameter, add it to the URL itself.
-- To pass a JSON body, pass a Python object (e.g. a `dict`) to the parameter `json`.
-- If you need to send _Form Data_ instead of JSON, use the `data` parameter instead.
-- To pass _headers_, use a `dict` in the `headers` parameter.
-- For _cookies_, a `dict` in the `cookies` parameter.
+* To pass a *path* or *query* parameter, add it to the URL itself.
+* To pass a JSON body, pass a Python object (e.g. a `dict`) to the parameter `json`.
+* If you need to send *Form Data* instead of JSON, use the `data` parameter instead.
+* To pass *headers*, use a `dict` in the `headers` parameter.
+* For *cookies*, a `dict` in the `cookies` parameter.
 
 For more information about how to pass data to the backend (using `httpx` or the `TestClient`) check the <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX documentation</a>.
 
@@ -203,7 +204,7 @@ For more information about how to pass data to the backend (using `httpx` or the
 
 Note that the `TestClient` receives data that can be converted to JSON, not Pydantic models.
 
-If you have a Pydantic model in your test and you want to send its data to the application during testing, you can use the `jsonable_encoder` described in [JSON Compatible Encoder](encoder.md){.internal-link target=\_blank}.
+If you have a Pydantic model in your test and you want to send its data to the application during testing, you can use the `jsonable_encoder` described in [JSON Compatible Encoder](encoder.md){.internal-link target=_blank}.
 
 ///
 
@@ -211,7 +212,7 @@ If you have a Pydantic model in your test and you want to send its data to the a
 
 After that, you just need to install `pytest`.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it, for example:
 
 <div class="termy">
 

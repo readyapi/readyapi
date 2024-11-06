@@ -64,6 +64,7 @@ Então declare os paramêtros de cookie usando a mesma estrutura que em `Path` e
 
 Você pode definir o valor padrão, assim como todas as validações extras ou parâmetros de anotação:
 
+
 //// tab | Python 3.10+
 
 ```Python hl_lines="9"

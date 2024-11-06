@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 `uvicorn main:app` 命令含义如下:
 
-- `main`：`main.py` 文件（一个 Python「模块」）。
-- `app`：在 `main.py` 文件中通过 `app = ReadyAPI()` 创建的对象。
-- `--reload`：让服务器在更新代码后重新启动。仅在开发时使用该选项。
+* `main`：`main.py` 文件（一个 Python「模块」）。
+* `app`：在 `main.py` 文件中通过 `app = ReadyAPI()` 创建的对象。
+* `--reload`：让服务器在更新代码后重新启动。仅在开发时使用该选项。
 
 ///
 
@@ -39,6 +39,7 @@ $ uvicorn main:app --reload
 ```hl_lines="4"
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
+
 
 该行显示了你的应用在本机所提供服务的 URL 地址。
 
@@ -219,17 +220,17 @@ https://example.com/items/foo
 
 下列之一：
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ...以及更少见的几种：
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 在 HTTP 协议中，你可以使用以上的其中一种（或多种）「方法」与每个路径进行通信。
 
@@ -239,10 +240,10 @@ https://example.com/items/foo
 
 通常使用：
 
-- `POST`：创建数据。
-- `GET`：读取数据。
-- `PUT`：更新数据。
-- `DELETE`：删除数据。
+* `POST`：创建数据。
+* `GET`：读取数据。
+* `PUT`：更新数据。
+* `DELETE`：删除数据。
 
 因此，在 OpenAPI 中，每一个 HTTP 方法都被称为「操作」。
 
@@ -256,8 +257,8 @@ https://example.com/items/foo
 
 `@app.get("/")` 告诉 **ReadyAPI** 在它下方的函数负责处理如下访问请求：
 
-- 请求路径为 `/`
-- 使用 <abbr title="HTTP GET 方法"><code>get</code> 操作</abbr>
+* 请求路径为 `/`
+* 使用 <abbr title="HTTP GET 方法"><code>get</code> 操作</abbr>
 
 /// info | "`@decorator` Info"
 
@@ -275,20 +276,20 @@ https://example.com/items/foo
 
 你也可以使用其他的操作：
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 以及更少见的：
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip
 
-您可以随意使用任何一个操作（HTTP 方法）。
+您可以随意使用任何一个操作（HTTP方法）。
 
 **ReadyAPI** 没有强制要求操作有任何特定的含义。
 
@@ -302,9 +303,9 @@ https://example.com/items/foo
 
 这是我们的「**路径操作函数**」：
 
-- **路径**：是 `/`。
-- **操作**：是 `get`。
-- **函数**：是位于「装饰器」下方的函数（位于 `@app.get("/")` 下方）。
+* **路径**：是 `/`。
+* **操作**：是 `get`。
+* **函数**：是位于「装饰器」下方的函数（位于 `@app.get("/")` 下方）。
 
 ```Python hl_lines="7"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -326,7 +327,7 @@ https://example.com/items/foo
 
 /// note
 
-如果你不知道两者的区别，请查阅 [Async: _"In a hurry?"_](https://readyapi.khulnasoft.com/async/#in-a-hurry){.internal-link target=\_blank}。
+如果你不知道两者的区别，请查阅 [Async: *"In a hurry?"*](https://readyapi.khulnasoft.com/async/#in-a-hurry){.internal-link target=_blank}。
 
 ///
 
@@ -344,8 +345,8 @@ https://example.com/items/foo
 
 ## 总结
 
-- 导入 `ReadyAPI`。
-- 创建一个 `app` 实例。
-- 编写一个**路径操作装饰器**（如 `@app.get("/")`）。
-- 编写一个**路径操作函数**（如上面的 `def root(): ...`）。
-- 运行开发服务器（如 `uvicorn main:app --reload`）。
+* 导入 `ReadyAPI`。
+* 创建一个 `app` 实例。
+* 编写一个**路径操作装饰器**（如 `@app.get("/")`）。
+* 编写一个**路径操作函数**（如上面的 `def root(): ...`）。
+* 运行开发服务器（如 `uvicorn main:app --reload`）。

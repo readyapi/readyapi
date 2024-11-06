@@ -42,9 +42,9 @@ Jeder „Scope“ ist nur ein String (ohne Leerzeichen).
 
 Er wird normalerweise verwendet, um bestimmte Sicherheitsberechtigungen zu deklarieren, zum Beispiel:
 
-- `users:read` oder `users:write` sind gängige Beispiele.
-- `instagram_basic` wird von Facebook / Instagram verwendet.
-- `https://www.googleapis.com/auth/drive` wird von Google verwendet.
+* `users:read` oder `users:write` sind gängige Beispiele.
+* `instagram_basic` wird von Facebook / Instagram verwendet.
+* `https://www.googleapis.com/auth/drive` wird von Google verwendet.
 
 /// info
 
@@ -60,7 +60,7 @@ Für OAuth2 sind es einfach nur Strings.
 
 ## Gesamtübersicht
 
-Sehen wir uns zunächst kurz die Teile an, die sich gegenüber den Beispielen im Haupt-**Tutorial – Benutzerhandbuch** für [OAuth2 mit Password (und Hashing), Bearer mit JWT-Tokens](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank} ändern. Diesmal verwenden wir OAuth2-Scopes:
+Sehen wir uns zunächst kurz die Teile an, die sich gegenüber den Beispielen im Haupt-**Tutorial – Benutzerhandbuch** für [OAuth2 mit Password (und Hashing), Bearer mit JWT-Tokens](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank} ändern. Diesmal verwenden wir OAuth2-Scopes:
 
 //// tab | Python 3.10+
 
@@ -212,7 +212,7 @@ Das ist derselbe Mechanismus, der verwendet wird, wenn Sie beim Anmelden mit Fac
 
 ## JWT-Token mit Scopes
 
-Ändern Sie nun die Token-_Pfadoperation_, um die angeforderten Scopes zurückzugeben.
+Ändern Sie nun die Token-*Pfadoperation*, um die angeforderten Scopes zurückzugeben.
 
 Wir verwenden immer noch dasselbe `OAuth2PasswordRequestForm`. Es enthält eine Eigenschaft `scopes` mit einer `list`e von `str`s für jeden Scope, den es im Request erhalten hat.
 
@@ -292,9 +292,9 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-## Scopes in _Pfadoperationen_ und Abhängigkeiten deklarieren
+## Scopes in *Pfadoperationen* und Abhängigkeiten deklarieren
 
-Jetzt deklarieren wir, dass die _Pfadoperation_ für `/users/me/items/` den Scope `items` erfordert.
+Jetzt deklarieren wir, dass die *Pfadoperation* für `/users/me/items/` den Scope `items` erfordert.
 
 Dazu importieren und verwenden wir `Security` von `readyapi`.
 
@@ -632,7 +632,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ## Die `scopes` verifizieren
 
-Wir überprüfen nun, ob das empfangenen Token alle Scopes enthält, die von dieser Abhängigkeit und deren Verwendern (einschließlich _Pfadoperationen_) gefordert werden. Andernfalls lösen wir eine `HTTPException` aus.
+Wir überprüfen nun, ob das empfangenen Token alle Scopes enthält, die von dieser Abhängigkeit und deren Verwendern (einschließlich *Pfadoperationen*) gefordert werden. Andernfalls lösen wir eine `HTTPException` aus.
 
 Hierzu verwenden wir `security_scopes.scopes`, das eine `list`e mit allen diesen Scopes als `str` enthält.
 
@@ -708,30 +708,30 @@ Sehen wir uns diesen Abhängigkeitsbaum und die Scopes noch einmal an.
 
 Da die Abhängigkeit `get_current_active_user` von `get_current_user` abhängt, wird der bei `get_current_active_user` deklarierte Scope `"me"` in die Liste der erforderlichen Scopes in `security_scopes.scopes` aufgenommen, das an `get_current_user` übergeben wird.
 
-Die _Pfadoperation_ selbst deklariert auch einen Scope, `"items"`, sodass dieser auch in der Liste der `security_scopes.scopes` enthalten ist, die an `get_current_user` übergeben wird.
+Die *Pfadoperation* selbst deklariert auch einen Scope, `"items"`, sodass dieser auch in der Liste der `security_scopes.scopes` enthalten ist, die an `get_current_user` übergeben wird.
 
 So sieht die Hierarchie der Abhängigkeiten und Scopes aus:
 
-- Die _Pfadoperation_ `read_own_items` hat:
-  - Erforderliche Scopes `["items"]` mit der Abhängigkeit:
-  - `get_current_active_user`:
-    - Die Abhängigkeitsfunktion `get_current_active_user` hat:
-      - Erforderliche Scopes `["me"]` mit der Abhängigkeit:
-      - `get_current_user`:
-        - Die Abhängigkeitsfunktion `get_current_user` hat:
-          - Selbst keine erforderlichen Scopes.
-          - Eine Abhängigkeit, die `oauth2_scheme` verwendet.
-          - Einen `security_scopes`-Parameter vom Typ `SecurityScopes`:
-            - Dieser `security_scopes`-Parameter hat ein Attribut `scopes` mit einer `list`e, die alle oben deklarierten Scopes enthält, sprich:
-              - `security_scopes.scopes` enthält `["me", "items"]` für die _Pfadoperation_ `read_own_items`.
-              - `security_scopes.scopes` enthält `["me"]` für die _Pfadoperation_ `read_users_me`, da das in der Abhängigkeit `get_current_active_user` deklariert ist.
-              - `security_scopes.scopes` wird `[]` (nichts) für die _Pfadoperation_ `read_system_status` enthalten, da diese keine `Security` mit `scopes` deklariert hat, und deren Abhängigkeit `get_current_user` ebenfalls keinerlei `scopes` deklariert.
+* Die *Pfadoperation* `read_own_items` hat:
+    * Erforderliche Scopes `["items"]` mit der Abhängigkeit:
+    * `get_current_active_user`:
+        * Die Abhängigkeitsfunktion `get_current_active_user` hat:
+            * Erforderliche Scopes `["me"]` mit der Abhängigkeit:
+            * `get_current_user`:
+                * Die Abhängigkeitsfunktion `get_current_user` hat:
+                    * Selbst keine erforderlichen Scopes.
+                    * Eine Abhängigkeit, die `oauth2_scheme` verwendet.
+                    * Einen `security_scopes`-Parameter vom Typ `SecurityScopes`:
+                        * Dieser `security_scopes`-Parameter hat ein Attribut `scopes` mit einer `list`e, die alle oben deklarierten Scopes enthält, sprich:
+                            * `security_scopes.scopes` enthält `["me", "items"]` für die *Pfadoperation* `read_own_items`.
+                            * `security_scopes.scopes` enthält `["me"]` für die *Pfadoperation* `read_users_me`, da das in der Abhängigkeit `get_current_active_user` deklariert ist.
+                            * `security_scopes.scopes` wird `[]` (nichts) für die *Pfadoperation* `read_system_status` enthalten, da diese keine `Security` mit `scopes` deklariert hat, und deren Abhängigkeit `get_current_user` ebenfalls keinerlei `scopes` deklariert.
 
 /// tip | "Tipp"
 
-Das Wichtige und „Magische“ hier ist, dass `get_current_user` für jede _Pfadoperation_ eine andere Liste von `scopes` hat, die überprüft werden.
+Das Wichtige und „Magische“ hier ist, dass `get_current_user` für jede *Pfadoperation* eine andere Liste von `scopes` hat, die überprüft werden.
 
-Alles hängt von den „Scopes“ ab, die in jeder _Pfadoperation_ und jeder Abhängigkeit im Abhängigkeitsbaum für diese bestimmte _Pfadoperation_ deklariert wurden.
+Alles hängt von den „Scopes“ ab, die in jeder *Pfadoperation* und jeder Abhängigkeit im Abhängigkeitsbaum für diese bestimmte *Pfadoperation* deklariert wurden.
 
 ///
 
@@ -739,11 +739,11 @@ Alles hängt von den „Scopes“ ab, die in jeder _Pfadoperation_ und jeder Abh
 
 Sie können `SecurityScopes` an jeder Stelle und an mehreren Stellen verwenden, es muss sich nicht in der „Wurzel“-Abhängigkeit befinden.
 
-Es wird immer die Sicherheits-Scopes enthalten, die in den aktuellen `Security`-Abhängigkeiten deklariert sind und in allen Abhängigkeiten für **diese spezifische** _Pfadoperation_ und **diesen spezifischen** Abhängigkeitsbaum.
+Es wird immer die Sicherheits-Scopes enthalten, die in den aktuellen `Security`-Abhängigkeiten deklariert sind und in allen Abhängigkeiten für **diese spezifische** *Pfadoperation* und **diesen spezifischen** Abhängigkeitsbaum.
 
-Da die `SecurityScopes` alle von den Verwendern der Abhängigkeiten deklarierten Scopes enthalten, können Sie damit überprüfen, ob ein Token in einer zentralen Abhängigkeitsfunktion über die erforderlichen Scopes verfügt, und dann unterschiedliche Scope-Anforderungen in unterschiedlichen _Pfadoperationen_ deklarieren.
+Da die `SecurityScopes` alle von den Verwendern der Abhängigkeiten deklarierten Scopes enthalten, können Sie damit überprüfen, ob ein Token in einer zentralen Abhängigkeitsfunktion über die erforderlichen Scopes verfügt, und dann unterschiedliche Scope-Anforderungen in unterschiedlichen *Pfadoperationen* deklarieren.
 
-Diese werden für jede _Pfadoperation_ unabhängig überprüft.
+Diese werden für jede *Pfadoperation* unabhängig überprüft.
 
 ## Testen Sie es
 
@@ -755,7 +755,7 @@ Wenn Sie keinen Scope auswählen, werden Sie „authentifiziert“, aber wenn Si
 
 Und wenn Sie den Scope `me`, aber nicht den Scope `items` auswählen, können Sie auf `/users/me/` zugreifen, aber nicht auf `/users/me/items/`.
 
-Das würde einer Drittanbieteranwendung passieren, die versucht, auf eine dieser _Pfadoperationen_ mit einem Token zuzugreifen, das von einem Benutzer bereitgestellt wurde, abhängig davon, wie viele Berechtigungen der Benutzer dieser Anwendung erteilt hat.
+Das würde einer Drittanbieteranwendung passieren, die versucht, auf eine dieser *Pfadoperationen* mit einem Token zuzugreifen, das von einem Benutzer bereitgestellt wurde, abhängig davon, wie viele Berechtigungen der Benutzer dieser Anwendung erteilt hat.
 
 ## Über Integrationen von Drittanbietern
 
@@ -783,4 +783,4 @@ Aber am Ende implementieren sie denselben OAuth2-Standard.
 
 ## `Security` in Dekorator-`dependencies`
 
-Auf die gleiche Weise können Sie eine `list`e von `Depends` im Parameter `dependencies` des Dekorators definieren (wie in [Abhängigkeiten in Pfadoperation-Dekoratoren](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} erläutert), Sie könnten auch dort `Security` mit `scopes` verwenden.
+Auf die gleiche Weise können Sie eine `list`e von `Depends` im Parameter `dependencies` des Dekorators definieren (wie in [Abhängigkeiten in Pfadoperation-Dekoratoren](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} erläutert), Sie könnten auch dort `Security` mit `scopes` verwenden.
