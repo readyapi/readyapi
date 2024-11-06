@@ -57,7 +57,7 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
 
   # https://github.com/marketplace/actions/alls-green#why
-  test-redistribute-alls-green: # This job does nothing and is only used for the branch protection
+  test-redistribute-alls-green:  # This job does nothing and is only used for the branch protection
     if: always()
     needs:
       - test-redistribute

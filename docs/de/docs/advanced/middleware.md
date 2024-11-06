@@ -1,8 +1,8 @@
 # Fortgeschrittene Middleware
 
-Im Haupttutorial haben Sie gelesen, wie Sie Ihrer Anwendung [benutzerdefinierte Middleware](../tutorial/middleware.md){.internal-link target=\_blank} hinzufügen können.
+Im Haupttutorial haben Sie gelesen, wie Sie Ihrer Anwendung [benutzerdefinierte Middleware](../tutorial/middleware.md){.internal-link target=_blank} hinzufügen können.
 
-Und dann auch, wie man [CORS mittels der `CORSMiddleware`](../tutorial/cors.md){.internal-link target=\_blank} handhabt.
+Und dann auch, wie man [CORS mittels der `CORSMiddleware`](../tutorial/cors.md){.internal-link target=_blank} handhabt.
 
 In diesem Abschnitt werden wir sehen, wie man andere Middlewares verwendet.
 
@@ -71,7 +71,7 @@ Erzwingt, dass alle eingehenden Requests einen korrekt gesetzten `Host`-Header h
 
 Die folgenden Argumente werden unterstützt:
 
-- `allowed_hosts` – Eine Liste von Domain-Namen, die als Hostnamen zulässig sein sollten. Wildcard-Domains wie `*.example.com` werden unterstützt, um Subdomains zu matchen. Um jeden Hostnamen zu erlauben, verwenden Sie entweder `allowed_hosts=["*"]` oder lassen Sie diese Middleware weg.
+* `allowed_hosts` – Eine Liste von Domain-Namen, die als Hostnamen zulässig sein sollten. Wildcard-Domains wie `*.example.com` werden unterstützt, um Subdomains zu matchen. Um jeden Hostnamen zu erlauben, verwenden Sie entweder `allowed_hosts=["*"]` oder lassen Sie diese Middleware weg.
 
 Wenn ein eingehender Request nicht korrekt validiert wird, wird eine „400“-Response gesendet.
 
@@ -87,7 +87,7 @@ Diese Middleware verarbeitet sowohl Standard- als auch Streaming-Responses.
 
 Die folgenden Argumente werden unterstützt:
 
-- `minimum_size` – Antworten, die kleiner als diese Mindestgröße in Bytes sind, nicht per GZip komprimieren. Der Defaultwert ist `500`.
+* `minimum_size` – Antworten, die kleiner als diese Mindestgröße in Bytes sind, nicht per GZip komprimieren. Der Defaultwert ist `500`.
 
 ## Andere Middlewares
 
@@ -95,7 +95,7 @@ Es gibt viele andere ASGI-Middlewares.
 
 Zum Beispiel:
 
-- <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorns `ProxyHeadersMiddleware`</a>
-- <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">MessagePack</a>
+* <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorns `ProxyHeadersMiddleware`</a>
+* <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">MessagePack</a>
 
 Um mehr über weitere verfügbare Middlewares herauszufinden, besuchen Sie <a href="https://www.starlette.io/middleware/" class="external-link" target="_blank">Starlettes Middleware-Dokumentation</a> und die <a href="https://github.com/florimondmanca/awesome-asgi" class="external-link" target="_blank">ASGI Awesome List</a>.

@@ -2,7 +2,7 @@
 
 Da **ReadyAPI** auf dem **ASGI**-Standard basiert, ist es sehr einfach, jede **GraphQL**-Bibliothek zu integrieren, die auch mit ASGI kompatibel ist.
 
-Sie können normale ReadyAPI-_Pfadoperationen_ mit GraphQL in derselben Anwendung kombinieren.
+Sie können normale ReadyAPI-*Pfadoperationen* mit GraphQL in derselben Anwendung kombinieren.
 
 /// tip | "Tipp"
 
@@ -18,14 +18,14 @@ Wiegen Sie ab, ob die **Vorteile** für Ihren Anwendungsfall die **Nachteile** a
 
 Hier sind einige der **GraphQL**-Bibliotheken, welche **ASGI** unterstützen. Diese könnten Sie mit **ReadyAPI** verwenden:
 
-- <a href="https://strawberry.rocks/" class="external-link" target="_blank">Strawberry</a> 🍓
-  - Mit <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">Dokumentation für ReadyAPI</a>
-- <a href="https://ariadnegraphql.org/" class="external-link" target="_blank">Ariadne</a>
-  - Mit <a href="https://ariadnegraphql.org/docs/readyapi-integration" class="external-link" target="_blank">Dokumentation für ReadyAPI</a>
-- <a href="https://tartiflette.io/" class="external-link" target="_blank">Tartiflette</a>
-  - Mit <a href="https://tartiflette.github.io/tartiflette-asgi/" class="external-link" target="_blank">Tartiflette ASGI</a>, für ASGI-Integration
-- <a href="https://graphene-python.org/" class="external-link" target="_blank">Graphene</a>
-  - Mit <a href="https://github.com/ciscorn/starlette-graphene3" class="external-link" target="_blank">starlette-graphene3</a>
+* <a href="https://strawberry.rocks/" class="external-link" target="_blank">Strawberry</a> 🍓
+    * Mit <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">Dokumentation für ReadyAPI</a>
+* <a href="https://ariadnegraphql.org/" class="external-link" target="_blank">Ariadne</a>
+    * Mit <a href="https://ariadnegraphql.org/docs/readyapi-integration" class="external-link" target="_blank">Dokumentation für ReadyAPI</a>
+* <a href="https://tartiflette.io/" class="external-link" target="_blank">Tartiflette</a>
+    * Mit <a href="https://tartiflette.github.io/tartiflette-asgi/" class="external-link" target="_blank">Tartiflette ASGI</a>, für ASGI-Integration
+* <a href="https://graphene-python.org/" class="external-link" target="_blank">Graphene</a>
+    * Mit <a href="https://github.com/ciscorn/starlette-graphene3" class="external-link" target="_blank">starlette-graphene3</a>
 
 ## GraphQL mit Strawberry
 

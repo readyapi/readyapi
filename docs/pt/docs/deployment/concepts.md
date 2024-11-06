@@ -4,12 +4,12 @@ Ao implantar um aplicativo **ReadyAPI**, ou na verdade, qualquer tipo de API da 
 
 Alguns dos conceitos importantes são:
 
-- Segurança - HTTPS
-- Executando na inicialização
-- Reinicializações
-- Replicação (o número de processos em execução)
-- Memória
-- Etapas anteriores antes de iniciar
+* Segurança - HTTPS
+* Executando na inicialização
+* Reinicializações
+* Replicação (o número de processos em execução)
+* Memória
+* Etapas anteriores antes de iniciar
 
 Veremos como eles afetariam as **implantações**.
 
@@ -25,7 +25,7 @@ Mas por enquanto, vamos verificar essas importantes **ideias conceituais**. Esse
 
 ## Segurança - HTTPS
 
-No [capítulo anterior sobre HTTPS](https.md){.internal-link target=\_blank} aprendemos como o HTTPS fornece criptografia para sua API.
+No [capítulo anterior sobre HTTPS](https.md){.internal-link target=_blank} aprendemos como o HTTPS fornece criptografia para sua API.
 
 Também vimos que o HTTPS normalmente é fornecido por um componente **externo** ao seu servidor de aplicativos, um **Proxy de terminação TLS**.
 
@@ -35,17 +35,17 @@ E tem que haver algo responsável por **renovar os certificados HTTPS**, pode se
 
 Algumas das ferramentas que você pode usar como um proxy de terminação TLS são:
 
-- Traefik
-  - Lida automaticamente com renovações de certificados ✨
-- Caddy
-  - Lida automaticamente com renovações de certificados ✨
-- Nginx
-  - Com um componente externo como o Certbot para renovações de certificados
-- HAProxy
-  - Com um componente externo como o Certbot para renovações de certificados
-- Kubernetes com um controlador Ingress como o Nginx
-  - Com um componente externo como cert-manager para renovações de certificados
-- Gerenciado internamente por um provedor de nuvem como parte de seus serviços (leia abaixo 👇)
+* Traefik
+    * Lida automaticamente com renovações de certificados ✨
+* Caddy
+    * Lida automaticamente com renovações de certificados ✨
+* Nginx
+    * Com um componente externo como o Certbot para renovações de certificados
+* HAProxy
+    * Com um componente externo como o Certbot para renovações de certificados
+* Kubernetes com um controlador Ingress como o Nginx
+    * Com um componente externo como cert-manager para renovações de certificados
+* Gerenciado internamente por um provedor de nuvem como parte de seus serviços (leia abaixo 👇)
 
 Outra opção é que você poderia usar um **serviço de nuvem** que faz mais do trabalho, incluindo a configuração de HTTPS. Ele pode ter algumas restrições ou cobrar mais, etc. Mas, nesse caso, você não teria que configurar um Proxy de terminação TLS sozinho.
 
@@ -63,20 +63,20 @@ Falaremos muito sobre o "**processo**" em execução, então é útil ter clarez
 
 A palavra **programa** é comumente usada para descrever muitas coisas:
 
-- O **código** que você escreve, os **arquivos Python**.
-- O **arquivo** que pode ser **executado** pelo sistema operacional, por exemplo: `python`, `python.exe` ou `uvicorn`.
-- Um programa específico enquanto está **em execução** no sistema operacional, usando a CPU e armazenando coisas na memória. Isso também é chamado de **processo**.
+* O **código** que você escreve, os **arquivos Python**.
+* O **arquivo** que pode ser **executado** pelo sistema operacional, por exemplo: `python`, `python.exe` ou `uvicorn`.
+* Um programa específico enquanto está **em execução** no sistema operacional, usando a CPU e armazenando coisas na memória. Isso também é chamado de **processo**.
 
 ### O que é um Processo
 
 A palavra **processo** normalmente é usada de forma mais específica, referindo-se apenas ao que está sendo executado no sistema operacional (como no último ponto acima):
 
-- Um programa específico enquanto está **em execução** no sistema operacional.
-  - Isso não se refere ao arquivo, nem ao código, refere-se **especificamente** à coisa que está sendo **executada** e gerenciada pelo sistema operacional.
-- Qualquer programa, qualquer código, **só pode fazer coisas** quando está sendo **executado**. Então, quando há um **processo em execução**.
-- O processo pode ser **terminado** (ou "morto") por você, ou pelo sistema operacional. Nesse ponto, ele para de rodar/ser executado, e ele **não pode mais fazer coisas**.
-- Cada aplicativo que você tem em execução no seu computador tem algum processo por trás dele, cada programa em execução, cada janela, etc. E normalmente há muitos processos em execução **ao mesmo tempo** enquanto um computador está ligado.
-- Pode haver **vários processos** do **mesmo programa** em execução ao mesmo tempo.
+* Um programa específico enquanto está **em execução** no sistema operacional.
+    * Isso não se refere ao arquivo, nem ao código, refere-se **especificamente** à coisa que está sendo **executada** e gerenciada pelo sistema operacional.
+* Qualquer programa, qualquer código, **só pode fazer coisas** quando está sendo **executado**. Então, quando há um **processo em execução**.
+* O processo pode ser **terminado** (ou "morto") por você, ou pelo sistema operacional. Nesse ponto, ele para de rodar/ser executado, e ele **não pode mais fazer coisas**.
+* Cada aplicativo que você tem em execução no seu computador tem algum processo por trás dele, cada programa em execução, cada janela, etc. E normalmente há muitos processos em execução **ao mesmo tempo** enquanto um computador está ligado.
+* Pode haver **vários processos** do **mesmo programa** em execução ao mesmo tempo.
 
 Se você verificar o "gerenciador de tarefas" ou o "monitor do sistema" (ou ferramentas semelhantes) no seu sistema operacional, poderá ver muitos desses processos em execução.
 
@@ -114,14 +114,14 @@ Para conseguir isso, você normalmente terá um **programa separado** que garant
 
 Alguns exemplos de ferramentas que podem fazer esse trabalho são:
 
-- Docker
-- Kubernetes
-- Docker Compose
-- Docker em Modo Swarm
-- Systemd
-- Supervisor
-- Gerenciado internamente por um provedor de nuvem como parte de seus serviços
-- Outros...
+* Docker
+* Kubernetes
+* Docker Compose
+* Docker em Modo Swarm
+* Systemd
+* Supervisor
+* Gerenciado internamente por um provedor de nuvem como parte de seus serviços
+* Outros...
 
 Darei exemplos mais concretos nos próximos capítulos.
 
@@ -131,7 +131,7 @@ Semelhante a garantir que seu aplicativo seja executado na inicialização, voc�
 
 ### Nós cometemos erros
 
-Nós, como humanos, cometemos **erros** o tempo todo. O software quase _sempre_ tem **bugs** escondidos em lugares diferentes. 🐛
+Nós, como humanos, cometemos **erros** o tempo todo. O software quase *sempre* tem **bugs** escondidos em lugares diferentes. 🐛
 
 E nós, como desenvolvedores, continuamos aprimorando o código à medida que encontramos esses bugs e implementamos novos recursos (possivelmente adicionando novos bugs também 😅).
 
@@ -145,7 +145,7 @@ O cliente receberá um **Erro Interno do Servidor 500** para essa solicitação,
 
 No entanto, pode haver casos em que escrevemos algum código que **trava todo o aplicativo**, fazendo com que o Uvicorn e o Python travem. 💥
 
-E ainda assim, você provavelmente não gostaria que o aplicativo permanecesse inativo porque houve um erro em um lugar, você provavelmente quer que ele **continue em execução** pelo menos para as _operações de caminho_ que não estão quebradas.
+E ainda assim, você provavelmente não gostaria que o aplicativo permanecesse inativo porque houve um erro em um lugar, você provavelmente quer que ele **continue em execução** pelo menos para as *operações de caminho* que não estão quebradas.
 
 ### Reiniciar após falha
 
@@ -167,14 +167,14 @@ Na maioria dos casos, a mesma ferramenta usada para **executar o programa na ini
 
 Por exemplo, isso poderia ser resolvido por:
 
-- Docker
-- Kubernetes
-- Docker Compose
-- Docker no Modo Swarm
-- Systemd
-- Supervisor
-- Gerenciado internamente por um provedor de nuvem como parte de seus serviços
-- Outros...
+* Docker
+* Kubernetes
+* Docker Compose
+* Docker no Modo Swarm
+* Systemd
+* Supervisor
+* Gerenciado internamente por um provedor de nuvem como parte de seus serviços
+* Outros...
 
 ## Replicação - Processos e Memória
 
@@ -190,7 +190,7 @@ Quando você executa **vários processos** do mesmo programa de API, eles são c
 
 ### Processos do Trabalhador e Portas
 
-Lembra da documentação [Sobre HTTPS](https.md){.internal-link target=\_blank} que diz que apenas um processo pode escutar em uma combinação de porta e endereço IP em um servidor?
+Lembra da documentação [Sobre HTTPS](https.md){.internal-link target=_blank} que diz que apenas um processo pode escutar em uma combinação de porta e endereço IP em um servidor?
 
 Isso ainda é verdade.
 
@@ -222,7 +222,7 @@ E, claro, a mesma máquina provavelmente teria **outros processos** em execuçã
 
 Um detalhe interessante é que a porcentagem da **CPU usada** por cada processo pode **variar** muito ao longo do tempo, mas a **memória (RAM)** normalmente fica mais ou menos **estável**.
 
-Se você tiver uma API que faz uma quantidade comparável de cálculos todas as vezes e tiver muitos clientes, então a **utilização da CPU** provavelmente _também será estável_ (em vez de ficar constantemente subindo e descendo rapidamente).
+Se você tiver uma API que faz uma quantidade comparável de cálculos todas as vezes e tiver muitos clientes, então a **utilização da CPU** provavelmente *também será estável* (em vez de ficar constantemente subindo e descendo rapidamente).
 
 ### Exemplos de ferramentas e estratégias de replicação
 
@@ -232,18 +232,18 @@ A principal restrição a ser considerada é que tem que haver um **único** com
 
 Aqui estão algumas combinações e estratégias possíveis:
 
-- **Uvicorn** com `--workers`
-  - Um **gerenciador de processos** Uvicorn escutaria no **IP** e na **porta** e iniciaria **vários processos de trabalho Uvicorn**.
-- **Kubernetes** e outros **sistemas de contêineres** distribuídos
-  - Algo na camada **Kubernetes** escutaria no **IP** e na **porta**. A replicação seria por ter **vários contêineres**, cada um com **um processo Uvicorn** em execução.
-- **Serviços de nuvem** que cuidam disso para você
-  - O serviço de nuvem provavelmente **cuidará da replicação para você**. Ele possivelmente deixaria você definir **um processo para executar**, ou uma **imagem de contêiner** para usar, em qualquer caso, provavelmente seria **um único processo Uvicorn**, e o serviço de nuvem seria responsável por replicá-lo.
+* **Uvicorn** com `--workers`
+    * Um **gerenciador de processos** Uvicorn escutaria no **IP** e na **porta** e iniciaria **vários processos de trabalho Uvicorn**.
+* **Kubernetes** e outros **sistemas de contêineres** distribuídos
+    * Algo na camada **Kubernetes** escutaria no **IP** e na **porta**. A replicação seria por ter **vários contêineres**, cada um com **um processo Uvicorn** em execução.
+* **Serviços de nuvem** que cuidam disso para você
+    * O serviço de nuvem provavelmente **cuidará da replicação para você**. Ele possivelmente deixaria você definir **um processo para executar**, ou uma **imagem de contêiner** para usar, em qualquer caso, provavelmente seria **um único processo Uvicorn**, e o serviço de nuvem seria responsável por replicá-lo.
 
 /// tip | "Dica"
 
 Não se preocupe se alguns desses itens sobre **contêineres**, Docker ou Kubernetes ainda não fizerem muito sentido.
 
-Falarei mais sobre imagens de contêiner, Docker, Kubernetes, etc. em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=\_blank}.
+Falarei mais sobre imagens de contêiner, Docker, Kubernetes, etc. em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -257,7 +257,7 @@ Mas na maioria dos casos, você precisará executar essas etapas apenas **uma ve
 
 Portanto, você vai querer ter um **processo único** para executar essas **etapas anteriores** antes de iniciar o aplicativo.
 
-E você terá que se certificar de que é um único processo executando essas etapas anteriores _mesmo_ se depois, você iniciar **vários processos** (vários trabalhadores) para o próprio aplicativo. Se essas etapas fossem executadas por **vários processos**, eles **duplicariam** o trabalho executando-o em **paralelo**, e se as etapas fossem algo delicado como uma migração de banco de dados, elas poderiam causar conflitos entre si.
+E você terá que se certificar de que é um único processo executando essas etapas anteriores *mesmo* se depois, você iniciar **vários processos** (vários trabalhadores) para o próprio aplicativo. Se essas etapas fossem executadas por **vários processos**, eles **duplicariam** o trabalho executando-o em **paralelo**, e se as etapas fossem algo delicado como uma migração de banco de dados, elas poderiam causar conflitos entre si.
 
 Claro, há alguns casos em que não há problema em executar as etapas anteriores várias vezes; nesse caso, é muito mais fácil de lidar.
 
@@ -275,13 +275,13 @@ Isso **dependerá muito** da maneira como você **implanta seu sistema** e prova
 
 Aqui estão algumas ideias possíveis:
 
-- Um "Init Container" no Kubernetes que roda antes do seu app container
-- Um script bash que roda os passos anteriores e então inicia seu aplicativo
-  - Você ainda precisaria de uma maneira de iniciar/reiniciar _aquele_ script bash, detectar erros, etc.
+* Um "Init Container" no Kubernetes que roda antes do seu app container
+* Um script bash que roda os passos anteriores e então inicia seu aplicativo
+    * Você ainda precisaria de uma maneira de iniciar/reiniciar *aquele* script bash, detectar erros, etc.
 
 /// tip | "Dica"
 
-Darei exemplos mais concretos de como fazer isso com contêineres em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=\_blank}.
+Darei exemplos mais concretos de como fazer isso com contêineres em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -309,12 +309,12 @@ Você pode usar ferramentas simples como `htop` para ver a CPU e a RAM usadas no
 
 Você leu aqui alguns dos principais conceitos que provavelmente precisa ter em mente ao decidir como implantar seu aplicativo:
 
-- Segurança - HTTPS
-- Executando na inicialização
-- Reinicializações
-- Replicação (o número de processos em execução)
-- Memória
-- Etapas anteriores antes de iniciar
+* Segurança - HTTPS
+* Executando na inicialização
+* Reinicializações
+* Replicação (o número de processos em execução)
+* Memória
+* Etapas anteriores antes de iniciar
 
 Entender essas ideias e como aplicá-las deve lhe dar a intuição necessária para tomar qualquer decisão ao configurar e ajustar suas implantações. 🤓
 

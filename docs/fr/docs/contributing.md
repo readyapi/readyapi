@@ -1,6 +1,6 @@
 # Développement - Contribuer
 
-Tout d'abord, vous voudrez peut-être voir les moyens de base pour [aider ReadyAPI et obtenir de l'aide](help-readyapi.md){.internal-link target=\_blank}.
+Tout d'abord, vous voudrez peut-être voir les moyens de base pour [aider ReadyAPI et obtenir de l'aide](help-readyapi.md){.internal-link target=_blank}.
 
 ## Développement
 
@@ -93,6 +93,8 @@ some/directory/readyapi/env/bin/pip
 ////
 
 Si celui-ci montre le binaire `pip` à `env/bin/pip`, alors ça a fonctionné. 🎉
+
+
 
 /// tip
 
@@ -222,9 +224,9 @@ La plupart des tests sont en fait effectués par rapport aux exemples de fichier
 
 Cela permet de s'assurer que :
 
-- La documentation est à jour.
-- Les exemples de documentation peuvent être exécutés tels quels.
-- La plupart des fonctionnalités sont couvertes par la documentation, assurées par la couverture des tests.
+* La documentation est à jour.
+* Les exemples de documentation peuvent être exécutés tels quels.
+* La plupart des fonctionnalités sont couvertes par la documentation, assurées par la couverture des tests.
 
 Au cours du développement local, un script build le site et vérifie les changements éventuels, puis il est rechargé en direct :
 
@@ -287,7 +289,7 @@ Voici les étapes à suivre pour aider à la traduction.
 
 #### Conseils et lignes directrices
 
-- Vérifiez les <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">pull requests existantes</a> pour votre langue et ajouter des reviews demandant des changements ou les approuvant.
+* Vérifiez les <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">pull requests existantes</a> pour votre langue et ajouter des reviews demandant des changements ou les approuvant.
 
 /// tip
 
@@ -297,19 +299,19 @@ Consultez les documents concernant <a href="https://help.github.com/en/github/co
 
 ///
 
-- Vérifiez dans <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">issues</a> pour voir s'il y a une personne qui coordonne les traductions pour votre langue.
+* Vérifiez dans <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">issues</a> pour voir s'il y a une personne qui coordonne les traductions pour votre langue.
 
-- Ajoutez une seule pull request par page traduite. Il sera ainsi beaucoup plus facile pour les autres de l'examiner.
+* Ajoutez une seule pull request par page traduite. Il sera ainsi beaucoup plus facile pour les autres de l'examiner.
 
 Pour les langues que je ne parle pas, je vais attendre plusieurs autres reviews de la traduction avant de merge.
 
-- Vous pouvez également vérifier s'il existe des traductions pour votre langue et y ajouter une review, ce qui m'aidera à savoir si la traduction est correcte et je pourrai la fusionner.
+* Vous pouvez également vérifier s'il existe des traductions pour votre langue et y ajouter une review, ce qui m'aidera à savoir si la traduction est correcte et je pourrai la fusionner.
 
-- Utilisez les mêmes exemples en Python et ne traduisez que le texte des documents. Vous n'avez pas besoin de changer quoi que ce soit pour que cela fonctionne.
+* Utilisez les mêmes exemples en Python et ne traduisez que le texte des documents. Vous n'avez pas besoin de changer quoi que ce soit pour que cela fonctionne.
 
-- Utilisez les mêmes images, noms de fichiers et liens. Vous n'avez pas besoin de changer quoi que ce soit pour que cela fonctionne.
+* Utilisez les mêmes images, noms de fichiers et liens. Vous n'avez pas besoin de changer quoi que ce soit pour que cela fonctionne.
 
-- Pour vérifier le code à 2 lettres de la langue que vous souhaitez traduire, vous pouvez utiliser le tableau <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">Liste des codes ISO 639-1</a>.
+* Pour vérifier le code à 2 lettres de la langue que vous souhaitez traduire, vous pouvez utiliser le tableau <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">Liste des codes ISO 639-1</a>.
 
 #### Langue existante
 
@@ -344,15 +346,15 @@ Si vous regardez le site web ReadyAPI docs, vous verrez que chaque langue a tout
 
 Mais si vous le gérez localement de cette manière, vous ne verrez que les pages déjà traduites.
 
-Disons maintenant que vous voulez ajouter une traduction pour la section [Features](features.md){.internal-link target=\_blank}.
+Disons maintenant que vous voulez ajouter une traduction pour la section [Features](features.md){.internal-link target=_blank}.
 
-- Copiez le fichier à :
+* Copiez le fichier à :
 
 ```
 docs/en/docs/features.md
 ```
 
-- Collez-le exactement au même endroit mais pour la langue que vous voulez traduire, par exemple :
+* Collez-le exactement au même endroit mais pour la langue que vous voulez traduire, par exemple :
 
 ```
 docs/es/docs/features.md
@@ -364,13 +366,13 @@ Notez que le seul changement dans le chemin et le nom du fichier est le code de 
 
 ///
 
-- Ouvrez maintenant le fichier de configuration de MkDocs pour l'anglais à
+* Ouvrez maintenant le fichier de configuration de MkDocs pour l'anglais à
 
 ```
 docs/en/docs/mkdocs.yml
 ```
 
-- Trouvez l'endroit où cette `docs/features.md` se trouve dans le fichier de configuration. Quelque part comme :
+* Trouvez l'endroit où cette `docs/features.md` se trouve dans le fichier de configuration. Quelque part comme :
 
 ```YAML hl_lines="8"
 site_name: ReadyAPI
@@ -383,13 +385,13 @@ nav:
 - features.md
 ```
 
-- Ouvrez le fichier de configuration MkDocs pour la langue que vous éditez, par exemple :
+* Ouvrez le fichier de configuration MkDocs pour la langue que vous éditez, par exemple :
 
 ```
 docs/es/docs/mkdocs.yml
 ```
 
-- Ajoutez-le à l'endroit exact où il se trouvait pour l'anglais, par exemple :
+* Ajoutez-le à l'endroit exact où il se trouvait pour l'anglais, par exemple :
 
 ```YAML hl_lines="8"
 site_name: ReadyAPI

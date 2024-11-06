@@ -1,6 +1,6 @@
 # Desenvolvimento - Contribuindo
 
-Primeiramente, você deveria ver os meios básicos para [ajudar ReadyAPI e pedir ajuda](help-readyapi.md){.internal-link target=\_blank}.
+Primeiramente, você deveria ver os meios básicos para [ajudar ReadyAPI e pedir ajuda](help-readyapi.md){.internal-link target=_blank}.
 
 ## Desenvolvendo
 
@@ -94,6 +94,8 @@ some/directory/readyapi/env/bin/pip
 
 Se ele exibir o binário `pip` em `env/bin/pip` então funcionou. 🎉
 
+
+
 /// tip
 
 Toda vez que você instalar um novo pacote com `pip` nesse ambiente, ative o ambiente novamente.
@@ -186,9 +188,9 @@ A maioria dos testes na verdade rodam encima dos arquivos fonte na documentaçã
 
 Isso ajuda a garantir:
 
-- Que a documentação esteja atualizada.
-- Que os exemplos da documentação possam ser rodadas do jeito que estão apresentadas.
-- A maior parte dos recursos é coberta pela documentação, garantida por cobertura de testes.
+* Que a documentação esteja atualizada.
+* Que os exemplos da documentação possam ser rodadas do jeito que estão apresentadas.
+* A maior parte dos recursos é coberta pela documentação, garantida por cobertura de testes.
 
 Durante o desenvolvimento local, existe um _script_ que constrói o site e procura por quaisquer mudanças, carregando na hora:
 
@@ -251,7 +253,7 @@ Aqui estão os passos para ajudar com as traduções.
 
 #### Dicas e orientações
 
-- Verifique sempre os <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">_pull requests_ existentes</a> para a sua linguagem e faça revisões das alterações e aprove elas.
+* Verifique sempre os <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">_pull requests_ existentes</a> para a sua linguagem e faça revisões das alterações e aprove elas.
 
 /// tip
 
@@ -261,19 +263,19 @@ Verifique as documentações sobre <a href="https://help.github.com/en/github/co
 
 ///
 
-- Verifique em <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">_issues_</a> para ver se existe alguém coordenando traduções para a sua linguagem.
+* Verifique em <a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">_issues_</a> para ver se existe alguém coordenando traduções para a sua linguagem.
 
-- Adicione um único _pull request_ por página traduzida. Isso tornará muito mais fácil a revisão para as outras pessoas.
+* Adicione um único _pull request_ por página traduzida. Isso tornará muito mais fácil a revisão para as outras pessoas.
 
 Para as linguagens que eu não falo, vou esperar por várias pessoas revisarem a tradução antes de _mergear_.
 
-- Você pode verificar também se há traduções para sua linguagem e adicionar revisão para elas, isso irá me ajudar a saber que a tradução está correta e eu possa _mergear_.
+* Você pode verificar também se há traduções para sua linguagem e adicionar revisão para elas, isso irá me ajudar a saber que a tradução está correta e eu possa _mergear_.
 
-- Utilize os mesmos exemplos Python e somente traduza o texto na documentação. Você não tem que alterar nada no código para que funcione.
+* Utilize os mesmos exemplos Python e somente traduza o texto na documentação. Você não tem que alterar nada no código para que funcione.
 
-- Utilize as mesmas imagens, nomes de arquivo e links. Você não tem que alterar nada disso para que funcione.
+* Utilize as mesmas imagens, nomes de arquivo e links. Você não tem que alterar nada disso para que funcione.
 
-- Para verificar o código de duas letras para a linguagem que você quer traduzir, você pode usar a <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">Lista de códigos ISO 639-1</a>.
+* Para verificar o código de duas letras para a linguagem que você quer traduzir, você pode usar a <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">Lista de códigos ISO 639-1</a>.
 
 #### Linguagem existente
 
@@ -283,7 +285,7 @@ No caso do Espanhol, o código de duas letras é `es`. Então, o diretório para
 
 /// tip
 
-A principal ("oficial") linguagem é o Inglês, localizado em `docs/en/`.
+A principal ("oficial") linguagem é o  Inglês, localizado em `docs/en/`.
 
 ///
 
@@ -308,15 +310,15 @@ Se você procurar no site da documentação do ReadyAPI, você verá que toda li
 
 Mas quando você rodar localmente como descrito acima, você somente verá as páginas que já estão traduzidas.
 
-Agora vamos dizer que você queira adicionar uma tradução para a seção [Recursos](features.md){.internal-link target=\_blank}.
+Agora vamos dizer que você queira adicionar uma tradução para a seção  [Recursos](features.md){.internal-link target=_blank}.
 
-- Copie o arquivo em:
+* Copie o arquivo em:
 
 ```
 docs/en/docs/features.md
 ```
 
-- Cole ele exatamente no mesmo local mas para a linguagem que você quer traduzir, por exemplo:
+* Cole ele exatamente no mesmo local mas para a linguagem que você quer traduzir, por exemplo:
 
 ```
 docs/es/docs/features.md
@@ -328,13 +330,13 @@ Observe que a única mudança na rota é o código da linguagem, de `en` para `e
 
 ///
 
-- Agora abra o arquivo de configuração MkDocs para Inglês em:
+* Agora abra o arquivo de configuração MkDocs para Inglês em:
 
 ```
 docs/en/docs/mkdocs.yml
 ```
 
-- Procure o lugar onde `docs/features.md` está localizado no arquivo de configuração. Algum lugar como:
+* Procure o lugar onde `docs/features.md` está localizado no arquivo de configuração. Algum lugar como:
 
 ```YAML hl_lines="8"
 site_name: ReadyAPI
@@ -347,13 +349,13 @@ nav:
 - features.md
 ```
 
-- Abra o arquivo de configuração MkDocs para a linguagem que você está editando, por exemplo:
+* Abra o arquivo de configuração MkDocs para a linguagem que você está editando, por exemplo:
 
 ```
 docs/es/docs/mkdocs.yml
 ```
 
-- Adicione no mesmo local que está no arquivo em Inglês, por exemplo:
+* Adicione no mesmo local que está no arquivo em Inglês, por exemplo:
 
 ```YAML hl_lines="8"
 site_name: ReadyAPI

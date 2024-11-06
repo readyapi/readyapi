@@ -78,6 +78,6 @@ In most cases you would (and should) have a "termination proxy" handling HTTPS f
 
 /// tip
 
-You can learn more about it in the [deployment documentation](deployment/index.md){.internal-link target=\_blank}.
+You can learn more about it in the [deployment documentation](deployment/index.md){.internal-link target=_blank}.
 
 ///

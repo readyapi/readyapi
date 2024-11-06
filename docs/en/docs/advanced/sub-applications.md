@@ -8,7 +8,7 @@ If you need to have two independent ReadyAPI applications, with their own indepe
 
 ### Top-level application
 
-First, create the main, top-level, **ReadyAPI** application, and its _path operations_:
+First, create the main, top-level, **ReadyAPI** application, and its *path operations*:
 
 ```Python hl_lines="3  6-8"
 {!../../docs_src/sub_applications/tutorial001.py!}
@@ -16,7 +16,7 @@ First, create the main, top-level, **ReadyAPI** application, and its _path opera
 
 ### Sub-application
 
-Then, create your sub-application, and its _path operations_.
+Then, create your sub-application, and its *path operations*.
 
 This sub-application is just another standard ReadyAPI application, but this is the one that will be "mounted":
 
@@ -70,4 +70,4 @@ That way, the sub-application will know to use that path prefix for the docs UI.
 
 And the sub-application could also have its own mounted sub-applications and everything would work correctly, because ReadyAPI handles all these `root_path`s automatically.
 
-You will learn more about the `root_path` and how to use it explicitly in the section about [Behind a Proxy](behind-a-proxy.md){.internal-link target=\_blank}.
+You will learn more about the `root_path` and how to use it explicitly in the section about [Behind a Proxy](behind-a-proxy.md){.internal-link target=_blank}.

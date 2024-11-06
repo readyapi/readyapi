@@ -14,7 +14,7 @@
 
 Во многом история **ReadyAPI** - история его предшественников.
 
-Как написано в разделе [Альтернативы](alternatives.md){.internal-link target=\_blank}:
+Как написано в разделе [Альтернативы](alternatives.md){.internal-link target=_blank}:
 
 <blockquote markdown="1">
 
@@ -74,4 +74,4 @@
 
 У **ReadyAPI** великое будущее.
 
-И [ваш вклад в это](help-readyapi.md){.internal-link target=\_blank} - очень ценнен.
+И [ваш вклад в это](help-readyapi.md){.internal-link target=_blank} - очень ценнен.

@@ -2,11 +2,11 @@
 
 Python isteğe bağlı olarak "tip belirteçlerini" destekler.
 
-**"Tip belirteçleri"** bir değişkenin <abbr title="örneğin: str, int, float, bool">tipinin</abbr> belirtilmesine olanak sağlayan özel bir sözdizimidir.
+ **"Tip belirteçleri"** bir değişkenin <abbr title="örneğin: str, int, float, bool">tipinin</abbr> belirtilmesine olanak sağlayan özel bir sözdizimidir.
 
 Değişkenlerin tiplerini belirterek editör ve araçlardan daha fazla destek alabilirsiniz.
 
-Bu pythonda tip belirteçleri için **hızlı bir başlangıç / bilgi tazeleme** rehberidir . Bu rehber **ReadyAPI** kullanmak için gereken minimum konuyu kapsar ki bu da çok az bir miktardır.
+Bu  pythonda tip belirteçleri için **hızlı bir başlangıç / bilgi tazeleme** rehberidir . Bu rehber **ReadyAPI** kullanmak için gereken minimum konuyu kapsar ki bu da çok az bir miktardır.
 
 **ReadyAPI' nin** tamamı bu tür tip belirteçleri ile donatılmıştır ve birçok avantaj sağlamaktadır.
 
@@ -34,9 +34,9 @@ John Doe
 
 Fonksiyon sırayla şunları yapar:
 
-- `first_name` ve `last_name` değerlerini alır.
-- `title()` ile değişkenlerin ilk karakterlerini büyütür.
-- Değişkenleri aralarında bir boşlukla beraber <abbr title="Onları bir bütün olarak sırayla birleştirir.">Birleştirir</abbr>.
+* `first_name` ve `last_name` değerlerini alır.
+* `title()` ile değişkenlerin ilk karakterlerini büyütür.
+* Değişkenleri aralarında bir boşlukla beraber <abbr title="Onları bir bütün olarak sırayla birleştirir.">Birleştirir</abbr>.
 
 ```Python hl_lines="2"
 {!../../docs_src/python_types/tutorial001.py!}
@@ -52,7 +52,7 @@ Bir noktada fonksiyonun tanımına başlayacaktınız, parametreleri hazır hale
 
 Ama sonra "ilk harfi büyük harfe dönüştüren yöntemi" çağırmanız gerekir.
 
-`upper` mıydı ? Yoksa `uppercase`' mi? `first_uppercase`? `capitalize`?
+ `upper` mıydı ? Yoksa  `uppercase`' mi? `first_uppercase`? `capitalize`?
 
 Ardından, programcıların en iyi arkadaşı olan otomatik tamamlama ile denediniz.
 
@@ -66,7 +66,7 @@ Ancak, ne yazık ki, yararlı hiçbir şey elde edemediniz:
 
 Önceki sürümden sadece bir satırı değiştirelim.
 
-Tam olarak bu parçayı, işlevin parametrelerini değiştireceğiz:
+Tam olarak bu parçayı, işlevin parametrelerini  değiştireceğiz:
 
 ```Python
     first_name, last_name
@@ -100,7 +100,7 @@ Normalde tip belirteçleri eklemek, kod üzerinde olacakları değiştirmez.
 
 Şimdi programı sıfırdan birdaha yazdığınızı hayal edin.
 
-Aynı noktada, `Ctrl+Space` ile otomatik tamamlamayı tetiklediniz ve şunu görüyorsunuz:
+Aynı noktada, `Ctrl+Space` ile otomatik tamamlamayı tetiklediniz  ve şunu görüyorsunuz:
 
 <img src="/img/python-types/image02.png">
 
@@ -130,7 +130,7 @@ Artık `age` değişkenini `str(age)` olarak kullanmanız gerektiğini biliyorsu
 
 Az önce tip belirteçlerinin en çok kullanıldığı yeri gördünüz.
 
-**ReadyAPI**ile çalışırken tip belirteçlerini en çok kullanacağımız yer yine fonksiyonlardır.
+ **ReadyAPI**ile çalışırken tip belirteçlerini en çok kullanacağımız yer yine fonksiyonlardır.
 
 ### Basit tipler
 
@@ -138,10 +138,10 @@ Yalnızca `str` değil, tüm standart Python tiplerinin bildirebilirsiniz.
 
 Örneğin şunları kullanabilirsiniz:
 
-- `int`
-- `float`
-- `bool`
-- `bytes`
+* `int`
+* `float`
+* `bool`
+* `bytes`
 
 ```Python hl_lines="1"
 {!../../docs_src/python_types/tutorial005.py!}
@@ -205,8 +205,8 @@ Ve yine, editör bunun bir `str` ​​olduğunu biliyor ve bunun için destek s
 
 Bu şu anlama geliyor:
 
-- `items_t` değişkeni sırasıyla `int`, `int`, ve `str` tiplerinden oluşan bir `tuple` türündedir .
-- `items_s` ise her öğesi `bytes` türünde olan bir `set` örneğidir.
+* `items_t` değişkeni sırasıyla `int`, `int`, ve `str` tiplerinden oluşan bir `tuple` türündedir .
+* `items_s` ise her öğesi `bytes` türünde olan bir `set` örneğidir.
 
 #### `Dict`
 
@@ -222,9 +222,9 @@ Bir `dict` tanımlamak için virgülle ayrılmış iki parametre verebilirsiniz.
 
 Bu şu anlama gelir:
 
-- `prices` değişkeni `dict` tipindedir:
-  - `dict` değişkeninin `key` değeri `str` tipindedir (herbir item'ın "name" değeri).
-  - `dict` değişkeninin `value` değeri `float` tipindedir (lherbir item'ın "price" değeri).
+*  `prices` değişkeni `dict` tipindedir:
+    *  `dict` değişkeninin `key` değeri  `str` tipindedir (herbir item'ın "name" değeri).
+    *  `dict` değişkeninin `value` değeri `float` tipindedir (lherbir item'ın "price" değeri).
 
 #### `Optional`
 
@@ -240,20 +240,20 @@ Bu şu anlama gelir:
 
 Köşeli parantez içinde tip parametreleri alan bu türler, örneğin:
 
-- `List`
-- `Tuple`
-- `Set`
-- `Dict`
-- `Optional`
-- ...and others.
+* `List`
+* `Tuple`
+* `Set`
+* `Dict`
+* `Optional`
+* ...and others.
 
-**Generic types** yada **Generics** olarak adlandırılır.
+**Generic types** yada  **Generics** olarak adlandırılır.
 
 ### Tip olarak Sınıflar
 
 Bir değişkenin tipini bir sınıf ile bildirebilirsiniz.
 
-Diyelim ki `name` değerine sahip `Person` sınıfınız var:
+Diyelim ki  `name` değerine sahip `Person` sınıfınız var:
 
 ```Python hl_lines="1-3"
 {!../../docs_src/python_types/tutorial010.py!}
@@ -295,27 +295,27 @@ Daha fazla şey öğrenmek için <a href="https://docs.pydantic.dev/" class="ext
 
 **ReadyAPI** tamamen Pydantic'e dayanmaktadır.
 
-Daha fazlasini görmek için [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
+Daha fazlasini görmek için [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
 
-## **ReadyAPI** tip belirteçleri
+##  **ReadyAPI** tip belirteçleri
 
 **ReadyAPI** birkaç şey yapmak için bu tür tip belirteçlerinden faydalanır.
 
 **ReadyAPI** ile parametre tiplerini bildirirsiniz ve şunları elde edersiniz:
 
-- **Editor desteği**.
-- **Tip kontrolü**.
+* **Editor desteği**.
+* **Tip kontrolü**.
 
 ...ve **ReadyAPI** aynı belirteçleri şunlar için de kullanıyor:
 
-- **Gereksinimleri tanımlama**: request path parameters, query parameters, headers, bodies, dependencies, ve benzeri gereksinimlerden
-- **Verileri çevirme**: Gönderilen veri tipinden istenilen veri tipine çevirme.
-- **Verileri doğrulama**: Her gönderilen verinin:
-  - doğrulanması ve geçersiz olduğunda **otomatik hata** oluşturma.
-- OpenAPI kullanarak apinizi **Belgeleyin** :
-  - bu daha sonra otomatik etkileşimli dokümantasyon kullanıcı arayüzü tarafından kullanılır.
+* **Gereksinimleri tanımlama**:  request path parameters, query parameters, headers, bodies, dependencies, ve benzeri gereksinimlerden
+* **Verileri çevirme**: Gönderilen veri tipinden istenilen veri tipine çevirme.
+* **Verileri doğrulama**: Her gönderilen verinin:
+    * doğrulanması ve geçersiz olduğunda **otomatik hata** oluşturma.
+* OpenAPI kullanarak apinizi **Belgeleyin** :
+    * bu daha sonra otomatik etkileşimli dokümantasyon kullanıcı arayüzü tarafından kullanılır.
 
-Bütün bunlar kulağa soyut gelebilir. Merak etme. Tüm bunları çalışırken göreceksiniz. [Tutorial - User Guide](tutorial/index.md){.internal-link target=\_blank}.
+Bütün bunlar kulağa soyut gelebilir. Merak etme. Tüm bunları çalışırken göreceksiniz. [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
 
 Önemli olan, standart Python türlerini tek bir yerde kullanarak (daha fazla sınıf, dekoratör vb. eklemek yerine), **ReadyAPI**'nin bizim için işi yapmasını sağlamak.
 

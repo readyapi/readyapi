@@ -130,9 +130,9 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 - 前端临时将令牌存储在某个位置
 - 用户点击前端，前往前端应用的其它部件
 - 前端需要从 API 中提取更多数据：
-  - 为指定的端点（Endpoint）进行身份验证
-  - 因此，用 API 验证身份时，要发送值为 `Bearer` + 令牌的请求头 `Authorization`
-  - 假如令牌为 `foobar`，`Authorization` 请求头就是： `Bearer foobar`
+    - 为指定的端点（Endpoint）进行身份验证
+    - 因此，用 API 验证身份时，要发送值为 `Bearer` + 令牌的请求头 `Authorization`
+    - 假如令牌为 `foobar`，`Authorization` 请求头就是： `Bearer foobar`
 
 ## **ReadyAPI** 的 `OAuth2PasswordBearer`
 
@@ -164,7 +164,7 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 
 因为使用的是相对 URL，如果 API 位于 `https://example.com/`，则指向 `https://example.com/token`。但如果 API 位于 `https://example.com/api/v1/`，它指向的就是`https://example.com/api/v1/token`。
 
-使用相对 URL 非常重要，可以确保应用在遇到[使用代理](../../advanced/behind-a-proxy.md){.internal-link target=\_blank}这样的高级用例时，也能正常运行。
+使用相对 URL 非常重要，可以确保应用在遇到[使用代理](../../advanced/behind-a-proxy.md){.internal-link target=_blank}这样的高级用例时，也能正常运行。
 
 ///
 

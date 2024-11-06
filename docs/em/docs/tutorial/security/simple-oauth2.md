@@ -14,7 +14,7 @@ Oauth2️⃣ ✔ 👈 🕐❔ ⚙️ "🔐 💧" (👈 👥 ⚙️) 👩‍💻/
 
 &amp; 👆 💽 🏷 💪 ⚙️ 🙆 🎏 📛 👆 💚.
 
-✋️ 💳 _➡ 🛠️_, 👥 💪 ⚙️ 👉 📛 🔗 ⏮️ 🔌 (&amp; 💪, 🖼, ⚙️ 🛠️ 🛠️ 🧾 ⚙️).
+✋️ 💳 *➡ 🛠️*, 👥 💪 ⚙️ 👉 📛 🔗 ⏮️ 🔌 (&amp; 💪, 🖼, ⚙️ 🛠️ 🛠️ 🧾 ⚙️).
 
 🔌 🇵🇸 👈 `username` &amp; `password` 🔜 📨 📨 💽 (, 🙅‍♂ 🎻 📥).
 
@@ -28,9 +28,9 @@ Oauth2️⃣ ✔ 👈 🕐❔ ⚙️ "🔐 💧" (👈 👥 ⚙️) 👩‍💻/
 
 👫 🛎 ⚙️ 📣 🎯 💂‍♂ ✔, 🖼:
 
-- `users:read` ⚖️ `users:write` ⚠ 🖼.
-- `instagram_basic` ⚙️ 👱📔 / 👱📔.
-- `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
+* `users:read` ⚖️ `users:write` ⚠ 🖼.
+* `instagram_basic` ⚙️ 👱📔 / 👱📔.
+* `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
 
 /// info
 
@@ -50,7 +50,7 @@ Oauth2️⃣ 👫 🎻.
 
 ### `OAuth2PasswordRequestForm`
 
-🥇, 🗄 `OAuth2PasswordRequestForm`, &amp; ⚙️ ⚫️ 🔗 ⏮️ `Depends` _➡ 🛠️_ `/token`:
+🥇, 🗄 `OAuth2PasswordRequestForm`, &amp; ⚙️ ⚫️ 🔗 ⏮️ `Depends` *➡ 🛠️* `/token`:
 
 //// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
 
@@ -70,21 +70,21 @@ Oauth2️⃣ 👫 🎻.
 
 `OAuth2PasswordRequestForm` 🎓 🔗 👈 📣 📨 💪 ⏮️:
 
-- `username`.
-- `password`.
-- 📦 `scope` 🏑 🦏 🎻, ✍ 🎻 🎏 🚀.
-- 📦 `grant_type`.
+*  `username`.
+*  `password`.
+* 📦 `scope` 🏑 🦏 🎻, ✍ 🎻 🎏 🚀.
+* 📦 `grant_type`.
 
 /// tip
 
-Oauth2️⃣ 🔌 🤙 _🚚_ 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋️ `OAuth2PasswordRequestForm` 🚫 🛠️ ⚫️.
+Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋️ `OAuth2PasswordRequestForm` 🚫 🛠️ ⚫️.
 
 🚥 👆 💪 🛠️ ⚫️, ⚙️ `OAuth2PasswordRequestFormStrict` ↩️ `OAuth2PasswordRequestForm`.
 
 ///
 
-- 📦 `client_id` (👥 🚫 💪 ⚫️ 👆 🖼).
-- 📦 `client_secret` (👥 🚫 💪 ⚫️ 👆 🖼).
+* 📦 `client_id` (👥 🚫 💪 ⚫️ 👆 🖼).
+* 📦 `client_secret` (👥 🚫 💪 ⚫️ 👆 🖼).
 
 /// info
 
@@ -174,7 +174,7 @@ Oauth2️⃣ 🔌 🤙 _🚚_ 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 
 `UserInDB(**user_dict)` ⛓:
 
-_🚶‍♀️ 🔑 &amp; 💲 `user_dict` 🔗 🔑-💲 ❌, 🌓:_
+*🚶‍♀️ 🔑 &amp; 💲 `user_dict` 🔗 🔑-💲 ❌, 🌓:*
 
 ```Python
 UserInDB(
@@ -188,7 +188,7 @@ UserInDB(
 
 /// info
 
-🌅 🏁 🔑 `**👩‍💻_ #️⃣ ` ✅ 🔙 [🧾 **➕ 🏷**](../extra-models.md#user_indict){.internal-link target=\_blank}.
+🌅 🏁 🔑 `**👩‍💻_ #️⃣ ` ✅ 🔙 [🧾 **➕ 🏷**](../extra-models.md#user_indict){.internal-link target=_blank}.
 
 ///
 
@@ -242,7 +242,7 @@ UserInDB(
 
 🔜 👥 🔜 ℹ 👆 🔗.
 
-👥 💚 🤚 `current_user` _🕴_ 🚥 👉 👩‍💻 🦁.
+👥 💚 🤚 `current_user` *🕴* 🚥 👉 👩‍💻 🦁.
 
 , 👥 ✍ 🌖 🔗 `get_current_active_user` 👈 🔄 ⚙️ `get_current_user` 🔗.
 

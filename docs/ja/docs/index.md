@@ -4,9 +4,10 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-# ReadyAPI
-
-<p>
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
+<p align="center">
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
@@ -29,7 +30,7 @@
 
 ---
 
-ReadyAPI は、Python の標準である型ヒントに基づいて Python 以降で API を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
+ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降でAPI を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
 
 主な特徴:
 
@@ -70,7 +71,7 @@ ReadyAPI は、Python の標準である型ヒントに基づいて Python 以�
 
 ---
 
-"_ReadyAPI ライブラリを採用し、クエリで**予測値**を取得できる**REST**サーバを構築しました。 [for Ludwig]_"
+"_ReadyAPIライブラリを採用し、クエリで**予測値**を取得できる**REST**サーバを構築しました。 [for Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
@@ -90,7 +91,7 @@ ReadyAPI は、Python の標準である型ヒントに基づいて Python 以�
 
 "_正直、超堅実で洗練されているように見えます。いろんな意味で、それは私がハグしたかったものです。_"
 
-<div style="text-align: right; margin-right: 10%;">Timothy Crosley - <strong><a href="https://www.hug.rest/" target="_blank">Hug</a> creator</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">Timothy Crosley - <strong><a href="https://github.com/hugapi/hug" target="_blank">Hug</a> creator</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
@@ -376,10 +377,10 @@ item: Item
   - オプションの属性 `is_offer` を確認してください。値がある場合は、`bool` であるべきです。
   - これらはすべて、深くネストされた JSON オブジェクトに対しても動作します。
 - JSON から JSON に自動的に変換します。
-- OpenAPI ですべてを文書化し、以下を使用することができます:
+- OpenAPIですべてを文書化し、以下を使用することができます:
   - 対話的なドキュメントシステム。
   - 多くの言語に対応した自動クライアントコード生成システム。
-- 2 つの対話的なドキュメントの Web インターフェイスを直接提供します。
+- 2 つの対話的なドキュメントのWebインターフェイスを直接提供します。
 
 ---
 

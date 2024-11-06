@@ -10,123 +10,13 @@ Let's see how that works and how to change it if you need to do that.
 
 Let's say you have a Pydantic model with default values, like this one:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="7"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-7]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
-```
-
-</details>
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="9"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-9]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
-```
-
-</details>
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="9"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-9]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
-```
-
-</details>
-
-////
+{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py ln[1:7] hl[7] *}
 
 ### Model for Input
 
 If you use this model as an input like here:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="14"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py[ln:1-15]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
-```
-
-</details>
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="16"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py[ln:1-17]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
-```
-
-</details>
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="16"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001.py[ln:1-17]!}
-
-# Code below omitted 👇
-```
-
-<details>
-<summary>👀 Full file preview</summary>
-
-```Python
-{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
-```
-
-</details>
-
-////
+{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py ln[1:15] hl[14] *}
 
 ...then the `description` field will **not be required**. Because it has a default value of `None`.
 
@@ -142,29 +32,7 @@ You can confirm that in the docs, the `description` field doesn't have a **red a
 
 But if you use the same model as an output, like here:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="19"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="21"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="21"
-{!> ../../docs_src/separate_openapi_schemas/tutorial001.py!}
-```
-
-////
+{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py hl[19] *}
 
 ...then because `description` has a default value, if you **don't return anything** for that field, it will still have that **default value**.
 
@@ -184,8 +52,8 @@ The way to describe this in OpenAPI, is to mark that field as **required**, beca
 
 Because of that, the JSON Schema for a model can be different depending on if it's used for **input or output**:
 
-- for **input** the `description` will **not be required**
-- for **output** it will be **required** (and possibly `None`, or in JSON terms, `null`)
+* for **input** the `description` will **not be required**
+* for **output** it will be **required** (and possibly `None`, or in JSON terms, `null`)
 
 ### Model for Output in Docs
 
@@ -223,29 +91,7 @@ Support for `separate_input_output_schemas` was added in ReadyAPI `0.102.0`. �
 
 ///
 
-//// tab | Python 3.10+
-
-```Python hl_lines="10"
-{!> ../../docs_src/separate_openapi_schemas/tutorial002_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="12"
-{!> ../../docs_src/separate_openapi_schemas/tutorial002_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="12"
-{!> ../../docs_src/separate_openapi_schemas/tutorial002.py!}
-```
-
-////
+{* ../../docs_src/separate_openapi_schemas/tutorial002_py310.py hl[10] *}
 
 ### Same Schema for Input and Output Models in Docs
 

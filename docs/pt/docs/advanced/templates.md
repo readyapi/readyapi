@@ -20,10 +20,10 @@ $ pip install jinja2
 
 ## Usando `Jinja2Templates`
 
-- Importe `Jinja2Templates`.
-- Crie um `templates` que você possa reutilizar posteriormente.
-- Declare um parâmetro `Request` no _path operation_ que retornará um template.
-- Use o `template` que você criou para renderizar e retornar uma `TemplateResponse`, passe o nome do template, o request object, e um "context" dict com pares chave-valor a serem usados dentro do template do Jinja2.
+* Importe `Jinja2Templates`.
+* Crie um `templates` que você possa reutilizar posteriormente.
+* Declare um parâmetro `Request` no *path operation* que retornará um template.
+* Use o `template` que você criou para renderizar e retornar uma `TemplateResponse`, passe o nome do template, o request object, e um "context" dict com pares chave-valor a serem usados dentro do template do Jinja2.
 
 ```Python hl_lines="4  11  15-18"
 {!../../docs_src/templates/tutorial001.py!}
@@ -85,7 +85,7 @@ Item ID: 42
 
 ### Argumentos do `url_for`
 
-Você também pode usar `url_for()` dentro do template, ele recebe como argumentos os mesmos argumentos que seriam usados pela sua _path operation function_.
+Você também pode usar `url_for()` dentro do template, ele recebe como argumentos os mesmos argumentos que seriam usados pela sua *path operation function*.
 
 Logo, a seção com:
 
@@ -97,12 +97,12 @@ Logo, a seção com:
 
 {% endraw %}
 
-...irá gerar um link para a mesma URL que será tratada pela _path operation function_ `read_item(id=id)`.
+...irá gerar um link para a mesma URL que será tratada pela *path operation function* `read_item(id=id)`.
 
 Por exemplo, com um ID de `42`, isso renderizará:
 
 ```html
-<a href="/items/42"></a>
+<a href="/items/42">
 ```
 
 ## Templates e Arquivos Estáticos

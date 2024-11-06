@@ -2,7 +2,7 @@
 
 クエリパラメータに対して`Query`でより多くのバリデーションとメタデータを宣言できるのと同じように、パスパラメータに対しても`Path`で同じ種類のバリデーションとメタデータを宣言することができます。
 
-## Path のインポート
+## Pathのインポート
 
 まず初めに、`readyapi`から`Path`をインポートします:
 
@@ -38,7 +38,7 @@
 
 しかし、パスパラメータ`item_id`のために`Path`を使用する必要があります。
 
-Python は「デフォルト」を持たない値の前に「デフォルト」を持つ値を置くことができません。
+Pythonは「デフォルト」を持たない値の前に「デフォルト」を持つ値を置くことができません。
 
 しかし、それらを並び替えることができ、デフォルト値を持たない値（クエリパラメータ`q`）を最初に持つことができます。
 
@@ -52,11 +52,11 @@ Python は「デフォルト」を持たない値の前に「デフォルト」�
 
 ## 必要に応じてパラメータを並び替えるトリック
 
-クエリパラメータ`q`を`Query`やデフォルト値なしで宣言し、パスパラメータ`item_id`を`Path`を用いて宣言し、それらを別の順番に並びたい場合、Python には少し特殊な構文が用意されています。
+クエリパラメータ`q`を`Query`やデフォルト値なしで宣言し、パスパラメータ`item_id`を`Path`を用いて宣言し、それらを別の順番に並びたい場合、Pythonには少し特殊な構文が用意されています。
 
 関数の最初のパラメータとして`*`を渡します。
 
-Python はその`*`で何かをすることはありませんが、それ以降のすべてのパラメータがキーワード引数（キーと値のペア）として呼ばれるべきものであると知っているでしょう。それは<abbr title="From: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>としても知られています。たとえデフォルト値がなくても。
+Pythonはその`*`で何かをすることはありませんが、それ以降のすべてのパラメータがキーワード引数（キーと値のペア）として呼ばれるべきものであると知っているでしょう。それは<abbr title="From: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>としても知られています。たとえデフォルト値がなくても。
 
 ```Python hl_lines="8"
 {!../../docs_src/path_params_numeric_validations/tutorial003.py!}
@@ -66,7 +66,7 @@ Python はその`*`で何かをすることはありませんが、それ以降�
 
 `Query`と`Path`（、そして後述する他のもの）を用いて、文字列の制約を宣言することができますが、数値の制約も同様に宣言できます。
 
-ここで、`ge=1`の場合、`item_id`は `1`「より大きい`g`か、同じ`e`」整数でなれけばなりません。
+ここで、`ge=1`の場合、`item_id`は`1`「より大きい`g`か、同じ`e`」整数でなれけばなりません。
 
 ```Python hl_lines="8"
 {!../../docs_src/path_params_numeric_validations/tutorial004.py!}
@@ -76,8 +76,8 @@ Python はその`*`で何かをすることはありませんが、それ以降�
 
 以下も同様です:
 
-- `gt`: より大きい（`g`reater `t`han）
-- `le`: 小なりイコール（`l`ess than or `e`qual）
+* `gt`: より大きい（`g`reater `t`han）
+* `le`: 小なりイコール（`l`ess than or `e`qual）
 
 ```Python hl_lines="9"
 {!../../docs_src/path_params_numeric_validations/tutorial005.py!}
@@ -99,14 +99,14 @@ Python はその`*`で何かをすることはありませんが、それ以降�
 
 ## まとめ
 
-`Query`と`Path`（そしてまだ見たことない他のもの）では、[クエリパラメータと文字列の検証](query-params-str-validations.md){.internal-link target=\_blank}と同じようにメタデータと文字列の検証を宣言することができます。
+`Query`と`Path`（そしてまだ見たことない他のもの）では、[クエリパラメータと文字列の検証](query-params-str-validations.md){.internal-link target=_blank}と同じようにメタデータと文字列の検証を宣言することができます。
 
 また、数値のバリデーションを宣言することもできます:
 
-- `gt`: より大きい（`g`reater `t`han）
-- `ge`: 以上（`g`reater than or `e`qual）
-- `lt`: より小さい（`l`ess `t`han）
-- `le`: 以下（`l`ess than or `e`qual）
+* `gt`: より大きい（`g`reater `t`han）
+* `ge`: 以上（`g`reater than or `e`qual）
+* `lt`: より小さい（`l`ess `t`han）
+* `le`: 以下（`l`ess than or `e`qual）
 
 /// info | "情報"
 
@@ -118,7 +118,7 @@ Python はその`*`で何かをすることはありませんが、それ以降�
 
 /// note | "技術詳細"
 
-`readyapi`から `Query`、`Path`などをインポートすると、これらは実際には関数です。
+`readyapi`から`Query`、`Path`などをインポートすると、これらは実際には関数です。
 
 呼び出されると、同じ名前のクラスのインスタンスを返します。
 

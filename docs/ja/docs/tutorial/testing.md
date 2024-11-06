@@ -36,13 +36,13 @@
 
 `from starlette.testclient import TestClient` も使用できます。
 
-**ReadyAPI** は開発者の利便性のために `readyapi.testclient` と同じ `starlette.testclient` を提供します。しかし、実際には Starlette から直接渡されています。
+**ReadyAPI** は開発者の利便性のために `readyapi.testclient` と同じ `starlette.testclient` を提供します。しかし、実際にはStarletteから直接渡されています。
 
 ///
 
 /// tip | "豆知識"
 
-ReadyAPI アプリケーションへのリクエストの送信とは別に、テストで `async` 関数 (非同期データベース関数など) を呼び出したい場合は、高度なチュートリアルの[Async Tests](../advanced/async-tests.md){.internal-link target=\_blank} を参照してください。
+ReadyAPIアプリケーションへのリクエストの送信とは別に、テストで `async` 関数 (非同期データベース関数など) を呼び出したい場合は、高度なチュートリアルの[Async Tests](../advanced/async-tests.md){.internal-link target=_blank} を参照してください。
 
 ///
 
@@ -72,6 +72,7 @@ ReadyAPI アプリケーションへのリクエストの送信とは別に、�
 
 次に、この例を拡張し、詳細を追加して、さまざまなパーツをテストする方法を確認しましょう。
 
+
 ### 拡張版 **ReadyAPI** アプリファイル
 
 **ReadyAPI** アプリに `main_b.py` ファイルがあるとします。
@@ -80,7 +81,7 @@ ReadyAPI アプリケーションへのリクエストの送信とは別に、�
 
 また、いくつかのエラーを返す可能性のある `POST` オペレーションもあります。
 
-これらの _path operation_ には `X-Token` ヘッダーが必要です。
+これらの *path operation* には `X-Token` ヘッダーが必要です。
 
 //// tab | Python 3.10+
 
@@ -112,19 +113,19 @@ ReadyAPI アプリケーションへのリクエストの送信とは別に、�
 
 例えば:
 
-- _パス_ または _クエリ_ パラメータを渡すには、それを URL 自体に追加します。
-- JSON ボディを渡すには、Python オブジェクト (例: `dict`) を `json` パラメータに渡します。
-- JSON の代わりに _フォームデータ_ を送信する必要がある場合は、代わりに `data` パラメータを使用してください。
-- _ヘッダー_ を渡すには、`headers` パラメータに `dict` を渡します。
-- _cookies_ の場合、 `cookies` パラメータに `dict` です。
+* *パス* または *クエリ* パラメータを渡すには、それをURL自体に追加します。
+* JSONボディを渡すには、Pythonオブジェクト (例: `dict`) を `json` パラメータに渡します。
+* JSONの代わりに *フォームデータ* を送信する必要がある場合は、代わりに `data` パラメータを使用してください。
+* *ヘッダー* を渡すには、`headers` パラメータに `dict` を渡します。
+* *cookies* の場合、 `cookies` パラメータに `dict` です。
 
-(`httpx` または `TestClient` を使用して) バックエンドにデータを渡す方法の詳細は、<a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX のドキュメント</a>を確認してください。
+(`httpx` または `TestClient` を使用して) バックエンドにデータを渡す方法の詳細は、<a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPXのドキュメント</a>を確認してください。
 
 /// info | "情報"
 
-`TestClient` は、Pydantic モデルではなく、JSON に変換できるデータを受け取ることに注意してください。
+`TestClient` は、Pydanticモデルではなく、JSONに変換できるデータを受け取ることに注意してください。
 
-テストに Pydantic モデルがあり、テスト中にそのデータをアプリケーションに送信したい場合は、[JSON 互換エンコーダ](encoder.md){.internal-link target=\_blank} で説明されている `jsonable_encoder` が利用できます。
+テストにPydanticモデルがあり、テスト中にそのデータをアプリケーションに送信したい場合は、[JSON互換エンコーダ](encoder.md){.internal-link target=_blank} で説明されている `jsonable_encoder` が利用できます。
 
 ///
 

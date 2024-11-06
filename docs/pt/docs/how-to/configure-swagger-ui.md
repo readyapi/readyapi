@@ -75,4 +75,4 @@ presets: [
 
 Esses são objetos **JavaScript**, não strings, então você não pode passá-los diretamente do código Python.
 
-Se você precisar usar configurações somente JavaScript como essas, você pode usar um dos métodos acima. Sobrescreva todas as _operações de rotas_ do Swagger UI e escreva manualmente qualquer JavaScript que você precisar.
+Se você precisar usar configurações somente JavaScript como essas, você pode usar um dos métodos acima. Sobrescreva todas as *operações de rotas* do Swagger UI e escreva manualmente qualquer JavaScript que você precisar.

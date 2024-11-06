@@ -14,8 +14,8 @@ Stellen Sie sicher, dass Sie `yield` nur einmal pro Abhängigkeit verwenden.
 
 Jede Funktion, die dekoriert werden kann mit:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> oder
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> oder
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 kann auch als gültige **ReadyAPI**-Abhängigkeit verwendet werden.
 
@@ -33,7 +33,7 @@ Nur der Code vor und einschließlich der `yield`-Anweisung wird ausgeführt, bev
 {!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-Der ge`yield`ete Wert ist das, was in _Pfadoperationen_ und andere Abhängigkeiten eingefügt wird:
+Der ge`yield`ete Wert ist das, was in *Pfadoperationen* und andere Abhängigkeiten eingefügt wird:
 
 ```Python hl_lines="4"
 {!../../docs_src/dependencies/tutorial007.py!}
@@ -57,7 +57,7 @@ Sie können `async`hrone oder reguläre Funktionen verwenden.
 
 Wenn Sie einen `try`-Block in einer Abhängigkeit mit `yield` verwenden, empfangen Sie alle Exceptions, die bei Verwendung der Abhängigkeit geworfen wurden.
 
-Wenn beispielsweise ein Code irgendwann in der Mitte, in einer anderen Abhängigkeit oder in einer _Pfadoperation_, ein „Rollback“ einer Datenbanktransaktion oder einen anderen Fehler verursacht, empfangen Sie die resultierende Exception in Ihrer Abhängigkeit.
+Wenn beispielsweise ein Code irgendwann in der Mitte, in einer anderen Abhängigkeit oder in einer *Pfadoperation*, ein „Rollback“ einer Datenbanktransaktion oder einen anderen Fehler verursacht, empfangen Sie die resultierende Exception in Ihrer Abhängigkeit.
 
 Sie können also mit `except SomeException` diese bestimmte Exception innerhalb der Abhängigkeit handhaben.
 
@@ -165,7 +165,7 @@ Auf die gleiche Weise könnten Sie im Exit-Code nach dem `yield` eine `HTTPExcep
 
 /// tip | "Tipp"
 
-Dies ist eine etwas fortgeschrittene Technik, die Sie in den meisten Fällen nicht wirklich benötigen, da Sie Exceptions (einschließlich `HTTPException`) innerhalb des restlichen Anwendungscodes auslösen können, beispielsweise in der _Pfadoperation-Funktion_.
+Dies ist eine etwas fortgeschrittene Technik, die Sie in den meisten Fällen nicht wirklich benötigen, da Sie Exceptions (einschließlich `HTTPException`) innerhalb des restlichen Anwendungscodes auslösen können, beispielsweise in der *Pfadoperation-Funktion*.
 
 Aber es ist für Sie da, wenn Sie es brauchen. 🤓
 
@@ -201,7 +201,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-Eine Alternative zum Abfangen von Exceptions (und möglicherweise auch zum Auslösen einer weiteren `HTTPException`) besteht darin, einen [benutzerdefinierten Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=\_blank} zu erstellen.
+Eine Alternative zum Abfangen von Exceptions (und möglicherweise auch zum Auslösen einer weiteren `HTTPException`) besteht darin, einen [benutzerdefinierten Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} zu erstellen.
 
 ## Ausführung von Abhängigkeiten mit `yield`
 
@@ -244,7 +244,7 @@ participant tasks as Hintergrundtasks
 
 /// info
 
-Es wird nur **eine Response** an den Client gesendet. Es kann eine Error-Response oder die Response der _Pfadoperation_ sein.
+Es wird nur **eine Response** an den Client gesendet. Es kann eine Error-Response oder die Response der *Pfadoperation* sein.
 
 Nachdem eine dieser Responses gesendet wurde, kann keine weitere Response gesendet werden.
 
@@ -252,7 +252,7 @@ Nachdem eine dieser Responses gesendet wurde, kann keine weitere Response gesend
 
 /// tip | "Tipp"
 
-Obiges Diagramm verwendet `HTTPException`, aber Sie können auch jede andere Exception auslösen, die Sie in einer Abhängigkeit mit `yield` abfangen, oder mit einem [benutzerdefinierten Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=\_blank} erstellt haben.
+Obiges Diagramm verwendet `HTTPException`, aber Sie können auch jede andere Exception auslösen, die Sie in einer Abhängigkeit mit `yield` abfangen, oder mit einem [benutzerdefinierten Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} erstellt haben.
 
 Wenn Sie eine Exception auslösen, wird diese mit yield an die Abhängigkeiten übergeben, einschließlich `HTTPException`, und dann **erneut** an die Exceptionhandler. Wenn es für diese Exception keinen Exceptionhandler gibt, wird sie von der internen Default-`ServerErrorMiddleware` gehandhabt, was einen HTTP-Statuscode 500 zurückgibt, um den Client darüber zu informieren, dass ein Fehler auf dem Server aufgetreten ist.
 
@@ -268,7 +268,7 @@ Diese Details sind vor allem dann nützlich, wenn Sie eine Version von ReadyAPI 
 
 ///
 
-Vor ReadyAPI 0.106.0 war das Auslösen von Exceptions nach `yield` nicht möglich, der Exit-Code in Abhängigkeiten mit `yield` wurde ausgeführt, _nachdem_ die Response gesendet wurde, die [Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=\_blank} wären also bereits ausgeführt worden.
+Vor ReadyAPI 0.106.0 war das Auslösen von Exceptions nach `yield` nicht möglich, der Exit-Code in Abhängigkeiten mit `yield` wurde ausgeführt, *nachdem* die Response gesendet wurde, die [Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} wären also bereits ausgeführt worden.
 
 Dies wurde hauptsächlich so konzipiert, damit die gleichen Objekte, die durch Abhängigkeiten ge`yield`et werden, innerhalb von Hintergrundtasks verwendet werden können, da der Exit-Code ausgeführt wird, nachdem die Hintergrundtasks abgeschlossen sind.
 
@@ -328,8 +328,8 @@ Sie können solche auch innerhalb von **ReadyAPI**-Abhängigkeiten mit `yield` v
 
 Andere Möglichkeiten, einen Kontextmanager zu erstellen, sind:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> oder
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> oder
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 Verwenden Sie diese, um eine Funktion zu dekorieren, die ein einziges `yield` hat.
 

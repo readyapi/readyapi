@@ -34,9 +34,9 @@ John Doe
 
 Die Funktion macht Folgendes:
 
-- Nimmt einen `first_name` und `last_name`.
-- Schreibt den ersten Buchstaben eines jeden Wortes groß, mithilfe von `title()`.
-- <abbr title="Füge zu einer Einheit zusammen, eins nach dem anderen.">Verkettet</abbr> sie mit einem Leerzeichen in der Mitte.
+* Nimmt einen `first_name` und `last_name`.
+* Schreibt den ersten Buchstaben eines jeden Wortes groß, mithilfe von `title()`.
+* <abbr title="Füge zu einer Einheit zusammen, eins nach dem anderen.">Verkettet</abbr> sie mit einem Leerzeichen in der Mitte.
 
 ```Python hl_lines="2"
 {!../../docs_src/python_types/tutorial001.py!}
@@ -138,10 +138,10 @@ Sie können alle Standard-Python-Typen deklarieren, nicht nur `str`.
 
 Zum Beispiel diese:
 
-- `int`
-- `float`
-- `bool`
-- `bytes`
+* `int`
+* `float`
+* `bool`
+* `bytes`
 
 ```Python hl_lines="1"
 {!../../docs_src/python_types/tutorial005.py!}
@@ -255,8 +255,8 @@ Das Gleiche gilt für die Deklaration eines Tupels – `tuple` – und einer Men
 
 Das bedeutet:
 
-- Die Variable `items_t` ist ein `tuple` mit 3 Elementen, einem `int`, einem weiteren `int` und einem `str`.
-- Die Variable `items_s` ist ein `set`, und jedes seiner Elemente ist vom Typ `bytes`.
+* Die Variable `items_t` ist ein `tuple` mit 3 Elementen, einem `int`, einem weiteren `int` und einem `str`.
+* Die Variable `items_s` ist ein `set`, und jedes seiner Elemente ist vom Typ `bytes`.
 
 #### Dict
 
@@ -284,9 +284,9 @@ Der zweite Typ-Parameter ist für die Werte des `dict`:
 
 Das bedeutet:
 
-- Die Variable `prices` ist ein `dict`:
-  - Die Schlüssel dieses `dict` sind vom Typ `str` (z. B. die Namen der einzelnen Artikel).
-  - Die Werte dieses `dict` sind vom Typ `float` (z. B. der Preis jedes Artikels).
+* Die Variable `prices` ist ein `dict`:
+    * Die Schlüssel dieses `dict` sind vom Typ `str` (z. B. die Namen der einzelnen Artikel).
+    * Die Werte dieses `dict` sind vom Typ `float` (z. B. der Preis jedes Artikels).
 
 #### <abbr title="Union – Verbund, Einheit‚ Vereinigung: Eines von Mehreren">Union</abbr>
 
@@ -358,8 +358,8 @@ Das bedeutet auch, dass Sie in Python 3.10 `Something | None` verwenden können:
 
 Wenn Sie eine Python-Version unterhalb 3.10 verwenden, hier ist mein sehr **subjektiver** Standpunkt dazu:
 
-- 🚨 Vermeiden Sie `Optional[SomeType]`
-- Stattdessen ✨ **verwenden Sie `Union[SomeType, None]`** ✨.
+* 🚨 Vermeiden Sie `Optional[SomeType]`
+* Stattdessen ✨ **verwenden Sie `Union[SomeType, None]`** ✨.
 
 Beide sind äquivalent und im Hintergrund dasselbe, aber ich empfehle `Union` statt `Optional`, weil das Wort „**optional**“ impliziert, dass dieser Wert, zum Beispiel als Funktionsparameter, optional ist. Tatsächlich bedeutet es aber nur „Der Wert kann `None` sein“, selbst wenn der Wert nicht optional ist und benötigt wird.
 
@@ -379,7 +379,7 @@ Der Parameter `name` ist definiert als `Optional[str]`, aber er ist **nicht opti
 say_hi()  # Oh, nein, das löst einen Fehler aus! 😱
 ```
 
-Der `name` Parameter wird **immer noch benötigt** (nicht _optional_), weil er keinen Default-Wert hat. `name` akzeptiert aber dennoch `None` als Wert:
+Der `name` Parameter wird **immer noch benötigt** (nicht *optional*), weil er keinen Default-Wert hat. `name` akzeptiert aber dennoch `None` als Wert:
 
 ```Python
 say_hi(name=None)  # Das funktioniert, None is gültig 🎉
@@ -401,16 +401,16 @@ Diese Typen, die Typ-Parameter in eckigen Klammern akzeptieren, werden **generis
 
 Sie können die eingebauten Typen als Generics verwenden (mit eckigen Klammern und Typen darin):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 Verwenden Sie für den Rest, wie unter Python 3.8, das `typing`-Modul:
 
-- `Union`
-- `Optional` (so wie unter Python 3.8)
-- ... und andere.
+* `Union`
+* `Optional` (so wie unter Python 3.8)
+* ... und andere.
 
 In Python 3.10 können Sie als Alternative zu den Generics `Union` und `Optional` den <abbr title='Allgemein: „oder“. In anderem Zusammenhang auch „Bitweises ODER“, aber letztere Bedeutung ist hier nicht relevant'>vertikalen Balken (`|`)</abbr> verwenden, um Vereinigungen von Typen zu deklarieren, das ist besser und einfacher.
 
@@ -420,28 +420,28 @@ In Python 3.10 können Sie als Alternative zu den Generics `Union` und `Optional
 
 Sie können die eingebauten Typen als Generics verwenden (mit eckigen Klammern und Typen darin):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 Verwenden Sie für den Rest, wie unter Python 3.8, das `typing`-Modul:
 
-- `Union`
-- `Optional`
-- ... und andere.
+* `Union`
+* `Optional`
+* ... und andere.
 
 ////
 
 //// tab | Python 3.8+
 
-- `List`
-- `Tuple`
-- `Set`
-- `Dict`
-- `Union`
-- `Optional`
-- ... und andere.
+* `List`
+* `Tuple`
+* `Set`
+* `Dict`
+* `Union`
+* `Optional`
+* ... und andere.
 
 ////
 
@@ -515,7 +515,7 @@ Um mehr über <a href="https://pydantic-docs.helpmanual.io/" class="external-lin
 
 **ReadyAPI** basiert vollständig auf Pydantic.
 
-Viel mehr von all dem werden Sie in praktischer Anwendung im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=\_blank} sehen.
+Viel mehr von all dem werden Sie in praktischer Anwendung im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=_blank} sehen.
 
 /// tip | "Tipp"
 
@@ -553,7 +553,7 @@ Python selbst macht nichts mit `Annotated`. Für Editoren und andere Tools ist d
 
 Aber Sie können `Annotated` nutzen, um **ReadyAPI** mit Metadaten zu versorgen, die ihm sagen, wie sich ihre Anwendung verhalten soll.
 
-Wichtig ist, dass **der erste _Typ-Parameter_**, den Sie `Annotated` übergeben, der **tatsächliche Typ** ist. Der Rest sind Metadaten für andere Tools.
+Wichtig ist, dass **der erste *Typ-Parameter***, den Sie `Annotated` übergeben, der **tatsächliche Typ** ist. Der Rest sind Metadaten für andere Tools.
 
 Im Moment müssen Sie nur wissen, dass `Annotated` existiert, und dass es Standard-Python ist. 😎
 
@@ -573,19 +573,19 @@ Und ebenfalls, dass Ihr Code sehr kompatibel mit vielen anderen Python-Tools und
 
 Mit **ReadyAPI** deklarieren Sie Parameter mit Typhinweisen, und Sie erhalten:
 
-- **Editorunterstützung**.
-- **Typ-Prüfungen**.
+* **Editorunterstützung**.
+* **Typ-Prüfungen**.
 
 ... und **ReadyAPI** verwendet dieselben Deklarationen, um:
 
-- **Anforderungen** zu definieren: aus Anfrage-Pfadparametern, Abfrageparametern, Header-Feldern, Bodys, Abhängigkeiten, usw.
-- **Daten umzuwandeln**: aus der Anfrage in den erforderlichen Typ.
-- **Daten zu validieren**: aus jeder Anfrage:
-  - **Automatische Fehler** generieren, die an den Client zurückgegeben werden, wenn die Daten ungültig sind.
-- Die API mit OpenAPI zu **dokumentieren**:
-  - Die dann von den Benutzeroberflächen der automatisch generierten interaktiven Dokumentation verwendet wird.
+* **Anforderungen** zu definieren: aus Anfrage-Pfadparametern, Abfrageparametern, Header-Feldern, Bodys, Abhängigkeiten, usw.
+* **Daten umzuwandeln**: aus der Anfrage in den erforderlichen Typ.
+* **Daten zu validieren**: aus jeder Anfrage:
+    * **Automatische Fehler** generieren, die an den Client zurückgegeben werden, wenn die Daten ungültig sind.
+* Die API mit OpenAPI zu **dokumentieren**:
+    * Die dann von den Benutzeroberflächen der automatisch generierten interaktiven Dokumentation verwendet wird.
 
-Das mag alles abstrakt klingen. Machen Sie sich keine Sorgen. Sie werden all das in Aktion sehen im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=\_blank}.
+Das mag alles abstrakt klingen. Machen Sie sich keine Sorgen. Sie werden all das in Aktion sehen im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=_blank}.
 
 Das Wichtigste ist, dass **ReadyAPI** durch die Verwendung von Standard-Python-Typen an einer einzigen Stelle (anstatt weitere Klassen, Dekoratoren usw. hinzuzufügen) einen Großteil der Arbeit für Sie erledigt.
 

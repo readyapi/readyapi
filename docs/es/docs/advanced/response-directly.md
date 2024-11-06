@@ -1,12 +1,12 @@
 # Devolver una respuesta directamente
 
-Cuando creas una _operación de path_ normalmente puedes devolver cualquier dato: un `dict`, una `list`, un modelo Pydantic, un modelo de base de datos, etc.
+Cuando creas una *operación de path* normalmente puedes devolver cualquier dato: un `dict`, una `list`, un modelo Pydantic, un modelo de base de datos, etc.
 
-Por defecto, **ReadyAPI** convertiría automáticamente ese valor devuelto a JSON usando el `jsonable_encoder` explicado en [Codificador Compatible JSON](../tutorial/encoder.md){.internal-link target=\_blank}.
+Por defecto, **ReadyAPI** convertiría automáticamente ese valor devuelto a JSON usando el `jsonable_encoder` explicado en [Codificador Compatible JSON](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Luego, tras bastidores, pondría esos datos compatibles con JSON (por ejemplo, un `dict`) dentro de una `JSONResponse` que se usaría para enviar la respuesta al cliente.
 
-Pero puedes devolver una `JSONResponse` directamente de tu _operación de path_.
+Pero puedes devolver una `JSONResponse` directamente de tu *operación de path*.
 
 Esto puede ser útil, por ejemplo, para devolver cookies o headers personalizados.
 
@@ -64,6 +64,6 @@ Podrías poner tu contenido XML en un string, ponerlo en una `Response` y devolv
 
 Cuando devuelves una `Response` directamente, los datos no son validados, convertidos (serializados), ni documentados automáticamente.
 
-Pero todavía es posible documentarlo como es descrito en [Respuestas adicionales en OpenAPI](additional-responses.md){.internal-link target=\_blank}.
+Pero todavía es posible documentarlo como es descrito en [Respuestas adicionales en OpenAPI](additional-responses.md){.internal-link target=_blank}.
 
 Puedes ver en secciones posteriores como usar/declarar esas `Response`s personalizadas aún teniendo conversión automática de datos, documentación, etc.

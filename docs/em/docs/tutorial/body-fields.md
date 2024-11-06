@@ -1,6 +1,6 @@
 # 💪 - 🏑
 
-🎏 🌌 👆 💪 📣 🌖 🔬 &amp; 🗃 _➡ 🛠️ 🔢_ 🔢 ⏮️ `Query`, `Path` &amp; `Body`, 👆 💪 📣 🔬 &amp; 🗃 🔘 Pydantic 🏷 ⚙️ Pydantic `Field`.
+🎏 🌌 👆 💪 📣 🌖 🔬 &amp; 🗃 *➡ 🛠️ 🔢* 🔢 ⏮️ `Query`, `Path` &amp; `Body`, 👆 💪 📣 🔬 &amp; 🗃 🔘 Pydantic 🏷 ⚙️ Pydantic `Field`.
 
 ## 🗄 `Field`
 
@@ -54,7 +54,7 @@
 
 🤙, `Query`, `Path` &amp; 🎏 👆 🔜 👀 ⏭ ✍ 🎚 🏿 ⚠ `Param` 🎓, ❔ ⚫️ 🏿 Pydantic `FieldInfo` 🎓.
 
-&amp; Pydantic `Field` 📨 👐 `FieldInfo` 👍.
+ &amp; Pydantic `Field` 📨 👐 `FieldInfo` 👍.
 
 `Body` 📨 🎚 🏿 `FieldInfo` 🔗. &amp; 📤 🎏 👆 🔜 👀 ⏪ 👈 🏿 `Body` 🎓.
 
@@ -64,7 +64,7 @@
 
 /// tip
 
-👀 ❔ 🔠 🏷 🔢 ⏮️ 🆎, 🔢 💲 &amp; `Field` ✔️ 🎏 📊 _➡ 🛠️ 🔢_ 🔢, ⏮️ `Field` ↩️ `Path`, `Query` &amp; `Body`.
+👀 ❔ 🔠 🏷 🔢 ⏮️ 🆎, 🔢 💲 &amp; `Field` ✔️ 🎏 📊 *➡ 🛠️ 🔢* 🔢, ⏮️ `Field` ↩️ `Path`, `Query` &amp; `Body`.
 
 ///
 

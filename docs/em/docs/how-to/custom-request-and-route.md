@@ -18,9 +18,9 @@
 
 ⚙️ 💼 🔌:
 
-- 🏭 🚫-🎻 📨 💪 🎻 (✅ <a href="https://msgpack.org/index.html" class="external-link" target="_blank">`msgpack`</a>).
-- 🗜 🗜-🗜 📨 💪.
-- 🔁 🚨 🌐 📨 💪.
+* 🏭 🚫-🎻 📨 💪 🎻 (✅ <a href="https://msgpack.org/index.html" class="external-link" target="_blank">`msgpack`</a>).
+* 🗜 🗜-🗜 📨 💪.
+* 🔁 🚨 🌐 📨 💪.
 
 ## 🚚 🛃 📨 💪 🔢
 
@@ -32,7 +32,7 @@
 
 /// tip
 
-👉 🧸 🖼 🎦 ❔ ⚫️ 👷, 🚥 👆 💪 🗜 🐕‍🦺, 👆 💪 ⚙️ 🚚 [`GzipMiddleware`](../advanced/middleware.md#gzipmiddleware){.internal-link target=\_blank}.
+👉 🧸 🖼 🎦 ❔ ⚫️ 👷, 🚥 👆 💪 🗜 🐕‍🦺, 👆 💪 ⚙️ 🚚 [`GzipMiddleware`](../advanced/middleware.md#gzipmiddleware){.internal-link target=_blank}.
 
 ///
 
@@ -64,11 +64,11 @@
 
 `Request` ✔️ `request.scope` 🔢, 👈 🐍 `dict` ⚗ 🗃 🔗 📨.
 
-`Request` ✔️ `request.receive`, 👈 🔢 "📨" 💪 📨.
+ `Request` ✔️ `request.receive`, 👈 🔢 "📨" 💪 📨.
 
-`scope` `dict` &amp; `receive` 🔢 👯‍♂️ 🍕 🔫 🔧.
+ `scope` `dict` &amp; `receive` 🔢 👯‍♂️ 🍕 🔫 🔧.
 
-&amp; 👈 2️⃣ 👜, `scope` &amp; `receive`, ⚫️❔ 💪 ✍ 🆕 `Request` 👐.
+ &amp; 👈 2️⃣ 👜, `scope` &amp; `receive`, ⚫️❔ 💪 ✍ 🆕 `Request` 👐.
 
 💡 🌅 🔃 `Request` ✅ <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">💃 🩺 🔃 📨</a>.
 
@@ -76,7 +76,7 @@
 
 🕴 👜 🔢 📨 `GzipRequest.get_route_handler` 🔨 🎏 🗜 `Request` `GzipRequest`.
 
-🔨 👉, 👆 `GzipRequest` 🔜 ✊ 💅 🗜 📊 (🚥 💪) ⏭ 🚶‍♀️ ⚫️ 👆 _➡ 🛠️_.
+🔨 👉, 👆 `GzipRequest` 🔜 ✊ 💅 🗜 📊 (🚥 💪) ⏭ 🚶‍♀️ ⚫️ 👆 *➡ 🛠️*.
 
 ⏮️ 👈, 🌐 🏭 ⚛ 🎏.
 
@@ -86,7 +86,7 @@
 
 /// tip
 
-❎ 👉 🎏 ⚠, ⚫️ 🎲 📚 ⏩ ⚙️ `body` 🛃 🐕‍🦺 `RequestValidationError` ([🚚 ❌](../tutorial/handling-errors.md#requestvalidationerror){.internal-link target=\_blank}).
+❎ 👉 🎏 ⚠, ⚫️ 🎲 📚 ⏩ ⚙️ `body` 🛃 🐕‍🦺 `RequestValidationError` ([🚚 ❌](../tutorial/handling-errors.md#requestvalidationerror){.internal-link target=_blank}).
 
 ✋️ 👉 🖼 ☑ &amp; ⚫️ 🎦 ❔ 🔗 ⏮️ 🔗 🦲.
 
@@ -114,7 +114,7 @@
 {!../../docs_src/custom_request_and_route/tutorial003.py!}
 ```
 
-👉 🖼, _➡ 🛠️_ 🔽 `router` 🔜 ⚙️ 🛃 `TimedRoute` 🎓, &amp; 🔜 ✔️ ➕ `X-Response-Time` 🎚 📨 ⏮️ 🕰 ⚫️ ✊ 🏗 📨:
+👉 🖼, *➡ 🛠️* 🔽 `router` 🔜 ⚙️ 🛃 `TimedRoute` 🎓, &amp; 🔜 ✔️ ➕ `X-Response-Time` 🎚 📨 ⏮️ 🕰 ⚫️ ✊ 🏗 📨:
 
 ```Python hl_lines="13-20"
 {!../../docs_src/custom_request_and_route/tutorial003.py!}

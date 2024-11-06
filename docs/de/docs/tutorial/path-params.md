@@ -115,13 +115,13 @@ Mehrere davon werden wir in den nächsten Kapiteln erkunden.
 
 ## Die Reihenfolge ist wichtig
 
-Wenn Sie _Pfadoperationen_ erstellen, haben Sie manchmal einen fixen Pfad.
+Wenn Sie *Pfadoperationen* erstellen, haben Sie manchmal einen fixen Pfad.
 
 Etwa `/users/me`, um Daten über den aktuellen Benutzer zu erhalten.
 
 Und Sie haben auch einen Pfad `/users/{user_id}`, um Daten über einen spezifischen Benutzer zu erhalten, mittels einer Benutzer-ID.
 
-Weil _Pfadoperationen_ in ihrer Reihenfolge ausgewertet werden, müssen Sie sicherstellen, dass der Pfad `/users/me` vor `/users/{user_id}` deklariert wurde:
+Weil *Pfadoperationen* in ihrer Reihenfolge ausgewertet werden, müssen Sie sicherstellen, dass der Pfad `/users/me` vor `/users/{user_id}` deklariert wurde:
 
 ```Python hl_lines="6  11"
 {!../../docs_src/path_params/tutorial003.py!}
@@ -139,7 +139,7 @@ Die erste Definition wird immer verwendet werden, da ihr Pfad zuerst übereinsti
 
 ## Vordefinierte Parameterwerte
 
-Wenn Sie eine _Pfadoperation_ haben, welche einen _Pfad-Parameter_ hat, aber Sie wollen, dass dessen gültige Werte vordefiniert sind, können Sie ein Standard-Python <abbr title="Enumeration, oder kurz Enum – Aufzählung">`Enum`</abbr> verwenden.
+Wenn Sie eine *Pfadoperation* haben, welche einen *Pfad-Parameter* hat, aber Sie wollen, dass dessen gültige Werte vordefiniert sind, können Sie ein Standard-Python <abbr title="Enumeration, oder kurz Enum – Aufzählung">`Enum`</abbr> verwenden.
 
 ### Erstellen Sie eine `Enum`-Klasse
 
@@ -165,9 +165,9 @@ Falls Sie sich fragen, was „AlexNet“, „ResNet“ und „LeNet“ ist, das 
 
 ///
 
-### Deklarieren Sie einen _Pfad-Parameter_
+### Deklarieren Sie einen *Pfad-Parameter*
 
-Dann erstellen Sie einen _Pfad-Parameter_, der als Typ die gerade erstellte Enum-Klasse hat (`ModelName`):
+Dann erstellen Sie einen *Pfad-Parameter*, der als Typ die gerade erstellte Enum-Klasse hat (`ModelName`):
 
 ```Python hl_lines="16"
 {!../../docs_src/path_params/tutorial005.py!}
@@ -175,15 +175,15 @@ Dann erstellen Sie einen _Pfad-Parameter_, der als Typ die gerade erstellte Enum
 
 ### Testen Sie es in der API-Dokumentation
 
-Weil die erlaubten Werte für den _Pfad-Parameter_ nun vordefiniert sind, kann die interaktive Dokumentation sie als Auswahl-Drop-Down anzeigen:
+Weil die erlaubten Werte für den *Pfad-Parameter* nun vordefiniert sind, kann die interaktive Dokumentation sie als Auswahl-Drop-Down anzeigen:
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Mit Python-_<abbr title="Enumeration – Aufzählung">Enums</abbr>_ arbeiten
+### Mit Python-*<abbr title="Enumeration – Aufzählung">Enums</abbr>* arbeiten
 
-Der _Pfad-Parameter_ wird ein _<abbr title="Member – Mitglied: Einer der möglichen Werte einer Enumeration">Member</abbr> eines Enums_ sein.
+Der *Pfad-Parameter* wird ein *<abbr title="Member – Mitglied: Einer der möglichen Werte einer Enumeration">Member</abbr> eines Enums* sein.
 
-#### _Enum-Member_ vergleichen
+#### *Enum-Member* vergleichen
 
 Sie können ihn mit einem Member Ihres Enums `ModelName` vergleichen:
 
@@ -191,7 +191,7 @@ Sie können ihn mit einem Member Ihres Enums `ModelName` vergleichen:
 {!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### _Enum-Wert_ erhalten
+#### *Enum-Wert* erhalten
 
 Den tatsächlichen Wert (in diesem Fall ein `str`) erhalten Sie via `model_name.value`, oder generell, `ihr_enum_member.value`:
 
@@ -205,9 +205,9 @@ Sie können den Wert `"lenet"` außerdem mittels `ModelName.lenet.value` abrufen
 
 ///
 
-#### _Enum-Member_ zurückgeben
+#### *Enum-Member* zurückgeben
 
-Sie können _Enum-Member_ in ihrer _Pfadoperation_ zurückgeben, sogar verschachtelt in einem JSON-Body (z. B. als `dict`).
+Sie können *Enum-Member* in ihrer *Pfadoperation* zurückgeben, sogar verschachtelt in einem JSON-Body (z. B. als `dict`).
 
 Diese werden zu ihren entsprechenden Werten konvertiert (in diesem Fall Strings), bevor sie zum Client übertragen werden:
 
@@ -226,15 +226,15 @@ In Ihrem Client erhalten Sie eine JSON-Response, wie etwa:
 
 ## Pfad Parameter die Pfade enthalten
 
-Angenommen, Sie haben eine _Pfadoperation_ mit einem Pfad `/files/{file_path}`.
+Angenommen, Sie haben eine *Pfadoperation* mit einem Pfad `/files/{file_path}`.
 
-Aber `file_path` soll selbst einen _Pfad_ enthalten, etwa `home/johndoe/myfile.txt`.
+Aber `file_path` soll selbst einen *Pfad* enthalten, etwa `home/johndoe/myfile.txt`.
 
 Sprich, die URL für diese Datei wäre etwas wie: `/files/home/johndoe/myfile.txt`.
 
 ### OpenAPI Unterstützung
 
-OpenAPI bietet nicht die Möglichkeit, dass ein _Pfad-Parameter_ seinerseits einen _Pfad_ enthalten kann, das würde zu Szenarios führen, die schwierig zu testen und zu definieren sind.
+OpenAPI bietet nicht die Möglichkeit, dass ein *Pfad-Parameter* seinerseits einen *Pfad* enthalten kann, das würde zu Szenarios führen, die schwierig zu testen und zu definieren sind.
 
 Trotzdem können Sie das in **ReadyAPI** tun, indem Sie eines der internen Tools von Starlette verwenden.
 
@@ -242,13 +242,13 @@ Die Dokumentation würde weiterhin funktionieren, allerdings wird nicht dokument
 
 ### Pfad Konverter
 
-Mittels einer Option direkt von Starlette können Sie einen _Pfad-Parameter_ deklarieren, der einen Pfad enthalten soll, indem Sie eine URL wie folgt definieren:
+Mittels einer Option direkt von Starlette können Sie einen *Pfad-Parameter* deklarieren, der einen Pfad enthalten soll, indem Sie eine URL wie folgt definieren:
 
 ```
 /files/{file_path:path}
 ```
 
-In diesem Fall ist der Name des Parameters `file_path`. Der letzte Teil, `:path`, sagt aus, dass der Parameter ein _Pfad_ sein soll.
+In diesem Fall ist der Name des Parameters `file_path`. Der letzte Teil, `:path`, sagt aus, dass der Parameter ein *Pfad* sein soll.
 
 Sie verwenden das also wie folgt:
 
@@ -268,10 +268,10 @@ In dem Fall wäre die URL: `/files//home/johndoe/myfile.txt`, mit einem doppelte
 
 In **ReadyAPI** erhalten Sie mittels kurzer, intuitiver Typdeklarationen:
 
-- Editor-Unterstützung: Fehlerprüfungen, Codevervollständigung, usw.
-- Daten "<abbr title="Den String, der von einer HTTP Anfrage kommt, nach Python-Daten konvertieren">parsen</abbr>"
-- Datenvalidierung
-- API-Annotationen und automatische Dokumentation
+* Editor-Unterstützung: Fehlerprüfungen, Codevervollständigung, usw.
+* Daten "<abbr title="Den String, der von einer HTTP Anfrage kommt, nach Python-Daten konvertieren">parsen</abbr>"
+* Datenvalidierung
+* API-Annotationen und automatische Dokumentation
 
 Und Sie müssen sie nur einmal deklarieren.
 

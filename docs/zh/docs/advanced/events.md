@@ -6,7 +6,7 @@
 
 /// warning | "警告"
 
-**ReadyAPI** 只执行主应用中的事件处理器，不执行[子应用 - 挂载](sub-applications.md){.internal-link target=\_blank}中的事件处理器。
+**ReadyAPI** 只执行主应用中的事件处理器，不执行[子应用 - 挂载](sub-applications.md){.internal-link target=_blank}中的事件处理器。
 
 ///
 

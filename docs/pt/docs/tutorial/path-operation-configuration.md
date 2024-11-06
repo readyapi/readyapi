@@ -1,16 +1,16 @@
 # Configuração da Operação de Rota
 
-Existem vários parâmetros que você pode passar para o seu _decorador de operação de rota_ para configurá-lo.
+Existem vários parâmetros que você pode passar para o seu *decorador de operação de rota* para configurá-lo.
 
 /// warning | "Aviso"
 
-Observe que esses parâmetros são passados diretamente para o _decorador de operação de rota_, não para a sua _função de operação de rota_.
+Observe que esses parâmetros são passados diretamente para o *decorador de operação de rota*, não para a sua *função de operação de rota*.
 
 ///
 
 ## Código de Status da Resposta
 
-Você pode definir o `status_code` (HTTP) para ser usado na resposta da sua _operação de rota_.
+Você pode definir o `status_code` (HTTP) para ser usado na resposta da sua *operação de rota*.
 
 Você pode passar diretamente o código `int`, como `404`.
 
@@ -52,7 +52,7 @@ Você também poderia usar `from starlette import status`.
 
 ## Tags
 
-Você pode adicionar tags para sua _operação de rota_, passe o parâmetro `tags` com uma `list` de `str` (comumente apenas um `str`):
+Você pode adicionar tags para sua *operação de rota*, passe o parâmetro `tags` com uma `list` de `str` (comumente apenas um `str`):
 
 //// tab | Python 3.8 and above
 
@@ -84,7 +84,7 @@ Eles serão adicionados ao esquema OpenAPI e usados pelas interfaces de document
 
 ### Tags com Enums
 
-Se você tem uma grande aplicação, você pode acabar acumulando **várias tags**, e você gostaria de ter certeza de que você sempre usa a **mesma tag** para _operações de rota_ relacionadas.
+Se você tem uma grande aplicação, você pode acabar acumulando **várias tags**, e você gostaria de ter certeza de que você sempre usa a **mesma tag** para *operações de rota* relacionadas.
 
 Nestes casos, pode fazer sentido armazenar as tags em um `Enum`.
 
@@ -124,7 +124,7 @@ Você pode adicionar um `summary` e uma `description`:
 
 ## Descrição do docstring
 
-Como as descrições tendem a ser longas e cobrir várias linhas, você pode declarar a descrição da _operação de rota_ na <abbr title="uma string de várias linhas como a primeira expressão dentro de uma função (não atribuída a nenhuma variável) usada para documentação">docstring</abbr> da função e o **ReadyAPI** irá lê-la de lá.
+Como as descrições tendem a ser longas e cobrir várias linhas, você pode declarar a descrição da *operação de rota* na <abbr title="uma string de várias linhas como a primeira expressão dentro de uma função (não atribuída a nenhuma variável) usada para documentação">docstring</abbr> da função e o **ReadyAPI** irá lê-la de lá.
 
 Você pode escrever <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> na docstring, ele será interpretado e exibido corretamente (levando em conta a indentação da docstring).
 
@@ -153,6 +153,7 @@ Você pode escrever <a href="https://en.wikipedia.org/wiki/Markdown" class="exte
 ////
 
 Ela será usada nas documentações interativas:
+
 
 <img src="/img/tutorial/path-operation-configuration/image02.png">
 
@@ -186,13 +187,13 @@ Você pode especificar a descrição da resposta com o parâmetro `response_desc
 
 /// info | "Informação"
 
-Note que `response_description` se refere especificamente à resposta, a `description` se refere à _operação de rota_ em geral.
+Note que `response_description` se refere especificamente à resposta, a `description` se refere à *operação de rota* em geral.
 
 ///
 
 /// check
 
-OpenAPI especifica que cada _operação de rota_ requer uma descrição de resposta.
+OpenAPI especifica que cada *operação de rota* requer uma descrição de resposta.
 
 Então, se você não fornecer uma, o **ReadyAPI** irá gerar automaticamente uma de "Resposta bem-sucedida".
 
@@ -200,9 +201,9 @@ Então, se você não fornecer uma, o **ReadyAPI** irá gerar automaticamente um
 
 <img src="/img/tutorial/path-operation-configuration/image03.png">
 
-## Depreciar uma _operação de rota_
+## Depreciar uma *operação de rota*
 
-Se você precisar marcar uma _operação de rota_ como <abbr title="obsoleta, recomendada não usá-la">descontinuada</abbr>, mas sem removê-la, passe o parâmetro `deprecated`:
+Se você precisar marcar uma *operação de rota* como <abbr title="obsoleta, recomendada não usá-la">descontinuada</abbr>, mas sem removê-la, passe o parâmetro `deprecated`:
 
 ```Python hl_lines="16"
 {!../../docs_src/path_operation_configuration/tutorial006.py!}
@@ -212,10 +213,10 @@ Ela será claramente marcada como descontinuada nas documentações interativas:
 
 <img src="/img/tutorial/path-operation-configuration/image04.png">
 
-Verifique como _operações de rota_ descontinuadas e não descontinuadas se parecem:
+Verifique como *operações de rota* descontinuadas e não descontinuadas se parecem:
 
 <img src="/img/tutorial/path-operation-configuration/image05.png">
 
 ## Resumindo
 
-Você pode configurar e adicionar metadados para suas _operações de rota_ facilmente passando parâmetros para os _decoradores de operação de rota_.
+Você pode configurar e adicionar metadados para suas *operações de rota* facilmente passando parâmetros para os *decoradores de operação de rota*.

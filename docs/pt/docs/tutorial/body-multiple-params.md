@@ -32,7 +32,7 @@ Repare que, neste caso, o `item` que seria capturado a partir do corpo é opcion
 
 ## Múltiplos parâmetros de corpo
 
-No exemplo anterior, as _operações de rota_ esperariam um JSON no corpo contendo os atributos de um `Item`, exemplo:
+No exemplo anterior, as *operações de rota* esperariam um JSON no corpo contendo os atributos de um `Item`, exemplo:
 
 ```JSON
 {
@@ -232,9 +232,9 @@ ao invés de:
 
 ## Recapitulando
 
-Você pode adicionar múltiplos parâmetros de corpo para sua _função de operação de rota_, mesmo que a requisição possa ter somente um único corpo.
+Você pode adicionar múltiplos parâmetros de corpo para sua *função de operação de rota*, mesmo que a requisição possa ter somente um único corpo.
 
-E o **ReadyAPI** vai manipulá-los, mandar para você os dados corretos na sua função, e validar e documentar o schema correto na _operação de rota_.
+E o **ReadyAPI** vai manipulá-los, mandar para você os dados corretos na sua função, e validar e documentar o schema correto na *operação de rota*.
 
 Você também pode declarar valores singulares para serem recebidos como parte do corpo.
 

@@ -74,7 +74,7 @@
 {!../../docs_src/header_params/tutorial003.py!}
 ```
 
-다음과 같은 두 개의 HTTP 헤더를 전송하여 해당 _경로_ 와 통신할 경우:
+다음과 같은 두 개의 HTTP 헤더를 전송하여 해당 *경로* 와 통신할 경우:
 
 ```
 X-Token: foo

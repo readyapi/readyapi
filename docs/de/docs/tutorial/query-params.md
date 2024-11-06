@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ... die Query-Parameter:
 
-- `skip`: mit dem Wert `0`
-- `limit`: mit dem Wert `10`
+* `skip`: mit dem Wert `0`
+* `limit`: mit dem Wert `10`
 
 Da sie Teil der URL sind, sind sie „naturgemäß“ Strings.
 
@@ -25,10 +25,10 @@ Aber wenn Sie sie mit Python-Typen deklarieren (im obigen Beispiel als `int`), w
 
 Die gleichen Prozesse, die für Pfad-Parameter stattfinden, werden auch auf Query-Parameter angewendet:
 
-- Editor Unterstützung (natürlich)
-- <abbr title="Konvertieren des Strings, der von einer HTTP-Anfrage kommt, in Python-Daten">„Parsen“</abbr> der Daten
-- Datenvalidierung
-- Automatische Dokumentation
+* Editor Unterstützung (natürlich)
+* <abbr title="Konvertieren des Strings, der von einer HTTP-Anfrage kommt, in Python-Daten">„Parsen“</abbr> der Daten
+* Datenvalidierung
+* Automatische Dokumentation
 
 ## Defaultwerte
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 gehen, werden die Parameter-Werte Ihrer Funktion sein:
 
-- `skip=20`: da Sie das in der URL gesetzt haben
-- `limit=10`: weil das der Defaultwert ist
+* `skip=20`: da Sie das in der URL gesetzt haben
+* `limit=10`: weil das der Defaultwert ist
 
 ## Optionale Parameter
 
@@ -237,12 +237,12 @@ Und natürlich können Sie einige Parameter als erforderlich, einige mit Default
 
 In diesem Fall gibt es drei Query-Parameter:
 
-- `needy`, ein erforderlicher `str`.
-- `skip`, ein `int` mit einem Defaultwert `0`.
-- `limit`, ein optionales `int`.
+* `needy`, ein erforderlicher `str`.
+* `skip`, ein `int` mit einem Defaultwert `0`.
+* `limit`, ein optionales `int`.
 
 /// tip | "Tipp"
 
-Sie können auch `Enum`s verwenden, auf die gleiche Weise wie mit [Pfad-Parametern](path-params.md#vordefinierte-parameterwerte){.internal-link target=\_blank}.
+Sie können auch `Enum`s verwenden, auf die gleiche Weise wie mit [Pfad-Parametern](path-params.md#vordefinierte-parameterwerte){.internal-link target=_blank}.
 
 ///

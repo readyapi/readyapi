@@ -64,7 +64,7 @@ ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Versio
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=\_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
@@ -202,10 +202,10 @@ Hier ein **kleiner Trick**, der nützlich sein kann, aber Sie werden ihn nicht o
 
 Wenn Sie eines der folgenden Dinge tun möchten:
 
-- den `q`-Parameter ohne `Query` oder irgendeinem Defaultwert deklarieren
-- den Pfad-Parameter `item_id` mittels `Path` deklarieren
-- die Parameter in einer unterschiedlichen Reihenfolge haben
-- `Annotated` nicht verwenden
+* den `q`-Parameter ohne `Query` oder irgendeinem Defaultwert deklarieren
+* den Pfad-Parameter `item_id` mittels `Path` deklarieren
+* die Parameter in einer unterschiedlichen Reihenfolge haben
+* `Annotated` nicht verwenden
 
 ... dann hat Python eine kleine Spezial-Syntax für Sie.
 
@@ -276,8 +276,8 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 Das Gleiche trifft zu auf:
 
-- `gt`: `g`reater `t`han – größer als
-- `le`: `l`ess than or `e`qual – kleiner oder gleich
+* `gt`: `g`reater `t`han – größer als
+* `le`: `l`ess than or `e`qual – kleiner oder gleich
 
 //// tab | Python 3.9+
 
@@ -351,14 +351,14 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ## Zusammenfassung
 
-Mit `Query` und `Path` (und anderen, die Sie noch nicht gesehen haben) können Sie Metadaten und Stringvalidierungen deklarieren, so wie in [Query-Parameter und Stringvalidierungen](query-params-str-validations.md){.internal-link target=\_blank} beschrieben.
+Mit `Query` und `Path` (und anderen, die Sie noch nicht gesehen haben) können Sie Metadaten und Stringvalidierungen deklarieren, so wie in [Query-Parameter und Stringvalidierungen](query-params-str-validations.md){.internal-link target=_blank} beschrieben.
 
 Und Sie können auch Validierungen für Zahlen deklarieren:
 
-- `gt`: `g`reater `t`han – größer als
-- `ge`: `g`reater than or `e`qual – größer oder gleich
-- `lt`: `l`ess `t`han – kleiner als
-- `le`: `l`ess than or `e`qual – kleiner oder gleich
+* `gt`: `g`reater `t`han – größer als
+* `ge`: `g`reater than or `e`qual – größer oder gleich
+* `lt`: `l`ess `t`han – kleiner als
+* `le`: `l`ess than or `e`qual – kleiner oder gleich
 
 /// info
 
