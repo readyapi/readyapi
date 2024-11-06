@@ -1,12 +1,12 @@
 # Retornando uma Resposta Diretamente
 
-Quando você cria uma _operação de rota_ no **ReadyAPI** você pode retornar qualquer dado nela: um dicionário (`dict`), uma lista (`list`), um modelo do Pydantic ou do seu banco de dados, etc.
+Quando você cria uma *operação de rota* no **ReadyAPI** você pode retornar qualquer dado nela: um dicionário (`dict`), uma lista (`list`), um modelo do Pydantic ou do seu banco de dados, etc.
 
-Por padrão, o **ReadyAPI** irá converter automaticamente o valor do retorno para JSON utilizando o `jsonable_encoder` explicado em [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=\_blank}.
+Por padrão, o **ReadyAPI** irá converter automaticamente o valor do retorno para JSON utilizando o `jsonable_encoder` explicado em [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Então, por baixo dos panos, ele incluiria esses dados compatíveis com JSON (e.g. um `dict`) dentro de uma `JSONResponse` que é utilizada para enviar uma resposta para o cliente.
 
-Mas você pode retornar a `JSONResponse` diretamente nas suas _operações de rota_.
+Mas você pode retornar a `JSONResponse` diretamente nas suas *operações de rota*.
 
 Pode ser útil para retornar cabeçalhos e cookies personalizados, por exemplo.
 
@@ -65,6 +65,6 @@ Você pode colocar o seu conteúdo XML em uma string, colocar em uma `Response`,
 Quando você retorna uma `Response` diretamente os dados não são validados, convertidos (serializados) ou documentados automaticamente.
 
 Mas você ainda pode documentar como descrito em [Retornos Adicionais no OpenAPI
-](additional-responses.md){.internal-link target=\_blank}.
+](additional-responses.md){.internal-link target=_blank}.
 
 Você pode ver nas próximas seções como usar/declarar essas `Responses` customizadas enquanto mantém a conversão e documentação automática dos dados.

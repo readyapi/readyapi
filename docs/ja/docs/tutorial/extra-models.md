@@ -4,15 +4,15 @@
 
 これはユーザーモデルの場合は特にそうです。なぜなら:
 
-- **入力モデル** にはパスワードが必要です。
-- **出力モデル**はパスワードをもつべきではありません。
-- **データベースモデル**はおそらくハッシュ化されたパスワードが必要になるでしょう。
+* **入力モデル** にはパスワードが必要です。
+* **出力モデル**はパスワードをもつべきではありません。
+* **データベースモデル**はおそらくハッシュ化されたパスワードが必要になるでしょう。
 
 /// danger | "危険"
 
 ユーザーの平文のパスワードは絶対に保存しないでください。常に認証に利用可能な「安全なハッシュ」を保存してください。
 
-知らない方は、[セキュリティの章](security/simple-oauth2.md#password-hashing){.internal-link target=\_blank}で「パスワードハッシュ」とは何かを学ぶことができます。
+知らない方は、[セキュリティの章](security/simple-oauth2.md#password-hashing){.internal-link target=_blank}で「パスワードハッシュ」とは何かを学ぶことができます。
 
 ///
 
@@ -26,13 +26,13 @@
 
 ### `**user_in.dict()`について
 
-#### Pydantic の`.dict()`
+#### Pydanticの`.dict()`
 
-`user_in`は`UserIn`クラスの Pydantic モデルです。
+`user_in`は`UserIn`クラスのPydanticモデルです。
 
-Pydantic モデルには、モデルのデータを含む`dict`を返す`.dict()`メソッドがあります。
+Pydanticモデルには、モデルのデータを含む`dict`を返す`.dict()`メソッドがあります。
 
-そこで、以下のような Pydantic オブジェクト`user_in`を作成すると:
+そこで、以下のようなPydanticオブジェクト`user_in`を作成すると:
 
 ```Python
 user_in = UserIn(username="john", password="secret", email="john.doe@example.com")
@@ -44,7 +44,7 @@ user_in = UserIn(username="john", password="secret", email="john.doe@example.com
 user_dict = user_in.dict()
 ```
 
-これで変数`user_dict`のデータを持つ`dict`ができました。（これは Pydantic モデルのオブジェクトの代わりに`dict`です）。
+これで変数`user_dict`のデータを持つ`dict`ができました。（これはPydanticモデルのオブジェクトの代わりに`dict`です）。
 
 そして呼び出すと:
 
@@ -52,7 +52,7 @@ user_dict = user_in.dict()
 print(user_dict)
 ```
 
-以下のような Python の`dict`を得ることができます:
+以下のようなPythonの`dict`を得ることができます:
 
 ```Python
 {
@@ -65,7 +65,7 @@ print(user_dict)
 
 #### `dict`の展開
 
-`user_dict`のような`dict`を受け取り、それを`**user_dict`を持つ関数（またはクラス）に渡すと、Python はそれを「展開」します。これは`user_dict`のキーと値を直接キー・バリューの引数として渡します。
+`user_dict`のような`dict`を受け取り、それを`**user_dict`を持つ関数（またはクラス）に渡すと、Pythonはそれを「展開」します。これは`user_dict`のキーと値を直接キー・バリューの引数として渡します。
 
 そこで上述の`user_dict`の続きを以下のように書くと:
 
@@ -95,7 +95,7 @@ UserInDB(
 )
 ```
 
-#### 別のモデルからつくる Pydantic モデル
+#### 別のモデルからつくるPydanticモデル
 
 上述の例では`user_in.dict()`から`user_dict`をこのコードのように取得していますが:
 
@@ -110,9 +110,9 @@ UserInDB(**user_dict)
 UserInDB(**user_in.dict())
 ```
 
-...なぜなら`user_in.dict()`は`dict`であり、`**`を付与して`UserInDB`を渡して Python に「展開」させているからです。
+...なぜなら`user_in.dict()`は`dict`であり、`**`を付与して`UserInDB`を渡してPythonに「展開」させているからです。
 
-そこで、別の Pydantic モデルのデータから Pydantic モデルを取得します。
+そこで、別のPydanticモデルのデータからPydanticモデルを取得します。
 
 #### `dict`の展開と追加引数
 
@@ -164,9 +164,9 @@ UserInDB(
 
 レスポンスを２つの型の`Union`として宣言することができます。
 
-OpenAPI では`anyOf`で定義されます。
+OpenAPIでは`anyOf`で定義されます。
 
-そのためには、標準的な Python の型ヒント<a href="https://docs.python.org/3/library/typing.html#typing.Union" class="external-link" target="_blank">`typing.Union`</a>を使用します:
+そのためには、標準的なPythonの型ヒント<a href="https://docs.python.org/3/library/typing.html#typing.Union" class="external-link" target="_blank">`typing.Union`</a>を使用します:
 
 ```Python hl_lines="1 14 15 18 19 20 33"
 {!../../docs_src/extra_models/tutorial003.py!}
@@ -176,7 +176,7 @@ OpenAPI では`anyOf`で定義されます。
 
 同じように、オブジェクトのリストのレスポンスを宣言することができます。
 
-そのためには、標準の Python の`typing.List`を使用する:
+そのためには、標準のPythonの`typing.List`を使用する:
 
 ```Python hl_lines="1 20"
 {!../../docs_src/extra_models/tutorial004.py!}
@@ -184,9 +184,9 @@ OpenAPI では`anyOf`で定義されます。
 
 ## 任意の`dict`を持つレスポンス
 
-また、Pydantic モデルを使用せずに、キーと値の型だけを定義した任意の`dict`を使ってレスポンスを宣言することもできます。
+また、Pydanticモデルを使用せずに、キーと値の型だけを定義した任意の`dict`を使ってレスポンスを宣言することもできます。
 
-これは、有効なフィールド・属性名（Pydantic モデルに必要なもの）を事前に知らない場合に便利です。
+これは、有効なフィールド・属性名（Pydanticモデルに必要なもの）を事前に知らない場合に便利です。
 
 この場合、`typing.Dict`を使用することができます:
 
@@ -196,6 +196,6 @@ OpenAPI では`anyOf`で定義されます。
 
 ## まとめ
 
-複数の Pydantic モデルを使用し、ケースごとに自由に継承します。
+複数のPydanticモデルを使用し、ケースごとに自由に継承します。
 
 エンティティが異なる「状態」を持たなければならない場合は、エンティティごとに単一のデータモデルを持つ必要はありません。`password` や `password_hash` やパスワードなしなどのいくつかの「状態」をもつユーザー「エンティティ」の場合の様にすれば良いです。

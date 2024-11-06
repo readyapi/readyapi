@@ -24,7 +24,7 @@
 
 ## 额外的校验
 
-我们打算添加约束条件：即使 `q` 是可选的，但只要提供了该参数，则该参数值**不能超过 50 个字符的长度**。
+我们打算添加约束条件：即使 `q` 是可选的，但只要提供了该参数，则该参数值**不能超过50个字符的长度**。
 
 ### 导入 `Query`
 
@@ -64,7 +64,7 @@ q: str = None
 q: Union[str, None] = Query(default=None, max_length=50)
 ```
 
-将会校验数据，在数据无效时展示清晰的错误信息，并在 OpenAPI 模式的*路径操作*中记录该参 ​​ 数。
+将会校验数据，在数据无效时展示清晰的错误信息，并在 OpenAPI 模式的*路径操作*中记录该参​​数。
 
 ## 添加更多校验
 
@@ -84,9 +84,9 @@ q: Union[str, None] = Query(default=None, max_length=50)
 
 这个指定的正则表达式通过以下规则检查接收到的参数值：
 
-- `^`：以该符号之后的字符开头，符号之前没有字符。
-- `fixedquery`: 值精确地等于 `fixedquery`。
-- `$`: 到此结束，在 `fixedquery` 之后没有更多字符。
+* `^`：以该符号之后的字符开头，符号之前没有字符。
+* `fixedquery`: 值精确地等于 `fixedquery`。
+* `$`: 到此结束，在 `fixedquery` 之后没有更多字符。
 
 如果你对所有的这些**「正则表达式」**概念感到迷茫，请不要担心。对于许多人来说这都是一个困难的主题。你仍然可以在无需正则表达式的情况下做很多事情。
 
@@ -167,7 +167,7 @@ Pydantic 是 ReadyAPI 中所有数据验证和序列化的核心，当你在没�
 
 ///
 
-### 使用 Pydantic 中的`Required`代替省略号(`...`)
+### 使用Pydantic中的`Required`代替省略号(`...`)
 
 如果你觉得使用 `...` 不舒服，你也可以从 Pydantic 导入并使用 `Required`：
 
@@ -331,16 +331,16 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 通用的校验和元数据：
 
-- `alias`
-- `title`
-- `description`
-- `deprecated`
+* `alias`
+* `title`
+* `description`
+* `deprecated`
 
 特定于字符串的校验：
 
-- `min_length`
-- `max_length`
-- `regex`
+* `min_length`
+* `max_length`
+* `regex`
 
 在这些示例中，你了解了如何声明对 `str` 值的校验。
 

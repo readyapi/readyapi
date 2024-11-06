@@ -14,9 +14,9 @@ Auch wenn im obige Code Pydantic nicht explizit vorkommt, verwendet ReadyAPI Pyd
 
 Und natürlich wird das gleiche unterstützt:
 
-- Validierung der Daten
-- Serialisierung der Daten
-- Dokumentation der Daten, usw.
+* Validierung der Daten
+* Serialisierung der Daten
+* Dokumentation der Daten, usw.
 
 Das funktioniert genauso wie mit Pydantic-Modellen. Und tatsächlich wird es unter der Haube mittels Pydantic auf die gleiche Weise bewerkstelligt.
 
@@ -66,25 +66,25 @@ In diesem Fall können Sie einfach die Standard-`dataclasses` durch `pydantic.da
 
 5. Sie können andere Standard-Typannotationen mit Datenklassen als Requestbody verwenden.
 
-   In diesem Fall handelt es sich um eine Liste von `Item`-Datenklassen.
+    In diesem Fall handelt es sich um eine Liste von `Item`-Datenklassen.
 
 6. Hier geben wir ein Dictionary zurück, das `items` enthält, welches eine Liste von Datenklassen ist.
 
-   ReadyAPI ist weiterhin in der Lage, die Daten nach JSON zu <abbr title="Konvertieren der Daten in ein übertragbares Format">serialisieren</abbr>.
+    ReadyAPI ist weiterhin in der Lage, die Daten nach JSON zu <abbr title="Konvertieren der Daten in ein übertragbares Format">serialisieren</abbr>.
 
 7. Hier verwendet das `response_model` als Typannotation eine Liste von `Author`-Datenklassen.
 
-   Auch hier können Sie `dataclasses` mit Standard-Typannotationen kombinieren.
+    Auch hier können Sie `dataclasses` mit Standard-Typannotationen kombinieren.
 
-8. Beachten Sie, dass diese _Pfadoperation-Funktion_ reguläres `def` anstelle von `async def` verwendet.
+8. Beachten Sie, dass diese *Pfadoperation-Funktion* reguläres `def` anstelle von `async def` verwendet.
 
-   Wie immer können Sie in ReadyAPI `def` und `async def` beliebig kombinieren.
+    Wie immer können Sie in ReadyAPI `def` und `async def` beliebig kombinieren.
 
-   Wenn Sie eine Auffrischung darüber benötigen, wann welche Anwendung sinnvoll ist, lesen Sie den Abschnitt „In Eile?“ in der Dokumentation zu [`async` und `await`](../async.md#in-eile){.internal-link target=\_blank}.
+    Wenn Sie eine Auffrischung darüber benötigen, wann welche Anwendung sinnvoll ist, lesen Sie den Abschnitt „In Eile?“ in der Dokumentation zu [`async` und `await`](../async.md#in-eile){.internal-link target=_blank}.
 
-9. Diese _Pfadoperation-Funktion_ gibt keine Datenklassen zurück (obwohl dies möglich wäre), sondern eine Liste von Dictionarys mit internen Daten.
+9. Diese *Pfadoperation-Funktion* gibt keine Datenklassen zurück (obwohl dies möglich wäre), sondern eine Liste von Dictionarys mit internen Daten.
 
-   ReadyAPI verwendet den Parameter `response_model` (der Datenklassen enthält), um die Response zu konvertieren.
+    ReadyAPI verwendet den Parameter `response_model` (der Datenklassen enthält), um die Response zu konvertieren.
 
 Sie können `dataclasses` mit anderen Typannotationen auf vielfältige Weise kombinieren, um komplexe Datenstrukturen zu bilden.
 

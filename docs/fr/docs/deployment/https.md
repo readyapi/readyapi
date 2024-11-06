@@ -15,27 +15,27 @@ class="external-link" target="_blank">https://howhttps.works/</a>.
 
 Maintenant, du point de vue d'un développeur, voici plusieurs choses à avoir en tête en pensant au HTTPS :
 
-- Pour le HTTPS, le serveur a besoin de "certificats" générés par une tierce partie.
-  - Ces certificats sont en fait acquis auprès de la tierce partie, et non "générés".
-- Les certificats ont une durée de vie.
-  - Ils expirent.
-  - Puis ils doivent être renouvelés et acquis à nouveau auprès de la tierce partie.
-- Le cryptage de la connexion se fait au niveau du protocole TCP.
-  - C'est une couche en dessous de HTTP.
-  - Donc, le certificat et le traitement du cryptage sont faits avant HTTP.
-- TCP ne connaît pas les "domaines", seulement les adresses IP.
-  - L'information sur le domaine spécifique demandé se trouve dans les données HTTP.
-- Les certificats HTTPS "certifient" un certain domaine, mais le protocole et le cryptage se font au niveau TCP, avant de savoir quel domaine est traité.
-- Par défaut, cela signifie que vous ne pouvez avoir qu'un seul certificat HTTPS par adresse IP.
-  - Quelle que soit la taille de votre serveur ou la taille de chacune des applications qu'il contient.
-  - Il existe cependant une solution à ce problème.
-- Il existe une extension du protocole TLS (celui qui gère le cryptage au niveau TCP, avant HTTP) appelée <a
+* Pour le HTTPS, le serveur a besoin de "certificats" générés par une tierce partie.
+    * Ces certificats sont en fait acquis auprès de la tierce partie, et non "générés".
+* Les certificats ont une durée de vie.
+    * Ils expirent.
+    * Puis ils doivent être renouvelés et acquis à nouveau auprès de la tierce partie.
+* Le cryptage de la connexion se fait au niveau du protocole TCP.
+    * C'est une couche en dessous de HTTP.
+    * Donc, le certificat et le traitement du cryptage sont faits avant HTTP.
+* TCP ne connaît pas les "domaines", seulement les adresses IP.
+    * L'information sur le domaine spécifique demandé se trouve dans les données HTTP.
+* Les certificats HTTPS "certifient" un certain domaine, mais le protocole et le cryptage se font au niveau TCP, avant de savoir quel domaine est traité.
+* Par défaut, cela signifie que vous ne pouvez avoir qu'un seul certificat HTTPS par adresse IP.
+    * Quelle que soit la taille de votre serveur ou la taille de chacune des applications qu'il contient.
+    * Il existe cependant une solution à ce problème.
+* Il existe une extension du protocole TLS (celui qui gère le cryptage au niveau TCP, avant HTTP) appelée <a
   href="https://fr.wikipedia.org/wiki/Server_Name_Indication" class="external-link" target="_blank"><abbr
   title="Server Name Indication (indication du nom du serveur)">SNI (indication du nom du serveur)</abbr></a>.
-  - Cette extension SNI permet à un seul serveur (avec une seule adresse IP) d'avoir plusieurs certificats HTTPS et de servir plusieurs domaines/applications HTTPS.
-  - Pour que cela fonctionne, un seul composant (programme) fonctionnant sur le serveur, écoutant sur l'adresse IP publique, doit avoir tous les certificats HTTPS du serveur.
-- Après avoir obtenu une connexion sécurisée, le protocole de communication est toujours HTTP.
-  - Le contenu est crypté, même s'il est envoyé avec le protocole HTTP.
+    * Cette extension SNI permet à un seul serveur (avec une seule adresse IP) d'avoir plusieurs certificats HTTPS et de servir plusieurs domaines/applications HTTPS.
+    * Pour que cela fonctionne, un seul composant (programme) fonctionnant sur le serveur, écoutant sur l'adresse IP publique, doit avoir tous les certificats HTTPS du serveur.
+* Après avoir obtenu une connexion sécurisée, le protocole de communication est toujours HTTP.
+    * Le contenu est crypté, même s'il est envoyé avec le protocole HTTP.
 
 Il est courant d'avoir un seul programme/serveur HTTP fonctionnant sur le serveur (la machine, l'hôte, etc.) et
 gérant toutes les parties HTTPS : envoyer les requêtes HTTP décryptées à l'application HTTP réelle fonctionnant sur

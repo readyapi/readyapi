@@ -316,7 +316,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-## Die _Pfadoperation_ `/token` aktualisieren
+## Die *Pfadoperation* `/token` aktualisieren
 
 Erstellen Sie ein <abbr title="Zeitdifferenz">`timedelta`</abbr> mit der Ablaufzeit des Tokens.
 

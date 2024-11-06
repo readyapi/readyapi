@@ -8,7 +8,7 @@ Wenn Sie zwei unabhängige ReadyAPI-Anwendungen mit deren eigenen unabhängigen 
 
 ### Hauptanwendung
 
-Erstellen Sie zunächst die Hauptanwendung **ReadyAPI** und deren _Pfadoperationen_:
+Erstellen Sie zunächst die Hauptanwendung **ReadyAPI** und deren *Pfadoperationen*:
 
 ```Python hl_lines="3  6-8"
 {!../../docs_src/sub_applications/tutorial001.py!}
@@ -16,7 +16,7 @@ Erstellen Sie zunächst die Hauptanwendung **ReadyAPI** und deren _Pfadoperation
 
 ### Unteranwendung
 
-Erstellen Sie dann Ihre Unteranwendung und deren _Pfadoperationen_.
+Erstellen Sie dann Ihre Unteranwendung und deren *Pfadoperationen*.
 
 Diese Unteranwendung ist nur eine weitere Standard-ReadyAPI-Anwendung, aber diese wird „gemountet“:
 
@@ -70,4 +70,4 @@ Auf diese Weise weiß die Unteranwendung, dass sie dieses Pfadpräfix für die B
 
 Und die Unteranwendung könnte auch ihre eigenen gemounteten Unteranwendungen haben und alles würde korrekt funktionieren, da ReadyAPI sich um alle diese `root_path`s automatisch kümmert.
 
-Mehr über den `root_path` und dessen explizite Verwendung erfahren Sie im Abschnitt [Hinter einem Proxy](behind-a-proxy.md){.internal-link target=\_blank}.
+Mehr über den `root_path` und dessen explizite Verwendung erfahren Sie im Abschnitt [Hinter einem Proxy](behind-a-proxy.md){.internal-link target=_blank}.

@@ -6,14 +6,14 @@
 
 👆 💪 ⚒ 📄 🏑 👈 ⚙️ 🗄 🔧 &amp; 🏧 🛠️ 🩺 ⚜:
 
-| 🔢                 | 🆎       | 📛                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`            | `str`    | 📛 🛠️.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `description`      | `str`    | 📏 📛 🛠️. ⚫️ 💪 ⚙️ ✍.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `version`          | `string` | ⏬ 🛠️. 👉 ⏬ 👆 👍 🈸, 🚫 🗄. 🖼 `2.5.0`.                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `terms_of_service` | `str`    | 📛 ⚖ 🐕‍🦺 🛠️. 🚥 🚚, 👉 ✔️ 📛.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `contact`          | `dict`   | 📧 ℹ 🎦 🛠️. ⚫️ 💪 🔌 📚 🏑. <details><summary><code>contact</code> 🏑</summary><table><thead><tr><th>🔢</th><th>🆎</th><th>📛</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>⚖ 📛 📧 👨‍💼/🏢.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>📛 ☝ 📧 ℹ. 🔜 📁 📛.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>📧 📢 📧 👨‍💼/🏢. 🔜 📁 📧 📢. </td></tr></tbody></table></details> |
-| `license_info`     | `dict`   | 🛂 ℹ 🎦 🛠️. ⚫️ 💪 🔌 📚 🏑. <details><summary><code>license_info</code> 🏑</summary><table><thead><tr><th>🔢</th><th>🆎</th><th>📛</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>🚚</strong> (🚥 <code>license_info</code> ⚒). 🛂 📛 ⚙️ 🛠️.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>📛 🛂 ⚙️ 🛠️. 🔜 📁 📛. </td></tr></tbody></table></details>                                         |
+| 🔢 | 🆎 | 📛 |
+|------------|------|-------------|
+| `title` | `str` | 📛 🛠️. |
+| `description` | `str` | 📏 📛 🛠️. ⚫️ 💪 ⚙️ ✍. |
+| `version` | `string` | ⏬ 🛠️. 👉 ⏬ 👆 👍 🈸, 🚫 🗄. 🖼 `2.5.0`. |
+| `terms_of_service` | `str` | 📛 ⚖ 🐕‍🦺 🛠️. 🚥 🚚, 👉 ✔️ 📛. |
+| `contact` | `dict` | 📧 ℹ 🎦 🛠️. ⚫️ 💪 🔌 📚 🏑. <details><summary><code>contact</code> 🏑</summary><table><thead><tr><th>🔢</th><th>🆎</th><th>📛</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>⚖ 📛 📧 👨‍💼/🏢.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>📛 ☝ 📧 ℹ. 🔜 📁 📛.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>📧 📢 📧 👨‍💼/🏢. 🔜 📁 📧 📢. </td></tr></tbody></table></details> |
+| `license_info` | `dict` | 🛂 ℹ 🎦 🛠️. ⚫️ 💪 🔌 📚 🏑. <details><summary><code>license_info</code> 🏑</summary><table><thead><tr><th>🔢</th><th>🆎</th><th>📛</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>🚚</strong> (🚥 <code>license_info</code> ⚒). 🛂 📛 ⚙️ 🛠️.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>📛 🛂 ⚙️ 🛠️. 🔜 📁 📛. </td></tr></tbody></table></details> |
 
 👆 💪 ⚒ 👫 ⏩:
 
@@ -39,11 +39,11 @@
 
 🔠 📖 💪 🔌:
 
-- `name` (**✔**): `str` ⏮️ 🎏 📛 👆 ⚙️ `tags` 🔢 👆 _➡ 🛠️_ &amp; `APIRouter`Ⓜ.
-- `description`: `str` ⏮️ 📏 📛 🔖. ⚫️ 💪 ✔️ ✍ &amp; 🔜 🎦 🩺 🎚.
-- `externalDocs`: `dict` 🔬 🔢 🧾 ⏮️:
-  - `description`: `str` ⏮️ 📏 📛 🔢 🩺.
-  - `url` (**✔**): `str` ⏮️ 📛 🔢 🧾.
+* `name` (**✔**): `str` ⏮️ 🎏 📛 👆 ⚙️ `tags` 🔢 👆 *➡ 🛠️* &amp; `APIRouter`Ⓜ.
+* `description`: `str` ⏮️ 📏 📛 🔖. ⚫️ 💪 ✔️ ✍ &amp; 🔜 🎦 🩺 🎚.
+* `externalDocs`: `dict` 🔬 🔢 🧾 ⏮️:
+    * `description`: `str` ⏮️ 📏 📛 🔢 🩺.
+    * `url` (**✔**): `str` ⏮️ 📛 🔢 🧾.
 
 ### ✍ 🗃 🔖
 
@@ -65,7 +65,7 @@
 
 ### ⚙️ 👆 🔖
 
-⚙️ `tags` 🔢 ⏮️ 👆 _➡ 🛠️_ (&amp; `APIRouter`Ⓜ) 🛠️ 👫 🎏 🔖:
+⚙️ `tags` 🔢 ⏮️ 👆 *➡ 🛠️* (&amp; `APIRouter`Ⓜ) 🛠️ 👫 🎏 🔖:
 
 ```Python hl_lines="21  26"
 {!../../docs_src/metadata/tutorial004.py!}
@@ -73,7 +73,7 @@
 
 /// info
 
-✍ 🌅 🔃 🔖 [➡ 🛠️ 📳](path-operation-configuration.md#_3){.internal-link target=\_blank}.
+✍ 🌅 🔃 🔖 [➡ 🛠️ 📳](path-operation-configuration.md#_3){.internal-link target=_blank}.
 
 ///
 
@@ -107,12 +107,12 @@
 
 👆 💪 🔗 2️⃣ 🧾 👩‍💻 🔢 🔌:
 
-- **🦁 🎚**: 🍦 `/docs`.
-  - 👆 💪 ⚒ 🚮 📛 ⏮️ 🔢 `docs_url`.
-  - 👆 💪 ❎ ⚫️ ⚒ `docs_url=None`.
-- **📄**: 🍦 `/redoc`.
-  - 👆 💪 ⚒ 🚮 📛 ⏮️ 🔢 `redoc_url`.
-  - 👆 💪 ❎ ⚫️ ⚒ `redoc_url=None`.
+* **🦁 🎚**: 🍦 `/docs`.
+    * 👆 💪 ⚒ 🚮 📛 ⏮️ 🔢 `docs_url`.
+    * 👆 💪 ❎ ⚫️ ⚒ `docs_url=None`.
+* **📄**: 🍦 `/redoc`.
+    * 👆 💪 ⚒ 🚮 📛 ⏮️ 🔢 `redoc_url`.
+    * 👆 💪 ❎ ⚫️ ⚒ `redoc_url=None`.
 
 🖼, ⚒ 🦁 🎚 🍦 `/documentation` &amp; ❎ 📄:
 

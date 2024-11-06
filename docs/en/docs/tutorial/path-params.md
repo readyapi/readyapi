@@ -115,13 +115,13 @@ Several of these are explored in the next chapters of the tutorial.
 
 ## Order matters
 
-When creating _path operations_, you can find situations where you have a fixed path.
+When creating *path operations*, you can find situations where you have a fixed path.
 
 Like `/users/me`, let's say that it's to get data about the current user.
 
 And then you can also have a path `/users/{user_id}` to get data about a specific user by some user ID.
 
-Because _path operations_ are evaluated in order, you need to make sure that the path for `/users/me` is declared before the one for `/users/{user_id}`:
+Because *path operations* are evaluated in order, you need to make sure that the path for `/users/me` is declared before the one for `/users/{user_id}`:
 
 ```Python hl_lines="6  11"
 {!../../docs_src/path_params/tutorial003.py!}
@@ -139,7 +139,7 @@ The first one will always be used since the path matches first.
 
 ## Predefined values
 
-If you have a _path operation_ that receives a _path parameter_, but you want the possible valid _path parameter_ values to be predefined, you can use a standard Python <abbr title="Enumeration">`Enum`</abbr>.
+If you have a *path operation* that receives a *path parameter*, but you want the possible valid *path parameter* values to be predefined, you can use a standard Python <abbr title="Enumeration">`Enum`</abbr>.
 
 ### Create an `Enum` class
 
@@ -165,9 +165,9 @@ If you are wondering, "AlexNet", "ResNet", and "LeNet" are just names of Machine
 
 ///
 
-### Declare a _path parameter_
+### Declare a *path parameter*
 
-Then create a _path parameter_ with a type annotation using the enum class you created (`ModelName`):
+Then create a *path parameter* with a type annotation using the enum class you created (`ModelName`):
 
 ```Python hl_lines="16"
 {!../../docs_src/path_params/tutorial005.py!}
@@ -175,23 +175,23 @@ Then create a _path parameter_ with a type annotation using the enum class you c
 
 ### Check the docs
 
-Because the available values for the _path parameter_ are predefined, the interactive docs can show them nicely:
+Because the available values for the *path parameter* are predefined, the interactive docs can show them nicely:
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Working with Python _enumerations_
+### Working with Python *enumerations*
 
-The value of the _path parameter_ will be an _enumeration member_.
+The value of the *path parameter* will be an *enumeration member*.
 
-#### Compare _enumeration members_
+#### Compare *enumeration members*
 
-You can compare it with the _enumeration member_ in your created enum `ModelName`:
+You can compare it with the *enumeration member* in your created enum `ModelName`:
 
 ```Python hl_lines="17"
 {!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### Get the _enumeration value_
+#### Get the *enumeration value*
 
 You can get the actual value (a `str` in this case) using `model_name.value`, or in general, `your_enum_member.value`:
 
@@ -205,9 +205,9 @@ You could also access the value `"lenet"` with `ModelName.lenet.value`.
 
 ///
 
-#### Return _enumeration members_
+#### Return *enumeration members*
 
-You can return _enum members_ from your _path operation_, even nested in a JSON body (e.g. a `dict`).
+You can return *enum members* from your *path operation*, even nested in a JSON body (e.g. a `dict`).
 
 They will be converted to their corresponding values (strings in this case) before returning them to the client:
 
@@ -226,15 +226,15 @@ In your client you will get a JSON response like:
 
 ## Path parameters containing paths
 
-Let's say you have a _path operation_ with a path `/files/{file_path}`.
+Let's say you have a *path operation* with a path `/files/{file_path}`.
 
-But you need `file_path` itself to contain a _path_, like `home/johndoe/myfile.txt`.
+But you need `file_path` itself to contain a *path*, like `home/johndoe/myfile.txt`.
 
 So, the URL for that file would be something like: `/files/home/johndoe/myfile.txt`.
 
 ### OpenAPI support
 
-OpenAPI doesn't support a way to declare a _path parameter_ to contain a _path_ inside, as that could lead to scenarios that are difficult to test and define.
+OpenAPI doesn't support a way to declare a *path parameter* to contain a *path* inside, as that could lead to scenarios that are difficult to test and define.
 
 Nevertheless, you can still do it in **ReadyAPI**, using one of the internal tools from Starlette.
 
@@ -242,13 +242,13 @@ And the docs would still work, although not adding any documentation telling tha
 
 ### Path convertor
 
-Using an option directly from Starlette you can declare a _path parameter_ containing a _path_ using a URL like:
+Using an option directly from Starlette you can declare a *path parameter* containing a *path* using a URL like:
 
 ```
 /files/{file_path:path}
 ```
 
-In this case, the name of the parameter is `file_path`, and the last part, `:path`, tells it that the parameter should match any _path_.
+In this case, the name of the parameter is `file_path`, and the last part, `:path`, tells it that the parameter should match any *path*.
 
 So, you can use it with:
 
@@ -268,10 +268,10 @@ In that case, the URL would be: `/files//home/johndoe/myfile.txt`, with a double
 
 With **ReadyAPI**, by using short, intuitive and standard Python type declarations, you get:
 
-- Editor support: error checks, autocompletion, etc.
-- Data "<abbr title="converting the string that comes from an HTTP request into Python data">parsing</abbr>"
-- Data validation
-- API annotation and automatic documentation
+* Editor support: error checks, autocompletion, etc.
+* Data "<abbr title="converting the string that comes from an HTTP request into Python data">parsing</abbr>"
+* Data validation
+* API annotation and automatic documentation
 
 And you only have to declare them once.
 

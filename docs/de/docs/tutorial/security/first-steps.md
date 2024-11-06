@@ -86,7 +86,7 @@ Sie werden etwa Folgendes sehen:
 
 Sie haben bereits einen glänzenden, neuen „Authorize“-Button.
 
-Und Ihre _Pfadoperation_ hat in der oberen rechten Ecke ein kleines Schloss, auf das Sie klicken können.
+Und Ihre *Pfadoperation* hat in der oberen rechten Ecke ein kleines Schloss, auf das Sie klicken können.
 
 ///
 
@@ -120,19 +120,19 @@ In diesem Fall handhabt jedoch dieselbe **ReadyAPI**-Anwendung sowohl die API al
 
 Betrachten wir es also aus dieser vereinfachten Sicht:
 
-- Der Benutzer gibt den `username` und das `password` im Frontend ein und drückt `Enter`.
-- Das Frontend (das im Browser des Benutzers läuft) sendet diesen `username` und das `password` an eine bestimmte URL in unserer API (deklariert mit `tokenUrl="token"`).
-- Die API überprüft den `username` und das `password` und antwortet mit einem „Token“ (wir haben davon noch nichts implementiert).
-  - Ein „Token“ ist lediglich ein String mit einem Inhalt, den wir später verwenden können, um diesen Benutzer zu verifizieren.
-  - Normalerweise läuft ein Token nach einiger Zeit ab.
-    - Daher muss sich der Benutzer irgendwann später erneut anmelden.
-    - Und wenn der Token gestohlen wird, ist das Risiko geringer. Es handelt sich nicht um einen dauerhaften Schlüssel, der (in den meisten Fällen) für immer funktioniert.
-- Das Frontend speichert diesen Token vorübergehend irgendwo.
-- Der Benutzer klickt im Frontend, um zu einem anderen Abschnitt der Frontend-Web-Anwendung zu gelangen.
-- Das Frontend muss weitere Daten von der API abrufen.
-  - Es benötigt jedoch eine Authentifizierung für diesen bestimmten Endpunkt.
-  - Um sich also bei unserer API zu authentifizieren, sendet es einen Header `Authorization` mit dem Wert `Bearer` plus dem Token.
-  - Wenn der Token `foobar` enthielte, wäre der Inhalt des `Authorization`-Headers: `Bearer foobar`.
+* Der Benutzer gibt den `username` und das `password` im Frontend ein und drückt `Enter`.
+* Das Frontend (das im Browser des Benutzers läuft) sendet diesen `username` und das `password` an eine bestimmte URL in unserer API (deklariert mit `tokenUrl="token"`).
+* Die API überprüft den `username` und das `password` und antwortet mit einem „Token“ (wir haben davon noch nichts implementiert).
+    * Ein „Token“ ist lediglich ein String mit einem Inhalt, den wir später verwenden können, um diesen Benutzer zu verifizieren.
+    * Normalerweise läuft ein Token nach einiger Zeit ab.
+        * Daher muss sich der Benutzer irgendwann später erneut anmelden.
+        * Und wenn der Token gestohlen wird, ist das Risiko geringer. Es handelt sich nicht um einen dauerhaften Schlüssel, der (in den meisten Fällen) für immer funktioniert.
+* Das Frontend speichert diesen Token vorübergehend irgendwo.
+* Der Benutzer klickt im Frontend, um zu einem anderen Abschnitt der Frontend-Web-Anwendung zu gelangen.
+* Das Frontend muss weitere Daten von der API abrufen.
+    * Es benötigt jedoch eine Authentifizierung für diesen bestimmten Endpunkt.
+    * Um sich also bei unserer API zu authentifizieren, sendet es einen Header `Authorization` mit dem Wert `Bearer` plus dem Token.
+    * Wenn der Token `foobar` enthielte, wäre der Inhalt des `Authorization`-Headers: `Bearer foobar`.
 
 ## **ReadyAPI**s `OAuth2PasswordBearer`
 
@@ -164,7 +164,7 @@ Wenn wir eine Instanz der Klasse `OAuth2PasswordBearer` erstellen, übergeben wi
 
 //// tab | Python 3.8+
 
-```Python hl_lines="7"
+```Python  hl_lines="7"
 {!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
@@ -190,11 +190,11 @@ Hier bezieht sich `tokenUrl="token"` auf eine relative URL `token`, die wir noch
 
 Da wir eine relative URL verwenden, würde sich das, wenn sich Ihre API unter `https://example.com/` befindet, auf `https://example.com/token` beziehen. Wenn sich Ihre API jedoch unter `https://example.com/api/v1/` befände, würde es sich auf `https://example.com/api/v1/token` beziehen.
 
-Die Verwendung einer relativen URL ist wichtig, um sicherzustellen, dass Ihre Anwendung auch in einem fortgeschrittenen Anwendungsfall, wie [hinter einem Proxy](../../advanced/behind-a-proxy.md){.internal-link target=\_blank}, weiterhin funktioniert.
+Die Verwendung einer relativen URL ist wichtig, um sicherzustellen, dass Ihre Anwendung auch in einem fortgeschrittenen Anwendungsfall, wie [hinter einem Proxy](../../advanced/behind-a-proxy.md){.internal-link target=_blank}, weiterhin funktioniert.
 
 ///
 
-Dieser Parameter erstellt nicht diesen Endpunkt / diese _Pfadoperation_, sondern deklariert, dass die URL `/token` diejenige sein wird, die der Client verwenden soll, um den Token abzurufen. Diese Information wird in OpenAPI und dann in den interaktiven API-Dokumentationssystemen verwendet.
+Dieser Parameter erstellt nicht diesen Endpunkt / diese *Pfadoperation*, sondern deklariert, dass die URL `/token` diejenige sein wird, die der Client verwenden soll, um den Token abzurufen. Diese Information wird in OpenAPI und dann in den interaktiven API-Dokumentationssystemen verwendet.
 
 Wir werden demnächst auch die eigentliche Pfadoperation erstellen.
 
@@ -230,7 +230,7 @@ Jetzt können Sie dieses `oauth2_scheme` als Abhängigkeit `Depends` übergeben.
 
 //// tab | Python 3.8+
 
-```Python hl_lines="11"
+```Python  hl_lines="11"
 {!> ../../docs_src/security/tutorial001_an.py!}
 ```
 
@@ -250,7 +250,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-Diese Abhängigkeit stellt einen `str` bereit, der dem Parameter `token` der _Pfadoperation-Funktion_ zugewiesen wird.
+Diese Abhängigkeit stellt einen `str` bereit, der dem Parameter `token` der *Pfadoperation-Funktion* zugewiesen wird.
 
 **ReadyAPI** weiß, dass es diese Abhängigkeit verwenden kann, um ein „Sicherheitsschema“ im OpenAPI-Schema (und der automatischen API-Dokumentation) zu definieren.
 

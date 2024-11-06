@@ -4,7 +4,7 @@ You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets
 
 ## Install `WebSockets`
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and install `websockets`:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and install `websockets`:
 
 <div class="termy">
 
@@ -106,14 +106,14 @@ And all of them will use the same WebSocket connection.
 
 In WebSocket endpoints you can import from `readyapi` and use:
 
-- `Depends`
-- `Security`
-- `Cookie`
-- `Header`
-- `Path`
-- `Query`
+* `Depends`
+* `Security`
+* `Cookie`
+* `Header`
+* `Path`
+* `Query`
 
-They work the same way as for other ReadyAPI endpoints/_path operations_:
+They work the same way as for other ReadyAPI endpoints/*path operations*:
 
 //// tab | Python 3.10+
 
@@ -193,8 +193,8 @@ Open your browser at <a href="http://127.0.0.1:8000" class="external-link" targe
 
 There you can set:
 
-- The "Item ID", used in the path.
-- The "Token" used as a query parameter.
+* The "Item ID", used in the path.
+* The "Token" used as a query parameter.
 
 /// tip
 
@@ -228,9 +228,9 @@ When a WebSocket connection is closed, the `await websocket.receive_text()` will
 
 To try it out:
 
-- Open the app with several browser tabs.
-- Write messages from them.
-- Then close one of the tabs.
+* Open the app with several browser tabs.
+* Write messages from them.
+* Then close one of the tabs.
 
 That will raise the `WebSocketDisconnect` exception, and all the other clients will receive a message like:
 
@@ -252,5 +252,5 @@ If you need something easy to integrate with ReadyAPI but that is more robust, s
 
 To learn more about the options, check Starlette's documentation for:
 
-- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">The `WebSocket` class</a>.
-- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Class-based WebSocket handling</a>.
+* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">The `WebSocket` class</a>.
+* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Class-based WebSocket handling</a>.

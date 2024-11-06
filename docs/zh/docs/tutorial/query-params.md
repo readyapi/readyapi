@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ……查询参数为：
 
-- `skip`：值为 `0`
-- `limit`：值为 `10`
+* `skip`：值为 `0`
+* `limit`：值为 `10`
 
 这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。
 
@@ -25,10 +25,10 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 所有应用于路径参数的流程也适用于查询参数：
 
-- （显而易见的）编辑器支持
-- 数据<abbr title="将来自 HTTP 请求的字符串转换为 Python 数据类型">**解析**</abbr>
-- 数据校验
-- API 文档
+* （显而易见的）编辑器支持
+* 数据<abbr title="将来自 HTTP 请求的字符串转换为 Python 数据类型">**解析**</abbr>
+* 数据校验
+* API 文档
 
 ## 默认值
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 查询参数的值就是：
 
-- `skip=20`：在 URL 中设定的值
-- `limit=10`：使用默认值
+* `skip=20`：在 URL 中设定的值
+* `limit=10`：使用默认值
 
 ## 可选参数
 
@@ -98,6 +98,7 @@ ReadyAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 
 ## 查询参数类型转换
 
 参数还可以声明为 `bool` 类型，ReadyAPI 会自动转换参数类型：
+
 
 //// tab | Python 3.10+
 
@@ -146,6 +147,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 ```
 
 或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。
+
 
 ## 多个路径和查询参数
 
@@ -243,12 +245,12 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 
 本例中有 3 个查询参数：
 
-- `needy`，必选的 `str` 类型参数
-- `skip`，默认值为 `0` 的 `int` 类型参数
-- `limit`，可选的 `int` 类型参数
+* `needy`，必选的 `str` 类型参数
+* `skip`，默认值为 `0` 的 `int` 类型参数
+* `limit`，可选的 `int` 类型参数
 
 /// tip | "提示"
 
-还可以像在[路径参数](path-params.md#_8){.internal-link target=\_blank} 中那样使用 `Enum`。
+还可以像在[路径参数](path-params.md#_8){.internal-link target=_blank} 中那样使用 `Enum`。
 
 ///

@@ -18,9 +18,7 @@ Without changing the settings, syntax highlighting is enabled by default:
 
 But you can disable it by setting `syntaxHighlight` to `False`:
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial001.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial001.py hl[3] *}
 
 ...and then Swagger UI won't show the syntax highlighting anymore:
 
@@ -30,9 +28,7 @@ But you can disable it by setting `syntaxHighlight` to `False`:
 
 The same way you could set the syntax highlighting theme with the key `"syntaxHighlight.theme"` (notice that it has a dot in the middle):
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial002.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial002.py hl[3] *}
 
 That configuration would change the syntax highlighting color theme:
 
@@ -44,17 +40,13 @@ ReadyAPI includes some default configuration parameters appropriate for most of 
 
 It includes these default configurations:
 
-```Python
-{!../../readyapi/openapi/docs.py[ln:7-23]!}
-```
+{* ../../readyapi/openapi/docs.py ln[8:23] hl[17:23] *}
 
 You can override any of them by setting a different value in the argument `swagger_ui_parameters`.
 
 For example, to disable `deepLinking` you could pass these settings to `swagger_ui_parameters`:
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial003.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial003.py hl[3] *}
 
 ## Other Swagger UI Parameters
 
@@ -75,4 +67,4 @@ presets: [
 
 These are **JavaScript** objects, not strings, so you can't pass them from Python code directly.
 
-If you need to use JavaScript-only configurations like those, you can use one of the methods above. Override all the Swagger UI _path operation_ and manually write any JavaScript you need.
+If you need to use JavaScript-only configurations like those, you can use one of the methods above. Override all the Swagger UI *path operation* and manually write any JavaScript you need.

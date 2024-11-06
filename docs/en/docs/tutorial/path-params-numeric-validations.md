@@ -64,7 +64,7 @@ ReadyAPI added support for `Annotated` (and started recommending it) in version 
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=\_blank} to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
 
 ///
 
@@ -198,10 +198,10 @@ Here's a **small trick** that can be handy, but you won't need it often.
 
 If you want to:
 
-- declare the `q` query parameter without a `Query` nor any default value
-- declare the path parameter `item_id` using `Path`
-- have them in a different order
-- not use `Annotated`
+* declare the `q` query parameter without a `Query` nor any default value
+* declare the path parameter `item_id` using `Path`
+* have them in a different order
+* not use `Annotated`
 
 ...Python has a little special syntax for that.
 
@@ -273,8 +273,8 @@ Prefer to use the `Annotated` version if possible.
 
 The same applies for:
 
-- `gt`: `g`reater `t`han
-- `le`: `l`ess than or `e`qual
+* `gt`: `g`reater `t`han
+* `le`: `l`ess than or `e`qual
 
 //// tab | Python 3.9+
 
@@ -348,14 +348,14 @@ Prefer to use the `Annotated` version if possible.
 
 ## Recap
 
-With `Query`, `Path` (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with [Query Parameters and String Validations](query-params-str-validations.md){.internal-link target=\_blank}.
+With `Query`, `Path` (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with [Query Parameters and String Validations](query-params-str-validations.md){.internal-link target=_blank}.
 
 And you can also declare numeric validations:
 
-- `gt`: `g`reater `t`han
-- `ge`: `g`reater than or `e`qual
-- `lt`: `l`ess `t`han
-- `le`: `l`ess than or `e`qual
+* `gt`: `g`reater `t`han
+* `ge`: `g`reater than or `e`qual
+* `lt`: `l`ess `t`han
+* `le`: `l`ess than or `e`qual
 
 /// info
 

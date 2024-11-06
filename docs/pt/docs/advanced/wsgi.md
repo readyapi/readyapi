@@ -1,6 +1,6 @@
 # Adicionando WSGI - Flask, Django, entre outros
 
-Como você viu em [Sub Applications - Mounts](sub-applications.md){.internal-link target=\_blank} e [Behind a Proxy](behind-a-proxy.md){.internal-link target=\_blank}, você pode **"montar"** aplicações WSGI.
+Como você viu em [Sub Applications - Mounts](sub-applications.md){.internal-link target=_blank} e [Behind a Proxy](behind-a-proxy.md){.internal-link target=_blank}, você pode **"montar"** aplicações WSGI.
 
 Para isso, você pode utilizar o `WSGIMiddleware` para encapsular a sua aplicação WSGI, como por exemplo Flask, Django, etc.
 

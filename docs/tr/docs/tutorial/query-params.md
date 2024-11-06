@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...sorgu parametreleri şunlardır:
 
-- `skip`: değeri `0`'dır
-- `limit`: değeri `10`'dır
+* `skip`: değeri `0`'dır
+* `limit`: değeri `10`'dır
 
 Parametreler bağlantının bir parçası oldukları için doğal olarak string olarak değerlendirilirler.
 
@@ -25,10 +25,10 @@ Fakat, Python tipleri ile tanımlandıkları zaman (yukarıdaki örnekte `int` o
 
 Yol parametreleri için geçerli olan her türlü işlem aynı şekilde sorgu parametreleri için de geçerlidir:
 
-- Editör desteği (şüphesiz)
-- Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">ayrıştırma</abbr>"
-- Veri doğrulama
-- Otomatik dokümantasyon
+* Editör desteği (şüphesiz)
+* Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">ayrıştırma</abbr>"
+* Veri doğrulama
+* Otomatik dokümantasyon
 
 ## Varsayılanlar
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 Fonksiyonunuzdaki parametre değerleri aşağıdaki gibi olacaktır:
 
-- `skip=20`: çünkü bağlantıda böyle tanımlandı.
-- `limit=10`: çünkü varsayılan değer buydu.
+* `skip=20`: çünkü bağlantıda böyle tanımlandı.
+* `limit=10`: çünkü varsayılan değer buydu.
 
 ## İsteğe Bağlı Parametreler
 
@@ -138,6 +138,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 ```
 
 veya adres, herhangi farklı bir harf varyasyonu içermesi durumuna rağmen (büyük harf, sadece baş harfi büyük kelime, vb.) fonksiyonunuz, `bool` tipli `short` parametresini `True` olarak algılayacaktır. Aksi halde `False` olarak algılanacaktır.
+
 
 ## Çoklu Yol ve Sorgu Parametreleri
 
@@ -237,12 +238,12 @@ Ve elbette, bazı parametreleri zorunlu, bazılarını varsayılan değerli ve b
 
 Bu durumda, 3 tane sorgu parametresi var olacaktır:
 
-- `needy`, zorunlu bir `str`.
-- `skip`, varsayılan değeri `0` olan bir `int`.
-- `limit`, isteğe bağlı bir `int`.
+* `needy`, zorunlu bir `str`.
+* `skip`, varsayılan değeri `0` olan bir `int`.
+* `limit`, isteğe bağlı bir `int`.
 
 /// tip | "İpucu"
 
-Ayrıca, [Yol Parametrelerinde](path-params.md#on-tanml-degerler){.internal-link target=\_blank} de kullanıldığı şekilde `Enum` sınıfından faydalanabilirsiniz.
+Ayrıca, [Yol Parametrelerinde](path-params.md#on-tanml-degerler){.internal-link target=_blank} de kullanıldığı şekilde `Enum` sınıfından faydalanabilirsiniz.
 
 ///

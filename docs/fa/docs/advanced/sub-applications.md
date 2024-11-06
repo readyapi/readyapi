@@ -11,6 +11,7 @@
 
 ابتدا برنامه اصلی سطح بالا، **ReadyAPI** و path operations آن را ایجاد کنید:
 
+
 ```Python hl_lines="3  6-8"
 {!../../docs_src/sub_applications/tutorial001.py!}
 ```
@@ -36,7 +37,6 @@
 ### اسناد API خودکار را بررسی کنید
 
 برنامه را با استفاده از ‘uvicorn‘ اجرا کنید، اگر فایل شما ‘main.py‘ نام دارد، دستور زیر را وارد کنید:
-
 <div class="termy">
 
 ```console
@@ -69,4 +69,4 @@ $ uvicorn main:app --reload
 
 و زیر برنامه ها نیز می تواند زیر برنامه های متصل شده خود را داشته باشد و همه چیز به درستی کار کند، زیرا ReadyAPI تمام این مسیرهای `root_path` را به طور خودکار مدیریت می کند.
 
-در بخش [پشت پراکسی](behind-a-proxy.md){.internal-link target=\_blank}. درباره `root_path` و نحوه استفاده درست از آن بیشتر خواهید آموخت.
+در بخش [پشت پراکسی](behind-a-proxy.md){.internal-link target=_blank}. درباره `root_path` و نحوه استفاده درست از آن بیشتر خواهید آموخت.

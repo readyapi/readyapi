@@ -4,8 +4,8 @@
 
 ## `StaticFiles` 사용
 
-- `StaticFiles` 임포트합니다.
-- 특정 경로에 `StaticFiles()` 인스턴스를 "마운트" 합니다.
+* `StaticFiles` 임포트합니다.
+* 특정 경로에 `StaticFiles()` 인스턴스를 "마운트" 합니다.
 
 ```Python hl_lines="2  6"
 {!../../docs_src/static_files/tutorial001.py!}
@@ -36,6 +36,7 @@
 `name="static"`은 **ReadyAPI**에서 내부적으로 사용할 수 있는 이름을 제공합니다.
 
 이 모든 매개변수는 "`static`"과 다를 수 있으며, 사용자 응용 프로그램의 요구 사항 및 구체적인 세부 정보에 따라 매개변수를 조정할 수 있습니다.
+
 
 ## 추가 정보
 

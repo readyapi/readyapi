@@ -108,14 +108,14 @@ API 基本上肯定要发送**响应体**，但是客户端不一定发送**请�
 
 仅使用 Python 类型声明，**ReadyAPI** 就可以：
 
-- 以 JSON 形式读取请求体
-- （在必要时）把请求体转换为对应的类型
-- 校验数据：
-  - 数据无效时返回错误信息，并指出错误数据的确切位置和内容
-- 把接收的数据赋值给参数 `item`
-  - 把函数中请求体参数的类型声明为 `Item`，还能获得代码补全等编辑器支持
-- 为模型生成 <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a>，在项目中所需的位置使用
-- 这些概图是 OpenAPI 概图的部件，用于 API 文档 <abbr title="用户界面">UI</abbr>
+* 以 JSON 形式读取请求体
+* （在必要时）把请求体转换为对应的类型
+* 校验数据：
+    * 数据无效时返回错误信息，并指出错误数据的确切位置和内容
+* 把接收的数据赋值给参数 `item`
+    * 把函数中请求体参数的类型声明为 `Item`，还能获得代码补全等编辑器支持
+* 为模型生成 <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a>，在项目中所需的位置使用
+* 这些概图是 OpenAPI 概图的部件，用于 API 文档 <abbr title="用户界面">UI</abbr>
 
 ## API 文档
 
@@ -155,11 +155,11 @@ Pydantic 模型的 JSON 概图是 OpenAPI 生成的概图部件，可在 API 文
 
 该插件用于完善 PyCharm 对 Pydantic 模型的支持，优化的功能如下：
 
-- 自动补全
-- 类型检查
-- 代码重构
-- 查找
-- 代码审查
+* 自动补全
+* 类型检查
+* 代码重构
+* 查找
+* 代码审查
 
 ///
 

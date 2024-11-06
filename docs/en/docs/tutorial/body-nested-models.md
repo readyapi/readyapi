@@ -42,8 +42,8 @@ But in Python versions before 3.9 (3.6 and above), you first need to import `Lis
 
 To declare types that have type parameters (internal types), like `list`, `dict`, `tuple`:
 
-- If you are in a Python version lower than 3.9, import their equivalent version from the `typing` module
-- Pass the internal type(s) as "type parameters" using square brackets: `[` and `]`
+* If you are in a Python version lower than 3.9, import their equivalent version from the `typing` module
+* Pass the internal type(s) as "type parameters" using square brackets: `[` and `]`
 
 In Python 3.9 it would be:
 
@@ -211,10 +211,10 @@ This would mean that **ReadyAPI** would expect a body similar to:
 
 Again, doing just that declaration, with **ReadyAPI** you get:
 
-- Editor support (completion, etc.), even for nested models
-- Data conversion
-- Data validation
-- Automatic documentation
+* Editor support (completion, etc.), even for nested models
+* Data conversion
+* Data validation
+* Automatic documentation
 
 ## Special types and validation
 
@@ -438,8 +438,8 @@ With **ReadyAPI** you have the maximum flexibility provided by Pydantic models, 
 
 But with all the benefits:
 
-- Editor support (completion everywhere!)
-- Data conversion (a.k.a. parsing / serialization)
-- Data validation
-- Schema documentation
-- Automatic docs
+* Editor support (completion everywhere!)
+* Data conversion (a.k.a. parsing / serialization)
+* Data validation
+* Schema documentation
+* Automatic docs

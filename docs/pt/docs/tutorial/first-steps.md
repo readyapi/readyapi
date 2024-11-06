@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 O comando `uvicorn main:app` se refere a:
 
-- `main`: o arquivo `main.py` (o "módulo" Python).
-- `app`: o objeto criado no arquivo `main.py` com a linha `app = ReadyAPI()`.
-- `--reload`: faz o servidor reiniciar após mudanças de código. Use apenas para desenvolvimento.
+* `main`: o arquivo `main.py` (o "módulo" Python).
+* `app`: o objeto criado no arquivo `main.py` com a linha `app = ReadyAPI()`.
+* `--reload`: faz o servidor reiniciar após mudanças de código. Use apenas para desenvolvimento.
 
 ///
 
@@ -70,31 +70,31 @@ Você verá a documentação alternativa automática (fornecida por <a href="htt
 
 ### OpenAPI
 
-O **ReadyAPI** gera um "_schema_" com toda a sua API usando o padrão **OpenAPI** para definir APIs.
+O **ReadyAPI** gera um "*schema*" com toda a sua API usando o padrão **OpenAPI** para definir APIs.
 
-#### "_Schema_"
+#### "*Schema*"
 
-Um "_schema_" é uma definição ou descrição de algo. Não o código que o implementa, mas apenas uma descrição abstrata.
+Um "*schema*" é uma definição ou descrição de algo. Não o código que o implementa, mas apenas uma descrição abstrata.
 
-#### API "_schema_"
+#### API "*schema*"
 
-Nesse caso, <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> é uma especificação que determina como definir um _schema_ da sua API.
+Nesse caso, <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> é uma especificação que determina como definir um *schema* da sua API.
 
-Esta definição de _schema_ inclui as rotas da sua API, os parâmetros possíveis que elas usam, etc.
+Esta definição de *schema* inclui as rotas da sua API, os parâmetros possíveis que elas usam, etc.
 
-#### "_Schema_" de dados
+#### "*Schema*" de dados
 
-O termo "_schema_" também pode se referir à forma de alguns dados, como um conteúdo JSON.
+O termo "*schema*" também pode se referir à forma de alguns dados, como um conteúdo JSON.
 
 Nesse caso, significaria os atributos JSON e os tipos de dados que eles possuem, etc.
 
-#### OpenAPI e JSON _Schema_
+#### OpenAPI e JSON *Schema*
 
-OpenAPI define um _schema_ de API para sua API. E esse _schema_ inclui definições (ou "_schemas_") dos dados enviados e recebidos por sua API usando **JSON _Schema_**, o padrão para _schemas_ de dados JSON.
+OpenAPI define um *schema* de API para sua API. E esse *schema* inclui definições (ou "*schemas*") dos dados enviados e recebidos por sua API usando **JSON *Schema***, o padrão para *schemas* de dados JSON.
 
 #### Verifique o `openapi.json`
 
-Se você está curioso(a) sobre a aparência do _schema_ bruto OpenAPI, o ReadyAPI gera automaticamente um JSON (_schema_) com as descrições de toda a sua API.
+Se você está curioso(a) sobre a aparência do *schema* bruto OpenAPI, o ReadyAPI gera automaticamente um JSON (*schema*) com as descrições de toda a sua API.
 
 Você pode ver isso diretamente em: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -123,7 +123,7 @@ Ele mostrará um JSON começando com algo como:
 
 #### Para que serve o OpenAPI
 
-O _schema_ OpenAPI é o que possibilita os dois sistemas de documentação interativos mostrados.
+O *schema* OpenAPI é o que possibilita os dois sistemas de documentação interativos mostrados.
 
 E existem dezenas de alternativas, todas baseadas em OpenAPI. Você pode facilmente adicionar qualquer uma dessas alternativas à sua aplicação criada com **ReadyAPI**.
 
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Passo 3: crie uma _rota_
+### Passo 3: crie uma *rota*
 
 #### Rota
 
@@ -219,17 +219,17 @@ Ao construir uma API, a "rota" é a principal forma de separar "preocupações" 
 
 Um dos:
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ...e os mais exóticos:
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 No protocolo HTTP, você pode se comunicar com cada rota usando um (ou mais) desses "métodos".
 
@@ -239,16 +239,16 @@ Ao construir APIs, você normalmente usa esses métodos HTTP para executar uma a
 
 Normalmente você usa:
 
-- `POST`: para criar dados.
-- `GET`: para ler dados.
-- `PUT`: para atualizar dados.
-- `DELETE`: para deletar dados.
+* `POST`: para criar dados.
+* `GET`: para ler dados.
+* `PUT`: para atualizar dados.
+* `DELETE`: para deletar dados.
 
 Portanto, no OpenAPI, cada um dos métodos HTTP é chamado de "operação".
 
 Vamos chamá-los de "**operações**" também.
 
-#### Defina um _decorador de rota_
+#### Defina um *decorador de rota*
 
 ```Python hl_lines="6"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -256,8 +256,8 @@ Vamos chamá-los de "**operações**" também.
 
 O `@app.get("/")` diz ao **ReadyAPI** que a função logo abaixo é responsável por tratar as requisições que vão para:
 
-- a rota `/`
-- usando o <abbr title="o método HTTP GET">operador <code>get</code></abbr>
+* a rota `/`
+* usando o  <abbr title="o método HTTP GET">operador <code>get</code></abbr>
 
 /// info | "`@decorador`"
 
@@ -275,16 +275,16 @@ Em nosso caso, este decorador informa ao **ReadyAPI** que a função abaixo corr
 
 Você também pode usar as outras operações:
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 E os mais exóticos:
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip | "Dica"
 
@@ -302,9 +302,9 @@ Por exemplo, ao usar GraphQL, você normalmente executa todas as ações usando 
 
 Esta é a nossa "**função de rota**":
 
-- **rota**: é `/`.
-- **operação**: é `get`.
-- **função**: é a função abaixo do "decorador" (abaixo do `@app.get("/")`).
+* **rota**: é `/`.
+* **operação**: é `get`.
+* **função**: é a função abaixo do "decorador" (abaixo do `@app.get("/")`).
 
 ```Python hl_lines="7"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -326,7 +326,7 @@ Você também pode defini-la como uma função normal em vez de `async def`:
 
 /// note | "Nota"
 
-Se você não sabe a diferença, verifique o [Async: _"Com pressa?"_](../async.md#com-pressa){.internal-link target=\_blank}.
+Se você não sabe a diferença, verifique o [Async: *"Com pressa?"*](../async.md#com-pressa){.internal-link target=_blank}.
 
 ///
 
@@ -344,8 +344,8 @@ Existem muitos outros objetos e modelos que serão convertidos automaticamente p
 
 ## Recapitulando
 
-- Importe `ReadyAPI`.
-- Crie uma instância do `app`.
-- Coloque o **decorador que define a operação** (como `@app.get("/")`).
-- Escreva uma **função para a operação da rota** (como `def root(): ...`) abaixo.
-- Execute o servidor de desenvolvimento (como `uvicorn main:app --reload`).
+* Importe `ReadyAPI`.
+* Crie uma instância do `app`.
+* Coloque o **decorador que define a operação** (como `@app.get("/")`).
+* Escreva uma **função para a operação da rota** (como `def root(): ...`) abaixo.
+* Execute o servidor de desenvolvimento (como `uvicorn main:app --reload`).

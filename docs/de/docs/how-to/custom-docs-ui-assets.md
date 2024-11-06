@@ -24,15 +24,15 @@ Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `ReadyAPI`-
 
 ### Die benutzerdefinierten Dokumentationen hinzufügen
 
-Jetzt können Sie die _Pfadoperationen_ für die benutzerdefinierten Dokumentationen erstellen.
+Jetzt können Sie die *Pfadoperationen* für die benutzerdefinierten Dokumentationen erstellen.
 
 Sie können die internen Funktionen von ReadyAPI wiederverwenden, um die HTML-Seiten für die Dokumentation zu erstellen und ihnen die erforderlichen Argumente zu übergeben:
 
-- `openapi_url`: die URL, unter welcher die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
-- `title`: der Titel Ihrer API.
-- `oauth2_redirect_url`: Sie können hier `app.swagger_ui_oauth2_redirect_url` verwenden, um die Standardeinstellung zu verwenden.
-- `swagger_js_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **JavaScript**-Datei abrufen kann. Dies ist die benutzerdefinierte CDN-URL.
-- `swagger_css_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **CSS**-Datei abrufen kann. Dies ist die benutzerdefinierte CDN-URL.
+* `openapi_url`: die URL, unter welcher die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
+* `title`: der Titel Ihrer API.
+* `oauth2_redirect_url`: Sie können hier `app.swagger_ui_oauth2_redirect_url` verwenden, um die Standardeinstellung zu verwenden.
+* `swagger_js_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **JavaScript**-Datei abrufen kann. Dies ist die benutzerdefinierte CDN-URL.
+* `swagger_css_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **CSS**-Datei abrufen kann. Dies ist die benutzerdefinierte CDN-URL.
 
 Und genau so für ReDoc ...
 
@@ -42,7 +42,7 @@ Und genau so für ReDoc ...
 
 /// tip | "Tipp"
 
-Die _Pfadoperation_ für `swagger_ui_redirect` ist ein Hilfsmittel bei der Verwendung von OAuth2.
+Die *Pfadoperation* für `swagger_ui_redirect` ist ein Hilfsmittel bei der Verwendung von OAuth2.
 
 Wenn Sie Ihre API mit einem OAuth2-Anbieter integrieren, können Sie sich authentifizieren und mit den erworbenen Anmeldeinformationen zur API-Dokumentation zurückkehren. Und mit ihr interagieren, die echte OAuth2-Authentifizierung verwendend.
 
@@ -50,9 +50,9 @@ Swagger UI erledigt das hinter den Kulissen für Sie, benötigt aber diesen „U
 
 ///
 
-### Eine _Pfadoperation_ erstellen, um es zu testen
+### Eine *Pfadoperation* erstellen, um es zu testen
 
-Um nun testen zu können, ob alles funktioniert, erstellen Sie eine _Pfadoperation_:
+Um nun testen zu können, ob alles funktioniert, erstellen Sie eine *Pfadoperation*:
 
 ```Python hl_lines="36-38"
 {!../../docs_src/custom_docs_ui/tutorial001.py!}
@@ -99,12 +99,12 @@ Sie können wahrscheinlich mit der rechten Maustaste auf jeden Link klicken und 
 
 **Swagger UI** verwendet folgende Dateien:
 
-- <a href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js" class="external-link" target="_blank">`swagger-ui-bundle.js`</a>
-- <a href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css" class="external-link" target="_blank">`swagger-ui.css`</a>
+* <a href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js" class="external-link" target="_blank">`swagger-ui-bundle.js`</a>
+* <a href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css" class="external-link" target="_blank">`swagger-ui.css`</a>
 
 Und **ReDoc** verwendet diese Datei:
 
-- <a href="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js" class="external-link" target="_blank">`redoc.standalone.js`</a>
+* <a href="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js" class="external-link" target="_blank">`redoc.standalone.js`</a>
 
 Danach könnte Ihre Dateistruktur wie folgt aussehen:
 
@@ -121,8 +121,8 @@ Danach könnte Ihre Dateistruktur wie folgt aussehen:
 
 ### Die statischen Dateien bereitstellen
 
-- Importieren Sie `StaticFiles`.
-- „Mounten“ Sie eine `StaticFiles()`-Instanz in einem bestimmten Pfad.
+* Importieren Sie `StaticFiles`.
+* „Mounten“ Sie eine `StaticFiles()`-Instanz in einem bestimmten Pfad.
 
 ```Python hl_lines="7  11"
 {!../../docs_src/custom_docs_ui/tutorial002.py!}
@@ -164,15 +164,15 @@ Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `ReadyAPI`-
 
 ### Die benutzerdefinierten Dokumentationen, mit statischen Dateien, hinzufügen
 
-Und genau wie bei einem benutzerdefinierten CDN können Sie jetzt die _Pfadoperationen_ für die benutzerdefinierten Dokumentationen erstellen.
+Und genau wie bei einem benutzerdefinierten CDN können Sie jetzt die *Pfadoperationen* für die benutzerdefinierten Dokumentationen erstellen.
 
 Auch hier können Sie die internen Funktionen von ReadyAPI wiederverwenden, um die HTML-Seiten für die Dokumentationen zu erstellen, und diesen die erforderlichen Argumente übergeben:
 
-- `openapi_url`: die URL, unter der die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
-- `title`: der Titel Ihrer API.
-- `oauth2_redirect_url`: Sie können hier `app.swagger_ui_oauth2_redirect_url` verwenden, um die Standardeinstellung zu verwenden.
-- `swagger_js_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **JavaScript**-Datei abrufen kann. **Das ist die, welche jetzt von Ihrer eigenen Anwendung bereitgestellt wird**.
-- `swagger_css_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **CSS**-Datei abrufen kann. **Das ist die, welche jetzt von Ihrer eigenen Anwendung bereitgestellt wird**.
+* `openapi_url`: die URL, unter der die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
+* `title`: der Titel Ihrer API.
+* `oauth2_redirect_url`: Sie können hier `app.swagger_ui_oauth2_redirect_url` verwenden, um die Standardeinstellung zu verwenden.
+* `swagger_js_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **JavaScript**-Datei abrufen kann. **Das ist die, welche jetzt von Ihrer eigenen Anwendung bereitgestellt wird**.
+* `swagger_css_url`: die URL, unter welcher der HTML-Code für Ihre Swagger-UI-Dokumentation die **CSS**-Datei abrufen kann. **Das ist die, welche jetzt von Ihrer eigenen Anwendung bereitgestellt wird**.
 
 Und genau so für ReDoc ...
 
@@ -182,7 +182,7 @@ Und genau so für ReDoc ...
 
 /// tip | "Tipp"
 
-Die _Pfadoperation_ für `swagger_ui_redirect` ist ein Hilfsmittel bei der Verwendung von OAuth2.
+Die *Pfadoperation* für `swagger_ui_redirect` ist ein Hilfsmittel bei der Verwendung von OAuth2.
 
 Wenn Sie Ihre API mit einem OAuth2-Anbieter integrieren, können Sie sich authentifizieren und mit den erworbenen Anmeldeinformationen zur API-Dokumentation zurückkehren. Und mit ihr interagieren, die echte OAuth2-Authentifizierung verwendend.
 
@@ -190,9 +190,9 @@ Swagger UI erledigt das hinter den Kulissen für Sie, benötigt aber diesen „U
 
 ///
 
-### Eine _Pfadoperation_ erstellen, um statische Dateien zu testen
+### Eine *Pfadoperation* erstellen, um statische Dateien zu testen
 
-Um nun testen zu können, ob alles funktioniert, erstellen Sie eine _Pfadoperation_:
+Um nun testen zu können, ob alles funktioniert, erstellen Sie eine *Pfadoperation*:
 
 ```Python hl_lines="39-41"
 {!../../docs_src/custom_docs_ui/tutorial002.py!}

@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 `uvicorn main:app` 명령은 다음을 의미합니다:
 
-- `main`: 파일 `main.py` (파이썬 "모듈").
-- `app`: `main.py` 내부의 `app = ReadyAPI()` 줄에서 생성한 오브젝트.
-- `--reload`: 코드 변경 시 자동으로 서버 재시작. 개발 시에만 사용.
+* `main`: 파일 `main.py` (파이썬 "모듈").
+* `app`: `main.py` 내부의 `app = ReadyAPI()` 줄에서 생성한 오브젝트.
+* `--reload`: 코드 변경 시 자동으로 서버 재시작. 개발 시에만 사용.
 
 ///
 
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### 3 단계: _경로 작동_ 생성
+### 3 단계: *경로 작동* 생성
 
 #### 경로
 
@@ -219,17 +219,17 @@ API를 설계할 때 "경로"는 "관심사"와 "리소스"를 분리하기 위�
 
 다음 중 하나이며:
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ...흔히 사용되지 않는 것들도 있습니다:
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 HTTP 프로토콜에서는 이러한 "메소드"를 하나(또는 이상) 사용하여 각 경로와 통신할 수 있습니다.
 
@@ -239,16 +239,16 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 일반적으로 다음과 같습니다:
 
-- `POST`: 데이터를 생성하기 위해.
-- `GET`: 데이터를 읽기 위해.
-- `PUT`: 데이터를 수정하기 위해.
-- `DELETE`: 데이터를 삭제하기 위해.
+* `POST`: 데이터를 생성하기 위해.
+* `GET`: 데이터를 읽기 위해.
+* `PUT`: 데이터를 수정하기 위해.
+* `DELETE`: 데이터를 삭제하기 위해.
 
 그래서 OpenAPI에서는 각 HTTP 메소드들을 "작동"이라 부릅니다.
 
 우리 역시 이제부터 메소드를 "**작동**"이라고 부를 것입니다.
 
-#### _경로 작동 데코레이터_ 정의
+#### *경로 작동 데코레이터* 정의
 
 ```Python hl_lines="6"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -256,8 +256,8 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 `@app.get("/")`은 **ReadyAPI**에게 바로 아래에 있는 함수가 다음으로 이동하는 요청을 처리한다는 것을 알려줍니다.
 
-- 경로 `/`
-- <abbr title="HTTP GET 메소드"><code>get</code> 작동</abbr> 사용
+* 경로 `/`
+* <abbr title="HTTP GET 메소드"><code>get</code> 작동</abbr> 사용
 
 /// info | "`@decorator` 정보"
 
@@ -275,16 +275,16 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 다른 작동도 사용할 수 있습니다:
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 흔히 사용되지 않는 것들도 있습니다:
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip | "팁"
 
@@ -302,9 +302,9 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 다음은 우리의 "**경로 작동 함수**"입니다:
 
-- **경로**: 는 `/`입니다.
-- **작동**: 은 `get`입니다.
-- **함수**: 는 "데코레이터" 아래에 있는 함수입니다 (`@app.get("/")` 아래).
+* **경로**: 는 `/`입니다.
+* **작동**: 은 `get`입니다.
+* **함수**: 는 "데코레이터" 아래에 있는 함수입니다 (`@app.get("/")` 아래).
 
 ```Python hl_lines="7"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -326,7 +326,7 @@ URL "`/`"에 대한 `GET` 작동을 사용하는 요청을 받을 때마다 **Re
 
 /// note | "참고"
 
-차이점을 모르겠다면 [Async: _"바쁘신 경우"_](../async.md#_1){.internal-link target=\_blank}을 확인하세요.
+차이점을 모르겠다면 [Async: *"바쁘신 경우"*](../async.md#_1){.internal-link target=_blank}을 확인하세요.
 
 ///
 
@@ -344,8 +344,8 @@ JSON으로 자동 변환되는 객체들과 모델들(ORM 등을 포함해서)�
 
 ## 요약
 
-- `ReadyAPI` 임포트.
-- `app` 인스턴스 생성.
-- (`@app.get("/")`처럼) **경로 작동 데코레이터** 작성.
-- (위에 있는 `def root(): ...`처럼) **경로 작동 함수** 작성.
-- (`uvicorn main:app --reload`처럼) 개발 서버 실행.
+* `ReadyAPI` 임포트.
+* `app` 인스턴스 생성.
+* (`@app.get("/")`처럼) **경로 작동 데코레이터** 작성.
+* (위에 있는 `def root(): ...`처럼) **경로 작동 함수** 작성.
+* (`uvicorn main:app --reload`처럼) 개발 서버 실행.

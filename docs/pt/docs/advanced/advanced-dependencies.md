@@ -48,7 +48,7 @@ Prefira utilizar a versão `Annotated` se possível.
 
 ////
 
-Neste caso, o `__call__` é o que o **ReadyAPI** utilizará para verificar parâmetros adicionais e sub dependências, e isso é o que será chamado para passar o valor ao parâmetro na sua _função de operação de rota_ posteriormente.
+Neste caso, o `__call__` é o que o **ReadyAPI** utilizará para verificar parâmetros adicionais e sub dependências, e isso é o que será chamado para passar o valor ao parâmetro na sua *função de operação de rota* posteriormente.
 
 ## Parametrizar a instância
 
@@ -132,7 +132,7 @@ E quando a dependência for resolvida, o **ReadyAPI** chamará este `checker` co
 checker(q="somequery")
 ```
 
-...e passar o que quer que isso retorne como valor da dependência em nossa _função de operação de rota_ como o parâmetro `fixed_content_included`:
+...e passar o que quer que isso retorne como valor da dependência em nossa *função de operação de rota* como o parâmetro `fixed_content_included`:
 
 //// tab | Python 3.9+
 

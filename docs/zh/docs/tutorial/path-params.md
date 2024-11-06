@@ -165,7 +165,7 @@ Python 3.4 及之后版本支持<a href="https://docs.python.org/3/library/enum.
 
 ### 查看文档
 
-API 文档会显示预定义*路径参数*的可用值：
+ API 文档会显示预定义*路径参数*的可用值：
 
 <img src="/img/tutorial/path-params/image03.png">
 

@@ -1,6 +1,6 @@
 # 开发 - 贡献
 
-首先，你可能想了解 [帮助 ReadyAPI 及获取帮助](help-readyapi.md){.internal-link target=\_blank}的基本方式。
+首先，你可能想了解 [帮助 ReadyAPI 及获取帮助](help-readyapi.md){.internal-link target=_blank}的基本方式。
 
 ## 开发
 
@@ -247,9 +247,10 @@ Completion will take effect once you restart the terminal.
 
 这有助于确保：
 
-- 文档始终是最新的。
-- 文档示例可以直接运行。
-- 绝大多数特性既在文档中得以阐述，又通过测试覆盖进行保障。
+* 文档始终是最新的。
+* 文档示例可以直接运行。
+* 绝大多数特性既在文档中得以阐述，又通过测试覆盖进行保障。
+
 
 ### 应用和文档同时运行
 
@@ -275,7 +276,7 @@ $ uvicorn tutorial001:app --reload
 
 #### 建议和指南
 
-- 在当前 <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">已有的 pull requests</a> 中查找你使用的语言，添加要求修改或同意合并的评审意见。
+* 在当前 <a href="https://github.com/readyapi/readyapi/pulls" class="external-link" target="_blank">已有的 pull requests</a> 中查找你使用的语言，添加要求修改或同意合并的评审意见。
 
 /// tip
 
@@ -285,22 +286,21 @@ $ uvicorn tutorial001:app --reload
 
 ///
 
-- 检查在 <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussion</a> 是否有关于你所用语言的协作翻译。 如果有，你可以订阅它，当有一条新的 PR 请求需要评审时，系统会自动将其添加到讨论中，你也会收到对应的推送。
+* 检查在 <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussion</a> 是否有关于你所用语言的协作翻译。 如果有，你可以订阅它，当有一条新的 PR 请求需要评审时，系统会自动将其添加到讨论中，你也会收到对应的推送。
 
-- 每翻译一个页面新增一个 pull request。这将使其他人更容易对其进行评审。
+* 每翻译一个页面新增一个 pull request。这将使其他人更容易对其进行评审。
 
 对于我（译注：作者使用西班牙语和英语）不懂的语言，我将在等待其他人评审翻译之后将其合并。
 
-- 你还可以查看是否有你所用语言的翻译，并对其进行评审，这将帮助我了解翻译是否正确以及能否将其合并。
+* 你还可以查看是否有你所用语言的翻译，并对其进行评审，这将帮助我了解翻译是否正确以及能否将其合并。
+    * 可以在 <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussions</a> 中查看。
+    * 也可以在现有 PR 中通过你使用的语言标签来筛选对应的 PR，举个例子，对于西班牙语，标签是 <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3A%22awaiting+review%22" class="external-link" target="_blank">`lang-es`</a>。
 
-  - 可以在 <a href="https://github.com/readyapi/readyapi/discussions/categories/translations" class="external-link" target="_blank">GitHub Discussions</a> 中查看。
-  - 也可以在现有 PR 中通过你使用的语言标签来筛选对应的 PR，举个例子，对于西班牙语，标签是 <a href="https://github.com/readyapi/readyapi/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+label%3Alang-es+label%3A%22awaiting+review%22" class="external-link" target="_blank">`lang-es`</a>。
+* 请使用相同的 Python 示例，且只需翻译文档中的文本，不用修改其它东西。
 
-- 请使用相同的 Python 示例，且只需翻译文档中的文本，不用修改其它东西。
+* 请使用相同的图片、文件名以及链接地址，不用修改其它东西。
 
-- 请使用相同的图片、文件名以及链接地址，不用修改其它东西。
-
-- 你可以从 <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">ISO 639-1 代码列表</a> 表中查找你想要翻译语言的两位字母代码。
+* 你可以从 <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="external-link" target="_blank">ISO 639-1 代码列表</a> 表中查找你想要翻译语言的两位字母代码。
 
 #### 已有的语言
 
@@ -351,15 +351,15 @@ $ mkdocs serve --dev-addr 8008
 
 如果你查看 ReadyAPI 的线上文档网站，会看到每种语言都有所有的文档页面，但是某些页面并未被翻译并且会有一处关于缺少翻译的提示。（但是当你像上面这样在本地运行文档时，你只会看到已经翻译的页面。）
 
-现在假设你要为 [Features](features.md){.internal-link target=\_blank} 章节添加翻译。
+现在假设你要为 [Features](features.md){.internal-link target=_blank} 章节添加翻译。
 
-- 复制下面的文件：
+* 复制下面的文件：
 
 ```
 docs/en/docs/features.md
 ```
 
-- 粘贴到你想要翻译语言目录的相同位置，比如：
+* 粘贴到你想要翻译语言目录的相同位置，比如：
 
 ```
 docs/es/docs/features.md
@@ -438,6 +438,8 @@ Successfully built docs for: es
 </div>
 
 这样会对每一种语言构建一个独立的文档站点，并最终把这些站点全部打包输出到 `./site/` 目录。
+
+
 
 然后你可以使用命令 `serve` 来运行生成的站点：
 

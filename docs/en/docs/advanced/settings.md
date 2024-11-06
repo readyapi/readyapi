@@ -8,7 +8,7 @@ For this reason it's common to provide them in environment variables that are re
 
 /// tip
 
-To understand environment variables you can read [Environment Variables](../environment-variables.md){.internal-link target=\_blank}.
+To understand environment variables you can read [Environment Variables](../environment-variables.md){.internal-link target=_blank}.
 
 ///
 
@@ -24,7 +24,7 @@ Fortunately, Pydantic provides a great utility to handle these settings coming f
 
 ### Install `pydantic-settings`
 
-First, make sure you create your [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install the `pydantic-settings` package:
+First, make sure you create your [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install the `pydantic-settings` package:
 
 <div class="termy">
 
@@ -128,7 +128,7 @@ And the `items_per_user` would keep its default value of `50`.
 
 ## Settings in another module
 
-You could put those settings in another module file as you saw in [Bigger Applications - Multiple Files](../tutorial/bigger-applications.md){.internal-link target=\_blank}.
+You could put those settings in another module file as you saw in [Bigger Applications - Multiple Files](../tutorial/bigger-applications.md){.internal-link target=_blank}.
 
 For example, you could have a file `config.py` with:
 
@@ -144,7 +144,7 @@ And then use it in a file `main.py`:
 
 /// tip
 
-You would also need a file `__init__.py` as you saw in [Bigger Applications - Multiple Files](../tutorial/bigger-applications.md){.internal-link target=\_blank}.
+You would also need a file `__init__.py` as you saw in [Bigger Applications - Multiple Files](../tutorial/bigger-applications.md){.internal-link target=_blank}.
 
 ///
 
@@ -206,7 +206,7 @@ For now you can assume `get_settings()` is a normal function.
 
 ///
 
-And then we can require it from the _path operation function_ as a dependency and use it anywhere we need it.
+And then we can require it from the *path operation function* as a dependency and use it anywhere we need it.
 
 //// tab | Python 3.9+
 
@@ -443,6 +443,6 @@ That way, it behaves almost as if it was just a global variable. But as it uses 
 
 You can use Pydantic Settings to handle the settings or configurations for your application, with all the power of Pydantic models.
 
-- By using a dependency you can simplify testing.
-- You can use `.env` files with it.
-- Using `@lru_cache` lets you avoid reading the dotenv file again and again for each request, while allowing you to override it during testing.
+* By using a dependency you can simplify testing.
+* You can use `.env` files with it.
+* Using `@lru_cache` lets you avoid reading the dotenv file again and again for each request, while allowing you to override it during testing.

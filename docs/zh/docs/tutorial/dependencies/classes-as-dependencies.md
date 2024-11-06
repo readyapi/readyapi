@@ -139,9 +139,9 @@ fluffy = Cat(name="Mr Fluffy")
 
 在两个例子下，都有：
 
-- 一个可选的 `q` 查询参数，是 `str` 类型。
-- 一个 `skip` 查询参数，是 `int` 类型，默认值为 `0`。
-- 一个 `limit` 查询参数，是 `int` 类型，默认值为 `100`。
+* 一个可选的 `q` 查询参数，是 `str` 类型。
+* 一个 `skip` 查询参数，是 `int` 类型，默认值为 `0`。
+* 一个 `limit` 查询参数，是 `int` 类型，默认值为 `100`。
 
 在两个例子下，数据都将被转换、验证、在 OpenAPI schema 上文档化，等等。
 
@@ -181,7 +181,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 ... = Depends(CommonQueryParams)
 ```
 
-...实际上是 **READYAPI** 用来知道依赖项是什么的。
+...实际上是 **Readyapi** 用来知道依赖项是什么的。
 
 ReadyAPI 将从依赖项中提取声明的参数，这才是 ReadyAPI 实际调用的。
 
@@ -231,7 +231,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-**ReadyAPI** 为这些情况提供了一个快捷方式，在这些情况下，依赖项 _明确地_ 是一个类，**ReadyAPI** 将 "调用" 它来创建类本身的一个实例。
+**ReadyAPI** 为这些情况提供了一个快捷方式，在这些情况下，依赖项 *明确地* 是一个类，**ReadyAPI** 将 "调用" 它来创建类本身的一个实例。
 
 对于这些特定的情况，您可以跟随以下操作：
 

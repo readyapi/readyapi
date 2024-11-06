@@ -8,7 +8,7 @@ There are utilities to configure it easily that you can use directly in your **R
 
 ## Install dependencies
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and install `jinja2`:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and install `jinja2`:
 
 <div class="termy">
 
@@ -22,10 +22,10 @@ $ pip install jinja2
 
 ## Using `Jinja2Templates`
 
-- Import `Jinja2Templates`.
-- Create a `templates` object that you can reuse later.
-- Declare a `Request` parameter in the _path operation_ that will return a template.
-- Use the `templates` you created to render and return a `TemplateResponse`, pass the name of the template, the request object, and a "context" dictionary with key-value pairs to be used inside of the Jinja2 template.
+* Import `Jinja2Templates`.
+* Create a `templates` object that you can reuse later.
+* Declare a `Request` parameter in the *path operation* that will return a template.
+* Use the `templates` you created to render and return a `TemplateResponse`, pass the name of the template, the request object, and a "context" dictionary with key-value pairs to be used inside of the Jinja2 template.
 
 ```Python hl_lines="4  11  15-18"
 {!../../docs_src/templates/tutorial001.py!}
@@ -87,7 +87,7 @@ Item ID: 42
 
 ### Template `url_for` Arguments
 
-You can also use `url_for()` inside of the template, it takes as arguments the same arguments that would be used by your _path operation function_.
+You can also use `url_for()` inside of the template, it takes as arguments the same arguments that would be used by your *path operation function*.
 
 So, the section with:
 
@@ -99,12 +99,12 @@ So, the section with:
 
 {% endraw %}
 
-...will generate a link to the same URL that would be handled by the _path operation function_ `read_item(id=id)`.
+...will generate a link to the same URL that would be handled by the *path operation function* `read_item(id=id)`.
 
 For example, with an ID of `42`, this would render:
 
 ```html
-<a href="/items/42"></a>
+<a href="/items/42">
 ```
 
 ## Templates and static files

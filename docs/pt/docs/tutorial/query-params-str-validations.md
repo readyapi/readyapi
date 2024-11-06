@@ -80,7 +80,7 @@ Então, podemos passar mais parâmetros para `Query`. Neste caso, o parâmetro `
 q: str = Query(default=None, max_length=50)
 ```
 
-Isso irá validar os dados, mostrar um erro claro quando os dados forem inválidos, e documentar o parâmetro na _operação de rota_ do esquema OpenAPI..
+Isso irá validar os dados, mostrar um erro claro quando os dados forem inválidos, e documentar o parâmetro na *operação de rota* do esquema OpenAPI..
 
 ## Adicionando mais validações
 
@@ -100,9 +100,9 @@ Você pode definir uma <abbr title="Uma expressão regular, regex ou regexp é u
 
 Essa expressão regular específica verifica se o valor recebido no parâmetro:
 
-- `^`: Inicia com os seguintes caracteres, ou seja, não contém caracteres anteriores.
-- `fixedquery`: contém o valor exato `fixedquery`.
-- `$`: termina aqui, não contém nenhum caractere após `fixedquery`.
+* `^`: Inicia com os seguintes caracteres, ou seja, não contém caracteres anteriores.
+* `fixedquery`: contém o valor exato `fixedquery`.
+* `$`: termina aqui, não contém nenhum caractere após `fixedquery`.
 
 Se você se sente perdido com todo esse assunto de **"expressão regular"**, não se preocupe. Esse é um assunto complicado para a maioria das pessoas. Você ainda pode fazer muitas coisas sem utilizar expressões regulares.
 
@@ -174,7 +174,7 @@ Então, com uma URL assim:
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-você receberá os múltiplos _parâmetros de consulta_ `q` com os valores (`foo` e `bar`) em uma lista (`list`) Python dentro da _função de operação de rota_, no _parâmetro da função_ `q`.
+você receberá os múltiplos *parâmetros de consulta* `q` com os valores (`foo` e `bar`) em uma lista (`list`) Python dentro da *função de operação de rota*, no *parâmetro da função* `q`.
 
 Assim, a resposta para essa URL seria:
 
@@ -308,16 +308,16 @@ Você pode adicionar validações e metadados adicionais aos seus parâmetros.
 
 Validações genéricas e metadados:
 
-- `alias`
-- `title`
-- `description`
-- `deprecated`
+* `alias`
+* `title`
+* `description`
+* `deprecated`
 
 Validações específicas para textos:
 
-- `min_length`
-- `max_length`
-- `regex`
+* `min_length`
+* `max_length`
+* `regex`
 
 Nesses exemplos você viu como declarar validações em valores do tipo `str`.
 

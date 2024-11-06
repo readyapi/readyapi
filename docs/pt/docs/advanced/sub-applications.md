@@ -8,7 +8,7 @@ Se você precisar ter duas aplicações ReadyAPI independentes, cada uma com seu
 
 ### Aplicação de nível superior
 
-Primeiro, crie a aplicação principal, de nível superior, **ReadyAPI**, e suas _operações de rota_:
+Primeiro, crie a aplicação principal, de nível superior, **ReadyAPI**, e suas *operações de rota*:
 
 ```Python hl_lines="3  6-8"
 {!../../docs_src/sub_applications/tutorial001.py!}
@@ -16,7 +16,7 @@ Primeiro, crie a aplicação principal, de nível superior, **ReadyAPI**, e suas
 
 ### Sub-aplicação
 
-Em seguida, crie sua sub-aplicação e suas _operações de rota_.
+Em seguida, crie sua sub-aplicação e suas *operações de rota*.
 
 Essa sub-aplicação é apenas outra aplicação ReadyAPI padrão, mas esta é a que será "montada":
 
@@ -70,4 +70,4 @@ Dessa forma, a sub-aplicação saberá usar esse prefixo de caminho para a inter
 
 E a sub-aplicação também poderia ter suas próprias sub-aplicações montadas e tudo funcionaria corretamente, porque o ReadyAPI lida com todos esses `root_path`s automaticamente.
 
-Você aprenderá mais sobre o `root_path` e como usá-lo explicitamente na seção sobre [Atrás de um Proxy](behind-a-proxy.md){.internal-link target=\_blank}.
+Você aprenderá mais sobre o `root_path` e como usá-lo explicitamente na seção sobre [Atrás de um Proxy](behind-a-proxy.md){.internal-link target=_blank}.

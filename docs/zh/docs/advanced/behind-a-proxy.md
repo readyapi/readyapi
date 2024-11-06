@@ -24,7 +24,7 @@
 
 因此， （运行在浏览器中的）前端会尝试访问 `/openapi.json`，但没有办法获取 OpenAPI 概图。
 
-这是因为应用使用了以 `/api/v1` 为路径前缀的代理，前端要从 `/api/v1/openapi.json` 中提取 OpenAPI 概图。
+这是因为应用使用了以 `/api/v1` 为路径前缀的代理，前端要从 `/api/v1/openapi.json`  中提取 OpenAPI 概图。
 
 ```mermaid
 graph LR
@@ -131,7 +131,7 @@ $ uvicorn main:app --root-path /api/v1
 
 注意，服务器（Uvicorn）只是把 `root_path` 传递给应用。
 
-在浏览器中输入 <a href="http://127.0.0.1:8000" class="external-link" target="_blank">http://127.0.0.1:8000/app  时能看到标准响应：</a>
+在浏览器中输入 <a href="http://127.0.0.1:8000" class="external-link" target="_blank">http://127.0.0.1:8000/app 时能看到标准响应：</a>
 
 ```JSON
 {
@@ -273,13 +273,13 @@ $ uvicorn main:app --root-path /api/v1
 
 访问应用的**官方**方式是通过含路径前缀的代理。因此，不出所料，如果没有在 URL 中添加路径前缀，直接访问通过 Uvicorn 运行的 API 文档，不能正常访问，因为需要通过代理才能访问。
 
-输入 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs  查看 API 文档：</a>
+输入 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs 查看 API 文档：</a>
 
 <img src="/img/tutorial/behind-a-proxy/image01.png">
 
 但输入**官方**链接 `/api/v1/docs`，并使用端口 `9999` 访问 API 文档，就能正常运行了！🎉
 
-输入 <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs  查看文档：</a>
+输入 <a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs 查看文档：</a>
 
 <img src="/img/tutorial/behind-a-proxy/image02.png">
 
@@ -338,7 +338,7 @@ $ uvicorn main:app --root-path /api/v1
 
 ///
 
-<a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs  的 API 文档所示如下：</a>
+<a href="http://127.0.0.1:9999/api/v1/docs" class="external-link" target="_blank">http://127.0.0.1:9999/api/v1/docs 的 API 文档所示如下：</a>
 
 <img src="/img/tutorial/behind-a-proxy/image03.png">
 
@@ -360,6 +360,6 @@ API 文档与所选的服务器进行交互。
 
 ## 挂载子应用
 
-如需挂载子应用（详见 [子应用 - 挂载](sub-applications.md){.internal-link target=\_blank}），也要通过 `root_path` 使用代理，这与正常应用一样，别无二致。
+如需挂载子应用（详见 [子应用 - 挂载](sub-applications.md){.internal-link target=_blank}），也要通过 `root_path` 使用代理，这与正常应用一样，别无二致。
 
 ReadyAPI 在内部使用 `root_path`，因此子应用也可以正常运行。✨

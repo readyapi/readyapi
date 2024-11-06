@@ -42,9 +42,9 @@ Cada "escopo" é apenas uma string (sem espaços).
 
 Eles são normalmente utilizados para declarar permissões de segurança específicas, como por exemplo:
 
-- `users:read` or `users:write` são exemplos comuns.
-- `instagram_basic` é utilizado pelo Facebook / Instagram.
-- `https://www.googleapis.com/auth/drive` é utilizado pelo Google.
+* `users:read` or `users:write` são exemplos comuns.
+* `instagram_basic` é utilizado pelo Facebook / Instagram.
+* `https://www.googleapis.com/auth/drive` é utilizado pelo Google.
 
 /// info | Informação
 
@@ -60,7 +60,7 @@ Para o OAuth2, eles são apenas strings.
 
 ## Visão global
 
-Primeiro, vamos olhar rapidamente as partes que mudam dos exemplos do **Tutorial - Guia de Usuário** para [OAuth2 com Senha (e hash), Bearer com tokens JWT](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}. Agora utilizando escopos OAuth2:
+Primeiro, vamos olhar rapidamente as partes que mudam dos exemplos do **Tutorial - Guia de Usuário** para [OAuth2 com Senha (e hash), Bearer com tokens JWT](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}. Agora utilizando escopos OAuth2:
 
 //// tab | Python 3.10+
 
@@ -212,7 +212,7 @@ Este é o mesmo mecanismo utilizado quando você adiciona permissões enquanto s
 
 ## Token JWT com escopos
 
-Agora, modifique o _caminho de rota_ para retornar os escopos solicitados.
+Agora, modifique o *caminho de rota* para retornar os escopos solicitados.
 
 Nós ainda estamos utilizando o mesmo `OAuth2PasswordRequestForm`. Ele inclui a propriedade `scopes` com uma `list` de `str`, com cada escopo que ele recebeu na requisição.
 
@@ -292,9 +292,9 @@ Prefira utilizar a versão `Annotated` se possível.
 
 ////
 
-## Declare escopos em _operações de rota_ e dependências
+## Declare escopos em *operações de rota* e dependências
 
-Agora nós declaramos que a _operação de rota_ para `/users/me/items/` exige o escopo `items`.
+Agora nós declaramos que a *operação de rota* para `/users/me/items/` exige o escopo `items`.
 
 Para isso, nós importamos e utilizamos `Security` de `readyapi`.
 
@@ -476,7 +476,7 @@ Prefira utilizar a versão `Annotated` se possível.
 
 O parâmetro `security_scopes` será do tipo `SecurityScopes`.
 
-Ele terá a propriedade `scopes` com uma lista contendo todos os escopos requeridos por ele e todas as dependências que utilizam ele como uma subdependência. Isso significa, todos os "dependentes"... pode soar meio confuso, e isso será explicado novamente mais adiante.
+Ele terá a propriedade `scopes` com uma lista contendo todos os escopos requeridos por ele e todas as dependências que utilizam ele como uma subdependência. Isso significa, todos  os "dependentes"... pode soar meio confuso, e isso será explicado novamente mais adiante.
 
 O objeto `security_scopes` (da classe `SecurityScopes`) também oferece um atributo `scope_str` com uma única string, contendo os escopos separados por espaços (nós vamos utilizar isso).
 
@@ -562,7 +562,7 @@ Ao validar os dados com o Pydantic nós podemos garantir que temos, por exemplo,
 
 No lugar de, por exemplo, um `dict`, ou alguma outra coisa, que poderia quebrar a aplicação em algum lugar mais tarde, tornando isso um risco de segurança.
 
-Nós também verificamos que nós temos um usuário com o "_username_", e caso contrário, nós levantamos a mesma exceção que criamos anteriormente.
+Nós também verificamos que nós temos um usuário com o "*username*", e caso contrário, nós levantamos a mesma exceção que criamos anteriormente.
 
 //// tab | Python 3.10+
 
@@ -632,7 +632,7 @@ Prefira utilizar a versão `Annotated` se possível.
 
 ## Verifique os `scopes`
 
-Nós verificamos agora que todos os escopos necessários, por essa dependência e todos os dependentes (incluindo as _operações de rota_) estão incluídas nos escopos fornecidos pelo token recebido, caso contrário, levantamos uma `HTTPException`.
+Nós verificamos agora que todos os escopos necessários, por essa dependência e todos os dependentes (incluindo as *operações de rota*) estão incluídas nos escopos fornecidos pelo token recebido, caso contrário, levantamos uma `HTTPException`.
 
 Para isso, nós utilizamos `security_scopes.scopes`, que contém uma `list` com todos esses escopos como uma `str`.
 
@@ -708,30 +708,30 @@ Vamos rever novamente essa árvore de dependência e os escopos.
 
 Como a dependência `get_current_active_user` possui uma subdependência em `get_current_user`, o escopo `"me"` declarado em `get_current_active_user` será incluído na lista de escopos necessários em `security_scopes.scopes` passado para `get_current_user`.
 
-A própria _operação de rota_ também declara o escopo, `"items"`, então ele também estará na lista de `security_scopes.scopes` passado para o `get_current_user`.
+A própria *operação de rota* também declara o escopo, `"items"`, então ele também estará na lista de `security_scopes.scopes` passado para o `get_current_user`.
 
 Aqui está como a hierarquia de dependências e escopos parecem:
 
-- A _operação de rota_ `read_own_items` possui:
-  - Escopos necessários `["items"]` com a dependência:
-  - `get_current_active_user`:
-    - A função de dependência `get_current_active_user` possui:
-      - Escopos necessários `["me"]` com a dependência:
-      - `get_current_user`:
-        - A função de dependência `get_current_user` possui:
-          - Nenhum escopo necessário.
-          - Uma dependência utilizando `oauth2_scheme`.
-          - Um parâmetro `security_scopes` do tipo `SecurityScopes`:
-            - Este parâmetro `security_scopes` possui uma propriedade `scopes` com uma `list` contendo todos estes escopos declarados acima, então:
-              - `security_scopes.scopes` terá `["me", "items"]` para a _operação de rota_ `read_own_items`.
-              - `security_scopes.scopes` terá `["me"]` para a _operação de rota_ `read_users_me`, porque ela declarou na dependência `get_current_active_user`.
-              - `security_scopes.scopes` terá `[]` (nada) para a _operação de rota_ `read_system_status`, porque ele não declarou nenhum `Security` com `scopes`, e sua dependência, `get_current_user`, não declara nenhum `scopes` também.
+* A *operação de rota* `read_own_items` possui:
+    * Escopos necessários `["items"]` com a dependência:
+    * `get_current_active_user`:
+        *  A função de dependência `get_current_active_user` possui:
+            * Escopos necessários `["me"]` com a dependência:
+            * `get_current_user`:
+                * A função de dependência `get_current_user` possui:
+                    * Nenhum escopo necessário.
+                    * Uma dependência utilizando `oauth2_scheme`.
+                    * Um parâmetro `security_scopes` do tipo `SecurityScopes`:
+                        * Este parâmetro `security_scopes` possui uma propriedade `scopes` com uma `list` contendo todos estes escopos declarados acima, então:
+                            * `security_scopes.scopes` terá `["me", "items"]` para a *operação de rota* `read_own_items`.
+                            * `security_scopes.scopes` terá `["me"]` para a *operação de rota* `read_users_me`, porque ela declarou na dependência `get_current_active_user`.
+                            * `security_scopes.scopes` terá `[]` (nada) para a *operação de rota* `read_system_status`, porque ele não declarou nenhum `Security` com `scopes`, e sua dependência, `get_current_user`, não declara nenhum `scopes` também.
 
 /// tip | Dica
 
-A coisa importante e "mágica" aqui é que `get_current_user` terá diferentes listas de `scopes` para validar para cada _operação de rota_.
+A coisa importante e "mágica" aqui é que `get_current_user` terá diferentes listas de `scopes` para validar para cada *operação de rota*.
 
-Tudo depende dos `scopes` declarados em cada _operação de rota_ e cada dependência da árvore de dependências para aquela _operação de rota_ específica.
+Tudo depende dos `scopes` declarados em cada *operação de rota* e cada dependência da árvore de dependências para aquela *operação de rota* específica.
 
 ///
 
@@ -739,11 +739,11 @@ Tudo depende dos `scopes` declarados em cada _operação de rota_ e cada depend�
 
 Você pode utilizar `SecurityScopes` em qualquer lugar, e em diversos lugares. Ele não precisa estar na dependência "raiz".
 
-Ele sempre terá os escopos de segurança declarados nas dependências atuais de `Security` e todos os dependentes para **aquela** _operação de rota_ **específica** e **aquela** árvore de dependência **específica**.
+Ele sempre terá os escopos de segurança declarados nas dependências atuais de `Security` e todos os dependentes para **aquela** *operação de rota* **específica** e **aquela** árvore de dependência **específica**.
 
-Porque o `SecurityScopes` terá todos os escopos declarados por dependentes, você pode utilizá-lo para verificar se o token possui os escopos necessários em uma função de dependência central, e depois declarar diferentes requisitos de escopo em diferentes _operações de rota_.
+Porque o `SecurityScopes` terá todos os escopos declarados por dependentes, você pode utilizá-lo para verificar se o token possui os escopos necessários em uma função de dependência central, e depois declarar diferentes requisitos de escopo em diferentes *operações de rota*.
 
-Todos eles serão validados independentemente para cada _operação de rota_.
+Todos eles serão validados independentemente para cada *operação de rota*.
 
 ## Verifique
 
@@ -755,13 +755,13 @@ Se você não selecionar nenhum escopo, você terá "autenticado", mas quando vo
 
 E se você selecionar o escopo `me`, mas não o escopo `items`, você poderá acessar `/users/me/`, mas não `/users/me/items/`.
 
-Isso é o que aconteceria se uma aplicação terceira que tentou acessar uma dessas _operações de rota_ com um token fornecido por um usuário, dependendo de quantas permissões o usuário forneceu para a aplicação.
+Isso é o que aconteceria se uma aplicação terceira que tentou acessar uma dessas *operações de rota* com um token fornecido por um usuário, dependendo de quantas permissões o usuário forneceu para a aplicação.
 
 ## Sobre integrações de terceiros
 
 Neste exemplos nós estamos utilizando o fluxo de senha do OAuth2.
 
-Isso é apropriado quando nós estamos autenticando em nossa própria aplicação, provavelmente com o nosso próprio "_frontend_".
+Isso é apropriado quando nós estamos autenticando em nossa própria aplicação, provavelmente com o nosso próprio "*frontend*".
 
 Porque nós podemos confiar nele para receber o `username` e o `password`, pois nós controlamos isso.
 
@@ -783,4 +783,4 @@ O **ReadyAPI** inclui utilitários para todos esses fluxos de autenticação OAu
 
 ## `Security` em docoradores de `dependências`
 
-Da mesma forma que você pode definir uma `list` de `Depends` no parâmetro de `dependencias` do decorador (como explicado em [Dependências em decoradores de operações de rota](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank}), você também pode utilizar `Security` com escopos lá.
+Da mesma forma que você pode definir uma `list` de `Depends` no parâmetro de `dependencias` do decorador (como explicado em [Dependências em decoradores de operações de rota](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}), você também pode utilizar `Security` com escopos lá.

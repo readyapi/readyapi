@@ -4,9 +4,9 @@
 
 如果需要配置它们，可以在创建 `ReadyAPI()` 应用对象时或调用 `get_swagger_ui_html()` 函数时传递 `swagger_ui_parameters` 参数。
 
-`swagger_ui_parameters` 接受一个直接传递给 Swagger UI 的字典，包含配置参数键值对。
+`swagger_ui_parameters` 接受一个直接传递给 Swagger UI的字典，包含配置参数键值对。
 
-ReadyAPI 会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因为这是 Swagger UI 需要的。
+ReadyAPI会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因为这是 Swagger UI 需要的。
 
 ## 不使用语法高亮
 
@@ -75,4 +75,4 @@ presets: [
 
 这些是 **JavaScript** 对象，而不是字符串，所以你不能直接从 Python 代码中传递它们。
 
-如果你需要像这样使用 JavaScript-only 配置，你可以使用上述方法之一。覆盖所有 Swagger UI _path operation_ 并手动编写任何你需要的 JavaScript。
+如果你需要像这样使用 JavaScript-only 配置，你可以使用上述方法之一。覆盖所有 Swagger UI *path operation* 并手动编写任何你需要的 JavaScript。

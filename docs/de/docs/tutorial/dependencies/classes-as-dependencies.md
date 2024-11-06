@@ -58,7 +58,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-Aber dann haben wir ein `dict` im Parameter `commons` der _Pfadoperation-Funktion_.
+Aber dann haben wir ein `dict` im Parameter `commons` der *Pfadoperation-Funktion*.
 
 Und wir wissen, dass Editoren nicht viel Unterstützung (wie etwa Code-Vervollständigung) für `dict`s bieten können, weil sie ihre Schlüssel- und Werttypen nicht kennen.
 
@@ -113,9 +113,9 @@ Darum können Sie in **ReadyAPI** auch eine Python-Klasse als Abhängigkeit verw
 
 Was ReadyAPI tatsächlich prüft, ist, ob es sich um ein „Callable“ (Funktion, Klasse oder irgendetwas anderes) handelt und ob die Parameter definiert sind.
 
-Wenn Sie **ReadyAPI** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer _Pfadoperation-Funktion_. Einschließlich Unterabhängigkeiten.
+Wenn Sie **ReadyAPI** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer *Pfadoperation-Funktion*. Einschließlich Unterabhängigkeiten.
 
-Das gilt auch für Callables ohne Parameter. So wie es auch für _Pfadoperation-Funktionen_ ohne Parameter gilt.
+Das gilt auch für Callables ohne Parameter. So wie es auch für *Pfadoperation-Funktionen* ohne Parameter gilt.
 
 Dann können wir das „Dependable“ `common_parameters` der Abhängigkeit von oben in die Klasse `CommonQueryParams` ändern:
 
@@ -283,9 +283,9 @@ Diese Parameter werden von **ReadyAPI** verwendet, um die Abhängigkeit „aufzu
 
 In beiden Fällen wird sie haben:
 
-- Einen optionalen `q`-Query-Parameter, der ein `str` ist.
-- Einen `skip`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `0`.
-- Einen `limit`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `100`.
+* Einen optionalen `q`-Query-Parameter, der ein `str` ist.
+* Einen `skip`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `0`.
+* Einen `limit`-Query-Parameter, der ein `int` ist, mit einem Defaultwert `100`.
 
 In beiden Fällen werden die Daten konvertiert, validiert, im OpenAPI-Schema dokumentiert, usw.
 
@@ -519,7 +519,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-**ReadyAPI** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit _speziell_ eine Klasse ist, welche **ReadyAPI** aufruft, um eine Instanz der Klasse selbst zu erstellen.
+**ReadyAPI** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit *speziell* eine Klasse ist, welche **ReadyAPI** aufruft, um eine Instanz der Klasse selbst zu erstellen.
 
 In diesem speziellen Fall können Sie Folgendes tun:
 
@@ -571,7 +571,7 @@ commons: CommonQueryParams = Depends()
 
 ////
 
-Sie deklarieren die Abhängigkeit als Typ des Parameters und verwenden `Depends()` ohne Parameter, anstatt die vollständige Klasse _erneut_ in `Depends(CommonQueryParams)` schreiben zu müssen.
+Sie deklarieren die Abhängigkeit als Typ des Parameters und verwenden `Depends()` ohne Parameter, anstatt die vollständige Klasse *erneut* in `Depends(CommonQueryParams)` schreiben zu müssen.
 
 Dasselbe Beispiel würde dann so aussehen:
 
@@ -631,7 +631,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 /// tip | "Tipp"
 
-Wenn Sie das eher verwirrt, als Ihnen zu helfen, ignorieren Sie es, Sie _brauchen_ es nicht.
+Wenn Sie das eher verwirrt, als Ihnen zu helfen, ignorieren Sie es, Sie *brauchen* es nicht.
 
 Es ist nur eine Abkürzung. Es geht **ReadyAPI** darum, Ihnen dabei zu helfen, Codeverdoppelung zu minimieren.
 

@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...🔢 🔢:
 
-- `skip`: ⏮️ 💲 `0`
-- `limit`: ⏮️ 💲 `10`
+* `skip`: ⏮️ 💲 `0`
+* `limit`: ⏮️ 💲 `10`
 
 👫 🍕 📛, 👫 "🛎" 🎻.
 
@@ -25,10 +25,10 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 🌐 🎏 🛠️ 👈 ⚖ ➡ 🔢 ✔ 🔢 🔢:
 
-- 👨‍🎨 🐕‍🦺 (🎲)
-- 💽 <abbr title="converting the string that comes from an HTTP request into Python data">"✍"</abbr>
-- 💽 🔬
-- 🏧 🧾
+* 👨‍🎨 🐕‍🦺 (🎲)
+* 💽 <abbr title="converting the string that comes from an HTTP request into Python data">"✍"</abbr>
+* 💽 🔬
+* 🏧 🧾
 
 ## 🔢
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 🔢 💲 👆 🔢 🔜:
 
-- `skip=20`: ↩️ 👆 ⚒ ⚫️ 📛
-- `limit=10`: ↩️ 👈 🔢 💲
+* `skip=20`: ↩️ 👆 ⚒ ⚫️ 📛
+* `limit=10`: ↩️ 👈 🔢 💲
 
 ## 📦 🔢
 
@@ -138,6 +138,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 ```
 
 ⚖️ 🙆 🎏 💼 📈 (🔠, 🥇 🔤 🔠, ♒️), 👆 🔢 🔜 👀 🔢 `short` ⏮️ `bool` 💲 `True`. ⏪ `False`.
+
 
 ## 💗 ➡ &amp; 🔢 🔢
 
@@ -235,12 +236,12 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 
 👉 💼, 📤 3️⃣ 🔢 🔢:
 
-- `needy`, ✔ `str`.
-- `skip`, `int` ⏮️ 🔢 💲 `0`.
-- `limit`, 📦 `int`.
+* `needy`, ✔ `str`.
+* `skip`, `int` ⏮️ 🔢 💲 `0`.
+* `limit`, 📦 `int`.
 
 /// tip
 
-👆 💪 ⚙️ `Enum`Ⓜ 🎏 🌌 ⏮️ [➡ 🔢](path-params.md#_7){.internal-link target=\_blank}.
+👆 💪 ⚙️ `Enum`Ⓜ 🎏 🌌 ⏮️ [➡ 🔢](path-params.md#_7){.internal-link target=_blank}.
 
 ///

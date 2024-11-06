@@ -14,7 +14,7 @@ Aber keine Sorge, Sie können sie Ihren Endbenutzern im Frontend so anzeigen, wi
 
 Und Ihre Datenbankmodelle können beliebige andere Namen verwenden.
 
-Aber für die Login-_Pfadoperation_ müssen wir diese Namen verwenden, um mit der Spezifikation kompatibel zu sein (und beispielsweise das integrierte API-Dokumentationssystem verwenden zu können).
+Aber für die Login-*Pfadoperation* müssen wir diese Namen verwenden, um mit der Spezifikation kompatibel zu sein (und beispielsweise das integrierte API-Dokumentationssystem verwenden zu können).
 
 Die Spezifikation besagt auch, dass `username` und `password` als Formulardaten gesendet werden müssen (hier also kein JSON).
 
@@ -28,9 +28,9 @@ Jeder „Scope“ ist nur ein String (ohne Leerzeichen).
 
 Diese werden normalerweise verwendet, um bestimmte Sicherheitsberechtigungen zu deklarieren, zum Beispiel:
 
-- `users:read` oder `users:write` sind gängige Beispiele.
-- `instagram_basic` wird von Facebook / Instagram verwendet.
-- `https://www.googleapis.com/auth/drive` wird von Google verwendet.
+* `users:read` oder `users:write` sind gängige Beispiele.
+* `instagram_basic` wird von Facebook / Instagram verwendet.
+* `https://www.googleapis.com/auth/drive` wird von Google verwendet.
 
 /// info
 
@@ -50,7 +50,7 @@ Lassen Sie uns nun die von **ReadyAPI** bereitgestellten Werkzeuge verwenden, um
 
 ### `OAuth2PasswordRequestForm`
 
-Importieren Sie zunächst `OAuth2PasswordRequestForm` und verwenden Sie es als Abhängigkeit mit `Depends` in der _Pfadoperation_ für `/token`:
+Importieren Sie zunächst `OAuth2PasswordRequestForm` und verwenden Sie es als Abhängigkeit mit `Depends` in der *Pfadoperation* für `/token`:
 
 //// tab | Python 3.10+
 
@@ -106,21 +106,21 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 `OAuth2PasswordRequestForm` ist eine Klassenabhängigkeit, die einen Formularbody deklariert mit:
 
-- Dem `username`.
-- Dem `password`.
-- Einem optionalen `scope`-Feld als langem String, bestehend aus durch Leerzeichen getrennten Strings.
-- Einem optionalen `grant_type` („Art der Anmeldung“).
+* Dem `username`.
+* Dem `password`.
+* Einem optionalen `scope`-Feld als langem String, bestehend aus durch Leerzeichen getrennten Strings.
+* Einem optionalen `grant_type` („Art der Anmeldung“).
 
 /// tip | "Tipp"
 
-Die OAuth2-Spezifikation _erfordert_ tatsächlich ein Feld `grant_type` mit dem festen Wert `password`, aber `OAuth2PasswordRequestForm` erzwingt dies nicht.
+Die OAuth2-Spezifikation *erfordert* tatsächlich ein Feld `grant_type` mit dem festen Wert `password`, aber `OAuth2PasswordRequestForm` erzwingt dies nicht.
 
 Wenn Sie es erzwingen müssen, verwenden Sie `OAuth2PasswordRequestFormStrict` anstelle von `OAuth2PasswordRequestForm`.
 
 ///
 
-- Eine optionale `client_id` (benötigen wir für unser Beispiel nicht).
-- Ein optionales `client_secret` (benötigen wir für unser Beispiel nicht).
+* Eine optionale `client_id` (benötigen wir für unser Beispiel nicht).
+* Ein optionales `client_secret` (benötigen wir für unser Beispiel nicht).
 
 /// info
 
@@ -282,7 +282,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 `UserInDB(**user_dict)` bedeutet:
 
-_Übergib die Schlüssel und Werte des `user_dict` direkt als Schlüssel-Wert-Argumente, äquivalent zu:_
+*Übergib die Schlüssel und Werte des `user_dict` direkt als Schlüssel-Wert-Argumente, äquivalent zu:*
 
 ```Python
 UserInDB(
@@ -296,7 +296,7 @@ UserInDB(
 
 /// info
 
-Eine ausführlichere Erklärung von `**user_dict` finden Sie in [der Dokumentation für **Extra Modelle**](../extra-models.md#uber-user_indict){.internal-link target=\_blank}.
+Eine ausführlichere Erklärung von `**user_dict` finden Sie in [der Dokumentation für **Extra Modelle**](../extra-models.md#uber-user_indict){.internal-link target=_blank}.
 
 ///
 
@@ -386,7 +386,7 @@ Den Rest erledigt **ReadyAPI** für Sie.
 
 Jetzt werden wir unsere Abhängigkeiten aktualisieren.
 
-Wir möchten den `current_user` _nur_ erhalten, wenn dieser Benutzer aktiv ist.
+Wir möchten den `current_user` *nur* erhalten, wenn dieser Benutzer aktiv ist.
 
 Daher erstellen wir eine zusätzliche Abhängigkeit `get_current_active_user`, die wiederum `get_current_user` als Abhängigkeit verwendet.
 

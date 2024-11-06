@@ -14,11 +14,11 @@ You could use any other SQL or NoSQL database library you want (in some cases ca
 
 As SQLDev is based on SQLAlchemy, you can easily use **any database supported** by SQLAlchemy (which makes them also supported by SQLDev), like:
 
-- PostgreSQL
-- MySQL
-- SQLite
-- Oracle
-- Microsoft SQL Server, etc.
+* PostgreSQL
+* MySQL
+* SQLite
+* Oracle
+* Microsoft SQL Server, etc.
 
 In this example, we'll use **SQLite**, because it uses a single file and Python has integrated support. So, you can copy this example and run it as is.
 
@@ -34,7 +34,7 @@ This is a very simple and short tutorial, if you want to learn about databases i
 
 ## Install `SQLDev`
 
-First, make sure you create your [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install `sqldev`:
+First, make sure you create your [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install `sqldev`:
 
 <div class="termy">
 
@@ -55,21 +55,21 @@ Later we'll improve it increasing security and versatility with **multiple model
 
 Import `SQLDev` and create a database model:
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] *}
 
-The `Hero` class is very similar to a Pydantic model (in fact, underneath, it actually _is a Pydantic model_).
+The `Hero` class is very similar to a Pydantic model (in fact, underneath, it actually *is a Pydantic model*).
 
 There are a few differences:
 
-- `table=True` tells SQLDev that this is a _table model_, it should represent a **table** in the SQL database, it's not just a _data model_ (as would be any other regular Pydantic class).
+* `table=True` tells SQLDev that this is a *table model*, it should represent a **table** in the SQL database, it's not just a *data model* (as would be any other regular Pydantic class).
 
-- `Field(primary_key=True)` tells SQLDev that the `id` is the **primary key** in the SQL database (you can learn more about SQL primary keys in the SQLDev docs).
+* `Field(primary_key=True)` tells SQLDev that the `id` is the **primary key** in the SQL database (you can learn more about SQL primary keys in the SQLDev docs).
 
-  By having the type as `int | None`, SQLDev will know that this column should be an `INTEGER` in the SQL database and that it should be `NULLABLE`.
+    By having the type as `int | None`, SQLDev will know that this column should be an `INTEGER` in the SQL database and that it should be `NULLABLE`.
 
-- `Field(index=True)` tells SQLDev that it should create a **SQL index** for this column, that would allow faster lookups in the database when reading data filtered by this column.
+* `Field(index=True)` tells SQLDev that it should create a **SQL index** for this column, that would allow faster lookups in the database when reading data filtered by this column.
 
-  SQLDev will know that something declared as `str` will be a SQL column of type `TEXT` (or `VARCHAR`, depending on the database).
+    SQLDev will know that something declared as `str` will be a SQL column of type `TEXT` (or `VARCHAR`, depending on the database).
 
 ### Create an Engine
 
@@ -77,17 +77,17 @@ A SQLDev `engine` (underneath it's actually a SQLAlchemy `engine`) is what **hol
 
 You would have **one single `engine` object** for all your code to connect to the same database.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
 Using `check_same_thread=False` allows ReadyAPI to use the same SQLite database in different threads. This is necessary as **one single request** could use **more than one thread** (for example in dependencies).
 
-Don't worry, with the way the code is structured, we'll make sure we use **a single SQLDev _session_ per request** later, this is actually what the `check_same_thread` is trying to achieve.
+Don't worry, with the way the code is structured, we'll make sure we use **a single SQLDev *session* per request** later, this is actually what the `check_same_thread` is trying to achieve.
 
 ### Create the Tables
 
-We then add a function that uses `SQLDev.metadata.create_all(engine)` to **create the tables** for all the _table models_.
+We then add a function that uses `SQLDev.metadata.create_all(engine)` to **create the tables** for all the *table models*.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] *}
 
 ### Create a Session Dependency
 
@@ -97,13 +97,13 @@ We will create a ReadyAPI **dependency** with `yield` that will provide a new `S
 
 Then we create an `Annotated` dependency `SessionDep` to simplify the rest of the code that will use this dependency.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[25:30] hl[25:27,30] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[25:30]  hl[25:27,30] *}
 
 ### Create Database Tables on Startup
 
 We will create the database tables when the application starts.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] *}
 
 Here we create the tables on an application startup event.
 
@@ -123,7 +123,7 @@ For example, if you declare a parameter of type `Hero`, it will be read from the
 
 The same way, you can declare it as the function's **return type**, and then the shape of the data will show up in the automatic API docs UI.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] *}
 
 </details>
 
@@ -133,19 +133,19 @@ Here we use the `SessionDep` dependency (a `Session`) to add the new `Hero` to t
 
 We can **read** `Hero`s from the database using a `select()`. We can include a `limit` and `offset` to paginate the results.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] *}
 
 ### Read One Hero
 
 We can **read** a single `Hero`.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] *}
 
 ### Delete a Hero
 
 We can also **delete** a `Hero`.
 
-{_ ../../docs_src/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] _}
+{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] *}
 
 ### Run the App
 
@@ -191,28 +191,28 @@ With SQLDev, we can use **inheritance** to **avoid duplicating** all the fields 
 
 Let's start with a `HeroBase` model that has all the **fields that are shared** by all the models:
 
-- `name`
-- `age`
+* `name`
+* `age`
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] *}
 
-#### `Hero` - the _table model_
+#### `Hero` - the *table model*
 
-Then let's create `Hero`, the actual _table model_, with the **extra fields** that are not always in the other models:
+Then let's create `Hero`, the actual *table model*, with the **extra fields** that are not always in the other models:
 
-- `id`
-- `secret_name`
+* `id`
+* `secret_name`
 
 Because `Hero` inherits form `HeroBase`, it **also** has the **fields** declared in `HeroBase`, so all the fields for `Hero` are:
 
-- `id`
-- `name`
-- `age`
-- `secret_name`
+* `id`
+* `name`
+* `age`
+* `secret_name`
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] *}
 
-#### `HeroPublic` - the public _data model_
+#### `HeroPublic` - the public *data model*
 
 Next, we create a `HeroPublic` model, this is the one that will be **returned** to the clients of the API.
 
@@ -232,14 +232,14 @@ Also, **automatically generated clients** will have simpler interfaces, so that 
 
 All the fields in `HeroPublic` are the same as in `HeroBase`, with `id` declared as `int` (not `None`):
 
-- `id`
-- `name`
-- `age`
-- `secret_name`
+* `id`
+* `name`
+* `age`
+* `secret_name`
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] *}
 
-#### `HeroCreate` - the _data model_ to create a hero
+#### `HeroCreate` - the *data model* to create a hero
 
 Now we create a `HeroCreate` model, this is the one that will **validate** the data from the clients.
 
@@ -257,17 +257,17 @@ You would also **hash** the values of the passwords before storing them, **never
 
 The fields of `HeroCreate` are:
 
-- `name`
-- `age`
-- `secret_name`
+* `name`
+* `age`
+* `secret_name`
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] *}
 
-#### `HeroUpdate` - the _data model_ to update a hero
+#### `HeroUpdate` - the *data model* to update a hero
 
 We didn't have a way to **update a hero** in the previous version of the app, but now with **multiple models**, we can do it. 🎉
 
-The `HeroUpdate` _data model_ is somewhat special, it has **all the same fields** that would be needed to create a new hero, but all the fields are **optional** (they all have a default value). This way, when you update a hero, you can send just the fields that you want to update.
+The `HeroUpdate` *data model* is somewhat special, it has **all the same fields** that would be needed to create a new hero, but all the fields are **optional** (they all have a default value). This way, when you update a hero, you can send just the fields that you want to update.
 
 Because all the **fields actually change** (the type now includes `None` and they now have a default value of `None`), we need to **re-declare** them.
 
@@ -275,27 +275,27 @@ We don't really need to inherit from `HeroBase` because we are re-declaring all 
 
 The fields of `HeroUpdate` are:
 
-- `name`
-- `age`
-- `secret_name`
+* `name`
+* `age`
+* `secret_name`
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] *}
 
 ### Create with `HeroCreate` and return a `HeroPublic`
 
 Now that we have **multiple models**, we can update the parts of the app that use them.
 
-We receive in the request a `HeroCreate` _data model_, and from it, we create a `Hero` _table model_.
+We receive in the request a `HeroCreate` *data model*, and from it, we create a `Hero` *table model*.
 
-This new _table model_ `Hero` will have the fields sent by the client, and will also have an `id` generated by the database.
+This new *table model* `Hero` will have the fields sent by the client, and will also have an `id` generated by the database.
 
-Then we return the same _table model_ `Hero` as is from the function. But as we declare the `response_model` with the `HeroPublic` _data model_, **ReadyAPI** will use `HeroPublic` to validate and serialize the data.
+Then we return the same *table model* `Hero` as is from the function. But as we declare the `response_model` with the `HeroPublic` *data model*, **ReadyAPI** will use `HeroPublic` to validate and serialize the data.
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
 /// tip
 
-Now we use `response_model=HeroPublic` instead of the **return type annotation** `-> HeroPublic` because the value that we are returning is actually _not_ a `HeroPublic`.
+Now we use `response_model=HeroPublic` instead of the **return type annotation** `-> HeroPublic` because the value that we are returning is actually *not* a `HeroPublic`.
 
 If we had declared `-> HeroPublic`, your editor and linter would complain (rightfully so) that you are returning a `Hero` instead of a `HeroPublic`.
 
@@ -307,13 +307,13 @@ By declaring it in `response_model` we are telling **ReadyAPI** to do its thing,
 
 We can do the same as before to **read** `Hero`s, again, we use `response_model=list[HeroPublic]` to ensure that the data is validated and serialized correctly.
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] *}
 
 ### Read One Hero with `HeroPublic`
 
 We can **read** a single hero:
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] *}
 
 ### Update a Hero with `HeroUpdate`
 
@@ -323,7 +323,7 @@ And in the code, we get a `dict` with all the data sent by the client, **only th
 
 Then we use `hero_db.sqldev_update(hero_data)` to update the `hero_db` with the data from `hero_data`.
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] *}
 
 ### Delete a Hero Again
 
@@ -331,7 +331,7 @@ Then we use `hero_db.sqldev_update(hero_data)` to update the `hero_db` with the 
 
 We won't satisfy the desire to refactor everything in this one. 😅
 
-{_ ../../docs_src/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] _}
+{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] *}
 
 ### Run the App Again
 
@@ -355,6 +355,6 @@ If you go to the `/docs` API UI, you will see that it is now updated, and it won
 
 ## Recap
 
-You can use <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">**SQLDev**</a> to interact with a SQL database and simplify the code with _data models_ and _table models_.
+You can use <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">**SQLDev**</a> to interact with a SQL database and simplify the code with *data models*  and *table models*.
 
 You can learn a lot more at the **SQLDev** docs, there's a longer mini <a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">tutorial on using SQLDev with **ReadyAPI**</a>. 🚀

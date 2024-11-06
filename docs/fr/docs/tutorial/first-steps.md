@@ -1,6 +1,6 @@
 # Démarrage
 
-Le fichier **ReadyAPI** le plus simple possible pourrait ressembler à cela :
+Le fichier **ReadyAPI** le plus simple possible pourrait ressembler à cela  :
 
 ```Python
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 La commande `uvicorn main:app` fait référence à :
 
-- `main` : le fichier `main.py` (le module Python).
-- `app` : l'objet créé dans `main.py` via la ligne `app = ReadyAPI()`.
-- `--reload` : l'option disant à uvicorn de redémarrer le serveur à chaque changement du code. À ne pas utiliser en production !
+* `main` : le fichier `main.py` (le module Python).
+* `app` : l'objet créé dans `main.py` via la ligne `app = ReadyAPI()`.
+* `--reload` : l'option disant à uvicorn de redémarrer le serveur à chaque changement du code. À ne pas utiliser en production !
 
 ///
 
@@ -99,6 +99,7 @@ Si vous êtes curieux d'à quoi ressemble le schéma brut **OpenAPI**, **ReadyAP
 Vous pouvez le voir directement à cette adresse : <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
 Le schéma devrait ressembler à ceci :
+
 
 ```JSON
 {
@@ -187,7 +188,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Étape 3: créer une _opération de chemin_
+### Étape 3: créer une *opération de chemin*
 
 #### Chemin
 
@@ -217,17 +218,17 @@ Un chemin, ou "path" est aussi souvent appelé route ou "endpoint".
 
 Une de :
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ...ou une des plus exotiques :
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 Dans le protocol HTTP, vous pouvez communiquer avec chaque chemin en utilisant une (ou plus) de ces "méthodes".
 
@@ -237,16 +238,17 @@ En construisant des APIs, vous utilisez généralement ces méthodes HTTP spéci
 
 Généralement vous utilisez :
 
-- `POST` : pour créer de la donnée.
-- `GET` : pour lire de la donnée.
-- `PUT` : pour mettre à jour de la donnée.
-- `DELETE` : pour supprimer de la donnée.
+* `POST` : pour créer de la donnée.
+* `GET` : pour lire de la donnée.
+* `PUT` : pour mettre à jour de la donnée.
+* `DELETE` : pour supprimer de la donnée.
 
 Donc, dans **OpenAPI**, chaque méthode HTTP est appelée une "opération".
 
 Nous allons donc aussi appeler ces dernières des "**opérations**".
 
-#### Définir un _décorateur d'opération de chemin_
+
+#### Définir un *décorateur d'opération de chemin*
 
 ```Python hl_lines="6"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -254,8 +256,8 @@ Nous allons donc aussi appeler ces dernières des "**opérations**".
 
 Le `@app.get("/")` dit à **ReadyAPI** que la fonction en dessous est chargée de gérer les requêtes qui vont sur :
 
-- le chemin `/`
-- en utilisant une <abbr title="une méthode GET HTTP">opération <code>get</code></abbr>
+* le chemin `/`
+* en utilisant une <abbr title="une méthode GET HTTP">opération <code>get</code></abbr>
 
 /// info | "`@décorateur` Info"
 
@@ -273,16 +275,16 @@ C'est le "**décorateur d'opération de chemin**".
 
 Vous pouvez aussi utiliser les autres opérations :
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 Tout comme celles les plus exotiques :
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip | "Astuce"
 
@@ -300,9 +302,9 @@ Par exemple, quand l'on utilise **GraphQL**, toutes les actions sont effectuées
 
 Voici notre "**fonction de chemin**" (ou fonction d'opération de chemin) :
 
-- **chemin** : `/`.
-- **opération** : `get`.
-- **fonction** : la fonction sous le "décorateur" (sous `@app.get("/")`).
+* **chemin** : `/`.
+* **opération** : `get`.
+* **fonction** : la fonction sous le "décorateur" (sous `@app.get("/")`).
 
 ```Python hl_lines="7"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -324,7 +326,7 @@ Vous pourriez aussi la définir comme une fonction classique plutôt qu'avec `as
 
 /// note
 
-Si vous ne connaissez pas la différence, allez voir la section [Concurrence : _"Vous êtes pressés ?"_](../async.md#vous-etes-presses){.internal-link target=\_blank}.
+Si vous ne connaissez pas la différence, allez voir la section [Concurrence : *"Vous êtes pressés ?"*](../async.md#vous-etes-presses){.internal-link target=_blank}.
 
 ///
 
@@ -342,8 +344,8 @@ Il y a de nombreux autres objets et modèles qui seront automatiquement converti
 
 ## Récapitulatif
 
-- Importez `ReadyAPI`.
-- Créez une instance d'`app`.
-- Ajoutez une **décorateur d'opération de chemin** (tel que `@app.get("/")`).
-- Ajoutez une **fonction de chemin** (telle que `def root(): ...` comme ci-dessus).
-- Lancez le serveur de développement (avec `uvicorn main:app --reload`).
+* Importez `ReadyAPI`.
+* Créez une instance d'`app`.
+* Ajoutez une **décorateur d'opération de chemin** (tel que `@app.get("/")`).
+* Ajoutez une **fonction de chemin** (telle que `def root(): ...` comme ci-dessus).
+* Lancez le serveur de développement (avec `uvicorn main:app --reload`).
