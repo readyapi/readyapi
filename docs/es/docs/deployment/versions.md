@@ -4,7 +4,7 @@
 
 Se agregan nuevas características frecuentemente, se corrigen errores continuamente y el código está constantemente mejorando.
 
-Por eso las versiones actuales siguen siendo `0.x.x`, esto significa que cada versión puede potencialmente tener <abbr title="cambios que rompen funcionalidades o compatibilidad">_breaking changes_</abbr>. Las versiones siguen las convenciones de <a href="https://semver.org/" class="external-link" target="_blank"><abbr title="versionado semántico">_Semantic Versioning_</abbr></a>.
+Por eso las versiones actuales siguen siendo `0.x.x`, esto significa que cada versión puede potencialmente tener <abbr title="cambios que rompen funcionalidades o compatibilidad">*breaking changes*</abbr>. Las versiones siguen las convenciones de <a href="https://semver.org/" class="external-link" target="_blank"><abbr title="versionado semántico">*Semantic Versioning*</abbr></a>.
 
 Puedes crear aplicaciones listas para producción con **ReadyAPI** ahora mismo (y probablemente lo has estado haciendo por algún tiempo), solo tienes que asegurarte de usar la versión que funciona correctamente con el resto de tu código.
 
@@ -34,13 +34,13 @@ Si usas cualquier otra herramienta para manejar tus instalaciones, como Poetry, 
 
 ## Versiones disponibles
 
-Puedes ver las versiones disponibles (por ejemplo, para revisar cuál es la actual) en las [Release Notes](../release-notes.md){.internal-link target=\_blank}.
+Puedes ver las versiones disponibles (por ejemplo, para revisar cuál es la actual) en las [Release Notes](../release-notes.md){.internal-link target=_blank}.
 
 ## Acerca de las versiones
 
-Siguiendo las convenciones de _Semantic Versioning_, cualquier versión por debajo de `1.0.0` puede potencialmente tener <abbr title="cambios que rompen funcionalidades o compatibilidad">_breaking changes_</abbr>.
+Siguiendo las convenciones de *Semantic Versioning*, cualquier versión por debajo de `1.0.0` puede potencialmente tener <abbr title="cambios que rompen funcionalidades o compatibilidad">*breaking changes*</abbr>.
 
-ReadyAPI también sigue la convención de que cualquier cambio hecho en una <abbr title="versiones de parche">"PATCH" version</abbr> es para solucionar errores y <abbr title="cambios que no rompan funcionalidades o compatibilidad">_non-breaking changes_</abbr>.
+ReadyAPI también sigue la convención de que cualquier cambio hecho en una <abbr title="versiones de parche">"PATCH" version</abbr> es para solucionar errores y <abbr title="cambios que no rompan funcionalidades o compatibilidad">*non-breaking changes*</abbr>.
 
 /// tip | Consejo
 
@@ -66,7 +66,7 @@ La versión "MINOR" es el número en el medio, por ejemplo, en `0.2.3`, la <abbr
 
 Para esto es recomendable primero añadir tests a tu aplicación.
 
-Con **ReadyAPI** es muy fácil (gracias a Starlette), revisa la documentación [Testing](../tutorial/testing.md){.internal-link target=\_blank}
+Con **ReadyAPI** es muy fácil (gracias a Starlette), revisa la documentación [Testing](../tutorial/testing.md){.internal-link target=_blank}
 
 Luego de tener los tests, puedes actualizar la versión de **ReadyAPI** a una más reciente y asegurarte de que tu código funciona correctamente ejecutando los tests.
 

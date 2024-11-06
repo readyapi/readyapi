@@ -34,10 +34,10 @@ John Doe
 
 De functie voert het volgende uit:
 
-- Neem een `first_name` en een `last_name`
-- Converteer de eerste letter van elk naar een hoofdletter met `title()`.
-  ``
-- <abbr title="Voegt ze samen, als één. Met de inhoud van de een na de ander.">Voeg samen</abbr> met een spatie in het midden.
+* Neem een `first_name` en een `last_name`
+* Converteer de eerste letter van elk naar een hoofdletter met `title()`.
+``
+* <abbr title="Voegt ze samen, als één. Met de inhoud van de een na de ander.">Voeg samen</abbr> met een spatie in het midden.
 
 ```Python hl_lines="2"
 {!../../docs_src/python_types/tutorial001.py!}
@@ -139,10 +139,10 @@ Je kunt alle standaard Python types declareren, niet alleen `str`.
 
 Je kunt bijvoorbeeld het volgende gebruiken:
 
-- `int`
-- `float`
-- `bool`
-- `bytes`
+* `int`
+* `float`
+* `bool`
+* `bytes`
 
 ```Python hl_lines="1"
 {!../../docs_src/python_types/tutorial005.py!}
@@ -256,8 +256,8 @@ Je kunt hetzelfde doen om `tuple`s en `set`s te declareren:
 
 Dit betekent:
 
-- De variabele `items_t` is een `tuple` met 3 items, een `int`, nog een `int`, en een `str`.
-- De variabele `items_s` is een `set`, en elk van de items is van het type `bytes`.
+* De variabele `items_t` is een `tuple` met 3 items, een `int`, nog een `int`, en een `str`.
+* De variabele `items_s` is een `set`, en elk van de items is van het type `bytes`.
 
 #### Dict
 
@@ -265,7 +265,7 @@ Om een `dict` te definiëren, geef je 2 typeparameters door, gescheiden door kom
 
 De eerste typeparameter is voor de sleutels (keys) van de `dict`.
 
-De tweede typeparameter is voor de waarden (values) van het `dict`:
+De tweede typeparameter is voor de waarden  (values) van het `dict`:
 
 //// tab | Python 3.9+
 
@@ -285,9 +285,9 @@ De tweede typeparameter is voor de waarden (values) van het `dict`:
 
 Dit betekent:
 
-- De variabele `prices` is een `dict`:
-  - De sleutels van dit `dict` zijn van het type `str` (bijvoorbeeld de naam van elk item).
-  - De waarden van dit `dict` zijn van het type `float` (bijvoorbeeld de prijs van elk item).
+* De variabele `prices` is een `dict`:
+    * De sleutels van dit `dict` zijn van het type `str` (bijvoorbeeld de naam van elk item).
+    * De waarden van dit `dict` zijn van het type `float` (bijvoorbeeld de prijs van elk item).
 
 #### Union
 
@@ -359,8 +359,8 @@ Dit betekent ook dat je in Python 3.10 `EenType | None` kunt gebruiken:
 
 Als je een Python versie lager dan 3.10 gebruikt, is dit een tip vanuit mijn **subjectieve** standpunt:
 
-- 🚨 Vermijd het gebruik van `Optional[EenType]`.
-- Gebruik in plaats daarvan **`Union[EenType, None]`** ✨.
+* 🚨 Vermijd het gebruik van `Optional[EenType]`.
+* Gebruik in plaats daarvan **`Union[EenType, None]`** ✨.
 
 Beide zijn gelijkwaardig en onderliggend zijn ze hetzelfde, maar ik zou `Union` aanraden in plaats van `Optional` omdat het woord “**optional**” lijkt te impliceren dat de waarde optioneel is, en het eigenlijk betekent “het kan `None` zijn”, zelfs als het niet optioneel is en nog steeds vereist is.
 
@@ -380,7 +380,7 @@ De parameter `name` is gedefinieerd als `Optional[str]`, maar is **niet optionee
 say_hi()  # Oh, nee, dit geeft een foutmelding! 😱
 ```
 
-De `name` parameter is **nog steeds vereist** (niet _optioneel_) omdat het geen standaardwaarde heeft. Toch accepteert `name` `None` als waarde:
+De `name` parameter is **nog steeds vereist** (niet *optioneel*) omdat het geen standaardwaarde heeft. Toch accepteert `name` `None` als waarde:
 
 ```Python
 say_hi(name=None)  # Dit werkt, None is geldig 🎉
@@ -402,16 +402,16 @@ De types die typeparameters in vierkante haakjes gebruiken, worden **Generieke t
 
 Je kunt dezelfde ingebouwde types gebruiken als generics (met vierkante haakjes en types erin):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 Hetzelfde als bij Python 3.8, uit de `typing`-module:
 
-- `Union`
-- `Optional` (hetzelfde als bij Python 3.8)
-- ...en anderen.
+* `Union`
+* `Optional` (hetzelfde als bij Python 3.8)
+* ...en anderen.
 
 In Python 3.10 kun je , als alternatief voor de generieke `Union` en `Optional`, de <abbr title='ook wel "bitwise or operator" genoemd, maar die betekenis is hier niet relevant'>verticale lijn (`|`)</abbr> gebruiken om unions van typen te voorzien, dat is veel beter en eenvoudiger.
 
@@ -421,28 +421,28 @@ In Python 3.10 kun je , als alternatief voor de generieke `Union` en `Optional`,
 
 Je kunt dezelfde ingebouwde types gebruiken als generieke types (met vierkante haakjes en types erin):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 En hetzelfde als met Python 3.8, vanuit de `typing`-module:
 
-- `Union`
-- `Optional`
-- ...en anderen.
+* `Union`
+* `Optional`
+* ...en anderen.
 
 ////
 
 //// tab | Python 3.8+
 
-- `List`
-- `Tuple`
-- `Set`
-- `Dict`
-- `Union`
-- `Optional`
-- ...en anderen.
+* `List`
+* `Tuple`
+* `Set`
+* `Dict`
+* `Union`
+* `Optional`
+* ...en anderen.
 
 ////
 
@@ -516,7 +516,7 @@ Om meer te leren over <a href="https://docs.pydantic.dev/" class="external-link"
 
 **ReadyAPI** is volledig gebaseerd op Pydantic.
 
-Je zult veel meer van dit alles in de praktijk zien in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=\_blank}.
+Je zult veel meer van dit alles in de praktijk zien in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
 
 /// tip
 
@@ -554,7 +554,7 @@ Python zelf doet niets met deze `Annotated` en voor editors en andere hulpmiddel
 
 Maar je kunt deze ruimte in `Annotated` gebruiken om **ReadyAPI** te voorzien van extra metadata over hoe je wilt dat je applicatie zich gedraagt.
 
-Het belangrijkste om te onthouden is dat **de eerste _typeparameter_** die je doorgeeft aan `Annotated` het **werkelijke type** is. De rest is gewoon metadata voor andere hulpmiddelen.
+Het belangrijkste om te onthouden is dat **de eerste *typeparameter*** die je doorgeeft aan `Annotated` het **werkelijke type** is. De rest is gewoon metadata voor andere hulpmiddelen.
 
 Voor nu hoef je alleen te weten dat `Annotated` bestaat en dat het standaard Python is. 😎
 
@@ -574,19 +574,19 @@ Daarnaast betekent het ook dat je code zeer verenigbaar zal zijn met veel andere
 
 Met **ReadyAPI** declareer je parameters met type hints en krijg je:
 
-- **Editor ondersteuning**.
-- **Type checks**.
+* **Editor ondersteuning**.
+* **Type checks**.
 
 ...en **ReadyAPI** gebruikt dezelfde declaraties om:
 
-- **Vereisten te definïeren **: van request pad parameters, query parameters, headers, bodies, dependencies, enz.
-- **Data te converteren**: van de request naar het vereiste type.
-- **Data te valideren**: afkomstig van elke request:
-  - **Automatische foutmeldingen** te genereren die naar de client worden geretourneerd wanneer de data ongeldig is.
-- De API met OpenAPI te **documenteren**:
-  - die vervolgens wordt gebruikt door de automatische interactieve documentatie gebruikersinterfaces.
+* **Vereisten te definïeren **: van request pad parameters, query parameters, headers, bodies, dependencies, enz.
+* **Data te converteren**: van de request naar het vereiste type.
+* **Data te valideren**: afkomstig van elke request:
+    * **Automatische foutmeldingen** te genereren die naar de client worden geretourneerd wanneer de data ongeldig is.
+* De API met OpenAPI te **documenteren**:
+    * die vervolgens wordt gebruikt door de automatische interactieve documentatie gebruikersinterfaces.
 
-Dit klinkt misschien allemaal abstract. Maak je geen zorgen. Je ziet dit allemaal in actie in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=\_blank}.
+Dit klinkt misschien allemaal abstract. Maak je geen zorgen. Je ziet dit allemaal in actie in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
 
 Het belangrijkste is dat door standaard Python types te gebruiken, op één plek (in plaats van meer klassen, decorators, enz. toe te voegen), **ReadyAPI** een groot deel van het werk voor je doet.
 

@@ -14,11 +14,11 @@
 
 ## 🙅 🇺🇸🔍 🔰 🔐
 
-- 🗄 `HTTPBasic` &amp; `HTTPBasicCredentials`.
-- ✍ "`security` ⚖" ⚙️ `HTTPBasic`.
-- ⚙️ 👈 `security` ⏮️ 🔗 👆 _➡ 🛠️_.
-- ⚫️ 📨 🎚 🆎 `HTTPBasicCredentials`:
-  - ⚫️ 🔌 `username` &amp; `password` 📨.
+* 🗄 `HTTPBasic` &amp; `HTTPBasicCredentials`.
+* ✍ "`security` ⚖" ⚙️ `HTTPBasic`.
+* ⚙️ 👈 `security` ⏮️ 🔗 👆 *➡ 🛠️*.
+* ⚫️ 📨 🎚 🆎 `HTTPBasicCredentials`:
+    * ⚫️ 🔌 `username` &amp; `password` 📨.
 
 ```Python hl_lines="2  6  10"
 {!../../docs_src/security/tutorial006.py!}
@@ -90,7 +90,7 @@ if "stanleyjobsox" == "stanleyjobson" and "love123" == "swordfish":
 
 &amp; ⤴️ 👫 💪 🔄 🔄 🤔 👈 ⚫️ 🎲 🕳 🌖 🎏 `stanleyjobsox` 🌘 `johndoe`.
 
-#### "🕴" 👊
+####  "🕴" 👊
 
 ↗️, 👊 🔜 🚫 🔄 🌐 👉 ✋, 👫 🔜 ✍ 📋 ⚫️, 🎲 ⏮️ 💯 ⚖️ 💯 💯 📍 🥈. &amp; 🔜 🤚 1️⃣ ➕ ☑ 🔤 🕰.
 

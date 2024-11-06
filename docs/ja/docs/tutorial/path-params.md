@@ -1,6 +1,6 @@
 # パスパラメータ
 
-Python の format 文字列と同様のシンタックスで「パスパラメータ」や「パス変数」を宣言できます:
+Pythonのformat文字列と同様のシンタックスで「パスパラメータ」や「パス変数」を宣言できます:
 
 ```Python hl_lines="6 7"
 {!../../docs_src/path_params/tutorial001.py!}
@@ -16,7 +16,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 ## パスパラメータと型
 
-標準の Python の型アノテーションを使用して、関数内のパスパラメータの型を宣言できます:
+標準のPythonの型アノテーションを使用して、関数内のパスパラメータの型を宣言できます:
 
 ```Python hl_lines="7"
 {!../../docs_src/path_params/tutorial002.py!}
@@ -40,7 +40,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 /// check | "確認"
 
-関数が受け取った（および返した）値は、文字列の `"3"` ではなく、Python の `int` としての `3` であることに注意してください。
+関数が受け取った（および返した）値は、文字列の `"3"` ではなく、Pythonの `int` としての `3` であることに注意してください。
 
 したがって、型宣言を使用すると、**ReadyAPI**は自動リクエスト <abbr title="HTTPリクエストで受け取った文字列をPythonデータへ変換する">"解析"</abbr> を行います。
 
@@ -48,7 +48,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 ## データバリデーション
 
-しかしブラウザで <a href="http://127.0.0.1:8000/items/foo" class="external-link" target="_blank">http://127.0.0.1:8000/items/foo</a> を開くと、次の HTTP エラーが表示されます:
+しかしブラウザで <a href="http://127.0.0.1:8000/items/foo" class="external-link" target="_blank">http://127.0.0.1:8000/items/foo</a> を開くと、次のHTTPエラーが表示されます:
 
 ```JSON
 {
@@ -67,15 +67,15 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 これは、パスパラメータ `item_id` が `int` ではない値 `"foo"` だからです。
 
-<a href="http://127.0.0.1:8000/items/4.2" class="external-link" target="_blank">http://127.0.0.1:8000/items/4.2</a> で見られるように、int のかわりに `float` が与えられた場合にも同様なエラーが表示されます。
+<a href="http://127.0.0.1:8000/items/4.2" class="external-link" target="_blank">http://127.0.0.1:8000/items/4.2</a> で見られるように、intのかわりに `float` が与えられた場合にも同様なエラーが表示されます。
 
 /// check | "確認"
 
-したがって、Python の型宣言を使用することで、**ReadyAPI**はデータのバリデーションを行います。
+したがって、Pythonの型宣言を使用することで、**ReadyAPI**はデータのバリデーションを行います。
 
 表示されたエラーには問題のある箇所が明確に指摘されていることに注意してください。
 
-これは、API に関連するコードの開発およびデバッグに非常に役立ちます。
+これは、APIに関連するコードの開発およびデバッグに非常に役立ちます。
 
 ///
 
@@ -87,7 +87,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 /// check | "確認"
 
-繰り返しになりますが、Python 型宣言を使用するだけで、**ReadyAPI**は対話的な API ドキュメントを自動的に生成します（Swagger UI を統合）。
+繰り返しになりますが、Python型宣言を使用するだけで、**ReadyAPI**は対話的なAPIドキュメントを自動的に生成します（Swagger UIを統合）。
 
 パスパラメータが整数として宣言されていることに注意してください。
 
@@ -97,7 +97,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 また、生成されたスキーマが <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md" class="external-link" target="_blank">OpenAPI</a> 標準に従っているので、互換性のあるツールが多数あります。
 
-このため、**ReadyAPI**自体が代替の API ドキュメントを提供します（ReDoc を使用）。これは、 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> にアクセスすると確認できます。
+このため、**ReadyAPI**自体が代替のAPIドキュメントを提供します（ReDocを使用）。これは、 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> にアクセスすると確認できます。
 
 <img src="/img/tutorial/path-params/image02.png">
 
@@ -105,7 +105,7 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 ## Pydantic
 
-すべてのデータバリデーションは <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> によって内部で実行されるため、Pydantic の全てのメリットが得られます。そして、安心して利用することができます。
+すべてのデータバリデーションは <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> によって内部で実行されるため、Pydanticの全てのメリットが得られます。そして、安心して利用することができます。
 
 `str`、 `float` 、 `bool` および他の多くの複雑なデータ型を型宣言に使用できます。
 
@@ -113,13 +113,13 @@ Python の format 文字列と同様のシンタックスで「パスパラメ�
 
 ## 順序の問題
 
-_path operations_ を作成する際、固定パスをもつ状況があり得ます。
+*path operations* を作成する際、固定パスをもつ状況があり得ます。
 
 `/users/me` から、現在のユーザに関するデータを取得するとします。
 
-さらに、ユーザ ID によって特定のユーザに関する情報を取得するパス `/users/{user_id}` ももつことができます。
+さらに、ユーザIDによって特定のユーザに関する情報を取得するパス  `/users/{user_id}` ももつことができます。
 
-_path operations_ は順に評価されるので、 `/users/me` が `/users/{user_id}` よりも先に宣言されているか確認する必要があります:
+*path operations* は順に評価されるので、 `/users/me` が `/users/{user_id}` よりも先に宣言されているか確認する必要があります:
 
 ```Python hl_lines="6 11"
 {!../../docs_src/path_params/tutorial003.py!}
@@ -129,13 +129,13 @@ _path operations_ は順に評価されるので、 `/users/me` が `/users/{use
 
 ## 定義済みの値
 
-*パスパラメータ*を受け取る _path operation_ をもち、有効な*パスパラメータ*の値を事前に定義したい場合は、標準の Python <abbr title="Enumeration">`Enum`</abbr> を利用できます。
+*パスパラメータ*を受け取る *path operation* をもち、有効な*パスパラメータ*の値を事前に定義したい場合は、標準のPython <abbr title="Enumeration">`Enum`</abbr> を利用できます。
 
 ### `Enum` クラスの作成
 
 `Enum` をインポートし、 `str` と `Enum` を継承したサブクラスを作成します。
 
-`str` を継承することで、API ドキュメントは値が `文字列` でなければいけないことを知り、正確にレンダリングできるようになります。
+`str` を継承することで、APIドキュメントは値が `文字列` でなければいけないことを知り、正確にレンダリングできるようになります。
 
 そして、固定値のクラス属性を作ります。すると、その値が使用可能な値となります:
 
@@ -145,7 +145,7 @@ _path operations_ は順に評価されるので、 `/users/me` が `/users/{use
 
 /// info | "情報"
 
-<a href="https://docs.python.org/3/library/enum.html" class="external-link" target="_blank">Enumerations (もしくは、enums)は Python 3.4 以降で利用できます</a>。
+<a href="https://docs.python.org/3/library/enum.html" class="external-link" target="_blank">Enumerations (もしくは、enums)はPython 3.4以降で利用できます</a>。
 
 ///
 
@@ -157,7 +157,7 @@ _path operations_ は順に評価されるので、 `/users/me` が `/users/{use
 
 ### *パスパラメータ*の宣言
 
-次に、作成した enum クラスである`ModelName`を使用した型アノテーションをもつ*パスパラメータ*を作成します:
+次に、作成したenumクラスである`ModelName`を使用した型アノテーションをもつ*パスパラメータ*を作成します:
 
 ```Python hl_lines="16"
 {!../../docs_src/path_params/tutorial005.py!}
@@ -197,7 +197,7 @@ _path operations_ は順に評価されるので、 `/users/me` が `/users/{use
 
 #### *列挙型メンバ*の返却
 
-_path operation_ から*列挙型メンバ*を返すことができます。JSON ボディ（`dict` など）でネストすることもできます。
+*path operation* から*列挙型メンバ*を返すことができます。JSONボディ（`dict` など）でネストすることもできます。
 
 それらはクライアントに返される前に適切な値 (この場合は文字列) に変換されます。
 
@@ -205,7 +205,7 @@ _path operation_ から*列挙型メンバ*を返すことができます。JSON
 {!../../docs_src/path_params/tutorial005.py!}
 ```
 
-クライアントは以下の様な JSON レスポンスを得ます:
+クライアントは以下の様なJSONレスポンスを得ます:
 
 ```JSON
 {
@@ -216,23 +216,23 @@ _path operation_ から*列挙型メンバ*を返すことができます。JSON
 
 ## パスを含んだパスパラメータ
 
-パス `/files/{file_path}` となる _path operation_ を持っているとしましょう。
+パス `/files/{file_path}` となる *path operation* を持っているとしましょう。
 
 ただし、 `home/johndoe/myfile.txt` のような*パス*を含んだ `file_path` が必要です。
 
-したがって、URL は `/files/home/johndoe/myfile.txt` の様になります。
+したがって、URLは `/files/home/johndoe/myfile.txt` の様になります。
 
-### OpenAPI サポート
+### OpenAPIサポート
 
-OpenAPI はテストや定義が困難なシナリオにつながる可能性があるため、内部に*パス*を含む*パスパラメータ*の宣言をサポートしていません。
+OpenAPIはテストや定義が困難なシナリオにつながる可能性があるため、内部に*パス*を含む*パスパラメータ*の宣言をサポートしていません。
 
-それにも関わらず、Starlette の内部ツールのひとつを使用することで、**ReadyAPI**はそれが実現できます。
+それにも関わらず、Starletteの内部ツールのひとつを使用することで、**ReadyAPI**はそれが実現できます。
 
 そして、パラメータがパスを含むべきであることを明示的にドキュメントに追加することなく、機能します。
 
 ### パス変換
 
-Starlette のオプションを直接使用することで、以下の URL の様な*パス*を含んだ、*パスパラメータ*の宣言ができます:
+Starletteのオプションを直接使用することで、以下のURLの様な*パス*を含んだ、*パスパラメータ*の宣言ができます:
 
 ```
 /files/{file_path:path}
@@ -250,18 +250,18 @@ Starlette のオプションを直接使用することで、以下の URL の�
 
 最初のスラッシュ (`/`)が付いている `/home/johndoe/myfile.txt` をパラメータが含んでいる必要があります。
 
-この場合、URL は `files` と `home` の間にダブルスラッシュ (`//`) のある、 `/files//home/johndoe/myfile.txt` になります。
+この場合、URLは `files` と `home` の間にダブルスラッシュ (`//`) のある、 `/files//home/johndoe/myfile.txt` になります。
 
 ///
 
 ## まとめ
 
-簡潔で、本質的で、標準的な Python の型宣言を使用することで、**ReadyAPI**は以下を行います:
+簡潔で、本質的で、標準的なPythonの型宣言を使用することで、**ReadyAPI**は以下を行います:
 
-- エディターサポート: エラーチェック、自動補完、など
-- データ「<abbr title="HTTPリクエストで受け取った文字列をPythonデータへ変換する">解析</abbr>」
-- データバリデーション
-- API アノテーションと自動ドキュメント生成
+* エディターサポート: エラーチェック、自動補完、など
+* データ「<abbr title="HTTPリクエストで受け取った文字列をPythonデータへ変換する">解析</abbr>」
+* データバリデーション
+* APIアノテーションと自動ドキュメント生成
 
 そしてこれはたった一度宣言するだけです。
 

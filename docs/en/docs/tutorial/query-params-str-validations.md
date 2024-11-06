@@ -38,8 +38,8 @@ We are going to enforce that even though `q` is optional, whenever it is provide
 
 To achieve that, first import:
 
-- `Query` from `readyapi`
-- `Annotated` from `typing` (or from `typing_extensions` in Python below 3.9)
+* `Query` from `readyapi`
+* `Annotated` from `typing` (or from `typing_extensions` in Python below 3.9)
 
 //// tab | Python 3.10+
 
@@ -69,13 +69,13 @@ ReadyAPI added support for `Annotated` (and started recommending it) in version 
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=\_blank} to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
 
 ///
 
 ## Use `Annotated` in the type for the `q` parameter
 
-Remember I told you before that `Annotated` can be used to add metadata to your parameters in the [Python Types Intro](../python-types.md#type-hints-with-metadata-annotations){.internal-link target=\_blank}?
+Remember I told you before that `Annotated` can be used to add metadata to your parameters in the [Python Types Intro](../python-types.md#type-hints-with-metadata-annotations){.internal-link target=_blank}?
 
 Now it's the time to use it with ReadyAPI. 🚀
 
@@ -151,9 +151,9 @@ Here we are using `Query()` because this is a **query parameter**. Later we will
 
 ReadyAPI will now:
 
-- **Validate** the data making sure that the max length is 50 characters
-- Show a **clear error** for the client when the data is not valid
-- **Document** the parameter in the OpenAPI schema _path operation_ (so it will show up in the **automatic docs UI**)
+* **Validate** the data making sure that the max length is 50 characters
+* Show a **clear error** for the client when the data is not valid
+* **Document** the parameter in the OpenAPI schema *path operation* (so it will show up in the **automatic docs UI**)
 
 ## Alternative (old): `Query` as the default value
 
@@ -237,7 +237,7 @@ Then, we can pass more parameters to `Query`. In this case, the `max_length` par
 q: Union[str, None] = Query(default=None, max_length=50)
 ```
 
-This will validate the data, show a clear error when the data is not valid, and document the parameter in the OpenAPI schema _path operation_.
+This will validate the data, show a clear error when the data is not valid, and document the parameter in the OpenAPI schema *path operation*.
 
 ### `Query` as the default value or in `Annotated`
 
@@ -391,9 +391,9 @@ Prefer to use the `Annotated` version if possible.
 
 This specific regular expression pattern checks that the received parameter value:
 
-- `^`: starts with the following characters, doesn't have characters before.
-- `fixedquery`: has the exact value `fixedquery`.
-- `$`: ends there, doesn't have any more characters after `fixedquery`.
+* `^`: starts with the following characters, doesn't have characters before.
+* `fixedquery`: has the exact value `fixedquery`.
+* `$`: ends there, doesn't have any more characters after `fixedquery`.
 
 If you feel lost with all these **"regular expression"** ideas, don't worry. They are a hard topic for many people. You can still do a lot of stuff without needing regular expressions yet.
 
@@ -721,7 +721,7 @@ Then, with a URL like:
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-you would receive the multiple `q` _query parameters'_ values (`foo` and `bar`) in a Python `list` inside your _path operation function_, in the _function parameter_ `q`.
+you would receive the multiple `q` *query parameters'* values (`foo` and `bar`) in a Python `list` inside your *path operation function*, in the *function parameter* `q`.
 
 So, the response to that URL would be:
 
@@ -1169,16 +1169,16 @@ You can declare additional validations and metadata for your parameters.
 
 Generic validations and metadata:
 
-- `alias`
-- `title`
-- `description`
-- `deprecated`
+* `alias`
+* `title`
+* `description`
+* `deprecated`
 
 Validations specific for strings:
 
-- `min_length`
-- `max_length`
-- `pattern`
+* `min_length`
+* `max_length`
+* `pattern`
 
 In these examples you saw how to declare validations for `str` values.
 

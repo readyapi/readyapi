@@ -38,7 +38,7 @@
 
 /// tip | "팁"
 
-File의 본문을 선언할 때, 매개변수가 쿼리 매개변수 또는 본문(JSON) 매개변수로 해석되는 것을 방지하기 위해 `File` 을 사용해야합니다.
+File의 본문을 선언할 때, 매개변수가 쿼리 매개변수 또는 본문(JSON) 매개변수로 해석되는  것을 방지하기 위해 `File` 을 사용해야합니다.
 
 ///
 
@@ -50,7 +50,7 @@ File의 본문을 선언할 때, 매개변수가 쿼리 매개변수 또는 본�
 
 어떤 경우에는 `UploadFile` 을 사용하는 것이 더 유리합니다.
 
-## `File` 매개변수와 `UploadFile`
+## `File` 매개변수와  `UploadFile`
 
 `File` 매개변수를 `UploadFile` 타입으로 정의합니다:
 
@@ -60,29 +60,29 @@ File의 본문을 선언할 때, 매개변수가 쿼리 매개변수 또는 본�
 
 `UploadFile` 을 사용하는 것은 `bytes` 과 비교해 다음과 같은 장점이 있습니다:
 
-- "스풀 파일"을 사용합니다.
-  - 최대 크기 제한까지만 메모리에 저장되며, 이를 초과하는 경우 디스크에 저장됩니다.
-- 따라서 이미지, 동영상, 큰 이진코드와 같은 대용량 파일들을 많은 메모리를 소모하지 않고 처리하기에 적합합니다.
-- 업로드 된 파일의 메타데이터를 얻을 수 있습니다.
-- <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` 인터페이스를 갖고 있습니다.
-- file-like object를 필요로하는 다른 라이브러리에 직접적으로 전달할 수 있는 파이썬 <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 객체를 반환합니다.
+* "스풀 파일"을 사용합니다.
+    *  최대 크기 제한까지만 메모리에 저장되며, 이를 초과하는 경우 디스크에 저장됩니다.
+* 따라서 이미지, 동영상, 큰 이진코드와 같은 대용량 파일들을 많은 메모리를 소모하지 않고 처리하기에 적합합니다.
+* 업로드 된 파일의 메타데이터를 얻을 수 있습니다.
+* <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a>  `async` 인터페이스를 갖고 있습니다.
+* file-like object를 필요로하는 다른 라이브러리에 직접적으로 전달할 수 있는 파이썬 <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 객체를 반환합니다.
 
 ### `UploadFile`
 
 `UploadFile` 은 다음과 같은 어트리뷰트가 있습니다:
 
-- `filename` : 문자열(`str`)로 된 업로드된 파일의 파일명입니다 (예: `myimage.jpg`).
-- `content_type` : 문자열(`str`)로 된 파일 형식(MIME type / media type)입니다 (예: `image/jpeg`).
-- `file` : <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (<a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">파일류</a> 객체)입니다. 이것은 "파일류" 객체를 필요로하는 다른 라이브러리에 직접적으로 전달할 수 있는 실질적인 파이썬 파일입니다.
+* `filename` : 문자열(`str`)로 된 업로드된 파일의 파일명입니다 (예: `myimage.jpg`).
+* `content_type` : 문자열(`str`)로 된 파일 형식(MIME type / media type)입니다 (예: `image/jpeg`).
+* `file` :  <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> (<a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">파일류</a> 객체)입니다. 이것은 "파일류" 객체를 필요로하는 다른 라이브러리에 직접적으로 전달할 수 있는 실질적인 파이썬 파일입니다.
 
 `UploadFile` 에는 다음의 `async` 메소드들이 있습니다. 이들은 내부적인 `SpooledTemporaryFile` 을 사용하여 해당하는 파일 메소드를 호출합니다.
 
-- `write(data)`: `data`(`str` 또는 `bytes`)를 파일에 작성합니다.
-- `read(size)`: 파일의 바이트 및 글자의 `size`(`int`)를 읽습니다.
-- `seek(offset)`: 파일 내 `offset`(`int`) 위치의 바이트로 이동합니다.
-  - 예) `await myfile.seek(0)` 를 사용하면 파일의 시작부분으로 이동합니다.
-  - `await myfile.read()` 를 사용한 후 내용을 다시 읽을 때 유용합니다.
-- `close()`: 파일을 닫습니다.
+* `write(data)`: `data`(`str` 또는 `bytes`)를 파일에 작성합니다.
+* `read(size)`: 파일의 바이트 및 글자의 `size`(`int`)를 읽습니다.
+* `seek(offset)`: 파일 내 `offset`(`int`) 위치의 바이트로 이동합니다.
+    * 예) `await myfile.seek(0)` 를 사용하면 파일의 시작부분으로 이동합니다.
+    * `await myfile.read()` 를 사용한 후 내용을 다시 읽을 때 유용합니다.
+* `close()`: 파일을 닫습니다.
 
 상기 모든 메소드들이 `async` 메소드이기 때문에 “await”을 사용하여야 합니다.
 
@@ -98,7 +98,7 @@ contents = await myfile.read()
 contents = myfile.file.read()
 ```
 
-/// note | "`async` 기술적 세부사항"
+/// note |  "`async` 기술적 세부사항"
 
 `async` 메소드들을 사용할 때 **ReadyAPI**는 스레드풀에서 파일 메소드들을 실행하고 그들을 기다립니다.
 
@@ -150,7 +150,7 @@ HTML의 폼들(`<form></form>`)이 서버에 데이터를 전송하는 방식은
 
 /// note | "참고"
 
-2019년 4월 14일부터 Swagger UI가 하나의 폼 필드로 다수의 파일을 업로드하는 것을 지원하지 않습니다. 더 많은 정보를 원하면, <a href="https://github.com/swagger-api/swagger-ui/issues/4276" class="external-link" target="_blank">#4276</a>과 <a href="https://github.com/swagger-api/swagger-ui/issues/3641" class="external-link" target="_blank">#3641</a>을 참고하세요.
+2019년 4월 14일부터 Swagger UI가 하나의 폼 필드로 다수의 파일을 업로드하는 것을 지원하지 않습니다. 더 많은 정보를 원하면,  <a href="https://github.com/swagger-api/swagger-ui/issues/4276" class="external-link" target="_blank">#4276</a>과 <a href="https://github.com/swagger-api/swagger-ui/issues/3641" class="external-link" target="_blank">#3641</a>을 참고하세요.
 
 그럼에도, **ReadyAPI**는 표준 Open API를 사용해 이미 호환이 가능합니다.
 
@@ -160,7 +160,7 @@ HTML의 폼들(`<form></form>`)이 서버에 데이터를 전송하는 방식은
 
 /// note | "기술적 세부사항"
 
-`from starlette.responses import HTMLResponse` 역시 사용할 수 있습니다.
+`from starlette.responses import HTMLResponse` 역시 사용할  수 있습니다.
 
 **ReadyAPI**는 개발자의 편의를 위해 `readyapi.responses` 와 동일한 `starlette.responses` 도 제공합니다. 하지만 대부분의 응답들은 Starlette로부터 직접 제공됩니다.
 

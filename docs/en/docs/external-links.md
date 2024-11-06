@@ -22,7 +22,7 @@ If you have an article, project, tool, or anything related to **ReadyAPI** that 
 
 {% for item in lang_content %}
 
-- <a href="{{ item.link }}" class="external-link" target="_blank">{{ item.title }}</a> by <a href="{{ item.author_link }}" class="external-link" target="_blank">{{ item.author }}</a>.
+* <a href="{{ item.link }}" class="external-link" target="_blank">{{ item.title }}</a> by <a href="{{ item.author_link }}" class="external-link" target="_blank">{{ item.author }}</a>.
 
 {% endfor %}
 {% endfor %}

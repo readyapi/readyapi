@@ -1,9 +1,10 @@
-# ReadyAPI
-
-<p>
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
+<p align="center">
     <em>ReadyAPI উচ্চক্ষমতা সম্পন্ন, সহজে শেখার এবং দ্রুত কোড করে প্রোডাকশনের জন্য ফ্রামওয়ার্ক।</em>
 </p>
-<p>
+<p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
 </a>
@@ -84,7 +85,7 @@ ReadyAPI একটি আধুনিক, দ্রুত ( বেশি ক্�
 
 "\_সত্যিই, আপনি যা তৈরি করেছেন তা খুব মজবুত এবং পরিপূর্ন৷ অনেক উপায়ে, আমি যা **Hug** এ করতে চেয়েছিলাম - তা কাউকে তৈরি করতে দেখে আমি সত্যিই অনুপ্রানিত৷\_"
 
-<div style="text-align: right; margin-right: 10%;">টিমোথি ক্রসলে - <strong><a href="https://www.hug.rest/" target="_blank">Hug</a> স্রষ্টা</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(ref)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">টিমোথি ক্রসলে - <strong><a href="https://github.com/hugapi/hug" target="_blank">Hug</a> স্রষ্টা</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(ref)</small></a></div>
 
 ---
 

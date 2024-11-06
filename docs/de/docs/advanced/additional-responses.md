@@ -16,7 +16,7 @@ Für diese zusätzlichen Responses müssen Sie jedoch sicherstellen, dass Sie ei
 
 ## Zusätzliche Response mit `model`
 
-Sie können Ihren _Pfadoperation-Dekoratoren_ einen Parameter `responses` übergeben.
+Sie können Ihren *Pfadoperation-Dekoratoren* einen Parameter `responses` übergeben.
 
 Der nimmt ein `dict` entgegen, die Schlüssel sind Statuscodes für jede Response, wie etwa `200`, und die Werte sind andere `dict`s mit den Informationen für jede Response.
 
@@ -44,14 +44,14 @@ Der `model`-Schlüssel ist nicht Teil von OpenAPI.
 
 Die richtige Stelle ist:
 
-- Im Schlüssel `content`, der als Wert ein weiteres JSON-Objekt (`dict`) hat, welches Folgendes enthält:
-  - Ein Schlüssel mit dem Medientyp, z. B. `application/json`, der als Wert ein weiteres JSON-Objekt hat, welches Folgendes enthält:
-    - Ein Schlüssel `schema`, der als Wert das JSON-Schema aus dem Modell hat, hier ist die richtige Stelle.
-      - **ReadyAPI** fügt hier eine Referenz auf die globalen JSON-Schemas an einer anderen Stelle in Ihrer OpenAPI hinzu, anstatt es direkt einzubinden. Auf diese Weise können andere Anwendungen und Clients diese JSON-Schemas direkt verwenden, bessere Tools zur Codegenerierung bereitstellen, usw.
+* Im Schlüssel `content`, der als Wert ein weiteres JSON-Objekt (`dict`) hat, welches Folgendes enthält:
+    * Ein Schlüssel mit dem Medientyp, z. B. `application/json`, der als Wert ein weiteres JSON-Objekt hat, welches Folgendes enthält:
+        * Ein Schlüssel `schema`, der als Wert das JSON-Schema aus dem Modell hat, hier ist die richtige Stelle.
+            * **ReadyAPI** fügt hier eine Referenz auf die globalen JSON-Schemas an einer anderen Stelle in Ihrer OpenAPI hinzu, anstatt es direkt einzubinden. Auf diese Weise können andere Anwendungen und Clients diese JSON-Schemas direkt verwenden, bessere Tools zur Codegenerierung bereitstellen, usw.
 
 ///
 
-Die generierten Responses in der OpenAPI für diese _Pfadoperation_ lauten:
+Die generierten Responses in der OpenAPI für diese *Pfadoperation* lauten:
 
 ```JSON hl_lines="3-12"
 {
@@ -175,7 +175,7 @@ Die Schemas werden von einer anderen Stelle innerhalb des OpenAPI-Schemas refere
 
 Sie können denselben `responses`-Parameter verwenden, um verschiedene Medientypen für dieselbe Haupt-Response hinzuzufügen.
 
-Sie können beispielsweise einen zusätzlichen Medientyp `image/png` hinzufügen und damit deklarieren, dass Ihre _Pfadoperation_ ein JSON-Objekt (mit dem Medientyp `application/json`) oder ein PNG-Bild zurückgeben kann:
+Sie können beispielsweise einen zusätzlichen Medientyp `image/png` hinzufügen und damit deklarieren, dass Ihre *Pfadoperation* ein JSON-Objekt (mit dem Medientyp `application/json`) oder ein PNG-Bild zurückgeben kann:
 
 ```Python hl_lines="19-24  28"
 {!../../docs_src/additional_responses/tutorial002.py!}
@@ -217,7 +217,7 @@ Es wird alles kombiniert und in Ihre OpenAPI eingebunden und in der API-Dokument
 
 ## Vordefinierte und benutzerdefinierte Responses kombinieren
 
-Möglicherweise möchten Sie einige vordefinierte Responses haben, die für viele _Pfadoperationen_ gelten, Sie möchten diese jedoch mit benutzerdefinierten Responses kombinieren, die für jede _Pfadoperation_ erforderlich sind.
+Möglicherweise möchten Sie einige vordefinierte Responses haben, die für viele *Pfadoperationen* gelten, Sie möchten diese jedoch mit benutzerdefinierten Responses kombinieren, die für jede *Pfadoperation* erforderlich sind.
 
 In diesen Fällen können Sie die Python-Technik zum „Entpacken“ eines `dict`s mit `**dict_to_unpack` verwenden:
 
@@ -239,7 +239,7 @@ Hier wird `new_dict` alle Schlüssel-Wert-Paare von `old_dict` plus das neue Sch
 }
 ```
 
-Mit dieser Technik können Sie einige vordefinierte Responses in Ihren _Pfadoperationen_ wiederverwenden und sie mit zusätzlichen benutzerdefinierten Responses kombinieren.
+Mit dieser Technik können Sie einige vordefinierte Responses in Ihren *Pfadoperationen* wiederverwenden und sie mit zusätzlichen benutzerdefinierten Responses kombinieren.
 
 Zum Beispiel:
 
@@ -251,5 +251,5 @@ Zum Beispiel:
 
 Um zu sehen, was genau Sie in die Responses aufnehmen können, können Sie die folgenden Abschnitte in der OpenAPI-Spezifikation überprüfen:
 
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responsesObject" class="external-link" target="_blank">OpenAPI Responses Object</a>, enthält das `Response Object`.
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responseObject" class="external-link" target="_blank">OpenAPI Response Object</a>, Sie können alles davon direkt in jede Response innerhalb Ihres `responses`-Parameter einfügen. Einschließlich `description`, `headers`, `content` (darin deklarieren Sie verschiedene Medientypen und JSON-Schemas) und `links`.
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responsesObject" class="external-link" target="_blank">OpenAPI Responses Object</a>, enthält das `Response Object`.
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md#responseObject" class="external-link" target="_blank">OpenAPI Response Object</a>, Sie können alles davon direkt in jede Response innerhalb Ihres `responses`-Parameter einfügen. Einschließlich `description`, `headers`, `content` (darin deklarieren Sie verschiedene Medientypen und JSON-Schemas) und `links`.

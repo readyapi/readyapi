@@ -75,10 +75,10 @@ $ python -m venv .venv
 
 /// details | O que esse comando significa
 
-- `python`: usa o programa chamado `python`
-- `-m`: chama um módulo como um script, nós diremos a ele qual módulo vem em seguida
-- `venv`: usa o módulo chamado `venv` que normalmente vem instalado com o Python
-- `.venv`: cria o ambiente virtual no novo diretório `.venv`
+* `python`: usa o programa chamado `python`
+* `-m`: chama um módulo como um script, nós diremos a ele qual módulo vem em seguida
+* `venv`: usa o módulo chamado `venv` que normalmente vem instalado com o Python
+* `.venv`: cria o ambiente virtual no novo diretório `.venv`
 
 ///
 
@@ -268,9 +268,9 @@ $ echo "*" > .venv/.gitignore
 
 /// details | O que esse comando significa
 
-- `echo "*"`: irá "imprimir" o texto `*` no terminal (a próxima parte muda isso um pouco)
-- `>`: qualquer coisa impressa no terminal pelo comando à esquerda de `>` não deve ser impressa, mas sim escrita no arquivo que vai à direita de `>`
-- `.gitignore`: o nome do arquivo onde o texto deve ser escrito
+* `echo "*"`: irá "imprimir" o texto `*` no terminal (a próxima parte muda isso um pouco)
+* `>`: qualquer coisa impressa no terminal pelo comando à esquerda de `>` não deve ser impressa, mas sim escrita no arquivo que vai à direita de `>`
+* `.gitignore`: o nome do arquivo onde o texto deve ser escrito
 
 E `*` para Git significa "tudo". Então, ele ignorará tudo no diretório `.venv`.
 
@@ -396,8 +396,8 @@ Você provavelmente usaria um editor. Certifique-se de configurá-lo para usar o
 
 Por exemplo:
 
-- <a href="https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment" class="external-link" target="_blank">VS Code</a>
-- <a href="https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html" class="external-link" target="_blank">PyCharm</a>
+* <a href="https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment" class="external-link" target="_blank">VS Code</a>
+* <a href="https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html" class="external-link" target="_blank">PyCharm</a>
 
 /// tip | "Dica"
 
@@ -422,6 +422,8 @@ Dessa forma, quando você executar `python`, ele não tentará executá-lo naque
 ## Pronto para trabalhar
 
 Agora você está pronto para começar a trabalhar no seu projeto.
+
+
 
 /// tip | "Dica"
 
@@ -617,13 +619,13 @@ $ source .venv/Scripts/activate
 
 ////
 
-Esse comando criará ou modificará algumas [variáveis ​​de ambiente](environment-variables.md){.internal-link target=\_blank} que estarão disponíveis para os próximos comandos.
+Esse comando criará ou modificará algumas [variáveis ​​de ambiente](environment-variables.md){.internal-link target=_blank} que estarão disponíveis para os próximos comandos.
 
 Uma dessas variáveis ​​é a variável `PATH`.
 
 /// tip | "Dica"
 
-Você pode aprender mais sobre a variável de ambiente `PATH` na seção [Variáveis ​​de ambiente](environment-variables.md#path-environment-variable){.internal-link target=\_blank}.
+Você pode aprender mais sobre a variável de ambiente `PATH` na seção [Variáveis ​​de ambiente](environment-variables.md#path-environment-variable){.internal-link target=_blank}.
 
 ///
 
@@ -639,10 +641,10 @@ Digamos que antes de ativar o ambiente, a variável `PATH` estava assim:
 
 Isso significa que o sistema procuraria programas em:
 
-- `/usr/bin`
-- `/bin`
-- `/usr/sbin`
-- `/sbin`
+* `/usr/bin`
+* `/bin`
+* `/usr/sbin`
+* `/sbin`
 
 ////
 
@@ -654,7 +656,7 @@ C:\Windows\System32
 
 Isso significa que o sistema procuraria programas em:
 
-- `C:\Windows\System32`
+* `C:\Windows\System32`
 
 ////
 
@@ -828,12 +830,12 @@ Quando estiver pronto e quiser usar uma ferramenta para **gerenciar todo o proje
 
 `uv` pode fazer muitas coisas, ele pode:
 
-- **Instalar o Python** para você, incluindo versões diferentes
-- Gerenciar o **ambiente virtual** para seus projetos
-- Instalar **pacotes**
-- Gerenciar **dependências e versões** de pacotes para seu projeto
-- Certifique-se de ter um conjunto **exato** de pacotes e versões para instalar, incluindo suas dependências, para que você possa ter certeza de que pode executar seu projeto em produção exatamente da mesma forma que em seu computador durante o desenvolvimento, isso é chamado de **bloqueio**
-- E muitas outras coisas
+* **Instalar o Python** para você, incluindo versões diferentes
+* Gerenciar o **ambiente virtual** para seus projetos
+* Instalar **pacotes**
+* Gerenciar **dependências e versões** de pacotes para seu projeto
+* Certifique-se de ter um conjunto **exato** de pacotes e versões para instalar, incluindo suas dependências, para que você possa ter certeza de que pode executar seu projeto em produção exatamente da mesma forma que em seu computador durante o desenvolvimento, isso é chamado de **bloqueio**
+* E muitas outras coisas
 
 ## Conclusão
 

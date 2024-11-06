@@ -86,7 +86,7 @@ You can see the defined cookies in the docs UI at `/docs`:
 
 Have in mind that, as **browsers handle cookies** in special ways and behind the scenes, they **don't** easily allow **JavaScript** to touch them.
 
-If you go to the **API docs UI** at `/docs` you will be able to see the **documentation** for cookies for your _path operations_.
+If you go to the **API docs UI** at `/docs` you will be able to see the **documentation** for cookies for your *path operations*.
 
 But even if you **fill the data** and click "Execute", because the docs UI works with **JavaScript**, the cookies won't be sent, and you will see an **error** message as if you didn't write any values.
 
@@ -138,14 +138,14 @@ For example, if the client tries to send a `santa_tracker` cookie with a value o
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["cookie", "santa_tracker"],
-      "msg": "Extra inputs are not permitted",
-      "input": "good-list-please"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["cookie", "santa_tracker"],
+            "msg": "Extra inputs are not permitted",
+            "input": "good-list-please",
+        }
+    ]
 }
 ```
 

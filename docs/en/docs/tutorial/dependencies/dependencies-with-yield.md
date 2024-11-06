@@ -14,8 +14,8 @@ Make sure to use `yield` one single time per dependency.
 
 Any function that is valid to use with:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 would be valid to use as a **ReadyAPI** dependency.
 
@@ -33,7 +33,7 @@ Only the code prior to and including the `yield` statement is executed before cr
 {!../../docs_src/dependencies/tutorial007.py!}
 ```
 
-The yielded value is what is injected into _path operations_ and other dependencies:
+The yielded value is what is injected into *path operations* and other dependencies:
 
 ```Python hl_lines="4"
 {!../../docs_src/dependencies/tutorial007.py!}
@@ -57,7 +57,7 @@ You can use `async` or regular functions.
 
 If you use a `try` block in a dependency with `yield`, you'll receive any exception that was thrown when using the dependency.
 
-For example, if some code at some point in the middle, in another dependency or in a _path operation_, made a database transaction "rollback" or create any other error, you will receive the exception in your dependency.
+For example, if some code at some point in the middle, in another dependency or in a *path operation*, made a database transaction "rollback" or create any other error, you will receive the exception in your dependency.
 
 So, you can look for that specific exception inside the dependency with `except SomeException`.
 
@@ -165,7 +165,7 @@ The same way, you could raise an `HTTPException` or similar in the exit code, af
 
 /// tip
 
-This is a somewhat advanced technique, and in most of the cases you won't really need it, as you can raise exceptions (including `HTTPException`) from inside of the rest of your application code, for example, in the _path operation function_.
+This is a somewhat advanced technique, and in most of the cases you won't really need it, as you can raise exceptions (including `HTTPException`) from inside of the rest of your application code, for example, in the *path operation function*.
 
 But it's there for you if you need it. 🤓
 
@@ -201,7 +201,7 @@ Prefer to use the `Annotated` version if possible.
 
 ////
 
-An alternative you could use to catch exceptions (and possibly also raise another `HTTPException`) is to create a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank}.
+An alternative you could use to catch exceptions (and possibly also raise another `HTTPException`) is to create a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}.
 
 ## Dependencies with `yield` and `except`
 
@@ -237,7 +237,7 @@ Prefer to use the `Annotated` version if possible.
 
 ////
 
-In this case, the client will see an _HTTP 500 Internal Server Error_ response as it should, given that we are not raising an `HTTPException` or similar, but the server will **not have any logs** or any other indication of what was the error. 😱
+In this case, the client will see an *HTTP 500 Internal Server Error* response as it should, given that we are not raising an `HTTPException` or similar, but the server will **not have any logs** or any other indication of what was the error. 😱
 
 ### Always `raise` in Dependencies with `yield` and `except`
 
@@ -275,7 +275,7 @@ Prefer to use the `Annotated` version if possible.
 
 ////
 
-Now the client will get the same _HTTP 500 Internal Server Error_ response, but the server will have our custom `InternalError` in the logs. 😎
+Now the client will get the same *HTTP 500 Internal Server Error* response, but the server will have our custom `InternalError` in the logs. 😎
 
 ## Execution of dependencies with `yield`
 
@@ -318,7 +318,7 @@ participant tasks as Background tasks
 
 /// info
 
-Only **one response** will be sent to the client. It might be one of the error responses or it will be the response from the _path operation_.
+Only **one response** will be sent to the client. It might be one of the error responses or it will be the response from the *path operation*.
 
 After one of those responses is sent, no other response can be sent.
 
@@ -326,7 +326,7 @@ After one of those responses is sent, no other response can be sent.
 
 /// tip
 
-This diagram shows `HTTPException`, but you could also raise any other exception that you catch in a dependency with `yield` or with a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank}.
+This diagram shows `HTTPException`, but you could also raise any other exception that you catch in a dependency with `yield` or with a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}.
 
 If you raise any exception, it will be passed to the dependencies with yield, including `HTTPException`. In most cases you will want to re-raise that same exception or a new one from the dependency with `yield` to make sure it's properly handled.
 
@@ -350,7 +350,7 @@ This was changed in version 0.110.0 to fix unhandled memory consumption from for
 
 ### Background Tasks and Dependencies with `yield`, Technical Details
 
-Before ReadyAPI 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed _after_ the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=\_blank} would have already run.
+Before ReadyAPI 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed *after* the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} would have already run.
 
 This was designed this way mainly to allow using the same objects "yielded" by dependencies inside of background tasks, because the exit code would be executed after the background tasks were finished.
 
@@ -411,8 +411,8 @@ You can also use them inside of **ReadyAPI** dependencies with `yield` by using
 
 Another way to create a context manager is with:
 
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
-- <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
+* <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
 using them to decorate a function with a single `yield`.
 

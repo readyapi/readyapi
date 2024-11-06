@@ -2,7 +2,7 @@
 
 ## Caractéristiques supplémentaires
 
-Le [Tutoriel - Guide de l'utilisateur](../tutorial/index.md){.internal-link target=\_blank} devrait suffire à vous faire découvrir toutes les fonctionnalités principales de **ReadyAPI**.
+Le [Tutoriel - Guide de l'utilisateur](../tutorial/index.md){.internal-link target=_blank} devrait suffire à vous faire découvrir toutes les fonctionnalités principales de **ReadyAPI**.
 
 Dans les sections suivantes, vous verrez des options, configurations et fonctionnalités supplémentaires.
 
@@ -16,7 +16,7 @@ Et il est possible que pour votre cas d'utilisation, la solution se trouve dans 
 
 ## Lisez d'abord le didacticiel
 
-Vous pouvez utiliser la plupart des fonctionnalités de **ReadyAPI** grâce aux connaissances du [Tutoriel - Guide de l'utilisateur](../tutorial/index.md){.internal-link target=\_blank}.
+Vous pouvez utiliser la plupart des fonctionnalités de **ReadyAPI** grâce aux connaissances du [Tutoriel - Guide de l'utilisateur](../tutorial/index.md){.internal-link target=_blank}.
 
 Et les sections suivantes supposent que vous l'avez lu et que vous en connaissez les idées principales.
 

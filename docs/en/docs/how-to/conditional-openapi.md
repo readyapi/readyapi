@@ -4,9 +4,9 @@ If you needed to, you could use settings and environment variables to configure 
 
 ## About security, APIs, and docs
 
-Hiding your documentation user interfaces in production _shouldn't_ be the way to protect your API.
+Hiding your documentation user interfaces in production *shouldn't* be the way to protect your API.
 
-That doesn't add any extra security to your API, the _path operations_ will still be available where they are.
+That doesn't add any extra security to your API, the *path operations* will still be available where they are.
 
 If there's a security flaw in your code, it will still exist.
 
@@ -14,12 +14,12 @@ Hiding the documentation just makes it more difficult to understand how to inter
 
 If you want to secure your API, there are several better things you can do, for example:
 
-- Make sure you have well defined Pydantic models for your request bodies and responses.
-- Configure any required permissions and roles using dependencies.
-- Never store plaintext passwords, only password hashes.
-- Implement and use well-known cryptographic tools, like Passlib and JWT tokens, etc.
-- Add more granular permission controls with OAuth2 scopes where needed.
-- ...etc.
+* Make sure you have well defined Pydantic models for your request bodies and responses.
+* Configure any required permissions and roles using dependencies.
+* Never store plaintext passwords, only password hashes.
+* Implement and use well-known cryptographic tools, like Passlib and JWT tokens, etc.
+* Add more granular permission controls with OAuth2 scopes where needed.
+* ...etc.
 
 Nevertheless, you might have a very specific use case where you really need to disable the API docs for some environment (e.g. for production) or depending on configurations from environment variables.
 
@@ -29,9 +29,7 @@ You can easily use the same Pydantic settings to configure your generated OpenAP
 
 For example:
 
-```Python hl_lines="6  11"
-{!../../docs_src/conditional_openapi/tutorial001.py!}
-```
+{* ../../docs_src/conditional_openapi/tutorial001.py hl[6,11] *}
 
 Here we declare the setting `openapi_url` with the same default of `"/openapi.json"`.
 

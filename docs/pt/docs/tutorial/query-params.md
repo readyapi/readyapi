@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...os parâmetros da consulta são:
 
-- `skip`: com o valor `0`
-- `limit`: com o valor `10`
+* `skip`: com o valor `0`
+* `limit`: com o valor `10`
 
 Como eles são parte da URL, eles são "naturalmente" strings.
 
@@ -25,10 +25,10 @@ Mas quando você declara eles com os tipos do Python (no exemplo acima, como `in
 
 Todo o processo que era aplicado para parâmetros de rota também é aplicado para parâmetros de consulta:
 
-- Suporte do editor (obviamente)
-- <abbr title="convertendo uma string que vem de um request HTTP em um dado Python">"Parsing"</abbr> de dados
-- Validação de dados
-- Documentação automática
+* Suporte do editor (obviamente)
+* <abbr title="convertendo uma string que vem de um request HTTP em um dado Python">"Parsing"</abbr> de dados
+* Validação de dados
+* Documentação automática
 
 ## Valores padrão
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 Os valores dos parâmetros na sua função serão:
 
-- `skip=20`: Por que você definiu isso na URL
-- `limit=10`: Por que esse era o valor padrão
+* `skip=20`: Por que você definiu isso na URL
+* `limit=10`: Por que esse era o valor padrão
 
 ## Parâmetros opcionais
 
@@ -235,12 +235,12 @@ E claro, você pode definir alguns parâmetros como obrigatórios, alguns possui
 
 Nesse caso, existem 3 parâmetros de consulta:
 
-- `needy`, um `str` obrigatório.
-- `skip`, um `int` com o valor padrão `0`.
-- `limit`, um `int` opcional.
+* `needy`, um `str` obrigatório.
+* `skip`, um `int` com o valor padrão `0`.
+* `limit`, um `int` opcional.
 
 /// tip | "Dica"
 
-Você também poderia usar `Enum` da mesma forma que com [Path Parameters](path-params.md#valores-predefinidos){.internal-link target=\_blank}.
+Você também poderia usar `Enum` da mesma forma que com [Path Parameters](path-params.md#valores-predefinidos){.internal-link target=_blank}.
 
 ///

@@ -3,6 +3,7 @@
 Vous pouvez déclarer des "paramètres" ou "variables" de chemin avec la même syntaxe que celle utilisée par le
 <a href="https://docs.python.org/fr/3/library/string.html#format-string-syntax" class="external-link" target="_blank">formatage de chaîne Python</a> :
 
+
 ```Python hl_lines="6-7"
 {!../../docs_src/path_params/tutorial001.py!}
 ```
@@ -19,6 +20,7 @@ vous verrez comme réponse :
 ## Paramètres de chemin typés
 
 Vous pouvez déclarer le type d'un paramètre de chemin dans la fonction, en utilisant les annotations de type Python :
+
 
 ```Python hl_lines="7"
 {!../../docs_src/path_params/tutorial002.py!}
@@ -75,6 +77,7 @@ car le paramètre de chemin `item_id` possède comme valeur `"foo"`, qui ne peut
 La même erreur se produira si vous passez un nombre flottant (`float`) et non un entier, comme ici
 <a href="http://127.0.0.1:8000/items/4.2" class="external-link" target="_blank">http://127.0.0.1:8000/items/4.2</a>.
 
+
 /// check | "vérifier"
 
 Donc, avec ces mêmes déclarations de type Python, **ReadyAPI** vous fournit de la validation de données.
@@ -120,13 +123,13 @@ dont vous bénéficierez de tous les avantages. Vous savez donc que vous êtes e
 
 ## L'ordre importe
 
-Quand vous créez des _fonctions de chemins_, vous pouvez vous retrouver dans une situation où vous avez un chemin fixe.
+Quand vous créez des *fonctions de chemins*, vous pouvez vous retrouver dans une situation où vous avez un chemin fixe.
 
 Tel que `/users/me`, disons pour récupérer les données sur l'utilisateur actuel.
 
 Et vous avez un second chemin : `/users/{user_id}` pour récupérer de la donnée sur un utilisateur spécifique grâce à son identifiant d'utilisateur
 
-Les _fonctions de chemin_ étant évaluées dans l'ordre, il faut s'assurer que la fonction correspondant à `/users/me` est déclarée avant celle de `/users/{user_id}` :
+Les *fonctions de chemin* étant évaluées dans l'ordre, il faut s'assurer que la fonction correspondant à `/users/me` est déclarée avant celle de `/users/{user_id}` :
 
 ```Python hl_lines="6  11"
 {!../../docs_src/path_params/tutorial003.py!}
@@ -136,7 +139,7 @@ Sinon, le chemin `/users/{user_id}` correspondrait aussi à `/users/me`, la fonc
 
 ## Valeurs prédéfinies
 
-Si vous avez une _fonction de chemin_ qui reçoit un _paramètre de chemin_, mais que vous voulez que les valeurs possibles des paramètres soient prédéfinies, vous pouvez utiliser les <abbr title="Enumeration">`Enum`</abbr> de Python.
+Si vous avez une *fonction de chemin* qui reçoit un *paramètre de chemin*, mais que vous voulez que les valeurs possibles des paramètres soient prédéfinies, vous pouvez utiliser les <abbr title="Enumeration">`Enum`</abbr> de Python.
 
 ### Création d'un `Enum`
 
@@ -164,7 +167,7 @@ Pour ceux qui se demandent, "AlexNet", "ResNet", et "LeNet" sont juste des noms 
 
 ### Déclarer un paramètre de chemin
 
-Créez ensuite un _paramètre de chemin_ avec une annotation de type désignant l'énumération créée précédemment (`ModelName`) :
+Créez ensuite un *paramètre de chemin* avec une annotation de type désignant l'énumération créée précédemment (`ModelName`) :
 
 ```Python hl_lines="16"
 {!../../docs_src/path_params/tutorial005.py!}
@@ -172,15 +175,15 @@ Créez ensuite un _paramètre de chemin_ avec une annotation de type désignant 
 
 ### Documentation
 
-Les valeurs disponibles pour le _paramètre de chemin_ sont bien prédéfinies, la documentation les affiche correctement :
+Les valeurs disponibles pour le *paramètre de chemin* sont bien prédéfinies, la documentation les affiche correctement :
 
 <img src="/img/tutorial/path-params/image03.png">
 
-### Manipuler les _énumérations_ Python
+### Manipuler les *énumérations* Python
 
-La valeur du _paramètre de chemin_ sera un des "membres" de l'énumération.
+La valeur du *paramètre de chemin* sera un des "membres" de l'énumération.
 
-#### Comparer les _membres d'énumération_
+#### Comparer les *membres d'énumération*
 
 Vous pouvez comparer ce paramètre avec les membres de votre énumération `ModelName` :
 
@@ -188,7 +191,7 @@ Vous pouvez comparer ce paramètre avec les membres de votre énumération `Mode
 {!../../docs_src/path_params/tutorial005.py!}
 ```
 
-#### Récupérer la _valeur de l'énumération_
+#### Récupérer la *valeur de l'énumération*
 
 Vous pouvez obtenir la valeur réel d'un membre (une chaîne de caractères ici), avec `model_name.value`, ou en général, `votre_membre_d'enum.value` :
 
@@ -202,9 +205,9 @@ Vous pouvez aussi accéder la valeur `"lenet"` avec `ModelName.lenet.value`.
 
 ///
 
-#### Retourner des _membres d'énumération_
+#### Retourner des *membres d'énumération*
 
-Vous pouvez retourner des _membres d'énumération_ dans vos _fonctions de chemin_, même imbriquée dans un JSON (e.g. un `dict`).
+Vous pouvez retourner des *membres d'énumération* dans vos *fonctions de chemin*, même imbriquée dans un JSON (e.g. un `dict`).
 
 Ils seront convertis vers leurs valeurs correspondantes (chaînes de caractères ici) avant d'être transmis au client :
 
@@ -223,29 +226,29 @@ Le client recevra une réponse JSON comme celle-ci :
 
 ## Paramètres de chemin contenant des chemins
 
-Disons que vous avez une _fonction de chemin_ liée au chemin `/files/{file_path}`.
+Disons que vous avez une *fonction de chemin* liée au chemin `/files/{file_path}`.
 
-Mais que `file_path` lui-même doit contenir un _chemin_, comme `home/johndoe/myfile.txt` par exemple.
+Mais que `file_path` lui-même doit contenir un *chemin*, comme `home/johndoe/myfile.txt` par exemple.
 
 Donc, l'URL pour ce fichier pourrait être : `/files/home/johndoe/myfile.txt`.
 
 ### Support d'OpenAPI
 
-OpenAPI ne supporte pas de manière de déclarer un paramètre de chemin contenant un _chemin_, cela pouvant causer des scénarios difficiles à tester et définir.
+OpenAPI ne supporte pas de manière de déclarer un paramètre de chemin contenant un *chemin*, cela pouvant causer des scénarios difficiles à tester et définir.
 
 Néanmoins, cela reste faisable dans **ReadyAPI**, via les outils internes de Starlette.
 
-Et la documentation fonctionne quand même, bien qu'aucune section ne soit ajoutée pour dire que la paramètre devrait contenir un _chemin_.
+Et la documentation fonctionne quand même, bien qu'aucune section ne soit ajoutée pour dire que la paramètre devrait contenir un *chemin*.
 
-### Convertisseur de _chemin_
+### Convertisseur de *chemin*
 
-En utilisant une option de Starlette directement, vous pouvez déclarer un _paramètre de chemin_ contenant un _chemin_ avec une URL comme :
+En utilisant une option de Starlette directement, vous pouvez déclarer un *paramètre de chemin* contenant un *chemin* avec une URL comme :
 
 ```
 /files/{file_path:path}
 ```
 
-Dans ce cas, le nom du paramètre est `file_path`, et la dernière partie, `:path`, indique à Starlette que le paramètre devrait correspondre à un _chemin_.
+Dans ce cas, le nom du paramètre est `file_path`, et la dernière partie, `:path`, indique à Starlette que le paramètre devrait correspondre à un *chemin*.
 
 Vous pouvez donc l'utilisez comme tel :
 
@@ -265,11 +268,11 @@ Dans ce cas, l'URL serait : `/files//home/johndoe/myfile.txt`, avec un double sl
 
 Avec **ReadyAPI**, en utilisant les déclarations de type rapides, intuitives et standards de Python, vous bénéficiez de :
 
-- Support de l'éditeur : vérification d'erreurs, auto-complétion, etc.
-- <abbr title="conversion de la chaîne de caractères venant de la requête HTTP en données Python">"Parsing"</abbr> de données.
-- Validation de données.
-- Annotations d'API et documentation automatique.
+* Support de l'éditeur : vérification d'erreurs, auto-complétion, etc.
+* <abbr title="conversion de la chaîne de caractères venant de la requête HTTP en données Python">"Parsing"</abbr> de données.
+* Validation de données.
+* Annotations d'API et documentation automatique.
 
 Et vous n'avez besoin de le déclarer qu'une fois.
 
-C'est probablement l'avantage visible principal de **ReadyAPI** comparé aux autres _frameworks_ (outre les performances pures).
+C'est probablement l'avantage visible principal de **ReadyAPI** comparé aux autres *frameworks* (outre les performances pures).

@@ -2,9 +2,9 @@
 
 Bei einigen Anwendungstypen möchten Sie möglicherweise Abhängigkeiten zur gesamten Anwendung hinzufügen.
 
-Ähnlich wie Sie [`dependencies` zu den _Pfadoperation-Dekoratoren_ hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} können, können Sie sie auch zur `ReadyAPI`-Anwendung hinzufügen.
+Ähnlich wie Sie [`dependencies` zu den *Pfadoperation-Dekoratoren* hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} können, können Sie sie auch zur `ReadyAPI`-Anwendung hinzufügen.
 
-In diesem Fall werden sie auf alle _Pfadoperationen_ in der Anwendung angewendet:
+In diesem Fall werden sie auf alle *Pfadoperationen* in der Anwendung angewendet:
 
 //// tab | Python 3.9+
 
@@ -36,8 +36,8 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-Und alle Ideen aus dem Abschnitt über das [Hinzufügen von `dependencies` zu den _Pfadoperation-Dekoratoren_](dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} gelten weiterhin, aber in diesem Fall für alle _Pfadoperationen_ in der Anwendung.
+Und alle Ideen aus dem Abschnitt über das [Hinzufügen von `dependencies` zu den *Pfadoperation-Dekoratoren*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} gelten weiterhin, aber in diesem Fall für alle *Pfadoperationen* in der Anwendung.
 
-## Abhängigkeiten für Gruppen von _Pfadoperationen_
+## Abhängigkeiten für Gruppen von *Pfadoperationen*
 
-Wenn Sie später lesen, wie Sie größere Anwendungen strukturieren ([Bigger Applications - Multiple Files](../../tutorial/bigger-applications.md){.internal-link target=\_blank}), möglicherweise mit mehreren Dateien, lernen Sie, wie Sie einen einzelnen `dependencies`-Parameter für eine Gruppe von _Pfadoperationen_ deklarieren.
+Wenn Sie später lesen, wie Sie größere Anwendungen strukturieren ([Bigger Applications - Multiple Files](../../tutorial/bigger-applications.md){.internal-link target=_blank}), möglicherweise mit mehreren Dateien, lernen Sie, wie Sie einen einzelnen `dependencies`-Parameter für eine Gruppe von *Pfadoperationen* deklarieren.

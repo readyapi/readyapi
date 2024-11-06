@@ -1,16 +1,16 @@
 # Pfadoperation-Konfiguration
 
-Es gibt mehrere Konfigurations-Parameter, die Sie Ihrem _Pfadoperation-Dekorator_ übergeben können.
+Es gibt mehrere Konfigurations-Parameter, die Sie Ihrem *Pfadoperation-Dekorator* übergeben können.
 
 /// warning | "Achtung"
 
-Beachten Sie, dass diese Parameter direkt dem _Pfadoperation-Dekorator_ übergeben werden, nicht der _Pfadoperation-Funktion_.
+Beachten Sie, dass diese Parameter direkt dem *Pfadoperation-Dekorator* übergeben werden, nicht der *Pfadoperation-Funktion*.
 
 ///
 
 ## Response-Statuscode
 
-Sie können den (HTTP-)`status_code` definieren, den die Response Ihrer _Pfadoperation_ verwenden soll.
+Sie können den (HTTP-)`status_code` definieren, den die Response Ihrer *Pfadoperation* verwenden soll.
 
 Sie können direkt den `int`-Code übergeben, etwa `404`.
 
@@ -52,7 +52,7 @@ Sie können auch `from starlette import status` verwenden.
 
 ## Tags
 
-Sie können Ihrer _Pfadoperation_ Tags hinzufügen, mittels des Parameters `tags`, dem eine `list`e von `str`s übergeben wird (in der Regel nur ein `str`):
+Sie können Ihrer *Pfadoperation* Tags hinzufügen, mittels des Parameters `tags`, dem eine `list`e von `str`s übergeben wird (in der Regel nur ein `str`):
 
 //// tab | Python 3.10+
 
@@ -84,7 +84,7 @@ Diese werden zum OpenAPI-Schema hinzugefügt und von den automatischen Dokumenta
 
 ### Tags mittels Enumeration
 
-Wenn Sie eine große Anwendung haben, können sich am Ende **viele Tags** anhäufen, und Sie möchten sicherstellen, dass Sie für verwandte _Pfadoperationen_ immer den **gleichen Tag** nehmen.
+Wenn Sie eine große Anwendung haben, können sich am Ende **viele Tags** anhäufen, und Sie möchten sicherstellen, dass Sie für verwandte *Pfadoperationen* immer den **gleichen Tag** nehmen.
 
 In diesem Fall macht es Sinn, die Tags in einem `Enum` zu speichern.
 
@@ -124,7 +124,7 @@ Sie können eine Zusammenfassung (`summary`) und eine Beschreibung (`description
 
 ## Beschreibung mittels Docstring
 
-Da Beschreibungen oft mehrere Zeilen lang sind, können Sie die Beschreibung der _Pfadoperation_ im <abbr title="Ein mehrzeiliger String (keiner Variable zugewiesen) als erster Ausdruck in einer Funktion, wird für die Dokumentation derselben verwendet">Docstring</abbr> der Funktion deklarieren, und **ReadyAPI** wird sie daraus auslesen.
+Da Beschreibungen oft mehrere Zeilen lang sind, können Sie die Beschreibung der *Pfadoperation* im <abbr title="Ein mehrzeiliger String (keiner Variable zugewiesen) als erster Ausdruck in einer Funktion, wird für die Dokumentation derselben verwendet">Docstring</abbr> der Funktion deklarieren, und **ReadyAPI** wird sie daraus auslesen.
 
 Sie können im Docstring <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> schreiben, es wird korrekt interpretiert und angezeigt (die Einrückung des Docstring beachtend).
 
@@ -186,13 +186,13 @@ Die Response können Sie mit dem Parameter `response_description` beschreiben:
 
 /// info
 
-beachten Sie, dass sich `response_description` speziell auf die Response bezieht, während `description` sich generell auf die _Pfadoperation_ bezieht.
+beachten Sie, dass sich `response_description` speziell auf die Response bezieht, während `description` sich generell auf die *Pfadoperation* bezieht.
 
 ///
 
 /// check
 
-OpenAPI verlangt, dass jede _Pfadoperation_ über eine Beschreibung der Response verfügt.
+OpenAPI verlangt, dass jede *Pfadoperation* über eine Beschreibung der Response verfügt.
 
 Daher, wenn Sie keine vergeben, wird **ReadyAPI** automatisch eine für „Erfolgreiche Response“ erstellen.
 
@@ -200,9 +200,9 @@ Daher, wenn Sie keine vergeben, wird **ReadyAPI** automatisch eine für „Erfol
 
 <img src="/img/tutorial/path-operation-configuration/image03.png">
 
-## Eine _Pfadoperation_ deprecaten
+## Eine *Pfadoperation* deprecaten
 
-Wenn Sie eine _Pfadoperation_ als <abbr title="deprecated – obsolet, veraltet: Es soll nicht mehr verwendet werden">deprecated</abbr> kennzeichnen möchten, ohne sie zu entfernen, fügen Sie den Parameter `deprecated` hinzu:
+Wenn Sie eine *Pfadoperation* als <abbr title="deprecated – obsolet, veraltet: Es soll nicht mehr verwendet werden">deprecated</abbr> kennzeichnen möchten, ohne sie zu entfernen, fügen Sie den Parameter `deprecated` hinzu:
 
 ```Python hl_lines="16"
 {!../../docs_src/path_operation_configuration/tutorial006.py!}
@@ -212,10 +212,10 @@ Sie wird in der interaktiven Dokumentation gut sichtbar als deprecated markiert 
 
 <img src="/img/tutorial/path-operation-configuration/image04.png">
 
-Vergleichen Sie, wie deprecatete und nicht-deprecatete _Pfadoperationen_ aussehen:
+Vergleichen Sie, wie deprecatete und nicht-deprecatete *Pfadoperationen* aussehen:
 
 <img src="/img/tutorial/path-operation-configuration/image05.png">
 
 ## Zusammenfassung
 
-Sie können auf einfache Weise Metadaten für Ihre _Pfadoperationen_ definieren, indem Sie den _Pfadoperation-Dekoratoren_ Parameter hinzufügen.
+Sie können auf einfache Weise Metadaten für Ihre *Pfadoperationen* definieren, indem Sie den *Pfadoperation-Dekoratoren* Parameter hinzufügen.

@@ -4,12 +4,12 @@ When deploying a **ReadyAPI** application, or actually, any type of web API, the
 
 Some of the important concepts are:
 
-- Security - HTTPS
-- Running on startup
-- Restarts
-- Replication (the number of processes running)
-- Memory
-- Previous steps before starting
+* Security - HTTPS
+* Running on startup
+* Restarts
+* Replication (the number of processes running)
+* Memory
+* Previous steps before starting
 
 We'll see how they would affect **deployments**.
 
@@ -25,7 +25,7 @@ But for now, let's check these important **conceptual ideas**. These concepts al
 
 ## Security - HTTPS
 
-In the [previous chapter about HTTPS](https.md){.internal-link target=\_blank} we learned about how HTTPS provides encryption for your API.
+In the [previous chapter about HTTPS](https.md){.internal-link target=_blank} we learned about how HTTPS provides encryption for your API.
 
 We also saw that HTTPS is normally provided by a component **external** to your application server, a **TLS Termination Proxy**.
 
@@ -35,17 +35,17 @@ And there has to be something in charge of **renewing the HTTPS certificates**, 
 
 Some of the tools you could use as a TLS Termination Proxy are:
 
-- Traefik
-  - Automatically handles certificates renewals ✨
-- Caddy
-  - Automatically handles certificates renewals ✨
-- Nginx
-  - With an external component like Certbot for certificate renewals
-- HAProxy
-  - With an external component like Certbot for certificate renewals
-- Kubernetes with an Ingress Controller like Nginx
-  - With an external component like cert-manager for certificate renewals
-- Handled internally by a cloud provider as part of their services (read below 👇)
+* Traefik
+    * Automatically handles certificates renewals ✨
+* Caddy
+    * Automatically handles certificates renewals ✨
+* Nginx
+    * With an external component like Certbot for certificate renewals
+* HAProxy
+    * With an external component like Certbot for certificate renewals
+* Kubernetes with an Ingress Controller like Nginx
+    * With an external component like cert-manager for certificate renewals
+* Handled internally by a cloud provider as part of their services (read below 👇)
 
 Another option is that you could use a **cloud service** that does more of the work including setting up HTTPS. It could have some restrictions or charge you more, etc. But in that case, you wouldn't have to set up a TLS Termination Proxy yourself.
 
@@ -63,20 +63,20 @@ We will talk a lot about the running "**process**", so it's useful to have clari
 
 The word **program** is commonly used to describe many things:
 
-- The **code** that you write, the **Python files**.
-- The **file** that can be **executed** by the operating system, for example: `python`, `python.exe` or `uvicorn`.
-- A particular program while it is **running** on the operating system, using the CPU, and storing things on memory. This is also called a **process**.
+* The **code** that you write, the **Python files**.
+* The **file** that can be **executed** by the operating system, for example: `python`, `python.exe` or `uvicorn`.
+* A particular program while it is **running** on the operating system, using the CPU, and storing things on memory. This is also called a **process**.
 
 ### What is a Process
 
 The word **process** is normally used in a more specific way, only referring to the thing that is running in the operating system (like in the last point above):
 
-- A particular program while it is **running** on the operating system.
-  - This doesn't refer to the file, nor to the code, it refers **specifically** to the thing that is being **executed** and managed by the operating system.
-- Any program, any code, **can only do things** when it is being **executed**. So, when there's a **process running**.
-- The process can be **terminated** (or "killed") by you, or by the operating system. At that point, it stops running/being executed, and it can **no longer do things**.
-- Each application that you have running on your computer has some process behind it, each running program, each window, etc. And there are normally many processes running **at the same time** while a computer is on.
-- There can be **multiple processes** of the **same program** running at the same time.
+* A particular program while it is **running** on the operating system.
+    * This doesn't refer to the file, nor to the code, it refers **specifically** to the thing that is being **executed** and managed by the operating system.
+* Any program, any code, **can only do things** when it is being **executed**. So, when there's a **process running**.
+* The process can be **terminated** (or "killed") by you, or by the operating system. At that point, it stops running/being executed, and it can **no longer do things**.
+* Each application that you have running on your computer has some process behind it, each running program, each window, etc. And there are normally many processes running **at the same time** while a computer is on.
+* There can be **multiple processes** of the **same program** running at the same time.
 
 If you check out the "task manager" or "system monitor" (or similar tools) in your operating system, you will be able to see many of those processes running.
 
@@ -94,7 +94,7 @@ In most cases, when you create a web API, you want it to be **always running**, 
 
 ### In a Remote Server
 
-When you set up a remote server (a cloud server, a virtual machine, etc.) the simplest thing you can do is use `readyapi run` (which uses Uvicorn) or something similar, manually, the same way you do when developing locally.
+When you set up a remote server (a cloud server, a virtual machine, etc.) the simplest thing you can do is use `readyapi run` (which uses Uvicorn) or something  similar, manually, the same way you do when developing locally.
 
 And it will work and will be useful **during development**.
 
@@ -114,14 +114,14 @@ To achieve this, you will normally have a **separate program** that would make s
 
 Some examples of the tools that can do this job are:
 
-- Docker
-- Kubernetes
-- Docker Compose
-- Docker in Swarm Mode
-- Systemd
-- Supervisor
-- Handled internally by a cloud provider as part of their services
-- Others...
+* Docker
+* Kubernetes
+* Docker Compose
+* Docker in Swarm Mode
+* Systemd
+* Supervisor
+* Handled internally by a cloud provider as part of their services
+* Others...
 
 I'll give you more concrete examples in the next chapters.
 
@@ -131,7 +131,7 @@ Similar to making sure your application is run on startup, you probably also wan
 
 ### We Make Mistakes
 
-We, as humans, make **mistakes**, all the time. Software almost _always_ has **bugs** hidden in different places. 🐛
+We, as humans, make **mistakes**, all the time. Software almost *always* has **bugs** hidden in different places. 🐛
 
 And we as developers keep improving the code as we find those bugs and as we implement new features (possibly adding new bugs too 😅).
 
@@ -145,7 +145,7 @@ The client will get a **500 Internal Server Error** for that request, but the ap
 
 Nevertheless, there might be cases where we write some code that **crashes the entire application** making Uvicorn and Python crash. 💥
 
-And still, you would probably not want the application to stay dead because there was an error in one place, you probably want it to **continue running** at least for the _path operations_ that are not broken.
+And still, you would probably not want the application to stay dead because there was an error in one place, you probably want it to **continue running** at least for the *path operations* that are not broken.
 
 ### Restart After Crash
 
@@ -167,14 +167,14 @@ In most cases, the same tool that is used to **run the program on startup** is a
 
 For example, this could be handled by:
 
-- Docker
-- Kubernetes
-- Docker Compose
-- Docker in Swarm Mode
-- Systemd
-- Supervisor
-- Handled internally by a cloud provider as part of their services
-- Others...
+* Docker
+* Kubernetes
+* Docker Compose
+* Docker in Swarm Mode
+* Systemd
+* Supervisor
+* Handled internally by a cloud provider as part of their services
+* Others...
 
 ## Replication - Processes and Memory
 
@@ -190,7 +190,7 @@ When you run **multiple processes** of the same API program, they are commonly c
 
 ### Worker Processes and Ports
 
-Remember from the docs [About HTTPS](https.md){.internal-link target=\_blank} that only one process can be listening on one combination of port and IP address in a server?
+Remember from the docs [About HTTPS](https.md){.internal-link target=_blank} that only one process can be listening on one combination of port and IP address in a server?
 
 This is still true.
 
@@ -222,7 +222,7 @@ And of course, the same machine would probably have **other processes** running 
 
 An interesting detail is that the percentage of the **CPU used** by each process can **vary** a lot over time, but the **memory (RAM)** normally stays more or less **stable**.
 
-If you have an API that does a comparable amount of computations every time and you have a lot of clients, then the **CPU utilization** will probably _also be stable_ (instead of constantly going up and down quickly).
+If you have an API that does a comparable amount of computations every time and you have a lot of clients, then the **CPU utilization** will probably *also be stable* (instead of constantly going up and down quickly).
 
 ### Examples of Replication Tools and Strategies
 
@@ -232,18 +232,18 @@ The main constraint to consider is that there has to be a **single** component h
 
 Here are some possible combinations and strategies:
 
-- **Uvicorn** with `--workers`
-  - One Uvicorn **process manager** would listen on the **IP** and **port**, and it would start **multiple Uvicorn worker processes**.
-- **Kubernetes** and other distributed **container systems**
-  - Something in the **Kubernetes** layer would listen on the **IP** and **port**. The replication would be by having **multiple containers**, each with **one Uvicorn process** running.
-- **Cloud services** that handle this for you
-  - The cloud service will probably **handle replication for you**. It would possibly let you define **a process to run**, or a **container image** to use, in any case, it would most probably be **a single Uvicorn process**, and the cloud service would be in charge of replicating it.
+* **Uvicorn** with `--workers`
+    * One Uvicorn **process manager** would listen on the **IP** and **port**, and it would start **multiple Uvicorn worker processes**.
+* **Kubernetes** and other distributed **container systems**
+    * Something in the **Kubernetes** layer would listen on the **IP** and **port**. The replication would be by having **multiple containers**, each with **one Uvicorn process** running.
+* **Cloud services** that handle this for you
+    * The cloud service will probably **handle replication for you**. It would possibly let you define **a process to run**, or a **container image** to use, in any case, it would most probably be **a single Uvicorn process**, and the cloud service would be in charge of replicating it.
 
 /// tip
 
 Don't worry if some of these items about **containers**, Docker, or Kubernetes don't make a lot of sense yet.
 
-I'll tell you more about container images, Docker, Kubernetes, etc. in a future chapter: [ReadyAPI in Containers - Docker](docker.md){.internal-link target=\_blank}.
+I'll tell you more about container images, Docker, Kubernetes, etc. in a future chapter: [ReadyAPI in Containers - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -257,7 +257,7 @@ But in most cases, you will want to perform these steps only **once**.
 
 So, you will want to have a **single process** to perform those **previous steps**, before starting the application.
 
-And you will have to make sure that it's a single process running those previous steps _even_ if afterwards, you start **multiple processes** (multiple workers) for the application itself. If those steps were run by **multiple processes**, they would **duplicate** the work by running it in **parallel**, and if the steps were something delicate like a database migration, they could cause conflicts with each other.
+And you will have to make sure that it's a single process running those previous steps *even* if afterwards, you start **multiple processes** (multiple workers) for the application itself. If those steps were run by **multiple processes**, they would **duplicate** the work by running it in **parallel**, and if the steps were something delicate like a database migration, they could cause conflicts with each other.
 
 Of course, there are some cases where there's no problem in running the previous steps multiple times, in that case, it's a lot easier to handle.
 
@@ -275,13 +275,13 @@ This will **depend heavily** on the way you **deploy your system**, and it would
 
 Here are some possible ideas:
 
-- An "Init Container" in Kubernetes that runs before your app container
-- A bash script that runs the previous steps and then starts your application
-  - You would still need a way to start/restart _that_ bash script, detect errors, etc.
+* An "Init Container" in Kubernetes that runs before your app container
+* A bash script that runs the previous steps and then starts your application
+    * You would still need a way to start/restart *that* bash script, detect errors, etc.
 
 /// tip
 
-I'll give you more concrete examples for doing this with containers in a future chapter: [ReadyAPI in Containers - Docker](docker.md){.internal-link target=\_blank}.
+I'll give you more concrete examples for doing this with containers in a future chapter: [ReadyAPI in Containers - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -309,12 +309,12 @@ You can use simple tools like `htop` to see the CPU and RAM used in your server 
 
 You have been reading here some of the main concepts that you would probably need to keep in mind when deciding how to deploy your application:
 
-- Security - HTTPS
-- Running on startup
-- Restarts
-- Replication (the number of processes running)
-- Memory
-- Previous steps before starting
+* Security - HTTPS
+* Running on startup
+* Restarts
+* Replication (the number of processes running)
+* Memory
+* Previous steps before starting
 
 Understanding these ideas and how to apply them should give you the intuition necessary to take any decisions when configuring and tweaking your deployments. 🤓
 

@@ -16,8 +16,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 
 ...los parámetros de query son:
 
-- `skip`: con un valor de `0`
-- `limit`: con un valor de `10`
+* `skip`: con un valor de `0`
+* `limit`: con un valor de `10`
 
 Dado que son parte de la URL son strings "naturalmente".
 
@@ -25,10 +25,10 @@ Pero cuando los declaras con tipos de Python (en el ejemplo arriba, como `int`) 
 
 Todo el proceso que aplicaba a los parámetros de path también aplica a los parámetros de query:
 
-- Soporte del editor (obviamente)
-- <abbr title="convertir el string que viene de un HTTP request a datos de Python">"Parsing"</abbr> de datos
-- Validación de datos
-- Documentación automática
+* Soporte del editor (obviamente)
+* <abbr title="convertir el string que viene de un HTTP request a datos de Python">"Parsing"</abbr> de datos
+* Validación de datos
+* Documentación automática
 
 ## Configuraciones por defecto
 
@@ -56,8 +56,8 @@ http://127.0.0.1:8000/items/?skip=20
 
 Los valores de los parámetros en tu función serán:
 
-- `skip=20`: porque lo definiste en la URL
-- `limit=10`: porque era el valor por defecto
+* `skip=20`: porque lo definiste en la URL
+* `limit=10`: porque era el valor por defecto
 
 ## Parámetros opcionales
 
@@ -195,12 +195,12 @@ Por supuesto que también puedes definir algunos parámetros como requeridos, co
 
 En este caso hay 3 parámetros de query:
 
-- `needy`, un `str` requerido.
-- `skip`, un `int` con un valor por defecto de `0`.
-- `limit`, un `int` opcional.
+* `needy`, un `str` requerido.
+* `skip`, un `int` con un valor por defecto de `0`.
+* `limit`, un `int` opcional.
 
 /// tip | Consejo
 
-También podrías usar los `Enum`s de la misma manera que con los [Parámetros de path](path-params.md#valores-predefinidos){.internal-link target=\_blank}.
+También podrías usar los `Enum`s de la misma manera que con los [Parámetros de path](path-params.md#valores-predefinidos){.internal-link target=_blank}.
 
 ///

@@ -6,20 +6,20 @@
 
 ### برپایه استاندارد های باز
 
-- <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>OpenAPI</strong></a> برای ساخت API, شامل مشخص سازی <abbr title="که علاوه بر path, به عنوان endpoint و route نیز شناخته میشود">path</abbr> <abbr title="که به عنوان متودهای HTTP یعنی POST,GET,PUT,DELETE و ... شناخته میشوند">operation</abbr> ها, <abbr title="parameters">پارامترها</abbr>, body request ها, امنیت و غیره.
-- مستندسازی خودکار data model با <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>JSON Schema</strong></a> (همانطور که OpenAPI خود نیز مبتنی بر JSON Schema است).
-- طراحی شده بر اساس استاندارد هایی که پس از یک مطالعه دقیق بدست آمده اند بجای طرحی ناپخته و بدون فکر.
-- همچنین به شما اجازه میدهد تا از تولید خودکار client code در بسیاری از زبان ها استفاده کنید.
+* <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>OpenAPI</strong></a> برای ساخت API, شامل مشخص سازی <abbr title="که علاوه بر path, به عنوان endpoint و route نیز شناخته میشود">path</abbr> <abbr title="که به عنوان متودهای HTTP یعنی POST,GET,PUT,DELETE و ... شناخته میشوند">operation</abbr> ها, <abbr title="parameters">پارامترها</abbr>, body request ها, امنیت و غیره.
+* مستندسازی خودکار data model با <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>JSON Schema</strong></a> (همانطور که OpenAPI خود نیز مبتنی بر JSON Schema است).
+* طراحی شده بر اساس استاندارد هایی که پس از یک مطالعه دقیق بدست آمده اند بجای طرحی ناپخته و بدون فکر.
+* همچنین به شما اجازه میدهد تا از تولید خودکار client code در بسیاری از زبان ها استفاده کنید.
 
 ### مستندات خودکار
 
 مستندات API تعاملی و ایجاد رابط کاربری وب. از آنجایی که این فریم ورک برپایه OpenAPI میباشد، آپشن های متعددی وجود دارد که ۲ مورد بصورت پیش فرض گنجانده شده اند.
 
-- <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>، با <abbr title="interactive exploration">کاوش تعاملی</abbr>، API خود را مستقیما از طریق مرورگر صدازده و تست کنید.
+* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>، با <abbr title="interactive exploration">کاوش تعاملی</abbr>، API خود را مستقیما از طریق مرورگر صدازده و تست کنید.
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-- مستندات API جایگزین با <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
+* مستندات API جایگزین با <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
@@ -83,11 +83,11 @@ my_second_user: User = User(**second_user_data)
 
 ببینید که چگونه ویرایشگر شما ممکن است به شما کمک کند:
 
-- در <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
+* در <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
 
-- در <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
+* در <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
 
@@ -103,18 +103,18 @@ ReadyAPI **پیش فرض** های معقولی برای همه چیز دارد،
 
 ### اعتبارسنجی
 
-- اعتبارسنجی برای بیشتر (یا همه؟) **data type** های پایتون، شامل:
+* اعتبارسنجی برای بیشتر (یا همه؟) **data type** های پایتون، شامل:
 
-  - JSON objects (`dict`)
-  - آرایه های (‍‍‍‍`list`) JSON با قابلیت مشخص سازی تایپ ایتم های درون لیست.
-  - فیلد های رشته (`str`)، به همراه مشخص سازی حداقل و حداکثر طول رشته.
-  - اعداد (‍‍`int`,`float`) با حداقل و حداکثر مقدار و غیره.
+    * JSON objects (`dict`)
+    * آرایه های (‍‍‍‍`list`) JSON با قابلیت مشخص سازی تایپ ایتم های درون لیست.
+    * فیلد های رشته (`str`)، به همراه مشخص سازی حداقل و حداکثر طول رشته.
+    * اعداد (‍‍`int`,`float`) با حداقل و حداکثر مقدار و غیره.
 
-- اعتبارسنجی برای تایپ های عجیب تر، مثل:
-  - URL.
-  - Email.
-  - UUID.
-  - و غیره.
+* اعتبارسنجی برای تایپ های عجیب تر، مثل:
+    * URL.
+    * Email.
+    * UUID.
+    * و غیره.
 
 تمام اعتبارسنجی ها توسط کتابخانه اثبات شده و قدرتمند **Pydantic** انجام میشود.
 
@@ -124,12 +124,12 @@ ReadyAPI **پیش فرض** های معقولی برای همه چیز دارد،
 
 تمام طرح های امنیتی در OpenAPI تعریف شده اند، از جمله:
 
-- .
-- **OAuth2** (همچنین با **JWT tokens**). آموزش را در [OAuth2 with JWT](tutorial/security/oauth2-jwt.md){.internal-link target=\_blank} مشاهده کنید.
-- کلید های API:
-  - <abbr title="سرصفحه ها">Headers</abbr>
-  - <abbr title="پارامترهای پرسمان">Query parameters</abbr>
-  - <abbr title="کوکی ها">Cookies</abbr>، و غیره.
+* .
+* **OAuth2** (همچنین با **JWT tokens**). آموزش را در [OAuth2 with JWT](tutorial/security/oauth2-jwt.md){.internal-link target=\_blank} مشاهده کنید.
+* کلید های API:
+    * <abbr title="سرصفحه ها">Headers</abbr>
+    * <abbr title="پارامترهای پرسمان">Query parameters</abbr>
+    * <abbr title="کوکی ها">Cookies</abbr>، و غیره.
 
 به علاوه تمام ویژگی های امنیتی از **Statlette** (شامل **<abbr title="کوکی های جلسه">session cookies</abbr>**)
 
@@ -139,17 +139,17 @@ ReadyAPI **پیش فرض** های معقولی برای همه چیز دارد،
 
 ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "components", "resources", "services" و "providers" شناخته میشود'><strong>Dependency Injection</strong></abbr> بسیار آسان اما بسیار قدرتمند است.
 
-- حتی وابستگی ها نیز میتوانند وابستگی هایی داشته باشند و یک سلسله مراتب یا **"گرافی" از وابستگی ها** ایجاد کنند.
+* حتی وابستگی ها نیز میتوانند وابستگی هایی داشته باشند و یک سلسله مراتب یا **"گرافی" از وابستگی ها** ایجاد کنند.
 
-- همه چیز توسط فریم ورک **به طور خودکار اداره میشود**
+* همه چیز توسط فریم ورک **به طور خودکار اداره میشود**
 
-- همه وابستگی ها میتوانند به داده های request ها نیاز داشته باشند و مستندات خودکار و محدودیت های <abbr title="عملیات مسیر">path operation</abbr> را **افزایش** دهند.
+* همه وابستگی ها میتوانند به داده های request ها نیاز داشته باشند و مستندات خودکار و محدودیت های <abbr title="عملیات مسیر">path operation</abbr> را **افزایش** دهند.
 
-- با قابلیت **اعتبارسنجی خودکار** حتی برای path operation parameter های تعریف شده در وابستگی ها.
+* با قابلیت **اعتبارسنجی خودکار** حتی برای path operation parameter های تعریف شده در وابستگی ها.
 
-- پشتیبانی از سیستم های پیچیده احرازهویت کاربر، **اتصالات پایگاه داده** و غیره.
+* پشتیبانی از سیستم های پیچیده احرازهویت کاربر، **اتصالات پایگاه داده** و غیره.
 
-- بدون هیچ ارتباطی با دیتابیس ها، فرانت اند و غیره. اما ادغام آسان و راحت با همه آنها.
+* بدون هیچ ارتباطی با دیتابیس ها، فرانت اند و غیره. اما ادغام آسان و راحت با همه آنها.
 
 ### پلاگین های نامحدود
 
@@ -159,11 +159,11 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 ### تست شده
 
-- 100% <abbr title="مقدار کدی که به طور خودکار تست شده است">پوشش تست</abbr>.
+* 100% <abbr title="مقدار کدی که به طور خودکار تست شده است">پوشش تست</abbr>.
 
-- 100% کد بر اساس <abbr title="حاشیه نویسی تایپ های پایتون (Python type annotations)، با استفاده از آن ویرایشگر و ابزارهای خارجی شما می توانند پشتیبانی بهتری از شما ارائه دهند">type annotate ها</abbr>.
+* 100% کد بر اساس <abbr title="حاشیه نویسی تایپ های پایتون (Python type annotations)، با استفاده از آن ویرایشگر و ابزارهای خارجی شما می توانند پشتیبانی بهتری از شما ارائه دهند">type annotate ها</abbr>.
 
-- استفاده شده در اپلیکیشن های تولید
+* استفاده شده در اپلیکیشن های تولید
 
 ## ویژگی های Starlette
 
@@ -173,15 +173,15 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 با **ReadyAPI** شما تمام ویژگی های **Starlette** را خواهید داشت (زیرا ReadyAPI یک نسخه و نمونه به تمام معنا از Starlette است):
 
-- عملکرد به طورجدی چشمگیر. <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">این یکی از سریعترین فریم ورک های موجود در پایتون است که همتراز با **نود جی اس** و **گو**</a> است.
-- پشتیبانی از **WebSocket**.
-- <abbr title="In-process background tasks">تسک های درجریان در پس زمینه</abbr>.
-- <abbr title="Startup and shutdown events">رویداد های راه اندازی و متوفق شدن<abbr>.
-- تست کلاینت ساخته شده به روی HTTPX.
-- **CORS**, GZip, فایل های استاتیک, <abbr title="Streaming responses">پاسخ های جریانی</abbr>.
-- پشتیبانی از **نشست ها و کوکی ها**.
-- 100% پوشش با تست.
-- 100% کد براساس type annotate ها.
+* عملکرد به طورجدی چشمگیر. <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">این یکی از سریعترین فریم ورک های موجود در پایتون است که همتراز با **نود جی اس** و **گو**</a> است.
+* پشتیبانی از **WebSocket**.
+* <abbr title="In-process background tasks">تسک های درجریان در پس زمینه</abbr>.
+* <abbr title="Startup and shutdown events">رویداد های راه اندازی و متوفق شدن<abbr>.
+* تست کلاینت ساخته شده به روی HTTPX.
+* **CORS**, GZip, فایل های استاتیک, <abbr title="Streaming responses">پاسخ های جریانی</abbr>.
+* پشتیبانی از **نشست ها و کوکی ها**.
+* 100% پوشش با تست.
+* 100% کد براساس type annotate ها.
 
 ## ویژگی های Pydantic
 
@@ -195,15 +195,15 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 با ReadyAPI شما تمام ویژگی های Pydantic را دراختیار دارید (زیرا ReadyAPI برای تمام بخش مدیریت دیتا بر اساس Pydantic عمل میکند):
 
-- **خبری از گیج شدن نیست**:
-  - هیچ <abbr title="micro-language">زبان خردی</abbr> برای یادگیری تعریف طرحواره های جدید وجود ندارد.
-  - اگر تایپ های پایتون را میشناسید، نحوه استفاده از Pydantic را نیز میدانید.
-- به خوبی با **<abbr title="همان Integrated Development Environment, شبیه به ویرایشگر کد">IDE</abbr>/<abbr title="برنامه ای که خطاهای کد را بررسی می کند">linter</abbr>/مغز** شما عمل میکند:
-  - به این دلیل که ساختار داده Pydantic فقط نمونه هایی از کلاس هایی هستند که شما تعریف میکنید، تکمیل خودکار، mypy، linting و مشاهده شما باید به درستی با داده های معتبر شما کار کنند.
-- اعتبار سنجی **ساختارهای پیچیده**:
-  - استفاده از مدل های سلسله مراتبی Pydantic, `List` و `Dict` کتابخانه `typing` پایتون و غیره.
-  - و اعتبارسنج ها اجازه میدهند که طرحواره های داده پیچیده به طور واضح و آسان تعریف، بررسی و بر پایه JSON مستند شوند.
-  - شما میتوانید ابجکت های عمیقا تودرتو JSON را که همگی تایید شده و annotated شده اند را داشته باشید.
-- **قابل توسعه**:
-  - Pydantic اجازه میدهد تا data type های سفارشی تعریف شوند یا میتوانید اعتبارسنجی را با روش هایی به روی مدل ها با <abbr title="دکوریتور های اعتبارسنج">validator decorator</abbr> گسترش دهید.
-- 100% پوشش با تست.
+* **خبری از گیج شدن نیست**:
+    * هیچ <abbr title="micro-language">زبان خردی</abbr> برای یادگیری تعریف طرحواره های جدید وجود ندارد.
+    * اگر تایپ های پایتون را میشناسید، نحوه استفاده از Pydantic را نیز میدانید.
+* به خوبی با **<abbr title="همان Integrated Development Environment, شبیه به ویرایشگر کد">IDE</abbr>/<abbr title="برنامه ای که خطاهای کد را بررسی می کند">linter</abbr>/مغز** شما عمل میکند:
+    * به این دلیل که ساختار داده Pydantic فقط نمونه هایی از کلاس هایی هستند که شما تعریف میکنید، تکمیل خودکار، mypy، linting و مشاهده شما باید به درستی با داده های معتبر شما کار کنند.
+* اعتبار سنجی **ساختارهای پیچیده**:
+    * استفاده از مدل های سلسله مراتبی Pydantic, `List` و `Dict` کتابخانه `typing` پایتون و غیره.
+    * و اعتبارسنج ها اجازه میدهند که طرحواره های داده پیچیده به طور واضح و آسان تعریف، بررسی و بر پایه JSON مستند شوند.
+    * شما میتوانید ابجکت های عمیقا تودرتو JSON را که همگی تایید شده و annotated شده اند را داشته باشید.
+* **قابل توسعه**:
+    * Pydantic اجازه میدهد تا data type های سفارشی تعریف شوند یا میتوانید اعتبارسنجی را با روش هایی به روی مدل ها با <abbr title="دکوریتور های اعتبارسنج">validator decorator</abbr> گسترش دهید.
+* 100% پوشش با تست.

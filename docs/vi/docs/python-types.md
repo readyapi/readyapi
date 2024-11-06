@@ -34,9 +34,9 @@ John Doe
 
 Hàm thực hiện như sau:
 
-- Lấy một `first_name` và `last_name`.
-- Chuyển đổi kí tự đầu tiên của mỗi biến sang kiểu chữ hoa với `title()`.
-- <abbr title="Đặt chúng lại với nhau thành một. Với các nội dung lần lượt.">Nối</abbr> chúng lại với nhau bằng một kí tự trắng ở giữa.
+* Lấy một `first_name` và `last_name`.
+* Chuyển đổi kí tự đầu tiên của mỗi biến sang kiểu chữ hoa với `title()`.
+* <abbr title="Đặt chúng lại với nhau thành một. Với các nội dung lần lượt.">Nối</abbr> chúng lại với nhau bằng một kí tự trắng ở giữa.
 
 ```Python hl_lines="2"
 {!../../docs_src/python_types/tutorial001.py!}
@@ -138,10 +138,10 @@ Bạn có thể khai báo tất cả các kiểu dữ liệu chuẩn của Pytho
 
 Bạn có thể sử dụng, ví dụ:
 
-- `int`
-- `float`
-- `bool`
-- `bytes`
+* `int`
+* `float`
+* `bool`
+* `bytes`
 
 ```Python hl_lines="1"
 {!../../docs_src/python_types/tutorial005.py!}
@@ -235,7 +235,7 @@ Và do vậy, trình soạn thảo biết nó là một `str`, và cung cấp s�
 
 #### Tuple and Set
 
-Bạn sẽ làm điều tương tự để khai báo các `tuple` và các `set`:
+Bạn sẽ làm điều tương tự để khai báo các `tuple` và  các `set`:
 
 //// tab | Python 3.9+
 
@@ -255,8 +255,8 @@ Bạn sẽ làm điều tương tự để khai báo các `tuple` và các `set`
 
 Điều này có nghĩa là:
 
-- Biến `items_t` là một `tuple` với 3 phần tử, một `int`, một `int` nữa, và một `str`.
-- Biến `items_s` là một `set`, và mỗi phần tử của nó có kiểu `bytes`.
+* Biến `items_t` là một `tuple` với 3 phần tử, một `int`, một `int` nữa, và một `str`.
+* Biến `items_s` là một `set`, và mỗi phần tử của nó có kiểu `bytes`.
 
 #### Dict
 
@@ -284,19 +284,20 @@ Tham số kiểu dữ liệu thứ hai dành cho giá trị của `dict`.
 
 Điều này có nghĩa là:
 
-- Biến `prices` là một `dict`:
-  - Khóa của `dict` này là kiểu `str` (đó là tên của mỗi vật phẩm).
-  - Giá trị của `dict` này là kiểu `float` (đó là giá của mỗi vật phẩm).
+* Biến `prices` là một `dict`:
+    * Khóa của `dict` này là kiểu `str` (đó là tên của mỗi vật phẩm).
+    * Giá trị của `dict` này là kiểu `float` (đó là giá của mỗi vật phẩm).
 
 #### Union
 
-Bạn có thể khai báo rằng một biến có thể là \*\*một vài kiểu dữ liệu" bất kì, ví dụ, một `int` hoặc một `str`.
+Bạn có thể khai báo rằng một biến có thể là **một vài kiểu dữ liệu" bất kì, ví dụ, một `int` hoặc một `str`.
 
 Trong Python 3.6 hoặc lớn hơn (bao gồm Python 3.10) bạn có thể sử dụng kiểu `Union` từ `typing` và đặt trong dấu ngoặc vuông những giá trị được chấp nhận.
 
 In Python 3.10 there's also a **new syntax** where you can put the possible types separated by a <abbr title='also called "bitwise or operator", but that meaning is not relevant here'>vertical bar (`|`)</abbr>.
 
 Trong Python 3.10 cũng có một **cú pháp mới** mà bạn có thể đặt những kiểu giá trị khả thi phân cách bởi một dấu <abbr title='cũng được gọi là "toán tử nhị phân"'>sổ dọc (`|`)</abbr>.
+
 
 //// tab | Python 3.10+
 
@@ -362,8 +363,8 @@ If you are using a Python version below 3.10, here's a tip from my very **subjec
 
 Nếu bạn đang sử dụng phiên bản Python dưới 3.10, đây là một mẹo từ ý kiến rất "chủ quan" của tôi:
 
-- 🚨 Tránh sử dụng `Optional[SomeType]`
-- Thay vào đó ✨ **sử dụng `Union[SomeType, None]`** ✨.
+* 🚨 Tránh sử dụng `Optional[SomeType]`
+* Thay vào đó ✨ **sử dụng `Union[SomeType, None]`** ✨.
 
 Cả hai là tương đương và bên dưới chúng giống nhau, nhưng tôi sẽ đễ xuất `Union` thay cho `Optional` vì từ "**tùy chọn**" có vẻ ngầm định giá trị là tùy chọn, và nó thực sự có nghĩa rằng "nó có thể là `None`", do đó nó không phải là tùy chọn và nó vẫn được yêu cầu.
 
@@ -383,7 +384,7 @@ Tham số `name` được định nghĩa là `Optional[str]`, nhưng nó **khôn
 say_hi()  # Oh, no, this throws an error! 😱
 ```
 
-Tham số `name` **vẫn được yêu cầu** (không phải là _tùy chọn_) vì nó không có giá trị mặc định. Trong khi đó, `name` chấp nhận `None` như là giá trị:
+Tham số `name` **vẫn được yêu cầu** (không phải là *tùy chọn*) vì nó không có giá trị mặc định. Trong khi đó, `name` chấp nhận `None` như là giá trị:
 
 ```Python
 say_hi(name=None)  # This works, None is valid 🎉
@@ -397,6 +398,7 @@ Tin tốt là, khi bạn sử dụng Python 3.10, bạn sẽ không phải lo l�
 
 Và sau đó, bạn sẽ không phải lo rằng những cái tên như `Optional` và `Union`. 😎
 
+
 #### Những kiểu dữ liệu tổng quát
 
 Những kiểu dữ liệu này lấy tham số kiểu dữ liệu trong dấu ngoặc vuông được gọi là **Kiểu dữ liệu tổng quát**, cho ví dụ:
@@ -405,16 +407,16 @@ Những kiểu dữ liệu này lấy tham số kiểu dữ liệu trong dấu n
 
 Bạn có thể sử dụng các kiểu dữ liệu có sẵn như là kiểu dữ liệu tổng quát (với ngoặc vuông và kiểu dữ liệu bên trong):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 Và tương tự với Python 3.6, từ mô đun `typing`:
 
-- `Union`
-- `Optional` (tương tự như Python 3.6)
-- ...và các kiểu dữ liệu khác.
+* `Union`
+* `Optional` (tương tự như Python 3.6)
+* ...và các kiểu dữ liệu khác.
 
 Trong Python 3.10, thay vì sử dụng `Union` và `Optional`, bạn có thể sử dụng <abbr title='cũng gọi là "toán tử nhị phân", nhưng ý nghĩa không liên quan ở đây'>sổ dọc ('|')</abbr> để khai báo hợp của các kiểu dữ liệu, điều đó tốt hơn và đơn giản hơn nhiều.
 
@@ -424,28 +426,28 @@ Trong Python 3.10, thay vì sử dụng `Union` và `Optional`, bạn có thể 
 
 Bạn có thể sử dụng các kiểu dữ liệu có sẵn tương tự như (với ngoặc vuông và kiểu dữ liệu bên trong):
 
-- `list`
-- `tuple`
-- `set`
-- `dict`
+* `list`
+* `tuple`
+* `set`
+* `dict`
 
 Và tương tự với Python 3.6, từ mô đun `typing`:
 
-- `Union`
-- `Optional`
-- ...and others.
+* `Union`
+* `Optional`
+* ...and others.
 
 ////
 
 //// tab | Python 3.8+
 
-- `List`
-- `Tuple`
-- `Set`
-- `Dict`
-- `Union`
-- `Optional`
-- ...và các kiểu khác.
+* `List`
+* `Tuple`
+* `Set`
+* `Dict`
+* `Union`
+* `Optional`
+* ...và các kiểu khác.
 
 ////
 
@@ -519,7 +521,7 @@ Một ví dụ từ tài liệu chính thức của Pydantic:
 
 **ReadyAPI** được dựa hoàn toàn trên Pydantic.
 
-Bạn sẽ thấy nhiều ví dụ thực tế hơn trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=\_blank}.
+Bạn sẽ thấy nhiều ví dụ thực tế hơn trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=_blank}.
 
 /// tip
 
@@ -557,9 +559,10 @@ Python bản thân nó không làm bất kì điều gì với `Annotated`. Vớ
 
 Nhưng bạn có thể sử dụng `Annotated` để cung cấp cho **ReadyAPI** metadata bổ sung về cách mà bạn muốn ứng dụng của bạn xử lí.
 
-Điều quan trọng cần nhớ là **_tham số kiểu dữ liệu_ đầu tiên** bạn truyền tới `Annotated` là **kiểu giá trị thực sự**. Phần còn lại chỉ là metadata cho các công cụ khác.
+Điều quan trọng cần nhớ là ***tham số kiểu dữ liệu* đầu tiên** bạn truyền tới `Annotated` là **kiểu giá trị thực sự**. Phần còn lại chỉ là metadata cho các công cụ khác.
 
 Bây giờ, bạn chỉ cần biết rằng `Annotated` tồn tại, và nó là tiêu chuẩn của Python. 😎
+
 
 Sau đó, bạn sẽ thấy sự **mạnh mẽ** mà nó có thể làm.
 
@@ -577,19 +580,19 @@ Và code của bạn sẽ tương thích với nhiều công cụ và thư việ
 
 Với **ReadyAPI**, bạn khai báo các tham số với gợi ý kiểu và bạn có được:
 
-- **Sự hỗ trợ từ các trình soạn thảo**.
-- **Kiểm tra kiểu dữ liệu (type checking)**.
+* **Sự hỗ trợ từ các trình soạn thảo**.
+* **Kiểm tra kiểu dữ liệu (type checking)**.
 
 ...và **ReadyAPI** sử dụng các khia báo để:
 
-- **Định nghĩa các yêu cầu**: từ tham số đường dẫn của request, tham số query, headers, bodies, các phụ thuộc (dependencies),...
-- \*_Chuyển dổi dữ liệu_: từ request sang kiểu dữ liệu được yêu cầu.
-- **Kiểm tra tính đúng đắn của dữ liệu**: tới từ mỗi request:
-  - Sinh **lỗi tự động** để trả về máy khác khi dữ liệu không hợp lệ.
-- **Tài liệu hóa** API sử dụng OpenAPI:
-  - cái mà sau được được sử dụng bởi tài liệu tương tác người dùng.
+* **Định nghĩa các yêu cầu**: từ tham số đường dẫn của request, tham số query, headers, bodies, các phụ thuộc (dependencies),...
+* **Chuyển dổi dữ liệu*: từ request sang kiểu dữ liệu được yêu cầu.
+* **Kiểm tra tính đúng đắn của dữ liệu**: tới từ mỗi request:
+    * Sinh **lỗi tự động** để trả về máy khác khi dữ liệu không hợp lệ.
+* **Tài liệu hóa** API sử dụng OpenAPI:
+    * cái mà sau được được sử dụng bởi tài liệu tương tác người dùng.
 
-Điều này có thể nghe trừu tượng. Đừng lo lắng. Bạn sẽ thấy tất cả chúng trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=\_blank}.
+Điều này có thể nghe trừu tượng. Đừng lo lắng. Bạn sẽ thấy tất cả chúng trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=_blank}.
 
 Điều quan trọng là bằng việc sử dụng các kiểu dữ liệu chuẩn của Python (thay vì thêm các lớp, decorators,...), **ReadyAPI** sẽ thực hiện nhiều công việc cho bạn.
 

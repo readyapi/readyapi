@@ -1,12 +1,12 @@
 # Renvoyer directement une réponse
 
-Lorsque vous créez une _opération de chemins_ **ReadyAPI**, vous pouvez normalement retourner n'importe quelle donnée : un `dict`, une `list`, un modèle Pydantic, un modèle de base de données, etc.
+Lorsque vous créez une *opération de chemins* **ReadyAPI**, vous pouvez normalement retourner n'importe quelle donnée : un `dict`, une `list`, un modèle Pydantic, un modèle de base de données, etc.
 
-Par défaut, **ReadyAPI** convertirait automatiquement cette valeur de retour en JSON en utilisant le `jsonable_encoder` expliqué dans [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=\_blank}.
+Par défaut, **ReadyAPI** convertirait automatiquement cette valeur de retour en JSON en utilisant le `jsonable_encoder` expliqué dans [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Ensuite, en arrière-plan, il mettra ces données JSON-compatible (par exemple un `dict`) à l'intérieur d'un `JSONResponse` qui sera utilisé pour envoyer la réponse au client.
 
-Mais vous pouvez retourner une `JSONResponse` directement à partir de vos _opérations de chemin_.
+Mais vous pouvez retourner une `JSONResponse` directement à partir de vos *opérations de chemin*.
 
 Cela peut être utile, par exemple, pour retourner des en-têtes personnalisés ou des cookies.
 
@@ -64,6 +64,6 @@ Vous pouvez mettre votre contenu XML dans une chaîne de caractères, la placer 
 
 Lorsque vous renvoyez une `Response` directement, ses données ne sont pas validées, converties (sérialisées), ni documentées automatiquement.
 
-Mais vous pouvez toujours les documenter comme décrit dans [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}.
+Mais vous pouvez toujours les documenter comme décrit dans [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}.
 
 Vous pouvez voir dans les sections suivantes comment utiliser/déclarer ces `Response`s personnalisées tout en conservant la conversion automatique des données, la documentation, etc.

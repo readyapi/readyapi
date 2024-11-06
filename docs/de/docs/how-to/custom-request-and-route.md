@@ -18,9 +18,9 @@ Wenn Sie gerade erst mit **ReadyAPI** beginnen, möchten Sie diesen Abschnitt vi
 
 Einige Anwendungsfälle sind:
 
-- Konvertieren von Nicht-JSON-Requestbodys nach JSON (z. B. <a href="https://msgpack.org/index.html" class="external-link" target="_blank">`msgpack`</a>).
-- Dekomprimierung gzip-komprimierter Requestbodys.
-- Automatisches Loggen aller Requestbodys.
+* Konvertieren von Nicht-JSON-Requestbodys nach JSON (z. B. <a href="https://msgpack.org/index.html" class="external-link" target="_blank">`msgpack`</a>).
+* Dekomprimierung gzip-komprimierter Requestbodys.
+* Automatisches Loggen aller Requestbodys.
 
 ## Handhaben von benutzerdefinierten Requestbody-Kodierungen
 
@@ -32,7 +32,7 @@ Und eine `APIRoute`-Unterklasse zur Verwendung dieser benutzerdefinierten Reques
 
 /// tip | "Tipp"
 
-Dies ist nur ein einfaches Beispiel, um zu demonstrieren, wie es funktioniert. Wenn Sie Gzip-Unterstützung benötigen, können Sie die bereitgestellte [`GzipMiddleware`](../advanced/middleware.md#gzipmiddleware){.internal-link target=\_blank} verwenden.
+Dies ist nur ein einfaches Beispiel, um zu demonstrieren, wie es funktioniert. Wenn Sie Gzip-Unterstützung benötigen, können Sie die bereitgestellte [`GzipMiddleware`](../advanced/middleware.md#gzipmiddleware){.internal-link target=_blank} verwenden.
 
 ///
 
@@ -76,7 +76,7 @@ Um mehr über den `Request` zu erfahren, schauen Sie sich <a href="https://www.s
 
 Das Einzige, was die von `GzipRequest.get_route_handler` zurückgegebene Funktion anders macht, ist die Konvertierung von `Request` in ein `GzipRequest`.
 
-Dabei kümmert sich unser `GzipRequest` um die Dekomprimierung der Daten (falls erforderlich), bevor diese an unsere _Pfadoperationen_ weitergegeben werden.
+Dabei kümmert sich unser `GzipRequest` um die Dekomprimierung der Daten (falls erforderlich), bevor diese an unsere *Pfadoperationen* weitergegeben werden.
 
 Danach ist die gesamte Verarbeitungslogik dieselbe.
 
@@ -86,7 +86,7 @@ Aufgrund unserer Änderungen in `GzipRequest.body` wird der Requestbody jedoch b
 
 /// tip | "Tipp"
 
-Um dasselbe Problem zu lösen, ist es wahrscheinlich viel einfacher, den `body` in einem benutzerdefinierten Handler für `RequestValidationError` zu verwenden ([Fehlerbehandlung](../tutorial/handling-errors.md#den-requestvalidationerror-body-verwenden){.internal-link target=\_blank}).
+Um dasselbe Problem zu lösen, ist es wahrscheinlich viel einfacher, den `body` in einem benutzerdefinierten Handler für `RequestValidationError` zu verwenden ([Fehlerbehandlung](../tutorial/handling-errors.md#den-requestvalidationerror-body-verwenden){.internal-link target=_blank}).
 
 Dieses Beispiel ist jedoch immer noch gültig und zeigt, wie mit den internen Komponenten interagiert wird.
 
@@ -114,7 +114,7 @@ Sie können auch den Parameter `route_class` eines `APIRouter` festlegen:
 {!../../docs_src/custom_request_and_route/tutorial003.py!}
 ```
 
-In diesem Beispiel verwenden die _Pfadoperationen_ unter dem `router` die benutzerdefinierte `TimedRoute`-Klasse und haben in der Response einen zusätzlichen `X-Response-Time`-Header mit der Zeit, die zum Generieren der Response benötigt wurde:
+In diesem Beispiel verwenden die *Pfadoperationen* unter dem `router` die benutzerdefinierte `TimedRoute`-Klasse und haben in der Response einen zusätzlichen `X-Response-Time`-Header mit der Zeit, die zum Generieren der Response benötigt wurde:
 
 ```Python hl_lines="13-20"
 {!../../docs_src/custom_request_and_route/tutorial003.py!}

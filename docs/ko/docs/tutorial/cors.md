@@ -8,9 +8,9 @@
 
 따라서, 아래는 모두 상이한 출처입니다:
 
-- `http://localhost`
-- `https://localhost`
-- `http://localhost:8080`
+* `http://localhost`
+* `https://localhost`
+* `http://localhost:8080`
 
 모두 `localhost` 에 있지만, 서로 다른 프로토콜과 포트를 사용하고 있으므로 다른 "출처"입니다.
 
@@ -36,15 +36,15 @@
 
 `CORSMiddleware` 을 사용하여 **ReadyAPI** 응용 프로그램의 교차 출처 리소스 공유 환경을 설정할 수 있습니다.
 
-- `CORSMiddleware` 임포트.
-- 허용되는 출처(문자열 형식)의 리스트 생성.
-- ReadyAPI 응용 프로그램에 "미들웨어(middleware)"로 추가.
+* `CORSMiddleware` 임포트.
+* 허용되는 출처(문자열 형식)의 리스트 생성.
+* ReadyAPI 응용 프로그램에 "미들웨어(middleware)"로 추가.
 
 백엔드에서 다음의 사항을 허용할지에 대해 설정할 수도 있습니다:
 
-- 자격증명 (인증 헤더, 쿠키 등).
-- 특정한 HTTP 메소드(`POST`, `PUT`) 또는 와일드카드 `"*"` 를 사용한 모든 HTTP 메소드.
-- 특정한 HTTP 헤더 또는 와일드카드 `"*"` 를 사용한 모든 HTTP 헤더.
+* 자격증명 (인증 헤더, 쿠키 등).
+* 특정한 HTTP 메소드(`POST`, `PUT`) 또는 와일드카드 `"*"` 를 사용한 모든 HTTP 메소드.
+* 특정한 HTTP 헤더 또는 와일드카드 `"*"` 를 사용한 모든 HTTP 헤더.
 
 ```Python hl_lines="2  6-11  13-19"
 {!../../docs_src/cors/tutorial001.py!}
@@ -54,13 +54,13 @@
 
 다음의 인자들이 지원됩니다:
 
-- `allow_origins` - 교차-출처 요청을 보낼 수 있는 출처의 리스트입니다. 예) `['https://example.org', 'https://www.example.org']`. 모든 출처를 허용하기 위해 `['*']` 를 사용할 수 있습니다.
-- `allow_origin_regex` - 교차-출처 요청을 보낼 수 있는 출처를 정규표현식 문자열로 나타냅니다. `'https://.*\.example\.org'`.
-- `allow_methods` - 교차-출처 요청을 허용하는 HTTP 메소드의 리스트입니다. 기본값은 `['GET']` 입니다. `['*']` 을 사용하여 모든 표준 메소드들을 허용할 수 있습니다.
-- `allow_headers` - 교차-출처를 지원하는 HTTP 요청 헤더의 리스트입니다. 기본값은 `[]` 입니다. 모든 헤더들을 허용하기 위해 `['*']` 를 사용할 수 있습니다. `Accept`, `Accept-Language`, `Content-Language` 그리고 `Content-Type` 헤더는 CORS 요청시 언제나 허용됩니다.
-- `allow_credentials` - 교차-출처 요청시 쿠키 지원 여부를 설정합니다. 기본값은 `False` 입니다. 또한 해당 항목을 허용할 경우 `allow_origins` 는 `['*']` 로 설정할 수 없으며, 출처를 반드시 특정해야 합니다.
-- `expose_headers` - 브라우저에 접근할 수 있어야 하는 모든 응답 헤더를 가리킵니다. 기본값은 `[]` 입니다.
-- `max_age` - 브라우저가 CORS 응답을 캐시에 저장하는 최대 시간을 초 단위로 설정합니다. 기본값은 `600` 입니다.
+* `allow_origins` - 교차-출처 요청을 보낼 수 있는 출처의 리스트입니다. 예) `['https://example.org', 'https://www.example.org']`. 모든 출처를 허용하기 위해 `['*']` 를 사용할 수 있습니다.
+* `allow_origin_regex` - 교차-출처 요청을 보낼 수 있는 출처를 정규표현식 문자열로 나타냅니다.  `'https://.*\.example\.org'`.
+* `allow_methods` - 교차-출처 요청을 허용하는 HTTP 메소드의 리스트입니다. 기본값은 `['GET']` 입니다. `['*']` 을 사용하여 모든 표준 메소드들을 허용할 수 있습니다.
+* `allow_headers` - 교차-출처를 지원하는 HTTP 요청 헤더의 리스트입니다. 기본값은 `[]` 입니다. 모든 헤더들을 허용하기 위해 `['*']` 를 사용할 수 있습니다. `Accept`, `Accept-Language`, `Content-Language` 그리고 `Content-Type` 헤더는 CORS 요청시 언제나 허용됩니다.
+* `allow_credentials` - 교차-출처 요청시 쿠키 지원 여부를 설정합니다. 기본값은 `False` 입니다. 또한 해당 항목을 허용할 경우 `allow_origins` 는 `['*']` 로 설정할 수 없으며, 출처를 반드시 특정해야 합니다.
+* `expose_headers` - 브라우저에 접근할 수 있어야 하는 모든 응답 헤더를 가리킵니다. 기본값은 `[]` 입니다.
+* `max_age` - 브라우저가 CORS 응답을 캐시에 저장하는 최대 시간을 초 단위로 설정합니다. 기본값은 `600` 입니다.
 
 미들웨어는 두가지 특정한 종류의 HTTP 요청에 응답합니다...
 

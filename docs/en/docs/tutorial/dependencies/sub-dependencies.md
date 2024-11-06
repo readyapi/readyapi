@@ -124,10 +124,10 @@ Prefer to use the `Annotated` version if possible.
 
 Let's focus on the parameters declared:
 
-- Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).
-  - It depends on the `query_extractor`, and assigns the value returned by it to the parameter `q`.
-- It also declares an optional `last_query` cookie, as a `str`.
-  - If the user didn't provide any query `q`, we use the last query used, which we saved to a cookie before.
+* Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).
+    * It depends on the `query_extractor`, and assigns the value returned by it to the parameter `q`.
+* It also declares an optional `last_query` cookie, as a `str`.
+    * If the user didn't provide any query `q`, we use the last query used, which we saved to a cookie before.
 
 ## Use the dependency
 
@@ -187,7 +187,7 @@ Prefer to use the `Annotated` version if possible.
 
 /// info
 
-Notice that we are only declaring one dependency in the _path operation function_, the `query_or_cookie_extractor`.
+Notice that we are only declaring one dependency in the *path operation function*, the `query_or_cookie_extractor`.
 
 But **ReadyAPI** will know that it has to solve `query_extractor` first, to pass the results of that to `query_or_cookie_extractor` while calling it.
 
@@ -206,7 +206,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Using the same dependency multiple times
 
-If one of your dependencies is declared multiple times for the same _path operation_, for example, multiple dependencies have a common sub-dependency, **ReadyAPI** will know to call that sub-dependency only once per request.
+If one of your dependencies is declared multiple times for the same *path operation*, for example, multiple dependencies have a common sub-dependency, **ReadyAPI** will know to call that sub-dependency only once per request.
 
 And it will save the returned value in a <abbr title="A utility/system to store computed/generated values, to reuse them instead of computing them again.">"cache"</abbr> and pass it to all the "dependants" that need it in that specific request, instead of calling the dependency multiple times for the same request.
 
@@ -240,7 +240,7 @@ async def needy_dependency(fresh_value: str = Depends(get_value, use_cache=False
 
 Apart from all the fancy words used here, the **Dependency Injection** system is quite simple.
 
-Just functions that look the same as the _path operation functions_.
+Just functions that look the same as the *path operation functions*.
 
 But still, it is very powerful, and allows you to declare arbitrarily deeply nested dependency "graphs" (trees).
 

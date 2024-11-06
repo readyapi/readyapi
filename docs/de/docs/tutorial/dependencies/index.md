@@ -6,16 +6,16 @@ Es ist so konzipiert, sehr einfach zu verwenden zu sein und es jedem Entwickler 
 
 ## Was ist „Dependency Injection“
 
-**„Dependency Injection“** bedeutet in der Programmierung, dass es für Ihren Code (in diesem Fall Ihre _Pfadoperation-Funktionen_) eine Möglichkeit gibt, Dinge zu deklarieren, die er verwenden möchte und die er zum Funktionieren benötigt: „Abhängigkeiten“ – „Dependencies“.
+**„Dependency Injection“** bedeutet in der Programmierung, dass es für Ihren Code (in diesem Fall Ihre *Pfadoperation-Funktionen*) eine Möglichkeit gibt, Dinge zu deklarieren, die er verwenden möchte und die er zum Funktionieren benötigt: „Abhängigkeiten“ – „Dependencies“.
 
 Das System (in diesem Fall **ReadyAPI**) kümmert sich dann darum, Ihren Code mit den erforderlichen Abhängigkeiten zu versorgen („die Abhängigkeiten einfügen“ – „inject the dependencies“).
 
 Das ist sehr nützlich, wenn Sie:
 
-- Eine gemeinsame Logik haben (die gleiche Code-Logik immer und immer wieder).
-- Datenbankverbindungen teilen.
-- Sicherheit, Authentifizierung, Rollenanforderungen, usw. durchsetzen.
-- Und viele andere Dinge ...
+* Eine gemeinsame Logik haben (die gleiche Code-Logik immer und immer wieder).
+* Datenbankverbindungen teilen.
+* Sicherheit, Authentifizierung, Rollenanforderungen, usw. durchsetzen.
+* Und viele andere Dinge ...
 
 All dies, während Sie Codeverdoppelung minimieren.
 
@@ -29,7 +29,7 @@ Aber so können wir uns besser auf die Funktionsweise des **Dependency Injection
 
 Konzentrieren wir uns zunächst auf die Abhängigkeit - die Dependency.
 
-Es handelt sich einfach um eine Funktion, die die gleichen Parameter entgegennimmt wie eine _Pfadoperation-Funktion_:
+Es handelt sich einfach um eine Funktion, die die gleichen Parameter entgegennimmt wie eine *Pfadoperation-Funktion*:
 //// tab | Python 3.10+
 
 ```Python hl_lines="8-9"
@@ -86,17 +86,17 @@ Das war's schon.
 
 **Zwei Zeilen**.
 
-Und sie hat die gleiche Form und Struktur wie alle Ihre _Pfadoperation-Funktionen_.
+Und sie hat die gleiche Form und Struktur wie alle Ihre *Pfadoperation-Funktionen*.
 
-Sie können sie sich als _Pfadoperation-Funktion_ ohne den „Dekorator“ (ohne `@app.get("/some-path")`) vorstellen.
+Sie können sie sich als *Pfadoperation-Funktion* ohne den „Dekorator“ (ohne `@app.get("/some-path")`) vorstellen.
 
 Und sie kann alles zurückgeben, was Sie möchten.
 
 In diesem Fall erwartet diese Abhängigkeit:
 
-- Einen optionalen Query-Parameter `q`, der ein `str` ist.
-- Einen optionalen Query-Parameter `skip`, der ein `int` ist und standardmäßig `0` ist.
-- Einen optionalen Query-Parameter `limit`, der ein `int` ist und standardmäßig `100` ist.
+* Einen optionalen Query-Parameter `q`, der ein `str` ist.
+* Einen optionalen Query-Parameter `skip`, der ein `int` ist und standardmäßig `0` ist.
+* Einen optionalen Query-Parameter `limit`, der ein `int` ist und standardmäßig `100` ist.
 
 Und dann wird einfach ein `dict` zurückgegeben, welches diese Werte enthält.
 
@@ -106,7 +106,7 @@ ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Versio
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie ReadyAPI](../../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=\_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie ReadyAPI](../../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
@@ -166,7 +166,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ### Deklarieren der Abhängigkeit im <abbr title="Das Abhängige, der Verwender der Abhängigkeit">„Dependant“</abbr>
 
-So wie auch `Body`, `Query`, usw., verwenden Sie `Depends` mit den Parametern Ihrer _Pfadoperation-Funktion_:
+So wie auch `Body`, `Query`, usw., verwenden Sie `Depends` mit den Parametern Ihrer *Pfadoperation-Funktion*:
 
 //// tab | Python 3.10+
 
@@ -228,7 +228,7 @@ Dieser Parameter muss so etwas wie eine Funktion sein.
 
 Sie **rufen diese nicht direkt auf** (fügen Sie am Ende keine Klammern hinzu), sondern übergeben sie einfach als Parameter an `Depends()`.
 
-Und diese Funktion akzeptiert Parameter auf die gleiche Weise wie _Pfadoperation-Funktionen_.
+Und diese Funktion akzeptiert Parameter auf die gleiche Weise wie *Pfadoperation-Funktionen*.
 
 /// tip | "Tipp"
 
@@ -238,9 +238,9 @@ Im nächsten Kapitel erfahren Sie, welche anderen „Dinge“, außer Funktionen
 
 Immer wenn ein neuer Request eintrifft, kümmert sich **ReadyAPI** darum:
 
-- Ihre Abhängigkeitsfunktion („Dependable“) mit den richtigen Parametern aufzurufen.
-- Sich das Ergebnis von dieser Funktion zu holen.
-- Dieses Ergebnis dem Parameter Ihrer _Pfadoperation-Funktion_ zuzuweisen.
+* Ihre Abhängigkeitsfunktion („Dependable“) mit den richtigen Parametern aufzurufen.
+* Sich das Ergebnis von dieser Funktion zu holen.
+* Dieses Ergebnis dem Parameter Ihrer *Pfadoperation-Funktion* zuzuweisen.
 
 ```mermaid
 graph TB
@@ -253,7 +253,7 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-Auf diese Weise schreiben Sie gemeinsam genutzten Code nur einmal, und **ReadyAPI** kümmert sich darum, ihn für Ihre _Pfadoperationen_ aufzurufen.
+Auf diese Weise schreiben Sie gemeinsam genutzten Code nur einmal, und **ReadyAPI** kümmert sich darum, ihn für Ihre *Pfadoperationen* aufzurufen.
 
 /// check
 
@@ -309,21 +309,21 @@ Da **ReadyAPI** jedoch auf Standard-Python, einschließlich `Annotated`, basiert
 
 Die Abhängigkeiten funktionieren weiterhin wie erwartet, und das **Beste daran** ist, dass die **Typinformationen erhalten bleiben**, was bedeutet, dass Ihr Editor Ihnen weiterhin **automatische Vervollständigung**, **Inline-Fehler**, usw. bieten kann. Das Gleiche gilt für andere Tools wie `mypy`.
 
-Das ist besonders nützlich, wenn Sie es in einer **großen Codebasis** verwenden, in der Sie in **vielen _Pfadoperationen_** immer wieder **dieselben Abhängigkeiten** verwenden.
+Das ist besonders nützlich, wenn Sie es in einer **großen Codebasis** verwenden, in der Sie in **vielen *Pfadoperationen*** immer wieder **dieselben Abhängigkeiten** verwenden.
 
 ## `async` oder nicht `async`
 
-Da Abhängigkeiten auch von **ReadyAPI** aufgerufen werden (so wie Ihre _Pfadoperation-Funktionen_), gelten beim Definieren Ihrer Funktionen die gleichen Regeln.
+Da Abhängigkeiten auch von **ReadyAPI** aufgerufen werden (so wie Ihre *Pfadoperation-Funktionen*), gelten beim Definieren Ihrer Funktionen die gleichen Regeln.
 
 Sie können `async def` oder einfach `def` verwenden.
 
-Und Sie können Abhängigkeiten mit `async def` innerhalb normaler `def`-_Pfadoperation-Funktionen_ oder `def`-Abhängigkeiten innerhalb von `async def`-_Pfadoperation-Funktionen_, usw. deklarieren.
+Und Sie können Abhängigkeiten mit `async def` innerhalb normaler `def`-*Pfadoperation-Funktionen* oder `def`-Abhängigkeiten innerhalb von `async def`-*Pfadoperation-Funktionen*, usw. deklarieren.
 
 Es spielt keine Rolle. **ReadyAPI** weiß, was zu tun ist.
 
 /// note | "Hinweis"
 
-Wenn Ihnen das nichts sagt, lesen Sie den [Async: _„In Eile?“_](../../async.md#in-eile){.internal-link target=\_blank}-Abschnitt über `async` und `await` in der Dokumentation.
+Wenn Ihnen das nichts sagt, lesen Sie den [Async: *„In Eile?“*](../../async.md#in-eile){.internal-link target=_blank}-Abschnitt über `async` und `await` in der Dokumentation.
 
 ///
 
@@ -337,27 +337,27 @@ Die interaktive Dokumentation enthält also auch alle Informationen aus diesen A
 
 ## Einfache Verwendung
 
-Näher betrachtet, werden _Pfadoperation-Funktionen_ deklariert, um verwendet zu werden, wann immer ein _Pfad_ und eine _Operation_ übereinstimmen, und dann kümmert sich **ReadyAPI** darum, die Funktion mit den richtigen Parametern aufzurufen, die Daten aus der Anfrage extrahierend.
+Näher betrachtet, werden *Pfadoperation-Funktionen* deklariert, um verwendet zu werden, wann immer ein *Pfad* und eine *Operation* übereinstimmen, und dann kümmert sich **ReadyAPI** darum, die Funktion mit den richtigen Parametern aufzurufen, die Daten aus der Anfrage extrahierend.
 
 Tatsächlich funktionieren alle (oder die meisten) Webframeworks auf die gleiche Weise.
 
 Sie rufen diese Funktionen niemals direkt auf. Sie werden von Ihrem Framework aufgerufen (in diesem Fall **ReadyAPI**).
 
-Mit dem Dependency Injection System können Sie **ReadyAPI** ebenfalls mitteilen, dass Ihre _Pfadoperation-Funktion_ von etwas anderem „abhängt“, das vor Ihrer _Pfadoperation-Funktion_ ausgeführt werden soll, und **ReadyAPI** kümmert sich darum, es auszuführen und die Ergebnisse zu „injizieren“.
+Mit dem Dependency Injection System können Sie **ReadyAPI** ebenfalls mitteilen, dass Ihre *Pfadoperation-Funktion* von etwas anderem „abhängt“, das vor Ihrer *Pfadoperation-Funktion* ausgeführt werden soll, und **ReadyAPI** kümmert sich darum, es auszuführen und die Ergebnisse zu „injizieren“.
 
 Andere gebräuchliche Begriffe für dieselbe Idee der „Abhängigkeitsinjektion“ sind:
 
-- Ressourcen
-- Provider
-- Services
-- Injectables
-- Komponenten
+* Ressourcen
+* Provider
+* Services
+* Injectables
+* Komponenten
 
 ## **ReadyAPI**-Plugins
 
-Integrationen und „Plugins“ können mit dem **Dependency Injection** System erstellt werden. Aber tatsächlich besteht **keine Notwendigkeit, „Plugins“ zu erstellen**, da es durch die Verwendung von Abhängigkeiten möglich ist, eine unendliche Anzahl von Integrationen und Interaktionen zu deklarieren, die dann für Ihre _Pfadoperation-Funktionen_ verfügbar sind.
+Integrationen und „Plugins“ können mit dem **Dependency Injection** System erstellt werden. Aber tatsächlich besteht **keine Notwendigkeit, „Plugins“ zu erstellen**, da es durch die Verwendung von Abhängigkeiten möglich ist, eine unendliche Anzahl von Integrationen und Interaktionen zu deklarieren, die dann für Ihre *Pfadoperation-Funktionen* verfügbar sind.
 
-Und Abhängigkeiten können auf sehr einfache und intuitive Weise erstellt werden, sodass Sie einfach die benötigten Python-Packages importieren und sie in wenigen Codezeilen, _im wahrsten Sinne des Wortes_, mit Ihren API-Funktionen integrieren.
+Und Abhängigkeiten können auf sehr einfache und intuitive Weise erstellt werden, sodass Sie einfach die benötigten Python-Packages importieren und sie in wenigen Codezeilen, *im wahrsten Sinne des Wortes*, mit Ihren API-Funktionen integrieren.
 
 Beispiele hierfür finden Sie in den nächsten Kapiteln zu relationalen und NoSQL-Datenbanken, Sicherheit usw.
 
@@ -365,14 +365,14 @@ Beispiele hierfür finden Sie in den nächsten Kapiteln zu relationalen und NoSQ
 
 Die Einfachheit des Dependency Injection Systems macht **ReadyAPI** kompatibel mit:
 
-- allen relationalen Datenbanken
-- NoSQL-Datenbanken
-- externen Packages
-- externen APIs
-- Authentifizierungs- und Autorisierungssystemen
-- API-Nutzungs-Überwachungssystemen
-- Responsedaten-Injektionssystemen
-- usw.
+* allen relationalen Datenbanken
+* NoSQL-Datenbanken
+* externen Packages
+* externen APIs
+* Authentifizierungs- und Autorisierungssystemen
+* API-Nutzungs-Überwachungssystemen
+* Responsedaten-Injektionssystemen
+* usw.
 
 ## Einfach und leistungsstark
 
@@ -382,12 +382,12 @@ Sie können Abhängigkeiten definieren, die selbst wiederum Abhängigkeiten defi
 
 Am Ende wird ein hierarchischer Baum von Abhängigkeiten erstellt, und das **Dependency Injection** System kümmert sich darum, alle diese Abhängigkeiten (und deren Unterabhängigkeiten) für Sie aufzulösen und die Ergebnisse bei jedem Schritt einzubinden (zu injizieren).
 
-Nehmen wir zum Beispiel an, Sie haben vier API-Endpunkte (_Pfadoperationen_):
+Nehmen wir zum Beispiel an, Sie haben vier API-Endpunkte (*Pfadoperationen*):
 
-- `/items/public/`
-- `/items/private/`
-- `/users/{user_id}/activate`
-- `/items/pro/`
+* `/items/public/`
+* `/items/private/`
+* `/users/{user_id}/activate`
+* `/items/pro/`
 
 Dann könnten Sie für jeden davon unterschiedliche Berechtigungsanforderungen hinzufügen, nur mit Abhängigkeiten und Unterabhängigkeiten:
 
@@ -416,6 +416,6 @@ paying_user --> pro_items
 
 ## Integriert mit **OpenAPI**
 
-Alle diese Abhängigkeiten, während sie ihre Anforderungen deklarieren, fügen auch Parameter, Validierungen, usw. zu Ihren _Pfadoperationen_ hinzu.
+Alle diese Abhängigkeiten, während sie ihre Anforderungen deklarieren, fügen auch Parameter, Validierungen, usw. zu Ihren *Pfadoperationen* hinzu.
 
 **ReadyAPI** kümmert sich darum, alles zum OpenAPI-Schema hinzuzufügen, damit es in den interaktiven Dokumentationssystemen angezeigt wird.

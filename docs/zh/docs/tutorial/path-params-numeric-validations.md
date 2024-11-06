@@ -182,8 +182,8 @@ Python 不会对该 `*` 做任何事情，但是它将知道之后的所有参�
 
 同样的规则适用于：
 
-- `gt`：大于（`g`reater `t`han）
-- `le`：小于等于（`l`ess than or `e`qual）
+* `gt`：大于（`g`reater `t`han）
+* `le`：小于等于（`l`ess than or `e`qual）
 
 ```Python hl_lines="9"
 {!../../docs_src/path_params_numeric_validations/tutorial005.py!}
@@ -205,14 +205,14 @@ Python 不会对该 `*` 做任何事情，但是它将知道之后的所有参�
 
 ## 总结
 
-你能够以与 [查询参数和字符串校验](query-params-str-validations.md){.internal-link target=\_blank} 相同的方式使用 `Query`、`Path`（以及其他你还没见过的类）声明元数据和字符串校验。
+你能够以与 [查询参数和字符串校验](query-params-str-validations.md){.internal-link target=_blank} 相同的方式使用 `Query`、`Path`（以及其他你还没见过的类）声明元数据和字符串校验。
 
 而且你还可以声明数值校验：
 
-- `gt`：大于（`g`reater `t`han）
-- `ge`：大于等于（`g`reater than or `e`qual）
-- `lt`：小于（`l`ess `t`han）
-- `le`：小于等于（`l`ess than or `e`qual）
+* `gt`：大于（`g`reater `t`han）
+* `ge`：大于等于（`g`reater than or `e`qual）
+* `lt`：小于（`l`ess `t`han）
+* `le`：小于等于（`l`ess than or `e`qual）
 
 /// info
 

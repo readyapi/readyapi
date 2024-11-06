@@ -24,11 +24,14 @@ gold:
     title: Simplify Full Stack Development with ReadyAPI & MongoDB
     img: https://readyapi.khulnasoft.com/img/sponsors/mongodb.png
   - url: https://zuplo.link/readyapi-gh
-    title: "Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI"
+    title: 'Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI'
     img: https://readyapi.khulnasoft.com/img/sponsors/zuplo.png
   - url: https://liblab.com?utm_source=readyapi
     title: liblab - Generate SDKs from ReadyAPI
     img: https://readyapi.khulnasoft.com/img/sponsors/liblab.png
+  - url: https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi
+    title: Deploy & scale any full-stack web app on Render. Focus on building apps, not infra.
+    img: https://readyapi.khulnasoft.com/img/sponsors/render.svg
 silver:
   - url: https://github.com/deepset-ai/haystack/
     title: Build powerful search from composable, open source building blocks

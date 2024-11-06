@@ -1,6 +1,6 @@
 # WSGI - Flask, Django ve Daha Fazlasını ReadyAPI ile Kullanma
 
-WSGI uygulamalarını [Sub Applications - Mounts](sub-applications.md){.internal-link target=\_blank}, [Behind a Proxy](behind-a-proxy.md){.internal-link target=\_blank} bölümlerinde gördüğünüz gibi bağlayabilirsiniz.
+WSGI uygulamalarını [Sub Applications - Mounts](sub-applications.md){.internal-link target=_blank}, [Behind a Proxy](behind-a-proxy.md){.internal-link target=_blank} bölümlerinde gördüğünüz gibi bağlayabilirsiniz.
 
 Bunun için `WSGIMiddleware` ile Flask, Django vb. WSGI uygulamanızı sarmalayabilir ve ReadyAPI'ya bağlayabilirsiniz.
 

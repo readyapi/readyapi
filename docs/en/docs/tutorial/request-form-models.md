@@ -6,7 +6,7 @@ You can use **Pydantic models** to declare **form fields** in ReadyAPI.
 
 To use forms, first install <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=\_blank}, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then install it, for example:
 
 ```console
 $ pip install python-multipart
@@ -110,22 +110,22 @@ If a client tries to send some extra data, they will receive an **error** respon
 
 For example, if the client tries to send the form fields:
 
-- `username`: `Rick`
-- `password`: `Portal Gun`
-- `extra`: `Mr. Poopybutthole`
+* `username`: `Rick`
+* `password`: `Portal Gun`
+* `extra`: `Mr. Poopybutthole`
 
 They will receive an error response telling them that the field `extra` is not allowed:
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["body", "extra"],
-      "msg": "Extra inputs are not permitted",
-      "input": "Mr. Poopybutthole"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["body", "extra"],
+            "msg": "Extra inputs are not permitted",
+            "input": "Mr. Poopybutthole"
+        }
+    ]
 }
 ```
 

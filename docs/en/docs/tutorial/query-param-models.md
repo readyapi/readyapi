@@ -174,14 +174,14 @@ They will receive an **error** response telling them that the query parameter `t
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["query", "tool"],
-      "msg": "Extra inputs are not permitted",
-      "input": "plumbus"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["query", "tool"],
+            "msg": "Extra inputs are not permitted",
+            "input": "plumbus"
+        }
+    ]
 }
 ```
 

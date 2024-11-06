@@ -4,8 +4,8 @@
 
 ## `StaticFiles` Kullanımı
 
-- `StaticFiles` sınıfını projenize dahil edin.
-- Bir `StaticFiles()` örneğini belirli bir yola bağlayın.
+* `StaticFiles` sınıfını projenize dahil edin.
+* Bir `StaticFiles()` örneğini belirli bir yola bağlayın.
 
 ```Python hl_lines="2  6"
 {!../../docs_src/static_files/tutorial001.py!}
@@ -25,7 +25,7 @@ Projenize dahil etmek için `from starlette.staticfiles import StaticFiles` kull
 
 Bu, bir `APIRouter` kullanmaktan farklıdır çünkü bağlanmış bir uygulama tamamen bağımsızdır. Ana uygulamanızın OpenAPI ve dokümanlar, bağlanmış uygulamadan hiçbir şey içermez, vb.
 
-[Advanced User Guide](../advanced/index.md){.internal-link target=\_blank} bölümünde daha fazla bilgi edinebilirsiniz.
+[Advanced User Guide](../advanced/index.md){.internal-link target=_blank} bölümünde daha fazla bilgi edinebilirsiniz.
 
 ## Detaylar
 

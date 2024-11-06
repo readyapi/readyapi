@@ -4,9 +4,9 @@ Se necessário, você pode usar configurações e variáveis ​​de ambiente p
 
 ## Sobre segurança, APIs e documentos
 
-Ocultar suas interfaces de usuário de documentação na produção _não deveria_ ser a maneira de proteger sua API.
+Ocultar suas interfaces de usuário de documentação na produção *não deveria* ser a maneira de proteger sua API.
 
-Isso não adiciona nenhuma segurança extra à sua API; as _operações de rotas_ ainda estarão disponíveis onde estão.
+Isso não adiciona nenhuma segurança extra à sua API; as *operações de rotas* ainda estarão disponíveis onde estão.
 
 Se houver uma falha de segurança no seu código, ela ainda existirá.
 
@@ -14,12 +14,12 @@ Ocultar a documentação apenas torna mais difícil entender como interagir com 
 
 Se você quiser proteger sua API, há várias coisas melhores que você pode fazer, por exemplo:
 
-- Certifique-se de ter modelos Pydantic bem definidos para seus corpos de solicitação e respostas.
-- Configure quaisquer permissões e funções necessárias usando dependências.
-- Nunca armazene senhas em texto simples, apenas hashes de senha.
-- Implemente e use ferramentas criptográficas bem conhecidas, como tokens JWT e Passlib, etc.
-- Adicione controles de permissão mais granulares com escopos OAuth2 quando necessário.
-- ...etc.
+* Certifique-se de ter modelos Pydantic bem definidos para seus corpos de solicitação e respostas.
+* Configure quaisquer permissões e funções necessárias usando dependências.
+* Nunca armazene senhas em texto simples, apenas hashes de senha.
+* Implemente e use ferramentas criptográficas bem conhecidas, como tokens JWT e Passlib, etc.
+* Adicione controles de permissão mais granulares com escopos OAuth2 quando necessário.
+* ...etc.
 
 No entanto, você pode ter um caso de uso muito específico em que realmente precisa desabilitar a documentação da API para algum ambiente (por exemplo, para produção) ou dependendo de configurações de variáveis ​​de ambiente.
 

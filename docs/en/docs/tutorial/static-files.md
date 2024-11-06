@@ -4,12 +4,10 @@ You can serve static files automatically from a directory using `StaticFiles`.
 
 ## Use `StaticFiles`
 
-- Import `StaticFiles`.
-- "Mount" a `StaticFiles()` instance in a specific path.
+* Import `StaticFiles`.
+* "Mount" a `StaticFiles()` instance in a specific path.
 
-```Python hl_lines="2  6"
-{!../../docs_src/static_files/tutorial001.py!}
-```
+{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
 
 /// note | "Technical Details"
 
@@ -25,7 +23,7 @@ You could also use `from starlette.staticfiles import StaticFiles`.
 
 This is different from using an `APIRouter` as a mounted application is completely independent. The OpenAPI and docs from your main application won't include anything from the mounted application, etc.
 
-You can read more about this in the [Advanced User Guide](../advanced/index.md){.internal-link target=\_blank}.
+You can read more about this in the [Advanced User Guide](../advanced/index.md){.internal-link target=_blank}.
 
 ## Details
 

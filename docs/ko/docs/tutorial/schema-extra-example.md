@@ -100,13 +100,13 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 이들 중에서 사용합니다:
 
-- `Path()`
-- `Query()`
-- `Header()`
-- `Cookie()`
-- `Body()`
-- `Form()`
-- `File()`
+* `Path()`
+* `Query()`
+* `Header()`
+* `Cookie()`
+* `Body()`
+* `Form()`
+* `File()`
 
 **OpenAPI**의 **JSON 스키마**에 추가될 부가적인 정보를 포함한 `examples` 모음을 선언할 수 있습니다.
 
@@ -236,7 +236,7 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 **JSON 스키마**가 `examples`를 지원하기 전 부터, OpenAPI는 `examples`이라 불리는 다른 필드를 지원해 왔습니다.
 
-이 **OpenAPI-특화** `examples`는 OpenAPI 명세서의 다른 구역으로 들어갑니다. 각 JSON 스키마 내부가 아니라 **각 _경로 작동_ 세부 정보**에 포함됩니다.
+이 **OpenAPI-특화** `examples`는 OpenAPI 명세서의 다른 구역으로 들어갑니다. 각 JSON 스키마 내부가 아니라 **각 *경로 작동* 세부 정보**에 포함됩니다.
 
 그리고 Swagger UI는 이 특정한 `examples` 필드를 한동안 지원했습니다. 그래서, 이를 다른 **문서 UI에 있는 예제**를 **표시**하기 위해 사용할 수 있습니다.
 
@@ -248,22 +248,22 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 다음 예시 속에 OpenAPI-특화 `examples`를 ReadyAPI 안에서 매개변수 `openapi_examples` 매개변수와 함께 선언할 수 있습니다:
 
-- `Path()`
-- `Query()`
-- `Header()`
-- `Cookie()`
-- `Body()`
-- `Form()`
-- `File()`
+* `Path()`
+* `Query()`
+* `Header()`
+* `Cookie()`
+* `Body()`
+* `Form()`
+* `File()`
 
 `dict`의 키가 또 다른 `dict`인 각 예제와 값을 구별합니다.
 
 각각의 특정 `examples` 속 `dict` 예제는 다음을 포함할 수 있습니다:
 
-- `summary`: 예제에 대한 짧은 설명문.
-- `description`: 마크다운 텍스트를 포함할 수 있는 긴 설명문.
-- `value`: 실제로 보여지는 예시, 예를 들면 `dict`.
-- `externalValue`: `value`의 대안이며 예제를 가르키는 URL. 비록 `value`처럼 많은 도구를 지원하지 못할 수 있습니다.
+* `summary`: 예제에 대한 짧은 설명문.
+* `description`: 마크다운 텍스트를 포함할 수 있는 긴 설명문.
+* `value`: 실제로 보여지는 예시, 예를 들면 `dict`.
+* `externalValue`: `value`의 대안이며 예제를 가르키는 URL. 비록 `value`처럼 많은 도구를 지원하지 못할 수 있습니다.
 
 이를 다음과 같이 사용할 수 있습니다:
 
@@ -351,15 +351,15 @@ JSON 스키마는 `examples`를 가지고 있지 않았고, 따라서 OpenAPI는
 
 OpenAPI는 또한 `example`과 `examples` 필드를 명세서의 다른 부분에 추가했습니다:
 
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`(명세서에 있는) Parameter Object`</a>는 ReadyAPI의 다음 기능에서 쓰였습니다:
-  - `Path()`
-  - `Query()`
-  - `Header()`
-  - `Cookie()`
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">(명세서에 있는)`Media Type Object`속 `content`에 있는 `Request Body Object`</a>는 ReadyAPI의 다음 기능에서 쓰였습니다:
-  - `Body()`
-  - `File()`
-  - `Form()`
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`(명세서에 있는) Parameter Object`</a>는 ReadyAPI의 다음 기능에서 쓰였습니다:
+    * `Path()`
+    * `Query()`
+    * `Header()`
+    * `Cookie()`
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">(명세서에 있는)`Media Type Object`속 `content`에 있는 `Request Body Object`</a>는 ReadyAPI의 다음 기능에서 쓰였습니다:
+    * `Body()`
+    * `File()`
+    * `Form()`
 
 /// info | "정보"
 
@@ -391,7 +391,7 @@ JSON 스키마의 새로운 `examples` 필드는 예제 속 **단순한 `list`**
 
 그리고 Pydantic 모델의 **JSON 스키마**는 API의 **OpenAPI**에 포함되고, 그 후 문서 UI 속에서 사용됩니다.
 
-ReadyAPI 0.99.0 이전 버전에서 (0.99.0 이상 버전은 새로운 OpenAPI 3.1.0을 사용합니다), `example` 혹은 `examples`를 다른 유틸리티(`Query()`, `Body()` 등)와 함께 사용했을 때, 저러한 예시는 데이터를 설명하는 JSON 스키마에 추가되지 않으며 (심지어 OpenAPI의 자체 JSON 스키마에도 포함되지 않습니다), OpenAPI의 _경로 작동_ 선언에 직접적으로 추가됩니다 (JSON 스키마를 사용하는 OpenAPI 부분 외에도).
+ReadyAPI 0.99.0 이전 버전에서 (0.99.0 이상 버전은 새로운 OpenAPI 3.1.0을 사용합니다), `example` 혹은 `examples`를 다른 유틸리티(`Query()`, `Body()` 등)와 함께 사용했을 때, 저러한 예시는 데이터를 설명하는 JSON 스키마에 추가되지 않으며 (심지어 OpenAPI의 자체 JSON 스키마에도 포함되지 않습니다), OpenAPI의 *경로 작동* 선언에 직접적으로 추가됩니다 (JSON 스키마를 사용하는 OpenAPI 부분 외에도).
 
 하지만 지금은 ReadyAPI 0.99.0 및 이후 버전에서는 JSON 스키마 2020-12를 사용하는 OpenAPI 3.1.0과 Swagger UI 5.0.0 및 이후 버전을 사용하며, 모든 것이 더 일관성을 띄고 예시는 JSON 스키마에 포함됩니다.
 

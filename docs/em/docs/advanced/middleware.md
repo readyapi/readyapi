@@ -1,8 +1,8 @@
 # 🏧 🛠️
 
-👑 🔰 👆 ✍ ❔ 🚮 [🛃 🛠️](../tutorial/middleware.md){.internal-link target=\_blank} 👆 🈸.
+👑 🔰 👆 ✍ ❔ 🚮 [🛃 🛠️](../tutorial/middleware.md){.internal-link target=_blank} 👆 🈸.
 
-&amp; ⤴️ 👆 ✍ ❔ 🍵 [⚜ ⏮️ `CORSMiddleware`](../tutorial/cors.md){.internal-link target=\_blank}.
+&amp; ⤴️ 👆 ✍ ❔ 🍵 [⚜ ⏮️ `CORSMiddleware`](../tutorial/cors.md){.internal-link target=_blank}.
 
 👉 📄 👥 🔜 👀 ❔ ⚙️ 🎏 🛠️.
 
@@ -71,7 +71,7 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 📄 ❌ 🐕‍🦺:
 
-- `allowed_hosts` - 📇 🆔 📛 👈 🔜 ✔ 📛. 🃏 🆔 ✅ `*.example.com` 🐕‍🦺 🎀 📁. ✔ 🙆 📛 👯‍♂️ ⚙️ `allowed_hosts=["*"]` ⚖️ 🚫 🛠️.
+* `allowed_hosts` - 📇 🆔 📛 👈 🔜 ✔ 📛. 🃏 🆔 ✅ `*.example.com` 🐕‍🦺 🎀 📁. ✔ 🙆 📛 👯‍♂️ ⚙️ `allowed_hosts=["*"]` ⚖️ 🚫 🛠️.
 
 🚥 📨 📨 🔨 🚫 ✔ ☑ ⤴️ `400` 📨 🔜 📨.
 
@@ -87,7 +87,7 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 📄 ❌ 🐕‍🦺:
 
-- `minimum_size` - 🚫 🗜 📨 👈 🤪 🌘 👉 💯 📐 🔢. 🔢 `500`.
+* `minimum_size` - 🚫 🗜 📨 👈 🤪 🌘 👉 💯 📐 🔢. 🔢 `500`.
 
 ## 🎏 🛠️
 
@@ -95,7 +95,7 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 🖼:
 
-- <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorn `ProxyHeadersMiddleware`</a>
-- <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">🇸🇲</a>
+* <a href="https://github.com/encode/uvicorn/blob/master/uvicorn/middleware/proxy_headers.py" class="external-link" target="_blank">Uvicorn `ProxyHeadersMiddleware`</a>
+* <a href="https://github.com/florimondmanca/msgpack-asgi" class="external-link" target="_blank">🇸🇲</a>
 
 👀 🎏 💪 🛠️ ✅ <a href="https://www.starlette.io/middleware/" class="external-link" target="_blank">💃 🛠️ 🩺</a> &amp; <a href="https://github.com/florimondmanca/awesome-asgi" class="external-link" target="_blank">🔫 👌 📇</a>.

@@ -1,12 +1,12 @@
 # Return a Response Directly
 
-When you create a **ReadyAPI** _path operation_ you can normally return any data from it: a `dict`, a `list`, a Pydantic model, a database model, etc.
+When you create a **ReadyAPI** *path operation* you can normally return any data from it: a `dict`, a `list`, a Pydantic model, a database model, etc.
 
-By default, **ReadyAPI** would automatically convert that return value to JSON using the `jsonable_encoder` explained in [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=\_blank}.
+By default, **ReadyAPI** would automatically convert that return value to JSON using the `jsonable_encoder` explained in [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Then, behind the scenes, it would put that JSON-compatible data (e.g. a `dict`) inside of a `JSONResponse` that would be used to send the response to the client.
 
-But you can return a `JSONResponse` directly from your _path operations_.
+But you can return a `JSONResponse` directly from your *path operations*.
 
 It might be useful, for example, to return custom headers or cookies.
 
@@ -64,6 +64,6 @@ You could put your XML content in a string, put that in a `Response`, and return
 
 When you return a `Response` directly its data is not validated, converted (serialized), nor documented automatically.
 
-But you can still document it as described in [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank}.
+But you can still document it as described in [Additional Responses in OpenAPI](additional-responses.md){.internal-link target=_blank}.
 
 You can see in later sections how to use/declare these custom `Response`s while still having automatic data conversion, documentation, etc.

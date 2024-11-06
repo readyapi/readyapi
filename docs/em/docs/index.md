@@ -4,12 +4,13 @@
 .md-content .md-typeset h1 { display: none; }
 </style>
 
-# ReadyAPI
-
-<p>
+<p align="center">
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+</p>
+<p align="center">
     <em>ReadyAPI 🛠️, ↕ 🎭, ⏩ 💡, ⏩ 📟, 🔜 🏭</em>
 </p>
-<p>
+<p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
     <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
 </a>
@@ -36,16 +37,16 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 🔑 ⚒:
 
-- **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic). [1️⃣ ⏩ 🐍 🛠️ 💪](#_15).
-- **⏩ 📟**: 📈 🚅 🛠️ ⚒ 🔃 2️⃣0️⃣0️⃣ 💯 3️⃣0️⃣0️⃣ 💯. \*
-- **👩‍❤‍👨 🐛**: 📉 🔃 4️⃣0️⃣ 💯 🗿 (👩‍💻) 📉 ❌. \*
-- **🏋️**: 👑 👨‍🎨 🐕‍🦺. <abbr title="also known as auto-complete, autocompletion, IntelliSense">🛠️</abbr> 🌐. 🌘 🕰 🛠️.
-- **⏩**: 🔧 ⏩ ⚙️ &amp; 💡. 🌘 🕰 👂 🩺.
-- **📏**: 📉 📟 ❎. 💗 ⚒ ⚪️➡️ 🔠 🔢 📄. 👩‍❤‍👨 🐛.
-- **🏋️**: 🤚 🏭-🔜 📟. ⏮️ 🏧 🎓 🧾.
-- **🐩-⚓️**: ⚓️ 🔛 (&amp; 🍕 🔗 ⏮️) 📂 🐩 🔗: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">🗄</a> (⏪ 💭 🦁) &amp; <a href="https://json-schema.org/" class="external-link" target="_blank">🎻 🔗</a>.
+* **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic). [1️⃣ ⏩ 🐍 🛠️ 💪](#_15).
+* **⏩ 📟**: 📈 🚅 🛠️ ⚒ 🔃 2️⃣0️⃣0️⃣ 💯 3️⃣0️⃣0️⃣ 💯. *
+* **👩‍❤‍👨 🐛**: 📉 🔃 4️⃣0️⃣ 💯 🗿 (👩‍💻) 📉 ❌. *
+* **🏋️**: 👑 👨‍🎨 🐕‍🦺. <abbr title="also known as auto-complete, autocompletion, IntelliSense">🛠️</abbr> 🌐. 🌘 🕰 🛠️.
+* **⏩**: 🔧 ⏩ ⚙️ &amp; 💡. 🌘 🕰 👂 🩺.
+* **📏**: 📉 📟 ❎. 💗 ⚒ ⚪️➡️ 🔠 🔢 📄. 👩‍❤‍👨 🐛.
+* **🏋️**: 🤚 🏭-🔜 📟. ⏮️ 🏧 🎓 🧾.
+* **🐩-⚓️**: ⚓️ 🔛 (&amp; 🍕 🔗 ⏮️) 📂 🐩 🔗: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">🗄</a> (⏪ 💭 🦁) &amp; <a href="https://json-schema.org/" class="external-link" target="_blank">🎻 🔗</a>.
 
-<small>\* ⚖ ⚓️ 🔛 💯 🔛 🔗 🛠️ 🏉, 🏗 🏭 🈸.</small>
+<small>* ⚖ ⚓️ 🔛 💯 🔛 🔗 🛠️ 🏉, 🏗 🏭 🈸.</small>
 
 ## 💰
 
@@ -92,7 +93,7 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 "_🤙, ⚫️❔ 👆 ✔️ 🏗 👀 💎 💠 &amp; 🇵🇱. 📚 🌌, ⚫️ ⚫️❔ 👤 💚 **🤗** - ⚫️ 🤙 😍 👀 👱 🏗 👈._"
 
-<div style="text-align: right; margin-right: 10%;">✡ 🗄 - <strong><a href="https://www.hug.rest/" target="_blank">🤗</a> 👼</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(🇦🇪)</small></a></div>
+<div style="text-align: right; margin-right: 10%;">✡ 🗄 - <strong><a href="https://github.com/hugapi/hug" target="_blank">🤗</a> 👼</strong> <a href="https://news.ycombinator.com/item?id=19455465" target="_blank"><small>(🇦🇪)</small></a></div>
 
 ---
 
@@ -124,8 +125,8 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 ReadyAPI 🧍 🔛 ⌚ 🐘:
 
-- <a href="https://www.starlette.io/" class="external-link" target="_blank">💃</a> 🕸 🍕.
-- <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 📊 🍕.
+* <a href="https://www.starlette.io/" class="external-link" target="_blank">💃</a> 🕸 🍕.
+* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 📊 🍕.
 
 ## 👷‍♂
 
@@ -155,7 +156,7 @@ $ pip install "uvicorn[standard]"
 
 ### ✍ ⚫️
 
-- ✍ 📁 `main.py` ⏮️:
+* ✍ 📁 `main.py` ⏮️:
 
 ```Python
 from typing import Union
@@ -227,9 +228,9 @@ INFO:     Application startup complete.
 
 📋 `uvicorn main:app` 🔗:
 
-- `main`: 📁 `main.py` (🐍 "🕹").
-- `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = ReadyAPI()`.
-- `--reload`: ⚒ 💽 ⏏ ⏮️ 📟 🔀. 🕴 👉 🛠️.
+* `main`: 📁 `main.py` (🐍 "🕹").
+* `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = ReadyAPI()`.
+* `--reload`: ⚒ 💽 ⏏ ⏮️ 📟 🔀. 🕴 👉 🛠️.
 
 </details>
 
@@ -245,10 +246,10 @@ INFO:     Application startup complete.
 
 👆 ⏪ ✍ 🛠️ 👈:
 
-- 📨 🇺🇸🔍 📨 _➡_ `/` &amp; `/items/{item_id}`.
-- 👯‍♂️ _➡_ ✊ `GET` <em>🛠️</em> (💭 🇺🇸🔍 _👩‍🔬_).
-- _➡_ `/items/{item_id}` ✔️ _➡ 🔢_ `item_id` 👈 🔜 `int`.
-- _➡_ `/items/{item_id}` ✔️ 📦 `str` \_🔢 = `q`.
+* 📨 🇺🇸🔍 📨 _➡_ `/` &amp; `/items/{item_id}`.
+* 👯‍♂️ _➡_ ✊ `GET` <em>🛠️</em> (💭 🇺🇸🔍 _👩‍🔬_).
+*  _➡_ `/items/{item_id}` ✔️ _➡ 🔢_ `item_id` 👈 🔜 `int`.
+*  _➡_ `/items/{item_id}` ✔️ 📦 `str` _🔢 = `q`.
 
 ### 🎓 🛠️ 🩺
 
@@ -308,15 +309,15 @@ def update_item(item_id: int, item: Item):
 
 🔜 🚶 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-- 🎓 🛠️ 🧾 🔜 🔁 ℹ, 🔌 🆕 💪:
+* 🎓 🛠️ 🧾 🔜 🔁 ℹ, 🔌 🆕 💪:
 
 ![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-- 🖊 🔛 🔼 "🔄 ⚫️ 👅", ⚫️ ✔ 👆 🥧 🔢 &amp; 🔗 🔗 ⏮️ 🛠️:
+* 🖊 🔛 🔼 "🔄 ⚫️ 👅", ⚫️ ✔ 👆 🥧 🔢 &amp; 🔗 🔗 ⏮️ 🛠️:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
 
-- ⤴️ 🖊 🔛 "🛠️" 🔼, 👩‍💻 🔢 🔜 🔗 ⏮️ 👆 🛠️, 📨 🔢, 🤚 🏁 &amp; 🎦 👫 🔛 🖥:
+* ⤴️ 🖊 🔛 "🛠️" 🔼, 👩‍💻 🔢 🔜 🔗 ⏮️ 👆 🛠️, 📨 🔢, 🤚 🏁 &amp; 🎦 👫 🔛 🖥:
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
 
@@ -324,7 +325,7 @@ def update_item(item_id: int, item: Item):
 
 &amp; 🔜, 🚶 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>.
 
-- 🎛 🧾 🔜 🎨 🆕 🔢 🔢 &amp; 💪:
+* 🎛 🧾 🔜 🎨 🆕 🔢 🔢 &amp; 💪:
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
@@ -352,50 +353,50 @@ item: Item
 
 ...&amp; ⏮️ 👈 👁 📄 👆 🤚:
 
-- 👨‍🎨 🐕‍🦺, 🔌:
-  - 🛠️.
-  - 🆎 ✅.
-- 🔬 💽:
-  - 🏧 &amp; 🆑 ❌ 🕐❔ 📊 ❌.
-  - 🔬 🙇 🐦 🎻 🎚.
-- <abbr title="also known as: serialization, parsing, marshalling">🛠️</abbr> 🔢 💽: 👟 ⚪️➡️ 🕸 🐍 💽 &amp; 🆎. 👂 ⚪️➡️:
-  - 🎻.
-  - ➡ 🔢.
-  - 🔢 🔢.
-  - 🍪.
-  - 🎚.
-  - 📨.
-  - 📁.
-- <abbr title="also known as: serialization, parsing, marshalling">🛠️</abbr> 🔢 📊: 🗜 ⚪️➡️ 🐍 💽 &amp; 🆎 🕸 💽 (🎻):
-  - 🗜 🐍 🆎 (`str`, `int`, `float`, `bool`, `list`, ♒️).
-  - `datetime` 🎚.
-  - `UUID` 🎚.
-  - 💽 🏷.
-  - ...&amp; 📚 🌖.
-- 🏧 🎓 🛠️ 🧾, 🔌 2️⃣ 🎛 👩‍💻 🔢:
-  - 🦁 🎚.
-  - 📄.
+* 👨‍🎨 🐕‍🦺, 🔌:
+    * 🛠️.
+    * 🆎 ✅.
+* 🔬 💽:
+    * 🏧 &amp; 🆑 ❌ 🕐❔ 📊 ❌.
+    * 🔬 🙇 🐦 🎻 🎚.
+* <abbr title="also known as: serialization, parsing, marshalling">🛠️</abbr> 🔢 💽: 👟 ⚪️➡️ 🕸 🐍 💽 &amp; 🆎. 👂 ⚪️➡️:
+    * 🎻.
+    * ➡ 🔢.
+    * 🔢 🔢.
+    * 🍪.
+    * 🎚.
+    * 📨.
+    * 📁.
+* <abbr title="also known as: serialization, parsing, marshalling">🛠️</abbr> 🔢 📊: 🗜 ⚪️➡️ 🐍 💽 &amp; 🆎 🕸 💽 (🎻):
+    * 🗜 🐍 🆎 (`str`, `int`, `float`, `bool`, `list`, ♒️).
+    * `datetime` 🎚.
+    * `UUID` 🎚.
+    * 💽 🏷.
+    * ...&amp; 📚 🌖.
+* 🏧 🎓 🛠️ 🧾, 🔌 2️⃣ 🎛 👩‍💻 🔢:
+    * 🦁 🎚.
+    * 📄.
 
 ---
 
 👟 🔙 ⏮️ 📟 🖼, **ReadyAPI** 🔜:
 
-- ✔ 👈 📤 `item_id` ➡ `GET` &amp; `PUT` 📨.
-- ✔ 👈 `item_id` 🆎 `int` `GET` &amp; `PUT` 📨.
-  - 🚥 ⚫️ 🚫, 👩‍💻 🔜 👀 ⚠, 🆑 ❌.
-- ✅ 🚥 📤 📦 🔢 🔢 📛 `q` ( `http://127.0.0.1:8000/items/foo?q=somequery`) `GET` 📨.
-  - `q` 🔢 📣 ⏮️ `= None`, ⚫️ 📦.
-  - 🍵 `None` ⚫️ 🔜 🚚 (💪 💼 ⏮️ `PUT`).
-- `PUT` 📨 `/items/{item_id}`, ✍ 💪 🎻:
-  - ✅ 👈 ⚫️ ✔️ ✔ 🔢 `name` 👈 🔜 `str`.
-  - ✅ 👈 ⚫️ ✔️ ✔ 🔢 `price` 👈 ✔️ `float`.
-  - ✅ 👈 ⚫️ ✔️ 📦 🔢 `is_offer`, 👈 🔜 `bool`, 🚥 🎁.
-  - 🌐 👉 🔜 👷 🙇 🐦 🎻 🎚.
-- 🗜 ⚪️➡️ &amp; 🎻 🔁.
-- 📄 🌐 ⏮️ 🗄, 👈 💪 ⚙️:
-  - 🎓 🧾 ⚙️.
-  - 🏧 👩‍💻 📟 ⚡ ⚙️, 📚 🇪🇸.
-- 🚚 2️⃣ 🎓 🧾 🕸 🔢 🔗.
+* ✔ 👈 📤 `item_id` ➡ `GET` &amp; `PUT` 📨.
+* ✔ 👈 `item_id` 🆎 `int` `GET` &amp; `PUT` 📨.
+    * 🚥 ⚫️ 🚫, 👩‍💻 🔜 👀 ⚠, 🆑 ❌.
+* ✅ 🚥 📤 📦 🔢 🔢 📛 `q` ( `http://127.0.0.1:8000/items/foo?q=somequery`) `GET` 📨.
+    *  `q` 🔢 📣 ⏮️ `= None`, ⚫️ 📦.
+    * 🍵 `None` ⚫️ 🔜 🚚 (💪 💼 ⏮️ `PUT`).
+*  `PUT` 📨 `/items/{item_id}`, ✍ 💪 🎻:
+    * ✅ 👈 ⚫️ ✔️ ✔ 🔢 `name` 👈 🔜 `str`.
+    * ✅ 👈 ⚫️ ✔️ ✔ 🔢 `price` 👈 ✔️ `float`.
+    * ✅ 👈 ⚫️ ✔️ 📦 🔢 `is_offer`, 👈 🔜 `bool`, 🚥 🎁.
+    * 🌐 👉 🔜 👷 🙇 🐦 🎻 🎚.
+* 🗜 ⚪️➡️ &amp; 🎻 🔁.
+* 📄 🌐 ⏮️ 🗄, 👈 💪 ⚙️:
+    * 🎓 🧾 ⚙️.
+    * 🏧 👩‍💻 📟 ⚡ ⚙️, 📚 🇪🇸.
+* 🚚 2️⃣ 🎓 🧾 🕸 🔢 🔗.
 
 ---
 
@@ -427,22 +428,22 @@ item: Item
 
 **🚘 🚨**: 🔰 - 👩‍💻 🦮 🔌:
 
-- 📄 **🔢** ⚪️➡️ 🎏 🎏 🥉: **🎚**, **🍪**, **📨 🏑** &amp; **📁**.
-- ❔ ⚒ **🔬 ⚛** `maximum_length` ⚖️ `regex`.
-- 📶 🏋️ &amp; ⏩ ⚙️ **<abbr title="also known as components, resources, providers, services, injectables">🔗 💉</abbr>** ⚙️.
-- 💂‍♂ &amp; 🤝, ✅ 🐕‍🦺 **Oauth2️⃣** ⏮️ **🥙 🤝** &amp; **🇺🇸🔍 🔰** 🔐.
-- 🌅 🏧 (✋️ 😨 ⏩) ⚒ 📣 **🙇 🐦 🎻 🏷** (👏 Pydantic).
-- **🕹** 🛠️ ⏮️ <a href="https://strawberry.rocks" class="external-link" target="_blank">🍓</a> &amp; 🎏 🗃.
-- 📚 ➕ ⚒ (👏 💃):
-  - ** \*️⃣ **
-  - 📶 ⏩ 💯 ⚓️ 🔛 🇸🇲 &amp; `pytest`
-  - **⚜**
-  - **🍪 🎉**
-  - ...&amp; 🌖.
+* 📄 **🔢** ⚪️➡️ 🎏 🎏 🥉: **🎚**, **🍪**, **📨 🏑** &amp; **📁**.
+* ❔ ⚒ **🔬 ⚛** `maximum_length` ⚖️ `regex`.
+* 📶 🏋️ &amp; ⏩ ⚙️ **<abbr title="also known as components, resources, providers, services, injectables">🔗 💉</abbr>** ⚙️.
+* 💂‍♂ &amp; 🤝, ✅ 🐕‍🦺 **Oauth2️⃣** ⏮️ **🥙 🤝** &amp; **🇺🇸🔍 🔰** 🔐.
+* 🌅 🏧 (✋️ 😨 ⏩) ⚒ 📣 **🙇 🐦 🎻 🏷** (👏 Pydantic).
+* **🕹** 🛠️ ⏮️ <a href="https://strawberry.rocks" class="external-link" target="_blank">🍓</a> &amp; 🎏 🗃.
+* 📚 ➕ ⚒ (👏 💃):
+    * ** *️⃣ **
+    * 📶 ⏩ 💯 ⚓️ 🔛 🇸🇲 &amp; `pytest`
+    * **⚜**
+    * **🍪 🎉**
+    * ...&amp; 🌖.
 
 ## 🎭
 
-🔬 🇸🇲 📇 🎦 **ReadyAPI** 🈸 🏃‍♂ 🔽 Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">1️⃣ ⏩ 🐍 🛠️ 💪</a>, 🕴 🔛 💃 &amp; Uvicorn 👫 (⚙️ 🔘 ReadyAPI). (\*)
+🔬 🇸🇲 📇 🎦 **ReadyAPI** 🈸 🏃‍♂ 🔽 Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">1️⃣ ⏩ 🐍 🛠️ 💪</a>, 🕴 🔛 💃 &amp; Uvicorn 👫 (⚙️ 🔘 ReadyAPI). (*)
 
 🤔 🌖 🔃 ⚫️, 👀 📄 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">📇</a>.
 
@@ -450,21 +451,21 @@ item: Item
 
 ⚙️ Pydantic:
 
-- <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - 📧 🔬.
+* <a href="https://github.com/JoshData/python-email-validator" target="_blank"><code>email-validator</code></a> - 📧 🔬.
 
 ⚙️ 💃:
 
-- <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - ✔ 🚥 👆 💚 ⚙️ `TestClient`.
-- <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - ✔ 🚥 👆 💚 ⚙️ 🔢 📄 📳.
-- <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - ✔ 🚥 👆 💚 🐕‍🦺 📨 <abbr title="converting the string that comes from an HTTP request into Python data">"✍"</abbr>, ⏮️ `request.form()`.
-- <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - ✔ `SessionMiddleware` 🐕‍🦺.
-- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - ✔ 💃 `SchemaGenerator` 🐕‍🦺 (👆 🎲 🚫 💪 ⚫️ ⏮️ ReadyAPI).
+* <a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - ✔ 🚥 👆 💚 ⚙️ `TestClient`.
+* <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - ✔ 🚥 👆 💚 ⚙️ 🔢 📄 📳.
+* <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - ✔ 🚥 👆 💚 🐕‍🦺 📨 <abbr title="converting the string that comes from an HTTP request into Python data">"✍"</abbr>, ⏮️ `request.form()`.
+* <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - ✔ `SessionMiddleware` 🐕‍🦺.
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - ✔ 💃 `SchemaGenerator` 🐕‍🦺 (👆 🎲 🚫 💪 ⚫️ ⏮️ ReadyAPI).
 
 ⚙️ ReadyAPI / 💃:
 
-- <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 💽 👈 📐 &amp; 🍦 👆 🈸.
-- <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - ✔ 🚥 👆 💚 ⚙️ `ORJSONResponse`.
-- <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - ✔ 🚥 👆 💚 ⚙️ `UJSONResponse`.
+* <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 💽 👈 📐 &amp; 🍦 👆 🈸.
+* <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - ✔ 🚥 👆 💚 ⚙️ `ORJSONResponse`.
+* <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - ✔ 🚥 👆 💚 ⚙️ `UJSONResponse`.
 
 👆 💪 ❎ 🌐 👫 ⏮️ `pip install "readyapi[all]"`.
 

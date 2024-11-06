@@ -44,7 +44,7 @@
 
 📁 🔜 📂 "📨 💽".
 
-🚥 👆 📣 🆎 👆 _➡ 🛠️ 🔢_ 🔢 `bytes`, **ReadyAPI** 🔜 ✍ 📁 👆 &amp; 👆 🔜 📨 🎚 `bytes`.
+🚥 👆 📣 🆎 👆 *➡ 🛠️ 🔢* 🔢 `bytes`, **ReadyAPI** 🔜 ✍ 📁 👆 &amp; 👆 🔜 📨 🎚 `bytes`.
 
 ✔️ 🤯 👈 👉 ⛓ 👈 🎂 🎚 🔜 🏪 💾. 👉 🔜 👷 👍 🤪 📁.
 
@@ -60,40 +60,40 @@
 
 ⚙️ `UploadFile` ✔️ 📚 📈 🤭 `bytes`:
 
-- 👆 🚫 ✔️ ⚙️ `File()` 🔢 💲 🔢.
-- ⚫️ ⚙️ "🧵" 📁:
-  - 📁 🏪 💾 🆙 🔆 📐 📉, &amp; ⏮️ 🚶‍♀️ 👉 📉 ⚫️ 🔜 🏪 💾.
-- 👉 ⛓ 👈 ⚫️ 🔜 👷 👍 ⭕ 📁 💖 🖼, 📹, ⭕ 💱, ♒️. 🍵 😩 🌐 💾.
-- 👆 💪 🤚 🗃 ⚪️➡️ 📂 📁.
-- ⚫️ ✔️ <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">📁-💖</a> `async` 🔢.
-- ⚫️ 🎦 ☑ 🐍 <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 🎚 👈 👆 💪 🚶‍♀️ 🔗 🎏 🗃 👈 ⌛ 📁-💖 🎚.
+* 👆 🚫 ✔️ ⚙️ `File()` 🔢 💲 🔢.
+* ⚫️ ⚙️ "🧵" 📁:
+    * 📁 🏪 💾 🆙 🔆 📐 📉, &amp; ⏮️ 🚶‍♀️ 👉 📉 ⚫️ 🔜 🏪 💾.
+* 👉 ⛓ 👈 ⚫️ 🔜 👷 👍 ⭕ 📁 💖 🖼, 📹, ⭕ 💱, ♒️. 🍵 😩 🌐 💾.
+* 👆 💪 🤚 🗃 ⚪️➡️ 📂 📁.
+* ⚫️ ✔️ <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">📁-💖</a> `async` 🔢.
+* ⚫️ 🎦 ☑ 🐍 <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> 🎚 👈 👆 💪 🚶‍♀️ 🔗 🎏 🗃 👈 ⌛ 📁-💖 🎚.
 
 ### `UploadFile`
 
 `UploadFile` ✔️ 📄 🔢:
 
-- `filename`: `str` ⏮️ ⏮️ 📁 📛 👈 📂 (✅ `myimage.jpg`).
-- `content_type`: `str` ⏮️ 🎚 🆎 (📁 🆎 / 📻 🆎) (✅ `image/jpeg`).
-- `file`: <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> ( <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">📁-💖</a> 🎚). 👉 ☑ 🐍 📁 👈 👆 💪 🚶‍♀️ 🔗 🎏 🔢 ⚖️ 🗃 👈 ⌛ "📁-💖" 🎚.
+* `filename`: `str` ⏮️ ⏮️ 📁 📛 👈 📂 (✅ `myimage.jpg`).
+* `content_type`: `str` ⏮️ 🎚 🆎 (📁 🆎 / 📻 🆎) (✅ `image/jpeg`).
+* `file`: <a href="https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile" class="external-link" target="_blank">`SpooledTemporaryFile`</a> ( <a href="https://docs.python.org/3/glossary.html#term-file-like-object" class="external-link" target="_blank">📁-💖</a> 🎚). 👉 ☑ 🐍 📁 👈 👆 💪 🚶‍♀️ 🔗 🎏 🔢 ⚖️ 🗃 👈 ⌛ "📁-💖" 🎚.
 
 `UploadFile` ✔️ 📄 `async` 👩‍🔬. 👫 🌐 🤙 🔗 📁 👩‍🔬 🔘 (⚙️ 🔗 `SpooledTemporaryFile`).
 
-- `write(data)`: ✍ `data` (`str` ⚖️ `bytes`) 📁.
-- `read(size)`: ✍ `size` (`int`) 🔢/🦹 📁.
-- `seek(offset)`: 🚶 🔢 🧘 `offset` (`int`) 📁.
-  - 🤶 Ⓜ., `await myfile.seek(0)` 🔜 🚶 ▶️ 📁.
-  - 👉 ✴️ ⚠ 🚥 👆 🏃 `await myfile.read()` 🕐 &amp; ⤴️ 💪 ✍ 🎚 🔄.
-- `close()`: 🔐 📁.
+* `write(data)`: ✍ `data` (`str` ⚖️ `bytes`) 📁.
+* `read(size)`: ✍ `size` (`int`) 🔢/🦹 📁.
+* `seek(offset)`: 🚶 🔢 🧘 `offset` (`int`) 📁.
+    * 🤶 Ⓜ., `await myfile.seek(0)` 🔜 🚶 ▶️ 📁.
+    * 👉 ✴️ ⚠ 🚥 👆 🏃 `await myfile.read()` 🕐 &amp; ⤴️ 💪 ✍ 🎚 🔄.
+* `close()`: 🔐 📁.
 
 🌐 👫 👩‍🔬 `async` 👩‍🔬, 👆 💪 "⌛" 👫.
 
-🖼, 🔘 `async` _➡ 🛠️ 🔢_ 👆 💪 🤚 🎚 ⏮️:
+🖼, 🔘 `async` *➡ 🛠️ 🔢* 👆 💪 🤚 🎚 ⏮️:
 
 ```Python
 contents = await myfile.read()
 ```
 
-🚥 👆 🔘 😐 `def` _➡ 🛠️ 🔢_, 👆 💪 🔐 `UploadFile.file` 🔗, 🖼:
+🚥 👆 🔘 😐 `def` *➡ 🛠️ 🔢*, 👆 💪 🔐 `UploadFile.file` 🔗, 🖼:
 
 ```Python
 contents = myfile.file.read()
@@ -129,7 +129,7 @@ contents = myfile.file.read()
 
 /// warning
 
-👆 💪 📣 💗 `File` &amp; `Form` 🔢 _➡ 🛠️_, ✋️ 👆 💪 🚫 📣 `Body` 🏑 👈 👆 ⌛ 📨 🎻, 📨 🔜 ✔️ 💪 🗜 ⚙️ `multipart/form-data` ↩️ `application/json`.
+👆 💪 📣 💗 `File` &amp; `Form` 🔢 *➡ 🛠️*, ✋️ 👆 💪 🚫 📣 `Body` 🏑 👈 👆 ⌛ 📨 🎻, 📨 🔜 ✔️ 💪 🗜 ⚙️ `multipart/form-data` ↩️ `application/json`.
 
 👉 🚫 🚫 **ReadyAPI**, ⚫️ 🍕 🇺🇸🔍 🛠️.
 

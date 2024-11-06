@@ -84,7 +84,7 @@ Prefer to use the `Annotated` version if possible.
 
 You can set a dependency override for a dependency used anywhere in your **ReadyAPI** application.
 
-The original dependency could be used in a _path operation function_, a _path operation decorator_ (when you don't use the return value), a `.include_router()` call, etc.
+The original dependency could be used in a *path operation function*, a *path operation decorator* (when you don't use the return value), a `.include_router()` call, etc.
 
 ReadyAPI will still be able to override it.
 

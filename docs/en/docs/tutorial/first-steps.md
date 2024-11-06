@@ -2,9 +2,7 @@
 
 The simplest ReadyAPI file could look like this:
 
-```Python
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py *}
 
 Copy that to a file `main.py`.
 
@@ -157,9 +155,7 @@ You could also use it to generate code automatically, for clients that communica
 
 ### Step 1: import `ReadyAPI`
 
-```Python hl_lines="1"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` is a Python class that provides all the functionality for your API.
 
@@ -173,15 +169,13 @@ You can use all the <a href="https://www.starlette.io/" class="external-link" ta
 
 ### Step 2: create a `ReadyAPI` "instance"
 
-```Python hl_lines="3"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
 Here the `app` variable will be an "instance" of the class `ReadyAPI`.
 
 This will be the main point of interaction to create all your API.
 
-### Step 3: create a _path operation_
+### Step 3: create a *path operation*
 
 #### Path
 
@@ -213,17 +207,17 @@ While building an API, the "path" is the main way to separate "concerns" and "re
 
 One of:
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ...and the more exotic ones:
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 In the HTTP protocol, you can communicate to each path using one (or more) of these "methods".
 
@@ -233,25 +227,23 @@ When building APIs, you normally use these specific HTTP methods to perform a sp
 
 Normally you use:
 
-- `POST`: to create data.
-- `GET`: to read data.
-- `PUT`: to update data.
-- `DELETE`: to delete data.
+* `POST`: to create data.
+* `GET`: to read data.
+* `PUT`: to update data.
+* `DELETE`: to delete data.
 
 So, in OpenAPI, each of the HTTP methods is called an "operation".
 
 We are going to call them "**operations**" too.
 
-#### Define a _path operation decorator_
+#### Define a *path operation decorator*
 
-```Python hl_lines="6"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
 The `@app.get("/")` tells **ReadyAPI** that the function right below is in charge of handling requests that go to:
 
-- the path `/`
-- using a <abbr title="an HTTP GET method"><code>get</code> operation</abbr>
+* the path `/`
+* using a <abbr title="an HTTP GET method"><code>get</code> operation</abbr>
 
 /// info | "`@decorator` Info"
 
@@ -269,16 +261,16 @@ It is the "**path operation decorator**".
 
 You can also use the other operations:
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 And the more exotic ones:
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip
 
@@ -296,13 +288,11 @@ For example, when using GraphQL you normally perform all the actions using only 
 
 This is our "**path operation function**":
 
-- **path**: is `/`.
-- **operation**: is `get`.
-- **function**: is the function below the "decorator" (below `@app.get("/")`).
+* **path**: is `/`.
+* **operation**: is `get`.
+* **function**: is the function below the "decorator" (below `@app.get("/")`).
 
-```Python hl_lines="7"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
 
 This is a Python function.
 
@@ -314,21 +304,17 @@ In this case, it is an `async` function.
 
 You could also define it as a normal function instead of `async def`:
 
-```Python hl_lines="7"
-{!../../docs_src/first_steps/tutorial003.py!}
-```
+{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
 
 /// note
 
-If you don't know the difference, check the [Async: _"In a hurry?"_](../async.md#in-a-hurry){.internal-link target=\_blank}.
+If you don't know the difference, check the [Async: *"In a hurry?"*](../async.md#in-a-hurry){.internal-link target=_blank}.
 
 ///
 
 ### Step 5: return the content
 
-```Python hl_lines="8"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
 
 You can return a `dict`, `list`, singular values as `str`, `int`, etc.
 
@@ -338,8 +324,8 @@ There are many other objects and models that will be automatically converted to 
 
 ## Recap
 
-- Import `ReadyAPI`.
-- Create an `app` instance.
-- Write a **path operation decorator** using decorators like `@app.get("/")`.
-- Define a **path operation function**; for example, `def root(): ...`.
-- Run the development server using the command `readyapi dev`.
+* Import `ReadyAPI`.
+* Create an `app` instance.
+* Write a **path operation decorator** using decorators like `@app.get("/")`.
+* Define a **path operation function**; for example, `def root(): ...`.
+* Run the development server using the command `readyapi dev`.

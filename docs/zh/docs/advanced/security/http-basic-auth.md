@@ -14,11 +14,11 @@ HTTP 基础授权让浏览器显示内置的用户名与密码提示。
 
 ## 简单的 HTTP 基础授权
 
-- 导入 `HTTPBasic` 与 `HTTPBasicCredentials`
-- 使用 `HTTPBasic` 创建**安全概图**
-- 在*路径操作*的依赖项中使用 `security`
-- 返回类型为 `HTTPBasicCredentials` 的对象：
-  - 包含发送的 `username` 与 `password`
+* 导入 `HTTPBasic` 与 `HTTPBasicCredentials`
+* 使用 `HTTPBasic` 创建**安全概图**
+* 在*路径操作*的依赖项中使用 `security`
+* 返回类型为 `HTTPBasicCredentials` 的对象：
+    * 包含发送的 `username` 与 `password`
 
 //// tab | Python 3.9+
 
@@ -114,7 +114,7 @@ if not (credentials.username == "stanleyjobson") or not (credentials.password ==
 
 假设攻击者试图猜出用户名与密码。
 
-他们发送用户名为 `johndoe`，密码为 `love123` 的请求。
+他们发送用户名为 `johndoe`，密码为 `love123`  的请求。
 
 然后，Python 代码执行如下操作：
 
