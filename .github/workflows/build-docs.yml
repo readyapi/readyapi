@@ -31,8 +31,8 @@ jobs:
             - README.md
             - docs/**
             - docs_src/**
-            - requirements-docs.txt
-            - requirements-docs-insiders.txt
+            - requirements/requirements-docs.txt
+            - requirements/requirements-docs-insiders.txt
             - pyproject.toml
             - mkdocs.yml
             - mkdocs.insiders.yml
@@ -58,7 +58,7 @@ jobs:
           version: "0.4.15"
           enable-cache: true
           cache-dependency-glob: |
-            requirements**.txt
+            requirements/requirements**.txt
             pyproject.toml
       - name: Install docs extras
         run: uv pip install -r ./requirements/requirements-docs.txt
@@ -100,7 +100,7 @@ jobs:
           version: "0.4.15"
           enable-cache: true
           cache-dependency-glob: |
-            requirements**.txt
+            requirements/requirements**.txt
             pyproject.toml
       - name: Install docs extras
         run: uv pip install -r ./requirements/requirements-docs.txt

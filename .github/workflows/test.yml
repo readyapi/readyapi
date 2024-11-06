@@ -34,7 +34,7 @@ jobs:
           version: "0.4.15"
           enable-cache: true
           cache-dependency-glob: |
-            requirements**.txt
+            requirements/requirements**.txt
             pyproject.toml
       - name: Install Dependencies
         run: uv pip install -r ./requirements/requirements-tests.txt
@@ -71,7 +71,7 @@ jobs:
           version: "0.4.15"
           enable-cache: true
           cache-dependency-glob: |
-            requirements**.txt
+            requirements/requirements**.txt
             pyproject.toml
       - name: Install Dependencies
         run: uv pip install -r ./requirements/requirements-tests.txt
@@ -112,7 +112,7 @@ jobs:
           version: "0.4.15"
           enable-cache: true
           cache-dependency-glob: |
-            requirements**.txt
+            requirements/requirements**.txt
             pyproject.toml
       - name: Install Dependencies
         run: uv pip install -r ./requirements/requirements-tests.txt
