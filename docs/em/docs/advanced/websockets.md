@@ -1,6 +1,6 @@
-# \*️⃣
+#  *️⃣
 
-👆 💪 ⚙️ <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank"> \*️⃣ </a> ⏮️ **ReadyAPI**.
+👆 💪 ⚙️ <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank"> *️⃣ </a> ⏮️ **ReadyAPI**.
 
 ## ❎ `WebSockets`
 
@@ -16,17 +16,17 @@ $ pip install websockets
 
 </div>
 
-## \*️⃣ 👩‍💻
+##  *️⃣ 👩‍💻
 
 ### 🏭
 
 👆 🏭 ⚙️, 👆 🎲 ✔️ 🕸 ✍ ⏮️ 🏛 🛠️ 💖 😥, Vue.js ⚖️ 📐.
 
-&amp; 🔗 ⚙️ \*️⃣ ⏮️ 👆 👩‍💻 👆 🔜 🎲 ⚙️ 👆 🕸 🚙.
+&amp; 🔗 ⚙️ *️⃣ ⏮️ 👆 👩‍💻 👆 🔜 🎲 ⚙️ 👆 🕸 🚙.
 
-⚖️ 👆 💪 ✔️ 🇦🇸 📱 🈸 👈 🔗 ⏮️ 👆 \*️⃣ 👩‍💻 🔗, 🇦🇸 📟.
+⚖️ 👆 💪 ✔️ 🇦🇸 📱 🈸 👈 🔗 ⏮️ 👆 *️⃣ 👩‍💻 🔗, 🇦🇸 📟.
 
-⚖️ 👆 5️⃣📆 ✔️ 🙆 🎏 🌌 🔗 ⏮️ \*️⃣ 🔗.
+⚖️ 👆 5️⃣📆 ✔️ 🙆 🎏 🌌 🔗 ⏮️ *️⃣ 🔗.
 
 ---
 
@@ -36,7 +36,7 @@ $ pip install websockets
 
 🏭 👆 🔜 ✔️ 1️⃣ 🎛 🔛.
 
-✋️ ⚫️ 🙅 🌌 🎯 🔛 💽-🚄 \*️⃣ &amp; ✔️ 👷 🖼:
+✋️ ⚫️ 🙅 🌌 🎯 🔛 💽-🚄 *️⃣ &amp; ✔️ 👷 🖼:
 
 ```Python hl_lines="2  6-38  41-43"
 {!../../docs_src/websockets/tutorial001.py!}
@@ -60,7 +60,7 @@ $ pip install websockets
 
 ## ⌛ 📧 &amp; 📨 📧
 
-👆 \*️⃣ 🛣 👆 💪 `await` 📧 &amp; 📨 📧.
+👆 *️⃣ 🛣 👆 💪 `await` 📧 &amp; 📨 📧.
 
 ```Python hl_lines="48-52"
 {!../../docs_src/websockets/tutorial001.py!}
@@ -92,7 +92,7 @@ $ uvicorn main:app --reload
 
 <img src="/img/tutorial/websockets/image02.png">
 
-&amp; 👆 **ReadyAPI** 🈸 ⏮️ \*️⃣ 🔜 📨 🔙:
+&amp; 👆 **ReadyAPI** 🈸 ⏮️ *️⃣ 🔜 📨 🔙:
 
 <img src="/img/tutorial/websockets/image03.png">
 
@@ -100,20 +100,20 @@ $ uvicorn main:app --reload
 
 <img src="/img/tutorial/websockets/image04.png">
 
-&amp; 🌐 👫 🔜 ⚙️ 🎏 \*️⃣ 🔗.
+&amp; 🌐 👫 🔜 ⚙️ 🎏 *️⃣ 🔗.
 
 ## ⚙️ `Depends` &amp; 🎏
 
-\*️⃣ 🔗 👆 💪 🗄 ⚪️➡️ `readyapi` &amp; ⚙️:
+*️⃣ 🔗 👆 💪 🗄 ⚪️➡️ `readyapi` &amp; ⚙️:
 
-- `Depends`
-- `Security`
-- `Cookie`
-- `Header`
-- `Path`
-- `Query`
+* `Depends`
+* `Security`
+* `Cookie`
+* `Header`
+* `Path`
+* `Query`
 
-👫 👷 🎏 🌌 🎏 ReadyAPI 🔗/_➡ 🛠️_:
+👫 👷 🎏 🌌 🎏 ReadyAPI 🔗/*➡ 🛠️*:
 
 ```Python hl_lines="66-77  76-91"
 {!../../docs_src/websockets/tutorial002.py!}
@@ -121,13 +121,13 @@ $ uvicorn main:app --reload
 
 /// info
 
-👉 \*️⃣ ⚫️ 🚫 🤙 ⚒ 🔑 🤚 `HTTPException`, ↩️ 👥 🤚 `WebSocketException`.
+👉 *️⃣ ⚫️ 🚫 🤙 ⚒ 🔑 🤚 `HTTPException`, ↩️ 👥 🤚 `WebSocketException`.
 
 👆 💪 ⚙️ 📪 📟 ⚪️➡️ <a href="https://tools.ietf.org/html/rfc6455#section-7.4.1" class="external-link" target="_blank">☑ 📟 🔬 🔧</a>.
 
 ///
 
-### 🔄 \*️⃣ ⏮️ 🔗
+### 🔄 *️⃣ ⏮️ 🔗
 
 🚥 👆 📁 📛 `main.py`, 🏃 👆 🈸 ⏮️:
 
@@ -145,8 +145,8 @@ $ uvicorn main:app --reload
 
 📤 👆 💪 ⚒:
 
-- "🏬 🆔", ⚙️ ➡.
-- "🤝" ⚙️ 🔢 🔢.
+*  "🏬 🆔", ⚙️ ➡.
+*  "🤝" ⚙️ 🔢 🔢.
 
 /// tip
 
@@ -154,13 +154,13 @@ $ uvicorn main:app --reload
 
 ///
 
-⏮️ 👈 👆 💪 🔗 \*️⃣ &amp; ⤴️ 📨 &amp; 📨 📧:
+⏮️ 👈 👆 💪 🔗 *️⃣ &amp; ⤴️ 📨 &amp; 📨 📧:
 
 <img src="/img/tutorial/websockets/image05.png">
 
 ## 🚚 🔀 &amp; 💗 👩‍💻
 
-🕐❔ \*️⃣ 🔗 📪, `await websocket.receive_text()` 🔜 🤚 `WebSocketDisconnect` ⚠, ❔ 👆 💪 ⤴️ ✊ &amp; 🍵 💖 👉 🖼.
+🕐❔ *️⃣ 🔗 📪, `await websocket.receive_text()` 🔜 🤚 `WebSocketDisconnect` ⚠, ❔ 👆 💪 ⤴️ ✊ &amp; 🍵 💖 👉 🖼.
 
 ```Python hl_lines="81-83"
 {!../../docs_src/websockets/tutorial003.py!}
@@ -168,9 +168,9 @@ $ uvicorn main:app --reload
 
 🔄 ⚫️ 👅:
 
-- 📂 📱 ⏮️ 📚 🖥 📑.
-- ✍ 📧 ⚪️➡️ 👫.
-- ⤴️ 🔐 1️⃣ 📑.
+* 📂 📱 ⏮️ 📚 🖥 📑.
+* ✍ 📧 ⚪️➡️ 👫.
+* ⤴️ 🔐 1️⃣ 📑.
 
 👈 🔜 🤚 `WebSocketDisconnect` ⚠, &amp; 🌐 🎏 👩‍💻 🔜 📨 📧 💖:
 
@@ -180,7 +180,7 @@ Client #1596980209979 left the chat
 
 /// tip
 
-📱 🔛 ⭐ &amp; 🙅 🖼 🎦 ❔ 🍵 &amp; 📻 📧 📚 \*️⃣ 🔗.
+📱 🔛 ⭐ &amp; 🙅 🖼 🎦 ❔ 🍵 &amp; 📻 📧 📚 *️⃣ 🔗.
 
 ✋️ ✔️ 🤯 👈, 🌐 🍵 💾, 👁 📇, ⚫️ 🔜 🕴 👷 ⏪ 🛠️ 🏃, &amp; 🔜 🕴 👷 ⏮️ 👁 🛠️.
 
@@ -192,5 +192,5 @@ Client #1596980209979 left the chat
 
 💡 🌅 🔃 🎛, ✅ 💃 🧾:
 
-- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank"> `WebSocket` 🎓</a>.
-- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">🎓-⚓️ \*️⃣ 🚚</a>.
+* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank"> `WebSocket` 🎓</a>.
+* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">🎓-⚓️ *️⃣ 🚚</a>.

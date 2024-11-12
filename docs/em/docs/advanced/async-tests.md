@@ -20,7 +20,7 @@
 
 ## 🖼
 
-🙅 🖼, ➡️ 🤔 📁 📊 🎏 1️⃣ 🔬 [🦏 🈸](../tutorial/bigger-applications.md){.internal-link target=\_blank} &amp; [🔬](../tutorial/testing.md){.internal-link target=\_blank}:
+🙅 🖼, ➡️ 🤔 📁 📊 🎏 1️⃣ 🔬 [🦏 🈸](../tutorial/bigger-applications.md){.internal-link target=_blank} &amp; [🔬](../tutorial/testing.md){.internal-link target=_blank}:
 
 ```
 .

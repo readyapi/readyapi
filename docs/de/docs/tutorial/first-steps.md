@@ -28,9 +28,9 @@ $ uvicorn main:app --reload
 
 Der Befehl `uvicorn main:app` bezieht sich auf:
 
-- `main`: die Datei `main.py` (das sogenannte Python-„Modul“).
-- `app`: das Objekt, welches in der Datei `main.py` mit der Zeile `app = ReadyAPI()` erzeugt wurde.
-- `--reload`: lässt den Server nach Codeänderungen neu starten. Verwenden Sie das nur während der Entwicklung.
+* `main`: die Datei `main.py` (das sogenannte Python-„Modul“).
+* `app`: das Objekt, welches in der Datei `main.py` mit der Zeile `app = ReadyAPI()` erzeugt wurde.
+* `--reload`: lässt den Server nach Codeänderungen neu starten. Verwenden Sie das nur während der Entwicklung.
 
 ///
 
@@ -78,7 +78,7 @@ Ein „Schema“ ist eine Definition oder Beschreibung von etwas. Nicht der eige
 
 #### API-„Schema“
 
-In diesem Fall ist <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> eine Spezifikation, die vorschreibt, wie ein Schema für Ihre API zu definieren ist.
+In diesem Fall ist  <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> eine Spezifikation, die vorschreibt, wie ein Schema für Ihre API zu definieren ist.
 
 Diese Schemadefinition enthält Ihre API-Pfade, die möglichen Parameter, welche diese entgegennehmen, usw.
 
@@ -141,7 +141,7 @@ Ebenfalls können Sie es verwenden, um automatisch Code für Clients zu generier
 
 /// note | "Technische Details"
 
-`ReadyAPI` ist eine Klasse, die direkt von `Starlette` erbt.
+`ReadyAPI`  ist eine Klasse, die direkt von `Starlette` erbt.
 
 Sie können alle <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>-Funktionalitäten auch mit `ReadyAPI` nutzen.
 
@@ -187,7 +187,7 @@ $ uvicorn main:my_awesome_api --reload
 
 </div>
 
-### Schritt 3: Erstellen einer _Pfadoperation_
+### Schritt 3: Erstellen einer *Pfadoperation*
 
 #### Pfad
 
@@ -219,17 +219,17 @@ Bei der Erstellung einer API ist der „Pfad“ die wichtigste Möglichkeit zur 
 
 Eine von diesen:
 
-- `POST`
-- `GET`
-- `PUT`
-- `DELETE`
+* `POST`
+* `GET`
+* `PUT`
+* `DELETE`
 
 ... und die etwas Exotischeren:
 
-- `OPTIONS`
-- `HEAD`
-- `PATCH`
-- `TRACE`
+* `OPTIONS`
+* `HEAD`
+* `PATCH`
+* `TRACE`
 
 Im HTTP-Protokoll können Sie mit jedem Pfad über eine (oder mehrere) dieser „Methoden“ kommunizieren.
 
@@ -239,16 +239,16 @@ Bei der Erstellung von APIs verwenden Sie normalerweise diese spezifischen HTTP-
 
 Normalerweise verwenden Sie:
 
-- `POST`: um Daten zu erzeugen (create).
-- `GET`: um Daten zu lesen (read).
-- `PUT`: um Daten zu aktualisieren (update).
-- `DELETE`: um Daten zu löschen (delete).
+* `POST`: um Daten zu erzeugen (create).
+* `GET`: um Daten zu lesen (read).
+* `PUT`: um Daten zu aktualisieren (update).
+* `DELETE`: um Daten zu löschen (delete).
 
 In OpenAPI wird folglich jede dieser HTTP-Methoden als „Operation“ bezeichnet.
 
 Wir werden sie auch „**Operationen**“ nennen.
 
-#### Definieren eines _Pfadoperation-Dekorators_
+#### Definieren eines *Pfadoperation-Dekorators*
 
 ```Python hl_lines="6"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -256,8 +256,8 @@ Wir werden sie auch „**Operationen**“ nennen.
 
 Das `@app.get("/")` sagt **ReadyAPI**, dass die Funktion direkt darunter für die Bearbeitung von Anfragen zuständig ist, die an:
 
-- den Pfad `/`
-- unter der Verwendung der <abbr title="eine HTTP GET Methode"><code>get</code>-Operation</abbr> gehen
+ * den Pfad `/`
+ * unter der Verwendung der <abbr title="eine HTTP GET Methode"><code>get</code>-Operation</abbr> gehen
 
 /// info | "`@decorator` Information"
 
@@ -275,16 +275,16 @@ Dies ist der „**Pfadoperation-Dekorator**“.
 
 Sie können auch die anderen Operationen verwenden:
 
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
 
 Oder die exotischeren:
 
-- `@app.options()`
-- `@app.head()`
-- `@app.patch()`
-- `@app.trace()`
+* `@app.options()`
+* `@app.head()`
+* `@app.patch()`
+* `@app.trace()`
 
 /// tip | "Tipp"
 
@@ -302,9 +302,9 @@ Wenn Sie beispielsweise GraphQL verwenden, führen Sie normalerweise alle Aktion
 
 Das ist unsere „**Pfadoperation-Funktion**“:
 
-- **Pfad**: ist `/`.
-- **Operation**: ist `get`.
-- **Funktion**: ist die Funktion direkt unter dem „Dekorator“ (unter `@app.get("/")`).
+* **Pfad**: ist `/`.
+* **Operation**: ist `get`.
+* **Funktion**: ist die Funktion direkt unter dem „Dekorator“ (unter `@app.get("/")`).
 
 ```Python hl_lines="7"
 {!../../docs_src/first_steps/tutorial001.py!}
@@ -326,7 +326,7 @@ Sie könnten sie auch als normale Funktion anstelle von `async def` definieren:
 
 /// note | "Hinweis"
 
-Wenn Sie den Unterschied nicht kennen, lesen Sie [Async: _„In Eile?“_](../async.md#in-eile){.internal-link target=\_blank}.
+Wenn Sie den Unterschied nicht kennen, lesen Sie [Async: *„In Eile?“*](../async.md#in-eile){.internal-link target=_blank}.
 
 ///
 
@@ -344,8 +344,8 @@ Es gibt viele andere Objekte und Modelle, die automatisch zu JSON konvertiert we
 
 ## Zusammenfassung
 
-- Importieren Sie `ReadyAPI`.
-- Erstellen Sie eine `app` Instanz.
-- Schreiben Sie einen **Pfadoperation-Dekorator** (wie z. B. `@app.get("/")`).
-- Schreiben Sie eine **Pfadoperation-Funktion** (wie z. B. oben `def root(): ...`).
-- Starten Sie den Entwicklungsserver (z. B. `uvicorn main:app --reload`).
+* Importieren Sie `ReadyAPI`.
+* Erstellen Sie eine `app` Instanz.
+* Schreiben Sie einen **Pfadoperation-Dekorator** (wie z. B. `@app.get("/")`).
+* Schreiben Sie eine **Pfadoperation-Funktion** (wie z. B. oben `def root(): ...`).
+* Starten Sie den Entwicklungsserver (z. B. `uvicorn main:app --reload`).

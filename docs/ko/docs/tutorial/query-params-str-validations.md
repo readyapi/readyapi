@@ -100,9 +100,9 @@ q: str = Query(None, max_length=50)
 
 이 특정 정규표현식은 전달 받은 매개변수 값을 검사합니다:
 
-- `^`: 이전에 문자가 없고 뒤따르는 문자로 시작합니다.
-- `fixedquery`: 정확히 `fixedquery` 값을 갖습니다.
-- `$`: 여기서 끝나고 `fixedquery` 이후로 아무 문자도 갖지 않습니다.
+* `^`: 이전에 문자가 없고 뒤따르는 문자로 시작합니다.
+* `fixedquery`: 정확히 `fixedquery` 값을 갖습니다.
+* `$`: 여기서 끝나고 `fixedquery` 이후로 아무 문자도 갖지 않습니다.
 
 **"정규표현식"** 개념에 대해 상실감을 느꼈다면 걱정하지 않아도 됩니다. 많은 사람에게 어려운 주제입니다. 아직은 정규표현식 없이도 많은 작업들을 할 수 있습니다.
 
@@ -162,7 +162,7 @@ q: Optional[str] = Query(None, min_length=3)
 
 쿼리 매개변수를 `Query`와 함께 명시적으로 선언할 때, 값들의 리스트나 다른 방법으로 여러 값을 받도록 선언 할 수도 있습니다.
 
-예를 들어, URL에서 여러번 나오는 `q` 쿼리 매개변수를 선언하려면 다음과 같이 작성할 수 있습니다:
+예를 들어, URL에서 여러번 나오는  `q` 쿼리 매개변수를 선언하려면 다음과 같이 작성할 수 있습니다:
 
 ```Python hl_lines="9"
 {!../../docs_src/query_params_str_validations/tutorial011.py!}
@@ -174,7 +174,7 @@ q: Optional[str] = Query(None, min_length=3)
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-여러 `q` _쿼리 매개변수_ 값들을 (`foo` 및 `bar`) 파이썬 `list`로 _경로 작동 함수_ 내 _함수 매개변수_ `q`로 전달 받습니다.
+여러 `q` *쿼리 매개변수* 값들을 (`foo` 및 `bar`) 파이썬 `list`로 *경로 작동 함수* 내 *함수 매개변수* `q`로 전달 받습니다.
 
 따라서 해당 URL에 대한 응답은 다음과 같습니다:
 
@@ -308,16 +308,16 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 제네릭 검증과 메타데이터:
 
-- `alias`
-- `title`
-- `description`
-- `deprecated`
+* `alias`
+* `title`
+* `description`
+* `deprecated`
 
 특정 문자열 검증:
 
-- `min_length`
-- `max_length`
-- `regex`
+* `min_length`
+* `max_length`
+* `regex`
 
 예제에서 `str` 값의 검증을 어떻게 추가하는지 살펴보았습니다.
 

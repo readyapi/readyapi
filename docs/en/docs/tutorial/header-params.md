@@ -280,7 +280,7 @@ Prefer to use the `Annotated` version if possible.
 
 ////
 
-If you communicate with that _path operation_ sending two HTTP headers like:
+If you communicate with that *path operation* sending two HTTP headers like:
 
 ```
 X-Token: foo

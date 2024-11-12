@@ -14,7 +14,7 @@ But don't worry, you can show it as you wish to your final users in the frontend
 
 And your database models can use any other names you want.
 
-But for the login _path operation_, we need to use these names to be compatible with the spec (and be able to, for example, use the integrated API documentation system).
+But for the login *path operation*, we need to use these names to be compatible with the spec (and be able to, for example, use the integrated API documentation system).
 
 The spec also states that the `username` and `password` must be sent as form data (so, no JSON here).
 
@@ -28,9 +28,9 @@ Each "scope" is just a string (without spaces).
 
 They are normally used to declare specific security permissions, for example:
 
-- `users:read` or `users:write` are common examples.
-- `instagram_basic` is used by Facebook / Instagram.
-- `https://www.googleapis.com/auth/drive` is used by Google.
+* `users:read` or `users:write` are common examples.
+* `instagram_basic` is used by Facebook / Instagram.
+* `https://www.googleapis.com/auth/drive` is used by Google.
 
 /// info
 
@@ -50,7 +50,7 @@ Now let's use the utilities provided by **ReadyAPI** to handle this.
 
 ### `OAuth2PasswordRequestForm`
 
-First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the _path operation_ for `/token`:
+First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the *path operation* for `/token`:
 
 //// tab | Python 3.10+
 
@@ -106,21 +106,21 @@ Prefer to use the `Annotated` version if possible.
 
 `OAuth2PasswordRequestForm` is a class dependency that declares a form body with:
 
-- The `username`.
-- The `password`.
-- An optional `scope` field as a big string, composed of strings separated by spaces.
-- An optional `grant_type`.
+* The `username`.
+* The `password`.
+* An optional `scope` field as a big string, composed of strings separated by spaces.
+* An optional `grant_type`.
 
 /// tip
 
-The OAuth2 spec actually _requires_ a field `grant_type` with a fixed value of `password`, but `OAuth2PasswordRequestForm` doesn't enforce it.
+The OAuth2 spec actually *requires* a field `grant_type` with a fixed value of `password`, but `OAuth2PasswordRequestForm` doesn't enforce it.
 
 If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAuth2PasswordRequestForm`.
 
 ///
 
-- An optional `client_id` (we don't need it for our example).
-- An optional `client_secret` (we don't need it for our example).
+* An optional `client_id` (we don't need it for our example).
+* An optional `client_secret` (we don't need it for our example).
 
 /// info
 
@@ -282,7 +282,7 @@ Prefer to use the `Annotated` version if possible.
 
 `UserInDB(**user_dict)` means:
 
-_Pass the keys and values of the `user_dict` directly as key-value arguments, equivalent to:_
+*Pass the keys and values of the `user_dict` directly as key-value arguments, equivalent to:*
 
 ```Python
 UserInDB(
@@ -296,7 +296,7 @@ UserInDB(
 
 /// info
 
-For a more complete explanation of `**user_dict` check back in [the documentation for **Extra Models**](../extra-models.md#about-user_indict){.internal-link target=\_blank}.
+For a more complete explanation of `**user_dict` check back in [the documentation for **Extra Models**](../extra-models.md#about-user_indict){.internal-link target=_blank}.
 
 ///
 
@@ -386,7 +386,7 @@ For the rest, **ReadyAPI** handles it for you.
 
 Now we are going to update our dependencies.
 
-We want to get the `current_user` _only_ if this user is active.
+We want to get the `current_user` *only* if this user is active.
 
 So, we create an additional dependency `get_current_active_user` that in turn uses `get_current_user` as a dependency.
 

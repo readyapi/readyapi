@@ -1,4 +1,4 @@
-# メタデータとドキュメントの URL
+# メタデータとドキュメントのURL
 
 **ReadyAPI** アプリケーションのいくつかのメタデータの設定をカスタマイズできます。
 
@@ -6,9 +6,10 @@
 
 以下を設定できます:
 
-- **タイトル**: OpenAPI および自動 API ドキュメント UI で API のタイトル/名前として使用される。
-- **説明文**: OpenAPI および自動 API ドキュメント UI での API の説明文。
-- **バージョン**: API のバージョン。例: `v2` または `2.5.0`。 \*たとえば、以前のバージョンのアプリケーションがあり、OpenAPI も使用している場合に便利です。
+* **タイトル**: OpenAPIおよび自動APIドキュメントUIでAPIのタイトル/名前として使用される。
+* **説明文**: OpenAPIおよび自動APIドキュメントUIでのAPIの説明文。
+* **バージョン**: APIのバージョン。例: `v2` または `2.5.0`。
+     *たとえば、以前のバージョンのアプリケーションがあり、OpenAPIも使用している場合に便利です。
 
 これらを設定するには、パラメータ `title`、`description`、`version` を使用します:
 
@@ -16,7 +17,7 @@
 {!../../docs_src/metadata/tutorial001.py!}
 ```
 
-この設定では、自動 API ドキュメントは以下の様になります:
+この設定では、自動APIドキュメントは以下の様になります:
 
 <img src="/img/tutorial/metadata/image01.png">
 
@@ -28,11 +29,11 @@
 
 それぞれの辞書は以下をもつことができます:
 
-- `name` (**必須**): _path operations_ および `APIRouter` の `tags` パラメーターで使用するのと同じタグ名である `str`。
-- `description`: タグの簡単な説明文である `str`。 Markdown で記述でき、ドキュメント UI に表示されます。
-- `externalDocs`: 外部ドキュメントを説明するための `dict`:
-  - `description`: 外部ドキュメントの簡単な説明文である `str`。
-  - `url` (**必須**): 外部ドキュメントの URL である `str`。
+* `name` (**必須**): *path operations* および `APIRouter` の `tags` パラメーターで使用するのと同じタグ名である `str`。
+* `description`: タグの簡単な説明文である `str`。 Markdownで記述でき、ドキュメントUIに表示されます。
+* `externalDocs`: 外部ドキュメントを説明するための `dict`:
+    * `description`: 外部ドキュメントの簡単な説明文である `str`。
+    * `url` (**必須**): 外部ドキュメントのURLである `str`。
 
 ### タグのためのメタデータの作成
 
@@ -54,7 +55,7 @@
 
 ### 自作タグの使用
 
-`tags` パラメーターを使用して、それぞれの _path operations_ (および `APIRouter`) を異なるタグに割り当てます:
+`tags` パラメーターを使用して、それぞれの *path operations* (および `APIRouter`) を異なるタグに割り当てます:
 
 ```Python hl_lines="21  26"
 {!../../docs_src/metadata/tutorial004.py!}
@@ -62,7 +63,7 @@
 
 /// info | "情報"
 
-タグのより詳しい説明を知りたい場合は [Path Operation Configuration](path-operation-configuration.md#tags){.internal-link target=\_blank} を参照して下さい。
+タグのより詳しい説明を知りたい場合は [Path Operation Configuration](path-operation-configuration.md#tags){.internal-link target=_blank} を参照して下さい。
 
 ///
 
@@ -74,13 +75,13 @@
 
 ### タグの順番
 
-タグのメタデータ辞書の順序は、ドキュメント UI に表示される順序の定義にもなります。
+タグのメタデータ辞書の順序は、ドキュメントUIに表示される順序の定義にもなります。
 
-たとえば、`users` はアルファベット順では `items` の後に続きます。しかし、リストの最初に `users` のメタデータ辞書を追加したため、ドキュメント UI では `users` が先に表示されます。
+たとえば、`users` はアルファベット順では `items` の後に続きます。しかし、リストの最初に `users` のメタデータ辞書を追加したため、ドキュメントUIでは `users` が先に表示されます。
 
 ## OpenAPI URL
 
-デフォルトでは、OpenAPI スキーマは `/openapi.json` で提供されます。
+デフォルトでは、OpenAPIスキーマは `/openapi.json` で提供されます。
 
 ただし、パラメータ `openapi_url` を使用して設定を変更できます。
 
@@ -90,20 +91,20 @@
 {!../../docs_src/metadata/tutorial002.py!}
 ```
 
-OpenAPI スキーマを完全に無効にする場合は、`openapi_url=None` を設定できます。これにより、それを使用するドキュメント UI も無効になります。
+OpenAPIスキーマを完全に無効にする場合は、`openapi_url=None` を設定できます。これにより、それを使用するドキュメントUIも無効になります。
 
-## ドキュメントの URL
+## ドキュメントのURL
 
-以下の 2 つのドキュメント UI を構築できます:
+以下の2つのドキュメントUIを構築できます:
 
-- **Swagger UI**: `/docs` で提供されます。
-  - URL はパラメータ `docs_url` で設定できます。
-  - `docs_url=None` を設定することで無効にできます。
-- ReDoc: `/redoc` で提供されます。
-  - URL はパラメータ `redoc_url` で設定できます。
-  - `redoc_url=None` を設定することで無効にできます。
+* **Swagger UI**: `/docs` で提供されます。
+     * URL はパラメータ `docs_url` で設定できます。
+     * `docs_url=None` を設定することで無効にできます。
+* ReDoc: `/redoc` で提供されます。
+     * URL はパラメータ `redoc_url` で設定できます。
+     * `redoc_url=None` を設定することで無効にできます。
 
-たとえば、`/documentation` で Swagger UI が提供されるように設定し、ReDoc を無効にするには:
+たとえば、`/documentation` でSwagger UIが提供されるように設定し、ReDocを無効にするには:
 
 ```Python hl_lines="3"
 {!../../docs_src/metadata/tutorial003.py!}

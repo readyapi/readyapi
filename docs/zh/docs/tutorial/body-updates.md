@@ -30,7 +30,7 @@
 
 ## 用 `PATCH` 进行部分更新
 
-<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">HTTP `PATCH`</a> 操作用于更新 _部分_ 数据。
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/PATCH" class="external-link" target="_blank">HTTP `PATCH`</a> 操作用于更新 *部分* 数据。
 
 即，只发送要更新的数据，其余数据保持不变。
 
@@ -74,16 +74,16 @@
 
 简而言之，更新部分数据应：
 
-- 使用 `PATCH` 而不是 `PUT` （可选，也可以用 `PUT`）；
-- 提取存储的数据；
-- 把数据放入 Pydantic 模型；
-- 生成不含输入模型默认值的 `dict` （使用 `exclude_unset` 参数）；
-  - 只更新用户设置过的值，不用模型中的默认值覆盖已存储过的值。
-- 为已存储的模型创建副本，用接收的数据更新其属性 （使用 `update` 参数）。
-- 把模型副本转换为可存入数据库的形式（比如，使用 `jsonable_encoder`）。
-  - 这种方式与 Pydantic 模型的 `.dict()` 方法类似，但能确保把值转换为适配 JSON 的数据类型，例如， 把 `datetime` 转换为 `str` 。
-- 把数据保存至数据库；
-- 返回更新后的模型。
+* 使用 `PATCH` 而不是 `PUT` （可选，也可以用 `PUT`）；
+* 提取存储的数据；
+* 把数据放入 Pydantic 模型；
+* 生成不含输入模型默认值的 `dict` （使用 `exclude_unset` 参数）；
+    * 只更新用户设置过的值，不用模型中的默认值覆盖已存储过的值。
+* 为已存储的模型创建副本，用接收的数据更新其属性 （使用 `update` 参数）。
+* 把模型副本转换为可存入数据库的形式（比如，使用 `jsonable_encoder`）。
+    * 这种方式与 Pydantic 模型的 `.dict()` 方法类似，但能确保把值转换为适配 JSON 的数据类型，例如， 把 `datetime` 转换为 `str` 。
+* 把数据保存至数据库；
+* 返回更新后的模型。
 
 ```Python hl_lines="30-37"
 {!../../docs_src/body_updates/tutorial002.py!}
@@ -102,6 +102,6 @@
 
 因此，如果希望接收的部分更新数据可以省略其他所有属性，则要把模型中所有的属性标记为可选（使用默认值或 `None`）。
 
-为了区分用于**更新**所有可选值的模型与用于**创建**包含必选值的模型，请参照[更多模型](extra-models.md){.internal-link target=\_blank} 一节中的思路。
+为了区分用于**更新**所有可选值的模型与用于**创建**包含必选值的模型，请参照[更多模型](extra-models.md){.internal-link target=_blank} 一节中的思路。
 
 ///

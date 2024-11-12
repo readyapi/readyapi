@@ -22,21 +22,7 @@ As it is discouraged, the interactive docs with Swagger UI won't show the docume
 
 First, you need to import `BaseModel` from `pydantic`:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="2"
-{!> ../../docs_src/body/tutorial001_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="4"
-{!> ../../docs_src/body/tutorial001.py!}
-```
-
-////
+{* ../../docs_src/body/tutorial001_py310.py hl[2] *}
 
 ## Create your data model
 
@@ -44,21 +30,8 @@ Then you declare your data model as a class that inherits from `BaseModel`.
 
 Use standard Python types for all the attributes:
 
-//// tab | Python 3.10+
+{* ../../docs_src/body/tutorial001_py310.py hl[5:9] *}
 
-```Python hl_lines="5-9"
-{!> ../../docs_src/body/tutorial001_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="7-11"
-{!> ../../docs_src/body/tutorial001.py!}
-```
-
-////
 
 The same as when declaring query parameters, when a model attribute has a default value, it is not required. Otherwise, it is required. Use `None` to make it just optional.
 
@@ -84,23 +57,9 @@ For example, this model above declares a JSON "`object`" (or Python `dict`) like
 
 ## Declare it as a parameter
 
-To add it to your _path operation_, declare it the same way you declared path and query parameters:
+To add it to your *path operation*, declare it the same way you declared path and query parameters:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="16"
-{!> ../../docs_src/body/tutorial001_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="18"
-{!> ../../docs_src/body/tutorial001.py!}
-```
-
-////
+{* ../../docs_src/body/tutorial001_py310.py hl[16] *}
 
 ...and declare its type as the model you created, `Item`.
 
@@ -108,14 +67,14 @@ To add it to your _path operation_, declare it the same way you declared path an
 
 With just that Python type declaration, **ReadyAPI** will:
 
-- Read the body of the request as JSON.
-- Convert the corresponding types (if needed).
-- Validate the data.
-  - If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
-- Give you the received data in the parameter `item`.
-  - As you declared it in the function to be of type `Item`, you will also have all the editor support (completion, etc) for all of the attributes and their types.
-- Generate <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
-- Those schemas will be part of the generated OpenAPI schema, and used by the automatic documentation <abbr title="User Interfaces">UIs</abbr>.
+* Read the body of the request as JSON.
+* Convert the corresponding types (if needed).
+* Validate the data.
+    * If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
+* Give you the received data in the parameter `item`.
+    * As you declared it in the function to be of type `Item`, you will also have all the editor support (completion, etc) for all of the attributes and their types.
+* Generate <a href="https://json-schema.org" class="external-link" target="_blank">JSON Schema</a> definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
+* Those schemas will be part of the generated OpenAPI schema, and used by the automatic documentation <abbr title="User Interfaces">UIs</abbr>.
 
 ## Automatic docs
 
@@ -123,7 +82,7 @@ The JSON Schemas of your models will be part of your OpenAPI generated schema, a
 
 <img src="/img/tutorial/body/image01.png">
 
-And will also be used in the API docs inside each _path operation_ that needs them:
+And will also be used in the API docs inside each *path operation* that needs them:
 
 <img src="/img/tutorial/body/image02.png">
 
@@ -155,11 +114,11 @@ If you use <a href="https://www.jetbrains.com/pycharm/" class="external-link" ta
 
 It improves editor support for Pydantic models, with:
 
-- auto-completion
-- type checks
-- refactoring
-- searching
-- inspections
+* auto-completion
+* type checks
+* refactoring
+* searching
+* inspections
 
 ///
 
@@ -167,21 +126,7 @@ It improves editor support for Pydantic models, with:
 
 Inside of the function, you can access all the attributes of the model object directly:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="19"
 {!> ../../docs_src/body/tutorial002_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="21"
-{!> ../../docs_src/body/tutorial002.py!}
-```
-
-////
 
 ## Request body + path parameters
 
@@ -189,21 +134,8 @@ You can declare path parameters and request body at the same time.
 
 **ReadyAPI** will recognize that the function parameters that match path parameters should be **taken from the path**, and that function parameters that are declared to be Pydantic models should be **taken from the request body**.
 
-//// tab | Python 3.10+
+{* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
 
-```Python hl_lines="15-16"
-{!> ../../docs_src/body/tutorial003_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="17-18"
-{!> ../../docs_src/body/tutorial003.py!}
-```
-
-////
 
 ## Request body + path + query parameters
 
@@ -211,27 +143,13 @@ You can also declare **body**, **path** and **query** parameters, all at the sam
 
 **ReadyAPI** will recognize each of them and take the data from the correct place.
 
-//// tab | Python 3.10+
-
-```Python hl_lines="16"
-{!> ../../docs_src/body/tutorial004_py310.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="18"
-{!> ../../docs_src/body/tutorial004.py!}
-```
-
-////
+{* ../../docs_src/body/tutorial004_py310.py hl[16] *}
 
 The function parameters will be recognized as follows:
 
-- If the parameter is also declared in the **path**, it will be used as a path parameter.
-- If the parameter is of a **singular type** (like `int`, `float`, `str`, `bool`, etc) it will be interpreted as a **query** parameter.
-- If the parameter is declared to be of the type of a **Pydantic model**, it will be interpreted as a request **body**.
+* If the parameter is also declared in the **path**, it will be used as a path parameter.
+* If the parameter is of a **singular type** (like `int`, `float`, `str`, `bool`, etc) it will be interpreted as a **query** parameter.
+* If the parameter is declared to be of the type of a **Pydantic model**, it will be interpreted as a request **body**.
 
 /// note
 
@@ -245,4 +163,4 @@ But adding the type annotations will allow your editor to give you better suppor
 
 ## Without Pydantic
 
-If you don't want to use Pydantic models, you can also use **Body** parameters. See the docs for [Body - Multiple Parameters: Singular values in body](body-multiple-params.md#singular-values-in-body){.internal-link target=\_blank}.
+If you don't want to use Pydantic models, you can also use **Body** parameters. See the docs for [Body - Multiple Parameters: Singular values in body](body-multiple-params.md#singular-values-in-body){.internal-link target=_blank}.

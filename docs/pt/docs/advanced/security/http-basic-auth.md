@@ -4,7 +4,7 @@ Para os casos mais simples, você pode utilizar o HTTP Basic Auth.
 
 No HTTP Basic Auth, a aplicação espera um cabeçalho que contém um usuário e uma senha.
 
-Caso ela não receba, ela retorna um erro HTTP 401 "Unauthorized" (_Não Autorizado_).
+Caso ela não receba, ela retorna um erro HTTP 401 "Unauthorized" (*Não Autorizado*).
 
 E retorna um cabeçalho `WWW-Authenticate` com o valor `Basic`, e um parâmetro opcional `realm`.
 
@@ -14,11 +14,11 @@ Então, quando você digitar o usuário e senha, o navegador os envia automatica
 
 ## HTTP Basic Auth Simples
 
-- Importe `HTTPBasic` e `HTTPBasicCredentials`.
-- Crie um "esquema `security`" utilizando `HTTPBasic`.
-- Utilize o `security` com uma dependência em sua _operação de rota_.
-- Isso retorna um objeto do tipo `HTTPBasicCredentials`:
-  - Isto contém o `username` e o `password` enviado.
+* Importe `HTTPBasic` e `HTTPBasicCredentials`.
+* Crie um "esquema `security`" utilizando `HTTPBasic`.
+* Utilize o `security` com uma dependência em sua *operação de rota*.
+* Isso retorna um objeto do tipo `HTTPBasicCredentials`:
+    * Isto contém o `username` e o `password` enviado.
 
 //// tab | Python 3.9+
 
@@ -155,6 +155,7 @@ Mas em nosso código já estamos utilizando o `secrets.compare_digest()`.
 Resumindo, levará o mesmo tempo para comparar `stanleyjobsox` com `stanleyjobson` do que comparar `johndoe` com `stanleyjobson`. E o mesmo para a senha.
 
 Deste modo, ao utilizar `secrets.compare_digest()` no código de sua aplicação, ela estará a salvo contra toda essa gama de ataques de segurança.
+
 
 ### Retorne o erro
 

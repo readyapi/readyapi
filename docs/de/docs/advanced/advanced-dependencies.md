@@ -48,7 +48,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-In diesem Fall ist dieses `__call__` das, was **ReadyAPI** verwendet, um nach zusätzlichen Parametern und Unterabhängigkeiten zu suchen, und das ist es auch, was später aufgerufen wird, um einen Wert an den Parameter in Ihrer _Pfadoperation-Funktion_ zu übergeben.
+In diesem Fall ist dieses `__call__` das, was **ReadyAPI** verwendet, um nach zusätzlichen Parametern und Unterabhängigkeiten zu suchen, und das ist es auch, was später aufgerufen wird, um einen Wert an den Parameter in Ihrer *Pfadoperation-Funktion* zu übergeben.
 
 ## Die Instanz parametrisieren
 
@@ -132,7 +132,7 @@ Und beim Auflösen der Abhängigkeit ruft **ReadyAPI** diesen `checker` wie folg
 checker(q="somequery")
 ```
 
-... und übergibt, was immer das als Wert dieser Abhängigkeit in unserer _Pfadoperation-Funktion_ zurückgibt, als den Parameter `fixed_content_included`:
+... und übergibt, was immer das als Wert dieser Abhängigkeit in unserer *Pfadoperation-Funktion* zurückgibt, als den Parameter `fixed_content_included`:
 
 //// tab | Python 3.9+
 

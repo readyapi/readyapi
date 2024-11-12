@@ -6,15 +6,15 @@ Sie können mehrere Metadaten-Einstellungen für Ihre **ReadyAPI**-Anwendung kon
 
 Sie können die folgenden Felder festlegen, welche in der OpenAPI-Spezifikation und den Benutzeroberflächen der automatischen API-Dokumentation verwendet werden:
 
-| Parameter          | Typ      | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`            | `str`    | Der Titel der API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| `summary`          | `str`    | Eine kurze Zusammenfassung der API. <small>Verfügbar seit OpenAPI 3.1.0, ReadyAPI 0.99.0.</small>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `description`      | `str`    | Eine kurze Beschreibung der API. Kann Markdown verwenden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| `version`          | `string` | Die Version der API. Das ist die Version Ihrer eigenen Anwendung, nicht die von OpenAPI. Zum Beispiel `2.5.0`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| `terms_of_service` | `str`    | Eine URL zu den Nutzungsbedingungen für die API. Falls angegeben, muss es sich um eine URL handeln.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `contact`          | `dict`   | Die Kontaktinformationen für die verfügbar gemachte API. Kann mehrere Felder enthalten. <details><summary><code>contact</code>-Felder</summary><table><thead><tr><th>Parameter</th><th>Typ</th><th>Beschreibung</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>Der identifizierende Name der Kontaktperson/Organisation.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>Die URL, die auf die Kontaktinformationen verweist. MUSS im Format einer URL vorliegen.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>Die E-Mail-Adresse der Kontaktperson/Organisation. MUSS im Format einer E-Mail-Adresse vorliegen.</td></tr></tbody></table></details>                                                                                                                                                                                                                                                            |
-| `license_info`     | `dict`   | Die Lizenzinformationen für die verfügbar gemachte API. Kann mehrere Felder enthalten. <details><summary><code>license_info</code>-Felder</summary><table><thead><tr><th>Parameter</th><th>Typ</th><th>Beschreibung</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>ERFORDERLICH</strong> (wenn eine <code>license_info</code> festgelegt ist). Der für die API verwendete Lizenzname.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Ein <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a>-Lizenzausdruck für die API. Das Feld <code>identifier</code> und das Feld <code>url</code> schließen sich gegenseitig aus. <small>Verfügbar seit OpenAPI 3.1.0, ReadyAPI 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code >str</code></td><td>Eine URL zur Lizenz, die für die API verwendet wird. MUSS im Format einer URL vorliegen.</td></tr></tbody></table></details> |
+| Parameter | Typ | Beschreibung |
+|------------|------|-------------|
+| `title` | `str` | Der Titel der API. |
+| `summary` | `str` | Eine kurze Zusammenfassung der API. <small>Verfügbar seit OpenAPI 3.1.0, ReadyAPI 0.99.0.</small> |
+| `description` | `str` | Eine kurze Beschreibung der API. Kann Markdown verwenden. |
+| `version` | `string` | Die Version der API. Das ist die Version Ihrer eigenen Anwendung, nicht die von OpenAPI. Zum Beispiel `2.5.0`. |
+| `terms_of_service` | `str` | Eine URL zu den Nutzungsbedingungen für die API. Falls angegeben, muss es sich um eine URL handeln. |
+| `contact` | `dict` | Die Kontaktinformationen für die verfügbar gemachte API. Kann mehrere Felder enthalten. <details><summary><code>contact</code>-Felder</summary><table><thead><tr><th>Parameter</th><th>Typ</th><th>Beschreibung</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>Der identifizierende Name der Kontaktperson/Organisation.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>Die URL, die auf die Kontaktinformationen verweist. MUSS im Format einer URL vorliegen.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>Die E-Mail-Adresse der Kontaktperson/Organisation. MUSS im Format einer E-Mail-Adresse vorliegen.</td></tr></tbody></table></details> |
+| `license_info` | `dict` | Die Lizenzinformationen für die verfügbar gemachte API. Kann mehrere Felder enthalten. <details><summary><code>license_info</code>-Felder</summary><table><thead><tr><th>Parameter</th><th>Typ</th><th>Beschreibung</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>ERFORDERLICH</strong> (wenn eine <code>license_info</code> festgelegt ist). Der für die API verwendete Lizenzname.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Ein <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a>-Lizenzausdruck für die API. Das Feld <code>identifier</code> und das Feld <code>url</code> schließen sich gegenseitig aus. <small>Verfügbar seit OpenAPI 3.1.0, ReadyAPI 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code >str</code></td><td>Eine URL zur Lizenz, die für die API verwendet wird. MUSS im Format einer URL vorliegen.</td></tr></tbody></table></details> |
 
 Sie können diese wie folgt setzen:
 
@@ -50,11 +50,11 @@ Es wird eine Liste benötigt, die für jedes Tag ein Dict enthält.
 
 Jedes Dict kann Folgendes enthalten:
 
-- `name` (**erforderlich**): ein `str` mit demselben Tag-Namen, den Sie im Parameter `tags` in Ihren _Pfadoperationen_ und `APIRouter`n verwenden.
-- `description`: ein `str` mit einer kurzen Beschreibung für das Tag. Sie kann Markdown enthalten und wird in der Benutzeroberfläche der Dokumentation angezeigt.
-- `externalDocs`: ein `dict`, das externe Dokumentation beschreibt mit:
-  - `description`: ein `str` mit einer kurzen Beschreibung für die externe Dokumentation.
-  - `url` (**erforderlich**): ein `str` mit der URL für die externe Dokumentation.
+* `name` (**erforderlich**): ein `str` mit demselben Tag-Namen, den Sie im Parameter `tags` in Ihren *Pfadoperationen* und `APIRouter`n verwenden.
+* `description`: ein `str` mit einer kurzen Beschreibung für das Tag. Sie kann Markdown enthalten und wird in der Benutzeroberfläche der Dokumentation angezeigt.
+* `externalDocs`: ein `dict`, das externe Dokumentation beschreibt mit:
+     * `description`: ein `str` mit einer kurzen Beschreibung für die externe Dokumentation.
+     * `url` (**erforderlich**): ein `str` mit der URL für die externe Dokumentation.
 
 ### Metadaten für Tags erstellen
 
@@ -76,7 +76,7 @@ Sie müssen nicht für alle von Ihnen verwendeten Tags Metadaten hinzufügen.
 
 ### Ihre Tags verwenden
 
-Verwenden Sie den Parameter `tags` mit Ihren _Pfadoperationen_ (und `APIRouter`n), um diese verschiedenen Tags zuzuweisen:
+Verwenden Sie den Parameter `tags` mit Ihren *Pfadoperationen* (und `APIRouter`n), um diese verschiedenen Tags zuzuweisen:
 
 ```Python hl_lines="21  26"
 {!../../docs_src/metadata/tutorial004.py!}
@@ -84,7 +84,7 @@ Verwenden Sie den Parameter `tags` mit Ihren _Pfadoperationen_ (und `APIRouter`n
 
 /// info
 
-Lesen Sie mehr zu Tags unter [Pfadoperation-Konfiguration](path-operation-configuration.md#tags){.internal-link target=\_blank}.
+Lesen Sie mehr zu Tags unter [Pfadoperation-Konfiguration](path-operation-configuration.md#tags){.internal-link target=_blank}.
 
 ///
 
@@ -118,12 +118,12 @@ Wenn Sie das OpenAPI-Schema vollständig deaktivieren möchten, können Sie `ope
 
 Sie können die beiden enthaltenen Dokumentationsbenutzeroberflächen konfigurieren:
 
-- **Swagger UI**: bereitgestellt unter `/docs`.
-  - Sie können deren URL mit dem Parameter `docs_url` festlegen.
-  - Sie können sie deaktivieren, indem Sie `docs_url=None` festlegen.
-- **ReDoc**: bereitgestellt unter `/redoc`.
-  - Sie können deren URL mit dem Parameter `redoc_url` festlegen.
-  - Sie können sie deaktivieren, indem Sie `redoc_url=None` festlegen.
+* **Swagger UI**: bereitgestellt unter `/docs`.
+     * Sie können deren URL mit dem Parameter `docs_url` festlegen.
+     * Sie können sie deaktivieren, indem Sie `docs_url=None` festlegen.
+* **ReDoc**: bereitgestellt unter `/redoc`.
+     * Sie können deren URL mit dem Parameter `redoc_url` festlegen.
+     * Sie können sie deaktivieren, indem Sie `redoc_url=None` festlegen.
 
 Um beispielsweise Swagger UI so einzustellen, dass sie unter `/documentation` bereitgestellt wird, und ReDoc zu deaktivieren:
 

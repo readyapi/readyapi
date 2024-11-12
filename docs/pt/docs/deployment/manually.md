@@ -64,11 +64,11 @@ A principal coisa que você precisa para executar uma aplicação **ReadyAPI** (
 
 Existem diversas alternativas, incluindo:
 
-- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: um servidor ASGI de alta performance.
-- <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: um servidor ASGI compátivel com HTTP/2, Trio e outros recursos.
-- <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>: servidor ASGI construído para Django Channels.
-- <a href="https://github.com/emmett-framework/granian" class="external-link" target="_blank">Granian</a>: um servidor HTTP Rust para aplicações Python.
-- <a href="https://unit.nginx.org/howto/readyapi/" class="external-link" target="_blank">NGINX Unit</a>: NGINX Unit é um runtime de aplicação web leve e versátil.
+* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>: um servidor ASGI de alta performance.
+* <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a>: um servidor ASGI compátivel com HTTP/2, Trio e outros recursos.
+* <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a>: servidor ASGI construído para Django Channels.
+* <a href="https://github.com/emmett-framework/granian" class="external-link" target="_blank">Granian</a>: um servidor HTTP Rust para aplicações Python.
+* <a href="https://unit.nginx.org/howto/readyapi/" class="external-link" target="_blank">NGINX Unit</a>: NGINX Unit é um runtime de aplicação web leve e versátil.
 
 ## Máquina Servidora e Programa Servidor
 
@@ -86,7 +86,7 @@ Quando você instala o ReadyAPI, ele vem com um servidor de produção, o Uvicor
 
 Mas você também pode instalar um servidor ASGI manualmente.
 
-Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=\_blank}, ativá-lo e, em seguida, você pode instalar a aplicação do servidor.
+Certifique-se de criar um [ambiente virtual](../virtual-environments.md){.internal-link target=_blank}, ativá-lo e, em seguida, você pode instalar a aplicação do servidor.
 
 Por exemplo, para instalar o Uvicorn:
 
@@ -130,8 +130,8 @@ $ uvicorn main:app --host 0.0.0.0 --port 80
 
 O comando `uvicorn main:app` refere-se a:
 
-- `main`: o arquivo `main.py` (o "módulo" Python).
-- `app`: o objeto criado dentro de `main.py` com a linha `app = ReadyAPI()`.
+* `main`: o arquivo `main.py` (o "módulo" Python).
+* `app`: o objeto criado dentro de `main.py` com a linha `app = ReadyAPI()`.
 
 É equivalente a:
 
@@ -159,11 +159,11 @@ Esses exemplos executam o programa do servidor (por exemplo, Uvicorn), iniciando
 
 Esta é a ideia básica. Mas você provavelmente vai querer cuidar de algumas coisas adicionais, como:
 
-- Segurança - HTTPS
-- Executando na inicialização
-- Reinicializações
-- Replicação (o número de processos em execução)
-- Memória
-- Passos anteriores antes de começar
+* Segurança - HTTPS
+* Executando na inicialização
+* Reinicializações
+* Replicação (o número de processos em execução)
+* Memória
+* Passos anteriores antes de começar
 
 Vou te contar mais sobre cada um desses conceitos, como pensar sobre eles e alguns exemplos concretos com estratégias para lidar com eles nos próximos capítulos. 🚀

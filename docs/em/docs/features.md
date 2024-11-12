@@ -6,20 +6,20 @@
 
 ### ⚓️ 🔛 📂 🐩
 
-- <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>🗄</strong></a> 🛠️ 🏗, ✅ 📄 <abbr title="also known as: endpoints, routes">➡</abbr> <abbr title="also known as HTTP methods, as POST, GET, PUT, DELETE">🛠️</abbr>, 🔢, 💪 📨, 💂‍♂, ♒️.
-- 🏧 📊 🏷 🧾 ⏮️ <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>🎻 🔗</strong></a> (🗄 ⚫️ 🧢 🔛 🎻 🔗).
-- 🔧 🤭 👫 🐩, ⏮️ 😔 🔬. ↩️ 👎 🧽 🔛 🔝.
-- 👉 ✔ ⚙️ 🏧 **👩‍💻 📟 ⚡** 📚 🇪🇸.
+* <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank"><strong>🗄</strong></a> 🛠️ 🏗, ✅ 📄 <abbr title="also known as: endpoints, routes">➡</abbr> <abbr title="also known as HTTP methods, as POST, GET, PUT, DELETE">🛠️</abbr>, 🔢, 💪 📨, 💂‍♂, ♒️.
+* 🏧 📊 🏷 🧾 ⏮️ <a href="https://json-schema.org/" class="external-link" target="_blank"><strong>🎻 🔗</strong></a> (🗄 ⚫️ 🧢 🔛 🎻 🔗).
+* 🔧 🤭 👫 🐩, ⏮️ 😔 🔬. ↩️ 👎 🧽 🔛 🔝.
+* 👉 ✔ ⚙️ 🏧 **👩‍💻 📟 ⚡** 📚 🇪🇸.
 
 ### 🏧 🩺
 
 🎓 🛠️ 🧾 &amp; 🔬 🕸 👩‍💻 🔢. 🛠️ ⚓️ 🔛 🗄, 📤 💗 🎛, 2️⃣ 🔌 🔢.
 
-- <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>🦁 🎚</strong></a>, ⏮️ 🎓 🔬, 🤙 &amp; 💯 👆 🛠️ 🔗 ⚪️➡️ 🖥.
+* <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>🦁 🎚</strong></a>, ⏮️ 🎓 🔬, 🤙 &amp; 💯 👆 🛠️ 🔗 ⚪️➡️ 🖥.
 
 ![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
 
-- 🎛 🛠️ 🧾 ⏮️ <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>📄</strong></a>.
+* 🎛 🛠️ 🧾 ⏮️ <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>📄</strong></a>.
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
 
@@ -27,7 +27,7 @@
 
 ⚫️ 🌐 ⚓️ 🔛 🐩 **🐍 3️⃣.6️⃣ 🆎** 📄 (👏 Pydantic). 🙅‍♂ 🆕 ❕ 💡. 🐩 🏛 🐍.
 
-🚥 👆 💪 2️⃣ ⏲ ↗️ ❔ ⚙️ 🐍 🆎 (🚥 👆 🚫 ⚙️ ReadyAPI), ✅ 📏 🔰: [🐍 🆎](python-types.md){.internal-link target=\_blank}.
+🚥 👆 💪 2️⃣ ⏲ ↗️ ❔ ⚙️ 🐍 🆎 (🚥 👆 🚫 ⚙️ ReadyAPI), ✅ 📏 🔰: [🐍 🆎](python-types.md){.internal-link target=_blank}.
 
 👆 ✍ 🐩 🐍 ⏮️ 🆎:
 
@@ -83,11 +83,11 @@ my_second_user: User = User(**second_user_data)
 
 📥 ❔ 👆 👨‍🎨 💪 ℹ 👆:
 
-- <a href="https://code.visualstudio.com/" class="external-link" target="_blank">🎙 🎙 📟</a>:
+*  <a href="https://code.visualstudio.com/" class="external-link" target="_blank">🎙 🎙 📟</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
 
-- <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">🗒</a>:
+*  <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">🗒</a>:
 
 ![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
 
@@ -103,18 +103,17 @@ my_second_user: User = User(**second_user_data)
 
 ### 🔬
 
-- 🔬 🌅 (⚖️ 🌐 ❓) 🐍 **💽 🆎**, 🔌:
+* 🔬 🌅 (⚖️ 🌐 ❓) 🐍 **💽 🆎**, 🔌:
+    * 🎻 🎚 (`dict`).
+    * 🎻 🎻 (`list`) ⚖ 🏬 🆎.
+    * 🎻 (`str`) 🏑, 🔬 🕙 &amp; 👟 📐.
+    * 🔢 (`int`, `float`) ⏮️ 🕙 &amp; 👟 💲, ♒️.
 
-  - 🎻 🎚 (`dict`).
-  - 🎻 🎻 (`list`) ⚖ 🏬 🆎.
-  - 🎻 (`str`) 🏑, 🔬 🕙 &amp; 👟 📐.
-  - 🔢 (`int`, `float`) ⏮️ 🕙 &amp; 👟 💲, ♒️.
-
-- 🔬 🌅 😍 🆎, 💖:
-  - 📛.
-  - 📧.
-  - 🆔.
-  - ...&amp; 🎏.
+* 🔬 🌅 😍 🆎, 💖:
+    * 📛.
+    * 📧.
+    * 🆔.
+    * ...&amp; 🎏.
 
 🌐 🔬 🍵 👍-🏛 &amp; 🏋️ **Pydantic**.
 
@@ -124,12 +123,12 @@ my_second_user: User = User(**second_user_data)
 
 🌐 💂‍♂ ⚖ 🔬 🗄, 🔌:
 
-- 🇺🇸🔍 🔰.
-- **Oauth2️⃣** (⏮️ **🥙 🤝**). ✅ 🔰 🔛 [Oauth2️⃣ ⏮️ 🥙](tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}.
-- 🛠️ 🔑:
-  - 🎚.
-  - 🔢 🔢.
-  - 🍪, ♒️.
+* 🇺🇸🔍 🔰.
+* **Oauth2️⃣** (⏮️ **🥙 🤝**). ✅ 🔰 🔛 [Oauth2️⃣ ⏮️ 🥙](tutorial/security/oauth2-jwt.md){.internal-link target=_blank}.
+* 🛠️ 🔑:
+    * 🎚.
+    * 🔢 🔢.
+    * 🍪, ♒️.
 
 ➕ 🌐 💂‍♂ ⚒ ⚪️➡️ 💃 (🔌 **🎉 🍪**).
 
@@ -139,24 +138,24 @@ my_second_user: User = User(**second_user_data)
 
 ReadyAPI 🔌 📶 ⏩ ⚙️, ✋️ 📶 🏋️ <abbr title='also known as "components", "resources", "services", "providers"'><strong>🔗 💉</strong></abbr> ⚙️.
 
-- 🔗 💪 ✔️ 🔗, 🏗 🔗 ⚖️ **"📊" 🔗**.
-- 🌐 **🔁 🍵** 🛠️.
-- 🌐 🔗 💪 🚚 💽 ⚪️➡️ 📨 &amp; **↔ ➡ 🛠️** ⚛ &amp; 🏧 🧾.
-- **🏧 🔬** _➡ 🛠️_ 🔢 🔬 🔗.
-- 🐕‍🦺 🏗 👩‍💻 🤝 ⚙️, **💽 🔗**, ♒️.
-- **🙅‍♂ ⚠** ⏮️ 💽, 🕸, ♒️. ✋️ ⏩ 🛠️ ⏮️ 🌐 👫.
+* 🔗 💪 ✔️ 🔗, 🏗 🔗 ⚖️ **"📊" 🔗**.
+* 🌐 **🔁 🍵** 🛠️.
+* 🌐 🔗 💪 🚚 💽 ⚪️➡️ 📨 &amp; **↔ ➡ 🛠️** ⚛ &amp; 🏧 🧾.
+* **🏧 🔬** *➡ 🛠️* 🔢 🔬 🔗.
+* 🐕‍🦺 🏗 👩‍💻 🤝 ⚙️, **💽 🔗**, ♒️.
+* **🙅‍♂ ⚠** ⏮️ 💽, 🕸, ♒️. ✋️ ⏩ 🛠️ ⏮️ 🌐 👫.
 
 ### ♾ "🔌-🔌"
 
 ⚖️ 🎏 🌌, 🙅‍♂ 💪 👫, 🗄 &amp; ⚙️ 📟 👆 💪.
 
-🙆 🛠️ 🏗 🙅 ⚙️ (⏮️ 🔗) 👈 👆 💪 ✍ "🔌-" 👆 🈸 2️⃣ ⏸ 📟 ⚙️ 🎏 📊 &amp; ❕ ⚙️ 👆 _➡ 🛠️_.
+🙆 🛠️ 🏗 🙅 ⚙️ (⏮️ 🔗) 👈 👆 💪 ✍ "🔌-" 👆 🈸 2️⃣ ⏸ 📟 ⚙️ 🎏 📊 &amp; ❕ ⚙️ 👆 *➡ 🛠️*.
 
 ### 💯
 
-- 1️⃣0️⃣0️⃣ 💯 <abbr title="The amount of code that is automatically tested">💯 💰</abbr>.
-- 1️⃣0️⃣0️⃣ 💯 <abbr title="Python type annotations, with this your editor and external tools can give you better support">🆎 ✍</abbr> 📟 🧢.
-- ⚙️ 🏭 🈸.
+* 1️⃣0️⃣0️⃣ 💯 <abbr title="The amount of code that is automatically tested">💯 💰</abbr>.
+* 1️⃣0️⃣0️⃣ 💯 <abbr title="Python type annotations, with this your editor and external tools can give you better support">🆎 ✍</abbr> 📟 🧢.
+* ⚙️ 🏭 🈸.
 
 ## 💃 ⚒
 
@@ -166,15 +165,15 @@ ReadyAPI 🔌 📶 ⏩ ⚙️, ✋️ 📶 🏋️ <abbr title='also known as "c
 
 ⏮️ **ReadyAPI** 👆 🤚 🌐 **💃**'Ⓜ ⚒ (ReadyAPI 💃 🔛 💊):
 
-- 🤙 🎆 🎭. ⚫️ <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">1️⃣ ⏩ 🐍 🛠️ 💪, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶**</a>.
-- ** \*️⃣ ** 🐕‍🦺.
-- -🛠️ 🖥 📋.
-- 🕴 &amp; 🤫 🎉.
-- 💯 👩‍💻 🏗 🔛 🇸🇲.
-- **⚜**, 🗜, 🎻 📁, 🎏 📨.
-- **🎉 &amp; 🍪** 🐕‍🦺.
-- 1️⃣0️⃣0️⃣ 💯 💯 💰.
-- 1️⃣0️⃣0️⃣ 💯 🆎 ✍ ✍.
+* 🤙 🎆 🎭. ⚫️ <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">1️⃣ ⏩ 🐍 🛠️ 💪, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶**</a>.
+* ** *️⃣ ** 🐕‍🦺.
+* -🛠️ 🖥 📋.
+* 🕴 &amp; 🤫 🎉.
+* 💯 👩‍💻 🏗 🔛 🇸🇲.
+* **⚜**, 🗜, 🎻 📁, 🎏 📨.
+* **🎉 &amp; 🍪** 🐕‍🦺.
+* 1️⃣0️⃣0️⃣ 💯 💯 💰.
+* 1️⃣0️⃣0️⃣ 💯 🆎 ✍ ✍.
 
 ## Pydantic ⚒
 
@@ -188,15 +187,15 @@ ReadyAPI 🔌 📶 ⏩ ⚙️, ✋️ 📶 🏋️ <abbr title='also known as "c
 
 ⏮️ **ReadyAPI** 👆 🤚 🌐 **Pydantic**'Ⓜ ⚒ (ReadyAPI ⚓️ 🔛 Pydantic 🌐 💽 🚚):
 
-- **🙅‍♂ 🔠**:
-  - 🙅‍♂ 🆕 🔗 🔑 ◾-🇪🇸 💡.
-  - 🚥 👆 💭 🐍 🆎 👆 💭 ❔ ⚙️ Pydantic.
-- 🤾 🎆 ⏮️ 👆 **<abbr title="Integrated Development Environment, similar to a code editor">💾</abbr>/<abbr title="A program that checks for code errors">🧶</abbr>/🧠**:
-  - ↩️ Pydantic 📊 📊 👐 🎓 👆 🔬; 🚘-🛠️, 🧽, ✍ &amp; 👆 🤔 🔜 🌐 👷 ☑ ⏮️ 👆 ✔ 💽.
-- ✔ **🏗 📊**:
-  - ⚙️ 🔗 Pydantic 🏷, 🐍 `typing`'Ⓜ `List` &amp; `Dict`, ♒️.
-  - &amp; 💳 ✔ 🏗 💽 🔗 🎯 &amp; 💪 🔬, ✅ &amp; 📄 🎻 🔗.
-  - 👆 💪 ✔️ 🙇 **🐦 🎻** 🎚 &amp; ✔️ 👫 🌐 ✔ &amp; ✍.
-- **🏧**:
-  - Pydantic ✔ 🛃 📊 🆎 🔬 ⚖️ 👆 💪 ↔ 🔬 ⏮️ 👩‍🔬 🔛 🏷 🎀 ⏮️ 💳 👨‍🎨.
-- 1️⃣0️⃣0️⃣ 💯 💯 💰.
+* **🙅‍♂ 🔠**:
+    * 🙅‍♂ 🆕 🔗 🔑 ◾-🇪🇸 💡.
+    * 🚥 👆 💭 🐍 🆎 👆 💭 ❔ ⚙️ Pydantic.
+* 🤾 🎆 ⏮️ 👆 **<abbr title="Integrated Development Environment, similar to a code editor">💾</abbr>/<abbr title="A program that checks for code errors">🧶</abbr>/🧠**:
+    * ↩️ Pydantic 📊 📊 👐 🎓 👆 🔬; 🚘-🛠️, 🧽, ✍ &amp; 👆 🤔 🔜 🌐 👷 ☑ ⏮️ 👆 ✔ 💽.
+* ✔ **🏗 📊**:
+    * ⚙️ 🔗 Pydantic 🏷, 🐍 `typing`'Ⓜ `List` &amp; `Dict`, ♒️.
+    *  &amp; 💳 ✔ 🏗 💽 🔗 🎯 &amp; 💪 🔬, ✅ &amp; 📄 🎻 🔗.
+    * 👆 💪 ✔️ 🙇 **🐦 🎻** 🎚 &amp; ✔️ 👫 🌐 ✔ &amp; ✍.
+* **🏧**:
+    * Pydantic ✔ 🛃 📊 🆎 🔬 ⚖️ 👆 💪 ↔ 🔬 ⏮️ 👩‍🔬 🔛 🏷 🎀 ⏮️ 💳 👨‍🎨.
+* 1️⃣0️⃣0️⃣ 💯 💯 💰.

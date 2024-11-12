@@ -2,11 +2,11 @@
 
 你可以在任意的*路径操作*中使用 `response_model` 参数来声明用于响应的模型：
 
-- `@app.get()`
-- `@app.post()`
-- `@app.put()`
-- `@app.delete()`
-- 等等。
+* `@app.get()`
+* `@app.post()`
+* `@app.put()`
+* `@app.delete()`
+* 等等。
 
 //// tab | Python 3.10+
 
@@ -42,14 +42,14 @@
 
 ReadyAPI 将使用此 `response_model` 来：
 
-- 将输出数据转换为其声明的类型。
-- 校验数据。
-- 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。
-- 并在自动生成文档系统中使用。
+* 将输出数据转换为其声明的类型。
+* 校验数据。
+* 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。
+* 并在自动生成文档系统中使用。
 
 但最重要的是：
 
-- 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。
+* 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。
 
 /// note | "技术细节"
 
@@ -159,9 +159,9 @@ ReadyAPI 将使用此 `response_model` 来：
 {!../../docs_src/response_model/tutorial004.py!}
 ```
 
-- `description: Union[str, None] = None` 具有默认值 `None`。
-- `tax: float = 10.5` 具有默认值 `10.5`.
-- `tags: List[str] = []` 具有一个空列表作为默认值： `[]`.
+* `description: Union[str, None] = None` 具有默认值 `None`。
+* `tax: float = 10.5` 具有默认值 `10.5`.
+* `tags: List[str] = []` 具有一个空列表作为默认值： `[]`.
 
 但如果它们并没有存储实际的值，你可能想从结果中忽略它们的默认值。
 
@@ -196,8 +196,8 @@ ReadyAPI 通过 Pydantic 模型的 `.dict()` 配合 <a href="https://docs.pydant
 
 你还可以使用：
 
-- `response_model_exclude_defaults=True`
-- `response_model_exclude_none=True`
+* `response_model_exclude_defaults=True`
+* `response_model_exclude_none=True`
 
 参考 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">Pydantic 文档</a> 中对 `exclude_defaults` 和 `exclude_none` 的描述。
 

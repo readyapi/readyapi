@@ -30,17 +30,17 @@ Vous pouvez vous rapprocher de <a href="https://khulnasoft.com" class="external-
 
 Vous pouvez :
 
-- <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Me suivre sur **GitHub**</a>.
-  - Voir d'autres projets Open Source que j'ai créés et qui pourraient vous aider.
-  - Suivez-moi pour voir quand je crée un nouveau projet Open Source.
-- <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me suivre sur **Twitter**</a>.
-  - Dites-moi comment vous utilisez ReadyAPI (j'adore entendre ça).
-  - Entendre quand je fais des annonces ou que je lance de nouveaux outils.
-- <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Vous connectez à moi sur **LinkedIn**</a>.
-  - Etre notifié quand je fais des annonces ou que je lance de nouveaux outils (bien que j'utilise plus souvent Twitter 🤷‍♂).
-- Lire ce que j’écris (ou me suivre) sur <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> ou <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
-  - Lire d'autres idées, articles, et sur les outils que j'ai créés.
-  - Suivez-moi pour lire quand je publie quelque chose de nouveau.
+* <a href="https://github.com/khulnasoft" class="external-link" target="_blank">Me suivre sur **GitHub**</a>.
+    * Voir d'autres projets Open Source que j'ai créés et qui pourraient vous aider.
+    * Suivez-moi pour voir quand je crée un nouveau projet Open Source.
+* <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me suivre sur **Twitter**</a>.
+    * Dites-moi comment vous utilisez ReadyAPI (j'adore entendre ça).
+    * Entendre quand je fais des annonces ou que je lance de nouveaux outils.
+* <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Vous connectez à moi sur **LinkedIn**</a>.
+    * Etre notifié quand je fais des annonces ou que je lance de nouveaux outils (bien que j'utilise plus souvent Twitter 🤷‍♂).
+* Lire ce que j’écris (ou me suivre) sur <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> ou <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.
+    * Lire d'autres idées, articles, et sur les outils que j'ai créés.
+    * Suivez-moi pour lire quand je publie quelque chose de nouveau.
 
 ## Tweeter sur **ReadyAPI**
 
@@ -50,9 +50,9 @@ J'aime entendre parler de l'utilisation du **ReadyAPI**, de ce que vous avez aim
 
 ## Voter pour ReadyAPI
 
-- <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Votez pour **ReadyAPI** sur Slant</a>.
-- <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Votez pour **ReadyAPI** sur AlternativeTo</a>.
-- <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">Votez pour **ReadyAPI** sur awesome-rest</a>.
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Votez pour **ReadyAPI** sur Slant</a>.
+* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Votez pour **ReadyAPI** sur AlternativeTo</a>.
+* <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">Votez pour **ReadyAPI** sur awesome-rest</a>.
 
 ## Aider les autres à résoudre les problèmes dans GitHub
 
@@ -70,8 +70,8 @@ Vous pouvez alors essayer de les aider à résoudre ces problèmes.
 
 Vous pouvez <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">créer une Issue</a> dans le dépôt GitHub, par exemple pour :
 
-- Poser une question ou s'informer sur un problème.
-- Suggérer une nouvelle fonctionnalité.
+* Poser une question ou s'informer sur un problème.
+* Suggérer une nouvelle fonctionnalité.
 
 **Note** : si vous créez un problème, alors je vais vous demander d'aider aussi les autres. 😉
 
@@ -79,10 +79,10 @@ Vous pouvez <a href="https://github.com/readyapi/readyapi/issues/new/choose" cla
 
 Vous pouvez <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">créer une Pull Request</a>, par exemple :
 
-- Pour corriger une faute de frappe que vous avez trouvée sur la documentation.
-- Proposer de nouvelles sections de documentation.
-- Pour corriger une Issue/Bug existant.
-- Pour ajouter une nouvelle fonctionnalité.
+* Pour corriger une faute de frappe que vous avez trouvée sur la documentation.
+* Proposer de nouvelles sections de documentation.
+* Pour corriger une Issue/Bug existant.
+* Pour ajouter une nouvelle fonctionnalité.
 
 ## Parrainer l'auteur
 
@@ -96,8 +96,8 @@ Comme vous l'avez vu dans la documentation, ReadyAPI se tient sur les épaules d
 
 Vous pouvez également parrainer :
 
-- <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
-- <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
+* <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
+* <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
 
 ---
 

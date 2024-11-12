@@ -100,8 +100,8 @@ Aqui, com `ge=1`, `item_id` precisará ser um número inteiro maior que ("`g`rea
 
 O mesmo se aplica para:
 
-- `gt`: maior que (`g`reater `t`han)
-- `le`: menor que ou igual (`l`ess than or `e`qual)
+* `gt`: maior que (`g`reater `t`han)
+* `le`: menor que ou igual (`l`ess than or `e`qual)
 
 ```Python hl_lines="9"
 {!../../docs_src/path_params_numeric_validations/tutorial005.py!}
@@ -123,14 +123,14 @@ E o mesmo para <abbr title="less than"><code>lt</code></abbr>.
 
 ## Recapitulando
 
-Com `Query`, `Path` (e outras que você ainda não viu) você pode declarar metadados e validações de texto do mesmo modo que com [Parâmetros de consulta e validações de texto](query-params-str-validations.md){.internal-link target=\_blank}.
+Com `Query`, `Path` (e outras que você ainda não viu) você pode declarar metadados e validações de texto do mesmo modo que com [Parâmetros de consulta e validações de texto](query-params-str-validations.md){.internal-link target=_blank}.
 
 E você também pode declarar validações numéricas:
 
-- `gt`: maior que (`g`reater `t`han)
-- `ge`: maior que ou igual (`g`reater than or `e`qual)
-- `lt`: menor que (`l`ess `t`han)
-- `le`: menor que ou igual (`l`ess than or `e`qual)
+* `gt`: maior que (`g`reater `t`han)
+* `ge`: maior que ou igual (`g`reater than or `e`qual)
+* `lt`: menor que (`l`ess `t`han)
+* `le`: menor que ou igual (`l`ess than or `e`qual)
 
 /// info | "Informação"
 

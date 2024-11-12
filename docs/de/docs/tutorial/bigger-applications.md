@@ -43,14 +43,14 @@ from app.routers import items
 
 ///
 
-- Das Verzeichnis `app` enthält alles. Und es hat eine leere Datei `app/__init__.py`, es handelt sich also um ein „Python-Package“ (eine Sammlung von „Python-Modulen“): `app`.
-- Es enthält eine Datei `app/main.py`. Da sie sich in einem Python-Package (einem Verzeichnis mit einer Datei `__init__.py`) befindet, ist sie ein „Modul“ dieses Packages: `app.main`.
-- Es gibt auch eine Datei `app/dependencies.py`, genau wie `app/main.py` ist sie ein „Modul“: `app.dependencies`.
-- Es gibt ein Unterverzeichnis `app/routers/` mit einer weiteren Datei `__init__.py`, es handelt sich also um ein „Python-Subpackage“: `app.routers`.
-- Die Datei `app/routers/items.py` befindet sich in einem Package, `app/routers/`, also ist sie ein Submodul: `app.routers.items`.
-- Das Gleiche gilt für `app/routers/users.py`, es ist ein weiteres Submodul: `app.routers.users`.
-- Es gibt auch ein Unterverzeichnis `app/internal/` mit einer weiteren Datei `__init__.py`, es handelt sich also um ein weiteres „Python-Subpackage“: `app.internal`.
-- Und die Datei `app/internal/admin.py` ist ein weiteres Submodul: `app.internal.admin`.
+* Das Verzeichnis `app` enthält alles. Und es hat eine leere Datei `app/__init__.py`, es handelt sich also um ein „Python-Package“ (eine Sammlung von „Python-Modulen“): `app`.
+* Es enthält eine Datei `app/main.py`. Da sie sich in einem Python-Package (einem Verzeichnis mit einer Datei `__init__.py`) befindet, ist sie ein „Modul“ dieses Packages: `app.main`.
+* Es gibt auch eine Datei `app/dependencies.py`, genau wie `app/main.py` ist sie ein „Modul“: `app.dependencies`.
+* Es gibt ein Unterverzeichnis `app/routers/` mit einer weiteren Datei `__init__.py`, es handelt sich also um ein „Python-Subpackage“: `app.routers`.
+* Die Datei `app/routers/items.py` befindet sich in einem Package, `app/routers/`, also ist sie ein Submodul: `app.routers.items`.
+* Das Gleiche gilt für `app/routers/users.py`, es ist ein weiteres Submodul: `app.routers.users`.
+* Es gibt auch ein Unterverzeichnis `app/internal/` mit einer weiteren Datei `__init__.py`, es handelt sich also um ein weiteres „Python-Subpackage“: `app.internal`.
+* Und die Datei `app/internal/admin.py` ist ein weiteres Submodul: `app.internal.admin`.
 
 <img src="/img/tutorial/bigger-applications/package.svg">
 
@@ -75,11 +75,11 @@ Die gleiche Dateistruktur mit Kommentaren:
 
 Nehmen wir an, die Datei, die nur für die Verwaltung von Benutzern zuständig ist, ist das Submodul unter `/app/routers/users.py`.
 
-Sie möchten die _Pfadoperationen_ für Ihre Benutzer vom Rest des Codes trennen, um ihn organisiert zu halten.
+Sie möchten die *Pfadoperationen* für Ihre Benutzer vom Rest des Codes trennen, um ihn organisiert zu halten.
 
 Aber es ist immer noch Teil derselben **ReadyAPI**-Anwendung/Web-API (es ist Teil desselben „Python-Packages“).
 
-Sie können die _Pfadoperationen_ für dieses Modul mit `APIRouter` erstellen.
+Sie können die *Pfadoperationen* für dieses Modul mit `APIRouter` erstellen.
 
 ### `APIRouter` importieren
 
@@ -89,9 +89,9 @@ Sie importieren ihn und erstellen eine „Instanz“ auf die gleiche Weise wie m
 {!../../docs_src/bigger_applications/app/routers/users.py!}
 ```
 
-### _Pfadoperationen_ mit `APIRouter`
+### *Pfadoperationen* mit `APIRouter`
 
-Und dann verwenden Sie ihn, um Ihre _Pfadoperationen_ zu deklarieren.
+Und dann verwenden Sie ihn, um Ihre *Pfadoperationen* zu deklarieren.
 
 Verwenden Sie ihn auf die gleiche Weise wie die Klasse `ReadyAPI`:
 
@@ -155,7 +155,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 Um dieses Beispiel zu vereinfachen, verwenden wir einen erfundenen Header.
 
-Aber in der Praxis werden Sie mit den integrierten [Sicherheits-Werkzeugen](security/index.md){.internal-link target=\_blank} bessere Ergebnisse erzielen.
+Aber in der Praxis werden Sie mit den integrierten [Sicherheits-Werkzeugen](security/index.md){.internal-link target=_blank} bessere Ergebnisse erzielen.
 
 ///
 
@@ -163,29 +163,29 @@ Aber in der Praxis werden Sie mit den integrierten [Sicherheits-Werkzeugen](secu
 
 Nehmen wir an, Sie haben im Modul unter `app/routers/items.py` auch die Endpunkte, die für die Verarbeitung von Artikeln („Items“) aus Ihrer Anwendung vorgesehen sind.
 
-Sie haben _Pfadoperationen_ für:
+Sie haben *Pfadoperationen* für:
 
-- `/items/`
-- `/items/{item_id}`
+* `/items/`
+* `/items/{item_id}`
 
 Es ist alles die gleiche Struktur wie bei `app/routers/users.py`.
 
 Aber wir wollen schlauer sein und den Code etwas vereinfachen.
 
-Wir wissen, dass alle _Pfadoperationen_ in diesem Modul folgendes haben:
+Wir wissen, dass alle *Pfadoperationen* in diesem Modul folgendes haben:
 
-- Pfad-`prefix`: `/items`.
-- `tags`: (nur ein Tag: `items`).
-- Zusätzliche `responses`.
-- `dependencies`: Sie alle benötigen die von uns erstellte `X-Token`-Abhängigkeit.
+* Pfad-`prefix`: `/items`.
+* `tags`: (nur ein Tag: `items`).
+* Zusätzliche `responses`.
+* `dependencies`: Sie alle benötigen die von uns erstellte `X-Token`-Abhängigkeit.
 
-Anstatt also alles zu jeder _Pfadoperation_ hinzuzufügen, können wir es dem `APIRouter` hinzufügen.
+Anstatt also alles zu jeder *Pfadoperation* hinzuzufügen, können wir es dem `APIRouter` hinzufügen.
 
 ```Python hl_lines="5-10  16  21" title="app/routers/items.py"
 {!../../docs_src/bigger_applications/app/routers/items.py!}
 ```
 
-Da der Pfad jeder _Pfadoperation_ mit `/` beginnen muss, wie in:
+Da der Pfad jeder *Pfadoperation* mit `/` beginnen muss, wie in:
 
 ```Python hl_lines="1"
 @router.get("/{item_id}")
@@ -197,34 +197,34 @@ async def read_item(item_id: str):
 
 Das Präfix lautet in diesem Fall also `/items`.
 
-Wir können auch eine Liste von `tags` und zusätzliche `responses` hinzufügen, die auf alle in diesem Router enthaltenen _Pfadoperationen_ angewendet werden.
+Wir können auch eine Liste von `tags` und zusätzliche `responses` hinzufügen, die auf alle in diesem Router enthaltenen *Pfadoperationen* angewendet werden.
 
-Und wir können eine Liste von `dependencies` hinzufügen, die allen _Pfadoperationen_ im Router hinzugefügt und für jeden an sie gerichteten Request ausgeführt/aufgelöst werden.
+Und wir können eine Liste von `dependencies` hinzufügen, die allen *Pfadoperationen* im Router hinzugefügt und für jeden an sie gerichteten Request ausgeführt/aufgelöst werden.
 
 /// tip | "Tipp"
 
-Beachten Sie, dass ähnlich wie bei [Abhängigkeiten in _Pfadoperation-Dekoratoren_](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} kein Wert an Ihre _Pfadoperation-Funktion_ übergeben wird.
+Beachten Sie, dass ähnlich wie bei [Abhängigkeiten in *Pfadoperation-Dekoratoren*](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} kein Wert an Ihre *Pfadoperation-Funktion* übergeben wird.
 
 ///
 
 Das Endergebnis ist, dass die Pfade für diese Artikel jetzt wie folgt lauten:
 
-- `/items/`
-- `/items/{item_id}`
+* `/items/`
+* `/items/{item_id}`
 
 ... wie wir es beabsichtigt hatten.
 
-- Sie werden mit einer Liste von Tags gekennzeichnet, die einen einzelnen String `"items"` enthält.
-  - Diese „Tags“ sind besonders nützlich für die automatischen interaktiven Dokumentationssysteme (unter Verwendung von OpenAPI).
-- Alle enthalten die vordefinierten `responses`.
-- Für alle diese _Pfadoperationen_ wird die Liste der `dependencies` ausgewertet/ausgeführt, bevor sie selbst ausgeführt werden.
-  - Wenn Sie außerdem Abhängigkeiten in einer bestimmten _Pfadoperation_ deklarieren, **werden diese ebenfalls ausgeführt**.
-  - Zuerst werden die Router-Abhängigkeiten ausgeführt, dann die [`dependencies` im Dekorator](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank} und dann die normalen Parameterabhängigkeiten.
-  - Sie können auch [`Security`-Abhängigkeiten mit `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=\_blank} hinzufügen.
+* Sie werden mit einer Liste von Tags gekennzeichnet, die einen einzelnen String `"items"` enthält.
+    * Diese „Tags“ sind besonders nützlich für die automatischen interaktiven Dokumentationssysteme (unter Verwendung von OpenAPI).
+* Alle enthalten die vordefinierten `responses`.
+* Für alle diese *Pfadoperationen* wird die Liste der `dependencies` ausgewertet/ausgeführt, bevor sie selbst ausgeführt werden.
+    * Wenn Sie außerdem Abhängigkeiten in einer bestimmten *Pfadoperation* deklarieren, **werden diese ebenfalls ausgeführt**.
+    * Zuerst werden die Router-Abhängigkeiten ausgeführt, dann die [`dependencies` im Dekorator](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} und dann die normalen Parameterabhängigkeiten.
+    * Sie können auch [`Security`-Abhängigkeiten mit `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=_blank} hinzufügen.
 
 /// tip | "Tipp"
 
-`dependencies` im `APIRouter` können beispielsweise verwendet werden, um eine Authentifizierung für eine ganze Gruppe von _Pfadoperationen_ zu erfordern. Selbst wenn die Abhängigkeiten nicht jeder einzeln hinzugefügt werden.
+`dependencies` im `APIRouter` können beispielsweise verwendet werden, um eine Authentifizierung für eine ganze Gruppe von *Pfadoperationen* zu erfordern. Selbst wenn die Abhängigkeiten nicht jeder einzeln hinzugefügt werden.
 
 ///
 
@@ -262,9 +262,9 @@ from .dependencies import get_token_header
 
 würde bedeuten:
 
-- Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
-- finde das Modul `dependencies` (eine imaginäre Datei unter `app/routers/dependencies.py`) ...
-- und importiere daraus die Funktion `get_token_header`.
+* Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
+* finde das Modul `dependencies` (eine imaginäre Datei unter `app/routers/dependencies.py`) ...
+* und importiere daraus die Funktion `get_token_header`.
 
 Aber diese Datei existiert nicht, unsere Abhängigkeiten befinden sich in einer Datei unter `app/dependencies.py`.
 
@@ -282,10 +282,10 @@ from ..dependencies import get_token_header
 
 bedeuten:
 
-- Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
-- gehe zum übergeordneten Package (das Verzeichnis `app/`) ...
-- und finde dort das Modul `dependencies` (die Datei unter `app/dependencies.py`) ...
-- und importiere daraus die Funktion `get_token_header`.
+* Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
+* gehe zum übergeordneten Package (das Verzeichnis `app/`) ...
+* und finde dort das Modul `dependencies` (die Datei unter `app/dependencies.py`) ...
+* und importiere daraus die Funktion `get_token_header`.
 
 Das funktioniert korrekt! 🎉
 
@@ -299,11 +299,11 @@ from ...dependencies import get_token_header
 
 Das würde bedeuten:
 
-- Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
-- gehe zum übergeordneten Package (das Verzeichnis `app/`) ...
-- gehe dann zum übergeordneten Package dieses Packages (es gibt kein übergeordnetes Package, `app` ist die oberste Ebene 😱) ...
-- und finde dort das Modul `dependencies` (die Datei unter `app/dependencies.py`) ...
-- und importiere daraus die Funktion `get_token_header`.
+* Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/routers/items.py`) befindet (das Verzeichnis `app/routers/`) ...
+* gehe zum übergeordneten Package (das Verzeichnis `app/`) ...
+* gehe dann zum übergeordneten Package dieses Packages (es gibt kein übergeordnetes Package, `app` ist die oberste Ebene 😱) ...
+* und finde dort das Modul `dependencies` (die Datei unter `app/dependencies.py`) ...
+* und importiere daraus die Funktion `get_token_header`.
 
 Das würde sich auf ein Paket oberhalb von `app/` beziehen, mit seiner eigenen Datei `__init__.py`, usw. Aber das haben wir nicht. Das würde in unserem Beispiel also einen Fehler auslösen. 🚨
 
@@ -311,9 +311,9 @@ Aber jetzt wissen Sie, wie es funktioniert, sodass Sie relative Importe in Ihren
 
 ### Einige benutzerdefinierte `tags`, `responses`, und `dependencies` hinzufügen
 
-Wir fügen weder das Präfix `/items` noch `tags=["items"]` zu jeder _Pfadoperation_ hinzu, da wir sie zum `APIRouter` hinzugefügt haben.
+Wir fügen weder das Präfix `/items` noch `tags=["items"]` zu jeder *Pfadoperation* hinzu, da wir sie zum `APIRouter` hinzugefügt haben.
 
-Aber wir können immer noch _mehr_ `tags` hinzufügen, die auf eine bestimmte _Pfadoperation_ angewendet werden, sowie einige zusätzliche `responses`, die speziell für diese _Pfadoperation_ gelten:
+Aber wir können immer noch _mehr_ `tags` hinzufügen, die auf eine bestimmte *Pfadoperation* angewendet werden, sowie einige zusätzliche `responses`, die speziell für diese *Pfadoperation* gelten:
 
 ```Python hl_lines="30-31" title="app/routers/items.py"
 {!../../docs_src/bigger_applications/app/routers/items.py!}
@@ -341,7 +341,7 @@ Und da sich der Großteil Ihrer Logik jetzt in seinem eigenen spezifischen Modul
 
 Sie importieren und erstellen wie gewohnt eine `ReadyAPI`-Klasse.
 
-Und wir können sogar [globale Abhängigkeiten](dependencies/global-dependencies.md){.internal-link target=\_blank} deklarieren, die mit den Abhängigkeiten für jeden `APIRouter` kombiniert werden:
+Und wir können sogar [globale Abhängigkeiten](dependencies/global-dependencies.md){.internal-link target=_blank} deklarieren, die mit den Abhängigkeiten für jeden `APIRouter` kombiniert werden:
 
 ```Python hl_lines="1  3  7" title="app/main.py"
 {!../../docs_src/bigger_applications/app/main.py!}
@@ -367,9 +367,9 @@ from .routers import items, users
 
 bedeutet:
 
-- Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/main.py`) befindet (das Verzeichnis `app/`) ...
-- Suche nach dem Subpackage `routers` (das Verzeichnis unter `app/routers/`) ...
-- und importiere daraus die Submodule `items` (die Datei unter `app/routers/items.py`) und `users` (die Datei unter `app/routers/users.py`) ...
+* Beginnend im selben Package, in dem sich dieses Modul (die Datei `app/main.py`) befindet (das Verzeichnis `app/`) ...
+* Suche nach dem Subpackage `routers` (das Verzeichnis unter `app/routers/`) ...
+* und importiere daraus die Submodule `items` (die Datei unter `app/routers/items.py`) und `users` (die Datei unter `app/routers/users.py`) ...
 
 Das Modul `items` verfügt über eine Variable `router` (`items.router`). Das ist dieselbe, die wir in der Datei `app/routers/items.py` erstellt haben, es ist ein `APIRouter`-Objekt.
 
@@ -420,6 +420,7 @@ Um also beide in derselben Datei verwenden zu können, importieren wir die Submo
 {!../../docs_src/bigger_applications/app/main.py!}
 ```
 
+
 ### Die `APIRouter` für `users` und `items` inkludieren
 
 Inkludieren wir nun die `router` aus diesen Submodulen `users` und `items`:
@@ -442,7 +443,7 @@ Es wird alle Routen von diesem Router als Teil von dieser inkludieren.
 
 /// note | "Technische Details"
 
-Tatsächlich wird intern eine _Pfadoperation_ für jede _Pfadoperation_ erstellt, die im `APIRouter` deklariert wurde.
+Tatsächlich wird intern eine *Pfadoperation* für jede *Pfadoperation* erstellt, die im `APIRouter` deklariert wurde.
 
 Hinter den Kulissen wird es also tatsächlich so funktionieren, als ob alles dieselbe einzige Anwendung wäre.
 
@@ -462,7 +463,7 @@ Es hat also keinen Einfluss auf die Leistung. ⚡
 
 Stellen wir uns nun vor, dass Ihre Organisation Ihnen die Datei `app/internal/admin.py` gegeben hat.
 
-Sie enthält einen `APIRouter` mit einigen administrativen _Pfadoperationen_, die Ihre Organisation zwischen mehreren Projekten teilt.
+Sie enthält einen `APIRouter` mit einigen administrativen *Pfadoperationen*, die Ihre Organisation zwischen mehreren Projekten teilt.
 
 In diesem Beispiel wird es ganz einfach sein. Nehmen wir jedoch an, dass wir, da sie mit anderen Projekten in der Organisation geteilt wird, sie nicht ändern und kein `prefix`, `dependencies`, `tags`, usw. direkt zum `APIRouter` hinzufügen können:
 
@@ -470,7 +471,7 @@ In diesem Beispiel wird es ganz einfach sein. Nehmen wir jedoch an, dass wir, da
 {!../../docs_src/bigger_applications/app/internal/admin.py!}
 ```
 
-Aber wir möchten immer noch ein benutzerdefiniertes `prefix` festlegen, wenn wir den `APIRouter` einbinden, sodass alle seine _Pfadoperationen_ mit `/admin` beginnen, wir möchten es mit den `dependencies` sichern, die wir bereits für dieses Projekt haben, und wir möchten `tags` und `responses` hinzufügen.
+Aber wir möchten immer noch ein benutzerdefiniertes `prefix` festlegen, wenn wir den `APIRouter` einbinden, sodass alle seine *Pfadoperationen* mit `/admin` beginnen, wir möchten es mit den `dependencies` sichern, die wir bereits für dieses Projekt haben, und wir möchten `tags` und `responses` hinzufügen.
 
 Wir können das alles deklarieren, ohne den ursprünglichen `APIRouter` ändern zu müssen, indem wir diese Parameter an `app.include_router()` übergeben:
 
@@ -480,20 +481,20 @@ Wir können das alles deklarieren, ohne den ursprünglichen `APIRouter` ändern 
 
 Auf diese Weise bleibt der ursprüngliche `APIRouter` unverändert, sodass wir dieselbe `app/internal/admin.py`-Datei weiterhin mit anderen Projekten in der Organisation teilen können.
 
-Das Ergebnis ist, dass in unserer Anwendung jede der _Pfadoperationen_ aus dem Modul `admin` Folgendes haben wird:
+Das Ergebnis ist, dass in unserer Anwendung jede der *Pfadoperationen* aus dem Modul `admin` Folgendes haben wird:
 
-- Das Präfix `/admin`.
-- Den Tag `admin`.
-- Die Abhängigkeit `get_token_header`.
-- Die Response `418`. 🍵
+* Das Präfix `/admin`.
+* Den Tag `admin`.
+* Die Abhängigkeit `get_token_header`.
+* Die Response `418`. 🍵
 
 Dies wirkt sich jedoch nur auf diesen `APIRouter` in unserer Anwendung aus, nicht auf anderen Code, der ihn verwendet.
 
 So könnten beispielsweise andere Projekte denselben `APIRouter` mit einer anderen Authentifizierungsmethode verwenden.
 
-### Eine _Pfadoperation_ hinzufügen
+### Eine *Pfadoperation* hinzufügen
 
-Wir können _Pfadoperationen_ auch direkt zur `ReadyAPI`-App hinzufügen.
+Wir können *Pfadoperationen* auch direkt zur `ReadyAPI`-App hinzufügen.
 
 Hier machen wir es ... nur um zu zeigen, dass wir es können 🤷:
 
@@ -501,7 +502,7 @@ Hier machen wir es ... nur um zu zeigen, dass wir es können 🤷:
 {!../../docs_src/bigger_applications/app/main.py!}
 ```
 
-und es wird korrekt funktionieren, zusammen mit allen anderen _Pfadoperationen_, die mit `app.include_router()` hinzugefügt wurden.
+und es wird korrekt funktionieren, zusammen mit allen anderen *Pfadoperationen*, die mit `app.include_router()` hinzugefügt wurden.
 
 /// info | "Sehr technische Details"
 
@@ -511,9 +512,9 @@ und es wird korrekt funktionieren, zusammen mit allen anderen _Pfadoperationen_,
 
 Die `APIRouter` sind nicht „gemountet“, sie sind nicht vom Rest der Anwendung isoliert.
 
-Das liegt daran, dass wir deren _Pfadoperationen_ in das OpenAPI-Schema und die Benutzeroberflächen einbinden möchten.
+Das liegt daran, dass wir deren *Pfadoperationen* in das OpenAPI-Schema und die Benutzeroberflächen einbinden möchten.
 
-Da wir sie nicht einfach isolieren und unabhängig vom Rest „mounten“ können, werden die _Pfadoperationen_ „geklont“ (neu erstellt) und nicht direkt einbezogen.
+Da wir sie nicht einfach isolieren und unabhängig vom Rest „mounten“ können, werden die *Pfadoperationen* „geklont“ (neu erstellt) und nicht direkt einbezogen.
 
 ///
 
@@ -539,7 +540,7 @@ Sie sehen die automatische API-Dokumentation, einschließlich der Pfade aller Su
 
 ## Den gleichen Router mehrmals mit unterschiedlichem `prefix` inkludieren
 
-Sie können `.include_router()` auch mehrmals mit _demselben_ Router und unterschiedlichen Präfixen verwenden.
+Sie können `.include_router()` auch mehrmals mit *demselben* Router und unterschiedlichen Präfixen verwenden.
 
 Dies könnte beispielsweise nützlich sein, um dieselbe API unter verschiedenen Präfixen verfügbar zu machen, z. B. `/api/v1` und `/api/latest`.
 
@@ -553,4 +554,4 @@ Auf die gleiche Weise, wie Sie einen `APIRouter` in eine `ReadyAPI`-Anwendung ei
 router.include_router(other_router)
 ```
 
-Stellen Sie sicher, dass Sie dies tun, bevor Sie `router` in die `ReadyAPI`-App einbinden, damit auch die _Pfadoperationen_ von `other_router` inkludiert werden.
+Stellen Sie sicher, dass Sie dies tun, bevor Sie `router` in die `ReadyAPI`-App einbinden, damit auch die *Pfadoperationen* von `other_router` inkludiert werden.

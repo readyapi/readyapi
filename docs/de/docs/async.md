@@ -1,6 +1,6 @@
 # Nebenläufigkeit und async / await
 
-Details zur `async def`-Syntax für _Pfadoperation-Funktionen_ und Hintergrundinformationen zu asynchronem Code, Nebenläufigkeit und Parallelität.
+Details zur `async def`-Syntax für *Pfadoperation-Funktionen* und Hintergrundinformationen zu asynchronem Code, Nebenläufigkeit und Parallelität.
 
 ## In Eile?
 
@@ -12,7 +12,7 @@ Wenn Sie Bibliotheken von Dritten verwenden, die mit `await` aufgerufen werden m
 results = await some_library()
 ```
 
-Dann deklarieren Sie Ihre _Pfadoperation-Funktionen_ mit `async def` wie in:
+Dann deklarieren Sie Ihre *Pfadoperation-Funktionen* mit `async def` wie in:
 
 ```Python hl_lines="2"
 @app.get('/')
@@ -29,7 +29,7 @@ Sie können `await` nur innerhalb von Funktionen verwenden, die mit `async def` 
 
 ---
 
-Wenn Sie eine Bibliothek eines Dritten verwenden, die mit etwas kommuniziert (einer Datenbank, einer API, dem Dateisystem, usw.) und welche die Verwendung von `await` nicht unterstützt (dies ist derzeit bei den meisten Datenbankbibliotheken der Fall), dann deklarieren Sie Ihre _Pfadoperation-Funktionen_ ganz normal nur mit `def`, etwa:
+Wenn Sie eine Bibliothek eines Dritten verwenden, die mit etwas kommuniziert (einer Datenbank, einer API, dem Dateisystem, usw.) und welche die Verwendung von `await` nicht unterstützt (dies ist derzeit bei den meisten Datenbankbibliotheken der Fall), dann deklarieren Sie Ihre *Pfadoperation-Funktionen* ganz normal nur mit `def`, etwa:
 
 ```Python hl_lines="2"
 @app.get('/')
@@ -48,7 +48,7 @@ Wenn Sie sich unsicher sind, verwenden Sie einfach `def`.
 
 ---
 
-**Hinweis**: Sie können `def` und `async def` in Ihren _Pfadoperation-Funktionen_ beliebig mischen, so wie Sie es benötigen, und jede einzelne Funktion in der für Sie besten Variante erstellen. ReadyAPI wird damit das Richtige tun.
+**Hinweis**: Sie können `def` und `async def` in Ihren *Pfadoperation-Funktionen* beliebig mischen, so wie Sie es benötigen, und jede einzelne Funktion in der für Sie besten Variante erstellen. ReadyAPI wird damit das Richtige tun.
 
 Wie dem auch sei, in jedem der oben genannten Fälle wird ReadyAPI immer noch asynchron arbeiten und extrem schnell sein.
 
@@ -60,13 +60,13 @@ Moderne Versionen von Python unterstützen **„asynchronen Code“** unter Verw
 
 Nehmen wir obigen Satz in den folgenden Abschnitten Schritt für Schritt unter die Lupe:
 
-- **Asynchroner Code**
-- **`async` und `await`**
-- **Coroutinen**
+* **Asynchroner Code**
+* **`async` und `await`**
+* **Coroutinen**
 
 ## Asynchroner Code
 
-Asynchroner Code bedeutet lediglich, dass die Sprache 💬 eine Möglichkeit hat, dem Computersystem / Programm 🤖 mitzuteilen, dass es 🤖 an einem bestimmten Punkt im Code darauf warten muss, dass _etwas anderes_ irgendwo anders fertig wird. Nehmen wir an, _etwas anderes_ ist hier „Langsam-Datei“ 📝.
+Asynchroner Code bedeutet lediglich, dass die Sprache 💬 eine Möglichkeit hat, dem Computersystem / Programm 🤖 mitzuteilen, dass es 🤖 an einem bestimmten Punkt im Code darauf warten muss, dass *etwas anderes* irgendwo anders fertig wird. Nehmen wir an, *etwas anderes* ist hier „Langsam-Datei“ 📝.
 
 Während der Zeit, die „Langsam-Datei“ 📝 benötigt, kann das System also andere Aufgaben erledigen.
 
@@ -76,14 +76,14 @@ Dann nimmt es 🤖 die erste erledigte Aufgabe (sagen wir, unsere „Langsam-Dat
 
 Das „Warten auf etwas anderes“ bezieht sich normalerweise auf <abbr title="Input and Output – Eingabe und Ausgabe">I/O</abbr>-Operationen, die relativ „langsam“ sind (im Vergleich zur Geschwindigkeit des Prozessors und des Arbeitsspeichers), wie etwa das Warten darauf, dass:
 
-- die Daten des Clients über das Netzwerk empfangen wurden
-- die von Ihrem Programm gesendeten Daten vom Client über das Netzwerk empfangen wurden
-- der Inhalt einer Datei vom System von der Festplatte gelesen und an Ihr Programm übergeben wurde
-- der Inhalt, den Ihr Programm dem System übergeben hat, auf die Festplatte geschrieben wurde
-- eine Remote-API-Operation beendet wurde
-- Eine Datenbankoperation abgeschlossen wurde
-- eine Datenbankabfrage die Ergebnisse zurückgegeben hat
-- usw.
+* die Daten des Clients über das Netzwerk empfangen wurden
+* die von Ihrem Programm gesendeten Daten vom Client über das Netzwerk empfangen wurden
+* der Inhalt einer Datei vom System von der Festplatte gelesen und an Ihr Programm übergeben wurde
+* der Inhalt, den Ihr Programm dem System übergeben hat, auf die Festplatte geschrieben wurde
+* eine Remote-API-Operation beendet wurde
+* Eine Datenbankoperation abgeschlossen wurde
+* eine Datenbankabfrage die Ergebnisse zurückgegeben hat
+* usw.
 
 Da die Ausführungszeit hier hauptsächlich durch das Warten auf <abbr title="Input and Output – Eingabe und Ausgabe">I/O</abbr>-Operationen verbraucht wird, nennt man dies auch „I/O-lastige“ („I/O bound“) Operationen.
 
@@ -99,7 +99,7 @@ Diese oben beschriebene Idee von **asynchronem** Code wird manchmal auch **„Ne
 
 **Nebenläufigkeit** und **Parallelität** beziehen sich beide auf „verschiedene Dinge, die mehr oder weniger gleichzeitig passieren“.
 
-Aber die Details zwischen _Nebenläufigkeit_ und _Parallelität_ sind ziemlich unterschiedlich.
+Aber die Details zwischen *Nebenläufigkeit* und *Parallelität* sind ziemlich unterschiedlich.
 
 Um den Unterschied zu erkennen, stellen Sie sich die folgende Geschichte über Hamburger vor:
 
@@ -263,7 +263,7 @@ Um die Dinge auszugleichen, stellen Sie sich die folgende Kurzgeschichte vor:
 
 > Sie müssen ein großes, schmutziges Haus aufräumen.
 
-_Yup, das ist die ganze Geschichte_.
+*Yup, das ist die ganze Geschichte*.
 
 ---
 
@@ -285,10 +285,10 @@ Typische Beispiele für CPU-lastige Vorgänge sind Dinge, die komplexe mathemati
 
 Zum Beispiel:
 
-- **Audio-** oder **Bildbearbeitung**.
-- **Computer Vision**: Ein Bild besteht aus Millionen von Pixeln, jedes Pixel hat 3 Werte / Farben, die Verarbeitung erfordert normalerweise, Berechnungen mit diesen Pixeln durchzuführen, alles zur gleichen Zeit.
-- **Maschinelles Lernen**: Normalerweise sind viele „Matrix“- und „Vektor“-Multiplikationen erforderlich. Stellen Sie sich eine riesige Tabelle mit Zahlen vor, in der Sie alle Zahlen gleichzeitig multiplizieren.
-- **Deep Learning**: Dies ist ein Teilgebiet des maschinellen Lernens, daher gilt das Gleiche. Es ist nur so, dass es nicht eine einzige Tabelle mit Zahlen zum Multiplizieren gibt, sondern eine riesige Menge davon, und in vielen Fällen verwendet man einen speziellen Prozessor, um diese Modelle zu erstellen und / oder zu verwenden.
+* **Audio-** oder **Bildbearbeitung**.
+* **Computer Vision**: Ein Bild besteht aus Millionen von Pixeln, jedes Pixel hat 3 Werte / Farben, die Verarbeitung erfordert normalerweise, Berechnungen mit diesen Pixeln durchzuführen, alles zur gleichen Zeit.
+* **Maschinelles Lernen**: Normalerweise sind viele „Matrix“- und „Vektor“-Multiplikationen erforderlich. Stellen Sie sich eine riesige Tabelle mit Zahlen vor, in der Sie alle Zahlen gleichzeitig multiplizieren.
+* **Deep Learning**: Dies ist ein Teilgebiet des maschinellen Lernens, daher gilt das Gleiche. Es ist nur so, dass es nicht eine einzige Tabelle mit Zahlen zum Multiplizieren gibt, sondern eine riesige Menge davon, und in vielen Fällen verwendet man einen speziellen Prozessor, um diese Modelle zu erstellen und / oder zu verwenden.
 
 ### Nebenläufigkeit + Parallelität: Web + maschinelles Lernen
 
@@ -298,7 +298,7 @@ Sie können aber auch die Vorteile von Parallelität und Multiprocessing (Mehrer
 
 Dies und die einfache Tatsache, dass Python die Hauptsprache für **Data Science**, maschinelles Lernen und insbesondere Deep Learning ist, machen ReadyAPI zu einem sehr passenden Werkzeug für Web-APIs und Anwendungen für Data Science / maschinelles Lernen (neben vielen anderen).
 
-Wie Sie diese Parallelität in der Produktion erreichen, erfahren Sie im Abschnitt über [Deployment](deployment/index.md){.internal-link target=\_blank}.
+Wie Sie diese Parallelität in der Produktion erreichen, erfahren Sie im Abschnitt über [Deployment](deployment/index.md){.internal-link target=_blank}.
 
 ## `async` und `await`.
 
@@ -340,7 +340,7 @@ burgers = get_burgers(2)
 
 ---
 
-Wenn Sie also eine Bibliothek verwenden, die Ihnen sagt, dass Sie sie mit `await` aufrufen können, müssen Sie die _Pfadoperation-Funktionen_, die diese Bibliothek verwenden, mittels `async def` erstellen, wie in:
+Wenn Sie also eine Bibliothek verwenden, die Ihnen sagt, dass Sie sie mit `await` aufrufen können, müssen Sie die *Pfadoperation-Funktionen*, die diese Bibliothek verwenden, mittels `async def` erstellen, wie in:
 
 ```Python hl_lines="2-3"
 @app.get('/burgers')
@@ -357,7 +357,7 @@ Gleichzeitig müssen aber mit `async def` definierte Funktionen „erwartet“ (
 
 Daraus resultiert das Ei-und-Huhn-Problem: Wie ruft man die erste `async` Funktion auf?
 
-Wenn Sie mit **ReadyAPI** arbeiten, müssen Sie sich darüber keine Sorgen machen, da diese „erste“ Funktion Ihre _Pfadoperation-Funktion_ sein wird und ReadyAPI weiß, was zu tun ist.
+Wenn Sie mit **ReadyAPI** arbeiten, müssen Sie sich darüber keine Sorgen machen, da diese „erste“ Funktion Ihre *Pfadoperation-Funktion* sein wird und ReadyAPI weiß, was zu tun ist.
 
 Wenn Sie jedoch `async` / `await` ohne ReadyAPI verwenden möchten, können Sie dies auch tun.
 
@@ -367,7 +367,7 @@ Starlette (und **ReadyAPI**) basiert auf <a href="https://anyio.readthedocs.io/e
 
 Insbesondere können Sie <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> direkt verwenden für Ihre fortgeschritten nebenläufigen und parallelen Anwendungsfälle, die fortgeschrittenere Muster in Ihrem eigenen Code erfordern.
 
-Und selbst wenn Sie ReadyAPI nicht verwenden würden, könnten Sie auch Ihre eigenen asynchronen Anwendungen mit <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> so schreiben, dass sie hoch kompatibel sind und Sie dessen Vorteile nutzen können (z. B. _strukturierte Nebenläufigkeit_).
+Und selbst wenn Sie ReadyAPI nicht verwenden würden, könnten Sie auch Ihre eigenen asynchronen Anwendungen mit <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> so schreiben, dass sie hoch kompatibel sind und Sie dessen Vorteile nutzen können (z. B. *strukturierte Nebenläufigkeit*).
 
 ### Andere Formen von asynchronem Code
 
@@ -413,25 +413,25 @@ Wenn Sie über gute technische Kenntnisse verfügen (Coroutinen, Threads, Blocki
 
 ### Pfadoperation-Funktionen
 
-Wenn Sie eine _Pfadoperation-Funktion_ mit normalem `def` anstelle von `async def` deklarieren, wird sie in einem externen Threadpool ausgeführt, der dann `await`et wird, anstatt direkt aufgerufen zu werden (da dies den Server blockieren würde).
+Wenn Sie eine *Pfadoperation-Funktion* mit normalem `def` anstelle von `async def` deklarieren, wird sie in einem externen Threadpool ausgeführt, der dann `await`et wird, anstatt direkt aufgerufen zu werden (da dies den Server blockieren würde).
 
-Wenn Sie von einem anderen asynchronen Framework kommen, das nicht auf die oben beschriebene Weise funktioniert, und Sie es gewohnt sind, triviale, nur-berechnende _Pfadoperation-Funktionen_ mit einfachem `def` zu definieren, um einen geringfügigen Geschwindigkeitsgewinn (etwa 100 Nanosekunden) zu erzielen, beachten Sie bitte, dass der Effekt in **ReadyAPI** genau gegenteilig wäre. In solchen Fällen ist es besser, `async def` zu verwenden, es sei denn, Ihre _Pfadoperation-Funktionen_ verwenden Code, der blockierende <abbr title="Input/Output – Eingabe/Ausgabe: Lesen oder Schreiben von/auf Festplatte, Netzwerkkommunikation.">I/O</abbr>-Operationen durchführt.
+Wenn Sie von einem anderen asynchronen Framework kommen, das nicht auf die oben beschriebene Weise funktioniert, und Sie es gewohnt sind, triviale, nur-berechnende *Pfadoperation-Funktionen* mit einfachem `def` zu definieren, um einen geringfügigen Geschwindigkeitsgewinn (etwa 100 Nanosekunden) zu erzielen, beachten Sie bitte, dass der Effekt in **ReadyAPI** genau gegenteilig wäre. In solchen Fällen ist es besser, `async def` zu verwenden, es sei denn, Ihre *Pfadoperation-Funktionen* verwenden Code, der blockierende <abbr title="Input/Output – Eingabe/Ausgabe: Lesen oder Schreiben von/auf Festplatte, Netzwerkkommunikation.">I/O</abbr>-Operationen durchführt.
 
-Dennoch besteht in beiden Fällen eine gute Chance, dass **ReadyAPI** [immer noch schneller](index.md#performanz){.internal-link target=\_blank} als Ihr bisheriges Framework (oder zumindest damit vergleichbar) ist.
+Dennoch besteht in beiden Fällen eine gute Chance, dass **ReadyAPI** [immer noch schneller](index.md#performanz){.internal-link target=_blank} als Ihr bisheriges Framework (oder zumindest damit vergleichbar) ist.
 
 ### Abhängigkeiten
 
-Das Gleiche gilt für [Abhängigkeiten](tutorial/dependencies/index.md){.internal-link target=\_blank}. Wenn eine Abhängigkeit eine normale `def`-Funktion ist, anstelle einer `async def`-Funktion, dann wird sie im externen Threadpool ausgeführt.
+Das Gleiche gilt für [Abhängigkeiten](tutorial/dependencies/index.md){.internal-link target=_blank}. Wenn eine Abhängigkeit eine normale `def`-Funktion ist, anstelle einer `async def`-Funktion, dann wird sie im externen Threadpool ausgeführt.
 
 ### Unterabhängigkeiten
 
-Sie können mehrere Abhängigkeiten und [Unterabhängigkeiten](tutorial/dependencies/sub-dependencies.md){.internal-link target=\_blank} haben, die einander bedingen (als Parameter der Funktionsdefinitionen), einige davon könnten erstellt werden mit `async def` und einige mit normalem `def`. Es würde immer noch funktionieren und diejenigen, die mit normalem `def` erstellt wurden, würden in einem externen Thread (vom Threadpool stammend) aufgerufen werden, anstatt `await`et zu werden.
+Sie können mehrere Abhängigkeiten und [Unterabhängigkeiten](tutorial/dependencies/sub-dependencies.md){.internal-link target=_blank} haben, die einander bedingen (als Parameter der Funktionsdefinitionen), einige davon könnten erstellt werden mit `async def` und einige mit normalem `def`. Es würde immer noch funktionieren und diejenigen, die mit normalem `def` erstellt wurden, würden in einem externen Thread (vom Threadpool stammend) aufgerufen werden, anstatt `await`et zu werden.
 
 ### Andere Hilfsfunktionen
 
 Jede andere Hilfsfunktion, die Sie direkt aufrufen, kann mit normalem `def` oder `async def` erstellt werden, und ReadyAPI beeinflusst nicht die Art und Weise, wie Sie sie aufrufen.
 
-Dies steht im Gegensatz zu den Funktionen, die ReadyAPI für Sie aufruft: _Pfadoperation-Funktionen_ und Abhängigkeiten.
+Dies steht im Gegensatz zu den Funktionen, die ReadyAPI für Sie aufruft: *Pfadoperation-Funktionen* und Abhängigkeiten.
 
 Wenn Ihre Hilfsfunktion eine normale Funktion mit `def` ist, wird sie direkt aufgerufen (so wie Sie es in Ihrem Code schreiben), nicht in einem Threadpool. Wenn die Funktion mit `async def` erstellt wurde, sollten Sie sie `await`en, wenn Sie sie in Ihrem Code aufrufen.
 

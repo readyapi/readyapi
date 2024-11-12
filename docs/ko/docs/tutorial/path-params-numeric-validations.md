@@ -76,8 +76,8 @@
 
 동일하게 적용됩니다:
 
-- `gt`: 크거나(`g`reater `t`han)
-- `le`: 작거나 같은(`l`ess than or `e`qual)
+* `gt`: 크거나(`g`reater `t`han)
+* `le`: 작거나 같은(`l`ess than or `e`qual)
 
 ```Python hl_lines="9"
 {!../../docs_src/path_params_numeric_validations/tutorial005.py!}
@@ -99,14 +99,14 @@
 
 ## 요약
 
-`Query`, `Path`(아직 보지 못한 다른 것들도)를 사용하면 [쿼리 매개변수와 문자열 검증](query-params-str-validations.md){.internal-link target=\_blank}에서와 마찬가지로 메타데이터와 문자열 검증을 선언할 수 있습니다.
+`Query`, `Path`(아직 보지 못한 다른 것들도)를 사용하면 [쿼리 매개변수와 문자열 검증](query-params-str-validations.md){.internal-link target=_blank}에서와 마찬가지로 메타데이터와 문자열 검증을 선언할 수 있습니다.
 
 그리고 숫자 검증 또한 선언할 수 있습니다:
 
-- `gt`: 크거나(`g`reater `t`han)
-- `ge`: 크거나 같은(`g`reater than or `e`qual)
-- `lt`: 작거나(`l`ess `t`han)
-- `le`: 작거나 같은(`l`ess than or `e`qual)
+* `gt`: 크거나(`g`reater `t`han)
+* `ge`: 크거나 같은(`g`reater than or `e`qual)
+* `lt`: 작거나(`l`ess `t`han)
+* `le`: 작거나 같은(`l`ess than or `e`qual)
 
 /// info | "정보"
 

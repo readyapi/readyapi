@@ -1,10 +1,10 @@
 # 🗄 ⏲
 
-👆 💪 ✍ 🛠️ ⏮️ _➡ 🛠️_ 👈 💪 ⏲ 📨 _🔢 🛠️_ ✍ 👱 🙆 (🎲 🎏 👩‍💻 👈 🔜 _⚙️_ 👆 🛠️).
+👆 💪 ✍ 🛠️ ⏮️ *➡ 🛠️* 👈 💪 ⏲ 📨 *🔢 🛠️* ✍ 👱 🙆 (🎲 🎏 👩‍💻 👈 🔜 *⚙️* 👆 🛠️).
 
-🛠️ 👈 🔨 🕐❔ 👆 🛠️ 📱 🤙 _🔢 🛠️_ 📛 "⏲". ↩️ 🖥 👈 🔢 👩‍💻 ✍ 📨 📨 👆 🛠️ &amp; ⤴️ 👆 🛠️ _🤙 🔙_, 📨 📨 _🔢 🛠️_ (👈 🎲 ✍ 🎏 👩‍💻).
+🛠️ 👈 🔨 🕐❔ 👆 🛠️ 📱 🤙 *🔢 🛠️* 📛 "⏲". ↩️ 🖥 👈 🔢 👩‍💻 ✍ 📨 📨 👆 🛠️ &amp; ⤴️ 👆 🛠️ *🤙 🔙*, 📨 📨 *🔢 🛠️* (👈 🎲 ✍ 🎏 👩‍💻).
 
-👉 💼, 👆 💪 💚 📄 ❔ 👈 🔢 🛠️ _🔜_ 👀 💖. ⚫️❔ _➡ 🛠️_ ⚫️ 🔜 ✔️, ⚫️❔ 💪 ⚫️ 🔜 ⌛, ⚫️❔ 📨 ⚫️ 🔜 📨, ♒️.
+👉 💼, 👆 💪 💚 📄 ❔ 👈 🔢 🛠️ *🔜* 👀 💖. ⚫️❔ *➡ 🛠️* ⚫️ 🔜 ✔️, ⚫️❔ 💪 ⚫️ 🔜 ⌛, ⚫️❔ 📨 ⚫️ 🔜 📨, ♒️.
 
 ## 📱 ⏮️ ⏲
 
@@ -18,16 +18,16 @@
 
 ⤴️ 👆 🛠️ 🔜 (➡️ 🌈):
 
-- 📨 🧾 🕴 🔢 👩‍💻.
-- 📈 💸.
-- 📨 📨 🔙 🛠️ 👩‍💻 (🔢 👩‍💻).
-  - 👉 🔜 🔨 📨 🏤 📨 (⚪️➡️ _👆 🛠️_) _🔢 🛠️_ 🚚 👈 🔢 👩‍💻 (👉 "⏲").
+* 📨 🧾 🕴 🔢 👩‍💻.
+* 📈 💸.
+* 📨 📨 🔙 🛠️ 👩‍💻 (🔢 👩‍💻).
+    * 👉 🔜 🔨 📨 🏤 📨 (⚪️➡️ *👆 🛠️*) *🔢 🛠️* 🚚 👈 🔢 👩‍💻 (👉 "⏲").
 
 ## 😐 **ReadyAPI** 📱
 
 ➡️ 🥇 👀 ❔ 😐 🛠️ 📱 🔜 👀 💖 ⏭ ❎ ⏲.
 
-⚫️ 🔜 ✔️ _➡ 🛠️_ 👈 🔜 📨 `Invoice` 💪, &amp; 🔢 🔢 `callback_url` 👈 🔜 🔌 📛 ⏲.
+⚫️ 🔜 ✔️ *➡ 🛠️* 👈 🔜 📨 `Invoice` 💪, &amp; 🔢 🔢 `callback_url` 👈 🔜 🔌 📛 ⏲.
 
 👉 🍕 📶 😐, 🌅 📟 🎲 ⏪ 😰 👆:
 
@@ -41,7 +41,7 @@
 
 ///
 
-🕴 🆕 👜 `callbacks=messages_callback_router.routes` ❌ _➡ 🛠️ 👨‍🎨_. 👥 🔜 👀 ⚫️❔ 👈 ⏭.
+🕴 🆕 👜 `callbacks=messages_callback_router.routes` ❌ *➡ 🛠️ 👨‍🎨*. 👥 🔜 👀 ⚫️❔ 👈 ⏭.
 
 ## 🔬 ⏲
 
@@ -56,11 +56,11 @@ callback_url = "https://example.com/api/v1/invoices/events/"
 httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 ```
 
-✋️ 🎲 🏆 ⚠ 🍕 ⏲ ⚒ 💭 👈 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 🛠️ _🔢 🛠️_ ☑, 🛄 💽 👈 _👆 🛠️_ 🔜 📨 📨 💪 ⏲, ♒️.
+✋️ 🎲 🏆 ⚠ 🍕 ⏲ ⚒ 💭 👈 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 🛠️ *🔢 🛠️* ☑, 🛄 💽 👈 *👆 🛠️* 🔜 📨 📨 💪 ⏲, ♒️.
 
-, ⚫️❔ 👥 🔜 ⏭ 🚮 📟 📄 ❔ 👈 _🔢 🛠️_ 🔜 👀 💖 📨 ⏲ ⚪️➡️ _👆 🛠️_.
+, ⚫️❔ 👥 🔜 ⏭ 🚮 📟 📄 ❔ 👈 *🔢 🛠️* 🔜 👀 💖 📨 ⏲ ⚪️➡️ *👆 🛠️*.
 
-👈 🧾 🔜 🎦 🆙 🦁 🎚 `/docs` 👆 🛠️, &amp; ⚫️ 🔜 ➡️ 🔢 👩‍💻 💭 ❔ 🏗 _🔢 🛠️_.
+👈 🧾 🔜 🎦 🆙 🦁 🎚 `/docs` 👆 🛠️, &amp; ⚫️ 🔜 ➡️ 🔢 👩‍💻 💭 ❔ 🏗 *🔢 🛠️*.
 
 👉 🖼 🚫 🛠️ ⏲ ⚫️ (👈 💪 ⏸ 📟), 🕴 🧾 🍕.
 
@@ -74,17 +74,17 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 ## ✍ ⏲ 🧾 📟
 
-👉 📟 🏆 🚫 🛠️ 👆 📱, 👥 🕴 💪 ⚫️ _📄_ ❔ 👈 _🔢 🛠️_ 🔜 👀 💖.
+👉 📟 🏆 🚫 🛠️ 👆 📱, 👥 🕴 💪 ⚫️ *📄* ❔ 👈 *🔢 🛠️* 🔜 👀 💖.
 
 ✋️, 👆 ⏪ 💭 ❔ 💪 ✍ 🏧 🧾 🛠️ ⏮️ **ReadyAPI**.
 
-👥 🔜 ⚙️ 👈 🎏 💡 📄 ❔ _🔢 🛠️_ 🔜 👀 💖... 🏗 _➡ 🛠️(Ⓜ)_ 👈 🔢 🛠️ 🔜 🛠️ (🕐 👆 🛠️ 🔜 🤙).
+👥 🔜 ⚙️ 👈 🎏 💡 📄 ❔ *🔢 🛠️* 🔜 👀 💖... 🏗 *➡ 🛠️(Ⓜ)* 👈 🔢 🛠️ 🔜 🛠️ (🕐 👆 🛠️ 🔜 🤙).
 
 /// tip
 
-🕐❔ ✍ 📟 📄 ⏲, ⚫️ 💪 ⚠ 🌈 👈 👆 👈 _🔢 👩‍💻_. &amp; 👈 👆 ⏳ 🛠️ _🔢 🛠️_, 🚫 _👆 🛠️_.
+🕐❔ ✍ 📟 📄 ⏲, ⚫️ 💪 ⚠ 🌈 👈 👆 👈 *🔢 👩‍💻*. &amp; 👈 👆 ⏳ 🛠️ *🔢 🛠️*, 🚫 *👆 🛠️*.
 
-🍕 🛠️ 👉 ☝ 🎑 ( _🔢 👩‍💻_) 💪 ℹ 👆 💭 💖 ⚫️ 🌅 ⭐ 🌐❔ 🚮 🔢, Pydantic 🏷 💪, 📨, ♒️. 👈 _🔢 🛠️_.
+🍕 🛠️ 👉 ☝ 🎑 ( *🔢 👩‍💻*) 💪 ℹ 👆 💭 💖 ⚫️ 🌅 ⭐ 🌐❔ 🚮 🔢, Pydantic 🏷 💪, 📨, ♒️. 👈 *🔢 🛠️*.
 
 ///
 
@@ -96,27 +96,27 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 {!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
-### ✍ ⏲ _➡ 🛠️_
+### ✍ ⏲ *➡ 🛠️*
 
-✍ ⏲ _➡ 🛠️_ ⚙️ 🎏 `APIRouter` 👆 ✍ 🔛.
+✍ ⏲ *➡ 🛠️* ⚙️ 🎏 `APIRouter` 👆 ✍ 🔛.
 
-⚫️ 🔜 👀 💖 😐 ReadyAPI _➡ 🛠️_:
+⚫️ 🔜 👀 💖 😐 ReadyAPI *➡ 🛠️*:
 
-- ⚫️ 🔜 🎲 ✔️ 📄 💪 ⚫️ 🔜 📨, ✅ `body: InvoiceEvent`.
-- &amp; ⚫️ 💪 ✔️ 📄 📨 ⚫️ 🔜 📨, ✅ `response_model=InvoiceEventReceived`.
+* ⚫️ 🔜 🎲 ✔️ 📄 💪 ⚫️ 🔜 📨, ✅ `body: InvoiceEvent`.
+*  &amp; ⚫️ 💪 ✔️ 📄 📨 ⚫️ 🔜 📨, ✅ `response_model=InvoiceEventReceived`.
 
 ```Python hl_lines="16-18  21-22  28-32"
 {!../../docs_src/openapi_callbacks/tutorial001.py!}
 ```
 
-📤 2️⃣ 👑 🔺 ⚪️➡️ 😐 _➡ 🛠️_:
+📤 2️⃣ 👑 🔺 ⚪️➡️ 😐 *➡ 🛠️*:
 
-- ⚫️ 🚫 💪 ✔️ 🙆 ☑ 📟, ↩️ 👆 📱 🔜 🙅 🤙 👉 📟. ⚫️ 🕴 ⚙️ 📄 _🔢 🛠️_. , 🔢 💪 ✔️ `pass`.
-- _➡_ 💪 🔌 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> (👀 🌖 🔛) 🌐❔ ⚫️ 💪 ⚙️ 🔢 ⏮️ 🔢 &amp; 🍕 ⏮️ 📨 📨 _👆 🛠️_.
+* ⚫️ 🚫 💪 ✔️ 🙆 ☑ 📟, ↩️ 👆 📱 🔜 🙅 🤙 👉 📟. ⚫️ 🕴 ⚙️ 📄 *🔢 🛠️*. , 🔢 💪 ✔️ `pass`.
+*  *➡* 💪 🔌 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> (👀 🌖 🔛) 🌐❔ ⚫️ 💪 ⚙️ 🔢 ⏮️ 🔢 &amp; 🍕 ⏮️ 📨 📨 *👆 🛠️*.
 
 ### ⏲ ➡ 🧬
 
-⏲ _➡_ 💪 ✔️ <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> 👈 💪 🔌 🍕 ⏮️ 📨 📨 _👆 🛠️_.
+⏲ *➡* 💪 ✔️ <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#key-expression" class="external-link" target="_blank">🗄 3️⃣ 🧬</a> 👈 💪 🔌 🍕 ⏮️ 📨 📨 *👆 🛠️*.
 
 👉 💼, ⚫️ `str`:
 
@@ -124,7 +124,7 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 "{$callback_url}/invoices/{$request.body.id}"
 ```
 
-, 🚥 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 📨 📨 _👆 🛠️_ :
+, 🚥 👆 🛠️ 👩‍💻 (🔢 👩‍💻) 📨 📨 *👆 🛠️* :
 
 ```
 https://yourapi.com/invoices/?callback_url=https://www.external.org/events
@@ -140,7 +140,7 @@ https://yourapi.com/invoices/?callback_url=https://www.external.org/events
 }
 ```
 
-⤴️ _👆 🛠️_ 🔜 🛠️ 🧾, &amp; ☝ ⏪, 📨 ⏲ 📨 `callback_url` ( _🔢 🛠️_):
+⤴️ *👆 🛠️* 🔜 🛠️ 🧾, &amp; ☝ ⏪, 📨 ⏲ 📨 `callback_url` ( *🔢 🛠️*):
 
 ```
 https://www.external.org/events/invoices/2expen51ve
@@ -155,7 +155,7 @@ https://www.external.org/events/invoices/2expen51ve
 }
 ```
 
-&amp; ⚫️ 🔜 ⌛ 📨 ⚪️➡️ 👈 _🔢 🛠️_ ⏮️ 🎻 💪 💖:
+&amp; ⚫️ 🔜 ⌛ 📨 ⚪️➡️ 👈 *🔢 🛠️* ⏮️ 🎻 💪 💖:
 
 ```JSON
 {
@@ -171,9 +171,9 @@ https://www.external.org/events/invoices/2expen51ve
 
 ### 🚮 ⏲ 📻
 
-👉 ☝ 👆 ✔️ _⏲ ➡ 🛠️(Ⓜ)_ 💪 (1️⃣(Ⓜ) 👈 _🔢 👩‍💻_ 🔜 🛠️ _🔢 🛠️_) ⏲ 📻 👆 ✍ 🔛.
+👉 ☝ 👆 ✔️ *⏲ ➡ 🛠️(Ⓜ)* 💪 (1️⃣(Ⓜ) 👈 *🔢 👩‍💻* 🔜 🛠️ *🔢 🛠️*) ⏲ 📻 👆 ✍ 🔛.
 
-🔜 ⚙️ 🔢 `callbacks` _👆 🛠️ ➡ 🛠️ 👨‍🎨_ 🚶‍♀️ 🔢 `.routes` (👈 🤙 `list` 🛣/_➡ 🛠️_) ⚪️➡️ 👈 ⏲ 📻:
+🔜 ⚙️ 🔢 `callbacks` *👆 🛠️ ➡ 🛠️ 👨‍🎨* 🚶‍♀️ 🔢 `.routes` (👈 🤙 `list` 🛣/*➡ 🛠️*) ⚪️➡️ 👈 ⏲ 📻:
 
 ```Python hl_lines="35"
 {!../../docs_src/openapi_callbacks/tutorial001.py!}
@@ -189,6 +189,6 @@ https://www.external.org/events/invoices/2expen51ve
 
 🔜 👆 💪 ▶️ 👆 📱 ⏮️ Uvicorn &amp; 🚶 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.
 
-👆 🔜 👀 👆 🩺 ✅ "⏲" 📄 👆 _➡ 🛠️_ 👈 🎦 ❔ _🔢 🛠️_ 🔜 👀 💖:
+👆 🔜 👀 👆 🩺 ✅ "⏲" 📄 👆 *➡ 🛠️* 👈 🎦 ❔ *🔢 🛠️* 🔜 👀 💖:
 
 <img src="/img/tutorial/openapi-callbacks/image01.png">

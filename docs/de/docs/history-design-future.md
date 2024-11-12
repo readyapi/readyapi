@@ -14,7 +14,7 @@ Dabei musste ich viele Alternativen untersuchen, testen und nutzen.
 
 Die Geschichte von **ReadyAPI** ist zu einem großen Teil die Geschichte seiner Vorgänger.
 
-Wie im Abschnitt [Alternativen](alternatives.md){.internal-link target=\_blank} gesagt:
+Wie im Abschnitt [Alternativen](alternatives.md){.internal-link target=_blank} gesagt:
 
 <blockquote markdown="1">
 
@@ -76,4 +76,4 @@ Dennoch stehen uns noch viele Verbesserungen und Funktionen bevor.
 
 **ReadyAPI** hat eine große Zukunft vor sich.
 
-Und [Ihre Hilfe](help-readyapi.md){.internal-link target=\_blank} wird sehr geschätzt.
+Und [Ihre Hilfe](help-readyapi.md){.internal-link target=_blank} wird sehr geschätzt.

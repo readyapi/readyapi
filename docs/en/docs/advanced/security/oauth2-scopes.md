@@ -42,9 +42,9 @@ Each "scope" is just a string (without spaces).
 
 They are normally used to declare specific security permissions, for example:
 
-- `users:read` or `users:write` are common examples.
-- `instagram_basic` is used by Facebook / Instagram.
-- `https://www.googleapis.com/auth/drive` is used by Google.
+* `users:read` or `users:write` are common examples.
+* `instagram_basic` is used by Facebook / Instagram.
+* `https://www.googleapis.com/auth/drive` is used by Google.
 
 /// info
 
@@ -60,73 +60,9 @@ For OAuth2 they are just strings.
 
 ## Global view
 
-First, let's quickly see the parts that change from the examples in the main **Tutorial - User Guide** for [OAuth2 with Password (and hashing), Bearer with JWT tokens](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}. Now using OAuth2 scopes:
+First, let's quickly see the parts that change from the examples in the main **Tutorial - User Guide** for [OAuth2 with Password (and hashing), Bearer with JWT tokens](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}. Now using OAuth2 scopes:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="5  9  13  47  65  106  108-116  122-125  129-135  140  156"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="2  5  9  13  47  65  106  108-116  122-125  129-135  140  156"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="2  5  9  13  48  66  107  109-117  123-126  130-136  141  157"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="4  8  12  46  64  105  107-115  121-124  128-134  139  155"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="2  5  9  13  47  65  106  108-116  122-125  129-135  140  156"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="2  5  9  13  47  65  106  108-116  122-125  129-135  140  156"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[5,9,13,47,65,106,108:116,122:125,129:135,140,156] *}
 
 Now let's review those changes step by step.
 
@@ -136,71 +72,7 @@ The first change is that now we are declaring the OAuth2 security scheme with tw
 
 The `scopes` parameter receives a `dict` with each scope as a key and the description as the value:
 
-//// tab | Python 3.10+
-
-```Python hl_lines="63-66"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="63-66"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="64-67"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="62-65"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="63-66"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="63-66"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[63:66] *}
 
 Because we are now declaring those scopes, they will show up in the API docs when you log-in/authorize.
 
@@ -212,7 +84,7 @@ This is the same mechanism used when you give permissions while logging in with 
 
 ## JWT token with scopes
 
-Now, modify the token _path operation_ to return the scopes requested.
+Now, modify the token *path operation* to return the scopes requested.
 
 We are still using the same `OAuth2PasswordRequestForm`. It includes a property `scopes` with a `list` of `str`, with each scope it received in the request.
 
@@ -226,75 +98,11 @@ But in your application, for security, you should make sure you only add the sco
 
 ///
 
-//// tab | Python 3.10+
+{* ../../docs_src/security/tutorial005_an_py310.py hl[156] *}
 
-```Python hl_lines="156"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
+## Declare scopes in *path operations* and dependencies
 
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="156"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="157"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="155"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="156"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="156"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
-
-## Declare scopes in _path operations_ and dependencies
-
-Now we declare that the _path operation_ for `/users/me/items/` requires the scope `items`.
+Now we declare that the *path operation* for `/users/me/items/` requires the scope `items`.
 
 For this, we import and use `Security` from `readyapi`.
 
@@ -316,71 +124,7 @@ We are doing it here to demonstrate how **ReadyAPI** handles scopes declared at 
 
 ///
 
-//// tab | Python 3.10+
-
-```Python hl_lines="5  140  171"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="5  140  171"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="5  141  172"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="4  139  168"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="5  140  169"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="5  140  169"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[5,140,171] *}
 
 /// info | "Technical Details"
 
@@ -406,71 +150,7 @@ We also declare a special parameter of type `SecurityScopes`, imported from `rea
 
 This `SecurityScopes` class is similar to `Request` (`Request` was used to get the request object directly).
 
-//// tab | Python 3.10+
-
-```Python hl_lines="9  106"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="9  106"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="9  107"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="8  105"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="9  106"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="9  106"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[9,106] *}
 
 ## Use the `scopes`
 
@@ -484,71 +164,7 @@ We create an `HTTPException` that we can reuse (`raise`) later at several points
 
 In this exception, we include the scopes required (if any) as a string separated by spaces (using `scope_str`). We put that string containing the scopes in the `WWW-Authenticate` header (this is part of the spec).
 
-//// tab | Python 3.10+
-
-```Python hl_lines="106  108-116"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="106  108-116"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="107  109-117"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="105  107-115"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="106  108-116"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="106  108-116"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[106,108:116] *}
 
 ## Verify the `username` and data shape
 
@@ -564,143 +180,15 @@ Instead of, for example, a `dict`, or something else, as it could break the appl
 
 We also verify that we have a user with that username, and if not, we raise that same exception we created before.
 
-//// tab | Python 3.10+
-
-```Python hl_lines="47  117-128"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="47  117-128"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="48  118-129"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="46  116-127"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="47  117-128"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="47  117-128"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[47,117:128] *}
 
 ## Verify the `scopes`
 
-We now verify that all the scopes required, by this dependency and all the dependants (including _path operations_), are included in the scopes provided in the token received, otherwise raise an `HTTPException`.
+We now verify that all the scopes required, by this dependency and all the dependants (including *path operations*), are included in the scopes provided in the token received, otherwise raise an `HTTPException`.
 
 For this, we use `security_scopes.scopes`, that contains a `list` with all these scopes as `str`.
 
-//// tab | Python 3.10+
-
-```Python hl_lines="129-135"
-{!> ../../docs_src/security/tutorial005_an_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+
-
-```Python hl_lines="129-135"
-{!> ../../docs_src/security/tutorial005_an_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+
-
-```Python hl_lines="130-136"
-{!> ../../docs_src/security/tutorial005_an.py!}
-```
-
-////
-
-//// tab | Python 3.10+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="128-134"
-{!> ../../docs_src/security/tutorial005_py310.py!}
-```
-
-////
-
-//// tab | Python 3.9+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="129-135"
-{!> ../../docs_src/security/tutorial005_py39.py!}
-```
-
-////
-
-//// tab | Python 3.8+ non-Annotated
-
-/// tip
-
-Prefer to use the `Annotated` version if possible.
-
-///
-
-```Python hl_lines="129-135"
-{!> ../../docs_src/security/tutorial005.py!}
-```
-
-////
+{* ../../docs_src/security/tutorial005_an_py310.py hl[129:135] *}
 
 ## Dependency tree and scopes
 
@@ -708,30 +196,30 @@ Let's review again this dependency tree and the scopes.
 
 As the `get_current_active_user` dependency has as a sub-dependency on `get_current_user`, the scope `"me"` declared at `get_current_active_user` will be included in the list of required scopes in the `security_scopes.scopes` passed to `get_current_user`.
 
-The _path operation_ itself also declares a scope, `"items"`, so this will also be in the list of `security_scopes.scopes` passed to `get_current_user`.
+The *path operation* itself also declares a scope, `"items"`, so this will also be in the list of `security_scopes.scopes` passed to `get_current_user`.
 
 Here's how the hierarchy of dependencies and scopes looks like:
 
-- The _path operation_ `read_own_items` has:
-  - Required scopes `["items"]` with the dependency:
-  - `get_current_active_user`:
-    - The dependency function `get_current_active_user` has:
-      - Required scopes `["me"]` with the dependency:
-      - `get_current_user`:
-        - The dependency function `get_current_user` has:
-          - No scopes required by itself.
-          - A dependency using `oauth2_scheme`.
-          - A `security_scopes` parameter of type `SecurityScopes`:
-            - This `security_scopes` parameter has a property `scopes` with a `list` containing all these scopes declared above, so:
-              - `security_scopes.scopes` will contain `["me", "items"]` for the _path operation_ `read_own_items`.
-              - `security_scopes.scopes` will contain `["me"]` for the _path operation_ `read_users_me`, because it is declared in the dependency `get_current_active_user`.
-              - `security_scopes.scopes` will contain `[]` (nothing) for the _path operation_ `read_system_status`, because it didn't declare any `Security` with `scopes`, and its dependency, `get_current_user`, doesn't declare any `scopes` either.
+* The *path operation* `read_own_items` has:
+    * Required scopes `["items"]` with the dependency:
+    * `get_current_active_user`:
+        *  The dependency function `get_current_active_user` has:
+            * Required scopes `["me"]` with the dependency:
+            * `get_current_user`:
+                * The dependency function `get_current_user` has:
+                    * No scopes required by itself.
+                    * A dependency using `oauth2_scheme`.
+                    * A `security_scopes` parameter of type `SecurityScopes`:
+                        * This `security_scopes` parameter has a property `scopes` with a `list` containing all these scopes declared above, so:
+                            * `security_scopes.scopes` will contain `["me", "items"]` for the *path operation* `read_own_items`.
+                            * `security_scopes.scopes` will contain `["me"]` for the *path operation* `read_users_me`, because it is declared in the dependency `get_current_active_user`.
+                            * `security_scopes.scopes` will contain `[]` (nothing) for the *path operation* `read_system_status`, because it didn't declare any `Security` with `scopes`, and its dependency, `get_current_user`, doesn't declare any `scopes` either.
 
 /// tip
 
-The important and "magic" thing here is that `get_current_user` will have a different list of `scopes` to check for each _path operation_.
+The important and "magic" thing here is that `get_current_user` will have a different list of `scopes` to check for each *path operation*.
 
-All depending on the `scopes` declared in each _path operation_ and each dependency in the dependency tree for that specific _path operation_.
+All depending on the `scopes` declared in each *path operation* and each dependency in the dependency tree for that specific *path operation*.
 
 ///
 
@@ -739,11 +227,11 @@ All depending on the `scopes` declared in each _path operation_ and each depende
 
 You can use `SecurityScopes` at any point, and in multiple places, it doesn't have to be at the "root" dependency.
 
-It will always have the security scopes declared in the current `Security` dependencies and all the dependants for **that specific** _path operation_ and **that specific** dependency tree.
+It will always have the security scopes declared in the current `Security` dependencies and all the dependants for **that specific** *path operation* and **that specific** dependency tree.
 
-Because the `SecurityScopes` will have all the scopes declared by dependants, you can use it to verify that a token has the required scopes in a central dependency function, and then declare different scope requirements in different _path operations_.
+Because the `SecurityScopes` will have all the scopes declared by dependants, you can use it to verify that a token has the required scopes in a central dependency function, and then declare different scope requirements in different *path operations*.
 
-They will be checked independently for each _path operation_.
+They will be checked independently for each *path operation*.
 
 ## Check it
 
@@ -755,7 +243,7 @@ If you don't select any scope, you will be "authenticated", but when you try to 
 
 And if you select the scope `me` but not the scope `items`, you will be able to access `/users/me/` but not `/users/me/items/`.
 
-That's what would happen to a third party application that tried to access one of these _path operations_ with a token provided by a user, depending on how many permissions the user gave the application.
+That's what would happen to a third party application that tried to access one of these *path operations* with a token provided by a user, depending on how many permissions the user gave the application.
 
 ## About third party integrations
 
@@ -783,4 +271,4 @@ But in the end, they are implementing the same OAuth2 standard.
 
 ## `Security` in decorator `dependencies`
 
-The same way you can define a `list` of `Depends` in the decorator's `dependencies` parameter (as explained in [Dependencies in path operation decorators](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank}), you could also use `Security` with `scopes` there.
+The same way you can define a `list` of `Depends` in the decorator's `dependencies` parameter (as explained in [Dependencies in path operation decorators](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}), you could also use `Security` with `scopes` there.

@@ -28,8 +28,8 @@ Primeiramente, importe `List` do módulo `typing` que já vem por padrão no Pyt
 
 Para declarar tipos que têm parâmetros de tipo(tipos internos), como `list`, `dict`, `tuple`:
 
-- Importe os do modulo `typing`
-- Passe o(s) tipo(s) interno(s) como "parâmetros de tipo" usando colchetes: `[` e `]`
+* Importe os do modulo `typing`
+* Passe o(s) tipo(s) interno(s) como "parâmetros de tipo" usando colchetes: `[` e `]`
 
 ```Python
 from typing import List
@@ -43,17 +43,20 @@ Use a mesma sintaxe padrão para atributos de modelo com tipos internos.
 
 Portanto, em nosso exemplo, podemos fazer com que `tags` sejam especificamente uma "lista de strings":
 
+
 ```Python hl_lines="14"
 {!../../docs_src/body_nested_models/tutorial002.py!}
 ```
 
 ## Tipo "set"
 
+
 Mas então, quando nós pensamos mais, percebemos que as tags não devem se repetir, elas provavelmente devem ser strings únicas.
 
 E que o Python tem um tipo de dados especial para conjuntos de itens únicos, o `set`.
 
 Então podemos importar `Set` e declarar `tags` como um `set` de `str`s:
+
 
 ```Python hl_lines="1  14"
 {!../../docs_src/body_nested_models/tutorial003.py!}
@@ -109,10 +112,10 @@ Isso significa que o **ReadyAPI** vai esperar um corpo similar à:
 
 Novamente, apenas fazendo essa declaração, com o **ReadyAPI**, você ganha:
 
-- Suporte do editor de texto (compleção, etc), inclusive para modelos aninhados
-- Conversão de dados
-- Validação de dados
-- Documentação automatica
+* Suporte do editor de texto (compleção, etc), inclusive para modelos aninhados
+* Conversão de dados
+* Validação de dados
+* Documentação automatica
 
 ## Tipos especiais e validação
 
@@ -186,6 +189,7 @@ Note como `Offer` tem uma lista de `Item`s, que por sua vez possui opcionalmente
 
 Se o valor de primeiro nível do corpo JSON que você espera for um `array` do JSON (uma` lista` do Python), você pode declarar o tipo no parâmetro da função, da mesma forma que nos modelos do Pydantic:
 
+
 ```Python
 images: List[Image]
 ```
@@ -246,8 +250,8 @@ Com **ReadyAPI** você tem a flexibilidade máxima fornecida pelos modelos Pydan
 
 Mas com todos os benefícios:
 
-- Suporte do editor (compleção em todo canto!)
-- Conversão de dados (leia-se parsing/serialização)
-- Validação de dados
-- Documentação dos esquemas
-- Documentação automática
+* Suporte do editor (compleção em todo canto!)
+* Conversão de dados (leia-se parsing/serialização)
+* Validação de dados
+* Documentação dos esquemas
+* Documentação automática

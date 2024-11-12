@@ -1,12 +1,12 @@
 # Eine Response direkt zurückgeben
 
-Wenn Sie eine **ReadyAPI** _Pfadoperation_ erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
+Wenn Sie eine **ReadyAPI** *Pfadoperation* erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
 
-Standardmäßig konvertiert **ReadyAPI** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=\_blank} erläutert wird.
+Standardmäßig konvertiert **ReadyAPI** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=_blank} erläutert wird.
 
 Dann würde es hinter den Kulissen diese JSON-kompatiblen Daten (z. B. ein `dict`) in eine `JSONResponse` einfügen, die zum Senden der Response an den Client verwendet würde.
 
-Sie können jedoch direkt eine `JSONResponse` von Ihren _Pfadoperationen_ zurückgeben.
+Sie können jedoch direkt eine `JSONResponse` von Ihren *Pfadoperationen* zurückgeben.
 
 Das kann beispielsweise nützlich sein, um benutzerdefinierte Header oder Cookies zurückzugeben.
 
@@ -64,6 +64,6 @@ Sie könnten Ihren XML-Inhalt als String in eine `Response` einfügen und sie zu
 
 Wenn Sie eine `Response` direkt zurücksenden, werden deren Daten weder validiert, konvertiert (serialisiert), noch automatisch dokumentiert.
 
-Sie können sie aber trotzdem wie unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=\_blank} beschrieben dokumentieren.
+Sie können sie aber trotzdem wie unter [Zusätzliche Responses in OpenAPI](additional-responses.md){.internal-link target=_blank} beschrieben dokumentieren.
 
 In späteren Abschnitten erfahren Sie, wie Sie diese benutzerdefinierten `Response`s verwenden/deklarieren und gleichzeitig über automatische Datenkonvertierung, Dokumentation, usw. verfügen.

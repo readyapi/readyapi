@@ -1,10 +1,10 @@
-# Path Operation の設定
+# Path Operationの設定
 
-*path operation デコレータ*を設定するためのパラメータがいくつかあります。
+*path operationデコレータ*を設定するためのパラメータがいくつかあります。
 
 /// warning | "注意"
 
-これらのパラメータは*path operation 関数*ではなく、*path operation デコレータ*に直接渡されることに注意してください。
+これらのパラメータは*path operation関数*ではなく、*path operationデコレータ*に直接渡されることに注意してください。
 
 ///
 
@@ -20,13 +20,13 @@
 {!../../docs_src/path_operation_configuration/tutorial001.py!}
 ```
 
-そのステータスコードはレスポンスで使用され、OpenAPI スキーマに追加されます。
+そのステータスコードはレスポンスで使用され、OpenAPIスキーマに追加されます。
 
 /// note | "技術詳細"
 
 また、`from starlette import status`を使用することもできます。
 
-**ReadyAPI** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これは Starlette から直接提供されています。
+**ReadyAPI** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
 
 ///
 
@@ -38,7 +38,7 @@
 {!../../docs_src/path_operation_configuration/tutorial002.py!}
 ```
 
-これらは OpenAPI スキーマに追加され、自動ドキュメントのインターフェースで使用されます:
+これらはOpenAPIスキーマに追加され、自動ドキュメントのインターフェースで使用されます:
 
 <img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image01.png">
 
@@ -50,11 +50,11 @@
 {!../../docs_src/path_operation_configuration/tutorial003.py!}
 ```
 
-## docstring を用いた説明
+## docstringを用いた説明
 
 説明文は長くて複数行におよぶ傾向があるので、関数<abbr title="ドキュメントに使用される関数内の最初の式（変数に代入されていない）としての複数行の文字列">docstring</abbr>内に*path operation*の説明文を宣言できます。すると、**ReadyAPI** は説明文を読み込んでくれます。
 
-docstring に<a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>を記述すれば、正しく解釈されて表示されます。（docstring のインデントを考慮して）
+docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>を記述すれば、正しく解釈されて表示されます。（docstringのインデントを考慮して）
 
 ```Python hl_lines="19-27"
 {!../../docs_src/path_operation_configuration/tutorial004.py!}
@@ -80,7 +80,7 @@ docstring に<a href="https://en.wikipedia.org/wiki/Markdown" class="external-li
 
 /// check | "確認"
 
-OpenAPI は*path operation*ごとにレスポンスの説明を必要としています。
+OpenAPIは*path operation*ごとにレスポンスの説明を必要としています。
 
 そのため、それを提供しない場合は、**ReadyAPI** が自動的に「成功のレスポンス」を生成します。
 
@@ -106,4 +106,4 @@ OpenAPI は*path operation*ごとにレスポンスの説明を必要として�
 
 ## まとめ
 
-*path operation デコレータ*にパラメータを渡すことで、*path operations*のメタデータを簡単に設定・追加することができます。
+*path operationデコレータ*にパラメータを渡すことで、*path operations*のメタデータを簡単に設定・追加することができます。

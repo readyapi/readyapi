@@ -4,10 +4,10 @@ La principale chose dont vous avez besoin pour exécuter une application **Ready
 
 Il existe 3 principales alternatives :
 
-- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a> : un serveur ASGI haute performance.
-- <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a> : un serveur
+* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a> : un serveur ASGI haute performance.
+* <a href="https://hypercorn.readthedocs.io/" class="external-link" target="_blank">Hypercorn</a> : un serveur
   ASGI compatible avec HTTP/2 et Trio entre autres fonctionnalités.
-- <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a> : le serveur ASGI
+* <a href="https://github.com/django/daphne" class="external-link" target="_blank">Daphne</a> : le serveur ASGI
   conçu pour Django Channels.
 
 ## Machine serveur et programme serveur
@@ -18,7 +18,8 @@ Le mot "**serveur**" est couramment utilisé pour désigner à la fois l'ordinat
 
 Gardez cela à l'esprit lorsque vous lisez "serveur" en général, cela pourrait faire référence à l'une de ces deux choses.
 
-Lorsqu'on se réfère à la machine distante, il est courant de l'appeler **serveur**, mais aussi **machine**, **VM** (machine virtuelle), **nœud**. Tout cela fait référence à un type de machine distante, exécutant Linux, en règle générale, sur laquelle vous exécutez des programmes.
+Lorsqu'on se réfère à la machine distante, il est courant de l'appeler **serveur**, mais aussi **machine**, **VM** (machine virtuelle), **nœud**. Tout cela fait référence à un type de machine distante, exécutant  Linux, en règle générale, sur laquelle vous exécutez des programmes.
+
 
 ## Installer le programme serveur
 
@@ -26,7 +27,7 @@ Vous pouvez installer un serveur compatible ASGI avec :
 
 //// tab | Uvicorn
 
-- <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, un serveur ASGI rapide comme l'éclair, basé sur uvloop et httptools.
+* <a href="https://www.uvicorn.org/" class="external-link" target="_blank">Uvicorn</a>, un serveur ASGI rapide comme l'éclair, basé sur uvloop et httptools.
 
 <div class="termy">
 
@@ -50,7 +51,7 @@ Cela inclut `uvloop`, le remplaçant performant de `asyncio`, qui fournit le gro
 
 //// tab | Hypercorn
 
-- <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, un serveur ASGI également compatible avec HTTP/2.
+* <a href="https://github.com/pgjones/hypercorn" class="external-link" target="_blank">Hypercorn</a>, un serveur ASGI également compatible avec HTTP/2.
 
 <div class="termy">
 
@@ -102,9 +103,9 @@ Running on 0.0.0.0:8080 over http (CTRL + C to quit)
 
 N'oubliez pas de supprimer l'option `--reload` si vous l'utilisiez.
 
-L'option `--reload` consomme beaucoup plus de ressources, est plus instable, etc.
+ L'option `--reload` consomme beaucoup plus de ressources, est plus instable, etc.
 
-Cela aide beaucoup pendant le **développement**, mais vous **ne devriez pas** l'utiliser en **production**.
+ Cela aide beaucoup pendant le **développement**, mais vous **ne devriez pas** l'utiliser en **production**.
 
 ///
 
@@ -156,11 +157,11 @@ Ces exemples lancent le programme serveur (e.g. Uvicorn), démarrant **un seul p
 
 C'est l'idée de base. Mais vous vous préoccuperez probablement de certains concepts supplémentaires, tels que ... :
 
-- la sécurité - HTTPS
-- l'exécution au démarrage
-- les redémarrages
-- la réplication (le nombre de processus en cours d'exécution)
-- la mémoire
-- les étapes précédant le démarrage
+* la sécurité - HTTPS
+* l'exécution au démarrage
+* les redémarrages
+* la réplication (le nombre de processus en cours d'exécution)
+* la mémoire
+* les étapes précédant le démarrage
 
 Je vous en dirai plus sur chacun de ces concepts, sur la façon de les aborder, et donnerai quelques exemples concrets avec des stratégies pour les traiter dans les prochains chapitres. 🚀

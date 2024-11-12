@@ -1,6 +1,6 @@
 # OpenAPI-Webhooks
 
-Es gibt Fälle, in denen Sie Ihren API-Benutzern mitteilen möchten, dass Ihre Anwendung mit einigen Daten _deren_ Anwendung aufrufen (ein Request senden) könnte, normalerweise um über ein bestimmtes **Event** zu **benachrichtigen**.
+Es gibt Fälle, in denen Sie Ihren API-Benutzern mitteilen möchten, dass Ihre Anwendung mit einigen Daten *deren* Anwendung aufrufen (ein Request senden) könnte, normalerweise um über ein bestimmtes **Event** zu **benachrichtigen**.
 
 Das bedeutet, dass anstelle des normalen Prozesses, bei dem Benutzer Requests an Ihre API senden, **Ihre API** (oder Ihre Anwendung) **Requests an deren System** (an deren API, deren Anwendung) senden könnte.
 
@@ -30,7 +30,7 @@ Webhooks sind in OpenAPI 3.1.0 und höher verfügbar und werden von ReadyAPI `0.
 
 ## Eine Anwendung mit Webhooks
 
-Wenn Sie eine **ReadyAPI**-Anwendung erstellen, gibt es ein `webhooks`-Attribut, mit dem Sie _Webhooks_ definieren können, genauso wie Sie _Pfadoperationen_ definieren würden, zum Beispiel mit `@app.webhooks.post()`.
+Wenn Sie eine **ReadyAPI**-Anwendung erstellen, gibt es ein `webhooks`-Attribut, mit dem Sie *Webhooks* definieren können, genauso wie Sie *Pfadoperationen* definieren würden, zum Beispiel mit `@app.webhooks.post()`.
 
 ```Python hl_lines="9-13  36-53"
 {!../../docs_src/openapi_webhooks/tutorial001.py!}
@@ -44,7 +44,7 @@ Das `app.webhooks`-Objekt ist eigentlich nur ein `APIRouter`, derselbe Typ, den 
 
 ///
 
-Beachten Sie, dass Sie bei Webhooks tatsächlich keinen _Pfad_ (wie `/items/`) deklarieren, sondern dass der Text, den Sie dort übergeben, lediglich eine **Kennzeichnung** des Webhooks (der Name des Events) ist. Zum Beispiel ist in `@app.webhooks.post("new-subscription")` der Webhook-Name `new-subscription`.
+Beachten Sie, dass Sie bei Webhooks tatsächlich keinen *Pfad* (wie `/items/`) deklarieren, sondern dass der Text, den Sie dort übergeben, lediglich eine **Kennzeichnung** des Webhooks (der Name des Events) ist. Zum Beispiel ist in `@app.webhooks.post("new-subscription")` der Webhook-Name `new-subscription`.
 
 Das liegt daran, dass erwartet wird, dass **Ihre Benutzer** den tatsächlichen **URL-Pfad**, an dem diese den Webhook-Request empfangen möchten, auf andere Weise definieren (z. B. über ein Web-Dashboard).
 
@@ -52,6 +52,6 @@ Das liegt daran, dass erwartet wird, dass **Ihre Benutzer** den tatsächlichen *
 
 Jetzt können Sie Ihre Anwendung mit Uvicorn starten und auf <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a> gehen.
 
-Sie werden sehen, dass Ihre Dokumentation die normalen _Pfadoperationen_ und jetzt auch einige **Webhooks** enthält:
+Sie werden sehen, dass Ihre Dokumentation die normalen *Pfadoperationen* und jetzt auch einige **Webhooks** enthält:
 
 <img src="/img/tutorial/openapi-webhooks/image01.png">

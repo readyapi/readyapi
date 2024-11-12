@@ -120,7 +120,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 `Header` ist eine Schwesterklasse von `Path`, `Query` und `Cookie`. Sie erbt von derselben gemeinsamen `Param`-Elternklasse.
 
-Aber erinnern Sie sich, dass, wenn Sie `Query`, `Path`, `Header` und andere von `readyapi` importieren, diese tatsächlich Funktionen sind, welche spezielle Klassen zurückgeben.
+Aber erinnern Sie sich, dass, wenn Sie `Query`, `Path`,  `Header` und andere von `readyapi` importieren, diese tatsächlich Funktionen sind, welche spezielle Klassen zurückgeben.
 
 ///
 
@@ -280,7 +280,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-Wenn Sie mit einer _Pfadoperation_ kommunizieren, die zwei HTTP-Header sendet, wie:
+Wenn Sie mit einer *Pfadoperation* kommunizieren, die zwei HTTP-Header sendet, wie:
 
 ```
 X-Token: foo

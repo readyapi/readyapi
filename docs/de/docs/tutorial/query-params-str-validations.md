@@ -38,8 +38,8 @@ Wir werden bewirken, dass, obwohl `q` optional ist, wenn es gegeben ist, **seine
 
 Importieren Sie zuerst:
 
-- `Query` von `readyapi`
-- `Annotated` von `typing` (oder von `typing_extensions` in Python unter 3.9)
+* `Query` von `readyapi`
+* `Annotated` von `typing` (oder von `typing_extensions` in Python unter 3.9)
 
 //// tab | Python 3.10+
 
@@ -69,13 +69,13 @@ ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Versio
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=\_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
 ## `Annotated` im Typ des `q`-Parameters verwenden
 
-Erinnern Sie sich, wie ich in [Einführung in Python-Typen](../python-types.md#typhinweise-mit-metadaten-annotationen){.internal-link target=\_blank} sagte, dass Sie mittels `Annotated` Metadaten zu Ihren Parametern hinzufügen können?
+Erinnern Sie sich, wie ich in [Einführung in Python-Typen](../python-types.md#typhinweise-mit-metadaten-annotationen){.internal-link target=_blank} sagte, dass Sie mittels `Annotated` Metadaten zu Ihren Parametern hinzufügen können?
 
 Jetzt ist es an der Zeit, das mit ReadyAPI auszuprobieren. 🚀
 
@@ -145,9 +145,9 @@ Aber jetzt, mit `Query(max_length=50)` innerhalb von `Annotated`, sagen wir Read
 
 ReadyAPI wird nun:
 
-- Die Daten **validieren** und sicherstellen, dass sie nicht länger als 50 Zeichen sind
-- Dem Client einen **verständlichen Fehler** anzeigen, wenn die Daten ungültig sind
-- Den Parameter in der OpenAPI-Schema-_Pfadoperation_ **dokumentieren** (sodass er in der **automatischen Dokumentation** angezeigt wird)
+* Die Daten **validieren** und sicherstellen, dass sie nicht länger als 50 Zeichen sind
+* Dem Client einen **verständlichen Fehler** anzeigen, wenn die Daten ungültig sind
+* Den Parameter in der OpenAPI-Schema-*Pfadoperation* **dokumentieren** (sodass er in der **automatischen Dokumentation** angezeigt wird)
 
 ## Alternativ (alt): `Query` als Defaultwert
 
@@ -231,7 +231,7 @@ Jetzt können wir `Query` weitere Parameter übergeben. Fangen wir mit dem `max_
 q: Union[str, None] = Query(default=None, max_length=50)
 ```
 
-Das wird die Daten validieren, einen verständlichen Fehler ausgeben, wenn die Daten nicht gültig sind, und den Parameter in der OpenAPI-Schema-_Pfadoperation_ dokumentieren.
+Das wird die Daten validieren, einen verständlichen Fehler ausgeben, wenn die Daten nicht gültig sind, und den Parameter in der OpenAPI-Schema-*Pfadoperation* dokumentieren.
 
 ### `Query` als Defaultwert oder in `Annotated`
 
@@ -385,9 +385,9 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 Dieses bestimmte reguläre Suchmuster prüft, ob der erhaltene Parameter-Wert:
 
-- `^`: mit den nachfolgenden Zeichen startet, keine Zeichen davor hat.
-- `fixedquery`: den exakten Text `fixedquery` hat.
-- `$`: danach endet, keine weiteren Zeichen hat als `fixedquery`.
+* `^`: mit den nachfolgenden Zeichen startet, keine Zeichen davor hat.
+* `fixedquery`: den exakten Text `fixedquery` hat.
+* `$`: danach endet, keine weiteren Zeichen hat als `fixedquery`.
 
 Wenn Sie sich verloren fühlen bei all diesen **„Regulärer Ausdruck“**-Konzepten, keine Sorge. Reguläre Ausdrücke sind für viele Menschen ein schwieriges Thema. Sie können auch ohne reguläre Ausdrücke eine ganze Menge machen.
 
@@ -715,7 +715,7 @@ Dann, mit einer URL wie:
 http://localhost:8000/items/?q=foo&q=bar
 ```
 
-bekommen Sie alle `q`-_Query-Parameter_-Werte (`foo` und `bar`) in einer Python-Liste – `list` – in ihrer _Pfadoperation-Funktion_, im Funktionsparameter `q`, überreicht.
+bekommen Sie alle `q`-*Query-Parameter*-Werte (`foo` und `bar`) in einer Python-Liste – `list` – in ihrer *Pfadoperation-Funktion*, im Funktionsparameter `q`, überreicht.
 
 Die Response für diese URL wäre also:
 
@@ -1163,16 +1163,16 @@ Sie können zusätzliche Validierungen und Metadaten zu ihren Parametern hinzuf�
 
 Allgemeine Validierungen und Metadaten:
 
-- `alias`
-- `title`
-- `description`
-- `deprecated`
+* `alias`
+* `title`
+* `description`
+* `deprecated`
 
 Validierungen spezifisch für Strings:
 
-- `min_length`
-- `max_length`
-- `pattern`
+* `min_length`
+* `max_length`
+* `pattern`
 
 In diesen Beispielen haben Sie gesehen, wie Sie Validierungen für Strings hinzufügen.
 

@@ -100,13 +100,13 @@ Wenn Sie `Field()` mit Pydantic-Modellen verwenden, können Sie ebenfalls zusät
 
 Bei Verwendung von:
 
-- `Path()`
-- `Query()`
-- `Header()`
-- `Cookie()`
-- `Body()`
-- `Form()`
-- `File()`
+* `Path()`
+* `Query()`
+* `Header()`
+* `Cookie()`
+* `Body()`
+* `Form()`
+* `File()`
 
 können Sie auch eine Gruppe von `examples` mit zusätzlichen Informationen deklarieren, die zu ihren **JSON-Schemas** innerhalb von **OpenAPI** hinzugefügt werden.
 
@@ -236,34 +236,34 @@ Wenn Sie das tun, werden die Beispiele Teil des internen **JSON-Schemas** für d
 
 Schon bevor **JSON Schema** `examples` unterstützte, unterstützte OpenAPI ein anderes Feld, das auch `examples` genannt wurde.
 
-Diese **OpenAPI-spezifischen** `examples` finden sich in einem anderen Abschnitt der OpenAPI-Spezifikation. Sie sind **Details für jede _Pfadoperation_**, nicht für jedes JSON-Schema.
+Diese **OpenAPI-spezifischen** `examples` finden sich in einem anderen Abschnitt der OpenAPI-Spezifikation. Sie sind **Details für jede *Pfadoperation***, nicht für jedes JSON-Schema.
 
 Und Swagger UI unterstützt dieses spezielle Feld `examples` schon seit einiger Zeit. Sie können es also verwenden, um verschiedene **Beispiele in der Benutzeroberfläche der Dokumentation anzuzeigen**.
 
 Das Format dieses OpenAPI-spezifischen Felds `examples` ist ein `dict` mit **mehreren Beispielen** (anstelle einer `list`e), jedes mit zusätzlichen Informationen, die auch zu **OpenAPI** hinzugefügt werden.
 
-Dies erfolgt nicht innerhalb jedes in OpenAPI enthaltenen JSON-Schemas, sondern außerhalb, in der _Pfadoperation_.
+Dies erfolgt nicht innerhalb jedes in OpenAPI enthaltenen JSON-Schemas, sondern außerhalb, in der *Pfadoperation*.
 
 ### Verwendung des Parameters `openapi_examples`
 
 Sie können die OpenAPI-spezifischen `examples` in ReadyAPI mit dem Parameter `openapi_examples` deklarieren, für:
 
-- `Path()`
-- `Query()`
-- `Header()`
-- `Cookie()`
-- `Body()`
-- `Form()`
-- `File()`
+* `Path()`
+* `Query()`
+* `Header()`
+* `Cookie()`
+* `Body()`
+* `Form()`
+* `File()`
 
 Die Schlüssel des `dict` identifizieren jedes Beispiel, und jeder Wert (`"value"`) ist ein weiteres `dict`.
 
 Jedes spezifische Beispiel-`dict` in den `examples` kann Folgendes enthalten:
 
-- `summary`: Kurze Beschreibung für das Beispiel.
-- `description`: Eine lange Beschreibung, die Markdown-Text enthalten kann.
-- `value`: Dies ist das tatsächlich angezeigte Beispiel, z. B. ein `dict`.
-- `externalValue`: Alternative zu `value`, eine URL, die auf das Beispiel verweist. Allerdings wird dies möglicherweise nicht von so vielen Tools unterstützt wie `value`.
+* `summary`: Kurze Beschreibung für das Beispiel.
+* `description`: Eine lange Beschreibung, die Markdown-Text enthalten kann.
+* `value`: Dies ist das tatsächlich angezeigte Beispiel, z. B. ein `dict`.
+* `externalValue`: Alternative zu `value`, eine URL, die auf das Beispiel verweist. Allerdings wird dies möglicherweise nicht von so vielen Tools unterstützt wie `value`.
 
 Sie können es so verwenden:
 
@@ -351,15 +351,15 @@ JSON Schema hatte keine `examples`, daher fügte OpenAPI seiner eigenen modifizi
 
 OpenAPI fügte auch die Felder `example` und `examples` zu anderen Teilen der Spezifikation hinzu:
 
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (in der Spezifikation)</a>, das verwendet wurde von ReadyAPIs:
-  - `Path()`
-  - `Query()`
-  - `Header()`
-  - `Cookie()`
-- <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object` im Feld `content` des `Media Type Object`s (in der Spezifikation)</a>, das verwendet wurde von ReadyAPIs:
-  - `Body()`
-  - `File()`
-  - `Form()`
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (in der Spezifikation)</a>, das verwendet wurde von ReadyAPIs:
+    * `Path()`
+    * `Query()`
+    * `Header()`
+    * `Cookie()`
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object` im Feld `content` des `Media Type Object`s (in der Spezifikation)</a>, das verwendet wurde von ReadyAPIs:
+    * `Body()`
+    * `File()`
+    * `Form()`
 
 /// info
 
@@ -391,7 +391,7 @@ Wenn Sie `examples` innerhalb eines Pydantic-Modells hinzufügen, indem Sie `sch
 
 Und dieses **JSON-Schema** des Pydantic-Modells ist in der **OpenAPI** Ihrer API enthalten und wird dann in der Benutzeroberfläche der Dokumentation verwendet.
 
-In Versionen von ReadyAPI vor 0.99.0 (0.99.0 und höher verwenden das neuere OpenAPI 3.1.0), wenn Sie `example` oder `examples` mit einem der anderen Werkzeuge (`Query()`, `Body()`, usw.) verwendet haben, wurden diese Beispiele nicht zum JSON-Schema hinzugefügt, das diese Daten beschreibt (nicht einmal zur OpenAPI-eigenen Version von JSON Schema), sondern direkt zur _Pfadoperation_-Deklaration in OpenAPI (außerhalb der Teile von OpenAPI, die JSON Schema verwenden).
+In Versionen von ReadyAPI vor 0.99.0 (0.99.0 und höher verwenden das neuere OpenAPI 3.1.0), wenn Sie `example` oder `examples` mit einem der anderen Werkzeuge (`Query()`, `Body()`, usw.) verwendet haben, wurden diese Beispiele nicht zum JSON-Schema hinzugefügt, das diese Daten beschreibt (nicht einmal zur OpenAPI-eigenen Version von JSON Schema), sondern direkt zur *Pfadoperation*-Deklaration in OpenAPI (außerhalb der Teile von OpenAPI, die JSON Schema verwenden).
 
 Aber jetzt, da ReadyAPI 0.99.0 und höher, OpenAPI 3.1.0 verwendet, das JSON Schema 2020-12 verwendet, und Swagger UI 5.0.0 und höher, ist alles konsistenter und die Beispiele sind in JSON Schema enthalten.
 

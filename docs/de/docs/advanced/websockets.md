@@ -106,14 +106,14 @@ Und alle verwenden dieselbe WebSocket-Verbindung.
 
 In WebSocket-Endpunkten können Sie Folgendes aus `readyapi` importieren und verwenden:
 
-- `Depends`
-- `Security`
-- `Cookie`
-- `Header`
-- `Path`
-- `Query`
+* `Depends`
+* `Security`
+* `Cookie`
+* `Header`
+* `Path`
+* `Query`
 
-Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/_Pfadoperationen_:
+Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/*Pfadoperationen*:
 
 //// tab | Python 3.10+
 
@@ -193,8 +193,8 @@ $ uvicorn main:app --reload
 
 Dort können Sie einstellen:
 
-- Die „Item ID“, die im Pfad verwendet wird.
-- Das „Token“, das als Query-Parameter verwendet wird.
+* Die „Item ID“, die im Pfad verwendet wird.
+* Das „Token“, das als Query-Parameter verwendet wird.
 
 /// tip | "Tipp"
 
@@ -228,9 +228,9 @@ Wenn eine WebSocket-Verbindung geschlossen wird, löst `await websocket.receive_
 
 Zum Ausprobieren:
 
-- Öffnen Sie die Anwendung mit mehreren Browser-Tabs.
-- Schreiben Sie Nachrichten in den Tabs.
-- Schließen Sie dann einen der Tabs.
+* Öffnen Sie die Anwendung mit mehreren Browser-Tabs.
+* Schreiben Sie Nachrichten in den Tabs.
+* Schließen Sie dann einen der Tabs.
 
 Das wird die Ausnahme `WebSocketDisconnect` auslösen und alle anderen Clients erhalten eine Nachricht wie:
 
@@ -252,5 +252,5 @@ Wenn Sie etwas benötigen, das sich leicht in ReadyAPI integrieren lässt, aber 
 
 Weitere Informationen zu Optionen finden Sie in der Dokumentation von Starlette:
 
-- <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">Die `WebSocket`-Klasse</a>.
-- <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Klassen-basierte Handhabung von WebSockets</a>.
+* <a href="https://www.starlette.io/websockets/" class="external-link" target="_blank">Die `WebSocket`-Klasse</a>.
+* <a href="https://www.starlette.io/endpoints/#websocketendpoint" class="external-link" target="_blank">Klassen-basierte Handhabung von WebSockets</a>.

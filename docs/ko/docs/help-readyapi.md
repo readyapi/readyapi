@@ -1,4 +1,4 @@
-- # ReadyAPI 지원 - 도움말 받기
+* # ReadyAPI 지원 - 도움말 받기
 
   **ReadyAPI** 가 마음에 드시나요?
 
@@ -12,7 +12,7 @@
 
   ## 뉴스레터 구독
 
-  [**ReadyAPI와 친구** 뉴스레터](https://github.com/readyapi/readyapi/blob/master/newsletter)를 구독하여 최신 정보를 유지할 수 있습니다{.internal-link target=\_blank}:
+  [**ReadyAPI와 친구** 뉴스레터](https://github.com/readyapi/readyapi/blob/master/newsletter)를 구독하여 최신 정보를 유지할 수 있습니다{.internal-link target=_blank}:
 
   - ReadyAPI 와 그 친구들에 대한 뉴스 🚀
   - 가이드 📝
@@ -30,7 +30,7 @@
 
   스타를 늘림으로써, 다른 사용자들이 좀 더 쉽게 찾을 수 있고, 많은 사람들에게 유용한 것임을 나타낼 수 있습니다.
 
-  ## GitHub 저장소에서 릴리즈 확인
+  ## GitHub 저장소에서  릴리즈 확인
 
   GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버튼을 클릭): https://github.com/readyapi/readyapi. 👀
 
@@ -46,17 +46,14 @@
 
   - [**GitHub**에서 팔로우하기](https://github.com/khulnasoft).
   - 당신에게 도움이 될 저의 다른 오픈소스 프로젝트를 확인하십시오.
-
     - 새로운 오픈소스 프로젝트를 만들었을 때 확인하려면 팔로우 하십시오.
 
   - [**Twitter**에서 팔로우하기](https://twitter.com/khulnasoft).
-
     - ReadyAPI의 사용 용도를 알려주세요 (그것을 듣는 것을 좋아합니다).
     - 발표 또는 새로운 툴 출시할 때 들으십시오.
     - [follow @readyapi on Twitter](https://twitter.com/readyapi) (별도 계정에서) 할 수 있습니다.
 
   - [**Linkedin**에서의 연결](https://www.linkedin.com/in/khulnasoft/).
-
     - 새로운 툴의 발표나 릴리스를 들을 수 있습니다 (단, Twitter를 더 자주 사용합니다 🤷‍♂).
 
   - [**Dev.to**](https://dev.to/khulnasoft) 또는 [**Medium**](https://medium.com/@khulnasoft)에서 제가 작성한 내용을 읽어 보십시오(또는 팔로우).
@@ -78,7 +75,7 @@
 
   [존재하는 이슈](https://github.com/readyapi/readyapi/issues)를 확인하고 그것을 시도하고 도와줄 수 있습니다. 대부분의 경우 이미 답을 알고 있는 질문입니다. 🤓
 
-  많은 사람들의 문제를 도와준다면, 공식적인 [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 가 될 수 있습니다{.internal-link target=\_blank}. 🎉
+  많은 사람들의 문제를 도와준다면, 공식적인 [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 가 될 수 있습니다{.internal-link target=_blank}. 🎉
 
   ## GitHub 저장소 보기
 
@@ -99,7 +96,7 @@
 
   ## Pull Request를 만드십시오
 
-  Pull Requests를 이용하여 소스코드에 [컨트리뷰트](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/contributing.md){.internal-link target=\_blank} 할 수 있습니다. 예를 들면 다음과 같습니다:
+  Pull Requests를 이용하여 소스코드에 [컨트리뷰트](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/contributing.md){.internal-link target=_blank} 할 수 있습니다. 예를 들면 다음과 같습니다:
 
   - 문서에서 찾은 오타를 수정할 때.
 
@@ -107,7 +104,7 @@
 
     - 해당 섹션의 시작 부분에 링크를 추가했는지 확인하십시오.
 
-  - 당신의 언어로 [문서 번역하는데](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/contributing.md#translations){.internal-link target=\_blank} 기여할 때.
+  - 당신의 언어로 [문서 번역하는데](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/contributing.md#translations){.internal-link target=_blank} 기여할 때.
 
     - 또한 다른 사용자가 만든 번역을 검토하는데 도움을 줄 수도 있습니다.
 
@@ -123,7 +120,7 @@
 
   /// tip
 
-  질문이 있는 경우, [GitHub 이슈 ](https://github.com/readyapi/readyapi/issues/new/choose) 에서 질문하십시오, [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 의 도움을 받을 가능성이 높습니다{.internal-link target=\_blank} .
+  질문이 있는 경우, [GitHub 이슈 ](https://github.com/readyapi/readyapi/issues/new/choose) 에서 질문하십시오, [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts) 의 도움을 받을 가능성이 높습니다{.internal-link target=_blank} .
 
   ///
 
@@ -139,7 +136,7 @@
 
   GitHub 이슈에서의 템플릿은 올바른 질문을 작성하도록 안내하여 더 쉽게 좋은 답변을 얻거나 질문하기 전에 스스로 문제를 해결할 수도 있습니다. 그리고 GitHub에서는 시간이 조금 걸리더라도 항상 모든 것에 답할 수 있습니다. 채팅 시스템에서는 개인적으로 그렇게 할 수 없습니다. 😅
 
-  채팅 시스템에서의 대화 또한 GitHub에서 처럼 쉽게 검색할 수 없기 때문에 대화 중에 질문과 답변이 손실될 수 있습니다. 그리고 GitHub 이슈에 있는 것만 [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts)가 되는 것으로 간주되므로{.internal-link target=\_blank} , GitHub 이슈에서 더 많은 관심을 받을 것입니다.
+  채팅 시스템에서의 대화 또한 GitHub에서 처럼 쉽게 검색할 수 없기 때문에 대화 중에 질문과 답변이 손실될 수 있습니다. 그리고 GitHub 이슈에 있는 것만 [ReadyAPI 전문가](https://github.com/readyapi/readyapi/blob/master/docs/en/docs/readyapi-people.md#experts)가 되는 것으로 간주되므로{.internal-link target=_blank} , GitHub 이슈에서 더 많은 관심을 받을 것입니다.
 
   반면, 채팅 시스템에는 수천 명의 사용자가 있기 때문에, 거의 항상 대화 상대를 찾을 가능성이 높습니다. 😄
 
@@ -160,6 +157,6 @@
   - [Samuel Colvin (Pydantic)](https://github.com/sponsors/samuelcolvin)
   - [Encode (Starlette, Uvicorn)](https://github.com/sponsors/encode)
 
-  ***
+  ------
 
   감사합니다! 🚀

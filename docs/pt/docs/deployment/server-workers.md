@@ -2,24 +2,24 @@
 
 Vamos rever os conceitos de implantação anteriores:
 
-- Segurança - HTTPS
-- Executando na inicialização
-- Reinicializações
-- **Replicação (o número de processos em execução)**
-- Memória
-- Etapas anteriores antes de iniciar
+* Segurança - HTTPS
+* Executando na inicialização
+* Reinicializações
+* **Replicação (o número de processos em execução)**
+* Memória
+* Etapas anteriores antes de iniciar
 
 Até este ponto, com todos os tutoriais nos documentos, você provavelmente estava executando um **programa de servidor**, por exemplo, usando o comando `readyapi`, que executa o Uvicorn, executando um **único processo**.
 
 Ao implantar aplicativos, você provavelmente desejará ter alguma **replicação de processos** para aproveitar **vários núcleos** e poder lidar com mais solicitações.
 
-Como você viu no capítulo anterior sobre [Conceitos de implantação](concepts.md){.internal-link target=\_blank}, há várias estratégias que você pode usar.
+Como você viu no capítulo anterior sobre [Conceitos de implantação](concepts.md){.internal-link target=_blank}, há várias estratégias que você pode usar.
 
 Aqui mostrarei como usar o **Uvicorn** com **processos de trabalho** usando o comando `readyapi` ou o comando `uvicorn` diretamente.
 
 /// info | "Informação"
 
-Se você estiver usando contêineres, por exemplo com Docker ou Kubernetes, falarei mais sobre isso no próximo capítulo: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=\_blank}.
+Se você estiver usando contêineres, por exemplo com Docker ou Kubernetes, falarei mais sobre isso no próximo capítulo: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 Em particular, ao executar no **Kubernetes** você provavelmente **não** vai querer usar vários trabalhadores e, em vez disso, executar **um único processo Uvicorn por contêiner**, mas falarei sobre isso mais adiante neste capítulo.
 
@@ -130,16 +130,16 @@ Aqui você viu como usar vários **trabalhadores** para **paralelizar** a execu�
 
 Da lista de conceitos de implantação acima, o uso de trabalhadores ajudaria principalmente com a parte da **replicação** e um pouco com as **reinicializações**, mas você ainda precisa cuidar dos outros:
 
-- **Segurança - HTTPS**
-- **Executando na inicialização**
-- **_Reinicializações_**
-- Replicação (o número de processos em execução)
-- **Memória**
-- **Etapas anteriores antes de iniciar**
+* **Segurança - HTTPS**
+* **Executando na inicialização**
+* ***Reinicializações***
+* Replicação (o número de processos em execução)
+* **Memória**
+* **Etapas anteriores antes de iniciar**
 
 ## Contêineres e Docker
 
-No próximo capítulo sobre [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=\_blank}, explicarei algumas estratégias que você pode usar para lidar com os outros **conceitos de implantação**.
+No próximo capítulo sobre [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}, explicarei algumas estratégias que você pode usar para lidar com os outros **conceitos de implantação**.
 
 Vou mostrar como **construir sua própria imagem do zero** para executar um único processo Uvicorn. É um processo simples e provavelmente é o que você gostaria de fazer ao usar um sistema de gerenciamento de contêineres distribuídos como o **Kubernetes**.
 

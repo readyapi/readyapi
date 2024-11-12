@@ -1,8 +1,8 @@
 # 生成客户端
 
-因为 **ReadyAPI** 是基于 OpenAPI 规范的，自然您可以使用许多相匹配的工具，包括自动生成 API 文档 (由 Swagger UI 提供)。
+因为 **ReadyAPI** 是基于OpenAPI规范的，自然您可以使用许多相匹配的工具，包括自动生成API文档 (由 Swagger UI 提供)。
 
-一个不太明显而又特别的优势是，你可以为你的 API 针对不同的**编程语言**来**生成客户端**(有时候被叫做 <abbr title="Software Development Kits">**SDKs**</abbr> )。
+一个不太明显而又特别的优势是，你可以为你的API针对不同的**编程语言**来**生成客户端**(有时候被叫做 <abbr title="Software Development Kits">**SDKs**</abbr> )。
 
 ## OpenAPI 客户端生成
 
@@ -32,21 +32,21 @@
 
 ////
 
-请注意，_路径操作_ 定义了他们所用于请求数据和回应数据的模型，所使用的模型是`Item` 和 `ResponseMessage`。
+请注意，*路径操作* 定义了他们所用于请求数据和回应数据的模型，所使用的模型是`Item` 和 `ResponseMessage`。
 
 ### API 文档
 
-如果您访问 API 文档，您将看到它具有在请求中发送和在响应中接收数据的**模式(schemas)**：
+如果您访问API文档，您将看到它具有在请求中发送和在响应中接收数据的**模式(schemas)**：
 
 <img src="/img/tutorial/generate-clients/image01.png">
 
 您可以看到这些模式，因为它们是用程序中的模型声明的。
 
-那些信息可以在应用的 **OpenAPI 模式** 被找到，然后显示在 API 文档中（通过 Swagger UI）。
+那些信息可以在应用的 **OpenAPI模式** 被找到，然后显示在API文档中（通过Swagger UI）。
 
-OpenAPI 中所包含的模型里有相同的信息可以用于 **生成客户端代码**。
+OpenAPI中所包含的模型里有相同的信息可以用于 **生成客户端代码**。
 
-### 生成一个 TypeScript 客户端
+### 生成一个TypeScript 客户端
 
 现在我们有了带有模型的应用，我们可以为前端生成客户端代码。
 
@@ -72,7 +72,7 @@ $ npm install @hey-api/openapi-ts --save-dev
 
 它可能看起来是这样的:
 
-```JSON hl_lines="7"
+```JSON  hl_lines="7"
 {
   "name": "frontend-app",
   "version": "1.0.0",
@@ -103,7 +103,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 </div>
 
-此命令将在 `./src/client` 中生成代码，并将在其内部使用 `axios`（前端 HTTP 库）。
+此命令将在 `./src/client` 中生成代码，并将在其内部使用 `axios`（前端HTTP库）。
 
 ### 尝试客户端代码
 
@@ -131,7 +131,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 ## 带有标签的 ReadyAPI 应用
 
-在许多情况下，你的 ReadyAPI 应用程序会更复杂，你可能会使用标签来分隔不同组的*路径操作(path operations)*。
+在许多情况下，你的ReadyAPI应用程序会更复杂，你可能会使用标签来分隔不同组的*路径操作(path operations)*。
 
 例如，您可以有一个用 `items` 的部分和另一个用于 `users` 的部分，它们可以用标签来分隔：
 
@@ -153,7 +153,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 ### 生成带有标签的 TypeScript 客户端
 
-如果您使用标签为 ReadyAPI 应用生成客户端，它通常也会根据标签分割客户端代码。
+如果您使用标签为ReadyAPI应用生成客户端，它通常也会根据标签分割客户端代码。
 
 通过这种方式，您将能够为客户端代码进行正确地排序和分组：
 
@@ -161,8 +161,8 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 在这个案例中，您有：
 
-- `ItemsService`
-- `UsersService`
+* `ItemsService`
+* `UsersService`
 
 ### 客户端方法名称
 
@@ -172,23 +172,23 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 ItemsService.createItemItemsPost({name: "Plumbus", price: 5})
 ```
 
-...这是因为客户端生成器为每个 _路径操作_ 使用 OpenAPI 的内部 **操作 ID(operation ID)**。
+...这是因为客户端生成器为每个 *路径操作* 使用OpenAPI的内部 **操作 ID(operation ID)**。
 
-OpenAPI 要求每个操作 ID 在所有 _路径操作_ 中都是唯一的，因此 ReadyAPI 使用**函数名**、**路径**和**HTTP 方法/操作**来生成此操作 ID，因为这样可以确保这些操作 ID 是唯一的。
+OpenAPI要求每个操作 ID 在所有 *路径操作* 中都是唯一的，因此 ReadyAPI 使用**函数名**、**路径**和**HTTP方法/操作**来生成此操作ID，因为这样可以确保这些操作 ID 是唯一的。
 
 但接下来我会告诉你如何改进。 🤓
 
-## 自定义操作 ID 和更好的方法名
+## 自定义操作ID和更好的方法名
 
-您可以**修改**这些操作 ID 的**生成**方式，以使其更简洁，并在客户端中具有**更简洁的方法名称**。
+您可以**修改**这些操作ID的**生成**方式，以使其更简洁，并在客户端中具有**更简洁的方法名称**。
 
-在这种情况下，您必须确保每个操作 ID 在其他方面是**唯一**的。
+在这种情况下，您必须确保每个操作ID在其他方面是**唯一**的。
 
-例如，您可以确保每个*路径操作*都有一个标签，然后根据**标签**和\*路径操作**\*名称**（函数名）来生成操作 ID。
+例如，您可以确保每个*路径操作*都有一个标签，然后根据**标签**和*路径操作***名称**（函数名）来生成操作ID。
 
-### 自定义生成唯一 ID 函数
+### 自定义生成唯一ID函数
 
-ReadyAPI 为每个*路径操作*使用一个**唯一 ID**，它用于**操作 ID**，也用于任何所需自定义模型的名称，用于请求或响应。
+ReadyAPI为每个*路径操作*使用一个**唯一ID**，它用于**操作ID**，也用于任何所需自定义模型的名称，用于请求或响应。
 
 你可以自定义该函数。它接受一个 `APIRoute` 对象作为输入，并输出一个字符串。
 
@@ -212,23 +212,23 @@ ReadyAPI 为每个*路径操作*使用一个**唯一 ID**，它用于**操作 ID
 
 ////
 
-### 使用自定义操作 ID 生成 TypeScript 客户端
+### 使用自定义操作ID生成TypeScript客户端
 
 现在，如果你再次生成客户端，你会发现它具有改善的方法名称：
 
 <img src="/img/tutorial/generate-clients/image07.png">
 
-正如你所见，现在方法名称中只包含标签和函数名，不再包含 URL 路径和 HTTP 操作的信息。
+正如你所见，现在方法名称中只包含标签和函数名，不再包含URL路径和HTTP操作的信息。
 
-### 预处理用于客户端生成器的 OpenAPI 规范
+### 预处理用于客户端生成器的OpenAPI规范
 
 生成的代码仍然存在一些**重复的信息**。
 
 我们已经知道该方法与 **items** 相关，因为它在 `ItemsService` 中（从标签中获取），但方法名中仍然有标签名作为前缀。😕
 
-一般情况下对于 OpenAPI，我们可能仍然希望保留它，因为这将确保操作 ID 是**唯一的**。
+一般情况下对于OpenAPI，我们可能仍然希望保留它，因为这将确保操作ID是**唯一的**。
 
-但对于生成的客户端，我们可以在生成客户端之前**修改** OpenAPI 操作 ID，以使方法名称更加美观和**简洁**。
+但对于生成的客户端，我们可以在生成客户端之前**修改** OpenAPI 操作ID，以使方法名称更加美观和**简洁**。
 
 我们可以将 OpenAPI JSON 下载到一个名为`openapi.json`的文件中，然后使用以下脚本**删除此前缀的标签**：
 
@@ -236,13 +236,13 @@ ReadyAPI 为每个*路径操作*使用一个**唯一 ID**，它用于**操作 ID
 {!../../docs_src/generate_clients/tutorial004.py!}
 ```
 
-通过这样做，操作 ID 将从类似于 `items-get_items` 的名称重命名为 `get_items` ，这样客户端生成器就可以生成更简洁的方法名称。
+通过这样做，操作ID将从类似于 `items-get_items` 的名称重命名为 `get_items` ，这样客户端生成器就可以生成更简洁的方法名称。
 
-### 使用预处理的 OpenAPI 生成 TypeScript 客户端
+### 使用预处理的OpenAPI生成TypeScript客户端
 
-现在，由于最终结果保存在文件 openapi.json 中，你可以修改 package.json 文件以使用此本地文件，例如：
+现在，由于最终结果保存在文件openapi.json中，你可以修改 package.json 文件以使用此本地文件，例如：
 
-```JSON hl_lines="7"
+```JSON  hl_lines="7"
 {
   "name": "frontend-app",
   "version": "1.0.0",
@@ -268,9 +268,9 @@ ReadyAPI 为每个*路径操作*使用一个**唯一 ID**，它用于**操作 ID
 
 当使用自动生成的客户端时，你将获得以下的自动补全功能：
 
-- 方法。
-- 请求体中的数据、查询参数等。
-- 响应数据。
+* 方法。
+* 请求体中的数据、查询参数等。
+* 响应数据。
 
 你还将获得针对所有内容的错误提示。
 

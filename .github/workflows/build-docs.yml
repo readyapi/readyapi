@@ -21,25 +21,25 @@ jobs:
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
     steps:
-      - uses: actions/checkout@v4
-      # For pull requests it's not necessary to checkout the code but for the main branch it is
-      - uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          filters: |
-            docs:
-              - README.md
-              - docs/**
-              - docs_src/**
-              - requirements-docs.txt
-              - requirements-docs-insiders.txt
-              - pyproject.toml
-              - mkdocs.yml
-              - mkdocs.insiders.yml
-              - mkdocs.maybe-insiders.yml
-              - mkdocs.no-insiders.yml
-              - .github/workflows/build-docs.yml
-              - .github/workflows/deploy-docs.yml
+    - uses: actions/checkout@v4
+    # For pull requests it's not necessary to checkout the code but for the main branch it is
+    - uses: dorny/paths-filter@v3
+      id: filter
+      with:
+        filters: |
+          docs:
+            - README.md
+            - docs/**
+            - docs_src/**
+            - requirements-docs.txt
+            - requirements-docs-insiders.txt
+            - pyproject.toml
+            - mkdocs.yml
+            - mkdocs.insiders.yml
+            - mkdocs.maybe-insiders.yml
+            - mkdocs.no-insiders.yml
+            - .github/workflows/build-docs.yml
+            - .github/workflows/deploy-docs.yml
   langs:
     needs:
       - changes
@@ -124,7 +124,7 @@ jobs:
           include-hidden-files: true
 
   # https://github.com/marketplace/actions/alls-green#why
-  docs-all-green: # This job does nothing and is only used for the branch protection
+  docs-all-green:  # This job does nothing and is only used for the branch protection
     if: always()
     needs:
       - build-docs

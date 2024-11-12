@@ -50,7 +50,7 @@ Sie könnten auch `from starlette.testclient import TestClient` verwenden.
 
 /// tip | "Tipp"
 
-Wenn Sie in Ihren Tests neben dem Senden von Anfragen an Ihre ReadyAPI-Anwendung auch `async`-Funktionen aufrufen möchten (z. B. asynchrone Datenbankfunktionen), werfen Sie einen Blick auf die [Async-Tests](../advanced/async-tests.md){.internal-link target=\_blank} im Handbuch für fortgeschrittene Benutzer.
+Wenn Sie in Ihren Tests neben dem Senden von Anfragen an Ihre ReadyAPI-Anwendung auch `async`-Funktionen aufrufen möchten (z. B. asynchrone Datenbankfunktionen), werfen Sie einen Blick auf die [Async-Tests](../advanced/async-tests.md){.internal-link target=_blank} im Handbuch für fortgeschrittene Benutzer.
 
 ///
 
@@ -62,7 +62,7 @@ Und Ihre **ReadyAPI**-Anwendung könnte auch aus mehreren Dateien/Modulen, usw. 
 
 ### **ReadyAPI** Anwendungsdatei
 
-Nehmen wir an, Sie haben eine Dateistruktur wie in [Größere Anwendungen](bigger-applications.md){.internal-link target=\_blank} beschrieben:
+Nehmen wir an, Sie haben eine Dateistruktur wie in [Größere Anwendungen](bigger-applications.md){.internal-link target=_blank} beschrieben:
 
 ```
 .
@@ -73,6 +73,7 @@ Nehmen wir an, Sie haben eine Dateistruktur wie in [Größere Anwendungen](bigge
 
 In der Datei `main.py` haben Sie Ihre **ReadyAPI**-Anwendung:
 
+
 ```Python
 {!../../docs_src/app_testing/main.py!}
 ```
@@ -81,7 +82,7 @@ In der Datei `main.py` haben Sie Ihre **ReadyAPI**-Anwendung:
 
 Dann könnten Sie eine Datei `test_main.py` mit Ihren Tests haben. Sie könnte sich im selben Python-Package befinden (dasselbe Verzeichnis mit einer `__init__.py`-Datei):
 
-```hl_lines="5"
+``` hl_lines="5"
 .
 ├── app
 │   ├── __init__.py
@@ -119,7 +120,7 @@ Sie verfügt über eine `GET`-Operation, die einen Fehler zurückgeben könnte.
 
 Sie verfügt über eine `POST`-Operation, die mehrere Fehler zurückgeben könnte.
 
-Beide _Pfadoperationen_ erfordern einen `X-Token`-Header.
+Beide *Pfadoperationen* erfordern einen `X-Token`-Header.
 
 //// tab | Python 3.10+
 
@@ -187,11 +188,11 @@ Dann machen Sie in Ihren Tests einfach das gleiche.
 
 Z. B.:
 
-- Um einen _Pfad_- oder _Query_-Parameter zu übergeben, fügen Sie ihn der URL selbst hinzu.
-- Um einen JSON-Body zu übergeben, übergeben Sie ein Python-Objekt (z. B. ein `dict`) an den Parameter `json`.
-- Wenn Sie _Formulardaten_ anstelle von JSON senden müssen, verwenden Sie stattdessen den `data`-Parameter.
-- Um _Header_ zu übergeben, verwenden Sie ein `dict` im `headers`-Parameter.
-- Für _Cookies_ ein `dict` im `cookies`-Parameter.
+* Um einen *Pfad*- oder *Query*-Parameter zu übergeben, fügen Sie ihn der URL selbst hinzu.
+* Um einen JSON-Body zu übergeben, übergeben Sie ein Python-Objekt (z. B. ein `dict`) an den Parameter `json`.
+* Wenn Sie *Formulardaten* anstelle von JSON senden müssen, verwenden Sie stattdessen den `data`-Parameter.
+* Um *Header* zu übergeben, verwenden Sie ein `dict` im `headers`-Parameter.
+* Für *Cookies* ein `dict` im `cookies`-Parameter.
 
 Weitere Informationen zum Übergeben von Daten an das Backend (mithilfe von `httpx` oder dem `TestClient`) finden Sie in der <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX-Dokumentation</a>.
 
@@ -199,7 +200,7 @@ Weitere Informationen zum Übergeben von Daten an das Backend (mithilfe von `htt
 
 Beachten Sie, dass der `TestClient` Daten empfängt, die nach JSON konvertiert werden können, keine Pydantic-Modelle.
 
-Wenn Sie ein Pydantic-Modell in Ihrem Test haben und dessen Daten während des Testens an die Anwendung senden möchten, können Sie den `jsonable_encoder` verwenden, der in [JSON-kompatibler Encoder](encoder.md){.internal-link target=\_blank} beschrieben wird.
+Wenn Sie ein Pydantic-Modell in Ihrem Test haben und dessen Daten während des Testens an die Anwendung senden möchten, können Sie den `jsonable_encoder` verwenden, der in [JSON-kompatibler Encoder](encoder.md){.internal-link target=_blank} beschrieben wird.
 
 ///
 

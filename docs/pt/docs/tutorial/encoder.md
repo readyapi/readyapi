@@ -12,7 +12,7 @@ Vamos imaginar que você tenha um banco de dados `fake_db` que recebe apenas dad
 
 Por exemplo, ele não recebe objetos `datetime`, pois estes objetos não são compatíveis com JSON.
 
-Então, um objeto `datetime` teria que ser convertido em um `str` contendo os dados no formato <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO</a>.
+Então, um objeto `datetime` teria que ser convertido em um `str` contendo os dados no formato  <a href="https://en.wikipedia.org/wiki/ISO_8601" class="external-link" target="_blank">ISO</a>.
 
 Da mesma forma, este banco de dados não receberia um modelo Pydantic (um objeto com atributos), apenas um `dict`.
 

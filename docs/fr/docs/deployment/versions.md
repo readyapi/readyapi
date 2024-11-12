@@ -38,7 +38,7 @@ Si vous utilisez un autre outil pour gérer vos installations, comme Poetry, Pip
 
 ## Versions disponibles
 
-Vous pouvez consulter les versions disponibles (par exemple, pour vérifier quelle est la dernière version en date) dans les [Notes de version](../release-notes.md){.internal-link target=\_blank}.
+Vous pouvez consulter les versions disponibles (par exemple, pour vérifier quelle est la dernière version en date) dans les [Notes de version](../release-notes.md){.internal-link target=_blank}.
 
 ## À propos des versions
 
@@ -72,7 +72,7 @@ Le "MINOR" est le numéro au milieu, par exemple, dans `0.2.3`, la version MINOR
 
 Vous devriez tester votre application.
 
-Avec **ReadyAPI** c'est très facile (merci à Starlette), consultez la documentation : [Testing](../tutorial/testing.md){.internal-link target=\_blank}
+Avec **ReadyAPI** c'est très facile (merci à Starlette), consultez la documentation : [Testing](../tutorial/testing.md){.internal-link target=_blank}
 
 Après avoir effectué des tests, vous pouvez mettre à jour la version **ReadyAPI** vers une version plus récente, et vous assurer que tout votre code fonctionne correctement en exécutant vos tests.
 

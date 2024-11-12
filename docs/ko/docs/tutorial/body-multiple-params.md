@@ -78,11 +78,13 @@ ReadyAPI는 요청을 자동으로 변환해, 매개변수의 `item`과 `user`�
 
 하지만, **ReadyAPI**의 `Body`를 사용해 다른 본문 키로 처리하도록 제어할 수 있습니다:
 
+
 ```Python hl_lines="23"
 {!../../docs_src/body_multiple_params/tutorial003.py!}
 ```
 
 이 경우에는 **ReadyAPI**는 본문을 이와 같이 예측할 것입니다:
+
 
 ```JSON
 {

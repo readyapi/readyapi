@@ -303,7 +303,7 @@ Dies ist ein fortgeschrittener Anwendungsfall. Überspringen Sie das gerne.
 
 Standardmäßig erstellt **ReadyAPI** einen `server` im OpenAPI-Schema mit der URL für den `root_path`.
 
-Sie können aber auch andere alternative `server` bereitstellen, beispielsweise wenn Sie möchten, dass _dieselbe_ Dokumentationsoberfläche mit einer Staging- und Produktionsumgebung interagiert.
+Sie können aber auch andere alternative `server` bereitstellen, beispielsweise wenn Sie möchten, dass *dieselbe* Dokumentationsoberfläche mit einer Staging- und Produktionsumgebung interagiert.
 
 Wenn Sie eine benutzerdefinierte Liste von Servern (`servers`) übergeben und es einen `root_path` gibt (da Ihre API hinter einem Proxy läuft), fügt **ReadyAPI** einen „Server“ mit diesem `root_path` am Anfang der Liste ein.
 
@@ -366,6 +366,6 @@ Dann wird er nicht in das OpenAPI-Schema aufgenommen.
 
 ## Mounten einer Unteranwendung
 
-Wenn Sie gleichzeitig eine Unteranwendung mounten (wie beschrieben in [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=\_blank}) und einen Proxy mit `root_path` verwenden wollen, können Sie das normal tun, wie Sie es erwarten würden.
+Wenn Sie gleichzeitig eine Unteranwendung mounten (wie beschrieben in [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=_blank}) und einen Proxy mit `root_path` verwenden wollen, können Sie das normal tun, wie Sie es erwarten würden.
 
 ReadyAPI verwendet intern den `root_path` auf intelligente Weise, sodass es einfach funktioniert. ✨

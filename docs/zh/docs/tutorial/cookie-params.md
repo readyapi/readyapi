@@ -1,6 +1,6 @@
 # Cookie 参数
 
-定义 `Cookie` 参数与定义 `Query` 和 `Path` 参数一样。
+ 定义 `Cookie` 参数与定义 `Query` 和 `Path` 参数一样。
 
 ## 导入 `Cookie`
 
@@ -63,6 +63,7 @@
 声明 `Cookie` 参数的方式与声明 `Query` 和 `Path` 参数相同。
 
 第一个值是默认值，还可以传递所有验证参数或注释参数：
+
 
 //// tab | Python 3.10+
 

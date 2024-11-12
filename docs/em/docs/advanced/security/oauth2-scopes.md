@@ -42,9 +42,9 @@ Oauth2️⃣ 🔧 🔬 "↔" 📇 🎻 🎏 🚀.
 
 👫 🛎 ⚙️ 📣 🎯 💂‍♂ ✔, 🖼:
 
-- `users:read` ⚖️ `users:write` ⚠ 🖼.
-- `instagram_basic` ⚙️ 👱📔 / 👱📔.
-- `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
+* `users:read` ⚖️ `users:write` ⚠ 🖼.
+* `instagram_basic` ⚙️ 👱📔 / 👱📔.
+* `https://www.googleapis.com/auth/drive` ⚙️ 🇺🇸🔍.
 
 /// info
 
@@ -60,7 +60,7 @@ Oauth2️⃣ 👫 🎻.
 
 ## 🌐 🎑
 
-🥇, ➡️ 🔜 👀 🍕 👈 🔀 ⚪️➡️ 🖼 👑 **🔰 - 👩‍💻 🦮** [Oauth2️⃣ ⏮️ 🔐 (&amp; 🔁), 📨 ⏮️ 🥙 🤝](../../tutorial/security/oauth2-jwt.md){.internal-link target=\_blank}. 🔜 ⚙️ Oauth2️⃣ ↔:
+🥇, ➡️ 🔜 👀 🍕 👈 🔀 ⚪️➡️ 🖼 👑 **🔰 - 👩‍💻 🦮** [Oauth2️⃣ ⏮️ 🔐 (&amp; 🔁), 📨 ⏮️ 🥙 🤝](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}. 🔜 ⚙️ Oauth2️⃣ ↔:
 
 ```Python hl_lines="2  4  8  12  46  64  105  107-115  121-124  128-134  139  155"
 {!../../docs_src/security/tutorial005.py!}
@@ -88,7 +88,7 @@ Oauth2️⃣ 👫 🎻.
 
 ## 🥙 🤝 ⏮️ ↔
 
-🔜, 🔀 🤝 _➡ 🛠️_ 📨 ↔ 📨.
+🔜, 🔀 🤝 *➡ 🛠️* 📨 ↔ 📨.
 
 👥 ⚙️ 🎏 `OAuth2PasswordRequestForm`. ⚫️ 🔌 🏠 `scopes` ⏮️ `list` `str`, ⏮️ 🔠 ↔ ⚫️ 📨 📨.
 
@@ -106,9 +106,9 @@ Oauth2️⃣ 👫 🎻.
 {!../../docs_src/security/tutorial005.py!}
 ```
 
-## 📣 ↔ _➡ 🛠️_ &amp; 🔗
+## 📣 ↔ *➡ 🛠️* &amp; 🔗
 
-🔜 👥 📣 👈 _➡ 🛠️_ `/users/me/items/` 🚚 ↔ `items`.
+🔜 👥 📣 👈 *➡ 🛠️* `/users/me/items/` 🚚 ↔ `items`.
 
 👉, 👥 🗄 &amp; ⚙️ `Security` ⚪️➡️ `readyapi`.
 
@@ -198,7 +198,7 @@ Oauth2️⃣ 👫 🎻.
 
 ## ✔ `scopes`
 
-👥 🔜 ✔ 👈 🌐 ↔ ✔, 👉 🔗 &amp; 🌐 ⚓️ (🔌 _➡ 🛠️_), 🔌 ↔ 🚚 🤝 📨, ⏪ 🤚 `HTTPException`.
+👥 🔜 ✔ 👈 🌐 ↔ ✔, 👉 🔗 &amp; 🌐 ⚓️ (🔌 *➡ 🛠️*), 🔌 ↔ 🚚 🤝 📨, ⏪ 🤚 `HTTPException`.
 
 👉, 👥 ⚙️ `security_scopes.scopes`, 👈 🔌 `list` ⏮️ 🌐 👫 ↔ `str`.
 
@@ -212,30 +212,30 @@ Oauth2️⃣ 👫 🎻.
 
 `get_current_active_user` 🔗 ✔️ 🎧-🔗 🔛 `get_current_user`, ↔ `"me"` 📣 `get_current_active_user` 🔜 🔌 📇 ✔ ↔ `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
 
-_➡ 🛠️_ ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
+*➡ 🛠️* ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes` 🚶‍♀️ `get_current_user`.
 
 📥 ❔ 🔗 🔗 &amp; ↔ 👀 💖:
 
-- _➡ 🛠️_ `read_own_items` ✔️:
-  - ✔ ↔ `["items"]` ⏮️ 🔗:
-  - `get_current_active_user`:
-    - 🔗 🔢 `get_current_active_user` ✔️:
-      - ✔ ↔ `["me"]` ⏮️ 🔗:
-      - `get_current_user`:
-        - 🔗 🔢 `get_current_user` ✔️:
-          - 🙅‍♂ ↔ ✔ ⚫️.
-          - 🔗 ⚙️ `oauth2_scheme`.
-          - `security_scopes` 🔢 🆎 `SecurityScopes`:
-            - 👉 `security_scopes` 🔢 ✔️ 🏠 `scopes` ⏮️ `list` ⚗ 🌐 👫 ↔ 📣 🔛,:
-              - `security_scopes.scopes` 🔜 🔌 `["me", "items"]` _➡ 🛠️_ `read_own_items`.
-              - `security_scopes.scopes` 🔜 🔌 `["me"]` _➡ 🛠️_ `read_users_me`, ↩️ ⚫️ 📣 🔗 `get_current_active_user`.
-              - `security_scopes.scopes` 🔜 🔌 `[]` (🕳) _➡ 🛠️_ `read_system_status`, ↩️ ⚫️ 🚫 📣 🙆 `Security` ⏮️ `scopes`, &amp; 🚮 🔗, `get_current_user`, 🚫 📣 🙆 `scope` 👯‍♂️.
+*  *➡ 🛠️* `read_own_items` ✔️:
+    * ✔ ↔ `["items"]` ⏮️ 🔗:
+    * `get_current_active_user`:
+        *  🔗 🔢 `get_current_active_user` ✔️:
+            * ✔ ↔ `["me"]` ⏮️ 🔗:
+            * `get_current_user`:
+                * 🔗 🔢 `get_current_user` ✔️:
+                    * 🙅‍♂ ↔ ✔ ⚫️.
+                    * 🔗 ⚙️ `oauth2_scheme`.
+                    *  `security_scopes` 🔢 🆎 `SecurityScopes`:
+                        * 👉 `security_scopes` 🔢 ✔️ 🏠 `scopes` ⏮️ `list` ⚗ 🌐 👫 ↔ 📣 🔛,:
+                            * `security_scopes.scopes` 🔜 🔌 `["me", "items"]` *➡ 🛠️* `read_own_items`.
+                            * `security_scopes.scopes` 🔜 🔌 `["me"]` *➡ 🛠️* `read_users_me`, ↩️ ⚫️ 📣 🔗 `get_current_active_user`.
+                            * `security_scopes.scopes` 🔜 🔌 `[]` (🕳) *➡ 🛠️* `read_system_status`, ↩️ ⚫️ 🚫 📣 🙆 `Security` ⏮️ `scopes`, &amp; 🚮 🔗, `get_current_user`, 🚫 📣 🙆 `scope` 👯‍♂️.
 
 /// tip
 
-⚠ &amp; "🎱" 👜 📥 👈 `get_current_user` 🔜 ✔️ 🎏 📇 `scopes` ✅ 🔠 _➡ 🛠️_.
+⚠ &amp; "🎱" 👜 📥 👈 `get_current_user` 🔜 ✔️ 🎏 📇 `scopes` ✅ 🔠 *➡ 🛠️*.
 
-🌐 ⚓️ 🔛 `scopes` 📣 🔠 _➡ 🛠️_ &amp; 🔠 🔗 🔗 🌲 👈 🎯 _➡ 🛠️_.
+🌐 ⚓️ 🔛 `scopes` 📣 🔠 *➡ 🛠️* &amp; 🔠 🔗 🔗 🌲 👈 🎯 *➡ 🛠️*.
 
 ///
 
@@ -243,11 +243,11 @@ _➡ 🛠️_ ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes
 
 👆 💪 ⚙️ `SecurityScopes` 🙆 ☝, &amp; 💗 🥉, ⚫️ 🚫 ✔️ "🌱" 🔗.
 
-⚫️ 🔜 🕧 ✔️ 💂‍♂ ↔ 📣 ⏮️ `Security` 🔗 &amp; 🌐 ⚓️ **👈 🎯** _➡ 🛠️_ &amp; **👈 🎯** 🔗 🌲.
+⚫️ 🔜 🕧 ✔️ 💂‍♂ ↔ 📣 ⏮️ `Security` 🔗 &amp; 🌐 ⚓️ **👈 🎯** *➡ 🛠️* &amp; **👈 🎯** 🔗 🌲.
 
-↩️ `SecurityScopes` 🔜 ✔️ 🌐 ↔ 📣 ⚓️, 👆 💪 ⚙️ ⚫️ ✔ 👈 🤝 ✔️ 🚚 ↔ 🇨🇫 🔗 🔢, &amp; ⤴️ 📣 🎏 ↔ 📄 🎏 _➡ 🛠️_.
+↩️ `SecurityScopes` 🔜 ✔️ 🌐 ↔ 📣 ⚓️, 👆 💪 ⚙️ ⚫️ ✔ 👈 🤝 ✔️ 🚚 ↔ 🇨🇫 🔗 🔢, &amp; ⤴️ 📣 🎏 ↔ 📄 🎏 *➡ 🛠️*.
 
-👫 🔜 ✅ ➡ 🔠 _➡ 🛠️_.
+👫 🔜 ✅ ➡ 🔠 *➡ 🛠️*.
 
 ## ✅ ⚫️
 
@@ -259,7 +259,7 @@ _➡ 🛠️_ ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes
 
 &amp; 🚥 👆 🖊 ↔ `me` ✋️ 🚫 ↔ `items`, 👆 🔜 💪 🔐 `/users/me/` ✋️ 🚫 `/users/me/items/`.
 
-👈 ⚫️❔ 🔜 🔨 🥉 🥳 🈸 👈 🔄 🔐 1️⃣ 👫 _➡ 🛠️_ ⏮️ 🤝 🚚 👩‍💻, ⚓️ 🔛 ❔ 📚 ✔ 👩‍💻 🤝 🈸.
+👈 ⚫️❔ 🔜 🔨 🥉 🥳 🈸 👈 🔄 🔐 1️⃣ 👫 *➡ 🛠️* ⏮️ 🤝 🚚 👩‍💻, ⚓️ 🔛 ❔ 📚 ✔ 👩‍💻 🤝 🈸.
 
 ## 🔃 🥉 🥳 🛠️
 
@@ -287,4 +287,4 @@ _➡ 🛠️_ ⚫️ 📣 ↔, `"items"`, 👉 🔜 📇 `security_scopes.scopes
 
 ## `Security` 👨‍🎨 `dependencies`
 
-🎏 🌌 👆 💪 🔬 `list` `Depends` 👨‍🎨 `dependencies` 🔢 (🔬 [🔗 ➡ 🛠️ 👨‍🎨](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=\_blank}), 👆 💪 ⚙️ `Security` ⏮️ `scopes` 📤.
+🎏 🌌 👆 💪 🔬 `list` `Depends` 👨‍🎨 `dependencies` 🔢 (🔬 [🔗 ➡ 🛠️ 👨‍🎨](../../tutorial/dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}), 👆 💪 ⚙️ `Security` ⏮️ `scopes` 📤.

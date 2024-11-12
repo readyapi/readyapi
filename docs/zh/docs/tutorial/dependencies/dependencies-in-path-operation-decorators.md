@@ -34,7 +34,7 @@
 
 本例中，使用的是自定义响应头 `X-Key` 和 `X-Token`。
 
-但实际开发中，尤其是在实现安全措施时，最好使用 ReadyAPI 内置的[安全工具](../security/index.md){.internal-link target=\_blank}（详见下一章）。
+但实际开发中，尤其是在实现安全措施时，最好使用 ReadyAPI 内置的[安全工具](../security/index.md){.internal-link target=_blank}（详见下一章）。
 
 ///
 

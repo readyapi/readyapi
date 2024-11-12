@@ -168,14 +168,14 @@ For example, if the client tries to send a `tool` header with a value of `plumbu
 
 ```json
 {
-  "detail": [
-    {
-      "type": "extra_forbidden",
-      "loc": ["header", "tool"],
-      "msg": "Extra inputs are not permitted",
-      "input": "plumbus"
-    }
-  ]
+    "detail": [
+        {
+            "type": "extra_forbidden",
+            "loc": ["header", "tool"],
+            "msg": "Extra inputs are not permitted",
+            "input": "plumbus",
+        }
+    ]
 }
 ```
 

@@ -1,14 +1,14 @@
 # Códigos de estado adicionales
 
-Por defecto, **ReadyAPI** devolverá las respuestas utilizando una `JSONResponse`, poniendo el contenido que devuelves en tu _operación de path_ dentro de esa `JSONResponse`.
+Por defecto, **ReadyAPI** devolverá las respuestas utilizando una `JSONResponse`, poniendo el contenido que devuelves en tu *operación de path* dentro de esa `JSONResponse`.
 
-Utilizará el código de estado por defecto, o el que hayas asignado en tu _operación de path_.
+Utilizará el código de estado por defecto, o el que hayas asignado en tu *operación de path*.
 
 ## Códigos de estado adicionales
 
 Si quieres devolver códigos de estado adicionales además del principal, puedes hacerlo devolviendo directamente una `Response`, como una `JSONResponse`, y asignar directamente el código de estado adicional.
 
-Por ejemplo, digamos que quieres tener una _operación de path_ que permita actualizar ítems y devolver códigos de estado HTTP 200 "OK" cuando sea exitosa.
+Por ejemplo, digamos que quieres tener una *operación de path* que permita actualizar ítems y devolver códigos de estado HTTP 200 "OK" cuando sea exitosa.
 
 Pero también quieres que acepte nuevos ítems. Cuando los ítems no existan anteriormente, serán creados y devolverá un código de estado HTTP 201 "Created".
 
@@ -40,4 +40,4 @@ También podrías utilizar `from starlette.responses import JSONResponse`.
 
 Si quieres devolver códigos de estado y respuestas adicionales directamente, estas no estarán incluidas en el schema de OpenAPI (documentación de API), porque ReadyAPI no tiene una manera de conocer de antemano lo que vas a devolver.
 
-Pero puedes documentar eso en tu código usando [Respuestas Adicionales](additional-responses.md){.internal-link target=\_blank}.
+Pero puedes documentar eso en tu código usando [Respuestas Adicionales](additional-responses.md){.internal-link target=_blank}.

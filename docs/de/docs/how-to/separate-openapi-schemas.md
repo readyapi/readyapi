@@ -166,7 +166,7 @@ Wenn Sie jedoch dasselbe Modell als Ausgabe verwenden, wie hier:
 
 ////
 
-... dann, weil `description` einen Defaultwert hat, wird es, wenn Sie für dieses Feld **nichts zurückgeben**, immer noch diesen **Defaultwert** haben.
+... dann, weil  `description` einen Defaultwert hat, wird es, wenn Sie für dieses Feld **nichts zurückgeben**, immer noch diesen **Defaultwert** haben.
 
 ### Modell für Ausgabe-Responsedaten
 
@@ -184,8 +184,8 @@ Um dies in OpenAPI zu kennzeichnen, markieren Sie dieses Feld als **erforderlich
 
 Aus diesem Grund kann das JSON-Schema für ein Modell unterschiedlich sein, je nachdem, ob es für **Eingabe oder Ausgabe** verwendet wird:
 
-- für die **Eingabe** ist `description` **nicht erforderlich**
-- für die **Ausgabe** ist es **erforderlich** (und möglicherweise `None` oder, in JSON-Begriffen, `null`)
+* für die **Eingabe** ist `description` **nicht erforderlich**
+* für die **Ausgabe** ist es **erforderlich** (und möglicherweise `None` oder, in JSON-Begriffen, `null`)
 
 ### Ausgabemodell in der Dokumentation
 
