@@ -1,7 +1,7 @@
 import warnings
 
 import pytest
-from readyapi import File, Form, ReadyAPI, UploadFile
+from readyapi import ReadyAPI, File, Form, UploadFile
 from readyapi.dependencies.utils import (
     multipart_incorrect_install_error,
     multipart_not_installed_error,
