@@ -9,6 +9,7 @@ hide:
 
 ### Docs
 
+* fix: latest change. PR [#143](https://github.com/readyapi/readyapi/pull/143) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 * 📝 Update includes in `docs/en/docs/advanced/security/oauth2-scopes.md`. PR [#12572](https://github.com/readyapi/readyapi/pull/12572) by [@krishnamadhavan](https://github.com/krishnamadhavan).
 * 📝 Update includes for `docs/en/docs/how-to/conditional-openapi.md`. PR [#12624](https://github.com/readyapi/readyapi/pull/12624) by [@rabinlamadong](https://github.com/rabinlamadong).
 * 📝 Update includes in `docs/en/docs/tutorial/dependencies/index.md`. PR [#12615](https://github.com/readyapi/readyapi/pull/12615) by [@bharara](https://github.com/bharara).
@@ -43,6 +44,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.0 to 1.12.2. PR [#144](https://github.com/readyapi/readyapi/pull/144) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.11.0. PR [#12721](https://github.com/readyapi/readyapi/pull/12721) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Update pre-commit requirement from <4.0.0,>=2.17.0 to >=2.17.0,<5.0.0. PR [#12749](https://github.com/readyapi/readyapi/pull/12749) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cligenius from 0.12.3 to 0.12.5. PR [#12748](https://github.com/readyapi/readyapi/pull/12748) by [@dependabot[bot]](https://github.com/apps/dependabot).
