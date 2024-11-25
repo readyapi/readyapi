@@ -2,11 +2,15 @@ import warnings
 from enum import Enum
 from typing import Any, Callable, Dict, List, Optional, Sequence, Union
 
-from pydantic.fields import FieldInfo
 from readyapi.openapi.models import Example
+from pydantic.fields import FieldInfo
 from typing_extensions import Annotated, deprecated
 
-from ._compat import PYDANTIC_V2, PYDANTIC_VERSION, Undefined
+from ._compat import (
+    PYDANTIC_V2,
+    PYDANTIC_VERSION_MINOR_TUPLE,
+    Undefined,
+)
 
 _Unset: Any = Undefined
 
@@ -105,7 +109,7 @@ class Param(FieldInfo):
                 stacklevel=4,
             )
         current_json_schema_extra = json_schema_extra or extra
-        if PYDANTIC_VERSION < "2.7.0":
+        if PYDANTIC_VERSION_MINOR_TUPLE < (2, 7):
             self.deprecated = deprecated
         else:
             kwargs["deprecated"] = deprecated
@@ -561,7 +565,7 @@ class Body(FieldInfo):
                 stacklevel=4,
             )
         current_json_schema_extra = json_schema_extra or extra
-        if PYDANTIC_VERSION < "2.7.0":
+        if PYDANTIC_VERSION_MINOR_TUPLE < (2, 7):
             self.deprecated = deprecated
         else:
             kwargs["deprecated"] = deprecated
