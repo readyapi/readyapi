@@ -44,6 +44,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pillow from 10.4.0 to 11.0.0. PR [#133](https://github.com/readyapi/readyapi/pull/133) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.12.0 to 1.12.2. PR [#144](https://github.com/readyapi/readyapi/pull/144) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.11.0. PR [#12721](https://github.com/readyapi/readyapi/pull/12721) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Update pre-commit requirement from <4.0.0,>=2.17.0 to >=2.17.0,<5.0.0. PR [#12749](https://github.com/readyapi/readyapi/pull/12749) by [@dependabot[bot]](https://github.com/apps/dependabot).
