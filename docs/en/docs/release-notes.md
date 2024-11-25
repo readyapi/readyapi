@@ -7,6 +7,10 @@ hide:
 
 ## Latest Changes
 
+### Refactors
+
+* ♻️ Update tests and internals for compatibility with Pydantic >=2.10. PR [#145](https://github.com/readyapi/readyapi/pull/145) by [@gitworkflows](https://github.com/gitworkflows).
+
 ### Docs
 
 * fix: latest change. PR [#143](https://github.com/readyapi/readyapi/pull/143) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
