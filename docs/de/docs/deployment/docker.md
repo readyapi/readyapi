@@ -126,7 +126,7 @@ Und normalerweise würden Sie diese Paketabhängigkeiten mit `pip` installieren,
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 ---> 100%
 Successfully installed readyapi pydantic uvicorn
 ```

@@ -121,7 +121,7 @@ Nachdem Sie die Umgebung wie oben beschrieben aktiviert haben:
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 
 ---> 100%
 ```

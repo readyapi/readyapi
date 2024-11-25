@@ -17,7 +17,7 @@ After activating the environment, install the required packages:
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 
 ---> 100%
 ```

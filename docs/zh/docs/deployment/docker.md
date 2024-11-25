@@ -132,7 +132,7 @@ uvicorn>=0.15.0,<0.16.0
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 ---> 100%
 Successfully installed readyapi pydantic uvicorn
 ```

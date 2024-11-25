@@ -342,7 +342,7 @@ If you have a `requirements.txt`, you can now use it to install its packages.
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 ---> 100%
 ```
 
@@ -357,7 +357,7 @@ If you have <a href="https://github.com/astral-sh/uv" class="external-link" targ
 <div class="termy">
 
 ```console
-$ uv pip install -r requirements.txt
+$ uv pip install -r ./requirements/requirements.txt
 ---> 100%
 ```
 

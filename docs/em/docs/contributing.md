@@ -121,7 +121,7 @@ $ python -m pip install --upgrade pip
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 
 ---> 100%
 ```

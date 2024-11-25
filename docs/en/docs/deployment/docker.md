@@ -125,7 +125,7 @@ And you would normally install those package dependencies with `pip`, for exampl
 <div class="termy">
 
 ```console
-$ pip install -r requirements.txt
+$ pip install -r ./requirements/requirements.txt
 ---> 100%
 Successfully installed readyapi pydantic
 ```
