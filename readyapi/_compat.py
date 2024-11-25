@@ -18,10 +18,10 @@ from typing import (
     Union,
 )
 
-from readyapi.exceptions import RequestErrorModel
-from readyapi.types import IncEx, ModelNameMap, UnionType
 from pydantic import BaseModel, create_model
 from pydantic.version import VERSION as PYDANTIC_VERSION
+from readyapi.exceptions import RequestErrorModel
+from readyapi.types import IncEx, ModelNameMap, UnionType
 from starlette.datastructures import UploadFile
 from typing_extensions import Annotated, Literal, get_args, get_origin
 
@@ -288,7 +288,6 @@ if PYDANTIC_V2:
         ]
 
 else:
-    from readyapi.openapi.constants import REF_PREFIX as REF_PREFIX
     from pydantic import AnyUrl as Url  # noqa: F401
     from pydantic import (  # type: ignore[assignment]
         BaseConfig as BaseConfig,  # noqa: F401
@@ -314,6 +313,7 @@ else:
     from pydantic.fields import (  # type: ignore[no-redef,attr-defined]
         ModelField as ModelField,  # noqa: F401
     )
+    from readyapi.openapi.constants import REF_PREFIX as REF_PREFIX
 
     # Keeping old "Required" functionality from Pydantic V1, without
     # shadowing typing.Required.
