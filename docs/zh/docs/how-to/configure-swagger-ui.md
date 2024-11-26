@@ -18,9 +18,7 @@ ReadyAPI会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因
 
 但是你可以通过设置 `syntaxHighlight` 为 `False` 来禁用 Swagger UI 中的语法高亮：
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial001.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial001.py hl[3] *}
 
 ...在此之后，Swagger UI 将不会高亮代码:
 
@@ -30,9 +28,7 @@ ReadyAPI会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因
 
 同样地，你也可以通过设置键 `"syntaxHighlight.theme"` 来设置语法高亮主题（注意中间有一个点）：
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial002.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial002.py hl[3] *}
 
 这个配置会改变语法高亮主题：
 
@@ -44,17 +40,13 @@ ReadyAPI 包含了一些默认配置参数，适用于大多数用例。
 
 其包括这些默认配置参数：
 
-```Python
-{!../../readyapi/openapi/docs.py[ln:7-23]!}
-```
+{* ../../readyapi/openapi/docs.py ln[7:23] *}
 
 你可以通过在 `swagger_ui_parameters` 中设置不同的值来覆盖它们。
 
 比如，如果要禁用 `deepLinking`，你可以像这样传递设置到 `swagger_ui_parameters` 中：
 
-```Python hl_lines="3"
-{!../../docs_src/configure_swagger_ui/tutorial003.py!}
-```
+{* ../../docs_src/configure_swagger_ui/tutorial003.py hl[3] *}
 
 ## 其他 Swagger UI 参数
 

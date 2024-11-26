@@ -22,7 +22,7 @@
 
   ## 트위터에서 ReadyAPI 팔로우하기
 
-  [Follow @readyapi on **Twitter**](https://twitter.com/readyapi) 를 팔로우하여 **ReadyAPI** 에 대한 최신 뉴스를 얻을 수 있습니다. 🐦
+  [Follow @readyapi on **Twitter**](https://twitter.com/khulnasoft) 를 팔로우하여 **ReadyAPI** 에 대한 최신 뉴스를 얻을 수 있습니다. 🐦
 
   ## Star **ReadyAPI** in GitHub
 
@@ -51,7 +51,7 @@
   - [**Twitter**에서 팔로우하기](https://twitter.com/khulnasoft).
     - ReadyAPI의 사용 용도를 알려주세요 (그것을 듣는 것을 좋아합니다).
     - 발표 또는 새로운 툴 출시할 때 들으십시오.
-    - [follow @readyapi on Twitter](https://twitter.com/readyapi) (별도 계정에서) 할 수 있습니다.
+    - [follow @readyapi on Twitter](https://twitter.com/khulnasoft) (별도 계정에서) 할 수 있습니다.
 
   - [**Linkedin**에서의 연결](https://www.linkedin.com/in/khulnasoft/).
     - 새로운 툴의 발표나 릴리스를 들을 수 있습니다 (단, Twitter를 더 자주 사용합니다 🤷‍♂).

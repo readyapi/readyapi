@@ -22,7 +22,7 @@
 
 ## 在推特上关注 ReadyAPI
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">在 **Twitter** 上关注 @readyapi</a> 获取 **ReadyAPI** 的最新消息。🐦
+<a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">在 **Twitter** 上关注 @readyapi</a> 获取 **ReadyAPI** 的最新消息。🐦
 
 ## 在 GitHub 上为 **ReadyAPI** 加星
 
@@ -50,7 +50,7 @@
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">在 **Twitter** 上关注我</a>
     * 告诉我您使用 ReadyAPI（我非常乐意听到这种消息）
     * 接收我发布公告或新工具的消息
-    * 您还可以关注<a href="https://twitter.com/readyapi" class="external-link" target="_blank">@readyapi on Twitter</a>，这是个独立的账号
+    * 您还可以关注<a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">@readyapi on Twitter</a>，这是个独立的账号
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">在**领英**上联系我</a>
     * 接收我发布公告或新工具的消息（虽然我用 Twitter 比较多）
 * 阅读我在 <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> 或 <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a> 上的文章，或关注我
