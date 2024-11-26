@@ -3,8 +3,15 @@ from contextvars import ContextVar
 import peewee
 
 DATABASE_NAME = "test.db"
+
+# Initialize the ContextVar with None
+db_state = ContextVar("db_state", default=None)
+
+# Define the default state
 db_state_default = {"closed": None, "conn": None, "ctx": None, "transactions": None}
-db_state = ContextVar("db_state", default=db_state_default.copy())
+
+# Set the default state explicitly
+db_state.set(db_state_default.copy())
 
 
 class PeeweeConnectionState(peewee._ConnectionState):

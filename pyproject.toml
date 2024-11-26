@@ -54,50 +54,28 @@ Issues = "https://github.com/readyapi/readyapi/issues"
 Changelog = "https://readyapi.khulnasoft.com/release-notes/"
 
 [project.optional-dependencies]
-
 standard = [
-    "readyapi-cli[standard] >=0.0.5",
-    # For the test client
-    "httpx >=0.23.0",
-    # For templates
-    "jinja2 >=2.11.2",
-    # For forms and file uploads
-    "python-multipart >=0.0.7",
-    # To validate email fields
-    "email-validator >=2.0.0",
-    # Uvicorn with uvloop
-    "uvicorn[standard] >=0.12.0",
-    # TODO: this should be part of some pydantic optional extra dependencies
-    # # Settings management
-    # "pydantic-settings >=2.0.0",
-    # # Extra Pydantic data types
-    # "pydantic-extra-types >=2.0.0",
+    "readyapi-cli[standard]>=0.0.5",
+    "httpx>=0.23.0",
+    "jinja2>=2.11.2",
+    "python-multipart>=0.0.7",
+    "email-validator>=2.0.0",
+    "uvicorn[standard]>=0.12.0",
 ]
 
 all = [
-    "readyapi-cli[standard] >=0.0.5",
-    # # For the test client
-    "httpx >=0.23.0",
-    # For templates
-    "jinja2 >=2.11.2",
-    # For forms and file uploads
-    "python-multipart >=0.0.7",
-    # For Starlette's SessionMiddleware, not commonly used with ReadyAPI
-    "itsdangerous >=1.1.0",
-    # For Starlette's schema generation, would not be used with ReadyAPI
-    "pyyaml >=5.3.1",
-    # For UJSONResponse
-    "ujson >=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0",
-    # For ORJSONResponse
-    "orjson >=3.2.1",
-    # To validate email fields
-    "email-validator >=2.0.0",
-    # Uvicorn with uvloop
-    "uvicorn[standard] >=0.12.0",
-    # Settings management
-    "pydantic-settings >=2.0.0",
-    # Extra Pydantic data types
-    "pydantic-extra-types >=2.0.0",
+    "readyapi-cli[standard]>=0.0.5",
+    "httpx>=0.23.0",
+    "jinja2>=2.11.2",
+    "python-multipart>=0.0.7",
+    "itsdangerous>=1.1.0",
+    "pyyaml>=5.3.1",
+    "ujson>=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0",
+    "orjson>=3.2.1",
+    "email-validator>=2.0.0",
+    "uvicorn[standard]>=0.12.0",
+    "pydantic-settings>=2.0.0",
+    "pydantic-extra-types>=2.0.0",
 ]
 
 [project.scripts]
@@ -113,9 +91,8 @@ source-includes = [
     "docs_src/",
     "requirements*.txt",
     "scripts/",
-    # For a test
     "docs/en/docs/img/favicon.png",
-    ]
+]
 
 [tool.khulnasoft._internal-slim-build.packages.readyapi-slim.project]
 name = "readyapi-slim"
@@ -141,25 +118,18 @@ disallow_untyped_calls = false
 
 [tool.pytest.ini_options]
 addopts = [
-  "--strict-config",
-  "--strict-markers",
-  "--ignore=docs_src",
+    "--strict-config",
+    "--strict-markers",
+    "--ignore=docs_src",
 ]
 xfail_strict = true
 junit_family = "xunit2"
 filterwarnings = [
     "error",
     'ignore:starlette.middleware.wsgi is deprecated and will be removed in a future release\..*:DeprecationWarning:starlette',
-    # For passlib
     "ignore:'crypt' is deprecated and slated for removal in Python 3.13:DeprecationWarning",
-    # see https://trio.readthedocs.io/en/stable/history.html#trio-0-22-0-2022-09-28
     "ignore:You seem to already have a custom.*:RuntimeWarning:trio",
-    # TODO: remove after upgrading SQLAlchemy to a version that includes the following changes
-    # https://github.com/sqlalchemy/sqlalchemy/commit/59521abcc0676e936b31a523bd968fc157fef0c2
     'ignore:datetime\.datetime\.utcfromtimestamp\(\) is deprecated and scheduled for removal in a future version\..*:DeprecationWarning:sqlalchemy',
-    # Trio 24.1.0 raises a warning from attrs
-    # Ref: https://github.com/python-trio/trio/pull/3054
-    # Remove once there's a new version of Trio
     'ignore:The `hash` argument is deprecated*:DeprecationWarning:trio',
 ]
 
@@ -187,19 +157,19 @@ show_contexts = true
 
 [tool.ruff.lint]
 select = [
-    "E",  # pycodestyle errors
-    "W",  # pycodestyle warnings
-    "F",  # pyflakes
-    "I",  # isort
-    "B",  # flake8-bugbear
-    "C4",  # flake8-comprehensions
-    "UP",  # pyupgrade
+    "E",
+    "W",
+    "F",
+    "I",
+    "B",
+    "C4",
+    "UP",
 ]
 ignore = [
-    "E501",  # line too long, handled by black
-    "B008",  # do not perform function calls in argument defaults
-    "C901",  # too complex
-    "W191",  # indentation contains tabs
+    "E501",
+    "B008",
+    "C901",
+    "W191",
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -234,14 +204,10 @@ ignore = [
 "docs_src/dependencies/tutorial008b_an.py" = ["B904"]
 "docs_src/dependencies/tutorial008b_an_py39.py" = ["B904"]
 
-
 [tool.ruff.lint.isort]
 known-third-party = ["readyapi", "pydantic", "starlette"]
 
 [tool.ruff.lint.pyupgrade]
-# Preserve types, even if a file imports `from __future__ import annotations`.
 keep-runtime-typing = true
 
 [tool.inline-snapshot]
-# default-flags=["fix"]
-# default-flags=["create"]
