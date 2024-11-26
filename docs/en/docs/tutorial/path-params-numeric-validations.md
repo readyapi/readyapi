@@ -62,15 +62,13 @@ Prefer to use the `Annotated` version if possible.
 
 ///
 
-```Python hl_lines="7"
-{!> ../../docs_src/path_params_numeric_validations/tutorial002.py!}
-```
+{* ../../docs_src/path_params_numeric_validations/tutorial002.py hl[7] *}
 
 ////
 
 But keep in mind that if you use `Annotated`, you won't have this problem, it won't matter as you're not using the function parameter default values for `Query()` or `Path()`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py hl[10] *}
+{* ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py *}
 
 ## Order the parameters as you need, tricks
 
@@ -151,7 +149,7 @@ All of them share the same parameters for additional validation and metadata you
 
 ///
 
-/// note | "Technical Details"
+/// note | Technical Details
 
 When you import `Query`, `Path` and others from `readyapi`, they are actually functions.
 

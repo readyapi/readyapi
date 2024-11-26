@@ -16,7 +16,7 @@ Der erste Wert ist der Typ. Sie können `Header` die gehabten Extra Validierungs
 
 {* ../../docs_src/header_params/tutorial001_an_py310.py hl[9] *}
 
-/// note | "Technische Details"
+/// note | Technische Details
 
 `Header` ist eine Schwesterklasse von `Path`, `Query` und `Cookie`. Sie erbt von derselben gemeinsamen `Param`-Elternklasse.
 
@@ -48,7 +48,7 @@ Wenn Sie aus irgendeinem Grund das automatische Konvertieren von Unterstrichen z
 
 {* ../../docs_src/header_params/tutorial002_an_py310.py hl[10] *}
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Bevor Sie `convert_underscores` auf `False` setzen, bedenken Sie, dass manche HTTP-Proxys und Server die Verwendung von Headern mit Unterstrichen nicht erlauben.
 

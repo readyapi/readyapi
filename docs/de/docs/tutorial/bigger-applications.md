@@ -29,7 +29,7 @@ Nehmen wir an, Sie haben eine Dateistruktur wie diese:
 │       └── admin.py
 ```
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Es gibt mehrere `__init__.py`-Dateien: eine in jedem Verzeichnis oder Unterverzeichnis.
 
@@ -105,7 +105,7 @@ Alle die gleichen Optionen werden unterstützt.
 
 Alle die gleichen `parameters`, `responses`, `dependencies`, `tags`, usw.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 In diesem Beispiel heißt die Variable `router`, aber Sie können ihr einen beliebigen Namen geben.
 
@@ -139,7 +139,7 @@ Wir werden nun eine einfache Abhängigkeit verwenden, um einen benutzerdefiniert
 
 //// tab | Python 3.8+ nicht annotiert
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
@@ -151,7 +151,7 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
 ////
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Um dieses Beispiel zu vereinfachen, verwenden wir einen erfundenen Header.
 
@@ -201,7 +201,7 @@ Wir können auch eine Liste von `tags` und zusätzliche `responses` hinzufügen,
 
 Und wir können eine Liste von `dependencies` hinzufügen, die allen *Pfadoperationen* im Router hinzugefügt und für jeden an sie gerichteten Request ausgeführt/aufgelöst werden.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Beachten Sie, dass ähnlich wie bei [Abhängigkeiten in *Pfadoperation-Dekoratoren*](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} kein Wert an Ihre *Pfadoperation-Funktion* übergeben wird.
 
@@ -222,7 +222,7 @@ Das Endergebnis ist, dass die Pfade für diese Artikel jetzt wie folgt lauten:
     * Zuerst werden die Router-Abhängigkeiten ausgeführt, dann die [`dependencies` im Dekorator](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} und dann die normalen Parameterabhängigkeiten.
     * Sie können auch [`Security`-Abhängigkeiten mit `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=_blank} hinzufügen.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 `dependencies` im `APIRouter` können beispielsweise verwendet werden, um eine Authentifizierung für eine ganze Gruppe von *Pfadoperationen* zu erfordern. Selbst wenn die Abhängigkeiten nicht jeder einzeln hinzugefügt werden.
 
@@ -248,7 +248,7 @@ Daher verwenden wir einen relativen Import mit `..` für die Abhängigkeiten:
 
 #### Wie relative Importe funktionieren
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Wenn Sie genau wissen, wie Importe funktionieren, fahren Sie mit dem nächsten Abschnitt unten fort.
 
@@ -319,7 +319,7 @@ Aber wir können immer noch _mehr_ `tags` hinzufügen, die auf eine bestimmte *P
 {!../../docs_src/bigger_applications/app/routers/items.py!}
 ```
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Diese letzte Pfadoperation wird eine Kombination von Tags haben: `["items", "custom"]`.
 
@@ -441,7 +441,7 @@ Mit `app.include_router()` können wir jeden `APIRouter` zur Hauptanwendung `Rea
 
 Es wird alle Routen von diesem Router als Teil von dieser inkludieren.
 
-/// note | "Technische Details"
+/// note | Technische Details
 
 Tatsächlich wird intern eine *Pfadoperation* für jede *Pfadoperation* erstellt, die im `APIRouter` deklariert wurde.
 
@@ -504,7 +504,7 @@ Hier machen wir es ... nur um zu zeigen, dass wir es können 🤷:
 
 und es wird korrekt funktionieren, zusammen mit allen anderen *Pfadoperationen*, die mit `app.include_router()` hinzugefügt wurden.
 
-/// info | "Sehr technische Details"
+/// info | Sehr technische Details
 
 **Hinweis**: Dies ist ein sehr technisches Detail, das Sie wahrscheinlich **einfach überspringen** können.
 

@@ -39,7 +39,7 @@ Auf diese Weise erhalten Sie Benachrichtigungen (per E-Mail), wenn es einen neue
 
 ## Mit dem Autor vernetzen
 
-Sie können sich mit <a href="https://khulnasoft.com" class="external-link" target="_blank">mir (KhulnaSoft Ltd / `khulnasoft`)</a>, dem Autor, verbinden.
+Sie können sich mit <a href="https://khulnasoft.com" class="external-link" target="_blank">mir (Sebastián Ramírez / `khulnasoft`)</a>, dem Autor, verbinden.
 
 Insbesondere:
 
@@ -228,7 +228,7 @@ Wenn Sie mir dabei helfen können, **helfen Sie mir, ReadyAPI am Laufen zu erhal
 
 Treten Sie dem 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord-Chatserver</a> 👥 bei und treffen Sie sich mit anderen Mitgliedern der ReadyAPI-Community.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Wenn Sie Fragen haben, stellen Sie sie bei <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub Diskussionen</a>, es besteht eine viel bessere Chance, dass Sie hier Hilfe von den [ReadyAPI-Experten](readyapi-people.md#experten){.internal-link target=_blank} erhalten.
 

@@ -71,6 +71,7 @@ Par exemple, en étendant le modèle précédent, vous pouvez vouloir ajouter un
 Si vous le déclarez tel quel, comme c'est une valeur [scalaire](https://docs.github.com/fr/graphql/reference/scalars), **ReadyAPI** supposera qu'il s'agit d'un paramètre de requête (`Query`).
 
 Mais vous pouvez indiquer à **ReadyAPI** de la traiter comme une variable de body en utilisant `Body` :
+
 {* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 Dans ce cas, **ReadyAPI** s'attendra à un body semblable à :

@@ -56,7 +56,7 @@
 
 {* ../../docs_src/custom_request_and_route/tutorial001.py hl[18:26] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 `Request` ✔️ `request.scope` 🔢, 👈 🐍 `dict` ⚗ 🗃 🔗 📨.
 

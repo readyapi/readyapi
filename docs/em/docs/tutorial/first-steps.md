@@ -135,7 +135,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 `ReadyAPI` 🐍 🎓 👈 🚚 🌐 🛠️ 👆 🛠️.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 `ReadyAPI` 🎓 👈 😖 🔗 ⚪️➡️ `Starlette`.
 
@@ -249,7 +249,7 @@ https://example.com/items/foo
 * ➡ `/`
 * ⚙️ <abbr title="an HTTP GET method"><code>get</code> 🛠️</abbr>
 
-/// info | "`@decorator` ℹ"
+/// info | `@decorator` ℹ
 
 👈 `@something` ❕ 🐍 🤙 "👨‍🎨".
 

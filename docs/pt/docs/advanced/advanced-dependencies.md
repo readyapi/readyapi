@@ -1,65 +1,65 @@
-# Fortgeschrittene Abhängigkeiten
+# Dependências avançadas
 
-## Parametrisierte Abhängigkeiten
+## Dependências parametrizadas
 
-Alle Abhängigkeiten, die wir bisher gesehen haben, waren festgelegte Funktionen oder Klassen.
+Todas as dependências que vimos até agora são funções ou classes fixas.
 
-Es kann jedoch Fälle geben, in denen Sie Parameter für eine Abhängigkeit festlegen möchten, ohne viele verschiedene Funktionen oder Klassen zu deklarieren.
+Mas podem ocorrer casos onde você deseja ser capaz de definir parâmetros na dependência, sem ter a necessidade de declarar diversas funções ou classes.
 
-Stellen wir uns vor, wir möchten eine Abhängigkeit haben, die prüft, ob ein Query-Parameter `q` einen vordefinierten Inhalt hat.
+Vamos imaginar que queremos ter uma dependência que verifica se o parâmetro de consulta `q` possui um valor fixo.
 
-Aber wir wollen diesen vordefinierten Inhalt per Parameter festlegen können.
+Porém nós queremos poder parametrizar o conteúdo fixo.
 
-## Eine „aufrufbare“ Instanz
+## Uma instância "chamável"
 
-In Python gibt es eine Möglichkeit, eine Instanz einer Klasse „aufrufbar“ („callable“) zu machen.
+Em Python existe uma maneira de fazer com que uma instância de uma classe seja um "chamável".
 
-Nicht die Klasse selbst (die bereits aufrufbar ist), sondern eine Instanz dieser Klasse.
+Não propriamente a classe (que já é um chamável), mas a instância desta classe.
 
-Dazu deklarieren wir eine Methode `__call__`:
+Para fazer isso, nós declaramos o método `__call__`:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[12] *}
 
-In diesem Fall ist dieses `__call__` das, was **ReadyAPI** verwendet, um nach zusätzlichen Parametern und Unterabhängigkeiten zu suchen, und das ist es auch, was später aufgerufen wird, um einen Wert an den Parameter in Ihrer *Pfadoperation-Funktion* zu übergeben.
+Neste caso, o `__call__` é o que o **ReadyAPI** utilizará para verificar parâmetros adicionais e sub dependências, e isso é o que será chamado para passar o valor ao parâmetro na sua *função de operação de rota* posteriormente.
 
-## Die Instanz parametrisieren
+## Parametrizar a instância
 
-Und jetzt können wir `__init__` verwenden, um die Parameter der Instanz zu deklarieren, die wir zum `Parametrisieren` der Abhängigkeit verwenden können:
+E agora, nós podemos utilizar o `__init__` para declarar os parâmetros da instância que podemos utilizar para "parametrizar" a dependência:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[9] *}
 
-In diesem Fall wird **ReadyAPI** `__init__` nie berühren oder sich darum kümmern, wir werden es direkt in unserem Code verwenden.
+Neste caso, o **ReadyAPI** nunca tocará ou se importará com o `__init__`, nós vamos utilizar diretamente em nosso código.
 
-## Eine Instanz erstellen
+## Crie uma instância
 
-Wir könnten eine Instanz dieser Klasse erstellen mit:
+Nós poderíamos criar uma instância desta classe com:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[18] *}
 
-Und auf diese Weise können wir unsere Abhängigkeit „parametrisieren“, die jetzt `"bar"` enthält, als das Attribut `checker.fixed_content`.
+E deste modo nós podemos "parametrizar" a nossa dependência, que agora possui `"bar"` dentro dele, como o atributo `checker.fixed_content`.
 
-## Die Instanz als Abhängigkeit verwenden
+## Utilize a instância como dependência
 
-Dann könnten wir diesen `checker` in einem `Depends(checker)` anstelle von `Depends(FixedContentQueryChecker)` verwenden, da die Abhängigkeit die Instanz `checker` und nicht die Klasse selbst ist.
+Então, nós podemos utilizar este `checker` em um `Depends(checker)`, no lugar de `Depends(FixedContentQueryChecker)`, porque a dependência é a instância, `checker`, e não a própria classe.
 
-Und beim Auflösen der Abhängigkeit ruft **ReadyAPI** diesen `checker` wie folgt auf:
+E quando a dependência for resolvida, o **ReadyAPI** chamará este `checker` como:
 
 ```Python
 checker(q="somequery")
 ```
 
-... und übergibt, was immer das als Wert dieser Abhängigkeit in unserer *Pfadoperation-Funktion* zurückgibt, als den Parameter `fixed_content_included`:
+...e passar o que quer que isso retorne como valor da dependência em nossa *função de operação de rota* como o parâmetro `fixed_content_included`:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[22] *}
 
-/// tip | Tipp
+/// tip | Dica
 
-Das alles mag gekünstelt wirken. Und es ist möglicherweise noch nicht ganz klar, welchen Nutzen das hat.
+Tudo isso parece não ser natural. E pode não estar muito claro ou aparentar ser útil ainda.
 
-Diese Beispiele sind bewusst einfach gehalten, zeigen aber, wie alles funktioniert.
+Estes exemplos são intencionalmente simples, porém mostram como tudo funciona.
 
-In den Kapiteln zum Thema Sicherheit gibt es Hilfsfunktionen, die auf die gleiche Weise implementiert werden.
+Nos capítulos sobre segurança, existem funções utilitárias que são implementadas desta maneira.
 
-Wenn Sie das hier alles verstanden haben, wissen Sie bereits, wie diese Sicherheits-Hilfswerkzeuge unter der Haube funktionieren.
+Se você entendeu tudo isso, você já sabe como essas funções utilitárias para segurança funcionam por debaixo dos panos.
 
 ///

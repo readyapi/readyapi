@@ -32,7 +32,7 @@ Sie können auch die <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/
 
 Das bedeutet, sie senden nur die Daten, die Sie aktualisieren wollen, der Rest bleibt unverändert.
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 `PATCH` wird seltener verwendet und ist weniger bekannt als `PUT`.
 
@@ -97,7 +97,7 @@ Zusammengefasst, um Teil-Ersetzungen vorzunehmen:
 
 {* ../../docs_src/body_updates/tutorial002_py310.py hl[28:35] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Sie können tatsächlich die gleiche Technik mit einer HTTP `PUT` Operation verwenden.
 
@@ -105,7 +105,7 @@ Aber dieses Beispiel verwendet `PATCH`, da dieses für solche Anwendungsfälle g
 
 ///
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass das hereinkommende Modell immer noch validiert wird.
 

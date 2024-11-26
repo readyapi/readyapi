@@ -26,9 +26,7 @@
 
 ✍ 🙅 `assert` 📄 ⏮️ 🐩 🐍 🧬 👈 👆 💪 ✅ (🔄, 🐩 `pytest`).
 
-```Python hl_lines="2  12  15-18"
-{!../../docs_src/app_testing/tutorial001.py!}
-```
+{* ../../docs_src/app_testing/tutorial001.py hl[2,12,15:18] *}
 
 /// tip
 
@@ -40,7 +38,7 @@
 
 ///
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.testclient import TestClient`.
 
@@ -74,9 +72,7 @@
 📁 `main.py` 👆 ✔️ 👆 **ReadyAPI** 📱:
 
 
-```Python
-{!../../docs_src/app_testing/main.py!}
-```
+{* ../../docs_src/app_testing/main.py *}
 
 ### 🔬 📁
 
@@ -92,9 +88,7 @@
 
 ↩️ 👉 📁 🎏 📦, 👆 💪 ⚙️ ⚖ 🗄 🗄 🎚 `app` ⚪️➡️ `main` 🕹 (`main.py`):
 
-```Python hl_lines="3"
-{!../../docs_src/app_testing/test_main.py!}
-```
+{* ../../docs_src/app_testing/test_main.py hl[3] *}
 
 ...&amp; ✔️ 📟 💯 💖 ⏭.
 
@@ -122,29 +116,13 @@
 
 👯‍♂️ *➡ 🛠️* 🚚 `X-Token` 🎚.
 
-//// tab | 🐍 3️⃣.6️⃣ &amp; 🔛
-
-```Python
-{!> ../../docs_src/app_testing/app_b/main.py!}
-```
-
-////
-
-//// tab | 🐍 3️⃣.1️⃣0️⃣ &amp; 🔛
-
-```Python
-{!> ../../docs_src/app_testing/app_b_py310/main.py!}
-```
-
-////
+{* ../../docs_src/app_testing/app_b/main.py *}
 
 ### ↔ 🔬 📁
 
 👆 💪 ⤴️ ℹ `test_main.py` ⏮️ ↔ 💯:
 
-```Python
-{!> ../../docs_src/app_testing/app_b/test_main.py!}
-```
+{* ../../docs_src/app_testing/app_b/test_main.py *}
 
 🕐❔ 👆 💪 👩‍💻 🚶‍♀️ ℹ 📨 &amp; 👆 🚫 💭 ❔, 👆 💪 🔎 (🇺🇸🔍) ❔ ⚫️ `httpx`, ⚖️ ❔ ⚫️ ⏮️ `requests`, 🇸🇲 🔧 ⚓️ 🔛 📨' 🔧.
 

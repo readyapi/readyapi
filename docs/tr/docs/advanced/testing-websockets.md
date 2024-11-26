@@ -6,7 +6,7 @@ Bu işlem için, `TestClient`'ı bir `with` ifadesinde kullanarak WebSocket'e ba
 
 {* ../../docs_src/app_testing/tutorial002.py hl[27:31] *}
 
-/// note | "Not"
+/// note | Not
 
 Daha fazla detay için Starlette'in <a href="https://www.starlette.io/staticfiles/" class="external-link" target="_blank">Websockets'i Test Etmek</a> dokümantasyonunu inceleyin.
 

@@ -126,7 +126,7 @@ Oauth2️⃣ 👫 🎻.
 
 {* ../../docs_src/security/tutorial005.py hl[4,139,168] *}
 
-/// info | "📡 ℹ"
+/// info | 📡 ℹ
 
 `Security` 🤙 🏿 `Depends`, &amp; ⚫️ ✔️ 1️⃣ ➕ 🔢 👈 👥 🔜 👀 ⏪.
 

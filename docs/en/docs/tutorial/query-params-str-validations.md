@@ -263,7 +263,11 @@ Before Pydantic version 2 and before ReadyAPI 0.100.0, the parameter was called 
 
 You could still see some code using it:
 
-{* ../../docs_src/query_params_str_validations/tutorial004_an_py310_regex.py hl[11] *}
+//// tab | Pydantic v1
+
+{* ../../docs_src/query_params_str_validations/tutorial004_regex_an_py310.py hl[11] *}
+
+////
 
 But know that this is deprecated and it should be updated to use the new parameter `pattern`. 🤓
 

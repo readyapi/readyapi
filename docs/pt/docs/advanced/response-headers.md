@@ -24,7 +24,7 @@ Crie uma resposta conforme descrito em [Retornar uma resposta diretamente](respo
 
 {* ../../docs_src/response_headers/tutorial001.py hl[10:12] *}
 
-/// note | "Detalhes técnicos"
+/// note | Detalhes técnicos
 
 Você também pode usar `from starlette.responses import Response` ou `from starlette.responses import JSONResponse`.
 

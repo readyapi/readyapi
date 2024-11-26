@@ -16,7 +16,7 @@
 
 {* ../../docs_src/header_params/tutorial001_an_py310.py hl[9] *}
 
-/// note | "技术细节"
+/// note | 技术细节
 
 `Header` 是 `Path`、`Query`、`Cookie` 的**兄弟类**，都继承自共用的 `Param` 类。
 
@@ -24,7 +24,7 @@
 
 ///
 
-/// info | "说明"
+/// info | 说明
 
 必须使用 `Header` 声明 header 参数，否则该参数会被解释为查询参数。
 
@@ -48,7 +48,7 @@
 
 {* ../../docs_src/header_params/tutorial002_an_py310.py hl[10] *}
 
-/// warning | "警告"
+/// warning | 警告
 
 注意，使用 `convert_underscores = False` 要慎重，有些 HTTP 代理和服务器不支持使用带有下划线的请求头。
 

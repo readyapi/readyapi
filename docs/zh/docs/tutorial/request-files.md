@@ -2,7 +2,7 @@
 
 `File` 用于定义客户端的上传文件。
 
-/// info | "说明"
+/// info | 说明
 
 因为上传文件以「表单数据」形式发送。
 
@@ -24,7 +24,7 @@
 
 {* ../../docs_src/request_files/tutorial001.py hl[7] *}
 
-/// info | "说明"
+/// info | 说明
 
 `File` 是直接继承自 `Form` 的类。
 
@@ -32,7 +32,7 @@
 
 ///
 
-/// tip | "提示"
+/// tip | 提示
 
 声明文件体必须使用 `File`，否则，ReadyAPI 会把该参数当作查询参数或请求体（JSON）参数。
 
@@ -92,13 +92,13 @@ contents = await myfile.read()
 contents = myfile.file.read()
 ```
 
-/// note | "`async` 技术细节"
+/// note | `async` 技术细节
 
 使用 `async` 方法时，**ReadyAPI** 在线程池中执行文件方法，并 `await` 操作完成。
 
 ///
 
-/// note | "Starlette 技术细节"
+/// note | Starlette 技术细节
 
 **ReadyAPI** 的 `UploadFile` 直接继承自 **Starlette** 的 `UploadFile`，但添加了一些必要功能，使之与 **Pydantic** 及 ReadyAPI 的其它部件兼容。
 
@@ -110,7 +110,7 @@ contents = myfile.file.read()
 
 **ReadyAPI** 要确保从正确的位置读取数据，而不是读取 JSON。
 
-/// note | "技术细节"
+/// note | 技术细节
 
 不包含文件时，表单数据一般用 `application/x-www-form-urlencoded`「媒体类型」编码。
 
@@ -120,7 +120,7 @@ contents = myfile.file.read()
 
 ///
 
-/// warning | "警告"
+/// warning | 警告
 
 可在一个*路径操作*中声明多个 `File` 和 `Form` 参数，但不能同时声明要接收 JSON 的 `Body` 字段。因为此时请求体的编码是 `multipart/form-data`，不是 `application/json`。
 
@@ -153,7 +153,7 @@ ReadyAPI 支持同时上传多个文件。
 接收的也是含 `bytes` 或 `UploadFile` 的列表（`list`）。
 
 
-/// note | "技术细节"
+/// note | 技术细节
 
 也可以使用 `from starlette.responses import HTMLResponse`。
 

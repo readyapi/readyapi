@@ -8,7 +8,7 @@ Nehmen wir als Beispiel die folgende Anwendung:
 
 Der Query-Parameter `q` hat den Typ `Union[str, None]` (oder `str | None` in Python 3.10), was bedeutet, er ist entweder ein `str` oder `None`. Der Defaultwert ist `None`, also weiß ReadyAPI, der Parameter ist nicht erforderlich.
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 ReadyAPI weiß nur dank des definierten Defaultwertes `=None`, dass der Wert von `q` nicht erforderlich ist
 
@@ -125,7 +125,7 @@ ReadyAPI wird nun:
 
 Frühere Versionen von ReadyAPI (vor <abbr title="vor 2023-03">0.95.0</abbr>) benötigten `Query` als Defaultwert des Parameters, statt es innerhalb von `Annotated` unterzubringen. Die Chance ist groß, dass Sie Quellcode sehen, der das immer noch so macht, darum erkläre ich es Ihnen.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Verwenden Sie für neuen Code, und wann immer möglich, `Annotated`, wie oben erklärt. Es gibt mehrere Vorteile (unten erläutert) und keine Nachteile. 🍰
 
@@ -257,7 +257,11 @@ Vor Pydantic Version 2 und vor ReadyAPI Version 0.100.0, war der Name des Parame
 
 Sie könnten immer noch Code sehen, der den alten Namen verwendet:
 
-{* ../../docs_src/query_params_str_validations/tutorial004_an_py310_regex.py hl[11] *}
+//// tab | Pydantic v1
+
+{* ../../docs_src/query_params_str_validations/tutorial004_regex_an_py310.py hl[11] *}
+
+////
 
 Beachten Sie aber, dass das deprecated ist, und zum neuen Namen `pattern` geändert werden sollte. 🤓
 
@@ -269,7 +273,7 @@ Beispielsweise könnten Sie den `q` Query-Parameter so deklarieren, dass er eine
 
 {* ../../docs_src/query_params_str_validations/tutorial005_an_py39.py hl[9] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Ein Parameter ist optional (nicht erforderlich), wenn er irgendeinen Defaultwert, auch `None`, hat.
 
@@ -335,13 +339,13 @@ Um das zu machen, deklarieren Sie, dass `None` ein gültiger Typ ist, aber verwe
 
 {* ../../docs_src/query_params_str_validations/tutorial006c_an_py310.py hl[9] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Pydantic, welches die gesamte Datenvalidierung und Serialisierung in ReadyAPI antreibt, hat ein spezielles Verhalten, wenn Sie `Optional` oder `Union[Something, None]` ohne Defaultwert verwenden, Sie können mehr darüber in der Pydantic-Dokumentation unter <a href="https://docs.pydantic.dev/2.3/usage/models/#required-fields" class="external-link" target="_blank">Required fields</a> erfahren.
 
 ///
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Denken Sie daran, dass Sie in den meisten Fällen, wenn etwas erforderlich ist, einfach den Defaultwert weglassen können. Sie müssen also normalerweise `...` nicht verwenden.
 
@@ -374,7 +378,7 @@ Die Response für diese URL wäre also:
 }
 ```
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Um einen Query-Parameter vom Typ `list` zu deklarieren, wie im Beispiel oben, müssen Sie explizit `Query` verwenden, sonst würde der Parameter als Requestbody interpretiert werden.
 
@@ -413,7 +417,7 @@ Sie können auch `list` direkt verwenden, anstelle von `List[str]` (oder `list[s
 
 {* ../../docs_src/query_params_str_validations/tutorial013_an_py39.py hl[9] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass ReadyAPI in diesem Fall den Inhalt der Liste nicht überprüft.
 
@@ -427,7 +431,7 @@ Sie können mehr Informationen zum Parameter hinzufügen.
 
 Diese Informationen werden zur generierten OpenAPI hinzugefügt, und von den Dokumentations-Oberflächen und von externen Tools verwendet.
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass verschiedene Tools OpenAPI möglicherweise unterschiedlich gut unterstützen.
 

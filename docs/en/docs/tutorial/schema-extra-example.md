@@ -8,7 +8,17 @@ Here are several ways to do it.
 
 You can declare `examples` for a Pydantic model that will be added to the generated JSON Schema.
 
+//// tab | Pydantic v2
+
 {* ../../docs_src/schema_extra_example/tutorial001_py310.py hl[13:24] *}
+
+////
+
+//// tab | Pydantic v1
+
+{* ../../docs_src/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
+
+////
 
 That extra info will be added as-is to the output **JSON Schema** for that model, and it will be used in the API docs.
 

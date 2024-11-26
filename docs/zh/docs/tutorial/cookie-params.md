@@ -17,7 +17,7 @@
 
 {* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[9] *}
 
-/// note | "技术细节"
+/// note | 技术细节
 
 `Cookie` 、`Path` 、`Query` 是**兄弟类**，都继承自共用的 `Param` 类。
 
@@ -25,7 +25,7 @@
 
 ///
 
-/// info | "说明"
+/// info | 说明
 
 必须使用 `Cookie` 声明 cookie 参数，否则该参数会被解释为查询参数。
 

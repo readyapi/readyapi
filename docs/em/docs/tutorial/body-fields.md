@@ -22,7 +22,7 @@
 
 `Field` 👷 🎏 🌌 `Query`, `Path` &amp; `Body`, ⚫️ ✔️ 🌐 🎏 🔢, ♒️.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 🤙, `Query`, `Path` &amp; 🎏 👆 🔜 👀 ⏭ ✍ 🎚 🏿 ⚠ `Param` 🎓, ❔ ⚫️ 🏿 Pydantic `FieldInfo` 🎓.
 

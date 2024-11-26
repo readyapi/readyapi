@@ -16,7 +16,7 @@
 
 {* ../../docs_src/header_params/tutorial001.py hl[9] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 `Header` "👭" 🎓 `Path`, `Query` &amp; `Cookie`. ⚫️ 😖 ⚪️➡️ 🎏 ⚠ `Param` 🎓.
 

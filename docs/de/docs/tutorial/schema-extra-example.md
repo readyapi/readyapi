@@ -8,7 +8,17 @@ Hier sind mehrere Möglichkeiten, das zu tun.
 
 Sie können `examples` („Beispiele“) für ein Pydantic-Modell deklarieren, welche dem generierten JSON-Schema hinzugefügt werden.
 
+//// tab | Pydantic v2
+
 {* ../../docs_src/schema_extra_example/tutorial001_py310.py hl[13:24] *}
+
+////
+
+//// tab | Pydantic v1
+
+{* ../../docs_src/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
+
+////
 
 Diese zusätzlichen Informationen werden unverändert zum für dieses Modell ausgegebenen **JSON-Schema** hinzugefügt und in der API-Dokumentation verwendet.
 
@@ -28,7 +38,7 @@ Sie können `schema_extra` setzen, mit einem `dict`, das alle zusätzlichen Date
 
 ////
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Mit derselben Technik können Sie das JSON-Schema erweitern und Ihre eigenen benutzerdefinierten Zusatzinformationen hinzufügen.
 
@@ -133,7 +143,7 @@ Wenn `openapi_examples` zu `Body()` hinzugefügt wird, würde `/docs` so aussehe
 
 ## Technische Details
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Wenn Sie bereits **ReadyAPI** Version **0.99.0 oder höher** verwenden, können Sie diese Details wahrscheinlich **überspringen**.
 
@@ -143,7 +153,7 @@ Sie können dies als eine kurze **Geschichtsstunde** zu OpenAPI und JSON Schema 
 
 ///
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Dies sind sehr technische Details zu den Standards **JSON Schema** und **OpenAPI**.
 

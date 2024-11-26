@@ -8,7 +8,7 @@
 
 {* ../../docs_src/body_fields/tutorial001_an_py310.py hl[4] *}
 
-/// warning | "경고"
+/// warning | 경고
 
 `Field`는 다른 것들처럼 (`Query`, `Path`, `Body` 등) `readyapi`에서가 아닌 `pydantic`에서 바로 임포트 되는 점에 주의하세요.
 
@@ -22,7 +22,7 @@
 
 `Field`는 `Query`, `Path`와 `Body`와 같은 방식으로 동작하며, 모두 같은 매개변수들 등을 가집니다.
 
-/// note | "기술적 세부사항"
+/// note | 기술적 세부사항
 
 실제로 `Query`, `Path`등, 여러분이 앞으로 볼 다른 것들은 공통 클래스인 `Param` 클래스의 서브클래스 객체를 만드는데, 그 자체로 Pydantic의 `FieldInfo` 클래스의 서브클래스입니다.
 
@@ -34,7 +34,7 @@
 
 ///
 
-/// tip | "팁"
+/// tip | 팁
 
 주목할 점은 타입, 기본 값 및 `Field`로 이루어진 각 모델 어트리뷰트가  `Path`, `Query`와 `Body`대신 `Field`를 사용하는 *경로 작동 함수*의 매개변수와 같은 구조를 가진다는 점 입니다.
 
@@ -46,7 +46,7 @@
 
 여러분이 예제를 선언할 때 나중에 이 공식 문서에서 별도 정보를 추가하는 방법을 배울 것입니다.
 
-/// warning | "경고"
+/// warning | 경고
 
 별도 키가 전달된 `Field` 또한 여러분의 어플리케이션의 OpenAPI 스키마에 나타날 것입니다.
 이런 키가 OpenAPI 명세서, [the OpenAPI validator](https://validator.swagger.io/)같은 몇몇 OpenAPI 도구들에 포함되지 못할 수 있으며, 여러분이 생성한 스키마와 호환되지 않을 수 있습니다.

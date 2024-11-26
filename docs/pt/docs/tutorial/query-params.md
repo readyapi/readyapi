@@ -65,7 +65,7 @@ Da mesma forma, você pode declarar parâmetros de consulta opcionais, definindo
 
 Nesse caso, o parâmetro da função `q` será opcional, e `None` será o padrão.
 
-/// check | "Verificar"
+/// check | Verificar
 
 Você também pode notar que o **ReadyAPI** é esperto o suficiente para perceber que o parâmetro da rota `item_id` é um parâmetro da rota, e `q` não é, portanto, `q` é o parâmetro de consulta.
 
@@ -179,7 +179,7 @@ Nesse caso, existem 3 parâmetros de consulta:
 * `skip`, um `int` com o valor padrão `0`.
 * `limit`, um `int` opcional.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Você também poderia usar `Enum` da mesma forma que com [Path Parameters](path-params.md#valores-predefinidos){.internal-link target=_blank}.
 

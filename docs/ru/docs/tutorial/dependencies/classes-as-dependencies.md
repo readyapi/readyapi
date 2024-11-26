@@ -101,7 +101,7 @@ fluffy = Cat(name="Mr Fluffy")
 
 //// tab | Python 3.6+ без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -145,7 +145,7 @@ commons: Annotated[CommonQueryParams, ...
 
 //// tab | Python 3.6+ без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -171,7 +171,7 @@ commons: Annotated[Any, Depends(CommonQueryParams)]
 
 //// tab | Python 3.6+ без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -197,7 +197,7 @@ commons = Depends(CommonQueryParams)
 
 //// tab | Python 3.6+ без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -232,7 +232,7 @@ commons: Annotated[CommonQueryParams, Depends(CommonQueryParams)]
 
 //// tab | Python 3.6+ без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -256,7 +256,7 @@ commons: Annotated[CommonQueryParams, Depends()]
 
 //// tab | Python 3.6 без Annotated
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Рекомендуется использовать версию с `Annotated` если возможно.
 
@@ -276,7 +276,7 @@ commons: CommonQueryParams = Depends()
 
 ...и **ReadyAPI** будет знать, что делать.
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Если это покажется вам более запутанным, чем полезным, не обращайте внимания, это вам не *нужно*.
 

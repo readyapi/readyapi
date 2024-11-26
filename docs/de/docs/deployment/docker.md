@@ -4,7 +4,7 @@ Beim Deployment von ReadyAPI-Anwendungen besteht ein gängiger Ansatz darin, ein
 
 Die Verwendung von Linux-Containern bietet mehrere Vorteile, darunter **Sicherheit**, **Replizierbarkeit**, **Einfachheit** und andere.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Sie haben es eilig und kennen sich bereits aus? Springen Sie zum [`Dockerfile` unten 👇](#ein-docker-image-fur-readyapi-erstellen).
 
@@ -231,7 +231,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
     Da das Programm unter `/code` gestartet wird und sich darin das Verzeichnis `./app` mit Ihrem Code befindet, kann **Uvicorn** `app` sehen und aus `app.main` **importieren**.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Lernen Sie, was jede Zeile bewirkt, indem Sie auf die Zahlenblasen im Code klicken. 👆
 
@@ -305,7 +305,7 @@ $ docker build -t myimage .
 
 </div>
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Beachten Sie das `.` am Ende, es entspricht `./` und teilt Docker mit, welches Verzeichnis zum Erstellen des Containerimages verwendet werden soll.
 
@@ -409,7 +409,7 @@ Wenn wir uns nur auf das **Containerimage** für eine ReadyAPI-Anwendung (und sp
 
 Es könnte sich um einen anderen Container handeln, zum Beispiel mit <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>, welcher **HTTPS** und **automatischen** Erwerb von **Zertifikaten** handhabt.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Traefik verfügt über Integrationen mit Docker, Kubernetes und anderen, sodass Sie damit ganz einfach HTTPS für Ihre Container einrichten und konfigurieren können.
 
@@ -441,7 +441,7 @@ Bei der Verwendung von Containern ist normalerweise eine Komponente vorhanden, *
 
 Da diese Komponente die **Last** an Requests aufnehmen und diese (hoffentlich) **ausgewogen** auf die Worker verteilen würde, wird sie üblicherweise auch **Load Balancer** – Lastverteiler – genannt.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Die gleiche **TLS-Terminierungsproxy**-Komponente, die für HTTPS verwendet wird, wäre wahrscheinlich auch ein **Load Balancer**.
 
@@ -544,7 +544,7 @@ Dieses Image wäre vor allem in den oben beschriebenen Situationen nützlich: [C
 
 * <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Es besteht eine hohe Wahrscheinlichkeit, dass Sie dieses oder ein ähnliches Basisimage **nicht** benötigen und es besser wäre, wenn Sie das Image von Grund auf neu erstellen würden, wie [oben beschrieben in: Ein Docker-Image für ReadyAPI erstellen](#ein-docker-image-fur-readyapi-erstellen).
 
@@ -556,7 +556,7 @@ Es verfügt über **vernünftige Standardeinstellungen**, aber Sie können trotz
 
 Es unterstützt auch die Ausführung von <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker#pre_start_path" class="external-link" target="_blank">**Vorab-Schritten vor dem Start** </a> mit einem Skript.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Um alle Konfigurationen und Optionen anzuzeigen, gehen Sie zur Docker-Image-Seite: <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>.
 
@@ -687,7 +687,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 11. Führe den Befehl `uvicorn` aus und weise ihn an, das aus `app.main` importierte `app`-Objekt zu verwenden.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Klicken Sie auf die Zahlenblasen, um zu sehen, was jede Zeile bewirkt.
 

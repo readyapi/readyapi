@@ -20,7 +20,7 @@
 
 👈 👔 📟 🔜 ⚙️ 📨 &amp; 🔜 🚮 🗄 🔗.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette import status`.
 

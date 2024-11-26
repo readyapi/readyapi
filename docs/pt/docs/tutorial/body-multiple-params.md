@@ -10,7 +10,7 @@ E você também pode declarar parâmetros de corpo como opcionais, definindo o v
 
 {* ../../docs_src/body_multiple_params/tutorial001_py310.py hl[17:19] *}
 
-/// note | "Nota"
+/// note | Nota
 
 Repare que, neste caso, o `item` que seria capturado a partir do corpo é opcional. Visto que ele possui `None` como valor padrão.
 
@@ -52,7 +52,7 @@ Então, ele usará o nome dos parâmetros como chaves (nome dos campos) no corpo
 }
 ```
 
-/// note | "Nota"
+/// note | Nota
 
 Repare que mesmo que o `item` esteja declarado da mesma maneira que antes, agora é esperado que ele esteja dentro do corpo com uma chave `item`.
 
@@ -114,7 +114,7 @@ Por exemplo:
 
 {* ../../docs_src/body_multiple_params/tutorial004_py310.py hl[26] *}
 
-/// info | "Informação"
+/// info | Informação
 
 `Body` também possui todas as validações adicionais e metadados de parâmetros como em `Query`,`Path` e outras que você verá depois.
 

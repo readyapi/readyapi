@@ -33,7 +33,7 @@ Para isso você precisa acessar a requisição diretamente.
 
 Ao declarar o parâmetro com o tipo sendo um `Request` em sua *função de operação de rota*, o **ReadyAPI** saberá como passar o `Request` neste parâmetro.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Note que neste caso, nós estamos declarando o parâmetro da rota ao lado do parâmetro da requisição.
 
@@ -47,7 +47,7 @@ Do mesmo jeito, você pode declarar qualquer outro parâmetro normalmente, e al�
 
 Você pode ler mais sobre os detalhes do objeto <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request` no site da documentação oficial do Starlette.</a>.
 
-/// note | "Detalhes Técnicos"
+/// note | Detalhes Técnicos
 
 Você também pode utilizar `from starlette.requests import Request`.
 

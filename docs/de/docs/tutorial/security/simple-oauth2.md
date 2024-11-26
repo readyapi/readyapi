@@ -61,7 +61,7 @@ Importieren Sie zunächst `OAuth2PasswordRequestForm` und verwenden Sie es als A
 * Einem optionalen `scope`-Feld als langem String, bestehend aus durch Leerzeichen getrennten Strings.
 * Einem optionalen `grant_type` („Art der Anmeldung“).
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Die OAuth2-Spezifikation *erfordert* tatsächlich ein Feld `grant_type` mit dem festen Wert `password`, aber `OAuth2PasswordRequestForm` erzwingt dies nicht.
 
@@ -86,7 +86,7 @@ Da es sich jedoch um einen häufigen Anwendungsfall handelt, wird er zur Vereinf
 
 ### Die Formulardaten verwenden
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Die Instanz der Klassenabhängigkeit `OAuth2PasswordRequestForm` verfügt, statt eines Attributs `scope` mit dem durch Leerzeichen getrennten langen String, über das Attribut `scopes` mit einer tatsächlichen Liste von Strings, einem für jeden gesendeten Scope.
 
@@ -160,7 +160,7 @@ Und es sollte einen `access_token` haben, mit einem String, der unseren Zugriffs
 
 In diesem einfachen Beispiel gehen wir einfach völlig unsicher vor und geben denselben `username` wie der Token zurück.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Im nächsten Kapitel sehen Sie eine wirklich sichere Implementierung mit Passwort-Hashing und <abbr title="JSON Web Tokens">JWT</abbr>-Tokens.
 
@@ -170,7 +170,7 @@ Aber konzentrieren wir uns zunächst auf die spezifischen Details, die wir benö
 
 {* ../../docs_src/security/tutorial003_an_py310.py hl[87] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Gemäß der Spezifikation sollten Sie ein JSON mit einem `access_token` und einem `token_type` zurückgeben, genau wie in diesem Beispiel.
 

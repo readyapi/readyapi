@@ -60,7 +60,7 @@ You will see something like this:
 
 <img src="/img/tutorial/security/image01.png">
 
-/// check | "Authorize button!"
+/// check | Authorize button!
 
 You already have a shiny new "Authorize" button.
 
@@ -176,7 +176,7 @@ This dependency will provide a `str` that is assigned to the parameter `token` o
 
 **ReadyAPI** will know that it can use this dependency to define a "security scheme" in the OpenAPI schema (and the automatic API docs).
 
-/// info | "Technical Details"
+/// info | Technical Details
 
 **ReadyAPI** will know that it can use the class `OAuth2PasswordBearer` (declared in a dependency) to define the security scheme in OpenAPI because it inherits from `readyapi.security.oauth2.OAuth2`, which in turn inherits from `readyapi.security.base.SecurityBase`.
 

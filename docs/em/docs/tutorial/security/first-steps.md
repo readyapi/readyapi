@@ -54,7 +54,7 @@ $ uvicorn main:app --reload
 
 <img src="/img/tutorial/security/image01.png">
 
-/// check | "✔ 🔼 ❗"
+/// check | ✔ 🔼 ❗
 
 👆 ⏪ ✔️ ✨ 🆕 "✔" 🔼.
 
@@ -170,7 +170,7 @@ oauth2_scheme(some, parameters)
 
 **ReadyAPI** 🔜 💭 👈 ⚫️ 💪 ⚙️ 👉 🔗 🔬 "💂‍♂ ⚖" 🗄 🔗 (&amp; 🏧 🛠️ 🩺).
 
-/// info | "📡 ℹ"
+/// info | 📡 ℹ
 
 **ReadyAPI** 🔜 💭 👈 ⚫️ 💪 ⚙️ 🎓 `OAuth2PasswordBearer` (📣 🔗) 🔬 💂‍♂ ⚖ 🗄 ↩️ ⚫️ 😖 ⚪️➡️ `readyapi.security.oauth2.OAuth2`, ❔ 🔄 😖 ⚪️➡️ `readyapi.security.base.SecurityBase`.
 

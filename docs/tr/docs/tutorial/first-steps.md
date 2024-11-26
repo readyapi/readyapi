@@ -22,7 +22,7 @@ $ uvicorn main:app --reload
 
 </div>
 
-/// note | "Not"
+/// note | Not
 
 `uvicorn main:app` komutunu şu şekilde açıklayabiliriz:
 
@@ -135,7 +135,7 @@ Ayrıca, API'ınızla iletişim kuracak önyüz, mobil veya IoT uygulamaları gi
 
 `ReadyAPI`, API'niz için tüm işlevselliği sağlayan bir Python sınıfıdır.
 
-/// note | "Teknik Detaylar"
+/// note | Teknik Detaylar
 
 `ReadyAPI` doğrudan `Starlette`'i miras alan bir sınıftır.
 
@@ -197,7 +197,7 @@ https://example.com/items/foo
 /items/foo
 ```
 
-/// info | "Bilgi"
+/// info | Bilgi
 
 "Yol" genellikle "<abbr title="Endpoint: Bitim Noktası">endpoint</abbr>" veya "<abbr title="Route: Yönlendirme/Yön">route</abbr>" olarak adlandırılır.
 
@@ -249,7 +249,7 @@ Biz de onları "**operasyonlar**" olarak adlandıracağız.
 * <abbr title="Bir HTTP GET metodu"><code>get</code> operasyonu</abbr> ile
 * `/` yoluna gelen istekler
 
-/// info | "`@decorator` Bilgisi"
+/// info | `@decorator` Bilgisi
 
 Python'da `@something` sözdizimi "<abbr title="Decorator">dekoratör</abbr>" olarak adlandırılır.
 
@@ -276,7 +276,7 @@ Daha az kullanılanları da kullanabilirsiniz:
 * `@app.patch()`
 * `@app.trace()`
 
-/// tip | "İpucu"
+/// tip | İpucu
 
 Her işlemi (HTTP metod) istediğiniz gibi kullanmakta özgürsünüz.
 
@@ -310,7 +310,7 @@ Bu fonksiyonu `async def` yerine normal bir fonksiyon olarak da tanımlayabilirs
 
 {* ../../docs_src/first_steps/tutorial003.py hl[7] *}
 
-/// note | "Not"
+/// note | Not
 
 Eğer farkı bilmiyorsanız, [Async: *"Aceleniz mi var?"*](../async.md#in-a-hurry){.internal-link target=_blank} sayfasını kontrol edebilirsiniz.
 

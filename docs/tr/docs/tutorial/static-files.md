@@ -9,7 +9,7 @@
 
 {* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
 
-/// note | "Teknik Detaylar"
+/// note | Teknik Detaylar
 
 Projenize dahil etmek için `from starlette.staticfiles import StaticFiles` kullanabilirsiniz.
 

@@ -44,7 +44,7 @@ Beachten Sie, dass wir als Typ von `current_user` das Pydantic-Modell `User` dek
 
 Das wird uns innerhalb der Funktion bei Codevervollständigung und Typprüfungen helfen.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Sie erinnern sich vielleicht, dass Requestbodys ebenfalls mit Pydantic-Modellen deklariert werden.
 

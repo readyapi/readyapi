@@ -162,7 +162,7 @@
 
 * Затем, используя **комментарий**, сообщите, что Вы сделали проверку, тогда я буду знать, что Вы действительно проверили код.
 
-/// info | "Информация"
+/// info | Информация
 
 К сожалению, я не могу так просто доверять пул-реквестам, у которых уже есть несколько одобрений.
 
@@ -221,7 +221,7 @@
 
 Подключайтесь к  👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank"> чату в Discord</a> 👥 и общайтесь с другими участниками сообщества ReadyAPI.
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Вопросы по проблемам с фреймворком лучше задавать в <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">GitHub issues</a>, так больше шансов, что Вы получите помощь от [Экспертов ReadyAPI](readyapi-people.md#_3){.internal-link target=_blank}.
 

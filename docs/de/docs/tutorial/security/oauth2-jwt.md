@@ -44,7 +44,7 @@ $ pip install "python-jose[cryptography]"
 
 Hier verwenden wir das empfohlene: <a href="https://cryptography.io/" class="external-link" target="_blank">pyca/cryptography</a>.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Dieses Tutorial verwendete zuvor <a href="https://pyjwt.readthedocs.io/" class="external-link" target="_blank">PyJWT</a>.
 
@@ -86,7 +86,7 @@ $ pip install "passlib[bcrypt]"
 
 </div>
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Mit `passlib` können Sie sogar konfigurieren, Passwörter zu lesen, die von **Django**, einem **Flask**-Sicherheit-Plugin, oder vielen anderen erstellt wurden.
 
@@ -102,7 +102,7 @@ Importieren Sie die benötigten Tools aus `passlib`.
 
 Erstellen Sie einen PassLib-„Kontext“. Der wird für das Hashen und Verifizieren von Passwörtern verwendet.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Der PassLib-Kontext kann auch andere Hashing-Algorithmen verwenden, einschließlich deprecateter Alter, um etwa nur eine Verifizierung usw. zu ermöglichen.
 
@@ -120,7 +120,7 @@ Und noch eine, um einen Benutzer zu authentifizieren und zurückzugeben.
 
 {* ../../docs_src/security/tutorial004_an_py310.py hl[7,48,55:56,59:60,69:75] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Wenn Sie sich die neue (gefakte) Datenbank `fake_users_db` anschauen, sehen Sie, wie das gehashte Passwort jetzt aussieht: `"$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW"`.
 
@@ -236,7 +236,7 @@ Wenn Sie die Developer Tools öffnen, können Sie sehen, dass die gesendeten Dat
 
 <img src="/img/tutorial/security/image10.png">
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie den Header `Authorization` mit einem Wert, der mit `Bearer` beginnt.
 

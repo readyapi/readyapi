@@ -10,6 +10,8 @@ And you can also declare body parameters as optional, by setting the default to 
 
 {* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
+## Multiple body parameters
+
 /// note
 
 Notice that, in this case, the `item` that would be taken from the body is optional. As it has a `None` default value.
@@ -32,6 +34,7 @@ In the previous example, the *path operations* would expect a JSON body with the
 But you can also declare multiple body parameters, e.g. `item` and `user`:
 
 {* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+
 
 In this case, **ReadyAPI** will notice that there is more than one body parameter in the function (there are two parameters that are Pydantic models).
 
@@ -74,6 +77,7 @@ But you can instruct **ReadyAPI** to treat it as another body key using `Body`:
 
 {* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
+
 In this case, **ReadyAPI** will expect a body like:
 
 ```JSON
@@ -114,6 +118,7 @@ For example:
 
 {* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[28] *}
 
+
 /// info
 
 `Body` also has all the same extra validation and metadata parameters as `Query`,`Path` and others you will see later.
@@ -135,6 +140,7 @@ item: Item = Body(embed=True)
 as in:
 
 {* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+
 
 In this case **ReadyAPI** will expect a body like:
 

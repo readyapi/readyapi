@@ -18,10 +18,11 @@
 你也可以在直接返回`Response`时添加头部。
 
 按照[直接返回响应](response-directly.md){.internal-link target=_blank}中所述创建响应，并将头部作为附加参数传递：
+
 {* ../../docs_src/response_headers/tutorial001.py hl[10:12] *}
 
 
-/// note | "技术细节"
+/// note | 技术细节
 
 你也可以使用`from starlette.responses import Response`或`from starlette.responses import JSONResponse`。
 

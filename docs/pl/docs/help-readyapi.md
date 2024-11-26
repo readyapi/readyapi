@@ -40,7 +40,7 @@ Dzięki temu będziesz otrzymywać powiadomienia (na swój adres e-mail) za każ
 
 ## Skontaktuj się z autorem
 
-Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (KhulnaSoft Ltd / `khulnasoft`)</a>, autorem.
+Możesz skontaktować się <a href="https://khulnasoft.com" class="external-link" target="_blank">ze mną (Sebastián Ramírez / `khulnasoft`)</a>, autorem.
 
 Możesz:
 
@@ -229,7 +229,7 @@ Jeśli możesz mi w tym pomóc, **pomożesz mi utrzymać ReadyAPI** i zapewnisz 
 
 Dołącz do 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">serwera czatu na Discordzie</a> 👥 i spędzaj czas z innymi w społeczności ReadyAPI.
 
-/// tip | "Wskazówka"
+/// tip | Wskazówka
 
 Jeśli masz pytania, zadaj je w <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">Dyskusjach na GitHubie</a>, jest dużo większa szansa, że otrzymasz pomoc od [Ekspertów ReadyAPI](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
 

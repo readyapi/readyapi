@@ -73,7 +73,7 @@ async def needy_dependency(fresh_value: Annotated[str, Depends(get_value, use_ca
 
 //// tab | Python 3.8+ nicht annotiert
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Bevorzugen Sie die `Annotated`-Version, falls möglich.
 
@@ -94,7 +94,7 @@ Einfach Funktionen, die genauso aussehen wie *Pfadoperation-Funktionen*.
 
 Dennoch ist es sehr mächtig und ermöglicht Ihnen die Deklaration beliebig tief verschachtelter Abhängigkeits-„Graphen“ (Bäume).
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 All dies scheint angesichts dieser einfachen Beispiele möglicherweise nicht so nützlich zu sein.
 

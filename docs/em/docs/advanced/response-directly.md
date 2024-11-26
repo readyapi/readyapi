@@ -36,7 +36,7 @@
 
 {* ../../docs_src/response_directly/tutorial001.py hl[6:7,21:22] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.responses import JSONResponse`.
 

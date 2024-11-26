@@ -9,11 +9,97 @@ hide:
 
 ### Refactors
 
-* ♻️ Update tests and internals for compatibility with Pydantic >=2.10. PR [#145](https://github.com/readyapi/readyapi/pull/145) by [@gitworkflows](https://github.com/gitworkflows).
+* ♻️ Update tests and internals for compatibility with Pydantic >=2.10. PR [#12971](https://github.com/readyapi/readyapi/pull/12971) by [@tamird](https://github.com/tamird).
 
 ### Docs
 
-* fix: latest change. PR [#143](https://github.com/readyapi/readyapi/pull/143) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
+* 📝 Update includes format in docs with an automated script. PR [#12950](https://github.com/readyapi/readyapi/pull/12950) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update includes for `docs/de/docs/advanced/using-request-directly.md`. PR [#12685](https://github.com/readyapi/readyapi/pull/12685) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes for `docs/de/docs/how-to/conditional-openapi.md`. PR [#12689](https://github.com/readyapi/readyapi/pull/12689) by [@alissadb](https://github.com/alissadb).
+
+### Translations
+
+* 🌐 Add Korean translation for `docs/ko/docs/tutorial/query-param-models.md`. PR [#12940](https://github.com/readyapi/readyapi/pull/12940) by [@jts8257](https://github.com/jts8257).
+* 🔥 Remove obsolete tutorial translation to Chinese for `docs/zh/docs/tutorial/sql-databases.md`, it references files that are no longer on the repo. PR [#12949](https://github.com/readyapi/readyapi/pull/12949) by [@khulnasoft](https://github.com/khulnasoft).
+
+### Internal
+
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#12954](https://github.com/readyapi/readyapi/pull/12954) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+
+## 0.115.5
+
+### Refactors
+
+* ♻️ Update internal checks to support Pydantic 2.10. PR [#12914](https://github.com/readyapi/readyapi/pull/12914) by [@khulnasoft](https://github.com/khulnasoft).
+
+### Docs
+
+* 📝 Update includes for `docs/en/docs/tutorial/body.md`. PR [#12757](https://github.com/readyapi/readyapi/pull/12757) by [@gsheni](https://github.com/gsheni).
+* 📝 Update includes in `docs/en/docs/advanced/testing-dependencies.md`. PR [#12647](https://github.com/readyapi/readyapi/pull/12647) by [@AyushSinghal1794](https://github.com/AyushSinghal1794).
+* 📝 Update includes for `docs/en/docs/tutorial/metadata.md`. PR [#12773](https://github.com/readyapi/readyapi/pull/12773) by [@Nimitha-jagadeesha](https://github.com/Nimitha-jagadeesha).
+* 📝 Update `docs/en/docs/tutorial/dependencies/dependencies-with-yield.md`. PR [#12045](https://github.com/readyapi/readyapi/pull/12045) by [@xuvjso](https://github.com/xuvjso).
+* 📝 Update includes for `docs/en/docs/tutorial/dependencies/global-dependencies.md`. PR [#12653](https://github.com/readyapi/readyapi/pull/12653) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes for `docs/en/docs/tutorial/body-updates.md`. PR [#12712](https://github.com/readyapi/readyapi/pull/12712) by [@davioc](https://github.com/davioc).
+* 📝 Remove mention of Celery in the project generators. PR [#12742](https://github.com/readyapi/readyapi/pull/12742) by [@david-caro](https://github.com/david-caro).
+* 📝 Update includes in `docs/en/docs/tutorial/header-param-models.md`. PR [#12814](https://github.com/readyapi/readyapi/pull/12814) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update `contributing.md` docs, include note to not translate this page. PR [#12841](https://github.com/readyapi/readyapi/pull/12841) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update includes in `docs/en/docs/tutorial/request-forms.md`. PR [#12648](https://github.com/readyapi/readyapi/pull/12648) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes in `docs/en/docs/tutorial/request-form-models.md`. PR [#12649](https://github.com/readyapi/readyapi/pull/12649) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes in `docs/en/docs/tutorial/security/oauth2-jwt.md`. PR [#12650](https://github.com/readyapi/readyapi/pull/12650) by [@OCE1960](https://github.com/OCE1960).
+* 📝 Update includes in `docs/vi/docs/tutorial/first-steps.md`. PR [#12754](https://github.com/readyapi/readyapi/pull/12754) by [@MxPy](https://github.com/MxPy).
+* 📝 Update includes for `docs/pt/docs/advanced/wsgi.md`. PR [#12769](https://github.com/readyapi/readyapi/pull/12769) by [@Nimitha-jagadeesha](https://github.com/Nimitha-jagadeesha).
+* 📝 Update includes for `docs/en/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md`. PR [#12815](https://github.com/readyapi/readyapi/pull/12815) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes for `docs/en/docs/tutorial/dependencies/classes-as-dependencies.md`. PR [#12813](https://github.com/readyapi/readyapi/pull/12813) by [@handabaldeep](https://github.com/handabaldeep).
+* ✏️ Fix error in `docs/en/docs/tutorial/middleware.md`. PR [#12819](https://github.com/readyapi/readyapi/pull/12819) by [@alejsdev](https://github.com/alejsdev).
+* 📝 Update includes for `docs/en/docs/tutorial/security/get-current-user.md`. PR [#12645](https://github.com/readyapi/readyapi/pull/12645) by [@OCE1960](https://github.com/OCE1960).
+* 📝 Update includes for `docs/en/docs/tutorial/security/first-steps.md`. PR [#12643](https://github.com/readyapi/readyapi/pull/12643) by [@OCE1960](https://github.com/OCE1960).
+* 📝 Update includes in `docs/de/docs/advanced/additional-responses.md`. PR [#12821](https://github.com/readyapi/readyapi/pull/12821) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/advanced/generate-clients.md`. PR [#12642](https://github.com/readyapi/readyapi/pull/12642) by [@AyushSinghal1794](https://github.com/AyushSinghal1794).
+* 📝 Fix admonition double quotes with new syntax. PR [#12835](https://github.com/readyapi/readyapi/pull/12835) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update includes in `docs/zh/docs/advanced/additional-responses.md`. PR [#12828](https://github.com/readyapi/readyapi/pull/12828) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/tutorial/path-params-numeric-validations.md`. PR [#12825](https://github.com/readyapi/readyapi/pull/12825) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/en/docs/advanced/testing-websockets.md`. PR [#12761](https://github.com/readyapi/readyapi/pull/12761) by [@hamidrasti](https://github.com/hamidrasti).
+* 📝 Update includes for `docs/en/docs/advanced/using-request-directly.md`. PR [#12760](https://github.com/readyapi/readyapi/pull/12760) by [@hamidrasti](https://github.com/hamidrasti).
+* 📝 Update includes for `docs/advanced/wsgi.md`. PR [#12758](https://github.com/readyapi/readyapi/pull/12758) by [@hamidrasti](https://github.com/hamidrasti).
+* 📝 Update includes in `docs/de/docs/tutorial/middleware.md`. PR [#12729](https://github.com/readyapi/readyapi/pull/12729) by [@paintdog](https://github.com/paintdog).
+* 📝 Update includes for `docs/en/docs/tutorial/schema-extra-example.md`. PR [#12822](https://github.com/readyapi/readyapi/pull/12822) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update includes in `docs/fr/docs/advanced/additional-responses.md`. PR [#12634](https://github.com/readyapi/readyapi/pull/12634) by [@fegmorte](https://github.com/fegmorte).
+* 📝 Update includes in `docs/fr/docs/advanced/path-operation-advanced-configuration.md`. PR [#12633](https://github.com/readyapi/readyapi/pull/12633) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/fr/docs/advanced/response-directly.md`. PR [#12632](https://github.com/readyapi/readyapi/pull/12632) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes for `docs/en/docs/tutorial/header-params.md`. PR [#12640](https://github.com/readyapi/readyapi/pull/12640) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes in `docs/en/docs/tutorial/cookie-param-models.md`. PR [#12639](https://github.com/readyapi/readyapi/pull/12639) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes for `docs/en/docs/tutorial/extra-models.md`. PR [#12638](https://github.com/readyapi/readyapi/pull/12638) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes for `docs/en/docs/tutorial/cors.md`. PR [#12637](https://github.com/readyapi/readyapi/pull/12637) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Update includes for `docs/en/docs/tutorial/dependencies/sub-dependencies.md`. PR [#12810](https://github.com/readyapi/readyapi/pull/12810) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/en/docs/tutorial/body-nested-models.md`. PR [#12812](https://github.com/readyapi/readyapi/pull/12812) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/tutorial/path-operation-configuration.md`. PR [#12809](https://github.com/readyapi/readyapi/pull/12809) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes in `docs/en/docs/tutorial/request-files.md`. PR [#12818](https://github.com/readyapi/readyapi/pull/12818) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/en/docs/tutorial/query-param-models.md`. PR [#12817](https://github.com/readyapi/readyapi/pull/12817) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/en/docs/tutorial/path-params.md`. PR [#12811](https://github.com/readyapi/readyapi/pull/12811) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes in `docs/en/docs/tutorial/response-model.md`. PR [#12621](https://github.com/readyapi/readyapi/pull/12621) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/advanced/websockets.md`. PR [#12606](https://github.com/readyapi/readyapi/pull/12606) by [@vishnuvskvkl](https://github.com/vishnuvskvkl).
+* 📝 Updates include for `docs/en/docs/tutorial/cookie-params.md`. PR [#12808](https://github.com/readyapi/readyapi/pull/12808) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/en/docs/tutorial/middleware.md`. PR [#12807](https://github.com/readyapi/readyapi/pull/12807) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes in `docs/en/docs/advanced/sub-applications.md`. PR [#12806](https://github.com/readyapi/readyapi/pull/12806) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/advanced/response-headers.md`. PR [#12805](https://github.com/readyapi/readyapi/pull/12805) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/fr/docs/tutorial/first-steps.md`. PR [#12594](https://github.com/readyapi/readyapi/pull/12594) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/advanced/response-cookies.md`. PR [#12804](https://github.com/readyapi/readyapi/pull/12804) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes in `docs/en/docs/advanced/path-operation-advanced-configuration.md`. PR [#12802](https://github.com/readyapi/readyapi/pull/12802) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/en/docs/advanced/response-directly.md`. PR [#12803](https://github.com/readyapi/readyapi/pull/12803) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes in `docs/zh/docs/tutorial/background-tasks.md`. PR [#12798](https://github.com/readyapi/readyapi/pull/12798) by [@zhaohan-dong](https://github.com/zhaohan-dong).
+* 📝 Update includes for `docs/de/docs/tutorial/body-multiple-params.md`. PR [#12699](https://github.com/readyapi/readyapi/pull/12699) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes in `docs/em/docs/tutorial/body-updates.md`. PR [#12799](https://github.com/readyapi/readyapi/pull/12799) by [@AlexWendland](https://github.com/AlexWendland).
+* 📝 Update includes `docs/en/docs/advanced/response-change-status-code.md`. PR [#12801](https://github.com/readyapi/readyapi/pull/12801) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes `docs/en/docs/advanced/openapi-callbacks.md`. PR [#12800](https://github.com/readyapi/readyapi/pull/12800) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝  Update includes in `docs/fr/docs/tutorial/body-multiple-params.md`. PR [#12598](https://github.com/readyapi/readyapi/pull/12598) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes in `docs/en/docs/tutorial/body-multiple-params.md`. PR [#12593](https://github.com/readyapi/readyapi/pull/12593) by [@Tashanam-Shahbaz](https://github.com/Tashanam-Shahbaz).
+* 📝 Update includes in `docs/pt/docs/tutorial/background-tasks.md`. PR [#12736](https://github.com/readyapi/readyapi/pull/12736) by [@bhunao](https://github.com/bhunao).
+* 📝 Update includes for `docs/en/docs/advanced/custom-response.md`. PR [#12797](https://github.com/readyapi/readyapi/pull/12797) by [@handabaldeep](https://github.com/handabaldeep).
+* 📝 Update includes for `docs/pt/docs/python-types.md`. PR [#12671](https://github.com/readyapi/readyapi/pull/12671) by [@ceb10n](https://github.com/ceb10n).
+* 📝 Update includes for `docs/de/docs/python-types.md`. PR [#12660](https://github.com/readyapi/readyapi/pull/12660) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes for `docs/de/docs/advanced/dataclasses.md`. PR [#12658](https://github.com/readyapi/readyapi/pull/12658) by [@alissadb](https://github.com/alissadb).
+* 📝 Update includes in `docs/fr/docs/tutorial/path-params.md`. PR [#12592](https://github.com/readyapi/readyapi/pull/12592) by [@kantandane](https://github.com/kantandane).
+* 📝 Update includes for `docs/de/docs/how-to/configure-swagger-ui.md`. PR [#12690](https://github.com/readyapi/readyapi/pull/12690) by [@alissadb](https://github.com/alissadb).
 * 📝 Update includes in `docs/en/docs/advanced/security/oauth2-scopes.md`. PR [#12572](https://github.com/readyapi/readyapi/pull/12572) by [@krishnamadhavan](https://github.com/krishnamadhavan).
 * 📝 Update includes for `docs/en/docs/how-to/conditional-openapi.md`. PR [#12624](https://github.com/readyapi/readyapi/pull/12624) by [@rabinlamadong](https://github.com/rabinlamadong).
 * 📝 Update includes in `docs/en/docs/tutorial/dependencies/index.md`. PR [#12615](https://github.com/readyapi/readyapi/pull/12615) by [@bharara](https://github.com/bharara).
@@ -32,6 +118,19 @@ hide:
 
 ### Translations
 
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/testing-websockets.md`. PR [#12739](https://github.com/readyapi/readyapi/pull/12739) by [@Limsunoh](https://github.com/Limsunoh).
+* 🌐 Add Traditional Chinese translation for `docs/zh-hant/docs/environment-variables.md`. PR [#12785](https://github.com/readyapi/readyapi/pull/12785) by [@Vincy1230](https://github.com/Vincy1230).
+* 🌐 Add Chinese translation for `docs/zh/docs/environment-variables.md`. PR [#12784](https://github.com/readyapi/readyapi/pull/12784) by [@Vincy1230](https://github.com/Vincy1230).
+* 🌐 Add Korean translation for `ko/docs/advanced/response-headers.md`. PR [#12740](https://github.com/readyapi/readyapi/pull/12740) by [@kwang1215](https://github.com/kwang1215).
+* 🌐 Add Chinese translation for `docs/zh/docs/virtual-environments.md`. PR [#12790](https://github.com/readyapi/readyapi/pull/12790) by [@Vincy1230](https://github.com/Vincy1230).
+* 🌐 Add Korean translation for `/docs/ko/docs/environment-variables.md`. PR [#12526](https://github.com/readyapi/readyapi/pull/12526) by [@Tolerblanc](https://github.com/Tolerblanc).
+* 🌐 Add Korean translation for `docs/ko/docs/history-design-future.md`. PR [#12646](https://github.com/readyapi/readyapi/pull/12646) by [@saeye](https://github.com/saeye).
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/advanced-dependencies.md`. PR [#12675](https://github.com/readyapi/readyapi/pull/12675) by [@kim-sangah](https://github.com/kim-sangah).
+* 🌐 Add Korean translation for `docs/ko/docs/how-to/conditional-openapi.md`. PR [#12731](https://github.com/readyapi/readyapi/pull/12731) by [@sptcnl](https://github.com/sptcnl).
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/using_request_directly.md`. PR [#12738](https://github.com/readyapi/readyapi/pull/12738) by [@kwang1215](https://github.com/kwang1215).
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/testing-events.md`. PR [#12741](https://github.com/readyapi/readyapi/pull/12741) by [@9zimin9](https://github.com/9zimin9).
+* 🌐 Add Korean translation for `docs/ko/docs/security/index.md`. PR [#12743](https://github.com/readyapi/readyapi/pull/12743) by [@kim-sangah](https://github.com/kim-sangah).
+* 🌐 Add Portuguese translation for `docs/pt/docs/advanced/path-operation-advanced-configuration.md`. PR [#12762](https://github.com/readyapi/readyapi/pull/12762) by [@Joao-Pedro-P-Holanda](https://github.com/Joao-Pedro-P-Holanda).
 * 🌐 Add Korean translation for `docs/ko/docs/advanced/wsgi.md`. PR [#12659](https://github.com/readyapi/readyapi/pull/12659) by [@Limsunoh](https://github.com/Limsunoh).
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/websockets.md`. PR [#12703](https://github.com/readyapi/readyapi/pull/12703) by [@devfernandoa](https://github.com/devfernandoa).
 * 🌐 Add Portuguese translation for `docs/pt/docs/tutorial/security/simple-oauth2.md`. PR [#12520](https://github.com/readyapi/readyapi/pull/12520) by [@LidiaDomingos](https://github.com/LidiaDomingos).
@@ -48,8 +147,13 @@ hide:
 
 ### Internal
 
-* ⬆ Bump pillow from 10.4.0 to 11.0.0. PR [#133](https://github.com/readyapi/readyapi/pull/133) by [@dependabot[bot]](https://github.com/apps/dependabot).
-* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.0 to 1.12.2. PR [#144](https://github.com/readyapi/readyapi/pull/144) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#12907](https://github.com/readyapi/readyapi/pull/12907) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
+* 🔨 Update docs preview script to show previous version and English version. PR [#12856](https://github.com/readyapi/readyapi/pull/12856) by [@khulnasoft](https://github.com/khulnasoft).
+* ⬆ Bump khulnasoft/latest-changes from 0.3.1 to 0.3.2. PR [#12794](https://github.com/readyapi/readyapi/pull/12794) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.0 to 1.12.2. PR [#12788](https://github.com/readyapi/readyapi/pull/12788) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.11.0 to 1.12.0. PR [#12781](https://github.com/readyapi/readyapi/pull/12781) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cloudflare/wrangler-action from 3.11 to 3.12. PR [#12777](https://github.com/readyapi/readyapi/pull/12777) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#12766](https://github.com/readyapi/readyapi/pull/12766) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.11.0. PR [#12721](https://github.com/readyapi/readyapi/pull/12721) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Update pre-commit requirement from <4.0.0,>=2.17.0 to >=2.17.0,<5.0.0. PR [#12749](https://github.com/readyapi/readyapi/pull/12749) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cligenius from 0.12.3 to 0.12.5. PR [#12748](https://github.com/readyapi/readyapi/pull/12748) by [@dependabot[bot]](https://github.com/apps/dependabot).
@@ -4150,15 +4254,15 @@ Note: all the previous parameters are still there, so it's still possible to dec
         * [Microservice in Python using ReadyAPI](https://dev.to/paurakhsharma/microservice-in-python-using-readyapi-24cc)  by [Paurakh Sharma Humagain](https://twitter.com/PaurakhSharma).
         * [Build simple API service with Python ReadyAPI — Part 1](https://dev.to/cuongld2/build-simple-api-service-with-python-readyapi-part-1-581o) by [cuongld2](https://dev.to/cuongld2).
         * [ReadyAPI + Zeit.co = 🚀](https://paulsec.github.io/posts/readyapi_plus_zeit_serverless_fu/) by [Paul Sec](https://twitter.com/PaulWebSec).
-        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
+        * [Build a web API from scratch with ReadyAPI - the workshop](https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
         * [Build a Secure Twilio Webhook with Python and ReadyAPI](https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi)  by [Twilio](https://www.twilio.com).
         * [Using ReadyAPI with Django](https://www.stavros.io/posts/readyapi-with-django/)  by [Stavros Korokithakis](https://twitter.com/Stavros).
         * [Introducing Dispatch](https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072) by [Netflix](https://netflixtechblog.com/).
     * **Podcasts**:
-        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to KhulnaSoft Ltd (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
+        * [Build The Next Generation Of Python Web Applications With ReadyAPI - Episode 259 - interview to Sebastían Ramírez (khulnasoft)](https://www.pythonpodcast.com/readyapi-web-application-framework-episode-259/) by [Podcast.`__init__`](https://www.pythonpodcast.com/).
     * **Talks**:
-        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
-        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [KhulnaSoft Ltd (khulnasoft)](https://twitter.com/khulnasoft).
+        * [PyConBY 2020: Serve ML models easily with ReadyAPI](https://www.youtube.com/watch?v=z9K5pwb0rt8) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
+        * [[VIRTUAL] Py.Amsterdam's flying Software Circus: Intro to ReadyAPI](https://www.youtube.com/watch?v=PnpTY1f4k2U) by [Sebastián Ramírez (khulnasoft)](https://twitter.com/khulnasoft).
     * PR [#1467](https://github.com/khulnasoft/readyapi/pull/1467).
 * Add translation to Chinese for [Python Types Intro - Python 类型提示简介](https://readyapi.khulnasoft.com/zh/python-types/). PR [#1197](https://github.com/khulnasoft/readyapi/pull/1197) by [@waynerv](https://github.com/waynerv).
 

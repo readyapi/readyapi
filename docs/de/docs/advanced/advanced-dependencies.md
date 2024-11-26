@@ -52,7 +52,7 @@ checker(q="somequery")
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[22] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Das alles mag gekünstelt wirken. Und es ist möglicherweise noch nicht ganz klar, welchen Nutzen das hat.
 

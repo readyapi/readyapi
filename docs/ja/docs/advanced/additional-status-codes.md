@@ -16,7 +16,7 @@
 
 {* ../../docs_src/additional_status_codes/tutorial001.py hl[4,25] *}
 
-/// warning | "注意"
+/// warning | 注意
 
 上記の例のように `Response` を明示的に返す場合、それは直接返されます。
 
@@ -26,7 +26,7 @@
 
 ///
 
-/// note | "技術詳細"
+/// note | 技術詳細
 
 `from starlette.responses import JSONResponse` を利用することもできます。
 

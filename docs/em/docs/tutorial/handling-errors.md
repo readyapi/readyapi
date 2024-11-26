@@ -101,7 +101,7 @@
 {"message": "Oops! yolo did something. There goes a rainbow..."}
 ```
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.requests import Request` &amp; `from starlette.responses import JSONResponse`.
 
@@ -180,7 +180,7 @@ path -> item_id
 
 {* ../../docs_src/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.responses import PlainTextResponse`.
 

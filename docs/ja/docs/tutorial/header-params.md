@@ -16,7 +16,7 @@
 
 {* ../../docs_src/header_params/tutorial001.py hl[9] *}
 
-/// note | "技術詳細"
+/// note | 技術詳細
 
 `Header`は`Path`や`Query`、`Cookie`の「姉妹」クラスです。また、同じ共通の`Param`クラスを継承しています。
 
@@ -24,7 +24,7 @@
 
 ///
 
-/// info | "情報"
+/// info | 情報
 
 ヘッダーを宣言するには、`Header`を使う必要があります。なぜなら、そうしないと、パラメータがクエリのパラメータとして解釈されてしまうからです。
 
@@ -48,7 +48,7 @@
 
 {* ../../docs_src/header_params/tutorial002.py hl[9] *}
 
-/// warning | "注意"
+/// warning | 注意
 
 `convert_underscores`を`False`に設定する前に、HTTPプロキシやサーバの中にはアンダースコアを含むヘッダーの使用を許可していないものがあることに注意してください。
 

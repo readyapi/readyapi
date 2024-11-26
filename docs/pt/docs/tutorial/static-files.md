@@ -9,7 +9,7 @@ Você pode servir arquivos estáticos automaticamente de um diretório usando `S
 
 {* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
 
-/// note | "Detalhes técnicos"
+/// note | Detalhes técnicos
 
 Você também pode usar `from starlette.staticfiles import StaticFiles`.
 

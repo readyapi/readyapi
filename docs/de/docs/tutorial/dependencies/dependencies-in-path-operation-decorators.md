@@ -18,7 +18,7 @@ Es sollte eine `list`e von `Depends()` sein:
 
 Diese Abhängigkeiten werden auf die gleiche Weise wie normale Abhängigkeiten ausgeführt/aufgelöst. Aber ihr Wert (falls sie einen zurückgeben) wird nicht an Ihre *Pfadoperation-Funktion* übergeben.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Einige Editoren prüfen, ob Funktionsparameter nicht verwendet werden, und zeigen das als Fehler an.
 

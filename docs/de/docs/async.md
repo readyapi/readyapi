@@ -401,7 +401,7 @@ All das ist es, was ReadyAPI (via Starlette) befeuert und es eine so beeindrucke
 
 ## Sehr technische Details
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Das folgende können Sie wahrscheinlich überspringen.
 

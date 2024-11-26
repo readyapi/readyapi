@@ -1,6 +1,6 @@
 # Zusätzliche Responses in OpenAPI
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Dies ist ein eher fortgeschrittenes Thema.
 
@@ -28,7 +28,7 @@ Um beispielsweise eine weitere Response mit dem Statuscode `404` und einem Pydan
 
 {* ../../docs_src/additional_responses/tutorial001.py hl[18,22] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass Sie die `JSONResponse` direkt zurückgeben müssen.
 
@@ -177,7 +177,7 @@ Sie können beispielsweise einen zusätzlichen Medientyp `image/png` hinzufügen
 
 {* ../../docs_src/additional_responses/tutorial002.py hl[19:24,28] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass Sie das Bild direkt mit einer `FileResponse` zurückgeben müssen.
 

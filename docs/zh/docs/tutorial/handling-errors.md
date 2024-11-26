@@ -61,7 +61,7 @@
 
 ```
 
-/// tip | "提示"
+/// tip | 提示
 
 触发 `HTTPException` 时，可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。
 
@@ -104,7 +104,7 @@
 
 ```
 
-/// note | "技术细节"
+/// note | 技术细节
 
 `from starlette.requests import Request` 和 `from starlette.responses import JSONResponse` 也可以用于导入 `Request` 和 `JSONResponse`。
 
@@ -161,7 +161,7 @@ path -> item_id
 
 ### `RequestValidationError` vs `ValidationError`
 
-/// warning | "警告"
+/// warning | 警告
 
 如果您觉得现在还用不到以下技术细节，可以先跳过下面的内容。
 
@@ -185,7 +185,7 @@ path -> item_id
 
 {* ../../docs_src/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
 
-/// note | "技术细节"
+/// note | 技术细节
 
 还可以使用 `from starlette.responses import PlainTextResponse`。
 

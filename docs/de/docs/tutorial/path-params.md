@@ -149,7 +149,7 @@ Erstellen Sie dann Klassen-Attribute mit festgelegten Werten, welches die erlaub
 
 ///
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Falls Sie sich fragen, was „AlexNet“, „ResNet“ und „LeNet“ ist, das sind Namen von <abbr title="Genau genommen, Deep-Learning-Modellarchitekturen">Modellen</abbr> für maschinelles Lernen.
 
@@ -183,7 +183,7 @@ Den tatsächlichen Wert (in diesem Fall ein `str`) erhalten Sie via `model_name.
 
 {* ../../docs_src/path_params/tutorial005.py hl[20] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Sie können den Wert `"lenet"` außerdem mittels `ModelName.lenet.value` abrufen.
 
@@ -236,7 +236,7 @@ Sie verwenden das also wie folgt:
 
 {* ../../docs_src/path_params/tutorial004.py hl[6] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Der Parameter könnte einen führenden Schrägstrich (`/`) haben, wie etwa in `/home/johndoe/myfile.txt`.
 

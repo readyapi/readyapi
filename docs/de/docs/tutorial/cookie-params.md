@@ -16,7 +16,7 @@ Der erste Wert ist der Typ. Sie können `Cookie` die gehabten Extra Validierungs
 
 {* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[9] *}
 
-/// note | "Technische Details"
+/// note | Technische Details
 
 `Cookie` ist eine Schwesterklasse von `Path` und `Query`. Sie erbt von derselben gemeinsamen `Param`-Elternklasse.
 

@@ -22,7 +22,7 @@ $ uvicorn main:app --reload
 
 </div>
 
-/// note | "Технические детали"
+/// note | Технические детали
 
 Команда `uvicorn main:app` обращается к:
 
@@ -135,7 +135,7 @@ OpenAPI описывает схему API. Эта схема содержит о
 
 `ReadyAPI` это класс в Python, который предоставляет всю функциональность для API.
 
-/// note | "Технические детали"
+/// note | Технические детали
 
 `ReadyAPI` это класс, который наследуется непосредственно от `Starlette`.
 
@@ -197,7 +197,7 @@ https://example.com/items/foo
 /items/foo
 ```
 
-/// info | "Дополнительная иформация"
+/// info | Дополнительная иформация
 
 Термин "path" также часто называется "endpoint" или "route".
 
@@ -249,7 +249,7 @@ https://example.com/items/foo
 * путь `/`
 * использующих <abbr title="HTTP GET метод"><code>get</code> операцию</abbr>
 
-/// info | "`@decorator` Дополнительная информация"
+/// info | `@decorator` Дополнительная информация
 
 Синтаксис `@something` в Python называется "декоратор".
 
@@ -276,7 +276,7 @@ https://example.com/items/foo
 * `@app.patch()`
 * `@app.trace()`
 
-/// tip | "Подсказка"
+/// tip | Подсказка
 
 Вы можете использовать каждую операцию (HTTP-метод) по своему усмотрению.
 
@@ -310,7 +310,7 @@ https://example.com/items/foo
 
 {* ../../docs_src/first_steps/tutorial003.py hl[7] *}
 
-/// note | "Технические детали"
+/// note | Технические детали
 
 Если не знаете в чём разница, посмотрите [Конкурентность: *"Нет времени?"*](../async.md#_1){.internal-link target=_blank}.
 

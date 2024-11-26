@@ -93,13 +93,13 @@ contents = await myfile.read()
 contents = myfile.file.read()
 ```
 
-/// note | "`async` 📡 ℹ"
+/// note | `async` 📡 ℹ
 
 🕐❔ 👆 ⚙️ `async` 👩‍🔬, **ReadyAPI** 🏃 📁 👩‍🔬 🧵 &amp; ⌛ 👫.
 
 ///
 
-/// note | "💃 📡 ℹ"
+/// note | 💃 📡 ℹ
 
 **ReadyAPI**'Ⓜ `UploadFile` 😖 🔗 ⚪️➡️ **💃**'Ⓜ `UploadFile`, ✋️ 🚮 💪 🍕 ⚒ ⚫️ 🔗 ⏮️ **Pydantic** &amp; 🎏 🍕 ReadyAPI.
 
@@ -111,7 +111,7 @@ contents = myfile.file.read()
 
 **ReadyAPI** 🔜 ⚒ 💭 ✍ 👈 📊 ⚪️➡️ ▶️️ 🥉 ↩️ 🎻.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 📊 ⚪️➡️ 📨 🛎 🗜 ⚙️ "📻 🆎" `application/x-www-form-urlencoded` 🕐❔ ⚫️ 🚫 🔌 📁.
 
@@ -153,7 +153,7 @@ contents = myfile.file.read()
 
 👆 🔜 📨, 📣, `list` `bytes` ⚖️ `UploadFile`Ⓜ.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.responses import HTMLResponse`.
 

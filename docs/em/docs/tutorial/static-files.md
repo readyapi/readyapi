@@ -9,7 +9,7 @@
 
 {* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.staticfiles import StaticFiles`.
 

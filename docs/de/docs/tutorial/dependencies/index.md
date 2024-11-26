@@ -80,7 +80,7 @@ Sie **rufen diese nicht direkt auf** (fügen Sie am Ende keine Klammern hinzu), 
 
 Und diese Funktion akzeptiert Parameter auf die gleiche Weise wie *Pfadoperation-Funktionen*.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Im nächsten Kapitel erfahren Sie, welche anderen „Dinge“, außer Funktionen, Sie als Abhängigkeiten verwenden können.
 
@@ -127,7 +127,7 @@ Da wir jedoch `Annotated` verwenden, können wir diesen `Annotated`-Wert in eine
 
 {* ../../docs_src/dependencies/tutorial001_02_an_py310.py hl[12,16,21] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Das ist schlicht Standard-Python, es wird als „Typalias“ bezeichnet und ist eigentlich nicht **ReadyAPI**-spezifisch.
 
@@ -149,7 +149,7 @@ Und Sie können Abhängigkeiten mit `async def` innerhalb normaler `def`-*Pfadop
 
 Es spielt keine Rolle. **ReadyAPI** weiß, was zu tun ist.
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Wenn Ihnen das nichts sagt, lesen Sie den [Async: *„In Eile?“*](../../async.md#in-eile){.internal-link target=_blank}-Abschnitt über `async` und `await` in der Dokumentation.
 

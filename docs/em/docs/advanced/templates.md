@@ -41,7 +41,7 @@ $ pip install jinja2
 
 ///
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.templating import Jinja2Templates`.
 

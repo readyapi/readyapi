@@ -12,7 +12,7 @@ Você pode declarar um `example` para um modelo Pydantic usando `Config` e `sche
 
 Essas informações extras serão adicionadas como se encontram no **JSON Schema** de resposta desse modelo e serão usadas na documentação da API.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Você pode usar a mesma técnica para estender o JSON Schema e adicionar suas próprias informações extras de forma personalizada.
 
@@ -28,7 +28,7 @@ Você pode usar isso para adicionar um `example` para cada campo:
 
 {* ../../docs_src/schema_extra_example/tutorial002.py hl[4,10:13] *}
 
-/// warning | "Atenção"
+/// warning | Atenção
 
 Lembre-se de que esses argumentos extras passados ​​não adicionarão nenhuma validação, apenas informações extras, para fins de documentação.
 
@@ -83,7 +83,7 @@ Com `examples` adicionado a `Body()`, os `/docs` vão ficar assim:
 
 ## Detalhes técnicos
 
-/// warning | "Atenção"
+/// warning | Atenção
 
 Esses são detalhes muito técnicos sobre os padrões **JSON Schema** e **OpenAPI**.
 

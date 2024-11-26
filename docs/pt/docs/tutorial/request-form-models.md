@@ -2,7 +2,7 @@
 
 Você pode utilizar **Modelos Pydantic** para declarar **campos de formulários** no ReadyAPI.
 
-/// info | "Informação"
+/// info | Informação
 
 Para utilizar formulários, instale primeiramente o <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a>.
 
@@ -14,7 +14,7 @@ $ pip install python-multipart
 
 ///
 
-/// note | "Nota"
+/// note | Nota
 
 Isto é suportado desde a versão `0.113.0` do ReadyAPI. 🤓
 
@@ -40,7 +40,7 @@ Você pode verificar na UI de documentação em `/docs`:
 
 Em alguns casos de uso especiais (provavelmente não muito comum), você pode desejar **restringir** os campos do formulário para aceitar apenas os declarados no modelo Pydantic. E **proibir** qualquer campo **extra**.
 
-/// note | "Nota"
+/// note | Nota
 
 Isso é suportado deste a versão `0.114.0` do ReadyAPI. 🤓
 

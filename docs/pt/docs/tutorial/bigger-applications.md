@@ -4,7 +4,7 @@ Se você está construindo uma aplicação ou uma API web, é raro que você pos
 
 **ReadyAPI** oferece uma ferramenta conveniente para estruturar sua aplicação, mantendo toda a flexibilidade.
 
-/// info | "Informação"
+/// info | Informação
 
 Se você vem do Flask, isso seria o equivalente aos Blueprints do Flask.
 
@@ -29,7 +29,7 @@ Digamos que você tenha uma estrutura de arquivos como esta:
 │       └── admin.py
 ```
 
-/// tip | "Dica"
+/// tip | Dica
 
 Existem vários arquivos `__init__.py` presentes em cada diretório ou subdiretório.
 
@@ -105,7 +105,7 @@ Todas as mesmas opções são suportadas.
 
 Todos os mesmos `parameters`, `responses`, `dependencies`, `tags`, etc.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Neste exemplo, a variável é chamada de `router`, mas você pode nomeá-la como quiser.
 
@@ -139,7 +139,7 @@ Agora usaremos uma dependência simples para ler um cabeçalho `X-Token` persona
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Prefira usar a versão `Annotated` se possível.
 
@@ -151,7 +151,7 @@ Prefira usar a versão `Annotated` se possível.
 
 ////
 
-/// tip | "Dica"
+/// tip | Dica
 
 Estamos usando um cabeçalho inventado para simplificar este exemplo.
 
@@ -201,7 +201,7 @@ Também podemos adicionar uma lista de `tags` e `responses` extras que serão ap
 
 E podemos adicionar uma lista de `dependencies` que serão adicionadas a todas as *operações de rota* no roteador e serão executadas/resolvidas para cada solicitação feita a elas.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Observe que, assim como [dependências em *decoradores de operação de rota*](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, nenhum valor será passado para sua *função de operação de rota*.
 
@@ -222,7 +222,7 @@ O resultado final é que os caminhos dos itens agora são:
     * As dependências do roteador são executadas primeiro, depois as [`dependencies` no decorador](dependencies/dependencies-in-path-operation-decorators.md){.internal-link target=_blank} e, em seguida, as dependências de parâmetros normais.
     * Você também pode adicionar [dependências de `Segurança` com `scopes`](../advanced/security/oauth2-scopes.md){.internal-link target=_blank}.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Ter `dependências` no `APIRouter` pode ser usado, por exemplo, para exigir autenticação para um grupo inteiro de *operações de rota*. Mesmo que as dependências não sejam adicionadas individualmente a cada uma delas.
 
@@ -248,7 +248,7 @@ Então usamos uma importação relativa com `..` para as dependências:
 
 #### Como funcionam as importações relativas
 
-/// tip | "Dica"
+/// tip | Dica
 
 Se você sabe perfeitamente como funcionam as importações, continue para a próxima seção abaixo.
 
@@ -319,7 +319,7 @@ Mas ainda podemos adicionar _mais_ `tags` que serão aplicadas a uma *operação
 {!../../docs_src/bigger_applications/app/routers/items.py!}
 ```
 
-/// tip | "Dica"
+/// tip | Dica
 
 Esta última operação de caminho terá a combinação de tags: `["items", "custom"]`.
 
@@ -381,7 +381,7 @@ Também poderíamos importá-los como:
 from app.routers import items, users
 ```
 
-/// info | "Informação"
+/// info | Informação
 
 A primeira versão é uma "importação relativa":
 
@@ -428,7 +428,7 @@ Agora, vamos incluir os `roteadores` dos submódulos `usuários` e `itens`:
 {!../../docs_src/bigger_applications/app/main.py!}
 ```
 
-/// info | "Informação"
+/// info | Informação
 
 `users.router` contém o `APIRouter` dentro do arquivo `app/routers/users.py`.
 
@@ -440,7 +440,7 @@ Com `app.include_router()` podemos adicionar cada `APIRouter` ao aplicativo prin
 
 Ele incluirá todas as rotas daquele roteador como parte dele.
 
-/// note | "Detalhe Técnico"
+/// note | Detalhe Técnico
 
 Na verdade, ele criará internamente uma *operação de rota* para cada *operação de rota* que foi declarada no `APIRouter`.
 
@@ -503,7 +503,7 @@ Aqui fazemos isso... só para mostrar que podemos 🤷:
 
 e funcionará corretamente, junto com todas as outras *operações de rota* adicionadas com `app.include_router()`.
 
-/// info | "Detalhes Técnicos"
+/// info | Detalhes Técnicos
 
 **Observação**: este é um detalhe muito técnico que você provavelmente pode **simplesmente pular**.
 

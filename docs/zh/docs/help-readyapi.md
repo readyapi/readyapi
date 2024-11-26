@@ -40,7 +40,7 @@
 
 ## 联系作者
 
-您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（KhulnaSoft Ltd / `khulnasoft`</a>）。
+您可以联系项目作者，就是<a href="https://khulnasoft.com" class="external-link" target="_blank">我（Sebastián Ramírez / `khulnasoft`</a>）。
 
 您可以：
 
@@ -108,7 +108,7 @@
 
 快加入 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord 聊天服务器</a> 👥 和 ReadyAPI 社区里的小伙伴一起哈皮吧。
 
-/// tip | "提示"
+/// tip | 提示
 
 如有问题，请在 <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">GitHub Issues</a> 里提问，在这里更容易得到 [ReadyAPI 专家](readyapi-people.md#_3){.internal-link target=_blank}的帮助。
 

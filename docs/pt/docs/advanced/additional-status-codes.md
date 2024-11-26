@@ -16,7 +16,7 @@ Para conseguir isso, importe `JSONResponse` e retorne o seu conteúdo diretament
 
 {* ../../docs_src/additional_status_codes/tutorial001_an_py310.py hl[4,25] *}
 
-/// warning | "Aviso"
+/// warning | Aviso
 
 Quando você retorna um `Response` diretamente, como no exemplo acima, ele será retornado diretamente.
 
@@ -26,7 +26,7 @@ Garanta que ele tenha toda informação que você deseja, e que os valores sejam
 
 ///
 
-/// note | "Detalhes técnicos"
+/// note | Detalhes técnicos
 
 Você também pode utilizar `from starlette.responses import JSONResponse`.
 

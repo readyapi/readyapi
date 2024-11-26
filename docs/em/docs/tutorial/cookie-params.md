@@ -16,7 +16,7 @@
 
 {* ../../docs_src/cookie_params/tutorial001.py hl[9] *}
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 `Cookie` "👭" 🎓 `Path` &amp; `Query`. ⚫️ 😖 ⚪️➡️ 🎏 ⚠ `Param` 🎓.
 

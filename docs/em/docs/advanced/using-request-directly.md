@@ -47,7 +47,7 @@
 
 👆 💪 ✍ 🌅 ℹ 🔃 <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request` 🎚 🛂 💃 🧾 🕸</a>.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.requests import Request`.
 

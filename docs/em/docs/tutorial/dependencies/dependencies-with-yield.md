@@ -10,7 +10,7 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 
 ///
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 🙆 🔢 👈 ☑ ⚙️ ⏮️:
 
@@ -85,7 +85,7 @@ ReadyAPI 🐕‍🦺 🔗 👈 <abbr title='sometimes also called "exit", "clean
 
 **ReadyAPI** 🔜 ⚒ 💭 🌐 🏃 ☑ ✔.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👉 👷 👏 🐍 <a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">🔑 👨‍💼</a>.
 

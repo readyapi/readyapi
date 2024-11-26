@@ -113,7 +113,7 @@
 
 ✔️ 🤯 👈 👆 💪 ⚙️ `Response` 📨 🕳 🙆, ⚖️ ✍ 🛃 🎧-🎓.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.responses import HTMLResponse`.
 

@@ -48,9 +48,7 @@ In einigen Fällen müssen Sie möglicherweise immer noch Pydantics Version von 
 
 In diesem Fall können Sie einfach die Standard-`dataclasses` durch `pydantic.dataclasses` ersetzen, was einen direkten Ersatz darstellt:
 
-```{ .python .annotate hl_lines="1  5  8-11  14-17  23-25  28" }
-{!../../docs_src/dataclasses/tutorial003.py!}
-```
+{* ../../docs_src/dataclasses/tutorial003.py hl[1,5,8:11,14:17,23:25,28] *}
 
 1. Wir importieren `field` weiterhin von Standard-`dataclasses`.
 

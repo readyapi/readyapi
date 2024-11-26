@@ -2,7 +2,7 @@
 
 Existem vários parâmetros que você pode passar para o seu *decorador de operação de rota* para configurá-lo.
 
-/// warning | "Aviso"
+/// warning | Aviso
 
 Observe que esses parâmetros são passados diretamente para o *decorador de operação de rota*, não para a sua *função de operação de rota*.
 
@@ -20,7 +20,7 @@ Mas se você não se lembrar o que cada código numérico significa, pode usar a
 
 Esse código de status será usado na resposta e será adicionado ao esquema OpenAPI.
 
-/// note | "Detalhes Técnicos"
+/// note | Detalhes Técnicos
 
 Você também poderia usar `from starlette import status`.
 
@@ -73,7 +73,7 @@ Você pode especificar a descrição da resposta com o parâmetro `response_desc
 
 {* ../../docs_src/path_operation_configuration/tutorial005.py hl[21] *}
 
-/// info | "Informação"
+/// info | Informação
 
 Note que `response_description` se refere especificamente à resposta, a `description` se refere à *operação de rota* em geral.
 

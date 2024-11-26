@@ -111,7 +111,7 @@ commons: Annotated[CommonQueryParams, Depends(CommonQueryParams)]
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -147,7 +147,7 @@ commons: Annotated[CommonQueryParams, ...
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -173,7 +173,7 @@ commons: Annotated[Any, Depends(CommonQueryParams)]
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -207,7 +207,7 @@ commons: Annotated[CommonQueryParams, Depends(CommonQueryParams)]
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -235,7 +235,7 @@ commons: Annotated[CommonQueryParams, Depends(CommonQueryParams)]
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -259,7 +259,7 @@ commons: Annotated[CommonQueryParams, Depends()]
 
 //// tab | Python 3.8 non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -279,7 +279,7 @@ O mesmo exemplo ficaria então dessa forma:
 
 ...e o **ReadyAPI** saberá o que fazer.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Se isso parece mais confuso do que útil, não utilize, você não *precisa* disso.
 

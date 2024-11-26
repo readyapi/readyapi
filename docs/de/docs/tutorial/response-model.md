@@ -39,7 +39,7 @@ Sie können `response_model` in jeder möglichen *Pfadoperation* verwenden:
 
 {* ../../docs_src/response_model/tutorial001_py310.py hl[17,22,24:27] *}
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Beachten Sie, dass `response_model` ein Parameter der „Dekorator“-Methode ist (`get`, `post`, usw.). Nicht der *Pfadoperation-Funktion*, so wie die anderen Parameter.
 
@@ -49,7 +49,7 @@ Beachten Sie, dass `response_model` ein Parameter der „Dekorator“-Methode is
 
 ReadyAPI wird dieses `response_model` nehmen, um die Daten zu dokumentieren, validieren, usw. und auch, um **die Ausgabedaten** entsprechend der Typdeklaration **zu konvertieren und filtern**.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Wenn Sie in Ihrem Editor strikte Typchecks haben, mypy, usw., können Sie den Funktions-Rückgabetyp als <abbr title='„Irgend etwas“'>`Any`</abbr> deklarieren.
 
@@ -90,7 +90,7 @@ Hier ist das möglicherweise kein Problem, da es derselbe Benutzer ist, der das 
 
 Aber wenn wir dasselbe Modell für eine andere *Pfadoperation* verwenden, könnten wir das Passwort dieses Benutzers zu jedem Client schicken.
 
-/// danger | "Gefahr"
+/// danger | Gefahr
 
 Speichern Sie niemals das Klartext-Passwort eines Benutzers, oder versenden Sie es in einer Response wie dieser, wenn Sie sich nicht der resultierenden Gefahren bewusst sind und nicht wissen, was Sie tun.
 
@@ -299,7 +299,7 @@ dann ist ReadyAPI klug genug (tatsächlich ist Pydantic klug genug) zu erkennen,
 
 Diese Felder werden also in der JSON-Response enthalten sein.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Beachten Sie, dass Defaultwerte alles Mögliche sein können, nicht nur `None`.
 
@@ -315,7 +315,7 @@ Diese nehmen ein `set` von `str`s entgegen, welches Namen von Attributen sind, d
 
 Das kann als schnelle Abkürzung verwendet werden, wenn Sie nur ein Pydantic-Modell haben und ein paar Daten von der Ausgabe ausschließen wollen.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Es wird dennoch empfohlen, dass Sie die Ideen von oben verwenden, also mehrere Klassen statt dieser Parameter.
 
@@ -327,7 +327,7 @@ Das trifft auch auf `response_model_by_alias` zu, welches ähnlich funktioniert.
 
 {* ../../docs_src/response_model/tutorial005_py310.py hl[29,35] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Die Syntax `{"name", "description"}` erzeugt ein `set` mit diesen zwei Werten.
 

@@ -22,6 +22,7 @@ Here's a general idea of how the models could look like with their password fiel
 
 {* ../../docs_src/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
 
+
 /// info
 
 In Pydantic v1 the method was called `.dict()`, it was deprecated (but still supported) in Pydantic v2, and renamed to `.model_dump()`.
@@ -180,6 +181,7 @@ When defining a <a href="https://docs.pydantic.dev/latest/concepts/types/#unions
 
 {* ../../docs_src/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
 
+
 ### `Union` in Python 3.10
 
 In this example we pass `Union[PlaneItem, CarItem]` as the value of the argument `response_model`.
@@ -202,6 +204,7 @@ For that, use the standard Python `typing.List` (or just `list` in Python 3.9 an
 
 {* ../../docs_src/extra_models/tutorial004_py39.py hl[18] *}
 
+
 ## Response with arbitrary `dict`
 
 You can also declare a response using a plain arbitrary `dict`, declaring just the type of the keys and values, without using a Pydantic model.
@@ -211,6 +214,7 @@ This is useful if you don't know the valid field/attribute names (that would be 
 In this case, you can use `typing.Dict` (or just `dict` in Python 3.9 and above):
 
 {* ../../docs_src/extra_models/tutorial005_py39.py hl[6] *}
+
 
 ## Recap
 

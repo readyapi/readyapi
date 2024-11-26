@@ -135,7 +135,7 @@ Bạn cũng có thể sử dụng nó để sinh code tự động, với các c
 
 `ReadyAPI` là một Python class cung cấp tất cả chức năng cho API của bạn.
 
-/// note | "Chi tiết kĩ thuật"
+/// note | Chi tiết kĩ thuật
 
 `ReadyAPI` là một class kế thừa trực tiếp `Starlette`.
 

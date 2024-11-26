@@ -16,7 +16,7 @@ Por exemplo para declarar um valor de metadado `title` para o parâmetro de rota
 
 {* ../../docs_src/path_params_numeric_validations/tutorial001_py310.py hl[8] *}
 
-/// note | "Nota"
+/// note | Nota
 
 Um parâmetro de rota é sempre obrigatório, como se fizesse parte da rota.
 
@@ -94,7 +94,7 @@ E você também pode declarar validações numéricas:
 * `lt`: menor que (`l`ess `t`han)
 * `le`: menor que ou igual (`l`ess than or `e`qual)
 
-/// info | "Informação"
+/// info | Informação
 
 `Query`, `Path` e outras classes que você verá a frente são subclasses de uma classe comum `Param`.
 
@@ -102,7 +102,7 @@ Todas elas compartilham os mesmos parâmetros para validação adicional e metad
 
 ///
 
-/// note | "Detalhes Técnicos"
+/// note | Detalhes Técnicos
 
 Quando você importa `Query`, `Path` e outras de `readyapi`, elas são na verdade funções.
 

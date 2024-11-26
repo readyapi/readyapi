@@ -76,7 +76,7 @@
 
 🌖 ℹ 🔃 <abbr title="Cross-Origin Resource Sharing">⚜</abbr>, ✅ <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" class="external-link" target="_blank">🦎 ⚜ 🧾</a>.
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 👆 💪 ⚙️ `from starlette.middleware.cors import CORSMiddleware`.
 

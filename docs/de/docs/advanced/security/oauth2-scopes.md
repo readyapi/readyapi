@@ -10,7 +10,7 @@ Jedes Mal, wenn Sie sich mit Facebook, Google, GitHub, Microsoft oder Twitter an
 
 In diesem Abschnitt erfahren Sie, wie Sie Authentifizierung und Autorisierung mit demselben OAuth2, mit Scopes in Ihrer **ReadyAPI**-Anwendung verwalten.
 
-/// warning | "Achtung"
+/// warning | Achtung
 
 Dies ist ein mehr oder weniger fortgeschrittener Abschnitt. Wenn Sie gerade erst anfangen, können Sie ihn überspringen.
 
@@ -90,7 +90,7 @@ Wir verwenden immer noch dasselbe `OAuth2PasswordRequestForm`. Es enthält eine 
 
 Und wir geben die Scopes als Teil des JWT-Tokens zurück.
 
-/// danger | "Gefahr"
+/// danger | Gefahr
 
 Der Einfachheit halber fügen wir hier die empfangenen Scopes direkt zum Token hinzu.
 
@@ -116,7 +116,7 @@ Und die Abhängigkeitsfunktion `get_current_active_user` kann auch Unterabhängi
 
 In diesem Fall erfordert sie den Scope `me` (sie könnte mehr als einen Scope erfordern).
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Sie müssen nicht unbedingt an verschiedenen Stellen verschiedene Scopes hinzufügen.
 
@@ -126,7 +126,7 @@ Wir tun dies hier, um zu demonstrieren, wie **ReadyAPI** auf verschiedenen Ebene
 
 {* ../../docs_src/security/tutorial005_an_py310.py hl[4,139,170] *}
 
-/// info | "Technische Details"
+/// info | Technische Details
 
 `Security` ist tatsächlich eine Unterklasse von `Depends` und hat nur noch einen zusätzlichen Parameter, den wir später kennenlernen werden.
 
@@ -215,7 +215,7 @@ So sieht die Hierarchie der Abhängigkeiten und Scopes aus:
                             * `security_scopes.scopes` enthält `["me"]` für die *Pfadoperation* `read_users_me`, da das in der Abhängigkeit `get_current_active_user` deklariert ist.
                             * `security_scopes.scopes` wird `[]` (nichts) für die *Pfadoperation* `read_system_status` enthalten, da diese keine `Security` mit `scopes` deklariert hat, und deren Abhängigkeit `get_current_user` ebenfalls keinerlei `scopes` deklariert.
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Das Wichtige und „Magische“ hier ist, dass `get_current_user` für jede *Pfadoperation* eine andere Liste von `scopes` hat, die überprüft werden.
 
@@ -259,7 +259,7 @@ Am häufigsten ist der „Implicit“-Flow.
 
 Am sichersten ist der „Code“-Flow, die Implementierung ist jedoch komplexer, da mehr Schritte erforderlich sind. Da er komplexer ist, schlagen viele Anbieter letztendlich den „Implicit“-Flow vor.
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Es ist üblich, dass jeder Authentifizierungsanbieter seine Flows anders benennt, um sie zu einem Teil seiner Marke zu machen.
 

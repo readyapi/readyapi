@@ -393,7 +393,7 @@ Tout ceci est donc ce qui donne sa force à **ReadyAPI** (à travers Starlette) 
 
 ## Détails très techniques
 
-/// warning | "Attention !"
+/// warning | Attention !
 
 Vous pouvez probablement ignorer cela.
 

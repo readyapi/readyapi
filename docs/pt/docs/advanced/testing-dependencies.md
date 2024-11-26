@@ -30,7 +30,7 @@ E então o **ReadyAPI** chamará a sobreposição no lugar da dependência origi
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
-/// tip | "Dica"
+/// tip | Dica
 
 Você pode definir uma sobreposição de dependência para uma dependência que é utilizada em qualquer lugar da sua aplicação **ReadyAPI**.
 
@@ -46,7 +46,7 @@ E então você pode redefinir as suas sobreposições (removê-las) definindo o 
 app.dependency_overrides = {}
 ```
 
-/// tip | "Dica"
+/// tip | Dica
 
 Se você quer sobrepor uma dependência apenas para alguns testes, você pode definir a sobreposição no início do testes (dentro da função de teste) e reiniciá-la ao final (no final da função de teste).
 

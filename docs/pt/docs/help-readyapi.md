@@ -40,7 +40,7 @@ Fazendo isto, serão enviadas notificações (em seu email) sempre que tiver nov
 
 ## Conect-se com o autor
 
-Você pode se conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">comigo (KhulnaSoft Ltd / `khulnasoft`)</a>, o autor.
+Você pode se conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">comigo (Sebastián Ramírez / `khulnasoft`)</a>, o autor.
 
 Você pode:
 
@@ -109,7 +109,7 @@ Assim podendo tentar ajudar a resolver essas questões.
 Entre no 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">server de conversa do Discord</a> 👥 e conheça novas pessoas da comunidade
 do ReadyAPI.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Para perguntas, pergunte nas <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">questões do GitHub</a>, lá tem um chance maior de você ser ajudado sobre o ReadyAPI [ReadyAPI Experts](readyapi-people.md#especialistas){.internal-link target=_blank}.
 

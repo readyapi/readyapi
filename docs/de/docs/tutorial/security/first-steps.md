@@ -54,7 +54,7 @@ Sie werden etwa Folgendes sehen:
 
 <img src="/img/tutorial/security/image01.png">
 
-/// check | "Authorize-Button!"
+/// check | Authorize-Button!
 
 Sie haben bereits einen glänzenden, neuen „Authorize“-Button.
 
@@ -66,7 +66,7 @@ Und wenn Sie darauf klicken, erhalten Sie ein kleines Anmeldeformular zur Eingab
 
 <img src="/img/tutorial/security/image02.png">
 
-/// note | "Hinweis"
+/// note | Hinweis
 
 Es spielt keine Rolle, was Sie in das Formular eingeben, es wird noch nicht funktionieren. Wir kommen dahin.
 
@@ -128,7 +128,7 @@ Wenn wir eine Instanz der Klasse `OAuth2PasswordBearer` erstellen, übergeben wi
 
 {* ../../docs_src/security/tutorial001_an_py39.py hl[8] *}
 
-/// tip | "Tipp"
+/// tip | Tipp
 
 Hier bezieht sich `tokenUrl="token"` auf eine relative URL `token`, die wir noch nicht erstellt haben. Da es sich um eine relative URL handelt, entspricht sie `./token`.
 
@@ -170,7 +170,7 @@ Diese Abhängigkeit stellt einen `str` bereit, der dem Parameter `token` der *Pf
 
 **ReadyAPI** weiß, dass es diese Abhängigkeit verwenden kann, um ein „Sicherheitsschema“ im OpenAPI-Schema (und der automatischen API-Dokumentation) zu definieren.
 
-/// info | "Technische Details"
+/// info | Technische Details
 
 **ReadyAPI** weiß, dass es die Klasse `OAuth2PasswordBearer` (deklariert in einer Abhängigkeit) verwenden kann, um das Sicherheitsschema in OpenAPI zu definieren, da es von `readyapi.security.oauth2.OAuth2` erbt, das wiederum von `readyapi.security.base.SecurityBase` erbt.
 

@@ -8,6 +8,7 @@ In that case, they will be applied to all the *path operations* in the applicati
 
 {* ../../docs_src/dependencies/tutorial012_an_py39.py hl[16] *}
 
+
 And all the ideas in the section about [adding `dependencies` to the *path operation decorators*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} still apply, but in this case, to all of the *path operations* in the app.
 
 ## Dependencies for groups of *path operations*

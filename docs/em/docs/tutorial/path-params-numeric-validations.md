@@ -102,7 +102,7 @@
 
 ///
 
-/// note | "📡 ℹ"
+/// note | 📡 ℹ
 
 🕐❔ 👆 🗄 `Query`, `Path` &amp; 🎏 ⚪️➡️ `readyapi`, 👫 🤙 🔢.
 

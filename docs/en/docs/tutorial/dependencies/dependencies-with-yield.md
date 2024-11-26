@@ -10,7 +10,7 @@ Make sure to use `yield` one single time per dependency.
 
 ///
 
-/// note | "Technical Details"
+/// note | Technical Details
 
 Any function that is valid to use with:
 
@@ -35,7 +35,7 @@ The yielded value is what is injected into *path operations* and other dependenc
 
 {* ../../docs_src/dependencies/tutorial007.py hl[4] *}
 
-The code following the `yield` statement is executed after the response has been delivered:
+The code following the `yield` statement is executed after creating the response but before sending it:
 
 {* ../../docs_src/dependencies/tutorial007.py hl[5:6] *}
 
@@ -85,7 +85,7 @@ You can have any combinations of dependencies that you want.
 
 **ReadyAPI** will make sure everything is run in the correct order.
 
-/// note | "Technical Details"
+/// note | Technical Details
 
 This works thanks to Python's <a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a>.
 

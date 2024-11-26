@@ -113,7 +113,7 @@ Here are some of the available responses.
 
 Keep in mind that you can use `Response` to return anything else, or even create a custom sub-class.
 
-/// note | "Technical Details"
+/// note | Technical Details
 
 You could also use `from starlette.responses import HTMLResponse`.
 
@@ -227,9 +227,7 @@ That way, you don't have to read it all first in memory, and you can pass that g
 
 This includes many libraries to interact with cloud storage, video processing, and others.
 
-```{ .python .annotate hl_lines="2  10-12  14" }
-{!../../docs_src/custom_response/tutorial008.py!}
-```
+{* ../../docs_src/custom_response/tutorial008.py hl[2,10:12,14] *}
 
 1. This is the generator function. It's a "generator function" because it contains `yield` statements inside.
 2. By using a `with` block, we make sure that the file-like object is closed after the generator function is done. So, after it finishes sending the response.

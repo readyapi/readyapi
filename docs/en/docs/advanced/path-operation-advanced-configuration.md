@@ -20,7 +20,7 @@ If you want to use your APIs' function names as `operationId`s, you can iterate 
 
 You should do it after adding all your *path operations*.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial002.py hl[2,12:21,24] *}
+{* ../../docs_src/path_operation_advanced_configuration/tutorial002.py hl[2, 12:21, 24] *}
 
 /// tip
 
@@ -66,7 +66,7 @@ There's a whole chapter here in the documentation about it, you can read it at [
 
 When you declare a *path operation* in your application, **ReadyAPI** automatically generates the relevant metadata about that *path operation* to be included in the OpenAPI schema.
 
-/// note | "Technical details"
+/// note | Technical details
 
 In the OpenAPI specification it is called the <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#operation-object" class="external-link" target="_blank">Operation Object</a>.
 
@@ -139,7 +139,7 @@ For example, you could decide to read and validate the request with your own cod
 
 You could do that with `openapi_extra`:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial006.py hl[19:36,39:40] *}
+{* ../../docs_src/path_operation_advanced_configuration/tutorial006.py hl[19:36, 39:40] *}
 
 In this example, we didn't declare any Pydantic model. In fact, the request body is not even <abbr title="converted from some plain format, like bytes, into Python objects">parsed</abbr> as JSON, it is read directly as `bytes`, and the function `magic_data_reader()` would be in charge of parsing it in some way.
 
@@ -155,13 +155,13 @@ For example, in this application we don't use ReadyAPI's integrated functionalit
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
+{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22, 24] *}
 
 ////
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py hl[17:22,24] *}
+{* ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py hl[17:22, 24] *}
 
 ////
 

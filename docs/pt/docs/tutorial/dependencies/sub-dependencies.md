@@ -35,7 +35,7 @@ Então podemos utilizar a dependência com:
 
 {* ../../docs_src/dependencies/tutorial005_an_py310.py hl[23] *}
 
-/// info | "Informação"
+/// info | Informação
 
 Perceba que nós estamos declarando apenas uma dependência na *função de operação de rota*, em `query_or_cookie_extractor`.
 
@@ -73,7 +73,7 @@ async def needy_dependency(fresh_value: Annotated[str, Depends(get_value, use_ca
 
 //// tab | Python 3.8+ non-Annotated
 
-/// tip | "Dica"
+/// tip | Dica
 
 Utilize a versão com `Annotated` se possível.
 
@@ -94,7 +94,7 @@ Consiste apenas de funções que parecem idênticas a *funções de operação d
 
 Mas ainda assim, é bastante poderoso, e permite que você declare grafos (árvores) de dependências com uma profundidade arbitrária.
 
-/// tip | "Dica"
+/// tip | Dica
 
 Tudo isso pode não parecer muito útil com esses exemplos.
 
