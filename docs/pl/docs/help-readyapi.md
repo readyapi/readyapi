@@ -22,7 +22,7 @@ Możesz zapisać się do rzadkiego [newslettera o **ReadyAPI i jego przyjacioła
 
 ## Śledź ReadyAPI na Twitterze
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">Śledź @readyapi na **Twitterze**</a> aby być na bieżąco z najnowszymi wiadomościami o **ReadyAPI**. 🐦
+<a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Śledź @readyapi na **Twitterze**</a> aby być na bieżąco z najnowszymi wiadomościami o **ReadyAPI**. 🐦
 
 ## Dodaj gwiazdkę **ReadyAPI** na GitHubie
 
@@ -50,7 +50,7 @@ Możesz:
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Śledzić mnie na **Twitterze**</a> lub na <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodonie</a>.
     * Napisz mi, w jaki sposób korzystasz z ReadyAPI (uwielbiam o tym czytać).
     * Dowiedz się, gdy ogłoszę coś nowego lub wypuszczę nowe narzędzia.
-    * Możesz także <a href="https://twitter.com/readyapi" class="external-link" target="_blank">śledzić @readyapi na Twitterze</a> (to oddzielne konto).
+    * Możesz także <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">śledzić @readyapi na Twitterze</a> (to oddzielne konto).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Nawiąż ze mną kontakt na **Linkedinie**</a>.
     * Dowiedz się, gdy ogłoszę coś nowego lub wypuszczę nowe narzędzia (chociaż częściej korzystam z Twittera 🤷‍♂).
 * Czytaj moje posty (lub śledź mnie) na <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> lub na <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.

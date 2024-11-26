@@ -12,14 +12,14 @@ theme:
       name: Switch to light mode
   - media: '(prefers-color-scheme: light)'
     scheme: default
-    primary: teal
+    primary: black
     accent: amber
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
   - media: '(prefers-color-scheme: dark)'
     scheme: slate
-    primary: teal
+    primary: black
     accent: amber
     toggle:
       icon: material/lightbulb-outline
@@ -304,7 +304,7 @@ markdown_extensions:
 extra:
   analytics:
     provider: google
-    property: G-YNEVN69SC3
+    property: G-WZ0SRFN2NX
     feedback:
       title: Was this page helpful?
       ratings:
@@ -324,7 +324,7 @@ extra:
   - icon: fontawesome/brands/discord
     link: https://discord.gg/VQjSZaeJmf
   - icon: fontawesome/brands/twitter
-    link: https://twitter.com/readyapi
+    link: https://twitter.com/khulnasoft
   - icon: fontawesome/brands/linkedin
     link: https://www.linkedin.com/in/khulnasoft
   - icon: fontawesome/brands/dev

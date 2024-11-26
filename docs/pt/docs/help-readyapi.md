@@ -22,7 +22,7 @@ Você pode se inscrever (pouco frequente) [**ReadyAPI e amigos** newsletter](new
 
 ## Siga o ReadyAPI no twitter
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">Siga @readyapi no **Twitter**</a> para receber as últimas notícias sobre o **ReadyAPI**. 🐦
+<a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Siga @readyapi no **Twitter**</a> para receber as últimas notícias sobre o **ReadyAPI**. 🐦
 
 ## Favorite o **ReadyAPI** no GitHub
 
@@ -50,7 +50,7 @@ Você pode:
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me siga no **Twitter**</a>.
     * Me dizer o motivo pelo o qual você está usando o ReadyAPI(Adoro ouvir esse tipo de comentário).
     * Saber quando eu soltar novos anúncios ou novas ferramentas.
-    * Também é possivel <a href="https://twitter.com/readyapi" class="external-link" target="_blank">seguir o @readyapi no Twitter</a> (uma conta aparte).
+    * Também é possivel <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">seguir o @readyapi no Twitter</a> (uma conta aparte).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Conect-se comigo no **Linkedin**</a>.
     * Saber quando eu fizer novos anúncios ou novas ferramentas (apesar de que uso o twitter com mais frequência 🤷‍♂).
 * Ler meus artigos (ou me seguir) no <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> ou no <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.

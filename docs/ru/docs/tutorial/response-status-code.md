@@ -8,9 +8,7 @@
 * `@app.delete()`
 * и других.
 
-```Python hl_lines="6"
-{!../../docs_src/response_status_code/tutorial001.py!}
-```
+{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
 
 /// note | "Примечание"
 
@@ -76,9 +74,7 @@ ReadyAPI знает об этом и создаст документацию Ope
 
 Рассмотрим предыдущий пример еще раз:
 
-```Python hl_lines="6"
-{!../../docs_src/response_status_code/tutorial001.py!}
-```
+{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
 
 `201` – это код статуса "Создано".
 
@@ -86,9 +82,7 @@ ReadyAPI знает об этом и создаст документацию Ope
 
 Для удобства вы можете использовать переменные из `readyapi.status`.
 
-```Python hl_lines="1  6"
-{!../../docs_src/response_status_code/tutorial002.py!}
-```
+{* ../../docs_src/response_status_code/tutorial002.py hl[1,6] *}
 
 Они содержат те же числовые значения, но позволяют использовать подсказки редактора для выбора кода статуса:
 

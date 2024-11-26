@@ -3488,7 +3488,7 @@ Soon there will be a new ReadyAPI release upgrading Starlette to take advantage 
 
 * ✅ Add  the `docs_src` directory to test coverage and update tests. Initial PR [#1904](https://github.com/khulnasoft/readyapi/pull/1904) by [@Kludex](https://github.com/Kludex).
 * 🔧 Add new GitHub templates with forms for new issues. PR [#3612](https://github.com/khulnasoft/readyapi/pull/3612) by [@khulnasoft](https://github.com/khulnasoft).
-* 📝 Add official ReadyAPI Twitter to docs: [@readyapi](https://twitter.com/readyapi). PR [#3578](https://github.com/khulnasoft/readyapi/pull/3578) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Add official ReadyAPI Twitter to docs: [@readyapi](https://twitter.com/khulnasoft). PR [#3578](https://github.com/khulnasoft/readyapi/pull/3578) by [@khulnasoft](https://github.com/khulnasoft).
 
 ## 0.67.0
 

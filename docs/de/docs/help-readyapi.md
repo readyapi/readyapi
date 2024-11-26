@@ -21,7 +21,7 @@ Sie können den (unregelmäßig erscheinenden) [**ReadyAPI and Friends**-Newslet
 * Tipps und Tricks ✅
 ## ReadyAPI auf Twitter folgen
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">Folgen Sie @readyapi auf **Twitter**</a>, um die neuesten Nachrichten über **ReadyAPI** zu erhalten. 🐦
+<a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Folgen Sie @readyapi auf **Twitter**</a>, um die neuesten Nachrichten über **ReadyAPI** zu erhalten. 🐦
 
 ## **ReadyAPI** auf GitHub einen Stern geben
 
@@ -49,7 +49,7 @@ Insbesondere:
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Folgen Sie mir auf **Twitter**</a> oder <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodon</a>.
     * Berichten Sie mir, wie Sie ReadyAPI verwenden (das höre ich gerne).
     * Bekommen Sie mit, wenn ich Ankündigungen mache oder neue Tools veröffentliche.
-    * Sie können auch <a href="https://twitter.com/readyapi" class="external-link" target="_blank">@readyapi auf Twitter folgen</a> (ein separates Konto).
+    * Sie können auch <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">@readyapi auf Twitter folgen</a> (ein separates Konto).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Folgen Sie mir auf **LinkedIn**</a>.
     * Bekommen Sie mit, wenn ich Ankündigungen mache oder neue Tools veröffentliche (obwohl ich Twitter häufiger verwende 🤷‍♂).
 * Lesen Sie, was ich schreibe (oder folgen Sie mir) auf <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**Dev.to**</a> oder <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**Medium**</a>.

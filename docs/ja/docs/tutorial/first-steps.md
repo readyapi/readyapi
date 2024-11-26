@@ -2,9 +2,7 @@
 
 最もシンプルなReadyAPIファイルは以下のようになります:
 
-```Python
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py *}
 
 これを`main.py`にコピーします。
 
@@ -133,9 +131,7 @@ OpenAPIスキーマは、ReadyAPIに含まれている2つのインタラクテ�
 
 ### Step 1: `ReadyAPI`をインポート
 
-```Python hl_lines="1"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI`は、APIのすべての機能を提供するPythonクラスです。
 
@@ -149,9 +145,7 @@ OpenAPIスキーマは、ReadyAPIに含まれている2つのインタラクテ�
 
 ### Step 2: `ReadyAPI`の「インスタンス」を生成
 
-```Python hl_lines="3"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 ここで、`app`変数が`ReadyAPI`クラスの「インスタンス」になります。
 
 これが、すべてのAPIを作成するための主要なポイントになります。
@@ -170,9 +164,7 @@ $ uvicorn main:app --reload
 
 以下のようなアプリを作成したとき:
 
-```Python hl_lines="3"
-{!../../docs_src/first_steps/tutorial002.py!}
-```
+{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
 
 そして、それを`main.py`ファイルに置き、次のように`uvicorn`を呼び出します:
 
@@ -249,9 +241,7 @@ APIを構築するときは、通常、これらの特定のHTTPメソッドを�
 
 #### *パスオペレーションデコレータ*を定義
 
-```Python hl_lines="6"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 `@app.get("/")`は直下の関数が下記のリクエストの処理を担当することを**ReadyAPI**に伝えます:
 
 * パス `/`
@@ -304,9 +294,7 @@ Pythonにおける`@something`シンタックスはデコレータと呼ばれ�
 * **オペレーション**: は`get`です。
 * **関数**: 「デコレータ」の直下にある関数 (`@app.get("/")`の直下) です。
 
-```Python hl_lines="7"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
 
 これは、Pythonの関数です。
 
@@ -318,9 +306,7 @@ Pythonにおける`@something`シンタックスはデコレータと呼ばれ�
 
 `async def`の代わりに通常の関数として定義することもできます:
 
-```Python hl_lines="7"
-{!../../docs_src/first_steps/tutorial003.py!}
-```
+{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
 
 /// note | "備考"
 
@@ -330,9 +316,7 @@ Pythonにおける`@something`シンタックスはデコレータと呼ばれ�
 
 ### Step 5: コンテンツの返信
 
-```Python hl_lines="8"
-{!../../docs_src/first_steps/tutorial001.py!}
-```
+{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
 
 `dict`、`list`、`str`、`int`などを返すことができます。
 
