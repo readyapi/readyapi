@@ -48,6 +48,8 @@ hide:
 
 ### Internal
 
+* ⬆ Bump cloudflare/wrangler-action from 3.12 to 3.13. PR [#151](https://github.com/readyapi/readyapi/pull/151) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 3 to 4. PR [#149](https://github.com/readyapi/readyapi/pull/149) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pillow from 10.4.0 to 11.0.0. PR [#133](https://github.com/readyapi/readyapi/pull/133) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.12.0 to 1.12.2. PR [#144](https://github.com/readyapi/readyapi/pull/144) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.10.3 to 1.11.0. PR [#12721](https://github.com/readyapi/readyapi/pull/12721) by [@dependabot[bot]](https://github.com/apps/dependabot).
