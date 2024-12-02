@@ -32,6 +32,7 @@ hide:
 
 ### Translations
 
+* 🔥 Remove obsolete tutorial translation to Chinese for docs/zh/docs/tutorial/sql-databases.md. PR [#148](https://github.com/readyapi/readyapi/pull/148) by [@FortiShield](https://github.com/FortiShield).
 * 🌐 Add Korean translation for `docs/ko/docs/advanced/wsgi.md`. PR [#12659](https://github.com/readyapi/readyapi/pull/12659) by [@Limsunoh](https://github.com/Limsunoh).
 * 🌐 Add Portuguese translation for `docs/pt/docs/advanced/websockets.md`. PR [#12703](https://github.com/readyapi/readyapi/pull/12703) by [@devfernandoa](https://github.com/devfernandoa).
 * 🌐 Add Portuguese translation for `docs/pt/docs/tutorial/security/simple-oauth2.md`. PR [#12520](https://github.com/readyapi/readyapi/pull/12520) by [@LidiaDomingos](https://github.com/LidiaDomingos).
