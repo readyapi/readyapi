@@ -1,59 +1,45 @@
-from typing import Any, Callable
+from contextlib import asynccontextmanager as asynccontextmanager
+from typing import AsyncGenerator, ContextManager, TypeVar
 
-from starlette.background import BackgroundTasks as StarletteBackgroundTasks
-from typing_extensions import Annotated, Doc, ParamSpec
+import anyio
+from anyio import CapacityLimiter
+from starlette.concurrency import iterate_in_threadpool as iterate_in_threadpool  # noqa
+from starlette.concurrency import run_in_threadpool as run_in_threadpool  # noqa
+from starlette.concurrency import (  # noqa
+    run_until_first_complete as run_until_first_complete,
+)
 
-P = ParamSpec("P")
+_T = TypeVar("_T")
 
 
-class BackgroundTasks(StarletteBackgroundTasks):
+@asynccontextmanager
+async def contextmanager_in_threadpool(
+    cm: ContextManager[_T],
+) -> AsyncGenerator[_T, None]:
     """
-    A collection of background tasks that will be called after a response has been
-    sent to the client.
+    Execute a context manager in a thread pool.
 
-    Read more about it in the
-    [ReadyAPI docs for Background Tasks](https://readyapi.khulnasoft.com/tutorial/background-tasks/).
+    This function ensures that the blocking __exit__ method of the context manager
+    runs without a capacity limit to avoid race conditions or deadlocks.
 
-    ## Example
+    Args:
+        cm: The context manager to be executed.
 
-    ```python
-    from readyapi import BackgroundTasks, ReadyAPI
-
-    app = ReadyAPI()
-
-
-    def write_notification(email: str, message=""):
-        with open("log.txt", mode="w") as email_file:
-            content = f"notification for {email}: {message}"
-            email_file.write(content)
-
-
-    @app.post("/send-notification/{email}")
-    async def send_notification(email: str, background_tasks: BackgroundTasks):
-        background_tasks.add_task(write_notification, email, message="some notification")
-        return {"message": "Notification sent in the background"}
-    ```
+    Yields:
+        The result of the context manager's __enter__ method.
     """
-
-    def add_task(
-        self,
-        func: Annotated[
-            Callable[P, Any],
-            Doc(
-                """
-                The function to call after the response is sent.
-
-                It can be a regular `def` function or an `async def` function.
-                """
-            ),
-        ],
-        *args: P.args,
-        **kwargs: P.kwargs,
-    ) -> None:
-        """
-        Add a function to be called in the background after the response is sent.
-
-        Read more about it in the
-        [ReadyAPI docs for Background Tasks](https://readyapi.khulnasoft.com/tutorial/background-tasks/).
-        """
-        return super().add_task(func, *args, **kwargs)
+    exit_limiter = CapacityLimiter(1)
+    try:
+        yield await run_in_threadpool(cm.__enter__)
+    except Exception as e:
+        ok = bool(
+            await anyio.to_thread.run_sync(
+                cm.__exit__, type(e), e, None, limiter=exit_limiter
+            )
+        )
+        if not ok:
+            raise e
+    else:
+        await anyio.to_thread.run_sync(
+            cm.__exit__, None, None, None, limiter=exit_limiter
+        )

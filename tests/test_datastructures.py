@@ -70,3 +70,23 @@ async def test_upload_file():
     await file.seek(0)
     assert await file.read() == b"data and more data!"
     await file.close()
+
+
+def test_upload_file_edge_case_empty_file():
+    stream = io.BytesIO(b"")
+    file = UploadFile(filename="empty_file", file=stream, size=0)
+    assert file.size == 0
+    assert await file.read() == b""
+    await file.close()
+
+
+def test_upload_file_error_handling():
+    stream = io.BytesIO(b"data")
+    file = UploadFile(filename="file", file=stream, size=4)
+    await file.close()
+    with pytest.raises(ValueError):
+        await file.read()
+    with pytest.raises(ValueError):
+        await file.write(b"more data")
+    with pytest.raises(ValueError):
+        await file.seek(0)
