@@ -13,6 +13,7 @@ hide:
 
 ### Docs
 
+* 📝 Update docs for readyapi-cli. PR [#156](https://github.com/readyapi/readyapi/pull/156) by [@NxPKG](https://github.com/NxPKG).
 * fix: latest change. PR [#143](https://github.com/readyapi/readyapi/pull/143) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 * 📝 Update includes in `docs/en/docs/advanced/security/oauth2-scopes.md`. PR [#12572](https://github.com/readyapi/readyapi/pull/12572) by [@krishnamadhavan](https://github.com/krishnamadhavan).
 * 📝 Update includes for `docs/en/docs/how-to/conditional-openapi.md`. PR [#12624](https://github.com/readyapi/readyapi/pull/12624) by [@rabinlamadong](https://github.com/rabinlamadong).
@@ -49,6 +50,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.2 to 1.12.3. PR [#157](https://github.com/readyapi/readyapi/pull/157) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.12 to 3.13. PR [#151](https://github.com/readyapi/readyapi/pull/151) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 3 to 4. PR [#149](https://github.com/readyapi/readyapi/pull/149) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pillow from 10.4.0 to 11.0.0. PR [#133](https://github.com/readyapi/readyapi/pull/133) by [@dependabot[bot]](https://github.com/apps/dependabot).
