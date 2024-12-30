@@ -50,6 +50,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump mkdocs-material from 9.5.18 to 9.5.48. PR [#159](https://github.com/readyapi/readyapi/pull/159) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 4 to 5. PR [#160](https://github.com/readyapi/readyapi/pull/160) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.12.2 to 1.12.3. PR [#157](https://github.com/readyapi/readyapi/pull/157) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.12 to 3.13. PR [#151](https://github.com/readyapi/readyapi/pull/151) by [@dependabot[bot]](https://github.com/apps/dependabot).
