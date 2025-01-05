@@ -2,7 +2,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Iterable
 
-import typer
+import cligenius
 import yaml
 from pydantic_ai import Agent
 
@@ -159,4 +159,4 @@ def main(*, lang: str, path: Path = None) -> None:
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    cligenius.run(main)
