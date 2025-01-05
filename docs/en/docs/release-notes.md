@@ -51,6 +51,7 @@ hide:
 
 ### Internal
 
+* 🔨 Add internal scripts to generate language translations with Pydanti…. PR [#166](https://github.com/readyapi/readyapi/pull/166) by [@NxPKG](https://github.com/NxPKG).
 * 👷 Add new GitHub Action to update contributors, translators, and tran…. PR [#165](https://github.com/readyapi/readyapi/pull/165) by [@NxPKG](https://github.com/NxPKG).
 * 👷 Add retries to Smokeshow. PR [#163](https://github.com/readyapi/readyapi/pull/163) by [@NxPKG](https://github.com/NxPKG).
 * ⬆ Bump inline-snapshot from 0.13.0 to 0.15.1. PR [#158](https://github.com/readyapi/readyapi/pull/158) by [@dependabot[bot]](https://github.com/apps/dependabot).
