@@ -14,6 +14,7 @@ hide:
 
 ### Docs
 
+* 👷‍♀️ Add script for GitHub Topic Repositories and update External Links. PR [#167](https://github.com/readyapi/readyapi/pull/167) by [@NxPKG](https://github.com/NxPKG).
 * 📝 Update docs for readyapi-cli. PR [#156](https://github.com/readyapi/readyapi/pull/156) by [@NxPKG](https://github.com/NxPKG).
 * fix: latest change. PR [#143](https://github.com/readyapi/readyapi/pull/143) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 * 📝 Update includes in `docs/en/docs/advanced/security/oauth2-scopes.md`. PR [#12572](https://github.com/readyapi/readyapi/pull/12572) by [@krishnamadhavan](https://github.com/krishnamadhavan).
