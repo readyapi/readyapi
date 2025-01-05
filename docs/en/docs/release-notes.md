@@ -9,6 +9,7 @@ hide:
 
 ### Refactors
 
+* ✅ Simplify tests for additional_status_codes. PR [#164](https://github.com/readyapi/readyapi/pull/164) by [@NxPKG](https://github.com/NxPKG).
 * ♻️ Update tests and internals for compatibility with Pydantic >=2.10. PR [#145](https://github.com/readyapi/readyapi/pull/145) by [@gitworkflows](https://github.com/gitworkflows).
 
 ### Docs
@@ -50,6 +51,9 @@ hide:
 
 ### Internal
 
+* 🔨 Add internal scripts to generate language translations with Pydanti…. PR [#166](https://github.com/readyapi/readyapi/pull/166) by [@NxPKG](https://github.com/NxPKG).
+* 👷 Add new GitHub Action to update contributors, translators, and tran…. PR [#165](https://github.com/readyapi/readyapi/pull/165) by [@NxPKG](https://github.com/NxPKG).
+* 👷 Add retries to Smokeshow. PR [#163](https://github.com/readyapi/readyapi/pull/163) by [@NxPKG](https://github.com/NxPKG).
 * ⬆ Bump inline-snapshot from 0.13.0 to 0.15.1. PR [#158](https://github.com/readyapi/readyapi/pull/158) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump mkdocs-material from 9.5.18 to 9.5.48. PR [#159](https://github.com/readyapi/readyapi/pull/159) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 4 to 5. PR [#160](https://github.com/readyapi/readyapi/pull/160) by [@dependabot[bot]](https://github.com/apps/dependabot).
