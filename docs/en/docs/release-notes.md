@@ -52,6 +52,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump dirty-equals from 0.6.0 to 0.8.0. PR [#161](https://github.com/readyapi/readyapi/pull/161) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 🔨 Add internal scripts to generate language translations with Pydanti…. PR [#166](https://github.com/readyapi/readyapi/pull/166) by [@NxPKG](https://github.com/NxPKG).
 * 👷 Add new GitHub Action to update contributors, translators, and tran…. PR [#165](https://github.com/readyapi/readyapi/pull/165) by [@NxPKG](https://github.com/NxPKG).
 * 👷 Add retries to Smokeshow. PR [#163](https://github.com/readyapi/readyapi/pull/163) by [@NxPKG](https://github.com/NxPKG).
