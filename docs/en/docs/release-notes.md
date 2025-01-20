@@ -9,6 +9,7 @@ hide:
 
 ### Refactors
 
+* 👷 Refactor ReadyAPI People Sponsors to use 2 tokens. PR [#172](https://github.com/readyapi/readyapi/pull/172) by [@FortiShield](https://github.com/FortiShield).
 * ✅ Simplify tests for body_fields. PR [#169](https://github.com/readyapi/readyapi/pull/169) by [@gitworkflows](https://github.com/gitworkflows).
 * ✅ Simplify tests for additional_status_codes. PR [#164](https://github.com/readyapi/readyapi/pull/164) by [@NxPKG](https://github.com/NxPKG).
 * ♻️ Update tests and internals for compatibility with Pydantic >=2.10. PR [#145](https://github.com/readyapi/readyapi/pull/145) by [@gitworkflows](https://github.com/gitworkflows).
