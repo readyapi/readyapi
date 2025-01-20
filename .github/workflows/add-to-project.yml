@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: actions/add-to-project@v1.0.2
         with:
-          project-url: https://github.com/orgs/readyapi/projects/2
+          project-url: https://github.com/orgs/readyapi/projects/1
           github-token: ${{ secrets.PROJECTS_TOKEN }}
