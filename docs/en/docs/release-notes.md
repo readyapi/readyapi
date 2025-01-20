@@ -103,6 +103,7 @@ hide:
 
 ### Internal
 
+* Update add-to-project.yml. PR [#178](https://github.com/readyapi/readyapi/pull/178) by [@FortiShield](https://github.com/FortiShield).
 * 👥 Update ReadyAPI People - Sponsors. PR [#13231](https://github.com/readyapi/readyapi/pull/13231) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Refactor ReadyAPI People Sponsors to use 2 tokens. PR [#13228](https://github.com/readyapi/readyapi/pull/13228) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Update token for ReadyAPI People - Sponsors. PR [#13225](https://github.com/readyapi/readyapi/pull/13225) by [@khulnasoft](https://github.com/khulnasoft).
