@@ -55,21 +55,12 @@ jobs:
           merge-multiple: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
-      - name: Deploy to Cloudflare Pages
-        # hashFiles returns an empty string if there are no files
+      - name: Deploy to GitHub Pages
         if: hashFiles('./site/*')
-        id: deploy
-        env:
-          PROJECT_NAME: readyapikhulnasoft
-          BRANCH: ${{ ( github.event.workflow_run.head_repository.full_name == github.repository && github.event.workflow_run.head_branch == 'master' && 'main' ) || ( github.event.workflow_run.head_sha ) }}
-        # TODO: Use v3 when it's fixed, probably in v3.11
-        # https://github.com/cloudflare/wrangler-action/issues/307
-        uses: cloudflare/wrangler-action@v3.13
-        # uses: cloudflare/wrangler-action@v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./site --project-name=${{ env.PROJECT_NAME }} --branch=${{ env.BRANCH }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
       - name: Comment Deploy
         run: python ./scripts/deploy_docs_status.py
         env:
