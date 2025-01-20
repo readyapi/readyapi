@@ -1,0 +1,6041 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ReadyAPI framework, high performance, easy to learn, fast to code, ready for production">
+      
+      
+      
+        <link rel="canonical" href="https://readyapi.khulnasoft.com/em/deployment/docker/">
+      
+      
+        <link rel="prev" href="../server-workers/">
+      
+      
+        <link rel="next" href="../../how-to/">
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>ReadyAPI 📦 - ☁ - ReadyAPI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/termynal.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-YNEVN69SC3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-YNEVN69SC3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-YNEVN69SC3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#readyapi-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div class="announce-wrapper">
+  <div id="announce-left">
+    <div class="item">
+      <a class="announce-link" href="https://twitter.com/readyapi" target="_blank">
+        <span class="twemoji twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+        </span> Follow <strong>@readyapi</strong> on <strong>Twitter</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+        </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
+      </a>
+    </div>
+    <div class="item">
+      <iframe style="display: inline-block; vertical-align: middle; border: none; margin-right: 0.5rem;" src="https://github.com/sponsors/khulnasoft/button" title="Sponsor khulnasoft" height="35" width="116" style="border: 0;"></iframe> <a class="announce-link" target="_blank" href="https://github.com/sponsors/khulnasoft">You can now sponsor <strong>ReadyAPI</strong> 🍰</a>
+    </div>
+  </div>
+  <div id="announce-right" style="position: relative;">
+    <div class="item">
+      <a title="BlockBee Cryptocurrency Payment Gateway" style="display: block; position: relative;" href="https://blockbee.io?ref=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/blockbee-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build, run and scale your apps on a modern, reliable, and secure PaaS." style="display: block; position: relative;" href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/platform-sh-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy ReadyAPI on AWS with a few clicks" style="display: block; position: relative;" href="https://www.porter.run" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/porter-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Automate ReadyAPI documentation generation with Bump.sh" style="display: block; position: relative;" href="https://bump.sh/readyapi?utm_source=readyapi&utm_medium=referral&utm_campaign=sponsor" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/bump-sh-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files" style="display: block; position: relative;" href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=top-banner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/scalar-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Auth, user management and more for your B2B product" style="display: block; position: relative;" href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=topbanner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/propelauth-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Coherence" style="display: block; position: relative;" href="https://www.withcoherence.com/?utm_medium=advertising&utm_source=readyapi&utm_campaign=website" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/coherence-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build your next app with ReadyAPI and MongoDB" style="display: block; position: relative;" href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/mongodb-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI" style="display: block; position: relative;" href="https://zuplo.link/readyapi-web" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/zuplo-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="liblab - Generate SDKs from ReadyAPI" style="display: block; position: relative;" href="https://liblab.com?utm_source=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/liblab-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra." style="display: block; position: relative;" href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/render-banner.svg" />
+      </a>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ReadyAPI" class="md-header__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../../img/icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReadyAPI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ReadyAPI 📦 - ☁
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6zm13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="" class="md-select__link">
+              en - English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/az/" hreflang="" class="md-select__link">
+              az - azərbaycan dili
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/bn/" hreflang="" class="md-select__link">
+              bn - বাংলা
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/" hreflang="" class="md-select__link">
+              de - Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="" class="md-select__link">
+              es - español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fa/" hreflang="" class="md-select__link">
+              fa - فارسی
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/he/" hreflang="" class="md-select__link">
+              he - עברית
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/hu/" hreflang="" class="md-select__link">
+              hu - magyar
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/id/" hreflang="" class="md-select__link">
+              id - Bahasa Indonesia
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/it/" hreflang="" class="md-select__link">
+              it - italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ko/" hreflang="" class="md-select__link">
+              ko - 한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/nl/" hreflang="" class="md-select__link">
+              nl - Nederlands
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pl/" hreflang="" class="md-select__link">
+              pl - Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt/" hreflang="" class="md-select__link">
+              pt - português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ru/" hreflang="" class="md-select__link">
+              ru - русский язык
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/uk/" hreflang="" class="md-select__link">
+              uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ur/" hreflang="" class="md-select__link">
+              ur - اردو
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/vi/" hreflang="" class="md-select__link">
+              vi - Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/yo/" hreflang="" class="md-select__link">
+              yo - Yorùbá
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/em/" hreflang="" class="md-select__link">
+              😉
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/readyapi/readyapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+    
+  
+  ⚒
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../learn/" class="md-tabs__link">
+          
+  
+    
+  
+  Learn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../readyapi-people/" class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI People
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
+          
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release-notes/" class="md-tabs__link">
+        
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ReadyAPI" class="md-nav__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../../img/icon-white.svg" alt="logo">
+
+    </a>
+    ReadyAPI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/readyapi/readyapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚒
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learn/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Learn
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Learn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🐍 🆎 🎶
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../async/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛠️ &amp; 🔁 / ⌛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environment-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Environment Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../virtual-environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🔰 - 👩‍💻 🦮
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            🔰 - 👩‍💻 🦮
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🥇 🔁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➡ 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔢 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 💪
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-params-str-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔢 🔢 &amp; 🎻 🔬
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-params-numeric-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➡ 🔢 &amp; 🔢 🔬
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-multiple-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💪 - 💗 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💪 - 🏑
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-nested-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💪 - 🔁 🏷
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/schema-extra-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📣 📨 🖼 💽
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/extra-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➕ 💽 🆎
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cookie-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🍪 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/header-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎚 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cookie-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/header-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/response-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 🏷 - 📨 🆎
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/extra-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➕ 🏷
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/response-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 👔 📟
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 💽
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-form-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 📁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-forms-and-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 📨 &amp; 📁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/handling-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🚚 ❌
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-operation-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➡ 🛠️ 📳
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/encoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎻 🔗 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💪 - ℹ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_29" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/dependencies/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🔗
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_29" id="__nav_3_6_29_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_29_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_29">
+            <span class="md-nav__icon md-icon"></span>
+            🔗
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/classes-as-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎓 🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/sub-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎧-🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/dependencies-in-path-operation-decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔗 ➡ 🛠️ 👨‍🎨
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/global-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🌐 🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/dependencies-with-yield/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔗 ⏮️ 🌾
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_30" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    💂‍♂
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_30" id="__nav_3_6_30_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_30_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_30">
+            <span class="md-nav__icon md-icon"></span>
+            💂‍♂
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💂‍♂ - 🥇 🔁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/get-current-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🤚 ⏮️ 👩‍💻
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/simple-oauth2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🙅 Oauth2️⃣ ⏮️ 🔐 &amp; 📨
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/oauth2-jwt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oauth2️⃣ ⏮️ 🔐 (&amp; 🔁), 📨 ⏮️ 🥙 🤝
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛠️
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚜ (✖️-🇨🇳 ℹ 🤝)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/sql-databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL (Relational) Databases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/bigger-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🦏 🈸 - 💗 📁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/background-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🖥 📋
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🗃 &amp; 🩺 📛
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/static-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎻 📁
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔬
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛠️
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🏧 👩‍💻 🦮
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            🏧 👩‍💻 🦮
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/path-operation-advanced-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ➡ 🛠️ 🏧 📳
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/additional-status-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🌖 👔 📟
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 📨 🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/custom-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛃 📨 - 🕸, 🎏, 📁, 🎏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/additional-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🌖 📨 🗄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-cookies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 🍪
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-headers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 🎚
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-change-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📨 - 🔀 👔 📟
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/advanced-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏧 🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../advanced/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🏧 💂‍♂
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_11" id="__nav_3_7_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_11">
+            <span class="md-nav__icon md-icon"></span>
+            🏧 💂‍♂
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/security/oauth2-scopes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oauth2️⃣ ↔
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/security/http-basic-auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🇺🇸🔍 🔰 🔐
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/using-request-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚙️ 📨 🔗
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/dataclasses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚙️ 🎻
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏧 🛠️
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/sub-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎧 🈸 - 🗻
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/behind-a-proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⛅ 🗳
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    *️⃣
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔆 🎉
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔬 *️⃣
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔬 🎉: 🕴 - 🤫
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔬 🔗 ⏮️ 🔐
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/async-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔁 💯
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ⚒ &amp; 🌐 🔢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/openapi-callbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🗄 ⏲
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/openapi-webhooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Webhooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/wsgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ✅ 🇨🇻 - 🏺, ✳, 🎏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/generate-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏗 👩‍💻
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readyapi-cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    🛠️
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            🛠️
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔃 ReadyAPI ⏬
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../https/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🔃 🇺🇸🔍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manually/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏃 💽 ❎ - Uvicorn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛠️ 🔧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy ReadyAPI on Cloud Providers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    💽 👨‍🏭 - 🐁 ⏮️ Uvicorn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ReadyAPI 📦 - ☁
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI 📦 - ☁
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚫️❔ 📦
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚫️❔ 📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 &amp; 🛠️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readyapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼 ReadyAPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗 ☁ 🖼 ReadyAPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 📄
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readyapi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍ ReadyAPI 📟
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛅ 🤝 ❎ 🗳
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ 💾
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ ☁ 📦
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ ⚫️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 🛠️ 🩺
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛 🛠️ 🩺
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-readyapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼 ⏮️ 👁-📁 ReadyAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 🔧
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇺🇸🔍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏃‍♂ 🔛 🕴 &amp; ⏏
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧬 - 🔢 🛠️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧬 - 🔢 🛠️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      📐 ⚙
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ 📐 ⚙ - 💗 👨‍🏭 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ 🛠️ 📍 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 ⏮️ 💗 🛠️ &amp; 🎁 💼
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 ⏮️ 💗 🛠️ & 🎁 💼">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      🙅 📱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ ✍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤴 &amp; 🎏 🤔
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏮️ 🔁 ⏭ ▶️ &amp; 📦
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏮️ 🔁 ⏭ ▶️ & 📦">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      💗 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      👁 📦
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-uvicorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔢 🛠️ 🔛 🛂 ☁ 🖼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍ Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      🦏 🈸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕐❔ ⚙️
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ 🖼 ⏮️ 🎶
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁ 🖼 ⏮️ 🎶">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛅ 🤝 ❎ 🗳 - 🎶
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌃
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    How To - Recipes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            How To - Recipes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General - How To - Recipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/graphql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🕹
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/custom-request-and-route/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🛃 📨 &amp; APIRoute 🎓
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/conditional-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎲 🗄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/extending-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ↔ 🗄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/separate-openapi-schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separate OpenAPI Schemas for Input and Output or Not
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/custom-docs-ui-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Docs UI Static Assets (Self-Hosting)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/configure-swagger-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure Swagger UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/testing-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing a Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/uploadfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UploadFile class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions - HTTPException and WebSocketException
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies - Depends() and Security()
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/apirouter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIRouter class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks - BackgroundTasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/request/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/httpconnection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPConnection class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response Classes - File, HTML, Redirect, Streaming, etc.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/openapi/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OpenAPI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
+            <span class="md-nav__icon md-icon"></span>
+            OpenAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/openapi/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/openapi/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/encoders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoders - jsonable_encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/staticfiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Files - StaticFiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/templating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templating - Jinja2Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/testclient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Client - TestClient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readyapi-people/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI People
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../help-readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ℹ ReadyAPI - 🤚 ℹ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development - Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🏗 ⚡ - 📄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links and Articles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../newsletter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI and friends newsletter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../about/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alternatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    🎛, 🌈 &amp; 🔺
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history-design-future/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📖, 🔧 &amp; 🔮
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📇
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚫️❔ 📦
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚫️❔ 📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 &amp; 🛠️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readyapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼 ReadyAPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗 ☁ 🖼 ReadyAPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 📄
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readyapi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍ ReadyAPI 📟
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛅ 🤝 ❎ 🗳
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ 💾
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ ☁ 📦
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ ⚫️
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 🛠️ 🩺
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛 🛠️ 🩺
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-readyapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗 ☁ 🖼 ⏮️ 👁-📁 ReadyAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 🔧
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇺🇸🔍
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏃‍♂ 🔛 🕴 &amp; ⏏
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧬 - 🔢 🛠️
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧬 - 🔢 🛠️">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      📐 ⚙
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ 📐 ⚙ - 💗 👨‍🏭 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ 🛠️ 📍 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 ⏮️ 💗 🛠️ &amp; 🎁 💼
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 ⏮️ 💗 🛠️ & 🎁 💼">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      🙅 📱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ ✍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤴 &amp; 🎏 🤔
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏮️ 🔁 ⏭ ▶️ &amp; 📦
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏮️ 🔁 ⏭ ▶️ & 📦">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      💗 📦
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      👁 📦
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-uvicorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔢 🛠️ 🔛 🛂 ☁ 🖼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍ Dockerfile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      🦏 🈸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕐❔ ⚙️
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ 📦 🖼
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁ 🖼 ⏮️ 🎶
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁ 🖼 ⏮️ 🎶">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛅ 🤝 ❎ 🗳 - 🎶
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌃
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="readyapi-">ReadyAPI 📦 - ☁<a class="headerlink" href="#readyapi-" title="Permanent link">&para;</a></h1>
+<p>🕐❔ 🛠️ ReadyAPI 🈸 ⚠ 🎯 🏗 <strong>💾 📦 🖼</strong>. ⚫️ 🛎 🔨 ⚙️ <a href="https://www.docker.com/" class="external-link" target="_blank"><strong>☁</strong></a>. 👆 💪 ⤴️ 🛠️ 👈 📦 🖼 1️⃣ 👩‍❤‍👨 💪 🌌.</p>
+<p>⚙️ 💾 📦 ✔️ 📚 📈 ✅ <strong>💂‍♂</strong>, <strong>🔬</strong>, <strong>🦁</strong>, &amp; 🎏.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>🏃 &amp; ⏪ 💭 👉 💩 ❓ 🦘 <a href="#readyapi"><code>Dockerfile</code> 🔛 👶</a>.</p>
+</div>
+<details>
+<summary>📁 🎮 👶</summary>
+
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+</span><span id="__span-0-2">
+</span><span id="__span-0-3"><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span>
+</span><span id="__span-0-4">
+</span><span id="__span-0-5"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-0-6">
+</span><span id="__span-0-7"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-0-8">
+</span><span id="__span-0-9"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/code/app
+</span><span id="__span-0-10">
+</span><span id="__span-0-11"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span><span id="__span-0-12">
+</span><span id="__span-0-13"><span class="c"># If running behind a proxy like Nginx or Traefik add --proxy-headers</span>
+</span><span id="__span-0-14"><span class="c"># CMD [&quot;uvicorn&quot;, &quot;app.main:app&quot;, &quot;--host&quot;, &quot;0.0.0.0&quot;, &quot;--port&quot;, &quot;80&quot;, &quot;--proxy-headers&quot;]</span>
+</span></code></pre></div>
+
+</details>
+
+<h2 id="_1">⚫️❔ 📦<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>📦 (✴️ 💾 📦) 📶 <strong>💿</strong> 🌌 📦 🈸 ✅ 🌐 👫 🔗 &amp; 💪 📁 ⏪ 🚧 👫 ❎ ⚪️➡️ 🎏 📦 (🎏 🈸 ⚖️ 🦲) 🎏 ⚙️.</p>
+<p>💾 📦 🏃 ⚙️ 🎏 💾 💾 🦠 (🎰, 🕹 🎰, ☁ 💽, ♒️). 👉 ⛓ 👈 👫 📶 💿 (🔬 🌕 🕹 🎰 👍 🎂 🏃‍♂ ⚙️).</p>
+<p>👉 🌌, 📦 🍴 <strong>🐥 ℹ</strong>, 💸 ⭐ 🏃‍♂ 🛠️ 🔗 (🕹 🎰 🔜 🍴 🌅 🌅).</p>
+<p>📦 ✔️ 👫 👍 <strong>❎</strong> 🏃‍♂ 🛠️ (🛎 1️⃣ 🛠️), 📁 ⚙️, &amp; 🕸, 🔬 🛠️, 💂‍♂, 🛠️, ♒️.</p>
+<h2 id="_2">⚫️❔ 📦 🖼<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>📦</strong> 🏃 ⚪️➡️ <strong>📦 🖼</strong>.</p>
+<p>📦 🖼 <strong>🎻</strong> ⏬ 🌐 📁, 🌐 🔢, &amp; 🔢 📋/📋 👈 🔜 🎁 📦. <strong>🎻</strong> 📥 ⛓ 👈 📦 <strong>🖼</strong> 🚫 🏃, ⚫️ 🚫 ➖ 🛠️, ⚫️ 🕴 📦 📁 &amp; 🗃.</p>
+<p>🔅 "<strong>📦 🖼</strong>" 👈 🏪 🎻 🎚,"<strong>📦</strong>" 🛎 🔗 🏃‍♂ 👐, 👜 👈 ➖ <strong>🛠️</strong>.</p>
+<p>🕐❔ <strong>📦</strong> ▶️ &amp; 🏃‍♂ (▶️ ⚪️➡️ <strong>📦 🖼</strong>) ⚫️ 💪 ✍ ⚖️ 🔀 📁, 🌐 🔢, ♒️. 👈 🔀 🔜 🔀 🕴 👈 📦, ✋️ 🔜 🚫 😣 👽 📦 🖼 (🔜 🚫 🖊 💾).</p>
+<p>📦 🖼 ⭐ <strong>📋</strong> 📁 &amp; 🎚, ✅ <code>python</code> &amp; 📁 <code>main.py</code>.</p>
+<p>&amp; <strong>📦</strong> ⚫️ (🔅 <strong>📦 🖼</strong>) ☑ 🏃 👐 🖼, ⭐ <strong>🛠️</strong>. 👐, 📦 🏃 🕴 🕐❔ ⚫️ ✔️ <strong>🛠️ 🏃</strong> (&amp; 🛎 ⚫️ 🕴 👁 🛠️). 📦 ⛔️ 🕐❔ 📤 🙅‍♂ 🛠️ 🏃 ⚫️.</p>
+<h2 id="_3">📦 🖼<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>☁ ✔️ 1️⃣ 👑 🧰 ✍ &amp; 🛠️ <strong>📦 🖼</strong> &amp; <strong>📦</strong>.</p>
+<p>&amp; 📤 📢 <a href="https://hub.docker.com/" class="external-link" target="_blank">☁ 🎡</a> ⏮️ 🏤-⚒ <strong>🛂 📦 🖼</strong> 📚 🧰, 🌐, 💽, &amp; 🈸.</p>
+<p>🖼, 📤 🛂 <a href="https://hub.docker.com/_/python" class="external-link" target="_blank">🐍 🖼</a>.</p>
+<p>&amp; 📤 📚 🎏 🖼 🎏 👜 💖 💽, 🖼:</p>
+<ul>
+<li><a href="https://hub.docker.com/_/postgres" class="external-link" target="_blank">✳</a></li>
+<li><a href="https://hub.docker.com/_/mysql" class="external-link" target="_blank">✳</a></li>
+<li><a href="https://hub.docker.com/_/mongo" class="external-link" target="_blank">✳</a></li>
+<li><a href="https://hub.docker.com/_/redis" class="external-link" target="_blank">✳</a>, ♒️.</li>
+</ul>
+<p>⚙️ 🏤-⚒ 📦 🖼 ⚫️ 📶 ⏩ <strong>🌀</strong> &amp; ⚙️ 🎏 🧰. 🖼, 🔄 👅 🆕 💽. 🌅 💼, 👆 💪 ⚙️ <strong>🛂 🖼</strong>, &amp; 🔗 👫 ⏮️ 🌐 🔢.</p>
+<p>👈 🌌, 📚 💼 👆 💪 💡 🔃 📦 &amp; ☁ &amp; 🏤-⚙️ 👈 💡 ⏮️ 📚 🎏 🧰 &amp; 🦲.</p>
+<p>, 👆 🔜 🏃 <strong>💗 📦</strong> ⏮️ 🎏 👜, 💖 💽, 🐍 🈸, 🕸 💽 ⏮️ 😥 🕸 🈸, &amp; 🔗 👫 👯‍♂️ 📨 👫 🔗 🕸.</p>
+<p>🌐 📦 🧾 ⚙️ (💖 ☁ ⚖️ Kubernetes) ✔️ 👫 🕸 ⚒ 🛠️ 🔘 👫.</p>
+<h2 id="_4">📦 &amp; 🛠️<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>📦 🖼</strong> 🛎 🔌 🚮 🗃 🔢 📋 ⚖️ 📋 👈 🔜 🏃 🕐❔ <strong>📦</strong> ▶️ &amp; 🔢 🚶‍♀️ 👈 📋. 📶 🎏 ⚫️❔ 🔜 🚥 ⚫️ 📋 ⏸.</p>
+<p>🕐❔ <strong>📦</strong> ▶️, ⚫️ 🔜 🏃 👈 📋/📋 (👐 👆 💪 🔐 ⚫️ &amp; ⚒ ⚫️ 🏃 🎏 📋/📋).</p>
+<p>📦 🏃 📏 <strong>👑 🛠️</strong> (📋 ⚖️ 📋) 🏃.</p>
+<p>📦 🛎 ✔️ <strong>👁 🛠️</strong>, ✋️ ⚫️ 💪 ▶️ ✳ ⚪️➡️ 👑 🛠️, &amp; 👈 🌌 👆 🔜 ✔️ <strong>💗 🛠️</strong> 🎏 📦.</p>
+<p>✋️ ⚫️ 🚫 💪 ✔️ 🏃‍♂ 📦 🍵 <strong>🌘 1️⃣ 🏃‍♂ 🛠️</strong>. 🚥 👑 🛠️ ⛔️, 📦 ⛔️.</p>
+<h2 id="readyapi">🏗 ☁ 🖼 ReadyAPI<a class="headerlink" href="#readyapi" title="Permanent link">&para;</a></h2>
+<p>🆗, ➡️ 🏗 🕳 🔜 ❗ 👶</p>
+<p>👤 🔜 🎦 👆 ❔ 🏗 <strong>☁ 🖼</strong> ReadyAPI <strong>⚪️➡️ 🖌</strong>, ⚓️ 🔛 <strong>🛂 🐍</strong> 🖼.</p>
+<p>👉 ⚫️❔ 👆 🔜 💚 <strong>🏆 💼</strong>, 🖼:</p>
+<ul>
+<li>⚙️ <strong>Kubernetes</strong> ⚖️ 🎏 🧰</li>
+<li>🕐❔ 🏃‍♂ 🔛 <strong>🍓 👲</strong></li>
+<li>⚙️ ☁ 🐕‍🦺 👈 🔜 🏃 📦 🖼 👆, ♒️.</li>
+</ul>
+<h3 id="_5">📦 📄<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>👆 🔜 🛎 ✔️ <strong>📦 📄</strong> 👆 🈸 📁.</p>
+<p>⚫️ 🔜 🪀 ✴️ 🔛 🧰 👆 ⚙️ <strong>❎</strong> 👈 📄.</p>
+<p>🌅 ⚠ 🌌 ⚫️ ✔️ 📁 <code>requirements.txt</code> ⏮️ 📦 📛 &amp; 👫 ⏬, 1️⃣ 📍 ⏸.</p>
+<p>👆 🔜 ↗️ ⚙️ 🎏 💭 👆 ✍ <a class="internal-link" href="../versions/" target="_blank">🔃 ReadyAPI ⏬</a> ⚒ ↔ ⏬.</p>
+<p>🖼, 👆 <code>requirements.txt</code> 💪 👀 💖:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1">readyapi&gt;=0.68.0,&lt;0.69.0
+</span><span id="__span-1-2">pydantic&gt;=1.8.0,&lt;2.0.0
+</span><span id="__span-1-3">uvicorn&gt;=0.15.0,&lt;0.16.0
+</span></code></pre></div>
+<p>&amp; 👆 🔜 🛎 ❎ 👈 📦 🔗 ⏮️ <code>pip</code>, 🖼:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-2-2"><span class="go">---&gt; 100%</span>
+</span><span id="__span-2-3"><span class="go">Successfully installed readyapi pydantic uvicorn</span>
+</span></code></pre></div>
+
+</div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>📤 🎏 📁 &amp; 🧰 🔬 &amp; ❎ 📦 🔗.</p>
+<p>👤 🔜 🎦 👆 🖼 ⚙️ 🎶 ⏪ 📄 🔛. 👶</p>
+</div>
+<h3 id="readyapi_1">✍ <strong>ReadyAPI</strong> 📟<a class="headerlink" href="#readyapi_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>✍ <code>app</code> 📁 &amp; ⛔ ⚫️.</li>
+<li>✍ 🛁 📁 <code>__init__.py</code>.</li>
+<li>✍ <code>main.py</code> 📁 ⏮️:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Union</span>
+</span><span id="__span-3-2">
+</span><span id="__span-3-3"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">ReadyAPI</span>
+</span><span id="__span-3-4">
+</span><span id="__span-3-5"><span class="n">app</span> <span class="o">=</span> <span class="n">ReadyAPI</span><span class="p">()</span>
+</span><span id="__span-3-6">
+</span><span id="__span-3-7">
+</span><span id="__span-3-8"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+</span><span id="__span-3-9"><span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
+</span><span id="__span-3-10">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
+</span><span id="__span-3-11">
+</span><span id="__span-3-12">
+</span><span id="__span-3-13"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-3-14"><span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-3-15">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="_6">📁<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>🔜 🎏 🏗 📁 ✍ 📁 <code>Dockerfile</code> ⏮️:</p>
+<div class="annotate highlight"><pre><span></span><code><span id="__span-4-1"><span class="c"># (1)</span>
+</span><span id="__span-4-2"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+</span><span id="__span-4-3">
+</span><span id="__span-4-4"><span class="c"># (2)</span>
+</span><span id="__span-4-5"><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span>
+</span><span id="__span-4-6">
+</span><span id="__span-4-7"><span class="c"># (3)</span>
+</span><span id="__span-4-8"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-4-9">
+</span><span id="__span-4-10"><span class="c"># (4)</span>
+</span><span id="__span-4-11"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-4-12">
+</span><span id="__span-4-13"><span class="c"># (5)</span>
+</span><span id="__span-4-14"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/code/app
+</span><span id="__span-4-15">
+</span><span id="__span-4-16"><span class="c"># (6)</span>
+</span><span id="__span-4-17"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<p>1️⃣. ▶️ ⚪️➡️ 🛂 🐍 🧢 🖼.</p>
+<p>2️⃣. ⚒ ⏮️ 👷 📁 <code>/code</code>.</p>
+<div class="highlight"><pre><span></span><code>👉 🌐❔ 👥 🔜 🚮 `requirements.txt` 📁 &amp;amp; `app` 📁.
+</code></pre></div>
+<p>3️⃣. 📁 📁 ⏮️ 📄 <code>/code</code> 📁.</p>
+<div class="highlight"><pre><span></span><code>📁 **🕴** 📁 ⏮️ 📄 🥇, 🚫 🎂 📟.
+
+👉 📁 **🚫 🔀 🛎**, ☁ 🔜 🔍 ⚫️ &amp;amp; ⚙️ **💾** 👉 🔁, 🛠️ 💾 ⏭ 🔁 💁‍♂️.
+</code></pre></div>
+<p>4️⃣. ❎ 📦 🔗 📄 📁.</p>
+<div class="highlight"><pre><span></span><code> `--no-cache-dir` 🎛 💬 `pip` 🚫 🖊 ⏬ 📦 🌐, 👈 🕴 🚥 `pip` 🔜 🏃 🔄 ❎ 🎏 📦, ✋️ 👈 🚫 💼 🕐❔ 👷 ⏮️ 📦.
+
+/// note
+
+`--no-cache-dir` 🕴 🔗 `pip`, ⚫️ ✔️ 🕳 ⏮️ ☁ ⚖️ 📦.
+
+///
+
+ `--upgrade` 🎛 💬 `pip` ♻ 📦 🚥 👫 ⏪ ❎.
+
+↩️ ⏮️ 🔁 🖨 📁 💪 🔍 **☁ 💾**, 👉 🔁 🔜 **⚙️ ☁ 💾** 🕐❔ 💪.
+
+⚙️ 💾 👉 🔁 🔜 **🖊** 👆 📚 **🕰** 🕐❔ 🏗 🖼 🔄 &amp;amp; 🔄 ⏮️ 🛠️, ↩️ **⏬ &amp;amp; ❎** 🌐 🔗 **🔠 🕰**.
+</code></pre></div>
+<p>5️⃣. 📁 <code>./app</code> 📁 🔘 <code>/code</code> 📁.</p>
+<div class="highlight"><pre><span></span><code>👉 ✔️ 🌐 📟 ❔ ⚫️❔ **🔀 🌅 🛎** ☁ **💾** 🏆 🚫 ⚙️ 👉 ⚖️ 🙆 **📄 🔁** 💪.
+
+, ⚫️ ⚠ 🚮 👉 **🏘 🔚** `Dockerfile`, 🔬 📦 🖼 🏗 🕰.
+</code></pre></div>
+<p>6️⃣. ⚒ <strong>📋</strong> 🏃 <code>uvicorn</code> 💽.</p>
+<div class="highlight"><pre><span></span><code>`CMD` ✊ 📇 🎻, 🔠 👫 🎻 ⚫️❔ 👆 🔜 🆎 📋 ⏸ 👽 🚀.
+
+👉 📋 🔜 🏃 ⚪️➡️ **⏮️ 👷 📁**, 🎏 `/code` 📁 👆 ⚒ 🔛 ⏮️ `WORKDIR /code`.
+
+↩️ 📋 🔜 ▶️ `/code` &amp;amp; 🔘 ⚫️ 📁 `./app` ⏮️ 👆 📟, **Uvicorn** 🔜 💪 👀 &amp;amp; **🗄** `app` ⚪️➡️ `app.main`.
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>📄 ⚫️❔ 🔠 ⏸ 🔨 🖊 🔠 🔢 💭 📟. 👶</p>
+</div>
+<p>👆 🔜 🔜 ✔️ 📁 📊 💖:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1">.
+</span><span id="__span-5-2">├── app
+</span><span id="__span-5-3">│   ├── __init__.py
+</span><span id="__span-5-4">│   └── main.py
+</span><span id="__span-5-5">├── Dockerfile
+</span><span id="__span-5-6">└── requirements.txt
+</span></code></pre></div>
+<h4 id="_7">⛅ 🤝 ❎ 🗳<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>🚥 👆 🏃‍♂ 👆 📦 ⛅ 🤝 ❎ 🗳 (📐 ⚙) 💖 👌 ⚖️ Traefik, 🚮 🎛 <code>--proxy-headers</code>, 👉 🔜 💬 Uvicorn 💙 🎚 📨 👈 🗳 💬 ⚫️ 👈 🈸 🏃 ⛅ 🇺🇸🔍, ♒️.</p>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--proxy-headers&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<h4 id="_8">☁ 💾<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>📤 ⚠ 🎱 👉 <code>Dockerfile</code>, 👥 🥇 📁 <strong>📁 ⏮️ 🔗 😞</strong>, 🚫 🎂 📟. ➡️ 👤 💬 👆 ⚫️❔ 👈.</p>
+<div class="highlight"><pre><span></span><code><span id="__span-7-1"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/code/requirements.txt
+</span></code></pre></div>
+<p>☁ &amp; 🎏 🧰 <strong>🏗</strong> 👉 📦 🖼 <strong>🔁</strong>, 🚮 <strong>1️⃣ 🧽 🔛 🔝 🎏</strong>, ▶️ ⚪️➡️ 🔝 <code>Dockerfile</code> &amp; ❎ 🙆 📁 ✍ 🔠 👩‍🌾 <code>Dockerfile</code>.</p>
+<p>☁ &amp; 🎏 🧰 ⚙️ <strong>🔗 💾</strong> 🕐❔ 🏗 🖼, 🚥 📁 🚫 🔀 ↩️ 🏁 🕰 🏗 📦 🖼, ⤴️ ⚫️ 🔜 <strong>🏤-⚙️ 🎏 🧽</strong> ✍ 🏁 🕰, ↩️ 🖨 📁 🔄 &amp; 🏗 🆕 🧽 ⚪️➡️ 🖌.</p>
+<p>❎ 📁 📁 🚫 🎯 📉 👜 💁‍♂️ 🌅, ✋️ ↩️ ⚫️ ⚙️ 💾 👈 🔁, ⚫️ 💪 <strong>⚙️ 💾 ⏭ 🔁</strong>. 🖼, ⚫️ 💪 ⚙️ 💾 👩‍🌾 👈 ❎ 🔗 ⏮️:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-8-1"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/code/requirements.txt
+</span></code></pre></div>
+<p>📁 ⏮️ 📦 📄 <strong>🏆 🚫 🔀 🛎</strong>. , 🖨 🕴 👈 📁, ☁ 🔜 💪 <strong>⚙️ 💾</strong> 👈 🔁.</p>
+<p>&amp; ⤴️, ☁ 🔜 💪 <strong>⚙️ 💾 ⏭ 🔁</strong> 👈 ⏬ &amp; ❎ 👈 🔗. &amp; 📥 🌐❔ 👥 <strong>🖊 📚 🕰</strong>. 👶 ...&amp; ❎ 😩 ⌛. 👶 👶</p>
+<p>⏬ &amp; ❎ 📦 🔗 <strong>💪 ✊ ⏲</strong>, ✋️ ⚙️ <strong>💾</strong> 🔜 <strong>✊ 🥈</strong> 🌅.</p>
+<p>&amp; 👆 🔜 🏗 📦 🖼 🔄 &amp; 🔄 ⏮️ 🛠️ ✅ 👈 👆 📟 🔀 👷, 📤 📚 📈 🕰 👉 🔜 🖊.</p>
+<p>⤴️, 🏘 🔚 <code>Dockerfile</code>, 👥 📁 🌐 📟. 👉 ⚫️❔ <strong>🔀 🏆 🛎</strong>, 👥 🚮 ⚫️ 🏘 🔚, ↩️ 🌖 🕧, 🕳 ⏮️ 👉 🔁 🔜 🚫 💪 ⚙️ 💾.</p>
+<div class="highlight"><pre><span></span><code><span id="__span-9-1"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/code/app
+</span></code></pre></div>
+<h3 id="_9">🏗 ☁ 🖼<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>🔜 👈 🌐 📁 🥉, ➡️ 🏗 📦 🖼.</p>
+<ul>
+<li>🚶 🏗 📁 (🌐❔ 👆 <code>Dockerfile</code> , ⚗ 👆 <code>app</code> 📁).</li>
+<li>🏗 👆 ReadyAPI 🖼:</li>
+</ul>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-10-1"><span class="gp">$ </span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>myimage<span class="w"> </span>.
+</span><span id="__span-10-2">
+</span><span id="__span-10-3"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>👀 <code>.</code> 🔚, ⚫️ 🌓 <code>./</code>, ⚫️ 💬 ☁ 📁 ⚙️ 🏗 📦 🖼.</p>
+<p>👉 💼, ⚫️ 🎏 ⏮️ 📁 (<code>.</code>).</p>
+</div>
+<h3 id="_10">▶️ ☁ 📦<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>🏃 📦 ⚓️ 🔛 👆 🖼:</li>
+</ul>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="gp">$ </span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>mycontainer<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span>myimage
+</span></code></pre></div>
+
+</div>
+
+<h2 id="_11">✅ ⚫️<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>👆 🔜 💪 ✅ ⚫️ 👆 ☁ 📦 📛, 🖼: <a href="http://192.168.99.100/items/5?q=somequery" class="external-link" target="_blank">http://192.168.99.100/items/5?q=somequery</a> ⚖️ <a href="http://127.0.0.1/items/5?q=somequery" class="external-link" target="_blank">http://127.0.0.1/items/5?q=somequery</a> (⚖️ 🌓, ⚙️ 👆 ☁ 🦠).</p>
+<p>👆 🔜 👀 🕳 💖:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-12-1"><span class="p">{</span><span class="nt">&quot;item_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;q&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;somequery&quot;</span><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="_12">🎓 🛠️ 🩺<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>🔜 👆 💪 🚶 <a href="http://192.168.99.100/docs" class="external-link" target="_blank">http://192.168.99.100/docs</a> ⚖️ <a href="http://127.0.0.1/docs" class="external-link" target="_blank">http://127.0.0.1/docs</a> (⚖️ 🌓, ⚙️ 👆 ☁ 🦠).</p>
+<p>👆 🔜 👀 🏧 🎓 🛠️ 🧾 (🚚 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>):</p>
+<p><img alt="Swagger UI" src="https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png" /></p>
+<h2 id="_13">🎛 🛠️ 🩺<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>&amp; 👆 💪 🚶 <a href="http://192.168.99.100/redoc" class="external-link" target="_blank">http://192.168.99.100/redoc</a> ⚖️ <a href="http://127.0.0.1/redoc" class="external-link" target="_blank">http://127.0.0.1/redoc</a> (⚖️ 🌓, ⚙️ 👆 ☁ 🦠).</p>
+<p>👆 🔜 👀 🎛 🏧 🧾 (🚚 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>):</p>
+<p><img alt="ReDoc" src="https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png" /></p>
+<h2 id="-readyapi">🏗 ☁ 🖼 ⏮️ 👁-📁 ReadyAPI<a class="headerlink" href="#-readyapi" title="Permanent link">&para;</a></h2>
+<p>🚥 👆 ReadyAPI 👁 📁, 🖼, <code>main.py</code> 🍵 <code>./app</code> 📁, 👆 📁 📊 💪 👀 💖 👉:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-13-1">.
+</span><span id="__span-13-2">├── Dockerfile
+</span><span id="__span-13-3">├── main.py
+</span><span id="__span-13-4">└── requirements.txt
+</span></code></pre></div>
+<p>⤴️ 👆 🔜 ✔️ 🔀 🔗 ➡ 📁 📁 🔘 <code>Dockerfile</code>:</p>
+<div class="annotate highlight"><pre><span></span><code><span id="__span-14-1"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+</span><span id="__span-14-2">
+</span><span id="__span-14-3"><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span>
+</span><span id="__span-14-4">
+</span><span id="__span-14-5"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-14-6">
+</span><span id="__span-14-7"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-14-8">
+</span><span id="__span-14-9"><span class="c"># (1)</span>
+</span><span id="__span-14-10"><span class="hll"><span class="k">COPY</span><span class="w"> </span>./main.py<span class="w"> </span>/code/
+</span></span><span id="__span-14-11">
+</span><span id="__span-14-12"><span class="c"># (2)</span>
+</span><span id="__span-14-13"><span class="hll"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span></span></code></pre></div>
+<p>1️⃣. 📁 <code>main.py</code> 📁 <code>/code</code> 📁 🔗 (🍵 🙆 <code>./app</code> 📁).</p>
+<p>2️⃣. 🏃 Uvicorn &amp; 💬 ⚫️ 🗄 <code>app</code> 🎚 ⚪️➡️ <code>main</code> (↩️ 🏭 ⚪️➡️ <code>app.main</code>).</p>
+<p>⤴️ 🔆 Uvicorn 📋 ⚙️ 🆕 🕹 <code>main</code> ↩️ <code>app.main</code> 🗄 ReadyAPI 🎚 <code>app</code>.</p>
+<h2 id="_14">🛠️ 🔧<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>➡️ 💬 🔄 🔃 🎏 <a class="internal-link" href="../concepts/" target="_blank">🛠️ 🔧</a> ⚖ 📦.</p>
+<p>📦 ✴️ 🧰 📉 🛠️ <strong>🏗 &amp; 🛠️</strong> 🈸, ✋️ 👫 🚫 🛠️ 🎯 🎯 🍵 👉 <strong>🛠️ 🔧</strong>, &amp; 📤 📚 💪 🎛.</p>
+<p><strong>👍 📰</strong> 👈 ⏮️ 🔠 🎏 🎛 📤 🌌 📔 🌐 🛠️ 🔧. 👶</p>
+<p>➡️ 📄 👉 <strong>🛠️ 🔧</strong> ⚖ 📦:</p>
+<ul>
+<li>🇺🇸🔍</li>
+<li>🏃‍♂ 🔛 🕴</li>
+<li>⏏</li>
+<li>🧬 (🔢 🛠️ 🏃)</li>
+<li>💾</li>
+<li>⏮️ 🔁 ⏭ ▶️</li>
+</ul>
+<h2 id="_15">🇺🇸🔍<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>🚥 👥 🎯 🔛 <strong>📦 🖼</strong> ReadyAPI 🈸 (&amp; ⏪ 🏃‍♂ <strong>📦</strong>), 🇺🇸🔍 🛎 🔜 🍵 <strong>🗜</strong> ➕1️⃣ 🧰.</p>
+<p>⚫️ 💪 ➕1️⃣ 📦, 🖼 ⏮️ <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>, 🚚 <strong>🇺🇸🔍</strong> &amp; <strong>🏧</strong> 🛠️ <strong>📄</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Traefik ✔️ 🛠️ ⏮️ ☁, Kubernetes, &amp; 🎏, ⚫️ 📶 ⏩ ⚒ 🆙 &amp; 🔗 🇺🇸🔍 👆 📦 ⏮️ ⚫️.</p>
+</div>
+<p>👐, 🇺🇸🔍 💪 🍵 ☁ 🐕‍🦺 1️⃣ 👫 🐕‍🦺 (⏪ 🏃 🈸 📦).</p>
+<h2 id="_16">🏃‍♂ 🔛 🕴 &amp; ⏏<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>📤 🛎 ➕1️⃣ 🧰 🈚 <strong>▶️ &amp; 🏃‍♂</strong> 👆 📦.</p>
+<p>⚫️ 💪 <strong>☁</strong> 🔗, <strong>☁ ✍</strong>, <strong>Kubernetes</strong>, <strong>☁ 🐕‍🦺</strong>, ♒️.</p>
+<p>🌅 (⚖️ 🌐) 💼, 📤 🙅 🎛 🛠️ 🏃 📦 🔛 🕴 &amp; 🛠️ ⏏ 🔛 ❌. 🖼, ☁, ⚫️ 📋 ⏸ 🎛 <code>--restart</code>.</p>
+<p>🍵 ⚙️ 📦, ⚒ 🈸 🏃 🔛 🕴 &amp; ⏮️ ⏏ 💪 ⚠ &amp; ⚠. ✋️ 🕐❔ <strong>👷 ⏮️ 📦</strong> 🌅 💼 👈 🛠️ 🔌 🔢. 👶</p>
+<h2 id="-">🧬 - 🔢 🛠️<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<p>🚥 👆 ✔️ <abbr title="A group of machines that are configured to be connected and work together in some way.">🌑</abbr> 🎰 ⏮️ <strong>☁</strong>, ☁ 🐝 📳, 🖖, ⚖️ ➕1️⃣ 🎏 🏗 ⚙️ 🛠️ 📎 📦 🔛 💗 🎰, ⤴️ 👆 🔜 🎲 💚 <strong>🍵 🧬</strong> <strong>🌑 🎚</strong> ↩️ ⚙️ <strong>🛠️ 👨‍💼</strong> (💖 🐁 ⏮️ 👨‍🏭) 🔠 📦.</p>
+<p>1️⃣ 📚 📎 📦 🧾 ⚙️ 💖 Kubernetes 🛎 ✔️ 🛠️ 🌌 🚚 <strong>🧬 📦</strong> ⏪ 🔗 <strong>📐 ⚖</strong> 📨 📨. 🌐 <strong>🌑 🎚</strong>.</p>
+<p>📚 💼, 👆 🔜 🎲 💚 🏗 <strong>☁ 🖼 ⚪️➡️ 🖌</strong> <a href="#_6">🔬 🔛</a>, ❎ 👆 🔗, &amp; 🏃‍♂ <strong>👁 Uvicorn 🛠️</strong> ↩️ 🏃‍♂ 🕳 💖 🐁 ⏮️ Uvicorn 👨‍🏭.</p>
+<h3 id="_17">📐 ⚙<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>🕐❔ ⚙️ 📦, 👆 🔜 🛎 ✔️ 🦲 <strong>👂 🔛 👑 ⛴</strong>. ⚫️ 💪 🎲 ➕1️⃣ 📦 👈 <strong>🤝 ❎ 🗳</strong> 🍵 <strong>🇺🇸🔍</strong> ⚖️ 🎏 🧰.</p>
+<p>👉 🦲 🔜 ✊ <strong>📐</strong> 📨 &amp; 📎 👈 👪 👨‍🏭 (🤞) <strong>⚖</strong> 🌌, ⚫️ 🛎 🤙 <strong>📐 ⚙</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>🎏 <strong>🤝 ❎ 🗳</strong> 🦲 ⚙️ 🇺🇸🔍 🔜 🎲 <strong>📐 ⚙</strong>.</p>
+</div>
+<p>&amp; 🕐❔ 👷 ⏮️ 📦, 🎏 ⚙️ 👆 ⚙️ ▶️ &amp; 🛠️ 👫 🔜 ⏪ ✔️ 🔗 🧰 📶 <strong>🕸 📻</strong> (✅ 🇺🇸🔍 📨) ⚪️➡️ 👈 <strong>📐 ⚙</strong> (👈 💪 <strong>🤝 ❎ 🗳</strong>) 📦(Ⓜ) ⏮️ 👆 📱.</p>
+<h3 id="1-">1️⃣ 📐 ⚙ - 💗 👨‍🏭 📦<a class="headerlink" href="#1-" title="Permanent link">&para;</a></h3>
+<p>🕐❔ 👷 ⏮️ <strong>Kubernetes</strong> ⚖️ 🎏 📎 📦 🧾 ⚙️, ⚙️ 👫 🔗 🕸 🛠️ 🔜 ✔ 👁 <strong>📐 ⚙</strong> 👈 👂 🔛 👑 <strong>⛴</strong> 📶 📻 (📨) 🎲 <strong>💗 📦</strong> 🏃 👆 📱.</p>
+<p>🔠 👫 📦 🏃‍♂ 👆 📱 🔜 🛎 ✔️ <strong>1️⃣ 🛠️</strong> (✅ Uvicorn 🛠️ 🏃 👆 ReadyAPI 🈸). 👫 🔜 🌐 <strong>🌓 📦</strong>, 🏃‍♂ 🎏 👜, ✋️ 🔠 ⏮️ 🚮 👍 🛠️, 💾, ♒️. 👈 🌌 👆 🔜 ✊ 📈 <strong>🛠️</strong> <strong>🎏 🐚</strong> 💽, ⚖️ <strong>🎏 🎰</strong>.</p>
+<p>&amp; 📎 📦 ⚙️ ⏮️ <strong>📐 ⚙</strong> 🔜 <strong>📎 📨</strong> 🔠 1️⃣ 📦 ⏮️ 👆 📱 <strong>🔄</strong>. , 🔠 📨 💪 🍵 1️⃣ 💗 <strong>🔁 📦</strong> 🏃 👆 📱.</p>
+<p>&amp; 🛎 👉 <strong>📐 ⚙</strong> 🔜 💪 🍵 📨 👈 🚶 <em>🎏</em> 📱 👆 🌑 (✅ 🎏 🆔, ⚖️ 🔽 🎏 📛 ➡ 🔡), &amp; 🔜 📶 👈 📻 ▶️️ 📦 <em>👈 🎏</em> 🈸 🏃‍♂ 👆 🌑.</p>
+<h3 id="1">1️⃣ 🛠️ 📍 📦<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>👉 🆎 😐, 👆 🎲 🔜 💚 ✔️ <strong>👁 (Uvicorn) 🛠️ 📍 📦</strong>, 👆 🔜 ⏪ 🚚 🧬 🌑 🎚.</p>
+<p>, 👉 💼, 👆 <strong>🔜 🚫</strong> 💚 ✔️ 🛠️ 👨‍💼 💖 🐁 ⏮️ Uvicorn 👨‍🏭, ⚖️ Uvicorn ⚙️ 🚮 👍 Uvicorn 👨‍🏭. 👆 🔜 💚 ✔️ <strong>👁 Uvicorn 🛠️</strong> 📍 📦 (✋️ 🎲 💗 📦).</p>
+<p>✔️ ➕1️⃣ 🛠️ 👨‍💼 🔘 📦 (🔜 ⏮️ 🐁 ⚖️ Uvicorn 🛠️ Uvicorn 👨‍🏭) 🔜 🕴 🚮 <strong>🙃 🔀</strong> 👈 👆 🌅 🎲 ⏪ ✊ 💅 ⏮️ 👆 🌑 ⚙️.</p>
+<h3 id="_18">📦 ⏮️ 💗 🛠️ &amp; 🎁 💼<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>↗️, 📤 <strong>🎁 💼</strong> 🌐❔ 👆 💪 💚 ✔️ <strong>📦</strong> ⏮️ <strong>🐁 🛠️ 👨‍💼</strong> ▶️ 📚 <strong>Uvicorn 👨‍🏭 🛠️</strong> 🔘.</p>
+<p>📚 💼, 👆 💪 ⚙️ <strong>🛂 ☁ 🖼</strong> 👈 🔌 <strong>🐁</strong> 🛠️ 👨‍💼 🏃‍♂ 💗 <strong>Uvicorn 👨‍🏭 🛠️</strong>, &amp; 🔢 ⚒ 🔆 🔢 👨‍🏭 ⚓️ 🔛 ⏮️ 💽 🐚 🔁. 👤 🔜 💬 👆 🌅 🔃 ⚫️ 🔛 <a href="#-uvicorn">🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn</a>.</p>
+<p>📥 🖼 🕐❔ 👈 💪 ⚒ 🔑:</p>
+<h4 id="_19">🙅 📱<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<p>👆 💪 💚 🛠️ 👨‍💼 📦 🚥 👆 🈸 <strong>🙅 🥃</strong> 👈 👆 🚫 💪 (🐥 🚫) 👌-🎶 🔢 🛠️ 💁‍♂️ 🌅, &amp; 👆 💪 ⚙️ 🏧 🔢 (⏮️ 🛂 ☁ 🖼), &amp; 👆 🏃‍♂ ⚫️ 🔛 <strong>👁 💽</strong>, 🚫 🌑.</p>
+<h4 id="_20">☁ ✍<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<p>👆 💪 🛠️ <strong>👁 💽</strong> (🚫 🌑) ⏮️ <strong>☁ ✍</strong>, 👆 🚫🔜 ✔️ ⏩ 🌌 🛠️ 🧬 📦 (⏮️ ☁ ✍) ⏪ 🛡 🔗 🕸 &amp; <strong>📐 ⚖</strong>.</p>
+<p>⤴️ 👆 💪 💚 ✔️ <strong>👁 📦</strong> ⏮️ <strong>🛠️ 👨‍💼</strong> ▶️ <strong>📚 👨‍🏭 🛠️</strong> 🔘.</p>
+<h4 id="_21">🤴 &amp; 🎏 🤔<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<p>👆 💪 ✔️ <strong>🎏 🤔</strong> 👈 🔜 ⚒ ⚫️ ⏩ ✔️ <strong>👁 📦</strong> ⏮️ <strong>💗 🛠️</strong> ↩️ ✔️ <strong>💗 📦</strong> ⏮️ <strong>👁 🛠️</strong> 🔠 👫.</p>
+<p>🖼 (🪀 🔛 👆 🖥) 👆 💪 ✔️ 🧰 💖 🤴 🏭 🎏 📦 👈 🔜 ✔️ 🔐 <strong>🔠 📨</strong> 👈 👟.</p>
+<p>👉 💼, 🚥 👆 ✔️ <strong>💗 📦</strong>, 🔢, 🕐❔ 🤴 👟 <strong>✍ ⚖</strong>, ⚫️ 🔜 🤚 🕐 <strong>👁 📦 🔠 🕰</strong> (📦 👈 🍵 👈 🎯 📨), ↩️ 🤚 <strong>📈 ⚖</strong> 🌐 🔁 📦.</p>
+<p>⤴️, 👈 💼, ⚫️ 💪 🙅 ✔️ <strong>1️⃣ 📦</strong> ⏮️ <strong>💗 🛠️</strong>, &amp; 🇧🇿 🧰 (✅ 🤴 🏭) 🔛 🎏 📦 📈 🤴 ⚖ 🌐 🔗 🛠️ &amp; 🎦 👈 ⚖ 🔛 👈 👁 📦.</p>
+<hr />
+<p>👑 ☝, <strong>👌</strong> 👉 <strong>🚫 ✍ 🗿</strong> 👈 👆 ✔️ 😄 ⏩. 👆 💪 ⚙️ 👫 💭 <strong>🔬 👆 👍 ⚙️ 💼</strong> &amp; 💭 ⚫️❔ 👍 🎯 👆 ⚙️, ✅ 👅 ❔ 🛠️ 🔧:</p>
+<ul>
+<li>💂‍♂ - 🇺🇸🔍</li>
+<li>🏃‍♂ 🔛 🕴</li>
+<li>⏏</li>
+<li>🧬 (🔢 🛠️ 🏃)</li>
+<li>💾</li>
+<li>⏮️ 🔁 ⏭ ▶️</li>
+</ul>
+<h2 id="_22">💾<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p>🚥 👆 🏃 <strong>👁 🛠️ 📍 📦</strong> 👆 🔜 ✔️ 🌅 ⚖️ 🌘 👍-🔬, ⚖, &amp; 📉 💸 💾 🍴 🔠 👈 📦 (🌅 🌘 1️⃣ 🚥 👫 🔁).</p>
+<p>&amp; ⤴️ 👆 💪 ⚒ 👈 🎏 💾 📉 &amp; 📄 👆 📳 👆 📦 🧾 ⚙️ (🖼 <strong>Kubernetes</strong>). 👈 🌌 ⚫️ 🔜 💪 <strong>🔁 📦</strong> <strong>💪 🎰</strong> ✊ 🔘 🏧 💸 💾 💪 👫, &amp; 💸 💪 🎰 🌑.</p>
+<p>🚥 👆 🈸 <strong>🙅</strong>, 👉 🔜 🎲 <strong>🚫 ⚠</strong>, &amp; 👆 💪 🚫 💪 ✔ 🏋️ 💾 📉. ✋️ 🚥 👆 <strong>⚙️ 📚 💾</strong> (🖼 ⏮️ <strong>🎰 🏫</strong> 🏷), 👆 🔜 ✅ ❔ 🌅 💾 👆 😩 &amp; 🔆 <strong>🔢 📦</strong> 👈 🏃 <strong>🔠 🎰</strong> (&amp; 🎲 🚮 🌖 🎰 👆 🌑).</p>
+<p>🚥 👆 🏃 <strong>💗 🛠️ 📍 📦</strong> (🖼 ⏮️ 🛂 ☁ 🖼) 👆 🔜 ✔️ ⚒ 💭 👈 🔢 🛠️ ▶️ 🚫 <strong>🍴 🌖 💾</strong> 🌘 ⚫️❔ 💪.</p>
+<h2 id="_23">⏮️ 🔁 ⏭ ▶️ &amp; 📦<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<p>🚥 👆 ⚙️ 📦 (✅ ☁, Kubernetes), ⤴️ 📤 2️⃣ 👑 🎯 👆 💪 ⚙️.</p>
+<h3 id="_24">💗 📦<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>🚥 👆 ✔️ <strong>💗 📦</strong>, 🎲 🔠 1️⃣ 🏃 <strong>👁 🛠️</strong> (🖼, <strong>Kubernetes</strong> 🌑), ⤴️ 👆 🔜 🎲 💚 ✔️ <strong>🎏 📦</strong> 🔨 👷 <strong>⏮️ 📶</strong> 👁 📦, 🏃 👁 🛠️, <strong>⏭</strong> 🏃 🔁 👨‍🏭 📦.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>🚥 👆 ⚙️ Kubernetes, 👉 🔜 🎲 <a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/" class="external-link" target="_blank">🕑 📦</a>.</p>
+</div>
+<p>🚥 👆 ⚙️ 💼 📤 🙅‍♂ ⚠ 🏃‍♂ 👈 ⏮️ 📶 <strong>💗 🕰 🔗</strong> (🖼 🚥 👆 🚫 🏃 💽 🛠️, ✋️ ✅ 🚥 💽 🔜), ⤴️ 👆 💪 🚮 👫 🔠 📦 ▶️️ ⏭ ▶️ 👑 🛠️.</p>
+<h3 id="_25">👁 📦<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<p>🚥 👆 ✔️ 🙅 🖥, ⏮️ <strong>👁 📦</strong> 👈 ⤴️ ▶️ 💗 <strong>👨‍🏭 🛠️</strong> (⚖️ 1️⃣ 🛠️), ⤴️ 👆 💪 🏃 👈 ⏮️ 🔁 🎏 📦, ▶️️ ⏭ ▶️ 🛠️ ⏮️ 📱. 🛂 ☁ 🖼 🐕‍🦺 👉 🔘.</p>
+<h2 id="-uvicorn">🛂 ☁ 🖼 ⏮️ 🐁 - Uvicorn<a class="headerlink" href="#-uvicorn" title="Permanent link">&para;</a></h2>
+<p>📤 🛂 ☁ 🖼 👈 🔌 🐁 🏃‍♂ ⏮️ Uvicorn 👨‍🏭, ℹ ⏮️ 📃: <a class="internal-link" href="../server-workers/" target="_blank">💽 👨‍🏭 - 🐁 ⏮️ Uvicorn</a>.</p>
+<p>👉 🖼 🔜 ⚠ ✴️ ⚠ 🔬 🔛: <a href="#_18">📦 ⏮️ 💗 🛠️ &amp; 🎁 💼</a>.</p>
+<ul>
+<li><a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-🐁-readyapi</a>.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>📤 ↕ 🤞 👈 👆 <strong>🚫</strong> 💪 👉 🧢 🖼 ⚖️ 🙆 🎏 🎏 1️⃣, &amp; 🔜 👻 📆 🏗 🖼 ⚪️➡️ 🖌 <a href="#readyapi">🔬 🔛: 🏗 ☁ 🖼 ReadyAPI</a>.</p>
+</div>
+<p>👉 🖼 ✔️ <strong>🚘-📳</strong> 🛠️ 🔌 ⚒ <strong>🔢 👨‍🏭 🛠️</strong> ⚓️ 🔛 💽 🐚 💪.</p>
+<p>⚫️ ✔️ <strong>🤔 🔢</strong>, ✋️ 👆 💪 🔀 &amp; ℹ 🌐 📳 ⏮️ <strong>🌐 🔢</strong> ⚖️ 📳 📁.</p>
+<p>⚫️ 🐕‍🦺 🏃 <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker#pre_start_path" class="external-link" target="_blank"><strong>⏮️ 🔁 ⏭ ▶️</strong></a> ⏮️ ✍.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>👀 🌐 📳 &amp; 🎛, 🚶 ☁ 🖼 📃: <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">Khulnasoft/uvicorn-🐁-readyapi</a>.</p>
+</div>
+<h3 id="_26">🔢 🛠️ 🔛 🛂 ☁ 🖼<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p><strong>🔢 🛠️</strong> 🔛 👉 🖼 <strong>📊 🔁</strong> ⚪️➡️ 💽 <strong>🐚</strong> 💪.</p>
+<p>👉 ⛓ 👈 ⚫️ 🔜 🔄 <strong>🗜</strong> 🌅 <strong>🎭</strong> ⚪️➡️ 💽 💪.</p>
+<p>👆 💪 🔆 ⚫️ ⏮️ 📳 ⚙️ <strong>🌐 🔢</strong>, ♒️.</p>
+<p>✋️ ⚫️ ⛓ 👈 🔢 🛠️ 🪀 🔛 💽 📦 🏃, <strong>💸 💾 🍴</strong> 🔜 🪀 🔛 👈.</p>
+<p>, 🚥 👆 🈸 🍴 📚 💾 (🖼 ⏮️ 🎰 🏫 🏷), &amp; 👆 💽 ✔️ 📚 💽 🐚 <strong>✋️ 🐥 💾</strong>, ⤴️ 👆 📦 💪 🔚 🆙 🔄 ⚙️ 🌅 💾 🌘 ⚫️❔ 💪, &amp; 🤕 🎭 📚 (⚖️ 💥). 👶</p>
+<h3 id="dockerfile">✍ <code>Dockerfile</code><a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h3>
+<p>📥 ❔ 👆 🔜 ✍ <code>Dockerfile</code> ⚓️ 🔛 👉 🖼:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-15-1"><span class="k">FROM</span><span class="w"> </span><span class="s">khulnasoft/uvicorn-gunicorn-readyapi:python3.9</span>
+</span><span id="__span-15-2">
+</span><span id="__span-15-3"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/app/requirements.txt
+</span><span id="__span-15-4">
+</span><span id="__span-15-5"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/app/requirements.txt
+</span><span id="__span-15-6">
+</span><span id="__span-15-7"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/app
+</span></code></pre></div>
+<h3 id="_27">🦏 🈸<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p>🚥 👆 ⏩ 📄 🔃 🏗 <a class="internal-link" href="../../tutorial/bigger-applications/" target="_blank">🦏 🈸 ⏮️ 💗 📁</a>, 👆 <code>Dockerfile</code> 💪 ↩️ 👀 💖:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-16-1"><span class="k">FROM</span><span class="w"> </span><span class="s">khulnasoft/uvicorn-gunicorn-readyapi:python3.9</span>
+</span><span id="__span-16-2">
+</span><span id="__span-16-3"><span class="k">COPY</span><span class="w"> </span>./requirements.txt<span class="w"> </span>/app/requirements.txt
+</span><span id="__span-16-4">
+</span><span id="__span-16-5"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/app/requirements.txt
+</span><span id="__span-16-6">
+</span><span id="__span-16-7"><span class="hll"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/app/app
+</span></span></code></pre></div>
+<h3 id="_28">🕐❔ ⚙️<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>👆 🔜 🎲 <strong>🚫</strong> ⚙️ 👉 🛂 🧢 🖼 (⚖️ 🙆 🎏 🎏 1️⃣) 🚥 👆 ⚙️ <strong>Kubernetes</strong> (⚖️ 🎏) &amp; 👆 ⏪ ⚒ <strong>🧬</strong> 🌑 🎚, ⏮️ 💗 <strong>📦</strong>. 📚 💼, 👆 👍 📆 <strong>🏗 🖼 ⚪️➡️ 🖌</strong> 🔬 🔛: <a href="#readyapi">🏗 ☁ 🖼 ReadyAPI</a>.</p>
+<p>👉 🖼 🔜 ⚠ ✴️ 🎁 💼 🔬 🔛 <a href="#_18">📦 ⏮️ 💗 🛠️ &amp; 🎁 💼</a>. 🖼, 🚥 👆 🈸 <strong>🙅 🥃</strong> 👈 ⚒ 🔢 🔢 🛠️ ⚓️ 🔛 💽 👷 👍, 👆 🚫 💚 😥 ⏮️ ❎ 🛠️ 🧬 🌑 🎚, &amp; 👆 🚫 🏃 🌅 🌘 1️⃣ 📦 ⏮️ 👆 📱. ⚖️ 🚥 👆 🛠️ ⏮️ <strong>☁ ✍</strong>, 🏃 🔛 👁 💽, ♒️.</p>
+<h2 id="_29">🛠️ 📦 🖼<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
+<p>⏮️ ✔️ 📦 (☁) 🖼 📤 📚 🌌 🛠️ ⚫️.</p>
+<p>🖼:</p>
+<ul>
+<li>⏮️ <strong>☁ ✍</strong> 👁 💽</li>
+<li>⏮️ <strong>Kubernetes</strong> 🌑</li>
+<li>⏮️ ☁ 🐝 📳 🌑</li>
+<li>⏮️ ➕1️⃣ 🧰 💖 🖖</li>
+<li>⏮️ ☁ 🐕‍🦺 👈 ✊ 👆 📦 🖼 &amp; 🛠️ ⚫️</li>
+</ul>
+<h2 id="_30">☁ 🖼 ⏮️ 🎶<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h2>
+<p>🚥 👆 ⚙️ <a href="https://python-poetry.org/" class="external-link" target="_blank">🎶</a> 🛠️ 👆 🏗 🔗, 👆 💪 ⚙️ ☁ 👁-▶️ 🏗:</p>
+<div class="annotate highlight"><pre><span></span><code><span id="__span-17-1"><span class="c"># (1)</span>
+</span><span id="__span-17-2"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">requirements-stage</span>
+</span><span id="__span-17-3">
+</span><span id="__span-17-4"><span class="c"># (2)</span>
+</span><span id="__span-17-5"><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/tmp</span>
+</span><span id="__span-17-6">
+</span><span id="__span-17-7"><span class="c"># (3)</span>
+</span><span id="__span-17-8"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>poetry
+</span><span id="__span-17-9">
+</span><span id="__span-17-10"><span class="c"># (4)</span>
+</span><span id="__span-17-11"><span class="k">COPY</span><span class="w"> </span>./pyproject.toml<span class="w"> </span>./poetry.lock*<span class="w"> </span>/tmp/
+</span><span id="__span-17-12">
+</span><span id="__span-17-13"><span class="c"># (5)</span>
+</span><span id="__span-17-14"><span class="k">RUN</span><span class="w"> </span>poetry<span class="w"> </span><span class="nb">export</span><span class="w"> </span>-f<span class="w"> </span>requirements.txt<span class="w"> </span>--output<span class="w"> </span>requirements.txt<span class="w"> </span>--without-hashes
+</span><span id="__span-17-15">
+</span><span id="__span-17-16"><span class="c"># (6)</span>
+</span><span id="__span-17-17"><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.9</span>
+</span><span id="__span-17-18">
+</span><span id="__span-17-19"><span class="c"># (7)</span>
+</span><span id="__span-17-20"><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/code</span>
+</span><span id="__span-17-21">
+</span><span id="__span-17-22"><span class="c"># (8)</span>
+</span><span id="__span-17-23"><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>requirements-stage<span class="w"> </span>/tmp/requirements.txt<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-17-24">
+</span><span id="__span-17-25"><span class="c"># (9)</span>
+</span><span id="__span-17-26"><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-cache-dir<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>/code/requirements.txt
+</span><span id="__span-17-27">
+</span><span id="__span-17-28"><span class="c"># (10)</span>
+</span><span id="__span-17-29"><span class="k">COPY</span><span class="w"> </span>./app<span class="w"> </span>/code/app
+</span><span id="__span-17-30">
+</span><span id="__span-17-31"><span class="c"># (11)</span>
+</span><span id="__span-17-32"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<p>1️⃣. 👉 🥇 ▶️, ⚫️ 🌟 <code>requirements-stage</code>.</p>
+<p>2️⃣. ⚒ <code>/tmp</code> ⏮️ 👷 📁.</p>
+<div class="highlight"><pre><span></span><code>📥 🌐❔ 👥 🔜 🏗 📁 `requirements.txt`
+</code></pre></div>
+<p>3️⃣. ❎ 🎶 👉 ☁ ▶️.</p>
+<p>4️⃣. 📁 <code>pyproject.toml</code> &amp; <code>poetry.lock</code> 📁 <code>/tmp</code> 📁.</p>
+<div class="highlight"><pre><span></span><code>↩️ ⚫️ ⚙️ `./poetry.lock*` (▶️ ⏮️ `*`), ⚫️ 🏆 🚫 💥 🚥 👈 📁 🚫 💪.
+</code></pre></div>
+<p>5️⃣. 🏗 <code>requirements.txt</code> 📁.</p>
+<p>6️⃣. 👉 🏁 ▶️, 🕳 📥 🔜 🛡 🏁 📦 🖼.</p>
+<p>7️⃣. ⚒ ⏮️ 👷 📁 <code>/code</code>.</p>
+<p>8️⃣. 📁 <code>requirements.txt</code> 📁 <code>/code</code> 📁.</p>
+<div class="highlight"><pre><span></span><code>👉 📁 🕴 🖖 ⏮️ ☁ ▶️, 👈 ⚫️❔ 👥 ⚙️ `--from-requirements-stage` 📁 ⚫️.
+</code></pre></div>
+<p>9️⃣. ❎ 📦 🔗 🏗 <code>requirements.txt</code> 📁.</p>
+<p>1️⃣0️⃣. 📁 <code>app</code> 📁 <code>/code</code> 📁.</p>
+<p>1️⃣1️⃣. 🏃 <code>uvicorn</code> 📋, 💬 ⚫️ ⚙️ <code>app</code> 🎚 🗄 ⚪️➡️ <code>app.main</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>🖊 💭 🔢 👀 ⚫️❔ 🔠 ⏸ 🔨.</p>
+</div>
+<p><strong>☁ ▶️</strong> 🍕 <code>Dockerfile</code> 👈 👷 <strong>🍕 📦 🖼</strong> 👈 🕴 ⚙️ 🏗 📁 ⚙️ ⏪.</p>
+<p>🥇 ▶️ 🔜 🕴 ⚙️ <strong>❎ 🎶</strong> &amp; <strong>🏗 <code>requirements.txt</code></strong> ⏮️ 👆 🏗 🔗 ⚪️➡️ 🎶 <code>pyproject.toml</code> 📁.</p>
+<p>👉 <code>requirements.txt</code> 📁 🔜 ⚙️ ⏮️ <code>pip</code> ⏪ <strong>⏭ ▶️</strong>.</p>
+<p>🏁 📦 🖼 <strong>🕴 🏁 ▶️</strong> 🛡. ⏮️ ▶️(Ⓜ) 🔜 ❎.</p>
+<p>🕐❔ ⚙️ 🎶, ⚫️ 🔜 ⚒ 🔑 ⚙️ <strong>☁ 👁-▶️ 🏗</strong> ↩️ 👆 🚫 🤙 💪 ✔️ 🎶 &amp; 🚮 🔗 ❎ 🏁 📦 🖼, 👆 <strong>🕴 💪</strong> ✔️ 🏗 <code>requirements.txt</code> 📁 ❎ 👆 🏗 🔗.</p>
+<p>⤴️ ⏭ (&amp; 🏁) ▶️ 👆 🔜 🏗 🖼 🌅 ⚖️ 🌘 🎏 🌌 🔬 ⏭.</p>
+<h3 id="-_1">⛅ 🤝 ❎ 🗳 - 🎶<a class="headerlink" href="#-_1" title="Permanent link">&para;</a></h3>
+<p>🔄, 🚥 👆 🏃‍♂ 👆 📦 ⛅ 🤝 ❎ 🗳 (📐 ⚙) 💖 👌 ⚖️ Traefik, 🚮 🎛 <code>--proxy-headers</code> 📋:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-18-1"><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--proxy-headers&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="_31">🌃<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
+<p>⚙️ 📦 ⚙️ (✅ ⏮️ <strong>☁</strong> &amp; <strong>Kubernetes</strong>) ⚫️ ▶️️ 📶 🎯 🍵 🌐 <strong>🛠️ 🔧</strong>:</p>
+<ul>
+<li>🇺🇸🔍</li>
+<li>🏃‍♂ 🔛 🕴</li>
+<li>⏏</li>
+<li>🧬 (🔢 🛠️ 🏃)</li>
+<li>💾</li>
+<li>⏮️ 🔁 ⏭ ▶️</li>
+</ul>
+<p>🌅 💼, 👆 🎲 🏆 🚫 💚 ⚙️ 🙆 🧢 🖼, &amp; ↩️ <strong>🏗 📦 🖼 ⚪️➡️ 🖌</strong> 1️⃣ ⚓️ 🔛 🛂 🐍 ☁ 🖼.</p>
+<p>✊ 💅 <strong>✔</strong> 👩‍🌾 <code>Dockerfile</code> &amp; <strong>☁ 💾</strong> 👆 💪 <strong>📉 🏗 🕰</strong>, 📉 👆 📈 (&amp; ❎ 😩). 👶</p>
+<p>🎯 🎁 💼, 👆 💪 💚 ⚙️ 🛂 ☁ 🖼 ReadyAPI. 👶</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../server-workers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 💽 👨‍🏭 - 🐁 ⏮️ Uvicorn">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                💽 👨‍🏭 - 🐁 ⏮️ Uvicorn
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../how-to/" class="md-footer__link md-footer__link--next" aria-label="Next: How To - Recipes">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                How To - Recipes
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    <div class="md-copyright__highlight">
+        The ReadyAPI trademark is owned by <a href="https://khulnasoft.com" target="_blank">@khulnasoft</a> and is registered in the US and across other regions
+    </div>
+    
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+    </a>
+    
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/readyapi/readyapi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/VQjSZaeJmf" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/readyapi" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/khulnasoft" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://dev.to/khulnasoft" target="_blank" rel="noopener" title="dev.to" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35s5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06M404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8M154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@khulnasoft" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262m288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://khulnasoft.com" target="_blank" rel="noopener" title="khulnasoft.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../js/termynal.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>
