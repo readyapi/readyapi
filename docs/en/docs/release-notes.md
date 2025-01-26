@@ -103,6 +103,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump peaceiris/actions-gh-pages from 3 to 4. PR [#179](https://github.com/readyapi/readyapi/pull/179) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.12.3 to 1.12.4. PR [#180](https://github.com/readyapi/readyapi/pull/180) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Update add-to-project.yml. PR [#178](https://github.com/readyapi/readyapi/pull/178) by [@FortiShield](https://github.com/FortiShield).
 * 👥 Update ReadyAPI People - Sponsors. PR [#13231](https://github.com/readyapi/readyapi/pull/13231) by [@khulnasoft](https://github.com/khulnasoft).
