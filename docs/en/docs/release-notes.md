@@ -103,6 +103,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.3 to 1.12.4. PR [#180](https://github.com/readyapi/readyapi/pull/180) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Update add-to-project.yml. PR [#178](https://github.com/readyapi/readyapi/pull/178) by [@FortiShield](https://github.com/FortiShield).
 * 👥 Update ReadyAPI People - Sponsors. PR [#13231](https://github.com/readyapi/readyapi/pull/13231) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Refactor ReadyAPI People Sponsors to use 2 tokens. PR [#13228](https://github.com/readyapi/readyapi/pull/13228) by [@khulnasoft](https://github.com/khulnasoft).
