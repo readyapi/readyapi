@@ -588,7 +588,7 @@
   
     
   
-  ReadyAPI People
+  Macro Rendering Error
 
       </a>
     </li>
@@ -4168,7 +4168,7 @@
         
   
   <span class="md-ellipsis">
-    ReadyAPI People
+    Macro Rendering Error
   </span>
   
 
@@ -4962,9 +4962,12 @@
 </span><span id="__span-10-10">        <span class="n">results</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">})</span>
 </span><span id="__span-10-11">    <span class="k">return</span> <span class="n">results</span>
 </span></code></pre></div>
+</div>
+</div>
+</div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Python 3.9+</label><label for="__tabbed_7_2">Python 3.8+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -4983,8 +4986,7 @@
 </span><span id="__span-11-14">        <span class="n">results</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">})</span>
 </span><span id="__span-11-15">    <span class="k">return</span> <span class="n">results</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Python 3.8+</label></div>
-<div class="tabbed-content">
+</div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-12-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
 </span><span id="__span-12-2"><span class="kn">from</span><span class="w"> </span><span class="nn">typing_extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5004,18 +5006,12 @@
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 </details>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 <p>But keep in mind that if you use <code>Annotated</code>, you won't have this problem, it won't matter as you're not using the function parameter default values for <code>Query()</code> or <code>Path()</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Python 3.9+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-13-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5039,7 +5035,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Python 3.8+</label><label for="__tabbed_10_2">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Python 3.8+</label><label for="__tabbed_9_2">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-14-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
@@ -5095,7 +5091,7 @@
 <p>...Python has a little special syntax for that.</p>
 <p>Pass <code>*</code>, as the first parameter of the function.</p>
 <p>Python won't do anything with that <code>*</code>, but it will know that all the following parameters should be called as keyword arguments (key-value pairs), also known as <abbr title="From: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>. Even if they don't have a default value.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-16-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
@@ -5115,7 +5111,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Python 3.9+</label><label for="__tabbed_12_2">Python 3.8+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Python 3.9+</label><label for="__tabbed_11_2">Python 3.8+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-17-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5157,7 +5153,7 @@
 </details>
 <h3 id="better-with-annotated">Better with <code>Annotated</code><a class="headerlink" href="#better-with-annotated" title="Permanent link">&para;</a></h3>
 <p>Keep in mind that if you use <code>Annotated</code>, as you are not using function parameter default values, you won't have this problem, and you probably won't need to use <code>*</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Python 3.9+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-19-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5181,7 +5177,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Python 3.8+</label><label for="__tabbed_14_2">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Python 3.8+</label><label for="__tabbed_13_2">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-20-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
@@ -5224,7 +5220,7 @@
 <h2 id="number-validations-greater-than-or-equal">Number validations: greater than or equal<a class="headerlink" href="#number-validations-greater-than-or-equal" title="Permanent link">&para;</a></h2>
 <p>With <code>Query</code> and <code>Path</code> (and others you'll see later) you can declare number constraints.</p>
 <p>Here, with <code>ge=1</code>, <code>item_id</code> will need to be an integer number "<code>g</code>reater than or <code>e</code>qual" to <code>1</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Python 3.9+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-22-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5248,7 +5244,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">Python 3.8+</label><label for="__tabbed_16_2">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Python 3.8+</label><label for="__tabbed_15_2">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-23-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
@@ -5296,7 +5292,7 @@
 <li><code>gt</code>: <code>g</code>reater <code>t</code>han</li>
 <li><code>le</code>: <code>l</code>ess than or <code>e</code>qual</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:1"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">Python 3.9+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-25-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5321,7 +5317,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">Python 3.8+</label><label for="__tabbed_18_2">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">Python 3.8+</label><label for="__tabbed_17_2">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-26-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">ReadyAPI</span>
@@ -5371,7 +5367,7 @@
 <p>Here's where it becomes important to be able to declare <abbr title="greater than"><code>gt</code></abbr> and not just <abbr title="greater than or equal"><code>ge</code></abbr>. As with it you can require, for example, that a value must be greater than <code>0</code>, even if it is less than <code>1</code>.</p>
 <p>So, <code>0.5</code> would be a valid value. But <code>0.0</code> or <code>0</code> would not.</p>
 <p>And the same for <abbr title="less than"><code>lt</code></abbr>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="19:1"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><div class="tabbed-labels"><label for="__tabbed_19_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:1"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">Python 3.9+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-28-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -5400,7 +5396,7 @@
 </div>
 <details>
 <summary>🤓 Other versions and variants</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="20:2"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio" /><input id="__tabbed_20_2" name="__tabbed_20" type="radio" /><div class="tabbed-labels"><label for="__tabbed_20_1">Python 3.8+</label><label for="__tabbed_20_2">Python 3.8+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><div class="tabbed-labels"><label for="__tabbed_19_1">Python 3.8+</label><label for="__tabbed_19_2">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-29-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Query</span><span class="p">,</span> <span class="n">ReadyAPI</span>
