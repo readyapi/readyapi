@@ -48,6 +48,9 @@ silver:
   - url: https://www.stainlessapi.com/?utm_source=readyapi&utm_medium=referral
     title: Stainless | Generate best-in-class SDKs
     img: https://readyapi.khulnasoft.com/img/sponsors/stainless.png
+  - url: https://www.permit.io/blog/implement-authorization-in-readyapi?utm_source=github&utm_medium=referral&utm_campaign=readyapi
+    title: Fine-Grained Authorization for ReadyAPI
+    img: https://readyapi.khulnasoft.com/img/sponsors/permit.png
 bronze:
   - url: https://www.exoflare.com/open-source/?utm_source=ReadyAPI&utm_campaign=open_source
     title: Biosecurity risk assessments made easy.
