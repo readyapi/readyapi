@@ -4618,20 +4618,20 @@
 <p>These status codes have a name associated to recognize them, but the important part is the number.</p>
 <p>In short:</p>
 <ul>
-<li><code>100</code> and above are for "Information". You rarely use them directly.  Responses with these status codes cannot have a body.</li>
-<li><strong><code>200</code></strong> and above are for "Successful" responses. These are the ones you would use the most.<ul>
+<li><code>100 - 199</code> are for "Information". You rarely use them directly.  Responses with these status codes cannot have a body.</li>
+<li><strong><code>200 - 299</code></strong> are for "Successful" responses. These are the ones you would use the most.<ul>
 <li><code>200</code> is the default status code, which means everything was "OK".</li>
 <li>Another example would be <code>201</code>, "Created". It is commonly used after creating a new record in the database.</li>
 <li>A special case is <code>204</code>, "No Content".  This response is used when there is no content to return to the client, and so the response must not have a body.</li>
 </ul>
 </li>
-<li><strong><code>300</code></strong> and above are for "Redirection".  Responses with these status codes may or may not have a body, except for <code>304</code>, "Not Modified", which must not have one.</li>
-<li><strong><code>400</code></strong> and above are for "Client error" responses. These are the second type you would probably use the most.<ul>
+<li><strong><code>300 - 399</code></strong> are for "Redirection".  Responses with these status codes may or may not have a body, except for <code>304</code>, "Not Modified", which must not have one.</li>
+<li><strong><code>400 - 499</code></strong> are for "Client error" responses. These are the second type you would probably use the most.<ul>
 <li>An example is <code>404</code>, for a "Not Found" response.</li>
 <li>For generic errors from the client, you can just use <code>400</code>.</li>
 </ul>
 </li>
-<li><code>500</code> and above are for server errors. You almost never use them directly. When something goes wrong at some part in your application code, or server, it will automatically return one of these status codes.</li>
+<li><code>500 - 599</code> are for server errors. You almost never use them directly. When something goes wrong at some part in your application code, or server, it will automatically return one of these status codes.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>

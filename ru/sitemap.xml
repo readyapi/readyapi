@@ -53,6 +53,18 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
+         <loc>https://readyapi.khulnasoft.com/ru/advanced/async-tests/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
+         <loc>https://readyapi.khulnasoft.com/ru/advanced/response-cookies/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
+         <loc>https://readyapi.khulnasoft.com/ru/advanced/websockets/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
          <loc>https://readyapi.khulnasoft.com/ru/deployment/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -86,6 +98,10 @@
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/ru/tutorial/background-tasks/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
+         <loc>https://readyapi.khulnasoft.com/ru/tutorial/bigger-applications/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
@@ -269,10 +285,6 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-         <loc>https://readyapi.khulnasoft.com/ru/tutorial/bigger-applications/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
          <loc>https://readyapi.khulnasoft.com/ru/advanced/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -294,10 +306,6 @@
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/ru/advanced/additional-responses/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-         <loc>https://readyapi.khulnasoft.com/ru/advanced/response-cookies/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
@@ -349,10 +357,6 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-         <loc>https://readyapi.khulnasoft.com/ru/advanced/websockets/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
          <loc>https://readyapi.khulnasoft.com/ru/advanced/events/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -366,10 +370,6 @@
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/ru/advanced/testing-dependencies/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-         <loc>https://readyapi.khulnasoft.com/ru/advanced/async-tests/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>

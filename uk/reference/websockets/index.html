@@ -529,7 +529,7 @@
   
     
   
-  Features
+  Функціональні можливості
 
       </a>
     </li>
@@ -548,7 +548,7 @@
   
     
   
-  Learn
+  Навчання
 
         </a>
       </li>
@@ -733,7 +733,7 @@
         
   
   <span class="md-ellipsis">
-    Features
+    Функціональні можливості
   </span>
   
 
@@ -792,7 +792,7 @@
               
   
   <span class="md-ellipsis">
-    Learn
+    Навчання
   </span>
   
 
@@ -808,7 +808,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Learn
+            Навчання
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2063,7 +2063,7 @@
         
   
   <span class="md-ellipsis">
-    Static Files
+    Статичні файли
   </span>
   
 
@@ -6009,7 +6009,7 @@
 </span><span id="__span-0-103"><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="__span-0-104">    <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span> <span class="ow">or</span> <span class="p">[]</span>
 </span><span id="__span-0-105">
-</span><span id="__span-0-106">    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_state</span> <span class="o">==</span> <span class="n">WebSocketState</span><span class="o">.</span><span class="n">CONNECTING</span><span class="p">:</span>
+</span><span id="__span-0-106">    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">client_state</span> <span class="o">==</span> <span class="n">WebSocketState</span><span class="o">.</span><span class="n">CONNECTING</span><span class="p">:</span>  <span class="c1"># pragma: no branch</span>
 </span><span id="__span-0-107">        <span class="c1"># If we haven&#39;t yet seen the &#39;connect&#39; message, then wait for it first.</span>
 </span><span id="__span-0-108">        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">receive</span><span class="p">()</span>
 </span><span id="__span-0-109">    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">({</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;websocket.accept&quot;</span><span class="p">,</span> <span class="s2">&quot;subprotocol&quot;</span><span class="p">:</span> <span class="n">subprotocol</span><span class="p">,</span> <span class="s2">&quot;headers&quot;</span><span class="p">:</span> <span class="n">headers</span><span class="p">})</span>

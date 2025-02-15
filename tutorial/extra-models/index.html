@@ -1474,9 +1474,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unwrapping-a-dict" class="md-nav__link">
+  <a href="#unpacking-a-dict" class="md-nav__link">
     <span class="md-ellipsis">
-      Unwrapping a dict
+      Unpacking a dict
     </span>
   </a>
   
@@ -1492,9 +1492,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unwrapping-a-dict-and-extra-keywords" class="md-nav__link">
+  <a href="#unpacking-a-dict-and-extra-keywords" class="md-nav__link">
     <span class="md-ellipsis">
-      Unwrapping a dict and extra keywords
+      Unpacking a dict and extra keywords
     </span>
   </a>
   
@@ -4644,9 +4644,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unwrapping-a-dict" class="md-nav__link">
+  <a href="#unpacking-a-dict" class="md-nav__link">
     <span class="md-ellipsis">
-      Unwrapping a dict
+      Unpacking a dict
     </span>
   </a>
   
@@ -4662,9 +4662,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unwrapping-a-dict-and-extra-keywords" class="md-nav__link">
+  <a href="#unpacking-a-dict-and-extra-keywords" class="md-nav__link">
     <span class="md-ellipsis">
-      Unwrapping a dict and extra keywords
+      Unpacking a dict and extra keywords
     </span>
   </a>
   
@@ -4901,8 +4901,8 @@
 </span><span id="__span-5-5">    <span class="s1">&#39;full_name&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
 </span><span id="__span-5-6"><span class="p">}</span>
 </span></code></pre></div>
-<h4 id="unwrapping-a-dict">Unwrapping a <code>dict</code><a class="headerlink" href="#unwrapping-a-dict" title="Permanent link">&para;</a></h4>
-<p>If we take a <code>dict</code> like <code>user_dict</code> and pass it to a function (or class) with <code>**user_dict</code>, Python will "unwrap" it. It will pass the keys and values of the <code>user_dict</code> directly as key-value arguments.</p>
+<h4 id="unpacking-a-dict">Unpacking a <code>dict</code><a class="headerlink" href="#unpacking-a-dict" title="Permanent link">&para;</a></h4>
+<p>If we take a <code>dict</code> like <code>user_dict</code> and pass it to a function (or class) with <code>**user_dict</code>, Python will "unpack" it. It will pass the keys and values of the <code>user_dict</code> directly as key-value arguments.</p>
 <p>So, continuing with the <code>user_dict</code> from above, writing:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-6-1"><span class="n">UserInDB</span><span class="p">(</span><span class="o">**</span><span class="n">user_dict</span><span class="p">)</span>
 </span></code></pre></div>
@@ -4930,9 +4930,9 @@
 <p>would be equivalent to:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-10-1"><span class="n">UserInDB</span><span class="p">(</span><span class="o">**</span><span class="n">user_in</span><span class="o">.</span><span class="n">dict</span><span class="p">())</span>
 </span></code></pre></div>
-<p>...because <code>user_in.dict()</code> is a <code>dict</code>, and then we make Python "unwrap" it by passing it to <code>UserInDB</code> prefixed with <code>**</code>.</p>
+<p>...because <code>user_in.dict()</code> is a <code>dict</code>, and then we make Python "unpack" it by passing it to <code>UserInDB</code> prefixed with <code>**</code>.</p>
 <p>So, we get a Pydantic model from the data in another Pydantic model.</p>
-<h4 id="unwrapping-a-dict-and-extra-keywords">Unwrapping a <code>dict</code> and extra keywords<a class="headerlink" href="#unwrapping-a-dict-and-extra-keywords" title="Permanent link">&para;</a></h4>
+<h4 id="unpacking-a-dict-and-extra-keywords">Unpacking a <code>dict</code> and extra keywords<a class="headerlink" href="#unpacking-a-dict-and-extra-keywords" title="Permanent link">&para;</a></h4>
 <p>And then adding the extra keyword argument <code>hashed_password=hashed_password</code>, like in:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="n">UserInDB</span><span class="p">(</span><span class="o">**</span><span class="n">user_in</span><span class="o">.</span><span class="n">dict</span><span class="p">(),</span> <span class="n">hashed_password</span><span class="o">=</span><span class="n">hashed_password</span><span class="p">)</span>
 </span></code></pre></div>

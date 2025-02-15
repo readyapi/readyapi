@@ -1761,7 +1761,7 @@
         
   
   <span class="md-ellipsis">
-    Dependencies with yield
+    yield를 사용하는 의존성
   </span>
   
 
@@ -2528,7 +2528,7 @@
         
   
   <span class="md-ellipsis">
-    Custom Response - HTML, Stream, File, others
+    사용자 정의 응답 - HTML, Stream, 파일, 기타
   </span>
   
 
@@ -4343,7 +4343,7 @@
         
   
   <span class="md-ellipsis">
-    Help readyapi
+    ReadyAPI 지원 - 도움 받기
   </span>
   
 
@@ -4876,12 +4876,13 @@
 <li><code>instagram_basic</code>은 페이스북/인스타그램에서 사용합니다.</li>
 <li><code>https://www.googleapis.com/auth/drive</code>는 Google에서 사용합니다.</li>
 </ul>
-<p>/// 정보</p>
+<div class="admonition info">
+<p class="admonition-title">정보</p>
 <p>OAuth2에서 "범위"는 필요한 특정 권한을 선언하는 문자열입니다.</p>
 <p><code>:</code>과 같은 다른 문자가 있는지 또는 URL인지는 중요하지 않습니다.</p>
 <p>이러한 세부 사항은 구현에 따라 다릅니다.</p>
 <p>OAuth2의 경우 문자열일 뿐입니다.</p>
-<p>///</p>
+</div>
 <h2 id="username-password_1"><code>username</code>과 <code>password</code>를 가져오는 코드<a class="headerlink" href="#username-password_1" title="Permanent link">&para;</a></h2>
 <p>이제 <strong>ReadyAPI</strong>에서 제공하는 유틸리티를 사용하여 이를 처리해 보겠습니다.</p>
 <h3 id="oauth2passwordrequestform"><code>OAuth2PasswordRequestForm</code><a class="headerlink" href="#oauth2passwordrequestform" title="Permanent link">&para;</a></h3>
@@ -5384,25 +5385,28 @@
 <li><code>scope</code>는 선택적인 필드로 공백으로 구분된 문자열로 구성된 큰 문자열입니다.</li>
 <li><code>grant_type</code>(선택적으로 사용).</li>
 </ul>
-<p>/// 팁</p>
+<div class="admonition tip">
+<p class="admonition-title">팁</p>
 <p>OAuth2 사양은 실제로 <code>password</code>라는 고정 값이 있는 <code>grant_type</code> 필드를 <em>요구</em>하지만 <code>OAuth2PasswordRequestForm</code>은 이를 강요하지 않습니다.</p>
 <p>사용해야 한다면 <code>OAuth2PasswordRequestForm</code> 대신 <code>OAuth2PasswordRequestFormStrict</code>를 사용하면 됩니다.</p>
-<p>///</p>
+</div>
 <ul>
 <li><code>client_id</code>(선택적으로 사용) (예제에서는 필요하지 않습니다).</li>
 <li><code>client_secret</code>(선택적으로 사용) (예제에서는 필요하지 않습니다).</li>
 </ul>
-<p>/// 정보</p>
+<div class="admonition info">
+<p class="admonition-title">정보</p>
 <p><code>OAuth2PasswordRequestForm</code>은 <code>OAuth2PasswordBearer</code>와 같이 <strong>ReadyAPI</strong>에 대한 특수 클래스가 아닙니다.</p>
 <p><code>OAuth2PasswordBearer</code>는 <strong>ReadyAPI</strong>가 보안 체계임을 알도록 합니다. 그래서 OpenAPI에 그렇게 추가됩니다.</p>
 <p>그러나 <code>OAuth2PasswordRequestForm</code>은 직접 작성하거나 <code>Form</code> 매개변수를 직접 선언할 수 있는 클래스 의존성일 뿐입니다.</p>
 <p>그러나 일반적인 사용 사례이므로 더 쉽게 하기 위해 <strong>ReadyAPI</strong>에서 직접 제공합니다.</p>
-<p>///</p>
+</div>
 <h3 id="_1">폼 데이터 사용하기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>/// 팁</p>
+<div class="admonition tip">
+<p class="admonition-title">팁</p>
 <p>종속성 클래스 <code>OAuth2PasswordRequestForm</code>의 인스턴스에는 공백으로 구분된 긴 문자열이 있는 <code>scope</code> 속성이 없고 대신 전송된 각 범위에 대한 실제 문자열 목록이 있는 <code>scopes</code> 속성이 있습니다.</p>
 <p>이 예제에서는 <code>scopes</code>를 사용하지 않지만 필요한 경우, 기능이 있습니다.</p>
-<p>///</p>
+</div>
 <p>이제 폼 필드의 <code>username</code>을 사용하여 (가짜) 데이터베이스에서 유저 데이터를 가져옵니다.</p>
 <p>해당 사용자가 없으면 "잘못된 사용자 이름 또는 패스워드"라는 오류가 반환됩니다.</p>
 <p>오류의 경우 <code>HTTPException</code> 예외를 사용합니다:</p>
@@ -5909,7 +5913,7 @@
 <h5 id="_4">패스워드 해싱을 사용해야 하는 이유<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
 <p>데이터베이스가 유출된 경우 해커는 사용자의 일반 텍스트 암호가 아니라 해시만 갖게 됩니다.</p>
 <p>따라서 해커는 다른 시스템에서 동일한 암호를 사용하려고 시도할 수 없습니다(많은 사용자가 모든 곳에서 동일한 암호를 사용하므로 이는 위험할 수 있습니다).</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">P파이썬 3.7 이상</label><label for="__tabbed_5_2">Python 3.10+ - non-Annotated</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">파이썬 3.7 이상</label><label for="__tabbed_5_2">Python 3.10+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Python 3.8+ - non-Annotated</label></div>
@@ -6904,18 +6908,20 @@
 </span><span id="__span-20-6">    <span class="n">hashed_password</span> <span class="o">=</span> <span class="n">user_dict</span><span class="p">[</span><span class="s2">&quot;hashed_password&quot;</span><span class="p">],</span>
 </span><span id="__span-20-7"><span class="p">)</span>
 </span></code></pre></div>
-<p>/// 정보</p>
+<div class="admonition info">
+<p class="admonition-title">정보</p>
 <p><code>**user_dict</code>에 대한 자세한 설명은 <a class="internal-link" href="../../extra-models/#about-user_indict" target="_blank"><strong>추가 모델</strong> 문서</a>를 다시 읽어봅시다.</p>
-<p>///</p>
+</div>
 <h2 id="_5">토큰 반환하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p><code>token</code> 엔드포인트의 응답은 JSON 객체여야 합니다.</p>
 <p><code>token_type</code>이 있어야 합니다. 여기서는 "Bearer" 토큰을 사용하므로 토큰 유형은 "<code>bearer</code>"여야 합니다.</p>
 <p>그리고 액세스 토큰을 포함하는 문자열과 함께 <code>access_token</code>이 있어야 합니다.</p>
 <p>이 간단한 예제에서는 완전히 안전하지 않고, 동일한 <code>username</code>을 토큰으로 반환합니다.</p>
-<p>/// 팁</p>
+<div class="admonition tip">
+<p class="admonition-title">팁</p>
 <p>다음 장에서는 패스워드 해싱 및 <abbr title="JSON Web Tokens">JWT</abbr> 토큰을 사용하여 실제 보안 구현을 볼 수 있습니다.</p>
 <p>하지만 지금은 필요한 세부 정보에 집중하겠습니다.</p>
-<p>///</p>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Python 3.8+ - non-Annotated</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -7407,12 +7413,13 @@
 </div>
 </div>
 </details>
-<p>/// 팁</p>
+<div class="admonition tip">
+<p class="admonition-title">팁</p>
 <p>사양에 따라 이 예제와 동일하게 <code>access_token</code> 및 <code>token_type</code>이 포함된 JSON을 반환해야 합니다.</p>
 <p>이는 코드에서 직접 수행해야 하며 해당 JSON 키를 사용해야 합니다.</p>
 <p>사양을 준수하기 위해 스스로 올바르게 수행하기 위해 거의 유일하게 기억해야 하는 것입니다.</p>
 <p>나머지는 <strong>ReadyAPI</strong>가 처리합니다.</p>
-<p>///</p>
+</div>
 <h2 id="_6">의존성 업데이트하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>이제 의존성을 업데이트를 할 겁니다.</p>
 <p>이 사용자가 활성화되어 있는 <em>경우에만</em> <code>current_user</code>를 가져올 겁니다.</p>
@@ -7910,7 +7917,8 @@
 </div>
 </div>
 </details>
-<p>/// 정보</p>
+<div class="admonition info">
+<p class="admonition-title">정보</p>
 <p>여기서 반환하는 값이 <code>Bearer</code>인 추가 헤더 <code>WWW-Authenticate</code>도 사양의 일부입니다.</p>
 <p>모든 HTTP(오류) 상태 코드 401 "UNAUTHORIZED"는 <code>WWW-Authenticate</code> 헤더도 반환해야 합니다.</p>
 <p>베어러 토큰의 경우(지금의 경우) 해당 헤더의 값은 <code>Bearer</code>여야 합니다.</p>
@@ -7918,7 +7926,7 @@
 <p>그러나 여기에서는 사양을 준수하도록 제공됩니다.</p>
 <p>또한 이를 예상하고 (현재 또는 미래에) 사용하는 도구가 있을 수 있으며, 현재 또는 미래에 자신 혹은 자신의 유저들에게 유용할 것입니다.</p>
 <p>그것이 표준의 이점입니다 ...</p>
-<p>///</p>
+</div>
 <h2 id="_7">확인하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>대화형 문서 열기: <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>.</p>
 <h3 id="_8">인증하기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>

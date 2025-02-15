@@ -529,7 +529,7 @@
   
     
   
-  Features
+  Функціональні можливості
 
       </a>
     </li>
@@ -548,7 +548,7 @@
   
     
   
-  Learn
+  Навчання
 
         </a>
       </li>
@@ -733,7 +733,7 @@
         
   
   <span class="md-ellipsis">
-    Features
+    Функціональні можливості
   </span>
   
 
@@ -792,7 +792,7 @@
               
   
   <span class="md-ellipsis">
-    Learn
+    Навчання
   </span>
   
 
@@ -808,7 +808,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Learn
+            Навчання
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2063,7 +2063,7 @@
         
   
   <span class="md-ellipsis">
-    Static Files
+    Статичні файли
   </span>
   
 
@@ -4032,6 +4032,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyCookie.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4092,6 +4101,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyHeader.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4147,6 +4165,15 @@
   <a href="#readyapi.security.APIKeyQuery.auto_error" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;auto_error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyQuery.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
     </span>
   </a>
   
@@ -5405,6 +5432,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyCookie.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5465,6 +5501,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyHeader.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5520,6 +5565,15 @@
   <a href="#readyapi.security.APIKeyQuery.auto_error" class="md-nav__link">
     <span class="md-ellipsis">
       <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;auto_error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readyapi.security.APIKeyQuery.check_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;check_api_key
     </span>
   </a>
   
@@ -6391,7 +6445,13 @@ in an HTTP Bearer token).</p>
 
                   <details class="quote">
                     <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
-                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">241</span>
+                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
 <span class="normal">242</span>
 <span class="normal">243</span>
 <span class="normal">244</span>
@@ -6434,62 +6494,56 @@ in an HTTP Bearer token).</p>
 <span class="normal">281</span>
 <span class="normal">282</span>
 <span class="normal">283</span>
-<span class="normal">284</span>
-<span class="normal">285</span>
-<span class="normal">286</span>
-<span class="normal">287</span>
-<span class="normal">288</span>
-<span class="normal">289</span>
-<span class="normal">290</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-241"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
-</span><span id="__span-0-242">    <span class="bp">self</span><span class="p">,</span>
-</span><span id="__span-0-243">    <span class="o">*</span><span class="p">,</span>
-</span><span id="__span-0-244">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Cookie name.&quot;</span><span class="p">)],</span>
-</span><span id="__span-0-245">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-246">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-247">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-248"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-249"><span class="sd">            Security scheme name.</span>
-</span><span id="__span-0-250">
-</span><span id="__span-0-251"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-252"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-253">        <span class="p">),</span>
-</span><span id="__span-0-254">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-255">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-256">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-257">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-258"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-259"><span class="sd">            Security scheme description.</span>
-</span><span id="__span-0-260">
-</span><span id="__span-0-261"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-262"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-263">        <span class="p">),</span>
-</span><span id="__span-0-264">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-265">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-266">        <span class="nb">bool</span><span class="p">,</span>
-</span><span id="__span-0-267">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-268"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-269"><span class="sd">            By default, if the cookie is not provided, `APIKeyCookie` will</span>
-</span><span id="__span-0-270"><span class="sd">            automatically cancel the request and send the client an error.</span>
-</span><span id="__span-0-271">
-</span><span id="__span-0-272"><span class="sd">            If `auto_error` is set to `False`, when the cookie is not available,</span>
-</span><span id="__span-0-273"><span class="sd">            instead of erroring out, the dependency result will be `None`.</span>
-</span><span id="__span-0-274">
-</span><span id="__span-0-275"><span class="sd">            This is useful when you want to have optional authentication.</span>
-</span><span id="__span-0-276">
-</span><span id="__span-0-277"><span class="sd">            It is also useful when you want to have authentication that can be</span>
-</span><span id="__span-0-278"><span class="sd">            provided in one of multiple optional ways (for example, in a cookie or</span>
-</span><span id="__span-0-279"><span class="sd">            in an HTTP Bearer token).</span>
-</span><span id="__span-0-280"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-281">        <span class="p">),</span>
-</span><span id="__span-0-282">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-0-283"><span class="p">):</span>
-</span><span id="__span-0-284">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
-</span><span id="__span-0-285">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">cookie</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
-</span><span id="__span-0-286">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
-</span><span id="__span-0-287">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
-</span><span id="__span-0-288">    <span class="p">)</span>
-</span><span id="__span-0-289">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-</span><span id="__span-0-290">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
+<span class="normal">284</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-235"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+</span><span id="__span-0-236">    <span class="bp">self</span><span class="p">,</span>
+</span><span id="__span-0-237">    <span class="o">*</span><span class="p">,</span>
+</span><span id="__span-0-238">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Cookie name.&quot;</span><span class="p">)],</span>
+</span><span id="__span-0-239">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-240">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-241">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-242"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-243"><span class="sd">            Security scheme name.</span>
+</span><span id="__span-0-244">
+</span><span id="__span-0-245"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-246"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-247">        <span class="p">),</span>
+</span><span id="__span-0-248">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-249">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-250">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-251">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-252"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-253"><span class="sd">            Security scheme description.</span>
+</span><span id="__span-0-254">
+</span><span id="__span-0-255"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-256"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-257">        <span class="p">),</span>
+</span><span id="__span-0-258">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-259">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-260">        <span class="nb">bool</span><span class="p">,</span>
+</span><span id="__span-0-261">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-262"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-263"><span class="sd">            By default, if the cookie is not provided, `APIKeyCookie` will</span>
+</span><span id="__span-0-264"><span class="sd">            automatically cancel the request and send the client an error.</span>
+</span><span id="__span-0-265">
+</span><span id="__span-0-266"><span class="sd">            If `auto_error` is set to `False`, when the cookie is not available,</span>
+</span><span id="__span-0-267"><span class="sd">            instead of erroring out, the dependency result will be `None`.</span>
+</span><span id="__span-0-268">
+</span><span id="__span-0-269"><span class="sd">            This is useful when you want to have optional authentication.</span>
+</span><span id="__span-0-270">
+</span><span id="__span-0-271"><span class="sd">            It is also useful when you want to have authentication that can be</span>
+</span><span id="__span-0-272"><span class="sd">            provided in one of multiple optional ways (for example, in a cookie or</span>
+</span><span id="__span-0-273"><span class="sd">            in an HTTP Bearer token).</span>
+</span><span id="__span-0-274"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-275">        <span class="p">),</span>
+</span><span id="__span-0-276">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-0-277"><span class="p">):</span>
+</span><span id="__span-0-278">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
+</span><span id="__span-0-279">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">cookie</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
+</span><span id="__span-0-280">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+</span><span id="__span-0-281">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+</span><span id="__span-0-282">    <span class="p">)</span>
+</span><span id="__span-0-283">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+</span><span id="__span-0-284">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
 </span></code></pre></div></td></tr></table></div>
                   </details>
 
@@ -6569,6 +6623,94 @@ in an HTTP Bearer token).</p>
 </div>
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="readyapi.security.APIKeyCookie.check_api_key" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">check_api_key</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#readyapi.security.APIKeyCookie.check_api_key" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">,</span> <span class="n">auto_error</span><span class="p">)</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>api_key</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>auto_error</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code>bool</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-12"><span class="nd">@staticmethod</span>
+</span><span id="__span-0-13"><span class="k">def</span><span class="w"> </span><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">auto_error</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-0-14">    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_key</span><span class="p">:</span>
+</span><span id="__span-0-15">        <span class="k">if</span> <span class="n">auto_error</span><span class="p">:</span>
+</span><span id="__span-0-16">            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+</span><span id="__span-0-17">                <span class="n">status_code</span><span class="o">=</span><span class="n">HTTP_403_FORBIDDEN</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Not authenticated&quot;</span>
+</span><span id="__span-0-18">            <span class="p">)</span>
+</span><span id="__span-0-19">        <span class="k">return</span> <span class="kc">None</span>
+</span><span id="__span-0-20">    <span class="k">return</span> <span class="n">api_key</span>
+</span></code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
 
 
 
@@ -6729,8 +6871,7 @@ in an HTTP Bearer token).</p>
 
                   <details class="quote">
                     <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
-                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">146</span>
-<span class="normal">147</span>
+                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">147</span>
 <span class="normal">148</span>
 <span class="normal">149</span>
 <span class="normal">150</span>
@@ -6778,56 +6919,57 @@ in an HTTP Bearer token).</p>
 <span class="normal">192</span>
 <span class="normal">193</span>
 <span class="normal">194</span>
-<span class="normal">195</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-146"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
-</span><span id="__span-0-147">    <span class="bp">self</span><span class="p">,</span>
-</span><span id="__span-0-148">    <span class="o">*</span><span class="p">,</span>
-</span><span id="__span-0-149">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Header name.&quot;</span><span class="p">)],</span>
-</span><span id="__span-0-150">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-151">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-152">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-153"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-154"><span class="sd">            Security scheme name.</span>
-</span><span id="__span-0-155">
-</span><span id="__span-0-156"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-157"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-158">        <span class="p">),</span>
-</span><span id="__span-0-159">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-160">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-161">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-162">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-163"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-164"><span class="sd">            Security scheme description.</span>
-</span><span id="__span-0-165">
-</span><span id="__span-0-166"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-167"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-168">        <span class="p">),</span>
-</span><span id="__span-0-169">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-170">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-171">        <span class="nb">bool</span><span class="p">,</span>
-</span><span id="__span-0-172">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-173"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-174"><span class="sd">            By default, if the header is not provided, `APIKeyHeader` will</span>
-</span><span id="__span-0-175"><span class="sd">            automatically cancel the request and send the client an error.</span>
-</span><span id="__span-0-176">
-</span><span id="__span-0-177"><span class="sd">            If `auto_error` is set to `False`, when the header is not available,</span>
-</span><span id="__span-0-178"><span class="sd">            instead of erroring out, the dependency result will be `None`.</span>
-</span><span id="__span-0-179">
-</span><span id="__span-0-180"><span class="sd">            This is useful when you want to have optional authentication.</span>
-</span><span id="__span-0-181">
-</span><span id="__span-0-182"><span class="sd">            It is also useful when you want to have authentication that can be</span>
-</span><span id="__span-0-183"><span class="sd">            provided in one of multiple optional ways (for example, in a header or</span>
-</span><span id="__span-0-184"><span class="sd">            in an HTTP Bearer token).</span>
-</span><span id="__span-0-185"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-186">        <span class="p">),</span>
-</span><span id="__span-0-187">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-0-188"><span class="p">):</span>
-</span><span id="__span-0-189">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
-</span><span id="__span-0-190">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">header</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
-</span><span id="__span-0-191">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
-</span><span id="__span-0-192">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
-</span><span id="__span-0-193">    <span class="p">)</span>
-</span><span id="__span-0-194">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-</span><span id="__span-0-195">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
+<span class="normal">195</span>
+<span class="normal">196</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-147"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+</span><span id="__span-0-148">    <span class="bp">self</span><span class="p">,</span>
+</span><span id="__span-0-149">    <span class="o">*</span><span class="p">,</span>
+</span><span id="__span-0-150">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Header name.&quot;</span><span class="p">)],</span>
+</span><span id="__span-0-151">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-152">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-153">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-154"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-155"><span class="sd">            Security scheme name.</span>
+</span><span id="__span-0-156">
+</span><span id="__span-0-157"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-158"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-159">        <span class="p">),</span>
+</span><span id="__span-0-160">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-161">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-162">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-163">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-164"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-165"><span class="sd">            Security scheme description.</span>
+</span><span id="__span-0-166">
+</span><span id="__span-0-167"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-168"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-169">        <span class="p">),</span>
+</span><span id="__span-0-170">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-171">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-172">        <span class="nb">bool</span><span class="p">,</span>
+</span><span id="__span-0-173">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-174"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-175"><span class="sd">            By default, if the header is not provided, `APIKeyHeader` will</span>
+</span><span id="__span-0-176"><span class="sd">            automatically cancel the request and send the client an error.</span>
+</span><span id="__span-0-177">
+</span><span id="__span-0-178"><span class="sd">            If `auto_error` is set to `False`, when the header is not available,</span>
+</span><span id="__span-0-179"><span class="sd">            instead of erroring out, the dependency result will be `None`.</span>
+</span><span id="__span-0-180">
+</span><span id="__span-0-181"><span class="sd">            This is useful when you want to have optional authentication.</span>
+</span><span id="__span-0-182">
+</span><span id="__span-0-183"><span class="sd">            It is also useful when you want to have authentication that can be</span>
+</span><span id="__span-0-184"><span class="sd">            provided in one of multiple optional ways (for example, in a header or</span>
+</span><span id="__span-0-185"><span class="sd">            in an HTTP Bearer token).</span>
+</span><span id="__span-0-186"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-187">        <span class="p">),</span>
+</span><span id="__span-0-188">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-0-189"><span class="p">):</span>
+</span><span id="__span-0-190">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
+</span><span id="__span-0-191">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">header</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
+</span><span id="__span-0-192">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+</span><span id="__span-0-193">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+</span><span id="__span-0-194">    <span class="p">)</span>
+</span><span id="__span-0-195">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+</span><span id="__span-0-196">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
 </span></code></pre></div></td></tr></table></div>
                   </details>
 
@@ -6907,6 +7049,94 @@ in an HTTP Bearer token).</p>
 </div>
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="readyapi.security.APIKeyHeader.check_api_key" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">check_api_key</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#readyapi.security.APIKeyHeader.check_api_key" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">,</span> <span class="n">auto_error</span><span class="p">)</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>api_key</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>auto_error</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code>bool</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-12"><span class="nd">@staticmethod</span>
+</span><span id="__span-0-13"><span class="k">def</span><span class="w"> </span><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">auto_error</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-0-14">    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_key</span><span class="p">:</span>
+</span><span id="__span-0-15">        <span class="k">if</span> <span class="n">auto_error</span><span class="p">:</span>
+</span><span id="__span-0-16">            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+</span><span id="__span-0-17">                <span class="n">status_code</span><span class="o">=</span><span class="n">HTTP_403_FORBIDDEN</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Not authenticated&quot;</span>
+</span><span id="__span-0-18">            <span class="p">)</span>
+</span><span id="__span-0-19">        <span class="k">return</span> <span class="kc">None</span>
+</span><span id="__span-0-20">    <span class="k">return</span> <span class="n">api_key</span>
+</span></code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
 
 
 
@@ -7068,15 +7298,7 @@ parameter or in an HTTP Bearer token).</p>
 
                   <details class="quote">
                     <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
-                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 47</span>
-<span class="normal"> 48</span>
-<span class="normal"> 49</span>
-<span class="normal"> 50</span>
-<span class="normal"> 51</span>
-<span class="normal"> 52</span>
-<span class="normal"> 53</span>
-<span class="normal"> 54</span>
-<span class="normal"> 55</span>
+                    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 55</span>
 <span class="normal"> 56</span>
 <span class="normal"> 57</span>
 <span class="normal"> 58</span>
@@ -7121,60 +7343,68 @@ parameter or in an HTTP Bearer token).</p>
 <span class="normal"> 97</span>
 <span class="normal"> 98</span>
 <span class="normal"> 99</span>
-<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-47"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
-</span><span id="__span-0-48">    <span class="bp">self</span><span class="p">,</span>
-</span><span id="__span-0-49">    <span class="o">*</span><span class="p">,</span>
-</span><span id="__span-0-50">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-51">        <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-0-52">        <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Query parameter name.&quot;</span><span class="p">),</span>
-</span><span id="__span-0-53">    <span class="p">],</span>
-</span><span id="__span-0-54">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-55">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-56">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-57"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-58"><span class="sd">            Security scheme name.</span>
-</span><span id="__span-0-59">
-</span><span id="__span-0-60"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-61"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-62">        <span class="p">),</span>
-</span><span id="__span-0-63">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-64">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-65">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</span><span id="__span-0-66">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-67"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-68"><span class="sd">            Security scheme description.</span>
-</span><span id="__span-0-69">
-</span><span id="__span-0-70"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
-</span><span id="__span-0-71"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-72">        <span class="p">),</span>
-</span><span id="__span-0-73">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-74">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
-</span><span id="__span-0-75">        <span class="nb">bool</span><span class="p">,</span>
-</span><span id="__span-0-76">        <span class="n">Doc</span><span class="p">(</span>
-</span><span id="__span-0-77"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="__span-0-78"><span class="sd">            By default, if the query parameter is not provided, `APIKeyQuery` will</span>
-</span><span id="__span-0-79"><span class="sd">            automatically cancel the request and send the client an error.</span>
-</span><span id="__span-0-80">
-</span><span id="__span-0-81"><span class="sd">            If `auto_error` is set to `False`, when the query parameter is not</span>
-</span><span id="__span-0-82"><span class="sd">            available, instead of erroring out, the dependency result will be</span>
-</span><span id="__span-0-83"><span class="sd">            `None`.</span>
-</span><span id="__span-0-84">
-</span><span id="__span-0-85"><span class="sd">            This is useful when you want to have optional authentication.</span>
-</span><span id="__span-0-86">
-</span><span id="__span-0-87"><span class="sd">            It is also useful when you want to have authentication that can be</span>
-</span><span id="__span-0-88"><span class="sd">            provided in one of multiple optional ways (for example, in a query</span>
-</span><span id="__span-0-89"><span class="sd">            parameter or in an HTTP Bearer token).</span>
-</span><span id="__span-0-90"><span class="sd">            &quot;&quot;&quot;</span>
-</span><span id="__span-0-91">        <span class="p">),</span>
-</span><span id="__span-0-92">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-0-93"><span class="p">):</span>
-</span><span id="__span-0-94">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
-</span><span id="__span-0-95">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">query</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
-</span><span id="__span-0-96">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
-</span><span id="__span-0-97">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
-</span><span id="__span-0-98">    <span class="p">)</span>
-</span><span id="__span-0-99">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-</span><span id="__span-0-100">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-55"><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+</span><span id="__span-0-56">    <span class="bp">self</span><span class="p">,</span>
+</span><span id="__span-0-57">    <span class="o">*</span><span class="p">,</span>
+</span><span id="__span-0-58">    <span class="n">name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-59">        <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-60">        <span class="n">Doc</span><span class="p">(</span><span class="s2">&quot;Query parameter name.&quot;</span><span class="p">),</span>
+</span><span id="__span-0-61">    <span class="p">],</span>
+</span><span id="__span-0-62">    <span class="n">scheme_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-63">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-64">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-65"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-66"><span class="sd">            Security scheme name.</span>
+</span><span id="__span-0-67">
+</span><span id="__span-0-68"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-69"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-70">        <span class="p">),</span>
+</span><span id="__span-0-71">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-72">    <span class="n">description</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-73">        <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</span><span id="__span-0-74">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-75"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-76"><span class="sd">            Security scheme description.</span>
+</span><span id="__span-0-77">
+</span><span id="__span-0-78"><span class="sd">            It will be included in the generated OpenAPI (e.g. visible at `/docs`).</span>
+</span><span id="__span-0-79"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-80">        <span class="p">),</span>
+</span><span id="__span-0-81">    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-82">    <span class="n">auto_error</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
+</span><span id="__span-0-83">        <span class="nb">bool</span><span class="p">,</span>
+</span><span id="__span-0-84">        <span class="n">Doc</span><span class="p">(</span>
+</span><span id="__span-0-85"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-0-86"><span class="sd">            By default, if the query parameter is not provided, `APIKeyQuery` will</span>
+</span><span id="__span-0-87"><span class="sd">            automatically cancel the request and send the client an error.</span>
+</span><span id="__span-0-88">
+</span><span id="__span-0-89"><span class="sd">            If `auto_error` is set to `False`, when the query parameter is not</span>
+</span><span id="__span-0-90"><span class="sd">            available, instead of erroring out, the dependency result will be</span>
+</span><span id="__span-0-91"><span class="sd">            `None`.</span>
+</span><span id="__span-0-92">
+</span><span id="__span-0-93"><span class="sd">            This is useful when you want to have optional authentication.</span>
+</span><span id="__span-0-94">
+</span><span id="__span-0-95"><span class="sd">            It is also useful when you want to have authentication that can be</span>
+</span><span id="__span-0-96"><span class="sd">            provided in one of multiple optional ways (for example, in a query</span>
+</span><span id="__span-0-97"><span class="sd">            parameter or in an HTTP Bearer token).</span>
+</span><span id="__span-0-98"><span class="sd">            &quot;&quot;&quot;</span>
+</span><span id="__span-0-99">        <span class="p">),</span>
+</span><span id="__span-0-100">    <span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+</span><span id="__span-0-101"><span class="p">):</span>
+</span><span id="__span-0-102">    <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">:</span> <span class="n">APIKey</span> <span class="o">=</span> <span class="n">APIKey</span><span class="p">(</span>
+</span><span id="__span-0-103">        <span class="o">**</span><span class="p">{</span><span class="s2">&quot;in&quot;</span><span class="p">:</span> <span class="n">APIKeyIn</span><span class="o">.</span><span class="n">query</span><span class="p">},</span>  <span class="c1"># type: ignore[arg-type]</span>
+</span><span id="__span-0-104">        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+</span><span id="__span-0-105">        <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+</span><span id="__span-0-106">    <span class="p">)</span>
+</span><span id="__span-0-107">    <span class="bp">self</span><span class="o">.</span><span class="n">scheme_name</span> <span class="o">=</span> <span class="n">scheme_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+</span><span id="__span-0-108">    <span class="bp">self</span><span class="o">.</span><span class="n">auto_error</span> <span class="o">=</span> <span class="n">auto_error</span>
 </span></code></pre></div></td></tr></table></div>
                   </details>
 
@@ -7254,6 +7484,94 @@ parameter or in an HTTP Bearer token).</p>
 </div>
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="readyapi.security.APIKeyQuery.check_api_key" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">check_api_key</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+<a href="#readyapi.security.APIKeyQuery.check_api_key" class="headerlink" title="Permanent link">&para;</a></h3>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">,</span> <span class="n">auto_error</span><span class="p">)</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>api_key</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>auto_error</code>
+            </td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code>bool</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>readyapi/security/api_key.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-12"><span class="nd">@staticmethod</span>
+</span><span id="__span-0-13"><span class="k">def</span><span class="w"> </span><span class="nf">check_api_key</span><span class="p">(</span><span class="n">api_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">auto_error</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-0-14">    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_key</span><span class="p">:</span>
+</span><span id="__span-0-15">        <span class="k">if</span> <span class="n">auto_error</span><span class="p">:</span>
+</span><span id="__span-0-16">            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+</span><span id="__span-0-17">                <span class="n">status_code</span><span class="o">=</span><span class="n">HTTP_403_FORBIDDEN</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Not authenticated&quot;</span>
+</span><span id="__span-0-18">            <span class="p">)</span>
+</span><span id="__span-0-19">        <span class="k">return</span> <span class="kc">None</span>
+</span><span id="__span-0-20">    <span class="k">return</span> <span class="n">api_key</span>
+</span></code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
 
 
 
@@ -9985,7 +10303,7 @@ auth.</p>
 </span><span id="__span-0-63">    <span class="o">*</span><span class="p">,</span>
 </span><span id="__span-0-64">    <span class="n">grant_type</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
 </span><span id="__span-0-65">        <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
-</span><span id="__span-0-66">        <span class="n">Form</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="p">),</span>
+</span><span id="__span-0-66">        <span class="n">Form</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;^password$&quot;</span><span class="p">),</span>
 </span><span id="__span-0-67">        <span class="n">Doc</span><span class="p">(</span>
 </span><span id="__span-0-68"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-69"><span class="sd">            The OAuth2 spec says it is required and MUST be the fixed string</span>
@@ -10541,7 +10859,7 @@ auth.</p>
 </span><span id="__span-0-217">    <span class="bp">self</span><span class="p">,</span>
 </span><span id="__span-0-218">    <span class="n">grant_type</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span>
 </span><span id="__span-0-219">        <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-0-220">        <span class="n">Form</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="p">),</span>
+</span><span id="__span-0-220">        <span class="n">Form</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;^password$&quot;</span><span class="p">),</span>
 </span><span id="__span-0-221">        <span class="n">Doc</span><span class="p">(</span>
 </span><span id="__span-0-222"><span class="w">            </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="__span-0-223"><span class="sd">            The OAuth2 spec says it is required and MUST be the fixed string</span>

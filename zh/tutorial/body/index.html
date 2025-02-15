@@ -4945,7 +4945,7 @@
 </span><span id="__span-8-15"><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">)</span>
 </span><span id="__span-8-16"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
 </span><span id="__span-8-17">    <span class="n">item_dict</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
-</span><span id="__span-8-18">    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span><span class="p">:</span>
+</span><span id="__span-8-18">    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="__span-8-19"><span class="hll">        <span class="n">price_with_tax</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">price</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span>
 </span></span><span id="__span-8-20">        <span class="n">item_dict</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;price_with_tax&quot;</span><span class="p">:</span> <span class="n">price_with_tax</span><span class="p">})</span>
 </span><span id="__span-8-21">    <span class="k">return</span> <span class="n">item_dict</span>
@@ -4977,7 +4977,7 @@
 </span><span id="__span-9-17"><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">)</span>
 </span><span id="__span-9-18"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
 </span><span id="__span-9-19">    <span class="n">item_dict</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
-</span><span id="__span-9-20">    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span><span class="p">:</span>
+</span><span id="__span-9-20">    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="__span-9-21">        <span class="n">price_with_tax</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">price</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span>
 </span><span id="__span-9-22">        <span class="n">item_dict</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;price_with_tax&quot;</span><span class="p">:</span> <span class="n">price_with_tax</span><span class="p">})</span>
 </span><span id="__span-9-23">    <span class="k">return</span> <span class="n">item_dict</span>

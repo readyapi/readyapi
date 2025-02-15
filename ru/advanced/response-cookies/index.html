@@ -24,7 +24,7 @@
     
     
       
-        <title>Response Cookies - ReadyAPI</title>
+        <title>Cookies в ответе - ReadyAPI</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#response-cookies" class="md-skip">
+        <a href="#cookies" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -225,7 +225,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Response Cookies
+              Cookies в ответе
             
           </span>
         </div>
@@ -2005,7 +2005,7 @@
         
   
   <span class="md-ellipsis">
-    Bigger Applications - Multiple Files
+    Большие приложения, в которых много файлов
   </span>
   
 
@@ -2363,7 +2363,7 @@
           
   
   <span class="md-ellipsis">
-    Response Cookies
+    Cookies в ответе
   </span>
   
 
@@ -2374,7 +2374,7 @@
         
   
   <span class="md-ellipsis">
-    Response Cookies
+    Cookies в ответе
   </span>
   
 
@@ -2396,28 +2396,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-a-response-parameter" class="md-nav__link">
+  <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
-      Use a Response parameter
+      Использование параметра Response
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#return-a-response-directly" class="md-nav__link">
+  <a href="#response_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Return a Response directly
+      Возвращение Response напрямую
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Return a Response directly">
+    <nav class="md-nav" aria-label="Возвращение Response напрямую">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-info" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      More info
+      Дополнительная информация
     </span>
   </a>
   
@@ -2745,7 +2745,7 @@
         
   
   <span class="md-ellipsis">
-    WebSockets
+    Веб-сокеты
   </span>
   
 
@@ -2850,7 +2850,7 @@
         
   
   <span class="md-ellipsis">
-    Async Tests
+    Асинхронное тестирование
   </span>
   
 
@@ -4522,28 +4522,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-a-response-parameter" class="md-nav__link">
+  <a href="#response" class="md-nav__link">
     <span class="md-ellipsis">
-      Use a Response parameter
+      Использование параметра Response
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#return-a-response-directly" class="md-nav__link">
+  <a href="#response_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Return a Response directly
+      Возвращение Response напрямую
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Return a Response directly">
+    <nav class="md-nav" aria-label="Возвращение Response напрямую">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-info" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      More info
+      Дополнительная информация
     </span>
   </a>
   
@@ -4572,15 +4572,10 @@
   
 
 
-<h1 id="response-cookies">Response Cookies<a class="headerlink" href="#response-cookies" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The current page still doesn't have a translation for this language.</p>
-<p>But you can help translating it: <a class="internal-link" href="https://readyapi.khulnasoft.com/contributing/" target="_blank">Contributing</a>.</p>
-</div>
-<h2 id="use-a-response-parameter">Use a <code>Response</code> parameter<a class="headerlink" href="#use-a-response-parameter" title="Permanent link">&para;</a></h2>
-<p>You can declare a parameter of type <code>Response</code> in your <em>path operation function</em>.</p>
-<p>And then you can set cookies in that <em>temporal</em> response object.</p>
+<h1 id="cookies">Cookies в ответе<a class="headerlink" href="#cookies" title="Permanent link">&para;</a></h1>
+<h2 id="response">Использование параметра <code>Response</code><a class="headerlink" href="#response" title="Permanent link">&para;</a></h2>
+<p>Вы можете объявить параметр типа <code>Response</code> в вашей функции эндпоинта.</p>
+<p>Затем установить cookies в этом временном объекте ответа.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.8+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4597,14 +4592,14 @@
 </div>
 </div>
 </div>
-<p>And then you can return any object you need, as you normally would (a <code>dict</code>, a database model, etc).</p>
-<p>And if you declared a <code>response_model</code>, it will still be used to filter and convert the object you returned.</p>
-<p><strong>ReadyAPI</strong> will use that <em>temporal</em> response to extract the cookies (also headers and status code), and will put them in the final response that contains the value you returned, filtered by any <code>response_model</code>.</p>
-<p>You can also declare the <code>Response</code> parameter in dependencies, and set cookies (and headers) in them.</p>
-<h2 id="return-a-response-directly">Return a <code>Response</code> directly<a class="headerlink" href="#return-a-response-directly" title="Permanent link">&para;</a></h2>
-<p>You can also create cookies when returning a <code>Response</code> directly in your code.</p>
-<p>To do that, you can create a response as described in <a class="internal-link" href="../response-directly/" target="_blank">Return a Response Directly</a>.</p>
-<p>Then set Cookies in it, and then return it:</p>
+<p>После этого можно вернуть любой объект, как и раньше (например, <code>dict</code>, объект модели базы данных и так далее).</p>
+<p>Если вы указали <code>response_model</code>, он всё равно будет использоваться для фильтрации и преобразования возвращаемого объекта.</p>
+<p><strong>ReadyAPI</strong> извлечет cookies (а также заголовки и коды состояния) из временного ответа и включит их в окончательный ответ, содержащий ваше возвращаемое значение, отфильтрованное через <code>response_model</code>.</p>
+<p>Вы также можете объявить параметр типа Response в зависимостях и устанавливать cookies (и заголовки) там.</p>
+<h2 id="response_1">Возвращение <code>Response</code> напрямую<a class="headerlink" href="#response_1" title="Permanent link">&para;</a></h2>
+<p>Вы также можете установить cookies, если возвращаете <code>Response</code> напрямую в вашем коде.</p>
+<p>Для этого создайте объект <code>Response</code>, как описано в разделе <a .target="_blank" href="../response-directly/">Возвращение ответа напрямую</a>.</p>
+<p>Затем установите cookies и верните этот объект:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python 3.8+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -4625,19 +4620,19 @@
 </div>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Keep in mind that if you return a response directly instead of using the <code>Response</code> parameter, ReadyAPI will return it directly.</p>
-<p>So, you will have to make sure your data is of the correct type. E.g. it is compatible with JSON, if you are returning a <code>JSONResponse</code>.</p>
-<p>And also that you are not sending any data that should have been filtered by a <code>response_model</code>.</p>
+<p class="admonition-title">Примечание</p>
+<p>Имейте в виду, что если вы возвращаете ответ напрямую, вместо использования параметра <code>Response</code>, <strong>ReadyAPI</strong> отправит его без дополнительной обработки.</p>
+<p>Убедитесь, что ваши данные имеют корректный тип. Например, они должны быть совместимы с JSON, если вы используете <code>JSONResponse</code>.</p>
+<p>Также убедитесь, что вы не отправляете данные, которые должны были быть отфильтрованы через <code>response_model</code>.</p>
 </div>
-<h3 id="more-info">More info<a class="headerlink" href="#more-info" title="Permanent link">&para;</a></h3>
+<h3 id="_1">Дополнительная информация<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
-<p class="admonition-title">Technical Details</p>
-<p>You could also use <code>from starlette.responses import Response</code> or <code>from starlette.responses import JSONResponse</code>.</p>
-<p><strong>ReadyAPI</strong> provides the same <code>starlette.responses</code> as <code>readyapi.responses</code> just as a convenience for you, the developer. But most of the available responses come directly from Starlette.</p>
-<p>And as the <code>Response</code> can be used frequently to set headers and cookies, <strong>ReadyAPI</strong> also provides it at <code>readyapi.Response</code>.</p>
+<p class="admonition-title">Технические детали</p>
+<p>Вы также можете использовать <code>from starlette.responses import Response</code> или <code>from starlette.responses import JSONResponse</code>.</p>
+<p><strong>ReadyAPI</strong> предоставляет <code>readyapi.responses</code>, которые являются теми же объектами, что и <code>starlette.responses</code>, просто для удобства. Однако большинство доступных типов ответов поступает непосредственно из <strong>Starlette</strong>.</p>
+<p>Для установки заголовков и cookies <code>Response</code> используется часто, поэтому <strong>ReadyAPI</strong> также предоставляет его через <code>readyapi.responses</code>.</p>
 </div>
-<p>To see all the available parameters and options, check the <a href="https://www.starlette.io/responses/#set-cookie" class="external-link" target="_blank">documentation in Starlette</a>.</p>
+<p>Чтобы увидеть все доступные параметры и настройки, ознакомьтесь с <a href="https://www.starlette.io/responses/#set-cookie" class="external-link" target="_blank">документацией Starlette</a>.</p>
 
 
 

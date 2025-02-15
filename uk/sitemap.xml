@@ -9,11 +9,19 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
+         <loc>https://readyapi.khulnasoft.com/uk/features/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
          <loc>https://readyapi.khulnasoft.com/uk/python-types/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/uk/readyapi-cli/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
+         <loc>https://readyapi.khulnasoft.com/uk/learn/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
@@ -45,11 +53,7 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-         <loc>https://readyapi.khulnasoft.com/uk/features/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-         <loc>https://readyapi.khulnasoft.com/uk/learn/</loc>
+         <loc>https://readyapi.khulnasoft.com/uk/tutorial/static-files/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
@@ -214,10 +218,6 @@
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/uk/tutorial/metadata/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-         <loc>https://readyapi.khulnasoft.com/uk/tutorial/static-files/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>

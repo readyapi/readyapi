@@ -872,7 +872,7 @@
         
   
   <span class="md-ellipsis">
-    Environment Variables
+    Biến môi trường (Environment Variables)
   </span>
   
 
@@ -893,7 +893,7 @@
         
   
   <span class="md-ellipsis">
-    Virtual Environments
+    Môi trường ảo (Virtual Environments)
   </span>
   
 
@@ -2068,7 +2068,7 @@
         
   
   <span class="md-ellipsis">
-    Static Files
+    Tệp tĩnh (Static Files)
   </span>
   
 
@@ -4541,14 +4541,9 @@
 
 
 <h1 id="readyapi-cli">ReadyAPI CLI<a class="headerlink" href="#readyapi-cli" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The current page still doesn't have a translation for this language.</p>
-<p>But you can help translating it: <a class="internal-link" href="https://readyapi.khulnasoft.com/contributing/" target="_blank">Contributing</a>.</p>
-</div>
-<p><strong>ReadyAPI CLI</strong> is a command line program that you can use to serve your ReadyAPI app, manage your ReadyAPI project, and more.</p>
-<p>When you install ReadyAPI (e.g. with <code>pip install "readyapi[standard]"</code>), it includes a package called <code>readyapi-cli</code>, this package provides the <code>readyapi</code> command in the terminal.</p>
-<p>To run your ReadyAPI app for development, you can use the <code>readyapi dev</code> command:</p>
+<p><strong>ReadyAPI CLI</strong> là một chương trình dòng lệnh có thể được sử dụng để phục vụ ứng dụng ReadyAPI của bạn, quản lý dự án ReadyAPI của bạn và nhiều hoạt động khác.</p>
+<p>Khi bạn cài đặt ReadyAPI (vd với <code>pip install "readyapi[standard]"</code>), nó sẽ bao gồm một gói được gọi là <code>readyapi-cli</code>, gói này cung cấp lệnh <code>readyapi</code> trong terminal.</p>
+<p>Để chạy ứng dụng ReadyAPI của bạn cho quá trình phát triển (development), bạn có thể sử dụng lệnh <code>readyapi dev</code>:</p>
 <div class="termy">
 
 <div class="highlight"><pre><span></span><code><span id="__span-0-1"><span class="gp">$ </span>&lt;font<span class="w"> </span><span class="nv">color</span><span class="o">=</span><span class="s2">&quot;#4E9A06&quot;</span>&gt;readyapi&lt;/font&gt;<span class="w"> </span>dev<span class="w"> </span>&lt;u<span class="w"> </span><span class="nv">style</span><span class="o">=</span><span class="s2">&quot;text-decoration-style:solid&quot;</span>&gt;main.py&lt;/u&gt;
@@ -4588,20 +4583,20 @@
 
 </div>
 
-<p>The command line program called <code>readyapi</code> is <strong>ReadyAPI CLI</strong>.</p>
-<p>ReadyAPI CLI takes the path to your Python program (e.g. <code>main.py</code>) and automatically detects the <code>ReadyAPI</code> instance (commonly named <code>app</code>), determines the correct import process, and then serves it.</p>
-<p>For production you would use <code>readyapi run</code> instead. 🚀</p>
-<p>Internally, <strong>ReadyAPI CLI</strong> uses <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, a high-performance, production-ready, ASGI server. 😎</p>
+<p>Chương trình dòng lệnh <code>readyapi</code> là <strong>ReadyAPI CLI</strong>.</p>
+<p>ReadyAPI CLI nhận đường dẫn đến chương trình Python của bạn (vd <code>main.py</code>) và tự động phát hiện đối tượng <code>ReadyAPI</code> (thường được gọi là <code>app</code>), xác định quá trình nhập đúng, và sau đó chạy nó (serve).</p>
+<p>Đối với vận hành thực tế (production), bạn sẽ sử dụng <code>readyapi run</code> thay thế. 🚀</p>
+<p>Ở bên trong, <strong>ReadyAPI CLI</strong> sử dụng <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, một server ASGI có hiệu suất cao, sẵn sàng cho vận hành thực tế (production). 😎</p>
 <h2 id="readyapi-dev"><code>readyapi dev</code><a class="headerlink" href="#readyapi-dev" title="Permanent link">&para;</a></h2>
-<p>Running <code>readyapi dev</code> initiates development mode.</p>
-<p>By default, <strong>auto-reload</strong> is enabled, automatically reloading the server when you make changes to your code. This is resource-intensive and could be less stable than when it's disabled. You should only use it for development. It also listens on the IP address <code>127.0.0.1</code>, which is the IP for your machine to communicate with itself alone (<code>localhost</code>).</p>
+<p>Chạy <code>readyapi dev</code> sẽ khởi động quá trình phát triển.</p>
+<p>Mặc định, <strong>auto-reload</strong> được bật, tự động tải lại server khi bạn thay đổi code của bạn. Điều này tốn nhiều tài nguyên và có thể kém ổn định hơn khi nó bị tắt. Bạn nên sử dụng nó cho quá trình phát triển. Nó cũng lắng nghe địa chỉ IP <code>127.0.0.1</code>, đó là địa chỉ IP của máy tính để tự giao tiếp với chính nó (<code>localhost</code>).</p>
 <h2 id="readyapi-run"><code>readyapi run</code><a class="headerlink" href="#readyapi-run" title="Permanent link">&para;</a></h2>
-<p>Executing <code>readyapi run</code> starts ReadyAPI in production mode by default.</p>
-<p>By default, <strong>auto-reload</strong> is disabled. It also listens on the IP address <code>0.0.0.0</code>, which means all the available IP addresses, this way it will be publicly accessible to anyone that can communicate with the machine. This is how you would normally run it in production, for example, in a container.</p>
-<p>In most cases you would (and should) have a "termination proxy" handling HTTPS for you on top, this will depend on how you deploy your application, your provider might do this for you, or you might need to set it up yourself.</p>
+<p>Chạy <code>readyapi run</code> mặc định sẽ khởi động ReadyAPI cho quá trình vận hành thực tế.</p>
+<p>Mặc định, <strong>auto-reload</strong> bị tắt. Nó cũng lắng nghe địa chỉ IP <code>0.0.0.0</code>, đó là tất cả các địa chỉ IP có sẵn, như vậy nó sẽ được truy cập công khai bởi bất kỳ ai có thể giao tiếp với máy tính. Đây là cách bạn thường chạy nó trong sản phẩm hoàn thiện, ví dụ trong một container.</p>
+<p>Trong hầu hết các trường hợp, bạn sẽ (và nên) có một "proxy điểm cuối (termination proxy)" xử lý HTTPS cho bạn, điều này sẽ phụ thuộc vào cách bạn triển khai ứng dụng của bạn, nhà cung cấp có thể làm điều này cho bạn, hoặc bạn có thể cần thiết lập nó.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can learn more about it in the <a class="internal-link" href="../deployment/" target="_blank">deployment documentation</a>.</p>
+<p>Bạn có thể tìm hiểu thêm về ReadyAPI CLI trong <a class="internal-link" href="../deployment/" target="_blank">tài liệu triển khai</a>.</p>
 </div>
 
 

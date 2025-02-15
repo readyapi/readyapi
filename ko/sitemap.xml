@@ -65,6 +65,10 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
+         <loc>https://readyapi.khulnasoft.com/ko/advanced/custom-response/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
          <loc>https://readyapi.khulnasoft.com/ko/advanced/events/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -301,6 +305,10 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
+         <loc>https://readyapi.khulnasoft.com/ko/tutorial/dependencies/dependencies-with-yield/</loc>
+         <lastmod>2025-02-15</lastmod>
+    </url>
+    <url>
          <loc>https://readyapi.khulnasoft.com/ko/tutorial/dependencies/global-dependencies/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -333,10 +341,6 @@
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-         <loc>https://readyapi.khulnasoft.com/ko/tutorial/dependencies/dependencies-with-yield/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
          <loc>https://readyapi.khulnasoft.com/ko/tutorial/security/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
@@ -354,10 +358,6 @@
     </url>
     <url>
          <loc>https://readyapi.khulnasoft.com/ko/advanced/path-operation-advanced-configuration/</loc>
-         <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-         <loc>https://readyapi.khulnasoft.com/ko/advanced/custom-response/</loc>
          <lastmod>2025-02-15</lastmod>
     </url>
     <url>
