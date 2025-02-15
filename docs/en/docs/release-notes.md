@@ -15,6 +15,7 @@ hide:
 
 ### Docs
 
+* ci: improve. PR [#186](https://github.com/readyapi/readyapi/pull/186) by [@FortiShield](https://github.com/FortiShield).
 * 📝 Add more precise description of HTTP status code range in docs. PR [#13347](https://github.com/readyapi/readyapi/pull/13347) by [@DanielYang59](https://github.com/DanielYang59).
 * 🔥 Remove manual type annotations in JWT tutorial to avoid typing expectations (JWT doesn't provide more types). PR [#13378](https://github.com/readyapi/readyapi/pull/13378) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Update docs for Query Params and String Validations, remove obsolete Ellipsis docs (`...`). PR [#13377](https://github.com/readyapi/readyapi/pull/13377) by [@khulnasoft](https://github.com/khulnasoft).
