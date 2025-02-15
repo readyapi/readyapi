@@ -103,6 +103,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump mkdocs-material from 9.5.18 to 9.6.1. PR [#183](https://github.com/readyapi/readyapi/pull/183) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump peaceiris/actions-gh-pages from 3 to 4. PR [#179](https://github.com/readyapi/readyapi/pull/179) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pypa/gh-action-pypi-publish from 1.12.3 to 1.12.4. PR [#180](https://github.com/readyapi/readyapi/pull/180) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Update add-to-project.yml. PR [#178](https://github.com/readyapi/readyapi/pull/178) by [@FortiShield](https://github.com/FortiShield).
