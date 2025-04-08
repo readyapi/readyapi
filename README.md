@@ -6,7 +6,7 @@
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
@@ -62,6 +62,7 @@ The key features are:
 <a href="https://speakeasy.com?utm_source=readyapi+repo&utm_medium=github+sponsorship" target="_blank" title="SDKs for your API | Speakeasy"><img src="https://readyapi.khulnasoft.com/img/sponsors/speakeasy.png"></a>
 <a href="https://www.svix.com/" target="_blank" title="Svix - Webhooks as a service"><img src="https://readyapi.khulnasoft.com/img/sponsors/svix.svg"></a>
 <a href="https://www.stainlessapi.com/?utm_source=readyapi&utm_medium=referral" target="_blank" title="Stainless | Generate best-in-class SDKs"><img src="https://readyapi.khulnasoft.com/img/sponsors/stainless.png"></a>
+<a href="https://www.permit.io/blog/implement-authorization-in-readyapi?utm_source=github&utm_medium=referral&utm_campaign=readyapi" target="_blank" title="Fine-Grained Authorization for ReadyAPI"><img src="https://readyapi.khulnasoft.com/img/sponsors/permit.png"></a>
 
 <!-- /sponsors -->
 
