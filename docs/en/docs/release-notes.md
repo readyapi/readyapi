@@ -9,6 +9,7 @@ hide:
 
 ### Refactors
 
+* ✅ Simplify tests for body_multiple_params. PR [#181](https://github.com/readyapi/readyapi/pull/181) by [@NxPKG](https://github.com/NxPKG).
 * ✅ Simplify tests for `query_params_str_validations`. PR [#13218](https://github.com/readyapi/readyapi/pull/13218) by [@alv2017](https://github.com/alv2017).
 * ✅ Simplify tests for `app_testing`. PR [#13220](https://github.com/readyapi/readyapi/pull/13220) by [@alv2017](https://github.com/alv2017).
 * ✅ Simplify tests for `dependency_testing`. PR [#13223](https://github.com/readyapi/readyapi/pull/13223) by [@alv2017](https://github.com/alv2017).
