@@ -23,7 +23,7 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: khulnasoft/issue-manager-action@0.5.0
+      - uses: khulnasoft/issue-manager-action@0.5.1
         with:
           token: ${{ secrets.ORG_REPO_TOKEN }}
           config: >
