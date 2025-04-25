@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* 👥 Update ReadyAPI GitHub topic repositories. PR [#184](https://github.com/readyapi/readyapi/pull/184) by [@NxPKG](https://github.com/NxPKG).
 * 👥 Update ReadyAPI People - Contributors and Translators. PR [#187](https://github.com/readyapi/readyapi/pull/187) by [@NxPKG](https://github.com/NxPKG).
 * 👥 Update ReadyAPI People - Contributors and Translators. PR [#193](https://github.com/readyapi/readyapi/pull/193) by [@NxPKG](https://github.com/NxPKG).
 * 👥 Update ReadyAPI GitHub topic repositories. PR [#192](https://github.com/readyapi/readyapi/pull/192) by [@NxPKG](https://github.com/NxPKG).
