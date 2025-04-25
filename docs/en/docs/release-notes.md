@@ -45,6 +45,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump mkdocstrings[python] from 0.26.1 to 0.29.1. PR [#195](https://github.com/readyapi/readyapi/pull/195) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#197](https://github.com/readyapi/readyapi/pull/197) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.13 to 3.14. PR [#13350](https://github.com/readyapi/readyapi/pull/13350) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump mkdocs-material from 9.5.18 to 9.6.1. PR [#13301](https://github.com/readyapi/readyapi/pull/13301) by [@dependabot[bot]](https://github.com/apps/dependabot).
