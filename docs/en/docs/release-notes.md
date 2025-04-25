@@ -7,6 +7,7 @@ hide:
 
 ## Latest Changes
 
+* 👥 Update ReadyAPI People - Contributors and Translators. PR [#193](https://github.com/readyapi/readyapi/pull/193) by [@NxPKG](https://github.com/NxPKG).
 * 👥 Update ReadyAPI GitHub topic repositories. PR [#192](https://github.com/readyapi/readyapi/pull/192) by [@NxPKG](https://github.com/NxPKG).
 * ⬆ Bump types-ujson from 5.10.0.20240515 to 5.10.0.20250326. PR [#204](https://github.com/readyapi/readyapi/pull/204) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
