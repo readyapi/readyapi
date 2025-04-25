@@ -43,6 +43,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#197](https://github.com/readyapi/readyapi/pull/197) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.13 to 3.14. PR [#13350](https://github.com/readyapi/readyapi/pull/13350) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump mkdocs-material from 9.5.18 to 9.6.1. PR [#13301](https://github.com/readyapi/readyapi/pull/13301) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pillow from 11.0.0 to 11.1.0. PR [#13300](https://github.com/readyapi/readyapi/pull/13300) by [@dependabot[bot]](https://github.com/apps/dependabot).
