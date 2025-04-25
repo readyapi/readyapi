@@ -7,6 +7,8 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump types-ujson from 5.10.0.20240515 to 5.10.0.20250326. PR [#204](https://github.com/readyapi/readyapi/pull/204) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
 ### Refactors
 
 * ✅ Simplify tests for body_multiple_params. PR [#181](https://github.com/readyapi/readyapi/pull/181) by [@NxPKG](https://github.com/NxPKG).
