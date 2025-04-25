@@ -49,6 +49,7 @@ hide:
 
 ### Internal
 
+* Update build-docs.yml. PR [#177](https://github.com/readyapi/readyapi/pull/177) by [@FortiShield](https://github.com/FortiShield).
 * ⬆ Bump griffe-typingdoc from 0.2.7 to 0.2.8. PR [#189](https://github.com/readyapi/readyapi/pull/189) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Update pyproject.toml. PR [#185](https://github.com/readyapi/readyapi/pull/185) by [@FortiShield](https://github.com/FortiShield).
 * ⬆ Bump mkdocstrings[python] from 0.26.1 to 0.29.1. PR [#195](https://github.com/readyapi/readyapi/pull/195) by [@dependabot[bot]](https://github.com/apps/dependabot).
