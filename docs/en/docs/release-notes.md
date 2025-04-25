@@ -7,6 +7,99 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump types-ujson from 5.10.0.20240515 to 5.10.0.20250326. PR [#204](https://github.com/readyapi/readyapi/pull/204) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+### Refactors
+
+* ✅ Simplify tests for body_multiple_params. PR [#181](https://github.com/readyapi/readyapi/pull/181) by [@NxPKG](https://github.com/NxPKG).
+* ✅ Simplify tests for `query_params_str_validations`. PR [#13218](https://github.com/readyapi/readyapi/pull/13218) by [@alv2017](https://github.com/alv2017).
+* ✅ Simplify tests for `app_testing`. PR [#13220](https://github.com/readyapi/readyapi/pull/13220) by [@alv2017](https://github.com/alv2017).
+* ✅ Simplify tests for `dependency_testing`. PR [#13223](https://github.com/readyapi/readyapi/pull/13223) by [@alv2017](https://github.com/alv2017).
+
+### Docs
+
+* ci: improve. PR [#186](https://github.com/readyapi/readyapi/pull/186) by [@FortiShield](https://github.com/FortiShield).
+* 📝 Add more precise description of HTTP status code range in docs. PR [#13347](https://github.com/readyapi/readyapi/pull/13347) by [@DanielYang59](https://github.com/DanielYang59).
+* 🔥 Remove manual type annotations in JWT tutorial to avoid typing expectations (JWT doesn't provide more types). PR [#13378](https://github.com/readyapi/readyapi/pull/13378) by [@khulnasoft](https://github.com/khulnasoft).
+* 📝 Update docs for Query Params and String Validations, remove obsolete Ellipsis docs (`...`). PR [#13377](https://github.com/readyapi/readyapi/pull/13377) by [@khulnasoft](https://github.com/khulnasoft).
+* ✏️ Remove duplicate title in docs `body-multiple-params`. PR [#13345](https://github.com/readyapi/readyapi/pull/13345) by [@DanielYang59](https://github.com/DanielYang59).
+* 📝 Fix test badge. PR [#13313](https://github.com/readyapi/readyapi/pull/13313) by [@esadek](https://github.com/esadek).
+
+### Translations
+
+* 🌐 Update Korean translation for `docs/ko/docs/help-readyapi.md`. PR [#13262](https://github.com/readyapi/readyapi/pull/13262) by [@Zerohertz](https://github.com/Zerohertz).
+* 🌐 Add Korean translation for `docs/ko/docs/advanced/custom-response.md`. PR [#13265](https://github.com/readyapi/readyapi/pull/13265) by [@11kkw](https://github.com/11kkw).
+* 🌐 Update Korean translation for `docs/ko/docs/tutorial/security/simple-oauth2.md`. PR [#13335](https://github.com/readyapi/readyapi/pull/13335) by [@yes0ng](https://github.com/yes0ng).
+* 🌐 Add Russian translation for `docs/ru/docs/advanced/response-cookies.md`. PR [#13327](https://github.com/readyapi/readyapi/pull/13327) by [@Stepakinoyan](https://github.com/Stepakinoyan).
+* 🌐  Add Vietnamese translation for `docs/vi/docs/tutorial/static-files.md`. PR [#11291](https://github.com/readyapi/readyapi/pull/11291) by [@ptt3199](https://github.com/ptt3199).
+* 🌐 Add Korean translation for `docs/ko/docs/tutorial/dependencies/dependencies-with-yield.md`. PR [#13257](https://github.com/readyapi/readyapi/pull/13257) by [@11kkw](https://github.com/11kkw).
+* 🌐 Add Vietnamese translation for `docs/vi/docs/virtual-environments.md`. PR [#13282](https://github.com/readyapi/readyapi/pull/13282) by [@ptt3199](https://github.com/ptt3199).
+* 🌐 Add Ukrainian translation for `docs/uk/docs/tutorial/static-files.md`. PR [#13285](https://github.com/readyapi/readyapi/pull/13285) by [@valentinDruzhinin](https://github.com/valentinDruzhinin).
+* 🌐 Add Vietnamese translation for `docs/vi/docs/environment-variables.md`. PR [#13287](https://github.com/readyapi/readyapi/pull/13287) by [@ptt3199](https://github.com/ptt3199).
+* 🌐 Add Vietnamese translation for `docs/vi/docs/readyapi-cli.md`. PR [#13294](https://github.com/readyapi/readyapi/pull/13294) by [@ptt3199](https://github.com/ptt3199).
+* 🌐 Add Ukrainian translation for `docs/uk/docs/features.md`. PR [#13308](https://github.com/readyapi/readyapi/pull/13308) by [@valentinDruzhinin](https://github.com/valentinDruzhinin).
+* 🌐 Add Ukrainian translation for `docs/uk/docs/learn/index.md`. PR [#13306](https://github.com/readyapi/readyapi/pull/13306) by [@valentinDruzhinin](https://github.com/valentinDruzhinin).
+* 🌐 Update Portuguese Translation for `docs/pt/docs/deployment/https.md`. PR [#13317](https://github.com/readyapi/readyapi/pull/13317) by [@Joao-Pedro-P-Holanda](https://github.com/Joao-Pedro-P-Holanda).
+* 🌐 Update Portuguese Translation for `docs/pt/docs/index.md`. PR [#13328](https://github.com/readyapi/readyapi/pull/13328) by [@ceb10n](https://github.com/ceb10n).
+* 🌐 Add Russian translation for `docs/ru/docs/advanced/websockets.md`. PR [#13279](https://github.com/readyapi/readyapi/pull/13279) by [@Rishat-F](https://github.com/Rishat-F).
+
+### Internal
+
+* ⬆ Bump mkdocstrings[python] from 0.26.1 to 0.29.1. PR [#195](https://github.com/readyapi/readyapi/pull/195) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#197](https://github.com/readyapi/readyapi/pull/197) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump cloudflare/wrangler-action from 3.13 to 3.14. PR [#13350](https://github.com/readyapi/readyapi/pull/13350) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump mkdocs-material from 9.5.18 to 9.6.1. PR [#13301](https://github.com/readyapi/readyapi/pull/13301) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump pillow from 11.0.0 to 11.1.0. PR [#13300](https://github.com/readyapi/readyapi/pull/13300) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 👥 Update ReadyAPI People - Sponsors. PR [#13295](https://github.com/readyapi/readyapi/pull/13295) by [@khulnasoft](https://github.com/khulnasoft).
+* 👥 Update ReadyAPI People - Experts. PR [#13303](https://github.com/readyapi/readyapi/pull/13303) by [@khulnasoft](https://github.com/khulnasoft).
+* 👥 Update ReadyAPI GitHub topic repositories. PR [#13302](https://github.com/readyapi/readyapi/pull/13302) by [@khulnasoft](https://github.com/khulnasoft).
+* 👥 Update ReadyAPI People - Contributors and Translators. PR [#13293](https://github.com/readyapi/readyapi/pull/13293) by [@khulnasoft](https://github.com/khulnasoft).
+* ⬆ Bump inline-snapshot from 0.18.1 to 0.19.3. PR [#13298](https://github.com/readyapi/readyapi/pull/13298) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* 🔧 Update sponsors, add Permit. PR [#13288](https://github.com/readyapi/readyapi/pull/13288) by [@khulnasoft](https://github.com/khulnasoft).
+
+## 0.115.8
+
+### Fixes
+
+* 🐛 Fix `OAuth2PasswordRequestForm` and `OAuth2PasswordRequestFormStrict` fixed `grant_type` "password" RegEx. PR [#9783](https://github.com/readyapi/readyapi/pull/9783) by [@skarfie123](https://github.com/skarfie123).
+
+### Refactors
+
+* ✅ Simplify tests for body_multiple_params . PR [#13237](https://github.com/readyapi/readyapi/pull/13237) by [@alejsdev](https://github.com/alejsdev).
+* ♻️ Move duplicated code portion to a static method in the `APIKeyBase` super class. PR [#3142](https://github.com/readyapi/readyapi/pull/3142) by [@ShahriyarR](https://github.com/ShahriyarR).
+* ✅ Simplify tests for request_files. PR [#13182](https://github.com/readyapi/readyapi/pull/13182) by [@alejsdev](https://github.com/alejsdev).
+
+### Docs
+
+* 📝 Change the word "unwrap" to "unpack" in `docs/en/docs/tutorial/extra-models.md`. PR [#13061](https://github.com/readyapi/readyapi/pull/13061) by [@timothy-jeong](https://github.com/timothy-jeong).
+* 📝 Update Request Body's `tutorial002` to deal with `tax=0` case. PR [#13230](https://github.com/readyapi/readyapi/pull/13230) by [@togogh](https://github.com/togogh).
+* 👥 Update ReadyAPI People - Experts. PR [#13269](https://github.com/readyapi/readyapi/pull/13269) by [@khulnasoft](https://github.com/khulnasoft).
+
+### Translations
+
+* 🌐 Add Japanese translation for `docs/ja/docs/environment-variables.md`. PR [#13226](https://github.com/readyapi/readyapi/pull/13226) by [@k94-ishi](https://github.com/k94-ishi).
+* 🌐 Add Russian translation for `docs/ru/docs/advanced/async-tests.md`. PR [#13227](https://github.com/readyapi/readyapi/pull/13227) by [@Rishat-F](https://github.com/Rishat-F).
+* 🌐 Update Russian translation for `docs/ru/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md`. PR [#13252](https://github.com/readyapi/readyapi/pull/13252) by [@Rishat-F](https://github.com/Rishat-F).
+* 🌐 Add Russian translation for `docs/ru/docs/tutorial/bigger-applications.md`. PR [#13154](https://github.com/readyapi/readyapi/pull/13154) by [@alv2017](https://github.com/alv2017).
+
+### Internal
+
+* ⬆️ Add support for Python 3.13. PR [#13274](https://github.com/readyapi/readyapi/pull/13274) by [@khulnasoft](https://github.com/khulnasoft).
+* ⬆️ Upgrade AnyIO max version for tests, new range: `>=3.2.1,<5.0.0`. PR [#13273](https://github.com/readyapi/readyapi/pull/13273) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔧 Update Sponsors badges. PR [#13271](https://github.com/readyapi/readyapi/pull/13271) by [@khulnasoft](https://github.com/khulnasoft).
+* ♻️ Fix `notify_translations.py` empty env var handling for PR label events vs workflow_dispatch. PR [#13272](https://github.com/readyapi/readyapi/pull/13272) by [@khulnasoft](https://github.com/khulnasoft).
+* ♻️ Refactor and move `scripts/notify_translations.py`, no need for a custom GitHub Action. PR [#13270](https://github.com/readyapi/readyapi/pull/13270) by [@khulnasoft](https://github.com/khulnasoft).
+* 🔨 Update ReadyAPI People Experts script, refactor and optimize data fetching to handle rate limits. PR [#13267](https://github.com/readyapi/readyapi/pull/13267) by [@khulnasoft](https://github.com/khulnasoft).
+* ⬆ Bump pypa/gh-action-pypi-publish from 1.12.3 to 1.12.4. PR [#13251](https://github.com/readyapi/readyapi/pull/13251) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
+## 0.115.7
+
+### Upgrades
+
+* ⬆️ Upgrade `python-multipart` to >=0.0.18. PR [#13219](https://github.com/readyapi/readyapi/pull/13219) by [@DanielKusyDev](https://github.com/DanielKusyDev).
+* ⬆️ Bump Starlette to allow up to 0.45.0: `>=0.40.0,<0.46.0`. PR [#13117](https://github.com/readyapi/readyapi/pull/13117) by [@Kludex](https://github.com/Kludex).
+* ⬆️ Upgrade `jinja2` to >=3.1.5. PR [#13194](https://github.com/readyapi/readyapi/pull/13194) by [@DanielKusyDev](https://github.com/DanielKusyDev).
+
 ### Refactors
 
 * ✅ Simplify tests for websockets. PR [#13202](https://github.com/readyapi/readyapi/pull/13202) by [@alejsdev](https://github.com/alejsdev).
@@ -49,6 +142,7 @@ hide:
 
 ### Translations
 
+* 🌐 Update Portuguese Translation for `docs/pt/docs/tutorial/request-forms.md`. PR [#13216](https://github.com/readyapi/readyapi/pull/13216) by [@Joao-Pedro-P-Holanda](https://github.com/Joao-Pedro-P-Holanda).
 * 🌐 Update Portuguese translation for `docs/pt/docs/advanced/settings.md`. PR [#13209](https://github.com/readyapi/readyapi/pull/13209) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add Portuguese translation for `docs/pt/docs/tutorial/security/oauth2-jwt.md`. PR [#13205](https://github.com/readyapi/readyapi/pull/13205) by [@ceb10n](https://github.com/ceb10n).
 * 🌐 Add Indonesian translation for `docs/id/docs/index.md`. PR [#13191](https://github.com/readyapi/readyapi/pull/13191) by [@gerry-sabar](https://github.com/gerry-sabar).
@@ -103,6 +197,7 @@ hide:
 
 ### Internal
 
+* 🔧 Add Pydantic 2 trove classifier. PR [#13199](https://github.com/readyapi/readyapi/pull/13199) by [@johnthagen](https://github.com/johnthagen).
 * 👥 Update ReadyAPI People - Sponsors. PR [#13231](https://github.com/readyapi/readyapi/pull/13231) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Refactor ReadyAPI People Sponsors to use 2 tokens. PR [#13228](https://github.com/readyapi/readyapi/pull/13228) by [@khulnasoft](https://github.com/khulnasoft).
 * 👷 Update token for ReadyAPI People - Sponsors. PR [#13225](https://github.com/readyapi/readyapi/pull/13225) by [@khulnasoft](https://github.com/khulnasoft).
@@ -2993,7 +3088,7 @@ You hopefully updated to a supported version of Python a while ago. If you haven
 * ✏ Reword and clarify text in tutorial `docs/en/docs/tutorial/body-nested-models.md`. PR [#5169](https://github.com/khulnasoft/readyapi/pull/5169) by [@papb](https://github.com/papb).
 * ✏ Fix minor typo in `docs/en/docs/features.md`. PR [#5206](https://github.com/khulnasoft/readyapi/pull/5206) by [@OtherBarry](https://github.com/OtherBarry).
 * ✏ Fix minor typos in `docs/en/docs/async.md`. PR [#5125](https://github.com/khulnasoft/readyapi/pull/5125) by [@Ksenofanex](https://github.com/Ksenofanex).
-* 📝 Add external link to docs: "ReadyAPI, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
+* 📝 Add external link to docs: "Readyapi, Docker(Docker compose) and Postgres". PR [#5033](https://github.com/khulnasoft/readyapi/pull/5033) by [@krishnardt](https://github.com/krishnardt).
 * 📝 Simplify example for docs for Additional Responses, remove unnecessary `else`. PR [#4693](https://github.com/khulnasoft/readyapi/pull/4693) by [@adriangb](https://github.com/adriangb).
 * 📝 Update docs, compare enums with identity instead of equality. PR [#4905](https://github.com/khulnasoft/readyapi/pull/4905) by [@MicaelJarniac](https://github.com/MicaelJarniac).
 * ✏ Fix typo in `docs/en/docs/python-types.md`. PR [#4886](https://github.com/khulnasoft/readyapi/pull/4886) by [@MicaelJarniac](https://github.com/MicaelJarniac).
