@@ -7,8 +7,11 @@ hide:
 
 ## Latest Changes
 
+* ⬆ Bump types-ujson from 5.10.0.20240515 to 5.10.0.20250326. PR [#204](https://github.com/readyapi/readyapi/pull/204) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
 ### Refactors
 
+* ✅ Simplify tests for body_multiple_params. PR [#181](https://github.com/readyapi/readyapi/pull/181) by [@NxPKG](https://github.com/NxPKG).
 * ✅ Simplify tests for `query_params_str_validations`. PR [#13218](https://github.com/readyapi/readyapi/pull/13218) by [@alv2017](https://github.com/alv2017).
 * ✅ Simplify tests for `app_testing`. PR [#13220](https://github.com/readyapi/readyapi/pull/13220) by [@alv2017](https://github.com/alv2017).
 * ✅ Simplify tests for `dependency_testing`. PR [#13223](https://github.com/readyapi/readyapi/pull/13223) by [@alv2017](https://github.com/alv2017).
@@ -42,6 +45,7 @@ hide:
 
 ### Internal
 
+* ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#197](https://github.com/readyapi/readyapi/pull/197) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.13 to 3.14. PR [#13350](https://github.com/readyapi/readyapi/pull/13350) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump mkdocs-material from 9.5.18 to 9.6.1. PR [#13301](https://github.com/readyapi/readyapi/pull/13301) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump pillow from 11.0.0 to 11.1.0. PR [#13300](https://github.com/readyapi/readyapi/pull/13300) by [@dependabot[bot]](https://github.com/apps/dependabot).
