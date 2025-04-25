@@ -67,7 +67,7 @@ jobs:
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
         run: uv pip install -r requirements-docs-insiders.txt
         env:
-          TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}
+          TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
       - name: Verify Docs
         run: python ./scripts/docs.py verify-docs
       - name: Export Language Codes
@@ -108,7 +108,7 @@ jobs:
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
         run: uv pip install -r requirements-docs-insiders.txt
         env:
-          TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL_INSIDERS }}
+          TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
       - name: Update Languages
         run: python ./scripts/docs.py update-languages
       - uses: actions/cache@v4
