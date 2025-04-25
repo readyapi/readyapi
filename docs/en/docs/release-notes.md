@@ -49,6 +49,7 @@ hide:
 
 ### Internal
 
+* Update pyproject.toml. PR [#185](https://github.com/readyapi/readyapi/pull/185) by [@FortiShield](https://github.com/FortiShield).
 * ⬆ Bump mkdocstrings[python] from 0.26.1 to 0.29.1. PR [#195](https://github.com/readyapi/readyapi/pull/195) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump astral-sh/setup-uv from 5 to 6. PR [#197](https://github.com/readyapi/readyapi/pull/197) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump cloudflare/wrangler-action from 3.13 to 3.14. PR [#13350](https://github.com/readyapi/readyapi/pull/13350) by [@dependabot[bot]](https://github.com/apps/dependabot).
