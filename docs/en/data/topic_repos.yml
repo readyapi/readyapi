@@ -38,16 +38,16 @@
   stars: 1
   owner_login: fribeiro1
   owner_html_url: https://github.com/fribeiro1
-- name: ofscutils
-  html_url: https://github.com/fribeiro1/ofscutils
-  stars: 0
-  owner_login: fribeiro1
-  owner_html_url: https://github.com/fribeiro1
 - name: soapui-show-disabled-items-plugins
   html_url: https://github.com/Galileo1/soapui-show-disabled-items-plugins
   stars: 0
   owner_login: Galileo1
   owner_html_url: https://github.com/Galileo1
+- name: ofscutils
+  html_url: https://github.com/fribeiro1/ofscutils
+  stars: 0
+  owner_login: fribeiro1
+  owner_html_url: https://github.com/fribeiro1
 - name: soapui-filter-by-tags
   html_url: https://github.com/Galileo1/soapui-filter-by-tags
   stars: 0
