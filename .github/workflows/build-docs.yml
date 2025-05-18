@@ -10,6 +10,7 @@ on:
 
 env:
   UV_SYSTEM_PYTHON: 1
+  CUSTOM_VAR: "value"
 
 jobs:
   changes:
@@ -79,11 +80,17 @@ jobs:
     needs:
       - changes
       - langs
-    if: ${{ needs.changes.outputs.docs == 'true' }}
+    # Only run on specific branches or with specific conditions
+    if: |
+      needs.changes.outputs.docs == 'true' && 
+      (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     strategy:
       matrix:
         lang: ${{ fromJson(needs.langs.outputs.langs) }}
+    env:
+      JOB_SPECIFIC_VAR: "value"
+    environment: ${{ github.ref == 'refs/heads/master' && 'production' || 'development' }}
     steps:
       - name: Dump GitHub context
         env:
@@ -115,7 +122,17 @@ jobs:
         with:
           key: mkdocs-cards-${{ matrix.lang }}-${{ github.ref }}
           path: docs/${{ matrix.lang }}/.cache
+      - uses: actions/cache@v4
+        with:
+          key: custom-cache-${{ matrix.lang }}-${{ github.ref }}
+          path: |
+            path/to/cache/dir1
+            path/to/cache/dir2
       - name: Build Docs
+        env:
+          STEP_SPECIFIC_VAR: "value"
+          ENVIRONMENT: ${{ github.ref == 'refs/heads/master' && 'production' || 'development' }}
+          BASE_URL: ${{ github.ref == 'refs/heads/master' && 'https://docs.yoursite.com' || 'https://dev-docs.yoursite.com' }}
         run: python ./scripts/docs.py build-lang ${{ matrix.lang }}
       - uses: actions/upload-artifact@v4
         with:
