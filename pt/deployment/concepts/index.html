@@ -1,0 +1,5508 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ReadyAPI framework, high performance, easy to learn, fast to code, ready for production">
+      
+      
+      
+        <link rel="canonical" href="https://readyapi.khulnasoft.com/pt/deployment/concepts/">
+      
+      
+        <link rel="prev" href="../manually/">
+      
+      
+        <link rel="next" href="../cloud/">
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>Conceitos de Implantações - ReadyAPI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../css/termynal.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-YNEVN69SC3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-YNEVN69SC3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-YNEVN69SC3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceitos-de-implantacoes" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div class="announce-wrapper">
+  <div id="announce-left">
+    <div class="item">
+      <a class="announce-link" href="https://twitter.com/readyapi" target="_blank">
+        <span class="twemoji twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+        </span> Follow <strong>@readyapi</strong> on <strong>Twitter</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://www.linkedin.com/company/readyapi" target="_blank">
+        <span class="twemoji linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+        </span> Follow <strong>ReadyAPI</strong> on <strong>LinkedIn</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+        </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
+      </a>
+    </div>
+  </div>
+  <div id="announce-right" style="position: relative;">
+    <div class="item">
+      <a title="BlockBee Cryptocurrency Payment Gateway" style="display: block; position: relative;" href="https://blockbee.io?ref=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/blockbee-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build, run and scale your apps on a modern, reliable, and secure PaaS." style="display: block; position: relative;" href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/platform-sh-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy ReadyAPI on AWS with a few clicks" style="display: block; position: relative;" href="https://www.porter.run" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/porter-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files" style="display: block; position: relative;" href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=top-banner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/scalar-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Auth, user management and more for your B2B product" style="display: block; position: relative;" href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=topbanner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/propelauth-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build your next app with ReadyAPI and MongoDB" style="display: block; position: relative;" href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/mongodb-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI" style="display: block; position: relative;" href="https://zuplo.link/readyapi-web" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/zuplo-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="liblab - Generate SDKs from ReadyAPI" style="display: block; position: relative;" href="https://liblab.com?utm_source=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/liblab-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra." style="display: block; position: relative;" href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/render-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Cut Code Review Time & Bugs in Half with CodeRabbit" style="display: block; position: relative;" href="https://www.coderabbit.ai/?utm_source=readyapi&utm_medium=banner&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/coderabbit-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Making Retail Purchases Actionable for Brands and Developers" style="display: block; position: relative;" href="https://subtotal.com/?utm_source=readyapi&utm_medium=sponsorship&utm_campaign=open-source" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/subtotal-banner.svg" />
+      </a>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="ReadyAPI" class="md-header__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../../img/icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReadyAPI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conceitos de Implantações
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6zm13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="" class="md-select__link">
+              en - English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/az/" hreflang="" class="md-select__link">
+              az - azərbaycan dili
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/bn/" hreflang="" class="md-select__link">
+              bn - বাংলা
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/" hreflang="" class="md-select__link">
+              de - Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="" class="md-select__link">
+              es - español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fa/" hreflang="" class="md-select__link">
+              fa - فارسی
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/he/" hreflang="" class="md-select__link">
+              he - עברית
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/hu/" hreflang="" class="md-select__link">
+              hu - magyar
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/id/" hreflang="" class="md-select__link">
+              id - Bahasa Indonesia
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/it/" hreflang="" class="md-select__link">
+              it - italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ko/" hreflang="" class="md-select__link">
+              ko - 한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/nl/" hreflang="" class="md-select__link">
+              nl - Nederlands
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pl/" hreflang="" class="md-select__link">
+              pl - Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt/" hreflang="" class="md-select__link">
+              pt - português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ru/" hreflang="" class="md-select__link">
+              ru - русский язык
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/uk/" hreflang="" class="md-select__link">
+              uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ur/" hreflang="" class="md-select__link">
+              ur - اردو
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/vi/" hreflang="" class="md-select__link">
+              vi - Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/yo/" hreflang="" class="md-select__link">
+              yo - Yorùbá
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/em/" hreflang="" class="md-select__link">
+              😉
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/readyapi/readyapi" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+    
+  
+  Recursos
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../learn/" class="md-tabs__link">
+          
+  
+    
+  
+  Aprender
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../readyapi-people/" class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI People
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
+          
+  
+    
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+    
+  
+  Sobre
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release-notes/" class="md-tabs__link">
+        
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ReadyAPI" class="md-nav__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../../img/icon-white.svg" alt="logo">
+
+    </a>
+    ReadyAPI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/readyapi/readyapi" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learn/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Aprender
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Aprender
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução aos tipos Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../async/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concorrência e async / await
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environment-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variáveis de Ambiente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../virtual-environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ambientes Virtuais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorial - Guia de Usuário
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorial - Guia de Usuário
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primeiros Passos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros da rota da URL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros de Consulta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo da Requisição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-params-str-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros de consulta e validações de texto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-params-numeric-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros da Rota e Validações Numéricas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/query-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Parâmetros de Consulta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-multiple-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo - Múltiplos parâmetros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo - Campos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-nested-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo - Modelos aninhados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/schema-extra-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declare um exemplo dos dados da requisição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/extra-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tipos de dados extras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cookie-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros de Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/header-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parâmetros de Cabeçalho
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cookie-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Parâmetros de Cookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/header-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Parâmetros do Cabeçalho
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/response-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelo de resposta - Tipo de retorno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/extra-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos Adicionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/response-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de status de resposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dados do formulário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-form-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Formulários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arquivos de Requisição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/request-forms-and-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formulários e Arquivos da Requisição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/handling-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipulação de erros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/path-operation-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração da Operação de Rota
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/encoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codificador Compatível com JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/body-updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo - Atualizações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_29" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/dependencies/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dependências
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_29" id="__nav_3_6_29_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_29_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_29">
+            <span class="md-nav__icon md-icon"></span>
+            Dependências
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/classes-as-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes como Dependências
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/sub-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Subdependências
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/dependencies-in-path-operation-decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependências em decoradores de operações de rota
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/global-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependências Globais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/dependencies/dependencies-with-yield/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependências com yield
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_30" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tutorial/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Segurança
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_30" id="__nav_3_6_30_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_30_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_30">
+            <span class="md-nav__icon md-icon"></span>
+            Segurança
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Segurança - Primeiros Passos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/get-current-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obter Usuário Atual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/simple-oauth2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simples OAuth2 com senha e Bearer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/security/oauth2-jwt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OAuth2 com Senha (e hashing), Bearer com tokens JWT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CORS (Cross-Origin Resource Sharing)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/sql-databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bancos de Dados SQL (Relacionais)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/bigger-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplicações Maiores - Múltiplos Arquivos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/background-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tarefas em segundo plano
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadados e Urls de Documentos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/static-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arquivos Estáticos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Depuração
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Guia de Usuário Avançado
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guia de Usuário Avançado
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/path-operation-advanced-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração Avançada da Operação de Rota
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/additional-status-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Códigos de status adicionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retornando uma Resposta Diretamente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/custom-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resposta Personalizada - HTML, Stream, File e outras
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/additional-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retornos Adicionais no OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-cookies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookies de Resposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-headers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cabeçalhos de resposta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/response-change-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retorno - Altere o Código de Status
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/advanced-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependências avançadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../advanced/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Segurança Avançada
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_11" id="__nav_3_7_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_11">
+            <span class="md-nav__icon md-icon"></span>
+            Segurança Avançada
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/security/oauth2-scopes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Escopos OAuth2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/security/http-basic-auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTP Basic Auth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/using-request-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utilizando o Request diretamente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/dataclasses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usando Dataclasses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware Avançado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/sub-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub Aplicações - Montagens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/behind-a-proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atrás de um Proxy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eventos de vida útil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testando WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testando Eventos: inicialização - encerramento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/testing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testando Dependências com Sobreposição (Overrides)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/async-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testes Assíncronos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurações e Variáveis de Ambiente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/openapi-callbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Callbacks na OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/openapi-webhooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Webhooks OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/wsgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adicionando WSGI - Flask, Django, entre outros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/generate-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate Clients
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readyapi-cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Implantação
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Implantação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre as versões do ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../https/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre HTTPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manually/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execute um Servidor Manualmente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conceitos de Implantações
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Conceitos de Implantações
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança - HTTPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança - HTTPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para HTTPS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programa-e-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programa e Processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programa e Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-um-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é um Programa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-um-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é um Processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executando-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executando na inicialização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executando na inicialização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#em-um-servidor-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Em um servidor remoto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executar-automaticamente-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executar automaticamente na inicialização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-separado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programa separado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-executar-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para executar na inicialização
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinicializacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinicializações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reinicializações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nos-cometemos-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nós cometemos erros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pequenos-erros-sao-tratados-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pequenos erros são tratados automaticamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros-maiores-travamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erros maiores - Travamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reiniciar-apos-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reiniciar após falha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-reiniciar-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para reiniciar automaticamente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replicacao-processos-e-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replicação - Processos e Memória
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Replicação - Processos e Memória">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processos-multiplos-trabalhadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos Múltiplos - Trabalhadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processos-do-trabalhador-e-portas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos do Trabalhador e Portas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-por-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória por Processo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-do-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória do servidor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processos-multiplos-um-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos Múltiplos - Um Exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-ferramentas-e-estrategias-de-replicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de ferramentas e estratégias de replicação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapas-anteriores-antes-de-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas anteriores antes de começar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Etapas anteriores antes de começar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-estrategias-de-etapas-anteriores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de estratégias de etapas anteriores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizacao-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilização de recursos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recapitular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recapitular
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implantar ReadyAPI em provedores de nuvem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trabalhadores do Servidor - Uvicorn com Trabalhadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI em contêineres - Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Como Fazer - Exemplos Práticos
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            Como Fazer - Exemplos Práticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geral - Como Fazer - Receitas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/graphql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GraphQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/custom-request-and-route/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisições Personalizadas e Classes da APIRoute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/conditional-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI condicional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/extending-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extendendo o OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/separate-openapi-schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Esquemas OpenAPI Separados para Entrada e Saída ou Não
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/custom-docs-ui-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursos Estáticos Personalizados para a UI de Documentação (Hospedagem Própria)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/configure-swagger-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurar Swagger UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to/testing-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testando a Base de Dados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/uploadfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UploadFile class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions - HTTPException and WebSocketException
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies - Depends() and Security()
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/apirouter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIRouter class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks - BackgroundTasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/request/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/httpconnection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPConnection class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response Classes - File, HTML, Redirect, Streaming, etc.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/openapi/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OpenAPI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
+            <span class="md-nav__icon md-icon"></span>
+            OpenAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/openapi/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/openapi/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/encoders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoders - jsonable_encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/staticfiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Files - StaticFiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/templating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templating - Jinja2Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/testclient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Client - TestClient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readyapi-people/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI People
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../resources/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../help-readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ajuda ReadyAPI - Obter Ajuda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development - Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geração de Projetos - Modelo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links and Articles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../newsletter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI and friends newsletter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../about/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sobre
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alternatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternativas, Inspiração e Comparações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history-design-future/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    História, Design e Futuro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comparações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seguranca-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança - HTTPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança - HTTPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para HTTPS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programa-e-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programa e Processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programa e Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-um-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é um Programa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-um-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é um Processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executando-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executando na inicialização
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executando na inicialização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#em-um-servidor-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Em um servidor remoto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executar-automaticamente-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executar automaticamente na inicialização
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-separado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programa separado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-executar-na-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para executar na inicialização
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinicializacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinicializações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reinicializações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nos-cometemos-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nós cometemos erros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pequenos-erros-sao-tratados-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pequenos erros são tratados automaticamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erros-maiores-travamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Erros maiores - Travamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reiniciar-apos-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reiniciar após falha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-de-exemplo-para-reiniciar-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas de exemplo para reiniciar automaticamente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replicacao-processos-e-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replicação - Processos e Memória
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Replicação - Processos e Memória">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processos-multiplos-trabalhadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos Múltiplos - Trabalhadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processos-do-trabalhador-e-portas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos do Trabalhador e Portas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-por-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória por Processo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-do-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memória do servidor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processos-multiplos-um-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processos Múltiplos - Um Exemplo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-ferramentas-e-estrategias-de-replicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de ferramentas e estratégias de replicação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapas-anteriores-antes-de-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas anteriores antes de começar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Etapas anteriores antes de começar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-estrategias-de-etapas-anteriores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de estratégias de etapas anteriores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilizacao-de-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilização de recursos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recapitular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recapitular
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="conceitos-de-implantacoes">Conceitos de Implantações<a class="headerlink" href="#conceitos-de-implantacoes" title="Permanent link">&para;</a></h1>
+<p>Ao implantar um aplicativo <strong>ReadyAPI</strong>, ou na verdade, qualquer tipo de API da web, há vários conceitos com os quais você provavelmente se importa e, usando-os, você pode encontrar a maneira <strong>mais apropriada</strong> de <strong>implantar seu aplicativo</strong>.</p>
+<p>Alguns dos conceitos importantes são:</p>
+<ul>
+<li>Segurança - HTTPS</li>
+<li>Executando na inicialização</li>
+<li>Reinicializações</li>
+<li>Replicação (o número de processos em execução)</li>
+<li>Memória</li>
+<li>Etapas anteriores antes de iniciar</li>
+</ul>
+<p>Veremos como eles afetariam as <strong>implantações</strong>.</p>
+<p>No final, o principal objetivo é ser capaz de <strong>atender seus clientes de API</strong> de uma forma <strong>segura</strong>, <strong>evitar interrupções</strong> e usar os <strong>recursos de computação</strong> (por exemplo, servidores remotos/máquinas virtuais) da forma mais eficiente possível. 🚀</p>
+<p>Vou lhe contar um pouco mais sobre esses <strong>conceitos</strong> aqui, e espero que isso lhe dê a <strong>intuição</strong> necessária para decidir como implantar sua API em ambientes muito diferentes, possivelmente até mesmo em <strong>futuros</strong> ambientes que ainda não existem.</p>
+<p>Ao considerar esses conceitos, você será capaz de <strong>avaliar e projetar</strong> a melhor maneira de implantar <strong>suas próprias APIs</strong>.</p>
+<p>Nos próximos capítulos, darei a você mais <strong>receitas concretas</strong> para implantar aplicativos ReadyAPI.</p>
+<p>Mas por enquanto, vamos verificar essas importantes <strong>ideias conceituais</strong>. Esses conceitos também se aplicam a qualquer outro tipo de API da web. 💡</p>
+<h2 id="seguranca-https">Segurança - HTTPS<a class="headerlink" href="#seguranca-https" title="Permanent link">&para;</a></h2>
+<p>No <a class="internal-link" href="../https/" target="_blank">capítulo anterior sobre HTTPS</a> aprendemos como o HTTPS fornece criptografia para sua API.</p>
+<p>Também vimos que o HTTPS normalmente é fornecido por um componente <strong>externo</strong> ao seu servidor de aplicativos, um <strong>Proxy de terminação TLS</strong>.</p>
+<p>E tem que haver algo responsável por <strong>renovar os certificados HTTPS</strong>, pode ser o mesmo componente ou pode ser algo diferente.</p>
+<h3 id="ferramentas-de-exemplo-para-https">Ferramentas de exemplo para HTTPS<a class="headerlink" href="#ferramentas-de-exemplo-para-https" title="Permanent link">&para;</a></h3>
+<p>Algumas das ferramentas que você pode usar como um proxy de terminação TLS são:</p>
+<ul>
+<li>Traefik<ul>
+<li>Lida automaticamente com renovações de certificados ✨</li>
+</ul>
+</li>
+<li>Caddy<ul>
+<li>Lida automaticamente com renovações de certificados ✨</li>
+</ul>
+</li>
+<li>Nginx<ul>
+<li>Com um componente externo como o Certbot para renovações de certificados</li>
+</ul>
+</li>
+<li>HAProxy<ul>
+<li>Com um componente externo como o Certbot para renovações de certificados</li>
+</ul>
+</li>
+<li>Kubernetes com um controlador Ingress como o Nginx<ul>
+<li>Com um componente externo como cert-manager para renovações de certificados</li>
+</ul>
+</li>
+<li>Gerenciado internamente por um provedor de nuvem como parte de seus serviços (leia abaixo 👇)</li>
+</ul>
+<p>Outra opção é que você poderia usar um <strong>serviço de nuvem</strong> que faz mais do trabalho, incluindo a configuração de HTTPS. Ele pode ter algumas restrições ou cobrar mais, etc. Mas, nesse caso, você não teria que configurar um Proxy de terminação TLS sozinho.</p>
+<p>Mostrarei alguns exemplos concretos nos próximos capítulos.</p>
+<hr />
+<p>Os próximos conceitos a serem considerados são todos sobre o programa que executa sua API real (por exemplo, Uvicorn).</p>
+<h2 id="programa-e-processo">Programa e Processo<a class="headerlink" href="#programa-e-processo" title="Permanent link">&para;</a></h2>
+<p>Falaremos muito sobre o "<strong>processo</strong>" em execução, então é útil ter clareza sobre o que ele significa e qual é a diferença com a palavra "<strong>programa</strong>".</p>
+<h3 id="o-que-e-um-programa">O que é um Programa<a class="headerlink" href="#o-que-e-um-programa" title="Permanent link">&para;</a></h3>
+<p>A palavra <strong>programa</strong> é comumente usada para descrever muitas coisas:</p>
+<ul>
+<li>O <strong>código</strong> que você escreve, os <strong>arquivos Python</strong>.</li>
+<li>O <strong>arquivo</strong> que pode ser <strong>executado</strong> pelo sistema operacional, por exemplo: <code>python</code>, <code>python.exe</code> ou <code>uvicorn</code>.</li>
+<li>Um programa específico enquanto está <strong>em execução</strong> no sistema operacional, usando a CPU e armazenando coisas na memória. Isso também é chamado de <strong>processo</strong>.</li>
+</ul>
+<h3 id="o-que-e-um-processo">O que é um Processo<a class="headerlink" href="#o-que-e-um-processo" title="Permanent link">&para;</a></h3>
+<p>A palavra <strong>processo</strong> normalmente é usada de forma mais específica, referindo-se apenas ao que está sendo executado no sistema operacional (como no último ponto acima):</p>
+<ul>
+<li>Um programa específico enquanto está <strong>em execução</strong> no sistema operacional.<ul>
+<li>Isso não se refere ao arquivo, nem ao código, refere-se <strong>especificamente</strong> à coisa que está sendo <strong>executada</strong> e gerenciada pelo sistema operacional.</li>
+</ul>
+</li>
+<li>Qualquer programa, qualquer código, <strong>só pode fazer coisas</strong> quando está sendo <strong>executado</strong>. Então, quando há um <strong>processo em execução</strong>.</li>
+<li>O processo pode ser <strong>terminado</strong> (ou "morto") por você, ou pelo sistema operacional. Nesse ponto, ele para de rodar/ser executado, e ele <strong>não pode mais fazer coisas</strong>.</li>
+<li>Cada aplicativo que você tem em execução no seu computador tem algum processo por trás dele, cada programa em execução, cada janela, etc. E normalmente há muitos processos em execução <strong>ao mesmo tempo</strong> enquanto um computador está ligado.</li>
+<li>Pode haver <strong>vários processos</strong> do <strong>mesmo programa</strong> em execução ao mesmo tempo.</li>
+</ul>
+<p>Se você verificar o "gerenciador de tarefas" ou o "monitor do sistema" (ou ferramentas semelhantes) no seu sistema operacional, poderá ver muitos desses processos em execução.</p>
+<p>E, por exemplo, você provavelmente verá que há vários processos executando o mesmo programa de navegador (Firefox, Chrome, Edge, etc.). Eles normalmente executam um processo por aba, além de alguns outros processos extras.</p>
+<p><img class="shadow" src="/img/deployment/concepts/image01.png"></p>
+<hr />
+<p>Agora que sabemos a diferença entre os termos <strong>processo</strong> e <strong>programa</strong>, vamos continuar falando sobre implantações.</p>
+<h2 id="executando-na-inicializacao">Executando na inicialização<a class="headerlink" href="#executando-na-inicializacao" title="Permanent link">&para;</a></h2>
+<p>Na maioria dos casos, quando você cria uma API web, você quer que ela esteja <strong>sempre em execução</strong>, ininterrupta, para que seus clientes possam sempre acessá-la. Isso é claro, a menos que você tenha um motivo específico para querer que ela seja executada somente em certas situações, mas na maioria das vezes você quer que ela esteja constantemente em execução e <strong>disponível</strong>.</p>
+<h3 id="em-um-servidor-remoto">Em um servidor remoto<a class="headerlink" href="#em-um-servidor-remoto" title="Permanent link">&para;</a></h3>
+<p>Ao configurar um servidor remoto (um servidor em nuvem, uma máquina virtual, etc.), a coisa mais simples que você pode fazer é usar <code>readyapi run</code> (que usa Uvicorn) ou algo semelhante, manualmente, da mesma forma que você faz ao desenvolver localmente.</p>
+<p>E funcionará e será útil <strong>durante o desenvolvimento</strong>.</p>
+<p>Mas se sua conexão com o servidor for perdida, o <strong>processo em execução</strong> provavelmente morrerá.</p>
+<p>E se o servidor for reiniciado (por exemplo, após atualizações ou migrações do provedor de nuvem), você provavelmente <strong>não notará</strong>. E por causa disso, você nem saberá que precisa reiniciar o processo manualmente. Então, sua API simplesmente permanecerá inativa. 😱</p>
+<h3 id="executar-automaticamente-na-inicializacao">Executar automaticamente na inicialização<a class="headerlink" href="#executar-automaticamente-na-inicializacao" title="Permanent link">&para;</a></h3>
+<p>Em geral, você provavelmente desejará que o programa do servidor (por exemplo, Uvicorn) seja iniciado automaticamente na inicialização do servidor e, sem precisar de nenhuma <strong>intervenção humana</strong>, tenha um processo sempre em execução com sua API (por exemplo, Uvicorn executando seu aplicativo ReadyAPI).</p>
+<h3 id="programa-separado">Programa separado<a class="headerlink" href="#programa-separado" title="Permanent link">&para;</a></h3>
+<p>Para conseguir isso, você normalmente terá um <strong>programa separado</strong> que garantiria que seu aplicativo fosse executado na inicialização. E em muitos casos, ele também garantiria que outros componentes ou aplicativos também fossem executados, por exemplo, um banco de dados.</p>
+<h3 id="ferramentas-de-exemplo-para-executar-na-inicializacao">Ferramentas de exemplo para executar na inicialização<a class="headerlink" href="#ferramentas-de-exemplo-para-executar-na-inicializacao" title="Permanent link">&para;</a></h3>
+<p>Alguns exemplos de ferramentas que podem fazer esse trabalho são:</p>
+<ul>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>Docker Compose</li>
+<li>Docker em Modo Swarm</li>
+<li>Systemd</li>
+<li>Supervisor</li>
+<li>Gerenciado internamente por um provedor de nuvem como parte de seus serviços</li>
+<li>Outros...</li>
+</ul>
+<p>Darei exemplos mais concretos nos próximos capítulos.</p>
+<h2 id="reinicializacoes">Reinicializações<a class="headerlink" href="#reinicializacoes" title="Permanent link">&para;</a></h2>
+<p>Semelhante a garantir que seu aplicativo seja executado na inicialização, você provavelmente também deseja garantir que ele seja <strong>reiniciado</strong> após falhas.</p>
+<h3 id="nos-cometemos-erros">Nós cometemos erros<a class="headerlink" href="#nos-cometemos-erros" title="Permanent link">&para;</a></h3>
+<p>Nós, como humanos, cometemos <strong>erros</strong> o tempo todo. O software quase <em>sempre</em> tem <strong>bugs</strong> escondidos em lugares diferentes. 🐛</p>
+<p>E nós, como desenvolvedores, continuamos aprimorando o código à medida que encontramos esses bugs e implementamos novos recursos (possivelmente adicionando novos bugs também 😅).</p>
+<h3 id="pequenos-erros-sao-tratados-automaticamente">Pequenos erros são tratados automaticamente<a class="headerlink" href="#pequenos-erros-sao-tratados-automaticamente" title="Permanent link">&para;</a></h3>
+<p>Ao criar APIs da web com ReadyAPI, se houver um erro em nosso código, o ReadyAPI normalmente o conterá na única solicitação que acionou o erro. 🛡</p>
+<p>O cliente receberá um <strong>Erro Interno do Servidor 500</strong> para essa solicitação, mas o aplicativo continuará funcionando para as próximas solicitações em vez de travar completamente.</p>
+<h3 id="erros-maiores-travamentos">Erros maiores - Travamentos<a class="headerlink" href="#erros-maiores-travamentos" title="Permanent link">&para;</a></h3>
+<p>No entanto, pode haver casos em que escrevemos algum código que <strong>trava todo o aplicativo</strong>, fazendo com que o Uvicorn e o Python travem. 💥</p>
+<p>E ainda assim, você provavelmente não gostaria que o aplicativo permanecesse inativo porque houve um erro em um lugar, você provavelmente quer que ele <strong>continue em execução</strong> pelo menos para as <em>operações de caminho</em> que não estão quebradas.</p>
+<h3 id="reiniciar-apos-falha">Reiniciar após falha<a class="headerlink" href="#reiniciar-apos-falha" title="Permanent link">&para;</a></h3>
+<p>Mas nos casos com erros realmente graves que travam o <strong>processo</strong> em execução, você vai querer um componente externo que seja responsável por <strong>reiniciar</strong> o processo, pelo menos algumas vezes...</p>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>...Embora se o aplicativo inteiro estiver <strong>travando imediatamente</strong>, provavelmente não faça sentido reiniciá-lo para sempre. Mas nesses casos, você provavelmente notará isso durante o desenvolvimento, ou pelo menos logo após a implantação.</p>
+<p>Então, vamos nos concentrar nos casos principais, onde ele pode travar completamente em alguns casos específicos <strong>no futuro</strong>, e ainda faz sentido reiniciá-lo.</p>
+</div>
+<p>Você provavelmente gostaria de ter a coisa responsável por reiniciar seu aplicativo como um <strong>componente externo</strong>, porque a essa altura, o mesmo aplicativo com Uvicorn e Python já havia travado, então não há nada no mesmo código do mesmo aplicativo que possa fazer algo a respeito.</p>
+<h3 id="ferramentas-de-exemplo-para-reiniciar-automaticamente">Ferramentas de exemplo para reiniciar automaticamente<a class="headerlink" href="#ferramentas-de-exemplo-para-reiniciar-automaticamente" title="Permanent link">&para;</a></h3>
+<p>Na maioria dos casos, a mesma ferramenta usada para <strong>executar o programa na inicialização</strong> também é usada para lidar com <strong>reinicializações</strong> automáticas.</p>
+<p>Por exemplo, isso poderia ser resolvido por:</p>
+<ul>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>Docker Compose</li>
+<li>Docker no Modo Swarm</li>
+<li>Systemd</li>
+<li>Supervisor</li>
+<li>Gerenciado internamente por um provedor de nuvem como parte de seus serviços</li>
+<li>Outros...</li>
+</ul>
+<h2 id="replicacao-processos-e-memoria">Replicação - Processos e Memória<a class="headerlink" href="#replicacao-processos-e-memoria" title="Permanent link">&para;</a></h2>
+<p>Com um aplicativo ReadyAPI, usando um programa de servidor como o comando <code>readyapi</code> que executa o Uvicorn, executá-lo uma vez em <strong>um processo</strong> pode atender a vários clientes simultaneamente.</p>
+<p>Mas em muitos casos, você desejará executar vários processos de trabalho ao mesmo tempo.</p>
+<h3 id="processos-multiplos-trabalhadores">Processos Múltiplos - Trabalhadores<a class="headerlink" href="#processos-multiplos-trabalhadores" title="Permanent link">&para;</a></h3>
+<p>Se você tiver mais clientes do que um único processo pode manipular (por exemplo, se a máquina virtual não for muito grande) e tiver <strong>vários núcleos</strong> na CPU do servidor, você poderá ter <strong>vários processos</strong> em execução com o mesmo aplicativo ao mesmo tempo e distribuir todas as solicitações entre eles.</p>
+<p>Quando você executa <strong>vários processos</strong> do mesmo programa de API, eles são comumente chamados de <strong>trabalhadores</strong>.</p>
+<h3 id="processos-do-trabalhador-e-portas">Processos do Trabalhador e Portas<a class="headerlink" href="#processos-do-trabalhador-e-portas" title="Permanent link">&para;</a></h3>
+<p>Lembra da documentação <a class="internal-link" href="../https/" target="_blank">Sobre HTTPS</a> que diz que apenas um processo pode escutar em uma combinação de porta e endereço IP em um servidor?</p>
+<p>Isso ainda é verdade.</p>
+<p>Então, para poder ter <strong>vários processos</strong> ao mesmo tempo, tem que haver um <strong>único processo escutando em uma porta</strong> que então transmite a comunicação para cada processo de trabalho de alguma forma.</p>
+<h3 id="memoria-por-processo">Memória por Processo<a class="headerlink" href="#memoria-por-processo" title="Permanent link">&para;</a></h3>
+<p>Agora, quando o programa carrega coisas na memória, por exemplo, um modelo de aprendizado de máquina em uma variável, ou o conteúdo de um arquivo grande em uma variável, tudo isso <strong>consome um pouco da memória (RAM)</strong> do servidor.</p>
+<p>E vários processos normalmente <strong>não compartilham nenhuma memória</strong>. Isso significa que cada processo em execução tem suas próprias coisas, variáveis ​​e memória. E se você estiver consumindo uma grande quantidade de memória em seu código, <strong>cada processo</strong> consumirá uma quantidade equivalente de memória.</p>
+<h3 id="memoria-do-servidor">Memória do servidor<a class="headerlink" href="#memoria-do-servidor" title="Permanent link">&para;</a></h3>
+<p>Por exemplo, se seu código carrega um modelo de Machine Learning com <strong>1 GB de tamanho</strong>, quando você executa um processo com sua API, ele consumirá pelo menos 1 GB de RAM. E se você iniciar <strong>4 processos</strong> (4 trabalhadores), cada um consumirá 1 GB de RAM. Então, no total, sua API consumirá <strong>4 GB de RAM</strong>.</p>
+<p>E se o seu servidor remoto ou máquina virtual tiver apenas 3 GB de RAM, tentar carregar mais de 4 GB de RAM causará problemas. 🚨</p>
+<h3 id="processos-multiplos-um-exemplo">Processos Múltiplos - Um Exemplo<a class="headerlink" href="#processos-multiplos-um-exemplo" title="Permanent link">&para;</a></h3>
+<p>Neste exemplo, há um <strong>Processo Gerenciador</strong> que inicia e controla dois <strong>Processos de Trabalhadores</strong>.</p>
+<p>Este Processo de Gerenciador provavelmente seria o que escutaria na <strong>porta</strong> no IP. E ele transmitiria toda a comunicação para os processos de trabalho.</p>
+<p>Esses processos de trabalho seriam aqueles que executariam seu aplicativo, eles executariam os cálculos principais para receber uma <strong>solicitação</strong> e retornar uma <strong>resposta</strong>, e carregariam qualquer coisa que você colocasse em variáveis ​​na RAM.</p>
+<p><img src="/img/deployment/concepts/process-ram.drawio.svg"></p>
+<p>E, claro, a mesma máquina provavelmente teria <strong>outros processos</strong> em execução, além do seu aplicativo.</p>
+<p>Um detalhe interessante é que a porcentagem da <strong>CPU usada</strong> por cada processo pode <strong>variar</strong> muito ao longo do tempo, mas a <strong>memória (RAM)</strong> normalmente fica mais ou menos <strong>estável</strong>.</p>
+<p>Se você tiver uma API que faz uma quantidade comparável de cálculos todas as vezes e tiver muitos clientes, então a <strong>utilização da CPU</strong> provavelmente <em>também será estável</em> (em vez de ficar constantemente subindo e descendo rapidamente).</p>
+<h3 id="exemplos-de-ferramentas-e-estrategias-de-replicacao">Exemplos de ferramentas e estratégias de replicação<a class="headerlink" href="#exemplos-de-ferramentas-e-estrategias-de-replicacao" title="Permanent link">&para;</a></h3>
+<p>Pode haver várias abordagens para conseguir isso, e falarei mais sobre estratégias específicas nos próximos capítulos, por exemplo, ao falar sobre Docker e contêineres.</p>
+<p>A principal restrição a ser considerada é que tem que haver um <strong>único</strong> componente manipulando a <strong>porta</strong> no <strong>IP público</strong>. E então tem que ter uma maneira de <strong>transmitir</strong> a comunicação para os <strong>processos/trabalhadores</strong> replicados.</p>
+<p>Aqui estão algumas combinações e estratégias possíveis:</p>
+<ul>
+<li><strong>Uvicorn</strong> com <code>--workers</code><ul>
+<li>Um <strong>gerenciador de processos</strong> Uvicorn escutaria no <strong>IP</strong> e na <strong>porta</strong> e iniciaria <strong>vários processos de trabalho Uvicorn</strong>.</li>
+</ul>
+</li>
+<li><strong>Kubernetes</strong> e outros <strong>sistemas de contêineres</strong> distribuídos<ul>
+<li>Algo na camada <strong>Kubernetes</strong> escutaria no <strong>IP</strong> e na <strong>porta</strong>. A replicação seria por ter <strong>vários contêineres</strong>, cada um com <strong>um processo Uvicorn</strong> em execução.</li>
+</ul>
+</li>
+<li><strong>Serviços de nuvem</strong> que cuidam disso para você<ul>
+<li>O serviço de nuvem provavelmente <strong>cuidará da replicação para você</strong>. Ele possivelmente deixaria você definir <strong>um processo para executar</strong>, ou uma <strong>imagem de contêiner</strong> para usar, em qualquer caso, provavelmente seria <strong>um único processo Uvicorn</strong>, e o serviço de nuvem seria responsável por replicá-lo.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Não se preocupe se alguns desses itens sobre <strong>contêineres</strong>, Docker ou Kubernetes ainda não fizerem muito sentido.</p>
+<p>Falarei mais sobre imagens de contêiner, Docker, Kubernetes, etc. em um capítulo futuro: <a class="internal-link" href="../docker/" target="_blank">ReadyAPI em contêineres - Docker</a>.</p>
+</div>
+<h2 id="etapas-anteriores-antes-de-comecar">Etapas anteriores antes de começar<a class="headerlink" href="#etapas-anteriores-antes-de-comecar" title="Permanent link">&para;</a></h2>
+<p>Há muitos casos em que você deseja executar algumas etapas <strong>antes de iniciar</strong> sua aplicação.</p>
+<p>Por exemplo, você pode querer executar <strong>migrações de banco de dados</strong>.</p>
+<p>Mas na maioria dos casos, você precisará executar essas etapas apenas <strong>uma vez</strong>.</p>
+<p>Portanto, você vai querer ter um <strong>processo único</strong> para executar essas <strong>etapas anteriores</strong> antes de iniciar o aplicativo.</p>
+<p>E você terá que se certificar de que é um único processo executando essas etapas anteriores <em>mesmo</em> se depois, você iniciar <strong>vários processos</strong> (vários trabalhadores) para o próprio aplicativo. Se essas etapas fossem executadas por <strong>vários processos</strong>, eles <strong>duplicariam</strong> o trabalho executando-o em <strong>paralelo</strong>, e se as etapas fossem algo delicado como uma migração de banco de dados, elas poderiam causar conflitos entre si.</p>
+<p>Claro, há alguns casos em que não há problema em executar as etapas anteriores várias vezes; nesse caso, é muito mais fácil de lidar.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Além disso, tenha em mente que, dependendo da sua configuração, em alguns casos você <strong>pode nem precisar de nenhuma etapa anterior</strong> antes de iniciar sua aplicação.</p>
+<p>Nesse caso, você não precisaria se preocupar com nada disso. 🤷</p>
+</div>
+<h3 id="exemplos-de-estrategias-de-etapas-anteriores">Exemplos de estratégias de etapas anteriores<a class="headerlink" href="#exemplos-de-estrategias-de-etapas-anteriores" title="Permanent link">&para;</a></h3>
+<p>Isso <strong>dependerá muito</strong> da maneira como você <strong>implanta seu sistema</strong> e provavelmente estará conectado à maneira como você inicia programas, lida com reinicializações, etc.</p>
+<p>Aqui estão algumas ideias possíveis:</p>
+<ul>
+<li>Um "Init Container" no Kubernetes que roda antes do seu app container</li>
+<li>Um script bash que roda os passos anteriores e então inicia seu aplicativo<ul>
+<li>Você ainda precisaria de uma maneira de iniciar/reiniciar <em>aquele</em> script bash, detectar erros, etc.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Darei exemplos mais concretos de como fazer isso com contêineres em um capítulo futuro: <a class="internal-link" href="../docker/" target="_blank">ReadyAPI em contêineres - Docker</a>.</p>
+</div>
+<h2 id="utilizacao-de-recursos">Utilização de recursos<a class="headerlink" href="#utilizacao-de-recursos" title="Permanent link">&para;</a></h2>
+<p>Seu(s) servidor(es) é(são) um <strong>recurso</strong> que você pode consumir ou <strong>utilizar</strong>, com seus programas, o tempo de computação nas CPUs e a memória RAM disponível.</p>
+<p>Quanto dos recursos do sistema você quer consumir/utilizar? Pode ser fácil pensar "não muito", mas, na realidade, você provavelmente vai querer consumir <strong>o máximo possível sem travar</strong>.</p>
+<p>Se você está pagando por 3 servidores, mas está usando apenas um pouco de RAM e CPU, você provavelmente está <strong>desperdiçando dinheiro</strong> 💸, e provavelmente <strong>desperdiçando energia elétrica do servidor</strong> 🌎, etc.</p>
+<p>Nesse caso, seria melhor ter apenas 2 servidores e usar uma porcentagem maior de seus recursos (CPU, memória, disco, largura de banda de rede, etc).</p>
+<p>Por outro lado, se você tem 2 servidores e está usando <strong>100% da CPU e RAM deles</strong>, em algum momento um processo pedirá mais memória, e o servidor terá que usar o disco como "memória" (o que pode ser milhares de vezes mais lento), ou até mesmo <strong>travar</strong>. Ou um processo pode precisar fazer alguma computação e teria que esperar até que a CPU esteja livre novamente.</p>
+<p>Nesse caso, seria melhor obter <strong>um servidor extra</strong> e executar alguns processos nele para que todos tenham <strong>RAM e tempo de CPU suficientes</strong>.</p>
+<p>Também há a chance de que, por algum motivo, você tenha um <strong>pico</strong> de uso da sua API. Talvez ela tenha se tornado viral, ou talvez alguns outros serviços ou bots comecem a usá-la. E você pode querer ter recursos extras para estar seguro nesses casos.</p>
+<p>Você poderia colocar um <strong>número arbitrário</strong> para atingir, por exemplo, algo <strong>entre 50% a 90%</strong> da utilização de recursos. O ponto é que essas são provavelmente as principais coisas que você vai querer medir e usar para ajustar suas implantações.</p>
+<p>Você pode usar ferramentas simples como <code>htop</code> para ver a CPU e a RAM usadas no seu servidor ou a quantidade usada por cada processo. Ou você pode usar ferramentas de monitoramento mais complexas, que podem ser distribuídas entre servidores, etc.</p>
+<h2 id="recapitular">Recapitular<a class="headerlink" href="#recapitular" title="Permanent link">&para;</a></h2>
+<p>Você leu aqui alguns dos principais conceitos que provavelmente precisa ter em mente ao decidir como implantar seu aplicativo:</p>
+<ul>
+<li>Segurança - HTTPS</li>
+<li>Executando na inicialização</li>
+<li>Reinicializações</li>
+<li>Replicação (o número de processos em execução)</li>
+<li>Memória</li>
+<li>Etapas anteriores antes de iniciar</li>
+</ul>
+<p>Entender essas ideias e como aplicá-las deve lhe dar a intuição necessária para tomar qualquer decisão ao configurar e ajustar suas implantações. 🤓</p>
+<p>Nas próximas seções, darei exemplos mais concretos de possíveis estratégias que você pode seguir. 🚀</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../manually/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Execute um Servidor Manualmente">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Execute um Servidor Manualmente
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cloud/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Implantar ReadyAPI em provedores de nuvem">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Implantar ReadyAPI em provedores de nuvem
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    <div class="md-copyright__highlight">
+        The ReadyAPI trademark is owned by <a href="https://khulnasoft.com" target="_blank">@khulnasoft</a> and is registered in the US and across other regions
+    </div>
+    
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+    </a>
+    
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/readyapi/readyapi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/VQjSZaeJmf" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/readyapi" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/readyapi" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://khulnasoft.com" target="_blank" rel="noopener" title="khulnasoft.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../js/termynal.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>

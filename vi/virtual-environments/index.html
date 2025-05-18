@@ -1,0 +1,5758 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ReadyAPI framework, high performance, easy to learn, fast to code, ready for production">
+      
+      
+      
+        <link rel="canonical" href="https://readyapi.khulnasoft.com/vi/virtual-environments/">
+      
+      
+        <link rel="prev" href="../environment-variables/">
+      
+      
+        <link rel="next" href="../tutorial/">
+      
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>Môi trường ảo (Virtual Environments) - ReadyAPI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../css/termynal.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-YNEVN69SC3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-YNEVN69SC3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-YNEVN69SC3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#moi-truong-ao-virtual-environments" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div class="announce-wrapper">
+  <div id="announce-left">
+    <div class="item">
+      <a class="announce-link" href="https://twitter.com/readyapi" target="_blank">
+        <span class="twemoji twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+        </span> Follow <strong>@readyapi</strong> on <strong>Twitter</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://www.linkedin.com/company/readyapi" target="_blank">
+        <span class="twemoji linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+        </span> Follow <strong>ReadyAPI</strong> on <strong>LinkedIn</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+        </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
+      </a>
+    </div>
+  </div>
+  <div id="announce-right" style="position: relative;">
+    <div class="item">
+      <a title="BlockBee Cryptocurrency Payment Gateway" style="display: block; position: relative;" href="https://blockbee.io?ref=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/blockbee-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build, run and scale your apps on a modern, reliable, and secure PaaS." style="display: block; position: relative;" href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/platform-sh-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy ReadyAPI on AWS with a few clicks" style="display: block; position: relative;" href="https://www.porter.run" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/porter-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files" style="display: block; position: relative;" href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=top-banner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/scalar-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Auth, user management and more for your B2B product" style="display: block; position: relative;" href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=topbanner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/propelauth-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build your next app with ReadyAPI and MongoDB" style="display: block; position: relative;" href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/mongodb-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI" style="display: block; position: relative;" href="https://zuplo.link/readyapi-web" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/zuplo-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="liblab - Generate SDKs from ReadyAPI" style="display: block; position: relative;" href="https://liblab.com?utm_source=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/liblab-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra." style="display: block; position: relative;" href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/render-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Cut Code Review Time & Bugs in Half with CodeRabbit" style="display: block; position: relative;" href="https://www.coderabbit.ai/?utm_source=readyapi&utm_medium=banner&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/coderabbit-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Making Retail Purchases Actionable for Brands and Developers" style="display: block; position: relative;" href="https://subtotal.com/?utm_source=readyapi&utm_medium=sponsorship&utm_campaign=open-source" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/subtotal-banner.svg" />
+      </a>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href=".." title="ReadyAPI" class="md-header__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../img/icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReadyAPI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Môi trường ảo (Virtual Environments)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6zm13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Chọn ngôn ngữ">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="" class="md-select__link">
+              en - English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/az/" hreflang="" class="md-select__link">
+              az - azərbaycan dili
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/bn/" hreflang="" class="md-select__link">
+              bn - বাংলা
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/" hreflang="" class="md-select__link">
+              de - Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="" class="md-select__link">
+              es - español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fa/" hreflang="" class="md-select__link">
+              fa - فارسی
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/he/" hreflang="" class="md-select__link">
+              he - עברית
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/hu/" hreflang="" class="md-select__link">
+              hu - magyar
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/id/" hreflang="" class="md-select__link">
+              id - Bahasa Indonesia
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/it/" hreflang="" class="md-select__link">
+              it - italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ko/" hreflang="" class="md-select__link">
+              ko - 한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/nl/" hreflang="" class="md-select__link">
+              nl - Nederlands
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pl/" hreflang="" class="md-select__link">
+              pl - Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt/" hreflang="" class="md-select__link">
+              pt - português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ru/" hreflang="" class="md-select__link">
+              ru - русский язык
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/uk/" hreflang="" class="md-select__link">
+              uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ur/" hreflang="" class="md-select__link">
+              ur - اردو
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/vi/" hreflang="" class="md-select__link">
+              vi - Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/yo/" hreflang="" class="md-select__link">
+              yo - Yorùbá
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/em/" hreflang="" class="md-select__link">
+              😉
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Chia sẻ" aria-label="Chia sẻ" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/readyapi/readyapi" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../features/" class="md-tabs__link">
+        
+  
+    
+  
+  Tính năng
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../learn/" class="md-tabs__link">
+          
+  
+    
+  
+  Learn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../readyapi-people/" class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI People
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../resources/" class="md-tabs__link">
+          
+  
+    
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../about/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../release-notes/" class="md-tabs__link">
+        
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReadyAPI" class="md-nav__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../img/icon-white.svg" alt="logo">
+
+    </a>
+    ReadyAPI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/readyapi/readyapi" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tính năng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../learn/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Learn
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Learn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Giới thiệu kiểu dữ liệu Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../async/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concurrency and async / await
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biến môi trường (Environment Variables)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Môi trường ảo (Virtual Environments)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Môi trường ảo (Virtual Environments)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tao-mot-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo một Dự án
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kich-hoat-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kích hoạt Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kiem-tra-xem-moi-truong-ao-a-uoc-kich-hoat-chua" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kiểm tra xem Môi trường ảo đã được Kích hoạt chưa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nang-cap-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nâng cấp pip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#them-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thêm .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cai-at-goi-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt gói (packages)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cài đặt gói (packages)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cai-at-goi-truc-tiep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt gói trực tiếp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cai-at-tu-requirementstxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt từ requirements.txt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chay-chuong-trinh-cua-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chạy Chương trình của bạn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cau-hinh-trinh-soan-thao-cua-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cấu hình Trình soạn thảo của bạn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huy-kich-hoat-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Huỷ kích hoạt Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#san-sang-e-lam-viec" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sẵn sàng để Làm việc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tai-sao-can-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tại sao cần Môi trường ảo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tại sao cần Môi trường ảo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#van-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vấn đề
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noi-cac-goi-uoc-cai-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nơi các Gói được Cài đặt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhung-moi-truong-ao-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Những Môi trường ảo là gì?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kich-hoat-moi-truong-ao-nghia-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kích hoạt Môi trường ảo nghĩa là gì
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kiem-tra-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kiểm tra một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tai-sao-lai-huy-kich-hoat-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tại sao lại Huỷ kích hoạt một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cac-cach-lam-tuong-tu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Các cách làm tương tự
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ket-luan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kết luận
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Hướng dẫn sử dụng
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Hướng dẫn sử dụng
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Những bước đầu tiên
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Body
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-params-str-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameters and String Validations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-params-numeric-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Parameters and Numeric Validations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-multiple-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Multiple Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-nested-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Nested Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/schema-extra-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declare Request Example Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/extra-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cookie-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/header-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cookie-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/header-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/response-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Model - Return Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/extra-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/response-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Status Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-form-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-forms-and-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Forms and Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/handling-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Handling Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-operation-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Operation Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/encoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON Compatible Encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_29" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/dependencies/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dependencies
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_29" id="__nav_3_6_29_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_29_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_29">
+            <span class="md-nav__icon md-icon"></span>
+            Dependencies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/classes-as-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes as Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/sub-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub-dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/dependencies-in-path-operation-decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies in path operation decorators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/global-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Global Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/dependencies-with-yield/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies with yield
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_30" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_30" id="__nav_3_6_30_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_30_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_30">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security - First Steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/get-current-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current User
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/simple-oauth2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simple OAuth2 with Password and Bearer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/oauth2-jwt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OAuth2 with Password (and hashing), Bearer with JWT tokens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CORS (Cross-Origin Resource Sharing)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/sql-databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL (Relational) Databases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/bigger-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bigger Applications - Multiple Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/background-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata and Docs URLs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/static-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tệp tĩnh (Static Files)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced User Guide
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/path-operation-advanced-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Operation Advanced Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/additional-status-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Return a Response Directly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/custom-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response - HTML, Stream, File, others
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/additional-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Responses in OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-cookies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Cookies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-headers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Headers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-change-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response - Change Status Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/advanced-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../advanced/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced Security
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_11" id="__nav_3_7_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_11">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/security/oauth2-scopes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OAuth2 scopes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/security/http-basic-auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTP Basic Auth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/using-request-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Request Directly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/dataclasses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Dataclasses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/sub-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub Applications - Mounts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/behind-a-proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Behind a Proxy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifespan Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Events: startup - shutdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Dependencies with Overrides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/async-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings and Environment Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/openapi-callbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Callbacks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/openapi-webhooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Webhooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/wsgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Including WSGI - Flask, Django, others
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/generate-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate Clients
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readyapi-cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../deployment/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Triển khai
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Triển khai
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/versions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Về các phiên bản của ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/https/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About HTTPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/manually/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run a Server Manually
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployments Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Triển khai ReadyAPI trên các Dịch vụ Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/server-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server Workers - Uvicorn with Workers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI in Containers - Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    How To - Recipes
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            How To - Recipes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General - How To - Recipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/graphql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GraphQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/custom-request-and-route/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Request and APIRoute class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/conditional-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/extending-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extending OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/separate-openapi-schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separate OpenAPI Schemas for Input and Output or Not
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/custom-docs-ui-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Docs UI Static Assets (Self-Hosting)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/configure-swagger-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure Swagger UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/testing-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing a Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/uploadfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UploadFile class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions - HTTPException and WebSocketException
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies - Depends() and Security()
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/apirouter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIRouter class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks - BackgroundTasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/request/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/httpconnection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPConnection class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response Classes - File, HTML, Redirect, Streaming, etc.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/openapi/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OpenAPI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
+            <span class="md-nav__icon md-icon"></span>
+            OpenAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/openapi/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/openapi/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/encoders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoders - jsonable_encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/staticfiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Files - StaticFiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/templating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templating - Jinja2Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/testclient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Client - TestClient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readyapi-people/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI People
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../resources/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help-readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Help ReadyAPI - Get Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development - Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full Stack ReadyAPI Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links and Articles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../newsletter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI and friends newsletter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../management-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../about/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alternatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternatives, Inspiration and Comparisons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-design-future/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History, Design and Future
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmarks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tao-mot-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo một Dự án
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tao-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tạo một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kich-hoat-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kích hoạt Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kiem-tra-xem-moi-truong-ao-a-uoc-kich-hoat-chua" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kiểm tra xem Môi trường ảo đã được Kích hoạt chưa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nang-cap-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nâng cấp pip
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#them-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thêm .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cai-at-goi-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt gói (packages)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cài đặt gói (packages)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cai-at-goi-truc-tiep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt gói trực tiếp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cai-at-tu-requirementstxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cài đặt từ requirements.txt
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chay-chuong-trinh-cua-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chạy Chương trình của bạn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cau-hinh-trinh-soan-thao-cua-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cấu hình Trình soạn thảo của bạn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#huy-kich-hoat-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Huỷ kích hoạt Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#san-sang-e-lam-viec" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sẵn sàng để Làm việc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tai-sao-can-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tại sao cần Môi trường ảo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tại sao cần Môi trường ảo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#van-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vấn đề
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noi-cac-goi-uoc-cai-at" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nơi các Gói được Cài đặt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nhung-moi-truong-ao-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Những Môi trường ảo là gì?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kich-hoat-moi-truong-ao-nghia-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kích hoạt Môi trường ảo nghĩa là gì
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kiem-tra-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kiểm tra một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tai-sao-lai-huy-kich-hoat-mot-moi-truong-ao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tại sao lại Huỷ kích hoạt một Môi trường ảo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cac-cach-lam-tuong-tu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Các cách làm tương tự
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ket-luan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kết luận
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="moi-truong-ao-virtual-environments">Môi trường ảo (Virtual Environments)<a class="headerlink" href="#moi-truong-ao-virtual-environments" title="Permanent link">&para;</a></h1>
+<p>Khi bạn làm việc trong các dự án Python, bạn có thể sử dụng một <strong>môi trường ảo</strong> (hoặc một cơ chế tương tự) để cách ly các gói bạn cài đặt cho mỗi dự án.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Nếu bạn đã biết về các môi trường ảo, cách tạo chúng và sử dụng chúng, bạn có thể bỏ qua phần này. 🤓</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Một <strong>môi trường ảo</strong> khác với một <strong>biến môi trường (environment variable)</strong>.</p>
+<p>Một <strong>biến môi trường</strong> là một biến trong hệ thống có thể được sử dụng bởi các chương trình.</p>
+<p>Một <strong>môi trường ảo</strong> là một thư mục với một số tệp trong đó.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Trang này sẽ hướng dẫn bạn cách sử dụng các <strong>môi trường ảo</strong> và cách chúng hoạt động.</p>
+<p>Nếu bạn đã sẵn sàng sử dụng một <strong>công cụ có thể quản lý tất cả mọi thứ</strong> cho bạn (bao gồm cả việc cài đặt Python), hãy thử <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank">uv</a>.</p>
+</div>
+<h2 id="tao-mot-du-an">Tạo một Dự án<a class="headerlink" href="#tao-mot-du-an" title="Permanent link">&para;</a></h2>
+<p>Đầu tiên, tạo một thư mục cho dự án của bạn.</p>
+<p>Cách tôi thường làm là tạo một thư mục có tên <code>code</code> trong thư mục <code>home/user</code>.</p>
+<p>Và trong thư mục đó, tôi tạo một thư mục cho mỗi dự án.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><span class="go">// Đi đến thư mục home</span>
+</span><span id="__span-0-2"><span class="gp">$ </span><span class="nb">cd</span>
+</span><span id="__span-0-3"><span class="go">// Tạo một thư mục cho tất cả các dự án của bạn</span>
+</span><span id="__span-0-4"><span class="gp">$ </span>mkdir<span class="w"> </span>code
+</span><span id="__span-0-5"><span class="go">// Vào thư mục code</span>
+</span><span id="__span-0-6"><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>code
+</span><span id="__span-0-7"><span class="go">// Tạo một thư mục cho dự án này</span>
+</span><span id="__span-0-8"><span class="gp">$ </span>mkdir<span class="w"> </span>awesome-project
+</span><span id="__span-0-9"><span class="go">// Vào thư mục dự án</span>
+</span><span id="__span-0-10"><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>awesome-project
+</span></code></pre></div>
+
+</div>
+
+<h2 id="tao-mot-moi-truong-ao">Tạo một Môi trường ảo<a class="headerlink" href="#tao-mot-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Khi bạn bắt đầu làm việc với một dự án Python <strong>trong lần đầu</strong>, hãy tạo một môi trường ảo <strong><abbr title="có nhiều cách thực hiện khác nhau, đây là một hướng dẫn đơn giản">trong thư mục dự án của bạn</abbr></strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bạn cần làm điều này <strong>một lần cho mỗi dự án</strong>, không phải mỗi khi bạn làm việc.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><code>venv</code></label><label for="__tabbed_1_2"><code>uv</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Để tạo một môi trường ảo, bạn có thể sử dụng module <code>venv</code> có sẵn của Python.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span></code></pre></div>
+
+</div>
+
+<details>
+<summary>Cách các lệnh hoạt động</summary>
+<ul>
+<li><code>python</code>: sử dụng chương trình <code>python</code></li>
+<li><code>-m</code>: gọi một module như một script, chúng ta sẽ nói về module đó sau</li>
+<li><code>venv</code>: sử dụng module <code>venv</code> được cài đặt sẵn của Python</li>
+<li><code>.venv</code>: tạo môi trường ảo trong thư mục mới <code>.venv</code></li>
+</ul>
+</details>
+</div>
+<div class="tabbed-block">
+<p>Nếu bạn có <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank"><code>uv</code></a> được cài đặt, bạn có thể sử dụng nó để tạo một môi trường ảo.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="gp">$ </span>uv<span class="w"> </span>venv
+</span></code></pre></div>
+
+</div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mặc định, <code>uv</code> sẽ tạo một môi trường ảo trong một thư mục có tên <code>.venv</code>.</p>
+<p>Nhưng bạn có thể tùy chỉnh nó bằng cách thêm một đối số với tên thư mục.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Lệnh này tạo một môi trường ảo mới trong một thư mục có tên <code>.venv</code>.</p>
+<details>
+<summary><code>.venv</code> hoặc tên khác</summary>
+<p>Bạn có thể tạo môi trường ảo trong một thư mục khác, nhưng thường người ta quy ước đặt nó là <code>.venv</code>.</p>
+</details>
+<h2 id="kich-hoat-moi-truong-ao">Kích hoạt Môi trường ảo<a class="headerlink" href="#kich-hoat-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Kích hoạt môi trường ảo mới để bất kỳ lệnh Python nào bạn chạy hoặc gói nào bạn cài đặt sẽ sử dụng nó.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Làm điều này <strong>mỗi khi</strong> bạn bắt đầu một <strong>phiên terminal mới</strong> để làm việc trên dự án.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Linux, macOS</label><label for="__tabbed_2_2">Windows PowerShell</label><label for="__tabbed_2_3">Windows Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><span class="gp">$ </span>.venv<span class="se">\S</span>cripts<span class="se">\A</span>ctivate.ps1
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<p>Nếu bạn sử dụng Bash cho Windows (ví dụ: <a href="https://gitforwindows.org/" class="external-link" target="_blank">Git Bash</a>):</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>.venv/Scripts/activate
+</span></code></pre></div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mỗi khi bạn cài đặt thêm một <strong>package mới</strong> trong môi trường đó, hãy <strong>kích hoạt</strong> môi trường đó lại.</p>
+<p>Điều này đảm bảo rằng khi bạn sử dụng một <strong>chương trình dòng lệnh (<abbr title="command line interface">CLI</abbr>)</strong> được cài đặt từ gói đó, bạn sẽ dùng bản cài đặt từ môi trường ảo của mình thay vì bản được cài đặt toàn cục khác có thể có phiên bản khác với phiên bản bạn cần.</p>
+</div>
+<h2 id="kiem-tra-xem-moi-truong-ao-a-uoc-kich-hoat-chua">Kiểm tra xem Môi trường ảo đã được Kích hoạt chưa<a class="headerlink" href="#kiem-tra-xem-moi-truong-ao-a-uoc-kich-hoat-chua" title="Permanent link">&para;</a></h2>
+<p>Kiểm tra xem môi trường ảo đã được kích hoạt chưa (lệnh trước đó đã hoạt động).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Điều này là <strong>không bắt buộc</strong>, nhưng nó là một cách tốt để <strong>kiểm tra</strong> rằng mọi thứ đang hoạt động như mong đợi và bạn đang sử dụng đúng môi trường ảo mà bạn đã định.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Linux, macOS, Windows Bash</label><label for="__tabbed_3_2">Windows PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><span class="gp">$ </span>which<span class="w"> </span>python
+</span><span id="__span-6-2">
+</span><span id="__span-6-3"><span class="go">/home/user/code/awesome-project/.venv/bin/python</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Nếu nó hiển thị <code>python</code> binary tại <code>.venv/bin/python</code>, trong dự án của bạn (trong trường hợp <code>awesome-project</code>), thì tức là nó hoạt động. 🎉</p>
+</div>
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-7-1"><span class="gp">$ </span>Get-Command<span class="w"> </span>python
+</span><span id="__span-7-2">
+</span><span id="__span-7-3"><span class="go">C:\Users\user\code\awesome-project\.venv\Scripts\python</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Nếu nó hiển thị <code>python</code> binary tại <code>.venv\Scripts\python</code>, trong dự án của bạn (trong trường hợp <code>awesome-project</code>), thì tức là nó hoạt động. 🎉</p>
+</div>
+</div>
+</div>
+<h2 id="nang-cap-pip">Nâng cấp <code>pip</code><a class="headerlink" href="#nang-cap-pip" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Nếu bạn sử dụng <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank"><code>uv</code></a> bạn sử dụng nó để cài đặt thay vì <code>pip</code>, thì bạn không cần cập nhật <code>pip</code>. 😎</p>
+</div>
+<p>Nếu bạn sử dụng <code>pip</code> để cài đặt gói (nó được cài đặt mặc định với Python), bạn nên <strong>nâng cấp</strong> nó lên phiên bản mới nhất.</p>
+<p>Nhiều lỗi khác nhau trong khi cài đặt gói được giải quyết chỉ bằng cách nâng cấp <code>pip</code> trước.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bạn thường làm điều này <strong>một lần</strong>, ngay sau khi bạn tạo môi trường ảo.</p>
+</div>
+<p>Đảm bảo rằng môi trường ảo đã được kích hoạt (với lệnh trên) và sau đó chạy:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-8-1"><span class="gp">$ </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</span><span id="__span-8-2">
+</span><span id="__span-8-3"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+<h2 id="them-gitignore">Thêm <code>.gitignore</code><a class="headerlink" href="#them-gitignore" title="Permanent link">&para;</a></h2>
+<p>Nếu bạn sử dụng <strong>Git</strong> (nên làm), hãy thêm một file <code>.gitignore</code> để Git bỏ qua mọi thứ trong <code>.venv</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Nếu bạn sử dụng <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank"><code>uv</code></a> để tạo môi trường ảo, nó đã tự động làm điều này cho bạn, bạn có thể bỏ qua bước này. 😎</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Làm điều này <strong>một lần</strong>, ngay sau khi bạn tạo môi trường ảo.</p>
+</div>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-9-1"><span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.venv/.gitignore
+</span></code></pre></div>
+
+</div>
+
+<details>
+<summary>Cách lệnh hoạt động</summary>
+<ul>
+<li><code>echo "*"</code>: sẽ "in" văn bản <code>*</code> trong terminal (phần tiếp theo sẽ thay đổi điều đó một chút)</li>
+<li><code>&gt;</code>: bất kỳ văn bản nào được in ra terminal bởi lệnh trước <code>&gt;</code> không được in ra mà thay vào đó được viết vào file ở phía bên phải của <code>&gt;</code></li>
+<li><code>.gitignore</code>: tên của file mà văn bản sẽ được viết vào</li>
+</ul>
+<p>Và <code>*</code> với Git có nghĩa là "mọi thứ". Vì vậy, nó sẽ bỏ qua mọi thứ trong thư mục <code>.venv</code>.</p>
+<p>Lệnh này sẽ tạo một file <code>.gitignore</code> với nội dung:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-10-1">*
+</span></code></pre></div>
+</details>
+<h2 id="cai-at-goi-packages">Cài đặt gói (packages)<a class="headerlink" href="#cai-at-goi-packages" title="Permanent link">&para;</a></h2>
+<p>Sau khi kích hoạt môi trường, bạn có thể cài đặt các gói trong đó.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Thực hiện điều này <strong>một lần</strong> khi cài đặt hoặc cập nhật gói cần thiết cho dự án của bạn.</p>
+<p>Nếu bạn cần cập nhật phiên bản hoặc thêm một gói mới, bạn sẽ <strong>thực hiện điều này lại</strong>.</p>
+</div>
+<h3 id="cai-at-goi-truc-tiep">Cài đặt gói trực tiếp<a class="headerlink" href="#cai-at-goi-truc-tiep" title="Permanent link">&para;</a></h3>
+<p>Nếu bạn cần cập nhật phiên bản hoặc thêm một gói mới, bạn sẽ <strong>thực hiện điều này lại</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Để quản lý dự án tốt hơn, hãy liệt kê tất cả các gói và phiên bản cần thiết trong một file (ví dụ <code>requirements.txt</code> hoặc <code>pyproject.toml</code>).</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><code>pip</code></label><label for="__tabbed_4_2"><code>uv</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;readyapi[standard]&quot;</span>
+</span><span id="__span-11-2">
+</span><span id="__span-11-3"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<p>Nếu bạn có <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank"><code>uv</code></a>:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-12-1"><span class="gp">$ </span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;readyapi[standard]&quot;</span>
+</span><span id="__span-12-2"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+</div>
+</div>
+<h3 id="cai-at-tu-requirementstxt">Cài đặt từ <code>requirements.txt</code><a class="headerlink" href="#cai-at-tu-requirementstxt" title="Permanent link">&para;</a></h3>
+<p>Nếu bạn có một tệp <code>requirements.txt</code>, bạn có thể sử dụng nó để cài đặt các gói.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1"><code>pip</code></label><label for="__tabbed_5_2"><code>uv</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-13-1"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-13-2"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<p>Nếu bạn có <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank"><code>uv</code></a>:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-14-1"><span class="gp">$ </span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-14-2"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+</div>
+</div>
+<details>
+<summary><code>requirements.txt</code></summary>
+<p>Một tệp <code>requirements.txt</code> với một số gói sẽ trông như thế này:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-15-1">readyapi[standard]==0.113.0
+</span><span id="__span-15-2">pydantic==2.8.0
+</span></code></pre></div>
+</details>
+<h2 id="chay-chuong-trinh-cua-ban">Chạy Chương trình của bạn<a class="headerlink" href="#chay-chuong-trinh-cua-ban" title="Permanent link">&para;</a></h2>
+<p>Sau khi kích hoạt môi trường ảo, bạn có thể chạy chương trình của mình, nó sẽ sử dụng Python trong môi trường ảo của bạn với các gói bạn đã cài đặt.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-16-1"><span class="gp">$ </span>python<span class="w"> </span>main.py
+</span><span id="__span-16-2">
+</span><span id="__span-16-3"><span class="go">Hello World</span>
+</span></code></pre></div>
+
+</div>
+
+<h2 id="cau-hinh-trinh-soan-thao-cua-ban">Cấu hình Trình soạn thảo của bạn<a class="headerlink" href="#cau-hinh-trinh-soan-thao-cua-ban" title="Permanent link">&para;</a></h2>
+<p>Nếu bạn sử dụng một trình soạn thảo, hãy đảm bảo bạn cấu hình nó để sử dụng cùng môi trường ảo mà bạn đã tạo (trình soạn thảo sẽ tự động phát hiện môi trường ảo) để bạn có thể nhận được tính năng tự động hoàn thành câu lệnh (autocomplete) và in lỗi trực tiếp trong trình soạn thảo (inline errors).</p>
+<p>Ví dụ:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/python/environments#_select-and-activate-an-environment" class="external-link" target="_blank">VS Code</a></li>
+<li><a href="https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html" class="external-link" target="_blank">PyCharm</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bạn thường chỉ cần làm điều này <strong>một lần</strong>, khi bạn tạo môi trường ảo.</p>
+</div>
+<h2 id="huy-kich-hoat-moi-truong-ao">Huỷ kích hoạt Môi trường ảo<a class="headerlink" href="#huy-kich-hoat-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Khi bạn hoàn tất việc làm trên dự án của bạn, bạn có thể <strong>huỷ kích hoạt</strong> môi trường ảo.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-17-1"><span class="gp">$ </span>deactivate
+</span></code></pre></div>
+
+</div>
+
+<p>Như vậy, khi bạn chạy <code>python</code>, nó sẽ không chạy từ môi trường ảo đó với các gói đã cài đặt.</p>
+<h2 id="san-sang-e-lam-viec">Sẵn sàng để Làm việc<a class="headerlink" href="#san-sang-e-lam-viec" title="Permanent link">&para;</a></h2>
+<p>Bây giờ bạn đã sẵn sàng để làm việc trên dự án của mình rồi đấy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bạn muốn hiểu tất cả những gì ở trên?</p>
+<p>Tiếp tục đọc. 👇🤓</p>
+</div>
+<h2 id="tai-sao-can-moi-truong-ao">Tại sao cần Môi trường ảo<a class="headerlink" href="#tai-sao-can-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Để làm việc với ReadyAPI, bạn cần cài đặt <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.</p>
+<p>Sau đó, bạn sẽ cần <strong>cài đặt</strong> ReadyAPI và bất kỳ <strong>gói</strong> nào mà bạn muốn sử dụng.</p>
+<p>Để cài đặt gói, bạn thường sử dụng lệnh <code>pip</code> có sẵn với Python (hoặc các phiên bản tương tự).</p>
+<p>Tuy nhiên, nếu bạn sử dụng <code>pip</code> trực tiếp, các gói sẽ được cài đặt trong <strong>môi trường Python toàn cục</strong> của bạn (phần cài đặt toàn cục của Python).</p>
+<h3 id="van-e">Vấn đề<a class="headerlink" href="#van-e" title="Permanent link">&para;</a></h3>
+<p>Vậy, vấn đề gì khi cài đặt gói trong môi trường Python toàn cục?</p>
+<p>Trong một vài thời điểm, bạn sẽ phải viết nhiều chương trình khác nhau phụ thuộc vào <strong>các gói khác nhau</strong>. Và một số dự án bạn thực hiện lại phụ thuộc vào <strong>các phiên bản khác nhau</strong> của cùng một gói. 😱</p>
+<p>Ví dụ, bạn có thể tạo một dự án được gọi là <code>philosophers-stone</code>, chương trình này phụ thuộc vào một gói khác được gọi là <strong><code>harry</code>, sử dụng phiên bản <code>1</code></strong>. Vì vậy, bạn cần cài đặt <code>harry</code>.</p>
+<pre class="mermaid"><code>flowchart LR
+    stone(philosophers-stone) --&gt;|phụ thuộc| harry-1[harry v1]</code></pre>
+<p>Sau đó, vào một vài thời điểm sau, bạn tạo một dự án khác được gọi là <code>prisoner-of-azkaban</code>, và dự án này cũng phụ thuộc vào <code>harry</code>, nhưng dự án này cần <strong><code>harry</code> phiên bản <code>3</code></strong>.</p>
+<pre class="mermaid"><code>flowchart LR
+    azkaban(prisoner-of-azkaban) --&gt; |phụ thuộc| harry-3[harry v3]</code></pre>
+<p>Bây giờ, vấn đề là, nếu bạn cài đặt các gói toàn cục (trong môi trường toàn cục) thay vì trong một <strong>môi trường ảo cục bộ</strong>, bạn sẽ phải chọn phiên bản <code>harry</code> nào để cài đặt.</p>
+<p>Nếu bạn muốn chạy <code>philosophers-stone</code> bạn sẽ cần phải cài đặt <code>harry</code> phiên bản <code>1</code>, ví dụ với:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-18-1"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;harry==1&quot;</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Và sau đó bạn sẽ có <code>harry</code> phiên bản <code>1</code> được cài đặt trong môi trường Python toàn cục của bạn.</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph global[môi trường toàn cục]
+        harry-1[harry v1]
+    end
+    subgraph stone-project[dự án philosophers-stone ]
+        stone(philosophers-stone) --&gt;|phụ thuộc| harry-1
+    end</code></pre>
+<p>Nhưng sau đó, nếu bạn muốn chạy <code>prisoner-of-azkaban</code>, bạn sẽ cần phải gỡ bỏ <code>harry</code> phiên bản <code>1</code> và cài đặt <code>harry</code> phiên bản <code>3</code> (hoặc chỉ cần cài đặt phiên bản <code>3</code> sẽ tự động gỡ bỏ phiên bản <code>1</code>).</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-19-1"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;harry==3&quot;</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Và sau đó bạn sẽ có <code>harry</code> phiên bản <code>3</code> được cài đặt trong môi trường Python toàn cục của bạn.</p>
+<p>Và nếu bạn cố gắng chạy <code>philosophers-stone</code> lại, có khả năng nó sẽ <strong>không hoạt động</strong> vì nó cần <code>harry</code> phiên bản <code>1</code>.</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph global[môi trường toàn cục]
+        harry-1[&lt;strike&gt;harry v1&lt;/strike&gt;]
+        style harry-1 fill:#ccc,stroke-dasharray: 5 5
+        harry-3[harry v3]
+    end
+    subgraph stone-project[dự án philosophers-stone ]
+        stone(philosophers-stone) -.-x|⛔️| harry-1
+    end
+    subgraph azkaban-project[dự án prisoner-of-azkaban ]
+        azkaban(prisoner-of-azkaban) --&gt; |phụ thuộc| harry-3
+    end</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mặc dù các gói Python thường cố gắng <strong>tránh các thay đổi làm hỏng code</strong> trong <strong>phiên bản mới</strong>, nhưng để đảm bảo an toàn, bạn nên chủ động cài đặt phiên bản mới và chạy kiểm thử để xác nhận mọi thứ vẫn hoạt động đúng.</p>
+</div>
+<p>Bây giờ, hãy hình dung về <strong>nhiều</strong> gói khác nhau mà tất cả các dự án của bạn phụ thuộc vào. Rõ ràng rất khó để quản lý. Điều này dẫn tới việc là bạn sẽ có nhiều dự án với <strong>các phiên bản không tương thích</strong> của các gói, và bạn có thể không biết tại sao một số thứ không hoạt động.</p>
+<p>Hơn nữa, tuỳ vào hệ điều hành của bạn (vd Linux, Windows, macOS), có thể đã có Python được cài đặt sẵn. Trong trường hợp ấy, một vài gói nhiều khả năng đã được cài đặt trước với các phiên bản <strong>cần thiết cho hệ thống của bạn</strong>. Nếu bạn cài đặt các gói trong môi trường Python toàn cục, bạn có thể sẽ <strong>phá vỡ</strong> một số chương trình đã được cài đặt sẵn cùng hệ thống.</p>
+<h2 id="noi-cac-goi-uoc-cai-at">Nơi các Gói được Cài đặt<a class="headerlink" href="#noi-cac-goi-uoc-cai-at" title="Permanent link">&para;</a></h2>
+<p>Khi bạn cài đặt Python, nó sẽ tạo ra một vài thư mục và tệp trong máy tính của bạn.</p>
+<p>Một vài thư mục này là những thư mục chịu trách nhiệm có tất cả các gói bạn cài đặt.</p>
+<p>Khi bạn chạy:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-20-1"><span class="go">// Đừng chạy lệnh này ngay, đây chỉ là một ví dụ 🤓</span>
+</span><span id="__span-20-2"><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;readyapi[standard]&quot;</span>
+</span><span id="__span-20-3"><span class="go">---&gt; 100%</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Lệnh này sẽ tải xuống một tệp nén với mã nguồn ReadyAPI, thường là từ <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.</p>
+<p>Nó cũng sẽ <strong>tải xuống</strong> các tệp cho các gói khác mà ReadyAPI phụ thuộc vào.</p>
+<p>Sau đó, nó sẽ <strong>giải nén</strong> tất cả các tệp đó và đưa chúng vào một thư mục trong máy tính của bạn.</p>
+<p>Mặc định, nó sẽ đưa các tệp đã tải xuống và giải nén vào thư mục được cài đặt cùng Python của bạn, đó là <strong>môi trường toàn cục</strong>.</p>
+<h2 id="nhung-moi-truong-ao-la-gi">Những Môi trường ảo là gì?<a class="headerlink" href="#nhung-moi-truong-ao-la-gi" title="Permanent link">&para;</a></h2>
+<p>Cách giải quyết cho vấn đề có tất cả các gói trong môi trường toàn cục là sử dụng một <strong>môi trường ảo cho mỗi dự án</strong> bạn làm việc.</p>
+<p>Một môi trường ảo là một <strong>thư mục</strong>, rất giống với môi trường toàn cục, trong đó bạn có thể cài đặt các gói cho một dự án.</p>
+<p>Vì vậy, mỗi dự án sẽ có một môi trường ảo riêng của nó (thư mục <code>.venv</code>) với các gói riêng của nó.</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph stone-project[dự án philosophers-stone ]
+        stone(philosophers-stone) ---&gt;|phụ thuộc| harry-1
+        subgraph venv1[.venv]
+            harry-1[harry v1]
+        end
+    end
+    subgraph azkaban-project[dự án prisoner-of-azkaban ]
+        azkaban(prisoner-of-azkaban) ---&gt;|phụ thuộc| harry-3
+        subgraph venv2[.venv]
+            harry-3[harry v3]
+        end
+    end
+    stone-project ~~~ azkaban-project</code></pre>
+<h2 id="kich-hoat-moi-truong-ao-nghia-la-gi">Kích hoạt Môi trường ảo nghĩa là gì<a class="headerlink" href="#kich-hoat-moi-truong-ao-nghia-la-gi" title="Permanent link">&para;</a></h2>
+<p>Khi bạn kích hoạt một môi trường ảo, ví dụ với:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Linux, macOS</label><label for="__tabbed_6_2">Windows PowerShell</label><label for="__tabbed_6_3">Windows Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-21-1"><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-22-1"><span class="gp">$ </span>.venv<span class="se">\S</span>cripts<span class="se">\A</span>ctivate.ps1
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<p>Nếu bạn sử dụng Bash cho Windows (ví dụ <a href="https://gitforwindows.org/" class="external-link" target="_blank">Git Bash</a>):</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-23-1"><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>.venv/Scripts/activate
+</span></code></pre></div>
+
+</div>
+
+</div>
+</div>
+</div>
+<p>Lệnh này sẽ tạo hoặc sửa đổi một số <a class="internal-link" href="../environment-variables/" target="_blank">biến môi trường</a> mà sẽ được sử dụng cho các lệnh tiếp theo.</p>
+<p>Một trong số đó là biến <code>PATH</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Bạn có thể tìm hiểu thêm về biến <code>PATH</code> trong <a class="internal-link" href="../environment-variables/#path-environment-variable" target="_blank">Biến môi trường</a> section.</p>
+</div>
+<p>Kích hoạt môi trường ảo thêm đường dẫn <code>.venv/bin</code> (trên Linux và macOS) hoặc <code>.venv\Scripts</code> (trên Windows) vào biến <code>PATH</code>.</p>
+<p>Giả sử rằng trước khi kích hoạt môi trường, biến <code>PATH</code> như sau:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Linux, macOS</label><label for="__tabbed_7_2">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span id="__span-24-1">/usr/bin:/bin:/usr/sbin:/sbin
+</span></code></pre></div>
+<p>Nghĩa là hệ thống sẽ tìm kiếm chương trình trong:</p>
+<ul>
+<li><code>/usr/bin</code></li>
+<li><code>/bin</code></li>
+<li><code>/usr/sbin</code></li>
+<li><code>/sbin</code></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span id="__span-25-1">C:\Windows\System32
+</span></code></pre></div>
+<p>Nghĩa là hệ thống sẽ tìm kiếm chương trình trong:</p>
+<ul>
+<li><code>C:\Windows\System32</code></li>
+</ul>
+</div>
+</div>
+</div>
+<p>Sau khi kích hoạt môi trường ảo, biến <code>PATH</code> sẽ như sau:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Linux, macOS</label><label for="__tabbed_8_2">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span id="__span-26-1">/home/user/code/awesome-project/.venv/bin:/usr/bin:/bin:/usr/sbin:/sbin
+</span></code></pre></div>
+<p>Nghĩa là hệ thống sẽ bắt đầu tìm kiếm chương trình trong:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-27-1">/home/user/code/awesome-project/.venv/bin
+</span></code></pre></div>
+<p>trước khi tìm kiếm trong các thư mục khác.</p>
+<p>Vì vậy, khi bạn gõ <code>python</code> trong terminal, hệ thống sẽ tìm thấy chương trình Python trong:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-28-1">/home/user/code/awesome-project/.venv/bin/python
+</span></code></pre></div>
+<p>và sử dụng chương trình đó.</p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span id="__span-29-1">C:\Users\user\code\awesome-project\.venv\Scripts;C:\Windows\System32
+</span></code></pre></div>
+<p>Nghĩa là hệ thống sẽ bắt đầu tìm kiếm chương trình trong:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-30-1">C:\Users\user\code\awesome-project\.venv\Scripts
+</span></code></pre></div>
+<p>trước khi tìm kiếm trong các thư mục khác.</p>
+<p>Vì vậy, khi bạn gõ <code>python</code> trong terminal, hệ thống sẽ tìm thấy chương trình Python trong:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-31-1">C:\Users\user\code\awesome-project\.venv\Scripts\python
+</span></code></pre></div>
+<p>và sử dụng chương trình đó.</p>
+</div>
+</div>
+</div>
+<p>Một chi tiết quan trọng là nó sẽ đưa địa chỉ của môi trường ảo vào <strong>đầu</strong> của biến <code>PATH</code>. Hệ thống sẽ tìm kiếm nó <strong>trước</strong> khi tìm kiếm bất kỳ Python nào khác có sẵn. Vì vậy, khi bạn chạy <code>python</code>, nó sẽ sử dụng Python <strong>từ môi trường ảo</strong> thay vì bất kỳ Python nào khác (ví dụ, Python từ môi trường toàn cục).</p>
+<p>Kích hoạt một môi trường ảo cũng thay đổi một vài thứ khác, nhưng đây là một trong những điều quan trọng nhất mà nó thực hiện.</p>
+<h2 id="kiem-tra-mot-moi-truong-ao">Kiểm tra một Môi trường ảo<a class="headerlink" href="#kiem-tra-mot-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Khi bạn kiểm tra một môi trường ảo đã được kích hoạt chưa, ví dụ với:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Linux, macOS, Windows Bash</label><label for="__tabbed_9_2">Windows PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-32-1"><span class="gp">$ </span>which<span class="w"> </span>python
+</span><span id="__span-32-2">
+</span><span id="__span-32-3"><span class="go">/home/user/code/awesome-project/.venv/bin/python</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+<div class="tabbed-block">
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-33-1"><span class="gp">$ </span>Get-Command<span class="w"> </span>python
+</span><span id="__span-33-2">
+</span><span id="__span-33-3"><span class="go">C:\Users\user\code\awesome-project\.venv\Scripts\python</span>
+</span></code></pre></div>
+
+</div>
+
+</div>
+</div>
+</div>
+<p>Điều đó có nghĩa là chương trình <code>python</code> sẽ được sử dụng là chương trình <strong>trong môi trường ảo</strong>.</p>
+<p>Bạn sử dụng <code>which</code> trên Linux và macOS và <code>Get-Command</code> trên Windows PowerShell.</p>
+<p>Cách hoạt động của lệnh này là nó sẽ đi và kiểm tra biến <code>PATH</code>, đi qua <strong>mỗi đường dẫn theo thứ tự</strong>, tìm kiếm chương trình được gọi là <code>python</code>. Khi nó tìm thấy nó, nó sẽ <strong>hiển thị cho bạn đường dẫn</strong> đến chương trình đó.</p>
+<p>Điều quan trọng nhất là khi bạn gọi <code>python</code>, đó chính là chương trình <code>python</code> được thực thi.</p>
+<p>Vì vậy, bạn có thể xác nhận nếu bạn đang ở trong môi trường ảo đúng.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Dễ dàng kích hoạt một môi trường ảo, cài đặt Python, và sau đó <strong>chuyển đến một dự án khác</strong>.</p>
+<p>Và dự án thứ hai <strong>sẽ không hoạt động</strong> vì bạn đang sử dụng <strong>Python không đúng</strong>, từ một môi trường ảo cho một dự án khác.</p>
+<p>Thật tiện lợi khi có thể kiểm tra <code>python</code> nào đang được sử dụng 🤓</p>
+</div>
+<h2 id="tai-sao-lai-huy-kich-hoat-mot-moi-truong-ao">Tại sao lại Huỷ kích hoạt một Môi trường ảo<a class="headerlink" href="#tai-sao-lai-huy-kich-hoat-mot-moi-truong-ao" title="Permanent link">&para;</a></h2>
+<p>Ví dụ, bạn có thể làm việc trên một dự án <code>philosophers-stone</code>, <strong>kích hoạt môi trường ảo</strong>, cài đặt các gói và làm việc với môi trường ảo đó.</p>
+<p>Sau đó, bạn muốn làm việc trên <strong>dự án khác</strong> <code>prisoner-of-azkaban</code>.</p>
+<p>Bạn đi đến dự án đó:</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-34-1"><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>~/code/prisoner-of-azkaban
+</span></code></pre></div>
+
+</div>
+
+<p>Nếu bạn không tắt môi trường ảo cho <code>philosophers-stone</code>, khi bạn chạy <code>python</code> trong terminal, nó sẽ cố gắng sử dụng Python từ <code>philosophers-stone</code>.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-35-1"><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>~/code/prisoner-of-azkaban
+</span><span id="__span-35-2">
+</span><span id="__span-35-3"><span class="gp">$ </span>python<span class="w"> </span>main.py
+</span><span id="__span-35-4">
+</span><span id="__span-35-5"><span class="go">// Lỗi khi import sirius, nó không được cài đặt 😱</span>
+</span><span id="__span-35-6"><span class="go">Traceback (most recent call last):</span>
+</span><span id="__span-35-7"><span class="go">    File &quot;main.py&quot;, line 1, in &lt;module&gt;</span>
+</span><span id="__span-35-8"><span class="go">        import sirius</span>
+</span></code></pre></div>
+
+</div>
+
+<p>Nếu bạn huỷ kích hoạt môi trường ảo hiện tại và kích hoạt môi trường ảo mới cho <code>prisoner-of-azkaban</code>, khi bạn chạy <code>python</code>, nó sẽ sử dụng Python từ môi trường ảo trong <code>prisoner-of-azkaban</code>.</p>
+<div class="termy">
+
+<div class="highlight"><pre><span></span><code><span id="__span-36-1"><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>~/code/prisoner-of-azkaban
+</span><span id="__span-36-2">
+</span><span id="__span-36-3"><span class="go">// Bạn không cần phải ở trong thư mục trước để huỷ kích hoạt, bạn có thể làm điều đó ở bất kỳ đâu, ngay cả sau khi đi đến dự án khác 😎</span>
+</span><span id="__span-36-4"><span class="gp">$ </span>deactivate
+</span><span id="__span-36-5">
+</span><span id="__span-36-6"><span class="go">// Kích hoạt môi trường ảo trong prisoner-of-azkaban/.venv 🚀</span>
+</span><span id="__span-36-7"><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-36-8">
+</span><span id="__span-36-9"><span class="go">// Bây giờ khi bạn chạy python, nó sẽ tìm thấy gói sirius được cài đặt trong môi trường ảo này ✨</span>
+</span><span id="__span-36-10"><span class="gp">$ </span>python<span class="w"> </span>main.py
+</span><span id="__span-36-11">
+</span><span id="__span-36-12"><span class="go">I solemnly swear 🐺</span>
+</span><span id="__span-36-13">
+</span><span id="__span-36-14"><span class="gp gp-VirtualEnv">(Tôi long trọng thề 🐺 - câu này được lấy từ Harry Potter, chú thích của người dịch)</span>
+</span></code></pre></div>
+
+</div>
+
+<h2 id="cac-cach-lam-tuong-tu">Các cách làm tương tự<a class="headerlink" href="#cac-cach-lam-tuong-tu" title="Permanent link">&para;</a></h2>
+<p>Đây là một hướng dẫn đơn giản để bạn có thể bắt đầu và hiểu cách mọi thứ hoạt động <strong>bên trong</strong>.</p>
+<p>Có nhiều <strong>cách khác nhau</strong> để quản lí các môi trường ảo, các gói phụ thuộc (requirements), và các dự án.</p>
+<p>Một khi bạn đã sẵn sàng và muốn sử dụng một công cụ để <strong>quản lí cả dự án</strong>, các gói phụ thuộc, các môi trường ảo, v.v. Tôi sẽ khuyên bạn nên thử <a href="https://github.com/astral-sh/uv" class="external-link" target="_blank">uv</a>.</p>
+<p><code>uv</code> có thể làm nhiều thứ, chẳng hạn:</p>
+<ul>
+<li><strong>Cài đặt Python</strong> cho bạn, bao gồm nhiều phiên bản khác nhau</li>
+<li>Quản lí <strong>các môi trường ảo</strong> cho các dự án của bạn</li>
+<li>Cài đặt <strong>các gói (packages)</strong></li>
+<li>Quản lí <strong>các thành phần phụ thuộc và phiên bản</strong> của các gói cho dự án của bạn</li>
+<li>Đảm bảo rằng bạn có một <strong>tập hợp chính xác</strong> các gói và phiên bản để cài đặt, bao gồm các thành phần phụ thuộc của chúng, để bạn có thể đảm bảo rằng bạn có thể chạy dự án của bạn trong sản xuất chính xác như trong máy tính của bạn trong khi phát triển, điều này được gọi là <strong>locking</strong></li>
+<li>Và còn nhiều thứ khác nữa</li>
+</ul>
+<h2 id="ket-luan">Kết luận<a class="headerlink" href="#ket-luan" title="Permanent link">&para;</a></h2>
+<p>Nếu bạn đã đọc và hiểu hết những điều này, khá chắc là bây giờ bạn đã <strong>biết nhiều hơn</strong> về môi trường ảo so với kha khá lập trình viên khác đấy. 🤓</p>
+<p>Những hiểu biết chi tiết này có thể sẽ hữu ích với bạn trong tương lai khi mà bạn cần gỡ lỗi một vài thứ phức tạp, và bạn đã có những hiểu biết về <strong>ngọn ngành gốc rễ cách nó hoạt động</strong>. 😎</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Trở lại mục lục
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Chân trang" >
+        
+          
+          <a href="../environment-variables/" class="md-footer__link md-footer__link--prev" aria-label="Trước: Biến môi trường (Environment Variables)">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Trước
+              </span>
+              <div class="md-ellipsis">
+                Biến môi trường (Environment Variables)
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../tutorial/" class="md-footer__link md-footer__link--next" aria-label="Sau: Hướng dẫn sử dụng">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sau
+              </span>
+              <div class="md-ellipsis">
+                Hướng dẫn sử dụng
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    <div class="md-copyright__highlight">
+        The ReadyAPI trademark is owned by <a href="https://khulnasoft.com" target="_blank">@khulnasoft</a> and is registered in the US and across other regions
+    </div>
+    
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+    </a>
+    
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/readyapi/readyapi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/VQjSZaeJmf" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/readyapi" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/readyapi" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://khulnasoft.com" target="_blank" rel="noopener" title="khulnasoft.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../js/termynal.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+    
+  </body>
+</html>

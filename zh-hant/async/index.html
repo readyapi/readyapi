@@ -1,0 +1,5366 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="ReadyAPI framework, high performance, easy to learn, fast to code, ready for production">
+      
+      
+      
+        <link rel="canonical" href="https://readyapi.khulnasoft.com/zh-hant/async/">
+      
+      
+        <link rel="prev" href="../python-types/">
+      
+      
+        <link rel="next" href="../environment-variables/">
+      
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>並行與 async / await - ReadyAPI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../css/termynal.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-YNEVN69SC3"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-YNEVN69SC3",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-YNEVN69SC3",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#async-await" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div class="announce-wrapper">
+  <div id="announce-left">
+    <div class="item">
+      <a class="announce-link" href="https://twitter.com/readyapi" target="_blank">
+        <span class="twemoji twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+        </span> Follow <strong>@readyapi</strong> on <strong>Twitter</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://www.linkedin.com/company/readyapi" target="_blank">
+        <span class="twemoji linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+        </span> Follow <strong>ReadyAPI</strong> on <strong>LinkedIn</strong> to stay updated
+      </a>
+    </div>
+    <div class="item">
+      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+        </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
+      </a>
+    </div>
+  </div>
+  <div id="announce-right" style="position: relative;">
+    <div class="item">
+      <a title="BlockBee Cryptocurrency Payment Gateway" style="display: block; position: relative;" href="https://blockbee.io?ref=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/blockbee-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build, run and scale your apps on a modern, reliable, and secure PaaS." style="display: block; position: relative;" href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/platform-sh-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy ReadyAPI on AWS with a few clicks" style="display: block; position: relative;" href="https://www.porter.run" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/porter-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files" style="display: block; position: relative;" href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=top-banner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/scalar-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Auth, user management and more for your B2B product" style="display: block; position: relative;" href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=topbanner" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/propelauth-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Build your next app with ReadyAPI and MongoDB" style="display: block; position: relative;" href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/mongodb-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Zuplo: Scale, Protect, Document, and Monetize your ReadyAPI" style="display: block; position: relative;" href="https://zuplo.link/readyapi-web" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/zuplo-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="liblab - Generate SDKs from ReadyAPI" style="display: block; position: relative;" href="https://liblab.com?utm_source=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/liblab-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra." style="display: block; position: relative;" href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/render-banner.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Cut Code Review Time & Bugs in Half with CodeRabbit" style="display: block; position: relative;" href="https://www.coderabbit.ai/?utm_source=readyapi&utm_medium=banner&utm_campaign=readyapi" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/coderabbit-banner.png" />
+      </a>
+    </div>
+    <div class="item">
+      <a title="Making Retail Purchases Actionable for Brands and Developers" style="display: block; position: relative;" href="https://subtotal.com/?utm_source=readyapi&utm_medium=sponsorship&utm_campaign=open-source" target="_blank">
+        <span class="sponsor-badge">sponsor</span>
+        <img class="sponsor-image" src="/img/sponsors/subtotal-banner.svg" />
+      </a>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ReadyAPI" class="md-header__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../img/icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ReadyAPI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              並行與 async / await
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2C5.13 2 2 5.13 2 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7M6 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H6zm13-8h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="" class="md-select__link">
+              en - English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/az/" hreflang="" class="md-select__link">
+              az - azərbaycan dili
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/bn/" hreflang="" class="md-select__link">
+              bn - বাংলা
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/" hreflang="" class="md-select__link">
+              de - Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="" class="md-select__link">
+              es - español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fa/" hreflang="" class="md-select__link">
+              fa - فارسی
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/he/" hreflang="" class="md-select__link">
+              he - עברית
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/hu/" hreflang="" class="md-select__link">
+              hu - magyar
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/id/" hreflang="" class="md-select__link">
+              id - Bahasa Indonesia
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/it/" hreflang="" class="md-select__link">
+              it - italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ko/" hreflang="" class="md-select__link">
+              ko - 한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/nl/" hreflang="" class="md-select__link">
+              nl - Nederlands
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pl/" hreflang="" class="md-select__link">
+              pl - Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt/" hreflang="" class="md-select__link">
+              pt - português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ru/" hreflang="" class="md-select__link">
+              ru - русский язык
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/uk/" hreflang="" class="md-select__link">
+              uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ur/" hreflang="" class="md-select__link">
+              ur - اردو
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/vi/" hreflang="" class="md-select__link">
+              vi - Tiếng Việt
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/yo/" hreflang="" class="md-select__link">
+              yo - Yorùbá
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/em/" hreflang="" class="md-select__link">
+              😉
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/readyapi/readyapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../features/" class="md-tabs__link">
+        
+  
+    
+  
+  特性
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../learn/" class="md-tabs__link">
+          
+  
+    
+  
+  學習
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../readyapi-people/" class="md-tabs__link">
+        
+  
+    
+  
+  ReadyAPI People
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../resources/" class="md-tabs__link">
+          
+  
+    
+  
+  資源
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../about/" class="md-tabs__link">
+          
+  
+    
+  
+  關於 ReadyAPI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../release-notes/" class="md-tabs__link">
+        
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ReadyAPI" class="md-nav__button md-logo" aria-label="ReadyAPI" data-md-component="logo">
+      
+  <img src="../img/icon-white.svg" alt="logo">
+
+    </a>
+    ReadyAPI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/readyapi/readyapi" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    readyapi/readyapi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    特性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../learn/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    學習
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            學習
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Types Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    並行與 async / await
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    並行與 async / await
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      趕時間嗎?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術細節
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      非同步程式碼
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非同步程式碼">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行與漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      平行漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      漢堡結論
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行比平行更好嗎？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行 + 平行: Web + 機器學習
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#async-await_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      async 和 await
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="async 和 await">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      更多技術細節
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      編寫自己的非同步程式碼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他形式的非同步程式碼
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      協程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      結論
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      非常技術性的細節
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非常技術性的細節">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      路徑操作函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      依賴項(Dependencies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      子依賴項
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他輔助函式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    環境變數
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual-environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    虛擬環境
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    教學 - 使用者指南
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            教學 - 使用者指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一步
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Body
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-params-str-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Parameters and String Validations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-params-numeric-validations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Parameters and Numeric Validations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/query-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    查詢參數模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-multiple-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Multiple Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-nested-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Nested Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/schema-extra-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declare Request Example Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/extra-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cookie-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/header-params/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cookie-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookie Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/header-param-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header Parameter Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/response-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Model - Return Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/extra-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/response-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Status Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-forms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-form-models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/request-forms-and-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Forms and Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/handling-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Handling Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/path-operation-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Operation Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/encoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON Compatible Encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/body-updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Body - Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_29" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/dependencies/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dependencies
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_29" id="__nav_3_6_29_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_29_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_29">
+            <span class="md-nav__icon md-icon"></span>
+            Dependencies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/classes-as-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes as Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/sub-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub-dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/dependencies-in-path-operation-decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies in path operation decorators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/global-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Global Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/dependencies/dependencies-with-yield/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies with yield
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_30" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../tutorial/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6_30" id="__nav_3_6_30_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_30_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_30">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/first-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security - First Steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/get-current-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Current User
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/simple-oauth2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simple OAuth2 with Password and Bearer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/security/oauth2-jwt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OAuth2 with Password (and hashing), Bearer with JWT tokens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/cors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CORS (Cross-Origin Resource Sharing)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/sql-databases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL (Relational) Databases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/bigger-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bigger Applications - Multiple Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/background-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata and Docs URLs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/static-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced User Guide
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/path-operation-advanced-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Path Operation Advanced Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/additional-status-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Return a Response Directly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/custom-response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response - HTML, Stream, File, others
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/additional-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Responses in OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-cookies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Cookies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-headers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response Headers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/response-change-status-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response - Change Status Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/advanced-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../advanced/security/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced Security
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_11" id="__nav_3_7_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_11">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/security/oauth2-scopes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OAuth2 scopes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/security/http-basic-auth/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTP Basic Auth
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/using-request-directly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using the Request Directly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/dataclasses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Dataclasses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/sub-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sub Applications - Mounts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/behind-a-proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Behind a Proxy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lifespan Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Events: startup - shutdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/testing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing Dependencies with Overrides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/async-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings and Environment Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/openapi-callbacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Callbacks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/openapi-webhooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI Webhooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/wsgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Including WSGI - Flask, Django, others
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/generate-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate Clients
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readyapi-cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../deployment/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    部署
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            部署
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/versions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About ReadyAPI versions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/https/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About HTTPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/manually/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run a Server Manually
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deployments Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    在雲端部署 ReadyAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/server-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server Workers - Uvicorn with Workers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI in Containers - Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../how-to/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    使用指南 - 範例集
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            使用指南 - 範例集
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General - How To - Recipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/graphql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GraphQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/custom-request-and-route/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Request and APIRoute class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/conditional-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/extending-openapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extending OpenAPI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/separate-openapi-schemas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Separate OpenAPI Schemas for Input and Output or Not
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/custom-docs-ui-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Docs UI Static Assets (Self-Hosting)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/configure-swagger-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configure Swagger UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to/testing-database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing a Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/uploadfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UploadFile class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions - HTTPException and WebSocketException
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dependencies - Depends() and Security()
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/apirouter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIRouter class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background Tasks - BackgroundTasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/request/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Request class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/websockets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebSockets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/httpconnection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTTPConnection class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/response/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Response class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Response Classes - File, HTML, Redirect, Streaming, etc.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/middleware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Middleware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/openapi/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OpenAPI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
+            <span class="md-nav__icon md-icon"></span>
+            OpenAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/openapi/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI docs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/openapi/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenAPI models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/encoders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoders - jsonable_encoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/staticfiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Files - StaticFiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/templating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templating - Jinja2Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/testclient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Client - TestClient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../readyapi-people/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI People
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../resources/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    資源
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            資源
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help-readyapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Help ReadyAPI - Get Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development - Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full Stack ReadyAPI Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Links and Articles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../newsletter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ReadyAPI and friends newsletter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../management-tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../about/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    關於 ReadyAPI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            關於 ReadyAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alternatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alternatives, Inspiration and Comparisons
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-design-future/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History, Design and Future
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基準測試
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      趕時間嗎?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      技術細節
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      非同步程式碼
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非同步程式碼">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行與漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      平行漢堡
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      漢堡結論
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行比平行更好嗎？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      並行 + 平行: Web + 機器學習
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#async-await_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      async 和 await
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="async 和 await">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      更多技術細節
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      編寫自己的非同步程式碼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他形式的非同步程式碼
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      協程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      結論
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      非常技術性的細節
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非常技術性的細節">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      路徑操作函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      依賴項(Dependencies)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      子依賴項
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他輔助函式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="async-await">並行與 async / await<a class="headerlink" href="#async-await" title="Permanent link">&para;</a></h1>
+<p>有關<em>路徑操作函式</em>的 <code>async def</code> 語法的細節與非同步 (asynchronous) 程式碼、並行 (concurrency) 與平行 (parallelism) 的一些背景知識。</p>
+<h2 id="_1">趕時間嗎?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><abbr title="too long; didn't read（文長慎入）"><strong>TL;DR:</strong></abbr></p>
+<p>如果你正在使用要求你以 <code>await</code> 語法呼叫的第三方函式庫，例如：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">some_library</span><span class="p">()</span>
+</span></code></pre></div>
+<p>然後，使用 <code>async def</code> 宣告你的<em>路徑操作函式</em>：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+</span><span id="__span-1-2"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_results</span><span class="p">():</span>
+</span></span><span id="__span-1-3">    <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">some_library</span><span class="p">()</span>
+</span><span id="__span-1-4">    <span class="k">return</span> <span class="n">results</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>你只能在 <code>async def</code> 建立的函式內使用 <code>await</code>。</p>
+</div>
+<hr />
+<p>如果你使用的是第三方函式庫並且它需要與某些外部資源（例如資料庫、API、檔案系統等）進行通訊，但不支援 <code>await</code>（目前大多數資料庫函式庫都是這樣），在這種情況下，你可以像平常一樣使用 <code>def</code> 宣告<em>路徑操作函式</em>，如下所示：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+</span><span id="__span-2-2"><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">results</span><span class="p">():</span>
+</span></span><span id="__span-2-3">    <span class="n">results</span> <span class="o">=</span> <span class="n">some_library</span><span class="p">()</span>
+</span><span id="__span-2-4">    <span class="k">return</span> <span class="n">results</span>
+</span></code></pre></div>
+<hr />
+<p>如果你的應用程式不需要與外部資源進行任何通訊並等待其回應，請使用 <code>async def</code>。</p>
+<hr />
+<p>如果你不確定該用哪個，直接用 <code>def</code> 就好。</p>
+<hr />
+<p><strong>注意</strong>：你可以在<em>路徑操作函式</em>中混合使用 <code>def</code> 和 <code>async def</code> ，並使用最適合你需求的方式來定義每個函式。ReadyAPI 會幫你做正確的處理。</p>
+<p>無論如何，在上述哪種情況下，ReadyAPI 仍將以非同步方式運行，並且速度非常快。</p>
+<p>但透過遵循上述步驟，它將能進行一些效能最佳化。</p>
+<h2 id="_2">技術細節<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>現代版本的 Python 支援使用 <strong>「協程」</strong> 的 <strong><code>async</code> 和 <code>await</code></strong> 語法來寫 <strong>「非同步程式碼」</strong>。</p>
+<p>接下來我們逐一介紹：</p>
+<ul>
+<li><strong>非同步程式碼</strong></li>
+<li><strong><code>async</code> 和 <code>await</code></strong></li>
+<li><strong>協程</strong></li>
+</ul>
+<h2 id="_3">非同步程式碼<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>非同步程式碼僅意味著程式語言 💬 有辦法告訴電腦/程式 🤖 在程式碼中的某個點，它 🤖 需要等待某些事情完成。讓我們假設這些事情被稱為「慢速檔案」📝。</p>
+<p>因此，在等待「慢速檔案」📝 完成的這段時間，電腦可以去處理一些其他工作。</p>
+<p>接著程式 🤖 會在有空檔時回來查看是否有等待的工作已經完成，並執行必要的後續操作。</p>
+<p>接下來，它 🤖 完成第一個工作（例如我們的「慢速檔案」📝）並繼續執行相關的所有操作。
+這個「等待其他事情」通常指的是一些相對較慢的（與處理器和 RAM 記憶體的速度相比）的 <abbr title="Input and Output">I/O</abbr> 操作，比如說：</p>
+<ul>
+<li>透過網路傳送來自用戶端的資料</li>
+<li>從網路接收來自用戶端的資料</li>
+<li>從磁碟讀取檔案內容</li>
+<li>將內容寫入磁碟</li>
+<li>遠端 API 操作</li>
+<li>資料庫操作</li>
+<li>資料庫查詢</li>
+<li>等等</li>
+</ul>
+<p>由於大部分的執行時間都消耗在等待 <abbr title="輸入與輸出">I/O</abbr> 操作上，因此這些操作被稱為 "I/O 密集型" 操作。</p>
+<p>之所以稱為「非同步」，是因為電腦/程式不需要與那些耗時的任務「同步」，等待任務完成的精確時間，然後才能取得結果並繼續工作。</p>
+<p>相反地，非同步系統在任務完成後，可以讓任務稍微等一下（幾微秒），等待電腦/程式完成手頭上的其他工作，然後再回來取得結果繼續進行。</p>
+<p>相對於「非同步」（asynchronous），「同步」（synchronous）也常被稱作「順序性」（sequential），因為電腦/程式會依序執行所有步驟，即便這些步驟涉及等待，才會切換到其他任務。</p>
+<h3 id="_4">並行與漢堡<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>上述非同步程式碼的概念有時也被稱為「並行」，它不同於「平行」。</p>
+<p>並行和平行都與 "不同的事情或多或少同時發生" 有關。</p>
+<p>但並行和平行之間的細節是完全不同的。</p>
+<p>為了理解差異，請想像以下有關漢堡的故事：</p>
+<h3 id="_5">並行漢堡<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>你和你的戀人去速食店，排隊等候時，收銀員正在幫排在你前面的人點餐。😍</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-01.png" class="illustration"></p>
+<p>輪到你了，你給你與你的戀人點了兩個豪華漢堡。🍔🍔</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-02.png" class="illustration"></p>
+<p>收銀員通知廚房準備你的漢堡（儘管他們還在為前面其他顧客準備食物）。</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-03.png" class="illustration"></p>
+<p>之後你完成付款。💸</p>
+<p>收銀員給你一個號碼牌。</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-04.png" class="illustration"></p>
+<p>在等待漢堡的同時，你可以與戀人選一張桌子，然後坐下來聊很長一段時間（因為漢堡十分豪華，準備特別費工。）</p>
+<p>這段時間，你還能欣賞你的戀人有多麼的可愛、聰明與迷人。✨😍✨</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-05.png" class="illustration"></p>
+<p>當你和戀人邊聊天邊等待時，你會不時地查看櫃檯上的顯示的號碼，確認是否已經輪到你了。</p>
+<p>然後在某個時刻，終於輪到你了。你走到櫃檯，拿了漢堡，然後回到桌子上。</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-06.png" class="illustration"></p>
+<p>你和戀人享用這頓大餐，整個過程十分開心✨</p>
+<p><img src="/img/async/concurrent-burgers/concurrent-burgers-07.png" class="illustration"></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>漂亮的插畫來自 <a href="https://www.instagram.com/ketrinadrawsalot" class="external-link" target="_blank">Ketrina Thompson</a>. 🎨</p>
+</div>
+<hr />
+<p>想像你是故事中的電腦或程式 🤖。</p>
+<p>當你排隊時，你在放空😴，等待輪到你，沒有做任何「生產性」的事情。但這沒關係，因為收銀員只是接單（而不是準備食物），所以排隊速度很快。</p>
+<p>然後，當輪到你時，你開始做真正「有生產力」的工作，處理菜單，決定你想要什麼，替戀人選擇餐點，付款，確認你給了正確的帳單或信用卡，檢查你是否被正確收費，確認訂單中的項目是否正確等等。</p>
+<p>但是，即使你還沒有拿到漢堡，你與收銀員的工作已經「暫停」了 ⏸，因為你必須等待 🕙 漢堡準備好。</p>
+<p>但當你離開櫃檯，坐到桌子旁，拿著屬於你的號碼等待時，你可以把注意力 🔀 轉移到戀人身上，並開始「工作」⏯ 🤓——也就是和戀人調情 😍。這時你又開始做一些非常「有生產力」的事情。</p>
+<p>接著，收銀員 💁 將你的號碼顯示在櫃檯螢幕上，並告訴你「漢堡已經做好了」。但你不會瘋狂地立刻跳起來，因為顯示的號碼變成了你的。你知道沒有人會搶走你的漢堡，因為你有自己的號碼，他們也有他們的號碼。</p>
+<p>所以你會等戀人講完故事（完成當前的工作 ⏯/正在進行的任務 🤓），然後微笑著溫柔地說你要去拿漢堡了 ⏸。</p>
+<p>然後你走向櫃檯 🔀，回到已經完成的最初任務 ⏯，拿起漢堡，說聲謝謝，並帶回桌上。這就結束了與櫃檯的互動步驟/任務 ⏹，接下來會產生一個新的任務，「吃漢堡」 🔀 ⏯，而先前的「拿漢堡」任務已經完成了 ⏹。</p>
+<h3 id="_6">平行漢堡<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>現在，讓我們來想像這裡不是「並行漢堡」，而是「平行漢堡」。</p>
+<p>你和戀人一起去吃平行的速食餐。</p>
+<p>你們站在隊伍中，前面有幾位（假設有 8 位）既是收銀員又是廚師的員工，他們同時接單並準備餐點。</p>
+<p>所有排在你前面的人都在等著他們的漢堡準備好後才會離開櫃檯，因為每位收銀員在接完單後，馬上會去準備漢堡，然後才回來處理下一個訂單。</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-01.png" class="illustration"></p>
+<p>終於輪到你了，你為你和你的戀人點了兩個非常豪華的漢堡。</p>
+<p>你付款了 💸。</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-02.png" class="illustration"></p>
+<p>收銀員走進廚房準備食物。</p>
+<p>你站在櫃檯前等待 🕙，以免其他人先拿走你的漢堡，因為這裡沒有號碼牌系統。</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-03.png" class="illustration"></p>
+<p>由於你和戀人都忙著不讓別人搶走你的漢堡，等漢堡準備好時，你根本無法專心和戀人互動。😞</p>
+<p>這是「同步」(synchronous)工作，你和收銀員/廚師 👨‍🍳 是「同步化」的。你必須等到 🕙 收銀員/廚師 👨‍🍳 完成漢堡並交給你的那一刻，否則別人可能會拿走你的餐點。</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-04.png" class="illustration"></p>
+<p>最終，經過長時間的等待 🕙，收銀員/廚師 👨‍🍳 拿著漢堡回來了。</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-05.png" class="illustration"></p>
+<p>你拿著漢堡，和你的戀人回到餐桌。</p>
+<p>你們僅僅是吃完漢堡，然後就結束了。⏹</p>
+<p><img src="/img/async/parallel-burgers/parallel-burgers-06.png" class="illustration"></p>
+<p>整個過程中沒有太多的談情說愛，因為大部分時間 🕙 都花在櫃檯前等待。😞</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>漂亮的插畫來自 <a href="https://www.instagram.com/ketrinadrawsalot" class="external-link" target="_blank">Ketrina Thompson</a>. 🎨</p>
+</div>
+<hr />
+<p>在這個平行漢堡的情境下，你是一個程式 🤖 且有兩個處理器（你和戀人），兩者都在等待 🕙 並專注於等待櫃檯上的餐點 🕙，等待的時間非常長。</p>
+<p>這家速食店有 8 個處理器（收銀員/廚師）。而並行漢堡店可能只有 2 個處理器（一位收銀員和一位廚師）。</p>
+<p>儘管如此，最終的體驗並不是最理想的。😞</p>
+<hr />
+<p>這是與漢堡類似的故事。🍔</p>
+<p>一個更「現實」的例子，想像一間銀行。</p>
+<p>直到最近，大多數銀行都有多位出納員 👨‍💼👨‍💼👨‍💼👨‍💼，以及一條長長的隊伍 🕙🕙🕙🕙🕙🕙🕙🕙。</p>
+<p>所有的出納員都在一個接一個地滿足每位客戶的所有需求 👨‍💼⏯。</p>
+<p>你必須長時間排隊 🕙，不然就會失去機會。</p>
+<p>所以，你不會想帶你的戀人 😍 一起去銀行辦事 🏦。</p>
+<h3 id="_7">漢堡結論<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>在「和戀人一起吃速食漢堡」的這個場景中，由於有大量的等待 🕙，使用並行系統 ⏸🔀⏯ 更有意義。</p>
+<p>這也是大多數 Web 應用的情況。</p>
+<p>許多用戶正在使用你的應用程式，而你的伺服器則在等待 🕙 這些用戶不那麼穩定的網路來傳送請求。</p>
+<p>接著，再次等待 🕙 回應。</p>
+<p>這種「等待」 🕙 通常以微秒來衡量，但累加起來，最終還是花費了很多等待時間。</p>
+<p>這就是為什麼對於 Web API 來說，使用非同步程式碼 ⏸🔀⏯ 是非常有意義的。</p>
+<p>這種類型的非同步性正是 NodeJS 成功的原因（儘管 NodeJS 不是平行的），這也是 Go 語言作為程式語言的一個強大優勢。</p>
+<p>這與 <strong>ReadyAPI</strong> 所能提供的性能水平相同。</p>
+<p>你可以同時利用並行性和平行性，進一步提升效能，這比大多數已測試的 NodeJS 框架都更快，並且與 Go 語言相當，而 Go 是一種更接近 C 的編譯語言（<a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">感謝 Starlette</a>）。</p>
+<h3 id="_8">並行比平行更好嗎？<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>不是的！這不是故事的本意。</p>
+<p>並行與平行不同。並行在某些 <strong>特定</strong> 的需要大量等待的情境下表現更好。正因如此，並行在 Web 應用程式開發中通常比平行更有優勢。但並不是所有情境都如此。</p>
+<p>因此，為了平衡報導，想像下面這個短故事</p>
+<blockquote>
+<p>你需要打掃一間又大又髒的房子。</p>
+</blockquote>
+<p><em>是的，這就是全部的故事。</em></p>
+<hr />
+<p>這裡沒有任何需要等待 🕙 的地方，只需要在房子的多個地方進行大量的工作。</p>
+<p>你可以像漢堡的例子那樣輪流進行，先打掃客廳，再打掃廚房，但由於你不需要等待 🕙 任何事情，只需要持續地打掃，輪流並不會影響任何結果。</p>
+<p>無論輪流執行與否（並行），你都需要相同的工時完成任務，同時需要執行相同工作量。</p>
+<p>但是，在這種情境下，如果你可以邀請8位前收銀員/廚師（現在是清潔工）來幫忙，每個人（加上你）負責房子的某個區域，這樣你就可以 <strong>平行</strong> 地更快完成工作。</p>
+<p>在這個場景中，每個清潔工（包括你）都是一個處理器，完成工作的一部分。</p>
+<p>由於大多數的執行時間都花在實際的工作上（而不是等待），而電腦中的工作由 <abbr title="Central Processing Unit">CPU</abbr> 完成，因此這些問題被稱為「CPU 密集型」。</p>
+<hr />
+<p>常見的 CPU 密集型操作範例包括那些需要進行複雜數學計算的任務。</p>
+<p>例如：</p>
+<ul>
+<li><strong>音訊</strong>或<strong>圖像處理</strong>；</li>
+<li><strong>電腦視覺</strong>：一張圖片由數百萬個像素組成，每個像素有 3 個值/顏色，處理這些像素通常需要同時進行大量計算；</li>
+<li><strong>機器學習</strong>: 通常需要大量的「矩陣」和「向量」運算。想像一個包含數字的巨大電子表格，並所有的數字同時相乘;</li>
+<li><strong>深度學習</strong>: 這是機器學習的子領域，同樣適用。只不過這不僅僅是一張數字表格，而是大量的數據集合，並且在很多情況下，你會使用特殊的處理器來構建或使用這些模型。</li>
+</ul>
+<h3 id="web">並行 + 平行: Web + 機器學習<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
+<p>使用 <strong>ReadyAPI</strong>，你可以利用並行的優勢，這在 Web 開發中非常常見（這也是 NodeJS 的最大吸引力）。</p>
+<p>但你也可以利用平行與多行程 (multiprocessing)（讓多個行程同時運行） 的優勢來處理機器學習系統中的 <strong>CPU 密集型</strong>工作。</p>
+<p>這一點，再加上 Python 是 <strong>資料科學</strong>、機器學習，尤其是深度學習的主要語言，讓 <strong>ReadyAPI</strong> 成為資料科學/機器學習 Web API 和應用程式（以及許多其他應用程式）的絕佳選擇。</p>
+<p>想了解如何在生產環境中實現這種平行性，請參見 <a class="internal-link" href="../deployment/" target="_blank">部屬</a>。</p>
+<h2 id="async-await_1"><code>async</code> 和 <code>await</code><a class="headerlink" href="#async-await_1" title="Permanent link">&para;</a></h2>
+<p>現代 Python 版本提供一種非常直觀的方式定義非同步程式碼。這使得它看起來就像正常的「順序」程式碼，並在適當的時機「等待」。</p>
+<p>當某個操作需要等待才能回傳結果，並且支援這些新的 Python 特性時，你可以像這樣編寫程式碼：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><span class="n">burgers</span> <span class="o">=</span> <span class="k">await</span> <span class="n">get_burgers</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p>這裡的關鍵是 <code>await</code>。它告訴 Python 必須等待 ⏸ <code>get_burgers(2)</code> 完成它的工作 🕙， 然後將結果儲存在 <code>burgers</code> 中。如此，Python 就可以在此期間去處理其他事情 🔀 ⏯ （例如接收另一個請求）。</p>
+<p>要讓 <code>await</code> 運作，它必須位於支持非同步功能的函式內。為此，只需使用 <code>async def</code> 宣告函式：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_burgers</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+</span></span><span id="__span-4-2">    <span class="c1"># Do some asynchronous stuff to create the burgers</span>
+</span><span id="__span-4-3">    <span class="k">return</span> <span class="n">burgers</span>
+</span></code></pre></div>
+<p>...而不是 <code>def</code>:</p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><span class="c1"># This is not asynchronous</span>
+</span><span id="__span-5-2"><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">get_sequential_burgers</span><span class="p">(</span><span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+</span></span><span id="__span-5-3">    <span class="c1"># Do some sequential stuff to create the burgers</span>
+</span><span id="__span-5-4">    <span class="k">return</span> <span class="n">burgers</span>
+</span></code></pre></div>
+<p>使用 <code>async def</code>，Python Python 知道在該函式內需要注意 <code>await</code>，並且它可以「暫停」 ⏸ 執行該函式，然後執行其他任務 🔀 後回來。</p>
+<p>當你想要呼叫 <code>async def</code> 函式時，必須使用「await」。因此，這樣寫將無法運行：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><span class="c1"># This won&#39;t work, because get_burgers was defined with: async def</span>
+</span><span id="__span-6-2"><span class="n">burgers</span> <span class="o">=</span> <span class="n">get_burgers</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p>如果你正在使用某個函式庫，它告訴你可以使用 <code>await</code> 呼叫它，那麼你需要用 <code>async def</code> 定義<em>路徑操作函式</em>，如：</p>
+<div class="highlight"><pre><span></span><code><span id="__span-7-1"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;/burgers&#39;</span><span class="p">)</span>
+</span><span id="__span-7-2"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_burgers</span><span class="p">():</span>
+</span></span><span id="__span-7-3"><span class="hll">    <span class="n">burgers</span> <span class="o">=</span> <span class="k">await</span> <span class="n">get_burgers</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span id="__span-7-4">    <span class="k">return</span> <span class="n">burgers</span>
+</span></code></pre></div>
+<h3 id="_9">更多技術細節<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>你可能已經注意到，<code>await</code> 只能在 <code>async def</code> 定義的函式內使用。</p>
+<p>但同時，使用 <code>async def</code> 定義的函式本身也必須被「等待」。所以，帶有 <code>async def</code> 函式只能在其他使用 <code>async def</code> 定義的函式內呼叫。</p>
+<p>那麼，這就像「先有雞還是先有蛋」的問題，要如何呼叫第一個 <code>async</code> 函式呢？</p>
+<p>如果你使用 ReadyAPI，無需擔心這個問題，因為「第一個」函式將是你的<em>路徑操作函式</em>，ReadyAPI 會知道如何正確處理這個問題。</p>
+<p>但如果你想在沒有 ReadyAPI 的情況下使用 <code>async</code> / <code>await</code>，你也可以這樣做。</p>
+<h3 id="_10">編寫自己的非同步程式碼<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>Starlette （和 <strong>ReadyAPI</strong>） 是基於 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 實作的，這使得它們與 Python 標準函式庫相容 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 和 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>。</p>
+<p>特別是，你可以直接使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 來處理更複雜的並行使用案例，這些案例需要你在自己的程式碼中使用更高階的模式。</p>
+<p>即使你不使用 <strong>ReadyAPI</strong>，你也可以使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 來撰寫自己的非同步應用程式，並獲得高相容性及一些好處（例如結構化並行）。</p>
+<h3 id="_11">其他形式的非同步程式碼<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>使用 <code>async</code> 和 <code>await</code> 的風格在語言中相對較新。</p>
+<p>但它使處理異步程式碼變得更加容易。</p>
+<p>相同的語法（或幾乎相同的語法）最近也被包含在現代 JavaScript（無論是瀏覽器還是 NodeJS）中。</p>
+<p>但在此之前，處理異步程式碼要更加複雜和困難。</p>
+<p>在較舊的 Python 版本中，你可能會使用多執行緒或 <a href="https://www.gevent.org/" class="external-link" target="_blank">Gevent</a>。但這些程式碼要更難以理解、調試和思考。</p>
+<p>在較舊的 NodeJS / 瀏覽器 JavaScript 中，你會使用「回呼」，這可能會導致<a href="http://callbackhell.com/" class="external-link" target="_blank">回呼地獄</a>。</p>
+<h2 id="_12">協程<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p><strong>協程</strong> 只是 <code>async def</code> 函式所回傳的非常特殊的事物名稱。Python 知道它是一個類似函式的東西，可以啟動它，並且在某個時刻它會結束，但它也可能在內部暫停 ⏸，只要遇到 <code>await</code>。</p>
+<p>這種使用 <code>async</code> 和 <code>await</code> 的非同步程式碼功能通常被概括為「協程」。這與 Go 語言的主要特性「Goroutines」相似。</p>
+<h2 id="_13">結論<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>讓我們再次回顧之前的句子：</p>
+<blockquote>
+<p>現代版本的 Python 支持使用 <strong>"協程"</strong> 的 <strong><code>async</code> 和 <code>await</code></strong> 語法來寫 <strong>"非同步程式碼"</strong>。</p>
+</blockquote>
+<p>現在應該能明白其含意了。✨</p>
+<p>這些就是驅動 ReadyAPI（通過 Starlette）運作的原理，也讓它擁有如此驚人的效能。</p>
+<h2 id="_14">非常技術性的細節<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>你大概可以跳過這段。</p>
+<p>這裡是有關 ReadyAPI 內部技術細節。</p>
+<p>如果你有相當多的技術背景（例如協程、執行緒、阻塞等），並且對 ReadyAPI 如何處理 <code>async def</code> 與常規 <code>def</code> 感到好奇，請繼續閱讀。</p>
+</div>
+<h3 id="_15">路徑操作函数<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>當你使用 <code>def</code> 而不是 <code>async def</code> 宣告<em>路徑操作函式</em>時，該函式會在外部的執行緒池（threadpool）中執行，然後等待結果，而不是直接呼叫（因為這樣會阻塞伺服器）。</p>
+<p>如果你來自於其他不以這種方式運作的非同步框架，而且你習慣於使用普通的 <code>def</code> 定義僅進行簡單計算的<em>路徑操作函式</em>，目的是獲得微小的性能增益（大約 100 奈秒），請注意，在 ReadyAPI 中，效果會完全相反。在這些情況下，最好使用 <code>async def</code>除非你的<em>路徑操作函式</em>執行阻塞的 <abbr title="輸入/輸出：磁碟讀寫或網路通訊">I/O</abbr> 的程式碼。</p>
+<p>不過，在這兩種情況下，<strong>ReadyAPI</strong> <a class="internal-link" href="../#_11" target="_blank">仍然很快</a>至少與你之前的框架相當（或者更快）。</p>
+<h3 id="dependencies">依賴項(Dependencies)<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h3>
+<p>同樣適用於<a class="internal-link" href="../tutorial/dependencies/" target="_blank">依賴項</a>。如果依賴項是一個標準的 <code>def</code> 函式，而不是 <code>async def</code>，那麼它在外部的執行緒池被運行。</p>
+<h3 id="_16">子依賴項<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>你可以擁有多個相互依賴的依賴項和<a class="internal-link" href="../tutorial/dependencies/sub-dependencies/" target="_blank">子依賴項</a> （作為函式定義的參數），其中一些可能是用 <code>async def</code> 宣告，也可能是用 <code>def</code> 宣告。它們仍然可以正常運作，用 <code>def</code> 定義的那些將會在外部的執行緒中呼叫（來自執行緒池），而不是被「等待」。</p>
+<h3 id="_17">其他輔助函式<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>你可以直接呼叫任何使用 <code>def</code> 或 <code>async def</code> 建立的其他輔助函式，ReadyAPI 不會影響你呼叫它們的方式。</p>
+<p>這與 ReadyAPI 為你呼叫<em>路徑操作函式</em>和依賴項的邏輯有所不同。</p>
+<p>如果你的輔助函式是用 <code>def</code> 宣告的，它將會被直接呼叫（按照你在程式碼中撰寫的方式），而不是在執行緒池中。如果該函式是用 <code>async def</code> 宣告，那麼你在呼叫時應該使用 <code>await</code> 等待其結果。</p>
+<hr />
+<p>再一次強調，這些都是非常技術性的細節，如果你特地在尋找這些資訊，這些內容可能會對你有幫助。</p>
+<p>否則，只需遵循上面提到的指引即可：<a href="#_1">趕時間嗎?</a>.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../python-types/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python Types Intro">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Python Types Intro
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../environment-variables/" class="md-footer__link md-footer__link--next" aria-label="Next: 環境變數">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                環境變數
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+    <div class="md-copyright__highlight">
+        The ReadyAPI trademark is owned by <a href="https://khulnasoft.com" target="_blank">@khulnasoft</a> and is registered in the US and across other regions
+    </div>
+    
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+        Material for MkDocs
+    </a>
+    
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/readyapi/readyapi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/VQjSZaeJmf" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/readyapi" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/readyapi" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://khulnasoft.com" target="_blank" rel="noopener" title="khulnasoft.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../js/termynal.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+    
+  </body>
+</html>

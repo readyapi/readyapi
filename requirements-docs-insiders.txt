@@ -1,1 +1,0 @@
-git+https://${TOKEN}@github.com/squidfunk/mkdocs-material.git@9.5.40
