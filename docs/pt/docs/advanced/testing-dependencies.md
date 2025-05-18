@@ -22,21 +22,21 @@ Neste caso, você pode sobrepor (*override*) a dependência que chama o provedor
 
 ### Utilize o atributo `app.dependency_overrides`
 
-Para estes casos, a sua aplicação **ReadyAPI** possui o atributo `app.dependency_overrides`. Ele é um simples `dict`.
+Para estes casos, a sua aplicação **readyapi** possui o atributo `app.dependency_overrides`. Ele é um simples `dict`.
 
 Para sobrepor a dependência para os testes, você coloca como chave a dependência original (a função), e como valor, a sua sobreposição da dependência (outra função).
 
-E então o **ReadyAPI** chamará a sobreposição no lugar da dependência original.
+E então o **readyapi** chamará a sobreposição no lugar da dependência original.
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
 /// tip | Dica
 
-Você pode definir uma sobreposição de dependência para uma dependência que é utilizada em qualquer lugar da sua aplicação **ReadyAPI**.
+Você pode definir uma sobreposição de dependência para uma dependência que é utilizada em qualquer lugar da sua aplicação **readyapi**.
 
 A dependência original pode estar sendo utilizada em uma *função de operação de rota*, um *docorador de operação de rota* (quando você não utiliza o valor retornado), uma chamada ao `.include_router()`, etc.
 
-O ReadyAPI ainda poderá sobrescrevê-lo.
+O readyapi ainda poderá sobrescrevê-lo.
 
 ///
 

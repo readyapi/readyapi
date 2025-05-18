@@ -4,7 +4,7 @@ Lassen Sie uns nun auf dem vorherigen Kapitel aufbauen und die fehlenden Teile h
 
 ## `username` und `password` entgegennehmen
 
-Wir werden **ReadyAPIs** Sicherheits-Werkzeuge verwenden, um den `username` und das `password` entgegenzunehmen.
+Wir werden **readyapis** Sicherheits-Werkzeuge verwenden, um den `username` und das `password` entgegenzunehmen.
 
 OAuth2 spezifiziert, dass der Client/Benutzer bei Verwendung des „Password Flow“ (den wir verwenden) die Felder `username` und `password` als Formulardaten senden muss.
 
@@ -46,7 +46,7 @@ Für OAuth2 sind es einfach nur Strings.
 
 ## Code, um `username` und `password` entgegenzunehmen.
 
-Lassen Sie uns nun die von **ReadyAPI** bereitgestellten Werkzeuge verwenden, um das zu erledigen.
+Lassen Sie uns nun die von **readyapi** bereitgestellten Werkzeuge verwenden, um das zu erledigen.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ Wenn Sie es erzwingen müssen, verwenden Sie `OAuth2PasswordRequestFormStrict` a
 
 /// info
 
-`OAuth2PasswordRequestForm` ist keine spezielle Klasse für **ReadyAPI**, so wie `OAuth2PasswordBearer`.
+`OAuth2PasswordRequestForm` ist keine spezielle Klasse für **readyapi**, so wie `OAuth2PasswordBearer`.
 
-`OAuth2PasswordBearer` lässt **ReadyAPI** wissen, dass es sich um ein Sicherheitsschema handelt. Daher wird es auf diese Weise zu OpenAPI hinzugefügt.
+`OAuth2PasswordBearer` lässt **readyapi** wissen, dass es sich um ein Sicherheitsschema handelt. Daher wird es auf diese Weise zu OpenAPI hinzugefügt.
 
 Aber `OAuth2PasswordRequestForm` ist nur eine Klassenabhängigkeit, die Sie selbst hätten schreiben können, oder Sie hätten `Form`ular-Parameter direkt deklarieren können.
 
-Da es sich jedoch um einen häufigen Anwendungsfall handelt, wird er zur Vereinfachung direkt von **ReadyAPI** bereitgestellt.
+Da es sich jedoch um einen häufigen Anwendungsfall handelt, wird er zur Vereinfachung direkt von **readyapi** bereitgestellt.
 
 ///
 
@@ -178,7 +178,7 @@ Das müssen Sie selbst in Ihrem Code tun und sicherstellen, dass Sie diese JSON-
 
 Es ist fast das Einzige, woran Sie denken müssen, es selbst richtigzumachen und die Spezifikationen einzuhalten.
 
-Den Rest erledigt **ReadyAPI** für Sie.
+Den Rest erledigt **readyapi** für Sie.
 
 ///
 

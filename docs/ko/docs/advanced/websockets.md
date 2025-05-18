@@ -1,6 +1,6 @@
 # WebSockets
 
-여러분은 **ReadyAPI**에서 <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">WebSockets</a>를 사용할 수 있습니다.
+여러분은 **readyapi**에서 <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">WebSockets</a>를 사용할 수 있습니다.
 
 ## `WebSockets` 설치
 
@@ -42,7 +42,7 @@ $ pip install websockets
 
 ## `websocket` 생성하기
 
-**ReadyAPI** 응용 프로그램에서 `websocket`을 생성합니다:
+**readyapi** 응용 프로그램에서 `websocket`을 생성합니다:
 
 {* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
 
@@ -50,7 +50,7 @@ $ pip install websockets
 
 `from starlette.websockets import WebSocket`을 사용할 수도 있습니다.
 
-**ReadyAPI**는 개발자를 위한 편의를 위해 동일한 `WebSocket`을 직접 제공합니다. 하지만 이는 Starlette에서 가져옵니다.
+**readyapi**는 개발자를 위한 편의를 위해 동일한 `WebSocket`을 직접 제공합니다. 하지만 이는 Starlette에서 가져옵니다.
 
 ///
 
@@ -86,7 +86,7 @@ $ readyapi dev main.py
 
 <img src="/img/tutorial/websockets/image02.png">
 
-**ReadyAPI** WebSocket 응용 프로그램이 응답을 돌려줄 것입니다:
+**readyapi** WebSocket 응용 프로그램이 응답을 돌려줄 것입니다:
 
 <img src="/img/tutorial/websockets/image03.png">
 
@@ -107,7 +107,7 @@ WebSocket 엔드포인트에서 `readyapi`에서 다음을 가져와 사용할 �
 * `Path`
 * `Query`
 
-이들은 다른 ReadyAPI 엔드포인트/*경로 작동*과 동일하게 동작합니다:
+이들은 다른 readyapi 엔드포인트/*경로 작동*과 동일하게 동작합니다:
 
 {* ../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82] *}
 
@@ -174,7 +174,7 @@ Client #1596980209979 left the chat
 
 그러나 모든 것을 메모리의 단일 리스트로 처리하므로, 프로세스가 실행 중인 동안만 동작하며 단일 프로세스에서만 작동합니다.
 
-ReadyAPI와 쉽게 통합할 수 있으면서 더 견고하고 Redis, PostgreSQL 등을 지원하는 도구를 찾고 있다면, <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>를 확인하세요.
+readyapi와 쉽게 통합할 수 있으면서 더 견고하고 Redis, PostgreSQL 등을 지원하는 도구를 찾고 있다면, <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>를 확인하세요.
 
 ///
 

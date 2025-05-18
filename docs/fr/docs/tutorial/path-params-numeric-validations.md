@@ -10,11 +10,11 @@ Tout d'abord, importez `Path` de `readyapi`, et importez `Annotated` :
 
 /// info
 
-ReadyAPI a ajouté le support pour `Annotated` (et a commencé à le recommander) dans la version 0.95.0.
+readyapi a ajouté le support pour `Annotated` (et a commencé à le recommander) dans la version 0.95.0.
 
 Si vous avez une version plus ancienne, vous obtiendrez des erreurs en essayant d'utiliser `Annotated`.
 
-Assurez-vous de [Mettre à jour la version de ReadyAPI](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} à la version 0.95.1 à minima avant d'utiliser `Annotated`.
+Assurez-vous de [Mettre à jour la version de readyapi](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} à la version 0.95.1 à minima avant d'utiliser `Annotated`.
 
 ///
 
@@ -50,7 +50,7 @@ Python se plaindra si vous mettez une valeur avec une "défaut" avant une valeur
 
 Mais vous pouvez les réorganiser, et avoir la valeur sans défaut (le paramètre de requête `q`) en premier.
 
-Cela n'a pas d'importance pour **ReadyAPI**. Il détectera les paramètres par leurs noms, types et déclarations par défaut (`Query`, `Path`, etc), il ne se soucie pas de l'ordre.
+Cela n'a pas d'importance pour **readyapi**. Il détectera les paramètres par leurs noms, types et déclarations par défaut (`Query`, `Path`, etc), il ne se soucie pas de l'ordre.
 
 Ainsi, vous pouvez déclarer votre fonction comme suit :
 

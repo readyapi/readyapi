@@ -46,7 +46,7 @@ Esto nos ayudará dentro de la función con todo el autocompletado y chequeo de 
 
 Tal vez recuerdes que los cuerpos de request también se declaran con modelos de Pydantic.
 
-Aquí **ReadyAPI** no se confundirá porque estás usando `Depends`.
+Aquí **readyapi** no se confundirá porque estás usando `Depends`.
 
 ///
 
@@ -72,7 +72,7 @@ Pero no estás limitado a usar algún modelo de datos, clase o tipo específico.
 
 ¿En realidad no tienes usuarios que inicien sesión en tu aplicación sino robots, bots u otros sistemas, que solo tienen un token de acceso? Una vez más, todo funciona igual.
 
-Usa cualquier tipo de modelo, cualquier tipo de clase, cualquier tipo de base de datos que necesites para tu aplicación. **ReadyAPI** te cubre con el sistema de inyección de dependencias.
+Usa cualquier tipo de modelo, cualquier tipo de clase, cualquier tipo de base de datos que necesites para tu aplicación. **readyapi** te cubre con el sistema de inyección de dependencias.
 
 ## Tamaño del código
 

@@ -8,9 +8,9 @@ Nesta seção, veremos como usar outros middlewares.
 
 ## Adicionando middlewares ASGI
 
-Como o **ReadyAPI** é baseado no Starlette e implementa a especificação <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>, você pode usar qualquer middleware ASGI.
+Como o **readyapi** é baseado no Starlette e implementa a especificação <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>, você pode usar qualquer middleware ASGI.
 
-O middleware não precisa ser feito para o ReadyAPI ou Starlette para funcionar, desde que siga a especificação ASGI.
+O middleware não precisa ser feito para o readyapi ou Starlette para funcionar, desde que siga a especificação ASGI.
 
 No geral, os middlewares ASGI são classes que esperam receber um aplicativo ASGI como o primeiro argumento.
 
@@ -24,15 +24,15 @@ app = SomeASGIApp()
 new_app = UnicornMiddleware(app, some_config="rainbow")
 ```
 
-Mas, o ReadyAPI (na verdade, o Starlette) fornece uma maneira mais simples de fazer isso que garante que os middlewares internos lidem com erros do servidor e que os manipuladores de exceções personalizados funcionem corretamente.
+Mas, o readyapi (na verdade, o Starlette) fornece uma maneira mais simples de fazer isso que garante que os middlewares internos lidem com erros do servidor e que os manipuladores de exceções personalizados funcionem corretamente.
 
 Para isso, você usa `app.add_middleware()` (como no exemplo para CORS).
 
 ```Python
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from unicorn import UnicornMiddleware
 
-app = ReadyAPI()
+app = readyapi()
 
 app.add_middleware(UnicornMiddleware, some_config="rainbow")
 ```
@@ -41,13 +41,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 ## Middlewares Integrados
 
-**ReadyAPI** inclui vários middlewares para casos de uso comuns, veremos a seguir como usá-los.
+**readyapi** inclui vários middlewares para casos de uso comuns, veremos a seguir como usá-los.
 
 /// note | Detalhes Técnicos
 
 Para o próximo exemplo, você também poderia usar `from starlette.middleware.something import SomethingMiddleware`.
 
-**ReadyAPI** fornece vários middlewares em `readyapi.middleware` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria dos middlewares disponíveis vem diretamente do Starlette.
+**readyapi** fornece vários middlewares em `readyapi.middleware` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria dos middlewares disponíveis vem diretamente do Starlette.
 
 ///
 

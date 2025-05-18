@@ -8,6 +8,6 @@ Se algo parecer interessante e útil para o seu projeto, vá em frente e dê uma
 
 /// tip
 
-Se você deseja **aprender ReadyAPI** de forma estruturada (recomendado), leia capítulo por capítulo [Tutorial - Guia de Usuário](../tutorial/index.md){.internal-link target=_blank} em vez disso.
+Se você deseja **aprender readyapi** de forma estruturada (recomendado), leia capítulo por capítulo [Tutorial - Guia de Usuário](../tutorial/index.md){.internal-link target=_blank} em vez disso.
 
 ///

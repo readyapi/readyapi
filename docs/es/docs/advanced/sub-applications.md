@@ -1,14 +1,14 @@
 # Sub Aplicaciones - Mounts
 
-Si necesitas tener dos aplicaciones de **ReadyAPI** independientes, cada una con su propio OpenAPI independiente y su propia interfaz de docs, puedes tener una aplicación principal y "montar" una (o más) sub-aplicación(es).
+Si necesitas tener dos aplicaciones de **readyapi** independientes, cada una con su propio OpenAPI independiente y su propia interfaz de docs, puedes tener una aplicación principal y "montar" una (o más) sub-aplicación(es).
 
-## Montar una aplicación **ReadyAPI**
+## Montar una aplicación **readyapi**
 
 "Montar" significa añadir una aplicación completamente "independiente" en un path específico, que luego se encarga de manejar todo bajo ese path, con las _path operations_ declaradas en esa sub-aplicación.
 
 ### Aplicación de nivel superior
 
-Primero, crea la aplicación principal de nivel superior de **ReadyAPI**, y sus *path operations*:
+Primero, crea la aplicación principal de nivel superior de **readyapi**, y sus *path operations*:
 
 {* ../../docs_src/sub_applications/tutorial001.py hl[3, 6:8] *}
 
@@ -16,7 +16,7 @@ Primero, crea la aplicación principal de nivel superior de **ReadyAPI**, y sus 
 
 Luego, crea tu sub-aplicación, y sus *path operations*.
 
-Esta sub-aplicación es solo otra aplicación estándar de ReadyAPI, pero es la que se "montará":
+Esta sub-aplicación es solo otra aplicación estándar de readyapi, pero es la que se "montará":
 
 {* ../../docs_src/sub_applications/tutorial001.py hl[11, 14:16] *}
 
@@ -58,10 +58,10 @@ Si intentas interactuar con cualquiera de las dos interfaces de usuario, funcion
 
 ### Detalles Técnicos: `root_path`
 
-Cuando montas una sub-aplicación como se describe arriba, ReadyAPI se encargará de comunicar el path de montaje para la sub-aplicación usando un mecanismo de la especificación ASGI llamado `root_path`.
+Cuando montas una sub-aplicación como se describe arriba, readyapi se encargará de comunicar el path de montaje para la sub-aplicación usando un mecanismo de la especificación ASGI llamado `root_path`.
 
 De esa manera, la sub-aplicación sabrá usar ese prefijo de path para la interfaz de documentación.
 
-Y la sub-aplicación también podría tener sus propias sub-aplicaciones montadas y todo funcionaría correctamente, porque ReadyAPI maneja todos estos `root_path`s automáticamente.
+Y la sub-aplicación también podría tener sus propias sub-aplicaciones montadas y todo funcionaría correctamente, porque readyapi maneja todos estos `root_path`s automáticamente.
 
 Aprenderás más sobre el `root_path` y cómo usarlo explícitamente en la sección sobre [Detrás de un Proxy](behind-a-proxy.md){.internal-link target=_blank}.

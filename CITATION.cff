@@ -8,8 +8,8 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - given-names: Md
-    family-names: Sulaiman
+  - given-names: KhulnaSoft
+    family-names: Ltd
     email: info@khulnasoft.com
 identifiers:
 repository-code: 'https://github.com/readyapi/readyapi'

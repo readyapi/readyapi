@@ -48,9 +48,9 @@ Se você simplesmente não sabe, use apenas `def`.
 
 ---
 
-**Note**: Você pode misturar `def` e `async def` nas suas *funções de operação de rota* tanto quanto necessário e definir cada função usando a melhor opção para você. ReadyAPI irá fazer a coisa certa com elas.
+**Note**: Você pode misturar `def` e `async def` nas suas *funções de operação de rota* tanto quanto necessário e definir cada função usando a melhor opção para você. readyapi irá fazer a coisa certa com elas.
 
-De qualquer forma, em ambos os casos acima, ReadyAPI irá trabalhar assincronamente e ser extremamente rápido.
+De qualquer forma, em ambos os casos acima, readyapi irá trabalhar assincronamente e ser extremamente rápido.
 
 Seguindo os passos acima, ele será capaz de fazer algumas otimizações de performance.
 
@@ -213,7 +213,7 @@ Mesmo embora a especificação principal para web assíncrono em Python (ASGI) f
 
 Esse tipo de assincronicidade é o que fez NodeJS popular (embora NodeJS não seja paralelo) e que essa seja a força do Go como uma linguagem de programa.
 
-E esse é o mesmo nível de performance que você tem com o **ReadyAPI**.
+E esse é o mesmo nível de performance que você tem com o **readyapi**.
 
 E como você pode ter paralelismo e sincronicidade ao mesmo tempo, você tem uma maior performance do que a maioria dos frameworks NodeJS testados e lado a lado com Go, que é uma linguagem compilada próxima ao C <a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">(tudo graças ao Starlette)</a>.
 
@@ -258,11 +258,11 @@ Por exemplo:
 
 ### Concorrência + Paralelismo: Web + Machine learning
 
-Com **ReadyAPI** você pode levar a vantagem da concorrência que é muito comum para desenvolvimento web (o mesmo atrativo de NodeJS).
+Com **readyapi** você pode levar a vantagem da concorrência que é muito comum para desenvolvimento web (o mesmo atrativo de NodeJS).
 
 Mas você também pode explorar os benefícios do paralelismo e multiprocessamento (tendo múltiplos processadores rodando em paralelo) para trabalhos pesados que geram **limite de CPU** como aqueles em sistemas de Machine Learning.
 
-Isso, mais o simples fato que Python é a principal linguagem para **Data Science**, Machine Learning e especialmente Deep Learning, faz do ReadyAPI uma ótima escolha para APIs web e aplicações com Data Science / Machine Learning (entre muitas outras).
+Isso, mais o simples fato que Python é a principal linguagem para **Data Science**, Machine Learning e especialmente Deep Learning, faz do readyapi uma ótima escolha para APIs web e aplicações com Data Science / Machine Learning (entre muitas outras).
 
 Para ver como alcançar esse paralelismo em produção veja a seção sobre [Deployment](deployment/index.md){.internal-link target=_blank}.
 
@@ -323,9 +323,9 @@ Mas ao mesmo tempo, funções definidas com `async def` tem que ser aguardadas. 
 
 Então, sobre o ovo e a galinha, como você chama a primeira função async?
 
-Se você estivar trabalhando com **ReadyAPI** não terá que se preocupar com isso, porquê essa "primeira" função será a sua *função de operação de rota*, e o ReadyAPI saberá como fazer a coisa certa.
+Se você estivar trabalhando com **readyapi** não terá que se preocupar com isso, porquê essa "primeira" função será a sua *função de operação de rota*, e o readyapi saberá como fazer a coisa certa.
 
-Mas se você quiser usar `async` / `await` sem ReadyAPI, <a href="https://docs.python.org/3/library/asyncio-task.html#coroutine" class="external-link" target="_blank">verifique a documentação oficial Python</a>.
+Mas se você quiser usar `async` / `await` sem readyapi, <a href="https://docs.python.org/3/library/asyncio-task.html#coroutine" class="external-link" target="_blank">verifique a documentação oficial Python</a>.
 
 ### Outras formas de código assíncrono
 
@@ -355,7 +355,7 @@ Vamos ver a mesma frase com o conteúdo cima:
 
 Isso pode fazer mais sentido agora.
 
-Tudo isso é o que deixa o ReadyAPI poderoso (através do Starlette) e que o faz ter uma performance impressionante.
+Tudo isso é o que deixa o readyapi poderoso (através do Starlette) e que o faz ter uma performance impressionante.
 
 ## Detalhes muito técnicos
 
@@ -363,9 +363,9 @@ Tudo isso é o que deixa o ReadyAPI poderoso (através do Starlette) e que o faz
 
 Você pode provavelmente pular isso.
 
-Esses são detalhes muito técnicos de como **ReadyAPI** funciona por baixo do capô.
+Esses são detalhes muito técnicos de como **readyapi** funciona por baixo do capô.
 
-Se você tem algum conhecimento técnico (corrotinas, threads, blocking etc) e está curioso sobre como o ReadyAPI controla o `async def` vs normal `def`, vá em frente.
+Se você tem algum conhecimento técnico (corrotinas, threads, blocking etc) e está curioso sobre como o readyapi controla o `async def` vs normal `def`, vá em frente.
 
 ///
 
@@ -373,9 +373,9 @@ Se você tem algum conhecimento técnico (corrotinas, threads, blocking etc) e e
 
 Quando você declara uma *função de operação de rota* com `def` normal ao invés de `async def`, ela é rodada em uma threadpool externa que então é aguardada, ao invés de ser chamada diretamente (ela poderia bloquear o servidor).
 
-Se você está chegando de outro framework assíncrono que não faz o trabalho descrito acima e você está acostumado a definir triviais *funções de operação de rota* com simples `def` para ter um mínimo ganho de performance (cerca de 100 nanosegundos), por favor observe que no **ReadyAPI** o efeito pode ser bem o oposto. Nesses casos, é melhor usar `async def` a menos que suas *funções de operação de rota* utilizem código que performem bloqueamento <abbr title="Input/Output: disco lendo ou escrevendo, comunicações de rede.">IO</abbr>.
+Se você está chegando de outro framework assíncrono que não faz o trabalho descrito acima e você está acostumado a definir triviais *funções de operação de rota* com simples `def` para ter um mínimo ganho de performance (cerca de 100 nanosegundos), por favor observe que no **readyapi** o efeito pode ser bem o oposto. Nesses casos, é melhor usar `async def` a menos que suas *funções de operação de rota* utilizem código que performem bloqueamento <abbr title="Input/Output: disco lendo ou escrevendo, comunicações de rede.">IO</abbr>.
 
-Ainda, em ambas as situações, as chances são que o **ReadyAPI** será [ainda mais rápido](index.md#performance){.internal-link target=_blank} do que (ou ao menos comparável a) seus frameworks antecessores.
+Ainda, em ambas as situações, as chances são que o **readyapi** será [ainda mais rápido](index.md#performance){.internal-link target=_blank} do que (ou ao menos comparável a) seus frameworks antecessores.
 
 ### Dependências
 
@@ -387,9 +387,9 @@ Você pode ter múltiplas dependências e sub-dependências exigindo uma a outra
 
 ### Outras funções de utilidade
 
-Qualquer outra função de utilidade que você chame diretamente pode ser criada com `def` normal ou `async def` e o ReadyAPI não irá afetar o modo como você a chama.
+Qualquer outra função de utilidade que você chame diretamente pode ser criada com `def` normal ou `async def` e o readyapi não irá afetar o modo como você a chama.
 
-Isso está em contraste às funções que o ReadyAPI chama para você: *funções de operação de rota* e dependências.
+Isso está em contraste às funções que o readyapi chama para você: *funções de operação de rota* e dependências.
 
 Se sua função de utilidade é uma função normal com `def`, ela será chamada diretamente (como você a escreve no código), não em uma threadpool, se a função é criada com `async def` então você deve esperar por essa função quando você chamá-la no seu código.
 

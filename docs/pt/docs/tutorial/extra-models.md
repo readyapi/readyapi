@@ -140,7 +140,7 @@ As funções adicionais de suporte são apenas para demonstração de um fluxo p
 
 ## Reduzir duplicação
 
-Reduzir a duplicação de código é uma das ideias principais no **ReadyAPI**.
+Reduzir a duplicação de código é uma das ideias principais no **readyapi**.
 
 A duplicação de código aumenta as chances de bugs, problemas de segurança, problemas de desincronização de código (quando você atualiza em um lugar, mas não em outros), etc.
 

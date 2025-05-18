@@ -1,6 +1,6 @@
 # Clients generieren
 
-Da **ReadyAPI** auf der OpenAPI-Spezifikation basiert, erhalten Sie automatische Kompatibilität mit vielen Tools, einschließlich der automatischen API-Dokumentation (bereitgestellt von Swagger UI).
+Da **readyapi** auf der OpenAPI-Spezifikation basiert, erhalten Sie automatische Kompatibilität mit vielen Tools, einschließlich der automatischen API-Dokumentation (bereitgestellt von Swagger UI).
 
 Ein besonderer Vorteil, der nicht unbedingt offensichtlich ist, besteht darin, dass Sie für Ihre API **Clients generieren** können (manchmal auch <abbr title="Software Development Kits">**SDKs**</abbr> genannt), für viele verschiedene **Programmiersprachen**.
 
@@ -14,11 +14,11 @@ Wenn Sie ein **Frontend** erstellen, ist <a href="https://github.com/hey-api/ope
 
 ## Client- und SDK-Generatoren – Sponsor
 
-Es gibt auch einige **vom Unternehmen entwickelte** Client- und SDK-Generatoren, die auf OpenAPI (ReadyAPI) basieren. In einigen Fällen können diese Ihnen **weitere Funktionalität** zusätzlich zu qualitativ hochwertigen generierten SDKs/Clients bieten.
+Es gibt auch einige **vom Unternehmen entwickelte** Client- und SDK-Generatoren, die auf OpenAPI (readyapi) basieren. In einigen Fällen können diese Ihnen **weitere Funktionalität** zusätzlich zu qualitativ hochwertigen generierten SDKs/Clients bieten.
 
-Einige von diesen ✨ [**sponsern ReadyAPI**](../help-readyapi.md#den-autor-sponsern){.internal-link target=_blank} ✨, das gewährleistet die kontinuierliche und gesunde **Entwicklung** von ReadyAPI und seinem **Ökosystem**.
+Einige von diesen ✨ [**sponsern readyapi**](../help-readyapi.md#den-autor-sponsern){.internal-link target=_blank} ✨, das gewährleistet die kontinuierliche und gesunde **Entwicklung** von readyapi und seinem **Ökosystem**.
 
-Und es zeigt deren wahres Engagement für ReadyAPI und seine **Community** (Sie), da diese Ihnen nicht nur einen **guten Service** bieten möchten, sondern auch sicherstellen möchten, dass Sie über ein **gutes und gesundes Framework** verfügen, ReadyAPI. 🙇
+Und es zeigt deren wahres Engagement für readyapi und seine **Community** (Sie), da diese Ihnen nicht nur einen **guten Service** bieten möchten, sondern auch sicherstellen möchten, dass Sie über ein **gutes und gesundes Framework** verfügen, readyapi. 🙇
 
 Beispielsweise könnten Sie <a href="https://speakeasy.com/?utm_source=readyapi+repo&utm_medium=github+sponsorship" class="external-link" target="_blank">Speakeasy</a> ausprobieren.
 
@@ -26,7 +26,7 @@ Es gibt auch mehrere andere Unternehmen, welche ähnliche Dienste anbieten und d
 
 ## Einen TypeScript-Frontend-Client generieren
 
-Beginnen wir mit einer einfachen ReadyAPI-Anwendung:
+Beginnen wir mit einer einfachen readyapi-Anwendung:
 
 {* ../../docs_src/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
 
@@ -115,7 +115,7 @@ Sie erhalten außerdem automatische Vervollständigung für die zu sendende Payl
 
 /// tip | Tipp
 
-Beachten Sie die automatische Vervollständigung für `name` und `price`, welche in der ReadyAPI-Anwendung im `Item`-Modell definiert wurden.
+Beachten Sie die automatische Vervollständigung für `name` und `price`, welche in der readyapi-Anwendung im `Item`-Modell definiert wurden.
 
 ///
 
@@ -127,9 +127,9 @@ Das Response-Objekt hat auch automatische Vervollständigung:
 
 <img src="/img/tutorial/generate-clients/image05.png">
 
-## ReadyAPI-Anwendung mit Tags
+## readyapi-Anwendung mit Tags
 
-In vielen Fällen wird Ihre ReadyAPI-Anwendung größer sein und Sie werden wahrscheinlich Tags verwenden, um verschiedene Gruppen von *Pfadoperationen* zu separieren.
+In vielen Fällen wird Ihre readyapi-Anwendung größer sein und Sie werden wahrscheinlich Tags verwenden, um verschiedene Gruppen von *Pfadoperationen* zu separieren.
 
 Beispielsweise könnten Sie einen Abschnitt für **Items (Artikel)** und einen weiteren Abschnitt für **Users (Benutzer)** haben, und diese könnten durch Tags getrennt sein:
 
@@ -137,7 +137,7 @@ Beispielsweise könnten Sie einen Abschnitt für **Items (Artikel)** und einen w
 
 ### Einen TypeScript-Client mit Tags generieren
 
-Wenn Sie unter Verwendung von Tags einen Client für eine ReadyAPI-Anwendung generieren, wird normalerweise auch der Client-Code anhand der Tags getrennt.
+Wenn Sie unter Verwendung von Tags einen Client für eine readyapi-Anwendung generieren, wird normalerweise auch der Client-Code anhand der Tags getrennt.
 
 Auf diese Weise können Sie die Dinge für den Client-Code richtig ordnen und gruppieren:
 
@@ -158,7 +158,7 @@ ItemsService.createItemItemsPost({name: "Plumbus", price: 5})
 
 ... das liegt daran, dass der Client-Generator für jede *Pfadoperation* die OpenAPI-interne **Operation-ID** verwendet.
 
-OpenAPI erfordert, dass jede Operation-ID innerhalb aller *Pfadoperationen* eindeutig ist. Daher verwendet ReadyAPI den **Funktionsnamen**, den **Pfad** und die **HTTP-Methode/-Operation**, um diese Operation-ID zu generieren. Denn so kann sichergestellt werden, dass die Operation-IDs eindeutig sind.
+OpenAPI erfordert, dass jede Operation-ID innerhalb aller *Pfadoperationen* eindeutig ist. Daher verwendet readyapi den **Funktionsnamen**, den **Pfad** und die **HTTP-Methode/-Operation**, um diese Operation-ID zu generieren. Denn so kann sichergestellt werden, dass die Operation-IDs eindeutig sind.
 
 Aber ich zeige Ihnen als nächstes, wie Sie das verbessern können. 🤓
 
@@ -172,13 +172,13 @@ Sie könnten beispielsweise sicherstellen, dass jede *Pfadoperation* einen Tag h
 
 ### Funktion zum Generieren einer eindeutigen ID erstellen
 
-ReadyAPI verwendet eine **eindeutige ID** für jede *Pfadoperation*, diese wird für die **Operation-ID** und auch für die Namen aller benötigten benutzerdefinierten Modelle für Requests oder Responses verwendet.
+readyapi verwendet eine **eindeutige ID** für jede *Pfadoperation*, diese wird für die **Operation-ID** und auch für die Namen aller benötigten benutzerdefinierten Modelle für Requests oder Responses verwendet.
 
 Sie können diese Funktion anpassen. Sie nimmt eine `APIRoute` und gibt einen String zurück.
 
 Hier verwendet sie beispielsweise den ersten Tag (Sie werden wahrscheinlich nur einen Tag haben) und den Namen der *Pfadoperation* (den Funktionsnamen).
 
-Anschließend können Sie diese benutzerdefinierte Funktion als Parameter `generate_unique_id_function` an **ReadyAPI** übergeben:
+Anschließend können Sie diese benutzerdefinierte Funktion als Parameter `generate_unique_id_function` an **readyapi** übergeben:
 
 {* ../../docs_src/generate_clients/tutorial003_py39.py hl[6:7,10] *}
 

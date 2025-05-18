@@ -88,4 +88,4 @@ X-Token: bar
 
 使用 `Header` 声明请求头的方式与 `Query`、`Path` 、`Cookie` 相同。
 
-不用担心变量中的下划线，**ReadyAPI** 可以自动转换。
+不用担心变量中的下划线，**readyapi** 可以自动转换。

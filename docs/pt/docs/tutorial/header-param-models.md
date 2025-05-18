@@ -6,7 +6,7 @@ Isso vai lhe permitir **reusar o modelo** em **múltiplos lugares** e também de
 
 /// note | Nota
 
-Isso é possível desde a versão `0.115.0` do ReadyAPI. 🤓
+Isso é possível desde a versão `0.115.0` do readyapi. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declare os **parâmetros de cabeçalho** que você precisa em um **modelo do Pyd
 
 {* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
-O **ReadyAPI** irá **extrair** os dados de **cada campo** a partir dos **cabeçalhos** da requisição e te retornará o modelo do Pydantic que você definiu.
+O **readyapi** irá **extrair** os dados de **cada campo** a partir dos **cabeçalhos** da requisição e te retornará o modelo do Pydantic que você definiu.
 
 ### Checando a documentação
 
@@ -53,4 +53,4 @@ Por exemplo, se o cliente tentar enviar um cabeçalho `tool` com o valor `plumbu
 
 ## Resumo
 
-Você pode utilizar **modelos do Pydantic** para declarar **cabeçalhos** no **ReadyAPI**. 😎
+Você pode utilizar **modelos do Pydantic** para declarar **cabeçalhos** no **readyapi**. 😎

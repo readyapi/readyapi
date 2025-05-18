@@ -1,6 +1,6 @@
 # 사용자 정의 응답 - HTML, Stream, 파일, 기타
 
-기본적으로, **ReadyAPI** 응답을 `JSONResponse`를 사용하여 반환합니다.
+기본적으로, **readyapi** 응답을 `JSONResponse`를 사용하여 반환합니다.
 
 이를 재정의 하려면 [응답을 직접 반환하기](response-directly.md){.internal-link target=_blank}에서 본 것처럼 `Response`를 직접 반환하면 됩니다.
 
@@ -14,7 +14,7 @@
 
 /// note | 참고
 
-미디어 타입이 없는 응답 클래스를 사용하는 경우, ReadyAPI는 응답에 내용이 없을 것으로 예상하므로 생성된 OpenAPI 문서에서 응답 형식을 문서화하지 않습니다.
+미디어 타입이 없는 응답 클래스를 사용하는 경우, readyapi는 응답에 내용이 없을 것으로 예상하므로 생성된 OpenAPI 문서에서 응답 형식을 문서화하지 않습니다.
 
 ///
 
@@ -26,9 +26,9 @@
 
 대규모 응답의 경우, 딕셔너리를 반환하는 것보다 `Response`를 반환하는 것이 훨씬 빠릅니다.
 
-이유는 기본적으로, ReadyAPI가 내부의 모든 항목을 검사하고 JSON으로 직렬화할 수 있는지 확인하기 때문입니다. 이는 사용자 안내서에서 설명된 [JSON 호환 가능 인코더](../tutorial/encoder.md){.internal-link target=_blank}를 사용하는 방식과 동일합니다. 이를 통해 데이터베이스 모델과 같은 **임의의 객체**를 반환할 수 있습니다.
+이유는 기본적으로, readyapi가 내부의 모든 항목을 검사하고 JSON으로 직렬화할 수 있는지 확인하기 때문입니다. 이는 사용자 안내서에서 설명된 [JSON 호환 가능 인코더](../tutorial/encoder.md){.internal-link target=_blank}를 사용하는 방식과 동일합니다. 이를 통해 데이터베이스 모델과 같은 **임의의 객체**를 반환할 수 있습니다.
 
-하지만 반환하는 내용이 **JSON으로 직렬화 가능**하다고 확신하는 경우, 해당 내용을 응답 클래스에 직접 전달할 수 있으며, ReadyAPI가 반환 내용을 `jsonable_encoder`를 통해 처리한 뒤 응답 클래스에 전달하는 오버헤드를 피할 수 있습니다.
+하지만 반환하는 내용이 **JSON으로 직렬화 가능**하다고 확신하는 경우, 해당 내용을 응답 클래스에 직접 전달할 수 있으며, readyapi가 반환 내용을 `jsonable_encoder`를 통해 처리한 뒤 응답 클래스에 전달하는 오버헤드를 피할 수 있습니다.
 
 {* ../../docs_src/custom_response/tutorial001b.py hl[2,7] *}
 
@@ -44,13 +44,13 @@
 
 /// tip | 팁
 
-`ORJSONResponse`는 ReadyAPI에서만 사용할 수 있고 Starlette에서는 사용할 수 없습니다.
+`ORJSONResponse`는 readyapi에서만 사용할 수 있고 Starlette에서는 사용할 수 없습니다.
 
 ///
 
 ## HTML 응답
 
-**ReadyAPI**에서 HTML 응답을 직접 반환하려면 `HTMLResponse`를 사용하세요.
+**readyapi**에서 HTML 응답을 직접 반환하려면 `HTMLResponse`를 사용하세요.
 
 * `HTMLResponse`를 임포트 합니다.
 * *경로 작업 데코레이터*의 `response_class` 매개변수로 `HTMLResponse`를 전달합니다.
@@ -101,9 +101,9 @@
 
 이 예제에서, `generate_html_response()` 함수는 HTML을 `str`로 반환하는 대신 이미 `Response`를 생성하고 반환합니다.
 
-`generate_html_response()`를 호출한 결과를 반환함으로써, 기본적인 **ReadyAPI** 기본 동작을 재정의 하는 `Response`를 이미 반환하고 있습니다.
+`generate_html_response()`를 호출한 결과를 반환함으로써, 기본적인 **readyapi** 기본 동작을 재정의 하는 `Response`를 이미 반환하고 있습니다.
 
-하지만 `response_class`에 `HTMLResponse`를 함께 전달했기 때문에, ReadyAPI는 이를 OpenAPI 및 대화형 문서에서 `text/html`로 HTML을 문서화 하는 방법을 알 수 있습니다.
+하지만 `response_class`에 `HTMLResponse`를 함께 전달했기 때문에, readyapi는 이를 OpenAPI 및 대화형 문서에서 `text/html`로 HTML을 문서화 하는 방법을 알 수 있습니다.
 
 <img src="/img/tutorial/custom-response/image01.png">
 
@@ -117,7 +117,7 @@
 
 `from starlette.responses import HTMLResponse`를 사용할 수도 있습니다.
 
-**ReadyAPI**는 개발자인 여러분의 편의를 위해 `starlette.responses`를 `readyapi.responses`로 제공 하지만, 대부분의 사용 가능한 응답은 Starlette에서 직접 가져옵니다.
+**readyapi**는 개발자인 여러분의 편의를 위해 `starlette.responses`를 `readyapi.responses`로 제공 하지만, 대부분의 사용 가능한 응답은 Starlette에서 직접 가져옵니다.
 
 ///
 
@@ -134,7 +134,7 @@
 * `headers` - 문자열로 이루어진 `dict`.
 * `media_type` - 미디어 타입을 나타내는 `str` 예: `"text/html"`.
 
-ReadyAPI (실제로는 Starlette)가 자동으로 `Content-Length` 헤더를 포함시킵니다. 또한 `media_type`에 기반하여 `Content-Type` 헤더를 포함하며, 텍스트 타입의 경우 문자 집합을 추가 합니다.
+readyapi (실제로는 Starlette)가 자동으로 `Content-Length` 헤더를 포함시킵니다. 또한 `media_type`에 기반하여 `Content-Type` 헤더를 포함하며, 텍스트 타입의 경우 문자 집합을 추가 합니다.
 
 {* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
 
@@ -152,7 +152,7 @@ ReadyAPI (실제로는 Starlette)가 자동으로 `Content-Length` 헤더를 포
 
 데이터를 받아 `application/json`으로 인코딩된 응답을 반환합니다.
 
-이는 위에서 설명했듯이 **ReadyAPI**에서 기본적으로 사용되는 응답 형식입니다.
+이는 위에서 설명했듯이 **readyapi**에서 기본적으로 사용되는 응답 형식입니다.
 
 ### `ORJSONResponse`
 
@@ -294,11 +294,11 @@ HTTP 리디렉션 응답을 반환합니다. 기본적으로 상태 코드는 30
 
 ## 기본 응답 클래스
 
-**ReadyAPI** 클래스 객체 또는 `APIRouter`를 생성할 때 기본적으로 사용할 응답 클래스를 지정할 수 있습니다.
+**readyapi** 클래스 객체 또는 `APIRouter`를 생성할 때 기본적으로 사용할 응답 클래스를 지정할 수 있습니다.
 
 이를 정의하는 매개변수는 `default_response_class`입니다.
 
-아래 예제에서 **ReadyAPI**는 모든 경로 작업에서 기본적으로 `JSONResponse` 대신 `ORJSONResponse`를 사용합니다.
+아래 예제에서 **readyapi**는 모든 경로 작업에서 기본적으로 `JSONResponse` 대신 `ORJSONResponse`를 사용합니다.
 
 {* ../../docs_src/custom_response/tutorial010.py hl[2,4] *}
 

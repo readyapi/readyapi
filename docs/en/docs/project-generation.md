@@ -1,16 +1,16 @@
-# Full Stack ReadyAPI Template
+# Full Stack readyapi Template
 
 Templates, while typically come with a specific setup, are designed to be flexible and customizable. This allows you to modify and adapt them to your project's requirements, making them an excellent starting point. 🏁
 
 You can use this template to get started, as it includes a lot of the initial set up, security, database and some API endpoints already done for you.
 
-GitHub Repository: <a href="https://github.com/khulnasoft/full-stack-readyapi-template" class="external-link" target="_blank">Full Stack ReadyAPI Template</a>
+GitHub Repository: <a href="https://github.com/khulnasoft/full-stack-readyapi-template" class="external-link" target="_blank">Full Stack readyapi Template</a>
 
-## Full Stack ReadyAPI Template - Technology Stack and Features
+## Full Stack readyapi Template - Technology Stack and Features
 
-- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com) for the Python backend API.
+- ⚡ [**readyapi**](https://readyapi.khulnasoft.com) for the Python backend API.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com) for the Python SQL database interactions (ORM).
-    - 🔍 [Pydantic](https://docs.pydantic.dev), used by ReadyAPI, for the data validation and settings management.
+    - 🔍 [Pydantic](https://docs.pydantic.dev), used by readyapi, for the data validation and settings management.
     - 💾 [PostgreSQL](https://www.postgresql.org) as the SQL database.
 - 🚀 [React](https://react.dev) for the frontend.
     - 💃 Using TypeScript, hooks, [Vite](https://vitejs.dev), and other parts of a modern frontend stack.

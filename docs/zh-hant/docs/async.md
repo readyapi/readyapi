@@ -49,9 +49,9 @@ def results():
 
 ---
 
-**注意**：你可以在*路徑操作函式*中混合使用 `def` 和 `async def` ，並使用最適合你需求的方式來定義每個函式。ReadyAPI 會幫你做正確的處理。
+**注意**：你可以在*路徑操作函式*中混合使用 `def` 和 `async def` ，並使用最適合你需求的方式來定義每個函式。readyapi 會幫你做正確的處理。
 
-無論如何，在上述哪種情況下，ReadyAPI 仍將以非同步方式運行，並且速度非常快。
+無論如何，在上述哪種情況下，readyapi 仍將以非同步方式運行，並且速度非常快。
 
 但透過遵循上述步驟，它將能進行一些效能最佳化。
 
@@ -249,7 +249,7 @@ def results():
 
 這種類型的非同步性正是 NodeJS 成功的原因（儘管 NodeJS 不是平行的），這也是 Go 語言作為程式語言的一個強大優勢。
 
-這與 **ReadyAPI** 所能提供的性能水平相同。
+這與 **readyapi** 所能提供的性能水平相同。
 
 你可以同時利用並行性和平行性，進一步提升效能，這比大多數已測試的 NodeJS 框架都更快，並且與 Go 語言相當，而 Go 是一種更接近 C 的編譯語言（<a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">感謝 Starlette</a>）。
 
@@ -292,11 +292,11 @@ def results():
 
 ### 並行 + 平行: Web + 機器學習
 
-使用 **ReadyAPI**，你可以利用並行的優勢，這在 Web 開發中非常常見（這也是 NodeJS 的最大吸引力）。
+使用 **readyapi**，你可以利用並行的優勢，這在 Web 開發中非常常見（這也是 NodeJS 的最大吸引力）。
 
 但你也可以利用平行與多行程 (multiprocessing)（讓多個行程同時運行） 的優勢來處理機器學習系統中的 **CPU 密集型**工作。
 
-這一點，再加上 Python 是 **資料科學**、機器學習，尤其是深度學習的主要語言，讓 **ReadyAPI** 成為資料科學/機器學習 Web API 和應用程式（以及許多其他應用程式）的絕佳選擇。
+這一點，再加上 Python 是 **資料科學**、機器學習，尤其是深度學習的主要語言，讓 **readyapi** 成為資料科學/機器學習 Web API 和應用程式（以及許多其他應用程式）的絕佳選擇。
 
 想了解如何在生產環境中實現這種平行性，請參見 [部屬](deployment/index.md){.internal-link target=_blank}。
 
@@ -357,17 +357,17 @@ async def read_burgers():
 
 那麼，這就像「先有雞還是先有蛋」的問題，要如何呼叫第一個 `async` 函式呢？
 
-如果你使用 ReadyAPI，無需擔心這個問題，因為「第一個」函式將是你的*路徑操作函式*，ReadyAPI 會知道如何正確處理這個問題。
+如果你使用 readyapi，無需擔心這個問題，因為「第一個」函式將是你的*路徑操作函式*，readyapi 會知道如何正確處理這個問題。
 
-但如果你想在沒有 ReadyAPI 的情況下使用 `async` / `await`，你也可以這樣做。
+但如果你想在沒有 readyapi 的情況下使用 `async` / `await`，你也可以這樣做。
 
 ### 編寫自己的非同步程式碼
 
-Starlette （和 **ReadyAPI**） 是基於 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 實作的，這使得它們與 Python 標準函式庫相容 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 和 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>。
+Starlette （和 **readyapi**） 是基於 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 實作的，這使得它們與 Python 標準函式庫相容 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 和 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>。
 
 特別是，你可以直接使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 來處理更複雜的並行使用案例，這些案例需要你在自己的程式碼中使用更高階的模式。
 
-即使你不使用 **ReadyAPI**，你也可以使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 來撰寫自己的非同步應用程式，並獲得高相容性及一些好處（例如結構化並行）。
+即使你不使用 **readyapi**，你也可以使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 來撰寫自己的非同步應用程式，並獲得高相容性及一些好處（例如結構化並行）。
 
 ### 其他形式的非同步程式碼
 
@@ -397,7 +397,7 @@ Starlette （和 **ReadyAPI**） 是基於 <a href="https://anyio.readthedocs.io
 
 現在應該能明白其含意了。✨
 
-這些就是驅動 ReadyAPI（通過 Starlette）運作的原理，也讓它擁有如此驚人的效能。
+這些就是驅動 readyapi（通過 Starlette）運作的原理，也讓它擁有如此驚人的效能。
 
 ## 非常技術性的細節
 
@@ -405,9 +405,9 @@ Starlette （和 **ReadyAPI**） 是基於 <a href="https://anyio.readthedocs.io
 
 你大概可以跳過這段。
 
-這裡是有關 ReadyAPI 內部技術細節。
+這裡是有關 readyapi 內部技術細節。
 
-如果你有相當多的技術背景（例如協程、執行緒、阻塞等），並且對 ReadyAPI 如何處理 `async def` 與常規 `def` 感到好奇，請繼續閱讀。
+如果你有相當多的技術背景（例如協程、執行緒、阻塞等），並且對 readyapi 如何處理 `async def` 與常規 `def` 感到好奇，請繼續閱讀。
 
 ///
 
@@ -415,9 +415,9 @@ Starlette （和 **ReadyAPI**） 是基於 <a href="https://anyio.readthedocs.io
 
 當你使用 `def` 而不是 `async def` 宣告*路徑操作函式*時，該函式會在外部的執行緒池（threadpool）中執行，然後等待結果，而不是直接呼叫（因為這樣會阻塞伺服器）。
 
-如果你來自於其他不以這種方式運作的非同步框架，而且你習慣於使用普通的 `def` 定義僅進行簡單計算的*路徑操作函式*，目的是獲得微小的性能增益（大約 100 奈秒），請注意，在 ReadyAPI 中，效果會完全相反。在這些情況下，最好使用 `async def`除非你的*路徑操作函式*執行阻塞的 <abbr title="輸入/輸出：磁碟讀寫或網路通訊">I/O</abbr> 的程式碼。
+如果你來自於其他不以這種方式運作的非同步框架，而且你習慣於使用普通的 `def` 定義僅進行簡單計算的*路徑操作函式*，目的是獲得微小的性能增益（大約 100 奈秒），請注意，在 readyapi 中，效果會完全相反。在這些情況下，最好使用 `async def`除非你的*路徑操作函式*執行阻塞的 <abbr title="輸入/輸出：磁碟讀寫或網路通訊">I/O</abbr> 的程式碼。
 
-不過，在這兩種情況下，**ReadyAPI** [仍然很快](index.md#_11){.internal-link target=_blank}至少與你之前的框架相當（或者更快）。
+不過，在這兩種情況下，**readyapi** [仍然很快](index.md#_11){.internal-link target=_blank}至少與你之前的框架相當（或者更快）。
 
 ### 依賴項(Dependencies)
 
@@ -429,9 +429,9 @@ Starlette （和 **ReadyAPI**） 是基於 <a href="https://anyio.readthedocs.io
 
 ### 其他輔助函式
 
-你可以直接呼叫任何使用 `def` 或 `async def` 建立的其他輔助函式，ReadyAPI 不會影響你呼叫它們的方式。
+你可以直接呼叫任何使用 `def` 或 `async def` 建立的其他輔助函式，readyapi 不會影響你呼叫它們的方式。
 
-這與 ReadyAPI 為你呼叫*路徑操作函式*和依賴項的邏輯有所不同。
+這與 readyapi 為你呼叫*路徑操作函式*和依賴項的邏輯有所不同。
 
 如果你的輔助函式是用 `def` 宣告的，它將會被直接呼叫（按照你在程式碼中撰寫的方式），而不是在執行緒池中。如果該函式是用 `async def` 宣告，那麼你在呼叫時應該使用 `await` 等待其結果。
 

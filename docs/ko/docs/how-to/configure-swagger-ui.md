@@ -2,11 +2,11 @@
 
 추가적인 <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">Swagger UI 매개변수</a>를 구성할 수 있습니다.
 
-구성을 하려면, `ReadyAPI()` 앱 객체를 생성할 때 또는 `get_swagger_ui_html()` 함수에 `swagger_ui_parameters` 인수를 전달하십시오.
+구성을 하려면, `readyapi()` 앱 객체를 생성할 때 또는 `get_swagger_ui_html()` 함수에 `swagger_ui_parameters` 인수를 전달하십시오.
 
 `swagger_ui_parameters`는 Swagger UI에 직접 전달된 구성을 포함하는 딕셔너리를 받습니다.
 
-ReadyAPI는 이 구성을 **JSON** 형식으로 변환하여 JavaScript와 호환되도록 합니다. 이는 Swagger UI에서 필요로 하는 형식입니다.
+readyapi는 이 구성을 **JSON** 형식으로 변환하여 JavaScript와 호환되도록 합니다. 이는 Swagger UI에서 필요로 하는 형식입니다.
 
 ## 구문 강조 비활성화
 
@@ -36,7 +36,7 @@ ReadyAPI는 이 구성을 **JSON** 형식으로 변환하여 JavaScript와 호�
 
 ## 기본 Swagger UI 매개변수 변경
 
-ReadyAPI는 대부분의 사용 사례에 적합한 몇 가지 기본 구성 매개변수를 포함하고 있습니다.
+readyapi는 대부분의 사용 사례에 적합한 몇 가지 기본 구성 매개변수를 포함하고 있습니다.
 
 기본 구성에는 다음이 포함됩니다:
 
@@ -56,7 +56,7 @@ ReadyAPI는 대부분의 사용 사례에 적합한 몇 가지 기본 구성 매
 
 Swagger UI는 **JavaScript 전용** 객체(예: JavaScript 함수)로 다른 구성을 허용하기도 합니다.
 
-ReadyAPI는 이러한 JavaScript 전용 `presets` 설정을 포함하고 있습니다:
+readyapi는 이러한 JavaScript 전용 `presets` 설정을 포함하고 있습니다:
 
 ```JavaScript
 presets: [

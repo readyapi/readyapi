@@ -17,7 +17,7 @@
 
 {* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
 
-**ReadyAPI** は、`BackgroundTasks` 型のオブジェクトを作成し、そのパラメーターに渡します。
+**readyapi** は、`BackgroundTasks` 型のオブジェクトを作成し、そのパラメーターに渡します。
 
 ## タスク関数の作成
 
@@ -25,7 +25,7 @@
 
 これは、パラメーターを受け取ることができる単なる標準的な関数です。
 
-これは `async def` または通常の `def` 関数であり、**ReadyAPI** はこれを正しく処理します。
+これは `async def` または通常の `def` 関数であり、**readyapi** はこれを正しく処理します。
 
 ここで、タスク関数はファイル書き込みを実行します (メール送信のシミュレーション)。
 
@@ -49,7 +49,7 @@
 
 `BackgroundTasks` の使用は依存性注入システムでも機能し、様々な階層 (*path operations 関数*、依存性 (依存可能性)、サブ依存性など) で `BackgroundTasks` 型のパラメーターを宣言できます。
 
-**ReadyAPI** は、それぞれの場合の処理​​方法と同じオブジェクトの再利用方法を知っているため、すべてのバックグラウンドタスクがマージされ、バックグラウンドで後で実行されます。
+**readyapi** は、それぞれの場合の処理​​方法と同じオブジェクトの再利用方法を知っているため、すべてのバックグラウンドタスクがマージされ、バックグラウンドで後で実行されます。
 
 {* ../../docs_src/background_tasks/tutorial002.py hl[13,15,22,25] *}
 
@@ -63,11 +63,11 @@
 
 `BackgroundTasks` クラスは、<a href="https://www.starlette.io/background/" class="external-link" target="_blank">`starlette.background`</a>から直接取得されます。
 
-これは、ReadyAPI に直接インポート/インクルードされるため、`readyapi` からインポートできる上に、`starlette.background`から別の `BackgroundTask` (末尾に `s` がない) を誤ってインポートすることを回避できます。
+これは、readyapi に直接インポート/インクルードされるため、`readyapi` からインポートできる上に、`starlette.background`から別の `BackgroundTask` (末尾に `s` がない) を誤ってインポートすることを回避できます。
 
-`BackgroundTasks`のみを使用することで (`BackgroundTask` ではなく)、`Request` オブジェクトを直接使用する場合と同様に、それを *path operations 関数* パラメーターとして使用し、**ReadyAPI** に残りの処理を任せることができます。
+`BackgroundTasks`のみを使用することで (`BackgroundTask` ではなく)、`Request` オブジェクトを直接使用する場合と同様に、それを *path operations 関数* パラメーターとして使用し、**readyapi** に残りの処理を任せることができます。
 
-それでも、ReadyAPI で `BackgroundTask` を単独で使用することは可能ですが、コード内でオブジェクトを作成し、それを含むStarlette `Response` を返す必要があります。
+それでも、readyapi で `BackgroundTask` を単独で使用することは可能ですが、コード内でオブジェクトを作成し、それを含むStarlette `Response` を返す必要があります。
 
 詳細については、<a href="https://www.starlette.io/background/" class="external-link" target="_blank">バックグラウンドタスクに関する Starlette の公式ドキュメント</a>を参照して下さい。
 
@@ -77,7 +77,7 @@
 
 これらは、より複雑な構成、RabbitMQ や Redis などのメッセージ/ジョブキューマネージャーを必要とする傾向がありますが、複数のプロセス、特に複数のサーバーでバックグラウンドタスクを実行できます。
 
-ただし、同じ **ReadyAPI** アプリから変数とオブジェクトにアクセスする必要がある場合、または小さなバックグラウンドタスク (電子メール通知の送信など) を実行する必要がある場合は、単に `BackgroundTasks` を使用できます。
+ただし、同じ **readyapi** アプリから変数とオブジェクトにアクセスする必要がある場合、または小さなバックグラウンドタスク (電子メール通知の送信など) を実行する必要がある場合は、単に `BackgroundTasks` を使用できます。
 
 ## まとめ
 

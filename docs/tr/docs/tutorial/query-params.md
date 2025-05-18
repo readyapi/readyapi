@@ -67,7 +67,7 @@ Bu durumda, `q` fonksiyon parametresi isteğe bağlı olacak ve varsayılan değ
 
 /// check | Ek bilgi
 
-Ayrıca, dikkatinizi çekerim ki; **ReadyAPI**, `item_id` parametresinin bir yol parametresi olduğunu ve `q` parametresinin yol değil bir sorgu parametresi olduğunu fark edecek kadar beceriklidir.
+Ayrıca, dikkatinizi çekerim ki; **readyapi**, `item_id` parametresinin bir yol parametresi olduğunu ve `q` parametresinin yol değil bir sorgu parametresi olduğunu fark edecek kadar beceriklidir.
 
 ///
 
@@ -112,7 +112,7 @@ veya adres, herhangi farklı bir harf varyasyonu içermesi durumuna rağmen (bü
 
 ## Çoklu Yol ve Sorgu Parametreleri
 
-**ReadyAPI** neyin ne olduğunu ayırt edebileceğinden dolayı aynı anda birden fazla yol ve sorgu parametresi tanımlayabilirsiniz.
+**readyapi** neyin ne olduğunu ayırt edebileceğinden dolayı aynı anda birden fazla yol ve sorgu parametresi tanımlayabilirsiniz.
 
 Ve parametreleri, herhangi bir sıraya koymanıza da gerek yoktur.
 

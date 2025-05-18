@@ -1,6 +1,6 @@
 # 中间件
 
-你可以向 **ReadyAPI** 应用添加中间件.
+你可以向 **readyapi** 应用添加中间件.
 
 "中间件"是一个函数,它在每个**请求**被特定的*路径操作*处理之前,以及在每个**响应**返回之前工作.
 
@@ -45,7 +45,7 @@
 
 你也可以使用 `from starlette.requests import Request`.
 
-**ReadyAPI** 为了开发者方便提供了该对象. 但其实它直接来自于 Starlette.
+**readyapi** 为了开发者方便提供了该对象. 但其实它直接来自于 Starlette.
 
 ///
 

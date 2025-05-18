@@ -24,7 +24,7 @@ Ese código de estado se usará en el response y se añadirá al esquema de Open
 
 También podrías usar `from starlette import status`.
 
-**ReadyAPI** ofrece el mismo `starlette.status` como `readyapi.status` solo por conveniencia para ti, el desarrollador. Pero viene directamente de Starlette.
+**readyapi** ofrece el mismo `starlette.status` como `readyapi.status` solo por conveniencia para ti, el desarrollador. Pero viene directamente de Starlette.
 
 ///
 
@@ -44,7 +44,7 @@ Si tienes una gran aplicación, podrías terminar acumulando **varias tags**, y 
 
 En estos casos, podría tener sentido almacenar las tags en un `Enum`.
 
-**ReadyAPI** soporta eso de la misma manera que con strings normales:
+**readyapi** soporta eso de la misma manera que con strings normales:
 
 {* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
@@ -56,7 +56,7 @@ Puedes añadir un `summary` y `description`:
 
 ## Descripción desde docstring
 
-Como las descripciones tienden a ser largas y cubrir múltiples líneas, puedes declarar la descripción de la *path operation* en la <abbr title="un string de múltiples líneas como la primera expresión dentro de una función (no asignada a ninguna variable) usada para documentación">docstring</abbr> de la función y **ReadyAPI** la leerá desde allí.
+Como las descripciones tienden a ser largas y cubrir múltiples líneas, puedes declarar la descripción de la *path operation* en la <abbr title="un string de múltiples líneas como la primera expresión dentro de una función (no asignada a ninguna variable) usada para documentación">docstring</abbr> de la función y **readyapi** la leerá desde allí.
 
 Puedes escribir <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> en el docstring, se interpretará y mostrará correctamente (teniendo en cuenta la indentación del docstring).
 
@@ -82,7 +82,7 @@ Ten en cuenta que `response_description` se refiere específicamente al response
 
 OpenAPI especifica que cada *path operation* requiere una descripción de response.
 
-Entonces, si no proporcionas una, **ReadyAPI** generará automáticamente una de "Response exitoso".
+Entonces, si no proporcionas una, **readyapi** generará automáticamente una de "Response exitoso".
 
 ///
 

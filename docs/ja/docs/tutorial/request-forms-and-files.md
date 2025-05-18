@@ -28,7 +28,7 @@
 
 *path operation*で複数の`File`と`Form`パラメータを宣言することができますが、JSONとして受け取ることを期待している`Body`フィールドを宣言することはできません。なぜなら、リクエストのボディは`application/json`の代わりに`multipart/form-data`を使ってエンコードされているからです。
 
-これは **ReadyAPI** の制限ではなく、HTTPプロトコルの一部です。
+これは **readyapi** の制限ではなく、HTTPプロトコルの一部です。
 
 ///
 

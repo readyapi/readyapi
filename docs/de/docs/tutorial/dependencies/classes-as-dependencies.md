@@ -59,11 +59,11 @@ Und um `fluffy` zu erzeugen, rufen Sie `Cat` auf.
 
 Eine Python-Klasse ist also auch ein **Callable**.
 
-Darum können Sie in **ReadyAPI** auch eine Python-Klasse als Abhängigkeit verwenden.
+Darum können Sie in **readyapi** auch eine Python-Klasse als Abhängigkeit verwenden.
 
-Was ReadyAPI tatsächlich prüft, ist, ob es sich um ein „Callable“ (Funktion, Klasse oder irgendetwas anderes) handelt und ob die Parameter definiert sind.
+Was readyapi tatsächlich prüft, ist, ob es sich um ein „Callable“ (Funktion, Klasse oder irgendetwas anderes) handelt und ob die Parameter definiert sind.
 
-Wenn Sie **ReadyAPI** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer *Pfadoperation-Funktion*. Einschließlich Unterabhängigkeiten.
+Wenn Sie **readyapi** ein „Callable“ als Abhängigkeit übergeben, analysiert es die Parameter dieses „Callables“ und verarbeitet sie auf die gleiche Weise wie die Parameter einer *Pfadoperation-Funktion*. Einschließlich Unterabhängigkeiten.
 
 Das gilt auch für Callables ohne Parameter. So wie es auch für *Pfadoperation-Funktionen* ohne Parameter gilt.
 
@@ -79,7 +79,7 @@ Achten Sie auf die Methode `__init__`, die zum Erstellen der Instanz der Klasse 
 
 {* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8] *}
 
-Diese Parameter werden von **ReadyAPI** verwendet, um die Abhängigkeit „aufzulösen“.
+Diese Parameter werden von **readyapi** verwendet, um die Abhängigkeit „aufzulösen“.
 
 In beiden Fällen wird sie haben:
 
@@ -95,7 +95,7 @@ Jetzt können Sie Ihre Abhängigkeit mithilfe dieser Klasse deklarieren.
 
 {* ../../docs_src/dependencies/tutorial002_an_py310.py hl[19] *}
 
-**ReadyAPI** ruft die Klasse `CommonQueryParams` auf. Dadurch wird eine „Instanz“ dieser Klasse erstellt und die Instanz wird als Parameter `commons` an Ihre Funktion überreicht.
+**readyapi** ruft die Klasse `CommonQueryParams` auf. Dadurch wird eine „Instanz“ dieser Klasse erstellt und die Instanz wird als Parameter `commons` an Ihre Funktion überreicht.
 
 ## Typannotation vs. `Depends`
 
@@ -129,9 +129,9 @@ Das letzte `CommonQueryParams`, in:
 ... Depends(CommonQueryParams)
 ```
 
-... ist das, was **ReadyAPI** tatsächlich verwendet, um die Abhängigkeit zu ermitteln.
+... ist das, was **readyapi** tatsächlich verwendet, um die Abhängigkeit zu ermitteln.
 
-Aus diesem extrahiert ReadyAPI die deklarierten Parameter, und dieses ist es, was ReadyAPI auch aufruft.
+Aus diesem extrahiert readyapi die deklarierten Parameter, und dieses ist es, was readyapi auch aufruft.
 
 ---
 
@@ -159,7 +159,7 @@ commons: CommonQueryParams ...
 
 ////
 
-... keine besondere Bedeutung für **ReadyAPI**. ReadyAPI verwendet es nicht für die Datenkonvertierung, -validierung, usw. (da es dafür `Depends(CommonQueryParams)` verwendet).
+... keine besondere Bedeutung für **readyapi**. readyapi verwendet es nicht für die Datenkonvertierung, -validierung, usw. (da es dafür `Depends(CommonQueryParams)` verwendet).
 
 Sie könnten tatsächlich einfach schreiben:
 
@@ -219,7 +219,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-**ReadyAPI** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit *speziell* eine Klasse ist, welche **ReadyAPI** aufruft, um eine Instanz der Klasse selbst zu erstellen.
+**readyapi** bietet eine Abkürzung für diese Fälle, wo die Abhängigkeit *speziell* eine Klasse ist, welche **readyapi** aufruft, um eine Instanz der Klasse selbst zu erstellen.
 
 In diesem speziellen Fall können Sie Folgendes tun:
 
@@ -277,12 +277,12 @@ Dasselbe Beispiel würde dann so aussehen:
 
 {* ../../docs_src/dependencies/tutorial004_an_py310.py hl[19] *}
 
-... und **ReadyAPI** wird wissen, was zu tun ist.
+... und **readyapi** wird wissen, was zu tun ist.
 
 /// tip | Tipp
 
 Wenn Sie das eher verwirrt, als Ihnen zu helfen, ignorieren Sie es, Sie *brauchen* es nicht.
 
-Es ist nur eine Abkürzung. Es geht **ReadyAPI** darum, Ihnen dabei zu helfen, Codeverdoppelung zu minimieren.
+Es ist nur eine Abkürzung. Es geht **readyapi** darum, Ihnen dabei zu helfen, Codeverdoppelung zu minimieren.
 
 ///

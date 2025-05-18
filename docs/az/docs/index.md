@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI framework, yüksək məshuldarlı, öyrənməsi asan, çevik kodlama, istifadəyə hazırdır</em>
+    <em>readyapi framework, yüksək məshuldarlı, öyrənməsi asan, çevik kodlama, istifadəyə hazırdır</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Əhatə">
@@ -27,7 +27,7 @@
 
 ---
 
-ReadyAPI Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsləhətləri: Type Hints">tip məsləhətlərinə</abbr> əsaslanan, müasir, sürətli (yüksək performanslı) framework-dür.
+readyapi Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsləhətləri: Type Hints">tip məsləhətlərinə</abbr> əsaslanan, müasir, sürətli (yüksək performanslı) framework-dür.
 
 Əsas xüsusiyyətləri bunlardır:
 
@@ -61,25 +61,25 @@ ReadyAPI Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsl
 
 ## Rəylər
 
-"_[...] Son günlərdə **ReadyAPI**-ı çox istifadə edirəm. [...]  Əslində onu komandamın bütün **Microsoftda ML sevislərində** istifadə etməyi planlayıram. Onların bəziləri **windows**-un əsas məhsuluna və bəzi **Office** məhsullarına inteqrasiya olunurlar._"
+"_[...] Son günlərdə **readyapi**-ı çox istifadə edirəm. [...]  Əslində onu komandamın bütün **Microsoftda ML sevislərində** istifadə etməyi planlayıram. Onların bəziləri **windows**-un əsas məhsuluna və bəzi **Office** məhsullarına inteqrasiya olunurlar._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**ReadyAPI** kitabxanasını **Proqnozlar** əldə etmək üçün sorğulana bilən **REST** serverini yaratmaqda istifadə etdik._"
+"_**readyapi** kitabxanasını **Proqnozlar** əldə etmək üçün sorğulana bilən **REST** serverini yaratmaqda istifadə etdik._"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** **böhran idarəçiliyi** orkestrləşmə framework-nün açıq qaynaqlı buraxılışını elan etməkdən məmnundur: **Dispatch**! [**ReadyAPI** ilə quruldu]_"
+"_**Netflix** **böhran idarəçiliyi** orkestrləşmə framework-nün açıq qaynaqlı buraxılışını elan etməkdən məmnundur: **Dispatch**! [**readyapi** ilə quruldu]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**ReadyAPI** üçün həyəcanlıyam. Çox əyləncəlidir!_"
+"_**readyapi** üçün həyəcanlıyam. Çox əyləncəlidir!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -91,31 +91,31 @@ ReadyAPI Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsl
 
 ---
 
-"_Əgər REST API-lər yaratmaq üçün **müasir framework** öyrənmək istəyirsinizsə, **ReadyAPI**-a baxın [...] Sürətli, istifadəsi və öyrənməsi asandır. [...]_"
+"_Əgər REST API-lər yaratmaq üçün **müasir framework** öyrənmək istəyirsinizsə, **readyapi**-a baxın [...] Sürətli, istifadəsi və öyrənməsi asandır. [...]_"
 
-"_**API** xidmətlərimizi **ReadyAPI**-a köçürdük [...] Sizin də bəyənəcəyinizi düşünürük._"
+"_**API** xidmətlərimizi **readyapi**-a köçürdük [...] Sizin də bəyənəcəyinizi düşünürük._"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Python ilə istifadəyə hazır API qurmaq istəyən hər kəsə **ReadyAPI**-ı tövsiyə edirəm. **Möhtəşəm şəkildə dizayn edilmiş**, **istifadəsi asan** və **yüksək dərəcədə genişlənə bilən**-dir, API əsaslı inkişaf strategiyamızın **əsas komponentinə** çevrilib və Virtual TAC Engineer kimi bir çox avtomatlaşdırma və servisləri idarə edir._"
+"_Python ilə istifadəyə hazır API qurmaq istəyən hər kəsə **readyapi**-ı tövsiyə edirəm. **Möhtəşəm şəkildə dizayn edilmiş**, **istifadəsi asan** və **yüksək dərəcədə genişlənə bilən**-dir, API əsaslı inkişaf strategiyamızın **əsas komponentinə** çevrilib və Virtual TAC Engineer kimi bir çox avtomatlaşdırma və servisləri idarə edir._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, CLI-ların ReadyAPI-ı
+## **Cligenius**, CLI-ların readyapi-ı
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Əgər siz veb API əvəzinə terminalda istifadə ediləcək <abbr title="Command Line Interface">CLI</abbr> proqramı qurursunuzsa, <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>-a baxa bilərsiniz.
 
-**Cligenius** ReadyAPI-ın kiçik qardaşıdır. Və o, CLI-lərin **ReadyAPI**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
+**Cligenius** readyapi-ın kiçik qardaşıdır. Və o, CLI-lərin **readyapi**-ı olmaq üçün nəzərdə tutulub. ⌨️ 🚀
 
 ## Tələblər
 
-ReadyAPI nəhənglərin çiyinlərində dayanır:
+readyapi nəhənglərin çiyinlərində dayanır:
 
 * Web tərəfi üçün <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>.
 * Data tərəfi üçün <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a>.
@@ -153,9 +153,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -176,9 +176,9 @@ def read_item(item_id: int, q: Union[str, None] = None):
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -221,7 +221,7 @@ INFO:     Application startup complete.
 `uvicorn main:app` əmri aşağıdakılara instinad edir:
 
 * `main`: `main.py` faylı (yəni Python "modulu").
-* `app`: `main.py` faylında `app = ReadyAPI()` sətrində yaratdığımız `ReadyAPI` obyektidir.
+* `app`: `main.py` faylında `app = readyapi()` sətrində yaratdığımız `readyapi` obyektidir.
 * `--reload`: kod dəyişikliyindən sonra avtomatik olaraq serveri yenidən işə salır. Bu parametrdən yalnız development mərhələsində istifadə etməliyik.
 
 </details>
@@ -268,10 +268,10 @@ Pydantic sayəsində standart Python tiplərindən istifadə edərək <abbr titl
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -370,7 +370,7 @@ item: Item
 
 ---
 
-Gəlin əvvəlki nümunəyə qayıdaq və **ReadyAPI**-nin nələr edəcəyinə nəzər salaq:
+Gəlin əvvəlki nümunəyə qayıdaq və **readyapi**-nin nələr edəcəyinə nəzər salaq:
 
 * `GET` və `PUT` sorğuları üçün `item_id`-nin <abbr title="Yol: Path">yolda</abbr> olub-olmadığını yoxlayacaq.
 * `item_id`-nin `GET` və `PUT` sorğuları üçün növünün `int` olduğunu yoxlayacaq.
@@ -434,7 +434,7 @@ Daha çox funksiyaya malik daha dolğun nümunə üçün <a href="https://readya
 
 ## Performans
 
-Müstəqil TechEmpower meyarları göstərir ki, Uvicorn üzərində işləyən **ReadyAPI** proqramları <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ən sürətli Python kitabxanalarından biridir</a>, yalnız Starlette və Uvicorn-un özündən yavaşdır, ki ReadyAPI bunların üzərinə qurulmuş bir framework-dür. (*)
+Müstəqil TechEmpower meyarları göstərir ki, Uvicorn üzərində işləyən **readyapi** proqramları <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ən sürətli Python kitabxanalarından biridir</a>, yalnız Starlette və Uvicorn-un özündən yavaşdır, ki readyapi bunların üzərinə qurulmuş bir framework-dür. (*)
 
 Ətraflı məlumat üçün bu bölməyə nəzər salın <a href="https://readyapi.khulnasoft.com/az/benchmarks/" class="internal-link" target="_blank"><abbr title="Müqayisələr: Benchmarks">Müqayisələr</abbr></a>.
 
@@ -452,10 +452,10 @@ Starlette tərəfindən istifadə olunanlar:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Standart <abbr title="Şablon: Template">şablon</abbr> konfiqurasiyasından istifadə etmək istəyirsinizsə, tələb olunur.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - `request.form()` ilə forma <abbr title="HTTP sorğusu ilə alınan string məlumatın Python obyektinə çevrilməsi">"çevirmə"</abbr> dəstəyindən istifadə etmək istəyirsinizsə, tələb olunur.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` dəstəyi üçün tələb olunur.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - `SchemaGenerator` dəstəyi üçün tələb olunur (Çox güman ki, ReadyAPI istifadə edərkən buna ehtiyacınız olmayacaq).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - `SchemaGenerator` dəstəyi üçün tələb olunur (Çox güman ki, readyapi istifadə edərkən buna ehtiyacınız olmayacaq).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - `UJSONResponse` istifadə etmək istəyirsinizsə, tələb olunur.
 
-Həm ReadyAPI, həm də Starlette tərəfindən istifadə olunur:
+Həm readyapi, həm də Starlette tərəfindən istifadə olunur:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Yaratdığımız proqramı servis edəcək veb server kimi fəaliyyət göstərir.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - `ORJSONResponse` istifadə edəcəksinizsə tələb olunur.

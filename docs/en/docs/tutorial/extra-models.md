@@ -149,7 +149,7 @@ The supporting additional functions `fake_password_hasher` and `fake_save_user` 
 
 ## Reduce duplication
 
-Reducing code duplication is one of the core ideas in **ReadyAPI**.
+Reducing code duplication is one of the core ideas in **readyapi**.
 
 As code duplication increments the chances of bugs, security issues, code desynchronization issues (when you update in one place but not in the others), etc.
 

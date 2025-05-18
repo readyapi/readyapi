@@ -2,7 +2,7 @@
 
 有时，我们要为整个应用添加依赖项。
 
-通过与定义[*路径装饰器依赖项*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} 类似的方式，可以把依赖项添加至整个 `ReadyAPI` 应用。
+通过与定义[*路径装饰器依赖项*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} 类似的方式，可以把依赖项添加至整个 `readyapi` 应用。
 
 这样一来，就可以为所有*路径操作*应用该依赖项：
 

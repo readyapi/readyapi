@@ -6,11 +6,11 @@ Esses **"type hints"** são uma sintaxe especial que permite declarar o <abbr ti
 
 Ao declarar tipos para suas variáveis, editores e ferramentas podem oferecer um melhor suporte.
 
-Este é apenas um **tutorial rápido / atualização** sobre type hints do Python. Ele cobre apenas o mínimo necessário para usá-los com o **ReadyAPI**... que é realmente muito pouco.
+Este é apenas um **tutorial rápido / atualização** sobre type hints do Python. Ele cobre apenas o mínimo necessário para usá-los com o **readyapi**... que é realmente muito pouco.
 
-O **ReadyAPI** é baseado nesses type hints, eles oferecem muitas vantagens e benefícios.
+O **readyapi** é baseado nesses type hints, eles oferecem muitas vantagens e benefícios.
 
-Mas mesmo que você nunca use o **ReadyAPI**, você se beneficiaria de aprender um pouco sobre eles.
+Mas mesmo que você nunca use o **readyapi**, você se beneficiaria de aprender um pouco sobre eles.
 
 /// note | Nota
 
@@ -120,7 +120,7 @@ Agora você sabe que precisa corrigí-lo, converta `age` em uma string com `str(
 
 Você acabou de ver o local principal para declarar type hints. Como parâmetros de função.
 
-Este também é o principal local em que você os usaria com o **ReadyAPI**.
+Este também é o principal local em que você os usaria com o **readyapi**.
 
 ### Tipos simples
 
@@ -494,7 +494,7 @@ Para saber mais sobre o <a href="https://docs.pydantic.dev/" class="external-lin
 
 ///
 
-O **ReadyAPI** é todo baseado em Pydantic.
+O **readyapi** é todo baseado em Pydantic.
 
 Você verá muito mais disso na prática no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=_blank}.
 
@@ -523,7 +523,7 @@ No Python 3.9, `Annotated` é parte da biblioteca padrão, então você pode imp
 
 Em versões abaixo do Python 3.9, você importa `Annotated` de `typing_extensions`.
 
-Ele já estará instalado com o **ReadyAPI**.
+Ele já estará instalado com o **readyapi**.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -533,7 +533,7 @@ Ele já estará instalado com o **ReadyAPI**.
 
 O Python em si não faz nada com este `Annotated`. E para editores e outras ferramentas, o tipo ainda é `str`.
 
-Mas você pode utilizar este espaço dentro do `Annotated` para fornecer ao **ReadyAPI** metadata adicional sobre como você deseja que a sua aplicação se comporte.
+Mas você pode utilizar este espaço dentro do `Annotated` para fornecer ao **readyapi** metadata adicional sobre como você deseja que a sua aplicação se comporte.
 
 O importante aqui de se lembrar é que **o primeiro *type parameter*** que você informar ao `Annotated` é o **tipo de fato**. O resto é apenas metadado para outras ferramentas.
 
@@ -550,16 +550,16 @@ E também que o seu código será muito compatível com diversas outras ferramen
 ///
 
 
-## Type hints no **ReadyAPI**
+## Type hints no **readyapi**
 
-O **ReadyAPI** aproveita esses type hints para fazer várias coisas.
+O **readyapi** aproveita esses type hints para fazer várias coisas.
 
-Com o **ReadyAPI**, você declara parâmetros com type hints e obtém:
+Com o **readyapi**, você declara parâmetros com type hints e obtém:
 
 * **Suporte ao editor**.
 * **Verificações de tipo**.
 
-... e o **ReadyAPI** usa as mesmas declarações para:
+... e o **readyapi** usa as mesmas declarações para:
 
 * **Definir requisitos**: dos parâmetros de rota, parâmetros da consulta, cabeçalhos, corpos, dependências, etc.
 * **Converter dados**: da solicitação para o tipo necessário.
@@ -570,7 +570,7 @@ Com o **ReadyAPI**, você declara parâmetros com type hints e obtém:
 
 Tudo isso pode parecer abstrato. Não se preocupe. Você verá tudo isso em ação no [Tutorial - Guia do usuário](tutorial/index.md){.internal-link target=_blank}.
 
-O importante é que, usando tipos padrão de Python, em um único local (em vez de adicionar mais classes, decoradores, etc.), o **ReadyAPI** fará muito trabalho para você.
+O importante é que, usando tipos padrão de Python, em um único local (em vez de adicionar mais classes, decoradores, etc.), o **readyapi** fará muito trabalho para você.
 
 /// info | Informação
 

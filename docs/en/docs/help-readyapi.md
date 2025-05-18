@@ -1,10 +1,10 @@
-# Help ReadyAPI - Get Help
+# Help readyapi - Get Help
 
-Do you like **ReadyAPI**?
+Do you like **readyapi**?
 
-Would you like to help ReadyAPI, other users, and the author?
+Would you like to help readyapi, other users, and the author?
 
-Or would you like to get help with **ReadyAPI**?
+Or would you like to get help with **readyapi**?
 
 There are very simple ways to help (several involve just one or two clicks).
 
@@ -12,35 +12,35 @@ And there are several ways to get help too.
 
 ## Subscribe to the newsletter
 
-You can subscribe to the (infrequent) [**ReadyAPI and friends** newsletter](newsletter.md){.internal-link target=_blank} to stay updated about:
+You can subscribe to the (infrequent) [**readyapi and friends** newsletter](newsletter.md){.internal-link target=_blank} to stay updated about:
 
-* News about ReadyAPI and friends 🚀
+* News about readyapi and friends 🚀
 * Guides 📝
 * Features ✨
 * Breaking changes 🚨
 * Tips and tricks ✅
 
-## Follow ReadyAPI on Twitter
+## Follow readyapi on Twitter
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">Follow @readyapi on **Twitter**</a> to get the latest news about **ReadyAPI**. 🐦
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">Follow @readyapi on **Twitter**</a> to get the latest news about **readyapi**. 🐦
 
-## Star **ReadyAPI** in GitHub
+## Star **readyapi** in GitHub
 
-You can "star" ReadyAPI in GitHub (clicking the star button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
+You can "star" readyapi in GitHub (clicking the star button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
 
 By adding a star, other users will be able to find it more easily and see that it has been already useful for others.
 
 ## Watch the GitHub repository for releases
 
-You can "watch" ReadyAPI in GitHub (clicking the "watch" button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+You can "watch" readyapi in GitHub (clicking the "watch" button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 There you can select "Releases only".
 
-By doing it, you will receive notifications (in your email) whenever there's a new release (a new version) of **ReadyAPI** with bug fixes and new features.
+By doing it, you will receive notifications (in your email) whenever there's a new release (a new version) of **readyapi** with bug fixes and new features.
 
 ## Connect with the author
 
-You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (Sebastián Ramírez / `khulnasoft`)</a>, the author.
+You can connect with <a href="https://khulnasoft.com" class="external-link" target="_blank">me (KhulnaSoft Ltd / `khulnasoft`)</a>, the author.
 
 You can:
 
@@ -48,7 +48,7 @@ You can:
     * See other Open Source projects I have created that could help you.
     * Follow me to see when I create a new Open Source project.
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Follow me on **Twitter**</a> or <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodon</a>.
-    * Tell me how you use ReadyAPI (I love to hear that).
+    * Tell me how you use readyapi (I love to hear that).
     * Hear when I make announcements or release new tools.
     * You can also <a href="https://twitter.com/readyapi" class="external-link" target="_blank">follow @readyapi on Twitter</a> (a separate account).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Follow me on **LinkedIn**</a>.
@@ -57,17 +57,17 @@ You can:
     * Read other ideas, articles, and read about tools I have created.
     * Follow me to read when I publish something new.
 
-## Tweet about **ReadyAPI**
+## Tweet about **readyapi**
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">Tweet about **ReadyAPI**</a> and let me and others know why you like it. 🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">Tweet about **readyapi**</a> and let me and others know why you like it. 🎉
 
-I love to hear about how **ReadyAPI** is being used, what you have liked in it, in which project/company are you using it, etc.
+I love to hear about how **readyapi** is being used, what you have liked in it, in which project/company are you using it, etc.
 
-## Vote for ReadyAPI
+## Vote for readyapi
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote for **ReadyAPI** in Slant</a>.
-* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">Vote for **ReadyAPI** in AlternativeTo</a>.
-* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">Say you use **ReadyAPI** on StackShare</a>.
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Vote for **readyapi** in Slant</a>.
+* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">Vote for **readyapi** in AlternativeTo</a>.
+* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">Say you use **readyapi** on StackShare</a>.
 
 ## Help others with questions in GitHub
 
@@ -78,11 +78,11 @@ You can try and help others with their questions in:
 
 In many cases you might already know the answer for those questions. 🤓
 
-If you are helping a lot of people with their questions, you will become an official [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}. 🎉
+If you are helping a lot of people with their questions, you will become an official [readyapi Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}. 🎉
 
 Just remember, the most important point is: try to be kind. People come with their frustrations and in many cases don't ask in the best way, but try as best as you can to be kind. 🤗
 
-The idea is for the **ReadyAPI** community to be kind and welcoming. At the same time, don't accept bullying or disrespectful behavior towards others. We have to take care of each other.
+The idea is for the **readyapi** community to be kind and welcoming. At the same time, don't accept bullying or disrespectful behavior towards others. We have to take care of each other.
 
 ---
 
@@ -125,7 +125,7 @@ If they reply, there's a high chance you would have solved their problem, congra
 
 ## Watch the GitHub repository
 
-You can "watch" ReadyAPI in GitHub (clicking the "watch" button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+You can "watch" readyapi in GitHub (clicking the "watch" button at the top right): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 If you select "Watching" instead of "Releases only" you will receive notifications when someone creates a new issue or question. You can also specify that you only want to be notified about new issues, or discussions, or PRs, etc.
 
@@ -199,7 +199,7 @@ So, it's really important that you actually read and run the code, and let me kn
 You can [contribute](contributing.md){.internal-link target=_blank} to the source code with Pull Requests, for example:
 
 * To fix a typo you found on the documentation.
-* To share an article, video, or podcast you created or found about ReadyAPI by <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editing this file</a>.
+* To share an article, video, or podcast you created or found about readyapi by <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">editing this file</a>.
     * Make sure you add your link to the start of the corresponding section.
 * To help [translate the documentation](contributing.md#translations){.internal-link target=_blank} to your language.
     * You can also help to review the translations created by others.
@@ -210,9 +210,9 @@ You can [contribute](contributing.md){.internal-link target=_blank} to the sourc
     * Make sure to add tests.
     * Make sure to add documentation if it's relevant.
 
-## Help Maintain ReadyAPI
+## Help Maintain readyapi
 
-Help me maintain **ReadyAPI**! 🤓
+Help me maintain **readyapi**! 🤓
 
 There's a lot of work to do, and for most of it, **YOU** can do it.
 
@@ -221,17 +221,17 @@ The main tasks that you can do right now are:
 * [Help others with questions in GitHub](#help-others-with-questions-in-github){.internal-link target=_blank} (see the section above).
 * [Review Pull Requests](#review-pull-requests){.internal-link target=_blank} (see the section above).
 
-Those two tasks are what **consume time the most**. That's the main work of maintaining ReadyAPI.
+Those two tasks are what **consume time the most**. That's the main work of maintaining readyapi.
 
-If you can help me with that, **you are helping me maintain ReadyAPI** and making sure it keeps **advancing faster and better**. 🚀
+If you can help me with that, **you are helping me maintain readyapi** and making sure it keeps **advancing faster and better**. 🚀
 
 ## Join the chat
 
-Join the 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord chat server</a> 👥 and hang out with others in the ReadyAPI community.
+Join the 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord chat server</a> 👥 and hang out with others in the readyapi community.
 
 /// tip
 
-For questions, ask them in <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub Discussions</a>, there's a much better chance you will receive help by the [ReadyAPI Experts](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
+For questions, ask them in <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub Discussions</a>, there's a much better chance you will receive help by the [readyapi Experts](readyapi-people.md#readyapi-experts){.internal-link target=_blank}.
 
 Use the chat only for other general conversations.
 
@@ -243,26 +243,13 @@ Keep in mind that as chats allow more "free conversation", it's easy to ask ques
 
 In GitHub, the template will guide you to write the right question so that you can more easily get a good answer, or even solve the problem yourself even before asking. And in GitHub I can make sure I always answer everything, even if it takes some time. I can't personally do that with the chat systems. 😅
 
-Conversations in the chat systems are also not as easily searchable as in GitHub, so questions and answers might get lost in the conversation. And only the ones in GitHub count to become a [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}, so you will most probably receive more attention in GitHub.
+Conversations in the chat systems are also not as easily searchable as in GitHub, so questions and answers might get lost in the conversation. And only the ones in GitHub count to become a [readyapi Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}, so you will most probably receive more attention in GitHub.
 
 On the other side, there are thousands of users in the chat systems, so there's a high chance you'll find someone to talk to there, almost all the time. 😄
 
 ## Sponsor the author
 
-You can also financially support the author (me) through <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub sponsors</a>.
-
-There you could buy me a coffee ☕️ to say thanks. 😄
-
-And you can also become a Silver or Gold sponsor for ReadyAPI. 🏅🎉
-
-## Sponsor the tools that power ReadyAPI
-
-As you have seen in the documentation, ReadyAPI stands on the shoulders of giants, Starlette and Pydantic.
-
-You can also sponsor:
-
-* <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
-* <a href="https://github.com/sponsors/encode" class="external-link" target="_blank">Encode (Starlette, Uvicorn)</a>
+If your **product/company** depends on or is related to **readyapi** and you want to reach its users, you can sponsor the author (me) through <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub sponsors</a>. Depending on the tier, you could get some extra benefits, like a badge in the docs. 🎁
 
 ---
 

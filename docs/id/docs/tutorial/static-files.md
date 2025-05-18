@@ -13,7 +13,7 @@ Anda dapat menyajikan berkas statis secara otomatis dari sebuah direktori menggu
 
 Anda dapat pula menggunakan `from starlette.staticfiles import StaticFiles`.
 
-**ReadyAPI** menyediakan `starlette.staticfiles` sama seperti `readyapi.staticfiles` sebagai kemudahan pada Anda, yaitu para pengembang. Tetapi ini asli berasal langsung dari Starlette.
+**readyapi** menyediakan `starlette.staticfiles` sama seperti `readyapi.staticfiles` sebagai kemudahan pada Anda, yaitu para pengembang. Tetapi ini asli berasal langsung dari Starlette.
 
 ///
 
@@ -31,7 +31,7 @@ Terhadap `"/static"` pertama mengacu pada sub-jalur yang akan menjadi tempat "su
 
 Terhadap `directory="static"` mengacu pada nama direktori yang berisi berkas statis Anda.
 
-Terhadap `name="static"` ialah nama yang dapat digunakan secara internal oleh **ReadyAPI**.
+Terhadap `name="static"` ialah nama yang dapat digunakan secara internal oleh **readyapi**.
 
 Seluruh parameter ini dapat berbeda dari sekadar "`static`", sesuaikan parameter dengan keperluan dan detail spesifik akan aplikasi Anda.
 

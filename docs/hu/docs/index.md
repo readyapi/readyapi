@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI keretrendszer, nagy teljesítmény, könnyen tanulható, gyorsan kódolható, productionre kész</em>
+    <em>readyapi keretrendszer, nagy teljesítmény, könnyen tanulható, gyorsan kódolható, productionre kész</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
@@ -26,7 +26,7 @@
 **Forrás kód**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
-A ReadyAPI egy modern, gyors (nagy teljesítményű), webes keretrendszer API-ok építéséhez Python -al, a Python szabványos típusjelöléseire építve.
+A readyapi egy modern, gyors (nagy teljesítményű), webes keretrendszer API-ok építéséhez Python -al, a Python szabványos típusjelöléseire építve.
 
 
 Kulcs funkciók:
@@ -61,25 +61,25 @@ Kulcs funkciók:
 
 ## Vélemények
 
-"_[...] I'm using **ReadyAPI** a ton these days. [...] I'm actually planning to use it for all of my team's **ML services at Microsoft**. Some of them are getting integrated into the core **Windows** product and some **Office** products._"
+"_[...] I'm using **readyapi** a ton these days. [...] I'm actually planning to use it for all of my team's **ML services at Microsoft**. Some of them are getting integrated into the core **Windows** product and some **Office** products._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_We adopted the **ReadyAPI** library to spawn a **REST** server that can be queried to obtain **predictions**. [for Ludwig]_"
+"_We adopted the **readyapi** library to spawn a **REST** server that can be queried to obtain **predictions**. [for Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** is pleased to announce the open-source release of our **crisis management** orchestration framework: **Dispatch**! [built with **ReadyAPI**]_"
+"_**Netflix** is pleased to announce the open-source release of our **crisis management** orchestration framework: **Dispatch**! [built with **readyapi**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_I’m over the moon excited about **ReadyAPI**. It’s so fun!_"
+"_I’m over the moon excited about **readyapi**. It’s so fun!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -91,31 +91,31 @@ Kulcs funkciók:
 
 ---
 
-"_If you're looking to learn one **modern framework** for building REST APIs, check out **ReadyAPI** [...] It's fast, easy to use and easy to learn [...]_"
+"_If you're looking to learn one **modern framework** for building REST APIs, check out **readyapi** [...] It's fast, easy to use and easy to learn [...]_"
 
-"_We've switched over to **ReadyAPI** for our **APIs** [...] I think you'll like it [...]_"
+"_We've switched over to **readyapi** for our **APIs** [...] I think you'll like it [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_If anyone is looking to build a production Python API, I would highly recommend **ReadyAPI**. It is **beautifully designed**, **simple to use** and **highly scalable**, it has become a **key component** in our API first development strategy and is driving many automations and services such as our Virtual TAC Engineer._"
+"_If anyone is looking to build a production Python API, I would highly recommend **readyapi**. It is **beautifully designed**, **simple to use** and **highly scalable**, it has become a **key component** in our API first development strategy and is driving many automations and services such as our Virtual TAC Engineer._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, a CLI-ok ReadyAPI-ja
+## **Cligenius**, a CLI-ok readyapi-ja
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Ha egy olyan CLI alkalmazást fejlesztesz amit a parancssorban kell használni webes API helyett, tekintsd meg: <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** a ReadyAPI kistestvére. A **CLI-k ReadyAPI-ja**. ⌨️ 🚀
+**Cligenius** a readyapi kistestvére. A **CLI-k readyapi-ja**. ⌨️ 🚀
 
 ## Követelmények
 
-A ReadyAPI óriások vállán áll:
+A readyapi óriások vállán áll:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> a webes részekhez.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> az adat részekhez.
@@ -153,9 +153,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -176,9 +176,9 @@ Ha a kódod `async` / `await`-et, használ `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -221,7 +221,7 @@ INFO:     Application startup complete.
 A `uvicorn main:app` parancs a következőre utal:
 
 * `main`: fájl `main.py` (a Python "modul").
-* `app`: a `main.py`-ban a `app = ReadyAPI()` sorral létrehozott objektum.
+* `app`: a `main.py`-ban a `app = readyapi()` sorral létrehozott objektum.
 * `--reload`: kód változtatás esetén újra indítja a szervert. Csak fejlesztés közben használandó.
 
 </details>
@@ -268,10 +268,10 @@ Deklaráld a body-t standard Python típusokkal, a Pydantic-nak köszönhetően.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -371,7 +371,7 @@ item: Item
 
 ---
 
-Visszatérve az előző kód példához. A **ReadyAPI**:
+Visszatérve az előző kód példához. A **readyapi**:
 
 * Validálja hogy van egy `item_id` mező a `GET` és `PUT` kérésekben.
 * Validálja hogy az `item_id` `int` típusú a `GET` és `PUT` kérésekben.
@@ -435,7 +435,7 @@ Teljesebb példákért és funkciókért tekintsd meg a <a href="https://readyap
 
 ## Teljesítmény
 
-A független TechEmpower benchmarkok szerint az Uvicorn alatt futó **ReadyAPI** alkalmazások az <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">egyik leggyorsabb Python keretrendszerek közé tartoznak</a>, éppen lemaradva a Starlette és az Uvicorn (melyeket a ReadyAPI belsőleg használ) mögött.(*)
+A független TechEmpower benchmarkok szerint az Uvicorn alatt futó **readyapi** alkalmazások az <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">egyik leggyorsabb Python keretrendszerek közé tartoznak</a>, éppen lemaradva a Starlette és az Uvicorn (melyeket a readyapi belsőleg használ) mögött.(*)
 
 Ezeknek a további megértéséhez: <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
@@ -453,9 +453,9 @@ Starlette által használt:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Követelmény ha az alap template konfigurációt akarod használni.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Követelmény ha <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>-ot akarsz támogatni, `request.form()`-al.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Követelmény `SessionMiddleware` támogatáshoz.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Követelmény a Starlette `SchemaGenerator`-ának támogatásához (valószínűleg erre nincs szükség ReadyAPI használása esetén).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Követelmény a Starlette `SchemaGenerator`-ának támogatásához (valószínűleg erre nincs szükség readyapi használása esetén).
 
-ReadyAPI / Starlette által használt
+readyapi / Starlette által használt
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Szerverekhez amíg betöltik és szolgáltatják az applikációdat.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Követelmény ha `ORJSONResponse`-t akarsz használni.

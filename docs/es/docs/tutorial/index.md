@@ -1,6 +1,6 @@
 # Tutorial - Guía del Usuario
 
-Este tutorial te muestra cómo usar **ReadyAPI** con la mayoría de sus funcionalidades, paso a paso.
+Este tutorial te muestra cómo usar **readyapi** con la mayoría de sus funcionalidades, paso a paso.
 
 Cada sección se basa gradualmente en las anteriores, pero está estructurada para separar temas, de manera que puedas ir directamente a cualquier sección específica para resolver tus necesidades específicas de API.
 
@@ -28,9 +28,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
+<font color="#3465A4">INFO    </font> Found importable readyapi app
 
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -38,7 +38,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -63,15 +63,15 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 Es **ALTAMENTE recomendable** que escribas o copies el código, lo edites y lo ejecutes localmente.
 
-Usarlo en tu editor es lo que realmente te muestra los beneficios de ReadyAPI, al ver cuán poco código tienes que escribir, todos los chequeos de tipos, autocompletado, etc.
+Usarlo en tu editor es lo que realmente te muestra los beneficios de readyapi, al ver cuán poco código tienes que escribir, todos los chequeos de tipos, autocompletado, etc.
 
 ---
 
-## Instalar ReadyAPI
+## Instalar readyapi
 
-El primer paso es instalar ReadyAPI.
+El primer paso es instalar readyapi.
 
-Asegúrate de crear un [entorno virtual](../virtual-environments.md){.internal-link target=_blank}, actívalo, y luego **instala ReadyAPI**:
+Asegúrate de crear un [entorno virtual](../virtual-environments.md){.internal-link target=_blank}, actívalo, y luego **instala readyapi**:
 
 <div class="termy">
 

@@ -1,6 +1,6 @@
 # yieldを持つ依存関係
 
-ReadyAPIは、いくつかの<abbr title='時々"exit"、"cleanup"、"teardown"、"close"、"context managers"、 ...のように呼ばれる'>終了後の追加のステップ</abbr>を行う依存関係をサポートしています。
+readyapiは、いくつかの<abbr title='時々"exit"、"cleanup"、"teardown"、"close"、"context managers"、 ...のように呼ばれる'>終了後の追加のステップ</abbr>を行う依存関係をサポートしています。
 
 これを行うには、`return`の代わりに`yield`を使い、その後に追加のステップを書きます。
 
@@ -29,9 +29,9 @@ pip install async-exit-stack async-generator
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a>または
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
-これらは **ReadyAPI** の依存関係として使用するのに有効です。
+これらは **readyapi** の依存関係として使用するのに有効です。
 
-実際、ReadyAPIは内部的にこれら２つのデコレータを使用しています。
+実際、readyapiは内部的にこれら２つのデコレータを使用しています。
 
 ///
 
@@ -55,7 +55,7 @@ pip install async-exit-stack async-generator
 
 `async`や通常の関数を使用することができます。
 
-**ReadyAPI** は、通常の依存関係と同じように、それぞれで正しいことを行います。
+**readyapi** は、通常の依存関係と同じように、それぞれで正しいことを行います。
 
 ///
 
@@ -75,7 +75,7 @@ pip install async-exit-stack async-generator
 
 任意の大きさや形のサブ依存関係やサブ依存関係の「ツリー」を持つことができ、その中で`yield`を使用することができます。
 
-**ReadyAPI** は、`yield`を持つ各依存関係の「終了コード」が正しい順番で実行されていることを確認します。
+**readyapi** は、`yield`を持つ各依存関係の「終了コード」が正しい順番で実行されていることを確認します。
 
 例えば、`dependency_c`は`dependency_b`と`dependency_b`に依存する`dependency_a`に、依存することができます:
 
@@ -95,13 +95,13 @@ pip install async-exit-stack async-generator
 
 依存関係の組み合わせは自由です。
 
-**ReadyAPI** は、全てが正しい順序で実行されていることを確認します。
+**readyapi** は、全てが正しい順序で実行されていることを確認します。
 
 /// note | 技術詳細
 
 これはPythonの<a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a>のおかげで動作します。
 
-**ReadyAPI** はこれを実現するために内部的に使用しています。
+**readyapi** はこれを実現するために内部的に使用しています。
 
 ///
 
@@ -205,7 +205,7 @@ with open("./somefile.txt") as f:
 
 `with`ブロックが終了すると、例外があったとしてもファイルを確かに閉じます。
 
-`yield`を依存関係を作成すると、**ReadyAPI** は内部的にそれをコンテキストマネージャに変換し、他の関連ツールと組み合わせます。
+`yield`を依存関係を作成すると、**readyapi** は内部的にそれをコンテキストマネージャに変換し、他の関連ツールと組み合わせます。
 
 ### `yield`を持つ依存関係でのコンテキストマネージャの使用
 
@@ -213,13 +213,13 @@ with open("./somefile.txt") as f:
 
 これは多かれ少なかれ、「高度な」発想です。
 
-**ReadyAPI** を使い始めたばかりの方は、とりあえずスキップした方がよいかもしれません。
+**readyapi** を使い始めたばかりの方は、とりあえずスキップした方がよいかもしれません。
 
 ///
 
 Pythonでは、<a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">以下の２つのメソッドを持つクラスを作成する: `__enter__()`と`__exit__()`</a>ことでコンテキストマネージャを作成することができます。
 
-また、依存関数の中で`with`や`async with`文を使用することによって`yield`を持つ **ReadyAPI** の依存関係の中でそれらを使用することができます:
+また、依存関数の中で`with`や`async with`文を使用することによって`yield`を持つ **readyapi** の依存関係の中でそれらを使用することができます:
 
 {* ../../docs_src/dependencies/tutorial010.py hl[1,2,3,4,5,6,7,8,9,13] *}
 
@@ -232,10 +232,10 @@ Pythonでは、<a href="https://docs.python.org/3/reference/datamodel.html#conte
 
 これらを使って、関数を単一の`yield`でデコレートすることができます。
 
-これは **ReadyAPI** が内部的に`yield`を持つ依存関係のために使用しているものです。
+これは **readyapi** が内部的に`yield`を持つ依存関係のために使用しているものです。
 
-しかし、ReadyAPIの依存関係にデコレータを使う必要はありません（そして使うべきではありません）。
+しかし、readyapiの依存関係にデコレータを使う必要はありません（そして使うべきではありません）。
 
-ReadyAPIが内部的にやってくれます。
+readyapiが内部的にやってくれます。
 
 ///

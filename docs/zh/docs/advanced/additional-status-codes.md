@@ -1,8 +1,8 @@
 # 额外的状态码
 
-**ReadyAPI** 默认使用 `JSONResponse` 返回一个响应，将你的 *路径操作* 中的返回内容放到该 `JSONResponse` 中。
+**readyapi** 默认使用 `JSONResponse` 返回一个响应，将你的 *路径操作* 中的返回内容放到该 `JSONResponse` 中。
 
-**ReadyAPI** 会自动使用默认的状态码或者使用你在 *路径操作* 中设置的状态码。
+**readyapi** 会自动使用默认的状态码或者使用你在 *路径操作* 中设置的状态码。
 
 ## 额外的状态码
 
@@ -20,7 +20,7 @@
 
 当你直接返回一个像上面例子中的 `Response` 对象时，它会直接返回。
 
-ReadyAPI 不会用模型等对该响应进行序列化。
+readyapi 不会用模型等对该响应进行序列化。
 
 确保其中有你想要的数据，且返回的值为合法的 JSON（如果你使用 `JSONResponse` 的话）。
 
@@ -30,12 +30,12 @@ ReadyAPI 不会用模型等对该响应进行序列化。
 
 你也可以使用 `from starlette.responses import JSONResponse`。　
 
-出于方便，**ReadyAPI** 为开发者提供同 `starlette.responses` 一样的 `readyapi.responses`。但是大多数可用的响应都是直接来自 Starlette。`status` 也是一样。
+出于方便，**readyapi** 为开发者提供同 `starlette.responses` 一样的 `readyapi.responses`。但是大多数可用的响应都是直接来自 Starlette。`status` 也是一样。
 
 ///
 
 ## OpenAPI 和 API 文档
 
-如果你直接返回额外的状态码和响应，它们不会包含在 OpenAPI 方案（API 文档）中，因为 ReadyAPI 没办法预先知道你要返回什么。
+如果你直接返回额外的状态码和响应，它们不会包含在 OpenAPI 方案（API 文档）中，因为 readyapi 没办法预先知道你要返回什么。
 
 但是你可以使用 [额外的响应](additional-responses.md){.internal-link target=_blank} 在代码中记录这些内容。

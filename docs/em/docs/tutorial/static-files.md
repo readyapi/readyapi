@@ -13,7 +13,7 @@
 
 👆 💪 ⚙️ `from starlette.staticfiles import StaticFiles`.
 
-**ReadyAPI** 🚚 🎏 `starlette.staticfiles` `readyapi.staticfiles` 🏪 👆, 👩‍💻. ✋️ ⚫️ 🤙 👟 🔗 ⚪️➡️ 💃.
+**readyapi** 🚚 🎏 `starlette.staticfiles` `readyapi.staticfiles` 🏪 👆, 👩‍💻. ✋️ ⚫️ 🤙 👟 🔗 ⚪️➡️ 💃.
 
 ///
 
@@ -31,7 +31,7 @@
 
 `directory="static"` 🔗 📛 📁 👈 🔌 👆 🎻 📁.
 
-`name="static"` 🤝 ⚫️ 📛 👈 💪 ⚙️ 🔘 **ReadyAPI**.
+`name="static"` 🤝 ⚫️ 📛 👈 💪 ⚙️ 🔘 **readyapi**.
 
 🌐 👫 🔢 💪 🎏 🌘 "`static`", 🔆 👫 ⏮️ 💪 &amp; 🎯 ℹ 👆 👍 🈸.
 

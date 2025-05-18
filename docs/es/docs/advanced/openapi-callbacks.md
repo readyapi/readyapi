@@ -23,7 +23,7 @@ Luego tu API (imaginemos):
 * Enviará una notificación de vuelta al usuario de la API (el desarrollador externo).
     * Esto se hará enviando un request POST (desde *tu API*) a alguna *API externa* proporcionada por ese desarrollador externo (este es el "callback").
 
-## La aplicación normal de **ReadyAPI**
+## La aplicación normal de **readyapi**
 
 Primero veamos cómo sería la aplicación API normal antes de agregar el callback.
 
@@ -74,7 +74,7 @@ Cuando implementes el callback tú mismo, podrías usar algo como <a href="https
 
 Este código no se ejecutará en tu aplicación, solo lo necesitamos para *documentar* cómo debería verse esa *API externa*.
 
-Pero, ya sabes cómo crear fácilmente documentación automática para una API con **ReadyAPI**.
+Pero, ya sabes cómo crear fácilmente documentación automática para una API con **readyapi**.
 
 Así que vamos a usar ese mismo conocimiento para documentar cómo debería verse la *API externa*... creando la(s) *path operation(s)* que la API externa debería implementar (las que tu API va a llamar).
 
@@ -96,7 +96,7 @@ Primero crea un nuevo `APIRouter` que contendrá uno o más callbacks.
 
 Para crear la *path operation* del callback utiliza el mismo `APIRouter` que creaste anteriormente.
 
-Debería verse como una *path operation* normal de ReadyAPI:
+Debería verse como una *path operation* normal de readyapi:
 
 * Probablemente debería tener una declaración del body que debería recibir, por ejemplo `body: InvoiceEvent`.
 * Y también podría tener una declaración del response que debería devolver, por ejemplo `response_model=InvoiceEventReceived`.

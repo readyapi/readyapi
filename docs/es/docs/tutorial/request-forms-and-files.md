@@ -32,7 +32,7 @@ Y puedes declarar algunos de los archivos como `bytes` y algunos como `UploadFil
 
 Puedes declarar múltiples parámetros `File` y `Form` en una *path operation*, pero no puedes también declarar campos `Body` que esperas recibir como JSON, ya que el request tendrá el body codificado usando `multipart/form-data` en lugar de `application/json`.
 
-Esto no es una limitación de **ReadyAPI**, es parte del protocolo HTTP.
+Esto no es una limitación de **readyapi**, es parte del protocolo HTTP.
 
 ///
 

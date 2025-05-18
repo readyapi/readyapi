@@ -65,7 +65,7 @@ De la misma manera, puedes declarar parámetros de query opcionales, establecien
 
 /// check | Revisa
 
-Además, nota que **ReadyAPI** es lo suficientemente inteligente para notar que el parámetro de path `item_id` es un parámetro de path y `q` no lo es, por lo tanto, es un parámetro de query.
+Además, nota que **readyapi** es lo suficientemente inteligente para notar que el parámetro de path `item_id` es un parámetro de path y `q` no lo es, por lo tanto, es un parámetro de query.
 
 ///
 
@@ -109,7 +109,7 @@ o cualquier otra variación (mayúsculas, primera letra en mayúscula, etc.), tu
 
 ## Múltiples parámetros de path y de query
 
-Puedes declarar múltiples parámetros de path y de query al mismo tiempo, **ReadyAPI** sabe cuál es cuál.
+Puedes declarar múltiples parámetros de path y de query al mismo tiempo, **readyapi** sabe cuál es cuál.
 
 Y no tienes que declararlos en un orden específico.
 

@@ -33,7 +33,7 @@ Por exemplo:
 
 Aqui declaramos a configuração `openapi_url` com o mesmo padrão de `"/openapi.json"`.
 
-E então o usamos ao criar o aplicativo `ReadyAPI`.
+E então o usamos ao criar o aplicativo `readyapi`.
 
 Então você pode desabilitar o OpenAPI (incluindo os documentos da interface do usuário) definindo a variável de ambiente `OPENAPI_URL` como uma string vazia, como:
 

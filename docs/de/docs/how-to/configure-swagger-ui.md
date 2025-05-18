@@ -2,11 +2,11 @@
 
 Sie können einige zusätzliche <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">Parameter der Swagger-Oberfläche</a> konfigurieren.
 
-Um diese zu konfigurieren, übergeben Sie das Argument `swagger_ui_parameters` beim Erstellen des `ReadyAPI()`-App-Objekts oder an die Funktion `get_swagger_ui_html()`.
+Um diese zu konfigurieren, übergeben Sie das Argument `swagger_ui_parameters` beim Erstellen des `readyapi()`-App-Objekts oder an die Funktion `get_swagger_ui_html()`.
 
 `swagger_ui_parameters` empfängt ein Dict mit den Konfigurationen, die direkt an die Swagger-Oberfläche übergeben werden.
 
-ReadyAPI konvertiert die Konfigurationen nach **JSON**, um diese mit JavaScript kompatibel zu machen, da die Swagger-Oberfläche das benötigt.
+readyapi konvertiert die Konfigurationen nach **JSON**, um diese mit JavaScript kompatibel zu machen, da die Swagger-Oberfläche das benötigt.
 
 ## Syntaxhervorhebung deaktivieren
 
@@ -36,7 +36,7 @@ Obige Konfiguration würde das Theme für die Farbe der Syntaxhervorhebung ände
 
 ## Defaultparameter der Swagger-Oberfläche ändern
 
-ReadyAPI enthält einige Defaultkonfigurationsparameter, die für die meisten Anwendungsfälle geeignet sind.
+readyapi enthält einige Defaultkonfigurationsparameter, die für die meisten Anwendungsfälle geeignet sind.
 
 Es umfasst die folgenden Defaultkonfigurationen:
 
@@ -56,7 +56,7 @@ Um alle anderen möglichen Konfigurationen zu sehen, die Sie verwenden können, 
 
 Die Swagger-Oberfläche erlaubt, dass andere Konfigurationen auch **JavaScript**-Objekte sein können (z. B. JavaScript-Funktionen).
 
-ReadyAPI umfasst auch diese Nur-JavaScript-`presets`-Einstellungen:
+readyapi umfasst auch diese Nur-JavaScript-`presets`-Einstellungen:
 
 ```JavaScript
 presets: [

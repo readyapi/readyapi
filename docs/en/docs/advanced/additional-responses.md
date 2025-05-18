@@ -4,7 +4,7 @@
 
 This is a rather advanced topic.
 
-If you are starting with **ReadyAPI**, you might not need this.
+If you are starting with **readyapi**, you might not need this.
 
 ///
 
@@ -22,7 +22,7 @@ It receives a `dict`: the keys are status codes for each response (like `200`), 
 
 Each of those response `dict`s can have a key `model`, containing a Pydantic model, just like `response_model`.
 
-**ReadyAPI** will take that model, generate its JSON Schema and include it in the correct place in OpenAPI.
+**readyapi** will take that model, generate its JSON Schema and include it in the correct place in OpenAPI.
 
 For example, to declare another response with a status code `404` and a Pydantic model `Message`, you can write:
 
@@ -38,14 +38,14 @@ Keep in mind that you have to return the `JSONResponse` directly.
 
 The `model` key is not part of OpenAPI.
 
-**ReadyAPI** will take the Pydantic model from there, generate the JSON Schema, and put it in the correct place.
+**readyapi** will take the Pydantic model from there, generate the JSON Schema, and put it in the correct place.
 
 The correct place is:
 
 * In the key `content`, that has as value another JSON object (`dict`) that contains:
     * A key with the media type, e.g. `application/json`, that contains as value another JSON object, that contains:
         * A key `schema`, that has as the value the JSON Schema from the model, here's the correct place.
-            * **ReadyAPI** adds a reference here to the global JSON Schemas in another place in your OpenAPI instead of including it directly. This way, other applications and clients can use those JSON Schemas directly, provide better code generation tools, etc.
+            * **readyapi** adds a reference here to the global JSON Schemas in another place in your OpenAPI instead of including it directly. This way, other applications and clients can use those JSON Schemas directly, provide better code generation tools, etc.
 
 ///
 
@@ -185,9 +185,9 @@ Notice that you have to return the image using a `FileResponse` directly.
 
 /// info
 
-Unless you specify a different media type explicitly in your `responses` parameter, ReadyAPI will assume the response has the same media type as the main response class (default `application/json`).
+Unless you specify a different media type explicitly in your `responses` parameter, readyapi will assume the response has the same media type as the main response class (default `application/json`).
 
-But if you have specified a custom response class with `None` as its media type, ReadyAPI will use `application/json` for any additional response that has an associated model.
+But if you have specified a custom response class with `None` as its media type, readyapi will use `application/json` for any additional response that has an associated model.
 
 ///
 
@@ -197,7 +197,7 @@ You can also combine response information from multiple places, including the `r
 
 You can declare a `response_model`, using the default status code `200` (or a custom one if you need), and then declare additional information for that same response in `responses`, directly in the OpenAPI schema.
 
-**ReadyAPI** will keep the additional information from `responses`, and combine it with the JSON Schema from your model.
+**readyapi** will keep the additional information from `responses`, and combine it with the JSON Schema from your model.
 
 For example, you can declare a response with a status code `404` that uses a Pydantic model and has a custom `description`.
 

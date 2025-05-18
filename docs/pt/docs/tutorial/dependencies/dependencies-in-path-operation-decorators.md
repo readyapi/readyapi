@@ -66,4 +66,4 @@ Mais a frente, quando você ler sobre como estruturar aplicações maiores ([Big
 
 ## Dependências globais
 
-No próximo passo veremos como adicionar dependências para uma aplicação `ReadyAPI` inteira, para que ela seja aplicada em toda *operação de rota*.
+No próximo passo veremos como adicionar dependências para uma aplicação `readyapi` inteira, para que ela seja aplicada em toda *operação de rota*.

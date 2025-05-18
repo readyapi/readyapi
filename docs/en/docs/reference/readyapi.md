@@ -1,14 +1,14 @@
-# `ReadyAPI` class
+# `readyapi` class
 
-Here's the reference information for the `ReadyAPI` class, with all its parameters, attributes and methods.
+Here's the reference information for the `readyapi` class, with all its parameters, attributes and methods.
 
-You can import the `ReadyAPI` class directly from `readyapi`:
+You can import the `readyapi` class directly from `readyapi`:
 
 ```python
-from readyapi import ReadyAPI
+from readyapi import readyapi
 ```
 
-::: readyapi.ReadyAPI
+::: readyapi.readyapi
     options:
         members:
             - openapi_version

@@ -26,6 +26,6 @@ E então você pode retornar qualquer objeto que você precise, como você faria
 
 E se você declarar um `response_model`, ele ainda será utilizado para filtrar e converter o objeto que você retornou.
 
-O **ReadyAPI** utilizará este retorno *temporal* para extrair o código de status (e também cookies e headers), e irá colocá-los no retorno final que contém o valor que você retornou, filtrado por qualquer `response_model`.
+O **readyapi** utilizará este retorno *temporal* para extrair o código de status (e também cookies e headers), e irá colocá-los no retorno final que contém o valor que você retornou, filtrado por qualquer `response_model`.
 
 Você também pode declarar o parâmetro `Response` nas dependências, e definir o código de status nelas. Mas lembre-se que o último que for definido é o que prevalecerá.

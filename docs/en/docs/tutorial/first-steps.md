@@ -1,6 +1,6 @@
 # First Steps
 
-The simplest ReadyAPI file could look like this:
+The simplest readyapi file could look like this:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -13,7 +13,7 @@ Run the live server:
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -21,7 +21,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -84,7 +84,7 @@ You will see the alternative automatic documentation (provided by <a href="https
 
 ### OpenAPI
 
-**ReadyAPI** generates a "schema" with all your API using the **OpenAPI** standard for defining APIs.
+**readyapi** generates a "schema" with all your API using the **OpenAPI** standard for defining APIs.
 
 #### "Schema"
 
@@ -108,7 +108,7 @@ OpenAPI defines an API schema for your API. And that schema includes definitions
 
 #### Check the `openapi.json`
 
-If you are curious about how the raw OpenAPI schema looks like, ReadyAPI automatically generates a JSON (schema) with the descriptions of all your API.
+If you are curious about how the raw OpenAPI schema looks like, readyapi automatically generates a JSON (schema) with the descriptions of all your API.
 
 You can see it directly at: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -118,7 +118,7 @@ It will show a JSON starting with something like:
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -139,31 +139,31 @@ It will show a JSON starting with something like:
 
 The OpenAPI schema is what powers the two interactive documentation systems included.
 
-And there are dozens of alternatives, all based on OpenAPI. You could easily add any of those alternatives to your application built with **ReadyAPI**.
+And there are dozens of alternatives, all based on OpenAPI. You could easily add any of those alternatives to your application built with **readyapi**.
 
 You could also use it to generate code automatically, for clients that communicate with your API. For example, frontend, mobile or IoT applications.
 
 ## Recap, step by step
 
-### Step 1: import `ReadyAPI`
+### Step 1: import `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI` is a Python class that provides all the functionality for your API.
+`readyapi` is a Python class that provides all the functionality for your API.
 
 /// note | Technical Details
 
-`ReadyAPI` is a class that inherits directly from `Starlette`.
+`readyapi` is a class that inherits directly from `Starlette`.
 
-You can use all the <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> functionality with `ReadyAPI` too.
+You can use all the <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> functionality with `readyapi` too.
 
 ///
 
-### Step 2: create a `ReadyAPI` "instance"
+### Step 2: create a `readyapi` "instance"
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-Here the `app` variable will be an "instance" of the class `ReadyAPI`.
+Here the `app` variable will be an "instance" of the class `readyapi`.
 
 This will be the main point of interaction to create all your API.
 
@@ -232,7 +232,7 @@ We are going to call them "**operations**" too.
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-The `@app.get("/")` tells **ReadyAPI** that the function right below is in charge of handling requests that go to:
+The `@app.get("/")` tells **readyapi** that the function right below is in charge of handling requests that go to:
 
 * the path `/`
 * using a <abbr title="an HTTP GET method"><code>get</code> operation</abbr>
@@ -245,7 +245,7 @@ You put it on top of a function. Like a pretty decorative hat (I guess that's wh
 
 A "decorator" takes the function below and does something with it.
 
-In our case, this decorator tells **ReadyAPI** that the function below corresponds to the **path** `/` with an **operation** `get`.
+In our case, this decorator tells **readyapi** that the function below corresponds to the **path** `/` with an **operation** `get`.
 
 It is the "**path operation decorator**".
 
@@ -268,7 +268,7 @@ And the more exotic ones:
 
 You are free to use each operation (HTTP method) as you wish.
 
-**ReadyAPI** doesn't enforce any specific meaning.
+**readyapi** doesn't enforce any specific meaning.
 
 The information here is presented as a guideline, not a requirement.
 
@@ -288,7 +288,7 @@ This is our "**path operation function**":
 
 This is a Python function.
 
-It will be called by **ReadyAPI** whenever it receives a request to the URL "`/`" using a `GET` operation.
+It will be called by **readyapi** whenever it receives a request to the URL "`/`" using a `GET` operation.
 
 In this case, it is an `async` function.
 
@@ -316,7 +316,7 @@ There are many other objects and models that will be automatically converted to 
 
 ## Recap
 
-* Import `ReadyAPI`.
+* Import `readyapi`.
 * Create an `app` instance.
 * Write a **path operation decorator** using decorators like `@app.get("/")`.
 * Define a **path operation function**; for example, `def root(): ...`.

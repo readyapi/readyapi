@@ -18,14 +18,14 @@ For example:
 
 It can be convenient to quickly access HTTP (and WebSocket) status codes in your app, using autocompletion for the name without having to remember the integer status codes by memory.
 
-Read more about it in the [ReadyAPI docs about Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+Read more about it in the [readyapi docs about Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
 
 ## Example
 
 ```python
-from readyapi import ReadyAPI, status
+from readyapi import readyapi, status
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/items/", status_code=status.HTTP_418_IM_A_TEAPOT)

@@ -6,11 +6,11 @@
 
 さらに、フロントエンドが**ユーザー名**と**パスワード**を使って、バックエンドで認証する方法を用意したいです。
 
-**ReadyAPI**では、これを**OAuth2**を使用して構築できます。
+**readyapi**では、これを**OAuth2**を使用して構築できます。
 
 ですが、ちょっとした必要な情報を探すために、長い仕様のすべてを読む必要はありません。
 
-**ReadyAPI**が提供するツールを使って、セキュリティを制御してみましょう。
+**readyapi**が提供するツールを使って、セキュリティを制御してみましょう。
 
 ## どう見えるか
 
@@ -88,7 +88,7 @@ $ uvicorn main:app --reload
 
 OAuth2は、バックエンドやAPIがユーザーを認証するサーバーから独立したものとして設計されていました。
 
-しかし、この場合、同じ**ReadyAPI**アプリケーションがAPIと認証を処理します。
+しかし、この場合、同じ**readyapi**アプリケーションがAPIと認証を処理します。
 
 そこで、簡略化した箇所から見直してみましょう:
 
@@ -106,9 +106,9 @@ OAuth2は、バックエンドやAPIがユーザーを認証するサーバー�
     * したがって、APIで認証するため、HTTPヘッダー`Authorization`に`Bearer`の文字列とトークンを加えた値を送信します。
     * トークンに`foobar`が含まれている場合、`Authorization`ヘッダーの内容は次のようになります: `Bearer foobar`。
 
-## **ReadyAPI**の`OAuth2PasswordBearer`
+## **readyapi**の`OAuth2PasswordBearer`
 
-**ReadyAPI**は、これらのセキュリティ機能を実装するために、抽象度の異なる複数のツールを提供しています。
+**readyapi**は、これらのセキュリティ機能を実装するために、抽象度の異なる複数のツールを提供しています。
 
 この例では、**Bearer**トークンを使用して**OAuth2**を**パスワード**フローで使用します。これには`OAuth2PasswordBearer`クラスを使用します。
 
@@ -120,7 +120,7 @@ OAuth2は、バックエンドやAPIがユーザーを認証するサーバー�
 
 あなたがOAuth2の専門家で、あなたのニーズに適した別のオプションがある理由を正確に知っている場合を除き、ほとんどのユースケースに最適かもしれません。
 
-その場合、**ReadyAPI**はそれを構築するためのツールも提供します。
+その場合、**readyapi**はそれを構築するためのツールも提供します。
 
 ///
 
@@ -168,13 +168,13 @@ oauth2_scheme(some, parameters)
 
 この依存関係は、*path operation function*のパラメーター`token`に代入される`str`を提供します。
 
-**ReadyAPI**は、この依存関係を使用してOpenAPIスキーマ (および自動APIドキュメント) で「セキュリティスキーム」を定義できることを知っています。
+**readyapi**は、この依存関係を使用してOpenAPIスキーマ (および自動APIドキュメント) で「セキュリティスキーム」を定義できることを知っています。
 
 /// info | 技術詳細
 
-**ReadyAPI**は、`OAuth2PasswordBearer` クラス (依存関係で宣言されている) を使用してOpenAPIのセキュリティスキームを定義できることを知っています。これは`readyapi.security.oauth2.OAuth2`、`readyapi.security.base.SecurityBase`を継承しているからです。
+**readyapi**は、`OAuth2PasswordBearer` クラス (依存関係で宣言されている) を使用してOpenAPIのセキュリティスキームを定義できることを知っています。これは`readyapi.security.oauth2.OAuth2`、`readyapi.security.base.SecurityBase`を継承しているからです。
 
-OpenAPIと統合するセキュリティユーティリティ (および自動APIドキュメント) はすべて`SecurityBase`を継承しています。それにより、**ReadyAPI**はそれらをOpenAPIに統合する方法を知ることができます。
+OpenAPIと統合するセキュリティユーティリティ (および自動APIドキュメント) はすべて`SecurityBase`を継承しています。それにより、**readyapi**はそれらをOpenAPIに統合する方法を知ることができます。
 
 ///
 

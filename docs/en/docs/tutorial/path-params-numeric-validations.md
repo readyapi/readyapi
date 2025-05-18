@@ -10,11 +10,11 @@ First, import `Path` from `readyapi`, and import `Annotated`:
 
 /// info
 
-ReadyAPI added support for `Annotated` (and started recommending it) in version 0.95.0.
+readyapi added support for `Annotated` (and started recommending it) in version 0.95.0.
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the readyapi version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
 
 ///
 
@@ -50,7 +50,7 @@ Python will complain if you put a value with a "default" before a value that doe
 
 But you can re-order them, and have the value without a default (the query parameter `q`) first.
 
-It doesn't matter for **ReadyAPI**. It will detect the parameters by their names, types and default declarations (`Query`, `Path`, etc), it doesn't care about the order.
+It doesn't matter for **readyapi**. It will detect the parameters by their names, types and default declarations (`Query`, `Path`, etc), it doesn't care about the order.
 
 So, you can declare your function as:
 

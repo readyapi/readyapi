@@ -1,6 +1,6 @@
 # Implantação
 
-A implantação de uma aplicação **ReadyAPI** é relativamente simples.
+A implantação de uma aplicação **readyapi** é relativamente simples.
 
 Existem várias maneiras para fazer isso, dependendo do seu caso específico e das ferramentas que você utiliza.
 

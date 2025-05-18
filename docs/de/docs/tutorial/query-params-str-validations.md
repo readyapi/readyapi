@@ -1,16 +1,16 @@
 # Query-Parameter und Stringvalidierung
 
-**ReadyAPI** erlaubt es Ihnen, Ihre Parameter zusätzlich zu validieren, und zusätzliche Informationen hinzuzufügen.
+**readyapi** erlaubt es Ihnen, Ihre Parameter zusätzlich zu validieren, und zusätzliche Informationen hinzuzufügen.
 
 Nehmen wir als Beispiel die folgende Anwendung:
 
 {* ../../docs_src/query_params_str_validations/tutorial001_py310.py hl[7] *}
 
-Der Query-Parameter `q` hat den Typ `Union[str, None]` (oder `str | None` in Python 3.10), was bedeutet, er ist entweder ein `str` oder `None`. Der Defaultwert ist `None`, also weiß ReadyAPI, der Parameter ist nicht erforderlich.
+Der Query-Parameter `q` hat den Typ `Union[str, None]` (oder `str | None` in Python 3.10), was bedeutet, er ist entweder ein `str` oder `None`. Der Defaultwert ist `None`, also weiß readyapi, der Parameter ist nicht erforderlich.
 
 /// note | Hinweis
 
-ReadyAPI weiß nur dank des definierten Defaultwertes `=None`, dass der Wert von `q` nicht erforderlich ist
+readyapi weiß nur dank des definierten Defaultwertes `=None`, dass der Wert von `q` nicht erforderlich ist
 
 `Union[str, None]` hingegen erlaubt ihren Editor, Sie besser zu unterstützen und Fehler zu erkennen.
 
@@ -41,7 +41,7 @@ In Python 3.9 oder darüber, ist `Annotated` Teil der Standardbibliothek, also k
 
 In Versionen unter Python 3.9 importieren Sie `Annotated` von `typing_extensions`.
 
-Es wird bereits mit ReadyAPI installiert sein.
+Es wird bereits mit readyapi installiert sein.
 
 ```Python hl_lines="3-4"
 {!> ../../docs_src/query_params_str_validations/tutorial002_an.py!}
@@ -51,11 +51,11 @@ Es wird bereits mit ReadyAPI installiert sein.
 
 /// info
 
-ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
+readyapi unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie readyapi](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
@@ -63,7 +63,7 @@ Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyap
 
 Erinnern Sie sich, wie ich in [Einführung in Python-Typen](../python-types.md#typhinweise-mit-metadaten-annotationen){.internal-link target=_blank} sagte, dass Sie mittels `Annotated` Metadaten zu Ihren Parametern hinzufügen können?
 
-Jetzt ist es an der Zeit, das mit ReadyAPI auszuprobieren. 🚀
+Jetzt ist es an der Zeit, das mit readyapi auszuprobieren. 🚀
 
 Wir hatten diese Typannotation:
 
@@ -113,9 +113,9 @@ Jetzt, da wir `Annotated` für unsere Metadaten deklariert haben, fügen Sie `Qu
 
 Beachten Sie, dass der Defaultwert immer noch `None` ist, sodass der Parameter immer noch optional ist.
 
-Aber jetzt, mit `Query(max_length=50)` innerhalb von `Annotated`, sagen wir ReadyAPI, dass es diesen Wert aus den Query-Parametern extrahieren soll (das hätte es sowieso gemacht 🤷) und dass wir eine **zusätzliche Validierung** für diesen Wert haben wollen (darum machen wir das, um die zusätzliche Validierung zu bekommen). 😎
+Aber jetzt, mit `Query(max_length=50)` innerhalb von `Annotated`, sagen wir readyapi, dass es diesen Wert aus den Query-Parametern extrahieren soll (das hätte es sowieso gemacht 🤷) und dass wir eine **zusätzliche Validierung** für diesen Wert haben wollen (darum machen wir das, um die zusätzliche Validierung zu bekommen). 😎
 
-ReadyAPI wird nun:
+readyapi wird nun:
 
 * Die Daten **validieren** und sicherstellen, dass sie nicht länger als 50 Zeichen sind
 * Dem Client einen **verständlichen Fehler** anzeigen, wenn die Daten ungültig sind
@@ -123,7 +123,7 @@ ReadyAPI wird nun:
 
 ## Alternativ (alt): `Query` als Defaultwert
 
-Frühere Versionen von ReadyAPI (vor <abbr title="vor 2023-03">0.95.0</abbr>) benötigten `Query` als Defaultwert des Parameters, statt es innerhalb von `Annotated` unterzubringen. Die Chance ist groß, dass Sie Quellcode sehen, der das immer noch so macht, darum erkläre ich es Ihnen.
+Frühere Versionen von readyapi (vor <abbr title="vor 2023-03">0.95.0</abbr>) benötigten `Query` als Defaultwert des Parameters, statt es innerhalb von `Annotated` unterzubringen. Die Chance ist groß, dass Sie Quellcode sehen, der das immer noch so macht, darum erkläre ich es Ihnen.
 
 /// tip | Tipp
 
@@ -135,7 +135,7 @@ So würden Sie `Query()` als Defaultwert Ihres Funktionsparameters verwenden, de
 
 {* ../../docs_src/query_params_str_validations/tutorial002_py310.py hl[7] *}
 
-Da wir in diesem Fall (ohne die Verwendung von `Annotated`) den Parameter-Defaultwert `None` mit `Query()` ersetzen, müssen wir nun dessen Defaultwert mit dem Parameter `Query(default=None)` deklarieren. Das dient demselben Zweck, `None` als Defaultwert für den Funktionsparameter zu setzen (zumindest für ReadyAPI).
+Da wir in diesem Fall (ohne die Verwendung von `Annotated`) den Parameter-Defaultwert `None` mit `Query()` ersetzen, müssen wir nun dessen Defaultwert mit dem Parameter `Query(default=None)` deklarieren. Das dient demselben Zweck, `None` als Defaultwert für den Funktionsparameter zu setzen (zumindest für readyapi).
 
 Sprich:
 
@@ -179,7 +179,7 @@ oder:
 
 der wichtigste Teil ist, um einen Parameter optional zu machen, da dieses `None` der Defaultwert ist, und das ist es, was diesen Parameter **nicht erforderlich** macht.
 
-Der Teil mit `Union[str, None]` erlaubt es Ihrem Editor, Sie besser zu unterstützen, aber er sagt ReadyAPI nicht, dass dieser Parameter optional ist.
+Der Teil mit `Union[str, None]` erlaubt es Ihrem Editor, Sie besser zu unterstützen, aber er sagt readyapi nicht, dass dieser Parameter optional ist.
 
 ///
 
@@ -223,9 +223,9 @@ q: str = Query(default="rick")
 
 Der **Default**wert des **Funktionsparameters** ist der **tatsächliche Default**wert, das spielt generell intuitiver mit Python zusammen. 😌
 
-Sie können die Funktion ohne ReadyAPI an **anderen Stellen aufrufen**, und es wird **wie erwartet funktionieren**. Wenn es einen **erforderlichen** Parameter gibt (ohne Defaultwert), und Sie führen die Funktion ohne den benötigten Parameter aus, dann wird Ihr **Editor** Sie das mit einem Fehler wissen lassen, und **Python** wird sich auch beschweren.
+Sie können die Funktion ohne readyapi an **anderen Stellen aufrufen**, und es wird **wie erwartet funktionieren**. Wenn es einen **erforderlichen** Parameter gibt (ohne Defaultwert), und Sie führen die Funktion ohne den benötigten Parameter aus, dann wird Ihr **Editor** Sie das mit einem Fehler wissen lassen, und **Python** wird sich auch beschweren.
 
-Wenn Sie aber nicht `Annotated` benutzen und stattdessen die **(alte) Variante mit einem Defaultwert**, dann müssen Sie, wenn Sie die Funktion ohne ReadyAPI an **anderen Stellen** aufrufen, sich daran **erinnern**, die Argumente der Funktion zu übergeben, damit es richtig funktioniert. Ansonsten erhalten Sie unerwartete Werte (z. B. `QueryInfo` oder etwas Ähnliches, statt `str`). Ihr Editor kann ihnen nicht helfen, und Python wird die Funktion ohne Beschwerden ausführen, es sei denn, die Operationen innerhalb lösen einen Fehler aus.
+Wenn Sie aber nicht `Annotated` benutzen und stattdessen die **(alte) Variante mit einem Defaultwert**, dann müssen Sie, wenn Sie die Funktion ohne readyapi an **anderen Stellen** aufrufen, sich daran **erinnern**, die Argumente der Funktion zu übergeben, damit es richtig funktioniert. Ansonsten erhalten Sie unerwartete Werte (z. B. `QueryInfo` oder etwas Ähnliches, statt `str`). Ihr Editor kann ihnen nicht helfen, und Python wird die Funktion ohne Beschwerden ausführen, es sei denn, die Operationen innerhalb lösen einen Fehler aus.
 
 Da `Annotated` mehrere Metadaten haben kann, können Sie dieselbe Funktion auch mit anderen Tools verwenden, wie etwa <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">Cligenius</a>. 🚀
 
@@ -249,11 +249,11 @@ Dieses bestimmte reguläre Suchmuster prüft, ob der erhaltene Parameter-Wert:
 
 Wenn Sie sich verloren fühlen bei all diesen **„Regulärer Ausdruck“**-Konzepten, keine Sorge. Reguläre Ausdrücke sind für viele Menschen ein schwieriges Thema. Sie können auch ohne reguläre Ausdrücke eine ganze Menge machen.
 
-Aber wenn Sie sie brauchen und sie lernen, wissen Sie, dass Sie sie bereits direkt in **ReadyAPI** verwenden können.
+Aber wenn Sie sie brauchen und sie lernen, wissen Sie, dass Sie sie bereits direkt in **readyapi** verwenden können.
 
 ### Pydantic v1 `regex` statt `pattern`
 
-Vor Pydantic Version 2 und vor ReadyAPI Version 0.100.0, war der Name des Parameters `regex` statt `pattern`, aber das ist jetzt <abbr title="deprecated – obsolet, veraltet: Es soll nicht mehr verwendet werden">deprecated</abbr>.
+Vor Pydantic Version 2 und vor readyapi Version 0.100.0, war der Name des Parameters `regex` statt `pattern`, aber das ist jetzt <abbr title="deprecated – obsolet, veraltet: Es soll nicht mehr verwendet werden">deprecated</abbr>.
 
 Sie könnten immer noch Code sehen, der den alten Namen verwendet:
 
@@ -325,7 +325,7 @@ Um das zu machen, deklarieren Sie, dass `None` ein gültiger Typ ist, aber verwe
 
 /// tip | Tipp
 
-Pydantic, welches die gesamte Datenvalidierung und Serialisierung in ReadyAPI antreibt, hat ein spezielles Verhalten, wenn Sie `Optional` oder `Union[Something, None]` ohne Defaultwert verwenden, Sie können mehr darüber in der Pydantic-Dokumentation unter <a href="https://docs.pydantic.dev/2.3/usage/models/#required-fields" class="external-link" target="_blank">Required fields</a> erfahren.
+Pydantic, welches die gesamte Datenvalidierung und Serialisierung in readyapi antreibt, hat ein spezielles Verhalten, wenn Sie `Optional` oder `Union[Something, None]` ohne Defaultwert verwenden, Sie können mehr darüber in der Pydantic-Dokumentation unter <a href="https://docs.pydantic.dev/2.3/usage/models/#required-fields" class="external-link" target="_blank">Required fields</a> erfahren.
 
 ///
 
@@ -403,7 +403,7 @@ Sie können auch `list` direkt verwenden, anstelle von `List[str]` (oder `list[s
 
 /// note | Hinweis
 
-Beachten Sie, dass ReadyAPI in diesem Fall den Inhalt der Liste nicht überprüft.
+Beachten Sie, dass readyapi in diesem Fall den Inhalt der Liste nicht überprüft.
 
 Zum Beispiel würde `List[int]` überprüfen (und dokumentieren) dass die Liste Ganzzahlen enthält. `list` alleine macht das nicht.
 

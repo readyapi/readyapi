@@ -1,10 +1,10 @@
-# ReadyAPI CLI
+# readyapi CLI
 
-**ReadyAPI CLI** це програма командного рядка, яку Ви можете використовувати, щоб обслуговувати Ваш додаток ReadyAPI, керувати Вашими ReadyApi проектами, тощо.
+**readyapi CLI** це програма командного рядка, яку Ви можете використовувати, щоб обслуговувати Ваш додаток readyapi, керувати Вашими readyapi проектами, тощо.
 
-Коли Ви встановлюєте ReadyApi (тобто виконуєте `pip install "readyapi[standard]"`), Ви також встановлюєте пакунок `readyapi-cli`, цей пакунок надає команду `readyapi` в терміналі.
+Коли Ви встановлюєте readyapi (тобто виконуєте `pip install "readyapi[standard]"`), Ви також встановлюєте пакунок `readyapi-cli`, цей пакунок надає команду `readyapi` в терміналі.
 
-Для запуску Вашого ReadyAPI проекту для розробки, Ви можете скористатись командою `readyapi dev`:
+Для запуску Вашого readyapi проекту для розробки, Ви можете скористатись командою `readyapi dev`:
 
 <div class="termy">
 
@@ -22,9 +22,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
+<font color="#3465A4">INFO    </font> Found importable readyapi app
 
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -32,7 +32,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -54,13 +54,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 </div>
 
-Програма командного рядка `readyapi` це **ReadyAPI CLI**.
+Програма командного рядка `readyapi` це **readyapi CLI**.
 
-ReadyAPI CLI приймає шлях до Вашої Python програми (напр. `main.py`) і автоматично виявляє екземпляр `ReadyAPI` (зазвичай названий `app`), обирає коректний процес імпорту, а потім обслуговує його.
+readyapi CLI приймає шлях до Вашої Python програми (напр. `main.py`) і автоматично виявляє екземпляр `readyapi` (зазвичай названий `app`), обирає коректний процес імпорту, а потім обслуговує його.
 
 Натомість, для запуску у продакшн використовуйте `readyapi run`. 🚀
 
-Всередині **ReadyAPI CLI** використовує <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, високопродуктивний, production-ready, ASGI cервер. 😎
+Всередині **readyapi CLI** використовує <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, високопродуктивний, production-ready, ASGI cервер. 😎
 
 ## `readyapi dev`
 
@@ -70,7 +70,7 @@ ReadyAPI CLI приймає шлях до Вашої Python програми (н
 
 ## `readyapi run`
 
-Виконання `readyapi run` запустить ReadyAPI у продакшн-режимі за замовчуванням.
+Виконання `readyapi run` запустить readyapi у продакшн-режимі за замовчуванням.
 
 За замовчуванням, **автоматичне перезавантаження** вимкнене. Воно також прослуховує IP-адресу `0.0.0.0`, що означає всі доступні IP адреси, тим самим даючи змогу будь-кому комунікувати з девайсом. Так Ви зазвичай будете запускати його у продакшн, наприклад у контейнері.
 

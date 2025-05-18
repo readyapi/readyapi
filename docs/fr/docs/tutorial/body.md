@@ -12,7 +12,7 @@ Pour déclarer un corps de **requête**, on utilise les modèles de <a href="htt
 
 Pour envoyer de la donnée, vous devriez utiliser : `POST` (le plus populaire), `PUT`, `DELETE` ou `PATCH`.
 
-Envoyer un corps dans une requête `GET` a un comportement non défini dans les spécifications, cela est néanmoins supporté par **ReadyAPI**, seulement pour des cas d'utilisation très complexes/extrêmes.
+Envoyer un corps dans une requête `GET` a un comportement non défini dans les spécifications, cela est néanmoins supporté par **readyapi**, seulement pour des cas d'utilisation très complexes/extrêmes.
 
 Ceci étant découragé, la documentation interactive générée par Swagger UI ne montrera pas de documentation pour le corps d'une requête `GET`, et les proxys intermédiaires risquent de ne pas le supporter.
 
@@ -64,7 +64,7 @@ Pour l'ajouter à votre *opération de chemin*, déclarez-le comme vous déclare
 
 ## Résultats
 
-En utilisant uniquement les déclarations de type Python, **ReadyAPI** réussit à :
+En utilisant uniquement les déclarations de type Python, **readyapi** réussit à :
 
 * Lire le contenu de la requête en tant que JSON.
 * Convertir les types correspondants (si nécessaire).
@@ -131,7 +131,7 @@ Dans la fonction, vous pouvez accéder à tous les attributs de l'objet du modè
 
 Vous pouvez déclarer des paramètres de chemin et un corps de requête pour la même *opération de chemin*.
 
-**ReadyAPI** est capable de reconnaître que les paramètres de la fonction qui correspondent aux paramètres de chemin doivent être **récupérés depuis le chemin**, et que les paramètres de fonctions déclarés comme modèles Pydantic devraient être **récupérés depuis le corps de la requête**.
+**readyapi** est capable de reconnaître que les paramètres de la fonction qui correspondent aux paramètres de chemin doivent être **récupérés depuis le chemin**, et que les paramètres de fonctions déclarés comme modèles Pydantic devraient être **récupérés depuis le corps de la requête**.
 
 {* ../../docs_src/body/tutorial003.py hl[17:18] *}
 
@@ -139,7 +139,7 @@ Vous pouvez déclarer des paramètres de chemin et un corps de requête pour la 
 
 Vous pouvez aussi déclarer un **corps**, et des paramètres de **chemin** et de **requête** dans la même *opération de chemin*.
 
-**ReadyAPI** saura reconnaître chacun d'entre eux et récupérer la bonne donnée au bon endroit.
+**readyapi** saura reconnaître chacun d'entre eux et récupérer la bonne donnée au bon endroit.
 
 {* ../../docs_src/body/tutorial004.py hl[18] *}
 
@@ -151,9 +151,9 @@ Les paramètres de la fonction seront reconnus comme tel :
 
 /// note
 
-**ReadyAPI** saura que la valeur de `q` n'est pas requise grâce à la valeur par défaut `=None`.
+**readyapi** saura que la valeur de `q` n'est pas requise grâce à la valeur par défaut `=None`.
 
-Le type `Optional` dans `Optional[str]` n'est pas utilisé par **ReadyAPI**, mais sera utile à votre éditeur pour améliorer le support offert par ce dernier et détecter plus facilement des erreurs de type.
+Le type `Optional` dans `Optional[str]` n'est pas utilisé par **readyapi**, mais sera utile à votre éditeur pour améliorer le support offert par ce dernier et détecter plus facilement des erreurs de type.
 
 ///
 

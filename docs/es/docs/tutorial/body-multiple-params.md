@@ -4,7 +4,7 @@ Ahora que hemos visto cómo usar `Path` y `Query`, veamos usos más avanzados de
 
 ## Mezclar `Path`, `Query` y parámetros del cuerpo
 
-Primero, por supuesto, puedes mezclar las declaraciones de parámetros de `Path`, `Query` y del request body libremente y **ReadyAPI** sabrá qué hacer.
+Primero, por supuesto, puedes mezclar las declaraciones de parámetros de `Path`, `Query` y del request body libremente y **readyapi** sabrá qué hacer.
 
 Y también puedes declarar parámetros del cuerpo como opcionales, estableciendo el valor predeterminado a `None`:
 
@@ -35,7 +35,7 @@ Pero también puedes declarar múltiples parámetros del cuerpo, por ejemplo `it
 
 {* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
 
-En este caso, **ReadyAPI** notará que hay más de un parámetro del cuerpo en la función (hay dos parámetros que son modelos de Pydantic).
+En este caso, **readyapi** notará que hay más de un parámetro del cuerpo en la función (hay dos parámetros que son modelos de Pydantic).
 
 Entonces, usará los nombres de los parámetros como claves (nombres de campo) en el cuerpo, y esperará un cuerpo como:
 
@@ -60,23 +60,23 @@ Ten en cuenta que aunque el `item` se declaró de la misma manera que antes, aho
 
 ///
 
-**ReadyAPI** hará la conversión automática del request, de modo que el parámetro `item` reciba su contenido específico y lo mismo para `user`.
+**readyapi** hará la conversión automática del request, de modo que el parámetro `item` reciba su contenido específico y lo mismo para `user`.
 
 Realizará la validación de los datos compuestos, y los documentará así para el esquema de OpenAPI y la documentación automática.
 
 ## Valores singulares en el cuerpo
 
-De la misma manera que hay un `Query` y `Path` para definir datos extra para parámetros de query y path, **ReadyAPI** proporciona un equivalente `Body`.
+De la misma manera que hay un `Query` y `Path` para definir datos extra para parámetros de query y path, **readyapi** proporciona un equivalente `Body`.
 
 Por ejemplo, ampliando el modelo anterior, podrías decidir que deseas tener otra clave `importance` en el mismo cuerpo, además de `item` y `user`.
 
-Si lo declaras tal cual, debido a que es un valor singular, **ReadyAPI** asumirá que es un parámetro de query.
+Si lo declaras tal cual, debido a que es un valor singular, **readyapi** asumirá que es un parámetro de query.
 
-Pero puedes instruir a **ReadyAPI** para que lo trate como otra clave del cuerpo usando `Body`:
+Pero puedes instruir a **readyapi** para que lo trate como otra clave del cuerpo usando `Body`:
 
 {* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
-En este caso, **ReadyAPI** esperará un cuerpo como:
+En este caso, **readyapi** esperará un cuerpo como:
 
 ```JSON
 {
@@ -126,7 +126,7 @@ Por ejemplo:
 
 Supongamos que solo tienes un único parámetro de cuerpo `item` de un modelo Pydantic `Item`.
 
-Por defecto, **ReadyAPI** esperará su cuerpo directamente.
+Por defecto, **readyapi** esperará su cuerpo directamente.
 
 Pero si deseas que espere un JSON con una clave `item` y dentro de ella los contenidos del modelo, como lo hace cuando declaras parámetros de cuerpo extra, puedes usar el parámetro especial `Body` `embed`:
 
@@ -138,7 +138,7 @@ como en:
 
 {* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
-En este caso, **ReadyAPI** esperará un cuerpo como:
+En este caso, **readyapi** esperará un cuerpo como:
 
 ```JSON hl_lines="2"
 {
@@ -166,8 +166,8 @@ en lugar de:
 
 Puedes añadir múltiples parámetros de cuerpo a tu *path operation function*, aunque un request solo puede tener un único cuerpo.
 
-Pero **ReadyAPI** lo manejará, te dará los datos correctos en tu función, y validará y documentará el esquema correcto en la *path operation*.
+Pero **readyapi** lo manejará, te dará los datos correctos en tu función, y validará y documentará el esquema correcto en la *path operation*.
 
 También puedes declarar valores singulares para ser recibidos como parte del cuerpo.
 
-Y puedes instruir a **ReadyAPI** para embeber el cuerpo en una clave incluso cuando solo hay un único parámetro declarado.
+Y puedes instruir a **readyapi** para embeber el cuerpo en una clave incluso cuando solo hay un único parámetro declarado.

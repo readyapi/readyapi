@@ -1,6 +1,6 @@
 # Primeros Pasos
 
-El archivo ReadyAPI más simple podría verse así:
+El archivo readyapi más simple podría verse así:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -24,9 +24,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
+<font color="#3465A4">INFO    </font> Found importable readyapi app
 
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -34,7 +34,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -92,7 +92,7 @@ Verás la documentación alternativa automática (proporcionada por <a href="htt
 
 ### OpenAPI
 
-**ReadyAPI** genera un "esquema" con toda tu API utilizando el estándar **OpenAPI** para definir APIs.
+**readyapi** genera un "esquema" con toda tu API utilizando el estándar **OpenAPI** para definir APIs.
 
 #### "Esquema"
 
@@ -116,7 +116,7 @@ OpenAPI define un esquema de API para tu API. Y ese esquema incluye definiciones
 
 #### Revisa el `openapi.json`
 
-Si tienes curiosidad por cómo se ve el esquema OpenAPI en bruto, ReadyAPI automáticamente genera un JSON (esquema) con las descripciones de toda tu API.
+Si tienes curiosidad por cómo se ve el esquema OpenAPI en bruto, readyapi automáticamente genera un JSON (esquema) con las descripciones de toda tu API.
 
 Puedes verlo directamente en: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -126,7 +126,7 @@ Mostrará un JSON que empieza con algo como:
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -147,31 +147,31 @@ Mostrará un JSON que empieza con algo como:
 
 El esquema OpenAPI es lo que impulsa los dos sistemas de documentación interactiva incluidos.
 
-Y hay docenas de alternativas, todas basadas en OpenAPI. Podrías añadir fácilmente cualquiera de esas alternativas a tu aplicación construida con **ReadyAPI**.
+Y hay docenas de alternativas, todas basadas en OpenAPI. Podrías añadir fácilmente cualquiera de esas alternativas a tu aplicación construida con **readyapi**.
 
 También podrías usarlo para generar código automáticamente, para clientes que se comuniquen con tu API. Por ejemplo, aplicaciones frontend, móviles o IoT.
 
 ## Recapitulación, paso a paso
 
-### Paso 1: importa `ReadyAPI`
+### Paso 1: importa `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI` es una clase de Python que proporciona toda la funcionalidad para tu API.
+`readyapi` es una clase de Python que proporciona toda la funcionalidad para tu API.
 
 /// note | Detalles Técnicos
 
-`ReadyAPI` es una clase que hereda directamente de `Starlette`.
+`readyapi` es una clase que hereda directamente de `Starlette`.
 
-Puedes usar toda la funcionalidad de <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> con `ReadyAPI` también.
+Puedes usar toda la funcionalidad de <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> con `readyapi` también.
 
 ///
 
-### Paso 2: crea una "instance" de `ReadyAPI`
+### Paso 2: crea una "instance" de `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-Aquí la variable `app` será una "instance" de la clase `ReadyAPI`.
+Aquí la variable `app` será una "instance" de la clase `readyapi`.
 
 Este será el punto principal de interacción para crear toda tu API.
 
@@ -240,7 +240,7 @@ Vamos a llamarlas "**operaciones**" también.
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-El `@app.get("/")` le dice a **ReadyAPI** que la función justo debajo se encarga de manejar requests que vayan a:
+El `@app.get("/")` le dice a **readyapi** que la función justo debajo se encarga de manejar requests que vayan a:
 
 * el path `/`
 * usando una <abbr title="un método HTTP GET"><code>get</code> operation</abbr>
@@ -253,7 +253,7 @@ Lo pones encima de una función. Como un bonito sombrero decorativo (supongo que
 
 Un "decorador" toma la función de abajo y hace algo con ella.
 
-En nuestro caso, este decorador le dice a **ReadyAPI** que la función de abajo corresponde al **path** `/` con una **operation** `get`.
+En nuestro caso, este decorador le dice a **readyapi** que la función de abajo corresponde al **path** `/` con una **operation** `get`.
 
 Es el "**path operation decorator**".
 
@@ -276,7 +276,7 @@ Y los más exóticos:
 
 Eres libre de usar cada operación (método HTTP) como quieras.
 
-**ReadyAPI** no fuerza ningún significado específico.
+**readyapi** no fuerza ningún significado específico.
 
 La información aquí se presenta como una guía, no un requisito.
 
@@ -296,7 +296,7 @@ Esta es nuestra "**path operation function**":
 
 Esta es una función de Python.
 
-Será llamada por **ReadyAPI** cuando reciba un request en la URL "`/`" usando una operación `GET`.
+Será llamada por **readyapi** cuando reciba un request en la URL "`/`" usando una operación `GET`.
 
 En este caso, es una función `async`.
 
@@ -324,7 +324,7 @@ Hay muchos otros objetos y modelos que serán automáticamente convertidos a JSO
 
 ## Recapitulación
 
-* Importa `ReadyAPI`.
+* Importa `readyapi`.
 * Crea una instancia `app`.
 * Escribe un **path operation decorator** usando decoradores como `@app.get("/")`.
 * Define una **path operation function**; por ejemplo, `def root(): ...`.

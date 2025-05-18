@@ -1,3 +1,3 @@
 # About
 
-About ReadyAPI, its design, inspiration and more. 🤓
+About readyapi, its design, inspiration and more. 🤓

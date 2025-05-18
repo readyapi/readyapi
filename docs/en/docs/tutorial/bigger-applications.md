@@ -2,7 +2,7 @@
 
 If you are building an application or a web API, it's rarely the case that you can put everything in a single file.
 
-**ReadyAPI** provides a convenience tool to structure your application while keeping all the flexibility.
+**readyapi** provides a convenience tool to structure your application while keeping all the flexibility.
 
 /// info
 
@@ -52,7 +52,7 @@ from app.routers import items
 * There's also a subdirectory `app/internal/` with another file `__init__.py`, so it's another "Python subpackage": `app.internal`.
 * And the file `app/internal/admin.py` is another submodule: `app.internal.admin`.
 
-<img src="/img/tutorial/bigger-applications/package.svg">
+<img src="/img/tutorial/bigger-applications/package.drawio.svg">
 
 The same file structure with comments:
 
@@ -77,13 +77,13 @@ Let's say the file dedicated to handling just users is the submodule at `/app/ro
 
 You want to have the *path operations* related to your users separated from the rest of the code, to keep it organized.
 
-But it's still part of the same **ReadyAPI** application/web API (it's part of the same "Python Package").
+But it's still part of the same **readyapi** application/web API (it's part of the same "Python Package").
 
 You can create the *path operations* for that module using `APIRouter`.
 
 ### Import `APIRouter`
 
-You import it and create an "instance" the same way you would with the class `ReadyAPI`:
+You import it and create an "instance" the same way you would with the class `readyapi`:
 
 ```Python hl_lines="1  3" title="app/routers/users.py"
 {!../../docs_src/bigger_applications/app/routers/users.py!}
@@ -93,13 +93,13 @@ You import it and create an "instance" the same way you would with the class `Re
 
 And then you use it to declare your *path operations*.
 
-Use it the same way you would use the `ReadyAPI` class:
+Use it the same way you would use the `readyapi` class:
 
 ```Python hl_lines="6  11  16" title="app/routers/users.py"
 {!../../docs_src/bigger_applications/app/routers/users.py!}
 ```
 
-You can think of `APIRouter` as a "mini `ReadyAPI`" class.
+You can think of `APIRouter` as a "mini `readyapi`" class.
 
 All the same options are supported.
 
@@ -111,7 +111,7 @@ In this example, the variable is called `router`, but you can name it however yo
 
 ///
 
-We are going to include this `APIRouter` in the main `ReadyAPI` app, but first, let's check the dependencies and another `APIRouter`.
+We are going to include this `APIRouter` in the main `readyapi` app, but first, let's check the dependencies and another `APIRouter`.
 
 ## Dependencies
 
@@ -230,7 +230,7 @@ Having `dependencies` in the `APIRouter` can be used, for example, to require au
 
 /// check
 
-The `prefix`, `tags`, `responses`, and `dependencies` parameters are (as in many other cases) just a feature from **ReadyAPI** to help you avoid code duplication.
+The `prefix`, `tags`, `responses`, and `dependencies` parameters are (as in many other cases) just a feature from **readyapi** to help you avoid code duplication.
 
 ///
 
@@ -270,7 +270,7 @@ But that file doesn't exist, our dependencies are in a file at `app/dependencies
 
 Remember how our app/file structure looks like:
 
-<img src="/img/tutorial/bigger-applications/package.svg">
+<img src="/img/tutorial/bigger-applications/package.drawio.svg">
 
 ---
 
@@ -327,19 +327,19 @@ And it will also have both responses in the documentation, one for `404` and one
 
 ///
 
-## The main `ReadyAPI`
+## The main `readyapi`
 
 Now, let's see the module at `app/main.py`.
 
-Here's where you import and use the class `ReadyAPI`.
+Here's where you import and use the class `readyapi`.
 
 This will be the main file in your application that ties everything together.
 
 And as most of your logic will now live in its own specific module, the main file will be quite simple.
 
-### Import `ReadyAPI`
+### Import `readyapi`
 
-You import and create a `ReadyAPI` class as normally.
+You import and create a `readyapi` class as normally.
 
 And we can even declare [global dependencies](dependencies/global-dependencies.md){.internal-link target=_blank} that will be combined with the dependencies for each `APIRouter`:
 
@@ -436,7 +436,7 @@ And `items.router` contains the `APIRouter` inside of the file `app/routers/item
 
 ///
 
-With `app.include_router()` we can add each `APIRouter` to the main `ReadyAPI` application.
+With `app.include_router()` we can add each `APIRouter` to the main `readyapi` application.
 
 It will include all the routes from that router as part of it.
 
@@ -493,7 +493,7 @@ So, for example, other projects could use the same `APIRouter` with a different 
 
 ### Include a *path operation*
 
-We can also add *path operations* directly to the `ReadyAPI` app.
+We can also add *path operations* directly to the `readyapi` app.
 
 Here we do it... just to show that we can 🤷:
 
@@ -547,10 +547,10 @@ This is an advanced usage that you might not really need, but it's there in case
 
 ## Include an `APIRouter` in another
 
-The same way you can include an `APIRouter` in a `ReadyAPI` application, you can include an `APIRouter` in another `APIRouter` using:
+The same way you can include an `APIRouter` in a `readyapi` application, you can include an `APIRouter` in another `APIRouter` using:
 
 ```Python
 router.include_router(other_router)
 ```
 
-Make sure you do it before including `router` in the `ReadyAPI` app, so that the *path operations* from `other_router` are also included.
+Make sure you do it before including `router` in the `readyapi` app, so that the *path operations* from `other_router` are also included.

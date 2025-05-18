@@ -1,6 +1,6 @@
 # Despliegue
 
-Desplegar una aplicación **ReadyAPI** es relativamente fácil.
+Desplegar una aplicación **readyapi** es relativamente fácil.
 
 ## Qué Significa Despliegue
 
@@ -16,6 +16,6 @@ Hay varias maneras de hacerlo dependiendo de tu caso de uso específico y las he
 
 Podrías **desplegar un servidor** tú mismo utilizando una combinación de herramientas, podrías usar un **servicio en la nube** que hace parte del trabajo por ti, u otras opciones posibles.
 
-Te mostraré algunos de los conceptos principales que probablemente deberías tener en cuenta al desplegar una aplicación **ReadyAPI** (aunque la mayoría se aplica a cualquier otro tipo de aplicación web).
+Te mostraré algunos de los conceptos principales que probablemente deberías tener en cuenta al desplegar una aplicación **readyapi** (aunque la mayoría se aplica a cualquier otro tipo de aplicación web).
 
 Verás más detalles a tener en cuenta y algunas de las técnicas para hacerlo en las siguientes secciones. ✨

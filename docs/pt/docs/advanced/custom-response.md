@@ -1,6 +1,6 @@
 # Resposta Personalizada - HTML, Stream, File e outras
 
-Por padrão, o **ReadyAPI** irá retornar respostas utilizando `JSONResponse`.
+Por padrão, o **readyapi** irá retornar respostas utilizando `JSONResponse`.
 
 Mas você pode sobrescrever esse comportamento utilizando `Response` diretamente, como visto em [Retornando uma Resposta Diretamente](response-directly.md){.internal-link target=_blank}.
 
@@ -14,7 +14,7 @@ E se a `Response` tiver um media type JSON (`application/json`), como é o caso 
 
 /// note | Nota
 
-Se você utilizar uma classe de Resposta sem media type, o ReadyAPI esperará que sua resposta não tenha conteúdo, então ele não irá documentar o formato da resposta na documentação OpenAPI gerada.
+Se você utilizar uma classe de Resposta sem media type, o readyapi esperará que sua resposta não tenha conteúdo, então ele não irá documentar o formato da resposta na documentação OpenAPI gerada.
 
 ///
 
@@ -26,9 +26,9 @@ Importe a classe, ou subclasse, de `Response` que você deseja utilizar e declar
 
 Para respostas grandes, retornar uma `Response` diretamente é muito mais rápido que retornar um dicionário.
 
-Isso ocorre por que, por padrão, o ReadyAPI irá verificar cada item dentro do dicionário e garantir que ele seja serializável para JSON, utilizando o mesmo[Codificador Compatível com JSON](../tutorial/encoder.md){.internal-link target=_blank} explicado no tutorial. Isso permite que você retorne **objetos abstratos**, como modelos do banco de dados, por exemplo.
+Isso ocorre por que, por padrão, o readyapi irá verificar cada item dentro do dicionário e garantir que ele seja serializável para JSON, utilizando o mesmo[Codificador Compatível com JSON](../tutorial/encoder.md){.internal-link target=_blank} explicado no tutorial. Isso permite que você retorne **objetos abstratos**, como modelos do banco de dados, por exemplo.
 
-Mas se você tem certeza que o conteúdo que você está retornando é **serializável com JSON**, você pode passá-lo diretamente para a classe de resposta e evitar o trabalho extra que o ReadyAPI teria ao passar o conteúdo pelo `jsonable_encoder` antes de passar para a classe de resposta.
+Mas se você tem certeza que o conteúdo que você está retornando é **serializável com JSON**, você pode passá-lo diretamente para a classe de resposta e evitar o trabalho extra que o readyapi teria ao passar o conteúdo pelo `jsonable_encoder` antes de passar para a classe de resposta.
 
 {* ../../docs_src/custom_response/tutorial001b.py hl[2,7] *}
 
@@ -44,13 +44,13 @@ E será documentado como tal no OpenAPI.
 
 /// tip | Dica
 
-A `ORJSONResponse` está disponível apenas no ReadyAPI, e não no Starlette.
+A `ORJSONResponse` está disponível apenas no readyapi, e não no Starlette.
 
 ///
 
 ## Resposta HTML
 
-Para retornar uma resposta com HTML diretamente do **ReadyAPI**, utilize `HTMLResponse`.
+Para retornar uma resposta com HTML diretamente do **readyapi**, utilize `HTMLResponse`.
 
 * Importe `HTMLResponse`
 * Passe `HTMLResponse` como o parâmetro de `response_class` do seu *decorador de operação de rota*.
@@ -101,9 +101,9 @@ Por exemplo, poderia ser algo como:
 
 Neste exemplo, a função `generate_html_response()` já cria e retorna uma `Response` em vez de retornar o HTML em uma `str`.
 
-Ao retornar o resultado chamando `generate_html_response()`, você já está retornando uma `Response` que irá sobrescrever o comportamento padrão do **ReadyAPI**.
+Ao retornar o resultado chamando `generate_html_response()`, você já está retornando uma `Response` que irá sobrescrever o comportamento padrão do **readyapi**.
 
-Mas se você passasse uma `HTMLResponse` em `response_class` também, o **ReadyAPI** saberia como documentar isso no OpenAPI e na documentação interativa como um HTML com `text/html`:
+Mas se você passasse uma `HTMLResponse` em `response_class` também, o **readyapi** saberia como documentar isso no OpenAPI e na documentação interativa como um HTML com `text/html`:
 
 <img src="/img/tutorial/custom-response/image01.png">
 
@@ -117,7 +117,7 @@ Lembre-se que você pode utilizar `Response` para retornar qualquer outra coisa,
 
 Você também pode utilizar `from starlette.responses import HTMLResponse`.
 
-O **ReadyAPI** provê a mesma `starlette.responses` como `readyapi.responses` apenas como uma facilidade para você, desenvolvedor. Mas a maioria das respostas disponíveis vêm diretamente do Starlette.
+O **readyapi** provê a mesma `starlette.responses` como `readyapi.responses` apenas como uma facilidade para você, desenvolvedor. Mas a maioria das respostas disponíveis vêm diretamente do Starlette.
 
 ///
 
@@ -134,7 +134,7 @@ Ela aceita os seguintes parâmetros:
 * `headers` - Um dicionário `dict` de strings.
 * `media_type` - Uma `str` informando o media type. E.g. `"text/html"`.
 
-O ReadyAPI (Starlette, na verdade) irá incluir o cabeçalho Content-Length automaticamente. Ele também irá incluir o cabeçalho Content-Type, baseado no `media_type` e acrescentando uma codificação para tipos textuais.
+O readyapi (Starlette, na verdade) irá incluir o cabeçalho Content-Length automaticamente. Ele também irá incluir o cabeçalho Content-Type, baseado no `media_type` e acrescentando uma codificação para tipos textuais.
 
 {* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
 
@@ -152,7 +152,7 @@ Usa algum texto ou sequência de bytes para retornar uma resposta de texto não 
 
 Pega alguns dados e retorna uma resposta com codificação `application/json`.
 
-É a resposta padrão utilizada no **ReadyAPI**, como você leu acima.
+É a resposta padrão utilizada no **readyapi**, como você leu acima.
 
 ### `ORJSONResponse`
 
@@ -295,11 +295,11 @@ Obviamente, você provavelmente vai encontrar maneiras muito melhores de se apro
 
 ## Classe de resposta padrão
 
-Quando você criar uma instância da classe **ReadyAPI** ou um `APIRouter` você pode especificar qual classe de resposta utilizar por padrão.
+Quando você criar uma instância da classe **readyapi** ou um `APIRouter` você pode especificar qual classe de resposta utilizar por padrão.
 
 O padrão que define isso é o `default_response_class`.
 
-No exemplo abaixo, o **ReadyAPI** irá utilizar `ORJSONResponse` por padrão, em todas as *operações de rota*, em vez de `JSONResponse`.
+No exemplo abaixo, o **readyapi** irá utilizar `ORJSONResponse` por padrão, em todas as *operações de rota*, em vez de `JSONResponse`.
 
 {* ../../docs_src/custom_response/tutorial010.py hl[2,4] *}
 

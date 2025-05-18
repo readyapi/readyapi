@@ -22,21 +22,21 @@ In this case, you can override the dependency that calls that provider, and use 
 
 ### Use the `app.dependency_overrides` attribute
 
-For these cases, your **ReadyAPI** application has an attribute `app.dependency_overrides`, it is a simple `dict`.
+For these cases, your **readyapi** application has an attribute `app.dependency_overrides`, it is a simple `dict`.
 
 To override a dependency for testing, you put as a key the original dependency (a function), and as the value, your dependency override (another function).
 
-And then **ReadyAPI** will call that override instead of the original dependency.
+And then **readyapi** will call that override instead of the original dependency.
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
 /// tip
 
-You can set a dependency override for a dependency used anywhere in your **ReadyAPI** application.
+You can set a dependency override for a dependency used anywhere in your **readyapi** application.
 
 The original dependency could be used in a *path operation function*, a *path operation decorator* (when you don't use the return value), a `.include_router()` call, etc.
 
-ReadyAPI will still be able to override it.
+readyapi will still be able to override it.
 
 ///
 

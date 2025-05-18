@@ -12,7 +12,7 @@ Para declarar um corpo da **requisição**, você utiliza os modelos do <a href=
 
 Para enviar dados, você deve usar utilizar um dos métodos: `POST` (Mais comum), `PUT`, `DELETE` ou `PATCH`.
 
-Enviar um corpo em uma requisição `GET` não tem um comportamento definido nas especificações, porém é suportado pelo ReadyAPI, apenas para casos de uso bem complexos/extremos.
+Enviar um corpo em uma requisição `GET` não tem um comportamento definido nas especificações, porém é suportado pelo readyapi, apenas para casos de uso bem complexos/extremos.
 
 Como é desencorajado, a documentação interativa com Swagger UI não irá mostrar a documentação para o corpo da requisição para um `GET`, e proxies que intermediarem podem não suportar o corpo da requisição.
 
@@ -64,7 +64,7 @@ Para adicionar o corpo na *função de operação de rota*, declare-o da mesma m
 
 ## Resultados
 
-Apenas com esse declaração de tipos do Python, o **ReadyAPI** irá:
+Apenas com esse declaração de tipos do Python, o **readyapi** irá:
 
 * Ler o corpo da requisição como um JSON.
 * Converter os tipos correspondentes (se necessário).
@@ -131,7 +131,7 @@ Dentro da função, você pode acessar todos os atributos do objeto do modelo di
 
 Você pode declarar parâmetros de rota e corpo da requisição ao mesmo tempo.
 
-O **ReadyAPI** irá reconhecer que os parâmetros da função que combinam com parâmetros de rota devem ser **retirados da rota**, e parâmetros da função que são declarados como modelos Pydantic sejam **retirados do corpo da requisição**.
+O **readyapi** irá reconhecer que os parâmetros da função que combinam com parâmetros de rota devem ser **retirados da rota**, e parâmetros da função que são declarados como modelos Pydantic sejam **retirados do corpo da requisição**.
 
 {* ../../docs_src/body/tutorial003.py hl[17:18] *}
 
@@ -139,7 +139,7 @@ O **ReadyAPI** irá reconhecer que os parâmetros da função que combinam com p
 
 Você também pode declarar parâmetros de **corpo**, **rota** e **consulta**, ao mesmo tempo.
 
-O **ReadyAPI** irá reconhecer cada um deles e retirar a informação do local correto.
+O **readyapi** irá reconhecer cada um deles e retirar a informação do local correto.
 
 {* ../../docs_src/body/tutorial004.py hl[18] *}
 
@@ -151,9 +151,9 @@ Os parâmetros da função serão reconhecidos conforme abaixo:
 
 /// note | Observação
 
-O ReadyAPI saberá que o valor de `q` não é obrigatório por causa do valor padrão `= None`.
+O readyapi saberá que o valor de `q` não é obrigatório por causa do valor padrão `= None`.
 
-O `Union` em `Union[str, None]` não é utilizado pelo ReadyAPI, mas permite ao seu editor de texto lhe dar um suporte melhor e detectar erros.
+O `Union` em `Union[str, None]` não é utilizado pelo readyapi, mas permite ao seu editor de texto lhe dar um suporte melhor e detectar erros.
 
 ///
 

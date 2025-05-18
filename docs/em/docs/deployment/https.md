@@ -34,7 +34,7 @@
 * **⏮️** 🏆 🔐 🔗, 📻 🛠️ **🇺🇸🔍**.
     * 🎚 **🗜**, ✋️ 👫 ➖ 📨 ⏮️ **🇺🇸🔍 🛠️**.
 
-⚫️ ⚠ 💡 ✔️ **1️⃣ 📋/🇺🇸🔍 💽** 🏃 🔛 💽 (🎰, 🦠, ♒️.) &amp; **🛠️ 🌐 🇺🇸🔍 🍕**: 📨 **🗜 🇺🇸🔍 📨**, 📨 **🗜 🇺🇸🔍 📨** ☑ 🇺🇸🔍 🈸 🏃 🎏 💽 ( **ReadyAPI** 🈸, 👉 💼), ✊ **🇺🇸🔍 📨** ⚪️➡️ 🈸, **🗜 ⚫️** ⚙️ ☑ **🇺🇸🔍 📄** &amp; 📨 ⚫️ 🔙 👩‍💻 ⚙️ **🇺🇸🔍**. 👉 💽 🛎 🤙 **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">🤝 ❎ 🗳</a>**.
+⚫️ ⚠ 💡 ✔️ **1️⃣ 📋/🇺🇸🔍 💽** 🏃 🔛 💽 (🎰, 🦠, ♒️.) &amp; **🛠️ 🌐 🇺🇸🔍 🍕**: 📨 **🗜 🇺🇸🔍 📨**, 📨 **🗜 🇺🇸🔍 📨** ☑ 🇺🇸🔍 🈸 🏃 🎏 💽 ( **readyapi** 🈸, 👉 💼), ✊ **🇺🇸🔍 📨** ⚪️➡️ 🈸, **🗜 ⚫️** ⚙️ ☑ **🇺🇸🔍 📄** &amp; 📨 ⚫️ 🔙 👩‍💻 ⚙️ **🇺🇸🔍**. 👉 💽 🛎 🤙 **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">🤝 ❎ 🗳</a>**.
 
 🎛 👆 💪 ⚙️ 🤝 ❎ 🗳:
 
@@ -85,7 +85,7 @@
 
 🏓 💽 🔜 💬 🖥 ⚙️ 🎯 **📢 📢**. 👈 🔜 📢 📢 📢 ⚙️ 👆 💽, 👈 👆 🔗 🏓 💽.
 
-<img src="/img/deployment/https/https01.svg">
+<img src="/img/deployment/https/https01.drawio.svg">
 
 ### 🤝 🤝 ▶️
 
@@ -93,7 +93,7 @@
 
 🥇 🍕 📻 🛠️ 🔗 🖖 👩‍💻 &amp; 💽 &amp; 💭 🔐 🔑 👫 🔜 ⚙️, ♒️.
 
-<img src="/img/deployment/https/https02.svg">
+<img src="/img/deployment/https/https02.drawio.svg">
 
 👉 🔗 🖖 👩‍💻 &amp; 💽 🛠️ 🤝 🔗 🤙 **🤝 🤝**.
 
@@ -111,7 +111,7 @@
 
 👉 💼, ⚫️ 🔜 ⚙️ 📄 `someapp.example.com`.
 
-<img src="/img/deployment/https/https03.svg">
+<img src="/img/deployment/https/https03.drawio.svg">
 
 👩‍💻 ⏪ **💙** 👨‍💼 👈 🏗 👈 🤝 📄 (👉 💼 ➡️ 🗜, ✋️ 👥 🔜 👀 🔃 👈 ⏪), ⚫️ 💪 **✔** 👈 📄 ☑.
 
@@ -133,19 +133,19 @@
 
 , 👩‍💻 📨 **🇺🇸🔍 📨**. 👉 🇺🇸🔍 📨 🔘 🗜 🤝 🔗.
 
-<img src="/img/deployment/https/https04.svg">
+<img src="/img/deployment/https/https04.drawio.svg">
 
 ### 🗜 📨
 
-🤝 ❎ 🗳 🔜 ⚙️ 🔐 ✔ **🗜 📨**, &amp; 🔜 📶 **✅ (🗜) 🇺🇸🔍 📨** 🛠️ 🏃 🈸 (🖼 🛠️ ⏮️ Uvicorn 🏃‍♂ ReadyAPI 🈸).
+🤝 ❎ 🗳 🔜 ⚙️ 🔐 ✔ **🗜 📨**, &amp; 🔜 📶 **✅ (🗜) 🇺🇸🔍 📨** 🛠️ 🏃 🈸 (🖼 🛠️ ⏮️ Uvicorn 🏃‍♂ readyapi 🈸).
 
-<img src="/img/deployment/https/https05.svg">
+<img src="/img/deployment/https/https05.drawio.svg">
 
 ### 🇺🇸🔍 📨
 
 🈸 🔜 🛠️ 📨 &amp; 📨 **✅ (💽) 🇺🇸🔍 📨** 🤝 ❎ 🗳.
 
-<img src="/img/deployment/https/https06.svg">
+<img src="/img/deployment/https/https06.drawio.svg">
 
 ### 🇺🇸🔍 📨
 
@@ -153,7 +153,7 @@
 
 ⏭, 🖥 🔜 ✔ 👈 📨 ☑ &amp; 🗜 ⏮️ ▶️️ 🔐 🔑, ♒️. ⚫️ 🔜 ⤴️ **🗜 📨** &amp; 🛠️ ⚫️.
 
-<img src="/img/deployment/https/https07.svg">
+<img src="/img/deployment/https/https07.drawio.svg">
 
 👩‍💻 (🖥) 🔜 💭 👈 📨 👟 ⚪️➡️ ☑ 💽 ↩️ ⚫️ ⚙️ ⚛ 👫 ✔ ⚙️ **🇺🇸🔍 📄** ⏭.
 
@@ -163,7 +163,7 @@
 
 🕴 1️⃣ 🛠️ 💪 🚚 🎯 📢 &amp; ⛴ (🤝 ❎ 🗳 👆 🖼) ✋️ 🎏 🈸/🛠️ 💪 🏃 🔛 💽(Ⓜ) 💁‍♂️, 📏 👫 🚫 🔄 ⚙️ 🎏 **🌀 📢 📢 &amp; ⛴**.
 
-<img src="/img/deployment/https/https08.svg">
+<img src="/img/deployment/https/https08.drawio.svg">
 
 👈 🌌, 🤝 ❎ 🗳 💪 🍵 🇺🇸🔍 &amp; 📄 **💗 🆔**, 💗 🈸, &amp; ⤴️ 📶 📨 ▶️️ 🈸 🔠 💼.
 
@@ -173,7 +173,7 @@
 
 &amp; ⤴️, 📤 🔜 ➕1️⃣ 📋 (💼 ⚫️ ➕1️⃣ 📋, 💼 ⚫️ 💪 🎏 🤝 ❎ 🗳) 👈 🔜 💬 ➡️ 🗜, &amp; ♻ 📄(Ⓜ).
 
-<img src="/img/deployment/https/https.svg">
+<img src="/img/deployment/https/https.drawio.svg">
 
 **🤝 📄** **🔗 ⏮️ 🆔 📛**, 🚫 ⏮️ 📢 📢.
 
@@ -196,4 +196,4 @@
 
 ✋️ 🕐 👆 💭 🔰 ℹ **🇺🇸🔍 👩‍💻** 👆 💪 💪 🌀 &amp; 🔗 🎏 🧰 ℹ 👆 🛠️ 🌐 🙅 🌌.
 
-⏭ 📃, 👤 🔜 🎦 👆 📚 🧱 🖼 ❔ ⚒ 🆙 **🇺🇸🔍** **ReadyAPI** 🈸. 👶
+⏭ 📃, 👤 🔜 🎦 👆 📚 🧱 🖼 ❔ ⚒ 🆙 **🇺🇸🔍** **readyapi** 🈸. 👶

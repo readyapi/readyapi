@@ -1,6 +1,6 @@
 # yield를 사용하는 의존성
 
-ReadyAPI는 <abbr title='때로는 "종료 코드", "정리 코드", "종료 처리 코드", "닫기 코드", "컨텍스트 관리자 종료 코드" 등으로도 불립니다'>작업 완료 후 추가 단계를 수행하는</abbr> 의존성을 지원합니다.
+readyapi는 <abbr title='때로는 "종료 코드", "정리 코드", "종료 처리 코드", "닫기 코드", "컨텍스트 관리자 종료 코드" 등으로도 불립니다'>작업 완료 후 추가 단계를 수행하는</abbr> 의존성을 지원합니다.
 
 이를 구현하려면 `return` 대신 `yield`를 사용하고, 추가로 실행할 단계 (코드)를 그 뒤에 작성하세요.
 
@@ -17,9 +17,9 @@ ReadyAPI는 <abbr title='때로는 "종료 코드", "정리 코드", "종료 처
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> 또는
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
-는 **ReadyAPI**의 의존성으로 사용할 수 있습니다.
+는 **readyapi**의 의존성으로 사용할 수 있습니다.
 
-사실, ReadyAPI는 내부적으로 이 두 데코레이터를 사용합니다.
+사실, readyapi는 내부적으로 이 두 데코레이터를 사용합니다.
 
 ///
 
@@ -43,7 +43,7 @@ yield된 값은 *경로 작업* 및 다른 의존성들에 주입되는 값 입�
 
 `async` 함수와 일반 함수 모두 사용할 수 있습니다.
 
-**ReadyAPI**는 일반 의존성과 마찬가지로 각각의 함수를 올바르게 처리할 것입니다.
+**readyapi**는 일반 의존성과 마찬가지로 각각의 함수를 올바르게 처리할 것입니다.
 
 ///
 
@@ -63,7 +63,7 @@ yield된 값은 *경로 작업* 및 다른 의존성들에 주입되는 값 입�
 
 모든 크기와 형태의 하위 의존성과 하위 의존성의 "트리"도 가질 수 있으며, 이들 모두가 `yield`를 사용할 수 있습니다.
 
-**ReadyAPI**는 `yield`를 사용하는 각 의존성의 "종료 코드"가 올바른 순서로 실행되도록 보장합니다.
+**readyapi**는 `yield`를 사용하는 각 의존성의 "종료 코드"가 올바른 순서로 실행되도록 보장합니다.
 
 예를 들어, `dependency_c`는 `dependency_b`에 의존할 수 있고, `dependency_b`는 `dependency_a`에 의존할 수 있습니다.
 
@@ -83,13 +83,13 @@ yield된 값은 *경로 작업* 및 다른 의존성들에 주입되는 값 입�
 
 원하는 의존성을 원하는 대로 조합할 수 있습니다.
 
-**ReadyAPI**는 모든 것이 올바른 순서로 실행되도록 보장합니다.
+**readyapi**는 모든 것이 올바른 순서로 실행되도록 보장합니다.
 
 /// note | 기술 세부사항
 
 파이썬의 <a href=“https://docs.python.org/3/library/contextlib.html” class=“external-link” target=“_blank”>Context Managers</a> 덕분에 이 기능이 작동합니다.
 
-**ReadyAPI**는 이를 내부적으로 컨텍스트 관리자를 사용하여 구현합니다.
+**readyapi**는 이를 내부적으로 컨텍스트 관리자를 사용하여 구현합니다.
 
 ///
 
@@ -113,7 +113,7 @@ yield된 값은 *경로 작업* 및 다른 의존성들에 주입되는 값 입�
 
 ## `yield`와 `except`를 사용하는 의존성
 
-`yield`를 사용하는 의존성에서 `except`를 사용하여 예외를 포착하고 예외를 다시 발생시키지 않거나 (또는 새 예외를 발생시키지 않으면), ReadyAPI는 해당 예외가 발생했는지 알 수 없습니다. 이는 일반적인 Python 방식과 동일합니다:
+`yield`를 사용하는 의존성에서 `except`를 사용하여 예외를 포착하고 예외를 다시 발생시키지 않거나 (또는 새 예외를 발생시키지 않으면), readyapi는 해당 예외가 발생했는지 알 수 없습니다. 이는 일반적인 Python 방식과 동일합니다:
 
 {* ../../docs_src/dependencies/tutorial008c_an_py39.py hl[15:16] *}
 
@@ -190,23 +190,23 @@ participant tasks as Background tasks
 
 이러한 기술적 세부 사항은 대부분 필요하지 않으므로 이 섹션을 건너뛰고 아래에서 계속 진행해도 됩니다.
 
-이러한 세부 정보는 주로 ReadyAPI 0.106.0 이전 버전에서 `yield`가 있는 의존성의 리소스를 백그라운드 작업에서 사용했던 경우메 유용합니다.
+이러한 세부 정보는 주로 readyapi 0.106.0 이전 버전에서 `yield`가 있는 의존성의 리소스를 백그라운드 작업에서 사용했던 경우메 유용합니다.
 
 ///
 
 ### `yield`와 `except`를 사용하는 의존성, 기술 세부사항
 
-ReadyAPI 0.110.0 이전에는 `yield`가 포함된 의존성을 사용한 후 해당 의존성에서 `except`가 포함된 예외를 캡처하고 다시 예외를 발생시키지 않으면 예외가 자동으로 예외 핸들러 또는 내부 서버 오류 핸들러로 발생/전달되었습니다.
+readyapi 0.110.0 이전에는 `yield`가 포함된 의존성을 사용한 후 해당 의존성에서 `except`가 포함된 예외를 캡처하고 다시 예외를 발생시키지 않으면 예외가 자동으로 예외 핸들러 또는 내부 서버 오류 핸들러로 발생/전달되었습니다.
 
 이는 처리기 없이 전달된 예외(내부 서버 오류)에서 처리되지 않은 메모리 소비를 수정하고 일반 파이썬 코드의 동작과 일치하도록 하기 위해 0.110.0 버전에서 변경되었습니다.
 
 ### 백그라운드 작업과 `yield`를 사용하는 의존성, 기술 세부사항
 
-ReadyAPI 0.106.0 이전에는 `yield` 이후에 예외를 발생시키는 것이 불가능했습니다. `yield`가 있는 의존성 종료 코드는 응답이 전송된 이후에 실행되었기 때문에, [예외 처리기](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}가 이미 실행된 상태였습니다.
+readyapi 0.106.0 이전에는 `yield` 이후에 예외를 발생시키는 것이 불가능했습니다. `yield`가 있는 의존성 종료 코드는 응답이 전송된 이후에 실행되었기 때문에, [예외 처리기](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}가 이미 실행된 상태였습니다.
 
 이는 주로 백그라운드 작업 내에서 의존성에서 "yield된" 동일한 객체를 사용할 수 있도록 하기 위해 이런 방식으로 설계되었습니다. 종료 코드는 백그라운드 작업이 완료된 후에 실행되었기 때문입니다
 
-하지만 이렇게 하면 리소스를 불필요하게 양보한 의존성(예: 데이터베이스 연결)에서 보유하면서 응답이 네트워크를 통해 이동할 때까지 기다리는 것을 의미하기 때문에 ReadyAPI 0.106.0에서 변경되었습니다.
+하지만 이렇게 하면 리소스를 불필요하게 양보한 의존성(예: 데이터베이스 연결)에서 보유하면서 응답이 네트워크를 통해 이동할 때까지 기다리는 것을 의미하기 때문에 readyapi 0.106.0에서 변경되었습니다.
 
 /// tip | 팁
 
@@ -238,7 +238,7 @@ with open("./somefile.txt") as f:
 
 `with` 블록이 끝나면, 예외가 발생했더라도 파일을 닫도록 보장합니다.
 
-`yield`가 있는 의존성을 생성하면 **ReadyAPI**는 내부적으로 이를 위한 컨텍스트 매니저를 생성하고 다른 관련 도구들과 결합합니다.
+`yield`가 있는 의존성을 생성하면 **readyapi**는 내부적으로 이를 위한 컨텍스트 매니저를 생성하고 다른 관련 도구들과 결합합니다.
 
 ### `yield`를 사용하는 의존성에서 컨텍스트 관리자 사용하기
 
@@ -246,13 +246,13 @@ with open("./somefile.txt") as f:
 
 이것은 어느 정도 "고급" 개념입니다.
 
-**ReadyAPI**를 처음 시작하는 경우 지금은 이 부분을 건너뛰어도 좋습니다.
+**readyapi**를 처음 시작하는 경우 지금은 이 부분을 건너뛰어도 좋습니다.
 
 ///
 
 Python에서는 다음을 통해 컨텍스트 관리자를 생성할 수 있습니다. <a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank"> 두 가지 메서드가 있는 클래스를 생성합니다: `__enter__()` and `__exit__()`</a>.
 
-**ReadyAPI**의 `yield`가 있는 의존성 내에서
+**readyapi**의 `yield`가 있는 의존성 내에서
 `with` 또는 `async with`문을 사용하여 이들을 활용할 수 있습니다:
 
 {* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
@@ -266,10 +266,10 @@ Python에서는 다음을 통해 컨텍스트 관리자를 생성할 수 있습�
 
 이들은 단일 `yield`가 있는 함수를 꾸미는 데 사용합니다.
 
-이것이 **ReadyAPI**가 `yield`가 있는 의존성을 위해 내부적으로 사용하는 방식입니다.
+이것이 **readyapi**가 `yield`가 있는 의존성을 위해 내부적으로 사용하는 방식입니다.
 
-하지만 ReadyAPI 의존성에는 이러한 데코레이터를 사용할 필요가 없습니다(그리고 사용해서도 안됩니다).
+하지만 readyapi 의존성에는 이러한 데코레이터를 사용할 필요가 없습니다(그리고 사용해서도 안됩니다).
 
-ReadyAPI가 내부적으로 이를 처리해 줄 것입니다.
+readyapi가 내부적으로 이를 처리해 줄 것입니다.
 
 ///

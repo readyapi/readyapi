@@ -435,9 +435,9 @@ Continue reading. 👇🤓
 
 ## Why Virtual Environments
 
-To work with ReadyAPI you need to install <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
+To work with readyapi you need to install <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
 
-After that, you would need to **install** ReadyAPI and any other **packages** you want to use.
+After that, you would need to **install** readyapi and any other **packages** you want to use.
 
 To install packages you would normally use the `pip` command that comes with Python (or similar alternatives).
 
@@ -544,9 +544,9 @@ $ pip install "readyapi[standard]"
 
 </div>
 
-That will download a compressed file with the ReadyAPI code, normally from <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
+That will download a compressed file with the readyapi code, normally from <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
 
-It will also **download** files for other packages that ReadyAPI depends on.
+It will also **download** files for other packages that readyapi depends on.
 
 Then it will **extract** all those files and put them in a directory in your computer.
 
@@ -668,7 +668,7 @@ After activating the virtual environment, the `PATH` variable would look somethi
 /home/user/code/awesome-project/.venv/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
-That means that the system will now start looking first look for programs in:
+That means that the system will now start looking first for programs in:
 
 ```plaintext
 /home/user/code/awesome-project/.venv/bin
@@ -692,7 +692,7 @@ and use that one.
 C:\Users\user\code\awesome-project\.venv\Scripts;C:\Windows\System32
 ```
 
-That means that the system will now start looking first look for programs in:
+That means that the system will now start looking first for programs in:
 
 ```plaintext
 C:\Users\user\code\awesome-project\.venv\Scripts

@@ -9,7 +9,7 @@
 
 然后你可以像平常一样返回任何你需要的对象（例如一个`dict`或者一个数据库模型）。如果你声明了一个`response_model`，它仍然会被用来过滤和转换你返回的对象。
 
-**ReadyAPI**将使用这个临时响应来提取头部（也包括cookies和状态码），并将它们放入包含你返回的值的最终响应中，该响应由任何`response_model`过滤。
+**readyapi**将使用这个临时响应来提取头部（也包括cookies和状态码），并将它们放入包含你返回的值的最终响应中，该响应由任何`response_model`过滤。
 
 你也可以在依赖项中声明`Response`参数，并在其中设置头部（和cookies）。
 
@@ -26,9 +26,9 @@
 
 你也可以使用`from starlette.responses import Response`或`from starlette.responses import JSONResponse`。
 
-**ReadyAPI**提供了与`readyapi.responses`相同的`starlette.responses`，只是为了方便开发者。但是，大多数可用的响应都直接来自Starlette。
+**readyapi**提供了与`readyapi.responses`相同的`starlette.responses`，只是为了方便开发者。但是，大多数可用的响应都直接来自Starlette。
 
-由于`Response`经常用于设置头部和cookies，因此**ReadyAPI**还在`readyapi.Response`中提供了它。
+由于`Response`经常用于设置头部和cookies，因此**readyapi**还在`readyapi.Response`中提供了它。
 
 ///
 

@@ -25,7 +25,7 @@ Isso é que nós iremos resolver, vamos carregar o modelo antes das requisiçõe
 
 ## Vida útil (_Lifespan_)
 
-Você pode definir essa lógica de *inicialização* e *encerramento* usando os parâmetros de `lifespan` da aplicação `ReadyAPI`, e um "gerenciador de contexto" (te mostrarei o que é isso a seguir).
+Você pode definir essa lógica de *inicialização* e *encerramento* usando os parâmetros de `lifespan` da aplicação `readyapi`, e um "gerenciador de contexto" (te mostrarei o que é isso a seguir).
 
 Vamos iniciar com um exemplo e ver isso detalhadamente.
 
@@ -79,9 +79,9 @@ async with lifespan(app):
 
 Quando você cria um gerenciador de contexto ou um gerenciador de contexto assíncrono como mencionado acima, o que ele faz é que, antes de entrar no bloco `with`, ele irá executar o código anterior ao `yield`, e depois de sair do bloco `with`, ele irá executar o código depois do `yield`.
 
-No nosso exemplo de código acima, nós não usamos ele diretamente, mas nós passamos para o ReadyAPI para ele usá-lo.
+No nosso exemplo de código acima, nós não usamos ele diretamente, mas nós passamos para o readyapi para ele usá-lo.
 
-O parâmetro `lifespan` da aplicação `ReadyAPI` usa um **Gerenciador de Contexto Assíncrono**, então nós podemos passar nosso novo gerenciador de contexto assíncrono do `lifespan` para ele.
+O parâmetro `lifespan` da aplicação `readyapi` usa um **Gerenciador de Contexto Assíncrono**, então nós podemos passar nosso novo gerenciador de contexto assíncrono do `lifespan` para ele.
 
 {* ../../docs_src/events/tutorial003.py hl[22] *}
 
@@ -89,7 +89,7 @@ O parâmetro `lifespan` da aplicação `ReadyAPI` usa um **Gerenciador de Contex
 
 /// warning | Aviso
 
-A maneira recomendada para lidar com a *inicialização* e o *encerramento* é usando o parâmetro `lifespan` da aplicação `ReadyAPI` como descrito acima.
+A maneira recomendada para lidar com a *inicialização* e o *encerramento* é usando o parâmetro `lifespan` da aplicação `readyapi` como descrito acima.
 
 Você provavelmente pode pular essa parte.
 

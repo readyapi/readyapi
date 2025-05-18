@@ -8,7 +8,7 @@ En esta sección verás cómo hacerlo.
 
 El proceso normal (por defecto) es el siguiente.
 
-Una aplicación (instance) de `ReadyAPI` tiene un método `.openapi()` que se espera que devuelva el esquema de OpenAPI.
+Una aplicación (instance) de `readyapi` tiene un método `.openapi()` que se espera que devuelva el esquema de OpenAPI.
 
 Como parte de la creación del objeto de la aplicación, se registra una *path operation* para `/openapi.json` (o para lo que sea que configures tu `openapi_url`).
 
@@ -29,7 +29,7 @@ Y esa función `get_openapi()` recibe como parámetros:
 
 /// info | Información
 
-El parámetro `summary` está disponible en OpenAPI 3.1.0 y versiones superiores, soportado por ReadyAPI 0.99.0 y superiores.
+El parámetro `summary` está disponible en OpenAPI 3.1.0 y versiones superiores, soportado por readyapi 0.99.0 y superiores.
 
 ///
 
@@ -39,9 +39,9 @@ Usando la información anterior, puedes usar la misma función de utilidad para 
 
 Por ejemplo, vamos a añadir <a href="https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md#x-logo" class="external-link" target="_blank">la extensión OpenAPI de ReDoc para incluir un logo personalizado</a>.
 
-### **ReadyAPI** normal
+### **readyapi** normal
 
-Primero, escribe toda tu aplicación **ReadyAPI** como normalmente:
+Primero, escribe toda tu aplicación **readyapi** como normalmente:
 
 {* ../../docs_src/extending_openapi/tutorial001.py hl[1,4,7:9] *}
 
@@ -75,6 +75,6 @@ Ahora puedes reemplazar el método `.openapi()` por tu nueva función.
 
 ### Revisa
 
-Una vez que vayas a <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> verás que estás usando tu logo personalizado (en este ejemplo, el logo de **ReadyAPI**):
+Una vez que vayas a <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> verás que estás usando tu logo personalizado (en este ejemplo, el logo de **readyapi**):
 
 <img src="/img/tutorial/extending-openapi/image01.png">

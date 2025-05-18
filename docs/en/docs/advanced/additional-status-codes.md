@@ -1,6 +1,6 @@
 # Additional Status Codes
 
-By default, **ReadyAPI** will return the responses using a `JSONResponse`, putting the content you return from your *path operation* inside of that `JSONResponse`.
+By default, **readyapi** will return the responses using a `JSONResponse`, putting the content you return from your *path operation* inside of that `JSONResponse`.
 
 It will use the default status code or the one you set in your *path operation*.
 
@@ -30,12 +30,12 @@ Make sure it has the data you want it to have, and that the values are valid JSO
 
 You could also use `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `status`.
+**readyapi** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `status`.
 
 ///
 
 ## OpenAPI and API docs
 
-If you return additional status codes and responses directly, they won't be included in the OpenAPI schema (the API docs), because ReadyAPI doesn't have a way to know beforehand what you are going to return.
+If you return additional status codes and responses directly, they won't be included in the OpenAPI schema (the API docs), because readyapi doesn't have a way to know beforehand what you are going to return.
 
 But you can document that in your code, using: [Additional Responses](additional-responses.md){.internal-link target=_blank}.

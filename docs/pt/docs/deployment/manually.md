@@ -2,14 +2,14 @@
 
 ## Utilize o comando `readyapi run`
 
-Em resumo, utilize o comando `readyapi run` para inicializar sua aplicação ReadyAPI:
+Em resumo, utilize o comando `readyapi run` para inicializar sua aplicação readyapi:
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting production server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting production server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -17,7 +17,7 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -40,15 +40,15 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
 Isto deve funcionar para a maioria dos casos. 😎
 
-Você pode utilizar esse comando, por exemplo, para iniciar sua aplicação **ReadyAPI** em um contêiner, em um servidor, etc.
+Você pode utilizar esse comando, por exemplo, para iniciar sua aplicação **readyapi** em um contêiner, em um servidor, etc.
 
 ## Servidores ASGI
 
 Vamos nos aprofundar um pouco mais em detalhes.
 
-ReadyAPI utiliza um padrão para construir frameworks e servidores web em Python chamado <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>. ReadyAPI é um framework web ASGI.
+readyapi utiliza um padrão para construir frameworks e servidores web em Python chamado <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>. readyapi é um framework web ASGI.
 
-A principal coisa que você precisa para executar uma aplicação **ReadyAPI** (ou qualquer outra aplicação ASGI) em uma máquina de servidor remoto é um programa de servidor ASGI como o **Uvicorn**, que é o que vem por padrão no comando `readyapi`.
+A principal coisa que você precisa para executar uma aplicação **readyapi** (ou qualquer outra aplicação ASGI) em uma máquina de servidor remoto é um programa de servidor ASGI como o **Uvicorn**, que é o que vem por padrão no comando `readyapi`.
 
 Existem diversas alternativas, incluindo:
 
@@ -70,7 +70,7 @@ Quando se refere à máquina remota, é comum chamá-la de **servidor**, mas tam
 
 ## Instale o Programa Servidor
 
-Quando você instala o ReadyAPI, ele vem com um servidor de produção, o Uvicorn, e você pode iniciá-lo com o comando `readyapi run`.
+Quando você instala o readyapi, ele vem com um servidor de produção, o Uvicorn, e você pode iniciá-lo com o comando `readyapi run`.
 
 Mas você também pode instalar um servidor ASGI manualmente.
 
@@ -96,13 +96,13 @@ Adicionando o `standard`, o Uvicorn instalará e usará algumas dependências ex
 
 Isso inclui o `uvloop`, a substituição de alto desempenho para `asyncio`, que fornece um grande aumento de desempenho de concorrência.
 
-Quando você instala o ReadyAPI com algo como `pip install "readyapi[standard]"`, você já obtém `uvicorn[standard]` também.
+Quando você instala o readyapi com algo como `pip install "readyapi[standard]"`, você já obtém `uvicorn[standard]` também.
 
 ///
 
 ## Execute o Programa Servidor
 
-Se você instalou um servidor ASGI manualmente, normalmente precisará passar uma string de importação em um formato especial para que ele importe sua aplicação ReadyAPI:
+Se você instalou um servidor ASGI manualmente, normalmente precisará passar uma string de importação em um formato especial para que ele importe sua aplicação readyapi:
 
 <div class="termy">
 
@@ -119,7 +119,7 @@ $ uvicorn main:app --host 0.0.0.0 --port 80
 O comando `uvicorn main:app` refere-se a:
 
 * `main`: o arquivo `main.py` (o "módulo" Python).
-* `app`: o objeto criado dentro de `main.py` com a linha `app = ReadyAPI()`.
+* `app`: o objeto criado dentro de `main.py` com a linha `app = readyapi()`.
 
 É equivalente a:
 

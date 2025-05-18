@@ -1,8 +1,8 @@
 # Özelikler
 
-## ReadyAPI özellikleri
+## readyapi özellikleri
 
-**ReadyAPI** sana bunları sağlıyor
+**readyapi** sana bunları sağlıyor
 
 ### Açık standartları temel alır
 
@@ -30,7 +30,7 @@ OpenAPI standartlarına dayalı olan bir framework olarak, geliştiricilerin bir
 Tamamiyle standartlar **Python 3.8**'nın type hintlerine dayanıyor (Pydantic'in sayesinde). Yeni bir syntax öğrenmene gerek yok. Sadece modern Python.
 
 
-Eğer Python type hintlerini bilmiyorsan veya bir hatırlatmaya ihtiyacın var ise(ReadyAPI kullanmasan bile) şu iki dakikalık küçük bilgilendirici içeriğe bir göz at: [Python Types](python-types.md){.internal-link target=_blank}.
+Eğer Python type hintlerini bilmiyorsan veya bir hatırlatmaya ihtiyacın var ise(readyapi kullanmasan bile) şu iki dakikalık küçük bilgilendirici içeriğe bir göz at: [Python Types](python-types.md){.internal-link target=_blank}.
 
 Standart Python'u typelarını belirterek yazıyorsun:
 
@@ -81,7 +81,7 @@ Bütün framework kullanılması kolay ve sezgileri güçlü olması için tasar
 
 Son yapılan Python geliştiricileri anketinde, açık ara <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">en çok kullanılan özellik "oto-tamamlama" idi.</a>.
 
-Bütün **ReadyAPI** frameworkü oto-tamamlama açısından geliştiriciyi tatmin etmek üzerine tasarlandı. Otomatik tamamlama her yerde çalışıyor.
+Bütün **readyapi** frameworkü oto-tamamlama açısından geliştiriciyi tatmin etmek üzerine tasarlandı. Otomatik tamamlama her yerde çalışıyor.
 
 Dokümantasyona tekrardan çok nadir olarak geleceksin.
 
@@ -142,10 +142,10 @@ Bütün hepsi tekrardan kullanılabilir aletler ve bileşenler olarak, kolayca s
 
 ### Dependency injection
 
-ReadyAPI'ın inanılmaz derecede kullanımı kolay, fakat inanılmaz derecede güçlü <abbr title='"components", "resources", "services", "providers" olarak da bilinen'><strong>Dependency Injection </strong></abbr> sistemi var.
+readyapi'ın inanılmaz derecede kullanımı kolay, fakat inanılmaz derecede güçlü <abbr title='"components", "resources", "services", "providers" olarak da bilinen'><strong>Dependency Injection </strong></abbr> sistemi var.
 
-* Dependencylerin bile dependencies'i olabiliyor, ReadyAPI bunun  için **graph of "dependency"** yaratıyor.
-* Hepsi **otomatik olarak** ReadyAPI tarafından hallediliyor.
+* Dependencylerin bile dependencies'i olabiliyor, readyapi bunun  için **graph of "dependency"** yaratıyor.
+* Hepsi **otomatik olarak** readyapi tarafından hallediliyor.
 * Bütün zorunlulukların gelen datalara bağlı olarak farklı gereksinimleri olabiliyor, ilave path operasyonlarının kısıtlamaları ve otomatik dokümantasyonu da ayrıca yapılıyor .
 * Path operasyonu parametreleri içerisinde belirtilen gereksinimler için bile **Otomatik doğrulama** yapılabiliyor.
 * Kompleks kimlik doğrulama sistemleri için destek, **database bağlantıları**, vs.
@@ -162,15 +162,15 @@ Bütün entegrasyonlar kullanımı kolay olmak üzere (zorunluluklar ile beraber
 
 * 100% <abbr title="Kodun ne kadarının test edildiği">test coverage</abbr>.
 * 100% <abbr title="Python type annotations, with this your editor and external tools can give you better support">typeları belirtilmiş</abbr> codebase.
-* ReadyAPI ile yapılan bir çok proje insanlar tarafından kullanılıyor.
+* readyapi ile yapılan bir çok proje insanlar tarafından kullanılıyor.
 
 ## Starlette özellikleri
 
-**ReadyAPI**, <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> ile tamamiyle uyumlu ve üzerine kurulu. Yani ReadyAPI üzerine ekleme yapacağınız herhangi bir Starlette kodu da çalışacaktır.
+**readyapi**, <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> ile tamamiyle uyumlu ve üzerine kurulu. Yani readyapi üzerine ekleme yapacağınız herhangi bir Starlette kodu da çalışacaktır.
 
-`ReadyAPI` aslında `Starlette`'nin bir sub-class'ı. Eğer Starlette'nin nasıl kullanılacağını biliyor isen, çoğu işlevini aynı şekilde yapıyor.
+`readyapi` aslında `Starlette`'nin bir sub-class'ı. Eğer Starlette'nin nasıl kullanılacağını biliyor isen, çoğu işlevini aynı şekilde yapıyor.
 
-**ReadyAPI** ile beraber **Starlette**'nin bütün özelliklerine de sahip olacaksınız (ReadyAPI aslında Starlette'nin steroid basmış hali):
+**readyapi** ile beraber **Starlette**'nin bütün özelliklerine de sahip olacaksınız (readyapi aslında Starlette'nin steroid basmış hali):
 
 * Gerçekten etkileyici bir performansa sahip.Python'un ise en hızlı frameworklerinden bir tanesi, <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">**NodeJS** ve **Go** ile ise eşdeğer performansa sahip.</a>.
 * **WebSocket** desteği.
@@ -185,7 +185,7 @@ Bütün entegrasyonlar kullanımı kolay olmak üzere (zorunluluklar ile beraber
 
 ## Pydantic özellikleri
 
-**ReadyAPI** ile <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> tamamiyle uyumlu ve üzerine kurulu. Yani ReadyAPI üzerine ekleme yapacağınız herhangi bir Pydantic kodu da çalışacaktır.
+**readyapi** ile <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> tamamiyle uyumlu ve üzerine kurulu. Yani readyapi üzerine ekleme yapacağınız herhangi bir Pydantic kodu da çalışacaktır.
 
 Bunlara Pydantic üzerine kurulu <abbr title="Object-Relational Mapper">ORM</abbr> databaseler ve , <abbr title="Object-Document Mapper">ODM</abbr> kütüphaneler de dahil olmak üzere.
 
@@ -193,7 +193,7 @@ Bu ayrıca şu anlama da geliyor, bir çok durumda requestten gelen objeyi **dir
 
 Aynı şekilde, databaseden gelen objeyi de **direkt olarak isteğe** de tamamiyle doğrulanmış bir biçimde gönderebilirsiniz.
 
-**ReadyAPI** ile beraber **Pydantic**'in bütün özelliklerine sahip olacaksınız (ReadyAPI data kontrolünü Pydantic'in üzerine kurduğu için):
+**readyapi** ile beraber **Pydantic**'in bütün özelliklerine sahip olacaksınız (readyapi data kontrolünü Pydantic'in üzerine kurduğu için):
 
 * **Kafa karıştırmaz**:
     * Farklı bir syntax öğrenmenize gerek kalmaz,

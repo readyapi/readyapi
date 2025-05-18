@@ -40,7 +40,7 @@ Para declarar o corpo de arquivos, você precisa utilizar `File`, do contrário 
 
 Os arquivos serão enviados como "form data".
 
-Se você declarar o tipo do seu parâmetro na sua *função de operação de rota* como `bytes`, o **ReadyAPI** irá ler o arquivo para você e você receberá o conteúdo como `bytes`.
+Se você declarar o tipo do seu parâmetro na sua *função de operação de rota* como `bytes`, o **readyapi** irá ler o arquivo para você e você receberá o conteúdo como `bytes`.
 
 Lembre-se que isso significa que o conteúdo inteiro será armazenado em memória. Isso funciona bem para arquivos pequenos.
 
@@ -95,13 +95,13 @@ contents = myfile.file.read()
 
 /// note | Detalhes técnicos do `async`
 
-Quando você utiliza métodos assíncronos, o **ReadyAPI** executa os métodos do arquivo em uma threadpool e espera por eles.
+Quando você utiliza métodos assíncronos, o **readyapi** executa os métodos do arquivo em uma threadpool e espera por eles.
 
 ///
 
 /// note | Detalhes técnicos do Starlette
 
-O `UploadFile` do **ReadyAPI** herda diretamente do `UploadFile` do **Starlette**, mas adiciona algumas funcionalidades necessárias para ser compatível com o **Pydantic**
+O `UploadFile` do **readyapi** herda diretamente do `UploadFile` do **Starlette**, mas adiciona algumas funcionalidades necessárias para ser compatível com o **Pydantic**
 
 ///
 
@@ -109,13 +109,13 @@ O `UploadFile` do **ReadyAPI** herda diretamente do `UploadFile` do **Starlette*
 
 A forma como formulários HTML(`<form></form>`) enviam dados para o servidor normalmente utilizam uma codificação "especial" para esses dados, que é diferente do JSON.
 
-O **ReadyAPI** garante que os dados serão lidos da forma correta, em vez do JSON.
+O **readyapi** garante que os dados serão lidos da forma correta, em vez do JSON.
 
 /// note | Detalhes Técnicos
 
 Dados vindos de formulários geralmente tem a codificação com o "media type" `application/x-www-form-urlencoded` quando estes não incluem arquivos.
 
-Mas quando os dados incluem arquivos, eles são codificados como `multipart/form-data`. Se você utilizar `File`, **ReadyAPI** saberá que deve receber os arquivos da parte correta do corpo da requisição.
+Mas quando os dados incluem arquivos, eles são codificados como `multipart/form-data`. Se você utilizar `File`, **readyapi** saberá que deve receber os arquivos da parte correta do corpo da requisição.
 
 Se você quer ler mais sobre essas codificações e campos de formulário, veja a documentação online da <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST" class="external-link" target="_blank"><abbr title="Mozilla Developer Network">MDN</abbr> sobre <code> POST</code> </a>.
 
@@ -125,7 +125,7 @@ Se você quer ler mais sobre essas codificações e campos de formulário, veja 
 
 Você pode declarar múltiplos parâmetros `File` e `Form` em uma *operação de rota*, mas você não pode declarar campos `Body`que seriam recebidos como JSON junto desses parâmetros, por que a codificação do corpo da requisição será `multipart/form-data` em vez de `application/json`.
 
-Isso não é uma limitação do **ReadyAPI**, é uma parte do protocolo HTTP.
+Isso não é uma limitação do **readyapi**, é uma parte do protocolo HTTP.
 
 ///
 
@@ -157,7 +157,7 @@ Você irá receber, como delcarado uma lista (`list`) de `bytes` ou `UploadFile`
 
 Você também poderia utilizar `from starlette.responses import HTMLResponse`.
 
-O **ReadyAPI** fornece as mesmas `starlette.responses` como `readyapi.responses` apenas como um facilitador para você, desenvolvedor. Mas a maior parte das respostas vem diretamente do Starlette.
+O **readyapi** fornece as mesmas `starlette.responses` como `readyapi.responses` apenas como um facilitador para você, desenvolvedor. Mas a maior parte das respostas vem diretamente do Starlette.
 
 ///
 

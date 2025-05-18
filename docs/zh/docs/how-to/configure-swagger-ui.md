@@ -2,11 +2,11 @@
 
 你可以配置一些额外的 <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">Swagger UI 参数</a>.
 
-如果需要配置它们，可以在创建 `ReadyAPI()` 应用对象时或调用 `get_swagger_ui_html()` 函数时传递 `swagger_ui_parameters` 参数。
+如果需要配置它们，可以在创建 `readyapi()` 应用对象时或调用 `get_swagger_ui_html()` 函数时传递 `swagger_ui_parameters` 参数。
 
 `swagger_ui_parameters` 接受一个直接传递给 Swagger UI的字典，包含配置参数键值对。
 
-ReadyAPI会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因为这是 Swagger UI 需要的。
+readyapi会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因为这是 Swagger UI 需要的。
 
 ## 不使用语法高亮
 
@@ -36,7 +36,7 @@ ReadyAPI会将这些配置转换为 **JSON**，使其与 JavaScript 兼容，因
 
 ## 改变默认 Swagger UI 参数
 
-ReadyAPI 包含了一些默认配置参数，适用于大多数用例。
+readyapi 包含了一些默认配置参数，适用于大多数用例。
 
 其包括这些默认配置参数：
 
@@ -56,7 +56,7 @@ ReadyAPI 包含了一些默认配置参数，适用于大多数用例。
 
 Swagger UI 同样允许使用 **JavaScript-only** 配置对象（例如，JavaScript 函数）。
 
-ReadyAPI 包含这些 JavaScript-only 的 `presets` 设置：
+readyapi 包含这些 JavaScript-only 的 `presets` 设置：
 
 ```JavaScript
 presets: [

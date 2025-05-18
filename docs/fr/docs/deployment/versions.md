@@ -1,6 +1,6 @@
-# À propos des versions de ReadyAPI
+# À propos des versions de readyapi
 
-**ReadyAPI** est déjà utilisé en production dans de nombreuses applications et systèmes. Et la couverture de test est maintenue à 100 %. Mais son développement est toujours aussi rapide.
+**readyapi** est déjà utilisé en production dans de nombreuses applications et systèmes. Et la couverture de test est maintenue à 100 %. Mais son développement est toujours aussi rapide.
 
 De nouvelles fonctionnalités sont ajoutées fréquemment, des bogues sont corrigés régulièrement et le code est
 amélioré continuellement.
@@ -9,11 +9,11 @@ C'est pourquoi les versions actuelles sont toujours `0.x.x`, cela reflète que c
 recevoir des changements non rétrocompatibles. Cela suit les conventions de <a href="https://semver.org/" class="external-link"
 target="_blank">versionnage sémantique</a>.
 
-Vous pouvez créer des applications de production avec **ReadyAPI** dès maintenant (et vous le faites probablement depuis un certain temps), vous devez juste vous assurer que vous utilisez une version qui fonctionne correctement avec le reste de votre code.
+Vous pouvez créer des applications de production avec **readyapi** dès maintenant (et vous le faites probablement depuis un certain temps), vous devez juste vous assurer que vous utilisez une version qui fonctionne correctement avec le reste de votre code.
 
 ## Épinglez votre version de `readyapi`
 
-Tout d'abord il faut "épingler" la version de **ReadyAPI** que vous utilisez à la dernière version dont vous savez
+Tout d'abord il faut "épingler" la version de **readyapi** que vous utilisez à la dernière version dont vous savez
 qu'elle fonctionne correctement pour votre application.
 
 Par exemple, disons que vous utilisez la version `0.45.0` dans votre application.
@@ -45,7 +45,7 @@ Vous pouvez consulter les versions disponibles (par exemple, pour vérifier quel
 Suivant les conventions de versionnage sémantique, toute version inférieure à `1.0.0` peut potentiellement ajouter
 des changements non rétrocompatibles.
 
-ReadyAPI suit également la convention que tout changement de version "PATCH" est pour des corrections de bogues et
+readyapi suit également la convention que tout changement de version "PATCH" est pour des corrections de bogues et
 des changements rétrocompatibles.
 
 /// tip | Astuce
@@ -68,13 +68,13 @@ Le "MINOR" est le numéro au milieu, par exemple, dans `0.2.3`, la version MINOR
 
 ///
 
-## Mise à jour des versions ReadyAPI
+## Mise à jour des versions readyapi
 
 Vous devriez tester votre application.
 
-Avec **ReadyAPI** c'est très facile (merci à Starlette), consultez la documentation : [Testing](../tutorial/testing.md){.internal-link target=_blank}
+Avec **readyapi** c'est très facile (merci à Starlette), consultez la documentation : [Testing](../tutorial/testing.md){.internal-link target=_blank}
 
-Après avoir effectué des tests, vous pouvez mettre à jour la version **ReadyAPI** vers une version plus récente, et vous assurer que tout votre code fonctionne correctement en exécutant vos tests.
+Après avoir effectué des tests, vous pouvez mettre à jour la version **readyapi** vers une version plus récente, et vous assurer que tout votre code fonctionne correctement en exécutant vos tests.
 
 Si tout fonctionne, ou après avoir fait les changements nécessaires, et que tous vos tests passent, vous pouvez
 épingler votre version de `readyapi` à cette nouvelle version récente.
@@ -83,14 +83,14 @@ Si tout fonctionne, ou après avoir fait les changements nécessaires, et que to
 
 Vous ne devriez pas épingler la version de `starlette`.
 
-Différentes versions de **ReadyAPI** utiliseront une version spécifique plus récente de Starlette.
+Différentes versions de **readyapi** utiliseront une version spécifique plus récente de Starlette.
 
-Ainsi, vous pouvez simplement laisser **ReadyAPI** utiliser la bonne version de Starlette.
+Ainsi, vous pouvez simplement laisser **readyapi** utiliser la bonne version de Starlette.
 
 ## À propos de Pydantic
 
-Pydantic inclut des tests pour **ReadyAPI** avec ses propres tests, ainsi les nouvelles versions de Pydantic (au-dessus
-de `1.0.0`) sont toujours compatibles avec **ReadyAPI**.
+Pydantic inclut des tests pour **readyapi** avec ses propres tests, ainsi les nouvelles versions de Pydantic (au-dessus
+de `1.0.0`) sont toujours compatibles avec **readyapi**.
 
 Vous pouvez épingler Pydantic à toute version supérieure à `1.0.0` qui fonctionne pour vous et inférieure à `2.0.0`.
 

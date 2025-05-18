@@ -12,7 +12,7 @@ Anschließend können Sie wie gewohnt jedes gewünschte Objekt zurückgeben (ein
 
 Und wenn Sie ein `response_model` deklariert haben, wird es weiterhin zum Filtern und Konvertieren des von Ihnen zurückgegebenen Objekts verwendet.
 
-**ReadyAPI** verwendet diese *vorübergehende* Response, um die Header (auch Cookies und Statuscode) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
+**readyapi** verwendet diese *vorübergehende* Response, um die Header (auch Cookies und Statuscode) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
 
 Sie können den Parameter `Response` auch in Abhängigkeiten deklarieren und darin Header (und Cookies) festlegen.
 
@@ -28,9 +28,9 @@ Erstellen Sie eine Response wie in [Eine Response direkt zurückgeben](response-
 
 Sie können auch `from starlette.responses import Response` oder `from starlette.responses import JSONResponse` verwenden.
 
-**ReadyAPI** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
+**readyapi** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
 
-Und da die `Response` häufig zum Setzen von Headern und Cookies verwendet wird, stellt **ReadyAPI** diese auch unter `readyapi.Response` bereit.
+Und da die `Response` häufig zum Setzen von Headern und Cookies verwendet wird, stellt **readyapi** diese auch unter `readyapi.Response` bereit.
 
 ///
 

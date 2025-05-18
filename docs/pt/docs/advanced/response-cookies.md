@@ -12,7 +12,7 @@ Em seguida, você pode retornar qualquer objeto que precise, como normalmente fa
 
 E se você declarou um `response_model`, ele ainda será usado para filtrar e converter o objeto que você retornou.
 
-**ReadyAPI** usará essa resposta *temporária* para extrair os cookies (também os cabeçalhos e código de status) e os colocará na resposta final que contém o valor que você retornou, filtrado por qualquer `response_model`.
+**readyapi** usará essa resposta *temporária* para extrair os cookies (também os cabeçalhos e código de status) e os colocará na resposta final que contém o valor que você retornou, filtrado por qualquer `response_model`.
 
 Você também pode declarar o parâmetro `Response` em dependências e definir cookies (e cabeçalhos) nelas.
 
@@ -28,7 +28,7 @@ Então, defina os cookies nela e a retorne:
 
 /// tip | Dica
 
-Lembre-se de que se você retornar uma resposta diretamente em vez de usar o parâmetro `Response`, ReadyAPI a retornará diretamente.
+Lembre-se de que se você retornar uma resposta diretamente em vez de usar o parâmetro `Response`, readyapi a retornará diretamente.
 
 Portanto, você terá que garantir que seus dados sejam do tipo correto. E.g. será compatível com JSON se você estiver retornando um `JSONResponse`.
 
@@ -42,9 +42,9 @@ E também que você não esteja enviando nenhum dado que deveria ter sido filtra
 
 Você também poderia usar `from starlette.responses import Response` ou `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** fornece as mesmas `starlette.responses` em `readyapi.responses` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria das respostas disponíveis vem diretamente do Starlette.
+**readyapi** fornece as mesmas `starlette.responses` em `readyapi.responses` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria das respostas disponíveis vem diretamente do Starlette.
 
-E como o `Response` pode ser usado frequentemente para definir cabeçalhos e cookies, o **ReadyAPI** também o fornece em `readyapi.Response`.
+E como o `Response` pode ser usado frequentemente para definir cabeçalhos e cookies, o **readyapi** também o fornece em `readyapi.Response`.
 
 ///
 

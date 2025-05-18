@@ -4,7 +4,7 @@ Ahora vamos a construir a partir del capítulo anterior y agregar las partes fal
 
 ## Obtener el `username` y `password`
 
-Vamos a usar las utilidades de seguridad de **ReadyAPI** para obtener el `username` y `password`.
+Vamos a usar las utilidades de seguridad de **readyapi** para obtener el `username` y `password`.
 
 OAuth2 especifica que cuando se utiliza el "password flow" (que estamos usando), el cliente/usuario debe enviar campos `username` y `password` como form data.
 
@@ -46,7 +46,7 @@ Para OAuth2 son solo strings.
 
 ## Código para obtener el `username` y `password`
 
-Ahora vamos a usar las utilidades proporcionadas por **ReadyAPI** para manejar esto.
+Ahora vamos a usar las utilidades proporcionadas por **readyapi** para manejar esto.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ Si necesitas imponerlo, utiliza `OAuth2PasswordRequestFormStrict` en lugar de `O
 
 /// info | Información
 
-`OAuth2PasswordRequestForm` no es una clase especial para **ReadyAPI** como lo es `OAuth2PasswordBearer`.
+`OAuth2PasswordRequestForm` no es una clase especial para **readyapi** como lo es `OAuth2PasswordBearer`.
 
-`OAuth2PasswordBearer` hace que **ReadyAPI** sepa que es un esquema de seguridad. Así que se añade de esa manera a OpenAPI.
+`OAuth2PasswordBearer` hace que **readyapi** sepa que es un esquema de seguridad. Así que se añade de esa manera a OpenAPI.
 
 Pero `OAuth2PasswordRequestForm` es solo una dependencia de clase que podrías haber escrito tú mismo, o podrías haber declarado parámetros de `Form` directamente.
 
-Pero como es un caso de uso común, se proporciona directamente por **ReadyAPI**, solo para facilitarlo.
+Pero como es un caso de uso común, se proporciona directamente por **readyapi**, solo para facilitarlo.
 
 ///
 
@@ -178,7 +178,7 @@ Esto es algo que tienes que hacer tú mismo en tu código, y asegurarte de usar 
 
 Es casi lo único que tienes que recordar hacer correctamente tú mismo, para ser compatible con las especificaciones.
 
-Para el resto, **ReadyAPI** lo maneja por ti.
+Para el resto, **readyapi** lo maneja por ti.
 
 ///
 

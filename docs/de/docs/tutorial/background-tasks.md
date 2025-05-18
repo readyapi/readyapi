@@ -17,7 +17,7 @@ Importieren Sie zunächst `BackgroundTasks` und definieren Sie einen Parameter i
 
 {* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
 
-**ReadyAPI** erstellt für Sie das Objekt vom Typ `BackgroundTasks` und übergibt es als diesen Parameter.
+**readyapi** erstellt für Sie das Objekt vom Typ `BackgroundTasks` und übergibt es als diesen Parameter.
 
 ## Eine Taskfunktion erstellen
 
@@ -25,7 +25,7 @@ Erstellen Sie eine Funktion, die als Hintergrundtask ausgeführt werden soll.
 
 Es handelt sich schlicht um eine Standard-Funktion, die Parameter empfangen kann.
 
-Es kann sich um eine `async def`- oder normale `def`-Funktion handeln. **ReadyAPI** weiß, wie damit zu verfahren ist.
+Es kann sich um eine `async def`- oder normale `def`-Funktion handeln. **readyapi** weiß, wie damit zu verfahren ist.
 
 In diesem Fall schreibt die Taskfunktion in eine Datei (den Versand einer E-Mail simulierend).
 
@@ -49,7 +49,7 @@ Und da der Schreibvorgang nicht `async` und `await` verwendet, definieren wir di
 
 Die Verwendung von `BackgroundTasks` funktioniert auch mit dem <abbr title="Einbringen von Abhängigkeiten">Dependency Injection</abbr> System. Sie können einen Parameter vom Typ `BackgroundTasks` auf mehreren Ebenen deklarieren: in einer *Pfadoperation-Funktion*, in einer Abhängigkeit (Dependable), in einer Unterabhängigkeit usw.
 
-**ReadyAPI** weiß, was jeweils zu tun ist und wie dasselbe Objekt wiederverwendet werden kann, sodass alle Hintergrundtasks zusammengeführt und anschließend im Hintergrund ausgeführt werden:
+**readyapi** weiß, was jeweils zu tun ist und wie dasselbe Objekt wiederverwendet werden kann, sodass alle Hintergrundtasks zusammengeführt und anschließend im Hintergrund ausgeführt werden:
 
 {* ../../docs_src/background_tasks/tutorial002_an_py310.py hl[13,15,22,25] *}
 
@@ -63,11 +63,11 @@ Und dann schreibt ein weiterer Hintergrundtask, der in der *Pfadoperation-Funkti
 
 Die Klasse `BackgroundTasks` stammt direkt von <a href="https://www.starlette.io/background/" class="external-link" target="_blank">`starlette.background`</a>.
 
-Sie wird direkt in ReadyAPI importiert/inkludiert, sodass Sie sie von `readyapi` importieren können und vermeiden, versehentlich das alternative `BackgroundTask` (ohne das `s` am Ende) von `starlette.background` zu importieren.
+Sie wird direkt in readyapi importiert/inkludiert, sodass Sie sie von `readyapi` importieren können und vermeiden, versehentlich das alternative `BackgroundTask` (ohne das `s` am Ende) von `starlette.background` zu importieren.
 
-Indem Sie nur `BackgroundTasks` (und nicht `BackgroundTask`) verwenden, ist es dann möglich, es als *Pfadoperation-Funktion*-Parameter zu verwenden und **ReadyAPI** den Rest für Sie erledigen zu lassen, genau wie bei der direkten Verwendung des `Request`-Objekts.
+Indem Sie nur `BackgroundTasks` (und nicht `BackgroundTask`) verwenden, ist es dann möglich, es als *Pfadoperation-Funktion*-Parameter zu verwenden und **readyapi** den Rest für Sie erledigen zu lassen, genau wie bei der direkten Verwendung des `Request`-Objekts.
 
-Es ist immer noch möglich, `BackgroundTask` allein in ReadyAPI zu verwenden, aber Sie müssen das Objekt in Ihrem Code erstellen und eine Starlette-`Response` zurückgeben, die es enthält.
+Es ist immer noch möglich, `BackgroundTask` allein in readyapi zu verwenden, aber Sie müssen das Objekt in Ihrem Code erstellen und eine Starlette-`Response` zurückgeben, die es enthält.
 
 Weitere Details finden Sie in der <a href="https://www.starlette.io/background/" class="external-link" target="_blank">offiziellen Starlette-Dokumentation für Hintergrundtasks</a>.
 
@@ -77,7 +77,7 @@ Wenn Sie umfangreiche Hintergrundberechnungen durchführen müssen und diese nic
 
 Sie erfordern in der Regel komplexere Konfigurationen und einen Nachrichten-/Job-Queue-Manager wie RabbitMQ oder Redis, ermöglichen Ihnen jedoch die Ausführung von Hintergrundtasks in mehreren Prozessen und insbesondere auf mehreren Servern.
 
-Wenn Sie jedoch über dieselbe **ReadyAPI**-Anwendung auf Variablen und Objekte zugreifen oder kleine Hintergrundtasks ausführen müssen (z. B. das Senden einer E-Mail-Benachrichtigung), können Sie einfach `BackgroundTasks` verwenden.
+Wenn Sie jedoch über dieselbe **readyapi**-Anwendung auf Variablen und Objekte zugreifen oder kleine Hintergrundtasks ausführen müssen (z. B. das Senden einer E-Mail-Benachrichtigung), können Sie einfach `BackgroundTasks` verwenden.
 
 ## Zusammenfassung
 

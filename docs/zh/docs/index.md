@@ -1,21 +1,21 @@
-# ReadyAPI
+# readyapi
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI 框架，高性能，易于学习，高效编码，生产可用</em>
+    <em>readyapi 框架，高性能，易于学习，高效编码，生产可用</em>
 </p>
 <p align="center">
-<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi?color=%2334D058" alt="Coverage">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -33,7 +33,7 @@
 
 ---
 
-ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 并基于标准的 Python 类型提示。
+readyapi 是一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 并基于标准的 Python 类型提示。
 
 关键特性:
 
@@ -68,25 +68,25 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ## 评价
 
-「_[...] 最近我一直在使用 **ReadyAPI**。[...] 实际上我正在计划将其用于我所在的**微软**团队的所有**机器学习服务**。其中一些服务正被集成进核心 **Windows** 产品和一些 **Office** 产品。_」
+「_[...] 最近我一直在使用 **readyapi**。[...] 实际上我正在计划将其用于我所在的**微软**团队的所有**机器学习服务**。其中一些服务正被集成进核心 **Windows** 产品和一些 **Office** 产品。_」
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>微软</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-「_我们选择了 **ReadyAPI** 来创建用于获取**预测结果**的 **REST** 服务。[用于 Ludwig]_」
+「_我们选择了 **readyapi** 来创建用于获取**预测结果**的 **REST** 服务。[用于 Ludwig]_」
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino，Yaroslav Dudin 和 Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-「_**Netflix** 非常高兴地宣布，正式开源我们的**危机管理**编排框架：**Dispatch**！[使用 **ReadyAPI** 构建]_」
+「_**Netflix** 非常高兴地宣布，正式开源我们的**危机管理**编排框架：**Dispatch**！[使用 **readyapi** 构建]_」
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson，Marc Vilanova，Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-「_**ReadyAPI** 让我兴奋的欣喜若狂。它太棒了！_」
+「_**readyapi** 让我兴奋的欣喜若狂。它太棒了！_」
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> 播客主持人</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -98,27 +98,27 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 ---
 
-「_如果你正打算学习一个**现代框架**用来构建 REST API，来看下 **ReadyAPI** [...] 它快速、易用且易于学习 [...]_」
+「_如果你正打算学习一个**现代框架**用来构建 REST API，来看下 **readyapi** [...] 它快速、易用且易于学习 [...]_」
 
-「_我们已经将 **API** 服务切换到了 **ReadyAPI** [...] 我认为你会喜欢它的 [...]_」
+「_我们已经将 **API** 服务切换到了 **readyapi** [...] 我认为你会喜欢它的 [...]_」
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> 创始人 - <a href="https://spacy.io" target="_blank">spaCy</a> 作者</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**，命令行中的 ReadyAPI
+## **Cligenius**，命令行中的 readyapi
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 如果你正在开发一个在终端中运行的<abbr title="Command Line Interface">命令行</abbr>应用而不是 web API，不妨试下 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>。
 
-**Cligenius** 是 ReadyAPI 的小同胞。它想要成为**命令行中的 ReadyAPI**。 ⌨️ 🚀
+**Cligenius** 是 readyapi 的小同胞。它想要成为**命令行中的 readyapi**。 ⌨️ 🚀
 
 ## 依赖
 
 Python 及更高版本
 
-ReadyAPI 站在以下巨人的肩膀之上：
+readyapi 站在以下巨人的肩膀之上：
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 负责 web 部分。
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 负责数据部分。
@@ -156,9 +156,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -179,9 +179,9 @@ def read_item(item_id: int, q: Union[str, None] = None):
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -224,7 +224,7 @@ INFO:     Application startup complete.
  `uvicorn main:app` 命令含义如下:
 
 * `main`：`main.py` 文件（一个 Python "模块"）。
-* `app`：在 `main.py` 文件中通过 `app = ReadyAPI()` 创建的对象。
+* `app`：在 `main.py` 文件中通过 `app = readyapi()` 创建的对象。
 * `--reload`：让服务器在更新代码后重新启动。仅在开发时使用该选项。
 
 </details>
@@ -271,10 +271,10 @@ INFO:     Application startup complete.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -374,7 +374,7 @@ item: Item
 
 ---
 
-回到前面的代码示例，**ReadyAPI** 将会：
+回到前面的代码示例，**readyapi** 将会：
 
 * 校验 `GET` 和 `PUT` 请求的路径中是否含有 `item_id`。
 * 校验 `GET` 和 `PUT` 请求中的 `item_id` 是否为 `int` 类型。
@@ -438,7 +438,7 @@ item: Item
 
 ## 性能
 
-独立机构 TechEmpower 所作的基准测试结果显示，基于 Uvicorn 运行的 **ReadyAPI** 程序是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python web 框架之一</a>，仅次于 Starlette 和 Uvicorn 本身（ReadyAPI 内部使用了它们）。(*)
+独立机构 TechEmpower 所作的基准测试结果显示，基于 Uvicorn 运行的 **readyapi** 程序是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python web 框架之一</a>，仅次于 Starlette 和 Uvicorn 本身（readyapi 内部使用了它们）。(*)
 
 想了解更多，请查阅 <a href="https://readyapi.khulnasoft.com/zh/benchmarks/" class="internal-link" target="_blank">基准测试</a> 章节。
 
@@ -454,10 +454,10 @@ item: Item
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - 使用默认模板配置时安装。
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - 需要通过 `request.form()` 对表单进行<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">「解析」</abbr>时安装。
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - 需要 `SessionMiddleware` 支持时安装。
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 使用 Starlette 提供的 `SchemaGenerator` 时安装（有 ReadyAPI 你可能并不需要它）。
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 使用 Starlette 提供的 `SchemaGenerator` 时安装（有 readyapi 你可能并不需要它）。
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - 需要 `GraphQLApp` 支持时安装。
 
-用于 ReadyAPI / Starlette：
+用于 readyapi / Starlette：
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 用于加载和运行你的应用程序的服务器。
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - 使用 `ORJSONResponse` 时安装。

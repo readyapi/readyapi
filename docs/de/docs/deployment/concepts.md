@@ -1,6 +1,6 @@
 # Deployment-Konzepte
 
-Bei dem Deployment – der Bereitstellung – einer **ReadyAPI**-Anwendung, oder eigentlich jeder Art von Web-API, gibt es mehrere Konzepte, die Sie wahrscheinlich interessieren, und mithilfe der Sie die **am besten geeignete** Methode zur **Bereitstellung Ihrer Anwendung** finden können.
+Bei dem Deployment – der Bereitstellung – einer **readyapi**-Anwendung, oder eigentlich jeder Art von Web-API, gibt es mehrere Konzepte, die Sie wahrscheinlich interessieren, und mithilfe der Sie die **am besten geeignete** Methode zur **Bereitstellung Ihrer Anwendung** finden können.
 
 Einige wichtige Konzepte sind:
 
@@ -19,7 +19,7 @@ Ich erzähle Ihnen hier etwas mehr über diese **Konzepte**, was Ihnen hoffentli
 
 Durch die Berücksichtigung dieser Konzepte können Sie die beste Variante der Bereitstellung **Ihrer eigenen APIs** **evaluieren und konzipieren**.
 
-In den nächsten Kapiteln werde ich Ihnen mehr **konkrete Rezepte** für die Bereitstellung von ReadyAPI-Anwendungen geben.
+In den nächsten Kapiteln werde ich Ihnen mehr **konkrete Rezepte** für die Bereitstellung von readyapi-Anwendungen geben.
 
 Aber schauen wir uns zunächst einmal diese grundlegenden **konzeptionellen Ideen** an. Diese Konzepte gelten auch für jede andere Art von Web-API. 💡
 
@@ -104,7 +104,7 @@ Und wenn der Server neu gestartet wird (z. B. nach Updates oder Migrationen vom 
 
 ### Beim Hochfahren automatisch ausführen
 
-Im Allgemeinen möchten Sie wahrscheinlich, dass das Serverprogramm (z. B. Uvicorn) beim Hochfahren des Servers automatisch gestartet wird und kein **menschliches Eingreifen** erforderlich ist, sodass immer ein Prozess mit Ihrer API ausgeführt wird (z. B. Uvicorn, welches Ihre ReadyAPI-Anwendung ausführt).
+Im Allgemeinen möchten Sie wahrscheinlich, dass das Serverprogramm (z. B. Uvicorn) beim Hochfahren des Servers automatisch gestartet wird und kein **menschliches Eingreifen** erforderlich ist, sodass immer ein Prozess mit Ihrer API ausgeführt wird (z. B. Uvicorn, welches Ihre readyapi-Anwendung ausführt).
 
 ### Separates Programm
 
@@ -137,7 +137,7 @@ Und wir als Entwickler verbessern den Code ständig, wenn wir diese Bugs finden 
 
 ### Kleine Fehler automatisch handhaben
 
-Wenn beim Erstellen von Web-APIs mit ReadyAPI ein Fehler in unserem Code auftritt, wird ReadyAPI ihn normalerweise dem einzelnen Request zurückgeben, der den Fehler ausgelöst hat. 🛡
+Wenn beim Erstellen von Web-APIs mit readyapi ein Fehler in unserem Code auftritt, wird readyapi ihn normalerweise dem einzelnen Request zurückgeben, der den Fehler ausgelöst hat. 🛡
 
 Der Client erhält für diesen Request einen **500 Internal Server Error**, aber die Anwendung arbeitet bei den nächsten Requests weiter, anstatt einfach komplett abzustürzen.
 
@@ -178,7 +178,7 @@ Dies könnte zum Beispiel erledigt werden durch:
 
 ## Replikation – Prozesse und Arbeitsspeicher
 
-Wenn Sie eine ReadyAPI-Anwendung verwenden und ein Serverprogramm wie Uvicorn verwenden, kann **ein einzelner Prozess** mehrere Clients gleichzeitig bedienen.
+Wenn Sie eine readyapi-Anwendung verwenden und ein Serverprogramm wie Uvicorn verwenden, kann **ein einzelner Prozess** mehrere Clients gleichzeitig bedienen.
 
 In vielen Fällen möchten Sie jedoch mehrere Prozesse gleichzeitig ausführen.
 
@@ -216,7 +216,7 @@ Dieser Manager-Prozess wäre wahrscheinlich derjenige, welcher der IP am **Port*
 
 Diese Workerprozesse würden Ihre Anwendung ausführen, sie würden die Hauptberechnungen durchführen, um einen **Request** entgegenzunehmen und eine **Response** zurückzugeben, und sie würden alles, was Sie in Variablen einfügen, in den RAM laden.
 
-<img src="/img/deployment/concepts/process-ram.svg">
+<img src="/img/deployment/concepts/process-ram.drawio.svg">
 
 Und natürlich würden auf derselben Maschine neben Ihrer Anwendung wahrscheinlich auch **andere Prozesse** laufen.
 
@@ -245,7 +245,7 @@ Hier sind einige mögliche Kombinationen und Strategien:
 
 Machen Sie sich keine Sorgen, wenn einige dieser Punkte zu **Containern**, Docker oder Kubernetes noch nicht viel Sinn ergeben.
 
-Ich werde Ihnen in einem zukünftigen Kapitel mehr über Container-Images, Docker, Kubernetes, usw. erzählen: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
+Ich werde Ihnen in einem zukünftigen Kapitel mehr über Container-Images, Docker, Kubernetes, usw. erzählen: [readyapi in Containern – Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -283,7 +283,7 @@ Hier sind einige mögliche Ideen:
 
 /// tip | Tipp
 
-Konkretere Beispiele hierfür mit Containern gebe ich Ihnen in einem späteren Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
+Konkretere Beispiele hierfür mit Containern gebe ich Ihnen in einem späteren Kapitel: [readyapi in Containern – Docker](docker.md){.internal-link target=_blank}.
 
 ///
 

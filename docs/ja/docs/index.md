@@ -1,24 +1,27 @@
-# ReadyAPI
+# readyapi
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
+    <em>readyapi framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
 <p align="center">
-<a href="https://travis-ci.com/readyapi/readyapi" target="_blank">
-    <img src="https://travis-ci.com/readyapi/readyapi.svg?branch=master" alt="Build Status">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi" alt="Coverage">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
-    <img src="https://badge.fury.io/py/readyapi.svg" alt="Package version">
+    <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/readyapi" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/readyapi.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
 
@@ -30,7 +33,7 @@
 
 ---
 
-ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降でAPI を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
+readyapi は、Pythonの標準である型ヒントに基づいてPython 以降でAPI を構築するための、モダンで、高速(高パフォーマンス)な、Web フレームワークです。
 
 主な特徴:
 
@@ -65,25 +68,25 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降�
 
 ## 評価
 
-"_[...] 最近 **ReadyAPI** を使っています。 [...] 実際に私のチームの全ての **Microsoft の機械学習サービス** で使用する予定です。 そのうちのいくつかのコアな**Windows**製品と**Office**製品に統合されつつあります。_"
+"_[...] 最近 **readyapi** を使っています。 [...] 実際に私のチームの全ての **Microsoft の機械学習サービス** で使用する予定です。 そのうちのいくつかのコアな**Windows**製品と**Office**製品に統合されつつあります。_"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_ReadyAPIライブラリを採用し、クエリで**予測値**を取得できる**REST**サーバを構築しました。 [for Ludwig]_"
+"_readyapiライブラリを採用し、クエリで**予測値**を取得できる**REST**サーバを構築しました。 [for Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** は、**危機管理**オーケストレーションフレームワーク、**Dispatch**のオープンソースリリースを発表できることをうれしく思います。 [built with **ReadyAPI**]_"
+"_**Netflix** は、**危機管理**オーケストレーションフレームワーク、**Dispatch**のオープンソースリリースを発表できることをうれしく思います。 [built with **readyapi**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_私は**ReadyAPI**にワクワクしています。 めちゃくちゃ楽しいです！_"
+"_私は**readyapi**にワクワクしています。 めちゃくちゃ楽しいです！_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -95,25 +98,25 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降�
 
 ---
 
-"_REST API を構築するための**モダンなフレームワーク**を学びたい方は、**ReadyAPI** [...] をチェックしてみてください。 [...] 高速で, 使用、習得が簡単です。[...]_"
+"_REST API を構築するための**モダンなフレームワーク**を学びたい方は、**readyapi** [...] をチェックしてみてください。 [...] 高速で, 使用、習得が簡単です。[...]_"
 
-"_私たちの**API**は**ReadyAPI**に切り替えました。[...] きっと気に入ると思います。 [...]_"
+"_私たちの**API**は**readyapi**に切り替えました。[...] きっと気に入ると思います。 [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, the ReadyAPI of CLIs
+## **Cligenius**, the readyapi of CLIs
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 もし Web API の代わりにターミナルで使用する<abbr title="Command Line Interface">CLI</abbr>アプリを構築する場合は、<a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>を確認してください。
 
-**Cligenius**は ReadyAPI の弟分です。そして、**CLI 版 の ReadyAPI**を意味しています。
+**Cligenius**は readyapi の弟分です。そして、**CLI 版 の readyapi**を意味しています。
 
 ## 必要条件
 
-ReadyAPI は巨人の肩の上に立っています。
+readyapi は巨人の肩の上に立っています。
 
 - Web の部分は<a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>
 - データの部分は<a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a>
@@ -149,9 +152,9 @@ $ pip install "uvicorn[standard]"
 - `main.py` を作成し、以下のコードを入力します:
 
 ```Python
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -170,9 +173,9 @@ def read_item(item_id: int, q: str = None):
 `async` / `await`を使用するときは、 `async def`を使います:
 
 ```Python hl_lines="7 12"
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -215,7 +218,7 @@ INFO:     Application startup complete.
 `uvicorn main:app`コマンドは以下の項目を参照します:
 
 - `main`: `main.py`ファイル (Python "モジュール")
-- `app`: `main.py` の`app = ReadyAPI()`の行で生成されたオブジェクト
+- `app`: `main.py` の`app = readyapi()`の行で生成されたオブジェクト
 - `--reload`: コードを変更したらサーバーを再起動します。このオプションは開発環境でのみ使用します
 
 </details>
@@ -260,10 +263,10 @@ INFO:     Application startup complete.
 Pydantic によって、Python の標準的な型を使ってボディを宣言します。
 
 ```Python hl_lines="2  7 8 9 10  23 24 25"
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -363,7 +366,7 @@ item: Item
 
 ---
 
-コード例に戻りましょう、**ReadyAPI** は次のようになります:
+コード例に戻りましょう、**readyapi** は次のようになります:
 
 - `GET`および`PUT`リクエストのパスに`item_id` があることを検証します。
 - `item_id`が`GET`および`PUT`リクエストに対して`int` 型であることを検証します。
@@ -427,7 +430,7 @@ item: Item
 
 ## パフォーマンス
 
-独立した TechEmpower のベンチマークでは、Uvicorn で動作する**ReadyAPI**アプリケーションが、<a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">Python フレームワークの中で最も高速なものの 1 つ</a>であり、Starlette と Uvicorn（ReadyAPI で内部的に使用されています）にのみ下回っていると示されています。
+独立した TechEmpower のベンチマークでは、Uvicorn で動作する**readyapi**アプリケーションが、<a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">Python フレームワークの中で最も高速なものの 1 つ</a>であり、Starlette と Uvicorn（readyapi で内部的に使用されています）にのみ下回っていると示されています。
 
 詳細は<a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">ベンチマーク</a>セクションをご覧ください。
 
@@ -443,10 +446,10 @@ Starlette によって使用されるもの:
 - <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - デフォルトのテンプレート設定を使用する場合は必要です。
 - <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>`request.form()`からの変換をサポートしたい場合は必要です。
 - <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - `SessionMiddleware` サポートのためには必要です。
-- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Starlette の `SchemaGenerator` サポートのために必要です。 (ReadyAPI では必要ないでしょう。)
+- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Starlette の `SchemaGenerator` サポートのために必要です。 (readyapi では必要ないでしょう。)
 - <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - `GraphQLApp` サポートのためには必要です。
 
-ReadyAPI / Starlette に使用されるもの:
+readyapi / Starlette に使用されるもの:
 
 - <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - アプリケーションをロードしてサーブするサーバーのため。
 - <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - `ORJSONResponse`を使用したい場合は必要です。

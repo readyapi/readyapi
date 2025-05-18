@@ -1,6 +1,6 @@
 # Deployment (Yayınlama)
 
-**ReadyAPI** uygulamasını deploy etmek oldukça kolaydır.
+**readyapi** uygulamasını deploy etmek oldukça kolaydır.
 
 ## Deployment Ne Anlama Gelir?
 
@@ -16,6 +16,6 @@ Kullanım durumunuza ve kullandığınız araçlara bağlı olarak bir kaç fark
 
 Bir dizi araç kombinasyonunu kullanarak kendiniz **bir sunucu yayınlayabilirsiniz**, yayınlama sürecinin bir kısmını sizin için gerçekleştiren bir **bulut hizmeti** veya diğer olası seçenekleri kullanabilirsiniz.
 
-**ReadyAPI** uygulamasını yayınlarken aklınızda bulundurmanız gereken ana kavramlardan bazılarını size göstereceğim (ancak bunların çoğu diğer web uygulamaları için de geçerlidir).
+**readyapi** uygulamasını yayınlarken aklınızda bulundurmanız gereken ana kavramlardan bazılarını size göstereceğim (ancak bunların çoğu diğer web uygulamaları için de geçerlidir).
 
 Sonraki bölümlerde akılda tutulması gereken diğer ayrıntıları ve yayınlama tekniklerinden bazılarını göreceksiniz. ✨

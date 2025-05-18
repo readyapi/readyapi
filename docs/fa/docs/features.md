@@ -1,8 +1,8 @@
 # ویژگی ها
 
-## ویژگی های ReadyAPI
+## ویژگی های readyapi
 
-**ReadyAPI** موارد زیر را به شما ارائه میدهد:
+**readyapi** موارد زیر را به شما ارائه میدهد:
 
 ### برپایه استاندارد های باز
 
@@ -27,7 +27,7 @@
 
 همه اینها برپایه type declaration های **پایتون ۳.۶** استاندارد (به لطف Pydantic) میباشند. سینتکس جدیدی درکار نیست. تنها پایتون مدرن استاندارد.
 
-اگر به یک یادآوری ۲ دقیقه ای در مورد نحوه استفاده از تایپ های پایتون دارید (حتی اگر از ReadyAPI استفاده نمیکنید) این آموزش کوتاه را بررسی کنید: [Python Types](python-types.md){.internal-link target=\_blank}.
+اگر به یک یادآوری ۲ دقیقه ای در مورد نحوه استفاده از تایپ های پایتون دارید (حتی اگر از readyapi استفاده نمیکنید) این آموزش کوتاه را بررسی کنید: [Python Types](python-types.md){.internal-link target=\_blank}.
 
 شما پایتون استاندارد را با استفاده از تایپ ها مینویسید:
 
@@ -77,7 +77,7 @@ my_second_user: User = User(**second_user_data)
 
 در آخرین نظرسنجی توسعه دهندگان پایتون کاملا مشخص بود که <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">بیشترین ویژگی مورد استفاده از "<abbr title="autocompletion">تکمیل خودکار</abbr>" است</a>.
 
-تمام فریم ورک **ReadyAPI** برپایه ای برای براورده کردن این نیاز نیز ایجاد گشته است. تکمیل خودکار در همه جا کار میکند.
+تمام فریم ورک **readyapi** برپایه ای برای براورده کردن این نیاز نیز ایجاد گشته است. تکمیل خودکار در همه جا کار میکند.
 
 شما به ندرت نیاز به بازگشت به مستندات را خواهید داشت.
 
@@ -97,7 +97,7 @@ my_second_user: User = User(**second_user_data)
 
 ### مختصر
 
-ReadyAPI **پیش فرض** های معقولی برای همه چیز دارد، با قابلیت تنظیمات اختیاری در همه جا. تمام پارامترها را میتوانید برای انجام انچه نیاز دارید و برای تعریف API مورد نیاز خود به خوبی تنظیم کنید.
+readyapi **پیش فرض** های معقولی برای همه چیز دارد، با قابلیت تنظیمات اختیاری در همه جا. تمام پارامترها را میتوانید برای انجام انچه نیاز دارید و برای تعریف API مورد نیاز خود به خوبی تنظیم کنید.
 
 اما به طور پیش فرض، همه چیز **کار میکند**.
 
@@ -137,7 +137,7 @@ ReadyAPI **پیش فرض** های معقولی برای همه چیز دارد،
 
 ### <abbr title="تزریق وابستگی">Dependency Injection</abbr>
 
-ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "components", "resources", "services" و "providers" شناخته میشود'><strong>Dependency Injection</strong></abbr> بسیار آسان اما بسیار قدرتمند است.
+readyapi شامل یک سیستم <abbr title='همچنین به عنوان "components", "resources", "services" و "providers" شناخته میشود'><strong>Dependency Injection</strong></abbr> بسیار آسان اما بسیار قدرتمند است.
 
 * حتی وابستگی ها نیز میتوانند وابستگی هایی داشته باشند و یک سلسله مراتب یا **"گرافی" از وابستگی ها** ایجاد کنند.
 
@@ -167,11 +167,11 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 ## ویژگی های Starlette
 
-**ReadyAPI** کاملا (و براساس) با <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> سازگار است. بنابراین، هرکد اضافی Starlette که دارید، نیز کار خواهد کرد.
+**readyapi** کاملا (و براساس) با <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> سازگار است. بنابراین، هرکد اضافی Starlette که دارید، نیز کار خواهد کرد.
 
-‍‍`ReadyAPI` در واقع یک زیرکلاس از `Starlette` است. بنابراین اگر از قبل Starlette را میشناسید یا با آن کار کرده اید، بیشتر قابلیت ها به همین روش کار خواهد کرد.
+‍‍`readyapi` در واقع یک زیرکلاس از `Starlette` است. بنابراین اگر از قبل Starlette را میشناسید یا با آن کار کرده اید، بیشتر قابلیت ها به همین روش کار خواهد کرد.
 
-با **ReadyAPI** شما تمام ویژگی های **Starlette** را خواهید داشت (زیرا ReadyAPI یک نسخه و نمونه به تمام معنا از Starlette است):
+با **readyapi** شما تمام ویژگی های **Starlette** را خواهید داشت (زیرا readyapi یک نسخه و نمونه به تمام معنا از Starlette است):
 
 * عملکرد به طورجدی چشمگیر. <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">این یکی از سریعترین فریم ورک های موجود در پایتون است که همتراز با **نود جی اس** و **گو**</a> است.
 * پشتیبانی از **WebSocket**.
@@ -185,7 +185,7 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 ## ویژگی های Pydantic
 
-**ReadyAPI** کاملا (و براساس) با <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> سازگار است. بنابراین هرکد Pydantic اضافی که داشته باشید، نیز کار خواهد کرد.
+**readyapi** کاملا (و براساس) با <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> سازگار است. بنابراین هرکد Pydantic اضافی که داشته باشید، نیز کار خواهد کرد.
 
 از جمله کتابخانه های خارجی نیز مبتنی بر Pydantic میتوان به <abbr title="Object-Relational Mapper">ORM</abbr> و <abbr title="Object-Document Mapper">ODM</abbr> ها برای دیتابیس ها اشاره کرد.
 
@@ -193,7 +193,7 @@ ReadyAPI شامل یک سیستم <abbr title='همچنین به عنوان "com
 
 همین امر برعکس نیز صدق می‌کند، در بسیاری از موارد شما می‌توانید ابجکتی را که از پایگاه داده دریافت می‌کنید را **مستقیماً به کاربر** ارسال کنید.
 
-با ReadyAPI شما تمام ویژگی های Pydantic را دراختیار دارید (زیرا ReadyAPI برای تمام بخش مدیریت دیتا بر اساس Pydantic عمل میکند):
+با readyapi شما تمام ویژگی های Pydantic را دراختیار دارید (زیرا readyapi برای تمام بخش مدیریت دیتا بر اساس Pydantic عمل میکند):
 
 * **خبری از گیج شدن نیست**:
     * هیچ <abbr title="micro-language">زبان خردی</abbr> برای یادگیری تعریف طرحواره های جدید وجود ندارد.

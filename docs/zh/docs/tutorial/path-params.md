@@ -1,6 +1,6 @@
 # 路径参数
 
-ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**变量**）：
+readyapi 支持使用 Python 字符串格式化语法声明**路径参数**（**变量**）：
 
 {* ../../docs_src/path_params/tutorial001.py hl[6:7] *}
 
@@ -38,7 +38,7 @@ ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**
 
 注意，函数接收并返回的值是 `3`（ `int`），不是 `"3"`（`str`）。
 
-**ReadyAPI** 通过类型声明自动<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">**解析**请求中的数据</abbr>。
+**readyapi** 通过类型声明自动<abbr title="将来自 HTTP 请求中的字符串转换为 Python 数据类型">**解析**请求中的数据</abbr>。
 
 ///
 
@@ -67,7 +67,7 @@ ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**
 
 /// check | 检查
 
-**ReadyAPI** 使用 Python 类型声明实现了数据校验。
+**readyapi** 使用 Python 类型声明实现了数据校验。
 
 注意，上面的错误清晰地指出了未通过校验的具体原因。
 
@@ -83,7 +83,7 @@ ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**
 
 /// check | 检查
 
-还是使用 Python 类型声明，**ReadyAPI** 提供了（集成 Swagger UI 的）API 文档。
+还是使用 Python 类型声明，**readyapi** 提供了（集成 Swagger UI 的）API 文档。
 
 注意，路径参数的类型是整数。
 
@@ -91,9 +91,9 @@ ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**
 
 ## 基于标准的好处，备选文档
 
-**ReadyAPI** 使用 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md" class="external-link" target="_blank">OpenAPI</a> 生成概图，所以能兼容很多工具。
+**readyapi** 使用 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md" class="external-link" target="_blank">OpenAPI</a> 生成概图，所以能兼容很多工具。
 
-因此，**ReadyAPI** 还内置了 ReDoc 生成的备选 API 文档，可在此查看 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>：
+因此，**readyapi** 还内置了 ReDoc 生成的备选 API 文档，可在此查看 <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>：
 
 <img src="/img/tutorial/path-params/image02.png">
 
@@ -101,7 +101,7 @@ ReadyAPI 支持使用 Python 字符串格式化语法声明**路径参数**（**
 
 ## Pydantic
 
-ReadyAPI 充分地利用了 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 的优势，用它在后台校验数据。众所周知，Pydantic 擅长的就是数据校验。
+readyapi 充分地利用了 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 的优势，用它在后台校验数据。众所周知，Pydantic 擅长的就是数据校验。
 
 同样，`str`、`float`、`bool` 以及很多复合数据类型都可以使用类型声明。
 
@@ -119,7 +119,7 @@ ReadyAPI 充分地利用了 <a href="https://docs.pydantic.dev/" class="external
 
 {* ../../docs_src/path_params/tutorial003.py hl[6,11] *}
 
-否则，`/users/{user_id}` 将匹配 `/users/me`，ReadyAPI 会**认为**正在接收值为 `"me"` 的 `user_id` 参数。
+否则，`/users/{user_id}` 将匹配 `/users/me`，readyapi 会**认为**正在接收值为 `"me"` 的 `user_id` 参数。
 
 ## 预设值
 
@@ -210,7 +210,7 @@ Python 3.4 及之后版本支持<a href="https://docs.python.org/zh-cn/3/library
 
 OpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试和定义更加困难。
 
-不过，仍可使用 Starlette 内置工具在 **ReadyAPI** 中实现这一功能。
+不过，仍可使用 Starlette 内置工具在 **readyapi** 中实现这一功能。
 
 而且不影响文档正常运行，但是不会添加该参数包含路径的说明。
 
@@ -238,7 +238,7 @@ OpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试�
 
 ## 小结
 
-通过简短、直观的 Python 标准类型声明，**ReadyAPI** 可以获得：
+通过简短、直观的 Python 标准类型声明，**readyapi** 可以获得：
 
 - 编辑器支持：错误检查，代码自动补全等
 - 数据**<abbr title="把来自 HTTP 请求中的字符串转换为 Python 数据类型">解析</abbr>**
@@ -247,4 +247,4 @@ OpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试�
 
 只需要声明一次即可。
 
-这可能是除了性能以外，**ReadyAPI** 与其它框架相比的主要优势。
+这可能是除了性能以外，**readyapi** 与其它框架相比的主要优势。

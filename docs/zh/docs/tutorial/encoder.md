@@ -4,7 +4,7 @@
 
 比如，如果您需要将其存储在数据库中。
 
-对于这种要求， **ReadyAPI**提供了`jsonable_encoder()`函数。
+对于这种要求， **readyapi**提供了`jsonable_encoder()`函数。
 
 ## 使用`jsonable_encoder`
 
@@ -30,6 +30,6 @@
 
 /// note
 
-`jsonable_encoder`实际上是ReadyAPI内部用来转换数据的。但是它在许多其他场景中也很有用。
+`jsonable_encoder`实际上是readyapi内部用来转换数据的。但是它在许多其他场景中也很有用。
 
 ///

@@ -67,21 +67,21 @@ http://127.0.0.1:8000/items/?skip=20
 
 /// check | 检查
 
-注意，**ReadyAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。
+注意，**readyapi** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。
 
 ///
 
 /// note | 笔记
 
-因为默认值为 `= None`，ReadyAPI 把 `q` 识别为可选参数。
+因为默认值为 `= None`，readyapi 把 `q` 识别为可选参数。
 
-ReadyAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。
+readyapi 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。
 
 ///
 
 ## 查询参数类型转换
 
-参数还可以声明为 `bool` 类型，ReadyAPI 会自动转换参数类型：
+参数还可以声明为 `bool` 类型，readyapi 会自动转换参数类型：
 
 
 {* ../../docs_src/query_params/tutorial003_py310.py hl[7] *}
@@ -121,11 +121,11 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 ## 多个路径和查询参数
 
-**ReadyAPI** 可以识别同时声明的多个路径参数和查询参数。
+**readyapi** 可以识别同时声明的多个路径参数和查询参数。
 
 而且声明查询参数的顺序并不重要。
 
-ReadyAPI 通过参数名进行检测：
+readyapi 通过参数名进行检测：
 
 {* ../../docs_src/query_params/tutorial004_py310.py hl[6,8] *}
 

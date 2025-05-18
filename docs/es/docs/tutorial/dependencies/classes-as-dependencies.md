@@ -59,11 +59,11 @@ Y para crear `fluffy`, estás "llamando" a `Cat`.
 
 Entonces, una clase en Python también es un **callable**.
 
-Entonces, en **ReadyAPI**, podrías usar una clase de Python como una dependencia.
+Entonces, en **readyapi**, podrías usar una clase de Python como una dependencia.
 
-Lo que **ReadyAPI** realmente comprueba es que sea un "callable" (función, clase o cualquier otra cosa) y los parámetros definidos.
+Lo que **readyapi** realmente comprueba es que sea un "callable" (función, clase o cualquier otra cosa) y los parámetros definidos.
 
-Si pasas un "callable" como dependencia en **ReadyAPI**, analizará los parámetros de ese "callable", y los procesará de la misma manera que los parámetros de una *path operation function*. Incluyendo sub-dependencias.
+Si pasas un "callable" como dependencia en **readyapi**, analizará los parámetros de ese "callable", y los procesará de la misma manera que los parámetros de una *path operation function*. Incluyendo sub-dependencias.
 
 Eso también se aplica a los callables sin parámetros. Igual que sería para *path operation functions* sin parámetros.
 
@@ -79,7 +79,7 @@ Presta atención al método `__init__` usado para crear la instance de la clase:
 
 {* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8] *}
 
-Esos parámetros son los que **ReadyAPI** usará para "resolver" la dependencia.
+Esos parámetros son los que **readyapi** usará para "resolver" la dependencia.
 
 En ambos casos, tendrá:
 
@@ -95,7 +95,7 @@ Ahora puedes declarar tu dependencia usando esta clase.
 
 {* ../../docs_src/dependencies/tutorial002_an_py310.py hl[19] *}
 
-**ReadyAPI** llama a la clase `CommonQueryParams`. Esto crea una "instance" de esa clase y la instance será pasada como el parámetro `commons` a tu función.
+**readyapi** llama a la clase `CommonQueryParams`. Esto crea una "instance" de esa clase y la instance será pasada como el parámetro `commons` a tu función.
 
 ## Anotación de tipos vs `Depends`
 
@@ -129,9 +129,9 @@ El último `CommonQueryParams`, en:
 ... Depends(CommonQueryParams)
 ```
 
-...es lo que **ReadyAPI** utilizará realmente para saber cuál es la dependencia.
+...es lo que **readyapi** utilizará realmente para saber cuál es la dependencia.
 
-Es a partir de este que **ReadyAPI** extraerá los parámetros declarados y es lo que **ReadyAPI** realmente llamará.
+Es a partir de este que **readyapi** extraerá los parámetros declarados y es lo que **readyapi** realmente llamará.
 
 ---
 
@@ -159,7 +159,7 @@ commons: CommonQueryParams ...
 
 ////
 
-...no tiene ningún significado especial para **ReadyAPI**. **ReadyAPI** no lo usará para la conversión de datos, validación, etc. (ya que está usando `Depends(CommonQueryParams)` para eso).
+...no tiene ningún significado especial para **readyapi**. **readyapi** no lo usará para la conversión de datos, validación, etc. (ya que está usando `Depends(CommonQueryParams)` para eso).
 
 De hecho, podrías escribir simplemente:
 
@@ -219,7 +219,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-**ReadyAPI** proporciona un atajo para estos casos, en donde la dependencia es *específicamente* una clase que **ReadyAPI** "llamará" para crear una instance de la clase misma.
+**readyapi** proporciona un atajo para estos casos, en donde la dependencia es *específicamente* una clase que **readyapi** "llamará" para crear una instance de la clase misma.
 
 Para esos casos específicos, puedes hacer lo siguiente:
 
@@ -277,12 +277,12 @@ El mismo ejemplo se vería entonces así:
 
 {* ../../docs_src/dependencies/tutorial004_an_py310.py hl[19] *}
 
-...y **ReadyAPI** sabrá qué hacer.
+...y **readyapi** sabrá qué hacer.
 
 /// tip | Consejo
 
 Si eso parece más confuso que útil, ignóralo, no lo *necesitas*.
 
-Es solo un atajo. Porque a **ReadyAPI** le importa ayudarte a minimizar la repetición de código.
+Es solo un atajo. Porque a **readyapi** le importa ayudarte a minimizar la repetición de código.
 
 ///

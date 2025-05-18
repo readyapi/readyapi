@@ -1,6 +1,6 @@
 # Dependencies with yield
 
-ReadyAPI supports dependencies that do some <abbr title='sometimes also called "exit code", "cleanup code", "teardown code", "closing code", "context manager exit code", etc.'>extra steps after finishing</abbr>.
+readyapi supports dependencies that do some <abbr title='sometimes also called "exit code", "cleanup code", "teardown code", "closing code", "context manager exit code", etc.'>extra steps after finishing</abbr>.
 
 To do this, use `yield` instead of `return`, and write the extra steps (code) after.
 
@@ -17,9 +17,9 @@ Any function that is valid to use with:
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> or
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
-would be valid to use as a **ReadyAPI** dependency.
+would be valid to use as a **readyapi** dependency.
 
-In fact, ReadyAPI uses those two decorators internally.
+In fact, readyapi uses those two decorators internally.
 
 ///
 
@@ -43,7 +43,7 @@ The code following the `yield` statement is executed after creating the response
 
 You can use `async` or regular functions.
 
-**ReadyAPI** will do the right thing with each, the same as with normal dependencies.
+**readyapi** will do the right thing with each, the same as with normal dependencies.
 
 ///
 
@@ -63,7 +63,7 @@ In the same way, you can use `finally` to make sure the exit steps are executed,
 
 You can have sub-dependencies and "trees" of sub-dependencies of any size and shape, and any or all of them can use `yield`.
 
-**ReadyAPI** will make sure that the "exit code" in each dependency with `yield` is run in the correct order.
+**readyapi** will make sure that the "exit code" in each dependency with `yield` is run in the correct order.
 
 For example, `dependency_c` can have a dependency on `dependency_b`, and `dependency_b` on `dependency_a`:
 
@@ -83,13 +83,13 @@ And you could have a single dependency that requires several other dependencies 
 
 You can have any combinations of dependencies that you want.
 
-**ReadyAPI** will make sure everything is run in the correct order.
+**readyapi** will make sure everything is run in the correct order.
 
 /// note | Technical Details
 
 This works thanks to Python's <a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a>.
 
-**ReadyAPI** uses them internally to achieve this.
+**readyapi** uses them internally to achieve this.
 
 ///
 
@@ -113,7 +113,7 @@ An alternative you could use to catch exceptions (and possibly also raise anothe
 
 ## Dependencies with `yield` and `except`
 
-If you catch an exception using `except` in a dependency with `yield` and you don't raise it again (or raise a new exception), ReadyAPI won't be able to notice there was an exception, the same way that would happen with regular Python:
+If you catch an exception using `except` in a dependency with `yield` and you don't raise it again (or raise a new exception), readyapi won't be able to notice there was an exception, the same way that would happen with regular Python:
 
 {* ../../docs_src/dependencies/tutorial008c_an_py39.py hl[15:16] *}
 
@@ -190,23 +190,23 @@ If you raise any exception, it will be passed to the dependencies with yield, in
 
 You most probably don't need these technical details, you can skip this section and continue below.
 
-These details are useful mainly if you were using a version of ReadyAPI prior to 0.106.0 and used resources from dependencies with `yield` in background tasks.
+These details are useful mainly if you were using a version of readyapi prior to 0.106.0 and used resources from dependencies with `yield` in background tasks.
 
 ///
 
 ### Dependencies with `yield` and `except`, Technical Details
 
-Before ReadyAPI 0.110.0, if you used a dependency with `yield`, and then you captured an exception with `except` in that dependency, and you didn't raise the exception again, the exception would be automatically raised/forwarded to any exception handlers or the internal server error handler.
+Before readyapi 0.110.0, if you used a dependency with `yield`, and then you captured an exception with `except` in that dependency, and you didn't raise the exception again, the exception would be automatically raised/forwarded to any exception handlers or the internal server error handler.
 
 This was changed in version 0.110.0 to fix unhandled memory consumption from forwarded exceptions without a handler (internal server errors), and to make it consistent with the behavior of regular Python code.
 
 ### Background Tasks and Dependencies with `yield`, Technical Details
 
-Before ReadyAPI 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed *after* the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} would have already run.
+Before readyapi 0.106.0, raising exceptions after `yield` was not possible, the exit code in dependencies with `yield` was executed *after* the response was sent, so [Exception Handlers](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} would have already run.
 
 This was designed this way mainly to allow using the same objects "yielded" by dependencies inside of background tasks, because the exit code would be executed after the background tasks were finished.
 
-Nevertheless, as this would mean waiting for the response to travel through the network while unnecessarily holding a resource in a dependency with yield (for example a database connection), this was changed in ReadyAPI 0.106.0.
+Nevertheless, as this would mean waiting for the response to travel through the network while unnecessarily holding a resource in a dependency with yield (for example a database connection), this was changed in readyapi 0.106.0.
 
 /// tip
 
@@ -238,7 +238,7 @@ Underneath, the `open("./somefile.txt")` creates an object that is called a "Con
 
 When the `with` block finishes, it makes sure to close the file, even if there were exceptions.
 
-When you create a dependency with `yield`, **ReadyAPI** will internally create a context manager for it, and combine it with some other related tools.
+When you create a dependency with `yield`, **readyapi** will internally create a context manager for it, and combine it with some other related tools.
 
 ### Using context managers in dependencies with `yield`
 
@@ -246,13 +246,13 @@ When you create a dependency with `yield`, **ReadyAPI** will internally create a
 
 This is, more or less, an "advanced" idea.
 
-If you are just starting with **ReadyAPI** you might want to skip it for now.
+If you are just starting with **readyapi** you might want to skip it for now.
 
 ///
 
 In Python, you can create Context Managers by <a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">creating a class with two methods: `__enter__()` and `__exit__()`</a>.
 
-You can also use them inside of **ReadyAPI** dependencies with `yield` by using
+You can also use them inside of **readyapi** dependencies with `yield` by using
 `with` or `async with` statements inside of the dependency function:
 
 {* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
@@ -266,10 +266,10 @@ Another way to create a context manager is with:
 
 using them to decorate a function with a single `yield`.
 
-That's what **ReadyAPI** uses internally for dependencies with `yield`.
+That's what **readyapi** uses internally for dependencies with `yield`.
 
-But you don't have to use the decorators for ReadyAPI dependencies (and you shouldn't).
+But you don't have to use the decorators for readyapi dependencies (and you shouldn't).
 
-ReadyAPI will do it for you internally.
+readyapi will do it for you internally.
 
 ///

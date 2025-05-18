@@ -18,7 +18,7 @@
 
 Pydanticモデルの属性に対して宣言するのと同じ型を受け取るので、Pydanticモデルになることもできますが、例えば、`List[Item]`のようなPydanticモデルの`list`になることもできます。
 
-ReadyAPIは`response_model`を使って以下のことをします:
+readyapiは`response_model`を使って以下のことをします:
 
 * 出力データを型宣言に変換します。
 * データを検証します。
@@ -71,7 +71,7 @@ ReadyAPIは`response_model`を使って以下のことをします:
 
 {* ../../docs_src/response_model/tutorial003.py hl[22] *}
 
-そのため、**ReadyAPI** は出力モデルで宣言されていない全てのデータをフィルタリングしてくれます（Pydanticを使用）。
+そのため、**readyapi** は出力モデルで宣言されていない全てのデータをフィルタリングしてくれます（Pydanticを使用）。
 
 ## ドキュメントを見る
 
@@ -116,7 +116,7 @@ ReadyAPIは`response_model`を使って以下のことをします:
 
 /// info | 情報
 
-ReadyAPIはこれをするために、Pydanticモデルの`.dict()`を<a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">その`exclude_unset`パラメータ</a>で使用しています。
+readyapiはこれをするために、Pydanticモデルの`.dict()`を<a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">その`exclude_unset`パラメータ</a>で使用しています。
 
 ///
 
@@ -160,7 +160,7 @@ ID`baz`のitemのようにデフォルト値と同じ値を持つデータの場
 }
 ```
 
-ReadyAPIは十分に賢いので（実際には、Pydanticが十分に賢い）`description`や`tax`、`tags`はデフォルト値と同じ値を持っているにもかかわらず、明示的に設定されていることを理解しています。（デフォルトから取得するのではなく）
+readyapiは十分に賢いので（実際には、Pydanticが十分に賢い）`description`や`tax`、`tags`はデフォルト値と同じ値を持っているにもかかわらず、明示的に設定されていることを理解しています。（デフォルトから取得するのではなく）
 
 そのため、それらはJSONレスポンスに含まれることになります。
 
@@ -201,7 +201,7 @@ ReadyAPIは十分に賢いので（実際には、Pydanticが十分に賢い）`
 
 #### `set`の代わりに`list`を使用する
 
-もし`set`を使用することを忘れて、代わりに`list`や`tuple`を使用しても、ReadyAPIはそれを`set`に変換して正しく動作します:
+もし`set`を使用することを忘れて、代わりに`list`や`tuple`を使用しても、readyapiはそれを`set`に変換して正しく動作します:
 
 {* ../../docs_src/response_model/tutorial006.py hl[31,37] *}
 

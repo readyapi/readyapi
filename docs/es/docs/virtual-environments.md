@@ -433,9 +433,9 @@ Continúa leyendo. 👇🤓
 
 ## Por qué Entornos Virtuales
 
-Para trabajar con ReadyAPI necesitas instalar <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
+Para trabajar con readyapi necesitas instalar <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
 
-Después de eso, necesitarías **instalar** ReadyAPI y cualquier otro **paquete** que desees usar.
+Después de eso, necesitarías **instalar** readyapi y cualquier otro **paquete** que desees usar.
 
 Para instalar paquetes normalmente usarías el comando `pip` que viene con Python (o alternativas similares).
 
@@ -542,9 +542,9 @@ $ pip install "readyapi[standard]"
 
 </div>
 
-Eso descargará un archivo comprimido con el código de ReadyAPI, normalmente desde <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
+Eso descargará un archivo comprimido con el código de readyapi, normalmente desde <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
 
-También **descargará** archivos para otros paquetes de los que depende ReadyAPI.
+También **descargará** archivos para otros paquetes de los que depende readyapi.
 
 Luego, **extraerá** todos esos archivos y los pondrá en un directorio en tu computadora.
 

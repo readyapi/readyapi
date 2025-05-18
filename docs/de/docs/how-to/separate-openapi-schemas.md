@@ -83,11 +83,11 @@ Nun gibt es einige Fälle, in denen Sie möglicherweise **dasselbe Schema für E
 
 Der Hauptanwendungsfall hierfür besteht wahrscheinlich darin, dass Sie das mal tun möchten, wenn Sie bereits über einige automatisch generierte Client-Codes/SDKs verfügen und im Moment nicht alle automatisch generierten Client-Codes/SDKs aktualisieren möchten, möglicherweise später, aber nicht jetzt.
 
-In diesem Fall können Sie diese Funktion in **ReadyAPI** mit dem Parameter `separate_input_output_schemas=False` deaktivieren.
+In diesem Fall können Sie diese Funktion in **readyapi** mit dem Parameter `separate_input_output_schemas=False` deaktivieren.
 
 /// info
 
-Unterstützung für `separate_input_output_schemas` wurde in ReadyAPI `0.102.0` hinzugefügt. 🤓
+Unterstützung für `separate_input_output_schemas` wurde in readyapi `0.102.0` hinzugefügt. 🤓
 
 ///
 

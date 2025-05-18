@@ -1,21 +1,21 @@
-# ReadyAPI
+# readyapi
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>فریم‌ورک ReadyAPI، کارایی بالا، یادگیری آسان، کدنویسی سریع، آماده برای استفاده در محیط پروداکشن</em>
+    <em>فریم‌ورک readyapi، کارایی بالا، یادگیری آسان، کدنویسی سریع، آماده برای استفاده در محیط پروداکشن</em>
 </p>
 <p align="center">
-<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg" alt="Test">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi?color=%2334D058" alt="Coverage">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
     <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
@@ -32,7 +32,7 @@
 **کد منبع**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
 ---
-ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی بالا) برای ایجاد APIهای متنوع (وب، وب‌سوکت و غبره) با زبان پایتون نسخه +۳.۶ است. این فریم‌ورک با رعایت کامل راهنمای نوع داده (Type Hint) ایجاد شده است.
+readyapi یک وب فریم‌ورک مدرن و سریع (با کارایی بالا) برای ایجاد APIهای متنوع (وب، وب‌سوکت و غبره) با زبان پایتون نسخه +۳.۶ است. این فریم‌ورک با رعایت کامل راهنمای نوع داده (Type Hint) ایجاد شده است.
 
 ویژگی‌های کلیدی این فریم‌ورک عبارتند از:
 
@@ -62,27 +62,27 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 <a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">دیگر اسپانسرها</a>
 
-## نظر دیگران در مورد ReadyAPI
+## نظر دیگران در مورد readyapi
 
-<div style="text-align: left; direction: ltr;"><em> [...] I'm using <strong>ReadyAPI</strong> a ton these days. [...] I'm actually planning to use it for all of my team's <strong>ML services at Microsoft</strong>. Some of them are getting integrated into the core <strong>Windows</strong> product and some <strong>Office</strong> products."</em></div>
+<div style="text-align: left; direction: ltr;"><em> [...] I'm using <strong>readyapi</strong> a ton these days. [...] I'm actually planning to use it for all of my team's <strong>ML services at Microsoft</strong>. Some of them are getting integrated into the core <strong>Windows</strong> product and some <strong>Office</strong> products."</em></div>
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-<div style="text-align: left; direction: ltr;"><em>"We adopted the <strong>ReadyAPI</strong> library to spawn a <strong>REST</strong>server that can be queried to obtain <strong>predictions</strong>. [for Ludwig]"</em></div>
+<div style="text-align: left; direction: ltr;"><em>"We adopted the <strong>readyapi</strong> library to spawn a <strong>REST</strong>server that can be queried to obtain <strong>predictions</strong>. [for Ludwig]"</em></div>
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-<div style="text-align: left; direction: ltr;">"<strong>Netflix</strong> is pleased to announce the open-source release of our <strong>crisis management</strong> orchestration framework: <strong>Dispatch</strong>! [built with <strong>ReadyAPI</strong>]"</div>
+<div style="text-align: left; direction: ltr;">"<strong>Netflix</strong> is pleased to announce the open-source release of our <strong>crisis management</strong> orchestration framework: <strong>Dispatch</strong>! [built with <strong>readyapi</strong>]"</div>
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-<div style="text-align: left; direction: ltr;">"<em>I’m over the moon excited about <strong>ReadyAPI</strong>. It’s so fun!"</em></div>
+<div style="text-align: left; direction: ltr;">"<em>I’m over the moon excited about <strong>readyapi</strong>. It’s so fun!"</em></div>
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -94,27 +94,27 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 ---
 
-<div style="text-align: left; direction: ltr;">"<em>If you're looking to learn one <strong>modern framework</strong> for building REST APIs, check out <strong>ReadyAPI</strong> [...] It's fast, easy to use and easy to learn [...]"</em></div>
+<div style="text-align: left; direction: ltr;">"<em>If you're looking to learn one <strong>modern framework</strong> for building REST APIs, check out <strong>readyapi</strong> [...] It's fast, easy to use and easy to learn [...]"</em></div>
 
-<div style="text-align: left; direction: ltr;">"<em>We've switched over to <strong>ReadyAPI</strong> for our <strong>APIs</strong> [...] I think you'll like it [...]</em>"</div>
+<div style="text-align: left; direction: ltr;">"<em>We've switched over to <strong>readyapi</strong> for our <strong>APIs</strong> [...] I think you'll like it [...]</em>"</div>
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, فریم‌ورکی معادل ReadyAPI برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
+## **Cligenius**, فریم‌ورکی معادل readyapi برای کار با <abbr title="CLI (Command Line Interface)">واسط خط فرمان</abbr>
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 اگر در حال ساختن برنامه‌ای برای استفاده در <abbr title="Command Line Interface">CLI</abbr> (به جای استفاده در وب) هستید، می‌توانید از <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>. استفاده کنید.
 
-**Cligenius** دوقلوی کوچکتر ReadyAPI است و قرار است معادلی برای ReadyAPI در برنامه‌های CLI باشد.️ 🚀
+**Cligenius** دوقلوی کوچکتر readyapi است و قرار است معادلی برای readyapi در برنامه‌های CLI باشد.️ 🚀
 
 ## نیازمندی‌ها
 
 پایتون +۳.۶
 
-ReadyAPI مبتنی بر ابزارهای قدرتمند زیر است:
+readyapi مبتنی بر ابزارهای قدرتمند زیر است:
 
 * فریم‌ورک <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> برای بخش وب.
 * کتابخانه <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> برای بخش داده‌.
@@ -151,9 +151,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -174,9 +174,9 @@ def read_item(item_id: int, q: Union[str, None] = None):
 ```Python hl_lines="9  14"
 from typing import Optional
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -220,7 +220,7 @@ INFO:     Application startup complete.
 دستور `uvicorn main:app` شامل موارد زیر است:
 
 * `main`: فایل `main.py` (ماژول پایتون ایجاد شده).
-* `app`: شیء ایجاد شده در فایل `main.py` در خط `app = ReadyAPI()`.
+* `app`: شیء ایجاد شده در فایل `main.py` در خط `app = readyapi()`.
 * `--reload`: ریستارت کردن سرور با تغییر کد. تنها در هنگام توسعه از این گزینه استفاده شود..
 
 </details>
@@ -267,10 +267,10 @@ INFO:     Application startup complete.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Optional
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -370,7 +370,7 @@ item: Item
 
 ---
 
-به مثال قبلی باز می‌گردیم، در این مثال **ReadyAPI** موارد زیر را انجام می‌دهد:
+به مثال قبلی باز می‌گردیم، در این مثال **readyapi** موارد زیر را انجام می‌دهد:
 
 * اعتبارسنجی اینکه پارامتر `item_id` در مسیر درخواست‌های `GET` و `PUT` موجود است.
 * اعتبارسنجی اینکه پارامتر `item_id` در درخواست‌های `GET` و `PUT` از نوع `int` است.
@@ -391,7 +391,7 @@ item: Item
 
 ---
 
-موارد ذکر شده تنها پاره‌ای از ویژگی‌های بیشمار ReadyAPI است اما ایده‌ای کلی از طرز کار آن در اختیار قرار می‌دهد.
+موارد ذکر شده تنها پاره‌ای از ویژگی‌های بیشمار readyapi است اما ایده‌ای کلی از طرز کار آن در اختیار قرار می‌دهد.
 
 خط زیر را به این صورت تغییر دهید:
 
@@ -415,7 +415,7 @@ item: Item
 
 ![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
 
-برای مشاهده مثال‌های کامل‌تر که شامل قابلیت‌های بیشتری از ReadyAPI باشد به بخش <a href="https://readyapi.khulnasoft.com/tutorial/">آموزش - راهنمای کاربر</a> مراجعه کنید.
+برای مشاهده مثال‌های کامل‌تر که شامل قابلیت‌های بیشتری از readyapi باشد به بخش <a href="https://readyapi.khulnasoft.com/tutorial/">آموزش - راهنمای کاربر</a> مراجعه کنید.
 
 **هشدار اسپویل**: بخش آموزش - راهنمای کاربر شامل موارد زیر است:
 
@@ -434,7 +434,7 @@ item: Item
 
 ## کارایی
 
-معیار (بنچمارک‌)های مستقل TechEmpower حاکی از آن است که برنامه‌های **ReadyAPI** که تحت Uvicorn اجرا می‌شود، <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">یکی از سریع‌ترین فریم‌ورک‌های مبتنی بر پایتون</a>، است که کمی ضعیف‌تر از Starlette و Uvicorn عمل می‌کند (فریم‌ورک و سروری که ReadyAPI بر اساس آنها ایجاد شده است) (*)
+معیار (بنچمارک‌)های مستقل TechEmpower حاکی از آن است که برنامه‌های **readyapi** که تحت Uvicorn اجرا می‌شود، <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">یکی از سریع‌ترین فریم‌ورک‌های مبتنی بر پایتون</a>، است که کمی ضعیف‌تر از Starlette و Uvicorn عمل می‌کند (فریم‌ورک و سروری که readyapi بر اساس آنها ایجاد شده است) (*)
 
 برای درک بهتری از این موضوع به بخش <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">بنچ‌مارک‌ها</a> مراجعه کنید.
 
@@ -451,10 +451,10 @@ item: Item
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - در صورتی که بخواهید از پیکربندی پیش‌فرض برای قالب‌ها استفاده کنید.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - در صورتی که بخواهید با استفاده از `request.form()` از قابلیت <abbr title="تبدیل رشته متنی موجود در درخواست HTTP به انواع داده پایتون">"تجزیه (parse)"</abbr> فرم استفاده کنید.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - در صورتی که بخواید از `SessionMiddleware` پشتیبانی کنید.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - برای پشتیبانی `SchemaGenerator` در Starlet (به احتمال زیاد برای کار کردن با ReadyAPI به آن نیازی پیدا نمی‌کنید).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - برای پشتیبانی `SchemaGenerator` در Starlet (به احتمال زیاد برای کار کردن با readyapi به آن نیازی پیدا نمی‌کنید).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - در صورتی که از  `GraphQLApp` پشتیبانی می‌کنید.
 
-استفاده شده توسط ReadyAPI / Starlette:
+استفاده شده توسط readyapi / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - برای سرور اجرا کننده برنامه وب.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - در صورتی که بخواهید از `ORJSONResponse` استفاده کنید.

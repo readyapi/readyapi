@@ -35,7 +35,7 @@ It will:
 
 Some response codes (see the next section) indicate that the response does not have a body.
 
-ReadyAPI knows this, and will produce OpenAPI docs that state there is no response body.
+readyapi knows this, and will produce OpenAPI docs that state there is no response body.
 
 ///
 
@@ -92,7 +92,7 @@ They are just a convenience, they hold the same number, but that way you can use
 
 You could also use `from starlette import status`.
 
-**ReadyAPI** provides the same `starlette.status` as `readyapi.status` just as a convenience for you, the developer. But it comes directly from Starlette.
+**readyapi** provides the same `starlette.status` as `readyapi.status` just as a convenience for you, the developer. But it comes directly from Starlette.
 
 ///
 

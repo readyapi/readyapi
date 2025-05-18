@@ -1,6 +1,6 @@
 # Tutorial - User Guide
 
-This tutorial shows you how to use **ReadyAPI** with most of its features, step by step.
+This tutorial shows you how to use **readyapi** with most of its features, step by step.
 
 Each section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.
 
@@ -17,7 +17,7 @@ To run any of the examples, copy the code to a file `main.py`, and start `readya
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -25,7 +25,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -54,15 +54,15 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 It is **HIGHLY encouraged** that you write or copy the code, edit it and run it locally.
 
-Using it in your editor is what really shows you the benefits of ReadyAPI, seeing how little code you have to write, all the type checks, autocompletion, etc.
+Using it in your editor is what really shows you the benefits of readyapi, seeing how little code you have to write, all the type checks, autocompletion, etc.
 
 ---
 
-## Install ReadyAPI
+## Install readyapi
 
-The first step is to install ReadyAPI.
+The first step is to install readyapi.
 
-Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then **install ReadyAPI**:
+Make sure you create a [virtual environment](../virtual-environments.md){.internal-link target=_blank}, activate it, and then **install readyapi**:
 
 <div class="termy">
 

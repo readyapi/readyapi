@@ -1,3 +1,3 @@
 # Sobre
 
-Sobre o ReadyAPI, seus padrões, inspirações e muito mais. 🤓
+Sobre o readyapi, seus padrões, inspirações e muito mais. 🤓

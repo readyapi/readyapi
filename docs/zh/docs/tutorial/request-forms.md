@@ -36,7 +36,7 @@
 
 /// tip | 提示
 
-声明表单体要显式使用 `Form` ，否则，ReadyAPI 会把该参数当作查询参数或请求体（JSON）参数。
+声明表单体要显式使用 `Form` ，否则，readyapi 会把该参数当作查询参数或请求体（JSON）参数。
 
 ///
 
@@ -44,7 +44,7 @@
 
 与 JSON 不同，HTML 表单（`<form></form>`）向服务器发送数据通常使用「特殊」的编码。
 
-**ReadyAPI** 要确保从正确的位置读取数据，而不是读取 JSON。
+**readyapi** 要确保从正确的位置读取数据，而不是读取 JSON。
 
 /// note | 技术细节
 
@@ -60,7 +60,7 @@
 
 可在一个*路径操作*中声明多个 `Form` 参数，但不能同时声明要接收 JSON 的 `Body` 字段。因为此时请求体的编码是 `application/x-www-form-urlencoded`，不是 `application/json`。
 
-这不是 **ReadyAPI** 的问题，而是 HTTP 协议的规定。
+这不是 **readyapi** 的问题，而是 HTTP 协议的规定。
 
 ///
 

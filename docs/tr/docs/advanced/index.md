@@ -2,7 +2,7 @@
 
 ## Ek Özellikler
 
-[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfası **ReadyAPI**'ın tüm ana özelliklerini tanıtmaya yetecektir.
+[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfası **readyapi**'ın tüm ana özelliklerini tanıtmaya yetecektir.
 
 İlerleyen bölümlerde diğer seçenekler, konfigürasyonlar ve ek özellikleri göreceğiz.
 
@@ -16,19 +16,19 @@ Kullanım şeklinize bağlı olarak, çözümünüz bu bölümlerden birinde ola
 
 ## Önce Öğreticiyi Okuyun
 
-[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfasındaki bilgilerle **ReadyAPI**'nın çoğu özelliğini kullanabilirsiniz.
+[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfasındaki bilgilerle **readyapi**'nın çoğu özelliğini kullanabilirsiniz.
 
 Sonraki bölümler bu sayfayı okuduğunuzu ve bu ana fikirleri bildiğinizi varsayarak hazırlanmıştır.
 
 ## Diğer Kurslar
 
-[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfası ve bu **Gelişmiş Kullanıcı Rehberi**, öğretici bir kılavuz (bir kitap gibi) şeklinde yazılmıştır ve **ReadyAPI'ı öğrenmek** için yeterli olsa da, ek kurslarla desteklemek isteyebilirsiniz.
+[Tutorial - User Guide](../tutorial/index.md){.internal-link target=_blank} sayfası ve bu **Gelişmiş Kullanıcı Rehberi**, öğretici bir kılavuz (bir kitap gibi) şeklinde yazılmıştır ve **readyapi'ı öğrenmek** için yeterli olsa da, ek kurslarla desteklemek isteyebilirsiniz.
 
 Belki de öğrenme tarzınıza daha iyi uyduğu için başka kursları tercih edebilirsiniz.
 
-Bazı kurs sağlayıcıları ✨ [**ReadyAPI destekçileridir**](../help-readyapi.md#sponsor-the-author){.internal-link target=_blank} ✨, bu ReadyAPI ve **ekosisteminin** sürekli ve sağlıklı bir şekilde **gelişmesini** sağlar.
+Bazı kurs sağlayıcıları ✨ [**readyapi destekçileridir**](../help-readyapi.md#sponsor-the-author){.internal-link target=_blank} ✨, bu readyapi ve **ekosisteminin** sürekli ve sağlıklı bir şekilde **gelişmesini** sağlar.
 
-Ayrıca, size **iyi bir öğrenme deneyimi** sağlamakla kalmayıp, **iyi ve sağlıklı bir framework** olan ReadyAPI'a ve ve **topluluğuna** (yani size) olan gerçek bağlılıklarını gösterir.
+Ayrıca, size **iyi bir öğrenme deneyimi** sağlamakla kalmayıp, **iyi ve sağlıklı bir framework** olan readyapi'a ve ve **topluluğuna** (yani size) olan gerçek bağlılıklarını gösterir.
 
 Onların kurslarını denemek isteyebilirsiniz:
 

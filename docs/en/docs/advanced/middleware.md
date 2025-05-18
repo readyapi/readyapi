@@ -8,9 +8,9 @@ In this section we'll see how to use other middlewares.
 
 ## Adding ASGI middlewares
 
-As **ReadyAPI** is based on Starlette and implements the <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr> specification, you can use any ASGI middleware.
+As **readyapi** is based on Starlette and implements the <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr> specification, you can use any ASGI middleware.
 
-A middleware doesn't have to be made for ReadyAPI or Starlette to work, as long as it follows the ASGI spec.
+A middleware doesn't have to be made for readyapi or Starlette to work, as long as it follows the ASGI spec.
 
 In general, ASGI middlewares are classes that expect to receive an ASGI app as the first argument.
 
@@ -24,15 +24,15 @@ app = SomeASGIApp()
 new_app = UnicornMiddleware(app, some_config="rainbow")
 ```
 
-But ReadyAPI (actually Starlette) provides a simpler way to do it that makes sure that the internal middlewares handle server errors and custom exception handlers work properly.
+But readyapi (actually Starlette) provides a simpler way to do it that makes sure that the internal middlewares handle server errors and custom exception handlers work properly.
 
 For that, you use `app.add_middleware()` (as in the example for CORS).
 
 ```Python
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from unicorn import UnicornMiddleware
 
-app = ReadyAPI()
+app = readyapi()
 
 app.add_middleware(UnicornMiddleware, some_config="rainbow")
 ```
@@ -41,13 +41,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 ## Integrated middlewares
 
-**ReadyAPI** includes several middlewares for common use cases, we'll see next how to use them.
+**readyapi** includes several middlewares for common use cases, we'll see next how to use them.
 
 /// note | Technical Details
 
 For the next examples, you could also use `from starlette.middleware.something import SomethingMiddleware`.
 
-**ReadyAPI** provides several middlewares in `readyapi.middleware` just as a convenience for you, the developer. But most of the available middlewares come directly from Starlette.
+**readyapi** provides several middlewares in `readyapi.middleware` just as a convenience for you, the developer. But most of the available middlewares come directly from Starlette.
 
 ///
 

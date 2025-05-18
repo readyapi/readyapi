@@ -6,11 +6,11 @@ Und Sie haben ein **Frontend** auf einer anderen Domain oder in einem anderen Pf
 
 Und Sie möchten eine Möglichkeit haben, dass sich das Frontend mithilfe eines **Benutzernamens** und eines **Passworts** beim Backend authentisieren kann.
 
-Wir können **OAuth2** verwenden, um das mit **ReadyAPI** zu erstellen.
+Wir können **OAuth2** verwenden, um das mit **readyapi** zu erstellen.
 
 Aber ersparen wir Ihnen die Zeit, die gesamte lange Spezifikation zu lesen, nur um die kleinen Informationen zu finden, die Sie benötigen.
 
-Lassen Sie uns die von **ReadyAPI** bereitgestellten Tools verwenden, um Sicherheit zu gewährleisten.
+Lassen Sie uns die von **readyapi** bereitgestellten Tools verwenden, um Sicherheit zu gewährleisten.
 
 ## Wie es aussieht
 
@@ -88,7 +88,7 @@ Der `password`-„Flow“ ist eine der in OAuth2 definierten Wege („Flows“) 
 
 OAuth2 wurde so konzipiert, dass das Backend oder die API unabhängig vom Server sein kann, der den Benutzer authentifiziert.
 
-In diesem Fall handhabt jedoch dieselbe **ReadyAPI**-Anwendung sowohl die API als auch die Authentifizierung.
+In diesem Fall handhabt jedoch dieselbe **readyapi**-Anwendung sowohl die API als auch die Authentifizierung.
 
 Betrachten wir es also aus dieser vereinfachten Sicht:
 
@@ -106,9 +106,9 @@ Betrachten wir es also aus dieser vereinfachten Sicht:
     * Um sich also bei unserer API zu authentifizieren, sendet es einen Header `Authorization` mit dem Wert `Bearer` plus dem Token.
     * Wenn der Token `foobar` enthielte, wäre der Inhalt des `Authorization`-Headers: `Bearer foobar`.
 
-## **ReadyAPI**s `OAuth2PasswordBearer`
+## **readyapi**s `OAuth2PasswordBearer`
 
-**ReadyAPI** bietet mehrere Tools auf unterschiedlichen Abstraktionsebenen zur Implementierung dieser Sicherheitsfunktionen.
+**readyapi** bietet mehrere Tools auf unterschiedlichen Abstraktionsebenen zur Implementierung dieser Sicherheitsfunktionen.
 
 In diesem Beispiel verwenden wir **OAuth2** mit dem **Password**-Flow und einem **Bearer**-Token. Wir machen das mit der Klasse `OAuth2PasswordBearer`.
 
@@ -120,7 +120,7 @@ Aber es ist die beste für unseren Anwendungsfall.
 
 Und es ist wahrscheinlich auch für die meisten anderen Anwendungsfälle die beste, es sei denn, Sie sind ein OAuth2-Experte und wissen genau, warum es eine andere Option gibt, die Ihren Anforderungen besser entspricht.
 
-In dem Fall gibt Ihnen **ReadyAPI** ebenfalls die Tools, die Sie zum Erstellen brauchen.
+In dem Fall gibt Ihnen **readyapi** ebenfalls die Tools, die Sie zum Erstellen brauchen.
 
 ///
 
@@ -146,7 +146,7 @@ Wir werden demnächst auch die eigentliche Pfadoperation erstellen.
 
 Wenn Sie ein sehr strenger „Pythonista“ sind, missfällt Ihnen möglicherweise die Schreibweise des Parameternamens `tokenUrl` anstelle von `token_url`.
 
-Das liegt daran, dass ReadyAPI denselben Namen wie in der OpenAPI-Spezifikation verwendet. Sodass Sie, wenn Sie mehr über eines dieser Sicherheitsschemas herausfinden möchten, den Namen einfach kopieren und einfügen können, um weitere Informationen darüber zu erhalten.
+Das liegt daran, dass readyapi denselben Namen wie in der OpenAPI-Spezifikation verwendet. Sodass Sie, wenn Sie mehr über eines dieser Sicherheitsschemas herausfinden möchten, den Namen einfach kopieren und einfügen können, um weitere Informationen darüber zu erhalten.
 
 ///
 
@@ -168,19 +168,19 @@ Jetzt können Sie dieses `oauth2_scheme` als Abhängigkeit `Depends` übergeben.
 
 Diese Abhängigkeit stellt einen `str` bereit, der dem Parameter `token` der *Pfadoperation-Funktion* zugewiesen wird.
 
-**ReadyAPI** weiß, dass es diese Abhängigkeit verwenden kann, um ein „Sicherheitsschema“ im OpenAPI-Schema (und der automatischen API-Dokumentation) zu definieren.
+**readyapi** weiß, dass es diese Abhängigkeit verwenden kann, um ein „Sicherheitsschema“ im OpenAPI-Schema (und der automatischen API-Dokumentation) zu definieren.
 
 /// info | Technische Details
 
-**ReadyAPI** weiß, dass es die Klasse `OAuth2PasswordBearer` (deklariert in einer Abhängigkeit) verwenden kann, um das Sicherheitsschema in OpenAPI zu definieren, da es von `readyapi.security.oauth2.OAuth2` erbt, das wiederum von `readyapi.security.base.SecurityBase` erbt.
+**readyapi** weiß, dass es die Klasse `OAuth2PasswordBearer` (deklariert in einer Abhängigkeit) verwenden kann, um das Sicherheitsschema in OpenAPI zu definieren, da es von `readyapi.security.oauth2.OAuth2` erbt, das wiederum von `readyapi.security.base.SecurityBase` erbt.
 
-Alle Sicherheits-Werkzeuge, die in OpenAPI integriert sind (und die automatische API-Dokumentation), erben von `SecurityBase`, so weiß **ReadyAPI**, wie es sie in OpenAPI integrieren muss.
+Alle Sicherheits-Werkzeuge, die in OpenAPI integriert sind (und die automatische API-Dokumentation), erben von `SecurityBase`, so weiß **readyapi**, wie es sie in OpenAPI integrieren muss.
 
 ///
 
 ## Was es macht
 
-ReadyAPI wird im Request nach diesem `Authorization`-Header suchen, prüfen, ob der Wert `Bearer` plus ein Token ist, und den Token als `str` zurückgeben.
+readyapi wird im Request nach diesem `Authorization`-Header suchen, prüfen, ob der Wert `Bearer` plus ein Token ist, und den Token als `str` zurückgeben.
 
 Wenn es keinen `Authorization`-Header sieht, oder der Wert keinen `Bearer`-Token hat, antwortet es direkt mit einem 401-Statuscode-Error (`UNAUTHORIZED`).
 

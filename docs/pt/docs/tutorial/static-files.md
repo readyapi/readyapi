@@ -13,7 +13,7 @@ Você pode servir arquivos estáticos automaticamente de um diretório usando `S
 
 Você também pode usar `from starlette.staticfiles import StaticFiles`.
 
-O **ReadyAPI** fornece o mesmo que `starlette.staticfiles` como `readyapi.staticfiles` apenas como uma conveniência para você, o desenvolvedor. Mas na verdade vem diretamente da Starlette.
+O **readyapi** fornece o mesmo que `starlette.staticfiles` como `readyapi.staticfiles` apenas como uma conveniência para você, o desenvolvedor. Mas na verdade vem diretamente da Starlette.
 
 ///
 
@@ -31,7 +31,7 @@ O primeiro `"/static"` refere-se à subrota em que este "subaplicativo" será "m
 
 O `directory="static"` refere-se ao nome do diretório que contém seus arquivos estáticos.
 
-O `name="static"` dá a ela um nome que pode ser usado internamente pelo ReadyAPI.
+O `name="static"` dá a ela um nome que pode ser usado internamente pelo readyapi.
 
 Todos esses parâmetros podem ser diferentes de "`static`", ajuste-os de acordo com as necessidades e detalhes específicos de sua própria aplicação.
 

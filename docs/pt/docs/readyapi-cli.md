@@ -1,10 +1,10 @@
-# ReadyAPI CLI
+# readyapi CLI
 
-**ReadyAPI CLI** é uma interface por linha de comando do `readyapi` que você pode usar para rodar sua app ReadyAPI, gerenciar seu projeto ReadyAPI e mais.
+**readyapi CLI** é uma interface por linha de comando do `readyapi` que você pode usar para rodar sua app readyapi, gerenciar seu projeto readyapi e mais.
 
-Quando você instala o ReadyAPI (ex.: com `pip install readyapi`), isso inclui um pacote chamado `readyapi-cli`. Esse pacote disponibiliza o comando `readyapi` no terminal.
+Quando você instala o readyapi (ex.: com `pip install readyapi`), isso inclui um pacote chamado `readyapi-cli`. Esse pacote disponibiliza o comando `readyapi` no terminal.
 
-Para rodar seu app ReadyAPI em desenvolvimento, você pode usar o comando `readyapi dev`:
+Para rodar seu app readyapi em desenvolvimento, você pode usar o comando `readyapi dev`:
 
 <div class="termy">
 
@@ -22,9 +22,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
+<font color="#3465A4">INFO    </font> Found importable readyapi app
 
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -32,7 +32,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -54,13 +54,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 </div>
 
-Aquele commando por linha de programa chamado `readyapi` é o **ReadyAPI CLI**.
+Aquele commando por linha de programa chamado `readyapi` é o **readyapi CLI**.
 
-O ReadyAPI CLI recebe o caminho do seu programa Python, detecta automaticamente a variável com o ReadyAPI (comumente nomeada `app`) e como importá-la, e então a serve.
+O readyapi CLI recebe o caminho do seu programa Python, detecta automaticamente a variável com o readyapi (comumente nomeada `app`) e como importá-la, e então a serve.
 
 Para produção você usaria `readyapi run` no lugar. 🚀
 
-Internamente, **ReadyAPI CLI** usa <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, um servidor ASGI de alta performance e pronto para produção. 😎
+Internamente, **readyapi CLI** usa <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, um servidor ASGI de alta performance e pronto para produção. 😎
 
 ## `readyapi dev`
 

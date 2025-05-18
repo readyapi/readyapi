@@ -67,7 +67,7 @@ Nesse caso, o parâmetro da função `q` será opcional, e `None` será o padrã
 
 /// check | Verificar
 
-Você também pode notar que o **ReadyAPI** é esperto o suficiente para perceber que o parâmetro da rota `item_id` é um parâmetro da rota, e `q` não é, portanto, `q` é o parâmetro de consulta.
+Você também pode notar que o **readyapi** é esperto o suficiente para perceber que o parâmetro da rota `item_id` é um parâmetro da rota, e `q` não é, portanto, `q` é o parâmetro de consulta.
 
 ///
 
@@ -111,7 +111,7 @@ ou qualquer outra variação (tudo em maiúscula, primeira letra em maiúscula, 
 
 ## Múltiplos parâmetros de rota e consulta
 
-Você pode declarar múltiplos parâmetros de rota e parâmetros de consulta ao mesmo tempo, o **ReadyAPI** vai saber o quê é o quê.
+Você pode declarar múltiplos parâmetros de rota e parâmetros de consulta ao mesmo tempo, o **readyapi** vai saber o quê é o quê.
 
 E você não precisa declarar eles em nenhuma ordem específica.
 

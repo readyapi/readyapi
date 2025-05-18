@@ -1,6 +1,6 @@
 # Primeiros Passos
 
-O arquivo ReadyAPI mais simples pode se parecer com:
+O arquivo readyapi mais simples pode se parecer com:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -13,7 +13,7 @@ Execute o servidor:
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -21,7 +21,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -84,7 +84,7 @@ Você verá a documentação alternativa automática (fornecida por <a href="htt
 
 ### OpenAPI
 
-O **ReadyAPI** gera um "*schema*" com toda a sua API usando o padrão **OpenAPI** para definir APIs.
+O **readyapi** gera um "*schema*" com toda a sua API usando o padrão **OpenAPI** para definir APIs.
 
 #### "*Schema*"
 
@@ -108,7 +108,7 @@ OpenAPI define um *schema* de API para sua API. E esse *schema* inclui definiç�
 
 #### Verifique o `openapi.json`
 
-Se você está curioso(a) sobre a aparência do *schema* bruto OpenAPI, o ReadyAPI gera automaticamente um JSON (*schema*) com as descrições de toda a sua API.
+Se você está curioso(a) sobre a aparência do *schema* bruto OpenAPI, o readyapi gera automaticamente um JSON (*schema*) com as descrições de toda a sua API.
 
 Você pode ver isso diretamente em: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -118,7 +118,7 @@ Ele mostrará um JSON começando com algo como:
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -139,31 +139,31 @@ Ele mostrará um JSON começando com algo como:
 
 O *schema* OpenAPI é o que possibilita os dois sistemas de documentação interativos mostrados.
 
-E existem dezenas de alternativas, todas baseadas em OpenAPI. Você pode facilmente adicionar qualquer uma dessas alternativas à sua aplicação criada com **ReadyAPI**.
+E existem dezenas de alternativas, todas baseadas em OpenAPI. Você pode facilmente adicionar qualquer uma dessas alternativas à sua aplicação criada com **readyapi**.
 
 Você também pode usá-lo para gerar código automaticamente para clientes que se comunicam com sua API. Por exemplo, aplicativos front-end, móveis ou IoT.
 
 ## Recapitulando, passo a passo
 
-### Passo 1: importe `ReadyAPI`
+### Passo 1: importe `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI` é uma classe Python que fornece todas as funcionalidades para sua API.
+`readyapi` é uma classe Python que fornece todas as funcionalidades para sua API.
 
 /// note | Detalhes técnicos
 
-`ReadyAPI` é uma classe que herda diretamente de `Starlette`.
+`readyapi` é uma classe que herda diretamente de `Starlette`.
 
-Você pode usar todas as funcionalidades do <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> com `ReadyAPI` também.
+Você pode usar todas as funcionalidades do <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> com `readyapi` também.
 
 ///
 
-### Passo 2: crie uma "instância" de `ReadyAPI`
+### Passo 2: crie uma "instância" de `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-Aqui, a variável `app` será uma "instância" da classe `ReadyAPI`.
+Aqui, a variável `app` será uma "instância" da classe `readyapi`.
 
 Este será o principal ponto de interação para criar toda a sua API.
 
@@ -232,7 +232,7 @@ Vamos chamá-los de "**operações**" também.
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-O `@app.get("/")` diz ao **ReadyAPI** que a função logo abaixo é responsável por tratar as requisições que vão para:
+O `@app.get("/")` diz ao **readyapi** que a função logo abaixo é responsável por tratar as requisições que vão para:
 
 * a rota `/`
 * usando o  <abbr title="o método HTTP GET">operador <code>get</code></abbr>
@@ -245,7 +245,7 @@ Você o coloca em cima de uma função. Como um chapéu decorativo (acho que é 
 
 Um "decorador" pega a função abaixo e faz algo com ela.
 
-Em nosso caso, este decorador informa ao **ReadyAPI** que a função abaixo corresponde a **rota** `/` com uma **operação** `get`.
+Em nosso caso, este decorador informa ao **readyapi** que a função abaixo corresponde a **rota** `/` com uma **operação** `get`.
 
 É o "**decorador de rota**".
 
@@ -268,7 +268,7 @@ E os mais exóticos:
 
 Você está livre para usar cada operação (método HTTP) como desejar.
 
-O **ReadyAPI** não impõe nenhum significado específico.
+O **readyapi** não impõe nenhum significado específico.
 
 As informações aqui são apresentadas como uma orientação, não uma exigência.
 
@@ -288,7 +288,7 @@ Esta é a nossa "**função de rota**":
 
 Esta é uma função Python.
 
-Ela será chamada pelo **ReadyAPI** sempre que receber uma requisição para a URL "`/ `" usando uma operação `GET`.
+Ela será chamada pelo **readyapi** sempre que receber uma requisição para a URL "`/ `" usando uma operação `GET`.
 
 Neste caso, é uma função `assíncrona`.
 
@@ -316,7 +316,7 @@ Existem muitos outros objetos e modelos que serão convertidos automaticamente p
 
 ## Recapitulando
 
-* Importe `ReadyAPI`.
+* Importe `readyapi`.
 * Crie uma instância do `app`.
 * Coloque o **decorador que define a operação** (como `@app.get("/")`).
 * Escreva uma **função para a operação da rota** (como `def root(): ...`) abaixo.

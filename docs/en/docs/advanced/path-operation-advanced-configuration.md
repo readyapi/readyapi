@@ -46,7 +46,7 @@ To exclude a *path operation* from the generated OpenAPI schema (and thus, from 
 
 You can limit the lines used from the docstring of a *path operation function* for OpenAPI.
 
-Adding an `\f` (an escaped "form feed" character) causes **ReadyAPI** to truncate the output used for OpenAPI at this point.
+Adding an `\f` (an escaped "form feed" character) causes **readyapi** to truncate the output used for OpenAPI at this point.
 
 It won't show up in the documentation, but other tools (such as Sphinx) will be able to use the rest.
 
@@ -64,7 +64,7 @@ There's a whole chapter here in the documentation about it, you can read it at [
 
 ## OpenAPI Extra
 
-When you declare a *path operation* in your application, **ReadyAPI** automatically generates the relevant metadata about that *path operation* to be included in the OpenAPI schema.
+When you declare a *path operation* in your application, **readyapi** automatically generates the relevant metadata about that *path operation* to be included in the OpenAPI schema.
 
 /// note | Technical details
 
@@ -76,7 +76,7 @@ It has all the information about the *path operation* and is used to generate th
 
 It includes the `tags`, `parameters`, `requestBody`, `responses`, etc.
 
-This *path operation*-specific OpenAPI schema is normally generated automatically by **ReadyAPI**, but you can also extend it.
+This *path operation*-specific OpenAPI schema is normally generated automatically by **readyapi**, but you can also extend it.
 
 /// tip
 
@@ -104,7 +104,7 @@ And if you see the resulting OpenAPI (at `/openapi.json` in your API), you will 
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -135,7 +135,7 @@ The dictionary in `openapi_extra` will be deeply merged with the automatically g
 
 So, you could add additional data to the automatically generated schema.
 
-For example, you could decide to read and validate the request with your own code, without using the automatic features of ReadyAPI with Pydantic, but you could still want to define the request in the OpenAPI schema.
+For example, you could decide to read and validate the request with your own code, without using the automatic features of readyapi with Pydantic, but you could still want to define the request in the OpenAPI schema.
 
 You could do that with `openapi_extra`:
 
@@ -151,7 +151,7 @@ Using this same trick, you could use a Pydantic model to define the JSON Schema 
 
 And you could do this even if the data type in the request is not JSON.
 
-For example, in this application we don't use ReadyAPI's integrated functionality to extract the JSON Schema from Pydantic models nor the automatic validation for JSON. In fact, we are declaring the request content type as YAML, not JSON:
+For example, in this application we don't use readyapi's integrated functionality to extract the JSON Schema from Pydantic models nor the automatic validation for JSON. In fact, we are declaring the request content type as YAML, not JSON:
 
 //// tab | Pydantic v2
 
@@ -173,7 +173,7 @@ In Pydantic version 1 the method to get the JSON Schema for a model was called `
 
 Nevertheless, although we are not using the default integrated functionality, we are still using a Pydantic model to manually generate the JSON Schema for the data that we want to receive in YAML.
 
-Then we use the request directly, and extract the body as `bytes`. This means that ReadyAPI won't even try to parse the request payload as JSON.
+Then we use the request directly, and extract the body as `bytes`. This means that readyapi won't even try to parse the request payload as JSON.
 
 And then in our code, we parse that YAML content directly, and then we are again using the same Pydantic model to validate the YAML content:
 

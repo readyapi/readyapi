@@ -1,18 +1,18 @@
-# ReadyAPI
+# readyapi
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI framework, zeer goede prestaties, eenvoudig te leren, snel te programmeren, klaar voor productie</em>
+    <em>readyapi framework, zeer goede prestaties, eenvoudig te leren, snel te programmeren, klaar voor productie</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
@@ -33,7 +33,7 @@
 
 ---
 
-ReadyAPI is een modern, snel (zeer goede prestaties), web framework voor het bouwen van API's in Python, gebruikmakend van standaard Python type-hints.
+readyapi is een modern, snel (zeer goede prestaties), web framework voor het bouwen van API's in Python, gebruikmakend van standaard Python type-hints.
 
 De belangrijkste kenmerken zijn:
 
@@ -67,25 +67,25 @@ De belangrijkste kenmerken zijn:
 
 ## Meningen
 
-"_[...] Ik gebruik **ReadyAPI** heel vaak tegenwoordig. [...] Ik ben van plan om het te gebruiken voor alle **ML-services van mijn team bij Microsoft**. Sommige van deze worden geïntegreerd in het kernproduct van **Windows** en sommige **Office**-producten._"
+"_[...] Ik gebruik **readyapi** heel vaak tegenwoordig. [...] Ik ben van plan om het te gebruiken voor alle **ML-services van mijn team bij Microsoft**. Sommige van deze worden geïntegreerd in het kernproduct van **Windows** en sommige **Office**-producten._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_We hebben de **ReadyAPI** library gebruikt om een **REST** server te maken die bevraagd kan worden om **voorspellingen** te maken. [voor Ludwig]_"
+"_We hebben de **readyapi** library gebruikt om een **REST** server te maken die bevraagd kan worden om **voorspellingen** te maken. [voor Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin en Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** is verheugd om een open-source release aan te kondigen van ons **crisismanagement**-orkestratieframework: **Dispatch**! [gebouwd met **ReadyAPI**]_"
+"_**Netflix** is verheugd om een open-source release aan te kondigen van ons **crisismanagement**-orkestratieframework: **Dispatch**! [gebouwd met **readyapi**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Ik ben super enthousiast over **ReadyAPI**. Het is zo leuk!_"
+"_Ik ben super enthousiast over **readyapi**. Het is zo leuk!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast presentator</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,31 +97,31 @@ De belangrijkste kenmerken zijn:
 
 ---
 
-"Wie geïnteresseerd is in een **modern framework** voor het bouwen van REST API's, bekijkt best eens **ReadyAPI** [...] Het is snel, gebruiksvriendelijk en gemakkelijk te leren [...]_"
+"Wie geïnteresseerd is in een **modern framework** voor het bouwen van REST API's, bekijkt best eens **readyapi** [...] Het is snel, gebruiksvriendelijk en gemakkelijk te leren [...]_"
 
-"_We zijn overgestapt naar **ReadyAPI** voor onze **API's** [...] Het gaat jou vast ook bevallen [...]_"
+"_We zijn overgestapt naar **readyapi** voor onze **API's** [...] Het gaat jou vast ook bevallen [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> oprichters - <a href="https://spacy.io" target="_blank">spaCy</a> ontwikkelaars</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Wie een Python API wil bouwen voor productie, kan ik ten stelligste **ReadyAPI** aanraden. Het is **prachtig ontworpen**, **eenvoudig te gebruiken** en **gemakkelijk schaalbaar**, het is een **cruciale component** geworden in onze strategie om API's centraal te zetten, en het vereenvoudigt automatisering en diensten zoals onze Virtual TAC Engineer._"
+"_Wie een Python API wil bouwen voor productie, kan ik ten stelligste **readyapi** aanraden. Het is **prachtig ontworpen**, **eenvoudig te gebruiken** en **gemakkelijk schaalbaar**, het is een **cruciale component** geworden in onze strategie om API's centraal te zetten, en het vereenvoudigt automatisering en diensten zoals onze Virtual TAC Engineer._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, de ReadyAPI van CLIs
+## **Cligenius**, de readyapi van CLIs
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Als je een <abbr title="Command Line Interface">CLI</abbr>-app bouwt die in de terminal moet worden gebruikt in plaats van een web-API, gebruik dan <a href="https://cligenius.khulnasoft.com/ " class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** is het kleine broertje van ReadyAPI. En het is bedoeld als de **ReadyAPI van CLI's**. ️
+**Cligenius** is het kleine broertje van readyapi. En het is bedoeld als de **readyapi van CLI's**. ️
 
 ## Vereisten
 
-ReadyAPI staat op de schouders van reuzen:
+readyapi staat op de schouders van reuzen:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> voor de webonderdelen.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> voor de datadelen.
@@ -149,9 +149,9 @@ $ pip install "readyapi[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -172,9 +172,9 @@ Als je code gebruik maakt van `async` / `await`, gebruik dan `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -202,7 +202,7 @@ Run de server met:
 ```console
 $ readyapi dev main.py
 
- ╭────────── ReadyAPI CLI - Development mode ───────────╮
+ ╭────────── readyapi CLI - Development mode ───────────╮
  │                                                     │
  │  Serving at: http://127.0.0.1:8000                  │
  │                                                     │
@@ -227,11 +227,11 @@ INFO:     Application startup complete.
 <details markdown="1">
 <summary>Over het commando <code>readyapi dev main.py</code>...</summary>
 
-Het commando `readyapi dev` leest het `main.py` bestand, detecteert de **ReadyAPI** app, en start een server met <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
+Het commando `readyapi dev` leest het `main.py` bestand, detecteert de **readyapi** app, en start een server met <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
 
 Standaard zal dit commando `readyapi dev` starten met "auto-reload" geactiveerd voor ontwikkeling op het lokale systeem.
 
-Je kan hier meer over lezen in de <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">ReadyAPI CLI documentatie</a>.
+Je kan hier meer over lezen in de <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">readyapi CLI documentatie</a>.
 
 </details>
 
@@ -277,10 +277,10 @@ Dankzij Pydantic kunnen we de body declareren met standaard Python types.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -380,7 +380,7 @@ item: Item
 
 ---
 
-Terugkomend op het vorige code voorbeeld, **ReadyAPI** zal:
+Terugkomend op het vorige code voorbeeld, **readyapi** zal:
 
 * Valideren dat er een `item_id` bestaat in het pad voor `GET` en `PUT` verzoeken.
 * Valideren dat het `item_id` van het type `int` is voor `GET` en `PUT` verzoeken.
@@ -444,17 +444,17 @@ Voor een vollediger voorbeeld met meer mogelijkheden, zie de <a href="https://re
 
 ## Prestaties
 
-Onafhankelijke TechEmpower benchmarks tonen **ReadyAPI** applicaties draaiend onder Uvicorn aan als <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">een van de snelste Python frameworks beschikbaar</a>, alleen onder Starlette en Uvicorn zelf (intern gebruikt door ReadyAPI). (*)
+Onafhankelijke TechEmpower benchmarks tonen **readyapi** applicaties draaiend onder Uvicorn aan als <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">een van de snelste Python frameworks beschikbaar</a>, alleen onder Starlette en Uvicorn zelf (intern gebruikt door readyapi). (*)
 
 Zie de sectie <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a> om hier meer over te lezen.
 
 ## Afhankelijkheden
 
-ReadyAPI maakt gebruik van Pydantic en Starlette.
+readyapi maakt gebruik van Pydantic en Starlette.
 
 ### `standard` Afhankelijkheden
 
-Wanneer je ReadyAPI installeert met `pip install "readyapi[standard]"`, worden de volgende `standard` optionele afhankelijkheden geïnstalleerd:
+Wanneer je readyapi installeert met `pip install "readyapi[standard]"`, worden de volgende `standard` optionele afhankelijkheden geïnstalleerd:
 
 Gebruikt door Pydantic:
 
@@ -466,7 +466,7 @@ Gebruikt door Starlette:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Vereist als je de standaard templateconfiguratie wil gebruiken.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Vereist indien je <abbr title="het omzetten van de string die uit een HTTP verzoek komt in Python data">"parsen"</abbr> van formulieren wil ondersteunen met `requests.form()`.
 
-Gebruikt door ReadyAPI / Starlette:
+Gebruikt door readyapi / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - voor de server die jouw applicatie laadt en bedient.
 * `readyapi-cli` - om het `readyapi` commando te voorzien.
@@ -484,7 +484,7 @@ Bijkomende optionele afhankelijkheden voor Pydantic:
 * <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - voor het beheren van settings.
 * <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - voor extra data types die gebruikt kunnen worden met Pydantic.
 
-Bijkomende optionele afhankelijkheden voor ReadyAPI:
+Bijkomende optionele afhankelijkheden voor readyapi:
 
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Vereist indien je `ORJSONResponse` wil gebruiken.
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Vereist indien je `UJSONResponse` wil gebruiken.

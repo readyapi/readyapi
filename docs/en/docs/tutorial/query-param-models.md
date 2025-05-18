@@ -6,7 +6,7 @@ This would allow you to **re-use the model** in **multiple places** and also to 
 
 /// note
 
-This is supported since ReadyAPI version `0.115.0`. 🤓
+This is supported since readyapi version `0.115.0`. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declare the **query parameters** that you need in a **Pydantic model**, and then
 
 {* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
-**ReadyAPI** will **extract** the data for **each field** from the **query parameters** in the request and give you the Pydantic model you defined.
+**readyapi** will **extract** the data for **each field** from the **query parameters** in the request and give you the Pydantic model you defined.
 
 ## Check the Docs
 
@@ -59,7 +59,7 @@ They will receive an **error** response telling them that the query parameter `t
 
 ## Summary
 
-You can use **Pydantic models** to declare **query parameters** in **ReadyAPI**. 😎
+You can use **Pydantic models** to declare **query parameters** in **readyapi**. 😎
 
 /// tip
 

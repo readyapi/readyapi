@@ -1,38 +1,38 @@
-# ReadyAPIを応援 - ヘルプの入手
+# readyapiを応援 - ヘルプの入手
 
-**ReadyAPI** は気に入りましたか？
+**readyapi** は気に入りましたか？
 
-ReadyAPIやユーザーや開発者を応援したいですか？
+readyapiやユーザーや開発者を応援したいですか？
 
-もしくは、 **ReadyAPI** についてヘルプが必要ですか？
+もしくは、 **readyapi** についてヘルプが必要ですか？
 
 とても簡単に応援できます (ただ1、2回クリックするだけのものもあります)。
 
 また、ヘルプを入手する手段がいくつかあります。
 
-## GitHubで **ReadyAPI** にStar
+## GitHubで **readyapi** にStar
 
-GitHubでReadyAPIに「Star」をつけることができます (右上部のStarボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
+GitHubでreadyapiに「Star」をつけることができます (右上部のStarボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
 
 スターを増やすことで、他のユーザーの目につきやすくなり、多くの人にとって便利なものであることを示せます。
 
 ## GitHubレポジトリのリリースをWatch
 
-GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+GitHubでreadyapiを「Watch」できます (右上部のWatchボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 そこで「Releases only」を選択できます。
 
-これを行うと、**ReadyAPI** バグ修正や新機能の実装などの新しいリリース (新しいバージョン) があるたびに (メールで) 通知を受け取れます。
+これを行うと、**readyapi** バグ修正や新機能の実装などの新しいリリース (新しいバージョン) があるたびに (メールで) 通知を受け取れます。
 
 ## 開発者とつながる
 
-以下で、<a href="https://khulnasoft.com" class="external-link" target="_blank">開発者 (Sebastián Ramírez / `khulnasoft`)</a> とコンタクトをとれます:
+以下で、<a href="https://khulnasoft.com" class="external-link" target="_blank">開発者 (KhulnaSoft Ltd / `khulnasoft`)</a> とコンタクトをとれます:
 
 * <a href="https://github.com/khulnasoft" class="external-link" target="_blank">**GitHub** でフォロー</a>。
     * 他のオープンソースプロジェクトを確認できます。何かの助けになるものが見つかるかもしれません。
     * 新たなオープンソースプロジェクトを作成したときに通知されます。
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">**Twitter** でフォロー</a>。
-    * ReadyAPIの使用用途を教えてください (聞いてみたいです)。
+    * readyapiの使用用途を教えてください (聞いてみたいです)。
     * 新たなツールの発表やリリースが聞けます。
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">**Linkedin** でつながる</a>。
     * 新たなツールの発表やリリースが聞けます (ただしTwitterの方が利用頻度が高いですが 🤷‍♂)。
@@ -40,17 +40,17 @@ GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリ
     * アイデアや作成ツールについての記事が読めます。
     * 新規記事の執筆を通知してくれます。
 
-## **ReadyAPI** に関するツイート
+## **readyapi** に関するツイート
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving ReadyAPI because... https://github.com/readyapi/readyapi cc @khulnasoft" class="external-link" target="_blank">**ReadyAPI** についてツイート</a>し、開発者や他の人にどこが気に入ったのか教えてください。🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving readyapi because... https://github.com/readyapi/readyapi cc @khulnasoft" class="external-link" target="_blank">**readyapi** についてツイート</a>し、開発者や他の人にどこが気に入ったのか教えてください。🎉
 
-**ReadyAPI** がどのように使われ、どこが気に入られ、どんなプロジェクト/会社で使われているかなどについて知りたいです。
+**readyapi** がどのように使われ、どこが気に入られ、どんなプロジェクト/会社で使われているかなどについて知りたいです。
 
-## ReadyAPIに投票
+## readyapiに投票
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Slantで **ReadyAPI** に投票</a>
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">AlternativeToで **ReadyAPI** に投票</a>
-* <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">awesome-restで **ReadyAPI** に投票</a>
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Slantで **readyapi** に投票</a>
+* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">AlternativeToで **readyapi** に投票</a>
+* <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">awesome-restで **readyapi** に投票</a>
 
 ## GitHub issuesで他の人を助ける
 
@@ -58,7 +58,7 @@ GitHubでReadyAPIを「Watch」できます (右上部のWatchボタンをクリ
 
 ## GitHubレポジトリをWatch
 
-GitHubでReadyAPIを「watch」できます (右上部の「watch」ボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+GitHubでreadyapiを「watch」できます (右上部の「watch」ボタンをクリック): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 「Releases only」ではなく「Watching」を選択すると、新たなissueが立てられた際に通知されます。
 
@@ -88,9 +88,9 @@ GitHubレポジトリで<a href="https://github.com/readyapi/readyapi/issues/new
 
 そこで、感謝の気持ちを伝えるためにコーヒー☕️を買うことができます 😄。
 
-## ReadyAPIを強化するツールのスポンサーになる
+## readyapiを強化するツールのスポンサーになる
 
-ドキュメントで見たように、ReadyAPIはStarletteとPydanticという巨人の肩に乗っています。
+ドキュメントで見たように、readyapiはStarletteとPydanticという巨人の肩に乗っています。
 
 以下のスポンサーになることもできます:
 

@@ -34,11 +34,11 @@ Então, para que tudo funcione corretamente, é melhor especificar explicitament
 
 ## Usar `CORSMiddleware`
 
-Você pode configurá-lo em sua aplicação **ReadyAPI** usando o `CORSMiddleware`.
+Você pode configurá-lo em sua aplicação **readyapi** usando o `CORSMiddleware`.
 
 * Importe `CORSMiddleware`.
 * Crie uma lista de origens permitidas (como strings).
-* Adicione-a como um "middleware" à sua aplicação **ReadyAPI**.
+* Adicione-a como um "middleware" à sua aplicação **readyapi**.
 
 Você também pode especificar se o seu backend permite:
 
@@ -80,6 +80,6 @@ Para mais informações <abbr title="Cross-Origin Resource Sharing">CORS</abbr>,
 
 Você também pode usar `from starlette.middleware.cors import CORSMiddleware`.
 
-**ReadyAPI** fornece vários middlewares em `readyapi.middleware` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria dos middlewares disponíveis vêm diretamente da Starlette.
+**readyapi** fornece vários middlewares em `readyapi.middleware` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria dos middlewares disponíveis vêm diretamente da Starlette.
 
 ///

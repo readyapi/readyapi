@@ -1,16 +1,16 @@
 # 🔢 🔢 &amp; 🎻 🔬
 
-**ReadyAPI** ✔ 👆 📣 🌖 ℹ &amp; 🔬 👆 🔢.
+**readyapi** ✔ 👆 📣 🌖 ℹ &amp; 🔬 👆 🔢.
 
 ➡️ ✊ 👉 🈸 🖼:
 
 {* ../../docs_src/query_params_str_validations/tutorial001.py hl[9] *}
 
-🔢 🔢 `q` 🆎 `Union[str, None]` (⚖️ `str | None` 🐍 3️⃣.1️⃣0️⃣), 👈 ⛓ 👈 ⚫️ 🆎 `str` ✋️ 💪 `None`, &amp; 👐, 🔢 💲 `None`, ReadyAPI 🔜 💭 ⚫️ 🚫 ✔.
+🔢 🔢 `q` 🆎 `Union[str, None]` (⚖️ `str | None` 🐍 3️⃣.1️⃣0️⃣), 👈 ⛓ 👈 ⚫️ 🆎 `str` ✋️ 💪 `None`, &amp; 👐, 🔢 💲 `None`, readyapi 🔜 💭 ⚫️ 🚫 ✔.
 
 /// note
 
-ReadyAPI 🔜 💭 👈 💲 `q` 🚫 ✔ ↩️ 🔢 💲 `= None`.
+readyapi 🔜 💭 👈 💲 `q` 🚫 ✔ ↩️ 🔢 💲 `= None`.
 
  `Union` `Union[str, None]` 🔜 ✔ 👆 👨‍🎨 🤝 👆 👍 🐕‍🦺 &amp; 🔍 ❌.
 
@@ -76,7 +76,7 @@ q: str | None = None
 
 ⚫️ 🔜 ⚙️ 👈 `None` 🔢 💲, &amp; 👈 🌌 ⚒ 🔢 **🚫 ✔**.
 
- `Union[str, None]` 🍕 ✔ 👆 👨‍🎨 🚚 👻 🐕‍🦺, ✋️ ⚫️ 🚫 ⚫️❔ 💬 ReadyAPI 👈 👉 🔢 🚫 ✔.
+ `Union[str, None]` 🍕 ✔ 👆 👨‍🎨 🚚 👻 🐕‍🦺, ✋️ ⚫️ 🚫 ⚫️❔ 💬 readyapi 👈 👉 🔢 🚫 ✔.
 
 ///
 
@@ -108,7 +108,7 @@ q: Union[str, None] = Query(default=None, max_length=50)
 
 🚥 👆 💭 💸 ⏮️ 🌐 👉 **"🥔 🧬"** 💭, 🚫 😟. 👫 🏋️ ❔ 📚 👫👫. 👆 💪 📚 💩 🍵 💆‍♂ 🥔 🧬.
 
-✋️ 🕐❔ 👆 💪 👫 &amp; 🚶 &amp; 💡 👫, 💭 👈 👆 💪 ⏪ ⚙️ 👫 🔗 **ReadyAPI**.
+✋️ 🕐❔ 👆 💪 👫 &amp; 🚶 &amp; 💡 👫, 💭 👈 👆 💪 ⏪ ⚙️ 👫 🔗 **readyapi**.
 
 ## 🔢 💲
 
@@ -158,7 +158,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 /// tip
 
-Pydantic, ❔ ⚫️❔ 🏋️ 🌐 💽 🔬 &amp; 🛠️ ReadyAPI, ✔️ 🎁 🎭 🕐❔ 👆 ⚙️ `Optional` ⚖️ `Union[Something, None]` 🍵 🔢 💲, 👆 💪 ✍ 🌅 🔃 ⚫️ Pydantic 🩺 🔃 <a href="https://docs.pydantic.dev/latest/concepts/models/#required-optional-fields" class="external-link" target="_blank">✔ 📦 🏑</a>.
+Pydantic, ❔ ⚫️❔ 🏋️ 🌐 💽 🔬 &amp; 🛠️ readyapi, ✔️ 🎁 🎭 🕐❔ 👆 ⚙️ `Optional` ⚖️ `Union[Something, None]` 🍵 🔢 💲, 👆 💪 ✍ 🌅 🔃 ⚫️ Pydantic 🩺 🔃 <a href="https://docs.pydantic.dev/latest/concepts/models/#required-optional-fields" class="external-link" target="_blank">✔ 📦 🏑</a>.
 
 ///
 
@@ -230,7 +230,7 @@ http://localhost:8000/items/
 
 /// note
 
-✔️ 🤯 👈 👉 💼, ReadyAPI 🏆 🚫 ✅ 🎚 📇.
+✔️ 🤯 👈 👉 💼, readyapi 🏆 🚫 ✅ 🎚 📇.
 
 🖼, `List[int]` 🔜 ✅ (&amp; 📄) 👈 🎚 📇 🔢. ✋️ `list` 😞 🚫🔜.
 

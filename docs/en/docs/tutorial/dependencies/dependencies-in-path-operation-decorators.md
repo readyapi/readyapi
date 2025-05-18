@@ -66,4 +66,4 @@ Later, when reading about how to structure bigger applications ([Bigger Applicat
 
 ## Global Dependencies
 
-Next we will see how to add dependencies to the whole `ReadyAPI` application, so that they apply to each *path operation*.
+Next we will see how to add dependencies to the whole `readyapi` application, so that they apply to each *path operation*.

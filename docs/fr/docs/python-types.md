@@ -7,11 +7,11 @@ Ces annotations de type constituent une syntaxe spéciale qui permet de déclare
 En déclarant les types de vos variables, cela permet aux différents outils comme les éditeurs de texte d'offrir un meilleur support.
 
 Ce chapitre n'est qu'un **tutoriel rapide / rappel** sur les annotations de type Python.
-Seulement le minimum nécessaire pour les utiliser avec **ReadyAPI** sera couvert... ce qui est en réalité très peu.
+Seulement le minimum nécessaire pour les utiliser avec **readyapi** sera couvert... ce qui est en réalité très peu.
 
-**ReadyAPI** est totalement basé sur ces annotations de type, qui lui donnent de nombreux avantages.
+**readyapi** est totalement basé sur ces annotations de type, qui lui donnent de nombreux avantages.
 
-Mais même si vous n'utilisez pas ou n'utiliserez jamais **ReadyAPI**, vous pourriez bénéficier d'apprendre quelques choses sur ces dernières.
+Mais même si vous n'utilisez pas ou n'utiliserez jamais **readyapi**, vous pourriez bénéficier d'apprendre quelques choses sur ces dernières.
 
 /// note
 
@@ -122,7 +122,7 @@ Maintenant que vous avez connaissance du problème, convertissez `age` en <abbr 
 
 Vous venez de voir là où les types sont généralement déclarés : dans les paramètres de fonctions.
 
-C'est aussi ici que vous les utiliseriez avec **ReadyAPI**.
+C'est aussi ici que vous les utiliseriez avec **readyapi**.
 
 ### Types simples
 
@@ -266,20 +266,20 @@ Pour en savoir plus à propos de <a href="https://docs.pydantic.dev/" class="ext
 
 ///
 
-**ReadyAPI** est basé entièrement sur **Pydantic**.
+**readyapi** est basé entièrement sur **Pydantic**.
 
 Vous verrez bien plus d'exemples de son utilisation dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=_blank}.
 
-## Les annotations de type dans **ReadyAPI**
+## Les annotations de type dans **readyapi**
 
-**ReadyAPI** utilise ces annotations pour faire différentes choses.
+**readyapi** utilise ces annotations pour faire différentes choses.
 
-Avec **ReadyAPI**, vous déclarez des paramètres grâce aux annotations de types et vous obtenez :
+Avec **readyapi**, vous déclarez des paramètres grâce aux annotations de types et vous obtenez :
 
 * **du support de l'éditeur**
 * **de la vérification de types**
 
-...et **ReadyAPI** utilise ces mêmes déclarations pour :
+...et **readyapi** utilise ces mêmes déclarations pour :
 
 * **Définir les prérequis** : depuis les paramètres de chemins des requêtes, les entêtes, les corps, les dépendances, etc.
 * **Convertir des données** : depuis la requête vers les types requis.
@@ -290,7 +290,7 @@ Avec **ReadyAPI**, vous déclarez des paramètres grâce aux annotations de type
 
 Tout cela peut paraître bien abstrait, mais ne vous inquiétez pas, vous verrez tout ça en pratique dans [Tutoriel - Guide utilisateur](tutorial/index.md){.internal-link target=_blank}.
 
-Ce qu'il faut retenir c'est qu'en utilisant les types standard de Python, à un seul endroit (plutôt que d'ajouter plus de classes, de décorateurs, etc.), **ReadyAPI** fera une grande partie du travail pour vous.
+Ce qu'il faut retenir c'est qu'en utilisant les types standard de Python, à un seul endroit (plutôt que d'ajouter plus de classes, de décorateurs, etc.), **readyapi** fera une grande partie du travail pour vous.
 
 /// info
 

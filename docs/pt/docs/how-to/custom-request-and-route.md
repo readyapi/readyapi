@@ -10,7 +10,7 @@ Por exemplo, se você quiser ler ou manipular o corpo da requisição antes que 
 
 Isso é um recurso "avançado".
 
-Se você for um iniciante em **ReadyAPI** você deve considerar pular essa seção.
+Se você for um iniciante em **readyapi** você deve considerar pular essa seção.
 
 ///
 
@@ -76,7 +76,7 @@ Fazendo isso, nosso `GzipRequest` irá cuidar de descomprimir os dados (se neces
 
 Depois disso, toda a lógica de processamento é a mesma.
 
-Mas por causa das nossas mudanças em `GzipRequest.body`, o corpo da requisição será automaticamente descomprimido quando for carregado pelo **ReadyAPI** quando necessário.
+Mas por causa das nossas mudanças em `GzipRequest.body`, o corpo da requisição será automaticamente descomprimido quando for carregado pelo **readyapi** quando necessário.
 
 ## Acessando o corpo da requisição em um manipulador de exceção
 

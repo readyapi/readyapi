@@ -1,8 +1,8 @@
 # Fonctionnalités
 
-## Fonctionnalités de ReadyAPI
+## Fonctionnalités de readyapi
 
-**ReadyAPI** vous offre ceci:
+**readyapi** vous offre ceci:
 
 ### Basé sur des standards ouverts
 
@@ -27,7 +27,7 @@ Documentation d'API interactive et interface web d'exploration. Comme le framewo
 
 Tout est basé sur la déclaration de type standard de **Python 3.8** (grâce à Pydantic). Pas de nouvelles syntaxes à apprendre. Juste du Python standard et moderne.
 
-Si vous souhaitez un rappel de 2 minutes sur l'utilisation des types en Python (même si vous ne comptez pas utiliser ReadyAPI), jetez un oeil au tutoriel suivant: [Python Types](python-types.md){.internal-link target=_blank}.
+Si vous souhaitez un rappel de 2 minutes sur l'utilisation des types en Python (même si vous ne comptez pas utiliser readyapi), jetez un oeil au tutoriel suivant: [Python Types](python-types.md){.internal-link target=_blank}.
 
 Vous écrivez du python standard avec des annotations de types:
 
@@ -76,7 +76,7 @@ Tout le framework a été conçu pour être facile et intuitif d'utilisation, to
 
 Dans le dernier sondage effectué auprès de développeurs python il était clair que <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">la fonctionnalité la plus utilisée est "l’autocomplétion"</a>.
 
-Tout le framework **ReadyAPI** a été conçu avec cela en tête. L'autocomplétion fonctionne partout.
+Tout le framework **readyapi** a été conçu avec cela en tête. L'autocomplétion fonctionne partout.
 
 Vous devrez rarement revenir à la documentation.
 
@@ -135,7 +135,7 @@ Le tout conçu en composant réutilisable facilement intégrable à vos système
 
 ### Injection de dépendances
 
-ReadyAPI contient un système simple mais extrêmement puissant d'<abbr title='aussi connus sous le nom de "composants", "ressources", "services", "providers"'><strong>Injection de Dépendances</strong></abbr>.
+readyapi contient un système simple mais extrêmement puissant d'<abbr title='aussi connus sous le nom de "composants", "ressources", "services", "providers"'><strong>Injection de Dépendances</strong></abbr>.
 
 * Même les dépendances peuvent avoir des dépendances, créant une hiérarchie ou un **"graph" de dépendances**
 * Tout est **automatiquement géré** par le framework
@@ -158,11 +158,11 @@ Tout intégration est conçue pour être si simple à utiliser (avec des dépend
 
 ## Fonctionnalités de Starlette
 
-**ReadyAPI** est complètement compatible (et basé sur) <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>. Le code utilisant Starlette que vous ajouterez fonctionnera donc aussi.
+**readyapi** est complètement compatible (et basé sur) <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>. Le code utilisant Starlette que vous ajouterez fonctionnera donc aussi.
 
-En fait, `ReadyAPI` est un sous composant de `Starlette`. Donc, si vous savez déjà comment utiliser Starlette, la plupart des fonctionnalités fonctionneront de la même manière.
+En fait, `readyapi` est un sous composant de `Starlette`. Donc, si vous savez déjà comment utiliser Starlette, la plupart des fonctionnalités fonctionneront de la même manière.
 
-Avec **ReadyAPI** vous aurez toutes les fonctionnalités de **Starlette** (ReadyAPI est juste Starlette sous stéroïdes):
+Avec **readyapi** vous aurez toutes les fonctionnalités de **Starlette** (readyapi est juste Starlette sous stéroïdes):
 
 * Des performances vraiment impressionnantes. C'est l'<a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">un des framework Python les plus rapide, à égalité avec **NodeJS** et **GO**</a>.
 * Le support des **WebSockets**.
@@ -177,7 +177,7 @@ Avec **ReadyAPI** vous aurez toutes les fonctionnalités de **Starlette** (Ready
 
 ## Fonctionnalités de Pydantic
 
-**ReadyAPI** est totalement compatible avec (et basé sur) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. Le code utilisant Pydantic que vous ajouterez fonctionnera donc aussi.
+**readyapi** est totalement compatible avec (et basé sur) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. Le code utilisant Pydantic que vous ajouterez fonctionnera donc aussi.
 
 Inclus des librairies externes basées, aussi, sur Pydantic, servent d'<abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s pour les bases de données.
 
@@ -185,7 +185,7 @@ Cela signifie aussi que, dans la plupart des cas, vous pouvez fournir l'objet re
 
 Inversement, dans la plupart des cas vous pourrez juste envoyer l'objet récupéré de la base de données **directement au client**
 
-Avec **ReadyAPI** vous aurez toutes les fonctionnalités de **Pydantic**  (comme ReadyAPI est basé sur Pydantic pour toutes les manipulations de données):
+Avec **readyapi** vous aurez toutes les fonctionnalités de **Pydantic**  (comme readyapi est basé sur Pydantic pour toutes les manipulations de données):
 
 * **Pas de prise de tête**:
     * Pas de nouveau langage de définition de schéma à apprendre.

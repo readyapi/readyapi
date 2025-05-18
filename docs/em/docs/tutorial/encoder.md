@@ -4,7 +4,7 @@
 
 🖼, 🚥 👆 💪 🏪 ⚫️ 💽.
 
-👈, **ReadyAPI** 🚚 `jsonable_encoder()` 🔢.
+👈, **readyapi** 🚚 `jsonable_encoder()` 🔢.
 
 ## ⚙️ `jsonable_encoder`
 
@@ -30,6 +30,6 @@
 
 /// note
 
-`jsonable_encoder` 🤙 ⚙️ **ReadyAPI** 🔘 🗜 💽. ✋️ ⚫️ ⚠ 📚 🎏 😐.
+`jsonable_encoder` 🤙 ⚙️ **readyapi** 🔘 🗜 💽. ✋️ ⚫️ ⚠ 📚 🎏 😐.
 
 ///

@@ -1,8 +1,8 @@
 # Tests Asíncronos
 
-Ya has visto cómo probar tus aplicaciones de **ReadyAPI** usando el `TestClient` proporcionado. Hasta ahora, solo has visto cómo escribir tests sincrónicos, sin usar funciones `async`.
+Ya has visto cómo probar tus aplicaciones de **readyapi** usando el `TestClient` proporcionado. Hasta ahora, solo has visto cómo escribir tests sincrónicos, sin usar funciones `async`.
 
-Poder usar funciones asíncronas en tus tests puede ser útil, por ejemplo, cuando consultas tu base de datos de forma asíncrona. Imagina que quieres probar el envío de requests a tu aplicación ReadyAPI y luego verificar que tu backend escribió exitosamente los datos correctos en la base de datos, mientras usas un paquete de base de datos asíncrono.
+Poder usar funciones asíncronas en tus tests puede ser útil, por ejemplo, cuando consultas tu base de datos de forma asíncrona. Imagina que quieres probar el envío de requests a tu aplicación readyapi y luego verificar que tu backend escribió exitosamente los datos correctos en la base de datos, mientras usas un paquete de base de datos asíncrono.
 
 Veamos cómo podemos hacer que esto funcione.
 
@@ -12,9 +12,9 @@ Si queremos llamar funciones asíncronas en nuestros tests, nuestras funciones d
 
 ## HTTPX
 
-Incluso si tu aplicación de **ReadyAPI** usa funciones `def` normales en lugar de `async def`, sigue siendo una aplicación `async` por debajo.
+Incluso si tu aplicación de **readyapi** usa funciones `def` normales en lugar de `async def`, sigue siendo una aplicación `async` por debajo.
 
-El `TestClient` hace algo de magia interna para llamar a la aplicación ReadyAPI asíncrona en tus funciones de test `def` normales, usando pytest estándar. Pero esa magia ya no funciona cuando lo usamos dentro de funciones asíncronas. Al ejecutar nuestros tests de manera asíncrona, ya no podemos usar el `TestClient` dentro de nuestras funciones de test.
+El `TestClient` hace algo de magia interna para llamar a la aplicación readyapi asíncrona en tus funciones de test `def` normales, usando pytest estándar. Pero esa magia ya no funciona cuando lo usamos dentro de funciones asíncronas. Al ejecutar nuestros tests de manera asíncrona, ya no podemos usar el `TestClient` dentro de nuestras funciones de test.
 
 El `TestClient` está basado en <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>, y afortunadamente, podemos usarlo directamente para probar la API.
 
@@ -90,7 +90,7 @@ Si tu aplicación depende de eventos de lifespan, el `AsyncClient` no activará 
 
 ## Otras Llamadas a Funciones Asíncronas
 
-Al ser la función de test asíncrona, ahora también puedes llamar (y `await`) otras funciones `async` además de enviar requests a tu aplicación ReadyAPI en tus tests, exactamente como las llamarías en cualquier otro lugar de tu código.
+Al ser la función de test asíncrona, ahora también puedes llamar (y `await`) otras funciones `async` además de enviar requests a tu aplicación readyapi en tus tests, exactamente como las llamarías en cualquier otro lugar de tu código.
 
 /// tip | Consejo
 

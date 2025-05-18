@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
 </p>
 <p align="center">
-    <em>ReadyAPI 框架，高效能，易於學習，快速開發，適用於生產環境</em>
+    <em>readyapi 框架，高效能，易於學習，快速開發，適用於生產環境</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/readyapi/readyapi/workflows/Test/badge.svg?event=push&branch=master" alt="Test">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
@@ -27,11 +27,11 @@
 
 ---
 
-ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python 並採用標準 Python 型別提示。
+readyapi 是一個現代、快速（高效能）的 web 框架，用於 Python 並採用標準 Python 型別提示。
 
 主要特點包含：
 
-- **快速**： 非常高的效能，可與 **NodeJS** 和 **Go** 效能相當 (歸功於 Starlette and Pydantic)。 [ReadyAPI 是最快的 Python web 框架之一](#performance)。
+- **快速**： 非常高的效能，可與 **NodeJS** 和 **Go** 效能相當 (歸功於 Starlette and Pydantic)。 [readyapi 是最快的 Python web 框架之一](#performance)。
 - **極速開發**： 提高開發功能的速度約 200% 至 300%。 \*
 - **更少的 Bug**： 減少約 40% 的人為（開發者）導致的錯誤。 \*
 - **直覺**： 具有出色的編輯器支援，處處都有<abbr title="也被稱為自動完成、IntelliSense">自動補全</abbr>以減少偵錯時間。
@@ -61,25 +61,25 @@ ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python �
 
 ## 評價
 
-"_[...] 近期大量的使用 **ReadyAPI**。 [...] 目前正在計畫在**微軟**團隊的**機器學習**服務中導入。其中一些正在整合到核心的 **Windows** 產品和一些 **Office** 產品。_"
+"_[...] 近期大量的使用 **readyapi**。 [...] 目前正在計畫在**微軟**團隊的**機器學習**服務中導入。其中一些正在整合到核心的 **Windows** 產品和一些 **Office** 產品。_"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_我們使用 **ReadyAPI** 來建立產生**預測**結果的 **REST** 伺服器。 [for Ludwig]_"
+"_我們使用 **readyapi** 來建立產生**預測**結果的 **REST** 伺服器。 [for Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** 很榮幸地宣布開源**危機管理**協調框架： **Dispatch**! [是使用 **ReadyAPI** 建構]_"
+"_**Netflix** 很榮幸地宣布開源**危機管理**協調框架： **Dispatch**! [是使用 **readyapi** 建構]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_我對 **ReadyAPI** 興奮得不得了。它太有趣了！_"
+"_我對 **readyapi** 興奮得不得了。它太有趣了！_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -91,31 +91,31 @@ ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python �
 
 ---
 
-"_如果您想學習一種用於構建 REST API 的**現代框架**，不能錯過 **ReadyAPI** [...] 它非常快速、且易於使用和學習 [...]_"
+"_如果您想學習一種用於構建 REST API 的**現代框架**，不能錯過 **readyapi** [...] 它非常快速、且易於使用和學習 [...]_"
 
-"_我們的 **APIs** 已經改用 **ReadyAPI** [...] 我想你會喜歡它 [...]_"
+"_我們的 **APIs** 已經改用 **readyapi** [...] 我想你會喜歡它 [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> 創辦人 - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_如果有人想要建立一個生產環境的 Python API，我強烈推薦 **ReadyAPI**，它**設計精美**，**使用簡單**且**高度可擴充**，它已成為我們 API 優先開發策略中的**關鍵組件**，並且驅動了許多自動化服務，例如我們的 Virtual TAC Engineer。_"
+"_如果有人想要建立一個生產環境的 Python API，我強烈推薦 **readyapi**，它**設計精美**，**使用簡單**且**高度可擴充**，它已成為我們 API 優先開發策略中的**關鍵組件**，並且驅動了許多自動化服務，例如我們的 Virtual TAC Engineer。_"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**，命令列中的 ReadyAPI
+## **Cligenius**，命令列中的 readyapi
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 如果你不是在開發網頁 API，而是正在開發一個在終端機中運行的<abbr title="Command Line Interface">命令列</abbr>應用程式，不妨嘗試 <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>。
 
-**Cligenius** 是 ReadyAPI 的小兄弟。他立志成為命令列的 **ReadyAPI**。 ⌨️ 🚀
+**Cligenius** 是 readyapi 的小兄弟。他立志成為命令列的 **readyapi**。 ⌨️ 🚀
 
 ## 安裝需求
 
-ReadyAPI 是站在以下巨人的肩膀上：
+readyapi 是站在以下巨人的肩膀上：
 
 - <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 負責網頁的部分
 - <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> 負責資料的部分
@@ -153,9 +153,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -176,9 +176,9 @@ def read_item(item_id: int, q: Union[str, None] = None):
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -221,7 +221,7 @@ INFO:     Application startup complete.
 該指令 `uvicorn main:app` 指的是：
 
 - `main`：`main.py` 檔案（一個 python 的 "模組"）。
-- `app`：在 `main.py` 檔案中，使用 `app = ReadyAPI()` 建立的物件。
+- `app`：在 `main.py` 檔案中，使用 `app = readyapi()` 建立的物件。
 - `--reload`：程式碼更改後會自動重新啟動，請僅在開發時使用此參數。
 
 </details>
@@ -268,10 +268,10 @@ INFO:     Application startup complete.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 from pydantic import BaseModel
 
-app = ReadyAPI()
+app = readyapi()
 
 
 class Item(BaseModel):
@@ -371,7 +371,7 @@ item: Item
 
 ---
 
-回到前面的的程式碼範例，**ReadyAPI** 還會：
+回到前面的的程式碼範例，**readyapi** 還會：
 
 - 驗證 `GET` 和 `PUT` 請求路徑中是否包含 `item_id`。
 - 驗證 `GET` 和 `PUT` 請求中的 `item_id` 是否是 `int` 型別。
@@ -435,7 +435,7 @@ item: Item
 
 ## 效能
 
-來自獨立機構 TechEmpower 的測試結果，顯示在 Uvicorn 執行下的 **ReadyAPI** 是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python 框架之一</a>， 僅次於 Starlette 和 Uvicorn 本身 (兩者是 ReadyAPI 的底層)。 (\*)
+來自獨立機構 TechEmpower 的測試結果，顯示在 Uvicorn 執行下的 **readyapi** 是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python 框架之一</a>， 僅次於 Starlette 和 Uvicorn 本身 (兩者是 readyapi 的底層)。 (\*)
 
 想了解更多訊息，可以參考 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">測試結果</a>。
 
@@ -453,9 +453,9 @@ item: Item
 - <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - 使用預設的模板配置時必須安裝。
 - <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - 需要使用 `request.form()` 對表單進行<abbr title="轉換來自表單的 HTTP 請求到 Python 資料型別"> "解析" </abbr>時安裝。
 - <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - 需要使用 `SessionMiddleware` 支援時安裝。
-- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 用於支援 Starlette 的 `SchemaGenerator` (如果你使用 ReadyAPI，可能不需要它)。
+- <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - 用於支援 Starlette 的 `SchemaGenerator` (如果你使用 readyapi，可能不需要它)。
 
-用於 ReadyAPI / Starlette：
+用於 readyapi / Starlette：
 
 - <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - 用於加載和運行應用程式的服務器。
 - <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - 使用 `ORJSONResponse`時必須安裝。

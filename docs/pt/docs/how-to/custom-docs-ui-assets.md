@@ -16,7 +16,7 @@ Isso pode ser útil se, por exemplo, você mora em um país que restringe alguma
 
 O primeiro passo é desativar a documentação automática, pois por padrão, ela usa o CDN padrão.
 
-Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyAPI`:
+Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readyapi`:
 
 {* ../../docs_src/custom_docs_ui/tutorial001.py hl[8] *}
 
@@ -24,7 +24,7 @@ Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyA
 
 Agora você pode criar as *operações de rota* para a documentação personalizada.
 
-Você pode reutilizar as funções internas do ReadyAPI para criar as páginas HTML para a documentação e passar os argumentos necessários:
+Você pode reutilizar as funções internas do readyapi para criar as páginas HTML para a documentação e passar os argumentos necessários:
 
 * `openapi_url`: a URL onde a página HTML para a documentação pode obter o esquema OpenAPI para a sua API. Você pode usar aqui o atributo `app.openapi_url`.
 * `title`: o título da sua API.
@@ -60,7 +60,7 @@ Agora, você deve ser capaz de ir para a documentação em <a href="http://127.0
 
 Hospedar o JavaScript e o CSS pode ser útil se, por exemplo, você precisa que seu aplicativo continue funcionando mesmo offline, sem acesso aberto à Internet, ou em uma rede local.
 
-Aqui você verá como providenciar esses arquivos você mesmo, no mesmo aplicativo ReadyAPI, e configurar a documentação para usá-los.
+Aqui você verá como providenciar esses arquivos você mesmo, no mesmo aplicativo readyapi, e configurar a documentação para usá-los.
 
 ### Estrutura de Arquivos do Projeto
 
@@ -98,7 +98,7 @@ Você provavelmente pode clicar com o botão direito em cada link e selecionar u
 
 E o **ReDoc** usa os arquivos:
 
-* <a href="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js" class="external-link" target="_blank">`redoc.standalone.js`</a>
+* <a href="https://cdn.jsdelivr.net/npm/redoc@2/bundles/redoc.standalone.js" class="external-link" target="_blank">`redoc.standalone.js`</a>
 
 Depois disso, sua estrutura de arquivos deve se parecer com:
 
@@ -129,14 +129,8 @@ Você deverá ver um arquivo JavaScript muito longo para o **ReDoc**.
 Esse arquivo pode começar com algo como:
 
 ```JavaScript
-/*!
- * ReDoc - OpenAPI/Swagger-generated API Reference Documentation
- * -------------------------------------------------------------
- *   Version: "2.0.0-rc.18"
- *   Repo: https://github.com/Redocly/redoc
- */
-!function(e,t){"object"==typeof exports&&"object"==typeof m
-
+/*! For license information please see redoc.standalone.js.LICENSE.txt */
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t(require("null")):
 ...
 ```
 
@@ -148,7 +142,7 @@ Agora, podemos configurar o aplicativo para usar esses arquivos estáticos para 
 
 Da mesma forma que ao usar um CDN personalizado, o primeiro passo é desativar a documentação automática, pois ela usa o CDN padrão.
 
-Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyAPI`:
+Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readyapi`:
 
 {* ../../docs_src/custom_docs_ui/tutorial002.py hl[9] *}
 
@@ -156,7 +150,7 @@ Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyA
 
 E da mesma forma que com um CDN personalizado, agora você pode criar as *operações de rota* para a documentação personalizada.
 
-Novamente, você pode reutilizar as funções internas do ReadyAPI para criar as páginas HTML para a documentação e passar os argumentos necessários:
+Novamente, você pode reutilizar as funções internas do readyapi para criar as páginas HTML para a documentação e passar os argumentos necessários:
 
 * `openapi_url`: a URL onde a página HTML para a documentação pode obter o esquema OpenAPI para a sua API. Você pode usar aqui o atributo `app.openapi_url`.
 * `title`: o título da sua API.

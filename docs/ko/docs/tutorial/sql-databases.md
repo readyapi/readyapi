@@ -1,14 +1,14 @@
 # SQL (관계형) 데이터베이스
 
-**ReadyAPI**에서 SQL(관계형) 데이터베이스 사용은 필수가 아닙니다. 여러분이 원하는 **어떤 데이터베이스든** 사용할 수 있습니다.
+**readyapi**에서 SQL(관계형) 데이터베이스 사용은 필수가 아닙니다. 여러분이 원하는 **어떤 데이터베이스든** 사용할 수 있습니다.
 
 여기서는 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a>을 사용하는 예제를 살펴보겠습니다.
 
-**SQLDev**은 <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a>와 Pydantic을 기반으로 구축되었습니다.SQLDev은 **SQL 데이터베이스**를 사용하는 ReadyAPI 애플리케이션에 완벽히 어울리도록 **ReadyAPI**의 제작자가 설계한 도구입니다.
+**SQLDev**은 <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a>와 Pydantic을 기반으로 구축되었습니다.SQLDev은 **SQL 데이터베이스**를 사용하는 readyapi 애플리케이션에 완벽히 어울리도록 **readyapi**의 제작자가 설계한 도구입니다.
 
 /// tip | 팁
 
-다른 SQL 또는 NoSQL 데이터베이스 라이브러리를 사용할 수도 있습니다 (일부는 <abbr title="객체 관계 매퍼(Object Relational Mapper), SQL 테이블을 나타내는 클래스를 제공하고 테이블의 행을 인스턴스로 표현하는 라이브러리를 지칭하는 용어">"ORM"</abbr>이라고도 불립니다), ReadyAPI는 특정 라이브러리의 사용을 강요하지 않습니다. 😎
+다른 SQL 또는 NoSQL 데이터베이스 라이브러리를 사용할 수도 있습니다 (일부는 <abbr title="객체 관계 매퍼(Object Relational Mapper), SQL 테이블을 나타내는 클래스를 제공하고 테이블의 행을 인스턴스로 표현하는 라이브러리를 지칭하는 용어">"ORM"</abbr>이라고도 불립니다), readyapi는 특정 라이브러리의 사용을 강요하지 않습니다. 😎
 
 ///
 
@@ -26,7 +26,7 @@ SQLDev은 SQLAlchemy를 기반으로 하므로, SQLAlchemy에서 **지원하는 
 
 /// tip | 팁
 
-**ReadyAPI**와 **PostgreSQL**를 포함하여 프론트엔드와 다양한 도구를 제공하는 공식 프로젝트 생성기가 있습니다: <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
+**readyapi**와 **PostgreSQL**를 포함하여 프론트엔드와 다양한 도구를 제공하는 공식 프로젝트 생성기가 있습니다: <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
 
 ///
 
@@ -79,7 +79,7 @@ SQLDev의 `engine` (내부적으로는 SQLAlchemy `engine`)은 데이터베이�
 
 {* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
-`check_same_thread=False`를 사용하면 ReadyAPI에서 여러 스레드에서 동일한 SQLite 데이터베이스를 사용할 수 있습니다. 이는 **하나의 단일 요청**이 **여러 스레드**를 사용할 수 있기 때문에 필요합니다(예: 의존성에서 사용되는 경우).
+`check_same_thread=False`를 사용하면 readyapi에서 여러 스레드에서 동일한 SQLite 데이터베이스를 사용할 수 있습니다. 이는 **하나의 단일 요청**이 **여러 스레드**를 사용할 수 있기 때문에 필요합니다(예: 의존성에서 사용되는 경우).
 
 걱정하지 마세요. 코드가 구조화된 방식으로 인해, 이후에 **각 요청마다 단일 SQLDev *세션*을 사용**하도록 보장할 것입니다. 실제로 그것이 `check_same_thread`가 하려는 것입니다.
 
@@ -93,7 +93,7 @@ SQLDev의 `engine` (내부적으로는 SQLAlchemy `engine`)은 데이터베이�
 
 **`Session`**은 **메모리에 객체**를 저장하고 데이터에 필요한 모든 변경 사항을 추적한 후, **`engine`을 통해** 데이터베이스와 통신합니다.
 
-`yield`를 사용해 ReadyAPI의 **의존성**을 생성하여 각 요청마다 새로운 `Session`을 제공합니다. 이는 요청당 하나의 세션만 사용되도록 보장합니다. 🤓
+`yield`를 사용해 readyapi의 **의존성**을 생성하여 각 요청마다 새로운 `Session`을 제공합니다. 이는 요청당 하나의 세션만 사용되도록 보장합니다. 🤓
 
 그런 다음 이 의존성을 사용하는 코드를 간소화하기 위해 `Annotated` 의존성 `SessionDep`을 생성합니다.
 
@@ -161,7 +161,7 @@ $ readyapi dev main.py
 
 </div>
 
-그런 다음 `/docs` UI로 이동하면, **ReadyAPI**가 해당 **model들**을 사용하여 API **문서를 생성**하는 것으르 확인할 수 있습니다. 또한 이 모델들은 데이터를 직렬화하고 검증하는 데에도 사용됩니다.
+그런 다음 `/docs` UI로 이동하면, **readyapi**가 해당 **model들**을 사용하여 API **문서를 생성**하는 것으르 확인할 수 있습니다. 또한 이 모델들은 데이터를 직렬화하고 검증하는 데에도 사용됩니다.
 
 <div class="screenshot">
 <img src="/img/tutorial/sql-databases/image01.png">
@@ -289,7 +289,7 @@ SQLDev을 사용하면 **상속**을 통해 모든 경우에 필드를 **중복 
 
 이 새 *테이블 모델* `Hero`는 클라이언트에서 보낸 필드를 가지며, 데이터베이스에서 생성된 `id`도 포함합니다.
 
-그런 다음 함수를 통해 동일한 *테이블 모델* `Hero`를 반환합니다. 하지만 `response_model`로 `HeroPublic` *데이터 모델*을 선언했기 때문에, **ReadyAPI**는 `HeroPublic`을 사용하여 데이터를 검증하고 직렬화합니다.
+그런 다음 함수를 통해 동일한 *테이블 모델* `Hero`를 반환합니다. 하지만 `response_model`로 `HeroPublic` *데이터 모델*을 선언했기 때문에, **readyapi**는 `HeroPublic`을 사용하여 데이터를 검증하고 직렬화합니다.
 
 {* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
@@ -299,7 +299,7 @@ SQLDev을 사용하면 **상속**을 통해 모든 경우에 필드를 **중복 
 
 만약 `-> HeroPublic`으로 선언했다면, 에디터와 린터에서 반환값이 `HeroPublic`이 아니라 `Hero`라고 경고했을 것입니다. 이는 적절한 경고입니다.
 
-`response_model`에 선언함으로써 **ReadyAPI**가 이를 처리하도록 하고, 타입 어노테이션과 에디터 및 다른 도구의 도움에는 영향을 미치지 않도록 설정합니다.
+`response_model`에 선언함으로써 **readyapi**가 이를 처리하도록 하고, 타입 어노테이션과 에디터 및 다른 도구의 도움에는 영향을 미치지 않도록 설정합니다.
 
 ///
 
@@ -357,4 +357,4 @@ $ readyapi dev main.py
 
 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">**SQLDev**</a>을 사용하여 SQL 데이터베이스와 상호작용하고, *데이터 모델* 및 *테이블 모델*로 코드를 간소화할 수 있습니다.
 
-더 많은 내용을 배우고 싶다면, **SQLDev** 문서를 참고하세요. <a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">SQLDev을 **ReadyAPI**와 함께 사용하는 것에 대한 더 긴 미니 튜토리얼</a>도 제공합니다. 🚀
+더 많은 내용을 배우고 싶다면, **SQLDev** 문서를 참고하세요. <a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">SQLDev을 **readyapi**와 함께 사용하는 것에 대한 더 긴 미니 튜토리얼</a>도 제공합니다. 🚀

@@ -1,6 +1,6 @@
-# ReadyAPI em contêineres - Docker
+# readyapi em contêineres - Docker
 
-Ao fazer o deploy de aplicações ReadyAPI uma abordagem comum é construir uma **imagem de contêiner Linux**. Isso normalmente é feito usando o <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Você pode a partir disso fazer o deploy dessa imagem de algumas maneiras.
+Ao fazer o deploy de aplicações readyapi uma abordagem comum é construir uma **imagem de contêiner Linux**. Isso normalmente é feito usando o <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Você pode a partir disso fazer o deploy dessa imagem de algumas maneiras.
 
 Usando contêineres Linux você tem diversas vantagens incluindo **segurança**, **replicabilidade**, **simplicidade**, entre outras.
 
@@ -91,11 +91,11 @@ Um contêiner normalmente tem um **único processo**, mas também é possível i
 
 Mas não é possível ter um contêiner rodando sem **pelo menos um processo rodando**. Se o processo principal parar, o contêiner também para.
 
-## Construindo uma Imagem Docker para ReadyAPI
+## Construindo uma Imagem Docker para readyapi
 
 Okay, vamos construir algo agora! 🚀
 
-Eu vou mostrar como construir uma **imagem Docker** para ReadyAPI **do zero**, baseado na **imagem oficial do Python**.
+Eu vou mostrar como construir uma **imagem Docker** para readyapi **do zero**, baseado na **imagem oficial do Python**.
 
 Isso é o que você quer fazer na **maioria dos casos**, por exemplo:
 
@@ -111,7 +111,7 @@ Isso pode depender principalmente da ferramenta que você usa para **instalar** 
 
 O caminho mais comum de fazer isso é ter um arquivo `requirements.txt` com os nomes dos pacotes e suas versões, um por linha.
 
-Você, naturalmente, usaria as mesmas ideias que você leu em [Sobre Versões do ReadyAPI](versions.md){.internal-link target=_blank} para definir os intervalos de versões.
+Você, naturalmente, usaria as mesmas ideias que você leu em [Sobre Versões do readyapi](versions.md){.internal-link target=_blank} para definir os intervalos de versões.
 
 Por exemplo, seu `requirements.txt` poderia parecer com:
 
@@ -141,7 +141,7 @@ Eu vou mostrar um exemplo depois usando Poetry em uma seção abaixo. 👇
 
 ///
 
-### Criando o Código do **ReadyAPI**
+### Criando o Código do **readyapi**
 
 * Crie um diretório `app` e entre nele.
 * Crie um arquivo vazio `__init__.py`.
@@ -150,9 +150,9 @@ Eu vou mostrar um exemplo depois usando Poetry em uma seção abaixo. 👇
 ```Python
 from typing import Optional
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -293,7 +293,7 @@ COPY ./app /code/app
 Agora que todos os arquivos estão no lugar, vamos construir a imagem do contêiner.
 
 * Vá para o diretório do projeto (onde está o seu `Dockerfile`, contendo o diretório `app`).
-* Construa sua imagem ReadyAPI:
+* Construa sua imagem readyapi:
 
 <div class="termy">
 
@@ -351,9 +351,9 @@ Você verá a documentação alternativa automática (fornecida pela <a href="ht
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
-## Construindo uma Imagem Docker com um Arquivo Único ReadyAPI
+## Construindo uma Imagem Docker com um Arquivo Único readyapi
 
-Se seu ReadyAPI for um único arquivo, por exemplo, `main.py` sem um diretório `./app`, sua estrutura de arquivos poderia ser assim:
+Se seu readyapi for um único arquivo, por exemplo, `main.py` sem um diretório `./app`, sua estrutura de arquivos poderia ser assim:
 
 ```
 .
@@ -384,7 +384,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. Execute o Uvicorn e diga a ele para importar o objeto `app` de `main` (em vez de importar de `app.main`).
 
-Então ajuste o comando Uvicorn para usar o novo módulo `main` em vez de `app.main` para importar o objeto ReadyAPI `app`.
+Então ajuste o comando Uvicorn para usar o novo módulo `main` em vez de `app.main` para importar o objeto readyapi `app`.
 
 ## Conceitos de Implantação
 
@@ -405,7 +405,7 @@ Vamos revisar esses **conceitos de implantação** em termos de contêineres:
 
 ## HTTPS
 
-Se nos concentrarmos apenas na **imagem do contêiner** para um aplicativo ReadyAPI (e posteriormente no **contêiner** em execução), o HTTPS normalmente seria tratado **externamente** por outra ferramenta.
+Se nos concentrarmos apenas na **imagem do contêiner** para um aplicativo readyapi (e posteriormente no **contêiner** em execução), o HTTPS normalmente seria tratado **externamente** por outra ferramenta.
 
 Isso poderia ser outro contêiner, por exemplo, com <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>, lidando com **HTTPS** e aquisição **automática** de **certificados**.
 
@@ -453,7 +453,7 @@ E quando trabalhar com contêineres, o mesmo sistema que você usa para iniciar 
 
 Quando trabalhando com **Kubernetes** ou sistemas similares de gerenciamento de contêiner distribuído, usando seus mecanismos de rede internos permitiria que o único **balanceador de carga** que estivesse escutando na **porta principal** transmitisse comunicação (solicitações) para possivelmente **múltiplos contêineres** executando seu aplicativo.
 
-Cada um desses contêineres executando seu aplicativo normalmente teria **apenas um processo** (ex.: um processo Uvicorn executando seu aplicativo ReadyAPI). Todos seriam **contêineres idênticos**, executando a mesma coisa, mas cada um com seu próprio processo, memória, etc. Dessa forma, você aproveitaria a **paralelização** em **núcleos diferentes** da CPU, ou até mesmo em **máquinas diferentes**.
+Cada um desses contêineres executando seu aplicativo normalmente teria **apenas um processo** (ex.: um processo Uvicorn executando seu aplicativo readyapi). Todos seriam **contêineres idênticos**, executando a mesma coisa, mas cada um com seu próprio processo, memória, etc. Dessa forma, você aproveitaria a **paralelização** em **núcleos diferentes** da CPU, ou até mesmo em **máquinas diferentes**.
 
 E o sistema de contêiner com o **balanceador de carga** iria **distribuir as solicitações** para cada um dos contêineres com seu aplicativo **em turnos**. Portanto, cada solicitação poderia ser tratada por um dos múltiplos **contêineres replicados** executando seu aplicativo.
 
@@ -546,7 +546,7 @@ Essa imagem seria útil principalmente nas situações descritas acima em: [Cont
 
 /// warning
 
-Existe uma grande chance de que você **não** precise dessa imagem base ou de qualquer outra semelhante, e seria melhor construir a imagem do zero, como [descrito acima em: Construa uma Imagem Docker para o ReadyAPI](#construindo-uma-imagem-docker-para-readyapi).
+Existe uma grande chance de que você **não** precise dessa imagem base ou de qualquer outra semelhante, e seria melhor construir a imagem do zero, como [descrito acima em: Construa uma Imagem Docker para o readyapi](#construindo-uma-imagem-docker-para-readyapi).
 
 ///
 
@@ -606,7 +606,7 @@ COPY ./app /app/app
 
 ### Quando Usar
 
-Você provavelmente **não** deve usar essa imagem base oficial (ou qualquer outra semelhante) se estiver usando **Kubernetes** (ou outros) e já estiver definindo **replicação** no nível do cluster, com vários **contêineres**. Nesses casos, é melhor **construir uma imagem do zero** conforme descrito acima: [Construindo uma Imagem Docker para ReadyAPI](#construindo-uma-imagem-docker-para-readyapi).
+Você provavelmente **não** deve usar essa imagem base oficial (ou qualquer outra semelhante) se estiver usando **Kubernetes** (ou outros) e já estiver definindo **replicação** no nível do cluster, com vários **contêineres**. Nesses casos, é melhor **construir uma imagem do zero** conforme descrito acima: [Construindo uma Imagem Docker para readyapi](#construindo-uma-imagem-docker-para-readyapi).
 
 Essa imagem seria útil principalmente nos casos especiais descritos acima em [Contêineres com Múltiplos Processos e Casos Especiais](#conteineres-com-multiplos-processos-e-casos-especiais). Por exemplo, se sua aplicação for **simples o suficiente** para que a configuração padrão de número de processos com base na CPU funcione bem, você não quer se preocupar com a configuração manual da replicação no nível do cluster e não está executando mais de um contêiner com seu aplicativo. Ou se você estiver implantando com **Docker Compose**, executando em um único servidor, etc.
 
@@ -730,4 +730,4 @@ Na maioria dos casos, você provavelmente não desejará usar nenhuma imagem bas
 
 Tendo cuidado com a **ordem** das instruções no `Dockerfile` e o **cache do Docker**, você pode **minimizar os tempos de construção**, para maximizar sua produtividade (e evitar a tédio). 😎
 
-Em alguns casos especiais, você pode querer usar a imagem oficial do Docker para o ReadyAPI. 🤓
+Em alguns casos especiais, você pode querer usar a imagem oficial do Docker para o readyapi. 🤓

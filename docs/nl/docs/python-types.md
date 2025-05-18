@@ -6,11 +6,11 @@ Deze **"type hints"** of annotaties zijn een speciale syntax waarmee het <abbr t
 
 Door types voor je variabelen te declareren, kunnen editors en hulpmiddelen je beter ondersteunen.
 
-Dit is slechts een **korte tutorial/opfrisser** over Python type hints. Het behandelt enkel het minimum dat nodig is om ze te gebruiken met **ReadyAPI**... en dat is relatief weinig.
+Dit is slechts een **korte tutorial/opfrisser** over Python type hints. Het behandelt enkel het minimum dat nodig is om ze te gebruiken met **readyapi**... en dat is relatief weinig.
 
-**ReadyAPI** is helemaal gebaseerd op deze type hints, ze geven veel voordelen.
+**readyapi** is helemaal gebaseerd op deze type hints, ze geven veel voordelen.
 
-Maar zelfs als je **ReadyAPI** nooit gebruikt, heb je er baat bij om er iets over te leren.
+Maar zelfs als je **readyapi** nooit gebruikt, heb je er baat bij om er iets over te leren.
 
 /// note
 
@@ -126,7 +126,7 @@ Nu weet je hoe je het moet oplossen, converteer `age` naar een string met `str(a
 
 Je hebt net de belangrijkste plek om type hints te declareren gezien. Namelijk als functieparameters.
 
-Dit is ook de belangrijkste plek waar je ze gebruikt met **ReadyAPI**.
+Dit is ook de belangrijkste plek waar je ze gebruikt met **readyapi**.
 
 ### Eenvoudige types
 
@@ -504,7 +504,7 @@ Om meer te leren over <a href="https://docs.pydantic.dev/" class="external-link"
 
 ///
 
-**ReadyAPI** is volledig gebaseerd op Pydantic.
+**readyapi** is volledig gebaseerd op Pydantic.
 
 Je zult veel meer van dit alles in de praktijk zien in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
 
@@ -532,7 +532,7 @@ In Python 3.9 is `Annotated` onderdeel van de standaardpakket, dus je kunt het i
 
 In versies lager dan Python 3.9 importeer je `Annotated` vanuit `typing_extensions`.
 
-Het wordt al geïnstalleerd met **ReadyAPI**.
+Het wordt al geïnstalleerd met **readyapi**.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -542,7 +542,7 @@ Het wordt al geïnstalleerd met **ReadyAPI**.
 
 Python zelf doet niets met deze `Annotated` en voor editors en andere hulpmiddelen is het type nog steeds een `str`.
 
-Maar je kunt deze ruimte in `Annotated` gebruiken om **ReadyAPI** te voorzien van extra metadata over hoe je wilt dat je applicatie zich gedraagt.
+Maar je kunt deze ruimte in `Annotated` gebruiken om **readyapi** te voorzien van extra metadata over hoe je wilt dat je applicatie zich gedraagt.
 
 Het belangrijkste om te onthouden is dat **de eerste *typeparameter*** die je doorgeeft aan `Annotated` het **werkelijke type** is. De rest is gewoon metadata voor andere hulpmiddelen.
 
@@ -558,16 +558,16 @@ Daarnaast betekent het ook dat je code zeer verenigbaar zal zijn met veel andere
 
 ///
 
-## Type hints in **ReadyAPI**
+## Type hints in **readyapi**
 
-**ReadyAPI** maakt gebruik van type hints om verschillende dingen te doen.
+**readyapi** maakt gebruik van type hints om verschillende dingen te doen.
 
-Met **ReadyAPI** declareer je parameters met type hints en krijg je:
+Met **readyapi** declareer je parameters met type hints en krijg je:
 
 * **Editor ondersteuning**.
 * **Type checks**.
 
-...en **ReadyAPI** gebruikt dezelfde declaraties om:
+...en **readyapi** gebruikt dezelfde declaraties om:
 
 * **Vereisten te definïeren **: van request pad parameters, query parameters, headers, bodies, dependencies, enz.
 * **Data te converteren**: van de request naar het vereiste type.
@@ -578,7 +578,7 @@ Met **ReadyAPI** declareer je parameters met type hints en krijg je:
 
 Dit klinkt misschien allemaal abstract. Maak je geen zorgen. Je ziet dit allemaal in actie in de [Tutorial - Gebruikershandleiding](tutorial/index.md){.internal-link target=_blank}.
 
-Het belangrijkste is dat door standaard Python types te gebruiken, op één plek (in plaats van meer klassen, decorators, enz. toe te voegen), **ReadyAPI** een groot deel van het werk voor je doet.
+Het belangrijkste is dat door standaard Python types te gebruiken, op één plek (in plaats van meer klassen, decorators, enz. toe te voegen), **readyapi** een groot deel van het werk voor je doet.
 
 /// info
 

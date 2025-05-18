@@ -10,7 +10,7 @@ Wenn Sie beispielsweise den Requestbody lesen oder manipulieren möchten, bevor 
 
 Dies ist eine „fortgeschrittene“ Funktion.
 
-Wenn Sie gerade erst mit **ReadyAPI** beginnen, möchten Sie diesen Abschnitt vielleicht überspringen.
+Wenn Sie gerade erst mit **readyapi** beginnen, möchten Sie diesen Abschnitt vielleicht überspringen.
 
 ///
 
@@ -76,7 +76,7 @@ Dabei kümmert sich unser `GzipRequest` um die Dekomprimierung der Daten (falls 
 
 Danach ist die gesamte Verarbeitungslogik dieselbe.
 
-Aufgrund unserer Änderungen in `GzipRequest.body` wird der Requestbody jedoch bei Bedarf automatisch dekomprimiert, wenn er von **ReadyAPI** geladen wird.
+Aufgrund unserer Änderungen in `GzipRequest.body` wird der Requestbody jedoch bei Bedarf automatisch dekomprimiert, wenn er von **readyapi** geladen wird.
 
 ## Zugriff auf den Requestbody in einem Exceptionhandler
 

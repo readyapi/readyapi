@@ -1,6 +1,6 @@
 # Deployment
 
-Das Deployment einer **ReadyAPI**-Anwendung ist relativ einfach.
+Das Deployment einer **readyapi**-Anwendung ist relativ einfach.
 
 ## Was bedeutet Deployment?
 
@@ -16,6 +16,6 @@ Abhängig von Ihrem spezifischen Anwendungsfall und den von Ihnen verwendeten To
 
 Sie könnten mithilfe einer Kombination von Tools selbst **einen Server bereitstellen**, Sie könnten einen **Cloud-Dienst** nutzen, der einen Teil der Arbeit für Sie erledigt, oder andere mögliche Optionen.
 
-Ich zeige Ihnen einige der wichtigsten Konzepte, die Sie beim Deployment einer **ReadyAPI**-Anwendung wahrscheinlich berücksichtigen sollten (obwohl das meiste davon auch für jede andere Art von Webanwendung gilt).
+Ich zeige Ihnen einige der wichtigsten Konzepte, die Sie beim Deployment einer **readyapi**-Anwendung wahrscheinlich berücksichtigen sollten (obwohl das meiste davon auch für jede andere Art von Webanwendung gilt).
 
 In den nächsten Abschnitten erfahren Sie mehr über die zu beachtenden Details und über die Techniken, das zu tun. ✨

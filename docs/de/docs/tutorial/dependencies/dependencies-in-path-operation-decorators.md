@@ -66,4 +66,4 @@ Wenn Sie später lesen, wie Sie größere Anwendungen strukturieren ([Größere 
 
 ## Globale Abhängigkeiten
 
-Als Nächstes werden wir sehen, wie man Abhängigkeiten zur gesamten `ReadyAPI`-Anwendung hinzufügt, sodass sie für jede *Pfadoperation* gelten.
+Als Nächstes werden wir sehen, wie man Abhängigkeiten zur gesamten `readyapi`-Anwendung hinzufügt, sodass sie für jede *Pfadoperation* gelten.

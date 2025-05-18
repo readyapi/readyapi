@@ -1,8 +1,8 @@
 # 기능
 
-## ReadyAPI의 기능
+## readyapi의 기능
 
-**ReadyAPI**는 다음과 같은 기능을 제공합니다:
+**readyapi**는 다음과 같은 기능을 제공합니다:
 
 ### 개방형 표준을 기반으로
 
@@ -25,9 +25,9 @@
 
 ### 그저 현대 파이썬
 
-(Pydantic 덕분에) ReadyAPI는 표준 **파이썬 3.6 타입** 선언에 기반하고 있습니다. 새로 배울 문법이 없습니다. 그저 표준적인 현대 파이썬입니다.
+(Pydantic 덕분에) readyapi는 표준 **파이썬 3.6 타입** 선언에 기반하고 있습니다. 새로 배울 문법이 없습니다. 그저 표준적인 현대 파이썬입니다.
 
-만약 여러분이 파이썬 타입을 어떻게 사용하는지에 대한 2분 정도의 복습이 필요하다면 (비록 여러분이 ReadyAPI를 사용하지 않는다 하더라도), 다음의 짧은 자습서를 확인하세요: [파이썬 타입](python-types.md){.internal-link target=\_blank}.
+만약 여러분이 파이썬 타입을 어떻게 사용하는지에 대한 2분 정도의 복습이 필요하다면 (비록 여러분이 readyapi를 사용하지 않는다 하더라도), 다음의 짧은 자습서를 확인하세요: [파이썬 타입](python-types.md){.internal-link target=\_blank}.
 
 여러분은 타입을 이용한 표준 파이썬을 다음과 같이 적을 수 있습니다:
 
@@ -77,7 +77,7 @@ my_second_user: User = User(**second_user_data)
 
 최근 파이썬 개발자 설문조사에서 <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">"자동 완성"이 가장 많이 사용되는 기능</a>이라는 것이 밝혀졌습니다.
 
-**ReadyAPI** 프레임워크의 모든 부분은 이를 충족하기 위해 설계되었습니다. 자동완성은 어느 곳에서나 작동합니다.
+**readyapi** 프레임워크의 모든 부분은 이를 충족하기 위해 설계되었습니다. 자동완성은 어느 곳에서나 작동합니다.
 
 여러분은 문서로 다시 돌아올 일이 거의 없을 겁니다.
 
@@ -136,7 +136,7 @@ my_second_user: User = User(**second_user_data)
 
 ### 의존성 주입
 
-ReadyAPI는 사용하기 매우 간편하지만, 엄청난 <abbr title='"컴포넌트", "자원", "서비스", "제공자"로도 알려진'><strong>의존성 주입</strong></abbr>시스템을 포함하고 있습니다.
+readyapi는 사용하기 매우 간편하지만, 엄청난 <abbr title='"컴포넌트", "자원", "서비스", "제공자"로도 알려진'><strong>의존성 주입</strong></abbr>시스템을 포함하고 있습니다.
 
 * 의존성은 의존성을 가질수도 있어, 이를 통해 의존성의 계층이나 **의존성의 "그래프"**를 형성합니다.
 * 모든 것이 프레임워크에 의해 **자동적으로 처리됩니다**.
@@ -159,11 +159,11 @@ ReadyAPI는 사용하기 매우 간편하지만, 엄청난 <abbr title='"컴포�
 
 ## Starlette 기능
 
-**ReadyAPI**는 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>를 기반으로 구축되었으며, 이와 완전히 호환됩니다. 따라서, 여러분이 보유하고 있는 어떤 추가적인 Starlette 코드도 작동할 것입니다.
+**readyapi**는 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>를 기반으로 구축되었으며, 이와 완전히 호환됩니다. 따라서, 여러분이 보유하고 있는 어떤 추가적인 Starlette 코드도 작동할 것입니다.
 
-`ReadyAPI`는 실제로 `Starlette`의 하위 클래스입니다. 그래서, 여러분이 이미 Starlette을 알고 있거나 사용하고 있으면, 대부분의 기능이 같은 방식으로 작동할 것입니다.
+`readyapi`는 실제로 `Starlette`의 하위 클래스입니다. 그래서, 여러분이 이미 Starlette을 알고 있거나 사용하고 있으면, 대부분의 기능이 같은 방식으로 작동할 것입니다.
 
-**ReadyAPI**를 사용하면 여러분은 **Starlette**의 기능 대부분을 얻게 될 것입니다(ReadyAPI가 단순히 Starlette를 강화했기 때문입니다):
+**readyapi**를 사용하면 여러분은 **Starlette**의 기능 대부분을 얻게 될 것입니다(readyapi가 단순히 Starlette를 강화했기 때문입니다):
 
 * 아주 인상적인 성능. 이는 <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">**NodeJS**와 **Go**와 동등하게 사용 가능한 가장 빠른 파이썬 프레임워크 중 하나입니다</a>.
 * **WebSocket** 지원.
@@ -177,7 +177,7 @@ ReadyAPI는 사용하기 매우 간편하지만, 엄청난 <abbr title='"컴포�
 
 ## Pydantic 기능
 
-**ReadyAPI**는 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>을 기반으로 하며 Pydantic과 완벽하게 호환됩니다. 그래서 어느 추가적인 Pydantic 코드를 여러분이 가지고 있든 작동할 것입니다.
+**readyapi**는 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>을 기반으로 하며 Pydantic과 완벽하게 호환됩니다. 그래서 어느 추가적인 Pydantic 코드를 여러분이 가지고 있든 작동할 것입니다.
 
 Pydantic을 기반으로 하는, 데이터베이스를 위한 <abbr title="Object-Relational Mapper">ORM</abbr>, <abbr title="Object-Document Mapper">ODM</abbr>을 포함한 외부 라이브러리를 포함합니다.
 
@@ -185,7 +185,7 @@ Pydantic을 기반으로 하는, 데이터베이스를 위한 <abbr title="Objec
 
 반대로도 마찬가지이며, 많은 경우에서 여러분은 **직접 클라이언트로** 그저 객체를 넘겨줄 수 있습니다.
 
-**ReadyAPI**를 사용하면 (모든 데이터 처리를 위해 ReadyAPI가 Pydantic을 기반으로 하기 있기에) **Pydantic**의 모든 기능을 얻게 됩니다:
+**readyapi**를 사용하면 (모든 데이터 처리를 위해 readyapi가 Pydantic을 기반으로 하기 있기에) **Pydantic**의 모든 기능을 얻게 됩니다:
 
 * **어렵지 않은 언어**:
     * 새로운 스키마 정의 마이크로 언어를 배우지 않아도 됩니다.

@@ -1,6 +1,6 @@
 # 查询参数和字符串校验
 
-**ReadyAPI** 允许你为参数声明额外的信息和校验。
+**readyapi** 允许你为参数声明额外的信息和校验。
 
 让我们以下面的应用程序为例：
 
@@ -68,7 +68,7 @@ q: Union[str, None] = Query(default=None, max_length=50)
 
 如果你对所有的这些**「正则表达式」**概念感到迷茫，请不要担心。对于许多人来说这都是一个困难的主题。你仍然可以在无需正则表达式的情况下做很多事情。
 
-但是，一旦你需要用到并去学习它们时，请了解你已经可以在 **ReadyAPI** 中直接使用它们。
+但是，一旦你需要用到并去学习它们时，请了解你已经可以在 **readyapi** 中直接使用它们。
 
 ## 默认值
 
@@ -118,7 +118,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 /// tip
 
-Pydantic 是 ReadyAPI 中所有数据验证和序列化的核心，当你在没有设默认值的情况下使用 `Optional` 或 `Union[Something, None]` 时，它具有特殊行为，你可以在 Pydantic 文档中阅读有关<a href="https://docs.pydantic.dev/latest/concepts/models/#required-optional-fields" class="external-link" target="_blank">必需可选字段</a>的更多信息。
+Pydantic 是 readyapi 中所有数据验证和序列化的核心，当你在没有设默认值的情况下使用 `Optional` 或 `Union[Something, None]` 时，它具有特殊行为，你可以在 Pydantic 文档中阅读有关<a href="https://docs.pydantic.dev/latest/concepts/models/#required-optional-fields" class="external-link" target="_blank">必需可选字段</a>的更多信息。
 
 ///
 
@@ -190,7 +190,7 @@ http://localhost:8000/items/
 
 /// note
 
-请记住，在这种情况下 ReadyAPI 将不会检查列表的内容。
+请记住，在这种情况下 readyapi 将不会检查列表的内容。
 
 例如，`List[int]` 将检查（并记录到文档）列表的内容必须是整数。但是单独的 `list` 不会。
 

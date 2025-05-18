@@ -23,7 +23,7 @@ Dann wird Ihre API (beispielsweise):
 * eine Benachrichtigung an den API-Benutzer (den externen Entwickler) zurücksenden.
     * Dies erfolgt durch Senden eines POST-Requests (von *Ihrer API*) an eine *externe API*, die von diesem externen Entwickler bereitgestellt wird (das ist der „Callback“).
 
-## Die normale **ReadyAPI**-Anwendung
+## Die normale **readyapi**-Anwendung
 
 Sehen wir uns zunächst an, wie die normale API-Anwendung aussehen würde, bevor wir den Callback hinzufügen.
 
@@ -74,7 +74,7 @@ Wenn Sie den Callback selbst implementieren, können Sie beispielsweise <a href=
 
 Dieser Code wird nicht in Ihrer Anwendung ausgeführt, wir benötigen ihn nur, um zu *dokumentieren*, wie diese *externe API* aussehen soll.
 
-Sie wissen jedoch bereits, wie Sie mit **ReadyAPI** ganz einfach eine automatische Dokumentation für eine API erstellen.
+Sie wissen jedoch bereits, wie Sie mit **readyapi** ganz einfach eine automatische Dokumentation für eine API erstellen.
 
 Daher werden wir dasselbe Wissen nutzen, um zu dokumentieren, wie die *externe API* aussehen sollte ... indem wir die *Pfadoperation(en)* erstellen, welche die externe API implementieren soll (die, welche Ihre API aufruft).
 
@@ -96,7 +96,7 @@ Erstellen Sie zunächst einen neuen `APIRouter`, der einen oder mehrere Callback
 
 Um die Callback-*Pfadoperation* zu erstellen, verwenden Sie denselben `APIRouter`, den Sie oben erstellt haben.
 
-Sie sollte wie eine normale ReadyAPI-*Pfadoperation* aussehen:
+Sie sollte wie eine normale readyapi-*Pfadoperation* aussehen:
 
 * Sie sollte wahrscheinlich eine Deklaration des Bodys enthalten, die sie erhalten soll, z. B. `body: InvoiceEvent`.
 * Und sie könnte auch eine Deklaration der Response enthalten, die zurückgegeben werden soll, z. B. `response_model=InvoiceEventReceived`.

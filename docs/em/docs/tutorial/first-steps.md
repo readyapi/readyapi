@@ -1,6 +1,6 @@
 # 🥇 🔁
 
-🙅 ReadyAPI 📁 💪 👀 💖 👉:
+🙅 readyapi 📁 💪 👀 💖 👉:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -27,7 +27,7 @@ $ uvicorn main:app --reload
 📋 `uvicorn main:app` 🔗:
 
 * `main`: 📁 `main.py` (🐍 "🕹").
-* `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = ReadyAPI()`.
+* `app`: 🎚 ✍ 🔘 `main.py` ⏮️ ⏸ `app = readyapi()`.
 * `--reload`: ⚒ 💽 ⏏ ⏮️ 📟 🔀. 🕴 ⚙️ 🛠️.
 
 ///
@@ -68,7 +68,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 ### 🗄
 
-**ReadyAPI** 🏗 "🔗" ⏮️ 🌐 👆 🛠️ ⚙️ **🗄** 🐩 ⚖ 🔗.
+**readyapi** 🏗 "🔗" ⏮️ 🌐 👆 🛠️ ⚙️ **🗄** 🐩 ⚖ 🔗.
 
 #### "🔗"
 
@@ -92,7 +92,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 #### ✅ `openapi.json`
 
-🚥 👆 😟 🔃 ❔ 🍣 🗄 🔗 👀 💖, ReadyAPI 🔁 🏗 🎻 (🔗) ⏮️ 📛 🌐 👆 🛠️.
+🚥 👆 😟 🔃 ❔ 🍣 🗄 🔗 👀 💖, readyapi 🔁 🏗 🎻 (🔗) ⏮️ 📛 🌐 👆 🛠️.
 
 👆 💪 👀 ⚫️ 🔗: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -102,7 +102,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -123,31 +123,31 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 🗄 🔗 ⚫️❔ 🏋️ 2️⃣ 🎓 🧾 ⚙️ 🔌.
 
-&amp; 📤 💯 🎛, 🌐 ⚓️ 🔛 🗄. 👆 💪 💪 🚮 🙆 📚 🎛 👆 🈸 🏗 ⏮️ **ReadyAPI**.
+&amp; 📤 💯 🎛, 🌐 ⚓️ 🔛 🗄. 👆 💪 💪 🚮 🙆 📚 🎛 👆 🈸 🏗 ⏮️ **readyapi**.
 
 👆 💪 ⚙️ ⚫️ 🏗 📟 🔁, 👩‍💻 👈 🔗 ⏮️ 👆 🛠️. 🖼, 🕸, 📱 ⚖️ ☁ 🈸.
 
 ## 🌃, 🔁 🔁
 
-### 🔁 1️⃣: 🗄 `ReadyAPI`
+### 🔁 1️⃣: 🗄 `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI` 🐍 🎓 👈 🚚 🌐 🛠️ 👆 🛠️.
+`readyapi` 🐍 🎓 👈 🚚 🌐 🛠️ 👆 🛠️.
 
 /// note | 📡 ℹ
 
-`ReadyAPI` 🎓 👈 😖 🔗 ⚪️➡️ `Starlette`.
+`readyapi` 🎓 👈 😖 🔗 ⚪️➡️ `Starlette`.
 
-👆 💪 ⚙️ 🌐 <a href="https://www.starlette.io/" class="external-link" target="_blank">💃</a> 🛠️ ⏮️ `ReadyAPI` 💁‍♂️.
+👆 💪 ⚙️ 🌐 <a href="https://www.starlette.io/" class="external-link" target="_blank">💃</a> 🛠️ ⏮️ `readyapi` 💁‍♂️.
 
 ///
 
-### 🔁 2️⃣: ✍ `ReadyAPI` "👐"
+### 🔁 2️⃣: ✍ `readyapi` "👐"
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-📥 `app` 🔢 🔜 "👐" 🎓 `ReadyAPI`.
+📥 `app` 🔢 🔜 "👐" 🎓 `readyapi`.
 
 👉 🔜 👑 ☝ 🔗 ✍ 🌐 👆 🛠️.
 
@@ -244,7 +244,7 @@ https://example.com/items/foo
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-`@app.get("/")` 💬 **ReadyAPI** 👈 🔢 ▶️️ 🔛 🈚 🚚 📨 👈 🚶:
+`@app.get("/")` 💬 **readyapi** 👈 🔢 ▶️️ 🔛 🈚 🚚 📨 👈 🚶:
 
 * ➡ `/`
 * ⚙️ <abbr title="an HTTP GET method"><code>get</code> 🛠️</abbr>
@@ -257,7 +257,7 @@ https://example.com/items/foo
 
  "👨‍🎨" ✊ 🔢 🔛 &amp; 🔨 🕳 ⏮️ ⚫️.
 
-👆 💼, 👉 👨‍🎨 💬 **ReadyAPI** 👈 🔢 🔛 🔗 **➡** `/` ⏮️ **🛠️** `get`.
+👆 💼, 👉 👨‍🎨 💬 **readyapi** 👈 🔢 🔛 🔗 **➡** `/` ⏮️ **🛠️** `get`.
 
 ⚫️ "**➡ 🛠️ 👨‍🎨**".
 
@@ -280,7 +280,7 @@ https://example.com/items/foo
 
 👆 🆓 ⚙️ 🔠 🛠️ (🇺🇸🔍 👩‍🔬) 👆 🎋.
 
-**ReadyAPI** 🚫 🛠️ 🙆 🎯 🔑.
+**readyapi** 🚫 🛠️ 🙆 🎯 🔑.
 
 ℹ 📥 🎁 📄, 🚫 📄.
 
@@ -300,7 +300,7 @@ https://example.com/items/foo
 
 👉 🐍 🔢.
 
-⚫️ 🔜 🤙 **ReadyAPI** 🕐❔ ⚫️ 📨 📨 📛 "`/`" ⚙️ `GET` 🛠️.
+⚫️ 🔜 🤙 **readyapi** 🕐❔ ⚫️ 📨 📨 📛 "`/`" ⚙️ `GET` 🛠️.
 
 👉 💼, ⚫️ `async` 🔢.
 
@@ -328,7 +328,7 @@ https://example.com/items/foo
 
 ## 🌃
 
-* 🗄 `ReadyAPI`.
+* 🗄 `readyapi`.
 * ✍ `app` 👐.
 * ✍ **➡ 🛠️ 👨‍🎨** (💖 `@app.get("/")`).
 * ✍ **➡ 🛠️ 🔢** (💖 `def root(): ...` 🔛).

@@ -2,7 +2,7 @@
 
 Bei einigen Anwendungstypen möchten Sie möglicherweise Abhängigkeiten zur gesamten Anwendung hinzufügen.
 
-Ähnlich wie Sie [`dependencies` zu den *Pfadoperation-Dekoratoren* hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} können, können Sie sie auch zur `ReadyAPI`-Anwendung hinzufügen.
+Ähnlich wie Sie [`dependencies` zu den *Pfadoperation-Dekoratoren* hinzufügen](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} können, können Sie sie auch zur `readyapi`-Anwendung hinzufügen.
 
 In diesem Fall werden sie auf alle *Pfadoperationen* in der Anwendung angewendet:
 

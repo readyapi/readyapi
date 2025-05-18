@@ -1,6 +1,6 @@
 # Tutorial – Benutzerhandbuch
 
-Dieses Tutorial zeigt Ihnen Schritt für Schritt, wie Sie **ReadyAPI** und die meisten seiner Funktionen verwenden können.
+Dieses Tutorial zeigt Ihnen Schritt für Schritt, wie Sie **readyapi** und die meisten seiner Funktionen verwenden können.
 
 Jeder Abschnitt baut schrittweise auf den vorhergehenden auf. Diese Abschnitte sind aber nach einzelnen Themen gegliedert, sodass Sie direkt zu einem bestimmten Thema übergehen können, um Ihre speziellen API-Anforderungen zu lösen.
 
@@ -30,15 +30,15 @@ $ uvicorn main:app --reload
 
 Es wird **ausdrücklich empfohlen**, dass Sie den Code schreiben oder kopieren, ihn bearbeiten und lokal ausführen.
 
-Die Verwendung in Ihrem eigenen Editor zeigt Ihnen die Vorteile von ReadyAPI am besten, wenn Sie sehen, wie wenig Code Sie schreiben müssen, all die Typprüfungen, die automatische Vervollständigung usw.
+Die Verwendung in Ihrem eigenen Editor zeigt Ihnen die Vorteile von readyapi am besten, wenn Sie sehen, wie wenig Code Sie schreiben müssen, all die Typprüfungen, die automatische Vervollständigung usw.
 
 ---
 
-## ReadyAPI installieren
+## readyapi installieren
 
-Der erste Schritt besteht aus der Installation von ReadyAPI.
+Der erste Schritt besteht aus der Installation von readyapi.
 
-Für dieses Tutorial empfiehlt es sich, ReadyAPI mit allen optionalen Abhängigkeiten und Funktionen zu installieren:
+Für dieses Tutorial empfiehlt es sich, readyapi mit allen optionalen Abhängigkeiten und Funktionen zu installieren:
 
 <div class="termy">
 

@@ -48,7 +48,7 @@ Isso nos ajudará dentro da função com todo o preenchimento automático e veri
 
 Você pode se lembrar que corpos de requisição também são declarados com modelos Pydantic.
 
-Aqui, o **ReadyAPI** não ficará confuso porque você está usando `Depends`.
+Aqui, o **readyapi** não ficará confuso porque você está usando `Depends`.
 
 ///
 
@@ -74,7 +74,7 @@ Você quer ter apenas uma `str`? Ou apenas um `dict`? Ou uma instância de model
 
 Na verdade, você não tem usuários que fazem login no seu aplicativo, mas sim robôs, bots ou outros sistemas, que possuem apenas um token de acesso? Novamente, tudo funciona da mesma forma.
 
-Apenas use qualquer tipo de modelo, qualquer tipo de classe, qualquer tipo de banco de dados que você precise para a sua aplicação. O **ReadyAPI** cobre tudo com o sistema de injeção de dependências.
+Apenas use qualquer tipo de modelo, qualquer tipo de classe, qualquer tipo de banco de dados que você precise para a sua aplicação. O **readyapi** cobre tudo com o sistema de injeção de dependências.
 
 ## Tamanho do código
 

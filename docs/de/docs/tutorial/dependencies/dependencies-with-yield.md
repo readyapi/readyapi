@@ -1,6 +1,6 @@
 # Abhängigkeiten mit yield
 
-ReadyAPI unterstützt Abhängigkeiten, die nach Abschluss einige <abbr title="Manchmal auch genannt „Exit Code“, „Cleanup Code“, „Teardown Code“, „Closing Code“, „Kontext Manager Exit Code“, usw.">zusätzliche Schritte ausführen</abbr>.
+readyapi unterstützt Abhängigkeiten, die nach Abschluss einige <abbr title="Manchmal auch genannt „Exit Code“, „Cleanup Code“, „Teardown Code“, „Closing Code“, „Kontext Manager Exit Code“, usw.">zusätzliche Schritte ausführen</abbr>.
 
 Verwenden Sie dazu `yield` statt `return` und schreiben Sie die zusätzlichen Schritte / den zusätzlichen Code danach.
 
@@ -17,9 +17,9 @@ Jede Funktion, die dekoriert werden kann mit:
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> oder
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
-kann auch als gültige **ReadyAPI**-Abhängigkeit verwendet werden.
+kann auch als gültige **readyapi**-Abhängigkeit verwendet werden.
 
-Tatsächlich verwendet ReadyAPI diese beiden Dekoratoren intern.
+Tatsächlich verwendet readyapi diese beiden Dekoratoren intern.
 
 ///
 
@@ -43,7 +43,7 @@ Der auf die `yield`-Anweisung folgende Code wird ausgeführt, nachdem die Respon
 
 Sie können `async`hrone oder reguläre Funktionen verwenden.
 
-**ReadyAPI** wird bei jeder das Richtige tun, so wie auch bei normalen Abhängigkeiten.
+**readyapi** wird bei jeder das Richtige tun, so wie auch bei normalen Abhängigkeiten.
 
 ///
 
@@ -63,7 +63,7 @@ Auf die gleiche Weise können Sie `finally` verwenden, um sicherzustellen, dass 
 
 Sie können Unterabhängigkeiten und „Bäume“ von Unterabhängigkeiten beliebiger Größe und Form haben, und einige oder alle davon können `yield` verwenden.
 
-**ReadyAPI** stellt sicher, dass der „Exit-Code“ in jeder Abhängigkeit mit `yield` in der richtigen Reihenfolge ausgeführt wird.
+**readyapi** stellt sicher, dass der „Exit-Code“ in jeder Abhängigkeit mit `yield` in der richtigen Reihenfolge ausgeführt wird.
 
 Beispielsweise kann `dependency_c` von `dependency_b` und `dependency_b` von `dependency_a` abhängen:
 
@@ -83,13 +83,13 @@ Und Sie könnten eine einzelne Abhängigkeit haben, die auf mehreren ge`yield`et
 
 Sie können beliebige Kombinationen von Abhängigkeiten haben.
 
-**ReadyAPI** stellt sicher, dass alles in der richtigen Reihenfolge ausgeführt wird.
+**readyapi** stellt sicher, dass alles in der richtigen Reihenfolge ausgeführt wird.
 
 /// note | Technische Details
 
 Dieses funktioniert dank Pythons <a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Kontextmanager</a>.
 
-**ReadyAPI** verwendet sie intern, um das zu erreichen.
+**readyapi** verwendet sie intern, um das zu erreichen.
 
 ///
 
@@ -172,15 +172,15 @@ Wenn Sie eine Exception auslösen, wird diese mit yield an die Abhängigkeiten �
 
 Sie benötigen diese technischen Details höchstwahrscheinlich nicht, Sie können diesen Abschnitt überspringen und weiter unten fortfahren.
 
-Diese Details sind vor allem dann nützlich, wenn Sie eine Version von ReadyAPI vor 0.106.0 verwendet haben und Ressourcen aus Abhängigkeiten mit `yield` in Hintergrundtasks verwendet haben.
+Diese Details sind vor allem dann nützlich, wenn Sie eine Version von readyapi vor 0.106.0 verwendet haben und Ressourcen aus Abhängigkeiten mit `yield` in Hintergrundtasks verwendet haben.
 
 ///
 
-Vor ReadyAPI 0.106.0 war das Auslösen von Exceptions nach `yield` nicht möglich, der Exit-Code in Abhängigkeiten mit `yield` wurde ausgeführt, *nachdem* die Response gesendet wurde, die [Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} wären also bereits ausgeführt worden.
+Vor readyapi 0.106.0 war das Auslösen von Exceptions nach `yield` nicht möglich, der Exit-Code in Abhängigkeiten mit `yield` wurde ausgeführt, *nachdem* die Response gesendet wurde, die [Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} wären also bereits ausgeführt worden.
 
 Dies wurde hauptsächlich so konzipiert, damit die gleichen Objekte, die durch Abhängigkeiten ge`yield`et werden, innerhalb von Hintergrundtasks verwendet werden können, da der Exit-Code ausgeführt wird, nachdem die Hintergrundtasks abgeschlossen sind.
 
-Da dies jedoch bedeuten würde, darauf zu warten, dass die Response durch das Netzwerk reist, während eine Ressource unnötigerweise in einer Abhängigkeit mit yield gehalten wird (z. B. eine Datenbankverbindung), wurde dies in ReadyAPI 0.106.0 geändert.
+Da dies jedoch bedeuten würde, darauf zu warten, dass die Response durch das Netzwerk reist, während eine Ressource unnötigerweise in einer Abhängigkeit mit yield gehalten wird (z. B. eine Datenbankverbindung), wurde dies in readyapi 0.106.0 geändert.
 
 /// tip | Tipp
 
@@ -212,7 +212,7 @@ Im Hintergrund erstellt das `open("./somefile.txt")` ein Objekt, das als „Kont
 
 Dieser stellt sicher dass, wenn der `with`-Block beendet ist, die Datei geschlossen wird, auch wenn Exceptions geworfen wurden.
 
-Wenn Sie eine Abhängigkeit mit `yield` erstellen, erstellt **ReadyAPI** dafür intern einen Kontextmanager und kombiniert ihn mit einigen anderen zugehörigen Tools.
+Wenn Sie eine Abhängigkeit mit `yield` erstellen, erstellt **readyapi** dafür intern einen Kontextmanager und kombiniert ihn mit einigen anderen zugehörigen Tools.
 
 ### Kontextmanager in Abhängigkeiten mit `yield` verwenden
 
@@ -220,13 +220,13 @@ Wenn Sie eine Abhängigkeit mit `yield` erstellen, erstellt **ReadyAPI** dafür 
 
 Dies ist mehr oder weniger eine „fortgeschrittene“ Idee.
 
-Wenn Sie gerade erst mit **ReadyAPI** beginnen, möchten Sie das vielleicht vorerst überspringen.
+Wenn Sie gerade erst mit **readyapi** beginnen, möchten Sie das vielleicht vorerst überspringen.
 
 ///
 
 In Python können Sie Kontextmanager erstellen, indem Sie <a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">eine Klasse mit zwei Methoden erzeugen: `__enter__()` und `__exit__()`</a>.
 
-Sie können solche auch innerhalb von **ReadyAPI**-Abhängigkeiten mit `yield` verwenden, indem Sie `with`- oder `async with`-Anweisungen innerhalb der Abhängigkeits-Funktion verwenden:
+Sie können solche auch innerhalb von **readyapi**-Abhängigkeiten mit `yield` verwenden, indem Sie `with`- oder `async with`-Anweisungen innerhalb der Abhängigkeits-Funktion verwenden:
 
 {* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
 
@@ -239,10 +239,10 @@ Andere Möglichkeiten, einen Kontextmanager zu erstellen, sind:
 
 Verwenden Sie diese, um eine Funktion zu dekorieren, die ein einziges `yield` hat.
 
-Das ist es auch, was **ReadyAPI** intern für Abhängigkeiten mit `yield` verwendet.
+Das ist es auch, was **readyapi** intern für Abhängigkeiten mit `yield` verwendet.
 
-Aber Sie müssen die Dekoratoren nicht für ReadyAPI-Abhängigkeiten verwenden (und das sollten Sie auch nicht).
+Aber Sie müssen die Dekoratoren nicht für readyapi-Abhängigkeiten verwenden (und das sollten Sie auch nicht).
 
-ReadyAPI erledigt das intern für Sie.
+readyapi erledigt das intern für Sie.
 
 ///

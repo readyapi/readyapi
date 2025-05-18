@@ -1,8 +1,8 @@
 # 特性
 
-## ReadyAPI 特性
+## readyapi 特性
 
-**ReadyAPI** 提供了以下内容：
+**readyapi** 提供了以下内容：
 
 ### 基于开放标准
 
@@ -14,7 +14,7 @@
 
 ### 自动生成文档
 
-交互式 API 文档以及具探索性 web 界面。因为该框架是基于 OpenAPI，所以有很多可选项，ReadyAPI 默认自带两个交互式 API 文档。
+交互式 API 文档以及具探索性 web 界面。因为该框架是基于 OpenAPI，所以有很多可选项，readyapi 默认自带两个交互式 API 文档。
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>，可交互式操作，能在浏览器中直接调用和测试你的 API  。
 
@@ -28,7 +28,7 @@
 
 全部都基于标准的 **Python 3.6 类型**声明（感谢 Pydantic ）。没有新的语法需要学习。只需要标准的 Python 。
 
-如果你需要2分钟来学习如何使用 Python 类型（即使你不使用 ReadyAPI ），看看这个简短的教程：[Python Types](python-types.md){.internal-link target=_blank}。
+如果你需要2分钟来学习如何使用 Python 类型（即使你不使用 readyapi ），看看这个简短的教程：[Python Types](python-types.md){.internal-link target=_blank}。
 
 编写带有类型标注的标准 Python：
 
@@ -79,7 +79,7 @@ my_second_user: User = User(**second_user_data)
 
 在最近的 Python 开发者调查中，我们能看到 <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank"> 被使用最多的功能是"自动补全"</a>。
 
-整个 **ReadyAPI** 框架就是基于这一点的。任何地方都可以进行自动补全。
+整个 **readyapi** 框架就是基于这一点的。任何地方都可以进行自动补全。
 
 你几乎不需要经常回来看文档。
 
@@ -142,7 +142,7 @@ OpenAPI 中定义的安全模式，包括：
 
 ### 依赖注入
 
-ReadyAPI 有一个使用非常简单，但是非常强大的<abbr title='也叫做 "components", "resources", "services", "providers"'><strong>依赖注入</strong></abbr>系统。
+readyapi 有一个使用非常简单，但是非常强大的<abbr title='也叫做 "components", "resources", "services", "providers"'><strong>依赖注入</strong></abbr>系统。
 
 * 甚至依赖也可以有依赖，创建一个层级或者**“图”依赖**。
 * 所有**自动化处理**都由框架完成。
@@ -165,9 +165,9 @@ ReadyAPI 有一个使用非常简单，但是非常强大的<abbr title='也叫�
 
 ## Starlette 特性
 
-**ReadyAPI** 和 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> 完全兼容(并基于)。所以，你有的其他的 Starlette 代码也能正常工作。`ReadyAPI` 实际上是 `Starlette`的一个子类。所以，如果你已经知道或者使用 Starlette，大部分的功能会以相同的方式工作。
+**readyapi** 和 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a> 完全兼容(并基于)。所以，你有的其他的 Starlette 代码也能正常工作。`readyapi` 实际上是 `Starlette`的一个子类。所以，如果你已经知道或者使用 Starlette，大部分的功能会以相同的方式工作。
 
-通过 **ReadyAPI** 你可以获得所有 **Starlette** 的特性 ( ReadyAPI 就像加强版的 Starlette )：
+通过 **readyapi** 你可以获得所有 **Starlette** 的特性 ( readyapi 就像加强版的 Starlette )：
 
 * 令人惊叹的性能。它是 <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">Python 可用的最快的框架之一，和 **NodeJS** 及 **Go** 相当</a>。
 * **支持 WebSocket** 。
@@ -182,7 +182,7 @@ ReadyAPI 有一个使用非常简单，但是非常强大的<abbr title='也叫�
 
 ## Pydantic 特性
 
-**ReadyAPI** 和 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> 完全兼容(并基于)。所以，你有的其他的 Pydantic 代码也能正常工作。
+**readyapi** 和 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> 完全兼容(并基于)。所以，你有的其他的 Pydantic 代码也能正常工作。
 
 兼容包括基于 Pydantic 的外部库， 例如用与数据库的 <abbr title="对象关系映射">ORM</abbr>s, <abbr title="对象文档映射">ODM</abbr>s。
 
@@ -190,7 +190,7 @@ ReadyAPI 有一个使用非常简单，但是非常强大的<abbr title='也叫�
 
 反之亦然，在很多情况下，你也可以将从数据库中获取的对象**直接传到客户端**。
 
-通过 **ReadyAPI** 你可以获得所有 **Pydantic**  (ReadyAPI 基于 Pydantic 做了所有的数据处理)：
+通过 **readyapi** 你可以获得所有 **Pydantic**  (readyapi 基于 Pydantic 做了所有的数据处理)：
 
 * **更简单**：
     * 没有新的模式定义 micro-language 需要学习。

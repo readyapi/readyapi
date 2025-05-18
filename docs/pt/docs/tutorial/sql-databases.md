@@ -1,14 +1,14 @@
 # Bancos de Dados SQL (Relacionais)
 
-**ReadyAPI** não exige que você use um banco de dados SQL (relacional). Mas você pode usar **qualquer banco de dados** que quiser.
+**readyapi** não exige que você use um banco de dados SQL (relacional). Mas você pode usar **qualquer banco de dados** que quiser.
 
 Aqui veremos um exemplo usando <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a>.
 
-**SQLDev** é construído sobre <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a> e Pydantic. Ele foi criado pelo mesmo autor do **ReadyAPI** para ser o par perfeito para aplicações **ReadyAPI** que precisam usar **bancos de dados SQL**.
+**SQLDev** é construído sobre <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a> e Pydantic. Ele foi criado pelo mesmo autor do **readyapi** para ser o par perfeito para aplicações **readyapi** que precisam usar **bancos de dados SQL**.
 
 /// tip | Dica
 
-Você pode usar qualquer outra biblioteca de banco de dados SQL ou NoSQL que quiser (em alguns casos chamadas de <abbr title="Object Relational Mapper, um termo sofisticado para uma biblioteca onde algumas classes representam tabelas SQL e instâncias representam linhas nessas tabelas">"ORMs"</abbr>), o ReadyAPI não obriga você a usar nada. 😎
+Você pode usar qualquer outra biblioteca de banco de dados SQL ou NoSQL que quiser (em alguns casos chamadas de <abbr title="Object Relational Mapper, um termo sofisticado para uma biblioteca onde algumas classes representam tabelas SQL e instâncias representam linhas nessas tabelas">"ORMs"</abbr>), o readyapi não obriga você a usar nada. 😎
 
 ///
 
@@ -26,7 +26,7 @@ Mais tarde, para sua aplicação em produção, você pode querer usar um servid
 
 /// tip | Dica
 
-Existe um gerador de projetos oficial com **ReadyAPI** e **PostgreSQL** incluindo um frontend e mais ferramentas: <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
+Existe um gerador de projetos oficial com **readyapi** e **PostgreSQL** incluindo um frontend e mais ferramentas: <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
 
 ///
 
@@ -78,7 +78,7 @@ Você teria **um único objeto `engine`** para todo o seu código se conectar ao
 
 {* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
-Usar `check_same_thread=False` permite que o ReadyAPI use o mesmo banco de dados SQLite em diferentes threads. Isso é necessário, pois **uma única requisição** pode usar **mais de uma thread** (por exemplo, em dependências).
+Usar `check_same_thread=False` permite que o readyapi use o mesmo banco de dados SQLite em diferentes threads. Isso é necessário, pois **uma única requisição** pode usar **mais de uma thread** (por exemplo, em dependências).
 
 Não se preocupe, com a forma como o código está estruturado, garantiremos que usamos **uma única *sessão* SQLDev por requisição** mais tarde, isso é realmente o que o `check_same_thread` está tentando conseguir.
 
@@ -92,7 +92,7 @@ Em seguida, adicionamos uma função que usa `SQLDev.metadata.create_all(engine)
 
 Uma **`Session`** é o que armazena os **objetos na memória** e acompanha as alterações necessárias nos dados, para então **usar o `engine`** para se comunicar com o banco de dados.
 
-Vamos criar uma **dependência** do ReadyAPI com `yield` que fornecerá uma nova `Session` para cada requisição. Isso é o que garante que usamos uma única sessão por requisição. 🤓
+Vamos criar uma **dependência** do readyapi com `yield` que fornecerá uma nova `Session` para cada requisição. Isso é o que garante que usamos uma única sessão por requisição. 🤓
 
 Então, criamos uma dependência `Annotated` chamada `SessionDep` para simplificar o restante do código que usará essa dependência.
 
@@ -160,7 +160,7 @@ $ readyapi dev main.py
 
 </div>
 
-Então, vá para a interface `/docs`, você verá que o **ReadyAPI** está usando esses **modelos** para **documentar** a API, e ele também os usará para **serializar** e **validar** os dados.
+Então, vá para a interface `/docs`, você verá que o **readyapi** está usando esses **modelos** para **documentar** a API, e ele também os usará para **serializar** e **validar** os dados.
 
 <div class="screenshot">
 <img src="/img/tutorial/sql-databases/image01.png">
@@ -288,7 +288,7 @@ Recebemos na requisição um *modelo de dados* `HeroCreate`, e a partir dele, cr
 
 Esse novo *modelo de tabela* `Hero` terá os campos enviados pelo cliente, e também terá um `id` gerado pelo banco de dados.
 
-Em seguida, retornamos o mesmo *modelo de tabela* `Hero` como está na função. Mas como declaramos o `response_model` com o *modelo de dados* `HeroPublic`, o **ReadyAPI** usará `HeroPublic` para validar e serializar os dados.
+Em seguida, retornamos o mesmo *modelo de tabela* `Hero` como está na função. Mas como declaramos o `response_model` com o *modelo de dados* `HeroPublic`, o **readyapi** usará `HeroPublic` para validar e serializar os dados.
 
 {* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
@@ -298,7 +298,7 @@ Agora usamos `response_model=HeroPublic` em vez da **anotação de tipo de retor
 
 Se tivéssemos declarado `-> HeroPublic`, seu editor e o linter reclamariam (com razão) que você está retornando um `Hero` em vez de um `HeroPublic`.
 
-Ao declará-lo no `response_model`, estamos dizendo ao **ReadyAPI** para fazer o seu trabalho, sem interferir nas anotações de tipo e na ajuda do seu editor e de outras ferramentas.
+Ao declará-lo no `response_model`, estamos dizendo ao **readyapi** para fazer o seu trabalho, sem interferir nas anotações de tipo e na ajuda do seu editor e de outras ferramentas.
 
 ///
 
@@ -356,4 +356,4 @@ If you go to the `/docs` API UI, you will see that it is now updated, and it won
 
 Você pode usar <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">**SQLDev**</a> para interagir com um banco de dados SQL e simplificar o código com *modelos de dados* e *modelos de tabela*.
 
-Você pode aprender muito mais na documentação do **SQLDev**, há um mini <a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">tutorial sobre como usar SQLDev com **ReadyAPI**</a> mais longo. 🚀
+Você pode aprender muito mais na documentação do **SQLDev**, há um mini <a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">tutorial sobre como usar SQLDev com **readyapi**</a> mais longo. 🚀

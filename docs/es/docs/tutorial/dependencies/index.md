@@ -1,14 +1,14 @@
 # Dependencias
 
-**ReadyAPI** tiene un sistema de **<abbr title="también conocido como componentes, recursos, proveedores, servicios, inyectables">Inyección de Dependencias</abbr>** muy poderoso pero intuitivo.
+**readyapi** tiene un sistema de **<abbr title="también conocido como componentes, recursos, proveedores, servicios, inyectables">Inyección de Dependencias</abbr>** muy poderoso pero intuitivo.
 
-Está diseñado para ser muy simple de usar, y para hacer que cualquier desarrollador integre otros componentes con **ReadyAPI** de forma muy sencilla.
+Está diseñado para ser muy simple de usar, y para hacer que cualquier desarrollador integre otros componentes con **readyapi** de forma muy sencilla.
 
 ## Qué es la "Inyección de Dependencias"
 
 **"Inyección de Dependencias"** significa, en programación, que hay una manera para que tu código (en este caso, tus *path operation functions*) declare las cosas que necesita para funcionar y utilizar: "dependencias".
 
-Y luego, ese sistema (en este caso **ReadyAPI**) se encargará de hacer lo que sea necesario para proporcionar a tu código esas dependencias necesarias ("inyectar" las dependencias).
+Y luego, ese sistema (en este caso **readyapi**) se encargará de hacer lo que sea necesario para proporcionar a tu código esas dependencias necesarias ("inyectar" las dependencias).
 
 Esto es muy útil cuando necesitas:
 
@@ -53,11 +53,11 @@ Y luego solo devuelve un `dict` que contiene esos valores.
 
 /// info | Información
 
-ReadyAPI agregó soporte para `Annotated` (y comenzó a recomendarlo) en la versión 0.95.0.
+readyapi agregó soporte para `Annotated` (y comenzó a recomendarlo) en la versión 0.95.0.
 
 Si tienes una versión anterior, obtendrás errores al intentar usar `Annotated`.
 
-Asegúrate de [Actualizar la versión de ReadyAPI](../../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} al menos a la 0.95.1 antes de usar `Annotated`.
+Asegúrate de [Actualizar la versión de readyapi](../../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} al menos a la 0.95.1 antes de usar `Annotated`.
 
 ///
 
@@ -87,7 +87,7 @@ Verás qué otras "cosas", además de funciones, pueden usarse como dependencias
 
 ///
 
-Cada vez que llega un nuevo request, **ReadyAPI** se encargará de:
+Cada vez que llega un nuevo request, **readyapi** se encargará de:
 
 * Llamar a tu función de dependencia ("dependable") con los parámetros correctos.
 * Obtener el resultado de tu función.
@@ -104,13 +104,13 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-De esta manera escribes código compartido una vez y **ReadyAPI** se encarga de llamarlo para tus *path operations*.
+De esta manera escribes código compartido una vez y **readyapi** se encarga de llamarlo para tus *path operations*.
 
 /// check | Revisa
 
-Nota que no tienes que crear una clase especial y pasarla en algún lugar a **ReadyAPI** para "registrarla" o algo similar.
+Nota que no tienes que crear una clase especial y pasarla en algún lugar a **readyapi** para "registrarla" o algo similar.
 
-Solo la pasas a `Depends` y **ReadyAPI** sabe cómo hacer el resto.
+Solo la pasas a `Depends` y **readyapi** sabe cómo hacer el resto.
 
 ///
 
@@ -130,9 +130,9 @@ Pero como estamos usando `Annotated`, podemos almacenar ese valor `Annotated` en
 
 /// tip | Consejo
 
-Esto es solo Python estándar, se llama un "alias de tipo", en realidad no es específico de **ReadyAPI**.
+Esto es solo Python estándar, se llama un "alias de tipo", en realidad no es específico de **readyapi**.
 
-Pero porque **ReadyAPI** está basado en los estándares de Python, incluido `Annotated`, puedes usar este truco en tu código. 😎
+Pero porque **readyapi** está basado en los estándares de Python, incluido `Annotated`, puedes usar este truco en tu código. 😎
 
 ///
 
@@ -142,13 +142,13 @@ Esto será especialmente útil cuando lo uses en una **gran base de código** do
 
 ## Usar `async` o no usar `async`
 
-Como las dependencias también serán llamadas por **ReadyAPI** (lo mismo que tus *path operation functions*), las mismas reglas aplican al definir tus funciones.
+Como las dependencias también serán llamadas por **readyapi** (lo mismo que tus *path operation functions*), las mismas reglas aplican al definir tus funciones.
 
 Puedes usar `async def` o `def` normal.
 
 Y puedes declarar dependencias con `async def` dentro de *path operation functions* normales `def`, o dependencias `def` dentro de *path operation functions* `async def`, etc.
 
-No importa. **ReadyAPI** sabrá qué hacer.
+No importa. **readyapi** sabrá qué hacer.
 
 /// note | Nota
 
@@ -166,13 +166,13 @@ Así, la documentación interactiva tendrá toda la información de estas depend
 
 ## Uso simple
 
-Si lo ves, las *path operation functions* se declaran para ser usadas siempre que un *path* y una *operación* coincidan, y luego **ReadyAPI** se encarga de llamar la función con los parámetros correctos, extrayendo los datos del request.
+Si lo ves, las *path operation functions* se declaran para ser usadas siempre que un *path* y una *operación* coincidan, y luego **readyapi** se encarga de llamar la función con los parámetros correctos, extrayendo los datos del request.
 
 En realidad, todos (o la mayoría) de los frameworks web funcionan de esta misma manera.
 
-Nunca llamas directamente a esas funciones. Son llamadas por tu framework (en este caso, **ReadyAPI**).
+Nunca llamas directamente a esas funciones. Son llamadas por tu framework (en este caso, **readyapi**).
 
-Con el sistema de Inyección de Dependencias, también puedes decirle a **ReadyAPI** que tu *path operation function* también "depende" de algo más que debe ejecutarse antes que tu *path operation function*, y **ReadyAPI** se encargará de ejecutarlo e "inyectar" los resultados.
+Con el sistema de Inyección de Dependencias, también puedes decirle a **readyapi** que tu *path operation function* también "depende" de algo más que debe ejecutarse antes que tu *path operation function*, y **readyapi** se encargará de ejecutarlo e "inyectar" los resultados.
 
 Otros términos comunes para esta misma idea de "inyección de dependencias" son:
 
@@ -182,7 +182,7 @@ Otros términos comunes para esta misma idea de "inyección de dependencias" son
 * inyectables
 * componentes
 
-## Plug-ins de **ReadyAPI**
+## Plug-ins de **readyapi**
 
 Las integraciones y "plug-ins" pueden construirse usando el sistema de **Inyección de Dependencias**. Pero, de hecho, en realidad **no hay necesidad de crear "plug-ins"**, ya que al usar dependencias es posible declarar una cantidad infinita de integraciones e interacciones que se vuelven disponibles para tus *path operation functions*.
 
@@ -190,9 +190,9 @@ Y las dependencias se pueden crear de una manera muy simple e intuitiva que te p
 
 Verás ejemplos de esto en los próximos capítulos, sobre bases de datos relacionales y NoSQL, seguridad, etc.
 
-## Compatibilidad de **ReadyAPI**
+## Compatibilidad de **readyapi**
 
-La simplicidad del sistema de inyección de dependencias hace que **ReadyAPI** sea compatible con:
+La simplicidad del sistema de inyección de dependencias hace que **readyapi** sea compatible con:
 
 * todas las bases de datos relacionales
 * bases de datos NoSQL
@@ -247,4 +247,4 @@ paying_user --> pro_items
 
 Todas estas dependencias, al declarar sus requisitos, también añaden parámetros, validaciones, etc. a tus *path operations*.
 
-**ReadyAPI** se encargará de agregar todo al esquema de OpenAPI, para que se muestre en los sistemas de documentación interactiva.
+**readyapi** se encargará de agregar todo al esquema de OpenAPI, para que se muestre en los sistemas de documentación interactiva.

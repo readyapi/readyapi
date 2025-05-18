@@ -38,7 +38,7 @@ Eğer bu örneği çalıştırıp tarayıcınızda <a href="http://127.0.0.1:800
 
 Dikkatinizi çekerim ki, fonksiyonunuzun aldığı (ve döndürdüğü) değer olan `3` bir string `"3"` değil aksine bir Python `int`'idir.
 
-Bu tanımlamayla birlikte, **ReadyAPI** size otomatik istek <abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">"ayrıştırma"</abbr> özelliği sağlar.
+Bu tanımlamayla birlikte, **readyapi** size otomatik istek <abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">"ayrıştırma"</abbr> özelliği sağlar.
 
 ///
 
@@ -69,7 +69,7 @@ Aynı hata <a href="http://127.0.0.1:8000/items/4.2" class="external-link" targe
 
 /// check | Ek bilgi
 
-Böylece, aynı Python tip tanımlaması ile birlikte, **ReadyAPI** veri doğrulama özelliği sağlar.
+Böylece, aynı Python tip tanımlaması ile birlikte, **readyapi** veri doğrulama özelliği sağlar.
 
 Dikkatinizi çekerim ki, karşılaştığınız hata, doğrulamanın geçersiz olduğu mutlak noktayı da açık bir şekilde belirtiyor.
 
@@ -85,7 +85,7 @@ Ayrıca, tarayıcınızı <a href="http://127.0.0.1:8000/docs" class="external-l
 
 /// check | Ek bilgi
 
-Üstelik, sadece aynı Python tip tanımlaması ile, **ReadyAPI** size otomatik ve interaktif (Swagger UI ile entegre) bir dokümantasyon sağlar.
+Üstelik, sadece aynı Python tip tanımlaması ile, **readyapi** size otomatik ve interaktif (Swagger UI ile entegre) bir dokümantasyon sağlar.
 
 Dikkatinizi çekerim ki, yol parametresi integer olarak tanımlanmıştır.
 
@@ -95,7 +95,7 @@ Dikkatinizi çekerim ki, yol parametresi integer olarak tanımlanmıştır.
 
 Oluşturulan şema <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md" class="external-link" target="_blank">OpenAPI</a> standardına uygun olduğu için birçok uyumlu araç mevcuttur.
 
-Bu sayede, **ReadyAPI**'ın bizzat kendisi <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> sayfasından erişebileceğiniz alternatif (ReDoc kullanan) bir API dokümantasyonu sağlar:
+Bu sayede, **readyapi**'ın bizzat kendisi <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> sayfasından erişebileceğiniz alternatif (ReDoc kullanan) bir API dokümantasyonu sağlar:
 
 <img src="/img/tutorial/path-params/image02.png">
 
@@ -218,7 +218,7 @@ Sonuç olarak, oluşturmak istediğin URL `/files/home/johndoe/myfile.txt` gibi 
 
 Test etmesi ve tanımlaması zor senaryolara sebebiyet vereceğinden dolayı OpenAPI, *yol* barındıran *yol parametrelerini* tanımlayacak bir çözüm sunmuyor.
 
-Ancak bunu, Starlette kütüphanesinin dahili araçlarından birini kullanarak **ReadyAPI**'da gerçekleştirebilirsiniz.
+Ancak bunu, Starlette kütüphanesinin dahili araçlarından birini kullanarak **readyapi**'da gerçekleştirebilirsiniz.
 
 Parametrenin bir yol içermesi gerektiğini belirten herhangi bir doküman eklemememize rağmen dokümanlar yine de çalışacaktır.
 
@@ -246,7 +246,7 @@ Bu durumda, URL, `files` ile `home` arasında iki eğik çizgiye (`//`) sahip ol
 
 ## Özet
 
-**ReadyAPI** ile kısa, sezgisel ve standart Python tip tanımlamaları kullanarak şunları elde edersiniz:
+**readyapi** ile kısa, sezgisel ve standart Python tip tanımlamaları kullanarak şunları elde edersiniz:
 
 * Editör desteği: hata denetimi, otomatik tamamlama, vb.
 * Veri "<abbr title="HTTP isteği ile birlikte gelen string'i Python verisine dönüştürme">dönüştürme</abbr>"
@@ -255,4 +255,4 @@ Bu durumda, URL, `files` ile `home` arasında iki eğik çizgiye (`//`) sahip ol
 
 Ve sadece, bunları bir kez tanımlamanız yeterli.
 
-Diğer frameworkler ile karşılaştırıldığında (ham performans dışında), üstte anlatılan durum muhtemelen **ReadyAPI**'ın göze çarpan başlıca avantajıdır.
+Diğer frameworkler ile karşılaştırıldığında (ham performans dışında), üstte anlatılan durum muhtemelen **readyapi**'ın göze çarpan başlıca avantajıdır.

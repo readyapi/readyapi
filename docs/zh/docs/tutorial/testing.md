@@ -1,10 +1,10 @@
 # 测试
 
-感谢 <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>，测试**ReadyAPI** 应用轻松又愉快。
+感谢 <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>，测试**readyapi** 应用轻松又愉快。
 
 它基于 <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>， 而HTTPX又是基于Requests设计的，所以很相似且易懂。
 
-有了它，你可以直接与**ReadyAPI**一起使用 <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a>。
+有了它，你可以直接与**readyapi**一起使用 <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a>。
 
 ## 使用 `TestClient`
 
@@ -18,7 +18,7 @@
 
 导入 `TestClient`.
 
-通过传入你的**ReadyAPI**应用创建一个 `TestClient` 。
+通过传入你的**readyapi**应用创建一个 `TestClient` 。
 
 创建名字以 `test_` 开头的函数（这是标准的 `pytest` 约定）。
 
@@ -42,13 +42,13 @@
 
 你也可以用 `from starlette.testclient import TestClient`。
 
-**ReadyAPI** 提供了和 `starlette.testclient` 一样的 `readyapi.testclient`，只是为了方便开发者。但它直接来自Starlette。
+**readyapi** 提供了和 `starlette.testclient` 一样的 `readyapi.testclient`，只是为了方便开发者。但它直接来自Starlette。
 
 ///
 
 /// tip | 提示
 
-除了发送请求之外，如果你还想测试时在ReadyAPI应用中调用 `async` 函数（例如异步数据库函数）， 可以在高级教程中看下 [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} 。
+除了发送请求之外，如果你还想测试时在readyapi应用中调用 `async` 函数（例如异步数据库函数）， 可以在高级教程中看下 [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} 。
 
 ///
 
@@ -56,9 +56,9 @@
 
 在实际应用中，你可能会把你的测试放在另一个文件里。
 
-您的**ReadyAPI**应用程序也可能由一些文件/模块组成等等。
+您的**readyapi**应用程序也可能由一些文件/模块组成等等。
 
-### **ReadyAPI** app 文件
+### **readyapi** app 文件
 
 假设你有一个像 [更大的应用](bigger-applications.md){.internal-link target=_blank} 中所描述的文件结构:
 
@@ -69,7 +69,7 @@
 │   └── main.py
 ```
 
-在 `main.py` 文件中你有一个 **ReadyAPI** app:
+在 `main.py` 文件中你有一个 **readyapi** app:
 
 
 {* ../../docs_src/app_testing/main.py *}
@@ -96,7 +96,7 @@
 
 现在让我们扩展这个例子，并添加更多细节，看下如何测试不同部分。
 
-### 扩展后的 **ReadyAPI** app 文件
+### 扩展后的 **readyapi** app 文件
 
 让我们继续之前的文件结构：
 
@@ -108,7 +108,7 @@
 │   └── test_main.py
 ```
 
-假设现在包含**ReadyAPI** app的文件 `main.py`  有些其他**路径操作**。
+假设现在包含**readyapi** app的文件 `main.py`  有些其他**路径操作**。
 
 有个 `GET` 操作会返回错误。
 

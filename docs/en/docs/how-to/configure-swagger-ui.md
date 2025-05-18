@@ -2,11 +2,11 @@
 
 You can configure some extra <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">Swagger UI parameters</a>.
 
-To configure them, pass the `swagger_ui_parameters` argument when creating the `ReadyAPI()` app object or to the `get_swagger_ui_html()` function.
+To configure them, pass the `swagger_ui_parameters` argument when creating the `readyapi()` app object or to the `get_swagger_ui_html()` function.
 
 `swagger_ui_parameters` receives a dictionary with the configurations passed to Swagger UI directly.
 
-ReadyAPI converts the configurations to **JSON** to make them compatible with JavaScript, as that's what Swagger UI needs.
+readyapi converts the configurations to **JSON** to make them compatible with JavaScript, as that's what Swagger UI needs.
 
 ## Disable Syntax Highlighting
 
@@ -36,7 +36,7 @@ That configuration would change the syntax highlighting color theme:
 
 ## Change Default Swagger UI Parameters
 
-ReadyAPI includes some default configuration parameters appropriate for most of the use cases.
+readyapi includes some default configuration parameters appropriate for most of the use cases.
 
 It includes these default configurations:
 
@@ -56,7 +56,7 @@ To see all the other possible configurations you can use, read the official <a h
 
 Swagger UI also allows other configurations to be **JavaScript-only** objects (for example, JavaScript functions).
 
-ReadyAPI also includes these JavaScript-only `presets` settings:
+readyapi also includes these JavaScript-only `presets` settings:
 
 ```JavaScript
 presets: [

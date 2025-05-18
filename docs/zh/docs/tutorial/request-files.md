@@ -34,13 +34,13 @@
 
 /// tip | 提示
 
-声明文件体必须使用 `File`，否则，ReadyAPI 会把该参数当作查询参数或请求体（JSON）参数。
+声明文件体必须使用 `File`，否则，readyapi 会把该参数当作查询参数或请求体（JSON）参数。
 
 ///
 
 文件作为「表单数据」上传。
 
-如果把*路径操作函数*参数的类型声明为 `bytes`，**ReadyAPI** 将以 `bytes` 形式读取和接收文件内容。
+如果把*路径操作函数*参数的类型声明为 `bytes`，**readyapi** 将以 `bytes` 形式读取和接收文件内容。
 
 这种方式把文件的所有内容都存储在内存里，适用于小型文件。
 
@@ -55,7 +55,7 @@
 `UploadFile` 与 `bytes` 相比有更多优势：
 
 * 使用 `spooled` 文件：
-    * 存储在内存的文件超出最大上限时，ReadyAPI 会把文件存入磁盘；
+    * 存储在内存的文件超出最大上限时，readyapi 会把文件存入磁盘；
 * 这种方式更适于处理图像、视频、二进制文件等大型文件，好处是不会占用所有内存；
 * 可获取上传文件的元数据；
 * 自带 <a href="https://docs.python.org/zh-cn/3/glossary.html#term-file-like-object" class="external-link" target="_blank">file-like</a> `async` 接口；
@@ -94,13 +94,13 @@ contents = myfile.file.read()
 
 /// note | `async` 技术细节
 
-使用 `async` 方法时，**ReadyAPI** 在线程池中执行文件方法，并 `await` 操作完成。
+使用 `async` 方法时，**readyapi** 在线程池中执行文件方法，并 `await` 操作完成。
 
 ///
 
 /// note | Starlette 技术细节
 
-**ReadyAPI** 的 `UploadFile` 直接继承自 **Starlette** 的 `UploadFile`，但添加了一些必要功能，使之与 **Pydantic** 及 ReadyAPI 的其它部件兼容。
+**readyapi** 的 `UploadFile` 直接继承自 **Starlette** 的 `UploadFile`，但添加了一些必要功能，使之与 **Pydantic** 及 readyapi 的其它部件兼容。
 
 ///
 
@@ -108,13 +108,13 @@ contents = myfile.file.read()
 
 与 JSON 不同，HTML 表单（`<form></form>`）向服务器发送数据通常使用「特殊」的编码。
 
-**ReadyAPI** 要确保从正确的位置读取数据，而不是读取 JSON。
+**readyapi** 要确保从正确的位置读取数据，而不是读取 JSON。
 
 /// note | 技术细节
 
 不包含文件时，表单数据一般用 `application/x-www-form-urlencoded`「媒体类型」编码。
 
-但表单包含文件时，编码为 `multipart/form-data`。使用了 `File`，**ReadyAPI** 就知道要从请求体的正确位置获取文件。
+但表单包含文件时，编码为 `multipart/form-data`。使用了 `File`，**readyapi** 就知道要从请求体的正确位置获取文件。
 
 编码和表单字段详见 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/POST" class="external-link" target="_blank"><abbr title="Mozilla Developer Network">MDN</abbr> Web 文档的 <code>POST </code></a> 小节。
 
@@ -124,7 +124,7 @@ contents = myfile.file.read()
 
 可在一个*路径操作*中声明多个 `File` 和 `Form` 参数，但不能同时声明要接收 JSON 的 `Body` 字段。因为此时请求体的编码是 `multipart/form-data`，不是 `application/json`。
 
-这不是 **ReadyAPI** 的问题，而是 HTTP 协议的规定。
+这不是 **readyapi** 的问题，而是 HTTP 协议的规定。
 
 ///
 
@@ -142,7 +142,7 @@ contents = myfile.file.read()
 
 ## 多文件上传
 
-ReadyAPI 支持同时上传多个文件。
+readyapi 支持同时上传多个文件。
 
 可用同一个「表单字段」发送含多个文件的「表单数据」。
 
@@ -157,7 +157,7 @@ ReadyAPI 支持同时上传多个文件。
 
 也可以使用 `from starlette.responses import HTMLResponse`。
 
-`readyapi.responses` 其实与 `starlette.responses` 相同，只是为了方便开发者调用。实际上，大多数 **ReadyAPI** 的响应都直接从 Starlette 调用。
+`readyapi.responses` 其实与 `starlette.responses` 相同，只是为了方便开发者调用。实际上，大多数 **readyapi** 的响应都直接从 Starlette 调用。
 
 ///
 

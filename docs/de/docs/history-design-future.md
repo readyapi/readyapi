@@ -1,6 +1,6 @@
 # Geschichte, Design und Zukunft
 
-Vor einiger Zeit fragte <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">ein **ReadyAPI**-Benutzer</a>:
+Vor einiger Zeit fragte <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">ein **readyapi**-Benutzer</a>:
 
 > Was ist die Geschichte dieses Projekts? Es scheint, als wäre es in ein paar Wochen aus dem Nichts zu etwas Großartigem geworden [...]
 
@@ -12,17 +12,17 @@ Ich habe seit mehreren Jahren APIs mit komplexen Anforderungen (maschinelles Ler
 
 Dabei musste ich viele Alternativen untersuchen, testen und nutzen.
 
-Die Geschichte von **ReadyAPI** ist zu einem großen Teil die Geschichte seiner Vorgänger.
+Die Geschichte von **readyapi** ist zu einem großen Teil die Geschichte seiner Vorgänger.
 
 Wie im Abschnitt [Alternativen](alternatives.md){.internal-link target=_blank} gesagt:
 
 <blockquote markdown="1">
 
-**ReadyAPI** würde ohne die frühere Arbeit anderer nicht existieren.
+**readyapi** würde ohne die frühere Arbeit anderer nicht existieren.
 
 Es wurden zuvor viele Tools entwickelt, die als Inspiration für seine Entwicklung dienten.
 
-Ich habe die Schaffung eines neuen Frameworks viele Jahre lang vermieden. Zuerst habe ich versucht, alle von **ReadyAPI** abgedeckten Funktionen mithilfe vieler verschiedener Frameworks, Plugins und Tools zu lösen.
+Ich habe die Schaffung eines neuen Frameworks viele Jahre lang vermieden. Zuerst habe ich versucht, alle von **readyapi** abgedeckten Funktionen mithilfe vieler verschiedener Frameworks, Plugins und Tools zu lösen.
 
 Aber irgendwann gab es keine andere Möglichkeit, als etwas zu schaffen, das all diese Funktionen bereitstellte, die besten Ideen früherer Tools aufnahm und diese auf die bestmögliche Weise kombinierte, wobei Sprachfunktionen verwendet wurden, die vorher noch nicht einmal verfügbar waren (Python 3.6+ Typhinweise).
 
@@ -36,17 +36,17 @@ Es war beispielsweise klar, dass es idealerweise auf Standard-Python-Typhinweise
 
 Der beste Ansatz bestand außerdem darin, bereits bestehende Standards zu nutzen.
 
-Bevor ich also überhaupt angefangen habe, **ReadyAPI** zu schreiben, habe ich mehrere Monate damit verbracht, die Spezifikationen für OpenAPI, JSON Schema, OAuth2, usw. zu studieren und deren Beziehungen, Überschneidungen und Unterschiede zu verstehen.
+Bevor ich also überhaupt angefangen habe, **readyapi** zu schreiben, habe ich mehrere Monate damit verbracht, die Spezifikationen für OpenAPI, JSON Schema, OAuth2, usw. zu studieren und deren Beziehungen, Überschneidungen und Unterschiede zu verstehen.
 
 ## Design
 
-Dann habe ich einige Zeit damit verbracht, die Entwickler-„API“ zu entwerfen, die ich als Benutzer haben wollte (als Entwickler, welcher ReadyAPI verwendet).
+Dann habe ich einige Zeit damit verbracht, die Entwickler-„API“ zu entwerfen, die ich als Benutzer haben wollte (als Entwickler, welcher readyapi verwendet).
 
 Ich habe mehrere Ideen in den beliebtesten Python-Editoren getestet: PyCharm, VS Code, Jedi-basierte Editoren.
 
 Laut der letzten <a href="https://www.jetbrains.com/research/python-developers-survey-2018/#development-tools" class="external-link" target="_blank">Python-Entwickler-Umfrage</a>, deckt das etwa 80 % der Benutzer ab.
 
-Das bedeutet, dass **ReadyAPI** speziell mit den Editoren getestet wurde, die von 80 % der Python-Entwickler verwendet werden. Und da die meisten anderen Editoren in der Regel ähnlich funktionieren, sollten alle diese Vorteile für praktisch alle Editoren funktionieren.
+Das bedeutet, dass **readyapi** speziell mit den Editoren getestet wurde, die von 80 % der Python-Entwickler verwendet werden. Und da die meisten anderen Editoren in der Regel ähnlich funktionieren, sollten alle diese Vorteile für praktisch alle Editoren funktionieren.
 
 Auf diese Weise konnte ich die besten Möglichkeiten finden, die Codeverdoppelung so weit wie möglich zu reduzieren, überall Autovervollständigung, Typ- und Fehlerprüfungen, usw. zu gewährleisten.
 
@@ -62,18 +62,18 @@ Während der Entwicklung habe ich auch zu <a href="https://www.starlette.io/" cl
 
 ## Entwicklung
 
-Als ich mit der Erstellung von **ReadyAPI** selbst begann, waren die meisten Teile bereits vorhanden, das Design definiert, die Anforderungen und Tools bereit und das Wissen über die Standards und Spezifikationen klar und frisch.
+Als ich mit der Erstellung von **readyapi** selbst begann, waren die meisten Teile bereits vorhanden, das Design definiert, die Anforderungen und Tools bereit und das Wissen über die Standards und Spezifikationen klar und frisch.
 
 ## Zukunft
 
-Zu diesem Zeitpunkt ist bereits klar, dass **ReadyAPI** mit seinen Ideen für viele Menschen nützlich ist.
+Zu diesem Zeitpunkt ist bereits klar, dass **readyapi** mit seinen Ideen für viele Menschen nützlich ist.
 
 Es wird gegenüber früheren Alternativen gewählt, da es für viele Anwendungsfälle besser geeignet ist.
 
-Viele Entwickler und Teams verlassen sich bei ihren Projekten bereits auf **ReadyAPI** (einschließlich mir und meinem Team).
+Viele Entwickler und Teams verlassen sich bei ihren Projekten bereits auf **readyapi** (einschließlich mir und meinem Team).
 
 Dennoch stehen uns noch viele Verbesserungen und Funktionen bevor.
 
-**ReadyAPI** hat eine große Zukunft vor sich.
+**readyapi** hat eine große Zukunft vor sich.
 
 Und [Ihre Hilfe](help-readyapi.md){.internal-link target=_blank} wird sehr geschätzt.

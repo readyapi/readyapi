@@ -1,6 +1,6 @@
 # 教學 - 使用者指南
 
-本教學將一步一步展示如何使用 **ReadyAPI** 及其大多數功能。
+本教學將一步一步展示如何使用 **readyapi** 及其大多數功能。
 
 每個部分都是在前一部分的基礎上逐步建置的，但內容結構是按主題分開的，因此你可以直接跳到任何特定的部分，解決你具體的 API 需求。
 
@@ -28,9 +28,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
+<font color="#3465A4">INFO    </font> Found importable readyapi app
 
- ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -38,7 +38,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -63,15 +63,15 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 **強烈建議**你編寫或複製程式碼、進行修改並在本地端運行。
 
-在編輯器中使用它，才能真正體會到 ReadyAPI 的好處，可以看到你只需編寫少量程式碼，以及所有的型別檢查、自動補齊等功能。
+在編輯器中使用它，才能真正體會到 readyapi 的好處，可以看到你只需編寫少量程式碼，以及所有的型別檢查、自動補齊等功能。
 
 ---
 
-## 安裝 ReadyAPI
+## 安裝 readyapi
 
-第一步是安裝 ReadyAPI。
+第一步是安裝 readyapi。
 
-確保你建立一個[虛擬環境](../virtual-environments.md){.internal-link target=_blank}，啟用它，然後**安裝 ReadyAPI**：
+確保你建立一個[虛擬環境](../virtual-environments.md){.internal-link target=_blank}，啟用它，然後**安裝 readyapi**：
 
 <div class="termy">
 

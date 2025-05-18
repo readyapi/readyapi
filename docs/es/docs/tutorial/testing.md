@@ -1,10 +1,10 @@
 # Testing
 
-Gracias a <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, escribir pruebas para aplicaciones de **ReadyAPI** es fácil y agradable.
+Gracias a <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, escribir pruebas para aplicaciones de **readyapi** es fácil y agradable.
 
 Está basado en <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>, que a su vez está diseñado basado en Requests, por lo que es muy familiar e intuitivo.
 
-Con él, puedes usar <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> directamente con **ReadyAPI**.
+Con él, puedes usar <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> directamente con **readyapi**.
 
 ## Usando `TestClient`
 
@@ -22,7 +22,7 @@ $ pip install httpx
 
 Importa `TestClient`.
 
-Crea un `TestClient` pasándole tu aplicación de **ReadyAPI**.
+Crea un `TestClient` pasándole tu aplicación de **readyapi**.
 
 Crea funciones con un nombre que comience con `test_` (esta es la convención estándar de `pytest`).
 
@@ -46,13 +46,13 @@ Esto te permite usar `pytest` directamente sin complicaciones.
 
 También podrías usar `from starlette.testclient import TestClient`.
 
-**ReadyAPI** proporciona el mismo `starlette.testclient` como `readyapi.testclient` solo por conveniencia para ti, el desarrollador. Pero proviene directamente de Starlette.
+**readyapi** proporciona el mismo `starlette.testclient` como `readyapi.testclient` solo por conveniencia para ti, el desarrollador. Pero proviene directamente de Starlette.
 
 ///
 
 /// tip | Consejo
 
-Si quieres llamar a funciones `async` en tus pruebas además de enviar solicitudes a tu aplicación ReadyAPI (por ejemplo, funciones asincrónicas de bases de datos), echa un vistazo a las [Pruebas Asincrónicas](../advanced/async-tests.md){.internal-link target=_blank} en el tutorial avanzado.
+Si quieres llamar a funciones `async` en tus pruebas además de enviar solicitudes a tu aplicación readyapi (por ejemplo, funciones asincrónicas de bases de datos), echa un vistazo a las [Pruebas Asincrónicas](../advanced/async-tests.md){.internal-link target=_blank} en el tutorial avanzado.
 
 ///
 
@@ -60,9 +60,9 @@ Si quieres llamar a funciones `async` en tus pruebas además de enviar solicitud
 
 En una aplicación real, probablemente tendrías tus pruebas en un archivo diferente.
 
-Y tu aplicación de **ReadyAPI** también podría estar compuesta de varios archivos/módulos, etc.
+Y tu aplicación de **readyapi** también podría estar compuesta de varios archivos/módulos, etc.
 
-### Archivo de aplicación **ReadyAPI**
+### Archivo de aplicación **readyapi**
 
 Digamos que tienes una estructura de archivos como se describe en [Aplicaciones Más Grandes](bigger-applications.md){.internal-link target=_blank}:
 
@@ -73,7 +73,7 @@ Digamos que tienes una estructura de archivos como se describe en [Aplicaciones 
 │   └── main.py
 ```
 
-En el archivo `main.py` tienes tu aplicación de **ReadyAPI**:
+En el archivo `main.py` tienes tu aplicación de **readyapi**:
 
 {* ../../docs_src/app_testing/main.py *}
 
@@ -99,7 +99,7 @@ Debido a que este archivo está en el mismo paquete, puedes usar importaciones r
 
 Ahora extiende este ejemplo y añade más detalles para ver cómo escribir pruebas para diferentes partes.
 
-### Archivo de aplicación **ReadyAPI** extendido
+### Archivo de aplicación **readyapi** extendido
 
 Continuemos con la misma estructura de archivos que antes:
 
@@ -111,7 +111,7 @@ Continuemos con la misma estructura de archivos que antes:
 │   └── test_main.py
 ```
 
-Digamos que ahora el archivo `main.py` con tu aplicación de **ReadyAPI** tiene algunas otras **path operations**.
+Digamos que ahora el archivo `main.py` con tu aplicación de **readyapi** tiene algunas otras **path operations**.
 
 Tiene una operación `GET` que podría devolver un error.
 

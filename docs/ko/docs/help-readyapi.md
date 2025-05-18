@@ -1,10 +1,10 @@
-# ReadyAPI 지원 - 도움 받기
+# readyapi 지원 - 도움 받기
 
-**ReadyAPI** 가 마음에 드시나요?
+**readyapi** 가 마음에 드시나요?
 
-ReadyAPI, 다른 사용자, 개발자를 응원하고 싶으신가요?
+readyapi, 다른 사용자, 개발자를 응원하고 싶으신가요?
 
-혹은 **ReadyAPI** 에 대해 도움이 필요하신가요?
+혹은 **readyapi** 에 대해 도움이 필요하신가요?
 
 아주 간단하게 응원할 수 있습니다 (몇 번의 클릭만으로).
 
@@ -12,35 +12,35 @@ ReadyAPI, 다른 사용자, 개발자를 응원하고 싶으신가요?
 
 ## 뉴스레터 구독
 
-[**ReadyAPI and friends** 뉴스레터](newsletter.md){.internal-link target=\_blank}를 구독하여 최신 정보를 유지할 수 있습니다:
+[**readyapi and friends** 뉴스레터](newsletter.md){.internal-link target=\_blank}를 구독하여 최신 정보를 유지할 수 있습니다:
 
-* ReadyAPI and friends에 대한 뉴스 🚀
+* readyapi and friends에 대한 뉴스 🚀
 * 가이드 📝
 * 기능 ✨
 * 획기적인 변화 🚨
 * 팁과 요령 ✅
 
-## 트위터에서 ReadyAPI 팔로우하기
+## 트위터에서 readyapi 팔로우하기
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">**Twitter**의 @readyapi를 팔로우</a>하여 **ReadyAPI** 에 대한 최신 뉴스를 얻을 수 있습니다. 🐦
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">**Twitter**의 @readyapi를 팔로우</a>하여 **readyapi** 에 대한 최신 뉴스를 얻을 수 있습니다. 🐦
 
-## Star **ReadyAPI** in GitHub
+## Star **readyapi** in GitHub
 
-GitHub에서 ReadyAPI에 "star"를 붙일 수 있습니다 (오른쪽 상단의 star 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
+GitHub에서 readyapi에 "star"를 붙일 수 있습니다 (오른쪽 상단의 star 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
 
 스타를 늘림으로써, 다른 사용자들이 좀 더 쉽게 찾을 수 있고, 많은 사람들에게 유용한 것임을 나타낼 수 있습니다.
 
 ## GitHub 저장소에서 릴리즈 확인
 
-GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+GitHub에서 readyapi를 "watch"할 수 있습니다 (오른쪽 상단 watch 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 여기서 "Releases only"을 선택할 수 있습니다.
 
-이렇게하면, **ReadyAPI** 의 버그 수정 및 새로운 기능의 구현 등의 새로운 자료 (최신 버전)이 있을 때마다 (이메일) 통지를 받을 수 있습니다.
+이렇게하면, **readyapi** 의 버그 수정 및 새로운 기능의 구현 등의 새로운 자료 (최신 버전)이 있을 때마다 (이메일) 통지를 받을 수 있습니다.
 
 ## 개발자와의 연결
 
-<a href="https://khulnasoft.com" class="external-link" target="_blank">개발자(Sebastián Ramírez / `khulnasoft`)</a>와 연락을 취할 수 있습니다.
+<a href="https://khulnasoft.com" class="external-link" target="_blank">개발자(KhulnaSoft Ltd / `khulnasoft`)</a>와 연락을 취할 수 있습니다.
 
 여러분은 할 수 있습니다:
 
@@ -48,7 +48,7 @@ GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버
     * 당신에게 도움이 될 저의 다른 오픈소스 프로젝트를 확인하십시오.
     * 새로운 오픈소스 프로젝트를 만들었을 때 확인하려면 팔로우 하십시오.
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">**Twitter**</a> 또는 <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">Mastodon</a>에서 팔로우하기.
-    * ReadyAPI의 사용 용도를 알려주세요 (그것을 듣는 것을 좋아합니다).
+    * readyapi의 사용 용도를 알려주세요 (그것을 듣는 것을 좋아합니다).
     * 발표나 새로운 툴 출시 소식을 받아보십시오.
     * <a href="https://twitter.com/readyapi" class="external-link" target="_blank">**Twitter**의 @readyapi를 팔로우</a> (별도 계정에서) 할 수 있습니다.
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">**LinkedIn**에서 팔로우하기.</a>.
@@ -57,17 +57,17 @@ GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버
     * 다른 기사나 아이디어들을 읽고, 제가 만들어왔던 툴에 대해서도 읽으십시오.
     * 새로운 기사를 읽기 위해 팔로우 하십시오.
 
-## **ReadyAPI**에 대한 트윗
+## **readyapi**에 대한 트윗
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**에 대해 트윗</a> 하고 ReadyAPI가 마음에 드는 이유를 알려주세요. 🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">**readyapi**에 대해 트윗</a> 하고 readyapi가 마음에 드는 이유를 알려주세요. 🎉
 
-**ReadyAPI**가 어떻게 사용되고 있는지, 어떤 점이 마음에 들었는지, 어떤 프로젝트/회사에서 사용하고 있는지 등에 대해 듣고 싶습니다.
+**readyapi**가 어떻게 사용되고 있는지, 어떤 점이 마음에 들었는지, 어떤 프로젝트/회사에서 사용하고 있는지 등에 대해 듣고 싶습니다.
 
-## ReadyAPI에 투표하기
+## readyapi에 투표하기
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Slant에서 **ReadyAPI** 에 대해 투표하십시오</a>.
-* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">AlternativeTo에서 **ReadyAPI** 에 대해 투표하십시오</a>.
-* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">StackShare에서 **ReadyAPI** 에 대해 투표하십시오</a>.
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Slant에서 **readyapi** 에 대해 투표하십시오</a>.
+* <a href="https://alternativeto.net/software/readyapi/about/" class="external-link" target="_blank">AlternativeTo에서 **readyapi** 에 대해 투표하십시오</a>.
+* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">StackShare에서 **readyapi** 에 대해 투표하십시오</a>.
 
 ## GitHub의 이슈로 다른사람 돕기
 
@@ -78,11 +78,11 @@ GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버
 
 많은 경우, 여러분은 이미 그 질문에 대한 답을 알고 있을 수도 있습니다. 🤓
 
-만약 많은 사람들의 문제를 도와준다면, 공식적인 [ReadyAPI 전문가](readyapi-people.md#readyapi-experts){.internal-link target=\_blank} 가 될 것입니다. 🎉
+만약 많은 사람들의 문제를 도와준다면, 공식적인 [readyapi 전문가](readyapi-people.md#readyapi-experts){.internal-link target=\_blank} 가 될 것입니다. 🎉
 
 가장 중요한 점은: 친절하려고 노력하는 것입니다. 사람들은 좌절감을 안고 오며, 많은 경우 최선의 방식으로 질문하지 않을 수도 있습니다. 하지만 최대한 친절하게 대하려고 노력하세요. 🤗
 
-**ReadyAPI** 커뮤니티의 목표는 친절하고 환영하는 것입니다. 동시에, 괴롭힘이나 무례한 행동을 받아들이지 마세요. 우리는 서로를 돌봐야 합니다.
+**readyapi** 커뮤니티의 목표는 친절하고 환영하는 것입니다. 동시에, 괴롭힘이나 무례한 행동을 받아들이지 마세요. 우리는 서로를 돌봐야 합니다.
 
 ---
 
@@ -125,7 +125,7 @@ GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버
 
 ## GitHub 저장소 보기
 
-GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+GitHub에서 readyapi를 "watch"할 수 있습니다 (오른쪽 상단 watch 버튼을 클릭): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 "Releases only" 대신 "Watching"을 선택하면, 새로운 이슈나 질문이 생성될 때 알림을 받을 수 있습니다. 또한, 특정하게 새로운 이슈, 디스커션, PR 등만 알림 받도록 설정할 수도 있습니다.
 
@@ -199,7 +199,7 @@ Pull Rrquest를 리뷰할 때 고려해야 할 사항과 방법은 다음과 같
 Pull Requests를 이용하여 소스코드에 [컨트리뷰트](contributing.md){.internal-link target=\_blank} 할 수 있습니다. 예를 들면 다음과 같습니다:
 
 * 문서에서 발견한 오타를 수정할 때.
-* ReadyAPI 관련 문서, 비디오 또는 팟캐스트를 작성했거나 발견하여 <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">이 파일을 편집하여</a> 공유할 때.
+* readyapi 관련 문서, 비디오 또는 팟캐스트를 작성했거나 발견하여 <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">이 파일을 편집하여</a> 공유할 때.
     * 해당 섹션의 시작 부분에 링크를 추가해야 합니다.
 * 당신의 언어로 [문서 번역하는데](contributing.md#translations){.internal-link target=\_blank} 기여할 때.
     * 다른 사람이 작성한 번역을 검토하는 것도 도울 수 있습니다.
@@ -210,9 +210,9 @@ Pull Requests를 이용하여 소스코드에 [컨트리뷰트](contributing.md)
     * 테스트를 반드시 추가해야 합니다.
     * 관련 문서가 필요하다면 반드시 추가해야 합니다.
 
-## ReadyAPI 유지 관리에 도움 주기
+## readyapi 유지 관리에 도움 주기
 
-**ReadyAPI**의 유지 관리를 도와주세요! 🤓
+**readyapi**의 유지 관리를 도와주세요! 🤓
 
 할 일이 많고, 그 중 대부분은 **여러분**이 할 수 있습니다.
 
@@ -221,17 +221,17 @@ Pull Requests를 이용하여 소스코드에 [컨트리뷰트](contributing.md)
 * [GitHub에서 다른 사람들의 질문에 도움 주기](#github_1){.internal-link target=_blank} (위의 섹션을 참조하세요).
 * [Pull Request 리뷰하기](#pull-requests){.internal-link target=_blank} (위의 섹션을 참조하세요).
 
-이 두 작업이 **가장 많은 시간을 소모**하는 일입니다. 그것이 ReadyAPI 유지 관리의 주요 작업입니다.
+이 두 작업이 **가장 많은 시간을 소모**하는 일입니다. 그것이 readyapi 유지 관리의 주요 작업입니다.
 
-이 작업을 도와주신다면, **ReadyAPI 유지 관리에 도움을 주는 것**이며 그것이 **더 빠르고 더 잘 발전하는 것**을 보장하는 것입니다. 🚀
+이 작업을 도와주신다면, **readyapi 유지 관리에 도움을 주는 것**이며 그것이 **더 빠르고 더 잘 발전하는 것**을 보장하는 것입니다. 🚀
 
 ## 채팅에 참여하십시오
 
-👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">디스코드 채팅 서버</a> 👥 에 가입하고 ReadyAPI 커뮤니티에서 다른 사람들과 어울리세요.
+👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">디스코드 채팅 서버</a> 👥 에 가입하고 readyapi 커뮤니티에서 다른 사람들과 어울리세요.
 
 /// tip
 
-질문이 있는 경우, <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub 디스커션</a> 에서 질문하십시오, [ReadyAPI Experts](readyapi-people.md#readyapi-experts){.internal-link target=_blank} 의 도움을 받을 가능성이 높습니다.
+질문이 있는 경우, <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">GitHub 디스커션</a> 에서 질문하십시오, [readyapi Experts](readyapi-people.md#readyapi-experts){.internal-link target=_blank} 의 도움을 받을 가능성이 높습니다.
 
 다른 일반적인 대화에서만 채팅을 사용하십시오.
 
@@ -243,7 +243,7 @@ Pull Requests를 이용하여 소스코드에 [컨트리뷰트](contributing.md)
 
 GitHub 이슈에서의 템플릿은 올바른 질문을 작성하도록 안내하여 더 쉽게 좋은 답변을 얻거나 질문하기 전에 스스로 문제를 해결할 수도 있습니다. 그리고 GitHub에서는 시간이 조금 걸리더라도 항상 모든 것에 답할 수 있습니다. 채팅 시스템에서는 개인적으로 그렇게 할 수 없습니다. 😅
 
-채팅 시스템에서의 대화 또한 GitHub에서 처럼 쉽게 검색할 수 없기 때문에 대화 중에 질문과 답변이 손실될 수 있습니다. 그리고 GitHub 이슈에 있는 것만 [ReadyAPI Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}가 되는 것으로 간주되므로, GitHub 이슈에서 더 많은 관심을 받을 것입니다.
+채팅 시스템에서의 대화 또한 GitHub에서 처럼 쉽게 검색할 수 없기 때문에 대화 중에 질문과 답변이 손실될 수 있습니다. 그리고 GitHub 이슈에 있는 것만 [readyapi Expert](readyapi-people.md#readyapi-experts){.internal-link target=_blank}가 되는 것으로 간주되므로, GitHub 이슈에서 더 많은 관심을 받을 것입니다.
 
 반면, 채팅 시스템에는 수천 명의 사용자가 있기 때문에, 거의 항상 대화 상대를 찾을 가능성이 높습니다. 😄
 
@@ -253,11 +253,11 @@ GitHub 이슈에서의 템플릿은 올바른 질문을 작성하도록 안내�
 
 감사하다는 말로 커피를 ☕️ 한잔 사줄 수 있습니다. 😄
 
-또한 ReadyAPI의 실버 또는 골드 스폰서가 될 수 있습니다. 🏅🎉
+또한 readyapi의 실버 또는 골드 스폰서가 될 수 있습니다. 🏅🎉
 
-## ReadyAPI를 강화하는 도구의 스폰서가 되십시오
+## readyapi를 강화하는 도구의 스폰서가 되십시오
 
-문서에서 보았듯이, ReadyAPI는 Starlette과 Pydantic 라는 거인의 어깨에 타고 있습니다.
+문서에서 보았듯이, readyapi는 Starlette과 Pydantic 라는 거인의 어깨에 타고 있습니다.
 
 다음의 스폰서가 될 수 있습니다
 

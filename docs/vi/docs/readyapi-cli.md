@@ -1,17 +1,17 @@
-# ReadyAPI CLI
+# readyapi CLI
 
-**ReadyAPI CLI** là một chương trình dòng lệnh có thể được sử dụng để phục vụ ứng dụng ReadyAPI của bạn, quản lý dự án ReadyAPI của bạn và nhiều hoạt động khác.
+**readyapi CLI** là một chương trình dòng lệnh có thể được sử dụng để phục vụ ứng dụng readyapi của bạn, quản lý dự án readyapi của bạn và nhiều hoạt động khác.
 
-Khi bạn cài đặt ReadyAPI (vd với `pip install "readyapi[standard]"`), nó sẽ bao gồm một gói được gọi là `readyapi-cli`, gói này cung cấp lệnh `readyapi` trong terminal.
+Khi bạn cài đặt readyapi (vd với `pip install "readyapi[standard]"`), nó sẽ bao gồm một gói được gọi là `readyapi-cli`, gói này cung cấp lệnh `readyapi` trong terminal.
 
-Để chạy ứng dụng ReadyAPI của bạn cho quá trình phát triển (development), bạn có thể sử dụng lệnh `readyapi dev`:
+Để chạy ứng dụng readyapi của bạn cho quá trình phát triển (development), bạn có thể sử dụng lệnh `readyapi dev`:
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories with
              <font color="#3465A4">__init__.py</font> files
@@ -19,7 +19,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with the
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with the
              following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -46,13 +46,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 </div>
 
-Chương trình dòng lệnh `readyapi` là **ReadyAPI CLI**.
+Chương trình dòng lệnh `readyapi` là **readyapi CLI**.
 
-ReadyAPI CLI nhận đường dẫn đến chương trình Python của bạn (vd `main.py`) và tự động phát hiện đối tượng `ReadyAPI` (thường được gọi là `app`), xác định quá trình nhập đúng, và sau đó chạy nó (serve).
+readyapi CLI nhận đường dẫn đến chương trình Python của bạn (vd `main.py`) và tự động phát hiện đối tượng `readyapi` (thường được gọi là `app`), xác định quá trình nhập đúng, và sau đó chạy nó (serve).
 
 Đối với vận hành thực tế (production), bạn sẽ sử dụng `readyapi run` thay thế. 🚀
 
-Ở bên trong, **ReadyAPI CLI** sử dụng <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, một server ASGI có hiệu suất cao, sẵn sàng cho vận hành thực tế (production). 😎
+Ở bên trong, **readyapi CLI** sử dụng <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, một server ASGI có hiệu suất cao, sẵn sàng cho vận hành thực tế (production). 😎
 
 ## `readyapi dev`
 
@@ -62,7 +62,7 @@ Mặc định, **auto-reload** được bật, tự động tải lại server k
 
 ## `readyapi run`
 
-Chạy `readyapi run` mặc định sẽ khởi động ReadyAPI cho quá trình vận hành thực tế.
+Chạy `readyapi run` mặc định sẽ khởi động readyapi cho quá trình vận hành thực tế.
 
 Mặc định, **auto-reload** bị tắt. Nó cũng lắng nghe địa chỉ IP `0.0.0.0`, đó là tất cả các địa chỉ IP có sẵn, như vậy nó sẽ được truy cập công khai bởi bất kỳ ai có thể giao tiếp với máy tính. Đây là cách bạn thường chạy nó trong sản phẩm hoàn thiện, ví dụ trong một container.
 
@@ -70,6 +70,6 @@ Trong hầu hết các trường hợp, bạn sẽ (và nên) có một "proxy �
 
 /// tip
 
-Bạn có thể tìm hiểu thêm về ReadyAPI CLI trong [tài liệu triển khai](deployment/index.md){.internal-link target=_blank}.
+Bạn có thể tìm hiểu thêm về readyapi CLI trong [tài liệu triển khai](deployment/index.md){.internal-link target=_blank}.
 
 ///

@@ -13,7 +13,7 @@ Mit `StaticFiles` können Sie statische Dateien aus einem Verzeichnis automatisc
 
 Sie könnten auch `from starlette.staticfiles import StaticFiles` verwenden.
 
-**ReadyAPI** stellt dasselbe `starlette.staticfiles` auch via `readyapi.staticfiles` bereit, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber tatsächlich direkt von Starlette.
+**readyapi** stellt dasselbe `starlette.staticfiles` auch via `readyapi.staticfiles` bereit, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber tatsächlich direkt von Starlette.
 
 ///
 
@@ -31,7 +31,7 @@ Das erste `"/static"` bezieht sich auf den Unterpfad, auf dem diese „Unteranwe
 
 Das `directory="static"` bezieht sich auf den Namen des Verzeichnisses, das Ihre statischen Dateien enthält.
 
-Das `name="static"` gibt dieser Unteranwendung einen Namen, der intern von **ReadyAPI** verwendet werden kann.
+Das `name="static"` gibt dieser Unteranwendung einen Namen, der intern von **readyapi** verwendet werden kann.
 
 Alle diese Parameter können anders als "`static`" lauten, passen Sie sie an die Bedürfnisse und spezifischen Details Ihrer eigenen Anwendung an.
 

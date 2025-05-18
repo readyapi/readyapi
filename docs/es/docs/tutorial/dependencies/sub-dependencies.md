@@ -4,7 +4,7 @@ Puedes crear dependencias que tengan **sub-dependencias**.
 
 Pueden ser tan **profundas** como necesites.
 
-**ReadyAPI** se encargará de resolverlas.
+**readyapi** se encargará de resolverlas.
 
 ## Primera dependencia "dependable"
 
@@ -39,7 +39,7 @@ Entonces podemos usar la dependencia con:
 
 Fíjate que solo estamos declarando una dependencia en la *path operation function*, `query_or_cookie_extractor`.
 
-Pero **ReadyAPI** sabrá que tiene que resolver `query_extractor` primero, para pasar los resultados de eso a `query_or_cookie_extractor` al llamarlo.
+Pero **readyapi** sabrá que tiene que resolver `query_extractor` primero, para pasar los resultados de eso a `query_or_cookie_extractor` al llamarlo.
 
 ///
 
@@ -56,7 +56,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Usando la misma dependencia múltiples veces
 
-Si una de tus dependencias se declara varias veces para la misma *path operation*, por ejemplo, múltiples dependencias tienen una sub-dependencia común, **ReadyAPI** sabrá llamar a esa sub-dependencia solo una vez por request.
+Si una de tus dependencias se declara varias veces para la misma *path operation*, por ejemplo, múltiples dependencias tienen una sub-dependencia común, **readyapi** sabrá llamar a esa sub-dependencia solo una vez por request.
 
 Y guardará el valor devuelto en un <abbr title="Una utilidad/sistema para almacenar valores calculados/generados, para reutilizarlos en lugar de calcularlos nuevamente.">"cache"</abbr> y lo pasará a todos los "dependants" que lo necesiten en ese request específico, en lugar de llamar a la dependencia varias veces para el mismo request.
 

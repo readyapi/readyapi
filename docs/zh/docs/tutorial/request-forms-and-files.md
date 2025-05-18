@@ -1,6 +1,6 @@
 # 请求表单与文件
 
-ReadyAPI 支持同时使用 `File` 和 `Form` 定义文件和表单字段。
+readyapi 支持同时使用 `File` 和 `Form` 定义文件和表单字段。
 
 /// info | 说明
 
@@ -28,7 +28,7 @@ ReadyAPI 支持同时使用 `File` 和 `Form` 定义文件和表单字段。
 
 可在一个*路径操作*中声明多个 `File` 与 `Form` 参数，但不能同时声明要接收 JSON 的 `Body` 字段。因为此时请求体的编码为 `multipart/form-data`，不是 `application/json`。
 
-这不是 **ReadyAPI** 的问题，而是 HTTP 协议的规定。
+这不是 **readyapi** 的问题，而是 HTTP 协议的规定。
 
 ///
 

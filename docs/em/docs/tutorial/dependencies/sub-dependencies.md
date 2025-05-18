@@ -4,7 +4,7 @@
 
 👫 💪 **⏬** 👆 💪 👫.
 
-**ReadyAPI** 🔜 ✊ 💅 🔬 👫.
+**readyapi** 🔜 ✊ 💅 🔬 👫.
 
 ## 🥇 🔗 "☑"
 
@@ -39,7 +39,7 @@
 
 👀 👈 👥 🕴 📣 1️⃣ 🔗 *➡ 🛠️ 🔢*, `query_or_cookie_extractor`.
 
-✋️ **ReadyAPI** 🔜 💭 👈 ⚫️ ✔️ ❎ `query_extractor` 🥇, 🚶‍♀️ 🏁 👈 `query_or_cookie_extractor` ⏪ 🤙 ⚫️.
+✋️ **readyapi** 🔜 💭 👈 ⚫️ ✔️ ❎ `query_extractor` 🥇, 🚶‍♀️ 🏁 👈 `query_or_cookie_extractor` ⏪ 🤙 ⚫️.
 
 ///
 
@@ -56,7 +56,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## ⚙️ 🎏 🔗 💗 🕰
 
-🚥 1️⃣ 👆 🔗 📣 💗 🕰 🎏 *➡ 🛠️*, 🖼, 💗 🔗 ✔️ ⚠ 🎧-🔗, **ReadyAPI** 🔜 💭 🤙 👈 🎧-🔗 🕴 🕐 📍 📨.
+🚥 1️⃣ 👆 🔗 📣 💗 🕰 🎏 *➡ 🛠️*, 🖼, 💗 🔗 ✔️ ⚠ 🎧-🔗, **readyapi** 🔜 💭 🤙 👈 🎧-🔗 🕴 🕐 📍 📨.
 
 &amp; ⚫️ 🔜 🖊 📨 💲 <abbr title="A utility/system to store computed/generated values, to re-use them instead of computing them again.">"💾"</abbr> &amp; 🚶‍♀️ ⚫️ 🌐 "⚓️" 👈 💪 ⚫️ 👈 🎯 📨, ↩️ 🤙 🔗 💗 🕰 🎏 📨.
 

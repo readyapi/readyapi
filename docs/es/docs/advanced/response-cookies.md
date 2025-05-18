@@ -12,7 +12,7 @@ Y entonces puedes devolver cualquier objeto que necesites, como normalmente lo h
 
 Y si declaraste un `response_model`, todavía se utilizará para filtrar y convertir el objeto que devolviste.
 
-**ReadyAPI** utilizará ese response *temporal* para extraer las cookies (también los headers y el código de estado), y las pondrá en el response final que contiene el valor que devolviste, filtrado por cualquier `response_model`.
+**readyapi** utilizará ese response *temporal* para extraer las cookies (también los headers y el código de estado), y las pondrá en el response final que contiene el valor que devolviste, filtrado por cualquier `response_model`.
 
 También puedes declarar el parámetro `Response` en las dependencias, y establecer cookies (y headers) en ellas.
 
@@ -28,7 +28,7 @@ Luego establece Cookies en ella, y luego devuélvela:
 
 /// tip | Consejo
 
-Ten en cuenta que si devuelves un response directamente en lugar de usar el parámetro `Response`, ReadyAPI lo devolverá directamente.
+Ten en cuenta que si devuelves un response directamente en lugar de usar el parámetro `Response`, readyapi lo devolverá directamente.
 
 Así que tendrás que asegurarte de que tus datos son del tipo correcto. Por ejemplo, que sea compatible con JSON, si estás devolviendo un `JSONResponse`.
 
@@ -42,9 +42,9 @@ Y también que no estés enviando ningún dato que debería haber sido filtrado 
 
 También podrías usar `from starlette.responses import Response` o `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** proporciona los mismos `starlette.responses` como `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette.
+**readyapi** proporciona los mismos `starlette.responses` como `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette.
 
-Y como el `Response` se puede usar frecuentemente para establecer headers y cookies, **ReadyAPI** también lo proporciona en `readyapi.Response`.
+Y como el `Response` se puede usar frecuentemente para establecer headers y cookies, **readyapi** también lo proporciona en `readyapi.Response`.
 
 ///
 

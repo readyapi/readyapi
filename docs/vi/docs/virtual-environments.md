@@ -430,9 +430,9 @@ Tiếp tục đọc. 👇🤓
 
 ## Tại sao cần Môi trường ảo
 
-Để làm việc với ReadyAPI, bạn cần cài đặt <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
+Để làm việc với readyapi, bạn cần cài đặt <a href="https://www.python.org/" class="external-link" target="_blank">Python</a>.
 
-Sau đó, bạn sẽ cần **cài đặt** ReadyAPI và bất kỳ **gói** nào mà bạn muốn sử dụng.
+Sau đó, bạn sẽ cần **cài đặt** readyapi và bất kỳ **gói** nào mà bạn muốn sử dụng.
 
 Để cài đặt gói, bạn thường sử dụng lệnh `pip` có sẵn với Python (hoặc các phiên bản tương tự).
 
@@ -539,9 +539,9 @@ $ pip install "readyapi[standard]"
 
 </div>
 
-Lệnh này sẽ tải xuống một tệp nén với mã nguồn ReadyAPI, thường là từ <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
+Lệnh này sẽ tải xuống một tệp nén với mã nguồn readyapi, thường là từ <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a>.
 
-Nó cũng sẽ **tải xuống** các tệp cho các gói khác mà ReadyAPI phụ thuộc vào.
+Nó cũng sẽ **tải xuống** các tệp cho các gói khác mà readyapi phụ thuộc vào.
 
 Sau đó, nó sẽ **giải nén** tất cả các tệp đó và đưa chúng vào một thư mục trong máy tính của bạn.
 

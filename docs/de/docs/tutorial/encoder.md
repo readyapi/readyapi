@@ -4,7 +4,7 @@ Es gibt Fälle, da möchten Sie einen Datentyp (etwa ein Pydantic-Modell) in etw
 
 Zum Beispiel, wenn Sie es in einer Datenbank speichern möchten.
 
-Dafür bietet **ReadyAPI** eine Funktion `jsonable_encoder()`.
+Dafür bietet **readyapi** eine Funktion `jsonable_encoder()`.
 
 ## `jsonable_encoder` verwenden
 
@@ -30,6 +30,6 @@ Es wird also kein großer `str` zurückgegeben, der die Daten im JSON-Format (al
 
 /// note | Hinweis
 
-`jsonable_encoder` wird tatsächlich von **ReadyAPI** intern verwendet, um Daten zu konvertieren. Aber es ist in vielen anderen Szenarien hilfreich.
+`jsonable_encoder` wird tatsächlich von **readyapi** intern verwendet, um Daten zu konvertieren. Aber es ist in vielen anderen Szenarien hilfreich.
 
 ///

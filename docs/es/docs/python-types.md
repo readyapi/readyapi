@@ -6,11 +6,11 @@ Estas **"anotaciones de tipos"** o type hints son una sintaxis especial que perm
 
 Al declarar tipos para tus variables, los editores y herramientas te pueden proporcionar un mejor soporte.
 
-Este es solo un **tutorial rápido / recordatorio** sobre las anotaciones de tipos en Python. Cubre solo lo mínimo necesario para usarlas con **ReadyAPI**... que en realidad es muy poco.
+Este es solo un **tutorial rápido / recordatorio** sobre las anotaciones de tipos en Python. Cubre solo lo mínimo necesario para usarlas con **readyapi**... que en realidad es muy poco.
 
-**ReadyAPI** se basa completamente en estas anotaciones de tipos, dándole muchas ventajas y beneficios.
+**readyapi** se basa completamente en estas anotaciones de tipos, dándole muchas ventajas y beneficios.
 
-Pero incluso si nunca usas **ReadyAPI**, te beneficiaría aprender un poco sobre ellas.
+Pero incluso si nunca usas **readyapi**, te beneficiaría aprender un poco sobre ellas.
 
 /// note | Nota
 
@@ -120,7 +120,7 @@ Ahora sabes que debes corregirlo, convertir `age` a un string con `str(age)`:
 
 Acabas de ver el lugar principal para declarar anotaciones de tipos. Como parámetros de función.
 
-Este también es el lugar principal donde los utilizarías con **ReadyAPI**.
+Este también es el lugar principal donde los utilizarías con **readyapi**.
 
 ### Tipos simples
 
@@ -493,7 +493,7 @@ Para saber más sobre <a href="https://docs.pydantic.dev/" class="external-link"
 
 ///
 
-**ReadyAPI** está completamente basado en Pydantic.
+**readyapi** está completamente basado en Pydantic.
 
 Verás mucho más de todo esto en práctica en el [Tutorial - Guía del Usuario](tutorial/index.md){.internal-link target=_blank}.
 
@@ -521,7 +521,7 @@ En Python 3.9, `Annotated` es parte de la librería estándar, así que puedes i
 
 En versiones por debajo de Python 3.9, importas `Annotated` de `typing_extensions`.
 
-Ya estará instalado con **ReadyAPI**.
+Ya estará instalado con **readyapi**.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -531,7 +531,7 @@ Ya estará instalado con **ReadyAPI**.
 
 Python en sí no hace nada con este `Annotated`. Y para los editores y otras herramientas, el tipo sigue siendo `str`.
 
-Pero puedes usar este espacio en `Annotated` para proporcionar a **ReadyAPI** metadata adicional sobre cómo quieres que se comporte tu aplicación.
+Pero puedes usar este espacio en `Annotated` para proporcionar a **readyapi** metadata adicional sobre cómo quieres que se comporte tu aplicación.
 
 Lo importante a recordar es que **el primer *parámetro de tipo*** que pasas a `Annotated` es el **tipo real**. El resto es solo metadata para otras herramientas.
 
@@ -547,16 +547,16 @@ Y también que tu código será muy compatible con muchas otras herramientas y p
 
 ///
 
-## Anotaciones de tipos en **ReadyAPI**
+## Anotaciones de tipos en **readyapi**
 
-**ReadyAPI** aprovecha estas anotaciones de tipos para hacer varias cosas.
+**readyapi** aprovecha estas anotaciones de tipos para hacer varias cosas.
 
-Con **ReadyAPI** declaras parámetros con anotaciones de tipos y obtienes:
+Con **readyapi** declaras parámetros con anotaciones de tipos y obtienes:
 
 * **Soporte del editor**.
 * **Chequeo de tipos**.
 
-...y **ReadyAPI** usa las mismas declaraciones para:
+...y **readyapi** usa las mismas declaraciones para:
 
 * **Definir requerimientos**: de parámetros de path de la request, parámetros de query, headers, bodies, dependencias, etc.
 * **Convertir datos**: de la request al tipo requerido.
@@ -567,7 +567,7 @@ Con **ReadyAPI** declaras parámetros con anotaciones de tipos y obtienes:
 
 Todo esto puede sonar abstracto. No te preocupes. Verás todo esto en acción en el [Tutorial - Guía del Usuario](tutorial/index.md){.internal-link target=_blank}.
 
-Lo importante es que al usar tipos estándar de Python, en un solo lugar (en lugar de agregar más clases, decoradores, etc.), **ReadyAPI** hará gran parte del trabajo por ti.
+Lo importante es que al usar tipos estándar de Python, en un solo lugar (en lugar de agregar más clases, decoradores, etc.), **readyapi** hará gran parte del trabajo por ti.
 
 /// info | Información
 

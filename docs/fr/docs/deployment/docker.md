@@ -2,10 +2,10 @@
 
 Dans cette section, vous verrez des instructions et des liens vers des guides pour savoir comment :
 
-* Faire de votre application **ReadyAPI** une image/conteneur Docker avec une performance maximale. En environ **5 min**.
+* Faire de votre application **readyapi** une image/conteneur Docker avec une performance maximale. En environ **5 min**.
 * (Optionnellement) comprendre ce que vous, en tant que développeur, devez savoir sur HTTPS.
 * Configurer un cluster en mode Docker Swarm avec HTTPS automatique, même sur un simple serveur à 5 dollars US/mois. En environ **20 min**.
-* Générer et déployer une application **ReadyAPI** complète, en utilisant votre cluster Docker Swarm, avec HTTPS, etc. En environ **10 min**.
+* Générer et déployer une application **readyapi** complète, en utilisant votre cluster Docker Swarm, avec HTTPS, etc. En environ **10 min**.
 
 Vous pouvez utiliser <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a> pour le déploiement. Il présente plusieurs avantages comme la sécurité, la réplicabilité, la simplicité de développement, etc.
 
@@ -62,7 +62,7 @@ COPY ./app /app
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
-## Créer le code **ReadyAPI**.
+## Créer le code **readyapi**.
 
 * Créer un répertoire `app` et y entrer.
 * Créez un fichier `main.py` avec :
@@ -70,9 +70,9 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 ```Python
 from typing import Optional
 
-from readyapi import ReadyAPI
+from readyapi import readyapi
 
-app = ReadyAPI()
+app = readyapi()
 
 
 @app.get("/")
@@ -97,7 +97,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 ## Construire l'image Docker
 
 * Allez dans le répertoire du projet (dans lequel se trouve votre `Dockerfile`, contenant votre répertoire `app`).
-* Construisez votre image ReadyAPI :
+* Construisez votre image readyapi :
 
 <div class="termy">
 
@@ -121,7 +121,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 </div>
 
-Vous disposez maintenant d'un serveur ReadyAPI optimisé dans un conteneur Docker. Configuré automatiquement pour votre
+Vous disposez maintenant d'un serveur readyapi optimisé dans un conteneur Docker. Configuré automatiquement pour votre
 serveur actuel (et le nombre de cœurs du CPU).
 
 ## Vérifier
@@ -174,9 +174,9 @@ Pour configurer un cluster en mode Docker Swarm avec Traefik et la gestion de HT
 
 ### <a href="https://medium.com/@khulnasoft/docker-swarm-mode-and-traefik-for-a-https-cluster-20328dba6232" class="external-link" target="_blank">Docker Swarm Mode et Traefik pour un cluster HTTPS</a>
 
-### Déployer une application ReadyAPI
+### Déployer une application readyapi
 
-La façon la plus simple de tout mettre en place, serait d'utiliser les [**Générateurs de projet ReadyAPI**](../project-generation.md){.internal-link target=_blank}.
+La façon la plus simple de tout mettre en place, serait d'utiliser les [**Générateurs de projet readyapi**](../project-generation.md){.internal-link target=_blank}.
 
 Le génerateur de projet adéquat est conçu pour être intégré à ce cluster Docker Swarm avec Traefik et HTTPS décrit ci-dessus.
 

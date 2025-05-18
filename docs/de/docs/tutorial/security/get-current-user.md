@@ -48,7 +48,7 @@ Das wird uns innerhalb der Funktion bei Codevervollständigung und Typprüfungen
 
 Sie erinnern sich vielleicht, dass Requestbodys ebenfalls mit Pydantic-Modellen deklariert werden.
 
-Weil Sie `Depends` verwenden, wird **ReadyAPI** hier aber nicht verwirrt.
+Weil Sie `Depends` verwenden, wird **readyapi** hier aber nicht verwirrt.
 
 ///
 
@@ -74,7 +74,7 @@ Möchten Sie nur ein `str` haben? Oder nur ein `dict`? Oder direkt eine Instanz 
 
 Sie haben eigentlich keine Benutzer, die sich bei Ihrer Anwendung anmelden, sondern Roboter, Bots oder andere Systeme, die nur über einen Zugriffstoken verfügen? Auch hier funktioniert alles gleich.
 
-Verwenden Sie einfach jede Art von Modell, jede Art von Klasse, jede Art von Datenbank, die Sie für Ihre Anwendung benötigen. **ReadyAPI** deckt das alles mit seinem Dependency Injection System ab.
+Verwenden Sie einfach jede Art von Modell, jede Art von Klasse, jede Art von Datenbank, die Sie für Ihre Anwendung benötigen. **readyapi** deckt das alles mit seinem Dependency Injection System ab.
 
 ## Codegröße
 

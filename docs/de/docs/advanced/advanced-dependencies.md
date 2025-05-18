@@ -20,7 +20,7 @@ Dazu deklarieren wir eine Methode `__call__`:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[12] *}
 
-In diesem Fall ist dieses `__call__` das, was **ReadyAPI** verwendet, um nach zusätzlichen Parametern und Unterabhängigkeiten zu suchen, und das ist es auch, was später aufgerufen wird, um einen Wert an den Parameter in Ihrer *Pfadoperation-Funktion* zu übergeben.
+In diesem Fall ist dieses `__call__` das, was **readyapi** verwendet, um nach zusätzlichen Parametern und Unterabhängigkeiten zu suchen, und das ist es auch, was später aufgerufen wird, um einen Wert an den Parameter in Ihrer *Pfadoperation-Funktion* zu übergeben.
 
 ## Die Instanz parametrisieren
 
@@ -28,7 +28,7 @@ Und jetzt können wir `__init__` verwenden, um die Parameter der Instanz zu dekl
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[9] *}
 
-In diesem Fall wird **ReadyAPI** `__init__` nie berühren oder sich darum kümmern, wir werden es direkt in unserem Code verwenden.
+In diesem Fall wird **readyapi** `__init__` nie berühren oder sich darum kümmern, wir werden es direkt in unserem Code verwenden.
 
 ## Eine Instanz erstellen
 
@@ -42,7 +42,7 @@ Und auf diese Weise können wir unsere Abhängigkeit „parametrisieren“, die 
 
 Dann könnten wir diesen `checker` in einem `Depends(checker)` anstelle von `Depends(FixedContentQueryChecker)` verwenden, da die Abhängigkeit die Instanz `checker` und nicht die Klasse selbst ist.
 
-Und beim Auflösen der Abhängigkeit ruft **ReadyAPI** diesen `checker` wie folgt auf:
+Und beim Auflösen der Abhängigkeit ruft **readyapi** diesen `checker` wie folgt auf:
 
 ```Python
 checker(q="somequery")

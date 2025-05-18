@@ -40,7 +40,7 @@ Um Dateibodys zu deklarieren, müssen Sie `File` verwenden, da diese Parameter s
 
 Die Dateien werden als „Formulardaten“ hochgeladen.
 
-Wenn Sie den Typ Ihrer *Pfadoperation-Funktion* als `bytes` deklarieren, wird **ReadyAPI** die Datei für Sie auslesen, und Sie erhalten den Inhalt als `bytes`.
+Wenn Sie den Typ Ihrer *Pfadoperation-Funktion* als `bytes` deklarieren, wird **readyapi** die Datei für Sie auslesen, und Sie erhalten den Inhalt als `bytes`.
 
 Bedenken Sie, dass das bedeutet, dass sich der gesamte Inhalt der Datei im Arbeitsspeicher befindet. Das wird für kleinere Dateien gut funktionieren.
 
@@ -95,13 +95,13 @@ contents = myfile.file.read()
 
 /// note | Technische Details zu `async`
 
-Wenn Sie die `async`-Methoden verwenden, führt **ReadyAPI** die Datei-Methoden in einem <abbr title="Mehrere unabhängige Kindprozesse">Threadpool</abbr> aus und erwartet sie.
+Wenn Sie die `async`-Methoden verwenden, führt **readyapi** die Datei-Methoden in einem <abbr title="Mehrere unabhängige Kindprozesse">Threadpool</abbr> aus und erwartet sie.
 
 ///
 
 /// note | Technische Details zu Starlette
 
-**ReadyAPI**s `UploadFile` erbt direkt von **Starlette**s `UploadFile`, fügt aber ein paar notwendige Teile hinzu, um es kompatibel mit **Pydantic** und anderen Teilen von ReadyAPI zu machen.
+**readyapi**s `UploadFile` erbt direkt von **Starlette**s `UploadFile`, fügt aber ein paar notwendige Teile hinzu, um es kompatibel mit **Pydantic** und anderen Teilen von readyapi zu machen.
 
 ///
 
@@ -109,13 +109,13 @@ Wenn Sie die `async`-Methoden verwenden, führt **ReadyAPI** die Datei-Methoden 
 
 HTML-Formulare (`<form></form>`) senden die Daten in einer „speziellen“ Kodierung zum Server, welche sich von JSON unterscheidet.
 
-**ReadyAPI** stellt sicher, dass diese Daten korrekt ausgelesen werden, statt JSON zu erwarten.
+**readyapi** stellt sicher, dass diese Daten korrekt ausgelesen werden, statt JSON zu erwarten.
 
 /// note | Technische Details
 
 Daten aus Formularen werden, wenn es keine Dateien sind, normalerweise mit dem <abbr title='Media type – Medientyp, Typ des Mediums'>„media type“</abbr> `application/x-www-form-urlencoded` kodiert.
 
-Sollte das Formular aber Dateien enthalten, dann werden diese mit `multipart/form-data` kodiert. Wenn Sie `File` verwenden, wird **ReadyAPI** wissen, dass es die Dateien vom korrekten Teil des Bodys holen muss.
+Sollte das Formular aber Dateien enthalten, dann werden diese mit `multipart/form-data` kodiert. Wenn Sie `File` verwenden, wird **readyapi** wissen, dass es die Dateien vom korrekten Teil des Bodys holen muss.
 
 Wenn Sie mehr über Formularfelder und ihre Kodierungen lesen möchten, besuchen Sie die <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST" class="external-link" target="_blank"><abbr title="Mozilla Developer Network – Mozilla-Entwickler-Netzwerk">MDN</abbr>-Webdokumentation für <code>POST</code></a>.
 
@@ -125,7 +125,7 @@ Wenn Sie mehr über Formularfelder und ihre Kodierungen lesen möchten, besuchen
 
 Sie können mehrere `File`- und `Form`-Parameter in einer *Pfadoperation* deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
 
-Das ist keine Limitation von **ReadyAPI**, sondern Teil des HTTP-Protokolls.
+Das ist keine Limitation von **readyapi**, sondern Teil des HTTP-Protokolls.
 
 ///
 
@@ -157,7 +157,7 @@ Sie erhalten, wie deklariert, eine `list`e von `bytes` oder `UploadFile`s.
 
 Sie können auch `from starlette.responses import HTMLResponse` verwenden.
 
-**ReadyAPI** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
+**readyapi** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
 
 ///
 

@@ -6,7 +6,7 @@ Esto te permitiría **reutilizar el modelo** en **múltiples lugares** y tambié
 
 /// note | Nota
 
-Esto es compatible desde la versión `0.115.0` de ReadyAPI. 🤓
+Esto es compatible desde la versión `0.115.0` de readyapi. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declara los **parámetros query** que necesitas en un **modelo de Pydantic**, y 
 
 {* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
-**ReadyAPI** **extraerá** los datos para **cada campo** de los **parámetros query** en el request y te proporcionará el modelo de Pydantic que definiste.
+**readyapi** **extraerá** los datos para **cada campo** de los **parámetros query** en el request y te proporcionará el modelo de Pydantic que definiste.
 
 ## Revisa la Documentación
 
@@ -59,7 +59,7 @@ Recibirán un response de **error** que les indica que el parámetro query `tool
 
 ## Resumen
 
-Puedes usar **modelos de Pydantic** para declarar **parámetros query** en **ReadyAPI**. 😎
+Puedes usar **modelos de Pydantic** para declarar **parámetros query** en **readyapi**. 😎
 
 /// tip | Consejo
 

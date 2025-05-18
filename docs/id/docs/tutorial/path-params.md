@@ -38,7 +38,7 @@ Jika contoh berikut dijalankan dan diakses browser melalui <a href="http://127.0
 
 Perhatikan nilai fungsi yang diterima (dan dihasilkan) adalah `3`, sebagai `int` di Python, dan bukan string `"3"`.
 
-Sehingga dengan deklarasi tipe data **ReadyAPI** memberikan request otomatis <abbr title="konversi string dari request HTTP menjadi data Python">"parsing"</abbr>.
+Sehingga dengan deklarasi tipe data **readyapi** memberikan request otomatis <abbr title="konversi string dari request HTTP menjadi data Python">"parsing"</abbr>.
 
 ///
 
@@ -69,7 +69,7 @@ Kesalahan yang sama akan muncul jika menggunakan `float` daripada `int`, seperti
 
 /// check | Periksa
 
-Dengan deklarasi tipe data Python, **ReadyAPI** melakukan validasi data.
+Dengan deklarasi tipe data Python, **readyapi** melakukan validasi data.
 
 Perhatikan kesalahan tersebut juga menjelaskan validasi apa yang tidak sesuai.
 
@@ -85,7 +85,7 @@ Ketika anda membuka browser di <a href="http://127.0.0.1:8000/docs" class="exter
 
 /// check | Periksa
 
-Dengan deklarasi tipe data Python yang sama, **ReadyAPI** membuat dokumentasi interaktif otomatis (terintegrasi Swagger UI).
+Dengan deklarasi tipe data Python yang sama, **readyapi** membuat dokumentasi interaktif otomatis (terintegrasi Swagger UI).
 
 Perhatikan parameter path dideklarasikan sebagai integer.
 
@@ -95,7 +95,7 @@ Perhatikan parameter path dideklarasikan sebagai integer.
 
 Karena skema yang dibuat berasal dari standar <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md" class="external-link" target="_blank">OpenAPI</a>, maka banyak alat lain yang kompatibel.
 
-Sehingga **ReadyAPI** menyediakan dokumentasi alternatif (menggunakan ReDoc), yang bisa diakses di <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>:
+Sehingga **readyapi** menyediakan dokumentasi alternatif (menggunakan ReDoc), yang bisa diakses di <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>:
 
 <img src="/img/tutorial/path-params/image02.png">
 
@@ -218,7 +218,7 @@ Sehingga URL untuk file tersebut akan seperti: `/files/home/johndoe/myfile.txt`.
 
 OpenAPI tidak bisa mendeklarasikan *parameter path* berisi *path* di dalamnya, karena menyebabkan kondisi yang sulit di*test* dan didefinisikan.
 
-Tetapi, di **ReadyAPI** anda tetap bisa melakukannya dengan menggunakan *tools* internal dari Starlette.
+Tetapi, di **readyapi** anda tetap bisa melakukannya dengan menggunakan *tools* internal dari Starlette.
 
 Dan dokumentasi tetap berfungsi walaupun tidak menambahkan keterangan bahwa parameter harus berisi *path*.
 
@@ -246,7 +246,7 @@ Di kondisi ini, URL nya menjadi: `/files//home/johndoe/myfile.txt`, dengan dua g
 
 ## Ringkasan
 
-Di **ReadyAPI** dengan menggunakan deklarasi tipe Python standar, pendek, intuitif, anda mendapatkan:
+Di **readyapi** dengan menggunakan deklarasi tipe Python standar, pendek, intuitif, anda mendapatkan:
 
 * Dukungan editor: pemeriksaan kesalahan, autocompletion, dll.
 * "<abbr title="konversi string dari request HTTP menjadi data Python">Parsing</abbr>" data.
@@ -255,4 +255,4 @@ Di **ReadyAPI** dengan menggunakan deklarasi tipe Python standar, pendek, intuit
 
 Semua itu anda hanya perlu mendeklarasikan sekali saja.
 
-Ini adalah salah satu keunggulan **ReadyAPI** dibandingkan dengan *framework* lainnya (selain dari performa Python *native*c)
+Ini adalah salah satu keunggulan **readyapi** dibandingkan dengan *framework* lainnya (selain dari performa Python *native*c)

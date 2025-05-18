@@ -65,7 +65,7 @@ Pythonの例外なので、`return`ではなく、`raise`です。
 
 `dist`や`list`などを渡すことができます。
 
-これらは **ReadyAPI** によって自動的に処理され、JSONに変換されます。
+これらは **readyapi** によって自動的に処理され、JSONに変換されます。
 
 ///
 
@@ -85,7 +85,7 @@ Pythonの例外なので、`return`ではなく、`raise`です。
 
 あなた（または使用しているライブラリ）が`raise`するかもしれないカスタム例外`UnicornException`があるとしましょう。
 
-そして、この例外をReadyAPIでグローバルに処理したいと思います。
+そして、この例外をreadyapiでグローバルに処理したいと思います。
 
 カスタム例外ハンドラを`@app.exception_handler()`で追加することができます:
 
@@ -105,13 +105,13 @@ Pythonの例外なので、`return`ではなく、`raise`です。
 
 また、`from starlette.requests import Request`と`from starlette.responses import JSONResponse`を使用することもできます。
 
-**ReadyAPI** は開発者の利便性を考慮して、`readyapi.responses`と同じ`starlette.responses`を提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。これは`Request`と同じです。
+**readyapi** は開発者の利便性を考慮して、`readyapi.responses`と同じ`starlette.responses`を提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。これは`Request`と同じです。
 
 ///
 
 ## デフォルトの例外ハンドラのオーバーライド
 
-**ReadyAPI** にはいくつかのデフォルトの例外ハンドラがあります。
+**readyapi** にはいくつかのデフォルトの例外ハンドラがあります。
 
 これらのハンドラは、`HTTPException`を`raise`させた場合や、リクエストに無効なデータが含まれている場合にデフォルトのJSONレスポンスを返す役割を担っています。
 
@@ -119,7 +119,7 @@ Pythonの例外なので、`return`ではなく、`raise`です。
 
 ### リクエスト検証の例外のオーバーライド
 
-リクエストに無効なデータが含まれている場合、**ReadyAPI** は内部的に`RequestValidationError`を発生させます。
+リクエストに無効なデータが含まれている場合、**readyapi** は内部的に`RequestValidationError`を発生させます。
 
 また、そのためのデフォルトの例外ハンドラも含まれています。
 
@@ -164,7 +164,7 @@ path -> item_id
 
 `RequestValidationError`はPydanticの<a href="https://docs.pydantic.dev/latest/concepts/models/#error-handling" class="external-link" target="_blank">`ValidationError`</a>のサブクラスです。
 
-**ReadyAPI** は`response_model`でPydanticモデルを使用していて、データにエラーがあった場合、ログにエラーが表示されるようにこれを使用しています。
+**readyapi** は`response_model`でPydanticモデルを使用していて、データにエラーがあった場合、ログにエラーが表示されるようにこれを使用しています。
 
 しかし、クライアントやユーザーはそれを見ることはありません。その代わりに、クライアントはHTTPステータスコード`500`の「Internal Server Error」を受け取ります。
 
@@ -184,7 +184,7 @@ path -> item_id
 
 また、`from starlette.responses import PlainTextResponse`を使用することもできます。
 
-**ReadyAPI** は開発者の利便性を考慮して、`readyapi.responses`と同じ`starlette.responses`を提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。
+**readyapi** は開発者の利便性を考慮して、`readyapi.responses`と同じ`starlette.responses`を提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。
 
 ///
 
@@ -226,17 +226,17 @@ path -> item_id
 }
 ```
 
-#### ReadyAPIの`HTTPException`とStarletteの`HTTPException`
+#### readyapiの`HTTPException`とStarletteの`HTTPException`
 
-**ReadyAPI**は独自の`HTTPException`を持っています。
+**readyapi**は独自の`HTTPException`を持っています。
 
-また、 **ReadyAPI**のエラークラス`HTTPException`はStarletteのエラークラス`HTTPException`を継承しています。
+また、 **readyapi**のエラークラス`HTTPException`はStarletteのエラークラス`HTTPException`を継承しています。
 
-唯一の違いは、**ReadyAPI** の`HTTPException`はレスポンスに含まれるヘッダを追加できることです。
+唯一の違いは、**readyapi** の`HTTPException`はレスポンスに含まれるヘッダを追加できることです。
 
 これはOAuth 2.0といくつかのセキュリティユーティリティのために内部的に必要とされ、使用されています。
 
-そのため、コード内では通常通り **ReadyAPI** の`HTTPException`を発生させ続けることができます。
+そのため、コード内では通常通り **readyapi** の`HTTPException`を発生させ続けることができます。
 
 しかし、例外ハンドラを登録する際には、Starletteの`HTTPException`を登録しておく必要があります。
 
@@ -248,9 +248,9 @@ path -> item_id
 from starlette.exceptions import HTTPException as StarletteHTTPException
 ```
 
-### **ReadyAPI** の例外ハンドラの再利用
+### **readyapi** の例外ハンドラの再利用
 
-また、何らかの方法で例外を使用することもできますが、**ReadyAPI** から同じデフォルトの例外ハンドラを使用することもできます。
+また、何らかの方法で例外を使用することもできますが、**readyapi** から同じデフォルトの例外ハンドラを使用することもできます。
 
 デフォルトの例外ハンドラを`readyapi.exception_handlers`からインポートして再利用することができます:
 

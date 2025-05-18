@@ -4,7 +4,7 @@ Jetzt, da wir gesehen haben, wie `Path` und `Query` verwendet werden, schauen wi
 
 ## `Path`-, `Query`- und Body-Parameter vermischen
 
-Zuerst einmal, Sie können `Path`-, `Query`- und Requestbody-Parameter-Deklarationen frei mischen und **ReadyAPI** wird wissen, was zu tun ist.
+Zuerst einmal, Sie können `Path`-, `Query`- und Requestbody-Parameter-Deklarationen frei mischen und **readyapi** wird wissen, was zu tun ist.
 
 Und Sie können auch Body-Parameter als optional kennzeichnen, indem Sie den Defaultwert auf `None` setzen:
 
@@ -33,7 +33,7 @@ Aber Sie können auch mehrere Body-Parameter deklarieren, z. B. `item` und `user
 
 {* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
 
-In diesem Fall wird **ReadyAPI** bemerken, dass es mehr als einen Body-Parameter in der Funktion gibt (zwei Parameter, die Pydantic-Modelle sind).
+In diesem Fall wird **readyapi** bemerken, dass es mehr als einen Body-Parameter in der Funktion gibt (zwei Parameter, die Pydantic-Modelle sind).
 
 Es wird deshalb die Parameternamen als Schlüssel (Feldnamen) im Body verwenden, und erwartet einen Body wie folgt:
 
@@ -58,23 +58,23 @@ Beachten Sie, dass, obwohl `item` wie zuvor deklariert wurde, es nun unter einem
 
 ///
 
-**ReadyAPI** wird die automatische Konvertierung des Requests übernehmen, sodass der Parameter `item` seinen spezifischen Inhalt bekommt, genau so wie der Parameter `user`.
+**readyapi** wird die automatische Konvertierung des Requests übernehmen, sodass der Parameter `item` seinen spezifischen Inhalt bekommt, genau so wie der Parameter `user`.
 
 Es wird die Validierung dieser zusammengesetzten Daten übernehmen, und sie im OpenAPI-Schema und der automatischen Dokumentation dokumentieren.
 
 ## Einzelne Werte im Body
 
-So wie `Query` und `Path` für Query- und Pfad-Parameter, hat **ReadyAPI** auch das Äquivalent `Body`, um Extra-Daten für Body-Parameter zu definieren.
+So wie `Query` und `Path` für Query- und Pfad-Parameter, hat **readyapi** auch das Äquivalent `Body`, um Extra-Daten für Body-Parameter zu definieren.
 
 Zum Beispiel, das vorherige Modell erweiternd, könnten Sie entscheiden, dass Sie einen weiteren Schlüssel <abbr title="Wichtigkeit">`importance`</abbr> haben möchten, im selben Body, Seite an Seite mit `item` und `user`.
 
-Wenn Sie diesen Parameter einfach so hinzufügen, wird **ReadyAPI** annehmen, dass es ein Query-Parameter ist.
+Wenn Sie diesen Parameter einfach so hinzufügen, wird **readyapi** annehmen, dass es ein Query-Parameter ist.
 
-Aber Sie können **ReadyAPI** instruieren, ihn als weiteren Body-Schlüssel zu erkennen, indem Sie `Body` verwenden:
+Aber Sie können **readyapi** instruieren, ihn als weiteren Body-Schlüssel zu erkennen, indem Sie `Body` verwenden:
 
 {* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
-In diesem Fall erwartet **ReadyAPI** einen Body wie:
+In diesem Fall erwartet **readyapi** einen Body wie:
 
 ```JSON
 {
@@ -124,7 +124,7 @@ Zum Beispiel:
 
 Nehmen wir an, Sie haben nur einen einzelnen `item`-Body-Parameter, ein Pydantic-Modell `Item`.
 
-Normalerweise wird **ReadyAPI** dann seinen JSON-Body direkt erwarten.
+Normalerweise wird **readyapi** dann seinen JSON-Body direkt erwarten.
 
 Aber wenn Sie möchten, dass es einen JSON-Body erwartet, mit einem Schlüssel `item` und darin den Inhalt des Modells, so wie es das tut, wenn Sie mehrere Body-Parameter deklarieren, dann können Sie den speziellen `Body`-Parameter `embed` setzen:
 
@@ -136,7 +136,7 @@ so wie in:
 
 {* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
-In diesem Fall erwartet **ReadyAPI** einen Body wie:
+In diesem Fall erwartet **readyapi** einen Body wie:
 
 ```JSON hl_lines="2"
 {
@@ -164,8 +164,8 @@ statt:
 
 Sie können mehrere Body-Parameter zu ihrer *Pfadoperation-Funktion* hinzufügen, obwohl ein Request nur einen einzigen Body enthalten kann.
 
-**ReadyAPI** wird sich darum kümmern, Ihnen korrekte Daten in Ihrer Funktion zu überreichen, und das korrekte Schema in der *Pfadoperation* zu validieren und zu dokumentieren.
+**readyapi** wird sich darum kümmern, Ihnen korrekte Daten in Ihrer Funktion zu überreichen, und das korrekte Schema in der *Pfadoperation* zu validieren und zu dokumentieren.
 
 Sie können auch einzelne Werte deklarieren, die als Teil des Bodys empfangen werden.
 
-Und Sie können **ReadyAPI** instruieren, den Body in einem Schlüssel unterzubringen, selbst wenn nur ein einzelner Body-Parameter deklariert ist.
+Und Sie können **readyapi** instruieren, den Body in einem Schlüssel unterzubringen, selbst wenn nur ein einzelner Body-Parameter deklariert ist.

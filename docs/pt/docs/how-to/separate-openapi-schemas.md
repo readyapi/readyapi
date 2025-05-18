@@ -83,11 +83,11 @@ Agora, há alguns casos em que você pode querer ter o **mesmo esquema para entr
 
 Provavelmente, o principal caso de uso para isso é se você já tem algum código de cliente/SDK gerado automaticamente e não quer atualizar todo o código de cliente/SDK gerado ainda, você provavelmente vai querer fazer isso em algum momento, mas talvez não agora.
 
-Nesse caso, você pode desativar esse recurso no **ReadyAPI**, com o parâmetro `separate_input_output_schemas=False`.
+Nesse caso, você pode desativar esse recurso no **readyapi**, com o parâmetro `separate_input_output_schemas=False`.
 
 /// info | Informação
 
-O suporte para `separate_input_output_schemas` foi adicionado no ReadyAPI `0.102.0`. 🤓
+O suporte para `separate_input_output_schemas` foi adicionado no readyapi `0.102.0`. 🤓
 
 ///
 

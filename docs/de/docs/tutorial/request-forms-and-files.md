@@ -28,7 +28,7 @@ Und Sie können einige der Dateien als `bytes` und einige als `UploadFile` dekla
 
 Sie können mehrere `File`- und `Form`-Parameter in einer *Pfadoperation* deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `multipart/form-data` statt `application/json` kodiert.
 
-Das ist keine Limitation von **ReadyAPI**, sondern Teil des HTTP-Protokolls.
+Das ist keine Limitation von **readyapi**, sondern Teil des HTTP-Protokolls.
 
 ///
 

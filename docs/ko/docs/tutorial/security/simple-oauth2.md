@@ -4,7 +4,7 @@
 
 ## `username`와 `password` 얻기
 
-**ReadyAPI** 보안 유틸리티를 사용하여 `username` 및 `password`를 가져올 것입니다.
+**readyapi** 보안 유틸리티를 사용하여 `username` 및 `password`를 가져올 것입니다.
 
 OAuth2는 (우리가 사용하고 있는) "패스워드 플로우"을 사용할 때 클라이언트/유저가 `username` 및 `password` 필드를 폼 데이터로 보내야 함을 지정합니다.
 
@@ -46,7 +46,7 @@ OAuth2의 경우 문자열일 뿐입니다.
 
 ## `username`과 `password`를 가져오는 코드
 
-이제 **ReadyAPI**에서 제공하는 유틸리티를 사용하여 이를 처리해 보겠습니다.
+이제 **readyapi**에서 제공하는 유틸리티를 사용하여 이를 처리해 보겠습니다.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ OAuth2 사양은 실제로 `password`라는 고정 값이 있는 `grant_type` �
 
 /// info | 정보
 
-`OAuth2PasswordRequestForm`은 `OAuth2PasswordBearer`와 같이 **ReadyAPI**에 대한 특수 클래스가 아닙니다.
+`OAuth2PasswordRequestForm`은 `OAuth2PasswordBearer`와 같이 **readyapi**에 대한 특수 클래스가 아닙니다.
 
-`OAuth2PasswordBearer`는 **ReadyAPI**가 보안 체계임을 알도록 합니다. 그래서 OpenAPI에 그렇게 추가됩니다.
+`OAuth2PasswordBearer`는 **readyapi**가 보안 체계임을 알도록 합니다. 그래서 OpenAPI에 그렇게 추가됩니다.
 
 그러나 `OAuth2PasswordRequestForm`은 직접 작성하거나 `Form` 매개변수를 직접 선언할 수 있는 클래스 의존성일 뿐입니다.
 
-그러나 일반적인 사용 사례이므로 더 쉽게 하기 위해 **ReadyAPI**에서 직접 제공합니다.
+그러나 일반적인 사용 사례이므로 더 쉽게 하기 위해 **readyapi**에서 직접 제공합니다.
 
 ///
 
@@ -184,7 +184,7 @@ UserInDB(
 
 사양을 준수하기 위해 스스로 올바르게 수행하기 위해 거의 유일하게 기억해야 하는 것입니다.
 
-나머지는 **ReadyAPI**가 처리합니다.
+나머지는 **readyapi**가 처리합니다.
 
 ///
 

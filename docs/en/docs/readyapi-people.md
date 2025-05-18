@@ -3,9 +3,9 @@ hide:
   - navigation
 ---
 
-# ReadyAPI People
+# readyapi People
 
-ReadyAPI has an amazing community that welcomes people from all backgrounds.
+readyapi has an amazing community that welcomes people from all backgrounds.
 
 ## Creator
 
@@ -21,13 +21,13 @@ This is me:
 
 </div>
 
-I'm the creator of **ReadyAPI**. You can read more about that in [Help ReadyAPI - Get Help - Connect with the author](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
+I'm the creator of **readyapi**. You can read more about that in [Help readyapi - Get Help - Connect with the author](help-readyapi.md#connect-with-the-author){.internal-link target=_blank}.
 
 ...But here I want to show you the community.
 
 ---
 
-**ReadyAPI** receives a lot of support from the community. And I want to highlight their contributions.
+**readyapi** receives a lot of support from the community. And I want to highlight their contributions.
 
 These are the people that:
 
@@ -44,7 +44,7 @@ A round of applause to them. 👏 🙇
 
 This is the current list of team members. 😎
 
-They have different levels of involvement and permissions, they can perform [repository management tasks](./management-tasks.md){.internal-link target=_blank} and together we  [manage the ReadyAPI repository](./management.md){.internal-link target=_blank}.
+They have different levels of involvement and permissions, they can perform [repository management tasks](./management-tasks.md){.internal-link target=_blank} and together we  [manage the readyapi repository](./management.md){.internal-link target=_blank}.
 
 <div class="user-list user-list-center">
 
@@ -56,23 +56,23 @@ They have different levels of involvement and permissions, they can perform [rep
 
 </div>
 
-Although the team members have the permissions to perform privileged tasks, all the [help from others maintaining ReadyAPI](./help-readyapi.md#help-maintain-readyapi){.internal-link target=_blank} is very much appreciated! 🙇‍♂️
+Although the team members have the permissions to perform privileged tasks, all the [help from others maintaining readyapi](./help-readyapi.md#help-maintain-readyapi){.internal-link target=_blank} is very much appreciated! 🙇‍♂️
 
-## ReadyAPI Experts
+## readyapi Experts
 
 These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🙇
 
-They have proven to be **ReadyAPI Experts** by helping many others. ✨
+They have proven to be **readyapi Experts** by helping many others. ✨
 
 /// tip
 
-You could become an official ReadyAPI Expert too!
+You could become an official readyapi Expert too!
 
 Just [help others with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank}. 🤓
 
 ///
 
-You can see the **ReadyAPI Experts** for:
+You can see the **readyapi Experts** for:
 
 * [Last Month](#readyapi-experts-last-month) 🤓
 * [3 Months](#readyapi-experts-3-months) 😎
@@ -80,7 +80,7 @@ You can see the **ReadyAPI Experts** for:
 * [1 Year](#readyapi-experts-1-year) 🧑‍🔬
 * [**All Time**](#readyapi-experts-all-time) 🧙
 
-### ReadyAPI Experts - Last Month
+### readyapi Experts - Last Month
 
 These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last month. 🤓
 
@@ -98,7 +98,7 @@ These are the users that have been [helping others the most with questions in Gi
 
 </div>
 
-### ReadyAPI Experts - 3 Months
+### readyapi Experts - 3 Months
 
 These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last 3 months. 😎
 
@@ -116,7 +116,7 @@ These are the users that have been [helping others the most with questions in Gi
 
 </div>
 
-### ReadyAPI Experts - 6 Months
+### readyapi Experts - 6 Months
 
 These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last 6 months. 🧐
 
@@ -134,7 +134,7 @@ These are the users that have been [helping others the most with questions in Gi
 
 </div>
 
-### ReadyAPI Experts - 1 Year
+### readyapi Experts - 1 Year
 
 These are the users that have been [helping others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} during the last year. 🧑‍🔬
 
@@ -152,9 +152,9 @@ These are the users that have been [helping others the most with questions in Gi
 
 </div>
 
-### ReadyAPI Experts - All Time
+### readyapi Experts - All Time
 
-Here are the all time **ReadyAPI Experts**. 🤓🤯
+Here are the all time **readyapi Experts**. 🤓🤯
 
 These are the users that have [helped others the most with questions in GitHub](help-readyapi.md#help-others-with-questions-in-github){.internal-link target=_blank} through *all time*. 🧙
 
@@ -194,7 +194,7 @@ They have contributed source code, documentation, etc. 📦
 
 </div>
 
-There are hundreds of other contributors, you can see them all in the <a href="https://github.com/readyapi/readyapi/graphs/contributors" class="external-link" target="_blank">ReadyAPI GitHub Contributors page</a>. 👷
+There are hundreds of other contributors, you can see them all in the <a href="https://github.com/readyapi/readyapi/graphs/contributors" class="external-link" target="_blank">readyapi GitHub Contributors page</a>. 👷
 
 ## Top Translators
 
@@ -239,7 +239,7 @@ I only speak a few languages (and not very well 😅). So, the reviewers are the
 
 These are the **Sponsors**. 😎
 
-They are supporting my work with **ReadyAPI** (and others), mainly through <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsors</a>.
+They are supporting my work with **readyapi** (and others), mainly through <a href="https://github.com/sponsors/khulnasoft" class="external-link" target="_blank">GitHub Sponsors</a>.
 
 {% if sponsors %}
 

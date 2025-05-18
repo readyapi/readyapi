@@ -4,7 +4,7 @@
 
 例えば、データベースに保存する必要がある場合です。
 
-そのために、**ReadyAPI** は`jsonable_encoder()`関数を提供しています。
+そのために、**readyapi** は`jsonable_encoder()`関数を提供しています。
 
 ## `jsonable_encoder`の使用
 
@@ -30,6 +30,6 @@ Pydanticモデルのようなオブジェクトを受け取り、JSON互換版�
 
 /// note | 備考
 
-`jsonable_encoder`は実際には **ReadyAPI** が内部的にデータを変換するために使用します。しかしこれは他の多くのシナリオで有用です。
+`jsonable_encoder`は実際には **readyapi** が内部的にデータを変換するために使用します。しかしこれは他の多くのシナリオで有用です。
 
 ///

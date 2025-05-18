@@ -57,11 +57,11 @@ fluffy = Cat(name="Mr Fluffy")
 
 따라서, 파이썬 클래스는 **호출 가능**합니다.
 
-그래서 **ReadyAPI**에서는 파이썬 클래스를 의존성으로 사용할 수 있습니다.
+그래서 **readyapi**에서는 파이썬 클래스를 의존성으로 사용할 수 있습니다.
 
-ReadyAPI가 실질적으로 확인하는 것은 "호출 가능성"(함수, 클래스 또는 다른 모든 것)과 정의된 매개변수들입니다.
+readyapi가 실질적으로 확인하는 것은 "호출 가능성"(함수, 클래스 또는 다른 모든 것)과 정의된 매개변수들입니다.
 
-"호출 가능"한 것을 의존성으로서 **ReadyAPI**에 전달하면, 그 "호출 가능"한 것의 매개변수들을 분석한 후 이를 *경로 작동 함수*를 위한 매개변수와 동일한 방식으로 처리합니다. 하위-의존성 또한 같은 방식으로 처리합니다.
+"호출 가능"한 것을 의존성으로서 **readyapi**에 전달하면, 그 "호출 가능"한 것의 매개변수들을 분석한 후 이를 *경로 작동 함수*를 위한 매개변수와 동일한 방식으로 처리합니다. 하위-의존성 또한 같은 방식으로 처리합니다.
 
 매개변수가 없는 "호출 가능"한 것 역시 매개변수가 없는 *경로 작동 함수*와 동일한 방식으로 적용됩니다.
 
@@ -77,7 +77,7 @@ ReadyAPI가 실질적으로 확인하는 것은 "호출 가능성"(함수, 클�
 
 {* ../../docs_src/dependencies/tutorial001.py hl[9] *}
 
-이 매개변수들은 **ReadyAPI**가 의존성을 "해결"하기 위해 사용할 것입니다
+이 매개변수들은 **readyapi**가 의존성을 "해결"하기 위해 사용할 것입니다
 
 함수와 클래스 두 가지 방식 모두, 아래 요소를 갖습니다:
 
@@ -93,7 +93,7 @@ ReadyAPI가 실질적으로 확인하는 것은 "호출 가능성"(함수, 클�
 
 {* ../../docs_src/dependencies/tutorial002.py hl[19] *}
 
-**ReadyAPI**는 `CommonQueryParams` 클래스를 호출합니다. 이것은 해당 클래스의 "인스턴스"를 생성하고 그 인스턴스는 함수의 매개변수 `commons`로 전달됩니다.
+**readyapi**는 `CommonQueryParams` 클래스를 호출합니다. 이것은 해당 클래스의 "인스턴스"를 생성하고 그 인스턴스는 함수의 매개변수 `commons`로 전달됩니다.
 
 ## 타입 힌팅 vs `Depends`
 
@@ -109,8 +109,8 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 ... = Depends(CommonQueryParams)
 ```
 
-... **ReadyAPI**가 실제로 어떤 것이 의존성인지 알기 위해서 사용하는 방법입니다.
-ReadyAPI는 선언된 매개변수들을 추출할 것이고 실제로 이 변수들을 호출할 것입니다.
+... **readyapi**가 실제로 어떤 것이 의존성인지 알기 위해서 사용하는 방법입니다.
+readyapi는 선언된 매개변수들을 추출할 것이고 실제로 이 변수들을 호출할 것입니다.
 
 ---
 
@@ -120,7 +120,7 @@ ReadyAPI는 선언된 매개변수들을 추출할 것이고 실제로 이 변�
 commons: CommonQueryParams ...
 ```
 
-... **ReadyAPI**는 `CommonQueryParams` 변수에 어떠한 특별한 의미도 부여하지 않습니다. ReadyAPI는 이 변수를 데이터 변환, 검증 등에 활용하지 않습니다. (활용하려면 `= Depends(CommonQueryParams)`를 사용해야 합니다.)
+... **readyapi**는 `CommonQueryParams` 변수에 어떠한 특별한 의미도 부여하지 않습니다. readyapi는 이 변수를 데이터 변환, 검증 등에 활용하지 않습니다. (활용하려면 `= Depends(CommonQueryParams)`를 사용해야 합니다.)
 
 사실 아래와 같이 작성해도 무관합니다:
 
@@ -144,7 +144,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-**ReadyAPI**는 *특히* 의존성이 **ReadyAPI**가 클래스 자체의 인스턴스를 생성하기 위해 "호출"하는 클래스인 경우, 조금 더 쉬운 방법을 제공합니다.
+**readyapi**는 *특히* 의존성이 **readyapi**가 클래스 자체의 인스턴스를 생성하기 위해 "호출"하는 클래스인 경우, 조금 더 쉬운 방법을 제공합니다.
 
 이러한 특정한 경우에는 아래처럼 사용할 수 있습니다:
 
@@ -166,12 +166,12 @@ commons: CommonQueryParams = Depends()
 
 {* ../../docs_src/dependencies/tutorial004.py hl[19] *}
 
-...이렇게 코드를 단축하여도 **ReadyAPI**는 무엇을 해야하는지 알고 있습니다.
+...이렇게 코드를 단축하여도 **readyapi**는 무엇을 해야하는지 알고 있습니다.
 
 /// tip | 팁
 
 만약 이것이 도움이 되기보다 더 헷갈리게 만든다면, 잊어버리십시오. 이것이 반드시 필요한 것은 아닙니다.
 
-이것은 단지 손쉬운 방법일 뿐입니다. 왜냐하면 **ReadyAPI**는 코드 반복을 최소화할 수 있는 방법을 고민하기 때문입니다.
+이것은 단지 손쉬운 방법일 뿐입니다. 왜냐하면 **readyapi**는 코드 반복을 최소화할 수 있는 방법을 고민하기 때문입니다.
 
 ///

@@ -24,7 +24,7 @@ Esse código de status será usado na resposta e será adicionado ao esquema Ope
 
 Você também poderia usar `from starlette import status`.
 
-**ReadyAPI** fornece o mesmo `starlette.status` como `readyapi.status` apenas como uma conveniência para você, o desenvolvedor. Mas vem diretamente do Starlette.
+**readyapi** fornece o mesmo `starlette.status` como `readyapi.status` apenas como uma conveniência para você, o desenvolvedor. Mas vem diretamente do Starlette.
 
 ///
 
@@ -44,7 +44,7 @@ Se você tem uma grande aplicação, você pode acabar acumulando **várias tags
 
 Nestes casos, pode fazer sentido armazenar as tags em um `Enum`.
 
-**ReadyAPI** suporta isso da mesma maneira que com strings simples:
+**readyapi** suporta isso da mesma maneira que com strings simples:
 
 {* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
@@ -56,7 +56,7 @@ Você pode adicionar um `summary` e uma `description`:
 
 ## Descrição do docstring
 
-Como as descrições tendem a ser longas e cobrir várias linhas, você pode declarar a descrição da *operação de rota* na <abbr title="uma string de várias linhas como a primeira expressão dentro de uma função (não atribuída a nenhuma variável) usada para documentação">docstring</abbr> da função e o **ReadyAPI** irá lê-la de lá.
+Como as descrições tendem a ser longas e cobrir várias linhas, você pode declarar a descrição da *operação de rota* na <abbr title="uma string de várias linhas como a primeira expressão dentro de uma função (não atribuída a nenhuma variável) usada para documentação">docstring</abbr> da função e o **readyapi** irá lê-la de lá.
 
 Você pode escrever <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> na docstring, ele será interpretado e exibido corretamente (levando em conta a indentação da docstring).
 
@@ -83,7 +83,7 @@ Note que `response_description` se refere especificamente à resposta, a `descri
 
 OpenAPI especifica que cada *operação de rota* requer uma descrição de resposta.
 
-Então, se você não fornecer uma, o **ReadyAPI** irá gerar automaticamente uma de "Resposta bem-sucedida".
+Então, se você não fornecer uma, o **readyapi** irá gerar automaticamente uma de "Resposta bem-sucedida".
 
 ///
 

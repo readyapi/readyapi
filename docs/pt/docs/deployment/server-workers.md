@@ -19,7 +19,7 @@ Aqui mostrarei como usar o **Uvicorn** com **processos de trabalho** usando o co
 
 /// info | Informação
 
-Se você estiver usando contêineres, por exemplo com Docker ou Kubernetes, falarei mais sobre isso no próximo capítulo: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
+Se você estiver usando contêineres, por exemplo com Docker ou Kubernetes, falarei mais sobre isso no próximo capítulo: [readyapi em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 Em particular, ao executar no **Kubernetes** você provavelmente **não** vai querer usar vários trabalhadores e, em vez disso, executar **um único processo Uvicorn por contêiner**, mas falarei sobre isso mais adiante neste capítulo.
 
@@ -38,7 +38,7 @@ Se você usar o comando `readyapi`:
 ```console
 $ <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting production server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting production server 🚀
 
              Searching for package file structure from directories with
              <font color="#3465A4">__init__.py</font> files
@@ -46,7 +46,7 @@ $ <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-decoratio
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with the
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with the
              following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -126,7 +126,7 @@ Da lista de conceitos de implantação acima, o uso de trabalhadores ajudaria pr
 
 ## Contêineres e Docker
 
-No próximo capítulo sobre [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}, explicarei algumas estratégias que você pode usar para lidar com os outros **conceitos de implantação**.
+No próximo capítulo sobre [readyapi em contêineres - Docker](docker.md){.internal-link target=_blank}, explicarei algumas estratégias que você pode usar para lidar com os outros **conceitos de implantação**.
 
 Vou mostrar como **construir sua própria imagem do zero** para executar um único processo Uvicorn. É um processo simples e provavelmente é o que você gostaria de fazer ao usar um sistema de gerenciamento de contêineres distribuídos como o **Kubernetes**.
 
@@ -136,4 +136,4 @@ Você pode usar vários processos de trabalho com a opção CLI `--workers` com 
 
 Você pode usar essas ferramentas e ideias se estiver configurando **seu próprio sistema de implantação** enquanto cuida dos outros conceitos de implantação.
 
-Confira o próximo capítulo para aprender sobre **ReadyAPI** com contêineres (por exemplo, Docker e Kubernetes). Você verá que essas ferramentas têm maneiras simples de resolver os outros **conceitos de implantação** também. ✨
+Confira o próximo capítulo para aprender sobre **readyapi** com contêineres (por exemplo, Docker e Kubernetes). Você verá que essas ferramentas têm maneiras simples de resolver os outros **conceitos de implantação** também. ✨

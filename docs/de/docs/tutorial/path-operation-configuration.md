@@ -24,7 +24,7 @@ Dieser Statuscode wird in der Response verwendet und zum OpenAPI-Schema hinzugef
 
 Sie können auch `from starlette import status` verwenden.
 
-**ReadyAPI** bietet dieselben `starlette.status`-Codes auch via `readyapi.status` an, als Annehmlichkeit für Sie, den Entwickler. Sie kommen aber direkt von Starlette.
+**readyapi** bietet dieselben `starlette.status`-Codes auch via `readyapi.status` an, als Annehmlichkeit für Sie, den Entwickler. Sie kommen aber direkt von Starlette.
 
 ///
 
@@ -44,7 +44,7 @@ Wenn Sie eine große Anwendung haben, können sich am Ende **viele Tags** anhäu
 
 In diesem Fall macht es Sinn, die Tags in einem `Enum` zu speichern.
 
-**ReadyAPI** unterstützt diese genauso wie einfache Strings:
+**readyapi** unterstützt diese genauso wie einfache Strings:
 
 {* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
@@ -56,7 +56,7 @@ Sie können eine Zusammenfassung (`summary`) und eine Beschreibung (`description
 
 ## Beschreibung mittels Docstring
 
-Da Beschreibungen oft mehrere Zeilen lang sind, können Sie die Beschreibung der *Pfadoperation* im <abbr title="Ein mehrzeiliger String (keiner Variable zugewiesen) als erster Ausdruck in einer Funktion, wird für die Dokumentation derselben verwendet">Docstring</abbr> der Funktion deklarieren, und **ReadyAPI** wird sie daraus auslesen.
+Da Beschreibungen oft mehrere Zeilen lang sind, können Sie die Beschreibung der *Pfadoperation* im <abbr title="Ein mehrzeiliger String (keiner Variable zugewiesen) als erster Ausdruck in einer Funktion, wird für die Dokumentation derselben verwendet">Docstring</abbr> der Funktion deklarieren, und **readyapi** wird sie daraus auslesen.
 
 Sie können im Docstring <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> schreiben, es wird korrekt interpretiert und angezeigt (die Einrückung des Docstring beachtend).
 
@@ -82,7 +82,7 @@ beachten Sie, dass sich `response_description` speziell auf die Response bezieht
 
 OpenAPI verlangt, dass jede *Pfadoperation* über eine Beschreibung der Response verfügt.
 
-Daher, wenn Sie keine vergeben, wird **ReadyAPI** automatisch eine für „Erfolgreiche Response“ erstellen.
+Daher, wenn Sie keine vergeben, wird **readyapi** automatisch eine für „Erfolgreiche Response“ erstellen.
 
 ///
 

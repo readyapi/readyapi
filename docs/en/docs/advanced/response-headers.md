@@ -12,7 +12,7 @@ And then you can return any object you need, as you normally would (a `dict`, a 
 
 And if you declared a `response_model`, it will still be used to filter and convert the object you returned.
 
-**ReadyAPI** will use that *temporal* response to extract the headers (also cookies and status code), and will put them in the final response that contains the value you returned, filtered by any `response_model`.
+**readyapi** will use that *temporal* response to extract the headers (also cookies and status code), and will put them in the final response that contains the value you returned, filtered by any `response_model`.
 
 You can also declare the `Response` parameter in dependencies, and set headers (and cookies) in them.
 
@@ -28,9 +28,9 @@ Create a response as described in [Return a Response Directly](response-directly
 
 You could also use `from starlette.responses import Response` or `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
+**readyapi** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
 
-And as the `Response` can be used frequently to set headers and cookies, **ReadyAPI** also provides it at `readyapi.Response`.
+And as the `Response` can be used frequently to set headers and cookies, **readyapi** also provides it at `readyapi.Response`.
 
 ///
 

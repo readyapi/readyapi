@@ -67,7 +67,7 @@ In this case, the function parameter `q` will be optional, and will be `None` by
 
 /// check
 
-Also notice that **ReadyAPI** is smart enough to notice that the path parameter `item_id` is a path parameter and `q` is not, so, it's a query parameter.
+Also notice that **readyapi** is smart enough to notice that the path parameter `item_id` is a path parameter and `q` is not, so, it's a query parameter.
 
 ///
 
@@ -112,7 +112,7 @@ or any other case variation (uppercase, first letter in uppercase, etc), your fu
 
 ## Multiple path and query parameters
 
-You can declare multiple path parameters and query parameters at the same time, **ReadyAPI** knows which is which.
+You can declare multiple path parameters and query parameters at the same time, **readyapi** knows which is which.
 
 And you don't have to declare them in any specific order.
 

@@ -1,8 +1,8 @@
 # Retornando uma Resposta Diretamente
 
-Quando você cria uma *operação de rota* no **ReadyAPI** você pode retornar qualquer dado nela: um dicionário (`dict`), uma lista (`list`), um modelo do Pydantic ou do seu banco de dados, etc.
+Quando você cria uma *operação de rota* no **readyapi** você pode retornar qualquer dado nela: um dicionário (`dict`), uma lista (`list`), um modelo do Pydantic ou do seu banco de dados, etc.
 
-Por padrão, o **ReadyAPI** irá converter automaticamente o valor do retorno para JSON utilizando o `jsonable_encoder` explicado em [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
+Por padrão, o **readyapi** irá converter automaticamente o valor do retorno para JSON utilizando o `jsonable_encoder` explicado em [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Então, por baixo dos panos, ele incluiria esses dados compatíveis com JSON (e.g. um `dict`) dentro de uma `JSONResponse` que é utilizada para enviar uma resposta para o cliente.
 
@@ -20,7 +20,7 @@ A própria `JSONResponse` é uma subclasse de `Response`.
 
 ///
 
-E quando você retorna uma `Response`, o **ReadyAPI** vai repassá-la diretamente.
+E quando você retorna uma `Response`, o **readyapi** vai repassá-la diretamente.
 
 Ele não vai fazer conversões de dados com modelos do Pydantic, não irá converter a tipagem de nenhum conteúdo, etc.
 
@@ -28,7 +28,7 @@ Isso te dá bastante flexibilidade. Você pode retornar qualquer tipo de dado, s
 
 ## Utilizando o `jsonable_encoder` em uma `Response`
 
-Como o **ReadyAPI** não realiza nenhuma mudança na `Response` que você retorna, você precisa garantir que o conteúdo dela está pronto para uso.
+Como o **readyapi** não realiza nenhuma mudança na `Response` que você retorna, você precisa garantir que o conteúdo dela está pronto para uso.
 
 Por exemplo, você não pode colocar um modelo do Pydantic em uma `JSONResponse` sem antes convertê-lo em um `dict` com todos os tipos de dados (como `datetime`, `UUID`, etc) convertidos para tipos compatíveis com JSON.
 
@@ -40,13 +40,13 @@ Para esses casos, você pode usar o `jsonable_encoder` para converter seus dados
 
 Você também pode utilizar `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** utiliza a mesma `starlette.responses` como `readyapi.responses` apenas como uma conveniência para você, desenvolvedor. Mas maior parte das respostas disponíveis vem diretamente do Starlette.
+**readyapi** utiliza a mesma `starlette.responses` como `readyapi.responses` apenas como uma conveniência para você, desenvolvedor. Mas maior parte das respostas disponíveis vem diretamente do Starlette.
 
 ///
 
 ## Retornando uma `Response`
 
-O exemplo acima mostra todas as partes que você precisa, mas ainda não é muito útil, já que você poderia ter retornado o `item` diretamente, e o **ReadyAPI** colocaria em uma `JSONResponse` para você, convertendo em um `dict`, etc. Tudo isso por padrão.
+O exemplo acima mostra todas as partes que você precisa, mas ainda não é muito útil, já que você poderia ter retornado o `item` diretamente, e o **readyapi** colocaria em uma `JSONResponse` para você, convertendo em um `dict`, etc. Tudo isso por padrão.
 
 Agora, vamos ver como você pode usar isso para retornar uma resposta personalizada.
 

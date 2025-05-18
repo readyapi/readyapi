@@ -83,11 +83,11 @@ Ahora, hay algunos casos donde podrías querer tener el **mismo esquema para ent
 
 Probablemente el caso principal para esto es si ya tienes algún código cliente/SDKs autogenerado y no quieres actualizar todo el código cliente/SDKs autogenerado aún, probablemente querrás hacerlo en algún momento, pero tal vez no ahora.
 
-En ese caso, puedes desactivar esta funcionalidad en **ReadyAPI**, con el parámetro `separate_input_output_schemas=False`.
+En ese caso, puedes desactivar esta funcionalidad en **readyapi**, con el parámetro `separate_input_output_schemas=False`.
 
 /// info | Información
 
-El soporte para `separate_input_output_schemas` fue agregado en ReadyAPI `0.102.0`. 🤓
+El soporte para `separate_input_output_schemas` fue agregado en readyapi `0.102.0`. 🤓
 
 ///
 

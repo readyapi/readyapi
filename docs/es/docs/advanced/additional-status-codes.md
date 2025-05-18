@@ -1,6 +1,6 @@
 # Códigos de Estado Adicionales
 
-Por defecto, **ReadyAPI** devolverá los responses usando un `JSONResponse`, colocando el contenido que devuelves desde tu *path operation* dentro de ese `JSONResponse`.
+Por defecto, **readyapi** devolverá los responses usando un `JSONResponse`, colocando el contenido que devuelves desde tu *path operation* dentro de ese `JSONResponse`.
 
 Usará el código de estado por defecto o el que configures en tu *path operation*.
 
@@ -30,12 +30,12 @@ Asegúrate de que tenga los datos que deseas que tenga y que los valores sean JS
 
 También podrías usar `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** proporciona los mismos `starlette.responses` que `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles provienen directamente de Starlette. Lo mismo con `status`.
+**readyapi** proporciona los mismos `starlette.responses` que `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles provienen directamente de Starlette. Lo mismo con `status`.
 
 ///
 
 ## OpenAPI y documentación de API
 
-Si devuelves códigos de estado adicionales y responses directamente, no se incluirán en el esquema de OpenAPI (la documentación de la API), porque ReadyAPI no tiene una forma de saber de antemano qué vas a devolver.
+Si devuelves códigos de estado adicionales y responses directamente, no se incluirán en el esquema de OpenAPI (la documentación de la API), porque readyapi no tiene una forma de saber de antemano qué vas a devolver.
 
 Pero puedes documentarlo en tu código, usando: [Responses Adicionales](additional-responses.md){.internal-link target=_blank}.

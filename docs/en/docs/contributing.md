@@ -1,6 +1,6 @@
 # Development - Contributing
 
-First, you might want to see the basic ways to [help ReadyAPI and get help](help-readyapi.md){.internal-link target=_blank}.
+First, you might want to see the basic ways to [help readyapi and get help](help-readyapi.md){.internal-link target=_blank}.
 
 ## Developing
 
@@ -24,13 +24,13 @@ $ pip install -r requirements.txt
 
 </div>
 
-It will install all the dependencies and your local ReadyAPI in your local environment.
+It will install all the dependencies and your local readyapi in your local environment.
 
-### Using your local ReadyAPI
+### Using your local readyapi
 
-If you create a Python file that imports and uses ReadyAPI, and run it with the Python from your local environment, it will use your cloned local ReadyAPI source code.
+If you create a Python file that imports and uses readyapi, and run it with the Python from your local environment, it will use your cloned local readyapi source code.
 
-And if you update that local ReadyAPI source code when you run that Python file again, it will use the fresh version of ReadyAPI you just edited.
+And if you update that local readyapi source code when you run that Python file again, it will use the fresh version of readyapi you just edited.
 
 That way, you don't have to "install" your local version to be able to test every change.
 
@@ -38,7 +38,7 @@ That way, you don't have to "install" your local version to be able to test ever
 
 This only happens when you install using this included `requirements.txt` instead of running `pip install readyapi` directly.
 
-That is because inside the `requirements.txt` file, the local version of ReadyAPI is marked to be installed in "editable" mode, with the `-e` option.
+That is because inside the `requirements.txt` file, the local version of readyapi is marked to be installed in "editable" mode, with the `-e` option.
 
 ///
 

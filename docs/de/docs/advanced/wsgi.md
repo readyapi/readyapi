@@ -18,7 +18,7 @@ Und dann mounten Sie das auf einem Pfad.
 
 Jetzt wird jede Anfrage unter dem Pfad `/v1/` von der Flask-Anwendung verarbeitet.
 
-Und der Rest wird von **ReadyAPI** gehandhabt.
+Und der Rest wird von **readyapi** gehandhabt.
 
 Wenn Sie das mit Uvicorn ausführen und auf <a href="http://localhost:8000/v1/" class="external-link" target="_blank">http://localhost:8000/v1/</a> gehen, sehen Sie die Response von Flask:
 
@@ -26,7 +26,7 @@ Wenn Sie das mit Uvicorn ausführen und auf <a href="http://localhost:8000/v1/" 
 Hello, World from Flask!
 ```
 
-Und wenn Sie auf <a href="http://localhost:8000/v2" class="external-link" target="_blank">http://localhost:8000/v2</a> gehen, sehen Sie die Response von ReadyAPI:
+Und wenn Sie auf <a href="http://localhost:8000/v2" class="external-link" target="_blank">http://localhost:8000/v2</a> gehen, sehen Sie die Response von readyapi:
 
 ```JSON
 {

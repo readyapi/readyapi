@@ -90,9 +90,9 @@ $ pip install "passlib[bcrypt]"
 
 Mit `passlib` können Sie sogar konfigurieren, Passwörter zu lesen, die von **Django**, einem **Flask**-Sicherheit-Plugin, oder vielen anderen erstellt wurden.
 
-So könnten Sie beispielsweise die gleichen Daten aus einer Django-Anwendung in einer Datenbank mit einer ReadyAPI-Anwendung teilen. Oder schrittweise eine Django-Anwendung migrieren, während Sie dieselbe Datenbank verwenden.
+So könnten Sie beispielsweise die gleichen Daten aus einer Django-Anwendung in einer Datenbank mit einer readyapi-Anwendung teilen. Oder schrittweise eine Django-Anwendung migrieren, während Sie dieselbe Datenbank verwenden.
 
-Und Ihre Benutzer könnten sich gleichzeitig über Ihre Django-Anwendung oder Ihre **ReadyAPI**-Anwendung anmelden.
+Und Ihre Benutzer könnten sich gleichzeitig über Ihre Django-Anwendung oder Ihre **readyapi**-Anwendung anmelden.
 
 ///
 
@@ -250,11 +250,11 @@ Sie können diese verwenden, um einem JWT-Token einen bestimmten Satz von Berech
 
 Anschließend können Sie diesen Token einem Benutzer direkt oder einem Dritten geben, damit diese mit einer Reihe von Einschränkungen mit Ihrer API interagieren können.
 
-Wie Sie sie verwenden und wie sie in **ReadyAPI** integriert sind, erfahren Sie später im **Handbuch für fortgeschrittene Benutzer**.
+Wie Sie sie verwenden und wie sie in **readyapi** integriert sind, erfahren Sie später im **Handbuch für fortgeschrittene Benutzer**.
 
 ## Zusammenfassung
 
-Mit dem, was Sie bis hier gesehen haben, können Sie eine sichere **ReadyAPI**-Anwendung mithilfe von Standards wie OAuth2 und JWT einrichten.
+Mit dem, was Sie bis hier gesehen haben, können Sie eine sichere **readyapi**-Anwendung mithilfe von Standards wie OAuth2 und JWT einrichten.
 
 In fast jedem Framework wird die Handhabung der Sicherheit recht schnell zu einem ziemlich komplexen Thema.
 
@@ -262,11 +262,11 @@ Viele Packages, die es stark vereinfachen, müssen viele Kompromisse beim Datenm
 
 ---
 
-**ReadyAPI** geht bei keiner Datenbank, keinem Datenmodell oder Tool Kompromisse ein.
+**readyapi** geht bei keiner Datenbank, keinem Datenmodell oder Tool Kompromisse ein.
 
 Es gibt Ihnen die volle Flexibilität, diejenigen auszuwählen, die am besten zu Ihrem Projekt passen.
 
-Und Sie können viele gut gepflegte und weit verbreitete Packages wie `passlib` und `python-jose` direkt verwenden, da **ReadyAPI** keine komplexen Mechanismen zur Integration externer Pakete erfordert.
+Und Sie können viele gut gepflegte und weit verbreitete Packages wie `passlib` und `python-jose` direkt verwenden, da **readyapi** keine komplexen Mechanismen zur Integration externer Pakete erfordert.
 
 Aber es bietet Ihnen die Werkzeuge, um den Prozess so weit wie möglich zu vereinfachen, ohne Kompromisse bei Flexibilität, Robustheit oder Sicherheit einzugehen.
 

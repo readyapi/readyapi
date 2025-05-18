@@ -38,7 +38,7 @@ Das bedeutet, sie senden nur die Daten, die Sie aktualisieren wollen, der Rest b
 
 Und viele Teams verwenden ausschließlich `PUT`, selbst für nur Teil-Aktualisierungen.
 
-Es steht Ihnen **frei**, das zu verwenden, was Sie möchten, **ReadyAPI** legt Ihnen keine Einschränkungen auf.
+Es steht Ihnen **frei**, das zu verwenden, was Sie möchten, **readyapi** legt Ihnen keine Einschränkungen auf.
 
 Aber dieser Leitfaden zeigt Ihnen mehr oder weniger, wie die beiden normalerweise verwendet werden.
 

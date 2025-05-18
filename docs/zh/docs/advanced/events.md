@@ -24,7 +24,7 @@
 
 ## 生命周期 lifespan
 
-你可以使用`ReadyAPI()`应用的`lifespan`参数和一个上下文管理器（稍后我将为你展示）来定义**启动**和**关闭**的逻辑。
+你可以使用`readyapi()`应用的`lifespan`参数和一个上下文管理器（稍后我将为你展示）来定义**启动**和**关闭**的逻辑。
 
 让我们从一个例子开始，然后详细介绍。
 
@@ -84,9 +84,9 @@ async with lifespan(app):
 
 你可以像上面一样创建了一个上下文管理器或者异步上下文管理器，它的作用是在进入 `with` 块时，执行 `yield` 之前的代码，并且在离开 `with` 块时，执行 `yield` 后面的代码。
 
-但在我们上面的例子里，我们并不是直接使用，而是传递给 ReadyAPI 来供其使用。
+但在我们上面的例子里，我们并不是直接使用，而是传递给 readyapi 来供其使用。
 
-`ReadyAPI()` 的 `lifespan` 参数接受一个**异步上下文管理器**，所以我们可以把我们新定义的上下文管理器 `lifespan` 传给它。
+`readyapi()` 的 `lifespan` 参数接受一个**异步上下文管理器**，所以我们可以把我们新定义的上下文管理器 `lifespan` 传给它。
 
 ```Python hl_lines="22"
 {!../../docs_src/events/tutorial003.py!}
@@ -96,7 +96,7 @@ async with lifespan(app):
 
 /// warning | 警告
 
-配置**启动**和**关闭**事件的推荐方法是使用 `ReadyAPI()` 应用的 `lifespan` 参数，如前所示。如果你提供了一个 `lifespan` 参数，启动（`startup`）和关闭（`shutdown`）事件处理器将不再生效。要么使用 `lifespan`，要么配置所有事件，两者不能共用。
+配置**启动**和**关闭**事件的推荐方法是使用 `readyapi()` 应用的 `lifespan` 参数，如前所示。如果你提供了一个 `lifespan` 参数，启动（`startup`）和关闭（`shutdown`）事件处理器将不再生效。要么使用 `lifespan`，要么配置所有事件，两者不能共用。
 
 你可以跳过这一部分。
 
@@ -104,7 +104,7 @@ async with lifespan(app):
 
 有一种替代方法可以定义在**启动**和**关闭**期间执行的逻辑。
 
-**ReadyAPI** 支持定义在应用启动前，或应用关闭时执行的事件处理器（函数）。
+**readyapi** 支持定义在应用启动前，或应用关闭时执行的事件处理器（函数）。
 
 事件函数既可以声明为异步函数（`async def`），也可以声明为普通函数（`def`）。
 
@@ -116,9 +116,9 @@ async with lifespan(app):
 
 本例中，`startup` 事件处理器函数为项目数据库（只是**字典**）提供了一些初始值。
 
-**ReadyAPI** 支持多个事件处理器函数。
+**readyapi** 支持多个事件处理器函数。
 
-只有所有 `startup` 事件处理器运行完毕，**ReadyAPI** 应用才开始接收请求。
+只有所有 `startup` 事件处理器运行完毕，**readyapi** 应用才开始接收请求。
 
 ### `shutdown` 事件
 
@@ -170,4 +170,4 @@ async with lifespan(app):
 
 ## 子应用
 
-🚨  **ReadyAPI** 只会触发主应用中的生命周期事件，不包括[子应用 - 挂载](sub-applications.md){.internal-link target=_blank}中的。
+🚨  **readyapi** 只会触发主应用中的生命周期事件，不包括[子应用 - 挂载](sub-applications.md){.internal-link target=_blank}中的。

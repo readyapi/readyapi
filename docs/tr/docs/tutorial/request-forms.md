@@ -44,7 +44,7 @@ Form gövdelerini tanımlamak için `Form` sınıfını kullanmanız gerekir; ç
 
 HTML formlarının (`<form></form>`) verileri sunucuya gönderirken JSON'dan farklı özel bir kodlama kullanır.
 
-**ReadyAPI** bu verilerin JSON yerine doğru şekilde okunmasını sağlayacaktır.
+**readyapi** bu verilerin JSON yerine doğru şekilde okunmasını sağlayacaktır.
 
 /// note | Teknik Detaylar
 
@@ -60,7 +60,7 @@ Form kodlama türleri ve form alanları hakkında daha fazla bilgi edinmek istiy
 
 *Yol operasyonları* içerisinde birden fazla `Form` parametresi tanımlayabilirsiniz ancak bunlarla birlikte JSON verisi kabul eden `Body` alanları tanımlayamazsınız çünkü bu durumda istek gövdesi `application/json` yerine `application/x-www-form-urlencoded` ile kodlanmış olur.
 
-Bu **ReadyAPI**'ın getirdiği bir kısıtlama değildir, HTTP protokolünün bir parçasıdır.
+Bu **readyapi**'ın getirdiği bir kısıtlama değildir, HTTP protokolünün bir parçasıdır.
 
 ///
 

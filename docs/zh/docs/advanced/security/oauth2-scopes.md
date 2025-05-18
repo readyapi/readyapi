@@ -1,6 +1,6 @@
 # OAuth2 作用域
 
-**ReadyAPI** 无缝集成 OAuth2 作用域（`Scopes`），可以直接使用。
+**readyapi** 无缝集成 OAuth2 作用域（`Scopes`），可以直接使用。
 
 作用域是更精密的权限系统，遵循 OAuth2 标准，与 OpenAPI 应用（和 API 自动文档）集成。
 
@@ -8,17 +8,17 @@ OAuth2 也是脸书、谷歌、GitHub、微软、推特等第三方身份验证�
 
 脸书、谷歌、GitHub、微软、推特就是 OAuth2 作用域登录。
 
-本章介绍如何在 **ReadyAPI** 应用中使用 OAuth2 作用域管理验证与授权。
+本章介绍如何在 **readyapi** 应用中使用 OAuth2 作用域管理验证与授权。
 
 /// warning | 警告
 
-本章内容较难，刚接触 ReadyAPI 的新手可以跳过。
+本章内容较难，刚接触 readyapi 的新手可以跳过。
 
 OAuth2 作用域不是必需的，没有它，您也可以处理身份验证与授权。
 
 但 OAuth2 作用域与 API（通过 OpenAPI）及 API 文档集成地更好。
 
-不管怎么说，**ReadyAPI** 支持在代码中使用作用域或其它安全/授权需求项。
+不管怎么说，**readyapi** 支持在代码中使用作用域或其它安全/授权需求项。
 
 很多情况下，OAuth2 作用域就像一把牛刀。
 
@@ -120,7 +120,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 不必在不同位置添加不同的作用域。
 
-本例使用的这种方式只是为了展示 **ReadyAPI** 如何处理在不同层级声明的作用域。
+本例使用的这种方式只是为了展示 **readyapi** 如何处理在不同层级声明的作用域。
 
 ///
 
@@ -130,7 +130,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 `Security` 实际上是 `Depends` 的子类，而且只比 `Depends` 多一个参数。
 
-但使用 `Security` 代替 `Depends`，**ReadyAPI** 可以声明安全作用域，并在内部使用这些作用域，同时，使用 OpenAPI 存档 API。
+但使用 `Security` 代替 `Depends`，**readyapi** 可以声明安全作用域，并在内部使用这些作用域，同时，使用 OpenAPI 存档 API。
 
 但实际上，从 `readyapi` 导入的 `Query`、`Path`、`Depends`、`Security` 等对象，只是返回特殊类的函数。
 
@@ -267,7 +267,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 ///
 
-**ReadyAPI** 的 `readyapi.security.oauth2` 里包含了所有 OAuth2 身份验证流工具。
+**readyapi** 的 `readyapi.security.oauth2` 里包含了所有 OAuth2 身份验证流工具。
 
 ## 装饰器 `dependencies` 中的 `Security`
 

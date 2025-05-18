@@ -20,7 +20,7 @@ Para fazer isso, nós declaramos o método `__call__`:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[12] *}
 
-Neste caso, o `__call__` é o que o **ReadyAPI** utilizará para verificar parâmetros adicionais e sub dependências, e isso é o que será chamado para passar o valor ao parâmetro na sua *função de operação de rota* posteriormente.
+Neste caso, o `__call__` é o que o **readyapi** utilizará para verificar parâmetros adicionais e sub dependências, e isso é o que será chamado para passar o valor ao parâmetro na sua *função de operação de rota* posteriormente.
 
 ## Parametrizar a instância
 
@@ -28,7 +28,7 @@ E agora, nós podemos utilizar o `__init__` para declarar os parâmetros da inst
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[9] *}
 
-Neste caso, o **ReadyAPI** nunca tocará ou se importará com o `__init__`, nós vamos utilizar diretamente em nosso código.
+Neste caso, o **readyapi** nunca tocará ou se importará com o `__init__`, nós vamos utilizar diretamente em nosso código.
 
 ## Crie uma instância
 
@@ -42,7 +42,7 @@ E deste modo nós podemos "parametrizar" a nossa dependência, que agora possui 
 
 Então, nós podemos utilizar este `checker` em um `Depends(checker)`, no lugar de `Depends(FixedContentQueryChecker)`, porque a dependência é a instância, `checker`, e não a própria classe.
 
-E quando a dependência for resolvida, o **ReadyAPI** chamará este `checker` como:
+E quando a dependência for resolvida, o **readyapi** chamará este `checker` como:
 
 ```Python
 checker(q="somequery")

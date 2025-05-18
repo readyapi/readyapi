@@ -1,10 +1,10 @@
 # Plantillas
 
-Puedes usar cualquier motor de plantillas que desees con **ReadyAPI**.
+Puedes usar cualquier motor de plantillas que desees con **readyapi**.
 
 Una elección común es Jinja2, el mismo que usa Flask y otras herramientas.
 
-Hay utilidades para configurarlo fácilmente que puedes usar directamente en tu aplicación de **ReadyAPI** (proporcionadas por Starlette).
+Hay utilidades para configurarlo fácilmente que puedes usar directamente en tu aplicación de **readyapi** (proporcionadas por Starlette).
 
 ## Instalar dependencias
 
@@ -31,7 +31,7 @@ $ pip install jinja2
 
 /// note | Nota
 
-Antes de ReadyAPI 0.108.0, Starlette 0.29.0, el `name` era el primer parámetro.
+Antes de readyapi 0.108.0, Starlette 0.29.0, el `name` era el primer parámetro.
 
 Además, antes de eso, en versiones anteriores, el objeto `request` se pasaba como parte de los pares clave-valor en el contexto para Jinja2.
 
@@ -47,7 +47,7 @@ Al declarar `response_class=HTMLResponse`, la interfaz de usuario de la document
 
 También podrías usar `from starlette.templating import Jinja2Templates`.
 
-**ReadyAPI** proporciona el mismo `starlette.templating` como `readyapi.templating`, solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette. Lo mismo con `Request` y `StaticFiles`.
+**readyapi** proporciona el mismo `starlette.templating` como `readyapi.templating`, solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette. Lo mismo con `Request` y `StaticFiles`.
 
 ///
 
@@ -119,7 +119,7 @@ En este ejemplo, enlazaría a un archivo CSS en `static/styles.css` con:
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-Y porque estás usando `StaticFiles`, ese archivo CSS sería servido automáticamente por tu aplicación de **ReadyAPI** en la URL `/static/styles.css`.
+Y porque estás usando `StaticFiles`, ese archivo CSS sería servido automáticamente por tu aplicación de **readyapi** en la URL `/static/styles.css`.
 
 ## Más detalles
 

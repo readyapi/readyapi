@@ -1,10 +1,10 @@
-# ℹ ReadyAPI - 🤚 ℹ
+# ℹ readyapi - 🤚 ℹ
 
-👆 💖 **ReadyAPI**❓
+👆 💖 **readyapi**❓
 
-🔜 👆 💖 ℹ ReadyAPI, 🎏 👩‍💻, &amp; 📕 ❓
+🔜 👆 💖 ℹ readyapi, 🎏 👩‍💻, &amp; 📕 ❓
 
-⚖️ 🔜 👆 💖 🤚 ℹ ⏮️ **ReadyAPI**❓
+⚖️ 🔜 👆 💖 🤚 ℹ ⏮️ **readyapi**❓
 
 📤 📶 🙅 🌌 ℹ (📚 🔌 1️⃣ ⚖️ 2️⃣ 🖊).
 
@@ -12,31 +12,31 @@
 
 ## 👱📔 📰
 
-👆 💪 👱📔 (🐌) [**ReadyAPI &amp; 👨‍👧‍👦** 📰](newsletter.md){.internal-link target=_blank} 🚧 ℹ 🔃:
+👆 💪 👱📔 (🐌) [**readyapi &amp; 👨‍👧‍👦** 📰](newsletter.md){.internal-link target=_blank} 🚧 ℹ 🔃:
 
-* 📰 🔃 ReadyAPI &amp; 👨‍👧‍👦 👶
+* 📰 🔃 readyapi &amp; 👨‍👧‍👦 👶
 * 🦮 👶
 * ⚒ 👶
 * 💔 🔀 👶
 * 💁‍♂ &amp; 🎱 👶
 
-## ⏩ ReadyAPI 🔛 👱📔
+## ⏩ readyapi 🔛 👱📔
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Readyapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **ReadyAPI**. 👶
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 readyapi 🔛 **👱📔**</a> 🤚 📰 📰 🔃 **readyapi**. 👶
 
-## ✴ **ReadyAPI** 📂
+## ✴ **readyapi** 📂
 
-👆 💪 "✴" ReadyAPI 📂 (🖊 ✴ 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶 👶
+👆 💪 "✴" readyapi 📂 (🖊 ✴ 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶 👶
 
 ❎ ✴, 🎏 👩‍💻 🔜 💪 🔎 ⚫️ 🌅 💪 &amp; 👀 👈 ⚫️ ✔️ ⏪ ⚠ 🎏.
 
 ## ⌚ 📂 🗃 🚀
 
-👆 💪 "⌚" ReadyAPI 📂 (🖊 "⌚" 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶
+👆 💪 "⌚" readyapi 📂 (🖊 "⌚" 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶
 
 📤 👆 💪 🖊 "🚀 🕴".
 
-🔨 ⚫️, 👆 🔜 📨 📨 (👆 📧) 🕐❔ 📤 🆕 🚀 (🆕 ⏬) **ReadyAPI** ⏮️ 🐛 🔧 &amp; 🆕 ⚒.
+🔨 ⚫️, 👆 🔜 📨 📨 (👆 📧) 🕐❔ 📤 🆕 🚀 (🆕 ⏬) **readyapi** ⏮️ 🐛 🔧 &amp; 🆕 ⚒.
 
 ## 🔗 ⏮️ 📕
 
@@ -48,26 +48,26 @@
     * 👀 🎏 📂 ℹ 🏗 👤 ✔️ ✍ 👈 💪 ℹ 👆.
     * ⏩ 👤 👀 🕐❔ 👤 ✍ 🆕 📂 ℹ 🏗.
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">⏩ 👤 🔛 **👱📔**</a> ⚖️ <a href="https://fosstodon.org/@khulnasoft" class="external-link" target="_blank">☠</a>.
-    * 💬 👤 ❔ 👆 ⚙️ ReadyAPI (👤 💌 👂 👈).
+    * 💬 👤 ❔ 👆 ⚙️ readyapi (👤 💌 👂 👈).
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰.
-    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 Readyapi 🔛 👱📔</a> (🎏 🏧).
+    * 👆 💪 <a href="https://twitter.com/readyapi" class="external-link" target="_blank">⏩ 🐶 readyapi 🔛 👱📔</a> (🎏 🏧).
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">🔗 ⏮️ 👤 🔛 **👱📔**</a>.
     * 👂 🕐❔ 👤 ⚒ 🎉 ⚖️ 🚀 🆕 🧰 (👐 👤 ⚙️ 👱📔 🌖 🛎 🤷 ♂).
 * ✍ ⚫️❔ 👤 ✍ (⚖️ ⏩ 👤) 🔛 <a href="https://dev.to/khulnasoft" class="external-link" target="_blank">**🇸🇲.**</a> ⚖️ <a href="https://medium.com/@khulnasoft" class="external-link" target="_blank">**🔉**</a>.
     * ✍ 🎏 💭, 📄, &amp; ✍ 🔃 🧰 👤 ✔️ ✍.
     * ⏩ 👤 ✍ 🕐❔ 👤 ✍ 🕳 🆕.
 
-## 👱📔 🔃 **ReadyAPI**
+## 👱📔 🔃 **readyapi**
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">👱📔 🔃 **ReadyAPI**</a> &amp; ➡️ 👤 &amp; 🎏 💭 ⚫️❔ 👆 💖 ⚫️. 👶
+<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">👱📔 🔃 **readyapi**</a> &amp; ➡️ 👤 &amp; 🎏 💭 ⚫️❔ 👆 💖 ⚫️. 👶
 
-👤 💌 👂 🔃 ❔ **ReadyAPI** 💆‍♂ ⚙️, ⚫️❔ 👆 ✔️ 💖 ⚫️, ❔ 🏗/🏢 👆 ⚙️ ⚫️, ♒️.
+👤 💌 👂 🔃 ❔ **readyapi** 💆‍♂ ⚙️, ⚫️❔ 👆 ✔️ 💖 ⚫️, ❔ 🏗/🏢 👆 ⚙️ ⚫️, ♒️.
 
-## 🗳 ReadyAPI
+## 🗳 readyapi
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">🗳 **ReadyAPI** 📐</a>.
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">🗳 **ReadyAPI** 📱</a>.
-* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">💬 👆 ⚙️ **ReadyAPI** 🔛 ℹ</a>.
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">🗳 **readyapi** 📐</a>.
+* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">🗳 **readyapi** 📱</a>.
+* <a href="https://stackshare.io/pypi-readyapi" class="external-link" target="_blank">💬 👆 ⚙️ **readyapi** 🔛 ℹ</a>.
 
 ## ℹ 🎏 ⏮️ ❔ 📂
 
@@ -78,11 +78,11 @@
 
 📚 💼 👆 5️⃣📆 ⏪ 💭 ❔ 📚 ❔. 👶
 
-🚥 👆 🤝 📚 👫👫 ⏮️ 👫 ❔, 👆 🔜 ▶️️ 🛂 [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}. 👶
+🚥 👆 🤝 📚 👫👫 ⏮️ 👫 ❔, 👆 🔜 ▶️️ 🛂 [readyapi 🕴](readyapi-people.md#_2){.internal-link target=_blank}. 👶
 
 💭, 🏆 ⚠ ☝: 🔄 😇. 👫👫 👟 ⏮️ 👫 😩 &amp; 📚 💼 🚫 💭 🏆 🌌, ✋️ 🔄 🏆 👆 💪 😇. 👶
 
-💭 **ReadyAPI** 👪 😇 &amp; 👍. 🎏 🕰, 🚫 🚫 🎭 ⚖️ 😛 🎭 ⤵ 🎏. 👥 ✔️ ✊ 💅 🔠 🎏.
+💭 **readyapi** 👪 😇 &amp; 👍. 🎏 🕰, 🚫 🚫 🎭 ⚖️ 😛 🎭 ⤵ 🎏. 👥 ✔️ ✊ 💅 🔠 🎏.
 
 ---
 
@@ -125,7 +125,7 @@
 
 ## ⌚ 📂 🗃
 
-👆 💪 "⌚" ReadyAPI 📂 (🖊 "⌚" 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶
+👆 💪 "⌚" readyapi 📂 (🖊 "⌚" 🔼 🔝 ▶️️): <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👶
 
 🚥 👆 🖊 "👀" ↩️ "🚀 🕴" 👆 🔜 📨 📨 🕐❔ 👱 ✍ 🆕 ❔ ⚖️ ❔. 👆 💪 ✔ 👈 👆 🕴 💚 🚨 🔃 🆕 ❔, ⚖️ 💬, ⚖️ 🎸, ♒️.
 
@@ -199,7 +199,7 @@
 👆 💪 [📉](contributing.md){.internal-link target=_blank} ℹ 📟 ⏮️ 🚲 📨, 🖼:
 
 * 🔧 🤭 👆 🔎 🔛 🧾.
-* 💰 📄, 📹, ⚖️ 📻 👆 ✍ ⚖️ 🔎 🔃 ReadyAPI <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">✍ 👉 📁</a>.
+* 💰 📄, 📹, ⚖️ 📻 👆 ✍ ⚖️ 🔎 🔃 readyapi <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">✍ 👉 📁</a>.
     * ⚒ 💭 👆 🚮 👆 🔗 ▶️ 🔗 📄.
 * ℹ [💬 🧾](contributing.md#_9){.internal-link target=_blank} 👆 🇪🇸.
     * 👆 💪 ℹ 📄 ✍ ✍ 🎏.
@@ -210,9 +210,9 @@
     * ⚒ 💭 🚮 💯.
     * ⚒ 💭 🚮 🧾 🚥 ⚫️ 🔗.
 
-## ℹ 🚧 ReadyAPI
+## ℹ 🚧 readyapi
 
-ℹ 👤 🚧 **ReadyAPI**❗ 👶
+ℹ 👤 🚧 **readyapi**❗ 👶
 
 📤 📚 👷, &amp; 🏆 ⚫️, **👆** 💪 ⚫️.
 
@@ -221,17 +221,17 @@
 * [ℹ 🎏 ⏮️ ❔ 📂](#i){.internal-link target=_blank} (👀 📄 🔛).
 * [📄 🚲 📨](#i){.internal-link target=_blank} (👀 📄 🔛).
 
-👈 2️⃣ 📋 ⚫️❔ **🍴 🕰 🏆**. 👈 👑 👷 🏆 ReadyAPI.
+👈 2️⃣ 📋 ⚫️❔ **🍴 🕰 🏆**. 👈 👑 👷 🏆 readyapi.
 
-🚥 👆 💪 ℹ 👤 ⏮️ 👈, **👆 🤝 👤 🚧 ReadyAPI** &amp; ⚒ 💭 ⚫️ 🚧 **🛠️ ⏩ &amp; 👻**. 👶
+🚥 👆 💪 ℹ 👤 ⏮️ 👈, **👆 🤝 👤 🚧 readyapi** &amp; ⚒ 💭 ⚫️ 🚧 **🛠️ ⏩ &amp; 👻**. 👶
 
 ## 🛑 💬
 
-🛑 👶 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">😧 💬 💽</a> 👶 &amp; 🤙 👅 ⏮️ 🎏 ReadyAPI 👪.
+🛑 👶 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">😧 💬 💽</a> 👶 &amp; 🤙 👅 ⏮️ 🎏 readyapi 👪.
 
 /// tip
 
-❔, 💭 👫 <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">📂 💬</a>, 📤 🌅 👍 🤞 👆 🔜 📨 ℹ [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}.
+❔, 💭 👫 <a href="https://github.com/readyapi/readyapi/discussions/new?category=questions" class="external-link" target="_blank">📂 💬</a>, 📤 🌅 👍 🤞 👆 🔜 📨 ℹ [readyapi 🕴](readyapi-people.md#_2){.internal-link target=_blank}.
 
 ⚙️ 💬 🕴 🎏 🏢 💬.
 
@@ -243,7 +243,7 @@
 
 📂, 📄 🔜 🦮 👆 ✍ ▶️️ ❔ 👈 👆 💪 🌖 💪 🤚 👍 ❔, ⚖️ ❎ ⚠ 👆 ⏭ 💬. &amp; 📂 👤 💪 ⚒ 💭 👤 🕧 ❔ 🌐, 🚥 ⚫️ ✊ 🕰. 👤 💪 🚫 🤙 👈 ⏮️ 💬 ⚙️. 👶
 
-💬 💬 ⚙️ 🚫 💪 📇 📂, ❔ &amp; ❔ 5️⃣📆 🤚 💸 💬. &amp; 🕴 🕐 📂 💯 ▶️️ [ReadyAPI 🕴](readyapi-people.md#_2){.internal-link target=_blank}, 👆 🔜 🌅 🎲 📨 🌅 🙋 📂.
+💬 💬 ⚙️ 🚫 💪 📇 📂, ❔ &amp; ❔ 5️⃣📆 🤚 💸 💬. &amp; 🕴 🕐 📂 💯 ▶️️ [readyapi 🕴](readyapi-people.md#_2){.internal-link target=_blank}, 👆 🔜 🌅 🎲 📨 🌅 🙋 📂.
 
 🔛 🎏 🚄, 📤 💯 👩‍💻 💬 ⚙️, 📤 ↕ 🤞 👆 🔜 🔎 👱 💬 📤, 🌖 🌐 🕰. 👶
 
@@ -253,11 +253,11 @@
 
 📤 👆 💪 🛍 👤 ☕ 👶 👶 💬 👏. 👶
 
-&amp; 👆 💪 ▶️️ 🥇1st ⚖️ 🌟 💰 ReadyAPI. 👶 👶
+&amp; 👆 💪 ▶️️ 🥇1st ⚖️ 🌟 💰 readyapi. 👶 👶
 
-## 💰 🧰 👈 🏋️ ReadyAPI
+## 💰 🧰 👈 🏋️ readyapi
 
-👆 ✔️ 👀 🧾, ReadyAPI 🧍 🔛 ⌚ 🐘, 💃 &amp; Pydantic.
+👆 ✔️ 👀 🧾, readyapi 🧍 🔛 ⌚ 🐘, 💃 &amp; Pydantic.
 
 👆 💪 💰:
 

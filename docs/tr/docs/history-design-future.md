@@ -1,6 +1,6 @@
 # Geçmişi, Tasarımı ve Geleceği
 
-Bir süre önce, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">bir **ReadyAPI** kullanıcısı sordu</a>:
+Bir süre önce, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">bir **readyapi** kullanıcısı sordu</a>:
 
 > Bu projenin geçmişi nedir? Birkaç hafta içinde hiçbir yerden harika bir şeye dönüşmüş gibi görünüyor [...]
 
@@ -12,17 +12,17 @@ Bir süredir karmaşık gereksinimlere sahip API'lar oluşturuyor (Makine Öğre
 
 Bu süreçte birçok alternatifi araştırmak, test etmek ve kullanmak zorunda kaldım.
 
-**ReadyAPI**'ın geçmişi, büyük ölçüde önceden geliştirilen araçların geçmişini kapsıyor.
+**readyapi**'ın geçmişi, büyük ölçüde önceden geliştirilen araçların geçmişini kapsıyor.
 
 [Alternatifler](alternatives.md){.internal-link target=_blank} bölümünde belirtildiği gibi:
 
 <blockquote markdown="1">
 
-Başkalarının daha önceki çalışmaları olmasaydı, **ReadyAPI** var olmazdı.
+Başkalarının daha önceki çalışmaları olmasaydı, **readyapi** var olmazdı.
 
-Geçmişte oluşturulan pek çok araç **ReadyAPI**'a ilham kaynağı olmuştur.
+Geçmişte oluşturulan pek çok araç **readyapi**'a ilham kaynağı olmuştur.
 
-Yıllardır yeni bir framework oluşturmaktan kaçınıyordum. Başlangıçta **ReadyAPI**'ın çözdüğü sorunları çözebilmek için pek çok farklı framework, <abbr title="Eklenti: Plug-In">eklenti</abbr> ve araç kullanmayı denedim.
+Yıllardır yeni bir framework oluşturmaktan kaçınıyordum. Başlangıçta **readyapi**'ın çözdüğü sorunları çözebilmek için pek çok farklı framework, <abbr title="Eklenti: Plug-In">eklenti</abbr> ve araç kullanmayı denedim.
 
 Ancak bir noktada, geçmişteki diğer araçlardan en iyi fikirleri alarak bütün bu çözümleri kapsayan, ayrıca bütün bunları Python'ın daha önce mevcut olmayan özelliklerini (Python 3.6+ ile gelen <abbr title="Tip belirteçleri: Type Hints">tip belirteçleri</abbr>) kullanarak yapan bir şey üretmekten başka bir seçenek kalmamıştı.
 
@@ -36,17 +36,17 @@ Mesela, ideal olarak standart Python tip belirteçlerine dayanması gerektiği a
 
 Ayrıca, en iyi yaklaşım zaten mevcut olan standartları kullanmaktı.
 
-Sonuç olarak, **ReadyAPI**'ı kodlamaya başlamadan önce, birkaç ay boyunca OpenAPI, JSON Schema, OAuth2 ve benzerlerinin tanımlamalarını inceledim. İlişkilerini, örtüştükleri noktaları ve farklılıklarını anlamaya çalıştım.
+Sonuç olarak, **readyapi**'ı kodlamaya başlamadan önce, birkaç ay boyunca OpenAPI, JSON Schema, OAuth2 ve benzerlerinin tanımlamalarını inceledim. İlişkilerini, örtüştükleri noktaları ve farklılıklarını anlamaya çalıştım.
 
 ## Tasarım
 
-Sonrasında, (**ReadyAPI** kullanan bir geliştirici olarak) sahip olmak istediğim "API"ı tasarlamak için biraz zaman harcadım.
+Sonrasında, (**readyapi** kullanan bir geliştirici olarak) sahip olmak istediğim "API"ı tasarlamak için biraz zaman harcadım.
 
 Çeşitli fikirleri en popüler Python editörlerinde test ettim: PyCharm, VS Code, Jedi tabanlı editörler.
 
 Bu test, en son <a href="https://www.jetbrains.com/research/python-developers-survey-2018/#development-tools" class="external-link" target="_blank">Python Developer Survey</a>'ine göre, kullanıcıların yaklaşık %80'inin kullandığı editörleri kapsıyor.
 
-Bu da demek oluyor ki **ReadyAPI**, Python geliştiricilerinin %80'inin kullandığı editörlerle test edildi. Ve diğer editörlerin çoğu benzer şekilde çalıştığından, avantajları neredeyse tüm editörlerde çalışacaktır.
+Bu da demek oluyor ki **readyapi**, Python geliştiricilerinin %80'inin kullandığı editörlerle test edildi. Ve diğer editörlerin çoğu benzer şekilde çalıştığından, avantajları neredeyse tüm editörlerde çalışacaktır.
 
 Bu şekilde, kod tekrarını mümkün olduğunca azaltmak, her yerde <abbr title="Otomatik Tamamlama: auto-complete, autocompletion, IntelliSense">otomatik tamamlama</abbr>, tip ve hata kontrollerine sahip olmak için en iyi yolları bulabildim.
 
@@ -62,18 +62,18 @@ Geliştirme sırasında, diğer ana gereksinim olan <a href="https://www.starlet
 
 ## Geliştirme
 
-**ReadyAPI**'ı oluşturmaya başladığımda, parçaların çoğu zaten yerindeydi, tasarım tanımlanmıştı, gereksinimler ve araçlar hazırdı, standartlar ve tanımlamalar hakkındaki bilgi net ve tazeydi.
+**readyapi**'ı oluşturmaya başladığımda, parçaların çoğu zaten yerindeydi, tasarım tanımlanmıştı, gereksinimler ve araçlar hazırdı, standartlar ve tanımlamalar hakkındaki bilgi net ve tazeydi.
 
 ## Gelecek
 
-Şimdiye kadar, **ReadyAPI**'ın fikirleriyle birçok kişiye faydalı olduğu apaçık ortada.
+Şimdiye kadar, **readyapi**'ın fikirleriyle birçok kişiye faydalı olduğu apaçık ortada.
 
 Birçok kullanım durumuna daha iyi uyduğu için, önceki alternatiflerin yerine seçiliyor.
 
-Ben ve ekibim dahil, birçok geliştirici ve ekip projelerinde **ReadyAPI**'ya bağlı.
+Ben ve ekibim dahil, birçok geliştirici ve ekip projelerinde **readyapi**'ya bağlı.
 
 Tabi, geliştirilecek birçok özellik ve iyileştirme mevcut.
 
-**ReadyAPI**'ın önünde harika bir gelecek var.
+**readyapi**'ın önünde harika bir gelecek var.
 
 [Yardımlarınız](help-readyapi.md){.internal-link target=_blank} çok değerlidir.

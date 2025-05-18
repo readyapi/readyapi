@@ -48,7 +48,7 @@ Por ejemplo, podrías usarlo para añadir metadatos para una interfaz de usuario
 
 /// info | Información
 
-OpenAPI 3.1.0 (usado desde ReadyAPI 0.99.0) añadió soporte para `examples`, que es parte del estándar de **JSON Schema**.
+OpenAPI 3.1.0 (usado desde readyapi 0.99.0) añadió soporte para `examples`, que es parte del estándar de **JSON Schema**.
 
 Antes de eso, solo soportaba la palabra clave `example` con un solo ejemplo. Eso aún es soportado por OpenAPI 3.1.0, pero está obsoleto y no es parte del estándar de JSON Schema. Así que se recomienda migrar de `example` a `examples`. 🤓
 
@@ -112,7 +112,7 @@ Esto no va dentro de cada JSON Schema contenido en OpenAPI, esto va afuera, dire
 
 ### Usando el Parámetro `openapi_examples`
 
-Puedes declarar los `examples` específicos de OpenAPI en ReadyAPI con el parámetro `openapi_examples` para:
+Puedes declarar los `examples` específicos de OpenAPI en readyapi con el parámetro `openapi_examples` para:
 
 * `Path()`
 * `Query()`
@@ -145,7 +145,7 @@ Con `openapi_examples` añadido a `Body()`, los `/docs` se verían así:
 
 /// tip | Consejo
 
-Si ya estás usando la versión **0.99.0 o superior** de **ReadyAPI**, probablemente puedes **omitir** estos detalles.
+Si ya estás usando la versión **0.99.0 o superior** de **readyapi**, probablemente puedes **omitir** estos detalles.
 
 Son más relevantes para versiones más antiguas, antes de que OpenAPI 3.1.0 estuviera disponible.
 
@@ -167,19 +167,19 @@ JSON Schema no tenía `examples`, así que OpenAPI añadió su propio campo `exa
 
 OpenAPI también añadió los campos `example` y `examples` a otras partes de la especificación:
 
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (en la especificación)</a> que era usado por ReadyAPI:
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (en la especificación)</a> que era usado por readyapi:
     * `Path()`
     * `Query()`
     * `Header()`
     * `Cookie()`
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object`, en el campo `content`, sobre el `Media Type Object` (en la especificación)</a> que era usado por ReadyAPI:
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object`, en el campo `content`, sobre el `Media Type Object` (en la especificación)</a> que era usado por readyapi:
     * `Body()`
     * `File()`
     * `Form()`
 
 /// info | Información
 
-Este viejo parámetro `examples` específico de OpenAPI ahora es `openapi_examples` desde ReadyAPI `0.103.0`.
+Este viejo parámetro `examples` específico de OpenAPI ahora es `openapi_examples` desde readyapi `0.103.0`.
 
 ///
 
@@ -197,28 +197,28 @@ Este nuevo campo `examples` en JSON Schema es **solo una `list`** de ejemplos, n
 
 Incluso después de que OpenAPI 3.1.0 fue lanzado con esta nueva integración más sencilla con JSON Schema, por un tiempo, Swagger UI, la herramienta que proporciona la documentación automática, no soportaba OpenAPI 3.1.0 (lo hace desde la versión 5.0.0 🎉).
 
-Debido a eso, las versiones de ReadyAPI anteriores a 0.99.0 todavía usaban versiones de OpenAPI menores a 3.1.0.
+Debido a eso, las versiones de readyapi anteriores a 0.99.0 todavía usaban versiones de OpenAPI menores a 3.1.0.
 
 ///
 
-### `examples` de Pydantic y ReadyAPI
+### `examples` de Pydantic y readyapi
 
 Cuando añades `examples` dentro de un modelo de Pydantic, usando `schema_extra` o `Field(examples=["algo"])`, ese ejemplo se añade al **JSON Schema** para ese modelo de Pydantic.
 
 Y ese **JSON Schema** del modelo de Pydantic se incluye en el **OpenAPI** de tu API, y luego se usa en la interfaz de documentación.
 
-En las versiones de ReadyAPI antes de 0.99.0 (0.99.0 y superior usan el nuevo OpenAPI 3.1.0) cuando usabas `example` o `examples` con cualquiera de las otras utilidades (`Query()`, `Body()`, etc.) esos ejemplos no se añadían al JSON Schema que describe esos datos (ni siquiera a la propia versión de JSON Schema de OpenAPI), se añadían directamente a la declaración de la *path operation* en OpenAPI (fuera de las partes de OpenAPI que usan JSON Schema).
+En las versiones de readyapi antes de 0.99.0 (0.99.0 y superior usan el nuevo OpenAPI 3.1.0) cuando usabas `example` o `examples` con cualquiera de las otras utilidades (`Query()`, `Body()`, etc.) esos ejemplos no se añadían al JSON Schema que describe esos datos (ni siquiera a la propia versión de JSON Schema de OpenAPI), se añadían directamente a la declaración de la *path operation* en OpenAPI (fuera de las partes de OpenAPI que usan JSON Schema).
 
-Pero ahora que ReadyAPI 0.99.0 y superiores usa OpenAPI 3.1.0, que usa JSON Schema 2020-12, y Swagger UI 5.0.0 y superiores, todo es más consistente y los ejemplos se incluyen en JSON Schema.
+Pero ahora que readyapi 0.99.0 y superiores usa OpenAPI 3.1.0, que usa JSON Schema 2020-12, y Swagger UI 5.0.0 y superiores, todo es más consistente y los ejemplos se incluyen en JSON Schema.
 
 ### Swagger UI y `examples` específicos de OpenAPI
 
 Ahora, como Swagger UI no soportaba múltiples ejemplos de JSON Schema (a fecha de 2023-08-26), los usuarios no tenían una forma de mostrar múltiples ejemplos en los documentos.
 
-Para resolver eso, ReadyAPI `0.103.0` **añadió soporte** para declarar el mismo viejo campo **específico de OpenAPI** `examples` con el nuevo parámetro `openapi_examples`. 🤓
+Para resolver eso, readyapi `0.103.0` **añadió soporte** para declarar el mismo viejo campo **específico de OpenAPI** `examples` con el nuevo parámetro `openapi_examples`. 🤓
 
 ### Resumen
 
 Solía decir que no me gustaba mucho la historia... y mírame ahora dando lecciones de "historia tecnológica". 😅
 
-En resumen, **actualiza a ReadyAPI 0.99.0 o superior**, y las cosas son mucho **más simples, consistentes e intuitivas**, y no necesitas conocer todos estos detalles históricos. 😎
+En resumen, **actualiza a readyapi 0.99.0 o superior**, y las cosas son mucho **más simples, consistentes e intuitivas**, y no necesitas conocer todos estos detalles históricos. 😎

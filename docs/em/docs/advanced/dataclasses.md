@@ -1,14 +1,14 @@
 # ⚙️ 🎻
 
-ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pydantic 🏷 📣 📨 &amp; 📨.
+readyapi 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pydantic 🏷 📣 📨 &amp; 📨.
 
-✋️ ReadyAPI 🐕‍🦺 ⚙️ <a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a> 🎏 🌌:
+✋️ readyapi 🐕‍🦺 ⚙️ <a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a> 🎏 🌌:
 
 {* ../../docs_src/dataclasses/tutorial001.py hl[1,7:12,19:20] *}
 
 👉 🐕‍🦺 👏 **Pydantic**, ⚫️ ✔️ <a href="https://docs.pydantic.dev/latest/concepts/dataclasses/#use-of-stdlib-dataclasses-with-basemodel" class="external-link" target="_blank">🔗 🐕‍🦺 `dataclasses`</a>.
 
-, ⏮️ 📟 🔛 👈 🚫 ⚙️ Pydantic 🎯, ReadyAPI ⚙️ Pydantic 🗜 📚 🐩 🎻 Pydantic 👍 🍛 🎻.
+, ⏮️ 📟 🔛 👈 🚫 ⚙️ Pydantic 🎯, readyapi ⚙️ Pydantic 🗜 📚 🐩 🎻 Pydantic 👍 🍛 🎻.
 
 &amp; ↗️, ⚫️ 🐕‍🦺 🎏:
 
@@ -24,7 +24,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 , 👆 5️⃣📆 💪 ⚙️ Pydantic 🏷.
 
-✋️ 🚥 👆 ✔️ 📚 🎻 🤥 🤭, 👉 👌 🎱 ⚙️ 👫 🏋️ 🕸 🛠️ ⚙️ ReadyAPI. 👶
+✋️ 🚥 👆 ✔️ 📚 🎻 🤥 🤭, 👉 👌 🎱 ⚙️ 👫 🏋️ 🕸 🛠️ ⚙️ readyapi. 👶
 
 ///
 
@@ -66,7 +66,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 6️⃣. 📥 👥 🛬 📖 👈 🔌 `items` ❔ 📇 🎻.
 
-    ReadyAPI 🎯 <abbr title="converting the data to a format that can be transmitted">✍</abbr> 💽 🎻.
+    readyapi 🎯 <abbr title="converting the data to a format that can be transmitted">✍</abbr> 💽 🎻.
 
 7️⃣. 📥 `response_model` ⚙️ 🆎 ✍ 📇 `Author` 🎻.
 
@@ -74,13 +74,13 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 8️⃣. 👀 👈 👉 *➡ 🛠️ 🔢* ⚙️ 🥔 `def` ↩️ `async def`.
 
-    🕧, ReadyAPI 👆 💪 🌀 `def` &amp; `async def` 💪.
+    🕧, readyapi 👆 💪 🌀 `def` &amp; `async def` 💪.
 
     🚥 👆 💪 ↗️ 🔃 🕐❔ ⚙️ ❔, ✅ 👅 📄 _"🏃 ❓" _ 🩺 🔃 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank" class="internal-link">`async` &amp; `await`</a>.
 
 9️⃣. 👉 *➡ 🛠️ 🔢* 🚫 🛬 🎻 (👐 ⚫️ 💪), ✋️ 📇 📖 ⏮️ 🔗 💽.
 
-    ReadyAPI 🔜 ⚙️ `response_model` 🔢 (👈 🔌 🎻) 🗜 📨.
+    readyapi 🔜 ⚙️ `response_model` 🔢 (👈 🔌 🎻) 🗜 📨.
 
 👆 💪 🌀 `dataclasses` ⏮️ 🎏 🆎 ✍ 📚 🎏 🌀 📨 🏗 📊 📊.
 
@@ -94,4 +94,4 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 ## ⏬
 
-👉 💪 ↩️ ReadyAPI ⏬ `0.67.0`. 👶
+👉 💪 ↩️ readyapi ⏬ `0.67.0`. 👶

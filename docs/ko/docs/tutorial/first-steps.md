@@ -1,6 +1,6 @@
 # 첫걸음
 
-가장 단순한 ReadyAPI 파일은 다음과 같이 보일 것입니다:
+가장 단순한 readyapi 파일은 다음과 같이 보일 것입니다:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -27,7 +27,7 @@ $ uvicorn main:app --reload
 `uvicorn main:app` 명령은 다음을 의미합니다:
 
 * `main`: 파일 `main.py` (파이썬 "모듈").
-* `app`: `main.py` 내부의 `app = ReadyAPI()` 줄에서 생성한 오브젝트.
+* `app`: `main.py` 내부의 `app = readyapi()` 줄에서 생성한 오브젝트.
 * `--reload`: 코드 변경 시 자동으로 서버 재시작. 개발 시에만 사용.
 
 ///
@@ -68,7 +68,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 ### OpenAPI
 
-**ReadyAPI**는 API를 정의하기 위한 **OpenAPI** 표준을 사용하여 여러분의 모든 API를 이용해 "스키마"를 생성합니다.
+**readyapi**는 API를 정의하기 위한 **OpenAPI** 표준을 사용하여 여러분의 모든 API를 이용해 "스키마"를 생성합니다.
 
 #### "스키마"
 
@@ -92,7 +92,7 @@ OpenAPI는 당신의 API에 대한 API 스키마를 정의합니다. 또한 이 
 
 #### `openapi.json` 확인
 
-ReadyAPI는 자동으로 API의 설명과 함께 JSON (스키마)를 생성합니다.
+readyapi는 자동으로 API의 설명과 함께 JSON (스키마)를 생성합니다.
 
 가공되지 않은 OpenAPI 스키마가 어떻게 생겼는지 궁금하다면, 여기에서 직접 볼 수 있습니다: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -102,7 +102,7 @@ ReadyAPI는 자동으로 API의 설명과 함께 JSON (스키마)를 생성합�
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -123,31 +123,31 @@ ReadyAPI는 자동으로 API의 설명과 함께 JSON (스키마)를 생성합�
 
 OpenAPI 스키마는 포함된 두 개의 대화형 문서 시스템을 제공합니다.
 
-그리고 OpenAPI의 모든 것을 기반으로 하는 수십 가지 대안이 있습니다. **ReadyAPI**로 빌드한 애플리케이션에 이러한 대안을 쉽게 추가 할 수 있습니다.
+그리고 OpenAPI의 모든 것을 기반으로 하는 수십 가지 대안이 있습니다. **readyapi**로 빌드한 애플리케이션에 이러한 대안을 쉽게 추가 할 수 있습니다.
 
 API와 통신하는 클라이언트(프론트엔드, 모바일, IoT 애플리케이션 등)를 위해 코드를 자동으로 생성하는 데도 사용할 수 있습니다.
 
 ## 단계별 요약
 
-### 1 단계: `ReadyAPI` 임포트
+### 1 단계: `readyapi` 임포트
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI`는 당신의 API를 위한 모든 기능을 제공하는 파이썬 클래스입니다.
+`readyapi`는 당신의 API를 위한 모든 기능을 제공하는 파이썬 클래스입니다.
 
 /// note | 기술 세부사항
 
-`ReadyAPI`는 `Starlette`를 직접 상속하는 클래스입니다.
+`readyapi`는 `Starlette`를 직접 상속하는 클래스입니다.
 
-`ReadyAPI`로 <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>의 모든 기능을 사용할 수 있습니다.
+`readyapi`로 <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a>의 모든 기능을 사용할 수 있습니다.
 
 ///
 
-### 2 단계: `ReadyAPI` "인스턴스" 생성
+### 2 단계: `readyapi` "인스턴스" 생성
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-여기에서 `app` 변수는 `ReadyAPI` 클래스의 "인스턴스"가 됩니다.
+여기에서 `app` 변수는 `readyapi` 클래스의 "인스턴스"가 됩니다.
 
 이것은 당신의 모든 API를 생성하기 위한 상호작용의 주요 지점이 될 것입니다.
 
@@ -244,7 +244,7 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-`@app.get("/")`은 **ReadyAPI**에게 바로 아래에 있는 함수가 다음으로 이동하는 요청을 처리한다는 것을 알려줍니다.
+`@app.get("/")`은 **readyapi**에게 바로 아래에 있는 함수가 다음으로 이동하는 요청을 처리한다는 것을 알려줍니다.
 
 * 경로 `/`
 * <abbr title="HTTP GET 메소드"><code>get</code> 작동</abbr> 사용
@@ -257,7 +257,7 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 "데코레이터"는 아래 있는 함수를 받아 그것으로 무언가를 합니다.
 
-우리의 경우, 이 데코레이터는 **ReadyAPI**에게 아래 함수가 **경로** `/`의 `get` **작동**에 해당한다고 알려줍니다.
+우리의 경우, 이 데코레이터는 **readyapi**에게 아래 함수가 **경로** `/`의 `get` **작동**에 해당한다고 알려줍니다.
 
 이것이 "**경로 작동 데코레이터**"입니다.
 
@@ -280,7 +280,7 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 각 작동(HTTP 메소드)을 원하는 대로 사용해도 됩니다.
 
-**ReadyAPI**는 특정 의미를 강제하지 않습니다.
+**readyapi**는 특정 의미를 강제하지 않습니다.
 
 여기서 정보는 지침서일뿐 강제사항이 아닙니다.
 
@@ -300,7 +300,7 @@ API를 설계할 때 일반적으로 특정 행동을 수행하기 위해 특정
 
 이것은 파이썬 함수입니다.
 
-URL "`/`"에 대한 `GET` 작동을 사용하는 요청을 받을 때마다 **ReadyAPI**에 의해 호출됩니다.
+URL "`/`"에 대한 `GET` 작동을 사용하는 요청을 받을 때마다 **readyapi**에 의해 호출됩니다.
 
 위의 예시에서 이 함수는 `async`(비동기) 함수입니다.
 
@@ -328,7 +328,7 @@ JSON으로 자동 변환되는 객체들과 모델들(ORM 등을 포함해서)�
 
 ## 요약
 
-* `ReadyAPI` 임포트.
+* `readyapi` 임포트.
 * `app` 인스턴스 생성.
 * (`@app.get("/")`처럼) **경로 작동 데코레이터** 작성.
 * (위에 있는 `def root(): ...`처럼) **경로 작동 함수** 작성.

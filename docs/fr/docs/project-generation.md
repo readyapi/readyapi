@@ -4,17 +4,17 @@ Vous pouvez utiliser un générateur de projet pour commencer, qui réalisera po
 
 Un générateur de projet fera toujours une mise en place très subjective que vous devriez modifier et adapter suivant vos besoins, mais cela reste un bon point de départ pour vos projets.
 
-## Full Stack ReadyAPI PostgreSQL
+## Full Stack readyapi PostgreSQL
 
 GitHub : <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-postgresql</a>
 
-### Full Stack ReadyAPI PostgreSQL - Fonctionnalités
+### Full Stack readyapi PostgreSQL - Fonctionnalités
 
 * Intégration **Docker** complète (basée sur Docker).
 * Déploiement Docker en mode <a href="https://docs.docker.com/engine/swarm/" class="external-link" target="_blank">Swarm</a>
 * Intégration **Docker Compose** et optimisation pour développement local.
 * Serveur web Python **prêt au déploiement** utilisant Uvicorn et Gunicorn.
-* Backend Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> :
+* Backend Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**readyapi**</a> :
     * **Rapide** : Très hautes performances, comparables à **NodeJS** ou **Go** (grâce à Starlette et Pydantic).
     * **Intuitif** : Excellent support des éditeurs. <abbr title="aussi appelée auto-complétion, autocomplétion, IntelliSense...">Complétion</abbr> partout. Moins de temps passé à déboguer.
     * **Facile** : Fait pour être facile à utiliser et apprendre. Moins de temps passé à lire de la documentation.
@@ -52,7 +52,7 @@ GitHub : <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" 
 * Intégration Traefik, comprenant la génération automatique de certificat **HTTPS** Let's Encrypt.
 * GitLab **CI** (intégration continue), comprenant des tests pour le frontend et le backend.
 
-## Full Stack ReadyAPI Couchbase
+## Full Stack readyapi Couchbase
 
 GitHub : <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-couchbase</a>
 
@@ -60,21 +60,21 @@ GitHub : <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase" c
 
 Si vous démarrez un nouveau projet de zéro, allez voir les alternatives au début de cette page.
 
-Par exemple, le générateur de projet <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">Full Stack ReadyAPI PostgreSQL</a>  peut être une meilleure alternative, étant activement maintenu et utilisé et comprenant toutes les nouvelles fonctionnalités et améliorations.
+Par exemple, le générateur de projet <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">Full Stack readyapi PostgreSQL</a>  peut être une meilleure alternative, étant activement maintenu et utilisé et comprenant toutes les nouvelles fonctionnalités et améliorations.
 
 Vous êtes toujours libre d'utiliser le générateur basé sur Couchbase si vous le voulez, cela devrait probablement fonctionner correctement, et si vous avez déjà un projet généré en utilisant ce dernier, cela devrait fonctionner aussi (et vous l'avez déjà probablement mis à jour suivant vos besoins).
 
 Vous pouvez en apprendre plus dans la documentation du dépôt GithHub.
 
-## Full Stack ReadyAPI MongoDB
+## Full Stack readyapi MongoDB
 
 ...viendra surement plus tard, suivant le temps que j'ai.  😅 🎉
 
-## Modèles d'apprentissage automatique avec spaCy et ReadyAPI
+## Modèles d'apprentissage automatique avec spaCy et readyapi
 
 GitHub : <a href="https://github.com/microsoft/cookiecutter-spacy-readyapi" class="external-link" target="_blank">https://github.com/microsoft/cookiecutter-spacy-readyapi</a>
 
-## Modèles d'apprentissage automatique avec spaCy et ReadyAPI - Fonctionnalités
+## Modèles d'apprentissage automatique avec spaCy et readyapi - Fonctionnalités
 
 * Intégration d'un modèle NER **spaCy**.
 * Formatage de requête pour **Azure Cognitive Search**.

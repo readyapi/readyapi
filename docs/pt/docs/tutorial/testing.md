@@ -1,10 +1,10 @@
 # Testando
 
-Graças ao <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, testar aplicativos **ReadyAPI** é fácil e agradável.
+Graças ao <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, testar aplicativos **readyapi** é fácil e agradável.
 
 Ele é baseado no <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>, que por sua vez é projetado com base em Requests, por isso é muito familiar e intuitivo.
 
-Com ele, você pode usar o <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> diretamente com **ReadyAPI**.
+Com ele, você pode usar o <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> diretamente com **readyapi**.
 
 ## Usando `TestClient`
 
@@ -22,7 +22,7 @@ $ pip install httpx
 
 Importe `TestClient`.
 
-Crie um `TestClient` passando seu aplicativo **ReadyAPI** para ele.
+Crie um `TestClient` passando seu aplicativo **readyapi** para ele.
 
 Crie funções com um nome que comece com `test_` (essa é a convenção padrão do `pytest`).
 
@@ -46,13 +46,13 @@ Isso permite que você use `pytest` diretamente sem complicações.
 
 Você também pode usar `from starlette.testclient import TestClient`.
 
-**ReadyAPI** fornece o mesmo `starlette.testclient` que `readyapi.testclient` apenas como uma conveniência para você, o desenvolvedor. Mas ele vem diretamente da Starlette.
+**readyapi** fornece o mesmo `starlette.testclient` que `readyapi.testclient` apenas como uma conveniência para você, o desenvolvedor. Mas ele vem diretamente da Starlette.
 
 ///
 
 /// tip | Dica
 
-Se você quiser chamar funções `async` em seus testes além de enviar solicitações ao seu aplicativo ReadyAPI (por exemplo, funções de banco de dados assíncronas), dê uma olhada em [Testes assíncronos](../advanced/async-tests.md){.internal-link target=_blank} no tutorial avançado.
+Se você quiser chamar funções `async` em seus testes além de enviar solicitações ao seu aplicativo readyapi (por exemplo, funções de banco de dados assíncronas), dê uma olhada em [Testes assíncronos](../advanced/async-tests.md){.internal-link target=_blank} no tutorial avançado.
 
 ///
 
@@ -60,9 +60,9 @@ Se você quiser chamar funções `async` em seus testes além de enviar solicita
 
 Em uma aplicação real, você provavelmente teria seus testes em um arquivo diferente.
 
-E seu aplicativo **ReadyAPI** também pode ser composto de vários arquivos/módulos, etc.
+E seu aplicativo **readyapi** também pode ser composto de vários arquivos/módulos, etc.
 
-### Arquivo do aplicativo **ReadyAPI**
+### Arquivo do aplicativo **readyapi**
 
 Digamos que você tenha uma estrutura de arquivo conforme descrito em [Aplicativos maiores](bigger-applications.md){.internal-link target=_blank}:
 
@@ -73,7 +73,7 @@ Digamos que você tenha uma estrutura de arquivo conforme descrito em [Aplicativ
 │   └── main.py
 ```
 
-No arquivo `main.py` você tem seu aplicativo **ReadyAPI**:
+No arquivo `main.py` você tem seu aplicativo **readyapi**:
 
 
 {* ../../docs_src/app_testing/main.py *}
@@ -100,7 +100,7 @@ Como esse arquivo está no mesmo pacote, você pode usar importações relativas
 
 Agora vamos estender este exemplo e adicionar mais detalhes para ver como testar diferentes partes.
 
-### Arquivo de aplicativo **ReadyAPI** estendido
+### Arquivo de aplicativo **readyapi** estendido
 
 Vamos continuar com a mesma estrutura de arquivo de antes:
 
@@ -112,7 +112,7 @@ Vamos continuar com a mesma estrutura de arquivo de antes:
 │   └── test_main.py
 ```
 
-Digamos que agora o arquivo `main.py` com seu aplicativo **ReadyAPI** tenha algumas outras **operações de rotas**.
+Digamos que agora o arquivo `main.py` com seu aplicativo **readyapi** tenha algumas outras **operações de rotas**.
 
 Ele tem uma operação `GET` que pode retornar um erro.
 

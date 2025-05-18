@@ -1,16 +1,16 @@
 # Security Policy
 
-Security is very important for ReadyAPI and its community. 🔒
+Security is very important for readyapi and its community. 🔒
 
 Learn more about it below. 👇
 
 ## Versions
 
-The latest version of ReadyAPI is supported.
+The latest version of readyapi is supported.
 
-You are encouraged to [write tests](https://readyapi.khulnasoft.com/tutorial/testing/) for your application and update your ReadyAPI version frequently after ensuring that your tests are passing. This way you will benefit from the latest features, bug fixes, and **security fixes**.
+You are encouraged to [write tests](https://readyapi.khulnasoft.com/tutorial/testing/) for your application and update your readyapi version frequently after ensuring that your tests are passing. This way you will benefit from the latest features, bug fixes, and **security fixes**.
 
-You can learn more about [ReadyAPI versions and how to pin and upgrade them](https://readyapi.khulnasoft.com/deployment/versions/) for your project in the docs.
+You can learn more about [readyapi versions and how to pin and upgrade them](https://readyapi.khulnasoft.com/deployment/versions/) for your project in the docs.
 
 ## Reporting a Vulnerability
 
@@ -28,4 +28,4 @@ It's better to discuss privately and try to find a solution first, to limit the 
 
 Thanks for your help!
 
-The ReadyAPI community and I thank you for that. 🙇
+The readyapi community and I thank you for that. 🙇

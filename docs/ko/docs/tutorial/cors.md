@@ -34,11 +34,11 @@
 
 ## `CORSMiddleware` 사용
 
-`CORSMiddleware` 을 사용하여 **ReadyAPI** 응용 프로그램의 교차 출처 리소스 공유 환경을 설정할 수 있습니다.
+`CORSMiddleware` 을 사용하여 **readyapi** 응용 프로그램의 교차 출처 리소스 공유 환경을 설정할 수 있습니다.
 
 * `CORSMiddleware` 임포트.
 * 허용되는 출처(문자열 형식)의 리스트 생성.
-* ReadyAPI 응용 프로그램에 "미들웨어(middleware)"로 추가.
+* readyapi 응용 프로그램에 "미들웨어(middleware)"로 추가.
 
 백엔드에서 다음의 사항을 허용할지에 대해 설정할 수도 있습니다:
 
@@ -80,6 +80,6 @@
 
 `from starlette.middleware.cors import CORSMiddleware` 역시 사용할 수 있습니다.
 
-**ReadyAPI**는 개발자인 당신의 편의를 위해 `readyapi.middleware` 에서 몇가지의 미들웨어를 제공합니다. 하지만 대부분의 미들웨어가 Stralette으로부터 직접 제공됩니다.
+**readyapi**는 개발자인 당신의 편의를 위해 `readyapi.middleware` 에서 몇가지의 미들웨어를 제공합니다. 하지만 대부분의 미들웨어가 Stralette으로부터 직접 제공됩니다.
 
 ///

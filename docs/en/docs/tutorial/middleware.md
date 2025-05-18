@@ -1,6 +1,6 @@
 # Middleware
 
-You can add middleware to **ReadyAPI** applications.
+You can add middleware to **readyapi** applications.
 
 A "middleware" is a function that works with every **request** before it is processed by any specific *path operation*. And also with every **response** before returning it.
 
@@ -15,7 +15,7 @@ A "middleware" is a function that works with every **request** before it is proc
 
 If you have dependencies with `yield`, the exit code will run *after* the middleware.
 
-If there were any background tasks (documented later), they will run *after* all the middleware.
+If there were any background tasks (covered in the [Background Tasks](background-tasks.md){.internal-link target=_blank} section, you will see it later), they will run *after* all the middleware.
 
 ///
 
@@ -45,7 +45,7 @@ But if you have custom headers that you want a client in a browser to be able to
 
 You could also use `from starlette.requests import Request`.
 
-**ReadyAPI** provides it as a convenience for you, the developer. But it comes directly from Starlette.
+**readyapi** provides it as a convenience for you, the developer. But it comes directly from Starlette.
 
 ///
 

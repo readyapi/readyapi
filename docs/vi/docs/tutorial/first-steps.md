@@ -1,6 +1,6 @@
 # Những bước đầu tiên
 
-Tệp tin ReadyAPI đơn giản nhất có thể trông như này:
+Tệp tin readyapi đơn giản nhất có thể trông như này:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -27,7 +27,7 @@ $ uvicorn main:app --reload
 Câu lệnh `uvicorn main:app` được giải thích như sau:
 
 * `main`: tệp tin `main.py` (một Python "mô đun").
-* `app`: một object được tạo ra bên trong `main.py` với dòng `app = ReadyAPI()`.
+* `app`: một object được tạo ra bên trong `main.py` với dòng `app = readyapi()`.
 * `--reload`: làm server khởi động lại sau mỗi lần thay đổi. Chỉ sử dụng trong môi trường phát triển.
 
 ///
@@ -68,7 +68,7 @@ Bạn sẽ thấy một bản thay thế của tài liệu (cung cấp bởi <a 
 
 ### OpenAPI
 
-**ReadyAPI** sinh một "schema" với tất cả API của bạn sử dụng tiêu chuẩn **OpenAPI** cho định nghĩa các API.
+**readyapi** sinh một "schema" với tất cả API của bạn sử dụng tiêu chuẩn **OpenAPI** cho định nghĩa các API.
 
 #### "Schema"
 
@@ -92,7 +92,7 @@ OpenAPI định nghĩa một cấu trúc API cho API của bạn. Và cấu trú
 
 #### Kiểm tra `openapi.json`
 
-Nếu bạn tò mò về việc cấu trúc OpenAPI nhìn như thế nào thì ReadyAPI tự động sinh một JSON (schema) với các mô tả cho tất cả API của bạn.
+Nếu bạn tò mò về việc cấu trúc OpenAPI nhìn như thế nào thì readyapi tự động sinh một JSON (schema) với các mô tả cho tất cả API của bạn.
 
 Bạn có thể thấy nó trực tiếp tại: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -102,7 +102,7 @@ Nó sẽ cho thấy một JSON bắt đầu giống như:
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "ReadyAPI",
+        "title": "readyapi",
         "version": "0.1.0"
     },
     "paths": {
@@ -123,31 +123,31 @@ Nó sẽ cho thấy một JSON bắt đầu giống như:
 
 Cấu trúc OpenAPI là sức mạnh của tài liệu tương tác.
 
-Và có hàng tá các bản thay thế, tất cả đều dựa trên OpenAPI. Bạn có thể dễ dàng thêm bất kì bản thay thế bào cho ứng dụng của bạn được xây dựng với **ReadyAPI**.
+Và có hàng tá các bản thay thế, tất cả đều dựa trên OpenAPI. Bạn có thể dễ dàng thêm bất kì bản thay thế bào cho ứng dụng của bạn được xây dựng với **readyapi**.
 
 Bạn cũng có thể sử dụng nó để sinh code tự động, với các client giao viết qua API của bạn. Ví dụ, frontend, mobile hoặc các ứng dụng IoT.
 
 ## Tóm lại, từng bước một
 
-### Bước 1: import `ReadyAPI`
+### Bước 1: import `readyapi`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`ReadyAPI` là một Python class cung cấp tất cả chức năng cho API của bạn.
+`readyapi` là một Python class cung cấp tất cả chức năng cho API của bạn.
 
 /// note | Chi tiết kĩ thuật
 
-`ReadyAPI` là một class kế thừa trực tiếp `Starlette`.
+`readyapi` là một class kế thừa trực tiếp `Starlette`.
 
-Bạn cũng có thể sử dụng tất cả <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> chức năng với `ReadyAPI`.
+Bạn cũng có thể sử dụng tất cả <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> chức năng với `readyapi`.
 
 ///
 
-### Bước 2: Tạo một `ReadyAPI` "instance"
+### Bước 2: Tạo một `readyapi` "instance"
 
 {* ../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-Biến `app` này là một "instance" của class `ReadyAPI`.
+Biến `app` này là một "instance" của class `readyapi`.
 
 Đây sẽ là điểm cốt lõi để tạo ra tất cả API của bạn.
 
@@ -244,7 +244,7 @@ Chúng ta cũng sẽ gọi chúng là "**các toán tử**".
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-`@app.get("/")` nói **ReadyAPI** rằng hàm bên dưới có trách nhiệm xử lí request tới:
+`@app.get("/")` nói **readyapi** rằng hàm bên dưới có trách nhiệm xử lí request tới:
 
 * đường dẫn `/`
 * sử dụng một <abbr title="an HTTP GET method">toán tử<code>get</code></abbr>
@@ -257,7 +257,7 @@ Bạn đặt nó trên một hàm. Giống như một chiếc mũ xinh xắn (T�
 
 Một "decorator" lấy một hàm bên dưới và thực hiện một vài thứ với nó.
 
-Trong trường hợp của chúng ta, decorator này nói **ReadyAPI** rằng hàm bên dưới ứng với **đường dẫn** `/` và một **toán tử** `get`.
+Trong trường hợp của chúng ta, decorator này nói **readyapi** rằng hàm bên dưới ứng với **đường dẫn** `/` và một **toán tử** `get`.
 
 Nó là một "**decorator đường dẫn toán tử**".
 
@@ -280,7 +280,7 @@ Và nhiều hơn với các toán tử còn lại:
 
 Bạn thoải mái sử dụng mỗi toán tử (phương thức HTTP) như bạn mơ ước.
 
-**ReadyAPI** không bắt buộc bất kì ý nghĩa cụ thể nào.
+**readyapi** không bắt buộc bất kì ý nghĩa cụ thể nào.
 
 Thông tin ở đây được biểu thị như là một chỉ dẫn, không phải là một yêu cầu bắt buộc.
 
@@ -300,7 +300,7 @@ Ví dụ, khi sử dụng GraphQL bạn thông thường thực hiện tất c�
 
 Đây là một hàm Python.
 
-Nó sẽ được gọi bởi **ReadyAPI** bất cứ khi nào nó nhận một request tới URL "`/`" sử dụng một toán tử `GET`.
+Nó sẽ được gọi bởi **readyapi** bất cứ khi nào nó nhận một request tới URL "`/`" sử dụng một toán tử `GET`.
 
 Trong trường hợp này, nó là một hàm `async`.
 
@@ -328,7 +328,7 @@ Có nhiều object và model khác nhau sẽ được tự động chuyển đ�
 
 ## Tóm lại
 
-* Import `ReadyAPI`.
+* Import `readyapi`.
 * Tạo một `app` instance.
 * Viết một **decorator cho đường dẫn toán tử** (giống như `@app.get("/")`).
 * Viết một **hàm cho đường dẫn toán tử** (giống như  `def root(): ...` ở trên).

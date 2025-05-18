@@ -10,7 +10,7 @@
 
 如果你定义了 `response_model`，程序会自动根据`response_model`来过滤和转换你响应的对象。
 
-**ReadyAPI** 会使用这个 *临时* 响应对象去装在这些cookies信息 (同样还有headers和状态码等信息), 最终会将这些信息和通过`response_model`转化过的数据合并到最终的响应里。
+**readyapi** 会使用这个 *临时* 响应对象去装在这些cookies信息 (同样还有headers和状态码等信息), 最终会将这些信息和通过`response_model`转化过的数据合并到最终的响应里。
 
 你也可以在depend中定义`Response`参数，并设置cookie和header。
 
@@ -26,7 +26,7 @@
 
 /// tip
 
-需要注意，如果你直接反馈一个response对象，而不是使用`Response`入参，ReadyAPI则会直接反馈你封装的response对象。
+需要注意，如果你直接反馈一个response对象，而不是使用`Response`入参，readyapi则会直接反馈你封装的response对象。
 
 所以你需要确保你响应数据类型的正确性，如：你可以使用`JSONResponse`来兼容JSON的场景。
 
@@ -40,9 +40,9 @@
 
 你也可以使用`from starlette.responses import Response` 或者 `from starlette.responses import JSONResponse`。
 
-为了方便开发者，**ReadyAPI** 封装了相同数据类型，如`starlette.responses` 和 `readyapi.responses`。不过大部分response对象都是直接引用自Starlette。
+为了方便开发者，**readyapi** 封装了相同数据类型，如`starlette.responses` 和 `readyapi.responses`。不过大部分response对象都是直接引用自Starlette。
 
-因为`Response`对象可以非常便捷的设置headers和cookies，所以 **ReadyAPI** 同时也封装了`readyapi.Response`。
+因为`Response`对象可以非常便捷的设置headers和cookies，所以 **readyapi** 同时也封装了`readyapi.Response`。
 
 ///
 

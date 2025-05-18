@@ -1,8 +1,8 @@
 # Return a Response Directly
 
-When you create a **ReadyAPI** *path operation* you can normally return any data from it: a `dict`, a `list`, a Pydantic model, a database model, etc.
+When you create a **readyapi** *path operation* you can normally return any data from it: a `dict`, a `list`, a Pydantic model, a database model, etc.
 
-By default, **ReadyAPI** would automatically convert that return value to JSON using the `jsonable_encoder` explained in [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
+By default, **readyapi** would automatically convert that return value to JSON using the `jsonable_encoder` explained in [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Then, behind the scenes, it would put that JSON-compatible data (e.g. a `dict`) inside of a `JSONResponse` that would be used to send the response to the client.
 
@@ -20,7 +20,7 @@ In fact, you can return any `Response` or any sub-class of it.
 
 ///
 
-And when you return a `Response`, **ReadyAPI** will pass it directly.
+And when you return a `Response`, **readyapi** will pass it directly.
 
 It won't do any data conversion with Pydantic models, it won't convert the contents to any type, etc.
 
@@ -28,7 +28,7 @@ This gives you a lot of flexibility. You can return any data type, override any 
 
 ## Using the `jsonable_encoder` in a `Response`
 
-Because **ReadyAPI** doesn't make any changes to a `Response` you return, you have to make sure its contents are ready for it.
+Because **readyapi** doesn't make any changes to a `Response` you return, you have to make sure its contents are ready for it.
 
 For example, you cannot put a Pydantic model in a `JSONResponse` without first converting it to a `dict` with all the data types (like `datetime`, `UUID`, etc) converted to JSON-compatible types.
 
@@ -40,13 +40,13 @@ For those cases, you can use the `jsonable_encoder` to convert your data before 
 
 You could also use `from starlette.responses import JSONResponse`.
 
-**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
+**readyapi** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
 
 ///
 
 ## Returning a custom `Response`
 
-The example above shows all the parts you need, but it's not very useful yet, as you could have just returned the `item` directly, and **ReadyAPI** would put it in a `JSONResponse` for you, converting it to a `dict`, etc. All that by default.
+The example above shows all the parts you need, but it's not very useful yet, as you could have just returned the `item` directly, and **readyapi** would put it in a `JSONResponse` for you, converting it to a `dict`, etc. All that by default.
 
 Now, let's see how you could use that to return a custom response.
 

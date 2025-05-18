@@ -18,7 +18,7 @@
 
 它接收的类型与你将为 Pydantic 模型属性所声明的类型相同，因此它可以是一个 Pydantic 模型，但也可以是一个由 Pydantic 模型组成的 `list`，例如 `List[Item]`。
 
-ReadyAPI 将使用此 `response_model` 来：
+readyapi 将使用此 `response_model` 来：
 
 * 将输出数据转换为其声明的类型。
 * 校验数据。
@@ -71,7 +71,7 @@ ReadyAPI 将使用此 `response_model` 来：
 
 {* ../../docs_src/response_model/tutorial003_py310.py hl[22] *}
 
-因此，**ReadyAPI** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。
+因此，**readyapi** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。
 
 ## 在文档中查看
 
@@ -116,7 +116,7 @@ ReadyAPI 将使用此 `response_model` 来：
 
 /// info
 
-ReadyAPI 通过 Pydantic 模型的 `.dict()` 配合 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">该方法的 `exclude_unset` 参数</a> 来实现此功能。
+readyapi 通过 Pydantic 模型的 `.dict()` 配合 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank">该方法的 `exclude_unset` 参数</a> 来实现此功能。
 
 ///
 
@@ -160,7 +160,7 @@ ReadyAPI 通过 Pydantic 模型的 `.dict()` 配合 <a href="https://docs.pydant
 }
 ```
 
-即使 `description`、`tax` 和 `tags` 具有与默认值相同的值，ReadyAPI 足够聪明 (实际上是 Pydantic 足够聪明) 去认识到这一点，它们的值被显式地所设定（而不是取自默认值）。
+即使 `description`、`tax` 和 `tags` 具有与默认值相同的值，readyapi 足够聪明 (实际上是 Pydantic 足够聪明) 去认识到这一点，它们的值被显式地所设定（而不是取自默认值）。
 
 因此，它们将包含在 JSON 响应中。
 
@@ -202,7 +202,7 @@ ReadyAPI 通过 Pydantic 模型的 `.dict()` 配合 <a href="https://docs.pydant
 
 #### 使用 `list` 而不是 `set`
 
-如果你忘记使用 `set` 而是使用 `list` 或 `tuple`，ReadyAPI 仍会将其转换为 `set` 并且正常工作：
+如果你忘记使用 `set` 而是使用 `list` 或 `tuple`，readyapi 仍会将其转换为 `set` 并且正常工作：
 
 {* ../../docs_src/response_model/tutorial006.py hl[31,37] *}
 

@@ -34,7 +34,7 @@ Aus **Sicht des Entwicklers** sollten Sie beim Nachdenken über HTTPS Folgendes 
 * **Nachdem** eine sichere Verbindung hergestellt wurde, ist das Kommunikationsprotokoll **immer noch HTTP**.
     * Die Inhalte sind **verschlüsselt**, auch wenn sie mit dem **HTTP-Protokoll** gesendet werden.
 
-Es ist eine gängige Praxis, **ein Programm/HTTP-Server** auf dem Server (der Maschine, dem Host usw.) laufen zu lassen, welches **alle HTTPS-Aspekte verwaltet**: Empfangen der **verschlüsselten HTTPS-Requests**, Senden der **entschlüsselten HTTP-Requests** an die eigentliche HTTP-Anwendung die auf demselben Server läuft (in diesem Fall die **ReadyAPI**-Anwendung), entgegennehmen der **HTTP-Response** von der Anwendung, **verschlüsseln derselben** mithilfe des entsprechenden **HTTPS-Zertifikats** und Zurücksenden zum Client über **HTTPS**. Dieser Server wird oft als **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS-Terminierungsproxy</a>** bezeichnet.
+Es ist eine gängige Praxis, **ein Programm/HTTP-Server** auf dem Server (der Maschine, dem Host usw.) laufen zu lassen, welches **alle HTTPS-Aspekte verwaltet**: Empfangen der **verschlüsselten HTTPS-Requests**, Senden der **entschlüsselten HTTP-Requests** an die eigentliche HTTP-Anwendung die auf demselben Server läuft (in diesem Fall die **readyapi**-Anwendung), entgegennehmen der **HTTP-Response** von der Anwendung, **verschlüsseln derselben** mithilfe des entsprechenden **HTTPS-Zertifikats** und Zurücksenden zum Client über **HTTPS**. Dieser Server wird oft als **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS-Terminierungsproxy</a>** bezeichnet.
 
 Einige der Optionen, die Sie als TLS-Terminierungsproxy verwenden können, sind:
 
@@ -85,7 +85,7 @@ Zuerst würde der Browser mithilfe der **DNS-Server** herausfinden, welches die 
 
 Die DNS-Server geben dem Browser eine bestimmte **IP-Adresse** zurück. Das wäre die von Ihrem Server verwendete öffentliche IP-Adresse, die Sie in den DNS-Servern konfiguriert haben.
 
-<img src="/img/deployment/https/https01.svg">
+<img src="/img/deployment/https/https01.drawio.svg">
 
 ### TLS-Handshake-Start
 
@@ -93,7 +93,7 @@ Der Browser kommuniziert dann mit dieser IP-Adresse über **Port 443** (den HTTP
 
 Der erste Teil der Kommunikation besteht lediglich darin, die Verbindung zwischen dem Client und dem Server herzustellen und die zu verwendenden kryptografischen Schlüssel usw. zu vereinbaren.
 
-<img src="/img/deployment/https/https02.svg">
+<img src="/img/deployment/https/https02.drawio.svg">
 
 Diese Interaktion zwischen dem Client und dem Server zum Aufbau der TLS-Verbindung wird als **<abbr title="TLS-Handschlag">TLS-Handshake</abbr>** bezeichnet.
 
@@ -111,7 +111,7 @@ Mithilfe der oben beschriebenen **SNI-Erweiterung** würde der TLS-Terminierungs
 
 In diesem Fall würde er das Zertifikat für `someapp.example.com` verwenden.
 
-<img src="/img/deployment/https/https03.svg">
+<img src="/img/deployment/https/https03.drawio.svg">
 
 Der Client **vertraut** bereits der Entität, die das TLS-Zertifikat generiert hat (in diesem Fall Let's Encrypt, aber wir werden später mehr darüber erfahren), sodass er **verifizieren** kann, dass das Zertifikat gültig ist.
 
@@ -133,19 +133,19 @@ Da Client und Server (sprich, der Browser und der TLS-Terminierungsproxy) nun ü
 
 Der Client sendet also einen **HTTPS-Request**. Das ist einfach ein HTTP-Request über eine verschlüsselte TLS-Verbindung.
 
-<img src="/img/deployment/https/https04.svg">
+<img src="/img/deployment/https/https04.drawio.svg">
 
 ### Den Request entschlüsseln
 
-Der TLS-Terminierungsproxy würde die vereinbarte Verschlüsselung zum **Entschlüsseln des Requests** verwenden und den **einfachen (entschlüsselten) HTTP-Request** an den Prozess weiterleiten, der die Anwendung ausführt (z. B. einen Prozess, bei dem Uvicorn die ReadyAPI-Anwendung ausführt).
+Der TLS-Terminierungsproxy würde die vereinbarte Verschlüsselung zum **Entschlüsseln des Requests** verwenden und den **einfachen (entschlüsselten) HTTP-Request** an den Prozess weiterleiten, der die Anwendung ausführt (z. B. einen Prozess, bei dem Uvicorn die readyapi-Anwendung ausführt).
 
-<img src="/img/deployment/https/https05.svg">
+<img src="/img/deployment/https/https05.drawio.svg">
 
 ### HTTP-Response
 
 Die Anwendung würde den Request verarbeiten und eine **einfache (unverschlüsselte) HTTP-Response** an den TLS-Terminierungsproxy senden.
 
-<img src="/img/deployment/https/https06.svg">
+<img src="/img/deployment/https/https06.drawio.svg">
 
 ### HTTPS-Response
 
@@ -153,7 +153,7 @@ Der TLS-Terminierungsproxy würde dann die Response mithilfe der zuvor vereinbar
 
 Als Nächstes überprüft der Browser, ob die Response gültig und mit dem richtigen kryptografischen Schlüssel usw. verschlüsselt ist. Anschließend **entschlüsselt er die Response** und verarbeitet sie.
 
-<img src="/img/deployment/https/https07.svg">
+<img src="/img/deployment/https/https07.drawio.svg">
 
 Der Client (Browser) weiß, dass die Response vom richtigen Server kommt, da dieser die Kryptografie verwendet, die zuvor mit dem **HTTPS-Zertifikat** vereinbart wurde.
 
@@ -163,7 +163,7 @@ Auf demselben Server (oder denselben Servern) könnten sich **mehrere Anwendunge
 
 Nur ein Prozess kann diese spezifische IP und den Port verarbeiten (in unserem Beispiel der TLS-Terminierungsproxy), aber die anderen Anwendungen/Prozesse können auch auf dem/den Server(n) ausgeführt werden, solange sie nicht versuchen, dieselbe **Kombination aus öffentlicher IP und Port** zu verwenden.
 
-<img src="/img/deployment/https/https08.svg">
+<img src="/img/deployment/https/https08.drawio.svg">
 
 Auf diese Weise könnte der TLS-Terminierungsproxy HTTPS und Zertifikate für **mehrere Domains**, für mehrere Anwendungen, verarbeiten und die Requests dann jeweils an die richtige Anwendung weiterleiten.
 
@@ -173,7 +173,7 @@ Irgendwann in der Zukunft würde jedes Zertifikat **ablaufen** (etwa 3 Monate na
 
 Und dann gäbe es ein anderes Programm (in manchen Fällen ist es ein anderes Programm, in manchen Fällen ist es derselbe TLS-Terminierungsproxy), das mit Let's Encrypt kommuniziert und das/die Zertifikat(e) erneuert.
 
-<img src="/img/deployment/https/https.svg">
+<img src="/img/deployment/https/https.drawio.svg">
 
 Die **TLS-Zertifikate** sind **einem Domainnamen zugeordnet**, nicht einer IP-Adresse.
 
@@ -196,4 +196,4 @@ Dieser ganze Erneuerungsprozess, während die Anwendung weiterhin bereitgestellt
 
 Sobald Sie jedoch die grundlegenden Informationen zu **HTTPS für Entwickler** kennen, können Sie verschiedene Tools problemlos kombinieren und konfigurieren, um alles auf einfache Weise zu verwalten.
 
-In einigen der nächsten Kapitel zeige ich Ihnen einige konkrete Beispiele für die Einrichtung von **HTTPS** für **ReadyAPI**-Anwendungen. 🔒
+In einigen der nächsten Kapitel zeige ich Ihnen einige konkrete Beispiele für die Einrichtung von **HTTPS** für **readyapi**-Anwendungen. 🔒

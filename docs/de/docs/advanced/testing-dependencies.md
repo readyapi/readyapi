@@ -22,21 +22,21 @@ In diesem Fall können Sie die Abhängigkeit, die diesen Anbieter aufruft, über
 
 ### Verwenden Sie das Attribut `app.dependency_overrides`.
 
-Für diese Fälle verfügt Ihre **ReadyAPI**-Anwendung über das Attribut `app.dependency_overrides`, bei diesem handelt sich um ein einfaches `dict`.
+Für diese Fälle verfügt Ihre **readyapi**-Anwendung über das Attribut `app.dependency_overrides`, bei diesem handelt sich um ein einfaches `dict`.
 
 Um eine Abhängigkeit für das Testen zu überschreiben, geben Sie als Schlüssel die ursprüngliche Abhängigkeit (eine Funktion) und als Wert Ihre Überschreibung der Abhängigkeit (eine andere Funktion) ein.
 
-Und dann ruft **ReadyAPI** diese Überschreibung anstelle der ursprünglichen Abhängigkeit auf.
+Und dann ruft **readyapi** diese Überschreibung anstelle der ursprünglichen Abhängigkeit auf.
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
 /// tip | Tipp
 
-Sie können eine Überschreibung für eine Abhängigkeit festlegen, die an einer beliebigen Stelle in Ihrer **ReadyAPI**-Anwendung verwendet wird.
+Sie können eine Überschreibung für eine Abhängigkeit festlegen, die an einer beliebigen Stelle in Ihrer **readyapi**-Anwendung verwendet wird.
 
 Die ursprüngliche Abhängigkeit könnte in einer *Pfadoperation-Funktion*, einem *Pfadoperation-Dekorator* (wenn Sie den Rückgabewert nicht verwenden), einem `.include_router()`-Aufruf, usw. verwendet werden.
 
-ReadyAPI kann sie in jedem Fall überschreiben.
+readyapi kann sie in jedem Fall überschreiben.
 
 ///
 

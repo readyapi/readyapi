@@ -24,7 +24,7 @@
 
 也可以使用 `from starlette import status` 导入状态码。
 
-**ReadyAPI** 的`readyapi.status` 和 `starlette.status` 一样，只是快捷方式。实际上，`readyapi.status` 直接继承自 Starlette。
+**readyapi** 的`readyapi.status` 和 `starlette.status` 一样，只是快捷方式。实际上，`readyapi.status` 直接继承自 Starlette。
 
 ///
 
@@ -46,7 +46,7 @@ OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
 ## 文档字符串（`docstring`）
 
-描述内容比较长且占用多行时，可以在函数的 <abbr title="函数中作为第一个表达式，用于文档目的的一个多行字符串（并没有被分配个任何变量）">docstring</abbr> 中声明*路径操作*的描述，**ReadyAPI** 支持从文档字符串中读取描述内容。
+描述内容比较长且占用多行时，可以在函数的 <abbr title="函数中作为第一个表达式，用于文档目的的一个多行字符串（并没有被分配个任何变量）">docstring</abbr> 中声明*路径操作*的描述，**readyapi** 支持从文档字符串中读取描述内容。
 
 文档字符串支持 <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>，能正确解析和显示 Markdown 的内容，但要注意文档字符串的缩进。
 
@@ -72,7 +72,7 @@ OpenAPI 概图会自动添加标签，供 API 文档接口使用：
 
 OpenAPI 规定每个*路径操作*都要有响应描述。
 
-如果没有定义响应描述，**ReadyAPI** 则自动生成内容为 "Successful response" 的响应描述。
+如果没有定义响应描述，**readyapi** 则自动生成内容为 "Successful response" 的响应描述。
 
 ///
 

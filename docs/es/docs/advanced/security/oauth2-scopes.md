@@ -1,6 +1,6 @@
 # Scopes de OAuth2
 
-Puedes usar scopes de OAuth2 directamente con **ReadyAPI**, están integrados para funcionar de manera fluida.
+Puedes usar scopes de OAuth2 directamente con **readyapi**, están integrados para funcionar de manera fluida.
 
 Esto te permitiría tener un sistema de permisos más detallado, siguiendo el estándar de OAuth2, integrado en tu aplicación OpenAPI (y la documentación de la API).
 
@@ -8,7 +8,7 @@ OAuth2 con scopes es el mecanismo usado por muchos grandes proveedores de autent
 
 Cada vez que te "logueas con" Facebook, Google, GitHub, Microsoft, Twitter, esa aplicación está usando OAuth2 con scopes.
 
-En esta sección verás cómo manejar autenticación y autorización con el mismo OAuth2 con scopes en tu aplicación de **ReadyAPI**.
+En esta sección verás cómo manejar autenticación y autorización con el mismo OAuth2 con scopes en tu aplicación de **readyapi**.
 
 /// warning | Advertencia
 
@@ -120,7 +120,7 @@ En este caso, requiere el scope `me` (podría requerir más de un scope).
 
 No necesariamente necesitas añadir diferentes scopes en diferentes lugares.
 
-Lo estamos haciendo aquí para demostrar cómo **ReadyAPI** maneja scopes declarados en diferentes niveles.
+Lo estamos haciendo aquí para demostrar cómo **readyapi** maneja scopes declarados en diferentes niveles.
 
 ///
 
@@ -130,7 +130,7 @@ Lo estamos haciendo aquí para demostrar cómo **ReadyAPI** maneja scopes declar
 
 `Security` es en realidad una subclase de `Depends`, y tiene solo un parámetro extra que veremos más adelante.
 
-Pero al usar `Security` en lugar de `Depends`, **ReadyAPI** sabrá que puede declarar scopes de seguridad, usarlos internamente y documentar la API con OpenAPI.
+Pero al usar `Security` en lugar de `Depends`, **readyapi** sabrá que puede declarar scopes de seguridad, usarlos internamente y documentar la API con OpenAPI.
 
 Pero cuando importas `Query`, `Path`, `Depends`, `Security` y otros de `readyapi`, en realidad son funciones que devuelven clases especiales.
 
@@ -267,7 +267,7 @@ Pero al final, están implementando el mismo estándar OAuth2.
 
 ///
 
-**ReadyAPI** incluye utilidades para todos estos flujos de autenticación OAuth2 en `readyapi.security.oauth2`.
+**readyapi** incluye utilidades para todos estos flujos de autenticación OAuth2 en `readyapi.security.oauth2`.
 
 ## `Security` en `dependencies` del decorador
 

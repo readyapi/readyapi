@@ -19,7 +19,7 @@ Hier zeige ich Ihnen, wie Sie <a href="https://gunicorn.org/" class="external-li
 
 /// info
 
-Wenn Sie Container verwenden, beispielsweise mit Docker oder Kubernetes, erzähle ich Ihnen mehr darüber im nächsten Kapitel: [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank}.
+Wenn Sie Container verwenden, beispielsweise mit Docker oder Kubernetes, erzähle ich Ihnen mehr darüber im nächsten Kapitel: [readyapi in Containern – Docker](docker.md){.internal-link target=_blank}.
 
 Insbesondere wenn die Anwendung auf **Kubernetes** läuft, werden Sie Gunicorn wahrscheinlich **nicht** verwenden wollen und stattdessen **einen einzelnen Uvicorn-Prozess pro Container** ausführen wollen, aber ich werde Ihnen später in diesem Kapitel mehr darüber erzählen.
 
@@ -27,7 +27,7 @@ Insbesondere wenn die Anwendung auf **Kubernetes** läuft, werden Sie Gunicorn w
 
 ## Gunicorn mit Uvicorn-Workern
 
-**Gunicorn** ist hauptsächlich ein Anwendungsserver, der den **WSGI-Standard** verwendet. Das bedeutet, dass Gunicorn Anwendungen wie Flask und Django ausliefern kann. Gunicorn selbst ist nicht mit **ReadyAPI** kompatibel, da ReadyAPI den neuesten **<a href="https://asgi.readthedocs.io/en/latest/" class="external-link" target="_blank">ASGI-Standard</a>** verwendet.
+**Gunicorn** ist hauptsächlich ein Anwendungsserver, der den **WSGI-Standard** verwendet. Das bedeutet, dass Gunicorn Anwendungen wie Flask und Django ausliefern kann. Gunicorn selbst ist nicht mit **readyapi** kompatibel, da readyapi den neuesten **<a href="https://asgi.readthedocs.io/en/latest/" class="external-link" target="_blank">ASGI-Standard</a>** verwendet.
 
 Aber Gunicorn kann als **Prozessmanager** arbeiten und Benutzer können ihm mitteilen, welche bestimmte **Workerprozessklasse** verwendet werden soll. Dann würde Gunicorn einen oder mehrere **Workerprozesse** starten, diese Klasse verwendend.
 
@@ -35,7 +35,7 @@ Und **Uvicorn** hat eine **Gunicorn-kompatible Workerklasse**.
 
 Mit dieser Kombination würde Gunicorn als **Prozessmanager** fungieren und den **Port** und die **IP** abhören. Und er würde die Kommunikation an die Workerprozesse **weiterleiten**, welche die **Uvicorn-Klasse** ausführen.
 
-Und dann wäre die Gunicorn-kompatible **Uvicorn-Worker**-Klasse dafür verantwortlich, die von Gunicorn gesendeten Daten in den ASGI-Standard zu konvertieren, damit ReadyAPI diese verwenden kann.
+Und dann wäre die Gunicorn-kompatible **Uvicorn-Worker**-Klasse dafür verantwortlich, die von Gunicorn gesendeten Daten in den ASGI-Standard zu konvertieren, damit readyapi diese verwenden kann.
 
 ## Gunicorn und Uvicorn installieren
 
@@ -85,7 +85,7 @@ $ gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --b
 
 Sehen wir uns an, was jede dieser Optionen bedeutet:
 
-* `main:app`: Das ist die gleiche Syntax, die auch von Uvicorn verwendet wird. `main` bedeutet das Python-Modul mit dem Namen `main`, also eine Datei `main.py`. Und `app` ist der Name der Variable, welche die **ReadyAPI**-Anwendung ist.
+* `main:app`: Das ist die gleiche Syntax, die auch von Uvicorn verwendet wird. `main` bedeutet das Python-Modul mit dem Namen `main`, also eine Datei `main.py`. Und `app` ist der Name der Variable, welche die **readyapi**-Anwendung ist.
     * Stellen Sie sich einfach vor, dass `main:app` einer Python-`import`-Anweisung wie der folgenden entspricht:
 
         ```Python
@@ -168,7 +168,7 @@ In der Liste der Deployment-Konzepte von oben würde die Verwendung von Workern 
 
 ## Container und Docker
 
-Im nächsten Kapitel über [ReadyAPI in Containern – Docker](docker.md){.internal-link target=_blank} werde ich einige Strategien erläutern, die Sie für den Umgang mit den anderen **Deployment-Konzepten** verwenden können.
+Im nächsten Kapitel über [readyapi in Containern – Docker](docker.md){.internal-link target=_blank} werde ich einige Strategien erläutern, die Sie für den Umgang mit den anderen **Deployment-Konzepten** verwenden können.
 
 Ich zeige Ihnen auch das **offizielle Docker-Image**, welches **Gunicorn mit Uvicorn-Workern** und einige Standardkonfigurationen enthält, die für einfache Fälle nützlich sein können.
 
@@ -180,4 +180,4 @@ Sie können **Gunicorn** (oder auch Uvicorn) als Prozessmanager mit Uvicorn-Work
 
 Sie können diese Tools und Ideen nutzen, wenn Sie **Ihr eigenes Deployment-System** einrichten und sich dabei selbst um die anderen Deployment-Konzepte kümmern.
 
-Schauen Sie sich das nächste Kapitel an, um mehr über **ReadyAPI** mit Containern (z. B. Docker und Kubernetes) zu erfahren. Sie werden sehen, dass diese Tools auch einfache Möglichkeiten bieten, die anderen **Deployment-Konzepte** zu lösen. ✨
+Schauen Sie sich das nächste Kapitel an, um mehr über **readyapi** mit Containern (z. B. Docker und Kubernetes) zu erfahren. Sie werden sehen, dass diese Tools auch einfache Möglichkeiten bieten, die anderen **Deployment-Konzepte** zu lösen. ✨

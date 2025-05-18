@@ -13,7 +13,7 @@
 
 Ви також можете використовувати `from starlette.staticfiles import StaticFiles`.
 
-**ReadyAPI** надає той самий `starlette.staticfiles`, що й `readyapi.staticfiles` для зручності розробників. Але фактично він безпосередньо походить із Starlette.
+**readyapi** надає той самий `starlette.staticfiles`, що й `readyapi.staticfiles` для зручності розробників. Але фактично він безпосередньо походить із Starlette.
 
 ///
 
@@ -31,7 +31,7 @@
 
 `directory="static"` визначає каталог, що містить ваші статичні файли.
 
-`name="static"` це ім'я, яке можна використовувати всередині **ReadyAPI**.
+`name="static"` це ім'я, яке можна використовувати всередині **readyapi**.
 
 Усі ці параметри можуть бути змінені відповідно до потреб і особливостей вашого застосунку.
 

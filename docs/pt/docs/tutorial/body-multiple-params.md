@@ -4,7 +4,7 @@ Agora que nós vimos como usar `Path` e `Query`, veremos usos mais avançados de
 
 ## Misture `Path`, `Query` e parâmetros de corpo
 
-Primeiro, é claro, você pode misturar `Path`, `Query` e declarações de parâmetro no corpo da requisição livremente e o **ReadyAPI** saberá o que fazer.
+Primeiro, é claro, você pode misturar `Path`, `Query` e declarações de parâmetro no corpo da requisição livremente e o **readyapi** saberá o que fazer.
 
 E você também pode declarar parâmetros de corpo como opcionais, definindo o valor padrão com `None`:
 
@@ -33,7 +33,7 @@ Mas você pode também declarar múltiplos parâmetros de corpo, por exemplo, `i
 
 {* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
 
-Neste caso, o **ReadyAPI** perceberá que existe mais de um parâmetro de corpo na função (dois parâmetros que são modelos Pydantic).
+Neste caso, o **readyapi** perceberá que existe mais de um parâmetro de corpo na função (dois parâmetros que são modelos Pydantic).
 
 Então, ele usará o nome dos parâmetros como chaves (nome dos campos) no corpo, e espera um corpo como:
 
@@ -58,23 +58,23 @@ Repare que mesmo que o `item` esteja declarado da mesma maneira que antes, agora
 
 ///
 
-O **ReadyAPI** fará a conversão automática a partir da requisição, assim esse parâmetro `item` receberá seu respectivo conteúdo e o mesmo ocorrerá com `user`.
+O **readyapi** fará a conversão automática a partir da requisição, assim esse parâmetro `item` receberá seu respectivo conteúdo e o mesmo ocorrerá com `user`.
 
 Ele executará a validação dos dados compostos e irá documentá-los de maneira compatível com o esquema OpenAPI e documentação automática.
 
 ## Valores singulares no corpo
 
-Assim como existem uma `Query` e uma `Path` para definir dados adicionais para parâmetros de consulta e de rota, o **ReadyAPI** provê o equivalente para `Body`.
+Assim como existem uma `Query` e uma `Path` para definir dados adicionais para parâmetros de consulta e de rota, o **readyapi** provê o equivalente para `Body`.
 
 Por exemplo, extendendo o modelo anterior, você poder decidir por ter uma outra chave `importance` no mesmo corpo, além de `item` e `user`.
 
-Se você declará-lo como é, porque é um valor singular, o **ReadyAPI** assumirá que se trata de um parâmetro de consulta.
+Se você declará-lo como é, porque é um valor singular, o **readyapi** assumirá que se trata de um parâmetro de consulta.
 
-Mas você pode instruir o **ReadyAPI** para tratá-lo como outra chave do corpo usando `Body`:
+Mas você pode instruir o **readyapi** para tratá-lo como outra chave do corpo usando `Body`:
 
 {* ../../docs_src/body_multiple_params/tutorial003.py hl[22] *}
 
-Neste caso, o **ReadyAPI** esperará um corpo como:
+Neste caso, o **readyapi** esperará um corpo como:
 
 ```JSON
 {
@@ -124,7 +124,7 @@ Por exemplo:
 
 Suponha que você tem um único parâmetro de corpo `item`, a partir de um modelo Pydantic `Item`.
 
-Por padrão, o **ReadyAPI** esperará que seu conteúdo venha no corpo diretamente.
+Por padrão, o **readyapi** esperará que seu conteúdo venha no corpo diretamente.
 
 Mas se você quiser que ele espere por um JSON com uma chave `item` e dentro dele os conteúdos do modelo, como ocorre ao declarar vários parâmetros de corpo, você pode usar o parâmetro especial de `Body` chamado `embed`:
 
@@ -136,7 +136,7 @@ como em:
 
 {* ../../docs_src/body_multiple_params/tutorial005_py310.py hl[15] *}
 
-Neste caso o **ReadyAPI** esperará um corpo como:
+Neste caso o **readyapi** esperará um corpo como:
 
 ```JSON hl_lines="2"
 {
@@ -164,8 +164,8 @@ ao invés de:
 
 Você pode adicionar múltiplos parâmetros de corpo para sua *função de operação de rota*, mesmo que a requisição possa ter somente um único corpo.
 
-E o **ReadyAPI** vai manipulá-los, mandar para você os dados corretos na sua função, e validar e documentar o schema correto na *operação de rota*.
+E o **readyapi** vai manipulá-los, mandar para você os dados corretos na sua função, e validar e documentar o schema correto na *operação de rota*.
 
 Você também pode declarar valores singulares para serem recebidos como parte do corpo.
 
-E você pode instruir o **ReadyAPI** para requisitar no corpo a indicação de chave mesmo quando existe somente um único parâmetro declarado.
+E você pode instruir o **readyapi** para requisitar no corpo a indicação de chave mesmo quando existe somente um único parâmetro declarado.
