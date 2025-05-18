@@ -55,18 +55,18 @@ jobs:
           merge-multiple: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to GitHub Pages
         # hashFiles returns an empty string if there are no files
         if: hashFiles('./site/*')
         id: deploy
         env:
-          PROJECT_NAME: readyapikhulnasoft
-          BRANCH: ${{ ( github.event.workflow_run.head_repository.full_name == github.repository && github.event.workflow_run.head_branch == 'master' && 'main' ) || ( github.event.workflow_run.head_sha ) }}
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./site --project-name=${{ env.PROJECT_NAME }} --branch=${{ env.BRANCH }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add ./site
+          git commit -m "Deploy docs to GitHub Pages"
+          git push origin HEAD:gh-pages --force
       - name: Comment Deploy
         run: python ./scripts/deploy_docs_status.py
         env:
