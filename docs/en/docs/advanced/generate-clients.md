@@ -24,7 +24,7 @@ For example, you might want to try:
 
 * <a href="https://speakeasy.com/?utm_source=readyapi+repo&utm_medium=github+sponsorship" class="external-link" target="_blank">Speakeasy</a>
 * <a href="https://www.stainlessapi.com/?utm_source=readyapi&utm_medium=referral" class="external-link" target="_blank">Stainless</a>
-* <a href="https://developers.liblab.com/tutorials/sdk-for-readyapi/?utm_source=readyapi" class="external-link" target="_blank">liblab</a>
+* <a href="https://developers.liblab.com/tutorials/sdk-for-readyapi?utm_source=readyapi" class="external-link" target="_blank">liblab</a>
 
 There are also several other companies offering similar services that you can search and find online. 🤓
 

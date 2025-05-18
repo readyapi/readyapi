@@ -4,15 +4,19 @@
 <p align="center">
     <em>ReadyAPI framework, alte prestazioni, facile da imparare, rapido da implementare, pronto per il rilascio in produzione</em>
 </p>
+
 <p align="center">
-<a href="https://travis-ci.com/readyapi/readyapi" target="_blank">
-    <img src="https://travis-ci.com/readyapi/readyapi.svg?branch=master" alt="Build Status">
+<a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
+    <img src="https://github.com/readyapi/readyapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
 </a>
-<a href="https://codecov.io/gh/readyapi/readyapi" target="_blank">
-    <img src="https://img.shields.io/codecov/c/github/readyapi/readyapi" alt="Coverage">
+<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/readyapi/readyapi" target="_blank">
+    <img src="https://coverage-badge.samuelcolvin.workers.dev/readyapi/readyapi.svg" alt="Coverage">
 </a>
 <a href="https://pypi.org/project/readyapi" target="_blank">
-    <img src="https://badge.fury.io/py/readyapi.svg" alt="Package version">
+    <img src="https://img.shields.io/pypi/v/readyapi?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/readyapi" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/readyapi.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
 

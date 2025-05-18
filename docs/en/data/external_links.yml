@@ -156,7 +156,7 @@ Articles:
     author_link: https://www.twilio.com
     link: https://www.twilio.com/blog/build-secure-twilio-webhook-python-readyapi
     title: Build a Secure Twilio Webhook with Python and ReadyAPI
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft Ltd (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://dev.to/khulnasoft/build-a-web-api-from-scratch-with-readyapi-the-workshop-2ehe
     title: Build a web API from scratch with ReadyAPI - the workshop
@@ -399,11 +399,11 @@ Talks:
     author_link: https://github.com/JenySadadia
     link: https://www.youtube.com/watch?v=uZdTe8_Z6BQ
     title: 'PyCon AU 2023: Testing asynchronous applications with ReadyAPI and pytest'
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft Ltd (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=PnpTY1f4k2U
     title: '[VIRTUAL] Py.Amsterdam''s flying Software Circus: Intro to ReadyAPI'
-  - author: Sebastián Ramírez (khulnasoft)
+  - author: KhulnaSoft Ltd (khulnasoft)
     author_link: https://twitter.com/khulnasoft
     link: https://www.youtube.com/watch?v=z9K5pwb0rt8
     title: 'PyConBY 2020: Serve ML models easily with ReadyAPI'
@@ -411,3 +411,8 @@ Talks:
     author_link: https://twitter.com/chriswithers13
     link: https://www.youtube.com/watch?v=3DLwPcrE5mA
     title: 'PyCon UK 2019: ReadyAPI from the ground up'
+  Taiwanese:
+  - author: Blueswen
+    author_link: https://github.com/blueswen
+    link: https://www.youtube.com/watch?v=y3sumuoDq4w
+    title: 'PyCon TW 2024: 全方位強化 Python 服務可觀測性：以 ReadyAPI 和 Grafana Stack 為例'

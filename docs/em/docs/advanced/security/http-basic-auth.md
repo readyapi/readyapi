@@ -34,7 +34,7 @@
 
 👉, ⚙️ 🐍 🐩 🕹 <a href="https://docs.python.org/3/library/secrets.html" class="external-link" target="_blank">`secrets`</a> ✅ 🆔 &amp; 🔐.
 
-`secrets.compare_digest()` 💪 ✊ `bytes` ⚖️ `str` 👈 🕴 🔌 🔠 🦹 (🕐 🇪🇸), 👉 ⛓ ⚫️ 🚫🔜 👷 ⏮️ 🦹 💖 `á`, `Sebastián`.
+`secrets.compare_digest()` 💪 ✊ `bytes` ⚖️ `str` 👈 🕴 🔌 🔠 🦹 (🕐 🇪🇸), 👉 ⛓ ⚫️ 🚫🔜 👷 ⏮️ 🦹 💖 `á`, `KhulnaSoft`.
 
 🍵 👈, 👥 🥇 🗜 `username` &amp; `password` `bytes` 🔢 👫 ⏮️ 🔠-8️⃣.
 

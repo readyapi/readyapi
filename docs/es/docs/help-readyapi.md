@@ -40,7 +40,7 @@ Al hacerlo, recibirás notificaciones (en tu email) cada vez que haya un nuevo l
 
 ## Conéctate con el autor
 
-Puedes conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">conmigo (Sebastián Ramírez / `khulnasoft`)</a>, el autor.
+Puedes conectar <a href="https://khulnasoft.com" class="external-link" target="_blank">conmigo (KhulnaSoft Ltd / `khulnasoft`)</a>, el autor.
 
 Puedes:
 

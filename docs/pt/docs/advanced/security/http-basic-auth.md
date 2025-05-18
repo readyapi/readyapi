@@ -34,7 +34,7 @@ Utilize uma dependência para verificar se o usuário e a senha estão corretos.
 
 Para isso, utilize o módulo padrão do Python <a href="https://docs.python.org/3/library/secrets.html" class="external-link" target="_blank">`secrets`</a> para verificar o usuário e senha.
 
-O `secrets.compare_digest()` necessita receber `bytes` ou `str` que possuem apenas caracteres ASCII (os em inglês). Isso significa que não funcionaria com caracteres como o `á`, como em `Sebastián`.
+O `secrets.compare_digest()` necessita receber `bytes` ou `str` que possuem apenas caracteres ASCII (os em inglês). Isso significa que não funcionaria com caracteres como o `á`, como em `KhulnaSoft`.
 
 Para lidar com isso, primeiramente nós convertemos o `username` e o `password` para `bytes`, codificando-os com UTF-8.
 

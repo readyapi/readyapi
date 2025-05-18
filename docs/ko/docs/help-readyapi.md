@@ -40,7 +40,7 @@ GitHub에서 ReadyAPI를 "watch"할 수 있습니다 (오른쪽 상단 watch 버
 
 ## 개발자와의 연결
 
-<a href="https://khulnasoft.com" class="external-link" target="_blank">개발자(Sebastián Ramírez / `khulnasoft`)</a>와 연락을 취할 수 있습니다.
+<a href="https://khulnasoft.com" class="external-link" target="_blank">개발자(KhulnaSoft Ltd / `khulnasoft`)</a>와 연락을 취할 수 있습니다.
 
 여러분은 할 수 있습니다:
 
