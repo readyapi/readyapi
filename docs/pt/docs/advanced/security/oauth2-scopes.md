@@ -1,6 +1,6 @@
 # Escopos OAuth2
 
-Você pode utilizar escopos do OAuth2 diretamente com o **readyapi**, eles são integrados para funcionar perfeitamente.
+Você pode utilizar escopos do OAuth2 diretamente com o **ReadyAPI**, eles são integrados para funcionar perfeitamente.
 
 Isso permitiria que você tivesse um sistema de permissionamento mais refinado, seguindo o padrão do OAuth2 integrado na sua aplicação OpenAPI (e as documentações da API).
 
@@ -8,7 +8,7 @@ OAuth2 com escopos é o mecanismo utilizado por muitos provedores de autenticaç
 
 Toda vez que você "se autentica com" Facebook, Google, GitHub, Microsoft, Twitter, aquela aplicação está utilizando o OAuth2 com escopos.
 
-Nesta seção, você verá como gerenciar a autenticação e autorização com os mesmos escopos do OAuth2 em sua aplicação **readyapi**.
+Nesta seção, você verá como gerenciar a autenticação e autorização com os mesmos escopos do OAuth2 em sua aplicação **ReadyAPI**.
 
 /// warning | Aviso
 
@@ -120,7 +120,7 @@ Neste caso, ele requer o escopo `me` (poderia requerer mais de um escopo).
 
 Você não necessariamente precisa adicionar diferentes escopos em diferentes lugares.
 
-Nós estamos fazendo isso aqui para demonstrar como o **readyapi** lida com escopos declarados em diferentes níveis.
+Nós estamos fazendo isso aqui para demonstrar como o **ReadyAPI** lida com escopos declarados em diferentes níveis.
 
 ///
 
@@ -130,7 +130,7 @@ Nós estamos fazendo isso aqui para demonstrar como o **readyapi** lida com esco
 
 `Security` é na verdade uma subclasse de `Depends`, e ele possui apenas um parâmetro extra que veremos depois.
 
-Porém ao utilizar `Security` no lugar de `Depends`, o **readyapi** saberá que ele pode declarar escopos de segurança, utilizá-los internamente, e documentar a API com o OpenAPI.
+Porém ao utilizar `Security` no lugar de `Depends`, o **ReadyAPI** saberá que ele pode declarar escopos de segurança, utilizá-los internamente, e documentar a API com o OpenAPI.
 
 Mas quando você importa `Query`, `Path`, `Depends`, `Security` entre outros de `readyapi`, eles são na verdade funções que retornam classes especiais.
 
@@ -267,7 +267,7 @@ Mas no final, eles estão implementando o mesmo padrão OAuth2.
 
 ///
 
-O **readyapi** inclui utilitários para todos esses fluxos de autenticação OAuth2 em `readyapi.security.oauth2`.
+O **ReadyAPI** inclui utilitários para todos esses fluxos de autenticação OAuth2 em `readyapi.security.oauth2`.
 
 ## `Security` em docoradores de `dependências`
 

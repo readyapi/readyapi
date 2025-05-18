@@ -430,9 +430,9 @@ $ deactivate
 
 ## なぜ仮想環境？
 
-readyapiを使った作業をするには、 [Python](https://www.python.org/) のインストールが必要です。
+ReadyAPIを使った作業をするには、 [Python](https://www.python.org/) のインストールが必要です。
 
-それから、readyapiや、使用したいその他の**パッケージ**を**インストール**する必要があります。
+それから、ReadyAPIや、使用したいその他の**パッケージ**を**インストール**する必要があります。
 
 パッケージをインストールするには、通常、Python に付属する `pip` コマンド (または同様の代替コマンド) を使用します。
 
@@ -539,9 +539,9 @@ $ pip install "readyapi[standard]"
 
 </div>
 
-readyapiのコードを含む圧縮ファイルが、通常は [PyPI](https://pypi.org/project/readyapi/) からダウンロードされます。
+ReadyAPIのコードを含む圧縮ファイルが、通常は [PyPI](https://pypi.org/project/readyapi/) からダウンロードされます。
 
-また、readyapiが依存する他のパッケージも**ダウンロード**されます。
+また、ReadyAPIが依存する他のパッケージも**ダウンロード**されます。
 
 それから、これらのファイルは**解凍**され、コンピュータのあるディレクトリに配置されます。
 

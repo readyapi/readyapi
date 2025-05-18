@@ -1,6 +1,6 @@
 # 元数据和文档 URL
 
-你可以在 readyapi 应用程序中自定义多个元数据配置。
+你可以在 ReadyAPI 应用程序中自定义多个元数据配置。
 
 ## API 元数据
 
@@ -9,12 +9,12 @@
 | 参数 | 类型 | 描述 |
 |------------|------|-------------|
 | `title` | `str` | API 的标题。 |
-| `summary` | `str` | API 的简短摘要。 <small>自 OpenAPI 3.1.0、readyapi 0.99.0 起可用。.</small> |
+| `summary` | `str` | API 的简短摘要。 <small>自 OpenAPI 3.1.0、ReadyAPI 0.99.0 起可用。.</small> |
 | `description` | `str` | API 的简短描述。可以使用Markdown。 |
 | `version` | `string` | API 的版本。这是您自己的应用程序的版本，而不是 OpenAPI 的版本。例如 `2.5.0` 。 |
 | `terms_of_service` | `str` | API 服务条款的 URL。如果提供，则必须是 URL。 |
 | `contact` | `dict` | 公开的 API 的联系信息。它可以包含多个字段。<details><summary><code>contact</code> 字段</summary><table><thead><tr><th>参数</th><th>Type</th><th>描述</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>联系人/组织的识别名称。</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>指向联系信息的 URL。必须采用 URL 格式。</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>联系人/组织的电子邮件地址。必须采用电子邮件地址的格式。</td></tr></tbody></table></details> |
-| `license_info` | `dict` | 公开的 API 的许可证信息。它可以包含多个字段。<details><summary><code>license_info</code> 字段</summary><table><thead><tr><th>参数</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>必须的</strong> (如果设置了<code>license_info</code>). 用于 API 的许可证名称。</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>一个API的<a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a>许可证表达。 The <code>identifier</code> field is mutually exclusive of the <code>url</code> field. <small>自 OpenAPI 3.1.0、readyapi 0.99.0 起可用。</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>用于 API 的许可证的 URL。必须采用 URL 格式。</td></tr></tbody></table></details> |
+| `license_info` | `dict` | 公开的 API 的许可证信息。它可以包含多个字段。<details><summary><code>license_info</code> 字段</summary><table><thead><tr><th>参数</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>必须的</strong> (如果设置了<code>license_info</code>). 用于 API 的许可证名称。</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>一个API的<a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a>许可证表达。 The <code>identifier</code> field is mutually exclusive of the <code>url</code> field. <small>自 OpenAPI 3.1.0、ReadyAPI 0.99.0 起可用。</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>用于 API 的许可证的 URL。必须采用 URL 格式。</td></tr></tbody></table></details> |
 
 你可以按如下方式设置它们：
 

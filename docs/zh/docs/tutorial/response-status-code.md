@@ -35,7 +35,7 @@
 
 某些响应状态码表示响应没有响应体（参阅下一章）。
 
-readyapi 可以进行识别，并生成表明无响应体的 OpenAPI 文档。
+ReadyAPI 可以进行识别，并生成表明无响应体的 OpenAPI 文档。
 
 ///
 
@@ -92,7 +92,7 @@ readyapi 可以进行识别，并生成表明无响应体的 OpenAPI 文档。
 
 也可以使用 `from starlette import status`。
 
-为了让开发者更方便，**readyapi** 提供了与 `starlette.status` 完全相同的 `readyapi.status`。但它直接来自于 Starlette。
+为了让开发者更方便，**ReadyAPI** 提供了与 `starlette.status` 完全相同的 `readyapi.status`。但它直接来自于 Starlette。
 
 ///
 

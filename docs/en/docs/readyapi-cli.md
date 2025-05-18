@@ -1,17 +1,17 @@
-# readyapi CLI
+# ReadyAPI CLI
 
-**readyapi CLI** is a command line program that you can use to serve your readyapi app, manage your readyapi project, and more.
+**ReadyAPI CLI** is a command line program that you can use to serve your ReadyAPI app, manage your ReadyAPI project, and more.
 
-When you install readyapi (e.g. with `pip install "readyapi[standard]"`), it includes a package called `readyapi-cli`, this package provides the `readyapi` command in the terminal.
+When you install ReadyAPI (e.g. with `pip install "readyapi[standard]"`), it includes a package called `readyapi-cli`, this package provides the `readyapi` command in the terminal.
 
-To run your readyapi app for development, you can use the `readyapi dev` command:
+To run your ReadyAPI app for development, you can use the `readyapi dev` command:
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories with
              <font color="#3465A4">__init__.py</font> files
@@ -19,7 +19,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with the
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with the
              following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -46,13 +46,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 </div>
 
-The command line program called `readyapi` is **readyapi CLI**.
+The command line program called `readyapi` is **ReadyAPI CLI**.
 
-readyapi CLI takes the path to your Python program (e.g. `main.py`) and automatically detects the `readyapi` instance (commonly named `app`), determines the correct import process, and then serves it.
+ReadyAPI CLI takes the path to your Python program (e.g. `main.py`) and automatically detects the `ReadyAPI` instance (commonly named `app`), determines the correct import process, and then serves it.
 
 For production you would use `readyapi run` instead. 🚀
 
-Internally, **readyapi CLI** uses <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, a high-performance, production-ready, ASGI server. 😎
+Internally, **ReadyAPI CLI** uses <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>, a high-performance, production-ready, ASGI server. 😎
 
 ## `readyapi dev`
 
@@ -62,7 +62,7 @@ By default, **auto-reload** is enabled, automatically reloading the server when 
 
 ## `readyapi run`
 
-Executing `readyapi run` starts readyapi in production mode by default.
+Executing `readyapi run` starts ReadyAPI in production mode by default.
 
 By default, **auto-reload** is disabled. It also listens on the IP address `0.0.0.0`, which means all the available IP addresses, this way it will be publicly accessible to anyone that can communicate with the machine. This is how you would normally run it in production, for example, in a container.
 

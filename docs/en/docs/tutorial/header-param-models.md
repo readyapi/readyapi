@@ -6,7 +6,7 @@ This would allow you to **re-use the model** in **multiple places** and also to 
 
 /// note
 
-This is supported since readyapi version `0.115.0`. 🤓
+This is supported since ReadyAPI version `0.115.0`. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declare the **header parameters** that you need in a **Pydantic model**, and the
 
 {* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
-**readyapi** will **extract** the data for **each field** from the **headers** in the request and give you the Pydantic model you defined.
+**ReadyAPI** will **extract** the data for **each field** from the **headers** in the request and give you the Pydantic model you defined.
 
 ## Check the Docs
 
@@ -69,4 +69,4 @@ Before setting `convert_underscores` to `False`, bear in mind that some HTTP pro
 
 ## Summary
 
-You can use **Pydantic models** to declare **headers** in **readyapi**. 😎
+You can use **Pydantic models** to declare **headers** in **ReadyAPI**. 😎

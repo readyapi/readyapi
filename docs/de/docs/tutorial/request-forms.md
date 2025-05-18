@@ -44,7 +44,7 @@ Um Formularbodys zu deklarieren, verwenden Sie explizit `Form`, da diese Paramet
 
 HTML-Formulare (`<form></form>`) senden die Daten in einer „speziellen“ Kodierung zum Server, welche sich von JSON unterscheidet.
 
-**readyapi** stellt sicher, dass diese Daten korrekt ausgelesen werden, statt JSON zu erwarten.
+**ReadyAPI** stellt sicher, dass diese Daten korrekt ausgelesen werden, statt JSON zu erwarten.
 
 /// note | Technische Details
 
@@ -60,7 +60,7 @@ Wenn Sie mehr über Formularfelder und ihre Kodierungen lesen möchten, besuchen
 
 Sie können mehrere `Form`-Parameter in einer *Pfadoperation* deklarieren, aber Sie können nicht gleichzeitig auch `Body`-Felder deklarieren, welche Sie als JSON erwarten, da der Request den Body mittels `application/x-www-form-urlencoded` statt `application/json` kodiert.
 
-Das ist keine Limitation von **readyapi**, sondern Teil des HTTP-Protokolls.
+Das ist keine Limitation von **ReadyAPI**, sondern Teil des HTTP-Protokolls.
 
 ///
 

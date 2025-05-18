@@ -2,7 +2,7 @@
 
 ## さらなる機能
 
-[チュートリアル - ユーザーガイド](../tutorial/index.md){.internal-link target=_blank}により、**readyapi**の主要な機能は十分に理解できたことでしょう。
+[チュートリアル - ユーザーガイド](../tutorial/index.md){.internal-link target=_blank}により、**ReadyAPI**の主要な機能は十分に理解できたことでしょう。
 
 以降のセクションでは、チュートリアルでは説明しきれなかったオプションや設定、および機能について説明します。
 
@@ -16,12 +16,12 @@
 
 ## 先にチュートリアルを読む
 
-[チュートリアル - ユーザーガイド](../tutorial/index.md){.internal-link target=_blank}の知識があれば、**readyapi**の主要な機能を利用することができます。
+[チュートリアル - ユーザーガイド](../tutorial/index.md){.internal-link target=_blank}の知識があれば、**ReadyAPI**の主要な機能を利用することができます。
 
 以降のセクションは、すでにチュートリアルを読んで、その主要なアイデアを理解できていることを前提としています。
 
 ## テスト駆動開発のコース
 
-このセクションの内容を補完するために脱初心者用コースを受けたい場合は、**TestDriven.io**による、<a href="https://testdriven.io/courses/tdd-readyapi/" class="external-link" target="_blank">Test-Driven Development with readyapi and Docker</a>を確認するのがよいかもしれません。
+このセクションの内容を補完するために脱初心者用コースを受けたい場合は、**TestDriven.io**による、<a href="https://testdriven.io/courses/tdd-readyapi/" class="external-link" target="_blank">Test-Driven Development with ReadyAPI and Docker</a>を確認するのがよいかもしれません。
 
-現在、このコースで得られた利益の10%が**readyapi**の開発のために寄付されています。🎉 😄
+現在、このコースで得られた利益の10%が**ReadyAPI**の開発のために寄付されています。🎉 😄

@@ -1,6 +1,6 @@
 # Tutorial - Pedoman Pengguna - Pengenalan
 
-Tutorial ini menunjukan cara menggunakan ***readyapi*** dengan semua fitur-fiturnya, tahap demi tahap.
+Tutorial ini menunjukan cara menggunakan ***ReadyAPI*** dengan semua fitur-fiturnya, tahap demi tahap.
 
 Setiap bagian dibangun secara bertahap dari bagian sebelumnya, tetapi terstruktur untuk memisahkan banyak topik, sehingga kamu bisa secara langsung menuju ke topik spesifik untuk menyelesaikan kebutuhan API tertentu.
 
@@ -30,13 +30,13 @@ $ uvicorn main:app --reload
 
 **SANGAT disarankan** agar kamu menulis atau menyalin kode, mengubahnya dan menjalankannya secara lokal.
 
-Dengan menggunakannya di dalam editor, benar-benar memperlihatkan manfaat dari readyapi, melihat bagaimana sedikitnya kode yang harus kamu tulis, semua pengecekan tipe, pelengkapan otomatis, dll.
+Dengan menggunakannya di dalam editor, benar-benar memperlihatkan manfaat dari ReadyAPI, melihat bagaimana sedikitnya kode yang harus kamu tulis, semua pengecekan tipe, pelengkapan otomatis, dll.
 
 ---
 
-## Install readyapi
+## Install ReadyAPI
 
-Langkah pertama adalah dengan meng-install readyapi.
+Langkah pertama adalah dengan meng-install ReadyAPI.
 
 Untuk tutorial, kamu mungkin hendak meng-installnya dengan semua pilihan fitur dan dependensinya:
 

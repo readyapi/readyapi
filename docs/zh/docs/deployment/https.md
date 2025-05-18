@@ -34,7 +34,7 @@
 * **获得安全连接后**，通信协议**仍然是HTTP**。
      * 内容是 **加密过的**，即使它们是通过 **HTTP 协议** 发送的。
 
-通常的做法是在服务器上运行**一个程序/HTTP 服务器**并**管理所有 HTTPS 部分**：接收**加密的 HTTPS 请求**， 将 **解密的 HTTP 请求** 发送到在同一服务器中运行的实际 HTTP 应用程序（在本例中为 **readyapi** 应用程序），从应用程序中获取 **HTTP 响应**， 使用适当的 **HTTPS 证书**对其进行加密并使用 **HTTPS** 将其发送回客户端。 此服务器通常被称为 **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS 终止代理(TLS Termination Proxy)</a>**。
+通常的做法是在服务器上运行**一个程序/HTTP 服务器**并**管理所有 HTTPS 部分**：接收**加密的 HTTPS 请求**， 将 **解密的 HTTP 请求** 发送到在同一服务器中运行的实际 HTTP 应用程序（在本例中为 **ReadyAPI** 应用程序），从应用程序中获取 **HTTP 响应**， 使用适当的 **HTTPS 证书**对其进行加密并使用 **HTTPS** 将其发送回客户端。 此服务器通常被称为 **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS 终止代理(TLS Termination Proxy)</a>**。
 
 你可以用作 TLS 终止代理的一些选项包括：
 
@@ -138,7 +138,7 @@ TLS 终止代理可以访问一个或多个 **TLS 证书**（HTTPS 证书）。
 
 ### 解密请求
 
-TLS 终止代理将使用协商好的加密算法**解密请求**，并将**（解密的）HTTP 请求**传输到运行应用程序的进程（例如运行 readyapi 应用的 Uvicorn 进程）。
+TLS 终止代理将使用协商好的加密算法**解密请求**，并将**（解密的）HTTP 请求**传输到运行应用程序的进程（例如运行 ReadyAPI 应用的 Uvicorn 进程）。
 
 <img src="/img/deployment/https/https05.drawio.svg">
 
@@ -198,4 +198,4 @@ TLS 终止代理将使用协商好的加密算法**解密请求**，并将**（�
 
 一旦你了解了**面向开发人员的 HTTPS** 的基础知识，你就可以轻松组合和配置不同的工具，以帮助你以简单的方式管理一切。
 
-在接下来的一些章节中，我将向你展示几个为 **readyapi** 应用程序设置 **HTTPS** 的具体示例。 🔒
+在接下来的一些章节中，我将向你展示几个为 **ReadyAPI** 应用程序设置 **HTTPS** 的具体示例。 🔒

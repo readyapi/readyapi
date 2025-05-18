@@ -1,6 +1,6 @@
 # Cuerpo - Modelos Anidados
 
-Con **readyapi**, puedes definir, validar, documentar y usar modelos anidados de manera arbitraria (gracias a Pydantic).
+Con **ReadyAPI**, puedes definir, validar, documentar y usar modelos anidados de manera arbitraria (gracias a Pydantic).
 
 ## Campos de lista
 
@@ -89,7 +89,7 @@ Y luego podemos usarlo como el tipo de un atributo:
 
 {* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
 
-Esto significaría que **readyapi** esperaría un cuerpo similar a:
+Esto significaría que **ReadyAPI** esperaría un cuerpo similar a:
 
 ```JSON
 {
@@ -105,7 +105,7 @@ Esto significaría que **readyapi** esperaría un cuerpo similar a:
 }
 ```
 
-Nuevamente, haciendo solo esa declaración, con **readyapi** obtienes:
+Nuevamente, haciendo solo esa declaración, con **ReadyAPI** obtienes:
 
 * Soporte de editor (autocompletado, etc.), incluso para modelos anidados
 * Conversión de datos
@@ -236,7 +236,7 @@ Y el `dict` que recibas como `weights` tendrá realmente claves `int` y valores 
 
 ## Resumen
 
-Con **readyapi** tienes la máxima flexibilidad proporcionada por los modelos Pydantic, manteniendo tu código simple, corto y elegante.
+Con **ReadyAPI** tienes la máxima flexibilidad proporcionada por los modelos Pydantic, manteniendo tu código simple, corto y elegante.
 
 Pero con todos los beneficios:
 

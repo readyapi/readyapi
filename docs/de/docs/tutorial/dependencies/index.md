@@ -1,14 +1,14 @@
 # Abhängigkeiten
 
-**readyapi** hat ein sehr mächtiges, aber intuitives **<abbr title="Dependency Injection – Einbringen von Abhängigkeiten: Auch bekannt als Komponenten, Ressourcen, Provider, Services, Injectables">Dependency Injection</abbr>** System.
+**ReadyAPI** hat ein sehr mächtiges, aber intuitives **<abbr title="Dependency Injection – Einbringen von Abhängigkeiten: Auch bekannt als Komponenten, Ressourcen, Provider, Services, Injectables">Dependency Injection</abbr>** System.
 
-Es ist so konzipiert, sehr einfach zu verwenden zu sein und es jedem Entwickler sehr leicht zu machen, andere Komponenten mit **readyapi** zu integrieren.
+Es ist so konzipiert, sehr einfach zu verwenden zu sein und es jedem Entwickler sehr leicht zu machen, andere Komponenten mit **ReadyAPI** zu integrieren.
 
 ## Was ist „Dependency Injection“
 
 **„Dependency Injection“** bedeutet in der Programmierung, dass es für Ihren Code (in diesem Fall Ihre *Pfadoperation-Funktionen*) eine Möglichkeit gibt, Dinge zu deklarieren, die er verwenden möchte und die er zum Funktionieren benötigt: „Abhängigkeiten“ – „Dependencies“.
 
-Das System (in diesem Fall **readyapi**) kümmert sich dann darum, Ihren Code mit den erforderlichen Abhängigkeiten zu versorgen („die Abhängigkeiten einfügen“ – „inject the dependencies“).
+Das System (in diesem Fall **ReadyAPI**) kümmert sich dann darum, Ihren Code mit den erforderlichen Abhängigkeiten zu versorgen („die Abhängigkeiten einfügen“ – „inject the dependencies“).
 
 Das ist sehr nützlich, wenn Sie:
 
@@ -52,11 +52,11 @@ Und dann wird einfach ein `dict` zurückgegeben, welches diese Werte enthält.
 
 /// info
 
-readyapi unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
+ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie readyapi](../../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie ReadyAPI](../../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
@@ -86,7 +86,7 @@ Im nächsten Kapitel erfahren Sie, welche anderen „Dinge“, außer Funktionen
 
 ///
 
-Immer wenn ein neuer Request eintrifft, kümmert sich **readyapi** darum:
+Immer wenn ein neuer Request eintrifft, kümmert sich **ReadyAPI** darum:
 
 * Ihre Abhängigkeitsfunktion („Dependable“) mit den richtigen Parametern aufzurufen.
 * Sich das Ergebnis von dieser Funktion zu holen.
@@ -103,13 +103,13 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-Auf diese Weise schreiben Sie gemeinsam genutzten Code nur einmal, und **readyapi** kümmert sich darum, ihn für Ihre *Pfadoperationen* aufzurufen.
+Auf diese Weise schreiben Sie gemeinsam genutzten Code nur einmal, und **ReadyAPI** kümmert sich darum, ihn für Ihre *Pfadoperationen* aufzurufen.
 
 /// check
 
-Beachten Sie, dass Sie keine spezielle Klasse erstellen und diese irgendwo an **readyapi** übergeben müssen, um sie zu „registrieren“ oder so ähnlich.
+Beachten Sie, dass Sie keine spezielle Klasse erstellen und diese irgendwo an **ReadyAPI** übergeben müssen, um sie zu „registrieren“ oder so ähnlich.
 
-Sie übergeben es einfach an `Depends` und **readyapi** weiß, wie der Rest erledigt wird.
+Sie übergeben es einfach an `Depends` und **ReadyAPI** weiß, wie der Rest erledigt wird.
 
 ///
 
@@ -129,9 +129,9 @@ Da wir jedoch `Annotated` verwenden, können wir diesen `Annotated`-Wert in eine
 
 /// tip | Tipp
 
-Das ist schlicht Standard-Python, es wird als „Typalias“ bezeichnet und ist eigentlich nicht **readyapi**-spezifisch.
+Das ist schlicht Standard-Python, es wird als „Typalias“ bezeichnet und ist eigentlich nicht **ReadyAPI**-spezifisch.
 
-Da **readyapi** jedoch auf Standard-Python, einschließlich `Annotated`, basiert, können Sie diesen Trick in Ihrem Code verwenden. 😎
+Da **ReadyAPI** jedoch auf Standard-Python, einschließlich `Annotated`, basiert, können Sie diesen Trick in Ihrem Code verwenden. 😎
 
 ///
 
@@ -141,13 +141,13 @@ Das ist besonders nützlich, wenn Sie es in einer **großen Codebasis** verwende
 
 ## `async` oder nicht `async`
 
-Da Abhängigkeiten auch von **readyapi** aufgerufen werden (so wie Ihre *Pfadoperation-Funktionen*), gelten beim Definieren Ihrer Funktionen die gleichen Regeln.
+Da Abhängigkeiten auch von **ReadyAPI** aufgerufen werden (so wie Ihre *Pfadoperation-Funktionen*), gelten beim Definieren Ihrer Funktionen die gleichen Regeln.
 
 Sie können `async def` oder einfach `def` verwenden.
 
 Und Sie können Abhängigkeiten mit `async def` innerhalb normaler `def`-*Pfadoperation-Funktionen* oder `def`-Abhängigkeiten innerhalb von `async def`-*Pfadoperation-Funktionen*, usw. deklarieren.
 
-Es spielt keine Rolle. **readyapi** weiß, was zu tun ist.
+Es spielt keine Rolle. **ReadyAPI** weiß, was zu tun ist.
 
 /// note | Hinweis
 
@@ -165,13 +165,13 @@ Die interaktive Dokumentation enthält also auch alle Informationen aus diesen A
 
 ## Einfache Verwendung
 
-Näher betrachtet, werden *Pfadoperation-Funktionen* deklariert, um verwendet zu werden, wann immer ein *Pfad* und eine *Operation* übereinstimmen, und dann kümmert sich **readyapi** darum, die Funktion mit den richtigen Parametern aufzurufen, die Daten aus der Anfrage extrahierend.
+Näher betrachtet, werden *Pfadoperation-Funktionen* deklariert, um verwendet zu werden, wann immer ein *Pfad* und eine *Operation* übereinstimmen, und dann kümmert sich **ReadyAPI** darum, die Funktion mit den richtigen Parametern aufzurufen, die Daten aus der Anfrage extrahierend.
 
 Tatsächlich funktionieren alle (oder die meisten) Webframeworks auf die gleiche Weise.
 
-Sie rufen diese Funktionen niemals direkt auf. Sie werden von Ihrem Framework aufgerufen (in diesem Fall **readyapi**).
+Sie rufen diese Funktionen niemals direkt auf. Sie werden von Ihrem Framework aufgerufen (in diesem Fall **ReadyAPI**).
 
-Mit dem Dependency Injection System können Sie **readyapi** ebenfalls mitteilen, dass Ihre *Pfadoperation-Funktion* von etwas anderem „abhängt“, das vor Ihrer *Pfadoperation-Funktion* ausgeführt werden soll, und **readyapi** kümmert sich darum, es auszuführen und die Ergebnisse zu „injizieren“.
+Mit dem Dependency Injection System können Sie **ReadyAPI** ebenfalls mitteilen, dass Ihre *Pfadoperation-Funktion* von etwas anderem „abhängt“, das vor Ihrer *Pfadoperation-Funktion* ausgeführt werden soll, und **ReadyAPI** kümmert sich darum, es auszuführen und die Ergebnisse zu „injizieren“.
 
 Andere gebräuchliche Begriffe für dieselbe Idee der „Abhängigkeitsinjektion“ sind:
 
@@ -181,7 +181,7 @@ Andere gebräuchliche Begriffe für dieselbe Idee der „Abhängigkeitsinjektion
 * Injectables
 * Komponenten
 
-## **readyapi**-Plugins
+## **ReadyAPI**-Plugins
 
 Integrationen und „Plugins“ können mit dem **Dependency Injection** System erstellt werden. Aber tatsächlich besteht **keine Notwendigkeit, „Plugins“ zu erstellen**, da es durch die Verwendung von Abhängigkeiten möglich ist, eine unendliche Anzahl von Integrationen und Interaktionen zu deklarieren, die dann für Ihre *Pfadoperation-Funktionen* verfügbar sind.
 
@@ -189,9 +189,9 @@ Und Abhängigkeiten können auf sehr einfache und intuitive Weise erstellt werde
 
 Beispiele hierfür finden Sie in den nächsten Kapiteln zu relationalen und NoSQL-Datenbanken, Sicherheit usw.
 
-## **readyapi**-Kompatibilität
+## **ReadyAPI**-Kompatibilität
 
-Die Einfachheit des Dependency Injection Systems macht **readyapi** kompatibel mit:
+Die Einfachheit des Dependency Injection Systems macht **ReadyAPI** kompatibel mit:
 
 * allen relationalen Datenbanken
 * NoSQL-Datenbanken
@@ -246,4 +246,4 @@ paying_user --> pro_items
 
 Alle diese Abhängigkeiten, während sie ihre Anforderungen deklarieren, fügen auch Parameter, Validierungen, usw. zu Ihren *Pfadoperationen* hinzu.
 
-**readyapi** kümmert sich darum, alles zum OpenAPI-Schema hinzuzufügen, damit es in den interaktiven Dokumentationssystemen angezeigt wird.
+**ReadyAPI** kümmert sich darum, alles zum OpenAPI-Schema hinzuzufügen, damit es in den interaktiven Dokumentationssystemen angezeigt wird.

@@ -1,14 +1,14 @@
 # Alternatifler, İlham Kaynakları ve Karşılaştırmalar
 
-**readyapi**'ya neler ilham verdi? Diğer alternatiflerle karşılaştırıldığında farkları neler? **readyapi** diğer alternatiflerinden neler öğrendi?
+**ReadyAPI**'ya neler ilham verdi? Diğer alternatiflerle karşılaştırıldığında farkları neler? **ReadyAPI** diğer alternatiflerinden neler öğrendi?
 
 ## Giriş
 
-Başkalarının daha önceki çalışmaları olmasaydı, **readyapi** var olmazdı.
+Başkalarının daha önceki çalışmaları olmasaydı, **ReadyAPI** var olmazdı.
 
-Geçmişte oluşturulan pek çok araç **readyapi**'a ilham kaynağı olmuştur.
+Geçmişte oluşturulan pek çok araç **ReadyAPI**'a ilham kaynağı olmuştur.
 
-Yıllardır yeni bir framework oluşturmaktan kaçınıyordum. Başlangıçta **readyapi**'ın çözdüğü sorunları çözebilmek için pek çok farklı framework, <abbr title="Eklenti: Plug-In">eklenti</abbr> ve araç kullanmayı denedim.
+Yıllardır yeni bir framework oluşturmaktan kaçınıyordum. Başlangıçta **ReadyAPI**'ın çözdüğü sorunları çözebilmek için pek çok farklı framework, <abbr title="Eklenti: Plug-In">eklenti</abbr> ve araç kullanmayı denedim.
 
 Ancak bir noktada, geçmişteki diğer araçlardan en iyi fikirleri alarak bütün bu çözümleri kapsayan, ayrıca bütün bunları Python'ın daha önce mevcut olmayan özelliklerini (Python 3.6+ ile gelen <abbr title="Tip belirteçleri: Type Hints">tip belirteçleri</abbr>) kullanarak yapan bir şey üretmekten başka seçenek kalmamıştı.
 
@@ -28,15 +28,15 @@ Django REST framework'ü, Django'nun API kabiliyetlerini arttırmak için arka p
 
 Üstelik Mozilla, Red Hat ve Eventbrite gibi pek çok şirket tarafından kullanılıyor.
 
-**Otomatik API dökümantasyonu**nun ilk örneklerinden biri olduğu için, **readyapi** arayışına ilham veren ilk fikirlerden biri oldu.
+**Otomatik API dökümantasyonu**nun ilk örneklerinden biri olduğu için, **ReadyAPI** arayışına ilham veren ilk fikirlerden biri oldu.
 
 /// note | Not
 
-Django REST Framework'ü, aynı zamanda **readyapi**'ın dayandığı Starlette ve Uvicorn'un da yaratıcısı olan Tom Christie tarafından geliştirildi.
+Django REST Framework'ü, aynı zamanda **ReadyAPI**'ın dayandığı Starlette ve Uvicorn'un da yaratıcısı olan Tom Christie tarafından geliştirildi.
 
 ///
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 Kullanıcılar için otomatik API dökümantasyonu sunan bir web arayüzüne sahip olmalı.
 
@@ -56,7 +56,7 @@ Uygulama parçalarının böyle ayrılıyor oluşu ve istenilen özelliklerle ge
 
 Flask'ın basitliği göz önünde bulundurulduğu zaman, API geliştirmek için iyi bir seçim gibi görünüyordu. Sıradaki şey ise Flask için bir "Django REST Framework"!
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 Gereken araçları ve parçaları birleştirip eşleştirmeyi kolaylaştıracak bir mikro framework olmalı.
 
@@ -66,13 +66,13 @@ Basit ve kullanması kolay bir <abbr title="Yönlendirme: Routing">yönlendirme 
 
 ### <a href="https://requests.readthedocs.io" class="external-link" target="_blank">Requests</a>
 
-**readyapi** aslında **Requests**'in bir alternatifi değil. İkisininde kapsamı oldukça farklı.
+**ReadyAPI** aslında **Requests**'in bir alternatifi değil. İkisininde kapsamı oldukça farklı.
 
-Aslında Requests'i bir readyapi uygulamasının *içinde* kullanmak daha olağan olurdu.
+Aslında Requests'i bir ReadyAPI uygulamasının *içinde* kullanmak daha olağan olurdu.
 
-Ama yine de, readyapi, Requests'ten oldukça ilham aldı.
+Ama yine de, ReadyAPI, Requests'ten oldukça ilham aldı.
 
-**Requests**, <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> ile bir istemci olarak *etkileşime geçmeyi* sağlayan bir kütüphaneyken **readyapi** bir sunucu olarak <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> oluşturmaya yarar.
+**Requests**, <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> ile bir istemci olarak *etkileşime geçmeyi* sağlayan bir kütüphaneyken **ReadyAPI** bir sunucu olarak <abbr title="API (Application Programming Interface): Uygulama Programlama Arayüzü">API'lar</abbr> oluşturmaya yarar.
 
 Öyle ya da böyle zıt uçlarda olmalarına rağmen birbirlerini tamamlıyorlar.
 
@@ -88,7 +88,7 @@ Kullanım şekli oldukça basit. Örneğin bir `GET` isteği yapmak için aşağ
 response = requests.get("http://example.com/some/url")
 ```
 
-Bunun readyapi'deki API <abbr title="Yol İşlemi: Path Operation">*yol işlemi*</abbr> şöyle görünür:
+Bunun ReadyAPI'deki API <abbr title="Yol İşlemi: Path Operation">*yol işlemi*</abbr> şöyle görünür:
 
 ```Python hl_lines="1"
 @app.get("/some/url")
@@ -98,7 +98,7 @@ def read_url():
 
 `requests.get(...)` ile `@app.get(...)` arasındaki benzerliklere bakın.
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 * Basit ve sezgisel bir API'ya sahip olmalı.
 * HTTP metot isimlerini (işlemlerini) anlaşılır olacak bir şekilde, direkt kullanmalı.
@@ -118,7 +118,7 @@ Swagger bir noktada Linux Foundation'a verildi ve adı OpenAPI olarak değiştir
 
 İşte bu yüzden versiyon 2.0 hakkında konuşurken "Swagger", versiyon 3 ve üzeri için ise "OpenAPI" adını kullanmak daha yaygın.
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 API spesifikasyonları için özel bir şema yerine bir <abbr title="Open Standard: Açık Standart, Açık kaynak olarak yayınlanan standart">açık standart</abbr> benimseyip kullanmalı.
 
@@ -127,7 +127,7 @@ Ayrıca standarda bağlı kullanıcı arayüzü araçlarını entegre etmeli:
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
 
-Yukarıdaki ikisi oldukça popüler ve istikrarlı olduğu için seçildi, ancak hızlı bir araştırma yaparak **readyapi** ile kullanabileceğiniz pek çok OpenAPI alternatifi arayüz bulabilirsiniz.
+Yukarıdaki ikisi oldukça popüler ve istikrarlı olduğu için seçildi, ancak hızlı bir araştırma yaparak **ReadyAPI** ile kullanabileceğiniz pek çok OpenAPI alternatifi arayüz bulabilirsiniz.
 
 ///
 
@@ -147,7 +147,7 @@ Marshmallow bu özellikleri sağlamak için geliştirilmişti. Benim de geçmiş
 
 Ama... Python'un tip belirteçleri gelmeden önce oluşturulmuştu. Yani her <abbr title="Verilerin nasıl oluşturulması gerektiğinin tanımı">şemayı</abbr> tanımlamak için Marshmallow'un sunduğu spesifik araçları ve sınıfları kullanmanız gerekiyordu.
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 Kod kullanarak otomatik olarak veri tipini ve veri doğrulamayı belirten "şemalar" tanımlamalı.
 
@@ -161,7 +161,7 @@ Webargs, Flask gibi bir kaç framework'ün üzerinde bunu sağlamak için geliş
 
 Veri doğrulama için arka planda Marshmallow kullanıyor, hatta aynı geliştiriciler tarafından oluşturuldu.
 
-Webargs da harika bir araç ve onu da geçmişte henüz **readyapi** yokken çok kullandım.
+Webargs da harika bir araç ve onu da geçmişte henüz **ReadyAPI** yokken çok kullandım.
 
 /// info | Bilgi
 
@@ -169,7 +169,7 @@ Webargs aynı Marshmallow geliştirileri tarafından oluşturuldu.
 
 ///
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 Gelen istek verisi için otomatik veri doğrulamaya sahip olmalı.
 
@@ -197,7 +197,7 @@ APISpec de aynı Marshmallow geliştiricileri tarafından oluşturuldu.
 
 ///
 
-/// check | **readyapi**'a nasıl ilham verdi?
+/// check | **ReadyAPI**'a nasıl ilham verdi?
 
 API'lar için açık standart desteği olmalı (OpenAPI gibi).
 
@@ -213,7 +213,7 @@ Hak ettiği değeri görmeyen, harika bir araç. Piyasadaki çoğu Flask <abbr t
 
 Böylece Flask-apispec, Python döküman dizilerine YAML gibi farklı bir syntax yazma sorununu çözmüş oldu.
 
-**readyapi**'ı geliştirene dek benim favori arka uç kombinasyonum Flask'in yanında Marshmallow ve Webargs ile birlikte Flask-apispec idi.
+**ReadyAPI**'ı geliştirene dek benim favori arka uç kombinasyonum Flask'in yanında Marshmallow ve Webargs ile birlikte Flask-apispec idi.
 
 Bunu kullanmak, bir kaç <abbr title="full-stack: Hem ön uç hem de arka uç geliştirme">full-stack</abbr> Flask projesi oluşturucusunun yaratılmasına yol açtı. Bunlar benim (ve bir kaç harici ekibin de) şimdiye kadar kullandığı asıl <abbr title="stack: Projeyi geliştirirken kullanılan araçlar dizisi">stack</abbr>ler:
 
@@ -221,7 +221,7 @@ Bunu kullanmak, bir kaç <abbr title="full-stack: Hem ön uç hem de arka uç ge
 * <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
 * <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
 
-Aynı full-stack üreticiler [**readyapi** Proje Üreticileri](project-generation.md){.internal-link target=_blank}'nin de temelini oluşturdu.
+Aynı full-stack üreticiler [**ReadyAPI** Proje Üreticileri](project-generation.md){.internal-link target=_blank}'nin de temelini oluşturdu.
 
 /// info | Bilgi
 
@@ -229,7 +229,7 @@ Flask-apispec de aynı Marshmallow geliştiricileri tarafından üretildi.
 
 ///
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Veri dönüşümü ve veri doğrulamayı tanımlayan kodu kullanarak otomatik olarak OpenAPI şeması oluşturmalı.
 
@@ -249,7 +249,7 @@ Ama TypeScript verileri kod JavaScript'e derlendikten sonra korunmadığından, 
 
 İç içe geçen derin modelleri pek iyi işleyemiyor. Yani eğer istekteki JSON gövdesi derin bir JSON objesiyse düzgün bir şekilde dökümante edilip doğrulanamıyor.
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Güzel bir editör desteği için Python tiplerini kullanmalı.
 
@@ -269,11 +269,11 @@ Uvicorn ve Starlette'e ilham kaynağı olduğu oldukça açık, şu anda ikisi d
 
 ///
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Uçuk performans sağlayacak bir yol bulmalı.
 
-Tam da bu yüzden **readyapi** Starlette'e dayanıyor, çünkü Starlette şu anda kullanılabilir en hızlı framework. (üçüncü parti karşılaştırmalı testlerine göre)
+Tam da bu yüzden **ReadyAPI** Starlette'e dayanıyor, çünkü Starlette şu anda kullanılabilir en hızlı framework. (üçüncü parti karşılaştırmalı testlerine göre)
 
 ///
 
@@ -285,19 +285,19 @@ Falcon ise bir diğer yüksek performanslı Python framework'ü. Minimal olacak 
 
 Yani veri doğrulama, veri dönüştürme ve dökümantasyonun hepsi kodda yer almalı, otomatik halledemiyoruz. Ya da Falcon üzerine bir framework olarak uygulanmaları gerekiyor, aynı Hug'da olduğu gibi. Bu ayrım Falcon'un tasarımından esinlenen, istek ve cevap objelerini parametre olarak işleyen diğer kütüphanelerde de yer alıyor.
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Harika bir performans'a sahip olmanın yollarını bulmalı.
 
-Hug ile birlikte (Hug zaten Falcon'a dayandığından) **readyapi**'ın fonksiyonlarda `cevap` parametresi belirtmesinde ilham kaynağı oldu.
+Hug ile birlikte (Hug zaten Falcon'a dayandığından) **ReadyAPI**'ın fonksiyonlarda `cevap` parametresi belirtmesinde ilham kaynağı oldu.
 
-readyapi'da opsiyonel olmasına rağmen, daha çok header'lar, çerezler ve alternatif durum kodları belirlemede kullanılıyor.
+ReadyAPI'da opsiyonel olmasına rağmen, daha çok header'lar, çerezler ve alternatif durum kodları belirlemede kullanılıyor.
 
 ///
 
 ### <a href="https://moltenframework.com/" class="external-link" target="_blank">Molten</a>
 
-**readyapi**'ı geliştirmenin ilk aşamalarında Molten'ı keşfettim. Pek çok ortak fikrimiz vardı:
+**ReadyAPI**'ı geliştirmenin ilk aşamalarında Molten'ı keşfettim. Pek çok ortak fikrimiz vardı:
 
 * Python'daki tip belirteçlerini baz alıyordu.
 * Bunlara bağlı olarak veri doğrulaması ve dökümantasyon sağlıyordu.
@@ -311,7 +311,7 @@ Biraz daha detaylı ayarlamalara gerek duyuyor. Ayrıca <abbr title="ASGI (Async
 
 <abbr title="Route: HTTP isteğinin gittiği yol">Yol</abbr>'lar fonksiyonun üstünde endpoint'i işleyen dekoratörler yerine farklı yerlerde tanımlanan fonksiyonlarla belirlenir. Bu Flask (ve Starlette) yerine daha çok Django'nun yaklaşımına daha yakın bir metot. Bu, kodda nispeten birbiriyle sıkı ilişkili olan şeyleri ayırmaya sebep oluyor.
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Model özelliklerinin "standart" değerlerini kullanarak veri tipleri için ekstra veri doğrulama koşulları tanımlamalı. Bu editör desteğini geliştiriyor ve daha önceden Pydantic'te yoktu.
 
@@ -339,19 +339,19 @@ Hug, Python dosyalarında bulunan dahil etme satırlarını otomatik olarak sır
 
 ///
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Hug, APIStar'ın çeşitli kısımlarında esin kaynağı oldu ve APIStar'la birlikte en umut verici bulduğum araçlardan biriydi.
 
-**readyapi**, Python tip belirteçlerini kullanarak parametre belirlemede ve API'ı otomatık tanımlayan bir şema üretmede de Hug'a esinlendi.
+**ReadyAPI**, Python tip belirteçlerini kullanarak parametre belirlemede ve API'ı otomatık tanımlayan bir şema üretmede de Hug'a esinlendi.
 
-**readyapi**'ın header ve çerez tanımlamak için fonksiyonlarda `response` parametresini belirtmesinde de Hug'dan ilham alındı.
+**ReadyAPI**'ın header ve çerez tanımlamak için fonksiyonlarda `response` parametresini belirtmesinde de Hug'dan ilham alındı.
 
 ///
 
 ### <a href="https://github.com/encode/apistar" class="external-link" target="_blank">APIStar</a> (<= 0.5)
 
-**readyapi**'ı geliştirmeye başlamadan hemen önce **APIStar** sunucusunu buldum. Benim aradığım şeylerin neredeyse hepsine sahipti ve harika bir tasarımı vardı.
+**ReadyAPI**'ı geliştirmeye başlamadan hemen önce **APIStar** sunucusunu buldum. Benim aradığım şeylerin neredeyse hepsine sahipti ve harika bir tasarımı vardı.
 
 Benim şimdiye kadar gördüğüm Python tip belirteçlerini kullanarak parametre ve istekler belirlemeyi uygulayan ilk framework'lerdendi (Molten ve NestJS'den önce). APIStar'ı da aşağı yukarı Hug ile aynı zamanlarda buldum. Fakat APIStar OpenAPI standardını kullanıyordu.
 
@@ -378,12 +378,12 @@ Artık APIStar, OpenAPI özelliklerini doğrulamak için bir dizi araç sunan bi
 APIStar, aşağıdaki projeleri de üreten Tom Christie tarafından geliştirildi:
 
 * Django REST Framework
-* **readyapi**'ın da dayandığı Starlette
-* Starlette ve **readyapi** tarafından da kullanılan Uvicorn
+* **ReadyAPI**'ın da dayandığı Starlette
+* Starlette ve **ReadyAPI** tarafından da kullanılan Uvicorn
 
 ///
 
-/// check | **readyapi**'a nasıl ilham oldu?
+/// check | **ReadyAPI**'a nasıl ilham oldu?
 
 Var oldu.
 
@@ -391,13 +391,13 @@ Aynı Python veri tipleriyle birden fazla şeyi belirleme (veri doğrulama, veri
 
 Uzunca bir süre boyunca benzer bir framework arayıp pek çok farklı alternatifi denedikten sonra, APIStar en iyi seçenekti.
 
-Sonra APIStar bir sunucu olmayı bıraktı ve Starlette oluşturuldu. Starlette, böyle bir sunucu sistemi için daha iyi bir temel sunuyordu. Bu da **readyapi**'ın son esin kaynağıydı.
+Sonra APIStar bir sunucu olmayı bıraktı ve Starlette oluşturuldu. Starlette, böyle bir sunucu sistemi için daha iyi bir temel sunuyordu. Bu da **ReadyAPI**'ın son esin kaynağıydı.
 
-Ben bu önceki araçlardan öğrendiklerime dayanarak **readyapi**'ın özelliklerini arttırıp geliştiriyor, <abbr title="Tip desteği (typing support): kod yapısında parametrelere, argümanlara ve objelerin özelliklerine veri tipi atamak">tip desteği</abbr> sistemi ve diğer kısımları iyileştiriyorum ancak yine de **readyapi**'ı APIStar'ın "ruhani varisi" olarak görüyorum.
+Ben bu önceki araçlardan öğrendiklerime dayanarak **ReadyAPI**'ın özelliklerini arttırıp geliştiriyor, <abbr title="Tip desteği (typing support): kod yapısında parametrelere, argümanlara ve objelerin özelliklerine veri tipi atamak">tip desteği</abbr> sistemi ve diğer kısımları iyileştiriyorum ancak yine de **ReadyAPI**'ı APIStar'ın "ruhani varisi" olarak görüyorum.
 
 ///
 
-## **readyapi** Tarafından Kullanılanlar
+## **ReadyAPI** Tarafından Kullanılanlar
 
 ### <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a>
 
@@ -407,11 +407,11 @@ Tip belirteçleri kullanıyor olması onu aşırı sezgisel yapıyor.
 
 Marshmallow ile karşılaştırılabilir. Ancak karşılaştırmalarda Marshmallowdan daha hızlı görünüyor. Aynı Python tip belirteçlerine dayanıyor ve editör desteği de harika.
 
-/// check | **readyapi** nerede kullanıyor?
+/// check | **ReadyAPI** nerede kullanıyor?
 
 Bütün veri doğrulama, veri dönüştürme ve JSON Şemasına bağlı otomatik model dökümantasyonunu halletmek için!
 
-**readyapi** yaptığı her şeyin yanı sıra bu JSON Şema verisini alıp daha sonra OpenAPI'ya yerleştiriyor.
+**ReadyAPI** yaptığı her şeyin yanı sıra bu JSON Şema verisini alıp daha sonra OpenAPI'ya yerleştiriyor.
 
 ///
 
@@ -440,7 +440,7 @@ Starlette bütün temel web mikro framework işlevselliğini sağlıyor.
 
 Ancak otomatik veri doğrulama, veri dönüştürme ve dökümantasyon sağlamyor.
 
-Bu, **readyapi**'ın onun üzerine tamamen Python tip belirteçlerine bağlı olarak eklediği (Pydantic ile) ana şeylerden biri. **readyapi** bunun yanında artı olarak bağımlılık enjeksiyonu sistemi, güvenlik araçları, OpenAPI şema üretimi ve benzeri özellikler de ekliyor.
+Bu, **ReadyAPI**'ın onun üzerine tamamen Python tip belirteçlerine bağlı olarak eklediği (Pydantic ile) ana şeylerden biri. **ReadyAPI** bunun yanında artı olarak bağımlılık enjeksiyonu sistemi, güvenlik araçları, OpenAPI şema üretimi ve benzeri özellikler de ekliyor.
 
 /// note | Teknik Detaylar
 
@@ -450,13 +450,13 @@ Bununla birlikte, halihazırda birçok araç tarafından bir "standart" olarak k
 
 ///
 
-/// check | **readyapi** nerede kullanıyor?
+/// check | **ReadyAPI** nerede kullanıyor?
 
 Tüm temel web kısımlarında üzerine özellikler eklenerek kullanılmakta.
 
-`readyapi` sınıfının kendisi direkt olarak `Starlette` sınıfını miras alıyor!
+`ReadyAPI` sınıfının kendisi direkt olarak `Starlette` sınıfını miras alıyor!
 
-Yani, Starlette ile yapabileceğiniz her şeyi, Starlette'in bir nevi güçlendirilmiş hali olan **readyapi** ile doğrudan yapabilirsiniz.
+Yani, Starlette ile yapabileceğiniz her şeyi, Starlette'in bir nevi güçlendirilmiş hali olan **ReadyAPI** ile doğrudan yapabilirsiniz.
 
 ///
 
@@ -464,13 +464,13 @@ Yani, Starlette ile yapabileceğiniz her şeyi, Starlette'in bir nevi güçlendi
 
 Uvicorn, uvlook ile httptools üzerine kurulu ışık hzında bir ASGI sunucusudur.
 
-Bir web framework'ünden ziyade bir sunucudur, yani yollara bağlı yönlendirme yapmanızı sağlayan araçları yoktur. Bu daha çok Starlette (ya da **readyapi**) gibi bir framework'ün sunucuya ek olarak sağladığı bir şeydir.
+Bir web framework'ünden ziyade bir sunucudur, yani yollara bağlı yönlendirme yapmanızı sağlayan araçları yoktur. Bu daha çok Starlette (ya da **ReadyAPI**) gibi bir framework'ün sunucuya ek olarak sağladığı bir şeydir.
 
-Starlette ve **readyapi** için tavsiye edilen sunucu Uvicorndur.
+Starlette ve **ReadyAPI** için tavsiye edilen sunucu Uvicorndur.
 
-/// check | **readyapi** neden tavsiye ediyor?
+/// check | **ReadyAPI** neden tavsiye ediyor?
 
-**readyapi** uygulamalarını çalıştırmak için ana web sunucusu Uvicorn!
+**ReadyAPI** uygulamalarını çalıştırmak için ana web sunucusu Uvicorn!
 
 Gunicorn ile birleştirdiğinizde asenkron ve çoklu işlem destekleyen bir sunucu elde ediyorsunuz!
 
@@ -480,4 +480,4 @@ Daha fazla detay için [Deployment](deployment/index.md){.internal-link target=_
 
 ## Karşılaştırma ve Hız
 
-Uvicorn, Starlette ve readyapi arasındakı farkı daha iyi anlamak ve karşılaştırma yapmak için [Kıyaslamalar](benchmarks.md){.internal-link target=_blank} bölümüne bakın!
+Uvicorn, Starlette ve ReadyAPI arasındakı farkı daha iyi anlamak ve karşılaştırma yapmak için [Kıyaslamalar](benchmarks.md){.internal-link target=_blank} bölümüne bakın!

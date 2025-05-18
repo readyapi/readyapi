@@ -148,7 +148,7 @@ Die Hilfsfunktionen `fake_password_hasher` und `fake_save_user` demonstrieren nu
 
 ## Verdopplung vermeiden
 
-Reduzierung von Code-Verdoppelung ist eine der Kern-Ideen von **readyapi**.
+Reduzierung von Code-Verdoppelung ist eine der Kern-Ideen von **ReadyAPI**.
 
 Weil Verdoppelung von Code die Wahrscheinlichkeit von Fehlern, Sicherheitsproblemen, Desynchronisation (Code wird nur an einer Stelle verändert, aber nicht an einer anderen), usw. erhöht.
 

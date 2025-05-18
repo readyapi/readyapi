@@ -1,8 +1,8 @@
 # GraphQL
 
-Como **readyapi** se basa en el estándar **ASGI**, es muy fácil integrar cualquier paquete de **GraphQL** que también sea compatible con ASGI.
+Como **ReadyAPI** se basa en el estándar **ASGI**, es muy fácil integrar cualquier paquete de **GraphQL** que también sea compatible con ASGI.
 
-Puedes combinar las *path operations* normales de readyapi con GraphQL en la misma aplicación.
+Puedes combinar las *path operations* normales de ReadyAPI con GraphQL en la misma aplicación.
 
 /// tip | Consejo
 
@@ -16,12 +16,12 @@ Asegúrate de evaluar si los **beneficios** para tu caso de uso compensan los **
 
 ## Paquetes de GraphQL
 
-Aquí algunos de los paquetes de **GraphQL** que tienen soporte **ASGI**. Podrías usarlos con **readyapi**:
+Aquí algunos de los paquetes de **GraphQL** que tienen soporte **ASGI**. Podrías usarlos con **ReadyAPI**:
 
 * <a href="https://strawberry.rocks/" class="external-link" target="_blank">Strawberry</a> 🍓
-    * Con <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">documentación para readyapi</a>
+    * Con <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">documentación para ReadyAPI</a>
 * <a href="https://ariadnegraphql.org/" class="external-link" target="_blank">Ariadne</a>
-    * Con <a href="https://ariadnegraphql.org/docs/readyapi-integration" class="external-link" target="_blank">documentación para readyapi</a>
+    * Con <a href="https://ariadnegraphql.org/docs/readyapi-integration" class="external-link" target="_blank">documentación para ReadyAPI</a>
 * <a href="https://tartiflette.io/" class="external-link" target="_blank">Tartiflette</a>
     * Con <a href="https://tartiflette.github.io/tartiflette-asgi/" class="external-link" target="_blank">Tartiflette ASGI</a> para proporcionar integración con ASGI
 * <a href="https://graphene-python.org/" class="external-link" target="_blank">Graphene</a>
@@ -29,17 +29,17 @@ Aquí algunos de los paquetes de **GraphQL** que tienen soporte **ASGI**. Podrí
 
 ## GraphQL con Strawberry
 
-Si necesitas o quieres trabajar con **GraphQL**, <a href="https://strawberry.rocks/" class="external-link" target="_blank">**Strawberry**</a> es el paquete **recomendado** ya que tiene un diseño muy similar al diseño de **readyapi**, todo basado en **anotaciones de tipos**.
+Si necesitas o quieres trabajar con **GraphQL**, <a href="https://strawberry.rocks/" class="external-link" target="_blank">**Strawberry**</a> es el paquete **recomendado** ya que tiene un diseño muy similar al diseño de **ReadyAPI**, todo basado en **anotaciones de tipos**.
 
 Dependiendo de tu caso de uso, podrías preferir usar un paquete diferente, pero si me preguntas, probablemente te sugeriría probar **Strawberry**.
 
-Aquí tienes una pequeña vista previa de cómo podrías integrar Strawberry con readyapi:
+Aquí tienes una pequeña vista previa de cómo podrías integrar Strawberry con ReadyAPI:
 
 {* ../../docs_src/graphql/tutorial001.py hl[3,22,25:26] *}
 
 Puedes aprender más sobre Strawberry en la <a href="https://strawberry.rocks/" class="external-link" target="_blank">documentación de Strawberry</a>.
 
-Y también la documentación sobre <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">Strawberry con readyapi</a>.
+Y también la documentación sobre <a href="https://strawberry.rocks/docs/integrations/readyapi" class="external-link" target="_blank">Strawberry con ReadyAPI</a>.
 
 ## `GraphQLApp` viejo de Starlette
 

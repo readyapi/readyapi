@@ -34,7 +34,7 @@ Ahora, desde una **perspectiva de desarrollador**, aquí hay varias cosas a tene
 * **Después** de obtener una conexión segura, el protocolo de comunicación sigue siendo **HTTP**.
     * Los contenidos están **encriptados**, aunque se envién con el **protocolo HTTP**.
 
-Es una práctica común tener **un programa/servidor HTTP** ejecutándose en el servidor (la máquina, host, etc.) y **gestionando todas las partes de HTTPS**: recibiendo los **requests HTTPS encriptados**, enviando los **requests HTTP desencriptados** a la aplicación HTTP real que se ejecuta en el mismo servidor (la aplicación **readyapi**, en este caso), tomando el **response HTTP** de la aplicación, **encriptándolo** usando el **certificado HTTPS** adecuado y enviándolo de vuelta al cliente usando **HTTPS**. Este servidor a menudo se llama un **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS Termination Proxy</a>**.
+Es una práctica común tener **un programa/servidor HTTP** ejecutándose en el servidor (la máquina, host, etc.) y **gestionando todas las partes de HTTPS**: recibiendo los **requests HTTPS encriptados**, enviando los **requests HTTP desencriptados** a la aplicación HTTP real que se ejecuta en el mismo servidor (la aplicación **ReadyAPI**, en este caso), tomando el **response HTTP** de la aplicación, **encriptándolo** usando el **certificado HTTPS** adecuado y enviándolo de vuelta al cliente usando **HTTPS**. Este servidor a menudo se llama un **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS Termination Proxy</a>**.
 
 Algunas de las opciones que podrías usar como un TLS Termination Proxy son:
 
@@ -137,7 +137,7 @@ Así que, el cliente envía un **request HTTPS**. Esto es simplemente un request
 
 ### Desencriptar el Request
 
-El TLS Termination Proxy usaría la encriptación acordada para **desencriptar el request**, y transmitiría el **request HTTP simple (desencriptado)** al proceso que ejecuta la aplicación (por ejemplo, un proceso con Uvicorn ejecutando la aplicación readyapi).
+El TLS Termination Proxy usaría la encriptación acordada para **desencriptar el request**, y transmitiría el **request HTTP simple (desencriptado)** al proceso que ejecuta la aplicación (por ejemplo, un proceso con Uvicorn ejecutando la aplicación ReadyAPI).
 
 <img src="/img/deployment/https/https05.drawio.svg">
 
@@ -196,4 +196,4 @@ Tener **HTTPS** es muy importante y bastante **crítico** en la mayoría de los 
 
 Pero una vez que conoces la información básica de **HTTPS para desarrolladores** puedes combinar y configurar fácilmente diferentes herramientas para ayudarte a gestionar todo de una manera sencilla.
 
-En algunos de los siguientes capítulos, te mostraré varios ejemplos concretos de cómo configurar **HTTPS** para aplicaciones **readyapi**. 🔒
+En algunos de los siguientes capítulos, te mostraré varios ejemplos concretos de cómo configurar **HTTPS** para aplicaciones **ReadyAPI**. 🔒

@@ -24,7 +24,7 @@
 
 また、`from starlette import status`を使用することもできます。
 
-**readyapi** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
+**ReadyAPI** は開発者の利便性を考慮して、`readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
 
 ///
 
@@ -46,7 +46,7 @@
 
 ## docstringを用いた説明
 
-説明文は長くて複数行におよぶ傾向があるので、関数<abbr title="ドキュメントに使用される関数内の最初の式（変数に代入されていない）としての複数行の文字列">docstring</abbr>内に*path operation*の説明文を宣言できます。すると、**readyapi** は説明文を読み込んでくれます。
+説明文は長くて複数行におよぶ傾向があるので、関数<abbr title="ドキュメントに使用される関数内の最初の式（変数に代入されていない）としての複数行の文字列">docstring</abbr>内に*path operation*の説明文を宣言できます。すると、**ReadyAPI** は説明文を読み込んでくれます。
 
 docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a>を記述すれば、正しく解釈されて表示されます。（docstringのインデントを考慮して）
 
@@ -72,7 +72,7 @@ docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-lin
 
 OpenAPIは*path operation*ごとにレスポンスの説明を必要としています。
 
-そのため、それを提供しない場合は、**readyapi** が自動的に「成功のレスポンス」を生成します。
+そのため、それを提供しない場合は、**ReadyAPI** が自動的に「成功のレスポンス」を生成します。
 
 ///
 

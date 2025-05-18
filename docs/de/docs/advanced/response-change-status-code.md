@@ -26,6 +26,6 @@ Und dann können Sie wie gewohnt jedes benötigte Objekt zurückgeben (ein `dict
 
 Und wenn Sie ein `response_model` deklariert haben, wird es weiterhin zum Filtern und Konvertieren des von Ihnen zurückgegebenen Objekts verwendet.
 
-**readyapi** verwendet diese *vorübergehende* Response, um den Statuscode (auch Cookies und Header) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
+**ReadyAPI** verwendet diese *vorübergehende* Response, um den Statuscode (auch Cookies und Header) zu extrahieren und fügt diese in die endgültige Response ein, die den von Ihnen zurückgegebenen Wert enthält, gefiltert nach einem beliebigen `response_model`.
 
 Sie können den Parameter `Response` auch in Abhängigkeiten deklarieren und den Statuscode darin festlegen. Bedenken Sie jedoch, dass der gewinnt, welcher zuletzt gesetzt wird.

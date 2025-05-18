@@ -13,7 +13,7 @@ You can serve static files automatically from a directory using `StaticFiles`.
 
 You could also use `from starlette.staticfiles import StaticFiles`.
 
-**readyapi** provides the same `starlette.staticfiles` as `readyapi.staticfiles` just as a convenience for you, the developer. But it actually comes directly from Starlette.
+**ReadyAPI** provides the same `starlette.staticfiles` as `readyapi.staticfiles` just as a convenience for you, the developer. But it actually comes directly from Starlette.
 
 ///
 
@@ -31,7 +31,7 @@ The first `"/static"` refers to the sub-path this "sub-application" will be "mou
 
 The `directory="static"` refers to the name of the directory that contains your static files.
 
-The `name="static"` gives it a name that can be used internally by **readyapi**.
+The `name="static"` gives it a name that can be used internally by **ReadyAPI**.
 
 All these parameters can be different than "`static`", adjust them with the needs and specific details of your own application.
 

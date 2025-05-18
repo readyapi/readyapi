@@ -34,11 +34,11 @@
 
 ## 使用 `CORSMiddleware`
 
-你可以在 **readyapi** 应用中使用 `CORSMiddleware` 来配置它。
+你可以在 **ReadyAPI** 应用中使用 `CORSMiddleware` 来配置它。
 
 * 导入 `CORSMiddleware`。
 * 创建一个允许的源列表（由字符串组成）。
-* 将其作为「中间件」添加到你的 **readyapi** 应用中。
+* 将其作为「中间件」添加到你的 **ReadyAPI** 应用中。
 
 你也可以指定后端是否允许：
 
@@ -80,6 +80,6 @@
 
 你也可以使用 `from starlette.middleware.cors import CORSMiddleware`。
 
-出于方便，**readyapi** 在 `readyapi.middleware` 中为开发者提供了几个中间件。但是大多数可用的中间件都是直接来自 Starlette。
+出于方便，**ReadyAPI** 在 `readyapi.middleware` 中为开发者提供了几个中间件。但是大多数可用的中间件都是直接来自 Starlette。
 
 ///

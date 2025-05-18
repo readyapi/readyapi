@@ -1,6 +1,6 @@
 # Запуск сервера вручную - Uvicorn
 
-Для запуска приложения **readyapi** на удалённой серверной машине вам необходим программный сервер, поддерживающий протокол ASGI, такой как **Uvicorn**.
+Для запуска приложения **ReadyAPI** на удалённой серверной машине вам необходим программный сервер, поддерживающий протокол ASGI, такой как **Uvicorn**.
 
 Существует три наиболее распространённые альтернативы:
 
@@ -111,7 +111,7 @@ Running on 0.0.0.0:8080 over http (CTRL + C to quit)
 
 ## Hypercorn с Trio
 
-Starlette и **readyapi** основаны на <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, которая делает их совместимыми как с <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> - стандартной библиотекой Python, так и с <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
+Starlette и **ReadyAPI** основаны на <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, которая делает их совместимыми как с <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> - стандартной библиотекой Python, так и с <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
 
 
 Тем не менее Uvicorn совместим только с asyncio и обычно используется совместно с <a href="https://github.com/MagicStack/uvloop" class="external-link" target="_blank">`uvloop`</a>, высокопроизводительной заменой `asyncio`.

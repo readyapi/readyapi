@@ -18,7 +18,7 @@ Y luego móntala bajo un path.
 
 Ahora, cada request bajo el path `/v1/` será manejado por la aplicación Flask.
 
-Y el resto será manejado por **readyapi**.
+Y el resto será manejado por **ReadyAPI**.
 
 Si lo ejecutas y vas a <a href="http://localhost:8000/v1/" class="external-link" target="_blank">http://localhost:8000/v1/</a> verás el response de Flask:
 
@@ -26,7 +26,7 @@ Si lo ejecutas y vas a <a href="http://localhost:8000/v1/" class="external-link"
 Hello, World from Flask!
 ```
 
-Y si vas a <a href="http://localhost:8000/v2" class="external-link" target="_blank">http://localhost:8000/v2</a> verás el response de readyapi:
+Y si vas a <a href="http://localhost:8000/v2" class="external-link" target="_blank">http://localhost:8000/v2</a> verás el response de ReadyAPI:
 
 ```JSON
 {

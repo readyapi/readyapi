@@ -1,16 +1,16 @@
-# Plantilla Full Stack readyapi
+# Plantilla Full Stack ReadyAPI
 
 Las plantillas, aunque normalmente vienen con una configuración específica, están diseñadas para ser flexibles y personalizables. Esto te permite modificarlas y adaptarlas a los requisitos de tu proyecto, haciéndolas un excelente punto de partida. 🏁
 
 Puedes usar esta plantilla para comenzar, ya que incluye gran parte de la configuración inicial, seguridad, base de datos y algunos endpoints de API ya hechos para ti.
 
-Repositorio de GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-template" class="external-link" target="_blank">Plantilla Full Stack readyapi</a>
+Repositorio de GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-template" class="external-link" target="_blank">Plantilla Full Stack ReadyAPI</a>
 
-## Plantilla Full Stack readyapi - Tecnología y Funcionalidades
+## Plantilla Full Stack ReadyAPI - Tecnología y Funcionalidades
 
-- ⚡ [**readyapi**](https://readyapi.khulnasoft.com) para la API del backend en Python.
+- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com) para la API del backend en Python.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com) para las interacciones con bases de datos SQL en Python (ORM).
-    - 🔍 [Pydantic](https://docs.pydantic.dev), utilizado por readyapi, para la validación de datos y gestión de configuraciones.
+    - 🔍 [Pydantic](https://docs.pydantic.dev), utilizado por ReadyAPI, para la validación de datos y gestión de configuraciones.
     - 💾 [PostgreSQL](https://www.postgresql.org) como base de datos SQL.
 - 🚀 [React](https://react.dev) para el frontend.
     - 💃 Usando TypeScript, hooks, [Vite](https://vitejs.dev), y otras partes de una stack moderna de frontend.

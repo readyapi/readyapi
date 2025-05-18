@@ -1,18 +1,18 @@
 # Parâmetros de consulta e validações de texto
 
-O **readyapi** permite que você declare informações adicionais e validações aos seus parâmetros.
+O **ReadyAPI** permite que você declare informações adicionais e validações aos seus parâmetros.
 
 Vamos utilizar essa aplicação como exemplo:
 
 {* ../../docs_src/query_params_str_validations/tutorial001.py hl[9] *}
 
-O parâmetro de consulta `q` é do tipo `Union[str, None]`, o que significa que é do tipo `str` mas que também pode ser `None`, e de fato, o valor padrão é `None`, então o readyapi saberá que não é obrigatório.
+O parâmetro de consulta `q` é do tipo `Union[str, None]`, o que significa que é do tipo `str` mas que também pode ser `None`, e de fato, o valor padrão é `None`, então o ReadyAPI saberá que não é obrigatório.
 
 /// note | Observação
 
-O readyapi saberá que o valor de `q` não é obrigatório por causa do valor padrão `= None`.
+O ReadyAPI saberá que o valor de `q` não é obrigatório por causa do valor padrão `= None`.
 
-O `Union` em `Union[str, None]` não é usado pelo readyapi, mas permitirá que seu editor lhe dê um melhor suporte e detecte erros.
+O `Union` em `Union[str, None]` não é usado pelo ReadyAPI, mas permitirá que seu editor lhe dê um melhor suporte e detecte erros.
 
 ///
 
@@ -50,7 +50,7 @@ Mas o declara explicitamente como um parâmetro de consulta.
 
 /// info | Informação
 
-Tenha em mente que o readyapi se preocupa com a parte:
+Tenha em mente que o ReadyAPI se preocupa com a parte:
 
 ```Python
 = None
@@ -96,7 +96,7 @@ Essa expressão regular específica verifica se o valor recebido no parâmetro:
 
 Se você se sente perdido com todo esse assunto de **"expressão regular"**, não se preocupe. Esse é um assunto complicado para a maioria das pessoas. Você ainda pode fazer muitas coisas sem utilizar expressões regulares.
 
-Mas assim que você precisar e já tiver aprendido sobre, saiba que você poderá usá-las diretamente no **readyapi**.
+Mas assim que você precisar e já tiver aprendido sobre, saiba que você poderá usá-las diretamente no **ReadyAPI**.
 
 ## Valores padrão
 
@@ -142,7 +142,7 @@ Se você nunca viu os `...` antes: é um valor único especial, faz <a href="htt
 
 ///
 
-Dessa forma o **readyapi** saberá que o parâmetro é obrigatório.
+Dessa forma o **ReadyAPI** saberá que o parâmetro é obrigatório.
 
 ## Lista de parâmetros de consulta / múltiplos valores
 
@@ -212,7 +212,7 @@ Você também pode utilizar o tipo `list` diretamente em vez de `List[str]`:
 
 /// note | Observação
 
-Tenha em mente que neste caso, o readyapi não irá validar os conteúdos da lista.
+Tenha em mente que neste caso, o ReadyAPI não irá validar os conteúdos da lista.
 
 Por exemplo, um `List[int]` iria validar (e documentar) que os contéudos da lista são números inteiros. Mas apenas `list` não.
 

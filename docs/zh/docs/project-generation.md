@@ -1,16 +1,16 @@
-# readyapi全栈模板
+# ReadyAPI全栈模板
 
 模板通常带有特定的设置，而且被设计为灵活和可定制的。这允许您根据项目的需求修改和调整它们，使它们成为一个很好的起点。🏁
 
 您可以使用此模板开始，因为它包含了许多已经为您完成的初始设置、安全性、数据库和一些API端点。
 
-代码仓： <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">Full Stack readyapi Template</a>
+代码仓： <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">Full Stack ReadyAPI Template</a>
 
-## readyapi全栈模板 - 技术栈和特性
+## ReadyAPI全栈模板 - 技术栈和特性
 
-- ⚡ [**readyapi**](https://readyapi.khulnasoft.com) 用于Python后端API.
+- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com) 用于Python后端API.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com) 用于Python和SQL数据库的集成（ORM）。
-    - 🔍 [Pydantic](https://docs.pydantic.dev) readyapi的依赖项之一，用于数据验证和配置管理。
+    - 🔍 [Pydantic](https://docs.pydantic.dev) ReadyAPI的依赖项之一，用于数据验证和配置管理。
     - 💾 [PostgreSQL](https://www.postgresql.org) 作为SQL数据库。
 - 🚀 [React](https://react.dev) 用于前端。
     - 💃 使用了TypeScript、hooks、[Vite](https://vitejs.dev)和其他一些现代化的前端技术栈。

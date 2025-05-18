@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>readyapi to szybki, prosty w nauce i gotowy do użycia w produkcji framework</em>
+    <em>ReadyAPI to szybki, prosty w nauce i gotowy do użycia w produkcji framework</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,11 +33,11 @@
 
 ---
 
-readyapi to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona bazujący na standardowym typowaniu Pythona.
+ReadyAPI to nowoczesny, wydajny framework webowy do budowania API z użyciem Pythona bazujący na standardowym typowaniu Pythona.
 
 Kluczowe cechy:
 
-* **Wydajność**: readyapi jest bardzo wydajny, na równi z **NodeJS** oraz **Go** (dzięki Starlette i Pydantic). [Jeden z najszybszych dostępnych frameworków Pythonowych](#wydajnosc).
+* **Wydajność**: ReadyAPI jest bardzo wydajny, na równi z **NodeJS** oraz **Go** (dzięki Starlette i Pydantic). [Jeden z najszybszych dostępnych frameworków Pythonowych](#wydajnosc).
 * **Szybkość kodowania**: Przyśpiesza szybkość pisania nowych funkcjonalności o około 200% do 300%. *
 * **Mniejsza ilość błędów**: Zmniejsza ilość ludzkich (dewelopera) błędy o około 40%. *
 * **Intuicyjność**: Wspaniałe wsparcie dla edytorów kodu. Dostępne wszędzie <abbr title="znane jako auto-complete, autocompletion, IntelliSense">automatyczne uzupełnianie</abbr> kodu. Krótszy czas debugowania.
@@ -67,25 +67,25 @@ Kluczowe cechy:
 
 ## Opinie
 
-"_[...] I'm using **readyapi** a ton these days. [...] I'm actually planning to use it for all of my team's **ML services at Microsoft**. Some of them are getting integrated into the core **Windows** product and some **Office** products._"
+"_[...] I'm using **ReadyAPI** a ton these days. [...] I'm actually planning to use it for all of my team's **ML services at Microsoft**. Some of them are getting integrated into the core **Windows** product and some **Office** products._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_We adopted the **readyapi** library to spawn a **REST** server that can be queried to obtain **predictions**. [for Ludwig]_"
+"_We adopted the **ReadyAPI** library to spawn a **REST** server that can be queried to obtain **predictions**. [for Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** is pleased to announce the open-source release of our **crisis management** orchestration framework: **Dispatch**! [built with **readyapi**]_"
+"_**Netflix** is pleased to announce the open-source release of our **crisis management** orchestration framework: **Dispatch**! [built with **ReadyAPI**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_I’m over the moon excited about **readyapi**. It’s so fun!_"
+"_I’m over the moon excited about **ReadyAPI**. It’s so fun!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,25 +97,25 @@ Kluczowe cechy:
 
 ---
 
-"_If you're looking to learn one **modern framework** for building REST APIs, check out **readyapi** [...] It's fast, easy to use and easy to learn [...]_"
+"_If you're looking to learn one **modern framework** for building REST APIs, check out **ReadyAPI** [...] It's fast, easy to use and easy to learn [...]_"
 
-"_We've switched over to **readyapi** for our **APIs** [...] I think you'll like it [...]_"
+"_We've switched over to **ReadyAPI** for our **APIs** [...] I think you'll like it [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, readyapi aplikacji konsolowych
+## **Cligenius**, ReadyAPI aplikacji konsolowych
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Jeżeli tworzysz aplikacje <abbr title="aplikacja z interfejsem konsolowym">CLI</abbr>, która ma być używana w terminalu zamiast API, sprawdź <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** to młodsze rodzeństwo readyapi. Jego celem jest pozostanie **readyapi aplikacji konsolowych** . ⌨️ 🚀
+**Cligenius** to młodsze rodzeństwo ReadyAPI. Jego celem jest pozostanie **ReadyAPI aplikacji konsolowych** . ⌨️ 🚀
 
 ## Wymagania
 
-readyapi oparty jest na:
+ReadyAPI oparty jest na:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> dla części webowej.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> dla części obsługujących dane.
@@ -153,9 +153,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -176,9 +176,9 @@ Jeżeli twój kod korzysta z `async` / `await`, użyj `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -220,7 +220,7 @@ INFO:     Application startup complete.
 Komenda `uvicorn main:app` odnosi się do:
 
 * `main`: plik `main.py` ("moduł" w Pythonie).
-* `app`: obiekt stworzony w `main.py` w lini `app = readyapi()`.
+* `app`: obiekt stworzony w `main.py` w lini `app = ReadyAPI()`.
 * `--reload`: spraw by serwer resetował się po każdej zmianie w kodzie. Używaj tego tylko w środowisku deweloperskim.
 
 </details>
@@ -267,10 +267,10 @@ Zadeklaruj treść żądania, używając standardowych typów w Pythonie dzięki
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -370,7 +370,7 @@ item: Item
 
 ---
 
-Wracając do poprzedniego przykładu, **readyapi** :
+Wracając do poprzedniego przykładu, **ReadyAPI** :
 
 * Potwierdzi, że w ścieżce jest `item_id` dla żądań `GET` i `PUT`.
 * Potwierdzi, że `item_id` jest typu `int` dla żądań `GET` i `PUT`.
@@ -434,7 +434,7 @@ Dla bardziej kompletnych przykładów posiadających więcej funkcjonalności, z
 
 ## Wydajność
 
-Niezależne benchmarki TechEmpower pokazują, że **readyapi** (uruchomiony na serwerze Uvicorn) <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">jest jednym z najszybszych dostępnych Pythonowych frameworków</a>, zaraz po Starlette i Uvicorn (używanymi wewnątrznie przez readyapi). (*)
+Niezależne benchmarki TechEmpower pokazują, że **ReadyAPI** (uruchomiony na serwerze Uvicorn) <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">jest jednym z najszybszych dostępnych Pythonowych frameworków</a>, zaraz po Starlette i Uvicorn (używanymi wewnątrznie przez ReadyAPI). (*)
 
 Aby dowiedzieć się o tym więcej, zobacz sekcję <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
@@ -451,10 +451,10 @@ Używane przez Starlette:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Wymagane jeżeli chcesz używać domyślnej konfiguracji szablonów.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Wymagane jeżelich chcesz wsparcie <abbr title="przetwarzania stringa którzy przychodzi z żądaniem HTTP na dane używane przez Pythona">"parsowania"</abbr> formularzy, używając `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Wymagany dla wsparcia `SessionMiddleware`.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Wymagane dla wsparcia `SchemaGenerator` z Starlette (z readyapi prawdopodobnie tego nie potrzebujesz).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Wymagane dla wsparcia `SchemaGenerator` z Starlette (z ReadyAPI prawdopodobnie tego nie potrzebujesz).
 * <a href="https://graphene-python.org/" target="_blank"><code>graphene</code></a> - Wymagane dla wsparcia `GraphQLApp`.
 
-Używane przez readyapi / Starlette:
+Używane przez ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - jako serwer, który ładuje i obsługuje Twoją aplikację.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Wymagane jeżeli chcesz używać `ORJSONResponse`.

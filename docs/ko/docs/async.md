@@ -48,9 +48,9 @@ def results():
 
 ---
 
-**참고**: *경로 작동 함수*에서 필요한만큼 `def`와 `async def`를 혼용할 수 있고, 가장 알맞은 것을 선택해서 정의할 수 있습니다. readyapi가 자체적으로 알맞은 작업을 수행할 것입니다.
+**참고**: *경로 작동 함수*에서 필요한만큼 `def`와 `async def`를 혼용할 수 있고, 가장 알맞은 것을 선택해서 정의할 수 있습니다. ReadyAPI가 자체적으로 알맞은 작업을 수행할 것입니다.
 
-어찌되었든, 상기 어떠한 경우라도, readyapi는 여전히 비동기적으로 작동하고 매우 빠릅니다.
+어찌되었든, 상기 어떠한 경우라도, ReadyAPI는 여전히 비동기적으로 작동하고 매우 빠릅니다.
 
 그러나 상기 작업을 수행함으로써 어느 정도의 성능 최적화가 가능합니다.
 
@@ -217,7 +217,7 @@ def results():
 
 이러한 종류의 비동기성은 (NodeJS는 병렬적이지 않음에도) NodeJS가 사랑받는 이유이고, 프로그래밍 언어로서의 Go의 강점입니다.
 
-그리고 **readyapi**를 사용함으로써 동일한 성능을 낼 수 있습니다.
+그리고 **ReadyAPI**를 사용함으로써 동일한 성능을 낼 수 있습니다.
 
 또한 병렬성과 비동기성을 동시에 사용할 수 있기 때문에, 대부분의 테스트가 완료된 NodeJS 프레임워크보다 더 높은 성능을 얻고 C에 더 가까운 컴파일 언어인 Go와 동등한 성능을 얻을 수 있습니다<a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">(모두 Starlette 덕분입니다)</a>.
 
@@ -260,11 +260,11 @@ CPU에 묶인 연산에 관한 흔한 예시는 복잡한 수학 처리를 필�
 
 ### 동시성 + 병렬성: 웹 + 머신러닝
 
-**readyapi**를 사용하면 웹 개발에서는 매우 흔한 동시성의 이점을 (NodeJS의 주된 매력만큼) 얻을 수 있습니다.
+**ReadyAPI**를 사용하면 웹 개발에서는 매우 흔한 동시성의 이점을 (NodeJS의 주된 매력만큼) 얻을 수 있습니다.
 
 뿐만 아니라 머신러닝 시스템과 같이 **CPU에 묶인** 작업을 위해 병렬성과 멀티프로세싱(다수의 프로세스를 병렬적으로 동작시키는 것)을 이용하는 것도 가능합니다.
 
-파이썬이 **데이터 사이언스**, 머신러닝과 특히 딥러닝에 의 주된 언어라는 간단한 사실에 더해서, 이것은 readyapi를 데이터 사이언스 / 머신러닝 웹 API와 응용프로그램에 (다른 것들보다) 좋은 선택지가 되게 합니다.
+파이썬이 **데이터 사이언스**, 머신러닝과 특히 딥러닝에 의 주된 언어라는 간단한 사실에 더해서, 이것은 ReadyAPI를 데이터 사이언스 / 머신러닝 웹 API와 응용프로그램에 (다른 것들보다) 좋은 선택지가 되게 합니다.
 
 배포시 병렬을 어떻게 가능하게 하는지 알고싶다면, [배포](deployment/index.md){.internal-link target=_blank}문서를 참고하십시오.
 
@@ -325,17 +325,17 @@ async def read_burgers():
 
 그렇다면 닭이 먼저냐, 달걀이 먼저냐, 첫 `async` 함수를 어떻게 호출할 수 있겠습니까?
 
-**readyapi**를 사용해 작업한다면 이것을 걱정하지 않아도 됩니다. 왜냐하면 그 "첫" 함수는 당신의 *경로 작동 함수*가 될 것이고, readyapi는 어떻게 올바르게 처리할지 알고있기 때문입니다.
+**ReadyAPI**를 사용해 작업한다면 이것을 걱정하지 않아도 됩니다. 왜냐하면 그 "첫" 함수는 당신의 *경로 작동 함수*가 될 것이고, ReadyAPI는 어떻게 올바르게 처리할지 알고있기 때문입니다.
 
-하지만 readyapi를 사용하지 않고 `async` / `await`를 사용하고 싶다면, 이 역시 가능합니다.
+하지만 ReadyAPI를 사용하지 않고 `async` / `await`를 사용하고 싶다면, 이 역시 가능합니다.
 
 ### 당신만의 비동기 코드 작성하기
 
-Starlette(그리고 readyapi)는 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>를 기반으로 하고있고, 따라서 파이썬 표준 라이브러리인 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 및 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>와 호환됩니다.
+Starlette(그리고 ReadyAPI)는 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>를 기반으로 하고있고, 따라서 파이썬 표준 라이브러리인 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 및 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>와 호환됩니다.
 
 특히, 코드에서 고급 패턴이 필요한 고급 동시성을 사용하는 경우 직접적으로 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>를 사용할 수 있습니다.
 
-readyapi를 사용하지 않더라도, 높은 호환성 및 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>의 이점(예: *구조화된 동시성*)을 취하기 위해 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>를 사용해 비동기 응용프로그램을 작성할 수 있습니다.
+ReadyAPI를 사용하지 않더라도, 높은 호환성 및 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>의 이점(예: *구조화된 동시성*)을 취하기 위해 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>를 사용해 비동기 응용프로그램을 작성할 수 있습니다.
 
 ### 비동기 코드의 다른 형태
 
@@ -365,7 +365,7 @@ readyapi를 사용하지 않더라도, 높은 호환성 및 <a href="https://any
 
 이제 이 말을 조금 더 이해할 수 있을 것입니다. ✨
 
-이것이 (Starlette을 통해) readyapi를 강하게 하면서 그것이 인상적인 성능을 낼 수 있게 합니다.
+이것이 (Starlette을 통해) ReadyAPI를 강하게 하면서 그것이 인상적인 성능을 낼 수 있게 합니다.
 
 ## 매우 세부적인 기술적 사항
 
@@ -373,9 +373,9 @@ readyapi를 사용하지 않더라도, 높은 호환성 및 <a href="https://any
 
 이 부분은 넘어가도 됩니다.
 
-이것들은 **readyapi**가 내부적으로 어떻게 동작하는지에 대한 매우 세부적인 기술사항입니다.
+이것들은 **ReadyAPI**가 내부적으로 어떻게 동작하는지에 대한 매우 세부적인 기술사항입니다.
 
-만약 기술적 지식(코루틴, 스레드, 블록킹 등)이 있고 readyapi가 어떻게 `async def` vs `def`를 다루는지 궁금하다면, 계속하십시오.
+만약 기술적 지식(코루틴, 스레드, 블록킹 등)이 있고 ReadyAPI가 어떻게 `async def` vs `def`를 다루는지 궁금하다면, 계속하십시오.
 
 ///
 
@@ -383,9 +383,9 @@ readyapi를 사용하지 않더라도, 높은 호환성 및 <a href="https://any
 
 경로 작동 함수를 `async def` 대신 일반적인 `def`로 선언하는 경우, (서버를 차단하는 것처럼) 그것을 직접 호출하는 대신 대기중인 외부 스레드풀에서 실행됩니다.
 
-만약 상기에 묘사된대로 동작하지 않는 비동기 프로그램을 사용해왔고 약간의 성능 향상 (약 100 나노초)을 위해 `def`를 사용해서 계산만을 위한 사소한 *경로 작동 함수*를 정의해왔다면, **readyapi**는 이와는 반대라는 것에 주의하십시오. 이러한 경우에, *경로 작동 함수*가 블로킹 <abbr title="Input/Output: 디스크 읽기 또는 쓰기, 네트워크 통신.">I/O</abbr>를 수행하는 코드를 사용하지 않는 한 `async def`를 사용하는 편이 더 낫습니다.
+만약 상기에 묘사된대로 동작하지 않는 비동기 프로그램을 사용해왔고 약간의 성능 향상 (약 100 나노초)을 위해 `def`를 사용해서 계산만을 위한 사소한 *경로 작동 함수*를 정의해왔다면, **ReadyAPI**는 이와는 반대라는 것에 주의하십시오. 이러한 경우에, *경로 작동 함수*가 블로킹 <abbr title="Input/Output: 디스크 읽기 또는 쓰기, 네트워크 통신.">I/O</abbr>를 수행하는 코드를 사용하지 않는 한 `async def`를 사용하는 편이 더 낫습니다.
 
-하지만 두 경우 모두, readyapi가 당신이 전에 사용하던 프레임워크보다 [더 빠를](index.md#_11){.internal-link target=_blank} (최소한 비견될) 확률이 높습니다.
+하지만 두 경우 모두, ReadyAPI가 당신이 전에 사용하던 프레임워크보다 [더 빠를](index.md#_11){.internal-link target=_blank} (최소한 비견될) 확률이 높습니다.
 
 ### 의존성
 
@@ -397,9 +397,9 @@ readyapi를 사용하지 않더라도, 높은 호환성 및 <a href="https://any
 
 ### 다른 유틸리티 함수
 
-직접 호출되는 다른 모든 유틸리티 함수는 일반적인 `def`나 `async def`로 생성될 수 있고 readyapi는 이를 호출하는 방식에 영향을 미치지 않습니다.
+직접 호출되는 다른 모든 유틸리티 함수는 일반적인 `def`나 `async def`로 생성될 수 있고 ReadyAPI는 이를 호출하는 방식에 영향을 미치지 않습니다.
 
-이것은 readyapi가 당신을 위해 호출하는 함수와는 반대입니다: *경로 작동 함수*와 의존성
+이것은 ReadyAPI가 당신을 위해 호출하는 함수와는 반대입니다: *경로 작동 함수*와 의존성
 
 만약 당신의 유틸리티 함수가 `def`를 사용한 일반적인 함수라면, 스레드풀에서가 아니라 직접 호출(당신이 코드에 작성한 대로)될 것이고, `async def`로 생성된 함수라면 코드에서 호출할 때 그 함수를 `await` 해야 합니다.
 

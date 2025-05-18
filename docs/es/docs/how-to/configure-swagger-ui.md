@@ -2,11 +2,11 @@
 
 Puedes configurar algunos <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">parámetros adicionales de Swagger UI</a>.
 
-Para configurarlos, pasa el argumento `swagger_ui_parameters` al crear el objeto de la app `readyapi()` o a la función `get_swagger_ui_html()`.
+Para configurarlos, pasa el argumento `swagger_ui_parameters` al crear el objeto de la app `ReadyAPI()` o a la función `get_swagger_ui_html()`.
 
 `swagger_ui_parameters` recibe un diccionario con las configuraciones pasadas directamente a Swagger UI.
 
-readyapi convierte las configuraciones a **JSON** para hacerlas compatibles con JavaScript, ya que eso es lo que Swagger UI necesita.
+ReadyAPI convierte las configuraciones a **JSON** para hacerlas compatibles con JavaScript, ya que eso es lo que Swagger UI necesita.
 
 ## Desactivar el resaltado de sintaxis
 
@@ -36,7 +36,7 @@ Esa configuración cambiaría el tema de color del resaltado de sintaxis:
 
 ## Cambiar los parámetros predeterminados de Swagger UI
 
-readyapi incluye algunos parámetros de configuración predeterminados apropiados para la mayoría de los casos de uso.
+ReadyAPI incluye algunos parámetros de configuración predeterminados apropiados para la mayoría de los casos de uso.
 
 Incluye estas configuraciones predeterminadas:
 
@@ -56,7 +56,7 @@ Para ver todas las demás configuraciones posibles que puedes usar, lee la <a hr
 
 Swagger UI también permite otras configuraciones que son objetos **solo de JavaScript** (por ejemplo, funciones de JavaScript).
 
-readyapi también incluye estas configuraciones `presets` solo de JavaScript:
+ReadyAPI también incluye estas configuraciones `presets` solo de JavaScript:
 
 ```JavaScript
 presets: [

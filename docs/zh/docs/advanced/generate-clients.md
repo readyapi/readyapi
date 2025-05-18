@@ -1,6 +1,6 @@
 # 生成客户端
 
-因为 **readyapi** 是基于OpenAPI规范的，自然您可以使用许多相匹配的工具，包括自动生成API文档 (由 Swagger UI 提供)。
+因为 **ReadyAPI** 是基于OpenAPI规范的，自然您可以使用许多相匹配的工具，包括自动生成API文档 (由 Swagger UI 提供)。
 
 一个不太明显而又特别的优势是，你可以为你的API针对不同的**编程语言**来**生成客户端**(有时候被叫做 <abbr title="Software Development Kits">**SDKs**</abbr> )。
 
@@ -14,7 +14,7 @@
 
 ## 生成一个 TypeScript 前端客户端
 
-让我们从一个简单的 readyapi 应用开始：
+让我们从一个简单的 ReadyAPI 应用开始：
 
 {* ../../docs_src/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
 
@@ -103,7 +103,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 /// tip
 
-请注意， `name` 和 `price` 的自动补全，是通过其在`Item`模型(readyapi)中的定义实现的。
+请注意， `name` 和 `price` 的自动补全，是通过其在`Item`模型(ReadyAPI)中的定义实现的。
 
 ///
 
@@ -115,9 +115,9 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 <img src="/img/tutorial/generate-clients/image05.png">
 
-## 带有标签的 readyapi 应用
+## 带有标签的 ReadyAPI 应用
 
-在许多情况下，你的readyapi应用程序会更复杂，你可能会使用标签来分隔不同组的*路径操作(path operations)*。
+在许多情况下，你的ReadyAPI应用程序会更复杂，你可能会使用标签来分隔不同组的*路径操作(path operations)*。
 
 例如，您可以有一个用 `items` 的部分和另一个用于 `users` 的部分，它们可以用标签来分隔：
 
@@ -125,7 +125,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 
 ### 生成带有标签的 TypeScript 客户端
 
-如果您使用标签为readyapi应用生成客户端，它通常也会根据标签分割客户端代码。
+如果您使用标签为ReadyAPI应用生成客户端，它通常也会根据标签分割客户端代码。
 
 通过这种方式，您将能够为客户端代码进行正确地排序和分组：
 
@@ -146,7 +146,7 @@ ItemsService.createItemItemsPost({name: "Plumbus", price: 5})
 
 ...这是因为客户端生成器为每个 *路径操作* 使用OpenAPI的内部 **操作 ID(operation ID)**。
 
-OpenAPI要求每个操作 ID 在所有 *路径操作* 中都是唯一的，因此 readyapi 使用**函数名**、**路径**和**HTTP方法/操作**来生成此操作ID，因为这样可以确保这些操作 ID 是唯一的。
+OpenAPI要求每个操作 ID 在所有 *路径操作* 中都是唯一的，因此 ReadyAPI 使用**函数名**、**路径**和**HTTP方法/操作**来生成此操作ID，因为这样可以确保这些操作 ID 是唯一的。
 
 但接下来我会告诉你如何改进。 🤓
 
@@ -160,13 +160,13 @@ OpenAPI要求每个操作 ID 在所有 *路径操作* 中都是唯一的，因�
 
 ### 自定义生成唯一ID函数
 
-readyapi为每个*路径操作*使用一个**唯一ID**，它用于**操作ID**，也用于任何所需自定义模型的名称，用于请求或响应。
+ReadyAPI为每个*路径操作*使用一个**唯一ID**，它用于**操作ID**，也用于任何所需自定义模型的名称，用于请求或响应。
 
 你可以自定义该函数。它接受一个 `APIRoute` 对象作为输入，并输出一个字符串。
 
 例如，以下是一个示例，它使用第一个标签（你可能只有一个标签）和*路径操作*名称（函数名）。
 
-然后，你可以将这个自定义函数作为 `generate_unique_id_function` 参数传递给 **readyapi**:
+然后，你可以将这个自定义函数作为 `generate_unique_id_function` 参数传递给 **ReadyAPI**:
 
 {* ../../docs_src/generate_clients/tutorial003_py39.py hl[6:7,10] *}
 

@@ -6,11 +6,11 @@ Diese **„Typhinweise“** oder -Annotationen sind eine spezielle Syntax, die e
 
 Durch das Deklarieren von Typen für Ihre Variablen können Editoren und Tools bessere Unterstützung bieten.
 
-Dies ist lediglich eine **schnelle Anleitung / Auffrischung** über Pythons Typhinweise. Sie deckt nur das Minimum ab, das nötig ist, um diese mit **readyapi** zu verwenden ... was tatsächlich sehr wenig ist.
+Dies ist lediglich eine **schnelle Anleitung / Auffrischung** über Pythons Typhinweise. Sie deckt nur das Minimum ab, das nötig ist, um diese mit **ReadyAPI** zu verwenden ... was tatsächlich sehr wenig ist.
 
-**readyapi** basiert vollständig auf diesen Typhinweisen, sie geben der Anwendung viele Vorteile und Möglichkeiten.
+**ReadyAPI** basiert vollständig auf diesen Typhinweisen, sie geben der Anwendung viele Vorteile und Möglichkeiten.
 
-Aber selbst wenn Sie **readyapi** nie verwenden, wird es für Sie nützlich sein, ein wenig darüber zu lernen.
+Aber selbst wenn Sie **ReadyAPI** nie verwenden, wird es für Sie nützlich sein, ein wenig darüber zu lernen.
 
 /// note | Hinweis
 
@@ -120,7 +120,7 @@ Jetzt, da Sie wissen, dass Sie das reparieren müssen, konvertieren Sie `age` mi
 
 Sie haben gerade den Haupt-Einsatzort für die Deklaration von Typhinweisen gesehen. Als Funktionsparameter.
 
-Das ist auch meistens, wie sie in **readyapi** verwendet werden.
+Das ist auch meistens, wie sie in **ReadyAPI** verwendet werden.
 
 ### Einfache Typen
 
@@ -491,7 +491,7 @@ Um mehr über <a href="https://pydantic-docs.helpmanual.io/" class="external-lin
 
 ///
 
-**readyapi** basiert vollständig auf Pydantic.
+**ReadyAPI** basiert vollständig auf Pydantic.
 
 Viel mehr von all dem werden Sie in praktischer Anwendung im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=_blank} sehen.
 
@@ -519,7 +519,7 @@ In Python 3.9 ist `Annotated` ein Teil der Standardbibliothek, Sie können es vo
 
 In Versionen niedriger als Python 3.9 importieren Sie `Annotated` von `typing_extensions`.
 
-Es wird bereits mit **readyapi** installiert sein.
+Es wird bereits mit **ReadyAPI** installiert sein.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -529,7 +529,7 @@ Es wird bereits mit **readyapi** installiert sein.
 
 Python selbst macht nichts mit `Annotated`. Für Editoren und andere Tools ist der Typ immer noch `str`.
 
-Aber Sie können `Annotated` nutzen, um **readyapi** mit Metadaten zu versorgen, die ihm sagen, wie sich ihre Anwendung verhalten soll.
+Aber Sie können `Annotated` nutzen, um **ReadyAPI** mit Metadaten zu versorgen, die ihm sagen, wie sich ihre Anwendung verhalten soll.
 
 Wichtig ist, dass **der erste *Typ-Parameter***, den Sie `Annotated` übergeben, der **tatsächliche Typ** ist. Der Rest sind Metadaten für andere Tools.
 
@@ -545,16 +545,16 @@ Und ebenfalls, dass Ihr Code sehr kompatibel mit vielen anderen Python-Tools und
 
 ///
 
-## Typhinweise in **readyapi**
+## Typhinweise in **ReadyAPI**
 
-**readyapi** macht sich diese Typhinweise zunutze, um mehrere Dinge zu tun.
+**ReadyAPI** macht sich diese Typhinweise zunutze, um mehrere Dinge zu tun.
 
-Mit **readyapi** deklarieren Sie Parameter mit Typhinweisen, und Sie erhalten:
+Mit **ReadyAPI** deklarieren Sie Parameter mit Typhinweisen, und Sie erhalten:
 
 * **Editorunterstützung**.
 * **Typ-Prüfungen**.
 
-... und **readyapi** verwendet dieselben Deklarationen, um:
+... und **ReadyAPI** verwendet dieselben Deklarationen, um:
 
 * **Anforderungen** zu definieren: aus Anfrage-Pfadparametern, Abfrageparametern, Header-Feldern, Bodys, Abhängigkeiten, usw.
 * **Daten umzuwandeln**: aus der Anfrage in den erforderlichen Typ.
@@ -565,7 +565,7 @@ Mit **readyapi** deklarieren Sie Parameter mit Typhinweisen, und Sie erhalten:
 
 Das mag alles abstrakt klingen. Machen Sie sich keine Sorgen. Sie werden all das in Aktion sehen im [Tutorial - Benutzerhandbuch](tutorial/index.md){.internal-link target=_blank}.
 
-Das Wichtigste ist, dass **readyapi** durch die Verwendung von Standard-Python-Typen an einer einzigen Stelle (anstatt weitere Klassen, Dekoratoren usw. hinzuzufügen) einen Großteil der Arbeit für Sie erledigt.
+Das Wichtigste ist, dass **ReadyAPI** durch die Verwendung von Standard-Python-Typen an einer einzigen Stelle (anstatt weitere Klassen, Dekoratoren usw. hinzuzufügen) einen Großteil der Arbeit für Sie erledigt.
 
 /// info
 

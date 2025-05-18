@@ -32,7 +32,7 @@
 
 本例中，使用的是自定义响应头 `X-Key` 和 `X-Token`。
 
-但实际开发中，尤其是在实现安全措施时，最好使用 readyapi 内置的[安全工具](../security/index.md){.internal-link target=_blank}（详见下一章）。
+但实际开发中，尤其是在实现安全措施时，最好使用 ReadyAPI 内置的[安全工具](../security/index.md){.internal-link target=_blank}（详见下一章）。
 
 ///
 
@@ -66,4 +66,4 @@
 
 ## 全局依赖项
 
-接下来，我们将学习如何为 `readyapi` 应用程序添加全局依赖项，创建应用于每个*路径操作*的依赖项。
+接下来，我们将学习如何为 `ReadyAPI` 应用程序添加全局依赖项，创建应用于每个*路径操作*的依赖项。

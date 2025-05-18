@@ -1,6 +1,6 @@
 # 教程 - 用户指南
 
-本教程将一步步向您展示如何使用 **readyapi** 的绝大部分特性。
+本教程将一步步向您展示如何使用 **ReadyAPI** 的绝大部分特性。
 
 各个章节的内容循序渐进，但是又围绕着单独的主题，所以您可以直接跳转到某个章节以解决您的特定需求。
 
@@ -17,7 +17,7 @@
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -25,7 +25,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -54,15 +54,15 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 **强烈建议**您在本地编写或复制代码，对其进行编辑并运行。
 
-在编辑器中使用 readyapi 会真正地展现出它的优势：只需要编写很少的代码，所有的类型检查，代码补全等等。
+在编辑器中使用 ReadyAPI 会真正地展现出它的优势：只需要编写很少的代码，所有的类型检查，代码补全等等。
 
 ---
 
-## 安装 readyapi
+## 安装 ReadyAPI
 
-第一个步骤是安装 readyapi.
+第一个步骤是安装 ReadyAPI.
 
-请确保您创建并激活一个[虚拟环境](../virtual-environments.md){.internal-link target=_blank}，然后**安装 readyapi**：
+请确保您创建并激活一个[虚拟环境](../virtual-environments.md){.internal-link target=_blank}，然后**安装 ReadyAPI**：
 
 <div class="termy">
 

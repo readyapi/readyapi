@@ -12,7 +12,7 @@
 
 `response_model`을 선언한 경우, 반환한 객체를 필터링하고 변환하는 데 여전히 사용됩니다.
 
-**readyapi**는 해당 *임시* 응답에서 헤더(쿠키와 상태 코드도 포함)를 추출하여, 여러분이 반환한 값을 포함하는 최종 응답에 `response_model`로 필터링된 값을 넣습니다.
+**ReadyAPI**는 해당 *임시* 응답에서 헤더(쿠키와 상태 코드도 포함)를 추출하여, 여러분이 반환한 값을 포함하는 최종 응답에 `response_model`로 필터링된 값을 넣습니다.
 
 또한, 종속성에서 `Response` 매개변수를 선언하고 그 안에서 헤더(및 쿠키)를 설정할 수 있습니다.
 
@@ -28,9 +28,9 @@
 
 `from starlette.responses import Response`나 `from starlette.responses import JSONResponse`를 사용할 수도 있습니다.
 
-**readyapi**는 `starlette.responses`를 `readyapi.responses`로 개발자의 편의를 위해 직접 제공하지만, 대부분의 응답은 Starlette에서 직접 제공됩니다.
+**ReadyAPI**는 `starlette.responses`를 `readyapi.responses`로 개발자의 편의를 위해 직접 제공하지만, 대부분의 응답은 Starlette에서 직접 제공됩니다.
 
-그리고 `Response`는 헤더와 쿠키를 설정하는 데 자주 사용될 수 있으므로, **readyapi**는 `readyapi.Response`로도 이를 제공합니다.
+그리고 `Response`는 헤더와 쿠키를 설정하는 데 자주 사용될 수 있으므로, **ReadyAPI**는 `readyapi.Response`로도 이를 제공합니다.
 
 ///
 

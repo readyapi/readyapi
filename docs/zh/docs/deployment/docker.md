@@ -1,6 +1,6 @@
-# 容器中的 readyapi - Docker
+# 容器中的 ReadyAPI - Docker
 
-部署 readyapi 应用程序时，常见的方法是构建 **Linux 容器镜像**。 通常使用 <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a> 完成。 然后，你可以通过几种可能的方式之一部署该容器镜像。
+部署 ReadyAPI 应用程序时，常见的方法是构建 **Linux 容器镜像**。 通常使用 <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a> 完成。 然后，你可以通过几种可能的方式之一部署该容器镜像。
 
 使用 Linux 容器有几个优点，包括**安全性**、**可复制性**、**简单性**等。
 
@@ -96,11 +96,11 @@ Docker 一直是创建和管理**容器镜像**和**容器**的主要工具之�
 但是，如果没有**至少一个正在运行的进程**，就不可能有一个正在运行的容器。 如果主进程停止，容器也会停止。
 
 
-## 为 readyapi 构建 Docker 镜像
+## 为 ReadyAPI 构建 Docker 镜像
 
 好吧，让我们现在构建一些东西！ 🚀
 
-我将向你展示如何基于 **官方 Python** 镜像 **从头开始** 为 readyapi 构建 **Docker 镜像**。
+我将向你展示如何基于 **官方 Python** 镜像 **从头开始** 为 ReadyAPI 构建 **Docker 镜像**。
 
 这是你在**大多数情况**下想要做的，例如：
 
@@ -116,7 +116,7 @@ Docker 一直是创建和管理**容器镜像**和**容器**的主要工具之�
 
 最常见的方法是创建一个`requirements.txt`文件，其中每行包含一个包名称和它的版本。
 
-你当然也可以使用在[关于 readyapi 版本](versions.md){.internal-link target=_blank} 中讲到的方法来设置版本范围。
+你当然也可以使用在[关于 ReadyAPI 版本](versions.md){.internal-link target=_blank} 中讲到的方法来设置版本范围。
 
 例如，你的`requirements.txt`可能如下所示：
 
@@ -147,7 +147,7 @@ Successfully installed readyapi pydantic uvicorn
 
 ///
 
-### 创建 **readyapi** 代码
+### 创建 **ReadyAPI** 代码
 
 * 创建`app`目录并进入。
 * 创建一个空文件`__init__.py`。
@@ -158,9 +158,9 @@ Successfully installed readyapi pydantic uvicorn
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -303,7 +303,7 @@ COPY ./app /code/app
 现在所有文件都已就位，让我们构建容器镜像。
 
 * 转到项目目录（在`Dockerfile`所在的位置，包含`app`目录）。
-* 构建你的 readyapi 镜像：
+* 构建你的 ReadyAPI 镜像：
 
 
 <div class="termy">
@@ -364,9 +364,9 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
-## 使用单文件 readyapi 构建 Docker 镜像
+## 使用单文件 ReadyAPI 构建 Docker 镜像
 
-如果你的 readyapi 是单个文件，例如没有`./app`目录的`main.py`，则你的文件结构可能如下所示：
+如果你的 ReadyAPI 是单个文件，例如没有`./app`目录的`main.py`，则你的文件结构可能如下所示：
 
 ```
 .
@@ -397,7 +397,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. 运行 Uvicorn 并告诉它从 `main` 导入 `app` 对象（而不是从 `app.main` 导入）。
 
-然后调整Uvicorn命令使用新模块`main`而不是`app.main`来导入readyapi 实例`app`。
+然后调整Uvicorn命令使用新模块`main`而不是`app.main`来导入ReadyAPI 实例`app`。
 
 ## 部署概念
 
@@ -419,7 +419,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 ## HTTPS
 
-如果我们只关注 readyapi 应用程序的 **容器镜像**（以及稍后运行的 **容器**），HTTPS 通常会由另一个工具在 **外部** 处理。
+如果我们只关注 ReadyAPI 应用程序的 **容器镜像**（以及稍后运行的 **容器**），HTTPS 通常会由另一个工具在 **外部** 处理。
 
 它可以是另一个容器，例如使用 <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>，处理 **HTTPS** 和 **自动**获取**证书**。
 
@@ -468,7 +468,7 @@ Traefik可以与 Docker、Kubernetes 等集成，因此使用它为容器设置�
 
 当使用 **Kubernetes** 或类似的分布式容器管理系统时，使用其内部网络机制将允许单个在主 **端口** 上侦听的 **负载均衡器** 将通信（请求）传输到可能的 **多个** 运行你应用程序的容器。
 
-运行你的应用程序的每个容器通常**只有一个进程**（例如，运行 readyapi 应用程序的 Uvicorn 进程）。 它们都是**相同的容器**，运行相同的东西，但每个容器都有自己的进程、内存等。这样你就可以在 CPU 的**不同核心**， 甚至在**不同的机器**充分利用**并行化(parallelization)**。
+运行你的应用程序的每个容器通常**只有一个进程**（例如，运行 ReadyAPI 应用程序的 Uvicorn 进程）。 它们都是**相同的容器**，运行相同的东西，但每个容器都有自己的进程、内存等。这样你就可以在 CPU 的**不同核心**， 甚至在**不同的机器**充分利用**并行化(parallelization)**。
 
 具有**负载均衡器**的分布式容器系统将**将请求轮流分配**给你的应用程序的每个容器。 因此，每个请求都可以由运行你的应用程序的多个**复制容器**之一来处理。
 
@@ -571,7 +571,7 @@ Traefik可以与 Docker、Kubernetes 等集成，因此使用它为容器设置�
 
 /// warning
 
-你很有可能不需要此基础镜像或任何其他类似的镜像，最好从头开始构建镜像，如[上面所述：为 readyapi 构建 Docker 镜像](#build-a-docker-image-for-readyapi)。
+你很有可能不需要此基础镜像或任何其他类似的镜像，最好从头开始构建镜像，如[上面所述：为 ReadyAPI 构建 Docker 镜像](#build-a-docker-image-for-readyapi)。
 
 ///
 
@@ -630,7 +630,7 @@ COPY ./app /app/app
 
 ### 何时使用
 
-如果你使用 **Kubernetes** （或其他）并且你已经在集群级别设置 **复制**，并且具有多个 **容器**。 在这些情况下，你最好按照上面的描述 **从头开始构建镜像**：[为 readyapi 构建 Docker 镜像](#build-a-docker-image-for-readyapi)。
+如果你使用 **Kubernetes** （或其他）并且你已经在集群级别设置 **复制**，并且具有多个 **容器**。 在这些情况下，你最好按照上面的描述 **从头开始构建镜像**：[为 ReadyAPI 构建 Docker 镜像](#build-a-docker-image-for-readyapi)。
 
 该镜像主要在[具有多个进程的容器和特殊情况](#containers-with-multiple-processes-and-special-cases)中描述的特殊情况下有用。 例如，如果你的应用程序**足够简单**，基于 CPU 设置默认进程数效果很好，你不想在集群级别手动配置复制，并且不会运行更多进程,  或者你使用 **Docker Compose** 进行部署，在单个服务器上运行等。
 
@@ -757,4 +757,4 @@ CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port"
 
 处理好`Dockerfile`和 **Docker 缓存**中指令的**顺序**，你可以**最小化构建时间**，从而最大限度地提高生产力（并避免无聊）。 😎
 
-在某些特殊情况下，你可能需要使用 readyapi 的官方 Docker 镜像。 🤓
+在某些特殊情况下，你可能需要使用 ReadyAPI 的官方 Docker 镜像。 🤓

@@ -8,9 +8,9 @@
 
 ## 添加 ASGI 中间件
 
-因为 **readyapi** 基于 Starlette，且执行 <abbr title="Asynchronous Server Gateway Interface，异步服务器网关界面">ASGI</abbr> 规范，所以可以使用任意 ASGI 中间件。
+因为 **ReadyAPI** 基于 Starlette，且执行 <abbr title="Asynchronous Server Gateway Interface，异步服务器网关界面">ASGI</abbr> 规范，所以可以使用任意 ASGI 中间件。
 
-中间件不必是专为 readyapi 或 Starlette 定制的，只要遵循 ASGI 规范即可。
+中间件不必是专为 ReadyAPI 或 Starlette 定制的，只要遵循 ASGI 规范即可。
 
 总之，ASGI 中间件是类，并把 ASGI 应用作为第一个参数。
 
@@ -24,15 +24,15 @@ app = SomeASGIApp()
 new_app = UnicornMiddleware(app, some_config="rainbow")
 ```
 
-但 readyapi（实际上是 Starlette）提供了一种更简单的方式，能让内部中间件在处理服务器错误的同时，还能让自定义异常处理器正常运作。
+但 ReadyAPI（实际上是 Starlette）提供了一种更简单的方式，能让内部中间件在处理服务器错误的同时，还能让自定义异常处理器正常运作。
 
 为此，要使用 `app.add_middleware()` （与 CORS 中的示例一样）。
 
 ```Python
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from unicorn import UnicornMiddleware
 
-app = readyapi()
+app = ReadyAPI()
 
 app.add_middleware(UnicornMiddleware, some_config="rainbow")
 ```
@@ -41,13 +41,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 ## 集成中间件
 
-**readyapi** 为常见用例提供了一些中间件，下面介绍怎么使用这些中间件。
+**ReadyAPI** 为常见用例提供了一些中间件，下面介绍怎么使用这些中间件。
 
 /// note | 技术细节
 
 以下几个示例中也可以使用 `from starlette.middleware.something import SomethingMiddleware`。
 
-**readyapi** 在 `readyapi.middleware` 中提供的中间件只是为了方便开发者使用，但绝大多数可用的中间件都直接继承自 Starlette。
+**ReadyAPI** 在 `readyapi.middleware` 中提供的中间件只是为了方便开发者使用，但绝大多数可用的中间件都直接继承自 Starlette。
 
 ///
 
@@ -85,7 +85,7 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 ## 其它中间件
 
-除了上述中间件外，readyapi 还支持其它ASGI 中间件。
+除了上述中间件外，ReadyAPI 还支持其它ASGI 中间件。
 
 例如：
 

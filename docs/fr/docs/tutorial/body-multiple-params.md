@@ -4,7 +4,7 @@ Maintenant que nous avons vu comment manipuler `Path` et `Query`, voyons comment
 
 ## Mélanger les paramètres `Path`, `Query` et body
 
-Tout d'abord, sachez que vous pouvez mélanger les déclarations des paramètres `Path`, `Query` et body, **readyapi** saura quoi faire.
+Tout d'abord, sachez que vous pouvez mélanger les déclarations des paramètres `Path`, `Query` et body, **ReadyAPI** saura quoi faire.
 
 Vous pouvez également déclarer des paramètres body comme étant optionnels, en leur assignant une valeur par défaut à `None` :
 
@@ -33,7 +33,7 @@ Mais vous pouvez également déclarer plusieurs paramètres provenant de body, p
 
 {* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
 
-Dans ce cas, **readyapi** détectera qu'il y a plus d'un paramètre dans le body (chacun correspondant à un modèle Pydantic).
+Dans ce cas, **ReadyAPI** détectera qu'il y a plus d'un paramètre dans le body (chacun correspondant à un modèle Pydantic).
 
 Il utilisera alors les noms des paramètres comme clés, et s'attendra à recevoir quelque chose de semblable à :
 
@@ -58,23 +58,23 @@ Il utilisera alors les noms des paramètres comme clés, et s'attendra à recevo
 
 ///
 
-**readyapi** effectue la conversion de la requête de façon transparente, de sorte que les objets `item` et `user` se trouvent correctement définis.
+**ReadyAPI** effectue la conversion de la requête de façon transparente, de sorte que les objets `item` et `user` se trouvent correctement définis.
 
 Il effectue également la validation des données (même imbriquées les unes dans les autres), et permet de les documenter correctement (schéma OpenAPI et documentation auto-générée).
 
 ## Valeurs scalaires dans le body
 
-De la même façon qu'il existe `Query` et `Path` pour définir des données supplémentaires pour les paramètres query et path, **readyapi** fournit un équivalent `Body`.
+De la même façon qu'il existe `Query` et `Path` pour définir des données supplémentaires pour les paramètres query et path, **ReadyAPI** fournit un équivalent `Body`.
 
 Par exemple, en étendant le modèle précédent, vous pouvez vouloir ajouter un paramètre `importance` dans le même body, en plus des paramètres `item` et `user`.
 
-Si vous le déclarez tel quel, comme c'est une valeur [scalaire](https://docs.github.com/fr/graphql/reference/scalars), **readyapi** supposera qu'il s'agit d'un paramètre de requête (`Query`).
+Si vous le déclarez tel quel, comme c'est une valeur [scalaire](https://docs.github.com/fr/graphql/reference/scalars), **ReadyAPI** supposera qu'il s'agit d'un paramètre de requête (`Query`).
 
-Mais vous pouvez indiquer à **readyapi** de la traiter comme une variable de body en utilisant `Body` :
+Mais vous pouvez indiquer à **ReadyAPI** de la traiter comme une variable de body en utilisant `Body` :
 
 {* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
-Dans ce cas, **readyapi** s'attendra à un body semblable à :
+Dans ce cas, **ReadyAPI** s'attendra à un body semblable à :
 
 ```JSON
 {
@@ -124,7 +124,7 @@ Par exemple :
 
 Disons que vous avez seulement un paramètre `item` dans le body, correspondant à un modèle Pydantic `Item`.
 
-Par défaut, **readyapi** attendra sa déclaration directement dans le body.
+Par défaut, **ReadyAPI** attendra sa déclaration directement dans le body.
 
 Cependant, si vous souhaitez qu'il interprête correctement un JSON avec une clé `item` associée au contenu du modèle, comme cela serait le cas si vous déclariez des paramètres body additionnels, vous pouvez utiliser le paramètre spécial `embed` de `Body` :
 
@@ -136,7 +136,7 @@ Voici un exemple complet :
 
 {* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
-Dans ce cas **readyapi** attendra un body semblable à :
+Dans ce cas **ReadyAPI** attendra un body semblable à :
 
 ```JSON hl_lines="2"
 {
@@ -164,8 +164,8 @@ au lieu de :
 
 Vous pouvez ajouter plusieurs paramètres body dans votre fonction de routage, même si une requête ne peut avoir qu'un seul body.
 
-Cependant, **readyapi** se chargera de faire opérer sa magie, afin de toujours fournir à votre fonction des données correctes, les validera et documentera le schéma associé.
+Cependant, **ReadyAPI** se chargera de faire opérer sa magie, afin de toujours fournir à votre fonction des données correctes, les validera et documentera le schéma associé.
 
 Vous pouvez également déclarer des valeurs [scalaires](https://docs.github.com/fr/graphql/reference/scalars) à recevoir dans le body.
 
-Et vous pouvez indiquer à **readyapi** d'inclure le body dans une autre variable, même lorsqu'un seul paramètre est déclaré.
+Et vous pouvez indiquer à **ReadyAPI** d'inclure le body dans une autre variable, même lorsqu'un seul paramètre est déclaré.

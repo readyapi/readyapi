@@ -2,7 +2,7 @@
 
 Para algunos tipos de aplicaciones, podrías querer agregar dependencias a toda la aplicación.
 
-Similar a como puedes [agregar `dependencies` a los *path operation decorators*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, puedes agregarlos a la aplicación de `readyapi`.
+Similar a como puedes [agregar `dependencies` a los *path operation decorators*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, puedes agregarlos a la aplicación de `ReadyAPI`.
 
 En ese caso, se aplicarán a todas las *path operations* en la aplicación:
 

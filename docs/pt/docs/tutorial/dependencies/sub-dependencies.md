@@ -4,7 +4,7 @@ Você pode criar dependências que possuem **subdependências**.
 
 Elas podem ter o nível de **profundidade** que você achar necessário.
 
-O **readyapi** se encarrega de resolver essas dependências.
+O **ReadyAPI** se encarrega de resolver essas dependências.
 
 ## Primeira dependência "injetável"
 
@@ -39,7 +39,7 @@ Então podemos utilizar a dependência com:
 
 Perceba que nós estamos declarando apenas uma dependência na *função de operação de rota*, em `query_or_cookie_extractor`.
 
-Mas o **readyapi** saberá que precisa solucionar `query_extractor` primeiro, para passar o resultado para `query_or_cookie_extractor` enquanto chama a função.
+Mas o **ReadyAPI** saberá que precisa solucionar `query_extractor` primeiro, para passar o resultado para `query_or_cookie_extractor` enquanto chama a função.
 
 ///
 
@@ -56,7 +56,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Utilizando a mesma dependência múltiplas vezes
 
-Se uma de suas dependências é declarada várias vezes para a mesma *operação de rota*, por exemplo, múltiplas dependências com uma mesma subdependência, o **readyapi** irá chamar essa subdependência uma única vez para cada requisição.
+Se uma de suas dependências é declarada várias vezes para a mesma *operação de rota*, por exemplo, múltiplas dependências com uma mesma subdependência, o **ReadyAPI** irá chamar essa subdependência uma única vez para cada requisição.
 
 E o valor retornado é salvo em um <abbr title="Um utilitário/sistema para armazenar valores calculados/gerados para serem reutilizados em vez de computá-los novamente.">"cache"</abbr> e repassado para todos os "dependentes" que precisam dele em uma requisição específica, em vez de chamar a dependência múltiplas vezes para uma mesma requisição.
 

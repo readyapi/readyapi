@@ -1,6 +1,6 @@
 # Metadata y URLs de Docs
 
-Puedes personalizar varias configuraciones de metadata en tu aplicación **readyapi**.
+Puedes personalizar varias configuraciones de metadata en tu aplicación **ReadyAPI**.
 
 ## Metadata para la API
 
@@ -9,12 +9,12 @@ Puedes establecer los siguientes campos que se usan en la especificación OpenAP
 | Parámetro | Tipo | Descripción |
 |------------|------|-------------|
 | `title` | `str` | El título de la API. |
-| `summary` | `str` | Un resumen corto de la API. <small>Disponible desde OpenAPI 3.1.0, readyapi 0.99.0.</small> |
+| `summary` | `str` | Un resumen corto de la API. <small>Disponible desde OpenAPI 3.1.0, ReadyAPI 0.99.0.</small> |
 | `description` | `str` | Una breve descripción de la API. Puede usar Markdown. |
 | `version` | `string` | La versión de la API. Esta es la versión de tu propia aplicación, no de OpenAPI. Por ejemplo, `2.5.0`. |
 | `terms_of_service` | `str` | Una URL a los Términos de Servicio para la API. Si se proporciona, debe ser una URL. |
 | `contact` | `dict` | La información de contacto para la API expuesta. Puede contener varios campos. <details><summary><code>contact</code> fields</summary><table><thead><tr><th>Parámetro</th><th>Tipo</th><th>Descripción</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>El nombre identificativo de la persona/organización de contacto.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>La URL que apunta a la información de contacto. DEBE tener el formato de una URL.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>La dirección de correo electrónico de la persona/organización de contacto. DEBE tener el formato de una dirección de correo.</td></tr></tbody></table></details> |
-| `license_info` | `dict` | La información de la licencia para la API expuesta. Puede contener varios campos. <details><summary><code>license_info</code> fields</summary><table><thead><tr><th>Parámetro</th><th>Tipo</th><th>Descripción</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>REQUERIDO</strong> (si se establece un <code>license_info</code>). El nombre de la licencia utilizada para la API.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Una expresión de licencia <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a> para la API. El campo <code>identifier</code> es mutuamente excluyente del campo <code>url</code>. <small>Disponible desde OpenAPI 3.1.0, readyapi 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>Una URL a la licencia utilizada para la API. DEBE tener el formato de una URL.</td></tr></tbody></table></details> |
+| `license_info` | `dict` | La información de la licencia para la API expuesta. Puede contener varios campos. <details><summary><code>license_info</code> fields</summary><table><thead><tr><th>Parámetro</th><th>Tipo</th><th>Descripción</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>REQUERIDO</strong> (si se establece un <code>license_info</code>). El nombre de la licencia utilizada para la API.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Una expresión de licencia <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a> para la API. El campo <code>identifier</code> es mutuamente excluyente del campo <code>url</code>. <small>Disponible desde OpenAPI 3.1.0, ReadyAPI 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>Una URL a la licencia utilizada para la API. DEBE tener el formato de una URL.</td></tr></tbody></table></details> |
 
 Puedes configurarlos de la siguiente manera:
 
@@ -32,7 +32,7 @@ Con esta configuración, la documentación automática de la API se vería así:
 
 ## Identificador de licencia
 
-Desde OpenAPI 3.1.0 y readyapi 0.99.0, también puedes establecer la `license_info` con un `identifier` en lugar de una `url`.
+Desde OpenAPI 3.1.0 y ReadyAPI 0.99.0, también puedes establecer la `license_info` con un `identifier` en lugar de una `url`.
 
 Por ejemplo:
 

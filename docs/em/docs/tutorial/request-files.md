@@ -40,7 +40,7 @@
 
 📁 🔜 📂 "📨 💽".
 
-🚥 👆 📣 🆎 👆 *➡ 🛠️ 🔢* 🔢 `bytes`, **readyapi** 🔜 ✍ 📁 👆 &amp; 👆 🔜 📨 🎚 `bytes`.
+🚥 👆 📣 🆎 👆 *➡ 🛠️ 🔢* 🔢 `bytes`, **ReadyAPI** 🔜 ✍ 📁 👆 &amp; 👆 🔜 📨 🎚 `bytes`.
 
 ✔️ 🤯 👈 👉 ⛓ 👈 🎂 🎚 🔜 🏪 💾. 👉 🔜 👷 👍 🤪 📁.
 
@@ -95,13 +95,13 @@ contents = myfile.file.read()
 
 /// note | `async` 📡 ℹ
 
-🕐❔ 👆 ⚙️ `async` 👩‍🔬, **readyapi** 🏃 📁 👩‍🔬 🧵 &amp; ⌛ 👫.
+🕐❔ 👆 ⚙️ `async` 👩‍🔬, **ReadyAPI** 🏃 📁 👩‍🔬 🧵 &amp; ⌛ 👫.
 
 ///
 
 /// note | 💃 📡 ℹ
 
-**readyapi**'Ⓜ `UploadFile` 😖 🔗 ⚪️➡️ **💃**'Ⓜ `UploadFile`, ✋️ 🚮 💪 🍕 ⚒ ⚫️ 🔗 ⏮️ **Pydantic** &amp; 🎏 🍕 readyapi.
+**ReadyAPI**'Ⓜ `UploadFile` 😖 🔗 ⚪️➡️ **💃**'Ⓜ `UploadFile`, ✋️ 🚮 💪 🍕 ⚒ ⚫️ 🔗 ⏮️ **Pydantic** &amp; 🎏 🍕 ReadyAPI.
 
 ///
 
@@ -109,13 +109,13 @@ contents = myfile.file.read()
 
 🌌 🕸 📨 (`<form></form>`) 📨 💽 💽 🛎 ⚙️ "🎁" 🔢 👈 📊, ⚫️ 🎏 ⚪️➡️ 🎻.
 
-**readyapi** 🔜 ⚒ 💭 ✍ 👈 📊 ⚪️➡️ ▶️️ 🥉 ↩️ 🎻.
+**ReadyAPI** 🔜 ⚒ 💭 ✍ 👈 📊 ⚪️➡️ ▶️️ 🥉 ↩️ 🎻.
 
 /// note | 📡 ℹ
 
 📊 ⚪️➡️ 📨 🛎 🗜 ⚙️ "📻 🆎" `application/x-www-form-urlencoded` 🕐❔ ⚫️ 🚫 🔌 📁.
 
-✋️ 🕐❔ 📨 🔌 📁, ⚫️ 🗜 `multipart/form-data`. 🚥 👆 ⚙️ `File`, **readyapi** 🔜 💭 ⚫️ ✔️ 🤚 📁 ⚪️➡️ ☑ 🍕 💪.
+✋️ 🕐❔ 📨 🔌 📁, ⚫️ 🗜 `multipart/form-data`. 🚥 👆 ⚙️ `File`, **ReadyAPI** 🔜 💭 ⚫️ ✔️ 🤚 📁 ⚪️➡️ ☑ 🍕 💪.
 
 🚥 👆 💚 ✍ 🌖 🔃 👉 🔢 &amp; 📨 🏑, 👳 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST" class="external-link" target="_blank"><abbr title="Mozilla Developer Network">🏇</abbr> 🕸 🩺 <code>POST</code></a>.
 
@@ -125,7 +125,7 @@ contents = myfile.file.read()
 
 👆 💪 📣 💗 `File` &amp; `Form` 🔢 *➡ 🛠️*, ✋️ 👆 💪 🚫 📣 `Body` 🏑 👈 👆 ⌛ 📨 🎻, 📨 🔜 ✔️ 💪 🗜 ⚙️ `multipart/form-data` ↩️ `application/json`.
 
-👉 🚫 🚫 **readyapi**, ⚫️ 🍕 🇺🇸🔍 🛠️.
+👉 🚫 🚫 **ReadyAPI**, ⚫️ 🍕 🇺🇸🔍 🛠️.
 
 ///
 
@@ -157,7 +157,7 @@ contents = myfile.file.read()
 
 👆 💪 ⚙️ `from starlette.responses import HTMLResponse`.
 
-**readyapi** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
+**ReadyAPI** 🚚 🎏 `starlette.responses` `readyapi.responses` 🏪 👆, 👩‍💻. ✋️ 🌅 💪 📨 👟 🔗 ⚪️➡️ 💃.
 
 ///
 

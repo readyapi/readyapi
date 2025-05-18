@@ -1,8 +1,8 @@
 # Tính năng
 
-## Tính năng của readyapi
+## Tính năng của ReadyAPI
 
-**readyapi** cho bạn những tính năng sau:
+**ReadyAPI** cho bạn những tính năng sau:
 
 ### Dựa trên những tiêu chuẩn mở
 
@@ -28,7 +28,7 @@ Tài liệu tương tác API và web giao diện người dùng. Là một frame
 
 Tất cả được dựa trên khai báo kiểu dữ liệu chuẩn của **Python 3.8** (cảm ơn Pydantic). Bạn không cần học cú pháp mới, chỉ cần biết chuẩn Python hiện đại.
 
-Nếu bạn cần 2 phút để làm mới lại cách sử dụng các kiểu dữ liệu mới của Python (thậm chí nếu bạn không sử dụng readyapi), xem hướng dẫn ngắn: [Kiểu dữ liệu Python](python-types.md){.internal-link target=_blank}.
+Nếu bạn cần 2 phút để làm mới lại cách sử dụng các kiểu dữ liệu mới của Python (thậm chí nếu bạn không sử dụng ReadyAPI), xem hướng dẫn ngắn: [Kiểu dữ liệu Python](python-types.md){.internal-link target=_blank}.
 
 Bạn viết chuẩn Python với kiểu dữ liệu như sau:
 
@@ -79,7 +79,7 @@ Toàn bộ framework được thiết kế để sử dụng dễ dàng và tr�
 
 Trong lần khảo sát cuối cùng dành cho các lập trình viên Python, đã rõ ràng <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">rằng đa số các lập trình viên sử dụng tính năng "autocompletion"</a>.
 
-Toàn bộ framework "readyapi" phải đảm bảo rằng: autocompletion hoạt động ở mọi nơi. Bạn sẽ hiếm khi cần quay lại để đọc tài liệu.
+Toàn bộ framework "ReadyAPI" phải đảm bảo rằng: autocompletion hoạt động ở mọi nơi. Bạn sẽ hiếm khi cần quay lại để đọc tài liệu.
 
 Đây là các trình soạn thảo có thể giúp bạn:
 
@@ -97,7 +97,7 @@ Không còn nhập sai tên khóa, quay đi quay lại giữa các tài liệu h
 
 ### Ngắn gọn
 
-readyapi có các giá trị mặc định hợp lý cho mọi thứ, với các cấu hình tùy chọn ở mọi nơi. Tất cả các tham số có thể được tinh chỉnh để thực hiện những gì bạn cần và để định nghĩa API bạn cần.
+ReadyAPI có các giá trị mặc định hợp lý cho mọi thứ, với các cấu hình tùy chọn ở mọi nơi. Tất cả các tham số có thể được tinh chỉnh để thực hiện những gì bạn cần và để định nghĩa API bạn cần.
 
 Nhưng mặc định, tất cả **đều hoạt động**.
 
@@ -136,7 +136,7 @@ Tất cả được xây dựng dưới dạng các công cụ và thành phần
 
 ### Dependency Injection
 
-readyapi bao gồm một hệ thống <abbr title='cũng biết đến như là "components", "resources", "services", "providers"'><strong>Dependency Injection</strong></abbr> vô cùng dễ sử dụng nhưng vô cùng mạnh mẽ.
+ReadyAPI bao gồm một hệ thống <abbr title='cũng biết đến như là "components", "resources", "services", "providers"'><strong>Dependency Injection</strong></abbr> vô cùng dễ sử dụng nhưng vô cùng mạnh mẽ.
 
 * Thậm chí, các dependency có thể có các dependency khác, tạo thành một phân cấp hoặc **"một đồ thị" của các dependency**.
 * Tất cả **được xử lí tự động** bởi framework.
@@ -159,9 +159,9 @@ Bất kì tích hợp nào được thiết kế để sử dụng đơn giản 
 
 ## Tính năng của Starlette
 
-`readyapi` is thực sự là một sub-class của `Starlette`. Do đó, nếu bạn đã biết hoặc đã sử dụng Starlette, đa số các chức năng sẽ làm việc giống như vậy.
+`ReadyAPI` is thực sự là một sub-class của `Starlette`. Do đó, nếu bạn đã biết hoặc đã sử dụng Starlette, đa số các chức năng sẽ làm việc giống như vậy.
 
-Với **readyapi**, bạn có được tất cả những tính năng của **Starlette**:
+Với **ReadyAPI**, bạn có được tất cả những tính năng của **Starlette**:
 
 * Hiệu năng thực sự ấn tượng. Nó là <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">một trong nhưng framework Python nhanh nhất, khi so sánh với **NodeJS** và **Go**</a>.
 * Hỗ trợ **WebSocket**.
@@ -175,7 +175,7 @@ Với **readyapi**, bạn có được tất cả những tính năng của **St
 
 ## Tính năng của Pydantic
 
-**readyapi** tương thích đầy đủ với (và dựa trên) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. Do đó, bất kì code Pydantic nào bạn thêm vào cũng sẽ hoạt động.
+**ReadyAPI** tương thích đầy đủ với (và dựa trên) <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>. Do đó, bất kì code Pydantic nào bạn thêm vào cũng sẽ hoạt động.
 
 Bao gồm các thư viện bên ngoài cũng dựa trên Pydantic, như <abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s cho cơ sở dữ liệu.
 
@@ -183,7 +183,7 @@ Nó cũng có nghĩa là trong nhiều trường hợp, bạn có thể truyền
 
 Điều tương tự áp dụng cho các cách khác nhau, trong nhiều trường hợp, bạn có thể chỉ truyền object từ cơ sở dữ liêu **trực tiếp tới client**.
 
-Với **readyapi**, bạn có tất cả những tính năng của **Pydantic** (readyapi dựa trên Pydantic cho tất cả những xử lí về dữ liệu):
+Với **ReadyAPI**, bạn có tất cả những tính năng của **Pydantic** (ReadyAPI dựa trên Pydantic cho tất cả những xử lí về dữ liệu):
 
 * **Không gây rối não**:
     * Không cần học ngôn ngữ mô tả cấu trúc mới.

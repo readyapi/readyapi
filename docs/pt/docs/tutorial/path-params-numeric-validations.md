@@ -38,7 +38,7 @@ O Python irá acusar se você colocar um elemento com um valor padrão definido 
 
 Mas você pode reordená-los, colocando primeiro o elemento sem o valor padrão (o parâmetro de consulta `q`).
 
-Isso não faz diferença para o **readyapi**. Ele vai detectar os parâmetros pelos seus nomes, tipos e definições padrão (`Query`, `Path`, etc), sem se importar com a ordem.
+Isso não faz diferença para o **ReadyAPI**. Ele vai detectar os parâmetros pelos seus nomes, tipos e definições padrão (`Query`, `Path`, etc), sem se importar com a ordem.
 
 Então, você pode declarar sua função assim:
 

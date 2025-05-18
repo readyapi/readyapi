@@ -1,6 +1,6 @@
 # Samouczek
 
-Ten samouczek pokaże Ci, krok po kroku, jak używać większości funkcji **readyapi**.
+Ten samouczek pokaże Ci, krok po kroku, jak używać większości funkcji **ReadyAPI**.
 
 Każda część korzysta z poprzednich, ale jest jednocześnie osobnym tematem. Możesz przejść bezpośrednio do każdego rozdziału, jeśli szukasz rozwiązania konkretnego problemu.
 
@@ -30,13 +30,13 @@ $ uvicorn main:app --reload
 
 **BARDZO zalecamy** pisanie bądź kopiowanie kodu, edycję, a następnie wykonywanie go lokalnie.
 
-Użycie w Twoim edytorze jest tym, co pokazuje prawdziwe korzyści z readyapi, pozwala zobaczyć jak mało kodu musisz napisać, wszystkie funkcje, takie jak kontrola typów, <abbr title="auto-complete, autocompletion, IntelliSense">automatyczne uzupełnianie</abbr>, itd.
+Użycie w Twoim edytorze jest tym, co pokazuje prawdziwe korzyści z ReadyAPI, pozwala zobaczyć jak mało kodu musisz napisać, wszystkie funkcje, takie jak kontrola typów, <abbr title="auto-complete, autocompletion, IntelliSense">automatyczne uzupełnianie</abbr>, itd.
 
 ---
 
-## Instalacja readyapi
+## Instalacja ReadyAPI
 
-Jako pierwszy krok zainstaluj readyapi.
+Jako pierwszy krok zainstaluj ReadyAPI.
 
 Na potrzeby samouczka możesz zainstalować również wszystkie opcjonalne biblioteki:
 

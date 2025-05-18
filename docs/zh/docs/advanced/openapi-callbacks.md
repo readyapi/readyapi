@@ -23,7 +23,7 @@ API 的用户 （外部开发者）要在您的 API 内使用 POST 请求创建�
 * 把通知发送至 API 的用户（外部开发者）
     * 通过（从您的 API）发送 POST 请求至外部 API （即**回调**）来完成
 
-## 常规 **readyapi** 应用
+## 常规 **ReadyAPI** 应用
 
 添加回调前，首先看下常规 API 应用是什么样子。
 
@@ -74,7 +74,7 @@ requests.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 应用不执行这部分代码，只是用它来*记录 外部 API* 。
 
-但，您已经知道用 **readyapi** 创建自动 API 文档有多简单了。
+但，您已经知道用 **ReadyAPI** 创建自动 API 文档有多简单了。
 
 我们要使用与存档*外部 API* 相同的知识……通过创建外部 API 要实现的*路径操作*（您的 API 要调用的）。
 
@@ -96,7 +96,7 @@ requests.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 创建回调*路径操作*也使用之前创建的 `APIRouter`。
 
-它看起来和常规 readyapi *路径操作*差不多：
+它看起来和常规 ReadyAPI *路径操作*差不多：
 
 * 声明要接收的请求体，例如，`body: InvoiceEvent`
 * 还要声明要返回的响应，例如，`response_model=InvoiceEventReceived`

@@ -6,7 +6,7 @@ Hierbei können Sie **Typannotationen** genauso verwenden, wie Sie es bei Werten
 
 {* ../../docs_src/response_model/tutorial001_01_py310.py hl[16,21] *}
 
-readyapi wird diesen Rückgabetyp verwenden, um:
+ReadyAPI wird diesen Rückgabetyp verwenden, um:
 
 * Die zurückzugebenden Daten zu **validieren**.
     * Wenn die Daten ungültig sind (Sie haben z. B. ein Feld vergessen), bedeutet das, *Ihr* Anwendungscode ist fehlerhaft, er gibt nicht zurück, was er sollte, und daher wird ein <abbr title="Server-Fehler">Server-Error</abbr> ausgegeben, statt falscher Daten. So können Sie und ihre Clients sicher sein, dass diese die erwarteten Daten, in der richtigen Form erhalten.
@@ -47,21 +47,21 @@ Beachten Sie, dass `response_model` ein Parameter der „Dekorator“-Methode is
 
 `response_model` nimmt denselben Typ entgegen, den Sie auch für ein Pydantic-Modellfeld deklarieren würden, also etwa ein Pydantic-Modell, aber es kann auch z. B. eine `list`e von Pydantic-Modellen sein, wie etwa `List[Item]`.
 
-readyapi wird dieses `response_model` nehmen, um die Daten zu dokumentieren, validieren, usw. und auch, um **die Ausgabedaten** entsprechend der Typdeklaration **zu konvertieren und filtern**.
+ReadyAPI wird dieses `response_model` nehmen, um die Daten zu dokumentieren, validieren, usw. und auch, um **die Ausgabedaten** entsprechend der Typdeklaration **zu konvertieren und filtern**.
 
 /// tip | Tipp
 
 Wenn Sie in Ihrem Editor strikte Typchecks haben, mypy, usw., können Sie den Funktions-Rückgabetyp als <abbr title='„Irgend etwas“'>`Any`</abbr> deklarieren.
 
-So sagen Sie dem Editor, dass Sie absichtlich *irgendetwas* zurückgeben. Aber readyapi wird trotzdem die Dokumentation, Validierung, Filterung, usw. der Daten übernehmen, via `response_model`.
+So sagen Sie dem Editor, dass Sie absichtlich *irgendetwas* zurückgeben. Aber ReadyAPI wird trotzdem die Dokumentation, Validierung, Filterung, usw. der Daten übernehmen, via `response_model`.
 
 ///
 
 ### `response_model`-Priorität
 
-Wenn sowohl Rückgabetyp als auch `response_model` deklariert sind, hat `response_model` die Priorität und wird von readyapi bevorzugt verwendet.
+Wenn sowohl Rückgabetyp als auch `response_model` deklariert sind, hat `response_model` die Priorität und wird von ReadyAPI bevorzugt verwendet.
 
-So können Sie korrekte Typannotationen zu ihrer Funktion hinzufügen, die von ihrem Editor und Tools wie mypy verwendet werden. Und dennoch übernimmt readyapi die Validierung und Dokumentation, usw., der Daten anhand von `response_model`.
+So können Sie korrekte Typannotationen zu ihrer Funktion hinzufügen, die von ihrem Editor und Tools wie mypy verwendet werden. Und dennoch übernimmt ReadyAPI die Validierung und Dokumentation, usw., der Daten anhand von `response_model`.
 
 Sie können auch `response_model=None` verwenden, um das Erstellen eines Responsemodells für diese *Pfadoperation* zu unterbinden. Sie könnten das tun wollen, wenn sie Dinge annotieren, die nicht gültige Pydantic-Felder sind. Ein Beispiel dazu werden Sie in einer der Abschnitte unten sehen.
 
@@ -110,7 +110,7 @@ Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zur
 
 {* ../../docs_src/response_model/tutorial003_py310.py hl[22] *}
 
-Darum wird **readyapi** sich darum kümmern, dass alle Daten, die nicht im Ausgabemodell deklariert sind, herausgefiltert werden (mittels Pydantic).
+Darum wird **ReadyAPI** sich darum kümmern, dass alle Daten, die nicht im Ausgabemodell deklariert sind, herausgefiltert werden (mittels Pydantic).
 
 ### `response_model` oder Rückgabewert
 
@@ -124,17 +124,17 @@ Darum müssen wir es in diesem Fall im `response_model`-Parameter deklarieren.
 
 Führen wir unser vorheriges Beispiel fort. Wir wollten **die Funktion mit einem Typ annotieren**, aber etwas zurückgeben, das **weniger Daten** enthält.
 
-Wir möchten auch, dass readyapi die Daten weiterhin, dem Responsemodell entsprechend, **filtert**.
+Wir möchten auch, dass ReadyAPI die Daten weiterhin, dem Responsemodell entsprechend, **filtert**.
 
 Im vorherigen Beispiel mussten wir den `response_model`-Parameter verwenden, weil die Klassen unterschiedlich waren. Das bedeutet aber auch, wir bekommen keine Unterstützung vom Editor und anderen Tools, die den Funktions-Rückgabewert überprüfen.
 
 Aber in den meisten Fällen, wenn wir so etwas machen, wollen wir nur, dass das Modell einige der Daten **filtert/entfernt**, so wie in diesem Beispiel.
 
-Und in solchen Fällen können wir Klassen und Vererbung verwenden, um Vorteil aus den Typannotationen in der Funktion zu ziehen, was vom Editor und von Tools besser unterstützt wird, während wir gleichzeitig readyapis **Datenfilterung** behalten.
+Und in solchen Fällen können wir Klassen und Vererbung verwenden, um Vorteil aus den Typannotationen in der Funktion zu ziehen, was vom Editor und von Tools besser unterstützt wird, während wir gleichzeitig ReadyAPIs **Datenfilterung** behalten.
 
 {* ../../docs_src/response_model/tutorial003_01_py310.py hl[7:10,13:14,18] *}
 
-Damit erhalten wir Tool-Unterstützung, vom Editor und mypy, da dieser Code hinsichtlich der Typen korrekt ist, aber wir erhalten auch die Datenfilterung von readyapi.
+Damit erhalten wir Tool-Unterstützung, vom Editor und mypy, da dieser Code hinsichtlich der Typen korrekt ist, aber wir erhalten auch die Datenfilterung von ReadyAPI.
 
 Wie funktioniert das? Schauen wir uns das mal an. 🤓
 
@@ -148,11 +148,11 @@ Wir annotieren den Funktionsrückgabetyp als `BaseUser`, geben aber tatsächlich
 
 Für den Editor, mypy und andere Tools ist das kein Problem, da `UserIn` eine Unterklasse von `BaseUser` ist (Salopp: `UserIn` ist ein `BaseUser`). Es handelt sich um einen *gültigen* Typ, solange irgendetwas überreicht wird, das ein `BaseUser` ist.
 
-### readyapi Datenfilterung
+### ReadyAPI Datenfilterung
 
-readyapi seinerseits wird den Rückgabetyp sehen und sicherstellen, dass das, was zurückgegeben wird, **nur** diejenigen Felder enthält, welche im Typ deklariert sind.
+ReadyAPI seinerseits wird den Rückgabetyp sehen und sicherstellen, dass das, was zurückgegeben wird, **nur** diejenigen Felder enthält, welche im Typ deklariert sind.
 
-readyapi macht intern mehrere Dinge mit Pydantic, um sicherzustellen, dass obige Ähnlichkeitsregeln der Klassenvererbung nicht auf die Filterung der zurückgegebenen Daten angewendet werden, sonst könnten Sie am Ende mehr Daten zurückgeben als gewollt.
+ReadyAPI macht intern mehrere Dinge mit Pydantic, um sicherzustellen, dass obige Ähnlichkeitsregeln der Klassenvererbung nicht auf die Filterung der zurückgegebenen Daten angewendet werden, sonst könnten Sie am Ende mehr Daten zurückgeben als gewollt.
 
 Auf diese Weise erhalten Sie das beste beider Welten: Sowohl Typannotationen mit **Tool-Unterstützung** als auch **Datenfilterung**.
 
@@ -176,7 +176,7 @@ Der häufigste Anwendungsfall ist, wenn Sie [eine Response direkt zurückgeben, 
 
 {* ../../docs_src/response_model/tutorial003_02.py hl[8,10:11] *}
 
-Dieser einfache Anwendungsfall wird automatisch von readyapi gehandhabt, weil die Annotation des Rückgabetyps die Klasse (oder eine Unterklasse von) `Response` ist.
+Dieser einfache Anwendungsfall wird automatisch von ReadyAPI gehandhabt, weil die Annotation des Rückgabetyps die Klasse (oder eine Unterklasse von) `Response` ist.
 
 Und Tools werden auch glücklich sein, weil sowohl `RedirectResponse` als auch `JSONResponse` Unterklassen von `Response` sind, die Typannotation ist daher korrekt.
 
@@ -186,11 +186,11 @@ Sie können auch eine Unterklasse von `Response` in der Typannotation verwenden.
 
 {* ../../docs_src/response_model/tutorial003_03.py hl[8:9] *}
 
-Das wird ebenfalls funktionieren, weil `RedirectResponse` eine Unterklasse von `Response` ist, und readyapi sich um diesen einfachen Anwendungsfall automatisch kümmert.
+Das wird ebenfalls funktionieren, weil `RedirectResponse` eine Unterklasse von `Response` ist, und ReadyAPI sich um diesen einfachen Anwendungsfall automatisch kümmert.
 
 ### Ungültige Rückgabetyp-Annotationen
 
-Aber wenn Sie ein beliebiges anderes Objekt zurückgeben, das kein gültiger Pydantic-Typ ist (z. B. ein Datenbank-Objekt), und Sie annotieren es so in der Funktion, wird readyapi versuchen, ein Pydantic-Responsemodell von dieser Typannotation zu erstellen, und scheitern.
+Aber wenn Sie ein beliebiges anderes Objekt zurückgeben, das kein gültiger Pydantic-Typ ist (z. B. ein Datenbank-Objekt), und Sie annotieren es so in der Funktion, wird ReadyAPI versuchen, ein Pydantic-Responsemodell von dieser Typannotation zu erstellen, und scheitern.
 
 Das gleiche wird passieren, wenn Sie eine <abbr title='Eine Union mehrerer Typen bedeutet: „Irgendeiner dieser Typen“'>Union</abbr> mehrerer Typen haben, und einer oder mehrere sind nicht gültige Pydantic-Typen. Zum Beispiel funktioniert folgendes nicht 💥:
 
@@ -200,7 +200,7 @@ Das gleiche wird passieren, wenn Sie eine <abbr title='Eine Union mehrerer Typen
 
 ### Responsemodell deaktivieren
 
-Beim Beispiel oben fortsetzend, mögen Sie vielleicht die standardmäßige Datenvalidierung, -Dokumentation, -Filterung, usw., die von readyapi durchgeführt wird, nicht haben.
+Beim Beispiel oben fortsetzend, mögen Sie vielleicht die standardmäßige Datenvalidierung, -Dokumentation, -Filterung, usw., die von ReadyAPI durchgeführt wird, nicht haben.
 
 Aber Sie möchten dennoch den Rückgabetyp in der Funktion annotieren, um Unterstützung von Editoren und Typcheckern (z. B. mypy) zu erhalten.
 
@@ -208,7 +208,7 @@ In diesem Fall können Sie die Generierung des Responsemodells abschalten, indem
 
 {* ../../docs_src/response_model/tutorial003_05_py310.py hl[7] *}
 
-Das bewirkt, dass readyapi die Generierung des Responsemodells unterlässt, und damit können Sie jede gewünschte Rückgabetyp-Annotation haben, ohne dass es Ihre readyapi-Anwendung beeinflusst. 🤓
+Das bewirkt, dass ReadyAPI die Generierung des Responsemodells unterlässt, und damit können Sie jede gewünschte Rückgabetyp-Annotation haben, ohne dass es Ihre ReadyAPI-Anwendung beeinflusst. 🤓
 
 ## Parameter für die Enkodierung des Responsemodells
 
@@ -251,7 +251,7 @@ Die Beispiele hier verwenden `.dict()` für die Kompatibilität mit Pydantic v1,
 
 /// info
 
-readyapi verwendet `.dict()` von Pydantic Modellen, <a href="https://docs.pydantic.dev/1.10/usage/exporting_models/#modeldict" class="external-link" target="_blank">mit dessen `exclude_unset`-Parameter</a>, um das zu erreichen.
+ReadyAPI verwendet `.dict()` von Pydantic Modellen, <a href="https://docs.pydantic.dev/1.10/usage/exporting_models/#modeldict" class="external-link" target="_blank">mit dessen `exclude_unset`-Parameter</a>, um das zu erreichen.
 
 ///
 
@@ -295,7 +295,7 @@ Wenn Daten die gleichen Werte haben wie ihre Defaultwerte, wie etwa der Artikel 
 }
 ```
 
-dann ist readyapi klug genug (tatsächlich ist Pydantic klug genug) zu erkennen, dass, obwohl `description`, `tax`, und `tags` die gleichen Werte haben wie ihre Defaultwerte, sie explizit gesetzt wurden (statt dass sie von den Defaultwerten genommen wurden).
+dann ist ReadyAPI klug genug (tatsächlich ist Pydantic klug genug) zu erkennen, dass, obwohl `description`, `tax`, und `tags` die gleichen Werte haben wie ihre Defaultwerte, sie explizit gesetzt wurden (statt dass sie von den Defaultwerten genommen wurden).
 
 Diese Felder werden also in der JSON-Response enthalten sein.
 
@@ -337,7 +337,7 @@ Die Syntax `{"name", "description"}` erzeugt ein `set` mit diesen zwei Werten.
 
 #### `list`en statt `set`s verwenden
 
-Wenn Sie vergessen, ein `set` zu verwenden, und stattdessen eine `list`e oder ein `tuple` übergeben, wird readyapi die dennoch in ein `set` konvertieren, und es wird korrekt funktionieren:
+Wenn Sie vergessen, ein `set` zu verwenden, und stattdessen eine `list`e oder ein `tuple` übergeben, wird ReadyAPI die dennoch in ein `set` konvertieren, und es wird korrekt funktionieren:
 
 {* ../../docs_src/response_model/tutorial006_py310.py hl[29,35] *}
 

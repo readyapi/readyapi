@@ -26,6 +26,6 @@ Y luego puedes devolver cualquier objeto que necesites, como lo harías normalme
 
 Y si declaraste un `response_model`, todavía se utilizará para filtrar y convertir el objeto que devolviste.
 
-**readyapi** usará ese response *temporal* para extraer el código de estado (también cookies y headers), y los pondrá en el response final que contiene el valor que devolviste, filtrado por cualquier `response_model`.
+**ReadyAPI** usará ese response *temporal* para extraer el código de estado (también cookies y headers), y los pondrá en el response final que contiene el valor que devolviste, filtrado por cualquier `response_model`.
 
 También puedes declarar el parámetro `Response` en dependencias y establecer el código de estado en ellas. Pero ten en cuenta que el último establecido prevalecerá.

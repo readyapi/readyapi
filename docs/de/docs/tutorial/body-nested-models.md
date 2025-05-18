@@ -1,6 +1,6 @@
 # Body – Verschachtelte Modelle
 
-Mit **readyapi** können Sie (dank Pydantic) beliebig tief verschachtelte Modelle definieren, validieren und dokumentieren.
+Mit **ReadyAPI** können Sie (dank Pydantic) beliebig tief verschachtelte Modelle definieren, validieren und dokumentieren.
 
 ## Listen als Felder
 
@@ -89,7 +89,7 @@ Und dann können wir es als Typ eines Attributes verwenden.
 
 {* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
 
-Das würde bedeuten, dass **readyapi** einen Body erwartet wie:
+Das würde bedeuten, dass **ReadyAPI** einen Body erwartet wie:
 
 ```JSON
 {
@@ -105,7 +105,7 @@ Das würde bedeuten, dass **readyapi** einen Body erwartet wie:
 }
 ```
 
-Wiederum, nur mit dieser Deklaration erhalten Sie von **readyapi**:
+Wiederum, nur mit dieser Deklaration erhalten Sie von **ReadyAPI**:
 
 * Editor-Unterstützung (Codevervollständigung, usw.), selbst für verschachtelte Modelle
 * Datenkonvertierung
@@ -236,7 +236,7 @@ Und das `dict` welches Sie als `weights` erhalten, wird `int`-Schlüssel und `fl
 
 ## Zusammenfassung
 
-Mit **readyapi** haben Sie die maximale Flexibilität von Pydantic-Modellen, während Ihr Code einfach, kurz und elegant bleibt.
+Mit **ReadyAPI** haben Sie die maximale Flexibilität von Pydantic-Modellen, während Ihr Code einfach, kurz und elegant bleibt.
 
 Aber mit all den Vorzügen:
 

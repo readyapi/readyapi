@@ -1,6 +1,6 @@
 # WebSockets
 
-Você pode usar <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">WebSockets</a> com **readyapi**.
+Você pode usar <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">WebSockets</a> com **ReadyAPI**.
 
 ## Instalando `WebSockets`
 
@@ -42,7 +42,7 @@ Mas é a maneira mais simples de focar no lado do servidor de WebSockets e ter u
 
 ## Criando um `websocket`
 
-Em sua aplicação **readyapi**, crie um `websocket`:
+Em sua aplicação **ReadyAPI**, crie um `websocket`:
 
 {*../../docs_src/websockets/tutorial001.py hl[46:47]*}
 
@@ -50,7 +50,7 @@ Em sua aplicação **readyapi**, crie um `websocket`:
 
 Você também poderia usar `from starlette.websockets import WebSocket`.
 
-A **readyapi** fornece o mesmo `WebSocket` diretamente apenas como uma conveniência para você, o desenvolvedor. Mas ele vem diretamente do Starlette.
+A **ReadyAPI** fornece o mesmo `WebSocket` diretamente apenas como uma conveniência para você, o desenvolvedor. Mas ele vem diretamente do Starlette.
 
 ///
 
@@ -86,7 +86,7 @@ Você pode digitar mensagens na caixa de entrada e enviá-las:
 
 <img src="/img/tutorial/websockets/image02.png">
 
-E sua aplicação **readyapi** com WebSockets responderá de volta:
+E sua aplicação **ReadyAPI** com WebSockets responderá de volta:
 
 <img src="/img/tutorial/websockets/image03.png">
 
@@ -107,7 +107,7 @@ Nos endpoints WebSocket você pode importar do `readyapi` e usar:
 * `Path`
 * `Query`
 
-Eles funcionam da mesma forma que para outros endpoints readyapi/*operações de rota*:
+Eles funcionam da mesma forma que para outros endpoints ReadyAPI/*operações de rota*:
 
 {*../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82]*}
 
@@ -174,7 +174,7 @@ O app acima é um exemplo mínimo e simples para demonstrar como lidar e transmi
 
 Mas tenha em mente que, como tudo é manipulado na memória, em uma única lista, ele só funcionará enquanto o processo estiver em execução e só funcionará com um único processo.
 
-Se você precisa de algo fácil de integrar com o readyapi, mas que seja mais robusto, suportado por Redis, PostgreSQL ou outros, verifique o <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>.
+Se você precisa de algo fácil de integrar com o ReadyAPI, mas que seja mais robusto, suportado por Redis, PostgreSQL ou outros, verifique o <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>.
 
 ///
 

@@ -1,6 +1,6 @@
 # Repository Management Tasks
 
-These are the tasks that can be performed to manage the readyapi repository by [team members](./readyapi-people.md#team){.internal-link target=_blank}.
+These are the tasks that can be performed to manage the ReadyAPI repository by [team members](./readyapi-people.md#team){.internal-link target=_blank}.
 
 /// tip
 
@@ -8,9 +8,9 @@ This section is useful only to a handful of people, team members with permission
 
 ///
 
-...so, you are a [team member of readyapi](./readyapi-people.md#team){.internal-link target=_blank}? Wow, you are so cool! 😎
+...so, you are a [team member of ReadyAPI](./readyapi-people.md#team){.internal-link target=_blank}? Wow, you are so cool! 😎
 
-You can help with everything on [Help readyapi - Get Help](./help-readyapi.md){.internal-link target=_blank} the same ways as external contributors. But additionally, there are some tasks that only you (as part of the team) can perform.
+You can help with everything on [Help ReadyAPI - Get Help](./help-readyapi.md){.internal-link target=_blank} the same ways as external contributors. But additionally, there are some tasks that only you (as part of the team) can perform.
 
 Here are the general instructions for the tasks you can perform.
 
@@ -248,9 +248,9 @@ A PR should have a specific use case that it is solving.
 * Feel free to comment in the PR to ask for more information, to suggest changes, etc.
 * Once you think the PR is ready, move it in the internal GitHub project for me to review it.
 
-## readyapi People PRs
+## ReadyAPI People PRs
 
-Every month, a GitHub Action updates the readyapi People data. Those PRs look like this one: <a href="https://github.com/readyapi/readyapi/pull/11669" class="external-link" target="_blank">👥 Update readyapi People</a>.
+Every month, a GitHub Action updates the ReadyAPI People data. Those PRs look like this one: <a href="https://github.com/readyapi/readyapi/pull/11669" class="external-link" target="_blank">👥 Update ReadyAPI People</a>.
 
 If the tests are passing, you can merge it right away.
 
@@ -261,7 +261,7 @@ When people add external links they edit this file <a href="https://github.com/r
 * Make sure the new link is in the correct category (e.g. "Podcasts") and language (e.g. "Japanese").
 * A new link should be at the top of its list.
 * The link URL should work (it should not return a 404).
-* The content of the link should be about readyapi.
+* The content of the link should be about ReadyAPI.
 * The new addition should have these fields:
     * `author`: The name of the author.
     * `link`: The URL with the content.

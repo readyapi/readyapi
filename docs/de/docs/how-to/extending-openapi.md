@@ -8,7 +8,7 @@ In diesem Abschnitt erfahren Sie, wie.
 
 Der normale (Standard-)Prozess ist wie folgt.
 
-Eine `readyapi`-Anwendung (-Instanz) verfügt über eine `.openapi()`-Methode, von der erwartet wird, dass sie das OpenAPI-Schema zurückgibt.
+Eine `ReadyAPI`-Anwendung (-Instanz) verfügt über eine `.openapi()`-Methode, von der erwartet wird, dass sie das OpenAPI-Schema zurückgibt.
 
 Als Teil der Erstellung des Anwendungsobjekts wird eine *Pfadoperation* für `/openapi.json` (oder welcher Wert für den Parameter `openapi_url` gesetzt wurde) registriert.
 
@@ -29,7 +29,7 @@ Und diese Funktion `get_openapi()` erhält als Parameter:
 
 /// info
 
-Der Parameter `summary` ist in OpenAPI 3.1.0 und höher verfügbar und wird von readyapi 0.99.0 und höher unterstützt.
+Der Parameter `summary` ist in OpenAPI 3.1.0 und höher verfügbar und wird von ReadyAPI 0.99.0 und höher unterstützt.
 
 ///
 
@@ -39,9 +39,9 @@ Mithilfe der oben genannten Informationen können Sie dieselbe Hilfsfunktion ver
 
 Fügen wir beispielsweise <a href="https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md#x-logo" class="external-link" target="_blank">ReDocs OpenAPI-Erweiterung</a> zum Einbinden eines benutzerdefinierten Logos hinzu.
 
-### Normales **readyapi**
+### Normales **ReadyAPI**
 
-Schreiben Sie zunächst wie gewohnt Ihre ganze **readyapi**-Anwendung:
+Schreiben Sie zunächst wie gewohnt Ihre ganze **ReadyAPI**-Anwendung:
 
 {* ../../docs_src/extending_openapi/tutorial001.py hl[1,4,7:9] *}
 
@@ -75,6 +75,6 @@ Jetzt können Sie die Methode `.openapi()` durch Ihre neue Funktion ersetzen.
 
 ### Testen
 
-Sobald Sie auf <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> gehen, werden Sie sehen, dass Ihr benutzerdefiniertes Logo verwendet wird (in diesem Beispiel das Logo von **readyapi**):
+Sobald Sie auf <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> gehen, werden Sie sehen, dass Ihr benutzerdefiniertes Logo verwendet wird (in diesem Beispiel das Logo von **ReadyAPI**):
 
 <img src="/img/tutorial/extending-openapi/image01.png">

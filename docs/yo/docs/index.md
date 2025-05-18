@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>Ìlànà wẹ́ẹ́bù readyapi, iṣẹ́ gíga, ó rọrùn láti kọ̀, o yára láti kóòdù, ó sì ṣetán fún iṣelọpọ ní lílo</em>
+    <em>Ìlànà wẹ́ẹ́bù ReadyAPI, iṣẹ́ gíga, ó rọrùn láti kọ̀, o yára láti kóòdù, ó sì ṣetán fún iṣelọpọ ní lílo</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,7 +33,7 @@
 
 ---
 
-readyapi jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́bù fún kikọ àwọn API pẹ̀lú Python èyí tí ó da lori àwọn ìtọ́kasí àmì irúfẹ́ Python.
+ReadyAPI jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́bù fún kikọ àwọn API pẹ̀lú Python èyí tí ó da lori àwọn ìtọ́kasí àmì irúfẹ́ Python.
 
 Àwọn ẹya pàtàkì ni:
 
@@ -46,7 +46,7 @@ readyapi jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́b
 * **Ó lágbára**: Ó ń ṣe àgbéjáde kóòdù tí ó ṣetán fún ìṣelọ́pọ̀. Pẹ̀lú àkọsílẹ̀ tí ó máa ṣàlàyé ara rẹ̀ fún ẹ ní ìbáṣepọ̀ aládàáṣiṣẹ́ pẹ̀lú rè.
 * **Ajohunše/Ìtọ́kasí**: Ó da lori (àti ibamu ni kikun pẹ̀lú) àwọn ìmọ ajohunše/ìtọ́kasí fún àwọn API: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (èyí tí a mọ tẹlẹ si Swagger) àti <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
 
-<small>* iṣiro yi da lori àwọn idanwo tí ẹgbẹ ìdàgbàsókè readyapi ṣe, nígbàtí wọn kọ àwọn ohun elo iṣelọpọ kóòdù pẹ̀lú rẹ.</small>
+<small>* iṣiro yi da lori àwọn idanwo tí ẹgbẹ ìdàgbàsókè ReadyAPI ṣe, nígbàtí wọn kọ àwọn ohun elo iṣelọpọ kóòdù pẹ̀lú rẹ.</small>
 
 ## Àwọn onígbọ̀wọ́
 
@@ -67,25 +67,25 @@ readyapi jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́b
 
 ## Àwọn ero àti èsì
 
-"_[...] Mò ń lo **readyapi** púpọ̀ ní lẹ́nu àìpẹ́ yìí. [...] Mo n gbero láti lo o pẹ̀lú àwọn ẹgbẹ mi fún gbogbo iṣẹ **ML wa ni Microsoft**. Diẹ nínú wọn ni afikun ti ifilelẹ àwọn ẹya ara ti ọja **Windows** wa pẹ̀lú àwọn ti **Office**._"
+"_[...] Mò ń lo **ReadyAPI** púpọ̀ ní lẹ́nu àìpẹ́ yìí. [...] Mo n gbero láti lo o pẹ̀lú àwọn ẹgbẹ mi fún gbogbo iṣẹ **ML wa ni Microsoft**. Diẹ nínú wọn ni afikun ti ifilelẹ àwọn ẹya ara ti ọja **Windows** wa pẹ̀lú àwọn ti **Office**._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_A gba àwọn ohun èlò ìwé afọwọkọ **readyapi** tí kò yí padà láti ṣẹ̀dá olùpín **REST** tí a lè béèrè lọ́wọ́ rẹ̀ láti gba **àsọtẹ́lẹ̀**. [fún Ludwig]_"
+"_A gba àwọn ohun èlò ìwé afọwọkọ **ReadyAPI** tí kò yí padà láti ṣẹ̀dá olùpín **REST** tí a lè béèrè lọ́wọ́ rẹ̀ láti gba **àsọtẹ́lẹ̀**. [fún Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** ni inudidun láti kede itusilẹ orisun kóòdù ti ìlànà iṣọkan **iṣakoso Ìṣòro** wa: **Ìfiránṣẹ́**! [a kọ pẹ̀lú **readyapi**]_"
+"_**Netflix** ni inudidun láti kede itusilẹ orisun kóòdù ti ìlànà iṣọkan **iṣakoso Ìṣòro** wa: **Ìfiránṣẹ́**! [a kọ pẹ̀lú **ReadyAPI**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Inú mi dùn púpọ̀ nípa **readyapi**. Ó mú inú ẹnì dùn púpọ̀!_"
+"_Inú mi dùn púpọ̀ nípa **ReadyAPI**. Ó mú inú ẹnì dùn púpọ̀!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,31 +97,31 @@ readyapi jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́b
 
 ---
 
-"_Ti o ba n wa láti kọ ọkan **ìlànà igbalode** fún kikọ àwọn REST API, ṣayẹwo **readyapi** [...] Ó yára, ó rọrùn láti lò, ó sì rọrùn láti kọ́[...]_"
+"_Ti o ba n wa láti kọ ọkan **ìlànà igbalode** fún kikọ àwọn REST API, ṣayẹwo **ReadyAPI** [...] Ó yára, ó rọrùn láti lò, ó sì rọrùn láti kọ́[...]_"
 
-"_A ti yipada si **readyapi** fún **APIs** wa [...] Mo lérò pé wà á fẹ́ràn rẹ̀ [...]_"
+"_A ti yipada si **ReadyAPI** fún **APIs** wa [...] Mo lérò pé wà á fẹ́ràn rẹ̀ [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Ti ẹnikẹni ba n wa láti kọ iṣelọpọ API pẹ̀lú Python, èmi yóò ṣe'dúró fún **readyapi**. Ó jẹ́ ohun tí **àgbékalẹ̀ rẹ̀ lẹ́wà**, **ó rọrùn láti lò** àti wipe ó ni **ìwọ̀n gíga**, o tí dí **bọtini paati** nínú alakọkọ API ìdàgbàsókè kikọ fún wa, àti pe o ni ipa lori adaṣiṣẹ àti àwọn iṣẹ gẹ́gẹ́ bíi Onímọ̀-ẹ̀rọ TAC tí órí Íńtánẹ́ẹ̀tì_"
+"_Ti ẹnikẹni ba n wa láti kọ iṣelọpọ API pẹ̀lú Python, èmi yóò ṣe'dúró fún **ReadyAPI**. Ó jẹ́ ohun tí **àgbékalẹ̀ rẹ̀ lẹ́wà**, **ó rọrùn láti lò** àti wipe ó ni **ìwọ̀n gíga**, o tí dí **bọtini paati** nínú alakọkọ API ìdàgbàsókè kikọ fún wa, àti pe o ni ipa lori adaṣiṣẹ àti àwọn iṣẹ gẹ́gẹ́ bíi Onímọ̀-ẹ̀rọ TAC tí órí Íńtánẹ́ẹ̀tì_"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, readyapi ti CLIs
+## **Cligenius**, ReadyAPI ti CLIs
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Ti o ba n kọ ohun èlò <abbr title="Command Line Interface">CLI</abbr> láti ṣeé lọ nínú ohun èlò lori ebute kọmputa dipo API, ṣayẹwo <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** jẹ́ àbúrò ìyá readyapi kékeré. Àti pé wọ́n kọ́ láti jẹ́ **readyapi ti CLIs**. ⌨️ 🚀
+**Cligenius** jẹ́ àbúrò ìyá ReadyAPI kékeré. Àti pé wọ́n kọ́ láti jẹ́ **ReadyAPI ti CLIs**. ⌨️ 🚀
 
 ## Èròjà
 
-readyapi dúró lórí àwọn èjìká tí àwọn òmíràn:
+ReadyAPI dúró lórí àwọn èjìká tí àwọn òmíràn:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> fún àwọn ẹ̀yà ayélujára.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> fún àwọn ẹ̀yà àkójọf'áyẹ̀wò.
@@ -158,9 +158,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -181,9 +181,9 @@ Tí kóòdù rẹ̀ bá ń lò `async` / `await`, lò `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -226,7 +226,7 @@ INFO:     Application startup complete.
 Àṣẹ `uvicorn main:app` ń tọ́ka sí:
 
 * `main`: fáìlì náà 'main.py' (Python "module").
-* `app` jẹ object( i.e. nǹkan) tí a ṣẹ̀dá nínú `main.py` pẹ̀lú ilà `app = readyapi()`.
+* `app` jẹ object( i.e. nǹkan) tí a ṣẹ̀dá nínú `main.py` pẹ̀lú ilà `app = ReadyAPI()`.
 * `--reload`: èyí yóò jẹ́ ki olupin tún bẹ̀rẹ̀ lẹ́hìn àwọn àyípadà kóòdù. Jọ̀wọ́, ṣe èyí fún ìdàgbàsókè kóòdù nìkan, má ṣe é ṣe lori àgbéjáde kóòdù tabi fún iṣelọpọ kóòdù.
 
 
@@ -274,10 +274,10 @@ Ní báyìí, ṣe ìkéde kókó èsì API nínú kóòdù rẹ nipa lílo àw�
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -377,7 +377,7 @@ item: Item
 
 ---
 
-Nisinsin yi, tí ó padà sí àpẹẹrẹ ti tẹ́lẹ̀, **readyapi** yóò:
+Nisinsin yi, tí ó padà sí àpẹẹrẹ ti tẹ́lẹ̀, **ReadyAPI** yóò:
 
 * Fọwọ́ sí i pé `item_id` wà nínú ọ̀nà ìbéèrè HTTP fún `GET` àti `PUT`.
 * Fọwọ́ sí i pé `item_id` jẹ́ irúfẹ́ àmì ìtọ́kasí `int` fún ìbéèrè HTTP `GET` àti `PUT`.
@@ -441,7 +441,7 @@ Fún àpẹẹrẹ pípé síi pẹ̀lú àwọn àbùdá mìíràn, wo <a href=
 
 ## Ìṣesí
 
-Àwọn àlá TechEmpower fi hàn pé **readyapi** ń ṣiṣẹ́ lábẹ́ Uvicorn gẹ́gẹ́ bí <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ọ̀kan lára àwọn ìlànà Python tí ó yára jùlọ tí ó wà</a>, ní ìsàlẹ̀ Starlette àti Uvicorn fúnra wọn (tí readyapi ń lò fúnra rẹ̀). (*)
+Àwọn àlá TechEmpower fi hàn pé **ReadyAPI** ń ṣiṣẹ́ lábẹ́ Uvicorn gẹ́gẹ́ bí <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ọ̀kan lára àwọn ìlànà Python tí ó yára jùlọ tí ó wà</a>, ní ìsàlẹ̀ Starlette àti Uvicorn fúnra wọn (tí ReadyAPI ń lò fúnra rẹ̀). (*)
 
 Láti ní òye síi nípa rẹ̀, wo abala àwọn <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Àlá</a>.
 
@@ -459,9 +459,9 @@ Láti ní òye síi nípa rẹ̀, wo abala àwọn <a href="https://readyapi.khu
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Nílò tí ó bá fẹ́ láti lọ iṣeto awoṣe aiyipada.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Nílò tí ó bá fẹ́ láti ṣe àtìlẹ́yìn fún <abbr title="tí ó se ìyípadà ọ̀rọ̀-ìyọ̀/òkun-ọ̀rọ̀ tí ó wà láti ìbéèrè HTTP sí inú àkójọf'áyẹ̀wò Python">"àyẹ̀wò"</abbr> fọọmu, pẹ̀lú `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Nílò fún àtìlẹ́yìn `SessionMiddleware`.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Nílò fún àtìlẹ́yìn Starlette's `SchemaGenerator` (ó ṣe ṣe kí ó má nílò rẹ̀ fún readyapi).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Nílò fún àtìlẹ́yìn Starlette's `SchemaGenerator` (ó ṣe ṣe kí ó má nílò rẹ̀ fún ReadyAPI).
 
-Èyí tí readyapi / Starlette ń lò:
+Èyí tí ReadyAPI / Starlette ń lò:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Fún olupin tí yóò sẹ́ àmúyẹ àti tí yóò ṣe ìpèsè fún iṣẹ́ rẹ tàbí ohun èlò rẹ.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Nílò tí ó bá fẹ́ láti lọ `ORJSONResponse`.

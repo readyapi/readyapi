@@ -59,11 +59,11 @@ fluffy = Cat(name="Mr Fluffy")
 
 そのため、Pythonのクラスもまた「呼び出し可能」です。
 
-そして、**readyapi** では、Pythonのクラスを依存関係として使用することができます。
+そして、**ReadyAPI** では、Pythonのクラスを依存関係として使用することができます。
 
-readyapiが実際にチェックしているのは、それが「呼び出し可能」（関数、クラス、その他なんでも）であり、パラメータが定義されているかどうかということです。
+ReadyAPIが実際にチェックしているのは、それが「呼び出し可能」（関数、クラス、その他なんでも）であり、パラメータが定義されているかどうかということです。
 
-**readyapi** の依存関係として「呼び出し可能なもの」を渡すと、その「呼び出し可能なもの」のパラメータを解析し、サブ依存関係も含めて、*path operation関数*のパラメータと同じように処理します。
+**ReadyAPI** の依存関係として「呼び出し可能なもの」を渡すと、その「呼び出し可能なもの」のパラメータを解析し、サブ依存関係も含めて、*path operation関数*のパラメータと同じように処理します。
 
 それは、パラメータが全くない呼び出し可能なものにも適用されます。パラメータのない*path operation関数*と同じように。
 
@@ -79,7 +79,7 @@ readyapiが実際にチェックしているのは、それが「呼び出し可
 
 {* ../../docs_src/dependencies/tutorial001.py hl[8] *}
 
-これらのパラメータは **readyapi** が依存関係を「解決」するために使用するものです。
+これらのパラメータは **ReadyAPI** が依存関係を「解決」するために使用するものです。
 
 どちらの場合も以下を持っています:
 
@@ -95,7 +95,7 @@ readyapiが実際にチェックしているのは、それが「呼び出し可
 
 {* ../../docs_src/dependencies/tutorial002.py hl[19] *}
 
-**readyapi** は`CommonQueryParams`クラスを呼び出します。これにより、そのクラスの「インスタンス」が作成され、インスタンスはパラメータ`commons`として関数に渡されます。
+**ReadyAPI** は`CommonQueryParams`クラスを呼び出します。これにより、そのクラスの「インスタンス」が作成され、インスタンスはパラメータ`commons`として関数に渡されます。
 
 ## 型注釈と`Depends`
 
@@ -111,9 +111,9 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 ... = Depends(CommonQueryParams)
 ```
 
-...は、**readyapi** が依存関係を知るために実際に使用するものです。
+...は、**ReadyAPI** が依存関係を知るために実際に使用するものです。
 
-そこからreadyapiが宣言されたパラメータを抽出し、それが実際にreadyapiが呼び出すものです。
+そこからReadyAPIが宣言されたパラメータを抽出し、それが実際にReadyAPIが呼び出すものです。
 
 ---
 
@@ -123,7 +123,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 commons: CommonQueryParams ...
 ```
 
-...は **readyapi** に対して特別な意味をもちません。readyapiはデータ変換や検証などには使用しません（それらのためには`= Depends(CommonQueryParams)`を使用しています）。
+...は **ReadyAPI** に対して特別な意味をもちません。ReadyAPIはデータ変換や検証などには使用しません（それらのためには`= Depends(CommonQueryParams)`を使用しています）。
 
 実際には以下のように書けばいいだけです:
 
@@ -147,7 +147,7 @@ commons = Depends(CommonQueryParams)
 commons: CommonQueryParams = Depends(CommonQueryParams)
 ```
 
-依存関係が、クラス自体のインスタンスを作成するために**readyapi**が「呼び出す」*特定の*クラスである場合、**readyapi** はこれらのケースのショートカットを提供しています。
+依存関係が、クラス自体のインスタンスを作成するために**ReadyAPI**が「呼び出す」*特定の*クラスである場合、**ReadyAPI** はこれらのケースのショートカットを提供しています。
 
 それらの具体的なケースについては以下のようにします:
 
@@ -169,12 +169,12 @@ commons: CommonQueryParams = Depends()
 
 {* ../../docs_src/dependencies/tutorial004.py hl[19] *}
 
-...そして **readyapi** は何をすべきか知っています。
+...そして **ReadyAPI** は何をすべきか知っています。
 
 /// tip | 豆知識
 
 役に立つというよりも、混乱するようであれば無視してください。それをする*必要*はありません。
 
-それは単なるショートカットです。なぜなら **readyapi** はコードの繰り返しを最小限に抑えることに気を使っているからです。
+それは単なるショートカットです。なぜなら **ReadyAPI** はコードの繰り返しを最小限に抑えることに気を使っているからです。
 
 ///

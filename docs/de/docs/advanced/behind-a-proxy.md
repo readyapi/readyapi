@@ -4,7 +4,7 @@ In manchen Situationen müssen Sie möglicherweise einen **Proxy**-Server wie Tr
 
 In diesen Fällen können Sie `root_path` verwenden, um Ihre Anwendung zu konfigurieren.
 
-Der `root_path` („Wurzelpfad“) ist ein Mechanismus, der von der ASGI-Spezifikation bereitgestellt wird (auf der readyapi via Starlette aufbaut).
+Der `root_path` („Wurzelpfad“) ist ein Mechanismus, der von der ASGI-Spezifikation bereitgestellt wird (auf der ReadyAPI via Starlette aufbaut).
 
 Der `root_path` wird verwendet, um diese speziellen Fälle zu handhaben.
 
@@ -12,7 +12,7 @@ Und er wird auch intern beim Mounten von Unteranwendungen verwendet.
 
 ## Proxy mit einem abgetrennten Pfadpräfix
 
-Ein Proxy mit einem abgetrennten Pfadpräfix bedeutet in diesem Fall, dass Sie einen Pfad unter `/app` in Ihrem Code deklarieren könnten, dann aber, eine Ebene darüber, den Proxy hinzufügen, der Ihre **readyapi**-Anwendung unter einem Pfad wie `/api/v1` platziert.
+Ein Proxy mit einem abgetrennten Pfadpräfix bedeutet in diesem Fall, dass Sie einen Pfad unter `/app` in Ihrem Code deklarieren könnten, dann aber, eine Ebene darüber, den Proxy hinzufügen, der Ihre **ReadyAPI**-Anwendung unter einem Pfad wie `/api/v1` platziert.
 
 In diesem Fall würde der ursprüngliche Pfad `/app` tatsächlich unter `/api/v1/app` bereitgestellt.
 
@@ -64,7 +64,7 @@ Die Benutzeroberfläche der Dokumentation würde benötigen, dass das OpenAPI-Sc
 }
 ```
 
-In diesem Beispiel könnte der „Proxy“ etwa **Traefik** sein. Und der Server wäre so etwas wie **Uvicorn**, auf dem Ihre readyapi-Anwendung ausgeführt wird.
+In diesem Beispiel könnte der „Proxy“ etwa **Traefik** sein. Und der Server wäre so etwas wie **Uvicorn**, auf dem Ihre ReadyAPI-Anwendung ausgeführt wird.
 
 ### Bereitstellung des `root_path`
 
@@ -119,13 +119,13 @@ wäre die Response etwa:
 }
 ```
 
-### Festlegen des `root_path` in der readyapi-Anwendung
+### Festlegen des `root_path` in der ReadyAPI-Anwendung
 
-Falls Sie keine Möglichkeit haben, eine Kommandozeilenoption wie `--root-path` oder ähnlich zu übergeben, können Sie als Alternative beim Erstellen Ihrer readyapi-Anwendung den Parameter `root_path` setzen:
+Falls Sie keine Möglichkeit haben, eine Kommandozeilenoption wie `--root-path` oder ähnlich zu übergeben, können Sie als Alternative beim Erstellen Ihrer ReadyAPI-Anwendung den Parameter `root_path` setzen:
 
 {* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
 
-Die Übergabe des `root_path` an `readyapi` wäre das Äquivalent zur Übergabe der `--root-path`-Kommandozeilenoption an Uvicorn oder Hypercorn.
+Die Übergabe des `root_path` an `ReadyAPI` wäre das Äquivalent zur Übergabe der `--root-path`-Kommandozeilenoption an Uvicorn oder Hypercorn.
 
 ### Über `root_path`
 
@@ -285,7 +285,7 @@ Sie können das unter <a href="http://127.0.0.1:9999/api/v1/docs" class="externa
 
 Genau so, wie wir es wollten. ✔️
 
-Dies liegt daran, dass readyapi diesen `root_path` verwendet, um den Default-`server` in OpenAPI mit der von `root_path` bereitgestellten URL zu erstellen.
+Dies liegt daran, dass ReadyAPI diesen `root_path` verwendet, um den Default-`server` in OpenAPI mit der von `root_path` bereitgestellten URL zu erstellen.
 
 ## Zusätzliche Server
 
@@ -295,11 +295,11 @@ Dies ist ein fortgeschrittener Anwendungsfall. Überspringen Sie das gerne.
 
 ///
 
-Standardmäßig erstellt **readyapi** einen `server` im OpenAPI-Schema mit der URL für den `root_path`.
+Standardmäßig erstellt **ReadyAPI** einen `server` im OpenAPI-Schema mit der URL für den `root_path`.
 
 Sie können aber auch andere alternative `server` bereitstellen, beispielsweise wenn Sie möchten, dass *dieselbe* Dokumentationsoberfläche mit einer Staging- und Produktionsumgebung interagiert.
 
-Wenn Sie eine benutzerdefinierte Liste von Servern (`servers`) übergeben und es einen `root_path` gibt (da Ihre API hinter einem Proxy läuft), fügt **readyapi** einen „Server“ mit diesem `root_path` am Anfang der Liste ein.
+Wenn Sie eine benutzerdefinierte Liste von Servern (`servers`) übergeben und es einen `root_path` gibt (da Ihre API hinter einem Proxy läuft), fügt **ReadyAPI** einen „Server“ mit diesem `root_path` am Anfang der Liste ein.
 
 Zum Beispiel:
 
@@ -348,7 +348,7 @@ Die Dokumentationsoberfläche interagiert mit dem von Ihnen ausgewählten Server
 
 ### Den automatischen Server von `root_path` deaktivieren
 
-Wenn Sie nicht möchten, dass **readyapi** einen automatischen Server inkludiert, welcher `root_path` verwendet, können Sie den Parameter `root_path_in_servers=False` verwenden:
+Wenn Sie nicht möchten, dass **ReadyAPI** einen automatischen Server inkludiert, welcher `root_path` verwendet, können Sie den Parameter `root_path_in_servers=False` verwenden:
 
 {* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
 
@@ -358,4 +358,4 @@ Dann wird er nicht in das OpenAPI-Schema aufgenommen.
 
 Wenn Sie gleichzeitig eine Unteranwendung mounten (wie beschrieben in [Unteranwendungen – Mounts](sub-applications.md){.internal-link target=_blank}) und einen Proxy mit `root_path` verwenden wollen, können Sie das normal tun, wie Sie es erwarten würden.
 
-readyapi verwendet intern den `root_path` auf intelligente Weise, sodass es einfach funktioniert. ✨
+ReadyAPI verwendet intern den `root_path` auf intelligente Weise, sodass es einfach funktioniert. ✨

@@ -1,8 +1,8 @@
 # レスポンスを直接返す
 
-**readyapi** の *path operation* では、通常は任意のデータを返すことができます: 例えば、 `dict`、`list`、Pydanticモデル、データベースモデルなどです。
+**ReadyAPI** の *path operation* では、通常は任意のデータを返すことができます: 例えば、 `dict`、`list`、Pydanticモデル、データベースモデルなどです。
 
-デフォルトでは、**readyapi** は [JSON互換エンコーダ](../tutorial/encoder.md){.internal-link target=_blank} で説明されている `jsonable_encoder` により、返す値を自動的にJSONに変換します。
+デフォルトでは、**ReadyAPI** は [JSON互換エンコーダ](../tutorial/encoder.md){.internal-link target=_blank} で説明されている `jsonable_encoder` により、返す値を自動的にJSONに変換します。
 
 このとき背後では、JSON互換なデータ (例えば`dict`) を、クライアントへ送信されるレスポンスとして利用される `JSONResponse` の中に含めます。
 
@@ -20,7 +20,7 @@
 
 ///
 
-`Response` を返した場合は、**readyapi** は直接それを返します。
+`Response` を返した場合は、**ReadyAPI** は直接それを返します。
 
 それは、Pydanticモデルのデータ変換や、コンテンツを任意の型に変換したりなどはしません。
 
@@ -28,7 +28,7 @@
 
 ## `jsonable_encoder` を `Response` の中で使う
 
-**readyapi** はあなたが返す `Response` に対して何も変更を加えないので、コンテンツが準備できていることを保証しなければなりません。
+**ReadyAPI** はあなたが返す `Response` に対して何も変更を加えないので、コンテンツが準備できていることを保証しなければなりません。
 
 例えば、Pydanticモデルを `JSONResponse` に含めるには、すべてのデータ型 (`datetime` や `UUID` など) をJSON互換の型に変換された `dict` に変換しなければなりません。
 
@@ -40,13 +40,13 @@
 
 また、`from starlette.responses import JSONResponse` も利用できます。
 
-**readyapi** は開発者の利便性のために `readyapi.responses` という `starlette.responses` と同じものを提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。
+**ReadyAPI** は開発者の利便性のために `readyapi.responses` という `starlette.responses` と同じものを提供しています。しかし、利用可能なレスポンスのほとんどはStarletteから直接提供されます。
 
 ///
 
 ## カスタム `Response` を返す
 
-上記の例では必要な部分を全て示していますが、あまり便利ではありません。`item` を直接返すことができるし、**readyapi** はそれを `dict` に変換して `JSONResponse`　に含めてくれるなど。すべて、デフォルトの動作です。
+上記の例では必要な部分を全て示していますが、あまり便利ではありません。`item` を直接返すことができるし、**ReadyAPI** はそれを `dict` に変換して `JSONResponse`　に含めてくれるなど。すべて、デフォルトの動作です。
 
 では、これを使ってカスタムレスポンスをどう返すか見てみましょう。
 

@@ -6,11 +6,11 @@ Y tienes un **frontend** en otro dominio o en un path diferente del mismo domini
 
 Y quieres tener una forma para que el frontend se autentique con el backend, usando un **username** y **password**.
 
-Podemos usar **OAuth2** para construir eso con **readyapi**.
+Podemos usar **OAuth2** para construir eso con **ReadyAPI**.
 
 Pero vamos a ahorrarte el tiempo de leer la larga especificación completa solo para encontrar esos pequeños fragmentos de información que necesitas.
 
-Usemos las herramientas proporcionadas por **readyapi** para manejar la seguridad.
+Usemos las herramientas proporcionadas por **ReadyAPI** para manejar la seguridad.
 
 ## Cómo se ve
 
@@ -26,7 +26,7 @@ Copia el ejemplo en un archivo `main.py`:
 
 /// info | Información
 
-El paquete <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a> se instala automáticamente con **readyapi** cuando ejecutas el comando `pip install "readyapi[standard]"`.
+El paquete <a href="https://github.com/Kludex/python-multipart" class="external-link" target="_blank">`python-multipart`</a> se instala automáticamente con **ReadyAPI** cuando ejecutas el comando `pip install "readyapi[standard]"`.
 
 Sin embargo, si usas el comando `pip install readyapi`, el paquete `python-multipart` no se incluye por defecto.
 
@@ -94,7 +94,7 @@ El "flujo" `password` es una de las formas ("flujos") definidas en OAuth2, para 
 
 OAuth2 fue diseñado para que el backend o la API pudieran ser independientes del servidor que autentica al usuario.
 
-Pero en este caso, la misma aplicación de **readyapi** manejará la API y la autenticación.
+Pero en este caso, la misma aplicación de **ReadyAPI** manejará la API y la autenticación.
 
 Así que, revisémoslo desde ese punto de vista simplificado:
 
@@ -112,9 +112,9 @@ Así que, revisémoslo desde ese punto de vista simplificado:
     * Así que, para autenticarse con nuestra API, envía un `header` `Authorization` con un valor de `Bearer ` más el token.
     * Si el token contiene `foobar`, el contenido del `header` `Authorization` sería: `Bearer foobar`.
 
-## `OAuth2PasswordBearer` de **readyapi**
+## `OAuth2PasswordBearer` de **ReadyAPI**
 
-**readyapi** proporciona varias herramientas, en diferentes niveles de abstracción, para implementar estas funcionalidades de seguridad.
+**ReadyAPI** proporciona varias herramientas, en diferentes niveles de abstracción, para implementar estas funcionalidades de seguridad.
 
 En este ejemplo vamos a usar **OAuth2**, con el flujo **Password**, usando un token **Bearer**. Hacemos eso utilizando la clase `OAuth2PasswordBearer`.
 
@@ -126,7 +126,7 @@ Pero es la mejor para nuestro caso de uso.
 
 Y podría ser la mejor para la mayoría de los casos de uso, a menos que seas un experto en OAuth2 y sepas exactamente por qué hay otra opción que se adapta mejor a tus necesidades.
 
-En ese caso, **readyapi** también te proporciona las herramientas para construirlo.
+En ese caso, **ReadyAPI** también te proporciona las herramientas para construirlo.
 
 ///
 
@@ -174,13 +174,13 @@ Ahora puedes pasar ese `oauth2_scheme` en una dependencia con `Depends`.
 
 Esta dependencia proporcionará un `str` que se asigna al parámetro `token` de la *path operation function*.
 
-**readyapi** sabrá que puede usar esta dependencia para definir un "security scheme" en el esquema OpenAPI (y en los docs automáticos del API).
+**ReadyAPI** sabrá que puede usar esta dependencia para definir un "security scheme" en el esquema OpenAPI (y en los docs automáticos del API).
 
 /// info | Detalles técnicos
 
-**readyapi** sabrá que puede usar la clase `OAuth2PasswordBearer` (declarada en una dependencia) para definir el esquema de seguridad en OpenAPI porque hereda de `readyapi.security.oauth2.OAuth2`, que a su vez hereda de `readyapi.security.base.SecurityBase`.
+**ReadyAPI** sabrá que puede usar la clase `OAuth2PasswordBearer` (declarada en una dependencia) para definir el esquema de seguridad en OpenAPI porque hereda de `readyapi.security.oauth2.OAuth2`, que a su vez hereda de `readyapi.security.base.SecurityBase`.
 
-Todas las utilidades de seguridad que se integran con OpenAPI (y los docs automáticos del API) heredan de `SecurityBase`, así es como **readyapi** puede saber cómo integrarlas en OpenAPI.
+Todas las utilidades de seguridad que se integran con OpenAPI (y los docs automáticos del API) heredan de `SecurityBase`, así es como **ReadyAPI** puede saber cómo integrarlas en OpenAPI.
 
 ///
 

@@ -38,7 +38,7 @@ This means that you can send only the data that you want to update, leaving the 
 
 And many teams use only `PUT`, even for partial updates.
 
-You are **free** to use them however you want, **readyapi** doesn't impose any restrictions.
+You are **free** to use them however you want, **ReadyAPI** doesn't impose any restrictions.
 
 But this guide shows you, more or less, how they are intended to be used.
 

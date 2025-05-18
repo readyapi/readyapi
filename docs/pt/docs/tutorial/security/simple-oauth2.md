@@ -4,7 +4,7 @@ Agora vamos construir a partir do capítulo anterior e adicionar as partes que f
 
 ## Pegue o `username` (nome de usuário) e `password` (senha)
 
-É utilizado o utils de segurança da **readyapi** para obter o `username` e a `password`.
+É utilizado o utils de segurança da **ReadyAPI** para obter o `username` e a `password`.
 
 OAuth2 especifica que ao usar o "password flow" (fluxo de senha), que estamos usando, o cliente/usuário deve enviar os campos `username` e `password` como dados do formulário.
 
@@ -46,7 +46,7 @@ Para OAuth2 são apenas strings.
 
 ## Código para conseguir o `username` e a `password`
 
-Agora vamos usar os utilitários fornecidos pelo **readyapi** para lidar com isso.
+Agora vamos usar os utilitários fornecidos pelo **ReadyAPI** para lidar com isso.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ Se você precisar aplicá-lo, use `OAuth2PasswordRequestFormStrict` em vez de `O
 
 /// info | Informação
 
-O `OAuth2PasswordRequestForm` não é uma classe especial para **readyapi** como é `OAuth2PasswordBearer`.
+O `OAuth2PasswordRequestForm` não é uma classe especial para **ReadyAPI** como é `OAuth2PasswordBearer`.
 
-`OAuth2PasswordBearer` faz com que **readyapi** saiba que é um esquema de segurança. Portanto, é adicionado dessa forma ao OpenAPI.
+`OAuth2PasswordBearer` faz com que **ReadyAPI** saiba que é um esquema de segurança. Portanto, é adicionado dessa forma ao OpenAPI.
 
 Mas `OAuth2PasswordRequestForm` é apenas uma dependência de classe que você mesmo poderia ter escrito ou poderia ter declarado os parâmetros do `Form` (formulário) diretamente.
 
-Mas como é um caso de uso comum, ele é fornecido diretamente pelo **readyapi**, apenas para facilitar.
+Mas como é um caso de uso comum, ele é fornecido diretamente pelo **ReadyAPI**, apenas para facilitar.
 
 ///
 
@@ -178,7 +178,7 @@ Isso é algo que você mesmo deve fazer em seu código e certifique-se de usar e
 
 É quase a única coisa que você deve se lembrar de fazer corretamente, para estar em conformidade com as especificações.
 
-De resto, **readyapi** cuida disso para você.
+De resto, **ReadyAPI** cuida disso para você.
 
 ///
 

@@ -4,17 +4,17 @@ Başlamak için bir proje oluşturucu kullanabilirsiniz, çünkü sizin için ö
 
 Bir proje oluşturucu, her zaman kendi ihtiyaçlarınıza göre güncellemeniz ve uyarlamanız gereken esnek bir kuruluma sahip olacaktır, ancak bu, projeniz için iyi bir başlangıç ​​noktası olabilir.
 
-## Full Stack readyapi PostgreSQL
+## Full Stack ReadyAPI PostgreSQL
 
 GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-postgresql</a>
 
-### Full Stack readyapi PostgreSQL - Özellikler
+### Full Stack ReadyAPI PostgreSQL - Özellikler
 
 * Full **Docker** entegrasyonu (Docker based).
 * Docker Swarm Mode ile deployment.
 * **Docker Compose** entegrasyonu ve lokal geliştirme için optimizasyon.
 * Uvicorn ve Gunicorn ile **Production ready** Python web server'ı.
-* Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**readyapi**</a> backend:
+* Python <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> backend:
     * **Hızlı**: **NodeJS** ve **Go** ile eşit, çok yüksek performans (Starlette ve Pydantic'e teşekkürler).
     * **Sezgisel**: Editor desteğı. <abbr title="auto-complete, IntelliSense gibi isimlerle de bilinir">Otomatik tamamlama</abbr>. Daha az debugging.
     * **Kolay**: Kolay öğrenip kolay kullanmak için tasarlandı. Daha az döküman okuma daha çok iş.
@@ -52,7 +52,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
 * Let's Encrypt **HTTPS** sertifikalarının otomatik oluşturulması dahil olmak üzere Traefik entegrasyonu.
 * GitLab **CI** (sürekli entegrasyon), backend ve frontend testi dahil.
 
-## Full Stack readyapi Couchbase
+## Full Stack ReadyAPI Couchbase
 
 GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-couchbase</a>
 
@@ -60,21 +60,21 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase" cl
 
 Sıfırdan bir projeye başlıyorsanız alternatiflerine bakın.
 
-Örneğin,  <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">Full Stack readyapi PostgreSQL</a> daha iyi bir alternatif olabilir, aktif olarak geliştiriliyor ve kullanılıyor. Ve yeni özellik ve ilerlemelere sahip.
+Örneğin,  <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">Full Stack ReadyAPI PostgreSQL</a> daha iyi bir alternatif olabilir, aktif olarak geliştiriliyor ve kullanılıyor. Ve yeni özellik ve ilerlemelere sahip.
 
 İsterseniz Couchbase tabanlı generator'ı kullanmakta özgürsünüz, hala iyi çalışıyor olmalı ve onunla oluşturulmuş bir projeniz varsa bu da sorun değil (ve muhtemelen zaten ihtiyaçlarınıza göre güncellediniz).
 
 Bununla ilgili daha fazla bilgiyi repo belgelerinde okuyabilirsiniz.
 
-## Full Stack readyapi MongoDB
+## Full Stack ReadyAPI MongoDB
 
 ... müsaitliğime ve diğer faktörlere bağlı olarak daha sonra gelebilir. 😅 🎉
 
-## Machine Learning modelleri, spaCy ve readyapi
+## Machine Learning modelleri, spaCy ve ReadyAPI
 
 GitHub: <a href="https://github.com/microsoft/cookiecutter-spacy-readyapi" class="external-link" target="_blank">https://github.com/microsoft/cookiecutter-spacy-readyapi</a>
 
-### Machine Learning modelleri, spaCy ve readyapi - Features
+### Machine Learning modelleri, spaCy ve ReadyAPI - Features
 
 * **spaCy** NER model entegrasyonu.
 * **Azure Cognitive Search** yerleşik istek biçimi.

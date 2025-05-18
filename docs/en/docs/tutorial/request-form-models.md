@@ -1,6 +1,6 @@
 # Form Models
 
-You can use **Pydantic models** to declare **form fields** in readyapi.
+You can use **Pydantic models** to declare **form fields** in ReadyAPI.
 
 /// info
 
@@ -16,7 +16,7 @@ $ pip install python-multipart
 
 /// note
 
-This is supported since readyapi version `0.113.0`. 🤓
+This is supported since ReadyAPI version `0.113.0`. 🤓
 
 ///
 
@@ -26,7 +26,7 @@ You just need to declare a **Pydantic model** with the fields you want to receiv
 
 {* ../../docs_src/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
 
-**readyapi** will **extract** the data for **each field** from the **form data** in the request and give you the Pydantic model you defined.
+**ReadyAPI** will **extract** the data for **each field** from the **form data** in the request and give you the Pydantic model you defined.
 
 ## Check the Docs
 
@@ -42,7 +42,7 @@ In some special use cases (probably not very common), you might want to **restri
 
 /// note
 
-This is supported since readyapi version `0.114.0`. 🤓
+This is supported since ReadyAPI version `0.114.0`. 🤓
 
 ///
 
@@ -75,4 +75,4 @@ They will receive an error response telling them that the field `extra` is not a
 
 ## Summary
 
-You can use Pydantic models to declare form fields in readyapi. 😎
+You can use Pydantic models to declare form fields in ReadyAPI. 😎

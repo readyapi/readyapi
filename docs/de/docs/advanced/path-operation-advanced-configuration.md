@@ -46,7 +46,7 @@ Um eine *Pfadoperation* aus dem generierten OpenAPI-Schema (und damit aus den au
 
 Sie können die verwendeten Zeilen aus dem Docstring einer *Pfadoperation-Funktion* einschränken, die für OpenAPI verwendet werden.
 
-Das Hinzufügen eines `\f` (ein maskiertes „Form Feed“-Zeichen) führt dazu, dass **readyapi** die für OpenAPI verwendete Ausgabe an dieser Stelle abschneidet.
+Das Hinzufügen eines `\f` (ein maskiertes „Form Feed“-Zeichen) führt dazu, dass **ReadyAPI** die für OpenAPI verwendete Ausgabe an dieser Stelle abschneidet.
 
 Sie wird nicht in der Dokumentation angezeigt, aber andere Tools (z. B. Sphinx) können den Rest verwenden.
 
@@ -64,7 +64,7 @@ Es gibt hier in der Dokumentation ein ganzes Kapitel darüber, Sie können es un
 
 ## OpenAPI-Extra
 
-Wenn Sie in Ihrer Anwendung eine *Pfadoperation* deklarieren, generiert **readyapi** automatisch die relevanten Metadaten dieser *Pfadoperation*, die in das OpenAPI-Schema aufgenommen werden sollen.
+Wenn Sie in Ihrer Anwendung eine *Pfadoperation* deklarieren, generiert **ReadyAPI** automatisch die relevanten Metadaten dieser *Pfadoperation*, die in das OpenAPI-Schema aufgenommen werden sollen.
 
 /// note | Technische Details
 
@@ -76,7 +76,7 @@ Es hat alle Informationen zur *Pfadoperation* und wird zur Erstellung der automa
 
 Es enthält `tags`, `parameters`, `requestBody`, `responses`, usw.
 
-Dieses *Pfadoperation*-spezifische OpenAPI-Schema wird normalerweise automatisch von **readyapi** generiert, Sie können es aber auch erweitern.
+Dieses *Pfadoperation*-spezifische OpenAPI-Schema wird normalerweise automatisch von **ReadyAPI** generiert, Sie können es aber auch erweitern.
 
 /// tip | Tipp
 
@@ -104,7 +104,7 @@ Und wenn Sie die resultierende OpenAPI sehen (unter `/openapi.json` in Ihrer API
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -135,7 +135,7 @@ Das Dictionary in `openapi_extra` wird mit dem automatisch generierten OpenAPI-S
 
 Sie können dem automatisch generierten Schema also zusätzliche Daten hinzufügen.
 
-Sie könnten sich beispielsweise dafür entscheiden, den Request mit Ihrem eigenen Code zu lesen und zu validieren, ohne die automatischen Funktionen von readyapi mit Pydantic zu verwenden, aber Sie könnten den Request trotzdem im OpenAPI-Schema definieren wollen.
+Sie könnten sich beispielsweise dafür entscheiden, den Request mit Ihrem eigenen Code zu lesen und zu validieren, ohne die automatischen Funktionen von ReadyAPI mit Pydantic zu verwenden, aber Sie könnten den Request trotzdem im OpenAPI-Schema definieren wollen.
 
 Das könnte man mit `openapi_extra` machen:
 
@@ -151,7 +151,7 @@ Mit demselben Trick könnten Sie ein Pydantic-Modell verwenden, um das JSON-Sche
 
 Und Sie könnten dies auch tun, wenn der Datentyp in der Anfrage nicht JSON ist.
 
-In der folgenden Anwendung verwenden wir beispielsweise weder die integrierte Funktionalität von readyapi zum Extrahieren des JSON-Schemas aus Pydantic-Modellen noch die automatische Validierung für JSON. Tatsächlich deklarieren wir den Request-Content-Type als YAML und nicht als JSON:
+In der folgenden Anwendung verwenden wir beispielsweise weder die integrierte Funktionalität von ReadyAPI zum Extrahieren des JSON-Schemas aus Pydantic-Modellen noch die automatische Validierung für JSON. Tatsächlich deklarieren wir den Request-Content-Type als YAML und nicht als JSON:
 
 //// tab | Pydantic v2
 
@@ -173,7 +173,7 @@ In Pydantic Version 1 hieß die Methode zum Abrufen des JSON-Schemas für ein Mo
 
 Obwohl wir nicht die standardmäßig integrierte Funktionalität verwenden, verwenden wir dennoch ein Pydantic-Modell, um das JSON-Schema für die Daten, die wir in YAML empfangen möchten, manuell zu generieren.
 
-Dann verwenden wir den Request direkt und extrahieren den Body als `bytes`. Das bedeutet, dass readyapi nicht einmal versucht, den Request-Payload als JSON zu parsen.
+Dann verwenden wir den Request direkt und extrahieren den Body als `bytes`. Das bedeutet, dass ReadyAPI nicht einmal versucht, den Request-Payload als JSON zu parsen.
 
 Und dann parsen wir in unserem Code diesen YAML-Inhalt direkt und verwenden dann wieder dasselbe Pydantic-Modell, um den YAML-Inhalt zu validieren:
 

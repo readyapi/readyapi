@@ -1,16 +1,16 @@
-# About readyapi versions
+# About ReadyAPI versions
 
-**readyapi** is already being used in production in many applications and systems. And the test coverage is kept at 100%. But its development is still moving quickly.
+**ReadyAPI** is already being used in production in many applications and systems. And the test coverage is kept at 100%. But its development is still moving quickly.
 
 New features are added frequently, bugs are fixed regularly, and the code is still continuously improving.
 
 That's why the current versions are still `0.x.x`, this reflects that each version could potentially have breaking changes. This follows the <a href="https://semver.org/" class="external-link" target="_blank">Semantic Versioning</a> conventions.
 
-You can create production applications with **readyapi** right now (and you have probably been doing it for some time), you just have to make sure that you use a version that works correctly with the rest of your code.
+You can create production applications with **ReadyAPI** right now (and you have probably been doing it for some time), you just have to make sure that you use a version that works correctly with the rest of your code.
 
 ## Pin your `readyapi` version
 
-The first thing you should do is to "pin" the version of **readyapi** you are using to the specific latest version that you know works correctly for your application.
+The first thing you should do is to "pin" the version of **ReadyAPI** you are using to the specific latest version that you know works correctly for your application.
 
 For example, let's say you are using version `0.112.0` in your app.
 
@@ -40,7 +40,7 @@ You can see the available versions (e.g. to check what is the current latest) in
 
 Following the Semantic Versioning conventions, any version below `1.0.0` could potentially add breaking changes.
 
-readyapi also follows the convention that any "PATCH" version change is for bug fixes and non-breaking changes.
+ReadyAPI also follows the convention that any "PATCH" version change is for bug fixes and non-breaking changes.
 
 /// tip
 
@@ -62,13 +62,13 @@ The "MINOR" is the number in the middle, for example, in `0.2.3`, the MINOR vers
 
 ///
 
-## Upgrading the readyapi versions
+## Upgrading the ReadyAPI versions
 
 You should add tests for your app.
 
-With **readyapi** it's very easy (thanks to Starlette), check the docs: [Testing](../tutorial/testing.md){.internal-link target=_blank}
+With **ReadyAPI** it's very easy (thanks to Starlette), check the docs: [Testing](../tutorial/testing.md){.internal-link target=_blank}
 
-After you have tests, then you can upgrade the **readyapi** version to a more recent one, and make sure that all your code is working correctly by running your tests.
+After you have tests, then you can upgrade the **ReadyAPI** version to a more recent one, and make sure that all your code is working correctly by running your tests.
 
 If everything is working, or after you make the necessary changes, and all your tests are passing, then you can pin your `readyapi` to that new recent version.
 
@@ -76,13 +76,13 @@ If everything is working, or after you make the necessary changes, and all your 
 
 You shouldn't pin the version of `starlette`.
 
-Different versions of **readyapi** will use a specific newer version of Starlette.
+Different versions of **ReadyAPI** will use a specific newer version of Starlette.
 
-So, you can just let **readyapi** use the correct Starlette version.
+So, you can just let **ReadyAPI** use the correct Starlette version.
 
 ## About Pydantic
 
-Pydantic includes the tests for **readyapi** with its own tests, so new versions of Pydantic (above `1.0.0`) are always compatible with readyapi.
+Pydantic includes the tests for **ReadyAPI** with its own tests, so new versions of Pydantic (above `1.0.0`) are always compatible with ReadyAPI.
 
 You can pin Pydantic to any version above `1.0.0` that works for you.
 

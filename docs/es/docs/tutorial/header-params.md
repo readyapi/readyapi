@@ -88,4 +88,4 @@ El response sería como:
 
 Declara headers con `Header`, usando el mismo patrón común que `Query`, `Path` y `Cookie`.
 
-Y no te preocupes por los guiones bajos en tus variables, **readyapi** se encargará de convertirlos.
+Y no te preocupes por los guiones bajos en tus variables, **ReadyAPI** se encargará de convertirlos.

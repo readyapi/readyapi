@@ -6,7 +6,7 @@ Esto te permitirá **reutilizar el modelo** en **múltiples lugares** y también
 
 /// note | Nota
 
-Esto es compatible desde la versión `0.115.0` de readyapi. 🤓
+Esto es compatible desde la versión `0.115.0` de ReadyAPI. 🤓
 
 ///
 
@@ -22,7 +22,7 @@ Declara los parámetros de **cookie** que necesites en un **modelo de Pydantic**
 
 {* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
-**readyapi** **extraerá** los datos para **cada campo** de las **cookies** recibidas en el request y te entregará el modelo de Pydantic que definiste.
+**ReadyAPI** **extraerá** los datos para **cada campo** de las **cookies** recibidas en el request y te entregará el modelo de Pydantic que definiste.
 
 ## Revisa la Documentación
 
@@ -73,4 +73,4 @@ Por ejemplo, si el cliente intenta enviar una cookie `santa_tracker` con un valo
 
 ## Resumen
 
-Puedes usar **modelos de Pydantic** para declarar <abbr title="Toma una última cookie antes de irte. 🍪">**cookies**</abbr> en **readyapi**. 😎
+Puedes usar **modelos de Pydantic** para declarar <abbr title="Toma una última cookie antes de irte. 🍪">**cookies**</abbr> en **ReadyAPI**. 😎

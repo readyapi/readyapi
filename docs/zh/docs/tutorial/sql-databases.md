@@ -1,14 +1,14 @@
 # SQL（关系型）数据库
 
-**readyapi** 并不要求您使用 SQL（关系型）数据库。您可以使用**任何**想用的数据库。
+**ReadyAPI** 并不要求您使用 SQL（关系型）数据库。您可以使用**任何**想用的数据库。
 
 这里，我们来看一个使用 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">SQLDev</a> 的示例。
 
-**SQLDev** 是基于 <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a> 和 Pydantic 构建的。它由 **readyapi** 的同一作者制作，旨在完美匹配需要使用 **SQL 数据库**的 readyapi 应用程序。
+**SQLDev** 是基于 <a href="https://www.sqlalchemy.org/" class="external-link" target="_blank">SQLAlchemy</a> 和 Pydantic 构建的。它由 **ReadyAPI** 的同一作者制作，旨在完美匹配需要使用 **SQL 数据库**的 ReadyAPI 应用程序。
 
 /// tip
 
-您可以使用任何其他您想要的 SQL 或 NoSQL 数据库（在某些情况下称为 <abbr title="对象关系映射器（Object Relational Mapper，ORM），一个术语，用来指代一种库，其中某些类对应于 SQL 数据表，这些类的实例则对应于表中的行。">“ORM”</abbr>），readyapi 不会强迫您使用任何东西。😎
+您可以使用任何其他您想要的 SQL 或 NoSQL 数据库（在某些情况下称为 <abbr title="对象关系映射器（Object Relational Mapper，ORM），一个术语，用来指代一种库，其中某些类对应于 SQL 数据表，这些类的实例则对应于表中的行。">“ORM”</abbr>），ReadyAPI 不会强迫您使用任何东西。😎
 
 ///
 
@@ -26,7 +26,7 @@
 
 /// tip
 
-有一个使用 **readyapi** 和 **PostgreSQL** 的官方的项目生成器，其中包括了前端和更多工具： <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
+有一个使用 **ReadyAPI** 和 **PostgreSQL** 的官方的项目生成器，其中包括了前端和更多工具： <a href="https://github.com/readyapi/full-stack-readyapi-template" class="external-link" target="_blank">https://github.com/readyapi/full-stack-readyapi-template</a>
 
 ///
 
@@ -79,7 +79,7 @@ SQLDev 的引擎 `engine`（实际上它是一个 SQLAlchemy `engine` ）是用�
 
 {* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
-使用 `check_same_thread=False` 可以让 readyapi 在不同线程中使用同一个 SQLite 数据库。这很有必要，因为**单个请求**可能会使用**多个线程**（例如在依赖项中）。
+使用 `check_same_thread=False` 可以让 ReadyAPI 在不同线程中使用同一个 SQLite 数据库。这很有必要，因为**单个请求**可能会使用**多个线程**（例如在依赖项中）。
 
 不用担心，我们会按照代码结构确保**每个请求使用一个单独的 SQLDev *会话***，这实际上就是 `check_same_thread` 想要实现的。
 
@@ -93,7 +93,7 @@ SQLDev 的引擎 `engine`（实际上它是一个 SQLAlchemy `engine` ）是用�
 
 **`Session`** 会存储**内存中的对象**并跟踪数据中所需更改的内容，然后它**使用 `engine`** 与数据库进行通信。
 
-我们会使用 `yield` 创建一个 readyapi **依赖项**，为每个请求提供一个新的 `Session` 。这确保我们每个请求使用一个单独的会话。🤓
+我们会使用 `yield` 创建一个 ReadyAPI **依赖项**，为每个请求提供一个新的 `Session` 。这确保我们每个请求使用一个单独的会话。🤓
 
 然后我们创建一个 `Annotated` 的依赖项 `SessionDep` 来简化其他也会用到此依赖的代码。
 
@@ -161,7 +161,7 @@ $ readyapi dev main.py
 
 </div>
 
-然后在 `/docs` UI 中，您能够看到 **readyapi** 会用这些**模型**来**记录** API，并且还会用它们来**序列化**和**验证**数据。
+然后在 `/docs` UI 中，您能够看到 **ReadyAPI** 会用这些**模型**来**记录** API，并且还会用它们来**序列化**和**验证**数据。
 
 <div class="screenshot">
 <img src="/img/tutorial/sql-databases/image01.png">
@@ -289,7 +289,7 @@ $ readyapi dev main.py
 
 这个新的*表模型* `Hero` 会包含客户端发送的字段，以及一个由数据库生成的 `id` 。
 
-然后我们将与函数中相同的*表模型* `Hero` 原样返回。但是由于我们使用 `HeroPublic` *数据模型*声明了 `response_model` ，**readyapi** 会使用 `HeroPublic` 来验证和序列化数据。
+然后我们将与函数中相同的*表模型* `Hero` 原样返回。但是由于我们使用 `HeroPublic` *数据模型*声明了 `response_model` ，**ReadyAPI** 会使用 `HeroPublic` 来验证和序列化数据。
 
 {* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
@@ -299,7 +299,7 @@ $ readyapi dev main.py
 
 如果我们声明了 `-> HeroPublic` ，您的编辑器和代码检查工具会抱怨（但也确实理所应当）您返回了一个 `Hero` 而不是一个 `HeroPublic` 。
 
-通过 `response_model` 的声明，我们让 **readyapi** 按照它自己的方式处理，而不会干扰类型注解以及编辑器和其他工具提供的帮助。
+通过 `response_model` 的声明，我们让 **ReadyAPI** 按照它自己的方式处理，而不会干扰类型注解以及编辑器和其他工具提供的帮助。
 
 ///
 
@@ -357,4 +357,4 @@ $ readyapi dev main.py
 
 您可以使用 <a href="https://sqldev.khulnasoft.com/" class="external-link" target="_blank">**SQLDev**</a> 与 SQL 数据库进行交互，并通过*数据模型*和*表模型*简化代码。
 
-您可以在 SQLDev 的文档中学习到更多内容，其中有一个更详细的关于<a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">如何将 SQLDev 与 readyapi 一起使用的教程</a>。🚀
+您可以在 SQLDev 的文档中学习到更多内容，其中有一个更详细的关于<a href="https://sqldev.khulnasoft.com/tutorial/readyapi/" class="external-link" target="_blank">如何将 SQLDev 与 ReadyAPI 一起使用的教程</a>。🚀

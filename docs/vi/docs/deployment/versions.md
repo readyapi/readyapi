@@ -1,16 +1,16 @@
-# Về các phiên bản của readyapi
+# Về các phiên bản của ReadyAPI
 
-**readyapi** đã được sử dụng ở quy mô thực tế (production) trong nhiều ứng dụng và hệ thống. Và phạm vi kiểm thử được giữ ở mức 100%. Nhưng việc phát triển của nó vẫn đang diễn ra nhanh chóng.
+**ReadyAPI** đã được sử dụng ở quy mô thực tế (production) trong nhiều ứng dụng và hệ thống. Và phạm vi kiểm thử được giữ ở mức 100%. Nhưng việc phát triển của nó vẫn đang diễn ra nhanh chóng.
 
 Các tính năng mới được bổ sung thường xuyên, lỗi được sửa định kỳ, và mã nguồn vẫn đang được cải thiện liên tục
 
 Đó là lí do các phiên bản hiện tại vẫn còn là 0.x.x, điều này phản ánh rằng mỗi phiên bản có thể có các thay đổi gây mất tương thích. Điều này tuân theo các quy ước về <a href="https://semver.org/" class="external-link" target="blank">Semantic Versioning</a>.
 
-Bạn có thể tạo ra sản phẩm thực tế với **readyapi** ngay bây giờ (và bạn có thể đã làm điều này trong một thời gian dài), bạn chỉ cần đảm bảo rằng bạn sử dụng một phiên bản hoạt động đúng với các đoạn mã còn lại của bạn.
+Bạn có thể tạo ra sản phẩm thực tế với **ReadyAPI** ngay bây giờ (và bạn có thể đã làm điều này trong một thời gian dài), bạn chỉ cần đảm bảo rằng bạn sử dụng một phiên bản hoạt động đúng với các đoạn mã còn lại của bạn.
 
 ## Cố định phiên bản của `readyapi`
 
-Điều đầu tiên bạn nên làm là "cố định" phiên bản của **readyapi** bạn đang sử dụng để phiên bản mới nhất mà bạn biết hoạt động đúng với ứng dụng của bạn.
+Điều đầu tiên bạn nên làm là "cố định" phiên bản của **ReadyAPI** bạn đang sử dụng để phiên bản mới nhất mà bạn biết hoạt động đúng với ứng dụng của bạn.
 
 Ví dụ, giả sử bạn đang sử dụng phiên bản `0.112.0` trong ứng dụng của bạn.
 
@@ -40,7 +40,7 @@ Bạn có thể xem các phiên bản có sẵn (ví dụ để kiểm tra phiê
 
 Theo quy ước về Semantic Versioning, bất kỳ phiên bản nào bên dưới `1.0.0` có thể thêm các thay đổi gây mất tương thích.
 
-**readyapi** cũng theo quy ước rằng bất kỳ thay đổi phiên bản "PATCH" nào là cho các lỗi và các thay đổi không gây mất tương thích.
+**ReadyAPI** cũng theo quy ước rằng bất kỳ thay đổi phiên bản "PATCH" nào là cho các lỗi và các thay đổi không gây mất tương thích.
 
 /// tip
 
@@ -62,13 +62,13 @@ Các thay đổi gây mất tương thích và các tính năng mới được t
 
 ///
 
-## Nâng cấp các phiên bản của readyapi
+## Nâng cấp các phiên bản của ReadyAPI
 
 Bạn nên thêm các bài kiểm tra (tests) cho ứng dụng của bạn.
 
-Với **readyapi** điều này rất dễ dàng (nhờ vào Starlette), kiểm tra tài liệu: [Testing](../tutorial/testing.md){.internal-link target=_blank}
+Với **ReadyAPI** điều này rất dễ dàng (nhờ vào Starlette), kiểm tra tài liệu: [Testing](../tutorial/testing.md){.internal-link target=_blank}
 
-Sau khi bạn có các bài kiểm tra, bạn có thể nâng cấp phiên bản **readyapi** lên một phiên bản mới hơn, và đảm bảo rằng tất cả mã của bạn hoạt động đúng bằng cách chạy các bài kiểm tra của bạn.
+Sau khi bạn có các bài kiểm tra, bạn có thể nâng cấp phiên bản **ReadyAPI** lên một phiên bản mới hơn, và đảm bảo rằng tất cả mã của bạn hoạt động đúng bằng cách chạy các bài kiểm tra của bạn.
 
 Nếu mọi thứ đang hoạt động, hoặc sau khi bạn thực hiện các thay đổi cần thiết, và tất cả các bài kiểm tra của bạn đều đi qua, thì bạn có thể cố định phiên bản của `readyapi` đến phiên bản mới hơn.
 
@@ -76,13 +76,13 @@ Nếu mọi thứ đang hoạt động, hoặc sau khi bạn thực hiện các 
 
 Bạn không nên cố định phiên bản của `starlette`.
 
-Các phiên bản khác nhau của **readyapi** sẽ sử dụng một phiên bản Starlette mới hơn.
+Các phiên bản khác nhau của **ReadyAPI** sẽ sử dụng một phiên bản Starlette mới hơn.
 
-Vì vậy, bạn có thể để **readyapi** sử dụng phiên bản Starlette phù hợp.
+Vì vậy, bạn có thể để **ReadyAPI** sử dụng phiên bản Starlette phù hợp.
 
 ## Về Pydantic
 
-Pydantic bao gồm các bài kiểm tra của riêng nó cho **readyapi**, vì vậy các phiên bản mới hơn của Pydantic (trên `1.0.0`) luôn tương thích với **readyapi**.
+Pydantic bao gồm các bài kiểm tra của riêng nó cho **ReadyAPI**, vì vậy các phiên bản mới hơn của Pydantic (trên `1.0.0`) luôn tương thích với **ReadyAPI**.
 
 Bạn có thể cố định Pydantic đến bất kỳ phiên bản nào trên `1.0.0` mà bạn muốn.
 

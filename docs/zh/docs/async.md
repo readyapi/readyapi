@@ -48,9 +48,9 @@ def results():
 
 ---
 
-**注意**：你可以根据需要在路径操作函数中混合使用 `def` 和 `async def`，并使用最适合你的方式去定义每个函数。readyapi 将为他们做正确的事情。
+**注意**：你可以根据需要在路径操作函数中混合使用 `def` 和 `async def`，并使用最适合你的方式去定义每个函数。ReadyAPI 将为他们做正确的事情。
 
-无论如何，在上述任何情况下，readyapi 仍将异步工作，速度也非常快。
+无论如何，在上述任何情况下，ReadyAPI 仍将异步工作，速度也非常快。
 
 但是，通过遵循上述步骤，它将能够进行一些性能优化。
 
@@ -249,7 +249,7 @@ Python 的现代版本支持通过一种叫**"协程"**——使用 `async` 和 
 
 这种异步机制正是 NodeJS 受到欢迎的原因（尽管 NodeJS 不是并行的），以及 Go 作为编程语言的优势所在。
 
-这与 **readyapi** 的性能水平相同。
+这与 **ReadyAPI** 的性能水平相同。
 
 你可以同时拥有并行性和异步性，你可以获得比大多数经过测试的 NodeJS 框架更高的性能，并且与 Go 不相上下， Go 是一种更接近于 C 的编译语言（<a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">全部归功于 Starlette</a>）。
 
@@ -292,11 +292,11 @@ CPU 密集型操作的常见示例是需要复杂的数学处理。
 
 ### 并发 + 并行: Web + 机器学习
 
-使用 **readyapi**，你可以利用 Web 开发中常见的并发机制的优势（NodeJS 的主要吸引力）。
+使用 **ReadyAPI**，你可以利用 Web 开发中常见的并发机制的优势（NodeJS 的主要吸引力）。
 
 并且，你也可以利用并行和多进程（让多个进程并行运行）的优点来处理与机器学习系统中类似的 **CPU 密集型** 工作。
 
-这一点，再加上 Python 是**数据科学**、机器学习（尤其是深度学习）的主要语言这一简单事实，使得 **readyapi** 与数据科学/机器学习 Web API 和应用程序（以及其他许多应用程序）非常匹配。
+这一点，再加上 Python 是**数据科学**、机器学习（尤其是深度学习）的主要语言这一简单事实，使得 **ReadyAPI** 与数据科学/机器学习 Web API 和应用程序（以及其他许多应用程序）非常匹配。
 
 了解如何在生产环境中实现这种并行性，可查看此文 [Deployment](deployment/index.md){.internal-link target=_blank}。
 
@@ -357,17 +357,17 @@ async def read_burgers():
 
 那么，这关于先有鸡还是先有蛋的问题，如何调用第一个 `async` 函数？
 
-如果你使用 **readyapi**，你不必担心这一点，因为"第一个"函数将是你的路径操作函数，readyapi 将知道如何做正确的事情。
+如果你使用 **ReadyAPI**，你不必担心这一点，因为"第一个"函数将是你的路径操作函数，ReadyAPI 将知道如何做正确的事情。
 
-但如果你想在没有 readyapi 的情况下使用 `async` / `await`，则可以这样做。
+但如果你想在没有 ReadyAPI 的情况下使用 `async` / `await`，则可以这样做。
 
 ### 编写自己的异步代码
 
-Starlette （和 **readyapi**） 是基于 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 实现的，这使得它们可以兼容 Python 的标准库 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 和 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>。
+Starlette （和 **ReadyAPI**） 是基于 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 实现的，这使得它们可以兼容 Python 的标准库 <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a> 和 <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>。
 
 特别是，你可以直接使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 来处理高级的并发用例，这些用例需要在自己的代码中使用更高级的模式。
 
-即使你没有使用 **readyapi**，你也可以使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 编写自己的异步程序，使其拥有较高的兼容性并获得一些好处（例如， 结构化并发）。
+即使你没有使用 **ReadyAPI**，你也可以使用 <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> 编写自己的异步程序，使其拥有较高的兼容性并获得一些好处（例如， 结构化并发）。
 
 我（指原作者 —— 译者注）基于 AnyIO 新建了一个库，作为一个轻量级的封装层，用来优化类型注解，同时提供了更好的**自动补全**、**内联错误提示**等功能。这个库还附带了一个友好的入门指南和教程，能帮助你**理解**并编写**自己的异步代码**：<a href="https://asyncer.khulnasoft.com/" class="external-link" target="_blank">Asyncer</a>。如果你有**结合使用异步代码和常规**（阻塞/同步）代码的需求，这个库会特别有用。
 
@@ -399,7 +399,7 @@ Starlette （和 **readyapi**） 是基于 <a href="https://anyio.readthedocs.io
 
 现在应该能明白其含义了。✨
 
-所有这些使得 readyapi（通过 Starlette）如此强大，也是它拥有如此令人印象深刻的性能的原因。
+所有这些使得 ReadyAPI（通过 Starlette）如此强大，也是它拥有如此令人印象深刻的性能的原因。
 
 ## 非常技术性的细节
 
@@ -407,9 +407,9 @@ Starlette （和 **readyapi**） 是基于 <a href="https://anyio.readthedocs.io
 
 你可以跳过这里。
 
-这些都是 readyapi 如何在内部工作的技术细节。
+这些都是 ReadyAPI 如何在内部工作的技术细节。
 
-如果你有相当多的技术知识（协程、线程、阻塞等），并且对 readyapi 如何处理 `async def` 与常规 `def` 感到好奇，请继续。
+如果你有相当多的技术知识（协程、线程、阻塞等），并且对 ReadyAPI 如何处理 `async def` 与常规 `def` 感到好奇，请继续。
 
 ///
 
@@ -417,9 +417,9 @@ Starlette （和 **readyapi**） 是基于 <a href="https://anyio.readthedocs.io
 
 当你使用 `def` 而不是 `async def` 来声明一个*路径操作函数*时，它运行在外部的线程池中并等待其结果，而不是直接调用（因为它会阻塞服务器）。
 
-如果你使用过另一个不以上述方式工作的异步框架，并且你习惯于用普通的 `def` 定义普通的仅计算路径操作函数，以获得微小的性能增益（大约100纳秒），请注意，在 readyapi 中，效果将完全相反。在这些情况下，最好使用 `async def`，除非路径操作函数内使用执行阻塞 <abbr title="输入/输出：磁盘读写，网络通讯.">I/O</abbr> 的代码。
+如果你使用过另一个不以上述方式工作的异步框架，并且你习惯于用普通的 `def` 定义普通的仅计算路径操作函数，以获得微小的性能增益（大约100纳秒），请注意，在 ReadyAPI 中，效果将完全相反。在这些情况下，最好使用 `async def`，除非路径操作函数内使用执行阻塞 <abbr title="输入/输出：磁盘读写，网络通讯.">I/O</abbr> 的代码。
 
-在这两种情况下，与你之前的框架相比，**readyapi** 可能[仍然很快](index.md#_11){.internal-link target=_blank}。
+在这两种情况下，与你之前的框架相比，**ReadyAPI** 可能[仍然很快](index.md#_11){.internal-link target=_blank}。
 
 ### 依赖
 
@@ -431,9 +431,9 @@ Starlette （和 **readyapi**） 是基于 <a href="https://anyio.readthedocs.io
 
 ### 其他函数
 
-你可直接调用通过 `def` 或 `async def` 创建的任何其他函数，readyapi 不会影响你调用它们的方式。
+你可直接调用通过 `def` 或 `async def` 创建的任何其他函数，ReadyAPI 不会影响你调用它们的方式。
 
-这与 readyapi 为你调用*路径操作函数*和依赖项的逻辑相反。
+这与 ReadyAPI 为你调用*路径操作函数*和依赖项的逻辑相反。
 
 如果你的函数是通过 `def` 声明的，它将被直接调用（在代码中编写的地方），而不会在线程池中，如果这个函数通过 `async def` 声明，当在代码中调用时，你就应该使用 `await` 等待函数的结果。
 

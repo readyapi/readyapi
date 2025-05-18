@@ -1,16 +1,16 @@
 # Query Parameters and String Validations
 
-**readyapi** allows you to declare additional information and validation for your parameters.
+**ReadyAPI** allows you to declare additional information and validation for your parameters.
 
 Let's take this application as example:
 
 {* ../../docs_src/query_params_str_validations/tutorial001_py310.py hl[7] *}
 
-The query parameter `q` is of type `str | None`, that means that it's of type `str` but could also be `None`, and indeed, the default value is `None`, so readyapi will know it's not required.
+The query parameter `q` is of type `str | None`, that means that it's of type `str` but could also be `None`, and indeed, the default value is `None`, so ReadyAPI will know it's not required.
 
 /// note
 
-readyapi will know that the value of `q` is not required because of the default value `= None`.
+ReadyAPI will know that the value of `q` is not required because of the default value `= None`.
 
 Having `str | None` will allow your editor to give you better support and detect errors.
 
@@ -31,11 +31,11 @@ To achieve that, first import:
 
 /// info
 
-readyapi added support for `Annotated` (and started recommending it) in version 0.95.0.
+ReadyAPI added support for `Annotated` (and started recommending it) in version 0.95.0.
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you [Upgrade the readyapi version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the ReadyAPI version](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
 
 ///
 
@@ -43,7 +43,7 @@ Make sure you [Upgrade the readyapi version](../deployment/versions.md#upgrading
 
 Remember I told you before that `Annotated` can be used to add metadata to your parameters in the [Python Types Intro](../python-types.md#type-hints-with-metadata-annotations){.internal-link target=_blank}?
 
-Now it's the time to use it with readyapi. 🚀
+Now it's the time to use it with ReadyAPI. 🚀
 
 We had this type annotation:
 
@@ -93,7 +93,7 @@ Now that we have this `Annotated` where we can put more information (in this cas
 
 Notice that the default value is still `None`, so the parameter is still optional.
 
-But now, having `Query(max_length=50)` inside of `Annotated`, we are telling readyapi that we want it to have **additional validation** for this value, we want it to have maximum 50 characters. 😎
+But now, having `Query(max_length=50)` inside of `Annotated`, we are telling ReadyAPI that we want it to have **additional validation** for this value, we want it to have maximum 50 characters. 😎
 
 /// tip
 
@@ -101,7 +101,7 @@ Here we are using `Query()` because this is a **query parameter**. Later we will
 
 ///
 
-readyapi will now:
+ReadyAPI will now:
 
 * **Validate** the data making sure that the max length is 50 characters
 * Show a **clear error** for the client when the data is not valid
@@ -109,7 +109,7 @@ readyapi will now:
 
 ## Alternative (old): `Query` as the default value
 
-Previous versions of readyapi (before <abbr title="before 2023-03">0.95.0</abbr>) required you to use `Query` as the default value of your parameter, instead of putting it in `Annotated`, there's a high chance that you will see code using it around, so I'll explain it to you.
+Previous versions of ReadyAPI (before <abbr title="before 2023-03">0.95.0</abbr>) required you to use `Query` as the default value of your parameter, instead of putting it in `Annotated`, there's a high chance that you will see code using it around, so I'll explain it to you.
 
 /// tip
 
@@ -121,7 +121,7 @@ This is how you would use `Query()` as the default value of your function parame
 
 {* ../../docs_src/query_params_str_validations/tutorial002_py310.py hl[7] *}
 
-As in this case (without using `Annotated`) we have to replace the default value `None` in the function with `Query()`, we now need to set the default value with the parameter `Query(default=None)`, it serves the same purpose of defining that default value (at least for readyapi).
+As in this case (without using `Annotated`) we have to replace the default value `None` in the function with `Query()`, we now need to set the default value with the parameter `Query(default=None)`, it serves the same purpose of defining that default value (at least for ReadyAPI).
 
 So:
 
@@ -178,9 +178,9 @@ q: str = Query(default="rick")
 
 The **default** value of the **function parameter** is the **actual default** value, that's more intuitive with Python in general. 😌
 
-You could **call** that same function in **other places** without readyapi, and it would **work as expected**. If there's a **required** parameter (without a default value), your **editor** will let you know with an error, **Python** will also complain if you run it without passing the required parameter.
+You could **call** that same function in **other places** without ReadyAPI, and it would **work as expected**. If there's a **required** parameter (without a default value), your **editor** will let you know with an error, **Python** will also complain if you run it without passing the required parameter.
 
-When you don't use `Annotated` and instead use the **(old) default value style**, if you call that function without readyapi in **other places**, you have to **remember** to pass the arguments to the function for it to work correctly, otherwise the values will be different from what you expect (e.g. `QueryInfo` or something similar instead of `str`). And your editor won't complain, and Python won't complain running that function, only when the operations inside error out.
+When you don't use `Annotated` and instead use the **(old) default value style**, if you call that function without ReadyAPI in **other places**, you have to **remember** to pass the arguments to the function for it to work correctly, otherwise the values will be different from what you expect (e.g. `QueryInfo` or something similar instead of `str`). And your editor won't complain, and Python won't complain running that function, only when the operations inside error out.
 
 Because `Annotated` can have more than one metadata annotation, you could now even use the same function with other tools, like <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">Cligenius</a>. 🚀
 
@@ -204,11 +204,11 @@ This specific regular expression pattern checks that the received parameter valu
 
 If you feel lost with all these **"regular expression"** ideas, don't worry. They are a hard topic for many people. You can still do a lot of stuff without needing regular expressions yet.
 
-Now you know that whenever you need them you can use them in **readyapi**.
+Now you know that whenever you need them you can use them in **ReadyAPI**.
 
 ### Pydantic v1 `regex` instead of `pattern`
 
-Before Pydantic version 2 and before readyapi 0.100.0, the parameter was called `regex` instead of `pattern`, but it's now deprecated.
+Before Pydantic version 2 and before ReadyAPI 0.100.0, the parameter was called `regex` instead of `pattern`, but it's now deprecated.
 
 You could still see some code using it:
 
@@ -338,7 +338,7 @@ You can also use `list` directly instead of `list[str]`:
 
 /// note
 
-Keep in mind that in this case, readyapi won't check the contents of the list.
+Keep in mind that in this case, ReadyAPI won't check the contents of the list.
 
 For example, `list[int]` would check (and document) that the contents of the list are integers. But `list` alone wouldn't.
 
@@ -432,7 +432,7 @@ This is available with Pydantic version 2 or above. 😎
 
 /// tip
 
-If you need to do any type of validation that requires communicating with any **external component**, like a database or another API, you should instead use **readyapi Dependencies**, you will learn about them later.
+If you need to do any type of validation that requires communicating with any **external component**, like a database or another API, you should instead use **ReadyAPI Dependencies**, you will learn about them later.
 
 These custom validators are for things that can be checked with **only** the **same data** provided in the request.
 

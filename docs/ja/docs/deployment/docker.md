@@ -1,6 +1,6 @@
-# コンテナ内のreadyapi - Docker
+# コンテナ内のReadyAPI - Docker
 
-readyapiアプリケーションをデプロイする場合、一般的なアプローチは**Linuxコンテナ・イメージ**をビルドすることです。
+ReadyAPIアプリケーションをデプロイする場合、一般的なアプローチは**Linuxコンテナ・イメージ**をビルドすることです。
 
 基本的には <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>を用いて行われます。生成されたコンテナ・イメージは、いくつかの方法のいずれかでデプロイできます。
 
@@ -100,11 +100,11 @@ Docker Hubは 多くのツールや環境、データベース、アプリケー
 
 しかし、**少なくとも1つの実行中のプロセス**がなければ、実行中のコンテナを持つことはできないです。メイン・プロセスが停止すれば、コンテナも停止します。
 
-## Build a Docker Image for readyapi
+## Build a Docker Image for ReadyAPI
 
 ということで、何か作りましょう！🚀
 
-readyapi用の**Dockerイメージ**を、**公式Python**イメージに基づいて**ゼロから**ビルドする方法をお見せします。
+ReadyAPI用の**Dockerイメージ**を、**公式Python**イメージに基づいて**ゼロから**ビルドする方法をお見せします。
 
 これは**ほとんどの場合**にやりたいことです。例えば：
 
@@ -120,7 +120,7 @@ readyapi用の**Dockerイメージ**を、**公式Python**イメージに基づ�
 
 最も一般的な方法は、`requirements.txt` ファイルにパッケージ名とそのバージョンを 1 行ずつ書くことです。
 
-もちろん、[readyapi バージョンについて](versions.md){.internal-link target=_blank}で読んだのと同じアイデアを使用して、バージョンの範囲を設定します。
+もちろん、[ReadyAPI バージョンについて](versions.md){.internal-link target=_blank}で読んだのと同じアイデアを使用して、バージョンの範囲を設定します。
 
 例えば、`requirements.txt` は次のようになります：
 
@@ -150,7 +150,7 @@ Poetryを使った例は、後述するセクションでご紹介します。�
 
 ///
 
-### **readyapi**コードを作成する
+### **ReadyAPI**コードを作成する
 
 * `app` ディレクトリを作成し、その中に入ります
 * 空のファイル `__init__.py` を作成します
@@ -159,9 +159,9 @@ Poetryを使った例は、後述するセクションでご紹介します。�
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -305,7 +305,7 @@ COPY ./app /code/app
 すべてのファイルが揃ったので、コンテナ・イメージをビルドしましょう。
 
 * プロジェクトディレクトリに移動します（`Dockerfile`がある場所で、`app`ディレクトリがあります）
-* readyapi イメージをビルドします：
+* ReadyAPI イメージをビルドします：
 
 <div class="termy">
 
@@ -363,9 +363,9 @@ Dockerコンテナの<a href="http://192.168.99.100/items/5?q=somequery" class="
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
-## 単一ファイルのreadyapiでDockerイメージをビルドする
+## 単一ファイルのReadyAPIでDockerイメージをビルドする
 
-readyapi が単一のファイル、例えば `./app` ディレクトリのない `main.py` の場合、ファイル構造は次のようになります：
+ReadyAPI が単一のファイル、例えば `./app` ディレクトリのない `main.py` の場合、ファイル構造は次のようになります：
 ```
 .
 ├── Dockerfile
@@ -395,7 +395,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. Uvicornを実行し、`main`から`app`オブジェクトをインポートするように指示します（`app.main`からインポートするのではなく）。
 
-次にUvicornコマンドを調整して、`app.main` の代わりに新しいモジュール `main` を使用し、readyapiオブジェクトである `app` をインポートします。
+次にUvicornコマンドを調整して、`app.main` の代わりに新しいモジュール `main` を使用し、ReadyAPIオブジェクトである `app` をインポートします。
 
 ## デプロイメントのコンセプト
 
@@ -416,7 +416,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 ## HTTPS
 
-readyapi アプリケーションの **コンテナ・イメージ**（および後で実行中の **コンテナ**）だけに焦点を当てると、通常、HTTPSは別のツールを用いて**外部で**処理されます。
+ReadyAPI アプリケーションの **コンテナ・イメージ**（および後で実行中の **コンテナ**）だけに焦点を当てると、通常、HTTPSは別のツールを用いて**外部で**処理されます。
 
 例えば<a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>のように、**HTTPS**と**証明書**の**自動**取得を扱う別のコンテナである可能性もあります。
 
@@ -464,7 +464,7 @@ HTTPSに使われるものと同じ**TLS Termination Proxy**コンポーネン�
 
 **Kubernetes**や同様の分散コンテナ管理システムで作業する場合、その内部のネットワーキングのメカニズムを使用することで、メインの**ポート**でリッスンしている単一の**ロードバランサー**が、アプリを実行している可能性のある**複数のコンテナ**に通信（リクエスト）を送信できるようになります。
 
-アプリを実行するこれらのコンテナには、通常**1つのプロセス**（たとえば、readyapiアプリケーションを実行するUvicornプロセス）があります。これらはすべて**同一のコンテナ**であり同じものを実行しますが、それぞれが独自のプロセスやメモリなどを持ちます。そうすることで、CPUの**異なるコア**、あるいは**異なるマシン**での**並列化**を利用できます。
+アプリを実行するこれらのコンテナには、通常**1つのプロセス**（たとえば、ReadyAPIアプリケーションを実行するUvicornプロセス）があります。これらはすべて**同一のコンテナ**であり同じものを実行しますが、それぞれが独自のプロセスやメモリなどを持ちます。そうすることで、CPUの**異なるコア**、あるいは**異なるマシン**での**並列化**を利用できます。
 
 そして、**ロードバランサー**を備えた分散コンテナシステムは、**順番に**あなたのアプリを含む各コンテナに**リクエストを分配**します。つまり、各リクエストは、あなたのアプリを実行している複数の**レプリケートされたコンテナ**の1つによって処理されます。
 
@@ -563,7 +563,7 @@ Docker Composeで**シングルサーバ**（クラスタではない）にデ�
 
 /// warning
 
-このベースイメージや類似のイメージは**必要ない**可能性が高いので、[上記の: readyapi用のDockerイメージをビルドする（Build a Docker Image for readyapi）](#build-a-docker-image-for-readyapi)のようにゼロからイメージをビルドする方が良いでしょう。
+このベースイメージや類似のイメージは**必要ない**可能性が高いので、[上記の: ReadyAPI用のDockerイメージをビルドする（Build a Docker Image for ReadyAPI）](#build-a-docker-image-for-readyapi)のようにゼロからイメージをビルドする方が良いでしょう。
 
 ///
 
@@ -625,7 +625,7 @@ COPY ./app /app/app
 
 おそらく、**Kubernetes**（または他のもの）を使用していて、すでにクラスタレベルで複数の**コンテナ**で**レプリケーション**を設定している場合は、この公式ベースイメージ（または他の類似のもの）は**使用すべきではありません**。
 
-そのような場合は、上記のように**ゼロから**イメージを構築する方がよいでしょう： [readyapi用のDockerイメージをビルドする（Build a Docker Image for readyapi）](#build-a-docker-image-for-readyapi) を参照してください。
+そのような場合は、上記のように**ゼロから**イメージを構築する方がよいでしょう： [ReadyAPI用のDockerイメージをビルドする（Build a Docker Image for ReadyAPI）](#build-a-docker-image-for-readyapi) を参照してください。
 
 このイメージは、主に上記の[複数のプロセスと特殊なケースを持つコンテナ（Containers with Multiple Processes and Special Cases）](#containers-with-multiple-processes-and-special-cases)で説明したような特殊なケースで役に立ちます。
 
@@ -745,4 +745,4 @@ CMD ["uvicorn", "app.main:app", "--proxy-headers", "--host", "0.0.0.0", "--port"
 
 `Dockerfile`と**Dockerキャッシュ**内の命令の**順番**に注意することで、**ビルド時間を最小化**することができ、生産性を最大化することができます（そして退屈を避けることができます）。😎
 
-特別なケースでは、readyapi用の公式Dockerイメージを使いたいかもしれません。🤓
+特別なケースでは、ReadyAPI用の公式Dockerイメージを使いたいかもしれません。🤓

@@ -1,10 +1,10 @@
 # 历史、设计、未来
 
-不久前，<a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">曾有 **readyapi** 用户问过</a>：
+不久前，<a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">曾有 **ReadyAPI** 用户问过</a>：
 
 > 这个项目有怎样的历史？好像它只用了几周就从默默无闻变得众所周知……
 
-在此，我们简单回顾一下 **readyapi** 的历史。
+在此，我们简单回顾一下 **ReadyAPI** 的历史。
 
 ## 备选方案
 
@@ -12,16 +12,16 @@
 
 作为工作的一部分，我需要调研很多备选方案、还要测试并且使用这些备选方案。
 
-**readyapi** 其实只是延续了这些前辈的历史。
+**ReadyAPI** 其实只是延续了这些前辈的历史。
 
 正如[备选方案](alternatives.md){.internal-link target=_blank}一章所述：
 
 <blockquote markdown="1">
-没有大家之前所做的工作，**readyapi** 就不会存在。
+没有大家之前所做的工作，**ReadyAPI** 就不会存在。
 
 以前创建的这些工具为它的出现提供了灵感。
 
-在那几年中，我一直回避创建新的框架。首先，我尝试使用各种框架、插件、工具解决 **readyapi** 现在的功能。
+在那几年中，我一直回避创建新的框架。首先，我尝试使用各种框架、插件、工具解决 **ReadyAPI** 现在的功能。
 
 但到了一定程度之后，我别无选择，只能从之前的工具中汲取最优思路，并以尽量好的方式把这些思路整合在一起，使用之前甚至是不支持的语言特性（Python 3.6+ 的类型提示），从而创建一个能满足我所有需求的框架。
 
@@ -35,17 +35,17 @@
 
 而且，最好的方式是使用现有的标准。
 
-因此，甚至在开发 **readyapi** 前，我就花了几个月的时间研究 OpenAPI、JSON Schema、OAuth2 等规范。深入理解它们之间的关系、重叠及区别之处。
+因此，甚至在开发 **ReadyAPI** 前，我就花了几个月的时间研究 OpenAPI、JSON Schema、OAuth2 等规范。深入理解它们之间的关系、重叠及区别之处。
 
 ## 设计
 
-然后，我又花了一些时间从用户角度（使用 readyapi 的开发者）设计了开发者 **API**。
+然后，我又花了一些时间从用户角度（使用 ReadyAPI 的开发者）设计了开发者 **API**。
 
 同时，我还在最流行的 Python 代码编辑器中测试了很多思路，包括 PyCharm、VS Code、基于 Jedi 的编辑器。
 
 根据最新 <a href="https://www.jetbrains.com/research/python-developers-survey-2018/#development-tools" class="external-link" target="_blank">Python 开发者调研报告</a>显示，这几种编辑器覆盖了约 80% 的用户。
 
-也就是说，**readyapi** 针对差不多 80% 的 Python 开发者使用的编辑器进行了测试，而且其它大多数编辑器的工作方式也与之类似，因此，**readyapi** 的优势几乎能在所有编辑器上体现。
+也就是说，**ReadyAPI** 针对差不多 80% 的 Python 开发者使用的编辑器进行了测试，而且其它大多数编辑器的工作方式也与之类似，因此，**ReadyAPI** 的优势几乎能在所有编辑器上体现。
 
 通过这种方式，我就能找到尽可能减少代码重复的最佳方式，进而实现处处都有自动补全、类型提示与错误检查等支持。
 
@@ -61,18 +61,18 @@
 
 ## 开发
 
-当我启动 **readyapi** 开发的时候，绝大多数部件都已经就位，设计已经定义，需求项和工具也已经准备就绪，相关标准与规范的知识储备也非常清晰而新鲜。
+当我启动 **ReadyAPI** 开发的时候，绝大多数部件都已经就位，设计已经定义，需求项和工具也已经准备就绪，相关标准与规范的知识储备也非常清晰而新鲜。
 
 ## 未来
 
-至此，**readyapi** 及其理念已经为很多人所用。
+至此，**ReadyAPI** 及其理念已经为很多人所用。
 
 对于很多用例，它比以前很多备选方案都更适用。
 
-很多开发者和开发团队已经依赖 **readyapi** 开发他们的项目（包括我和我的团队）。
+很多开发者和开发团队已经依赖 **ReadyAPI** 开发他们的项目（包括我和我的团队）。
 
-但，**readyapi** 仍有很多改进的余地，也还需要添加更多的功能。
+但，**ReadyAPI** 仍有很多改进的余地，也还需要添加更多的功能。
 
-总之，**readyapi** 前景光明。
+总之，**ReadyAPI** 前景光明。
 
 在此，我们衷心感谢[您的帮助](help-readyapi.md){.internal-link target=_blank}。

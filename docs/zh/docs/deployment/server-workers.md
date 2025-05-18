@@ -19,7 +19,7 @@
 
 /// info
 
-如果您正在使用容器，例如 Docker 或 Kubernetes，我将在下一章中告诉您更多相关信息：[容器中的 readyapi - Docker](docker.md){.internal-link target=_blank}。
+如果您正在使用容器，例如 Docker 或 Kubernetes，我将在下一章中告诉您更多相关信息：[容器中的 ReadyAPI - Docker](docker.md){.internal-link target=_blank}。
 
 比较特别的是，在 **Kubernetes** 环境中运行时，您通常**不需要**使用多个工作进程，而是**每个容器运行一个 Uvicorn 进程**。不过，我会在本章节的后续部分详细介绍这一点。
 
@@ -38,7 +38,7 @@
 ```console
 $ <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting production server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting production server 🚀
 
              Searching for package file structure from directories with
              <font color="#3465A4">__init__.py</font> files
@@ -46,7 +46,7 @@ $ <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-decoratio
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with the
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with the
              following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -126,7 +126,7 @@ $ uvicorn main:app --host 0.0.0.0 --port 8080 --workers 4
 
 ## 容器和 Docker
 
-在关于 [容器中的 readyapi - Docker](docker.md){.internal-link target=_blank} 的下一章中，我将介绍一些可用于处理其他**部署概念**的策略。
+在关于 [容器中的 ReadyAPI - Docker](docker.md){.internal-link target=_blank} 的下一章中，我将介绍一些可用于处理其他**部署概念**的策略。
 
 我将向您展示如何**从零开始构建自己的镜像**，以运行一个单独的 Uvicorn 进程。这个过程相对简单，并且在使用 **Kubernetes** 等分布式容器管理系统时，这通常是您需要采取的方法。
 
@@ -136,4 +136,4 @@ $ uvicorn main:app --host 0.0.0.0 --port 8080 --workers 4
 
 如果您要设置**自己的部署系统**，同时自己处理其他部署概念，则可以使用这些工具和想法。
 
-请查看下一章，了解带有容器（例如 Docker 和 Kubernetes）的 **readyapi**。 您将看到这些工具也有简单的方法来解决其他**部署概念**。 ✨
+请查看下一章，了解带有容器（例如 Docker 和 Kubernetes）的 **ReadyAPI**。 您将看到这些工具也有简单的方法来解决其他**部署概念**。 ✨

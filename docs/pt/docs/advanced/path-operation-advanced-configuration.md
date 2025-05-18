@@ -46,7 +46,7 @@ Para excluir uma *operação de rota* do esquema OpenAPI gerado (e por consequê
 
 Você pode limitar as linhas utilizadas a partir de uma docstring de uma *função de operação de rota* para o OpenAPI.
 
-Adicionar um `\f` (um caractere de escape para alimentação de formulário) faz com que o **readyapi** restrinja a saída utilizada pelo OpenAPI até esse ponto.
+Adicionar um `\f` (um caractere de escape para alimentação de formulário) faz com que o **ReadyAPI** restrinja a saída utilizada pelo OpenAPI até esse ponto.
 
 Ele não será mostrado na documentação, mas outras ferramentas (como o Sphinx) serão capazes de utilizar o resto do texto.
 
@@ -64,7 +64,7 @@ Existe um capítulo inteiro da nossa documentação sobre isso, você pode ler e
 
 ## Extras do OpenAPI
 
-Quando você declara uma *operação de rota* na sua aplicação, o **readyapi** irá gerar os metadados relevantes da *operação de rota* automaticamente para serem incluídos no esquema do OpenAPI.
+Quando você declara uma *operação de rota* na sua aplicação, o **ReadyAPI** irá gerar os metadados relevantes da *operação de rota* automaticamente para serem incluídos no esquema do OpenAPI.
 
 /// note | Nota
 
@@ -76,7 +76,7 @@ Ele possui toda a informação sobre a *operação de rota* e é usado para gera
 
 Ele inclui os atributos `tags`, `parameters`, `requestBody`, `responses`, etc.
 
-Esse esquema específico para uma *operação de rota* normalmente é gerado automaticamente pelo **readyapi**, mas você também pode estender ele.
+Esse esquema específico para uma *operação de rota* normalmente é gerado automaticamente pelo **ReadyAPI**, mas você também pode estender ele.
 
 /// tip | Dica
 
@@ -104,7 +104,7 @@ E se você olhar o esquema OpenAPI resultante (na rota `/openapi.json` da sua AP
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -135,7 +135,7 @@ O dicionário em `openapi_extra` vai ter todos os seus níveis mesclados dentro 
 
 Então, você pode adicionar dados extras para o esquema gerado automaticamente.
 
-Por exemplo, você poderia optar por ler e validar a requisição com seu próprio código, sem utilizar funcionalidades automatizadas do readyapi com o Pydantic, mas você ainda pode quere definir a requisição no esquema OpenAPI.
+Por exemplo, você poderia optar por ler e validar a requisição com seu próprio código, sem utilizar funcionalidades automatizadas do ReadyAPI com o Pydantic, mas você ainda pode quere definir a requisição no esquema OpenAPI.
 
 Você pode fazer isso com `openapi_extra`:
 
@@ -151,7 +151,7 @@ Utilizando esse mesmo truque, você pode utilizar um modelo Pydantic para defini
 
 E você pode fazer isso até mesmo quando os dados da requisição não seguem o formato JSON.
 
-Por exemplo, nesta aplicação nós não usamos a funcionalidade integrada ao readyapi de extrair o esquema JSON dos modelos Pydantic nem a validação automática do JSON. Na verdade, estamos declarando o tipo do conteúdo da requisição como YAML, em vez de JSON:
+Por exemplo, nesta aplicação nós não usamos a funcionalidade integrada ao ReadyAPI de extrair o esquema JSON dos modelos Pydantic nem a validação automática do JSON. Na verdade, estamos declarando o tipo do conteúdo da requisição como YAML, em vez de JSON:
 
 //// tab | Pydantic v2
 
@@ -173,7 +173,7 @@ Na versão 1 do Pydantic, o método para obter o esquema JSON de um modelo é `I
 
 Entretanto, mesmo que não utilizemos a funcionalidade integrada por padrão, ainda estamos usando um modelo Pydantic para gerar um esquema JSON manualmente para os dados que queremos receber no formato YAML.
 
-Então utilizamos a requisição diretamente, e extraímos o corpo como `bytes`. Isso significa que o readyapi não vai sequer tentar analisar o corpo da requisição como JSON.
+Então utilizamos a requisição diretamente, e extraímos o corpo como `bytes`. Isso significa que o ReadyAPI não vai sequer tentar analisar o corpo da requisição como JSON.
 
 E então no nosso código, nós analisamos o conteúdo YAML diretamente, e estamos utilizando o mesmo modelo Pydantic para validar o conteúdo YAML:
 

@@ -48,7 +48,7 @@ This will help us inside of the function with all the completion and type checks
 
 You might remember that request bodies are also declared with Pydantic models.
 
-Here **readyapi** won't get confused because you are using `Depends`.
+Here **ReadyAPI** won't get confused because you are using `Depends`.
 
 ///
 
@@ -74,7 +74,7 @@ Do you want to just have a `str`? Or just a `dict`? Or a database class model in
 
 You actually don't have users that log in to your application but robots, bots, or other systems, that have just an access token? Again, it all works the same.
 
-Just use any kind of model, any kind of class, any kind of database that you need for your application. **readyapi** has you covered with the dependency injection system.
+Just use any kind of model, any kind of class, any kind of database that you need for your application. **ReadyAPI** has you covered with the dependency injection system.
 
 ## Code size
 

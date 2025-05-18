@@ -4,7 +4,7 @@ You can connect the debugger in your editor, for example with Visual Studio Code
 
 ## Call `uvicorn`
 
-In your readyapi application, import and run `uvicorn` directly:
+In your ReadyAPI application, import and run `uvicorn` directly:
 
 {* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
 
@@ -80,7 +80,7 @@ For more information, check <a href="https://docs.python.org/3/library/__main__.
 
 ## Run your code with your debugger
 
-Because you are running the Uvicorn server directly from your code, you can call your Python program (your readyapi application) directly from the debugger.
+Because you are running the Uvicorn server directly from your code, you can call your Python program (your ReadyAPI application) directly from the debugger.
 
 ---
 
@@ -91,7 +91,7 @@ For example, in Visual Studio Code, you can:
 * Select "Python"
 * Run the debugger with the option "`Python: Current File (Integrated Terminal)`".
 
-It will then start the server with your **readyapi** code, stop at your breakpoints, etc.
+It will then start the server with your **ReadyAPI** code, stop at your breakpoints, etc.
 
 Here's how it might look:
 
@@ -106,7 +106,7 @@ If you use Pycharm, you can:
 * Then a context menu shows up.
 * Select the file to debug (in this case, `main.py`).
 
-It will then start the server with your **readyapi** code, stop at your breakpoints, etc.
+It will then start the server with your **ReadyAPI** code, stop at your breakpoints, etc.
 
 Here's how it might look:
 

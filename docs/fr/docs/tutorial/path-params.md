@@ -44,7 +44,7 @@ Si vous exécutez cet exemple et allez sur <a href="http://127.0.0.1:8000/items/
 Comme vous l'avez remarqué, la valeur reçue par la fonction (et renvoyée ensuite) est `3`,
 en tant qu'entier (`int`) Python, pas la chaîne de caractères (`string`) `"3"`.
 
-Grâce aux déclarations de types, **readyapi** fournit du
+Grâce aux déclarations de types, **ReadyAPI** fournit du
 <abbr title="conversion de la chaîne de caractères venant de la requête HTTP en données Python">"parsing"</abbr> automatique.
 
 ///
@@ -76,7 +76,7 @@ La même erreur se produira si vous passez un nombre flottant (`float`) et non u
 
 /// check | vérifier
 
-Donc, avec ces mêmes déclarations de type Python, **readyapi** vous fournit de la validation de données.
+Donc, avec ces mêmes déclarations de type Python, **ReadyAPI** vous fournit de la validation de données.
 
 Notez que l'erreur mentionne le point exact où la validation n'a pas réussi.
 
@@ -93,7 +93,7 @@ documentation générée automatiquement et interactive :
 
 /// info
 
-À nouveau, en utilisant uniquement les déclarations de type Python, **readyapi** vous fournit automatiquement une documentation interactive (via Swagger UI).
+À nouveau, en utilisant uniquement les déclarations de type Python, **ReadyAPI** vous fournit automatiquement une documentation interactive (via Swagger UI).
 
 On voit bien dans la documentation que `item_id` est déclaré comme entier.
 
@@ -104,7 +104,7 @@ On voit bien dans la documentation que `item_id` est déclaré comme entier.
 Le schéma généré suivant la norme <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md" class="external-link" target="_blank">OpenAPI</a>,
 il existe de nombreux outils compatibles.
 
-Grâce à cela, **readyapi** lui-même fournit une documentation alternative (utilisant ReDoc), qui peut être lue
+Grâce à cela, **ReadyAPI** lui-même fournit une documentation alternative (utilisant ReDoc), qui peut être lue
 sur <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> :
 
 <img src="/img/tutorial/path-params/image02.png">
@@ -220,7 +220,7 @@ Donc, l'URL pour ce fichier pourrait être : `/files/home/johndoe/myfile.txt`.
 
 OpenAPI ne supporte pas de manière de déclarer un paramètre de chemin contenant un *chemin*, cela pouvant causer des scénarios difficiles à tester et définir.
 
-Néanmoins, cela reste faisable dans **readyapi**, via les outils internes de Starlette.
+Néanmoins, cela reste faisable dans **ReadyAPI**, via les outils internes de Starlette.
 
 Et la documentation fonctionne quand même, bien qu'aucune section ne soit ajoutée pour dire que la paramètre devrait contenir un *chemin*.
 
@@ -248,7 +248,7 @@ Dans ce cas, l'URL serait : `/files//home/johndoe/myfile.txt`, avec un double sl
 
 ## Récapitulatif
 
-Avec **readyapi**, en utilisant les déclarations de type rapides, intuitives et standards de Python, vous bénéficiez de :
+Avec **ReadyAPI**, en utilisant les déclarations de type rapides, intuitives et standards de Python, vous bénéficiez de :
 
 * Support de l'éditeur : vérification d'erreurs, auto-complétion, etc.
 * <abbr title="conversion de la chaîne de caractères venant de la requête HTTP en données Python">"Parsing"</abbr> de données.
@@ -257,4 +257,4 @@ Avec **readyapi**, en utilisant les déclarations de type rapides, intuitives et
 
 Et vous n'avez besoin de le déclarer qu'une fois.
 
-C'est probablement l'avantage visible principal de **readyapi** comparé aux autres *frameworks* (outre les performances pures).
+C'est probablement l'avantage visible principal de **ReadyAPI** comparé aux autres *frameworks* (outre les performances pures).

@@ -1,10 +1,10 @@
 # Templates
 
-You can use any template engine you want with **readyapi**.
+You can use any template engine you want with **ReadyAPI**.
 
 A common choice is Jinja2, the same one used by Flask and other tools.
 
-There are utilities to configure it easily that you can use directly in your **readyapi** application (provided by Starlette).
+There are utilities to configure it easily that you can use directly in your **ReadyAPI** application (provided by Starlette).
 
 ## Install dependencies
 
@@ -31,7 +31,7 @@ $ pip install jinja2
 
 /// note
 
-Before readyapi 0.108.0, Starlette 0.29.0, the `name` was the first parameter.
+Before ReadyAPI 0.108.0, Starlette 0.29.0, the `name` was the first parameter.
 
 Also, before that, in previous versions, the `request` object was passed as part of the key-value pairs in the context for Jinja2.
 
@@ -47,7 +47,7 @@ By declaring `response_class=HTMLResponse` the docs UI will be able to know that
 
 You could also use `from starlette.templating import Jinja2Templates`.
 
-**readyapi** provides the same `starlette.templating` as `readyapi.templating` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `Request` and `StaticFiles`.
+**ReadyAPI** provides the same `starlette.templating` as `readyapi.templating` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `Request` and `StaticFiles`.
 
 ///
 
@@ -119,7 +119,7 @@ In this example, it would link to a CSS file at `static/styles.css` with:
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-And because you are using `StaticFiles`, that CSS file would be served automatically by your **readyapi** application at the URL `/static/styles.css`.
+And because you are using `StaticFiles`, that CSS file would be served automatically by your **ReadyAPI** application at the URL `/static/styles.css`.
 
 ## More details
 

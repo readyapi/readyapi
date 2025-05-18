@@ -6,7 +6,7 @@
 
 /// note
 
-readyapi 从 `0.115.0` 版本开始支持这个特性。🤓
+ReadyAPI 从 `0.115.0` 版本开始支持这个特性。🤓
 
 ///
 
@@ -16,7 +16,7 @@ readyapi 从 `0.115.0` 版本开始支持这个特性。🤓
 
 {* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
-**readyapi** 将会从请求的**查询参数**中**提取**出**每个字段**的数据，并将其提供给你定义的 Pydantic 模型。
+**ReadyAPI** 将会从请求的**查询参数**中**提取**出**每个字段**的数据，并将其提供给你定义的 Pydantic 模型。
 
 ## 查看文档
 
@@ -59,7 +59,7 @@ https://example.com/items/?limit=10&tool=plumbus
 
 ## 总结
 
-你可以使用 **Pydantic 模型**在 **readyapi** 中声明**查询参数**。😎
+你可以使用 **Pydantic 模型**在 **ReadyAPI** 中声明**查询参数**。😎
 
 /// tip
 

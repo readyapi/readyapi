@@ -1,10 +1,10 @@
-# readyapi CLI
+# ReadyAPI CLI
 
-**readyapi CLI**는 readyapi 애플리케이션을 실행하고, 프로젝트를 관리하는 등 다양한 작업을 수행할 수 있는 커맨드 라인 프로그램입니다.
+**ReadyAPI CLI**는 ReadyAPI 애플리케이션을 실행하고, 프로젝트를 관리하는 등 다양한 작업을 수행할 수 있는 커맨드 라인 프로그램입니다.
 
-readyapi를 설치할 때 (예: `pip install "readyapi[standard]"` 명령어를 사용할 경우), `readyapi-cli`라는 패키지가 포함됩니다. 이 패키지는 터미널에서 사용할 수 있는 `readyapi` 명령어를 제공합니다.
+ReadyAPI를 설치할 때 (예: `pip install "readyapi[standard]"` 명령어를 사용할 경우), `readyapi-cli`라는 패키지가 포함됩니다. 이 패키지는 터미널에서 사용할 수 있는 `readyapi` 명령어를 제공합니다.
 
-개발용으로 readyapi 애플리케이션을 실행하려면 다음과 같이 `readyapi dev` 명령어를 사용할 수 있습니다:
+개발용으로 ReadyAPI 애플리케이션을 실행하려면 다음과 같이 `readyapi dev` 명령어를 사용할 수 있습니다:
 
 <div class="termy">
 
@@ -22,9 +22,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable readyapi app
+<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
 
- ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -32,7 +32,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -54,13 +54,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 </div>
 
-`readyapi`라고 불리는 명령어 프로그램은 **readyapi CLI**입니다.
+`readyapi`라고 불리는 명령어 프로그램은 **ReadyAPI CLI**입니다.
 
-readyapi CLI는 Python 프로그램의 경로(예: `main.py`)를 인수로 받아, `readyapi` 인스턴스(일반적으로 `app`으로 명명)를 자동으로 감지하고 올바른 임포트 과정을 결정한 후 이를 실행합니다.
+ReadyAPI CLI는 Python 프로그램의 경로(예: `main.py`)를 인수로 받아, `ReadyAPI` 인스턴스(일반적으로 `app`으로 명명)를 자동으로 감지하고 올바른 임포트 과정을 결정한 후 이를 실행합니다.
 
 프로덕션 환경에서는 `readyapi run` 명령어를 사용합니다. 🚀
 
-내부적으로, **readyapi CLI**는 고성능의, 프로덕션에 적합한, ASGI 서버인 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>을 사용합니다. 😎
+내부적으로, **ReadyAPI CLI**는 고성능의, 프로덕션에 적합한, ASGI 서버인 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>을 사용합니다. 😎
 
 ## `readyapi dev`
 
@@ -70,7 +70,7 @@ readyapi CLI는 Python 프로그램의 경로(예: `main.py`)를 인수로 받�
 
 ## `readyapi run`
 
-`readyapi run` 명령을 실행하면 기본적으로 프로덕션 모드로 readyapi가 시작됩니다.
+`readyapi run` 명령을 실행하면 기본적으로 프로덕션 모드로 ReadyAPI가 시작됩니다.
 
 기본적으로 **자동 재시작(auto-reload)** 기능이 비활성화되어 있습니다. 또한, 사용 가능한 모든 IP 주소인 `0.0.0.0`에서 연결을 대기하므로 해당 컴퓨터와 통신할 수 있는 모든 사람이 공개적으로 액세스할 수 있습니다. 이는 일반적으로 컨테이너와 같은 프로덕션 환경에서 실행하는 방법입니다.
 

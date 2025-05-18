@@ -6,7 +6,7 @@ E isso normalmente é um tópico “difícil” e complexo.
 
 Em muitos frameworks e sistemas, apenas lidar com segurança e autenticação exige muito esforço e código (em muitos casos isso pode ser 50% ou mais de todo o código escrito).
 
-**readyapi** tem muitas ferramentas para ajudar você com a parte de **Segurança** facilmente, rapidamente, de uma forma padrão, sem ter que estudar e aprender tudo sobre especificações de segurança.
+**ReadyAPI** tem muitas ferramentas para ajudar você com a parte de **Segurança** facilmente, rapidamente, de uma forma padrão, sem ter que estudar e aprender tudo sobre especificações de segurança.
 
 Mas primeiro, vamos verificar alguns pequenos conceitos.
 
@@ -60,7 +60,7 @@ Ela não é muito popular ou usada nos dias de hoje.
 
 OpenAPI (anteriormente conhecido como Swagger) é a especificação aberta para a criação de APIs (agora parte da Linux Foundation).
 
-**readyapi** é baseado no **OpenAPI**.
+**ReadyAPI** é baseado no **OpenAPI**.
 
 Isso é o que torna possível ter múltiplas automações interativas de interfaces de documentação, geração de código, etc.
 
@@ -93,14 +93,14 @@ OpenAPI define os seguintes esquemas de segurança:
 
 Integração com outros provedores de autenticação/autorização como Google, Facebook, Twitter, GitHub, etc. é bem possível e relativamente fácil.
 
-O problema mais complexo é criar um provedor de autenticação/autorização como eles, mas o readyapi dá a você ferramentas para fazer isso facilmente, enquanto faz o trabalho pesado para você.
+O problema mais complexo é criar um provedor de autenticação/autorização como eles, mas o ReadyAPI dá a você ferramentas para fazer isso facilmente, enquanto faz o trabalho pesado para você.
 
 ///
 
-## **readyapi** utilitários
+## **ReadyAPI** utilitários
 
-**readyapi** fornece várias ferramentas para cada um desses esquemas de segurança no módulo `readyapi.security` que simplesmente usa esses mecanismos de segurança.
+**ReadyAPI** fornece várias ferramentas para cada um desses esquemas de segurança no módulo `readyapi.security` que simplesmente usa esses mecanismos de segurança.
 
-Nos próximos capítulos você irá ver como adicionar segurança à sua API usando essas ferramentas disponibilizadas pelo **readyapi**.
+Nos próximos capítulos você irá ver como adicionar segurança à sua API usando essas ferramentas disponibilizadas pelo **ReadyAPI**.
 
 E você irá ver também como isso é automaticamente integrado dentro do sistema de documentação interativo.

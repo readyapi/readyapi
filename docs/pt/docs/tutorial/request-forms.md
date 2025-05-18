@@ -48,7 +48,7 @@ Para declarar corpos de formulário, você precisa usar `Form` explicitamente, p
 
 A forma como os formulários HTML (`<form></form>`) enviam os dados para o servidor normalmente usa uma codificação "especial" para esses dados, é diferente do JSON.
 
-O **readyapi** fará a leitura desses dados no lugar certo em vez de JSON.
+O **ReadyAPI** fará a leitura desses dados no lugar certo em vez de JSON.
 
 /// note | Detalhes técnicos
 
@@ -64,7 +64,7 @@ Se você quiser ler mais sobre essas codificações e campos de formulário, vá
 
 Você pode declarar vários parâmetros `Form` em uma *operação de caminho*, mas não pode declarar campos `Body` que espera receber como JSON, pois a solicitação terá o corpo codificado usando `application/x-www- form-urlencoded` em vez de `application/json`.
 
-Esta não é uma limitação do **readyapi**, é parte do protocolo HTTP.
+Esta não é uma limitação do **ReadyAPI**, é parte do protocolo HTTP.
 
 ///
 

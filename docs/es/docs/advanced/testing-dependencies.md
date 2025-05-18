@@ -22,21 +22,21 @@ En este caso, puedes sobrescribir la dependencia que llama a ese proveedor y usa
 
 ### Usa el atributo `app.dependency_overrides`
 
-Para estos casos, tu aplicación **readyapi** tiene un atributo `app.dependency_overrides`, es un simple `dict`.
+Para estos casos, tu aplicación **ReadyAPI** tiene un atributo `app.dependency_overrides`, es un simple `dict`.
 
 Para sobrescribir una dependencia para las pruebas, colocas como clave la dependencia original (una función), y como valor, tu dependencia para sobreescribir (otra función).
 
-Y entonces **readyapi** llamará a esa dependencia para sobreescribir en lugar de la dependencia original.
+Y entonces **ReadyAPI** llamará a esa dependencia para sobreescribir en lugar de la dependencia original.
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
 /// tip | Consejo
 
-Puedes sobreescribir una dependencia utilizada en cualquier lugar de tu aplicación **readyapi**.
+Puedes sobreescribir una dependencia utilizada en cualquier lugar de tu aplicación **ReadyAPI**.
 
 La dependencia original podría ser utilizada en una *path operation function*, un *path operation decorator* (cuando no usas el valor de retorno), una llamada a `.include_router()`, etc.
 
-readyapi todavía podrá sobrescribirla.
+ReadyAPI todavía podrá sobrescribirla.
 
 ///
 

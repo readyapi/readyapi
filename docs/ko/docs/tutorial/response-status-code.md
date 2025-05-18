@@ -35,7 +35,7 @@
 
 어떤 응답 코드들은 해당 응답에 본문이 없다는 것을 의미하기도 합니다 (다음 항목 참고).
 
-이에 따라 readyapi는 응답 본문이 없음을 명시하는 OpenAPI를 생성합니다.
+이에 따라 ReadyAPI는 응답 본문이 없음을 명시하는 OpenAPI를 생성합니다.
 
 ///
 
@@ -92,7 +92,7 @@ HTTP는 세자리의 숫자 상태 코드를 응답의 일부로 전송합니다
 
 `from starlette import status` 역시 사용할 수 있습니다.
 
-**readyapi**는 개발자인 여러분의 편의를 위해 `readyapi.status` 와 동일한 `starlette.status` 도 제공합니다. 하지만 이것은 Starlette로부터 직접 제공됩니다.
+**ReadyAPI**는 개발자인 여러분의 편의를 위해 `readyapi.status` 와 동일한 `starlette.status` 도 제공합니다. 하지만 이것은 Starlette로부터 직접 제공됩니다.
 
 ///
 

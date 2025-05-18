@@ -48,9 +48,9 @@ Wenn Sie sich unsicher sind, verwenden Sie einfach `def`.
 
 ---
 
-**Hinweis**: Sie können `def` und `async def` in Ihren *Pfadoperation-Funktionen* beliebig mischen, so wie Sie es benötigen, und jede einzelne Funktion in der für Sie besten Variante erstellen. readyapi wird damit das Richtige tun.
+**Hinweis**: Sie können `def` und `async def` in Ihren *Pfadoperation-Funktionen* beliebig mischen, so wie Sie es benötigen, und jede einzelne Funktion in der für Sie besten Variante erstellen. ReadyAPI wird damit das Richtige tun.
 
-Wie dem auch sei, in jedem der oben genannten Fälle wird readyapi immer noch asynchron arbeiten und extrem schnell sein.
+Wie dem auch sei, in jedem der oben genannten Fälle wird ReadyAPI immer noch asynchron arbeiten und extrem schnell sein.
 
 Wenn Sie jedoch den oben genannten Schritten folgen, können einige Performance-Optimierungen vorgenommen werden.
 
@@ -249,7 +249,7 @@ Deshalb ist es sehr sinnvoll, asynchronen ⏸🔀⏯ Code für Web-APIs zu verwe
 
 Diese Art der Asynchronität hat NodeJS populär gemacht (auch wenn NodeJS nicht parallel ist) und darin liegt die Stärke von Go als Programmiersprache.
 
-Und das ist das gleiche Leistungsniveau, das Sie mit **readyapi** erhalten.
+Und das ist das gleiche Leistungsniveau, das Sie mit **ReadyAPI** erhalten.
 
 Und da Sie Parallelität und Asynchronität gleichzeitig haben können, erzielen Sie eine höhere Performanz als die meisten getesteten NodeJS-Frameworks und sind mit Go auf Augenhöhe, einer kompilierten Sprache, die näher an C liegt <a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">(alles dank Starlette)</a>.
 
@@ -292,11 +292,11 @@ Zum Beispiel:
 
 ### Nebenläufigkeit + Parallelität: Web + maschinelles Lernen
 
-Mit **readyapi** können Sie die Vorteile der Nebenläufigkeit nutzen, die in der Webentwicklung weit verbreitet ist (derselbe Hauptvorteil von NodeJS).
+Mit **ReadyAPI** können Sie die Vorteile der Nebenläufigkeit nutzen, die in der Webentwicklung weit verbreitet ist (derselbe Hauptvorteil von NodeJS).
 
 Sie können aber auch die Vorteile von Parallelität und Multiprocessing (Mehrere Prozesse werden parallel ausgeführt) für **CPU-lastige** Workloads wie in Systemen für maschinelles Lernen nutzen.
 
-Dies und die einfache Tatsache, dass Python die Hauptsprache für **Data Science**, maschinelles Lernen und insbesondere Deep Learning ist, machen readyapi zu einem sehr passenden Werkzeug für Web-APIs und Anwendungen für Data Science / maschinelles Lernen (neben vielen anderen).
+Dies und die einfache Tatsache, dass Python die Hauptsprache für **Data Science**, maschinelles Lernen und insbesondere Deep Learning ist, machen ReadyAPI zu einem sehr passenden Werkzeug für Web-APIs und Anwendungen für Data Science / maschinelles Lernen (neben vielen anderen).
 
 Wie Sie diese Parallelität in der Produktion erreichen, erfahren Sie im Abschnitt über [Deployment](deployment/index.md){.internal-link target=_blank}.
 
@@ -357,17 +357,17 @@ Gleichzeitig müssen aber mit `async def` definierte Funktionen „erwartet“ (
 
 Daraus resultiert das Ei-und-Huhn-Problem: Wie ruft man die erste `async` Funktion auf?
 
-Wenn Sie mit **readyapi** arbeiten, müssen Sie sich darüber keine Sorgen machen, da diese „erste“ Funktion Ihre *Pfadoperation-Funktion* sein wird und readyapi weiß, was zu tun ist.
+Wenn Sie mit **ReadyAPI** arbeiten, müssen Sie sich darüber keine Sorgen machen, da diese „erste“ Funktion Ihre *Pfadoperation-Funktion* sein wird und ReadyAPI weiß, was zu tun ist.
 
-Wenn Sie jedoch `async` / `await` ohne readyapi verwenden möchten, können Sie dies auch tun.
+Wenn Sie jedoch `async` / `await` ohne ReadyAPI verwenden möchten, können Sie dies auch tun.
 
 ### Schreiben Sie Ihren eigenen asynchronen Code
 
-Starlette (und **readyapi**) basiert auf <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, was bedeutet, es ist sowohl kompatibel mit der Python-Standardbibliothek <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a>, als auch mit <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
+Starlette (und **ReadyAPI**) basiert auf <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a>, was bedeutet, es ist sowohl kompatibel mit der Python-Standardbibliothek <a href="https://docs.python.org/3/library/asyncio-task.html" class="external-link" target="_blank">asyncio</a>, als auch mit <a href="https://trio.readthedocs.io/en/stable/" class="external-link" target="_blank">Trio</a>.
 
 Insbesondere können Sie <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> direkt verwenden für Ihre fortgeschritten nebenläufigen und parallelen Anwendungsfälle, die fortgeschrittenere Muster in Ihrem eigenen Code erfordern.
 
-Und selbst wenn Sie readyapi nicht verwenden würden, könnten Sie auch Ihre eigenen asynchronen Anwendungen mit <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> so schreiben, dass sie hoch kompatibel sind und Sie dessen Vorteile nutzen können (z. B. *strukturierte Nebenläufigkeit*).
+Und selbst wenn Sie ReadyAPI nicht verwenden würden, könnten Sie auch Ihre eigenen asynchronen Anwendungen mit <a href="https://anyio.readthedocs.io/en/stable/" class="external-link" target="_blank">AnyIO</a> so schreiben, dass sie hoch kompatibel sind und Sie dessen Vorteile nutzen können (z. B. *strukturierte Nebenläufigkeit*).
 
 ### Andere Formen von asynchronem Code
 
@@ -397,7 +397,7 @@ Sehen wir uns den gleichen Satz von oben noch mal an:
 
 Das sollte jetzt mehr Sinn ergeben. ✨
 
-All das ist es, was readyapi (via Starlette) befeuert und es eine so beeindruckende Performanz haben lässt.
+All das ist es, was ReadyAPI (via Starlette) befeuert und es eine so beeindruckende Performanz haben lässt.
 
 ## Sehr technische Details
 
@@ -405,9 +405,9 @@ All das ist es, was readyapi (via Starlette) befeuert und es eine so beeindrucke
 
 Das folgende können Sie wahrscheinlich überspringen.
 
-Dies sind sehr technische Details darüber, wie **readyapi** unter der Haube funktioniert.
+Dies sind sehr technische Details darüber, wie **ReadyAPI** unter der Haube funktioniert.
 
-Wenn Sie über gute technische Kenntnisse verfügen (Coroutinen, Threads, Blocking, usw.) und neugierig sind, wie readyapi mit `async def`s im Vergleich zu normalen `def`s umgeht, fahren Sie fort.
+Wenn Sie über gute technische Kenntnisse verfügen (Coroutinen, Threads, Blocking, usw.) und neugierig sind, wie ReadyAPI mit `async def`s im Vergleich zu normalen `def`s umgeht, fahren Sie fort.
 
 ///
 
@@ -415,9 +415,9 @@ Wenn Sie über gute technische Kenntnisse verfügen (Coroutinen, Threads, Blocki
 
 Wenn Sie eine *Pfadoperation-Funktion* mit normalem `def` anstelle von `async def` deklarieren, wird sie in einem externen Threadpool ausgeführt, der dann `await`et wird, anstatt direkt aufgerufen zu werden (da dies den Server blockieren würde).
 
-Wenn Sie von einem anderen asynchronen Framework kommen, das nicht auf die oben beschriebene Weise funktioniert, und Sie es gewohnt sind, triviale, nur-berechnende *Pfadoperation-Funktionen* mit einfachem `def` zu definieren, um einen geringfügigen Geschwindigkeitsgewinn (etwa 100 Nanosekunden) zu erzielen, beachten Sie bitte, dass der Effekt in **readyapi** genau gegenteilig wäre. In solchen Fällen ist es besser, `async def` zu verwenden, es sei denn, Ihre *Pfadoperation-Funktionen* verwenden Code, der blockierende <abbr title="Input/Output – Eingabe/Ausgabe: Lesen oder Schreiben von/auf Festplatte, Netzwerkkommunikation.">I/O</abbr>-Operationen durchführt.
+Wenn Sie von einem anderen asynchronen Framework kommen, das nicht auf die oben beschriebene Weise funktioniert, und Sie es gewohnt sind, triviale, nur-berechnende *Pfadoperation-Funktionen* mit einfachem `def` zu definieren, um einen geringfügigen Geschwindigkeitsgewinn (etwa 100 Nanosekunden) zu erzielen, beachten Sie bitte, dass der Effekt in **ReadyAPI** genau gegenteilig wäre. In solchen Fällen ist es besser, `async def` zu verwenden, es sei denn, Ihre *Pfadoperation-Funktionen* verwenden Code, der blockierende <abbr title="Input/Output – Eingabe/Ausgabe: Lesen oder Schreiben von/auf Festplatte, Netzwerkkommunikation.">I/O</abbr>-Operationen durchführt.
 
-Dennoch besteht in beiden Fällen eine gute Chance, dass **readyapi** [immer noch schneller](index.md#performanz){.internal-link target=_blank} als Ihr bisheriges Framework (oder zumindest damit vergleichbar) ist.
+Dennoch besteht in beiden Fällen eine gute Chance, dass **ReadyAPI** [immer noch schneller](index.md#performanz){.internal-link target=_blank} als Ihr bisheriges Framework (oder zumindest damit vergleichbar) ist.
 
 ### Abhängigkeiten
 
@@ -429,9 +429,9 @@ Sie können mehrere Abhängigkeiten und [Unterabhängigkeiten](tutorial/dependen
 
 ### Andere Hilfsfunktionen
 
-Jede andere Hilfsfunktion, die Sie direkt aufrufen, kann mit normalem `def` oder `async def` erstellt werden, und readyapi beeinflusst nicht die Art und Weise, wie Sie sie aufrufen.
+Jede andere Hilfsfunktion, die Sie direkt aufrufen, kann mit normalem `def` oder `async def` erstellt werden, und ReadyAPI beeinflusst nicht die Art und Weise, wie Sie sie aufrufen.
 
-Dies steht im Gegensatz zu den Funktionen, die readyapi für Sie aufruft: *Pfadoperation-Funktionen* und Abhängigkeiten.
+Dies steht im Gegensatz zu den Funktionen, die ReadyAPI für Sie aufruft: *Pfadoperation-Funktionen* und Abhängigkeiten.
 
 Wenn Ihre Hilfsfunktion eine normale Funktion mit `def` ist, wird sie direkt aufgerufen (so wie Sie es in Ihrem Code schreiben), nicht in einem Threadpool. Wenn die Funktion mit `async def` erstellt wurde, sollten Sie sie `await`en, wenn Sie sie in Ihrem Code aufrufen.
 

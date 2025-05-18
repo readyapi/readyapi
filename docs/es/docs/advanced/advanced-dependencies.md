@@ -20,7 +20,7 @@ Para hacer eso, declaramos un método `__call__`:
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[12] *}
 
-En este caso, este `__call__` es lo que **readyapi** usará para comprobar parámetros adicionales y sub-dependencias, y es lo que llamará para pasar un valor al parámetro en tu *path operation function* más adelante.
+En este caso, este `__call__` es lo que **ReadyAPI** usará para comprobar parámetros adicionales y sub-dependencias, y es lo que llamará para pasar un valor al parámetro en tu *path operation function* más adelante.
 
 ## Parametrizar la instance
 
@@ -28,7 +28,7 @@ Y ahora, podemos usar `__init__` para declarar los parámetros de la instance qu
 
 {* ../../docs_src/dependencies/tutorial011_an_py39.py hl[9] *}
 
-En este caso, **readyapi** nunca tocará ni se preocupará por `__init__`, lo usaremos directamente en nuestro código.
+En este caso, **ReadyAPI** nunca tocará ni se preocupará por `__init__`, lo usaremos directamente en nuestro código.
 
 ## Crear una instance
 
@@ -42,7 +42,7 @@ Y de esa manera podemos "parametrizar" nuestra dependencia, que ahora tiene `"ba
 
 Luego, podríamos usar este `checker` en un `Depends(checker)`, en lugar de `Depends(FixedContentQueryChecker)`, porque la dependencia es la instance, `checker`, no la clase en sí.
 
-Y al resolver la dependencia, **readyapi** llamará a este `checker` así:
+Y al resolver la dependencia, **ReadyAPI** llamará a este `checker` así:
 
 ```Python
 checker(q="somequery")

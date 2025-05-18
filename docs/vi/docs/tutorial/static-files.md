@@ -13,7 +13,7 @@ Bạn có thể triển khai tệp tĩnh tự động từ một thư mục bằ
 
 Bạn cũng có thể sử dụng `from starlette.staticfiles import StaticFiles`.
 
-**readyapi** cung cấp cùng `starlette.staticfiles` như `readyapi.staticfiles` giúp đơn giản hóa việc sử dụng, nhưng nó thực sự đến từ Starlette.
+**ReadyAPI** cung cấp cùng `starlette.staticfiles` như `readyapi.staticfiles` giúp đơn giản hóa việc sử dụng, nhưng nó thực sự đến từ Starlette.
 
 ///
 
@@ -31,7 +31,7 @@ Bạn có thể đọc thêm về điều này trong [Hướng dẫn Người d�
 
 Đường dẫn `directory="static"` là tên của thư mục chứa tệp tĩnh của bạn.
 
-Tham số `name="static"` đặt tên cho nó để có thể được sử dụng bên trong **readyapi**.
+Tham số `name="static"` đặt tên cho nó để có thể được sử dụng bên trong **ReadyAPI**.
 
 Tất cả các tham số này có thể khác với `static`, điều chỉnh chúng với phù hợp với ứng dụng của bạn.
 

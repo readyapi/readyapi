@@ -16,7 +16,7 @@ Esto podría ser útil si, por ejemplo, vives en un país que restringe algunas 
 
 El primer paso es desactivar la documentación automática, ya que por defecto, esos usan el CDN predeterminado.
 
-Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de `readyapi`:
+Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de `ReadyAPI`:
 
 {* ../../docs_src/custom_docs_ui/tutorial001.py hl[8] *}
 
@@ -24,7 +24,7 @@ Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de 
 
 Ahora puedes crear las *path operations* para la documentación personalizada.
 
-Puedes reutilizar las funciones internas de readyapi para crear las páginas HTML para la documentación, y pasarles los argumentos necesarios:
+Puedes reutilizar las funciones internas de ReadyAPI para crear las páginas HTML para la documentación, y pasarles los argumentos necesarios:
 
 * `openapi_url`: la URL donde la página HTML para la documentación puede obtener el OpenAPI esquema de tu API. Puedes usar aquí el atributo `app.openapi_url`.
 * `title`: el título de tu API.
@@ -60,7 +60,7 @@ Ahora, deberías poder ir a tu documentación en <a href="http://127.0.0.1:8000/
 
 El self-hosting de JavaScript y CSS podría ser útil si, por ejemplo, necesitas que tu aplicación siga funcionando incluso offline, sin acceso a Internet, o en una red local.
 
-Aquí verás cómo servir esos archivos tú mismo, en la misma aplicación de readyapi, y configurar la documentación para usarla.
+Aquí verás cómo servir esos archivos tú mismo, en la misma aplicación de ReadyAPI, y configurar la documentación para usarla.
 
 ### Estructura de archivos del proyecto
 
@@ -142,7 +142,7 @@ Ahora podemos configurar la aplicación para usar esos archivos estáticos para 
 
 Igual que cuando usas un CDN personalizado, el primer paso es desactivar la documentación automática, ya que esos usan el CDN por defecto.
 
-Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de `readyapi`:
+Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de `ReadyAPI`:
 
 {* ../../docs_src/custom_docs_ui/tutorial002.py hl[9] *}
 
@@ -150,7 +150,7 @@ Para desactivarlos, establece sus URLs en `None` cuando crees tu aplicación de 
 
 Y de la misma manera que con un CDN personalizado, ahora puedes crear las *path operations* para la documentación personalizada.
 
-Nuevamente, puedes reutilizar las funciones internas de readyapi para crear las páginas HTML para la documentación, y pasarles los argumentos necesarios:
+Nuevamente, puedes reutilizar las funciones internas de ReadyAPI para crear las páginas HTML para la documentación, y pasarles los argumentos necesarios:
 
 * `openapi_url`: la URL donde la página HTML para la documentación puede obtener el OpenAPI esquema de tu API. Puedes usar aquí el atributo `app.openapi_url`.
 * `title`: el título de tu API.

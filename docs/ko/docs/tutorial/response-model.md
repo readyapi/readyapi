@@ -18,7 +18,7 @@
 
 Pydantic 모델 어트리뷰트를 선언한 것과 동일한 타입을 수신하므로 Pydantic 모델이 될 수 있지만, `List[Item]`과 같이 Pydantic 모델들의 `list`일 수도 있습니다.
 
-readyapi는 이 `response_model`를 사용하여:
+ReadyAPI는 이 `response_model`를 사용하여:
 
 * 출력 데이터를 타입 선언으로 변환.
 * 데이터 검증.
@@ -71,7 +71,7 @@ readyapi는 이 `response_model`를 사용하여:
 
 {* ../../docs_src/response_model/tutorial003.py hl[22] *}
 
-따라서 **readyapi**는 출력 모델에서 선언하지 않은 모든 데이터를 (Pydantic을 사용하여) 필터링합니다.
+따라서 **ReadyAPI**는 출력 모델에서 선언하지 않은 모든 데이터를 (Pydantic을 사용하여) 필터링합니다.
 
 ## 문서에서 보기
 
@@ -116,7 +116,7 @@ readyapi는 이 `response_model`를 사용하여:
 
 /// info | 정보
 
-readyapi는 이를 위해 Pydantic 모델의 `.dict()`의 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank"> `exclude_unset` 매개변수</a>를 사용합니다.
+ReadyAPI는 이를 위해 Pydantic 모델의 `.dict()`의 <a href="https://docs.pydantic.dev/latest/concepts/serialization/#modeldict" class="external-link" target="_blank"> `exclude_unset` 매개변수</a>를 사용합니다.
 
 ///
 
@@ -161,7 +161,7 @@ ID가 `baz`인 항목(items)처럼 기본값과 동일한 값을 갖는다면:
 }
 ```
 
-`description`, `tax` 그리고 `tags`가 기본값과 같더라도 (기본값에서 가져오는 대신) 값들이 명시적으로 설정되었다는 것을 인지할 정도로 readyapi는 충분히 똑똑합니다(사실, Pydantic이 충분히 똑똑합니다).
+`description`, `tax` 그리고 `tags`가 기본값과 같더라도 (기본값에서 가져오는 대신) 값들이 명시적으로 설정되었다는 것을 인지할 정도로 ReadyAPI는 충분히 똑똑합니다(사실, Pydantic이 충분히 똑똑합니다).
 
 따라서 JSON 스키마에 포함됩니다.
 
@@ -203,7 +203,7 @@ Pydantic 모델이 하나만 있고 출력에서 ​​일부 데이터를 제�
 
 #### `set` 대신 `list` 사용하기
 
-`list` 또는 `tuple` 대신 `set`을 사용하는 법을 잊었더라도, readyapi는 `set`으로 변환하고 정상적으로 작동합니다:
+`list` 또는 `tuple` 대신 `set`을 사용하는 법을 잊었더라도, ReadyAPI는 `set`으로 변환하고 정상적으로 작동합니다:
 
 {* ../../docs_src/response_model/tutorial006.py hl[31,37] *}
 

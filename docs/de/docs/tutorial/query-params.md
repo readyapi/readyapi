@@ -67,7 +67,7 @@ In diesem Fall wird der Funktionsparameter `q` optional, und standardmäßig `No
 
 /// check
 
-Beachten Sie auch, dass **readyapi** intelligent genug ist, um zu erkennen, dass `item_id` ein Pfad-Parameter ist und `q` keiner, daher muss letzteres ein Query-Parameter sein.
+Beachten Sie auch, dass **ReadyAPI** intelligent genug ist, um zu erkennen, dass `item_id` ein Pfad-Parameter ist und `q` keiner, daher muss letzteres ein Query-Parameter sein.
 
 ///
 
@@ -111,7 +111,7 @@ gehen, oder zu irgendeiner anderen Variante der Groß-/Kleinschreibung (Alles gr
 
 ## Mehrere Pfad- und Query-Parameter
 
-Sie können mehrere Pfad-Parameter und Query-Parameter gleichzeitig deklarieren, **readyapi** weiß, was welches ist.
+Sie können mehrere Pfad-Parameter und Query-Parameter gleichzeitig deklarieren, **ReadyAPI** weiß, was welches ist.
 
 Und Sie müssen sie auch nicht in einer spezifischen Reihenfolge deklarieren.
 

@@ -1,14 +1,14 @@
 # Sub Applications - Mounts
 
-If you need to have two independent readyapi applications, with their own independent OpenAPI and their own docs UIs, you can have a main app and "mount" one (or more) sub-application(s).
+If you need to have two independent ReadyAPI applications, with their own independent OpenAPI and their own docs UIs, you can have a main app and "mount" one (or more) sub-application(s).
 
-## Mounting a **readyapi** application
+## Mounting a **ReadyAPI** application
 
 "Mounting" means adding a completely "independent" application in a specific path, that then takes care of handling everything under that path, with the _path operations_ declared in that sub-application.
 
 ### Top-level application
 
-First, create the main, top-level, **readyapi** application, and its *path operations*:
+First, create the main, top-level, **ReadyAPI** application, and its *path operations*:
 
 {* ../../docs_src/sub_applications/tutorial001.py hl[3, 6:8] *}
 
@@ -16,7 +16,7 @@ First, create the main, top-level, **readyapi** application, and its *path opera
 
 Then, create your sub-application, and its *path operations*.
 
-This sub-application is just another standard readyapi application, but this is the one that will be "mounted":
+This sub-application is just another standard ReadyAPI application, but this is the one that will be "mounted":
 
 {* ../../docs_src/sub_applications/tutorial001.py hl[11, 14:16] *}
 
@@ -58,10 +58,10 @@ If you try interacting with any of the two user interfaces, they will work corre
 
 ### Technical Details: `root_path`
 
-When you mount a sub-application as described above, readyapi will take care of communicating the mount path for the sub-application using a mechanism from the ASGI specification called a `root_path`.
+When you mount a sub-application as described above, ReadyAPI will take care of communicating the mount path for the sub-application using a mechanism from the ASGI specification called a `root_path`.
 
 That way, the sub-application will know to use that path prefix for the docs UI.
 
-And the sub-application could also have its own mounted sub-applications and everything would work correctly, because readyapi handles all these `root_path`s automatically.
+And the sub-application could also have its own mounted sub-applications and everything would work correctly, because ReadyAPI handles all these `root_path`s automatically.
 
 You will learn more about the `root_path` and how to use it explicitly in the section about [Behind a Proxy](behind-a-proxy.md){.internal-link target=_blank}.

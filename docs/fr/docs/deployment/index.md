@@ -1,6 +1,6 @@
 # Déploiement
 
-Le déploiement d'une application **readyapi** est relativement simple.
+Le déploiement d'une application **ReadyAPI** est relativement simple.
 
 ## Que signifie le déploiement
 
@@ -23,6 +23,6 @@ Vous pouvez **déployer un serveur** vous-même en utilisant une combinaison d'o
 cloud** qui fait une partie du travail pour vous, ou encore d'autres options possibles.
 
 Je vais vous montrer certains des principaux concepts que vous devriez probablement avoir à l'esprit lors du déploiement
-d'une application **readyapi** (bien que la plupart de ces concepts s'appliquent à tout autre type d'application web).
+d'une application **ReadyAPI** (bien que la plupart de ces concepts s'appliquent à tout autre type d'application web).
 
 Vous verrez plus de détails à avoir en tête et certaines des techniques pour le faire dans les sections suivantes. ✨

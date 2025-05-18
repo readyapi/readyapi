@@ -39,7 +39,7 @@ Maintenant, du point de vue d'un développeur, voici plusieurs choses à avoir e
 
 Il est courant d'avoir un seul programme/serveur HTTP fonctionnant sur le serveur (la machine, l'hôte, etc.) et
 gérant toutes les parties HTTPS : envoyer les requêtes HTTP décryptées à l'application HTTP réelle fonctionnant sur
-le même serveur (dans ce cas, l'application **readyapi**), prendre la réponse HTTP de l'application, la crypter en utilisant le certificat approprié et la renvoyer au client en utilisant HTTPS. Ce serveur est souvent appelé un <a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">Proxy de terminaison TLS</a>.
+le même serveur (dans ce cas, l'application **ReadyAPI**), prendre la réponse HTTP de l'application, la crypter en utilisant le certificat approprié et la renvoyer au client en utilisant HTTPS. Ce serveur est souvent appelé un <a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">Proxy de terminaison TLS</a>.
 
 ## Let's Encrypt
 

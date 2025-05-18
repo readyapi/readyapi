@@ -2,14 +2,14 @@
 
 ## 使用 `readyapi run` 命令
 
-简而言之，使用 `readyapi run` 来运行您的 readyapi 应用程序：
+简而言之，使用 `readyapi run` 来运行您的 ReadyAPI 应用程序：
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting production server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting production server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -17,7 +17,7 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -40,15 +40,15 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
 这在大多数情况下都能正常运行。😎
 
-例如，您可以使用该命令在容器、服务器等环境中启动您的 **readyapi** 应用。
+例如，您可以使用该命令在容器、服务器等环境中启动您的 **ReadyAPI** 应用。
 
 ## ASGI 服务器
 
 让我们深入了解一些细节。
 
-readyapi 使用了一种用于构建 Python Web 框架和服务器的标准，称为 <abbr title="Asynchronous Server Gateway Interface，异步服务器网关接口">ASGI</abbr>。readyapi 本质上是一个 ASGI Web 框架。
+ReadyAPI 使用了一种用于构建 Python Web 框架和服务器的标准，称为 <abbr title="Asynchronous Server Gateway Interface，异步服务器网关接口">ASGI</abbr>。ReadyAPI 本质上是一个 ASGI Web 框架。
 
-要在远程服务器上运行 **readyapi** 应用（或任何其他 ASGI 应用），您需要一个 ASGI 服务器程序，例如 **Uvicorn**。它是 `readyapi` 命令默认使用的 ASGI 服务器。
+要在远程服务器上运行 **ReadyAPI** 应用（或任何其他 ASGI 应用），您需要一个 ASGI 服务器程序，例如 **Uvicorn**。它是 `readyapi` 命令默认使用的 ASGI 服务器。
 
 除此之外，还有其他一些可选的 ASGI 服务器，例如：
 
@@ -71,7 +71,7 @@ readyapi 使用了一种用于构建 Python Web 框架和服务器的标准，�
 
 ## 安装服务器程序
 
-当您安装 readyapi 时，它自带一个生产环境服务器——Uvicorn，并且您可以使用 `readyapi run` 命令来启动它。
+当您安装 ReadyAPI 时，它自带一个生产环境服务器——Uvicorn，并且您可以使用 `readyapi run` 命令来启动它。
 
 不过，您也可以手动安装 ASGI 服务器。
 
@@ -97,13 +97,13 @@ $ pip install "uvicorn[standard]"
 
 其中包括 `uvloop`，这是 `asyncio` 的高性能替代方案，能够显著提升并发性能。
 
-当您使用 `pip install "readyapi[standard]"` 安装 readyapi 时，实际上也会安装 `uvicorn[standard]`。
+当您使用 `pip install "readyapi[standard]"` 安装 ReadyAPI 时，实际上也会安装 `uvicorn[standard]`。
 
 ///
 
 ## 运行服务器程序
 
-如果您手动安装了 ASGI 服务器，通常需要以特定格式传递一个导入字符串，以便服务器能够正确导入您的 readyapi 应用：
+如果您手动安装了 ASGI 服务器，通常需要以特定格式传递一个导入字符串，以便服务器能够正确导入您的 ReadyAPI 应用：
 
 <div class="termy">
 
@@ -120,7 +120,7 @@ $ uvicorn main:app --host 0.0.0.0 --port 80
 命令 `uvicorn main:app` 的含义如下：
 
 * `main`：指的是 `main.py` 文件（即 Python “模块”）。
-* `app`：指的是 `main.py` 文件中通过 `app = readyapi()` 创建的对象。
+* `app`：指的是 `main.py` 文件中通过 `app = ReadyAPI()` 创建的对象。
 
 它等价于以下导入语句：
 

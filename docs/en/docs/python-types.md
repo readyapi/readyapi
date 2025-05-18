@@ -6,11 +6,11 @@ These **"type hints"** or annotations are a special syntax that allow declaring 
 
 By declaring types for your variables, editors and tools can give you better support.
 
-This is just a **quick tutorial / refresher** about Python type hints. It covers only the minimum necessary to use them with **readyapi**... which is actually very little.
+This is just a **quick tutorial / refresher** about Python type hints. It covers only the minimum necessary to use them with **ReadyAPI**... which is actually very little.
 
-**readyapi** is all based on these type hints, they give it many advantages and benefits.
+**ReadyAPI** is all based on these type hints, they give it many advantages and benefits.
 
-But even if you never use **readyapi**, you would benefit from learning a bit about them.
+But even if you never use **ReadyAPI**, you would benefit from learning a bit about them.
 
 /// note
 
@@ -120,7 +120,7 @@ Now you know that you have to fix it, convert `age` to a string with `str(age)`:
 
 You just saw the main place to declare type hints. As function parameters.
 
-This is also the main place you would use them with **readyapi**.
+This is also the main place you would use them with **ReadyAPI**.
 
 ### Simple types
 
@@ -493,7 +493,7 @@ To learn more about <a href="https://docs.pydantic.dev/" class="external-link" t
 
 ///
 
-**readyapi** is all based on Pydantic.
+**ReadyAPI** is all based on Pydantic.
 
 You will see a lot more of all this in practice in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
 
@@ -521,7 +521,7 @@ In Python 3.9, `Annotated` is part of the standard library, so you can import it
 
 In versions below Python 3.9, you import `Annotated` from `typing_extensions`.
 
-It will already be installed with **readyapi**.
+It will already be installed with **ReadyAPI**.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -531,7 +531,7 @@ It will already be installed with **readyapi**.
 
 Python itself doesn't do anything with this `Annotated`. And for editors and other tools, the type is still `str`.
 
-But you can use this space in `Annotated` to provide **readyapi** with additional metadata about how you want your application to behave.
+But you can use this space in `Annotated` to provide **ReadyAPI** with additional metadata about how you want your application to behave.
 
 The important thing to remember is that **the first *type parameter*** you pass to `Annotated` is the **actual type**. The rest, is just metadata for other tools.
 
@@ -547,16 +547,16 @@ And also that your code will be very compatible with many other Python tools and
 
 ///
 
-## Type hints in **readyapi**
+## Type hints in **ReadyAPI**
 
-**readyapi** takes advantage of these type hints to do several things.
+**ReadyAPI** takes advantage of these type hints to do several things.
 
-With **readyapi** you declare parameters with type hints and you get:
+With **ReadyAPI** you declare parameters with type hints and you get:
 
 * **Editor support**.
 * **Type checks**.
 
-...and **readyapi** uses the same declarations to:
+...and **ReadyAPI** uses the same declarations to:
 
 * **Define requirements**: from request path parameters, query parameters, headers, bodies, dependencies, etc.
 * **Convert data**: from the request to the required type.
@@ -567,7 +567,7 @@ With **readyapi** you declare parameters with type hints and you get:
 
 This might all sound abstract. Don't worry. You'll see all this in action in the [Tutorial - User Guide](tutorial/index.md){.internal-link target=_blank}.
 
-The important thing is that by using standard Python types, in a single place (instead of adding more classes, decorators, etc), **readyapi** will do a lot of the work for you.
+The important thing is that by using standard Python types, in a single place (instead of adding more classes, decorators, etc), **ReadyAPI** will do a lot of the work for you.
 
 /// info
 

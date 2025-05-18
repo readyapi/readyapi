@@ -20,7 +20,7 @@ Python 可以把类实例变为**可调用项**。
 
 {* ../../docs_src/dependencies/tutorial011.py hl[10] *}
 
-本例中，**readyapi**  使用 `__call__` 检查附加参数及子依赖项，稍后，还要调用它向*路径操作函数*传递值。
+本例中，**ReadyAPI**  使用 `__call__` 检查附加参数及子依赖项，稍后，还要调用它向*路径操作函数*传递值。
 
 ## 参数化实例
 
@@ -28,7 +28,7 @@ Python 可以把类实例变为**可调用项**。
 
 {* ../../docs_src/dependencies/tutorial011.py hl[7] *}
 
-本例中，**readyapi** 不使用 `__init__`，我们要直接在代码中使用。
+本例中，**ReadyAPI** 不使用 `__init__`，我们要直接在代码中使用。
 
 ## 创建实例
 
@@ -42,7 +42,7 @@ Python 可以把类实例变为**可调用项**。
 
 然后，不要再在 `Depends(checker)` 中使用 `Depends(FixedContentQueryChecker)`， 而是要使用 `checker`，因为依赖项是类实例 - `checker`，不是类。
 
-处理依赖项时，**readyapi** 以如下方式调用 `checker`：
+处理依赖项时，**ReadyAPI** 以如下方式调用 `checker`：
 
 ```Python
 checker(q="somequery")

@@ -6,11 +6,11 @@ Những **"type hints"** hay chú thích là một cú pháp đặc biệt cho p
 
 Bằng việc khai báo kiểu dữ liệu cho các biến của bạn, các trình soạn thảo và các công cụ có thể hỗ trợ bạn tốt hơn.
 
-Đây chỉ là một **hướng dẫn nhanh** về gợi ý kiểu dữ liệu trong Python. Nó chỉ bao gồm những điều cần thiết tối thiểu để sử dụng chúng với **readyapi**... đó thực sự là rất ít.
+Đây chỉ là một **hướng dẫn nhanh** về gợi ý kiểu dữ liệu trong Python. Nó chỉ bao gồm những điều cần thiết tối thiểu để sử dụng chúng với **ReadyAPI**... đó thực sự là rất ít.
 
-**readyapi** hoàn toàn được dựa trên những gợi ý kiểu dữ liệu, chúng mang đến nhiều ưu điểm và lợi ích.
+**ReadyAPI** hoàn toàn được dựa trên những gợi ý kiểu dữ liệu, chúng mang đến nhiều ưu điểm và lợi ích.
 
-Nhưng thậm chí nếu bạn không bao giờ sử dụng **readyapi**, bạn sẽ được lợi từ việc học một ít về chúng.
+Nhưng thậm chí nếu bạn không bao giờ sử dụng **ReadyAPI**, bạn sẽ được lợi từ việc học một ít về chúng.
 
 /// note
 
@@ -125,7 +125,7 @@ Bây giờ bạn biết rằng bạn phải sửa nó, chuyển `age` sang một
 
 Bạn mới chỉ nhìn thấy những nơi chủ yếu để đặt khai báo kiểu dữ liệu. Như là các tham số của hàm.
 
-Đây cũng là nơi chủ yếu để bạn sử dụng chúng với **readyapi**.
+Đây cũng là nơi chủ yếu để bạn sử dụng chúng với **ReadyAPI**.
 
 ### Kiểu dữ liệu đơn giản
 
@@ -509,7 +509,7 @@ Một ví dụ từ tài liệu chính thức của Pydantic:
 
 ///
 
-**readyapi** được dựa hoàn toàn trên Pydantic.
+**ReadyAPI** được dựa hoàn toàn trên Pydantic.
 
 Bạn sẽ thấy nhiều ví dụ thực tế hơn trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=_blank}.
 
@@ -537,7 +537,7 @@ Trong Python 3.9, `Annotated` là một phần của thư viện chuẩn, do đ�
 
 Ở phiên bản dưới Python 3.9, bạn import `Annotated` từ `typing_extensions`.
 
-Nó đã được cài đặt sẵng cùng với **readyapi**.
+Nó đã được cài đặt sẵng cùng với **ReadyAPI**.
 
 ```Python hl_lines="1  4"
 {!> ../../docs_src/python_types/tutorial013.py!}
@@ -547,7 +547,7 @@ Nó đã được cài đặt sẵng cùng với **readyapi**.
 
 Python bản thân nó không làm bất kì điều gì với `Annotated`. Với các trình soạn thảo và các công cụ khác, kiểu dữ liệu vẫn là `str`.
 
-Nhưng bạn có thể sử dụng `Annotated` để cung cấp cho **readyapi** metadata bổ sung về cách mà bạn muốn ứng dụng của bạn xử lí.
+Nhưng bạn có thể sử dụng `Annotated` để cung cấp cho **ReadyAPI** metadata bổ sung về cách mà bạn muốn ứng dụng của bạn xử lí.
 
 Điều quan trọng cần nhớ là ***tham số kiểu dữ liệu* đầu tiên** bạn truyền tới `Annotated` là **kiểu giá trị thực sự**. Phần còn lại chỉ là metadata cho các công cụ khác.
 
@@ -564,16 +564,16 @@ Và code của bạn sẽ tương thích với nhiều công cụ và thư việ
 
 ///
 
-## Các gợi ý kiểu dữ liệu trong **readyapi**
+## Các gợi ý kiểu dữ liệu trong **ReadyAPI**
 
-**readyapi** lấy các ưu điểm của các gợi ý kiểu dữ liệu để thực hiện một số thứ.
+**ReadyAPI** lấy các ưu điểm của các gợi ý kiểu dữ liệu để thực hiện một số thứ.
 
-Với **readyapi**, bạn khai báo các tham số với gợi ý kiểu và bạn có được:
+Với **ReadyAPI**, bạn khai báo các tham số với gợi ý kiểu và bạn có được:
 
 * **Sự hỗ trợ từ các trình soạn thảo**.
 * **Kiểm tra kiểu dữ liệu (type checking)**.
 
-...và **readyapi** sử dụng các khia báo để:
+...và **ReadyAPI** sử dụng các khia báo để:
 
 * **Định nghĩa các yêu cầu**: từ tham số đường dẫn của request, tham số query, headers, bodies, các phụ thuộc (dependencies),...
 * **Chuyển dổi dữ liệu*: từ request sang kiểu dữ liệu được yêu cầu.
@@ -584,7 +584,7 @@ Với **readyapi**, bạn khai báo các tham số với gợi ý kiểu và b�
 
 Điều này có thể nghe trừu tượng. Đừng lo lắng. Bạn sẽ thấy tất cả chúng trong [Hướng dẫn sử dụng](tutorial/index.md){.internal-link target=_blank}.
 
-Điều quan trọng là bằng việc sử dụng các kiểu dữ liệu chuẩn của Python (thay vì thêm các lớp, decorators,...), **readyapi** sẽ thực hiện nhiều công việc cho bạn.
+Điều quan trọng là bằng việc sử dụng các kiểu dữ liệu chuẩn của Python (thay vì thêm các lớp, decorators,...), **ReadyAPI** sẽ thực hiện nhiều công việc cho bạn.
 
 /// info
 

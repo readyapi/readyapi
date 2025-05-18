@@ -18,7 +18,7 @@
 
 이제 `/v1/` 경로에 있는 모든 요청은 Flask 응용 프로그램에서 처리됩니다.
 
-그리고 나머지는 **readyapi**에 의해 처리됩니다.
+그리고 나머지는 **ReadyAPI**에 의해 처리됩니다.
 
 실행하면 <a href="http://localhost:8000/v1/" class="external-link" target="_blank">http://localhost:8000/v1/</a>으로 이동해서 Flask의 응답을 볼 수 있습니다:
 

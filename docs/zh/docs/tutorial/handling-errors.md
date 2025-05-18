@@ -33,7 +33,7 @@
 
 因为是 Python 异常，所以不能 `return`，只能 `raise`。
 
-如在调用*路径操作函数*里的工具函数时，触发了 `HTTPException`，readyapi 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求，并把 `HTTPException` 的 HTTP 错误发送至客户端。
+如在调用*路径操作函数*里的工具函数时，触发了 `HTTPException`，ReadyAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求，并把 `HTTPException` 的 HTTP 错误发送至客户端。
 
 在介绍依赖项与安全的章节中，您可以了解更多用 `raise` 异常代替 `return` 值的优势。
 
@@ -67,7 +67,7 @@
 
 还支持传递 `dict`、`list` 等数据结构。
 
-**readyapi** 能自动处理这些数据，并将之转换为 JSON。
+**ReadyAPI** 能自动处理这些数据，并将之转换为 JSON。
 
 ///
 
@@ -87,7 +87,7 @@
 
 假设要触发的自定义异常叫作 `UnicornException`。
 
-且需要 readyapi 实现全局处理该异常。
+且需要 ReadyAPI 实现全局处理该异常。
 
 此时，可以用 `@app.exception_handler()` 添加自定义异常控制器：
 
@@ -108,13 +108,13 @@
 
 `from starlette.requests import Request` 和 `from starlette.responses import JSONResponse` 也可以用于导入 `Request` 和 `JSONResponse`。
 
-**readyapi** 提供了与 `starlette.responses` 相同的 `readyapi.responses` 作为快捷方式，但大部分响应操作都可以直接从 Starlette 导入。同理，`Request` 也是如此。
+**ReadyAPI** 提供了与 `starlette.responses` 相同的 `readyapi.responses` 作为快捷方式，但大部分响应操作都可以直接从 Starlette 导入。同理，`Request` 也是如此。
 
 ///
 
 ## 覆盖默认异常处理器
 
-**readyapi** 自带了一些默认异常处理器。
+**ReadyAPI** 自带了一些默认异常处理器。
 
 触发 `HTTPException` 或请求无效数据时，这些处理器返回默认的 JSON 响应结果。
 
@@ -122,7 +122,7 @@
 
 ### 覆盖请求验证异常
 
-请求中包含无效数据时，**readyapi** 内部会触发 `RequestValidationError`。
+请求中包含无效数据时，**ReadyAPI** 内部会触发 `RequestValidationError`。
 
 该异常也内置了默认异常处理器。
 
@@ -169,7 +169,7 @@ path -> item_id
 
 `RequestValidationError` 是 Pydantic 的 <a href="https://docs.pydantic.dev/latest/concepts/models/#error-handling" class="external-link" target="_blank">`ValidationError`</a> 的子类。
 
-**readyapi** 调用的就是 `RequestValidationError` 类，因此，如果在 `response_model` 中使用 Pydantic 模型，且数据有错误时，在日志中就会看到这个错误。
+**ReadyAPI** 调用的就是 `RequestValidationError` 类，因此，如果在 `response_model` 中使用 Pydantic 模型，且数据有错误时，在日志中就会看到这个错误。
 
 但客户端或用户看不到这个错误。反之，客户端接收到的是 HTTP 状态码为 `500` 的「内部服务器错误」。
 
@@ -189,7 +189,7 @@ path -> item_id
 
 还可以使用 `from starlette.responses import PlainTextResponse`。
 
-**readyapi** 提供了与 `starlette.responses` 相同的 `readyapi.responses` 作为快捷方式，但大部分响应都可以直接从 Starlette 导入。
+**ReadyAPI** 提供了与 `starlette.responses` 相同的 `readyapi.responses` 作为快捷方式，但大部分响应都可以直接从 Starlette 导入。
 
 ///
 
@@ -233,17 +233,17 @@ path -> item_id
 
 ```
 
-### readyapi `HTTPException` vs Starlette `HTTPException`
+### ReadyAPI `HTTPException` vs Starlette `HTTPException`
 
-**readyapi** 也提供了自有的 `HTTPException`。
+**ReadyAPI** 也提供了自有的 `HTTPException`。
 
-**readyapi** 的 `HTTPException` 继承自 Starlette 的 `HTTPException` 错误类。
+**ReadyAPI** 的 `HTTPException` 继承自 Starlette 的 `HTTPException` 错误类。
 
-它们之间的唯一区别是，**readyapi** 的 `HTTPException` 可以在响应中添加响应头。
+它们之间的唯一区别是，**ReadyAPI** 的 `HTTPException` 可以在响应中添加响应头。
 
 OAuth 2.0 等安全工具需要在内部调用这些响应头。
 
-因此你可以继续像平常一样在代码中触发 **readyapi** 的 `HTTPException` 。
+因此你可以继续像平常一样在代码中触发 **ReadyAPI** 的 `HTTPException` 。
 
 但注册异常处理器时，应该注册到来自 Starlette 的 `HTTPException`。
 
@@ -256,9 +256,9 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 ```
 
-### 复用 **readyapi** 异常处理器
+### 复用 **ReadyAPI** 异常处理器
 
-readyapi 支持先对异常进行某些处理，然后再使用 **readyapi** 中处理该异常的默认异常处理器。
+ReadyAPI 支持先对异常进行某些处理，然后再使用 **ReadyAPI** 中处理该异常的默认异常处理器。
 
 从 `readyapi.exception_handlers` 中导入要复用的默认异常处理器：
 

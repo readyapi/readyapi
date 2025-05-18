@@ -16,21 +16,21 @@ E os **seus usuários** definem de alguma forma (em algum painel por exemplo) a 
 
 Toda a **lógica** sobre como cadastrar as URLs para os webhooks e o código para enviar de fato as requisições cabe a você definir. Você escreve da maneira que você desejar no **seu próprio código**.
 
-## Documentando webhooks com o readyapi e OpenAPI
+## Documentando webhooks com o ReadyAPI e OpenAPI
 
-Com o **readyapi**, utilizando o OpenAPI, você pode definir os nomes destes webhooks, os tipos das operações HTTP que a sua aplicação pode enviar (e.g. `POST`, `PUT`, etc.) e os **corpos** da requisição que a sua aplicação enviaria.
+Com o **ReadyAPI**, utilizando o OpenAPI, você pode definir os nomes destes webhooks, os tipos das operações HTTP que a sua aplicação pode enviar (e.g. `POST`, `PUT`, etc.) e os **corpos** da requisição que a sua aplicação enviaria.
 
 Isto pode facilitar bastante para os seus usuários **implementarem as APIs deles** para receber as requisições dos seus **webhooks**, eles podem inclusive ser capazes de gerar parte do código da API deles.
 
 /// info | Informação
 
-Webhooks estão disponíveis a partir do OpenAPI 3.1.0, e possui suporte do readyapi a partir da versão `0.99.0`.
+Webhooks estão disponíveis a partir do OpenAPI 3.1.0, e possui suporte do ReadyAPI a partir da versão `0.99.0`.
 
 ///
 
 ## Uma aplicação com webhooks
 
-Quando você cria uma aplicação com o **readyapi**, existe um atributo chamado `webhooks`, que você utilizar para defini-los da mesma maneira que você definiria as suas **operações de rotas**, utilizando por exemplo `@app.webhooks.post()`.
+Quando você cria uma aplicação com o **ReadyAPI**, existe um atributo chamado `webhooks`, que você utilizar para defini-los da mesma maneira que você definiria as suas **operações de rotas**, utilizando por exemplo `@app.webhooks.post()`.
 
 {* ../../docs_src/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
 

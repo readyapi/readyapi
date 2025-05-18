@@ -24,7 +24,7 @@ Das wollen wir besser machen: Laden wir das Modell, bevor die Requests bearbeite
 
 ## Lifespan
 
-Sie können diese Logik beim *Hochfahren* und *Herunterfahren* mithilfe des `lifespan`-Parameters der `readyapi`-App und eines „Kontextmanagers“ definieren (ich zeige Ihnen gleich, was das ist).
+Sie können diese Logik beim *Hochfahren* und *Herunterfahren* mithilfe des `lifespan`-Parameters der `ReadyAPI`-App und eines „Kontextmanagers“ definieren (ich zeige Ihnen gleich, was das ist).
 
 Beginnen wir mit einem Beispiel und sehen es uns dann im Detail an.
 
@@ -78,9 +78,9 @@ async with lifespan(app):
 
 Wenn Sie wie oben einen Kontextmanager oder einen asynchronen Kontextmanager erstellen, führt dieser vor dem Betreten des `with`-Blocks den Code vor dem `yield` aus, und nach dem Verlassen des `with`-Blocks wird er den Code nach dem `yield` ausführen.
 
-In unserem obigen Codebeispiel verwenden wir ihn nicht direkt, sondern übergeben ihn an readyapi, damit es ihn verwenden kann.
+In unserem obigen Codebeispiel verwenden wir ihn nicht direkt, sondern übergeben ihn an ReadyAPI, damit es ihn verwenden kann.
 
-Der Parameter `lifespan` der `readyapi`-App benötigt einen **asynchronen Kontextmanager**, wir können ihm also unseren neuen asynchronen Kontextmanager `lifespan` übergeben.
+Der Parameter `lifespan` der `ReadyAPI`-App benötigt einen **asynchronen Kontextmanager**, wir können ihm also unseren neuen asynchronen Kontextmanager `lifespan` übergeben.
 
 {* ../../docs_src/events/tutorial003.py hl[22] *}
 
@@ -88,7 +88,7 @@ Der Parameter `lifespan` der `readyapi`-App benötigt einen **asynchronen Kontex
 
 /// warning | Achtung
 
-Der empfohlene Weg, das *Hochfahren* und *Herunterfahren* zu handhaben, ist die Verwendung des `lifespan`-Parameters der `readyapi`-App, wie oben beschrieben. Wenn Sie einen `lifespan`-Parameter übergeben, werden die `startup`- und `shutdown`-Eventhandler nicht mehr aufgerufen. Es ist entweder alles `lifespan` oder alles Events, nicht beides.
+Der empfohlene Weg, das *Hochfahren* und *Herunterfahren* zu handhaben, ist die Verwendung des `lifespan`-Parameters der `ReadyAPI`-App, wie oben beschrieben. Wenn Sie einen `lifespan`-Parameter übergeben, werden die `startup`- und `shutdown`-Eventhandler nicht mehr aufgerufen. Es ist entweder alles `lifespan` oder alles Events, nicht beides.
 
 Sie können diesen Teil wahrscheinlich überspringen.
 

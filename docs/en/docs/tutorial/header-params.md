@@ -88,4 +88,4 @@ The response would be like:
 
 Declare headers with `Header`, using the same common pattern as `Query`, `Path` and `Cookie`.
 
-And don't worry about underscores in your variables, **readyapi** will take care of converting them.
+And don't worry about underscores in your variables, **ReadyAPI** will take care of converting them.

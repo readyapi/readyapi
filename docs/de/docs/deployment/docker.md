@@ -1,6 +1,6 @@
-# readyapi in Containern – Docker
+# ReadyAPI in Containern – Docker
 
-Beim Deployment von readyapi-Anwendungen besteht ein gängiger Ansatz darin, ein **Linux-Containerimage** zu erstellen. Normalerweise erfolgt dies mit <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Sie können dieses Containerimage dann auf eine von mehreren möglichen Arten bereitstellen.
+Beim Deployment von ReadyAPI-Anwendungen besteht ein gängiger Ansatz darin, ein **Linux-Containerimage** zu erstellen. Normalerweise erfolgt dies mit <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Sie können dieses Containerimage dann auf eine von mehreren möglichen Arten bereitstellen.
 
 Die Verwendung von Linux-Containern bietet mehrere Vorteile, darunter **Sicherheit**, **Replizierbarkeit**, **Einfachheit** und andere.
 
@@ -91,11 +91,11 @@ Ein Container hat normalerweise einen **einzelnen Prozess**, aber es ist auch m�
 
 Es ist jedoch nicht möglich, einen laufenden Container, ohne **mindestens einen laufenden Prozess** zu haben. Wenn der Hauptprozess stoppt, stoppt der Container.
 
-## Ein Docker-Image für readyapi erstellen
+## Ein Docker-Image für ReadyAPI erstellen
 
 Okay, wollen wir jetzt etwas bauen! 🚀
 
-Ich zeige Ihnen, wie Sie ein **Docker-Image** für readyapi **von Grund auf** erstellen, basierend auf dem **offiziellen Python**-Image.
+Ich zeige Ihnen, wie Sie ein **Docker-Image** für ReadyAPI **von Grund auf** erstellen, basierend auf dem **offiziellen Python**-Image.
 
 Das ist, was Sie in **den meisten Fällen** tun möchten, zum Beispiel:
 
@@ -111,7 +111,7 @@ Dies hängt hauptsächlich von dem Tool ab, mit dem Sie diese Anforderungen **in
 
 Die gebräuchlichste Methode besteht darin, eine Datei `requirements.txt` mit den Namen der Packages und deren Versionen zu erstellen, eine pro Zeile.
 
-Sie würden natürlich die gleichen Ideen verwenden, die Sie in [Über readyapi-Versionen](versions.md){.internal-link target=_blank} gelesen haben, um die Versionsbereiche festzulegen.
+Sie würden natürlich die gleichen Ideen verwenden, die Sie in [Über ReadyAPI-Versionen](versions.md){.internal-link target=_blank} gelesen haben, um die Versionsbereiche festzulegen.
 
 Ihre `requirements.txt` könnte beispielsweise so aussehen:
 
@@ -141,7 +141,7 @@ Ich zeige Ihnen später in einem Abschnitt unten ein Beispiel unter Verwendung v
 
 ///
 
-### Den **readyapi**-Code erstellen
+### Den **ReadyAPI**-Code erstellen
 
 * Erstellen Sie ein `app`-Verzeichnis und betreten Sie es.
 * Erstellen Sie eine leere Datei `__init__.py`.
@@ -150,9 +150,9 @@ Ich zeige Ihnen später in einem Abschnitt unten ein Beispiel unter Verwendung v
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -293,7 +293,7 @@ COPY ./app /code/app
 Nachdem nun alle Dateien vorhanden sind, erstellen wir das Containerimage.
 
 * Gehen Sie zum Projektverzeichnis (dort, wo sich Ihr `Dockerfile` und Ihr `app`-Verzeichnis befindet).
-* Erstellen Sie Ihr readyapi-Image:
+* Erstellen Sie Ihr ReadyAPI-Image:
 
 <div class="termy">
 
@@ -351,9 +351,9 @@ Sie sehen die alternative automatische Dokumentation (bereitgestellt von <a href
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
-## Ein Docker-Image mit einem Single-File-readyapi erstellen
+## Ein Docker-Image mit einem Single-File-ReadyAPI erstellen
 
-Wenn Ihr readyapi eine einzelne Datei ist, zum Beispiel `main.py` ohne ein `./app`-Verzeichnis, könnte Ihre Dateistruktur wie folgt aussehen:
+Wenn Ihr ReadyAPI eine einzelne Datei ist, zum Beispiel `main.py` ohne ein `./app`-Verzeichnis, könnte Ihre Dateistruktur wie folgt aussehen:
 
 ```
 .
@@ -384,7 +384,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 2. Führe Uvicorn aus und weisen es an, das `app`-Objekt von `main` zu importieren (anstatt von `app.main` zu importieren).
 
-Passen Sie dann den Uvicorn-Befehl an, um das neue Modul `main` anstelle von `app.main` zu verwenden, um das readyapi-Objekt `app` zu importieren.
+Passen Sie dann den Uvicorn-Befehl an, um das neue Modul `main` anstelle von `app.main` zu verwenden, um das ReadyAPI-Objekt `app` zu importieren.
 
 ## Deployment-Konzepte
 
@@ -405,7 +405,7 @@ Sehen wir uns diese **Deployment-Konzepte** im Hinblick auf Container noch einma
 
 ## HTTPS
 
-Wenn wir uns nur auf das **Containerimage** für eine readyapi-Anwendung (und später auf den laufenden **Container**) konzentrieren, würde HTTPS normalerweise **extern** von einem anderen Tool verarbeitet.
+Wenn wir uns nur auf das **Containerimage** für eine ReadyAPI-Anwendung (und später auf den laufenden **Container**) konzentrieren, würde HTTPS normalerweise **extern** von einem anderen Tool verarbeitet.
 
 Es könnte sich um einen anderen Container handeln, zum Beispiel mit <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>, welcher **HTTPS** und **automatischen** Erwerb von **Zertifikaten** handhabt.
 
@@ -453,7 +453,7 @@ Und wenn Sie mit Containern arbeiten, verfügt das gleiche System, mit dem Sie d
 
 Bei der Arbeit mit **Kubernetes** oder ähnlichen verteilten Containerverwaltungssystemen würde die Verwendung ihrer internen Netzwerkmechanismen es dem einzelnen **Load Balancer**, der den Haupt-**Port** überwacht, ermöglichen, Kommunikation (Requests) an möglicherweise **mehrere Container** weiterzuleiten, in denen Ihre Anwendung ausgeführt wird.
 
-Jeder dieser Container, in denen Ihre Anwendung ausgeführt wird, verfügt normalerweise über **nur einen Prozess** (z. B. einen Uvicorn-Prozess, der Ihre readyapi-Anwendung ausführt). Es wären alles **identische Container**, die das Gleiche ausführen, welche aber jeweils über einen eigenen Prozess, Speicher, usw. verfügen. Auf diese Weise würden Sie die **Parallelisierung** in **verschiedenen Kernen** der CPU nutzen. Oder sogar in **verschiedenen Maschinen**.
+Jeder dieser Container, in denen Ihre Anwendung ausgeführt wird, verfügt normalerweise über **nur einen Prozess** (z. B. einen Uvicorn-Prozess, der Ihre ReadyAPI-Anwendung ausführt). Es wären alles **identische Container**, die das Gleiche ausführen, welche aber jeweils über einen eigenen Prozess, Speicher, usw. verfügen. Auf diese Weise würden Sie die **Parallelisierung** in **verschiedenen Kernen** der CPU nutzen. Oder sogar in **verschiedenen Maschinen**.
 
 Und das verteilte Containersystem mit dem **Load Balancer** würde **die Requests abwechselnd** an jeden einzelnen Container mit Ihrer Anwendung verteilen. Jeder Request könnte also von einem der mehreren **replizierten Container** verarbeitet werden, in denen Ihre Anwendung ausgeführt wird.
 
@@ -546,7 +546,7 @@ Dieses Image wäre vor allem in den oben beschriebenen Situationen nützlich: [C
 
 /// warning | Achtung
 
-Es besteht eine hohe Wahrscheinlichkeit, dass Sie dieses oder ein ähnliches Basisimage **nicht** benötigen und es besser wäre, wenn Sie das Image von Grund auf neu erstellen würden, wie [oben beschrieben in: Ein Docker-Image für readyapi erstellen](#ein-docker-image-fur-readyapi-erstellen).
+Es besteht eine hohe Wahrscheinlichkeit, dass Sie dieses oder ein ähnliches Basisimage **nicht** benötigen und es besser wäre, wenn Sie das Image von Grund auf neu erstellen würden, wie [oben beschrieben in: Ein Docker-Image für ReadyAPI erstellen](#ein-docker-image-fur-readyapi-erstellen).
 
 ///
 
@@ -604,7 +604,7 @@ COPY ./app /app/app
 
 ### Wann verwenden
 
-Sie sollten dieses offizielle Basisimage (oder ein ähnliches) wahrscheinlich **nicht** benutzen, wenn Sie **Kubernetes** (oder andere) verwenden und Sie bereits **Replikation** auf Cluster ebene mit mehreren **Containern** eingerichtet haben. In diesen Fällen ist es besser, **ein Image von Grund auf zu erstellen**, wie oben beschrieben: [Ein Docker-Image für readyapi erstellen](#ein-docker-image-fur-readyapi-erstellen).
+Sie sollten dieses offizielle Basisimage (oder ein ähnliches) wahrscheinlich **nicht** benutzen, wenn Sie **Kubernetes** (oder andere) verwenden und Sie bereits **Replikation** auf Cluster ebene mit mehreren **Containern** eingerichtet haben. In diesen Fällen ist es besser, **ein Image von Grund auf zu erstellen**, wie oben beschrieben: [Ein Docker-Image für ReadyAPI erstellen](#ein-docker-image-fur-readyapi-erstellen).
 
 Dieses Image wäre vor allem in den oben in [Container mit mehreren Prozessen und Sonderfälle](#container-mit-mehreren-prozessen-und-sonderfalle) beschriebenen Sonderfällen nützlich. Wenn Ihre Anwendung beispielsweise **einfach genug** ist, dass das Festlegen einer Standardanzahl von Prozessen basierend auf der CPU gut funktioniert, möchten Sie sich nicht mit der manuellen Konfiguration der Replikation auf Cluster ebene herumschlagen und führen nicht mehr als einen Container mit Ihrer Anwendung aus. Oder wenn Sie das Deployment mit **Docker Compose** durchführen und auf einem einzelnen Server laufen, usw.
 
@@ -728,4 +728,4 @@ In den meisten Fällen möchten Sie wahrscheinlich kein Basisimage verwenden und
 
 Indem Sie auf die **Reihenfolge** der Anweisungen im `Dockerfile` und den **Docker-Cache** achten, können Sie **die Build-Zeiten minimieren**, um Ihre Produktivität zu erhöhen (und Langeweile zu vermeiden). 😎
 
-In bestimmten Sonderfällen möchten Sie möglicherweise das offizielle Docker-Image für readyapi verwenden. 🤓
+In bestimmten Sonderfällen möchten Sie möglicherweise das offizielle Docker-Image für ReadyAPI verwenden. 🤓

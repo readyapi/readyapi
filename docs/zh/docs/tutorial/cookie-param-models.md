@@ -6,7 +6,7 @@
 
 /// note
 
-自 readyapi 版本 `0.115.0` 起支持此功能。🤓
+自 ReadyAPI 版本 `0.115.0` 起支持此功能。🤓
 
 ///
 
@@ -22,7 +22,7 @@
 
 {* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
-**readyapi** 将从请求中接收到的 **cookie** 中**提取**出**每个字段**的数据，并提供您定义的 Pydantic 模型。
+**ReadyAPI** 将从请求中接收到的 **cookie** 中**提取**出**每个字段**的数据，并提供您定义的 Pydantic 模型。
 
 ## 查看文档
 
@@ -73,4 +73,4 @@
 
 ## 总结
 
-您可以使用 **Pydantic 模型**在 **readyapi** 中声明 <abbr title="走之前再来块小饼干吧。 🍪">**cookie**</abbr>。😎
+您可以使用 **Pydantic 模型**在 **ReadyAPI** 中声明 <abbr title="走之前再来块小饼干吧。 🍪">**cookie**</abbr>。😎

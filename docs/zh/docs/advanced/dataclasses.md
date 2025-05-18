@@ -1,14 +1,14 @@
 # 使用数据类
 
-readyapi 基于 **Pydantic** 构建，前文已经介绍过如何使用 Pydantic 模型声明请求与响应。
+ReadyAPI 基于 **Pydantic** 构建，前文已经介绍过如何使用 Pydantic 模型声明请求与响应。
 
-但 readyapi 还可以使用数据类（<a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a>）：
+但 ReadyAPI 还可以使用数据类（<a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a>）：
 
 {* ../../docs_src/dataclasses/tutorial001.py hl[1,7:12,19:20] *}
 
 这还是借助于 **Pydantic** 及其<a href="https://pydantic-docs.helpmanual.io/usage/dataclasses/#use-of-stdlib-dataclasses-with-basemodel" class="external-link" target="_blank">内置的 `dataclasses`</a>。
 
-因此，即便上述代码没有显式使用 Pydantic，readyapi 仍会使用 Pydantic 把标准数据类转换为 Pydantic 数据类（`dataclasses`）。
+因此，即便上述代码没有显式使用 Pydantic，ReadyAPI 仍会使用 Pydantic 把标准数据类转换为 Pydantic 数据类（`dataclasses`）。
 
 并且，它仍然支持以下功能：
 
@@ -24,7 +24,7 @@ readyapi 基于 **Pydantic** 构建，前文已经介绍过如何使用 Pydantic
 
 因此，开发时仍需要使用 Pydantic 模型。
 
-但如果数据类很多，这一技巧能给 readyapi 开发 Web API 增添不少助力。🤓
+但如果数据类很多，这一技巧能给 ReadyAPI 开发 Web API 增添不少助力。🤓
 
 ///
 
@@ -66,7 +66,7 @@ API 文档中也会显示相关概图：
 
 6. 这行代码返回的是包含 `items` 的字典，`items` 是数据类列表；
 
-    readyapi 仍能把数据<abbr title="把数据转换为可以传输的格式">序列化</abbr>为 JSON；
+    ReadyAPI 仍能把数据<abbr title="把数据转换为可以传输的格式">序列化</abbr>为 JSON；
 
 7. 这行代码中，`response_model` 的类型注解是 `Author` 数据类列表；
 
@@ -74,13 +74,13 @@ API 文档中也会显示相关概图：
 
 8. 注意，*路径操作函数*使用的是普通函数，不是异步函数；
 
-    与往常一样，在 readyapi 中，可以按需组合普通函数与异步函数；
+    与往常一样，在 ReadyAPI 中，可以按需组合普通函数与异步函数；
 
     如果不清楚何时使用异步函数或普通函数，请参阅**急不可待？**一节中对 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank" class="internal-link">`async` 与 `await`</a> 的说明；
 
 9. *路径操作函数*返回的不是数据类（虽然它可以返回数据类），而是返回内含数据的字典列表；
 
-    readyapi 使用（包含数据类的） `response_model` 参数转换响应。
+    ReadyAPI 使用（包含数据类的） `response_model` 参数转换响应。
 
 把 `dataclasses` 与其它类型注解组合在一起，可以组成不同形式的复杂数据结构。
 
@@ -94,4 +94,4 @@ API 文档中也会显示相关概图：
 
 ## 版本
 
-本章内容自 readyapi `0.67.0` 版起生效。🔖
+本章内容自 ReadyAPI `0.67.0` 版起生效。🔖

@@ -1,10 +1,10 @@
 # 模板
 
-**readyapi** 支持多种模板引擎。
+**ReadyAPI** 支持多种模板引擎。
 
 Flask 等工具使用的 Jinja2 是最用的模板引擎。
 
-在 Starlette 的支持下，**readyapi** 应用可以直接使用工具轻易地配置 Jinja2。
+在 Starlette 的支持下，**ReadyAPI** 应用可以直接使用工具轻易地配置 Jinja2。
 
 ## 安装依赖项
 
@@ -31,7 +31,7 @@ $ pip install jinja2
 
 /// note | 笔记
 
-在readyapi 0.108.0，Starlette 0.29.0之前，`name`是第一个参数。
+在ReadyAPI 0.108.0，Starlette 0.29.0之前，`name`是第一个参数。
 并且，在此之前，`request`对象是作为context的一部分以键值对的形式传递的。
 
 ///
@@ -46,7 +46,7 @@ $ pip install jinja2
 
 您还可以使用 `from starlette.templating import Jinja2Templates`。
 
-**readyapi** 的 `readyapi.templating` 只是为开发者提供的快捷方式。实际上，绝大多数可用响应都直接继承自 Starlette。 `Request` 与 `StaticFiles` 也一样。
+**ReadyAPI** 的 `readyapi.templating` 只是为开发者提供的快捷方式。实际上，绝大多数可用响应都直接继承自 Starlette。 `Request` 与 `StaticFiles` 也一样。
 
 ///
 
@@ -118,7 +118,7 @@ Item ID: 42
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-因为使用了 `StaticFiles`， **readyapi** 应用会自动提供位于 URL `/static/styles.css`的 CSS 文件。
+因为使用了 `StaticFiles`， **ReadyAPI** 应用会自动提供位于 URL `/static/styles.css`的 CSS 文件。
 
 ## 更多说明
 

@@ -1,10 +1,10 @@
 # Templates
 
-Sie können jede gewünschte Template-Engine mit **readyapi** verwenden.
+Sie können jede gewünschte Template-Engine mit **ReadyAPI** verwenden.
 
 Eine häufige Wahl ist Jinja2, dasselbe, was auch von Flask und anderen Tools verwendet wird.
 
-Es gibt Werkzeuge zur einfachen Konfiguration, die Sie direkt in Ihrer **readyapi**-Anwendung verwenden können (bereitgestellt von Starlette).
+Es gibt Werkzeuge zur einfachen Konfiguration, die Sie direkt in Ihrer **ReadyAPI**-Anwendung verwenden können (bereitgestellt von Starlette).
 
 ## Abhängigkeiten installieren
 
@@ -31,7 +31,7 @@ $ pip install jinja2
 
 /// note | Hinweis
 
-Vor readyapi 0.108.0 und Starlette 0.29.0 war `name` der erste Parameter.
+Vor ReadyAPI 0.108.0 und Starlette 0.29.0 war `name` der erste Parameter.
 
 Außerdem wurde in früheren Versionen das `request`-Objekt als Teil der Schlüssel-Wert-Paare im Kontext für Jinja2 übergeben.
 
@@ -47,7 +47,7 @@ Durch die Deklaration von `response_class=HTMLResponse` kann die Dokumentationso
 
 Sie können auch `from starlette.templating import Jinja2Templates` verwenden.
 
-**readyapi** bietet dasselbe `starlette.templating` auch via `readyapi.templating` an, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber direkt von Starlette. Das Gleiche gilt für `Request` und `StaticFiles`.
+**ReadyAPI** bietet dasselbe `starlette.templating` auch via `readyapi.templating` an, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber direkt von Starlette. Das Gleiche gilt für `Request` und `StaticFiles`.
 
 ///
 
@@ -119,7 +119,7 @@ In diesem Beispiel würde das zu einer CSS-Datei unter `static/styles.css` verli
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-Und da Sie `StaticFiles` verwenden, wird diese CSS-Datei automatisch von Ihrer **readyapi**-Anwendung unter der URL `/static/styles.css` bereitgestellt.
+Und da Sie `StaticFiles` verwenden, wird diese CSS-Datei automatisch von Ihrer **ReadyAPI**-Anwendung unter der URL `/static/styles.css` bereitgestellt.
 
 ## Mehr Details
 

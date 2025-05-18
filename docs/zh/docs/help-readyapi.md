@@ -1,10 +1,10 @@
-# 帮助 readyapi 与求助
+# 帮助 ReadyAPI 与求助
 
-您喜欢 **readyapi** 吗？
+您喜欢 **ReadyAPI** 吗？
 
-想帮助 readyapi？其它用户？还有项目作者？
+想帮助 ReadyAPI？其它用户？还有项目作者？
 
-或要求助怎么使用 **readyapi**？
+或要求助怎么使用 **ReadyAPI**？
 
 以下几种帮助的方式都非常简单（有些只需要点击一两下鼠标）。
 
@@ -12,31 +12,31 @@
 
 ## 订阅新闻邮件
 
-您可以订阅 [**readyapi 和它的小伙伴** 新闻邮件](newsletter.md){.internal-link target=_blank}（不会经常收到）
+您可以订阅 [**ReadyAPI 和它的小伙伴** 新闻邮件](newsletter.md){.internal-link target=_blank}（不会经常收到）
 
-* readyapi 及其小伙伴的新闻 🚀
+* ReadyAPI 及其小伙伴的新闻 🚀
 * 指南 📝
 * 功能 ✨
 * 破坏性更改 🚨
 * 开发技巧 ✅
 
-## 在推特上关注 readyapi
+## 在推特上关注 ReadyAPI
 
-<a href="https://twitter.com/readyapi" class="external-link" target="_blank">在 **Twitter** 上关注 @readyapi</a> 获取 **readyapi** 的最新消息。🐦
+<a href="https://twitter.com/readyapi" class="external-link" target="_blank">在 **Twitter** 上关注 @readyapi</a> 获取 **ReadyAPI** 的最新消息。🐦
 
-## 在 GitHub 上为 **readyapi** 加星
+## 在 GitHub 上为 **ReadyAPI** 加星
 
-您可以在 GitHub 上 **Star** readyapi（只要点击右上角的星星就可以了）： <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi。</a>⭐️
+您可以在 GitHub 上 **Star** ReadyAPI（只要点击右上角的星星就可以了）： <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi。</a>⭐️
 
-**Star** 以后，其它用户就能更容易找到 readyapi，并了解到已经有其他用户在使用它了。
+**Star** 以后，其它用户就能更容易找到 ReadyAPI，并了解到已经有其他用户在使用它了。
 
 ## 关注 GitHub 资源库的版本发布
 
-您还可以在 GitHub 上 **Watch** readyapi，（点击右上角的 **Watch** 按钮）<a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi。</a>👀
+您还可以在 GitHub 上 **Watch** ReadyAPI，（点击右上角的 **Watch** 按钮）<a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi。</a>👀
 
 您可以选择只关注发布（**Releases only**）。
 
-这样，您就可以（在电子邮件里）接收到 **readyapi** 新版发布的通知，及时了解 bug 修复与新功能。
+这样，您就可以（在电子邮件里）接收到 **ReadyAPI** 新版发布的通知，及时了解 bug 修复与新功能。
 
 ## 联系作者
 
@@ -48,7 +48,7 @@
     * 了解其它我创建的开源项目，或许对您会有帮助
     * 关注我什么时候创建新的开源项目
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">在 **Twitter** 上关注我</a>
-    * 告诉我您使用 readyapi（我非常乐意听到这种消息）
+    * 告诉我您使用 ReadyAPI（我非常乐意听到这种消息）
     * 接收我发布公告或新工具的消息
     * 您还可以关注<a href="https://twitter.com/readyapi" class="external-link" target="_blank">@readyapi on Twitter</a>，这是个独立的账号
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">在**领英**上联系我</a>
@@ -57,26 +57,26 @@
     * 阅读我的其它想法、文章，了解我创建的工具
     * 关注我，这样就可以随时看到我发布的新文章
 
-## Tweet about **readyapi**
+## Tweet about **ReadyAPI**
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">Tweet about **readyapi**</a> 让我和大家知道您为什么喜欢 readyapi。🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving @readyapi because... https://github.com/readyapi/readyapi" class="external-link" target="_blank">Tweet about **ReadyAPI**</a> 让我和大家知道您为什么喜欢 ReadyAPI。🎉
 
-知道有人使用 **readyapi**，我会很开心，我也想知道您为什么喜欢 readyapi，以及您在什么项目/哪些公司使用 readyapi，等等。
+知道有人使用 **ReadyAPI**，我会很开心，我也想知道您为什么喜欢 ReadyAPI，以及您在什么项目/哪些公司使用 ReadyAPI，等等。
 
-## 为 readyapi 投票
+## 为 ReadyAPI 投票
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">在 Slant 上为 **readyapi** 投票</a>
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">在 AlternativeTo 上为 **readyapi** 投票</a>
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">在 Slant 上为 **ReadyAPI** 投票</a>
+* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">在 AlternativeTo 上为 **ReadyAPI** 投票</a>
 
 ## 在 GitHub 上帮助其他人解决问题
 
 您可以查看<a href="https://github.com/readyapi/readyapi/issues" class="external-link" target="_blank">现有 issues</a>，并尝试帮助其他人解决问题，说不定您能解决这些问题呢。🤓
 
-如果帮助很多人解决了问题，您就有可能成为 [readyapi 的官方专家](readyapi-people.md#_3){.internal-link target=_blank}。🎉
+如果帮助很多人解决了问题，您就有可能成为 [ReadyAPI 的官方专家](readyapi-people.md#_3){.internal-link target=_blank}。🎉
 
 ## 监听 GitHub 资源库
 
-您可以在 GitHub 上「监听」readyapi（点击右上角的 "watch" 按钮）： <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+您可以在 GitHub 上「监听」ReadyAPI（点击右上角的 "watch" 按钮）： <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 如果您选择 "Watching" 而不是 "Releases only"，有人创建新 Issue 时，您会接收到通知。
 
@@ -96,7 +96,7 @@
 您可以创建 PR 为源代码做[贡献](contributing.md){.internal-link target=_blank}，例如：
 
 * 修改文档错别字
-* <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">编辑这个文件</a>，分享 readyapi 的文章、视频、博客，不论是您自己的，还是您看到的都成
+* <a href="https://github.com/readyapi/readyapi/edit/master/docs/en/data/external_links.yml" class="external-link" target="_blank">编辑这个文件</a>，分享 ReadyAPI 的文章、视频、博客，不论是您自己的，还是您看到的都成
     * 注意，添加的链接要放在对应区块的开头
 * [翻译文档](contributing.md#_8){.internal-link target=_blank}
     * 审阅别人翻译的文档
@@ -106,11 +106,11 @@
 
 ## 加入聊天
 
-快加入 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord 聊天服务器</a> 👥 和 readyapi 社区里的小伙伴一起哈皮吧。
+快加入 👥 <a href="https://discord.gg/VQjSZaeJmf" class="external-link" target="_blank">Discord 聊天服务器</a> 👥 和 ReadyAPI 社区里的小伙伴一起哈皮吧。
 
 /// tip | 提示
 
-如有问题，请在 <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">GitHub Issues</a> 里提问，在这里更容易得到 [readyapi 专家](readyapi-people.md#_3){.internal-link target=_blank}的帮助。
+如有问题，请在 <a href="https://github.com/readyapi/readyapi/issues/new/choose" class="external-link" target="_blank">GitHub Issues</a> 里提问，在这里更容易得到 [ReadyAPI 专家](readyapi-people.md#_3){.internal-link target=_blank}的帮助。
 
 聊天室仅供闲聊。
 
@@ -122,7 +122,7 @@
 
 GitHub Issues 里提供了模板，指引您提出正确的问题，有利于获得优质的回答，甚至可能解决您还没有想到的问题。而且就算答疑解惑要耗费不少时间，我还是会尽量在 GitHub 里回答问题。但在聊天室里，我就没功夫这么做了。😅
 
-聊天室里的聊天内容也不如 GitHub 里好搜索，聊天里的问答很容易就找不到了。只有在 GitHub Issues 里的问答才能帮助您成为  [readyapi 专家](readyapi-people.md#_3){.internal-link target=_blank}，在 GitHub Issues 中为您带来更多关注。
+聊天室里的聊天内容也不如 GitHub 里好搜索，聊天里的问答很容易就找不到了。只有在 GitHub Issues 里的问答才能帮助您成为  [ReadyAPI 专家](readyapi-people.md#_3){.internal-link target=_blank}，在 GitHub Issues 中为您带来更多关注。
 
 另一方面，聊天室里有成千上万的用户，在这里，您有很大可能遇到聊得来的人。😄
 
@@ -132,11 +132,11 @@ GitHub Issues 里提供了模板，指引您提出正确的问题，有利于获
 
 给我买杯咖啡 ☕️ 以示感谢 😄
 
-当然您也可以成为 readyapi 的金牌或银牌赞助商。🏅🎉
+当然您也可以成为 ReadyAPI 的金牌或银牌赞助商。🏅🎉
 
-## 赞助 readyapi 使用的工具
+## 赞助 ReadyAPI 使用的工具
 
-如您在本文档中所见，readyapi 站在巨人的肩膀上，它们分别是 Starlette 和 Pydantic。
+如您在本文档中所见，ReadyAPI 站在巨人的肩膀上，它们分别是 Starlette 和 Pydantic。
 
 您还可以赞助：
 

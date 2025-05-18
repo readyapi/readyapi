@@ -1,9 +1,9 @@
 # Тестування
 
-Тестування **readyapi**  додатків є простим та ефективним завдяки бібліотеці <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, яка базується на <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>.
+Тестування **ReadyAPI**  додатків є простим та ефективним завдяки бібліотеці <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a>, яка базується на <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>.
 Оскільки HTTPX розроблений на основі Requests, його API є інтуїтивно зрозумілим для тих, хто вже знайомий з Requests.
 
-З його допомогою Ви можете використовувати <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> безпосередньо з **readyapi**.
+З його допомогою Ви можете використовувати <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> безпосередньо з **ReadyAPI**.
 
 ## Використання `TestClient`
 
@@ -21,7 +21,7 @@ $ pip install httpx
 
 Імпортуйте `TestClient`.
 
-Створіть `TestClient`, передавши йому Ваш застосунок **readyapi**.
+Створіть `TestClient`, передавши йому Ваш застосунок **ReadyAPI**.
 
 Створюйте функції з іменами, що починаються з `test_` (це стандартна угода для `pytest`).
 
@@ -46,13 +46,13 @@ $ pip install httpx
 
 Ви також можете використовувати `from starlette.testclient import TestClient`.
 
-**readyapi** надає той самий `starlette.testclient` під назвою `readyapi.testclient` для зручності розробників, але він безпосередньо походить із Starlette.
+**ReadyAPI** надає той самий `starlette.testclient` під назвою `readyapi.testclient` для зручності розробників, але він безпосередньо походить із Starlette.
 
 ///
 
 /// tip | Порада
 
-Якщо Вам потрібно викликати `async`-функції у ваших тестах, окрім відправлення запитів до readyapi-застосунку (наприклад, асинхронні функції роботи з базою даних), перегляньте [Асинхронні тести](../advanced/async-tests.md){.internal-link target=_blank} у розширеному керівництві.
+Якщо Вам потрібно викликати `async`-функції у ваших тестах, окрім відправлення запитів до ReadyAPI-застосунку (наприклад, асинхронні функції роботи з базою даних), перегляньте [Асинхронні тести](../advanced/async-tests.md){.internal-link target=_blank} у розширеному керівництві.
 
 ///
 
@@ -60,9 +60,9 @@ $ pip install httpx
 
 У реальному застосунку Ваші тести, ймовірно, будуть в окремому файлі.
 
-Також Ваш **readyapi**-застосунок може складатися з кількох файлів або модулів тощо.
+Також Ваш **ReadyAPI**-застосунок може складатися з кількох файлів або модулів тощо.
 
-### Файл застосунку **readyapi**
+### Файл застосунку **ReadyAPI**
 
 Припустимо, у Вас є структура файлів, описана в розділі [Більші застосунки](bigger-applications.md){.internal-link target=_blank}:
 
@@ -72,7 +72,7 @@ $ pip install httpx
 │   ├── __init__.py
 │   └── main.py
 ```
-У файлі `main.py` знаходиться Ваш застосунок **readyapi** :
+У файлі `main.py` знаходиться Ваш застосунок **ReadyAPI** :
 
 {* ../../docs_src/app_testing/main.py *}
 
@@ -100,7 +100,7 @@ $ pip install httpx
 
 Тепер розширимо цей приклад і додамо більше деталей, щоб побачити, як тестувати різні частини.
 
-### Розширений файл застосунку **readyapi**
+### Розширений файл застосунку **ReadyAPI**
 
 Залишимо ту саму структуру файлів:
 
@@ -112,7 +112,7 @@ $ pip install httpx
 │   └── test_main.py
 ```
 
-Припустимо, що тепер файл `main.py` із Вашим **readyapi**-застосунком містить додаткові операції шляху (**path operations**).
+Припустимо, що тепер файл `main.py` із Вашим **ReadyAPI**-застосунком містить додаткові операції шляху (**path operations**).
 
 Він має `GET`-операцію, яка може повертати помилку.
 

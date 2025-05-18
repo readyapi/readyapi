@@ -10,11 +10,11 @@ Primero, importa `Path` de `readyapi`, e importa `Annotated`:
 
 /// info | Información
 
-readyapi agregó soporte para `Annotated` (y comenzó a recomendar su uso) en la versión 0.95.0.
+ReadyAPI agregó soporte para `Annotated` (y comenzó a recomendar su uso) en la versión 0.95.0.
 
 Si tienes una versión anterior, obtendrás errores al intentar usar `Annotated`.
 
-Asegúrate de [Actualizar la versión de readyapi](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} a al menos la 0.95.1 antes de usar `Annotated`.
+Asegúrate de [Actualizar la versión de ReadyAPI](../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} a al menos la 0.95.1 antes de usar `Annotated`.
 
 ///
 
@@ -50,7 +50,7 @@ Python se quejará si pones un valor con un "default" antes de un valor que no t
 
 Pero puedes reordenarlos y poner el valor sin un default (el parámetro de query `q`) primero.
 
-No importa para **readyapi**. Detectará los parámetros por sus nombres, tipos y declaraciones por defecto (`Query`, `Path`, etc.), no le importa el orden.
+No importa para **ReadyAPI**. Detectará los parámetros por sus nombres, tipos y declaraciones por defecto (`Query`, `Path`, etc.), no le importa el orden.
 
 Así que puedes declarar tu función como:
 

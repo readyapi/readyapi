@@ -1,6 +1,6 @@
 # 第一步
 
-最簡單的 readyapi 檔案可能看起來像這樣：
+最簡單的 ReadyAPI 檔案可能看起來像這樣：
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -24,9 +24,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable readyapi app
+<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
 
- ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -34,7 +34,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -92,7 +92,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 ### OpenAPI
 
-**readyapi** 使用定義 API 的 **OpenAPI** 標準來生成一個 「schema」 與你的所有 API。
+**ReadyAPI** 使用定義 API 的 **OpenAPI** 標準來生成一個 「schema」 與你的所有 API。
 
 #### 「Schema」
 
@@ -116,7 +116,7 @@ OpenAPI 定義了 API 的 schema。這個 schema 包含了使用 **JSON Schema**
 
 #### 檢查 `openapi.json`
 
-如果你好奇原始的 OpenAPI schema 長什麼樣子，readyapi 會自動生成一個包含所有 API 描述的 JSON (schema)。
+如果你好奇原始的 OpenAPI schema 長什麼樣子，ReadyAPI 會自動生成一個包含所有 API 描述的 JSON (schema)。
 
 你可以直接在 <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a> 查看它。
 
@@ -126,7 +126,7 @@ OpenAPI 定義了 API 的 schema。這個 schema 包含了使用 **JSON Schema**
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -147,31 +147,31 @@ OpenAPI 定義了 API 的 schema。這個 schema 包含了使用 **JSON Schema**
 
 OpenAPI schema 驅動了兩個互動式文件系統。
 
-而且有許多替代方案，所有這些都是基於 OpenAPI。你可以輕鬆地將任何這些替代方案添加到使用 **readyapi** 建置的應用程式中。
+而且有許多替代方案，所有這些都是基於 OpenAPI。你可以輕鬆地將任何這些替代方案添加到使用 **ReadyAPI** 建置的應用程式中。
 
 你也可以用它自動生成程式碼，讓前端、手機應用程式或物聯網設備等與你的 API 進行通訊。
 
 ## 逐步回顧
 
-### 第一步：引入 `readyapi`
+### 第一步：引入 `ReadyAPI`
 
 {* ../../docs_src/first_steps/tutorial001.py h1[1] *}
 
-`readyapi` 是一個 Python 類別，提供所有 API 的全部功能。
+`ReadyAPI` 是一個 Python 類別，提供所有 API 的全部功能。
 
 /// note | Technical Details
 
-`readyapi` 是一個直接繼承自 `Starlette` 的類別。
+`ReadyAPI` 是一個直接繼承自 `Starlette` 的類別。
 
-你同樣可以透過 `readyapi` 來使用 <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 所有的功能。
+你同樣可以透過 `ReadyAPI` 來使用 <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> 所有的功能。
 
 ///
 
-### 第二步：建立一個 `readyapi` 「實例」
+### 第二步：建立一個 `ReadyAPI` 「實例」
 
 {* ../../docs_src/first_steps/tutorial001.py h1[3] *}
 
-這裡的 `app` 變數將會是 `readyapi` 類別的「實例」。
+這裡的 `app` 變數將會是 `ReadyAPI` 類別的「實例」。
 
 這將是你建立所有 API 的主要互動點。
 
@@ -240,7 +240,7 @@ https://example.com/items/foo
 
 {* ../../docs_src/first_steps/tutorial001.py h1[6] *}
 
-`@app.get("/")` 告訴 **readyapi** 那個函式負責處理請求：
+`@app.get("/")` 告訴 **ReadyAPI** 那個函式負責處理請求：
 
 * 路徑 `/`
 * 使用 <abbr title="HTTP GET 方法"><code>get</code>操作</abbr>
@@ -253,7 +253,7 @@ Python 中的 `@something` 語法被稱為「裝飾器」。
 
 一個「裝飾器」會對下面的函式做一些事情。
 
-在這種情況下，這個裝飾器告訴 **readyapi** 那個函式對應於 **路徑** `/` 和 **操作** `get`.
+在這種情況下，這個裝飾器告訴 **ReadyAPI** 那個函式對應於 **路徑** `/` 和 **操作** `get`.
 
 這就是「**路徑操作裝飾器**」。
 
@@ -276,7 +276,7 @@ Python 中的 `@something` 語法被稱為「裝飾器」。
 
 你可以自由地使用每個操作（HTTP 方法）。
 
-**readyapi** 不強制任何特定的意義。
+**ReadyAPI** 不強制任何特定的意義。
 
 這裡的資訊作為一個指南，而不是要求。
 
@@ -296,7 +296,7 @@ Python 中的 `@something` 語法被稱為「裝飾器」。
 
 這就是一個 Python 函式。
 
-它將會在 **readyapi** 收到一個請求時被呼叫，使用 `GET` 操作。
+它將會在 **ReadyAPI** 收到一個請求時被呼叫，使用 `GET` 操作。
 
 在這種情況下，它是一個 `async` 函式。
 
@@ -324,7 +324,7 @@ Python 中的 `@something` 語法被稱為「裝飾器」。
 
 ## 回顧
 
-* 引入 `readyapi`.
+* 引入 `ReadyAPI`.
 * 建立一個 `app` 實例。
 * 寫一個 **路徑操作裝飾器** 使用裝飾器像 `@app.get("/")`。
 * 定義一個 **路徑操作函式**；例如，`def root(): ...`。

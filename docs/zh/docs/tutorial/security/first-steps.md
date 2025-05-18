@@ -6,11 +6,11 @@
 
 并且，前端要使用后端的 **username** 与 **password** 验证用户身份。
 
-固然，**readyapi** 支持 **OAuth2** 身份验证。
+固然，**ReadyAPI** 支持 **OAuth2** 身份验证。
 
 但为了节省开发者的时间，不要只为了查找很少的内容，不得不阅读冗长的规范文档。
 
-我们建议使用 **readyapi** 的安全工具。
+我们建议使用 **ReadyAPI** 的安全工具。
 
 ## 概览
 
@@ -88,7 +88,7 @@ $ uvicorn main:app --reload
 
 OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户身份。
 
-但在本例中，**readyapi** 应用会处理 API 与身份验证。
+但在本例中，**ReadyAPI** 应用会处理 API 与身份验证。
 
 下面，我们来看一下简化的运行流程：
 
@@ -106,9 +106,9 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
     - 因此，用 API 验证身份时，要发送值为 `Bearer` + 令牌的请求头 `Authorization`
     - 假如令牌为 `foobar`，`Authorization` 请求头就是： `Bearer foobar`
 
-## **readyapi** 的 `OAuth2PasswordBearer`
+## **ReadyAPI** 的 `OAuth2PasswordBearer`
 
-**readyapi** 提供了不同抽象级别的安全工具。
+**ReadyAPI** 提供了不同抽象级别的安全工具。
 
 本例使用 **OAuth2** 的 **Password** 流以及 **Bearer** 令牌（`Token`）。为此要使用 `OAuth2PasswordBearer` 类。
 
@@ -120,7 +120,7 @@ OAuth2 的设计目标是为了让后端或 API 独立于服务器验证用户�
 
 甚至可以说，它是适用于绝大多数用例的最佳方案，除非您是 OAuth2 的专家，知道为什么其它方案更合适。
 
-本例中，**readyapi** 还提供了构建工具。
+本例中，**ReadyAPI** 还提供了构建工具。
 
 ///
 
@@ -168,21 +168,21 @@ oauth2_scheme(some, parameters)
 
 该依赖项使用字符串（`str`）接收*路径操作函数*的参数 `token` 。
 
-**readyapi** 使用依赖项在 OpenAPI 概图（及 API 文档）中定义**安全方案**。
+**ReadyAPI** 使用依赖项在 OpenAPI 概图（及 API 文档）中定义**安全方案**。
 
 /// info | 技术细节
 
-**readyapi** 使用（在依赖项中声明的）类 `OAuth2PasswordBearer` 在 OpenAPI 中定义安全方案，这是因为它继承自 `readyapi.security.oauth2.OAuth2`，而该类又是继承自`readyapi.security.base.SecurityBase`。
+**ReadyAPI** 使用（在依赖项中声明的）类 `OAuth2PasswordBearer` 在 OpenAPI 中定义安全方案，这是因为它继承自 `readyapi.security.oauth2.OAuth2`，而该类又是继承自`readyapi.security.base.SecurityBase`。
 
-所有与 OpenAPI（及 API 文档）集成的安全工具都继承自 `SecurityBase`， 这就是为什么 **readyapi** 能把它们集成至 OpenAPI 的原因。
+所有与 OpenAPI（及 API 文档）集成的安全工具都继承自 `SecurityBase`， 这就是为什么 **ReadyAPI** 能把它们集成至 OpenAPI 的原因。
 
 ///
 
 ## 实现的操作
 
-readyapi 校验请求中的 `Authorization` 请求头，核对请求头的值是不是由 `Bearer ` ＋ 令牌组成， 并返回令牌字符串（`str`）。
+ReadyAPI 校验请求中的 `Authorization` 请求头，核对请求头的值是不是由 `Bearer ` ＋ 令牌组成， 并返回令牌字符串（`str`）。
 
-如果没有找到 `Authorization` 请求头，或请求头的值不是 `Bearer ` ＋ 令牌。readyapi 直接返回 401 错误状态码（`UNAUTHORIZED`）。
+如果没有找到 `Authorization` 请求头，或请求头的值不是 `Bearer ` ＋ 令牌。ReadyAPI 直接返回 401 错误状态码（`UNAUTHORIZED`）。
 
 开发者不需要检查错误信息，查看令牌是否存在，只要该函数能够执行，函数中就会包含令牌字符串。
 

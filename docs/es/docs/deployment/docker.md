@@ -1,6 +1,6 @@
-# readyapi en Contenedores - Docker
+# ReadyAPI en Contenedores - Docker
 
-Al desplegar aplicaciones de readyapi, un enfoque común es construir una **imagen de contenedor de Linux**. Normalmente se realiza usando <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Luego puedes desplegar esa imagen de contenedor de varias formas.
+Al desplegar aplicaciones de ReadyAPI, un enfoque común es construir una **imagen de contenedor de Linux**. Normalmente se realiza usando <a href="https://www.docker.com/" class="external-link" target="_blank">**Docker**</a>. Luego puedes desplegar esa imagen de contenedor de varias formas.
 
 Usar contenedores de Linux tiene varias ventajas, incluyendo **seguridad**, **replicabilidad**, **simplicidad**, y otras.
 
@@ -91,11 +91,11 @@ Un contenedor normalmente tiene un **proceso único**, pero también es posible 
 
 Pero no es posible tener un contenedor en ejecución sin **al menos un proceso en ejecución**. Si el proceso principal se detiene, el contenedor se detiene.
 
-## Construir una Imagen de Docker para readyapi
+## Construir una Imagen de Docker para ReadyAPI
 
 ¡Bien, construyamos algo ahora! 🚀
 
-Te mostraré cómo construir una **imagen de Docker** para readyapi **desde cero**, basada en la imagen **oficial de Python**.
+Te mostraré cómo construir una **imagen de Docker** para ReadyAPI **desde cero**, basada en la imagen **oficial de Python**.
 
 Esto es lo que querrías hacer en **la mayoría de los casos**, por ejemplo:
 
@@ -111,7 +111,7 @@ Dependería principalmente de la herramienta que uses para **instalar** esos req
 
 La forma más común de hacerlo es tener un archivo `requirements.txt` con los nombres de los paquetes y sus versiones, uno por línea.
 
-Por supuesto, usarías las mismas ideas que leíste en [Acerca de las versiones de readyapi](versions.md){.internal-link target=_blank} para establecer los rangos de versiones.
+Por supuesto, usarías las mismas ideas que leíste en [Acerca de las versiones de ReadyAPI](versions.md){.internal-link target=_blank} para establecer los rangos de versiones.
 
 Por ejemplo, tu `requirements.txt` podría verse así:
 
@@ -138,7 +138,7 @@ Existen otros formatos y herramientas para definir e instalar dependencias de pa
 
 ///
 
-### Crear el Código de **readyapi**
+### Crear el Código de **ReadyAPI**
 
 * Crea un directorio `app` y entra en él.
 * Crea un archivo vacío `__init__.py`.
@@ -147,9 +147,9 @@ Existen otros formatos y herramientas para definir e instalar dependencias de pa
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -256,7 +256,7 @@ CMD ["readyapi", "run", "app/main.py", "--port", "80"]
 CMD readyapi run app/main.py --port 80
 ```
 
-Asegúrate de siempre usar la **forma exec** para garantizar que readyapi pueda cerrarse de manera adecuada y que [los eventos de lifespan](../advanced/events.md){.internal-link target=_blank} sean disparados.
+Asegúrate de siempre usar la **forma exec** para garantizar que ReadyAPI pueda cerrarse de manera adecuada y que [los eventos de lifespan](../advanced/events.md){.internal-link target=_blank} sean disparados.
 
 Puedes leer más sobre esto en las <a href="https://docs.docker.com/reference/dockerfile/#shell-and-exec-form" class="external-link" target="_blank">documentación de Docker para formas de shell y exec</a>.
 
@@ -277,7 +277,7 @@ Ahora deberías tener una estructura de directorios como:
 
 #### Detrás de un Proxy de Terminación TLS
 
-Si estás ejecutando tu contenedor detrás de un Proxy de Terminación TLS (load balancer) como Nginx o Traefik, añade la opción `--proxy-headers`, esto le dirá a Uvicorn (a través de la CLI de readyapi) que confíe en los headers enviados por ese proxy indicando que la aplicación se está ejecutando detrás de HTTPS, etc.
+Si estás ejecutando tu contenedor detrás de un Proxy de Terminación TLS (load balancer) como Nginx o Traefik, añade la opción `--proxy-headers`, esto le dirá a Uvicorn (a través de la CLI de ReadyAPI) que confíe en los headers enviados por ese proxy indicando que la aplicación se está ejecutando detrás de HTTPS, etc.
 
 ```Dockerfile
 CMD ["readyapi", "run", "app/main.py", "--proxy-headers", "--port", "80"]
@@ -320,7 +320,7 @@ COPY ./app /code/app
 Ahora que todos los archivos están en su lugar, vamos a construir la imagen del contenedor.
 
 * Ve al directorio del proyecto (donde está tu `Dockerfile`, conteniendo tu directorio `app`).
-* Construye tu imagen de readyapi:
+* Construye tu imagen de ReadyAPI:
 
 <div class="termy">
 
@@ -378,9 +378,9 @@ Verás la documentación alternativa automática (proporcionada por <a href="htt
 
 ![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
 
-## Construir una Imagen de Docker con un readyapi de Un Solo Archivo
+## Construir una Imagen de Docker con un ReadyAPI de Un Solo Archivo
 
-Si tu readyapi es un solo archivo, por ejemplo, `main.py` sin un directorio `./app`, tu estructura de archivos podría verse así:
+Si tu ReadyAPI es un solo archivo, por ejemplo, `main.py` sin un directorio `./app`, tu estructura de archivos podría verse así:
 
 ```
 .
@@ -411,7 +411,7 @@ CMD ["readyapi", "run", "main.py", "--port", "80"]
 
 2. Usa `readyapi run` para servir tu aplicación en el archivo único `main.py`.
 
-Cuando pasas el archivo a `readyapi run`, detectará automáticamente que es un archivo único y no parte de un paquete y sabrá cómo importarlo y servir tu aplicación readyapi. 😎
+Cuando pasas el archivo a `readyapi run`, detectará automáticamente que es un archivo único y no parte de un paquete y sabrá cómo importarlo y servir tu aplicación ReadyAPI. 😎
 
 ## Conceptos de Despliegue
 
@@ -432,7 +432,7 @@ Revisemos estos **conceptos de despliegue** en términos de contenedores:
 
 ## HTTPS
 
-Si nos enfocamos solo en la **imagen de contenedor** para una aplicación readyapi (y luego el **contenedor** en ejecución), HTTPS normalmente sería manejado **externamente** por otra herramienta.
+Si nos enfocamos solo en la **imagen de contenedor** para una aplicación ReadyAPI (y luego el **contenedor** en ejecución), HTTPS normalmente sería manejado **externamente** por otra herramienta.
 
 Podría ser otro contenedor, por ejemplo, con <a href="https://traefik.io/" class="external-link" target="_blank">Traefik</a>, manejando **HTTPS** y la adquisición **automática** de **certificados**.
 
@@ -480,7 +480,7 @@ Y al trabajar con contenedores, el mismo sistema que usas para iniciarlos y gest
 
 Al trabajar con **Kubernetes** u otros sistemas de gestión de contenedores distribuidos similares, usar sus mecanismos de red internos permitiría que el único **load balancer** que está escuchando en el **puerto** principal transmita la comunicación (requests) a posiblemente **múltiples contenedores** ejecutando tu aplicación.
 
-Cada uno de estos contenedores ejecutando tu aplicación normalmente tendría **solo un proceso** (e.g., un proceso Uvicorn ejecutando tu aplicación readyapi). Todos serían **contenedores idénticos**, ejecutando lo mismo, pero cada uno con su propio proceso, memoria, etc. De esa forma, aprovecharías la **paralelización** en **diferentes núcleos** de la CPU, o incluso en **diferentes máquinas**.
+Cada uno de estos contenedores ejecutando tu aplicación normalmente tendría **solo un proceso** (e.g., un proceso Uvicorn ejecutando tu aplicación ReadyAPI). Todos serían **contenedores idénticos**, ejecutando lo mismo, pero cada uno con su propio proceso, memoria, etc. De esa forma, aprovecharías la **paralelización** en **diferentes núcleos** de la CPU, o incluso en **diferentes máquinas**.
 
 Y el sistema de contenedores distribuido con el **load balancer** **distribuiría las requests** a cada uno de los contenedores **replicados** que ejecutan tu aplicación **en turnos**. Así, cada request podría ser manejado por uno de los múltiples **contenedores replicados** ejecutando tu aplicación.
 
@@ -572,11 +572,11 @@ Si tienes una configuración simple, con un **contenedor único** que luego inic
 
 ### Imagen Base de Docker
 
-Solía haber una imagen official de Docker de readyapi: <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>. Pero ahora está obsoleta. ⛔️
+Solía haber una imagen official de Docker de ReadyAPI: <a href="https://github.com/khulnasoft/uvicorn-gunicorn-readyapi-docker" class="external-link" target="_blank">khulnasoft/uvicorn-gunicorn-readyapi</a>. Pero ahora está obsoleta. ⛔️
 
 Probablemente **no** deberías usar esta imagen base de Docker (o cualquier otra similar).
 
-Si estás usando **Kubernetes** (u otros) y ya estás configurando la **replicación** a nivel de cluster, con múltiples **contenedores**. En esos casos, es mejor que **construyas una imagen desde cero** como se describe arriba: [Construir una Imagen de Docker para readyapi](#build-a-docker-image-for-readyapi).
+Si estás usando **Kubernetes** (u otros) y ya estás configurando la **replicación** a nivel de cluster, con múltiples **contenedores**. En esos casos, es mejor que **construyas una imagen desde cero** como se describe arriba: [Construir una Imagen de Docker para ReadyAPI](#build-a-docker-image-for-readyapi).
 
 Y si necesitas tener múltiples workers, puedes simplemente utilizar la opción de línea de comandos `--workers`.
 

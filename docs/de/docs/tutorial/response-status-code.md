@@ -35,7 +35,7 @@ Das wird:
 
 Einige Responsecodes (siehe nächster Abschnitt) kennzeichnen, dass die Response keinen Body hat.
 
-readyapi versteht das und wird in der OpenAPI-Dokumentation anzeigen, dass es keinen Responsebody gibt.
+ReadyAPI versteht das und wird in der OpenAPI-Dokumentation anzeigen, dass es keinen Responsebody gibt.
 
 ///
 
@@ -92,7 +92,7 @@ Diese sind nur eine Annehmlichkeit und enthalten dieselbe Nummer, aber auf diese
 
 Sie können auch `from starlette import status` verwenden.
 
-**readyapi** bietet dieselben `starlette.status`-Codes auch via `readyapi.status` an, als Annehmlichkeit für Sie, den Entwickler. Sie kommen aber direkt von Starlette.
+**ReadyAPI** bietet dieselben `starlette.status`-Codes auch via `readyapi.status` an, als Annehmlichkeit für Sie, den Entwickler. Sie kommen aber direkt von Starlette.
 
 ///
 

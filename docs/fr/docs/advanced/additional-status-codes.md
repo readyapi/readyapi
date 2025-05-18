@@ -1,6 +1,6 @@
 # Codes HTTP supplémentaires
 
-Par défaut, **readyapi** renverra les réponses à l'aide d'une structure de données `JSONResponse`, en plaçant la réponse de votre  *chemin d'accès* à l'intérieur de cette `JSONResponse`.
+Par défaut, **ReadyAPI** renverra les réponses à l'aide d'une structure de données `JSONResponse`, en plaçant la réponse de votre  *chemin d'accès* à l'intérieur de cette `JSONResponse`.
 
 Il utilisera le code HTTP par défaut ou celui que vous avez défini dans votre *chemin d'accès*.
 
@@ -30,12 +30,12 @@ Assurez-vous qu'il contient les données souhaitées et que les valeurs soient d
 
 Vous pouvez également utiliser `from starlette.responses import JSONResponse`.
 
-Pour plus de commodités, **readyapi** fournit les objets `starlette.responses` sous forme d'un alias accessible par `readyapi.responses`. Mais la plupart des réponses disponibles proviennent directement de Starlette. Il en est de même avec l'objet `statut`.
+Pour plus de commodités, **ReadyAPI** fournit les objets `starlette.responses` sous forme d'un alias accessible par `readyapi.responses`. Mais la plupart des réponses disponibles proviennent directement de Starlette. Il en est de même avec l'objet `statut`.
 
 ///
 
 ## Documents OpenAPI et API
 
-Si vous renvoyez directement des codes HTTP et des réponses supplémentaires, ils ne seront pas inclus dans le schéma OpenAPI (la documentation de l'API), car readyapi n'a aucun moyen de savoir à l'avance ce que vous allez renvoyer.
+Si vous renvoyez directement des codes HTTP et des réponses supplémentaires, ils ne seront pas inclus dans le schéma OpenAPI (la documentation de l'API), car ReadyAPI n'a aucun moyen de savoir à l'avance ce que vous allez renvoyer.
 
 Mais vous pouvez documenter cela dans votre code, en utilisant : [Réponses supplémentaires dans OpenAPI](additional-responses.md){.internal-link target=_blank}.

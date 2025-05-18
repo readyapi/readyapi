@@ -1,6 +1,6 @@
 # Conceptos de Implementación
 
-Cuando implementas una aplicación **readyapi**, o en realidad, cualquier tipo de API web, hay varios conceptos que probablemente te importen, y al entenderlos, puedes encontrar la **forma más adecuada** de **implementar tu aplicación**.
+Cuando implementas una aplicación **ReadyAPI**, o en realidad, cualquier tipo de API web, hay varios conceptos que probablemente te importen, y al entenderlos, puedes encontrar la **forma más adecuada** de **implementar tu aplicación**.
 
 Algunos de los conceptos importantes son:
 
@@ -19,7 +19,7 @@ Te contaré un poquito más sobre estos **conceptos** aquí, y eso, con suerte, 
 
 Al considerar estos conceptos, podrás **evaluar y diseñar** la mejor manera de implementar **tus propias APIs**.
 
-En los próximos capítulos, te daré más **recetas concretas** para implementar aplicaciones de readyapi.
+En los próximos capítulos, te daré más **recetas concretas** para implementar aplicaciones de ReadyAPI.
 
 Pero por ahora, revisemos estas importantes **ideas conceptuales**. Estos conceptos también se aplican a cualquier otro tipo de API web. 💡
 
@@ -104,7 +104,7 @@ Y si el servidor se reinicia (por ejemplo, después de actualizaciones o migraci
 
 ### Ejecutar Automáticamente al Iniciar
 
-En general, probablemente querrás que el programa del servidor (por ejemplo, Uvicorn) se inicie automáticamente al arrancar el servidor, y sin necesidad de ninguna **intervención humana**, para tener siempre un proceso en ejecución con tu API (por ejemplo, Uvicorn ejecutando tu aplicación readyapi).
+En general, probablemente querrás que el programa del servidor (por ejemplo, Uvicorn) se inicie automáticamente al arrancar el servidor, y sin necesidad de ninguna **intervención humana**, para tener siempre un proceso en ejecución con tu API (por ejemplo, Uvicorn ejecutando tu aplicación ReadyAPI).
 
 ### Programa Separado
 
@@ -137,7 +137,7 @@ Y nosotros, como desarrolladores, seguimos mejorando el código a medida que enc
 
 ### Errores Pequeños Manejados Automáticamente
 
-Al construir APIs web con readyapi, si hay un error en nuestro código, readyapi normalmente lo contiene a la solicitud única que desencadenó el error. 🛡
+Al construir APIs web con ReadyAPI, si hay un error en nuestro código, ReadyAPI normalmente lo contiene a la solicitud única que desencadenó el error. 🛡
 
 El cliente obtendrá un **500 Internal Server Error** para esa solicitud, pero la aplicación continuará funcionando para las siguientes solicitudes en lugar de simplemente colapsar por completo.
 
@@ -178,7 +178,7 @@ Por ejemplo, esto podría ser manejado por:
 
 ## Replicación - Procesos y Memoria
 
-Con una aplicación readyapi, usando un programa servidor como el comando `readyapi` que ejecuta Uvicorn, ejecutarlo una vez en **un proceso** puede servir a múltiples clientes concurrentemente.
+Con una aplicación ReadyAPI, usando un programa servidor como el comando `readyapi` que ejecuta Uvicorn, ejecutarlo una vez en **un proceso** puede servir a múltiples clientes concurrentemente.
 
 Pero en muchos casos, querrás ejecutar varios worker processes al mismo tiempo.
 
@@ -243,7 +243,7 @@ Aquí hay algunas combinaciones y estrategias posibles:
 
 No te preocupes si algunos de estos elementos sobre **contenedores**, Docker, o Kubernetes no tienen mucho sentido todavía.
 
-Te contaré más sobre imágenes de contenedores, Docker, Kubernetes, etc. en un capítulo futuro: [readyapi en Contenedores - Docker](docker.md){.internal-link target=_blank}.
+Te contaré más sobre imágenes de contenedores, Docker, Kubernetes, etc. en un capítulo futuro: [ReadyAPI en Contenedores - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -281,7 +281,7 @@ Aquí hay algunas ideas posibles:
 
 /// tip | Consejo
 
-Te daré más ejemplos concretos para hacer esto con contenedores en un capítulo futuro: [readyapi en Contenedores - Docker](docker.md){.internal-link target=_blank}.
+Te daré más ejemplos concretos para hacer esto con contenedores en un capítulo futuro: [ReadyAPI en Contenedores - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 

@@ -1,10 +1,10 @@
 # 테스팅
 
-<a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a> 덕분에 **readyapi** 를 테스트하는 일은 쉽고 즐거운 일이 되었습니다.
+<a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a> 덕분에 **ReadyAPI** 를 테스트하는 일은 쉽고 즐거운 일이 되었습니다.
 
 Starlette는 <a href="https://www.python-httpx.org\" class="external-link" target="_blank">HTTPX</a>를 기반으로 하며, 이는 Requests를 기반으로 설계되었기 때문에 매우 친숙하고 직관적입니다.
 
-이를 사용하면 readyapi에서 <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a>를 직접 사용할 수 있습니다.
+이를 사용하면 ReadyAPI에서 <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a>를 직접 사용할 수 있습니다.
 
 ## `TestClient` 사용하기
 
@@ -22,7 +22,7 @@ $ pip install httpx
 
 `TestClient` 를 임포트하세요.
 
-**readyapi** 어플리케이션을 전달하여 `TestClient` 를 만드세요.
+**ReadyAPI** 어플리케이션을 전달하여 `TestClient` 를 만드세요.
 
 이름이 `test_` 로 시작하는 함수를 만드세요(`pytest` 의 표준적인 관례입니다).
 
@@ -46,13 +46,13 @@ $ pip install httpx
 
 `from starlette.testclient import TestClient` 역시 사용할 수 있습니다.
 
-**readyapi** 는 개발자의 편의를 위해 `starlette.testclient` 를 `readyapi.testclient` 로도 제공할 뿐입니다. 이는 단지 `Starlette` 에서 직접 가져오는지의 차이일 뿐입니다.
+**ReadyAPI** 는 개발자의 편의를 위해 `starlette.testclient` 를 `readyapi.testclient` 로도 제공할 뿐입니다. 이는 단지 `Starlette` 에서 직접 가져오는지의 차이일 뿐입니다.
 
 ///
 
 /// tip | 팁
 
-readyapi 애플리케이션에 요청을 보내는 것 외에도 테스트에서 `async` 함수를 호출하고 싶다면 (예: 비동기 데이터베이스 함수), 심화 튜토리얼의 [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} 를 참조하세요.
+ReadyAPI 애플리케이션에 요청을 보내는 것 외에도 테스트에서 `async` 함수를 호출하고 싶다면 (예: 비동기 데이터베이스 함수), 심화 튜토리얼의 [Async Tests](../advanced/async-tests.md){.internal-link target=_blank} 를 참조하세요.
 
 ///
 
@@ -61,9 +61,9 @@ readyapi 애플리케이션에 요청을 보내는 것 외에도 테스트에서
 실제 애플리케이션에서는 테스트를 별도의 파일로 나누는 경우가 많습니다.
 
 
-그리고 **readyapi** 애플리케이션도 여러 파일이나 모듈 등으로 구성될 수 있습니다.
+그리고 **ReadyAPI** 애플리케이션도 여러 파일이나 모듈 등으로 구성될 수 있습니다.
 
-### **readyapi** app 파일
+### **ReadyAPI** app 파일
 
 [Bigger Applications](bigger-applications.md){.internal-link target=_blank} 에 묘사된 파일 구조를 가지고 있는 것으로 가정해봅시다.
 
@@ -74,7 +74,7 @@ readyapi 애플리케이션에 요청을 보내는 것 외에도 테스트에서
 │   └── main.py
 ```
 
-`main.py` 파일 안에 **readyapi** app 을 만들었습니다:
+`main.py` 파일 안에 **ReadyAPI** app 을 만들었습니다:
 
 {* ../../docs_src/app_testing/main.py *}
 
@@ -101,7 +101,7 @@ readyapi 애플리케이션에 요청을 보내는 것 외에도 테스트에서
 
 이제 위의 예시를 확장하고 더 많은 세부 사항을 추가하여 다양한 부분을 어떻게 테스트하는지 살펴보겠습니다.
 
-### 확장된 readyapi 애플리케이션 파일
+### 확장된 ReadyAPI 애플리케이션 파일
 
 이전과 같은 파일 구조를 계속 사용해 보겠습니다.
 
@@ -113,7 +113,7 @@ readyapi 애플리케이션에 요청을 보내는 것 외에도 테스트에서
 │   └── test_main.py
 ```
 
-이제 **readyapi** 앱이 있는 `main.py` 파일에 몇 가지 다른 **경로 작업** 이 추가된 경우를 생각해봅시다.
+이제 **ReadyAPI** 앱이 있는 `main.py` 파일에 몇 가지 다른 **경로 작업** 이 추가된 경우를 생각해봅시다.
 
 단일 오류를 반환할 수 있는 `GET` 작업이 있습니다.
 

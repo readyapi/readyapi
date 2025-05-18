@@ -88,4 +88,4 @@ Dann wäre die Response:
 
 Deklarieren Sie Header mittels `Header`, auf die gleiche Weise wie bei `Query`, `Path` und `Cookie`.
 
-Machen Sie sich keine Sorgen um Unterstriche in ihren Variablen, **readyapi** wird sich darum kümmern, diese zu konvertieren.
+Machen Sie sich keine Sorgen um Unterstriche in ihren Variablen, **ReadyAPI** wird sich darum kümmern, diese zu konvertieren.

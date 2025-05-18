@@ -1,6 +1,6 @@
 # Triển khai
 
-Triển khai một ứng dụng **readyapi** khá dễ dàng.
+Triển khai một ứng dụng **ReadyAPI** khá dễ dàng.
 
 ## Triển khai là gì
 
@@ -16,6 +16,6 @@ Có nhiều cách để triển khai ứng dụng của bạn tùy thuộc vào 
 
 Bạn có thể **triển khai một máy chủ** của riêng bạn bằng cách sử dụng một sự kết hợp các công cụ, hoặc bạn có thể sử dụng một **dịch vụ cloud** để làm một số công việc cho bạn, hoặc các tùy chọn khác.
 
-Tôi sẽ chỉ ra một số khái niệm chính cần thiết khi triển khai một ứng dụng **readyapi** (mặc dù hầu hết nó áp dụng cho bất kỳ loại ứng dụng web nào).
+Tôi sẽ chỉ ra một số khái niệm chính cần thiết khi triển khai một ứng dụng **ReadyAPI** (mặc dù hầu hết nó áp dụng cho bất kỳ loại ứng dụng web nào).
 
 Bạn sẽ thấy nhiều chi tiết cần thiết và một số kỹ thuật để triển khai trong các phần tiếp theo. ✨

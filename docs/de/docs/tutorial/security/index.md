@@ -6,7 +6,7 @@ Und normalerweise ist es ein komplexes und „schwieriges“ Thema.
 
 In vielen Frameworks und Systemen erfordert allein die Handhabung von Sicherheit und Authentifizierung viel Aufwand und Code (in vielen Fällen kann er 50 % oder mehr des gesamten geschriebenen Codes ausmachen).
 
-**readyapi** bietet mehrere Tools, die Ihnen helfen, schnell und auf standardisierte Weise mit **Sicherheit** umzugehen, ohne alle Sicherheits-Spezifikationen studieren und erlernen zu müssen.
+**ReadyAPI** bietet mehrere Tools, die Ihnen helfen, schnell und auf standardisierte Weise mit **Sicherheit** umzugehen, ohne alle Sicherheits-Spezifikationen studieren und erlernen zu müssen.
 
 Aber schauen wir uns zunächst ein paar kleine Konzepte an.
 
@@ -60,7 +60,7 @@ Heutzutage ist es nicht sehr populär und wird kaum verwendet.
 
 OpenAPI (früher bekannt als Swagger) ist die offene Spezifikation zum Erstellen von APIs (jetzt Teil der Linux Foundation).
 
-**readyapi** basiert auf **OpenAPI**.
+**ReadyAPI** basiert auf **OpenAPI**.
 
 Das ist es, was erlaubt, mehrere automatische interaktive Dokumentations-Oberflächen, Codegenerierung, usw. zu haben.
 
@@ -93,14 +93,14 @@ OpenAPI definiert die folgenden Sicherheitsschemas:
 
 Auch die Integration anderer Authentifizierungs-/Autorisierungsanbieter wie Google, Facebook, Twitter, GitHub, usw. ist möglich und relativ einfach.
 
-Das komplexeste Problem besteht darin, einen Authentifizierungs-/Autorisierungsanbieter wie solche aufzubauen, aber **readyapi** reicht Ihnen die Tools, das einfach zu erledigen, während Ihnen die schwere Arbeit abgenommen wird.
+Das komplexeste Problem besteht darin, einen Authentifizierungs-/Autorisierungsanbieter wie solche aufzubauen, aber **ReadyAPI** reicht Ihnen die Tools, das einfach zu erledigen, während Ihnen die schwere Arbeit abgenommen wird.
 
 ///
 
-## **readyapi** Tools
+## **ReadyAPI** Tools
 
-readyapi stellt für jedes dieser Sicherheitsschemas im Modul `readyapi.security` verschiedene Tools bereit, die die Verwendung dieser Sicherheitsmechanismen vereinfachen.
+ReadyAPI stellt für jedes dieser Sicherheitsschemas im Modul `readyapi.security` verschiedene Tools bereit, die die Verwendung dieser Sicherheitsmechanismen vereinfachen.
 
-In den nächsten Kapiteln erfahren Sie, wie Sie mit diesen von **readyapi** bereitgestellten Tools Sicherheit zu Ihrer API hinzufügen.
+In den nächsten Kapiteln erfahren Sie, wie Sie mit diesen von **ReadyAPI** bereitgestellten Tools Sicherheit zu Ihrer API hinzufügen.
 
 Und Sie werden auch sehen, wie dies automatisch in das interaktive Dokumentationssystem integriert wird.

@@ -23,7 +23,7 @@ Então sua API irá (vamos imaginar):
 * Enviar a notificação de volta para o usuário da API (o desenvolvedor externo).
 * Isso será feito enviando uma solicitação POST (de *sua API*) para alguma *API externa* fornecida por esse desenvolvedor externo (este é o "callback").
 
-## O aplicativo **readyapi** normal
+## O aplicativo **ReadyAPI** normal
 
 Vamos primeiro ver como o aplicativo da API normal se pareceria antes de adicionar o callback.
 
@@ -74,7 +74,7 @@ Quando implementando o callback por você mesmo, você pode usar algo como <a hr
 
 Esse código não será executado em seu aplicativo, nós só precisamos dele para *documentar* como essa *API externa* deveria ser.
 
-Mas, você já sabe como criar facilmente documentação automática para uma API com o **readyapi**.
+Mas, você já sabe como criar facilmente documentação automática para uma API com o **ReadyAPI**.
 
 Então vamos usar esse mesmo conhecimento para documentar como a *API externa* deveria ser... criando as *operações de rota* que a *API externa* deveria implementar (as que sua API irá chamar).
 
@@ -96,7 +96,7 @@ Primeiramente crie um novo `APIRouter` que conterá um ou mais callbacks.
 
 Para criar a *operação de rota* do callback, use o mesmo `APIRouter` que você criou acima.
 
-Ele deve parecer exatamente como uma *operação de rota* normal do readyapi:
+Ele deve parecer exatamente como uma *operação de rota* normal do ReadyAPI:
 
 * Ele provavelmente deveria ter uma declaração do corpo que deveria receber, por exemplo. `body: InvoiceEvent`.
 * E também deveria ter uma declaração de um código de status de resposta, por exemplo. `response_model=InvoiceEventReceived`.

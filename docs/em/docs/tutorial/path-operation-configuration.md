@@ -24,7 +24,7 @@
 
 👆 💪 ⚙️ `from starlette import status`.
 
-**readyapi** 🚚 🎏 `starlette.status` `readyapi.status` 🏪 👆, 👩‍💻. ✋️ ⚫️ 👟 🔗 ⚪️➡️ 💃.
+**ReadyAPI** 🚚 🎏 `starlette.status` `readyapi.status` 🏪 👆, 👩‍💻. ✋️ ⚫️ 👟 🔗 ⚪️➡️ 💃.
 
 ///
 
@@ -44,7 +44,7 @@
 
 👫 💼, ⚫️ 💪 ⚒ 🔑 🏪 🔖 `Enum`.
 
-**readyapi** 🐕‍🦺 👈 🎏 🌌 ⏮️ ✅ 🎻:
+**ReadyAPI** 🐕‍🦺 👈 🎏 🌌 ⏮️ ✅ 🎻:
 
 {* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
@@ -56,7 +56,7 @@
 
 ## 📛 ⚪️➡️ #️⃣
 
-📛 😑 📏 &amp; 📔 💗 ⏸, 👆 💪 📣 *➡ 🛠️* 📛 🔢 <abbr title="a multi-line string as the first expression inside a function (not assigned to any variable) used for documentation"> #️⃣ </abbr> &amp; **readyapi** 🔜 ✍ ⚫️ ⚪️➡️ 📤.
+📛 😑 📏 &amp; 📔 💗 ⏸, 👆 💪 📣 *➡ 🛠️* 📛 🔢 <abbr title="a multi-line string as the first expression inside a function (not assigned to any variable) used for documentation"> #️⃣ </abbr> &amp; **ReadyAPI** 🔜 ✍ ⚫️ ⚪️➡️ 📤.
 
 👆 💪 ✍ <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">✍</a> #️⃣ , ⚫️ 🔜 🔬 &amp; 🖥 ☑ (✊ 🔘 🏧 #️⃣ 📐).
 
@@ -82,7 +82,7 @@
 
 🗄 ✔ 👈 🔠 *➡ 🛠️* 🚚 📨 📛.
 
-, 🚥 👆 🚫 🚚 1️⃣, **readyapi** 🔜 🔁 🏗 1️⃣ "🏆 📨".
+, 🚥 👆 🚫 🚚 1️⃣, **ReadyAPI** 🔜 🔁 🏗 1️⃣ "🏆 📨".
 
 ///
 

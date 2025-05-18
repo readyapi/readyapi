@@ -9,15 +9,15 @@
 * 쿠키.
 * 기타 등등.
 
-이렇게 함으로써, **readyapi**는 데이터를 검증하고 변환하며, API에 대한 문서를 자동화로 생성합니다.
+이렇게 함으로써, **ReadyAPI**는 데이터를 검증하고 변환하며, API에 대한 문서를 자동화로 생성합니다.
 
 하지만 `Request` 객체에 직접 접근해야 하는 상황이 있을 수 있습니다.
 
 ## `Request` 객체에 대한 세부 사항
 
-**readyapi**는 실제로 내부에 **Starlette**을 사용하며, 그 위에 여러 도구를 덧붙인 구조입니다. 따라서 여러분이 필요할 때 Starlette의 <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 객체를 직접 사용할 수 있습니다.
+**ReadyAPI**는 실제로 내부에 **Starlette**을 사용하며, 그 위에 여러 도구를 덧붙인 구조입니다. 따라서 여러분이 필요할 때 Starlette의 <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 객체를 직접 사용할 수 있습니다.
 
-`Request` 객체에서 데이터를 직접 가져오는 경우(예: 본문을 읽기)에는 readyapi가 해당 데이터를 검증하거나 변환하지 않으며, 문서화(OpenAPI를 통한 문서 자동화(로 생성된) API 사용자 인터페이스)도 되지 않습니다.
+`Request` 객체에서 데이터를 직접 가져오는 경우(예: 본문을 읽기)에는 ReadyAPI가 해당 데이터를 검증하거나 변환하지 않으며, 문서화(OpenAPI를 통한 문서 자동화(로 생성된) API 사용자 인터페이스)도 되지 않습니다.
 
 그러나 다른 매개변수(예: Pydantic 모델을 사용한 본문)는 여전히 검증, 변환, 주석 추가 등이 이루어집니다.
 
@@ -31,7 +31,7 @@
 
 {* ../../docs_src/using_request_directly/tutorial001.py hl[1,7:8] *}
 
-*경로 작동 함수* 매개변수를 `Request` 타입으로 선언하면 **readyapi**가 해당 매개변수에 `Request` 객체를 전달하는 것을 알게 됩니다.
+*경로 작동 함수* 매개변수를 `Request` 타입으로 선언하면 **ReadyAPI**가 해당 매개변수에 `Request` 객체를 전달하는 것을 알게 됩니다.
 
 /// tip | 팁
 
@@ -51,6 +51,6 @@
 
 `from starlette.requests import Request`를 사용할 수도 있습니다.
 
-**readyapi**는 여러분(개발자)를 위한 편의를 위해 이를 직접 제공하지만, 실제로는 Starlette에서 가져온 것입니다.
+**ReadyAPI**는 여러분(개발자)를 위한 편의를 위해 이를 직접 제공하지만, 실제로는 Starlette에서 가져온 것입니다.
 
 ///

@@ -38,7 +38,7 @@ Wenn Sie dieses Beispiel ausführen und Ihren Browser unter <a href="http://127.
 
 Beachten Sie, dass der Wert, den Ihre Funktion erhält und zurückgibt, die Zahl `3` ist, also ein `int`. Nicht der String `"3"`, also ein `str`.
 
-Sprich, mit dieser Typdeklaration wird **readyapi** die Anfrage automatisch <abbr title="Den String, der von einer HTTP Anfrage kommt, in Python-Objekte konvertieren">„parsen“</abbr>.
+Sprich, mit dieser Typdeklaration wird **ReadyAPI** die Anfrage automatisch <abbr title="Den String, der von einer HTTP Anfrage kommt, in Python-Objekte konvertieren">„parsen“</abbr>.
 
 ///
 
@@ -69,7 +69,7 @@ Die gleiche Fehlermeldung würde angezeigt werden, wenn Sie ein `float` (also ei
 
 /// check
 
-Sprich, mit der gleichen Python-Typdeklaration gibt Ihnen **readyapi** Datenvalidierung.
+Sprich, mit der gleichen Python-Typdeklaration gibt Ihnen **ReadyAPI** Datenvalidierung.
 
 Beachten Sie, dass die Fehlermeldung auch direkt die Stelle anzeigt, wo die Validierung nicht erfolgreich war.
 
@@ -85,7 +85,7 @@ Wenn Sie die Seite <a href="http://127.0.0.1:8000/docs" class="external-link" ta
 
 /// check
 
-Wiederum, mit dieser gleichen Python-Typdeklaration gibt Ihnen **readyapi** eine automatische, interaktive Dokumentation (verwendet die Swagger-Benutzeroberfläche).
+Wiederum, mit dieser gleichen Python-Typdeklaration gibt Ihnen **ReadyAPI** eine automatische, interaktive Dokumentation (verwendet die Swagger-Benutzeroberfläche).
 
 Beachten Sie, dass der Pfad-Parameter dort als Ganzzahl deklariert ist.
 
@@ -95,7 +95,7 @@ Beachten Sie, dass der Pfad-Parameter dort als Ganzzahl deklariert ist.
 
 Und weil das generierte Schema vom <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md" class="external-link" target="_blank">OpenAPI</a>-Standard kommt, gibt es viele kompatible Tools.
 
-Zum Beispiel bietet **readyapi** selbst eine alternative API-Dokumentation (verwendet ReDoc), welche Sie unter <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> einsehen können:
+Zum Beispiel bietet **ReadyAPI** selbst eine alternative API-Dokumentation (verwendet ReDoc), welche Sie unter <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a> einsehen können:
 
 <img src="/img/tutorial/path-params/image02.png">
 
@@ -218,7 +218,7 @@ Sprich, die URL für diese Datei wäre etwas wie: `/files/home/johndoe/myfile.tx
 
 OpenAPI bietet nicht die Möglichkeit, dass ein *Pfad-Parameter* seinerseits einen *Pfad* enthalten kann, das würde zu Szenarios führen, die schwierig zu testen und zu definieren sind.
 
-Trotzdem können Sie das in **readyapi** tun, indem Sie eines der internen Tools von Starlette verwenden.
+Trotzdem können Sie das in **ReadyAPI** tun, indem Sie eines der internen Tools von Starlette verwenden.
 
 Die Dokumentation würde weiterhin funktionieren, allerdings wird nicht dokumentiert werden, dass der Parameter ein Pfad sein sollte.
 
@@ -246,7 +246,7 @@ In dem Fall wäre die URL: `/files//home/johndoe/myfile.txt`, mit einem doppelte
 
 ## Zusammenfassung
 
-In **readyapi** erhalten Sie mittels kurzer, intuitiver Typdeklarationen:
+In **ReadyAPI** erhalten Sie mittels kurzer, intuitiver Typdeklarationen:
 
 * Editor-Unterstützung: Fehlerprüfungen, Codevervollständigung, usw.
 * Daten "<abbr title="Den String, der von einer HTTP Anfrage kommt, nach Python-Daten konvertieren">parsen</abbr>"
@@ -255,4 +255,4 @@ In **readyapi** erhalten Sie mittels kurzer, intuitiver Typdeklarationen:
 
 Und Sie müssen sie nur einmal deklarieren.
 
-Das ist wahrscheinlich der sichtbarste Unterschied zwischen **readyapi** und alternativen Frameworks (abgesehen von der reinen Performanz).
+Das ist wahrscheinlich der sichtbarste Unterschied zwischen **ReadyAPI** und alternativen Frameworks (abgesehen von der reinen Performanz).

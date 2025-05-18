@@ -1,6 +1,6 @@
 # Conceitos de Implantações
 
-Ao implantar um aplicativo **readyapi**, ou na verdade, qualquer tipo de API da web, há vários conceitos com os quais você provavelmente se importa e, usando-os, você pode encontrar a maneira **mais apropriada** de **implantar seu aplicativo**.
+Ao implantar um aplicativo **ReadyAPI**, ou na verdade, qualquer tipo de API da web, há vários conceitos com os quais você provavelmente se importa e, usando-os, você pode encontrar a maneira **mais apropriada** de **implantar seu aplicativo**.
 
 Alguns dos conceitos importantes são:
 
@@ -19,7 +19,7 @@ Vou lhe contar um pouco mais sobre esses **conceitos** aqui, e espero que isso l
 
 Ao considerar esses conceitos, você será capaz de **avaliar e projetar** a melhor maneira de implantar **suas próprias APIs**.
 
-Nos próximos capítulos, darei a você mais **receitas concretas** para implantar aplicativos readyapi.
+Nos próximos capítulos, darei a você mais **receitas concretas** para implantar aplicativos ReadyAPI.
 
 Mas por enquanto, vamos verificar essas importantes **ideias conceituais**. Esses conceitos também se aplicam a qualquer outro tipo de API da web. 💡
 
@@ -104,7 +104,7 @@ E se o servidor for reiniciado (por exemplo, após atualizações ou migrações
 
 ### Executar automaticamente na inicialização
 
-Em geral, você provavelmente desejará que o programa do servidor (por exemplo, Uvicorn) seja iniciado automaticamente na inicialização do servidor e, sem precisar de nenhuma **intervenção humana**, tenha um processo sempre em execução com sua API (por exemplo, Uvicorn executando seu aplicativo readyapi).
+Em geral, você provavelmente desejará que o programa do servidor (por exemplo, Uvicorn) seja iniciado automaticamente na inicialização do servidor e, sem precisar de nenhuma **intervenção humana**, tenha um processo sempre em execução com sua API (por exemplo, Uvicorn executando seu aplicativo ReadyAPI).
 
 ### Programa separado
 
@@ -137,7 +137,7 @@ E nós, como desenvolvedores, continuamos aprimorando o código à medida que en
 
 ### Pequenos erros são tratados automaticamente
 
-Ao criar APIs da web com readyapi, se houver um erro em nosso código, o readyapi normalmente o conterá na única solicitação que acionou o erro. 🛡
+Ao criar APIs da web com ReadyAPI, se houver um erro em nosso código, o ReadyAPI normalmente o conterá na única solicitação que acionou o erro. 🛡
 
 O cliente receberá um **Erro Interno do Servidor 500** para essa solicitação, mas o aplicativo continuará funcionando para as próximas solicitações em vez de travar completamente.
 
@@ -178,7 +178,7 @@ Por exemplo, isso poderia ser resolvido por:
 
 ## Replicação - Processos e Memória
 
-Com um aplicativo readyapi, usando um programa de servidor como o comando `readyapi` que executa o Uvicorn, executá-lo uma vez em **um processo** pode atender a vários clientes simultaneamente.
+Com um aplicativo ReadyAPI, usando um programa de servidor como o comando `readyapi` que executa o Uvicorn, executá-lo uma vez em **um processo** pode atender a vários clientes simultaneamente.
 
 Mas em muitos casos, você desejará executar vários processos de trabalho ao mesmo tempo.
 
@@ -243,7 +243,7 @@ Aqui estão algumas combinações e estratégias possíveis:
 
 Não se preocupe se alguns desses itens sobre **contêineres**, Docker ou Kubernetes ainda não fizerem muito sentido.
 
-Falarei mais sobre imagens de contêiner, Docker, Kubernetes, etc. em um capítulo futuro: [readyapi em contêineres - Docker](docker.md){.internal-link target=_blank}.
+Falarei mais sobre imagens de contêiner, Docker, Kubernetes, etc. em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 
@@ -281,7 +281,7 @@ Aqui estão algumas ideias possíveis:
 
 /// tip | Dica
 
-Darei exemplos mais concretos de como fazer isso com contêineres em um capítulo futuro: [readyapi em contêineres - Docker](docker.md){.internal-link target=_blank}.
+Darei exemplos mais concretos de como fazer isso com contêineres em um capítulo futuro: [ReadyAPI em contêineres - Docker](docker.md){.internal-link target=_blank}.
 
 ///
 

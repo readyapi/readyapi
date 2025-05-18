@@ -16,7 +16,7 @@ This could be useful if for example you live in a country that restricts some UR
 
 The first step is to disable the automatic docs, as by default, those use the default CDN.
 
-To disable them, set their URLs to `None` when creating your `readyapi` app:
+To disable them, set their URLs to `None` when creating your `ReadyAPI` app:
 
 {* ../../docs_src/custom_docs_ui/tutorial001.py hl[8] *}
 
@@ -24,7 +24,7 @@ To disable them, set their URLs to `None` when creating your `readyapi` app:
 
 Now you can create the *path operations* for the custom docs.
 
-You can reuse readyapi's internal functions to create the HTML pages for the docs, and pass them the needed arguments:
+You can reuse ReadyAPI's internal functions to create the HTML pages for the docs, and pass them the needed arguments:
 
 * `openapi_url`: the URL where the HTML page for the docs can get the OpenAPI schema for your API. You can use here the attribute `app.openapi_url`.
 * `title`: the title of your API.
@@ -60,7 +60,7 @@ Now, you should be able to go to your docs at <a href="http://127.0.0.1:8000/doc
 
 Self-hosting the JavaScript and CSS could be useful if, for example, you need your app to keep working even while offline, without open Internet access, or in a local network.
 
-Here you'll see how to serve those files yourself, in the same readyapi app, and configure the docs to use them.
+Here you'll see how to serve those files yourself, in the same ReadyAPI app, and configure the docs to use them.
 
 ### Project file structure
 
@@ -142,7 +142,7 @@ Now we can configure the app to use those static files for the docs.
 
 The same as when using a custom CDN, the first step is to disable the automatic docs, as those use the CDN by default.
 
-To disable them, set their URLs to `None` when creating your `readyapi` app:
+To disable them, set their URLs to `None` when creating your `ReadyAPI` app:
 
 {* ../../docs_src/custom_docs_ui/tutorial002.py hl[9] *}
 
@@ -150,7 +150,7 @@ To disable them, set their URLs to `None` when creating your `readyapi` app:
 
 And the same way as with a custom CDN, now you can create the *path operations* for the custom docs.
 
-Again, you can reuse readyapi's internal functions to create the HTML pages for the docs, and pass them the needed arguments:
+Again, you can reuse ReadyAPI's internal functions to create the HTML pages for the docs, and pass them the needed arguments:
 
 * `openapi_url`: the URL where the HTML page for the docs can get the OpenAPI schema for your API. You can use here the attribute `app.openapi_url`.
 * `title`: the title of your API.

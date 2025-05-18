@@ -2,14 +2,14 @@
 
 ## Use the `readyapi run` Command
 
-In short, use `readyapi run` to serve your readyapi application:
+In short, use `readyapi run` to serve your ReadyAPI application:
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting production server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting production server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -17,7 +17,7 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -40,15 +40,15 @@ $ <font color="#4E9A06">readyapi</font> run <u style="text-decoration-style:soli
 
 That would work for most of the cases. 😎
 
-You could use that command for example to start your **readyapi** app in a container, in a server, etc.
+You could use that command for example to start your **ReadyAPI** app in a container, in a server, etc.
 
 ## ASGI Servers
 
 Let's go a little deeper into the details.
 
-readyapi uses a standard for building Python web frameworks and servers called <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>. readyapi is an ASGI web framework.
+ReadyAPI uses a standard for building Python web frameworks and servers called <abbr title="Asynchronous Server Gateway Interface">ASGI</abbr>. ReadyAPI is an ASGI web framework.
 
-The main thing you need to run a **readyapi** application (or any other ASGI application) in a remote server machine is an ASGI server program like **Uvicorn**, this is the one that comes by default in the `readyapi` command.
+The main thing you need to run a **ReadyAPI** application (or any other ASGI application) in a remote server machine is an ASGI server program like **Uvicorn**, this is the one that comes by default in the `readyapi` command.
 
 There are several alternatives, including:
 
@@ -70,7 +70,7 @@ When referring to the remote machine, it's common to call it **server**, but als
 
 ## Install the Server Program
 
-When you install readyapi, it comes with a production server, Uvicorn, and you can start it with the `readyapi run` command.
+When you install ReadyAPI, it comes with a production server, Uvicorn, and you can start it with the `readyapi run` command.
 
 But you can also install an ASGI server manually.
 
@@ -96,13 +96,13 @@ By adding the `standard`, Uvicorn will install and use some recommended extra de
 
 That including `uvloop`, the high-performance drop-in replacement for `asyncio`, that provides the big concurrency performance boost.
 
-When you install readyapi with something like `pip install "readyapi[standard]"` you already get `uvicorn[standard]` as well.
+When you install ReadyAPI with something like `pip install "readyapi[standard]"` you already get `uvicorn[standard]` as well.
 
 ///
 
 ## Run the Server Program
 
-If you installed an ASGI server manually, you would normally need to pass an import string in a special format for it to import your readyapi application:
+If you installed an ASGI server manually, you would normally need to pass an import string in a special format for it to import your ReadyAPI application:
 
 <div class="termy">
 
@@ -119,7 +119,7 @@ $ uvicorn main:app --host 0.0.0.0 --port 80
 The command `uvicorn main:app` refers to:
 
 * `main`: the file `main.py` (the Python "module").
-* `app`: the object created inside of `main.py` with the line `app = readyapi()`.
+* `app`: the object created inside of `main.py` with the line `app = ReadyAPI()`.
 
 It is equivalent to:
 

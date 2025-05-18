@@ -4,7 +4,7 @@ Hay algunos casos en los que podrías necesitar convertir un tipo de dato (como 
 
 Por ejemplo, si necesitas almacenarlo en una base de datos.
 
-Para eso, **readyapi** proporciona una función `jsonable_encoder()`.
+Para eso, **ReadyAPI** proporciona una función `jsonable_encoder()`.
 
 ## Usando el `jsonable_encoder`
 
@@ -30,6 +30,6 @@ No devuelve un gran `str` que contenga los datos en formato JSON (como una caden
 
 /// note | Nota
 
-`jsonable_encoder` es utilizado internamente por **readyapi** para convertir datos. Pero es útil en muchos otros escenarios.
+`jsonable_encoder` es utilizado internamente por **ReadyAPI** para convertir datos. Pero es útil en muchos otros escenarios.
 
 ///

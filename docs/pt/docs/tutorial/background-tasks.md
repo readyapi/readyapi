@@ -17,7 +17,7 @@ Primeiro, importe `BackgroundTasks` e defina um parâmetro em sua _função de o
 
 {* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
 
-O **readyapi** criará o objeto do tipo `BackgroundTasks` para você e o passará como esse parâmetro.
+O **ReadyAPI** criará o objeto do tipo `BackgroundTasks` para você e o passará como esse parâmetro.
 
 ## Criar uma função de tarefa
 
@@ -25,7 +25,7 @@ Crie uma função a ser executada como tarefa em segundo plano.
 
 É apenas uma função padrão que pode receber parâmetros.
 
-Pode ser uma função `async def` ou `def` normal, o **readyapi** saberá como lidar com isso corretamente.
+Pode ser uma função `async def` ou `def` normal, o **ReadyAPI** saberá como lidar com isso corretamente.
 
 Nesse caso, a função de tarefa gravará em um arquivo (simulando o envio de um e-mail).
 
@@ -49,7 +49,7 @@ Dentro de sua _função de operação de caminho_, passe sua função de tarefa 
 
 Usar `BackgroundTasks` também funciona com o sistema de injeção de dependência, você pode declarar um parâmetro do tipo `BackgroundTasks` em vários níveis: em uma _função de operação de caminho_, em uma dependência (confiável), em uma subdependência, etc.
 
-O **readyapi** sabe o que fazer em cada caso e como reutilizar o mesmo objeto, de forma que todas as tarefas em segundo plano sejam mescladas e executadas em segundo plano posteriormente:
+O **ReadyAPI** sabe o que fazer em cada caso e como reutilizar o mesmo objeto, de forma que todas as tarefas em segundo plano sejam mescladas e executadas em segundo plano posteriormente:
 
 {* ../../docs_src/background_tasks/tutorial002.py hl[13,15,22,25] *}
 
@@ -63,11 +63,11 @@ E então outra tarefa em segundo plano gerada na _função de operação de cami
 
 A classe `BackgroundTasks` vem diretamente de <a href="https://www.starlette.io/background/" class="external-link" target="_blank">`starlette.background`</a>.
 
-Ela é importada/incluída diretamente no readyapi para que você possa importá-la do `readyapi` e evitar a importação acidental da alternativa `BackgroundTask` (sem o `s` no final) de `starlette.background`.
+Ela é importada/incluída diretamente no ReadyAPI para que você possa importá-la do `readyapi` e evitar a importação acidental da alternativa `BackgroundTask` (sem o `s` no final) de `starlette.background`.
 
-Usando apenas `BackgroundTasks` (e não `BackgroundTask`), é então possível usá-la como um parâmetro de _função de operação de caminho_ e deixar o **readyapi** cuidar do resto para você, assim como ao usar o objeto `Request` diretamente.
+Usando apenas `BackgroundTasks` (e não `BackgroundTask`), é então possível usá-la como um parâmetro de _função de operação de caminho_ e deixar o **ReadyAPI** cuidar do resto para você, assim como ao usar o objeto `Request` diretamente.
 
-Ainda é possível usar `BackgroundTask` sozinho no readyapi, mas você deve criar o objeto em seu código e retornar uma Starlette `Response` incluindo-o.
+Ainda é possível usar `BackgroundTask` sozinho no ReadyAPI, mas você deve criar o objeto em seu código e retornar uma Starlette `Response` incluindo-o.
 
 Você pode ver mais detalhes na <a href="https://www.starlette.io/background/" class="external-link" target="_blank"> documentação oficiais da Starlette para tarefas em segundo plano </a>.
 
@@ -77,7 +77,7 @@ Se você precisa realizar cálculos pesados ​​em segundo plano e não necess
 
 Eles tendem a exigir configurações mais complexas, um gerenciador de fila de mensagens/tarefas, como RabbitMQ ou Redis, mas permitem que você execute tarefas em segundo plano em vários processos e, especialmente, em vários servidores.
 
-Mas se você precisa acessar variáveis ​​e objetos do mesmo aplicativo **readyapi**, ou precisa realizar pequenas tarefas em segundo plano (como enviar uma notificação por e-mail), você pode simplesmente usar `BackgroundTasks`.
+Mas se você precisa acessar variáveis ​​e objetos do mesmo aplicativo **ReadyAPI**, ou precisa realizar pequenas tarefas em segundo plano (como enviar uma notificação por e-mail), você pode simplesmente usar `BackgroundTasks`.
 
 ## Recapitulando
 

@@ -24,7 +24,7 @@ Eso es lo que resolveremos, vamos a cargar el modelo antes de que los requests s
 
 ## Lifespan
 
-Puedes definir esta lógica de *startup* y *shutdown* usando el parámetro `lifespan` de la app de `readyapi`, y un "context manager" (te mostraré lo que es en un momento).
+Puedes definir esta lógica de *startup* y *shutdown* usando el parámetro `lifespan` de la app de `ReadyAPI`, y un "context manager" (te mostraré lo que es en un momento).
 
 Comencemos con un ejemplo y luego veámoslo en detalle.
 
@@ -78,9 +78,9 @@ async with lifespan(app):
 
 Cuando creas un context manager o un async context manager como arriba, lo que hace es que, antes de entrar al bloque `with`, ejecutará el código antes del `yield`, y al salir del bloque `with`, ejecutará el código después del `yield`.
 
-En nuestro ejemplo de código arriba, no lo usamos directamente, pero se lo pasamos a readyapi para que lo use.
+En nuestro ejemplo de código arriba, no lo usamos directamente, pero se lo pasamos a ReadyAPI para que lo use.
 
-El parámetro `lifespan` de la app de `readyapi` toma un **async context manager**, por lo que podemos pasar nuestro nuevo `lifespan` async context manager a él.
+El parámetro `lifespan` de la app de `ReadyAPI` toma un **async context manager**, por lo que podemos pasar nuestro nuevo `lifespan` async context manager a él.
 
 {* ../../docs_src/events/tutorial003.py hl[22] *}
 
@@ -88,7 +88,7 @@ El parámetro `lifespan` de la app de `readyapi` toma un **async context manager
 
 /// warning | Advertencia
 
-La forma recomendada de manejar el *startup* y el *shutdown* es usando el parámetro `lifespan` de la app de `readyapi` como se describió arriba. Si proporcionas un parámetro `lifespan`, los manejadores de eventos `startup` y `shutdown` ya no serán llamados. Es solo `lifespan` o solo los eventos, no ambos.
+La forma recomendada de manejar el *startup* y el *shutdown* es usando el parámetro `lifespan` de la app de `ReadyAPI` como se describió arriba. Si proporcionas un parámetro `lifespan`, los manejadores de eventos `startup` y `shutdown` ya no serán llamados. Es solo `lifespan` o solo los eventos, no ambos.
 
 Probablemente puedas saltarte esta parte.
 

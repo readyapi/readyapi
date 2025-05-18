@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>readyapi, framework performa tinggi, mudah dipelajari, cepat untuk coding, siap untuk pengembangan</em>
+    <em>ReadyAPI, framework performa tinggi, mudah dipelajari, cepat untuk coding, siap untuk pengembangan</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,9 +33,9 @@
 
 ---
 
-readyapi adalah *framework* *web* moderen, cepat (performa-tinggi) untuk membangun API dengan Python berdasarkan tipe petunjuk Python.
+ReadyAPI adalah *framework* *web* moderen, cepat (performa-tinggi) untuk membangun API dengan Python berdasarkan tipe petunjuk Python.
 
-Fitur utama readyapi:
+Fitur utama ReadyAPI:
 
 * **Cepat**: Performa sangat tinggi, setara **NodeJS** dan **Go** (berkat Starlette dan Pydantic). [Salah satu *framework* Python tercepat yang ada](#performa).
 * **Cepat untuk coding**: Meningkatkan kecepatan pengembangan fitur dari 200% sampai 300%. *
@@ -67,25 +67,25 @@ Fitur utama readyapi:
 
 ## Opini
 
-"_[...] Saya banyak menggunakan **readyapi** sekarang ini. [...] Saya berencana menggunakannya di semua tim servis ML Microsoft. Beberapa dari mereka sudah mengintegrasikan dengan produk inti *Windows** dan sebagian produk **Office**._"
+"_[...] Saya banyak menggunakan **ReadyAPI** sekarang ini. [...] Saya berencana menggunakannya di semua tim servis ML Microsoft. Beberapa dari mereka sudah mengintegrasikan dengan produk inti *Windows** dan sebagian produk **Office**._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Kami adopsi library **readyapi** untuk membuat server **REST** yang melakukan kueri untuk menghasilkan **prediksi**. [untuk Ludwig]_"
+"_Kami adopsi library **ReadyAPI** untuk membuat server **REST** yang melakukan kueri untuk menghasilkan **prediksi**. [untuk Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** dengan bangga mengumumkan rilis open-source orkestrasi framework **manajemen krisis** : **Dispatch**! [dibuat dengan **readyapi**]_"
+"_**Netflix** dengan bangga mengumumkan rilis open-source orkestrasi framework **manajemen krisis** : **Dispatch**! [dibuat dengan **ReadyAPI**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Saya sangat senang dengan **readyapi**. Sangat menyenangkan!_"
+"_Saya sangat senang dengan **ReadyAPI**. Sangat menyenangkan!_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,37 +97,37 @@ Fitur utama readyapi:
 
 ---
 
-"_Jika anda ingin mempelajari **framework moderen** untuk membangun REST API, coba **readyapi** [...] cepat, mudah digunakan dan dipelajari [...]_"
+"_Jika anda ingin mempelajari **framework moderen** untuk membangun REST API, coba **ReadyAPI** [...] cepat, mudah digunakan dan dipelajari [...]_"
 
-"_Kami sudah pindah ke **readyapi** untuk **API** kami [...] Saya pikir kamu juga akan suka [...]_"
+"_Kami sudah pindah ke **ReadyAPI** untuk **API** kami [...] Saya pikir kamu juga akan suka [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
-"_Jika anda ingin membuat API Python siap pakai, saya merekomendasikan **readyapi**. readyapi **didesain indah**, **mudah digunakan** dan **sangat scalable**, readyapi adalah **komponen kunci** di strategi pengembangan API pertama kami dan mengatur banyak otomatisasi dan service seperti TAC Engineer kami._"
+"_Jika anda ingin membuat API Python siap pakai, saya merekomendasikan **ReadyAPI**. ReadyAPI **didesain indah**, **mudah digunakan** dan **sangat scalable**, ReadyAPI adalah **komponen kunci** di strategi pengembangan API pertama kami dan mengatur banyak otomatisasi dan service seperti TAC Engineer kami._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, CLI readyapi
+## **Cligenius**, CLI ReadyAPI
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Jika anda mengembangkan app <abbr title="Command Line Interface">CLI</abbr> yang digunakan di terminal bukan sebagai API web, kunjungi <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** adalah saudara kecil readyapi. Dan ditujukan sebagai **CLI readyapi**. ⌨️ 🚀
+**Cligenius** adalah saudara kecil ReadyAPI. Dan ditujukan sebagai **CLI ReadyAPI**. ⌨️ 🚀
 
 ## Prayarat
 
-readyapi berdiri di pundak raksasa:
+ReadyAPI berdiri di pundak raksasa:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> untuk bagian web.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> untuk bagian data.
 
 ## Instalasi
 
-Buat dan aktifkan <a href="https://readyapi.khulnasoft.com/virtual-environments/" class="external-link" target="_blank">virtual environment</a> kemudian *install* readyapi:
+Buat dan aktifkan <a href="https://readyapi.khulnasoft.com/virtual-environments/" class="external-link" target="_blank">virtual environment</a> kemudian *install* ReadyAPI:
 
 <div class="termy">
 
@@ -150,9 +150,9 @@ $ pip install "readyapi[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -173,9 +173,9 @@ Jika kode anda menggunakan `async` / `await`, gunakan `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -203,7 +203,7 @@ Jalankan *server* dengan:
 ```console
 $ readyapi dev main.py
 
- ╭────────── readyapi CLI - Development mode ───────────╮
+ ╭────────── ReadyAPI CLI - Development mode ───────────╮
  │                                                     │
  │  Serving at: http://127.0.0.1:8000                  │
  │                                                     │
@@ -228,11 +228,11 @@ INFO:     Application startup complete.
 <details markdown="1">
 <summary>Mengenai perintah <code>readyapi dev main.py</code>...</summary>
 
-Perintah `readyapi dev` membaca file `main.py`, memeriksa app **readyapi** di dalamnya, dan menjalan server dengan <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
+Perintah `readyapi dev` membaca file `main.py`, memeriksa app **ReadyAPI** di dalamnya, dan menjalan server dengan <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
 
 Secara otomatis, `readyapi dev` akan mengaktifkan *auto-reload* untuk pengembangan lokal.
 
-Informasi lebih lanjut kunjungi <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">Dokumen readyapi CLI</a>.
+Informasi lebih lanjut kunjungi <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">Dokumen ReadyAPI CLI</a>.
 
 </details>
 
@@ -278,10 +278,10 @@ Deklarasikan struktur menggunakan tipe standar Python, berkat Pydantic.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -381,7 +381,7 @@ item: Item
 
 ---
 
-Kembali ke kode contoh sebelumnya, **readyapi** akan:
+Kembali ke kode contoh sebelumnya, **ReadyAPI** akan:
 
 * Validasi apakah terdapat `item_id` di *path* untuk permintaan `GET` dan `PUT` requests.
 * Validasi apakah `item_id` berjenit `int` untuk permintaan `GET` dan `PUT`.
@@ -445,17 +445,17 @@ Untuk contoh lengkap termasuk fitur lainnya, kunjungi <a href="https://readyapi.
 
 ## Performa
 
-Tolok ukur Independent TechEmpower mendapati aplikasi **readyapi** berjalan menggunakan Uvicorn sebagai <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">salah satu framework Python tercepat yang ada</a>, hanya di bawah Starlette dan Uvicorn itu sendiri (digunakan di internal readyapi). (*)
+Tolok ukur Independent TechEmpower mendapati aplikasi **ReadyAPI** berjalan menggunakan Uvicorn sebagai <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">salah satu framework Python tercepat yang ada</a>, hanya di bawah Starlette dan Uvicorn itu sendiri (digunakan di internal ReadyAPI). (*)
 
 Penjelasan lebih lanjut, lihat bagian <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Tolok ukur</a>.
 
 ## Dependensi
 
-readyapi bergantung pada Pydantic dan Starlette.
+ReadyAPI bergantung pada Pydantic dan Starlette.
 
 ### Dependensi `standar`
 
-Ketika anda meng-*install* readyapi dengan `pip install "readyapi[standard]"`, maka readyapi akan menggunakan sekumpulan dependensi opsional `standar`:
+Ketika anda meng-*install* ReadyAPI dengan `pip install "readyapi[standard]"`, maka ReadyAPI akan menggunakan sekumpulan dependensi opsional `standar`:
 
 Digunakan oleh Pydantic:
 
@@ -467,7 +467,7 @@ Digunakan oleh Starlette:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Dibutuhkan jika anda menggunakan konfigurasi template bawaan.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Dibutuhkan jika anda menggunakan form dukungan <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, dengan `request.form()`.
 
-Digunakan oleh readyapi / Starlette:
+Digunakan oleh ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - untuk server yang memuat dan melayani aplikasi anda. Termasuk `uvicorn[standard]`, yang memasukan sejumlah dependensi (misal `uvloop`) untuk needed melayani dengan performa tinggi.
 * `readyapi-cli` - untuk menyediakan perintah `readyapi`.
@@ -485,7 +485,7 @@ Dependensi opsional tambahan Pydantic:
 * <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - untuk manajemen setting.
 * <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - untuk tipe tambahan yang digunakan dengan Pydantic.
 
-Dependensi tambahan opsional readyapi:
+Dependensi tambahan opsional ReadyAPI:
 
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Diperlukan jika anda akan menggunakan`ORJSONResponse`.
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Diperlukan jika anda akan menggunakan `UJSONResponse`.

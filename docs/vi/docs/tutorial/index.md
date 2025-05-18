@@ -1,6 +1,6 @@
 # Hướng dẫn sử dụng
 
-Hướng dẫn này cho bạn thấy từng bước cách sử dụng **readyapi** đa số các tính năng của nó.
+Hướng dẫn này cho bạn thấy từng bước cách sử dụng **ReadyAPI** đa số các tính năng của nó.
 
 Mỗi phần được xây dựng từ những phần trước đó, nhưng nó được cấu trúc thành các chủ đề riêng biệt, do đó bạn có thể xem trực tiếp từng phần cụ thể bất kì để giải quyết những API cụ thể mà bạn cần.
 
@@ -30,13 +30,13 @@ $ uvicorn main:app --reload
 
 **Khuyến khích** bạn viết hoặc sao chép code, sửa và chạy nó ở local.
 
-Sử dụng nó trong trình soạn thảo của bạn thực sự cho bạn thấy những lợi ích của readyapi, thấy được cách bạn viết code ít hơn, tất cả đều được type check, autocompletion,...
+Sử dụng nó trong trình soạn thảo của bạn thực sự cho bạn thấy những lợi ích của ReadyAPI, thấy được cách bạn viết code ít hơn, tất cả đều được type check, autocompletion,...
 
 ---
 
-## Cài đặt readyapi
+## Cài đặt ReadyAPI
 
-Bước đầu tiên là cài đặt readyapi.
+Bước đầu tiên là cài đặt ReadyAPI.
 
 Với hướng dẫn này, bạn có thể muốn cài đặt nó với tất cả các phụ thuộc và tính năng tùy chọn:
 

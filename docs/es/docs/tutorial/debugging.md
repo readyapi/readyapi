@@ -4,7 +4,7 @@ Puedes conectar el depurador en tu editor, por ejemplo con Visual Studio Code o 
 
 ## Llama a `uvicorn`
 
-En tu aplicación de readyapi, importa y ejecuta `uvicorn` directamente:
+En tu aplicación de ReadyAPI, importa y ejecuta `uvicorn` directamente:
 
 {* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
 
@@ -80,7 +80,7 @@ Para más información, revisa <a href="https://docs.python.org/3/library/__main
 
 ## Ejecuta tu código con tu depurador
 
-Dado que estás ejecutando el servidor Uvicorn directamente desde tu código, puedes llamar a tu programa de Python (tu aplicación readyapi) directamente desde el depurador.
+Dado que estás ejecutando el servidor Uvicorn directamente desde tu código, puedes llamar a tu programa de Python (tu aplicación ReadyAPI) directamente desde el depurador.
 
 ---
 
@@ -91,7 +91,7 @@ Por ejemplo, en Visual Studio Code, puedes:
 * Seleccionar "Python".
 * Ejecutar el depurador con la opción "`Python: Current File (Integrated Terminal)`".
 
-Luego, iniciará el servidor con tu código **readyapi**, deteniéndose en tus puntos de interrupción, etc.
+Luego, iniciará el servidor con tu código **ReadyAPI**, deteniéndose en tus puntos de interrupción, etc.
 
 Así es como podría verse:
 
@@ -106,7 +106,7 @@ Si usas PyCharm, puedes:
 * Luego aparece un menú contextual.
 * Selecciona el archivo para depurar (en este caso, `main.py`).
 
-Luego, iniciará el servidor con tu código **readyapi**, deteniéndose en tus puntos de interrupción, etc.
+Luego, iniciará el servidor con tu código **ReadyAPI**, deteniéndose en tus puntos de interrupción, etc.
 
 Así es como podría verse:
 

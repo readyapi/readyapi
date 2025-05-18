@@ -34,7 +34,7 @@ Aus **Sicht des Entwicklers** sollten Sie beim Nachdenken über HTTPS Folgendes 
 * **Nachdem** eine sichere Verbindung hergestellt wurde, ist das Kommunikationsprotokoll **immer noch HTTP**.
     * Die Inhalte sind **verschlüsselt**, auch wenn sie mit dem **HTTP-Protokoll** gesendet werden.
 
-Es ist eine gängige Praxis, **ein Programm/HTTP-Server** auf dem Server (der Maschine, dem Host usw.) laufen zu lassen, welches **alle HTTPS-Aspekte verwaltet**: Empfangen der **verschlüsselten HTTPS-Requests**, Senden der **entschlüsselten HTTP-Requests** an die eigentliche HTTP-Anwendung die auf demselben Server läuft (in diesem Fall die **readyapi**-Anwendung), entgegennehmen der **HTTP-Response** von der Anwendung, **verschlüsseln derselben** mithilfe des entsprechenden **HTTPS-Zertifikats** und Zurücksenden zum Client über **HTTPS**. Dieser Server wird oft als **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS-Terminierungsproxy</a>** bezeichnet.
+Es ist eine gängige Praxis, **ein Programm/HTTP-Server** auf dem Server (der Maschine, dem Host usw.) laufen zu lassen, welches **alle HTTPS-Aspekte verwaltet**: Empfangen der **verschlüsselten HTTPS-Requests**, Senden der **entschlüsselten HTTP-Requests** an die eigentliche HTTP-Anwendung die auf demselben Server läuft (in diesem Fall die **ReadyAPI**-Anwendung), entgegennehmen der **HTTP-Response** von der Anwendung, **verschlüsseln derselben** mithilfe des entsprechenden **HTTPS-Zertifikats** und Zurücksenden zum Client über **HTTPS**. Dieser Server wird oft als **<a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" class="external-link" target="_blank">TLS-Terminierungsproxy</a>** bezeichnet.
 
 Einige der Optionen, die Sie als TLS-Terminierungsproxy verwenden können, sind:
 
@@ -137,7 +137,7 @@ Der Client sendet also einen **HTTPS-Request**. Das ist einfach ein HTTP-Request
 
 ### Den Request entschlüsseln
 
-Der TLS-Terminierungsproxy würde die vereinbarte Verschlüsselung zum **Entschlüsseln des Requests** verwenden und den **einfachen (entschlüsselten) HTTP-Request** an den Prozess weiterleiten, der die Anwendung ausführt (z. B. einen Prozess, bei dem Uvicorn die readyapi-Anwendung ausführt).
+Der TLS-Terminierungsproxy würde die vereinbarte Verschlüsselung zum **Entschlüsseln des Requests** verwenden und den **einfachen (entschlüsselten) HTTP-Request** an den Prozess weiterleiten, der die Anwendung ausführt (z. B. einen Prozess, bei dem Uvicorn die ReadyAPI-Anwendung ausführt).
 
 <img src="/img/deployment/https/https05.drawio.svg">
 
@@ -196,4 +196,4 @@ Dieser ganze Erneuerungsprozess, während die Anwendung weiterhin bereitgestellt
 
 Sobald Sie jedoch die grundlegenden Informationen zu **HTTPS für Entwickler** kennen, können Sie verschiedene Tools problemlos kombinieren und konfigurieren, um alles auf einfache Weise zu verwalten.
 
-In einigen der nächsten Kapitel zeige ich Ihnen einige konkrete Beispiele für die Einrichtung von **HTTPS** für **readyapi**-Anwendungen. 🔒
+In einigen der nächsten Kapitel zeige ich Ihnen einige konkrete Beispiele für die Einrichtung von **HTTPS** für **ReadyAPI**-Anwendungen. 🔒

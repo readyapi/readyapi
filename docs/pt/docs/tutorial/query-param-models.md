@@ -6,7 +6,7 @@ Isso permitiria que você **reutilizasse o modelo** em **diversos lugares**, e t
 
 /// note | Nota
 
-Isso é suportado desde o readyapi versão `0.115.0`. 🤓
+Isso é suportado desde o ReadyAPI versão `0.115.0`. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declare os **parâmetros de consulta** que você precisa em um **modelo Pydantic
 
 {* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
-O **readyapi** **extrairá** os dados para **cada campo** dos **parâmetros de consulta** presentes na requisição, e fornecerá o modelo Pydantic que você definiu.
+O **ReadyAPI** **extrairá** os dados para **cada campo** dos **parâmetros de consulta** presentes na requisição, e fornecerá o modelo Pydantic que você definiu.
 
 
 ## Verifique os Documentos
@@ -60,7 +60,7 @@ Eles receberão um retorno de **erro** informando-os que o parâmentro de consul
 
 ## Resumo
 
-Você pode utilizar **modelos Pydantic** para declarar **parâmetros de consulta** no **readyapi**. 😎
+Você pode utilizar **modelos Pydantic** para declarar **parâmetros de consulta** no **ReadyAPI**. 😎
 
 /// tip | Dica
 

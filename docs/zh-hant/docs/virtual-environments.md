@@ -435,9 +435,9 @@ $ deactivate
 
 ## 為什麼要使用虛擬環境
 
-你需要安裝 <a href="https://www.python.org/" class="external-link" target="_blank">Python</a> 才能使用 readyapi。
+你需要安裝 <a href="https://www.python.org/" class="external-link" target="_blank">Python</a> 才能使用 ReadyAPI。
 
-接下來，你需要**安裝** readyapi 以及你想使用的其他**套件**。
+接下來，你需要**安裝** ReadyAPI 以及你想使用的其他**套件**。
 
 要安裝套件，你通常會使用隨 Python 一起提供的 `pip` 指令（或類似的替代工具）。
 
@@ -544,9 +544,9 @@ $ pip install "readyapi[standard]"
 
 </div>
 
-這會從 <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a> 下載一個壓縮檔案，其中包含 readyapi 的程式碼。
+這會從 <a href="https://pypi.org/project/readyapi/" class="external-link" target="_blank">PyPI</a> 下載一個壓縮檔案，其中包含 ReadyAPI 的程式碼。
 
-它還會**下載** readyapi 所依賴的其他套件的檔案。
+它還會**下載** ReadyAPI 所依賴的其他套件的檔案。
 
 接著，它會**解壓**所有這些檔案，並將它們放在你的電腦中的某個目錄中。
 

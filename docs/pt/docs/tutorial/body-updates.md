@@ -38,7 +38,7 @@ Isso significa que você pode enviar apenas os dados que deseja atualizar, deixa
 
 E muitas equipes usam apenas `PUT`, mesmo para atualizações parciais.
 
-Você é **livre** para usá-los como preferir, **readyapi** não impõe restrições.
+Você é **livre** para usá-los como preferir, **ReadyAPI** não impõe restrições.
 
 Mas este guia te dá uma ideia de como eles são destinados a serem usados.
 

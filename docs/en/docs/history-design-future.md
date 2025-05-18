@@ -1,6 +1,6 @@
 # History, Design and Future
 
-Some time ago, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">a **readyapi** user asked</a>:
+Some time ago, <a href="https://github.com/readyapi/readyapi/issues/3#issuecomment-454956920" class="external-link" target="_blank">a **ReadyAPI** user asked</a>:
 
 > What’s the history of this project? It seems to have come from nowhere to awesome in a few weeks [...]
 
@@ -12,17 +12,17 @@ I have been creating APIs with complex requirements for several years (Machine L
 
 As part of that, I needed to investigate, test and use many alternatives.
 
-The history of **readyapi** is in great part the history of its predecessors.
+The history of **ReadyAPI** is in great part the history of its predecessors.
 
 As said in the section [Alternatives](alternatives.md){.internal-link target=_blank}:
 
 <blockquote markdown="1">
 
-**readyapi** wouldn't exist if not for the previous work of others.
+**ReadyAPI** wouldn't exist if not for the previous work of others.
 
 There have been many tools created before that have helped inspire its creation.
 
-I have been avoiding the creation of a new framework for several years. First I tried to solve all the features covered by **readyapi** using many different frameworks, plug-ins, and tools.
+I have been avoiding the creation of a new framework for several years. First I tried to solve all the features covered by **ReadyAPI** using many different frameworks, plug-ins, and tools.
 
 But at some point, there was no other option than creating something that provided all these features, taking the best ideas from previous tools, and combining them in the best way possible, using language features that weren't even available before (Python 3.6+ type hints).
 
@@ -36,17 +36,17 @@ For example, it was clear that ideally it should be based on standard Python typ
 
 Also, the best approach was to use already existing standards.
 
-So, before even starting to code **readyapi**, I spent several months studying the specs for OpenAPI, JSON Schema, OAuth2, etc. Understanding their relationship, overlap, and differences.
+So, before even starting to code **ReadyAPI**, I spent several months studying the specs for OpenAPI, JSON Schema, OAuth2, etc. Understanding their relationship, overlap, and differences.
 
 ## Design
 
-Then I spent some time designing the developer "API" I wanted to have as a user (as a developer using readyapi).
+Then I spent some time designing the developer "API" I wanted to have as a user (as a developer using ReadyAPI).
 
 I tested several ideas in the most popular Python editors: PyCharm, VS Code, Jedi based editors.
 
 By the last <a href="https://www.jetbrains.com/research/python-developers-survey-2018/#development-tools" class="external-link" target="_blank">Python Developer Survey</a>, that covers about 80% of the users.
 
-It means that **readyapi** was specifically tested with the editors used by 80% of the Python developers. And as most of the other editors tend to work similarly, all its benefits should work for virtually all editors.
+It means that **ReadyAPI** was specifically tested with the editors used by 80% of the Python developers. And as most of the other editors tend to work similarly, all its benefits should work for virtually all editors.
 
 That way I could find the best ways to reduce code duplication as much as possible, to have completion everywhere, type and error checks, etc.
 
@@ -62,18 +62,18 @@ During the development, I also contributed to <a href="https://www.starlette.io/
 
 ## Development
 
-By the time I started creating **readyapi** itself, most of the pieces were already in place, the design was defined, the requirements and tools were ready, and the knowledge about the standards and specifications was clear and fresh.
+By the time I started creating **ReadyAPI** itself, most of the pieces were already in place, the design was defined, the requirements and tools were ready, and the knowledge about the standards and specifications was clear and fresh.
 
 ## Future
 
-By this point, it's already clear that **readyapi** with its ideas is being useful for many people.
+By this point, it's already clear that **ReadyAPI** with its ideas is being useful for many people.
 
 It is being chosen over previous alternatives for suiting many use cases better.
 
-Many developers and teams already depend on **readyapi** for their projects (including me and my team).
+Many developers and teams already depend on **ReadyAPI** for their projects (including me and my team).
 
 But still, there are many improvements and features to come.
 
-**readyapi** has a great future ahead.
+**ReadyAPI** has a great future ahead.
 
 And [your help](help-readyapi.md){.internal-link target=_blank} is greatly appreciated.

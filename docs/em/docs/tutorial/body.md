@@ -12,7 +12,7 @@
 
 📨 💽, 👆 🔜 ⚙️ 1️⃣: `POST` (🌅 ⚠), `PUT`, `DELETE` ⚖️ `PATCH`.
 
-📨 💪 ⏮️ `GET` 📨 ✔️ ⚠ 🎭 🔧, 👐, ⚫️ 🐕‍🦺 readyapi, 🕴 📶 🏗/😕 ⚙️ 💼.
+📨 💪 ⏮️ `GET` 📨 ✔️ ⚠ 🎭 🔧, 👐, ⚫️ 🐕‍🦺 ReadyAPI, 🕴 📶 🏗/😕 ⚙️ 💼.
 
 ⚫️ 🚫, 🎓 🩺 ⏮️ 🦁 🎚 🏆 🚫 🎦 🧾 💪 🕐❔ ⚙️ `GET`, &amp; 🗳 🖕 💪 🚫 🐕‍🦺 ⚫️.
 
@@ -64,7 +64,7 @@
 
 ## 🏁
 
-⏮️ 👈 🐍 🆎 📄, **readyapi** 🔜:
+⏮️ 👈 🐍 🆎 📄, **ReadyAPI** 🔜:
 
 * ✍ 💪 📨 🎻.
 * 🗜 🔗 🆎 (🚥 💪).
@@ -131,7 +131,7 @@
 
 👆 💪 📣 ➡ 🔢 &amp; 📨 💪 🎏 🕰.
 
-**readyapi** 🔜 🤔 👈 🔢 🔢 👈 🏏 ➡ 🔢 🔜 **✊ ⚪️➡️ ➡**, &amp; 👈 🔢 🔢 👈 📣 Pydantic 🏷 🔜 **✊ ⚪️➡️ 📨 💪**.
+**ReadyAPI** 🔜 🤔 👈 🔢 🔢 👈 🏏 ➡ 🔢 🔜 **✊ ⚪️➡️ ➡**, &amp; 👈 🔢 🔢 👈 📣 Pydantic 🏷 🔜 **✊ ⚪️➡️ 📨 💪**.
 
 {* ../../docs_src/body/tutorial003.py hl[17:18] *}
 
@@ -139,7 +139,7 @@
 
 👆 💪 📣 **💪**, **➡** &amp; **🔢** 🔢, 🌐 🎏 🕰.
 
-**readyapi** 🔜 🤔 🔠 👫 &amp; ✊ 📊 ⚪️➡️ ☑ 🥉.
+**ReadyAPI** 🔜 🤔 🔠 👫 &amp; ✊ 📊 ⚪️➡️ ☑ 🥉.
 
 {* ../../docs_src/body/tutorial004.py hl[18] *}
 
@@ -151,9 +151,9 @@
 
 /// note
 
-readyapi 🔜 💭 👈 💲 `q` 🚫 ✔ ↩️ 🔢 💲 `= None`.
+ReadyAPI 🔜 💭 👈 💲 `q` 🚫 ✔ ↩️ 🔢 💲 `= None`.
 
- `Union` `Union[str, None]` 🚫 ⚙️ readyapi, ✋️ 🔜 ✔ 👆 👨‍🎨 🤝 👆 👍 🐕‍🦺 &amp; 🔍 ❌.
+ `Union` `Union[str, None]` 🚫 ⚙️ ReadyAPI, ✋️ 🔜 ✔ 👆 👨‍🎨 🤝 👆 👍 🐕‍🦺 &amp; 🔍 ❌.
 
 ///
 

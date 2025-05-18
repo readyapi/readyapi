@@ -1,6 +1,6 @@
 # Generate Clients
 
-Como o **readyapi** é baseado na especificação **OpenAPI**, você obtém compatibilidade automática com muitas ferramentas, incluindo a documentação automática da API (fornecida pelo Swagger UI).
+Como o **ReadyAPI** é baseado na especificação **OpenAPI**, você obtém compatibilidade automática com muitas ferramentas, incluindo a documentação automática da API (fornecida pelo Swagger UI).
 
 Uma vantagem particular que nem sempre é óbvia é que você pode **gerar clientes** (às vezes chamados de <abbr title="Software Development Kits">**SDKs**</abbr>) para a sua API, para muitas **linguagens de programação** diferentes.
 
@@ -14,11 +14,11 @@ Se voce está construindo um **frontend**, uma alternativa muito interessante é
 
 ## Geradores de Clientes e SDKs - Patrocinadores
 
-Existem também alguns geradores de clientes e SDKs baseados na OpenAPI (readyapi) **patrocinados por empresas**, em alguns casos eles podem oferecer **recursos adicionais** além de SDKs/clientes gerados de alta qualidade.
+Existem também alguns geradores de clientes e SDKs baseados na OpenAPI (ReadyAPI) **patrocinados por empresas**, em alguns casos eles podem oferecer **recursos adicionais** além de SDKs/clientes gerados de alta qualidade.
 
-Alguns deles também ✨ [**patrocinam o readyapi**](../help-readyapi.md#sponsor-the-author){.internal-link target=_blank} ✨, isso garante o **desenvolvimento** contínuo e saudável do readyapi e seu **ecossistema**.
+Alguns deles também ✨ [**patrocinam o ReadyAPI**](../help-readyapi.md#sponsor-the-author){.internal-link target=_blank} ✨, isso garante o **desenvolvimento** contínuo e saudável do ReadyAPI e seu **ecossistema**.
 
-E isso mostra o verdadeiro compromisso deles com o readyapi e sua **comunidade** (você), pois eles não apenas querem fornecer um **bom serviço**, mas também querem garantir que você tenha um **framework bom e saudável**, o readyapi. 🙇
+E isso mostra o verdadeiro compromisso deles com o ReadyAPI e sua **comunidade** (você), pois eles não apenas querem fornecer um **bom serviço**, mas também querem garantir que você tenha um **framework bom e saudável**, o ReadyAPI. 🙇
 
 Por exemplo, você pode querer experimentar:
 
@@ -30,7 +30,7 @@ Existem também várias outras empresas que oferecem serviços semelhantes que v
 
 ## Gerar um Cliente Frontend TypeScript
 
-Vamos começar com um aplicativo **readyapi** simples:
+Vamos começar com um aplicativo **ReadyAPI** simples:
 
 {* ../../docs_src/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
 
@@ -119,7 +119,7 @@ Você também obterá preenchimento automático para o corpo a ser enviado:
 
 /// tip | Dica
 
-Observe o preenchimento automático para `name` e `price`, que foi definido no aplicativo readyapi, no modelo `Item`.
+Observe o preenchimento automático para `name` e `price`, que foi definido no aplicativo ReadyAPI, no modelo `Item`.
 
 ///
 
@@ -131,9 +131,9 @@ O objeto de resposta também terá preenchimento automático:
 
 <img src="/img/tutorial/generate-clients/image05.png">
 
-## App readyapi com Tags
+## App ReadyAPI com Tags
 
-Em muitos casos seu app readyapi será maior, e você provavelmente usará tags para separar diferentes grupos de *operações de rota*.
+Em muitos casos seu app ReadyAPI será maior, e você provavelmente usará tags para separar diferentes grupos de *operações de rota*.
 
 Por exemplo, você poderia ter uma seção para **items** e outra seção para **users**, e elas poderiam ser separadas por tags:
 
@@ -141,7 +141,7 @@ Por exemplo, você poderia ter uma seção para **items** e outra seção para *
 
 ### Gerar um Cliente TypeScript com Tags
 
-Se você gerar um cliente para um app readyapi usando tags, normalmente também separará o código do cliente com base nas tags.
+Se você gerar um cliente para um app ReadyAPI usando tags, normalmente também separará o código do cliente com base nas tags.
 
 Dessa forma, você poderá ter as coisas ordenadas e agrupadas corretamente para o código do cliente:
 
@@ -162,7 +162,7 @@ ItemsService.createItemItemsPost({name: "Plumbus", price: 5})
 
 ...isto ocorre porque o gerador de clientes usa o **operation ID** interno do OpenAPI para cada *operação de rota*.
 
-O OpenAPI exige que cada operation ID seja único em todas as *operações de rota*, então o readyapi usa o **nome da função**, o **caminho** e o **método/operacao HTTP** para gerar esse operation ID, porque dessa forma ele pode garantir que os operation IDs sejam únicos.
+O OpenAPI exige que cada operation ID seja único em todas as *operações de rota*, então o ReadyAPI usa o **nome da função**, o **caminho** e o **método/operacao HTTP** para gerar esse operation ID, porque dessa forma ele pode garantir que os operation IDs sejam únicos.
 
 Mas eu vou te mostrar como melhorar isso a seguir. 🤓
 
@@ -176,13 +176,13 @@ Por exemplo, você poderia garantir que cada *operação de rota* tenha uma tag,
 
 ### Função Personalizada para Gerar IDs de Operação Únicos
 
-O readyapi usa um **ID único** para cada *operação de rota*, ele é usado para o **ID da operação** e também para os nomes de quaisquer modelos personalizados necessários, para requisições ou respostas.
+O ReadyAPI usa um **ID único** para cada *operação de rota*, ele é usado para o **ID da operação** e também para os nomes de quaisquer modelos personalizados necessários, para requisições ou respostas.
 
 Você pode personalizar essa função. Ela recebe uma `APIRoute` e gera uma string.
 
 Por exemplo, aqui está usando a primeira tag (você provavelmente terá apenas uma tag) e o nome da *operação de rota* (o nome da função).
 
-Você pode então passar essa função personalizada para o **readyapi** como o parâmetro `generate_unique_id_function`:
+Você pode então passar essa função personalizada para o **ReadyAPI** como o parâmetro `generate_unique_id_function`:
 
 {* ../../docs_src/generate_clients/tutorial003_py39.py hl[6:7,10] *}
 

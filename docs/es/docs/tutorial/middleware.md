@@ -1,6 +1,6 @@
 # Middleware
 
-Puedes añadir middleware a las aplicaciones de **readyapi**.
+Puedes añadir middleware a las aplicaciones de **ReadyAPI**.
 
 Un "middleware" es una función que trabaja con cada **request** antes de que sea procesada por cualquier *path operation* específica. Y también con cada **response** antes de devolverla.
 
@@ -45,7 +45,7 @@ Pero si tienes custom headers que deseas que un cliente en un navegador pueda ve
 
 También podrías usar `from starlette.requests import Request`.
 
-**readyapi** lo proporciona como una conveniencia para ti, el desarrollador. Pero viene directamente de Starlette.
+**ReadyAPI** lo proporciona como una conveniencia para ti, el desarrollador. Pero viene directamente de Starlette.
 
 ///
 

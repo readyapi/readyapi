@@ -1,8 +1,8 @@
 # 特性
 
-## readyapi 特性
+## ReadyAPI 特性
 
-**readyapi** 提供了以下内容：
+**ReadyAPI** 提供了以下内容：
 
 ### 建立在開放標準的基礎上
 
@@ -13,7 +13,7 @@
 
 ### 能夠自動生成文件
 
-readyapi 能生成互動式 API 文件和探索性的 Web 使用者介面。由於該框架基於 OpenAPI，因此有多種選擇，預設提供了兩種。
+ReadyAPI 能生成互動式 API 文件和探索性的 Web 使用者介面。由於該框架基於 OpenAPI，因此有多種選擇，預設提供了兩種。
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a> 提供互動式探索，讓你可以直接從瀏覽器呼叫並測試你的 API 。
 
@@ -28,7 +28,7 @@ readyapi 能生成互動式 API 文件和探索性的 Web 使用者介面。由�
 
 這一切都基於標準的 **Python 型別**宣告（感謝 Pydantic）。無需學習新的語法，只需使用標準的現代 Python。
 
-如果你需要 2 分鐘來學習如何使用 Python 型別（即使你不使用 readyapi），可以看看這個簡短的教學：[Python 型別](python-types.md){.internal-link target=_blank}。
+如果你需要 2 分鐘來學習如何使用 Python 型別（即使你不使用 ReadyAPI），可以看看這個簡短的教學：[Python 型別](python-types.md){.internal-link target=_blank}。
 
 如果你寫帶有 Python 型別的程式碼：
 
@@ -80,7 +80,7 @@ my_second_user: User = User(**second_user_data)
 
 在最近的 Python 開發者調查中，我們能看到<a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank"> 被使用最多的功能是 autocompletion</a>，此功能可以預測將要輸入文字，並自動補齊。
 
-整個 **readyapi** 框架就是基於這一點，任何地方都可以進行自動補齊。
+整個 **ReadyAPI** 框架就是基於這一點，任何地方都可以進行自動補齊。
 
 你幾乎不需要經常來回看文件。
 
@@ -102,7 +102,7 @@ my_second_user: User = User(**second_user_data)
 
 ### 簡潔
 
-readyapi 為你提供了**預設值**，讓你不必在初期進行繁瑣的配置，一切都可以自動運作。如果你有更具體的需求，則可以進行調整和自定義，
+ReadyAPI 為你提供了**預設值**，讓你不必在初期進行繁瑣的配置，一切都可以自動運作。如果你有更具體的需求，則可以進行調整和自定義，
 
 但在大多數情況下，你只需要直接使用預設值，就能順利完成 API 開發。
 
@@ -124,7 +124,7 @@ readyapi 為你提供了**預設值**，讓你不必在初期進行繁瑣的配�
 
 ### 安全性及身份驗證
 
-readyapi 已經整合了安全性和身份驗證的功能，但不會強制與特定的資料庫或資料模型進行綁定。
+ReadyAPI 已經整合了安全性和身份驗證的功能，但不會強制與特定的資料庫或資料模型進行綁定。
 
 OpenAPI 中定義的安全模式，包括：
 
@@ -142,7 +142,7 @@ OpenAPI 中定義的安全模式，包括：
 
 ### 依賴注入（Dependency Injection）
 
-readyapi 有一個使用簡單，但是非常強大的<abbr title='也叫做 "components", "resources", "services", "providers"'><strong>依賴注入</strong></abbr>系統。
+ReadyAPI 有一個使用簡單，但是非常強大的<abbr title='也叫做 "components", "resources", "services", "providers"'><strong>依賴注入</strong></abbr>系統。
 
 * 依賴項甚至可以有自己的依賴，從而形成一個層級或**依賴圖**的結構。
 * 所有**自動化處理**都由框架完成。
@@ -167,9 +167,9 @@ readyapi 有一個使用簡單，但是非常強大的<abbr title='也叫做 "co
 
 ## Starlette 特性
 
-**readyapi** 完全相容且基於 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>。所以，你有其他的 Starlette 程式碼也能正常運作。readyapi 繼承了 Starlette 的所有功能，如果你已經知道或者使用過 Starlette，大部分的功能會以相同的方式運作。
+**ReadyAPI** 完全相容且基於 <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>。所以，你有其他的 Starlette 程式碼也能正常運作。ReadyAPI 繼承了 Starlette 的所有功能，如果你已經知道或者使用過 Starlette，大部分的功能會以相同的方式運作。
 
-通過 **readyapi** 你可以獲得所有 **Starlette** 的特性（readyapi 就像加強版的 Starlette）：
+通過 **ReadyAPI** 你可以獲得所有 **Starlette** 的特性（ReadyAPI 就像加強版的 Starlette）：
 
 * 性能極其出色。它是 <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">Python 可用的最快框架之一，和 **NodeJS** 及 **Go** 相當</a>。
 * **支援 WebSocket**。
@@ -183,7 +183,7 @@ readyapi 有一個使用簡單，但是非常強大的<abbr title='也叫做 "co
 
 ## Pydantic 特性
 
-**readyapi** 完全相容且基於 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>。所以，你有其他 Pydantic 程式碼也能正常工作。
+**ReadyAPI** 完全相容且基於 <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a>。所以，你有其他 Pydantic 程式碼也能正常工作。
 
 相容包括基於 Pydantic 的外部函式庫， 例如用於資料庫的 <abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s。
 
@@ -191,7 +191,7 @@ readyapi 有一個使用簡單，但是非常強大的<abbr title='也叫做 "co
 
 反之亦然，在很多情況下，你也可以把從資料庫中獲取的物件**直接傳給客戶端**。
 
-通過 **readyapi** 你可以獲得所有 **Pydantic** 的特性（readyapi 基於 Pydantic 做了所有的資料處理）：
+通過 **ReadyAPI** 你可以獲得所有 **Pydantic** 的特性（ReadyAPI 基於 Pydantic 做了所有的資料處理）：
 
 * **更簡單**：
     * 不需要學習新的 micro-language 來定義結構。

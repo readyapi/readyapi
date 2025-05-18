@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>readyapi framework, hiệu năng cao, dễ học, dễ code, sẵn sàng để tạo ra sản phẩm</em>
+    <em>ReadyAPI framework, hiệu năng cao, dễ học, dễ code, sẵn sàng để tạo ra sản phẩm</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,7 +33,7 @@
 
 ---
 
-readyapi là một web framework hiện đại, hiệu năng cao để xây dựng web APIs với Python dựa trên tiêu chuẩn Python type hints.
+ReadyAPI là một web framework hiện đại, hiệu năng cao để xây dựng web APIs với Python dựa trên tiêu chuẩn Python type hints.
 
 Những tính năng như:
 
@@ -67,25 +67,25 @@ Những tính năng như:
 
 ## Ý kiến đánh giá
 
-"_[...] Tôi đang sử dụng **readyapi** vô cùng nhiều vào những ngày này. [...] Tôi thực sự đang lên kế hoạch sử dụng nó cho tất cả các nhóm **dịch vụ ML tại Microsoft**. Một vài trong số đó đang tích hợp vào sản phẩm lõi của **Window** và một vài sản phẩm cho **Office**._"
+"_[...] Tôi đang sử dụng **ReadyAPI** vô cùng nhiều vào những ngày này. [...] Tôi thực sự đang lên kế hoạch sử dụng nó cho tất cả các nhóm **dịch vụ ML tại Microsoft**. Một vài trong số đó đang tích hợp vào sản phẩm lõi của **Window** và một vài sản phẩm cho **Office**._"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Chúng tôi tích hợp thư viện **readyapi** để sinh ra một **REST** server, nó có thể được truy vấn để thu được những **dự đoán**._ [bởi Ludwid] "
+"_Chúng tôi tích hợp thư viện **ReadyAPI** để sinh ra một **REST** server, nó có thể được truy vấn để thu được những **dự đoán**._ [bởi Ludwid] "
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, và Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_**Netflix** vui mừng thông báo việc phát hành framework mã nguồn mở của chúng tôi cho *quản lí khủng hoảng* tập trung: **Dispatch**! [xây dựng với **readyapi**]_"
+"_**Netflix** vui mừng thông báo việc phát hành framework mã nguồn mở của chúng tôi cho *quản lí khủng hoảng* tập trung: **Dispatch**! [xây dựng với **ReadyAPI**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Tôi vô cùng hào hứng về **readyapi**. Nó rất thú vị_"
+"_Tôi vô cùng hào hứng về **ReadyAPI**. Nó rất thú vị_"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcast host</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,32 +97,32 @@ Những tính năng như:
 
 ---
 
-"_Nếu bạn đang tìm kiếm một **framework hiện đại** để xây dựng một REST APIs, thử xem xét **readyapi** [...] Nó nhanh, dễ dùng và dễ học [...]_"
+"_Nếu bạn đang tìm kiếm một **framework hiện đại** để xây dựng một REST APIs, thử xem xét **ReadyAPI** [...] Nó nhanh, dễ dùng và dễ học [...]_"
 
-"_Chúng tôi đã chuyển qua **readyapi cho **APIs** của chúng tôi [...] Tôi nghĩ bạn sẽ thích nó [...]_"
+"_Chúng tôi đã chuyển qua **ReadyAPI cho **APIs** của chúng tôi [...] Tôi nghĩ bạn sẽ thích nó [...]_"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong><a href="https://explosion.ai" target="_blank">Explosion AI</a> founders - <a href="https://spacy.io" target="_blank">spaCy</a> creators</strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong>nhà sáng lập <a href="https://explosion.ai" target="_blank">Explosion AI</a> - người tạo ra <a href="https://spacy.io" target="_blank">spaCy</a></strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Nếu ai đó đang tìm cách xây dựng sản phẩm API bằng Python, tôi sẽ đề xuất **readyapi**. Nó **được thiết kế đẹp đẽ**, **sử dụng đơn giản** và **có khả năng mở rộng cao**, nó đã trở thành một **thành phần quan trọng** trong chiến lược phát triển API của chúng tôi và đang thúc đẩy nhiều dịch vụ và mảng tự động hóa như Kỹ sư TAC ảo của chúng tôi._"
+"_Nếu ai đó đang tìm cách xây dựng sản phẩm API bằng Python, tôi sẽ đề xuất **ReadyAPI**. Nó **được thiết kế đẹp đẽ**, **sử dụng đơn giản** và **có khả năng mở rộng cao**, nó đã trở thành một **thành phần quan trọng** trong chiến lược phát triển API của chúng tôi và đang thúc đẩy nhiều dịch vụ và mảng tự động hóa như Kỹ sư TAC ảo của chúng tôi._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, giao diện dòng lệnh của readyapi
+## **Cligenius**, giao diện dòng lệnh của ReadyAPI
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Nếu bạn đang xây dựng một <abbr title="Giao diện dòng lệnh">CLI</abbr> - ứng dụng được sử dụng trong giao diện dòng lệnh, xem về <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** là một người anh em của readyapi. Và nó được dự định trở thành **giao diện dòng lệnh cho readyapi**. ⌨️ 🚀
+**Cligenius** là một người anh em của ReadyAPI. Và nó được dự định trở thành **giao diện dòng lệnh cho ReadyAPI**. ⌨️ 🚀
 
 ## Yêu cầu
 
-readyapi đứng trên vai những người khổng lồ:
+ReadyAPI đứng trên vai những người khổng lồ:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> cho phần web.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> cho phần data.
@@ -160,9 +160,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -183,9 +183,9 @@ Nếu code của bạn sử dụng `async` / `await`, hãy sử dụng `async de
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -228,7 +228,7 @@ INFO:     Application startup complete.
 Lệnh `uvicorn main:app` tham chiếu tới những thành phần sau:
 
 * `main`: tệp tin `main.py` (một Python "module").
-* `app`: object được tạo trong tệp tin `main.py` tại dòng `app = readyapi()`.
+* `app`: object được tạo trong tệp tin `main.py` tại dòng `app = ReadyAPI()`.
 * `--reload`: chạy lại server sau khi code thay đổi. Chỉ sử dụng trong quá trình phát triển.
 
 </details>
@@ -275,10 +275,10 @@ Bây giờ sửa tệp tin `main.py` để nhận body từ một request `PUT`.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -378,7 +378,7 @@ item: Item
 
 ---
 
-Quay trở lại ví dụ trước, **readyapi** sẽ thực hiện:
+Quay trở lại ví dụ trước, **ReadyAPI** sẽ thực hiện:
 
 * Kiểm tra xem có một `item_id` trong đường dẫn với các request `GET` và `PUT` không?
 * Kiểm tra xem `item_id` có phải là kiểu `int` trong các request `GET` và `PUT` không?
@@ -444,7 +444,7 @@ Ví dụ hoàn chỉnh bao gồm nhiều tính năng hơn, xem <a href="https://
 
 ## Hiệu năng
 
-Independent TechEmpower benchmarks cho thấy các ứng dụng **readyapi** chạy dưới Uvicorn là <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">một trong những Python framework nhanh nhất</a>, chỉ đứng sau Starlette và Uvicorn (được sử dụng bên trong readyapi). (*)
+Independent TechEmpower benchmarks cho thấy các ứng dụng **ReadyAPI** chạy dưới Uvicorn là <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">một trong những Python framework nhanh nhất</a>, chỉ đứng sau Starlette và Uvicorn (được sử dụng bên trong ReadyAPI). (*)
 
 Để hiểu rõ hơn, xem phần <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
@@ -460,9 +460,9 @@ Sử dụng Starlette:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Bắt buộc nếu bạn muốn sử dụng cấu hình template engine mặc định.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Bắt buộc nếu bạn muốn hỗ trợ <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, form với `request.form()`.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - Bắt buộc để hỗ trợ `SessionMiddleware`.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Bắt buộc để hỗ trợ `SchemaGenerator` cho Starlette (bạn có thể không cần nó trong readyapi).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - Bắt buộc để hỗ trợ `SchemaGenerator` cho Starlette (bạn có thể không cần nó trong ReadyAPI).
 
-Sử dụng bởi readyapi / Starlette:
+Sử dụng bởi ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - Server để chạy ứng dụng của bạn.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Bắt buộc nếu bạn muốn sử dụng `ORJSONResponse`.

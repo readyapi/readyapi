@@ -1,6 +1,6 @@
 # 自定义响应 - HTML，流，文件和其他
 
-**readyapi** 默认会使用 `JSONResponse` 返回响应。
+**ReadyAPI** 默认会使用 `JSONResponse` 返回响应。
 
 你可以通过直接返回 `Response` 来重载它，参见 [直接返回响应](response-directly.md){.internal-link target=_blank}。
 
@@ -14,7 +14,7 @@
 
 /// note | 说明
 
-如果你使用不带有任何媒体类型的响应类，readyapi 认为你的响应没有任何内容，所以不会在生成的OpenAPI文档中记录响应格式。
+如果你使用不带有任何媒体类型的响应类，ReadyAPI 认为你的响应没有任何内容，所以不会在生成的OpenAPI文档中记录响应格式。
 
 ///
 
@@ -38,13 +38,13 @@
 
 /// tip | 小贴士
 
-`ORJSONResponse` 目前只在 readyapi 中可用，而在 Starlette 中不可用。
+`ORJSONResponse` 目前只在 ReadyAPI 中可用，而在 Starlette 中不可用。
 
 ///
 
 ## HTML 响应
 
-使用 `HTMLResponse` 来从 **readyapi** 中直接返回一个 HTML 响应。
+使用 `HTMLResponse` 来从 **ReadyAPI** 中直接返回一个 HTML 响应。
 
 * 导入 `HTMLResponse`。
 * 将 `HTMLResponse` 作为你的 *路径操作* 的 `response_class` 参数传入。
@@ -95,9 +95,9 @@
 
 在这个例子中，函数 `generate_html_response()` 已经生成并返回 `Response` 对象而不是在 `str` 中返回 HTML。
 
-通过返回函数 `generate_html_response()` 的调用结果，你已经返回一个重载 **readyapi** 默认行为的 `Response` 对象，
+通过返回函数 `generate_html_response()` 的调用结果，你已经返回一个重载 **ReadyAPI** 默认行为的 `Response` 对象，
 
-但如果你在 `response_class` 中也传入了 `HTMLResponse`，**readyapi** 会知道如何在 OpenAPI 和交互式文档中使用 `text/html` 将其文档化为 HTML。
+但如果你在 `response_class` 中也传入了 `HTMLResponse`，**ReadyAPI** 会知道如何在 OpenAPI 和交互式文档中使用 `text/html` 将其文档化为 HTML。
 
 <img src="/img/tutorial/custom-response/image01.png">
 
@@ -111,7 +111,7 @@
 
 你也可以使用 `from starlette.responses import HTMLResponse`。
 
-**readyapi** 提供了同 `readyapi.responses` 相同的 `starlette.responses` 只是为了方便开发者。但大多数可用的响应都直接来自 Starlette。
+**ReadyAPI** 提供了同 `readyapi.responses` 相同的 `starlette.responses` 只是为了方便开发者。但大多数可用的响应都直接来自 Starlette。
 
 ///
 
@@ -128,7 +128,7 @@
 * `headers` - 一个由字符串组成的 `dict`。
 * `media_type` - 一个给出媒体类型的 `str`，比如 `"text/html"`。
 
-readyapi（实际上是 Starlette）将自动包含 Content-Length 的头。它还将包含一个基于 media_type 的 Content-Type 头，并为文本类型附加一个字符集。
+ReadyAPI（实际上是 Starlette）将自动包含 Content-Length 的头。它还将包含一个基于 media_type 的 Content-Type 头，并为文本类型附加一个字符集。
 
 
 {* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
@@ -147,7 +147,7 @@ readyapi（实际上是 Starlette）将自动包含 Content-Length 的头。它�
 
 接受数据并返回一个 `application/json` 编码的响应。
 
-如上文所述，这是 **readyapi** 中使用的默认响应。
+如上文所述，这是 **ReadyAPI** 中使用的默认响应。
 
 ### `ORJSONResponse`
 

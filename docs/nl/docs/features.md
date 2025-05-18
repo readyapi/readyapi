@@ -1,8 +1,8 @@
 # Functionaliteit
 
-## readyapi functionaliteit
+## ReadyAPI functionaliteit
 
-**readyapi** biedt je het volgende:
+**ReadyAPI** biedt je het volgende:
 
 ### Gebaseerd op open standaarden
 
@@ -27,7 +27,7 @@ Interactieve API-documentatie en verkenning van webgebruikersinterfaces. Aangezi
 
 Het is allemaal gebaseerd op standaard **Python type** declaraties (dankzij Pydantic). Je hoeft dus geen nieuwe syntax te leren. Het is gewoon standaard moderne Python.
 
-Als je een opfriscursus van 2 minuten nodig hebt over het gebruik van Python types (zelfs als je readyapi niet gebruikt), bekijk dan deze korte tutorial: [Python Types](python-types.md){.internal-link target=_blank}.
+Als je een opfriscursus van 2 minuten nodig hebt over het gebruik van Python types (zelfs als je ReadyAPI niet gebruikt), bekijk dan deze korte tutorial: [Python Types](python-types.md){.internal-link target=_blank}.
 
 Je schrijft gewoon standaard Python met types:
 
@@ -77,7 +77,7 @@ Het gehele framework is ontworpen om eenvoudig en intuïtief te zijn in gebruik.
 
 Uit enquêtes onder Python ontwikkelaars blijkt maar al te duidelijk dat "(automatische) code aanvulling" <a href="https://www.jetbrains.com/research/python-developers-survey-2017/#tools-and-features" class="external-link" target="_blank">een van de meest gebruikte functionaliteiten is</a>.
 
-Het hele **readyapi** framework is daarop gebaseerd. Automatische code aanvulling werkt overal.
+Het hele **ReadyAPI** framework is daarop gebaseerd. Automatische code aanvulling werkt overal.
 
 Je hoeft zelden terug te vallen op de documentatie.
 
@@ -136,7 +136,7 @@ Gebouwd als een herbruikbare tool met componenten die makkelijk te integreren zi
 
 ### Dependency Injection
 
-readyapi bevat een uiterst eenvoudig, maar uiterst krachtig <abbr title='ook bekend als "componenten", "bronnen", "diensten", "aanbieders"'><strong>Dependency Injection</strong></abbr> systeem.
+ReadyAPI bevat een uiterst eenvoudig, maar uiterst krachtig <abbr title='ook bekend als "componenten", "bronnen", "diensten", "aanbieders"'><strong>Dependency Injection</strong></abbr> systeem.
 
 * Zelfs dependencies kunnen dependencies hebben, waardoor een hiërarchie of **“graph” van dependencies** ontstaat.
 * Allemaal **automatisch afgehandeld** door het framework.
@@ -159,11 +159,11 @@ Elke integratie is ontworpen om eenvoudig te gebruiken (met afhankelijkheden), z
 
 ## Starlette functies
 
-**readyapi** is volledig verenigbaar met (en gebaseerd op) <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>.
+**ReadyAPI** is volledig verenigbaar met (en gebaseerd op) <a href="https://www.starlette.io/" class="external-link" target="_blank"><strong>Starlette</strong></a>.
 
-`readyapi` is eigenlijk een subklasse van `Starlette`. Dus als je Starlette al kent of gebruikt, zal de meeste functionaliteit op dezelfde manier werken.
+`ReadyAPI` is eigenlijk een subklasse van `Starlette`. Dus als je Starlette al kent of gebruikt, zal de meeste functionaliteit op dezelfde manier werken.
 
-Met **readyapi** krijg je alle functies van **Starlette** (readyapi is gewoon Starlette op steroïden):
+Met **ReadyAPI** krijg je alle functies van **Starlette** (ReadyAPI is gewoon Starlette op steroïden):
 
 * Zeer indrukwekkende prestaties. Het is <a href="https://github.com/encode/starlette#performance" class="external-link" target="_blank">een van de snelste Python frameworks, vergelijkbaar met **NodeJS** en **Go**</a>.
 * **WebSocket** ondersteuning.
@@ -177,7 +177,7 @@ Met **readyapi** krijg je alle functies van **Starlette** (readyapi is gewoon St
 
 ## Pydantic functionaliteit
 
-**readyapi** is volledig verenigbaar met (en gebaseerd op) Pydantic. Dus alle extra <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> code die je nog hebt werkt ook.
+**ReadyAPI** is volledig verenigbaar met (en gebaseerd op) Pydantic. Dus alle extra <a href="https://docs.pydantic.dev/" class="external-link" target="_blank"><strong>Pydantic</strong></a> code die je nog hebt werkt ook.
 
 Inclusief externe pakketten die ook gebaseerd zijn op Pydantic, zoals <abbr title="Object-Relational Mapper">ORM</abbr>s, <abbr title="Object-Document Mapper">ODM</abbr>s voor databases.
 
@@ -185,7 +185,7 @@ Dit betekent ook dat je in veel gevallen het object dat je van een request krijg
 
 Hetzelfde geldt ook andersom, in veel gevallen kun je dus het object dat je krijgt van de database **direct doorgeven aan de client**.
 
-Met **readyapi** krijg je alle functionaliteit van **Pydantic** (omdat readyapi is gebaseerd op Pydantic voor alle dataverwerking):
+Met **ReadyAPI** krijg je alle functionaliteit van **Pydantic** (omdat ReadyAPI is gebaseerd op Pydantic voor alle dataverwerking):
 
 * **Geen brainfucks**:
     * Je hoeft geen nieuwe microtaal voor schemadefinities te leren.

@@ -1,8 +1,8 @@
 # 응답을 직접 반환하기
 
-**readyapi**에서 *경로 작업(path operation)*을 생성할 때, 일반적으로 `dict`, `list`, Pydantic 모델, 데이터베이스 모델 등의 데이터를 반환할 수 있습니다.
+**ReadyAPI**에서 *경로 작업(path operation)*을 생성할 때, 일반적으로 `dict`, `list`, Pydantic 모델, 데이터베이스 모델 등의 데이터를 반환할 수 있습니다.
 
-기본적으로 **readyapi**는 [JSON 호환 가능 인코더](../tutorial/encoder.md){.internal-link target=_blank}에 설명된 `jsonable_encoder`를 사용해 해당 반환 값을 자동으로 `JSON`으로 변환합니다.
+기본적으로 **ReadyAPI**는 [JSON 호환 가능 인코더](../tutorial/encoder.md){.internal-link target=_blank}에 설명된 `jsonable_encoder`를 사용해 해당 반환 값을 자동으로 `JSON`으로 변환합니다.
 
 그런 다음, JSON 호환 데이터(예: `dict`)를 `JSONResponse`에 넣어 사용자의 응답을 전송하는 방식으로 처리됩니다.
 
@@ -20,7 +20,7 @@
 
 ///
 
-그리고 `Response`를 반환하면 **readyapi**가 이를 그대로 전달합니다.
+그리고 `Response`를 반환하면 **ReadyAPI**가 이를 그대로 전달합니다.
 
 Pydantic 모델로 데이터 변환을 수행하지 않으며, 내용을 다른 형식으로 변환하지 않습니다.
 
@@ -28,7 +28,7 @@ Pydantic 모델로 데이터 변환을 수행하지 않으며, 내용을 다른 
 
 ## `Response`에서 `jsonable_encoder` 사용하기
 
-**readyapi**는 반환하는 `Response`에 아무런 변환을 하지 않으므로, 그 내용이 준비되어 있어야 합니다.
+**ReadyAPI**는 반환하는 `Response`에 아무런 변환을 하지 않으므로, 그 내용이 준비되어 있어야 합니다.
 
 예를 들어, Pydantic 모델을 `dict`로 변환해 `JSONResponse`에 넣지 않으면 JSON 호환 유형으로 변환된 데이터 유형(예: `datetime`, `UUID` 등)이 사용되지 않습니다.
 
@@ -40,12 +40,12 @@ Pydantic 모델로 데이터 변환을 수행하지 않으며, 내용을 다른 
 
 `from starlette.responses import JSONResponse`를 사용할 수도 있습니다.
 
-**readyapi**는 개발자의 편의를 위해 `starlette.responses`를 `readyapi.responses`로 제공합니다. 그러나 대부분의 가능한 응답은 Starlette에서 직접 제공합니다.
+**ReadyAPI**는 개발자의 편의를 위해 `starlette.responses`를 `readyapi.responses`로 제공합니다. 그러나 대부분의 가능한 응답은 Starlette에서 직접 제공합니다.
 
 ///
 
 ## 사용자 정의 `Response` 반환하기
-위 예제는 필요한 모든 부분을 보여주지만, 아직 유용하지는 않습니다. 사실 데이터를 직접 반환하면 **readyapi**가 이를 `JSONResponse`에 넣고 `dict`로 변환하는 등 모든 작업을 자동으로 처리합니다.
+위 예제는 필요한 모든 부분을 보여주지만, 아직 유용하지는 않습니다. 사실 데이터를 직접 반환하면 **ReadyAPI**가 이를 `JSONResponse`에 넣고 `dict`로 변환하는 등 모든 작업을 자동으로 처리합니다.
 
 이제, 사용자 정의 응답을 반환하는 방법을 알아보겠습니다.
 

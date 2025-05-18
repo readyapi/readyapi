@@ -9,15 +9,15 @@
 * Cookies
 * 等
 
-**readyapi** 使用这种方式验证数据、转换数据，并自动生成 API 文档。
+**ReadyAPI** 使用这种方式验证数据、转换数据，并自动生成 API 文档。
 
 但有时，我们也需要直接访问 `Request` 对象。
 
 ## `Request` 对象的细节
 
-实际上，**readyapi** 的底层是 **Starlette**，**readyapi** 只不过是在  **Starlette** 顶层提供了一些工具，所以能直接使用 Starlette 的  <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 对象。
+实际上，**ReadyAPI** 的底层是 **Starlette**，**ReadyAPI** 只不过是在  **Starlette** 顶层提供了一些工具，所以能直接使用 Starlette 的  <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a> 对象。
 
-但直接从 `Request` 对象提取数据时（例如，读取请求体），**readyapi** 不会验证、转换和存档数据（为 API 文档使用 OpenAPI）。
+但直接从 `Request` 对象提取数据时（例如，读取请求体），**ReadyAPI** 不会验证、转换和存档数据（为 API 文档使用 OpenAPI）。
 
 不过，仍可以验证、转换与注释（使用 Pydantic 模型的请求体等）其它正常声明的参数。
 
@@ -31,7 +31,7 @@
 
 {* ../../docs_src/using_request_directly/tutorial001.py hl[1,7:8] *}
 
-把*路径操作函数*的参数类型声明为 `Request`，**readyapi** 就能把 `Request` 传递到参数里。
+把*路径操作函数*的参数类型声明为 `Request`，**ReadyAPI** 就能把 `Request` 传递到参数里。
 
 /// tip | 提示
 
@@ -51,6 +51,6 @@
 
 您也可以使用 `from starlette.requests import Request`。
 
-**readyapi** 的 `from readyapi import Request` 只是为开发者提供的快捷方式，但其实它直接继承自 Starlette。
+**ReadyAPI** 的 `from readyapi import Request` 只是为开发者提供的快捷方式，但其实它直接继承自 Starlette。
 
 ///

@@ -59,11 +59,11 @@ E para criar `fluffy`, você está "chamando" `Cat`.
 
 Então, uma classe Python também é "chamável".
 
-Então, no **readyapi**, você pode utilizar uma classe Python como uma dependência.
+Então, no **ReadyAPI**, você pode utilizar uma classe Python como uma dependência.
 
-O que o readyapi realmente verifica, é se a dependência é algo chamável (função, classe, ou outra coisa) e os parâmetros que foram definidos.
+O que o ReadyAPI realmente verifica, é se a dependência é algo chamável (função, classe, ou outra coisa) e os parâmetros que foram definidos.
 
-Se você passar algo "chamável" como uma dependência do **readyapi**, o framework irá analisar os parâmetros desse "chamável" e processá-los da mesma forma que os parâmetros de uma *função de operação de rota*. Incluindo as sub-dependências.
+Se você passar algo "chamável" como uma dependência do **ReadyAPI**, o framework irá analisar os parâmetros desse "chamável" e processá-los da mesma forma que os parâmetros de uma *função de operação de rota*. Incluindo as sub-dependências.
 
 Isso também se aplica a objetos chamáveis que não recebem nenhum parâmetro. Da mesma forma que uma *função de operação de rota* sem parâmetros.
 
@@ -79,7 +79,7 @@ Observe o método `__init__` usado para criar uma instância da classe:
 
 {* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8] *}
 
-Esses parâmetros são utilizados pelo **readyapi** para "definir" a dependência.
+Esses parâmetros são utilizados pelo **ReadyAPI** para "definir" a dependência.
 
 Em ambos os casos teremos:
 
@@ -95,7 +95,7 @@ Agora você pode declarar sua dependência utilizando essa classe.
 
 {* ../../docs_src/dependencies/tutorial002_an_py310.py hl[19] *}
 
-O **readyapi** chama a classe `CommonQueryParams`. Isso cria uma "instância" dessa classe e é a instância que será passada para o parâmetro `commons` na sua função.
+O **ReadyAPI** chama a classe `CommonQueryParams`. Isso cria uma "instância" dessa classe e é a instância que será passada para o parâmetro `commons` na sua função.
 
 ## Anotações de Tipo vs `Depends`
 
@@ -129,9 +129,9 @@ O último `CommonQueryParams`, em:
 ... Depends(CommonQueryParams)
 ```
 
-...é o que o **readyapi** irá realmente usar para saber qual é a dependência.
+...é o que o **ReadyAPI** irá realmente usar para saber qual é a dependência.
 
-É a partir dele que o readyapi irá extrair os parâmetros passados e será o que o readyapi irá realmente chamar.
+É a partir dele que o ReadyAPI irá extrair os parâmetros passados e será o que o ReadyAPI irá realmente chamar.
 
 ---
 
@@ -159,7 +159,7 @@ commons: CommonQueryParams ...
 
 ////
 
-...não tem nenhum signficado especial para o **readyapi**. O readyapi não irá utilizá-lo para conversão dos dados, validação, etc (já que ele utiliza `Depends(CommonQueryParams)` para isso).
+...não tem nenhum signficado especial para o **ReadyAPI**. O ReadyAPI não irá utilizá-lo para conversão dos dados, validação, etc (já que ele utiliza `Depends(CommonQueryParams)` para isso).
 
 Na verdade você poderia escrever apenas:
 
@@ -219,7 +219,7 @@ commons: CommonQueryParams = Depends(CommonQueryParams)
 
 ////
 
-O **readyapi** nos fornece um atalho para esses casos, onde a dependência é *especificamente* uma classe que o **readyapi** irá "chamar" para criar uma instância da própria classe.
+O **ReadyAPI** nos fornece um atalho para esses casos, onde a dependência é *especificamente* uma classe que o **ReadyAPI** irá "chamar" para criar uma instância da própria classe.
 
 Para esses casos específicos, você pode fazer o seguinte:
 
@@ -277,12 +277,12 @@ O mesmo exemplo ficaria então dessa forma:
 
 {* ../../docs_src/dependencies/tutorial004_an_py310.py hl[19] *}
 
-...e o **readyapi** saberá o que fazer.
+...e o **ReadyAPI** saberá o que fazer.
 
 /// tip | Dica
 
 Se isso parece mais confuso do que útil, não utilize, você não *precisa* disso.
 
-É apenas um atalho. Por que o **readyapi** se preocupa em ajudar a minimizar a repetição de código.
+É apenas um atalho. Por que o **ReadyAPI** se preocupa em ajudar a minimizar a repetição de código.
 
 ///

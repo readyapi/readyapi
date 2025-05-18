@@ -16,21 +16,21 @@ And **your users** define in some way (for example in a web dashboard somewhere)
 
 All the **logic** about how to register the URLs for webhooks and the code to actually send those requests is up to you. You write it however you want to in **your own code**.
 
-## Documenting webhooks with **readyapi** and OpenAPI
+## Documenting webhooks with **ReadyAPI** and OpenAPI
 
-With **readyapi**, using OpenAPI, you can define the names of these webhooks, the types of HTTP operations that your app can send (e.g. `POST`, `PUT`, etc.) and the request **bodies** that your app would send.
+With **ReadyAPI**, using OpenAPI, you can define the names of these webhooks, the types of HTTP operations that your app can send (e.g. `POST`, `PUT`, etc.) and the request **bodies** that your app would send.
 
 This can make it a lot easier for your users to **implement their APIs** to receive your **webhook** requests, they might even be able to autogenerate some of their own API code.
 
 /// info
 
-Webhooks are available in OpenAPI 3.1.0 and above, supported by readyapi `0.99.0` and above.
+Webhooks are available in OpenAPI 3.1.0 and above, supported by ReadyAPI `0.99.0` and above.
 
 ///
 
 ## An app with webhooks
 
-When you create a **readyapi** application, there is a `webhooks` attribute that you can use to define *webhooks*, the same way you would define *path operations*, for example with `@app.webhooks.post()`.
+When you create a **ReadyAPI** application, there is a `webhooks` attribute that you can use to define *webhooks*, the same way you would define *path operations*, for example with `@app.webhooks.post()`.
 
 {* ../../docs_src/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
 

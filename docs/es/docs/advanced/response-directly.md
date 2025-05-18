@@ -1,8 +1,8 @@
 # Devolver una Response Directamente
 
-Cuando creas una *path operation* en **readyapi**, normalmente puedes devolver cualquier dato desde ella: un `dict`, una `list`, un modelo de Pydantic, un modelo de base de datos, etc.
+Cuando creas una *path operation* en **ReadyAPI**, normalmente puedes devolver cualquier dato desde ella: un `dict`, una `list`, un modelo de Pydantic, un modelo de base de datos, etc.
 
-Por defecto, **readyapi** convertiría automáticamente ese valor de retorno a JSON usando el `jsonable_encoder` explicado en [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
+Por defecto, **ReadyAPI** convertiría automáticamente ese valor de retorno a JSON usando el `jsonable_encoder` explicado en [JSON Compatible Encoder](../tutorial/encoder.md){.internal-link target=_blank}.
 
 Luego, detrás de escena, pondría esos datos compatibles con JSON (por ejemplo, un `dict`) dentro de un `JSONResponse` que se usaría para enviar el response al cliente.
 
@@ -20,7 +20,7 @@ De hecho, puedes devolver cualquier `Response` o cualquier subclase de ella.
 
 ///
 
-Y cuando devuelves una `Response`, **readyapi** la pasará directamente.
+Y cuando devuelves una `Response`, **ReadyAPI** la pasará directamente.
 
 No hará ninguna conversión de datos con los modelos de Pydantic, no convertirá los contenidos a ningún tipo, etc.
 
@@ -28,7 +28,7 @@ Esto te da mucha flexibilidad. Puedes devolver cualquier tipo de datos, sobrescr
 
 ## Usar el `jsonable_encoder` en una `Response`
 
-Como **readyapi** no realiza cambios en una `Response` que devuelves, tienes que asegurarte de que sus contenidos estén listos para ello.
+Como **ReadyAPI** no realiza cambios en una `Response` que devuelves, tienes que asegurarte de que sus contenidos estén listos para ello.
 
 Por ejemplo, no puedes poner un modelo de Pydantic en un `JSONResponse` sin primero convertirlo a un `dict` con todos los tipos de datos (como `datetime`, `UUID`, etc.) convertidos a tipos compatibles con JSON.
 
@@ -40,13 +40,13 @@ Para esos casos, puedes usar el `jsonable_encoder` para convertir tus datos ante
 
 También podrías usar `from starlette.responses import JSONResponse`.
 
-**readyapi** proporciona los mismos `starlette.responses` como `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette.
+**ReadyAPI** proporciona los mismos `starlette.responses` como `readyapi.responses` solo como una conveniencia para ti, el desarrollador. Pero la mayoría de los responses disponibles vienen directamente de Starlette.
 
 ///
 
 ## Devolver una `Response` personalizada
 
-El ejemplo anterior muestra todas las partes que necesitas, pero aún no es muy útil, ya que podrías haber devuelto el `item` directamente, y **readyapi** lo colocaría en un `JSONResponse` por ti, convirtiéndolo a un `dict`, etc. Todo eso por defecto.
+El ejemplo anterior muestra todas las partes que necesitas, pero aún no es muy útil, ya que podrías haber devuelto el `item` directamente, y **ReadyAPI** lo colocaría en un `JSONResponse` por ti, convirtiéndolo a un `dict`, etc. Todo eso por defecto.
 
 Ahora, veamos cómo podrías usar eso para devolver un response personalizado.
 

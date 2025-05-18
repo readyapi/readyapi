@@ -1,10 +1,10 @@
 # 템플릿
 
-**readyapi**와 함께 원하는 어떤 템플릿 엔진도 사용할 수 있습니다.
+**ReadyAPI**와 함께 원하는 어떤 템플릿 엔진도 사용할 수 있습니다.
 
 일반적인 선택은 Jinja2로, Flask와 다른 도구에서도 사용됩니다.
 
-설정을 쉽게 할 수 있는 유틸리티가 있으며, 이를 **readyapi** 애플리케이션에서 직접 사용할 수 있습니다(Starlette 제공).
+설정을 쉽게 할 수 있는 유틸리티가 있으며, 이를 **ReadyAPI** 애플리케이션에서 직접 사용할 수 있습니다(Starlette 제공).
 
 ## 의존성 설치
 
@@ -35,7 +35,7 @@ $ pip install jinja2
 
 /// note | 참고
 
-readyapi 0.108.0 이전과 Starlette 0.29.0에서는 `name`이 첫 번째 매개변수였습니다.
+ReadyAPI 0.108.0 이전과 Starlette 0.29.0에서는 `name`이 첫 번째 매개변수였습니다.
 
 또한 이전 버전에서는 `request` 객체가 Jinja2의 컨텍스트에서 키-값 쌍의 일부로 전달되었습니다.
 
@@ -50,7 +50,7 @@ readyapi 0.108.0 이전과 Starlette 0.29.0에서는 `name`이 첫 번째 매개
 /// note | 기술 세부 사항
 `from starlette.templating import Jinja2Templates`를 사용할 수도 있습니다.
 
-**readyapi**는 개발자를 위한 편리함으로 `readyapi.templating` 대신 `starlette.templating`을 제공합니다. 하지만 대부분의 사용 가능한 응답은 Starlette에서 직접 옵니다. `Request` 및 `StaticFiles`도 마찬가지입니다.
+**ReadyAPI**는 개발자를 위한 편리함으로 `readyapi.templating` 대신 `starlette.templating`을 제공합니다. 하지만 대부분의 사용 가능한 응답은 Starlette에서 직접 옵니다. `Request` 및 `StaticFiles`도 마찬가지입니다.
 ///
 
 ## 템플릿 작성하기
@@ -120,7 +120,7 @@ Item ID: 42
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-그리고 `StaticFiles`를 사용하고 있으므로, 해당 CSS 파일은 **readyapi** 애플리케이션에서 `/static/styles.css` URL로 자동 제공됩니다.
+그리고 `StaticFiles`를 사용하고 있으므로, 해당 CSS 파일은 **ReadyAPI** 애플리케이션에서 `/static/styles.css` URL로 자동 제공됩니다.
 
 ## 더 많은 세부 사항
 

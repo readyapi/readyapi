@@ -1,14 +1,14 @@
 # Alternativas, Inspiración y Comparaciones
 
-Lo que inspiró a **readyapi**, cómo se compara con las alternativas y lo que aprendió de ellas.
+Lo que inspiró a **ReadyAPI**, cómo se compara con las alternativas y lo que aprendió de ellas.
 
 ## Introducción
 
-**readyapi** no existiría si no fuera por el trabajo previo de otros.
+**ReadyAPI** no existiría si no fuera por el trabajo previo de otros.
 
 Se han creado muchas herramientas antes que han ayudado a inspirar su creación.
 
-He estado evitando la creación de un nuevo framework durante varios años. Primero intenté resolver todas las funcionalidades cubiertas por **readyapi** usando muchos frameworks diferentes, plug-ins y herramientas.
+He estado evitando la creación de un nuevo framework durante varios años. Primero intenté resolver todas las funcionalidades cubiertas por **ReadyAPI** usando muchos frameworks diferentes, plug-ins y herramientas.
 
 Pero en algún punto, no hubo otra opción que crear algo que proporcionara todas estas funcionalidades, tomando las mejores ideas de herramientas previas y combinándolas de la mejor manera posible, usando funcionalidades del lenguaje que ni siquiera estaban disponibles antes (anotaciones de tipos de Python 3.6+).
 
@@ -28,15 +28,15 @@ El framework Django REST fue creado para ser un kit de herramientas flexible par
 
 Es utilizado por muchas empresas, incluidas Mozilla, Red Hat y Eventbrite.
 
-Fue uno de los primeros ejemplos de **documentación automática de APIs**, y esto fue específicamente una de las primeras ideas que inspiraron "la búsqueda de" **readyapi**.
+Fue uno de los primeros ejemplos de **documentación automática de APIs**, y esto fue específicamente una de las primeras ideas que inspiraron "la búsqueda de" **ReadyAPI**.
 
 /// note | Nota
 
-Django REST Framework fue creado por Tom Christie. El mismo creador de Starlette y Uvicorn, en los cuales **readyapi** está basado.
+Django REST Framework fue creado por Tom Christie. El mismo creador de Starlette y Uvicorn, en los cuales **ReadyAPI** está basado.
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Tener una interfaz de usuario web de documentación automática de APIs.
 
@@ -56,7 +56,7 @@ Esta separación de partes, y ser un "microframework" que podría extenderse par
 
 Dada la simplicidad de Flask, parecía una buena opción para construir APIs. Lo siguiente a encontrar era un "Django REST Framework" para Flask.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Ser un micro-framework. Haciendo fácil mezclar y combinar las herramientas y partes necesarias.
 
@@ -66,13 +66,13 @@ Tener un sistema de routing simple y fácil de usar.
 
 ### <a href="https://requests.readthedocs.io" class="external-link" target="_blank">Requests</a>
 
-**readyapi** no es en realidad una alternativa a **Requests**. Su ámbito es muy diferente.
+**ReadyAPI** no es en realidad una alternativa a **Requests**. Su ámbito es muy diferente.
 
-De hecho, sería común usar Requests *dentro* de una aplicación readyapi.
+De hecho, sería común usar Requests *dentro* de una aplicación ReadyAPI.
 
-Aun así, readyapi se inspiró bastante en Requests.
+Aun así, ReadyAPI se inspiró bastante en Requests.
 
-**Requests** es un paquete para *interactuar* con APIs (como cliente), mientras que **readyapi** es un paquete para *construir* APIs (como servidor).
+**Requests** es un paquete para *interactuar* con APIs (como cliente), mientras que **ReadyAPI** es un paquete para *construir* APIs (como servidor).
 
 Están, más o menos, en extremos opuestos, complementándose entre sí.
 
@@ -88,7 +88,7 @@ La forma en que lo usas es muy sencilla. Por ejemplo, para hacer un `GET` reques
 response = requests.get("http://example.com/some/url")
 ```
 
-La operación de path equivalente en readyapi podría verse como:
+La operación de path equivalente en ReadyAPI podría verse como:
 
 ```Python hl_lines="1"
 @app.get("/some/url")
@@ -98,7 +98,7 @@ def read_url():
 
 Mira las similitudes entre `requests.get(...)` y `@app.get(...)`.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 * Tener un API simple e intuitivo.
 * Usar nombres de métodos HTTP (operaciones) directamente, de una manera sencilla e intuitiva.
@@ -118,7 +118,7 @@ En algún punto, Swagger fue entregado a la Linux Foundation, para ser renombrad
 
 Es por eso que cuando se habla de la versión 2.0 es común decir "Swagger", y para la versión 3+ "OpenAPI".
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Adoptar y usar un estándar abierto para especificaciones de API, en lugar de usar un esquema personalizado.
 
@@ -127,7 +127,7 @@ Y a integrar herramientas de interfaz de usuario basadas en estándares:
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>
 
-Estas dos fueron elegidas por ser bastante populares y estables, pero haciendo una búsqueda rápida, podrías encontrar docenas de interfaces de usuario alternativas para OpenAPI (que puedes usar con **readyapi**).
+Estas dos fueron elegidas por ser bastante populares y estables, pero haciendo una búsqueda rápida, podrías encontrar docenas de interfaces de usuario alternativas para OpenAPI (que puedes usar con **ReadyAPI**).
 
 ///
 
@@ -147,7 +147,7 @@ Estas funcionalidades son para lo que fue creado Marshmallow. Es un gran paquete
 
 Pero fue creado antes de que existieran las anotaciones de tipos en Python. Así que, para definir cada <abbr title="la definición de cómo deberían formarse los datos">esquema</abbr> necesitas usar utilidades y clases específicas proporcionadas por Marshmallow.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Usar código para definir "esquemas" que proporcionen tipos de datos y validación automáticamente.
 
@@ -161,7 +161,7 @@ Webargs es una herramienta que fue creada para proporcionar esa funcionalidad so
 
 Usa Marshmallow por debajo para hacer la validación de datos. Y fue creada por los mismos desarrolladores.
 
-Es una gran herramienta y la he usado mucho también, antes de tener **readyapi**.
+Es una gran herramienta y la he usado mucho también, antes de tener **ReadyAPI**.
 
 /// info | Información
 
@@ -169,7 +169,7 @@ Webargs fue creada por los mismos desarrolladores de Marshmallow.
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Tener validación automática de datos entrantes en una request.
 
@@ -199,7 +199,7 @@ APISpec fue creado por los mismos desarrolladores de Marshmallow.
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Soportar el estándar abierto para APIs, OpenAPI.
 
@@ -215,7 +215,7 @@ Es una gran herramienta, muy subestimada. Debería ser mucho más popular que mu
 
 Esto resolvió tener que escribir YAML (otra sintaxis) dentro de docstrings de Python.
 
-Esta combinación de Flask, Flask-apispec con Marshmallow y Webargs fue mi stack de backend favorito hasta construir **readyapi**.
+Esta combinación de Flask, Flask-apispec con Marshmallow y Webargs fue mi stack de backend favorito hasta construir **ReadyAPI**.
 
 Usarlo llevó a la creación de varios generadores de full-stack para Flask. Estos son los principales stacks que yo (y varios equipos externos) hemos estado usando hasta ahora:
 
@@ -223,7 +223,7 @@ Usarlo llevó a la creación de varios generadores de full-stack para Flask. Est
 * <a href="https://github.com/khulnasoft/full-stack-flask-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchbase</a>
 * <a href="https://github.com/khulnasoft/full-stack-flask-couchdb" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-flask-couchdb</a>
 
-Y estos mismos generadores de full-stack fueron la base de los [Generadores de Proyectos **readyapi**](project-generation.md){.internal-link target=_blank}.
+Y estos mismos generadores de full-stack fueron la base de los [Generadores de Proyectos **ReadyAPI**](project-generation.md){.internal-link target=_blank}.
 
 /// info | Información
 
@@ -231,7 +231,7 @@ Flask-apispec fue creado por los mismos desarrolladores de Marshmallow.
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Generar el esquema OpenAPI automáticamente, desde el mismo código que define la serialización y validación.
 
@@ -251,7 +251,7 @@ Pero como los datos de TypeScript no se preservan después de la compilación a 
 
 No puede manejar muy bien modelos anidados. Entonces, si el cuerpo JSON en la request es un objeto JSON que tiene campos internos que a su vez son objetos JSON anidados, no puede ser documentado y validado apropiadamente.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Usar tipos de Python para tener un gran soporte del editor.
 
@@ -271,11 +271,11 @@ Claramente inspiró a Uvicorn y Starlette, que actualmente son más rápidos que
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Encontrar una manera de tener un rendimiento impresionante.
 
-Por eso **readyapi** se basa en Starlette, ya que es el framework más rápido disponible (probado por benchmarks de terceros).
+Por eso **ReadyAPI** se basa en Starlette, ya que es el framework más rápido disponible (probado por benchmarks de terceros).
 
 ///
 
@@ -287,19 +287,19 @@ Está diseñado para tener funciones que reciben dos parámetros, un "request" y
 
 Por lo tanto, la validación de datos, la serialización y la documentación, tienen que hacerse en código, no automáticamente. O tienen que implementarse como un framework sobre Falcon, como Hug. Esta misma distinción ocurre en otros frameworks que se inspiran en el diseño de Falcon, de tener un objeto request y un objeto response como parámetros.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Buscar maneras de obtener un gran rendimiento.
 
-Junto con Hug (ya que Hug se basa en Falcon), inspiraron a **readyapi** a declarar un parámetro `response` en las funciones.
+Junto con Hug (ya que Hug se basa en Falcon), inspiraron a **ReadyAPI** a declarar un parámetro `response` en las funciones.
 
-Aunque en readyapi es opcional, y se utiliza principalmente para configurar headers, cookies y códigos de estado alternativos.
+Aunque en ReadyAPI es opcional, y se utiliza principalmente para configurar headers, cookies y códigos de estado alternativos.
 
 ///
 
 ### <a href="https://moltenframework.com/" class="external-link" target="_blank">Molten</a>
 
-Descubrí Molten en las primeras etapas de construcción de **readyapi**. Y tiene ideas bastante similares:
+Descubrí Molten en las primeras etapas de construcción de **ReadyAPI**. Y tiene ideas bastante similares:
 
 * Basado en las anotaciones de tipos de Python.
 * Validación y documentación a partir de estos tipos.
@@ -313,7 +313,7 @@ El sistema de inyección de dependencias requiere pre-registrar las dependencias
 
 Las rutas se declaran en un solo lugar, usando funciones declaradas en otros lugares (en lugar de usar decoradores que pueden colocarse justo encima de la función que maneja el endpoint). Esto se acerca más a cómo lo hace Django que a cómo lo hace Flask (y Starlette). Separa en el código cosas que están relativamente acopladas.
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Definir validaciones extra para tipos de datos usando el valor "default" de los atributos del modelo. Esto mejora el soporte del editor y no estaba disponible en Pydantic antes.
 
@@ -341,19 +341,19 @@ Hug fue creado por Timothy Crosley, el mismo creador de <a href="https://github.
 
 ///
 
-/// check | Ideas que inspiraron a **readyapi**
+/// check | Ideas que inspiraron a **ReadyAPI**
 
 Hug inspiró partes de APIStar, y fue una de las herramientas que encontré más prometedoras, junto a APIStar.
 
-Hug ayudó a inspirar a **readyapi** a usar anotaciones de tipos de Python para declarar parámetros, y a generar un esquema definiendo la API automáticamente.
+Hug ayudó a inspirar a **ReadyAPI** a usar anotaciones de tipos de Python para declarar parámetros, y a generar un esquema definiendo la API automáticamente.
 
-Hug inspiró a **readyapi** a declarar un parámetro `response` en funciones para configurar headers y cookies.
+Hug inspiró a **ReadyAPI** a declarar un parámetro `response` en funciones para configurar headers y cookies.
 
 ///
 
 ### <a href="https://github.com/encode/apistar" class="external-link" target="_blank">APIStar</a> (<= 0.5)
 
-Justo antes de decidir construir **readyapi** encontré **APIStar** server. Tenía casi todo lo que estaba buscando y tenía un gran diseño.
+Justo antes de decidir construir **ReadyAPI** encontré **APIStar** server. Tenía casi todo lo que estaba buscando y tenía un gran diseño.
 
 Era una de las primeras implementaciones de un framework utilizando las anotaciones de tipos de Python para declarar parámetros y requests que jamás vi (antes de NestJS y Molten). Lo encontré más o menos al mismo tiempo que Hug. Pero APIStar usaba el estándar OpenAPI.
 
@@ -380,12 +380,12 @@ Ahora APIStar es un conjunto de herramientas para validar especificaciones OpenA
 APIStar fue creado por Tom Christie. El mismo que creó:
 
 * Django REST Framework
-* Starlette (en la cual **readyapi** está basado)
-* Uvicorn (usado por Starlette y **readyapi**)
+* Starlette (en la cual **ReadyAPI** está basado)
+* Uvicorn (usado por Starlette y **ReadyAPI**)
 
 ///
 
-/// check | Inspiró a **readyapi** a
+/// check | Inspiró a **ReadyAPI** a
 
 Existir.
 
@@ -393,13 +393,13 @@ La idea de declarar múltiples cosas (validación de datos, serialización y doc
 
 Y después de buscar durante mucho tiempo un framework similar y probar muchas alternativas diferentes, APIStar fue la mejor opción disponible.
 
-Luego APIStar dejó de existir como servidor y Starlette fue creado, y fue una nueva y mejor base para tal sistema. Esa fue la inspiración final para construir **readyapi**.
+Luego APIStar dejó de existir como servidor y Starlette fue creado, y fue una nueva y mejor base para tal sistema. Esa fue la inspiración final para construir **ReadyAPI**.
 
-Considero a **readyapi** un "sucesor espiritual" de APIStar, mientras mejora y aumenta las funcionalidades, el sistema de tipos y otras partes, basándose en los aprendizajes de todas estas herramientas previas.
+Considero a **ReadyAPI** un "sucesor espiritual" de APIStar, mientras mejora y aumenta las funcionalidades, el sistema de tipos y otras partes, basándose en los aprendizajes de todas estas herramientas previas.
 
 ///
 
-## Usado por **readyapi**
+## Usado por **ReadyAPI**
 
 ### <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a>
 
@@ -409,11 +409,11 @@ Eso lo hace extremadamente intuitivo.
 
 Es comparable a Marshmallow. Aunque es más rápido que Marshmallow en benchmarks. Y como está basado en las mismas anotaciones de tipos de Python, el soporte del editor es estupendo.
 
-/// check | **readyapi** lo usa para
+/// check | **ReadyAPI** lo usa para
 
 Manejar toda la validación de datos, serialización de datos y documentación automática de modelos (basada en JSON Schema).
 
-**readyapi** luego toma esos datos JSON Schema y los coloca en OpenAPI, aparte de todas las otras cosas que hace.
+**ReadyAPI** luego toma esos datos JSON Schema y los coloca en OpenAPI, aparte de todas las otras cosas que hace.
 
 ///
 
@@ -442,7 +442,7 @@ Starlette proporciona toda la funcionalidad básica de un microframework web.
 
 Pero no proporciona validación de datos automática, serialización o documentación.
 
-Esa es una de las principales cosas que **readyapi** agrega, todo basado en las anotaciones de tipos de Python (usando Pydantic). Eso, además del sistema de inyección de dependencias, utilidades de seguridad, generación de esquemas OpenAPI, etc.
+Esa es una de las principales cosas que **ReadyAPI** agrega, todo basado en las anotaciones de tipos de Python (usando Pydantic). Eso, además del sistema de inyección de dependencias, utilidades de seguridad, generación de esquemas OpenAPI, etc.
 
 /// note | Detalles Técnicos
 
@@ -452,13 +452,13 @@ No obstante, ya está siendo usado como un "estándar" por varias herramientas. 
 
 ///
 
-/// check | **readyapi** lo usa para
+/// check | **ReadyAPI** lo usa para
 
 Manejar todas las partes web centrales. Añadiendo funcionalidades encima.
 
-La clase `readyapi` en sí misma hereda directamente de la clase `Starlette`.
+La clase `ReadyAPI` en sí misma hereda directamente de la clase `Starlette`.
 
-Por lo tanto, cualquier cosa que puedas hacer con Starlette, puedes hacerlo directamente con **readyapi**, ya que es básicamente Starlette potenciado.
+Por lo tanto, cualquier cosa que puedas hacer con Starlette, puedes hacerlo directamente con **ReadyAPI**, ya que es básicamente Starlette potenciado.
 
 ///
 
@@ -466,13 +466,13 @@ Por lo tanto, cualquier cosa que puedas hacer con Starlette, puedes hacerlo dire
 
 Uvicorn es un servidor ASGI extremadamente rápido, construido sobre uvloop y httptools.
 
-No es un framework web, sino un servidor. Por ejemplo, no proporciona herramientas para el enrutamiento por paths. Eso es algo que un framework como Starlette (o **readyapi**) proporcionaría encima.
+No es un framework web, sino un servidor. Por ejemplo, no proporciona herramientas para el enrutamiento por paths. Eso es algo que un framework como Starlette (o **ReadyAPI**) proporcionaría encima.
 
-Es el servidor recomendado para Starlette y **readyapi**.
+Es el servidor recomendado para Starlette y **ReadyAPI**.
 
-/// check | **readyapi** lo recomienda como
+/// check | **ReadyAPI** lo recomienda como
 
-El servidor web principal para ejecutar aplicaciones **readyapi**.
+El servidor web principal para ejecutar aplicaciones **ReadyAPI**.
 
 También puedes usar la opción de línea de comandos `--workers` para tener un servidor multiproceso asíncrono.
 
@@ -482,4 +482,4 @@ Revisa más detalles en la sección [Despliegue](deployment/index.md){.internal-
 
 ## Benchmarks y velocidad
 
-Para entender, comparar, y ver la diferencia entre Uvicorn, Starlette y readyapi, revisa la sección sobre [Benchmarks](benchmarks.md){.internal-link target=_blank}.
+Para entender, comparar, y ver la diferencia entre Uvicorn, Starlette y ReadyAPI, revisa la sección sobre [Benchmarks](benchmarks.md){.internal-link target=_blank}.

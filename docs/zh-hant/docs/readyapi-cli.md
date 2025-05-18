@@ -1,10 +1,10 @@
-# readyapi CLI
+# ReadyAPI CLI
 
-**readyapi CLI** 是一個命令列程式，能用來運行你的 readyapi 應用程式、管理你的 readyapi 專案等。
+**ReadyAPI CLI** 是一個命令列程式，能用來運行你的 ReadyAPI 應用程式、管理你的 ReadyAPI 專案等。
 
-當你安裝 readyapi（例如使用 `pip install "readyapi[standard]"`），它會包含一個叫做 `readyapi-cli` 的套件，這個套件提供了 `readyapi` 命令。
+當你安裝 ReadyAPI（例如使用 `pip install "readyapi[standard]"`），它會包含一個叫做 `readyapi-cli` 的套件，這個套件提供了 `readyapi` 命令。
 
-要運行你的 readyapi 應用程式來進行開發，你可以使用 `readyapi dev` 命令：
+要運行你的 ReadyAPI 應用程式來進行開發，你可以使用 `readyapi dev` 命令：
 
 <div class="termy">
 
@@ -22,9 +22,9 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable readyapi app
+<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
 
- ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -32,7 +32,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <span style="background-color:#C4A000"><font color="#2E3436">╭────────── readyapi CLI - Development mode ───────────╮</font></span>
+ <span style="background-color:#C4A000"><font color="#2E3436">╭────────── ReadyAPI CLI - Development mode ───────────╮</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│  Serving at: http://127.0.0.1:8000                  │</font></span>
  <span style="background-color:#C4A000"><font color="#2E3436">│                                                     │</font></span>
@@ -54,13 +54,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:sing
 
 </div>
 
-`readyapi` 命令列程式就是 **readyapi CLI**。
+`readyapi` 命令列程式就是 **ReadyAPI CLI**。
 
-readyapi CLI 接收你的 Python 程式路徑（例如 `main.py`），並自動檢測 readyapi 實例（通常命名為 `app`），確定正確的引入模組流程，然後運行該應用程式。
+ReadyAPI CLI 接收你的 Python 程式路徑（例如 `main.py`），並自動檢測 ReadyAPI 實例（通常命名為 `app`），確定正確的引入模組流程，然後運行該應用程式。
 
 在生產環境，你應該使用 `readyapi run` 命令。 🚀
 
-**readyapi CLI** 內部使用了 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>，這是一個高效能、適合生產環境的 ASGI 伺服器。 😎
+**ReadyAPI CLI** 內部使用了 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>，這是一個高效能、適合生產環境的 ASGI 伺服器。 😎
 
 ## `readyapi dev`
 
@@ -70,7 +70,7 @@ readyapi CLI 接收你的 Python 程式路徑（例如 `main.py`），並自動�
 
 ## `readyapi run`
 
-執行 `readyapi run` 會以生產模式啟動 readyapi。
+執行 `readyapi run` 會以生產模式啟動 ReadyAPI。
 
 預設情況下，**auto-reload** 功能是禁用的。它也會在 IP 位址 `0.0.0.0` 上監聽，表示會監聽所有可用的 IP 地址，這樣任何能與該機器通訊的人都可以公開存取它。這通常是你在生產環境中運行應用程式的方式，例如在容器中運行時。
 

@@ -17,7 +17,7 @@ Primero, importa `BackgroundTasks` y define un parámetro en tu *path operation 
 
 {* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
 
-**readyapi** creará el objeto de tipo `BackgroundTasks` por ti y lo pasará como ese parámetro.
+**ReadyAPI** creará el objeto de tipo `BackgroundTasks` por ti y lo pasará como ese parámetro.
 
 ## Crear una función de tarea
 
@@ -25,7 +25,7 @@ Crea una función para que se ejecute como la tarea en segundo plano.
 
 Es solo una función estándar que puede recibir parámetros.
 
-Puede ser una función `async def` o una función normal `def`, **readyapi** sabrá cómo manejarla correctamente.
+Puede ser una función `async def` o una función normal `def`, **ReadyAPI** sabrá cómo manejarla correctamente.
 
 En este caso, la función de tarea escribirá en un archivo (simulando el envío de un email).
 
@@ -49,7 +49,7 @@ Dentro de tu *path operation function*, pasa tu función de tarea al objeto de *
 
 Usar `BackgroundTasks` también funciona con el sistema de inyección de dependencias, puedes declarar un parámetro de tipo `BackgroundTasks` en varios niveles: en una *path operation function*, en una dependencia (dependable), en una sub-dependencia, etc.
 
-**readyapi** sabe qué hacer en cada caso y cómo reutilizar el mismo objeto, de modo que todas las tareas en segundo plano se combinan y ejecutan en segundo plano después:
+**ReadyAPI** sabe qué hacer en cada caso y cómo reutilizar el mismo objeto, de modo que todas las tareas en segundo plano se combinan y ejecutan en segundo plano después:
 
 {* ../../docs_src/background_tasks/tutorial002_an_py310.py hl[13,15,22,25] *}
 
@@ -63,11 +63,11 @@ Y luego otra tarea en segundo plano generada en la *path operation function* esc
 
 La clase `BackgroundTasks` proviene directamente de <a href="https://www.starlette.io/background/" class="external-link" target="_blank">`starlette.background`</a>.
 
-Se importa/incluye directamente en readyapi para que puedas importarla desde `readyapi` y evitar importar accidentalmente la alternativa `BackgroundTask` (sin la `s` al final) de `starlette.background`.
+Se importa/incluye directamente en ReadyAPI para que puedas importarla desde `readyapi` y evitar importar accidentalmente la alternativa `BackgroundTask` (sin la `s` al final) de `starlette.background`.
 
-Al usar solo `BackgroundTasks` (y no `BackgroundTask`), es posible usarla como un parámetro de *path operation function* y dejar que **readyapi** maneje el resto por ti, tal como cuando usas el objeto `Request` directamente.
+Al usar solo `BackgroundTasks` (y no `BackgroundTask`), es posible usarla como un parámetro de *path operation function* y dejar que **ReadyAPI** maneje el resto por ti, tal como cuando usas el objeto `Request` directamente.
 
-Todavía es posible usar `BackgroundTask` solo en readyapi, pero debes crear el objeto en tu código y devolver una `Response` de Starlette incluyéndolo.
+Todavía es posible usar `BackgroundTask` solo en ReadyAPI, pero debes crear el objeto en tu código y devolver una `Response` de Starlette incluyéndolo.
 
 Puedes ver más detalles en <a href="https://www.starlette.io/background/" class="external-link" target="_blank">la documentación oficial de Starlette sobre Background Tasks</a>.
 
@@ -77,7 +77,7 @@ Si necesitas realizar una computación intensa en segundo plano y no necesariame
 
 Tienden a requerir configuraciones más complejas, un gestor de cola de mensajes/trabajos, como RabbitMQ o Redis, pero te permiten ejecutar tareas en segundo plano en múltiples procesos, y especialmente, en múltiples servidores.
 
-Pero si necesitas acceder a variables y objetos de la misma app de **readyapi**, o necesitas realizar pequeñas tareas en segundo plano (como enviar una notificación por email), simplemente puedes usar `BackgroundTasks`.
+Pero si necesitas acceder a variables y objetos de la misma app de **ReadyAPI**, o necesitas realizar pequeñas tareas en segundo plano (como enviar una notificación por email), simplemente puedes usar `BackgroundTasks`.
 
 ## Resumen
 

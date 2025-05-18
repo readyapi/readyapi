@@ -1,6 +1,6 @@
 # Body - Nested Models
 
-With **readyapi**, you can define, validate, document, and use arbitrarily deeply nested models (thanks to Pydantic).
+With **ReadyAPI**, you can define, validate, document, and use arbitrarily deeply nested models (thanks to Pydantic).
 
 ## List fields
 
@@ -89,7 +89,7 @@ And then we can use it as the type of an attribute:
 
 {* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
 
-This would mean that **readyapi** would expect a body similar to:
+This would mean that **ReadyAPI** would expect a body similar to:
 
 ```JSON
 {
@@ -105,7 +105,7 @@ This would mean that **readyapi** would expect a body similar to:
 }
 ```
 
-Again, doing just that declaration, with **readyapi** you get:
+Again, doing just that declaration, with **ReadyAPI** you get:
 
 * Editor support (completion, etc.), even for nested models
 * Data conversion
@@ -236,7 +236,7 @@ And the `dict` you receive as `weights` will actually have `int` keys and `float
 
 ## Recap
 
-With **readyapi** you have the maximum flexibility provided by Pydantic models, while keeping your code simple, short and elegant.
+With **ReadyAPI** you have the maximum flexibility provided by Pydantic models, while keeping your code simple, short and elegant.
 
 But with all the benefits:
 

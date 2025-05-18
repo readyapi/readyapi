@@ -88,9 +88,9 @@ $ pip install "passlib[bcrypt]"
 
 Con `passlib`, incluso podrías configurarlo para poder leer contraseñas creadas por **Django**, un plug-in de seguridad de **Flask** u otros muchos.
 
-Así, podrías, por ejemplo, compartir los mismos datos de una aplicación de Django en una base de datos con una aplicación de readyapi. O migrar gradualmente una aplicación de Django usando la misma base de datos.
+Así, podrías, por ejemplo, compartir los mismos datos de una aplicación de Django en una base de datos con una aplicación de ReadyAPI. O migrar gradualmente una aplicación de Django usando la misma base de datos.
 
-Y tus usuarios podrían iniciar sesión desde tu aplicación Django o desde tu aplicación **readyapi**, al mismo tiempo.
+Y tus usuarios podrían iniciar sesión desde tu aplicación Django o desde tu aplicación **ReadyAPI**, al mismo tiempo.
 
 ///
 
@@ -248,11 +248,11 @@ Puedes usarlos para agregar un conjunto específico de permisos a un token JWT.
 
 Luego, puedes darle este token directamente a un usuario o a un tercero, para interactuar con tu API con un conjunto de restricciones.
 
-Puedes aprender cómo usarlos y cómo están integrados en **readyapi** más adelante en la **Guía de Usuario Avanzada**.
+Puedes aprender cómo usarlos y cómo están integrados en **ReadyAPI** más adelante en la **Guía de Usuario Avanzada**.
 
 ## Resumen
 
-Con lo que has visto hasta ahora, puedes configurar una aplicación **readyapi** segura usando estándares como OAuth2 y JWT.
+Con lo que has visto hasta ahora, puedes configurar una aplicación **ReadyAPI** segura usando estándares como OAuth2 y JWT.
 
 En casi cualquier framework el manejo de la seguridad se convierte en un tema bastante complejo rápidamente.
 
@@ -260,11 +260,11 @@ Muchos paquetes que lo simplifican tienen que hacer muchos compromisos con el mo
 
 ---
 
-**readyapi** no hace ningún compromiso con ninguna base de datos, modelo de datos o herramienta.
+**ReadyAPI** no hace ningún compromiso con ninguna base de datos, modelo de datos o herramienta.
 
 Te da toda la flexibilidad para elegir aquellas que se ajusten mejor a tu proyecto.
 
-Y puedes usar directamente muchos paquetes bien mantenidos y ampliamente usados como `passlib` y `PyJWT`, porque **readyapi** no requiere mecanismos complejos para integrar paquetes externos.
+Y puedes usar directamente muchos paquetes bien mantenidos y ampliamente usados como `passlib` y `PyJWT`, porque **ReadyAPI** no requiere mecanismos complejos para integrar paquetes externos.
 
 Pero te proporciona las herramientas para simplificar el proceso tanto como sea posible sin comprometer la flexibilidad, la robustez o la seguridad.
 

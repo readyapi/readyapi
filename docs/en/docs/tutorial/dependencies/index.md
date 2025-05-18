@@ -1,14 +1,14 @@
 # Dependencies
 
-**readyapi** has a very powerful but intuitive **<abbr title="also known as components, resources, providers, services, injectables">Dependency Injection</abbr>** system.
+**ReadyAPI** has a very powerful but intuitive **<abbr title="also known as components, resources, providers, services, injectables">Dependency Injection</abbr>** system.
 
-It is designed to be very simple to use, and to make it very easy for any developer to integrate other components with **readyapi**.
+It is designed to be very simple to use, and to make it very easy for any developer to integrate other components with **ReadyAPI**.
 
 ## What is "Dependency Injection"
 
 **"Dependency Injection"** means, in programming, that there is a way for your code (in this case, your *path operation functions*) to declare things that it requires to work and use: "dependencies".
 
-And then, that system (in this case **readyapi**) will take care of doing whatever is needed to provide your code with those needed dependencies ("inject" the dependencies).
+And then, that system (in this case **ReadyAPI**) will take care of doing whatever is needed to provide your code with those needed dependencies ("inject" the dependencies).
 
 This is very useful when you need to:
 
@@ -53,11 +53,11 @@ And then it just returns a `dict` containing those values.
 
 /// info
 
-readyapi added support for `Annotated` (and started recommending it) in version 0.95.0.
+ReadyAPI added support for `Annotated` (and started recommending it) in version 0.95.0.
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you [Upgrade the readyapi version](../../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the ReadyAPI version](../../deployment/versions.md#upgrading-the-readyapi-versions){.internal-link target=_blank} to at least 0.95.1 before using `Annotated`.
 
 ///
 
@@ -87,7 +87,7 @@ You'll see what other "things", apart from functions, can be used as dependencie
 
 ///
 
-Whenever a new request arrives, **readyapi** will take care of:
+Whenever a new request arrives, **ReadyAPI** will take care of:
 
 * Calling your dependency ("dependable") function with the correct parameters.
 * Get the result from your function.
@@ -104,13 +104,13 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-This way you write shared code once and **readyapi** takes care of calling it for your *path operations*.
+This way you write shared code once and **ReadyAPI** takes care of calling it for your *path operations*.
 
 /// check
 
-Notice that you don't have to create a special class and pass it somewhere to **readyapi** to "register" it or anything similar.
+Notice that you don't have to create a special class and pass it somewhere to **ReadyAPI** to "register" it or anything similar.
 
-You just pass it to `Depends` and **readyapi** knows how to do the rest.
+You just pass it to `Depends` and **ReadyAPI** knows how to do the rest.
 
 ///
 
@@ -130,9 +130,9 @@ But because we are using `Annotated`, we can store that `Annotated` value in a v
 
 /// tip
 
-This is just standard Python, it's called a "type alias", it's actually not specific to **readyapi**.
+This is just standard Python, it's called a "type alias", it's actually not specific to **ReadyAPI**.
 
-But because **readyapi** is based on the Python standards, including `Annotated`, you can use this trick in your code. 😎
+But because **ReadyAPI** is based on the Python standards, including `Annotated`, you can use this trick in your code. 😎
 
 ///
 
@@ -142,13 +142,13 @@ This will be especially useful when you use it in a **large code base** where yo
 
 ## To `async` or not to `async`
 
-As dependencies will also be called by **readyapi** (the same as your *path operation functions*), the same rules apply while defining your functions.
+As dependencies will also be called by **ReadyAPI** (the same as your *path operation functions*), the same rules apply while defining your functions.
 
 You can use `async def` or normal `def`.
 
 And you can declare dependencies with `async def` inside of normal `def` *path operation functions*, or `def` dependencies inside of `async def` *path operation functions*, etc.
 
-It doesn't matter. **readyapi** will know what to do.
+It doesn't matter. **ReadyAPI** will know what to do.
 
 /// note
 
@@ -166,13 +166,13 @@ So, the interactive docs will have all the information from these dependencies t
 
 ## Simple usage
 
-If you look at it, *path operation functions* are declared to be used whenever a *path* and *operation* matches, and then **readyapi** takes care of calling the function with the correct parameters, extracting the data from the request.
+If you look at it, *path operation functions* are declared to be used whenever a *path* and *operation* matches, and then **ReadyAPI** takes care of calling the function with the correct parameters, extracting the data from the request.
 
 Actually, all (or most) of the web frameworks work in this same way.
 
-You never call those functions directly. They are called by your framework (in this case, **readyapi**).
+You never call those functions directly. They are called by your framework (in this case, **ReadyAPI**).
 
-With the Dependency Injection system, you can also tell **readyapi** that your *path operation function* also "depends" on something else that should be executed before your *path operation function*, and **readyapi** will take care of executing it and "injecting" the results.
+With the Dependency Injection system, you can also tell **ReadyAPI** that your *path operation function* also "depends" on something else that should be executed before your *path operation function*, and **ReadyAPI** will take care of executing it and "injecting" the results.
 
 Other common terms for this same idea of "dependency injection" are:
 
@@ -182,7 +182,7 @@ Other common terms for this same idea of "dependency injection" are:
 * injectables
 * components
 
-## **readyapi** plug-ins
+## **ReadyAPI** plug-ins
 
 Integrations and "plug-ins" can be built using the **Dependency Injection** system. But in fact, there is actually **no need to create "plug-ins"**, as by using dependencies it's possible to declare an infinite number of integrations and interactions that become available to your *path operation functions*.
 
@@ -190,9 +190,9 @@ And dependencies can be created in a very simple and intuitive way that allows y
 
 You will see examples of this in the next chapters, about relational and NoSQL databases, security, etc.
 
-## **readyapi** compatibility
+## **ReadyAPI** compatibility
 
-The simplicity of the dependency injection system makes **readyapi** compatible with:
+The simplicity of the dependency injection system makes **ReadyAPI** compatible with:
 
 * all the relational databases
 * NoSQL databases
@@ -247,4 +247,4 @@ paying_user --> pro_items
 
 All these dependencies, while declaring their requirements, also add parameters, validations, etc. to your *path operations*.
 
-**readyapi** will take care of adding it all to the OpenAPI schema, so that it is shown in the interactive documentation systems.
+**ReadyAPI** will take care of adding it all to the OpenAPI schema, so that it is shown in the interactive documentation systems.

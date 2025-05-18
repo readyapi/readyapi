@@ -1,6 +1,6 @@
 # Tutorial - Guia de Usuário
 
-Esse tutorial mostra como usar o **readyapi** com a maior parte de seus recursos, passo a passo.
+Esse tutorial mostra como usar o **ReadyAPI** com a maior parte de seus recursos, passo a passo.
 
 Cada seção constrói, gradualmente, sobre as anteriores, mas sua estrutura são tópicos separados, para que você possa ir a qualquer um específico e resolver suas necessidades específicas de API.
 
@@ -17,7 +17,7 @@ Para rodar qualquer um dos exemplos, copie o codigo para um arquivo `main.py`, e
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories
              with <font color="#3465A4">__init__.py</font> files
@@ -25,7 +25,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with
              the following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -54,13 +54,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 É **ALTAMENTE recomendado** que você escreva ou copie o código, edite-o e rode-o localmente.
 
-Usá-lo em seu editor é o que realmente te mostra os benefícios do readyapi, ver quão pouco código você tem que escrever, todas as conferências de tipo, auto completações etc.
+Usá-lo em seu editor é o que realmente te mostra os benefícios do ReadyAPI, ver quão pouco código você tem que escrever, todas as conferências de tipo, auto completações etc.
 
 ---
 
-## Instale o readyapi
+## Instale o ReadyAPI
 
-O primeiro passo é instalar o readyapi.
+O primeiro passo é instalar o ReadyAPI.
 
 Para o tutorial, você deve querer instalá-lo com todas as dependências e recursos opicionais.
 

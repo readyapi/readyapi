@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>readyapi Framework, hochperformant, leicht zu erlernen, schnell zu programmieren, einsatzbereit</em>
+    <em>ReadyAPI Framework, hochperformant, leicht zu erlernen, schnell zu programmieren, einsatzbereit</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,7 +33,7 @@
 
 ---
 
-readyapi ist ein modernes, schnelles (hoch performantes) Webframework zur Erstellung von APIs mit Python auf Basis von Standard-Python-Typhinweisen.
+ReadyAPI ist ein modernes, schnelles (hoch performantes) Webframework zur Erstellung von APIs mit Python auf Basis von Standard-Python-Typhinweisen.
 
 Seine Schlüssel-Merkmale sind:
 
@@ -68,25 +68,25 @@ Seine Schlüssel-Merkmale sind:
 
 ## Meinungen
 
-„_[...] Ich verwende **readyapi** heutzutage sehr oft. [...] Ich habe tatsächlich vor, es für alle **ML-Dienste meines Teams bei Microsoft** zu verwenden. Einige davon werden in das Kernprodukt **Windows** und einige **Office**-Produkte integriert._“
+„_[...] Ich verwende **ReadyAPI** heutzutage sehr oft. [...] Ich habe tatsächlich vor, es für alle **ML-Dienste meines Teams bei Microsoft** zu verwenden. Einige davon werden in das Kernprodukt **Windows** und einige **Office**-Produkte integriert._“
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(Ref)</small></a></div>
 
 ---
 
-„_Wir haben die **readyapi**-Bibliothek genommen, um einen **REST**-Server zu erstellen, der abgefragt werden kann, um **Vorhersagen** zu erhalten. [für Ludwig]_“
+„_Wir haben die **ReadyAPI**-Bibliothek genommen, um einen **REST**-Server zu erstellen, der abgefragt werden kann, um **Vorhersagen** zu erhalten. [für Ludwig]_“
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, und Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(Ref)</small></a></div>
 
 ---
 
-„_**Netflix** freut sich, die Open-Source-Veröffentlichung unseres **Krisenmanagement**-Orchestrierung-Frameworks bekannt zu geben: **Dispatch**! [erstellt mit **readyapi**]_“
+„_**Netflix** freut sich, die Open-Source-Veröffentlichung unseres **Krisenmanagement**-Orchestrierung-Frameworks bekannt zu geben: **Dispatch**! [erstellt mit **ReadyAPI**]_“
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(Ref)</small></a></div>
 
 ---
 
-„_Ich bin überglücklich mit **readyapi**. Es macht so viel Spaß!_“
+„_Ich bin überglücklich mit **ReadyAPI**. Es macht so viel Spaß!_“
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong>Host des <a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> Podcast</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(Ref)</small></a></div>
 
@@ -98,31 +98,31 @@ Seine Schlüssel-Merkmale sind:
 
 ---
 
-„_Wenn Sie ein **modernes Framework** zum Erstellen von REST-APIs erlernen möchten, schauen Sie sich **readyapi** an. [...] Es ist schnell, einfach zu verwenden und leicht zu erlernen [...]_“
+„_Wenn Sie ein **modernes Framework** zum Erstellen von REST-APIs erlernen möchten, schauen Sie sich **ReadyAPI** an. [...] Es ist schnell, einfach zu verwenden und leicht zu erlernen [...]_“
 
-„_Wir haben zu **readyapi** für unsere **APIs** gewechselt [...] Ich denke, es wird Ihnen gefallen [...]_“
+„_Wir haben zu **ReadyAPI** für unsere **APIs** gewechselt [...] Ich denke, es wird Ihnen gefallen [...]_“
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong>Gründer von <a href="https://explosion.ai" target="_blank">Explosion AI</a> - Autoren von <a href="https://spacy.io" target="_blank">spaCy</a></strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(Ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(Ref)</small></a></div>
 
 ---
 
-„_Falls irgendjemand eine Produktions-Python-API erstellen möchte, kann ich **readyapi** wärmstens empfehlen. Es ist **wunderschön konzipiert**, **einfach zu verwenden** und **hoch skalierbar**; es ist zu einer **Schlüsselkomponente** in unserer API-First-Entwicklungsstrategie geworden und treibt viele Automatisierungen und Dienste an, wie etwa unseren virtuellen TAC-Ingenieur._“
+„_Falls irgendjemand eine Produktions-Python-API erstellen möchte, kann ich **ReadyAPI** wärmstens empfehlen. Es ist **wunderschön konzipiert**, **einfach zu verwenden** und **hoch skalierbar**; es ist zu einer **Schlüsselkomponente** in unserer API-First-Entwicklungsstrategie geworden und treibt viele Automatisierungen und Dienste an, wie etwa unseren virtuellen TAC-Ingenieur._“
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(Ref)</small></a></div>
 
 ---
 
-## **Cligenius**, das readyapi der CLIs
+## **Cligenius**, das ReadyAPI der CLIs
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Wenn Sie eine <abbr title="Command Line Interface – Kommandozeilen-Schnittstelle">CLI</abbr>-Anwendung für das Terminal erstellen, anstelle einer Web-API, schauen Sie sich <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a> an.
 
-**Cligenius** ist die kleine Schwester von readyapi. Und es soll das **readyapi der CLIs** sein. ⌨️ 🚀
+**Cligenius** ist die kleine Schwester von ReadyAPI. Und es soll das **ReadyAPI der CLIs** sein. ⌨️ 🚀
 
 ## Anforderungen
 
-readyapi steht auf den Schultern von Giganten:
+ReadyAPI steht auf den Schultern von Giganten:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> für die Webanteile.
 * <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> für die Datenanteile.
@@ -160,9 +160,9 @@ $ pip install "uvicorn[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -183,9 +183,9 @@ Wenn Ihr Code `async` / `await` verwendet, benutzen Sie `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -227,7 +227,7 @@ INFO:     Application startup complete.
 Der Befehl `uvicorn main:app` bezieht sich auf:
 
 * `main`: die Datei `main.py` (das Python-„Modul“).
-* `app`: das Objekt, das innerhalb von `main.py` mit der Zeile `app = readyapi()` erzeugt wurde.
+* `app`: das Objekt, das innerhalb von `main.py` mit der Zeile `app = ReadyAPI()` erzeugt wurde.
 * `--reload`: lässt den Server nach Codeänderungen neu starten. Tun Sie das nur während der Entwicklung.
 
 </details>
@@ -274,10 +274,10 @@ Deklarieren Sie den Body mithilfe von Standard-Python-Typen, dank Pydantic.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -377,7 +377,7 @@ item: Item
 
 ---
 
-Um auf das vorherige Codebeispiel zurückzukommen, **readyapi** wird:
+Um auf das vorherige Codebeispiel zurückzukommen, **ReadyAPI** wird:
 
 * Überprüfen, dass es eine `item_id` im Pfad für `GET`- und `PUT`-Anfragen gibt.
 * Überprüfen, ob die `item_id` vom Typ `int` für `GET`- und `PUT`-Anfragen ist.
@@ -441,7 +441,7 @@ Für ein vollständigeres Beispiel, mit weiteren Funktionen, siehe das <a href="
 
 ## Performanz
 
-Unabhängige TechEmpower-Benchmarks zeigen **readyapi**-Anwendungen, die unter Uvicorn laufen, als <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">eines der schnellsten verfügbaren Python-Frameworks</a>, nur noch hinter Starlette und Uvicorn selbst (intern von readyapi verwendet).
+Unabhängige TechEmpower-Benchmarks zeigen **ReadyAPI**-Anwendungen, die unter Uvicorn laufen, als <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">eines der schnellsten verfügbaren Python-Frameworks</a>, nur noch hinter Starlette und Uvicorn selbst (intern von ReadyAPI verwendet).
 
 Um mehr darüber zu erfahren, siehe den Abschnitt <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
@@ -459,10 +459,10 @@ Wird von Starlette verwendet:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - erforderlich, wenn Sie die Standardkonfiguration für Templates verwenden möchten.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - erforderlich, wenn Sie Formulare mittels `request.form()` <abbr title="Konvertieren des Strings, der aus einer HTTP-Anfrage stammt, nach Python-Daten">„parsen“</abbr> möchten.
 * <a href="https://pythonhosted.org/itsdangerous/" target="_blank"><code>itsdangerous</code></a> - erforderlich für `SessionMiddleware` Unterstützung.
-* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - erforderlich für Starlette's `SchemaGenerator` Unterstützung (Sie brauchen das wahrscheinlich nicht mit readyapi).
+* <a href="https://pyyaml.org/wiki/PyYAMLDocumentation" target="_blank"><code>pyyaml</code></a> - erforderlich für Starlette's `SchemaGenerator` Unterstützung (Sie brauchen das wahrscheinlich nicht mit ReadyAPI).
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - erforderlich, wenn Sie `UJSONResponse` verwenden möchten.
 
-Wird von readyapi / Starlette verwendet:
+Wird von ReadyAPI / Starlette verwendet:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - für den Server, der Ihre Anwendung lädt und serviert.
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - erforderlich, wenn Sie `ORJSONResponse` verwenden möchten.

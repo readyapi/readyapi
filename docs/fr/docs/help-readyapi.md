@@ -1,28 +1,28 @@
-# Help readyapi - Obtenir de l'aide
+# Help ReadyAPI - Obtenir de l'aide
 
-Aimez-vous **readyapi** ?
+Aimez-vous **ReadyAPI** ?
 
-Vous souhaitez aider readyapi, les autres utilisateurs et l'auteur ?
+Vous souhaitez aider ReadyAPI, les autres utilisateurs et l'auteur ?
 
-Ou souhaitez-vous obtenir de l'aide avec le **readyapi** ?
+Ou souhaitez-vous obtenir de l'aide avec le **ReadyAPI** ?
 
 Il existe des moyens très simples d'aider (plusieurs ne nécessitent qu'un ou deux clics).
 
 Il existe également plusieurs façons d'obtenir de l'aide.
 
-## Star **readyapi** sur GitHub
+## Star **ReadyAPI** sur GitHub
 
-Vous pouvez "star" readyapi dans GitHub (en cliquant sur le bouton étoile en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
+Vous pouvez "star" ReadyAPI dans GitHub (en cliquant sur le bouton étoile en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. ⭐️
 
 En ajoutant une étoile, les autres utilisateurs pourront la trouver plus facilement et constater qu'elle a déjà été utile à d'autres.
 
 ## Watch le dépôt GitHub pour les releases
 
-Vous pouvez "watch" readyapi dans GitHub (en cliquant sur le bouton "watch" en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+Vous pouvez "watch" ReadyAPI dans GitHub (en cliquant sur le bouton "watch" en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 Vous pouvez y sélectionner "Releases only".
 
-Ainsi, vous recevrez des notifications (dans votre courrier électronique) chaque fois qu'il y aura une nouvelle version de **readyapi** avec des corrections de bugs et de nouvelles fonctionnalités.
+Ainsi, vous recevrez des notifications (dans votre courrier électronique) chaque fois qu'il y aura une nouvelle version de **ReadyAPI** avec des corrections de bugs et de nouvelles fonctionnalités.
 
 ## Se rapprocher de l'auteur
 
@@ -34,7 +34,7 @@ Vous pouvez :
     * Voir d'autres projets Open Source que j'ai créés et qui pourraient vous aider.
     * Suivez-moi pour voir quand je crée un nouveau projet Open Source.
 * <a href="https://twitter.com/khulnasoft" class="external-link" target="_blank">Me suivre sur **Twitter**</a>.
-    * Dites-moi comment vous utilisez readyapi (j'adore entendre ça).
+    * Dites-moi comment vous utilisez ReadyAPI (j'adore entendre ça).
     * Entendre quand je fais des annonces ou que je lance de nouveaux outils.
 * <a href="https://www.linkedin.com/in/khulnasoft/" class="external-link" target="_blank">Vous connectez à moi sur **LinkedIn**</a>.
     * Etre notifié quand je fais des annonces ou que je lance de nouveaux outils (bien que j'utilise plus souvent Twitter 🤷‍♂).
@@ -42,17 +42,17 @@ Vous pouvez :
     * Lire d'autres idées, articles, et sur les outils que j'ai créés.
     * Suivez-moi pour lire quand je publie quelque chose de nouveau.
 
-## Tweeter sur **readyapi**
+## Tweeter sur **ReadyAPI**
 
-<a href="https://twitter.com/compose/tweet?text=I'm loving readyapi because... https://github.com/readyapi/readyapi cc @khulnasoft" class="external-link" target="_blank">Tweetez à propos de **readyapi**</a> et faites-moi savoir, ainsi qu'aux autres, pourquoi vous aimez ça. 🎉
+<a href="https://twitter.com/compose/tweet?text=I'm loving ReadyAPI because... https://github.com/readyapi/readyapi cc @khulnasoft" class="external-link" target="_blank">Tweetez à propos de **ReadyAPI**</a> et faites-moi savoir, ainsi qu'aux autres, pourquoi vous aimez ça. 🎉
 
-J'aime entendre parler de l'utilisation du **readyapi**, de ce que vous avez aimé dedans, dans quel projet/entreprise l'utilisez-vous, etc.
+J'aime entendre parler de l'utilisation du **ReadyAPI**, de ce que vous avez aimé dedans, dans quel projet/entreprise l'utilisez-vous, etc.
 
-## Voter pour readyapi
+## Voter pour ReadyAPI
 
-* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Votez pour **readyapi** sur Slant</a>.
-* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Votez pour **readyapi** sur AlternativeTo</a>.
-* <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">Votez pour **readyapi** sur awesome-rest</a>.
+* <a href="https://www.slant.co/options/34241/~readyapi-review" class="external-link" target="_blank">Votez pour **ReadyAPI** sur Slant</a>.
+* <a href="https://alternativeto.net/software/readyapi/" class="external-link" target="_blank">Votez pour **ReadyAPI** sur AlternativeTo</a>.
+* <a href="https://github.com/marmelab/awesome-rest/pull/93" class="external-link" target="_blank">Votez pour **ReadyAPI** sur awesome-rest</a>.
 
 ## Aider les autres à résoudre les problèmes dans GitHub
 
@@ -60,7 +60,7 @@ Vous pouvez voir <a href="https://github.com/readyapi/readyapi/issues" class="ex
 
 ## Watch le dépôt GitHub
 
-Vous pouvez "watch" readyapi dans GitHub (en cliquant sur le bouton "watch" en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
+Vous pouvez "watch" ReadyAPI dans GitHub (en cliquant sur le bouton "watch" en haut à droite) : <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">https://github.com/readyapi/readyapi</a>. 👀
 
 Si vous sélectionnez "Watching" au lieu de "Releases only", vous recevrez des notifications lorsque quelqu'un crée une nouvelle Issue.
 
@@ -90,9 +90,9 @@ Vous pouvez également soutenir financièrement l'auteur (moi) via <a href="http
 
 Là, vous pourriez m'offrir un café ☕️ pour me remercier 😄.
 
-## Sponsoriser les outils qui font fonctionner readyapi
+## Sponsoriser les outils qui font fonctionner ReadyAPI
 
-Comme vous l'avez vu dans la documentation, readyapi se tient sur les épaules des géants, Starlette et Pydantic.
+Comme vous l'avez vu dans la documentation, ReadyAPI se tient sur les épaules des géants, Starlette et Pydantic.
 
 Vous pouvez également parrainer :
 

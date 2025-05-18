@@ -33,7 +33,7 @@ Zum Beispiel:
 
 Hier deklarieren wir die Einstellung `openapi_url` mit dem gleichen Defaultwert `"/openapi.json"`.
 
-Und dann verwenden wir das beim Erstellen der `readyapi`-App.
+Und dann verwenden wir das beim Erstellen der `ReadyAPI`-App.
 
 Dann könnten Sie OpenAPI (einschließlich der Dokumentationsoberflächen) deaktivieren, indem Sie die Umgebungsvariable `OPENAPI_URL` auf einen leeren String setzen, wie zum Beispiel:
 

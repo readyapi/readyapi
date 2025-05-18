@@ -48,9 +48,9 @@ Sadece bilmiyorsanız, normal `def` kullanın.
 
 ---
 
-**Not**: *path operasyon fonksiyonlarınızda* `def` ve `async def`'i ihtiyaç duyduğunuz gibi karıştırabilir ve her birini sizin için en iyi seçeneği kullanarak tanımlayabilirsiniz. readyapi onlarla doğru olanı yapacaktır.
+**Not**: *path operasyon fonksiyonlarınızda* `def` ve `async def`'i ihtiyaç duyduğunuz gibi karıştırabilir ve her birini sizin için en iyi seçeneği kullanarak tanımlayabilirsiniz. ReadyAPI onlarla doğru olanı yapacaktır.
 
-Her neyse, yukarıdaki durumlardan herhangi birinde, readyapi yine de asenkron olarak çalışacak ve son derece hızlı olacaktır.
+Her neyse, yukarıdaki durumlardan herhangi birinde, ReadyAPI yine de asenkron olarak çalışacak ve son derece hızlı olacaktır.
 
 Ancak yukarıdaki adımları takip ederek, bazı performans optimizasyonları yapılabilecektir.
 
@@ -220,7 +220,7 @@ Asenkron web (ASGI) özelliği, WebSockets için destek eklemek için Django'ya 
 
 Asenkron çalışabilme NodeJS in popüler olmasının sebebi (paralel olamasa bile) ve Go dilini güçlü yapan özelliktir.
 
-Ve bu **readyapi** ile elde ettiğiniz performans düzeyiyle aynıdır.
+Ve bu **ReadyAPI** ile elde ettiğiniz performans düzeyiyle aynıdır.
 
 Aynı anda paralellik ve asenkronluğa sahip olabildiğiniz için, test edilen NodeJS çerçevelerinin çoğundan daha yüksek performans elde edersiniz ve C'ye daha yakın derlenmiş bir dil olan Go ile eşit bir performans elde edersiniz <a href="https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=query&l=zijmkf-1" class="external-link" target="_blank">(bütün teşekkürler Starlette'e )</a>.
 
@@ -264,11 +264,11 @@ CPU'ya bağlı işlemlerin yaygın örnekleri, karmaşık matematik işlemleri g
 
 ### Eşzamanlılık + Paralellik: Web + Makine Öğrenimi
 
-**readyapi** ile web geliştirme için çok yaygın olan eşzamanlılıktan yararlanabilirsiniz (NodeJS'in aynı çekiciliği).
+**ReadyAPI** ile web geliştirme için çok yaygın olan eşzamanlılıktan yararlanabilirsiniz (NodeJS'in aynı çekiciliği).
 
 Ancak, Makine Öğrenimi sistemlerindekile gibi **CPU'ya bağlı** iş yükleri için paralellik ve çoklu işlemenin (birden çok işlemin paralel olarak çalışması) avantajlarından da yararlanabilirsiniz.
 
-Buna ek olarak Python'un **Veri Bilimi**, Makine Öğrenimi ve özellikle Derin Öğrenme için ana dil olduğu gerçeği, readyapi'yi Veri Bilimi / Makine Öğrenimi web API'leri ve uygulamaları için çok iyi bir seçenek haline getirir.
+Buna ek olarak Python'un **Veri Bilimi**, Makine Öğrenimi ve özellikle Derin Öğrenme için ana dil olduğu gerçeği, ReadyAPI'yi Veri Bilimi / Makine Öğrenimi web API'leri ve uygulamaları için çok iyi bir seçenek haline getirir.
 
 Production'da nasıl oldugunu görmek için şu bölüme bakın [Deployment](deployment/index.md){.internal-link target=_blank}.
 
@@ -330,9 +330,9 @@ Ama aynı zamanda, `async def` ile tanımlanan fonksiyonların "await" ile bekle
 
 Yani yumurta mı tavukdan, tavuk mu yumurtadan gibi ilk `async` fonksiyonu nasıl çağırılır?
 
-**readyapi** ile çalışıyorsanız bunun için endişelenmenize gerek yok, çünkü bu "ilk" fonksiyon sizin *path fonksiyonunuz* olacak ve readyapi doğru olanı nasıl yapacağını bilecek.
+**ReadyAPI** ile çalışıyorsanız bunun için endişelenmenize gerek yok, çünkü bu "ilk" fonksiyon sizin *path fonksiyonunuz* olacak ve ReadyAPI doğru olanı nasıl yapacağını bilecek.
 
-Ancak readyapi olmadan `async` / `await` kullanmak istiyorsanız, <a href="https://docs.python.org/3/library/asyncio-task.html#coroutine" class="external-link" target="_blank">resmi Python belgelerini kontrol edin</a>.
+Ancak ReadyAPI olmadan `async` / `await` kullanmak istiyorsanız, <a href="https://docs.python.org/3/library/asyncio-task.html#coroutine" class="external-link" target="_blank">resmi Python belgelerini kontrol edin</a>.
 
 ### Asenkron kodun diğer biçimleri
 
@@ -362,7 +362,7 @@ Aynı ifadeyi yukarıdan görelim:
 
 Şimdi daha mantıklı gelmeli. ✨
 
-readyapi'ye (Starlette aracılığıyla) güç veren ve bu kadar etkileyici bir performansa sahip olmasını sağlayan şey budur.
+ReadyAPI'ye (Starlette aracılığıyla) güç veren ve bu kadar etkileyici bir performansa sahip olmasını sağlayan şey budur.
 
 ## Çok Teknik Detaylar
 
@@ -370,9 +370,9 @@ readyapi'ye (Starlette aracılığıyla) güç veren ve bu kadar etkileyici bir 
 
 Muhtemelen burayı atlayabilirsiniz.
 
-Bunlar, **readyapi**'nin altta nasıl çalıştığına dair çok teknik ayrıntılardır.
+Bunlar, **ReadyAPI**'nin altta nasıl çalıştığına dair çok teknik ayrıntılardır.
 
-Biraz teknik bilginiz varsa (co-routines, threads, blocking, vb)ve readyapi'nin "async def" ile normal "def" arasındaki farkı nasıl işlediğini merak ediyorsanız, devam edin.
+Biraz teknik bilginiz varsa (co-routines, threads, blocking, vb)ve ReadyAPI'nin "async def" ile normal "def" arasındaki farkı nasıl işlediğini merak ediyorsanız, devam edin.
 
 ///
 
@@ -380,9 +380,9 @@ Biraz teknik bilginiz varsa (co-routines, threads, blocking, vb)ve readyapi'nin 
 
 "async def" yerine normal "def" ile bir *yol işlem işlevi* bildirdiğinizde, doğrudan çağrılmak yerine (sunucuyu bloke edeceğinden) daha sonra beklenen harici bir iş parçacığı havuzunda çalıştırılır.
 
-Yukarıda açıklanan şekilde çalışmayan başka bir asenkron framework'den geliyorsanız ve küçük bir performans kazancı (yaklaşık 100 nanosaniye) için  "def" ile *path fonksiyonu* tanımlamaya alışkınsanız, **readyapi**'de tam tersi olacağını unutmayın. Bu durumlarda, *path fonksiyonu* <abbr title="Input/Output: disk okuma veya yazma, ağ iletişimleri.">G/Ç</abbr> engelleyen durum oluşturmadıkça "async def" kullanmak daha iyidir.
+Yukarıda açıklanan şekilde çalışmayan başka bir asenkron framework'den geliyorsanız ve küçük bir performans kazancı (yaklaşık 100 nanosaniye) için  "def" ile *path fonksiyonu* tanımlamaya alışkınsanız, **ReadyAPI**'de tam tersi olacağını unutmayın. Bu durumlarda, *path fonksiyonu* <abbr title="Input/Output: disk okuma veya yazma, ağ iletişimleri.">G/Ç</abbr> engelleyen durum oluşturmadıkça "async def" kullanmak daha iyidir.
 
-Yine de, her iki durumda da, **readyapi**'nin önceki frameworkden [hala daha hızlı](index.md#performans){.internal-link target=_blank} (veya en azından karşılaştırılabilir) olma olasılığı vardır.
+Yine de, her iki durumda da, **ReadyAPI**'nin önceki frameworkden [hala daha hızlı](index.md#performans){.internal-link target=_blank} (veya en azından karşılaştırılabilir) olma olasılığı vardır.
 
 ### Bagımlılıklar
 
@@ -394,9 +394,9 @@ Birbirini gerektiren (fonksiyonlarin parametreleri olarak) birden fazla bağıml
 
 ### Diğer yardımcı fonksiyonlar
 
-Doğrudan çağırdığınız diğer herhangi bir yardımcı fonksiyonu, normal "def" veya "async def" ile tanimlayabilirsiniz. readyapi onu çağırma şeklinizi etkilemez.
+Doğrudan çağırdığınız diğer herhangi bir yardımcı fonksiyonu, normal "def" veya "async def" ile tanimlayabilirsiniz. ReadyAPI onu çağırma şeklinizi etkilemez.
 
-Bu, readyapi'nin sizin için çağırdığı fonksiyonlarin tam tersidir: *path fonksiyonu* ve bağımlılıklar.
+Bu, ReadyAPI'nin sizin için çağırdığı fonksiyonlarin tam tersidir: *path fonksiyonu* ve bağımlılıklar.
 
 Yardımcı program fonksiyonunuz 'def' ile normal bir işlevse, bir iş parçacığı havuzunda değil doğrudan (kodunuzda yazdığınız gibi) çağrılır, işlev 'async def' ile oluşturulmuşsa çağırıldığı yerde 'await' ile beklemelisiniz.
 

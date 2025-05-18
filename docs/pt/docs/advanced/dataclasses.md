@@ -1,14 +1,14 @@
 # Usando Dataclasses
 
-readyapi é construído em cima do **Pydantic**, e eu tenho mostrado como usar modelos Pydantic para declarar requisições e respostas.
+ReadyAPI é construído em cima do **Pydantic**, e eu tenho mostrado como usar modelos Pydantic para declarar requisições e respostas.
 
-Mas o readyapi também suporta o uso de <a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a> da mesma forma:
+Mas o ReadyAPI também suporta o uso de <a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a> da mesma forma:
 
 {* ../../docs_src/dataclasses/tutorial001.py hl[1,7:12,19:20] *}
 
 Isso ainda é suportado graças ao **Pydantic**, pois ele tem <a href="https://docs.pydantic.dev/latest/concepts/dataclasses/#use-of-stdlib-dataclasses-with-basemodel" class="external-link" target="_blank">suporte interno para `dataclasses`</a>.
 
-Então, mesmo com o código acima que não usa Pydantic explicitamente, o readyapi está usando Pydantic para converter essas dataclasses padrão para a versão do Pydantic.
+Então, mesmo com o código acima que não usa Pydantic explicitamente, o ReadyAPI está usando Pydantic para converter essas dataclasses padrão para a versão do Pydantic.
 
 E claro, ele suporta o mesmo:
 
@@ -24,7 +24,7 @@ Lembre-se de que dataclasses não podem fazer tudo o que os modelos Pydantic pod
 
 Então, você ainda pode precisar usar modelos Pydantic.
 
-Mas se você tem um monte de dataclasses por aí, este é um truque legal para usá-las para alimentar uma API web usando readyapi. 🤓
+Mas se você tem um monte de dataclasses por aí, este é um truque legal para usá-las para alimentar uma API web usando ReadyAPI. 🤓
 
 ///
 
@@ -66,7 +66,7 @@ Nesse caso, você pode simplesmente trocar as `dataclasses` padrão por `pydanti
 
 6. Aqui estamos retornando um dicionário que contém `items`, que é uma lista de dataclasses.
 
-    O readyapi ainda é capaz de <abbr title="converter os dados para um formato que pode ser transmitido">serializar</abbr> os dados para JSON.
+    O ReadyAPI ainda é capaz de <abbr title="converter os dados para um formato que pode ser transmitido">serializar</abbr> os dados para JSON.
 
 7. Aqui o `response_model` está usando uma anotação de tipo de uma lista de dataclasses `Author`.
 
@@ -74,13 +74,13 @@ Nesse caso, você pode simplesmente trocar as `dataclasses` padrão por `pydanti
 
 8. Note que esta *função de operação de rota* usa `def` regular em vez de `async def`.
 
-    Como sempre, no readyapi você pode combinar `def` e `async def` conforme necessário.
+    Como sempre, no ReadyAPI você pode combinar `def` e `async def` conforme necessário.
 
     Se você precisar de uma atualização sobre quando usar qual, confira a seção _"Com pressa?"_ na documentação sobre [`async` e `await`](../async.md#in-a-hurry){.internal-link target=_blank}.
 
 9. Esta *função de operação de rota* não está retornando dataclasses (embora pudesse), mas uma lista de dicionários com dados internos.
 
-    O readyapi usará o parâmetro `response_model` (que inclui dataclasses) para converter a resposta.
+    O ReadyAPI usará o parâmetro `response_model` (que inclui dataclasses) para converter a resposta.
 
 Você pode combinar `dataclasses` com outras anotações de tipo em muitas combinações diferentes para formar estruturas de dados complexas.
 
@@ -94,4 +94,4 @@ Para saber mais, confira a <a href="https://docs.pydantic.dev/latest/concepts/da
 
 ## Versão
 
-Isso está disponível desde a versão `0.67.0` do readyapi. 🔖
+Isso está disponível desde a versão `0.67.0` do ReadyAPI. 🔖

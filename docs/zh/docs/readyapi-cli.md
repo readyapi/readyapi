@@ -1,17 +1,17 @@
-# readyapi CLI
+# ReadyAPI CLI
 
-**readyapi CLI** 是一个命令行程序，你可以用它来部署和运行你的 readyapi 应用程序，管理你的 readyapi 项目，等等。
+**ReadyAPI CLI** 是一个命令行程序，你可以用它来部署和运行你的 ReadyAPI 应用程序，管理你的 ReadyAPI 项目，等等。
 
-当你安装 readyapi 时（例如使用 `pip install readyapi` 命令），会包含一个名为 `readyapi-cli` 的软件包，该软件包在终端中提供 `readyapi` 命令。
+当你安装 ReadyAPI 时（例如使用 `pip install ReadyAPI` 命令），会包含一个名为 `readyapi-cli` 的软件包，该软件包在终端中提供 `readyapi` 命令。
 
-要在开发环境中运行你的 readyapi 应用，你可以使用 `readyapi dev` 命令：
+要在开发环境中运行你的 ReadyAPI 应用，你可以使用 `readyapi dev` 命令：
 
 <div class="termy">
 
 ```console
 $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:solid">main.py</u>
 
-  <span style="background-color:#009485"><font color="#D3D7CF"> readyapi </font></span>  Starting development server 🚀
+  <span style="background-color:#009485"><font color="#D3D7CF"> ReadyAPI </font></span>  Starting development server 🚀
 
              Searching for package file structure from directories with
              <font color="#3465A4">__init__.py</font> files
@@ -19,7 +19,7 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
    <span style="background-color:#007166"><font color="#D3D7CF"> module </font></span>  🐍 main.py
 
-     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the readyapi app object from the module with the
+     <span style="background-color:#007166"><font color="#D3D7CF"> code </font></span>  Importing the ReadyAPI app object from the module with the
              following code:
 
              <u style="text-decoration-style:solid">from </u><u style="text-decoration-style:solid"><b>main</b></u><u style="text-decoration-style:solid"> import </u><u style="text-decoration-style:solid"><b>app</b></u>
@@ -46,13 +46,13 @@ $ <font color="#4E9A06">readyapi</font> dev <u style="text-decoration-style:soli
 
 </div>
 
-该命令行程序 `readyapi` 就是 **readyapi CLI**。
+该命令行程序 `readyapi` 就是 **ReadyAPI CLI**。
 
-readyapi CLI 接收你的 Python 程序路径，自动检测包含 readyapi 的变量（通常命名为 `app`）及其导入方式，然后启动服务。
+ReadyAPI CLI 接收你的 Python 程序路径，自动检测包含 ReadyAPI 的变量（通常命名为 `app`）及其导入方式，然后启动服务。
 
 在生产环境中，你应该使用 `readyapi run` 命令。🚀
 
-在内部，**readyapi CLI** 使用了 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>，这是一个高性能、适用于生产环境的 ASGI 服务器。😎
+在内部，**ReadyAPI CLI** 使用了 <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>，这是一个高性能、适用于生产环境的 ASGI 服务器。😎
 
 ## `readyapi dev`
 

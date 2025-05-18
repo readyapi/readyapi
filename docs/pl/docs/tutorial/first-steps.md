@@ -1,6 +1,6 @@
 # Pierwsze kroki
 
-Najprostszy plik readyapi może wyglądać tak:
+Najprostszy plik ReadyAPI może wyglądać tak:
 
 {* ../../docs_src/first_steps/tutorial001.py *}
 
@@ -27,7 +27,7 @@ $ uvicorn main:app --reload
 Polecenie `uvicorn main:app` odnosi się do:
 
 * `main`: plik `main.py` ("moduł" Python).
-* `app`: obiekt utworzony w pliku `main.py` w lini `app = readyapi()`.
+* `app`: obiekt utworzony w pliku `main.py` w lini `app = ReadyAPI()`.
 * `--reload`: sprawia, że serwer uruchamia się ponownie po zmianie kodu. Używany tylko w trakcie tworzenia oprogramowania.
 
 ///
@@ -68,7 +68,7 @@ Zobaczysz alternatywną automatycznie wygenerowaną dokumentację API (dostarczo
 
 ### OpenAPI
 
-**readyapi** generuje "schemat" z całym Twoim API przy użyciu standardu **OpenAPI** służącego do definiowania API.
+**ReadyAPI** generuje "schemat" z całym Twoim API przy użyciu standardu **OpenAPI** służącego do definiowania API.
 
 #### Schema
 
@@ -92,7 +92,7 @@ OpenAPI definiuje API Schema dla Twojego API, który zawiera definicje (lub "sch
 
 #### Sprawdź `openapi.json`
 
-Jeśli jesteś ciekawy, jak wygląda surowy schemat OpenAPI, readyapi automatycznie generuje JSON Schema z opisami wszystkich Twoich API.
+Jeśli jesteś ciekawy, jak wygląda surowy schemat OpenAPI, ReadyAPI automatycznie generuje JSON Schema z opisami wszystkich Twoich API.
 
 Możesz to zobaczyć bezpośrednio pod adresem: <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>.
 
@@ -102,7 +102,7 @@ Zobaczysz JSON zaczynający się od czegoś takiego:
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -123,31 +123,31 @@ Zobaczysz JSON zaczynający się od czegoś takiego:
 
 Schemat OpenAPI jest tym, co zasila dwa dołączone interaktywne systemy dokumentacji.
 
-Istnieją dziesiątki alternatyw, wszystkie oparte na OpenAPI. Możesz łatwo dodać dowolną z nich do swojej aplikacji zbudowanej za pomocą **readyapi**.
+Istnieją dziesiątki alternatyw, wszystkie oparte na OpenAPI. Możesz łatwo dodać dowolną z nich do swojej aplikacji zbudowanej za pomocą **ReadyAPI**.
 
 Możesz go również użyć do automatycznego generowania kodu dla klientów, którzy komunikują się z Twoim API. Na przykład aplikacje frontendowe, mobilne lub IoT.
 
 ## Przypomnijmy, krok po kroku
 
-### Krok 1: zaimportuj `readyapi`
+### Krok 1: zaimportuj `ReadyAPI`
 
 {* ../../docs_src/first_steps/tutorial001.py hl[1] *}
 
-`readyapi` jest klasą, która zapewnia wszystkie funkcjonalności Twojego API.
+`ReadyAPI` jest klasą, która zapewnia wszystkie funkcjonalności Twojego API.
 
 /// note | Szczegóły techniczne
 
-`readyapi` jest klasą, która dziedziczy bezpośrednio z `Starlette`.
+`ReadyAPI` jest klasą, która dziedziczy bezpośrednio z `Starlette`.
 
-Oznacza to, że możesz korzystać ze wszystkich funkcjonalności <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> również w `readyapi`.
+Oznacza to, że możesz korzystać ze wszystkich funkcjonalności <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> również w `ReadyAPI`.
 
 ///
 
-### Krok 2: utwórz instancję `readyapi`
+### Krok 2: utwórz instancję `ReadyAPI`
 
 {*../../docs_src/first_steps/tutorial001.py hl[3] *}
 
-Zmienna `app` będzie tutaj "instancją" klasy `readyapi`.
+Zmienna `app` będzie tutaj "instancją" klasy `ReadyAPI`.
 
 Będzie to główny punkt interakcji przy tworzeniu całego interfejsu API.
 
@@ -244,7 +244,7 @@ Będziemy je również nazywali "**operacjami**".
 
 {* ../../docs_src/first_steps/tutorial001.py hl[6] *}
 
-`@app.get("/")` mówi **readyapi** że funkcja poniżej odpowiada za obsługę żądań, które trafiają do:
+`@app.get("/")` mówi **ReadyAPI** że funkcja poniżej odpowiada za obsługę żądań, które trafiają do:
 
 * ścieżki `/`
 * używając <abbr title="metoda HTTP GET">operacji <code>get</code></abbr>
@@ -257,7 +257,7 @@ Umieszczasz to na szczycie funkcji. Jak ładną ozdobną czapkę (chyba stąd wz
 
 "Dekorator" przyjmuje funkcję znajdującą się poniżej jego i coś z nią robi.
 
-W naszym przypadku dekorator mówi **readyapi**, że poniższa funkcja odpowiada **ścieżce** `/` z **operacją** `get`.
+W naszym przypadku dekorator mówi **ReadyAPI**, że poniższa funkcja odpowiada **ścieżce** `/` z **operacją** `get`.
 
 Jest to "**dekorator operacji na ścieżce**".
 
@@ -280,7 +280,7 @@ Oraz tych bardziej egzotycznych:
 
 Możesz dowolnie używać każdej operacji (metody HTTP).
 
-**readyapi** nie narzuca żadnego konkretnego znaczenia.
+**ReadyAPI** nie narzuca żadnego konkretnego znaczenia.
 
 Informacje tutaj są przedstawione jako wskazówka, a nie wymóg.
 
@@ -300,7 +300,7 @@ To jest nasza "**funkcja obsługująca ścieżkę**":
 
 Jest to funkcja Python.
 
-Zostanie ona wywołana przez **readyapi** za każdym razem, gdy otrzyma żądanie do adresu URL "`/`" przy użyciu operacji `GET`.
+Zostanie ona wywołana przez **ReadyAPI** za każdym razem, gdy otrzyma żądanie do adresu URL "`/`" przy użyciu operacji `GET`.
 
 W tym przypadku jest to funkcja "asynchroniczna".
 
@@ -328,7 +328,7 @@ Istnieje wiele innych obiektów i modeli, które zostaną automatycznie skonwert
 
 ## Podsumowanie
 
-* Zaimportuj `readyapi`.
+* Zaimportuj `ReadyAPI`.
 * Stwórz instancję `app`.
 * Dodaj **dekorator operacji na ścieżce** (taki jak `@app.get("/")`).
 * Napisz **funkcję obsługującą ścieżkę** (taką jak `def root(): ...` powyżej).

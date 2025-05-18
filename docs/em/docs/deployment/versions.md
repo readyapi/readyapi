@@ -1,16 +1,16 @@
-# 🔃 readyapi ⏬
+# 🔃 ReadyAPI ⏬
 
-**readyapi** ⏪ ➖ ⚙️ 🏭 📚 🈸 &amp; ⚙️. &amp; 💯 💰 🚧 1️⃣0️⃣0️⃣ 💯. ✋️ 🚮 🛠️ 🚚 🔜.
+**ReadyAPI** ⏪ ➖ ⚙️ 🏭 📚 🈸 &amp; ⚙️. &amp; 💯 💰 🚧 1️⃣0️⃣0️⃣ 💯. ✋️ 🚮 🛠️ 🚚 🔜.
 
 🆕 ⚒ 🚮 🛎, 🐛 🔧 🛎, &amp; 📟 🔁 📉.
 
 👈 ⚫️❔ ⏮️ ⏬ `0.x.x`, 👉 🎨 👈 🔠 ⏬ 💪 ⚠ ✔️ 💔 🔀. 👉 ⏩ <a href="https://semver.org/" class="external-link" target="_blank">⚛ 🛠️</a> 🏛.
 
-👆 💪 ✍ 🏭 🈸 ⏮️ **readyapi** ▶️️ 🔜 (&amp; 👆 ✔️ 🎲 🔨 ⚫️ 🕰), 👆 ✔️ ⚒ 💭 👈 👆 ⚙️ ⏬ 👈 👷 ☑ ⏮️ 🎂 👆 📟.
+👆 💪 ✍ 🏭 🈸 ⏮️ **ReadyAPI** ▶️️ 🔜 (&amp; 👆 ✔️ 🎲 🔨 ⚫️ 🕰), 👆 ✔️ ⚒ 💭 👈 👆 ⚙️ ⏬ 👈 👷 ☑ ⏮️ 🎂 👆 📟.
 
 ## 📌 👆 `readyapi` ⏬
 
-🥇 👜 👆 🔜 "📌" ⏬ **readyapi** 👆 ⚙️ 🎯 📰 ⏬ 👈 👆 💭 👷 ☑ 👆 🈸.
+🥇 👜 👆 🔜 "📌" ⏬ **ReadyAPI** 👆 ⚙️ 🎯 📰 ⏬ 👈 👆 💭 👷 ☑ 👆 🈸.
 
 🖼, ➡️ 💬 👆 ⚙️ ⏬ `0.45.0` 👆 📱.
 
@@ -40,7 +40,7 @@ readyapi>=0.45.0,<0.46.0
 
 📄 ⚛ 🛠️ 🏛, 🙆 ⏬ 🔛 `1.0.0` 💪 ⚠ 🚮 💔 🔀.
 
-readyapi ⏩ 🏛 👈 🙆 "🐛" ⏬ 🔀 🐛 🔧 &amp; 🚫-💔 🔀.
+ReadyAPI ⏩ 🏛 👈 🙆 "🐛" ⏬ 🔀 🐛 🔧 &amp; 🚫-💔 🔀.
 
 /// tip
 
@@ -62,13 +62,13 @@ readyapi>=0.45.0,<0.46.0
 
 ///
 
-## ♻ readyapi ⏬
+## ♻ ReadyAPI ⏬
 
 👆 🔜 🚮 💯 👆 📱.
 
-⏮️ **readyapi** ⚫️ 📶 ⏩ (👏 💃), ✅ 🩺: [🔬](../tutorial/testing.md){.internal-link target=_blank}
+⏮️ **ReadyAPI** ⚫️ 📶 ⏩ (👏 💃), ✅ 🩺: [🔬](../tutorial/testing.md){.internal-link target=_blank}
 
-⏮️ 👆 ✔️ 💯, ⤴️ 👆 💪 ♻ **readyapi** ⏬ 🌖 ⏮️ 1️⃣, &amp; ⚒ 💭 👈 🌐 👆 📟 👷 ☑ 🏃 👆 💯.
+⏮️ 👆 ✔️ 💯, ⤴️ 👆 💪 ♻ **ReadyAPI** ⏬ 🌖 ⏮️ 1️⃣, &amp; ⚒ 💭 👈 🌐 👆 📟 👷 ☑ 🏃 👆 💯.
 
 🚥 🌐 👷, ⚖️ ⏮️ 👆 ⚒ 💪 🔀, &amp; 🌐 👆 💯 🚶‍♀️, ⤴️ 👆 💪 📌 👆 `readyapi` 👈 🆕 ⏮️ ⏬.
 
@@ -76,13 +76,13 @@ readyapi>=0.45.0,<0.46.0
 
 👆 🚫🔜 🚫 📌 ⏬ `starlette`.
 
-🎏 ⏬ **readyapi** 🔜 ⚙️ 🎯 🆕 ⏬ 💃.
+🎏 ⏬ **ReadyAPI** 🔜 ⚙️ 🎯 🆕 ⏬ 💃.
 
-, 👆 💪 ➡️ **readyapi** ⚙️ ☑ 💃 ⏬.
+, 👆 💪 ➡️ **ReadyAPI** ⚙️ ☑ 💃 ⏬.
 
 ## 🔃 Pydantic
 
-Pydantic 🔌 💯 **readyapi** ⏮️ 🚮 👍 💯, 🆕 ⏬ Pydantic (🔛 `1.0.0`) 🕧 🔗 ⏮️ readyapi.
+Pydantic 🔌 💯 **ReadyAPI** ⏮️ 🚮 👍 💯, 🆕 ⏬ Pydantic (🔛 `1.0.0`) 🕧 🔗 ⏮️ ReadyAPI.
 
 👆 💪 📌 Pydantic 🙆 ⏬ 🔛 `1.0.0` 👈 👷 👆 &amp; 🔛 `2.0.0`.
 

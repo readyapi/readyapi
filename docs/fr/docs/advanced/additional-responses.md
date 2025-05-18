@@ -4,7 +4,7 @@
 
 Ceci concerne un sujet plutôt avancé.
 
-Si vous débutez avec **readyapi**, vous n'en aurez peut-être pas besoin.
+Si vous débutez avec **ReadyAPI**, vous n'en aurez peut-être pas besoin.
 
 ///
 
@@ -22,7 +22,7 @@ Il prend comme valeur un `dict` dont les clés sont des codes HTTP pour chaque r
 
 Chacun de ces `dict` de réponse peut avoir une clé `model`, contenant un modèle Pydantic, tout comme `response_model`.
 
-**readyapi** prendra ce modèle, générera son schéma JSON et l'inclura au bon endroit dans OpenAPI.
+**ReadyAPI** prendra ce modèle, générera son schéma JSON et l'inclura au bon endroit dans OpenAPI.
 
 Par exemple, pour déclarer une autre réponse avec un code HTTP `404` et un modèle Pydantic `Message`, vous pouvez écrire :
 
@@ -38,14 +38,14 @@ Gardez à l'esprit que vous devez renvoyer directement `JSONResponse`.
 
 La clé `model` ne fait pas partie d'OpenAPI.
 
-**readyapi** prendra le modèle Pydantic à partir de là, générera le `JSON Schema` et le placera au bon endroit.
+**ReadyAPI** prendra le modèle Pydantic à partir de là, générera le `JSON Schema` et le placera au bon endroit.
 
 Le bon endroit est :
 
 * Dans la clé `content`, qui a pour valeur un autre objet JSON (`dict`) qui contient :
     * Une clé avec le type de support, par ex. `application/json`, qui contient comme valeur un autre objet JSON, qui contient :
         * Une clé `schema`, qui a pour valeur le schéma JSON du modèle, voici le bon endroit.
-            * **readyapi** ajoute ici une référence aux schémas JSON globaux à un autre endroit de votre OpenAPI au lieu de l'inclure directement. De cette façon, d'autres applications et clients peuvent utiliser ces schémas JSON directement, fournir de meilleurs outils de génération de code, etc.
+            * **ReadyAPI** ajoute ici une référence aux schémas JSON globaux à un autre endroit de votre OpenAPI au lieu de l'inclure directement. De cette façon, d'autres applications et clients peuvent utiliser ces schémas JSON directement, fournir de meilleurs outils de génération de code, etc.
 
 ///
 
@@ -185,9 +185,9 @@ Notez que vous devez retourner l'image en utilisant directement un `FileResponse
 
 /// info
 
-À moins que vous ne spécifiiez explicitement un type de média différent dans votre paramètre `responses`, readyapi supposera que la réponse a le même type de média que la classe de réponse principale (par défaut `application/json`).
+À moins que vous ne spécifiiez explicitement un type de média différent dans votre paramètre `responses`, ReadyAPI supposera que la réponse a le même type de média que la classe de réponse principale (par défaut `application/json`).
 
-Mais si vous avez spécifié une classe de réponse personnalisée avec `None` comme type de média, readyapi utilisera `application/json` pour toute réponse supplémentaire associée à un modèle.
+Mais si vous avez spécifié une classe de réponse personnalisée avec `None` comme type de média, ReadyAPI utilisera `application/json` pour toute réponse supplémentaire associée à un modèle.
 
 ///
 
@@ -197,7 +197,7 @@ Vous pouvez également combiner des informations de réponse provenant de plusie
 
 Vous pouvez déclarer un `response_model`, en utilisant le code HTTP par défaut `200` (ou un code personnalisé si vous en avez besoin), puis déclarer des informations supplémentaires pour cette même réponse dans `responses`, directement dans le schéma OpenAPI.
 
-**readyapi** conservera les informations supplémentaires des `responses` et les combinera avec le schéma JSON de votre modèle.
+**ReadyAPI** conservera les informations supplémentaires des `responses` et les combinera avec le schéma JSON de votre modèle.
 
 Par exemple, vous pouvez déclarer une réponse avec un code HTTP `404` qui utilise un modèle Pydantic et a une `description` personnalisée.
 

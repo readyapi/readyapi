@@ -66,4 +66,4 @@ Más adelante, cuando leas sobre cómo estructurar aplicaciones más grandes ([A
 
 ## Dependencias Globales
 
-A continuación veremos cómo añadir dependencias a toda la aplicación `readyapi`, de modo que se apliquen a cada *path operation*.
+A continuación veremos cómo añadir dependencias a toda la aplicación `ReadyAPI`, de modo que se apliquen a cada *path operation*.

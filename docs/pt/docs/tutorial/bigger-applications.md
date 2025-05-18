@@ -2,7 +2,7 @@
 
 Se você está construindo uma aplicação ou uma API web, é raro que você possa colocar tudo em um único arquivo.
 
-**readyapi** oferece uma ferramenta conveniente para estruturar sua aplicação, mantendo toda a flexibilidade.
+**ReadyAPI** oferece uma ferramenta conveniente para estruturar sua aplicação, mantendo toda a flexibilidade.
 
 /// info | Informação
 
@@ -77,13 +77,13 @@ Vamos supor que o arquivo dedicado a lidar apenas com usuários seja o submódul
 
 Você quer manter as *operações de rota* relacionadas aos seus usuários separadas do restante do código, para mantê-lo organizado.
 
-Mas ele ainda faz parte da mesma aplicação/web API **readyapi** (faz parte do mesmo "pacote Python").
+Mas ele ainda faz parte da mesma aplicação/web API **ReadyAPI** (faz parte do mesmo "pacote Python").
 
 Você pode criar as *operações de rotas* para esse módulo usando o `APIRouter`.
 
 ### Importar `APIRouter`
 
-você o importa e cria uma "instância" da mesma maneira que faria com a classe `readyapi`:
+você o importa e cria uma "instância" da mesma maneira que faria com a classe `ReadyAPI`:
 
 ```Python hl_lines="1  3" title="app/routers/users.py"
 {!../../docs_src/bigger_applications/app/routers/users.py!}
@@ -93,13 +93,13 @@ você o importa e cria uma "instância" da mesma maneira que faria com a classe 
 
 E então você o utiliza para declarar suas *operações de rota*.
 
-Utilize-o da mesma maneira que utilizaria a classe  `readyapi`:
+Utilize-o da mesma maneira que utilizaria a classe  `ReadyAPI`:
 
 ```Python hl_lines="6  11  16" title="app/routers/users.py"
 {!../../docs_src/bigger_applications/app/routers/users.py!}
 ```
 
-Você pode pensar em `APIRouter` como uma classe "mini `readyapi`".
+Você pode pensar em `APIRouter` como uma classe "mini `ReadyAPI`".
 
 Todas as mesmas opções são suportadas.
 
@@ -111,7 +111,7 @@ Neste exemplo, a variável é chamada de `router`, mas você pode nomeá-la como
 
 ///
 
-Vamos incluir este `APIRouter` na aplicação principal `readyapi`, mas primeiro, vamos verificar as dependências e outro `APIRouter`.
+Vamos incluir este `APIRouter` na aplicação principal `ReadyAPI`, mas primeiro, vamos verificar as dependências e outro `APIRouter`.
 
 ## Dependências
 
@@ -230,7 +230,7 @@ Ter `dependências` no `APIRouter` pode ser usado, por exemplo, para exigir aute
 
 /// check
 
-Os parâmetros `prefix`, `tags`, `responses` e `dependencies` são (como em muitos outros casos) apenas um recurso do **readyapi** para ajudar a evitar duplicação de código.
+Os parâmetros `prefix`, `tags`, `responses` e `dependencies` são (como em muitos outros casos) apenas um recurso do **ReadyAPI** para ajudar a evitar duplicação de código.
 
 ///
 
@@ -327,19 +327,19 @@ E também terá ambas as respostas na documentação, uma para `404` e uma para 
 
 ///
 
-## O principal `readyapi`
+## O principal `ReadyAPI`
 
 Agora, vamos ver o módulo em `app/main.py`.
 
-Aqui é onde você importa e usa a classe `readyapi`.
+Aqui é onde você importa e usa a classe `ReadyAPI`.
 
 Este será o arquivo principal em seu aplicativo que une tudo.
 
 E como a maior parte de sua lógica agora viverá em seu próprio módulo específico, o arquivo principal será bem simples.
 
-### Importar `readyapi`
+### Importar `ReadyAPI`
 
-Você importa e cria uma classe `readyapi` normalmente.
+Você importa e cria uma classe `ReadyAPI` normalmente.
 
 E podemos até declarar [dependências globais](dependencies/global-dependencies.md){.internal-link target=_blank} que serão combinadas com as dependências para cada `APIRouter`:
 
@@ -436,7 +436,7 @@ E `items.router` contém o `APIRouter` dentro do arquivo `app/routers/items.py`.
 
 ///
 
-Com `app.include_router()` podemos adicionar cada `APIRouter` ao aplicativo principal `readyapi`.
+Com `app.include_router()` podemos adicionar cada `APIRouter` ao aplicativo principal `ReadyAPI`.
 
 Ele incluirá todas as rotas daquele roteador como parte dele.
 
@@ -493,7 +493,7 @@ Assim, por exemplo, outros projetos poderiam usar o mesmo `APIRouter` com um mé
 
 ### Incluir uma *operação de rota*
 
-Também podemos adicionar *operações de rota* diretamente ao aplicativo `readyapi`.
+Também podemos adicionar *operações de rota* diretamente ao aplicativo `ReadyAPI`.
 
 Aqui fazemos isso... só para mostrar que podemos 🤷:
 
@@ -547,10 +547,10 @@ Esse é um uso avançado que você pode não precisar, mas está lá caso precis
 
 ## Incluir um `APIRouter` em outro
 
-Da mesma forma que você pode incluir um `APIRouter` em um aplicativo `readyapi`, você pode incluir um `APIRouter` em outro `APIRouter` usando:
+Da mesma forma que você pode incluir um `APIRouter` em um aplicativo `ReadyAPI`, você pode incluir um `APIRouter` em outro `APIRouter` usando:
 
 ```Python
 router.include_router(other_router)
 ```
 
-Certifique-se de fazer isso antes de incluir `router` no aplicativo `readyapi`, para que as *operações de rota* de `other_router` também sejam incluídas.
+Certifique-se de fazer isso antes de incluir `router` no aplicativo `ReadyAPI`, para que as *operações de rota* de `other_router` também sejam incluídas.

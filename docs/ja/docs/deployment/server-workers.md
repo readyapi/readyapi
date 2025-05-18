@@ -20,7 +20,7 @@
 /// info
 
 <!-- NOTE: the current version of docker.md is outdated compared to English one.  -->
-DockerやKubernetesなどのコンテナを使用している場合は、次の章で詳しく説明します： [コンテナ内のreadyapi - Docker](docker.md){.internal-link target=_blank}
+DockerやKubernetesなどのコンテナを使用している場合は、次の章で詳しく説明します： [コンテナ内のReadyAPI - Docker](docker.md){.internal-link target=_blank}
 
 特に**Kubernetes**上で実行する場合は、おそらく**Gunicornを使用せず**、**コンテナごとに単一のUvicornプロセス**を実行することになりますが、それについてはこの章の後半で説明します。
 
@@ -28,7 +28,7 @@ DockerやKubernetesなどのコンテナを使用している場合は、次の�
 
 ## GunicornによるUvicornのワーカー・プロセスの管理
 
-**Gunicorn**は**WSGI標準**のアプリケーションサーバーです。このことは、GunicornはFlaskやDjangoのようなアプリケーションにサービスを提供できることを意味します。Gunicornそれ自体は**readyapi**と互換性がないですが、というのもreadyapiは最新の**<a href="https://asgi.readthedocs.io/en/latest/" class="external-link" target="_blank">ASGI 標準</a>**を使用しているためです。
+**Gunicorn**は**WSGI標準**のアプリケーションサーバーです。このことは、GunicornはFlaskやDjangoのようなアプリケーションにサービスを提供できることを意味します。Gunicornそれ自体は**ReadyAPI**と互換性がないですが、というのもReadyAPIは最新の**<a href="https://asgi.readthedocs.io/en/latest/" class="external-link" target="_blank">ASGI 標準</a>**を使用しているためです。
 
 しかし、Gunicornは**プロセスマネージャー**として動作し、ユーザーが特定の**ワーカー・プロセスクラス**を使用するように指示することができます。するとGunicornはそのクラスを使い1つ以上の**ワーカー・プロセス**を開始します。
 
@@ -36,7 +36,7 @@ DockerやKubernetesなどのコンテナを使用している場合は、次の�
 
 この組み合わせで、Gunicornは**プロセスマネージャー**として動作し、**ポート**と**IP**をリッスンします。そして、**Uvicornクラス**を実行しているワーカー・プロセスに通信を**転送**します。
 
-そして、Gunicorn互換の**Uvicornワーカー**クラスが、readyapiが使えるように、Gunicornから送られてきたデータをASGI標準に変換する役割を担います。
+そして、Gunicorn互換の**Uvicornワーカー**クラスが、ReadyAPIが使えるように、Gunicornから送られてきたデータをASGI標準に変換する役割を担います。
 
 ## GunicornとUvicornをインストールする
 
@@ -86,7 +86,7 @@ $ gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --b
 
 それぞれのオプションの意味を見てみましょう：
 
-* `main:app`： `main`は"`main`"という名前のPythonモジュール、つまりファイル`main.py`を意味します。そして `app` は **readyapi** アプリケーションの変数名です。
+* `main:app`： `main`は"`main`"という名前のPythonモジュール、つまりファイル`main.py`を意味します。そして `app` は **ReadyAPI** アプリケーションの変数名です。
     * main:app`はPythonの`import`文と同じようなものだと想像できます：
 
         ```Python
@@ -170,7 +170,7 @@ $ uvicorn main:app --host 0.0.0.0 --port 8080 --workers 4
 
 ## コンテナとDocker
 <!-- NOTE: the current version of docker.md is outdated compared to English one.  -->
-次章の[コンテナ内のreadyapi - Docker](docker.md){.internal-link target=_blank}では、その他の**デプロイのコンセプト**を扱うために実施するであろう戦略をいくつか紹介します。
+次章の[コンテナ内のReadyAPI - Docker](docker.md){.internal-link target=_blank}では、その他の**デプロイのコンセプト**を扱うために実施するであろう戦略をいくつか紹介します。
 
 また、**GunicornとUvicornワーカー**を含む**公式Dockerイメージ**と、簡単なケースに役立ついくつかのデフォルト設定も紹介します。
 
@@ -182,4 +182,4 @@ Uvicornワーカーを使ったプロセスマネージャとして**Gunicorn**�
 
 これらのツールやアイデアは、**あなた自身のデプロイシステム**をセットアップしながら、他のデプロイコンセプトを自分で行う場合にも使えます。
 
-次の章では、コンテナ（DockerやKubernetesなど）を使った**readyapi**について学んでいきましょう。これらのツールには、他の**デプロイのコンセプト**も解決する簡単な方法があることがわかるでしょう。✨
+次の章では、コンテナ（DockerやKubernetesなど）を使った**ReadyAPI**について学んでいきましょう。これらのツールには、他の**デプロイのコンセプト**も解決する簡単な方法があることがわかるでしょう。✨

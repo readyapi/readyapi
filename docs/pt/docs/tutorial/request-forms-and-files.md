@@ -28,7 +28,7 @@ E você pode declarar alguns dos arquivos como `bytes` e alguns como `UploadFile
 
 Você pode declarar vários parâmetros `File` e `Form` em uma *operação de caminho*, mas não é possível declarar campos `Body` para receber como JSON, pois a requisição terá o corpo codificado usando `multipart/form-data` ao invés de `application/json`.
 
-Isso não é uma limitação do **readyapi** , é parte do protocolo HTTP.
+Isso não é uma limitação do **ReadyAPI** , é parte do protocolo HTTP.
 
 ///
 

@@ -16,7 +16,7 @@ Isso pode ser útil se, por exemplo, você mora em um país que restringe alguma
 
 O primeiro passo é desativar a documentação automática, pois por padrão, ela usa o CDN padrão.
 
-Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readyapi`:
+Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyAPI`:
 
 {* ../../docs_src/custom_docs_ui/tutorial001.py hl[8] *}
 
@@ -24,7 +24,7 @@ Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readya
 
 Agora você pode criar as *operações de rota* para a documentação personalizada.
 
-Você pode reutilizar as funções internas do readyapi para criar as páginas HTML para a documentação e passar os argumentos necessários:
+Você pode reutilizar as funções internas do ReadyAPI para criar as páginas HTML para a documentação e passar os argumentos necessários:
 
 * `openapi_url`: a URL onde a página HTML para a documentação pode obter o esquema OpenAPI para a sua API. Você pode usar aqui o atributo `app.openapi_url`.
 * `title`: o título da sua API.
@@ -60,7 +60,7 @@ Agora, você deve ser capaz de ir para a documentação em <a href="http://127.0
 
 Hospedar o JavaScript e o CSS pode ser útil se, por exemplo, você precisa que seu aplicativo continue funcionando mesmo offline, sem acesso aberto à Internet, ou em uma rede local.
 
-Aqui você verá como providenciar esses arquivos você mesmo, no mesmo aplicativo readyapi, e configurar a documentação para usá-los.
+Aqui você verá como providenciar esses arquivos você mesmo, no mesmo aplicativo ReadyAPI, e configurar a documentação para usá-los.
 
 ### Estrutura de Arquivos do Projeto
 
@@ -142,7 +142,7 @@ Agora, podemos configurar o aplicativo para usar esses arquivos estáticos para 
 
 Da mesma forma que ao usar um CDN personalizado, o primeiro passo é desativar a documentação automática, pois ela usa o CDN padrão.
 
-Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readyapi`:
+Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `ReadyAPI`:
 
 {* ../../docs_src/custom_docs_ui/tutorial002.py hl[9] *}
 
@@ -150,7 +150,7 @@ Para desativá-los, defina suas URLs como `None` ao criar seu aplicativo `readya
 
 E da mesma forma que com um CDN personalizado, agora você pode criar as *operações de rota* para a documentação personalizada.
 
-Novamente, você pode reutilizar as funções internas do readyapi para criar as páginas HTML para a documentação e passar os argumentos necessários:
+Novamente, você pode reutilizar as funções internas do ReadyAPI para criar as páginas HTML para a documentação e passar os argumentos necessários:
 
 * `openapi_url`: a URL onde a página HTML para a documentação pode obter o esquema OpenAPI para a sua API. Você pode usar aqui o atributo `app.openapi_url`.
 * `title`: o título da sua API.

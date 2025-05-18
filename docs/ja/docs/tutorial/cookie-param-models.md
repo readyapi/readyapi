@@ -6,7 +6,7 @@
 
 /// note | 備考
 
-この機能は、readyapiのバージョン `0.115.0` からサポートされています。🤓
+この機能は、ReadyAPIのバージョン `0.115.0` からサポートされています。🤓
 
 ///
 
@@ -22,7 +22,7 @@
 
 {* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
-**readyapi**は、リクエストの**クッキー**から**それぞれのフィールド**のデータを**抽出**し、定義された**Pydanticモデル**を提供します。
+**ReadyAPI**は、リクエストの**クッキー**から**それぞれのフィールド**のデータを**抽出**し、定義された**Pydanticモデル**を提供します。
 
 ## ドキュメントの確認
 
@@ -74,4 +74,4 @@ Pydanticのモデルの Configuration を利用して、 `extra` フィールド
 
 ## まとめ
 
-**readyapi**では、<abbr title="帰ってしまう前に最後のクッキーをどうぞ。🍪 （原文: Have a last cookie before you go. 🍪）">**クッキー**</abbr>を宣言するために、**Pydanticモデル**を使用できます。😎
+**ReadyAPI**では、<abbr title="帰ってしまう前に最後のクッキーをどうぞ。🍪 （原文: Have a last cookie before you go. 🍪）">**クッキー**</abbr>を宣言するために、**Pydanticモデル**を使用できます。😎

@@ -46,7 +46,7 @@ Pour exclure un *chemin* du schéma OpenAPI généré (et donc des systèmes de 
 
 Vous pouvez limiter le texte utilisé de la docstring d'une *fonction de chemin* qui sera affiché sur OpenAPI.
 
-L'ajout d'un `\f` (un caractère d'échappement "form feed") va permettre à **readyapi** de tronquer la sortie utilisée pour OpenAPI à ce stade.
+L'ajout d'un `\f` (un caractère d'échappement "form feed") va permettre à **ReadyAPI** de tronquer la sortie utilisée pour OpenAPI à ce stade.
 
 Il n'apparaîtra pas dans la documentation, mais d'autres outils (tel que Sphinx) pourront utiliser le reste.
 
@@ -64,7 +64,7 @@ Il y a un chapitre entier ici dans la documentation à ce sujet, vous pouvez le 
 
 ## OpenAPI supplémentaire
 
-Lorsque vous déclarez un *chemin* dans votre application, **readyapi** génère automatiquement les métadonnées concernant ce *chemin* à inclure dans le schéma OpenAPI.
+Lorsque vous déclarez un *chemin* dans votre application, **ReadyAPI** génère automatiquement les métadonnées concernant ce *chemin* à inclure dans le schéma OpenAPI.
 
 /// note | Détails techniques
 
@@ -76,7 +76,7 @@ Il contient toutes les informations sur le *chemin* et est utilisé pour génér
 
 Il inclut les `tags`, `parameters`, `requestBody`, `responses`, etc.
 
-Ce schéma OpenAPI spécifique aux *operations* est normalement généré automatiquement par **readyapi**, mais vous pouvez également l'étendre.
+Ce schéma OpenAPI spécifique aux *operations* est normalement généré automatiquement par **ReadyAPI**, mais vous pouvez également l'étendre.
 
 /// tip | Astuce
 
@@ -102,7 +102,7 @@ Et dans le fichier openapi généré (`/openapi.json`), vous verrez également v
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -149,13 +149,13 @@ En utilisant cette même astuce, vous pouvez utiliser un modèle Pydantic pour d
 
 Et vous pouvez le faire même si le type de données dans la requête n'est pas au format JSON.
 
-Dans cet exemple, nous n'utilisons pas les fonctionnalités de readyapi pour extraire le schéma JSON des modèles Pydantic ni la validation automatique pour JSON. En fait, nous déclarons le type de contenu de la requête en tant que YAML, et non JSON :
+Dans cet exemple, nous n'utilisons pas les fonctionnalités de ReadyAPI pour extraire le schéma JSON des modèles Pydantic ni la validation automatique pour JSON. En fait, nous déclarons le type de contenu de la requête en tant que YAML, et non JSON :
 
 {* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
 
 Néanmoins, bien que nous n'utilisions pas la fonctionnalité par défaut, nous utilisons toujours un modèle Pydantic pour générer manuellement le schéma JSON pour les données que nous souhaitons recevoir en YAML.
 
-Ensuite, nous utilisons directement la requête et extrayons son contenu en tant qu'octets. Cela signifie que readyapi n'essaiera même pas d'analyser le payload de la requête en tant que JSON.
+Ensuite, nous utilisons directement la requête et extrayons son contenu en tant qu'octets. Cela signifie que ReadyAPI n'essaiera même pas d'analyser le payload de la requête en tant que JSON.
 
 Et nous analysons directement ce contenu YAML, puis nous utilisons à nouveau le même modèle Pydantic pour valider le contenu YAML :
 

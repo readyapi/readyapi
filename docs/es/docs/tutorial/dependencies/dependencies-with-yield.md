@@ -1,6 +1,6 @@
 # Dependencias con yield
 
-readyapi admite dependencias que realizan algunos <abbr title='sometimes also called "exit code", "cleanup code", "teardown code", "closing code", "context manager exit code", etc.'>pasos adicionales después de finalizar</abbr>.
+ReadyAPI admite dependencias que realizan algunos <abbr title='sometimes also called "exit code", "cleanup code", "teardown code", "closing code", "context manager exit code", etc.'>pasos adicionales después de finalizar</abbr>.
 
 Para hacer esto, usa `yield` en lugar de `return` y escribe los pasos adicionales (código) después.
 
@@ -17,9 +17,9 @@ Cualquier función que sea válida para usar con:
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager" class="external-link" target="_blank">`@contextlib.contextmanager`</a> o
 * <a href="https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager" class="external-link" target="_blank">`@contextlib.asynccontextmanager`</a>
 
-sería válida para usar como una dependencia en **readyapi**.
+sería válida para usar como una dependencia en **ReadyAPI**.
 
-De hecho, readyapi usa esos dos decoradores internamente.
+De hecho, ReadyAPI usa esos dos decoradores internamente.
 
 ///
 
@@ -43,7 +43,7 @@ El código posterior a la declaración `yield` se ejecuta después de crear el r
 
 Puedes usar funciones `async` o regulares.
 
-**readyapi** hará lo correcto con cada una, igual que con dependencias normales.
+**ReadyAPI** hará lo correcto con cada una, igual que con dependencias normales.
 
 ///
 
@@ -63,7 +63,7 @@ Del mismo modo, puedes usar `finally` para asegurarte de que los pasos de salida
 
 Puedes tener sub-dependencias y "árboles" de sub-dependencias de cualquier tamaño y forma, y cualquiera o todas ellas pueden usar `yield`.
 
-**readyapi** se asegurará de que el "código de salida" en cada dependencia con `yield` se ejecute en el orden correcto.
+**ReadyAPI** se asegurará de que el "código de salida" en cada dependencia con `yield` se ejecute en el orden correcto.
 
 Por ejemplo, `dependency_c` puede tener una dependencia de `dependency_b`, y `dependency_b` de `dependency_a`:
 
@@ -83,13 +83,13 @@ Y podrías tener una sola dependencia que requiera varias otras dependencias con
 
 Puedes tener cualquier combinación de dependencias que quieras.
 
-**readyapi** se asegurará de que todo se ejecute en el orden correcto.
+**ReadyAPI** se asegurará de que todo se ejecute en el orden correcto.
 
 /// note | Nota técnica
 
 Esto funciona gracias a los <a href="https://docs.python.org/3/library/contextlib.html" class="external-link" target="_blank">Context Managers</a> de Python.
 
-**readyapi** los utiliza internamente para lograr esto.
+**ReadyAPI** los utiliza internamente para lograr esto.
 
 ///
 
@@ -113,7 +113,7 @@ Una alternativa que podrías usar para capturar excepciones (y posiblemente tamb
 
 ## Dependencias con `yield` y `except`
 
-Si capturas una excepción usando `except` en una dependencia con `yield` y no la lanzas nuevamente (o lanzas una nueva excepción), readyapi no podrá notar que hubo una excepción, al igual que sucedería con Python normal:
+Si capturas una excepción usando `except` en una dependencia con `yield` y no la lanzas nuevamente (o lanzas una nueva excepción), ReadyAPI no podrá notar que hubo una excepción, al igual que sucedería con Python normal:
 
 {* ../../docs_src/dependencies/tutorial008c_an_py39.py hl[15:16] *}
 
@@ -190,23 +190,23 @@ Si lanzas alguna excepción, será pasada a las dependencias con yield, incluyen
 
 Probablemente no necesites estos detalles técnicos, puedes omitir esta sección y continuar abajo.
 
-Estos detalles son útiles principalmente si estabas usando una versión de readyapi anterior a 0.106.0 y usabas recursos de dependencias con `yield` en tareas en background.
+Estos detalles son útiles principalmente si estabas usando una versión de ReadyAPI anterior a 0.106.0 y usabas recursos de dependencias con `yield` en tareas en background.
 
 ///
 
 ### Dependencias con `yield` y `except`, Detalles Técnicos
 
-Antes de readyapi 0.110.0, si usabas una dependencia con `yield`, y luego capturabas una excepción con `except` en esa dependencia, y no volvías a lanzar la excepción, la excepción se lanzaría automáticamente/transmitiría a cualquier manejador de excepciones o al manejador de errores interno del servidor.
+Antes de ReadyAPI 0.110.0, si usabas una dependencia con `yield`, y luego capturabas una excepción con `except` en esa dependencia, y no volvías a lanzar la excepción, la excepción se lanzaría automáticamente/transmitiría a cualquier manejador de excepciones o al manejador de errores interno del servidor.
 
 Esto se cambió en la versión 0.110.0 para corregir el consumo no gestionado de memoria de excepciones transmitidas sin un manejador (errores internos del servidor), y para que sea consistente con el comportamiento del código regular de Python.
 
 ### Tareas en Background y Dependencias con `yield`, Detalles Técnicos
 
-Antes de readyapi 0.106.0, lanzar excepciones después de `yield` no era posible, el código de salida en dependencias con `yield` se ejecutaba *después* de que el response se enviara, por lo que los [Manejadores de Excepciones](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} ya se habrían ejecutado.
+Antes de ReadyAPI 0.106.0, lanzar excepciones después de `yield` no era posible, el código de salida en dependencias con `yield` se ejecutaba *después* de que el response se enviara, por lo que los [Manejadores de Excepciones](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} ya se habrían ejecutado.
 
 Esto se diseñó de esta manera principalmente para permitir usar los mismos objetos "extraídos" por dependencias dentro de tareas en background, porque el código de salida se ejecutaría después de que las tareas en background terminaran.
 
-Sin embargo, ya que esto significaría esperar a que el response viaje a través de la red mientras se retiene innecesariamente un recurso en una dependencia con yield (por ejemplo, una conexión a base de datos), esto se cambió en readyapi 0.106.0.
+Sin embargo, ya que esto significaría esperar a que el response viaje a través de la red mientras se retiene innecesariamente un recurso en una dependencia con yield (por ejemplo, una conexión a base de datos), esto se cambió en ReadyAPI 0.106.0.
 
 /// tip | Consejo
 
@@ -238,7 +238,7 @@ Internamente, `open("./somefile.txt")` crea un objeto llamado "Context Manager".
 
 Cuando el bloque `with` termina, se asegura de cerrar el archivo, incluso si hubo excepciones.
 
-Cuando creas una dependencia con `yield`, **readyapi** creará internamente un context manager para ella y lo combinará con algunas otras herramientas relacionadas.
+Cuando creas una dependencia con `yield`, **ReadyAPI** creará internamente un context manager para ella y lo combinará con algunas otras herramientas relacionadas.
 
 ### Usando context managers en dependencias con `yield`
 
@@ -246,13 +246,13 @@ Cuando creas una dependencia con `yield`, **readyapi** creará internamente un c
 
 Esto es, más o menos, una idea "avanzada".
 
-Si apenas estás comenzando con **readyapi**, podrías querer omitirlo por ahora.
+Si apenas estás comenzando con **ReadyAPI**, podrías querer omitirlo por ahora.
 
 ///
 
 En Python, puedes crear Context Managers <a href="https://docs.python.org/3/reference/datamodel.html#context-managers" class="external-link" target="_blank">creando una clase con dos métodos: `__enter__()` y `__exit__()`</a>.
 
-También puedes usarlos dentro de las dependencias de **readyapi** con `yield` usando
+También puedes usarlos dentro de las dependencias de **ReadyAPI** con `yield` usando
 `with` o `async with` en la función de dependencia:
 
 {* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
@@ -266,10 +266,10 @@ Otra manera de crear un context manager es con:
 
 usándolos para decorar una función con un solo `yield`.
 
-Eso es lo que **readyapi** usa internamente para dependencias con `yield`.
+Eso es lo que **ReadyAPI** usa internamente para dependencias con `yield`.
 
-Pero no tienes que usar los decoradores para las dependencias de readyapi (y no deberías).
+Pero no tienes que usar los decoradores para las dependencias de ReadyAPI (y no deberías).
 
-readyapi lo hará por ti internamente.
+ReadyAPI lo hará por ti internamente.
 
 ///

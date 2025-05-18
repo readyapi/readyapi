@@ -1,6 +1,6 @@
 # Middleware
 
-Você pode adicionar middleware à suas aplicações **readyapi**.
+Você pode adicionar middleware à suas aplicações **ReadyAPI**.
 
 Um "middleware" é uma função que manipula cada **requisição** antes de ser processada por qualquer *operação de rota* específica. E também cada **resposta** antes de retorná-la.
 
@@ -45,7 +45,7 @@ Mas se você tiver cabeçalhos personalizados desejando que um cliente em um nav
 
 Você também pode usar `from starlette.requests import Request`.
 
-**readyapi** fornece isso como uma conveniência para você, o desenvolvedor. Mas vem diretamente da Starlette.
+**ReadyAPI** fornece isso como uma conveniência para você, o desenvolvedor. Mas vem diretamente da Starlette.
 
 ///
 

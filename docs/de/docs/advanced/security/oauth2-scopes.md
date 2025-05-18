@@ -1,6 +1,6 @@
 # OAuth2-Scopes
 
-Sie können OAuth2-<abbr title="Geltungsbereiche">Scopes</abbr> direkt in **readyapi** verwenden, sie sind nahtlos integriert.
+Sie können OAuth2-<abbr title="Geltungsbereiche">Scopes</abbr> direkt in **ReadyAPI** verwenden, sie sind nahtlos integriert.
 
 Das ermöglicht es Ihnen, ein feingranuliertes Berechtigungssystem nach dem OAuth2-Standard in Ihre OpenAPI-Anwendung (und deren API-Dokumentation) zu integrieren.
 
@@ -8,7 +8,7 @@ OAuth2 mit Scopes ist der Mechanismus, der von vielen großen Authentifizierungs
 
 Jedes Mal, wenn Sie sich mit Facebook, Google, GitHub, Microsoft oder Twitter anmelden („log in with“), verwendet die entsprechende Anwendung OAuth2 mit Scopes.
 
-In diesem Abschnitt erfahren Sie, wie Sie Authentifizierung und Autorisierung mit demselben OAuth2, mit Scopes in Ihrer **readyapi**-Anwendung verwalten.
+In diesem Abschnitt erfahren Sie, wie Sie Authentifizierung und Autorisierung mit demselben OAuth2, mit Scopes in Ihrer **ReadyAPI**-Anwendung verwalten.
 
 /// warning | Achtung
 
@@ -120,7 +120,7 @@ In diesem Fall erfordert sie den Scope `me` (sie könnte mehr als einen Scope er
 
 Sie müssen nicht unbedingt an verschiedenen Stellen verschiedene Scopes hinzufügen.
 
-Wir tun dies hier, um zu demonstrieren, wie **readyapi** auf verschiedenen Ebenen deklarierte Scopes verarbeitet.
+Wir tun dies hier, um zu demonstrieren, wie **ReadyAPI** auf verschiedenen Ebenen deklarierte Scopes verarbeitet.
 
 ///
 
@@ -130,7 +130,7 @@ Wir tun dies hier, um zu demonstrieren, wie **readyapi** auf verschiedenen Ebene
 
 `Security` ist tatsächlich eine Unterklasse von `Depends` und hat nur noch einen zusätzlichen Parameter, den wir später kennenlernen werden.
 
-Durch die Verwendung von `Security` anstelle von `Depends` weiß **readyapi** jedoch, dass es Sicherheits-Scopes deklarieren, intern verwenden und die API mit OpenAPI dokumentieren kann.
+Durch die Verwendung von `Security` anstelle von `Depends` weiß **ReadyAPI** jedoch, dass es Sicherheits-Scopes deklarieren, intern verwenden und die API mit OpenAPI dokumentieren kann.
 
 Wenn Sie jedoch `Query`, `Path`, `Depends`, `Security` und andere von `readyapi` importieren, handelt es sich tatsächlich um Funktionen, die spezielle Klassen zurückgeben.
 
@@ -267,7 +267,7 @@ Aber am Ende implementieren sie denselben OAuth2-Standard.
 
 ///
 
-**readyapi** enthält Werkzeuge für alle diese OAuth2-Authentifizierungs-Flows in `readyapi.security.oauth2`.
+**ReadyAPI** enthält Werkzeuge für alle diese OAuth2-Authentifizierungs-Flows in `readyapi.security.oauth2`.
 
 ## `Security` in Dekorator-`dependencies`
 

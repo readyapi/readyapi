@@ -9,15 +9,15 @@ Daten nehmend von:
 * Cookies.
 * usw.
 
-Und indem Sie das tun, validiert **readyapi** diese Daten, konvertiert sie und generiert automatisch Dokumentation für Ihre API.
+Und indem Sie das tun, validiert **ReadyAPI** diese Daten, konvertiert sie und generiert automatisch Dokumentation für Ihre API.
 
 Es gibt jedoch Situationen, in denen Sie möglicherweise direkt auf das `Request`-Objekt zugreifen müssen.
 
 ## Details zum `Request`-Objekt
 
-Da **readyapi** unter der Haube eigentlich **Starlette** ist, mit einer Ebene von mehreren Tools darüber, können Sie Starlette's <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a>-Objekt direkt verwenden, wenn Sie es benötigen.
+Da **ReadyAPI** unter der Haube eigentlich **Starlette** ist, mit einer Ebene von mehreren Tools darüber, können Sie Starlette's <a href="https://www.starlette.io/requests/" class="external-link" target="_blank">`Request`</a>-Objekt direkt verwenden, wenn Sie es benötigen.
 
-Das bedeutet allerdings auch, dass, wenn Sie Daten direkt vom `Request`-Objekt nehmen (z. B. dessen Body lesen), diese von readyapi nicht validiert, konvertiert oder dokumentiert werden (mit OpenAPI, für die automatische API-Benutzeroberfläche).
+Das bedeutet allerdings auch, dass, wenn Sie Daten direkt vom `Request`-Objekt nehmen (z. B. dessen Body lesen), diese von ReadyAPI nicht validiert, konvertiert oder dokumentiert werden (mit OpenAPI, für die automatische API-Benutzeroberfläche).
 
 Obwohl jeder andere normal deklarierte Parameter (z. B. der Body, mit einem Pydantic-Modell) dennoch validiert, konvertiert, annotiert, usw. werden würde.
 
@@ -31,7 +31,7 @@ Dazu müssen Sie direkt auf den Request zugreifen.
 
 {* ../../docs_src/using_request_directly/tutorial001.py hl[1,7:8] *}
 
-Durch die Deklaration eines *Pfadoperation-Funktionsparameters*, dessen Typ der `Request` ist, weiß **readyapi**, dass es den `Request` diesem Parameter übergeben soll.
+Durch die Deklaration eines *Pfadoperation-Funktionsparameters*, dessen Typ der `Request` ist, weiß **ReadyAPI**, dass es den `Request` diesem Parameter übergeben soll.
 
 /// tip | Tipp
 
@@ -51,6 +51,6 @@ Weitere Details zum <a href="https://www.starlette.io/requests/" class="external
 
 Sie können auch `from starlette.requests import Request` verwenden.
 
-**readyapi** stellt es direkt zur Verfügung, als Komfort für Sie, den Entwickler. Es kommt aber direkt von Starlette.
+**ReadyAPI** stellt es direkt zur Verfügung, als Komfort für Sie, den Entwickler. Es kommt aber direkt von Starlette.
 
 ///

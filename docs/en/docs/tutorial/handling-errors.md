@@ -65,7 +65,7 @@ When raising an `HTTPException`, you can pass any value that can be converted to
 
 You could pass a `dict`, a `list`, etc.
 
-They are handled automatically by **readyapi** and converted to JSON.
+They are handled automatically by **ReadyAPI** and converted to JSON.
 
 ///
 
@@ -85,7 +85,7 @@ You can add custom exception handlers with <a href="https://www.starlette.io/exc
 
 Let's say you have a custom exception `UnicornException` that you (or a library you use) might `raise`.
 
-And you want to handle this exception globally with readyapi.
+And you want to handle this exception globally with ReadyAPI.
 
 You could add a custom exception handler with `@app.exception_handler()`:
 
@@ -105,13 +105,13 @@ So, you will receive a clean error, with an HTTP status code of `418` and a JSON
 
 You could also use `from starlette.requests import Request` and `from starlette.responses import JSONResponse`.
 
-**readyapi** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `Request`.
+**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with `Request`.
 
 ///
 
 ## Override the default exception handlers
 
-**readyapi** has some default exception handlers.
+**ReadyAPI** has some default exception handlers.
 
 These handlers are in charge of returning the default JSON responses when you `raise` an `HTTPException` and when the request has invalid data.
 
@@ -119,7 +119,7 @@ You can override these exception handlers with your own.
 
 ### Override request validation exceptions
 
-When a request contains invalid data, **readyapi** internally raises a `RequestValidationError`.
+When a request contains invalid data, **ReadyAPI** internally raises a `RequestValidationError`.
 
 And it also includes a default exception handler for it.
 
@@ -164,7 +164,7 @@ These are technical details that you might skip if it's not important for you no
 
 `RequestValidationError` is a sub-class of Pydantic's <a href="https://docs.pydantic.dev/latest/concepts/models/#error-handling" class="external-link" target="_blank">`ValidationError`</a>.
 
-**readyapi** uses it so that, if you use a Pydantic model in `response_model`, and your data has an error, you will see the error in your log.
+**ReadyAPI** uses it so that, if you use a Pydantic model in `response_model`, and your data has an error, you will see the error in your log.
 
 But the client/user will not see it. Instead, the client will receive an "Internal Server Error" with an HTTP status code `500`.
 
@@ -184,7 +184,7 @@ For example, you could want to return a plain text response instead of JSON for 
 
 You could also use `from starlette.responses import PlainTextResponse`.
 
-**readyapi** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
+**ReadyAPI** provides the same `starlette.responses` as `readyapi.responses` just as a convenience for you, the developer. But most of the available responses come directly from Starlette.
 
 ///
 
@@ -226,15 +226,15 @@ You will receive a response telling you that the data is invalid containing the 
 }
 ```
 
-#### readyapi's `HTTPException` vs Starlette's `HTTPException`
+#### ReadyAPI's `HTTPException` vs Starlette's `HTTPException`
 
-**readyapi** has its own `HTTPException`.
+**ReadyAPI** has its own `HTTPException`.
 
-And **readyapi**'s `HTTPException` error class inherits from Starlette's `HTTPException` error class.
+And **ReadyAPI**'s `HTTPException` error class inherits from Starlette's `HTTPException` error class.
 
-The only difference is that **readyapi**'s `HTTPException` accepts any JSON-able data for the `detail` field, while Starlette's `HTTPException` only accepts strings for it.
+The only difference is that **ReadyAPI**'s `HTTPException` accepts any JSON-able data for the `detail` field, while Starlette's `HTTPException` only accepts strings for it.
 
-So, you can keep raising **readyapi**'s `HTTPException` as normally in your code.
+So, you can keep raising **ReadyAPI**'s `HTTPException` as normally in your code.
 
 But when you register an exception handler, you should register it for Starlette's `HTTPException`.
 
@@ -246,9 +246,9 @@ In this example, to be able to have both `HTTPException`s in the same code, Star
 from starlette.exceptions import HTTPException as StarletteHTTPException
 ```
 
-### Reuse **readyapi**'s exception handlers
+### Reuse **ReadyAPI**'s exception handlers
 
-If you want to use the exception along with the same default exception handlers from  **readyapi**, you can import and reuse the default exception handlers from `readyapi.exception_handlers`:
+If you want to use the exception along with the same default exception handlers from  **ReadyAPI**, you can import and reuse the default exception handlers from `readyapi.exception_handlers`:
 
 {* ../../docs_src/handling_errors/tutorial006.py hl[2:5,15,21] *}
 

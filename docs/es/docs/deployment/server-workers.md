@@ -19,7 +19,7 @@ Aquí te mostraré cómo usar **Uvicorn** con **worker processes** usando el com
 
 /// info | Información
 
-Si estás usando contenedores, por ejemplo con Docker o Kubernetes, te contaré más sobre eso en el próximo capítulo: [readyapi en Contenedores - Docker](docker.md){.internal-link target=_blank}.
+Si estás usando contenedores, por ejemplo con Docker o Kubernetes, te contaré más sobre eso en el próximo capítulo: [ReadyAPI en Contenedores - Docker](docker.md){.internal-link target=_blank}.
 
 En particular, cuando corras en **Kubernetes** probablemente **no** querrás usar workers y en cambio correr **un solo proceso de Uvicorn por contenedor**, pero te contaré sobre eso más adelante en ese capítulo.
 
@@ -49,9 +49,9 @@ $ <pre> <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-dec
  ╰──────────────────────╯
 
 <font color="#3465A4">INFO    </font> Importing module <font color="#4E9A06">main</font>
-<font color="#3465A4">INFO    </font> Found importable readyapi app
+<font color="#3465A4">INFO    </font> Found importable ReadyAPI app
 
- ╭─ <font color="#8AE234"><b>Importable readyapi app</b></font> ─╮
+ ╭─ <font color="#8AE234"><b>Importable ReadyAPI app</b></font> ─╮
  │                          │
  │  <span style="background-color:#272822"><font color="#FF4689">from</font></span><span style="background-color:#272822"><font color="#F8F8F2"> main </font></span><span style="background-color:#272822"><font color="#FF4689">import</font></span><span style="background-color:#272822"><font color="#F8F8F2"> app</font></span><span style="background-color:#272822">  </span>  │
  │                          │
@@ -59,7 +59,7 @@ $ <pre> <font color="#4E9A06">readyapi</font> run --workers 4 <u style="text-dec
 
 <font color="#3465A4">INFO    </font> Using import string <font color="#8AE234"><b>main:app</b></font>
 
- <font color="#4E9A06">╭─────────── readyapi CLI - Production mode ───────────╮</font>
+ <font color="#4E9A06">╭─────────── ReadyAPI CLI - Production mode ───────────╮</font>
  <font color="#4E9A06">│                                                     │</font>
  <font color="#4E9A06">│  Serving at: http://0.0.0.0:8000                    │</font>
  <font color="#4E9A06">│                                                     │</font>
@@ -139,7 +139,7 @@ De la lista de conceptos de despliegue de antes, usar workers ayudaría principa
 
 ## Contenedores y Docker
 
-En el próximo capítulo sobre [readyapi en Contenedores - Docker](docker.md){.internal-link target=_blank} te explicaré algunas estrategias que podrías usar para manejar los otros **conceptos de despliegue**.
+En el próximo capítulo sobre [ReadyAPI en Contenedores - Docker](docker.md){.internal-link target=_blank} te explicaré algunas estrategias que podrías usar para manejar los otros **conceptos de despliegue**.
 
 Te mostraré cómo **construir tu propia imagen desde cero** para ejecutar un solo proceso de Uvicorn. Es un proceso sencillo y probablemente es lo que querrías hacer al usar un sistema de gestión de contenedores distribuido como **Kubernetes**.
 
@@ -149,4 +149,4 @@ Puedes usar múltiples worker processes con la opción CLI `--workers` con los c
 
 Podrías usar estas herramientas e ideas si estás instalando **tu propio sistema de despliegue** mientras te encargas tú mismo de los otros conceptos de despliegue.
 
-Revisa el próximo capítulo para aprender sobre **readyapi** con contenedores (por ejemplo, Docker y Kubernetes). Verás que esas herramientas tienen formas sencillas de resolver los otros **conceptos de despliegue** también. ✨
+Revisa el próximo capítulo para aprender sobre **ReadyAPI** con contenedores (por ejemplo, Docker y Kubernetes). Verás que esas herramientas tienen formas sencillas de resolver los otros **conceptos de despliegue** también. ✨

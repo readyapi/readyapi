@@ -4,7 +4,7 @@
 
 此时，要使用 `root_path` 配置应用。
 
-`root_path` 是 ASGI 规范提供的机制，readyapi 就是基于此规范开发的（通过 Starlette）。
+`root_path` 是 ASGI 规范提供的机制，ReadyAPI 就是基于此规范开发的（通过 Starlette）。
 
 `root_path` 用于处理这些特定情况。
 
@@ -12,7 +12,7 @@
 
 ## 移除路径前缀的代理
 
-本例中，移除路径前缀的代理是指在代码中声明路径 `/app`，然后在应用顶层添加代理，把 **readyapi** 应用放在 `/api/v1` 路径下。
+本例中，移除路径前缀的代理是指在代码中声明路径 `/app`，然后在应用顶层添加代理，把 **ReadyAPI** 应用放在 `/api/v1` 路径下。
 
 本例的原始路径 `/app` 实际上是在 `/api/v1/app` 提供服务。
 
@@ -60,7 +60,7 @@ API 文档还需要 OpenAPI 概图声明 API `server` 位于 `/api/v1`（使用�
 }
 ```
 
-本例中的 `Proxy` 是 **Traefik**，`server` 是运行 readyapi 应用的 **Uvicorn**。
+本例中的 `Proxy` 是 **Traefik**，`server` 是运行 ReadyAPI 应用的 **Uvicorn**。
 
 ### 提供 `root_path`
 
@@ -115,13 +115,13 @@ $ uvicorn main:app --root-path /api/v1
 }
 ```
 
-### 在 readyapi 应用里设置 `root_path`
+### 在 ReadyAPI 应用里设置 `root_path`
 
-还有一种方案，如果不能提供 `--root-path` 或等效的命令行选项，则在创建 readyapi 应用时要设置 `root_path` 参数。
+还有一种方案，如果不能提供 `--root-path` 或等效的命令行选项，则在创建 ReadyAPI 应用时要设置 `root_path` 参数。
 
 {* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
 
-传递 `root_path` 给 `readyapi` 与传递 `--root-path` 命令行选项给 Uvicorn 或 Hypercorn 一样。
+传递 `root_path` 给 `ReadyAPI` 与传递 `--root-path` 命令行选项给 Uvicorn 或 Hypercorn 一样。
 
 ### 关于 `root_path`
 
@@ -281,7 +281,7 @@ $ uvicorn main:app --root-path /api/v1
 
 一切正常。 ✔️
 
-这是因为 readyapi 在 OpenAPI 里使用 `root_path` 提供的 URL 创建默认 `server`。
+这是因为 ReadyAPI 在 OpenAPI 里使用 `root_path` 提供的 URL 创建默认 `server`。
 
 ## 附加的服务器
 
@@ -291,11 +291,11 @@ $ uvicorn main:app --root-path /api/v1
 
 ///
 
-默认情况下，**readyapi** 使用 `root_path` 的链接在 OpenAPI 概图中创建 `server`。
+默认情况下，**ReadyAPI** 使用 `root_path` 的链接在 OpenAPI 概图中创建 `server`。
 
 但也可以使用其它备选 `servers`，例如，需要同一个 API 文档与 staging 和生产环境交互。
 
-如果传递自定义 `servers` 列表，并有 `root_path`（ 因为 API 使用了代理），**readyapi** 会在列表开头使用这个 `root_path` 插入**服务器**。
+如果传递自定义 `servers` 列表，并有 `root_path`（ 因为 API 使用了代理），**ReadyAPI** 会在列表开头使用这个 `root_path` 插入**服务器**。
 
 例如：
 
@@ -344,7 +344,7 @@ API 文档与所选的服务器进行交互。
 
 ### 从 `root_path` 禁用自动服务器
 
-如果不想让 **readyapi** 包含使用 `root_path` 的自动服务器，则要使用参数 `root_path_in_servers=False`：
+如果不想让 **ReadyAPI** 包含使用 `root_path` 的自动服务器，则要使用参数 `root_path_in_servers=False`：
 
 {* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
 
@@ -354,4 +354,4 @@ API 文档与所选的服务器进行交互。
 
 如需挂载子应用（详见 [子应用 - 挂载](sub-applications.md){.internal-link target=_blank}），也要通过 `root_path` 使用代理，这与正常应用一样，别无二致。
 
-readyapi 在内部使用 `root_path`，因此子应用也可以正常运行。✨
+ReadyAPI 在内部使用 `root_path`，因此子应用也可以正常运行。✨

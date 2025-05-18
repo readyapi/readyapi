@@ -48,7 +48,7 @@ To declare form bodies, you need to use `Form` explicitly, because without it th
 
 The way HTML forms (`<form></form>`) sends the data to the server normally uses a "special" encoding for that data, it's different from JSON.
 
-**readyapi** will make sure to read that data from the right place instead of JSON.
+**ReadyAPI** will make sure to read that data from the right place instead of JSON.
 
 /// note | Technical Details
 
@@ -64,7 +64,7 @@ If you want to read more about these encodings and form fields, head to the <a h
 
 You can declare multiple `Form` parameters in a *path operation*, but you can't also declare `Body` fields that you expect to receive as JSON, as the request will have the body encoded using `application/x-www-form-urlencoded` instead of `application/json`.
 
-This is not a limitation of **readyapi**, it's part of the HTTP protocol.
+This is not a limitation of **ReadyAPI**, it's part of the HTTP protocol.
 
 ///
 

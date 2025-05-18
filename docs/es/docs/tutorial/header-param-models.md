@@ -6,7 +6,7 @@ Esto te permitirá **reutilizar el modelo** en **múltiples lugares** y también
 
 /// note | Nota
 
-Esto es compatible desde la versión `0.115.0` de readyapi. 🤓
+Esto es compatible desde la versión `0.115.0` de ReadyAPI. 🤓
 
 ///
 
@@ -16,7 +16,7 @@ Declara los **parámetros de header** que necesitas en un **modelo Pydantic**, y
 
 {* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
-**readyapi** **extraerá** los datos para **cada campo** de los **headers** en el request y te dará el modelo Pydantic que definiste.
+**ReadyAPI** **extraerá** los datos para **cada campo** de los **headers** en el request y te dará el modelo Pydantic que definiste.
 
 ## Revisa la Documentación
 
@@ -53,4 +53,4 @@ Por ejemplo, si el cliente intenta enviar un header `tool` con un valor de `plum
 
 ## Resumen
 
-Puedes usar **modelos Pydantic** para declarar **headers** en **readyapi**. 😎
+Puedes usar **modelos Pydantic** para declarar **headers** en **ReadyAPI**. 😎

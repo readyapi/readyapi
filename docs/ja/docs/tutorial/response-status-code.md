@@ -35,7 +35,7 @@
 
 いくつかのレスポンスコード（次のセクションを参照）は、レスポンスにボディがないことを示しています。
 
-readyapiはこれを知っていて、レスポンスボディがないというOpenAPIドキュメントを生成します。
+ReadyAPIはこれを知っていて、レスポンスボディがないというOpenAPIドキュメントを生成します。
 
 ///
 
@@ -92,7 +92,7 @@ HTTPでは、レスポンスの一部として３桁の数字のステータス�
 
 また、`from starlette import status`を使うこともできます。
 
-**readyapi** は、`開発者の利便性を考慮して、readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
+**ReadyAPI** は、`開発者の利便性を考慮して、readyapi.status`と同じ`starlette.status`を提供しています。しかし、これはStarletteから直接提供されています。
 
 ///
 

@@ -12,7 +12,7 @@ Para declarar un **request** body, usas modelos de <a href="https://docs.pydanti
 
 Para enviar datos, deberías usar uno de estos métodos: `POST` (el más común), `PUT`, `DELETE` o `PATCH`.
 
-Enviar un body con un request `GET` tiene un comportamiento indefinido en las especificaciones, no obstante, es soportado por readyapi, solo para casos de uso muy complejos/extremos.
+Enviar un body con un request `GET` tiene un comportamiento indefinido en las especificaciones, no obstante, es soportado por ReadyAPI, solo para casos de uso muy complejos/extremos.
 
 Como no se recomienda, la documentación interactiva con Swagger UI no mostrará la documentación para el body cuando se usa `GET`, y los proxies intermedios podrían no soportarlo.
 
@@ -64,7 +64,7 @@ Para añadirlo a tu *path operation*, decláralo de la misma manera que declaras
 
 ## Resultados
 
-Con solo esa declaración de tipo en Python, **readyapi** hará lo siguiente:
+Con solo esa declaración de tipo en Python, **ReadyAPI** hará lo siguiente:
 
 * Leer el body del request como JSON.
 * Convertir los tipos correspondientes (si es necesario).
@@ -131,7 +131,7 @@ Dentro de la función, puedes acceder a todos los atributos del objeto modelo di
 
 Puedes declarar parámetros de path y request body al mismo tiempo.
 
-**readyapi** reconocerá que los parámetros de función que coinciden con los parámetros de path deben ser **tomados del path**, y que los parámetros de función que se declaran como modelos de Pydantic deben ser **tomados del request body**.
+**ReadyAPI** reconocerá que los parámetros de función que coinciden con los parámetros de path deben ser **tomados del path**, y que los parámetros de función que se declaran como modelos de Pydantic deben ser **tomados del request body**.
 
 {* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
 
@@ -139,7 +139,7 @@ Puedes declarar parámetros de path y request body al mismo tiempo.
 
 También puedes declarar parámetros de **body**, **path** y **query**, todos al mismo tiempo.
 
-**readyapi** reconocerá cada uno de ellos y tomará los datos del lugar correcto.
+**ReadyAPI** reconocerá cada uno de ellos y tomará los datos del lugar correcto.
 
 {* ../../docs_src/body/tutorial004_py310.py hl[16] *}
 
@@ -151,9 +151,9 @@ Los parámetros de la función se reconocerán de la siguiente manera:
 
 /// note | Nota
 
-readyapi sabrá que el valor de `q` no es requerido debido al valor por defecto `= None`.
+ReadyAPI sabrá que el valor de `q` no es requerido debido al valor por defecto `= None`.
 
-El `str | None` (Python 3.10+) o `Union` en `Union[str, None]` (Python 3.8+) no es utilizado por readyapi para determinar que el valor no es requerido, sabrá que no es requerido porque tiene un valor por defecto de `= None`.
+El `str | None` (Python 3.10+) o `Union` en `Union[str, None]` (Python 3.8+) no es utilizado por ReadyAPI para determinar que el valor no es requerido, sabrá que no es requerido porque tiene un valor por defecto de `= None`.
 
 Pero agregar las anotaciones de tipos permitirá que tu editor te brinde un mejor soporte y detecte errores.
 

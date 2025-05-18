@@ -22,21 +22,21 @@
 
 ### 使用 `app.dependency_overrides` 属性
 
-对于这些用例，**readyapi** 应用支持 `app.dependency_overrides` 属性，该属性就是**字典**。
+对于这些用例，**ReadyAPI** 应用支持 `app.dependency_overrides` 属性，该属性就是**字典**。
 
 要在测试时覆盖原有依赖项，这个字典的键应当是原依赖项（函数），值是覆盖依赖项（另一个函数）。
 
-这样一来，**readyapi** 就会调用覆盖依赖项，不再调用原依赖项。
+这样一来，**ReadyAPI** 就会调用覆盖依赖项，不再调用原依赖项。
 
 {* ../../docs_src/dependency_testing/tutorial001_an_py310.py hl[26:27,30] *}
 
 /// tip | 提示
 
-**readyapi** 应用中的任何位置都可以实现覆盖依赖项。
+**ReadyAPI** 应用中的任何位置都可以实现覆盖依赖项。
 
 原依赖项可用于*路径操作函数*、*路径操作装饰器*（不需要返回值时）、`.include_router()` 调用等。
 
-readyapi 可以覆盖这些位置的依赖项。
+ReadyAPI 可以覆盖这些位置的依赖项。
 
 ///
 

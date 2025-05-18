@@ -2,11 +2,11 @@
 
 Você pode configurar alguns <a href="https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/" class="external-link" target="_blank">parâmetros extras da UI do Swagger</a>.
 
-Para configurá-los, passe o argumento `swagger_ui_parameters` ao criar o objeto de aplicativo `readyapi()` ou para a função `get_swagger_ui_html()`.
+Para configurá-los, passe o argumento `swagger_ui_parameters` ao criar o objeto de aplicativo `ReadyAPI()` ou para a função `get_swagger_ui_html()`.
 
 `swagger_ui_parameters` recebe um dicionário com as configurações passadas diretamente para o Swagger UI.
 
-O readyapi converte as configurações para **JSON** para torná-las compatíveis com JavaScript, pois é disso que o Swagger UI precisa.
+O ReadyAPI converte as configurações para **JSON** para torná-las compatíveis com JavaScript, pois é disso que o Swagger UI precisa.
 
 ## Desabilitar realce de sintaxe
 
@@ -36,7 +36,7 @@ Essa configuração alteraria o tema de cores de destaque de sintaxe:
 
 ## Alterar parâmetros de UI padrão do Swagger
 
-O readyapi inclui alguns parâmetros de configuração padrão apropriados para a maioria dos casos de uso.
+O ReadyAPI inclui alguns parâmetros de configuração padrão apropriados para a maioria dos casos de uso.
 
 Inclui estas configurações padrão:
 
@@ -56,7 +56,7 @@ Para ver todas as outras configurações possíveis que você pode usar, leia a 
 
 A interface do usuário do Swagger também permite que outras configurações sejam objetos **somente JavaScript** (por exemplo, funções JavaScript).
 
-O readyapi também inclui estas configurações de `predefinições` somente para JavaScript:
+O ReadyAPI também inclui estas configurações de `predefinições` somente para JavaScript:
 
 ```JavaScript
 presets: [

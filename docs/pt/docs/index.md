@@ -1,14 +1,14 @@
-# readyapi
+# ReadyAPI
 
 <style>
 .md-content .md-typeset h1 { display: none; }
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="readyapi"></a>
+  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
-    <em>Framework readyapi, alta performance, fácil de aprender, fácil de codar, pronto para produção</em>
+    <em>Framework ReadyAPI, alta performance, fácil de aprender, fácil de codar, pronto para produção</em>
 </p>
 <p align="center">
 <a href="https://github.com/readyapi/readyapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
@@ -33,7 +33,7 @@
 
 ---
 
-readyapi é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python, baseado nos _type hints_ padrões do Python.
+ReadyAPI é um moderno e rápido (alta performance) _framework web_ para construção de APIs com Python, baseado nos _type hints_ padrões do Python.
 
 Os recursos chave são:
 
@@ -67,25 +67,25 @@ Os recursos chave são:
 
 ## Opiniões
 
-"*[...] Estou usando **readyapi** muito esses dias. [...] Estou na verdade planejando utilizar ele em todos os times de **serviços _Machine Learning_ na Microsoft**. Alguns deles estão sendo integrados no _core_ do produto **Windows** e alguns produtos **Office**.*"
+"*[...] Estou usando **ReadyAPI** muito esses dias. [...] Estou na verdade planejando utilizar ele em todos os times de **serviços _Machine Learning_ na Microsoft**. Alguns deles estão sendo integrados no _core_ do produto **Windows** e alguns produtos **Office**.*"
 
 <div style="text-align: right; margin-right: 10%;">Kabir Khan - <strong>Microsoft</strong> <a href="https://github.com/readyapi/readyapi/pull/26" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Nós adotamos a biblioteca **readyapi** para iniciar um servidor **REST** que pode ser consultado para obter **previsões**. [para o Ludwig]_"
+"_Nós adotamos a biblioteca **ReadyAPI** para iniciar um servidor **REST** que pode ser consultado para obter **previsões**. [para o Ludwig]_"
 
 <div style="text-align: right; margin-right: 10%;">Piero Molino, Yaroslav Dudin, e Sai Sumanth Miryala - <strong>Uber</strong> <a href="https://eng.uber.com/ludwig-v0-2/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_A **Netflix** tem o prazer de anunciar o lançamento open-source do nosso framework de orquestração de **gerenciamento de crises**: **Dispatch**! [criado com **readyapi**]_"
+"_A **Netflix** tem o prazer de anunciar o lançamento open-source do nosso framework de orquestração de **gerenciamento de crises**: **Dispatch**! [criado com **ReadyAPI**]_"
 
 <div style="text-align: right; margin-right: 10%;">Kevin Glisson, Marc Vilanova, Forest Monsen - <strong>Netflix</strong> <a href="https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"*Estou extremamente entusiasmado com o **readyapi**. É tão divertido!*"
+"*Estou extremamente entusiasmado com o **ReadyAPI**. É tão divertido!*"
 
 <div style="text-align: right; margin-right: 10%;">Brian Okken - <strong><a href="https://pythonbytes.fm/episodes/show/123/time-to-right-the-py-wrongs?time_in_sec=855" target="_blank">Python Bytes</a> podcaster</strong> <a href="https://twitter.com/brianokken/status/1112220079972728832" target="_blank"><small>(ref)</small></a></div>
 
@@ -97,38 +97,38 @@ Os recursos chave são:
 
 ---
 
-"*Se você está procurando aprender um **_framework_ moderno** para construir aplicações _REST_, dê uma olhada no **readyapi** [...] É rápido, fácil de usar e fácil de aprender [...]*"
+"*Se você está procurando aprender um **_framework_ moderno** para construir aplicações _REST_, dê uma olhada no **ReadyAPI** [...] É rápido, fácil de usar e fácil de aprender [...]*"
 
-"*Nós trocamos nossas **APIs** por **readyapi** [...] Acredito que vocês gostarão dele [...]*"
+"*Nós trocamos nossas **APIs** por **ReadyAPI** [...] Acredito que vocês gostarão dele [...]*"
 
 <div style="text-align: right; margin-right: 10%;">Ines Montani - Matthew Honnibal - <strong>fundadores da <a href="https://explosion.ai" target="_blank">Explosion AI</a> - criadores da <a href="https://spacy.io" target="_blank">spaCy</a></strong> <a href="https://twitter.com/_inesmontani/status/1144173225322143744" target="_blank"><small>(ref)</small></a> - <a href="https://twitter.com/honnibal/status/1144031421859655680" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-"_Se alguém estiver procurando construir uma API Python para produção, eu recomendaria fortemente o **readyapi**. Ele é **lindamente projetado**, **simples de usar** e **altamente escalável**. Ele se tornou um **componente chave** para a nossa estratégia API first de desenvolvimento e está impulsionando diversas automações e serviços, como o nosso Virtual TAC Engineer._"
+"_Se alguém estiver procurando construir uma API Python para produção, eu recomendaria fortemente o **ReadyAPI**. Ele é **lindamente projetado**, **simples de usar** e **altamente escalável**. Ele se tornou um **componente chave** para a nossa estratégia API first de desenvolvimento e está impulsionando diversas automações e serviços, como o nosso Virtual TAC Engineer._"
 
 <div style="text-align: right; margin-right: 10%;">Deon Pillsbury - <strong>Cisco</strong> <a href="https://www.linkedin.com/posts/deonpillsbury_cisco-cx-python-activity-6963242628536487936-trAp/" target="_blank"><small>(ref)</small></a></div>
 
 ---
 
-## **Cligenius**, o readyapi das interfaces de linhas de comando
+## **Cligenius**, o ReadyAPI das interfaces de linhas de comando
 
 <a href="https://cligenius.khulnasoft.com" target="_blank"><img src="https://cligenius.khulnasoft.com/img/logo-margin/logo-margin-vector.svg" style="width: 20%;"></a>
 
 Se você estiver construindo uma aplicação <abbr title="Command Line Interface">_CLI_</abbr> para ser utilizada em um terminal ao invés de uma aplicação web, dê uma olhada no <a href="https://cligenius.khulnasoft.com/" class="external-link" target="_blank">**Cligenius**</a>.
 
-**Cligenius** é o irmão menor do readyapi. E seu propósito é ser o **readyapi das _CLIs_**. ⌨️ 🚀
+**Cligenius** é o irmão menor do ReadyAPI. E seu propósito é ser o **ReadyAPI das _CLIs_**. ⌨️ 🚀
 
 ## Requisitos
 
-readyapi está nos ombros de gigantes:
+ReadyAPI está nos ombros de gigantes:
 
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> para as partes web.
 * <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> para a parte de dados.
 
 ## Instalação
 
-Crie e ative um <a href="https://readyapi.khulnasoft.com/pt/virtual-environments/" class="external-link" target="_blank">ambiente virtual</a>, e então instale o readyapi:
+Crie e ative um <a href="https://readyapi.khulnasoft.com/pt/virtual-environments/" class="external-link" target="_blank">ambiente virtual</a>, e então instale o ReadyAPI:
 
 <div class="termy">
 
@@ -151,9 +151,9 @@ $ pip install "readyapi[standard]"
 ```Python
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -174,9 +174,9 @@ Se seu código utiliza `async` / `await`, use `async def`:
 ```Python hl_lines="9  14"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 
-app = readyapi()
+app = ReadyAPI()
 
 
 @app.get("/")
@@ -204,7 +204,7 @@ Rode o servidor com:
 ```console
 $ readyapi dev main.py
 
- ╭────────── readyapi CLI - Development mode ───────────╮
+ ╭────────── ReadyAPI CLI - Development mode ───────────╮
  │                                                     │
  │  Serving at: http://127.0.0.1:8000                  │
  │                                                     │
@@ -229,11 +229,11 @@ INFO:     Application startup complete.
 <details markdown="1">
 <summary>Sobre o comando <code>readyapi dev main.py</code>...</summary>
 
-O comando `readyapi dev` lê o seu arquivo `main.py`, identifica o aplicativo **readyapi** nele, e inicia um servidor usando o <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
+O comando `readyapi dev` lê o seu arquivo `main.py`, identifica o aplicativo **ReadyAPI** nele, e inicia um servidor usando o <a href="https://www.uvicorn.org" class="external-link" target="_blank">Uvicorn</a>.
 
 Por padrão, o `readyapi dev` iniciará com *auto-reload* habilitado para desenvolvimento local.
 
-Você pode ler mais sobre isso na <a href="https://readyapi.khulnasoft.com/pt/readyapi-cli/" target="_blank">documentação do readyapi CLI</a>.
+Você pode ler mais sobre isso na <a href="https://readyapi.khulnasoft.com/pt/readyapi-cli/" target="_blank">documentação do ReadyAPI CLI</a>.
 
 </details>
 
@@ -279,10 +279,10 @@ Declare o corpo utilizando tipos padrão Python, graças ao Pydantic.
 ```Python hl_lines="4  9-12  25-27"
 from typing import Union
 
-from readyapi import readyapi
+from readyapi import ReadyAPI
 from pydantic import BaseModel
 
-app = readyapi()
+app = ReadyAPI()
 
 
 class Item(BaseModel):
@@ -382,7 +382,7 @@ item: Item
 
 ---
 
-Voltando ao código do exemplo anterior, **readyapi** irá:
+Voltando ao código do exemplo anterior, **ReadyAPI** irá:
 
 * Validar que existe um `item_id` na rota para requisições `GET` e `PUT`.
 * Validar que `item_id` é do tipo `int` para requisições `GET` e `PUT`.
@@ -446,18 +446,18 @@ Para um exemplo mais completo incluindo mais recursos, veja <a href="https://rea
 
 ## Performance
 
-Testes de performance da _Independent TechEmpower_ mostram aplicações **readyapi** rodando sob Uvicorn como <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">um dos _frameworks_ Python mais rápidos disponíveis</a>, somente atrás de Starlette e Uvicorn (utilizados internamente pelo readyapi). (*)
+Testes de performance da _Independent TechEmpower_ mostram aplicações **ReadyAPI** rodando sob Uvicorn como <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">um dos _frameworks_ Python mais rápidos disponíveis</a>, somente atrás de Starlette e Uvicorn (utilizados internamente pelo ReadyAPI). (*)
 
 Para entender mais sobre performance, veja a seção <a href="https://readyapi.khulnasoft.com/pt/benchmarks/" class="internal-link" target="_blank">Comparações</a>.
 
 ## Dependências
 
-O readyapi depende do Pydantic e do Starlette.
+O ReadyAPI depende do Pydantic e do Starlette.
 
 
 ### Dependências `standard`
 
-Quando você instala o readyapi com `pip install "readyapi[standard]"`, ele vêm com o grupo `standard` (padrão) de dependências opcionais:
+Quando você instala o ReadyAPI com `pip install "readyapi[standard]"`, ele vêm com o grupo `standard` (padrão) de dependências opcionais:
 
 Utilizado pelo Pydantic:
 
@@ -469,7 +469,7 @@ Utilizado pelo Starlette:
 * <a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Obrigatório se você quer utilizar a configuração padrão de templates.
 * <a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Obrigatório se você deseja suporte a <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr> de formulário, com `request.form()`.
 
-Utilizado pelo readyapi / Starlette:
+Utilizado pelo ReadyAPI / Starlette:
 
 * <a href="https://www.uvicorn.org" target="_blank"><code>uvicorn</code></a> - para o servidor que carrega e serve a sua aplicação. Isto inclui `uvicorn[standard]`, que inclui algumas dependências (e.g. `uvloop`) necessárias para servir em alta performance.
 * `readyapi-cli` - que disponibiliza o comando `readyapi`.
@@ -487,7 +487,7 @@ Dependências opcionais adicionais do Pydantic:
 * <a href="https://docs.pydantic.dev/latest/usage/pydantic_settings/" target="_blank"><code>pydantic-settings</code></a> - para gerenciamento de configurações.
 * <a href="https://docs.pydantic.dev/latest/usage/types/extra_types/extra_types/" target="_blank"><code>pydantic-extra-types</code></a> - tipos extras para serem utilizados com o Pydantic.
 
-Dependências opcionais adicionais do readyapi:
+Dependências opcionais adicionais do ReadyAPI:
 
 * <a href="https://github.com/ijl/orjson" target="_blank"><code>orjson</code></a> - Obrigatório se você deseja utilizar o `ORJSONResponse`.
 * <a href="https://github.com/esnme/ultrajson" target="_blank"><code>ujson</code></a> - Obrigatório se você deseja utilizar o `UJSONResponse`.

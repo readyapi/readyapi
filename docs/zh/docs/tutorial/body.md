@@ -1,6 +1,6 @@
 # 请求体
 
-readyapi 使用**请求体**从客户端（例如浏览器）向 API 发送数据。
+ReadyAPI 使用**请求体**从客户端（例如浏览器）向 API 发送数据。
 
 **请求体**是客户端发送给 API 的数据。**响应体**是 API 发送给客户端的数据。
 
@@ -12,7 +12,7 @@ API 基本上肯定要发送**响应体**，但是客户端不一定发送**请�
 
 发送数据使用 `POST`（最常用）、`PUT`、`DELETE`、`PATCH` 等操作。
 
-规范中没有定义使用 `GET` 发送请求体的操作，但不管怎样，readyapi 也支持这种方式，只不过仅用于非常复杂或极端的用例。
+规范中没有定义使用 `GET` 发送请求体的操作，但不管怎样，ReadyAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。
 
 我们不建议使用 `GET`，因此，在 Swagger UI 交互文档中不会显示有关 `GET` 的内容，而且代理协议也不一定支持 `GET`。
 
@@ -64,7 +64,7 @@ API 基本上肯定要发送**响应体**，但是客户端不一定发送**请�
 
 ## 结论
 
-仅使用 Python 类型声明，**readyapi** 就可以：
+仅使用 Python 类型声明，**ReadyAPI** 就可以：
 
 * 以 JSON 形式读取请求体
 * （在必要时）把请求体转换为对应的类型
@@ -95,9 +95,9 @@ Pydantic 模型的 JSON 概图是 OpenAPI 生成的概图部件，可在 API 文
 
 <img src="/img/tutorial/body/image04.png">
 
-这并非偶然，整个 **readyapi** 框架都是围绕这种思路精心设计的。
+这并非偶然，整个 **ReadyAPI** 框架都是围绕这种思路精心设计的。
 
-并且，在 readyapi 的设计阶段，我们就已经进行了全面测试，以确保 readyapi 可以获得所有编辑器的支持。
+并且，在 ReadyAPI 的设计阶段，我们就已经进行了全面测试，以确保 ReadyAPI 可以获得所有编辑器的支持。
 
 我们还改进了 Pydantic，让它也支持这些功能。
 
@@ -129,17 +129,17 @@ Pydantic 模型的 JSON 概图是 OpenAPI 生成的概图部件，可在 API 文
 
 ## 请求体 + 路径参数
 
-**readyapi** 支持同时声明路径参数和请求体。
+**ReadyAPI** 支持同时声明路径参数和请求体。
 
-**readyapi** 能识别与**路径参数**匹配的函数参数，还能识别从**请求体**中获取的类型为 Pydantic 模型的函数参数。
+**ReadyAPI** 能识别与**路径参数**匹配的函数参数，还能识别从**请求体**中获取的类型为 Pydantic 模型的函数参数。
 
 {* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
 
 ## 请求体 + 路径参数 + 查询参数
 
-**readyapi** 支持同时声明**请求体**、**路径参数**和**查询参数**。
+**ReadyAPI** 支持同时声明**请求体**、**路径参数**和**查询参数**。
 
-**readyapi** 能够正确识别这三种参数，并从正确的位置获取数据。
+**ReadyAPI** 能够正确识别这三种参数，并从正确的位置获取数据。
 
 {* ../../docs_src/body/tutorial004_py310.py hl[16] *}
 
@@ -151,9 +151,9 @@ Pydantic 模型的 JSON 概图是 OpenAPI 生成的概图部件，可在 API 文
 
 /// note | 笔记
 
-因为默认值是 `None`， readyapi 会把 `q` 当作可选参数。
+因为默认值是 `None`， ReadyAPI 会把 `q` 当作可选参数。
 
-readyapi 不使用 `Optional[str]` 中的 `Optional`， 但 `Optional` 可以让编辑器提供更好的支持，并检测错误。
+ReadyAPI 不使用 `Optional[str]` 中的 `Optional`， 但 `Optional` 可以让编辑器提供更好的支持，并检测错误。
 
 ///
 

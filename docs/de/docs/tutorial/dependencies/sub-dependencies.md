@@ -4,7 +4,7 @@ Sie können Abhängigkeiten erstellen, die **Unterabhängigkeiten** haben.
 
 Diese können so **tief** verschachtelt sein, wie nötig.
 
-**readyapi** kümmert sich darum, sie aufzulösen.
+**ReadyAPI** kümmert sich darum, sie aufzulösen.
 
 ## Erste Abhängigkeit, „Dependable“
 
@@ -39,7 +39,7 @@ Diese Abhängigkeit verwenden wir nun wie folgt:
 
 Beachten Sie, dass wir in der *Pfadoperation-Funktion* nur eine einzige Abhängigkeit deklarieren, den `query_or_cookie_extractor`.
 
-Aber **readyapi** wird wissen, dass es zuerst `query_extractor` auflösen muss, um dessen Resultat `query_or_cookie_extractor` zu übergeben, wenn dieses aufgerufen wird.
+Aber **ReadyAPI** wird wissen, dass es zuerst `query_extractor` auflösen muss, um dessen Resultat `query_or_cookie_extractor` zu übergeben, wenn dieses aufgerufen wird.
 
 ///
 
@@ -56,7 +56,7 @@ query_extractor --> query_or_cookie_extractor --> read_query
 
 ## Dieselbe Abhängigkeit mehrmals verwenden
 
-Wenn eine Ihrer Abhängigkeiten mehrmals für dieselbe *Pfadoperation* deklariert wird, beispielsweise wenn mehrere Abhängigkeiten eine gemeinsame Unterabhängigkeit haben, wird **readyapi** diese Unterabhängigkeit nur einmal pro Request aufrufen.
+Wenn eine Ihrer Abhängigkeiten mehrmals für dieselbe *Pfadoperation* deklariert wird, beispielsweise wenn mehrere Abhängigkeiten eine gemeinsame Unterabhängigkeit haben, wird **ReadyAPI** diese Unterabhängigkeit nur einmal pro Request aufrufen.
 
 Und es speichert den zurückgegebenen Wert in einem <abbr title="Mechanismus, der bereits berechnete/generierte Werte zwischenspeichert, um sie später wiederzuverwenden, anstatt sie erneut zu berechnen.">„Cache“</abbr> und übergibt diesen gecachten Wert an alle „Dependanten“, die ihn in diesem spezifischen Request benötigen, anstatt die Abhängigkeit mehrmals für denselben Request aufzurufen.
 

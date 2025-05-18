@@ -4,7 +4,7 @@
 
 ## `uvicorn` 호출
 
-readyapi 애플리케이션에서 `uvicorn`을 직접 임포트하여 실행합니다
+ReadyAPI 애플리케이션에서 `uvicorn`을 직접 임포트하여 실행합니다
 
 {* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
 
@@ -80,7 +80,7 @@ from myapp import app
 
 ## 디버거로 코드 실행
 
-코드에서 직접 Uvicorn 서버를 실행하고 있기 때문에 디버거에서 직접 Python 프로그램(readyapi 애플리케이션)을 호출할 수 있습니다.
+코드에서 직접 Uvicorn 서버를 실행하고 있기 때문에 디버거에서 직접 Python 프로그램(ReadyAPI 애플리케이션)을 호출할 수 있습니다.
 
 ---
 
@@ -91,7 +91,7 @@ from myapp import app
 * "Python"을 선택합니다.
 * "`Python: Current File (Integrated Terminal)`" 옵션으로 디버거를 실행합니다.
 
-그런 다음 **readyapi** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
+그런 다음 **ReadyAPI** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
 
 다음과 같이 표시됩니다.
 
@@ -106,7 +106,7 @@ Pycharm을 사용하는 경우 다음을 수행할 수 있습니다
 * 그러면 상황에 맞는 메뉴가 나타납니다.
 * 디버그할 파일을 선택합니다(이 경우 `main.py`).
 
-그런 다음 **readyapi** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
+그런 다음 **ReadyAPI** 코드로 서버를 시작하고 중단점 등에서 중지합니다.
 
 다음과 같이 표시됩니다.
 

@@ -33,7 +33,7 @@ For example:
 
 Here we declare the setting `openapi_url` with the same default of `"/openapi.json"`.
 
-And then we use it when creating the `readyapi` app.
+And then we use it when creating the `ReadyAPI` app.
 
 Then you could disable OpenAPI (including the UI docs) by setting the environment variable `OPENAPI_URL` to the empty string, like:
 

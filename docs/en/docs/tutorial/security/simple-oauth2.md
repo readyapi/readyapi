@@ -4,7 +4,7 @@ Now let's build from the previous chapter and add the missing parts to have a co
 
 ## Get the `username` and `password`
 
-We are going to use **readyapi** security utilities to get the `username` and `password`.
+We are going to use **ReadyAPI** security utilities to get the `username` and `password`.
 
 OAuth2 specifies that when using the "password flow" (that we are using) the client/user must send a `username` and `password` fields as form data.
 
@@ -46,7 +46,7 @@ For OAuth2 they are just strings.
 
 ## Code to get the `username` and `password`
 
-Now let's use the utilities provided by **readyapi** to handle this.
+Now let's use the utilities provided by **ReadyAPI** to handle this.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAu
 
 /// info
 
-The `OAuth2PasswordRequestForm` is not a special class for **readyapi** as is `OAuth2PasswordBearer`.
+The `OAuth2PasswordRequestForm` is not a special class for **ReadyAPI** as is `OAuth2PasswordBearer`.
 
-`OAuth2PasswordBearer` makes **readyapi** know that it is a security scheme. So it is added that way to OpenAPI.
+`OAuth2PasswordBearer` makes **ReadyAPI** know that it is a security scheme. So it is added that way to OpenAPI.
 
 But `OAuth2PasswordRequestForm` is just a class dependency that you could have written yourself, or you could have declared `Form` parameters directly.
 
-But as it's a common use case, it is provided by **readyapi** directly, just to make it easier.
+But as it's a common use case, it is provided by **ReadyAPI** directly, just to make it easier.
 
 ///
 
@@ -178,7 +178,7 @@ This is something that you have to do yourself in your code, and make sure you u
 
 It's almost the only thing that you have to remember to do correctly yourself, to be compliant with the specifications.
 
-For the rest, **readyapi** handles it for you.
+For the rest, **ReadyAPI** handles it for you.
 
 ///
 

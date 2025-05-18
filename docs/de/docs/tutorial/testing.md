@@ -1,10 +1,10 @@
 # Testen
 
-Dank <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a> ist das Testen von **readyapi**-Anwendungen einfach und macht Spaß.
+Dank <a href="https://www.starlette.io/testclient/" class="external-link" target="_blank">Starlette</a> ist das Testen von **ReadyAPI**-Anwendungen einfach und macht Spaß.
 
 Es basiert auf <a href="https://www.python-httpx.org" class="external-link" target="_blank">HTTPX</a>, welches wiederum auf der Grundlage von requests konzipiert wurde, es ist also sehr vertraut und intuitiv.
 
-Damit können Sie <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> direkt mit **readyapi** verwenden.
+Damit können Sie <a href="https://docs.pytest.org/" class="external-link" target="_blank">pytest</a> direkt mit **ReadyAPI** verwenden.
 
 ## Verwendung von `TestClient`
 
@@ -18,7 +18,7 @@ Z. B. `pip install httpx`.
 
 Importieren Sie `TestClient`.
 
-Erstellen Sie einen `TestClient`, indem Sie ihm Ihre **readyapi**-Anwendung übergeben.
+Erstellen Sie einen `TestClient`, indem Sie ihm Ihre **ReadyAPI**-Anwendung übergeben.
 
 Erstellen Sie Funktionen mit einem Namen, der mit `test_` beginnt (das sind `pytest`-Konventionen).
 
@@ -42,13 +42,13 @@ Dadurch können Sie `pytest` ohne Komplikationen direkt nutzen.
 
 Sie könnten auch `from starlette.testclient import TestClient` verwenden.
 
-**readyapi** stellt denselben `starlette.testclient` auch via `readyapi.testclient` bereit, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber tatsächlich direkt von Starlette.
+**ReadyAPI** stellt denselben `starlette.testclient` auch via `readyapi.testclient` bereit, als Annehmlichkeit für Sie, den Entwickler. Es kommt aber tatsächlich direkt von Starlette.
 
 ///
 
 /// tip | Tipp
 
-Wenn Sie in Ihren Tests neben dem Senden von Anfragen an Ihre readyapi-Anwendung auch `async`-Funktionen aufrufen möchten (z. B. asynchrone Datenbankfunktionen), werfen Sie einen Blick auf die [Async-Tests](../advanced/async-tests.md){.internal-link target=_blank} im Handbuch für fortgeschrittene Benutzer.
+Wenn Sie in Ihren Tests neben dem Senden von Anfragen an Ihre ReadyAPI-Anwendung auch `async`-Funktionen aufrufen möchten (z. B. asynchrone Datenbankfunktionen), werfen Sie einen Blick auf die [Async-Tests](../advanced/async-tests.md){.internal-link target=_blank} im Handbuch für fortgeschrittene Benutzer.
 
 ///
 
@@ -56,9 +56,9 @@ Wenn Sie in Ihren Tests neben dem Senden von Anfragen an Ihre readyapi-Anwendung
 
 In einer echten Anwendung würden Sie Ihre Tests wahrscheinlich in einer anderen Datei haben.
 
-Und Ihre **readyapi**-Anwendung könnte auch aus mehreren Dateien/Modulen, usw. bestehen.
+Und Ihre **ReadyAPI**-Anwendung könnte auch aus mehreren Dateien/Modulen, usw. bestehen.
 
-### **readyapi** Anwendungsdatei
+### **ReadyAPI** Anwendungsdatei
 
 Nehmen wir an, Sie haben eine Dateistruktur wie in [Größere Anwendungen](bigger-applications.md){.internal-link target=_blank} beschrieben:
 
@@ -69,7 +69,7 @@ Nehmen wir an, Sie haben eine Dateistruktur wie in [Größere Anwendungen](bigge
 │   └── main.py
 ```
 
-In der Datei `main.py` haben Sie Ihre **readyapi**-Anwendung:
+In der Datei `main.py` haben Sie Ihre **ReadyAPI**-Anwendung:
 
 
 {* ../../docs_src/app_testing/main.py *}
@@ -98,7 +98,7 @@ Da sich diese Datei im selben Package befindet, können Sie relative Importe ver
 
 Nun erweitern wir dieses Beispiel und fügen weitere Details hinzu, um zu sehen, wie verschiedene Teile getestet werden.
 
-### Erweiterte **readyapi**-Anwendungsdatei
+### Erweiterte **ReadyAPI**-Anwendungsdatei
 
 Fahren wir mit der gleichen Dateistruktur wie zuvor fort:
 
@@ -110,7 +110,7 @@ Fahren wir mit der gleichen Dateistruktur wie zuvor fort:
 │   └── test_main.py
 ```
 
-Nehmen wir an, dass die Datei `main.py` mit Ihrer **readyapi**-Anwendung jetzt einige andere **Pfadoperationen** hat.
+Nehmen wir an, dass die Datei `main.py` mit Ihrer **ReadyAPI**-Anwendung jetzt einige andere **Pfadoperationen** hat.
 
 Sie verfügt über eine `GET`-Operation, die einen Fehler zurückgeben könnte.
 

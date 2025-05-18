@@ -1,10 +1,10 @@
 # Templates
 
-Você pode usar qualquer template engine com o **readyapi**.
+Você pode usar qualquer template engine com o **ReadyAPI**.
 
 Uma escolha comum é o Jinja2, o mesmo usado pelo Flask e outras ferramentas.
 
-Existem utilitários para configurá-lo facilmente que você pode usar diretamente em sua aplicação **readyapi** (fornecidos pelo Starlette).
+Existem utilitários para configurá-lo facilmente que você pode usar diretamente em sua aplicação **ReadyAPI** (fornecidos pelo Starlette).
 
 ## Instalação de dependências
 
@@ -29,7 +29,7 @@ $ pip install jinja2
 
 /// note
 
-Antes do readyapi 0.108.0, Starlette 0.29.0, `name` era o primeiro parâmetro.
+Antes do ReadyAPI 0.108.0, Starlette 0.29.0, `name` era o primeiro parâmetro.
 
 Além disso, em versões anteriores, o objeto `request` era passado como parte dos pares chave-valor no "context" dict para o Jinja2.
 
@@ -45,7 +45,7 @@ Ao declarar `response_class=HTMLResponse`, a documentação entenderá que a res
 
 Você também poderia usar `from starlette.templating import Jinja2Templates`.
 
-**readyapi** fornece o mesmo `starlette.templating` como `readyapi.templating` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria das respostas disponíveis vêm diretamente do Starlette. O mesmo acontece com `Request` e `StaticFiles`.
+**ReadyAPI** fornece o mesmo `starlette.templating` como `readyapi.templating` apenas como uma conveniência para você, o desenvolvedor. Mas a maioria das respostas disponíveis vêm diretamente do Starlette. O mesmo acontece com `Request` e `StaticFiles`.
 
 ///
 
@@ -117,7 +117,7 @@ Neste exemplo, ele seria vinculado a um arquivo CSS em `static/styles.css` com:
 {!../../docs_src/templates/static/styles.css!}
 ```
 
-E como você está usando `StaticFiles`, este arquivo CSS será automaticamente servido pela sua aplicação readyapi na URL `/static/styles.css`.
+E como você está usando `StaticFiles`, este arquivo CSS será automaticamente servido pela sua aplicação ReadyAPI na URL `/static/styles.css`.
 
 ## Mais detalhes
 

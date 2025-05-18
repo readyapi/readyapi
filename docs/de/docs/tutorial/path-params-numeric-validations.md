@@ -10,11 +10,11 @@ Importieren Sie zuerst `Path` von `readyapi`, und importieren Sie `Annotated`.
 
 /// info
 
-readyapi unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
+ReadyAPI unterstützt (und empfiehlt die Verwendung von) `Annotated` seit Version 0.95.0.
 
 Wenn Sie eine ältere Version haben, werden Sie Fehler angezeigt bekommen, wenn Sie versuchen, `Annotated` zu verwenden.
 
-Bitte [aktualisieren Sie readyapi](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
+Bitte [aktualisieren Sie ReadyAPI](../deployment/versions.md#upgrade-der-readyapi-versionen){.internal-link target=_blank} daher mindestens zu Version 0.95.1, bevor Sie `Annotated` verwenden.
 
 ///
 
@@ -54,7 +54,7 @@ Python wird sich beschweren, wenn Sie einen Parameter mit Defaultwert vor einen 
 
 Aber Sie können die Reihenfolge der Parameter ändern, den Query-Parameter ohne Defaultwert zuerst.
 
-Für **readyapi** ist es nicht wichtig. Es erkennt die Parameter anhand ihres Namens, ihrer Typen, und ihrer Defaultwerte (`Query`, `Path`, usw.). Es kümmert sich nicht um die Reihenfolge.
+Für **ReadyAPI** ist es nicht wichtig. Es erkennt die Parameter anhand ihres Namens, ihrer Typen, und ihrer Defaultwerte (`Query`, `Path`, usw.). Es kümmert sich nicht um die Reihenfolge.
 
 Sie können Ihre Funktion also so deklarieren:
 

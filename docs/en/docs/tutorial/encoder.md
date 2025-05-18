@@ -4,7 +4,7 @@ There are some cases where you might need to convert a data type (like a Pydanti
 
 For example, if you need to store it in a database.
 
-For that, **readyapi** provides a `jsonable_encoder()` function.
+For that, **ReadyAPI** provides a `jsonable_encoder()` function.
 
 ## Using the `jsonable_encoder`
 
@@ -30,6 +30,6 @@ It doesn't return a large `str` containing the data in JSON format (as a string)
 
 /// note
 
-`jsonable_encoder` is actually used by **readyapi** internally to convert data. But it is useful in many other scenarios.
+`jsonable_encoder` is actually used by **ReadyAPI** internally to convert data. But it is useful in many other scenarios.
 
 ///

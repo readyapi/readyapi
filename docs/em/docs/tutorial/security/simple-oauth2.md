@@ -4,7 +4,7 @@
 
 ## 🤚 `username` &amp; `password`
 
-👥 🔜 ⚙️ **readyapi** 💂‍♂ 🚙 🤚 `username` &amp; `password`.
+👥 🔜 ⚙️ **ReadyAPI** 💂‍♂ 🚙 🤚 `username` &amp; `password`.
 
 Oauth2️⃣ ✔ 👈 🕐❔ ⚙️ "🔐 💧" (👈 👥 ⚙️) 👩‍💻/👩‍💻 🔜 📨 `username` &amp; `password` 🏑 📨 💽.
 
@@ -46,7 +46,7 @@ Oauth2️⃣ 👫 🎻.
 
 ## 📟 🤚 `username` &amp; `password`
 
-🔜 ➡️ ⚙️ 🚙 🚚 **readyapi** 🍵 👉.
+🔜 ➡️ ⚙️ 🚙 🚚 **ReadyAPI** 🍵 👉.
 
 ### `OAuth2PasswordRequestForm`
 
@@ -74,13 +74,13 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 
 /// info
 
-`OAuth2PasswordRequestForm` 🚫 🎁 🎓 **readyapi** `OAuth2PasswordBearer`.
+`OAuth2PasswordRequestForm` 🚫 🎁 🎓 **ReadyAPI** `OAuth2PasswordBearer`.
 
-`OAuth2PasswordBearer` ⚒ **readyapi** 💭 👈 ⚫️ 💂‍♂ ⚖. ⚫️ 🚮 👈 🌌 🗄.
+`OAuth2PasswordBearer` ⚒ **ReadyAPI** 💭 👈 ⚫️ 💂‍♂ ⚖. ⚫️ 🚮 👈 🌌 🗄.
 
 ✋️ `OAuth2PasswordRequestForm` 🎓 🔗 👈 👆 💪 ✔️ ✍ 👆, ⚖️ 👆 💪 ✔️ 📣 `Form` 🔢 🔗.
 
-✋️ ⚫️ ⚠ ⚙️ 💼, ⚫️ 🚚 **readyapi** 🔗, ⚒ ⚫️ ⏩.
+✋️ ⚫️ ⚠ ⚙️ 💼, ⚫️ 🚚 **ReadyAPI** 🔗, ⚒ ⚫️ ⏩.
 
 ///
 
@@ -178,7 +178,7 @@ UserInDB(
 
 ⚫️ 🌖 🕴 👜 👈 👆 ✔️ 💭 ☑ 👆, 🛠️ ⏮️ 🔧.
 
-🎂, **readyapi** 🍵 ⚫️ 👆.
+🎂, **ReadyAPI** 🍵 ⚫️ 👆.
 
 ///
 

@@ -2,7 +2,7 @@
 
 There are several custom response classes you can use to create an instance and return them directly from your *path operations*.
 
-Read more about it in the [readyapi docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/).
+Read more about it in the [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/).
 
 You can import them directly from `readyapi.responses`:
 
@@ -20,9 +20,9 @@ from readyapi.responses import (
 )
 ```
 
-## readyapi Responses
+## ReadyAPI Responses
 
-There are a couple of custom readyapi response classes, you can use them to optimize JSON performance.
+There are a couple of custom ReadyAPI response classes, you can use them to optimize JSON performance.
 
 ::: readyapi.responses.UJSONResponse
     options:

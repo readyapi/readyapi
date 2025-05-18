@@ -1,6 +1,6 @@
 # Middleware
 
-Sie können Middleware zu **readyapi**-Anwendungen hinzufügen.
+Sie können Middleware zu **ReadyAPI**-Anwendungen hinzufügen.
 
 Eine „Middleware“ ist eine Funktion, die mit jedem **Request** arbeitet, bevor er von einer bestimmten *Pfadoperation* verarbeitet wird. Und auch mit jeder **Response**, bevor sie zurückgegeben wird.
 
@@ -45,7 +45,7 @@ Wenn Sie jedoch benutzerdefinierte Header haben, die ein Client in einem Browser
 
 Sie könnten auch `from starlette.requests import Request` verwenden.
 
-**readyapi** bietet es als Komfort für Sie, den Entwickler, an. Aber es stammt direkt von Starlette.
+**ReadyAPI** bietet es als Komfort für Sie, den Entwickler, an. Aber es stammt direkt von Starlette.
 
 ///
 

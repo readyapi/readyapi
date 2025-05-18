@@ -48,7 +48,7 @@ For example you could use it to add metadata for a frontend user interface, etc.
 
 /// info
 
-OpenAPI 3.1.0 (used since readyapi 0.99.0) added support for `examples`, which is part of the **JSON Schema** standard.
+OpenAPI 3.1.0 (used since ReadyAPI 0.99.0) added support for `examples`, which is part of the **JSON Schema** standard.
 
 Before that, it only supported the keyword `example` with a single example. That is still supported by OpenAPI 3.1.0, but is deprecated and is not part of the JSON Schema standard. So you are encouraged to migrate `example` to `examples`. 🤓
 
@@ -112,7 +112,7 @@ This doesn't go inside of each JSON Schema contained in OpenAPI, this goes outsi
 
 ### Using the `openapi_examples` Parameter
 
-You can declare the OpenAPI-specific `examples` in readyapi with the parameter `openapi_examples` for:
+You can declare the OpenAPI-specific `examples` in ReadyAPI with the parameter `openapi_examples` for:
 
 * `Path()`
 * `Query()`
@@ -145,7 +145,7 @@ With `openapi_examples` added to `Body()` the `/docs` would look like:
 
 /// tip
 
-If you are already using **readyapi** version **0.99.0 or above**, you can probably **skip** these details.
+If you are already using **ReadyAPI** version **0.99.0 or above**, you can probably **skip** these details.
 
 They are more relevant for older versions, before OpenAPI 3.1.0 was available.
 
@@ -167,19 +167,19 @@ JSON Schema didn't have `examples`, so OpenAPI added its own `example` field to 
 
 OpenAPI also added `example` and `examples` fields to other parts of the specification:
 
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (in the specification)</a> that was used by readyapi's:
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object" class="external-link" target="_blank">`Parameter Object` (in the specification)</a> that was used by ReadyAPI's:
     * `Path()`
     * `Query()`
     * `Header()`
     * `Cookie()`
-* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object`, in the field `content`, on the `Media Type Object` (in the specification)</a> that was used by readyapi's:
+* <a href="https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object" class="external-link" target="_blank">`Request Body Object`, in the field `content`, on the `Media Type Object` (in the specification)</a> that was used by ReadyAPI's:
     * `Body()`
     * `File()`
     * `Form()`
 
 /// info
 
-This old OpenAPI-specific `examples` parameter is now `openapi_examples` since readyapi `0.103.0`.
+This old OpenAPI-specific `examples` parameter is now `openapi_examples` since ReadyAPI `0.103.0`.
 
 ///
 
@@ -197,28 +197,28 @@ This new `examples` field in JSON Schema is **just a `list`** of examples, not a
 
 Even after OpenAPI 3.1.0 was released with this new simpler integration with JSON Schema, for a while, Swagger UI, the tool that provides the automatic docs, didn't support OpenAPI 3.1.0 (it does since version 5.0.0 🎉).
 
-Because of that, versions of readyapi previous to 0.99.0 still used versions of OpenAPI lower than 3.1.0.
+Because of that, versions of ReadyAPI previous to 0.99.0 still used versions of OpenAPI lower than 3.1.0.
 
 ///
 
-### Pydantic and readyapi `examples`
+### Pydantic and ReadyAPI `examples`
 
 When you add `examples` inside a Pydantic model, using `schema_extra` or `Field(examples=["something"])` that example is added to the **JSON Schema** for that Pydantic model.
 
 And that **JSON Schema** of the Pydantic model is included in the **OpenAPI** of your API, and then it's used in the docs UI.
 
-In versions of readyapi before 0.99.0 (0.99.0 and above use the newer OpenAPI 3.1.0) when you used `example` or `examples` with any of the other utilities (`Query()`, `Body()`, etc.) those examples were not added to the JSON Schema that describes that data (not even to OpenAPI's own version of JSON Schema), they were added directly to the *path operation* declaration in OpenAPI (outside the parts of OpenAPI that use JSON Schema).
+In versions of ReadyAPI before 0.99.0 (0.99.0 and above use the newer OpenAPI 3.1.0) when you used `example` or `examples` with any of the other utilities (`Query()`, `Body()`, etc.) those examples were not added to the JSON Schema that describes that data (not even to OpenAPI's own version of JSON Schema), they were added directly to the *path operation* declaration in OpenAPI (outside the parts of OpenAPI that use JSON Schema).
 
-But now that readyapi 0.99.0 and above uses OpenAPI 3.1.0, that uses JSON Schema 2020-12, and Swagger UI 5.0.0 and above, everything is more consistent and the examples are included in JSON Schema.
+But now that ReadyAPI 0.99.0 and above uses OpenAPI 3.1.0, that uses JSON Schema 2020-12, and Swagger UI 5.0.0 and above, everything is more consistent and the examples are included in JSON Schema.
 
 ### Swagger UI and OpenAPI-specific `examples`
 
 Now, as Swagger UI didn't support multiple JSON Schema examples (as of 2023-08-26), users didn't have a way to show multiple examples in the docs.
 
-To solve that, readyapi `0.103.0` **added support** for declaring the same old **OpenAPI-specific** `examples` field with the new parameter `openapi_examples`. 🤓
+To solve that, ReadyAPI `0.103.0` **added support** for declaring the same old **OpenAPI-specific** `examples` field with the new parameter `openapi_examples`. 🤓
 
 ### Summary
 
 I used to say I didn't like history that much... and look at me now giving "tech history" lessons. 😅
 
-In short, **upgrade to readyapi 0.99.0 or above**, and things are much **simpler, consistent, and intuitive**, and you don't have to know all these historic details. 😎
+In short, **upgrade to ReadyAPI 0.99.0 or above**, and things are much **simpler, consistent, and intuitive**, and you don't have to know all these historic details. 😎

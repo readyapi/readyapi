@@ -13,7 +13,7 @@
 
 每个响应字典都可以有一个关键模型，其中包含一个 `Pydantic` 模型，就像 `response_model` 一样。
 
-**readyapi**将采用该模型，生成其`JSON Schema`并将其包含在`OpenAPI`中的正确位置。
+**ReadyAPI**将采用该模型，生成其`JSON Schema`并将其包含在`OpenAPI`中的正确位置。
 
 例如，要声明另一个具有状态码 `404` 和`Pydantic`模型 `Message` 的响应，可以写：
 {* ../../docs_src/additional_responses/tutorial001.py hl[18,22] *}
@@ -27,12 +27,12 @@
 /// info
 
 `model` 密钥不是OpenAPI的一部分。
-**readyapi**将从那里获取`Pydantic`模型，生成` JSON Schema` ，并将其放在正确的位置。
+**ReadyAPI**将从那里获取`Pydantic`模型，生成` JSON Schema` ，并将其放在正确的位置。
 - 正确的位置是：
     - 在键 `content` 中，其具有另一个`JSON`对象（ `dict` ）作为值，该`JSON`对象包含：
         - 媒体类型的密钥，例如 `application/json` ，它包含另一个`JSON`对象作为值，该对象包含：
             - 一个键` schema` ，它的值是来自模型的`JSON Schema`，正确的位置在这里。
-                - **readyapi**在这里添加了对OpenAPI中另一个地方的全局JSON模式的引用，而不是直接包含它。这样，其他应用程序和客户端可以直接使用这些JSON模式，提供更好的代码生成工具等。
+                - **ReadyAPI**在这里添加了对OpenAPI中另一个地方的全局JSON模式的引用，而不是直接包含它。这样，其他应用程序和客户端可以直接使用这些JSON模式，提供更好的代码生成工具等。
 
 ///
 
@@ -171,8 +171,8 @@
 
 /// info
 
-- 除非在 `responses` 参数中明确指定不同的媒体类型，否则**readyapi**将假定响应与主响应类具有相同的媒体类型（默认为` application/json` ）。
-- 但是如果您指定了一个自定义响应类，并将 `None `作为其媒体类型，**readyapi**将使用 `application/json` 作为具有关联模型的任何其他响应。
+- 除非在 `responses` 参数中明确指定不同的媒体类型，否则**ReadyAPI**将假定响应与主响应类具有相同的媒体类型（默认为` application/json` ）。
+- 但是如果您指定了一个自定义响应类，并将 `None `作为其媒体类型，**ReadyAPI**将使用 `application/json` 作为具有关联模型的任何其他响应。
 
 ///
 
@@ -181,7 +181,7 @@
 
 您可以使用默认的状态码 `200` （或者您需要的自定义状态码）声明一个 `response_model `，然后直接在OpenAPI模式中在 `responses` 中声明相同响应的其他信息。
 
-**readyapi**将保留来自 `responses` 的附加信息，并将其与模型中的JSON Schema结合起来。
+**ReadyAPI**将保留来自 `responses` 的附加信息，并将其与模型中的JSON Schema结合起来。
 
 例如，您可以使用状态码 `404` 声明响应，该响应使用`Pydantic`模型并具有自定义的` description` 。
 

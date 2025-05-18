@@ -88,4 +88,4 @@ A resposta seria como:
 
 Declare cabeçalhos com `Header`, usando o mesmo padrão comum que utiliza-se em `Query`, `Path` e `Cookie`.
 
-E não se preocupe com sublinhados em suas variáveis, readyapi cuidará da conversão deles.
+E não se preocupe com sublinhados em suas variáveis, ReadyAPI cuidará da conversão deles.

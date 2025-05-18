@@ -1,6 +1,6 @@
 # Метадані та URL-адреси документації
 
-Ви можете налаштувати кілька конфігурацій метаданих у Вашому додатку **readyapi**.
+Ви можете налаштувати кілька конфігурацій метаданих у Вашому додатку **ReadyAPI**.
 
 ## Метадані для API
 
@@ -9,12 +9,12 @@
 | Параметр | Тип | Опис |
 |------------|------|-------------|
 | `title` | `str` | Назва API. |
-| `summary` | `str` | Короткий опис API. <small>Доступно з OpenAPI 3.1.0, readyapi 0.99.0.</small> |
+| `summary` | `str` | Короткий опис API. <small>Доступно з OpenAPI 3.1.0, ReadyAPI 0.99.0.</small> |
 | `description` | `str` | Більш детальний опис API. Може використовувати Markdown. |
 | `version` | `string` | Версія API. Це версія Вашого додатка, а не OpenAPI. Наприклад, `2.5.0`. |
 | `terms_of_service` | `str` |  URL до умов використання API. Якщо вказано, має бути у форматі URL. |
 | `contact` | `dict` | Інформація для контакту з API. Може містити кілька полів. <details><summary><code>contact</code> поля</summary><table><thead><tr><th>Параметр</th><th>Тип</th><th>Опис</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td>Ім'я контактної особи або організації.</td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>URL з інформацією для контакту. Повинен бути у форматі URL.</td></tr><tr><td><code>email</code></td><td><code>str</code></td><td>Email контактної особи або організації. Повинен бути у форматі електронної пошти.</td></tr></tbody></table></details> |
-| `license_info` | `dict` | Інформація про ліцензію для API. Може містити кілька полів. <details><summary><code>license_info</code> поля</summary><table><thead><tr><th>Параметр</th><th>Тип</th><th>Опис</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>ОБОВ'ЯЗКОВО</strong> (якщо встановлено <code>license_info</code>). Назва ліцензії для API.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Ліцензійний вираз за <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a> для API. Поле <code>identifier</code> взаємовиключне з полем <code>url</code>. <small>Доступно з OpenAPI 3.1.0, readyapi 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>URL до ліцензії, яка використовується для API. Повинен бути у форматі URL.</td></tr></tbody></table></details> |
+| `license_info` | `dict` | Інформація про ліцензію для API. Може містити кілька полів. <details><summary><code>license_info</code> поля</summary><table><thead><tr><th>Параметр</th><th>Тип</th><th>Опис</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>str</code></td><td><strong>ОБОВ'ЯЗКОВО</strong> (якщо встановлено <code>license_info</code>). Назва ліцензії для API.</td></tr><tr><td><code>identifier</code></td><td><code>str</code></td><td>Ліцензійний вираз за <a href="https://spdx.org/licenses/" class="external-link" target="_blank">SPDX</a> для API. Поле <code>identifier</code> взаємовиключне з полем <code>url</code>. <small>Доступно з OpenAPI 3.1.0, ReadyAPI 0.99.0.</small></td></tr><tr><td><code>url</code></td><td><code>str</code></td><td>URL до ліцензії, яка використовується для API. Повинен бути у форматі URL.</td></tr></tbody></table></details> |
 
 Ви можете налаштувати їх наступним чином:
 
@@ -32,7 +32,7 @@
 
 ## Ідентифікатор ліцензії
 
-З початку використання OpenAPI 3.1.0 та readyapi 0.99.0 Ви також можете налаштувати `license_info` за допомогою `identifier` замість `url`.
+З початку використання OpenAPI 3.1.0 та ReadyAPI 0.99.0 Ви також можете налаштувати `license_info` за допомогою `identifier` замість `url`.
 
 Наприклад:
 

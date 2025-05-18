@@ -12,7 +12,7 @@ Um einen **Request**body zu deklarieren, verwenden Sie <a href="https://docs.pyd
 
 Um Daten zu versenden, sollten Sie eines von: `POST` (meistverwendet), `PUT`, `DELETE` oder `PATCH` verwenden.
 
-Senden Sie einen Body mit einem `GET`-Request, dann führt das laut Spezifikation zu undefiniertem Verhalten. Trotzdem wird es von readyapi unterstützt, für sehr komplexe/extreme Anwendungsfälle.
+Senden Sie einen Body mit einem `GET`-Request, dann führt das laut Spezifikation zu undefiniertem Verhalten. Trotzdem wird es von ReadyAPI unterstützt, für sehr komplexe/extreme Anwendungsfälle.
 
 Da aber davon abgeraten wird, zeigt die interaktive Dokumentation mit Swagger-Benutzeroberfläche die Dokumentation für den Body auch nicht an, wenn `GET` verwendet wird. Dazwischengeschaltete Proxys unterstützen es möglicherweise auch nicht.
 
@@ -64,7 +64,7 @@ Um es zu Ihrer *Pfadoperation* hinzuzufügen, deklarieren Sie es auf die gleiche
 
 ## Resultate
 
-Mit nur dieser Python-Typdeklaration, wird **readyapi**:
+Mit nur dieser Python-Typdeklaration, wird **ReadyAPI**:
 
 * Den Requestbody als JSON lesen.
 * Die entsprechenden Typen konvertieren (falls nötig).
@@ -131,7 +131,7 @@ Innerhalb der Funktion können Sie alle Attribute des Modells direkt verwenden:
 
 Sie können Pfad- und Requestbody-Parameter gleichzeitig deklarieren.
 
-**readyapi** erkennt, dass Funktionsparameter, die mit Pfad-Parametern übereinstimmen, **vom Pfad genommen** werden sollen, und dass Funktionsparameter, welche Pydantic-Modelle sind, **vom Requestbody genommen** werden sollen.
+**ReadyAPI** erkennt, dass Funktionsparameter, die mit Pfad-Parametern übereinstimmen, **vom Pfad genommen** werden sollen, und dass Funktionsparameter, welche Pydantic-Modelle sind, **vom Requestbody genommen** werden sollen.
 
 {* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
 
@@ -139,7 +139,7 @@ Sie können Pfad- und Requestbody-Parameter gleichzeitig deklarieren.
 
 Sie können auch zur gleichen Zeit **Body-**, **Pfad-** und **Query-Parameter** deklarieren.
 
-**readyapi** wird jeden Parameter korrekt erkennen und die Daten vom richtigen Ort holen.
+**ReadyAPI** wird jeden Parameter korrekt erkennen und die Daten vom richtigen Ort holen.
 
 {* ../../docs_src/body/tutorial004_py310.py hl[16] *}
 
@@ -151,9 +151,9 @@ Die Funktionsparameter werden wie folgt erkannt:
 
 /// note | Hinweis
 
-readyapi weiß, dass der Wert von `q` nicht erforderlich ist, wegen des definierten Defaultwertes `= None`
+ReadyAPI weiß, dass der Wert von `q` nicht erforderlich ist, wegen des definierten Defaultwertes `= None`
 
-Das `Union` in `Union[str, None]` wird von readyapi nicht verwendet, aber es erlaubt Ihrem Editor, Sie besser zu unterstützen und Fehler zu erkennen.
+Das `Union` in `Union[str, None]` wird von ReadyAPI nicht verwendet, aber es erlaubt Ihrem Editor, Sie besser zu unterstützen und Fehler zu erkennen.
 
 ///
 

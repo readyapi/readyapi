@@ -1,6 +1,6 @@
 # Веб-сокеты
 
-Вы можете использовать <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">веб-сокеты</a> в **readyapi**.
+Вы можете использовать <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" class="external-link" target="_blank">веб-сокеты</a> в **ReadyAPI**.
 
 ## Установка `WebSockets`
 
@@ -42,7 +42,7 @@ $ pip install websockets
 
 ## Создание `websocket`
 
-Создайте `websocket` в своем **readyapi** приложении:
+Создайте `websocket` в своем **ReadyAPI** приложении:
 
 {* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
 
@@ -50,7 +50,7 @@ $ pip install websockets
 
 Вы также можете использовать `from starlette.websockets import WebSocket`.
 
-**readyapi** напрямую предоставляет тот же самый `WebSocket` просто для удобства. На самом деле это `WebSocket` из Starlette.
+**ReadyAPI** напрямую предоставляет тот же самый `WebSocket` просто для удобства. На самом деле это `WebSocket` из Starlette.
 
 ///
 
@@ -86,7 +86,7 @@ $ readyapi dev main.py
 
 <img src="/img/tutorial/websockets/image02.png">
 
-И ваше **readyapi** приложение с веб-сокетами ответит:
+И ваше **ReadyAPI** приложение с веб-сокетами ответит:
 
 <img src="/img/tutorial/websockets/image03.png">
 
@@ -107,7 +107,7 @@ $ readyapi dev main.py
 * `Path`
 * `Query`
 
-Они работают так же, как и в других readyapi эндпоинтах/*операциях пути*:
+Они работают так же, как и в других ReadyAPI эндпоинтах/*операциях пути*:
 
 {* ../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82] *}
 
@@ -174,7 +174,7 @@ Client #1596980209979 left the chat
 
 Но имейте в виду, что это будет работать только в одном процессе и только пока он активен, так как всё обрабатывается в простом списке в оперативной памяти.
 
-Если нужно что-то легко интегрируемое с readyapi, но более надежное и с поддержкой Redis, PostgreSQL или другого, то можно воспользоваться <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>.
+Если нужно что-то легко интегрируемое с ReadyAPI, но более надежное и с поддержкой Redis, PostgreSQL или другого, то можно воспользоваться <a href="https://github.com/encode/broadcaster" class="external-link" target="_blank">encode/broadcaster</a>.
 
 ///
 

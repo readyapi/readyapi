@@ -16,7 +16,7 @@ Das kann nützlich sein, wenn Sie beispielsweise in einem Land leben, in dem bes
 
 Der erste Schritt besteht darin, die automatischen Dokumentationen zu deaktivieren, da diese standardmäßig das Standard-CDN verwenden.
 
-Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `readyapi`-App auf `None`:
+Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `ReadyAPI`-App auf `None`:
 
 {* ../../docs_src/custom_docs_ui/tutorial001.py hl[8] *}
 
@@ -24,7 +24,7 @@ Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `readyapi`-
 
 Jetzt können Sie die *Pfadoperationen* für die benutzerdefinierten Dokumentationen erstellen.
 
-Sie können die internen Funktionen von readyapi wiederverwenden, um die HTML-Seiten für die Dokumentation zu erstellen und ihnen die erforderlichen Argumente zu übergeben:
+Sie können die internen Funktionen von ReadyAPI wiederverwenden, um die HTML-Seiten für die Dokumentation zu erstellen und ihnen die erforderlichen Argumente zu übergeben:
 
 * `openapi_url`: die URL, unter welcher die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
 * `title`: der Titel Ihrer API.
@@ -60,7 +60,7 @@ Jetzt sollten Sie in der Lage sein, zu Ihrer Dokumentation auf <a href="http://1
 
 Das Selbst Hosten von JavaScript und CSS kann nützlich sein, wenn Sie beispielsweise möchten, dass Ihre Anwendung auch offline, ohne bestehenden Internetzugang oder in einem lokalen Netzwerk weiter funktioniert.
 
-Hier erfahren Sie, wie Sie diese Dateien selbst in derselben readyapi-App bereitstellen und die Dokumentation für deren Verwendung konfigurieren.
+Hier erfahren Sie, wie Sie diese Dateien selbst in derselben ReadyAPI-App bereitstellen und die Dokumentation für deren Verwendung konfigurieren.
 
 ### Projektdateistruktur
 
@@ -142,7 +142,7 @@ Jetzt können wir die Anwendung so konfigurieren, dass sie diese statischen Date
 
 Wie bei der Verwendung eines benutzerdefinierten CDN besteht der erste Schritt darin, die automatischen Dokumentationen zu deaktivieren, da diese standardmäßig das CDN verwenden.
 
-Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `readyapi`-App auf `None`:
+Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `ReadyAPI`-App auf `None`:
 
 {* ../../docs_src/custom_docs_ui/tutorial002.py hl[9] *}
 
@@ -150,7 +150,7 @@ Um diese zu deaktivieren, setzen Sie deren URLs beim Erstellen Ihrer `readyapi`-
 
 Und genau wie bei einem benutzerdefinierten CDN können Sie jetzt die *Pfadoperationen* für die benutzerdefinierten Dokumentationen erstellen.
 
-Auch hier können Sie die internen Funktionen von readyapi wiederverwenden, um die HTML-Seiten für die Dokumentationen zu erstellen, und diesen die erforderlichen Argumente übergeben:
+Auch hier können Sie die internen Funktionen von ReadyAPI wiederverwenden, um die HTML-Seiten für die Dokumentationen zu erstellen, und diesen die erforderlichen Argumente übergeben:
 
 * `openapi_url`: die URL, unter der die HTML-Seite für die Dokumentation das OpenAPI-Schema für Ihre API abrufen kann. Sie können hier das Attribut `app.openapi_url` verwenden.
 * `title`: der Titel Ihrer API.

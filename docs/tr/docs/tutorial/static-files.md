@@ -13,7 +13,7 @@
 
 Projenize dahil etmek için `from starlette.staticfiles import StaticFiles` kullanabilirsiniz.
 
-**readyapi**, geliştiricilere kolaylık sağlamak amacıyla `starlette.staticfiles`'ı `readyapi.staticfiles` olarak sağlar. Ancak `StaticFiles` sınıfı aslında doğrudan Starlette'den gelir.
+**ReadyAPI**, geliştiricilere kolaylık sağlamak amacıyla `starlette.staticfiles`'ı `readyapi.staticfiles` olarak sağlar. Ancak `StaticFiles` sınıfı aslında doğrudan Starlette'den gelir.
 
 ///
 
@@ -31,7 +31,7 @@ Bu, bir `APIRouter` kullanmaktan farklıdır çünkü bağlanmış bir uygulama 
 
 `directory="static"` ifadesi, statik dosyalarınızı içeren dizinin adını belirtir.
 
-`name="static"` ifadesi, alt uygulamanın **readyapi** tarafından kullanılacak ismini belirtir.
+`name="static"` ifadesi, alt uygulamanın **ReadyAPI** tarafından kullanılacak ismini belirtir.
 
 Bu parametrelerin hepsi "`static`"den farklı olabilir, bunları kendi uygulamanızın ihtiyaçlarına göre belirleyebilirsiniz.
 

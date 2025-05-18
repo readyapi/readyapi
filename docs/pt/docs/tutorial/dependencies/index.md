@@ -1,14 +1,14 @@
 # Dependências
 
-O **readyapi** possui um poderoso, mas intuitivo sistema de **<abbr title="também conhecidos como, recursos, provedores, serviços, injetáveis">Injeção de Dependência</abbr>**.
+O **ReadyAPI** possui um poderoso, mas intuitivo sistema de **<abbr title="também conhecidos como, recursos, provedores, serviços, injetáveis">Injeção de Dependência</abbr>**.
 
-Esse sistema foi pensado para ser fácil de usar, e permitir que qualquer desenvolvedor possa integrar facilmente outros componentes ao **readyapi**.
+Esse sistema foi pensado para ser fácil de usar, e permitir que qualquer desenvolvedor possa integrar facilmente outros componentes ao **ReadyAPI**.
 
 ## O que é "Injeção de Dependência"
 
 **"Injeção de Dependência"** no mundo da programação significa, que existe uma maneira de declarar no seu código (nesse caso, suas *funções de operação de rota*) para declarar as coisas que ele precisa para funcionar e que serão utilizadas: "dependências".
 
-Então, esse sistema (nesse caso o **readyapi**) se encarrega de fazer o que for preciso para fornecer essas dependências para o código ("injetando" as dependências).
+Então, esse sistema (nesse caso o **ReadyAPI**) se encarrega de fazer o que for preciso para fornecer essas dependências para o código ("injetando" as dependências).
 
 Isso é bastante útil quando você precisa:
 
@@ -53,11 +53,11 @@ E então retorna um `dict` contendo esses valores.
 
 /// info | Informação
 
-readyapi passou a suportar a notação `Annotated` (e começou a recomendá-la) na versão 0.95.0.
+ReadyAPI passou a suportar a notação `Annotated` (e começou a recomendá-la) na versão 0.95.0.
 
 Se você utiliza uma versão anterior, ocorrerão erros ao tentar utilizar `Annotated`.
 
-Certifique-se de [Atualizar a versão do readyapi](../../deployment/versions.md#atualizando-as-versoes-do-readyapi){.internal-link target=_blank} para pelo menos 0.95.1 antes de usar `Annotated`.
+Certifique-se de [Atualizar a versão do ReadyAPI](../../deployment/versions.md#atualizando-as-versoes-do-readyapi){.internal-link target=_blank} para pelo menos 0.95.1 antes de usar `Annotated`.
 
 ///
 
@@ -87,7 +87,7 @@ Você verá quais outras "coisas", além de funções, podem ser usadas como dep
 
 ///
 
-Sempre que uma nova requisição for realizada, o **readyapi** se encarrega de:
+Sempre que uma nova requisição for realizada, o **ReadyAPI** se encarrega de:
 
 * Chamar sua dependência ("injetável") com os parâmetros corretos.
 * Obter o resultado da função.
@@ -104,13 +104,13 @@ common_parameters --> read_items
 common_parameters --> read_users
 ```
 
-Assim, você escreve um código compartilhado apenas uma vez e o **readyapi** se encarrega de chamá-lo em suas *operações de rota*.
+Assim, você escreve um código compartilhado apenas uma vez e o **ReadyAPI** se encarrega de chamá-lo em suas *operações de rota*.
 
 /// check | Checando
 
-Perceba que você não precisa criar uma classe especial e enviar a dependência para algum outro lugar em que o **readyapi** a "registre" ou realize qualquer operação similar.
+Perceba que você não precisa criar uma classe especial e enviar a dependência para algum outro lugar em que o **ReadyAPI** a "registre" ou realize qualquer operação similar.
 
-Você apenas envia para `Depends` e o **readyapi** sabe como fazer o resto.
+Você apenas envia para `Depends` e o **ReadyAPI** sabe como fazer o resto.
 
 ///
 
@@ -130,9 +130,9 @@ Mas como estamos utilizando `Annotated`, podemos guardar esse valor `Annotated` 
 
 /// tip | Dica
 
-Isso é apenas Python padrão, essa funcionalidade é chamada de "type alias", e na verdade não é específica ao **readyapi**.
+Isso é apenas Python padrão, essa funcionalidade é chamada de "type alias", e na verdade não é específica ao **ReadyAPI**.
 
-Mas como o **readyapi** se baseia em convenções do Python, incluindo `Annotated`, você pode incluir esse truque no seu código. 😎
+Mas como o **ReadyAPI** se baseia em convenções do Python, incluindo `Annotated`, você pode incluir esse truque no seu código. 😎
 
 ///
 
@@ -142,13 +142,13 @@ Isso é especialmente útil para uma **base de código grande** onde **as mesmas
 
 ## `Async` ou não, eis a questão
 
-Como as dependências também serão chamadas pelo **readyapi** (da mesma forma que *funções de operação de rota*), as mesmas regras se aplicam ao definir suas funções.
+Como as dependências também serão chamadas pelo **ReadyAPI** (da mesma forma que *funções de operação de rota*), as mesmas regras se aplicam ao definir suas funções.
 
 Você pode utilizar `async def` ou apenas `def`.
 
 E você pode declarar dependências utilizando `async def` dentro de *funções de operação de rota* definidas com `def`, ou declarar dependências com `def` e utilizar dentro de *funções de operação de rota* definidas com `async def`, etc.
 
-Não faz diferença. O **readyapi** sabe o que fazer.
+Não faz diferença. O **ReadyAPI** sabe o que fazer.
 
 /// note | Nota
 
@@ -166,13 +166,13 @@ Então, a documentação interativa também terá toda a informação sobre essa
 
 ## Caso de Uso Simples
 
-Se você parar para ver, *funções de operação de rota* são declaradas para serem usadas sempre que uma *rota* e uma *operação* se encaixam, e então o **readyapi** se encarrega de chamar a função correspondente com os argumentos corretos, extraindo os dados da requisição.
+Se você parar para ver, *funções de operação de rota* são declaradas para serem usadas sempre que uma *rota* e uma *operação* se encaixam, e então o **ReadyAPI** se encarrega de chamar a função correspondente com os argumentos corretos, extraindo os dados da requisição.
 
 Na verdade, todos (ou a maioria) dos frameworks web funcionam da mesma forma.
 
-Você nunca chama essas funções diretamente. Elas são chamadas pelo framework utilizado (nesse caso, **readyapi**).
+Você nunca chama essas funções diretamente. Elas são chamadas pelo framework utilizado (nesse caso, **ReadyAPI**).
 
-Com o Sistema de Injeção de Dependência, você também pode informar ao **readyapi** que sua *função de operação de rota* também "depende" em algo a mais que deve ser executado antes de sua *função de operação de rota*, e o **readyapi** se encarrega de executar e "injetar" os resultados.
+Com o Sistema de Injeção de Dependência, você também pode informar ao **ReadyAPI** que sua *função de operação de rota* também "depende" em algo a mais que deve ser executado antes de sua *função de operação de rota*, e o **ReadyAPI** se encarrega de executar e "injetar" os resultados.
 
 Outros termos comuns para essa mesma ideia de "injeção de dependência" são:
 
@@ -182,7 +182,7 @@ Outros termos comuns para essa mesma ideia de "injeção de dependência" são:
 * injetáveis
 * componentes
 
-## Plug-ins em **readyapi**
+## Plug-ins em **ReadyAPI**
 
 Integrações e "plug-ins" podem ser construídos com o sistema de **Injeção de Dependência**. Mas na verdade, **não há necessidade de criar "plug-ins"**, já que utilizando dependências é possível declarar um número infinito de integrações e interações que se tornam disponíveis para as suas *funções de operação de rota*.
 
@@ -190,9 +190,9 @@ E as dependências pode ser criadas de uma forma bastante simples e intuitiva qu
 
 Você verá exemplos disso nos próximos capítulos, acerca de bancos de dados relacionais e NoSQL, segurança, etc.
 
-## Compatibilidade do **readyapi**
+## Compatibilidade do **ReadyAPI**
 
-A simplicidade do sistema de injeção de dependência do **readyapi** faz ele compatível com:
+A simplicidade do sistema de injeção de dependência do **ReadyAPI** faz ele compatível com:
 
 * todos os bancos de dados relacionais
 * bancos de dados NoSQL
@@ -247,4 +247,4 @@ paying_user --> pro_items
 
 Todas essas dependências, ao declarar os requisitos para suas *operações de rota*, também adicionam parâmetros, validações, etc.
 
-O **readyapi** se encarrega de adicionar tudo isso ao esquema OpenAPI, para que seja mostrado nos sistemas de documentação interativa.
+O **ReadyAPI** se encarrega de adicionar tudo isso ao esquema OpenAPI, para que seja mostrado nos sistemas de documentação interativa.

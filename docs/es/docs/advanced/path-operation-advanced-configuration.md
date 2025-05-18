@@ -46,7 +46,7 @@ Para excluir una *path operation* del esquema OpenAPI generado (y por lo tanto, 
 
 Puedes limitar las líneas usadas del docstring de una *función de path operation* para OpenAPI.
 
-Añadir un `\f` (un carácter de separación de página escapado) hace que **readyapi** trunque la salida usada para OpenAPI en este punto.
+Añadir un `\f` (un carácter de separación de página escapado) hace que **ReadyAPI** trunque la salida usada para OpenAPI en este punto.
 
 No aparecerá en la documentación, pero otras herramientas (como Sphinx) podrán usar el resto.
 
@@ -64,7 +64,7 @@ Hay un capítulo entero en la documentación sobre ello, puedes leerlo en [Respo
 
 ## OpenAPI Extra
 
-Cuando declaras una *path operation* en tu aplicación, **readyapi** genera automáticamente los metadatos relevantes sobre esa *path operation* para incluirlos en el esquema de OpenAPI.
+Cuando declaras una *path operation* en tu aplicación, **ReadyAPI** genera automáticamente los metadatos relevantes sobre esa *path operation* para incluirlos en el esquema de OpenAPI.
 
 /// note | Nota
 
@@ -76,7 +76,7 @@ Tiene toda la información sobre la *path operation* y se usa para generar la do
 
 Incluye los `tags`, `parameters`, `requestBody`, `responses`, etc.
 
-Este esquema de OpenAPI específico de *path operation* normalmente se genera automáticamente por **readyapi**, pero también puedes extenderlo.
+Este esquema de OpenAPI específico de *path operation* normalmente se genera automáticamente por **ReadyAPI**, pero también puedes extenderlo.
 
 /// tip | Consejo
 
@@ -104,7 +104,7 @@ Y si ves el OpenAPI resultante (en `/openapi.json` en tu API), verás tu extensi
 {
     "openapi": "3.1.0",
     "info": {
-        "title": "readyapi",
+        "title": "ReadyAPI",
         "version": "0.1.0"
     },
     "paths": {
@@ -135,7 +135,7 @@ El diccionario en `openapi_extra` se combinará profundamente con el esquema de 
 
 Por lo tanto, podrías añadir datos adicionales al esquema generado automáticamente.
 
-Por ejemplo, podrías decidir leer y validar el request con tu propio código, sin usar las funcionalidades automáticas de readyapi con Pydantic, pero aún podrías querer definir el request en el esquema de OpenAPI.
+Por ejemplo, podrías decidir leer y validar el request con tu propio código, sin usar las funcionalidades automáticas de ReadyAPI con Pydantic, pero aún podrías querer definir el request en el esquema de OpenAPI.
 
 Podrías hacer eso con `openapi_extra`:
 
@@ -151,7 +151,7 @@ Usando este mismo truco, podrías usar un modelo Pydantic para definir el esquem
 
 Y podrías hacer esto incluso si el tipo de datos en el request no es JSON.
 
-Por ejemplo, en esta aplicación no usamos la funcionalidad integrada de readyapi para extraer el esquema JSON de los modelos Pydantic ni la validación automática para JSON. De hecho, estamos declarando el tipo de contenido del request como YAML, no JSON:
+Por ejemplo, en esta aplicación no usamos la funcionalidad integrada de ReadyAPI para extraer el esquema JSON de los modelos Pydantic ni la validación automática para JSON. De hecho, estamos declarando el tipo de contenido del request como YAML, no JSON:
 
 //// tab | Pydantic v2
 
@@ -173,7 +173,7 @@ En la versión 1 de Pydantic el método para obtener el esquema JSON para un mod
 
 Sin embargo, aunque no estamos usando la funcionalidad integrada por defecto, aún estamos usando un modelo Pydantic para generar manualmente el esquema JSON para los datos que queremos recibir en YAML.
 
-Luego usamos el request directamente, y extraemos el cuerpo como `bytes`. Esto significa que readyapi ni siquiera intentará parsear la carga útil del request como JSON.
+Luego usamos el request directamente, y extraemos el cuerpo como `bytes`. Esto significa que ReadyAPI ni siquiera intentará parsear la carga útil del request como JSON.
 
 Y luego en nuestro código, parseamos ese contenido YAML directamente, y nuevamente estamos usando el mismo modelo Pydantic para validar el contenido YAML:
 

@@ -1,8 +1,8 @@
 # Eine Response direkt zurückgeben
 
-Wenn Sie eine **readyapi** *Pfadoperation* erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
+Wenn Sie eine **ReadyAPI** *Pfadoperation* erstellen, können Sie normalerweise beliebige Daten davon zurückgeben: ein `dict`, eine `list`e, ein Pydantic-Modell, ein Datenbankmodell, usw.
 
-Standardmäßig konvertiert **readyapi** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=_blank} erläutert wird.
+Standardmäßig konvertiert **ReadyAPI** diesen Rückgabewert automatisch nach JSON, mithilfe des `jsonable_encoder`, der in [JSON-kompatibler Encoder](../tutorial/encoder.md){.internal-link target=_blank} erläutert wird.
 
 Dann würde es hinter den Kulissen diese JSON-kompatiblen Daten (z. B. ein `dict`) in eine `JSONResponse` einfügen, die zum Senden der Response an den Client verwendet würde.
 
@@ -20,7 +20,7 @@ Tatsächlich können Sie jede `Response` oder jede Unterklasse davon zurückgebe
 
 ///
 
-Und wenn Sie eine `Response` zurückgeben, wird **readyapi** diese direkt weiterleiten.
+Und wenn Sie eine `Response` zurückgeben, wird **ReadyAPI** diese direkt weiterleiten.
 
 Es wird keine Datenkonvertierung mit Pydantic-Modellen durchführen, es wird den Inhalt nicht in irgendeinen Typ konvertieren, usw.
 
@@ -28,7 +28,7 @@ Dadurch haben Sie viel Flexibilität. Sie können jeden Datentyp zurückgeben, j
 
 ## Verwendung des `jsonable_encoder` in einer `Response`
 
-Da **readyapi** keine Änderungen an einer von Ihnen zurückgegebenen `Response` vornimmt, müssen Sie sicherstellen, dass deren Inhalt dafür bereit ist.
+Da **ReadyAPI** keine Änderungen an einer von Ihnen zurückgegebenen `Response` vornimmt, müssen Sie sicherstellen, dass deren Inhalt dafür bereit ist.
 
 Sie können beispielsweise kein Pydantic-Modell in eine `JSONResponse` einfügen, ohne es zuvor in ein `dict` zu konvertieren, bei dem alle Datentypen (wie `datetime`, `UUID`, usw.) in JSON-kompatible Typen konvertiert wurden.
 
@@ -40,13 +40,13 @@ In diesen Fällen können Sie den `jsonable_encoder` verwenden, um Ihre Daten zu
 
 Sie können auch `from starlette.responses import JSONResponse` verwenden.
 
-**readyapi** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
+**ReadyAPI** bietet dieselben `starlette.responses` auch via `readyapi.responses` an, als Annehmlichkeit für Sie, den Entwickler. Die meisten verfügbaren Responses kommen aber direkt von Starlette.
 
 ///
 
 ## Eine benutzerdefinierte `Response` zurückgeben
 
-Das obige Beispiel zeigt alle Teile, die Sie benötigen, ist aber noch nicht sehr nützlich, da Sie das `item` einfach direkt hätten zurückgeben können, und **readyapi** würde es für Sie in eine `JSONResponse` einfügen, es in ein `dict` konvertieren, usw. All das standardmäßig.
+Das obige Beispiel zeigt alle Teile, die Sie benötigen, ist aber noch nicht sehr nützlich, da Sie das `item` einfach direkt hätten zurückgeben können, und **ReadyAPI** würde es für Sie in eine `JSONResponse` einfügen, es in ein `dict` konvertieren, usw. All das standardmäßig.
 
 Sehen wir uns nun an, wie Sie damit eine benutzerdefinierte Response zurückgeben können.
 

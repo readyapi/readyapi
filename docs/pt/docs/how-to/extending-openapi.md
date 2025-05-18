@@ -8,7 +8,7 @@ Nesta seção, você verá como fazer isso.
 
 O processo normal (padrão) é o seguinte:
 
-Uma aplicação (instância) do `readyapi` possui um método `.openapi()` que deve retornar o esquema OpenAPI.
+Uma aplicação (instância) do `ReadyAPI` possui um método `.openapi()` que deve retornar o esquema OpenAPI.
 
 Como parte da criação do objeto de aplicação, uma *operação de rota* para `/openapi.json` (ou para o que você definir como `openapi_url`) é registrada.
 
@@ -29,7 +29,7 @@ E essa função `get_openapi()` recebe como parâmetros:
 
 /// info | Informação
 
-O parâmetro `summary` está disponível no OpenAPI 3.1.0 e superior, suportado pelo readyapi 0.99.0 e superior.
+O parâmetro `summary` está disponível no OpenAPI 3.1.0 e superior, suportado pelo ReadyAPI 0.99.0 e superior.
 
 ///
 
@@ -39,9 +39,9 @@ Com as informações acima, você pode usar a mesma função utilitária para ge
 
 Por exemplo, vamos adicionar <a href="https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md#x-logo" class="external-link" target="_blank">Extensão OpenAPI do ReDoc para incluir um logo personalizado</a>.
 
-### **readyapi** Normal
+### **ReadyAPI** Normal
 
-Primeiro, escreva toda a sua aplicação **readyapi** normalmente:
+Primeiro, escreva toda a sua aplicação **ReadyAPI** normalmente:
 
 {* ../../docs_src/extending_openapi/tutorial001.py hl[1,4,7:9] *}
 
@@ -75,6 +75,6 @@ Agora, você pode substituir o método `.openapi()` pela sua nova função.
 
 ### Verificar
 
-Uma vez que você acessar <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>, verá que está usando seu logo personalizado (neste exemplo, o logo do **readyapi**):
+Uma vez que você acessar <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_blank">http://127.0.0.1:8000/redoc</a>, verá que está usando seu logo personalizado (neste exemplo, o logo do **ReadyAPI**):
 
 <img src="/docs/en/docs/img/tutorial/extending-openapi/image01.png">

@@ -2,7 +2,7 @@
 
 🆎 🈸 👆 💪 💚 🚮 🔗 🎂 🈸.
 
-🎏 🌌 👆 💪 [🚮 `dependencies` *➡ 🛠️ 👨‍🎨*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, 👆 💪 🚮 👫 `readyapi` 🈸.
+🎏 🌌 👆 💪 [🚮 `dependencies` *➡ 🛠️ 👨‍🎨*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank}, 👆 💪 🚮 👫 `ReadyAPI` 🈸.
 
 👈 💼, 👫 🔜 ✔ 🌐 *➡ 🛠️* 🈸:
 

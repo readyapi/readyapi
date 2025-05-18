@@ -4,17 +4,17 @@
 
 🏗 🚂 🔜 🕧 ✔️ 📶 🙃 🖥 👈 👆 🔜 ℹ &amp; 🛠️ 👆 👍 💪, ✋️ ⚫️ 💪 👍 ▶️ ☝ 👆 🏗.
 
-## 🌕 📚 readyapi ✳
+## 🌕 📚 ReadyAPI ✳
 
 📂: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-postgresql</a>
 
-### 🌕 📚 readyapi ✳ - ⚒
+### 🌕 📚 ReadyAPI ✳ - ⚒
 
 * 🌕 **☁** 🛠️ (☁ 🧢).
 * ☁ 🐝 📳 🛠️.
 * **☁ ✍** 🛠️ &amp; 🛠️ 🇧🇿 🛠️.
 * **🏭 🔜** 🐍 🕸 💽 ⚙️ Uvicorn &amp; 🐁.
-* 🐍 <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**readyapi**</a> 👩‍💻:
+* 🐍 <a href="https://github.com/readyapi/readyapi" class="external-link" target="_blank">**ReadyAPI**</a> 👩‍💻:
     * **⏩**: 📶 ↕ 🎭, 🔛 🇷🇪 ⏮️ **✳** &amp; **🚶** (👏 💃 &amp; Pydantic).
     * **🏋️**: 👑 👨‍🎨 🐕‍🦺. <abbr title="also known as auto-complete, autocompletion, IntelliSense">🛠️</abbr> 🌐. 🌘 🕰 🛠️.
     * **⏩**: 🔧 ⏩ ⚙️ &amp; 💡. 🌘 🕰 👂 🩺.
@@ -52,7 +52,7 @@
 * Traefik 🛠️, ✅ ➡️ 🗜 **🇺🇸🔍** 📄 🏧 ⚡.
 * ✳ **🆑** (🔁 🛠️), 🔌 🕸 &amp; 👩‍💻 🔬.
 
-## 🌕 📚 readyapi 🗄
+## 🌕 📚 ReadyAPI 🗄
 
 📂: <a href="https://github.com/khulnasoft/full-stack-readyapi-couchbase" class="external-link" target="_blank">https://github.com/khulnasoft/full-stack-readyapi-couchbase</a>
 
@@ -60,21 +60,21 @@
 
 🚥 👆 ▶️ 🆕 🏗 ⚪️➡️ 🖌, ✅ 🎛 📥.
 
-🖼, 🏗 🚂 <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">🌕 📚 readyapi ✳</a> 💪 👍 🎛, ⚫️ 🎯 🚧 &amp; ⚙️. &amp; ⚫️ 🔌 🌐 🆕 ⚒ &amp; 📈.
+🖼, 🏗 🚂 <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" class="external-link" target="_blank">🌕 📚 ReadyAPI ✳</a> 💪 👍 🎛, ⚫️ 🎯 🚧 &amp; ⚙️. &amp; ⚫️ 🔌 🌐 🆕 ⚒ &amp; 📈.
 
 👆 🆓 ⚙️ 🗄-⚓️ 🚂 🚥 👆 💚, ⚫️ 🔜 🎲 👷 👌, &amp; 🚥 👆 ⏪ ✔️ 🏗 🏗 ⏮️ ⚫️ 👈 👌 👍 (&amp; 👆 🎲 ⏪ ℹ ⚫️ ♣ 👆 💪).
 
 👆 💪 ✍ 🌅 🔃 ⚫️ 🩺 🏦.
 
-## 🌕 📚 readyapi ✳
+## 🌕 📚 ReadyAPI ✳
 
 ...💪 👟 ⏪, ⚓️ 🔛 👇 🕰 🚚 &amp; 🎏 ⚖. 👶 👶
 
-## 🎰 🏫 🏷 ⏮️ 🌈 &amp; readyapi
+## 🎰 🏫 🏷 ⏮️ 🌈 &amp; ReadyAPI
 
 📂: <a href="https://github.com/microsoft/cookiecutter-spacy-readyapi" class="external-link" target="_blank">https://github.com/microsoft/cookiecutter-spacy-readyapi</a>
 
-### 🎰 🏫 🏷 ⏮️ 🌈 &amp; readyapi - ⚒
+### 🎰 🏫 🏷 ⏮️ 🌈 &amp; ReadyAPI - ⚒
 
 * **🌈** 🕜 🏷 🛠️.
 * **☁ 🧠 🔎** 📨 📁 🏗.
