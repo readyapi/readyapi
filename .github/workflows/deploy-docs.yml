@@ -119,13 +119,34 @@ jobs:
     outputs:
       langs: ${{ steps.show-langs.outputs.langs }}
     steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.4.15"
+          enable-cache: true
+          cache-dependency-glob: |
+            requirements**.txt
+            pyproject.toml
       - name: Install docs extras
-        run: uv pip install -r requirements-docs.txt
+        run: |
+          uv pip install -r requirements-docs.txt
       - name: Install Material for MkDocs Insiders
         if: ( github.event_name != 'pull_request' || github.secret_source == 'Actions' )
-        run: uv pip install -r requirements-docs-insiders.txt
+        run: |
+          uv pip install -r requirements-docs-insiders.txt
         env:
           TOKEN: ${{ secrets.READYAPI_MKDOCS_MATERIAL }}
+      - name: Verify Docs
+        run: python ./scripts/docs.py verify-docs
+      - name: Export Language Codes
+        id: show-langs
+        run: |
+          echo "langs=$(python ./scripts/docs.py langs-json)" >> $GITHUB_OUTPUT
 
   build-docs:
     runs-on: ubuntu-latest
