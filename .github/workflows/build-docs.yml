@@ -82,7 +82,7 @@ jobs:
       - langs
     # Only run on specific branches or with specific conditions
     if: |
-      needs.changes.outputs.docs == 'true' && 
+      needs.changes.outputs.docs == 'true' &&
       (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     strategy:
