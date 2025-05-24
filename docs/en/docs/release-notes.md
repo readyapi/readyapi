@@ -32,6 +32,7 @@ hide:
 
 ### Internal
 
+* Pre commit. PR [#220](https://github.com/readyapi/readyapi/pull/220) by [@gitworkflows](https://github.com/gitworkflows).
 * 👷 Add custom pre-commit. PR [#219](https://github.com/readyapi/readyapi/pull/219) by [@gitworkflows](https://github.com/gitworkflows).
 * 🔧 Update sponsors: add Subtotal. PR [#13701](https://github.com/readyapi/readyapi/pull/13701) by [@khulnasoft](https://github.com/khulnasoft).
 * 🔧 Update sponsors: remove deepset / Haystack. PR [#13700](https://github.com/readyapi/readyapi/pull/13700) by [@khulnasoft](https://github.com/khulnasoft).
