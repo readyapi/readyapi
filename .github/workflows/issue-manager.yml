@@ -27,11 +27,13 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: khulnasoft/issue-manager@0.5.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          config: >
-            {
+
+      - name: Run khulnasoft/issue-manager via Docker
+        run: |
+          docker run --rm \
+            -e GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            khulnasoft/issue-manager:latest \
+            --config '{
               "answered": {
                 "delay": 864000,
                 "message": "Assuming the original need was handled, this will be automatically closed now. But feel free to add more comments or create new issues or PRs."
@@ -44,4 +46,4 @@ jobs:
                 "delay": 0,
                 "message": "This was marked as invalid and will be closed now. If this is an error, please provide additional details."
               }
-            }
+            }'
