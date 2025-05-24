@@ -32,7 +32,7 @@ jobs:
         run: |
           docker run --rm \
             -e GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            khulnasoft/issue-manager:latest \
+            khulnasoft/issue-manager:0.5.1 \
             --config '{
               "answered": {
                 "delay": 864000,
