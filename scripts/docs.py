@@ -51,30 +51,37 @@ index_sponsors_template = """
 {% endif %}
 """
 
+
 @lru_cache
 def is_mkdocs_insiders() -> bool:
     version = metadata.version("mkdocs-material")
     return "insiders" in version
 
+
 def get_en_config() -> Dict[str, Any]:
     return mkdocs.utils.yaml_load(en_config_path.read_text(encoding="utf-8"))
+
 
 def get_lang_paths() -> List[Path]:
     return sorted(docs_path.iterdir())
 
+
 def lang_callback(lang: Optional[str]) -> Union[str, None]:
     return lang.lower() if lang else None
+
 
 def complete_existing_lang(incomplete: str):
     for lang_path in get_lang_paths():
         if lang_path.is_dir() and lang_path.name.startswith(incomplete):
             yield lang_path.name
 
+
 @app.callback()
 def callback() -> None:
     if is_mkdocs_insiders():
         os.environ["INSIDERS_FILE"] = "../en/mkdocs.insiders.yml"
     os.environ["DYLD_FALLBACK_LIBRARY_PATH"] = "/opt/homebrew/lib"
+
 
 @app.command()
 def new_lang(lang: str = cligenius.Argument(..., callback=lang_callback)):
@@ -89,11 +96,18 @@ def new_lang(lang: str = cligenius.Argument(..., callback=lang_callback)):
     new_index = new_path / "docs" / "index.md"
     content = f"{missing_translation_snippet}\n\n{en_index.read_text('utf-8')}"
     new_index.write_text(content, encoding="utf-8")
-    cligenius.secho(f"Successfully initialized: {new_path}", color=cligenius.colors.GREEN)
+    cligenius.secho(
+        f"Successfully initialized: {new_path}", color=cligenius.colors.GREEN
+    )
     update_languages()
 
+
 @app.command()
-def build_lang(lang: str = cligenius.Argument(..., callback=lang_callback, autocompletion=complete_existing_lang)):
+def build_lang(
+    lang: str = cligenius.Argument(
+        ..., callback=lang_callback, autocompletion=complete_existing_lang
+    ),
+):
     cligenius.echo(f"Building docs for: {lang}")
     lang_path = Path("docs") / lang
     if not lang_path.is_dir():
@@ -108,10 +122,15 @@ def build_lang(lang: str = cligenius.Argument(..., callback=lang_callback, autoc
     shutil.rmtree(build_site_dist_path, ignore_errors=True)
 
     os.chdir(lang_path)
-    subprocess.run(["mkdocs", "build", "--site-dir", str(build_site_dist_path)], check=True)
+    subprocess.run(
+        ["mkdocs", "build", "--site-dir", str(build_site_dist_path)], check=True
+    )
     shutil.copytree(build_site_dist_path, dist_path, dirs_exist_ok=True)
     os.chdir("..")
-    cligenius.secho(f"Successfully built docs for: {lang}", color=cligenius.colors.GREEN)
+    cligenius.secho(
+        f"Successfully built docs for: {lang}", color=cligenius.colors.GREEN
+    )
+
 
 def generate_readme_content() -> str:
     en_index = en_docs_path / "docs" / "index.md"
@@ -121,30 +140,43 @@ def generate_readme_content() -> str:
     match_end = re.search(r"<!-- /sponsors -->", content)
     if not (match_start and match_end and match_pre):
         raise RuntimeError("Failed to parse sponsors section in index.md")
-    sponsors_data = mkdocs.utils.yaml_load((en_docs_path / "data/sponsors.yml").read_text("utf-8"))
+    sponsors_data = mkdocs.utils.yaml_load(
+        (en_docs_path / "data/sponsors.yml").read_text("utf-8")
+    )
     message = Template(index_sponsors_template).render(sponsors=sponsors_data)
 
     new_content = (
-        content[match_pre.end():match_start.end()]
+        content[match_pre.end() : match_start.end()]
         + message
-        + content[match_end.start():]
+        + content[match_end.start() :]
     )
-    return re.sub(r"<!-- only-mkdocs -->.*?<!-- /only-mkdocs -->", "", new_content, flags=re.DOTALL)
+    return re.sub(
+        r"<!-- only-mkdocs -->.*?<!-- /only-mkdocs -->",
+        "",
+        new_content,
+        flags=re.DOTALL,
+    )
+
 
 def _get_readme_path() -> Path:
     return Path("README.md")
 
+
 def _readme_needs_update() -> bool:
     return _get_readme_path().read_text("utf-8") != generate_readme_content()
 
+
 def _update_readme() -> None:
     _get_readme_path().write_text(generate_readme_content(), encoding="utf-8")
+
 
 @app.command()
 def verify_readme(auto_fix: bool = False) -> None:
     cligenius.echo("Verifying README.md...")
     if _readme_needs_update():
-        cligenius.secho("README.md is outdated from index.md", color=cligenius.colors.RED)
+        cligenius.secho(
+            "README.md is outdated from index.md", color=cligenius.colors.RED
+        )
         if auto_fix:
             _update_readme()
             cligenius.secho("README.md auto-fixed ✅", color=cligenius.colors.GREEN)
@@ -153,11 +185,13 @@ def verify_readme(auto_fix: bool = False) -> None:
     else:
         cligenius.echo("Valid README ✅")
 
+
 @app.command()
 def fix_readme() -> None:
     cligenius.echo("Fixing README.md...")
     _update_readme()
     cligenius.secho("README.md updated ✅", color=cligenius.colors.GREEN)
+
 
 @app.command()
 def build_all() -> None:
@@ -167,9 +201,11 @@ def build_all() -> None:
     with Pool((os.cpu_count() or 1) * 4) as p:
         p.map(build_lang, langs)
 
+
 @app.command()
 def update_languages() -> None:
     update_config()
+
 
 @app.command()
 def serve() -> None:
@@ -178,14 +214,23 @@ def serve() -> None:
     cligenius.echo("Serving at http://127.0.0.1:8008")
     server.serve_forever()
 
+
 @app.command()
-def live(lang: str = cligenius.Argument(None, callback=lang_callback, autocompletion=complete_existing_lang), dirty: bool = False) -> None:
+def live(
+    lang: str = cligenius.Argument(
+        None, callback=lang_callback, autocompletion=complete_existing_lang
+    ),
+    dirty: bool = False,
+) -> None:
     if lang is None:
         lang = "en"
     args = ["mkdocs", "serve", "--dev-addr", "127.0.0.1:8008"]
     if dirty:
         args.append("--dirty")
-    subprocess.run(args, env={**os.environ, "LINENUMS": "true"}, cwd=docs_path / lang, check=True)
+    subprocess.run(
+        args, env={**os.environ, "LINENUMS": "true"}, cwd=docs_path / lang, check=True
+    )
+
 
 def get_updated_config_content() -> Dict[str, Any]:
     config = get_en_config()
@@ -202,13 +247,19 @@ def get_updated_config_content() -> Dict[str, Any]:
         languages.append({code: f"/{code}/"})
     config["extra"]["alternate"] = [
         {"link": url, "name": f"{code} - {local_names[code]}"}
-        for lang in languages for code, url in lang.items()
+        for lang in languages
+        for code, url in lang.items()
     ] + [{"link": "/em/", "name": "😉"}]
     return config
 
+
 def update_config() -> None:
     config = get_updated_config_content()
-    en_config_path.write_text(yaml.dump(config, sort_keys=False, width=200, allow_unicode=True), encoding="utf-8")
+    en_config_path.write_text(
+        yaml.dump(config, sort_keys=False, width=200, allow_unicode=True),
+        encoding="utf-8",
+    )
+
 
 @app.command()
 def verify_config() -> None:
@@ -217,6 +268,7 @@ def verify_config() -> None:
         cligenius.secho("docs/en/mkdocs.yml is outdated", color=cligenius.colors.RED)
         raise cligenius.Abort()
     cligenius.echo("Valid mkdocs.yml ✅")
+
 
 @app.command()
 def verify_non_translated() -> None:
@@ -235,16 +287,19 @@ def verify_non_translated() -> None:
         raise cligenius.Abort()
     cligenius.echo("No non-translated pages found ✅")
 
+
 @app.command()
 def verify_docs():
     verify_readme()
     verify_config()
     verify_non_translated()
 
+
 @app.command()
 def langs_json():
     langs = [lang.name for lang in get_lang_paths() if lang.is_dir()]
     print(json.dumps(langs))
+
 
 @app.command()
 def generate_docs_src_versions_for_file(file_path: Path) -> None:
@@ -253,19 +308,28 @@ def generate_docs_src_versions_for_file(file_path: Path) -> None:
     seen = {base_content}
     for version in targets:
         result = subprocess.run(
-            [find_ruff_bin(), "check", "--target-version", version, "--fix", "--unsafe-fixes", "-"],
+            [
+                find_ruff_bin(),
+                "check",
+                "--target-version",
+                version,
+                "--fix",
+                "--unsafe-fixes",
+                "-",
+            ],
             input=base_content.encode("utf-8"),
-            capture_output=True
+            capture_output=True,
         )
         formatted = subprocess.run(
-            [find_ruff_bin(), "format", "-"],
-            input=result.stdout,
-            capture_output=True
+            [find_ruff_bin(), "format", "-"], input=result.stdout, capture_output=True
         ).stdout.decode("utf-8")
         if formatted not in seen:
             seen.add(formatted)
-            versioned_file = file_path.with_name(file_path.name.replace(".py", f"_{version}.py"))
+            versioned_file = file_path.with_name(
+                file_path.name.replace(".py", f"_{version}.py")
+            )
             versioned_file.write_text(formatted, encoding="utf-8")
+
 
 if __name__ == "__main__":
     app()
