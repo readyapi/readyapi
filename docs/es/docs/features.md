@@ -17,11 +17,11 @@ Interfaces web de documentación y exploración de APIs interactivas. Como el fr
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, con exploración interactiva, llama y prueba tu API directamente desde el navegador.
 
-![Interacción Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Interacción Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Documentación alternativa de API con <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Solo Python moderno
 
@@ -85,11 +85,11 @@ Aquí está cómo tu editor podría ayudarte:
 
 * en <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![soporte del editor](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![soporte del editor](https://readyapi.github.io/img/vscode-completion.png)
 
 * en <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![soporte del editor](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![soporte del editor](https://readyapi.github.io/img/pycharm-completion.png)
 
 Obtendrás autocompletado en código que podrías considerar imposible antes. Por ejemplo, la clave `price` dentro de un cuerpo JSON (que podría haber estado anidado) que proviene de un request.
 

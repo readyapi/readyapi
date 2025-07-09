@@ -76,7 +76,7 @@ API 文档中也会显示相关概图：
 
     与往常一样，在 ReadyAPI 中，可以按需组合普通函数与异步函数；
 
-    如果不清楚何时使用异步函数或普通函数，请参阅**急不可待？**一节中对 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank" class="internal-link">`async` 与 `await`</a> 的说明；
+    如果不清楚何时使用异步函数或普通函数，请参阅**急不可待？**一节中对 <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank" class="internal-link">`async` 与 `await`</a> 的说明；
 
 9. *路径操作函数*返回的不是数据类（虽然它可以返回数据类），而是返回内含数据的字典列表；
 

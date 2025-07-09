@@ -341,7 +341,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 여러분은 자동으로 생성된 인터랙티브 API(<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>에서 제공된)를 볼 수 있습니다:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## 대안 API 문서
 
@@ -349,7 +349,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 여러분은 자동으로 생성된 대안 문서(<a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>에서 제공된)를 볼 수 있습니다:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 단일 파일 ReadyAPI로 도커 이미지 생성하기
 

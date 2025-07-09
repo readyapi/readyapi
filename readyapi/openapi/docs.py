@@ -71,7 +71,7 @@ def get_swagger_ui_html(
             The URL of the favicon to use. It is normally shown in the browser tab.
             """
         ),
-    ] = "https://readyapi.khulnasoft.com/img/favicon.png",
+    ] = "https://readyapi.github.io/img/favicon.png",
     oauth2_redirect_url: Annotated[
         Optional[str],
         Doc(
@@ -107,8 +107,8 @@ def get_swagger_ui_html(
     for example the URLs to use to load Swagger UI's JavaScript and CSS.
 
     Read more about it in the
-    [ReadyAPI docs for Configure Swagger UI](https://readyapi.khulnasoft.com/how-to/configure-swagger-ui/)
-    and the [ReadyAPI docs for Custom Docs UI Static Assets (Self-Hosting)](https://readyapi.khulnasoft.com/how-to/custom-docs-ui-assets/).
+    [ReadyAPI docs for Configure Swagger UI](https://readyapi.github.io/how-to/configure-swagger-ui/)
+    and the [ReadyAPI docs for Custom Docs UI Static Assets (Self-Hosting)](https://readyapi.github.io/how-to/custom-docs-ui-assets/).
     """
     current_swagger_ui_parameters = swagger_ui_default_parameters.copy()
     if swagger_ui_parameters:
@@ -196,7 +196,7 @@ def get_redoc_html(
             The URL of the favicon to use. It is normally shown in the browser tab.
             """
         ),
-    ] = "https://readyapi.khulnasoft.com/img/favicon.png",
+    ] = "https://readyapi.github.io/img/favicon.png",
     with_google_fonts: Annotated[
         bool,
         Doc(
@@ -214,7 +214,7 @@ def get_redoc_html(
     for example the URLs to use to load ReDoc's JavaScript and CSS.
 
     Read more about it in the
-    [ReadyAPI docs for Custom Docs UI Static Assets (Self-Hosting)](https://readyapi.khulnasoft.com/how-to/custom-docs-ui-assets/).
+    [ReadyAPI docs for Custom Docs UI Static Assets (Self-Hosting)](https://readyapi.github.io/how-to/custom-docs-ui-assets/).
     """
     html = f"""
     <!DOCTYPE html>

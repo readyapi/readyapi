@@ -80,7 +80,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 你將看到自動的互動式 API 文件（由 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> 提供）：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### 替代 API 文件
 
@@ -88,7 +88,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 你將看到另一種自動文件（由 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> 提供）：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ### OpenAPI
 

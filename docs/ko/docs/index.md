@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI 프레임워크, 고성능, 간편한 학습, 빠른 코드 작성, 준비된 프로덕션</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**문서**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**문서**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **소스 코드**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -64,7 +64,7 @@ ReadyAPI는 현대적이고, 빠르며(고성능), 파이썬 표준 타입 힌�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">다른 스폰서</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">다른 스폰서</a>
 
 ## 의견들
 
@@ -194,7 +194,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Note**:
 
-잘 모르겠다면, <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">문서에서 `async`와 `await`</a>에 관한 _"급하세요?"_ 섹션을 확인해 보십시오.
+잘 모르겠다면, <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">문서에서 `async`와 `await`</a>에 관한 _"급하세요?"_ 섹션을 확인해 보십시오.
 
 </details>
 
@@ -250,7 +250,7 @@ INFO:     Application startup complete.
 
 자동 대화형 API 문서를 볼 수 있습니다 (<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> 제공):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### 대안 API 문서
 
@@ -258,7 +258,7 @@ INFO:     Application startup complete.
 
 다른 자동 문서를 볼 수 있습니다(<a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> 제공):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 예제 심화
 
@@ -304,15 +304,15 @@ def update_item(item_id: int, item: Item):
 
 * 대화형 API 문서가 새 본문과 함께 자동으로 업데이트 합니다:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * "Try it out" 버튼을 클릭하면, 매개변수를 채울 수 있게 해주고 직접 API와 상호작용 할 수 있습니다:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * 그러고 나서 "Execute" 버튼을 누르면, 사용자 인터페이스는 API와 통신하고 매개변수를 전송하며 그 결과를 가져와서 화면에 표시합니다:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### 대안 API 문서 업그레이드
 
@@ -320,7 +320,7 @@ def update_item(item_id: int, item: Item):
 
 * 대안 문서 역시 새 쿼리 매개변수와 본문을 반영합니다:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 요약
 
@@ -415,9 +415,9 @@ item: Item
 
 ...그러고 나서 여러분의 편집기가 속성과 타입을 알고 자동 완성하는지 보십시오:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-더 많은 기능을 포함한 보다 완전한 예제의 경우, <a href="https://readyapi.khulnasoft.com/tutorial/">튜토리얼 - 사용자 가이드</a>를 보십시오.
+더 많은 기능을 포함한 보다 완전한 예제의 경우, <a href="https://readyapi.github.io/tutorial/">튜토리얼 - 사용자 가이드</a>를 보십시오.
 
 **스포일러 주의**: 튜토리얼 - 사용자 가이드는:
 
@@ -438,7 +438,7 @@ item: Item
 
 독립된 TechEmpower 벤치마크에서 Uvicorn에서 작동하는 ReadyAPI 어플리케이션이 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">사용 가능한 가장 빠른 프레임워크 중 하나</a>로 Starlette와 Uvicorn(ReadyAPI에서 내부적으로 사용)에만 밑돌고 있습니다. (*)
 
-자세한 내용은 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">벤치마크</a> 섹션을 보십시오.
+자세한 내용은 <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">벤치마크</a> 섹션을 보십시오.
 
 ## 선택가능한 의존성
 

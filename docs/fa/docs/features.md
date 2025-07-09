@@ -17,11 +17,11 @@
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>، با <abbr title="interactive exploration">کاوش تعاملی</abbr>، API خود را مستقیما از طریق مرورگر صدازده و تست کنید.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * مستندات API جایگزین با <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### فقط پایتون مدرن
 
@@ -85,11 +85,11 @@ my_second_user: User = User(**second_user_data)
 
 * در <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * در <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 شما پیشنهاد های تکمیل خودکاری را خواهید گرفت که حتی ممکن است قبلا آن را غیرممکن تصور میکردید. به عنوان مثال کلید `price` در داخل بدنه JSON (که میتوانست تودرتو نیز باشد) که از یک درخواست آمده است.
 

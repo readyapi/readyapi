@@ -77,11 +77,11 @@ ReadyAPI 将使用此 `response_model` 来：
 
 当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-model/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/response-model/image01.png">
 
 并且两种模型都将在交互式 API 文档中使用：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-model/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/response-model/image02.png">
 
 ## 响应模型编码参数
 

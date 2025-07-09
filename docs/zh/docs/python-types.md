@@ -58,7 +58,7 @@ John Doe
 
 但遗憾的是并没有起什么作用：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image01.png">
+<img src="https://readyapi.github.io/img/python-types/image01.png">
 
 ### 添加类型
 
@@ -99,11 +99,11 @@ John Doe
 
 在同样的地方，通过 `Ctrl+Space` 触发自动补全，你会发现：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image02.png">
+<img src="https://readyapi.github.io/img/python-types/image02.png">
 
 这样，你可以滚动查看选项，直到你找到看起来眼熟的那个：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image03.png">
+<img src="https://readyapi.github.io/img/python-types/image03.png">
 
 ## 更多动机
 
@@ -114,7 +114,7 @@ John Doe
 
 因为编辑器已经知道了这些变量的类型，所以不仅能对代码进行补全，还能检查其中的错误：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image04.png">
+<img src="https://readyapi.github.io/img/python-types/image04.png">
 
 现在你知道了必须先修复这个问题，通过 `str(age)` 把 `age` 转换成字符串：
 
@@ -173,7 +173,7 @@ John Doe
 
 没有类型，几乎是不可能实现下面这样：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image05.png">
+<img src="https://readyapi.github.io/img/python-types/image05.png">
 
 注意，变量 `item` 是列表 `items` 中的元素之一。
 
@@ -224,7 +224,7 @@ John Doe
 
 然后，你将再次获得所有的编辑器支持：
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image06.png">
+<img src="https://readyapi.github.io/img/python-types/image06.png">
 
 ## Pydantic 模型
 

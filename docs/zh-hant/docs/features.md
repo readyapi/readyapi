@@ -17,11 +17,11 @@ ReadyAPI 能生成互動式 API 文件和探索性的 Web 使用者介面。由�
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a> 提供互動式探索，讓你可以直接從瀏覽器呼叫並測試你的 API 。
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a> 提供結構性的文件，讓你可以在瀏覽器中查看。
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 
 ### 現代 Python
@@ -88,11 +88,11 @@ my_second_user: User = User(**second_user_data)
 
 * <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a> 中:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> 中:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 你將能進行程式碼補齊，這是在之前你可能曾認為不可能的事。例如，請求 JSON body（可能是巢狀的）中的鍵 `price`。
 

@@ -36,7 +36,7 @@
 
 これらはOpenAPIスキーマに追加され、自動ドキュメントのインターフェースで使用されます:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/path-operation-configuration/image01.png">
 
 ## 概要と説明
 
@@ -54,7 +54,7 @@ docstringに<a href="https://en.wikipedia.org/wiki/Markdown" class="external-lin
 
 これは対話的ドキュメントで使用されます:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/path-operation-configuration/image02.png">
 
 ## レスポンスの説明
 
@@ -76,7 +76,7 @@ OpenAPIは*path operation*ごとにレスポンスの説明を必要としてい
 
 ///
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image03.png">
+<img src="https://readyapi.github.io/img/tutorial/path-operation-configuration/image03.png">
 
 ## 非推奨の*path operation*
 
@@ -86,11 +86,11 @@ OpenAPIは*path operation*ごとにレスポンスの説明を必要としてい
 
 対話的ドキュメントでは非推奨と明記されます:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image04.png">
+<img src="https://readyapi.github.io/img/tutorial/path-operation-configuration/image04.png">
 
 *path operations*が非推奨である場合とそうでない場合でどのように見えるかを確認してください:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/path-operation-configuration/image05.png">
+<img src="https://readyapi.github.io/img/tutorial/path-operation-configuration/image05.png">
 
 ## まとめ
 

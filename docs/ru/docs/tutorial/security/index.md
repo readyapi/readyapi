@@ -34,7 +34,7 @@ OAuth2 не указывает, как шифровать сообщение, о
 
 /// tip | Подсказка
 
-В разделе **Развертывание** вы увидите [как настроить протокол HTTPS бесплатно, используя Traefik и Let's Encrypt.](https://readyapi.khulnasoft.com/ru/deployment/https/)
+В разделе **Развертывание** вы увидите [как настроить протокол HTTPS бесплатно, используя Traefik и Let's Encrypt.](https://readyapi.github.io/ru/deployment/https/)
 
 ///
 

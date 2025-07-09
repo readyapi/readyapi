@@ -228,11 +228,11 @@ UserInDB(
 
 密码：`secret`
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image04.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image04.png">
 
 通过身份验证后，显示下图所示的内容：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image05.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image05.png">
 
 ### 获取当前用户数据
 
@@ -250,7 +250,7 @@ UserInDB(
 }
 ```
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image06.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image06.png">
 
 点击小锁图标，注销后，再执行同样的操作，则会得到 HTTP 401 错误：
 

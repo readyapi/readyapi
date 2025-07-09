@@ -17,11 +17,11 @@ Interactieve API-documentatie en verkenning van webgebruikersinterfaces. Aangezi
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, met interactieve interface, maakt het mogelijk je API rechtstreeks vanuit de browser aan te roepen en te testen.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Alternatieve API-documentatie met <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Gewoon Moderne Python
 
@@ -85,11 +85,11 @@ Zo kan je editor je helpen:
 
 * in <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![editor ondersteuning](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor ondersteuning](https://readyapi.github.io/img/vscode-completion.png)
 
 * in <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![editor ondersteuning](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor ondersteuning](https://readyapi.github.io/img/pycharm-completion.png)
 
 Je krijgt autocomletion die je voorheen misschien zelfs voor onmogelijk had gehouden. Zoals bijvoorbeeld de `price` key in een JSON body (die genest had kunnen zijn) die afkomstig is van een request.
 

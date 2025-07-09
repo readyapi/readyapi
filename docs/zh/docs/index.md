@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI 框架，高性能，易于学习，高效编码，生产可用</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**文档**： <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**文档**： <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **源码**： <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -64,7 +64,7 @@ ReadyAPI 是一个用于构建 API 的现代、快速（高性能）的 web 框�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
 
 ## 评价
 
@@ -196,7 +196,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Note**:
 
-如果你不知道是否会用到，可以查看文档的 _"In a hurry?"_ 章节中 <a href="https://readyapi.khulnasoft.com/zh/async/#in-a-hurry" target="_blank">关于 `async` 和 `await` 的部分</a>。
+如果你不知道是否会用到，可以查看文档的 _"In a hurry?"_ 章节中 <a href="https://readyapi.github.io/zh/async/#in-a-hurry" target="_blank">关于 `async` 和 `await` 的部分</a>。
 
 </details>
 
@@ -252,7 +252,7 @@ INFO:     Application startup complete.
 
 你会看到自动生成的交互式 API 文档（由 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>生成）：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### 可选的 API 文档
 
@@ -260,7 +260,7 @@ INFO:     Application startup complete.
 
 你会看到另一个自动生成的文档（由 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> 生成）：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 示例升级
 
@@ -306,15 +306,15 @@ def update_item(item_id: int, item: Item):
 
 * 交互式 API 文档将会自动更新，并加入新的请求体：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * 点击「Try it out」按钮，之后你可以填写参数并直接调用 API：
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * 然后点击「Execute」按钮，用户界面将会和 API 进行通信，发送参数，获取结果并在屏幕上展示：
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### 可选文档升级
 
@@ -322,7 +322,7 @@ def update_item(item_id: int, item: Item):
 
 * 可选文档同样会体现新加入的请求参数和请求体：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 总结
 
@@ -417,9 +417,9 @@ item: Item
 
 ......注意观察编辑器是如何自动补全属性并且还知道它们的类型：
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-<a href="https://readyapi.khulnasoft.com/zh/tutorial/">教程 - 用户指南</a> 中有包含更多特性的更完整示例。
+<a href="https://readyapi.github.io/zh/tutorial/">教程 - 用户指南</a> 中有包含更多特性的更完整示例。
 
 **剧透警告**： 教程 - 用户指南中的内容有：
 
@@ -440,7 +440,7 @@ item: Item
 
 独立机构 TechEmpower 所作的基准测试结果显示，基于 Uvicorn 运行的 **ReadyAPI** 程序是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python web 框架之一</a>，仅次于 Starlette 和 Uvicorn 本身（ReadyAPI 内部使用了它们）。(*)
 
-想了解更多，请查阅 <a href="https://readyapi.khulnasoft.com/zh/benchmarks/" class="internal-link" target="_blank">基准测试</a> 章节。
+想了解更多，请查阅 <a href="https://readyapi.github.io/zh/benchmarks/" class="internal-link" target="_blank">基准测试</a> 章节。
 
 ## 可选依赖
 

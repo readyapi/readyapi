@@ -199,7 +199,7 @@ def jsonable_encoder(
     in a database that supports only JSON.
 
     Read more about it in the
-    [ReadyAPI docs for JSON Compatible Encoder](https://readyapi.khulnasoft.com/tutorial/encoder/).
+    [ReadyAPI docs for JSON Compatible Encoder](https://readyapi.github.io/tutorial/encoder/).
     """
     custom_encoder = custom_encoder or {}
     if custom_encoder:

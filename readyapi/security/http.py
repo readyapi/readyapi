@@ -19,7 +19,7 @@ class HTTPBasicCredentials(BaseModel):
     dependency.
 
     Read more about it in the
-    [ReadyAPI docs for HTTP Basic Auth](https://readyapi.khulnasoft.com/advanced/security/http-basic-auth/).
+    [ReadyAPI docs for HTTP Basic Auth](https://readyapi.github.io/advanced/security/http-basic-auth/).
     """
 
     username: Annotated[str, Doc("The HTTP Basic username.")]
@@ -106,7 +106,7 @@ class HTTPBasic(HTTPBase):
     `username` and the `password`.
 
     Read more about it in the
-    [ReadyAPI docs for HTTP Basic Auth](https://readyapi.khulnasoft.com/advanced/security/http-basic-auth/).
+    [ReadyAPI docs for HTTP Basic Auth](https://readyapi.github.io/advanced/security/http-basic-auth/).
 
     ## Example
 

@@ -353,7 +353,7 @@ Dockerコンテナの<a href="http://192.168.99.100/items/5?q=somequery" class="
 
 アクセスすると、自動対話型APIドキュメント（<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>が提供）が表示されます：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## 代替のAPIドキュメント
 
@@ -361,7 +361,7 @@ Dockerコンテナの<a href="http://192.168.99.100/items/5?q=somequery" class="
 
 代替の自動ドキュメント（<a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>によって提供される）が表示されます：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 単一ファイルのReadyAPIでDockerイメージをビルドする
 

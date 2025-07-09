@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>فریم‌ورک ReadyAPI، کارایی بالا، یادگیری آسان، کدنویسی سریع، آماده برای استفاده در محیط پروداکشن</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**مستندات**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**مستندات**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **کد منبع**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -42,7 +42,7 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 * **<abbr title="Fewer bugs">باگ کمتر</abbr>**: کاهش ۴۰ درصدی خطاهای انسانی (برنامه‌نویسی). *
 * **<abbr title="Intuitive">هوشمندانه</abbr>**: پشتیبانی فوق‌العاده در محیط‌های توسعه یکپارچه (IDE). <abbr title="یا اتوکامپلیت، اتوکامپلشن، اینتلیسنس">تکمیل</abbr> در همه بخش‌های کد. کاهش زمان رفع باگ.
 * **<abbr title="Easy">آسان</abbr>**: طراحی شده برای یادگیری و استفاده آسان. کاهش زمان مورد نیاز برای مراجعه به مستندات.
-* **<abbr title="Short">کوچک</abbr>**: کاهش تکرار در کد. چندین قابلیت برای هر پارامتر (منظور پارامترهای ورودی تابع هندلر می‌باشد، به بخش <a href="https://readyapi.khulnasoft.com/#recap">خلاصه</a> در همین صفحه مراجعه شود). باگ کمتر.
+* **<abbr title="Short">کوچک</abbr>**: کاهش تکرار در کد. چندین قابلیت برای هر پارامتر (منظور پارامترهای ورودی تابع هندلر می‌باشد، به بخش <a href="https://readyapi.github.io/#recap">خلاصه</a> در همین صفحه مراجعه شود). باگ کمتر.
 * **<abbr title="Robust">استوار</abbr>**: ایجاد کدی آماده برای استفاده در محیط پروداکشن و تولید خودکار <abbr title="Interactive documentation">مستندات تعاملی</abbr>
 * **<abbr title="Standards-based">مبتنی بر استانداردها</abbr>**: مبتنی بر (و منطبق با) استانداردهای متن باز مربوط به API: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (سوگر سابق) و <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
 
@@ -60,7 +60,7 @@ ReadyAPI یک وب فریم‌ورک مدرن و سریع (با کارایی ب�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">دیگر اسپانسرها</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">دیگر اسپانسرها</a>
 
 ## نظر دیگران در مورد ReadyAPI
 
@@ -191,7 +191,7 @@ async def read_item(item_id: int, q: Optional[str] = None):
 
 **توجه**:
 
-اگر با `async / await` آشنا نیستید، به بخش _"عجله‌ دارید?"_ در صفحه درباره <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` و `await` در مستندات</a> مراجعه کنید.
+اگر با `async / await` آشنا نیستید، به بخش _"عجله‌ دارید?"_ در صفحه درباره <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` و `await` در مستندات</a> مراجعه کنید.
 
 
 </details>
@@ -248,7 +248,7 @@ INFO:     Application startup complete.
 
 مستندات API تعاملی (ایجاد شده به کمک <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>) را مشاهده خواهید کرد:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### مستندات API جایگزین
 
@@ -256,7 +256,7 @@ INFO:     Application startup complete.
 
 مستندات خودکار دیگری را مشاهده خواهید کرد که به کمک <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> ایجاد می‌شود:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## تغییر مثال
 
@@ -302,15 +302,15 @@ def update_item(item_id: int, item: Item):
 
 * مستندات API تعاملی به صورت خودکار به‌روز شده است و شامل بدنه تعریف شده در مرحله قبل است:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * روی دکمه "Try it out" کلیک کنید، اکنون می‌توانید پارامترهای مورد نیاز هر API را مشخص کرده و به صورت مستقیم با آنها تعامل کنید:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * سپس روی دکمه "Execute" کلیک کنید، خواهید دید که واسط کاربری با APIهای تعریف شده ارتباط برقرار کرده، پارامترهای مورد نیاز را به آن‌ها ارسال می‌کند، سپس نتایج را دریافت کرده و در صفحه نشان می‌دهد:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### تغییر مستندات API جایگزین
 
@@ -318,7 +318,7 @@ def update_item(item_id: int, item: Item):
 
 * خواهید دید که مستندات جایگزین نیز به‌روزرسانی شده و شامل پارامتر پرسمان و بدنه تعریف شده می‌باشد:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### خلاصه
 
@@ -413,9 +413,9 @@ item: Item
 
 در حین تایپ کردن توجه کنید که چگونه ویرایش‌گر، ویژگی‌های کلاس  `Item` را تشخیص داده و به تکمیل خودکار آنها کمک می‌کند:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-برای مشاهده مثال‌های کامل‌تر که شامل قابلیت‌های بیشتری از ReadyAPI باشد به بخش <a href="https://readyapi.khulnasoft.com/tutorial/">آموزش - راهنمای کاربر</a> مراجعه کنید.
+برای مشاهده مثال‌های کامل‌تر که شامل قابلیت‌های بیشتری از ReadyAPI باشد به بخش <a href="https://readyapi.github.io/tutorial/">آموزش - راهنمای کاربر</a> مراجعه کنید.
 
 **هشدار اسپویل**: بخش آموزش - راهنمای کاربر شامل موارد زیر است:
 
@@ -436,7 +436,7 @@ item: Item
 
 معیار (بنچمارک‌)های مستقل TechEmpower حاکی از آن است که برنامه‌های **ReadyAPI** که تحت Uvicorn اجرا می‌شود، <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">یکی از سریع‌ترین فریم‌ورک‌های مبتنی بر پایتون</a>، است که کمی ضعیف‌تر از Starlette و Uvicorn عمل می‌کند (فریم‌ورک و سروری که ReadyAPI بر اساس آنها ایجاد شده است) (*)
 
-برای درک بهتری از این موضوع به بخش <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">بنچ‌مارک‌ها</a> مراجعه کنید.
+برای درک بهتری از این موضوع به بخش <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">بنچ‌مارک‌ها</a> مراجعه کنید.
 
 ## نیازمندی‌های اختیاری
 

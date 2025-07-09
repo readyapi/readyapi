@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI, framework performa tinggi, mudah dipelajari, cepat untuk coding, siap untuk pengembangan</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Dokumentasi**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Dokumentasi**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Kode Sumber**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ Fitur utama ReadyAPI:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Sponsor lainnya</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Sponsor lainnya</a>
 
 ## Opini
 
@@ -127,7 +127,7 @@ ReadyAPI berdiri di pundak raksasa:
 
 ## Instalasi
 
-Buat dan aktifkan <a href="https://readyapi.khulnasoft.com/virtual-environments/" class="external-link" target="_blank">virtual environment</a> kemudian *install* ReadyAPI:
+Buat dan aktifkan <a href="https://readyapi.github.io/virtual-environments/" class="external-link" target="_blank">virtual environment</a> kemudian *install* ReadyAPI:
 
 <div class="termy">
 
@@ -190,7 +190,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Catatan**:
 
-Jika anda tidak paham, kunjungi _"Panduan cepat"_ bagian <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` dan `await` di dokumentasi</a>.
+Jika anda tidak paham, kunjungi _"Panduan cepat"_ bagian <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` dan `await` di dokumentasi</a>.
 
 </details>
 
@@ -232,7 +232,7 @@ Perintah `readyapi dev` membaca file `main.py`, memeriksa app **ReadyAPI** di da
 
 Secara otomatis, `readyapi dev` akan mengaktifkan *auto-reload* untuk pengembangan lokal.
 
-Informasi lebih lanjut kunjungi <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">Dokumen ReadyAPI CLI</a>.
+Informasi lebih lanjut kunjungi <a href="https://readyapi.github.io/readyapi-cli/" target="_blank">Dokumen ReadyAPI CLI</a>.
 
 </details>
 
@@ -259,7 +259,7 @@ Sekarang kunjungi <a href="http://127.0.0.1:8000/docs" class="external-link" tar
 
 Anda akan melihat dokumentasi API interaktif otomatis (dibuat oleh <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Dokumentasi API alternatif
 
@@ -267,7 +267,7 @@ Kemudian kunjungi <a href="http://127.0.0.1:8000/redoc" class="external-link" ta
 
 Anda akan melihat dokumentasi alternatif otomatis (dibuat oleh <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Contoh upgrade
 
@@ -313,15 +313,15 @@ Kunjungi <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bla
 
 * Dokumentasi API interaktif akan otomatis diperbarui, termasuk kode yang baru:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Klik tombol "Try it out", anda dapat mengisi parameter dan langsung berinteraksi dengan API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Kemudian klik tombol "Execute", tampilan pengguna akan berkomunikasi dengan API, mengirim parameter, mendapatkan dan menampilkan hasil ke layar:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Upgrade dokumentasi API alternatif
 
@@ -329,7 +329,7 @@ Kunjungi <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_bl
 
 * Dokumentasi alternatif akan menampilkan parameter *query* dan struktur *request*:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Ringkasan
 
@@ -424,9 +424,9 @@ Coba ubah baris:
 
 ...anda akan melihat kode editor secara otomatis melengkapi atributnya dan tahu tipe nya:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Untuk contoh lengkap termasuk fitur lainnya, kunjungi <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - Panduan Pengguna</a>.
+Untuk contoh lengkap termasuk fitur lainnya, kunjungi <a href="https://readyapi.github.io/tutorial/">Tutorial - Panduan Pengguna</a>.
 
 **Peringatan spoiler**: tutorial - panduan pengguna termasuk:
 
@@ -447,7 +447,7 @@ Untuk contoh lengkap termasuk fitur lainnya, kunjungi <a href="https://readyapi.
 
 Tolok ukur Independent TechEmpower mendapati aplikasi **ReadyAPI** berjalan menggunakan Uvicorn sebagai <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">salah satu framework Python tercepat yang ada</a>, hanya di bawah Starlette dan Uvicorn itu sendiri (digunakan di internal ReadyAPI). (*)
 
-Penjelasan lebih lanjut, lihat bagian <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Tolok ukur</a>.
+Penjelasan lebih lanjut, lihat bagian <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Tolok ukur</a>.
 
 ## Dependensi
 

@@ -25,7 +25,7 @@ class OAuth2PasswordRequestForm:
     All the initialization parameters are extracted from the request.
 
     Read more about it in the
-    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.khulnasoft.com/tutorial/security/simple-oauth2/).
+    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.github.io/tutorial/security/simple-oauth2/).
 
     ## Example
 
@@ -167,7 +167,7 @@ class OAuth2PasswordRequestFormStrict(OAuth2PasswordRequestForm):
     while for `OAuth2PasswordRequestForm` `grant_type` is optional.
 
     Read more about it in the
-    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.khulnasoft.com/tutorial/security/simple-oauth2/).
+    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.github.io/tutorial/security/simple-oauth2/).
 
     ## Example
 
@@ -315,7 +315,7 @@ class OAuth2(SecurityBase):
     existing subclasses, and maybe compose them if you want to support multiple flows.
 
     Read more about it in the
-    [ReadyAPI docs for Security](https://readyapi.khulnasoft.com/tutorial/security/).
+    [ReadyAPI docs for Security](https://readyapi.github.io/tutorial/security/).
     """
 
     def __init__(
@@ -394,7 +394,7 @@ class OAuth2PasswordBearer(OAuth2):
     An instance of it would be used as a dependency.
 
     Read more about it in the
-    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.khulnasoft.com/tutorial/security/simple-oauth2/).
+    [ReadyAPI docs for Simple OAuth2 with Password and Bearer](https://readyapi.github.io/tutorial/security/simple-oauth2/).
     """
 
     def __init__(
@@ -605,7 +605,7 @@ class SecurityScopes:
     all those dependencies in a single place.
 
     Read more about it in the
-    [ReadyAPI docs for OAuth2 scopes](https://readyapi.khulnasoft.com/advanced/security/oauth2-scopes/).
+    [ReadyAPI docs for OAuth2 scopes](https://readyapi.github.io/advanced/security/oauth2-scopes/).
     """
 
     def __init__(

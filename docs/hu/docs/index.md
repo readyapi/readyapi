@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI keretrendszer, nagy teljesítmény, könnyen tanulható, gyorsan kódolható, productionre kész</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**Dokumentáció**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Dokumentáció**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Forrás kód**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -57,7 +57,7 @@ Kulcs funkciók:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">További szponzorok</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">További szponzorok</a>
 
 ## Vélemények
 
@@ -193,7 +193,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Megjegyzés**:
 
-Ha nem tudod, tekintsd meg a _"Sietsz?"_ szekciót <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` és `await`-ről dokumentációba</a>.
+Ha nem tudod, tekintsd meg a _"Sietsz?"_ szekciót <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` és `await`-ről dokumentációba</a>.
 
 </details>
 
@@ -249,7 +249,7 @@ Most nyisd meg a <a href="http://127.0.0.1:8000/docs" class="external-link" targ
 
 Az automatikus interaktív API dokumentációt fogod látni (amit a <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>-al hozunk létre):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternatív API dokumentáció
 
@@ -257,7 +257,7 @@ Az automatikus interaktív API dokumentációt fogod látni (amit a <a href="htt
 
 Az alternatív automatikus dokumentációt fogod látni. (lásd <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Példa frissítése
 
@@ -303,15 +303,15 @@ Most menj el a <a href="http://127.0.0.1:8000/docs" class="external-link" target
 
 * Az interaktív API dokumentáció automatikusan frissült így már benne van az új body.
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Kattints rá a "Try it out" gombra, ennek segítségével kitöltheted a paramétereket és közvetlen használhatod az API-t:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Ezután kattints az "Execute" gompra, a felhasználói felület kommunikálni fog az API-oddal. Elküldi a paramétereket és a visszakapott választ megmutatja a képernyődön.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Alternatív API dokumentáció frissítés
 
@@ -319,7 +319,7 @@ Most menj el a <a href="http://127.0.0.1:8000/redoc" class="external-link" targe
 
 * Az alternatív dokumentáció szintúgy tükrözni fogja az új kérési paraméter és body-t.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Összefoglalás
 
@@ -414,9 +414,9 @@ Próbáld kicserélni a következő sorban:
 
 ... És figyeld meg hogy a szerkesztő automatikusan tudni fogja a típusokat és kiegészíti azokat:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Teljesebb példákért és funkciókért tekintsd meg a <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - User Guide</a> -t.
+Teljesebb példákért és funkciókért tekintsd meg a <a href="https://readyapi.github.io/tutorial/">Tutorial - User Guide</a> -t.
 
 **Spoiler veszély**: a Tutorial - User Guidehoz tartozik:
 
@@ -437,7 +437,7 @@ Teljesebb példákért és funkciókért tekintsd meg a <a href="https://readyap
 
 A független TechEmpower benchmarkok szerint az Uvicorn alatt futó **ReadyAPI** alkalmazások az <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">egyik leggyorsabb Python keretrendszerek közé tartoznak</a>, éppen lemaradva a Starlette és az Uvicorn (melyeket a ReadyAPI belsőleg használ) mögött.(*)
 
-Ezeknek a további megértéséhez: <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+Ezeknek a további megértéséhez: <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Opcionális követelmények
 

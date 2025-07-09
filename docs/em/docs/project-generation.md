@@ -21,7 +21,7 @@
     * **📏**: 📉 📟 ❎. 💗 ⚒ ⚪️➡️ 🔠 🔢 📄.
     * **🏋️**: 🤚 🏭-🔜 📟. ⏮️ 🏧 🎓 🧾.
     * **🐩-⚓️**: ⚓️ 🔛 (&amp; 🍕 🔗 ⏮️) 📂 🐩 🔗: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">🗄</a> &amp; <a href="https://json-schema.org/" class="external-link" target="_blank">🎻 🔗</a>.
-    * <a href="https://readyapi.khulnasoft.com/features/" class="external-link" target="_blank">**📚 🎏 ⚒**</a> 🔌 🏧 🔬, 🛠️, 🎓 🧾, 🤝 ⏮️ Oauth2️⃣ 🥙 🤝, ♒️.
+    * <a href="https://readyapi.github.io/features/" class="external-link" target="_blank">**📚 🎏 ⚒**</a> 🔌 🏧 🔬, 🛠️, 🎓 🧾, 🤝 ⏮️ Oauth2️⃣ 🥙 🤝, ♒️.
 * **🔐 🔐** 🔁 🔢.
 * **🥙 🤝** 🤝.
 * **🇸🇲** 🏷 (🔬 🏺 ↔, 👫 💪 ⚙️ ⏮️ 🥒 👨‍🏭 🔗).

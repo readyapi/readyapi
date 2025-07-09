@@ -341,7 +341,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 👆 🔜 👀 🏧 🎓 🛠️ 🧾 (🚚 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## 🎛 🛠️ 🩺
 
@@ -349,7 +349,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 👆 🔜 👀 🎛 🏧 🧾 (🚚 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 🏗 ☁ 🖼 ⏮️ 👁-📁 ReadyAPI
 

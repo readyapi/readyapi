@@ -16,11 +16,11 @@
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>で、インタラクティブな探索をしながら、ブラウザから直接APIを呼び出してテストが行えます。
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>を使用したもう一つのAPIドキュメント生成。
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 現代的なPython
 
@@ -84,11 +84,11 @@ my_second_user: User = User(**second_user_data)
 
 * <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>の場合:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>の場合:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 以前は不可能だと考えていたコードでさえ補完されます。例えば、リクエストからのJSONボディ（ネストされている可能性がある）内の `price`キーです。
 

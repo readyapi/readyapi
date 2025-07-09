@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**Documentation**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Documentation**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Source Code**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -46,26 +46,26 @@ The key features are:
 
 <!-- sponsors -->
 
-<a href="https://blockbee.io?ref=readyapi" target="_blank" title="BlockBee Cryptocurrency Payment Gateway"><img src="https://readyapi.khulnasoft.com/img/sponsors/blockbee.png"></a>
-<a href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank" title="Build, run and scale your apps on a modern, reliable, and secure PaaS."><img src="https://readyapi.khulnasoft.com/img/sponsors/platform-sh.png"></a>
-<a href="https://www.porter.run" target="_blank" title="Deploy ReadyAPI on AWS with a few clicks"><img src="https://readyapi.khulnasoft.com/img/sponsors/porter.png"></a>
-<a href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=main-badge" target="_blank" title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files"><img src="https://readyapi.khulnasoft.com/img/sponsors/scalar.svg"></a>
-<a href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=mainbadge" target="_blank" title="Auth, user management and more for your B2B product"><img src="https://readyapi.khulnasoft.com/img/sponsors/propelauth.png"></a>
-<a href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank" title="Simplify Full Stack Development with ReadyAPI & MongoDB"><img src="https://readyapi.khulnasoft.com/img/sponsors/mongodb.png"></a>
-<a href="https://zuplo.link/readyapi-gh" target="_blank" title="Zuplo: Deploy, Secure, Document, and Monetize your ReadyAPI"><img src="https://readyapi.khulnasoft.com/img/sponsors/zuplo.png"></a>
-<a href="https://liblab.com?utm_source=readyapi" target="_blank" title="liblab - Generate SDKs from ReadyAPI"><img src="https://readyapi.khulnasoft.com/img/sponsors/liblab.png"></a>
-<a href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank" title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra."><img src="https://readyapi.khulnasoft.com/img/sponsors/render.svg"></a>
-<a href="https://www.coderabbit.ai/?utm_source=readyapi&utm_medium=badge&utm_campaign=readyapi" target="_blank" title="Cut Code Review Time & Bugs in Half with CodeRabbit"><img src="https://readyapi.khulnasoft.com/img/sponsors/coderabbit.png"></a>
-<a href="https://subtotal.com/?utm_source=readyapi&utm_medium=sponsorship&utm_campaign=open-source" target="_blank" title="The Gold Standard in Retail Account Linking"><img src="https://readyapi.khulnasoft.com/img/sponsors/subtotal.svg"></a>
-<a href="https://databento.com/" target="_blank" title="Pay as you go for market data"><img src="https://readyapi.khulnasoft.com/img/sponsors/databento.svg"></a>
-<a href="https://speakeasy.com?utm_source=readyapi+repo&utm_medium=github+sponsorship" target="_blank" title="SDKs for your API | Speakeasy"><img src="https://readyapi.khulnasoft.com/img/sponsors/speakeasy.png"></a>
-<a href="https://www.svix.com/" target="_blank" title="Svix - Webhooks as a service"><img src="https://readyapi.khulnasoft.com/img/sponsors/svix.svg"></a>
-<a href="https://www.stainlessapi.com/?utm_source=readyapi&utm_medium=referral" target="_blank" title="Stainless | Generate best-in-class SDKs"><img src="https://readyapi.khulnasoft.com/img/sponsors/stainless.png"></a>
-<a href="https://www.permit.io/blog/implement-authorization-in-readyapi?utm_source=github&utm_medium=referral&utm_campaign=readyapi" target="_blank" title="Fine-Grained Authorization for ReadyAPI"><img src="https://readyapi.khulnasoft.com/img/sponsors/permit.png"></a>
+<a href="https://blockbee.io?ref=readyapi" target="_blank" title="BlockBee Cryptocurrency Payment Gateway"><img src="https://readyapi.github.io/img/sponsors/blockbee.png"></a>
+<a href="https://platform.sh/try-it-now/?utm_source=readyapi-signup&utm_medium=banner&utm_campaign=ReadyAPI-signup-June-2023" target="_blank" title="Build, run and scale your apps on a modern, reliable, and secure PaaS."><img src="https://readyapi.github.io/img/sponsors/platform-sh.png"></a>
+<a href="https://www.porter.run" target="_blank" title="Deploy ReadyAPI on AWS with a few clicks"><img src="https://readyapi.github.io/img/sponsors/porter.png"></a>
+<a href="https://github.com/scalar/scalar/?utm_source=readyapi&utm_medium=website&utm_campaign=main-badge" target="_blank" title="Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files"><img src="https://readyapi.github.io/img/sponsors/scalar.svg"></a>
+<a href="https://www.propelauth.com/?utm_source=readyapi&utm_campaign=1223&utm_medium=mainbadge" target="_blank" title="Auth, user management and more for your B2B product"><img src="https://readyapi.github.io/img/sponsors/propelauth.png"></a>
+<a href="https://www.mongodb.com/developer/languages/python/python-quickstart-readyapi/?utm_campaign=readyapi_framework&utm_source=readyapi_sponsorship&utm_medium=web_referral" target="_blank" title="Simplify Full Stack Development with ReadyAPI & MongoDB"><img src="https://readyapi.github.io/img/sponsors/mongodb.png"></a>
+<a href="https://zuplo.link/readyapi-gh" target="_blank" title="Zuplo: Deploy, Secure, Document, and Monetize your ReadyAPI"><img src="https://readyapi.github.io/img/sponsors/zuplo.png"></a>
+<a href="https://liblab.com?utm_source=readyapi" target="_blank" title="liblab - Generate SDKs from ReadyAPI"><img src="https://readyapi.github.io/img/sponsors/liblab.png"></a>
+<a href="https://docs.render.com/deploy-readyapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=readyapi" target="_blank" title="Deploy & scale any full-stack web app on Render. Focus on building apps, not infra."><img src="https://readyapi.github.io/img/sponsors/render.svg"></a>
+<a href="https://www.coderabbit.ai/?utm_source=readyapi&utm_medium=badge&utm_campaign=readyapi" target="_blank" title="Cut Code Review Time & Bugs in Half with CodeRabbit"><img src="https://readyapi.github.io/img/sponsors/coderabbit.png"></a>
+<a href="https://subtotal.com/?utm_source=readyapi&utm_medium=sponsorship&utm_campaign=open-source" target="_blank" title="The Gold Standard in Retail Account Linking"><img src="https://readyapi.github.io/img/sponsors/subtotal.svg"></a>
+<a href="https://databento.com/" target="_blank" title="Pay as you go for market data"><img src="https://readyapi.github.io/img/sponsors/databento.svg"></a>
+<a href="https://speakeasy.com?utm_source=readyapi+repo&utm_medium=github+sponsorship" target="_blank" title="SDKs for your API | Speakeasy"><img src="https://readyapi.github.io/img/sponsors/speakeasy.png"></a>
+<a href="https://www.svix.com/" target="_blank" title="Svix - Webhooks as a service"><img src="https://readyapi.github.io/img/sponsors/svix.svg"></a>
+<a href="https://www.stainlessapi.com/?utm_source=readyapi&utm_medium=referral" target="_blank" title="Stainless | Generate best-in-class SDKs"><img src="https://readyapi.github.io/img/sponsors/stainless.png"></a>
+<a href="https://www.permit.io/blog/implement-authorization-in-readyapi?utm_source=github&utm_medium=referral&utm_campaign=readyapi" target="_blank" title="Fine-Grained Authorization for ReadyAPI"><img src="https://readyapi.github.io/img/sponsors/permit.png"></a>
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
 
 ## Opinions
 
@@ -130,7 +130,7 @@ ReadyAPI stands on the shoulders of giants:
 
 ## Installation
 
-Create and activate a <a href="https://readyapi.khulnasoft.com/virtual-environments/" class="external-link" target="_blank">virtual environment</a> and then install ReadyAPI:
+Create and activate a <a href="https://readyapi.github.io/virtual-environments/" class="external-link" target="_blank">virtual environment</a> and then install ReadyAPI:
 
 <div class="termy">
 
@@ -193,7 +193,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Note**:
 
-If you don't know, check the _"In a hurry?"_ section about <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` and `await` in the docs</a>.
+If you don't know, check the _"In a hurry?"_ section about <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` and `await` in the docs</a>.
 
 </details>
 
@@ -235,7 +235,7 @@ The command `readyapi dev` reads your `main.py` file, detects the **ReadyAPI** a
 
 By default, `readyapi dev` will start with auto-reload enabled for local development.
 
-You can read more about it in the <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">ReadyAPI CLI docs</a>.
+You can read more about it in the <a href="https://readyapi.github.io/readyapi-cli/" target="_blank">ReadyAPI CLI docs</a>.
 
 </details>
 
@@ -262,7 +262,7 @@ Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bl
 
 You will see the automatic interactive API documentation (provided by <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternative API docs
 
@@ -270,7 +270,7 @@ And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" targe
 
 You will see the alternative automatic documentation (provided by <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Example upgrade
 
@@ -316,15 +316,15 @@ Now go to <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bl
 
 * The interactive API documentation will be automatically updated, including the new body:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Click on the button "Try it out", it allows you to fill the parameters and directly interact with the API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Then click on the "Execute" button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Alternative API docs upgrade
 
@@ -332,7 +332,7 @@ And now, go to <a href="http://127.0.0.1:8000/redoc" class="external-link" targe
 
 * The alternative documentation will also reflect the new query parameter and body:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Recap
 
@@ -427,9 +427,9 @@ Try changing the line with:
 
 ...and see how your editor will auto-complete the attributes and know their types:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-For a more complete example including more features, see the <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - User Guide</a>.
+For a more complete example including more features, see the <a href="https://readyapi.github.io/tutorial/">Tutorial - User Guide</a>.
 
 **Spoiler alert**: the tutorial - user guide includes:
 
@@ -450,7 +450,7 @@ For a more complete example including more features, see the <a href="https://re
 
 Independent TechEmpower benchmarks show **ReadyAPI** applications running under Uvicorn as <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">one of the fastest Python frameworks available</a>, only below Starlette and Uvicorn themselves (used internally by ReadyAPI). (*)
 
-To understand more about it, see the section <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+To understand more about it, see the section <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Dependencies
 

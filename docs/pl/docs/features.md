@@ -17,11 +17,11 @@ Interaktywna dokumentacja i webowe interfejsy do eksploracji API. Z racji tego, 
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, z interaktywnym interfejsem - odpytuj i testuj swoje API bezpośrednio z przeglądarki.
 
-![Swagger UI interakcja](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interakcja](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Alternatywna dokumentacja API z <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Nowoczesny Python
 
@@ -85,11 +85,11 @@ Oto, jak twój edytor może Ci pomóc:
 
 * <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![wsparcie edytora](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![wsparcie edytora](https://readyapi.github.io/img/vscode-completion.png)
 
 * <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![wsparcie edytora](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![wsparcie edytora](https://readyapi.github.io/img/pycharm-completion.png)
 
 Otrzymasz uzupełnienie nawet w miejscach, w których normalnie uzupełnienia nie ma. Na przykład klucz "price" w treści JSON (który mógł być zagnieżdżony), który pochodzi z zapytania.
 

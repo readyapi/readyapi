@@ -198,7 +198,7 @@ JWT 规范还包括 `sub` 键，值是令牌的主题。
 
 可以看到如下用户界面：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image07.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image07.png">
 
 用与上一章同样的方式实现应用授权。
 
@@ -212,7 +212,7 @@ JWT 规范还包括 `sub` 键，值是令牌的主题。
 
 ///
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image08.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image08.png">
 
 调用 `/users/me/` 端点，收到下面的响应：
 
@@ -225,11 +225,11 @@ JWT 规范还包括 `sub` 键，值是令牌的主题。
 }
 ```
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image09.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image09.png">
 
 打开浏览器的开发者工具，查看数据是怎么发送的，而且数据里只包含了令牌，只有验证用户的第一个请求才发送密码，并获取访问令牌，但之后不会再发送密码：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/security/image10.png">
+<img src="https://readyapi.github.io/img/tutorial/security/image10.png">
 
 /// note | 笔记
 

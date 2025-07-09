@@ -56,7 +56,7 @@ Rendez-vous sur <a href="http://127.0.0.1:8000/docs" class="external-link" targe
 
 Vous verrez la documentation interactive de l'API générée automatiquement (via <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>) :
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Documentation alternative
 
@@ -64,7 +64,7 @@ Ensuite, rendez-vous sur <a href="http://127.0.0.1:8000/redoc" class="external-l
 
 Vous y verrez la documentation alternative (via <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>) :
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ### OpenAPI
 

@@ -350,7 +350,7 @@ def get_request_handler(
                 "application code is raising an exception and a dependency with yield "
                 "has a block with a bare except, or a block with except Exception, "
                 "and is not raising the exception again. Read more about it in the "
-                "docs: https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-except"
+                "docs: https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-except"
             )
         return response
 
@@ -599,7 +599,7 @@ class APIRouter(routing.Router):
     in another `APIRouter` (ultimately included in the app).
 
     Read more about it in the
-    [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.khulnasoft.com/tutorial/bigger-applications/).
+    [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.github.io/tutorial/bigger-applications/).
 
     ## Example
 
@@ -633,7 +633,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -645,7 +645,7 @@ class APIRouter(routing.Router):
                 *path operations* in this router.
 
                 Read more about it in the
-                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -656,7 +656,7 @@ class APIRouter(routing.Router):
                 The default response class to be used.
 
                 Read more in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#default-response-class).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#default-response-class).
                 """
             ),
         ] = Default(JSONResponse),
@@ -669,10 +669,10 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.khulnasoft.com/advanced/additional-responses/).
+                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.github.io/advanced/additional-responses/).
 
                 And in the
-                [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -686,7 +686,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -748,7 +748,7 @@ class APIRouter(routing.Router):
                 Custom route (*path operation*) class to be used by this router.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Request and APIRoute class](https://readyapi.khulnasoft.com/how-to/custom-request-and-route/#custom-apiroute-class-in-a-router).
+                [ReadyAPI docs for Custom Request and APIRoute class](https://readyapi.github.io/how-to/custom-request-and-route/#custom-apiroute-class-in-a-router).
                 """
             ),
         ] = APIRoute,
@@ -760,7 +760,7 @@ class APIRouter(routing.Router):
 
                 You should instead use the `lifespan` handlers.
 
-                Read more in the [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                Read more in the [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -773,7 +773,7 @@ class APIRouter(routing.Router):
                 You should instead use the `lifespan` handlers.
 
                 Read more in the
-                [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -787,7 +787,7 @@ class APIRouter(routing.Router):
                 `shutdown` functions with a single context manager.
 
                 Read more in the
-                [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -800,7 +800,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -814,7 +814,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -829,7 +829,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -1070,7 +1070,7 @@ class APIRouter(routing.Router):
                 WebSocket.
 
                 Read more about it in the
-                [ReadyAPI docs for WebSockets](https://readyapi.khulnasoft.com/advanced/websockets/).
+                [ReadyAPI docs for WebSockets](https://readyapi.github.io/advanced/websockets/).
                 """
             ),
         ] = None,
@@ -1079,7 +1079,7 @@ class APIRouter(routing.Router):
         Decorate a WebSocket function.
 
         Read more about it in the
-        [ReadyAPI docs for WebSockets](https://readyapi.khulnasoft.com/advanced/websockets/).
+        [ReadyAPI docs for WebSockets](https://readyapi.github.io/advanced/websockets/).
 
         **Example**
 
@@ -1134,7 +1134,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1146,7 +1146,7 @@ class APIRouter(routing.Router):
                 *path operations* in this router.
 
                 Read more about it in the
-                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -1157,7 +1157,7 @@ class APIRouter(routing.Router):
                 The default response class to be used.
 
                 Read more in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#default-response-class).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#default-response-class).
                 """
             ),
         ] = Default(JSONResponse),
@@ -1170,10 +1170,10 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.khulnasoft.com/advanced/additional-responses/).
+                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.github.io/advanced/additional-responses/).
 
                 And in the
-                [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -1187,7 +1187,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -1200,7 +1200,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1226,7 +1226,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -1235,7 +1235,7 @@ class APIRouter(routing.Router):
         Include another `APIRouter` in the same current `APIRouter`.
 
         Read more about it in the
-        [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/).
+        [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/).
 
         ## Example
 
@@ -1406,7 +1406,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -1419,7 +1419,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -1432,7 +1432,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -1444,7 +1444,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -1457,7 +1457,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1475,7 +1475,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1525,7 +1525,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -1537,7 +1537,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1549,7 +1549,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1561,7 +1561,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -1579,7 +1579,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1596,7 +1596,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1613,7 +1613,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -1626,7 +1626,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -1639,7 +1639,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -1663,7 +1663,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -1675,7 +1675,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -1690,7 +1690,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -1783,7 +1783,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -1796,7 +1796,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -1809,7 +1809,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -1821,7 +1821,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -1834,7 +1834,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1852,7 +1852,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1902,7 +1902,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -1914,7 +1914,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1926,7 +1926,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1938,7 +1938,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -1956,7 +1956,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1973,7 +1973,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1990,7 +1990,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2003,7 +2003,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2016,7 +2016,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2040,7 +2040,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2052,7 +2052,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2067,7 +2067,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -2165,7 +2165,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -2178,7 +2178,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -2191,7 +2191,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -2203,7 +2203,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -2216,7 +2216,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2234,7 +2234,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2284,7 +2284,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -2296,7 +2296,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2308,7 +2308,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2320,7 +2320,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -2338,7 +2338,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2355,7 +2355,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2372,7 +2372,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2385,7 +2385,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2398,7 +2398,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2422,7 +2422,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2434,7 +2434,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2449,7 +2449,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -2547,7 +2547,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -2560,7 +2560,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -2573,7 +2573,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -2585,7 +2585,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -2598,7 +2598,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2616,7 +2616,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2666,7 +2666,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -2678,7 +2678,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2690,7 +2690,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2702,7 +2702,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -2720,7 +2720,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2737,7 +2737,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2754,7 +2754,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2767,7 +2767,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2780,7 +2780,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2804,7 +2804,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2816,7 +2816,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2831,7 +2831,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -2924,7 +2924,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -2937,7 +2937,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -2950,7 +2950,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -2962,7 +2962,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -2975,7 +2975,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2993,7 +2993,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3043,7 +3043,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3055,7 +3055,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3067,7 +3067,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3079,7 +3079,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3097,7 +3097,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3114,7 +3114,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3131,7 +3131,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3144,7 +3144,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3157,7 +3157,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -3181,7 +3181,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -3193,7 +3193,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -3208,7 +3208,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -3301,7 +3301,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -3314,7 +3314,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -3327,7 +3327,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -3339,7 +3339,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -3352,7 +3352,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3370,7 +3370,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3420,7 +3420,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3432,7 +3432,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3444,7 +3444,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3456,7 +3456,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3474,7 +3474,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3491,7 +3491,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3508,7 +3508,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3521,7 +3521,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3534,7 +3534,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -3558,7 +3558,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -3570,7 +3570,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -3585,7 +3585,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -3683,7 +3683,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -3696,7 +3696,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -3709,7 +3709,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -3721,7 +3721,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -3734,7 +3734,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3752,7 +3752,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3802,7 +3802,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3814,7 +3814,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3826,7 +3826,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3838,7 +3838,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3856,7 +3856,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3873,7 +3873,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3890,7 +3890,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3903,7 +3903,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3916,7 +3916,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -3940,7 +3940,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -3952,7 +3952,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -3967,7 +3967,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -4065,7 +4065,7 @@ class APIRouter(routing.Router):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -4078,7 +4078,7 @@ class APIRouter(routing.Router):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -4091,7 +4091,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -4103,7 +4103,7 @@ class APIRouter(routing.Router):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -4116,7 +4116,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -4134,7 +4134,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -4184,7 +4184,7 @@ class APIRouter(routing.Router):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -4196,7 +4196,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -4208,7 +4208,7 @@ class APIRouter(routing.Router):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -4220,7 +4220,7 @@ class APIRouter(routing.Router):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -4238,7 +4238,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -4255,7 +4255,7 @@ class APIRouter(routing.Router):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -4272,7 +4272,7 @@ class APIRouter(routing.Router):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -4285,7 +4285,7 @@ class APIRouter(routing.Router):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -4298,7 +4298,7 @@ class APIRouter(routing.Router):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -4322,7 +4322,7 @@ class APIRouter(routing.Router):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -4334,7 +4334,7 @@ class APIRouter(routing.Router):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -4349,7 +4349,7 @@ class APIRouter(routing.Router):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -4409,7 +4409,7 @@ class APIRouter(routing.Router):
         on_event is deprecated, use lifespan event handlers instead.
 
         Read more about it in the
-        [ReadyAPI docs for Lifespan Events](https://readyapi.khulnasoft.com/advanced/events/).
+        [ReadyAPI docs for Lifespan Events](https://readyapi.github.io/advanced/events/).
         """
     )
     def on_event(
@@ -4429,7 +4429,7 @@ class APIRouter(routing.Router):
         `on_event` is deprecated, use `lifespan` event handlers instead.
 
         Read more about it in the
-        [ReadyAPI docs for Lifespan Events](https://readyapi.khulnasoft.com/advanced/events/#alternative-events-deprecated).
+        [ReadyAPI docs for Lifespan Events](https://readyapi.github.io/advanced/events/#alternative-events-deprecated).
         """
 
         def decorator(func: DecoratedCallable) -> DecoratedCallable:

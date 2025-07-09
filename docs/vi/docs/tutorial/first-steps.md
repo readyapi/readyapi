@@ -56,7 +56,7 @@ Bây giờ tới <a href="http://127.0.0.1:8000/docs" class="external-link" targ
 
 Bạn sẽ thấy một tài liệu tương tác API (cung cấp bởi <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Phiên bản thay thế của tài liệu API
 
@@ -64,7 +64,7 @@ Và bây giờ tới <a href="http://127.0.0.1:8000/redoc" class="external-link"
 
 Bạn sẽ thấy một bản thay thế của tài liệu (cung cấp bởi <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ### OpenAPI
 

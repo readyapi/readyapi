@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, alto rendimiento, fácil de aprender, rápido de programar, listo para producción</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Documentación**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Documentación**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Código Fuente**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ Las características clave son:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Otros sponsors</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Otros sponsors</a>
 
 ## Opiniones
 
@@ -128,7 +128,7 @@ ReadyAPI se apoya en hombros de gigantes:
 
 ## Instalación
 
-Crea y activa un <a href="https://readyapi.khulnasoft.com/virtual-environments/" class="external-link" target="_blank">entorno virtual</a> y luego instala ReadyAPI:
+Crea y activa un <a href="https://readyapi.github.io/virtual-environments/" class="external-link" target="_blank">entorno virtual</a> y luego instala ReadyAPI:
 
 <div class="termy">
 
@@ -191,7 +191,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Nota**:
 
-Si no lo sabes, revisa la sección _"¿Con prisa?"_ sobre <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` y `await` en la documentación</a>.
+Si no lo sabes, revisa la sección _"¿Con prisa?"_ sobre <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` y `await` en la documentación</a>.
 
 </details>
 
@@ -233,7 +233,7 @@ El comando `readyapi dev` lee tu archivo `main.py`, detecta la app **ReadyAPI** 
 
 Por defecto, `readyapi dev` comenzará con auto-recarga habilitada para el desarrollo local.
 
-Puedes leer más sobre esto en la <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">documentación del CLI de ReadyAPI</a>.
+Puedes leer más sobre esto en la <a href="https://readyapi.github.io/readyapi-cli/" target="_blank">documentación del CLI de ReadyAPI</a>.
 
 </details>
 
@@ -260,7 +260,7 @@ Ahora ve a <a href="http://127.0.0.1:8000/docs" class="external-link" target="_b
 
 Verás la documentación interactiva automática de la API (proporcionada por <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Documentación de API Alternativa
 
@@ -268,7 +268,7 @@ Y ahora, ve a <a href="http://127.0.0.1:8000/redoc" class="external-link" target
 
 Verás la documentación alternativa automática (proporcionada por <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Actualización del Ejemplo
 
@@ -314,15 +314,15 @@ Ahora ve a <a href="http://127.0.0.1:8000/docs" class="external-link" target="_b
 
 * La documentación interactiva de la API se actualizará automáticamente, incluyendo el nuevo body:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Haz clic en el botón "Try it out", te permite llenar los parámetros e interactuar directamente con la API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Luego haz clic en el botón "Execute", la interfaz de usuario se comunicará con tu API, enviará los parámetros, obtendrá los resultados y los mostrará en la pantalla:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Actualización de la Documentación Alternativa de la API
 
@@ -330,7 +330,7 @@ Y ahora, ve a <a href="http://127.0.0.1:8000/redoc" class="external-link" target
 
 * La documentación alternativa también reflejará el nuevo parámetro de query y body:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Resumen
 
@@ -425,9 +425,9 @@ Intenta cambiar la línea con:
 
 ...y observa cómo tu editor autocompleta los atributos y conoce sus tipos:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Para un ejemplo más completo incluyendo más funcionalidades, ve al <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - Guía del Usuario</a>.
+Para un ejemplo más completo incluyendo más funcionalidades, ve al <a href="https://readyapi.github.io/tutorial/">Tutorial - Guía del Usuario</a>.
 
 **Alerta de spoilers**: el tutorial - guía del usuario incluye:
 
@@ -448,7 +448,7 @@ Para un ejemplo más completo incluyendo más funcionalidades, ve al <a href="ht
 
 Benchmarks independientes de TechEmpower muestran aplicaciones **ReadyAPI** ejecutándose bajo Uvicorn como <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">uno de los frameworks Python más rápidos disponibles</a>, solo por debajo de Starlette y Uvicorn (usados internamente por ReadyAPI). (*)
 
-Para entender más sobre esto, ve la sección <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+Para entender más sobre esto, ve la sección <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Dependencias
 

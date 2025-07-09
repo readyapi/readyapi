@@ -20,7 +20,7 @@ def custom_openapi():
         routes=app.routes,
     )
     openapi_schema["info"]["x-logo"] = {
-        "url": "https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png"
+        "url": "https://readyapi.github.io/img/logo-margin/logo-teal.png"
     }
     app.openapi_schema = openapi_schema
     return app.openapi_schema

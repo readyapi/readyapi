@@ -21,7 +21,7 @@ GitHub : <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" 
     * **Concis** : Minimise la duplication de code. Plusieurs fonctionnalités à chaque déclaration de paramètre.
     * **Robuste** : Obtenez du code prêt pour être utilisé en production. Avec de la documentation automatique interactive.
     * **Basé sur des normes** : Basé sur (et totalement compatible avec) les normes ouvertes pour les APIs : <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> et <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
-    * <a href="https://readyapi.khulnasoft.com/features/" class="external-link" target="_blank">**Et bien d'autres fonctionnalités**</a> comme la validation automatique, la sérialisation, l'authentification avec OAuth2 JWT tokens, etc.
+    * <a href="https://readyapi.github.io/features/" class="external-link" target="_blank">**Et bien d'autres fonctionnalités**</a> comme la validation automatique, la sérialisation, l'authentification avec OAuth2 JWT tokens, etc.
 * Hashage de **mots de passe sécurisé** par défaut.
 * Authentification par **jetons JWT**.
 * Modèles **SQLAlchemy** (indépendants des extensions Flask, afin qu'ils puissent être utilisés directement avec des *workers* Celery).

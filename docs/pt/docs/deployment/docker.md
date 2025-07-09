@@ -341,7 +341,7 @@ Agora você pode ir para <a href="http://192.168.99.100/docs" class="external-li
 
 Você verá a documentação interativa automática da API (fornecida pelo <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## Documentação alternativa da API
 
@@ -349,7 +349,7 @@ E você também pode ir para <a href="http://192.168.99.100/redoc" class="extern
 
 Você verá a documentação alternativa automática (fornecida pela <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Construindo uma Imagem Docker com um Arquivo Único ReadyAPI
 

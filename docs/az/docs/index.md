@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, yüksək məshuldarlı, öyrənməsi asan, çevik kodlama, istifadəyə hazırdır</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**Sənədlər**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Sənədlər**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Qaynaq Kodu**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -57,7 +57,7 @@ ReadyAPI Python ilə API yaratmaq üçün standart Python <abbr title="Tip Məsl
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/az/readyapi-people/#sponsors" class="external-link" target="_blank">Digər sponsorlar</a>
+<a href="https://readyapi.github.io/az/readyapi-people/#sponsors" class="external-link" target="_blank">Digər sponsorlar</a>
 
 ## Rəylər
 
@@ -193,7 +193,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Qeyd**:
 
-Əgər bu mövzu haqqında məlumatınız yoxdursa <a href="https://readyapi.khulnasoft.com/az/async/#in-a-hurry" target="_blank">`async` və `await` sənədindəki</a> _"Tələsirsən?"_ bölməsinə baxa bilərsiniz.
+Əgər bu mövzu haqqında məlumatınız yoxdursa <a href="https://readyapi.github.io/az/async/#in-a-hurry" target="_blank">`async` və `await` sənədindəki</a> _"Tələsirsən?"_ bölməsinə baxa bilərsiniz.
 
 </details>
 
@@ -249,7 +249,7 @@ Siz artıq bir API yaratmısınız, hansı ki:
 
 Avtomatik interaktiv API sənədlərini görəcəksiniz (<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> tərəfindən təmin edilir):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternativ API sənədləri
 
@@ -257,7 +257,7 @@ Avtomatik interaktiv API sənədlərini görəcəksiniz (<a href="https://github
 
 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> tərəfindən təqdim edilən avtomatik sənədləri görəcəksiniz:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Nümunəni Yeniləyək
 
@@ -302,15 +302,15 @@ Yenidən <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bla
 
 * İnteraktiv API sənədləri yeni gövdə də daxil olmaq ilə avtomatik olaraq yenilənəcək:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * "Try it out" düyməsini klikləyin, bu, parametrləri doldurmağa və API ilə birbaşa əlaqə saxlamağa imkan verir:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Sonra "Execute" düyməsini klikləyin, istifadəçi interfeysi API ilə əlaqə quracaq, parametrləri göndərəcək, nəticələri əldə edəcək və onları ekranda göstərəcək:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Alternativ API Sənədlərindəki Dəyişikliyə Baxaq
 
@@ -318,7 +318,7 @@ Yenidən <a href="http://127.0.0.1:8000/docs" class="external-link" target="_bla
 
 * Alternativ sənədlər həm də yeni sorğu parametri və gövdəsini əks etdirəcək:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Xülasə
 
@@ -413,9 +413,9 @@ Yeni başlamışıq, amma siz artıq işin məntiqini başa düşmüsünüz.
 
 ...və redaktorun məlumat tiplərini bildiyini və avtomatik tamaladığını görəcəksiniz:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Daha çox funksiyaya malik daha dolğun nümunə üçün <a href="https://readyapi.khulnasoft.com/az/tutorial/">Öyrədici - İstifadəçi Təlimatı</a> səhifəsinə baxa bilərsiniz.
+Daha çox funksiyaya malik daha dolğun nümunə üçün <a href="https://readyapi.github.io/az/tutorial/">Öyrədici - İstifadəçi Təlimatı</a> səhifəsinə baxa bilərsiniz.
 
 **Spoiler xəbərdarlığı**: Öyrədici - istifadəçi təlimatına bunlar daxildir:
 
@@ -436,7 +436,7 @@ Daha çox funksiyaya malik daha dolğun nümunə üçün <a href="https://readya
 
 Müstəqil TechEmpower meyarları göstərir ki, Uvicorn üzərində işləyən **ReadyAPI** proqramları <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ən sürətli Python kitabxanalarından biridir</a>, yalnız Starlette və Uvicorn-un özündən yavaşdır, ki ReadyAPI bunların üzərinə qurulmuş bir framework-dür. (*)
 
-Ətraflı məlumat üçün bu bölməyə nəzər salın <a href="https://readyapi.khulnasoft.com/az/benchmarks/" class="internal-link" target="_blank"><abbr title="Müqayisələr: Benchmarks">Müqayisələr</abbr></a>.
+Ətraflı məlumat üçün bu bölməyə nəzər salın <a href="https://readyapi.github.io/az/benchmarks/" class="internal-link" target="_blank"><abbr title="Müqayisələr: Benchmarks">Müqayisələr</abbr></a>.
 
 ## Məcburi Olmayan Tələblər
 

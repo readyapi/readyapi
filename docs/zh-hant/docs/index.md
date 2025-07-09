@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI 框架，高效能，易於學習，快速開發，適用於生產環境</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**文件**： <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**文件**： <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **程式碼**： <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -57,7 +57,7 @@ ReadyAPI 是一個現代、快速（高效能）的 web 框架，用於 Python �
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">其他贊助商</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">其他贊助商</a>
 
 ## 評價
 
@@ -193,7 +193,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **注意**：
 
-如果你不知道是否會用到，可以查看 _"In a hurry?"_ 章節中，關於 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` 和 `await` 的部分</a>。
+如果你不知道是否會用到，可以查看 _"In a hurry?"_ 章節中，關於 <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` 和 `await` 的部分</a>。
 
 </details>
 
@@ -249,7 +249,7 @@ INFO:     Application startup complete.
 
 你會看到自動生成的互動式 API 文件（由 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> 生成）：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### ReDoc API 文件
 
@@ -257,7 +257,7 @@ INFO:     Application startup complete.
 
 你將看到 ReDoc 文件 (由 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> 生成)：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 範例升級
 
@@ -303,15 +303,15 @@ def update_item(item_id: int, item: Item):
 
 - 互動式 API 文件會自動更新，並加入新的 body 請求：
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 - 點擊 "Try it out" 按鈕， 你可以填寫參數並直接與 API 互動：
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 - 然後點擊 "Execute" 按鈕，使用者介面將會向 API 發送請求，並將結果顯示在螢幕上：
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### ReDoc API 文件升級
 
@@ -319,7 +319,7 @@ def update_item(item_id: int, item: Item):
 
 - ReDoc API 文件會自動更新，並加入新的參數和 body 請求：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 總結
 
@@ -414,9 +414,9 @@ item: Item
 
 然後觀察你的編輯器，會自動補全並且還知道他們的型別：
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-有關更多功能的完整範例，可以參考 <a href="https://readyapi.khulnasoft.com/tutorial/">教學 - 使用者指南</a>。
+有關更多功能的完整範例，可以參考 <a href="https://readyapi.github.io/tutorial/">教學 - 使用者指南</a>。
 
 **劇透警告**： 教學 - 使用者指南內容有：
 
@@ -437,7 +437,7 @@ item: Item
 
 來自獨立機構 TechEmpower 的測試結果，顯示在 Uvicorn 執行下的 **ReadyAPI** 是 <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">最快的 Python 框架之一</a>， 僅次於 Starlette 和 Uvicorn 本身 (兩者是 ReadyAPI 的底層)。 (\*)
 
-想了解更多訊息，可以參考 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">測試結果</a>。
+想了解更多訊息，可以參考 <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">測試結果</a>。
 
 ## 可選的依賴套件
 

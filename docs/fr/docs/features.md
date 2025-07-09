@@ -17,11 +17,11 @@ Documentation d'API interactive et interface web d'exploration. Comme le framewo
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, propose une documentation interactive. Vous permet de directement tester l'API depuis votre navigateur.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Une autre documentation d'API est fournie par <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Faite en python moderne
 
@@ -84,11 +84,11 @@ Voici comment votre éditeur peut vous aider:
 
 * dans <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * dans <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 Vous aurez des propositions de complétion que vous n'auriez jamais imaginées. Par exemple la clé `prix` dans le corps d'un document JSON (qui est peut-être imbriqué) venant d'une requête.
 

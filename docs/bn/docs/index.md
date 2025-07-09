@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI উচ্চক্ষমতা সম্পন্ন, সহজে শেখার এবং দ্রুত কোড করে প্রোডাকশনের জন্য ফ্রামওয়ার্ক।</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**নির্দেশিকা নথি**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**নির্দেশিকা নথি**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **সোর্স কোড**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -58,7 +58,7 @@ ReadyAPI একটি আধুনিক, দ্রুত ( বেশি ক্�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">অন্যান্য স্পনসর গণ</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">অন্যান্য স্পনসর গণ</a>
 
 ## মতামত সমূহ
 
@@ -190,7 +190,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **টীকা**:
 
-আপনি যদি না জানেন, _"তাড়াহুড়ো?"_ বিভাগটি দেখুন <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` এবং `await` নথির মধ্যে দেখুন </a>.
+আপনি যদি না জানেন, _"তাড়াহুড়ো?"_ বিভাগটি দেখুন <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` এবং `await` নথির মধ্যে দেখুন </a>.
 
 </details>
 
@@ -246,7 +246,7 @@ INFO:     Application startup complete.
 
 আপনি স্বয়ংক্রিয় ভাবে প্রস্তুত ক্রিয়াশীল API নির্দেশিকা নথি দেখতে পাবেন (<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> প্রদত্ত):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### বিকল্প API নির্দেশিকা নথি
 
@@ -254,7 +254,7 @@ INFO:     Application startup complete.
 
 আপনি স্বয়ংক্রিয় ভাবে প্রস্তুত বিকল্প নির্দেশিকা নথি দেখতে পাবেন (<a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> প্রদত্ত):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## উদাহরণস্বরূপ আপগ্রেড
 
@@ -300,15 +300,15 @@ def update_item(item_id: int, item: Item):
 
 - ক্রিয়াশীল API নির্দেশিকা নথিটি স্বয়ংক্রিয়ভাবে উন্নীত হযে যাবে, নতুন বডি সহ:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 - "Try it out" বাটনে চাপুন, এটি আপনাকে পেরামিটারগুলো পূরণ করতে এবং API এর সাথে সরাসরি ক্রিয়া-কলাপ করতে দিবে:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 - তারপরে "Execute" বাটনে চাপুন, ব্যবহারকারীর ইন্টারফেস আপনার API এর সাথে যোগাযোগ করবে, পেরামিটার পাঠাবে, ফলাফলগুলি পাবে এবং সেগুলি পর্রদায় দেখাবে:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### বিকল্প API নির্দেশিকা নথি আপগ্রেড
 
@@ -316,7 +316,7 @@ def update_item(item_id: int, item: Item):
 
 - বিকল্প নির্দেশিকা নথিতেও নতুন কুয়েরি প্যারামিটার এবং বডি প্রতিফলিত হবে:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### সংক্ষিপ্তকরণ
 
@@ -413,9 +413,9 @@ item: Item
 
 ...এবং দেখুন কিভাবে আপনার এডিটর উপাদানগুলোকে সয়ংক্রিয়ভাবে-সম্পন্ন করবে এবং তাদের ধরন জানতে পারবে:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-আরও বৈশিষ্ট্য সম্পন্ন উদাহরণের জন্য, দেখুন <a href="https://readyapi.khulnasoft.com/tutorial/">টিউটোরিয়াল - ব্যবহারকারীর গাইড</a>.
+আরও বৈশিষ্ট্য সম্পন্ন উদাহরণের জন্য, দেখুন <a href="https://readyapi.github.io/tutorial/">টিউটোরিয়াল - ব্যবহারকারীর গাইড</a>.
 
 **স্পয়লার সতর্কতা**: টিউটোরিয়াল - ব্যবহারকারীর গাইড নিম্নোক্ত বিষয়গুলি অন্তর্ভুক্ত করে:
 
@@ -436,7 +436,7 @@ item: Item
 
 স্বাধীন TechEmpower Benchmarks দেখায় যে **ReadyAPI** অ্যাপ্লিকেশনগুলি Uvicorn-এর অধীনে চলমান দ্রুততম<a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">পাইথন ফ্রেমওয়ার্কগুলির মধ্যে একটি,</a> শুধুমাত্র Starlette এবং Uvicorn-এর পর (ReadyAPI দ্বারা অভ্যন্তরীণভাবে ব্যবহৃত)। (\*)
 
-এটি সম্পর্কে আরও বুঝতে, দেখুন <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+এটি সম্পর্কে আরও বুঝতে, দেখুন <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## ঐচ্ছিক নির্ভরশীলতা
 

@@ -22,7 +22,7 @@ def test_openapi_schema():
             "description": "Here's a longer description of the custom **OpenAPI** schema",
             "version": "2.5.0",
             "x-logo": {
-                "url": "https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png"
+                "url": "https://readyapi.github.io/img/logo-margin/logo-teal.png"
             },
         },
         "paths": {

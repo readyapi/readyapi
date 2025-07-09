@@ -17,11 +17,11 @@ Interaktive API-Dokumentation und erkundbare Web-Benutzeroberflächen. Da das Fr
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, bietet interaktive Erkundung, testen und rufen Sie ihre API direkt im Webbrowser auf.
 
-![Swagger UI Interaktion](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI Interaktion](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Alternative API-Dokumentation mit <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Nur modernes Python
 
@@ -86,11 +86,11 @@ So kann ihr Editor Sie unterstützen:
 
 * in <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![Editor Unterstützung](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![Editor Unterstützung](https://readyapi.github.io/img/vscode-completion.png)
 
 * in <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![Editor Unterstützung](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![Editor Unterstützung](https://readyapi.github.io/img/pycharm-completion.png)
 
 Sie bekommen sogar Autovervollständigung an Stellen, an denen Sie dies vorher nicht für möglich gehalten hätten. Zum Beispiel der `price` Schlüssel in einem JSON Datensatz (dieser könnte auch verschachtelt sein), der aus einer Anfrage kommt.
 

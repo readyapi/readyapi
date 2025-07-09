@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
      <em>תשתית ReadyAPI, ביצועים גבוהים, קלה ללמידה, מהירה לתכנות, מוכנה לסביבת ייצור</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**תיעוד**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**תיעוד**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **קוד**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -64,7 +64,7 @@ ReadyAPI היא תשתית רשת מודרנית ומהירה (ביצועים ג
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">נותני חסות אחרים</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">נותני חסות אחרים</a>
 
 ## דעות
 
@@ -196,7 +196,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **שימו לב**:
 
-אם אינכם יודעים, בדקו את פרק "ממהרים?" על <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` ו - `await` בתיעוד</a>.
+אם אינכם יודעים, בדקו את פרק "ממהרים?" על <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` ו - `await` בתיעוד</a>.
 
 </details>
 
@@ -252,7 +252,7 @@ INFO:     Application startup complete.
 
 אתם תראו את התיעוד האוטומטי (מסופק על ידי <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### תיעוד אלטרנטיבי
 
@@ -260,7 +260,7 @@ INFO:     Application startup complete.
 
 אתם תראו תיעוד אלטרנטיבי (מסופק על ידי <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## שדרוג לדוגמא
 
@@ -306,15 +306,15 @@ def update_item(item_id: int, item: Item):
 
 -   התיעוד האוטומטי יתעדכן, כולל הגוף החדש:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 -   לחצו על הכפתור "Try it out", הוא יאפשר לכם למלא את הפרמטרים ולעבוד ישירות מול ה - API.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 -   אחר כך לחצו על הכפתור "Execute", האתר יתקשר עם ה - API שלכם, ישלח את הפרמטרים, ישיג את התוצאות ואז יראה אותן על המסך:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### שדרוג התיעוד האלטרנטיבי
 
@@ -322,7 +322,7 @@ def update_item(item_id: int, item: Item):
 
 -   התיעוד האלטרנטיבי גם יראה את פרמטר השאילתא והגוף החדשים.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### סיכום
 
@@ -417,9 +417,9 @@ item: Item
 
 ...וראו איך העורך שלכם משלים את המאפיינים ויודע את הטיפוסים שלהם:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-לדוגמא יותר שלמה שכוללת עוד תכונות, ראו את ה<a href="https://readyapi.khulnasoft.com/tutorial/">מדריך - למשתמש</a>.
+לדוגמא יותר שלמה שכוללת עוד תכונות, ראו את ה<a href="https://readyapi.github.io/tutorial/">מדריך - למשתמש</a>.
 
 **התראת ספוילרים**: המדריך - למשתמש כולל:
 
@@ -440,7 +440,7 @@ item: Item
 
 בדיקות עצמאיות של TechEmpower הראו שאפליקציות **ReadyAPI** שרצות תחת Uvicorn הן <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">מתשתיות הפייתון המהירות ביותר</a>, רק מתחת ל - Starlette ו - Uvicorn עצמן (ש - ReadyAPI מבוססת עליהן). (\*)
 
-כדי להבין עוד על הנושא, ראו את הפרק <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+כדי להבין עוד על הנושא, ראו את הפרק <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## תלויות אופציונליות
 

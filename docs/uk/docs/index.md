@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>Готовий до продакшину, високопродуктивний, простий у вивченні та швидкий для написання коду фреймворк</em>
@@ -21,7 +21,7 @@
 
 ---
 
-**Документація**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Документація**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Програмний код**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -58,7 +58,7 @@ ReadyAPI - це сучасний, швидкий (високопродуктив
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
 
 ## Враження
 
@@ -188,7 +188,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Примітка**:
 
-Стикнувшись з проблемами, не зайвим буде ознайомитися з розділом _"In a hurry?"_ про <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` та `await` у документації</a>.
+Стикнувшись з проблемами, не зайвим буде ознайомитися з розділом _"In a hurry?"_ про <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` та `await` у документації</a>.
 
 </details>
 
@@ -244,7 +244,7 @@ INFO:     Application startup complete.
 
 Ви побачите автоматичну інтерактивну API документацію (створену завдяки <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Альтернативні документації API
 
@@ -252,7 +252,7 @@ INFO:     Application startup complete.
 
 Ви побачите альтернативну автоматичну документацію (створену завдяки  <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Приклад оновлення
 
@@ -298,15 +298,15 @@ def update_item(item_id: int, item: Item):
 
 * Інтерактивна документація API буде автоматично оновлена, включаючи новий вміст:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Натисніть кнопку "Try it out", це дозволить вам заповнити параметри та безпосередньо взаємодіяти з API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Потім натисніть кнопку "Execute", інтерфейс користувача зв'яжеться з вашим API, надішле параметри, у відповідь отримає результати та покаже їх на екрані:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Оновлення альтернативної API документації
 
@@ -314,7 +314,7 @@ def update_item(item_id: int, item: Item):
 
 * Альтернативна документація також показуватиме новий параметр і вміст запиту:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Підсумки
 
@@ -409,9 +409,9 @@ item: Item
 
 ...і побачите, як ваш редактор автоматично заповнюватиме атрибути та знатиме їхні типи:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Для більш повного ознайомлення з додатковими функціями, перегляньте <a href="https://readyapi.khulnasoft.com/tutorial/">Туторіал - Посібник Користувача</a>.
+Для більш повного ознайомлення з додатковими функціями, перегляньте <a href="https://readyapi.github.io/tutorial/">Туторіал - Посібник Користувача</a>.
 
 **Spoiler alert**: туторіал - посібник користувача містить:
 
@@ -431,7 +431,7 @@ item: Item
 
 Незалежні тести TechEmpower показують що застосунки **ReadyAPI**, які працюють під керуванням Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">є одними з найшвидших серед доступних фреймворків в Python</a>, поступаючись лише Starlette та Uvicorn (які внутрішньо використовуються в ReadyAPI). (*)
 
-Щоб дізнатися більше про це, перегляньте розділ <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+Щоб дізнатися більше про це, перегляньте розділ <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Необов'язкові залежності
 

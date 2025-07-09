@@ -179,7 +179,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 対話的APIドキュメントは複数の値を許可するために自動的に更新されます。
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/query-params-str-validations/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/query-params-str-validations/image02.png">
 
 ### デフォルト値を持つ、クエリパラメータのリスト / 複数の値
 
@@ -272,7 +272,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 ドキュメントは以下のようになります:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/query-params-str-validations/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/query-params-str-validations/image01.png">
 
 ## まとめ
 

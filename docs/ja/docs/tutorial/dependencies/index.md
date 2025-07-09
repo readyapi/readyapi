@@ -124,7 +124,7 @@ common_parameters --> read_users
 
 つまり、対話型ドキュメントにはこれらの依存関係から得られる全ての情報も含まれているということです:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/dependencies/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/dependencies/image01.png">
 
 ## 簡単な使い方
 

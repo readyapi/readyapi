@@ -38,7 +38,7 @@ JSON Schemaの追加情報を宣言する方法はいくつかあります。
 
 上記のいずれの方法でも、`/docs`の中では以下のようになります:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/body-fields/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/body-fields/image01.png">
 
 ## 技術詳細
 

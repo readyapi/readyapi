@@ -76,7 +76,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
     🕧, ReadyAPI 👆 💪 🌀 `def` &amp; `async def` 💪.
 
-    🚥 👆 💪 ↗️ 🔃 🕐❔ ⚙️ ❔, ✅ 👅 📄 _"🏃 ❓" _ 🩺 🔃 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank" class="internal-link">`async` &amp; `await`</a>.
+    🚥 👆 💪 ↗️ 🔃 🕐❔ ⚙️ ❔, ✅ 👅 📄 _"🏃 ❓" _ 🩺 🔃 <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank" class="internal-link">`async` &amp; `await`</a>.
 
 9️⃣. 👉 *➡ 🛠️ 🔢* 🚫 🛬 🎻 (👐 ⚫️ 💪), ✋️ 📇 📖 ⏮️ 🔗 💽.
 

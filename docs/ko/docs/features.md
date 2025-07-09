@@ -17,11 +17,11 @@
 
 * 대화형 탐색 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>를 이용해, 브라우저에서 바로 여러분의 API를 호출하거나 테스트할 수 있습니다.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>을 이용해 API 문서화를 대체할 수 있습니다.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 그저 현대 파이썬
 
@@ -85,11 +85,11 @@ my_second_user: User = User(**second_user_data)
 
 * <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>에서:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>에서:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 여러분이 이전에 불가능하다고 고려했던 코드도 완성할 수 있을 겁니다. 예를 들어, 요청에서 전달되는 (중첩될 수도 있는)JSON 본문 내부에 있는 `price` 키입니다.
 

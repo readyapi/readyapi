@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>Ìlànà wẹ́ẹ́bù ReadyAPI, iṣẹ́ gíga, ó rọrùn láti kọ̀, o yára láti kóòdù, ó sì ṣetán fún iṣelọpọ ní lílo</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Àkọsílẹ̀**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Àkọsílẹ̀**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Orisun Kóòdù**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ ReadyAPI jẹ́ ìgbàlódé, tí ó yára (iṣẹ-giga), ìlànà wẹ́ẹ́b
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Àwọn onígbọ̀wọ́ míràn</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Àwọn onígbọ̀wọ́ míràn</a>
 
 ## Àwọn ero àti èsì
 
@@ -198,7 +198,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Akiyesi**:
 
-Tí o kò bá mọ̀, ṣàyẹ̀wò ibi tí a ti ní _"In a hurry?"_ (i.e. _"Ní kíákíá?"_) nípa <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` and `await` nínú àkọsílẹ̀</a>.
+Tí o kò bá mọ̀, ṣàyẹ̀wò ibi tí a ti ní _"In a hurry?"_ (i.e. _"Ní kíákíá?"_) nípa <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` and `await` nínú àkọsílẹ̀</a>.
 
 </details>
 
@@ -255,7 +255,7 @@ Ní báyìí, lọ sí <a href="http://127.0.0.1:8000/docs" class="external-link
 
 Lẹ́yìn náà, iwọ yóò rí ìdáhùn àkọsílẹ̀ API tí ó jẹ́ ìbáṣepọ̀ alaifọwọyi/aládàáṣiṣẹ́ (tí a pèṣè nípaṣẹ̀ <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Ìdàkejì àkọsílẹ̀ API
 
@@ -263,7 +263,7 @@ Ní báyìí, lọ sí <a href="http://127.0.0.1:8000/redoc" class="external-lin
 
 Wà á rí àwọn àkọsílẹ̀ aládàáṣiṣẹ́ mìíràn (tí a pese nipasẹ <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Àpẹẹrẹ ìgbésókè mìíràn
 
@@ -309,15 +309,15 @@ Ní báyìí, lọ sí <a href="http://127.0.0.1:8000/docs" class="external-link
 
 * Ìbáṣepọ̀ àkọsílẹ̀ API yóò ṣe imudojuiwọn àkọsílẹ̀ API laifọwọyi, pẹ̀lú kókó èsì ìdáhùn API tuntun:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Tẹ bọtini "Gbiyanju rẹ" i.e. "Try it out", yóò gbà ọ́ láàyè láti jẹ́ kí ó tẹ́ àlàyé tí ó nílò kí ó le sọ̀rọ̀ tààrà pẹ̀lú API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Lẹhinna tẹ bọtini "Ṣiṣe" i.e. "Execute", olùmúlò (i.e. user interface) yóò sọrọ pẹ̀lú API rẹ, yóò ṣe afiranṣẹ àwọn èròjà, pàápàá jùlọ yóò gba àwọn àbájáde yóò si ṣafihan wọn loju ìbòjú:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Ìdàkejì ìgbésókè àkọsílẹ̀ API
 
@@ -325,7 +325,7 @@ Ní báyìí, lọ sí <a href="http://127.0.0.1:8000/redoc" class="external-lin
 
 * Ìdàkejì àkọsílẹ̀ API yóò ṣ'afihan ìbéèrè èròjà/pàrámítà tuntun àti kókó èsì ti API:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Àtúnyẹ̀wò
 
@@ -420,9 +420,9 @@ Gbiyanju láti yí ìlà padà pẹ̀lú:
 
 .. kí o sì wo bí olóòtú rẹ yóò ṣe parí àwọn àbùdá náà fúnra rẹ̀, yóò sì mọ irúfẹ́ wọn:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Fún àpẹẹrẹ pípé síi pẹ̀lú àwọn àbùdá mìíràn, wo <a href="https://readyapi.khulnasoft.com/tutorial/">Ìdánilẹ́kọ̀ọ́ - Ìtọ́sọ́nà Olùmúlò</a>.
+Fún àpẹẹrẹ pípé síi pẹ̀lú àwọn àbùdá mìíràn, wo <a href="https://readyapi.github.io/tutorial/">Ìdánilẹ́kọ̀ọ́ - Ìtọ́sọ́nà Olùmúlò</a>.
 
 **Itaniji gẹ́gẹ́ bí isọ'ye**: ìdánilẹ́kọ̀ọ́ - itọsọna olùmúlò pẹ̀lú:
 
@@ -443,7 +443,7 @@ Fún àpẹẹrẹ pípé síi pẹ̀lú àwọn àbùdá mìíràn, wo <a href=
 
 Àwọn àlá TechEmpower fi hàn pé **ReadyAPI** ń ṣiṣẹ́ lábẹ́ Uvicorn gẹ́gẹ́ bí <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">ọ̀kan lára àwọn ìlànà Python tí ó yára jùlọ tí ó wà</a>, ní ìsàlẹ̀ Starlette àti Uvicorn fúnra wọn (tí ReadyAPI ń lò fúnra rẹ̀). (*)
 
-Láti ní òye síi nípa rẹ̀, wo abala àwọn <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Àlá</a>.
+Láti ní òye síi nípa rẹ̀, wo abala àwọn <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Àlá</a>.
 
 ## Àṣàyàn Àwọn Àfikún Ìgbẹ́kẹ̀lé Kóòdù
 

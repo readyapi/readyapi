@@ -11,7 +11,7 @@ body:
 
         I end up not being able to add new features, fix bugs, review pull requests, etc. as fast as I wish because I have to spend too much time handling questions.
 
-        All that, on top of all the incredible help provided by a bunch of community members, the [ReadyAPI Experts](https://readyapi.khulnasoft.com/readyapi-people/#experts), that give a lot of their time to come here and help others.
+        All that, on top of all the incredible help provided by a bunch of community members, the [ReadyAPI Experts](https://readyapi.github.io/readyapi-people/#experts), that give a lot of their time to come here and help others.
 
         That's a lot of work they are doing, but if more ReadyAPI users came to help others like them just a little bit more, it would be much less effort for them (and you and me 😅).
 
@@ -51,7 +51,7 @@ body:
 
           * Read open questions until I find 2 where I can help someone and add a comment to help there.
           * I already hit the "watch" button in this repository to receive notifications and I commit to help at least 2 people that ask questions in the future.
-          * Review one Pull Request by downloading the code and following [all the review process](https://readyapi.khulnasoft.com/help-readyapi/#review-pull-requests).
+          * Review one Pull Request by downloading the code and following [all the review process](https://readyapi.github.io/help-readyapi/#review-pull-requests).
 
       options:
         - label: I commit to help with one of those options 👆

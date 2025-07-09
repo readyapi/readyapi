@@ -17,11 +17,11 @@ Documentação interativa da API e navegação _web_ da interface de usuário. C
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, com navegação interativa, chame e teste sua API diretamente do navegador.
 
-![Interação Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Interação Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Documentação alternativa da API com <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Apenas Python moderno
 
@@ -85,11 +85,11 @@ Aqui está como o editor poderá te ajudar:
 
 * no <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * no <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 Você terá completação do seu código que você poderia considerar impossível antes. Como por exemplo, a chave `price` dentro do corpo JSON (que poderia ter sido aninhado) que vem de uma requisição.
 

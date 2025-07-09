@@ -77,11 +77,11 @@ ReadyAPIは`response_model`を使って以下のことをします:
 
 自動ドキュメントを見ると、入力モデルと出力モデルがそれぞれ独自のJSON Schemaを持っていることが確認できます。
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-model/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/response-model/image01.png">
 
 そして、両方のモデルは、対話型のAPIドキュメントに使用されます:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-model/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/response-model/image02.png">
 
 ## レスポンスモデルのエンコーディングパラメータ
 

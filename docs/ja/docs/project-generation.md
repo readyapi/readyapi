@@ -21,7 +21,7 @@ GitHub: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql" c
     * **短い**: コードの重複を最小限に。パラメータ宣言による複数の機能。
     * **堅牢性**: 自動対話ドキュメントを使用した、本番環境で使用できるコード。
     * **標準規格準拠**: API のオープンスタンダードに基く、完全な互換性: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a>や <a href="http://json-schema.org/" class="external-link" target="_blank">JSON スキーマ</a>。
-    * 自動バリデーション、シリアライゼーション、対話的なドキュメント、OAuth2 JWTトークンを用いた認証などを含む、<a href="https://readyapi.khulnasoft.com/features/" class="external-link" target="_blank">**その他多くの機能**</a>。
+    * 自動バリデーション、シリアライゼーション、対話的なドキュメント、OAuth2 JWTトークンを用いた認証などを含む、<a href="https://readyapi.github.io/features/" class="external-link" target="_blank">**その他多くの機能**</a>。
 * **セキュアなパスワード** ハッシュ化 (デフォルトで)。
 * **JWTトークン** 認証。
 * **SQLAlchemy** モデル (Flask用の拡張と独立しているので、Celeryワーカーと直接的に併用できます)。

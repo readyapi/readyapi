@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, alte prestazioni, facile da imparare, rapido da implementare, pronto per il rilascio in produzione</em>
@@ -22,7 +22,7 @@
 
 ---
 
-**Documentazione**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Documentazione**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Codice Sorgente**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -58,7 +58,7 @@ Le sue caratteristiche principali sono:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Altri sponsor</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Altri sponsor</a>
 
 ## Recensioni
 
@@ -188,7 +188,7 @@ async def read_item(item_id: int, q: Optional[str] = None):
 
 **Nota**:
 
-e vuoi approfondire, consulta la sezione  _"In a hurry?"_ su <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` e `await` nella documentazione</a>.
+e vuoi approfondire, consulta la sezione  _"In a hurry?"_ su <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` e `await` nella documentazione</a>.
 
 </details>
 
@@ -244,7 +244,7 @@ Adesso vai all'indirizzo <a href="http://127.0.0.1:8000/docs" class="external-li
 
 Vedrai la documentazione interattiva dell'API (offerta da <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Documentazione interattiva alternativa
 
@@ -252,7 +252,7 @@ Adesso accedi all'url <a href="http://127.0.0.1:8000/redoc" class="external-link
 
 Vedrai la documentazione interattiva dell'API (offerta da <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Esempio più avanzato
 
@@ -297,15 +297,15 @@ Adesso vai su <a href="http://127.0.0.1:8000/docs" class="external-link" target=
 
 * La documentazione interattiva dell'API verrà automaticamente aggiornata, includendo il nuovo _body_:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Fai click sul pulsante "Try it out", che ti permette di inserire i parametri per interagire direttamente con l'API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Successivamente, premi sul pulsante "Execute". L'interfaccia utente comunicherà con la tua API, invierà i parametri, riceverà i risultati della richiesta, e li mostrerà sullo schermo:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Aggiornamento della documentazione alternativa
 
@@ -313,7 +313,7 @@ Ora vai su <a href="http://127.0.0.1:8000/redoc" class="external-link" target="_
 
 * Anche la documentazione alternativa dell'API mostrerà il nuovo parametro della query e il _body_:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Riepilogo
 
@@ -408,9 +408,9 @@ Prova a cambiare questa riga di codice:
 
 ...e osserva come il tuo editor di testo autocompleterà gli attributi e sarà in grado di riconoscere i loro tipi:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Per un esempio più completo che mostra più funzionalità del framework, consulta <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - Guida Utente</a>.
+Per un esempio più completo che mostra più funzionalità del framework, consulta <a href="https://readyapi.github.io/tutorial/">Tutorial - Guida Utente</a>.
 
 **Spoiler alert**: il tutorial - Guida Utente include:
 
@@ -432,7 +432,7 @@ e potente.
 
 Benchmark indipendenti di TechEmpower mostrano che **ReadyAPI** basato su Uvicorn è <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">uno dei framework Python più veloci in circolazione</a>, solamente dietro a Starlette e Uvicorn (usate internamente da ReadyAPI). (*)
 
-Per approfondire, consulta la sezione <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+Per approfondire, consulta la sezione <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Dipendenze opzionali
 

@@ -8,7 +8,7 @@ client = TestClient(app)
 def test_redirect_response_class():
     response = client.get("/readyapi", follow_redirects=False)
     assert response.status_code == 307
-    assert response.headers["location"] == "https://readyapi.khulnasoft.com"
+    assert response.headers["location"] == "https://readyapi.github.io"
 
 
 def test_openapi_schema():

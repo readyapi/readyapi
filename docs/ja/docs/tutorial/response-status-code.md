@@ -29,7 +29,7 @@
 * レスポンスでステータスコードを返します。
 * OpenAPIスキーマ（およびユーザーインターフェース）に以下のように文書化します:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-status-code/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/response-status-code/image01.png">
 
 /// note | 備考
 
@@ -86,7 +86,7 @@ HTTPでは、レスポンスの一部として３桁の数字のステータス�
 
 それらは便利です。それらは同じ番号を保持しており、その方法ではエディタの自動補完を使用してそれらを見つけることができます。
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-status-code/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/response-status-code/image02.png">
 
 /// note | 技術詳細
 

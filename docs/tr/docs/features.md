@@ -19,11 +19,11 @@ OpenAPI standartlarına dayalı olan bir framework olarak, geliştiricilerin bir
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a> interaktif olarak API'ınızı tarayıcı üzerinden çağırıp test edebilmenize olanak sağlıyor.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a> ile beraber alternatif API dokümantasyonu.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Sadece modern Python
 
@@ -89,11 +89,11 @@ Editörün sana nasıl yardım ettiğine bir bak:
 
 * <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a> ile:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a> ile:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 
 Daha önceden düşünüp en imkansız diyebileceğin durumlarda bile otomatik tamamlama alacaksın, örnek olarak `price` JSON body içerisinde (nested bir JSON body de olabilirdi.) direkt olarak istekten geliyor, bu durumda bile oto-tammalama sağlıyor.

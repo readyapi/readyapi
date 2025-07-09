@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI 🛠️, ↕ 🎭, ⏩ 💡, ⏩ 📟, 🔜 🏭</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**🧾**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**🧾**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **ℹ 📟**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ ReadyAPI 🏛, ⏩ (↕-🎭), 🕸 🛠️ 🏗 🛠️ ⏮️ 🐍 3️⃣.8�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">🎏 💰</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">🎏 💰</a>
 
 ## 🤔
 
@@ -201,7 +201,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **🗒**:
 
-🚥 👆 🚫 💭, ✅ _"🏃 ❓" _ 📄 🔃 <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` &amp; `await` 🩺</a>.
+🚥 👆 🚫 💭, ✅ _"🏃 ❓" _ 📄 🔃 <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` &amp; `await` 🩺</a>.
 
 </details>
 
@@ -257,7 +257,7 @@ INFO:     Application startup complete.
 
 👆 🔜 👀 🏧 🎓 🛠️ 🧾 (🚚 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">🦁 🎚</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### 🎛 🛠️ 🩺
 
@@ -265,7 +265,7 @@ INFO:     Application startup complete.
 
 👆 🔜 👀 🎛 🏧 🧾 (🚚 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">📄</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 🖼 ♻
 
@@ -311,15 +311,15 @@ def update_item(item_id: int, item: Item):
 
 * 🎓 🛠️ 🧾 🔜 🔁 ℹ, 🔌 🆕 💪:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * 🖊 🔛 🔼 "🔄 ⚫️ 👅", ⚫️ ✔ 👆 🥧 🔢 &amp; 🔗 🔗 ⏮️ 🛠️:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * ⤴️ 🖊 🔛 "🛠️" 🔼, 👩‍💻 🔢 🔜 🔗 ⏮️ 👆 🛠️, 📨 🔢, 🤚 🏁 &amp; 🎦 👫 🔛 🖥:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### 🎛 🛠️ 🩺 ♻
 
@@ -327,7 +327,7 @@ def update_item(item_id: int, item: Item):
 
 * 🎛 🧾 🔜 🎨 🆕 🔢 🔢 &amp; 💪:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### 🌃
 
@@ -422,9 +422,9 @@ item: Item
 
 ...&amp; 👀 ❔ 👆 👨‍🎨 🔜 🚘-🏁 🔢 &amp; 💭 👫 🆎:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-🌅 🏁 🖼 🔌 🌅 ⚒, 👀 <a href="https://readyapi.khulnasoft.com/tutorial/">🔰 - 👩‍💻 🦮</a>.
+🌅 🏁 🖼 🔌 🌅 ⚒, 👀 <a href="https://readyapi.github.io/tutorial/">🔰 - 👩‍💻 🦮</a>.
 
 **🚘 🚨**: 🔰 - 👩‍💻 🦮 🔌:
 
@@ -445,7 +445,7 @@ item: Item
 
 🔬 🇸🇲 📇 🎦 **ReadyAPI** 🈸 🏃‍♂ 🔽 Uvicorn <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">1️⃣ ⏩ 🐍 🛠️ 💪</a>, 🕴 🔛 💃 &amp; Uvicorn 👫 (⚙️ 🔘 ReadyAPI). (*)
 
-🤔 🌖 🔃 ⚫️, 👀 📄 <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">📇</a>.
+🤔 🌖 🔃 ⚫️, 👀 📄 <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">📇</a>.
 
 ## 📦 🔗
 

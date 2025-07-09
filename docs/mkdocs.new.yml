@@ -1,0 +1,69 @@
+site_name: ReadyAPI
+site_url: https://readyapi.github.io
+repo_url: https://github.com/readyapi/readyapi
+docs_dir: docs/en/docs/new_structure
+nav:
+- Getting-Started:
+  - Tutorial:
+    - Background-Tasks: getting-started/tutorial/background-tasks.md
+    - Bigger-Applications: getting-started/tutorial/bigger-applications.md
+    - Body-Fields: getting-started/tutorial/body-fields.md
+    - Body-Multiple-Params: getting-started/tutorial/body-multiple-params.md
+    - Body-Nested-Models: getting-started/tutorial/body-nested-models.md
+    - Body-Updates: getting-started/tutorial/body-updates.md
+    - Body: getting-started/tutorial/body.md
+    - Cookie-Param-Models: getting-started/tutorial/cookie-param-models.md
+    - Cookie-Params: getting-started/tutorial/cookie-params.md
+    - Cors: getting-started/tutorial/cors.md
+    - Debugging: getting-started/tutorial/debugging.md
+    - Encoder: getting-started/tutorial/encoder.md
+    - Extra-Data-Types: getting-started/tutorial/extra-data-types.md
+    - Extra-Models: getting-started/tutorial/extra-models.md
+    - First-Steps: getting-started/tutorial/first-steps.md
+    - Handling-Errors: getting-started/tutorial/handling-errors.md
+    - Header-Param-Models: getting-started/tutorial/header-param-models.md
+    - Header-Params: getting-started/tutorial/header-params.md
+    - Index: getting-started/tutorial/index.md
+    - Metadata: getting-started/tutorial/metadata.md
+    - Middleware: getting-started/tutorial/middleware.md
+    - Path-Operation-Configuration: getting-started/tutorial/path-operation-configuration.md
+    - Path-Params-Numeric-Validations: getting-started/tutorial/path-params-numeric-validations.md
+    - Path-Params: getting-started/tutorial/path-params.md
+    - Query-Param-Models: getting-started/tutorial/query-param-models.md
+    - Query-Params-Str-Validations: getting-started/tutorial/query-params-str-validations.md
+    - Query-Params: getting-started/tutorial/query-params.md
+    - Request-Files: getting-started/tutorial/request-files.md
+    - Request-Form-Models: getting-started/tutorial/request-form-models.md
+    - Request-Forms-And-Files: getting-started/tutorial/request-forms-and-files.md
+    - Request-Forms: getting-started/tutorial/request-forms.md
+    - Response-Model: getting-started/tutorial/response-model.md
+    - Response-Status-Code: getting-started/tutorial/response-status-code.md
+    - Schema-Extra-Example: getting-started/tutorial/schema-extra-example.md
+    - Sql-Databases: getting-started/tutorial/sql-databases.md
+    - Static-Files: getting-started/tutorial/static-files.md
+    - Testing: getting-started/tutorial/testing.md
+  - Features: getting-started/features.md
+- Guides:
+  - Async: guides/async.md
+  - Python-Types: guides/python-types.md
+  - Environment-Variables: guides/environment-variables.md
+  - Virtual-Environments: guides/virtual-environments.md
+- Advanced: []
+- Deployment: []
+- Reference: []
+- Community:
+  - Contributing: community/contributing.md
+  - Help-Readyapi: community/help-readyapi.md
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - search.highlight
+markdown_extensions:
+- toc
+- tables
+- fenced_code
+- codehilite
+- mdx_include
+- admonition

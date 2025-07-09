@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, high performance, easy to learn, fast to code, ready for production</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**ドキュメント**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**ドキュメント**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **ソースコード**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -64,7 +64,7 @@ ReadyAPI は、Pythonの標準である型ヒントに基づいてPython 以降�
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Other sponsors</a>
 
 ## 評価
 
@@ -190,7 +190,7 @@ async def read_item(item_id: int, q: str = None):
 
 **注**:
 
-わからない場合は、<a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">ドキュメントの`async` と `await`にある</a>"In a hurry?"セクションをチェックしてください。
+わからない場合は、<a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">ドキュメントの`async` と `await`にある</a>"In a hurry?"セクションをチェックしてください。
 
 </details>
 
@@ -246,7 +246,7 @@ INFO:     Application startup complete.
 
 自動対話型の API ドキュメントが表示されます。 (<a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>が提供しています。):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### 代替の API ドキュメント
 
@@ -254,7 +254,7 @@ INFO:     Application startup complete.
 
 代替の自動ドキュメントが表示されます。(<a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>が提供しています。):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## アップグレード例
 
@@ -298,15 +298,15 @@ def update_item(item_id: int, item: Item):
 
 - 自動対話型の API ドキュメントが新しいボディも含めて自動でアップデートされます:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 - "Try it out"ボタンをクリックしてください。パラメータを入力して API と直接やりとりすることができます:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 - それから、"Execute" ボタンをクリックしてください。 ユーザーインターフェースは API と通信し、パラメータを送信し、結果を取得して画面に表示します:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### 代替の API ドキュメントのアップグレード
 
@@ -314,7 +314,7 @@ def update_item(item_id: int, item: Item):
 
 - 代替の API ドキュメントにも新しいクエリパラメータやボディが反映されます。
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### まとめ
 
@@ -409,9 +409,9 @@ item: Item
 
 ...そして、エディタが属性を自動補完し、そのタイプを知る方法を確認してください。:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-より多くの機能を含む、より完全な例については、<a href="https://readyapi.khulnasoft.com/tutorial/">チュートリアル - ユーザーガイド</a>をご覧ください。
+より多くの機能を含む、より完全な例については、<a href="https://readyapi.github.io/tutorial/">チュートリアル - ユーザーガイド</a>をご覧ください。
 
 **ネタバレ注意**: チュートリアル - ユーザーガイドは以下の情報が含まれています:
 
@@ -432,7 +432,7 @@ item: Item
 
 独立した TechEmpower のベンチマークでは、Uvicorn で動作する**ReadyAPI**アプリケーションが、<a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">Python フレームワークの中で最も高速なものの 1 つ</a>であり、Starlette と Uvicorn（ReadyAPI で内部的に使用されています）にのみ下回っていると示されています。
 
-詳細は<a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">ベンチマーク</a>セクションをご覧ください。
+詳細は<a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">ベンチマーク</a>セクションをご覧ください。
 
 ## オプションの依存関係
 

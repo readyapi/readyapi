@@ -235,7 +235,7 @@ def Path(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -286,7 +286,7 @@ def Path(  # noqa: N802
     Declare a path parameter for a *path operation*.
 
     Read more about it in the
-    [ReadyAPI docs for Path Parameters and Numeric Validations](https://readyapi.khulnasoft.com/tutorial/path-params-numeric-validations/).
+    [ReadyAPI docs for Path Parameters and Numeric Validations](https://readyapi.github.io/tutorial/path-params-numeric-validations/).
 
     ```python
     from typing import Annotated
@@ -560,7 +560,7 @@ def Query(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -709,7 +709,7 @@ def Header(  # noqa: N802
             Automatically convert underscores to hyphens in the parameter field name.
 
             Read more about it in the
-            [ReadyAPI docs for Header Parameters](https://readyapi.khulnasoft.com/tutorial/header-params/#automatic-conversion)
+            [ReadyAPI docs for Header Parameters](https://readyapi.github.io/tutorial/header-params/#automatic-conversion)
             """
         ),
     ] = True,
@@ -875,7 +875,7 @@ def Header(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -1180,7 +1180,7 @@ def Cookie(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -1291,7 +1291,7 @@ def Body(  # noqa: N802
             This happens automatically when more than one `Body` parameter is declared.
 
             Read more about it in the
-            [ReadyAPI docs for Body - Multiple Parameters](https://readyapi.khulnasoft.com/tutorial/body-multiple-params/#embed-a-single-body-parameter).
+            [ReadyAPI docs for Body - Multiple Parameters](https://readyapi.github.io/tutorial/body-multiple-params/#embed-a-single-body-parameter).
             """
         ),
     ] = None,
@@ -1507,7 +1507,7 @@ def Body(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -1822,7 +1822,7 @@ def Form(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -2136,7 +2136,7 @@ def File(  # noqa: N802
             use case for this.
 
             Read more about it in the
-            [ReadyAPI docs for Declare Request Example Data](https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
+            [ReadyAPI docs for Declare Request Example Data](https://readyapi.github.io/tutorial/schema-extra-example/#using-the-openapi_examples-parameter).
             """
         ),
     ] = None,
@@ -2253,7 +2253,7 @@ def Depends(  # noqa: N802
     Don't call it directly, ReadyAPI will call it for you.
 
     Read more about it in the
-    [ReadyAPI docs for Dependencies](https://readyapi.khulnasoft.com/tutorial/dependencies/).
+    [ReadyAPI docs for Dependencies](https://readyapi.github.io/tutorial/dependencies/).
 
     **Example**
 
@@ -2334,9 +2334,9 @@ def Security(  # noqa: N802
     Don't call it directly, ReadyAPI will call it for you.
 
     Read more about it in the
-    [ReadyAPI docs for Security](https://readyapi.khulnasoft.com/tutorial/security/) and
+    [ReadyAPI docs for Security](https://readyapi.github.io/tutorial/security/) and
     in the
-    [ReadyAPI docs for OAuth2 scopes](https://readyapi.khulnasoft.com/advanced/security/oauth2-scopes/).
+    [ReadyAPI docs for OAuth2 scopes](https://readyapi.github.io/advanced/security/oauth2-scopes/).
 
     **Example**
 

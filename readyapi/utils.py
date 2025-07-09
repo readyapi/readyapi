@@ -102,7 +102,7 @@ def create_model_field(
             "field (e.g. Union[Response, dict, None]) you can disable generating the "
             "response model from the type annotation with the path operation decorator "
             "parameter response_model=None. Read more: "
-            "https://readyapi.khulnasoft.com/tutorial/response-model/"
+            "https://readyapi.github.io/tutorial/response-model/"
         ) from None
 
 

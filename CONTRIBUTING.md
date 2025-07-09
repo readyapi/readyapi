@@ -1,1 +1,1 @@
-Please read the [Development - Contributing](https://readyapi.khulnasoft.com/contributing/) guidelines in the documentation site.
+Please read the [Development - Contributing](https://readyapi.github.io/contributing/) guidelines in the documentation site.

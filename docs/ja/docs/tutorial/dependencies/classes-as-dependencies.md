@@ -137,7 +137,7 @@ commons = Depends(CommonQueryParams)
 
 しかし、型を宣言することは推奨されています。そうすれば、エディタは`commons`のパラメータとして何が渡されるかを知ることができ、コードの補完や型チェックなどを行うのに役立ちます:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/dependencies/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/dependencies/image02.png">
 
 ## ショートカット
 

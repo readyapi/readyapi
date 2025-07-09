@@ -58,7 +58,7 @@ John Doe
 
 しかし、悲しいことに、これはなんの役にも立ちません:
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image01.png">
+<img src="https://readyapi.github.io/img/python-types/image01.png">
 
 ### 型の追加
 
@@ -99,11 +99,11 @@ John Doe
 
 同じタイミングで`Ctrl+Space`で自動補完を実行すると、以下のようになります:
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image02.png">
+<img src="https://readyapi.github.io/img/python-types/image02.png">
 
 これであれば、あなたは「ベルを鳴らす」一つを見つけるまで、オプションを見て、スクロールすることができます:
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image03.png">
+<img src="https://readyapi.github.io/img/python-types/image03.png">
 
 ## より強い動機
 
@@ -114,7 +114,7 @@ John Doe
 
 エディタは変数の型を知っているので、補完だけでなく、エラーチェックをすることもできます。
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image04.png">
+<img src="https://readyapi.github.io/img/python-types/image04.png">
 
 これで`age`を`str(age)`で文字列に変換して修正する必要があることがわかります:
 
@@ -179,7 +179,7 @@ John Doe
 
 そうすることで、エディタはリストの項目を処理している間にもサポートを提供できます。
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image05.png">
+<img src="https://readyapi.github.io/img/python-types/image05.png">
 
 タイプがなければ、それはほぼ不可能です。
 
@@ -256,7 +256,7 @@ John Doe
 
 そして、再び、すべてのエディタのサポートを得ることができます:
 
-<img src="https://readyapi.khulnasoft.com/img/python-types/image06.png">
+<img src="https://readyapi.github.io/img/python-types/image06.png">
 
 ## Pydanticのモデル
 

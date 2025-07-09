@@ -14,7 +14,7 @@ class HTTPException(StarletteHTTPException):
     errors in your code.
 
     Read more about it in the
-    [ReadyAPI docs for Handling Errors](https://readyapi.khulnasoft.com/tutorial/handling-errors/).
+    [ReadyAPI docs for Handling Errors](https://readyapi.github.io/tutorial/handling-errors/).
 
     ## Example
 
@@ -73,7 +73,7 @@ class WebSocketException(StarletteWebSocketException):
     errors in your code.
 
     Read more about it in the
-    [ReadyAPI docs for WebSockets](https://readyapi.khulnasoft.com/advanced/websockets/).
+    [ReadyAPI docs for WebSockets](https://readyapi.github.io/advanced/websockets/).
 
     ## Example
 

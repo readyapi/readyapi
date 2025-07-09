@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, yüksek performanslı, öğrenmesi oldukça kolay, kodlaması hızlı, kullanıma hazır</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Dokümantasyon**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Dokümantasyon**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Kaynak Kod**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ Temel özellikleri şunlardır:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/tr/readyapi-people/#sponsors" class="external-link" target="_blank">Diğer Sponsorlar</a>
+<a href="https://readyapi.github.io/tr/readyapi-people/#sponsors" class="external-link" target="_blank">Diğer Sponsorlar</a>
 
 ## Görüşler
 
@@ -199,7 +199,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Not**:
 
-Eğer bu konu hakkında bilginiz yoksa <a href="https://readyapi.khulnasoft.com/tr/async/#in-a-hurry" target="_blank">`async` ve `await`</a> dokümantasyonundaki _"Aceleniz mi var?"_ kısmını kontrol edebilirsiniz.
+Eğer bu konu hakkında bilginiz yoksa <a href="https://readyapi.github.io/tr/async/#in-a-hurry" target="_blank">`async` ve `await`</a> dokümantasyonundaki _"Aceleniz mi var?"_ kısmını kontrol edebilirsiniz.
 
 </details>
 
@@ -255,7 +255,7 @@ Az önce oluşturduğumuz API:
 
 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a> tarafından sağlanan otomatik etkileşimli bir API dokümantasyonu göreceğiz:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternatif API Dokümantasyonu
 
@@ -263,7 +263,7 @@ Az önce oluşturduğumuz API:
 
 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> tarafından sağlanan otomatik dokümantasyonu göreceğiz:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Örneği Güncelleyelim
 
@@ -309,15 +309,15 @@ Sunucu otomatik olarak yeniden başlamış olmalı (çünkü yukarıda `uvicorn`
 
 * Etkileşimli API dokümantasyonu, yeni gövdede dahil olmak üzere otomatik olarak güncellenmiş olacak:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * "Try it out" butonuna tıklayalım, bu işlem API parametleri üzerinde değişiklik yapmamıza ve doğrudan API ile etkileşime geçmemize imkan sağlayacak:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Şimdi "Execute" butonuna tıklayalım, kullanıcı arayüzü API'ımız ile bağlantı kurup parametreleri gönderecek ve sonucu ekranımıza getirecek:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Alternatif API Dokümantasyonundaki Değişimi Görelim
 
@@ -325,7 +325,7 @@ Sunucu otomatik olarak yeniden başlamış olmalı (çünkü yukarıda `uvicorn`
 
 * Alternatif dokümantasyonda yaptığımız değişiklikler ile birlikte yeni sorgu parametresi ve gövde bilgisi ile güncelemiş olacak:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Özet
 
@@ -420,9 +420,9 @@ Daha yeni başladık ama çalışma mantığını çoktan anlamış oldunuz.
 
 ...ve editörünün veri tiplerini bildiğini ve otomatik tamamladığını göreceksiniz:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Daha fazal özellik içeren, daha eksiksiz bir örnek için <a href="https://readyapi.khulnasoft.com/tr/tutorial/">Öğretici - Kullanıcı Rehberi</a> sayfasını ziyaret edebilirsin.
+Daha fazal özellik içeren, daha eksiksiz bir örnek için <a href="https://readyapi.github.io/tr/tutorial/">Öğretici - Kullanıcı Rehberi</a> sayfasını ziyaret edebilirsin.
 
 **Spoiler**: Öğretici - Kullanıcı rehberi şunları içerir:
 
@@ -443,7 +443,7 @@ Daha fazal özellik içeren, daha eksiksiz bir örnek için <a href="https://rea
 
 Bağımsız TechEmpower kıyaslamaları gösteriyor ki, Uvicorn ile çalıştırılan **ReadyAPI** uygulamaları <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">en hızlı Python framework'lerinden birisi</a>, sadece Starlette ve Uvicorn'dan yavaş, ki ReadyAPI bunların üzerine kurulu bir kütüphanedir.
 
-Daha fazla bilgi için, bu bölüme bir göz at <a href="https://readyapi.khulnasoft.com/tr/benchmarks/" class="internal-link" target="_blank">Kıyaslamalar</a>.
+Daha fazla bilgi için, bu bölüme bir göz at <a href="https://readyapi.github.io/tr/benchmarks/" class="internal-link" target="_blank">Kıyaslamalar</a>.
 
 ## Opsiyonel Gereksinimler
 

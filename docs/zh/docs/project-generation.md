@@ -8,7 +8,7 @@
 
 ## ReadyAPI全栈模板 - 技术栈和特性
 
-- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com) 用于Python后端API.
+- ⚡ [**ReadyAPI**](https://readyapi.github.io) 用于Python后端API.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com) 用于Python和SQL数据库的集成（ORM）。
     - 🔍 [Pydantic](https://docs.pydantic.dev) ReadyAPI的依赖项之一，用于数据验证和配置管理。
     - 💾 [PostgreSQL](https://www.postgresql.org) 作为SQL数据库。

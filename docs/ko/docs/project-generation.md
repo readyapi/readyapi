@@ -8,7 +8,7 @@ GitHub 저장소: <a href="https://github.com/khulnasoft/full-stack-readyapi-tem
 
 ## Full Stack ReadyAPI 템플릿 - 기술 스택과 기능들
 
-- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com): Python 백엔드 API.
+- ⚡ [**ReadyAPI**](https://readyapi.github.io): Python 백엔드 API.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com): Python SQL 데이터 상호작용을 위한 (ORM).
     - 🔍 [Pydantic](https://docs.pydantic.dev): ReadyAPI에 의해 사용되는, 데이터 검증과 설정관리.
     - 💾 [PostgreSQL](https://www.postgresql.org): SQL 데이터베이스.

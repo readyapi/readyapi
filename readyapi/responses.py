@@ -25,7 +25,7 @@ class UJSONResponse(JSONResponse):
     JSON response using the high-performance ujson library to serialize data to JSON.
 
     Read more about it in the
-    [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/).
+    [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/).
     """
 
     def render(self, content: Any) -> bytes:
@@ -38,7 +38,7 @@ class ORJSONResponse(JSONResponse):
     JSON response using the high-performance orjson library to serialize data to JSON.
 
     Read more about it in the
-    [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/).
+    [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/).
     """
 
     def render(self, content: Any) -> bytes:

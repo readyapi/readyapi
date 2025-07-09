@@ -12,7 +12,7 @@ class BackgroundTasks(StarletteBackgroundTasks):
     sent to the client.
 
     Read more about it in the
-    [ReadyAPI docs for Background Tasks](https://readyapi.khulnasoft.com/tutorial/background-tasks/).
+    [ReadyAPI docs for Background Tasks](https://readyapi.github.io/tutorial/background-tasks/).
 
     ## Example
 
@@ -54,6 +54,6 @@ class BackgroundTasks(StarletteBackgroundTasks):
         Add a function to be called in the background after the response is sent.
 
         Read more about it in the
-        [ReadyAPI docs for Background Tasks](https://readyapi.khulnasoft.com/tutorial/background-tasks/).
+        [ReadyAPI docs for Background Tasks](https://readyapi.github.io/tutorial/background-tasks/).
         """
         return super().add_task(func, *args, **kwargs)

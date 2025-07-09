@@ -50,10 +50,10 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/readyapi/readyapi"
-Documentation = "https://readyapi.khulnasoft.com/"
+Documentation = "https://readyapi.github.io/"
 Repository = "https://github.com/readyapi/readyapi"
 Issues = "https://github.com/readyapi/readyapi/issues"
-Changelog = "https://readyapi.khulnasoft.com/release-notes/"
+Changelog = "https://readyapi.github.io/release-notes/"
 
 [project.optional-dependencies]
 

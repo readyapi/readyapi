@@ -29,7 +29,7 @@
 * 응답에서 해당 상태 코드를 반환합니다.
 * 상태 코드를 OpenAPI 스키마(및 사용자 인터페이스)에 문서화 합니다.
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-status-code/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/response-status-code/image01.png">
 
 /// note | 참고
 
@@ -86,7 +86,7 @@ HTTP는 세자리의 숫자 상태 코드를 응답의 일부로 전송합니다
 
 이것은 단순히 작업을 편리하게 하기 위한 것으로, HTTP 상태 코드와 동일한 번호를 갖고있지만, 이를 사용하면 편집기의 자동완성 기능을 사용할 수 있습니다:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/response-status-code/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/response-status-code/image02.png">
 
 /// note | 기술적 세부사항
 
@@ -98,4 +98,4 @@ HTTP는 세자리의 숫자 상태 코드를 응답의 일부로 전송합니다
 
 ## 기본값 변경
 
-추후 여기서 선언하는 기본 상태 코드가 아닌 다른 상태 코드를 반환하는 방법을 [숙련된 사용자 지침서](https://readyapi.khulnasoft.com/ko/advanced/response-change-status-code/){.internal-link target=_blank}에서 확인할 수 있습니다.
+추후 여기서 선언하는 기본 상태 코드가 아닌 다른 상태 코드를 반환하는 방법을 [숙련된 사용자 지침서](https://readyapi.github.io/ko/advanced/response-change-status-code/){.internal-link target=_blank}에서 확인할 수 있습니다.

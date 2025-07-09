@@ -83,11 +83,11 @@ def main() -> None:
         else:
             use_path = f"{lang}/{path}"
         link = LinkData(
-            previous_link=f"https://readyapi.khulnasoft.com/{use_path}",
+            previous_link=f"https://readyapi.github.io/{use_path}",
             preview_link=f"{deploy_url}/{use_path}",
         )
         if lang != "en":
-            link.en_link = f"https://readyapi.khulnasoft.com/{en_path}"
+            link.en_link = f"https://readyapi.github.io/{en_path}"
         lang_links.setdefault(lang, []).append(link)
 
     links: list[LinkData] = []

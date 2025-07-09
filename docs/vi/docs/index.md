@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, hiệu năng cao, dễ học, dễ code, sẵn sàng để tạo ra sản phẩm</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Tài liệu**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Tài liệu**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Mã nguồn**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/readyapi/readyapi</a>
 
@@ -63,7 +63,7 @@ Những tính năng như:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Những nhà tài trợ khác</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Những nhà tài trợ khác</a>
 
 ## Ý kiến đánh giá
 
@@ -200,7 +200,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Lưu ý**:
 
-Nếu bạn không biết, xem phần _"In a hurry?"_ về <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` và `await` trong tài liệu này</a>.
+Nếu bạn không biết, xem phần _"In a hurry?"_ về <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` và `await` trong tài liệu này</a>.
 
 </details>
 
@@ -256,7 +256,7 @@ Truy cập <a href="http://127.0.0.1:8000/docs" class="external-link" target="_b
 
 Bạn sẽ thấy tài liệu tương tác API được tạo tự động (cung cấp bởi <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Tài liệu API thay thế
 
@@ -264,7 +264,7 @@ Và bây giờ, hãy truy cập tới <a href="http://127.0.0.1:8000/redoc" clas
 
 Bạn sẽ thấy tài liệu được thay thế (cung cấp bởi <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Nâng cấp ví dụ
 
@@ -310,15 +310,15 @@ Bây giờ truy cập tới <a href="http://127.0.0.1:8000/docs" class="external
 
 * Tài liệu API sẽ được tự động cập nhật, bao gồm body mới:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Click vào nút "Try it out", nó cho phép bạn điền những tham số và tương tác trực tiếp với API:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Sau khi click vào nút "Execute", giao diện người dùng sẽ giao tiếp với API của bạn bao gồm: gửi các tham số, lấy kết quả và hiển thị chúng trên màn hình:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Nâng cấp tài liệu API thay thế
 
@@ -326,7 +326,7 @@ Và bây giờ truy cập tới <a href="http://127.0.0.1:8000/redoc" class="ext
 
 * Tài liệu thay thế cũng sẽ phản ánh tham số và body mới:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Tóm lại
 
@@ -422,9 +422,9 @@ Thử thay đổi dòng này:
 
 ...và thấy trình soạn thảo của bạn nhận biết kiểu dữ liệu và gợi ý hoàn thiện các thuộc tính.
 
-![trình soạn thảo hỗ trợ](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![trình soạn thảo hỗ trợ](https://readyapi.github.io/img/vscode-completion.png)
 
-Ví dụ hoàn chỉnh bao gồm nhiều tính năng hơn, xem <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - User Guide</a>.
+Ví dụ hoàn chỉnh bao gồm nhiều tính năng hơn, xem <a href="https://readyapi.github.io/tutorial/">Tutorial - User Guide</a>.
 
 
 **Cảnh báo tiết lỗ**: Tutorial - User Guide:
@@ -446,7 +446,7 @@ Ví dụ hoàn chỉnh bao gồm nhiều tính năng hơn, xem <a href="https://
 
 Independent TechEmpower benchmarks cho thấy các ứng dụng **ReadyAPI** chạy dưới Uvicorn là <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">một trong những Python framework nhanh nhất</a>, chỉ đứng sau Starlette và Uvicorn (được sử dụng bên trong ReadyAPI). (*)
 
-Để hiểu rõ hơn, xem phần <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
+Để hiểu rõ hơn, xem phần <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a>.
 
 ## Các dependency tùy chọn
 

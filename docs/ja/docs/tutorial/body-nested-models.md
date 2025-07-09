@@ -182,7 +182,7 @@ images: List[Image]
 
 以下のようにリストの中の項目でも:
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/body-nested-models/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/body-nested-models/image01.png">
 
 Pydanticモデルではなく、`dict`を直接使用している場合はこのようなエディタのサポートは得られません。
 

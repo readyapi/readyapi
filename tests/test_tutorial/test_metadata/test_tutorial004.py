@@ -56,7 +56,7 @@ def test_openapi_schema():
                 "description": "Manage items. So _fancy_ they have their own docs.",
                 "externalDocs": {
                     "description": "Items external docs",
-                    "url": "https://readyapi.khulnasoft.com/",
+                    "url": "https://readyapi.github.io/",
                 },
             },
         ],

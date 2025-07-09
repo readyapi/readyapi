@@ -8,7 +8,7 @@ Repositorio de GitHub: <a href="https://github.com/khulnasoft/full-stack-readyap
 
 ## Plantilla Full Stack ReadyAPI - Tecnología y Funcionalidades
 
-- ⚡ [**ReadyAPI**](https://readyapi.khulnasoft.com) para la API del backend en Python.
+- ⚡ [**ReadyAPI**](https://readyapi.github.io) para la API del backend en Python.
     - 🧰 [SQLDev](https://sqldev.khulnasoft.com) para las interacciones con bases de datos SQL en Python (ORM).
     - 🔍 [Pydantic](https://docs.pydantic.dev), utilizado por ReadyAPI, para la validación de datos y gestión de configuraciones.
     - 💾 [PostgreSQL](https://www.postgresql.org) como base de datos SQL.

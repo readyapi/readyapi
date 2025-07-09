@@ -5,7 +5,7 @@
 </style>
 
 <p align="center">
-  <a href="https://readyapi.khulnasoft.com"><img src="https://readyapi.khulnasoft.com/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
+  <a href="https://readyapi.github.io"><img src="https://readyapi.github.io/img/logo-margin/logo-teal.png" alt="ReadyAPI"></a>
 </p>
 <p align="center">
     <em>ReadyAPI framework, zeer goede prestaties, eenvoudig te leren, snel te programmeren, klaar voor productie</em>
@@ -27,7 +27,7 @@
 
 ---
 
-**Documentatie**: <a href="https://readyapi.khulnasoft.com" target="_blank">https://readyapi.khulnasoft.com</a>
+**Documentatie**: <a href="https://readyapi.github.io" target="_blank">https://readyapi.github.io</a>
 
 **Broncode**: <a href="https://github.com/readyapi/readyapi" target="_blank">https://github.com/khulnasoft/readyapi</a>
 
@@ -63,7 +63,7 @@ De belangrijkste kenmerken zijn:
 
 <!-- /sponsors -->
 
-<a href="https://readyapi.khulnasoft.com/readyapi-people/#sponsors" class="external-link" target="_blank">Overige sponsoren</a>
+<a href="https://readyapi.github.io/readyapi-people/#sponsors" class="external-link" target="_blank">Overige sponsoren</a>
 
 ## Meningen
 
@@ -189,7 +189,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
 
 **Opmerking**:
 
-Als je het niet weet, kijk dan in het gedeelte _"Heb je haast?"_ over <a href="https://readyapi.khulnasoft.com/async/#in-a-hurry" target="_blank">`async` en `await` in de documentatie</a>.
+Als je het niet weet, kijk dan in het gedeelte _"Heb je haast?"_ over <a href="https://readyapi.github.io/async/#in-a-hurry" target="_blank">`async` en `await` in de documentatie</a>.
 
 </details>
 
@@ -231,7 +231,7 @@ Het commando `readyapi dev` leest het `main.py` bestand, detecteert de **ReadyAP
 
 Standaard zal dit commando `readyapi dev` starten met "auto-reload" geactiveerd voor ontwikkeling op het lokale systeem.
 
-Je kan hier meer over lezen in de <a href="https://readyapi.khulnasoft.com/readyapi-cli/" target="_blank">ReadyAPI CLI documentatie</a>.
+Je kan hier meer over lezen in de <a href="https://readyapi.github.io/readyapi-cli/" target="_blank">ReadyAPI CLI documentatie</a>.
 
 </details>
 
@@ -258,7 +258,7 @@ Ga naar <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blan
 
 Je ziet de automatische interactieve API documentatie (verstrekt door <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternatieve API documentatie
 
@@ -266,7 +266,7 @@ Ga vervolgens naar <a href="http://127.0.0.1:8000/redoc" class="external-link" t
 
 Je ziet de automatische interactieve API documentatie (verstrekt door <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Voorbeeld upgrade
 
@@ -312,15 +312,15 @@ Ga nu naar <a href="http://127.0.0.1:8000/docs" class="external-link" target="_b
 
 * De interactieve API-documentatie wordt automatisch bijgewerkt, inclusief de nieuwe body:
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Klik op de knop "Try it out", hiermee kan je de parameters invullen en direct met de API interacteren:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-04-swagger-03.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-04-swagger-03.png)
 
 * Klik vervolgens op de knop "Execute", de gebruikersinterface zal communiceren met jouw API, de parameters verzenden, de resultaten ophalen en deze op het scherm tonen:
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-05-swagger-04.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-05-swagger-04.png)
 
 ### Alternatieve API documentatie upgrade
 
@@ -328,7 +328,7 @@ Ga vervolgens naar <a href="http://127.0.0.1:8000/redoc" class="external-link" t
 
 * De alternatieve documentatie zal ook de nieuwe queryparameter en body weergeven:
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Samenvatting
 
@@ -423,9 +423,9 @@ Probeer deze regel te veranderen:
 
 ...en zie hoe je editor de attributen automatisch invult en hun types herkent:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
-Voor een vollediger voorbeeld met meer mogelijkheden, zie de <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - Gebruikershandleiding</a>.
+Voor een vollediger voorbeeld met meer mogelijkheden, zie de <a href="https://readyapi.github.io/tutorial/">Tutorial - Gebruikershandleiding</a>.
 
 **Spoiler alert**: de tutorial - gebruikershandleiding bevat:
 
@@ -446,7 +446,7 @@ Voor een vollediger voorbeeld met meer mogelijkheden, zie de <a href="https://re
 
 Onafhankelijke TechEmpower benchmarks tonen **ReadyAPI** applicaties draaiend onder Uvicorn aan als <a href="https://www.techempower.com/benchmarks/#section=test&runid=7464e520-0dc2-473d-bd34-dbdfd7e85911&hw=ph&test=query&l=zijzen-7" class="external-link" target="_blank">een van de snelste Python frameworks beschikbaar</a>, alleen onder Starlette en Uvicorn zelf (intern gebruikt door ReadyAPI). (*)
 
-Zie de sectie <a href="https://readyapi.khulnasoft.com/benchmarks/" class="internal-link" target="_blank">Benchmarks</a> om hier meer over te lezen.
+Zie de sectie <a href="https://readyapi.github.io/benchmarks/" class="internal-link" target="_blank">Benchmarks</a> om hier meer over te lezen.
 
 ## Afhankelijkheden
 

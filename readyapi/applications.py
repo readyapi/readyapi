@@ -50,7 +50,7 @@ class ReadyAPI(Starlette):
     `ReadyAPI` app class, the main entrypoint to use ReadyAPI.
 
     Read more in the
-    [ReadyAPI docs for First Steps](https://readyapi.khulnasoft.com/tutorial/first-steps/).
+    [ReadyAPI docs for First Steps](https://readyapi.github.io/tutorial/first-steps/).
 
     ## Example
 
@@ -107,7 +107,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -128,7 +128,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -150,7 +150,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -190,7 +190,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -213,7 +213,7 @@ class ReadyAPI(Starlette):
                 disabled.
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#openapi-url).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#openapi-url).
 
                 **Example**
 
@@ -258,7 +258,7 @@ class ReadyAPI(Starlette):
                         the form of a URL.
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-tags).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-tags).
 
                 **Example**
 
@@ -275,7 +275,7 @@ class ReadyAPI(Starlette):
                         "description": "Manage items. So _fancy_ they have their own docs.",
                         "externalDocs": {
                             "description": "Items external docs",
-                            "url": "https://readyapi.khulnasoft.com/",
+                            "url": "https://readyapi.github.io/",
                         },
                     },
                 ]
@@ -312,7 +312,7 @@ class ReadyAPI(Starlette):
                     is used for substitution in the server's URL template.
 
                 Read more in the
-                [ReadyAPI docs for Behind a Proxy](https://readyapi.khulnasoft.com/advanced/behind-a-proxy/#additional-servers).
+                [ReadyAPI docs for Behind a Proxy](https://readyapi.github.io/advanced/behind-a-proxy/#additional-servers).
 
                 **Example**
 
@@ -337,7 +337,7 @@ class ReadyAPI(Starlette):
                 *path operation*, including in sub-routers.
 
                 Read more about it in the
-                [ReadyAPI docs for Global Dependencies](https://readyapi.khulnasoft.com/tutorial/dependencies/global-dependencies/).
+                [ReadyAPI docs for Global Dependencies](https://readyapi.github.io/tutorial/dependencies/global-dependencies/).
 
                 **Example**
 
@@ -358,7 +358,7 @@ class ReadyAPI(Starlette):
                 The default response class to be used.
 
                 Read more in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#default-response-class).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#default-response-class).
 
                 **Example**
 
@@ -408,7 +408,7 @@ class ReadyAPI(Starlette):
                 If `openapi_url` is set to `None`, this will be automatically disabled.
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#docs-urls).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#docs-urls).
 
                 **Example**
 
@@ -432,7 +432,7 @@ class ReadyAPI(Starlette):
                 If `openapi_url` is set to `None`, this will be automatically disabled.
 
                 Read more in the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#docs-urls).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#docs-urls).
 
                 **Example**
 
@@ -478,7 +478,7 @@ class ReadyAPI(Starlette):
                 instead.
 
                 Read more in the
-                [ReadyAPI docs for Middleware](https://readyapi.khulnasoft.com/tutorial/middleware/).
+                [ReadyAPI docs for Middleware](https://readyapi.github.io/tutorial/middleware/).
                 """
             ),
         ] = None,
@@ -497,7 +497,7 @@ class ReadyAPI(Starlette):
                 `@app.exception_handler()`.
 
                 Read more in the
-                [ReadyAPI docs for Handling Errors](https://readyapi.khulnasoft.com/tutorial/handling-errors/).
+                [ReadyAPI docs for Handling Errors](https://readyapi.github.io/tutorial/handling-errors/).
                 """
             ),
         ] = None,
@@ -509,7 +509,7 @@ class ReadyAPI(Starlette):
 
                 You should instead use the `lifespan` handlers.
 
-                Read more in the [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                Read more in the [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -522,7 +522,7 @@ class ReadyAPI(Starlette):
                 You should instead use the `lifespan` handlers.
 
                 Read more in the
-                [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -534,7 +534,7 @@ class ReadyAPI(Starlette):
                 `shutdown` functions with a single context manager.
 
                 Read more in the
-                [ReadyAPI docs for `lifespan`](https://readyapi.khulnasoft.com/advanced/events/).
+                [ReadyAPI docs for `lifespan`](https://readyapi.github.io/advanced/events/).
                 """
             ),
         ] = None,
@@ -547,7 +547,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more at the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -574,7 +574,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more at the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -609,7 +609,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more at the
-                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-api).
+                [ReadyAPI docs for Metadata and Docs URLs](https://readyapi.github.io/tutorial/metadata/#metadata-for-api).
 
                 **Example**
 
@@ -647,7 +647,7 @@ class ReadyAPI(Starlette):
                 but is seen by external clients, which affects things like Swagger UI.
 
                 Read more about it at the
-                [ReadyAPI docs for Behind a Proxy](https://readyapi.khulnasoft.com/advanced/behind-a-proxy/).
+                [ReadyAPI docs for Behind a Proxy](https://readyapi.github.io/advanced/behind-a-proxy/).
 
                 **Example**
 
@@ -667,7 +667,7 @@ class ReadyAPI(Starlette):
                 in the autogenerated OpenAPI using the `root_path`.
 
                 Read more about it in the
-                [ReadyAPI docs for Behind a Proxy](https://readyapi.khulnasoft.com/advanced/behind-a-proxy/#disable-automatic-server-from-root_path).
+                [ReadyAPI docs for Behind a Proxy](https://readyapi.github.io/advanced/behind-a-proxy/#disable-automatic-server-from-root_path).
 
                 **Example**
 
@@ -688,10 +688,10 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.khulnasoft.com/advanced/additional-responses/).
+                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.github.io/advanced/additional-responses/).
 
                 And in the
-                [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -704,7 +704,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -720,7 +720,7 @@ class ReadyAPI(Starlette):
                 **Note**: This is available since OpenAPI 3.1.0, ReadyAPI 0.99.0.
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Webhooks](https://readyapi.khulnasoft.com/advanced/openapi-webhooks/).
+                [ReadyAPI docs for OpenAPI Webhooks](https://readyapi.github.io/advanced/openapi-webhooks/).
                 """
             ),
         ] = None,
@@ -734,7 +734,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -748,7 +748,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -760,7 +760,7 @@ class ReadyAPI(Starlette):
                 documentation (by default at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs about how to Configure Swagger UI](https://readyapi.khulnasoft.com/how-to/configure-swagger-ui/).
+                [ReadyAPI docs about how to Configure Swagger UI](https://readyapi.github.io/how-to/configure-swagger-ui/).
                 """
             ),
         ] = None,
@@ -775,7 +775,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -880,7 +880,7 @@ class ReadyAPI(Starlette):
                 '"openapi_prefix" has been deprecated in favor of "root_path", which '
                 "follows more closely the ASGI standard, is simpler, and more "
                 "automatic. Check the docs at "
-                "https://readyapi.khulnasoft.com/advanced/sub-applications/"
+                "https://readyapi.github.io/advanced/sub-applications/"
             )
         self.webhooks: Annotated[
             routing.APIRouter,
@@ -890,7 +890,7 @@ class ReadyAPI(Starlette):
                 operations* that will be used just for documentation of webhooks.
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Webhooks](https://readyapi.khulnasoft.com/advanced/openapi-webhooks/).
+                [ReadyAPI docs for OpenAPI Webhooks](https://readyapi.github.io/advanced/openapi-webhooks/).
                 """
             ),
         ] = webhooks or routing.APIRouter()
@@ -925,7 +925,7 @@ class ReadyAPI(Starlette):
                 versions.
 
                 Read more about it in the
-                [ReadyAPI docs for Testing Dependencies with Overrides](https://readyapi.khulnasoft.com/advanced/testing-dependencies/).
+                [ReadyAPI docs for Testing Dependencies with Overrides](https://readyapi.github.io/advanced/testing-dependencies/).
                 """
             ),
         ] = {}
@@ -975,7 +975,7 @@ class ReadyAPI(Starlette):
         If you need to modify the generated OpenAPI schema, you could modify it.
 
         Read more in the
-        [ReadyAPI docs for OpenAPI](https://readyapi.khulnasoft.com/how-to/extending-openapi/).
+        [ReadyAPI docs for OpenAPI](https://readyapi.github.io/how-to/extending-openapi/).
         """
         if not self.openapi_schema:
             self.openapi_schema = get_openapi(
@@ -1214,7 +1214,7 @@ class ReadyAPI(Starlette):
                 WebSocket.
 
                 Read more about it in the
-                [ReadyAPI docs for WebSockets](https://readyapi.khulnasoft.com/advanced/websockets/).
+                [ReadyAPI docs for WebSockets](https://readyapi.github.io/advanced/websockets/).
                 """
             ),
         ] = None,
@@ -1223,7 +1223,7 @@ class ReadyAPI(Starlette):
         Decorate a WebSocket function.
 
         Read more about it in the
-        [ReadyAPI docs for WebSockets](https://readyapi.khulnasoft.com/advanced/websockets/).
+        [ReadyAPI docs for WebSockets](https://readyapi.github.io/advanced/websockets/).
 
         **Example**
 
@@ -1267,7 +1267,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1279,7 +1279,7 @@ class ReadyAPI(Starlette):
                 *path operations* in this router.
 
                 Read more about it in the
-                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications - Multiple Files](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
 
                 **Example**
 
@@ -1308,10 +1308,10 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.khulnasoft.com/advanced/additional-responses/).
+                [ReadyAPI docs for Additional Responses in OpenAPI](https://readyapi.github.io/advanced/additional-responses/).
 
                 And in the
-                [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
+                [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-custom-prefix-tags-responses-and-dependencies).
                 """
             ),
         ] = None,
@@ -1374,7 +1374,7 @@ class ReadyAPI(Starlette):
                 router.
 
                 Read more in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#default-response-class).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#default-response-class).
 
                 **Example**
 
@@ -1406,7 +1406,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -1421,7 +1421,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -1430,7 +1430,7 @@ class ReadyAPI(Starlette):
         Include an `APIRouter` in the same app.
 
         Read more about it in the
-        [ReadyAPI docs for Bigger Applications](https://readyapi.khulnasoft.com/tutorial/bigger-applications/).
+        [ReadyAPI docs for Bigger Applications](https://readyapi.github.io/tutorial/bigger-applications/).
 
         ## Example
 
@@ -1500,7 +1500,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -1513,7 +1513,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -1526,7 +1526,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -1538,7 +1538,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -1551,7 +1551,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1569,7 +1569,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1619,7 +1619,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -1631,7 +1631,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1643,7 +1643,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -1655,7 +1655,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -1673,7 +1673,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1690,7 +1690,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -1707,7 +1707,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -1720,7 +1720,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -1733,7 +1733,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -1757,7 +1757,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -1769,7 +1769,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -1784,7 +1784,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -1873,7 +1873,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -1886,7 +1886,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -1899,7 +1899,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -1911,7 +1911,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -1924,7 +1924,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1942,7 +1942,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -1992,7 +1992,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -2004,7 +2004,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2016,7 +2016,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2028,7 +2028,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -2046,7 +2046,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2063,7 +2063,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2080,7 +2080,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2093,7 +2093,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2106,7 +2106,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2130,7 +2130,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2142,7 +2142,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2157,7 +2157,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -2251,7 +2251,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -2264,7 +2264,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -2277,7 +2277,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -2289,7 +2289,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -2302,7 +2302,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2320,7 +2320,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2370,7 +2370,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -2382,7 +2382,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2394,7 +2394,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2406,7 +2406,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -2424,7 +2424,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2441,7 +2441,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2458,7 +2458,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2471,7 +2471,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2484,7 +2484,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2508,7 +2508,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2520,7 +2520,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2535,7 +2535,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -2629,7 +2629,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -2642,7 +2642,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -2655,7 +2655,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -2667,7 +2667,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -2680,7 +2680,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2698,7 +2698,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -2748,7 +2748,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -2760,7 +2760,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2772,7 +2772,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -2784,7 +2784,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -2802,7 +2802,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2819,7 +2819,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -2836,7 +2836,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -2849,7 +2849,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -2862,7 +2862,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -2886,7 +2886,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -2898,7 +2898,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -2913,7 +2913,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -3002,7 +3002,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -3015,7 +3015,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -3028,7 +3028,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -3040,7 +3040,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -3053,7 +3053,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3071,7 +3071,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3121,7 +3121,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3133,7 +3133,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3145,7 +3145,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3157,7 +3157,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3175,7 +3175,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3192,7 +3192,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3209,7 +3209,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3222,7 +3222,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3235,7 +3235,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -3259,7 +3259,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -3271,7 +3271,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -3286,7 +3286,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -3375,7 +3375,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -3388,7 +3388,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -3401,7 +3401,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -3413,7 +3413,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -3426,7 +3426,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3444,7 +3444,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3494,7 +3494,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3506,7 +3506,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3518,7 +3518,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3530,7 +3530,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3548,7 +3548,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3565,7 +3565,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3582,7 +3582,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3595,7 +3595,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3608,7 +3608,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -3632,7 +3632,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -3644,7 +3644,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -3659,7 +3659,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -3748,7 +3748,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -3761,7 +3761,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -3774,7 +3774,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -3786,7 +3786,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -3799,7 +3799,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3817,7 +3817,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -3867,7 +3867,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -3879,7 +3879,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3891,7 +3891,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -3903,7 +3903,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -3921,7 +3921,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3938,7 +3938,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -3955,7 +3955,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -3968,7 +3968,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -3981,7 +3981,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -4005,7 +4005,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -4017,7 +4017,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -4032,7 +4032,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -4126,7 +4126,7 @@ class ReadyAPI(Starlette):
                     error and return a 500 error code (Internal Server Error).
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model](https://readyapi.khulnasoft.com/tutorial/response-model/).
+                [ReadyAPI docs for Response Model](https://readyapi.github.io/tutorial/response-model/).
                 """
             ),
         ] = Default(None),
@@ -4139,7 +4139,7 @@ class ReadyAPI(Starlette):
                 You could override the status code by returning a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Status Code](https://readyapi.khulnasoft.com/tutorial/response-status-code/).
+                [ReadyAPI docs for Response Status Code](https://readyapi.github.io/tutorial/response-status-code/).
                 """
             ),
         ] = None,
@@ -4152,7 +4152,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/#tags).
                 """
             ),
         ] = None,
@@ -4164,7 +4164,7 @@ class ReadyAPI(Starlette):
                 *path operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/).
+                [ReadyAPI docs for Dependencies in path operation decorators](https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/).
                 """
             ),
         ] = None,
@@ -4177,7 +4177,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -4195,7 +4195,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Configuration](https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/).
+                [ReadyAPI docs for Path Operation Configuration](https://readyapi.github.io/tutorial/path-operation-configuration/).
                 """
             ),
         ] = None,
@@ -4245,7 +4245,7 @@ class ReadyAPI(Starlette):
                 `generate_unique_id_function` in the `ReadyAPI` class.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = None,
@@ -4257,7 +4257,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -4269,7 +4269,7 @@ class ReadyAPI(Starlette):
                 response data.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = None,
@@ -4281,7 +4281,7 @@ class ReadyAPI(Starlette):
                 should be serialized by alias when an alias is used.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude).
                 """
             ),
         ] = True,
@@ -4299,7 +4299,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -4316,7 +4316,7 @@ class ReadyAPI(Starlette):
                 When `True`, default values are omitted from the response.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter).
                 """
             ),
         ] = False,
@@ -4333,7 +4333,7 @@ class ReadyAPI(Starlette):
                 when it makes sense.
 
                 Read more about it in the
-                [ReadyAPI docs for Response Model - Return Type](https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_exclude_none).
+                [ReadyAPI docs for Response Model - Return Type](https://readyapi.github.io/tutorial/response-model/#response_model_exclude_none).
                 """
             ),
         ] = False,
@@ -4346,7 +4346,7 @@ class ReadyAPI(Starlette):
                 This affects the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi).
+                [ReadyAPI docs for Query Parameters and String Validations](https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi).
                 """
             ),
         ] = True,
@@ -4359,7 +4359,7 @@ class ReadyAPI(Starlette):
                 This will not be used if you return a response directly.
 
                 Read more about it in the
-                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse).
+                [ReadyAPI docs for Custom Response - HTML, Stream, File, others](https://readyapi.github.io/advanced/custom-response/#redirectresponse).
                 """
             ),
         ] = Default(JSONResponse),
@@ -4383,7 +4383,7 @@ class ReadyAPI(Starlette):
                 It will be added to the generated OpenAPI (e.g. visible at `/docs`).
 
                 Read more about it in the
-                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.khulnasoft.com/advanced/openapi-callbacks/).
+                [ReadyAPI docs for OpenAPI Callbacks](https://readyapi.github.io/advanced/openapi-callbacks/).
                 """
             ),
         ] = None,
@@ -4395,7 +4395,7 @@ class ReadyAPI(Starlette):
                 operation*.
 
                 Read more about it in the
-                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
+                [ReadyAPI docs for Path Operation Advanced Configuration](https://readyapi.github.io/advanced/path-operation-advanced-configuration/#custom-openapi-path-operation-schema).
                 """
             ),
         ] = None,
@@ -4410,7 +4410,7 @@ class ReadyAPI(Starlette):
                 SDKs for your API.
 
                 Read more about it in the
-                [ReadyAPI docs about how to Generate Clients](https://readyapi.khulnasoft.com/advanced/generate-clients/#custom-generate-unique-id-function).
+                [ReadyAPI docs about how to Generate Clients](https://readyapi.github.io/advanced/generate-clients/#custom-generate-unique-id-function).
                 """
             ),
         ] = Default(generate_unique_id),
@@ -4470,7 +4470,7 @@ class ReadyAPI(Starlette):
         on_event is deprecated, use lifespan event handlers instead.
 
         Read more about it in the
-        [ReadyAPI docs for Lifespan Events](https://readyapi.khulnasoft.com/advanced/events/).
+        [ReadyAPI docs for Lifespan Events](https://readyapi.github.io/advanced/events/).
         """
     )
     def on_event(
@@ -4490,7 +4490,7 @@ class ReadyAPI(Starlette):
         `on_event` is deprecated, use `lifespan` event handlers instead.
 
         Read more about it in the
-        [ReadyAPI docs for Lifespan Events](https://readyapi.khulnasoft.com/advanced/events/#alternative-events-deprecated).
+        [ReadyAPI docs for Lifespan Events](https://readyapi.github.io/advanced/events/#alternative-events-deprecated).
         """
         return self.router.on_event(event_type)
 
@@ -4509,7 +4509,7 @@ class ReadyAPI(Starlette):
         Add a middleware to the application.
 
         Read more about it in the
-        [ReadyAPI docs for Middleware](https://readyapi.khulnasoft.com/tutorial/middleware/).
+        [ReadyAPI docs for Middleware](https://readyapi.github.io/tutorial/middleware/).
 
         ## Example
 
@@ -4552,7 +4552,7 @@ class ReadyAPI(Starlette):
         Add an exception handler to the app.
 
         Read more about it in the
-        [ReadyAPI docs for Handling Errors](https://readyapi.khulnasoft.com/tutorial/handling-errors/).
+        [ReadyAPI docs for Handling Errors](https://readyapi.github.io/tutorial/handling-errors/).
 
         ## Example
 

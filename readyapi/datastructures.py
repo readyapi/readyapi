@@ -38,7 +38,7 @@ class UploadFile(StarletteUploadFile):
     needed for non-async code.
 
     Read more about it in the
-    [ReadyAPI docs for Request Files](https://readyapi.khulnasoft.com/tutorial/request-files/).
+    [ReadyAPI docs for Request Files](https://readyapi.github.io/tutorial/request-files/).
 
     ## Example
 

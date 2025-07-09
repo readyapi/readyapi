@@ -18,11 +18,11 @@ Tài liệu tương tác API và web giao diện người dùng. Là một frame
 
 * <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank"><strong>Swagger UI</strong></a>, với giao diện khám phá, gọi và kiểm thử API trực tiếp từ trình duyệt.
 
-![Swagger UI interaction](https://readyapi.khulnasoft.com/img/index/index-03-swagger-02.png)
+![Swagger UI interaction](https://readyapi.github.io/img/index/index-03-swagger-02.png)
 
 * Thay thế với tài liệu API với <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank"><strong>ReDoc</strong></a>.
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-06-redoc-02.png)
+![ReDoc](https://readyapi.github.io/img/index/index-06-redoc-02.png)
 
 ### Chỉ cần phiên bản Python hiện đại
 
@@ -85,11 +85,11 @@ Toàn bộ framework "ReadyAPI" phải đảm bảo rằng: autocompletion hoạ
 
 * trong <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/vscode-completion.png)
+![editor support](https://readyapi.github.io/img/vscode-completion.png)
 
 * trong <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
-![editor support](https://readyapi.khulnasoft.com/img/pycharm-completion.png)
+![editor support](https://readyapi.github.io/img/pycharm-completion.png)
 
 Bạn sẽ có được auto-completion trong code, thậm chí trước đó là không thể. Như trong ví dụ, khóa `price` bên trong một JSON (đó có thể được lồng nhau) đến từ một request.
 

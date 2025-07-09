@@ -157,7 +157,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 交互式 API 文档将会相应地进行更新，以允许使用多个值：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/query-params-str-validations/image02.png">
+<img src="https://readyapi.github.io/img/tutorial/query-params-str-validations/image02.png">
 
 ### 具有默认值的查询参数列表 / 多个值
 
@@ -250,7 +250,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 文档将会像下面这样展示它：
 
-<img src="https://readyapi.khulnasoft.com/img/tutorial/query-params-str-validations/image01.png">
+<img src="https://readyapi.github.io/img/tutorial/query-params-str-validations/image01.png">
 
 ## 总结
 

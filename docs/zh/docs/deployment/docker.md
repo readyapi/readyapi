@@ -354,7 +354,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 你将看到自动交互式 API 文档（由 <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a 提供） >):
 
-![Swagger UI](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## 备选的 API 文档
 
@@ -362,7 +362,7 @@ $ docker run -d --name mycontainer -p 80:80 myimage
 
 你将看到备选的自动文档（由 <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a> 提供）：
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## 使用单文件 ReadyAPI 构建 Docker 镜像
 

@@ -341,7 +341,7 @@ Jetzt können Sie auf <a href="http://192.168.99.100/docs" class="external-link"
 
 Sie sehen die automatische interaktive API-Dokumentation (bereitgestellt von <a href="https://github.com/swagger-api/swagger-ui" class="external-link" target="_blank">Swagger UI</a>):
 
-![Swagger-Oberfläche](https://readyapi.khulnasoft.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger-Oberfläche](https://readyapi.github.io/img/index/index-01-swagger-ui-simple.png)
 
 ## Alternative API-Dokumentation
 
@@ -349,7 +349,7 @@ Sie können auch auf <a href="http://192.168.99.100/redoc" class="external-link"
 
 Sie sehen die alternative automatische Dokumentation (bereitgestellt von <a href="https://github.com/Rebilly/ReDoc" class="external-link" target="_blank">ReDoc</a>):
 
-![ReDoc](https://readyapi.khulnasoft.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://readyapi.github.io/img/index/index-02-redoc-simple.png)
 
 ## Ein Docker-Image mit einem Single-File-ReadyAPI erstellen
 
