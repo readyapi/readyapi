@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://readyapi.khulnasoft.com/zh/tutorial/security/oauth2-jwt/">
+        <link rel="canonical" href="https://readyapi.github.io/zh/tutorial/security/oauth2-jwt/">
       
       
         <link rel="prev" href="../simple-oauth2/">
@@ -120,7 +120,7 @@
       </a>
     </div>
     <div class="item">
-      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+      <a class="announce-link" href="https://readyapi.github.io/newsletter/">
         <span class="twemoji">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
         </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
@@ -7906,7 +7906,7 @@
 <h2 id="_5">检查<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>运行服务器并访问文档： <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a>。</p>
 <p>可以看到如下用户界面：</p>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/security/image07.png"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/security/image07.png"></p>
 <p>用与上一章同样的方式实现应用授权。</p>
 <p>使用如下凭证：</p>
 <p>用户名: <code>johndoe</code> 密码: <code>secret</code></p>
@@ -7914,7 +7914,7 @@
 <p class="admonition-title">检查</p>
 <p>注意，代码中没有明文密码<strong><code>secret</code></strong>，只保存了它的哈希值。</p>
 </div>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/security/image08.png"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/security/image08.png"></p>
 <p>调用 <code>/users/me/</code> 端点，收到下面的响应：</p>
 <div class="highlight"><pre><span></span><code><span id="__span-24-1"><span class="p">{</span>
 </span><span id="__span-24-2"><span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;johndoe&quot;</span><span class="p">,</span>
@@ -7923,9 +7923,9 @@
 </span><span id="__span-24-5"><span class="w">  </span><span class="nt">&quot;disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
 </span><span id="__span-24-6"><span class="p">}</span>
 </span></code></pre></div>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/security/image09.png"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/security/image09.png"></p>
 <p>打开浏览器的开发者工具，查看数据是怎么发送的，而且数据里只包含了令牌，只有验证用户的第一个请求才发送密码，并获取访问令牌，但之后不会再发送密码：</p>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/security/image10.png"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/security/image10.png"></p>
 <div class="admonition note">
 <p class="admonition-title">笔记</p>
 <p>注意，请求中 <code>Authorization</code> 响应头的值以 <code>Bearer</code> 开头。</p>

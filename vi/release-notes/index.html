@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://readyapi.khulnasoft.com/vi/release-notes/">
+        <link rel="canonical" href="https://readyapi.github.io/vi/release-notes/">
       
       
         <link rel="prev" href="../management/">
@@ -118,7 +118,7 @@
       </a>
     </div>
     <div class="item">
-      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+      <a class="announce-link" href="https://readyapi.github.io/newsletter/">
         <span class="twemoji">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
         </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
@@ -16352,7 +16352,7 @@
 <h3 id="fixes_1">Fixes<a class="headerlink" href="#fixes_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>🐛 Add docs examples and tests (support) for <code>Annotated</code> custom validations, like <code>AfterValidator</code>, revert <a href="https://github.com/readyapi/readyapi/pull/13440">#13440</a>. PR <a href="https://github.com/readyapi/readyapi/pull/13442">#13442</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
-<li>New docs: <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#custom-validation">Query Parameters and String Validations - Custom Validation</a>.</li>
+<li>New docs: <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#custom-validation">Query Parameters and String Validations - Custom Validation</a>.</li>
 </ul>
 </li>
 </ul>
@@ -16965,7 +16965,7 @@
 </span><span id="__span-0-17"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_items</span><span class="p">(</span><span class="n">filter_query</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">FilterParams</span><span class="p">,</span> <span class="n">Query</span><span class="p">()]):</span>
 </span><span id="__span-0-18">    <span class="k">return</span> <span class="n">filter_query</span>
 </span></code></pre></div>
-<p>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/query-param-models/">Query Parameter Models</a>.</p>
+<p>Read the new docs: <a href="https://readyapi.github.io/tutorial/query-param-models/">Query Parameter Models</a>.</p>
 <h4 id="header-parameter-models"><code>Header</code> Parameter Models<a class="headerlink" href="#header-parameter-models" title="Permanent link">&para;</a></h4>
 <p>Use Pydantic models for <code>Header</code> parameters:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-1-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -16988,7 +16988,7 @@
 </span><span id="__span-1-18"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_items</span><span class="p">(</span><span class="n">headers</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">CommonHeaders</span><span class="p">,</span> <span class="n">Header</span><span class="p">()]):</span>
 </span><span id="__span-1-19">    <span class="k">return</span> <span class="n">headers</span>
 </span></code></pre></div>
-<p>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/header-param-models/">Header Parameter Models</a>.</p>
+<p>Read the new docs: <a href="https://readyapi.github.io/tutorial/header-param-models/">Header Parameter Models</a>.</p>
 <h4 id="cookie-parameter-models"><code>Cookie</code> Parameter Models<a class="headerlink" href="#cookie-parameter-models" title="Permanent link">&para;</a></h4>
 <p>Use Pydantic models for <code>Cookie</code> parameters:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
@@ -17009,7 +17009,7 @@
 </span><span id="__span-2-16"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_items</span><span class="p">(</span><span class="n">cookies</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">Cookies</span><span class="p">,</span> <span class="n">Cookie</span><span class="p">()]):</span>
 </span><span id="__span-2-17">    <span class="k">return</span> <span class="n">cookies</span>
 </span></code></pre></div>
-<p>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/cookie-param-models/">Cookie Parameter Models</a>.</p>
+<p>Read the new docs: <a href="https://readyapi.github.io/tutorial/cookie-param-models/">Cookie Parameter Models</a>.</p>
 <h4 id="forbid-extra-query-cookie-header-parameters">Forbid Extra Query (Cookie, Header) Parameters<a class="headerlink" href="#forbid-extra-query-cookie-header-parameters" title="Permanent link">&para;</a></h4>
 <p>Use Pydantic models to restrict extra values for <code>Query</code> parameters (also applies to <code>Header</code> and <code>Cookie</code> parameters).</p>
 <p>To achieve it, use Pydantic's <code>model_config = {"extra": "forbid"}</code>:</p>
@@ -17036,9 +17036,9 @@
 </span></code></pre></div>
 <p>This applies to <code>Query</code>, <code>Header</code>, and <code>Cookie</code> parameters, read the new docs:</p>
 <ul>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/query-param-models/#forbid-extra-query-parameters">Forbid Extra Query Parameters</a></li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/header-param-models/#forbid-extra-headers">Forbid Extra Headers</a></li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/cookie-param-models/#forbid-extra-cookies">Forbid Extra Cookies</a></li>
+<li><a href="https://readyapi.github.io/tutorial/query-param-models/#forbid-extra-query-parameters">Forbid Extra Query Parameters</a></li>
+<li><a href="https://readyapi.github.io/tutorial/header-param-models/#forbid-extra-headers">Forbid Extra Headers</a></li>
+<li><a href="https://readyapi.github.io/tutorial/cookie-param-models/#forbid-extra-cookies">Forbid Extra Cookies</a></li>
 </ul>
 <h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <ul>
@@ -17112,7 +17112,7 @@
 </span><span id="__span-4-16"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">login</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">FormData</span><span class="p">,</span> <span class="n">Form</span><span class="p">()]):</span>
 </span><span id="__span-4-17">    <span class="k">return</span> <span class="n">data</span>
 </span></code></pre></div>
-<p>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/request-form-models/#forbid-extra-form-fields">Form Models - Forbid Extra Form Fields</a>.</p>
+<p>Read the new docs: <a href="https://readyapi.github.io/tutorial/request-form-models/#forbid-extra-form-fields">Form Models - Forbid Extra Form Fields</a>.</p>
 <h3 id="features_1">Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for forbidding extra form fields with Pydantic models. PR <a href="https://github.com/readyapi/readyapi/pull/12134">#12134</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
@@ -17144,7 +17144,7 @@
 </span><span id="__span-5-15"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">login</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">FormData</span><span class="p">,</span> <span class="n">Form</span><span class="p">()]):</span>
 </span><span id="__span-5-16">    <span class="k">return</span> <span class="n">data</span>
 </span></code></pre></div>
-<p>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/request-form-models/">Form Models</a>.</p>
+<p>Read the new docs: <a href="https://readyapi.github.io/tutorial/request-form-models/">Form Models</a>.</p>
 <h3 id="features_2">Features<a class="headerlink" href="#features_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for Pydantic models in <code>Form</code> parameters. PR <a href="https://github.com/readyapi/readyapi/pull/12129">#12129</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
@@ -17467,7 +17467,7 @@
 <h3 id="features_3">Features<a class="headerlink" href="#features_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add ReadyAPI CLI, the new <code>readyapi</code> command. PR <a href="https://github.com/khulnasoft/readyapi/pull/11522">#11522</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
-<li>New docs: <a href="https://readyapi.khulnasoft.com/readyapi-cli/">ReadyAPI CLI</a>.</li>
+<li>New docs: <a href="https://readyapi.github.io/readyapi-cli/">ReadyAPI CLI</a>.</li>
 </ul>
 </li>
 </ul>
@@ -17754,7 +17754,7 @@
 <li>🐛 Fix unhandled growing memory for internal server errors, refactor dependencies with <code>yield</code> and <code>except</code> to require raising again as in regular Python. PR <a href="https://github.com/khulnasoft/readyapi/pull/11191">#11191</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
 <li>This is a breaking change (and only slightly) if you used dependencies with <code>yield</code>, used <code>except</code> in those dependencies, and didn't raise again.</li>
 <li>This was reported internally by <a href="https://github.com/rushilsrivastava">@rushilsrivastava</a> as a memory leak when the server had unhandled exceptions that would produce internal server errors, the memory allocated before that point would not be released.</li>
-<li>Read the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-except">Dependencies with <code>yield</code> and <code>except</code></a>.</li>
+<li>Read the new docs: <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-except">Dependencies with <code>yield</code> and <code>except</code></a>.</li>
 </ul>
 </li>
 </ul>
@@ -18069,7 +18069,7 @@
 <p>This change is what supports the new features, read below. 🤓</p>
 <h3 id="dependencies-with-yield-httpexception-and-background-tasks">Dependencies with <code>yield</code>, <code>HTTPException</code> and Background Tasks<a class="headerlink" href="#dependencies-with-yield-httpexception-and-background-tasks" title="Permanent link">&para;</a></h3>
 <p>Dependencies with <code>yield</code> now can raise <code>HTTPException</code> and other exceptions after <code>yield</code>. 🎉</p>
-<p>Read the new docs here: <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception">Dependencies with <code>yield</code> and <code>HTTPException</code></a>.</p>
+<p>Read the new docs here: <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception">Dependencies with <code>yield</code> and <code>HTTPException</code></a>.</p>
 <div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">ReadyAPI</span><span class="p">,</span> <span class="n">HTTPException</span>
 </span><span id="__span-11-2"><span class="kn">from</span><span class="w"> </span><span class="nn">typing_extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Annotated</span>
 </span><span id="__span-11-3">
@@ -18103,7 +18103,7 @@
 </span><span id="__span-11-31">    <span class="k">return</span> <span class="n">item</span>
 </span></code></pre></div>
 <hr />
-<p>Before ReadyAPI 0.106.0, raising exceptions after <code>yield</code> was not possible, the exit code in dependencies with <code>yield</code> was executed <em>after</em> the response was sent, so <a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/#install-custom-exception-handlers">Exception Handlers</a> would have already run.</p>
+<p>Before ReadyAPI 0.106.0, raising exceptions after <code>yield</code> was not possible, the exit code in dependencies with <code>yield</code> was executed <em>after</em> the response was sent, so <a href="https://readyapi.github.io/tutorial/handling-errors/#install-custom-exception-handlers">Exception Handlers</a> would have already run.</p>
 <p>This was designed this way mainly to allow using the same objects "yielded" by dependencies inside of background tasks, because the exit code would be executed after the background tasks were finished.</p>
 <p>Nevertheless, as this would mean waiting for the response to travel through the network while unnecessarily holding a resource in a dependency with yield (for example a database connection), this was changed in ReadyAPI 0.106.0.</p>
 <p>Additionally, a background task is normally an independent set of logic that should be handled separately, with its own resources (e.g. its own database connection).</p>
@@ -18148,7 +18148,7 @@ participant tasks as Background tasks
     opt Handle other exception
         dep --&gt;&gt; dep: Handle exception, can't change response. E.g. close DB session.
     end</code></pre>
-<p>The new execution flow can be found in the docs: <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/#execution-of-dependencies-with-yield">Execution of dependencies with <code>yield</code></a>.</p>
+<p>The new execution flow can be found in the docs: <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/#execution-of-dependencies-with-yield">Execution of dependencies with <code>yield</code></a>.</p>
 <h3 id="features_6">Features<a class="headerlink" href="#features_6" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for raising exceptions (including <code>HTTPException</code>) in dependencies with <code>yield</code> in the exit code, do not support them in background tasks. PR <a href="https://github.com/khulnasoft/readyapi/pull/10831">#10831</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
@@ -18220,7 +18220,7 @@ participant tasks as Background tasks
 <h2 id="01040">0.104.0<a class="headerlink" href="#01040" title="Permanent link">&para;</a></h2>
 <h2 id="features_8">Features<a class="headerlink" href="#features_8" title="Permanent link">&para;</a></h2>
 <ul>
-<li>✨ Add reference (code API) docs with PEP 727, add subclass with custom docstrings for <code>BackgroundTasks</code>, refactor docs structure. PR <a href="https://github.com/khulnasoft/readyapi/pull/10392">#10392</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs at <a href="https://readyapi.khulnasoft.com/reference/">ReadyAPI Reference - Code API</a>.</li>
+<li>✨ Add reference (code API) docs with PEP 727, add subclass with custom docstrings for <code>BackgroundTasks</code>, refactor docs structure. PR <a href="https://github.com/khulnasoft/readyapi/pull/10392">#10392</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs at <a href="https://readyapi.github.io/reference/">ReadyAPI Reference - Code API</a>.</li>
 </ul>
 <h2 id="upgrades_12">Upgrades<a class="headerlink" href="#upgrades_12" title="Permanent link">&para;</a></h2>
 <ul>
@@ -18298,7 +18298,7 @@ participant tasks as Background tasks
 <h3 id="features_9">Features<a class="headerlink" href="#features_9" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for <code>openapi_examples</code> in all ReadyAPI parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/10152">#10152</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
-<li>New docs: <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#openapi-specific-examples">OpenAPI-specific examples</a>.</li>
+<li>New docs: <a href="https://readyapi.github.io/tutorial/schema-extra-example/#openapi-specific-examples">OpenAPI-specific examples</a>.</li>
 </ul>
 </li>
 </ul>
@@ -18310,7 +18310,7 @@ participant tasks as Background tasks
 <h3 id="features_10">Features<a class="headerlink" href="#features_10" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for disabling the separation of input and output JSON Schemas in OpenAPI with Pydantic v2 with <code>separate_input_output_schemas=False</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/10145">#10145</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
-<li>New docs <a href="https://readyapi.khulnasoft.com/how-to/separate-openapi-schemas/">Separate OpenAPI Schemas for Input and Output or Not</a>.</li>
+<li>New docs <a href="https://readyapi.github.io/how-to/separate-openapi-schemas/">Separate OpenAPI Schemas for Input and Output or Not</a>.</li>
 <li>This PR also includes a new setup (internal tools) for generating screenshots for the docs.</li>
 </ul>
 </li>
@@ -18488,15 +18488,15 @@ participant tasks as Background tasks
 <p>...you can read about them in the Pydantic docs.</p>
 <ul>
 <li>The parameter <code>regex</code> has been deprecated and replaced by <code>pattern</code>.<ul>
-<li>You can read more about it in the docs for <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#add-regular-expressions">Query Parameters and String Validations: Add regular expressions</a>.</li>
+<li>You can read more about it in the docs for <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#add-regular-expressions">Query Parameters and String Validations: Add regular expressions</a>.</li>
 </ul>
 </li>
 <li>New Pydantic models use an improved and simplified attribute <code>model_config</code> that takes a simple dict instead of an internal class <code>Config</code> for their configuration.<ul>
-<li>You can read more about it in the docs for <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/">Declare Request Example Data</a>.</li>
+<li>You can read more about it in the docs for <a href="https://readyapi.github.io/tutorial/schema-extra-example/">Declare Request Example Data</a>.</li>
 </ul>
 </li>
 <li>The attribute <code>schema_extra</code> for the internal class <code>Config</code> has been replaced by the key <code>json_schema_extra</code> in the new <code>model_config</code> dict.<ul>
-<li>You can read more about it in the docs for <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/">Declare Request Example Data</a>.</li>
+<li>You can read more about it in the docs for <a href="https://readyapi.github.io/tutorial/schema-extra-example/">Declare Request Example Data</a>.</li>
 </ul>
 </li>
 <li>When you install <code>"readyapi[all]"</code> it now also includes:<ul>
@@ -18507,7 +18507,7 @@ participant tasks as Background tasks
 <li>
 <p>Now Pydantic Settings is an additional optional package (included in <code>"readyapi[all]"</code>). To use settings you should now import <code>from pydantic_settings import BaseSettings</code> instead of importing from <code>pydantic</code> directly.</p>
 <ul>
-<li>You can read more about it in the docs for <a href="https://readyapi.khulnasoft.com/advanced/settings/">Settings and Environment Variables</a>.</li>
+<li>You can read more about it in the docs for <a href="https://readyapi.github.io/advanced/settings/">Settings and Environment Variables</a>.</li>
 </ul>
 </li>
 <li>
@@ -18529,10 +18529,10 @@ participant tasks as Background tasks
 <li>
 <p>✨ Add support for OpenAPI 3.1.0. PR <a href="https://github.com/khulnasoft/readyapi/pull/9770">#9770</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</p>
 <ul>
-<li>New support for documenting <strong>webhooks</strong>, read the new docs here: <a href="https://readyapi.khulnasoft.com/advanced/openapi-webhooks/" class="external-link" target="_blank">Advanced User Guide: OpenAPI Webhooks</a>.</li>
+<li>New support for documenting <strong>webhooks</strong>, read the new docs here: <a href="https://readyapi.github.io/advanced/openapi-webhooks/" class="external-link" target="_blank">Advanced User Guide: OpenAPI Webhooks</a>.</li>
 <li>Upgrade OpenAPI 3.1.0, this uses JSON Schema 2020-12.</li>
 <li>Upgrade Swagger UI to version 5.x.x, that supports OpenAPI 3.1.0.</li>
-<li>Updated <code>examples</code> field in <code>Query()</code>, <code>Cookie()</code>, <code>Body()</code>, etc. based on the latest JSON Schema and OpenAPI. Now it takes a list of examples and they are included directly in the JSON Schema, not outside. Read more about it (including the historical technical details) in the updated docs: <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/" class="external-link" target="_blank">Tutorial: Declare Request Example Data</a>.</li>
+<li>Updated <code>examples</code> field in <code>Query()</code>, <code>Cookie()</code>, <code>Body()</code>, etc. based on the latest JSON Schema and OpenAPI. Now it takes a list of examples and they are included directly in the JSON Schema, not outside. Read more about it (including the historical technical details) in the updated docs: <a href="https://readyapi.github.io/tutorial/schema-extra-example/" class="external-link" target="_blank">Tutorial: Declare Request Example Data</a>.</li>
 </ul>
 </li>
 <li>
@@ -18820,19 +18820,19 @@ participant tasks as Background tasks
 <p>The key updated docs are:</p>
 <ul>
 <li>Python Types Intro:<ul>
-<li><a href="https://readyapi.khulnasoft.com/python-types/#type-hints-with-metadata-annotations">Type Hints with Metadata Annotations</a>.</li>
+<li><a href="https://readyapi.github.io/python-types/#type-hints-with-metadata-annotations">Type Hints with Metadata Annotations</a>.</li>
 </ul>
 </li>
 <li>Tutorial:<ul>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#additional-validation">Query Parameters and String Validations - Additional validation</a><ul>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#advantages-of-annotated">Advantages of <code>Annotated</code></a></li>
+<li><a href="https://readyapi.github.io/tutorial/query-params-str-validations/#additional-validation">Query Parameters and String Validations - Additional validation</a><ul>
+<li><a href="https://readyapi.github.io/tutorial/query-params-str-validations/#advantages-of-annotated">Advantages of <code>Annotated</code></a></li>
 </ul>
 </li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/path-params-numeric-validations/#order-the-parameters-as-you-need-tricks">Path Parameters and Numeric Validations - Order the parameters as you need, tricks</a><ul>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/path-params-numeric-validations/#better-with-annotated">Better with <code>Annotated</code></a></li>
+<li><a href="https://readyapi.github.io/tutorial/path-params-numeric-validations/#order-the-parameters-as-you-need-tricks">Path Parameters and Numeric Validations - Order the parameters as you need, tricks</a><ul>
+<li><a href="https://readyapi.github.io/tutorial/path-params-numeric-validations/#better-with-annotated">Better with <code>Annotated</code></a></li>
 </ul>
 </li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/dependencies/#share-annotated-dependencies">Dependencies - First Steps - Share <code>Annotated</code> dependencies</a></li>
+<li><a href="https://readyapi.github.io/tutorial/dependencies/#share-annotated-dependencies">Dependencies - First Steps - Share <code>Annotated</code> dependencies</a></li>
 </ul>
 </li>
 </ul>
@@ -18911,7 +18911,7 @@ participant tasks as Background tasks
 </span><span id="__span-16-28">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>Note</strong>: This is the recommended way going forward, instead of using <code>startup</code> and <code>shutdown</code> events.</p>
-<p>Read more about it in the new docs: <a href="https://readyapi.khulnasoft.com/advanced/events/">Advanced User Guide: Lifespan Events</a>.</p>
+<p>Read more about it in the new docs: <a href="https://readyapi.github.io/advanced/events/">Advanced User Guide: Lifespan Events</a>.</p>
 <h3 id="docs_39">Docs<a class="headerlink" href="#docs_39" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✏ Fix formatting in <code>docs/en/docs/tutorial/metadata.md</code> for <code>ReDoc</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/6005">#6005</a> by <a href="https://github.com/eykamp">@eykamp</a>.</li>
@@ -19013,7 +19013,7 @@ participant tasks as Background tasks
 </ul>
 <h3 id="docs_42">Docs<a class="headerlink" href="#docs_42" title="Permanent link">&para;</a></h3>
 <ul>
-<li>📝 Update docs and examples for Response Model with Return Type Annotations, and update runtime error. PR <a href="https://github.com/khulnasoft/readyapi/pull/5873">#5873</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs at <a href="https://readyapi.khulnasoft.com/tutorial/response-model/#other-return-type-annotations">Response Model - Return Type: Other Return Type Annotations</a>.</li>
+<li>📝 Update docs and examples for Response Model with Return Type Annotations, and update runtime error. PR <a href="https://github.com/khulnasoft/readyapi/pull/5873">#5873</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs at <a href="https://readyapi.github.io/tutorial/response-model/#other-return-type-annotations">Response Model - Return Type: Other Return Type Annotations</a>.</li>
 <li>📝 Add External Link: ReadyAPI lambda container: serverless simplified. PR <a href="https://github.com/khulnasoft/readyapi/pull/5784">#5784</a> by <a href="https://github.com/rafrasenberg">@rafrasenberg</a>.</li>
 </ul>
 <h3 id="translations_42">Translations<a class="headerlink" href="#translations_42" title="Permanent link">&para;</a></h3>
@@ -19054,7 +19054,7 @@ participant tasks as Background tasks
 <li><strong>Data filtering</strong></li>
 </ul>
 <p>Before this version it was only supported via the <code>response_model</code> parameter.</p>
-<p>Read more about it in the new docs: <a href="https://readyapi.khulnasoft.com/tutorial/response-model/">Response Model - Return Type</a>.</p>
+<p>Read more about it in the new docs: <a href="https://readyapi.github.io/tutorial/response-model/">Response Model - Return Type</a>.</p>
 <h3 id="docs_43">Docs<a class="headerlink" href="#docs_43" title="Permanent link">&para;</a></h3>
 <ul>
 <li>📝 Add External Link: Authorization on ReadyAPI with Casbin. PR <a href="https://github.com/khulnasoft/readyapi/pull/5712">#5712</a> by <a href="https://github.com/Xhy-5000">@Xhy-5000</a>.</li>
@@ -19118,9 +19118,9 @@ participant tasks as Background tasks
 <li>There are some possible <strong>breaking changes</strong> in the <code>TestClient</code> usage, but <a href="https://github.com/Kludex">@Kludex</a> built <a href="https://github.com/Kludex/bump-testclient">bump-testclient</a> to help you automatize migrating your tests. Make sure you are using Git and that you can undo any unnecessary changes (false positive changes, etc) before using <code>bump-testclient</code>.</li>
 </ul>
 </li>
-<li>New <a href="https://readyapi.khulnasoft.com/advanced/websockets/#using-depends-and-others">WebSocketException (and docs)</a>, re-exported from Starlette.</li>
+<li>New <a href="https://readyapi.github.io/advanced/websockets/#using-depends-and-others">WebSocketException (and docs)</a>, re-exported from Starlette.</li>
 <li>Upgraded and relaxed dependencies for package extras <code>all</code> (including new Uvicorn version), when you install <code>"readyapi[all]"</code>.</li>
-<li>New docs about how to <a href="https://readyapi.khulnasoft.com/help-readyapi/#help-maintain-readyapi"><strong>Help Maintain ReadyAPI</strong></a>.</li>
+<li>New docs about how to <a href="https://readyapi.github.io/help-readyapi/#help-maintain-readyapi"><strong>Help Maintain ReadyAPI</strong></a>.</li>
 </ul>
 <h3 id="features_19">Features<a class="headerlink" href="#features_19" title="Permanent link">&para;</a></h3>
 <ul>
@@ -19450,7 +19450,7 @@ participant tasks as Background tasks
 <li>✏ Fix typo in <code>python-types.md</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/5116">#5116</a> by <a href="https://github.com/Kludex">@Kludex</a>.</li>
 <li>✏ Fix typo in <code>docs/en/docs/python-types.md</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/5007">#5007</a> by <a href="https://github.com/atiabbz">@atiabbz</a>.</li>
 <li>📝 Remove unneeded Django/Flask references from async topic intro. PR <a href="https://github.com/khulnasoft/readyapi/pull/5280">#5280</a> by <a href="https://github.com/carltongibson">@carltongibson</a>.</li>
-<li>✨ Add illustrations for Concurrent burgers and Parallel burgers. PR <a href="https://github.com/khulnasoft/readyapi/pull/5277">#5277</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. Updated docs at: <a href="https://readyapi.khulnasoft.com/async/#concurrency-and-burgers">Concurrency and Burgers</a>.</li>
+<li>✨ Add illustrations for Concurrent burgers and Parallel burgers. PR <a href="https://github.com/khulnasoft/readyapi/pull/5277">#5277</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. Updated docs at: <a href="https://readyapi.github.io/async/#concurrency-and-burgers">Concurrency and Burgers</a>.</li>
 </ul>
 <h3 id="translations_51">Translations<a class="headerlink" href="#translations_51" title="Permanent link">&para;</a></h3>
 <ul>
@@ -19526,7 +19526,7 @@ participant tasks as Background tasks
 <li><code>Form()</code></li>
 <li><code>File()</code></li>
 </ul>
-<p>New docs at <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#make-it-required">Tutorial - Query Parameters and String Validations - Make it required</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4906">#4906</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</p>
+<p>New docs at <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#make-it-required">Tutorial - Query Parameters and String Validations - Make it required</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4906">#4906</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</p>
 <p>Up to now, declaring a required parameter while adding additional validation or metadata needed using <code>...</code> (Ellipsis).</p>
 <p>For example:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-21-1"><span class="kn">from</span><span class="w"> </span><span class="nn">readyapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cookie</span><span class="p">,</span> <span class="n">ReadyAPI</span><span class="p">,</span> <span class="n">Header</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">Query</span>
@@ -19578,7 +19578,7 @@ participant tasks as Background tasks
 </span></code></pre></div>
 <h3 id="docs_53">Docs<a class="headerlink" href="#docs_53" title="Permanent link">&para;</a></h3>
 <ul>
-<li>📝 Add docs recommending <code>Union</code> over <code>Optional</code> and migrate source examples. New docs at <a href="https://readyapi.khulnasoft.com/python-types/#using-union-or-optional">Python Types Intro - Using <code>Union</code> or <code>Optional</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4908">#4908</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
+<li>📝 Add docs recommending <code>Union</code> over <code>Optional</code> and migrate source examples. New docs at <a href="https://readyapi.github.io/python-types/#using-union-or-optional">Python Types Intro - Using <code>Union</code> or <code>Optional</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4908">#4908</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 <li>🎨 Fix default value as set in tutorial for Path Operations Advanced Configurations. PR <a href="https://github.com/khulnasoft/readyapi/pull/4899">#4899</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 <li>📝 Add documentation for redefined path operations. PR <a href="https://github.com/khulnasoft/readyapi/pull/4864">#4864</a> by <a href="https://github.com/madkinsz">@madkinsz</a>.</li>
 <li>📝 Updates links for Celery documentation. PR <a href="https://github.com/khulnasoft/readyapi/pull/4736">#4736</a> by <a href="https://github.com/sammyzord">@sammyzord</a>.</li>
@@ -19713,7 +19713,7 @@ participant tasks as Background tasks
 <h2 id="0750">0.75.0<a class="headerlink" href="#0750" title="Permanent link">&para;</a></h2>
 <h3 id="features_26">Features<a class="headerlink" href="#features_26" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Add support for custom <code>generate_unique_id_function</code> and docs for generating clients. New docs: <a href="https://readyapi.khulnasoft.com/advanced/generate-clients/">Advanced - Generate Clients</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4650">#4650</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
+<li>✨ Add support for custom <code>generate_unique_id_function</code> and docs for generating clients. New docs: <a href="https://readyapi.github.io/advanced/generate-clients/">Advanced - Generate Clients</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4650">#4650</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 </ul>
 <h2 id="0741">0.74.1<a class="headerlink" href="#0741" title="Permanent link">&para;</a></h2>
 <h3 id="features_27">Features<a class="headerlink" href="#features_27" title="Permanent link">&para;</a></h3>
@@ -19777,9 +19777,9 @@ participant tasks as Background tasks
 <h2 id="0730">0.73.0<a class="headerlink" href="#0730" title="Permanent link">&para;</a></h2>
 <h3 id="features_29">Features<a class="headerlink" href="#features_29" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Add support for declaring <code>UploadFile</code> parameters without explicit <code>File()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4469">#4469</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/request-files/#file-parameters-with-uploadfile">Request Files - File Parameters with UploadFile</a>.</li>
-<li>✨ Add support for tags with Enums. PR <a href="https://github.com/khulnasoft/readyapi/pull/4468">#4468</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#tags-with-enums">Path Operation Configuration - Tags with Enums</a>.</li>
-<li>✨ Allow hiding from OpenAPI (and Swagger UI) <code>Query</code>, <code>Cookie</code>, <code>Header</code>, and <code>Path</code> parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/3144">#3144</a> by <a href="https://github.com/astraldawn">@astraldawn</a>. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#exclude-from-openapi">Query Parameters and String Validations - Exclude from OpenAPI</a>.</li>
+<li>✨ Add support for declaring <code>UploadFile</code> parameters without explicit <code>File()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/4469">#4469</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs: <a href="https://readyapi.github.io/tutorial/request-files/#file-parameters-with-uploadfile">Request Files - File Parameters with UploadFile</a>.</li>
+<li>✨ Add support for tags with Enums. PR <a href="https://github.com/khulnasoft/readyapi/pull/4468">#4468</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>. New docs: <a href="https://readyapi.github.io/tutorial/path-operation-configuration/#tags-with-enums">Path Operation Configuration - Tags with Enums</a>.</li>
+<li>✨ Allow hiding from OpenAPI (and Swagger UI) <code>Query</code>, <code>Cookie</code>, <code>Header</code>, and <code>Path</code> parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/3144">#3144</a> by <a href="https://github.com/astraldawn">@astraldawn</a>. New docs: <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#exclude-from-openapi">Query Parameters and String Validations - Exclude from OpenAPI</a>.</li>
 </ul>
 <h3 id="docs_56">Docs<a class="headerlink" href="#docs_56" title="Permanent link">&para;</a></h3>
 <ul>
@@ -19801,7 +19801,7 @@ participant tasks as Background tasks
 <h2 id="0720">0.72.0<a class="headerlink" href="#0720" title="Permanent link">&para;</a></h2>
 <h3 id="features_30">Features<a class="headerlink" href="#features_30" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Enable configuring Swagger UI parameters. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/2568">#2568</a> by <a href="https://github.com/jmriebold">@jmriebold</a>. Here are the new docs: <a href="https://readyapi.khulnasoft.com/advanced/extending-openapi/#configuring-swagger-ui">Configuring Swagger UI</a>.</li>
+<li>✨ Enable configuring Swagger UI parameters. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/2568">#2568</a> by <a href="https://github.com/jmriebold">@jmriebold</a>. Here are the new docs: <a href="https://readyapi.github.io/advanced/extending-openapi/#configuring-swagger-ui">Configuring Swagger UI</a>.</li>
 </ul>
 <h3 id="docs_57">Docs<a class="headerlink" href="#docs_57" title="Permanent link">&para;</a></h3>
 <ul>
@@ -19822,7 +19822,7 @@ participant tasks as Background tasks
 <h3 id="features_31">Features<a class="headerlink" href="#features_31" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add docs and tests for Python 3.9 and Python 3.10. PR <a href="https://github.com/khulnasoft/readyapi/pull/3712">#3712</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.<ul>
-<li>You can start with <a href="https://readyapi.khulnasoft.com/python-types/">Python Types Intro</a>, it explains what changes between different Python versions, in Python 3.9 and in Python 3.10.</li>
+<li>You can start with <a href="https://readyapi.github.io/python-types/">Python Types Intro</a>, it explains what changes between different Python versions, in Python 3.9 and in Python 3.10.</li>
 <li>All the ReadyAPI docs are updated. Each code example in the docs that could use different syntax in Python 3.9 or Python 3.10 now has all the alternatives in tabs.</li>
 </ul>
 </li>
@@ -19883,8 +19883,8 @@ participant tasks as Background tasks
 <h3 id="breaking-changes-upgrade_1">Breaking Changes - Upgrade<a class="headerlink" href="#breaking-changes-upgrade_1" title="Permanent link">&para;</a></h3>
 <p>This release adds support for <a href="https://trio.readthedocs.io/en/stable/">Trio</a>. ✨</p>
 <p>It upgrades the version of Starlette to <code>0.15.0</code>, now based on <a href="https://anyio.readthedocs.io/en/stable/">AnyIO</a>, and the internal async components in <strong>ReadyAPI</strong> are now based on AnyIO as well, making it compatible with both <strong>asyncio</strong> and <strong>Trio</strong>.</p>
-<p>You can read the docs about running <a href="https://readyapi.khulnasoft.com/deployment/manually/#hypercorn-with-trio">ReadyAPI with Trio using Hypercorn</a>.</p>
-<p>This release also removes <code>graphene</code> as an optional dependency for GraphQL. If you need to work with GraphQL, the recommended library now is <a href="https://strawberry.rocks/">Strawberry</a>. You can read the new <a href="https://readyapi.khulnasoft.com/advanced/graphql/">ReadyAPI with GraphQL docs</a>.</p>
+<p>You can read the docs about running <a href="https://readyapi.github.io/deployment/manually/#hypercorn-with-trio">ReadyAPI with Trio using Hypercorn</a>.</p>
+<p>This release also removes <code>graphene</code> as an optional dependency for GraphQL. If you need to work with GraphQL, the recommended library now is <a href="https://strawberry.rocks/">Strawberry</a>. You can read the new <a href="https://readyapi.github.io/advanced/graphql/">ReadyAPI with GraphQL docs</a>.</p>
 <h3 id="features_32">Features<a class="headerlink" href="#features_32" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✨ Add support for Trio via AnyIO, upgrading Starlette to <code>0.15.0</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/3372">#3372</a> by <a href="https://github.com/graingert">@graingert</a>.</li>
@@ -19989,8 +19989,8 @@ participant tasks as Background tasks
 <h2 id="0680">0.68.0<a class="headerlink" href="#0680" title="Permanent link">&para;</a></h2>
 <h3 id="features_34">Features<a class="headerlink" href="#features_34" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Add support for extensions and updates to the OpenAPI schema in each <em>path operation</em>. New docs: <a href="https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#openapi-extra">ReadyAPI Path Operation Advanced Configuration - OpenAPI Extra</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1922">#1922</a> by <a href="https://github.com/edouardlp">@edouardlp</a>.</li>
-<li>✨ Add additional OpenAPI metadata parameters to <code>ReadyAPI</code> class, shown on the automatic API docs UI. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/metadata/">Metadata and Docs URLs</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1812">#1812</a> by <a href="https://github.com/dkreeft">@dkreeft</a>.</li>
+<li>✨ Add support for extensions and updates to the OpenAPI schema in each <em>path operation</em>. New docs: <a href="https://readyapi.github.io/advanced/path-operation-advanced-configuration/#openapi-extra">ReadyAPI Path Operation Advanced Configuration - OpenAPI Extra</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1922">#1922</a> by <a href="https://github.com/edouardlp">@edouardlp</a>.</li>
+<li>✨ Add additional OpenAPI metadata parameters to <code>ReadyAPI</code> class, shown on the automatic API docs UI. New docs: <a href="https://readyapi.github.io/tutorial/metadata/">Metadata and Docs URLs</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1812">#1812</a> by <a href="https://github.com/dkreeft">@dkreeft</a>.</li>
 <li>✨ Add <code>description</code> parameter to all the security scheme classes, e.g. <code>APIKeyQuery(name="key", description="A very cool API key")</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1757">#1757</a> by <a href="https://github.com/hylkepostma">@hylkepostma</a>.</li>
 <li>✨ Update OpenAPI models, supporting recursive models and extensions. PR <a href="https://github.com/khulnasoft/readyapi/pull/3628">#3628</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 <li>✨ Import and re-export data structures from Starlette, used by Request properties, on <code>readyapi.datastructures</code>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1872">#1872</a> by <a href="https://github.com/jamescurtin">@jamescurtin</a>.</li>
@@ -20017,7 +20017,7 @@ participant tasks as Background tasks
 <h2 id="0670">0.67.0<a class="headerlink" href="#0670" title="Permanent link">&para;</a></h2>
 <h3 id="features_35">Features<a class="headerlink" href="#features_35" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Add support for <code>dataclasses</code> in request bodies and <code>response_model</code>. New documentation: <a href="https://readyapi.khulnasoft.com/advanced/dataclasses/">Advanced User Guide - Using Dataclasses</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/3577">#3577</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
+<li>✨ Add support for <code>dataclasses</code> in request bodies and <code>response_model</code>. New documentation: <a href="https://readyapi.github.io/advanced/dataclasses/">Advanced User Guide - Using Dataclasses</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/3577">#3577</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 <li>✨ Support <code>dataclasses</code> in responses. PR <a href="https://github.com/khulnasoft/readyapi/pull/3576">#3576</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>, continuation from initial PR <a href="https://github.com/khulnasoft/readyapi/pull/2722">#2722</a> by <a href="https://github.com/amitlissack">@amitlissack</a>.</li>
 </ul>
 <h3 id="docs_61">Docs<a class="headerlink" href="#docs_61" title="Permanent link">&para;</a></h3>
@@ -20056,7 +20056,7 @@ participant tasks as Background tasks
 <h2 id="0660">0.66.0<a class="headerlink" href="#0660" title="Permanent link">&para;</a></h2>
 <h3 id="features_36">Features<a class="headerlink" href="#features_36" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Allow setting the <code>response_class</code> to <code>RedirectResponse</code> or <code>FileResponse</code> and returning the URL from the function. New and updated docs are in the tutorial section <strong>Custom Response - HTML, Stream, File, others</strong>, in <a href="https://readyapi.khulnasoft.com/advanced/custom-response/#redirectresponse">RedirectResponse</a> and in <a href="https://readyapi.khulnasoft.com/advanced/custom-response/#fileresponse">FileResponse</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/3457">#3457</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
+<li>✨ Allow setting the <code>response_class</code> to <code>RedirectResponse</code> or <code>FileResponse</code> and returning the URL from the function. New and updated docs are in the tutorial section <strong>Custom Response - HTML, Stream, File, others</strong>, in <a href="https://readyapi.github.io/advanced/custom-response/#redirectresponse">RedirectResponse</a> and in <a href="https://readyapi.github.io/advanced/custom-response/#fileresponse">FileResponse</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/3457">#3457</a> by <a href="https://github.com/khulnasoft">@khulnasoft</a>.</li>
 </ul>
 <h3 id="fixes_30">Fixes<a class="headerlink" href="#fixes_30" title="Permanent link">&para;</a></h3>
 <ul>
@@ -20144,7 +20144,7 @@ participant tasks as Background tasks
 <h2 id="0640">0.64.0<a class="headerlink" href="#0640" title="Permanent link">&para;</a></h2>
 <h3 id="features_37">Features<a class="headerlink" href="#features_37" title="Permanent link">&para;</a></h3>
 <ul>
-<li>✨ Add support for adding multiple <code>examples</code> in request bodies and path, query, cookie, and header params. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/#body-with-multiple-examples">Declare Request Example Data</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1267">#1267</a> by <a href="https://github.com/austinorr">@austinorr</a>.</li>
+<li>✨ Add support for adding multiple <code>examples</code> in request bodies and path, query, cookie, and header params. New docs: <a href="https://readyapi.github.io/tutorial/schema-extra-example/#body-with-multiple-examples">Declare Request Example Data</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1267">#1267</a> by <a href="https://github.com/austinorr">@austinorr</a>.</li>
 </ul>
 <h3 id="fixes_32">Fixes<a class="headerlink" href="#fixes_32" title="Permanent link">&para;</a></h3>
 <ul>
@@ -20289,7 +20289,7 @@ participant tasks as Background tasks
 <p><strong>In <code>APIRouter</code></strong></p>
 <p>This allows setting the (mostly new) parameters (additionally to the already existing parameters):</p>
 <ul>
-<li><code>default_response_class</code>: updated to handle defaults in <code>APIRouter</code> and <code>include_router</code>. For example, it's not needed to set it explicitly when <a href="https://readyapi.khulnasoft.com/advanced/openapi-callbacks/">creating callbacks</a>.</li>
+<li><code>default_response_class</code>: updated to handle defaults in <code>APIRouter</code> and <code>include_router</code>. For example, it's not needed to set it explicitly when <a href="https://readyapi.github.io/advanced/openapi-callbacks/">creating callbacks</a>.</li>
 <li><code>dependencies</code>: to include ✨ router-level dependencies ✨ that apply to all the <em>path operations</em> in a router. Up to now, this was only possible with <code>include_router</code>.</li>
 <li><code>callbacks</code>: OpenAPI callbacks that apply to all the <em>path operations</em> in this router.</li>
 <li><code>deprecated</code>: to mark all the <em>path operations</em> in a router as deprecated.</li>
@@ -20332,10 +20332,10 @@ participant tasks as Background tasks
 <li>
 <p>PR <a href="https://github.com/khulnasoft/readyapi/pull/2434">#2434</a> (above) includes new or updated docs:</p>
 <ul>
-<li><a href="https://readyapi.khulnasoft.com/advanced/openapi-callbacks/" class="external-link" target="_blank">Advanced User Guide - OpenAPI Callbacks</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/bigger-applications/" class="external-link" target="_blank">Tutorial - Bigger Applications</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/" class="external-link" target="_blank">Tutorial - Dependencies - Dependencies in path operation decorators</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/dependencies/global-dependencies/" class="external-link" target="_blank">Tutorial - Dependencies - Global Dependencies</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/openapi-callbacks/" class="external-link" target="_blank">Advanced User Guide - OpenAPI Callbacks</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/bigger-applications/" class="external-link" target="_blank">Tutorial - Bigger Applications</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/" class="external-link" target="_blank">Tutorial - Dependencies - Dependencies in path operation decorators</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/dependencies/global-dependencies/" class="external-link" target="_blank">Tutorial - Dependencies - Global Dependencies</a>.</li>
 </ul>
 </li>
 <li>
@@ -20457,7 +20457,7 @@ participant tasks as Background tasks
 </ul>
 <h3 id="translations_71">Translations<a class="headerlink" href="#translations_71" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Add translation for <a href="https://readyapi.khulnasoft.com/ja/">main page to Japanese</a> PR <a href="https://github.com/khulnasoft/readyapi/pull/1571">#1571</a> by <a href="https://github.com/ryuckel">@ryuckel</a>.</li>
+<li>Add translation for <a href="https://readyapi.github.io/ja/">main page to Japanese</a> PR <a href="https://github.com/khulnasoft/readyapi/pull/1571">#1571</a> by <a href="https://github.com/ryuckel">@ryuckel</a>.</li>
 <li>Initialize French translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1975">#1975</a> by <a href="https://github.com/JulianMaurin-BM">@JulianMaurin-BM</a>.</li>
 <li>Initialize Turkish translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1905">#1905</a> by <a href="https://github.com/ycd">@ycd</a>.</li>
 </ul>
@@ -20489,7 +20489,7 @@ participant tasks as Background tasks
 </ul>
 </li>
 <li>In <code>encoders.jsonable_encoder</code> remove parameter <code>sqlalchemy_safe</code>.<ul>
-<li>It was an early hack to allow returning SQLAlchemy models, but it was never documented, and the recommended way is using Pydantic's <code>orm_mode</code> as described in the tutorial: <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">SQL (Relational) Databases</a>.</li>
+<li>It was an early hack to allow returning SQLAlchemy models, but it was never documented, and the recommended way is using Pydantic's <code>orm_mode</code> as described in the tutorial: <a href="https://readyapi.github.io/tutorial/sql-databases/">SQL (Relational) Databases</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/1864">#1864</a>.</li>
 </ul>
 </li>
@@ -20508,7 +20508,7 @@ participant tasks as Background tasks
 <h2 id="0602">0.60.2<a class="headerlink" href="#0602" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Fix typo in docs for query parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/1832">#1832</a> by <a href="https://github.com/ycd">@ycd</a>.</li>
-<li>Add docs about <a href="https://readyapi.khulnasoft.com/advanced/async-tests/">Async Tests</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1619">#1619</a> by <a href="https://github.com/empicano">@empicano</a>.</li>
+<li>Add docs about <a href="https://readyapi.github.io/advanced/async-tests/">Async Tests</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1619">#1619</a> by <a href="https://github.com/empicano">@empicano</a>.</li>
 <li>Raise an exception when using form data (<code>Form</code>, <code>File</code>) without having <code>python-multipart</code> installed.<ul>
 <li>Up to now the application would run, and raise an exception only when receiving a request with form data, the new behavior, raising early, will prevent from deploying applications with broken dependencies.</li>
 <li>It also detects if the correct package <code>python-multipart</code> is installed instead of the incorrect <code>multipart</code> (both importable as <code>multipart</code>).</li>
@@ -20562,13 +20562,13 @@ participant tasks as Background tasks
 <li>Fix/re-enable search bar in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1703">#1703</a>.</li>
 <li>Auto-generate a "server" in OpenAPI <code>servers</code> when there's a <code>root_path</code> instead of prefixing all the <code>paths</code>:<ul>
 <li>Add a new parameter for <code>ReadyAPI</code> classes: <code>root_path_in_servers</code> to disable the auto-generation of <code>servers</code>.</li>
-<li>New docs about <code>root_path</code> and <code>servers</code> in <a href="https://readyapi.khulnasoft.com/advanced/behind-a-proxy/#additional-servers">Additional Servers</a>.</li>
+<li>New docs about <code>root_path</code> and <code>servers</code> in <a href="https://readyapi.github.io/advanced/behind-a-proxy/#additional-servers">Additional Servers</a>.</li>
 <li>Update OAuth2 examples to use a relative URL for <code>tokenUrl="token"</code> to make sure those examples keep working as-is even when behind a reverse proxy.</li>
 <li>Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1596">#1596</a> by <a href="https://github.com/rkbeatss">@rkbeatss</a>.</li>
 </ul>
 </li>
 <li>Fix typo/link in External Links. PR <a href="https://github.com/khulnasoft/readyapi/pull/1702">#1702</a>.</li>
-<li>Update handling of <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a> to use a data file and allow translating the headers without becoming obsolete quickly when new links are added. PR <a href="https://github.com/khulnasoft/readyapi/pull/1701">#https://github.com/khulnasoft/readyapi/pull/1701</a>.</li>
+<li>Update handling of <a href="https://readyapi.github.io/external-links/">External Links</a> to use a data file and allow translating the headers without becoming obsolete quickly when new links are added. PR <a href="https://github.com/khulnasoft/readyapi/pull/1701">#https://github.com/khulnasoft/readyapi/pull/1701</a>.</li>
 <li>Add external link <a href="https://davidefiocco.github.io/2020/06/27/streamlit-readyapi-ml-serving.html">Machine learning model serving in Python using ReadyAPI and Streamlit</a> to docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1669">#1669</a> by <a href="https://github.com/davidefiocco">@davidefiocco</a>.</li>
 <li>Add note in docs on order in Pydantic Unions. PR <a href="https://github.com/khulnasoft/readyapi/pull/1591">#1591</a> by <a href="https://github.com/kbanc">@kbanc</a>.</li>
 <li>Improve support for tests in editor. PR <a href="https://github.com/khulnasoft/readyapi/pull/1699">#1699</a>.</li>
@@ -20584,10 +20584,10 @@ participant tasks as Background tasks
 <li>Fix typo in docs for sub-applications. PR <a href="https://github.com/khulnasoft/readyapi/pull/1578">#1578</a> by <a href="https://github.com/schlpbch">@schlpbch</a>.</li>
 <li>Use <code>Optional</code> in all the examples in the docs. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1574">#1574</a> by <a href="https://github.com/chrisngyn">@chrisngyn</a>, <a href="https://github.com/kx-chen">@kx-chen</a>, <a href="https://github.com/YKo20010">@YKo20010</a>. Updated and merged PR <a href="https://github.com/khulnasoft/readyapi/pull/1644">#1644</a>.</li>
 <li>Update tests and handling of <code>response_model_by_alias</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1642">#1642</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/body-fields/">Body - Fields - 请求体 - 字段</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1569">#1569</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/body-fields/">Body - Fields - 请求体 - 字段</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1569">#1569</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Update Chinese translation of main page. PR <a href="https://github.com/khulnasoft/readyapi/pull/1564">#1564</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/body-multiple-params/">Body - Multiple Parameters - 请求体 - 多个参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1532">#1532</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/path-params-numeric-validations/">Path Parameters and Numeric Validations - 路径参数和数值校验</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1506">#1506</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/body-multiple-params/">Body - Multiple Parameters - 请求体 - 多个参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1532">#1532</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/path-params-numeric-validations/">Path Parameters and Numeric Validations - 路径参数和数值校验</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1506">#1506</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Add GitHub action to auto-label approved PRs (mainly for translations). PR <a href="https://github.com/khulnasoft/readyapi/pull/1638">#1638</a>.</li>
 </ul>
 <h2 id="0580">0.58.0<a class="headerlink" href="#0580" title="Permanent link">&para;</a></h2>
@@ -20602,21 +20602,21 @@ participant tasks as Background tasks
 <h2 id="0570">0.57.0<a class="headerlink" href="#0570" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Remove broken link from "External Links". PR <a href="https://github.com/khulnasoft/readyapi/pull/1565">#1565</a> by <a href="https://github.com/victorphoenix3">@victorphoenix3</a>.</li>
-<li>Update/fix docs for <a href="https://readyapi.khulnasoft.com/advanced/websockets/#using-depends-and-others">WebSockets with dependencies</a>. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1540">#1540</a> by <a href="https://github.com/ChihSeanHsu">@ChihSeanHsu</a>.</li>
+<li>Update/fix docs for <a href="https://readyapi.github.io/advanced/websockets/#using-depends-and-others">WebSockets with dependencies</a>. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1540">#1540</a> by <a href="https://github.com/ChihSeanHsu">@ChihSeanHsu</a>.</li>
 <li>Add support for Python's <code>http.HTTPStatus</code> in <code>status_code</code> parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/1534">#1534</a> by <a href="https://github.com/retnikt">@retnikt</a>.</li>
 <li>When using Pydantic models with <code>__root__</code>, use the internal value in <code>jsonable_encoder</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1524">#1524</a> by <a href="https://github.com/patrickkwang">@patrickkwang</a>.</li>
 <li>Update docs for path parameters. PR <a href="https://github.com/khulnasoft/readyapi/pull/1521">#1521</a> by <a href="https://github.com/yankeexe">@yankeexe</a>.</li>
 <li>Update docs for first steps, links and rewording. PR <a href="https://github.com/khulnasoft/readyapi/pull/1518">#1518</a> by <a href="https://github.com/yankeexe">@yankeexe</a>.</li>
 <li>Enable <code>showCommonExtensions</code> in Swagger UI to show additional validations like <code>maxLength</code>, etc. PR <a href="https://github.com/khulnasoft/readyapi/pull/1466">#1466</a> by <a href="https://github.com/TiewKH">@TiewKH</a>.</li>
 <li>Make <code>OAuth2PasswordRequestFormStrict</code> importable directly from <code>readyapi.security</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1462">#1462</a> by <a href="https://github.com/RichardHoekstra">@RichardHoekstra</a>.</li>
-<li>Add docs about <a href="https://readyapi.khulnasoft.com/advanced/custom-response/#default-response-class">Default response class</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1455">#1455</a> by <a href="https://github.com/TezRomacH">@TezRomacH</a>.</li>
-<li>Add note in docs about additional parameters <code>response_model_exclude_defaults</code> and <code>response_model_exclude_none</code> in <a href="https://readyapi.khulnasoft.com/tutorial/response-model/#use-the-response_model_exclude_unset-parameter">Response Model</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1427">#1427</a> by <a href="https://github.com/wshayes">@wshayes</a>.</li>
+<li>Add docs about <a href="https://readyapi.github.io/advanced/custom-response/#default-response-class">Default response class</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1455">#1455</a> by <a href="https://github.com/TezRomacH">@TezRomacH</a>.</li>
+<li>Add note in docs about additional parameters <code>response_model_exclude_defaults</code> and <code>response_model_exclude_none</code> in <a href="https://readyapi.github.io/tutorial/response-model/#use-the-response_model_exclude_unset-parameter">Response Model</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1427">#1427</a> by <a href="https://github.com/wshayes">@wshayes</a>.</li>
 <li>Add note about <a href="https://github.com/koxudaxi/pydantic-pycharm-plugin">PyCharm Pydantic plugin</a> to docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1420">#1420</a> by <a href="https://github.com/koxudaxi">@koxudaxi</a>.</li>
 <li>Update and clarify testing function name. PR <a href="https://github.com/khulnasoft/readyapi/pull/1395">#1395</a> by <a href="https://github.com/chenl">@chenl</a>.</li>
 <li>Fix duplicated headers created by indirect dependencies that use the request directly. PR <a href="https://github.com/khulnasoft/readyapi/pull/1386">#1386</a> by <a href="https://github.com/obataku">@obataku</a> from tests by <a href="https://github.com/scottsmith2gmail">@scottsmith2gmail</a>.</li>
 <li>Upgrade Starlette version to <code>0.13.4</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1361">#1361</a> by <a href="https://github.com/rushton">@rushton</a>.</li>
 <li>Improve error handling and feedback for requests with invalid JSON. PR <a href="https://github.com/khulnasoft/readyapi/pull/1354">#1354</a> by <a href="https://github.com/aviramha">@aviramha</a>.</li>
-<li>Add support for declaring metadata for tags in OpenAPI. New docs at <a href="https://readyapi.khulnasoft.com/tutorial/metadata/#metadata-for-tags">Tutorial - Metadata and Docs URLs - Metadata for tags</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1348">#1348</a> by <a href="https://github.com/thomas-maschler">@thomas-maschler</a>.</li>
+<li>Add support for declaring metadata for tags in OpenAPI. New docs at <a href="https://readyapi.github.io/tutorial/metadata/#metadata-for-tags">Tutorial - Metadata and Docs URLs - Metadata for tags</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1348">#1348</a> by <a href="https://github.com/thomas-maschler">@thomas-maschler</a>.</li>
 <li>Add basic setup for Russian translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1566">#1566</a>.</li>
 <li>Remove obsolete Chinese articles after adding official community translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1510">#1510</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Add <code>__repr__</code> for <em>path operation function</em> parameter helpers (like <code>Query</code>, <code>Depends</code>, etc) to simplify debugging. PR <a href="https://github.com/khulnasoft/readyapi/pull/1560">#1560</a> by <a href="https://github.com/rkbeatss">@rkbeatss</a> and <a href="https://github.com/victorphoenix3">@victorphoenix3</a>.</li>
@@ -20625,17 +20625,17 @@ participant tasks as Background tasks
 <ul>
 <li>Add link to advanced docs from tutorial. PR <a href="https://github.com/khulnasoft/readyapi/pull/1512">#1512</a> by <a href="https://github.com/kx-chen">@kx-chen</a>.</li>
 <li>Remove internal unnecessary f-strings. PR <a href="https://github.com/khulnasoft/readyapi/pull/1526">#1526</a> by <a href="https://github.com/kotamatsuoka">@kotamatsuoka</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/query-params-str-validations/">Query Parameters and String Validations - 查询参数和字符串校验</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1500">#1500</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/body/">Request Body - 请求体</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1492">#1492</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/help-readyapi/">Help ReadyAPI - Get Help - 帮助 ReadyAPI - 获取帮助</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1465">#1465</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/query-params/">Query Parameters - 查询参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1454">#1454</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/contributing/">Contributing - 开发 - 贡献</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1460">#1460</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/path-params/">Path Parameters - 路径参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1453">#1453</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add official Microsoft project generator for <a href="https://github.com/microsoft/cookiecutter-spacy-readyapi">serving spaCy with ReadyAPI and Azure Cognitive Skills</a> to <a href="https://readyapi.khulnasoft.com/project-generation/">Project Generators</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1390">#1390</a> by <a href="https://github.com/kabirkhan">@kabirkhan</a>.</li>
-<li>Update docs in <a href="https://readyapi.khulnasoft.com/python-types/">Python Types Intro</a> to include info about <code>Optional</code>. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1377">#1377</a> by <a href="https://github.com/yaegassy">@yaegassy</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/query-params-str-validations/">Query Parameters and String Validations - 查询参数和字符串校验</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1500">#1500</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/body/">Request Body - 请求体</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1492">#1492</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/help-readyapi/">Help ReadyAPI - Get Help - 帮助 ReadyAPI - 获取帮助</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1465">#1465</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/query-params/">Query Parameters - 查询参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1454">#1454</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/contributing/">Contributing - 开发 - 贡献</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1460">#1460</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/path-params/">Path Parameters - 路径参数</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1453">#1453</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add official Microsoft project generator for <a href="https://github.com/microsoft/cookiecutter-spacy-readyapi">serving spaCy with ReadyAPI and Azure Cognitive Skills</a> to <a href="https://readyapi.github.io/project-generation/">Project Generators</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1390">#1390</a> by <a href="https://github.com/kabirkhan">@kabirkhan</a>.</li>
+<li>Update docs in <a href="https://readyapi.github.io/python-types/">Python Types Intro</a> to include info about <code>Optional</code>. Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1377">#1377</a> by <a href="https://github.com/yaegassy">@yaegassy</a>.</li>
 <li>Fix support for callable class dependencies with <code>yield</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1365">#1365</a> by <a href="https://github.com/mrosales">@mrosales</a>.</li>
 <li>Fix/remove incorrect error logging when a client sends invalid payloads. PR <a href="https://github.com/khulnasoft/readyapi/pull/1351">#1351</a> by <a href="https://github.com/dbanty">@dbanty</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/first-steps/">First Steps - 第一步</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1323">#1323</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/first-steps/">First Steps - 第一步</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1323">#1323</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Fix generating OpenAPI for apps using callbacks with routers including Pydantic models. PR <a href="https://github.com/khulnasoft/readyapi/pull/1322">#1322</a> by <a href="https://github.com/nsidnev">@nsidnev</a>.</li>
 <li>Optimize internal regex performance in <code>get_path_param_names()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1243">#1243</a> by <a href="https://github.com/heckad">@heckad</a>.</li>
 <li>Remove <code>*,</code> from functions in docs where it's not needed. PR <a href="https://github.com/khulnasoft/readyapi/pull/1239">#1239</a> by <a href="https://github.com/pankaj-giri">@pankaj-giri</a>.</li>
@@ -20647,13 +20647,13 @@ participant tasks as Background tasks
 <li>Use <code>root_path</code> internally for mounted applications, so that OpenAPI and the docs UI works automatically without extra configurations and parameters.</li>
 <li>Add new <code>root_path</code> parameter for <code>ReadyAPI</code> applications to provide it in cases where it can be set with the command line (e.g. for Uvicorn and Hypercorn, with the parameter <code>--root-path</code>).</li>
 <li>Deprecate <code>openapi_prefix</code> parameter in favor of the new <code>root_path</code> parameter.</li>
-<li>Add new/updated docs for <a href="https://readyapi.khulnasoft.com/advanced/sub-applications/">Sub Applications - Mounts</a>, without <code>openapi_prefix</code> (as it is now handled automatically).</li>
-<li>Add new/updated docs for <a href="https://readyapi.khulnasoft.com/advanced/behind-a-proxy/">Behind a Proxy</a>, including how to setup a local testing proxy with Traefik and using <code>root_path</code>.</li>
-<li>Update docs for <a href="https://readyapi.khulnasoft.com/advanced/extending-openapi/">Extending OpenAPI</a> with the new <code>openapi_prefix</code> parameter passed (internally generated from <code>root_path</code>).</li>
+<li>Add new/updated docs for <a href="https://readyapi.github.io/advanced/sub-applications/">Sub Applications - Mounts</a>, without <code>openapi_prefix</code> (as it is now handled automatically).</li>
+<li>Add new/updated docs for <a href="https://readyapi.github.io/advanced/behind-a-proxy/">Behind a Proxy</a>, including how to setup a local testing proxy with Traefik and using <code>root_path</code>.</li>
+<li>Update docs for <a href="https://readyapi.github.io/advanced/extending-openapi/">Extending OpenAPI</a> with the new <code>openapi_prefix</code> parameter passed (internally generated from <code>root_path</code>).</li>
 <li>Original PR <a href="https://github.com/khulnasoft/readyapi/pull/1199">#1199</a> by <a href="https://github.com/iksteen">@iksteen</a>.</li>
 </ul>
 </li>
-<li>Update new issue templates and docs: <a href="https://readyapi.khulnasoft.com/help-readyapi/">Help ReadyAPI - Get Help</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1531">#1531</a>.</li>
+<li>Update new issue templates and docs: <a href="https://readyapi.github.io/help-readyapi/">Help ReadyAPI - Get Help</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1531">#1531</a>.</li>
 <li>Update GitHub action issue-manager. PR <a href="https://github.com/khulnasoft/readyapi/pull/1520">#1520</a>.</li>
 <li>Add new links:<ul>
 <li><strong>English articles</strong>:<ul>
@@ -20679,7 +20679,7 @@ participant tasks as Background tasks
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/1467">#1467</a>.</li>
 </ul>
 </li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/python-types/">Python Types Intro - Python 类型提示简介</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1197">#1197</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/python-types/">Python Types Intro - Python 类型提示简介</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1197">#1197</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 </ul>
 <h2 id="0551">0.55.1<a class="headerlink" href="#0551" title="Permanent link">&para;</a></h2>
 <ul>
@@ -20692,10 +20692,10 @@ participant tasks as Background tasks
 <li>Update issue template for for questions. PR <a href="https://github.com/khulnasoft/readyapi/pull/1344">#1344</a> by <a href="https://github.com/retnikt">@retnikt</a>.</li>
 <li>Update warning about storing passwords in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1336">#1336</a> by <a href="https://github.com/skorokithakis">@skorokithakis</a>.</li>
 <li>Fix typo. PR <a href="https://github.com/khulnasoft/readyapi/pull/1326">#1326</a> by <a href="https://github.com/chenl">@chenl</a>.</li>
-<li>Add translation to Portuguese for <a href="https://readyapi.khulnasoft.com/pt/alternatives/">Alternatives, Inspiration and Comparisons - Alternativas, Inspiração e Comparações</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1325">#1325</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
+<li>Add translation to Portuguese for <a href="https://readyapi.github.io/pt/alternatives/">Alternatives, Inspiration and Comparisons - Alternativas, Inspiração e Comparações</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1325">#1325</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
 <li>Fix 2 typos in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1324">#1324</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Update CORS docs, fix correct default of <code>max_age=600</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1301">#1301</a> by <a href="https://github.com/derekbekoe">@derekbekoe</a>.</li>
-<li>Add translation of <a href="https://readyapi.khulnasoft.com/pt/">main page to Portuguese</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1300">#1300</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
+<li>Add translation of <a href="https://readyapi.github.io/pt/">main page to Portuguese</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1300">#1300</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
 <li>Re-word and clarify docs for extra info in fields. PR <a href="https://github.com/khulnasoft/readyapi/pull/1299">#1299</a> by <a href="https://github.com/chris-allnutt">@chris-allnutt</a>.</li>
 <li>Make sure the <code>*</code> in short features in the docs is consistent (after <code>.</code>) in all languages. PR <a href="https://github.com/khulnasoft/readyapi/pull/1424">#1424</a>.</li>
 <li>Update order of execution for <code>get_db</code> in SQLAlchemy tutorial. PR <a href="https://github.com/khulnasoft/readyapi/pull/1293">#1293</a> by <a href="https://github.com/bcb">@bcb</a>.</li>
@@ -20703,23 +20703,23 @@ participant tasks as Background tasks
 </ul>
 <h2 id="0542">0.54.2<a class="headerlink" href="#0542" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add translation to Spanish for <a href="https://readyapi.khulnasoft.com/es/async/">Concurrency and async / await - Concurrencia y async / await</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1290">#1290</a> by <a href="https://github.com/alvaropernas">@alvaropernas</a>.</li>
+<li>Add translation to Spanish for <a href="https://readyapi.github.io/es/async/">Concurrency and async / await - Concurrencia y async / await</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1290">#1290</a> by <a href="https://github.com/alvaropernas">@alvaropernas</a>.</li>
 <li>Remove obsolete vote link. PR <a href="https://github.com/khulnasoft/readyapi/pull/1289">#1289</a> by <a href="https://github.com/donhui">@donhui</a>.</li>
-<li>Allow disabling docs UIs by just disabling OpenAPI with <code>openapi_url=None</code>. New example in docs: <a href="https://readyapi.khulnasoft.com/advanced/conditional-openapi/">Advanced: Conditional OpenAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1421">#1421</a>.</li>
-<li>Add translation to Portuguese for <a href="https://readyapi.khulnasoft.com/pt/benchmarks/">Benchmarks - Comparações</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1274">#1274</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
-<li>Add translation to Portuguese for <a href="https://readyapi.khulnasoft.com/pt/tutorial/">Tutorial - User Guide - Intro - Tutorial - Guia de Usuário - Introdução</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1259">#1259</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
+<li>Allow disabling docs UIs by just disabling OpenAPI with <code>openapi_url=None</code>. New example in docs: <a href="https://readyapi.github.io/advanced/conditional-openapi/">Advanced: Conditional OpenAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1421">#1421</a>.</li>
+<li>Add translation to Portuguese for <a href="https://readyapi.github.io/pt/benchmarks/">Benchmarks - Comparações</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1274">#1274</a> by <a href="https://github.com/Serrones">@Serrones</a>.</li>
+<li>Add translation to Portuguese for <a href="https://readyapi.github.io/pt/tutorial/">Tutorial - User Guide - Intro - Tutorial - Guia de Usuário - Introdução</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1259">#1259</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
 <li>Allow using Unicode in MkDocs for translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1419">#1419</a>.</li>
-<li>Add translation to Spanish for <a href="https://readyapi.khulnasoft.com/es/advanced/">Advanced User Guide - Intro - Guía de Usuario Avanzada - Introducción</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1250">#1250</a> by <a href="https://github.com/jfunez">@jfunez</a>.</li>
-<li>Add translation to Portuguese for <a href="https://readyapi.khulnasoft.com/pt/history-design-future/">History, Design and Future - História, Design e Futuro</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1249">#1249</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
-<li>Add translation to Portuguese for <a href="https://readyapi.khulnasoft.com/pt/features/">Features - Recursos</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1248">#1248</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
-<li>Add translation to Spanish for <a href="https://readyapi.khulnasoft.com/es/tutorial/">Tutorial - User Guide - Intro - Tutorial - Guía de Usuario - Introducción</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1244">#1244</a> by <a href="https://github.com/MartinEliasQ">@MartinEliasQ</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/deployment/">Deployment - 部署</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1203">#1203</a> by <a href="https://github.com/RunningIkkyu">@RunningIkkyu</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/tutorial/">Tutorial - User Guide - Intro - 教程 - 用户指南 - 简介</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1202">#1202</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
-<li>Add translation to Chinese for <a href="https://readyapi.khulnasoft.com/zh/features/">Features - 特性</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1192">#1192</a> by <a href="https://github.com/Dustyposa">@Dustyposa</a>.</li>
-<li>Add translation for <a href="https://readyapi.khulnasoft.com/zh/">main page to Chinese</a> PR <a href="https://github.com/khulnasoft/readyapi/pull/1191">#1191</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Spanish for <a href="https://readyapi.github.io/es/advanced/">Advanced User Guide - Intro - Guía de Usuario Avanzada - Introducción</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1250">#1250</a> by <a href="https://github.com/jfunez">@jfunez</a>.</li>
+<li>Add translation to Portuguese for <a href="https://readyapi.github.io/pt/history-design-future/">History, Design and Future - História, Design e Futuro</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1249">#1249</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
+<li>Add translation to Portuguese for <a href="https://readyapi.github.io/pt/features/">Features - Recursos</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1248">#1248</a> by <a href="https://github.com/marcosmmb">@marcosmmb</a>.</li>
+<li>Add translation to Spanish for <a href="https://readyapi.github.io/es/tutorial/">Tutorial - User Guide - Intro - Tutorial - Guía de Usuario - Introducción</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1244">#1244</a> by <a href="https://github.com/MartinEliasQ">@MartinEliasQ</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/deployment/">Deployment - 部署</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1203">#1203</a> by <a href="https://github.com/RunningIkkyu">@RunningIkkyu</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/tutorial/">Tutorial - User Guide - Intro - 教程 - 用户指南 - 简介</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1202">#1202</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
+<li>Add translation to Chinese for <a href="https://readyapi.github.io/zh/features/">Features - 特性</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1192">#1192</a> by <a href="https://github.com/Dustyposa">@Dustyposa</a>.</li>
+<li>Add translation for <a href="https://readyapi.github.io/zh/">main page to Chinese</a> PR <a href="https://github.com/khulnasoft/readyapi/pull/1191">#1191</a> by <a href="https://github.com/waynerv">@waynerv</a>.</li>
 <li>Update docs for project generation. PR <a href="https://github.com/khulnasoft/readyapi/pull/1287">#1287</a>.</li>
-<li>Add Spanish translation for <a href="https://readyapi.khulnasoft.com/es/python-types/">Introducción a los Tipos de Python (Python Types Intro)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1237">#1237</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
-<li>Add Spanish translation for <a href="https://readyapi.khulnasoft.com/es/features/">Características (Features)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1220">#1220</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
+<li>Add Spanish translation for <a href="https://readyapi.github.io/es/python-types/">Introducción a los Tipos de Python (Python Types Intro)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1237">#1237</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
+<li>Add Spanish translation for <a href="https://readyapi.github.io/es/features/">Características (Features)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1220">#1220</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
 </ul>
 <h2 id="0541">0.54.1<a class="headerlink" href="#0541" title="Permanent link">&para;</a></h2>
 <ul>
@@ -20734,14 +20734,14 @@ participant tasks as Background tasks
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/1166">#1166</a> by <a href="https://github.com/voegtlel">@voegtlel</a>.</li>
 </ul>
 </li>
-<li>Add example about <a href="https://readyapi.khulnasoft.com/advanced/testing-database/">Testing a Database</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1144">#1144</a> by <a href="https://github.com/duganchen">@duganchen</a>.</li>
-<li>Update docs for <a href="https://readyapi.khulnasoft.com/contributing/#translations">Development - Contributing: Translations</a> including note about reviewing translation PRs. <a href="https://github.com/khulnasoft/readyapi/pull/1215">#1215</a>.</li>
+<li>Add example about <a href="https://readyapi.github.io/advanced/testing-database/">Testing a Database</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1144">#1144</a> by <a href="https://github.com/duganchen">@duganchen</a>.</li>
+<li>Update docs for <a href="https://readyapi.github.io/contributing/#translations">Development - Contributing: Translations</a> including note about reviewing translation PRs. <a href="https://github.com/khulnasoft/readyapi/pull/1215">#1215</a>.</li>
 <li>Update log style in README.md for GitHub Markdown compatibility. PR <a href="https://github.com/khulnasoft/readyapi/pull/1200">#1200</a> by <a href="https://github.com/geekgao">#geekgao</a>.</li>
 <li>Add Python venv <code>env</code> to <code>.gitignore</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1212">#1212</a> by <a href="https://github.com/cassiobotaro">@cassiobotaro</a>.</li>
 <li>Start Portuguese translations. PR <a href="https://github.com/khulnasoft/readyapi/pull/1210">#1210</a> by <a href="https://github.com/cassiobotaro">@cassiobotaro</a>.</li>
 <li>Update docs for Pydantic's <code>Settings</code> using a dependency with <code>@lru_cache()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1214">#1214</a>.</li>
-<li>Add first translation to Spanish <a href="https://readyapi.khulnasoft.com/es/">ReadyAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1201">#1201</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
-<li>Add docs about <a href="https://readyapi.khulnasoft.com/advanced/settings/">Settings and Environment Variables</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1118">1118</a> by <a href="https://github.com/alexmitelman">@alexmitelman</a>.</li>
+<li>Add first translation to Spanish <a href="https://readyapi.github.io/es/">ReadyAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1201">#1201</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
+<li>Add docs about <a href="https://readyapi.github.io/advanced/settings/">Settings and Environment Variables</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/1118">1118</a> by <a href="https://github.com/alexmitelman">@alexmitelman</a>.</li>
 </ul>
 <h2 id="0532">0.53.2<a class="headerlink" href="#0532" title="Permanent link">&para;</a></h2>
 <ul>
@@ -20749,14 +20749,14 @@ participant tasks as Background tasks
 <li>Fix dependency overrides in WebSocket testing. PR <a href="https://github.com/khulnasoft/readyapi/pull/1122">#1122</a> by <a href="https://github.com/amitlissack">@amitlissack</a>.</li>
 <li>Fix docs script to ensure languages are always sorted. PR <a href="https://github.com/khulnasoft/readyapi/pull/1189">#1189</a>.</li>
 <li>Start translations for Chinese. PR <a href="https://github.com/khulnasoft/readyapi/pull/1187">#1187</a> by <a href="https://github.com/RunningIkkyu">@RunningIkkyu</a>.</li>
-<li>Add docs for <a href="https://readyapi.khulnasoft.com/tutorial/schema-extra-example/">Schema Extra - Example</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1185">#1185</a>.</li>
+<li>Add docs for <a href="https://readyapi.github.io/tutorial/schema-extra-example/">Schema Extra - Example</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1185">#1185</a>.</li>
 </ul>
 <h2 id="0531">0.53.1<a class="headerlink" href="#0531" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Fix included example after translations refactor. PR <a href="https://github.com/khulnasoft/readyapi/pull/1182">#1182</a>.</li>
-<li>Add docs example for <code>example</code> in <code>Field</code>. Docs at <a href="https://readyapi.khulnasoft.com/tutorial/body-fields/#json-schema-extras">Body - Fields: JSON Schema extras</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1106">#1106</a> by <a href="https://github.com/JohnPaton">@JohnPaton</a>.</li>
+<li>Add docs example for <code>example</code> in <code>Field</code>. Docs at <a href="https://readyapi.github.io/tutorial/body-fields/#json-schema-extras">Body - Fields: JSON Schema extras</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1106">#1106</a> by <a href="https://github.com/JohnPaton">@JohnPaton</a>.</li>
 <li>Fix using recursive models in <code>response_model</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1164">#1164</a> by <a href="https://github.com/voegtlel">@voegtlel</a>.</li>
-<li>Add docs for <a href="https://readyapi.khulnasoft.com/tutorial/debugging/">Pycharm Debugging</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1096">#1096</a> by <a href="https://github.com/youngquan">@youngquan</a>.</li>
+<li>Add docs for <a href="https://readyapi.github.io/tutorial/debugging/">Pycharm Debugging</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1096">#1096</a> by <a href="https://github.com/youngquan">@youngquan</a>.</li>
 <li>Fix typo in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1148">#1148</a> by <a href="https://github.com/PLNech">@PLNech</a>.</li>
 <li>Update Windows development environment instructions. PR <a href="https://github.com/khulnasoft/readyapi/pull/1179">#1179</a>.</li>
 </ul>
@@ -20772,12 +20772,12 @@ participant tasks as Background tasks
 <li>Add Gitter chat to docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1061">#1061</a> by <a href="https://github.com/aakashnand">@aakashnand</a>.</li>
 <li>Update and simplify translations docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/1171">#1171</a>.</li>
 <li>Update development of ReadyAPI docs, set address to <code>127.0.0.1</code> to improve Windows support. PR <a href="https://github.com/khulnasoft/readyapi/pull/1169">#1169</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</li>
-<li>Add support for docs translations. New docs: <a href="https://readyapi.khulnasoft.com/contributing/#translations">Development - Contributing: Docs: Translations</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1168">#1168</a>.</li>
+<li>Add support for docs translations. New docs: <a href="https://readyapi.github.io/contributing/#translations">Development - Contributing: Docs: Translations</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1168">#1168</a>.</li>
 <li>Update terminal styles in docs and add note about <a href="https://cligenius.khulnasoft.com/"><strong>Cligenius</strong>, the ReadyAPI of CLIs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1139">#1139</a>.</li>
 </ul>
 <h2 id="0520">0.52.0<a class="headerlink" href="#0520" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add new high-performance JSON response class using <code>orjson</code>. New docs: <a href="https://readyapi.khulnasoft.com/advanced/custom-response/#use-orjsonresponse">Custom Response - HTML, Stream, File, others: <code>ORJSONResponse</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1065">#1065</a>.</li>
+<li>Add new high-performance JSON response class using <code>orjson</code>. New docs: <a href="https://readyapi.github.io/advanced/custom-response/#use-orjsonresponse">Custom Response - HTML, Stream, File, others: <code>ORJSONResponse</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1065">#1065</a>.</li>
 </ul>
 <h2 id="0510">0.51.0<a class="headerlink" href="#0510" title="Permanent link">&para;</a></h2>
 <ul>
@@ -20786,9 +20786,9 @@ participant tasks as Background tasks
 <li>It's mainly syntax sugar, a convenience for developer experience.</li>
 <li>Now <code>Request</code>, <code>Response</code>, <code>WebSocket</code>, <code>status</code> can be imported directly from <code>readyapi</code> as in <code>from readyapi import Response</code>. This is because those are frequently used, to use the request directly, to set headers and cookies, to get status codes, etc.</li>
 <li>Documentation changes in many places, but new docs and noticeable improvements:<ul>
-<li><a href="https://readyapi.khulnasoft.com/advanced/custom-response/">Custom Response - HTML, Stream, File, others</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/advanced/middleware/">Advanced Middleware</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/advanced/wsgi/">Including WSGI - Flask, Django, others</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/custom-response/">Custom Response - HTML, Stream, File, others</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/middleware/">Advanced Middleware</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/wsgi/">Including WSGI - Flask, Django, others</a>.</li>
 </ul>
 </li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/1064">#1064</a>.</li>
@@ -20805,7 +20805,7 @@ participant tasks as Background tasks
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/1057">#1057</a>.</li>
 </ul>
 </li>
-<li>Add docs about pinning ReadyAPI versions for deployment: <a href="https://readyapi.khulnasoft.com/deployment/#readyapi-versions">Deployment: ReadyAPI versions</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1056">#1056</a>.</li>
+<li>Add docs about pinning ReadyAPI versions for deployment: <a href="https://readyapi.github.io/deployment/#readyapi-versions">Deployment: ReadyAPI versions</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/1056">#1056</a>.</li>
 </ul>
 <h2 id="0492">0.49.2<a class="headerlink" href="#0492" title="Permanent link">&para;</a></h2>
 <ul>
@@ -20827,11 +20827,11 @@ participant tasks as Background tasks
 <h2 id="0490">0.49.0<a class="headerlink" href="#0490" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Fix encoding of <code>pathlib</code> paths in <code>jsonable_encoder</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/978">#978</a> by <a href="https://github.com/patrickmckenna">@patrickmckenna</a>.</li>
-<li>Add articles to <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>: <a href="https://qiita.com/bee2/items/0ad260ab9835a2087dae">PythonのWeb frameworkのパフォーマンス比較 (Django, Flask, responder, ReadyAPI, japronto)</a> and <a href="https://qiita.com/bee2/items/75d9c0d7ba20e7a4a0e9">[ReadyAPI] Python製のASGI Web フレームワーク ReadyAPIに入門する</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/974">#974</a> by <a href="https://github.com/tokusumi">@tokusumi</a>.</li>
+<li>Add articles to <a href="https://readyapi.github.io/external-links/">External Links</a>: <a href="https://qiita.com/bee2/items/0ad260ab9835a2087dae">PythonのWeb frameworkのパフォーマンス比較 (Django, Flask, responder, ReadyAPI, japronto)</a> and <a href="https://qiita.com/bee2/items/75d9c0d7ba20e7a4a0e9">[ReadyAPI] Python製のASGI Web フレームワーク ReadyAPIに入門する</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/974">#974</a> by <a href="https://github.com/tokusumi">@tokusumi</a>.</li>
 <li>Fix broken links in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/949">#949</a> by <a href="https://github.com/tsotnikov">@tsotnikov</a>.</li>
 <li>Fix small typos. PR <a href="https://github.com/khulnasoft/readyapi/pull/941">#941</a> by <a href="https://github.com/NikitaKolesov">@NikitaKolesov</a>.</li>
 <li>Update and clarify docs for dependencies with <code>yield</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/986">#986</a>.</li>
-<li>Add Mermaid JS support for diagrams in docs. Add first diagrams to <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/">Dependencies: First Steps</a> and <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception">Dependencies with <code>yield</code> and <code>HTTPException</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/985">#985</a>.</li>
+<li>Add Mermaid JS support for diagrams in docs. Add first diagrams to <a href="https://readyapi.github.io/tutorial/dependencies/">Dependencies: First Steps</a> and <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/#dependencies-with-yield-and-httpexception">Dependencies with <code>yield</code> and <code>HTTPException</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/985">#985</a>.</li>
 <li>Update CI to run docs deployment in GitHub actions. PR <a href="https://github.com/khulnasoft/readyapi/pull/983">#983</a>.</li>
 <li>Allow <code>callable</code>s in <em>path operation functions</em>, like functions modified with <code>functools.partial</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/977">#977</a>.</li>
 </ul>
@@ -20839,14 +20839,14 @@ participant tasks as Background tasks
 <ul>
 <li>Run linters first in tests to error out faster. PR <a href="https://github.com/khulnasoft/readyapi/pull/948">#948</a>.</li>
 <li>Log warning about <code>email-validator</code> only when used. PR <a href="https://github.com/khulnasoft/readyapi/pull/946">#946</a>.</li>
-<li>Simplify <a href="https://readyapi.khulnasoft.com/advanced/sql-databases-peewee/">Peewee docs</a> with double dependency with <code>yield</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/947">#947</a>.</li>
-<li>Add article <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>: <a href="https://www.tutlinks.com/create-and-deploy-readyapi-app-to-heroku/">Create and Deploy ReadyAPI app to Heroku</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/942">#942</a> by <a href="https://github.com/windson">@windson</a>.</li>
+<li>Simplify <a href="https://readyapi.github.io/advanced/sql-databases-peewee/">Peewee docs</a> with double dependency with <code>yield</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/947">#947</a>.</li>
+<li>Add article <a href="https://readyapi.github.io/external-links/">External Links</a>: <a href="https://www.tutlinks.com/create-and-deploy-readyapi-app-to-heroku/">Create and Deploy ReadyAPI app to Heroku</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/942">#942</a> by <a href="https://github.com/windson">@windson</a>.</li>
 <li>Update description of Sanic, as it is now ASGI too. PR <a href="https://github.com/khulnasoft/readyapi/pull/932">#932</a> by <a href="https://github.com/raphaelauv">@raphaelauv</a>.</li>
 <li>Fix typo in main page. PR <a href="https://github.com/khulnasoft/readyapi/pull/920">#920</a> by <a href="https://github.com/mMarzeta">@mMarzeta</a>.</li>
 <li>Fix parsing of possibly invalid bodies. PR <a href="https://github.com/khulnasoft/readyapi/pull/918">#918</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</li>
 <li>Fix typo <a href="https://github.com/khulnasoft/readyapi/pull/916">#916</a> by <a href="https://github.com/adursun">@adursun</a>.</li>
 <li>Allow <code>Any</code> type for enums in OpenAPI. PR <a href="https://github.com/khulnasoft/readyapi/pull/906">#906</a> by <a href="https://github.com/songzhi">@songzhi</a>.</li>
-<li>Add article to <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>: <a href="https://iwpnd.pw/articles/2020-01/deploy-readyapi-to-aws-lambda">How to continuously deploy a ReadyAPI to AWS Lambda with AWS SAM</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/901">#901</a> by <a href="https://github.com/iwpnd">@iwpnd</a>.</li>
+<li>Add article to <a href="https://readyapi.github.io/external-links/">External Links</a>: <a href="https://iwpnd.pw/articles/2020-01/deploy-readyapi-to-aws-lambda">How to continuously deploy a ReadyAPI to AWS Lambda with AWS SAM</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/901">#901</a> by <a href="https://github.com/iwpnd">@iwpnd</a>.</li>
 <li>Add note about using Body parameters without Pydantic. PR <a href="https://github.com/khulnasoft/readyapi/pull/900">#900</a> by <a href="https://github.com/pawamoy">@pawamoy</a>.</li>
 <li>Fix Pydantic field clone logic. PR <a href="https://github.com/khulnasoft/readyapi/pull/899">#899</a> by <a href="https://github.com/deuce2367">@deuce2367</a>.</li>
 <li>Fix link in middleware docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/893">#893</a> by <a href="https://github.com/linchiwei123">@linchiwei123</a>.</li>
@@ -20859,41 +20859,41 @@ participant tasks as Background tasks
 </ul>
 <h2 id="0470">0.47.0<a class="headerlink" href="#0470" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Refactor documentation to make a simpler and shorter <a href="https://readyapi.khulnasoft.com/tutorial/">Tutorial - User Guide</a> and an additional <a href="https://readyapi.khulnasoft.com/advanced/">Advanced User Guide</a> with all the additional docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/887">#887</a>.</li>
+<li>Refactor documentation to make a simpler and shorter <a href="https://readyapi.github.io/tutorial/">Tutorial - User Guide</a> and an additional <a href="https://readyapi.github.io/advanced/">Advanced User Guide</a> with all the additional docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/887">#887</a>.</li>
 <li>Tweak external links, Markdown format, typos. PR <a href="https://github.com/khulnasoft/readyapi/pull/881">#881</a>.</li>
 <li>Fix bug in tutorial handling HTTP Basic Auth <code>username</code> and <code>password</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/865">#865</a> by <a href="https://github.com/isaevpd">@isaevpd</a>.</li>
 <li>Fix handling form <em>path operation</em> parameters declared with pure classes like <code>list</code>, <code>tuple</code>, etc. PR <a href="https://github.com/khulnasoft/readyapi/pull/856">#856</a> by <a href="https://github.com/nsidnev">@nsidnev</a>.</li>
-<li>Add request <code>body</code> to <code>RequestValidationError</code>, new docs: <a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/#use-the-requestvalidationerror-body">Use the <code>RequestValidationError</code> body</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/853">#853</a> by <a href="https://github.com/aviramha">@aviramha</a>.</li>
-<li>Update <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a> with new links and dynamic GitHub projects with <code>readyapi</code> topic. PR <a href="https://github.com/khulnasoft/readyapi/pull/850">#850</a>.</li>
-<li>Fix Peewee <code>contextvars</code> handling in docs: <a href="https://readyapi.khulnasoft.com/advanced/sql-databases-peewee/">SQL (Relational) Databases with Peewee</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/879">#879</a>.</li>
-<li>Setup development environment with Python's Venv and Flit, instead of requiring the extra Pipenv duplicating dependencies. Updated docs: <a href="https://readyapi.khulnasoft.com/contributing/">Development - Contributing</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/877">#877</a>.</li>
-<li>Update docs for <a href="https://readyapi.khulnasoft.com/advanced/security/http-basic-auth/">HTTP Basic Auth</a> to improve security against timing attacks. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/807">#807</a> by <a href="https://github.com/zwass">@zwass</a>.</li>
+<li>Add request <code>body</code> to <code>RequestValidationError</code>, new docs: <a href="https://readyapi.github.io/tutorial/handling-errors/#use-the-requestvalidationerror-body">Use the <code>RequestValidationError</code> body</a>. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/853">#853</a> by <a href="https://github.com/aviramha">@aviramha</a>.</li>
+<li>Update <a href="https://readyapi.github.io/external-links/">External Links</a> with new links and dynamic GitHub projects with <code>readyapi</code> topic. PR <a href="https://github.com/khulnasoft/readyapi/pull/850">#850</a>.</li>
+<li>Fix Peewee <code>contextvars</code> handling in docs: <a href="https://readyapi.github.io/advanced/sql-databases-peewee/">SQL (Relational) Databases with Peewee</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/879">#879</a>.</li>
+<li>Setup development environment with Python's Venv and Flit, instead of requiring the extra Pipenv duplicating dependencies. Updated docs: <a href="https://readyapi.github.io/contributing/">Development - Contributing</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/877">#877</a>.</li>
+<li>Update docs for <a href="https://readyapi.github.io/advanced/security/http-basic-auth/">HTTP Basic Auth</a> to improve security against timing attacks. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/807">#807</a> by <a href="https://github.com/zwass">@zwass</a>.</li>
 </ul>
 <h2 id="0460">0.46.0<a class="headerlink" href="#0460" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Fix typos and tweak configs. PR <a href="https://github.com/khulnasoft/readyapi/pull/837">#837</a>.</li>
-<li>Add link to Chinese article in <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/810">810</a> by <a href="https://github.com/wxq0309">@wxq0309</a>.</li>
+<li>Add link to Chinese article in <a href="https://readyapi.github.io/external-links/">External Links</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/810">810</a> by <a href="https://github.com/wxq0309">@wxq0309</a>.</li>
 <li>Implement <code>OAuth2AuthorizationCodeBearer</code> class. PR <a href="https://github.com/khulnasoft/readyapi/pull/797">#797</a> by <a href="https://github.com/kuwv">@kuwv</a>.</li>
 <li>Update example upgrade in docs main page. PR <a href="https://github.com/khulnasoft/readyapi/pull/795">#795</a> by <a href="https://github.com/cdeil">@cdeil</a>.</li>
 <li>Fix callback handling for sub-routers. PR <a href="https://github.com/khulnasoft/readyapi/pull/792">#792</a> by <a href="https://github.com/jekirl">@jekirl</a>.</li>
 <li>Fix typos. PR <a href="https://github.com/khulnasoft/readyapi/pull/784">#784</a> by <a href="https://github.com/kkinder">@kkinder</a>.</li>
-<li>Add 4 Japanese articles to <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/783">#783</a> by <a href="https://github.com/HymanZHAN">@HymanZHAN</a>.</li>
+<li>Add 4 Japanese articles to <a href="https://readyapi.github.io/external-links/">External Links</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/783">#783</a> by <a href="https://github.com/HymanZHAN">@HymanZHAN</a>.</li>
 <li>Add support for subtypes of main types in <code>jsonable_encoder</code>, e.g. asyncpg's UUIDs. PR <a href="https://github.com/khulnasoft/readyapi/pull/756">#756</a> by <a href="https://github.com/RmStorm">@RmStorm</a>.</li>
 <li>Fix usage of Pydantic's <code>HttpUrl</code> in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/832">#832</a> by <a href="https://github.com/Dustyposa">@Dustyposa</a>.</li>
 <li>Fix Twitter links in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/813">#813</a> by <a href="https://github.com/justindujardin">@justindujardin</a>.</li>
-<li>Add docs for correctly <a href="https://readyapi.khulnasoft.com/advanced/sql-databases-peewee/">using ReadyAPI with Peewee ORM</a>. Including how to overwrite parts of Peewee to correctly handle async threads. PR <a href="https://github.com/khulnasoft/readyapi/pull/789">#789</a>.</li>
+<li>Add docs for correctly <a href="https://readyapi.github.io/advanced/sql-databases-peewee/">using ReadyAPI with Peewee ORM</a>. Including how to overwrite parts of Peewee to correctly handle async threads. PR <a href="https://github.com/khulnasoft/readyapi/pull/789">#789</a>.</li>
 </ul>
 <h2 id="0450">0.45.0<a class="headerlink" href="#0450" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Add support for OpenAPI Callbacks:<ul>
-<li>New docs: <a href="https://readyapi.khulnasoft.com/advanced/openapi-callbacks/">OpenAPI Callbacks</a>.</li>
+<li>New docs: <a href="https://readyapi.github.io/advanced/openapi-callbacks/">OpenAPI Callbacks</a>.</li>
 <li>Refactor generation of <code>operationId</code>s to be valid Python names (also valid variables in most languages).</li>
 <li>Add <code>default_response_class</code> parameter to <code>APIRouter</code>.</li>
 <li>Original PR <a href="https://github.com/khulnasoft/readyapi/pull/722">#722</a> by <a href="https://github.com/booooh">@booooh</a>.</li>
 </ul>
 </li>
 <li>Refactor logging to use the same logger everywhere, update log strings and levels. PR <a href="https://github.com/khulnasoft/readyapi/pull/781">#781</a>.</li>
-<li>Add article to <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a>: <a href="https://habr.com/ru/post/478620/">Почему Вы должны попробовать ReadyAPI?</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/766">#766</a> by <a href="https://github.com/prostomarkeloff">@prostomarkeloff</a>.</li>
+<li>Add article to <a href="https://readyapi.github.io/external-links/">External Links</a>: <a href="https://habr.com/ru/post/478620/">Почему Вы должны попробовать ReadyAPI?</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/766">#766</a> by <a href="https://github.com/prostomarkeloff">@prostomarkeloff</a>.</li>
 <li>Remove gender bias in docs for handling errors. PR <a href="https://github.com/khulnasoft/readyapi/pull/780">#780</a>. Original idea in PR <a href="https://github.com/khulnasoft/readyapi/pull/761">#761</a> by <a href="https://github.com/classywhetten">@classywhetten</a>.</li>
 <li>Rename docs and references to <code>body-schema</code> to <code>body-fields</code> to keep in line with Pydantic. PR <a href="https://github.com/khulnasoft/readyapi/pull/746">#746</a> by <a href="https://github.com/prostomarkeloff">@prostomarkeloff</a>.</li>
 </ul>
@@ -20921,11 +20921,11 @@ participant tasks as Background tasks
 <h2 id="0430">0.43.0<a class="headerlink" href="#0430" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Update docs to reduce gender bias. PR <a href="https://github.com/khulnasoft/readyapi/pull/645">#645</a> by <a href="https://github.com/ticosax">@ticosax</a>.</li>
-<li>Add docs about <a href="https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#using-the-path-operation-function-name-as-the-operationid">overriding the <code>operationId</code> for all the <em>path operations</em></a> based on their function name. PR <a href="https://github.com/khulnasoft/readyapi/pull/642">#642</a> by <a href="https://github.com/SKalt">@SKalt</a>.</li>
+<li>Add docs about <a href="https://readyapi.github.io/advanced/path-operation-advanced-configuration/#using-the-path-operation-function-name-as-the-operationid">overriding the <code>operationId</code> for all the <em>path operations</em></a> based on their function name. PR <a href="https://github.com/khulnasoft/readyapi/pull/642">#642</a> by <a href="https://github.com/SKalt">@SKalt</a>.</li>
 <li>Fix validators in models generating an incorrect key order. PR <a href="https://github.com/khulnasoft/readyapi/pull/637">#637</a> by <a href="https://github.com/jaddison">@jaddison</a>.</li>
 <li>Generate correct OpenAPI docs for responses with no content. PR <a href="https://github.com/khulnasoft/readyapi/pull/621">#621</a> by <a href="https://github.com/brotskydotcom">@brotskydotcom</a>.</li>
 <li>Remove <code>$</code> from Bash code blocks in docs for consistency. PR <a href="https://github.com/khulnasoft/readyapi/pull/613">#613</a> by <a href="https://github.com/nstapelbroek">@nstapelbroek</a>.</li>
-<li>Add docs for <a href="https://readyapi.khulnasoft.com/advanced/extending-openapi/#self-hosting-javascript-and-css-for-docs">self-serving docs' (Swagger UI) static assets</a>, e.g. to use the docs offline, or without Internet. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/557">#557</a> by <a href="https://github.com/svalouch">@svalouch</a>.</li>
+<li>Add docs for <a href="https://readyapi.github.io/advanced/extending-openapi/#self-hosting-javascript-and-css-for-docs">self-serving docs' (Swagger UI) static assets</a>, e.g. to use the docs offline, or without Internet. Initial PR <a href="https://github.com/khulnasoft/readyapi/pull/557">#557</a> by <a href="https://github.com/svalouch">@svalouch</a>.</li>
 <li>Fix <code>black</code> linting after upgrade. PR <a href="https://github.com/khulnasoft/readyapi/pull/682">#682</a> by <a href="https://github.com/frankie567">@frankie567</a>.</li>
 </ul>
 <h2 id="0420">0.42.0<a class="headerlink" href="#0420" title="Permanent link">&para;</a></h2>
@@ -20940,8 +20940,8 @@ participant tasks as Background tasks
 <li><code>async-generator</code></li>
 </ul>
 </li>
-<li>New docs at <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-with-yield/">Dependencies with <code>yield</code></a>.</li>
-<li>Updated database docs <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/#main-readyapi-app">SQL (Relational) Databases: Main <strong>ReadyAPI</strong> app</a>.</li>
+<li>New docs at <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-with-yield/">Dependencies with <code>yield</code></a>.</li>
+<li>Updated database docs <a href="https://readyapi.github.io/tutorial/sql-databases/#main-readyapi-app">SQL (Relational) Databases: Main <strong>ReadyAPI</strong> app</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/595">#595</a>.</li>
 </ul>
 </li>
@@ -20962,7 +20962,7 @@ participant tasks as Background tasks
 <li>Processing a response after being generated by <em>path operation functions</em> but before returning it. E.g. adding custom headers, logging, adding extra metadata.</li>
 </ul>
 </li>
-<li>New docs section: <a href="https://readyapi.khulnasoft.com/advanced/custom-request-and-route/">Custom Request and APIRoute class</a>.</li>
+<li>New docs section: <a href="https://readyapi.github.io/advanced/custom-request-and-route/">Custom Request and APIRoute class</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/589">#589</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</li>
 </ul>
 </li>
@@ -20973,14 +20973,14 @@ participant tasks as Background tasks
 <li>Add notes to docs about installing <code>python-multipart</code> when using forms. PR <a href="https://github.com/khulnasoft/readyapi/pull/574">#574</a> by <a href="https://github.com/sliptonic">@sliptonic</a>.</li>
 <li>Generate OpenAPI schemas in alphabetical order. PR <a href="https://github.com/khulnasoft/readyapi/pull/554">#554</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</li>
 <li>Add support for truncating docstrings from <em>path operation functions</em>.<ul>
-<li>New docs at <a href="https://readyapi.khulnasoft.com/advanced/path-operation-advanced-configuration/#advanced-description-from-docstring">Advanced description from docstring</a>.</li>
+<li>New docs at <a href="https://readyapi.github.io/advanced/path-operation-advanced-configuration/#advanced-description-from-docstring">Advanced description from docstring</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/556">#556</a> by <a href="https://github.com/svalouch">@svalouch</a>.</li>
 </ul>
 </li>
 <li>Fix <code>DOCTYPE</code> in HTML files generated for Swagger UI and ReDoc. PR <a href="https://github.com/khulnasoft/readyapi/pull/537">#537</a> by <a href="https://github.com/Trim21">@Trim21</a>.</li>
 <li>Fix handling <code>4XX</code> responses overriding default <code>422</code> validation error responses. PR <a href="https://github.com/khulnasoft/readyapi/pull/517">#517</a> by <a href="https://github.com/tsouvarev">@tsouvarev</a>.</li>
-<li>Fix typo in documentation for <a href="https://readyapi.khulnasoft.com/advanced/security/http-basic-auth/#simple-http-basic-auth">Simple HTTP Basic Auth</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/514">#514</a> by <a href="https://github.com/prostomarkeloff">@prostomarkeloff</a>.</li>
-<li>Fix incorrect documentation example in <a href="https://readyapi.khulnasoft.com/tutorial/first-steps/">first steps</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/511">#511</a> by <a href="https://github.com/IgnatovFedor">@IgnatovFedor</a>.</li>
+<li>Fix typo in documentation for <a href="https://readyapi.github.io/advanced/security/http-basic-auth/#simple-http-basic-auth">Simple HTTP Basic Auth</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/514">#514</a> by <a href="https://github.com/prostomarkeloff">@prostomarkeloff</a>.</li>
+<li>Fix incorrect documentation example in <a href="https://readyapi.github.io/tutorial/first-steps/">first steps</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/511">#511</a> by <a href="https://github.com/IgnatovFedor">@IgnatovFedor</a>.</li>
 <li>Add support for Swagger UI <a href="https://github.com/swagger-api/swagger-ui/blob/master/docs/usage/oauth2.md">initOauth</a> settings with the parameter <code>swagger_ui_init_oauth</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/499">#499</a> by <a href="https://github.com/zamiramir">@zamiramir</a>.</li>
 </ul>
 <h2 id="0390">0.39.0<a class="headerlink" href="#0390" title="Permanent link">&para;</a></h2>
@@ -20999,7 +20999,7 @@ participant tasks as Background tasks
 </ul>
 <h2 id="0380">0.38.0<a class="headerlink" href="#0380" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add recent articles to <a href="https://readyapi.khulnasoft.com/external-links/">External Links</a> and recent opinions. PR <a href="https://github.com/khulnasoft/readyapi/pull/490">#490</a>.</li>
+<li>Add recent articles to <a href="https://readyapi.github.io/external-links/">External Links</a> and recent opinions. PR <a href="https://github.com/khulnasoft/readyapi/pull/490">#490</a>.</li>
 <li>Upgrade support range for Starlette to include <code>0.12.8</code>. The new range is <code>&gt;=0.11.1,&lt;=0.12.8"</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/477">#477</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</li>
 <li>Upgrade support to Pydantic version 0.32.2 and update internal code to use it (breaking change). PR <a href="https://github.com/khulnasoft/readyapi/pull/463">#463</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</li>
 </ul>
@@ -21059,10 +21059,10 @@ participant tasks as Background tasks
 <p>Fix typo in docs for features. PR <a href="https://github.com/khulnasoft/readyapi/pull/380">#380</a> by <a href="https://github.com/MartinoMensio">@MartinoMensio</a>.</p>
 </li>
 <li>
-<p>Fix source code <code>limit</code> for example in <a href="https://readyapi.khulnasoft.com/tutorial/query-params/">Query Parameters</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/366">#366</a> by <a href="https://github.com/Smashman">@Smashman</a>.</p>
+<p>Fix source code <code>limit</code> for example in <a href="https://readyapi.github.io/tutorial/query-params/">Query Parameters</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/366">#366</a> by <a href="https://github.com/Smashman">@Smashman</a>.</p>
 </li>
 <li>
-<p>Update wording in docs about <a href="https://readyapi.khulnasoft.com/advanced/security/oauth2-scopes/">OAuth2 scopes</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/371">#371</a> by <a href="https://github.com/cjw296">@cjw296</a>.</p>
+<p>Update wording in docs about <a href="https://readyapi.github.io/advanced/security/oauth2-scopes/">OAuth2 scopes</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/371">#371</a> by <a href="https://github.com/cjw296">@cjw296</a>.</p>
 </li>
 <li>
 <p>Update docs for <code>Enum</code>s to inherit from <code>str</code> and improve Swagger UI rendering. PR <a href="https://github.com/khulnasoft/readyapi/pull/351">#351</a>.</p>
@@ -21074,7 +21074,7 @@ participant tasks as Background tasks
 <p>Add test for having path templates in <code>prefix</code> of <code>.include_router</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/349">#349</a>.</p>
 </li>
 <li>
-<p>Add note to docs: <a href="https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-the-same-router-multiple-times-with-different-prefix">Include the same router multiple times with different <code>prefix</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/348">#348</a>.</p>
+<p>Add note to docs: <a href="https://readyapi.github.io/tutorial/bigger-applications/#include-the-same-router-multiple-times-with-different-prefix">Include the same router multiple times with different <code>prefix</code></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/348">#348</a>.</p>
 </li>
 <li>
 <p>Fix OpenAPI/JSON Schema generation for two functions with the same name (in different modules) with the same composite bodies.</p>
@@ -21100,22 +21100,22 @@ participant tasks as Background tasks
 <h2 id="0301">0.30.1<a class="headerlink" href="#0301" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add section in docs about <a href="https://readyapi.khulnasoft.com/external-links/">External Links and Articles</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/341">#341</a>.</p>
+<p>Add section in docs about <a href="https://readyapi.github.io/external-links/">External Links and Articles</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/341">#341</a>.</p>
 </li>
 <li>
 <p>Remove <code>Pipfile.lock</code> from the repository as it is only used by ReadyAPI contributors (developers of ReadyAPI itself). See the PR for more details. PR <a href="https://github.com/khulnasoft/readyapi/pull/340">#340</a>.</p>
 </li>
 <li>
-<p>Update section about <a href="https://readyapi.khulnasoft.com/help-readyapi/">Help ReadyAPI - Get Help</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/339">#339</a>.</p>
+<p>Update section about <a href="https://readyapi.github.io/help-readyapi/">Help ReadyAPI - Get Help</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/339">#339</a>.</p>
 </li>
 <li>
 <p>Refine internal type declarations to improve/remove Mypy errors in users' code. PR <a href="https://github.com/khulnasoft/readyapi/pull/338">#338</a>.</p>
 </li>
 <li>
-<p>Update and clarify <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">SQL tutorial with SQLAlchemy</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/331">#331</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</p>
+<p>Update and clarify <a href="https://readyapi.github.io/tutorial/sql-databases/">SQL tutorial with SQLAlchemy</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/331">#331</a> by <a href="https://github.com/mariacamilagl">@mariacamilagl</a>.</p>
 </li>
 <li>
-<p>Add SQLite <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/#interact-with-the-database-directly">online viewers to the docs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/330">#330</a> by <a href="https://github.com/cyrilbois">@cyrilbois</a>.</p>
+<p>Add SQLite <a href="https://readyapi.github.io/tutorial/sql-databases/#interact-with-the-database-directly">online viewers to the docs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/330">#330</a> by <a href="https://github.com/cyrilbois">@cyrilbois</a>.</p>
 </li>
 </ul>
 <h2 id="0300">0.30.0<a class="headerlink" href="#0300" title="Permanent link">&para;</a></h2>
@@ -21123,12 +21123,12 @@ participant tasks as Background tasks
 <li>
 <p>Add support for Pydantic's ORM mode:</p>
 <ul>
-<li>Updated documentation about SQL with SQLAlchemy, using Pydantic models with ORM mode, SQLAlchemy models with relations, separation of files, simplification of code and other changes. New docs: <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">SQL (Relational) Databases</a>.</li>
+<li>Updated documentation about SQL with SQLAlchemy, using Pydantic models with ORM mode, SQLAlchemy models with relations, separation of files, simplification of code and other changes. New docs: <a href="https://readyapi.github.io/tutorial/sql-databases/">SQL (Relational) Databases</a>.</li>
 <li>The new support for ORM mode fixes issues/adds features related to ORMs with lazy-loading, hybrid properties, dynamic/getters (using <code>@property</code> decorators) and several other use cases.</li>
 <li>This applies to ORMs like SQLAlchemy, Peewee, Tortoise ORM, GINO ORM and virtually any other.</li>
 <li>If your <em>path operations</em> return an arbitrary object with attributes (e.g. <code>my_item.name</code> instead of <code>my_item["name"]</code>) AND you use a <code>response_model</code>, make sure to update the Pydantic models with <code>orm_mode = True</code> as described in the docs (link above).</li>
-<li>New documentation about receiving plain <code>dict</code>s as request bodies: <a href="https://readyapi.khulnasoft.com/tutorial/body-nested-models/#bodies-of-arbitrary-dicts">Bodies of arbitrary <code>dict</code>s</a>.</li>
-<li>New documentation about returning arbitrary <code>dict</code>s in responses: <a href="https://readyapi.khulnasoft.com/tutorial/extra-models/#response-with-arbitrary-dict">Response with arbitrary <code>dict</code></a>.</li>
+<li>New documentation about receiving plain <code>dict</code>s as request bodies: <a href="https://readyapi.github.io/tutorial/body-nested-models/#bodies-of-arbitrary-dicts">Bodies of arbitrary <code>dict</code>s</a>.</li>
+<li>New documentation about returning arbitrary <code>dict</code>s in responses: <a href="https://readyapi.github.io/tutorial/extra-models/#response-with-arbitrary-dict">Response with arbitrary <code>dict</code></a>.</li>
 <li><strong>Technical Details</strong>:<ul>
 <li>When declaring a <code>response_model</code> it is used directly to generate the response content, from whatever was returned from the <em>path operation function</em>.</li>
 <li>Before this, the return content was first passed through <code>jsonable_encoder</code> to ensure it was a "jsonable" object, like a <code>dict</code>, instead of an arbitrary object with attributes (like an ORM model). That's why you should make sure to update your Pydantic models for objects with attributes to use <code>orm_mode = True</code>.</li>
@@ -21156,19 +21156,19 @@ participant tasks as Background tasks
 <p>Fix handling an empty-body request with a required body param. PR <a href="https://github.com/khulnasoft/readyapi/pull/311">#311</a>.</p>
 </li>
 <li>
-<p>Fix broken link in docs: <a href="https://readyapi.khulnasoft.com/advanced/response-directly/">Return a Response directly</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/306">#306</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</p>
+<p>Fix broken link in docs: <a href="https://readyapi.github.io/advanced/response-directly/">Return a Response directly</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/306">#306</a> by <a href="https://github.com/dmontagu">@dmontagu</a>.</p>
 </li>
 <li>
-<p>Fix docs discrepancy in docs for <a href="https://readyapi.khulnasoft.com/tutorial/response-model/">Response Model</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/288">#288</a> by <a href="https://github.com/awiddersheim">@awiddersheim</a>.</p>
+<p>Fix docs discrepancy in docs for <a href="https://readyapi.github.io/tutorial/response-model/">Response Model</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/288">#288</a> by <a href="https://github.com/awiddersheim">@awiddersheim</a>.</p>
 </li>
 </ul>
 <h2 id="0290">0.29.0<a class="headerlink" href="#0290" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Add support for declaring a <code>Response</code> parameter:<ul>
 <li>This allows declaring:<ul>
-<li><a href="https://readyapi.khulnasoft.com/advanced/response-cookies/">Response Cookies</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/advanced/response-headers/">Response Headers</a>.</li>
-<li>An HTTP Status Code different than the default: <a href="https://readyapi.khulnasoft.com/advanced/response-change-status-code/">Response - Change Status Code</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/response-cookies/">Response Cookies</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/response-headers/">Response Headers</a>.</li>
+<li>An HTTP Status Code different than the default: <a href="https://readyapi.github.io/advanced/response-change-status-code/">Response - Change Status Code</a>.</li>
 </ul>
 </li>
 <li>All of this while still being able to return arbitrary objects (<code>dict</code>, DB model, etc).</li>
@@ -21186,7 +21186,7 @@ participant tasks as Background tasks
 <li>This is useful while calling external services, performing costly computation, etc.</li>
 <li>This also means that if a dependency was declared as a <em>path operation decorator</em> dependency, possibly at the router level (with <code>.include_router()</code>) and then it is declared again in a specific <em>path operation</em>, the dependency will be called only once.</li>
 <li>The cache can be disabled per dependency declaration, using <code>use_cache=False</code> as in <code>Depends(your_dependency, use_cache=False)</code>.</li>
-<li>Updated docs at: <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/sub-dependencies/#using-the-same-dependency-multiple-times">Using the same dependency multiple times</a>.</li>
+<li>Updated docs at: <a href="https://readyapi.github.io/tutorial/dependencies/sub-dependencies/#using-the-same-dependency-multiple-times">Using the same dependency multiple times</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/292">#292</a>.</li>
 </ul>
 </li>
@@ -21194,14 +21194,14 @@ participant tasks as Background tasks
 <p>Implement dependency overrides for testing.</p>
 <ul>
 <li>This allows using overrides/mocks of dependencies during tests.</li>
-<li>New docs: <a href="https://readyapi.khulnasoft.com/advanced/testing-dependencies/">Testing Dependencies with Overrides</a>.</li>
+<li>New docs: <a href="https://readyapi.github.io/advanced/testing-dependencies/">Testing Dependencies with Overrides</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/291">#291</a>.</li>
 </ul>
 </li>
 </ul>
 <h2 id="0272">0.27.2<a class="headerlink" href="#0272" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Fix path and query parameters receiving <code>dict</code> as a valid type. It should be mapped to a body payload. PR <a href="https://github.com/khulnasoft/readyapi/pull/287">#287</a>. Updated docs at: <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#using-list">Query parameter list / multiple values with defaults: Using <code>list</code></a>.</li>
+<li>Fix path and query parameters receiving <code>dict</code> as a valid type. It should be mapped to a body payload. PR <a href="https://github.com/khulnasoft/readyapi/pull/287">#287</a>. Updated docs at: <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#using-list">Query parameter list / multiple values with defaults: Using <code>list</code></a>.</li>
 </ul>
 <h2 id="0271">0.27.1<a class="headerlink" href="#0271" title="Permanent link">&para;</a></h2>
 <ul>
@@ -21221,9 +21221,9 @@ participant tasks as Background tasks
 <p>Refactor param extraction using Pydantic <code>Field</code>:</p>
 <ul>
 <li>Large refactor, improvement, and simplification of param extraction from <em>path operations</em>.</li>
-<li>Fix/add support for list <em>query parameters</em> with list defaults. New documentation: <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#query-parameter-list-multiple-values-with-defaults">Query parameter list / multiple values with defaults</a>.</li>
-<li>Add support for enumerations in <em>path operation</em> parameters. New documentation: <a href="https://readyapi.khulnasoft.com/tutorial/path-params/#predefined-values">Path Parameters: Predefined values</a>.</li>
-<li>Add support for type annotations using <code>Optional</code> as in <code>param: Optional[str] = None</code>. New documentation: <a href="https://readyapi.khulnasoft.com/tutorial/query-params/#optional-type-declarations">Optional type declarations</a>.</li>
+<li>Fix/add support for list <em>query parameters</em> with list defaults. New documentation: <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#query-parameter-list-multiple-values-with-defaults">Query parameter list / multiple values with defaults</a>.</li>
+<li>Add support for enumerations in <em>path operation</em> parameters. New documentation: <a href="https://readyapi.github.io/tutorial/path-params/#predefined-values">Path Parameters: Predefined values</a>.</li>
+<li>Add support for type annotations using <code>Optional</code> as in <code>param: Optional[str] = None</code>. New documentation: <a href="https://readyapi.github.io/tutorial/query-params/#optional-type-declarations">Optional type declarations</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/278">#278</a>.</li>
 </ul>
 </li>
@@ -21237,9 +21237,9 @@ participant tasks as Background tasks
 <li>Document better how to handle exceptions and use error handlers.</li>
 <li>Include <code>RequestValidationError</code> and <code>WebSocketRequestValidationError</code> (this last one will be useful once <a href="https://github.com/encode/starlette/pull/527">encode/starlette#527</a> or equivalent is merged).</li>
 <li>New documentation about exceptions handlers:<ul>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/#install-custom-exception-handlers">Install custom exception handlers</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/#override-the-default-exception-handlers">Override the default exception handlers</a>.</li>
-<li><a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/#reuse-readyapis-exception-handlers">Reuse <strong>ReadyAPI's</strong> exception handlers</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/handling-errors/#install-custom-exception-handlers">Install custom exception handlers</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/handling-errors/#override-the-default-exception-handlers">Override the default exception handlers</a>.</li>
+<li><a href="https://readyapi.github.io/tutorial/handling-errors/#reuse-readyapis-exception-handlers">Reuse <strong>ReadyAPI's</strong> exception handlers</a>.</li>
 </ul>
 </li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/273">#273</a>.</li>
@@ -21250,11 +21250,11 @@ participant tasks as Background tasks
 <ul>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/256">#256</a>.</li>
 <li>Documented in PR <a href="https://github.com/khulnasoft/readyapi/pull/272">#272</a> by <a href="https://github.com/wshayes">@wshayes</a>.</li>
-<li>New documentation at: <a href="https://readyapi.khulnasoft.com/tutorial/path-params/#path-parameters-containing-paths">Path Parameters containing paths</a>.</li>
+<li>New documentation at: <a href="https://readyapi.github.io/tutorial/path-params/#path-parameters-containing-paths">Path Parameters containing paths</a>.</li>
 </ul>
 </li>
 <li>
-<p>Update docs for testing ReadyAPI. Include using <code>POST</code>, sending JSON, testing headers, etc. New documentation: <a href="https://readyapi.khulnasoft.com/tutorial/testing/#testing-extended-example">Testing</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/271">#271</a>.</p>
+<p>Update docs for testing ReadyAPI. Include using <code>POST</code>, sending JSON, testing headers, etc. New documentation: <a href="https://readyapi.github.io/tutorial/testing/#testing-extended-example">Testing</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/271">#271</a>.</p>
 </li>
 <li>
 <p>Fix type declaration of <code>response_model</code> to allow generic Python types as <code>List[Model]</code>. Mainly to fix <code>mypy</code> for users. PR <a href="https://github.com/khulnasoft/readyapi/pull/266">#266</a>.</p>
@@ -21265,8 +21265,8 @@ participant tasks as Background tasks
 <li>
 <p>Add support for Pydantic's <code>include</code>, <code>exclude</code>, <code>by_alias</code>.</p>
 <ul>
-<li>Update documentation: <a href="https://readyapi.khulnasoft.com/tutorial/response-model/#response_model_include-and-response_model_exclude">Response Model</a>.</li>
-<li>Add docs for: <a href="https://readyapi.khulnasoft.com/tutorial/body-updates/">Body - updates</a>, using Pydantic's <code>skip_defaults</code>.</li>
+<li>Update documentation: <a href="https://readyapi.github.io/tutorial/response-model/#response_model_include-and-response_model_exclude">Response Model</a>.</li>
+<li>Add docs for: <a href="https://readyapi.github.io/tutorial/body-updates/">Body - updates</a>, using Pydantic's <code>skip_defaults</code>.</li>
 <li>Add method consistency tests.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/264">#264</a>.</li>
 </ul>
@@ -21281,7 +21281,7 @@ participant tasks as Background tasks
 <li>The name of the parameter will most probably change in a future version to <code>response_skip_defaults</code>, <code>model_skip_defaults</code> or something similar.</li>
 </ul>
 </li>
-<li>New <a href="https://readyapi.khulnasoft.com/tutorial/response-model/#response-model-encoding-parameters">documentation section about using <code>response_model_skip_defaults</code></a>.</li>
+<li>New <a href="https://readyapi.github.io/tutorial/response-model/#response-model-encoding-parameters">documentation section about using <code>response_model_skip_defaults</code></a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/248">#248</a> by <a href="https://github.com/wshayes">@wshayes</a>.</li>
 </ul>
 </li>
@@ -21301,7 +21301,7 @@ participant tasks as Background tasks
 <li>...as these are compatible with the WebSockets protocol (e.g. <code>Body</code> is not).</li>
 </ul>
 </li>
-<li><a href="https://readyapi.khulnasoft.com/advanced/websockets/">Updated documentation for WebSockets</a>.</li>
+<li><a href="https://readyapi.github.io/advanced/websockets/">Updated documentation for WebSockets</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/178">#178</a> by <a href="https://github.com/jekirl">@jekirl</a>.</li>
 </ul>
 </li>
@@ -21354,8 +21354,8 @@ participant tasks as Background tasks
 <li>These <code>dependencies</code> are run before the normal parameter dependencies. And normal dependencies are run too. They can be combined.</li>
 <li>Dependencies declared in a router are executed first, then the ones defined in <em>path operation decorators</em>, and then the ones declared in normal parameters. They are all combined and executed.</li>
 <li>All this also supports using <code>Security</code> with <code>scopes</code> in those <code>dependencies</code> parameters, for more advanced OAuth 2.0 security scenarios with scopes.</li>
-<li>New documentation about <a href="https://readyapi.khulnasoft.com/tutorial/dependencies/dependencies-in-path-operation-decorators/">dependencies in <em>path operation decorators</em></a>.</li>
-<li>New documentation about <a href="https://readyapi.khulnasoft.com/tutorial/bigger-applications/#include-an-apirouter-with-a-prefix-tags-responses-and-dependencies">dependencies in the <code>include_router()</code> method</a>.</li>
+<li>New documentation about <a href="https://readyapi.github.io/tutorial/dependencies/dependencies-in-path-operation-decorators/">dependencies in <em>path operation decorators</em></a>.</li>
+<li>New documentation about <a href="https://readyapi.github.io/tutorial/bigger-applications/#include-an-apirouter-with-a-prefix-tags-responses-and-dependencies">dependencies in the <code>include_router()</code> method</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/235">#235</a>.</li>
 </ul>
 </li>
@@ -21402,8 +21402,8 @@ participant tasks as Background tasks
 <p>Upgrade OAuth2:</p>
 <ul>
 <li>Upgrade Password flow using Bearer tokens to use the correct HTTP status code 401 <code>UNAUTHORIZED</code>, with <code>WWW-Authenticate</code> headers.</li>
-<li>Update, simplify, and improve all the <a href="https://readyapi.khulnasoft.com/advanced/security/">security docs</a>.</li>
-<li>Add new <code>scope_str</code> to <code>SecurityScopes</code> and update docs: <a href="https://readyapi.khulnasoft.com/advanced/security/oauth2-scopes/">OAuth2 scopes</a>.</li>
+<li>Update, simplify, and improve all the <a href="https://readyapi.github.io/advanced/security/">security docs</a>.</li>
+<li>Add new <code>scope_str</code> to <code>SecurityScopes</code> and update docs: <a href="https://readyapi.github.io/advanced/security/oauth2-scopes/">OAuth2 scopes</a>.</li>
 <li>Update docs, images, tests.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/188">#188</a>.</li>
 </ul>
@@ -21412,10 +21412,10 @@ participant tasks as Background tasks
 <p>Include <a href="https://gitlab.com/pgjones/hypercorn">Hypercorn</a> as an alternative ASGI server in the docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/187">#187</a>.</p>
 </li>
 <li>
-<p>Add docs for <a href="https://readyapi.khulnasoft.com/tutorial/static-files/">Static Files</a> and <a href="https://readyapi.khulnasoft.com/advanced/templates/">Templates</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/186">#186</a>.</p>
+<p>Add docs for <a href="https://readyapi.github.io/tutorial/static-files/">Static Files</a> and <a href="https://readyapi.github.io/advanced/templates/">Templates</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/186">#186</a>.</p>
 </li>
 <li>
-<p>Add docs for handling <a href="https://readyapi.khulnasoft.com/advanced/response-cookies/">Response Cookies</a> and <a href="https://readyapi.khulnasoft.com/advanced/response-headers/">Response Headers</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/185">#185</a>.</p>
+<p>Add docs for handling <a href="https://readyapi.github.io/advanced/response-cookies/">Response Cookies</a> and <a href="https://readyapi.github.io/advanced/response-headers/">Response Headers</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/185">#185</a>.</p>
 </li>
 <li>
 <p>Fix typos in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/176">#176</a> by <a href="https://github.com/chdsbd">@chdsbd</a>.</p>
@@ -21429,9 +21429,9 @@ participant tasks as Background tasks
 <li>
 <p>Add docs:</p>
 <ul>
-<li>How to use the <code>jsonable_encoder</code> in <a href="https://readyapi.khulnasoft.com/tutorial/encoder/">JSON compatible encoder</a>.</li>
-<li>How to <a href="https://readyapi.khulnasoft.com/advanced/response-directly/">Return a Response directly</a>.</li>
-<li>Update how to use a <a href="https://readyapi.khulnasoft.com/advanced/custom-response/">Custom Response Class</a>.</li>
+<li>How to use the <code>jsonable_encoder</code> in <a href="https://readyapi.github.io/tutorial/encoder/">JSON compatible encoder</a>.</li>
+<li>How to <a href="https://readyapi.github.io/advanced/response-directly/">Return a Response directly</a>.</li>
+<li>Update how to use a <a href="https://readyapi.github.io/advanced/custom-response/">Custom Response Class</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/184">#184</a>.</li>
 </ul>
 </li>
@@ -21439,7 +21439,7 @@ participant tasks as Background tasks
 <h2 id="0180">0.18.0<a class="headerlink" href="#0180" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add docs for <a href="https://readyapi.khulnasoft.com/advanced/custom-response/">HTTP Basic Auth</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/177">#177</a>.</p>
+<p>Add docs for <a href="https://readyapi.github.io/advanced/custom-response/">HTTP Basic Auth</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/177">#177</a>.</p>
 </li>
 <li>
 <p>Upgrade HTTP Basic Auth handling with automatic headers (automatic browser login prompt). PR <a href="https://github.com/khulnasoft/readyapi/pull/175">#175</a>.</p>
@@ -21448,7 +21448,7 @@ participant tasks as Background tasks
 <p>Update dependencies for security. PR <a href="https://github.com/khulnasoft/readyapi/pull/174">#174</a>.</p>
 </li>
 <li>
-<p>Add docs for <a href="https://readyapi.khulnasoft.com/tutorial/middleware/">Middleware</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/173">#173</a>.</p>
+<p>Add docs for <a href="https://readyapi.github.io/tutorial/middleware/">Middleware</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/173">#173</a>.</p>
 </li>
 </ul>
 <h2 id="0170">0.17.0<a class="headerlink" href="#0170" title="Permanent link">&para;</a></h2>
@@ -21457,7 +21457,7 @@ participant tasks as Background tasks
 <p>Make Flit publish from CI. PR <a href="https://github.com/khulnasoft/readyapi/pull/170">#170</a>.</p>
 </li>
 <li>
-<p>Add documentation about handling <a href="https://readyapi.khulnasoft.com/tutorial/cors/">CORS (Cross-Origin Resource Sharing)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/169">#169</a>.</p>
+<p>Add documentation about handling <a href="https://readyapi.github.io/tutorial/cors/">CORS (Cross-Origin Resource Sharing)</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/169">#169</a>.</p>
 </li>
 <li>
 <p>By default, encode by alias. This allows using Pydantic <code>alias</code> parameters working by default. PR <a href="https://github.com/khulnasoft/readyapi/pull/168">#168</a>.</p>
@@ -21466,7 +21466,7 @@ participant tasks as Background tasks
 <h2 id="0160">0.16.0<a class="headerlink" href="#0160" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Upgrade <em>path operation</em> <code>docstring</code> parsing to support proper Markdown descriptions. New documentation at <a href="https://readyapi.khulnasoft.com/tutorial/path-operation-configuration/#description-from-docstring">Path Operation Configuration</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/163">#163</a>.</p>
+<p>Upgrade <em>path operation</em> <code>docstring</code> parsing to support proper Markdown descriptions. New documentation at <a href="https://readyapi.github.io/tutorial/path-operation-configuration/#description-from-docstring">Path Operation Configuration</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/163">#163</a>.</p>
 </li>
 <li>
 <p>Refactor internal usage of Pydantic to use correct data types. PR <a href="https://github.com/khulnasoft/readyapi/pull/164">#164</a>.</p>
@@ -21478,16 +21478,16 @@ participant tasks as Background tasks
 <p>Fix typo in Tutorial about Extra Models. PR <a href="https://github.com/khulnasoft/readyapi/pull/159">#159</a> by <a href="https://github.com/danielmichaels">@danielmichaels</a>.</p>
 </li>
 <li>
-<p>Fix <a href="https://readyapi.khulnasoft.com/tutorial/query-params/">Query Parameters</a> URL examples in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/157">#157</a> by <a href="https://github.com/hayata-yamamoto">@hayata-yamamoto</a>.</p>
+<p>Fix <a href="https://readyapi.github.io/tutorial/query-params/">Query Parameters</a> URL examples in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/157">#157</a> by <a href="https://github.com/hayata-yamamoto">@hayata-yamamoto</a>.</p>
 </li>
 </ul>
 <h2 id="0150">0.15.0<a class="headerlink" href="#0150" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add support for multiple file uploads (as a single form field). New docs at: <a href="https://readyapi.khulnasoft.com/tutorial/request-files/#multiple-file-uploads">Multiple file uploads</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/158">#158</a>.</p>
+<p>Add support for multiple file uploads (as a single form field). New docs at: <a href="https://readyapi.github.io/tutorial/request-files/#multiple-file-uploads">Multiple file uploads</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/158">#158</a>.</p>
 </li>
 <li>
-<p>Add docs for: <a href="https://readyapi.khulnasoft.com/advanced/additional-status-codes/">Additional Status Codes</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/156">#156</a>.</p>
+<p>Add docs for: <a href="https://readyapi.github.io/advanced/additional-status-codes/">Additional Status Codes</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/156">#156</a>.</p>
 </li>
 </ul>
 <h2 id="0140">0.14.0<a class="headerlink" href="#0140" title="Permanent link">&para;</a></h2>
@@ -21496,7 +21496,7 @@ participant tasks as Background tasks
 <p>Improve automatically generated names of <em>path operations</em> in OpenAPI (in API docs). A function <code>read_items</code> instead of having a generated name "Read Items Get" will have "Read Items". PR <a href="https://github.com/khulnasoft/readyapi/pull/155">#155</a>.</p>
 </li>
 <li>
-<p>Add docs for: <a href="https://readyapi.khulnasoft.com/tutorial/testing/">Testing <strong>ReadyAPI</strong></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/151">#151</a>.</p>
+<p>Add docs for: <a href="https://readyapi.github.io/tutorial/testing/">Testing <strong>ReadyAPI</strong></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/151">#151</a>.</p>
 </li>
 <li>
 <p>Update <code>/docs</code> Swagger UI to enable deep linking. This allows sharing the URL pointing directly to the <em>path operation</em> documentation in the docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/148">#148</a> by <a href="https://github.com/wshayes">@wshayes</a>.</p>
@@ -21505,7 +21505,7 @@ participant tasks as Background tasks
 <p>Update development dependencies, <code>Pipfile.lock</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/150">#150</a>.</p>
 </li>
 <li>
-<p>Include Falcon and Hug in: <a href="https://readyapi.khulnasoft.com/alternatives/">Alternatives, Inspiration and Comparisons</a>.</p>
+<p>Include Falcon and Hug in: <a href="https://readyapi.github.io/alternatives/">Alternatives, Inspiration and Comparisons</a>.</p>
 </li>
 </ul>
 <h2 id="0130">0.13.0<a class="headerlink" href="#0130" title="Permanent link">&para;</a></h2>
@@ -21514,8 +21514,8 @@ participant tasks as Background tasks
 <li><code>SecurityScopes</code> can be declared as a parameter like <code>Request</code>, to get the scopes of all super-dependencies/dependants.</li>
 <li>Improve <code>Security</code> handling, merging scopes when declaring <code>SecurityScopes</code>.</li>
 <li>Allow using <code>SecurityBase</code> (like <code>OAuth2</code>) classes with <code>Depends</code> and still document them. <code>Security</code> now is needed only to declare <code>scopes</code>.</li>
-<li>Updated docs about: <a href="https://readyapi.khulnasoft.com/tutorial/security/oauth2-jwt/">OAuth2 with Password (and hashing), Bearer with JWT tokens</a>.</li>
-<li>New docs about: <a href="https://readyapi.khulnasoft.com/advanced/security/oauth2-scopes/">OAuth2 scopes</a>.</li>
+<li>Updated docs about: <a href="https://readyapi.github.io/tutorial/security/oauth2-jwt/">OAuth2 with Password (and hashing), Bearer with JWT tokens</a>.</li>
+<li>New docs about: <a href="https://readyapi.github.io/advanced/security/oauth2-scopes/">OAuth2 scopes</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/141">#141</a>.</li>
 </ul>
 </li>
@@ -21536,8 +21536,8 @@ participant tasks as Background tasks
 <ul>
 <li>Add additional <code>responses</code> parameter to <em>path operation decorators</em> to extend responses in OpenAPI (and API docs).<ul>
 <li>It also allows extending existing responses generated from <code>response_model</code>, declare other media types (like images), etc.</li>
-<li>The new documentation is here: <a href="https://readyapi.khulnasoft.com/advanced/additional-responses/">Additional Responses</a>.</li>
-<li><code>responses</code> can also be added to <code>.include_router()</code>, the updated docs are here: <a href="https://readyapi.khulnasoft.com/tutorial/bigger-applications/#add-some-custom-tags-and-responses">Bigger Applications</a>.</li>
+<li>The new documentation is here: <a href="https://readyapi.github.io/advanced/additional-responses/">Additional Responses</a>.</li>
+<li><code>responses</code> can also be added to <code>.include_router()</code>, the updated docs are here: <a href="https://readyapi.github.io/tutorial/bigger-applications/#add-some-custom-tags-and-responses">Bigger Applications</a>.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/97">#97</a> originally initiated by <a href="https://github.com/barsi">@barsi</a>.</li>
 </ul>
 </li>
@@ -21549,7 +21549,7 @@ participant tasks as Background tasks
 <p>Add <code>auto_error</code> parameter to security utility functions. Allowing them to be optional. Also allowing to have multiple alternative security schemes that are then checked in a single dependency instead of each one verifying and returning the error to the client automatically when not satisfied. PR <a href="https://github.com/khulnasoft/readyapi/pull/134">#134</a>.</p>
 </li>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/#create-a-middleware-to-handle-sessions">SQL Tutorial</a> to close database sessions even when there are exceptions. PR <a href="https://github.com/khulnasoft/readyapi/pull/89">#89</a> by <a href="https://github.com/alexiri">@alexiri</a>.</p>
+<p>Update <a href="https://readyapi.github.io/tutorial/sql-databases/#create-a-middleware-to-handle-sessions">SQL Tutorial</a> to close database sessions even when there are exceptions. PR <a href="https://github.com/khulnasoft/readyapi/pull/89">#89</a> by <a href="https://github.com/alexiri">@alexiri</a>.</p>
 </li>
 <li>
 <p>Fix duplicate dependency in <code>pyproject.toml</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/128">#128</a> by <a href="https://github.com/zxalif">@zxalif</a>.</p>
@@ -21561,7 +21561,7 @@ participant tasks as Background tasks
 <p>Add Gitter chat, badge, links, etc. <a href="https://gitter.im/khulnasoft/readyapi">https://gitter.im/khulnasoft/readyapi</a> . PR <a href="https://github.com/khulnasoft/readyapi/pull/117">#117</a>.</p>
 </li>
 <li>
-<p>Add docs about <a href="https://readyapi.khulnasoft.com/advanced/extending-openapi/">Extending OpenAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/126">#126</a>.</p>
+<p>Add docs about <a href="https://readyapi.github.io/advanced/extending-openapi/">Extending OpenAPI</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/126">#126</a>.</p>
 </li>
 <li>
 <p>Make Travis run Ubuntu Xenial (newer version) and Python 3.7 instead of Python 3.7-dev. PR <a href="https://github.com/khulnasoft/readyapi/pull/92">#92</a> by <a href="https://github.com/blueyed">@blueyed</a>.</p>
@@ -21570,7 +21570,7 @@ participant tasks as Background tasks
 <p>Fix duplicated param variable creation. PR <a href="https://github.com/khulnasoft/readyapi/pull/123">#123</a> by <a href="https://github.com/yihuang">@yihuang</a>.</p>
 </li>
 <li>
-<p>Add note in <a href="https://readyapi.khulnasoft.com/tutorial/response-model/">Response Model docs</a> about why using a function parameter instead of a function return type annotation. PR <a href="https://github.com/khulnasoft/readyapi/pull/109">#109</a> by <a href="https://github.com/JHSaunders">@JHSaunders</a>.</p>
+<p>Add note in <a href="https://readyapi.github.io/tutorial/response-model/">Response Model docs</a> about why using a function parameter instead of a function return type annotation. PR <a href="https://github.com/khulnasoft/readyapi/pull/109">#109</a> by <a href="https://github.com/JHSaunders">@JHSaunders</a>.</p>
 </li>
 <li>
 <p>Fix event docs (startup/shutdown) function name. PR <a href="https://github.com/khulnasoft/readyapi/pull/105">#105</a> by <a href="https://github.com/stratosgear">@stratosgear</a>.</p>
@@ -21582,31 +21582,31 @@ participant tasks as Background tasks
 <p>Fix OpenAPI (JSON Schema) for declarations of Python <code>Union</code> (JSON Schema <code>additionalProperties</code>). PR <a href="https://github.com/khulnasoft/readyapi/pull/121">#121</a>.</p>
 </li>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/tutorial/background-tasks/">Background Tasks</a> with a note on Celery.</p>
+<p>Update <a href="https://readyapi.github.io/tutorial/background-tasks/">Background Tasks</a> with a note on Celery.</p>
 </li>
 <li>
-<p>Document response models using unions and lists, updated at: <a href="https://readyapi.khulnasoft.com/tutorial/extra-models/">Extra Models</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/108">#108</a>.</p>
+<p>Document response models using unions and lists, updated at: <a href="https://readyapi.github.io/tutorial/extra-models/">Extra Models</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/108">#108</a>.</p>
 </li>
 </ul>
 <h2 id="0101">0.10.1<a class="headerlink" href="#0101" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add docs and tests for <a href="https://github.com/encode/databases">encode/databases</a>. New docs at: <a href="https://readyapi.khulnasoft.com/advanced/async-sql-databases/">Async SQL (Relational) Databases</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/107">#107</a>.</li>
+<li>Add docs and tests for <a href="https://github.com/encode/databases">encode/databases</a>. New docs at: <a href="https://readyapi.github.io/advanced/async-sql-databases/">Async SQL (Relational) Databases</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/107">#107</a>.</li>
 </ul>
 <h2 id="0100">0.10.0<a class="headerlink" href="#0100" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add support for Background Tasks in <em>path operation functions</em> and dependencies. New documentation about <a href="https://readyapi.khulnasoft.com/tutorial/background-tasks/">Background Tasks is here</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/103">#103</a>.</p>
+<p>Add support for Background Tasks in <em>path operation functions</em> and dependencies. New documentation about <a href="https://readyapi.github.io/tutorial/background-tasks/">Background Tasks is here</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/103">#103</a>.</p>
 </li>
 <li>
 <p>Add support for <code>.websocket_route()</code> in <code>APIRouter</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/100">#100</a> by <a href="https://github.com/euri10">@euri10</a>.</p>
 </li>
 <li>
-<p>New docs section about <a href="https://readyapi.khulnasoft.com/advanced/events/">Events: startup - shutdown</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/99">#99</a>.</p>
+<p>New docs section about <a href="https://readyapi.github.io/advanced/events/">Events: startup - shutdown</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/99">#99</a>.</p>
 </li>
 </ul>
 <h2 id="091">0.9.1<a class="headerlink" href="#091" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Document receiving <a href="https://readyapi.khulnasoft.com/tutorial/query-params-str-validations/#query-parameter-list-multiple-values">Multiple values with the same query parameter</a> and <a href="https://readyapi.khulnasoft.com/tutorial/header-params/#duplicate-headers">Duplicate headers</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/95">#95</a>.</li>
+<li>Document receiving <a href="https://readyapi.github.io/tutorial/query-params-str-validations/#query-parameter-list-multiple-values">Multiple values with the same query parameter</a> and <a href="https://readyapi.github.io/tutorial/header-params/#duplicate-headers">Duplicate headers</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/95">#95</a>.</li>
 </ul>
 <h2 id="090">0.9.0<a class="headerlink" href="#090" title="Permanent link">&para;</a></h2>
 <ul>
@@ -21614,7 +21614,7 @@ participant tasks as Background tasks
 <p>Upgrade compatible Pydantic version to <code>0.21.0</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/90">#90</a>.</p>
 </li>
 <li>
-<p>Add documentation for: <a href="https://readyapi.khulnasoft.com/tutorial/application-configuration/">Application Configuration</a>.</p>
+<p>Add documentation for: <a href="https://readyapi.github.io/tutorial/application-configuration/">Application Configuration</a>.</p>
 </li>
 <li>
 <p>Fix typo in docs. PR <a href="https://github.com/khulnasoft/readyapi/pull/76">#76</a> by <a href="https://github.com/matthewhegarty">@matthewhegarty</a>.</p>
@@ -21629,7 +21629,7 @@ participant tasks as Background tasks
 <p>Make development scripts executable. PR <a href="https://github.com/khulnasoft/readyapi/pull/76">#76</a> by <a href="https://github.com/euri10">@euri10</a>.</p>
 </li>
 <li>
-<p>Add support for adding <code>tags</code> in <code>app.include_router()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/55">#55</a> by <a href="https://github.com/euri10">@euri10</a>. Documentation updated in the section: <a href="https://readyapi.khulnasoft.com/tutorial/bigger-applications/">Bigger Applications</a>.</p>
+<p>Add support for adding <code>tags</code> in <code>app.include_router()</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/55">#55</a> by <a href="https://github.com/euri10">@euri10</a>. Documentation updated in the section: <a href="https://readyapi.github.io/tutorial/bigger-applications/">Bigger Applications</a>.</p>
 </li>
 <li>
 <p>Update docs related to Uvicorn to use new <code>--reload</code> option from version <code>0.5.x</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/74">#74</a>.</p>
@@ -21641,10 +21641,10 @@ participant tasks as Background tasks
 <h2 id="071">0.7.1<a class="headerlink" href="#071" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/async/#path-operation-functions">technical details about <code>async def</code> handling</a> with respect to previous frameworks. PR <a href="https://github.com/khulnasoft/readyapi/pull/64">#64</a> by <a href="https://github.com/haizaar">@haizaar</a>.</p>
+<p>Update <a href="https://readyapi.github.io/async/#path-operation-functions">technical details about <code>async def</code> handling</a> with respect to previous frameworks. PR <a href="https://github.com/khulnasoft/readyapi/pull/64">#64</a> by <a href="https://github.com/haizaar">@haizaar</a>.</p>
 </li>
 <li>
-<p>Add <a href="https://readyapi.khulnasoft.com/deployment/#raspberry-pi-and-other-architectures">deployment documentation for Docker in Raspberry Pi</a> and other architectures.</p>
+<p>Add <a href="https://readyapi.github.io/deployment/#raspberry-pi-and-other-architectures">deployment documentation for Docker in Raspberry Pi</a> and other architectures.</p>
 </li>
 <li>
 <p>Trigger Docker images build on Travis CI automatically. PR <a href="https://github.com/khulnasoft/readyapi/pull/65">#65</a>.</p>
@@ -21654,8 +21654,8 @@ participant tasks as Background tasks
 <ul>
 <li>Add support for <code>UploadFile</code> in <code>File</code> parameter annotations.<ul>
 <li>This includes a file-like interface.</li>
-<li>Here's the updated documentation for declaring <a href="https://readyapi.khulnasoft.com/tutorial/request-files/#file-parameters-with-uploadfile"><code>File</code> parameters with <code>UploadFile</code></a>.</li>
-<li>And here's the updated documentation for using <a href="https://readyapi.khulnasoft.com/tutorial/request-forms-and-files/"><code>Form</code> parameters mixed with <code>File</code> parameters, supporting <code>bytes</code> and <code>UploadFile</code></a> at the same time.</li>
+<li>Here's the updated documentation for declaring <a href="https://readyapi.github.io/tutorial/request-files/#file-parameters-with-uploadfile"><code>File</code> parameters with <code>UploadFile</code></a>.</li>
+<li>And here's the updated documentation for using <a href="https://readyapi.github.io/tutorial/request-forms-and-files/"><code>Form</code> parameters mixed with <code>File</code> parameters, supporting <code>bytes</code> and <code>UploadFile</code></a> at the same time.</li>
 <li>PR <a href="https://github.com/khulnasoft/readyapi/pull/63">#63</a>.</li>
 </ul>
 </li>
@@ -21663,22 +21663,22 @@ participant tasks as Background tasks
 <h2 id="064">0.6.4<a class="headerlink" href="#064" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add <a href="https://readyapi.khulnasoft.com/async/#very-technical-details">technical details about <code>async def</code> handling to docs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/61">#61</a>.</p>
+<p>Add <a href="https://readyapi.github.io/async/#very-technical-details">technical details about <code>async def</code> handling to docs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/61">#61</a>.</p>
 </li>
 <li>
-<p>Add docs for <a href="https://readyapi.khulnasoft.com/tutorial/debugging/">Debugging ReadyAPI applications in editors</a>.</p>
+<p>Add docs for <a href="https://readyapi.github.io/tutorial/debugging/">Debugging ReadyAPI applications in editors</a>.</p>
 </li>
 <li>
-<p>Clarify <a href="https://readyapi.khulnasoft.com/deployment/#bigger-applications">Bigger Applications deployed with Docker</a>.</p>
+<p>Clarify <a href="https://readyapi.github.io/deployment/#bigger-applications">Bigger Applications deployed with Docker</a>.</p>
 </li>
 <li>
 <p>Fix typos in docs.</p>
 </li>
 <li>
-<p>Add section about <a href="https://readyapi.khulnasoft.com/history-design-future/">History, Design and Future</a>.</p>
+<p>Add section about <a href="https://readyapi.github.io/history-design-future/">History, Design and Future</a>.</p>
 </li>
 <li>
-<p>Add docs for using <a href="https://readyapi.khulnasoft.com/advanced/websockets/">WebSockets with <strong>ReadyAPI</strong></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/62">#62</a>.</p>
+<p>Add docs for using <a href="https://readyapi.github.io/advanced/websockets/">WebSockets with <strong>ReadyAPI</strong></a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/62">#62</a>.</p>
 </li>
 </ul>
 <h2 id="063">0.6.3<a class="headerlink" href="#063" title="Permanent link">&para;</a></h2>
@@ -21691,20 +21691,20 @@ participant tasks as Background tasks
 <p>Introduce new project generator based on ReadyAPI and PostgreSQL: <a href="https://github.com/khulnasoft/full-stack-readyapi-postgresql">https://github.com/khulnasoft/full-stack-readyapi-postgresql</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/52">#52</a>.</p>
 </li>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">SQL tutorial with SQLAlchemy, using <code>Depends</code> to improve editor support and reduce code repetition</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/52">#52</a>.</p>
+<p>Update <a href="https://readyapi.github.io/tutorial/sql-databases/">SQL tutorial with SQLAlchemy, using <code>Depends</code> to improve editor support and reduce code repetition</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/52">#52</a>.</p>
 </li>
 <li>
-<p>Improve middleware naming in tutorial for SQL with SQLAlchemy <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">https://readyapi.khulnasoft.com/tutorial/sql-databases/</a>.</p>
+<p>Improve middleware naming in tutorial for SQL with SQLAlchemy <a href="https://readyapi.github.io/tutorial/sql-databases/">https://readyapi.github.io/tutorial/sql-databases/</a>.</p>
 </li>
 </ul>
 <h2 id="061">0.6.1<a class="headerlink" href="#061" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add docs for GraphQL: <a href="https://readyapi.khulnasoft.com/advanced/graphql/">https://readyapi.khulnasoft.com/advanced/graphql/</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/48">#48</a>.</li>
+<li>Add docs for GraphQL: <a href="https://readyapi.github.io/advanced/graphql/">https://readyapi.github.io/advanced/graphql/</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/48">#48</a>.</li>
 </ul>
 <h2 id="060">0.6.0<a class="headerlink" href="#060" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Update SQL with SQLAlchemy tutorial at <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">https://readyapi.khulnasoft.com/tutorial/sql-databases/</a> using the new official <code>request.state</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/45">#45</a>.</p>
+<p>Update SQL with SQLAlchemy tutorial at <a href="https://readyapi.github.io/tutorial/sql-databases/">https://readyapi.github.io/tutorial/sql-databases/</a> using the new official <code>request.state</code>. PR <a href="https://github.com/khulnasoft/readyapi/pull/45">#45</a>.</p>
 </li>
 <li>
 <p>Upgrade Starlette to version <code>0.11.1</code> and add required compatibility changes. PR <a href="https://github.com/khulnasoft/readyapi/pull/44">#44</a>.</p>
@@ -21713,13 +21713,13 @@ participant tasks as Background tasks
 <h2 id="051">0.5.1<a class="headerlink" href="#051" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add section about <a href="https://readyapi.khulnasoft.com/help-readyapi/">helping and getting help with <strong>ReadyAPI</strong></a>.</p>
+<p>Add section about <a href="https://readyapi.github.io/help-readyapi/">helping and getting help with <strong>ReadyAPI</strong></a>.</p>
 </li>
 <li>
-<p>Add note about <a href="https://readyapi.khulnasoft.com/tutorial/path-params/#order-matters">path operations order in docs</a>.</p>
+<p>Add note about <a href="https://readyapi.github.io/tutorial/path-params/#order-matters">path operations order in docs</a>.</p>
 </li>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/">section about error handling</a> with more information and make relation with Starlette error handling utilities more explicit. PR <a href="https://github.com/khulnasoft/readyapi/pull/41">#41</a>.</p>
+<p>Update <a href="https://readyapi.github.io/tutorial/handling-errors/">section about error handling</a> with more information and make relation with Starlette error handling utilities more explicit. PR <a href="https://github.com/khulnasoft/readyapi/pull/41">#41</a>.</p>
 </li>
 <li>
 <p>Add <a href="" target="_blank">Development - Contributing section to the docs</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/42">#42</a>.</p>
@@ -21728,30 +21728,30 @@ participant tasks as Background tasks
 <h2 id="050">0.5.0<a class="headerlink" href="#050" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add new <code>HTTPException</code> with support for custom headers. With new documentation for handling errors at: <a href="https://readyapi.khulnasoft.com/tutorial/handling-errors/">https://readyapi.khulnasoft.com/tutorial/handling-errors/</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/35">#35</a>.</p>
+<p>Add new <code>HTTPException</code> with support for custom headers. With new documentation for handling errors at: <a href="https://readyapi.github.io/tutorial/handling-errors/">https://readyapi.github.io/tutorial/handling-errors/</a>. PR <a href="https://github.com/khulnasoft/readyapi/pull/35">#35</a>.</p>
 </li>
 <li>
-<p>Add <a href="https://readyapi.khulnasoft.com/advanced/using-request-directly/">documentation to use Starlette <code>Request</code> object</a> directly. Check <a href="https://github.com/khulnasoft/readyapi/pull/25">#25</a> by <a href="https://github.com/euri10">@euri10</a>.</p>
+<p>Add <a href="https://readyapi.github.io/advanced/using-request-directly/">documentation to use Starlette <code>Request</code> object</a> directly. Check <a href="https://github.com/khulnasoft/readyapi/pull/25">#25</a> by <a href="https://github.com/euri10">@euri10</a>.</p>
 </li>
 <li>
 <p>Add issue templates to simplify reporting bugs, getting help, etc: <a href="https://github.com/khulnasoft/readyapi/pull/34">#34</a>.</p>
 </li>
 <li>
-<p>Update example for the SQLAlchemy tutorial at <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">https://readyapi.khulnasoft.com/tutorial/sql-databases/</a> using middleware and database session attached to request.</p>
+<p>Update example for the SQLAlchemy tutorial at <a href="https://readyapi.github.io/tutorial/sql-databases/">https://readyapi.github.io/tutorial/sql-databases/</a> using middleware and database session attached to request.</p>
 </li>
 </ul>
 <h2 id="040">0.4.0<a class="headerlink" href="#040" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Add <code>openapi_prefix</code>, support for reverse proxy and mounting sub-applications. See the docs at <a href="https://readyapi.khulnasoft.com/advanced/sub-applications-proxy/">https://readyapi.khulnasoft.com/advanced/sub-applications-proxy/</a>: <a href="https://github.com/khulnasoft/readyapi/pull/26">#26</a> by <a href="https://github.com/kabirkhan">@kabirkhan</a>.</p>
+<p>Add <code>openapi_prefix</code>, support for reverse proxy and mounting sub-applications. See the docs at <a href="https://readyapi.github.io/advanced/sub-applications-proxy/">https://readyapi.github.io/advanced/sub-applications-proxy/</a>: <a href="https://github.com/khulnasoft/readyapi/pull/26">#26</a> by <a href="https://github.com/kabirkhan">@kabirkhan</a>.</p>
 </li>
 <li>
-<p>Update <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">docs/tutorial for SQLAlchemy</a> including note about <em>DB Browser for SQLite</em>.</p>
+<p>Update <a href="https://readyapi.github.io/tutorial/sql-databases/">docs/tutorial for SQLAlchemy</a> including note about <em>DB Browser for SQLite</em>.</p>
 </li>
 </ul>
 <h2 id="030">0.3.0<a class="headerlink" href="#030" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Fix/add SQLAlchemy support, including ORM, and update <a href="https://readyapi.khulnasoft.com/tutorial/sql-databases/">docs for SQLAlchemy</a>: <a href="https://github.com/khulnasoft/readyapi/pull/30">#30</a>.</li>
+<li>Fix/add SQLAlchemy support, including ORM, and update <a href="https://readyapi.github.io/tutorial/sql-databases/">docs for SQLAlchemy</a>: <a href="https://github.com/khulnasoft/readyapi/pull/30">#30</a>.</li>
 </ul>
 <h2 id="021">0.2.1<a class="headerlink" href="#021" title="Permanent link">&para;</a></h2>
 <ul>

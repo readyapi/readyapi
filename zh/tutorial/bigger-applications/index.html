@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://readyapi.khulnasoft.com/zh/tutorial/bigger-applications/">
+        <link rel="canonical" href="https://readyapi.github.io/zh/tutorial/bigger-applications/">
       
       
         <link rel="prev" href="../sql-databases/">
@@ -120,7 +120,7 @@
       </a>
     </div>
     <div class="item">
-      <a class="announce-link" href="https://readyapi.khulnasoft.com/newsletter/">
+      <a class="announce-link" href="https://readyapi.github.io/newsletter/">
         <span class="twemoji">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
         </span> Subscribe to the <strong>ReadyAPI and friends</strong> newsletter 🎉
@@ -4958,7 +4958,7 @@
 <li>还有一个子目录 <code>app/internal/</code> 包含另一个 <code>__init__.py</code> 文件，因此它是又一个「Python 子包」：<code>app.internal</code>。</li>
 <li><code>app/internal/admin.py</code> 是另一个子模块：<code>app.internal.admin</code>。</li>
 </ul>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/bigger-applications/package.drawio.svg"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/bigger-applications/package.drawio.svg"></p>
 <p>带有注释的同一文件结构：</p>
 <div class="highlight"><pre><span></span><code><span id="__span-2-1">.
 </span><span id="__span-2-2">├── app                  # 「app」是一个 Python 包
@@ -5205,7 +5205,7 @@
 </ul>
 <p>但是该文件并不存在，我们的依赖项位于 <code>app/dependencies.py</code> 文件中。</p>
 <p>请记住我们的程序/文件结构是怎样的：</p>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/bigger-applications/package.drawio.svg"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/bigger-applications/package.drawio.svg"></p>
 <hr />
 <p>两个点 <code>..</code>，例如：</p>
 <div class="highlight"><pre><span></span><code><span id="__span-10-1"><span class="kn">from</span><span class="w"> </span><span class="nn">..dependencies</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_token_header</span>
@@ -5538,7 +5538,7 @@
 
 <p>然后打开位于 <a href="http://127.0.0.1:8000/docs" class="external-link" target="_blank">http://127.0.0.1:8000/docs</a> 的文档。</p>
 <p>你将看到使用了正确路径（和前缀）和正确标签的自动化 API 文档，包括了来自所有子模块的路径：</p>
-<p><img src="https://readyapi.khulnasoft.com/img/tutorial/bigger-applications/image01.png"></p>
+<p><img src="https://readyapi.github.io/img/tutorial/bigger-applications/image01.png"></p>
 <h2 id="prefix">多次使用不同的 <code>prefix</code> 包含同一个路由器<a class="headerlink" href="#prefix" title="Permanent link">&para;</a></h2>
 <p>你也可以在<em>同一</em>路由器上使用不同的前缀来多次使用 <code>.include_router()</code>。</p>
 <p>在有些场景这可能有用，例如以不同的前缀公开同一个的 API，比方说 <code>/api/v1</code> 和 <code>/api/latest</code>。</p>
