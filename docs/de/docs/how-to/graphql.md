@@ -35,7 +35,7 @@ Abhängig von Ihrem Anwendungsfall bevorzugen Sie vielleicht eine andere Bibliot
 
 Hier ist eine kleine Vorschau, wie Sie Strawberry mit ReadyAPI integrieren können:
 
-{* ../../docs_src/graphql/tutorial001.py hl[3,22,25:26] *}
+{* ../../examples/graphql/tutorial001.py hl[3,22,25:26] *}
 
 Weitere Informationen zu Strawberry finden Sie in der <a href="https://strawberry.rocks/" class="external-link" target="_blank">Strawberry-Dokumentation</a>.
 

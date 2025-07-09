@@ -12,13 +12,13 @@
 
 ## `File`と`Form`のインポート
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[1] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[1] *}
 
 ## `File`と`Form`のパラメータの定義
 
 ファイルやフォームのパラメータは`Body`や`Query`の場合と同じように作成します:
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[8] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[8] *}
 
 ファイルとフォームフィールドがフォームデータとしてアップロードされ、ファイルとフォームフィールドを受け取ります。
 

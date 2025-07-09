@@ -31,7 +31,7 @@
 
 👉 🍕 📶 😐, 🌅 📟 🎲 ⏪ 😰 👆:
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[9:13,36:53] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[9:13,36:53] *}
 
 /// tip
 
@@ -90,7 +90,7 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 
 🥇 ✍ 🆕 `APIRouter` 👈 🔜 🔌 1️⃣ ⚖️ 🌅 ⏲.
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[3,25] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[3,25] *}
 
 ### ✍ ⏲ *➡ 🛠️*
 
@@ -101,7 +101,7 @@ httpx.post(callback_url, json={"description": "Invoice paid", "paid": True})
 * ⚫️ 🔜 🎲 ✔️ 📄 💪 ⚫️ 🔜 📨, ✅ `body: InvoiceEvent`.
 *  &amp; ⚫️ 💪 ✔️ 📄 📨 ⚫️ 🔜 📨, ✅ `response_model=InvoiceEventReceived`.
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[16:18,21:22,28:32] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[16:18,21:22,28:32] *}
 
 📤 2️⃣ 👑 🔺 ⚪️➡️ 😐 *➡ 🛠️*:
 
@@ -169,7 +169,7 @@ https://www.external.org/events/invoices/2expen51ve
 
 🔜 ⚙️ 🔢 `callbacks` *👆 🛠️ ➡ 🛠️ 👨‍🎨* 🚶‍♀️ 🔢 `.routes` (👈 🤙 `list` 🛣/*➡ 🛠️*) ⚪️➡️ 👈 ⏲ 📻:
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[35] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[35] *}
 
 /// tip
 

@@ -35,7 +35,7 @@ def get_client(request: pytest.FixtureRequest):
     # TODO: remove when updating SQL tutorial to use new lifespan API
     with warnings.catch_warnings(record=True):
         warnings.simplefilter("always")
-        mod = importlib.import_module(f"docs_src.sql_databases.{request.param}")
+        mod = importlib.import_module(f"examples.sql_databases.{request.param}")
         clear_sqldev()
         importlib.reload(mod)
     mod.sqlite_url = "sqlite://"

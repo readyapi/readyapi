@@ -20,7 +20,7 @@
 
 `main.py`に、下記の例をコピーします:
 
-{* ../../docs_src/security/tutorial001.py *}
+{* ../../examples/security/tutorial001.py *}
 
 ## 実行
 
@@ -126,7 +126,7 @@ OAuth2は、バックエンドやAPIがユーザーを認証するサーバー�
 
 `OAuth2PasswordBearer` クラスのインスタンスを作成する時に、パラメーター`tokenUrl`を渡します。このパラメーターには、クライアント (ユーザーのブラウザで動作するフロントエンド) がトークンを取得するために`ユーザー名`と`パスワード`を送信するURLを指定します。
 
-{* ../../docs_src/security/tutorial001.py hl[6] *}
+{* ../../examples/security/tutorial001.py hl[6] *}
 
 /// tip | 豆知識
 
@@ -164,7 +164,7 @@ oauth2_scheme(some, parameters)
 
 これで`oauth2_scheme`を`Depends`で依存関係に渡すことができます。
 
-{* ../../docs_src/security/tutorial001.py hl[10] *}
+{* ../../examples/security/tutorial001.py hl[10] *}
 
 この依存関係は、*path operation function*のパラメーター`token`に代入される`str`を提供します。
 

@@ -18,7 +18,7 @@
 
 Ви можете налаштувати їх наступним чином:
 
-{* ../../docs_src/metadata/tutorial001.py hl[3:16, 19:32] *}
+{* ../../examples/metadata/tutorial001.py hl[3:16, 19:32] *}
 
 /// tip | Підказка
 
@@ -36,7 +36,7 @@
 
 Наприклад:
 
-{* ../../docs_src/metadata/tutorial001_1.py hl[31] *}
+{* ../../examples/metadata/tutorial001_1.py hl[31] *}
 
 ## Метадані для тегів
 
@@ -58,7 +58,7 @@
 
 Створіть метадані для своїх тегів і передайте їх у параметр  `openapi_tags`:
 
-{* ../../docs_src/metadata/tutorial004.py hl[3:16,18] *}
+{* ../../examples/metadata/tutorial004.py hl[3:16,18] *}
 
 Зверніть увагу, що в описах можна використовувати Markdown, наприклад, "login" буде показано жирним шрифтом (**login**), а "fancy" буде показано курсивом (_fancy_).
 
@@ -72,7 +72,7 @@
 
 Використовуйте параметр `tags` зі своїми *операціями шляху* (і `APIRouter`) для призначення їх до різних тегів:
 
-{* ../../docs_src/metadata/tutorial004.py hl[21,26] *}
+{* ../../examples/metadata/tutorial004.py hl[21,26] *}
 
 /// info | Інформація
 
@@ -100,7 +100,7 @@
 
 Наприклад, щоб налаштувати його на `/api/v1/openapi.json`:
 
-{* ../../docs_src/metadata/tutorial002.py hl[3] *}
+{* ../../examples/metadata/tutorial002.py hl[3] *}
 
 Якщо Ви хочете повністю вимкнути схему OpenAPI, Ви можете встановити `openapi_url=None`, це також вимкне інтерфейси документації, які її використовують.
 
@@ -117,4 +117,4 @@
 
 Наприклад, щоб налаштувати Swagger UI на `/documentation` і вимкнути ReDoc:
 
-{* ../../docs_src/metadata/tutorial003.py hl[3] *}
+{* ../../examples/metadata/tutorial003.py hl[3] *}

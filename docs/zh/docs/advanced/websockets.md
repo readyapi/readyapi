@@ -34,13 +34,13 @@ $ pip install websockets
 
 但这是一种专注于 WebSockets 的服务器端并提供一个工作示例的最简单方式：
 
-{* ../../docs_src/websockets/tutorial001.py hl[2,6:38,41:43] *}
+{* ../../examples/websockets/tutorial001.py hl[2,6:38,41:43] *}
 
 ## 创建 `websocket`
 
 在您的 **ReadyAPI** 应用程序中，创建一个 `websocket`：
 
-{* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
+{* ../../examples/websockets/tutorial001.py hl[1,46:47] *}
 
 /// note | 技术细节
 
@@ -54,7 +54,7 @@ $ pip install websockets
 
 在您的 WebSocket 路由中，您可以使用 `await` 等待消息并发送消息。
 
-{* ../../docs_src/websockets/tutorial001.py hl[48:52] *}
+{* ../../examples/websockets/tutorial001.py hl[48:52] *}
 
 您可以接收和发送二进制、文本和 JSON 数据。
 
@@ -103,7 +103,7 @@ $ uvicorn main:app --reload
 
 它们的工作方式与其他 ReadyAPI 端点/ *路径操作* 相同：
 
-{* ../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82] *}
+{* ../../examples/websockets/tutorial002_an_py310.py hl[68:69,82] *}
 
 /// info
 
@@ -144,7 +144,7 @@ $ uvicorn main:app --reload
 
 当 WebSocket 连接关闭时，`await websocket.receive_text()` 将引发 `WebSocketDisconnect` 异常，您可以捕获并处理该异常，就像本示例中的示例一样。
 
-{* ../../docs_src/websockets/tutorial003_py39.py hl[79:81] *}
+{* ../../examples/websockets/tutorial003_py39.py hl[79:81] *}
 
 尝试以下操作：
 

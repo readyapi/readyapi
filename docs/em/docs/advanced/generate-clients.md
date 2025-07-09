@@ -16,7 +16,7 @@
 
 ➡️ ▶️ ⏮️ 🙅 ReadyAPI 🈸:
 
-{* ../../docs_src/generate_clients/tutorial001.py hl[9:11,14:15,18,19,23] *}
+{* ../../examples/generate_clients/tutorial001.py hl[9:11,14:15,18,19,23] *}
 
 👀 👈 *➡ 🛠️* 🔬 🏷 👫 ⚙️ 📨 🚀 &amp; 📨 🚀, ⚙️ 🏷 `Item` &amp; `ResponseMessage`.
 
@@ -122,7 +122,7 @@ frontend-app@1.0.0 generate-client /home/user/code/frontend-app
 🖼, 👆 💪 ✔️ 📄 **🏬** &amp; ➕1️⃣ 📄 **👩‍💻**, &amp; 👫 💪 👽 🔖:
 
 
-{* ../../docs_src/generate_clients/tutorial002.py hl[23,28,36] *}
+{* ../../examples/generate_clients/tutorial002.py hl[23,28,36] *}
 
 ### 🏗 📕 👩‍💻 ⏮️ 🔖
 
@@ -169,7 +169,7 @@ ReadyAPI ⚙️ **😍 🆔** 🔠 *➡ 🛠️*, ⚫️ ⚙️ **🛠️ 🆔**
 
 👆 💪 ⤴️ 🚶‍♀️ 👈 🛃 🔢 **ReadyAPI** `generate_unique_id_function` 🔢:
 
-{* ../../docs_src/generate_clients/tutorial003.py hl[8:9,12] *}
+{* ../../examples/generate_clients/tutorial003.py hl[8:9,12] *}
 
 ### 🏗 📕 👩‍💻 ⏮️ 🛃 🛠️ 🆔
 
@@ -191,7 +191,7 @@ ReadyAPI ⚙️ **😍 🆔** 🔠 *➡ 🛠️*, ⚫️ ⚙️ **🛠️ 🆔**
 
 👥 💪 ⏬ 🗄 🎻 📁 `openapi.json` &amp; ⤴️ 👥 💪 **❎ 👈 🔡 🔖** ⏮️ ✍ 💖 👉:
 
-{* ../../docs_src/generate_clients/tutorial004.py *}
+{* ../../examples/generate_clients/tutorial004.py *}
 
 ⏮️ 👈, 🛠️ 🆔 🔜 📁 ⚪️➡️ 👜 💖 `items-get_items` `get_items`, 👈 🌌 👩‍💻 🚂 💪 🏗 🙅 👩‍🔬 📛.
 

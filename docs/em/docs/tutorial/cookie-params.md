@@ -6,7 +6,7 @@
 
 🥇 🗄 `Cookie`:
 
-{* ../../docs_src/cookie_params/tutorial001.py hl[3] *}
+{* ../../examples/cookie_params/tutorial001.py hl[3] *}
 
 ## 📣 `Cookie` 🔢
 
@@ -14,7 +14,7 @@
 
 🥇 💲 🔢 💲, 👆 💪 🚶‍♀️ 🌐 ➕ 🔬 ⚖️ ✍ 🔢:
 
-{* ../../docs_src/cookie_params/tutorial001.py hl[9] *}
+{* ../../examples/cookie_params/tutorial001.py hl[9] *}
 
 /// note | 📡 ℹ
 

@@ -16,13 +16,13 @@
 
 从 `readyapi` 导入 `File` 和 `UploadFile`：
 
-{* ../../docs_src/request_files/tutorial001.py hl[1] *}
+{* ../../examples/request_files/tutorial001.py hl[1] *}
 
 ## 定义 `File` 参数
 
 创建文件（`File`）参数的方式与 `Body` 和 `Form` 一样：
 
-{* ../../docs_src/request_files/tutorial001.py hl[7] *}
+{* ../../examples/request_files/tutorial001.py hl[7] *}
 
 /// info | 说明
 
@@ -50,7 +50,7 @@
 
 定义文件参数时使用 `UploadFile`：
 
-{* ../../docs_src/request_files/tutorial001.py hl[12] *}
+{* ../../examples/request_files/tutorial001.py hl[12] *}
 
 `UploadFile` 与 `bytes` 相比有更多优势：
 
@@ -132,13 +132,13 @@ contents = myfile.file.read()
 
 您可以通过使用标准类型注解并将 None 作为默认值的方式将一个文件参数设为可选:
 
-{* ../../docs_src/request_files/tutorial001_02_py310.py hl[7,14] *}
+{* ../../examples/request_files/tutorial001_02_py310.py hl[7,14] *}
 
 ## 带有额外元数据的 `UploadFile`
 
 您也可以将 `File()` 与 `UploadFile` 一起使用，例如，设置额外的元数据:
 
-{* ../../docs_src/request_files/tutorial001_03.py hl[13] *}
+{* ../../examples/request_files/tutorial001_03.py hl[13] *}
 
 ## 多文件上传
 
@@ -148,7 +148,7 @@ ReadyAPI 支持同时上传多个文件。
 
 上传多个文件时，要声明含 `bytes` 或 `UploadFile` 的列表（`List`）：
 
-{* ../../docs_src/request_files/tutorial002_py39.py hl[8,13] *}
+{* ../../examples/request_files/tutorial002_py39.py hl[8,13] *}
 
 接收的也是含 `bytes` 或 `UploadFile` 的列表（`list`）。
 
@@ -165,7 +165,7 @@ ReadyAPI 支持同时上传多个文件。
 
 和之前的方式一样, 您可以为 `File()` 设置额外参数, 即使是 `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial003_py39.py hl[16] *}
+{* ../../examples/request_files/tutorial003_py39.py hl[16] *}
 
 ## 小结
 

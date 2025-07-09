@@ -20,13 +20,13 @@ $ pip install python-multipart
 
 Імпортуйте `File` та `UploadFile` з `readyapi`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[3] *}
 
 ## Визначення параметрів `File`
 
 Створіть параметри файлів так само як Ви б створювали `Body` або `Form`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[9] *}
 
 /// info | Інформація
 
@@ -54,7 +54,7 @@ $ pip install python-multipart
 
 Визначте параметр файлу з типом `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[14] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[14] *}
 
 Використання `UploadFile` має кілька переваг перед `bytes`:
 
@@ -136,13 +136,13 @@ contents = myfile.file.read()
 
 Файл можна зробити необов’язковим, використовуючи стандартні анотації типів і встановлюючи значення за замовчуванням `None`:
 
-{* ../../docs_src/request_files/tutorial001_02_an_py310.py hl[9,17] *}
+{* ../../examples/request_files/tutorial001_02_an_py310.py hl[9,17] *}
 
 ## `UploadFile` із Додатковими Мета Даними
 
 Ви також можете використовувати `File()` разом із `UploadFile`, наприклад, для встановлення додаткових метаданих:
 
-{* ../../docs_src/request_files/tutorial001_03_an_py39.py hl[9,15] *}
+{* ../../examples/request_files/tutorial001_03_an_py39.py hl[9,15] *}
 
 ## Завантаження Кількох Файлів
 
@@ -152,7 +152,7 @@ contents = myfile.file.read()
 
 Щоб це реалізувати, потрібно оголосити список `bytes` або `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial002_an_py39.py hl[10,15] *}
+{* ../../examples/request_files/tutorial002_an_py39.py hl[10,15] *}
 
 Ви отримаєте, як і було оголошено, `list` із `bytes` або `UploadFile`.
 
@@ -168,7 +168,7 @@ contents = myfile.file.read()
 
 Так само як і раніше, Ви можете використовувати `File()`, щоб встановити додаткові параметри навіть для `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial003_an_py39.py hl[11,18:20] *}
+{* ../../examples/request_files/tutorial003_an_py39.py hl[11,18:20] *}
 
 ## Підсумок
 

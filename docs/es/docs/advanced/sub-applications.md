@@ -10,7 +10,7 @@ Si necesitas tener dos aplicaciones de **ReadyAPI** independientes, cada una con
 
 Primero, crea la aplicación principal de nivel superior de **ReadyAPI**, y sus *path operations*:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[3, 6:8] *}
+{* ../../examples/sub_applications/tutorial001.py hl[3, 6:8] *}
 
 ### Sub-aplicación
 
@@ -18,7 +18,7 @@ Luego, crea tu sub-aplicación, y sus *path operations*.
 
 Esta sub-aplicación es solo otra aplicación estándar de ReadyAPI, pero es la que se "montará":
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11, 14:16] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11, 14:16] *}
 
 ### Montar la sub-aplicación
 
@@ -26,7 +26,7 @@ En tu aplicación de nivel superior, `app`, monta la sub-aplicación, `subapi`.
 
 En este caso, se montará en el path `/subapi`:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11, 19] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11, 19] *}
 
 ### Revisa la documentación automática de la API
 

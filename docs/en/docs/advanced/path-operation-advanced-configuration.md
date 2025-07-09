@@ -12,7 +12,7 @@ You can set the OpenAPI `operationId` to be used in your *path operation* with t
 
 You would have to make sure that it is unique for each operation.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial001.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial001.py hl[6] *}
 
 ### Using the *path operation function* name as the operationId
 
@@ -20,7 +20,7 @@ If you want to use your APIs' function names as `operationId`s, you can iterate 
 
 You should do it after adding all your *path operations*.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial002.py hl[2, 12:21, 24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial002.py hl[2, 12:21, 24] *}
 
 /// tip
 
@@ -40,7 +40,7 @@ Even if they are in different modules (Python files).
 
 To exclude a *path operation* from the generated OpenAPI schema (and thus, from the automatic documentation systems), use the parameter `include_in_schema` and set it to `False`:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial003.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial003.py hl[6] *}
 
 ## Advanced description from docstring
 
@@ -50,7 +50,7 @@ Adding an `\f` (an escaped "form feed" character) causes **ReadyAPI** to truncat
 
 It won't show up in the documentation, but other tools (such as Sphinx) will be able to use the rest.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
 
 ## Additional Responses
 
@@ -92,7 +92,7 @@ You can extend the OpenAPI schema for a *path operation* using the parameter `op
 
 This `openapi_extra` can be helpful, for example, to declare [OpenAPI Extensions](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions):
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial005.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial005.py hl[6] *}
 
 If you open the automatic API docs, your extension will show up at the bottom of the specific *path operation*.
 
@@ -139,7 +139,7 @@ For example, you could decide to read and validate the request with your own cod
 
 You could do that with `openapi_extra`:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial006.py hl[19:36, 39:40] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial006.py hl[19:36, 39:40] *}
 
 In this example, we didn't declare any Pydantic model. In fact, the request body is not even <abbr title="converted from some plain format, like bytes, into Python objects">parsed</abbr> as JSON, it is read directly as `bytes`, and the function `magic_data_reader()` would be in charge of parsing it in some way.
 
@@ -155,13 +155,13 @@ For example, in this application we don't use ReadyAPI's integrated functionalit
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22, 24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[17:22, 24] *}
 
 ////
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py hl[17:22, 24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007_pv1.py hl[17:22, 24] *}
 
 ////
 
@@ -179,13 +179,13 @@ And then in our code, we parse that YAML content directly, and then we are again
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
 
 ////
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007_pv1.py hl[26:33] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007_pv1.py hl[26:33] *}
 
 ////
 

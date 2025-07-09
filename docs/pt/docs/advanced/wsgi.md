@@ -12,7 +12,7 @@ Em seguinda, encapsular a aplicação WSGI (e.g. Flask) com o middleware.
 
 E então **"montar"** em um caminho de rota.
 
-{* ../../docs_src/wsgi/tutorial001.py hl[2:3,23] *}
+{* ../../examples/wsgi/tutorial001.py hl[2:3,23] *}
 
 ## Conferindo
 

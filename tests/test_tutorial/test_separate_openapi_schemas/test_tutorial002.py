@@ -15,7 +15,7 @@ from ...utils import needs_py39, needs_py310, needs_pydanticv2
     ],
 )
 def get_client(request: pytest.FixtureRequest) -> TestClient:
-    mod = importlib.import_module(f"docs_src.separate_openapi_schemas.{request.param}")
+    mod = importlib.import_module(f"examples.separate_openapi_schemas.{request.param}")
 
     client = TestClient(mod.app)
     return client

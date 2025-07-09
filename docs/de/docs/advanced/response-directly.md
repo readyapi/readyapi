@@ -34,7 +34,7 @@ Sie können beispielsweise kein Pydantic-Modell in eine `JSONResponse` einfügen
 
 In diesen Fällen können Sie den `jsonable_encoder` verwenden, um Ihre Daten zu konvertieren, bevor Sie sie an eine Response übergeben:
 
-{* ../../docs_src/response_directly/tutorial001.py hl[6:7,21:22] *}
+{* ../../examples/response_directly/tutorial001.py hl[6:7,21:22] *}
 
 /// note | Technische Details
 
@@ -54,7 +54,7 @@ Nehmen wir an, Sie möchten eine <a href="https://en.wikipedia.org/wiki/XML" cla
 
 Sie könnten Ihren XML-Inhalt als String in eine `Response` einfügen und sie zurückgeben:
 
-{* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
+{* ../../examples/response_directly/tutorial002.py hl[1,18] *}
 
 ## Anmerkungen
 

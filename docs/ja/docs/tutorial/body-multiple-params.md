@@ -8,7 +8,7 @@
 
 また、デフォルトの`None`を設定することで、ボディパラメータをオプションとして宣言することもできます:
 
-{* ../../docs_src/body_multiple_params/tutorial001.py hl[19,20,21] *}
+{* ../../examples/body_multiple_params/tutorial001.py hl[19,20,21] *}
 
 /// note | 備考
 
@@ -31,7 +31,7 @@
 
 しかし、`item`と`user`のように複数のボディパラメータを宣言することもできます:
 
-{* ../../docs_src/body_multiple_params/tutorial002.py hl[22] *}
+{* ../../examples/body_multiple_params/tutorial002.py hl[22] *}
 
 この場合、**ReadyAPI**は関数内に複数のボディパラメータ（Pydanticモデルである２つのパラメータ）があることに気付きます。
 
@@ -73,7 +73,7 @@
 しかし、`Body`を使用して、**ReadyAPI** に別のボディキーとして扱うように指示することができます:
 
 
-{* ../../docs_src/body_multiple_params/tutorial003.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003.py hl[23] *}
 
 この場合、**ReadyAPI** は以下のようなボディを期待します:
 
@@ -108,7 +108,7 @@ q: str = None
 
 以下において:
 
-{* ../../docs_src/body_multiple_params/tutorial004.py hl[27] *}
+{* ../../examples/body_multiple_params/tutorial004.py hl[27] *}
 
 /// info | 情報
 
@@ -130,7 +130,7 @@ item: Item = Body(..., embed=True)
 
 以下において:
 
-{* ../../docs_src/body_multiple_params/tutorial005.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005.py hl[17] *}
 
 この場合、**ReadyAPI** は以下のようなボディを期待します:
 

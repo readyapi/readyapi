@@ -20,7 +20,7 @@
 
 📥 🏢 💭 ❔ 🏷 💪 👀 💖 ⏮️ 👫 🔐 🏑 &amp; 🥉 🌐❔ 👫 ⚙️:
 
-{* ../../docs_src/extra_models/tutorial001.py hl[9,11,16,22,24,29:30,33:35,40:41] *}
+{* ../../examples/extra_models/tutorial001.py hl[9,11,16,22,24,29:30,33:35,40:41] *}
 
 ### 🔃 `**user_in.dict()`
 
@@ -154,7 +154,7 @@ UserInDB(
 
 👈 🌌, 👥 💪 📣 🔺 🖖 🏷 (⏮️ 🔢 `password`, ⏮️ `hashed_password` &amp; 🍵 🔐):
 
-{* ../../docs_src/extra_models/tutorial002.py hl[9,15:16,19:20,23:24] *}
+{* ../../examples/extra_models/tutorial002.py hl[9,15:16,19:20,23:24] *}
 
 ## `Union` ⚖️ `anyOf`
 
@@ -170,7 +170,7 @@ UserInDB(
 
 ///
 
-{* ../../docs_src/extra_models/tutorial003.py hl[1,14:15,18:20,33] *}
+{* ../../examples/extra_models/tutorial003.py hl[1,14:15,18:20,33] *}
 
 ### `Union` 🐍 3️⃣.1️⃣0️⃣
 
@@ -192,7 +192,7 @@ some_variable: PlaneItem | CarItem
 
 👈, ⚙️ 🐩 🐍 `typing.List` (⚖️ `list` 🐍 3️⃣.9️⃣ &amp; 🔛):
 
-{* ../../docs_src/extra_models/tutorial004.py hl[1,20] *}
+{* ../../examples/extra_models/tutorial004.py hl[1,20] *}
 
 ## 📨 ⏮️ ❌ `dict`
 
@@ -202,7 +202,7 @@ some_variable: PlaneItem | CarItem
 
 👉 💼, 👆 💪 ⚙️ `typing.Dict` (⚖️ `dict` 🐍 3️⃣.9️⃣ &amp; 🔛):
 
-{* ../../docs_src/extra_models/tutorial005.py hl[1,8] *}
+{* ../../examples/extra_models/tutorial005.py hl[1,8] *}
 
 ## 🌃
 

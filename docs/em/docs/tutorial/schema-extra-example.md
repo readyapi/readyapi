@@ -8,7 +8,7 @@
 
 👆 💪 📣 `example` Pydantic 🏷 ⚙️ `Config` &amp; `schema_extra`, 🔬 <a href="https://docs.pydantic.dev/latest/concepts/json_schema/#customizing-json-schema" class="external-link" target="_blank">Pydantic 🩺: 🔗 🛃</a>:
 
-{* ../../docs_src/schema_extra_example/tutorial001.py hl[15:23] *}
+{* ../../examples/schema_extra_example/tutorial001.py hl[15:23] *}
 
 👈 ➕ ℹ 🔜 🚮-🔢 **🎻 🔗** 👈 🏷, &amp; ⚫️ 🔜 ⚙️ 🛠️ 🩺.
 
@@ -26,7 +26,7 @@
 
 👆 💪 ⚙️ 👉 🚮 `example` 🔠 🏑:
 
-{* ../../docs_src/schema_extra_example/tutorial002.py hl[4,10:13] *}
+{* ../../examples/schema_extra_example/tutorial002.py hl[4,10:13] *}
 
 /// warning
 
@@ -52,7 +52,7 @@
 
 📥 👥 🚶‍♀️ `example` 📊 ⌛ `Body()`:
 
-{* ../../docs_src/schema_extra_example/tutorial003.py hl[20:25] *}
+{* ../../examples/schema_extra_example/tutorial003.py hl[20:25] *}
 
 ### 🖼 🩺 🎚
 
@@ -73,7 +73,7 @@
 * `value`: 👉 ☑ 🖼 🎦, ✅ `dict`.
 * `externalValue`: 🎛 `value`, 📛 ☝ 🖼. 👐 👉 5️⃣📆 🚫 🐕‍🦺 📚 🧰 `value`.
 
-{* ../../docs_src/schema_extra_example/tutorial004.py hl[21:47] *}
+{* ../../examples/schema_extra_example/tutorial004.py hl[21:47] *}
 
 ### 🖼 🩺 🎚
 

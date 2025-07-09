@@ -14,7 +14,7 @@ El decorador de *path operation* recibe un argumento opcional `dependencies`.
 
 Debe ser una `list` de `Depends()`:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[19] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[19] *}
 
 Estas dependencias serán ejecutadas/resueltas de la misma manera que las dependencias normales. Pero su valor (si devuelven alguno) no será pasado a tu *path operation function*.
 
@@ -44,13 +44,13 @@ Puedes usar las mismas *funciones* de dependencia que usas normalmente.
 
 Pueden declarar requisitos de request (como headers) u otras sub-dependencias:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[8,13] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[8,13] *}
 
 ### Lanzar excepciones
 
 Estas dependencias pueden `raise` excepciones, igual que las dependencias normales:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[10,15] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[10,15] *}
 
 ### Valores de retorno
 
@@ -58,7 +58,7 @@ Y pueden devolver valores o no, los valores no serán usados.
 
 Así que, puedes reutilizar una dependencia normal (que devuelve un valor) que ya uses en otro lugar, y aunque el valor no se use, la dependencia será ejecutada:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[11,16] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[11,16] *}
 
 ## Dependencias para un grupo de *path operations*
 

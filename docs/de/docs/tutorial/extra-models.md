@@ -20,7 +20,7 @@ Falls Ihnen das nichts sagt, in den [Sicherheits-Kapiteln](security/simple-oauth
 
 Hier der generelle Weg, wie die Modelle mit ihren Passwort-Feldern aussehen könnten, und an welchen Orten sie verwendet werden würden.
 
-{* ../../docs_src/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
+{* ../../examples/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
 
 /// info
 
@@ -162,7 +162,7 @@ Die ganze Datenkonvertierung, -validierung, -dokumentation, usw. wird immer noch
 
 Auf diese Weise beschreiben wir nur noch die Unterschiede zwischen den Modellen (mit Klartext-`password`, mit `hashed_password`, und ohne Passwort):
 
-{* ../../docs_src/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
+{* ../../examples/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
 
 ## `Union`, oder `anyOf`
 
@@ -178,7 +178,7 @@ Listen Sie, wenn Sie eine <a href="https://pydantic-docs.helpmanual.io/usage/typ
 
 ///
 
-{* ../../docs_src/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
+{* ../../examples/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
 
 ### `Union` in Python 3.10
 
@@ -200,7 +200,7 @@ Genauso können Sie eine Response deklarieren, die eine Liste von Objekten ist.
 
 Verwenden Sie dafür Pythons Standard `typing.List` (oder nur `list` in Python 3.9 und darüber):
 
-{* ../../docs_src/extra_models/tutorial004_py39.py hl[18] *}
+{* ../../examples/extra_models/tutorial004_py39.py hl[18] *}
 
 ## Response mit beliebigem `dict`
 
@@ -210,7 +210,7 @@ Das ist nützlich, wenn Sie die gültigen Feld-/Attribut-Namen von vorneherein n
 
 In diesem Fall können Sie `typing.Dict` verwenden (oder nur `dict` in Python 3.9 und darüber):
 
-{* ../../docs_src/extra_models/tutorial005_py39.py hl[6] *}
+{* ../../examples/extra_models/tutorial005_py39.py hl[6] *}
 
 ## Zusammenfassung
 

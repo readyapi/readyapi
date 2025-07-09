@@ -6,7 +6,7 @@ So wie `Query`-, `Path`-, und `Cookie`-Parameter können Sie auch <abbr title='H
 
 Importieren Sie zuerst `Header`:
 
-{* ../../docs_src/header_params/tutorial001_an_py310.py hl[3] *}
+{* ../../examples/header_params/tutorial001_an_py310.py hl[3] *}
 
 ## `Header`-Parameter deklarieren
 
@@ -14,7 +14,7 @@ Dann deklarieren Sie Ihre Header-Parameter, auf die gleiche Weise, wie Sie auch 
 
 Der erste Wert ist der Typ. Sie können `Header` die gehabten Extra Validierungs- und Beschreibungsparameter hinzufügen. Danach können Sie einen Defaultwert vergeben:
 
-{* ../../docs_src/header_params/tutorial001_an_py310.py hl[9] *}
+{* ../../examples/header_params/tutorial001_an_py310.py hl[9] *}
 
 /// note | Technische Details
 
@@ -46,7 +46,7 @@ Sie können also `user_agent` schreiben, wie Sie es normalerweise in Python-Code
 
 Wenn Sie aus irgendeinem Grund das automatische Konvertieren von Unterstrichen zu Bindestrichen abschalten möchten, setzen Sie den Parameter `convert_underscores` auf `False`.
 
-{* ../../docs_src/header_params/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/header_params/tutorial002_an_py310.py hl[10] *}
 
 /// warning | Achtung
 
@@ -64,7 +64,7 @@ Sie erhalten dann alle Werte von diesem doppelten Header als Python-`list`e.
 
 Um zum Beispiel einen Header `X-Token` zu deklarieren, der mehrmals vorkommen kann, schreiben Sie:
 
-{* ../../docs_src/header_params/tutorial003_an_py310.py hl[9] *}
+{* ../../examples/header_params/tutorial003_an_py310.py hl[9] *}
 
 Wenn Sie mit einer *Pfadoperation* kommunizieren, die zwei HTTP-Header sendet, wie:
 

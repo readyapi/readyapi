@@ -8,7 +8,7 @@
 
 Вы можете объявить ключ `example` для модели Pydantic, используя класс `Config` и переменную `schema_extra`, как описано в <a href="https://docs.pydantic.dev/latest/concepts/json_schema/#schema-customization" class="external-link" target="_blank">Pydantic документации: Настройка схемы</a>:
 
-{* ../../docs_src/schema_extra_example/tutorial001_py310.py hl[13:21] *}
+{* ../../examples/schema_extra_example/tutorial001_py310.py hl[13:21] *}
 
 Эта дополнительная информация будет включена в **JSON Schema** выходных данных для этой модели, и она будет использоваться в документации к API.
 
@@ -26,7 +26,7 @@
 
 Вы можете использовать это, чтобы добавить аргумент `example` для каждого поля:
 
-{* ../../docs_src/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
+{* ../../examples/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
 
 /// warning | Внимание
 
@@ -52,7 +52,7 @@
 
 Здесь мы передаём аргумент `example`, как пример данных ожидаемых в параметре `Body()`:
 
-{* ../../docs_src/schema_extra_example/tutorial003_an_py310.py hl[22:27] *}
+{* ../../examples/schema_extra_example/tutorial003_an_py310.py hl[22:27] *}
 
 ### Аргумент "example" в UI документации
 
@@ -73,7 +73,7 @@
 * `value`: Это конкретный пример, который отображается, например, в виде типа `dict`.
 * `externalValue`: альтернатива параметру `value`, URL-адрес, указывающий на пример. Хотя это может не поддерживаться таким же количеством инструментов разработки и тестирования API, как параметр `value`.
 
-{* ../../docs_src/schema_extra_example/tutorial004_an_py310.py hl[23:49] *}
+{* ../../examples/schema_extra_example/tutorial004_an_py310.py hl[23:49] *}
 
 ### Аргумент "examples" в UI документации
 

@@ -20,7 +20,7 @@ Se não souber, você aprenderá o que é uma "senha hash" nos [capítulos de se
 
 Aqui está uma ideia geral de como os modelos poderiam parecer com seus campos de senha e os lugares onde são usados:
 
-{* ../../docs_src/extra_models/tutorial001.py hl[9,11,16,22,24,29:30,33:35,40:41] *}
+{* ../../examples/extra_models/tutorial001.py hl[9,11,16,22,24,29:30,33:35,40:41] *}
 
 ### Sobre `**user_in.dict()`
 
@@ -154,7 +154,7 @@ Toda conversão de dados, validação, documentação, etc. ainda funcionará no
 
 Dessa forma, podemos declarar apenas as diferenças entre os modelos (com `password` em texto claro, com `hashed_password` e sem senha):
 
-{* ../../docs_src/extra_models/tutorial002.py hl[9,15:16,19:20,23:24] *}
+{* ../../examples/extra_models/tutorial002.py hl[9,15:16,19:20,23:24] *}
 
 ## `Union` ou `anyOf`
 
@@ -170,7 +170,7 @@ Ao definir um <a href="https://docs.pydantic.dev/latest/concepts/types/#unions" 
 
 ///
 
-{* ../../docs_src/extra_models/tutorial003.py hl[1,14:15,18:20,33] *}
+{* ../../examples/extra_models/tutorial003.py hl[1,14:15,18:20,33] *}
 
 ### `Union` no Python 3.10
 
@@ -192,7 +192,7 @@ Da mesma forma, você pode declarar respostas de listas de objetos.
 
 Para isso, use o padrão Python `typing.List` (ou simplesmente `list` no Python 3.9 e superior):
 
-{* ../../docs_src/extra_models/tutorial004.py hl[1,20] *}
+{* ../../examples/extra_models/tutorial004.py hl[1,20] *}
 
 ## Resposta com `dict` arbitrário
 
@@ -202,7 +202,7 @@ Isso é útil se você não souber os nomes de campo / atributo válidos (que se
 
 Neste caso, você pode usar `typing.Dict` (ou simplesmente dict no Python 3.9 e superior):
 
-{* ../../docs_src/extra_models/tutorial005.py hl[1,8] *}
+{* ../../examples/extra_models/tutorial005.py hl[1,8] *}
 
 ## Em resumo
 

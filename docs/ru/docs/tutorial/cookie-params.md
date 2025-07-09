@@ -6,7 +6,7 @@
 
 Сначала импортируйте `Cookie`:
 
-{* ../../docs_src/cookie_params/tutorial001_py310.py hl[1] *}
+{* ../../examples/cookie_params/tutorial001_py310.py hl[1] *}
 
 ## Объявление параметров `Cookie`
 
@@ -14,7 +14,7 @@
 
 Первое значение - это значение по умолчанию, вы можете передать все дополнительные параметры проверки или аннотации:
 
-{* ../../docs_src/cookie_params/tutorial001_py310.py hl[7] *}
+{* ../../examples/cookie_params/tutorial001_py310.py hl[7] *}
 
 /// note | Технические детали
 

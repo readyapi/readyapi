@@ -6,7 +6,7 @@ Do mesmo modo que você pode declarar mais validações e metadados para parâme
 
 Primeiro, importe `Path` de `readyapi`:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_py310.py hl[1] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_py310.py hl[1] *}
 
 ## Declare metadados
 
@@ -14,7 +14,7 @@ Você pode declarar todos os parâmetros da mesma maneira que na `Query`.
 
 Por exemplo para declarar um valor de metadado `title` para o parâmetro de rota `item_id` você pode digitar:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_py310.py hl[8] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_py310.py hl[8] *}
 
 /// note | Nota
 
@@ -42,7 +42,7 @@ Isso não faz diferença para o **ReadyAPI**. Ele vai detectar os parâmetros pe
 
 Então, você pode declarar sua função assim:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial002.py hl[7] *}
 
 ## Ordene os parâmetros de a acordo com sua necessidade, truques
 
@@ -52,7 +52,7 @@ Passe `*`, como o primeiro parâmetro da função.
 
 O Python não vai fazer nada com esse `*`, mas ele vai saber que a partir dali os parâmetros seguintes deverão ser chamados argumentos nomeados (pares chave-valor), também conhecidos como <abbr title="Do inglês: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>. Mesmo que eles não possuam um valor padrão.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial003.py hl[7] *}
 
 ## Validações numéricas: maior que ou igual
 
@@ -60,7 +60,7 @@ Com `Query` e `Path` (e outras que você verá mais tarde) você pode declarar r
 
 Aqui, com `ge=1`, `item_id` precisará ser um número inteiro maior que ("`g`reater than") ou igual ("`e`qual") a 1.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial004.py hl[8] *}
+{* ../../examples/path_params_numeric_validations/tutorial004.py hl[8] *}
 
 ## Validações numéricas: maior que e menor que ou igual
 
@@ -69,7 +69,7 @@ O mesmo se aplica para:
 * `gt`: maior que (`g`reater `t`han)
 * `le`: menor que ou igual (`l`ess than or `e`qual)
 
-{* ../../docs_src/path_params_numeric_validations/tutorial005.py hl[9] *}
+{* ../../examples/path_params_numeric_validations/tutorial005.py hl[9] *}
 
 ## Validações numéricas: valores do tipo float, maior que e menor que
 
@@ -81,7 +81,7 @@ Assim, `0.5` seria um valor válido. Mas `0.0` ou `0` não seria.
 
 E o mesmo para <abbr title="less than"><code>lt</code></abbr>.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial006.py hl[11] *}
+{* ../../examples/path_params_numeric_validations/tutorial006.py hl[11] *}
 
 ## Recapitulando
 

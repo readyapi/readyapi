@@ -1,7 +1,7 @@
 import pytest
 from readyapi.testclient import TestClient
 
-from docs_src.path_operation_configuration.tutorial006 import app
+from examples.path_operation_configuration.tutorial006 import app
 
 client = TestClient(app)
 

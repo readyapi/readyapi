@@ -55,7 +55,7 @@ $ pip install sqldev
 
 导入 `SQLDev` 并创建一个数据库模型：
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] *}
 
 `Hero` 类与 Pydantic 模型非常相似（实际上，从底层来看，它确实*就是一个 Pydantic 模型*）。
 
@@ -77,7 +77,7 @@ SQLDev 的引擎 `engine`（实际上它是一个 SQLAlchemy `engine` ）是用�
 
 您只需构建**一个 `engine`**，来让您的所有代码连接到同一个数据库。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
 使用 `check_same_thread=False` 可以让 ReadyAPI 在不同线程中使用同一个 SQLite 数据库。这很有必要，因为**单个请求**可能会使用**多个线程**（例如在依赖项中）。
 
@@ -87,7 +87,7 @@ SQLDev 的引擎 `engine`（实际上它是一个 SQLAlchemy `engine` ）是用�
 
 然后，我们来添加一个函数，使用 `SQLDev.metadata.create_all(engine)` 为所有*表模型***创建表**。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] *}
 
 ### 创建会话（Session）依赖项
 
@@ -97,13 +97,13 @@ SQLDev 的引擎 `engine`（实际上它是一个 SQLAlchemy `engine` ）是用�
 
 然后我们创建一个 `Annotated` 的依赖项 `SessionDep` 来简化其他也会用到此依赖的代码。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[25:30]  hl[25:27,30] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[25:30]  hl[25:27,30] *}
 
 ### 在启动时创建数据库表
 
 我们会在应用程序启动时创建数据库表。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] *}
 
 此处，在应用程序启动事件中，我们创建了表。
 
@@ -123,7 +123,7 @@ SQLDev 将会拥有封装 Alembic 的迁移工具，但目前您可以直接使�
 
 同样，您可以将其声明为函数的**返回类型**，然后数据的结构就会显示在自动生成的 API 文档界面中。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] *}
 
 </details>
 
@@ -133,19 +133,19 @@ SQLDev 将会拥有封装 Alembic 的迁移工具，但目前您可以直接使�
 
 我们可以使用 `select()` 从数据库中**读取** `Hero` 类，并利用 `limit` 和 `offset` 来对结果进行分页。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] *}
 
 ### 读取单个 Hero
 
 我们可以**读取**单个 `Hero` 。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] *}
 
 ### 删除单个 Hero
 
 我们也可以**删除**单个 `Hero` 。
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] *}
 
 ### 运行应用程序
 
@@ -194,7 +194,7 @@ $ readyapi dev main.py
 * `name`
 * `age`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] *}
 
 #### `Hero` - *表模型*
 
@@ -210,7 +210,7 @@ $ readyapi dev main.py
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] *}
 
 #### `HeroPublic` - 公共*数据模型*
 
@@ -237,7 +237,7 @@ $ readyapi dev main.py
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] *}
 
 #### `HeroCreate` - 用于创建 hero 的*数据模型*
 
@@ -261,7 +261,7 @@ $ readyapi dev main.py
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] *}
 
 #### `HeroUpdate` - 用于更新 hero 的*数据模型*
 
@@ -279,7 +279,7 @@ $ readyapi dev main.py
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] *}
 
 ### 使用 `HeroCreate` 创建并返回 `HeroPublic`
 
@@ -291,7 +291,7 @@ $ readyapi dev main.py
 
 然后我们将与函数中相同的*表模型* `Hero` 原样返回。但是由于我们使用 `HeroPublic` *数据模型*声明了 `response_model` ，**ReadyAPI** 会使用 `HeroPublic` 来验证和序列化数据。
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
 /// tip
 
@@ -307,13 +307,13 @@ $ readyapi dev main.py
 
 我们可以像之前一样**读取** `Hero` 。同样，使用 `response_model=list[HeroPublic]` 确保正确地验证和序列化数据。
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] *}
 
 ### 用 `HeroPublic` 读取单个 Hero
 
 我们可以**读取**单个 `hero` 。
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] *}
 
 ### 用 `HeroUpdate` 更新单个 Hero
 
@@ -323,7 +323,7 @@ $ readyapi dev main.py
 
 然后我们会使用 `hero_db.sqldev_update(hero_data)` ，来利用 `hero_data` 的数据更新 `hero_db` 。
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] *}
 
 ### （又一次）删除单个 Hero
 
@@ -331,7 +331,7 @@ $ readyapi dev main.py
 
 我们不会满足在这一部分中重构一切的愿望。😅
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] *}
 
 ### （又一次）运行应用程序
 

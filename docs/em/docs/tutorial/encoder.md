@@ -20,7 +20,7 @@
 
 ⚫️ 📨 🎚, 💖 Pydantic 🏷, &amp; 📨 🎻 🔗 ⏬:
 
-{* ../../docs_src/encoder/tutorial001.py hl[5,22] *}
+{* ../../examples/encoder/tutorial001.py hl[5,22] *}
 
 👉 🖼, ⚫️ 🔜 🗜 Pydantic 🏷 `dict`, &amp; `datetime` `str`.
 

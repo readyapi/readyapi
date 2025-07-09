@@ -57,13 +57,13 @@ app.add_middleware(UnicornMiddleware, some_config="rainbow")
 
 `http` 또는 `ws`로 들어오는 모든 요청은 대신 보안 체계로 리디렉션됩니다.
 
-{* ../../docs_src/advanced_middleware/tutorial001.py hl[2,6] *}
+{* ../../examples/advanced_middleware/tutorial001.py hl[2,6] *}
 
 ## `TrustedHostMiddleware`
 
 HTTP 호스트 헤더 공격을 방지하기 위해 모든 수신 요청에 올바르게 설정된 `Host` 헤더를 갖도록 강제합니다.
 
-{* ../../docs_src/advanced_middleware/tutorial002.py hl[2,6:8] *}
+{* ../../examples/advanced_middleware/tutorial002.py hl[2,6:8] *}
 
 다음 인수가 지원됩니다:
 
@@ -77,7 +77,7 @@ HTTP 호스트 헤더 공격을 방지하기 위해 모든 수신 요청에 올�
 
 미들웨어는 표준 응답과 스트리밍 응답을 모두 처리합니다.
 
-{* ../../docs_src/advanced_middleware/tutorial003.py hl[2,6] *}
+{* ../../examples/advanced_middleware/tutorial003.py hl[2,6] *}
 
 지원되는 인수는 다음과 같습니다:
 

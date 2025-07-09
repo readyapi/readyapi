@@ -14,7 +14,7 @@
 
 在 **Pydantic 模型**中声明所需的 **header 参数**，然后将参数声明为 `Header` :
 
-{* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
+{* ../../examples/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
 **ReadyAPI** 将从请求中接收到的 **headers** 中**提取**出**每个字段**的数据，并提供您定义的 Pydantic 模型。
 
@@ -32,7 +32,7 @@
 
 您可以使用 Pydantic 的模型配置来禁止（ `forbid` ）任何额外（ `extra` ）字段：
 
-{* ../../docs_src/header_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/header_param_models/tutorial002_an_py310.py hl[10] *}
 
 如果客户尝试发送一些**额外的 headers**，他们将收到**错误**响应。
 

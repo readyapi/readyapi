@@ -14,13 +14,13 @@
 
 🗄 `Form` ⚪️➡️ `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[1] *}
+{* ../../examples/request_forms/tutorial001.py hl[1] *}
 
 ## 🔬 `Form` 🔢
 
 ✍ 📨 🔢 🎏 🌌 👆 🔜 `Body` ⚖️ `Query`:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[7] *}
+{* ../../examples/request_forms/tutorial001.py hl[7] *}
 
 🖼, 1️⃣ 🌌 Oauth2️⃣ 🔧 💪 ⚙️ (🤙 "🔐 💧") ⚫️ ✔ 📨 `username` &amp; `password` 📨 🏑.
 

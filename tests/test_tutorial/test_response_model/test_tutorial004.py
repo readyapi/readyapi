@@ -16,7 +16,7 @@ from ...utils import needs_py39, needs_py310
     ],
 )
 def get_client(request: pytest.FixtureRequest):
-    mod = importlib.import_module(f"docs_src.response_model.{request.param}")
+    mod = importlib.import_module(f"examples.response_model.{request.param}")
 
     client = TestClient(mod.app)
     return client

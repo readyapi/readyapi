@@ -12,7 +12,7 @@ Ardından WSGI (örneğin Flask) uygulamanızı middleware ile sarmalayın.
 
 Son olarak da bir yol altında bağlama işlemini gerçekleştirin.
 
-{* ../../docs_src/wsgi/tutorial001.py hl[2:3,23] *}
+{* ../../examples/wsgi/tutorial001.py hl[2:3,23] *}
 
 ## Kontrol Edelim
 

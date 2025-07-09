@@ -25,7 +25,7 @@
 
 ### 🗄 `HTTPException`
 
-{* ../../docs_src/handling_errors/tutorial001.py hl[1] *}
+{* ../../examples/handling_errors/tutorial001.py hl[1] *}
 
 ### 🤚 `HTTPException` 👆 📟
 
@@ -39,7 +39,7 @@
 
 👉 🖼, 🕐❔ 👩‍💻 📨 🏬 🆔 👈 🚫 🔀, 🤚 ⚠ ⏮️ 👔 📟 `404`:
 
-{* ../../docs_src/handling_errors/tutorial001.py hl[11] *}
+{* ../../examples/handling_errors/tutorial001.py hl[11] *}
 
 ### 📉 📨
 
@@ -77,7 +77,7 @@
 
 ✋️ 💼 👆 💪 ⚫️ 🏧 😐, 👆 💪 🚮 🛃 🎚:
 
-{* ../../docs_src/handling_errors/tutorial002.py hl[14] *}
+{* ../../examples/handling_errors/tutorial002.py hl[14] *}
 
 ## ❎ 🛃 ⚠ 🐕‍🦺
 
@@ -89,7 +89,7 @@
 
 👆 💪 🚮 🛃 ⚠ 🐕‍🦺 ⏮️ `@app.exception_handler()`:
 
-{* ../../docs_src/handling_errors/tutorial003.py hl[5:7,13:18,24] *}
+{* ../../examples/handling_errors/tutorial003.py hl[5:7,13:18,24] *}
 
 📥, 🚥 👆 📨 `/unicorns/yolo`, *➡ 🛠️* 🔜 `raise` `UnicornException`.
 
@@ -127,7 +127,7 @@
 
 ⚠ 🐕‍🦺 🔜 📨 `Request` &amp; ⚠.
 
-{* ../../docs_src/handling_errors/tutorial004.py hl[2,14:16] *}
+{* ../../examples/handling_errors/tutorial004.py hl[2,14:16] *}
 
 🔜, 🚥 👆 🚶 `/items/foo`, ↩️ 💆‍♂ 🔢 🎻 ❌ ⏮️:
 
@@ -178,7 +178,7 @@ path -> item_id
 
 🖼, 👆 💪 💚 📨 ✅ ✍ 📨 ↩️ 🎻 👫 ❌:
 
-{* ../../docs_src/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
+{* ../../examples/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
 
 /// note | 📡 ℹ
 
@@ -194,7 +194,7 @@ path -> item_id
 
 👆 💪 ⚙️ ⚫️ ⏪ 🛠️ 👆 📱 🕹 💪 &amp; ℹ ⚫️, 📨 ⚫️ 👩‍💻, ♒️.
 
-{* ../../docs_src/handling_errors/tutorial005.py hl[14] *}
+{* ../../examples/handling_errors/tutorial005.py hl[14] *}
 
 🔜 🔄 📨 ❌ 🏬 💖:
 
@@ -252,6 +252,6 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 🚥 👆 💚 ⚙️ ⚠ ⤴️ ⏮️ 🎏 🔢 ⚠ 🐕‍🦺 ⚪️➡️ **ReadyAPI**, 👆 💪 🗄 &amp; 🏤-⚙️ 🔢 ⚠ 🐕‍🦺 ⚪️➡️ `readyapi.exception_handlers`:
 
-{* ../../docs_src/handling_errors/tutorial006.py hl[2:5,15,21] *}
+{* ../../examples/handling_errors/tutorial006.py hl[2:5,15,21] *}
 
 👉 🖼 👆 `print`😅 ❌ ⏮️ 📶 🎨 📧, ✋️ 👆 🤚 💭. 👆 💪 ⚙️ ⚠ &amp; ⤴️ 🏤-⚙️ 🔢 ⚠ 🐕‍🦺.

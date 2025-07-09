@@ -9,9 +9,9 @@ def test_main():
         shutil.rmtree("./static")
     if os.path.isdir("./templates"):  # pragma: nocover
         shutil.rmtree("./templates")
-    shutil.copytree("./docs_src/templates/templates/", "./templates")
-    shutil.copytree("./docs_src/templates/static/", "./static")
-    from docs_src.templates.tutorial001 import app
+    shutil.copytree("./examples/templates/templates/", "./templates")
+    shutil.copytree("./examples/templates/static/", "./static")
+    from examples.templates.tutorial001 import app
 
     client = TestClient(app)
     response = client.get("/items/foo")

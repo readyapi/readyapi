@@ -26,7 +26,7 @@ Cada uno de esos `dict`s de response puede tener una clave `model`, conteniendo 
 
 Por ejemplo, para declarar otro response con un código de estado `404` y un modelo Pydantic `Message`, puedes escribir:
 
-{* ../../docs_src/additional_responses/tutorial001.py hl[18,22] *}
+{* ../../examples/additional_responses/tutorial001.py hl[18,22] *}
 
 /// note | Nota
 
@@ -175,7 +175,7 @@ Puedes usar este mismo parámetro `responses` para agregar diferentes media type
 
 Por ejemplo, puedes agregar un media type adicional de `image/png`, declarando que tu *path operation* puede devolver un objeto JSON (con media type `application/json`) o una imagen PNG:
 
-{* ../../docs_src/additional_responses/tutorial002.py hl[19:24,28] *}
+{* ../../examples/additional_responses/tutorial002.py hl[19:24,28] *}
 
 /// note | Nota
 
@@ -203,7 +203,7 @@ Por ejemplo, puedes declarar un response con un código de estado `404` que usa 
 
 Y un response con un código de estado `200` que usa tu `response_model`, pero incluye un `example` personalizado:
 
-{* ../../docs_src/additional_responses/tutorial003.py hl[20:31] *}
+{* ../../examples/additional_responses/tutorial003.py hl[20:31] *}
 
 Todo se combinará e incluirá en tu OpenAPI, y se mostrará en la documentación de la API:
 
@@ -237,7 +237,7 @@ Puedes usar esa técnica para reutilizar algunos responses predefinidos en tus *
 
 Por ejemplo:
 
-{* ../../docs_src/additional_responses/tutorial004.py hl[13:17,26] *}
+{* ../../examples/additional_responses/tutorial004.py hl[13:17,26] *}
 
 ## Más información sobre responses OpenAPI
 

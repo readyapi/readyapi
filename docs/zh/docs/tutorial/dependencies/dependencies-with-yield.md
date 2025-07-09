@@ -29,15 +29,15 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 在发送响应之前，只会执行 `yield` 语句及之前的代码：
 
-{* ../../docs_src/dependencies/tutorial007.py hl[2:4] *}
+{* ../../examples/dependencies/tutorial007.py hl[2:4] *}
 
 生成的值会注入到 *路由函数* 和其他依赖项中：
 
-{* ../../docs_src/dependencies/tutorial007.py hl[4] *}
+{* ../../examples/dependencies/tutorial007.py hl[4] *}
 
 `yield` 语句后面的代码会在创建响应后，发送响应前执行：
 
-{* ../../docs_src/dependencies/tutorial007.py hl[5:6] *}
+{* ../../examples/dependencies/tutorial007.py hl[5:6] *}
 
 /// tip | 提示
 
@@ -57,7 +57,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 同样，你也可以使用 `finally` 来确保退出步骤得到执行，无论是否存在异常。
 
-{* ../../docs_src/dependencies/tutorial007.py hl[3,5] *}
+{* ../../examples/dependencies/tutorial007.py hl[3,5] *}
 ## 使用 `yield` 的子依赖项
 
 你可以声明任意数量和层级的树状依赖，而且它们中的任何一个或所有的都可以使用 `yield`。
@@ -66,7 +66,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 例如，`dependency_c` 可以依赖于 `dependency_b`，而 `dependency_b` 则依赖于 `dependency_a`。
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
 
 所有这些依赖都可以使用 `yield`。
 
@@ -74,7 +74,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 而 `dependency_b` 反过来则需要 `dependency_a`（此处称为 `dep_a` ）的值在其退出代码中可用。
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
 
 同样，你可以混合使用带有 `yield` 或 `return` 的依赖。
 
@@ -106,7 +106,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 ///
 
-{* ../../docs_src/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
+{* ../../examples/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
 
 你还可以创建一个 [自定义异常处理器](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank} 用于捕获异常（同时也可以抛出另一个 `HTTPException`）。
 
@@ -114,7 +114,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 如果你在包含 `yield` 的依赖项中使用 `except` 捕获了一个异常，然后你没有重新抛出该异常（或抛出一个新异常），与在普通的Python代码中相同，ReadyAPI不会注意到发生了异常。
 
-{* ../../docs_src/dependencies/tutorial008c_an_py39.py hl[15:16] *}
+{* ../../examples/dependencies/tutorial008c_an_py39.py hl[15:16] *}
 
 在示例代码的情况下，客户端将会收到 *HTTP 500 Internal Server Error* 的响应，因为我们没有抛出 `HTTPException` 或者类似的异常，并且服务器也 **不会有任何日志** 或者其他提示来告诉我们错误是什么。😱
 
@@ -124,7 +124,7 @@ ReadyAPI支持在完成后执行一些<abbr title='有时也被称为"退出"("e
 
 你可以使用 `raise` 再次抛出捕获到的异常。
 
-{* ../../docs_src/dependencies/tutorial008d_an_py39.py hl[17] *}
+{* ../../examples/dependencies/tutorial008d_an_py39.py hl[17] *}
 
 现在客户端同样会得到 *HTTP 500 Internal Server Error* 响应，但是服务器日志会记录下我们自定义的 `InternalError`。
 
@@ -251,7 +251,7 @@ with open("./somefile.txt") as f:
 
 你也可以在 **ReadyAPI** 的 `yield` 依赖项中通过 `with` 或者 `async with` 语句来使用它们：
 
-{* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
+{* ../../examples/dependencies/tutorial010.py hl[1:9,13] *}
 
 /// tip | 提示
 

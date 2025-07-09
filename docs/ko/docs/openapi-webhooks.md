@@ -32,7 +32,7 @@ API **사용자**에게 특정 **이벤트**가 발생할 때 *그들*의 앱(�
 
 **ReadyAPI** 애플리케이션을 만들 때, `webhooks` 속성을 사용하여 *웹훅*을 정의할 수 있습니다. 이는 `@app.webhooks.post()`와 같은 방식으로 *경로(path) 작업*을 정의하는 것과 비슷합니다.
 
-{* ../../docs_src/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
+{* ../../examples/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
 
 이렇게 정의한 웹훅은 **OpenAPI** 스키마와 자동 **문서화 UI**에 표시됩니다.
 

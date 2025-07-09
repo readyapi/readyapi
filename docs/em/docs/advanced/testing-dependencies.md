@@ -28,7 +28,7 @@
 
 &amp; ⤴️ **ReadyAPI** 🔜 🤙 👈 🔐 ↩️ ⏮️ 🔗.
 
-{* ../../docs_src/dependency_testing/tutorial001.py hl[28:29,32] *}
+{* ../../examples/dependency_testing/tutorial001.py hl[28:29,32] *}
 
 /// tip
 

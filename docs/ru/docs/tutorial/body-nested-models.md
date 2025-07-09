@@ -6,7 +6,7 @@
 
 Вы можете определять атрибут как подтип. Например, тип `list` в Python:
 
-{* ../../docs_src/body_nested_models/tutorial001_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial001_py310.py hl[12] *}
 
 Это приведёт к тому, что обьект `tags` преобразуется в список, несмотря на то что тип его элементов не объявлен.
 
@@ -20,7 +20,7 @@
 
 Но в версиях Python до 3.9 (начиная с 3.6) сначала вам необходимо импортировать `List` из стандартного модуля `typing` в Python:
 
-{* ../../docs_src/body_nested_models/tutorial002.py hl[1] *}
+{* ../../examples/body_nested_models/tutorial002.py hl[1] *}
 
 ### Объявление `list` с указанием типов для вложенных элементов
 
@@ -49,7 +49,7 @@ my_list: List[str]
 
 Таким образом, в нашем примере мы можем явно указать тип данных для поля `tags` как "список строк":
 
-{* ../../docs_src/body_nested_models/tutorial002_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial002_py310.py hl[12] *}
 
 ## Типы множеств
 
@@ -59,7 +59,7 @@ my_list: List[str]
 
 Тогда мы можем обьявить поле `tags` как множество строк:
 
-{* ../../docs_src/body_nested_models/tutorial003_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial003_py310.py hl[12] *}
 
 С помощью этого, даже если вы получите запрос с повторяющимися данными, они будут преобразованы в множество уникальных элементов.
 
@@ -81,13 +81,13 @@ my_list: List[str]
 
 Например, мы можем определить модель `Image`:
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[7:9] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[7:9] *}
 
 ### Использование вложенной модели в качестве типа
 
 Также мы можем использовать эту модель как тип атрибута:
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[18] *}
 
 Это означает, что **ReadyAPI** будет ожидать тело запроса, аналогичное этому:
 
@@ -120,7 +120,7 @@ my_list: List[str]
 
 Например, так как в модели `Image` у нас есть поле `url`, то мы можем объявить его как тип `HttpUrl` из модуля Pydantic вместо типа `str`:
 
-{* ../../docs_src/body_nested_models/tutorial005_py310.py hl[2,8] *}
+{* ../../examples/body_nested_models/tutorial005_py310.py hl[2,8] *}
 
 Строка будет проверена на соответствие допустимому URL-адресу и задокументирована в JSON схему / OpenAPI.
 
@@ -128,7 +128,7 @@ my_list: List[str]
 
 Вы также можете использовать модели Pydantic в качестве типов вложенных  в `list`, `set` и т.д:
 
-{* ../../docs_src/body_nested_models/tutorial006_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial006_py310.py hl[18] *}
 
 Такая реализация будет ожидать (конвертировать, валидировать, документировать и т.д) JSON-содержимое в следующем формате:
 
@@ -166,7 +166,7 @@ my_list: List[str]
 
 Вы можете определять модели с произвольным уровнем вложенности:
 
-{* ../../docs_src/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
+{* ../../examples/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
 
 /// info | Информация
 
@@ -190,7 +190,7 @@ images: list[Image]
 
 например так:
 
-{* ../../docs_src/body_nested_models/tutorial008_py39.py hl[13] *}
+{* ../../examples/body_nested_models/tutorial008_py39.py hl[13] *}
 
 ## Универсальная поддержка редактора
 
@@ -220,7 +220,7 @@ images: list[Image]
 
 В этом случае вы принимаете `dict`, пока у него есть ключи типа `int` со значениями типа `float`:
 
-{* ../../docs_src/body_nested_models/tutorial009_py39.py hl[7] *}
+{* ../../examples/body_nested_models/tutorial009_py39.py hl[7] *}
 
 /// tip | Совет
 

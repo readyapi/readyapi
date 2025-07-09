@@ -14,7 +14,7 @@ ReadyAPI 從 `0.115.0` 版本開始支援這個特性。🤓
 
 在一個 **Pydantic 模型**中聲明你需要的**查詢參數**，然後將參數聲明為 `Query`：
 
-{* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
+{* ../../examples/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
 **ReadyAPI** 將會從請求的**查詢參數**中**提取**出**每個欄位**的資料，並將其提供給你定義的 Pydantic 模型。
 
@@ -32,7 +32,7 @@ ReadyAPI 從 `0.115.0` 版本開始支援這個特性。🤓
 
 你可以使用 Pydantic 的模型設定來 `forbid`（禁止）任何 `extra`（額外）欄位：
 
-{* ../../docs_src/query_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/query_param_models/tutorial002_an_py310.py hl[10] *}
 
 如果客戶端嘗試在**查詢參數**中發送一些**額外的**資料，他們將會收到一個**錯誤**回應。
 

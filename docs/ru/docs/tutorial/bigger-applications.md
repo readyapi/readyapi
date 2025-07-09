@@ -87,7 +87,7 @@ from app.routers import items
 Точно также, как и в случае с классом `ReadyAPI`, вам нужно импортировать и создать объект класса `APIRouter`.
 
 ```Python hl_lines="1  3" title="app/routers/users.py"
-{!../../docs_src/bigger_applications/app/routers/users.py!}
+{!../../examples/bigger_applications/app/routers/users.py!}
 ```
 
 ### Создание *эндпоинтов* с помощью `APIRouter`
@@ -95,7 +95,7 @@ from app.routers import items
 В дальнейшем используйте `APIRouter` для объявления *эндпоинтов*, точно также, как вы используете класс `ReadyAPI`:
 
 ```Python hl_lines="6  11  16" title="app/routers/users.py"
-{!../../docs_src/bigger_applications/app/routers/users.py!}
+{!../../examples/bigger_applications/app/routers/users.py!}
 ```
 
 Вы можете думать об `APIRouter` как об "уменьшенной версии" класса ReadyAPI`.
@@ -123,7 +123,7 @@ from app.routers import items
 //// tab | Python 3.9+
 
 ```Python hl_lines="3  6-8" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app_an_py39/dependencies.py!}
+{!> ../../examples/bigger_applications/app_an_py39/dependencies.py!}
 ```
 
 ////
@@ -131,7 +131,7 @@ from app.routers import items
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  5-7" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app_an/dependencies.py!}
+{!> ../../examples/bigger_applications/app_an/dependencies.py!}
 ```
 
 ////
@@ -145,7 +145,7 @@ from app.routers import items
 ///
 
 ```Python hl_lines="1  4-6" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app/dependencies.py!}
+{!> ../../examples/bigger_applications/app/dependencies.py!}
 ```
 
 ////
@@ -182,7 +182,7 @@ from app.routers import items
 мы добавим их в `APIRouter`.
 
 ```Python hl_lines="5-10  16  21" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 Так как каждый *эндпоинт* начинается с символа `/`:
@@ -243,7 +243,7 @@ async def read_item(item_id: str):
 Мы используем операцию относительного импорта `..` для импорта зависимости:
 
 ```Python hl_lines="3" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 #### Как работает относительный импорт?
@@ -315,7 +315,7 @@ from ...dependencies import get_token_header
 Но помимо этого мы можем добавить новые теги для каждого отдельного *эндпоинта*, а также некоторые дополнительные ответы (`responses`), характерные для данного *эндпоинта*:
 
 ```Python hl_lines="30-31" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 /// tip | Подсказка
@@ -343,7 +343,7 @@ from ...dependencies import get_token_header
 Мы даже можем объявить глобальные зависимости [global dependencies](dependencies/global-dependencies.md){.internal-link target=_blank}, которые будут объединены с зависимостями для каждого отдельного маршрутизатора:
 
 ```Python hl_lines="1  3  7" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 ### Импорт `APIRouter`
@@ -351,7 +351,7 @@ from ...dependencies import get_token_header
 Теперь мы импортируем другие суб-модули, содержащие `APIRouter`:
 
 ```Python hl_lines="4-5" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 Так как файлы `app/routers/users.py` и `app/routers/items.py` являются суб-модулями одного и того же Python-пакета `app`, то мы сможем их импортировать, воспользовавшись операцией относительного импорта `.`.
@@ -416,7 +416,7 @@ from .routers.users import router
 Поэтому, для того чтобы использовать обе эти переменные в одном файле, мы импортировали соответствующие суб-модули:
 
 ```Python hl_lines="5" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 ### Подключение маршрутизаторов (`APIRouter`) для `users` и для `items`
@@ -424,7 +424,7 @@ from .routers.users import router
 Давайте подключим маршрутизаторы (`router`) из суб-модулей `users` и `items`:
 
 ```Python hl_lines="10-11" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 /// info | Примечание
@@ -467,7 +467,7 @@ from .routers.users import router
 то мы не можем модифицировать его, добавляя префиксы (`prefix`), зависимости (`dependencies`), теги (`tags`), и т.д. непосредственно в `APIRouter`:
 
 ```Python hl_lines="3" title="app/internal/admin.py"
-{!../../docs_src/bigger_applications/app/internal/admin.py!}
+{!../../examples/bigger_applications/app/internal/admin.py!}
 ```
 
 Но, несмотря на это, мы хотим использовать кастомный префикс (`prefix`) для подключенного маршрутизатора (`APIRouter`), в результате чего, каждая *операция пути* будет начинаться с `/admin`. Также мы хотим защитить наш маршрутизатор с помощью зависимостей, созданных для нашего проекта. И ещё мы хотим включить теги (`tags`) и ответы (`responses`).
@@ -475,7 +475,7 @@ from .routers.users import router
 Мы можем применить все вышеперечисленные настройки, не изменяя начальный `APIRouter`. Нам всего лишь нужно передать нужные параметры в `app.include_router()`.
 
 ```Python hl_lines="14-17" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 Таким образом, оригинальный `APIRouter` не будет модифицирован, и мы сможем использовать файл `app/internal/admin.py` сразу в нескольких проектах организации.
@@ -498,7 +498,7 @@ from .routers.users import router
 Здесь мы это делаем ... просто, чтобы показать, что это возможно 🤷:
 
 ```Python hl_lines="21-23" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 и это будет работать корректно вместе с другими *эндпоинтами*, добавленными с помощью `app.include_router()`.

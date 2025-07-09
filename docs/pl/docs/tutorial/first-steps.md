@@ -2,7 +2,7 @@
 
 Najprostszy plik ReadyAPI może wyglądać tak:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Skopiuj to do pliku `main.py`.
 
@@ -131,7 +131,7 @@ Możesz go również użyć do automatycznego generowania kodu dla klientów, kt
 
 ### Krok 1: zaimportuj `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` jest klasą, która zapewnia wszystkie funkcjonalności Twojego API.
 
@@ -145,7 +145,7 @@ Oznacza to, że możesz korzystać ze wszystkich funkcjonalności <a href="https
 
 ### Krok 2: utwórz instancję `ReadyAPI`
 
-{*../../docs_src/first_steps/tutorial001.py hl[3] *}
+{*../../examples/first_steps/tutorial001.py hl[3] *}
 
 Zmienna `app` będzie tutaj "instancją" klasy `ReadyAPI`.
 
@@ -165,7 +165,7 @@ $ uvicorn main:app --reload
 
 Jeśli stworzysz swoją aplikację, np.:
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 I umieścisz to w pliku `main.py`, to będziesz mógł tak wywołać `uvicorn`:
 
@@ -242,7 +242,7 @@ Będziemy je również nazywali "**operacjami**".
 
 #### Zdefiniuj *dekorator operacji na ścieżce*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 `@app.get("/")` mówi **ReadyAPI** że funkcja poniżej odpowiada za obsługę żądań, które trafiają do:
 
@@ -296,7 +296,7 @@ To jest nasza "**funkcja obsługująca ścieżkę**":
 * **operacja**: to `get`.
 * **funkcja**: to funkcja poniżej "dekoratora" (poniżej `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Jest to funkcja Python.
 
@@ -308,7 +308,7 @@ W tym przypadku jest to funkcja "asynchroniczna".
 
 Możesz również zdefiniować to jako normalną funkcję zamiast `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note
 
@@ -318,7 +318,7 @@ Jeśli nie znasz różnicy, sprawdź [Async: *"In a hurry?"*](../async.md#in-a-h
 
 ### Krok 5: zwróć zawartość
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Możesz zwrócić `dict`, `list`, pojedynczą wartość jako `str`, `int`, itp.
 

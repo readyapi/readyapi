@@ -15,7 +15,7 @@ from ...utils import needs_py39, needs_py310, needs_pydanticv1, needs_pydanticv2
     ],
 )
 def get_client(request: pytest.FixtureRequest):
-    mod = importlib.import_module(f"docs_src.body_updates.{request.param}")
+    mod = importlib.import_module(f"examples.body_updates.{request.param}")
 
     client = TestClient(mod.app)
     return client

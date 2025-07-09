@@ -149,7 +149,7 @@ Many of the tutorials have blocks of code.
 
 In most of the cases, these blocks of code are actual complete applications that can be run as is.
 
-In fact, those blocks of code are not written inside the Markdown, they are Python files in the `./docs_src/` directory.
+In fact, those blocks of code are not written inside the Markdown, they are Python files in the `./examples/` directory.
 
 And those Python files are included/injected in the documentation when generating the site.
 
@@ -375,7 +375,7 @@ Serving at: http://127.0.0.1:8008
 
 #### Translation specific tips and guidelines
 
-* Translate only the Markdown documents (`.md`). Do not translate the code examples at `./docs_src`.
+* Translate only the Markdown documents (`.md`). Do not translate the code examples at `./examples`.
 
 * In code blocks within the Markdown document, translate comments (`# a comment`), but leave the rest unchanged.
 

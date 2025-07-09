@@ -32,7 +32,7 @@ Existem também várias outras empresas que oferecem serviços semelhantes que v
 
 Vamos começar com um aplicativo **ReadyAPI** simples:
 
-{* ../../docs_src/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
+{* ../../examples/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
 
 Note que as *operações de rota* definem os modelos que usam para o corpo da requisição e o corpo da resposta, usando os modelos `Item` e `ResponseMessage`.
 
@@ -137,7 +137,7 @@ Em muitos casos seu app ReadyAPI será maior, e você provavelmente usará tags 
 
 Por exemplo, você poderia ter uma seção para **items** e outra seção para **users**, e elas poderiam ser separadas por tags:
 
-{* ../../docs_src/generate_clients/tutorial002_py39.py hl[21,26,34] *}
+{* ../../examples/generate_clients/tutorial002_py39.py hl[21,26,34] *}
 
 ### Gerar um Cliente TypeScript com Tags
 
@@ -184,7 +184,7 @@ Por exemplo, aqui está usando a primeira tag (você provavelmente terá apenas 
 
 Você pode então passar essa função personalizada para o **ReadyAPI** como o parâmetro `generate_unique_id_function`:
 
-{* ../../docs_src/generate_clients/tutorial003_py39.py hl[6:7,10] *}
+{* ../../examples/generate_clients/tutorial003_py39.py hl[6:7,10] *}
 
 ### Gerar um Cliente TypeScript com IDs de Operação Personalizados
 
@@ -206,12 +206,12 @@ Mas para o cliente gerado, poderíamos **modificar** os IDs de operação do Ope
 
 Poderíamos baixar o JSON do OpenAPI para um arquivo `openapi.json` e então poderíamos **remover essa tag prefixada** com um script como este:
 
-{* ../../docs_src/generate_clients/tutorial004.py *}
+{* ../../examples/generate_clients/tutorial004.py *}
 
 //// tab | Node.js
 
 ```Javascript
-{!> ../../docs_src/generate_clients/tutorial004.js!}
+{!> ../../examples/generate_clients/tutorial004.js!}
 ```
 
 ////

@@ -34,7 +34,7 @@ Por ejemplo, no puedes poner un modelo de Pydantic en un `JSONResponse` sin prim
 
 Para esos casos, puedes usar el `jsonable_encoder` para convertir tus datos antes de pasarlos a un response:
 
-{* ../../docs_src/response_directly/tutorial001.py hl[6:7,21:22] *}
+{* ../../examples/response_directly/tutorial001.py hl[6:7,21:22] *}
 
 /// note | Nota
 
@@ -54,7 +54,7 @@ Digamos que quieres devolver un response en <a href="https://en.wikipedia.org/wi
 
 Podrías poner tu contenido XML en un string, poner eso en un `Response`, y devolverlo:
 
-{* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
+{* ../../examples/response_directly/tutorial002.py hl[1,18] *}
 
 ## Notas
 

@@ -14,13 +14,13 @@ Formları kullanmak için öncelikle <a href="https://github.com/Kludex/python-m
 
 `Form` sınıfını `readyapi`'den projenize dahil edin:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## `Form` Parametrelerini Tanımlayın
 
 Form parametrelerini `Body` veya `Query` için yaptığınız gibi oluşturun:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 Örneğin, OAuth2 spesifikasyonunun kullanılabileceği ("şifre akışı" olarak adlandırılan) yollardan birinde, form alanları olarak <abbr title="Kullanıcı Adı: Username">"username"</abbr> ve <abbr title="Şifre: Password">"password"</abbr> gönderilmesi gerekir.
 

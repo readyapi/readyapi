@@ -6,7 +6,7 @@
 
 まず、`Header`をインポートします:
 
-{* ../../docs_src/header_params/tutorial001.py hl[3] *}
+{* ../../examples/header_params/tutorial001.py hl[3] *}
 
 ## `Header`のパラメータの宣言
 
@@ -14,7 +14,7 @@
 
 最初の値がデフォルト値で、追加の検証パラメータや注釈パラメータをすべて渡すことができます。
 
-{* ../../docs_src/header_params/tutorial001.py hl[9] *}
+{* ../../examples/header_params/tutorial001.py hl[9] *}
 
 /// note | 技術詳細
 
@@ -46,7 +46,7 @@
 
 もしなんらかの理由でアンダースコアからハイフンへの自動変換を無効にする必要がある場合は、`Header`の`convert_underscores`に`False`を設定してください:
 
-{* ../../docs_src/header_params/tutorial002.py hl[9] *}
+{* ../../examples/header_params/tutorial002.py hl[9] *}
 
 /// warning | 注意
 
@@ -64,7 +64,7 @@
 
 例えば、複数回出現する可能性のある`X-Token`のヘッダを定義するには、以下のように書くことができます:
 
-{* ../../docs_src/header_params/tutorial003.py hl[9] *}
+{* ../../examples/header_params/tutorial003.py hl[9] *}
 
 もし、その*path operation*で通信する場合は、次のように２つのHTTPヘッダーを送信します:
 

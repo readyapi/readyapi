@@ -31,7 +31,7 @@ Vamos iniciar com um exemplo e ver isso detalhadamente.
 
 Nós criamos uma função assíncrona chamada `lifespan()` com `yield` como este:
 
-{* ../../docs_src/events/tutorial003.py hl[16,19] *}
+{* ../../examples/events/tutorial003.py hl[16,19] *}
 
 Aqui nós estamos simulando a *inicialização* custosa do carregamento do modelo colocando a (falsa) função de modelo no dicionário com modelos de _machine learning_ antes do `yield`. Este código será executado **antes** da aplicação **começar a receber requisições**, durante a *inicialização*.
 
@@ -49,7 +49,7 @@ Talvez você precise inicializar uma nova versão, ou apenas cansou de executá-
 
 A primeira coisa a notar, é que estamos definindo uma função assíncrona com `yield`. Isso é muito semelhante à Dependências com `yield`.
 
-{* ../../docs_src/events/tutorial003.py hl[14:19] *}
+{* ../../examples/events/tutorial003.py hl[14:19] *}
 
 A primeira parte da função, antes do `yield`, será  executada **antes** da aplicação inicializar.
 
@@ -61,7 +61,7 @@ Se você verificar, a função está decorada com um `@asynccontextmanager`.
 
 Que converte a função em algo chamado de "**Gerenciador de Contexto Assíncrono**".
 
-{* ../../docs_src/events/tutorial003.py hl[1,13] *}
+{* ../../examples/events/tutorial003.py hl[1,13] *}
 
 Um **gerenciador de contexto** em Python é algo que você pode usar em uma declaração `with`, por exemplo, `open()` pode ser usado como um gerenciador de contexto:
 
@@ -83,7 +83,7 @@ No nosso exemplo de código acima, nós não usamos ele diretamente, mas nós pa
 
 O parâmetro `lifespan` da aplicação `ReadyAPI` usa um **Gerenciador de Contexto Assíncrono**, então nós podemos passar nosso novo gerenciador de contexto assíncrono do `lifespan` para ele.
 
-{* ../../docs_src/events/tutorial003.py hl[22] *}
+{* ../../examples/events/tutorial003.py hl[22] *}
 
 ## Eventos alternativos (deprecados)
 
@@ -105,7 +105,7 @@ Essas funções podem ser declaradas com `async def` ou `def` normal.
 
 Para adicionar uma função que deve rodar antes da aplicação iniciar, declare-a com o evento `"startup"`:
 
-{* ../../docs_src/events/tutorial001.py hl[8] *}
+{* ../../examples/events/tutorial001.py hl[8] *}
 
 Nesse caso, a função de manipulação de evento `startup` irá inicializar os itens do "banco de dados" (só um `dict`) com alguns valores.
 
@@ -117,7 +117,7 @@ E sua aplicação não irá começar a receber requisições até que todos os m
 
 Para adicionar uma função que deve ser executada quando a aplicação estiver encerrando, declare ela com o evento `"shutdown"`:
 
-{* ../../docs_src/events/tutorial002.py hl[6] *}
+{* ../../examples/events/tutorial002.py hl[6] *}
 
 Aqui, a função de manipulação de evento `shutdown` irá escrever uma linha de texto `"Application shutdown"` no arquivo `log.txt`.
 

@@ -6,7 +6,7 @@
 
 &amp; ⤴️ 👆 💪 ⚒ 🎚 👈 *🔀* 📨 🎚.
 
-{* ../../docs_src/response_headers/tutorial002.py hl[1,7:8] *}
+{* ../../examples/response_headers/tutorial002.py hl[1,7:8] *}
 
 &amp; ⤴️ 👆 💪 📨 🙆 🎚 👆 💪, 👆 🛎 🔜 ( `dict`, 💽 🏷, ♒️).
 
@@ -22,7 +22,7 @@
 
 ✍ 📨 🔬 [📨 📨 🔗](response-directly.md){.internal-link target=_blank} &amp; 🚶‍♀️ 🎚 🌖 🔢:
 
-{* ../../docs_src/response_headers/tutorial001.py hl[10:12] *}
+{* ../../examples/response_headers/tutorial001.py hl[10:12] *}
 
 /// note | 📡 ℹ
 

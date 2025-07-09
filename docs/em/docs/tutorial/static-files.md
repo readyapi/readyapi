@@ -7,7 +7,7 @@
 * 🗄 `StaticFiles`.
 * "🗻" `StaticFiles()` 👐 🎯 ➡.
 
-{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
+{* ../../examples/static_files/tutorial001.py hl[2,6] *}
 
 /// note | 📡 ℹ
 

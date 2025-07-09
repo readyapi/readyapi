@@ -6,7 +6,7 @@
 
 &amp; ⤴️ 👆 💪 ⚒ 🍪 👈 *🔀* 📨 🎚.
 
-{* ../../docs_src/response_cookies/tutorial002.py hl[1,8:9] *}
+{* ../../examples/response_cookies/tutorial002.py hl[1,8:9] *}
 
 &amp; ⤴️ 👆 💪 📨 🙆 🎚 👆 💪, 👆 🛎 🔜 ( `dict`, 💽 🏷, ♒️).
 
@@ -24,7 +24,7 @@
 
 ⤴️ ⚒ 🍪 ⚫️, &amp; ⤴️ 📨 ⚫️:
 
-{* ../../docs_src/response_cookies/tutorial001.py hl[10:12] *}
+{* ../../examples/response_cookies/tutorial001.py hl[10:12] *}
 
 /// tip
 

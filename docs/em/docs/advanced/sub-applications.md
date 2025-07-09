@@ -10,7 +10,7 @@
 
 🥇, ✍ 👑, 🔝-🎚, **ReadyAPI** 🈸, &amp; 🚮 *➡ 🛠️*:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[3,6:8] *}
+{* ../../examples/sub_applications/tutorial001.py hl[3,6:8] *}
 
 ### 🎧-🈸
 
@@ -18,7 +18,7 @@
 
 👉 🎧-🈸 ➕1️⃣ 🐩 ReadyAPI 🈸, ✋️ 👉 1️⃣ 👈 🔜 "🗻":
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,14:16] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,14:16] *}
 
 ### 🗻 🎧-🈸
 
@@ -26,7 +26,7 @@
 
 👉 💼, ⚫️ 🔜 📌 ➡ `/subapi`:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,19] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,19] *}
 
 ### ✅ 🏧 🛠️ 🩺
 

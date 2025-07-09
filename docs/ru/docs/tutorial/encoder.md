@@ -20,7 +20,7 @@
 
 Она принимает объект, например, модель Pydantic, и возвращает его версию, совместимую с JSON:
 
-{* ../../docs_src/encoder/tutorial001_py310.py hl[4,21] *}
+{* ../../examples/encoder/tutorial001_py310.py hl[4,21] *}
 
 В данном примере она преобразует Pydantic модель в `dict`, а `datetime` - в `str`.
 

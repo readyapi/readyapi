@@ -46,19 +46,19 @@
 
 🥇, ✍ 🌐 👆 **ReadyAPI** 🈸 🛎:
 
-{* ../../docs_src/extending_openapi/tutorial001.py hl[1,4,7:9] *}
+{* ../../examples/extending_openapi/tutorial001.py hl[1,4,7:9] *}
 
 ### 🏗 🗄 🔗
 
 ⤴️, ⚙️ 🎏 🚙 🔢 🏗 🗄 🔗, 🔘 `custom_openapi()` 🔢:
 
-{* ../../docs_src/extending_openapi/tutorial001.py hl[2,15:20] *}
+{* ../../examples/extending_openapi/tutorial001.py hl[2,15:20] *}
 
 ### 🔀 🗄 🔗
 
 🔜 👆 💪 🚮 📄 ↔, ❎ 🛃 `x-logo` `info` "🎚" 🗄 🔗:
 
-{* ../../docs_src/extending_openapi/tutorial001.py hl[21:23] *}
+{* ../../examples/extending_openapi/tutorial001.py hl[21:23] *}
 
 ### 💾 🗄 🔗
 
@@ -68,13 +68,13 @@
 
 ⚫️ 🔜 🏗 🕴 🕐, &amp; ⤴️ 🎏 💾 🔗 🔜 ⚙️ ⏭ 📨.
 
-{* ../../docs_src/extending_openapi/tutorial001.py hl[13:14,24:25] *}
+{* ../../examples/extending_openapi/tutorial001.py hl[13:14,24:25] *}
 
 ### 🔐 👩‍🔬
 
 🔜 👆 💪 ❎ `.openapi()` 👩‍🔬 ⏮️ 👆 🆕 🔢.
 
-{* ../../docs_src/extending_openapi/tutorial001.py hl[28] *}
+{* ../../examples/extending_openapi/tutorial001.py hl[28] *}
 
 ### ✅ ⚫️
 

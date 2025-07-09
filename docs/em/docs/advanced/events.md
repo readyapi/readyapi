@@ -30,7 +30,7 @@
 
 👥 ✍ 🔁 🔢 `lifespan()` ⏮️ `yield` 💖 👉:
 
-{* ../../docs_src/events/tutorial003.py hl[16,19] *}
+{* ../../examples/events/tutorial003.py hl[16,19] *}
 
 📥 👥 ⚖ 😥 *🕴* 🛠️ 🚚 🏷 🚮 (❌) 🏷 🔢 📖 ⏮️ 🎰 🏫 🏷 ⏭ `yield`. 👉 📟 🔜 🛠️ **⏭** 🈸 **▶️ ✊ 📨**, ⏮️ *🕴*.
 
@@ -48,7 +48,7 @@
 
 🥇 👜 👀, 👈 👥 ⚖ 🔁 🔢 ⏮️ `yield`. 👉 📶 🎏 🔗 ⏮️ `yield`.
 
-{* ../../docs_src/events/tutorial003.py hl[14:19] *}
+{* ../../examples/events/tutorial003.py hl[14:19] *}
 
 🥇 🍕 🔢, ⏭ `yield`, 🔜 🛠️ **⏭** 🈸 ▶️.
 
@@ -60,7 +60,7 @@
 
 👈 🗜 🔢 🔘 🕳 🤙 "**🔁 🔑 👨‍💼**".
 
-{* ../../docs_src/events/tutorial003.py hl[1,13] *}
+{* ../../examples/events/tutorial003.py hl[1,13] *}
 
 **🔑 👨‍💼** 🐍 🕳 👈 👆 💪 ⚙️ `with` 📄, 🖼, `open()` 💪 ⚙️ 🔑 👨‍💼:
 
@@ -82,7 +82,7 @@ async with lifespan(app):
 
 `lifespan` 🔢 `ReadyAPI` 📱 ✊ **🔁 🔑 👨‍💼**, 👥 💪 🚶‍♀️ 👆 🆕 `lifespan` 🔁 🔑 👨‍💼 ⚫️.
 
-{* ../../docs_src/events/tutorial003.py hl[22] *}
+{* ../../examples/events/tutorial003.py hl[22] *}
 
 ## 🎛 🎉 (😢)
 
@@ -104,7 +104,7 @@ async with lifespan(app):
 
 🚮 🔢 👈 🔜 🏃 ⏭ 🈸 ▶️, 📣 ⚫️ ⏮️ 🎉 `"startup"`:
 
-{* ../../docs_src/events/tutorial001.py hl[8] *}
+{* ../../examples/events/tutorial001.py hl[8] *}
 
 👉 💼, `startup` 🎉 🐕‍🦺 🔢 🔜 🔢 🏬 "💽" ( `dict`) ⏮️ 💲.
 
@@ -116,7 +116,7 @@ async with lifespan(app):
 
 🚮 🔢 👈 🔜 🏃 🕐❔ 🈸 🤫 🔽, 📣 ⚫️ ⏮️ 🎉 `"shutdown"`:
 
-{* ../../docs_src/events/tutorial002.py hl[6] *}
+{* ../../examples/events/tutorial002.py hl[6] *}
 
 📥, `shutdown` 🎉 🐕‍🦺 🔢 🔜 ✍ ✍ ⏸ `"Application shutdown"` 📁 `log.txt`.
 

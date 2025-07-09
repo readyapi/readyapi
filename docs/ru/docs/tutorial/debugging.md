@@ -6,7 +6,7 @@
 
 В вашем ReadyAPI приложении, импортируйте и вызовите `uvicorn` напрямую:
 
-{* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
+{* ../../examples/debugging/tutorial001.py hl[1,15] *}
 
 ### Описание `__name__ == "__main__"`
 

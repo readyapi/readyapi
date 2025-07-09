@@ -6,7 +6,7 @@
 
 Сначала вы должны импортировать его:
 
-{* ../../docs_src/body_fields/tutorial001_py310.py hl[2] *}
+{* ../../examples/body_fields/tutorial001_py310.py hl[2] *}
 
 /// warning | Внимание
 
@@ -18,7 +18,7 @@
 
 Вы можете использовать функцию `Field` с атрибутами модели:
 
-{* ../../docs_src/body_fields/tutorial001_py310.py hl[9:12] *}
+{* ../../examples/body_fields/tutorial001_py310.py hl[9:12] *}
 
 Функция `Field` работает так же, как `Query`, `Path` и `Body`, у неё такие же параметры и т.д.
 

@@ -5,7 +5,7 @@ import pytest
 from readyapi import Request
 from readyapi.testclient import TestClient
 
-from docs_src.custom_request_and_route.tutorial001 import app
+from examples.custom_request_and_route.tutorial001 import app
 
 
 @app.get("/check-class")

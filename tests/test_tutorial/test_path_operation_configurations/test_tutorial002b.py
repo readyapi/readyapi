@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.path_operation_configuration.tutorial002b import app
+from examples.path_operation_configuration.tutorial002b import app
 
 client = TestClient(app)
 

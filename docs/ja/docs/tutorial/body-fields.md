@@ -6,7 +6,7 @@
 
 まず、以下のようにインポートします:
 
-{* ../../docs_src/body_fields/tutorial001.py hl[4] *}
+{* ../../examples/body_fields/tutorial001.py hl[4] *}
 
 /// warning | 注意
 
@@ -18,7 +18,7 @@
 
 以下のように`Field`をモデルの属性として使用することができます:
 
-{* ../../docs_src/body_fields/tutorial001.py hl[11,12,13,14] *}
+{* ../../examples/body_fields/tutorial001.py hl[11,12,13,14] *}
 
 `Field`は`Query`や`Path`、`Body`と同じように動作し、全く同様のパラメータなどを持ちます。
 

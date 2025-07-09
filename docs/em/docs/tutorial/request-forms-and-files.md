@@ -12,13 +12,13 @@
 
 ## 🗄 `File` &amp; `Form`
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[1] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[1] *}
 
 ## 🔬 `File` &amp; `Form` 🔢
 
 ✍ 📁 &amp; 📨 🔢 🎏 🌌 👆 🔜 `Body` ⚖️ `Query`:
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[8] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[8] *}
 
 📁 &amp; 📨 🏑 🔜 📂 📨 📊 &amp; 👆 🔜 📨 📁 &amp; 📨 🏑.
 

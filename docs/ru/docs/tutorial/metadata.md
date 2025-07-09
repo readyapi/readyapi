@@ -17,7 +17,7 @@
 
 Вы можете задать их следующим образом:
 
-{* ../../docs_src/metadata/tutorial001.py hl[3:16,19:31] *}
+{* ../../examples/metadata/tutorial001.py hl[3:16,19:31] *}
 
 /// tip | Подсказка
 
@@ -49,7 +49,7 @@
 
 Создайте метаданные для ваших тегов и передайте их в параметре `openapi_tags`:
 
-{* ../../docs_src/metadata/tutorial004.py hl[3:16,18] *}
+{* ../../examples/metadata/tutorial004.py hl[3:16,18] *}
 
 Помните, что вы можете использовать Markdown внутри описания, к примеру "login" будет отображен жирным шрифтом (**login**) и "fancy" будет отображаться курсивом (_fancy_).
 
@@ -62,7 +62,7 @@
 ### Используйте собственные теги
 Используйте параметр `tags` с вашими *операциями пути* (и `APIRouter`ами), чтобы присвоить им различные теги:
 
-{* ../../docs_src/metadata/tutorial004.py hl[21,26] *}
+{* ../../examples/metadata/tutorial004.py hl[21,26] *}
 
 /// info | Дополнительная информация
 
@@ -90,7 +90,7 @@
 
 К примеру, чтобы задать её отображение по адресу `/api/v1/openapi.json`:
 
-{* ../../docs_src/metadata/tutorial002.py hl[3] *}
+{* ../../examples/metadata/tutorial002.py hl[3] *}
 
 Если вы хотите отключить схему OpenAPI полностью, вы можете задать `openapi_url=None`, это также отключит пользовательские интерфейсы документации, которые его использует.
 
@@ -107,4 +107,4 @@
 
 К примеру, чтобы задать отображение Swagger UI по адресу `/documentation` и отключить ReDoc:
 
-{* ../../docs_src/metadata/tutorial003.py hl[3] *}
+{* ../../examples/metadata/tutorial003.py hl[3] *}

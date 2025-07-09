@@ -14,13 +14,13 @@
 
 从 `readyapi` 导入 `Form`：
 
-{* ../../docs_src/request_forms/tutorial001.py hl[1] *}
+{* ../../examples/request_forms/tutorial001.py hl[1] *}
 
 ## 定义 `Form` 参数
 
 创建表单（`Form`）参数的方式与 `Body` 和 `Query` 一样：
 
-{* ../../docs_src/request_forms/tutorial001.py hl[7] *}
+{* ../../examples/request_forms/tutorial001.py hl[7] *}
 
 例如，OAuth2 规范的 "密码流" 模式规定要通过表单字段发送 `username` 和 `password`。
 

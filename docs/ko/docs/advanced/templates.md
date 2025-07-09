@@ -30,7 +30,7 @@ $ pip install jinja2
 
 
 ```Python hl_lines="4  11  15-18"
-{!../../docs_src/templates/tutorial001.py!}
+{!../../examples/templates/tutorial001.py!}
 ```
 
 /// note | 참고
@@ -58,7 +58,7 @@ ReadyAPI 0.108.0 이전과 Starlette 0.29.0에서는 `name`이 첫 번째 매개
 그런 다음 `templates/item.html`에 템플릿을 작성할 수 있습니다. 예를 들면:
 
 ```jinja hl_lines="7"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 ### 템플릿 컨텍스트 값
@@ -111,13 +111,13 @@ Item ID: 42
 템플릿 내에서 `url_for()`를 사용할 수 있으며, 예를 들어 `name="static"`으로 마운트한 `StaticFiles`와 함께 사용할 수 있습니다.
 
 ```jinja hl_lines="4"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 이 예제에서는 `static/styles.css`에 있는 CSS 파일에 연결될 것입니다:
 
 ```CSS hl_lines="4"
-{!../../docs_src/templates/static/styles.css!}
+{!../../examples/templates/static/styles.css!}
 ```
 
 그리고 `StaticFiles`를 사용하고 있으므로, 해당 CSS 파일은 **ReadyAPI** 애플리케이션에서 `/static/styles.css` URL로 자동 제공됩니다.

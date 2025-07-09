@@ -14,7 +14,7 @@ Mais vous voulez aussi qu'il accepte de nouveaux éléments. Et lorsque les él�
 
 Pour y parvenir, importez `JSONResponse` et renvoyez-y directement votre contenu, en définissant le `status_code` que vous souhaitez :
 
-{* ../../docs_src/additional_status_codes/tutorial001.py hl[4,25] *}
+{* ../../examples/additional_status_codes/tutorial001.py hl[4,25] *}
 
 /// warning | Attention
 

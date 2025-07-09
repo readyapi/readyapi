@@ -2,8 +2,8 @@ from pathlib import Path
 
 from readyapi.testclient import TestClient
 
-from docs_src.custom_response import tutorial009b
-from docs_src.custom_response.tutorial009b import app
+from examples.custom_response import tutorial009b
+from examples.custom_response.tutorial009b import app
 
 client = TestClient(app)
 

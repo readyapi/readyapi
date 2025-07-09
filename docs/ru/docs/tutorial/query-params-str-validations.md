@@ -4,7 +4,7 @@
 
 Давайте рассмотрим следующий пример:
 
-{* ../../docs_src/query_params_str_validations/tutorial001_py310.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial001_py310.py hl[7] *}
 
 Query-параметр `q` имеет тип `Union[str, None]` (или `str | None` в Python 3.10). Это означает, что входной параметр будет типа `str`, но может быть и `None`. Ещё параметр имеет значение по умолчанию `None`, из-за чего ReadyAPI определит параметр как необязательный.
 
@@ -32,7 +32,7 @@ ReadyAPI определит параметр `q` как необязательн
 В Python 3.9 или выше, `Annotated` является частью стандартной библиотеки, таким образом вы можете импортировать его из `typing`.
 
 ```Python hl_lines="1  3"
-{!> ../../docs_src/query_params_str_validations/tutorial002_an_py310.py!}
+{!> ../../examples/query_params_str_validations/tutorial002_an_py310.py!}
 ```
 
 ////
@@ -44,7 +44,7 @@ ReadyAPI определит параметр `q` как необязательн
 Эта библиотека будет установлена вместе с ReadyAPI.
 
 ```Python hl_lines="3-4"
-{!> ../../docs_src/query_params_str_validations/tutorial002_an.py!}
+{!> ../../examples/query_params_str_validations/tutorial002_an.py!}
 ```
 
 ////
@@ -99,7 +99,7 @@ q: Annotated[Union[str, None]] = None
 
 Теперь, когда у нас есть `Annotated`, где мы можем добавить больше метаданных, добавим `Query` со значением параметра `max_length` равным 50:
 
-{* ../../docs_src/query_params_str_validations/tutorial002_an_py310.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial002_an_py310.py hl[9] *}
 
 Обратите внимание, что значение по умолчанию всё ещё `None`, так что параметр остаётся необязательным.
 
@@ -123,7 +123,7 @@ q: Annotated[Union[str, None]] = None
 
 Вот как вы могли бы использовать `Query()` в качестве значения по умолчанию параметра вашей функции, установив для параметра `max_length` значение 50:
 
-{* ../../docs_src/query_params_str_validations/tutorial002_py310.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial002_py310.py hl[7] *}
 
 В таком случае (без использования `Annotated`), мы заменили значение по умолчанию с `None` на `Query()` в функции. Теперь нам нужно установить значение по умолчанию для query-параметра `Query(default=None)`, что необходимо для тех же целей, как когда ранее просто указывалось значение по умолчанию (по крайней мере, для ReadyAPI).
 
@@ -223,13 +223,13 @@ q: str = Query(default="rick")
 
 Вы также можете добавить параметр `min_length`:
 
-{* ../../docs_src/query_params_str_validations/tutorial003_an_py310.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial003_an_py310.py hl[10] *}
 
 ## Регулярные выражения
 
 Вы можете определить <abbr title="Регулярное выражение, regex или regexp - это последовательность символов, определяющая шаблон для строк.">регулярное выражение</abbr>, которому должен соответствовать параметр:
 
-{* ../../docs_src/query_params_str_validations/tutorial004_an_py310.py hl[11] *}
+{* ../../examples/query_params_str_validations/tutorial004_an_py310.py hl[11] *}
 
 Данное регулярное выражение проверяет, что полученное значение параметра:
 
@@ -247,7 +247,7 @@ q: str = Query(default="rick")
 
 Например, вы хотите для параметра запроса `q` указать, что он должен состоять минимум из 3 символов (`min_length=3`) и иметь значение по умолчанию `"fixedquery"`:
 
-{* ../../docs_src/query_params_str_validations/tutorial005_an_py39.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial005_an_py39.py hl[9] *}
 
 /// note | Технические детали
 
@@ -289,7 +289,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 В таком случае, чтобы сделать query-параметр `Query` обязательным, вы можете просто не указывать значение по умолчанию:
 
-{* ../../docs_src/query_params_str_validations/tutorial006_an_py39.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial006_an_py39.py hl[9] *}
 
 ### Обязательный параметр с `None`
 
@@ -297,7 +297,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 Чтобы этого добиться, вам нужно определить `None` как валидный тип для параметра запроса, но также указать `default=...`:
 
-{* ../../docs_src/query_params_str_validations/tutorial006c_an_py310.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial006c_an_py310.py hl[9] *}
 
 /// tip | Подсказка
 
@@ -311,7 +311,7 @@ Pydantic, мощь которого используется в ReadyAPI для 
 
 Например, query-параметр `q` может быть указан в URL несколько раз. И если вы ожидаете такой формат запроса, то можете указать это следующим образом:
 
-{* ../../docs_src/query_params_str_validations/tutorial011_an_py310.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial011_an_py310.py hl[9] *}
 
 Затем, получив такой URL:
 
@@ -346,7 +346,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 Вы также можете указать тип `list` со списком значений по умолчанию на случай, если вам их не предоставят:
 
-{* ../../docs_src/query_params_str_validations/tutorial012_an_py39.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial012_an_py39.py hl[9] *}
 
 Если вы перейдёте по ссылке:
 
@@ -369,7 +369,7 @@ http://localhost:8000/items/
 
 Вы также можете использовать `list` напрямую вместо `List[str]` (или `list[str]` в Python 3.9+):
 
-{* ../../docs_src/query_params_str_validations/tutorial013_an_py39.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial013_an_py39.py hl[9] *}
 
 /// note | Технические детали
 
@@ -395,11 +395,11 @@ http://localhost:8000/items/
 
 Вы можете указать название query-параметра, используя параметр `title`:
 
-{* ../../docs_src/query_params_str_validations/tutorial007_an_py310.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial007_an_py310.py hl[10] *}
 
 Добавить описание, используя параметр `description`:
 
-{* ../../docs_src/query_params_str_validations/tutorial008_an_py310.py hl[14] *}
+{* ../../examples/query_params_str_validations/tutorial008_an_py310.py hl[14] *}
 
 ## Псевдонимы параметров
 
@@ -419,7 +419,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 Тогда вы можете объявить `псевдоним`, и этот псевдоним будет использоваться для поиска значения параметра запроса:
 
-{* ../../docs_src/query_params_str_validations/tutorial009_an_py310.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial009_an_py310.py hl[9] *}
 
 ## Устаревшие параметры
 
@@ -429,7 +429,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 Тогда для `Query` укажите параметр `deprecated=True`:
 
-{* ../../docs_src/query_params_str_validations/tutorial010_an_py310.py hl[19] *}
+{* ../../examples/query_params_str_validations/tutorial010_an_py310.py hl[19] *}
 
 В документации это будет отображено следующим образом:
 
@@ -439,7 +439,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 Чтобы исключить query-параметр из генерируемой OpenAPI схемы (а также из системы автоматической генерации документации), укажите в `Query` параметр `include_in_schema=False`:
 
-{* ../../docs_src/query_params_str_validations/tutorial014_an_py310.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial014_an_py310.py hl[10] *}
 
 ## Резюме
 

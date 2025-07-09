@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.behind_a_proxy.tutorial002 import app
+from examples.behind_a_proxy.tutorial002 import app
 
 client = TestClient(app)
 

@@ -2,7 +2,7 @@
 
 🕐❔ 👆 📣 🎏 🔢 🔢 👈 🚫 🍕 ➡ 🔢, 👫 🔁 🔬 "🔢" 🔢.
 
-{* ../../docs_src/query_params/tutorial001.py hl[9] *}
+{* ../../examples/query_params/tutorial001.py hl[9] *}
 
 🔢 ⚒ 🔑-💲 👫 👈 🚶 ⏮️ `?` 📛, 🎏 `&` 🦹.
 
@@ -61,7 +61,7 @@ http://127.0.0.1:8000/items/?skip=20
 
 🎏 🌌, 👆 💪 📣 📦 🔢 🔢, ⚒ 👫 🔢 `None`:
 
-{* ../../docs_src/query_params/tutorial002.py hl[9] *}
+{* ../../examples/query_params/tutorial002.py hl[9] *}
 
 👉 💼, 🔢 🔢 `q` 🔜 📦, &amp; 🔜 `None` 🔢.
 
@@ -75,7 +75,7 @@ http://127.0.0.1:8000/items/?skip=20
 
 👆 💪 📣 `bool` 🆎, &amp; 👫 🔜 🗜:
 
-{* ../../docs_src/query_params/tutorial003.py hl[9] *}
+{* ../../examples/query_params/tutorial003.py hl[9] *}
 
 👉 💼, 🚥 👆 🚶:
 
@@ -118,7 +118,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 👫 🔜 🔬 📛:
 
-{* ../../docs_src/query_params/tutorial004.py hl[8,10] *}
+{* ../../examples/query_params/tutorial004.py hl[8,10] *}
 
 ## ✔ 🔢 🔢
 
@@ -128,7 +128,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 ✋️ 🕐❔ 👆 💚 ⚒ 🔢 🔢 ✔, 👆 💪 🚫 📣 🙆 🔢 💲:
 
-{* ../../docs_src/query_params/tutorial005.py hl[6:7] *}
+{* ../../examples/query_params/tutorial005.py hl[6:7] *}
 
 📥 🔢 🔢 `needy` ✔ 🔢 🔢 🆎 `str`.
 
@@ -172,7 +172,7 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 
 &amp; ↗️, 👆 💪 🔬 🔢 ✔, ✔️ 🔢 💲, &amp; 🍕 📦:
 
-{* ../../docs_src/query_params/tutorial006.py hl[10] *}
+{* ../../examples/query_params/tutorial006.py hl[10] *}
 
 👉 💼, 📤 3️⃣ 🔢 🔢:
 

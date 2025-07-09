@@ -29,7 +29,7 @@ Puedes usar fácilmente las mismas configuraciones de Pydantic para configurar t
 
 Por ejemplo:
 
-{* ../../docs_src/conditional_openapi/tutorial001.py hl[6,11] *}
+{* ../../examples/conditional_openapi/tutorial001.py hl[6,11] *}
 
 Aquí declaramos la configuración `openapi_url` con el mismo valor predeterminado de `"/openapi.json"`.
 

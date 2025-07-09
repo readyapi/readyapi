@@ -6,7 +6,7 @@
 
 ⏮️ 🖼, 👥 🛬 `dict` ⚪️➡️ 👆 🔗 ("☑"):
 
-{* ../../docs_src/dependencies/tutorial001.py hl[9] *}
+{* ../../examples/dependencies/tutorial001.py hl[9] *}
 
 ✋️ ⤴️ 👥 🤚 `dict` 🔢 `commons` *➡ 🛠️ 🔢*.
 
@@ -69,15 +69,15 @@ fluffy = Cat(name="Mr Fluffy")
 
 ⤴️, 👥 💪 🔀 🔗 "☑" `common_parameters` ⚪️➡️ 🔛 🎓 `CommonQueryParams`:
 
-{* ../../docs_src/dependencies/tutorial002.py hl[11:15] *}
+{* ../../examples/dependencies/tutorial002.py hl[11:15] *}
 
 💸 🙋 `__init__` 👩‍🔬 ⚙️ ✍ 👐 🎓:
 
-{* ../../docs_src/dependencies/tutorial002.py hl[12] *}
+{* ../../examples/dependencies/tutorial002.py hl[12] *}
 
 ...⚫️ ✔️ 🎏 🔢 👆 ⏮️ `common_parameters`:
 
-{* ../../docs_src/dependencies/tutorial001.py hl[9] *}
+{* ../../examples/dependencies/tutorial001.py hl[9] *}
 
 📚 🔢 ⚫️❔ **ReadyAPI** 🔜 ⚙️ "❎" 🔗.
 
@@ -93,7 +93,7 @@ fluffy = Cat(name="Mr Fluffy")
 
 🔜 👆 💪 📣 👆 🔗 ⚙️ 👉 🎓.
 
-{* ../../docs_src/dependencies/tutorial002.py hl[19] *}
+{* ../../examples/dependencies/tutorial002.py hl[19] *}
 
 **ReadyAPI** 🤙 `CommonQueryParams` 🎓. 👉 ✍ "👐" 👈 🎓 &amp; 👐 🔜 🚶‍♀️ 🔢 `commons` 👆 🔢.
 
@@ -133,7 +133,7 @@ commons = Depends(CommonQueryParams)
 
 ...:
 
-{* ../../docs_src/dependencies/tutorial003.py hl[19] *}
+{* ../../examples/dependencies/tutorial003.py hl[19] *}
 
 ✋️ 📣 🆎 💡 👈 🌌 👆 👨‍🎨 🔜 💭 ⚫️❔ 🔜 🚶‍♀️ 🔢 `commons`, &amp; ⤴️ ⚫️ 💪 ℹ 👆 ⏮️ 📟 🛠️, 🆎 ✅, ♒️:
 
@@ -167,7 +167,7 @@ commons: CommonQueryParams = Depends()
 
 🎏 🖼 🔜 ⤴️ 👀 💖:
 
-{* ../../docs_src/dependencies/tutorial004.py hl[19] *}
+{* ../../examples/dependencies/tutorial004.py hl[19] *}
 
 ...&amp; **ReadyAPI** 🔜 💭 ⚫️❔.
 

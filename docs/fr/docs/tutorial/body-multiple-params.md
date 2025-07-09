@@ -8,7 +8,7 @@ Tout d'abord, sachez que vous pouvez mélanger les déclarations des paramètres
 
 Vous pouvez également déclarer des paramètres body comme étant optionnels, en leur assignant une valeur par défaut à `None` :
 
-{* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
+{* ../../examples/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
 /// note
 
@@ -31,7 +31,7 @@ Dans l'exemple précédent, les opérations de routage attendaient un body JSON 
 
 Mais vous pouvez également déclarer plusieurs paramètres provenant de body, par exemple `item` et `user` simultanément :
 
-{* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+{* ../../examples/body_multiple_params/tutorial002_py310.py hl[20] *}
 
 Dans ce cas, **ReadyAPI** détectera qu'il y a plus d'un paramètre dans le body (chacun correspondant à un modèle Pydantic).
 
@@ -72,7 +72,7 @@ Si vous le déclarez tel quel, comme c'est une valeur [scalaire](https://docs.gi
 
 Mais vous pouvez indiquer à **ReadyAPI** de la traiter comme une variable de body en utilisant `Body` :
 
-{* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 Dans ce cas, **ReadyAPI** s'attendra à un body semblable à :
 
@@ -112,7 +112,7 @@ q: str | None = None
 
 Par exemple :
 
-{* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[27] *}
+{* ../../examples/body_multiple_params/tutorial004_an_py310.py hl[27] *}
 
 /// info
 
@@ -134,7 +134,7 @@ item: Item = Body(embed=True)
 
 Voici un exemple complet :
 
-{* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
 Dans ce cas **ReadyAPI** attendra un body semblable à :
 

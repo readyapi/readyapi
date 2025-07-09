@@ -116,7 +116,7 @@ PassLib 컨텍스트는 다양한 해싱 알고리즘을 사용할 수 있는 �
 
 그리고 사용자를 인증하고 반환하는 또 다른 함수도 생성합니다.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
 
 /// note
 
@@ -152,7 +152,7 @@ JWT 토큰을 서명하는 데 사용될 알고리즘을 위한 변수 `ALGORITH
 
 새 액세스 토큰을 생성하기 위한 유틸리티 함수를 생성합니다.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
 
 ## 의존성 수정
 
@@ -162,7 +162,7 @@ JWT 토큰을 서명하는 데 사용될 알고리즘을 위한 변수 `ALGORITH
 
 토큰이 유효하지 않다면 HTTP 오류를 반환합니다.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[90:107] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[90:107] *}
 
 ## `/token` 경로 작업 수정
 
@@ -170,7 +170,7 @@ JWT 토큰을 서명하는 데 사용될 알고리즘을 위한 변수 `ALGORITH
 
 실제 JWT 액세스 토큰을 생성하여 반환합니다.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[118:133] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[118:133] *}
 
 ### JWT "주체(subject)" `sub`에 대한 기술 세부 사항
 

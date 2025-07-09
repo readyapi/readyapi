@@ -26,7 +26,7 @@ jobs:
             docs:
               - README.md
               - docs/**
-              - docs_src/**
+              - examples/**
               - requirements-docs.txt
               - requirements-docs-insiders.txt
               - pyproject.toml

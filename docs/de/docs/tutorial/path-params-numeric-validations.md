@@ -6,7 +6,7 @@ So wie Sie mit `Query` für Query-Parameter zusätzliche Validierungen und Metad
 
 Importieren Sie zuerst `Path` von `readyapi`, und importieren Sie `Annotated`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
 
 /// info
 
@@ -24,7 +24,7 @@ Sie können die gleichen Parameter deklarieren wie für `Query`.
 
 Um zum Beispiel einen `title`-Metadaten-Wert für den Pfad-Parameter `item_id` zu deklarieren, schreiben Sie:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
 
 /// note | Hinweis
 
@@ -67,14 +67,14 @@ Bevorzugen Sie die `Annotated`-Version, falls möglich.
 ///
 
 ```Python hl_lines="7"
-{!> ../../docs_src/path_params_numeric_validations/tutorial002.py!}
+{!> ../../examples/path_params_numeric_validations/tutorial002.py!}
 ```
 
 ////
 
 Aber bedenken Sie, dass Sie dieses Problem nicht haben, wenn Sie `Annotated` verwenden, da Sie nicht die Funktions-Parameter-Defaultwerte für `Query()` oder `Path()` verwenden.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial002_an_py39.py hl[10] *}
 
 ## Sortieren Sie die Parameter wie Sie möchten: Tricks
 
@@ -99,20 +99,20 @@ Wenn Sie eines der folgenden Dinge tun möchten:
 
 Python macht nichts mit diesem `*`, aber es wird wissen, dass alle folgenden Parameter als <abbr title="Keyword-Argument – Schlüsselwort-Argument: Das Argument wird anhand seines Namens erkannt, nicht anhand seiner Reihenfolge in der Argumentliste">Keyword-Argumente</abbr> (Schlüssel-Wert-Paare), auch bekannt als <abbr title="Von: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>, verwendet werden. Selbst wenn diese keinen Defaultwert haben.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial003.py hl[7] *}
 
 ### Besser mit `Annotated`
 
 Bedenken Sie, dass Sie, wenn Sie `Annotated` verwenden, dieses Problem nicht haben, weil Sie keine Defaultwerte für Ihre Funktionsparameter haben. Sie müssen daher wahrscheinlich auch nicht `*` verwenden.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
 
 ## Validierung von Zahlen: Größer oder gleich
 
 Mit `Query` und `Path` (und anderen, die Sie später kennenlernen), können Sie Zahlenbeschränkungen deklarieren.
 
 Hier, mit `ge=1`, wird festgelegt, dass `item_id` eine Ganzzahl benötigt, die größer oder gleich `1` ist (`g`reater than or `e`qual).
-{* ../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
 
 ## Validierung von Zahlen: Größer und kleiner oder gleich
 
@@ -121,7 +121,7 @@ Das Gleiche trifft zu auf:
 * `gt`: `g`reater `t`han – größer als
 * `le`: `l`ess than or `e`qual – kleiner oder gleich
 
-{* ../../docs_src/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
 
 ## Validierung von Zahlen: Floats, größer und kleiner
 
@@ -133,7 +133,7 @@ Hier wird es wichtig, in der Lage zu sein, <abbr title="greater than – größe
 
 Das gleiche gilt für <abbr title="less than – kleiner als"><code>lt</code></abbr>.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
+{* ../../examples/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
 
 ## Zusammenfassung
 

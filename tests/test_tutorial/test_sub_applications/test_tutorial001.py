@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.sub_applications.tutorial001 import app
+from examples.sub_applications.tutorial001 import app
 
 client = TestClient(app)
 

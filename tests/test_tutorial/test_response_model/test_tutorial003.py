@@ -1,7 +1,7 @@
 from dirty_equals import IsDict, IsOneOf
 from readyapi.testclient import TestClient
 
-from docs_src.response_model.tutorial003 import app
+from examples.response_model.tutorial003 import app
 
 client = TestClient(app)
 

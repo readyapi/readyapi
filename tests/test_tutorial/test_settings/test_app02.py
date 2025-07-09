@@ -5,7 +5,7 @@ from ...utils import needs_pydanticv2
 
 @needs_pydanticv2
 def test_settings(monkeypatch: MonkeyPatch):
-    from docs_src.settings.app02 import main
+    from examples.settings.app02 import main
 
     monkeypatch.setenv("ADMIN_EMAIL", "admin@example.com")
     settings = main.get_settings()
@@ -15,6 +15,6 @@ def test_settings(monkeypatch: MonkeyPatch):
 
 @needs_pydanticv2
 def test_override_settings():
-    from docs_src.settings.app02 import test_main
+    from examples.settings.app02 import test_main
 
     test_main.test_app()

@@ -19,7 +19,7 @@ Vamos primeiro usar o código e ver como funciona, e depois voltaremos para ente
 ## Crie um `main.py`
 Copie o exemplo em um arquivo `main.py`:
 
-{* ../../docs_src/security/tutorial001.py *}
+{* ../../examples/security/tutorial001.py *}
 
 ## Execute-o
 
@@ -133,7 +133,7 @@ Neste exemplo, nós vamos usar o **OAuth2** com o fluxo de **Senha**, usando um 
 
 Quando nós criamos uma instância da classe `OAuth2PasswordBearer`, nós passamos pelo parâmetro `tokenUrl` Esse parâmetro contém a URL que o client (o frontend rodando no browser do usuário) vai usar para mandar o `username` e `senha` para obter um token.
 
-{* ../../docs_src/security/tutorial001.py hl[6] *}
+{* ../../examples/security/tutorial001.py hl[6] *}
 
 /// tip | Dica
 
@@ -175,7 +175,7 @@ Então, pode ser usado com `Depends`.
 
 Agora você pode passar aquele `oauth2_scheme` em uma dependência com `Depends`.
 
-{* ../../docs_src/security/tutorial001.py hl[10] *}
+{* ../../examples/security/tutorial001.py hl[10] *}
 
 Esse dependência vai fornecer uma `str` que é atribuído ao parâmetro `token da *função do path operation*
 

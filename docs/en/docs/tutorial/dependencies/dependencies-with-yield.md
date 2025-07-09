@@ -29,15 +29,15 @@ For example, you could use this to create a database session and close it after 
 
 Only the code prior to and including the `yield` statement is executed before creating a response:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[2:4] *}
+{* ../../examples/dependencies/tutorial007.py hl[2:4] *}
 
 The yielded value is what is injected into *path operations* and other dependencies:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[4] *}
+{* ../../examples/dependencies/tutorial007.py hl[4] *}
 
 The code following the `yield` statement is executed after creating the response but before sending it:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[5:6] *}
+{* ../../examples/dependencies/tutorial007.py hl[5:6] *}
 
 /// tip
 
@@ -57,7 +57,7 @@ So, you can look for that specific exception inside the dependency with `except 
 
 In the same way, you can use `finally` to make sure the exit steps are executed, no matter if there was an exception or not.
 
-{* ../../docs_src/dependencies/tutorial007.py hl[3,5] *}
+{* ../../examples/dependencies/tutorial007.py hl[3,5] *}
 
 ## Sub-dependencies with `yield`
 
@@ -67,7 +67,7 @@ You can have sub-dependencies and "trees" of sub-dependencies of any size and sh
 
 For example, `dependency_c` can have a dependency on `dependency_b`, and `dependency_b` on `dependency_a`:
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
 
 And all of them can use `yield`.
 
@@ -75,7 +75,7 @@ In this case `dependency_c`, to execute its exit code, needs the value from `dep
 
 And, in turn, `dependency_b` needs the value from `dependency_a` (here named `dep_a`) to be available for its exit code.
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
 
 The same way, you could have some dependencies with `yield` and some other dependencies with `return`, and have some of those depend on some of the others.
 
@@ -107,7 +107,7 @@ But it's there for you if you need it. 🤓
 
 ///
 
-{* ../../docs_src/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
+{* ../../examples/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
 
 An alternative you could use to catch exceptions (and possibly also raise another `HTTPException`) is to create a [Custom Exception Handler](../handling-errors.md#install-custom-exception-handlers){.internal-link target=_blank}.
 
@@ -115,7 +115,7 @@ An alternative you could use to catch exceptions (and possibly also raise anothe
 
 If you catch an exception using `except` in a dependency with `yield` and you don't raise it again (or raise a new exception), ReadyAPI won't be able to notice there was an exception, the same way that would happen with regular Python:
 
-{* ../../docs_src/dependencies/tutorial008c_an_py39.py hl[15:16] *}
+{* ../../examples/dependencies/tutorial008c_an_py39.py hl[15:16] *}
 
 In this case, the client will see an *HTTP 500 Internal Server Error* response as it should, given that we are not raising an `HTTPException` or similar, but the server will **not have any logs** or any other indication of what was the error. 😱
 
@@ -125,7 +125,7 @@ If you catch an exception in a dependency with `yield`, unless you are raising a
 
 You can re-raise the same exception using `raise`:
 
-{* ../../docs_src/dependencies/tutorial008d_an_py39.py hl[17] *}
+{* ../../examples/dependencies/tutorial008d_an_py39.py hl[17] *}
 
 Now the client will get the same *HTTP 500 Internal Server Error* response, but the server will have our custom `InternalError` in the logs. 😎
 
@@ -255,7 +255,7 @@ In Python, you can create Context Managers by <a href="https://docs.python.org/3
 You can also use them inside of **ReadyAPI** dependencies with `yield` by using
 `with` or `async with` statements inside of the dependency function:
 
-{* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
+{* ../../examples/dependencies/tutorial010.py hl[1:9,13] *}
 
 /// tip
 

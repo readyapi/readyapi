@@ -29,15 +29,15 @@ Sie könnten damit beispielsweise eine Datenbanksession erstellen und diese nach
 
 Nur der Code vor und einschließlich der `yield`-Anweisung wird ausgeführt, bevor eine Response erzeugt wird:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[2:4] *}
+{* ../../examples/dependencies/tutorial007.py hl[2:4] *}
 
 Der ge`yield`ete Wert ist das, was in *Pfadoperationen* und andere Abhängigkeiten eingefügt wird:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[4] *}
+{* ../../examples/dependencies/tutorial007.py hl[4] *}
 
 Der auf die `yield`-Anweisung folgende Code wird ausgeführt, nachdem die Response gesendet wurde:
 
-{* ../../docs_src/dependencies/tutorial007.py hl[5:6] *}
+{* ../../examples/dependencies/tutorial007.py hl[5:6] *}
 
 /// tip | Tipp
 
@@ -57,7 +57,7 @@ Sie können also mit `except SomeException` diese bestimmte Exception innerhalb 
 
 Auf die gleiche Weise können Sie `finally` verwenden, um sicherzustellen, dass die Exit-Schritte ausgeführt werden, unabhängig davon, ob eine Exception geworfen wurde oder nicht.
 
-{* ../../docs_src/dependencies/tutorial007.py hl[3,5] *}
+{* ../../examples/dependencies/tutorial007.py hl[3,5] *}
 
 ## Unterabhängigkeiten mit `yield`.
 
@@ -67,7 +67,7 @@ Sie können Unterabhängigkeiten und „Bäume“ von Unterabhängigkeiten belie
 
 Beispielsweise kann `dependency_c` von `dependency_b` und `dependency_b` von `dependency_a` abhängen:
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[6,14,22] *}
 
 Und alle können `yield` verwenden.
 
@@ -75,7 +75,7 @@ In diesem Fall benötigt `dependency_c` zum Ausführen seines Exit-Codes, dass d
 
 Und wiederum benötigt `dependency_b` den Wert von `dependency_a` (hier `dep_a` genannt) für seinen Exit-Code.
 
-{* ../../docs_src/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
+{* ../../examples/dependencies/tutorial008_an_py39.py hl[18:19,26:27] *}
 
 Auf die gleiche Weise könnten Sie einige Abhängigkeiten mit `yield` und einige andere Abhängigkeiten mit `return` haben, und alle können beliebig voneinander abhängen.
 
@@ -107,7 +107,7 @@ Aber es ist für Sie da, wenn Sie es brauchen. 🤓
 
 ///
 
-{* ../../docs_src/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
+{* ../../examples/dependencies/tutorial008b_an_py39.py hl[18:22,31] *}
 
 Eine Alternative zum Abfangen von Exceptions (und möglicherweise auch zum Auslösen einer weiteren `HTTPException`) besteht darin, einen [benutzerdefinierten Exceptionhandler](../handling-errors.md#benutzerdefinierte-exceptionhandler-definieren){.internal-link target=_blank} zu erstellen.
 
@@ -228,7 +228,7 @@ In Python können Sie Kontextmanager erstellen, indem Sie <a href="https://docs.
 
 Sie können solche auch innerhalb von **ReadyAPI**-Abhängigkeiten mit `yield` verwenden, indem Sie `with`- oder `async with`-Anweisungen innerhalb der Abhängigkeits-Funktion verwenden:
 
-{* ../../docs_src/dependencies/tutorial010.py hl[1:9,13] *}
+{* ../../examples/dependencies/tutorial010.py hl[1:9,13] *}
 
 /// tip | Tipp
 

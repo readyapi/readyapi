@@ -86,7 +86,7 @@ Puedes crear las *path operations* para ese módulo usando `APIRouter`.
 Lo importas y creas una "instance" de la misma manera que lo harías con la clase `ReadyAPI`:
 
 ```Python hl_lines="1  3" title="app/routers/users.py"
-{!../../docs_src/bigger_applications/app/routers/users.py!}
+{!../../examples/bigger_applications/app/routers/users.py!}
 ```
 
 ### *Path operations* con `APIRouter`
@@ -96,7 +96,7 @@ Y luego lo usas para declarar tus *path operations*.
 Úsalo de la misma manera que usarías la clase `ReadyAPI`:
 
 ```Python hl_lines="6  11  16" title="app/routers/users.py"
-{!../../docs_src/bigger_applications/app/routers/users.py!}
+{!../../examples/bigger_applications/app/routers/users.py!}
 ```
 
 Puedes pensar en `APIRouter` como una clase "mini `ReadyAPI`".
@@ -124,7 +124,7 @@ Ahora utilizaremos una dependencia simple para leer un encabezado `X-Token` pers
 //// tab | Python 3.9+
 
 ```Python hl_lines="3  6-8" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app_an_py39/dependencies.py!}
+{!> ../../examples/bigger_applications/app_an_py39/dependencies.py!}
 ```
 
 ////
@@ -132,7 +132,7 @@ Ahora utilizaremos una dependencia simple para leer un encabezado `X-Token` pers
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  5-7" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app_an/dependencies.py!}
+{!> ../../examples/bigger_applications/app_an/dependencies.py!}
 ```
 
 ////
@@ -146,7 +146,7 @@ Preferiblemente usa la versión `Annotated` si es posible.
 ///
 
 ```Python hl_lines="1  4-6" title="app/dependencies.py"
-{!> ../../docs_src/bigger_applications/app/dependencies.py!}
+{!> ../../examples/bigger_applications/app/dependencies.py!}
 ```
 
 ////
@@ -182,7 +182,7 @@ Sabemos que todas las *path operations* en este módulo tienen el mismo:
 Entonces, en lugar de agregar todo eso a cada *path operation*, podemos agregarlo al `APIRouter`.
 
 ```Python hl_lines="5-10  16  21" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 Como el path de cada *path operation* tiene que empezar con `/`, como en:
@@ -243,7 +243,7 @@ Y necesitamos obtener la función de dependencia del módulo `app.dependencies`,
 Así que usamos un import relativo con `..` para las dependencias:
 
 ```Python hl_lines="3" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 #### Cómo funcionan los imports relativos
@@ -316,7 +316,7 @@ No estamos agregando el prefijo `/items` ni los `tags=["items"]` a cada *path op
 Pero aún podemos agregar _más_ `tags` que se aplicarán a una *path operation* específica, y también algunas `responses` extra específicas para esa *path operation*:
 
 ```Python hl_lines="30-31" title="app/routers/items.py"
-{!../../docs_src/bigger_applications/app/routers/items.py!}
+{!../../examples/bigger_applications/app/routers/items.py!}
 ```
 
 /// tip | Consejo
@@ -342,7 +342,7 @@ Importas y creas una clase `ReadyAPI` como de costumbre.
 Y podemos incluso declarar [dependencias globales](dependencies/global-dependencies.md){.internal-link target=_blank} que se combinarán con las dependencias para cada `APIRouter`:
 
 ```Python hl_lines="1  3  7" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 ### Importar el `APIRouter`
@@ -350,7 +350,7 @@ Y podemos incluso declarar [dependencias globales](dependencies/global-dependenc
 Ahora importamos los otros submódulos que tienen `APIRouter`s:
 
 ```Python hl_lines="4-5" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 Como los archivos `app/routers/users.py` y `app/routers/items.py` son submódulos que son parte del mismo paquete de Python `app`, podemos usar un solo punto `.` para importarlos usando "imports relativos".
@@ -415,7 +415,7 @@ el `router` de `users` sobrescribiría el de `items` y no podríamos usarlos al 
 Así que, para poder usar ambos en el mismo archivo, importamos los submódulos directamente:
 
 ```Python hl_lines="5" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 ### Incluir los `APIRouter`s para `users` y `items`
@@ -423,7 +423,7 @@ Así que, para poder usar ambos en el mismo archivo, importamos los submódulos 
 Ahora, incluyamos los `router`s de los submódulos `users` y `items`:
 
 ```Python hl_lines="10-11" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 /// info | Información
@@ -465,7 +465,7 @@ Contiene un `APIRouter` con algunas *path operations* de administración que tu 
 Para este ejemplo será súper simple. Pero digamos que porque está compartido con otros proyectos en la organización, no podemos modificarlo y agregar un `prefix`, `dependencies`, `tags`, etc. directamente al `APIRouter`:
 
 ```Python hl_lines="3" title="app/internal/admin.py"
-{!../../docs_src/bigger_applications/app/internal/admin.py!}
+{!../../examples/bigger_applications/app/internal/admin.py!}
 ```
 
 Pero aún queremos configurar un `prefix` personalizado al incluir el `APIRouter` para que todas sus *path operations* comiencen con `/admin`, queremos asegurarlo con las `dependencies` que ya tenemos para este proyecto, y queremos incluir `tags` y `responses`.
@@ -473,7 +473,7 @@ Pero aún queremos configurar un `prefix` personalizado al incluir el `APIRouter
 Podemos declarar todo eso sin tener que modificar el `APIRouter` original pasando esos parámetros a `app.include_router()`:
 
 ```Python hl_lines="14-17" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 De esa manera, el `APIRouter` original permanecerá sin modificar, por lo que aún podemos compartir ese mismo archivo `app/internal/admin.py` con otros proyectos en la organización.
@@ -496,7 +496,7 @@ También podemos agregar *path operations* directamente a la aplicación de `Rea
 Aquí lo hacemos... solo para mostrar que podemos 🤷:
 
 ```Python hl_lines="21-23" title="app/main.py"
-{!../../docs_src/bigger_applications/app/main.py!}
+{!../../examples/bigger_applications/app/main.py!}
 ```
 
 y funcionará correctamente, junto con todas las otras *path operations* añadidas con `app.include_router()`.

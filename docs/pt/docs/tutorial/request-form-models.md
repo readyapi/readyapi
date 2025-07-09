@@ -24,7 +24,7 @@ Isto é suportado desde a versão `0.113.0` do ReadyAPI. 🤓
 
 Você precisa apenas declarar um **modelo Pydantic** com os campos que deseja receber como **campos de formulários**, e então declarar o parâmetro como um `Form`:
 
-{* ../../docs_src/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
+{* ../../examples/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
 
 O **ReadyAPI** irá **extrair** as informações para **cada campo** dos **dados do formulário** na requisição e dar para você o modelo Pydantic que você definiu.
 
@@ -48,7 +48,7 @@ Isso é suportado deste a versão `0.114.0` do ReadyAPI. 🤓
 
 Você pode utilizar a configuração de modelo do Pydantic para `proibir` qualquer campo `extra`:
 
-{* ../../docs_src/request_form_models/tutorial002_an_py39.py hl[12] *}
+{* ../../examples/request_form_models/tutorial002_an_py39.py hl[12] *}
 
 Caso um cliente tente enviar informações adicionais, ele receberá um retorno de **erro**.
 

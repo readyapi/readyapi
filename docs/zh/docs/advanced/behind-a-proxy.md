@@ -92,7 +92,7 @@ ASGI 规范定义的 `root_path` 就是为了这种用例。
 
 我们在这里的信息里包含 `roo_path` 只是为了演示。
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[8] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[8] *}
 
 然后，用以下命令启动 Uvicorn：
 
@@ -119,7 +119,7 @@ $ uvicorn main:app --root-path /api/v1
 
 还有一种方案，如果不能提供 `--root-path` 或等效的命令行选项，则在创建 ReadyAPI 应用时要设置 `root_path` 参数。
 
-{* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
+{* ../../examples/behind_a_proxy/tutorial002.py hl[3] *}
 
 传递 `root_path` 给 `ReadyAPI` 与传递 `--root-path` 命令行选项给 Uvicorn 或 Hypercorn 一样。
 
@@ -299,7 +299,7 @@ $ uvicorn main:app --root-path /api/v1
 
 例如：
 
-{* ../../docs_src/behind_a_proxy/tutorial003.py hl[4:7] *}
+{* ../../examples/behind_a_proxy/tutorial003.py hl[4:7] *}
 
 这段代码生产如下 OpenAPI 概图：
 
@@ -346,7 +346,7 @@ API 文档与所选的服务器进行交互。
 
 如果不想让 **ReadyAPI** 包含使用 `root_path` 的自动服务器，则要使用参数 `root_path_in_servers=False`：
 
-{* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
+{* ../../examples/behind_a_proxy/tutorial004.py hl[9] *}
 
 这样，就不会在 OpenAPI 概图中包含服务器了。
 

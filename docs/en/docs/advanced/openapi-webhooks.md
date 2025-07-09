@@ -32,7 +32,7 @@ Webhooks are available in OpenAPI 3.1.0 and above, supported by ReadyAPI `0.99.0
 
 When you create a **ReadyAPI** application, there is a `webhooks` attribute that you can use to define *webhooks*, the same way you would define *path operations*, for example with `@app.webhooks.post()`.
 
-{* ../../docs_src/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
+{* ../../examples/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
 
 The webhooks that you define will end up in the **OpenAPI** schema and the automatic **docs UI**.
 

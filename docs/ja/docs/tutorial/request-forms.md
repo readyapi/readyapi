@@ -14,13 +14,13 @@ JSONの代わりにフィールドを受け取る場合は、`Form`を使用し�
 
 `readyapi`から`Form`をインポートします:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[1] *}
+{* ../../examples/request_forms/tutorial001.py hl[1] *}
 
 ## `Form`のパラメータの定義
 
 `Body`や`Query`の場合と同じようにフォームパラメータを作成します:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[7] *}
+{* ../../examples/request_forms/tutorial001.py hl[7] *}
 
 例えば、OAuth2仕様が使用できる方法の１つ（「パスワードフロー」と呼ばれる）では、フォームフィールドとして`username`と`password`を送信する必要があります。
 

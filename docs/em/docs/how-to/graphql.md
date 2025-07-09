@@ -35,7 +35,7 @@
 
 📥 🤪 🎮 ❔ 👆 💪 🛠️ 🍓 ⏮️ ReadyAPI:
 
-{* ../../docs_src/graphql/tutorial001.py hl[3,22,25:26] *}
+{* ../../examples/graphql/tutorial001.py hl[3,22,25:26] *}
 
 👆 💪 💡 🌅 🔃 🍓 <a href="https://strawberry.rocks/" class="external-link" target="_blank">🍓 🧾</a>.
 

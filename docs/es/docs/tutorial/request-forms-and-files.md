@@ -16,13 +16,13 @@ $ pip install python-multipart
 
 ## Importar `File` y `Form`
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
 
 ## Definir parámetros `File` y `Form`
 
 Crea parámetros de archivo y formulario de la misma manera que lo harías para `Body` o `Query`:
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
 
 Los archivos y campos de formulario se subirán como form data y recibirás los archivos y campos de formulario.
 

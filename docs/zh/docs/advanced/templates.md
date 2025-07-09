@@ -27,7 +27,7 @@ $ pip install jinja2
 * 在返回模板的*路径操作*中声明 `Request` 参数
 * 使用 `templates` 渲染并返回 `TemplateResponse`， 传递模板的名称、request对象以及一个包含多个键值对（用于Jinja2模板）的"context"字典，
 
-{* ../../docs_src/templates/tutorial001.py hl[4,11,15:16] *}
+{* ../../examples/templates/tutorial001.py hl[4,11,15:16] *}
 
 /// note | 笔记
 
@@ -55,7 +55,7 @@ $ pip install jinja2
 编写模板 `templates/item.html`，代码如下：
 
 ```jinja hl_lines="7"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 ### 模板上下文
@@ -109,13 +109,13 @@ Item ID: 42
 你还可以在模板内部将 `url_for()`用于静态文件，例如你挂载的 `name="static"`的 `StaticFiles`。
 
 ```jinja hl_lines="4"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 本例中，它将链接到 `static/styles.css`中的CSS文件：
 
 ```CSS hl_lines="4"
-{!../../docs_src/templates/static/styles.css!}
+{!../../examples/templates/static/styles.css!}
 ```
 
 因为使用了 `StaticFiles`， **ReadyAPI** 应用会自动提供位于 URL `/static/styles.css`的 CSS 文件。

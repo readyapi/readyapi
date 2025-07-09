@@ -12,7 +12,7 @@
 
 👆 🔜 ✔️ ⚒ 💭 👈 ⚫️ 😍 🔠 🛠️.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial001.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial001.py hl[6] *}
 
 ### ⚙️ *➡ 🛠️ 🔢* 📛 {
 
@@ -20,7 +20,7 @@
 
 👆 🔜 ⚫️ ⏮️ ❎ 🌐 👆 *➡ 🛠️*.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial002.py hl[2,12:21,24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial002.py hl[2,12:21,24] *}
 
 /// tip
 
@@ -40,7 +40,7 @@
 
 🚫 *➡ 🛠️* ⚪️➡️ 🏗 🗄 🔗 (&amp; ➡️, ⚪️➡️ 🏧 🧾 ⚙️), ⚙️ 🔢 `include_in_schema` &amp; ⚒ ⚫️ `False`:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial003.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial003.py hl[6] *}
 
 ## 🏧 📛 ⚪️➡️ #️⃣
 
@@ -50,7 +50,7 @@
 
 ⚫️ 🏆 🚫 🎦 🆙 🧾, ✋️ 🎏 🧰 (✅ 🐉) 🔜 💪 ⚙️ 🎂.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
 
 ## 🌖 📨
 
@@ -92,7 +92,7 @@
 
 👉 `openapi_extra` 💪 👍, 🖼, 📣 [🗄 ↔](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions):
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial005.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial005.py hl[6] *}
 
 🚥 👆 📂 🏧 🛠️ 🩺, 👆 ↔ 🔜 🎦 🆙 🔝 🎯 *➡ 🛠️*.
 
@@ -139,7 +139,7 @@
 
 👆 💪 👈 ⏮️ `openapi_extra`:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial006.py hl[20:37,39:40] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial006.py hl[20:37,39:40] *}
 
 👉 🖼, 👥 🚫 📣 🙆 Pydantic 🏷. 👐, 📨 💪 🚫 <abbr title="converted from some plain format, like bytes, into Python objects">🎻</abbr> 🎻, ⚫️ ✍ 🔗 `bytes`, &amp; 🔢 `magic_data_reader()` 🔜 🈚 🎻 ⚫️ 🌌.
 
@@ -153,7 +153,7 @@
 
 🖼, 👉 🈸 👥 🚫 ⚙️ ReadyAPI 🛠️ 🛠️ ⚗ 🎻 🔗 ⚪️➡️ Pydantic 🏷 🚫 🏧 🔬 🎻. 👐, 👥 📣 📨 🎚 🆎 📁, 🚫 🎻:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
 
 👐, 👐 👥 🚫 ⚙️ 🔢 🛠️ 🛠️, 👥 ⚙️ Pydantic 🏷 ❎ 🏗 🎻 🔗 💽 👈 👥 💚 📨 📁.
 
@@ -161,7 +161,7 @@
 
 &amp; ⤴️ 👆 📟, 👥 🎻 👈 📁 🎚 🔗, &amp; ⤴️ 👥 🔄 ⚙️ 🎏 Pydantic 🏷 ✔ 📁 🎚:
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
 
 /// tip
 

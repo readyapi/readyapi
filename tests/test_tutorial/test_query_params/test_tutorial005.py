@@ -1,7 +1,7 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
 
-from docs_src.query_params.tutorial005 import app
+from examples.query_params.tutorial005 import app
 
 client = TestClient(app)
 

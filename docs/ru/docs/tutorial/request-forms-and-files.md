@@ -12,13 +12,13 @@
 
 ## Импортируйте `File` и `Form`
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
 
 ## Определите параметры `File` и `Form`
 
 Создайте параметры файла и формы таким же образом, как для `Body` или `Query`:
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
 
 Файлы и поля формы будут загружены в виде данных формы, и вы получите файлы и поля формы.
 

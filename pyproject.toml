@@ -112,7 +112,7 @@ distribution = true
 [tool.pdm.build]
 source-includes = [
     "tests/",
-    "docs_src/",
+    "examples/",
     "requirements*.txt",
     "scripts/",
     # For a test
@@ -136,7 +136,7 @@ ignore_missing_imports = true
 check_untyped_defs = true
 
 [[tool.mypy.overrides]]
-module = "docs_src.*"
+module = "examples.*"
 disallow_incomplete_defs = false
 disallow_untyped_defs = false
 disallow_untyped_calls = false
@@ -145,7 +145,7 @@ disallow_untyped_calls = false
 addopts = [
   "--strict-config",
   "--strict-markers",
-  "--ignore=docs_src",
+  "--ignore=examples",
 ]
 xfail_strict = true
 junit_family = "xunit2"
@@ -171,15 +171,15 @@ filterwarnings = [
 parallel = true
 data_file = "coverage/.coverage"
 source = [
-    "docs_src",
+    "examples",
     "tests",
     "readyapi"
 ]
 context = '${CONTEXT}'
 dynamic_context = "test_function"
 omit = [
-    "docs_src/response_model/tutorial003_04.py",
-    "docs_src/response_model/tutorial003_04_py310.py",
+    "examples/response_model/tutorial003_04.py",
+    "examples/response_model/tutorial003_04_py310.py",
 ]
 
 [tool.coverage.report]
@@ -208,35 +208,35 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
-"docs_src/dependencies/tutorial007.py" = ["F821"]
-"docs_src/dependencies/tutorial008.py" = ["F821"]
-"docs_src/dependencies/tutorial009.py" = ["F821"]
-"docs_src/dependencies/tutorial010.py" = ["F821"]
-"docs_src/custom_response/tutorial007.py" = ["B007"]
-"docs_src/dataclasses/tutorial003.py" = ["I001"]
-"docs_src/path_operation_advanced_configuration/tutorial007.py" = ["B904"]
-"docs_src/path_operation_advanced_configuration/tutorial007_pv1.py" = ["B904"]
-"docs_src/custom_request_and_route/tutorial002.py" = ["B904"]
-"docs_src/dependencies/tutorial008_an.py" = ["F821"]
-"docs_src/dependencies/tutorial008_an_py39.py" = ["F821"]
-"docs_src/query_params_str_validations/tutorial012_an.py" = ["B006"]
-"docs_src/query_params_str_validations/tutorial012_an_py39.py" = ["B006"]
-"docs_src/query_params_str_validations/tutorial013_an.py" = ["B006"]
-"docs_src/query_params_str_validations/tutorial013_an_py39.py" = ["B006"]
-"docs_src/security/tutorial004.py" = ["B904"]
-"docs_src/security/tutorial004_an.py" = ["B904"]
-"docs_src/security/tutorial004_an_py310.py" = ["B904"]
-"docs_src/security/tutorial004_an_py39.py" = ["B904"]
-"docs_src/security/tutorial004_py310.py" = ["B904"]
-"docs_src/security/tutorial005.py" = ["B904"]
-"docs_src/security/tutorial005_an.py" = ["B904"]
-"docs_src/security/tutorial005_an_py310.py" = ["B904"]
-"docs_src/security/tutorial005_an_py39.py" = ["B904"]
-"docs_src/security/tutorial005_py310.py" = ["B904"]
-"docs_src/security/tutorial005_py39.py" = ["B904"]
-"docs_src/dependencies/tutorial008b.py" = ["B904"]
-"docs_src/dependencies/tutorial008b_an.py" = ["B904"]
-"docs_src/dependencies/tutorial008b_an_py39.py" = ["B904"]
+"examples/dependencies/tutorial007.py" = ["F821"]
+"examples/dependencies/tutorial008.py" = ["F821"]
+"examples/dependencies/tutorial009.py" = ["F821"]
+"examples/dependencies/tutorial010.py" = ["F821"]
+"examples/custom_response/tutorial007.py" = ["B007"]
+"examples/dataclasses/tutorial003.py" = ["I001"]
+"examples/path_operation_advanced_configuration/tutorial007.py" = ["B904"]
+"examples/path_operation_advanced_configuration/tutorial007_pv1.py" = ["B904"]
+"examples/custom_request_and_route/tutorial002.py" = ["B904"]
+"examples/dependencies/tutorial008_an.py" = ["F821"]
+"examples/dependencies/tutorial008_an_py39.py" = ["F821"]
+"examples/query_params_str_validations/tutorial012_an.py" = ["B006"]
+"examples/query_params_str_validations/tutorial012_an_py39.py" = ["B006"]
+"examples/query_params_str_validations/tutorial013_an.py" = ["B006"]
+"examples/query_params_str_validations/tutorial013_an_py39.py" = ["B006"]
+"examples/security/tutorial004.py" = ["B904"]
+"examples/security/tutorial004_an.py" = ["B904"]
+"examples/security/tutorial004_an_py310.py" = ["B904"]
+"examples/security/tutorial004_an_py39.py" = ["B904"]
+"examples/security/tutorial004_py310.py" = ["B904"]
+"examples/security/tutorial005.py" = ["B904"]
+"examples/security/tutorial005_an.py" = ["B904"]
+"examples/security/tutorial005_an_py310.py" = ["B904"]
+"examples/security/tutorial005_an_py39.py" = ["B904"]
+"examples/security/tutorial005_py310.py" = ["B904"]
+"examples/security/tutorial005_py39.py" = ["B904"]
+"examples/dependencies/tutorial008b.py" = ["B904"]
+"examples/dependencies/tutorial008b_an.py" = ["B904"]
+"examples/dependencies/tutorial008b_an_py39.py" = ["B904"]
 
 
 [tool.ruff.lint.isort]

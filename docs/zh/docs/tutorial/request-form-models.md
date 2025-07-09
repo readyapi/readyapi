@@ -24,7 +24,7 @@ $ pip install python-multipart
 
 您只需声明一个 **Pydantic 模型**，其中包含您希望接收的**表单字段**，然后将参数声明为 `Form` :
 
-{* ../../docs_src/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
+{* ../../examples/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
 
 **ReadyAPI** 将从请求中的**表单数据**中**提取**出**每个字段**的数据，并提供您定义的 Pydantic 模型。
 
@@ -48,7 +48,7 @@ $ pip install python-multipart
 
 您可以使用 Pydantic 的模型配置来禁止（ `forbid` ）任何额外（ `extra` ）字段：
 
-{* ../../docs_src/request_form_models/tutorial002_an_py39.py hl[12] *}
+{* ../../examples/request_form_models/tutorial002_an_py39.py hl[12] *}
 
 如果客户端尝试发送一些额外的数据，他们将收到**错误**响应。
 

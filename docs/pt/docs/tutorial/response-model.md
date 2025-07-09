@@ -4,7 +4,7 @@ Você pode declarar o tipo usado para a resposta anotando o **tipo de retorno** 
 
 Você pode usar **anotações de tipo** da mesma forma que usaria para dados de entrada em **parâmetros** de função, você pode usar modelos Pydantic, listas, dicionários, valores escalares como inteiros, booleanos, etc.
 
-{* ../../docs_src/response_model/tutorial001_01_py310.py hl[16,21] *}
+{* ../../examples/response_model/tutorial001_01_py310.py hl[16,21] *}
 
 O ReadyAPI usará este tipo de retorno para:
 
@@ -37,7 +37,7 @@ Você pode usar o parâmetro `response_model` em qualquer uma das *operações d
 * `@app.delete()`
 * etc.
 
-{* ../../docs_src/response_model/tutorial001_py310.py hl[17,22,24:27] *}
+{* ../../examples/response_model/tutorial001_py310.py hl[17,22,24:27] *}
 
 /// note | Nota
 
@@ -69,7 +69,7 @@ Você também pode usar `response_model=None` para desabilitar a criação de um
 
 Aqui estamos declarando um modelo `UserIn`, ele conterá uma senha em texto simples:
 
-{* ../../docs_src/response_model/tutorial002_py310.py hl[7,9] *}
+{* ../../examples/response_model/tutorial002_py310.py hl[7,9] *}
 
 /// info | Informação
 
@@ -91,7 +91,7 @@ $ pip install "pydantic[email]"
 
 E estamos usando este modelo para declarar nossa entrada e o mesmo modelo para declarar nossa saída:
 
-{* ../../docs_src/response_model/tutorial002_py310.py hl[16] *}
+{* ../../examples/response_model/tutorial002_py310.py hl[16] *}
 
 Agora, sempre que um navegador estiver criando um usuário com uma senha, a API retornará a mesma senha na resposta.
 
@@ -109,15 +109,15 @@ Nunca armazene a senha simples de um usuário ou envie-a em uma resposta como es
 
 Podemos, em vez disso, criar um modelo de entrada com a senha em texto simples e um modelo de saída sem ela:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[9,11,16] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[9,11,16] *}
 
 Aqui, embora nossa *função de operação de rota* esteja retornando o mesmo usuário de entrada que contém a senha:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[24] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[24] *}
 
 ...declaramos o `response_model` como nosso modelo `UserOut`, que não inclui a senha:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[22] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[22] *}
 
 Então, **ReadyAPI** cuidará de filtrar todos os dados que não são declarados no modelo de saída (usando Pydantic).
 
@@ -141,7 +141,7 @@ Mas na maioria dos casos em que precisamos fazer algo assim, queremos que o mode
 
 E nesses casos, podemos usar classes e herança para aproveitar as **anotações de tipo** de função para obter melhor suporte no editor e nas ferramentas, e ainda obter a **filtragem de dados** ReadyAPI.
 
-{* ../../docs_src/response_model/tutorial003_01_py310.py hl[7:10,13:14,18] *}
+{* ../../examples/response_model/tutorial003_01_py310.py hl[7:10,13:14,18] *}
 
 Com isso, temos suporte de ferramentas, de editores e mypy, pois este código está correto em termos de tipos, mas também obtemos a filtragem de dados do ReadyAPI.
 
@@ -183,7 +183,7 @@ Pode haver casos em que você retorna algo que não é um campo Pydantic válido
 
 O caso mais comum seria [retornar uma resposta diretamente, conforme explicado posteriormente na documentação avançada](../advanced/response-directly.md){.internal-link target=_blank}.
 
-{* ../../docs_src/response_model/tutorial003_02.py hl[8,10:11] *}
+{* ../../examples/response_model/tutorial003_02.py hl[8,10:11] *}
 
 Este caso simples é tratado automaticamente pelo ReadyAPI porque a anotação do tipo de retorno é a classe (ou uma subclasse de) `Response`.
 
@@ -193,7 +193,7 @@ E as ferramentas também ficarão felizes porque `RedirectResponse` e ​​`JSO
 
 Você também pode usar uma subclasse de `Response` na anotação de tipo:
 
-{* ../../docs_src/response_model/tutorial003_03.py hl[8:9] *}
+{* ../../examples/response_model/tutorial003_03.py hl[8:9] *}
 
 Isso também funcionará porque `RedirectResponse` é uma subclasse de `Response`, e o ReadyAPI tratará automaticamente este caso simples.
 
@@ -203,7 +203,7 @@ Mas quando você retorna algum outro objeto arbitrário que não é um tipo Pyda
 
 O mesmo aconteceria se você tivesse algo como uma <abbr title='Uma união entre vários tipos significa "qualquer um desses tipos".'>união</abbr> entre tipos diferentes onde um ou mais deles não são tipos Pydantic válidos, por exemplo, isso falharia 💥:
 
-{* ../../docs_src/response_model/tutorial003_04_py310.py hl[8] *}
+{* ../../examples/response_model/tutorial003_04_py310.py hl[8] *}
 
 ... isso falha porque a anotação de tipo não é um tipo Pydantic e não é apenas uma única classe ou subclasse `Response`, é uma união (qualquer uma das duas) entre um `Response` e ​​um `dict`.
 
@@ -215,7 +215,7 @@ Mas você pode querer manter a anotação do tipo de retorno na função para ob
 
 Neste caso, você pode desabilitar a geração do modelo de resposta definindo `response_model=None`:
 
-{* ../../docs_src/response_model/tutorial003_05_py310.py hl[7] *}
+{* ../../examples/response_model/tutorial003_05_py310.py hl[7] *}
 
 Isso fará com que o ReadyAPI pule a geração do modelo de resposta e, dessa forma, você pode ter quaisquer anotações de tipo de retorno que precisar sem afetar seu aplicativo ReadyAPI. 🤓
 
@@ -223,7 +223,7 @@ Isso fará com que o ReadyAPI pule a geração do modelo de resposta e, dessa fo
 
 Seu modelo de resposta pode ter valores padrão, como:
 
-{* ../../docs_src/response_model/tutorial004_py310.py hl[9,11:12] *}
+{* ../../examples/response_model/tutorial004_py310.py hl[9,11:12] *}
 
 * `description: Union[str, None] = None` (ou `str | None = None` no Python 3.10) tem um padrão de `None`.
 * `tax: float = 10.5` tem um padrão de `10.5`.
@@ -237,7 +237,7 @@ Por exemplo, se você tem modelos com muitos atributos opcionais em um banco de 
 
 Você pode definir o parâmetro `response_model_exclude_unset=True` do *decorador de operação de rota* :
 
-{* ../../docs_src/response_model/tutorial004_py310.py hl[22] *}
+{* ../../examples/response_model/tutorial004_py310.py hl[22] *}
 
 e esses valores padrão não serão incluídos na resposta, apenas os valores realmente definidos.
 
@@ -334,7 +334,7 @@ Isso também se aplica ao `response_model_by_alias` que funciona de forma semelh
 
 ///
 
-{* ../../docs_src/response_model/tutorial005_py310.py hl[29,35] *}
+{* ../../examples/response_model/tutorial005_py310.py hl[29,35] *}
 
 /// tip | Dica
 
@@ -348,7 +348,7 @@ A sintaxe `{"nome", "descrição"}` cria um `conjunto` com esses dois valores.
 
 Se você esquecer de usar um `set` e usar uma `lista` ou `tupla` em vez disso, o ReadyAPI ainda o converterá em um `set` e funcionará corretamente:
 
-{* ../../docs_src/response_model/tutorial006_py310.py hl[29,35] *}
+{* ../../examples/response_model/tutorial006_py310.py hl[29,35] *}
 
 ## Recapitulação
 

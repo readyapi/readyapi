@@ -20,7 +20,7 @@ Então, quando você digitar o usuário e senha, o navegador os envia automatica
 * Isso retorna um objeto do tipo `HTTPBasicCredentials`:
     * Isto contém o `username` e o `password` enviado.
 
-{* ../../docs_src/security/tutorial006_an_py39.py hl[4,8,12] *}
+{* ../../examples/security/tutorial006_an_py39.py hl[4,8,12] *}
 
 Quando você tentar abrir a URL pela primeira vez (ou clicar no botão "Executar" nos documentos) o navegador vai pedir pelo seu usuário e senha:
 
@@ -40,7 +40,7 @@ Para lidar com isso, primeiramente nós convertemos o `username` e o `password` 
 
 Então nós podemos utilizar o `secrets.compare_digest()` para garantir que o `credentials.username` é `"stanleyjobson"`, e que o `credentials.password` é `"swordfish"`.
 
-{* ../../docs_src/security/tutorial007_an_py39.py hl[1,12:24] *}
+{* ../../examples/security/tutorial007_an_py39.py hl[1,12:24] *}
 
 Isso seria parecido com:
 
@@ -105,4 +105,4 @@ Deste modo, ao utilizar `secrets.compare_digest()` no código de sua aplicação
 
 Após detectar que as credenciais estão incorretas, retorne um `HTTPException` com o status 401 (o mesmo retornado quando nenhuma credencial foi informada) e adicione o cabeçalho `WWW-Authenticate` para fazer com que o navegador mostre o prompt de login novamente:
 
-{* ../../docs_src/security/tutorial007_an_py39.py hl[26:30] *}
+{* ../../examples/security/tutorial007_an_py39.py hl[26:30] *}

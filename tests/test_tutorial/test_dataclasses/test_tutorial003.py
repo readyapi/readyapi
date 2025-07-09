@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.dataclasses.tutorial003 import app
+from examples.dataclasses.tutorial003 import app
 
 from ...utils import needs_pydanticv1, needs_pydanticv2
 

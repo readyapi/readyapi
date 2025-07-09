@@ -8,7 +8,7 @@
 * `@app.delete()`
 * ♒️.
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 /// note
 
@@ -74,7 +74,7 @@ ReadyAPI 💭 👉, &amp; 🔜 🏭 🗄 🩺 👈 🇵🇸 📤 🙅‍♂ 📨
 
 ➡️ 👀 ⏮️ 🖼 🔄:
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 `201` 👔 📟 "✍".
 
@@ -82,7 +82,7 @@ ReadyAPI 💭 👉, &amp; 🔜 🏭 🗄 🩺 👈 🇵🇸 📤 🙅‍♂ 📨
 
 👆 💪 ⚙️ 🏪 🔢 ⚪️➡️ `readyapi.status`.
 
-{* ../../docs_src/response_status_code/tutorial002.py hl[1,6] *}
+{* ../../examples/response_status_code/tutorial002.py hl[1,6] *}
 
 👫 🏪, 👫 🧑‍🤝‍🧑 🎏 🔢, ✋️ 👈 🌌 👆 💪 ⚙️ 👨‍🎨 📋 🔎 👫:
 

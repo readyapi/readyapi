@@ -31,7 +31,7 @@
 
 *경로 작동 함수*가 가질 수 있는 모든 매개변수를 갖는 단순한 함수입니다:
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8:9] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[8:9] *}
 
 이게 다입니다.
 
@@ -63,13 +63,13 @@ ReadyAPI는 0.95.0 버전부터 `Annotated`에 대한 지원을 (그리고 이�
 
 ### `Depends` 불러오기
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[3] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[3] *}
 
 ### "의존자"에 의존성 명시하기
 
 *경로 작동 함수*의 매개변수로 `Body`, `Query` 등을 사용하는 방식과 같이 새로운 매개변수로 `Depends`를 사용합니다:
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[13,18] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[13,18] *}
 
 비록 `Body`, `Query` 등을 사용하는 것과 같은 방식으로 여러분의 함수의 매개변수에 있는 `Depends`를 사용하지만, `Depends`는 약간 다르게 작동합니다.
 
@@ -126,7 +126,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 하지만 `Annotated`를 사용하고 있기에, `Annotated` 값을 변수에 저장하고 여러 장소에서 사용할 수 있습니다:
 
-{* ../../docs_src/dependencies/tutorial001_02_an_py310.py hl[12,16,21] *}
+{* ../../examples/dependencies/tutorial001_02_an_py310.py hl[12,16,21] *}
 
 /// tip | 팁
 

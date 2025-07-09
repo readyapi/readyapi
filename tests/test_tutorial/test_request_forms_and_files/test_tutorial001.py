@@ -17,7 +17,7 @@ from ...utils import needs_py39
     ],
 )
 def get_app(request: pytest.FixtureRequest):
-    mod = importlib.import_module(f"docs_src.request_forms_and_files.{request.param}")
+    mod = importlib.import_module(f"examples.request_forms_and_files.{request.param}")
 
     return mod.app
 

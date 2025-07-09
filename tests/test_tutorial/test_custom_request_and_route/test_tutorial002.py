@@ -1,7 +1,7 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
 
-from docs_src.custom_request_and_route.tutorial002 import app
+from examples.custom_request_and_route.tutorial002 import app
 
 client = TestClient(app)
 

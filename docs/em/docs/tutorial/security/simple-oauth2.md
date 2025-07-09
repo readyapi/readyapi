@@ -52,7 +52,7 @@ Oauth2️⃣ 👫 🎻.
 
 🥇, 🗄 `OAuth2PasswordRequestForm`, &amp; ⚙️ ⚫️ 🔗 ⏮️ `Depends` *➡ 🛠️* `/token`:
 
-{* ../../docs_src/security/tutorial003.py hl[4,76] *}
+{* ../../examples/security/tutorial003.py hl[4,76] *}
 
 `OAuth2PasswordRequestForm` 🎓 🔗 👈 📣 📨 💪 ⏮️:
 
@@ -100,7 +100,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 
 ❌, 👥 ⚙️ ⚠ `HTTPException`:
 
-{* ../../docs_src/security/tutorial003.py hl[3,77:79] *}
+{* ../../examples/security/tutorial003.py hl[3,77:79] *}
 
 ### ✅ 🔐
 
@@ -126,7 +126,7 @@ Oauth2️⃣ 🔌 🤙 *🚚* 🏑 `grant_type` ⏮️ 🔧 💲 `password`, ✋
 
 , 🧙‍♀ 🏆 🚫 💪 🔄 ⚙️ 👈 🎏 🔐 ➕1️⃣ ⚙️ (📚 👩‍💻 ⚙️ 🎏 🔐 🌐, 👉 🔜 ⚠).
 
-{* ../../docs_src/security/tutorial003.py hl[80:83] *}
+{* ../../examples/security/tutorial003.py hl[80:83] *}
 
 #### 🔃 `**user_dict`
 
@@ -168,7 +168,7 @@ UserInDB(
 
 ///
 
-{* ../../docs_src/security/tutorial003.py hl[85] *}
+{* ../../examples/security/tutorial003.py hl[85] *}
 
 /// tip
 
@@ -194,7 +194,7 @@ UserInDB(
 
 , 👆 🔗, 👥 🔜 🕴 🤚 👩‍💻 🚥 👩‍💻 🔀, ☑ 🔓, &amp; 🦁:
 
-{* ../../docs_src/security/tutorial003.py hl[58:66,69:72,90] *}
+{* ../../examples/security/tutorial003.py hl[58:66,69:72,90] *}
 
 /// info
 

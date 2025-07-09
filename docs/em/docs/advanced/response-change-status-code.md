@@ -20,7 +20,7 @@
 
 &amp; ⤴️ 👆 💪 ⚒ `status_code` 👈 *🔀* 📨 🎚.
 
-{* ../../docs_src/response_change_status_code/tutorial001.py hl[1,9,12] *}
+{* ../../examples/response_change_status_code/tutorial001.py hl[1,9,12] *}
 
 &amp; ⤴️ 👆 💪 📨 🙆 🎚 👆 💪, 👆 🛎 🔜 ( `dict`, 💽 🏷, ♒️).
 

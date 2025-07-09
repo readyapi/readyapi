@@ -55,7 +55,7 @@ Depois, vamos melhorá-lo aumentando a segurança e versatilidade com **múltipl
 
 Importe o `SQLDev` e crie um modelo de banco de dados:
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[1:11] hl[7:11] *}
 
 A classe `Hero` é muito semelhante a um modelo Pydantic (na verdade, por baixo dos panos, ela *é um modelo Pydantic*).
 
@@ -76,7 +76,7 @@ Um `engine` SQLDev (por baixo dos panos, ele é na verdade um `engine` do SQLAlc
 
 Você teria **um único objeto `engine`** para todo o seu código se conectar ao mesmo banco de dados.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[14:18] hl[14:15,17:18] *}
 
 Usar `check_same_thread=False` permite que o ReadyAPI use o mesmo banco de dados SQLite em diferentes threads. Isso é necessário, pois **uma única requisição** pode usar **mais de uma thread** (por exemplo, em dependências).
 
@@ -86,7 +86,7 @@ Não se preocupe, com a forma como o código está estruturado, garantiremos que
 
 Em seguida, adicionamos uma função que usa `SQLDev.metadata.create_all(engine)` para **criar as tabelas** para todos os *modelos de tabela*.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[21:22] hl[21:22] *}
 
 ### Criar uma Dependência de Sessão
 
@@ -96,13 +96,13 @@ Vamos criar uma **dependência** do ReadyAPI com `yield` que fornecerá uma nova
 
 Então, criamos uma dependência `Annotated` chamada `SessionDep` para simplificar o restante do código que usará essa dependência.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[25:30] hl[25:27,30] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[25:30] hl[25:27,30] *}
 
 ### Criar Tabelas de Banco de Dados na Inicialização
 
 Vamos criar as tabelas do banco de dados quando o aplicativo for iniciado.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[32:37] hl[35:37] *}
 
 Aqui, criamos as tabelas em um evento de inicialização do aplicativo.
 
@@ -122,7 +122,7 @@ Por exemplo, se você declarar um parâmetro do tipo `Hero`, ele será lido do *
 
 Da mesma forma, você pode declará-lo como o **tipo de retorno** da função, e então o formato dos dados aparecerá na interface de documentação automática da API.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[40:45] hl[40:45] *}
 
 </details>
 
@@ -132,19 +132,19 @@ Aqui, usamos a dependência `SessionDep` (uma `Session`) para adicionar o novo `
 
 Podemos **ler** `Hero`s do banco de dados usando um `select()`. Podemos incluir um `limit` e `offset` para paginar os resultados.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[48:55] hl[51:52,54] *}
 
 ### Ler um Único Hero
 
 Podemos **ler** um único `Hero`.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[58:63] hl[60] *}
 
 ### Deletar um Hero
 
 Também podemos **deletar** um `Hero`.
 
-{* ../../docs_src/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] *}
+{* ../../examples/sql_databases/tutorial001_an_py310.py ln[66:73] hl[71] *}
 
 ### Executar o App
 
@@ -193,7 +193,7 @@ Vamos começar com um modelo `HeroBase` que tem todos os **campos compartilhados
 * `name`
 * `age`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:9] hl[7:9] *}
 
 #### `Hero` - o *modelo de tabela*
 
@@ -209,7 +209,7 @@ Como `Hero` herda de `HeroBase`, ele **também** tem os **campos** declarados em
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:14] hl[12:14] *}
 
 #### `HeroPublic` - o *modelo de dados* público
 
@@ -236,7 +236,7 @@ Todos os campos em `HeroPublic` são os mesmos que em `HeroBase`, com `id` decla
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:18] hl[17:18] *}
 
 #### `HeroCreate` - o *modelo de dados* para criar um hero
 
@@ -260,7 +260,7 @@ Os campos de `HeroCreate` são:
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:22] hl[21:22] *}
 
 #### `HeroUpdate` - o *modelo de dados* para atualizar um hero
 
@@ -278,7 +278,7 @@ Os campos de `HeroUpdate` são:
 * `age`
 * `secret_name`
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[7:28] hl[25:28] *}
 
 ### Criar com `HeroCreate` e retornar um `HeroPublic`
 
@@ -290,7 +290,7 @@ Esse novo *modelo de tabela* `Hero` terá os campos enviados pelo cliente, e tam
 
 Em seguida, retornamos o mesmo *modelo de tabela* `Hero` como está na função. Mas como declaramos o `response_model` com o *modelo de dados* `HeroPublic`, o **ReadyAPI** usará `HeroPublic` para validar e serializar os dados.
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[56:62] hl[56:58] *}
 
 /// tip | Dica
 
@@ -306,13 +306,13 @@ Ao declará-lo no `response_model`, estamos dizendo ao **ReadyAPI** para fazer o
 
 Podemos fazer o mesmo que antes para **ler** `Hero`s, novamente, usamos `response_model=list[HeroPublic]` para garantir que os dados sejam validados e serializados corretamente.
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[65:72] hl[65] *}
 
 ### Ler Um Hero com `HeroPublic`
 
 Podemos **ler** um único herói:
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[75:80] hl[77] *}
 
 ### Atualizar um Hero com `HeroUpdate`
 
@@ -322,7 +322,7 @@ E no código, obtemos um `dict` com todos os dados enviados pelo cliente, **apen
 
 Em seguida, usamos `hero_db.sqldev_update(hero_data)` para atualizar o `hero_db` com os dados de `hero_data`.
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[83:93] hl[83:84,88:89] *}
 
 ### Deletar um Hero Novamente
 
@@ -330,7 +330,7 @@ Em seguida, usamos `hero_db.sqldev_update(hero_data)` para atualizar o `hero_db`
 
 Não vamos satisfazer o desejo de refatorar tudo neste aqui. 😅
 
-{* ../../docs_src/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] *}
+{* ../../examples/sql_databases/tutorial002_an_py310.py ln[96:103] hl[101] *}
 
 ### Executar o App Novamente
 

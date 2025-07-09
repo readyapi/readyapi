@@ -118,7 +118,7 @@ $ pip install "passlib[bcrypt]"
 
 &amp; ➕1️⃣ 1️⃣ 🔓 &amp; 📨 👩‍💻.
 
-{* ../../docs_src/security/tutorial004.py hl[7,48,55:56,59:60,69:75] *}
+{* ../../examples/security/tutorial004.py hl[7,48,55:56,59:60,69:75] *}
 
 /// note
 
@@ -154,7 +154,7 @@ $ openssl rand -hex 32
 
 ✍ 🚙 🔢 🏗 🆕 🔐 🤝.
 
-{* ../../docs_src/security/tutorial004.py hl[6,12:14,28:30,78:86] *}
+{* ../../examples/security/tutorial004.py hl[6,12:14,28:30,78:86] *}
 
 ## ℹ 🔗
 
@@ -164,7 +164,7 @@ $ openssl rand -hex 32
 
 🚥 🤝 ❌, 📨 🇺🇸🔍 ❌ ▶️️ ↖️.
 
-{* ../../docs_src/security/tutorial004.py hl[89:106] *}
+{* ../../examples/security/tutorial004.py hl[89:106] *}
 
 ## ℹ `/token` *➡ 🛠️*
 
@@ -172,7 +172,7 @@ $ openssl rand -hex 32
 
 ✍ 🎰 🥙 🔐 🤝 &amp; 📨 ⚫️.
 
-{* ../../docs_src/security/tutorial004.py hl[115:130] *}
+{* ../../examples/security/tutorial004.py hl[115:130] *}
 
 ### 📡 ℹ 🔃 🥙 "📄" `sub`
 

@@ -32,7 +32,7 @@ También hay varias otras empresas que ofrecen servicios similares que puedes bu
 
 Empecemos con una aplicación simple de ReadyAPI:
 
-{* ../../docs_src/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
+{* ../../examples/generate_clients/tutorial001_py39.py hl[7:9,12:13,16:17,21] *}
 
 Nota que las *path operations* definen los modelos que usan para el payload de la petición y el payload del response, usando los modelos `Item` y `ResponseMessage`.
 
@@ -137,7 +137,7 @@ En muchos casos tu aplicación de ReadyAPI será más grande, y probablemente us
 
 Por ejemplo, podrías tener una sección para **items** y otra sección para **usuarios**, y podrían estar separadas por tags:
 
-{* ../../docs_src/generate_clients/tutorial002_py39.py hl[21,26,34] *}
+{* ../../examples/generate_clients/tutorial002_py39.py hl[21,26,34] *}
 
 ### Genera un Cliente TypeScript con Tags
 
@@ -184,7 +184,7 @@ Por ejemplo, aquí está usando el primer tag (probablemente tendrás solo un ta
 
 Puedes entonces pasar esa función personalizada a **ReadyAPI** como el parámetro `generate_unique_id_function`:
 
-{* ../../docs_src/generate_clients/tutorial003_py39.py hl[6:7,10] *}
+{* ../../examples/generate_clients/tutorial003_py39.py hl[6:7,10] *}
 
 ### Generar un Cliente TypeScript con Operation IDs Personalizados
 
@@ -206,12 +206,12 @@ Pero para el cliente generado podríamos **modificar** los operation IDs de Open
 
 Podríamos descargar el JSON de OpenAPI a un archivo `openapi.json` y luego podríamos **remover ese tag prefijado** con un script como este:
 
-{* ../../docs_src/generate_clients/tutorial004.py *}
+{* ../../examples/generate_clients/tutorial004.py *}
 
 //// tab | Node.js
 
 ```Javascript
-{!> ../../docs_src/generate_clients/tutorial004.js!}
+{!> ../../examples/generate_clients/tutorial004.js!}
 ```
 
 ////

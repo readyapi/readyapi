@@ -7,14 +7,14 @@ from ...utils import needs_py39
 
 @pytest.fixture(name="app")
 def get_app():
-    from docs_src.websockets.tutorial003_py39 import app
+    from examples.websockets.tutorial003_py39 import app
 
     return app
 
 
 @pytest.fixture(name="html")
 def get_html():
-    from docs_src.websockets.tutorial003_py39 import html
+    from examples.websockets.tutorial003_py39 import html
 
     return html
 

@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.configure_swagger_ui.tutorial003 import app
+from examples.configure_swagger_ui.tutorial003 import app
 
 client = TestClient(app)
 

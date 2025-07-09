@@ -62,7 +62,7 @@ Puedes usar todas las mismas funcionalidades de validación y herramientas que u
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/settings/tutorial001.py hl[2,5:8,11] *}
+{* ../../examples/settings/tutorial001.py hl[2,5:8,11] *}
 
 ////
 
@@ -74,7 +74,7 @@ En Pydantic v1 importarías `BaseSettings` directamente desde `pydantic` en luga
 
 ///
 
-{* ../../docs_src/settings/tutorial001_pv1.py hl[2,5:8,11] *}
+{* ../../examples/settings/tutorial001_pv1.py hl[2,5:8,11] *}
 
 ////
 
@@ -92,7 +92,7 @@ Luego convertirá y validará los datos. Así que, cuando uses ese objeto `setti
 
 Luego puedes usar el nuevo objeto `settings` en tu aplicación:
 
-{* ../../docs_src/settings/tutorial001.py hl[18:20] *}
+{* ../../examples/settings/tutorial001.py hl[18:20] *}
 
 ### Ejecutar el servidor
 
@@ -126,11 +126,11 @@ Podrías poner esas configuraciones en otro archivo de módulo como viste en [Ap
 
 Por ejemplo, podrías tener un archivo `config.py` con:
 
-{* ../../docs_src/settings/app01/config.py *}
+{* ../../examples/settings/app01/config.py *}
 
 Y luego usarlo en un archivo `main.py`:
 
-{* ../../docs_src/settings/app01/main.py hl[3,11:13] *}
+{* ../../examples/settings/app01/main.py hl[3,11:13] *}
 
 /// tip | Consejo
 
@@ -148,7 +148,7 @@ Esto podría ser especialmente útil durante las pruebas, ya que es muy fácil s
 
 Proveniente del ejemplo anterior, tu archivo `config.py` podría verse como:
 
-{* ../../docs_src/settings/app02/config.py hl[10] *}
+{* ../../examples/settings/app02/config.py hl[10] *}
 
 Nota que ahora no creamos una instance por defecto `settings = Settings()`.
 
@@ -156,7 +156,7 @@ Nota que ahora no creamos una instance por defecto `settings = Settings()`.
 
 Ahora creamos una dependencia que devuelve un nuevo `config.Settings()`.
 
-{* ../../docs_src/settings/app02_an_py39/main.py hl[6,12:13] *}
+{* ../../examples/settings/app02_an_py39/main.py hl[6,12:13] *}
 
 /// tip | Consejo
 
@@ -168,13 +168,13 @@ Por ahora puedes asumir que `get_settings()` es una función normal.
 
 Y luego podemos requerirlo desde la *path operation function* como una dependencia y usarlo donde lo necesitemos.
 
-{* ../../docs_src/settings/app02_an_py39/main.py hl[17,19:21] *}
+{* ../../examples/settings/app02_an_py39/main.py hl[17,19:21] *}
 
 ### Configuraciones y pruebas
 
 Luego sería muy fácil proporcionar un objeto de configuraciones diferente durante las pruebas al sobrescribir una dependencia para `get_settings`:
 
-{* ../../docs_src/settings/app02/test_main.py hl[9:10,13,21] *}
+{* ../../examples/settings/app02/test_main.py hl[9:10,13,21] *}
 
 En la dependencia sobreescrita establecemos un nuevo valor para el `admin_email` al crear el nuevo objeto `Settings`, y luego devolvemos ese nuevo objeto.
 
@@ -217,7 +217,7 @@ Y luego actualizar tu `config.py` con:
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/settings/app03_an/config.py hl[9] *}
+{* ../../examples/settings/app03_an/config.py hl[9] *}
 
 /// tip | Consejo
 
@@ -229,7 +229,7 @@ El atributo `model_config` se usa solo para configuración de Pydantic. Puedes l
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/settings/app03_an/config_pv1.py hl[9:10] *}
+{* ../../examples/settings/app03_an/config_pv1.py hl[9:10] *}
 
 /// tip | Consejo
 
@@ -270,7 +270,7 @@ crearíamos ese objeto para cada request, y estaríamos leyendo el archivo `.env
 
 Pero como estamos usando el decorador `@lru_cache` encima, el objeto `Settings` se creará solo una vez, la primera vez que se llame. ✔️
 
-{* ../../docs_src/settings/app03_an_py39/main.py hl[1,11] *}
+{* ../../examples/settings/app03_an_py39/main.py hl[1,11] *}
 
 Entonces, para cualquier llamada subsiguiente de `get_settings()` en las dependencias de los próximos requests, en lugar de ejecutar el código interno de `get_settings()` y crear un nuevo objeto `Settings`, devolverá el mismo objeto que fue devuelto en la primera llamada, una y otra vez.
 

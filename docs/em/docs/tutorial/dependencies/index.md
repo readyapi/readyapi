@@ -31,7 +31,7 @@
 
 ⚫️ 🔢 👈 💪 ✊ 🌐 🎏 🔢 👈 *➡ 🛠️ 🔢* 💪 ✊:
 
-{* ../../docs_src/dependencies/tutorial001.py hl[8:11] *}
+{* ../../examples/dependencies/tutorial001.py hl[8:11] *}
 
 👈 ⚫️.
 
@@ -53,13 +53,13 @@
 
 ### 🗄 `Depends`
 
-{* ../../docs_src/dependencies/tutorial001.py hl[3] *}
+{* ../../examples/dependencies/tutorial001.py hl[3] *}
 
 ### 📣 🔗, "⚓️"
 
 🎏 🌌 👆 ⚙️ `Body`, `Query`, ♒️. ⏮️ 👆 *➡ 🛠️ 🔢* 🔢, ⚙️ `Depends` ⏮️ 🆕 🔢:
 
-{* ../../docs_src/dependencies/tutorial001.py hl[15,20] *}
+{* ../../examples/dependencies/tutorial001.py hl[15,20] *}
 
 👐 👆 ⚙️ `Depends` 🔢 👆 🔢 🎏 🌌 👆 ⚙️ `Body`, `Query`, ♒️, `Depends` 👷 👄 🎏.
 

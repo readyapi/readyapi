@@ -22,7 +22,7 @@ Si eres un experto en Python, y ya sabes todo sobre las anotaciones de tipos, sa
 
 Comencemos con un ejemplo simple:
 
-{* ../../docs_src/python_types/tutorial001.py *}
+{* ../../examples/python_types/tutorial001.py *}
 
 Llamar a este programa genera:
 
@@ -36,7 +36,7 @@ La función hace lo siguiente:
 * Convierte la primera letra de cada uno a mayúsculas con `title()`.
 * <abbr title="Los une, como uno. Con el contenido de uno después del otro.">Concatena</abbr> ambos con un espacio en el medio.
 
-{* ../../docs_src/python_types/tutorial001.py hl[2] *}
+{* ../../examples/python_types/tutorial001.py hl[2] *}
 
 ### Edítalo
 
@@ -78,7 +78,7 @@ Eso es todo.
 
 Esas son las "anotaciones de tipos":
 
-{* ../../docs_src/python_types/tutorial002.py hl[1] *}
+{* ../../examples/python_types/tutorial002.py hl[1] *}
 
 Eso no es lo mismo que declarar valores predeterminados como sería con:
 
@@ -106,7 +106,7 @@ Con eso, puedes desplazarte, viendo las opciones, hasta que encuentres la que "t
 
 Revisa esta función, ya tiene anotaciones de tipos:
 
-{* ../../docs_src/python_types/tutorial003.py hl[1] *}
+{* ../../examples/python_types/tutorial003.py hl[1] *}
 
 Porque el editor conoce los tipos de las variables, no solo obtienes autocompletado, también obtienes chequeo de errores:
 
@@ -114,7 +114,7 @@ Porque el editor conoce los tipos de las variables, no solo obtienes autocomplet
 
 Ahora sabes que debes corregirlo, convertir `age` a un string con `str(age)`:
 
-{* ../../docs_src/python_types/tutorial004.py hl[2] *}
+{* ../../examples/python_types/tutorial004.py hl[2] *}
 
 ## Declaración de tipos
 
@@ -133,7 +133,7 @@ Puedes usar, por ejemplo:
 * `bool`
 * `bytes`
 
-{* ../../docs_src/python_types/tutorial005.py hl[1] *}
+{* ../../examples/python_types/tutorial005.py hl[1] *}
 
 ### Tipos genéricos con parámetros de tipo
 
@@ -170,7 +170,7 @@ Como tipo, pon `list`.
 Como la lista es un tipo que contiene algunos tipos internos, los pones entre corchetes:
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial006_py39.py!}
+{!> ../../examples/python_types/tutorial006_py39.py!}
 ```
 
 ////
@@ -180,7 +180,7 @@ Como la lista es un tipo que contiene algunos tipos internos, los pones entre co
 De `typing`, importa `List` (con una `L` mayúscula):
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial006.py!}
+{!> ../../examples/python_types/tutorial006.py!}
 ```
 
 Declara la variable, con la misma sintaxis de dos puntos (`:`).
@@ -190,7 +190,7 @@ Como tipo, pon el `List` que importaste de `typing`.
 Como la lista es un tipo que contiene algunos tipos internos, los pones entre corchetes:
 
 ```Python hl_lines="4"
-{!> ../../docs_src/python_types/tutorial006.py!}
+{!> ../../examples/python_types/tutorial006.py!}
 ```
 
 ////
@@ -228,7 +228,7 @@ Harías lo mismo para declarar `tuple`s y `set`s:
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial007_py39.py!}
+{!> ../../examples/python_types/tutorial007_py39.py!}
 ```
 
 ////
@@ -236,7 +236,7 @@ Harías lo mismo para declarar `tuple`s y `set`s:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial007.py!}
+{!> ../../examples/python_types/tutorial007.py!}
 ```
 
 ////
@@ -257,7 +257,7 @@ El segundo parámetro de tipo es para los valores del `dict`:
 //// tab | Python 3.9+
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial008_py39.py!}
+{!> ../../examples/python_types/tutorial008_py39.py!}
 ```
 
 ////
@@ -265,7 +265,7 @@ El segundo parámetro de tipo es para los valores del `dict`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial008.py!}
+{!> ../../examples/python_types/tutorial008.py!}
 ```
 
 ////
@@ -287,7 +287,7 @@ En Python 3.10 también hay una **nueva sintaxis** donde puedes poner los posibl
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial008b_py310.py!}
+{!> ../../examples/python_types/tutorial008b_py310.py!}
 ```
 
 ////
@@ -295,7 +295,7 @@ En Python 3.10 también hay una **nueva sintaxis** donde puedes poner los posibl
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial008b.py!}
+{!> ../../examples/python_types/tutorial008b.py!}
 ```
 
 ////
@@ -309,7 +309,7 @@ Puedes declarar que un valor podría tener un tipo, como `str`, pero que tambié
 En Python 3.6 y posteriores (incluyendo Python 3.10) puedes declararlo importando y usando `Optional` del módulo `typing`.
 
 ```Python hl_lines="1  4"
-{!../../docs_src/python_types/tutorial009.py!}
+{!../../examples/python_types/tutorial009.py!}
 ```
 
 Usar `Optional[str]` en lugar de solo `str` te permitirá al editor ayudarte a detectar errores donde podrías estar asumiendo que un valor siempre es un `str`, cuando en realidad también podría ser `None`.
@@ -321,7 +321,7 @@ Esto también significa que en Python 3.10, puedes usar `Something | None`:
 //// tab | Python 3.10+
 
 ```Python hl_lines="1"
-{!> ../../docs_src/python_types/tutorial009_py310.py!}
+{!> ../../examples/python_types/tutorial009_py310.py!}
 ```
 
 ////
@@ -329,7 +329,7 @@ Esto también significa que en Python 3.10, puedes usar `Something | None`:
 //// tab | Python 3.8+
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial009.py!}
+{!> ../../examples/python_types/tutorial009.py!}
 ```
 
 ////
@@ -337,7 +337,7 @@ Esto también significa que en Python 3.10, puedes usar `Something | None`:
 //// tab | Python 3.8+ alternative
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial009b.py!}
+{!> ../../examples/python_types/tutorial009b.py!}
 ```
 
 ////
@@ -357,7 +357,7 @@ Se trata solo de las palabras y nombres. Pero esas palabras pueden afectar cómo
 
 Como ejemplo, tomemos esta función:
 
-{* ../../docs_src/python_types/tutorial009c.py hl[1,4] *}
+{* ../../examples/python_types/tutorial009c.py hl[1,4] *}
 
 El parámetro `name` está definido como `Optional[str]`, pero **no es opcional**, no puedes llamar a la función sin el parámetro:
 
@@ -373,7 +373,7 @@ say_hi(name=None)  # Esto funciona, None es válido 🎉
 
 La buena noticia es que, una vez que estés en Python 3.10, no tendrás que preocuparte por eso, ya que podrás simplemente usar `|` para definir uniones de tipos:
 
-{* ../../docs_src/python_types/tutorial009c_py310.py hl[1,4] *}
+{* ../../examples/python_types/tutorial009c_py310.py hl[1,4] *}
 
 Y entonces no tendrás que preocuparte por nombres como `Optional` y `Union`. 😎
 
@@ -435,11 +435,11 @@ También puedes declarar una clase como el tipo de una variable.
 
 Digamos que tienes una clase `Person`, con un nombre:
 
-{* ../../docs_src/python_types/tutorial010.py hl[1:3] *}
+{* ../../examples/python_types/tutorial010.py hl[1:3] *}
 
 Luego puedes declarar una variable para que sea de tipo `Person`:
 
-{* ../../docs_src/python_types/tutorial010.py hl[6] *}
+{* ../../examples/python_types/tutorial010.py hl[6] *}
 
 Y luego, nuevamente, obtienes todo el soporte del editor:
 
@@ -466,7 +466,7 @@ Un ejemplo de la documentación oficial de Pydantic:
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../docs_src/python_types/tutorial011_py310.py!}
+{!> ../../examples/python_types/tutorial011_py310.py!}
 ```
 
 ////
@@ -474,7 +474,7 @@ Un ejemplo de la documentación oficial de Pydantic:
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../docs_src/python_types/tutorial011_py39.py!}
+{!> ../../examples/python_types/tutorial011_py39.py!}
 ```
 
 ////
@@ -482,7 +482,7 @@ Un ejemplo de la documentación oficial de Pydantic:
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../docs_src/python_types/tutorial011.py!}
+{!> ../../examples/python_types/tutorial011.py!}
 ```
 
 ////
@@ -512,7 +512,7 @@ Python también tiene una funcionalidad que permite poner **<abbr title="Datos s
 En Python 3.9, `Annotated` es parte de la librería estándar, así que puedes importarlo desde `typing`.
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial013_py39.py!}
+{!> ../../examples/python_types/tutorial013_py39.py!}
 ```
 
 ////
@@ -524,7 +524,7 @@ En versiones por debajo de Python 3.9, importas `Annotated` de `typing_extension
 Ya estará instalado con **ReadyAPI**.
 
 ```Python hl_lines="1  4"
-{!> ../../docs_src/python_types/tutorial013.py!}
+{!> ../../examples/python_types/tutorial013.py!}
 ```
 
 ////

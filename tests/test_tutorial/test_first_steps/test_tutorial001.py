@@ -1,7 +1,7 @@
 import pytest
 from readyapi.testclient import TestClient
 
-from docs_src.first_steps.tutorial001 import app
+from examples.first_steps.tutorial001 import app
 
 client = TestClient(app)
 

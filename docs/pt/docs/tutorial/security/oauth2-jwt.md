@@ -116,7 +116,7 @@ E outra função utilitária para verificar se uma senha recebida corresponde ao
 
 E outra para autenticar e retornar um usuário.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
 
 /// note | Nota
 
@@ -152,7 +152,7 @@ Defina um modelo Pydantic que será usado no endpoint de token para a resposta.
 
 Crie uma função utilitária para gerar um novo token de acesso.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
 
 ## Atualize as dependências
 
@@ -162,7 +162,7 @@ Decodifique o token recebido, verifique-o e retorne o usuário atual.
 
 Se o token for inválido, retorne um erro HTTP imediatamente.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[90:107] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[90:107] *}
 
 ## Atualize a *operação de rota* `/token`
 
@@ -170,7 +170,7 @@ Crie um `timedelta` com o tempo de expiração do token.
 
 Crie um token de acesso JWT real e o retorne.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[118:133] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[118:133] *}
 
 ### Detalhes técnicos sobre o "sujeito" `sub` do JWT
 

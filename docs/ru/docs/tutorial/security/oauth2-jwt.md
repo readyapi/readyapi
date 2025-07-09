@@ -110,7 +110,7 @@ $ pip install "passlib[bcrypt]"
 
 И еще одну - для аутентификации и возврата пользователя.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
 
 /// note | Технические детали
 Если проверить новую (фальшивую) базу данных `fake_users_db`, то можно увидеть, как теперь выглядит хэшированный пароль: `"$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW"`.
@@ -144,7 +144,7 @@ $ openssl rand -hex 32
 
 Создайте служебную функцию для генерации нового токена доступа.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
 
 ## Обновление зависимостей
 
@@ -154,7 +154,7 @@ $ openssl rand -hex 32
 
 Если токен недействителен, то сразу же верните HTTP-ошибку.
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[90:107] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[90:107] *}
 
 ## Обновление *операции пути* `/token`
 
@@ -162,7 +162,7 @@ $ openssl rand -hex 32
 
 Создайте реальный токен доступа JWT и верните его
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[118:133] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[118:133] *}
 
 ### Технические подробности о JWT ключе `sub`
 

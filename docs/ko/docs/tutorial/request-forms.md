@@ -18,13 +18,13 @@ $ pip install python-multipart
 
 `readyapi`에서 `Form`을 임포트합니다:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## `Form` 매개변수 정의하기
 
 `Body` 또는 `Query`와 동일한 방식으로 폼 매개변수를 만듭니다:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 예를 들어, OAuth2 사양을 사용할 수 있는 방법 중 하나("패스워드 플로우"라고 함)로 `username`과 `password`를 폼 필드로 보내야 합니다.
 

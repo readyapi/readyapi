@@ -6,7 +6,7 @@
 
 🥇 🗄 `Header`:
 
-{* ../../docs_src/header_params/tutorial001.py hl[3] *}
+{* ../../examples/header_params/tutorial001.py hl[3] *}
 
 ## 📣 `Header` 🔢
 
@@ -14,7 +14,7 @@
 
 🥇 💲 🔢 💲, 👆 💪 🚶‍♀️ 🌐 ➕ 🔬 ⚖️ ✍ 🔢:
 
-{* ../../docs_src/header_params/tutorial001.py hl[9] *}
+{* ../../examples/header_params/tutorial001.py hl[9] *}
 
 /// note | 📡 ℹ
 
@@ -46,7 +46,7 @@
 
 🚥 🤔 👆 💪 ❎ 🏧 🛠️ 🎦 🔠, ⚒ 🔢 `convert_underscores` `Header` `False`:
 
-{* ../../docs_src/header_params/tutorial002.py hl[10] *}
+{* ../../examples/header_params/tutorial002.py hl[10] *}
 
 /// warning
 
@@ -64,7 +64,7 @@
 
 🖼, 📣 🎚 `X-Token` 👈 💪 😑 🌅 🌘 🕐, 👆 💪 ✍:
 
-{* ../../docs_src/header_params/tutorial003.py hl[9] *}
+{* ../../examples/header_params/tutorial003.py hl[9] *}
 
 🚥 👆 🔗 ⏮️ 👈 *➡ 🛠️* 📨 2️⃣ 🇺🇸🔍 🎚 💖:
 

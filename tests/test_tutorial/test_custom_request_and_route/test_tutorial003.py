@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.custom_request_and_route.tutorial003 import app
+from examples.custom_request_and_route.tutorial003 import app
 
 client = TestClient(app)
 

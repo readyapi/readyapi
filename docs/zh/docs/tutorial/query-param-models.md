@@ -14,7 +14,7 @@ ReadyAPI 从 `0.115.0` 版本开始支持这个特性。🤓
 
 在一个 **Pydantic 模型**中声明你需要的**查询参数**，然后将参数声明为 `Query`：
 
-{* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
+{* ../../examples/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
 **ReadyAPI** 将会从请求的**查询参数**中**提取**出**每个字段**的数据，并将其提供给你定义的 Pydantic 模型。
 
@@ -32,7 +32,7 @@ ReadyAPI 从 `0.115.0` 版本开始支持这个特性。🤓
 
 你可以使用 Pydantic 的模型配置来 `forbid`（意为禁止 —— 译者注）任何 `extra`（意为额外的 —— 译者注）字段：
 
-{* ../../docs_src/query_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/query_param_models/tutorial002_an_py310.py hl[10] *}
 
 假设有一个客户端尝试在**查询参数**中发送一些**额外的**数据，它将会收到一个**错误**响应。
 

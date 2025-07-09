@@ -2,7 +2,7 @@
 
 Самый простой ReadyAPI файл может выглядеть так:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Скопируйте в файл `main.py`.
 
@@ -131,7 +131,7 @@ OpenAPI описывает схему API. Эта схема содержит о
 
 ### Шаг 1: импортируйте `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` это класс в Python, который предоставляет всю функциональность для API.
 
@@ -145,7 +145,7 @@ OpenAPI описывает схему API. Эта схема содержит о
 
 ### Шаг 2: создайте экземпляр `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Переменная `app` является экземпляром класса `ReadyAPI`.
 
@@ -165,7 +165,7 @@ $ uvicorn main:app --reload
 
 Если создать такое приложение:
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 И поместить его в `main.py`, тогда вызов `uvicorn` будет таким:
 
@@ -242,7 +242,7 @@ https://example.com/items/foo
 
 #### Определите *декоратор операции пути (path operation decorator)*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 Декоратор `@app.get("/")` указывает **ReadyAPI**, что функция, прямо под ним, отвечает за обработку запросов, поступающих по адресу:
 
@@ -296,7 +296,7 @@ https://example.com/items/foo
 * **операция**: `get`.
 * **функция**: функция ниже "декоратора" (ниже `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Это обычная Python функция.
 
@@ -308,7 +308,7 @@ https://example.com/items/foo
 
 Вы также можете определить ее как обычную функцию вместо `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Технические детали
 
@@ -318,7 +318,7 @@ https://example.com/items/foo
 
 ### Шаг 5: верните результат
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Вы можете вернуть `dict`, `list`, отдельные значения `str`, `int` и т.д.
 

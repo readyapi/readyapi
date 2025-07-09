@@ -62,7 +62,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 首先，快速浏览一下以下代码与**用户指南**中 [OAuth2 实现密码哈希与 Bearer  JWT 令牌验证](../../tutorial/security/oauth2-jwt.md){.internal-link target=_blank}一章中代码的区别。以下代码使用 OAuth2 作用域：
 
-{* ../../docs_src/security/tutorial005.py hl[2,4,8,12,46,64,105,107:115,121:124,128:134,139,153] *}
+{* ../../examples/security/tutorial005.py hl[2,4,8,12,46,64,105,107:115,121:124,128:134,139,153] *}
 
 下面，我们逐步说明修改的代码内容。
 
@@ -72,7 +72,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 `scopes` 参数接收**字典**，键是作用域、值是作用域的描述：
 
-{* ../../docs_src/security/tutorial005.py hl[62:65] *}
+{* ../../examples/security/tutorial005.py hl[62:65] *}
 
 因为声明了作用域，所以登录或授权时会在 API 文档中显示。
 
@@ -98,7 +98,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 ///
 
-{* ../../docs_src/security/tutorial005.py hl[153] *}
+{* ../../examples/security/tutorial005.py hl[153] *}
 
 ## 在*路径操作*与依赖项中声明作用域
 
@@ -124,7 +124,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 ///
 
-{* ../../docs_src/security/tutorial005.py hl[4,139,166] *}
+{* ../../examples/security/tutorial005.py hl[4,139,166] *}
 
 /// info | 技术细节
 
@@ -150,7 +150,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 `SecuriScopes` 类与 `Request` 类似（`Request` 用于直接提取请求对象）。
 
-{* ../../docs_src/security/tutorial005.py hl[8,105] *}
+{* ../../examples/security/tutorial005.py hl[8,105] *}
 
 ## 使用 `scopes`
 
@@ -164,7 +164,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 该异常包含了作用域所需的（如有），以空格分割的字符串（使用 `scope_str`）。该字符串要放到包含作用域的 `WWW-Authenticate` 请求头中（这也是规范的要求）。
 
-{* ../../docs_src/security/tutorial005.py hl[105,107:115] *}
+{* ../../examples/security/tutorial005.py hl[105,107:115] *}
 
 ## 校验 `username` 与数据形状
 
@@ -180,7 +180,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 还可以使用用户名验证用户，如果没有用户，也会触发之前创建的异常。
 
-{* ../../docs_src/security/tutorial005.py hl[46,116:127] *}
+{* ../../examples/security/tutorial005.py hl[46,116:127] *}
 
 ## 校验 `scopes`
 
@@ -188,7 +188,7 @@ OAuth2 中，**作用域**只是声明特定权限的字符串。
 
 为此，要使用包含所有作用域**字符串列表**的 `security_scopes.scopes`， 。
 
-{* ../../docs_src/security/tutorial005.py hl[128:134] *}
+{* ../../examples/security/tutorial005.py hl[128:134] *}
 
 ## 依赖项树与作用域
 

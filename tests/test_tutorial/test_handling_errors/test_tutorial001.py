@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.handling_errors.tutorial001 import app
+from examples.handling_errors.tutorial001 import app
 
 client = TestClient(app)
 

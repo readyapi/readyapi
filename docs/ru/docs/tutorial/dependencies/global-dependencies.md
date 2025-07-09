@@ -6,7 +6,7 @@
 
 В этом случае они будут применяться ко всем *операциям пути* в приложении:
 
-{* ../../docs_src/dependencies/tutorial012_an_py39.py hl[16] *}
+{* ../../examples/dependencies/tutorial012_an_py39.py hl[16] *}
 
 Все способы [добавления зависимостей в *декораторах операций пути*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} по-прежнему применимы, но в данном случае зависимости применяются ко всем *операциям пути* приложения.
 

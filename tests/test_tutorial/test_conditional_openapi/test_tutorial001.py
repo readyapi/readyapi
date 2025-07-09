@@ -6,7 +6,7 @@ from ...utils import needs_pydanticv2
 
 
 def get_client() -> TestClient:
-    from docs_src.conditional_openapi import tutorial001
+    from examples.conditional_openapi import tutorial001
 
     importlib.reload(tutorial001)
 

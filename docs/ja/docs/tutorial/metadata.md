@@ -13,7 +13,7 @@
 
 これらを設定するには、パラメータ `title`、`description`、`version` を使用します:
 
-{* ../../docs_src/metadata/tutorial001.py hl[4:6] *}
+{* ../../examples/metadata/tutorial001.py hl[4:6] *}
 
 この設定では、自動APIドキュメントは以下の様になります:
 
@@ -39,7 +39,7 @@
 
 タグのためのメタデータを作成し、それを `openapi_tags` パラメータに渡します。
 
-{* ../../docs_src/metadata/tutorial004.py hl[3:16,18] *}
+{* ../../examples/metadata/tutorial004.py hl[3:16,18] *}
 
 説明文 (description) の中で Markdown を使用できることに注意してください。たとえば、「login」は太字 (**login**) で表示され、「fancy」は斜体 (_fancy_) で表示されます。
 
@@ -53,7 +53,7 @@
 
 `tags` パラメーターを使用して、それぞれの *path operations* (および `APIRouter`) を異なるタグに割り当てます:
 
-{* ../../docs_src/metadata/tutorial004.py hl[21,26] *}
+{* ../../examples/metadata/tutorial004.py hl[21,26] *}
 
 /// info | 情報
 
@@ -81,7 +81,7 @@
 
 たとえば、`/api/v1/openapi.json` で提供されるように設定するには:
 
-{* ../../docs_src/metadata/tutorial002.py hl[3] *}
+{* ../../examples/metadata/tutorial002.py hl[3] *}
 
 OpenAPIスキーマを完全に無効にする場合は、`openapi_url=None` を設定できます。これにより、それを使用するドキュメントUIも無効になります。
 
@@ -98,4 +98,4 @@ OpenAPIスキーマを完全に無効にする場合は、`openapi_url=None` を
 
 たとえば、`/documentation` でSwagger UIが提供されるように設定し、ReDocを無効にするには:
 
-{* ../../docs_src/metadata/tutorial003.py hl[3] *}
+{* ../../examples/metadata/tutorial003.py hl[3] *}

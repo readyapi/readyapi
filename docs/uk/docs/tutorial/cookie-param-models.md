@@ -20,7 +20,7 @@
 
 Оголосіть **cookie-параметри**, які Вам потрібні, у **Pydantic-моделі**, а потім оголосіть параметр як `Cookie`:
 
-{* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
+{* ../../examples/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
 **ReadyAPI** буде **витягувати** дані для **кожного поля** з **cookie** параметрів, отриманих у запиті, і передавати Вам Pydantic-модель, яку Ви визначили.
 
@@ -50,7 +50,7 @@
 
 Ви можете використовувати налаштування моделі Pydantic, щоб `заборонити` будь-які `додаткові` поля:
 
-{* ../../docs_src/cookie_param_models/tutorial002_an_py39.py hl[10] *}
+{* ../../examples/cookie_param_models/tutorial002_an_py39.py hl[10] *}
 
 Якщо клієнт спробує надіслати якісь **додаткові cookie**, він отримає відповідь з **помилкою**.
 

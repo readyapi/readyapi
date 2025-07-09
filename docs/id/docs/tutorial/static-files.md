@@ -7,7 +7,7 @@ Anda dapat menyajikan berkas statis secara otomatis dari sebuah direktori menggu
 * Mengimpor `StaticFiles`.
 * "Mount" representatif `StaticFiles()` di jalur spesifik.
 
-{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
+{* ../../examples/static_files/tutorial001.py hl[2,6] *}
 
 /// note | Detail Teknis
 

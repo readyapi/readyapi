@@ -31,7 +31,7 @@ Tendrá una *path operation* que recibirá un cuerpo `Invoice`, y un parámetro 
 
 Esta parte es bastante normal, probablemente ya estés familiarizado con la mayor parte del código:
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[9:13,36:53] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[9:13,36:53] *}
 
 /// tip | Consejo
 
@@ -90,7 +90,7 @@ Adoptar temporalmente este punto de vista (del *desarrollador externo*) puede ay
 
 Primero crea un nuevo `APIRouter` que contendrá uno o más callbacks.
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[3,25] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[3,25] *}
 
 ### Crear la *path operation* del callback
 
@@ -101,7 +101,7 @@ Debería verse como una *path operation* normal de ReadyAPI:
 * Probablemente debería tener una declaración del body que debería recibir, por ejemplo `body: InvoiceEvent`.
 * Y también podría tener una declaración del response que debería devolver, por ejemplo `response_model=InvoiceEventReceived`.
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[16:18,21:22,28:32] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[16:18,21:22,28:32] *}
 
 Hay 2 diferencias principales respecto a una *path operation* normal:
 
@@ -169,7 +169,7 @@ En este punto tienes las *path operation(s)* del callback necesarias (las que el
 
 Ahora usa el parámetro `callbacks` en el *decorador de path operation de tu API* para pasar el atributo `.routes` (que en realidad es solo un `list` de rutas/*path operations*) de ese router de callback:
 
-{* ../../docs_src/openapi_callbacks/tutorial001.py hl[35] *}
+{* ../../examples/openapi_callbacks/tutorial001.py hl[35] *}
 
 /// tip | Consejo
 

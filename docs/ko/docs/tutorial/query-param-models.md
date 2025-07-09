@@ -14,7 +14,7 @@
 
 필요한 **쿼리 매개변수**를 **Pydantic 모델** 안에 선언한 다음, 모델을 `Query`로 선언합니다.
 
-{* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
+{* ../../examples/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
 **ReadyAPI**는 요청의 **쿼리 매개변수**에서 **각 필드**의 데이터를 **추출**해 정의한 Pydantic 모델로 제공합니다.
 
@@ -32,7 +32,7 @@
 
 Pydantic 모델 설정에서 `extra` 필드를 `forbid` 로 설정할 수 있습니다.
 
-{* ../../docs_src/query_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/query_param_models/tutorial002_an_py310.py hl[10] *}
 
 만약 클라이언트가 쿼리 매개변수로 **추가적인** 데이터를 보내려고 하면, 클라이언트는 **에러** 응답을 받게 됩니다.
 

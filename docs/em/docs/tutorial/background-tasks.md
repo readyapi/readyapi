@@ -15,7 +15,7 @@
 
 🥇, 🗄 `BackgroundTasks` &amp; 🔬 🔢 👆 *➡ 🛠️ 🔢* ⏮️ 🆎 📄 `BackgroundTasks`:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
+{* ../../examples/background_tasks/tutorial001.py hl[1,13] *}
 
 **ReadyAPI** 🔜 ✍ 🎚 🆎 `BackgroundTasks` 👆 &amp; 🚶‍♀️ ⚫️ 👈 🔢.
 
@@ -31,13 +31,13 @@
 
 &amp; ✍ 🛠️ 🚫 ⚙️ `async` &amp; `await`, 👥 🔬 🔢 ⏮️ 😐 `def`:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[6:9] *}
+{* ../../examples/background_tasks/tutorial001.py hl[6:9] *}
 
 ## 🚮 🖥 📋
 
 🔘 👆 *➡ 🛠️ 🔢*, 🚶‍♀️ 👆 📋 🔢 *🖥 📋* 🎚 ⏮️ 👩‍🔬 `.add_task()`:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[14] *}
+{* ../../examples/background_tasks/tutorial001.py hl[14] *}
 
 `.add_task()` 📨 ❌:
 
@@ -51,7 +51,7 @@
 
 **ReadyAPI** 💭 ⚫️❔ 🔠 💼 &amp; ❔ 🏤-⚙️ 🎏 🎚, 👈 🌐 🖥 📋 🔗 👯‍♂️ &amp; 🏃 🖥 ⏮️:
 
-{* ../../docs_src/background_tasks/tutorial002.py hl[13,15,22,25] *}
+{* ../../examples/background_tasks/tutorial002.py hl[13,15,22,25] *}
 
 👉 🖼, 📧 🔜 ✍ `log.txt` 📁 *⏮️* 📨 📨.
 

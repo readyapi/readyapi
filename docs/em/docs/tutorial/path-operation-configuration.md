@@ -16,7 +16,7 @@
 
 ✋️ 🚥 👆 🚫 💭 ⚫️❔ 🔠 🔢 📟, 👆 💪 ⚙️ ⌨ 📉 `status`:
 
-{* ../../docs_src/path_operation_configuration/tutorial001.py hl[3,17] *}
+{* ../../examples/path_operation_configuration/tutorial001.py hl[3,17] *}
 
 👈 👔 📟 🔜 ⚙️ 📨 &amp; 🔜 🚮 🗄 🔗.
 
@@ -32,7 +32,7 @@
 
 👆 💪 🚮 🔖 👆 *➡ 🛠️*, 🚶‍♀️ 🔢 `tags` ⏮️ `list` `str` (🛎 1️⃣ `str`):
 
-{* ../../docs_src/path_operation_configuration/tutorial002.py hl[17,22,27] *}
+{* ../../examples/path_operation_configuration/tutorial002.py hl[17,22,27] *}
 
 👫 🔜 🚮 🗄 🔗 &amp; ⚙️ 🏧 🧾 🔢:
 
@@ -46,13 +46,13 @@
 
 **ReadyAPI** 🐕‍🦺 👈 🎏 🌌 ⏮️ ✅ 🎻:
 
-{* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
+{* ../../examples/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
 ## 📄 &amp; 📛
 
 👆 💪 🚮 `summary` &amp; `description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial003.py hl[20:21] *}
+{* ../../examples/path_operation_configuration/tutorial003.py hl[20:21] *}
 
 ## 📛 ⚪️➡️ #️⃣
 
@@ -60,7 +60,7 @@
 
 👆 💪 ✍ <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">✍</a> #️⃣ , ⚫️ 🔜 🔬 &amp; 🖥 ☑ (✊ 🔘 🏧 #️⃣ 📐).
 
-{* ../../docs_src/path_operation_configuration/tutorial004.py hl[19:27] *}
+{* ../../examples/path_operation_configuration/tutorial004.py hl[19:27] *}
 
 ⚫️ 🔜 ⚙️ 🎓 🩺:
 
@@ -70,7 +70,7 @@
 
 👆 💪 ✔ 📨 📛 ⏮️ 🔢 `response_description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial005.py hl[21] *}
+{* ../../examples/path_operation_configuration/tutorial005.py hl[21] *}
 
 /// info
 
@@ -92,7 +92,7 @@
 
 🚥 👆 💪 ™ *➡ 🛠️* <abbr title="obsolete, recommended not to use it">😢</abbr>, ✋️ 🍵 ❎ ⚫️, 🚶‍♀️ 🔢 `deprecated`:
 
-{* ../../docs_src/path_operation_configuration/tutorial006.py hl[16] *}
+{* ../../examples/path_operation_configuration/tutorial006.py hl[16] *}
 
 ⚫️ 🔜 🎯 ™ 😢 🎓 🩺:
 

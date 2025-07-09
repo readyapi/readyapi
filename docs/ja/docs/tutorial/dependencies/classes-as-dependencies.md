@@ -6,7 +6,7 @@
 
 前の例では、依存関係（"dependable"）から`dict`を返していました:
 
-{* ../../docs_src/dependencies/tutorial001.py hl[9] *}
+{* ../../examples/dependencies/tutorial001.py hl[9] *}
 
 しかし、*path operation関数*のパラメータ`commons`に`dict`が含まれています。
 
@@ -69,15 +69,15 @@ ReadyAPIが実際にチェックしているのは、それが「呼び出し可
 
 そこで、上で紹介した依存関係の`common_parameters`を`CommonQueryParams`クラスに変更します:
 
-{* ../../docs_src/dependencies/tutorial002.py hl[11,12,13,14,15] *}
+{* ../../examples/dependencies/tutorial002.py hl[11,12,13,14,15] *}
 
 クラスのインスタンスを作成するために使用される`__init__`メソッドに注目してください:
 
-{* ../../docs_src/dependencies/tutorial002.py hl[12] *}
+{* ../../examples/dependencies/tutorial002.py hl[12] *}
 
 ...以前の`common_parameters`と同じパラメータを持っています:
 
-{* ../../docs_src/dependencies/tutorial001.py hl[8] *}
+{* ../../examples/dependencies/tutorial001.py hl[8] *}
 
 これらのパラメータは **ReadyAPI** が依存関係を「解決」するために使用するものです。
 
@@ -93,7 +93,7 @@ ReadyAPIが実際にチェックしているのは、それが「呼び出し可
 
 これで、このクラスを使用して依存関係を宣言することができます。
 
-{* ../../docs_src/dependencies/tutorial002.py hl[19] *}
+{* ../../examples/dependencies/tutorial002.py hl[19] *}
 
 **ReadyAPI** は`CommonQueryParams`クラスを呼び出します。これにより、そのクラスの「インスタンス」が作成され、インスタンスはパラメータ`commons`として関数に渡されます。
 
@@ -133,7 +133,7 @@ commons = Depends(CommonQueryParams)
 
 以下にあるように:
 
-{* ../../docs_src/dependencies/tutorial003.py hl[19] *}
+{* ../../examples/dependencies/tutorial003.py hl[19] *}
 
 しかし、型を宣言することは推奨されています。そうすれば、エディタは`commons`のパラメータとして何が渡されるかを知ることができ、コードの補完や型チェックなどを行うのに役立ちます:
 
@@ -167,7 +167,7 @@ commons: CommonQueryParams = Depends()
 
 同じ例では以下のようになります:
 
-{* ../../docs_src/dependencies/tutorial004.py hl[19] *}
+{* ../../examples/dependencies/tutorial004.py hl[19] *}
 
 ...そして **ReadyAPI** は何をすべきか知っています。
 

@@ -14,7 +14,7 @@ Der *Pfadoperation-Dekorator* erhält ein optionales Argument `dependencies`.
 
 Es sollte eine `list`e von `Depends()` sein:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[19] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[19] *}
 
 Diese Abhängigkeiten werden auf die gleiche Weise wie normale Abhängigkeiten ausgeführt/aufgelöst. Aber ihr Wert (falls sie einen zurückgeben) wird nicht an Ihre *Pfadoperation-Funktion* übergeben.
 
@@ -44,13 +44,13 @@ Sie können dieselben Abhängigkeits-*Funktionen* verwenden, die Sie normalerwei
 
 Sie können Anforderungen für einen Request (wie Header) oder andere Unterabhängigkeiten deklarieren:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[8,13] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[8,13] *}
 
 ### Exceptions auslösen
 
 Die Abhängigkeiten können Exceptions `raise`n, genau wie normale Abhängigkeiten:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[10,15] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[10,15] *}
 
 ### Rückgabewerte
 
@@ -58,7 +58,7 @@ Und sie können Werte zurückgeben oder nicht, die Werte werden nicht verwendet.
 
 Sie können also eine normale Abhängigkeit (die einen Wert zurückgibt), die Sie bereits an anderer Stelle verwenden, wiederverwenden, und auch wenn der Wert nicht verwendet wird, wird die Abhängigkeit ausgeführt:
 
-{* ../../docs_src/dependencies/tutorial006_an_py39.py hl[11,16] *}
+{* ../../examples/dependencies/tutorial006_an_py39.py hl[11,16] *}
 
 ## Abhängigkeiten für eine Gruppe von *Pfadoperationen*
 

@@ -29,7 +29,7 @@
 
 👈 👆 💪 🔐 📨 🔗.
 
-{* ../../docs_src/using_request_directly/tutorial001.py hl[1,7:8] *}
+{* ../../examples/using_request_directly/tutorial001.py hl[1,7:8] *}
 
 📣 *➡ 🛠️ 🔢* 🔢 ⏮️ 🆎 ➖ `Request` **ReadyAPI** 🔜 💭 🚶‍♀️ `Request` 👈 🔢.
 

@@ -2,7 +2,7 @@
 
 👆 💪 📣 ➡ "🔢" ⚖️ "🔢" ⏮️ 🎏 ❕ ⚙️ 🐍 📁 🎻:
 
-{* ../../docs_src/path_params/tutorial001.py hl[6:7] *}
+{* ../../examples/path_params/tutorial001.py hl[6:7] *}
 
 💲 ➡ 🔢 `item_id` 🔜 🚶‍♀️ 👆 🔢 ❌ `item_id`.
 
@@ -16,7 +16,7 @@
 
 👆 💪 📣 🆎 ➡ 🔢 🔢, ⚙️ 🐩 🐍 🆎 ✍:
 
-{* ../../docs_src/path_params/tutorial002.py hl[7] *}
+{* ../../examples/path_params/tutorial002.py hl[7] *}
 
 👉 💼, `item_id` 📣 `int`.
 
@@ -117,13 +117,13 @@
 
 ↩️ *➡ 🛠️* 🔬 ✔, 👆 💪 ⚒ 💭 👈 ➡ `/users/me` 📣 ⏭ 1️⃣ `/users/{user_id}`:
 
-{* ../../docs_src/path_params/tutorial003.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003.py hl[6,11] *}
 
 ⏪, ➡ `/users/{user_id}` 🔜 🏏 `/users/me`, "💭" 👈 ⚫️ 📨 🔢 `user_id` ⏮️ 💲 `"me"`.
 
 ➡, 👆 🚫🔜 ↔ ➡ 🛠️:
 
-{* ../../docs_src/path_params/tutorial003b.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003b.py hl[6,11] *}
 
 🥇 🕐 🔜 🕧 ⚙️ ↩️ ➡ 🏏 🥇.
 
@@ -139,7 +139,7 @@
 
 ⤴️ ✍ 🎓 🔢 ⏮️ 🔧 💲, ❔ 🔜 💪 ☑ 💲:
 
-{* ../../docs_src/path_params/tutorial005.py hl[1,6:9] *}
+{* ../../examples/path_params/tutorial005.py hl[1,6:9] *}
 
 /// info
 
@@ -157,7 +157,7 @@
 
 ⤴️ ✍ *➡ 🔢* ⏮️ 🆎 ✍ ⚙️ 🔢 🎓 👆 ✍ (`ModelName`):
 
-{* ../../docs_src/path_params/tutorial005.py hl[16] *}
+{* ../../examples/path_params/tutorial005.py hl[16] *}
 
 ### ✅ 🩺
 
@@ -173,13 +173,13 @@
 
 👆 💪 🔬 ⚫️ ⏮️ *🔢 👨‍🎓* 👆 ✍ 🔢 `ModelName`:
 
-{* ../../docs_src/path_params/tutorial005.py hl[17] *}
+{* ../../examples/path_params/tutorial005.py hl[17] *}
 
 #### 🤚 *🔢 💲*
 
 👆 💪 🤚 ☑ 💲 ( `str` 👉 💼) ⚙️ `model_name.value`, ⚖️ 🏢, `your_enum_member.value`:
 
-{* ../../docs_src/path_params/tutorial005.py hl[20] *}
+{* ../../examples/path_params/tutorial005.py hl[20] *}
 
 /// tip
 
@@ -193,7 +193,7 @@
 
 👫 🔜 🗜 👫 🔗 💲 (🎻 👉 💼) ⏭ 🛬 👫 👩‍💻:
 
-{* ../../docs_src/path_params/tutorial005.py hl[18,21,23] *}
+{* ../../examples/path_params/tutorial005.py hl[18,21,23] *}
 
 👆 👩‍💻 👆 🔜 🤚 🎻 📨 💖:
 
@@ -232,7 +232,7 @@
 
 , 👆 💪 ⚙️ ⚫️ ⏮️:
 
-{* ../../docs_src/path_params/tutorial004.py hl[6] *}
+{* ../../examples/path_params/tutorial004.py hl[6] *}
 
 /// tip
 
