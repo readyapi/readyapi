@@ -496,5 +496,3 @@ Additional optional ReadyAPI dependencies:
 ## License
 
 This project is licensed under the terms of the MIT license.
-
-<!-- Test commit for GitHub Pages deployment -->
