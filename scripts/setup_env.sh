@@ -25,14 +25,14 @@ if [ ! -d "venv" ]; then
     echo -e "${GREEN}Creating Python virtual environment...${NC}"
     python3 -m venv venv
     source venv/bin/activate
-
+    
     # Upgrade pip
     pip install --upgrade pip
-
+    
     # Install dependencies
     echo -e "\n${GREEN}Installing Python dependencies...${NC}"
     pip install -r requirements.txt
-
+    
     echo -e "\n${GREEN}Environment setup complete!${NC}"
     echo -e "To activate the virtual environment, run: ${YELLOW}source venv/bin/activate${NC}"
 else
