@@ -32,6 +32,7 @@ hide:
 
 ### Internal
 
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#221](https://github.com/readyapi/readyapi/pull/221) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * Bump tj-actions/changed-files from 44 to 46 in /.github/workflows in the github_actions group across 1 directory. PR [#227](https://github.com/readyapi/readyapi/pull/227) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Pre commit. PR [#220](https://github.com/readyapi/readyapi/pull/220) by [@gitworkflows](https://github.com/gitworkflows).
 * 👷 Add custom pre-commit. PR [#219](https://github.com/readyapi/readyapi/pull/219) by [@gitworkflows](https://github.com/gitworkflows).
