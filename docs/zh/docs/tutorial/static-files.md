@@ -7,7 +7,7 @@
 * 导入`StaticFiles`。
 * "挂载"(Mount) 一个 `StaticFiles()` 实例到一个指定路径。
 
-{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
+{* ../../examples/static_files/tutorial001.py hl[2,6] *}
 
 /// note | 技术细节
 

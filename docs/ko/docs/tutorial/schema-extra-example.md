@@ -10,13 +10,13 @@
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/schema_extra_example/tutorial001_py310.py hl[13:24] *}
+{* ../../examples/schema_extra_example/tutorial001_py310.py hl[13:24] *}
 
 ////
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
+{* ../../examples/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
 
 ////
 
@@ -60,7 +60,7 @@ JSON 스키마를 확장하고 여러분의 별도의 자체 데이터를 추가
 
 Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 선언할 수 있습니다:
 
-{* ../../docs_src/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
+{* ../../examples/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
 
 ## JSON Schema에서의 `examples` - OpenAPI
 
@@ -80,7 +80,7 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 여기, `Body()`에 예상되는 예제 데이터 하나를 포함한 `examples`를 넘겼습니다:
 
-{* ../../docs_src/schema_extra_example/tutorial003_an_py310.py hl[22:29] *}
+{* ../../examples/schema_extra_example/tutorial003_an_py310.py hl[22:29] *}
 
 ### 문서 UI 예시
 
@@ -92,7 +92,7 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 물론 여러 `examples`를 넘길 수 있습니다:
 
-{* ../../docs_src/schema_extra_example/tutorial004_an_py310.py hl[23:38] *}
+{* ../../examples/schema_extra_example/tutorial004_an_py310.py hl[23:38] *}
 
 이와 같이 하면 이 예제는 그 본문 데이터를 위한 내부 **JSON 스키마**의 일부가 될 것입니다.
 
@@ -133,7 +133,7 @@ Pydantic 모델과 같이 `Field()`를 사용할 때 추가적인 `examples`를 
 
 이를 다음과 같이 사용할 수 있습니다:
 
-{* ../../docs_src/schema_extra_example/tutorial005_an_py310.py hl[23:49] *}
+{* ../../examples/schema_extra_example/tutorial005_an_py310.py hl[23:49] *}
 
 ### 문서 UI에서의 OpenAPI 예시
 

@@ -2,7 +2,7 @@
 
 声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。
 
-{* ../../docs_src/query_params/tutorial001.py hl[9] *}
+{* ../../examples/query_params/tutorial001.py hl[9] *}
 
 查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。
 
@@ -61,7 +61,7 @@ http://127.0.0.1:8000/items/?skip=20
 
 同理，把默认值设为 `None` 即可声明**可选的**查询参数：
 
-{* ../../docs_src/query_params/tutorial002_py310.py hl[7] *}
+{* ../../examples/query_params/tutorial002_py310.py hl[7] *}
 
 本例中，查询参数 `q` 是可选的，默认值为 `None`。
 
@@ -84,7 +84,7 @@ ReadyAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 
 参数还可以声明为 `bool` 类型，ReadyAPI 会自动转换参数类型：
 
 
-{* ../../docs_src/query_params/tutorial003_py310.py hl[7] *}
+{* ../../examples/query_params/tutorial003_py310.py hl[7] *}
 
 本例中，访问：
 
@@ -127,7 +127,7 @@ http://127.0.0.1:8000/items/foo?short=yes
 
 ReadyAPI 通过参数名进行检测：
 
-{* ../../docs_src/query_params/tutorial004_py310.py hl[6,8] *}
+{* ../../examples/query_params/tutorial004_py310.py hl[6,8] *}
 
 ## 必选查询参数
 
@@ -137,7 +137,7 @@ ReadyAPI 通过参数名进行检测：
 
 如果要把查询参数设置为**必选**，就不要声明默认值：
 
-{* ../../docs_src/query_params/tutorial005.py hl[6:7] *}
+{* ../../examples/query_params/tutorial005.py hl[6:7] *}
 
 这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。
 
@@ -181,7 +181,7 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 
 当然，把一些参数定义为必选，为另一些参数设置默认值，再把其它参数定义为可选，这些操作都是可以的：
 
-{* ../../docs_src/query_params/tutorial006_py310.py hl[8] *}
+{* ../../examples/query_params/tutorial006_py310.py hl[8] *}
 
 本例中有 3 个查询参数：
 

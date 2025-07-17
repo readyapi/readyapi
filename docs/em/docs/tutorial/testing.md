@@ -26,7 +26,7 @@
 
 ✍ 🙅 `assert` 📄 ⏮️ 🐩 🐍 🧬 👈 👆 💪 ✅ (🔄, 🐩 `pytest`).
 
-{* ../../docs_src/app_testing/tutorial001.py hl[2,12,15:18] *}
+{* ../../examples/app_testing/tutorial001.py hl[2,12,15:18] *}
 
 /// tip
 
@@ -72,7 +72,7 @@
 📁 `main.py` 👆 ✔️ 👆 **ReadyAPI** 📱:
 
 
-{* ../../docs_src/app_testing/main.py *}
+{* ../../examples/app_testing/main.py *}
 
 ### 🔬 📁
 
@@ -88,7 +88,7 @@
 
 ↩️ 👉 📁 🎏 📦, 👆 💪 ⚙️ ⚖ 🗄 🗄 🎚 `app` ⚪️➡️ `main` 🕹 (`main.py`):
 
-{* ../../docs_src/app_testing/test_main.py hl[3] *}
+{* ../../examples/app_testing/test_main.py hl[3] *}
 
 ...&amp; ✔️ 📟 💯 💖 ⏭.
 
@@ -116,13 +116,13 @@
 
 👯‍♂️ *➡ 🛠️* 🚚 `X-Token` 🎚.
 
-{* ../../docs_src/app_testing/app_b/main.py *}
+{* ../../examples/app_testing/app_b/main.py *}
 
 ### ↔ 🔬 📁
 
 👆 💪 ⤴️ ℹ `test_main.py` ⏮️ ↔ 💯:
 
-{* ../../docs_src/app_testing/app_b/test_main.py *}
+{* ../../examples/app_testing/app_b/test_main.py *}
 
 🕐❔ 👆 💪 👩‍💻 🚶‍♀️ ℹ 📨 &amp; 👆 🚫 💭 ❔, 👆 💪 🔎 (🇺🇸🔍) ❔ ⚫️ `httpx`, ⚖️ ❔ ⚫️ ⏮️ `requests`, 🇸🇲 🔧 ⚓️ 🔛 📨' 🔧.
 

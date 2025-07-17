@@ -4,7 +4,7 @@ Sie können den Typ der <abbr title="Response – Antwort: Daten, die zum anfrag
 
 Hierbei können Sie **Typannotationen** genauso verwenden, wie Sie es bei Werten von Funktions-**Parametern** machen; verwenden Sie Pydantic-Modelle, Listen, Dicts und skalare Werte wie Nummern, Booleans, usw.
 
-{* ../../docs_src/response_model/tutorial001_01_py310.py hl[16,21] *}
+{* ../../examples/response_model/tutorial001_01_py310.py hl[16,21] *}
 
 ReadyAPI wird diesen Rückgabetyp verwenden, um:
 
@@ -37,7 +37,7 @@ Sie können `response_model` in jeder möglichen *Pfadoperation* verwenden:
 * `@app.delete()`
 * usw.
 
-{* ../../docs_src/response_model/tutorial001_py310.py hl[17,22,24:27] *}
+{* ../../examples/response_model/tutorial001_py310.py hl[17,22,24:27] *}
 
 /// note | Hinweis
 
@@ -69,7 +69,7 @@ Sie können auch `response_model=None` verwenden, um das Erstellen eines Respons
 
 Im Folgenden deklarieren wir ein `UserIn`-Modell; es enthält ein Klartext-Passwort:
 
-{* ../../docs_src/response_model/tutorial002_py310.py hl[7,9] *}
+{* ../../examples/response_model/tutorial002_py310.py hl[7,9] *}
 
 /// info
 
@@ -82,7 +82,7 @@ oder `pip install pydantic[email]`.
 
 Wir verwenden dieses Modell, um sowohl unsere Eingabe- als auch Ausgabedaten zu deklarieren:
 
-{* ../../docs_src/response_model/tutorial002_py310.py hl[16] *}
+{* ../../examples/response_model/tutorial002_py310.py hl[16] *}
 
 Immer wenn jetzt ein Browser einen Benutzer mit Passwort erzeugt, gibt die API dasselbe Passwort in der Response zurück.
 
@@ -100,15 +100,15 @@ Speichern Sie niemals das Klartext-Passwort eines Benutzers, oder versenden Sie 
 
 Wir können stattdessen ein Eingabemodell mit dem Klartext-Passwort, und ein Ausgabemodell ohne das Passwort erstellen:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[9,11,16] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[9,11,16] *}
 
 Obwohl unsere *Pfadoperation-Funktion* hier denselben `user` von der Eingabe zurückgibt, der das Passwort enthält:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[24] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[24] *}
 
 ... haben wir deklariert, dass `response_model` das Modell `UserOut` ist, welches das Passwort nicht enthält:
 
-{* ../../docs_src/response_model/tutorial003_py310.py hl[22] *}
+{* ../../examples/response_model/tutorial003_py310.py hl[22] *}
 
 Darum wird **ReadyAPI** sich darum kümmern, dass alle Daten, die nicht im Ausgabemodell deklariert sind, herausgefiltert werden (mittels Pydantic).
 
@@ -132,7 +132,7 @@ Aber in den meisten Fällen, wenn wir so etwas machen, wollen wir nur, dass das 
 
 Und in solchen Fällen können wir Klassen und Vererbung verwenden, um Vorteil aus den Typannotationen in der Funktion zu ziehen, was vom Editor und von Tools besser unterstützt wird, während wir gleichzeitig ReadyAPIs **Datenfilterung** behalten.
 
-{* ../../docs_src/response_model/tutorial003_01_py310.py hl[7:10,13:14,18] *}
+{* ../../examples/response_model/tutorial003_01_py310.py hl[7:10,13:14,18] *}
 
 Damit erhalten wir Tool-Unterstützung, vom Editor und mypy, da dieser Code hinsichtlich der Typen korrekt ist, aber wir erhalten auch die Datenfilterung von ReadyAPI.
 
@@ -174,7 +174,7 @@ Es kann Fälle geben, bei denen Sie etwas zurückgeben, das kein gültiges Pydan
 
 Der häufigste Anwendungsfall ist, wenn Sie [eine Response direkt zurückgeben, wie es später im Handbuch für fortgeschrittene Benutzer erläutert wird](../advanced/response-directly.md){.internal-link target=_blank}.
 
-{* ../../docs_src/response_model/tutorial003_02.py hl[8,10:11] *}
+{* ../../examples/response_model/tutorial003_02.py hl[8,10:11] *}
 
 Dieser einfache Anwendungsfall wird automatisch von ReadyAPI gehandhabt, weil die Annotation des Rückgabetyps die Klasse (oder eine Unterklasse von) `Response` ist.
 
@@ -184,7 +184,7 @@ Und Tools werden auch glücklich sein, weil sowohl `RedirectResponse` als auch `
 
 Sie können auch eine Unterklasse von `Response` in der Typannotation verwenden.
 
-{* ../../docs_src/response_model/tutorial003_03.py hl[8:9] *}
+{* ../../examples/response_model/tutorial003_03.py hl[8:9] *}
 
 Das wird ebenfalls funktionieren, weil `RedirectResponse` eine Unterklasse von `Response` ist, und ReadyAPI sich um diesen einfachen Anwendungsfall automatisch kümmert.
 
@@ -194,7 +194,7 @@ Aber wenn Sie ein beliebiges anderes Objekt zurückgeben, das kein gültiger Pyd
 
 Das gleiche wird passieren, wenn Sie eine <abbr title='Eine Union mehrerer Typen bedeutet: „Irgendeiner dieser Typen“'>Union</abbr> mehrerer Typen haben, und einer oder mehrere sind nicht gültige Pydantic-Typen. Zum Beispiel funktioniert folgendes nicht 💥:
 
-{* ../../docs_src/response_model/tutorial003_04_py310.py hl[8] *}
+{* ../../examples/response_model/tutorial003_04_py310.py hl[8] *}
 
 ... das scheitert, da die Typannotation kein Pydantic-Typ ist, und auch keine einzelne `Response`-Klasse, oder -Unterklasse, es ist eine Union (eines von beiden) von `Response` und `dict`.
 
@@ -206,7 +206,7 @@ Aber Sie möchten dennoch den Rückgabetyp in der Funktion annotieren, um Unters
 
 In diesem Fall können Sie die Generierung des Responsemodells abschalten, indem Sie `response_model=None` setzen:
 
-{* ../../docs_src/response_model/tutorial003_05_py310.py hl[7] *}
+{* ../../examples/response_model/tutorial003_05_py310.py hl[7] *}
 
 Das bewirkt, dass ReadyAPI die Generierung des Responsemodells unterlässt, und damit können Sie jede gewünschte Rückgabetyp-Annotation haben, ohne dass es Ihre ReadyAPI-Anwendung beeinflusst. 🤓
 
@@ -214,7 +214,7 @@ Das bewirkt, dass ReadyAPI die Generierung des Responsemodells unterlässt, und 
 
 Ihr Responsemodell könnte Defaultwerte haben, wie:
 
-{* ../../docs_src/response_model/tutorial004_py310.py hl[9,11:12] *}
+{* ../../examples/response_model/tutorial004_py310.py hl[9,11:12] *}
 
 * `description: Union[str, None] = None` (oder `str | None = None` in Python 3.10) hat einen Defaultwert `None`.
 * `tax: float = 10.5` hat einen Defaultwert `10.5`.
@@ -228,7 +228,7 @@ Wenn Sie zum Beispiel Modelle mit vielen optionalen Attributen in einer NoSQL-Da
 
 Sie können den *Pfadoperation-Dekorator*-Parameter `response_model_exclude_unset=True` setzen:
 
-{* ../../docs_src/response_model/tutorial004_py310.py hl[22] *}
+{* ../../examples/response_model/tutorial004_py310.py hl[22] *}
 
 Die Defaultwerte werden dann nicht in der Response enthalten sein, sondern nur die tatsächlich gesetzten Werte.
 
@@ -325,7 +325,7 @@ Das trifft auch auf `response_model_by_alias` zu, welches ähnlich funktioniert.
 
 ///
 
-{* ../../docs_src/response_model/tutorial005_py310.py hl[29,35] *}
+{* ../../examples/response_model/tutorial005_py310.py hl[29,35] *}
 
 /// tip | Tipp
 
@@ -339,7 +339,7 @@ Die Syntax `{"name", "description"}` erzeugt ein `set` mit diesen zwei Werten.
 
 Wenn Sie vergessen, ein `set` zu verwenden, und stattdessen eine `list`e oder ein `tuple` übergeben, wird ReadyAPI die dennoch in ein `set` konvertieren, und es wird korrekt funktionieren:
 
-{* ../../docs_src/response_model/tutorial006_py310.py hl[29,35] *}
+{* ../../examples/response_model/tutorial006_py310.py hl[29,35] *}
 
 ## Zusammenfassung
 

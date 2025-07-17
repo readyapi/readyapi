@@ -2,7 +2,7 @@
 
 Le fichier **ReadyAPI** le plus simple possible pourrait ressembler à cela  :
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Copiez ce code dans un fichier nommé `main.py`.
 
@@ -132,7 +132,7 @@ Vous pourriez aussi l'utiliser pour générer du code automatiquement, pour les 
 
 ### Étape 1 : import `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` est une classe Python qui fournit toutes les fonctionnalités nécessaires au lancement de votre API.
 
@@ -146,7 +146,7 @@ Vous pouvez donc aussi utiliser toutes les fonctionnalités de <a href="https://
 
 ### Étape 2 : créer une "instance" `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Ici la variable `app` sera une "instance" de la classe `ReadyAPI`.
 
@@ -166,7 +166,7 @@ $ uvicorn main:app --reload
 
 Si vous créez votre app avec :
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 Et la mettez dans un fichier `main.py`, alors vous appelleriez `uvicorn` avec :
 
@@ -242,7 +242,7 @@ Nous allons donc aussi appeler ces dernières des "**opérations**".
 
 #### Définir un *décorateur d'opération de chemin*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 Le `@app.get("/")` dit à **ReadyAPI** que la fonction en dessous est chargée de gérer les requêtes qui vont sur :
 
@@ -296,7 +296,7 @@ Voici notre "**fonction de chemin**" (ou fonction d'opération de chemin) :
 * **opération** : `get`.
 * **fonction** : la fonction sous le "décorateur" (sous `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 C'est une fonction Python.
 
@@ -308,7 +308,7 @@ Ici, c'est une fonction asynchrone (définie avec `async def`).
 
 Vous pourriez aussi la définir comme une fonction classique plutôt qu'avec `async def` :
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note
 
@@ -318,7 +318,7 @@ Si vous ne connaissez pas la différence, allez voir la section [Concurrence : *
 
 ### Étape 5 : retourner le contenu
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Vous pouvez retourner un dictionnaire (`dict`), une liste (`list`), des valeurs seules comme des chaines de caractères (`str`) et des entiers (`int`), etc.
 

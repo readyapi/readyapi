@@ -25,7 +25,7 @@ $ pip install jinja2
 * Declare um parâmetro `Request` no *path operation* que retornará um template.
 * Use o `template` que você criou para renderizar e retornar uma `TemplateResponse`, passe o nome do template, o request object, e um "context" dict com pares chave-valor a serem usados dentro do template do Jinja2.
 
-{* ../../docs_src/templates/tutorial001.py hl[4,11,15:18] *}
+{* ../../examples/templates/tutorial001.py hl[4,11,15:18] *}
 
 /// note
 
@@ -54,7 +54,7 @@ Você também poderia usar `from starlette.templating import Jinja2Templates`.
 Então você pode escrever um template em `templates/item.html`, por exemplo:
 
 ```jinja hl_lines="7"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 ### Interpolação de Valores no Template
@@ -108,13 +108,13 @@ Por exemplo, com um ID de `42`, isso renderizará:
 Você também pode usar `url_for()` dentro do template e usá-lo, por examplo, com o `StaticFiles` que você montou com o `name="static"`.
 
 ```jinja hl_lines="4"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 Neste exemplo, ele seria vinculado a um arquivo CSS em `static/styles.css` com:
 
 ```CSS hl_lines="4"
-{!../../docs_src/templates/static/styles.css!}
+{!../../examples/templates/static/styles.css!}
 ```
 
 E como você está usando `StaticFiles`, este arquivo CSS será automaticamente servido pela sua aplicação ReadyAPI na URL `/static/styles.css`.

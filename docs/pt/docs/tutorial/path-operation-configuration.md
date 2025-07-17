@@ -16,7 +16,7 @@ Você pode passar diretamente o código `int`, como `404`.
 
 Mas se você não se lembrar o que cada código numérico significa, pode usar as constantes de atalho em `status`:
 
-{* ../../docs_src/path_operation_configuration/tutorial001.py hl[3,17] *}
+{* ../../examples/path_operation_configuration/tutorial001.py hl[3,17] *}
 
 Esse código de status será usado na resposta e será adicionado ao esquema OpenAPI.
 
@@ -32,7 +32,7 @@ Você também poderia usar `from starlette import status`.
 
 Você pode adicionar tags para sua *operação de rota*, passe o parâmetro `tags` com uma `list` de `str` (comumente apenas um `str`):
 
-{* ../../docs_src/path_operation_configuration/tutorial002.py hl[17,22,27] *}
+{* ../../examples/path_operation_configuration/tutorial002.py hl[17,22,27] *}
 
 Eles serão adicionados ao esquema OpenAPI e usados pelas interfaces de documentação automática:
 
@@ -46,13 +46,13 @@ Nestes casos, pode fazer sentido armazenar as tags em um `Enum`.
 
 **ReadyAPI** suporta isso da mesma maneira que com strings simples:
 
-{* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
+{* ../../examples/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
 ## Resumo e descrição
 
 Você pode adicionar um `summary` e uma `description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial003.py hl[20:21] *}
+{* ../../examples/path_operation_configuration/tutorial003.py hl[20:21] *}
 
 ## Descrição do docstring
 
@@ -60,7 +60,7 @@ Como as descrições tendem a ser longas e cobrir várias linhas, você pode dec
 
 Você pode escrever <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> na docstring, ele será interpretado e exibido corretamente (levando em conta a indentação da docstring).
 
-{* ../../docs_src/path_operation_configuration/tutorial004.py hl[19:27] *}
+{* ../../examples/path_operation_configuration/tutorial004.py hl[19:27] *}
 
 Ela será usada nas documentações interativas:
 
@@ -71,7 +71,7 @@ Ela será usada nas documentações interativas:
 
 Você pode especificar a descrição da resposta com o parâmetro `response_description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial005.py hl[21] *}
+{* ../../examples/path_operation_configuration/tutorial005.py hl[21] *}
 
 /// info | Informação
 
@@ -93,7 +93,7 @@ Então, se você não fornecer uma, o **ReadyAPI** irá gerar automaticamente um
 
 Se você precisar marcar uma *operação de rota* como <abbr title="obsoleta, recomendada não usá-la">descontinuada</abbr>, mas sem removê-la, passe o parâmetro `deprecated`:
 
-{* ../../docs_src/path_operation_configuration/tutorial006.py hl[16] *}
+{* ../../examples/path_operation_configuration/tutorial006.py hl[16] *}
 
 Ela será claramente marcada como descontinuada nas documentações interativas:
 

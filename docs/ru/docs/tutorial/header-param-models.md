@@ -14,7 +14,7 @@
 
 Объявите нужные **header-параметры** в **Pydantic-модели** и затем аннотируйте параметр как `Header`:
 
-{* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
+{* ../../examples/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
 **ReadyAPI** **извлечёт** данные для **каждого поля** из **заголовков** запроса и выдаст заданную вами Pydantic-модель.
 
@@ -32,7 +32,7 @@
 
 Вы можете использовать возможности конфигурации Pydantic-модели для того, чтобы запретить (`forbid`) любые дополнительные (`extra`) поля:
 
-{* ../../docs_src/header_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/header_param_models/tutorial002_an_py310.py hl[10] *}
 
 Если клиент попробует отправить **дополнительные заголовки**, то в ответ он получит **ошибку**.
 
@@ -59,7 +59,7 @@
 
 Если по каким-то причинам вам нужно отключить данное автоматическое преобразование, это можно сделать и для Pydantic-моделей для header-параметров.
 
-{* ../../docs_src/header_param_models/tutorial003_an_py310.py hl[19] *}
+{* ../../examples/header_param_models/tutorial003_an_py310.py hl[19] *}
 
 /// warning | Внимание
 

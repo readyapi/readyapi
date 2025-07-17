@@ -18,7 +18,7 @@ No la clase en sí (que ya es un callable), sino una instance de esa clase.
 
 Para hacer eso, declaramos un método `__call__`:
 
-{* ../../docs_src/dependencies/tutorial011_an_py39.py hl[12] *}
+{* ../../examples/dependencies/tutorial011_an_py39.py hl[12] *}
 
 En este caso, este `__call__` es lo que **ReadyAPI** usará para comprobar parámetros adicionales y sub-dependencias, y es lo que llamará para pasar un valor al parámetro en tu *path operation function* más adelante.
 
@@ -26,7 +26,7 @@ En este caso, este `__call__` es lo que **ReadyAPI** usará para comprobar pará
 
 Y ahora, podemos usar `__init__` para declarar los parámetros de la instance que podemos usar para "parametrizar" la dependencia:
 
-{* ../../docs_src/dependencies/tutorial011_an_py39.py hl[9] *}
+{* ../../examples/dependencies/tutorial011_an_py39.py hl[9] *}
 
 En este caso, **ReadyAPI** nunca tocará ni se preocupará por `__init__`, lo usaremos directamente en nuestro código.
 
@@ -34,7 +34,7 @@ En este caso, **ReadyAPI** nunca tocará ni se preocupará por `__init__`, lo us
 
 Podríamos crear una instance de esta clase con:
 
-{* ../../docs_src/dependencies/tutorial011_an_py39.py hl[18] *}
+{* ../../examples/dependencies/tutorial011_an_py39.py hl[18] *}
 
 Y de esa manera podemos "parametrizar" nuestra dependencia, que ahora tiene `"bar"` dentro de ella, como el atributo `checker.fixed_content`.
 
@@ -50,7 +50,7 @@ checker(q="somequery")
 
 ...y pasará lo que eso retorne como el valor de la dependencia en nuestra *path operation function* como el parámetro `fixed_content_included`:
 
-{* ../../docs_src/dependencies/tutorial011_an_py39.py hl[22] *}
+{* ../../examples/dependencies/tutorial011_an_py39.py hl[22] *}
 
 /// tip | Consejo
 

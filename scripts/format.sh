@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -x
 
-ruff check readyapi tests docs_src scripts --fix
-ruff format readyapi tests docs_src scripts
+ruff check readyapi tests examples scripts --fix
+ruff format readyapi tests examples scripts

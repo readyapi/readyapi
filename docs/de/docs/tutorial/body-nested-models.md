@@ -6,7 +6,7 @@ Mit **ReadyAPI** können Sie (dank Pydantic) beliebig tief verschachtelte Modell
 
 Sie können ein Attribut als Kindtyp definieren, zum Beispiel eine Python-`list`e.
 
-{* ../../docs_src/body_nested_models/tutorial001_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial001_py310.py hl[12] *}
 
 Das bewirkt, dass `tags` eine Liste ist, wenngleich es nichts über den Typ der Elemente der Liste aussagt.
 
@@ -20,7 +20,7 @@ In Python 3.9 oder darüber können Sie einfach `list` verwenden, um diese Typan
 
 In Python-Versionen vor 3.9 (3.6 und darüber), müssen Sie zuerst `List` von Pythons Standardmodul `typing` importieren.
 
-{* ../../docs_src/body_nested_models/tutorial002.py hl[1] *}
+{* ../../examples/body_nested_models/tutorial002.py hl[1] *}
 
 ### Eine `list`e mit einem Typ-Parameter deklarieren
 
@@ -49,7 +49,7 @@ Verwenden Sie dieselbe Standardsyntax für Modellattribute mit inneren Typen.
 
 In unserem Beispiel können wir also bewirken, dass `tags` spezifisch eine „Liste von Strings“ ist:
 
-{* ../../docs_src/body_nested_models/tutorial002_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial002_py310.py hl[12] *}
 
 ## Set-Typen
 
@@ -59,7 +59,7 @@ Python hat einen Datentyp speziell für Mengen eindeutiger Dinge: das <abbr titl
 
 Deklarieren wir also `tags` als Set von Strings.
 
-{* ../../docs_src/body_nested_models/tutorial003_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial003_py310.py hl[12] *}
 
 Jetzt, selbst wenn Sie einen Request mit duplizierten Daten erhalten, werden diese zu einem Set eindeutiger Dinge konvertiert.
 
@@ -81,13 +81,13 @@ Alles das beliebig tief verschachtelt.
 
 Wir können zum Beispiel ein `Image`-Modell definieren.
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[7:9] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[7:9] *}
 
 ### Das Kindmodell als Typ verwenden
 
 Und dann können wir es als Typ eines Attributes verwenden.
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[18] *}
 
 Das würde bedeuten, dass **ReadyAPI** einen Body erwartet wie:
 
@@ -120,7 +120,7 @@ Um alle Optionen kennenzulernen, die Sie haben, schauen Sie sich <a href="https:
 
 Da wir zum Beispiel im `Image`-Modell ein Feld `url` haben, können wir deklarieren, dass das eine Instanz von Pydantics `HttpUrl` sein soll, anstelle eines `str`:
 
-{* ../../docs_src/body_nested_models/tutorial005_py310.py hl[2,8] *}
+{* ../../examples/body_nested_models/tutorial005_py310.py hl[2,8] *}
 
 Es wird getestet, ob der String eine gültige URL ist, und als solche wird er in JSON Schema / OpenAPI dokumentiert.
 
@@ -128,7 +128,7 @@ Es wird getestet, ob der String eine gültige URL ist, und als solche wird er in
 
 Sie können Pydantic-Modelle auch als Typen innerhalb von `list`, `set`, usw. verwenden:
 
-{* ../../docs_src/body_nested_models/tutorial006_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial006_py310.py hl[18] *}
 
 Das wird einen JSON-Body erwarten (konvertieren, validieren, dokumentieren), wie:
 
@@ -166,7 +166,7 @@ Beachten Sie, dass der `images`-Schlüssel jetzt eine Liste von Bild-Objekten ha
 
 Sie können beliebig tief verschachtelte Modelle definieren:
 
-{* ../../docs_src/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
+{* ../../examples/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
 
 /// info
 
@@ -190,7 +190,7 @@ images: list[Image]
 
 so wie in:
 
-{* ../../docs_src/body_nested_models/tutorial008_py39.py hl[13] *}
+{* ../../examples/body_nested_models/tutorial008_py39.py hl[13] *}
 
 ## Editor-Unterstützung überall
 
@@ -220,7 +220,7 @@ Das schauen wir uns mal an.
 
 Im folgenden Beispiel akzeptieren Sie irgendein `dict`, solange es `int`-Schlüssel und `float`-Werte hat.
 
-{* ../../docs_src/body_nested_models/tutorial009_py39.py hl[7] *}
+{* ../../examples/body_nested_models/tutorial009_py39.py hl[7] *}
 
 /// tip | Tipp
 

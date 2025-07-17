@@ -29,7 +29,7 @@ $ pip install httpx
 
 Записуйте прості `assert`-вирази зі стандартними виразами Python, які потрібно перевірити (це також стандарт для `pytest`).
 
-{* ../../docs_src/app_testing/tutorial001.py hl[2,12,15:18] *}
+{* ../../examples/app_testing/tutorial001.py hl[2,12,15:18] *}
 
 
 /// tip | Порада
@@ -74,7 +74,7 @@ $ pip install httpx
 ```
 У файлі `main.py` знаходиться Ваш застосунок **ReadyAPI** :
 
-{* ../../docs_src/app_testing/main.py *}
+{* ../../examples/app_testing/main.py *}
 
 ### Файл тестування
 
@@ -91,7 +91,7 @@ $ pip install httpx
 
 Оскільки цей файл знаходиться в тому ж пакеті, Ви можете використовувати відносний імпорт, щоб імпортувати об'єкт `app`  із модуля `main` (`main.py`):
 
-{* ../../docs_src/app_testing/test_main.py hl[3] *}
+{* ../../examples/app_testing/test_main.py hl[3] *}
 
 
 ...і написати код для тестів так само як і раніше.
@@ -123,7 +123,7 @@ $ pip install httpx
 //// tab | Python 3.10+
 
 ```Python
-{!> ../../docs_src/app_testing/app_b_an_py310/main.py!}
+{!> ../../examples/app_testing/app_b_an_py310/main.py!}
 ```
 
 ////
@@ -131,7 +131,7 @@ $ pip install httpx
 //// tab | Python 3.9+
 
 ```Python
-{!> ../../docs_src/app_testing/app_b_an_py39/main.py!}
+{!> ../../examples/app_testing/app_b_an_py39/main.py!}
 ```
 
 ////
@@ -139,7 +139,7 @@ $ pip install httpx
 //// tab | Python 3.8+
 
 ```Python
-{!> ../../docs_src/app_testing/app_b_an/main.py!}
+{!> ../../examples/app_testing/app_b_an/main.py!}
 ```
 
 ////
@@ -153,7 +153,7 @@ $ pip install httpx
 ///
 
 ```Python
-{!> ../../docs_src/app_testing/app_b_py310/main.py!}
+{!> ../../examples/app_testing/app_b_py310/main.py!}
 ```
 
 ////
@@ -167,7 +167,7 @@ $ pip install httpx
 ///
 
 ```Python
-{!> ../../docs_src/app_testing/app_b/main.py!}
+{!> ../../examples/app_testing/app_b/main.py!}
 ```
 
 ////
@@ -176,7 +176,7 @@ $ pip install httpx
 
 Потім Ви можете оновити `test_main.py`, додавши розширені тести:
 
-{* ../../docs_src/app_testing/app_b/test_main.py *}
+{* ../../examples/app_testing/app_b/test_main.py *}
 
 Коли Вам потрібно передати клієнту інформацію в запиті, але Ви не знаєте, як це зробити, Ви можете пошукати (наприклад, у Google) спосіб реалізації в `httpx`, або навіть у `requests`, оскільки HTTPX розроблений на основі дизайну Requests.
 

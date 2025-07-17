@@ -8,7 +8,7 @@ Primero, por supuesto, puedes mezclar las declaraciones de parámetros de `Path`
 
 Y también puedes declarar parámetros del cuerpo como opcionales, estableciendo el valor predeterminado a `None`:
 
-{* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
+{* ../../examples/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
 ## Múltiples parámetros del cuerpo
 
@@ -33,7 +33,7 @@ En el ejemplo anterior, las *path operations* esperarían un cuerpo JSON con los
 
 Pero también puedes declarar múltiples parámetros del cuerpo, por ejemplo `item` y `user`:
 
-{* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+{* ../../examples/body_multiple_params/tutorial002_py310.py hl[20] *}
 
 En este caso, **ReadyAPI** notará que hay más de un parámetro del cuerpo en la función (hay dos parámetros que son modelos de Pydantic).
 
@@ -74,7 +74,7 @@ Si lo declaras tal cual, debido a que es un valor singular, **ReadyAPI** asumir�
 
 Pero puedes instruir a **ReadyAPI** para que lo trate como otra clave del cuerpo usando `Body`:
 
-{* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 En este caso, **ReadyAPI** esperará un cuerpo como:
 
@@ -114,7 +114,7 @@ q: str | None = None
 
 Por ejemplo:
 
-{* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[28] *}
+{* ../../examples/body_multiple_params/tutorial004_an_py310.py hl[28] *}
 
 /// info | Información
 
@@ -136,7 +136,7 @@ item: Item = Body(embed=True)
 
 como en:
 
-{* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
 En este caso, **ReadyAPI** esperará un cuerpo como:
 

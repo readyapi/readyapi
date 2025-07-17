@@ -10,13 +10,13 @@ You can declare `examples` for a Pydantic model that will be added to the genera
 
 //// tab | Pydantic v2
 
-{* ../../docs_src/schema_extra_example/tutorial001_py310.py hl[13:24] *}
+{* ../../examples/schema_extra_example/tutorial001_py310.py hl[13:24] *}
 
 ////
 
 //// tab | Pydantic v1
 
-{* ../../docs_src/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
+{* ../../examples/schema_extra_example/tutorial001_pv1_py310.py hl[13:23] *}
 
 ////
 
@@ -60,7 +60,7 @@ You can read more at the end of this page.
 
 When using `Field()` with Pydantic models, you can also declare additional `examples`:
 
-{* ../../docs_src/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
+{* ../../examples/schema_extra_example/tutorial002_py310.py hl[2,8:11] *}
 
 ## `examples` in JSON Schema - OpenAPI
 
@@ -80,7 +80,7 @@ you can also declare a group of `examples` with additional information that will
 
 Here we pass `examples` containing one example of the data expected in `Body()`:
 
-{* ../../docs_src/schema_extra_example/tutorial003_an_py310.py hl[22:29] *}
+{* ../../examples/schema_extra_example/tutorial003_an_py310.py hl[22:29] *}
 
 ### Example in the docs UI
 
@@ -92,7 +92,7 @@ With any of the methods above it would look like this in the `/docs`:
 
 You can of course also pass multiple `examples`:
 
-{* ../../docs_src/schema_extra_example/tutorial004_an_py310.py hl[23:38] *}
+{* ../../examples/schema_extra_example/tutorial004_an_py310.py hl[23:38] *}
 
 When you do this, the examples will be part of the internal **JSON Schema** for that body data.
 
@@ -133,7 +133,7 @@ Each specific example `dict` in the `examples` can contain:
 
 You can use it like this:
 
-{* ../../docs_src/schema_extra_example/tutorial005_an_py310.py hl[23:49] *}
+{* ../../examples/schema_extra_example/tutorial005_an_py310.py hl[23:49] *}
 
 ### OpenAPI Examples in the Docs UI
 

@@ -6,7 +6,7 @@ De la misma manera que puedes declarar más validaciones y metadatos para los pa
 
 Primero, importa `Path` de `readyapi`, e importa `Annotated`:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
 
 /// info | Información
 
@@ -24,7 +24,7 @@ Puedes declarar todos los mismos parámetros que para `Query`.
 
 Por ejemplo, para declarar un valor de metadato `title` para el parámetro de path `item_id` puedes escribir:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
 
 /// note | Nota
 
@@ -62,13 +62,13 @@ Prefiere usar la versión `Annotated` si es posible.
 
 ///
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial002.py hl[7] *}
 
 ////
 
 Pero ten en cuenta que si usas `Annotated`, no tendrás este problema, no importará ya que no estás usando los valores por defecto de los parámetros de la función para `Query()` o `Path()`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py *}
+{* ../../examples/path_params_numeric_validations/tutorial002_an_py39.py *}
 
 ## Ordena los parámetros como necesites, trucos
 
@@ -93,13 +93,13 @@ Pasa `*`, como el primer parámetro de la función.
 
 Python no hará nada con ese `*`, pero sabrá que todos los parámetros siguientes deben ser llamados como argumentos de palabras clave (parejas key-value), también conocidos como <abbr title="De: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>. Incluso si no tienen un valor por defecto.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial003.py hl[7] *}
 
 ### Mejor con `Annotated`
 
 Ten en cuenta que si usas `Annotated`, como no estás usando valores por defecto de los parámetros de la función, no tendrás este problema y probablemente no necesitarás usar `*`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
 
 ## Validaciones numéricas: mayor o igual
 
@@ -107,7 +107,7 @@ Con `Query` y `Path` (y otros que verás más adelante) puedes declarar restricc
 
 Aquí, con `ge=1`, `item_id` necesitará ser un número entero "`g`reater than or `e`qual" a `1`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
 
 ## Validaciones numéricas: mayor que y menor o igual
 
@@ -116,7 +116,7 @@ Lo mismo aplica para:
 * `gt`: `g`reater `t`han
 * `le`: `l`ess than or `e`qual
 
-{* ../../docs_src/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
 
 ## Validaciones numéricas: flotantes, mayor y menor
 
@@ -128,7 +128,7 @@ Así, `0.5` sería un valor válido. Pero `0.0` o `0` no lo serían.
 
 Y lo mismo para <abbr title="less than"><code>lt</code></abbr>.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
+{* ../../examples/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
 
 ## Resumen
 

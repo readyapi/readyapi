@@ -29,7 +29,7 @@
 
 🖼:
 
-{* ../../docs_src/conditional_openapi/tutorial001.py hl[6,11] *}
+{* ../../examples/conditional_openapi/tutorial001.py hl[6,11] *}
 
 📥 👥 📣 ⚒ `openapi_url` ⏮️ 🎏 🔢 `"/openapi.json"`.
 

@@ -6,7 +6,7 @@
 
 🥇, 🗄 `Path` ⚪️➡️ `readyapi`:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001.py hl[3] *}
+{* ../../examples/path_params_numeric_validations/tutorial001.py hl[3] *}
 
 ## 📣 🗃
 
@@ -14,7 +14,7 @@
 
 🖼, 📣 `title` 🗃 💲 ➡ 🔢 `item_id` 👆 💪 🆎:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial001.py hl[10] *}
 
 /// note
 
@@ -42,7 +42,7 @@
 
 , 👆 💪 📣 👆 🔢:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial002.py hl[7] *}
 
 ## ✔ 🔢 👆 💪, 🎱
 
@@ -52,7 +52,7 @@
 
 🐍 🏆 🚫 🕳 ⏮️ 👈 `*`, ✋️ ⚫️ 🔜 💭 👈 🌐 📄 🔢 🔜 🤙 🇨🇻 ❌ (🔑-💲 👫), 💭 <abbr title="From: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>. 🚥 👫 🚫 ✔️ 🔢 💲.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial003.py hl[7] *}
 
 ## 🔢 🔬: 👑 🌘 ⚖️ 🌓
 
@@ -60,7 +60,7 @@
 
 📥, ⏮️ `ge=1`, `item_id` 🔜 💪 🔢 🔢 "`g`🅾 🌘 ⚖️ `e`🅾" `1`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial004.py hl[8] *}
+{* ../../examples/path_params_numeric_validations/tutorial004.py hl[8] *}
 
 ## 🔢 🔬: 🌘 🌘 &amp; 🌘 🌘 ⚖️ 🌓
 
@@ -69,7 +69,7 @@
 * `gt`: `g`🅾 `t`👲
 * `le`: `l`👭 🌘 ⚖️ `e`🅾
 
-{* ../../docs_src/path_params_numeric_validations/tutorial005.py hl[9] *}
+{* ../../examples/path_params_numeric_validations/tutorial005.py hl[9] *}
 
 ## 🔢 🔬: 🎈, 🌘 🌘 &amp; 🌘 🌘
 
@@ -81,7 +81,7 @@
 
 &amp; 🎏 <abbr title="less than"><code>lt</code></abbr>.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial006.py hl[11] *}
+{* ../../examples/path_params_numeric_validations/tutorial006.py hl[11] *}
 
 ## 🌃
 

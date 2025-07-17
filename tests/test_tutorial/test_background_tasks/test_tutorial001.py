@@ -3,7 +3,7 @@ from pathlib import Path
 
 from readyapi.testclient import TestClient
 
-from docs_src.background_tasks.tutorial001 import app
+from examples.background_tasks.tutorial001 import app
 
 client = TestClient(app)
 

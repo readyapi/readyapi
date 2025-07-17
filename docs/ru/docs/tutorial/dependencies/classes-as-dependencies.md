@@ -6,7 +6,7 @@
 
 В предыдущем примере мы возвращали `словарь` из нашей зависимости:
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[9] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[9] *}
 
 Но затем мы получаем `словарь`  в параметре `commons`  *функции операции пути*. И мы знаем, что редакторы не могут обеспечить достаточную поддержку для `словаря`, поскольку они не могут знать их ключи и типы значений.
 
@@ -67,15 +67,15 @@ fluffy = Cat(name="Mr Fluffy")
 
 Теперь мы можем изменить зависимость `common_parameters`, указанную выше, на класс `CommonQueryParams`:
 
-{* ../../docs_src/dependencies/tutorial002_an_py310.py hl[11:15] *}
+{* ../../examples/dependencies/tutorial002_an_py310.py hl[11:15] *}
 
 Обратите внимание на метод `__init__`, используемый для создания экземпляра класса:
 
-{* ../../docs_src/dependencies/tutorial002_an_py310.py hl[12] *}
+{* ../../examples/dependencies/tutorial002_an_py310.py hl[12] *}
 
 ...имеет те же параметры, что и ранее используемая функция `common_parameters`:
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[8] *}
 
 Эти параметры и будут использоваться **ReadyAPI** для "решения" зависимости.
 
@@ -91,7 +91,7 @@ fluffy = Cat(name="Mr Fluffy")
 
 Теперь вы можете объявить свою зависимость, используя этот класс.
 
-{* ../../docs_src/dependencies/tutorial002_an_py310.py hl[19] *}
+{* ../../examples/dependencies/tutorial002_an_py310.py hl[19] *}
 
 **ReadyAPI** вызывает класс `CommonQueryParams`. При этом создается "экземпляр" этого класса, который будет передан в качестве параметра `commons` в вашу функцию.
 
@@ -185,7 +185,7 @@ commons = Depends(CommonQueryParams)
 
 ...как тут:
 
-{* ../../docs_src/dependencies/tutorial003_an_py310.py hl[19] *}
+{* ../../examples/dependencies/tutorial003_an_py310.py hl[19] *}
 
 Но объявление типа приветствуется, так как в этом случае ваш редактор будет знать, что будет передано в качестве параметра `commons`, и тогда он сможет помочь вам с автодополнением, проверкой типов и т.д:
 
@@ -272,7 +272,7 @@ commons: CommonQueryParams = Depends()
 
 Аналогичный пример будет выглядеть следующим образом:
 
-{* ../../docs_src/dependencies/tutorial004_an_py310.py hl[19] *}
+{* ../../examples/dependencies/tutorial004_an_py310.py hl[19] *}
 
 ...и **ReadyAPI** будет знать, что делать.
 

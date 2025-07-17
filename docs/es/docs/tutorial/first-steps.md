@@ -2,7 +2,7 @@
 
 El archivo ReadyAPI más simple podría verse así:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Copia eso en un archivo `main.py`.
 
@@ -155,7 +155,7 @@ También podrías usarlo para generar código automáticamente, para clientes qu
 
 ### Paso 1: importa `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` es una clase de Python que proporciona toda la funcionalidad para tu API.
 
@@ -169,7 +169,7 @@ Puedes usar toda la funcionalidad de <a href="https://www.starlette.io/" class="
 
 ### Paso 2: crea una "instance" de `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Aquí la variable `app` será una "instance" de la clase `ReadyAPI`.
 
@@ -238,7 +238,7 @@ Vamos a llamarlas "**operaciones**" también.
 
 #### Define un *path operation decorator*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 El `@app.get("/")` le dice a **ReadyAPI** que la función justo debajo se encarga de manejar requests que vayan a:
 
@@ -292,7 +292,7 @@ Esta es nuestra "**path operation function**":
 * **operation**: es `get`.
 * **function**: es la función debajo del "decorador" (debajo de `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Esta es una función de Python.
 
@@ -304,7 +304,7 @@ En este caso, es una función `async`.
 
 También podrías definirla como una función normal en lugar de `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Nota
 
@@ -314,7 +314,7 @@ Si no sabes la diferencia, revisa la sección [Async: *"¿Tienes prisa?"*](../as
 
 ### Paso 5: retorna el contenido
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Puedes retornar un `dict`, `list`, valores singulares como `str`, `int`, etc.
 

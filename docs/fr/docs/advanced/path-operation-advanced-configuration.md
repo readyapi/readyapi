@@ -12,7 +12,7 @@ Dans OpenAPI, les chemins sont des ressources, tels que /users/ ou /items/, expo
 
 Vous devez vous assurer qu'il est unique pour chaque opération.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial001.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial001.py hl[6] *}
 
 ### Utilisation du nom *path operation function* comme operationId
 
@@ -20,7 +20,7 @@ Si vous souhaitez utiliser les noms de fonction de vos API comme `operationId`, 
 
 Vous devriez le faire après avoir ajouté toutes vos *paramètres de chemin*.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial002.py hl[2,12:21,24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial002.py hl[2,12:21,24] *}
 
 /// tip | Astuce
 
@@ -40,7 +40,7 @@ Même s'ils se trouvent dans des modules différents (fichiers Python).
 
 Pour exclure un *chemin* du schéma OpenAPI généré (et donc des systèmes de documentation automatiques), utilisez le paramètre `include_in_schema` et assignez-lui la valeur `False` :
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial003.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial003.py hl[6] *}
 
 ## Description avancée de docstring
 
@@ -50,7 +50,7 @@ L'ajout d'un `\f` (un caractère d'échappement "form feed") va permettre à **R
 
 Il n'apparaîtra pas dans la documentation, mais d'autres outils (tel que Sphinx) pourront utiliser le reste.
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial004.py hl[19:29] *}
 
 ## Réponses supplémentaires
 
@@ -90,7 +90,7 @@ Vous pouvez étendre le schéma OpenAPI pour une *opération de chemin* en utili
 
 Cet `openapi_extra` peut être utile, par exemple, pour déclarer [OpenAPI Extensions](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions) :
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial005.py hl[6] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial005.py hl[6] *}
 
 Si vous ouvrez la documentation automatique de l'API, votre extension apparaîtra au bas du *chemin* spécifique.
 
@@ -137,7 +137,7 @@ Par exemple, vous pouvez décider de lire et de valider la requête avec votre p
 
 Vous pouvez le faire avec `openapi_extra` :
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial006.py hl[20:37,39:40] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial006.py hl[20:37,39:40] *}
 
 Dans cet exemple, nous n'avons déclaré aucun modèle Pydantic. En fait, le corps de la requête n'est même pas <abbr title="converti d'un format simple, comme des octets, en objets Python">parsé</abbr> en tant que JSON, il est lu directement en tant que `bytes`, et la fonction `magic_data_reader()` serait chargé de l'analyser d'une manière ou d'une autre.
 
@@ -151,7 +151,7 @@ Et vous pouvez le faire même si le type de données dans la requête n'est pas 
 
 Dans cet exemple, nous n'utilisons pas les fonctionnalités de ReadyAPI pour extraire le schéma JSON des modèles Pydantic ni la validation automatique pour JSON. En fait, nous déclarons le type de contenu de la requête en tant que YAML, et non JSON :
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[17:22,24] *}
 
 Néanmoins, bien que nous n'utilisions pas la fonctionnalité par défaut, nous utilisons toujours un modèle Pydantic pour générer manuellement le schéma JSON pour les données que nous souhaitons recevoir en YAML.
 
@@ -159,7 +159,7 @@ Ensuite, nous utilisons directement la requête et extrayons son contenu en tant
 
 Et nous analysons directement ce contenu YAML, puis nous utilisons à nouveau le même modèle Pydantic pour valider le contenu YAML :
 
-{* ../../docs_src/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
+{* ../../examples/path_operation_advanced_configuration/tutorial007.py hl[26:33] *}
 
 /// tip | Astuce
 

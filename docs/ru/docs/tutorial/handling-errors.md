@@ -25,7 +25,7 @@
 
 ### Импортируйте `HTTPException`
 
-{* ../../docs_src/handling_errors/tutorial001.py hl[1] *}
+{* ../../examples/handling_errors/tutorial001.py hl[1] *}
 
 ### Вызовите `HTTPException` в своем коде
 
@@ -39,7 +39,7 @@
 
 В данном примере, когда клиент запрашивает элемент по несуществующему ID, возникает исключение со статус-кодом `404`:
 
-{* ../../docs_src/handling_errors/tutorial001.py hl[11] *}
+{* ../../examples/handling_errors/tutorial001.py hl[11] *}
 
 ### Возвращаемый ответ
 
@@ -77,7 +77,7 @@
 
 Но в случае, если это необходимо для продвинутого сценария, можно добавить пользовательские заголовки:
 
-{* ../../docs_src/handling_errors/tutorial002.py hl[14] *}
+{* ../../examples/handling_errors/tutorial002.py hl[14] *}
 
 ## Установка пользовательских обработчиков исключений
 
@@ -89,7 +89,7 @@
 
 Можно добавить собственный обработчик исключений с помощью `@app.exception_handler()`:
 
-{* ../../docs_src/handling_errors/tutorial003.py hl[5:7,13:18,24] *}
+{* ../../examples/handling_errors/tutorial003.py hl[5:7,13:18,24] *}
 
 Здесь, если запросить `/unicorns/yolo`, то *операция пути* вызовет `UnicornException`.
 
@@ -127,7 +127,7 @@
 
 Обработчик исключения получит объект `Request` и исключение.
 
-{* ../../docs_src/handling_errors/tutorial004.py hl[2,14:16] *}
+{* ../../examples/handling_errors/tutorial004.py hl[2,14:16] *}
 
 Теперь, если перейти к `/items/foo`, то вместо стандартной JSON-ошибки с:
 
@@ -178,7 +178,7 @@ path -> item_id
 
 Например, для этих ошибок можно вернуть обычный текстовый ответ вместо JSON:
 
-{* ../../docs_src/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
+{* ../../examples/handling_errors/tutorial004.py hl[3:4,9:11,22] *}
 
 /// note | Технические детали
 
@@ -194,7 +194,7 @@ path -> item_id
 
 Вы можете использовать его при разработке приложения для регистрации тела и его отладки, возврата пользователю и т.д.
 
-{* ../../docs_src/handling_errors/tutorial005.py hl[14] *}
+{* ../../examples/handling_errors/tutorial005.py hl[14] *}
 
 Теперь попробуйте отправить недействительный элемент, например:
 
@@ -252,6 +252,6 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 Если вы хотите использовать исключение вместе с теми же обработчиками исключений по умолчанию из **ReadyAPI**, вы можете импортировать и повторно использовать обработчики исключений по умолчанию из `readyapi.exception_handlers`:
 
-{* ../../docs_src/handling_errors/tutorial006.py hl[2:5,15,21] *}
+{* ../../examples/handling_errors/tutorial006.py hl[2:5,15,21] *}
 
 В этом примере вы просто `выводите в терминал` ошибку с очень выразительным сообщением, но идея вам понятна. Вы можете использовать исключение, а затем просто повторно использовать стандартные обработчики исключений.

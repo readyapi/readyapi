@@ -6,7 +6,7 @@ Um einen Artikel zu aktualisieren, können Sie die <a href="https://developer.mo
 
 Sie können den `jsonable_encoder` verwenden, um die empfangenen Daten in etwas zu konvertieren, das als JSON gespeichert werden kann (in z. B. einer NoSQL-Datenbank). Zum Beispiel, um ein `datetime` in einen `str` zu konvertieren.
 
-{* ../../docs_src/body_updates/tutorial001_py310.py hl[28:33] *}
+{* ../../examples/body_updates/tutorial001_py310.py hl[28:33] *}
 
 `PUT` wird verwendet, um Daten zu empfangen, die die existierenden Daten ersetzen sollen.
 
@@ -62,7 +62,7 @@ Das wird ein `dict` erstellen, mit nur den Daten, die gesetzt wurden als das `it
 
 Sie können das verwenden, um ein `dict` zu erstellen, das nur die (im Request) gesendeten Daten enthält, ohne Defaultwerte:
 
-{* ../../docs_src/body_updates/tutorial002_py310.py hl[32] *}
+{* ../../examples/body_updates/tutorial002_py310.py hl[32] *}
 
 ### Pydantics `update`-Parameter verwenden
 
@@ -78,7 +78,7 @@ Die Beispiele hier verwenden `.copy()` für die Kompatibilität mit Pydantic v1,
 
 Wie in `stored_item_model.model_copy(update=update_data)`:
 
-{* ../../docs_src/body_updates/tutorial002_py310.py hl[33] *}
+{* ../../examples/body_updates/tutorial002_py310.py hl[33] *}
 
 ### Rekapitulation zum teilweisen Ersetzen
 
@@ -95,7 +95,7 @@ Zusammengefasst, um Teil-Ersetzungen vorzunehmen:
 * Speichern Sie die Daten in Ihrer Datenbank.
 * Geben Sie das aktualisierte Modell zurück.
 
-{* ../../docs_src/body_updates/tutorial002_py310.py hl[28:35] *}
+{* ../../examples/body_updates/tutorial002_py310.py hl[28:35] *}
 
 /// tip | Tipp
 

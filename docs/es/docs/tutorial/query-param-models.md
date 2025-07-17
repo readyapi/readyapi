@@ -14,7 +14,7 @@ Esto es compatible desde la versión `0.115.0` de ReadyAPI. 🤓
 
 Declara los **parámetros query** que necesitas en un **modelo de Pydantic**, y luego declara el parámetro como `Query`:
 
-{* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
+{* ../../examples/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
 **ReadyAPI** **extraerá** los datos para **cada campo** de los **parámetros query** en el request y te proporcionará el modelo de Pydantic que definiste.
 
@@ -32,7 +32,7 @@ En algunos casos de uso especiales (probablemente no muy comunes), podrías quer
 
 Puedes usar la configuración del modelo de Pydantic para `forbid` cualquier campo `extra`:
 
-{* ../../docs_src/query_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/query_param_models/tutorial002_an_py310.py hl[10] *}
 
 Si un cliente intenta enviar algunos datos **extra** en los **parámetros query**, recibirán un response de **error**.
 

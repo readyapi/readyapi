@@ -14,7 +14,7 @@
 
 必要な**複数のクエリパラメータ**を**Pydanticモデル**で宣言し、さらに、それを `Query` として宣言しましょう:
 
-{* ../../docs_src/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
+{* ../../examples/query_param_models/tutorial001_an_py310.py hl[9:13,17] *}
 
 **ReadyAPI**は、リクエストの**クエリパラメータ**からそれぞれの**フィールド**のデータを**抽出**し、定義された**Pydanticモデル**を提供します。
 
@@ -32,7 +32,7 @@
 
 Pydanticのモデルの Configuration を利用して、 `extra` フィールドを `forbid` とすることができます。
 
-{* ../../docs_src/query_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/query_param_models/tutorial002_an_py310.py hl[10] *}
 
 もしクライアントが**クエリパラメータ**として**余分な**データを送ろうとすると、**エラー**レスポンスが返されます。
 

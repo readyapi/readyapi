@@ -12,7 +12,7 @@
 
 之后将其挂载到某一个路径下。
 
-{* ../../docs_src/wsgi/tutorial001.py hl[2:3,22] *}
+{* ../../examples/wsgi/tutorial001.py hl[2:3,22] *}
 
 ## 检查
 

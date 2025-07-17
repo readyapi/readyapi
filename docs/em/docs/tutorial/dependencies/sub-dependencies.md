@@ -10,7 +10,7 @@
 
 👆 💪 ✍ 🥇 🔗 ("☑") 💖:
 
-{* ../../docs_src/dependencies/tutorial005.py hl[8:9] *}
+{* ../../examples/dependencies/tutorial005.py hl[8:9] *}
 
 ⚫️ 📣 📦 🔢 🔢 `q` `str`, &amp; ⤴️ ⚫️ 📨 ⚫️.
 
@@ -20,7 +20,7 @@
 
 ⤴️ 👆 💪 ✍ ➕1️⃣ 🔗 🔢 ("☑") 👈 🎏 🕰 📣 🔗 🚮 👍 (⚫️ "⚓️" 💁‍♂️):
 
-{* ../../docs_src/dependencies/tutorial005.py hl[13] *}
+{* ../../examples/dependencies/tutorial005.py hl[13] *}
 
 ➡️ 🎯 🔛 🔢 📣:
 
@@ -33,7 +33,7 @@
 
 ⤴️ 👥 💪 ⚙️ 🔗 ⏮️:
 
-{* ../../docs_src/dependencies/tutorial005.py hl[22] *}
+{* ../../examples/dependencies/tutorial005.py hl[22] *}
 
 /// info
 

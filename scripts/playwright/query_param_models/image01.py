@@ -26,7 +26,7 @@ def run(playwright: Playwright) -> None:
 
 
 process = subprocess.Popen(
-    ["readyapi", "run", "docs_src/query_param_models/tutorial001.py"]
+    ["readyapi", "run", "examples/query_param_models/tutorial001.py"]
 )
 try:
     for _ in range(3):

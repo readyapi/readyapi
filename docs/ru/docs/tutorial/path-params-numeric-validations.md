@@ -6,7 +6,7 @@
 
 Сначала импортируйте `Path` из `readyapi`, а также импортируйте `Annotated`:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[1,3] *}
 
 /// info | Информация
 
@@ -24,7 +24,7 @@
 
 Например, чтобы указать значение метаданных `title` для path-параметра `item_id`, вы можете написать:
 
-{* ../../docs_src/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial001_an_py310.py hl[10] *}
 
 /// note | Примечание
 
@@ -67,14 +67,14 @@ Path-параметр всегда является обязательным, п
 ///
 
 ```Python hl_lines="7"
-{!> ../../docs_src/path_params_numeric_validations/tutorial002.py!}
+{!> ../../examples/path_params_numeric_validations/tutorial002.py!}
 ```
 
 ////
 
 Но имейте в виду, что если вы используете `Annotated`, вы не столкнётесь с этой проблемой, так как вы не используете `Query()` или `Path()` в качестве значения по умолчанию для параметра функции.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial002_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial002_an_py39.py hl[10] *}
 
 ## Задайте нужный вам порядок параметров, полезные приёмы
 
@@ -99,13 +99,13 @@ Path-параметр всегда является обязательным, п
 
 Python не будет ничего делать с `*`, но он будет знать, что все следующие параметры являются именованными аргументами (парами ключ-значение), также известными как <abbr title="From: K-ey W-ord Arg-uments"><code>kwargs</code></abbr>, даже если у них нет значений по умолчанию.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003.py hl[7] *}
+{* ../../examples/path_params_numeric_validations/tutorial003.py hl[7] *}
 
 ### Лучше с `Annotated`
 
 Имейте в виду, что если вы используете `Annotated`, то, поскольку вы не используете значений по умолчанию для параметров функции, то у вас не возникнет подобной проблемы и вам не придётся использовать `*`.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial003_an_py39.py hl[10] *}
 
 ## Валидация числовых данных: больше или равно
 
@@ -113,7 +113,7 @@ Python не будет ничего делать с `*`, но он будет з
 
 В этом примере при указании `ge=1`, параметр `item_id` должен быть больше или равен `1` ("`g`reater than or `e`qual").
 
-{* ../../docs_src/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial004_an_py39.py hl[10] *}
 
 ## Валидация числовых данных: больше и меньше или равно
 
@@ -122,7 +122,7 @@ Python не будет ничего делать с `*`, но он будет з
 * `gt`: больше (`g`reater `t`han)
 * `le`: меньше или равно (`l`ess than or `e`qual)
 
-{* ../../docs_src/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
+{* ../../examples/path_params_numeric_validations/tutorial005_an_py39.py hl[10] *}
 
 ## Валидация числовых данных: числа с плавающей точкой, больше и меньше
 
@@ -134,7 +134,7 @@ Python не будет ничего делать с `*`, но он будет з
 
 То же самое справедливо и для <abbr title="less than"><code>lt</code></abbr>.
 
-{* ../../docs_src/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
+{* ../../examples/path_params_numeric_validations/tutorial006_an_py39.py hl[13] *}
 
 ## Резюме
 

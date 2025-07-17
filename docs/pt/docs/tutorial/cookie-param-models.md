@@ -20,7 +20,7 @@ Essa mesma técnica se aplica para `Query`, `Cookie`, e `Header`. 😎
 
 Declare o parâmetro de **cookie** que você precisa em um **modelo Pydantic**, e depois declare o parâmetro como um `Cookie`:
 
-{* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
+{* ../../examples/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
 O **ReadyAPI** irá **extrair** os dados para **cada campo** dos **cookies** recebidos na requisição e lhe fornecer o modelo Pydantic que você definiu.
 
@@ -52,7 +52,7 @@ Agora a sua API possui o poder de contrar o seu próprio <abbr title="Isso é um
  Você pode utilizar a configuração do modelo Pydantic para `proibir` qualquer campo `extra`.
 
 
-{* ../../docs_src/cookie_param_models/tutorial002_an_py39.py hl[10] *}
+{* ../../examples/cookie_param_models/tutorial002_an_py39.py hl[10] *}
 
 Se o cliente tentar enviar alguns **cookies extras**, eles receberão um retorno de **erro**.
 

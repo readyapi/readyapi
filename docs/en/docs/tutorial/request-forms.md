@@ -18,13 +18,13 @@ $ pip install python-multipart
 
 Import `Form` from `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## Define `Form` parameters
 
 Create form parameters the same way you would for `Body` or `Query`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 For example, in one of the ways the OAuth2 specification can be used (called "password flow") it is required to send a `username` and `password` as form fields.
 

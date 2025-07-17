@@ -4,7 +4,7 @@ O **ReadyAPI** permite que você declare informações adicionais e validações
 
 Vamos utilizar essa aplicação como exemplo:
 
-{* ../../docs_src/query_params_str_validations/tutorial001.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial001.py hl[9] *}
 
 O parâmetro de consulta `q` é do tipo `Union[str, None]`, o que significa que é do tipo `str` mas que também pode ser `None`, e de fato, o valor padrão é `None`, então o ReadyAPI saberá que não é obrigatório.
 
@@ -24,13 +24,13 @@ Nós iremos forçar que mesmo o parâmetro `q` seja opcional, sempre que informa
 
 Para isso, primeiro importe `Query` de `readyapi`:
 
-{* ../../docs_src/query_params_str_validations/tutorial002.py hl[3] *}
+{* ../../examples/query_params_str_validations/tutorial002.py hl[3] *}
 
 ## Use `Query` como o valor padrão
 
 Agora utilize-o como valor padrão do seu parâmetro, definindo o parâmetro `max_length` para 50:
 
-{* ../../docs_src/query_params_str_validations/tutorial002.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial002.py hl[9] *}
 
 Note que substituímos o valor padrão de `None` para `Query(default=None)`, o primeiro parâmetro de `Query` serve para o mesmo propósito: definir o valor padrão do parâmetro.
 
@@ -80,13 +80,13 @@ Isso irá validar os dados, mostrar um erro claro quando os dados forem inválid
 
 Você também pode incluir um parâmetro `min_length`:
 
-{* ../../docs_src/query_params_str_validations/tutorial003.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial003.py hl[10] *}
 
 ## Adicionando expressões regulares
 
 Você pode definir uma <abbr title="Uma expressão regular, regex ou regexp é uma sequência de caracteres que define um parâmetro de busca para textos.">expressão regular</abbr> que combine com um padrão esperado pelo parâmetro:
 
-{* ../../docs_src/query_params_str_validations/tutorial004.py hl[11] *}
+{* ../../examples/query_params_str_validations/tutorial004.py hl[11] *}
 
 Essa expressão regular específica verifica se o valor recebido no parâmetro:
 
@@ -104,7 +104,7 @@ Da mesma maneira que você utiliza `None` como o primeiro argumento para ser uti
 
 Vamos dizer que você queira que o parâmetro de consulta `q` tenha um `min_length` de `3`, e um valor padrão de `"fixedquery"`, então declararíamos assim:
 
-{* ../../docs_src/query_params_str_validations/tutorial005.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial005.py hl[7] *}
 
 /// note | Observação
 
@@ -134,7 +134,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 Então, quando você precisa declarar um parâmetro obrigatório utilizando o `Query`, você pode utilizar `...` como o primeiro argumento:
 
-{* ../../docs_src/query_params_str_validations/tutorial006.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial006.py hl[7] *}
 
 /// info | Informação
 
@@ -150,7 +150,7 @@ Quando você declara explicitamente um parâmetro com `Query` você pode declar�
 
 Por exemplo, para declarar que o parâmetro `q` pode aparecer diversas vezes na URL, você escreveria:
 
-{* ../../docs_src/query_params_str_validations/tutorial011.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial011.py hl[9] *}
 
 Então, com uma URL assim:
 
@@ -185,7 +185,7 @@ A documentação interativa da API irá atualizar de acordo, permitindo múltipl
 
 E você também pode definir uma lista (`list`) de valores padrão caso nenhum seja informado:
 
-{* ../../docs_src/query_params_str_validations/tutorial012.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial012.py hl[9] *}
 
 Se você for até:
 
@@ -208,7 +208,7 @@ O valor padrão de `q` será: `["foo", "bar"]` e sua resposta será:
 
 Você também pode utilizar o tipo `list` diretamente em vez de `List[str]`:
 
-{* ../../docs_src/query_params_str_validations/tutorial013.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial013.py hl[7] *}
 
 /// note | Observação
 
@@ -234,11 +234,11 @@ Algumas delas não exibem todas as informações extras que declaramos, ainda qu
 
 Você pode adicionar um `title`:
 
-{* ../../docs_src/query_params_str_validations/tutorial007.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial007.py hl[10] *}
 
 E uma `description`:
 
-{* ../../docs_src/query_params_str_validations/tutorial008.py hl[13] *}
+{* ../../examples/query_params_str_validations/tutorial008.py hl[13] *}
 
 ## Apelidos (alias) de parâmetros
 
@@ -258,7 +258,7 @@ Mas ainda você precisa que o nome seja exatamente `item-query`...
 
 Então você pode declarar um `alias`, e esse apelido (alias) que será utilizado para encontrar o valor do parâmetro:
 
-{* ../../docs_src/query_params_str_validations/tutorial009.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial009.py hl[9] *}
 
 ## Parâmetros descontinuados
 
@@ -268,7 +268,7 @@ Você tem que deixá-lo ativo por um tempo, já que existem clientes o utilizand
 
 Então você passa o parâmetro `deprecated=True` para `Query`:
 
-{* ../../docs_src/query_params_str_validations/tutorial010.py hl[18] *}
+{* ../../examples/query_params_str_validations/tutorial010.py hl[18] *}
 
 Na documentação aparecerá assim:
 

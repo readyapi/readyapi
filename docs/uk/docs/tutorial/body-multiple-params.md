@@ -8,7 +8,7 @@
 
 Також Ви можете оголосити параметри тіла як необов’язкові, встановивши для них значення за замовчуванням `None`:
 
-{* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
+{* ../../examples/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
 /// note | Примітка
 
@@ -30,7 +30,7 @@
 ```
 Але Ви також можете оголосити декілька параметрів тіла, наприклад `item` та `user`:
 
-{* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+{* ../../examples/body_multiple_params/tutorial002_py310.py hl[20] *}
 
 У цьому випадку **ReadyAPI** розпізнає, що є кілька параметрів тіла (два параметри є моделями Pydantic).
 
@@ -71,7 +71,7 @@
 
 Але Ви можете вказати **ReadyAPI** обробляти його як інший ключ тіла (body key), використовуючи `Body`:
 
-{* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 У цьому випадку **ReadyAPI** очікуватиме тіло запиту у такому вигляді:
 
@@ -110,7 +110,7 @@ q: str | None = None
 
 Наприклад:
 
-{* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[28] *}
+{* ../../examples/body_multiple_params/tutorial004_an_py310.py hl[28] *}
 
 
 /// info | Інформація
@@ -133,7 +133,7 @@ item: Item = Body(embed=True)
 
 як у прикладі:
 
-{* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
 У цьому випадку **ReadyAPI** очікуватиме тіло запиту такого вигляду:
 

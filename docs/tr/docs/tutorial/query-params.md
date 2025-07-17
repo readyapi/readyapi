@@ -2,7 +2,7 @@
 
 Fonksiyonda yol parametrelerinin parçası olmayan diğer tanımlamalar otomatik olarak "sorgu" parametresi olarak yorumlanır.
 
-{* ../../docs_src/query_params/tutorial001.py hl[9] *}
+{* ../../examples/query_params/tutorial001.py hl[9] *}
 
 Sorgu, bağlantıdaki `?` kısmından sonra gelen ve `&` işareti ile ayrılan anahtar-değer çiftlerinin oluşturduğu bir kümedir.
 
@@ -61,7 +61,7 @@ Fonksiyonunuzdaki parametre değerleri aşağıdaki gibi olacaktır:
 
 Aynı şekilde, varsayılan değerlerini `None` olarak atayarak isteğe bağlı parametreler tanımlayabilirsiniz:
 
-{* ../../docs_src/query_params/tutorial002_py310.py hl[7] *}
+{* ../../examples/query_params/tutorial002_py310.py hl[7] *}
 
 Bu durumda, `q` fonksiyon parametresi isteğe bağlı olacak ve varsayılan değer olarak `None` alacaktır.
 
@@ -75,7 +75,7 @@ Ayrıca, dikkatinizi çekerim ki; **ReadyAPI**, `item_id` parametresinin bir yol
 
 Aşağıda görüldüğü gibi dönüştürülmek üzere `bool` tipleri de tanımlayabilirsiniz:
 
-{* ../../docs_src/query_params/tutorial003_py310.py hl[7] *}
+{* ../../examples/query_params/tutorial003_py310.py hl[7] *}
 
 Bu durumda, eğer şu adrese giderseniz:
 
@@ -118,7 +118,7 @@ Ve parametreleri, herhangi bir sıraya koymanıza da gerek yoktur.
 
 İsimlerine göre belirleneceklerdir:
 
-{* ../../docs_src/query_params/tutorial004_py310.py hl[6,8] *}
+{* ../../examples/query_params/tutorial004_py310.py hl[6,8] *}
 
 ## Zorunlu Sorgu Parametreleri
 
@@ -128,7 +128,7 @@ Parametre için belirli bir değer atamak istemeyip parametrenin sadece isteğe 
 
 Fakat, bir sorgu parametresini zorunlu yapmak istiyorsanız varsayılan bir değer atamamanız yeterli olacaktır:
 
-{* ../../docs_src/query_params/tutorial005.py hl[6:7] *}
+{* ../../examples/query_params/tutorial005.py hl[6:7] *}
 
 Burada `needy` parametresi `str` tipinden oluşan zorunlu bir sorgu parametresidir.
 
@@ -174,7 +174,7 @@ http://127.0.0.1:8000/items/foo-item?needy=sooooneedy
 
 Ve elbette, bazı parametreleri zorunlu, bazılarını varsayılan değerli ve bazılarını tamamen opsiyonel olarak tanımlayabilirsiniz:
 
-{* ../../docs_src/query_params/tutorial006_py310.py hl[8] *}
+{* ../../examples/query_params/tutorial006_py310.py hl[8] *}
 
 Bu durumda, 3 tane sorgu parametresi var olacaktır:
 

@@ -14,7 +14,7 @@ Pero también quieres que acepte nuevos elementos. Y cuando los elementos no exi
 
 Para lograr eso, importa `JSONResponse`, y devuelve tu contenido allí directamente, configurando el `status_code` que deseas:
 
-{* ../../docs_src/additional_status_codes/tutorial001_an_py310.py hl[4,25] *}
+{* ../../examples/additional_status_codes/tutorial001_an_py310.py hl[4,25] *}
 
 /// warning | Advertencia
 

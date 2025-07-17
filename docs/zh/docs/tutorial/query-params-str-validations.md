@@ -4,7 +4,7 @@
 
 让我们以下面的应用程序为例：
 
-{* ../../docs_src/query_params_str_validations/tutorial001_py310.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial001_py310.py hl[7] *}
 
 查询参数 `q` 的类型为 `str`，默认值为 `None`，因此它是可选的。
 
@@ -16,13 +16,13 @@
 
 为此，首先从 `readyapi` 导入 `Query`：
 
-{* ../../docs_src/query_params_str_validations/tutorial002.py hl[1] *}
+{* ../../examples/query_params_str_validations/tutorial002.py hl[1] *}
 
 ## 使用 `Query` 作为默认值
 
 现在，将 `Query` 用作查询参数的默认值，并将它的 `max_length` 参数设置为 50：
 
-{* ../../docs_src/query_params_str_validations/tutorial002.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial002.py hl[9] *}
 
 由于我们必须用 `Query(default=None)` 替换默认值 `None`，`Query` 的第一个参数同样也是用于定义默认值。
 
@@ -52,13 +52,13 @@ q: Union[str, None] = Query(default=None, max_length=50)
 
 你还可以添加 `min_length` 参数：
 
-{* ../../docs_src/query_params_str_validations/tutorial003.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial003.py hl[10] *}
 
 ## 添加正则表达式
 
 你可以定义一个参数值必须匹配的<abbr title="正则表达式或正则是定义字符串搜索模式的字符序列。">正则表达式</abbr>：
 
-{* ../../docs_src/query_params_str_validations/tutorial004.py hl[11] *}
+{* ../../examples/query_params_str_validations/tutorial004.py hl[11] *}
 
 这个指定的正则表达式通过以下规则检查接收到的参数值：
 
@@ -76,7 +76,7 @@ q: Union[str, None] = Query(default=None, max_length=50)
 
 假设你想要声明查询参数 `q`，使其 `min_length` 为 `3`，并且默认值为 `fixedquery`：
 
-{* ../../docs_src/query_params_str_validations/tutorial005.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial005.py hl[7] *}
 
 /// note
 
@@ -106,7 +106,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 因此，当你在使用 `Query` 且需要声明一个值是必需的时，只需不声明默认参数：
 
-{* ../../docs_src/query_params_str_validations/tutorial006.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial006.py hl[7] *}
 
 ### 使用`None`声明必需参数
 
@@ -114,7 +114,7 @@ q: Union[str, None] = Query(default=None, min_length=3)
 
 为此，你可以声明`None`是一个有效的类型，并仍然使用`default=...`：
 
-{* ../../docs_src/query_params_str_validations/tutorial006c.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial006c.py hl[9] *}
 
 /// tip
 
@@ -128,7 +128,7 @@ Pydantic 是 ReadyAPI 中所有数据验证和序列化的核心，当你在没�
 
 例如，要声明一个可在 URL 中出现多次的查询参数 `q`，你可以这样写：
 
-{* ../../docs_src/query_params_str_validations/tutorial011.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial011.py hl[9] *}
 
 然后，输入如下网址：
 
@@ -163,7 +163,7 @@ http://localhost:8000/items/?q=foo&q=bar
 
 你还可以定义在没有任何给定值时的默认 `list` 值：
 
-{* ../../docs_src/query_params_str_validations/tutorial012.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial012.py hl[9] *}
 
 如果你访问：
 
@@ -186,7 +186,7 @@ http://localhost:8000/items/
 
 你也可以直接使用 `list` 代替 `List [str]`：
 
-{* ../../docs_src/query_params_str_validations/tutorial013.py hl[7] *}
+{* ../../examples/query_params_str_validations/tutorial013.py hl[7] *}
 
 /// note
 
@@ -212,11 +212,11 @@ http://localhost:8000/items/
 
 你可以添加 `title`：
 
-{* ../../docs_src/query_params_str_validations/tutorial007.py hl[10] *}
+{* ../../examples/query_params_str_validations/tutorial007.py hl[10] *}
 
 以及 `description`：
 
-{* ../../docs_src/query_params_str_validations/tutorial008.py hl[13] *}
+{* ../../examples/query_params_str_validations/tutorial008.py hl[13] *}
 
 ## 别名参数
 
@@ -236,7 +236,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 这时你可以用 `alias` 参数声明一个别名，该别名将用于在 URL 中查找查询参数值：
 
-{* ../../docs_src/query_params_str_validations/tutorial009.py hl[9] *}
+{* ../../examples/query_params_str_validations/tutorial009.py hl[9] *}
 
 ## 弃用参数
 
@@ -246,7 +246,7 @@ http://127.0.0.1:8000/items/?item-query=foobaritems
 
 那么将参数 `deprecated=True` 传入 `Query`：
 
-{* ../../docs_src/query_params_str_validations/tutorial010.py hl[18] *}
+{* ../../examples/query_params_str_validations/tutorial010.py hl[18] *}
 
 文档将会像下面这样展示它：
 

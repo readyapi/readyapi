@@ -14,7 +14,7 @@ Sie möchten aber auch, dass sie neue Artikel akzeptiert. Und wenn die Elemente 
 
 Um dies zu erreichen, importieren Sie `JSONResponse`, und geben Sie Ihren Inhalt direkt zurück, indem Sie den gewünschten `status_code` setzen:
 
-{* ../../docs_src/additional_status_codes/tutorial001_an_py310.py hl[4,25] *}
+{* ../../examples/additional_status_codes/tutorial001_an_py310.py hl[4,25] *}
 
 /// warning | Achtung
 

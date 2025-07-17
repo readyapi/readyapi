@@ -7,7 +7,7 @@
 * `StaticFiles` sınıfını projenize dahil edin.
 * Bir `StaticFiles()` örneğini belirli bir yola bağlayın.
 
-{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
+{* ../../examples/static_files/tutorial001.py hl[2,6] *}
 
 /// note | Teknik Detaylar
 

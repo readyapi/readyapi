@@ -2,7 +2,7 @@
 
 The simplest ReadyAPI file could look like this:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Copy that to a file `main.py`.
 
@@ -147,7 +147,7 @@ You could also use it to generate code automatically, for clients that communica
 
 ### Step 1: import `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` is a Python class that provides all the functionality for your API.
 
@@ -161,7 +161,7 @@ You can use all the <a href="https://www.starlette.io/" class="external-link" ta
 
 ### Step 2: create a `ReadyAPI` "instance"
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Here the `app` variable will be an "instance" of the class `ReadyAPI`.
 
@@ -230,7 +230,7 @@ We are going to call them "**operations**" too.
 
 #### Define a *path operation decorator*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 The `@app.get("/")` tells **ReadyAPI** that the function right below is in charge of handling requests that go to:
 
@@ -284,7 +284,7 @@ This is our "**path operation function**":
 * **operation**: is `get`.
 * **function**: is the function below the "decorator" (below `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 This is a Python function.
 
@@ -296,7 +296,7 @@ In this case, it is an `async` function.
 
 You could also define it as a normal function instead of `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note
 
@@ -306,7 +306,7 @@ If you don't know the difference, check the [Async: *"In a hurry?"*](../async.md
 
 ### Step 5: return the content
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 You can return a `dict`, `list`, singular values as `str`, `int`, etc.
 

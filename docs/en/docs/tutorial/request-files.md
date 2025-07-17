@@ -20,13 +20,13 @@ This is because uploaded files are sent as "form data".
 
 Import `File` and `UploadFile` from `readyapi`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[3] *}
 
 ## Define `File` Parameters
 
 Create file parameters the same way you would for `Body` or `Form`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[9] *}
 
 /// info
 
@@ -54,7 +54,7 @@ But there are several cases in which you might benefit from using `UploadFile`.
 
 Define a file parameter with a type of `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[14] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[14] *}
 
 Using `UploadFile` has several advantages over `bytes`:
 
@@ -137,13 +137,13 @@ This is not a limitation of **ReadyAPI**, it's part of the HTTP protocol.
 
 You can make a file optional by using standard type annotations and setting a default value of `None`:
 
-{* ../../docs_src/request_files/tutorial001_02_an_py310.py hl[9,17] *}
+{* ../../examples/request_files/tutorial001_02_an_py310.py hl[9,17] *}
 
 ## `UploadFile` with Additional Metadata
 
 You can also use `File()` with `UploadFile`, for example, to set additional metadata:
 
-{* ../../docs_src/request_files/tutorial001_03_an_py39.py hl[9,15] *}
+{* ../../examples/request_files/tutorial001_03_an_py39.py hl[9,15] *}
 
 ## Multiple File Uploads
 
@@ -153,7 +153,7 @@ They would be associated to the same "form field" sent using "form data".
 
 To use that, declare a list of `bytes` or `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial002_an_py39.py hl[10,15] *}
+{* ../../examples/request_files/tutorial002_an_py39.py hl[10,15] *}
 
 You will receive, as declared, a `list` of `bytes` or `UploadFile`s.
 
@@ -169,7 +169,7 @@ You could also use `from starlette.responses import HTMLResponse`.
 
 And the same way as before, you can use `File()` to set additional parameters, even for `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial003_an_py39.py hl[11,18:20] *}
+{* ../../examples/request_files/tutorial003_an_py39.py hl[11,18:20] *}
 
 ## Recap
 

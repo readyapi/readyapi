@@ -8,7 +8,7 @@
 * `@app.delete()`
 * 기타.
 
-{* ../../docs_src/response_model/tutorial001.py hl[17] *}
+{* ../../examples/response_model/tutorial001.py hl[17] *}
 
 /// note | 참고
 
@@ -39,11 +39,11 @@ ReadyAPI는 이 `response_model`를 사용하여:
 
 여기서 우리는 평문 비밀번호를 포함하는 `UserIn` 모델을 선언합니다:
 
-{* ../../docs_src/response_model/tutorial002.py hl[9,11] *}
+{* ../../examples/response_model/tutorial002.py hl[9,11] *}
 
 그리고 이 모델을 사용하여 입력을 선언하고 같은 모델로 출력을 선언합니다:
 
-{* ../../docs_src/response_model/tutorial002.py hl[17:18] *}
+{* ../../examples/response_model/tutorial002.py hl[17:18] *}
 
 이제 브라우저가 비밀번호로 사용자를 만들 때마다 API는 응답으로 동일한 비밀번호를 반환합니다.
 
@@ -61,15 +61,15 @@ ReadyAPI는 이 `response_model`를 사용하여:
 
 대신 평문 비밀번호로 입력 모델을 만들고 해당 비밀번호 없이 출력 모델을 만들 수 있습니다:
 
-{* ../../docs_src/response_model/tutorial003.py hl[9,11,16] *}
+{* ../../examples/response_model/tutorial003.py hl[9,11,16] *}
 
 여기서 *경로 작동 함수*가 비밀번호를 포함하는 동일한 입력 사용자를 반환할지라도:
 
-{* ../../docs_src/response_model/tutorial003.py hl[24] *}
+{* ../../examples/response_model/tutorial003.py hl[24] *}
 
 ...`response_model`을 `UserOut` 모델로 선언했기 때문에 비밀번호를 포함하지 않습니다:
 
-{* ../../docs_src/response_model/tutorial003.py hl[22] *}
+{* ../../examples/response_model/tutorial003.py hl[22] *}
 
 따라서 **ReadyAPI**는 출력 모델에서 선언하지 않은 모든 데이터를 (Pydantic을 사용하여) 필터링합니다.
 
@@ -87,7 +87,7 @@ ReadyAPI는 이 `response_model`를 사용하여:
 
 응답 모델은 아래와 같이 기본값을 가질 수 있습니다:
 
-{* ../../docs_src/response_model/tutorial004.py hl[11,13:14] *}
+{* ../../examples/response_model/tutorial004.py hl[11,13:14] *}
 
 * `description: Optional[str] = None`은 기본값으로 `None`을 갖습니다.
 * `tax: float = 10.5`는 기본값으로 `10.5`를 갖습니다.
@@ -101,7 +101,7 @@ ReadyAPI는 이 `response_model`를 사용하여:
 
 *경로 작동 데코레이터* 매개변수를 `response_model_exclude_unset=True`로 설정 할 수 있습니다:
 
-{* ../../docs_src/response_model/tutorial004.py hl[24] *}
+{* ../../examples/response_model/tutorial004.py hl[24] *}
 
 이러한 기본값은 응답에 포함되지 않고 실제로 설정된 값만 포함됩니다.
 
@@ -191,7 +191,7 @@ Pydantic 모델이 하나만 있고 출력에서 ​​일부 데이터를 제�
 
 ///
 
-{* ../../docs_src/response_model/tutorial005.py hl[31,37] *}
+{* ../../examples/response_model/tutorial005.py hl[31,37] *}
 
 /// tip | 팁
 
@@ -205,7 +205,7 @@ Pydantic 모델이 하나만 있고 출력에서 ​​일부 데이터를 제�
 
 `list` 또는 `tuple` 대신 `set`을 사용하는 법을 잊었더라도, ReadyAPI는 `set`으로 변환하고 정상적으로 작동합니다:
 
-{* ../../docs_src/response_model/tutorial006.py hl[31,37] *}
+{* ../../examples/response_model/tutorial006.py hl[31,37] *}
 
 ## 요약
 

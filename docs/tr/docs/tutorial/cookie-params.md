@@ -6,7 +6,7 @@
 
 Öncelikle, `Cookie`'yi projenize dahil edin:
 
-{* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[3] *}
+{* ../../examples/cookie_params/tutorial001_an_py310.py hl[3] *}
 
 ## `Cookie` Parametrelerini Tanımlayın
 
@@ -14,7 +14,7 @@
 
 İlk değer varsayılan değerdir; tüm ekstra doğrulama veya belirteç parametrelerini kullanabilirsiniz:
 
-{* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[9] *}
+{* ../../examples/cookie_params/tutorial001_an_py310.py hl[9] *}
 
 /// note | Teknik Detaylar
 

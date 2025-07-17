@@ -22,7 +22,7 @@ Da aber davon abgeraten wird, zeigt die interaktive Dokumentation mit Swagger-Be
 
 Zuerst müssen Sie `BaseModel` von `pydantic` importieren:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[2] *}
+{* ../../examples/body/tutorial001_py310.py hl[2] *}
 
 ## Erstellen Sie Ihr Datenmodell
 
@@ -30,7 +30,7 @@ Dann deklarieren Sie Ihr Datenmodell als eine Klasse, die von `BaseModel` erbt.
 
 Verwenden Sie Standard-Python-Typen für die Klassenattribute:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[5:9] *}
+{* ../../examples/body/tutorial001_py310.py hl[5:9] *}
 
 Wie auch bei Query-Parametern gilt, wenn ein Modellattribut einen Defaultwert hat, ist das Attribut nicht erforderlich. Ansonsten ist es erforderlich. Verwenden Sie `None`, um es als optional zu kennzeichnen.
 
@@ -58,7 +58,7 @@ Da `description` und `tax` optional sind (mit `None` als Defaultwert), wäre fol
 
 Um es zu Ihrer *Pfadoperation* hinzuzufügen, deklarieren Sie es auf die gleiche Weise, wie Sie Pfad- und Query-Parameter deklariert haben:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[16] *}
+{* ../../examples/body/tutorial001_py310.py hl[16] *}
 
 ... und deklarieren Sie seinen Typ als das Modell, welches Sie erstellt haben, `Item`.
 
@@ -125,7 +125,7 @@ Es verbessert die Editor-Unterstützung für Pydantic-Modelle, mit:
 
 Innerhalb der Funktion können Sie alle Attribute des Modells direkt verwenden:
 
-{* ../../docs_src/body/tutorial002_py310.py hl[19] *}
+{* ../../examples/body/tutorial002_py310.py hl[19] *}
 
 ## Requestbody- + Pfad-Parameter
 
@@ -133,7 +133,7 @@ Sie können Pfad- und Requestbody-Parameter gleichzeitig deklarieren.
 
 **ReadyAPI** erkennt, dass Funktionsparameter, die mit Pfad-Parametern übereinstimmen, **vom Pfad genommen** werden sollen, und dass Funktionsparameter, welche Pydantic-Modelle sind, **vom Requestbody genommen** werden sollen.
 
-{* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
+{* ../../examples/body/tutorial003_py310.py hl[15:16] *}
 
 ## Requestbody- + Pfad- + Query-Parameter
 
@@ -141,7 +141,7 @@ Sie können auch zur gleichen Zeit **Body-**, **Pfad-** und **Query-Parameter** 
 
 **ReadyAPI** wird jeden Parameter korrekt erkennen und die Daten vom richtigen Ort holen.
 
-{* ../../docs_src/body/tutorial004_py310.py hl[16] *}
+{* ../../examples/body/tutorial004_py310.py hl[16] *}
 
 Die Funktionsparameter werden wie folgt erkannt:
 

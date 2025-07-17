@@ -22,7 +22,7 @@ Como no se recomienda, la documentación interactiva con Swagger UI no mostrará
 
 Primero, necesitas importar `BaseModel` de `pydantic`:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[2] *}
+{* ../../examples/body/tutorial001_py310.py hl[2] *}
 
 ## Crea tu modelo de datos
 
@@ -30,7 +30,7 @@ Luego, declaras tu modelo de datos como una clase que hereda de `BaseModel`.
 
 Usa tipos estándar de Python para todos los atributos:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[5:9] *}
+{* ../../examples/body/tutorial001_py310.py hl[5:9] *}
 
 Al igual que al declarar parámetros de query, cuando un atributo del modelo tiene un valor por defecto, no es obligatorio. De lo contrario, es obligatorio. Usa `None` para hacerlo opcional.
 
@@ -58,7 +58,7 @@ Por ejemplo, el modelo anterior declara un “`object`” JSON (o `dict` en Pyth
 
 Para añadirlo a tu *path operation*, decláralo de la misma manera que declaraste parámetros de path y query:
 
-{* ../../docs_src/body/tutorial001_py310.py hl[16] *}
+{* ../../examples/body/tutorial001_py310.py hl[16] *}
 
 ...y declara su tipo como el modelo que creaste, `Item`.
 
@@ -125,7 +125,7 @@ Mejora el soporte del editor para modelos de Pydantic, con:
 
 Dentro de la función, puedes acceder a todos los atributos del objeto modelo directamente:
 
-{* ../../docs_src/body/tutorial002_py310.py *}
+{* ../../examples/body/tutorial002_py310.py *}
 
 ## Request body + parámetros de path
 
@@ -133,7 +133,7 @@ Puedes declarar parámetros de path y request body al mismo tiempo.
 
 **ReadyAPI** reconocerá que los parámetros de función que coinciden con los parámetros de path deben ser **tomados del path**, y que los parámetros de función que se declaran como modelos de Pydantic deben ser **tomados del request body**.
 
-{* ../../docs_src/body/tutorial003_py310.py hl[15:16] *}
+{* ../../examples/body/tutorial003_py310.py hl[15:16] *}
 
 ## Request body + path + parámetros de query
 
@@ -141,7 +141,7 @@ También puedes declarar parámetros de **body**, **path** y **query**, todos al
 
 **ReadyAPI** reconocerá cada uno de ellos y tomará los datos del lugar correcto.
 
-{* ../../docs_src/body/tutorial004_py310.py hl[16] *}
+{* ../../examples/body/tutorial004_py310.py hl[16] *}
 
 Los parámetros de la función se reconocerán de la siguiente manera:
 

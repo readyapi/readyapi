@@ -32,11 +32,11 @@
 
 Файл `main.py`:
 
-{* ../../docs_src/async_tests/main.py *}
+{* ../../examples/async_tests/main.py *}
 
 Файл `test_main.py` содержит тесты для `main.py`, теперь он может выглядеть так:
 
-{* ../../docs_src/async_tests/test_main.py *}
+{* ../../examples/async_tests/test_main.py *}
 
 ## Запуск тестов
 
@@ -56,7 +56,7 @@ $ pytest
 
 Маркер `@pytest.mark.anyio` говорит pytest, что тестовая функция должна быть вызвана асинхронно:
 
-{* ../../docs_src/async_tests/test_main.py hl[7] *}
+{* ../../examples/async_tests/test_main.py hl[7] *}
 
 /// tip | Подсказка
 
@@ -66,7 +66,7 @@ $ pytest
 
 Затем мы можем создать `AsyncClient` со ссылкой на приложение и посылать асинхронные запросы, используя `await`.
 
-{* ../../docs_src/async_tests/test_main.py hl[9:12] *}
+{* ../../examples/async_tests/test_main.py hl[9:12] *}
 
 Это эквивалентно следующему:
 

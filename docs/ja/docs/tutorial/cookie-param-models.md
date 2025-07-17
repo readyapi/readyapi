@@ -20,7 +20,7 @@
 
 必要な複数の**クッキー**パラメータを**Pydanticモデル**で宣言し、さらに、それを `Cookie` として宣言しましょう:
 
-{* ../../docs_src/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
+{* ../../examples/cookie_param_models/tutorial001_an_py310.py hl[9:12,16] *}
 
 **ReadyAPI**は、リクエストの**クッキー**から**それぞれのフィールド**のデータを**抽出**し、定義された**Pydanticモデル**を提供します。
 
@@ -51,7 +51,7 @@
 
 Pydanticのモデルの Configuration を利用して、 `extra` フィールドを `forbid` とすることができます。
 
-{* ../../docs_src/cookie_param_models/tutorial002_an_py39.py hl[10] *}
+{* ../../examples/cookie_param_models/tutorial002_an_py39.py hl[10] *}
 
 もしクライアントが**余分なクッキー**を送ろうとすると、**エラー**レスポンスが返されます。
 

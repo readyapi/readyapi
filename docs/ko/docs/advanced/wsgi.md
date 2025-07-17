@@ -12,7 +12,7 @@
 
 그 후, 해당 경로에 마운트합니다.
 
-{* ../../docs_src/wsgi/tutorial001.py hl[2:3,23] *}
+{* ../../examples/wsgi/tutorial001.py hl[2:3,23] *}
 
 ## 확인하기
 

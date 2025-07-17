@@ -16,13 +16,13 @@ $ pip install python-multipart
 
 ## Імпорт `File` та `Form`
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[3] *}
 
 ## Оголошення параметрів `File` та `Form`
 
 Створіть параметри файлів та форми так само як і для `Body` або `Query`:
 
-{* ../../docs_src/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
+{* ../../examples/request_forms_and_files/tutorial001_an_py39.py hl[10:12] *}
 
 Файли та поля форми будуть завантажені як формові дані, і Ви отримаєте як файли, так і введені користувачем поля.
 

@@ -6,7 +6,7 @@
 
 Ви можете визначити атрибут як підтип. Наприклад, Python-список (`list`):
 
-{* ../../docs_src/body_nested_models/tutorial001_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial001_py310.py hl[12] *}
 
 Це зробить `tags` списком, хоча не визначається тип елементів списку.
 
@@ -19,7 +19,7 @@
 
 Але в Python версії до 3.9 (від 3.6 і вище) спочатку потрібно імпортувати `List` з модуля стандартної бібліотеки Python `typing`:
 
-{* ../../docs_src/body_nested_models/tutorial002.py hl[1] *}
+{* ../../examples/body_nested_models/tutorial002.py hl[1] *}
 
 ### Оголошення `list` з параметром типу
 
@@ -48,7 +48,7 @@ my_list: List[str]
 
 Отже, у нашому прикладі, ми можемо зробити `tags` саме "списком рядків":
 
-{* ../../docs_src/body_nested_models/tutorial002_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial002_py310.py hl[12] *}
 
 ## Типи множин
 
@@ -58,7 +58,7 @@ my_list: List[str]
 
 Тому ми можемо оголосити `tags` як множину рядків:
 
-{* ../../docs_src/body_nested_models/tutorial003_py310.py hl[12] *}
+{* ../../examples/body_nested_models/tutorial003_py310.py hl[12] *}
 
 Навіть якщо Ви отримаєте запит з дубльованими даними, він буде перетворений у множину унікальних елементів.
 
@@ -80,13 +80,13 @@ my_list: List[str]
 
 Наприклад, ми можемо визначити модель `Image`:
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[7:9] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[7:9] *}
 
 ### Використання підмоделі як типу
 
 А потім ми можемо використовувати її як тип атрибута:
 
-{* ../../docs_src/body_nested_models/tutorial004_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial004_py310.py hl[18] *}
 
 Це означатиме, що  **ReadyAPI**  очікуватиме тіло запиту такого вигляду:
 
@@ -119,7 +119,7 @@ my_list: List[str]
 
 Наприклад, у моделі `Image` є поле `url`, тому ми можемо оголосити його як `HttpUrl` від Pydantic замість `str`:
 
-{* ../../docs_src/body_nested_models/tutorial005_py310.py hl[2,8] *}
+{* ../../examples/body_nested_models/tutorial005_py310.py hl[2,8] *}
 
 Рядок буде перевірено як дійсну URL-адресу і задокументовано в JSON Schema / OpenAPI як URL.
 
@@ -127,7 +127,7 @@ my_list: List[str]
 
 У Pydantic Ви можете використовувати моделі як підтипи для `list`, `set` тощо:
 
-{* ../../docs_src/body_nested_models/tutorial006_py310.py hl[18] *}
+{* ../../examples/body_nested_models/tutorial006_py310.py hl[18] *}
 
 Це означає, що **ReadyAPI** буде очікувати (конвертувати, валідувати, документувати тощо) JSON тіло запиту у вигляді:
 
@@ -165,7 +165,7 @@ my_list: List[str]
 
 Ви можете визначати вкладені моделі довільної глибини:
 
-{* ../../docs_src/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
+{* ../../examples/body_nested_models/tutorial007_py310.py hl[7,12,18,21,25] *}
 
 /// info | Інформація
 
@@ -188,7 +188,7 @@ images: list[Image]
 
 наприклад:
 
-{* ../../docs_src/body_nested_models/tutorial008_py39.py hl[13] *}
+{* ../../examples/body_nested_models/tutorial008_py39.py hl[13] *}
 
 ## Підтримка в редакторі всюди
 
@@ -218,7 +218,7 @@ images: list[Image]
 
 У цьому випадку Ви можете приймати будь-який `dict`, якщо його ключі — це `int`, а значення — `float`:
 
-{* ../../docs_src/body_nested_models/tutorial009_py39.py hl[7] *}
+{* ../../examples/body_nested_models/tutorial009_py39.py hl[7] *}
 
 /// tip | Порада
 

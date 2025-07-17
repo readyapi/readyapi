@@ -6,7 +6,7 @@ De forma semelhante a [adicionar dependências (`dependencies`) em *decoradores 
 
 Nesse caso, elas serão aplicadas a todas as *operações de rota* da aplicação:
 
-{* ../../docs_src/dependencies/tutorial012_an_py39.py hl[16] *}
+{* ../../examples/dependencies/tutorial012_an_py39.py hl[16] *}
 
 E todos os conceitos apresentados na sessão sobre [adicionar dependências em *decoradores de operação de rota*](dependencies-in-path-operation-decorators.md){.internal-link target=_blank} ainda se aplicam, mas nesse caso, para todas as *operações de rota* da aplicação.
 

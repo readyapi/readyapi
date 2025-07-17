@@ -12,13 +12,13 @@
 
 ## `File` 및 `Form` 업로드
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[1] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[1] *}
 
 ## `File` 및 `Form` 매개변수 정의
 
 `Body` 및 `Query`와 동일한 방식으로 파일과 폼의 매개변수를 생성합니다:
 
-{* ../../docs_src/request_forms_and_files/tutorial001.py hl[8] *}
+{* ../../examples/request_forms_and_files/tutorial001.py hl[8] *}
 
 파일과 폼 필드는 폼 데이터 형식으로 업로드되어 파일과 폼 필드로 전달됩니다.
 

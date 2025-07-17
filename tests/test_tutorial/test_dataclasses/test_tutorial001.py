@@ -1,7 +1,7 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
 
-from docs_src.dataclasses.tutorial001 import app
+from examples.dataclasses.tutorial001 import app
 
 client = TestClient(app)
 

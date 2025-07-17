@@ -22,7 +22,7 @@
 
 让我们从一个简单的例子开始：
 
-{* ../../docs_src/python_types/tutorial001.py *}
+{* ../../examples/python_types/tutorial001.py *}
 
 
 运行这段程序将输出：
@@ -37,7 +37,7 @@ John Doe
 * 通过 `title()` 将每个参数的第一个字母转换为大写形式。
 * 中间用一个空格来<abbr title="将它们按顺序放置组合成一个整体。">拼接</abbr>它们。
 
-{* ../../docs_src/python_types/tutorial001.py hl[2] *}
+{* ../../examples/python_types/tutorial001.py hl[2] *}
 
 
 ### 修改示例
@@ -80,7 +80,7 @@ John Doe
 
 这些就是"类型提示"：
 
-{* ../../docs_src/python_types/tutorial002.py hl[1] *}
+{* ../../examples/python_types/tutorial002.py hl[1] *}
 
 
 这和声明默认值是不同的，例如：
@@ -109,7 +109,7 @@ John Doe
 
 下面是一个已经有类型提示的函数：
 
-{* ../../docs_src/python_types/tutorial003.py hl[1] *}
+{* ../../examples/python_types/tutorial003.py hl[1] *}
 
 
 因为编辑器已经知道了这些变量的类型，所以不仅能对代码进行补全，还能检查其中的错误：
@@ -118,7 +118,7 @@ John Doe
 
 现在你知道了必须先修复这个问题，通过 `str(age)` 把 `age` 转换成字符串：
 
-{* ../../docs_src/python_types/tutorial004.py hl[2] *}
+{* ../../examples/python_types/tutorial004.py hl[2] *}
 
 
 ## 声明类型
@@ -138,7 +138,7 @@ John Doe
 * `bool`
 * `bytes`
 
-{* ../../docs_src/python_types/tutorial005.py hl[1] *}
+{* ../../examples/python_types/tutorial005.py hl[1] *}
 
 
 ### 嵌套类型
@@ -155,7 +155,7 @@ John Doe
 
 从 `typing` 模块导入 `List`（注意是大写的 `L`）：
 
-{* ../../docs_src/python_types/tutorial006.py hl[1] *}
+{* ../../examples/python_types/tutorial006.py hl[1] *}
 
 
 同样以冒号（`:`）来声明这个变量。
@@ -164,7 +164,7 @@ John Doe
 
 由于列表是带有"子类型"的类型，所以我们把子类型放在方括号中：
 
-{* ../../docs_src/python_types/tutorial006.py hl[4] *}
+{* ../../examples/python_types/tutorial006.py hl[4] *}
 
 
 这表示："变量 `items` 是一个 `list`，并且这个列表里的每一个元素都是 `str`"。
@@ -183,7 +183,7 @@ John Doe
 
 声明 `tuple` 和 `set` 的方法也是一样的：
 
-{* ../../docs_src/python_types/tutorial007.py hl[1,4] *}
+{* ../../examples/python_types/tutorial007.py hl[1,4] *}
 
 
 这表示：
@@ -199,7 +199,7 @@ John Doe
 
 第二个子类型声明 `dict` 的所有值：
 
-{* ../../docs_src/python_types/tutorial008.py hl[1,4] *}
+{* ../../examples/python_types/tutorial008.py hl[1,4] *}
 
 
 这表示：
@@ -214,12 +214,12 @@ John Doe
 
 假设你有一个名为 `Person` 的类，拥有 name 属性：
 
-{* ../../docs_src/python_types/tutorial010.py hl[1:3] *}
+{* ../../examples/python_types/tutorial010.py hl[1:3] *}
 
 
 接下来，你可以将一个变量声明为 `Person` 类型：
 
-{* ../../docs_src/python_types/tutorial010.py hl[6] *}
+{* ../../examples/python_types/tutorial010.py hl[6] *}
 
 
 然后，你将再次获得所有的编辑器支持：
@@ -240,7 +240,7 @@ John Doe
 
 下面的例子来自 Pydantic 官方文档：
 
-{* ../../docs_src/python_types/tutorial010.py *}
+{* ../../examples/python_types/tutorial010.py *}
 
 
 /// info

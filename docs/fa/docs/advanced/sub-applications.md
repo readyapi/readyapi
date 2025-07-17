@@ -12,7 +12,7 @@
 ابتدا برنامه اصلی سطح بالا، **ReadyAPI** و path operations آن را ایجاد کنید:
 
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[3,6:8] *}
+{* ../../examples/sub_applications/tutorial001.py hl[3,6:8] *}
 
 ### زیر برنامه
 
@@ -20,13 +20,13 @@
 
 این زیر برنامه فقط یکی دیگر از برنامه های استاندارد ReadyAPI است، اما این برنامه ای است که متصل می شود:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,14:16] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,14:16] *}
 
 ### اتصال زیر برنامه
 
 در برنامه سطح بالا `app` اتصال زیر برنامه `subapi` در این نمونه `/subapi` در مسیر قرار میدهد و میشود:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,19] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,19] *}
 
 ### اسناد API خودکار را بررسی کنید
 

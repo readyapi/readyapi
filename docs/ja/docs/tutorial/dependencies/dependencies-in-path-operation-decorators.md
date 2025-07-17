@@ -14,7 +14,7 @@
 
 それは`Depends()`の`list`であるべきです:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[17] *}
+{* ../../examples/dependencies/tutorial006.py hl[17] *}
 
 これらの依存関係は、通常の依存関係と同様に実行・解決されます。しかし、それらの値（何かを返す場合）は*path operation関数*には渡されません。
 
@@ -36,13 +36,13 @@
 
 これらはリクエストの要件（ヘッダのようなもの）やその他のサブ依存関係を宣言することができます:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[6,11] *}
+{* ../../examples/dependencies/tutorial006.py hl[6,11] *}
 
 ### 例外の発生
 
 これらの依存関係は通常の依存関係と同じように、例外を`raise`発生させることができます:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[8,13] *}
+{* ../../examples/dependencies/tutorial006.py hl[8,13] *}
 
 ### 戻り値
 
@@ -50,7 +50,7 @@
 
 つまり、すでにどこかで使っている通常の依存関係（値を返すもの）を再利用することができ、値は使われなくても依存関係は実行されます:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[9,14] *}
+{* ../../examples/dependencies/tutorial006.py hl[9,14] *}
 
 ## *path operations*のグループに対する依存関係
 

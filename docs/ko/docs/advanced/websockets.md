@@ -38,13 +38,13 @@ $ pip install websockets
 
 그러나 이는 WebSockets의 서버 측에 집중하고 동작하는 예제를 제공하는 가장 간단한 방법입니다:
 
-{* ../../docs_src/websockets/tutorial001.py hl[2,6:38,41:43] *}
+{* ../../examples/websockets/tutorial001.py hl[2,6:38,41:43] *}
 
 ## `websocket` 생성하기
 
 **ReadyAPI** 응용 프로그램에서 `websocket`을 생성합니다:
 
-{* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
+{* ../../examples/websockets/tutorial001.py hl[1,46:47] *}
 
 /// note | 기술적 세부사항
 
@@ -58,7 +58,7 @@ $ pip install websockets
 
 WebSocket 경로에서 메시지를 대기(`await`)하고 전송할 수 있습니다.
 
-{* ../../docs_src/websockets/tutorial001.py hl[48:52] *}
+{* ../../examples/websockets/tutorial001.py hl[48:52] *}
 
 여러분은 이진 데이터, 텍스트, JSON 데이터를 받을 수 있고 전송할 수 있습니다.
 
@@ -109,7 +109,7 @@ WebSocket 엔드포인트에서 `readyapi`에서 다음을 가져와 사용할 �
 
 이들은 다른 ReadyAPI 엔드포인트/*경로 작동*과 동일하게 동작합니다:
 
-{* ../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82] *}
+{* ../../examples/websockets/tutorial002_an_py310.py hl[68:69,82] *}
 
 /// info | 정보
 
@@ -154,7 +154,7 @@ $ readyapi dev main.py
 
 WebSocket 연결이 닫히면, `await websocket.receive_text()`가 `WebSocketDisconnect` 예외를 발생시킵니다. 이를 잡아 처리할 수 있습니다:
 
-{* ../../docs_src/websockets/tutorial003_py39.py hl[79:81] *}
+{* ../../examples/websockets/tutorial003_py39.py hl[79:81] *}
 
 테스트해보기:
 

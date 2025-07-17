@@ -18,7 +18,7 @@ In this case, the original path `/app` would actually be served at `/api/v1/app`
 
 Even though all your code is written assuming there's just `/app`.
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[6] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[6] *}
 
 And the proxy would be **"stripping"** the **path prefix** on the fly before transmitting the request to the app server (probably Uvicorn via ReadyAPI CLI), keeping your application convinced that it is being served at `/app`, so that you don't have to update all your code to include the prefix `/api/v1`.
 
@@ -96,7 +96,7 @@ You can get the current `root_path` used by your application for each request, i
 
 Here we are including it in the message just for demonstration purposes.
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[8] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[8] *}
 
 Then, if you start Uvicorn with:
 
@@ -123,7 +123,7 @@ The response would be something like:
 
 Alternatively, if you don't have a way to provide a command line option like `--root-path` or equivalent, you can set the `root_path` parameter when creating your ReadyAPI app:
 
-{* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
+{* ../../examples/behind_a_proxy/tutorial002.py hl[3] *}
 
 Passing the `root_path` to `ReadyAPI` would be the equivalent of passing the `--root-path` command line option to Uvicorn or Hypercorn.
 
@@ -303,7 +303,7 @@ If you pass a custom list of `servers` and there's a `root_path` (because your A
 
 For example:
 
-{* ../../docs_src/behind_a_proxy/tutorial003.py hl[4:7] *}
+{* ../../examples/behind_a_proxy/tutorial003.py hl[4:7] *}
 
 Will generate an OpenAPI schema like:
 
@@ -350,7 +350,7 @@ The docs UI will interact with the server that you select.
 
 If you don't want **ReadyAPI** to include an automatic server using the `root_path`, you can use the parameter `root_path_in_servers=False`:
 
-{* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
+{* ../../examples/behind_a_proxy/tutorial004.py hl[9] *}
 
 and then it won't include it in the OpenAPI schema.
 

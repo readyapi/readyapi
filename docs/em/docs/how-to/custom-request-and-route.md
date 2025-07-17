@@ -42,7 +42,7 @@
 
 👈 🌌, 🎏 🛣 🎓 💪 🍵 🗜 🗜 ⚖️ 🗜 📨.
 
-{* ../../docs_src/custom_request_and_route/tutorial001.py hl[8:15] *}
+{* ../../examples/custom_request_and_route/tutorial001.py hl[8:15] *}
 
 ### ✍ 🛃 `GzipRoute` 🎓
 
@@ -54,7 +54,7 @@
 
 📥 👥 ⚙️ ⚫️ ✍ `GzipRequest` ⚪️➡️ ⏮️ 📨.
 
-{* ../../docs_src/custom_request_and_route/tutorial001.py hl[18:26] *}
+{* ../../examples/custom_request_and_route/tutorial001.py hl[18:26] *}
 
 /// note | 📡 ℹ
 
@@ -92,18 +92,18 @@
 
 🌐 👥 💪 🍵 📨 🔘 `try`/`except` 🍫:
 
-{* ../../docs_src/custom_request_and_route/tutorial002.py hl[13,15] *}
+{* ../../examples/custom_request_and_route/tutorial002.py hl[13,15] *}
 
 🚥 ⚠ 📉, `Request` 👐 🔜 ↔, 👥 💪 ✍ &amp; ⚒ ⚙️ 📨 💪 🕐❔ 🚚 ❌:
 
-{* ../../docs_src/custom_request_and_route/tutorial002.py hl[16:18] *}
+{* ../../examples/custom_request_and_route/tutorial002.py hl[16:18] *}
 
 ## 🛃 `APIRoute` 🎓 📻
 
 👆 💪 ⚒ `route_class` 🔢 `APIRouter`:
 
-{* ../../docs_src/custom_request_and_route/tutorial003.py hl[26] *}
+{* ../../examples/custom_request_and_route/tutorial003.py hl[26] *}
 
 👉 🖼, *➡ 🛠️* 🔽 `router` 🔜 ⚙️ 🛃 `TimedRoute` 🎓, &amp; 🔜 ✔️ ➕ `X-Response-Time` 🎚 📨 ⏮️ 🕰 ⚫️ ✊ 🏗 📨:
 
-{* ../../docs_src/custom_request_and_route/tutorial003.py hl[13:20] *}
+{* ../../examples/custom_request_and_route/tutorial003.py hl[13:20] *}

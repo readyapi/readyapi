@@ -30,7 +30,7 @@
 
 ✋️ 🚥 👆 🎯 👈 🎚 👈 👆 🛬 **🎻 ⏮️ 🎻**, 👆 💪 🚶‍♀️ ⚫️ 🔗 📨 🎓 &amp; ❎ ➕ 🌥 👈 ReadyAPI 🔜 ✔️ 🚶‍♀️ 👆 📨 🎚 🔘 `jsonable_encoder` ⏭ 🚶‍♀️ ⚫️ 📨 🎓.
 
-{* ../../docs_src/custom_response/tutorial001b.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial001b.py hl[2,7] *}
 
 /// info
 
@@ -55,7 +55,7 @@
 * 🗄 `HTMLResponse`.
 * 🚶‍♀️ `HTMLResponse` 🔢 `response_class` 👆 *➡ 🛠️ 👨‍🎨*.
 
-{* ../../docs_src/custom_response/tutorial002.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial002.py hl[2,7] *}
 
 /// info
 
@@ -73,7 +73,7 @@
 
 🎏 🖼 ⚪️➡️ 🔛, 🛬 `HTMLResponse`, 💪 👀 💖:
 
-{* ../../docs_src/custom_response/tutorial003.py hl[2,7,19] *}
+{* ../../examples/custom_response/tutorial003.py hl[2,7,19] *}
 
 /// warning
 
@@ -97,7 +97,7 @@
 
 🖼, ⚫️ 💪 🕳 💖:
 
-{* ../../docs_src/custom_response/tutorial004.py hl[7,21,23] *}
+{* ../../examples/custom_response/tutorial004.py hl[7,21,23] *}
 
 👉 🖼, 🔢 `generate_html_response()` ⏪ 🏗 &amp; 📨 `Response` ↩️ 🛬 🕸 `str`.
 
@@ -136,7 +136,7 @@
 
 ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 🎚, ⚓️ 🔛 = &amp; 🔁 = ✍ 🆎.
 
-{* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
+{* ../../examples/response_directly/tutorial002.py hl[1,18] *}
 
 ### `HTMLResponse`
 
@@ -146,7 +146,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 ✊ ✍ ⚖️ 🔢 &amp; 📨 ✅ ✍ 📨.
 
-{* ../../docs_src/custom_response/tutorial005.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial005.py hl[2,7,9] *}
 
 ### `JSONResponse`
 
@@ -168,7 +168,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 ///
 
-{* ../../docs_src/custom_response/tutorial001.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial001.py hl[2,7] *}
 
 /// tip
 
@@ -182,14 +182,14 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 👆 💪 📨 `RedirectResponse` 🔗:
 
-{* ../../docs_src/custom_response/tutorial006.py hl[2,9] *}
+{* ../../examples/custom_response/tutorial006.py hl[2,9] *}
 
 ---
 
 ⚖️ 👆 💪 ⚙️ ⚫️ `response_class` 🔢:
 
 
-{* ../../docs_src/custom_response/tutorial006b.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial006b.py hl[2,7,9] *}
 
 🚥 👆 👈, ⤴️ 👆 💪 📨 📛 🔗 ⚪️➡️ 👆 *➡ 🛠️* 🔢.
 
@@ -199,13 +199,13 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 👆 💪 ⚙️ `status_code` 🔢 🌀 ⏮️ `response_class` 🔢:
 
-{* ../../docs_src/custom_response/tutorial006c.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial006c.py hl[2,7,9] *}
 
 ### `StreamingResponse`
 
 ✊ 🔁 🚂 ⚖️ 😐 🚂/🎻 &amp; 🎏 📨 💪.
 
-{* ../../docs_src/custom_response/tutorial007.py hl[2,14] *}
+{* ../../examples/custom_response/tutorial007.py hl[2,14] *}
 
 #### ⚙️ `StreamingResponse` ⏮️ 📁-💖 🎚
 
@@ -216,7 +216,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 👉 🔌 📚 🗃 🔗 ⏮️ ☁ 💾, 📹 🏭, &amp; 🎏.
 
 ```{ .python .annotate hl_lines="2  10-12  14" }
-{!../../docs_src/custom_response/tutorial008.py!}
+{!../../examples/custom_response/tutorial008.py!}
 ```
 
 1️⃣. 👉 🚂 🔢. ⚫️ "🚂 🔢" ↩️ ⚫️ 🔌 `yield` 📄 🔘.
@@ -246,11 +246,11 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 📁 📨 🔜 🔌 ☑ `Content-Length`, `Last-Modified` &amp; `ETag` 🎚.
 
-{* ../../docs_src/custom_response/tutorial009.py hl[2,10] *}
+{* ../../examples/custom_response/tutorial009.py hl[2,10] *}
 
 👆 💪 ⚙️ `response_class` 🔢:
 
-{* ../../docs_src/custom_response/tutorial009b.py hl[2,8,10] *}
+{* ../../examples/custom_response/tutorial009b.py hl[2,8,10] *}
 
 👉 💼, 👆 💪 📨 📁 ➡ 🔗 ⚪️➡️ 👆 *➡ 🛠️* 🔢.
 
@@ -264,7 +264,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 👆 💪 ✍ `CustomORJSONResponse`. 👑 👜 👆 ✔️ ✍ `Response.render(content)` 👩‍🔬 👈 📨 🎚 `bytes`:
 
-{* ../../docs_src/custom_response/tutorial009c.py hl[9:14,17] *}
+{* ../../examples/custom_response/tutorial009c.py hl[9:14,17] *}
 
 🔜 ↩️ 🛬:
 
@@ -290,7 +290,7 @@ ReadyAPI (🤙 💃) 🔜 🔁 🔌 🎚-📐 🎚. ⚫️ 🔜 🔌 🎚-🆎 �
 
 🖼 🔛, **ReadyAPI** 🔜 ⚙️ `ORJSONResponse` 🔢, 🌐 *➡ 🛠️*, ↩️ `JSONResponse`.
 
-{* ../../docs_src/custom_response/tutorial010.py hl[2,4] *}
+{* ../../examples/custom_response/tutorial010.py hl[2,4] *}
 
 /// tip
 

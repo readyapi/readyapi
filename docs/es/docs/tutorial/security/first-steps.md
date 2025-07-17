@@ -20,7 +20,7 @@ Primero solo usemos el código y veamos cómo funciona, y luego volveremos para 
 
 Copia el ejemplo en un archivo `main.py`:
 
-{* ../../docs_src/security/tutorial001_an_py39.py *}
+{* ../../examples/security/tutorial001_an_py39.py *}
 
 ## Ejecútalo
 
@@ -132,7 +132,7 @@ En ese caso, **ReadyAPI** también te proporciona las herramientas para construi
 
 Cuando creamos una instance de la clase `OAuth2PasswordBearer` pasamos el parámetro `tokenUrl`. Este parámetro contiene la URL que el cliente (el frontend corriendo en el navegador del usuario) usará para enviar el `username` y `password` a fin de obtener un token.
 
-{* ../../docs_src/security/tutorial001_an_py39.py hl[8] *}
+{* ../../examples/security/tutorial001_an_py39.py hl[8] *}
 
 /// tip | Consejo
 
@@ -170,7 +170,7 @@ Así que, puede usarse con `Depends`.
 
 Ahora puedes pasar ese `oauth2_scheme` en una dependencia con `Depends`.
 
-{* ../../docs_src/security/tutorial001_an_py39.py hl[12] *}
+{* ../../examples/security/tutorial001_an_py39.py hl[12] *}
 
 Esta dependencia proporcionará un `str` que se asigna al parámetro `token` de la *path operation function*.
 

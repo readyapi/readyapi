@@ -18,7 +18,7 @@ En este caso, el path original `/app` realmente sería servido en `/api/v1/app`.
 
 Aunque todo tu código esté escrito asumiendo que solo existe `/app`.
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[6] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[6] *}
 
 Y el proxy estaría **"eliminando"** el **prefijo del path** sobre la marcha antes de transmitir el request al servidor de aplicaciones (probablemente Uvicorn a través de ReadyAPI CLI), manteniendo a tu aplicación convencida de que está siendo servida en `/app`, así que no tienes que actualizar todo tu código para incluir el prefijo `/api/v1`.
 
@@ -96,7 +96,7 @@ Puedes obtener el `root_path` actual utilizado por tu aplicación para cada requ
 
 Aquí lo estamos incluyendo en el mensaje solo con fines de demostración.
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[8] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[8] *}
 
 Luego, si inicias Uvicorn con:
 
@@ -123,7 +123,7 @@ El response sería algo como:
 
 Alternativamente, si no tienes una forma de proporcionar una opción de línea de comandos como `--root-path` o su equivalente, puedes configurar el parámetro `root_path` al crear tu app de ReadyAPI:
 
-{* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
+{* ../../examples/behind_a_proxy/tutorial002.py hl[3] *}
 
 Pasar el `root_path` a `ReadyAPI` sería el equivalente a pasar la opción de línea de comandos `--root-path` a Uvicorn o Hypercorn.
 
@@ -303,7 +303,7 @@ Si pasas una lista personalizada de `servers` y hay un `root_path` (porque tu AP
 
 Por ejemplo:
 
-{* ../../docs_src/behind_a_proxy/tutorial003.py hl[4:7] *}
+{* ../../examples/behind_a_proxy/tutorial003.py hl[4:7] *}
 
 Generará un esquema de OpenAPI como:
 
@@ -350,7 +350,7 @@ La UI de los docs interactuará con el server que selecciones.
 
 Si no quieres que **ReadyAPI** incluya un server automático usando el `root_path`, puedes usar el parámetro `root_path_in_servers=False`:
 
-{* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
+{* ../../examples/behind_a_proxy/tutorial004.py hl[9] *}
 
 y entonces no lo incluirá en el esquema de OpenAPI.
 

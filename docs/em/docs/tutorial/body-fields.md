@@ -6,7 +6,7 @@
 
 🥇, 👆 ✔️ 🗄 ⚫️:
 
-{* ../../docs_src/body_fields/tutorial001.py hl[4] *}
+{* ../../examples/body_fields/tutorial001.py hl[4] *}
 
 /// warning
 
@@ -18,7 +18,7 @@
 
 👆 💪 ⤴️ ⚙️ `Field` ⏮️ 🏷 🔢:
 
-{* ../../docs_src/body_fields/tutorial001.py hl[11:14] *}
+{* ../../examples/body_fields/tutorial001.py hl[11:14] *}
 
 `Field` 👷 🎏 🌌 `Query`, `Path` &amp; `Body`, ⚫️ ✔️ 🌐 🎏 🔢, ♒️.
 

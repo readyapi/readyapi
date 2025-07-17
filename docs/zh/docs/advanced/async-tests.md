@@ -32,11 +32,11 @@
 
 文件 `main.py` 将包含:
 
-{* ../../docs_src/async_tests/main.py *}
+{* ../../examples/async_tests/main.py *}
 
 文件 `test_main.py` 将包含针对 `main.py` 的测试，现在它可能看起来如下：
 
-{* ../../docs_src/async_tests/test_main.py *}
+{* ../../examples/async_tests/test_main.py *}
 
 ## 运行测试
 
@@ -56,7 +56,7 @@ $ pytest
 
 这个标记 `@pytest.mark.anyio` 会告诉 pytest 该测试函数应该被异步调用：
 
-{* ../../docs_src/async_tests/test_main.py hl[7] *}
+{* ../../examples/async_tests/test_main.py hl[7] *}
 
 /// tip
 
@@ -66,7 +66,7 @@ $ pytest
 
 我们现在可以使用应用程序创建一个 `AsyncClient` ，并使用 `await` 向其发送异步请求。
 
-{* ../../docs_src/async_tests/test_main.py hl[9:12] *}
+{* ../../examples/async_tests/test_main.py hl[9:12] *}
 
 这相当于：
 

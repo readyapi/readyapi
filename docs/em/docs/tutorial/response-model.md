@@ -4,7 +4,7 @@
 
 👆 💪 ⚙️ **🆎 ✍** 🎏 🌌 👆 🔜 🔢 💽 🔢 **🔢**, 👆 💪 ⚙️ Pydantic 🏷, 📇, 📖, 📊 💲 💖 🔢, 🎻, ♒️.
 
-{* ../../docs_src/response_model/tutorial001_01.py hl[18,23] *}
+{* ../../examples/response_model/tutorial001_01.py hl[18,23] *}
 
 ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 
@@ -37,7 +37,7 @@ ReadyAPI 🔜 ⚙️ 👉 📨 🆎:
 * `@app.delete()`
 * ♒️.
 
-{* ../../docs_src/response_model/tutorial001.py hl[17,22,24:27] *}
+{* ../../examples/response_model/tutorial001.py hl[17,22,24:27] *}
 
 /// note
 
@@ -69,7 +69,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 📥 👥 📣 `UserIn` 🏷, ⚫️ 🔜 🔌 🔢 🔐:
 
-{* ../../docs_src/response_model/tutorial002.py hl[9,11] *}
+{* ../../examples/response_model/tutorial002.py hl[9,11] *}
 
 /// info
 
@@ -82,7 +82,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 &amp; 👥 ⚙️ 👉 🏷 📣 👆 🔢 &amp; 🎏 🏷 📣 👆 🔢:
 
-{* ../../docs_src/response_model/tutorial002.py hl[18] *}
+{* ../../examples/response_model/tutorial002.py hl[18] *}
 
 🔜, 🕐❔ 🖥 🏗 👩‍💻 ⏮️ 🔐, 🛠️ 🔜 📨 🎏 🔐 📨.
 
@@ -100,15 +100,15 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 👥 💪 ↩️ ✍ 🔢 🏷 ⏮️ 🔢 🔐 &amp; 🔢 🏷 🍵 ⚫️:
 
-{* ../../docs_src/response_model/tutorial003.py hl[9,11,16] *}
+{* ../../examples/response_model/tutorial003.py hl[9,11,16] *}
 
 📥, ✋️ 👆 *➡ 🛠️ 🔢* 🛬 🎏 🔢 👩‍💻 👈 🔌 🔐:
 
-{* ../../docs_src/response_model/tutorial003.py hl[24] *}
+{* ../../examples/response_model/tutorial003.py hl[24] *}
 
 ...👥 📣 `response_model` 👆 🏷 `UserOut`, 👈 🚫 🔌 🔐:
 
-{* ../../docs_src/response_model/tutorial003.py hl[22] *}
+{* ../../examples/response_model/tutorial003.py hl[22] *}
 
 , **ReadyAPI** 🔜 ✊ 💅 🖥 👅 🌐 💽 👈 🚫 📣 🔢 🏷 (⚙️ Pydantic).
 
@@ -132,7 +132,7 @@ ReadyAPI 🔜 ⚙️ 👉 `response_model` 🌐 💽 🧾, 🔬, ♒️. &amp; *
 
 &amp; 👈 💼, 👥 💪 ⚙️ 🎓 &amp; 🧬 ✊ 📈 🔢 **🆎 ✍** 🤚 👍 🐕‍🦺 👨‍🎨 &amp; 🧰, &amp; 🤚 ReadyAPI **💽 🖥**.
 
-{* ../../docs_src/response_model/tutorial003_01.py hl[9:13,15:16,20] *}
+{* ../../examples/response_model/tutorial003_01.py hl[9:13,15:16,20] *}
 
 ⏮️ 👉, 👥 🤚 🏭 🐕‍🦺, ⚪️➡️ 👨‍🎨 &amp; ✍ 👉 📟 ☑ ⚖ 🆎, ✋️ 👥 🤚 💽 🖥 ⚪️➡️ ReadyAPI.
 
@@ -174,7 +174,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 🏆 ⚠ 💼 🔜 [🛬 📨 🔗 🔬 ⏪ 🏧 🩺](../advanced/response-directly.md){.internal-link target=_blank}.
 
-{* ../../docs_src/response_model/tutorial003_02.py hl[8,10:11] *}
+{* ../../examples/response_model/tutorial003_02.py hl[8,10:11] *}
 
 👉 🙅 💼 🍵 🔁 ReadyAPI ↩️ 📨 🆎 ✍ 🎓 (⚖️ 🏿) `Response`.
 
@@ -184,7 +184,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 👆 💪 ⚙️ 🏿 `Response` 🆎 ✍:
 
-{* ../../docs_src/response_model/tutorial003_03.py hl[8:9] *}
+{* ../../examples/response_model/tutorial003_03.py hl[8:9] *}
 
 👉 🔜 👷 ↩️ `RedirectResponse` 🏿 `Response`, &amp; ReadyAPI 🔜 🔁 🍵 👉 🙅 💼.
 
@@ -194,7 +194,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 🎏 🔜 🔨 🚥 👆 ✔️ 🕳 💖 <abbr title='A union between multiple types means "any of these types".'>🇪🇺</abbr> 🖖 🎏 🆎 🌐❔ 1️⃣ ⚖️ 🌅 👫 🚫 ☑ Pydantic 🆎, 🖼 👉 🔜 ❌ 👶:
 
-{* ../../docs_src/response_model/tutorial003_04.py hl[10] *}
+{* ../../examples/response_model/tutorial003_04.py hl[10] *}
 
 ...👉 ❌ ↩️ 🆎 ✍ 🚫 Pydantic 🆎 &amp; 🚫 👁 `Response` 🎓 ⚖️ 🏿, ⚫️ 🇪🇺 (🙆 2️⃣) 🖖 `Response` &amp; `dict`.
 
@@ -206,7 +206,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 👉 💼, 👆 💪 ❎ 📨 🏷 ⚡ ⚒ `response_model=None`:
 
-{* ../../docs_src/response_model/tutorial003_05.py hl[9] *}
+{* ../../examples/response_model/tutorial003_05.py hl[9] *}
 
 👉 🔜 ⚒ ReadyAPI 🚶 📨 🏷 ⚡ &amp; 👈 🌌 👆 💪 ✔️ 🙆 📨 🆎 ✍ 👆 💪 🍵 ⚫️ 🤕 👆 ReadyAPI 🈸. 👶
 
@@ -214,7 +214,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 👆 📨 🏷 💪 ✔️ 🔢 💲, 💖:
 
-{* ../../docs_src/response_model/tutorial004.py hl[11,13:14] *}
+{* ../../examples/response_model/tutorial004.py hl[11,13:14] *}
 
 * `description: Union[str, None] = None` (⚖️ `str | None = None` 🐍 3️⃣.1️⃣0️⃣) ✔️ 🔢 `None`.
 * `tax: float = 10.5` ✔️ 🔢 `10.5`.
@@ -228,7 +228,7 @@ ReadyAPI 🔨 📚 👜 🔘 ⏮️ Pydantic ⚒ 💭 👈 📚 🎏 🚫 🎓 �
 
 👆 💪 ⚒ *➡ 🛠️ 👨‍🎨* 🔢 `response_model_exclude_unset=True`:
 
-{* ../../docs_src/response_model/tutorial004.py hl[24] *}
+{* ../../examples/response_model/tutorial004.py hl[24] *}
 
 &amp; 👈 🔢 💲 🏆 🚫 🔌 📨, 🕴 💲 🤙 ⚒.
 
@@ -317,7 +317,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 
 ///
 
-{* ../../docs_src/response_model/tutorial005.py hl[31,37] *}
+{* ../../examples/response_model/tutorial005.py hl[31,37] *}
 
 /// tip
 
@@ -331,7 +331,7 @@ ReadyAPI 🙃 🥃 (🤙, Pydantic 🙃 🥃) 🤔 👈, ✋️ `description`, `
 
 🚥 👆 💭 ⚙️ `set` &amp; ⚙️ `list` ⚖️ `tuple` ↩️, ReadyAPI 🔜 🗜 ⚫️ `set` &amp; ⚫️ 🔜 👷 ☑:
 
-{* ../../docs_src/response_model/tutorial006.py hl[31,37] *}
+{* ../../examples/response_model/tutorial006.py hl[31,37] *}
 
 ## 🌃
 

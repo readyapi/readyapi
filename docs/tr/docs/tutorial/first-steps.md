@@ -2,7 +2,7 @@
 
 En sade ReadyAPI dosyası şu şekilde görünür:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Yukarıdaki içeriği bir `main.py` dosyasına kopyalayalım.
 
@@ -131,7 +131,7 @@ Ayrıca, API'ınızla iletişim kuracak önyüz, mobil veya IoT uygulamaları gi
 
 ### Adım 1: `ReadyAPI`yı Projemize Dahil Edelim
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI`, API'niz için tüm işlevselliği sağlayan bir Python sınıfıdır.
 
@@ -145,7 +145,7 @@ Ayrıca, API'ınızla iletişim kuracak önyüz, mobil veya IoT uygulamaları gi
 
 ### Adım 2: Bir `ReadyAPI` "Örneği" Oluşturalım
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Burada `app` değişkeni `ReadyAPI` sınıfının bir örneği olacaktır.
 
@@ -165,7 +165,7 @@ $ uvicorn main:app --reload
 
 Uygulamanızı aşağıdaki gibi oluşturursanız:
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 Ve bunu `main.py` dosyasına yerleştirirseniz eğer `uvicorn` komutunu şu şekilde çalıştırabilirsiniz:
 
@@ -242,7 +242,7 @@ Biz de onları "**operasyonlar**" olarak adlandıracağız.
 
 #### Bir *Yol Operasyonu Dekoratörü* Tanımlayalım
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 `@app.get("/")` dekoratörü, **ReadyAPI**'a hemen altındaki fonksiyonun aşağıdaki durumlardan sorumlu olduğunu söyler:
 
@@ -296,7 +296,7 @@ Aşağıdaki, bizim **yol operasyonu fonksiyonumuzdur**:
 * **operasyon**: `get`
 * **fonksiyon**: "dekoratör"ün (`@app.get("/")`'in) altındaki fonksiyondur.
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Bu bir Python fonksiyonudur.
 
@@ -308,7 +308,7 @@ Bu durumda bu fonksiyon bir `async` fonksiyondur.
 
 Bu fonksiyonu `async def` yerine normal bir fonksiyon olarak da tanımlayabilirsiniz.
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Not
 
@@ -318,7 +318,7 @@ Eğer farkı bilmiyorsanız, [Async: *"Aceleniz mi var?"*](../async.md#in-a-hurr
 
 ### Adım 5: İçeriği Geri Döndürün
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Bir `dict`, `list` veya `str`, `int` gibi tekil değerler döndürebilirsiniz.
 

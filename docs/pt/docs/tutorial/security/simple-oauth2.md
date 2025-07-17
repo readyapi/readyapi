@@ -52,7 +52,7 @@ Agora vamos usar os utilitários fornecidos pelo **ReadyAPI** para lidar com iss
 
 Primeiro, importe `OAuth2PasswordRequestForm` e use-o como uma dependência com `Depends` na *operação de rota* para `/token`:
 
-{* ../../docs_src/security/tutorial003_an_py310.py hl[4,78] *}
+{* ../../examples/security/tutorial003_an_py310.py hl[4,78] *}
 
 `OAuth2PasswordRequestForm` é uma dependência de classe que declara um corpo de formulário com:
 
@@ -100,7 +100,7 @@ Se não existir tal usuário, retornaremos um erro dizendo "Incorrect username o
 
 Para o erro, usamos a exceção `HTTPException`:
 
-{* ../../docs_src/security/tutorial003_an_py310.py hl[3,79:81] *}
+{* ../../examples/security/tutorial003_an_py310.py hl[3,79:81] *}
 
 ### Confira a password (senha)
 
@@ -126,7 +126,7 @@ Se o seu banco de dados for roubado, o ladrão não terá as senhas em texto sim
 
 Assim, o ladrão não poderá tentar usar essas mesmas senhas em outro sistema (como muitos usuários usam a mesma senha em todos os lugares, isso seria perigoso).
 
-{* ../../docs_src/security/tutorial003_an_py310.py hl[82:85] *}
+{* ../../examples/security/tutorial003_an_py310.py hl[82:85] *}
 
 #### Sobre `**user_dict`
 
@@ -168,7 +168,7 @@ Mas, por enquanto, vamos nos concentrar nos detalhes específicos de que precisa
 
 ///
 
-{* ../../docs_src/security/tutorial003_an_py310.py hl[87] *}
+{* ../../examples/security/tutorial003_an_py310.py hl[87] *}
 
 /// tip | Dica
 
@@ -194,7 +194,7 @@ Ambas as dependências retornarão apenas um erro HTTP se o usuário não existi
 
 Portanto, em nosso endpoint, só obteremos um usuário se o usuário existir, tiver sido autenticado corretamente e estiver ativo:
 
-{* ../../docs_src/security/tutorial003_an_py310.py hl[58:66,69:74,94] *}
+{* ../../examples/security/tutorial003_an_py310.py hl[58:66,69:74,94] *}
 
 /// info | Informação
 

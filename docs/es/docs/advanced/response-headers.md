@@ -6,7 +6,7 @@ Puedes declarar un parámetro de tipo `Response` en tu *función de path operati
 
 Y luego puedes establecer headers en ese objeto de response *temporal*.
 
-{* ../../docs_src/response_headers/tutorial002.py hl[1, 7:8] *}
+{* ../../examples/response_headers/tutorial002.py hl[1, 7:8] *}
 
 Y luego puedes devolver cualquier objeto que necesites, como harías normalmente (un `dict`, un modelo de base de datos, etc).
 
@@ -22,7 +22,7 @@ También puedes agregar headers cuando devuelves un `Response` directamente.
 
 Crea un response como se describe en [Retorna un Response Directamente](response-directly.md){.internal-link target=_blank} y pasa los headers como un parámetro adicional:
 
-{* ../../docs_src/response_headers/tutorial001.py hl[10:12] *}
+{* ../../examples/response_headers/tutorial001.py hl[10:12] *}
 
 /// note | Detalles Técnicos
 

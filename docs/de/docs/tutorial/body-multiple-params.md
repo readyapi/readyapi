@@ -8,7 +8,7 @@ Zuerst einmal, Sie können `Path`-, `Query`- und Requestbody-Parameter-Deklarati
 
 Und Sie können auch Body-Parameter als optional kennzeichnen, indem Sie den Defaultwert auf `None` setzen:
 
-{* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
+{* ../../examples/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
 /// note | Hinweis
 
@@ -31,7 +31,7 @@ Im vorherigen Beispiel erwartete die *Pfadoperation* einen JSON-Body mit den Att
 
 Aber Sie können auch mehrere Body-Parameter deklarieren, z. B. `item` und `user`:
 
-{* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+{* ../../examples/body_multiple_params/tutorial002_py310.py hl[20] *}
 
 In diesem Fall wird **ReadyAPI** bemerken, dass es mehr als einen Body-Parameter in der Funktion gibt (zwei Parameter, die Pydantic-Modelle sind).
 
@@ -72,7 +72,7 @@ Wenn Sie diesen Parameter einfach so hinzufügen, wird **ReadyAPI** annehmen, da
 
 Aber Sie können **ReadyAPI** instruieren, ihn als weiteren Body-Schlüssel zu erkennen, indem Sie `Body` verwenden:
 
-{* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 In diesem Fall erwartet **ReadyAPI** einen Body wie:
 
@@ -112,7 +112,7 @@ q: str | None = None
 
 Zum Beispiel:
 
-{* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[27] *}
+{* ../../examples/body_multiple_params/tutorial004_an_py310.py hl[27] *}
 
 /// info
 
@@ -134,7 +134,7 @@ item: Item = Body(embed=True)
 
 so wie in:
 
-{* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
 In diesem Fall erwartet **ReadyAPI** einen Body wie:
 

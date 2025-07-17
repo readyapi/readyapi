@@ -2,7 +2,7 @@
 
 🙅 ReadyAPI 📁 💪 👀 💖 👉:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 📁 👈 📁 `main.py`.
 
@@ -131,7 +131,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 ### 🔁 1️⃣: 🗄 `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` 🐍 🎓 👈 🚚 🌐 🛠️ 👆 🛠️.
 
@@ -145,7 +145,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 ### 🔁 2️⃣: ✍ `ReadyAPI` "👐"
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 📥 `app` 🔢 🔜 "👐" 🎓 `ReadyAPI`.
 
@@ -165,7 +165,7 @@ $ uvicorn main:app --reload
 
 🚥 👆 ✍ 👆 📱 💖:
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 &amp; 🚮 ⚫️ 📁 `main.py`, ⤴️ 👆 🔜 🤙 `uvicorn` 💖:
 
@@ -242,7 +242,7 @@ https://example.com/items/foo
 
 #### 🔬 *➡ 🛠️ 👨‍🎨*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 `@app.get("/")` 💬 **ReadyAPI** 👈 🔢 ▶️️ 🔛 🈚 🚚 📨 👈 🚶:
 
@@ -296,7 +296,7 @@ https://example.com/items/foo
 * **🛠️**: `get`.
 * **🔢**: 🔢 🔛 "👨‍🎨" (🔛 `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 👉 🐍 🔢.
 
@@ -308,7 +308,7 @@ https://example.com/items/foo
 
 👆 💪 🔬 ⚫️ 😐 🔢 ↩️ `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note
 
@@ -318,7 +318,7 @@ https://example.com/items/foo
 
 ### 🔁 5️⃣: 📨 🎚
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 👆 💪 📨 `dict`, `list`, ⭐ 💲 `str`, `int`, ♒️.
 

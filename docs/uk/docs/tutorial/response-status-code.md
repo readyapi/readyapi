@@ -8,7 +8,7 @@
 * `@app.delete()`
 * тощо.
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 /// note | Нотатка
 
@@ -73,7 +73,7 @@ ReadyAPI знає про це і створить OpenAPI документаці
 
 Розглянемо ще раз попередній приклад:
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 `201` - це код статусу для "Created" (створено).
 
@@ -81,7 +81,7 @@ ReadyAPI знає про це і створить OpenAPI документаці
 
 Ви можете використовувати зручні змінні з `readyapi.status`
 
-{* ../../docs_src/response_status_code/tutorial002.py hl[1,6] *}
+{* ../../examples/response_status_code/tutorial002.py hl[1,6] *}
 
 Ці змінні просто для зручності. Вони містять ті ж самі числа, але Ви можете скористатися автозаповненням в редакторі:
 

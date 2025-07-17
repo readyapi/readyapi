@@ -18,7 +18,7 @@ from ...utils import needs_py39, needs_py310
     ],
 )
 def get_client(request: pytest.FixtureRequest):
-    mod = importlib.import_module(f"docs_src.header_params.{request.param}")
+    mod = importlib.import_module(f"examples.header_params.{request.param}")
 
     client = TestClient(mod.app)
     return client

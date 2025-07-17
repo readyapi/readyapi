@@ -114,7 +114,7 @@ PassLib 上下文还支持使用不同哈希算法的功能，包括只能校验
 
 第三个函数用于身份验证，并返回用户。
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[8,49,56:57,60:61,70:76] *}
 
 /// note | 笔记
 
@@ -150,7 +150,7 @@ $ openssl rand -hex 32
 
 创建生成新的访问令牌的工具函数。
 
-{* ../../docs_src/security/tutorial004.py hl[6,12:14,28:30,78:86] *}
+{* ../../examples/security/tutorial004.py hl[6,12:14,28:30,78:86] *}
 
 ## 更新依赖项
 
@@ -160,7 +160,7 @@ $ openssl rand -hex 32
 
 如果令牌无效，则直接返回 HTTP 错误。
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[4,7,13:15,29:31,79:87] *}
 
 ## 更新 `/token` *路径操作*
 
@@ -168,7 +168,7 @@ $ openssl rand -hex 32
 
 创建并返回真正的 JWT 访问令牌。
 
-{* ../../docs_src/security/tutorial004_an_py310.py hl[118:133] *}
+{* ../../examples/security/tutorial004_an_py310.py hl[118:133] *}
 
 ### JWT `sub` 的技术细节
 

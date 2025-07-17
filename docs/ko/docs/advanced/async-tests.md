@@ -37,11 +37,11 @@ AnyIO는 특정 테스트 함수를 비동기 함수로 호출 할 수 있는 �
 
  `main.py`는 아래와 같아야 합니다:
 
-{* ../../docs_src/async_tests/main.py *}
+{* ../../examples/async_tests/main.py *}
 
 `test_main.py` 파일은 `main.py`에 대한 테스트가 있을 텐데, 다음과 같을 수 있습니다:
 
-{* ../../docs_src/async_tests/test_main.py *}
+{* ../../examples/async_tests/test_main.py *}
 
 ## 실행하기
 
@@ -61,7 +61,7 @@ $ pytest
 
 `@pytest.mark.anyio` 마커는 pytest에게 이 테스트 함수가 비동기로 호출되어야 함을 알려줍니다:
 
-{* ../../docs_src/async_tests/test_main.py hl[7] *}
+{* ../../examples/async_tests/test_main.py hl[7] *}
 
 /// tip | 팁
 
@@ -71,7 +71,7 @@ $ pytest
 
 그 다음에  `AsyncClient` 로 앱을 만들고 비동기 요청을 `await` 키워드로 보낼 수 있습니다:
 
-{* ../../docs_src/async_tests/test_main.py hl[9:12] *}
+{* ../../examples/async_tests/test_main.py hl[9:12] *}
 
 위의 코드는:
 

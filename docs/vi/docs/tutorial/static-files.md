@@ -7,7 +7,7 @@ Bạn có thể triển khai tệp tĩnh tự động từ một thư mục bằ
 - Nhập `StaticFiles`.
 - "Mount" a `StaticFiles()` instance in a specific path.
 
-{* ../../docs_src/static_files/tutorial001.py hl[2,6] *}
+{* ../../examples/static_files/tutorial001.py hl[2,6] *}
 
 /// note | Chi tiết kỹ thuật
 

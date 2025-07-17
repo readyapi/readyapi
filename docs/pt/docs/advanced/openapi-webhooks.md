@@ -32,7 +32,7 @@ Webhooks estão disponíveis a partir do OpenAPI 3.1.0, e possui suporte do Read
 
 Quando você cria uma aplicação com o **ReadyAPI**, existe um atributo chamado `webhooks`, que você utilizar para defini-los da mesma maneira que você definiria as suas **operações de rotas**, utilizando por exemplo `@app.webhooks.post()`.
 
-{* ../../docs_src/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
+{* ../../examples/openapi_webhooks/tutorial001.py hl[9:13,36:53] *}
 
 Os webhooks que você define aparecerão no esquema do **OpenAPI** e na **página de documentação** gerada automaticamente.
 

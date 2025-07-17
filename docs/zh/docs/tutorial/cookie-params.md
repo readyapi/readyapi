@@ -6,7 +6,7 @@
 
 首先，导入 `Cookie`：
 
-{* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[3] *}
+{* ../../examples/cookie_params/tutorial001_an_py310.py hl[3] *}
 
 ## 声明 `Cookie` 参数
 
@@ -15,7 +15,7 @@
 第一个值是默认值，还可以传递所有验证参数或注释参数：
 
 
-{* ../../docs_src/cookie_params/tutorial001_an_py310.py hl[9] *}
+{* ../../examples/cookie_params/tutorial001_an_py310.py hl[9] *}
 
 /// note | 技术细节
 

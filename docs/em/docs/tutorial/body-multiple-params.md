@@ -8,7 +8,7 @@
 
 &amp; 👆 💪 📣 💪 🔢 📦, ⚒ 🔢 `None`:
 
-{* ../../docs_src/body_multiple_params/tutorial001.py hl[19:21] *}
+{* ../../examples/body_multiple_params/tutorial001.py hl[19:21] *}
 
 /// note
 
@@ -31,7 +31,7 @@
 
 ✋️ 👆 💪 📣 💗 💪 🔢, ✅ `item` &amp; `user`:
 
-{* ../../docs_src/body_multiple_params/tutorial002.py hl[22] *}
+{* ../../examples/body_multiple_params/tutorial002.py hl[22] *}
 
 👉 💼, **ReadyAPI** 🔜 👀 👈 📤 🌅 🌘 1️⃣ 💪 🔢 🔢 (2️⃣ 🔢 👈 Pydantic 🏷).
 
@@ -72,7 +72,7 @@
 
 ✋️ 👆 💪 💡 **ReadyAPI** 😥 ⚫️ ➕1️⃣ 💪 🔑 ⚙️ `Body`:
 
-{* ../../docs_src/body_multiple_params/tutorial003.py hl[22] *}
+{* ../../examples/body_multiple_params/tutorial003.py hl[22] *}
 
 👉 💼, **ReadyAPI** 🔜 ⌛ 💪 💖:
 
@@ -112,7 +112,7 @@ q: str | None = None
 
 🖼:
 
-{* ../../docs_src/body_multiple_params/tutorial004.py hl[27] *}
+{* ../../examples/body_multiple_params/tutorial004.py hl[27] *}
 
 /// info
 
@@ -134,7 +134,7 @@ item: Item = Body(embed=True)
 
 :
 
-{* ../../docs_src/body_multiple_params/tutorial005.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005.py hl[17] *}
 
 👉 💼 **ReadyAPI** 🔜 ⌛ 💪 💖:
 

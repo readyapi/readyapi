@@ -27,7 +27,7 @@ $ pip install jinja2
 * Declara un parámetro `Request` en la *path operation* que devolverá una plantilla.
 * Usa los `templates` que creaste para renderizar y devolver un `TemplateResponse`, pasa el nombre de la plantilla, el objeto de request, y un diccionario "context" con pares clave-valor que se usarán dentro de la plantilla Jinja2.
 
-{* ../../docs_src/templates/tutorial001.py hl[4,11,15:18] *}
+{* ../../examples/templates/tutorial001.py hl[4,11,15:18] *}
 
 /// note | Nota
 
@@ -56,7 +56,7 @@ También podrías usar `from starlette.templating import Jinja2Templates`.
 Luego puedes escribir una plantilla en `templates/item.html` con, por ejemplo:
 
 ```jinja hl_lines="7"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 ### Valores de Contexto de la Plantilla
@@ -110,13 +110,13 @@ Por ejemplo, con un ID de `42`, esto se renderizaría como:
 También puedes usar `url_for()` dentro de la plantilla, y usarlo, por ejemplo, con los `StaticFiles` que montaste con el `name="static"`.
 
 ```jinja hl_lines="4"
-{!../../docs_src/templates/templates/item.html!}
+{!../../examples/templates/templates/item.html!}
 ```
 
 En este ejemplo, enlazaría a un archivo CSS en `static/styles.css` con:
 
 ```CSS hl_lines="4"
-{!../../docs_src/templates/static/styles.css!}
+{!../../examples/templates/static/styles.css!}
 ```
 
 Y porque estás usando `StaticFiles`, ese archivo CSS sería servido automáticamente por tu aplicación de **ReadyAPI** en la URL `/static/styles.css`.

@@ -14,7 +14,7 @@
 
 🏆 👈, 🗄 `JSONResponse`, &amp; 📨 👆 🎚 📤 🔗, ⚒ `status_code` 👈 👆 💚:
 
-{* ../../docs_src/additional_status_codes/tutorial001.py hl[4,25] *}
+{* ../../examples/additional_status_codes/tutorial001.py hl[4,25] *}
 
 /// warning
 

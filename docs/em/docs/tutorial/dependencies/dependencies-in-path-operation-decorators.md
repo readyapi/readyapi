@@ -14,7 +14,7 @@
 
 ⚫️ 🔜 `list` `Depends()`:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[17] *}
+{* ../../examples/dependencies/tutorial006.py hl[17] *}
 
 👉 🔗 🔜 🛠️/❎ 🎏 🌌 😐 🔗. ✋️ 👫 💲 (🚥 👫 📨 🙆) 🏆 🚫 🚶‍♀️ 👆 *➡ 🛠️ 🔢*.
 
@@ -44,13 +44,13 @@
 
 👫 💪 📣 📨 📄 (💖 🎚) ⚖️ 🎏 🎧-🔗:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[6,11] *}
+{* ../../examples/dependencies/tutorial006.py hl[6,11] *}
 
 ### 🤚 ⚠
 
 👫 🔗 💪 `raise` ⚠, 🎏 😐 🔗:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[8,13] *}
+{* ../../examples/dependencies/tutorial006.py hl[8,13] *}
 
 ### 📨 💲
 
@@ -58,7 +58,7 @@
 
 , 👆 💪 🏤-⚙️ 😐 🔗 (👈 📨 💲) 👆 ⏪ ⚙️ 👱 🙆, &amp; ✋️ 💲 🏆 🚫 ⚙️, 🔗 🔜 🛠️:
 
-{* ../../docs_src/dependencies/tutorial006.py hl[9,14] *}
+{* ../../examples/dependencies/tutorial006.py hl[9,14] *}
 
 ## 🔗 👪 *➡ 🛠️*
 

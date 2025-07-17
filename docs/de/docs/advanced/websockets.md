@@ -38,13 +38,13 @@ In der Produktion hätten Sie eine der oben genannten Optionen.
 
 Aber es ist die einfachste Möglichkeit, sich auf die Serverseite von WebSockets zu konzentrieren und ein funktionierendes Beispiel zu haben:
 
-{* ../../docs_src/websockets/tutorial001.py hl[2,6:38,41:43] *}
+{* ../../examples/websockets/tutorial001.py hl[2,6:38,41:43] *}
 
 ## Einen `websocket` erstellen
 
 Erstellen Sie in Ihrer **ReadyAPI**-Anwendung einen `websocket`:
 
-{* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
+{* ../../examples/websockets/tutorial001.py hl[1,46:47] *}
 
 /// note | Technische Details
 
@@ -58,7 +58,7 @@ Sie können auch `from starlette.websockets import WebSocket` verwenden.
 
 In Ihrer WebSocket-Route können Sie Nachrichten `await`en und Nachrichten senden.
 
-{* ../../docs_src/websockets/tutorial001.py hl[48:52] *}
+{* ../../examples/websockets/tutorial001.py hl[48:52] *}
 
 Sie können Binär-, Text- und JSON-Daten empfangen und senden.
 
@@ -109,7 +109,7 @@ In WebSocket-Endpunkten können Sie Folgendes aus `readyapi` importieren und ver
 
 Diese funktionieren auf die gleiche Weise wie für andere ReadyAPI-Endpunkte/*Pfadoperationen*:
 
-{* ../../docs_src/websockets/tutorial002_an_py310.py hl[68:69,82] *}
+{* ../../examples/websockets/tutorial002_an_py310.py hl[68:69,82] *}
 
 /// info
 
@@ -154,7 +154,7 @@ Damit können Sie den WebSocket verbinden und dann Nachrichten senden und empfan
 
 Wenn eine WebSocket-Verbindung geschlossen wird, löst `await websocket.receive_text()` eine `WebSocketDisconnect`-Exception aus, die Sie dann wie in folgendem Beispiel abfangen und behandeln können.
 
-{* ../../docs_src/websockets/tutorial003_py39.py hl[79:81] *}
+{* ../../examples/websockets/tutorial003_py39.py hl[79:81] *}
 
 Zum Ausprobieren:
 

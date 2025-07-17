@@ -2,7 +2,7 @@
 
 "parameter" atau "variabel" path didefinisikan dengan sintaksis Python format string:
 
-{* ../../docs_src/path_params/tutorial001.py hl[6:7] *}
+{* ../../examples/path_params/tutorial001.py hl[6:7] *}
 
 Nilai parameter path `item_id` akan dikirim ke fungsi sebagai argument `item_id`:
 
@@ -16,7 +16,7 @@ Jika anda menjalankan contoh berikut dan kunjungi <a href="http://127.0.0.1:8000
 
 Tipe data parameter path bisa didefinisikan di dalam fungsi, menggunakan anotasi tipe data standar Python:
 
-{* ../../docs_src/path_params/tutorial002.py hl[7] *}
+{* ../../examples/path_params/tutorial002.py hl[7] *}
 
 Dalam hal ini `item_id` didefinisikan sebagai `int`.
 
@@ -119,13 +119,13 @@ Kemudian anda bisa memiliki path `/users/{user_id}` untuk mendapatkan data user 
 
 karena *operasi path* dievaluasi melalui urutan, anda harus memastikan path untuk `/users/me` dideklarasikan sebelum `/user/{user_id}`:
 
-{* ../../docs_src/path_params/tutorial003.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003.py hl[6,11] *}
 
 Sebaliknya, path `/users/{user_id}` juga akan sesuai dengan `/users/me`, "menganggap" menerima parameter `user_id` dengan nilai `"me"`.
 
 Serupa, anda juga tidak bisa mendefinisikan operasi path:
 
-{* ../../docs_src/path_params/tutorial003b.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003b.py hl[6,11] *}
 
 Path pertama akan selalu digunakan karena path sesuai dengan yang pertama.
 
@@ -141,7 +141,7 @@ Dengan warisan dari `str` dokumen API mengetahui nilai nya harus berjenis `strin
 
 Kemudian buat atribut *class* dengan nilai tetap *string* yang benar:
 
-{* ../../docs_src/path_params/tutorial005.py hl[1,6:9] *}
+{* ../../examples/path_params/tutorial005.py hl[1,6:9] *}
 
 /// info
 
@@ -159,7 +159,7 @@ Kemudian buat atribut *class* dengan nilai tetap *string* yang benar:
 
 Kemudian buat *parameter path* dengan tipe anotasi menggunakan *class* enum dari (`ModelName`)
 
-{* ../../docs_src/path_params/tutorial005.py hl[16] *}
+{* ../../examples/path_params/tutorial005.py hl[16] *}
 
 ### Periksa dokumentasi
 
@@ -175,13 +175,13 @@ Nilai *parameter path* akan menjadi *anggota enumerasi*.
 
 Anda bisa membandingkan parameter *path* dengan *anggota enumerasi* di enum `ModelName` yang anda buat:
 
-{* ../../docs_src/path_params/tutorial005.py hl[17] *}
+{* ../../examples/path_params/tutorial005.py hl[17] *}
 
 #### Mendapatkan *nilai enumerasi*
 
 Anda bisa mendapatkan nilai (`str` dalam kasus ini) menggunakan `model_name.value`, atau secara umum `anggota_enum_anda.value`:
 
-{* ../../docs_src/path_params/tutorial005.py hl[20] *}
+{* ../../examples/path_params/tutorial005.py hl[20] *}
 
 /// tip | Tips
 
@@ -195,7 +195,7 @@ Anda bisa menghasilkan *anggota enumerasi* dari *operasi path* bahkan di body JS
 
 They will be converted to their corresponding values (strings in this case) before returning them to the client:
 
-{* ../../docs_src/path_params/tutorial005.py hl[18,21,23] *}
+{* ../../examples/path_params/tutorial005.py hl[18,21,23] *}
 
 Klien akan mendapatkan respon JSON seperti berikut:
 
@@ -234,7 +234,7 @@ Dikondisi ini nama parameter adalah `file_path` dan bagian terakhir `:path` meng
 
 Sehingga anda bisa menggunakan:
 
-{* ../../docs_src/path_params/tutorial004.py hl[6] *}
+{* ../../examples/path_params/tutorial004.py hl[6] *}
 
 /// tip | Tips
 

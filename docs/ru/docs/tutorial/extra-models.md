@@ -20,7 +20,7 @@
 
 Ниже изложена основная идея того, как могут выглядеть эти модели с полями для паролей, а также описаны места, где они используются:
 
-{* ../../docs_src/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
+{* ../../examples/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
 
 ### Про `**user_in.dict()`
 
@@ -154,7 +154,7 @@ UserInDB(
 
 В этом случае мы можем определить только различия между моделями (с `password` в чистом виде, с `hashed_password` и без пароля):
 
-{* ../../docs_src/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
+{* ../../examples/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
 
 ## `Union` или `anyOf`
 
@@ -170,7 +170,7 @@ UserInDB(
 
 ///
 
-{* ../../docs_src/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
+{* ../../examples/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
 
 ### `Union` в Python 3.10
 
@@ -192,7 +192,7 @@ some_variable: PlaneItem | CarItem
 
 Для этого используйте `typing.List` из стандартной библиотеки Python (или просто `list` в Python 3.9 и выше):
 
-{* ../../docs_src/extra_models/tutorial004_py39.py hl[18] *}
+{* ../../examples/extra_models/tutorial004_py39.py hl[18] *}
 
 ## Ответ с произвольным `dict`
 
@@ -202,7 +202,7 @@ some_variable: PlaneItem | CarItem
 
 В этом случае вы можете использовать `typing.Dict` (или просто `dict` в Python 3.9 и выше):
 
-{* ../../docs_src/extra_models/tutorial005_py39.py hl[6] *}
+{* ../../examples/extra_models/tutorial005_py39.py hl[6] *}
 
 ## Резюме
 

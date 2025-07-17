@@ -8,7 +8,7 @@
 
 你还可以通过将默认值设置为 `None` 来将请求体参数声明为可选参数：
 
-{* ../../docs_src/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
+{* ../../examples/body_multiple_params/tutorial001_an_py310.py hl[18:20] *}
 
 /// note
 
@@ -31,7 +31,7 @@
 
 但是你也可以声明多个请求体参数，例如 `item` 和 `user`：
 
-{* ../../docs_src/body_multiple_params/tutorial002_py310.py hl[20] *}
+{* ../../examples/body_multiple_params/tutorial002_py310.py hl[20] *}
 
 在这种情况下，**ReadyAPI** 将注意到该函数中有多个请求体参数（两个 Pydantic 模型参数）。
 
@@ -73,7 +73,7 @@
 但是你可以使用 `Body` 指示 **ReadyAPI** 将其作为请求体的另一个键进行处理。
 
 
-{* ../../docs_src/body_multiple_params/tutorial003_an_py310.py hl[23] *}
+{* ../../examples/body_multiple_params/tutorial003_an_py310.py hl[23] *}
 
 在这种情况下，**ReadyAPI** 将期望像这样的请求体：
 
@@ -108,7 +108,7 @@ q: str = None
 
 比如：
 
-{* ../../docs_src/body_multiple_params/tutorial004_an_py310.py hl[27] *}
+{* ../../examples/body_multiple_params/tutorial004_an_py310.py hl[27] *}
 
 /// info
 
@@ -130,7 +130,7 @@ item: Item = Body(embed=True)
 
 比如：
 
-{* ../../docs_src/body_multiple_params/tutorial005_an_py310.py hl[17] *}
+{* ../../examples/body_multiple_params/tutorial005_an_py310.py hl[17] *}
 
 在这种情况下，**ReadyAPI** 将期望像这样的请求体：
 

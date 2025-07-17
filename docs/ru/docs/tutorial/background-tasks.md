@@ -15,7 +15,7 @@
 
 Сначала импортируйте `BackgroundTasks`, потом добавьте в функцию параметр с типом `BackgroundTasks`:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[1,13] *}
+{* ../../examples/background_tasks/tutorial001.py hl[1,13] *}
 
 **ReadyAPI** создаст объект класса `BackgroundTasks` для вас и запишет его в параметр.
 
@@ -31,13 +31,13 @@
 
 Так как операция записи не использует `async` и `await`, мы определим ее как обычную `def`:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[6:9] *}
+{* ../../examples/background_tasks/tutorial001.py hl[6:9] *}
 
 ## Добавление фоновой задачи
 
 Внутри функции вызовите метод `.add_task()` у объекта *background tasks* и передайте ему функцию, которую хотите выполнить в фоне:
 
-{* ../../docs_src/background_tasks/tutorial001.py hl[14] *}
+{* ../../examples/background_tasks/tutorial001.py hl[14] *}
 
 `.add_task()` принимает следующие аргументы:
 
@@ -51,7 +51,7 @@
 
 **ReadyAPI** знает, что нужно сделать в каждом случае и как переиспользовать тот же объект `BackgroundTasks`, так чтобы все фоновые задачи собрались и запустились вместе в фоне:
 
-{* ../../docs_src/background_tasks/tutorial002_py310.py hl[11,13,20,23] *}
+{* ../../examples/background_tasks/tutorial002_py310.py hl[11,13,20,23] *}
 
 В этом примере сообщения будут записаны в `log.txt` *после* того, как ответ сервера был отправлен.
 

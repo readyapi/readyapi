@@ -1,7 +1,7 @@
 from dirty_equals import IsOneOf
 from readyapi.testclient import TestClient
 
-from docs_src.behind_a_proxy.tutorial003 import app
+from examples.behind_a_proxy.tutorial003 import app
 
 client = TestClient(app)
 

@@ -972,7 +972,7 @@ This release is mainly internal refactors, it shouldn't affect apps using ReadyA
 * 📝 Tweak middleware code sample `time.time()` to `time.perf_counter()`. PR [#11957](https://github.com/readyapi/readyapi/pull/11957) by [@domdent](https://github.com/domdent).
 * 🔧 Update sponsors: Coherence. PR [#12093](https://github.com/readyapi/readyapi/pull/12093) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Fix async test example not to trigger DeprecationWarning. PR [#12084](https://github.com/readyapi/readyapi/pull/12084) by [@marcinsulikowski](https://github.com/marcinsulikowski).
-* 📝 Update `docs_src/path_params_numeric_validations/tutorial006.py`. PR [#11478](https://github.com/readyapi/readyapi/pull/11478) by [@MuhammadAshiqAmeer](https://github.com/MuhammadAshiqAmeer).
+* 📝 Update `examples/path_params_numeric_validations/tutorial006.py`. PR [#11478](https://github.com/readyapi/readyapi/pull/11478) by [@MuhammadAshiqAmeer](https://github.com/MuhammadAshiqAmeer).
 * 📝 Update comma in `docs/en/docs/async.md`. PR [#12062](https://github.com/readyapi/readyapi/pull/12062) by [@Alec-Gillis](https://github.com/Alec-Gillis).
 * 📝 Update docs about serving ReadyAPI: ASGI servers, Docker containers, etc.. PR [#12069](https://github.com/readyapi/readyapi/pull/12069) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Clarify `response_class` parameter, validations, and returning a response directly. PR [#12067](https://github.com/readyapi/readyapi/pull/12067) by [@khulnasoft](https://github.com/khulnasoft).
@@ -1343,7 +1343,7 @@ INFO:     Application startup complete.
 
 ### Docs
 
-* 📝 Fix types in examples under `docs_src/extra_data_types`. PR [#10535](https://github.com/khulnasoft/readyapi/pull/10535) by [@nilslindemann](https://github.com/nilslindemann).
+* 📝 Fix types in examples under `examples/extra_data_types`. PR [#10535](https://github.com/khulnasoft/readyapi/pull/10535) by [@nilslindemann](https://github.com/nilslindemann).
 * 📝 Update references to UJSON. PR [#11464](https://github.com/khulnasoft/readyapi/pull/11464) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Tweak docs and translations links, typos, format. PR [#11389](https://github.com/khulnasoft/readyapi/pull/11389) by [@nilslindemann](https://github.com/nilslindemann).
 * 📝 Fix typo in `docs/es/docs/async.md`. PR [#11400](https://github.com/khulnasoft/readyapi/pull/11400) by [@fabianfalon](https://github.com/fabianfalon).
@@ -1809,7 +1809,7 @@ Read more in the [advisory: Content-Type Header ReDoS](https://github.com/khulna
 ### Docs
 
 * ✏️ Fix typo in `docs/en/docs/alternatives.md`. PR [#10931](https://github.com/khulnasoft/readyapi/pull/10931) by [@s111d](https://github.com/s111d).
-* 📝 Replace `email` with `username` in `docs_src/security/tutorial007` code examples. PR [#10649](https://github.com/khulnasoft/readyapi/pull/10649) by [@nilslindemann](https://github.com/nilslindemann).
+* 📝 Replace `email` with `username` in `examples/security/tutorial007` code examples. PR [#10649](https://github.com/khulnasoft/readyapi/pull/10649) by [@nilslindemann](https://github.com/nilslindemann).
 * 📝 Add VS Code tutorial link. PR [#10592](https://github.com/khulnasoft/readyapi/pull/10592) by [@nilslindemann](https://github.com/nilslindemann).
 * 📝 Add notes about Pydantic v2's new `.model_dump()`. PR [#10929](https://github.com/khulnasoft/readyapi/pull/10929) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Fix broken link in `docs/en/docs/tutorial/sql-databases.md`. PR [#10765](https://github.com/khulnasoft/readyapi/pull/10765) by [@HurSungYun](https://github.com/HurSungYun).
@@ -3958,7 +3958,7 @@ Soon there will be a new ReadyAPI release upgrading Starlette to take advantage 
 
 ### Internal
 
-* ✅ Add  the `docs_src` directory to test coverage and update tests. Initial PR [#1904](https://github.com/khulnasoft/readyapi/pull/1904) by [@Kludex](https://github.com/Kludex).
+* ✅ Add  the `examples` directory to test coverage and update tests. Initial PR [#1904](https://github.com/khulnasoft/readyapi/pull/1904) by [@Kludex](https://github.com/Kludex).
 * 🔧 Add new GitHub templates with forms for new issues. PR [#3612](https://github.com/khulnasoft/readyapi/pull/3612) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Add official ReadyAPI Twitter to docs: [@readyapi](https://twitter.com/readyapi). PR [#3578](https://github.com/khulnasoft/readyapi/pull/3578) by [@khulnasoft](https://github.com/khulnasoft).
 

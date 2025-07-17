@@ -20,13 +20,13 @@ Esto es porque los archivos subidos se envían como "form data".
 
 Importa `File` y `UploadFile` desde `readyapi`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[3] *}
 
 ## Definir Parámetros `File`
 
 Crea parámetros de archivo de la misma manera que lo harías para `Body` o `Form`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[9] *}
 
 /// info | Información
 
@@ -54,7 +54,7 @@ Pero hay varios casos en los que podrías beneficiarte de usar `UploadFile`.
 
 Define un parámetro de archivo con un tipo de `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[14] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[14] *}
 
 Usar `UploadFile` tiene varias ventajas sobre `bytes`:
 
@@ -137,13 +137,13 @@ Esto no es una limitación de **ReadyAPI**, es parte del protocolo HTTP.
 
 Puedes hacer un archivo opcional utilizando anotaciones de tipos estándar y estableciendo un valor por defecto de `None`:
 
-{* ../../docs_src/request_files/tutorial001_02_an_py310.py hl[9,17] *}
+{* ../../examples/request_files/tutorial001_02_an_py310.py hl[9,17] *}
 
 ## `UploadFile` con Metadatos Adicionales
 
 También puedes usar `File()` con `UploadFile`, por ejemplo, para establecer metadatos adicionales:
 
-{* ../../docs_src/request_files/tutorial001_03_an_py39.py hl[9,15] *}
+{* ../../examples/request_files/tutorial001_03_an_py39.py hl[9,15] *}
 
 ## Subidas de Múltiples Archivos
 
@@ -153,7 +153,7 @@ Estarían asociados al mismo "campo de formulario" enviado usando "form data".
 
 Para usar eso, declara una lista de `bytes` o `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial002_an_py39.py hl[10,15] *}
+{* ../../examples/request_files/tutorial002_an_py39.py hl[10,15] *}
 
 Recibirás, como se declaró, una `list` de `bytes` o `UploadFile`s.
 
@@ -169,7 +169,7 @@ También podrías usar `from starlette.responses import HTMLResponse`.
 
 Y de la misma manera que antes, puedes usar `File()` para establecer parámetros adicionales, incluso para `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial003_an_py39.py hl[11,18:20] *}
+{* ../../examples/request_files/tutorial003_an_py39.py hl[11,18:20] *}
 
 ## Recapitulación
 

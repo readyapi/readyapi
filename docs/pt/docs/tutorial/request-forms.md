@@ -18,13 +18,13 @@ $ pip install python-multipart
 
 Importe `Form` de `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[1] *}
+{* ../../examples/request_forms/tutorial001.py hl[1] *}
 
 ## Declare parâmetros de `Form`
 
 Crie parâmetros de formulário da mesma forma que você faria para `Body` ou `Query`:
 
-{* ../../docs_src/request_forms/tutorial001.py hl[7] *}
+{* ../../examples/request_forms/tutorial001.py hl[7] *}
 
 Por exemplo, em uma das maneiras que a especificação OAuth2 pode ser usada (chamada "fluxo de senha"), é necessário enviar um `username` e uma `password` como campos do formulário.
 

@@ -10,7 +10,7 @@ Wenn Sie zwei unabhängige ReadyAPI-Anwendungen mit deren eigenen unabhängigen 
 
 Erstellen Sie zunächst die Hauptanwendung **ReadyAPI** und deren *Pfadoperationen*:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[3,6:8] *}
+{* ../../examples/sub_applications/tutorial001.py hl[3,6:8] *}
 
 ### Unteranwendung
 
@@ -18,7 +18,7 @@ Erstellen Sie dann Ihre Unteranwendung und deren *Pfadoperationen*.
 
 Diese Unteranwendung ist nur eine weitere Standard-ReadyAPI-Anwendung, aber diese wird „gemountet“:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,14:16] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,14:16] *}
 
 ### Die Unteranwendung mounten
 
@@ -26,7 +26,7 @@ Mounten Sie in Ihrer Top-Level-Anwendung `app` die Unteranwendung `subapi`.
 
 In diesem Fall wird sie im Pfad `/subapi` gemountet:
 
-{* ../../docs_src/sub_applications/tutorial001.py hl[11,19] *}
+{* ../../examples/sub_applications/tutorial001.py hl[11,19] *}
 
 ### Es in der automatischen API-Dokumentation betrachten
 

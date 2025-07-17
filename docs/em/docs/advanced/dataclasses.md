@@ -4,7 +4,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 ✋️ ReadyAPI 🐕‍🦺 ⚙️ <a href="https://docs.python.org/3/library/dataclasses.html" class="external-link" target="_blank">`dataclasses`</a> 🎏 🌌:
 
-{* ../../docs_src/dataclasses/tutorial001.py hl[1,7:12,19:20] *}
+{* ../../examples/dataclasses/tutorial001.py hl[1,7:12,19:20] *}
 
 👉 🐕‍🦺 👏 **Pydantic**, ⚫️ ✔️ <a href="https://docs.pydantic.dev/latest/concepts/dataclasses/#use-of-stdlib-dataclasses-with-basemodel" class="external-link" target="_blank">🔗 🐕‍🦺 `dataclasses`</a>.
 
@@ -32,7 +32,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 
 👆 💪 ⚙️ `dataclasses` `response_model` 🔢:
 
-{* ../../docs_src/dataclasses/tutorial002.py hl[1,7:13,19] *}
+{* ../../examples/dataclasses/tutorial002.py hl[1,7:13,19] *}
 
 🎻 🔜 🔁 🗜 Pydantic 🎻.
 
@@ -49,7 +49,7 @@ ReadyAPI 🏗 🔛 🔝 **Pydantic**, &amp; 👤 ✔️ 🌏 👆 ❔ ⚙️ Pyd
 👈 💼, 👆 💪 🎯 💱 🐩 `dataclasses` ⏮️ `pydantic.dataclasses`, ❔ 💧-♻:
 
 ```{ .python .annotate hl_lines="1  5  8-11  14-17  23-25  28" }
-{!../../docs_src/dataclasses/tutorial003.py!}
+{!../../examples/dataclasses/tutorial003.py!}
 ```
 
 1️⃣. 👥 🗄 `field` ⚪️➡️ 🐩 `dataclasses`.

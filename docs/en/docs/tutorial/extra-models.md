@@ -20,7 +20,7 @@ If you don't know, you will learn what a "password hash" is in the [security cha
 
 Here's a general idea of how the models could look like with their password fields and the places where they are used:
 
-{* ../../docs_src/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
+{* ../../examples/extra_models/tutorial001_py310.py hl[7,9,14,20,22,27:28,31:33,38:39] *}
 
 
 /// info
@@ -163,7 +163,7 @@ All the data conversion, validation, documentation, etc. will still work as norm
 
 That way, we can declare just the differences between the models (with plaintext `password`, with `hashed_password` and without password):
 
-{* ../../docs_src/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
+{* ../../examples/extra_models/tutorial002_py310.py hl[7,13:14,17:18,21:22] *}
 
 ## `Union` or `anyOf`
 
@@ -179,7 +179,7 @@ When defining a <a href="https://docs.pydantic.dev/latest/concepts/types/#unions
 
 ///
 
-{* ../../docs_src/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
+{* ../../examples/extra_models/tutorial003_py310.py hl[1,14:15,18:20,33] *}
 
 
 ### `Union` in Python 3.10
@@ -202,7 +202,7 @@ The same way, you can declare responses of lists of objects.
 
 For that, use the standard Python `typing.List` (or just `list` in Python 3.9 and above):
 
-{* ../../docs_src/extra_models/tutorial004_py39.py hl[18] *}
+{* ../../examples/extra_models/tutorial004_py39.py hl[18] *}
 
 
 ## Response with arbitrary `dict`
@@ -213,7 +213,7 @@ This is useful if you don't know the valid field/attribute names (that would be 
 
 In this case, you can use `typing.Dict` (or just `dict` in Python 3.9 and above):
 
-{* ../../docs_src/extra_models/tutorial005_py39.py hl[6] *}
+{* ../../examples/extra_models/tutorial005_py39.py hl[6] *}
 
 
 ## Recap

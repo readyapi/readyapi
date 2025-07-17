@@ -10,13 +10,13 @@ Vamos ver como isso funciona e como alterar se for necessário.
 
 Digamos que você tenha um modelo Pydantic com valores padrão, como este:
 
-{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py ln[1:7] hl[7] *}
+{* ../../examples/separate_openapi_schemas/tutorial001_py310.py ln[1:7] hl[7] *}
 
 ### Modelo para Entrada
 
 Se você usar esse modelo como entrada, como aqui:
 
-{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py ln[1:15] hl[14] *}
+{* ../../examples/separate_openapi_schemas/tutorial001_py310.py ln[1:15] hl[14] *}
 
 ... então o campo `description` não será obrigatório. Porque ele tem um valor padrão de `None`.
 
@@ -32,7 +32,7 @@ Você pode confirmar que na documentação, o campo `description` não tem um **
 
 Mas se você usar o mesmo modelo como saída, como aqui:
 
-{* ../../docs_src/separate_openapi_schemas/tutorial001_py310.py hl[19] *}
+{* ../../examples/separate_openapi_schemas/tutorial001_py310.py hl[19] *}
 
 ... então, como `description` tem um valor padrão, se você **não retornar nada** para esse campo, ele ainda terá o **valor padrão**.
 
@@ -91,7 +91,7 @@ O suporte para `separate_input_output_schemas` foi adicionado no ReadyAPI `0.102
 
 ///
 
-{* ../../docs_src/separate_openapi_schemas/tutorial002_py310.py hl[10] *}
+{* ../../examples/separate_openapi_schemas/tutorial002_py310.py hl[10] *}
 
 ### Mesmo Esquema para Modelos de Entrada e Saída na Documentação
 

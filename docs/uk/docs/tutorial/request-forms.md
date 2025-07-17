@@ -18,13 +18,13 @@ $ pip install python-multipart
 
 Імпортуйте `Form` з `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## Оголошення параметрів `Form`
 
 Створюйте параметри форми так само як Ви б створювали `Body` або `Query`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 Наприклад, один зі способів використання специфікації OAuth2 (так званий "password flow") вимагає надсилати `username` та `password` як поля форми.
 

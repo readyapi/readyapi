@@ -6,7 +6,7 @@ So wie Sie zusätzliche Validation und Metadaten in Parametern der **Pfadoperati
 
 Importieren Sie es zuerst:
 
-{* ../../docs_src/body_fields/tutorial001_an_py310.py hl[4] *}
+{* ../../examples/body_fields/tutorial001_an_py310.py hl[4] *}
 
 /// warning | Achtung
 
@@ -18,7 +18,7 @@ Beachten Sie, dass `Field` direkt von `pydantic` importiert wird, nicht von `rea
 
 Dann können Sie `Field` mit Modellattributen deklarieren:
 
-{* ../../docs_src/body_fields/tutorial001_an_py310.py hl[11:14] *}
+{* ../../examples/body_fields/tutorial001_an_py310.py hl[11:14] *}
 
 `Field` funktioniert genauso wie `Query`, `Path` und `Body`, es hat die gleichen Parameter, usw.
 

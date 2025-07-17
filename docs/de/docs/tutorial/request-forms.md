@@ -14,13 +14,13 @@ Z. B. `pip install python-multipart`.
 
 Importieren Sie `Form` von `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## `Form`-Parameter definieren
 
 Erstellen Sie Formular-Parameter, so wie Sie es auch mit `Body` und `Query` machen würden:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 Zum Beispiel stellt eine der Möglichkeiten, die OAuth2 Spezifikation zu verwenden (genannt <abbr title='„Passwort-Fluss“'>„password flow“</abbr>), die Bedingung, einen `username` und ein `password` als Formularfelder zu senden.
 

@@ -4,7 +4,7 @@
 
 👉, 👆 ⚙️ `TestClient` `with` 📄, 🔗*️⃣:
 
-{* ../../docs_src/app_testing/tutorial002.py hl[27:31] *}
+{* ../../examples/app_testing/tutorial002.py hl[27:31] *}
 
 /// note
 

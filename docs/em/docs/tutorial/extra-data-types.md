@@ -55,8 +55,8 @@
 
 📥 🖼 *➡ 🛠️* ⏮️ 🔢 ⚙️ 🔛 🆎.
 
-{* ../../docs_src/extra_data_types/tutorial001.py hl[1,3,12:16] *}
+{* ../../examples/extra_data_types/tutorial001.py hl[1,3,12:16] *}
 
 🗒 👈 🔢 🔘 🔢 ✔️ 👫 🐠 💽 🆎, &amp; 👆 💪, 🖼, 🎭 😐 📅 🎭, 💖:
 
-{* ../../docs_src/extra_data_types/tutorial001.py hl[18:19] *}
+{* ../../examples/extra_data_types/tutorial001.py hl[18:19] *}

@@ -31,7 +31,7 @@ ReadyAPI 提供了简单易用，但功能强大的**<abbr title="也称为组�
 
 依赖项就是一个函数，且可以使用与*路径操作函数*相同的参数：
 
-{* ../../docs_src/dependencies/tutorial001.py hl[8:11] *}
+{* ../../examples/dependencies/tutorial001.py hl[8:11] *}
 
 大功告成。
 
@@ -53,13 +53,13 @@ ReadyAPI 提供了简单易用，但功能强大的**<abbr title="也称为组�
 
 ### 导入 `Depends`
 
-{* ../../docs_src/dependencies/tutorial001.py hl[3] *}
+{* ../../examples/dependencies/tutorial001.py hl[3] *}
 
 ### 声明依赖项
 
 与在*路径操作函数*参数中使用 `Body`、`Query` 的方式相同，声明依赖项需要使用 `Depends` 和一个新的参数：
 
-{* ../../docs_src/dependencies/tutorial001.py hl[15,20] *}
+{* ../../examples/dependencies/tutorial001.py hl[15,20] *}
 
 虽然，在路径操作函数的参数中使用 `Depends` 的方式与 `Body`、`Query` 相同，但 `Depends` 的工作方式略有不同。
 

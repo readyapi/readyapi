@@ -12,7 +12,7 @@
 
 &amp; ⤴️ 🗻 👈 🔽 ➡.
 
-{* ../../docs_src/wsgi/tutorial001.py hl[2:3,22] *}
+{* ../../examples/wsgi/tutorial001.py hl[2:3,22] *}
 
 ## ✅ ⚫️
 

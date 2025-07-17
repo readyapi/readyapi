@@ -2,7 +2,7 @@
 
 File ReadyAPI yang paling sederhana bisa seperti berikut:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Salin file tersebut ke `main.py`.
 
@@ -156,7 +156,7 @@ Anda juga bisa menggunakan OpenAPI untuk membuat kode secara otomatis, untuk kli
 
 ### Langkah 1: impor `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` adalah class Python yang menyediakan semua fungsionalitas API anda.
 
@@ -170,7 +170,7 @@ Anda bisa menggunakan semua fungsionalitas <a href="https://www.starlette.io/" c
 
 ### Langkah 2: buat "instance" dari `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Di sini variabel `app` akan menjadi sebuah "instance" dari class `ReadyAPI`.
 
@@ -239,7 +239,7 @@ Kita akan menyebut mereka juga "**operasi**".
 
 #### Mendefinisikan *dekorator operasi path*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 `@app.get("/")` memberitahu **ReadyAPI** bahwa fungsi di bawahnya mengurusi request yang menuju ke:
 
@@ -293,7 +293,7 @@ Ini "**fungsi operasi path**" kita:
 * **operasi**: adalah `get`.
 * **fungsi**: adalah fungsi yang ada di bawah dekorator (di bawah `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Ini adalah fungsi Python.
 
@@ -305,7 +305,7 @@ Di kondisi ini, ini adalah sebuah fungsi `async`.
 
 Anda bisa mendefinisikan fungsi ini sebagai fungsi normal daripada `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Catatan
 
@@ -315,7 +315,7 @@ Jika anda tidak tahu perbedaannya, kunjungi [Async: *"Panduan cepat"*](../async.
 
 ### Langkah 5: hasilkan konten
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Anda bisa menghasilkan `dict`, `list`, nilai singular seperti `str`, `int`, dll.
 

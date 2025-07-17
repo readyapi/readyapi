@@ -1,7 +1,7 @@
 from dirty_equals import IsDict
 from readyapi.testclient import TestClient
 
-from docs_src.openapi_callbacks.tutorial001 import app, invoice_notification
+from examples.openapi_callbacks.tutorial001 import app, invoice_notification
 
 client = TestClient(app)
 

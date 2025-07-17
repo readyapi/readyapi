@@ -38,13 +38,13 @@ $ pip install websockets
 
 しかし、これはWebSocketのサーバーサイドに焦点を当て、実用的な例を示す最も簡単な方法です。
 
-{* ../../docs_src/websockets/tutorial001.py hl[2,6:38,41:43] *}
+{* ../../examples/websockets/tutorial001.py hl[2,6:38,41:43] *}
 
 ## `websocket` を作成する
 
 **ReadyAPI** アプリケーションで、`websocket` を作成します。
 
-{* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
+{* ../../examples/websockets/tutorial001.py hl[1,46:47] *}
 
 /// note | 技術詳細
 
@@ -58,7 +58,7 @@ $ pip install websockets
 
 WebSocketルートでは、 `await` を使ってメッセージの送受信ができます。
 
-{* ../../docs_src/websockets/tutorial001.py hl[48:52] *}
+{* ../../examples/websockets/tutorial001.py hl[48:52] *}
 
 バイナリやテキストデータ、JSONデータを送受信できます。
 
@@ -109,7 +109,7 @@ WebSocketエンドポイントでは、`readyapi` から以下をインポート
 
 これらは、他のReadyAPI エンドポイント/*path operation* の場合と同じように機能します。
 
-{* ../../docs_src/websockets/tutorial002.py hl[58:65,68:83] *}
+{* ../../examples/websockets/tutorial002.py hl[58:65,68:83] *}
 
 /// info | 情報
 
@@ -156,7 +156,7 @@ $ uvicorn main:app --reload
 
 WebSocket接続が閉じられると、 `await websocket.receive_text()` は例外 `WebSocketDisconnect` を発生させ、この例のようにキャッチして処理することができます。
 
-{* ../../docs_src/websockets/tutorial003.py hl[81:83] *}
+{* ../../examples/websockets/tutorial003.py hl[81:83] *}
 
 試してみるには、
 

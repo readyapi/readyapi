@@ -302,7 +302,7 @@ def langs_json():
 
 
 @app.command()
-def generate_docs_src_versions_for_file(file_path: Path) -> None:
+def generate_examples_versions_for_file(file_path: Path) -> None:
     targets = ["py39", "py310"]
     base_content = file_path.read_text("utf-8")
     seen = {base_content}

@@ -2,7 +2,7 @@
 
 Yol "parametrelerini" veya "değişkenlerini" Python <abbr title="String Biçimleme: Format String">string biçimlemede</abbr> kullanılan sözdizimi ile tanımlayabilirsiniz.
 
-{* ../../docs_src/path_params/tutorial001.py hl[6:7] *}
+{* ../../examples/path_params/tutorial001.py hl[6:7] *}
 
 Yol parametresi olan `item_id`'nin değeri, fonksiyonunuza `item_id` argümanı olarak aktarılacaktır.
 
@@ -16,7 +16,7 @@ Eğer bu örneği çalıştırıp <a href="http://127.0.0.1:8000/items/foo" clas
 
 Standart Python tip belirteçlerini kullanarak yol parametresinin tipini fonksiyonun içerisinde tanımlayabilirsiniz.
 
-{* ../../docs_src/path_params/tutorial002.py hl[7] *}
+{* ../../examples/path_params/tutorial002.py hl[7] *}
 
 Bu durumda, `item_id` bir `int` olarak tanımlanacaktır.
 
@@ -119,13 +119,13 @@ Benzer şekilde `/users/{user_id}` gibi tanımlanmış ve belirli bir kullanıc�
 
 *Yol operasyonları* sıralı bir şekilde gözden geçirildiğinden dolayı `/users/me` yolunun `/users/{user_id}` yolundan önce tanımlanmış olmasından emin olmanız gerekmektedir:
 
-{* ../../docs_src/path_params/tutorial003.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003.py hl[6,11] *}
 
 Aksi halde, `/users/{user_id}` yolu `"me"` değerinin `user_id` parametresi için gönderildiğini "düşünerek" `/users/me` ile de eşleşir.
 
 Benzer şekilde, bir yol operasyonunu yeniden tanımlamanız mümkün değildir:
 
-{* ../../docs_src/path_params/tutorial003b.py hl[6,11] *}
+{* ../../examples/path_params/tutorial003b.py hl[6,11] *}
 
 Yol, ilk kısım ile eşleştiğinden dolayı her koşulda ilk yol operasyonu kullanılacaktır.
 
@@ -141,7 +141,7 @@ Eğer *yol parametresi* alan bir *yol operasyonunuz* varsa ve alabileceği *yol 
 
 Sonrasında, sınıf içerisinde, mevcut ve geçerli değerler olacak olan sabit değerli özelliklerini oluşturalım:
 
-{* ../../docs_src/path_params/tutorial005.py hl[1,6:9] *}
+{* ../../examples/path_params/tutorial005.py hl[1,6:9] *}
 
 /// info | Bilgi
 
@@ -159,7 +159,7 @@ Merak ediyorsanız söyleyeyim, "AlexNet", "ResNet" ve "LeNet" isimleri Makine �
 
 Sonrasında, yarattığımız enum sınıfını (`ModelName`) kullanarak tip belirteci aracılığıyla bir *yol parametresi* oluşturalım:
 
-{* ../../docs_src/path_params/tutorial005.py hl[16] *}
+{* ../../examples/path_params/tutorial005.py hl[16] *}
 
 ### Dokümana Göz Atalım
 
@@ -175,13 +175,13 @@ Sonrasında, yarattığımız enum sınıfını (`ModelName`) kullanarak tip bel
 
 Parametreyi, yarattığınız enum olan `ModelName` içerisindeki *enumeration üyesi* ile karşılaştırabilirsiniz:
 
-{* ../../docs_src/path_params/tutorial005.py hl[17] *}
+{* ../../examples/path_params/tutorial005.py hl[17] *}
 
 #### *Enumeration Değerini* Edinelim
 
 `model_name.value` veya genel olarak `your_enum_member.value` tanımlarını kullanarak (bu durumda bir `str` olan) gerçek değere ulaşabilirsiniz:
 
-{* ../../docs_src/path_params/tutorial005.py hl[20] *}
+{* ../../examples/path_params/tutorial005.py hl[20] *}
 
 /// tip | İpucu
 
@@ -195,7 +195,7 @@ JSON gövdesine (örneğin bir `dict`) gömülü olsalar bile *yol operasyonunda
 
 Bu üyeler istemciye iletilmeden önce kendilerine karşılık gelen değerlerine (bu durumda string) dönüştürüleceklerdir:
 
-{* ../../docs_src/path_params/tutorial005.py hl[18,21,23] *}
+{* ../../examples/path_params/tutorial005.py hl[18,21,23] *}
 
 İstemci tarafında şuna benzer bir JSON yanıtı ile karşılaşırsınız:
 
@@ -234,7 +234,7 @@ Bu durumda, parametrenin adı `file_path` olacaktır ve son kısım olan `:path`
 
 Böylece şunun gibi bir kullanım yapabilirsiniz:
 
-{* ../../docs_src/path_params/tutorial004.py hl[6] *}
+{* ../../examples/path_params/tutorial004.py hl[6] *}
 
 /// tip | İpucu
 

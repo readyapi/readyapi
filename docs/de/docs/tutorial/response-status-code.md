@@ -8,7 +8,7 @@ So wie ein Responsemodell, können Sie auch einen HTTP-Statuscode für die Respo
 * `@app.delete()`
 * usw.
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 /// note | Hinweis
 
@@ -74,7 +74,7 @@ Um mehr über Statuscodes zu lernen, und welcher wofür verwendet wird, lesen Si
 
 Schauen wir uns das vorherige Beispiel noch einmal an:
 
-{* ../../docs_src/response_status_code/tutorial001.py hl[6] *}
+{* ../../examples/response_status_code/tutorial001.py hl[6] *}
 
 `201` ist der Statuscode für „Created“ („Erzeugt“).
 
@@ -82,7 +82,7 @@ Aber Sie müssen sich nicht daran erinnern, welcher dieser Codes was bedeutet.
 
 Sie können die Hilfsvariablen von `readyapi.status` verwenden.
 
-{* ../../docs_src/response_status_code/tutorial002.py hl[1,6] *}
+{* ../../examples/response_status_code/tutorial002.py hl[1,6] *}
 
 Diese sind nur eine Annehmlichkeit und enthalten dieselbe Nummer, aber auf diese Weise können Sie die Autovervollständigung Ihres Editors verwenden, um sie zu finden:
 

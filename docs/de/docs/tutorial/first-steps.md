@@ -2,7 +2,7 @@
 
 Die einfachste ReadyAPI-Datei könnte wie folgt aussehen:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Kopieren Sie dies in eine Datei `main.py`.
 
@@ -131,7 +131,7 @@ Ebenfalls können Sie es verwenden, um automatisch Code für Clients zu generier
 
 ### Schritt 1: Importieren von `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` ist eine Python-Klasse, die die gesamte Funktionalität für Ihre API bereitstellt.
 
@@ -145,7 +145,7 @@ Sie können alle <a href="https://www.starlette.io/" class="external-link" targe
 
 ### Schritt 2: Erzeugen einer `ReadyAPI`-„Instanz“
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 In diesem Beispiel ist die Variable `app` eine „Instanz“ der Klasse `ReadyAPI`.
 
@@ -165,7 +165,7 @@ $ uvicorn main:app --reload
 
 Wenn Sie Ihre Anwendung wie folgt erstellen:
 
-{* ../../docs_src/first_steps/tutorial002.py hl[3] *}
+{* ../../examples/first_steps/tutorial002.py hl[3] *}
 
 Und in eine Datei `main.py` einfügen, dann würden Sie `uvicorn` wie folgt aufrufen:
 
@@ -242,7 +242,7 @@ Wir werden sie auch „**Operationen**“ nennen.
 
 #### Definieren eines *Pfadoperation-Dekorators*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 Das `@app.get("/")` sagt **ReadyAPI**, dass die Funktion direkt darunter für die Bearbeitung von Anfragen zuständig ist, die an:
 
@@ -296,7 +296,7 @@ Das ist unsere „**Pfadoperation-Funktion**“:
 * **Operation**: ist `get`.
 * **Funktion**: ist die Funktion direkt unter dem „Dekorator“ (unter `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Dies ist eine Python-Funktion.
 
@@ -308,7 +308,7 @@ In diesem Fall handelt es sich um eine `async`-Funktion.
 
 Sie könnten sie auch als normale Funktion anstelle von `async def` definieren:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Hinweis
 
@@ -318,7 +318,7 @@ Wenn Sie den Unterschied nicht kennen, lesen Sie [Async: *„In Eile?“*](../as
 
 ### Schritt 5: den Inhalt zurückgeben
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Sie können ein `dict`, eine `list`, einzelne Werte wie `str`, `int`, usw. zurückgeben.
 

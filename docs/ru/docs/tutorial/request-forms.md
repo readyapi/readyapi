@@ -14,13 +14,13 @@
 
 Импортируйте `Form` из `readyapi`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[3] *}
 
 ## Определение параметров `Form`
 
 Создайте параметры формы так же, как это делается для `Body` или `Query`:
 
-{* ../../docs_src/request_forms/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_forms/tutorial001_an_py39.py hl[9] *}
 
 Например, в одном из способов использования спецификации OAuth2 (называемом "потоком пароля") требуется отправить `username` и `password` в виде полей формы.
 

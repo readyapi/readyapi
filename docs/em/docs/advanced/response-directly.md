@@ -34,7 +34,7 @@
 
 📚 💼, 👆 💪 ⚙️ `jsonable_encoder` 🗜 👆 📊 ⏭ 🚶‍♀️ ⚫️ 📨:
 
-{* ../../docs_src/response_directly/tutorial001.py hl[6:7,21:22] *}
+{* ../../examples/response_directly/tutorial001.py hl[6:7,21:22] *}
 
 /// note | 📡 ℹ
 
@@ -54,7 +54,7 @@
 
 👆 💪 🚮 👆 📂 🎚 🎻, 🚮 ⚫️ `Response`, &amp; 📨 ⚫️:
 
-{* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
+{* ../../examples/response_directly/tutorial002.py hl[1,18] *}
 
 ## 🗒
 

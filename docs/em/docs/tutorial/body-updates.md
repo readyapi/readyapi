@@ -6,7 +6,7 @@
 
 👆 💪 ⚙️ `jsonable_encoder` 🗜 🔢 💽 📊 👈 💪 🏪 🎻 (✅ ⏮️ ☁ 💽). 🖼, 🏭 `datetime` `str`.
 
-{* ../../docs_src/body_updates/tutorial001.py hl[30:35] *}
+{* ../../examples/body_updates/tutorial001.py hl[30:35] *}
 
 `PUT` ⚙️ 📨 💽 👈 🔜 ❎ ♻ 💽.
 
@@ -54,7 +54,7 @@
 
 ⤴️ 👆 💪 ⚙️ 👉 🏗 `dict` ⏮️ 🕴 💽 👈 ⚒ (📨 📨), 🚫 🔢 💲:
 
-{* ../../docs_src/body_updates/tutorial002.py hl[34] *}
+{* ../../examples/body_updates/tutorial002.py hl[34] *}
 
 ### ⚙️ Pydantic `update` 🔢
 
@@ -62,7 +62,7 @@
 
 💖 `stored_item_model.copy(update=update_data)`:
 
-{* ../../docs_src/body_updates/tutorial002.py hl[35] *}
+{* ../../examples/body_updates/tutorial002.py hl[35] *}
 
 ### 🍕 ℹ 🌃
 
@@ -79,7 +79,7 @@
 * 🖊 💽 👆 💽.
 * 📨 ℹ 🏷.
 
-{* ../../docs_src/body_updates/tutorial002.py hl[30:37] *}
+{* ../../examples/body_updates/tutorial002.py hl[30:37] *}
 
 /// tip
 

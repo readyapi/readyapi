@@ -1,6 +1,6 @@
 from readyapi.testclient import TestClient
 
-from docs_src.metadata.tutorial001 import app
+from examples.metadata.tutorial001 import app
 
 client = TestClient(app)
 

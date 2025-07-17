@@ -6,7 +6,7 @@ Você pode conectar o depurador no seu editor, por exemplo, com o Visual Studio 
 
 Em seu aplicativo ReadyAPI, importe e execute `uvicorn` diretamente:
 
-{* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
+{* ../../examples/debugging/tutorial001.py hl[1,15] *}
 
 ### Sobre `__name__ == "__main__"`
 

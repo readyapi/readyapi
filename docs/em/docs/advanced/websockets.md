@@ -38,13 +38,13 @@ $ pip install websockets
 
 ✋️ ⚫️ 🙅 🌌 🎯 🔛 💽-🚄 *️⃣ &amp; ✔️ 👷 🖼:
 
-{* ../../docs_src/websockets/tutorial001.py hl[2,6:38,41:43] *}
+{* ../../examples/websockets/tutorial001.py hl[2,6:38,41:43] *}
 
 ## ✍ `websocket`
 
 👆 **ReadyAPI** 🈸, ✍ `websocket`:
 
-{* ../../docs_src/websockets/tutorial001.py hl[1,46:47] *}
+{* ../../examples/websockets/tutorial001.py hl[1,46:47] *}
 
 /// note | 📡 ℹ
 
@@ -58,7 +58,7 @@ $ pip install websockets
 
 👆 *️⃣ 🛣 👆 💪 `await` 📧 &amp; 📨 📧.
 
-{* ../../docs_src/websockets/tutorial001.py hl[48:52] *}
+{* ../../examples/websockets/tutorial001.py hl[48:52] *}
 
 👆 💪 📨 &amp; 📨 💱, ✍, &amp; 🎻 💽.
 
@@ -109,7 +109,7 @@ $ uvicorn main:app --reload
 
 👫 👷 🎏 🌌 🎏 ReadyAPI 🔗/*➡ 🛠️*:
 
-{* ../../docs_src/websockets/tutorial002.py hl[66:77,76:91] *}
+{* ../../examples/websockets/tutorial002.py hl[66:77,76:91] *}
 
 /// info
 
@@ -154,7 +154,7 @@ $ uvicorn main:app --reload
 
 🕐❔ *️⃣ 🔗 📪, `await websocket.receive_text()` 🔜 🤚 `WebSocketDisconnect` ⚠, ❔ 👆 💪 ⤴️ ✊ &amp; 🍵 💖 👉 🖼.
 
-{* ../../docs_src/websockets/tutorial003.py hl[81:83] *}
+{* ../../examples/websockets/tutorial003.py hl[81:83] *}
 
 🔄 ⚫️ 👅:
 

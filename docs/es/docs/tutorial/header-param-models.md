@@ -14,7 +14,7 @@ Esto es compatible desde la versión `0.115.0` de ReadyAPI. 🤓
 
 Declara los **parámetros de header** que necesitas en un **modelo Pydantic**, y luego declara el parámetro como `Header`:
 
-{* ../../docs_src/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
+{* ../../examples/header_param_models/tutorial001_an_py310.py hl[9:14,18] *}
 
 **ReadyAPI** **extraerá** los datos para **cada campo** de los **headers** en el request y te dará el modelo Pydantic que definiste.
 
@@ -32,7 +32,7 @@ En algunos casos de uso especiales (probablemente no muy comunes), podrías quer
 
 Puedes usar la configuración del modelo de Pydantic para `prohibir` cualquier campo `extra`:
 
-{* ../../docs_src/header_param_models/tutorial002_an_py310.py hl[10] *}
+{* ../../examples/header_param_models/tutorial002_an_py310.py hl[10] *}
 
 Si un cliente intenta enviar algunos **headers extra**, recibirán un response de **error**.
 

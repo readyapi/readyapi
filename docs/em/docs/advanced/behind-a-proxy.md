@@ -94,7 +94,7 @@ $ uvicorn main:app --root-path /api/v1
 
 📥 👥 ✅ ⚫️ 📧 🎦 🎯.
 
-{* ../../docs_src/behind_a_proxy/tutorial001.py hl[8] *}
+{* ../../examples/behind_a_proxy/tutorial001.py hl[8] *}
 
 ⤴️, 🚥 👆 ▶️ Uvicorn ⏮️:
 
@@ -121,7 +121,7 @@ $ uvicorn main:app --root-path /api/v1
 
 👐, 🚥 👆 🚫 ✔️ 🌌 🚚 📋 ⏸ 🎛 💖 `--root-path` ⚖️ 🌓, 👆 💪 ⚒ `root_path` 🔢 🕐❔ 🏗 👆 ReadyAPI 📱:
 
-{* ../../docs_src/behind_a_proxy/tutorial002.py hl[3] *}
+{* ../../examples/behind_a_proxy/tutorial002.py hl[3] *}
 
 🚶‍♀️ `root_path` `ReadyAPI` 🔜 🌓 🚶‍♀️ `--root-path` 📋 ⏸ 🎛 Uvicorn ⚖️ Hypercorn.
 
@@ -301,7 +301,7 @@ $ uvicorn main:app --root-path /api/v1
 
 🖼:
 
-{* ../../docs_src/behind_a_proxy/tutorial003.py hl[4:7] *}
+{* ../../examples/behind_a_proxy/tutorial003.py hl[4:7] *}
 
 🔜 🏗 🗄 🔗 💖:
 
@@ -348,7 +348,7 @@ $ uvicorn main:app --root-path /api/v1
 
 🚥 👆 🚫 💚 **ReadyAPI** 🔌 🏧 💽 ⚙️ `root_path`, 👆 💪 ⚙️ 🔢 `root_path_in_servers=False`:
 
-{* ../../docs_src/behind_a_proxy/tutorial004.py hl[9] *}
+{* ../../examples/behind_a_proxy/tutorial004.py hl[9] *}
 
 &amp; ⤴️ ⚫️ 🏆 🚫 🔌 ⚫️ 🗄 🔗.
 

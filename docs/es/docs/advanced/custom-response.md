@@ -30,7 +30,7 @@ Esto se debe a que, por defecto, ReadyAPI inspeccionará cada elemento dentro y 
 
 Pero si estás seguro de que el contenido que estás devolviendo es **serializable con JSON**, puedes pasarlo directamente a la clase de response y evitar la sobrecarga extra que ReadyAPI tendría al pasar tu contenido de retorno a través de `jsonable_encoder` antes de pasarlo a la clase de response.
 
-{* ../../docs_src/custom_response/tutorial001b.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial001b.py hl[2,7] *}
 
 /// info | Información
 
@@ -55,7 +55,7 @@ Para devolver un response con HTML directamente desde **ReadyAPI**, usa `HTMLRes
 * Importa `HTMLResponse`.
 * Pasa `HTMLResponse` como parámetro `response_class` de tu *path operation decorator*.
 
-{* ../../docs_src/custom_response/tutorial002.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial002.py hl[2,7] *}
 
 /// info | Información
 
@@ -73,7 +73,7 @@ Como se ve en [Devolver una Response directamente](response-directly.md){.intern
 
 El mismo ejemplo de arriba, devolviendo una `HTMLResponse`, podría verse así:
 
-{* ../../docs_src/custom_response/tutorial003.py hl[2,7,19] *}
+{* ../../examples/custom_response/tutorial003.py hl[2,7,19] *}
 
 /// warning | Advertencia
 
@@ -97,7 +97,7 @@ El `response_class` solo se usará para documentar el OpenAPI *path operation*, 
 
 Por ejemplo, podría ser algo así:
 
-{* ../../docs_src/custom_response/tutorial004.py hl[7,21,23] *}
+{* ../../examples/custom_response/tutorial004.py hl[7,21,23] *}
 
 En este ejemplo, la función `generate_html_response()` ya genera y devuelve una `Response` en lugar de devolver el HTML en un `str`.
 
@@ -136,7 +136,7 @@ Acepta los siguientes parámetros:
 
 ReadyAPI (de hecho Starlette) incluirá automáticamente un header Content-Length. También incluirá un header Content-Type, basado en el `media_type` y añadiendo un conjunto de caracteres para tipos de texto.
 
-{* ../../docs_src/response_directly/tutorial002.py hl[1,18] *}
+{* ../../examples/response_directly/tutorial002.py hl[1,18] *}
 
 ### `HTMLResponse`
 
@@ -146,7 +146,7 @@ Toma algún texto o bytes y devuelve un response HTML, como leíste arriba.
 
 Toma algún texto o bytes y devuelve un response de texto plano.
 
-{* ../../docs_src/custom_response/tutorial005.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial005.py hl[2,7,9] *}
 
 ### `JSONResponse`
 
@@ -180,7 +180,7 @@ Esto requiere instalar `ujson`, por ejemplo, con `pip install ujson`.
 
 ///
 
-{* ../../docs_src/custom_response/tutorial001.py hl[2,7] *}
+{* ../../examples/custom_response/tutorial001.py hl[2,7] *}
 
 /// tip | Consejo
 
@@ -194,13 +194,13 @@ Devuelve una redirección HTTP. Usa un código de estado 307 (Redirección Tempo
 
 Puedes devolver un `RedirectResponse` directamente:
 
-{* ../../docs_src/custom_response/tutorial006.py hl[2,9] *}
+{* ../../examples/custom_response/tutorial006.py hl[2,9] *}
 
 ---
 
 O puedes usarlo en el parámetro `response_class`:
 
-{* ../../docs_src/custom_response/tutorial006b.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial006b.py hl[2,7,9] *}
 
 Si haces eso, entonces puedes devolver la URL directamente desde tu *path operation function*.
 
@@ -210,13 +210,13 @@ En este caso, el `status_code` utilizado será el predeterminado para `RedirectR
 
 También puedes usar el parámetro `status_code` combinado con el parámetro `response_class`:
 
-{* ../../docs_src/custom_response/tutorial006c.py hl[2,7,9] *}
+{* ../../examples/custom_response/tutorial006c.py hl[2,7,9] *}
 
 ### `StreamingResponse`
 
 Toma un generador `async` o un generador/iterador normal y transmite el cuerpo del response.
 
-{* ../../docs_src/custom_response/tutorial007.py hl[2,14] *}
+{* ../../examples/custom_response/tutorial007.py hl[2,14] *}
 
 #### Usando `StreamingResponse` con objetos similares a archivos
 
@@ -226,7 +226,7 @@ De esa manera, no tienes que leerlo todo primero en memoria, y puedes pasar esa 
 
 Esto incluye muchos paquetes para interactuar con almacenamiento en la nube, procesamiento de video y otros.
 
-{* ../../docs_src/custom_response/tutorial008.py hl[2,10:12,14] *}
+{* ../../examples/custom_response/tutorial008.py hl[2,10:12,14] *}
 
 1. Esta es la función generadora. Es una "función generadora" porque contiene declaraciones `yield` dentro.
 2. Al usar un bloque `with`, nos aseguramos de que el objeto similar a un archivo se cierre después de que la función generadora termine. Así, después de que termina de enviar el response.
@@ -255,11 +255,11 @@ Toma un conjunto diferente de argumentos para crear un instance que los otros ti
 
 Los responses de archivos incluirán los headers apropiados `Content-Length`, `Last-Modified` y `ETag`.
 
-{* ../../docs_src/custom_response/tutorial009.py hl[2,10] *}
+{* ../../examples/custom_response/tutorial009.py hl[2,10] *}
 
 También puedes usar el parámetro `response_class`:
 
-{* ../../docs_src/custom_response/tutorial009b.py hl[2,8,10] *}
+{* ../../examples/custom_response/tutorial009b.py hl[2,8,10] *}
 
 En este caso, puedes devolver la path del archivo directamente desde tu *path operation* function.
 
@@ -273,7 +273,7 @@ Digamos que quieres que devuelva JSON con sangría y formato, por lo que quieres
 
 Podrías crear un `CustomORJSONResponse`. Lo principal que tienes que hacer es crear un método `Response.render(content)` que devuelva el contenido como `bytes`:
 
-{* ../../docs_src/custom_response/tutorial009c.py hl[9:14,17] *}
+{* ../../examples/custom_response/tutorial009c.py hl[9:14,17] *}
 
 Ahora en lugar de devolver:
 
@@ -299,7 +299,7 @@ El parámetro que define esto es `default_response_class`.
 
 En el ejemplo a continuación, **ReadyAPI** usará `ORJSONResponse` por defecto, en todas las *path operations*, en lugar de `JSONResponse`.
 
-{* ../../docs_src/custom_response/tutorial010.py hl[2,4] *}
+{* ../../examples/custom_response/tutorial010.py hl[2,4] *}
 
 /// tip | Consejo
 

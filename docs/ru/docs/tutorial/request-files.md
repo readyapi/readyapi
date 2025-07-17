@@ -16,13 +16,13 @@
 
 Импортируйте `File` и `UploadFile` из модуля `readyapi`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[3] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[3] *}
 
 ## Определите параметры `File`
 
 Создайте параметры `File` так же, как вы это делаете для `Body` или `Form`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[9] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[9] *}
 
 /// info | Дополнительная информация
 
@@ -50,7 +50,7 @@
 
 Определите параметр файла с типом `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial001_an_py39.py hl[14] *}
+{* ../../examples/request_files/tutorial001_an_py39.py hl[14] *}
 
 Использование `UploadFile` имеет ряд преимуществ перед `bytes`:
 
@@ -133,13 +133,13 @@ contents = myfile.file.read()
 
 Вы можете сделать загрузку файла необязательной, используя стандартные аннотации типов и установив значение по умолчанию `None`:
 
-{* ../../docs_src/request_files/tutorial001_02_an_py310.py hl[9,17] *}
+{* ../../examples/request_files/tutorial001_02_an_py310.py hl[9,17] *}
 
 ## `UploadFile` с дополнительными метаданными
 
 Вы также можете использовать `File()` вместе с `UploadFile`, например, для установки дополнительных метаданных:
 
-{* ../../docs_src/request_files/tutorial001_03_an_py39.py hl[9,15] *}
+{* ../../examples/request_files/tutorial001_03_an_py39.py hl[9,15] *}
 
 ## Загрузка нескольких файлов
 
@@ -149,7 +149,7 @@ contents = myfile.file.read()
 
 Для этого необходимо объявить список `bytes` или `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial002_an_py39.py hl[10,15] *}
+{* ../../examples/request_files/tutorial002_an_py39.py hl[10,15] *}
 
 Вы получите, как и было объявлено, список `list` из `bytes` или `UploadFile`.
 
@@ -165,7 +165,7 @@ contents = myfile.file.read()
 
 Так же, как и раньше, вы можете использовать `File()` для задания дополнительных параметров, даже для `UploadFile`:
 
-{* ../../docs_src/request_files/tutorial003_an_py39.py hl[11,18:20] *}
+{* ../../examples/request_files/tutorial003_an_py39.py hl[11,18:20] *}
 
 ## Резюме
 

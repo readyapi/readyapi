@@ -2,7 +2,7 @@
 
 O arquivo ReadyAPI mais simples pode se parecer com:
 
-{* ../../docs_src/first_steps/tutorial001.py *}
+{* ../../examples/first_steps/tutorial001.py *}
 
 Copie o conteúdo para um arquivo `main.py`.
 
@@ -147,7 +147,7 @@ Você também pode usá-lo para gerar código automaticamente para clientes que 
 
 ### Passo 1: importe `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[1] *}
+{* ../../examples/first_steps/tutorial001.py hl[1] *}
 
 `ReadyAPI` é uma classe Python que fornece todas as funcionalidades para sua API.
 
@@ -161,7 +161,7 @@ Você pode usar todas as funcionalidades do <a href="https://www.starlette.io/" 
 
 ### Passo 2: crie uma "instância" de `ReadyAPI`
 
-{* ../../docs_src/first_steps/tutorial001.py hl[3] *}
+{* ../../examples/first_steps/tutorial001.py hl[3] *}
 
 Aqui, a variável `app` será uma "instância" da classe `ReadyAPI`.
 
@@ -230,7 +230,7 @@ Vamos chamá-los de "**operações**" também.
 
 #### Defina um *decorador de rota*
 
-{* ../../docs_src/first_steps/tutorial001.py hl[6] *}
+{* ../../examples/first_steps/tutorial001.py hl[6] *}
 
 O `@app.get("/")` diz ao **ReadyAPI** que a função logo abaixo é responsável por tratar as requisições que vão para:
 
@@ -284,7 +284,7 @@ Esta é a nossa "**função de rota**":
 * **operação**: é `get`.
 * **função**: é a função abaixo do "decorador" (abaixo do `@app.get("/")`).
 
-{* ../../docs_src/first_steps/tutorial001.py hl[7] *}
+{* ../../examples/first_steps/tutorial001.py hl[7] *}
 
 Esta é uma função Python.
 
@@ -296,7 +296,7 @@ Neste caso, é uma função `assíncrona`.
 
 Você também pode defini-la como uma função normal em vez de `async def`:
 
-{* ../../docs_src/first_steps/tutorial003.py hl[7] *}
+{* ../../examples/first_steps/tutorial003.py hl[7] *}
 
 /// note | Nota
 
@@ -306,7 +306,7 @@ Se você não sabe a diferença, verifique o [Async: *"Com pressa?"*](../async.m
 
 ### Passo 5: retorne o conteúdo
 
-{* ../../docs_src/first_steps/tutorial001.py hl[8] *}
+{* ../../examples/first_steps/tutorial001.py hl[8] *}
 
 Você pode retornar um `dict`, `list` e valores singulares como `str`, `int`, etc.
 

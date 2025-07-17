@@ -24,7 +24,7 @@ $ pip install python-multipart
 
 Вам просто потрібно оголосити **Pydantic-модель** з полями, які Ви хочете отримати як **поля форми**, а потім оголосити параметр як `Form`:
 
-{* ../../docs_src/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
+{* ../../examples/request_form_models/tutorial001_an_py39.py hl[9:11,15] *}
 
 **ReadyAPI**  **витягне** дані для **кожного поля** з **формових даних** у запиті та надасть вам Pydantic-модель, яку Ви визначили.
 
@@ -48,7 +48,7 @@ $ pip install python-multipart
 
 Ви можете використати конфігурацію Pydantic-моделі, щоб заборонити `forbid` будь-які додаткові `extra` поля:
 
-{* ../../docs_src/request_form_models/tutorial002_an_py39.py hl[12] *}
+{* ../../examples/request_form_models/tutorial002_an_py39.py hl[12] *}
 
 Якщо клієнт спробує надіслати додаткові дані, він отримає **відповідь з помилкою**.
 

@@ -20,7 +20,7 @@
 * ⚫️ 📨 🎚 🆎 `HTTPBasicCredentials`:
     * ⚫️ 🔌 `username` &amp; `password` 📨.
 
-{* ../../docs_src/security/tutorial006.py hl[2,6,10] *}
+{* ../../examples/security/tutorial006.py hl[2,6,10] *}
 
 🕐❔ 👆 🔄 📂 📛 🥇 🕰 (⚖️ 🖊 "🛠️" 🔼 🩺) 🖥 🔜 💭 👆 👆 🆔 &amp; 🔐:
 
@@ -40,7 +40,7 @@
 
 ⤴️ 👥 💪 ⚙️ `secrets.compare_digest()` 🚚 👈 `credentials.username` `"stanleyjobson"`, &amp; 👈 `credentials.password` `"swordfish"`.
 
-{* ../../docs_src/security/tutorial007.py hl[1,11:21] *}
+{* ../../examples/security/tutorial007.py hl[1,11:21] *}
 
 👉 🔜 🎏:
 
@@ -104,4 +104,4 @@ if "stanleyjobsox" == "stanleyjobson" and "love123" == "swordfish":
 
 ⏮️ 🔍 👈 🎓 ❌, 📨 `HTTPException` ⏮️ 👔 📟 4️⃣0️⃣1️⃣ (🎏 📨 🕐❔ 🙅‍♂ 🎓 🚚) &amp; 🚮 🎚 `WWW-Authenticate` ⚒ 🖥 🎦 💳 📋 🔄:
 
-{* ../../docs_src/security/tutorial007.py hl[23:27] *}
+{* ../../examples/security/tutorial007.py hl[23:27] *}

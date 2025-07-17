@@ -6,7 +6,7 @@
 
 👆 💪 🔬 🔢 🏾. 🖼, 🐍 `list`:
 
-{* ../../docs_src/body_nested_models/tutorial001.py hl[14] *}
+{* ../../examples/body_nested_models/tutorial001.py hl[14] *}
 
 👉 🔜 ⚒ `tags` 📇, 👐 ⚫️ 🚫 📣 🆎 🔣 📇.
 
@@ -20,7 +20,7 @@
 
 ✋️ 🐍 ⏬ ⏭ 3️⃣.9️⃣ (3️⃣.6️⃣ &amp; 🔛), 👆 🥇 💪 🗄 `List` ⚪️➡️ 🐩 🐍 `typing` 🕹:
 
-{* ../../docs_src/body_nested_models/tutorial002.py hl[1] *}
+{* ../../examples/body_nested_models/tutorial002.py hl[1] *}
 
 ### 📣 `list` ⏮️ 🆎 🔢
 
@@ -49,7 +49,7 @@ my_list: List[str]
 
 , 👆 🖼, 👥 💪 ⚒ `tags` 🎯 "📇 🎻":
 
-{* ../../docs_src/body_nested_models/tutorial002.py hl[14] *}
+{* ../../examples/body_nested_models/tutorial002.py hl[14] *}
 
 ## ⚒ 🆎
 
@@ -59,7 +59,7 @@ my_list: List[str]
 
 ⤴️ 👥 💪 📣 `tags` ⚒ 🎻:
 
-{* ../../docs_src/body_nested_models/tutorial003.py hl[1,14] *}
+{* ../../examples/body_nested_models/tutorial003.py hl[1,14] *}
 
 ⏮️ 👉, 🚥 👆 📨 📨 ⏮️ ❎ 📊, ⚫️ 🔜 🗜 ⚒ 😍 🏬.
 
@@ -81,13 +81,13 @@ my_list: List[str]
 
 🖼, 👥 💪 🔬 `Image` 🏷:
 
-{* ../../docs_src/body_nested_models/tutorial004.py hl[9:11] *}
+{* ../../examples/body_nested_models/tutorial004.py hl[9:11] *}
 
 ### ⚙️ 📊 🆎
 
 &amp; ⤴️ 👥 💪 ⚙️ ⚫️ 🆎 🔢:
 
-{* ../../docs_src/body_nested_models/tutorial004.py hl[20] *}
+{* ../../examples/body_nested_models/tutorial004.py hl[20] *}
 
 👉 🔜 ⛓ 👈 **ReadyAPI** 🔜 ⌛ 💪 🎏:
 
@@ -120,7 +120,7 @@ my_list: List[str]
 
 🖼, `Image` 🏷 👥 ✔️ `url` 🏑, 👥 💪 📣 ⚫️ ↩️ `str`, Pydantic `HttpUrl`:
 
-{* ../../docs_src/body_nested_models/tutorial005.py hl[4,10] *}
+{* ../../examples/body_nested_models/tutorial005.py hl[4,10] *}
 
 🎻 🔜 ✅ ☑ 📛, &amp; 📄 🎻 🔗 / 🗄 ✅.
 
@@ -128,7 +128,7 @@ my_list: List[str]
 
 👆 💪 ⚙️ Pydantic 🏷 🏾 `list`, `set`, ♒️:
 
-{* ../../docs_src/body_nested_models/tutorial006.py hl[20] *}
+{* ../../examples/body_nested_models/tutorial006.py hl[20] *}
 
 👉 🔜 ⌛ (🗜, ✔, 📄, ♒️) 🎻 💪 💖:
 
@@ -166,7 +166,7 @@ my_list: List[str]
 
 👆 💪 🔬 🎲 🙇 🐦 🏷:
 
-{* ../../docs_src/body_nested_models/tutorial007.py hl[9,14,20,23,27] *}
+{* ../../examples/body_nested_models/tutorial007.py hl[9,14,20,23,27] *}
 
 /// info
 
@@ -190,7 +190,7 @@ images: list[Image]
 
 :
 
-{* ../../docs_src/body_nested_models/tutorial008.py hl[15] *}
+{* ../../examples/body_nested_models/tutorial008.py hl[15] *}
 
 ## 👨‍🎨 🐕‍🦺 🌐
 
@@ -220,7 +220,7 @@ images: list[Image]
 
 👉 💼, 👆 🔜 🚫 🙆 `dict` 📏 ⚫️ ✔️ `int` 🔑 ⏮️ `float` 💲:
 
-{* ../../docs_src/body_nested_models/tutorial009.py hl[9] *}
+{* ../../examples/body_nested_models/tutorial009.py hl[9] *}
 
 /// tip
 

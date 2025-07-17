@@ -29,7 +29,7 @@
 Давайте для начала сфокусируемся на зависимостях.
 
 Это просто функция, которая может принимать все те же параметры, что и *функции обработки пути*:
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[8:9] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[8:9] *}
 
 **И всё.**
 
@@ -61,13 +61,13 @@
 
 ### Import `Depends`
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[3] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[3] *}
 
 ### Объявите зависимость в "зависимом"
 
 Точно так же, как вы использовали `Body`, `Query` и т.д. с вашей *функцией обработки пути* для параметров, используйте `Depends` с новым параметром:
 
-{* ../../docs_src/dependencies/tutorial001_an_py310.py hl[13,18] *}
+{* ../../examples/dependencies/tutorial001_an_py310.py hl[13,18] *}
 
 `Depends` работает немного иначе. Вы передаёте в `Depends` одиночный параметр, который будет похож на функцию.
 
@@ -120,7 +120,7 @@ commons: Annotated[dict, Depends(common_parameters)]
 
 Но потому что мы используем `Annotated`,  мы можем хранить `Annotated` значение в переменной и использовать его в нескольких местах:
 
-{* ../../docs_src/dependencies/tutorial001_02_an_py310.py hl[12,16,21] *}
+{* ../../examples/dependencies/tutorial001_02_an_py310.py hl[12,16,21] *}
 
 /// tip | Подсказка
 

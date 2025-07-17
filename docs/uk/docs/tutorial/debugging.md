@@ -6,7 +6,7 @@
 
 У Вашому ReadyAPI-додатку імпортуйте та запустіть `uvicorn` безпосередньо:
 
-{* ../../docs_src/debugging/tutorial001.py hl[1,15] *}
+{* ../../examples/debugging/tutorial001.py hl[1,15] *}
 
 ### Про `__name__ == "__main__"`
 

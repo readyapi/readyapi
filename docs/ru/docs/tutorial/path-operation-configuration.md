@@ -16,7 +16,7 @@
 
 Но если вы не помните, для чего нужен каждый числовой код, вы можете использовать сокращенные константы в параметре `status`:
 
-{* ../../docs_src/path_operation_configuration/tutorial001_py310.py hl[1,15] *}
+{* ../../examples/path_operation_configuration/tutorial001_py310.py hl[1,15] *}
 
 Этот код состояния будет использован в ответе и будет добавлен в схему OpenAPI.
 
@@ -32,7 +32,7 @@
 
 Вы можете добавлять теги к вашим *операциям пути*, добавив параметр `tags` с `list` заполненным `str`-значениями (обычно в нём только одна строка):
 
-{* ../../docs_src/path_operation_configuration/tutorial002_py310.py hl[15,20,25] *}
+{* ../../examples/path_operation_configuration/tutorial002_py310.py hl[15,20,25] *}
 
 Они будут добавлены в схему OpenAPI и будут использованы в автоматической документации интерфейса:
 
@@ -46,13 +46,13 @@
 
 **ReadyAPI** поддерживает это так же, как и в случае с обычными строками:
 
-{* ../../docs_src/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
+{* ../../examples/path_operation_configuration/tutorial002b.py hl[1,8:10,13,18] *}
 
 ## Краткое и развёрнутое содержание
 
 Вы можете добавить параметры `summary` и `description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial003_py310.py hl[18:19] *}
+{* ../../examples/path_operation_configuration/tutorial003_py310.py hl[18:19] *}
 
 ## Описание из строк документации
 
@@ -60,7 +60,7 @@
 
 Вы можете использовать <a href="https://en.wikipedia.org/wiki/Markdown" class="external-link" target="_blank">Markdown</a> в строке документации, и он будет интерпретирован и отображён корректно (с учетом отступа в строке документации).
 
-{* ../../docs_src/path_operation_configuration/tutorial004_py310.py hl[17:25] *}
+{* ../../examples/path_operation_configuration/tutorial004_py310.py hl[17:25] *}
 
 Он будет использован в интерактивной документации:
 
@@ -70,7 +70,7 @@
 
 Вы можете указать описание ответа с помощью параметра `response_description`:
 
-{* ../../docs_src/path_operation_configuration/tutorial005_py310.py hl[19] *}
+{* ../../examples/path_operation_configuration/tutorial005_py310.py hl[19] *}
 
 /// info | Дополнительная информация
 
@@ -92,7 +92,7 @@ OpenAPI указывает, что каждой *операции пути* не
 
 Если вам необходимо пометить *операцию пути* как <abbr title="устаревшее, не рекомендовано к использованию">устаревшую</abbr>, при этом не удаляя её, передайте параметр `deprecated`:
 
-{* ../../docs_src/path_operation_configuration/tutorial006.py hl[16] *}
+{* ../../examples/path_operation_configuration/tutorial006.py hl[16] *}
 
 Он будет четко помечен как устаревший в интерактивной документации:
 
