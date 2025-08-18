@@ -32,6 +32,7 @@ hide:
 
 ### Internal
 
+* 👷 Add CI to translate with LLMs. PR [#233](https://github.com/readyapi/readyapi/pull/233) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 * ⚒️ Update translate script, update prompt to minimize generated diff. PR [#232](https://github.com/readyapi/readyapi/pull/232) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#221](https://github.com/readyapi/readyapi/pull/221) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * Bump tj-actions/changed-files from 44 to 46 in /.github/workflows in the github_actions group across 1 directory. PR [#227](https://github.com/readyapi/readyapi/pull/227) by [@dependabot[bot]](https://github.com/apps/dependabot).
