@@ -32,6 +32,7 @@ hide:
 
 ### Internal
 
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#228](https://github.com/readyapi/readyapi/pull/228) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump actions/download-artifact from 4 to 5. PR [#230](https://github.com/readyapi/readyapi/pull/230) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump actions/checkout from 4 to 5. PR [#231](https://github.com/readyapi/readyapi/pull/231) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * 👷 Add CI to translate with LLMs. PR [#233](https://github.com/readyapi/readyapi/pull/233) by [@khulnasoft-bot](https://github.com/khulnasoft-bot).
