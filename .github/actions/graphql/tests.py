@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-'''Example automated test script for flask_rest_target
+"""Example automated test script for flask_rest_target
 
 This example automated test/unittest uses pytest.  With
 the pytest-peach module this test script can be used
@@ -8,37 +8,37 @@ with Peach Web Proxy.
 
   pytest test_target.py --peach=auto
 
-'''
+"""
 
-from __future__ import print_function
 import os
+
 from requests import post
 
 # HTTP target
-target = os.getenv('TARGET_URL', 'http://127.0.0.1:7779') + "/graphql"
-req_args = { 
+target = os.getenv("TARGET_URL", "http://127.0.0.1:7779") + "/graphql"
+req_args = {
     # verify disabled server TLS cert verification
-    'verify': False,
+    "verify": False,
     # our example can use client cert auth, this sets our user cert.
-    # 'cert' : (cert_dir % 'client-cert.pem', cert_dir % 'client-key.pem'), 
-    'headers': {
+    # 'cert' : (cert_dir % 'client-cert.pem', cert_dir % 'client-key.pem'),
+    "headers": {
         # our example requires an API token for authentication.
         "Authorization": "Token b5638ae7-6e77-4585-b035-7d9de2e3f6b3"
-    }
+    },
 }
 
 
 def setup_function(self):
-    '''
+    """
     Setup the test by clearing out created users.
-    '''
+    """
     pass
 
 
 def teardown_function(self):
-    '''
+    """
     Teardown test by clearing out created users.
-    '''
+    """
 
     body = {
         "query": """
@@ -51,7 +51,7 @@ mutation {
       username
     }
   }
-}		
+}
         """
     }
 
@@ -59,7 +59,6 @@ mutation {
 
 
 def test_users_findUser():
-
     body = {
         "query": """
 {
@@ -85,8 +84,8 @@ def test_thing_create():
         "query": """
 mutation {
   createThing(
-    text: "text", 
-    string: "string", 
+    text: "text",
+    string: "string",
     date: "2017-01-10T21:33:15.233Z",
       datetime: "2017-01-10T21:33:15.233Z",
       myenum: one,
@@ -121,7 +120,7 @@ mutation {
       username
     }
   }
-}		
+}
 """
     }
 
@@ -132,7 +131,6 @@ mutation {
 
 
 def test_users_getall():
-
     body = {
         "query": """
 {
