@@ -1,23 +1,23 @@
 import graphene
+import graphene.types.datetime
+from database import Thing as ThingModel
+from database import User as UserModel
+from database import db_session, engine
 from graphene import relay
 from graphene_sqlalchemy import SQLAlchemyConnectionField, SQLAlchemyObjectType
-from database import engine, db_session, User as UserModel
-from database import Thing as ThingModel
 from sqlalchemy.sql import text
-import graphene.types.datetime
-import database
 
 
 class Users(SQLAlchemyObjectType):
     class Meta:
         model = UserModel
-        interfaces = (relay.Node, )
+        interfaces = (relay.Node,)
 
 
 class Things(SQLAlchemyObjectType):
     class Meta:
         model = ThingModel
-        interfaces = (relay.Node, )
+        interfaces = (relay.Node,)
 
 
 # Used to Create New User
@@ -38,9 +38,10 @@ class createUser(graphene.Mutation):
         with engine.connect() as con:
             statement = text(
                 "insert into users (name, email, username) "
-                f"values ('{name}', :email, :username)")
-            
-            con.execute(statement, {'email': email, 'username': username})
+                f"values ('{name}', :email, :username)"
+            )
+
+            con.execute(statement, {"email": email, "username": username})
 
         ok = True
         return createUser(user=user, ok=ok)
@@ -97,16 +98,16 @@ class createThing(graphene.Mutation):
     thing = graphene.Field(Things)
 
     def mutate(root, info, text, string, boolean, date, datetime, floaty, integer):
-
         thing = ThingModel(
             boolean=boolean,
             text=text,
-            string=string, 
-            date=date, 
-            datetime=datetime, 
-            floaty=floaty, 
-            integer=integer)
-        
+            string=string,
+            date=date,
+            datetime=datetime,
+            floaty=floaty,
+            integer=integer,
+        )
+
         db_session.add(thing)
         db_session.commit()
         ok = True
