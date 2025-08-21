@@ -1,0 +1,5 @@
+SQLAlchemy
+graphene
+graphene_sqlalchemy
+Flask
+Flask-GraphQL

@@ -1,0 +1,40 @@
+name: GraphQL Docker Build & Push
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - release/*
+  pull_request:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  TAG: ${{ github.ref_name }}-${{ github.sha }}
+  LATEST_TAG: latest
+
+jobs:
+  build-and-push:
+    name: Build & Push GraphQL Docker Image
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    services:
+      docker:
+        image: docker:20.10-dind
+        privileged: true
+        options: --dns 8.8.8.8
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run custom GraphQL Docker action
+        uses: ./.github/actions/graphql
+
+      - name: Show image tag
+        run: echo "Docker image tag: ${{ env.TAG }}"
