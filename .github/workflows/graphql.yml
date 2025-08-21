@@ -3,7 +3,7 @@ name: GraphQL Docker Build & Push
 on:
   push:
     branches:
-      - master
+      - main
       - develop
       - release/*
   pull_request:
@@ -35,11 +35,6 @@ jobs:
 
       - name: Run custom GraphQL Docker action
         uses: ./.github/actions/graphql
-        with:
-          registry: ${{ env.REGISTRY }}
-          image_name: ${{ env.IMAGE_NAME }}
-          tag: ${{ env.TAG }}
-          latest_tag: ${{ env.LATEST_TAG }}
 
-      - name: Image digest
-        run: echo "Image digest: ${{ steps.build-and-push.outputs.digest }}"
+      - name: Show image tag
+        run: echo "Docker image tag: ${{ env.TAG }}"
