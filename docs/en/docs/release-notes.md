@@ -13,6 +13,7 @@ hide:
 
 ### Docs
 
+* Create __init__.py. PR [#236](https://github.com/readyapi/readyapi/pull/236) by [@gitworkflows](https://github.com/gitworkflows).
 * 🍱 Update Drawio diagrams SVGs, single file per diagram, sans-serif font. PR [#13706](https://github.com/readyapi/readyapi/pull/13706) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Update docs for "Help ReadyAPI", simplify and reduce "sponsor" section. PR [#13670](https://github.com/readyapi/readyapi/pull/13670) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Remove unnecessary bullet from docs. PR [#13641](https://github.com/readyapi/readyapi/pull/13641) by [@Adamowoc](https://github.com/Adamowoc).
