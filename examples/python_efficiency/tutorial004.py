@@ -1,8 +1,10 @@
 import math
 import time
+
 from readyapi import ReadyAPI
 
 app = ReadyAPI()
+
 
 @app.get("/efficiency/local_variable_lookup")
 async def local_variable_lookup_demo():
@@ -29,5 +31,5 @@ async def local_variable_lookup_demo():
         "note": (
             "Using a local variable for frequently used functions inside hot loops "
             "can yield significant performance improvements in Python."
-        )
+        ),
     }
