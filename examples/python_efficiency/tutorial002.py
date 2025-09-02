@@ -1,7 +1,9 @@
 from collections import deque
+
 from readyapi import ReadyAPI
 
 app = ReadyAPI()
+
 
 @app.get("/efficiency/deque")
 async def deque_demo():
@@ -23,5 +25,5 @@ async def deque_demo():
         "list_after_insert": list_result,
         "deque_after_appendleft_and_popleft": deque_result,
         "popped_from_deque": popped,
-        "note": "Deque allows fast O(1) insertions/removals at both ends, unlike lists."
+        "note": "Deque allows fast O(1) insertions/removals at both ends, unlike lists.",
     }
