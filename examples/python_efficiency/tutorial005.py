@@ -1,8 +1,10 @@
 import itertools
 import time
+
 from readyapi import ReadyAPI
 
 app = ReadyAPI()
+
 
 @app.get("/efficiency/efficient_loops")
 async def efficient_loops_demo():
@@ -32,5 +34,5 @@ async def efficient_loops_demo():
         "note": (
             "itertools can be more memory-efficient for chaining iterables, "
             "and map() can be slightly faster than a list comprehension for large data."
-        )
+        ),
     }
