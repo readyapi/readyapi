@@ -2,566 +2,566 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://readyapi.github.io/nl/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/environment-variables/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/features/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/python-types/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/learn/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/async/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/virtual-environments/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/first-steps/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/path-params/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/query-params/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/body/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/query-params-str-validations/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/path-params-numeric-validations/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/query-param-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/body-multiple-params/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/body-fields/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/body-nested-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/schema-extra-example/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/extra-data-types/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/cookie-params/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/header-params/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/cookie-param-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/header-param-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/response-model/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/extra-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/response-status-code/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/request-forms/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/request-form-models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/request-files/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/request-forms-and-files/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/handling-errors/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/path-operation-configuration/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/encoder/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/body-updates/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/classes-as-dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/sub-dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/dependencies-in-path-operation-decorators/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/global-dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/dependencies/dependencies-with-yield/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/security/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/security/first-steps/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/security/get-current-user/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/security/simple-oauth2/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/security/oauth2-jwt/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/middleware/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/cors/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/sql-databases/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/bigger-applications/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/background-tasks/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/metadata/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/static-files/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/testing/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/tutorial/debugging/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/path-operation-advanced-configuration/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/additional-status-codes/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/response-directly/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/custom-response/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/additional-responses/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/response-cookies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/response-headers/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/response-change-status-code/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/advanced-dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/security/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/security/oauth2-scopes/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/security/http-basic-auth/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/using-request-directly/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/dataclasses/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/middleware/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/sub-applications/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/behind-a-proxy/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/templates/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/websockets/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/events/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/testing-websockets/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/testing-events/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/testing-dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/async-tests/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/settings/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/openapi-callbacks/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/openapi-webhooks/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/wsgi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/advanced/generate-clients/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/readyapi-cli/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/versions/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/https/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/manually/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/concepts/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/cloud/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/server-workers/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/deployment/docker/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/general/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/graphql/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/custom-request-and-route/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/conditional-openapi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/extending-openapi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/separate-openapi-schemas/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/custom-docs-ui-assets/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/configure-swagger-ui/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/how-to/testing-database/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/readyapi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/parameters/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/status/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/uploadfile/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/exceptions/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/dependencies/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/apirouter/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/background/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/request/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/websockets/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/httpconnection/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/response/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/responses/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/middleware/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/openapi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/openapi/docs/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/openapi/models/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/security/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/encoders/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/staticfiles/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/templating/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/reference/testclient/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/readyapi-people/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/resources/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/help-readyapi/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/contributing/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/project-generation/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/external-links/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/newsletter/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/management-tasks/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/about/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/alternatives/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/history-design-future/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/benchmarks/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/management/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
     <url>
          <loc>https://readyapi.github.io/nl/release-notes/</loc>
-         <lastmod>2025-08-25</lastmod>
+         <lastmod>2025-09-02</lastmod>
     </url>
 </urlset>
