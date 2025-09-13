@@ -33,6 +33,7 @@ hide:
 
 ### Internal
 
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#237](https://github.com/readyapi/readyapi/pull/237) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump actions/checkout from 4 to 5. PR [#234](https://github.com/readyapi/readyapi/pull/234) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ruff from 0.11.2 to 0.12.7. PR [#229](https://github.com/readyapi/readyapi/pull/229) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#228](https://github.com/readyapi/readyapi/pull/228) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
