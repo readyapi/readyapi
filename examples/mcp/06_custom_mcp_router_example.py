@@ -5,9 +5,8 @@ This example shows how to mount the MCP server to a specific APIRouter, giving a
 from readyapi import APIRouter
 from readyapi_mcp import ReadyApiMCP
 
-from examples.shared.apps.items import app  # The ReadyAPI app
-from examples.shared.setup import setup_logging
-
+from examples.mcp.shared.apps.items import app  # The ReadyAPI app
+from examples.mcp.shared.setup import setup_logging
 setup_logging()
 
 other_router = APIRouter(prefix="/other/route")
