@@ -5,7 +5,7 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey
 from jwt.algorithms import RSAAlgorithm
 
-from examples.shared.setup import setup_logging
+from examples.mcp.shared.setup import setup_logging
 
 setup_logging()
 
