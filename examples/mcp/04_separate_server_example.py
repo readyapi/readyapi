@@ -8,6 +8,7 @@ from readyapi_mcp import ReadyApiMCP
 
 from examples.mcp.shared.apps.items import app
 from examples.mcp.shared.setup import setup_logging
+
 setup_logging()
 
 MCP_SERVER_HOST = "localhost"
