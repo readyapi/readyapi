@@ -96,10 +96,10 @@ async def delete_item(item_id: int):
     operation_id="search_items",
 )
 async def search_items(
-    q: Optional[str] = Query(None, description="Search query string"),
-    min_price: Optional[float] = Query(None, description="Minimum price"),
-    max_price: Optional[float] = Query(None, description="Maximum price"),
-    tags: List[str] = Query([], description="Filter by tags"),
+    q: Annotated[Optional[str], Query(None, description="Search query string")] = None,
+    min_price: Annotated[Optional[float], Query(None, description="Minimum price")] = None,
+    max_price: Annotated[Optional[float], Query(None, description="Maximum price")] = None,
+    tags: Annotated[Optional[List[str]], Query([], description="Filter by tags")] = None,
 ):
     """
     Search for items with various filters.
