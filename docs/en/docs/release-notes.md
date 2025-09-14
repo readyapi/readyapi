@@ -13,6 +13,7 @@ hide:
 
 ### Docs
 
+* Create __init__.py. PR [#236](https://github.com/readyapi/readyapi/pull/236) by [@gitworkflows](https://github.com/gitworkflows).
 * 🍱 Update Drawio diagrams SVGs, single file per diagram, sans-serif font. PR [#13706](https://github.com/readyapi/readyapi/pull/13706) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Update docs for "Help ReadyAPI", simplify and reduce "sponsor" section. PR [#13670](https://github.com/readyapi/readyapi/pull/13670) by [@khulnasoft](https://github.com/khulnasoft).
 * 📝 Remove unnecessary bullet from docs. PR [#13641](https://github.com/readyapi/readyapi/pull/13641) by [@Adamowoc](https://github.com/Adamowoc).
@@ -32,6 +33,8 @@ hide:
 
 ### Internal
 
+* ⬆ Bump actions/setup-python from 5 to 6. PR [#239](https://github.com/readyapi/readyapi/pull/239) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#237](https://github.com/readyapi/readyapi/pull/237) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump actions/checkout from 4 to 5. PR [#234](https://github.com/readyapi/readyapi/pull/234) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump ruff from 0.11.2 to 0.12.7. PR [#229](https://github.com/readyapi/readyapi/pull/229) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#228](https://github.com/readyapi/readyapi/pull/228) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
