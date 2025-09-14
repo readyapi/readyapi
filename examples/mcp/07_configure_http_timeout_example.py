@@ -6,9 +6,8 @@ In case you have API endpoints that take longer than 5 seconds to respond, you c
 import httpx
 from readyapi_mcp import ReadyApiMCP
 
-from examples.shared.apps.items import app  # The ReadyAPI app
-from examples.shared.setup import setup_logging
-
+from examples.mcp.shared.apps.items import app  # The ReadyAPI app
+from examples.mcp.shared.setup import setup_logging
 setup_logging()
 
 

@@ -2,7 +2,7 @@
 Simple example of using ReadyAPI-MCP to add an MCP server to a ReadyAPI app.
 """
 
-from typing import List, Optional
+from typing import Annotated, List, Optional
 
 from pydantic import BaseModel
 from readyapi import HTTPException, Query, ReadyAPI

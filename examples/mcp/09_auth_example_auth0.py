@@ -5,8 +5,8 @@ from pydantic_settings import BaseSettings
 from readyapi import Depends, HTTPException, ReadyAPI, Request, status
 from readyapi_mcp import AuthConfig, ReadyApiMCP
 
-from examples.shared.auth import fetch_jwks_public_key
-from examples.shared.setup import setup_logging
+from examples.mcp.shared.auth import fetch_jwks_public_key
+from examples.mcp.shared.setup import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)
