@@ -32,12 +32,37 @@ async def fetch_jwks_public_key(url: str) -> str:
             logger.error("Invalid JWKS data format: missing or empty 'keys' array")
             raise ValueError("Invalid JWKS data format: missing or empty 'keys' array")
 
-        # Just use the first key in the set
-        jwk = jwks_data["keys"][0]
+import json
 
-        # Convert JWK to PEM format
-        public_key = RSAAlgorithm.from_jwk(jwk)
-        if isinstance(public_key, RSAPublicKey):
+async def fetch_jwks_public_key(url: str, *, kid: str | None = None) -> str:
+    # ... (code that fetches jwks_data from the URL) ...
+
+    if not jwks_data or "keys" not in jwks_data or not jwks_data["keys"]:
+        logger.error("Invalid JWKS data format: missing or empty 'keys' array")
+        raise ValueError("Invalid JWKS data format: missing or empty 'keys' array")
+
+    keys = jwks_data["keys"]
+    jwk = None
+    if kid:
+        jwk = next((k for k in keys if k.get("kid") == kid), None)
+        if jwk is None:
+            logger.warning("Requested kid not found in JWKS; attempting first key as fallback")
+    if jwk is None:
+        jwk = keys[0]
+
+    # Convert JWK to PEM format
+    public_key = RSAAlgorithm.from_jwk(json.dumps(jwk))
+    if isinstance(public_key, RSAPublicKey):
+        pem = public_key.public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo,
+        )
+        pem_str = pem.decode("utf-8")
+        logger.info("Successfully extracted public key from JWKS")
+        return pem_str
+    else:
+        logger.error("Invalid JWKS data format: expected RSA public key")
+        raise TypeError("Invalid JWKS data format: expected RSA public key")
             pem = public_key.public_bytes(
                 encoding=serialization.Encoding.PEM,
                 format=serialization.PublicFormat.SubjectPublicKeyInfo,
