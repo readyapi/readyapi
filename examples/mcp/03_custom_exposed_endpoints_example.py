@@ -7,10 +7,10 @@ Notes on filtering:
 - When combining filters, a greedy approach will be taken. Endpoints matching either criteria will be included
 """
 
+from readyapi_mcp import ReadyApiMCP
+
 from examples.shared.apps.items import app  # The ReadyAPI app
 from examples.shared.setup import setup_logging
-
-from readyapi_mcp import ReadyApiMCP
 
 setup_logging()
 
@@ -64,8 +64,12 @@ if __name__ == "__main__":
 
     print("Server is running with multiple MCP endpoints:")
     print(" - /include-operations-mcp: Only get_item and list_items operations")
-    print(" - /exclude-operations-mcp: All operations except create_item, update_item, and delete_item")
+    print(
+        " - /exclude-operations-mcp: All operations except create_item, update_item, and delete_item"
+    )
     print(" - /include-tags-mcp: Only operations with the 'items' tag")
     print(" - /exclude-tags-mcp: All operations except those with the 'search' tag")
-    print(" - /combined-include-mcp: Operations with 'search' tag or delete_item operation")
+    print(
+        " - /combined-include-mcp: Operations with 'search' tag or delete_item operation"
+    )
     uvicorn.run(app, host="0.0.0.0", port=8000)

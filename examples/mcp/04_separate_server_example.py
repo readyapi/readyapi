@@ -4,11 +4,10 @@ You can create an MCP server from one ReadyAPI app, and mount it to a different 
 """
 
 from readyapi import ReadyAPI
+from readyapi_mcp import ReadyApiMCP
 
 from examples.shared.apps.items import app
 from examples.shared.setup import setup_logging
-
-from readyapi_mcp import ReadyApiMCP
 
 setup_logging()
 

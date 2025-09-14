@@ -2,11 +2,11 @@
 This example shows how to mount the MCP server to a specific APIRouter, giving a custom mount path.
 """
 
-from examples.shared.apps.items import app  # The ReadyAPI app
-from examples.shared.setup import setup_logging
-
 from readyapi import APIRouter
 from readyapi_mcp import ReadyApiMCP
+
+from examples.shared.apps.items import app  # The ReadyAPI app
+from examples.shared.setup import setup_logging
 
 setup_logging()
 

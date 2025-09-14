@@ -1,9 +1,9 @@
-from jwt.algorithms import RSAAlgorithm
+import logging
+
+import httpx
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric.rsa import RSAPublicKey
-
-import logging
-import httpx
+from jwt.algorithms import RSAAlgorithm
 
 from examples.shared.setup import setup_logging
 

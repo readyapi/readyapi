@@ -2,10 +2,10 @@
 This example shows how to re-register tools if you add endpoints after the MCP server was created.
 """
 
+from readyapi_mcp import ReadyApiMCP
+
 from examples.shared.apps.items import app  # The ReadyAPI app
 from examples.shared.setup import setup_logging
-
-from readyapi_mcp import ReadyApiMCP
 
 setup_logging()
 

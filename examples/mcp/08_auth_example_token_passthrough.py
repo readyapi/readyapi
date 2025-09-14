@@ -22,13 +22,12 @@ In order to configure the auth header, the config file for the MCP server should
 ```
 """
 
-from examples.shared.apps.items import app  # The ReadyAPI app
-from examples.shared.setup import setup_logging
-
 from readyapi import Depends
 from readyapi.security import HTTPBearer
+from readyapi_mcp import AuthConfig, ReadyApiMCP
 
-from readyapi_mcp import ReadyApiMCP, AuthConfig
+from examples.shared.apps.items import app  # The ReadyAPI app
+from examples.shared.setup import setup_logging
 
 setup_logging()
 

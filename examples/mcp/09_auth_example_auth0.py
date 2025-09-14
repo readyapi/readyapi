@@ -1,13 +1,12 @@
-from readyapi import ReadyAPI, Depends, HTTPException, Request, status
-from pydantic_settings import BaseSettings
-from typing import Any
 import logging
+from typing import Any
 
-from readyapi_mcp import ReadyApiMCP, AuthConfig
+from pydantic_settings import BaseSettings
+from readyapi import Depends, HTTPException, ReadyAPI, Request, status
+from readyapi_mcp import AuthConfig, ReadyApiMCP
 
 from examples.shared.auth import fetch_jwks_public_key
 from examples.shared.setup import setup_logging
-
 
 setup_logging()
 logger = logging.getLogger(__name__)
@@ -56,7 +55,10 @@ async def verify_auth(request: Request) -> dict[str, Any]:
 
         auth_header = request.headers.get("authorization", "")
         if not auth_header.startswith("Bearer "):
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid authorization header")
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid authorization header",
+            )
 
         token = auth_header.split(" ")[1]
 
@@ -92,7 +94,9 @@ async def get_current_user_id(claims: dict = Depends(verify_auth)) -> str:
 
     if not user_id:
         logger.error("No user ID found in token")
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized"
+        )
 
     return user_id
 
