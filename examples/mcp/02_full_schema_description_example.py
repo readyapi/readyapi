@@ -4,9 +4,8 @@ This example shows how to describe the full response schema instead of just a re
 
 from readyapi_mcp import ReadyApiMCP
 
-from examples.shared.apps.items import app  # The ReadyAPI app
-from examples.shared.setup import setup_logging
-
+from examples.mcp.shared.apps.items import app  # The ReadyAPI app
+from examples.mcp.shared.setup import setup_logging
 setup_logging()
 
 # Add MCP server to the ReadyAPI app
