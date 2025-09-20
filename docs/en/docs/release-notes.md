@@ -33,6 +33,9 @@ hide:
 
 ### Internal
 
+* Bump pypa/gh-action-pypi-publish from 1.12.4 to 1.13.0 in /.github/workflows in the github_actions group across 1 directory. PR [#241](https://github.com/readyapi/readyapi/pull/241) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump tj-actions/changed-files from 46 to 47. PR [#245](https://github.com/readyapi/readyapi/pull/245) by [@dependabot[bot]](https://github.com/apps/dependabot).
+* ⬆ Bump actions/labeler from 5 to 6. PR [#242](https://github.com/readyapi/readyapi/pull/242) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ Bump actions/setup-python from 5 to 6. PR [#239](https://github.com/readyapi/readyapi/pull/239) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * ⬆ [pre-commit.ci] pre-commit autoupdate. PR [#237](https://github.com/readyapi/readyapi/pull/237) by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci).
 * ⬆ Bump actions/checkout from 4 to 5. PR [#234](https://github.com/readyapi/readyapi/pull/234) by [@dependabot[bot]](https://github.com/apps/dependabot).
